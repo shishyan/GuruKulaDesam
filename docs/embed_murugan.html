@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>குரு குல தேசம் (Guru Kula Desam) — Media Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --card-bg: rgba(26, 29, 36, 0.7);
+      --card-border: rgba(212, 175, 55, 0.2);
+      --card-hover: rgba(212, 175, 55, 0.35);
+      --gold: #d4af37;
+      --gold-light: #f3e5ab;
+      --text-main: #f0f2f5;
+      --text-muted: #9aa0a6;
+      --badge-film: #e63946;
+      --badge-audio: #2a9d8f;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Outfit', 'Mukta Malar', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .header {
+      text-align: center;
+      padding: 30px 10px;
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      color: var(--gold-light);
+      text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    /* Player Container */
+    .player-container {
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+      background: #000;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: none;
+    }
+
+    .player-container.active {
+      display: block;
+    }
+
+    .player-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .player-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .player-meta {
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #14171d;
+    }
+
+    .player-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--gold-light);
+    }
+
+    .close-btn {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* Controls */
+    .controls {
+      max-width: 1200px;
+      margin: 0 auto 25px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .tab-btn {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-light);
+      border-color: var(--gold);
+    }
+
+    .tab-btn.active {
+      background: var(--gold);
+      color: #121316;
+      border-color: var(--gold);
+      font-weight: 600;
+    }
+
+    .filters-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search-input {
+      flex: 1;
+      max-width: 450px;
+      padding: 10px 16px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 25px;
+      color: #fff;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+    }
+
+    .type-filters {
+      display: flex;
+      gap: 6px;
+    }
+
+    .type-btn {
+      padding: 6px 12px;
+      border-radius: 15px;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    .type-btn.active {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    .stats-bar {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Grid */
+    .media-grid {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .media-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .media-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--card-hover);
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.15);
+    }
+
+    .thumb-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: #1a1a1a;
+      overflow: hidden;
+    }
+
+    .thumb-wrapper img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .media-card:hover .thumb-wrapper img {
+      transform: scale(1.05);
+    }
+
+    .badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 6px;
+      color: #fff;
+    }
+
+    .badge-film { background: var(--badge-film); }
+    .badge-audio { background: var(--badge-audio); }
+
+    .play-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      background: rgba(0,0,0,0.65);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .media-card:hover .play-overlay {
+      opacity: 1;
+    }
+
+    .card-info {
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .card-title {
+      font-size: 0.92rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>முருகப் பெருமான் பாடல்கள் (Lord Murugan Songs)</h1>
+    <p>50 பாடல்கள் & திரைப்படங்கள் | Guru Kula Desam</p>
+  </div>
+
+  <div class="player-container" id="playerContainer">
+    <div class="player-wrapper">
+      <iframe id="videoIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="player-meta">
+      <div class="player-title" id="playerTitle">Now Playing</div>
+      <button class="close-btn" onclick="closePlayer()">✕ Close</button>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="tabs" id="tabs">
+      <button class="tab-btn active" onclick="setCategory('all')">அனைத்தும் (All - 580)</button>
+      <button class="tab-btn" onclick="setCategory('thirukkural')">திருக்குறள் (Thirukkural - 185)</button>
+      <button class="tab-btn" onclick="setCategory('shiva')">சிவ பெருமான் (Lord Shiva - 172)</button>
+      <button class="tab-btn" onclick="setCategory('murugan')">முருகப் பெருமான் (Lord Murugan - 50)</button>
+      <button class="tab-btn" onclick="setCategory('vishnu_krishna')">திருமால் & கிருஷ்ணர் (Vishnu & Krishna - 48)</button>
+      <button class="tab-btn" onclick="setCategory('vinayagar')">விநாயகர் (Vinayagar - 9)</button>
+      <button class="tab-btn" onclick="setCategory('amman')">அம்மன் (Goddess Amman - 22)</button>
+      <button class="tab-btn" onclick="setCategory('vallalar_cultural')">வள்ளலார் & மரபுப் பாடல்கள் (94)</button>
+    </div>
+
+    <div class="filters-bar">
+      <input type="text" class="search-input" id="searchInput" placeholder="தேடுக... (Search by title, number, or keyword)" oninput="filterMedia()">
+      <div class="type-filters">
+        <button class="type-btn active" id="typeAll" onclick="setTypeFilter('all')">All</button>
+        <button class="type-btn" id="typeFilm" onclick="setTypeFilter('film')">🎬 Films</button>
+        <button class="type-btn" id="typeAudio" onclick="setTypeFilter('audio')">🎵 Audio</button>
+      </div>
+    </div>
+
+    <div class="stats-bar" id="statsBar">Showing 580 items</div>
+  </div>
+
+  <div class="media-grid" id="mediaGrid"></div>
+
+  <script>
+    const CATALOG = {"murugan": [{"id": "B6yVe6HM8Ok", "title": "ஆறுமுகம் ஆறுமுகம் | Arumugam Arumugam Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "DsbMysGdqv8", "title": "உருவாய் அருவாய் | Uruvaai Aruvaai Kandhar Anubhudhi Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "C2rLIrP3vAA", "title": "கந்த சஷ்டி கவசம் II | Kandha Sashti Kavasam II Full Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "0PvXn4gqlFM", "title": "கந்த சஷ்டி கவசம் | Kandha Sashti Kavasam Full Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "1hoVaPwWMes", "title": "கந்த சஷ்டி கவசம் துதி 2026 | Kandha Shashti Thuthi Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "eEYBleNgRGU", "title": "கந்தர் அலங்காரம் 2026 | Kandhar Alangaram Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "hKkmbQ9TIaU", "title": "கைத்தல நிறைகனி | Kaiththala Niraigani Cinematic Thiruppugazh Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "yPfkP_EjTyc", "title": "கௌமாரம் ஸ்துதி | Koumaram Stuthi Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "W2peLbC20sA", "title": "சிவ சுப்ரமணியர் திருவிருத்தம்", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "ssOkftpUcLE", "title": "சிவ சுப்ரமணியர் திருவிருத்தம் | Siva Subramaniyar Thiruvirutham Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "meXI3QsNHhE", "title": "திருப்புகழ் 566 இரத்னகிரி I | Rathinagiri Thiruppugazh Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "FTAB7OBVPPY", "title": "திருப்புகழ் 566 இரத்னகிரி II | Rathinagiri Thiruppugazh Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "Nvx3ObuSndM", "title": "திருப்புகழ் 712 சீர் உலாவிய | Seer Ulaaviya Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "l3E27q5r-nk", "title": "திருவருட்பா - திருப்புகழ் விலாசம் | Thiruppugazh Vilasam | Full Song Film", "type": "film", "playlists": ["Discography", "Other Songs"]}, {"id": "nuSx1NgiCuo", "title": "நாத விந்துகள் | Naatha Vindhugal Pazhani Thiruppugazh Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "MTvDDAQCFmk", "title": "நாள் என் செய்யும் | Time and Faith Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "pYh67ltckLQ", "title": "நாள் என் செய்யும்!", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "XErAOEtZdAU", "title": "மகரம் அளறு இடை (Original) | Magaram Alaru Idai Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "VMqFjcQtebw", "title": "மகரம் அளறு இடை (Remix) | Magaram Alaru Idai Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "SN7FIkL-o1k", "title": "முத்தைத் தரு | Muthai Tharu Cinematic Thiruppugazh Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "-L3VXkM2MTY", "title": "முருகர் வார வழிபாடு 2026 | Murugar Vaara Vazhipadu Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "iJ-3SHR2MKw", "title": "ஸ்கந்த மந்திரம் (Original) | Skanda Mantram Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "QRSRyYEacMs", "title": "ஸ்கந்த மந்திரம் (Symphony) | Skanda Mantram Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "FFXImcs5Ehw", "title": "ஸ்ரீ சிவசண்முக நாம ஸங்கீர்த்தனம் | Siva Shanmuga Nama Sankeerthanam Cinematic Film", "type": "film", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "jpCBad1MjgI", "title": "Arumugam Arumugam", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "IhE1OvdIBKs", "title": "Kaiththala Niraigani (Thiruppugazh)", "type": "audio", "playlists": ["Discography", "Lord Vinayagar Songs"]}, {"id": "tCxe5Q1ogPc", "title": "Kandha Sashti Kavasam (கந்த சஷ்டி கவசம்)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "8mzfe5h9JoY", "title": "Kandha Sashti Kavasam II (கந்த சஷ்டி கவசம்)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "C9Ea0-FfMNs", "title": "Naatha Vindhugal (Pazhani Thiruppugazh)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "-unILRjNLHQ", "title": "Sree Subramanyar Thiruviruththam", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "XqDL5bZgW9c", "title": "Uruvaai Aruvaai (Kandhar Anubhudhi)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "GydxHEmyDPc", "title": "கண நாதா ஓம் (Original)", "type": "audio", "playlists": ["Discography", "Lord Vinayagar Songs"]}, {"id": "vFbw9hX0wO4", "title": "கண நாதா ஓம் (Symphony)", "type": "audio", "playlists": ["Discography", "Lord Vinayagar Songs"]}, {"id": "CFEYF0X6fLU", "title": "கந்த சஷ்டி கவசம் துதி 2026", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "ZZKjQ1SD_mQ", "title": "கந்தர் அலங்காரம் 2026", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "PVcmqZuROSU", "title": "கந்தர் சஷ்டி துதி 2026 (Kandhar Shashti Thuthi)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "x355fpndpTI", "title": "கௌமாரம் ஸ்துதி 2026", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "S4ogw4EfpDY", "title": "திருப்புகழ் 566 (இரத்னகிரி I)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "bOxyDZgsI2c", "title": "திருப்புகழ் 566 (இரத்னகிரி II)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "YxP_uh3dM18", "title": "திருப்புகழ் 712 சீர் உலாவிய...", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "iPFEtwdcIxc", "title": "திருப்புகழ் 712 சீர் உலாவிய...", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "XelTS98bLec", "title": "திருவருட்பா - இரண்டாம் திருமுறை -...", "type": "audio", "playlists": ["Discography", "Other Songs"]}, {"id": "qRqkS1Kf8lA", "title": "மகரம் அளறு இடை (Original)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "cEIEecb51Fc", "title": "மகரம் அளறு இடை (Remix)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "On2xoZqBsss", "title": "முத்தைத் தரு (திருப்புகழ்)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "3oJ2OPG-WCs", "title": "முத்தைத் தரு 2026 (திருப்புகழ்)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "qr5jAhLRLUE", "title": "முருகர் வார வழிபாடு 2026", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "8jLZHiozGxw", "title": "ஸ்கந்த மந்திரம் (Original)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "N8MOVChJwPQ", "title": "ஸ்கந்த மந்திரம் (Symphony)", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}, {"id": "LL77sdbmUNE", "title": "ஸ்ரீ சிவசண்முக நாம ஸங்கீர்த்தனம் 2026", "type": "audio", "playlists": ["Discography", "Lord Murugar Songs"]}]};
+
+    let currentCategory = 'all';
+    let currentType = 'all';
+    let searchQuery = '';
+
+    function getItems() {
+      let items = [];
+      if (currentCategory === 'all') {
+        for (let cat in CATALOG) {
+          items = items.concat(CATALOG[cat]);
+        }
+      } else {
+        items = CATALOG[currentCategory] || [];
+      }
+
+      return items.filter(it => {
+        if (currentType !== 'all' && it.type !== currentType) return false;
+        if (searchQuery) {
+          const q = searchQuery.toLowerCase();
+          return it.title.toLowerCase().includes(q) || it.id.includes(q);
+        }
+        return true;
+      });
+    }
+
+    function renderGrid() {
+      const items = getItems();
+      const grid = document.getElementById('mediaGrid');
+      const stats = document.getElementById('statsBar');
+      
+      stats.innerText = `Showing ${items.length} items`;
+      
+      if (items.length === 0) {
+        grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">பொருத்தமான பாடல்கள் காணப்படவில்லை (No matching items found)</div>';
+        return;
+      }
+
+      grid.innerHTML = items.map(it => `
+        <div class="media-card" onclick="playVideo('${it.id}', '${it.title.replace(/'/g, "\\'")}')">
+          <div class="thumb-wrapper">
+            <img src="https://i.ytimg.com/vi/${it.id}/mqdefault.jpg" loading="lazy" alt="${it.title}">
+            <span class="badge ${it.type === 'film' ? 'badge-film' : 'badge-audio'}">${it.type === 'film' ? 'Film' : 'Audio'}</span>
+            <div class="play-overlay">▶</div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">${it.title}</div>
+            <div class="card-meta">
+              <span>${it.type === 'film' ? '🎬 Full Film' : '🎵 Official Release'}</span>
+              <span>Watch on YouTube ↗</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function setCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('onclick').includes(cat)) {
+          btn.classList.add('active');
+        }
+      });
+      renderGrid();
+    }
+
+    function setTypeFilter(t) {
+      currentType = t;
+      document.querySelectorAll('.type-btn').forEach(btn => btn.classList.remove('active'));
+      if (t === 'all') document.getElementById('typeAll').classList.add('active');
+      if (t === 'film') document.getElementById('typeFilm').classList.add('active');
+      if (t === 'audio') document.getElementById('typeAudio').classList.add('active');
+      renderGrid();
+    }
+
+    function filterMedia() {
+      searchQuery = document.getElementById('searchInput').value;
+      renderGrid();
+    }
+
+    function playVideo(id, title) {
+      const container = document.getElementById('playerContainer');
+      const iframe = document.getElementById('videoIframe');
+      const titleElem = document.getElementById('playerTitle');
+      
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1`;
+      titleElem.innerText = title;
+      container.classList.add('active');
+      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function closePlayer() {
+      const container = document.getElementById('playerContainer');
+      const iframe = document.getElementById('videoIframe');
+      iframe.src = '';
+      container.classList.remove('active');
+    }
+
+    // Initial render
+    renderGrid();
+  </script>
+</body>
+</html>
