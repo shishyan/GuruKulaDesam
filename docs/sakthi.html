@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>சக்தி நெறி — அன்னையின் பேரருள் & போற்றிகள் | Guru Kula Desam</title>
+  <meta name="description" content="அபிராமி அந்தாதி, 108 சரஸ்வதி/லக்ஷ்மி போற்றி, தாயே கருமாரி மற்றும் மங்களத் துதிகள் (22 படைப்புகள்)">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand">
+        <div class="brand-emblem">ॐ</div>
+        <div class="brand-text">
+          <h1>குரு குல தேசம்</h1>
+          <span>Guru Kula Desam</span>
+        </div>
+      </a>
+      <button class="mobile-toggle" onclick="toggleMobileNav()">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link ">முகப்பு (Home)</a><a href="saiva-neri.html" class="nav-link ">சிவ நெறி</a><a href="thirukkural.html" class="nav-link ">திருக்குறள்</a><a href="sanmargam.html" class="nav-link ">சன்மார்க்கம்</a><a href="murugan.html" class="nav-link ">முருகன்</a><a href="sakthi.html" class="nav-link active">சக்தி</a><a href="vinayagar.html" class="nav-link ">விநாயகர்</a><a href="vaishnava.html" class="nav-link ">வைணவம்</a><a href="about.html" class="nav-link ">தத்துவ தரிசனம்</a>
+        <a href="https://www.youtube.com/@guru-kula-desam?sub_confirmation=1" target="_blank" class="yt-btn-header">
+          ▶ Subscribe
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="main-content">
+    <div class="hero-banner">
+      <div class="sacred-tag">ॐ அன்னை அருள் ॐ</div>
+      <h1>சக்தி நெறி — அன்னையின் பேரருள் & போற்றிகள்</h1>
+      <h2>Sakthi Neri — Divine Motherhood & Grace</h2>
+      <div class="verse-quote">"தனந்தரும் கல்வி தரும் ஒருநாளும் தளர்வறியா மனந்தரும் — அபிராமி அந்தாதி"</div>
+      <p class="hero-desc">அபிராமி அந்தாதி, 108 சரஸ்வதி/லக்ஷ்மி போற்றி, தாயே கருமாரி மற்றும் மங்களத் துதிகள் (22 படைப்புகள்)</p>
+    </div>
+
+    <div class="controls-panel">
+      <div class="search-box">
+        <input type="text" placeholder="பாடல்கள் & அதிகாரங்களை தேடுக... (Search by title or number)" oninput="onSearchInput(this.value)">
+      </div>
+      <div class="filter-actions">
+        <button class="filter-btn active" id="filter-all" onclick="setTypeFilter('all')">அனைத்தும் (All)</button>
+        <button class="filter-btn" id="filter-film" onclick="setTypeFilter('film')">🎬 படங்கள் (Films)</button>
+        <button class="filter-btn" id="filter-audio" onclick="setTypeFilter('audio')">🎵 இசை (Audio)</button>
+      </div>
+      <div class="item-count-badge" id="itemCountBadge">காட்டப்படும் பாடல்கள்: 22</div>
+    </div>
+
+    <div class="cards-grid" id="cardsGrid"></div>
+  </main>
+
+  
+  <div class="player-modal" id="playerModal" onclick="if(event.target === this) closePlayer()">
+    <div class="player-modal-box">
+      <div class="modal-iframe-wrapper">
+        <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <div class="modal-title" id="modalTitle">Now Playing</div>
+        <button class="modal-close-btn" onclick="closePlayer()">✕ மூடுக (Close)</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>குரு குல தேசம் (Guru Kula Desam)</h4>
+        <p>சைவ நெறி, திருக்குறள், திருவருட்பா மற்றும் தமிழ் பக்தி இலக்கியப் பெருவெளி உலகிற்கு வழங்கும் புதிய யுக இசைப்படைப்புகள்.</p>
+        <p style="margin-top: 10px; color: var(--gold);">அன்பே சிவம் | யாதும் ஊரே யாவரும் கேளிர்</p>
+      </div>
+      <div class="footer-col">
+        <h4>வழிபாட்டு நெறிகள்</h4>
+        <ul class="footer-links">
+          <li><a href="saiva-neri.html">சைவ நெறி (சிவ பெருமான் பாடல்கள்)</a></li>
+          <li><a href="thirukkural.html">திருக்குறள் மாஸ்டர் கலெக்ஷன்</a></li>
+          <li><a href="sanmargam.html">வள்ளலார் சுத்த சன்மார்க்கம்</a></li>
+          <li><a href="murugan.html">முருக நெறி & கந்த சஷ்டி</a></li>
+          <li><a href="sakthi.html">சக்தி நெறி & அபிராமி அந்தாதி</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>நேரலை இணைப்புகள்</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.youtube.com/@guru-kula-desam" target="_blank">YouTube அதிகாரப்பூர்வ தளம்</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro" target="_blank">திருக்குறள் மாஸ்டர் பிளேலிஸ்ட்</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLeqSbdtlRtmc" target="_blank">சிவ பெருமான் பிளேலிஸ்ட்</a></li>
+          <li><a href="about.html">புதிய யுக சைவ நெறி தரிசனம்</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 குரு குல தேசம் (Guru Kula Desam) | gurukuladesam.com | அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.
+    </div>
+  </footer>
+
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const PAGE_ITEMS = [{"id": "VMn8fiWF-oA", "title": "108 சரஸ்வதி போற்றி | Saraswathi 108 Potri Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "wehcVz3BMHo", "title": "Magamayi Samayapurathaye | Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "grjVzzo-RWc", "title": "Magamayi Samayapurathaye | Original Story Version", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "vaXLG5kUGVc", "title": "அன்னை ரேணுகாம்பாள் துதி | Annai Renukambal Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "2tL-bKjkL18", "title": "அபிராமி அந்தாதி துதி | Abhirami Andhathi Thuthi Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "rYUfISYky0g", "title": "காயத்ரி மந்திரம் 2026 | Gayathri Mantra Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "60rrBjJfAS4", "title": "தனந்தரும் அபிராமி | Dhanam Tharum Abhirami Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "Yu4RBKpAodM", "title": "தனந்தரும் கல்விதரும் | Dhanam Tharum Kalvi Tharum Cinematic Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "0k9CZLNA2TY", "title": "தனந்தரும் கல்விதரும்!", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "bZ03UopgYcc", "title": "தாயே கருமாரி | Thaaye Karumari Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "CS92JrOQkbc", "title": "லக்ஷ்மி 108 போற்றி | Lakshmi 108 Potri Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "7iWQUBmq3aU", "title": "வடிவுடை மாணிக்கமாலை | Vadivudai Manikkamalai Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "94drEh5bkH0", "title": "108 Saraswathi Potri (108 சரஸ்வதி போற்றி)", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "UUytjlINYLw", "title": "Abhirami Andhathi Thuthi (அபிராமி அந்தாதி துதி)", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "w0lNqTk3QCU", "title": "Abirami Anthathi Thuthi", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "IT_-ioBG69g", "title": "Dhanam Tharum Abhirami", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "Q2xax9mIhZw", "title": "Dhanam Tharum Abhirami", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "d4-qZaYo-4g", "title": "Gayathri Mantra (காயத்ரி மந்திரம்) 2026", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "hp1ctMubVmo", "title": "Lakshmi 108 Potri (லக்ஷ்மி 108 போற்றி)", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "fzoZWnsJReg", "title": "Thaaye Karumari 2026 (தாயே கருமாரி)", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "K0N0k3mNh_w", "title": "அன்னை ரேணுகாம்பாள் துதி", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "jZI2pTITtBY", "title": "திருவருட்பா - வடிவுடை மாணிக்கமாலை !", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}];
+    initPage(PAGE_ITEMS);
+  </script>
+</body>
+</html>
