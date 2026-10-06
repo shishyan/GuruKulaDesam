@@ -1,9 +1,89 @@
-<!DOCTYPE html>
+import json
+import os
+
+with open('site_catalog.json', 'r', encoding='utf-8') as f:
+    catalog = json.load(f)
+
+# Definitions of pages tailored for Saiva Neri and the New Age
+pages_config = [
+    {
+        'id': 'saiva_neri',
+        'file': 'embed_saiva_neri.html',
+        'title_ta': 'சைவ நெறி — புதிய யுகத்திற்கான ஆன்மீக ஒளி',
+        'title_en': 'Saiva Neri — Spiritual Light for the New Age',
+        'verse': 'அன்பும் சிவமும் இரண்டென்பர் அறிவிலார் | அன்பே சிவமாவது ஆரும் அறிகிலார் — திருமூலர் திருமந்திரம்',
+        'subtitle': 'திருவாசகம், தேவாரம், திருமந்திரம், சிவபுராணம் மற்றும் தியான இசைப் பெருவெளி (172 பாடல்கள் & திரைப்படங்கள்)',
+        'category_keys': ['shiva'],
+        'accent_color': '#e09f3e'
+    },
+    {
+        'id': 'thirukkural',
+        'file': 'embed_thirukkural.html',
+        'title_ta': 'திருக்குறள் — உலகப் பொதுமறை அறநெறி',
+        'title_en': 'Thirukkural — The Universal Ethical Foundation',
+        'verse': 'அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு — குறள் 1',
+        'subtitle': 'அனைத்து 133 அதிகாரங்களின் திரைப்படங்கள் மற்றும் அதிகாரப் பாடல் வெளியீடுகள் (185 படைப்புகள்)',
+        'category_keys': ['thirukkural'],
+        'accent_color': '#d4af37'
+    },
+    {
+        'id': 'vallalar_sanmargam',
+        'file': 'embed_vallalar_sanmargam.html',
+        'title_ta': 'சுத்த சன்மார்க்கம் & வள்ளலார் அருட்பெருஞ்சோதி',
+        'title_en': 'Suddha Sanmargam & Vallalar Grace',
+        'verse': 'அருட்பெருஞ்சோதி அருட்பெருஞ்சோதி தனிப்பெருங்கருணை அருட்பெருஞ்சோதி — திருவருட்பா',
+        'subtitle': 'ஜீவகாருண்ய ஒழுக்கம், அருட்பெருஞ்சோதி அகவல், திருவருட்பா மற்றும் தமிழ் மரபுப் பாடல்கள் (94 படைப்புகள்)',
+        'category_keys': ['vallalar_cultural'],
+        'accent_color': '#f4a261'
+    },
+    {
+        'id': 'murugan',
+        'file': 'embed_murugan.html',
+        'title_ta': 'முருக நெறி — ஞானவேல் & பக்தி யோகம்',
+        'title_en': 'Muruga Neri — Wisdom, Courage & Devotion',
+        'verse': 'யாமிருக்க பயமேன்! உருவாய் அருவாய் உளதாய் இலதாய் மருவாய் மலராய் மணியாய் ஒளியாய் — கந்தர் அநுபூதி',
+        'subtitle': 'கந்த சஷ்டி கவசம், திருப்புகழ், கந்தர் அநுபூதி மற்றும் கந்தர் அலங்காரம் (50 படைப்புகள்)',
+        'category_keys': ['murugan'],
+        'accent_color': '#e76f51'
+    },
+    {
+        'id': 'amman',
+        'file': 'embed_amman.html',
+        'title_ta': 'சக்தி நெறி — அன்னையின் பேரருள் & போற்றிகள்',
+        'title_en': 'Sakthi Neri — Divine Motherhood & Grace',
+        'verse': 'தனந்தரும் கல்வி தரும் ஒருநாளும் தளர்வறியா மனந்தரும் — அபிராமி அந்தாதி',
+        'subtitle': 'அபிராமி அந்தாதி, 108 சரஸ்வதி/லக்ஷ்மி போற்றி, தாயே கருமாரி மற்றும் மங்களத் துதிகள் (22 படைப்புகள்)',
+        'category_keys': ['amman'],
+        'accent_color': '#f28482'
+    },
+    {
+        'id': 'vinayagar',
+        'file': 'embed_vinayagar.html',
+        'title_ta': 'விநாயகர் வழிபாடு — முழுமுதற் கடவுள் & தடைகள் அகற்றும் அருள்',
+        'title_en': 'Lord Vinayagar — The Remover of All Obstacles',
+        'verse': 'வாக்குண்டாம் நல்ல மனமுண்டாம் மாமலராள் நோக்குண்டாம் மேனி நுடங்காது — ஔவையார்',
+        'subtitle': 'மகா கணேச பஞ்சரத்னம், கண நாதா ஓம், திகட சக்கர, பாலும் தெளிர் தேனும் (9 படைப்புகள்)',
+        'category_keys': ['vinayagar'],
+        'accent_color': '#e9c46a'
+    },
+    {
+        'id': 'vishnu_krishna',
+        'file': 'embed_vishnu_krishna.html',
+        'title_ta': 'வைணவ நெறி — சரணாகதி & திருப்பாவைத் திருப்பதிகங்கள்',
+        'title_en': 'Vaishnava Neri — Absolute Surrender & Divine Love',
+        'verse': 'வையத்து வாழ்வீர்காள் நாமும் நம் பாவைக்குச் செய்யும் கிரிசைகள் கேளீரோ — ஆண்டாள் திருப்பாவை',
+        'subtitle': 'திருப்பாவை, பெரியாழ்வார் திருமொழி தாலாட்டு, நமோ நாராயணம் மற்றும் நாம சங்கீர்த்தனம் (48 படைப்புகள்)',
+        'category_keys': ['vishnu_krishna'],
+        'accent_color': '#2a9d8f'
+    }
+]
+
+template = """<!DOCTYPE html>
 <html lang="ta">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>சக்தி நெறி — அன்னையின் பேரருள் & போற்றிகள் | Guru Kula Desam</title>
+  <title>__PAGE_TITLE_TA__ | Guru Kula Desam</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +93,7 @@
       --card-bg: rgba(20, 23, 30, 0.75);
       --card-border: rgba(212, 175, 55, 0.22);
       --card-hover: rgba(212, 175, 55, 0.45);
-      --accent: #f28482;
+      --accent: __ACCENT_COLOR__;
       --gold: #d4af37;
       --gold-bright: #ffd700;
       --gold-light: #fef5d1;
@@ -364,10 +444,10 @@
 
   <div class="banner">
     <div class="sacred-emblem">ॐ சிவாய நம ஓம்</div>
-    <h1>சக்தி நெறி — அன்னையின் பேரருள் & போற்றிகள்</h1>
-    <div class="sub-en">Sakthi Neri — Divine Motherhood & Grace</div>
-    <div class="verse-box">"தனந்தரும் கல்வி தரும் ஒருநாளும் தளர்வறியா மனந்தரும் — அபிராமி அந்தாதி"</div>
-    <p class="description">அபிராமி அந்தாதி, 108 சரஸ்வதி/லக்ஷ்மி போற்றி, தாயே கருமாரி மற்றும் மங்களத் துதிகள் (22 படைப்புகள்)</p>
+    <h1>__PAGE_TITLE_TA__</h1>
+    <div class="sub-en">__PAGE_TITLE_EN__</div>
+    <div class="verse-box">"__VERSE__"</div>
+    <p class="description">__SUBTITLE__</p>
   </div>
 
   <div class="player-container" id="playerContainer">
@@ -395,7 +475,7 @@
   <div class="media-grid" id="mediaGrid"></div>
 
   <script>
-    const ITEMS = [{"id": "VMn8fiWF-oA", "title": "108 சரஸ்வதி போற்றி | Saraswathi 108 Potri Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "wehcVz3BMHo", "title": "Magamayi Samayapurathaye | Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "grjVzzo-RWc", "title": "Magamayi Samayapurathaye | Original Story Version", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "vaXLG5kUGVc", "title": "அன்னை ரேணுகாம்பாள் துதி | Annai Renukambal Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "2tL-bKjkL18", "title": "அபிராமி அந்தாதி துதி | Abhirami Andhathi Thuthi Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "rYUfISYky0g", "title": "காயத்ரி மந்திரம் 2026 | Gayathri Mantra Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "60rrBjJfAS4", "title": "தனந்தரும் அபிராமி | Dhanam Tharum Abhirami Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "Yu4RBKpAodM", "title": "தனந்தரும் கல்விதரும் | Dhanam Tharum Kalvi Tharum Cinematic Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "0k9CZLNA2TY", "title": "தனந்தரும் கல்விதரும்!", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "bZ03UopgYcc", "title": "தாயே கருமாரி | Thaaye Karumari Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "CS92JrOQkbc", "title": "லக்ஷ்மி 108 போற்றி | Lakshmi 108 Potri Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "7iWQUBmq3aU", "title": "வடிவுடை மாணிக்கமாலை | Vadivudai Manikkamalai Cinematic Devotional Film", "type": "film", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "94drEh5bkH0", "title": "108 Saraswathi Potri (108 சரஸ்வதி போற்றி)", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "UUytjlINYLw", "title": "Abhirami Andhathi Thuthi (அபிராமி அந்தாதி துதி)", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "w0lNqTk3QCU", "title": "Abirami Anthathi Thuthi", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "IT_-ioBG69g", "title": "Dhanam Tharum Abhirami", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "Q2xax9mIhZw", "title": "Dhanam Tharum Abhirami", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "d4-qZaYo-4g", "title": "Gayathri Mantra (காயத்ரி மந்திரம்) 2026", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "hp1ctMubVmo", "title": "Lakshmi 108 Potri (லக்ஷ்மி 108 போற்றி)", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "fzoZWnsJReg", "title": "Thaaye Karumari 2026 (தாயே கருமாரி)", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "K0N0k3mNh_w", "title": "அன்னை ரேணுகாம்பாள் துதி", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}, {"id": "jZI2pTITtBY", "title": "திருவருட்பா - வடிவுடை மாணிக்கமாலை !", "type": "audio", "playlists": ["Discography", "Goddess Amman Songs"]}];
+    const ITEMS = __ITEMS_DATA__;
 
     let currentType = 'all';
     let searchQuery = '';
@@ -424,7 +504,7 @@
       }
 
       grid.innerHTML = items.map(it => `
-        <div class="media-card" onclick="playVideo('${it.id}', '${it.title.replace(/'/g, "\\'")}')">
+        <div class="media-card" onclick="playVideo('${it.id}', '${it.title.replace(/'/g, "\\\\'")}')">
           <div class="thumb-wrapper">
             <img src="https://i.ytimg.com/vi/${it.id}/mqdefault.jpg" loading="lazy" alt="${it.title}">
             <span class="badge ${it.type === 'film' ? 'badge-film' : 'badge-audio'}">${it.type === 'film' ? 'Film' : 'Audio'}</span>
@@ -478,3 +558,29 @@
   </script>
 </body>
 </html>
+"""
+
+for page in pages_config:
+    items = []
+    for k in page['category_keys']:
+        items.extend(catalog.get(k, []))
+        
+    page_html = template.replace('__PAGE_TITLE_TA__', page['title_ta'])
+    page_html = page_html.replace('__PAGE_TITLE_EN__', page['title_en'])
+    page_html = page_html.replace('__VERSE__', page['verse'])
+    page_html = page_html.replace('__SUBTITLE__', page['subtitle'])
+    page_html = page_html.replace('__ACCENT_COLOR__', page['accent_color'])
+    page_html = page_html.replace('__ITEMS_DATA__', json.dumps(items, ensure_ascii=False))
+    
+    # Write to site/ and docs/
+    filepath = os.path.join('site', page['file'])
+    docs_path = os.path.join('docs', page['file'])
+    
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(page_html)
+    with open(docs_path, 'w', encoding='utf-8') as f:
+        f.write(page_html)
+        
+    print(f"Generated {filepath} and {docs_path} ({len(items)} items)")
+
+print("All dedicated spiritual pages generated successfully!")
