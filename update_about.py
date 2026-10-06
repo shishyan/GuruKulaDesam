@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+import json
+from update_style import build_header, build_footer, build_player_modal
+
+with open('Site/assets/data/catalog.json', 'r', encoding='utf-8') as f:
+    catalog = json.load(f)
+
+# Comprehensive About Page with Vedic & Periyava treatises
+about_html = f"""<!DOCTYPE html>
 <html lang="ta">
 <head>
   <meta charset="UTF-8">
@@ -9,26 +16,7 @@
 </head>
 <body>
 
-  
-  <header class="site-header">
-    <div class="header-container">
-      <a href="index.html" class="brand">
-        <div class="brand-emblem">ॐ</div>
-        <div class="brand-text">
-          <h1>குரு குல தேசம்</h1>
-          <span>Guru Kula Desam • வேத & சைவ நெறி</span>
-        </div>
-      </a>
-      <button class="mobile-toggle" onclick="toggleMobileNav()">☰</button>
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html" class="nav-link ">முகப்பு (Home)</a><a href="saiva-neri.html" class="nav-link ">சைவ நெறி (Shaivam)</a><a href="thirukkural.html" class="nav-link ">திருக்குறள் (Kural)</a><a href="sanmargam.html" class="nav-link ">சன்மார்க்கம் (Vallalar)</a><a href="murugan.html" class="nav-link ">முருகன் (Kaumaram)</a><a href="sakthi.html" class="nav-link ">சக்தி (Shaktham)</a><a href="vinayagar.html" class="nav-link ">விநாயகர் (Ganapathyam)</a><a href="vaishnava.html" class="nav-link ">வைணவம் (Vaishnavam)</a><a href="about.html" class="nav-link active">வேத & பெரியவா தரிசனம்</a>
-        <a href="https://www.youtube.com/@guru-kula-desam?sub_confirmation=1" target="_blank" class="yt-btn-header">
-          ▶ YouTube Channel
-        </a>
-      </nav>
-    </div>
-  </header>
-
+  {build_header('about.html')}
 
   <main class="main-content" style="max-width: 1000px;">
     <div class="hero-banner">
@@ -139,54 +127,16 @@
     </div>
   </main>
 
-  
-  <div class="player-modal" id="playerModal" onclick="if(event.target === this) closePlayer()">
-    <div class="player-modal-box">
-      <div class="modal-iframe-wrapper">
-        <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="modal-footer">
-        <div class="modal-title" id="modalTitle">Now Playing</div>
-        <button class="modal-close-btn" onclick="closePlayer()">✕ மூடுக (Close)</button>
-      </div>
-    </div>
-  </div>
-
-  
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-col">
-        <h4>குரு குல தேசம் (Guru Kula Desam)</h4>
-        <p>வேதங்கள், பன்னிரு திருமுறைகள், சைவ சித்தாந்த சாத்திரங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் சுத்த சன்மார்க்க நெறிகளை உலகிற்கு பறைசாற்றும் ஆன்மீக இசைப் பெருவெளி.</p>
-        <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">அன்பே சிவம் • யாதும் ஊரே யாவரும் கேளிர் • ஏகன் அநேகன்</p>
-      </div>
-      <div class="footer-col">
-        <h4>புனித நூல்கள் & ஆதாரங்கள்</h4>
-        <ul class="footer-links">
-          <li><a href="https://shaivam.org" target="_blank">Shaivam.org — பன்னிரு திருமுறைகள் & சைவ சித்தாந்தம்</a></li>
-          <li><a href="about.html">தெய்வத்தின் குரல் — காஞ்சி மகா பெரியவா அருளுரைகள்</a></li>
-          <li><a href="thirukkural.html">திருக்குறள் — உலகப் பொதுமறை அறவழிகாட்டல்</a></li>
-          <li><a href="sanmargam.html">திருவருட்பா — அருட்பெருஞ்சோதி அகவல்</a></li>
-          <li><a href="saiva-neri.html">ஸ்ரீ ருத்ரம், சமகம் & உபநிடதங்கள்</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>பக்தி & இசை வழிகள்</h4>
-        <ul class="footer-links">
-          <li><a href="saiva-neri.html">சிவ நெறி (172 திருமுறைப் பாடல்கள்)</a></li>
-          <li><a href="thirukkural.html">திருக்குறள் (185 அதிகாரப் படங்கள் & இசை)</a></li>
-          <li><a href="murugan.html">முருக நெறி (கந்த சஷ்டி & திருப்புகழ்)</a></li>
-          <li><a href="sakthi.html">சக்தி நெறி (அபிராமி அந்தாதி & போற்றிகள்)</a></li>
-          <li><a href="https://www.youtube.com/@guru-kula-desam" target="_blank">YouTube அதிகாரப்பூர்வ தளம்</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      &copy; 2026 குரு குல தேசம் (Guru Kula Desam) | gurukuladesam.com | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.
-    </div>
-  </footer>
-
+  {build_player_modal()}
+  {build_footer()}
 
   <script src="assets/js/main.js"></script>
 </body>
-</html>
+</html>"""
+
+with open('Site/about.html', 'w', encoding='utf-8') as f:
+    f.write(about_html)
+with open('docs/about.html', 'w', encoding='utf-8') as f:
+    f.write(about_html)
+
+print("Updated Site/about.html and docs/about.html with deep Vedic, Periyava & Shaivam.org content!")
