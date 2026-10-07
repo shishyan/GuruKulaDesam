@@ -1,5 +1,253 @@
 [
   {
+    "chapter_number": 5,
+    "tamil_title": "அதிகாரம் 5 - இல்வாழ்க்கை",
+    "transliterated_title": "Ilvaazhkkai",
+    "thematic_english_title": "Domestic Virtue & Grihastha Dharma",
+    "canonical_youtube_title": "அதிகாரம் 5 - இல்வாழ்க்கை | Ilvaazhkkai - Domestic Virtue & Grihastha Dharma | Guru Kula Desam",
+    "track_id": "v_dsHTOvKP8",
+    "paal": "அறத்துப்பால் (Book of Virtue)",
+    "iyal": "இல்லறவியல் (Domestic Virtue)",
+    "kural_range": "41 - 50",
+    "key_kurals": [
+      {
+        "number": 41,
+        "tamil": "இல்வாழ்வான் என்பான் இயல்புடைய மூவர்க்கும்\nநல்லாற்றின் நின்ற துணை.",
+        "english": "The righteous householder is the steadfast foundation supporting all three orders of seekers on their sacred path."
+      },
+      {
+        "number": 45,
+        "tamil": "அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை\nபண்பும் பயனும் அது.",
+        "english": "If domestic life is blessed with love and virtue, that itself constitutes both its true character and supreme reward."
+      }
+    ],
+    "description": {
+      "tamil_summary": "அதிகாரம் 5: இல்வாழ்க்கை (Ilvaazhkkai) — இல்லறத்தின் மாண்பையும், விருந்தோம்பல், குடும்ப நல்லிணக்கம், அறநெறி வாழ்வையும் போற்றும் வள்ளுவப் பேருரை.\n\n'இல்வாழ்வான் என்பான் இயல்புடைய மூவர்க்கும்\nநல்லாற்றின் நின்ற துணை.' (குறள் 41)\n\n'அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை\nபண்பும் பயனும் அது.' (குறள் 45)\n\nஇல்லறம் என்பது வெறும் உலகியல் வாழ்க்கை அல்ல; அது துறவிகளுக்கும், மாணவர்களுக்கும், முதியோர்களுக்கும் ஆதரவு தரும் ஜீவநதி. அன்பும் அறமும் நிறைந்த இல்லறமே மண்ணில் விண்ணக வாழ்வை மலரச் செய்கிறது.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) தெய்வீக இன்னிசையுடன், மலர் மாலைகள், திருவிளக்கு ஒளி மற்றும் சங்க கால இல்லற எழில் தவழும் 42 தனித்துவ கலைப் படங்களுடன் இணைந்த முழு நீள காவியத் திரைப்படம்.",
+      "english_summary": "Chapter 5: Ilvaazhkkai (Domestic Virtue & Sacred Householder Dharma) from the monumental ethical treatise Thirukkural by Thiruvalluvar.\n\n'If domestic life is endowed with pure love and moral righteousness, it attains both its true grace and supreme fulfillment.' (Kural 45)\n\nValluvar celebrates the householder as the noble sustainer of society—providing sanctuary to students, sages, ancestors, and wayfarers. A household anchored in affectionate partnership and spotless honor is hailed as surpassing solitary asceticism, transforming earthly life into an abode of celestial divinity.\n\nExperience this complete cinematic release produced by Guru Kula Desam, harmonized with classical orchestration and 42 photorealistic artworks celebrating traditional Tamil Sangam domestic warmth.",
+      "timestamps": [
+        {
+          "time": "00:00",
+          "label": "விடியலின் மங்கல திருவிளக்கும் இல்லறத் தொடக்கமும் (Auspicious Dawn & Altar)"
+        },
+        {
+          "time": "01:05",
+          "label": "மூவர்க்கும் நின்ற துணை - குறள் 41 (Sustaining the Seekers of Dharma)"
+        },
+        {
+          "time": "02:15",
+          "label": "அன்பும் அறனும் உடைத்தாயின் - குறள் 45 (Harmony of Love & Virtue)"
+        },
+        {
+          "time": "03:25",
+          "label": "மண்ணில் விண்ணகம் மலரும் இல்வாழ்க்கை (Divine Radiance of Grihastha Dharma)"
+        }
+      ],
+      "audio_credits": {
+        "track": "அதிகாரம் 5 - இல்வாழ்க்கை (Original Master)",
+        "artist": "Guru Kula Desam",
+        "vocals_engineering": "Nagarajan Balasubramanian",
+        "audio_source_url": "https://www.youtube.com/watch?v=v_dsHTOvKP8",
+        "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+      },
+      "call_to_action": "Subscribe to @guru-kula-desam for authentic Thirukkural cinematic musical compositions and timeless Tamil ethical heritage."
+    },
+    "hashtags": [
+      "#திருக்குறள்",
+      "#இல்வாழ்க்கை",
+      "#Thirukkural",
+      "#Ilvaazhkkai",
+      "#GrihasthaDharma",
+      "#TamilLiterature",
+      "#GuruKulaDesam"
+    ]
+  },
+  {
+    "chapter_number": 8,
+    "tamil_title": "அதிகாரம் 8 - அன்புடைமை",
+    "transliterated_title": "Anbudaimai",
+    "thematic_english_title": "Loving-Kindness & Universal Affection",
+    "canonical_youtube_title": "அதிகாரம் 8 - அன்புடைமை | Anbudaimai - Loving-Kindness & Universal Affection | Guru Kula Desam",
+    "track_id": "lneosghJWgs",
+    "paal": "அறத்துப்பால் (Book of Virtue)",
+    "iyal": "இல்லறவியல் (Domestic Virtue)",
+    "kural_range": "71 - 80",
+    "key_kurals": [
+      {
+        "number": 71,
+        "tamil": "அன்பிற்கும் உண்டோ அடைக்குந்தாழ் ஆர்வலர்\nபுன்கணீர் பூசல் தரும்.",
+        "english": "Can love be shut behind bolted doors? The tender tears trickling from eyes of affection will instantly proclaim it."
+      },
+      {
+        "number": 72,
+        "tamil": "அன்பிலார் எல்லாம் தமக்குரியர் அன்புடையார்\nஎன்பும் உரியர் பிறர்க்கு.",
+        "english": "The loveless claim everything for themselves; but the loving freely dedicate their very flesh and bone to others."
+      }
+    ],
+    "description": {
+      "tamil_summary": "அதிகாரம் 8: அன்புடைமை (Anbudaimai) — மனித மாண்பின் உச்சமான அன்பையும், கருணைப் பெருக்கையும் போற்றும் திருவள்ளுவரின் அமர காவிய உரை.\n\n'அன்பிற்கும் உண்டோ அடைக்குந்தாழ் ஆர்வலர்\nபுன்கணீர் பூசல் தரும்.' (குறள் 71)\n\n'அன்பிலார் எல்லாம் தமக்குரியர் அன்புடையார்\nஎன்பும் உரியர் பிறர்க்கு.' (குறள் 72)\n\nஅன்பு இல்லாத உடல் எலும்பை மூடிய வெறும் தோல் கூடு போன்றது. அன்பு இருப்பவனே உண்மையில் வாழ்பவன். அன்பெனும் மென்பனித் துளிகள் மனித இதயங்களில் விழுந்து உறவுகளை மலரச் செய்கின்றன.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) நெஞ்சை உருக்கும் தெய்வீகப் பண்ணிசையில், தூய அன்பின் 35 கலைநயமிக்க எழிற்காட்சிகளுடன் கூடிய முழு நீள காவியத் திரைப்படம்.",
+      "english_summary": "Chapter 8: Anbudaimai (The Possession of Love & Unconditional Affection) from Thirukkural by Thiruvalluvar.\n\n'Can any bolt restrain love? The affectionate tear welled up in the eyes of devoted companions proclaims it aloud.' (Kural 71)\n\nValluvar unveils love as the vital life-force of human existence. Without love, the physical body is likened to dry bones covered in skin withered by the scorching sun. Love bridges the solitary soul to universal brotherhood, transforming sacrifice into spontaneous joy.\n\nExperience this complete cinematic musical release by Guru Kula Desam, paired with 35 photorealistic visual artworks under gentle atmospheric morning drizzle.",
+      "timestamps": [
+        {
+          "time": "00:00",
+          "label": "அன்பின் விடியலும் ஆனந்தக் கண்ணீரும் (Tears of Loving Tenderness)"
+        },
+        {
+          "time": "00:55",
+          "label": "அன்பிலார் vs அன்புடையார் - குறள் 72 (The Generosity of Loving Souls)"
+        },
+        {
+          "time": "01:50",
+          "label": "எலும்பில் பூத்த அன்பின் மரம் (The Living Bloom of Affection)"
+        },
+        {
+          "time": "02:50",
+          "label": "அன்பின் அமரத்துவம் (The Immortal Triumph of Love)"
+        }
+      ],
+      "audio_credits": {
+        "track": "அதிகாரம் 8 - அன்புடைமை (Original Master)",
+        "artist": "Guru Kula Desam",
+        "vocals_engineering": "Nagarajan Balasubramanian",
+        "audio_source_url": "https://www.youtube.com/watch?v=lneosghJWgs",
+        "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+      },
+      "call_to_action": "Subscribe to @guru-kula-desam for authentic Thirukkural cinematic musical compositions and timeless Tamil ethical heritage."
+    },
+    "hashtags": [
+      "#திருக்குறள்",
+      "#அன்புடைமை",
+      "#Thirukkural",
+      "#Anbudaimai",
+      "#LoveAndCompassion",
+      "#TamilWisdom",
+      "#GuruKulaDesam"
+    ]
+  },
+  {
+    "chapter_number": 16,
+    "tamil_title": "அதிகாரம் 16 - பொறையுடைமை",
+    "transliterated_title": "Poraiyudaimai",
+    "thematic_english_title": "Forbearance & Supreme Forgiveness",
+    "canonical_youtube_title": "அதிகாரம் 16 - பொறையுடைமை | Poraiyudaimai - Forbearance & Supreme Forgiveness | Guru Kula Desam",
+    "track_id": "R82hz_s2YGQ",
+    "paal": "அறத்துப்பால் (Book of Virtue)",
+    "iyal": "இல்லறவியல் (Domestic Virtue)",
+    "kural_range": "151 - 160",
+    "key_kurals": [
+      {
+        "number": 151,
+        "tamil": "அகழ்வாரைத் தாங்கும் நிலம்போலத் தம்மை\nஇகழ்வார்ப் பொறுத்தல் தலை.",
+        "english": "Even as mother earth bears steadfastly those who dig into her, bearing with those who insult and revile is the foremost virtue."
+      },
+      {
+        "number": 152,
+        "tamil": "திறனல்ல தற்பிறர் செய்யினும் நோநொந்து\nஅறனல்ல செய்யாமை நன்று.",
+        "english": "Though others inflict wrongful injury upon you, refrain from doing unrighteous deeds in return; forgive and endure."
+      }
+    ],
+    "description": {
+      "tamil_summary": "அதிகாரம் 16: பொறையுடைமை (Poraiyudaimai) — தன்னைத் தோண்டுபவரையும் தாங்கும் பூமியைப் போல, பிறர் செய்யும் தீங்குகளைப் பொறுத்துக் கொள்ளும் மாபெரும் சகிப்புத்தன்மை.\n\n'அகழ்வாரைத் தாங்கும் நிலம்போலத் தம்மை\nஇகழ்வார்ப் பொறுத்தல் தலை.' (குறள் 151)\n\nபழிவாங்கும் இன்பம் ஒரு நாள் மட்டுமே நீடிக்கும்; ஆனால் பொறுமையின் பெருமை உலகம் உள்ளளவும் நிலைத்து நிற்கும். தீங்கிழைப்பவரையும் தன் பொறுமையால் வென்று தலைகுனியச் செய்யும் பேராற்றல் பொறையுடைமை.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) கம்பீர இசையமைப்பில், பூமியின் தாங்கும் பேராற்றல் மற்றும் 62 தனித்துவ கலைக் காட்சிகளுடன் இணைந்த பிரம்மாண்ட காவியத் திரைப்படம்.",
+      "english_summary": "Chapter 16: Poraiyudaimai (The Power of Forbearance & Transcendent Forgiveness) from Thirukkural by Thiruvalluvar.\n\n'As the enduring earth bears even those who dig into her bosom, bearing with those who heap scorn and injury is the crowning jewel of virtues.' (Kural 151)\n\nValluvar declares that the joy of revenge lasts but a fleeting moment, whereas the glory of patient forbearance shines eternally. More exalted than severe fasting or solitary penance is the soul who absorbs harsh revilement without rancor, overcoming hostility through unconditional forgiveness.\n\nExperience this sweeping 62-shot master film by Guru Kula Desam, harmonized with authentic Sangam visuals under rhythmic atmospheric rainfall.",
+      "timestamps": [
+        {
+          "time": "00:00",
+          "label": "அகழ்வாரைத் தாங்கும் தாய்நிலம் - குறள் 151 (Mother Earth's Infinite Patience)"
+        },
+        {
+          "time": "01:30",
+          "label": "பழிவாங்காமையின் புனித நெறி - குறள் 152 (Transcending Retaliation)"
+        },
+        {
+          "time": "03:15",
+          "label": "பொன்னைப் போல பொறையுடையார் (Cherished Like Pure Tested Gold)"
+        },
+        {
+          "time": "04:50",
+          "label": "அறியாமையை மன்னிக்கும் பேரருள் (The Sublime Peace of Forgiveness)"
+        }
+      ],
+      "audio_credits": {
+        "track": "அதிகாரம் 16 - பொறையுடைமை (Original Master)",
+        "artist": "Guru Kula Desam",
+        "vocals_engineering": "Nagarajan Balasubramanian",
+        "audio_source_url": "https://www.youtube.com/watch?v=R82hz_s2YGQ",
+        "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+      },
+      "call_to_action": "Subscribe to @guru-kula-desam for authentic Thirukkural cinematic musical compositions and timeless Tamil ethical heritage."
+    },
+    "hashtags": [
+      "#திருக்குறள்",
+      "#பொறையுடைமை",
+      "#Thirukkural",
+      "#Poraiyudaimai",
+      "#Forbearance",
+      "#Forgiveness",
+      "#GuruKulaDesam"
+    ]
+  },
+  {
+    "chapter_number": 25,
+    "tamil_title": "அதிகாரம் 25 - அருளுடைமை",
+    "transliterated_title": "Aruludaimai",
+    "thematic_english_title": "Universal Grace & Compassion to All Beings",
+    "canonical_youtube_title": "அதிகாரம் 25 - அருளுடைமை | Aruludaimai - Universal Grace & Compassion to All Beings | Guru Kula Desam",
+    "track_id": "EChaj0wXk_0",
+    "paal": "அறத்துப்பால் (Book of Virtue)",
+    "iyal": "துறவறவியல் (Ascetic Virtue)",
+    "kural_range": "241 - 250",
+    "key_kurals": [
+      {
+        "number": 241,
+        "tamil": "அருட்செல்வம் செல்வத்துள் செல்வம் பொருட்செல்வம்\nபூரியார் கண்ணும் உள.",
+        "english": "The wealth of compassion is the supreme of all treasures; for material wealth can be possessed even by the base and cruel."
+      },
+      {
+        "number": 247,
+        "tamil": "அருளிலார்க்கு அவ்வுலகம் இல்லை பொருளிலார்க்கு\nஇவ்வுலகம் இல்லாகி யாங்கு.",
+        "english": "As this earthly world belongs not to the penniless, the higher celestial realm of light belongs not to the merciless."
+      }
+    ],
+    "description": {
+      "tamil_summary": "அதிகாரம் 25: அருளுடைமை (Aruludaimai) — அகிலத்தில் வாழும் அனைத்து சிற்றுயிர்களிடத்தும் எல்லையற்ற கருணையையும் அன்பையும் பொழியும் வள்ளுவ தர்மம்.\n\n'அருட்செல்வம் செல்வத்துள் செல்வம் பொருட்செல்வம்\nபூரியார் கண்ணும் உள.' (குறள் 241)\n\nபொருட்செல்வம் இழிந்தவர்களிடமும் கூட இருக்கும்; ஆனால் அனைத்து உயிர்களையும் தன் உயிர் போலக் கருதும் அருட்செல்வமே மேலான செல்வம். எளியோரைத் துன்புறுத்த நினைக்கும் போது, தமக்கு மேல் உள்ள வலியோர்க்கு முன் தான் நடுங்குவதை நினைத்துப் பார்க்க வேண்டும் என்று எச்சரிக்கிறார் வள்ளுவர்.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) அமைதியான தவப் பண்ணிசையில், 37 கருணை தவழும் கலைப் படைப்புகளுடன் இணைந்த முழு நீள காவியத் திரைப்படம்.",
+      "english_summary": "Chapter 25: Aruludaimai (Universal Grace & Compassion for All Sentient Life) from Thirukkural by Thiruvalluvar.\n\n'The wealth of divine compassion is the treasure of all treasures; material wealth is found even among the base.' (Kural 241)\n\nValluvar teaches that mercy toward all living creatures is the indispensable key to spiritual liberation. Just as earthly trade cannot be conducted without money, entry into the realm of enduring bliss cannot be gained without the currency of universal grace.\n\nExperience this complete cinematic release produced by Guru Kula Desam, featuring 37 master visual artworks under gentle morning drizzle.",
+      "timestamps": [
+        {
+          "time": "00:00",
+          "label": "அருட்செல்வம் செல்வத்துள் செல்வம் - குறள் 241 (The Supreme Treasure of Grace)"
+        },
+        {
+          "time": "01:00",
+          "label": "அனைத்து உயிர்களையும் காக்கும் பெருநெறி (Sanctuary for All Sentient Beings)"
+        },
+        {
+          "time": "02:10",
+          "label": "அருளிலார்க்கு அவ்வுலகம் இல்லை - குறள் 247 (The Spiritual Currency of Mercy)"
+        },
+        {
+          "time": "03:10",
+          "label": "எல்லையற்ற அருள் வெள்ளம் (The Boundless Ocean of Divine Grace)"
+        }
+      ],
+      "audio_credits": {
+        "track": "அதிகாரம் 25 - அருளுடைமை (Original Master)",
+        "artist": "Guru Kula Desam",
+        "vocals_engineering": "Nagarajan Balasubramanian",
+        "audio_source_url": "https://www.youtube.com/watch?v=EChaj0wXk_0",
+        "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+      },
+      "call_to_action": "Subscribe to @guru-kula-desam for authentic Thirukkural cinematic musical compositions and timeless Tamil ethical heritage."
+    },
+    "hashtags": [
+      "#திருக்குறள்",
+      "#அருளுடைமை",
+      "#Thirukkural",
+      "#Aruludaimai",
+      "#UniversalGrace",
+      "#Compassion",
+      "#GuruKulaDesam"
+    ]
+  },
+  {
     "chapter_number": 26,
     "tamil_title": "அதிகாரம் 26 - புலால் உண்ணாமை",
     "transliterated_title": "Pulaal Unnaamai",
@@ -240,6 +488,130 @@
         }
       ]
     }
+  },
+  {
+    "chapter_number": 30,
+    "tamil_title": "அதிகாரம் 30 - வாய்மை",
+    "transliterated_title": "Vaaimai",
+    "thematic_english_title": "The Power of Absolute Truthfulness",
+    "canonical_youtube_title": "அதிகாரம் 30 - வாய்மை | Vaaimai - The Power of Absolute Truthfulness | Guru Kula Desam",
+    "track_id": "BoOWFaOGczE",
+    "paal": "அறத்துப்பால் (Book of Virtue)",
+    "iyal": "துறவறவியல் (Ascetic Virtue)",
+    "kural_range": "291 - 300",
+    "key_kurals": [
+      {
+        "number": 291,
+        "tamil": "வாய்மை எனப்படுவது யாதெனின் யாதொன்றும்\nதீமை இலாத சொலல்.",
+        "english": "Truthfulness is nothing other than speech that is completely untainted by the slightest harm to any living soul."
+      },
+      {
+        "number": 299,
+        "tamil": "எல்லா விளக்கும் விளக்கல்ல சான்றோர்க்குப்\nபொய்யா விளக்கே விளக்கு.",
+        "english": "All external lamps that dispel darkness are not true lights; to the wise, the unblemished lamp of spotless truth alone is the light."
+      }
+    ],
+    "description": {
+      "tamil_summary": "அதிகாரம் 30: வாய்மை (Vaaimai) — வாய்மை என்பது மற்றவர்க்கு சிறிதும் தீங்கு தராத நற்சொற்களைப் பேசுவது. பொய்மையும் கூட ஒருவருக்கு குற்றமற்ற நன்மையைத் தரும் எனின் வாய்மையாகக் கருதப்படும்.\n\n'வாய்மை எனப்படுவது யாதெனின் யாதொன்றும்\nதீமை இலாத சொலல்.' (குறள் 291)\n\n'எல்லா விளக்கும் விளக்கல்ல சான்றோர்க்குப்\nபொய்யா விளக்கே விளக்கு.' (குறள் 299)\n\nபுற உடலை நீர் தூய்மை செய்யும்; ஆனால் அகத்தை வாய்மை மட்டுமே தூய்மை செய்யும். பொய் கூறாமல் வாழ்பவன் உலகத்தார் உள்ளங்களில் எல்லாம் முடிசூடா மன்னனாகத் திகழ்வான்.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) கம்பீர மெல்லிசையில், சத்தியத்தின் சுடரொளியை விளக்கும் 41 தனித்துவ கலைப் படங்களுடன் கூடிய முழு நீள காவியத் திரைப்படம்.",
+      "english_summary": "Chapter 30: Vaaimai (Absolute Truthfulness & Pure Speech) from Thirukkural by Thiruvalluvar.\n\n'Truthfulness is speech that brings no trace of harm to any living being.' (Kural 291)\n\n'External lamps merely dispel physical darkness; to the illumined sages, the unyielding lamp of truth alone is the true light.' (Kural 299)\n\nWater washes away bodily dirt, but the inward soul is cleansed solely by spotless truth. One who speaks without falsehood reigns supreme in the hearts of all mankind, surpassing thousands of ascetic penances.\n\nExperience this complete cinematic musical film produced by Guru Kula Desam, featuring 41 historical Sangam artworks under the steadfast atmospheric monsoon rain.",
+      "timestamps": [
+        {
+          "time": "00:00",
+          "label": "தீமை இலாத தூய சொற்கள் - குறள் 291 (Speech Free from Harm)"
+        },
+        {
+          "time": "01:05",
+          "label": "மனச்சாட்சியின் எரியும் சுடர் (The Flame of Conscience)"
+        },
+        {
+          "time": "02:15",
+          "label": "பொய்யா விளக்கே விளக்கு - குறள் 299 (The Eternal Lamp of Truth)"
+        },
+        {
+          "time": "03:30",
+          "label": "சத்தியத்தின் வெற்றி முடி (The Supreme Crown of Truthfulness)"
+        }
+      ],
+      "audio_credits": {
+        "track": "அதிகாரம் 30 - வாய்மை (Original Master)",
+        "artist": "Guru Kula Desam",
+        "vocals_engineering": "Nagarajan Balasubramanian",
+        "audio_source_url": "https://www.youtube.com/watch?v=BoOWFaOGczE",
+        "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+      },
+      "call_to_action": "Subscribe to @guru-kula-desam for authentic Thirukkural cinematic musical compositions and timeless Tamil ethical heritage."
+    },
+    "hashtags": [
+      "#திருக்குறள்",
+      "#வாய்மை",
+      "#Thirukkural",
+      "#Vaaimai",
+      "#Truthfulness",
+      "#Integrity",
+      "#GuruKulaDesam"
+    ]
+  },
+  {
+    "chapter_number": 31,
+    "tamil_title": "அதிகாரம் 31 - வெகுளாமை",
+    "transliterated_title": "Vegulaamai",
+    "thematic_english_title": "Restraint from Anger & Conquest of Wrath",
+    "canonical_youtube_title": "அதிகாரம் 31 - வெகுளாமை | Vegulaamai - Restraint from Anger & Conquest of Wrath | Guru Kula Desam",
+    "track_id": "WM8EPZ4KK2s",
+    "paal": "அறத்துப்பால் (Book of Virtue)",
+    "iyal": "துறவறவியல் (Ascetic Virtue)",
+    "kural_range": "301 - 310",
+    "key_kurals": [
+      {
+        "number": 301,
+        "tamil": "செல்லிடத்துக் காப்பான் சினங்காப்பான் அல்லிடத்துக்\nகாக்கின்என் காவாக்கால் என்.",
+        "english": "He alone restrains anger who controls it where his anger can strike; where powerless, what matters whether he restrains it or not?"
+      },
+      {
+        "number": 305,
+        "tamil": "தன்னைத்தான் காக்கின் சினங்காக்க காவாக்கால்\nதன்னையே கொல்லும் சினம்.",
+        "english": "If you wish to protect yourself, guard against wrath; if unguarded, wrath will turn back and consume you entirely."
+      }
+    ],
+    "description": {
+      "tamil_summary": "அதிகாரம் 31: வெகுளாமை (Vegulaamai) — கோபத்தை அடக்குவதே மனிதனின் தலையாய பலம்; கோபத்தின் கொடிய அழிவிலிருந்து தம்மையும் சுற்றத்தாரையும் காக்கும் வள்ளுவ தர்மம்.\n\n'செல்லிடத்துக் காப்பான் சினங்காப்பான் அல்லிடத்துக்\nகாக்கின்என் காவாக்கால் என்.' (குறள் 301)\n\n'தன்னைத்தான் காக்கின் சினங்காக்க காவாக்கால்\nதன்னையே கொல்லும் சினம்.' (குறள் 305)\n\nநிலத்தில் அறைந்த கை நிலத்தை சேதப்படுத்தாமல் தன் கையையே காயப்படுத்துவது போல, கோபம் கொண்டவன் தன்னையே அழித்துக் கொள்கிறான். கோபத்தை வென்றவன் மரணத்தையும் வென்றவனாவான்.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) ஆக்ரோஷத்தை தணிக்கும் சாந்தமான இசையமைப்பில், 52 கம்பீர கலைக் காட்சிகளுடன் கூடிய முழு நீள காவியத் திரைப்படம்.",
+      "english_summary": "Chapter 31: Vegulaamai (Restraint from Anger & Conquest of Wrath) from Thirukkural by Thiruvalluvar.\n\n'He truly restrains anger who curbs it where he has power to strike; where powerless, what does it matter whether he holds it back or vents it?' (Kural 301)\n\n'If you seek self-preservation, keep constant guard against wrath; if uncurbed, wrath will devour you like an all-consuming fire.' (Kural 305)\n\nAnger destroys joy, poisons friendship, and burns ancestral lineage. Striking the hard earth with bare knuckles hurts only one's own hand; so does rage rebound upon the angry. One who conquers anger attains effortless fulfillment of all worthy desires.\n\nExperience this majestic 52-shot master release by Guru Kula Desam under soothing atmospheric cooling rain.",
+      "timestamps": [
+        {
+          "time": "00:00",
+          "label": "செல்லிடத்துக் காப்பான் சினம் - குறள் 301 (Mastering Anger Where Powerful)"
+        },
+        {
+          "time": "01:15",
+          "label": "தன்னையே கொல்லும் சினம் - குறள் 305 (Wrath Consuming Its Bearer)"
+        },
+        {
+          "time": "02:40",
+          "label": "நிலத்தை அறைந்த கை - குறள் 307 (The Futile Bruise of Rage)"
+        },
+        {
+          "time": "04:10",
+          "label": "சினத்தை வென்ற ஞானியின் அழியா நிலை (Immortal Radiance of the Calm)"
+        }
+      ],
+      "audio_credits": {
+        "track": "அதிகாரம் 31 - வெகுளாமை (Original Master)",
+        "artist": "Guru Kula Desam",
+        "vocals_engineering": "Nagarajan Balasubramanian",
+        "audio_source_url": "https://www.youtube.com/watch?v=WM8EPZ4KK2s",
+        "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+      },
+      "call_to_action": "Subscribe to @guru-kula-desam for authentic Thirukkural cinematic musical compositions and timeless Tamil ethical heritage."
+    },
+    "hashtags": [
+      "#திருக்குறள்",
+      "#வெகுளாமை",
+      "#Thirukkural",
+      "#Vegulaamai",
+      "#ConqueringAnger",
+      "#InnerPeace",
+      "#GuruKulaDesam"
+    ]
   },
   {
     "chapter_number": 52,

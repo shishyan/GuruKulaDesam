@@ -24,8 +24,14 @@ METADATA_FILE = ROOT / "production" / "metadata" / "thirukkural_releases_metadat
 PLAYLIST_ID = "PLW7qBZp_Q8Ro"  # திருக்குறள் | Thirukkural — Master Collection
 
 VIDEO_FILES = {
+    5: ROOT / "renders" / "releases" / "adhikaram_05_ilvaazhkkai_cinematic.mp4",
+    8: ROOT / "renders" / "releases" / "adhikaram_08_anbudaimai_cinematic.mp4",
+    16: ROOT / "renders" / "releases" / "adhikaram_16_poraiyudaimai_cinematic.mp4",
+    25: ROOT / "renders" / "releases" / "adhikaram_25_aruludaimai_cinematic.mp4",
     26: ROOT / "renders" / "releases" / "adhikaram_26_pulaal_unnaamai_cinematic.mp4",
     27: ROOT / "renders" / "releases" / "adhikaram_27_thavam_cinematic.mp4",
+    30: ROOT / "renders" / "releases" / "adhikaram_30_vaaimai_cinematic.mp4",
+    31: ROOT / "renders" / "releases" / "adhikaram_31_vegulaamai_cinematic.mp4",
     52: ROOT / "renders" / "releases" / "adhikaram_52_therinthu_vinaiyaadal_cinematic.mp4",
     54: ROOT / "renders" / "releases" / "adhikaram_54_pochchaavaamai_cinematic.mp4",
     57: ROOT / "renders" / "releases" / "adhikaram_57_veruvantha_seyyaamai_cinematic.mp4",
@@ -33,8 +39,14 @@ VIDEO_FILES = {
 }
 
 THUMBNAIL_FILES = {
+    5: ROOT / "production" / "visuals" / "thirukkural" / "05-ilvaazhkkai" / "01-n01_grihastha_morning_lamp.jpg",
+    8: ROOT / "production" / "visuals" / "thirukkural" / "08-anbudaimai" / "01-n01_tears_of_joy_mother_child.jpg",
+    16: ROOT / "production" / "visuals" / "thirukkural" / "16-poraiyudaimai" / "01-n01_earth_bearing_diggers_plow.jpg",
+    25: ROOT / "production" / "visuals" / "thirukkural" / "25-aruludaimai" / "02-n02_compassionate_hands_cradling_fawn.jpg",
     26: ROOT / "production" / "visuals" / "thirukkural" / "26-pulaal-unnaamai" / "04-saint-turning-away-meat.jpg",
     27: ROOT / "production" / "visuals" / "thirukkural" / "27-thavam" / "01-ascetic-dawn-boulder.jpg",
+    30: ROOT / "production" / "visuals" / "thirukkural" / "30-vaaimai" / "34-n34_the_single_eternal_lamp_of_truth.jpg",
+    31: ROOT / "production" / "visuals" / "thirukkural" / "31-vegulaamai" / "01-n01_monarch_holding_back_wrath.jpg",
     52: ROOT / "production" / "visuals" / "thirukkural" / "52-therinthu-vinaiyaadal" / "01-n01_king_weighs_good_and_evil.jpg",
     54: ROOT / "production" / "visuals" / "thirukkural" / "54-pochchaavaamai" / "01-n01_king_neglecting_affairs.jpg",
     57: ROOT / "production" / "visuals" / "thirukkural" / "57-veruvantha-seyyaamai" / "01-n01_king_patient_hearing.jpg",
