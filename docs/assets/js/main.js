@@ -1198,11 +1198,27 @@ function getContextTabsForPage() {
     return [
       { id: 'tab-overview', icon: '🌿', label: 'வாழ்வியல் நெறி அறிமுகம்', action: "scrollToSection('kalviOverview')", active: true },
       { id: 'tab-dharma', icon: '🏡', label: 'உன்னத இல்லற தர்மம்', action: "scrollToSection('dharmaPrinciples')" },
+      { id: 'tab-tracker', icon: '✅', label: 'பஞ்ச மகா யக்ஞ டிராக்கர்', action: "scrollToSection('grihasthaTracker')" },
+      { id: 'tab-charter', icon: '📜', label: 'குடும்ப சாசனம்', action: "scrollToSection('familyCharter')" },
       { id: 'tab-stages', icon: '🔤', label: '4 வாழ்வியல் பருவங்கள்', action: "scrollToSection('virtue-mapping')" },
       { id: 'tab-grades', icon: '📚', label: '12 வாழ்வியல் நிலைகள்', action: "scrollToSection('gradesPortalSection')" },
       { id: 'tab-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' },
       { id: 'tab-higher', icon: '🔬', label: 'உயர்கல்வி', href: 'higher-studies.html' },
       { id: 'tab-syllabus', icon: '📜', label: 'முழு பாடத்திட்டம்', href: 'syllabus.html' }
+    ];
+  }
+
+  // 2b. Gurukula Academy Portal (school.html)
+  if (filename === 'school.html') {
+    return [
+      { id: 'tab-portal', icon: '📊', label: 'மாணவர் போர்டல்', action: "scrollToSection('portalDashboard')", active: true },
+      { id: 'tab-fusion', icon: '🔬', label: 'அறிவியல்-வேத சங்கமம்', action: "scrollToSection('stemFusionSection')" },
+      { id: 'tab-hall', icon: '⏱️', label: 'தியான & படிப்பு அரங்கம்', action: "scrollToSection('focusStudyHall')" },
+      { id: 'tab-cert', icon: '📜', label: 'பட்டயச் சான்றிதழ்', action: "scrollToSection('certificateSection')" },
+      { id: 'tab-cards', icon: '🗂️', label: 'நினைவாற்றல் அட்டைகள்', action: "scrollToSection('flashcardsSection')" },
+      { id: 'tab-roadmap', icon: '🧭', label: '12 தரப் பாடநெறி', action: "scrollToSection('roadmapSection')" },
+      { id: 'tab-tracker', icon: '✅', label: 'தினசரி தர்ம டிராக்கர்', href: 'kalvi.html#grihasthaTracker' },
+      { id: 'tab-charter', icon: '📜', label: 'குடும்ப சாசனம்', href: 'kalvi.html#familyCharter' }
     ];
   }
 
@@ -1217,17 +1233,18 @@ function getContextTabsForPage() {
     ];
   }
 
-  // 4. Master Home (index.html)
+  // 4. Master Home (index.html - Guru Kula Ashram Sanctuary)
   if (filename === 'index.html' || filename === '') {
     return [
-      { id: 'tab-home', icon: '🏠', label: 'முகப்பு', href: 'index.html', active: true },
-      { id: 'tab-kalvi', icon: '🌿', label: 'வாழ்வியல் நெறி (12 நிலைகள்)', href: 'kalvi.html' },
-      { id: 'tab-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' },
-      { id: 'tab-kural', icon: '📜', label: 'திருக்குறள் தர்மம்', href: 'thirukkural.html' },
-      { id: 'tab-saivam', icon: '🔱', label: 'சைவ நெறி', href: 'saiva-neri.html' },
-      { id: 'tab-featured', icon: '🎬', label: 'சிறப்புத் திரையரங்கம்', action: "scrollToSection('featuredScreeningRoom')" },
-      { id: 'tab-catalog', icon: '📺', label: '580 வெளியீடுகள்', href: 'youtube.html' },
-      { id: 'tab-contact', icon: '📍', label: 'மைய முகவரி', action: "scrollToSection('siteFooter')" }
+      { id: 'tab-home', icon: '🏛️', label: 'ஆசிரம முகப்பு', href: 'index.html', active: true },
+      { id: 'tab-kalvi', icon: '🌿', label: 'தர்ம குடீரம் (12 நிலைகள்)', href: 'kalvi.html' },
+      { id: 'tab-school', icon: '🏫', label: 'வித்யா குடீரம்', href: 'school.html' },
+      { id: 'tab-pedagogy', icon: '📜', label: 'போதனை மரபு', action: "scrollToSection('ashramPedagogy')" },
+      { id: 'tab-dinacharya', icon: '🪔', label: 'தினசரி காலச்சக்கரம்', action: "scrollToSection('ashramDinacharya')" },
+      { id: 'tab-yagna', icon: '🔥', label: 'பஞ்ச மகா யக்ஞம்', action: "scrollToSection('ashramPanchaYagna')" },
+      { id: 'tab-featured', icon: '🎬', label: 'கான அரங்கம்', action: "scrollToSection('featuredScreeningRoom')" },
+      { id: 'tab-catalog', icon: '📺', label: '580 சுவடிக் களஞ்சியம்', href: 'youtube.html' },
+      { id: 'tab-contact', icon: '📍', label: 'ஆசிரம முகவரி', action: "scrollToSection('siteFooter')" }
     ];
   }
 

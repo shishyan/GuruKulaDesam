@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>குரு குல தேசம் (Guru Kula Desam) — தர்ம வாழ்வே முக்திக்கு அதிவேகப் பாதை</title>
-  <meta name="description" content="வேதங்கள், பன்னிரு திருமுறைகள், திருக்குறள் இல்லற தர்மம், காஞ்சி மகா பெரியவா மற்றும் வள்ளலார் வழிகாட்டலில் குடும்ப அறத்தையும் 12 வாழ்வியல் நிலைகளையும் போதிக்கும் உலகளாவிய ஆன்மீக போர்டல்.">
+  <title>குரு குல ஆசிரமம் (Guru Kula Ashram) — தொன்மையான வாழ்வியல் வித்யாபீடம்</title>
+  <meta name="description" content="ஆலமரத்தடி ஆசிரம போதனை மரபு: ஸ்ரவணம் (கேட்டல்), மனனம் (சிந்தித்தல்), மற்றும் உன்னத இல்லற தர்மத்தில் வாழ்ந்து காட்டுதல். வேத, சைவ, திருக்குறள் நெறிகளின் உலகளாவிய வித்யாபீடம்.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="has-left-strip">
+<body class="has-left-strip theme-cosmic">
 
-  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL) -->
-  <aside class="left-strip-bar" id="leftStripBar" aria-label="முதன்மை பட்டி">
+  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL - ASHRAM SANCTUARY) -->
+  <aside class="left-strip-bar" id="leftStripBar" aria-label="ஆசிரம முதன்மை பட்டி">
     <div class="strip-header">
-      <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
+      <a href="index.html" class="strip-brand-link" title="குரு குல ஆசிரமம்">
         <span class="strip-emblem">ॐ</span>
-        <span class="strip-brand-text">குரு குல தேசம்</span>
+        <div style="display: flex; flex-direction: column;">
+          <span class="strip-brand-text">குரு குல ஆசிரமம்</span>
+          <span style="font-size: 0.68rem; color: #2dd4bf; letter-spacing: 0.05em; font-weight: 600;">தொல் வித்யாபீடம்</span>
+        </div>
       </a>
       <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="closePrimaryMenu()" title="பட்டி மூடுக" aria-label="Close Menu">
         <span class="strip-toggle-icon">✕</span>
@@ -23,25 +26,25 @@
 
     <nav class="strip-nav-list" id="stripNavList">
 
-      <!-- 1. முகப்பு (Home) -->
+      <!-- 1. ஆசிரம முகப்பு (Ashram Home) -->
       <div class="strip-group" data-group="home">
-        <a href="index.html" class="strip-item active" data-tooltip="முகப்பு">
-          <span class="strip-item-icon">🏠</span>
-          <span class="strip-item-label">முகப்பு (Home)</span>
+        <a href="index.html" class="strip-item active" data-tooltip="ஆசிரம முகப்பு">
+          <span class="strip-item-icon">🏛️</span>
+          <span class="strip-item-label">ஆசிரம முகப்பு (Sanctuary)</span>
         </a>
       </div>
 
-      <!-- 2. வாழ்வியல் நெறி (Dharmic Way of Living & Curriculum) -->
+      <!-- 2. தர்ம குடீரம் & பாடங்கள் (Dharmic Way of Living & Curriculum) -->
       <div class="strip-group" data-group="kalvi">
-        <a href="kalvi.html" class="strip-item strip-has-sub" data-tooltip="வாழ்வியல் நெறி">
+        <a href="kalvi.html" class="strip-item strip-has-sub" data-tooltip="தர்ம குடீரம்">
           <span class="strip-item-icon">🌿</span>
-          <span class="strip-item-label">வாழ்வியல் நெறி &amp; பாடங்கள்</span>
+          <span class="strip-item-label">தர்ம குடீரம் (12 நிலைகள்)</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
-          <div class="strip-sub-header">வாழ்வியல் &amp; இல்லற தர்மம்</div>
+          <div class="strip-sub-header">ஆசிரம வாழ்வியல் &amp; இல்லறம்</div>
           <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon">🏛️</span><span>வாழ்வியல் மையம் (12 நிலைகள்)</span></a>
-          <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon">🏫</span><span>இணையப் பள்ளி போர்டல்</span></a>
+          <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon">🏫</span><span>வித்யா குடீரம் (இணையப் பள்ளி)</span></a>
           <a href="higher-studies.html" class="strip-sub-item"><span class="strip-sub-icon">🔬</span><span>வேத-நவீன உயர்கல்வி</span></a>
           <a href="virtues.html" class="strip-sub-item"><span class="strip-sub-icon">🔤</span><span>அகர வரிசை நற்பண்புகள்</span></a>
           <a href="syllabus.html" class="strip-sub-item"><span class="strip-sub-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>
@@ -64,16 +67,16 @@
         </div>
       </div>
 
-      <!-- 3. சைவ நெறி & தெய்வங்கள் (Saiva Neri & Deities) -->
+      <!-- 3. சைவ சந்நிதி & திருமுறைகள் (Saiva Sannidhi & Deities) -->
       <div class="strip-group" data-group="saivam">
-        <a href="saiva-neri.html" class="strip-item strip-has-sub" data-tooltip="சைவ நெறி">
+        <a href="saiva-neri.html" class="strip-item strip-has-sub" data-tooltip="சைவ சந்நிதி">
           <span class="strip-item-icon">🕉️</span>
-          <span class="strip-item-label">சைவ நெறி &amp; தெய்வங்கள்</span>
+          <span class="strip-item-label">சைவ சந்நிதி &amp; திருமுறைகள்</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
-          <div class="strip-sub-header">சைவ நெறி &amp; தெய்வங்கள்</div>
-          <a href="saiva-neri.html" class="strip-sub-item"><span class="strip-sub-icon">🔱</span><span>சைவ சித்தாந்தம் &amp; நெறி</span></a>
+          <div class="strip-sub-header">சிவ நெறி &amp; தேவாரம்</div>
+          <a href="saiva-neri.html" class="strip-sub-item"><span class="strip-sub-icon">🔱</span><span>சைவ சித்தாந்தம் &amp; 172 பதிகங்கள்</span></a>
           <a href="vinayagar.html" class="strip-sub-item"><span class="strip-sub-icon">🐘</span><span>முழுமுதற் கடவுள் விநாயகர்</span></a>
           <a href="murugan.html" class="strip-sub-item"><span class="strip-sub-icon">🪶</span><span>தமிழ் தெய்வம் முருகன்</span></a>
           <a href="sakthi.html" class="strip-sub-item"><span class="strip-sub-icon">🌸</span><span>அம்பிகை சக்தி நெறி</span></a>
@@ -81,11 +84,11 @@
         </div>
       </div>
 
-      <!-- 4. இறை இசை விருந்து (Devotional Music) -->
+      <!-- 4. ஆசிரம கான அரங்கம் (Ashram Gana Mandapam) -->
       <div class="strip-group" data-group="isai">
-        <a href="irai-isai-virundhu.html" class="strip-item strip-has-sub" data-tooltip="இறை இசை">
+        <a href="irai-isai-virundhu.html" class="strip-item strip-has-sub" data-tooltip="கான அரங்கம்">
           <span class="strip-item-icon">🎵</span>
-          <span class="strip-item-label">இறை இசை விருந்து</span>
+          <span class="strip-item-label">ஆசிரம கான அரங்கம்</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
@@ -95,15 +98,15 @@
         </div>
       </div>
 
-      <!-- 5. அறநெறி & தத்துவம் (Dharma & Scripture) -->
+      <!-- 5. குறள் குடீரம் & சன்மார்க்கம் (Kural & Sanmargam) -->
       <div class="strip-group" data-group="dharma">
-        <a href="thirukkural.html" class="strip-item strip-has-sub" data-tooltip="அறநெறி">
+        <a href="thirukkural.html" class="strip-item strip-has-sub" data-tooltip="அறநெறி குடீரம்">
           <span class="strip-item-icon">📖</span>
-          <span class="strip-item-label">அறநெறி &amp; தத்துவம்</span>
+          <span class="strip-item-label">குறள் குடீரம் &amp; சன்மார்க்கம்</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
-          <div class="strip-sub-header">அறநெறி &amp; வாழ்வியல்</div>
+          <div class="strip-sub-header">அறநெறி &amp; தத்துவ சுவடிகள்</div>
           <a href="thirukkural.html" class="strip-sub-item"><span class="strip-sub-icon">📜</span><span>திருக்குறள் (1330 குறள்கள்)</span></a>
           <a href="sanmargam.html" class="strip-sub-item"><span class="strip-sub-icon">🪔</span><span>சுத்த சன்மார்க்கம் (வள்ளலார்)</span></a>
         </div>
@@ -113,7 +116,7 @@
       <div class="strip-group" data-group="about">
         <a href="about.html" class="strip-item strip-has-sub" data-tooltip="குருவருள்">
           <span class="strip-item-icon">🏛️</span>
-          <span class="strip-item-label">குருவருள் &amp; அறிமுகம்</span>
+          <span class="strip-item-label">குருவருள் &amp; ஆசிரம வரலாறு</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
@@ -139,28 +142,29 @@
 
   <div class="strip-backdrop" id="stripBackdrop" onclick="closePrimaryMenu()"></div>
 
-  <!-- CONTEXT-SENSITIVE TOP BAR -->
+  <!-- CONTEXT-SENSITIVE TOP BAR (ASHRAM SANCTUARY NAVIGATION) -->
   <header class="context-top-bar" id="contextTopBar">
     <div class="context-bar-container">
-      <button type="button" class="primary-hamburger-btn" onclick="togglePrimaryMenu()" title="முதன்மை பட்டி (6 பிரிவுகள்)" aria-label="முதன்மை பட்டி">
+      <button type="button" class="primary-hamburger-btn" onclick="togglePrimaryMenu()" title="ஆசிரம பட்டி (6 குடீரங்கள்)" aria-label="முதன்மை பட்டி">
         <span class="hb-icon">☰</span>
         <span class="hb-emblem">ॐ</span>
-        <span class="hb-label">முதன்மை பட்டி</span>
+        <span class="hb-label">ஆசிரம பட்டி</span>
       </button>
-      <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Section Tabs">
-        <a href="index.html" class="context-tab-pill active"><span class="context-tab-pill-icon">🏠</span><span>முகப்பு</span></a>
-        <a href="kalvi.html" class="context-tab-pill"><span class="context-tab-pill-icon">🌿</span><span>வாழ்வியல் நெறி</span></a>
-        <a href="school.html" class="context-tab-pill" style="border-color:rgba(56,189,248,0.4); color:#38bdf8;"><span class="context-tab-pill-icon">🏫</span><span>இணையப் பள்ளி</span></a>
-        <a href="thirukkural.html" class="context-tab-pill"><span class="context-tab-pill-icon">📜</span><span>திருக்குறள்</span></a>
-        <a href="saiva-neri.html" class="context-tab-pill"><span class="context-tab-pill-icon">🔱</span><span>சைவ நெறி</span></a>
-        <button type="button" class="context-tab-pill" onclick="scrollToSection('featuredScreeningRoom')"><span class="context-tab-pill-icon">🎬</span><span>சிறப்புத் திரையரங்கம்</span></button>
-        <a href="youtube.html" class="context-tab-pill"><span class="context-tab-pill-icon">📺</span><span>580 வெளியீடுகள்</span></a>
-        <button type="button" class="context-tab-pill" onclick="scrollToSection('siteFooter')"><span class="context-tab-pill-icon">📍</span><span>மைய முகவரி</span></button>
+      <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Ashram Navigation Tabs">
+        <a href="index.html" class="context-tab-pill active"><span class="context-tab-pill-icon">🏛️</span><span>ஆசிரம முகப்பு</span></a>
+        <a href="kalvi.html" class="context-tab-pill"><span class="context-tab-pill-icon">🌿</span><span>தர்ம குடீரம்</span></a>
+        <a href="school.html" class="context-tab-pill" style="border-color:rgba(56,189,248,0.4); color:#38bdf8;"><span class="context-tab-pill-icon">🏫</span><span>வித்யா குடீரம்</span></a>
+        <button type="button" class="context-tab-pill" onclick="scrollToSection('ashramPedagogy')"><span class="context-tab-pill-icon">📜</span><span>போதனை மரபு</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToSection('ashramDinacharya')"><span class="context-tab-pill-icon">🪔</span><span>காலச்சக்கரம்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToSection('ashramPanchaYagna')"><span class="context-tab-pill-icon">🔥</span><span>பஞ்ச மகா யக்ஞம்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToSection('featuredScreeningRoom')"><span class="context-tab-pill-icon">🎬</span><span>கான அரங்கம்</span></button>
+        <a href="youtube.html" class="context-tab-pill"><span class="context-tab-pill-icon">📺</span><span>580 சுவடிகள்</span></a>
+        <button type="button" class="context-tab-pill" onclick="scrollToSection('siteFooter')"><span class="context-tab-pill-icon">📍</span><span>ஆசிரம முகவரி</span></button>
       </nav>
       <div class="header-right-tools">
         <div class="context-search-wrapper">
           <span class="context-search-icon">🔍</span>
-          <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
+          <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="ஆசிரம சுவடிகளில் தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
           <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;">✕</button>
         </div>
         <div class="context-tool-group">
@@ -181,164 +185,289 @@
 
   <main class="main-content">
 
-    <!-- Grand Hero Section -->
-    <div class="hero-banner">
-      <div class="sacred-tag">ॐ புதிய யுகத்திற்கான சைவ நெறி &amp; உன்னத இல்லற மறுமலர்ச்சி ॐ</div>
-      <h1>குரு குல தேசம்</h1>
-      <h2>Global Spiritual Renaissance through Vedic Wisdom, Saiva Neri, Thirukkural &amp; Grihastha Dharma</h2>
+    <!-- 1. GURUKULA ASHRAM SANCTUARY HERO SHOWCASE -->
+    <section class="ashram-hero-container">
+      <div>
+        <div class="sacred-tag" style="text-align: left; margin-bottom: 6px;">
+          ॐ ஸ்ரீ குருகுல ஆசிரமம் • தொன்மையான தபோவனப் போதனை மரபு ॐ
+        </div>
+        <h1 style="font-size: 2.3rem; font-weight: 800; color: #ffffff; line-height: 1.25; margin-bottom: 8px;">
+          குரு குல தேசம் — ஆசிரம வித்யாபீடம்
+        </h1>
+        <h2 style="font-size: 1.05rem; font-weight: 600; color: #7dd3fc; margin-bottom: 14px; line-height: 1.5;">
+          Ancient Gurukula Sanctuary — Teaching the Eternal Dharmic Way of Life &amp; Noble Grihastha Nirvana
+        </h2>
 
-      <!-- Core Philosophical Mandate Callout -->
-      <div class="verse-quote" style="border-left: 4px solid #38bdf8; background: rgba(56, 189, 248, 0.08); font-size: 1.15rem; font-weight: 700; color: #f8fafc; margin: 18px auto; max-width: 900px; padding: 14px 22px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
-        "சான்றோனாகி குடும்பத்தை வழிநடத்துதலே முக்திக்கு அதிவேகப் பாதை — தர்ம வாழ்வே மெய்ஞ்ஞானம்!"
+        <!-- Guru's Sacred Mandate Callout -->
+        <div class="verse-quote" style="border-left: 4px solid #2dd4bf; border-right: 4px solid #8b5cf6; background: rgba(20, 184, 166, 0.12); font-size: 1.12rem; font-weight: 700; color: #f8fafc; margin: 16px 0; padding: 14px 18px; border-radius: 10px; display: block; text-align: left;">
+          "சான்றோனாகி குடும்பத்தை வழிநடத்துதலே முக்திக்கு அதிவேகப் பாதை — தர்ம வாழ்வே மெய்ஞ்ஞானம்!"
+        </div>
+
+        <p style="color: #cbd5e1; font-size: 0.94rem; line-height: 1.7; margin-bottom: 18px;">
+          ஆதிகால தபோவனங்களில் ஆலமரத்தடியில் குருநாதரின் திருமுன்னிலையில் சீடர்கள் அமர்ந்து சுருதி, பன்னிரு திருமுறைகள், திருக்குறள் சுவடிகளைக் கற்று, பின்னர் உலகிற்குத் திரும்பி <strong>உன்னத இல்லறத்தை நடத்தி முக்தி பெறும்</strong> தொன்மையான ஆசிரமப் போதனை நெறி.
+        </p>
+
+        <!-- Quick Ashram Action Badges -->
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <a href="kalvi.html" class="sheet-btn sheet-btn-view" style="font-weight: 700; padding: 10px 18px; text-decoration: none;">
+            🌿 தர்ம குடீரம் (12 நிலைகள்)
+          </a>
+          <a href="school.html" class="sheet-btn" style="background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-weight: 700; padding: 10px 18px; text-decoration: none; border-radius: 8px;">
+            🏫 வித்யா குடீரம்
+          </a>
+          <a href="#ashramPedagogy" class="sheet-btn" style="background: rgba(139, 92, 246, 0.15); border: 1px solid rgba(139, 92, 246, 0.4); color: #c084fc; font-weight: 700; padding: 10px 18px; text-decoration: none; border-radius: 8px;">
+            📜 போதனை மரபு
+          </a>
+          <a href="#ashramDinacharya" class="sheet-btn" style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); color: #6ee7b7; font-weight: 700; padding: 10px 18px; text-decoration: none; border-radius: 8px;">
+            🪔 காலச்சக்கரம்
+          </a>
+          <a href="#ashramPanchaYagna" class="sheet-btn" style="background: rgba(45, 212, 191, 0.15); border: 1px solid rgba(45, 212, 191, 0.4); color: #5eead4; font-weight: 700; padding: 10px 18px; text-decoration: none; border-radius: 8px;">
+            🔥 பஞ்ச வேள்வி
+          </a>
+        </div>
       </div>
 
-      <p class="hero-desc" style="max-width: 860px; margin: 0 auto 20px;">
-        வேதங்களின் சாரம், பன்னிரு திருமுறைகள், திருவள்ளுவர் அருளிய உலகப் பொதுமறை, காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் வழிகாட்டலில் குடும்ப அறத்தையும், 12 நிலைகள் கொண்ட வாழ்வியல் நெறியையும், 580 இசை &amp; சினிமா காவியங்களையும் ஒருங்கிணைக்கும் உலகளாவிய முதன்மைப் போர்டல்.
-      </p>
+      <!-- Right Column: Authentic Ancient Gurukula Artwork -->
+      <div class="ashram-hero-artwork">
+        <img src="assets/images/lessons/disciples_under_sacred_tree.jpg" alt="ஆலமரத்தடியில் தொன்மையான குருகுல போதனை மரபு" loading="eager">
+        <div class="ashram-artwork-badge">
+          <span style="font-size: 1.1rem;">🌳</span>
+          <span><strong>ஆலமரத்தடி ஆசிரம போதனை</strong> — Guru-Shishya Ancient Way of Teaching</span>
+        </div>
+      </div>
+    </section>
 
-      <!-- Quick Action Badges -->
-      <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 14px;">
-        <a href="kalvi.html" class="sheet-btn sheet-btn-view" style="font-weight: 700; padding: 10px 18px; text-decoration: none;">
-          🌿 12 வாழ்வியல் நிலைகள்
-        </a>
-        <a href="school.html" class="sheet-btn" style="background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-weight: 700; padding: 10px 18px; text-decoration: none; border-radius: 8px;">
-          🏫 இணையப் பள்ளி போர்டல்
-        </a>
-        <a href="#panchaMahaYagna" class="sheet-btn" style="background: rgba(212, 175, 55, 0.15); border: 1px solid rgba(212, 175, 55, 0.4); color: #fbbf24; font-weight: 700; padding: 10px 18px; text-decoration: none; border-radius: 8px;">
-          🏡 இல்லற தர்மம் &amp; சாதனா
-        </a>
-        <a href="#featuredScreeningRoom" class="sheet-btn" style="background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.4); color: #fda4af; font-weight: 700; padding: 10px 18px; text-decoration: none; border-radius: 8px;">
-          🎬 சிறப்புத் திரையரங்கம்
-        </a>
-        <a href="youtube.html" class="sheet-btn" style="background: rgba(168, 85, 247, 0.15); border: 1px solid rgba(168, 85, 247, 0.4); color: #d8b4fe; font-weight: 700; padding: 10px 18px; text-decoration: none; border-radius: 8px;">
-          📺 580 வெளியீடுகள்
+    <!-- 2. THE 3 ANCIENT PEDAGOGY PILLARS (SRAVANA, MANANA, NIDIDHYASANA) -->
+    <section id="ashramPedagogy" style="margin-bottom: 36px;">
+      <div style="text-align: center; max-width: 820px; margin: 0 auto 20px;">
+        <span class="source-badge" style="background: rgba(45, 212, 191, 0.15); color: #2dd4bf; border-color: rgba(45, 212, 191, 0.35);">
+          📜 பாரம்பரிய குரு-சீடர் போதனை நெறி
+        </span>
+        <h2 style="font-size: 1.6rem; font-weight: 800; color: #ffffff; margin-top: 6px; margin-bottom: 6px;">
+          தொன்மையான குருகுல மும்முறை போதனை மரபு (The 3-Fold Ancient Pedagogy)
+        </h2>
+        <p style="color: #94a3b8; font-size: 0.94rem;">
+          வெறும் ஏட்டுச் சுரைக்காய் கல்விக்கு அப்பாற்பட்டு, ஆன்மாவை ஒளிரச் செய்து இல்லற தர்மத்தில் வாழ்ந்து காட்டும் குருகுல நெறி:
+        </p>
+      </div>
+
+      <div class="ashram-pedagogy-grid">
+        <!-- Pillar 1: Sravana -->
+        <div class="ashram-pedagogy-card">
+          <div class="ashram-pedagogy-icon">🎧</div>
+          <span class="ashram-pedagogy-step">படிநிலை 1 • வாய்மொழி மரபு</span>
+          <h3 class="ashram-pedagogy-title">ஸ்ரவணம் (Sravana - கேட்டல்)</h3>
+          <p class="ashram-pedagogy-desc">
+            ஆலமரத்தடியில் குருநாதரின் திருவாக்காக வேத மந்திரங்கள், தேவாரம், திருவாசகம் மற்றும் திருக்குறளை மனம் ஒருமித்து செவிமடுத்துக் கேட்டல். சுருதி வாய்மொழி மரபின் புனித ஒலி அலைகள் ஆன்மாவில் பதியும் தொடக்கம்.
+          </p>
+          <div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.8rem; color: #2dd4bf; font-weight: 700;">
+            செவிச்செல்வம் • வாய்மொழி ஓதுதல் ↗
+          </div>
+        </div>
+
+        <!-- Pillar 2: Manana -->
+        <div class="ashram-pedagogy-card">
+          <div class="ashram-pedagogy-icon">📜</div>
+          <span class="ashram-pedagogy-step">படிநிலை 2 • சுவடி உசாவுதல்</span>
+          <h3 class="ashram-pedagogy-title">மனனம் &amp; விச்சாரம் (Manana - சிந்தித்தல்)</h3>
+          <p class="ashram-pedagogy-desc">
+            கேட்ட மெய்ப்பொருளை பனை ஓலைச் சுவடிகளோடு ஒப்பிட்டு, சீடர்களோடு தத்துவ வாதம் புரிந்து, குருவிடம் ஐயங்களை வினவி அகத்தில் ஆழ்ந்து ஆராய்தல். கணிதம், வானியல், சித்த மருத்துவம் மற்றும் அறசாத்திரத் தெளிவு.
+          </p>
+          <div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.8rem; color: #38bdf8; font-weight: 700;">
+            சுவடி உசாவுதல் • தத்துவ ஆராய்ச்சி ↗
+          </div>
+        </div>
+
+        <!-- Pillar 3: Nididhyasana -->
+        <div class="ashram-pedagogy-card">
+          <div class="ashram-pedagogy-icon">🏡</div>
+          <span class="ashram-pedagogy-step">படிநிலை 3 • இல்லற மாண்பு</span>
+          <h3 class="ashram-pedagogy-title">நிதித்யாசனம் (Living Dharma - வாழ்ந்து காட்டல்)</h3>
+          <p class="ashram-pedagogy-desc">
+            குருகுலப் படிப்பை முடித்து (சமாவர்த்தனம்), உலகிற்குத் திரும்பி உன்னத இல்லறம் அமைத்து, பஞ்ச மகா யக்ஞங்களை அனுதினமும் செய்து சான்றோனாக வாழ்ந்து ஜீவன்முக்தி அடைதல். தர்ம வாழ்வே முக்திக்கு அதிவேகப் பாதை.
+          </p>
+          <div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.8rem; color: #c084fc; font-weight: 700;">
+            சான்றோன் இல்லறம் • முக்திப் பேறு ↗
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ASHRAM DINACHARYA (THE 4 SACRED YAMAS OF THE DAY) -->
+    <section id="ashramDinacharya" style="background: rgba(7, 18, 34, 0.85); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 18px; padding: 26px 30px; margin-bottom: 36px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+        <div>
+          <span class="source-badge" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.35);">
+            🪔 ஆசிரம வாழ்வியல் கால அட்டவணை
+          </span>
+          <h2 style="font-size: 1.45rem; font-weight: 800; color: #ffffff; margin-top: 6px; margin-bottom: 4px;">
+            ஆசிரம தினசரி காலச்சக்கரம் (Ashram Daily Dinacharya)
+          </h2>
+          <p style="color: #94a3b8; font-size: 0.92rem; margin: 0;">
+            இயற்கையோடும் தர்மத்தோடும் இயைந்து வாழும் தொன்மையான 4 யாமங்கள்:
+          </p>
+        </div>
+        <a href="classes.html" class="sheet-btn" style="background: rgba(45, 212, 191, 0.12); border: 1px solid rgba(45, 212, 191, 0.35); color: #2dd4bf; font-weight: 700; padding: 8px 16px; text-decoration: none; border-radius: 8px; font-size: 0.86rem;">
+          முழு வகுப்பு அட்டவணை காண்க ↗
         </a>
       </div>
-    </div>
 
-    <!-- Grihastha Dharma & Pancha Maha Yagna Card -->
-    <div id="panchaMahaYagna" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.92)); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 16px; padding: 24px 28px; margin: 24px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
-        <div style="max-width: 820px;">
-          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(212,175,55,0.15); color: #fbbf24; border: 1px solid rgba(212,175,55,0.35); padding: 4px 12px; border-radius: 14px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 8px;">
-            <span>⚜️ இல்லறமே நல்லறம் • உன்னத சாதனா நெறி</span>
+      <div class="ashram-dinacharya-timeline">
+        <div class="ashram-yama-card">
+          <div style="font-size: 0.8rem; font-weight: 800; color: #2dd4bf; text-transform: uppercase; margin-bottom: 4px;">யாமம் 1 • 4:30 AM - 6:00 AM</div>
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">🌅 உஷத் காலம் (Brahma Muhurtham)</h4>
+          <p style="font-size: 0.84rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
+            விடியலில் நீராடல், வெண்ணீறு (திருநீறு) தாரணம், பிராணாயாமம், பஞ்சாட்சர &amp; காயத்ரி ஜபம், நெய்தீபம் ஏற்றி பிரம்ம யக்ஞ சிந்தனை.
+          </p>
+        </div>
+
+        <div class="ashram-yama-card">
+          <div style="font-size: 0.8rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; margin-bottom: 4px;">யாமம் 2 • 7:00 AM - 12:00 PM</div>
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">☀️ வித்யா காலம் (Purvahnam)</h4>
+          <p style="font-size: 0.84rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
+            ஆலமரத்தடி திருமுறை &amp; குறள் ஓதுதல், பனை ஓலைச் சுவடிப் பாடம், வானியல், கணிதம், சித்த மருத்துவம் மற்றும் தத்துவ உசாவுதல்.
+          </p>
+        </div>
+
+        <div class="ashram-yama-card">
+          <div style="font-size: 0.8rem; font-weight: 800; color: #10b981; text-transform: uppercase; margin-bottom: 4px;">யாமம் 3 • 12:00 PM - 3:30 PM</div>
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">🐄 சேவா காலம் (Madhyahnam)</h4>
+          <p style="font-size: 0.84rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
+            ஆசிரம கோசாலைப் பசுக்களுக்குப் புல் வழங்குதல் (கோ சேவை), அதிதி விருந்தோம்பல், மூலிகைத் தோட்டம், கைவினைப் பயிற்சி.
+          </p>
+        </div>
+
+        <div class="ashram-yama-card">
+          <div style="font-size: 0.8rem; font-weight: 800; color: #c084fc; text-transform: uppercase; margin-bottom: 4px;">யாமம் 4 • 5:30 PM - 8:30 PM</div>
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">🔔 சந்தியா காலம் (Sayahnam)</h4>
+          <p style="font-size: 0.84rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
+            சாந்திகால தீபாராதனை, 12 திருமுறை இன்னிசைப் பதிகங்கள், இரவு தத்துவ சிந்தனை, குடும்ப நல்லிணக்க சத்சங்கம்.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ASHRAM PANCHA MAHA YAGNA SANCTUARY -->
+    <section id="ashramPanchaYagna" style="background: linear-gradient(135deg, rgba(8, 22, 38, 0.94), rgba(16, 32, 54, 0.90)); border: 1px solid rgba(45, 212, 191, 0.35); border-radius: 18px; padding: 26px 30px; margin-bottom: 36px; box-shadow: 0 12px 35px rgba(0,0,0,0.55);">
+      <div style="display: grid; grid-template-columns: 320px 1fr; gap: 24px; align-items: center;">
+        <div style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(56, 189, 248, 0.3); box-shadow: 0 8px 20px rgba(0,0,0,0.5);">
+          <img src="assets/images/lessons/grade6_pancha_maha_yajna.jpg" alt="பஞ்ச மகா யக்ஞ இல்லற வேள்வி" style="width: 100%; height: 260px; object-fit: cover; display: block;" loading="lazy">
+          <div style="background: rgba(4, 13, 26, 0.9); padding: 8px 12px; font-size: 0.8rem; color: #cffafe; text-align: center;">
+            🔥 ஆசிரம பஞ்ச மகா யக்ஞ இல்லற வேள்வி
+          </div>
+        </div>
+
+        <div>
+          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(45,212,191,0.15); color: #2dd4bf; border: 1px solid rgba(45,212,191,0.35); padding: 4px 12px; border-radius: 14px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 8px;">
+            <span>⚜️ இல்லறமே நல்லறம் • உன்னத ஆசிரம சாதனை</span>
           </div>
           <h3 style="color: #ffffff; font-size: 1.35rem; font-weight: 800; margin-bottom: 6px;">
             குடும்ப வாழ்வே முக்தியின் திருவாசல் — பஞ்ச மகா யக்ஞம் (Five Daily Offerings)
           </h3>
-          <p style="color: #cbd5e1; font-size: 0.94rem; line-height: 1.6; margin-bottom: 12px;">
-            வெறும் ஏட்டுச் சுரைக்காயோ, பேசும் உபதேசங்களோ முக்தியைத் தருவதில்லை. தனது குடும்பத்தை நற்பண்புகளுடன் வழிநடத்தி, அன்பும் தர்மமும் நிறைந்த உன்னத சான்றோனாக வாழ்வதே ஆன்மீகத்தின் உச்சக்கட்ட சாதனையாகும்.
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; margin-bottom: 14px;">
+            குருகுலப் படிப்பின் தலையாய லட்சியமே ஒருவனை சான்றோனாக்கி இல்லறத்தில் வாழ வைப்பதுதான். அனுதினமும் 5 மகா வேள்விகளை ஆற்றுவதே முக்திக்கு அதிவேகப் பாதை:
           </p>
-        </div>
-        <a href="kalvi.html#grihasthaTracker" class="sheet-btn sheet-btn-view" style="padding: 10px 20px; font-size: 0.9rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 15px rgba(212,175,55,0.3);">
-          <span>தினசரி சாதனா &amp; 30 நாள் டிராக்கர் காண்க ↗</span>
-        </a>
-      </div>
 
-      <!-- 5 Daily Offerings Mini Grid -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 16px;">
-        <div style="background: rgba(14, 22, 38, 0.7); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 10px; padding: 12px 14px;">
-          <div style="font-weight: 700; color: #38bdf8; font-size: 0.92rem; margin-bottom: 4px;">1. பிரம்ம யக்ஞம் 📜</div>
-          <div style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5;">வேத, திருமுறை, திருக்குறள் தினசரி சிந்தனை மற்றும் நல்லறிவு பயிலுதல்.</div>
-        </div>
-        <div style="background: rgba(14, 22, 38, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 10px; padding: 12px 14px;">
-          <div style="font-weight: 700; color: #fbbf24; font-size: 0.92rem; margin-bottom: 4px;">2. தேவ யக்ஞம் 🔥</div>
-          <div style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5;">இல்லத்தில் நெய்தீபம் ஏற்றி இறை வழிபாடு, தூப அர்ப்பணிப்பு செய்தல்.</div>
-        </div>
-        <div style="background: rgba(14, 22, 38, 0.7); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 10px; padding: 12px 14px;">
-          <div style="font-weight: 700; color: #c084fc; font-size: 0.92rem; margin-bottom: 4px;">3. பித்ரு யக்ஞம் 🙏</div>
-          <div style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5;">தாய், தந்தை மற்றும் முன்னோர் ஆசிகளைப் போற்றி பணிவிடை செய்தல்.</div>
-        </div>
-        <div style="background: rgba(14, 22, 38, 0.7); border: 1px solid rgba(45, 212, 191, 0.2); border-radius: 10px; padding: 12px 14px;">
-          <div style="font-weight: 700; color: #2dd4bf; font-size: 0.92rem; margin-bottom: 4px;">4. மனுஷ்ய யக்ஞம் 🤝</div>
-          <div style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5;">விருந்தோம்பல், பசித்தவர்களுக்கு உணவளித்தல் &amp; குடும்ப நல்லிணக்கம்.</div>
-        </div>
-        <div style="background: rgba(14, 22, 38, 0.7); border: 1px solid rgba(244, 63, 94, 0.2); border-radius: 10px; padding: 12px 14px;">
-          <div style="font-weight: 700; color: #fda4af; font-size: 0.92rem; margin-bottom: 4px;">5. பூத யக்ஞம் 🕊️</div>
-          <div style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5;">எறும்பு, காகம், பசு மற்றும் வாயில்லா உயிர்களுக்கு உணவு (ஜீவகாருண்யம்).</div>
+          <!-- 5 Offerings Mini Grid -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px;">
+            <div style="background: rgba(6, 17, 30, 0.7); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 8px; padding: 10px 12px;">
+              <div style="font-weight: 700; color: #38bdf8; font-size: 0.86rem;">1. பிரம்ம யக்ஞம் 📜</div>
+              <div style="font-size: 0.78rem; color: #94a3b8;">சுவடி, திருமுறை தினசரி ஓதுதல்.</div>
+            </div>
+            <div style="background: rgba(6, 17, 30, 0.7); border: 1px solid rgba(45, 212, 191, 0.2); border-radius: 8px; padding: 10px 12px;">
+              <div style="font-weight: 700; color: #2dd4bf; font-size: 0.86rem;">2. தேவ யக்ஞம் 🔥</div>
+              <div style="font-size: 0.78rem; color: #94a3b8;">நெய்தீபம் &amp; இல்லத்து இறை வழிபாடு.</div>
+            </div>
+            <div style="background: rgba(6, 17, 30, 0.7); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 8px; padding: 10px 12px;">
+              <div style="font-weight: 700; color: #c084fc; font-size: 0.86rem;">3. பித்ரு யக்ஞம் 🙏</div>
+              <div style="font-size: 0.78rem; color: #94a3b8;">பெற்றோர் &amp; முன்னோர் போற்றுதல்.</div>
+            </div>
+            <div style="background: rgba(6, 17, 30, 0.7); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 8px; padding: 10px 12px;">
+              <div style="font-weight: 700; color: #34d399; font-size: 0.86rem;">4. மனுஷ்ய யக்ஞம் 🤝</div>
+              <div style="font-size: 0.78rem; color: #94a3b8;">விருந்தோம்பல் &amp; அன்னதானம்.</div>
+            </div>
+            <div style="background: rgba(6, 17, 30, 0.7); border: 1px solid rgba(244, 63, 94, 0.2); border-radius: 8px; padding: 10px 12px;">
+              <div style="font-weight: 700; color: #fda4af; font-size: 0.86rem;">5. பூத யக்ஞம் 🕊️</div>
+              <div style="font-size: 0.78rem; color: #94a3b8;">பசு, பறவை, எறும்புகளுக்கு உணவு.</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 16px;">
+            <a href="kalvi.html#grihasthaTracker" class="sheet-btn sheet-btn-view" style="padding: 10px 20px; font-size: 0.88rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+              <span>30-நாள் ஆசிரம சாதனா டிராக்கர் காண்க ↗</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Online School Academy Flagship Banner -->
-    <div style="background: linear-gradient(135deg, rgba(14, 25, 45, 0.95), rgba(15, 23, 42, 0.95)); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 20px 24px; margin: 20px 0 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-      <div style="max-width: 760px;">
-        <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3); padding: 3px 12px; border-radius: 14px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">
-          <span>🏫 The Vedic-Modern Global Academy</span>
-        </div>
-        <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 4px;">
-          குருகுல இணையப் பள்ளி — 21-ஆம் நூற்றாண்டு மாணவர் போர்டல்
-        </h3>
-        <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.6; margin: 0;">
-          வேத மெய்யறிவு, குவாண்டம் அறிவியல், AI நெறிமுறைகள் சங்கமிக்கும் 12 தரப் பாடநெறி, போமோடோரோ படிப்பு அரங்கம் மற்றும் உடனடிப் பட்டயச் சான்றிதழ்.
+    <!-- 5. THE 6 SACRED ASHRAM KUTIRAMS (HERMITAGE PAVILIONS) -->
+    <div class="scripture-study-section" style="margin-top: 20px;">
+      <div style="text-align: center; max-width: 820px; margin: 0 auto 20px;">
+        <span class="source-badge">🏛️ ஆசிரம திருக்குடீரங்கள்</span>
+        <h2 style="font-size: 1.6rem; font-weight: 800; color: #ffffff; margin-top: 6px; margin-bottom: 6px;">
+          ஆசிரமத்தின் 6 மெய்ஞ்ஞானக் கூடங்கள் (The 6 Hermitage Kutirams)
+        </h2>
+        <p style="color: #cbd5e1; font-size: 0.94rem;">
+          வேத மெய்யறிவு, பன்னிரு திருமுறைகள், வள்ளுவர் அறம் மற்றும் சனாதன தர்மம் சங்கமிக்கும் புனித கூடங்கள்:
         </p>
       </div>
-      <a href="school.html" class="sheet-btn sheet-btn-view" style="padding: 10px 20px; font-size: 0.9rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 15px rgba(56,189,248,0.3);">
-        <span>இணையப் பள்ளி காண்க ↗</span>
-      </a>
-    </div>
-
-    <!-- Sacred Authority & 6 Gateway Portals -->
-    <div class="scripture-study-section" style="margin-top: 20px;">
-      <span class="source-badge">வேத, திருமுறை, திருக்குறள் &amp; பெரியவா தத்துவ சங்கமம்</span>
-      <h2>முக்கிய ஆன்மீக &amp; கல்வி வாயில்கள் (Core Gateways)</h2>
-      <p>
-        உலக நாகரிகம் பொருள்முதல்வாதத்தில் மூழ்கித் தவிக்கும் இக்காலகட்டத்தில், மனிதகுலத்தின் உள்ளொளியை மீட்கும் மகாசக்தியாக விளங்குவது நமது <strong>வேத நெறியும், தமிழ் சைவப் பெருநெறியும், உன்னத இல்லற தர்மமும்</strong> ஆகும்.
-      </p>
 
       <div class="canonical-grid">
         <div class="canonical-card" onclick="location.href='kalvi.html'" style="cursor: pointer;">
-          <h4>🌿 வாழ்வியல் நெறி (12 நிலைகள்)</h4>
+          <h4>🌿 தர்ம குடீரம் (12 நிலைகள்)</h4>
           <p>பாலப் பருவம் முதல் முதிர் பருவம் வரை 12 நிலைகளில் தர்மம், கல்வி, தொழில், குடும்ப மேன்மை பயிற்றுவிக்கும் முழுமையான கல்வி அரங்கம்.</p>
-          <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">பாடநெறி மையம் ↗</span>
+          <span style="color: #2dd4bf; font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">குடீரம் நுழைக ↗</span>
         </div>
 
         <div class="canonical-card" onclick="location.href='school.html'" style="cursor: pointer;">
-          <h4>🏫 குருகுல இணையப் பள்ளி</h4>
+          <h4>🏫 வித்யா குடீரம் (இணையப் பள்ளி)</h4>
           <p>நவீன AI, குவாண்டம் அறிவியல் மற்றும் வேத நெறி சங்கமிக்கும் 12 தரப் பாடங்கள், வினாடி வினா &amp; உடனடி பட்டயச் சான்றிதழ்.</p>
-          <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">மாணவர் போர்டல் ↗</span>
+          <span style="color: #38bdf8; font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">வித்யாபீடம் காண்க ↗</span>
         </div>
 
         <div class="canonical-card" onclick="location.href='thirukkural.html'" style="cursor: pointer;">
-          <h4>📜 திருக்குறள் உலக தர்மம்</h4>
-          <p>சாதி, மதம் கடந்த உலகப் பொதுமறை. 133 அதிகாரங்களின் சினிமா இசைத் திரைப்படங்கள் மற்றும் அதிகார வெளியீடுகள் (185 படைப்புகள்).</p>
-          <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">அறநெறிக் களஞ்சியம் ↗</span>
+          <h4>📜 குறள் குடீரம் (உலக தர்மம்)</h4>
+          <p>சாதி, மதம் கடந்த உலகப் பொதுமறை. 133 அதிகாரங்களின் சினிமா இசைத் திரைப்படங்கள் மற்றும் சுவடி விரிவுரைகள் (185 படைப்புகள்).</p>
+          <span style="color: #c084fc; font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">சுவடிக் களஞ்சியம் ↗</span>
         </div>
 
         <div class="canonical-card" onclick="location.href='saiva-neri.html'" style="cursor: pointer;">
-          <h4>🔱 சைவ நெறி (Shaivam.org)</h4>
-          <p>ஸ்ரீ ருத்ரம், அப்பர் தேவாரம், மாணிக்கவாசகர் திருவாசகம், திருமூலர் திருமந்திரம் — 172 சிவத் திருப்பதிகங்கள்.</p>
-          <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">ஆராய்ச்சி &amp; பாடல்கள் ↗</span>
+          <h4>🔱 சிவ நெறி சந்நிதி (Shaivam.org)</h4>
+          <p>ஸ்ரீ ருத்ரம், அப்பர் தேவாரம், மாணிக்கவாசகர் திருவாசகம், திருமூலர் திருமந்திரம் — 172 சிவத் திருப்பதிகங்கள் &amp; தத்துவ தரிசனம்.</p>
+          <span style="color: #2dd4bf; font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">சிவத் தலங்கள் &amp; பதிகங்கள் ↗</span>
         </div>
 
         <div class="canonical-card" onclick="location.href='sanmargam.html'" style="cursor: pointer;">
-          <h4>✨ சுத்த சன்மார்க்கம் (வள்ளலார்)</h4>
-          <p>ஜீவகாருண்யம், அருட்பெருஞ்சோதி அகவல், தனிப்பெருங்கருணை மற்றும் ஆன்மநேய ஒருமைப்பாடு (94 படைப்புகள்).</p>
-          <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">ஜோதி தரிசனம் ↗</span>
+          <h4>✨ சன்மார்க்க குடீரம் (வள்ளலார்)</h4>
+          <p>ஜீவகாருண்யம், அருட்பெருஞ்சோதி அகவல், தனிப்பெருங்கருணை, பசிப்பிணி நீக்கல் மற்றும் ஆன்மநேய ஒருமைப்பாடு (94 படைப்புகள்).</p>
+          <span style="color: #34d399; font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">ஜோதி தரிசனம் ↗</span>
         </div>
 
         <div class="canonical-card" onclick="location.href='about.html'" style="cursor: pointer;">
-          <h4>⚜️ தெய்வத்தின் குரல் (மகா பெரியவா)</h4>
+          <h4>⚜️ குருவருள் குடீரம் (மகா பெரியவா)</h4>
           <p>காஞ்சி முனிவர் அருளிய சனாதன தர்மம், சிவ-விஷ்ணு ஐக்கியம், கோசம்ரக்ஷணம் மற்றும் மன அமைதிக்கான சாதனை நெறி.</p>
-          <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">தத்துவ தரிசனம் ↗</span>
+          <span style="color: #f59e0b; font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">தத்துவ தரிசனம் ↗</span>
         </div>
       </div>
     </div>
 
-    <!-- Curated Screening Room (Featured 6 Releases) -->
-    <section id="featuredScreeningRoom" style="margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(56, 189, 248, 0.2);">
+    <!-- 6. ASHRAM GANA MANDAPAM (CURATED SCREENING ROOM) -->
+    <section id="featuredScreeningRoom" style="margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(45, 212, 191, 0.25);">
       <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
         <div>
-          <span class="source-badge" style="background: rgba(244, 63, 94, 0.15); color: #fda4af; border-color: rgba(244, 63, 94, 0.35);">🎬 பிரத்தியேக சினிமா வெளியீடுகள்</span>
+          <span class="source-badge" style="background: rgba(139, 92, 246, 0.15); color: #c084fc; border-color: rgba(139, 92, 246, 0.35);">
+            🎬 ஆசிரம கான அரங்கம்
+          </span>
           <h2 style="font-size: 1.5rem; font-weight: 800; color: #ffffff; margin-top: 6px; margin-bottom: 4px;">
-            சிறப்புத் திரையரங்கம் (Curated Screening Room)
+            ஆசிரம கான அரங்கம் (Curated Screening Mandapam)
           </h2>
           <p style="color: #94a3b8; font-size: 0.92rem; margin: 0;">
-            வாழ்வியல் அறநெறி, இல்லற மாண்பு, கல்வி, பொறுமை மற்றும் இறைபக்தியை உணர்த்தும் 6 முதன்மை இசைத் திரைப்படங்கள்:
+            இறைபக்தி, இல்லற மாண்பு, கல்வி, அன்பு மற்றும் மன அமைதியை உணர்த்தும் 6 முதன்மை ஆசிரம இசைத் திரைப்படங்கள்:
           </p>
         </div>
-        <a href="youtube.html" class="sheet-btn" style="background: rgba(56,189,248,0.12); border: 1px solid rgba(56,189,248,0.4); color: #38bdf8; font-weight: 700; font-size: 0.88rem; padding: 8px 16px; text-decoration: none; border-radius: 8px;">
-          முழு 580 படைப்புகளும் காண்க ↗
+        <a href="youtube.html" class="sheet-btn" style="background: rgba(45,212,191,0.12); border: 1px solid rgba(45,212,191,0.4); color: #2dd4bf; font-weight: 700; font-size: 0.88rem; padding: 8px 16px; text-decoration: none; border-radius: 8px;">
+          முழு 580 சுவடிகளும் காண்க ↗
         </a>
       </div>
 
@@ -353,13 +482,13 @@
             <div class="card-play-btn" title="காணொளியை இயக்குக">▶</div>
           </div>
           <div class="card-info" style="padding: 14px 16px; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: 0.78rem; color: #38bdf8; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">திருக்குறள் • அதிகாரம் 1</div>
+            <div style="font-size: 0.78rem; color: #38bdf8; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">ஆசிரமத் தொடக்கம் • அதிகாரம் 1</div>
             <h3 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; line-height: 1.4; margin-bottom: 8px;">அதிகாரம் 1 - கடவுள் வாழ்த்து (அகர முதல)</h3>
             <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5; flex-grow: 1; margin-bottom: 12px;">
-              "அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு" — மூலப் பரம்பொருளை வணங்கி வாழ்வதே நற்பிறவியின் பயன்.
+              "அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு" — மூலப் பரம்பொருளை வணங்கி தொடங்குவதே ஆசிரம நெறி.
             </p>
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
-              <span style="font-size: 0.78rem; color: var(--gold-soft);">திருவள்ளுவர்</span>
+              <span style="font-size: 0.78rem; color: #2dd4bf;">திருவள்ளுவர்</span>
               <button type="button" class="sheet-btn sheet-btn-view" onclick="openPlayer('02C8glMmetw', 'அதிகாரம் 1 - கடவுள் வாழ்த்து (அகர முதல)')" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 700;">
                 இயக்குக ▶
               </button>
@@ -375,13 +504,13 @@
             <div class="card-play-btn" title="காணொளியை இயக்குக">▶</div>
           </div>
           <div class="card-info" style="padding: 14px 16px; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: 0.78rem; color: #fbbf24; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">இல்லற தர்மம் • அதிகாரம் 5</div>
+            <div style="font-size: 0.78rem; color: #2dd4bf; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">ஆசிரம லட்சியம் • அதிகாரம் 5</div>
             <h3 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; line-height: 1.4; margin-bottom: 8px;">அதிகாரம் 5 - இல்வாழ்க்கை (Grihastha Dharma)</h3>
             <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5; flex-grow: 1; margin-bottom: 12px;">
-              "அறனெனப் பட்டதே இல்வாழ்க்கை" — சான்றோனாகி குடும்பத்தை வழிநடத்துதலே முக்திக்கு அதிவேகப் பாதை.
+              "அறனெனப் பட்டதே இல்வாழ்க்கை" — சான்றோனாகி குடும்பத்தை வழிநடத்துதலே ஆசிரமக் கல்வியின் மெய்ப்பயன்.
             </p>
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
-              <span style="font-size: 0.78rem; color: var(--gold-soft);">திருவள்ளுவர்</span>
+              <span style="font-size: 0.78rem; color: #2dd4bf;">திருவள்ளுவர்</span>
               <button type="button" class="sheet-btn sheet-btn-view" onclick="openPlayer('C05GEfkJZaY', 'அதிகாரம் 5 - இல்வாழ்க்கை | Ilvazhkkai')" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 700;">
                 இயக்குக ▶
               </button>
@@ -400,10 +529,10 @@
             <div style="font-size: 0.78rem; color: #fda4af; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">இல்லற தர்மம் • அதிகாரம் 6</div>
             <h3 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; line-height: 1.4; margin-bottom: 8px;">அதிகாரம் 6 - வாழ்க்கைத் துணைநலம்</h3>
             <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5; flex-grow: 1; margin-bottom: 12px;">
-              "மனைமாட்சி இல்லாள்கண் இல்லாயின் வாழ்க்கை எனைமாட்சித் தாயினும் இல்" — குடும்ப அமைதி &amp; மனைமாட்சி.
+              "மனைமாட்சி இல்லாள்கண் இல்லாயின் வாழ்க்கை எனைமாட்சித் தாயினும் இல்" — மனைமாட்சியே ஆசிரம அமைதி.
             </p>
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
-              <span style="font-size: 0.78rem; color: var(--gold-soft);">திருவள்ளுவர்</span>
+              <span style="font-size: 0.78rem; color: #2dd4bf;">திருவள்ளுவர்</span>
               <button type="button" class="sheet-btn sheet-btn-view" onclick="openPlayer('hCHBPd8BH8A', 'அதிகாரம் 6 - வாழ்க்கைத் துணைநலம் | Vaazkkai Thunai')" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 700;">
                 இயக்குக ▶
               </button>
@@ -419,13 +548,13 @@
             <div class="card-play-btn" title="காணொளியை இயக்குக">▶</div>
           </div>
           <div class="card-info" style="padding: 14px 16px; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: 0.78rem; color: #2dd4bf; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">அறநெறி • அதிகாரம் 8</div>
+            <div style="font-size: 0.78rem; color: #34d399; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">அறநெறி • அதிகாரம் 8</div>
             <h3 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; line-height: 1.4; margin-bottom: 8px;">அதிகாரம் 8 - அன்புடைமை (Universal Love)</h3>
             <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5; flex-grow: 1; margin-bottom: 12px;">
-              "அன்பிலார் எல்லாம் தமக்குரியர் அன்புடையார் என்பும் உரியர் பிறர்க்கு" — அன்பே சிவமாக வாழும் நெறி.
+              "அன்பிலார் எல்லாம் தமக்குரியர் அன்புடையார் என்பும் உரியர் பிறர்க்கு" — அன்பே சிவமாக வாழும் ஆசிரம நெறி.
             </p>
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
-              <span style="font-size: 0.78rem; color: var(--gold-soft);">திருவள்ளுவர்</span>
+              <span style="font-size: 0.78rem; color: #2dd4bf;">திருவள்ளுவர்</span>
               <button type="button" class="sheet-btn sheet-btn-view" onclick="openPlayer('jO2i4bcZ2ts', 'அதிகாரம் 8 - அன்புடைமை | Anbudaimai')" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 700;">
                 இயக்குக ▶
               </button>
@@ -441,13 +570,13 @@
             <div class="card-play-btn" title="காணொளியை இயக்குக">▶</div>
           </div>
           <div class="card-info" style="padding: 14px 16px; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: 0.78rem; color: #a78bfa; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">தவ நெறி • அதிகாரம் 31</div>
+            <div style="font-size: 0.78rem; color: #c084fc; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">தவ நெறி • அதிகாரம் 31</div>
             <h3 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; line-height: 1.4; margin-bottom: 8px;">அதிகாரம் 31 - வெகுளாமை (Mastering Anger)</h3>
             <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5; flex-grow: 1; margin-bottom: 12px;">
               "செல்லாவிடத்துச் சினம் தீது; செல்லிடத்தும் இல்லதனின் தீய பிற" — கோபத்தை வென்று குடும்ப அமைதி காக்கும் கலை.
             </p>
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
-              <span style="font-size: 0.78rem; color: var(--gold-soft);">திருவள்ளுவர்</span>
+              <span style="font-size: 0.78rem; color: #2dd4bf;">திருவள்ளுவர்</span>
               <button type="button" class="sheet-btn sheet-btn-view" onclick="openPlayer('xcUlgFsrepU', 'அதிகாரம் 31 - வெகுளாமை | Vegulaamai')" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 700;">
                 இயக்குக ▶
               </button>
@@ -463,13 +592,13 @@
             <div class="card-play-btn" title="காணொளியை இயக்குக">▶</div>
           </div>
           <div class="card-info" style="padding: 14px 16px; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: 0.78rem; color: #38bdf8; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">பொருட்பால் • அதிகாரம் 40</div>
+            <div style="font-size: 0.78rem; color: #38bdf8; font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">வித்யாபீடம் • அதிகாரம் 40</div>
             <h3 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; line-height: 1.4; margin-bottom: 8px;">அதிகாரம் 40 - கல்வி (Wisdom &amp; Education)</h3>
             <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5; flex-grow: 1; margin-bottom: 12px;">
               "கற்க கசடறக் கற்பவை கற்றபின் நிற்க அதற்குத் தக" — மெய்யறிவு தரும் ஞானக் கல்வி மற்றும் வாழ்வியல் பயன்பாடு.
             </p>
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
-              <span style="font-size: 0.78rem; color: var(--gold-soft);">திருவள்ளுவர்</span>
+              <span style="font-size: 0.78rem; color: #2dd4bf;">திருவள்ளுவர்</span>
               <button type="button" class="sheet-btn sheet-btn-view" onclick="openPlayer('KZxknhbVIk0', 'அதிகாரம் 40 - கல்வி | Kalvi Cinematic Film')" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 700;">
                 இயக்குக ▶
               </button>
@@ -480,11 +609,34 @@
       </div>
     </section>
 
-    <!-- Master Vault Gateway Banner -->
-    <div style="background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95)); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 16px; padding: 24px 28px; margin: 36px 0 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.4);">
-      <div style="font-size: 1.8rem; margin-bottom: 8px;">🎶 🎬 📜 🔱</div>
+    <!-- 7. ASHRAM SAMAVARTANA CONVOCATION BENEDICTION -->
+    <section class="ashram-samavartana-box">
+      <div style="font-size: 1.8rem; margin-bottom: 8px;">🪔 📜 🔱 🌿</div>
+      <span class="source-badge" style="background: rgba(45, 212, 191, 0.15); color: #2dd4bf; border-color: rgba(45, 212, 191, 0.4);">
+        சமாவர்த்தன நிறைவு வாழ்த்துரை (Ancient Gurukula Convocation Benediction)
+      </span>
+      <h3 style="color: #ffffff; font-size: 1.35rem; font-weight: 800; margin: 12px 0 8px;">
+        "சத்தியம் வத | தர்மம் சர | மாத்ரு தேவோ பவ | பித்ரு தேவோ பவ | ஆசார்ய தேவோ பவ"
+      </h3>
+      <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 820px; margin: 0 auto 16px; line-height: 1.7;">
+        குருகுலக் கல்வியை நிறைவு செய்து உலகிற்குத் திரும்பும் சீடர்களுக்கு ஆசார்யரின் இறுதி அறிவுரை: 
+        <em>"பொய் பேசாதே, அறத்தை தவறாதே. மனைவியையும் மக்களையும் இறைவடிவாகக் காத்து, விருந்தோம்பி, சான்றோனாகி உன்னத குடும்பத்தை வழிநடத்து. இல்லற தர்மமே முக்திக்கு அதிவேகப் பாதை!"</em>
+      </p>
+      <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+        <a href="kalvi.html#familyCharter" class="sheet-btn sheet-btn-view" style="padding: 10px 20px; font-size: 0.9rem; font-weight: 700; text-decoration: none;">
+          குடும்ப தர்ம உடன்படிக்கை (Family Charter) ↗
+        </a>
+        <a href="kalvi.html#grihasthaTracker" class="sheet-btn" style="background: rgba(139, 92, 246, 0.18); border: 1px solid rgba(139, 92, 246, 0.4); color: #c084fc; font-weight: 700; padding: 10px 20px; text-decoration: none; border-radius: 8px;">
+          30-நாள் சாதனாவைத் தொடங்கு ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- 8. THE 580 SACRED MANUSCRIPTS VAULT GATEWAY -->
+    <div style="background: linear-gradient(135deg, rgba(8, 20, 36, 0.95), rgba(4, 13, 26, 0.95)); border: 1px solid rgba(45, 212, 191, 0.3); border-radius: 16px; padding: 24px 28px; margin: 30px 0 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.4);">
+      <div style="font-size: 1.8rem; margin-bottom: 8px;">🎶 📜 🔱 🎬</div>
       <h3 style="color: #ffffff; font-size: 1.35rem; font-weight: 800; margin-bottom: 6px;">
-        முழுமையான 580 பக்தி இசை &amp; காணொளிக் களஞ்சியம் (The Complete 580 Vault)
+        ஆசிரம 580 திருமுறை &amp; குறள் சுவடிக் களஞ்சியம் (The Complete 580 Vault)
       </h3>
       <p style="color: #cbd5e1; font-size: 0.94rem; max-width: 720px; margin: 0 auto 18px; line-height: 1.6;">
         அனைத்து 580 வெளியீடுகளையும் தமிழ் பாடல் வரிகள், தத்துவப் பொருள் விளக்கம், பக்திப் பிரிவுகள் மற்றும் ஆடியோ/வீடியோ வடிகட்டியுடன் எளிதாகத் தேடிக் கேளுங்கள்.
@@ -496,7 +648,7 @@
         <a href="irai-isai-virundhu.html" class="sheet-btn" style="background: rgba(56,189,248,0.15); border: 1px solid rgba(56,189,248,0.4); color: #38bdf8; font-weight: 700; padding: 10px 20px; text-decoration: none; border-radius: 8px;">
           🎵 இறை இசை விருந்து ↗
         </a>
-        <a href="thirukkural.html" class="sheet-btn" style="background: rgba(212,175,55,0.15); border: 1px solid rgba(212,175,55,0.4); color: #fbbf24; font-weight: 700; padding: 10px 20px; text-decoration: none; border-radius: 8px;">
+        <a href="thirukkural.html" class="sheet-btn" style="background: rgba(45,212,191,0.15); border: 1px solid rgba(45,212,191,0.4); color: #2dd4bf; font-weight: 700; padding: 10px 20px; text-decoration: none; border-radius: 8px;">
           📜 திருக்குறள் (185 வெளியீடுகள்) ↗
         </a>
         <a href="saiva-neri.html" class="sheet-btn" style="background: rgba(168,85,247,0.15); border: 1px solid rgba(168,85,247,0.4); color: #d8b4fe; font-weight: 700; padding: 10px 20px; text-decoration: none; border-radius: 8px;">
@@ -532,48 +684,48 @@
     </div>
   </div>
 
-  <!-- Site Footer -->
+  <!-- Site Footer (Ashram Sannidhi Headquarters) -->
   <footer class="site-footer" id="siteFooter">
     <div class="footer-container">
       <div class="footer-col">
-        <h4>குரு குல தேசம் (Guru Kula Desam)</h4>
-        <p>வேதங்கள், பன்னிரு திருமுறைகள், சைவ சித்தாந்த சாத்திரங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் சுத்த சன்மார்க்க நெறிகளை உலகிற்கு பறைசாற்றும் ஆன்மீக இசை &amp; கல்விப் பெருவெளி.</p>
-        <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">அன்பே சிவம் • யாதும் ஊரே யாவரும் கேளிர் • ஏகன் அநேகன்</p>
-        <div style="margin-top: 14px; font-size: 0.84rem; color: var(--gold-soft); line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 12px; background: rgba(212, 175, 55, 0.05); padding-top: 6px; padding-bottom: 6px; border-radius: 0 8px 8px 0;">
-          📍 <strong>மைய முகவரி (Headquarters):</strong><br>
+        <h4>குரு குல ஆசிரமம் (Guru Kula Ashram)</h4>
+        <p>வேதங்கள், பன்னிரு திருமுறைகள், சைவ சித்தாந்த சாத்திரங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் சுத்த சன்மார்க்க நெறிகளை உலகிற்குப் பறைசாற்றும் ஆன்மீக இசை, இல்லற தர்மம் &amp; ஆசிரம வித்யாபீடம்.</p>
+        <p style="margin-top: 10px; color: #2dd4bf; font-weight: 600;">அன்பே சிவம் • யாதும் ஊரே யாவரும் கேளிர் • ஏகன் அநேகன்</p>
+        <div style="margin-top: 14px; font-size: 0.84rem; color: #cbd5e1; line-height: 1.6; border-left: 2px solid #2dd4bf; padding-left: 12px; background: rgba(45, 212, 191, 0.08); padding-top: 6px; padding-bottom: 6px; border-radius: 0 8px 8px 0;">
+          📍 <strong>ஆசிரம தலைமை வித்யாபீட முகவரி (Ashram Sanctorum):</strong><br>
           32, SSS Jaya Enclave, Kovaipudur,<br>
           Coimbatore, 641042, Tamil Nadu, India.
         </div>
       </div>
       <div class="footer-col">
-        <h4>வாழ்வியல் நெறி &amp; பாடங்கள்</h4>
+        <h4>ஆசிரமக் குடீரங்கள் &amp; பாடங்கள்</h4>
         <ul class="footer-links">
-          <li><a href="school.html" style="color:#38bdf8; font-weight:700;">🏫 குருகுல இணையப் பள்ளி (Online School Portal)</a></li>
-          <li><a href="kalvi.html">வாழ்வியல் மையம் (Grades 1 - 12)</a></li>
-          <li><a href="tharam-1.html">தரம் 1 — பாலப் பருவ வாழ்வியல் நெறி</a></li>
+          <li><a href="school.html" style="color:#38bdf8; font-weight:700;">🏫 வித்யா குடீரம் (இணையப் பள்ளி போர்டல்)</a></li>
+          <li><a href="kalvi.html">தர்ம குடீரம் (வாழ்வியல் மையம் - Grades 1-12)</a></li>
+          <li><a href="tharam-1.html">தரம் 1 — பாலப் பருவ ஆசிரம நெறி</a></li>
           <li><a href="tharam-2.html">தரம் 2 — சிவ சின்னங்கள் &amp; ஆலய வழிபாடு</a></li>
           <li><a href="tharam-3.html">தரம் 3 முதல் தரம் 12 வரை</a></li>
-          <li><a href="irai-isai-virundhu.html">இறை இசை விருந்து (5 சிறப்புப் பாடல்கள்)</a></li>
-          <li><a href="syllabus.html">பாடத்திட்டம் (Comprehensive Syllabus)</a></li>
-          <li><a href="classes.html">வகுப்புகள் (Online Classes &amp; Timetable)</a></li>
+          <li><a href="irai-isai-virundhu.html">ஆசிரம கான விருந்து (580 பாடல்கள்)</a></li>
+          <li><a href="syllabus.html">முழு ஆசிரமப் பாடத்திட்டம்</a></li>
+          <li><a href="classes.html">வகுப்புகள் &amp; தினசரி அட்டவணை</a></li>
           <li><a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener">அதிகாரப்பூர்வ கூகிள் தளம் (Google Sites Mirror) ↗</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>ஆன்மீக வழிகள் &amp; இசை</h4>
+        <h4>ஆன்மீக வழிகள் &amp; சுவடிகள்</h4>
         <ul class="footer-links">
-          <li><a href="saiva-neri.html">சிவ நெறி (172 திருமுறைப் பாடல்கள்)</a></li>
-          <li><a href="thirukkural.html">திருக்குறள் (185 அதிகாரப் படங்கள் &amp; இசை)</a></li>
+          <li><a href="saiva-neri.html">சிவ நெறி (172 திருமுறைப் பதிகங்கள்)</a></li>
+          <li><a href="thirukkural.html">குறள் குடீரம் (185 அதிகாரப் படங்கள் &amp; இசை)</a></li>
           <li><a href="sanmargam.html">சன்மார்க்கம் (94 அருட்பெருஞ்சோதிப் பாடல்கள்)</a></li>
           <li><a href="murugan.html">முருக நெறி (கந்த சஷ்டி &amp; திருப்புகழ்)</a></li>
           <li><a href="sakthi.html">சக்தி நெறி (அபிராமி அந்தாதி &amp; போற்றிகள்)</a></li>
           <li><a href="vinayagar.html">விநாயகர் நெறி &amp; வைணவம்</a></li>
-          <li><a href="youtube.html">YouTube இசை &amp; படக் களஞ்சியம்</a></li>
+          <li><a href="youtube.html">YouTube ஆசிரமக் காணொளிகள் களஞ்சியம்</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2026 குரு குல தேசம் (Guru Kula Desam) | gurukuladesam.com | 32, SSS Jaya Enclave, Kovaipudur, Coimbatore, Tamil Nadu, India | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.
+      &copy; 2026 குரு குல ஆசிரமம் (Guru Kula Ashram) | gurukuladesam.com | 32, SSS Jaya Enclave, Kovaipudur, Coimbatore, Tamil Nadu, India | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.
     </div>
   </footer>
 
