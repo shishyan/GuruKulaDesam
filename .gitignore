@@ -24,6 +24,8 @@ Thumbs.db
 .vscode/
 .idea/
 # Credentials & Tokens
+.env
+data/
 *client_secret*.json
 token.json
 client_secrets.json

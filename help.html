@@ -188,7 +188,7 @@
         <!-- Hero Header -->
         <section class="help-hero-banner">
           <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-            <span class="source-badge" style="background: linear-gradient(135deg, #d4af37, #996515); color: #000; font-weight: 800;">🏛️ வழிகாட்டல் &amp; ஆதரவு மையம்</span>
+            <span class="source-badge" style="background: linear-gradient(135deg, #d4af37, #996515); color: #000; font-weight: 800;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg> வழிகாட்டல் &amp; ஆதரவு மையம்</span>
             <span style="background: #2dd4bf22; color: #2dd4bf; border: 1px solid #2dd4bf55; padding: 4px 12px; border-radius: 14px; font-size: 0.8rem; font-weight: 700;">
               Help &amp; Support Hub
             </span>
@@ -202,53 +202,72 @@
 
           <div style="display:flex; gap:12px; flex-wrap:wrap;">
             <button type="button" class="btn-primary" onclick="scrollToSection('studentGuideSection')">
-              🎓 மாணவர் வழிகாட்டி (Student Guide)
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg> மாணவர் வழிகாட்டி (Student Guide)
             </button>
             <button type="button" class="btn-secondary" onclick="scrollToSection('guruGuideSection')">
-              🧑‍🏫 ஆசான் / குரு வழிகாட்டி (Guru Guide)
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>‍<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg> ஆசான் / குரு வழிகாட்டி (Guru Guide)
             </button>
             <button type="button" class="btn-secondary" onclick="scrollToSection('userGuideSection')">
-              👤 பயனர் வழிகாட்டி (User Guide)
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> பயனர் வழிகாட்டி (User Guide)
             </button>
             <button type="button" class="btn-secondary" onclick="scrollToSection('faqSection')">
-              ❓ பொதுக் கேள்விகள் (FAQ)
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> பொதுக் கேள்விகள் (FAQ)
             </button>
           </div>
         </section>
+
+    <!-- SACRED VISUAL HERITAGE SHOWCASE (2 AUTHENTIC IMAGES) -->
+    <div class="page-visual-showcase">
+      <div class="visual-card">
+        <img src="assets/images/lessons/gurukulam_sacred_refuge.jpg" alt="ஆசிரம வழிகாட்டல் & மாணவர் நெறி" loading="lazy">
+        <div class="visual-card-info">
+          <div class="visual-card-title">ஆசிரம வழிகாட்டல் & மாணவர் நெறி</div>
+          <div class="visual-card-sub">சுய ஒழுக்கம், தினசரி சாதனை மற்றும் ஐயந்தீர்க்கும் மரபு</div>
+        </div>
+      </div>
+      <div class="visual-card">
+        <img src="assets/images/lessons/dharma/dharma_01_morning_parent_reverence.jpg" alt="தினசரி சாதனை & நற்பண்புப் பயிற்சி" loading="lazy">
+        <div class="visual-card-info">
+          <div class="visual-card-title">தினசரி சாதனை & நற்பண்புப் பயிற்சி</div>
+          <div class="visual-card-sub">அன்னை தந்தையர் மற்றும் குருவணக்கத்துடன் தொடங்கும் வாழ்வு</div>
+        </div>
+      </div>
+    </div>
+
 
         <!-- Quick Jump 3-Column Grid -->
         <section class="guide-card-grid">
           <a href="#studentGuideSection" class="guide-selector-card" onclick="event.preventDefault(); scrollToSection('studentGuideSection');">
             <div>
-              <span class="guide-card-icon">🎓</span>
+              <span class="guide-card-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></span>
               <h2 class="guide-card-title">மாணவர் வழிகாட்டி (Student Guide)</h2>
               <p class="guide-card-desc">
                 12 தரப் பாடங்கள், பாடம் நிறைவு குறிக்கும் LMS டிராக்கர், 432Hz கோவில் மணி நாதம், வேத XP, நினைவாற்றல் அட்டைகள் மற்றும் பட்டயச் சான்றிதழ் வழிகாட்டல்.
               </p>
             </div>
-            <span class="guide-card-action">வழிகாட்டியைப் படிக்க →</span>
+            <span class="guide-card-action">வழிகாட்டியைப் படிக்க <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
           </a>
 
           <a href="#guruGuideSection" class="guide-selector-card" onclick="event.preventDefault(); scrollToSection('guruGuideSection');">
             <div>
-              <span class="guide-card-icon">🧑‍🏫</span>
+              <span class="guide-card-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>‍<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></span>
               <h2 class="guide-card-title">ஆசான் / குரு வழிகாட்டி (Guru Guide)</h2>
               <p class="guide-card-desc">
                 ஸ்ரவணம்-மனனம்-நிதித்யாசனம் கற்பித்தல் நெறி, பதஞ்சலி 7-படிநிலை ஆத்ம மதிப்பீடு, 3-அடுக்கு நற்பண்பு முறைமை, வாராந்திர வகுப்பறை கால அட்டவணை மற்றும் பணித்தாள்கள்.
               </p>
             </div>
-            <span class="guide-card-action">ஆசான் நெறியைப் படிக்க →</span>
+            <span class="guide-card-action">ஆசான் நெறியைப் படிக்க <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
           </a>
 
           <a href="#userGuideSection" class="guide-selector-card" onclick="event.preventDefault(); scrollToSection('userGuideSection');">
             <div>
-              <span class="guide-card-icon">👤</span>
+              <span class="guide-card-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
               <h2 class="guide-card-title">பயனர் வழிகாட்டி (User &amp; Seeker Guide)</h2>
               <p class="guide-card-desc">
                 580 பக்தி இசைப் படைப்புகள் தேடல், 9 திருக்குறள் சினிமா காட்சித் திரையரங்கம் (Screening Room), வண்ணக் கருப்பொருள்கள், தன்புரா நாதம் மற்றும் ஆஃப்லைன் PWA வசதிகள்.
               </p>
             </div>
-            <span class="guide-card-action">பயனர் கையேட்டைப் பார்க்க →</span>
+            <span class="guide-card-action">பயனர் கையேட்டைப் பார்க்க <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
           </a>
         </section>
 
@@ -260,11 +279,11 @@
             <div>
               <span style="font-size:0.8rem; color:#38bdf8; font-weight:700; text-transform:uppercase; letter-spacing:1px;">LMS &amp; Study Hall Documentation</span>
               <h2 style="color:#ffffff; font-size:1.75rem; margin-top:4px; display:flex; align-items:center; gap:10px;">
-                <span>🎓 1. மாணவர் வழிகாட்டி (Student Learning Guide)</span>
+                <span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg> 1. மாணவர் வழிகாட்டி (Student Learning Guide)</span>
               </h2>
             </div>
             <a href="school.html" class="sheet-btn sheet-btn-view" style="text-decoration:none;">
-              🏫 பள்ளி போர்டல் திறக்க
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg> பள்ளி போர்டல் திறக்க
             </a>
           </div>
 
@@ -285,7 +304,7 @@
               <span class="guide-step-number">படிநிலை 2</span>
               <h3 style="color:#f6e05e; font-size:1.1rem; margin:8px 0 10px 0;">பாடத்தை முடித்துக் குறித்தல் (LMS)</h3>
               <p style="font-size:0.88rem; color:#94a3b8; line-height:1.6;">
-                பாடத்தின் இறுதியில் உள்ள <strong>"○ பாடம் முடிந்தது எனக் குறிக்கவும்"</strong> என்ற பொத்தானை அழுத்தவும். அது உடனடியாக பச்சை நிறமாக <code>✓ பாடம் நிறைவுற்றது</code> என மாறும். உங்களுக்கு <strong>+50 வேத ஞான XP</strong> புள்ளிகள் வழங்கப்படும்!
+                பாடத்தின் இறுதியில் உள்ள <strong>"○ பாடம் முடிந்தது எனக் குறிக்கவும்"</strong> என்ற பொத்தானை அழுத்தவும். அது உடனடியாக பச்சை நிறமாக <code><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> பாடம் நிறைவுற்றது</code> என மாறும். உங்களுக்கு <strong>+50 வேத ஞான XP</strong> புள்ளிகள் வழங்கப்படும்!
               </p>
             </div>
 
@@ -331,11 +350,11 @@
             <div>
               <span style="font-size:0.8rem; color:var(--accent-teal, #2dd4bf); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Pedagogy &amp; Curriculum Governance</span>
               <h2 style="color:#ffffff; font-size:1.75rem; margin-top:4px; display:flex; align-items:center; gap:10px;">
-                <span>🧑‍🏫 2. ஆசான் / குரு வழிகாட்டி (Guru &amp; Teacher Guide)</span>
+                <span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>‍<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg> 2. ஆசான் / குரு வழிகாட்டி (Guru &amp; Teacher Guide)</span>
               </h2>
             </div>
             <a href="syllabus.html" class="sheet-btn sheet-btn-view" style="text-decoration:none;">
-              📜 முழு பாடத்திட்டம்
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/><line x1="8" y1="7" x2="14" y2="7"/><line x1="8" y1="11" x2="12" y2="11"/></svg> முழு பாடத்திட்டம்
             </a>
           </div>
 
@@ -395,11 +414,11 @@
             <div>
               <span style="font-size:0.8rem; color:var(--accent-gold, #e5a93c); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Portal Navigation &amp; Personalization</span>
               <h2 style="color:#ffffff; font-size:1.75rem; margin-top:4px; display:flex; align-items:center; gap:10px;">
-                <span>👤 3. பயனர் / சாதகர் வழிகாட்டி (User &amp; Seeker Guide)</span>
+                <span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> 3. பயனர் / சாதகர் வழிகாட்டி (User &amp; Seeker Guide)</span>
               </h2>
             </div>
             <button type="button" class="sheet-btn sheet-btn-view" onclick="openUserSettingsModal('preferences')">
-              ⚙️ அமைப்புகள் திறக்க
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> அமைப்புகள் திறக்க
             </button>
           </div>
 
@@ -420,7 +439,7 @@
               <span class="guide-step-number">விருப்பம் 2</span>
               <h3 style="color:#f6e05e; font-size:1.1rem; margin:8px 0 10px 0;">திரைப் பரிசோதனை கூடம் (Screening Room)</h3>
               <p style="font-size:0.88rem; color:#94a3b8; line-height:1.6;">
-                <a href="review_quality.html" style="color:#38bdf8;">review_quality.html</a> பக்கத்தில் 9 திருக்குறள் சினிமா முழுப் படங்களை விசைப்பலகை குறுக்குவழிகளுடன் (<kbd>Space</kbd>, <kbd>←</kbd>/<kbd>→</kbd>, <kbd>[</kbd>/<kbd>]</kbd>, <kbd>F</kbd>) முழுத்திரையில் பார்த்து மகிழலாம்.
+                <a href="review_quality.html" style="color:#38bdf8;">review_quality.html</a> பக்கத்தில் 9 திருக்குறள் சினிமா முழுப் படங்களை விசைப்பலகை குறுக்குவழிகளுடன் (<kbd>Space</kbd>, <kbd><svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></kbd>/<kbd><svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></kbd>, <kbd>[</kbd>/<kbd>]</kbd>, <kbd>F</kbd>) முழுத்திரையில் பார்த்து மகிழலாம்.
               </p>
             </div>
 
@@ -428,7 +447,7 @@
               <span class="guide-step-number">விருப்பம் 3</span>
               <h3 style="color:#f6e05e; font-size:1.1rem; margin:8px 0 10px 0;">வண்ணக் கருப்பொருள் &amp; எழுத்துரு</h3>
               <p style="font-size:0.88rem; color:#94a3b8; line-height:1.6;">
-                மேல் வலதுபுறத்தில் உள்ள <code>🌓</code> பொத்தானை அழுத்தி <strong>தர்மப் பேரொளி</strong> (Cosmic Teal-Violet), <strong>ஆழ்கடல் நீலம்</strong>, மற்றும் <strong>அடர் கருப்பு</strong> கருப்பொருள்களுக்கு மாறலாம். <code>A⁻</code> / <code>A⁺</code> மூலம் எழுத்தை பெரிதாக்கலாம்.
+                மேல் வலதுபுறத்தில் உள்ள <code><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></code> பொத்தானை அழுத்தி <strong>தர்மப் பேரொளி</strong> (Cosmic Teal-Violet), <strong>ஆழ்கடல் நீலம்</strong>, மற்றும் <strong>அடர் கருப்பு</strong> கருப்பொருள்களுக்கு மாறலாம். <code><span style="font-size:0.9em; font-weight:700">A</span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:0.7em; height:0.7em; vertical-align:0.35em"><line x1="5" y1="12" x2="19" y2="12"/></svg></code> / <code><span style="font-size:0.9em; font-weight:700">A</span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:0.7em; height:0.7em; vertical-align:0.35em"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></code> மூலம் எழுத்தை பெரிதாக்கலாம்.
               </p>
             </div>
 
@@ -436,7 +455,7 @@
               <span class="guide-step-number">விருப்பம் 4</span>
               <h3 style="color:#f6e05e; font-size:1.1rem; margin:8px 0 10px 0;">ஆசிரம தன்புரா / பிரணவ ஓம் நாதம்</h3>
               <p style="font-size:0.88rem; color:#94a3b8; line-height:1.6;">
-                மேல் பட்டியில் உள்ள <code>🪔</code> பொத்தானை அழுத்தினால், மெல்லிய தியானப் பின்னணி நாதம் ஒலிக்கும். இது வாசிக்கும் போது மன அமைதியை உண்டாக்கும்.
+                மேல் பட்டியில் உள்ள <code><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-.8 2-1.5 3.5-1.5 5a1.5 1.5 0 0 0 3 0c0-1.5-.7-3-1.5-5z" fill="currentColor"/><path d="M5 13c0 4 3 6 7 6s7-2 7-6H5z"/><path d="M10 19v2h4v-2"/></svg></code> பொத்தானை அழுத்தினால், மெல்லிய தியானப் பின்னணி நாதம் ஒலிக்கும். இது வாசிக்கும் போது மன அமைதியை உண்டாக்கும்.
               </p>
             </div>
 
@@ -452,7 +471,7 @@
               <span class="guide-step-number">விருப்பம் 6</span>
               <h3 style="color:#f6e05e; font-size:1.1rem; margin:8px 0 10px 0;">சுயவிவரப் பதிவு &amp; தர நிலை</h3>
               <p style="font-size:0.88rem; color:#94a3b8; line-height:1.6;">
-                இடது பக்கப்பட்டியின் கீழே உள்ள <code>👤 சுயவிவரம்</code> பொத்தானை அழுத்தி உங்கள் பெயர், ஆன்மீக சின்னம் (Avatar), மற்றும் நிலையைத் தேர்வு செய்து கொள்ளலாம்.
+                இடது பக்கப்பட்டியின் கீழே உள்ள <code><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> சுயவிவரம்</code> பொத்தானை அழுத்தி உங்கள் பெயர், ஆன்மீக சின்னம் (Avatar), மற்றும் நிலையைத் தேர்வு செய்து கொள்ளலாம்.
               </p>
             </div>
           </div>
@@ -466,7 +485,7 @@
             <div>
               <span style="font-size:0.8rem; color:#f43f5e; font-weight:700; text-transform:uppercase; letter-spacing:1px;">Troubleshooting &amp; Frequently Asked Questions</span>
               <h2 style="color:#ffffff; font-size:1.75rem; margin-top:4px; display:flex; align-items:center; gap:10px;">
-                <span>❓ 4. அடிக்கடி கேட்கப்படும் கேள்விகள் &amp; ஆதரவு (FAQ &amp; Support)</span>
+                <span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> 4. அடிக்கடி கேட்கப்படும் கேள்விகள் &amp; ஆதரவு (FAQ &amp; Support)</span>
               </h2>
             </div>
             <span style="font-size:0.85rem; color:#94a3b8;">100% பாதுகாப்பான உலாவித் தளம்</span>
@@ -476,7 +495,7 @@
             <div class="faq-accordion-item">
               <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
                 <span>1. நான் முடித்த பாடங்களின் பதிவுகள் கணினியை மூடினால் அழிந்துவிடுமா?</span>
-                <span class="faq-indicator">▼</span>
+                <span class="faq-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
               </button>
               <div class="faq-answer-panel">
                 இல்லை. நீங்கள் "பாடம் முடிந்தது" எனக் குறிக்கும் அனைத்து தகவல்களும் உங்கள் உலாவியின் பாதுகாப்பான சேமிப்பகத்தில் (Local Storage) நிரந்தரமாகப் பதிவு செய்யப்படுகிறது. மீண்டும் பக்கத்தைத் திறக்கும் போது உங்களின் நிலைகள் தானாகவே மீட்டமைக்கப்படும்.
@@ -486,7 +505,7 @@
             <div class="faq-accordion-item">
               <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
                 <span>2. பாடங்களை முடிக்க கட்டணம் செலுத்த வேண்டுமா?</span>
-                <span class="faq-indicator">▼</span>
+                <span class="faq-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
               </button>
               <div class="faq-answer-panel">
                 குரு குல தேசம் ஒரு புனித ஆன்மீக வித்யாபீடம் ஆகும். தரம் 1 முதல் 12 வரையிலான அனைத்துப் பாடங்கள், வீடியோக்கள், பணித்தாள்கள், மற்றும் சான்றிதழ் வசதிகள் முற்றிலும் இலவசமாகவே பொதுமக்களுக்கு வழங்கப்படுகின்றன.
@@ -496,7 +515,7 @@
             <div class="faq-accordion-item">
               <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
                 <span>3. கோவில் மணி மற்றும் நாத ஒலி கேட்கவில்லை என்றால் என்ன செய்வது?</span>
-                <span class="faq-indicator">▼</span>
+                <span class="faq-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
               </button>
               <div class="faq-answer-panel">
                 நவீன உலாவிகள் (Chrome, Safari, Edge) பயனரின் அனுமதியின்றி தானாக ஒலி எழுப்புவதைத் தடுக்கும். தளத்தில் ஏதேனும் ஒரு பொத்தானை அழுத்திய பின்னரே ஒலி இயக்கப்படும். உங்கள் கணினி அல்லது மொபைலின் வால்யூம் ஆன் செய்யப்பட்டுள்ளதா என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்.
@@ -506,7 +525,7 @@
             <div class="faq-accordion-item">
               <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
                 <span>4. பட்டயச் சான்றிதழை PDF ஆக சேமிப்பது எப்படி?</span>
-                <span class="faq-indicator">▼</span>
+                <span class="faq-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
               </button>
               <div class="faq-answer-panel">
                 பள்ளி போர்டலில் (<a href="school.html#certificateSection" style="color:#38bdf8;">school.html</a>) உங்கள் பெயரை உள்ளிட்டு "சான்றிதழ் அச்சிடுக" பொத்தானை அழுத்தவும். தோன்றும் அச்சு விண்டோவில் "Destination" என்பதில் "Save as PDF" என்பதைத் தேர்ந்தெடுத்து உங்கள் கணினியில் சேமித்துக் கொள்ளலாம்.
@@ -516,7 +535,7 @@
             <div class="faq-accordion-item">
               <button type="button" class="faq-question-btn" onclick="toggleFaq(this)">
                 <span>5. மொபைல் போனில் இந்தத் தளம் சரியாக இயங்குமா?</span>
-                <span class="faq-indicator">▼</span>
+                <span class="faq-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
               </button>
               <div class="faq-answer-panel">
                 ஆம்! தளம் முழுமையான மொபைல் ரெஸ்பான்சிவ் வடிவில் வடிவமைக்கப்பட்டுள்ளது. இடதுபுற பக்கப்பட்டி மொபைலில் ஸ்லைடு திரையாக (Mobile Drawer) இயங்கும். மேல் வலதுபுற மெனு மூலம் அனைத்துப் பக்கங்களையும் எளிதாக அணுகலாம்.

@@ -3,7 +3,8 @@ const GKD_ICONS = {
   home: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>',
   temple: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg>',
   leaf: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg>',
-  om: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M11.5 7.5c-1.8 0-2.8 1.2-2.8 2.5 0 1.8 2.5 2.2 2.5 4 0 .8-.6 1.2-1.2 1.2s-1.2-.4-1.2-1.2"/><path d="M11.5 11c.8-.8 1.8-.8 2.2 0s0 1.8-1.2 2.2"/><circle cx="14.8" cy="8.2" r=".6" fill="currentColor"/><path d="M13.5 6.5c.8 0 1.8.4 2.2 1.2"/></svg>',
+  tree: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-8"/><path d="M12 14c-4 0-7-3-7-6a7 7 0 0 1 14 0c0 3-3 6-7 6z"/></svg>',
+  om: '<svg class="gkd-icon gkd-om-icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 10.5c-.3-.7-.2-1.5.3-2.1.8-.9 2.2-.9 3 .1.4.5.5 1.2.2 1.8-.4.7-1.1 1.2-1.7 1.7.9.3 1.7.9 2 1.7.4 1.1 0 2.4-1 3.1-1.2.9-2.9.7-3.9-.4-.4-.5-.6-1.1-.6-1.7h1.4c0 .4.2.8.5 1 .6.5 1.5.4 2-.1.4-.4.5-1 .2-1.5-.4-.7-1.2-1-2-1v-1.2c.6 0 1.2-.2 1.5-.7.3-.4.3-.9 0-1.3-.4-.5-1.1-.6-1.6-.2-.3.2-.5.6-.5 1H8.2zm6.3-2.5c.8 0 1.5.5 1.8 1.2l-1.2.5c-.2-.4-.5-.6-.8-.6-.6 0-1 .4-1 1s.4 1 1 1c.5 0 .9-.3 1.1-.7l1.1.6c-.4.8-1.2 1.3-2.2 1.3-1.4 0-2.4-1-2.4-2.4 0-1.3 1-2.4 2.4-2.4zm1.5-1.5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z"/></svg>',
   trishul: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M12 6c-3.5 0-6 2.5-6 6v3h2v-3c0-2.5 1.8-4 4-4s4 1.5 4 4v3h2v-3c0-3.5-2.5-6-6-6z"/><path d="M9 16h6"/><polygon points="12 2 10.5 5 13.5 5 12 2" fill="currentColor"/></svg>',
   ganesha: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4 0-7 3.5-7 7.5 0 2.5 1.2 4.7 3 6l1 4.5h6l1-4.5c1.8-1.3 3-3.5 3-6C19 6.5 16 3 12 3z"/><path d="M12 9v5a1.5 1.5 0 0 1-3 0"/><circle cx="9" cy="8" r="1" fill="currentColor"/><circle cx="15" cy="8" r="1" fill="currentColor"/></svg>',
   vel: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V9"/><path d="M12 2C9.5 5 7 8 7 11c0 3 2 4.5 5 5 3-.5 5-2 5-5 0-3-2.5-6-5-9z"/><line x1="9" y1="22" x2="15" y2="22"/></svg>',
@@ -20,24 +21,38 @@ const GKD_ICONS = {
   science: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(90 12 12)"/></svg>',
   virtues: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L3 12.5V21h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>',
   clock: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
-  play: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor"/></svg>',
+  play: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>',
   search: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
   close: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
   fullscreen: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>',
   bulb: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.3 4.7 3.2 6H15.8c1.9-1.3 3.2-3.5 3.2-6a7 7 0 0 0-7-7z"/></svg>',
-  pin: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="17" x2="12" y2="22"/><path d="M5 17h14l-2-6V4H7v7l-2 6z"/><line x1="9" y1="4" x2="15" y2="4"/></svg>',
+  pin: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
   pencil: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>',
   palette: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>',
   check: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
   print: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>',
   chevronDown: '<svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>',
+  chevronUp: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>',
+  chevronRight: '<svg class="gkd-icon gkd-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>',
   deepam: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-.8 2-1.5 3.5-1.5 5a1.5 1.5 0 0 0 3 0c0-1.5-.7-3-1.5-5z" fill="currentColor"/><path d="M5 13c0 4 3 6 7 6s7-2 7-6H5z"/><path d="M10 19v2h4v-2"/></svg>',
-  cinema: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>',
+  cinema: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>',
   mapPin: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
   bell: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>',
   question: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
-  settings: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
-  user: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>'
+  settings: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+  user: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+  external: '<svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>',
+  arrowRight: '<svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>',
+  arrowLeft: '<svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>',
+  arrowUp: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>',
+  copy: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
+  pranam: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v3"/><path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6"/><path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.83L7 15"/></svg>',
+  headphone: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>',
+  star: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
+  starEmpty: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
+  sound: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>',
+  mute: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>',
+  theme: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>'
 };
 
 // Global DOM Icon Hydrator
@@ -46,54 +61,30 @@ function hydrateModernIcons(root) {
   if (!container) return;
 
   const emojiMap = {
-    '🏛️': GKD_ICONS.temple,
-    '🏛': GKD_ICONS.temple,
-    '🏠': GKD_ICONS.home,
-    '🌿': GKD_ICONS.leaf,
-    '🕉️': GKD_ICONS.om,
-    '🕉': GKD_ICONS.om,
-    '🎵': GKD_ICONS.music,
-    '🎶': GKD_ICONS.music,
-    '📜': GKD_ICONS.scroll,
-    '✨': GKD_ICONS.flame,
-    '🌟': GKD_ICONS.flame,
-    '🔥': GKD_ICONS.flame,
-    '👑': GKD_ICONS.crown,
-    '📖': GKD_ICONS.book,
-    '📚': GKD_ICONS.book,
-    '🎯': GKD_ICONS.target,
-    '🏫': GKD_ICONS.school,
-    '🔬': GKD_ICONS.science,
-    '🔤': GKD_ICONS.virtues,
-    '⏰': GKD_ICONS.clock,
-    '🔱': GKD_ICONS.trishul,
-    '🐘': GKD_ICONS.ganesha,
-    '🪶': GKD_ICONS.vel,
-    '🌸': GKD_ICONS.lotus,
-    '🪷': GKD_ICONS.chakra,
-    '▶️': GKD_ICONS.play,
-    '▶': GKD_ICONS.play,
-    '🎬': GKD_ICONS.cinema,
-    '🔍': GKD_ICONS.search,
-    '💡': GKD_ICONS.bulb,
-    '📌': GKD_ICONS.pin,
-    '✍️': GKD_ICONS.pencil,
-    '✍': GKD_ICONS.pencil,
-    '🎨': GKD_ICONS.palette,
-    '🎓': GKD_ICONS.grad,
-    '✓': GKD_ICONS.check,
-    '✅': GKD_ICONS.check,
-    '🖨️': GKD_ICONS.print,
-    '🖨': GKD_ICONS.print,
-    '🪔': GKD_ICONS.deepam,
-    '📍': GKD_ICONS.mapPin,
-    '⚙️': GKD_ICONS.settings,
-    '⚙': GKD_ICONS.settings,
-    '👤': GKD_ICONS.user,
-    '❓': GKD_ICONS.question
+    '🏛️': GKD_ICONS.temple, '🏛': GKD_ICONS.temple, '🏠': GKD_ICONS.home, '🏡': GKD_ICONS.home,
+    '🌿': GKD_ICONS.leaf, '🌱': GKD_ICONS.leaf, '🍃': GKD_ICONS.leaf, '🌳': GKD_ICONS.tree,
+    '🕉️': GKD_ICONS.om, '🕉': GKD_ICONS.om, 'ॐ': GKD_ICONS.om,
+    '🎵': GKD_ICONS.music, '🎶': GKD_ICONS.music, '🎧': GKD_ICONS.headphone,
+    '📜': GKD_ICONS.scroll, '✨': GKD_ICONS.flame, '🌟': GKD_ICONS.flame, '🔥': GKD_ICONS.flame,
+    '👑': GKD_ICONS.crown, '⚜️': GKD_ICONS.crown, '⚜': GKD_ICONS.crown,
+    '📖': GKD_ICONS.book, '📚': GKD_ICONS.book, '🎯': GKD_ICONS.target,
+    '🏫': GKD_ICONS.school, '🎓': GKD_ICONS.grad, '🔬': GKD_ICONS.science,
+    '🔤': GKD_ICONS.virtues, '⏰': GKD_ICONS.clock, '🔱': GKD_ICONS.trishul,
+    '🐘': GKD_ICONS.ganesha, '🪶': GKD_ICONS.vel, '🌸': GKD_ICONS.lotus, '🌺': GKD_ICONS.lotus, '🪷': GKD_ICONS.lotus,
+    '▶️': GKD_ICONS.play, '▶': GKD_ICONS.play, '🎬': GKD_ICONS.cinema, '📺': GKD_ICONS.cinema,
+    '🔍': GKD_ICONS.search, '💡': GKD_ICONS.bulb, '📌': GKD_ICONS.pin,
+    '✍️': GKD_ICONS.pencil, '✍': GKD_ICONS.pencil, '🎨': GKD_ICONS.palette,
+    '✓': GKD_ICONS.check, '✔': GKD_ICONS.check, '✅': GKD_ICONS.check,
+    '🖨️': GKD_ICONS.print, '🖨': GKD_ICONS.print, '🪔': GKD_ICONS.deepam,
+    '📍': GKD_ICONS.mapPin, '⚙️': GKD_ICONS.settings, '⚙': GKD_ICONS.settings,
+    '👤': GKD_ICONS.user, '🧑': GKD_ICONS.user, '❓': GKD_ICONS.question,
+    '🏆': GKD_ICONS.star, '🎖': GKD_ICONS.star, '💎': GKD_ICONS.om,
+    '🌍': GKD_ICONS.temple, '🌐': GKD_ICONS.temple, '🙏': GKD_ICONS.pranam,
+    '📋': GKD_ICONS.copy, '🔔': GKD_ICONS.bell, '🔊': GKD_ICONS.sound, '🔕': GKD_ICONS.mute,
+    '✕': GKD_ICONS.close, '✖': GKD_ICONS.close, '☰': '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'
   };
 
-  const targets = container.querySelectorAll('.strip-item-icon, .strip-sub-icon, .card-type, .badge, .btn-icon, .search-icon, .item-badge');
+  const targets = container.querySelectorAll('.strip-item-icon, .strip-sub-icon, .card-type, .badge, .btn-icon, .search-icon, .item-badge, .ashram-pedagogy-icon, .strip-dock-icon, .hb-icon, .context-tab-pill-icon, .dropdown-item-icon, .modal-box-icon');
   targets.forEach(el => {
     const txt = el.textContent.trim();
     if (emojiMap[txt]) {
@@ -183,11 +174,11 @@ function renderCards() {
     const hasDetails = Boolean(it.lyrics || it.meaning || it.author);
 
     return `
-    <div class="video-card" id="card-${it.id}">
+    <div class="video-card" id="card-${it.id}" onclick="if(!event.target.closest('.card-lyrics-toggle-btn, .card-lyrics-drawer, .card-yt-link, a, button')) openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')" style="cursor: pointer;">
       <div class="card-thumbnail" onclick="openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')">
         <img src="https://i.ytimg.com/vi/${it.id}/mqdefault.jpg" loading="lazy" alt="${safeTitle}">
         <span class="card-badge ${it.type === 'film' ? 'badge-film' : 'badge-audio'}">${it.type === 'film' ? 'Film' : 'Audio'}</span>
-        <div class="card-play-btn" title="காணொளியை இயக்குக">▶</div>
+        <div class="card-play-btn" title="காணொளியை இயக்குக">${GKD_ICONS.play}</div>
       </div>
       <div class="card-body">
         <div class="card-title" onclick="openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')" title="${safeTitle}">
@@ -196,39 +187,39 @@ function renderCards() {
 
         ${(safeAuthor || safeSource) ? `
           <div class="card-meta-line">
-            ${safeAuthor ? `<span class="card-meta-tag">✍️ ${safeAuthor}</span>` : ''}
-            ${safeSource ? `<span class="card-meta-tag">📖 ${safeSource}</span>` : ''}
+            ${safeAuthor ? `<span class="card-meta-tag">${GKD_ICONS.pencil} ${safeAuthor}</span>` : ''}
+            ${safeSource ? `<span class="card-meta-tag">${GKD_ICONS.book} ${safeSource}</span>` : ''}
           </div>
         ` : ''}
 
         <div class="card-footer">
-          <span class="tag">${it.type === 'film' ? '🎬 முழுப் படம் (Film)' : '🎵 இசை வெளியீடு (Audio)'}</span>
-          <a href="https://www.youtube.com/watch?v=${it.id}" target="_blank" rel="noopener noreferrer" class="card-yt-link" onclick="event.stopPropagation()">YouTube ↗</a>
+          <span class="tag">${it.type === 'film' ? `${GKD_ICONS.cinema} முழுப் படம் (Film)` : `${GKD_ICONS.music} இசை வெளியீடு (Audio)`}</span>
+          <a href="https://www.youtube.com/watch?v=${it.id}" target="_blank" rel="noopener noreferrer" class="card-yt-link" onclick="event.stopPropagation()">YouTube ${GKD_ICONS.external}</a>
         </div>
 
         ${hasDetails ? `
           <button type="button" class="card-lyrics-toggle-btn" onclick="toggleCardLyrics(event, '${it.id}')" aria-expanded="false">
-            <span>📜 வரிகள் &amp; பொருள் விளக்கம்</span>
-            <span class="lyrics-chevron">▾</span>
+            <span>${GKD_ICONS.scroll} வரிகள் &amp; பொருள் விளக்கம்</span>
+            <span class="lyrics-chevron">${GKD_ICONS.chevronDown}</span>
           </button>
 
           <div class="card-lyrics-drawer" id="drawer-${it.id}" style="display: none;">
             ${it.lyrics ? `
               <div class="drawer-section">
-                <div class="drawer-section-title">📜 பாடல் வரிகள் (Lyrics)</div>
+                <div class="drawer-section-title">${GKD_ICONS.scroll} பாடல் வரிகள் (Lyrics)</div>
                 <div class="drawer-lyrics-text">${formattedLyrics}</div>
               </div>
             ` : ''}
 
             ${it.meaning ? `
               <div class="drawer-section">
-                <div class="drawer-section-title">💡 பொருள் விளக்கம் (Meaning)</div>
+                <div class="drawer-section-title">${GKD_ICONS.bulb} பொருள் விளக்கம் (Meaning)</div>
                 <div class="drawer-meaning-text">${safeMeaning}</div>
               </div>
             ` : ''}
 
             <button type="button" class="drawer-play-btn" onclick="openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')">
-              ▶ இந்த காணொளியை இயக்குக (Play Video)
+              ${GKD_ICONS.play} இந்த காணொளியை இயக்குக (Play Video)
             </button>
           </div>
         ` : ''}
@@ -301,9 +292,9 @@ function openPlayer(videoId, title) {
   if (directNotice) {
     directNotice.innerHTML = `
       <div class="direct-notice-inner">
-        <span>💡 காணொளி அல்லது ஆடியோ இங்கு இயங்கவில்லை எனில் (If video playback is restricted):</span>
+        <span>${GKD_ICONS.bulb} காணொளி அல்லது ஆடியோ இங்கு இயங்கவில்லை எனில் (If video playback is restricted):</span>
         <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" class="direct-yt-btn">
-          ▶ YouTube-ல் நேரடியாகத் திறக்க (Watch on YouTube) ↗
+          ${GKD_ICONS.play} YouTube-ல் நேரடியாகத் திறக்க (Watch on YouTube) ${GKD_ICONS.external}
         </a>
       </div>
     `;
@@ -336,19 +327,19 @@ function openPlayer(videoId, title) {
     <div class="modal-meta-row">
       <div class="modal-meta-tags">
         <span class="modal-meta-tag badge-${item.type === 'film' ? 'film' : 'audio'}">
-          ${item.type === 'film' ? '🎬 முழுப் படம் (Cinematic Film)' : '🎵 இசை வெளியீடு (Sacred Audio)'}
+          ${item.type === 'film' ? `${GKD_ICONS.cinema} முழுப் படம் (Cinematic Film)` : `${GKD_ICONS.music} இசை வெளியீடு (Sacred Audio)`}
         </span>
-        ${safeAuthor ? `<span class="modal-meta-tag">✍️ ஆசிரியர்: <strong>${safeAuthor}</strong></span>` : ''}
-        ${safeSource ? `<span class="modal-meta-tag">📖 மூலம்: <strong>${safeSource}</strong></span>` : ''}
+        ${safeAuthor ? `<span class="modal-meta-tag">${GKD_ICONS.pencil} ஆசிரியர்: <strong>${safeAuthor}</strong></span>` : ''}
+        ${safeSource ? `<span class="modal-meta-tag">${GKD_ICONS.book} மூலம்: <strong>${safeSource}</strong></span>` : ''}
       </div>
 
       <div class="modal-action-buttons">
         <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" class="modal-btn modal-btn-yt">
-          ▶ YouTube-ல் காண்க ↗
+          ${GKD_ICONS.play} YouTube-ல் காண்க ${GKD_ICONS.external}
         </a>
         ${rawLyrics ? `
           <button type="button" class="modal-btn modal-btn-copy" onclick="copyLyricsText(this, ${JSON.stringify(rawLyrics)})">
-            📋 வரிகளை நகலெடு
+            ${GKD_ICONS.copy} வரிகளை நகலெடு
           </button>
         ` : ''}
       </div>
@@ -357,7 +348,7 @@ function openPlayer(videoId, title) {
     <div class="modal-content-grid">
       <div class="modal-box modal-lyrics-box">
         <div class="modal-box-header">
-          <span class="modal-box-icon">📜</span>
+          <span class="modal-box-icon">${GKD_ICONS.scroll}</span>
           <h4 class="modal-box-title">பாடல் வரிகள் (Sacred Lyrics)</h4>
         </div>
         <div class="modal-box-body lyrics-body">${formattedLyrics}</div>
@@ -365,7 +356,7 @@ function openPlayer(videoId, title) {
 
       <div class="modal-box modal-meaning-box">
         <div class="modal-box-header">
-          <span class="modal-box-icon">💡</span>
+          <span class="modal-box-icon">${GKD_ICONS.bulb}</span>
           <h4 class="modal-box-title">பொருள் விளக்கம் &amp; தத்துவம் (Spiritual Meaning)</h4>
         </div>
         <div class="modal-box-body meaning-body">${safeMeaning}</div>
@@ -374,10 +365,10 @@ function openPlayer(videoId, title) {
 
     <div class="modal-bottom-actions">
       <button type="button" class="modal-btn modal-btn-top" onclick="scrollToModalTop()">
-        ▲ காணொளிக்குத் திரும்புக (Back to Video)
+        ${GKD_ICONS.arrowUp} காணொளிக்குத் திரும்புக (Back to Video)
       </button>
       <button type="button" class="modal-btn modal-btn-close-bottom" onclick="closePlayer()">
-        ✕ மூடுக (Close Player)
+        ${GKD_ICONS.close} மூடுக (Close Player)
       </button>
     </div>
   `;
@@ -402,7 +393,7 @@ function toggleModalFullscreen() {
     if ((document.fullscreenElement || document.webkitFullscreenElement) && document.exitFullscreen) {
       document.exitFullscreen().catch(() => {});
     }
-    if (btn) btn.innerHTML = '⛶ பெரிய திரை (Big Mode)';
+    if (btn) btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> பெரிய திரை (Big Mode)';
     return;
   }
 
@@ -414,7 +405,7 @@ function toggleModalFullscreen() {
       document.webkitExitFullscreen();
     }
     if (modalBox) modalBox.classList.remove('modal-theater-mode');
-    if (btn) btn.innerHTML = '⛶ பெரிய திரை (Big Mode)';
+    if (btn) btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> பெரிய திரை (Big Mode)';
     return;
   }
 
@@ -427,22 +418,22 @@ function toggleModalFullscreen() {
       const p = req.call(target);
       if (p && p.then) {
         p.then(() => {
-          if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+          if (btn) btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg> இயல்பு (Exit Big Mode)';
         }).catch(() => {
           // Hardware fullscreen not allowed by browser/permissions-policy: activate CSS Big Mode!
           if (modalBox) modalBox.classList.add('modal-theater-mode');
-          if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+          if (btn) btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg> இயல்பு (Exit Big Mode)';
         });
       } else {
-        if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+        if (btn) btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg> இயல்பு (Exit Big Mode)';
       }
     } catch (e) {
       if (modalBox) modalBox.classList.add('modal-theater-mode');
-      if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+      if (btn) btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg> இயல்பு (Exit Big Mode)';
     }
   } else {
     if (modalBox) modalBox.classList.add('modal-theater-mode');
-    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+    if (btn) btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg> இயல்பு (Exit Big Mode)';
   }
 }
 
@@ -451,10 +442,10 @@ document.addEventListener('fullscreenchange', function() {
   const modalBox = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
   if (!document.fullscreenElement) {
     if (modalBox && !modalBox.classList.contains('modal-theater-mode')) {
-      if (btn) btn.innerHTML = '⛶ பெரிய திரை (Big Mode)';
+      if (btn) btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> பெரிய திரை (Big Mode)';
     }
   } else {
-    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+    if (btn) btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg> இயல்பு (Exit Big Mode)';
   }
 });
 
@@ -484,18 +475,18 @@ function createPlayerModalElement() {
       <div class="modal-header">
         <div class="modal-title" id="modalTitle">Now Playing</div>
         <div class="modal-header-actions">
-          <button type="button" class="modal-fullscreen-btn" onclick="toggleModalFullscreen()" title="பெரிய திரை (Toggle Big Mode / Fullscreen)">⛶ பெரிய திரை (Big Mode)</button>
+          <button type="button" class="modal-fullscreen-btn" onclick="toggleModalFullscreen()" title="பெரிய திரை (Toggle Big Mode / Fullscreen)"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> பெரிய திரை (Big Mode)</button>
           <button type="button" class="modal-scroll-btn" onclick="scrollToModalDetails()" title="வரிகளுக்குச் செல்க">
-            📜 வரிகள் &amp; பொருள் ↓
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> வரிகள் &amp; பொருள் <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
           </button>
-          <button type="button" class="modal-close-btn" onclick="closePlayer()" title="மூடுக">✕ மூடுக (Close)</button>
+          <button type="button" class="modal-close-btn" onclick="closePlayer()" title="மூடுக"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> மூடுக (Close)</button>
         </div>
       </div>
       <div class="modal-iframe-wrapper" id="modalIframeWrapper">
         <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
       <div class="modal-scroll-hint" onclick="scrollToModalDetails()">
-        <span>▼ கீழே பாடல் வரிகள் &amp; தத்துவப் பொருள் விளக்கம் (Scroll down for Lyrics &amp; Meaning) ▼</span>
+        <span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg> கீழே பாடல் வரிகள் &amp; தத்துவப் பொருள் விளக்கம் (Scroll down for Lyrics &amp; Meaning) <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
       </div>
       <div class="modal-details" id="modalDetails"></div>
     </div>
@@ -514,7 +505,7 @@ function copyLyricsText(btn, text) {
   if (!text) return;
   navigator.clipboard.writeText(text).then(() => {
     const originalText = btn.innerHTML;
-    btn.innerHTML = '✓ நகலெடுக்கப்பட்டது!';
+    btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> நகலெடுக்கப்பட்டது!';
     btn.style.borderColor = 'var(--gold)';
     btn.style.color = 'var(--gold-bright)';
     setTimeout(() => {
@@ -612,12 +603,42 @@ function closeSheetModal() {
 
 /* ========================================================================== */
 /* GURUKULA APP SHELL: LEFT STRIP, CONTEXT BAR, USER PROFILE & PREFERENCES     */
+
+const GKD_AVATAR_SVGS = {
+  user: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+  om: GKD_ICONS.om,
+  deepam: GKD_ICONS.deepam,
+  trishul: GKD_ICONS.trishul,
+  lotus: GKD_ICONS.lotus,
+  flower: GKD_ICONS.flower,
+  book: GKD_ICONS.book,
+  meditation: GKD_ICONS.meditation,
+  crown: GKD_ICONS.crown
+};
+
+function getAvatarSvg(avatarKey) {
+  if (!avatarKey) return GKD_AVATAR_SVGS.user;
+  if (GKD_AVATAR_SVGS[avatarKey]) return GKD_AVATAR_SVGS[avatarKey];
+  const legacyMap = {
+    '👤': GKD_AVATAR_SVGS.user,
+    '🕉️': GKD_AVATAR_SVGS.om, '🕉': GKD_AVATAR_SVGS.om, 'ॐ': GKD_AVATAR_SVGS.om,
+    '🪔': GKD_AVATAR_SVGS.deepam,
+    '🔱': GKD_AVATAR_SVGS.trishul,
+    '🌸': GKD_AVATAR_SVGS.lotus,
+    '🌺': GKD_AVATAR_SVGS.flower,
+    '📖': GKD_AVATAR_SVGS.book,
+    '🧘': GKD_AVATAR_SVGS.meditation,
+    '👑': GKD_AVATAR_SVGS.crown
+  };
+  return legacyMap[avatarKey] || GKD_AVATAR_SVGS.user;
+}
+
 /* ========================================================================== */
 
 const DEFAULT_USER_PREFS = {
   name: 'அன்பான சாதகர்',
   tier: 'tier1',
-  avatar: '👤',
+  avatar: 'user',
   theme: 'cosmic',
   fontStyle: 'mukta',
   fontScale: 1.0,
@@ -740,10 +761,10 @@ function applyUserPreferences() {
     'tier3': 'தரம் 9-12'
   };
 
-  if (pillAvatar) pillAvatar.innerText = userPrefs.avatar || '👤';
+  if (pillAvatar) pillAvatar.innerHTML = getAvatarSvg(userPrefs.avatar);
   if (pillName) pillName.innerText = userPrefs.name || 'சாதகர்';
   if (pillTier) pillTier.innerText = tierMap[userPrefs.tier] || 'சாதகர்';
-  if (stripAvatar) stripAvatar.innerText = userPrefs.avatar || '👤';
+  if (stripAvatar) stripAvatar.innerHTML = getAvatarSvg(userPrefs.avatar);
   if (stripName) stripName.innerText = userPrefs.name || 'சுயவிவரம்';
 
   // Update modal fields if open
@@ -755,13 +776,13 @@ function applyUserPreferences() {
   const nameInput = document.getElementById('prefUserNameInput');
   const tierSelect = document.getElementById('prefUserTierSelect');
 
-  if (largeAvatar) largeAvatar.innerText = userPrefs.avatar || '👤';
+  if (largeAvatar) largeAvatar.innerHTML = getAvatarSvg(userPrefs.avatar);
   if (dispHead) dispHead.innerText = userPrefs.name || 'அன்பான சாதகர்';
   if (tierBadge) {
     const fullTierMap = {
-      'tier1': '🌟 தொடக்க சாதகர் (Grade 1-4)',
-      'tier2': '🪔 இடைநிலை சாதகர் (Grade 5-8)',
-      'tier3': '🔱 உயர்நிலை சிவநேசர் (Grade 9-12)'
+      'tier1': 'தொடக்க சாதகர் (Grade 1-4)',
+      'tier2': 'இடைநிலை சாதகர் (Grade 5-8)',
+      'tier3': 'உயர்நிலை சிவநேசர் (Grade 9-12)'
     };
     tierBadge.innerText = fullTierMap[userPrefs.tier] || fullTierMap['tier1'];
   }
@@ -1133,7 +1154,7 @@ function ensureUniversalSearchModal() {
     modal.innerHTML = `
       <div class="universal-search-box">
         <div class="universal-search-header">
-          <span style="font-size:1.15rem; color:#38bdf8;">🔍</span>
+          <span style="display:inline-flex; align-items:center; color:#38bdf8;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
           <input type="text" id="universalSearchInput" class="universal-search-input" placeholder="குருகுல தேசத்தில் தேடுக... (எ.கா: தரம் 1, இல்லறம், குறள், PhD, யக்ஞம்)" autocomplete="off" oninput="handleUniversalSearchQuery(this.value)">
           <button type="button" class="universal-search-close" onclick="closeUniversalSearch()">Esc</button>
         </div>
@@ -1189,7 +1210,7 @@ function handleUniversalSearchQuery(q) {
                 desc: (item.meaning || item.lyrics || '').slice(0, 90) + '...',
                 url: (cat === 'thirukkural') ? 'thirukkural.html' : (cat === 'shiva' ? 'saiva-neri.html' : 'index.html'),
                 category: cat === 'thirukkural' ? 'திருக்குறள்' : (cat === 'shiva' ? 'சிவ நெறி' : 'பக்தி இசை'),
-                badge: item.type === 'film' ? '🎬 படம்' : '🎵 பாடல்'
+                badge: item.type === 'film' ? '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg> படம்' : '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> பாடல்'
               });
             }
           });
@@ -1202,7 +1223,7 @@ function handleUniversalSearchQuery(q) {
   if (results.length === 0) {
     container.innerHTML = `
       <div style="text-align:center; padding:30px 10px; color:#94a3b8;">
-        <div style="font-size:2rem; margin-bottom:8px;">🌿</div>
+        <div style="display:flex; justify-content:center; margin-bottom:8px; color:var(--gold);"><svg class="gkd-icon" style="width:36px; height:36px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
         <div>"${q}" என்பதற்குரிய முடிவுகள் கிடைக்கவில்லை.</div>
         <div style="font-size:0.82rem; margin-top:4px; color:#64748b;">வேத தர்மம், குறள், தரம் 1-12, அல்லது இல்லறம் எனத் தேடிப் பாருங்கள்.</div>
       </div>
@@ -1212,9 +1233,9 @@ function handleUniversalSearchQuery(q) {
 
   let html = '';
   if (!query) {
-    html += '<div class="search-group-title">🌟 பரிந்துரைக்கப்படும் முதன்மை வாழ்வியல் &amp; தர்மப் பாதைகள்:</div>';
+    html += '<div class="search-group-title"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> பரிந்துரைக்கப்படும் முதன்மை வாழ்வியல் &amp; தர்மப் பாதைகள்:</div>';
   } else {
-    html += `<div class="search-group-title">🔍 கண்டறியப்பட்ட தேடல் முடிவுகள் (${results.length}):</div>`;
+    html += `<div class="search-group-title"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> கண்டறியப்பட்ட தேடல் முடிவுகள் (${results.length}):</div>`;
   }
 
   results.forEach(r => {
@@ -1294,228 +1315,228 @@ function getContextTabsForPage() {
     const nextGrade = gradeNum < 12 ? `tharam-${gradeNum + 1}.html` : null;
 
     return [
-      { id: 'tab-units', icon: '📖', label: 'பாட அலகுகள்', action: "scrollToSection('courseUnits', 'lessonUnitPanel1')" },
-      { id: 'tab-virtues', icon: '🔤', label: 'நற்பண்பு நெறி', action: "scrollToSection('gradeVirtueBox')" },
-      { id: 'tab-diagram', icon: '🎨', label: 'காட்சி விளக்கம்', action: "scrollToSection('visualDiagramCard')" },
-      { id: 'tab-quiz', icon: '❓', label: 'சுய வினாடி-வினா', action: "scrollToSection('quizSection')" },
-      { id: 'tab-sadhana', icon: '🪔', label: 'தினசரி சாதனை', action: "scrollToSection('sadhanaBox')" },
-      ...(prevGrade ? [{ id: 'tab-prev', icon: '⏪', label: `தரம் ${gradeNum - 1}`, href: prevGrade }] : []),
-      ...(nextGrade ? [{ id: 'tab-next', icon: '⏩', label: `தரம் ${gradeNum + 1}`, href: nextGrade }] : []),
-      { id: 'tab-all-grades', icon: '🌿', label: '12 வாழ்வியல் நிலைகள்', href: 'kalvi.html' }
+      { id: 'tab-units', icon: GKD_ICONS.book, label: 'பாட அலகுகள்', action: "scrollToSection('courseUnits', 'lessonUnitPanel1')" },
+      { id: 'tab-virtues', icon: GKD_ICONS.virtues, label: 'நற்பண்பு நெறி', action: "scrollToSection('gradeVirtueBox')" },
+      { id: 'tab-diagram', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>', label: 'காட்சி விளக்கம்', action: "scrollToSection('visualDiagramCard')" },
+      { id: 'tab-quiz', icon: GKD_ICONS.question, label: 'சுய வினாடி-வினா', action: "scrollToSection('quizSection')" },
+      { id: 'tab-sadhana', icon: GKD_ICONS.deepam, label: 'தினசரி சாதனை', action: "scrollToSection('sadhanaBox')" },
+      ...(prevGrade ? [{ id: 'tab-prev', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="11 17 6 12 11 7"/><polyline points="18 17 13 12 18 7"/></svg>', label: `தரம் ${gradeNum - 1}`, href: prevGrade }] : []),
+      ...(nextGrade ? [{ id: 'tab-next', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>', label: `தரம் ${gradeNum + 1}`, href: nextGrade }] : []),
+      { id: 'tab-all-grades', icon: GKD_ICONS.leaf, label: '12 வாழ்வியல் நிலைகள்', href: 'kalvi.html' }
     ];
   }
 
   // 2. Curriculum Hub (kalvi.html)
   if (filename === 'kalvi.html') {
     return [
-      { id: 'tab-overview', icon: '🌿', label: 'வாழ்வியல் நெறி அறிமுகம்', action: "scrollToSection('kalviOverview')", active: true },
-      { id: 'tab-grades', icon: '📚', label: '12 வகுப்புகள் பாடநெறி', action: "scrollToSection('gradesPortalSection')" },
-      { id: 'tab-stages', icon: '🔤', label: '4 வாழ்வியல் பருவங்கள்', action: "scrollToSection('virtue-mapping')" },
-      { id: 'tab-tracker', icon: '✅', label: 'பஞ்ச மகா யக்ஞ டிராக்கர்', action: "scrollToSection('grihasthaTracker')" },
-      { id: 'tab-charter', icon: '📜', label: 'குடும்ப சாசனம்', action: "scrollToSection('familyCharter')" },
-      { id: 'tab-portals', icon: '🏛️', label: 'வித்யாபீடங்கள்', action: "scrollToSection('relatedPortals')" },
-      { id: 'tab-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' },
-      { id: 'tab-higher', icon: '🔬', label: 'உயர்கல்வி', href: 'higher-studies.html' },
-      { id: 'tab-syllabus', icon: '📜', label: 'முழு பாடத்திட்டம்', href: 'syllabus.html' }
+      { id: 'tab-overview', icon: GKD_ICONS.leaf, label: 'வாழ்வியல் நெறி அறிமுகம்', action: "scrollToSection('kalviOverview')", active: true },
+      { id: 'tab-grades', icon: GKD_ICONS.book, label: '12 வகுப்புகள் பாடநெறி', action: "scrollToSection('gradesPortalSection')" },
+      { id: 'tab-stages', icon: GKD_ICONS.virtues, label: '4 வாழ்வியல் பருவங்கள்', action: "scrollToSection('virtue-mapping')" },
+      { id: 'tab-tracker', icon: GKD_ICONS.check, label: 'பஞ்ச மகா யக்ஞ டிராக்கர்', action: "scrollToSection('grihasthaTracker')" },
+      { id: 'tab-charter', icon: GKD_ICONS.scroll, label: 'குடும்ப சாசனம்', action: "scrollToSection('familyCharter')" },
+      { id: 'tab-portals', icon: GKD_ICONS.temple, label: 'வித்யாபீடங்கள்', action: "scrollToSection('relatedPortals')" },
+      { id: 'tab-school', icon: GKD_ICONS.school, label: 'இணையப் பள்ளி', href: 'school.html' },
+      { id: 'tab-higher', icon: GKD_ICONS.science, label: 'உயர்கல்வி', href: 'higher-studies.html' },
+      { id: 'tab-syllabus', icon: GKD_ICONS.scroll, label: 'முழு பாடத்திட்டம்', href: 'syllabus.html' }
     ];
   }
 
   // 2b. Gurukula Academy Portal (school.html)
   if (filename === 'school.html') {
     return [
-      { id: 'tab-portal', icon: '📊', label: 'மாணவர் போர்டல்', action: "scrollToSection('portalDashboard')", active: true },
-      { id: 'tab-fusion', icon: '🔬', label: 'அறிவியல்-வேத சங்கமம்', action: "scrollToSection('stemFusionSection')" },
-      { id: 'tab-hall', icon: '⏱️', label: 'தியான & படிப்பு அரங்கம்', action: "scrollToSection('focusStudyHall')" },
-      { id: 'tab-cert', icon: '📜', label: 'பட்டயச் சான்றிதழ்', action: "scrollToSection('certificateSection')" },
-      { id: 'tab-cards', icon: '🗂️', label: 'நினைவாற்றல் அட்டைகள்', action: "scrollToSection('flashcardsSection')" },
-      { id: 'tab-roadmap', icon: '🧭', label: '12 தரப் பாடநெறி', action: "scrollToSection('roadmapSection')" },
-      { id: 'tab-tracker', icon: '✅', label: 'தினசரி தர்ம டிராக்கர்', href: 'kalvi.html#grihasthaTracker' },
-      { id: 'tab-charter', icon: '📜', label: 'குடும்ப சாசனம்', href: 'kalvi.html#familyCharter' }
+      { id: 'tab-portal', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>', label: 'மாணவர் போர்டல்', action: "scrollToSection('portalDashboard')", active: true },
+      { id: 'tab-fusion', icon: GKD_ICONS.science, label: 'அறிவியல்-வேத சங்கமம்', action: "scrollToSection('stemFusionSection')" },
+      { id: 'tab-hall', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>', label: 'தியான & படிப்பு அரங்கம்', action: "scrollToSection('focusStudyHall')" },
+      { id: 'tab-cert', icon: GKD_ICONS.scroll, label: 'பட்டயச் சான்றிதழ்', action: "scrollToSection('certificateSection')" },
+      { id: 'tab-cards', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>', label: 'நினைவாற்றல் அட்டைகள்', action: "scrollToSection('flashcardsSection')" },
+      { id: 'tab-roadmap', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>', label: '12 தரப் பாடநெறி', action: "scrollToSection('roadmapSection')" },
+      { id: 'tab-tracker', icon: GKD_ICONS.check, label: 'தினசரி தர்ம டிராக்கர்', href: 'kalvi.html#grihasthaTracker' },
+      { id: 'tab-charter', icon: GKD_ICONS.scroll, label: 'குடும்ப சாசனம்', href: 'kalvi.html#familyCharter' }
     ];
   }
 
   // 2c. Higher Studies Vidyapeeth (higher-studies.html)
   if (filename === 'higher-studies.html') {
     return [
-      { id: 'tab-hs-hero', icon: '🏛️', label: 'வித்யாபீட அறிமுகம்', action: "scrollToSection('vidyaHero')", active: true },
-      { id: 'tab-hs-ug', icon: '📜', label: 'இளநிலை: பிரஸ்தானத்ரயம்', action: "scrollToSection('tierUG')" },
-      { id: 'tab-hs-pg', icon: '🔱', label: 'முதுநிலை: மெய்கண்ட சாத்திரங்கள்', action: "scrollToSection('tierPG')" },
-      { id: 'tab-hs-phd', icon: '👑', label: 'கலாநிதி ஆய்வுப் பீடம்', action: "scrollToSection('tierPhD')" },
-      { id: 'tab-hs-glossary', icon: '📖', label: 'வேதாந்தக் கலைச்சொற்கள்', action: "scrollToSection('glossarySection')" },
-      { id: 'tab-hs-cert', icon: '📜', label: 'ஆய்வுப் பட்டயம்', action: "scrollToSection('fellowshipSection')" },
-      { id: 'tab-hs-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' },
-      { id: 'tab-hs-grades', icon: '🌿', label: '12 நிலைகள்', href: 'kalvi.html' }
+      { id: 'tab-hs-hero', icon: GKD_ICONS.temple, label: 'வித்யாபீட அறிமுகம்', action: "scrollToSection('vidyaHero')", active: true },
+      { id: 'tab-hs-ug', icon: GKD_ICONS.scroll, label: 'இளநிலை: பிரஸ்தானத்ரயம்', action: "scrollToSection('tierUG')" },
+      { id: 'tab-hs-pg', icon: GKD_ICONS.trishul, label: 'முதுநிலை: மெய்கண்ட சாத்திரங்கள்', action: "scrollToSection('tierPG')" },
+      { id: 'tab-hs-phd', icon: GKD_ICONS.crown, label: 'கலாநிதி ஆய்வுப் பீடம்', action: "scrollToSection('tierPhD')" },
+      { id: 'tab-hs-glossary', icon: GKD_ICONS.book, label: 'வேதாந்தக் கலைச்சொற்கள்', action: "scrollToSection('glossarySection')" },
+      { id: 'tab-hs-cert', icon: GKD_ICONS.scroll, label: 'ஆய்வுப் பட்டயம்', action: "scrollToSection('fellowshipSection')" },
+      { id: 'tab-hs-school', icon: GKD_ICONS.school, label: 'இணையப் பள்ளி', href: 'school.html' },
+      { id: 'tab-hs-grades', icon: GKD_ICONS.leaf, label: '12 நிலைகள்', href: 'kalvi.html' }
     ];
   }
 
   // 3. Virtues Matrix (virtues.html)
   if (filename === 'virtues.html') {
     return [
-      { id: 'tab-all', icon: '🌟', label: 'அனைத்து நற்பண்புகள் (30+)', action: "filterVirtues('all')", active: true },
-      { id: 'tab-t1', icon: '🟢', label: 'பருவம் 1: அறிதல் (தரம் 1-4)', action: "filterVirtues('tier-1')" },
-      { id: 'tab-t2', icon: '🟡', label: 'பருவம் 2: செய்தல் (தரம் 5-8)', action: "filterVirtues('tier-2')" },
-      { id: 'tab-t3', icon: '🔴', label: 'பருவம் 3: காத்தல் (தரம் 9-12)', action: "filterVirtues('tier-3')" },
-      { id: 'tab-kalvi', icon: '🌿', label: 'வாழ்வியல் மையம்', href: 'kalvi.html' }
+      { id: 'tab-all', icon: GKD_ICONS.flame, label: 'அனைத்து நற்பண்புகள் (30+)', action: "filterVirtues('all')", active: true },
+      { id: 'tab-t1', icon: '<svg class="gkd-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="#22c55e"/></svg>', label: 'பருவம் 1: அறிதல் (தரம் 1-4)', action: "filterVirtues('tier-1')" },
+      { id: 'tab-t2', icon: '<svg class="gkd-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="#eab308"/></svg>', label: 'பருவம் 2: செய்தல் (தரம் 5-8)', action: "filterVirtues('tier-2')" },
+      { id: 'tab-t3', icon: '<svg class="gkd-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="#ef4444"/></svg>', label: 'பருவம் 3: காத்தல் (தரம் 9-12)', action: "filterVirtues('tier-3')" },
+      { id: 'tab-kalvi', icon: GKD_ICONS.leaf, label: 'வாழ்வியல் மையம்', href: 'kalvi.html' }
     ];
   }
 
   // 4. Master Home (index.html - Guru Kula Ashram Sanctuary)
   if (filename === 'index.html' || filename === '') {
     return [
-      { id: 'tab-home', icon: '🏛️', label: 'ஆசிரம முகப்பு', href: 'index.html', active: true },
-      { id: 'tab-kalvi', icon: '🌿', label: 'தர்ம குடீரம் (12 நிலைகள்)', href: 'kalvi.html' },
-      { id: 'tab-school', icon: '🏫', label: 'வித்யா குடீரம்', href: 'school.html' },
-      { id: 'tab-pedagogy', icon: '📜', label: 'போதனை மரபு', action: "scrollToSection('ashramPedagogy')" },
-      { id: 'tab-dinacharya', icon: '🪔', label: 'தினசரி காலச்சக்கரம்', action: "scrollToSection('ashramDinacharya')" },
-      { id: 'tab-yagna', icon: '🔥', label: 'பஞ்ச மகா யக்ஞம்', action: "scrollToSection('ashramPanchaYagna')" },
-      { id: 'tab-featured', icon: '🎬', label: 'கான அரங்கம்', action: "scrollToSection('featuredScreeningRoom')" },
-      { id: 'tab-catalog', icon: '📺', label: '580 சுவடிக் களஞ்சியம்', href: 'youtube.html' },
-      { id: 'tab-contact', icon: '📍', label: 'ஆசிரம முகவரி', action: "scrollToSection('siteFooter')" }
+      { id: 'tab-home', icon: GKD_ICONS.temple, label: 'ஆசிரம முகப்பு', href: 'index.html', active: true },
+      { id: 'tab-kalvi', icon: GKD_ICONS.leaf, label: 'தர்ம குடீரம் (12 நிலைகள்)', href: 'kalvi.html' },
+      { id: 'tab-school', icon: GKD_ICONS.school, label: 'வித்யா குடீரம்', href: 'school.html' },
+      { id: 'tab-pedagogy', icon: GKD_ICONS.scroll, label: 'போதனை மரபு', action: "scrollToSection('ashramPedagogy')" },
+      { id: 'tab-dinacharya', icon: GKD_ICONS.deepam, label: 'தினசரி காலச்சக்கரம்', action: "scrollToSection('ashramDinacharya')" },
+      { id: 'tab-yagna', icon: GKD_ICONS.flame, label: 'பஞ்ச மகா யக்ஞம்', action: "scrollToSection('ashramPanchaYagna')" },
+      { id: 'tab-featured', icon: GKD_ICONS.cinema, label: 'கான அரங்கம்', action: "scrollToSection('featuredScreeningRoom')" },
+      { id: 'tab-catalog', icon: GKD_ICONS.cinema, label: '580 சுவடிக் களஞ்சியம்', href: 'youtube.html' },
+      { id: 'tab-contact', icon: GKD_ICONS.mapPin, label: 'ஆசிரம முகவரி', action: "scrollToSection('siteFooter')" }
     ];
   }
 
   // 5. Saiva Neri (saiva-neri.html)
   if (filename === 'saiva-neri.html') {
     return [
-      { id: 'tab-all-shiva', icon: '🔱', label: 'அனைத்து சிவப்பதிகங்கள் (172)', action: "setTypeFilter('all')", active: true },
-      { id: 'tab-thevaram', icon: '🌿', label: 'தேவாரம்', action: "filterByText('தேவாரம்')" },
-      { id: 'tab-thiruvasagam', icon: '💎', label: 'திருவாசகம்', action: "filterByText('திருவாசகம்')" },
-      { id: 'tab-thirumandhiram', icon: '🧘', label: 'திருமந்திரம்', action: "filterByText('திருமந்திரம்')" },
-      { id: 'tab-rudram', icon: '🔥', label: 'ஸ்ரீ ருத்ரம்', action: "filterByText('ருத்ரம்')" }
+      { id: 'tab-all-shiva', icon: GKD_ICONS.trishul, label: 'அனைத்து சிவப்பதிகங்கள் (172)', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-thevaram', icon: GKD_ICONS.leaf, label: 'தேவாரம்', action: "filterByText('தேவாரம்')" },
+      { id: 'tab-thiruvasagam', icon: GKD_ICONS.om, label: 'திருவாசகம்', action: "filterByText('திருவாசகம்')" },
+      { id: 'tab-thirumandhiram', icon: GKD_ICONS.om, label: 'திருமந்திரம்', action: "filterByText('திருமந்திரம்')" },
+      { id: 'tab-rudram', icon: GKD_ICONS.flame, label: 'ஸ்ரீ ருத்ரம்', action: "filterByText('ருத்ரம்')" }
     ];
   }
 
   // 6. Traditions / Deities
   if (['murugan.html', 'sakthi.html', 'vinayagar.html', 'vaishnava.html'].includes(filename)) {
     return [
-      { id: 'tab-murugan', icon: '🔱', label: 'முருகன் (Kaumaram)', href: 'murugan.html', active: filename === 'murugan.html' },
-      { id: 'tab-sakthi', icon: '🌸', label: 'சக்தி (Shaktham)', href: 'sakthi.html', active: filename === 'sakthi.html' },
-      { id: 'tab-vinayagar', icon: '🐘', label: 'விநாயகர் (Ganapathyam)', href: 'vinayagar.html', active: filename === 'vinayagar.html' },
-      { id: 'tab-vaishnava', icon: '🪷', label: 'வைணவம் (Vaishnavam)', href: 'vaishnava.html', active: filename === 'vaishnava.html' }
+      { id: 'tab-murugan', icon: GKD_ICONS.trishul, label: 'முருகன் (Kaumaram)', href: 'murugan.html', active: filename === 'murugan.html' },
+      { id: 'tab-sakthi', icon: GKD_ICONS.lotus, label: 'சக்தி (Shaktham)', href: 'sakthi.html', active: filename === 'sakthi.html' },
+      { id: 'tab-vinayagar', icon: GKD_ICONS.ganesha, label: 'விநாயகர் (Ganapathyam)', href: 'vinayagar.html', active: filename === 'vinayagar.html' },
+      { id: 'tab-vaishnava', icon: GKD_ICONS.lotus, label: 'வைணவம் (Vaishnavam)', href: 'vaishnava.html', active: filename === 'vaishnava.html' }
     ];
   }
 
   // 7. Thirukkural (thirukkural.html)
   if (filename === 'thirukkural.html') {
     return [
-      { id: 'tab-all-tk', icon: '📖', label: 'அனைத்து குறள்கள் (185)', action: "setTypeFilter('all')", active: true },
-      { id: 'tab-illaraviyal', icon: '🏡', label: 'இல்லறவியல் (20)', action: "filterIllaraviyal()" },
-      { id: 'tab-aram', icon: '🌿', label: 'அறத்துப்பால்', action: "filterByText('அறத்துப்பால்')" },
-      { id: 'tab-porul', icon: '👑', label: 'பொருட்பால்', action: "filterByText('பொருட்பால்')" },
-      { id: 'tab-inbam', icon: '🌺', label: 'காமத்துப்பால்', action: "filterByText('காமத்துப்பால்')" },
-      { id: 'tab-films-tk', icon: '🎬', label: 'குறள் திரைப்படங்கள்', action: "setTypeFilter('film')" },
-      { id: 'tab-review-qa', icon: '🔬', label: 'திரைப் பரிசோதனை கூடம் (QA)', href: 'review_quality.html' }
+      { id: 'tab-all-tk', icon: GKD_ICONS.book, label: 'அனைத்து குறள்கள் (185)', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-illaraviyal', icon: GKD_ICONS.home, label: 'இல்லறவியல் (20)', action: "filterIllaraviyal()" },
+      { id: 'tab-aram', icon: GKD_ICONS.leaf, label: 'அறத்துப்பால்', action: "filterByText('அறத்துப்பால்')" },
+      { id: 'tab-porul', icon: GKD_ICONS.crown, label: 'பொருட்பால்', action: "filterByText('பொருட்பால்')" },
+      { id: 'tab-inbam', icon: GKD_ICONS.lotus, label: 'காமத்துப்பால்', action: "filterByText('காமத்துப்பால்')" },
+      { id: 'tab-films-tk', icon: GKD_ICONS.cinema, label: 'குறள் திரைப்படங்கள்', action: "setTypeFilter('film')" },
+      { id: 'tab-review-qa', icon: GKD_ICONS.science, label: 'திரைப் பரிசோதனை கூடம் (QA)', href: 'review_quality.html' }
     ];
   }
 
   // 7b. Film Quality Screening Room (review_quality.html)
   if (filename === 'review_quality.html') {
     return [
-      { id: 'tab-rev-5', icon: '🏡', label: 'அதி 5 (இல்வாழ்க்கை)', action: "loadChapter(5)" },
-      { id: 'tab-rev-8', icon: '❤️', label: 'அதி 8 (அன்புடைமை)', action: "loadChapter(8)" },
-      { id: 'tab-rev-16', icon: '🛡️', label: 'அதி 16 (பொறையுடைமை)', action: "loadChapter(16)" },
-      { id: 'tab-rev-26', icon: '🌱', label: 'அதி 26 (புலால்)', action: "loadChapter(26)" },
-      { id: 'tab-rev-27', icon: '🧘', label: 'அதி 27 (தவம்)', action: "loadChapter(27)" },
-      { id: 'tab-rev-52', icon: '👑', label: 'அதி 52 (தெரிந்து)', action: "loadChapter(52)" },
-      { id: 'tab-rev-54', icon: '🏹', label: 'அதி 54 (பொச்சா)', action: "loadChapter(54)" },
-      { id: 'tab-rev-57', icon: '⚖️', label: 'அதி 57 (வெருவந்த)', action: "loadChapter(57)" },
-      { id: 'tab-rev-61', icon: '☀️', label: 'அதி 61 (மடி)', action: "loadChapter(61)" },
-      { id: 'tab-rev-back', icon: '📖', label: 'திருக்குறள் தளம்', href: 'thirukkural.html' }
+      { id: 'tab-rev-5', icon: GKD_ICONS.home, label: 'அதி 5 (இல்வாழ்க்கை)', action: "loadChapter(5)" },
+      { id: 'tab-rev-8', icon: GKD_ICONS.lotus, label: 'அதி 8 (அன்புடைமை)', action: "loadChapter(8)" },
+      { id: 'tab-rev-16', icon: GKD_ICONS.temple, label: 'அதி 16 (பொறையுடைமை)', action: "loadChapter(16)" },
+      { id: 'tab-rev-26', icon: GKD_ICONS.leaf, label: 'அதி 26 (புலால்)', action: "loadChapter(26)" },
+      { id: 'tab-rev-27', icon: GKD_ICONS.om, label: 'அதி 27 (தவம்)', action: "loadChapter(27)" },
+      { id: 'tab-rev-52', icon: GKD_ICONS.crown, label: 'அதி 52 (தெரிந்து)', action: "loadChapter(52)" },
+      { id: 'tab-rev-54', icon: GKD_ICONS.target, label: 'அதி 54 (பொச்சா)', action: "loadChapter(54)" },
+      { id: 'tab-rev-57', icon: GKD_ICONS.book, label: 'அதி 57 (வெருவந்த)', action: "loadChapter(57)" },
+      { id: 'tab-rev-61', icon: GKD_ICONS.flame, label: 'அதி 61 (மடி)', action: "loadChapter(61)" },
+      { id: 'tab-rev-back', icon: GKD_ICONS.book, label: 'திருக்குறள் தளம்', href: 'thirukkural.html' }
     ];
   }
 
   // 8. Sanmargam (sanmargam.html)
   if (filename === 'sanmargam.html') {
     return [
-      { id: 'tab-all-san', icon: '🪔', label: 'திருவருட்பா படைப்புகள் (94)', action: "setTypeFilter('all')", active: true },
-      { id: 'tab-jeeva', icon: '☀️', label: 'ஜீவகாருண்யம்', action: "filterByText('ஜீவகாருண்யம்')" },
-      { id: 'tab-jyoti', icon: '🕯️', label: 'ஜோதி வழிபாடு', action: "filterByText('ஜோதி')" },
-      { id: 'tab-audio-san', icon: '🎵', label: 'சன்மார்க்க இசை', action: "setTypeFilter('audio')" }
+      { id: 'tab-all-san', icon: GKD_ICONS.deepam, label: 'திருவருட்பா படைப்புகள் (94)', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-jeeva', icon: GKD_ICONS.flame, label: 'ஜீவகாருண்யம்', action: "filterByText('ஜீவகாருண்யம்')" },
+      { id: 'tab-jyoti', icon: GKD_ICONS.deepam, label: 'ஜோதி வழிபாடு', action: "filterByText('ஜோதி')" },
+      { id: 'tab-audio-san', icon: GKD_ICONS.music, label: 'சன்மார்க்க இசை', action: "setTypeFilter('audio')" }
     ];
   }
 
   // 9. Irai Isai Virundhu (irai-isai-virundhu.html)
   if (filename === 'irai-isai-virundhu.html') {
     return [
-      { id: 'tab-isai-all', icon: '🎵', label: '5 சிறப்புப் படைப்புகள்', action: "setTypeFilter('all')", active: true },
-      { id: 'tab-isai-palum', icon: '🥛', label: 'பாலும் தெளிதேனும்', action: "filterByText('பாலும்')" },
-      { id: 'tab-isai-guru', icon: '🙏', label: 'குரு வணக்கம்', action: "filterByText('குரு வணக்கம்')" },
-      { id: 'tab-isai-kandhar', icon: '🔱', label: 'கந்தர் அநுபூதி', action: "filterByText('அநுபூதி')" },
-      { id: 'tab-isai-bharathi', icon: '🇮🇳', label: 'பாரதியார் கானம்', action: "filterByText('பாரதியார்')" },
-      { id: 'tab-isai-sivapuranam', icon: '🪔', label: 'சிவபுராணம்', action: "filterByText('சிவபுராணம்')" },
-      { id: 'tab-isai-yt', icon: '▶️', label: 'காணொளிகள்', href: 'youtube.html' }
+      { id: 'tab-isai-all', icon: GKD_ICONS.music, label: '5 சிறப்புப் படைப்புகள்', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-isai-palum', icon: GKD_ICONS.deepam, label: 'பாலும் தெளிதேனும்', action: "filterByText('பாலும்')" },
+      { id: 'tab-isai-guru', icon: GKD_ICONS.pranam, label: 'குரு வணக்கம்', action: "filterByText('குரு வணக்கம்')" },
+      { id: 'tab-isai-kandhar', icon: GKD_ICONS.trishul, label: 'கந்தர் அநுபூதி', action: "filterByText('அநுபூதி')" },
+      { id: 'tab-isai-bharathi', icon: GKD_ICONS.temple, label: 'பாரதியார் கானம்', action: "filterByText('பாரதியார்')" },
+      { id: 'tab-isai-sivapuranam', icon: GKD_ICONS.deepam, label: 'சிவபுராணம்', action: "filterByText('சிவபுராணம்')" },
+      { id: 'tab-isai-yt', icon: GKD_ICONS.play, label: 'காணொளிகள்', href: 'youtube.html' }
     ];
   }
 
   // 10. YouTube Vault (youtube.html)
   if (filename === 'youtube.html') {
     return [
-      { id: 'tab-yt-all', icon: '▶️', label: 'அனைத்து காணொளிகள் (580)', action: "setTypeFilter('all')", active: true },
-      { id: 'tab-yt-films', icon: '🎬', label: 'திரைப்படங்கள்', action: "setTypeFilter('film')" },
-      { id: 'tab-yt-audio', icon: '🎵', label: 'இசைப் பாடல்கள்', action: "setTypeFilter('audio')" },
-      { id: 'tab-yt-isai', icon: '🎶', label: 'இறை இசை', href: 'irai-isai-virundhu.html' },
-      { id: 'tab-yt-saiva', icon: '🔱', label: 'சைவ நெறி', href: 'saiva-neri.html' },
-      { id: 'tab-yt-kural', icon: '📖', label: 'திருக்குறள்', href: 'thirukkural.html' }
+      { id: 'tab-yt-all', icon: GKD_ICONS.play, label: 'அனைத்து காணொளிகள் (580)', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-yt-films', icon: GKD_ICONS.cinema, label: 'திரைப்படங்கள்', action: "setTypeFilter('film')" },
+      { id: 'tab-yt-audio', icon: GKD_ICONS.music, label: 'இசைப் பாடல்கள்', action: "setTypeFilter('audio')" },
+      { id: 'tab-yt-isai', icon: GKD_ICONS.music, label: 'இறை இசை', href: 'irai-isai-virundhu.html' },
+      { id: 'tab-yt-saiva', icon: GKD_ICONS.trishul, label: 'சைவ நெறி', href: 'saiva-neri.html' },
+      { id: 'tab-yt-kural', icon: GKD_ICONS.book, label: 'திருக்குறள்', href: 'thirukkural.html' }
     ];
   }
 
   // 11. About / Periyava (about.html)
   if (filename === 'about.html') {
     return [
-      { id: 'tab-periyava-darshan', icon: '🌟', label: 'மகா பெரியவா தரிசனம்', action: "scrollToSection('darshanSection')", active: true },
-      { id: 'tab-deivathin-kural', icon: '📖', label: 'தெய்வத்தின் குரல்', action: "scrollToSection('teachingsSection')" },
-      { id: 'tab-vedic-preservation', icon: '🕉️', label: 'வேத சம்ரக்ஷணம்', action: "scrollToSection('vedicSection')" },
-      { id: 'tab-hq-address', icon: '📍', label: 'மைய முகவரி', action: "scrollToSection('siteFooter')" }
+      { id: 'tab-periyava-darshan', icon: GKD_ICONS.flame, label: 'மகா பெரியவா தரிசனம்', action: "scrollToSection('darshanSection')", active: true },
+      { id: 'tab-deivathin-kural', icon: GKD_ICONS.book, label: 'தெய்வத்தின் குரல்', action: "scrollToSection('teachingsSection')" },
+      { id: 'tab-vedic-preservation', icon: GKD_ICONS.om, label: 'வேத சம்ரக்ஷணம்', action: "scrollToSection('vedicSection')" },
+      { id: 'tab-hq-address', icon: GKD_ICONS.mapPin, label: 'மைய முகவரி', action: "scrollToSection('siteFooter')" }
     ];
   }
 
   // 12. Syllabus (syllabus.html)
   if (filename === 'syllabus.html') {
     return [
-      { id: 'tab-syl-patanjali', icon: '🧘', label: 'பதஞ்சலி 7 படிநிலைகள்', action: "scrollToSection('patanjaliSyllabus')", active: true },
-      { id: 'tab-syl-meter', icon: '🪞', label: 'சுய ஆய்வு மதிப்பீடு', action: "scrollToSection('patanjaliAssessmentTool')" },
-      { id: 'tab-syl-virtues', icon: '🔤', label: '4 வாழ்வியல் பருவங்கள்', action: "scrollToSection('virtue-mapping')" },
-      { id: 'tab-syl-grades', icon: '🌿', label: '12 வகுப்புகள் பாடநெறி', href: 'kalvi.html' },
-      { id: 'tab-syl-classes', icon: '⏰', label: 'வகுப்பு அட்டவணை', href: 'classes.html' }
+      { id: 'tab-syl-patanjali', icon: GKD_ICONS.om, label: 'பதஞ்சலி 7 படிநிலைகள்', action: "scrollToSection('patanjaliSyllabus')", active: true },
+      { id: 'tab-syl-meter', icon: GKD_ICONS.search, label: 'சுய ஆய்வு மதிப்பீடு', action: "scrollToSection('patanjaliAssessmentTool')" },
+      { id: 'tab-syl-virtues', icon: GKD_ICONS.virtues, label: '4 வாழ்வியல் பருவங்கள்', action: "scrollToSection('virtue-mapping')" },
+      { id: 'tab-syl-grades', icon: GKD_ICONS.leaf, label: '12 வகுப்புகள் பாடநெறி', href: 'kalvi.html' },
+      { id: 'tab-syl-classes', icon: GKD_ICONS.clock, label: 'வகுப்பு அட்டவணை', href: 'classes.html' }
     ];
   }
 
   // 13. Classes (classes.html)
   if (filename === 'classes.html') {
     return [
-      { id: 'tab-classes-overview', icon: '🏛️', label: 'வகுப்புகள் அட்டவணை', action: "scrollToSection('timetableSection')", active: true },
-      { id: 'tab-classes-syl', icon: '📚', label: 'முழு பாடத்திட்டம்', href: 'syllabus.html' },
-      { id: 'tab-classes-grades', icon: '🌿', label: '12 வாழ்வியல் நிலைகள்', href: 'kalvi.html' },
-      { id: 'tab-classes-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' }
+      { id: 'tab-classes-overview', icon: GKD_ICONS.temple, label: 'வகுப்புகள் அட்டவணை', action: "scrollToSection('timetableSection')", active: true },
+      { id: 'tab-classes-syl', icon: GKD_ICONS.book, label: 'முழு பாடத்திட்டம்', href: 'syllabus.html' },
+      { id: 'tab-classes-grades', icon: GKD_ICONS.leaf, label: '12 வாழ்வியல் நிலைகள்', href: 'kalvi.html' },
+      { id: 'tab-classes-school', icon: GKD_ICONS.school, label: 'இணையப் பள்ளி', href: 'school.html' }
     ];
   }
 
   // 14. Google Sites Mirror (google-site.html)
   if (filename === 'google-site.html') {
     return [
-      { id: 'tab-gs-frame', icon: '🌐', label: 'கூகிள் தளம்', action: "scrollToSection('googleSiteLinks')", active: true },
-      { id: 'tab-gs-about', icon: '🏛️', label: 'குருவருள்', href: 'about.html' },
-      { id: 'tab-gs-home', icon: '🏠', label: 'முகப்பு', href: 'index.html' }
+      { id: 'tab-gs-frame', icon: GKD_ICONS.globe, label: 'கூகிள் தளம்', action: "scrollToSection('googleSiteLinks')", active: true },
+      { id: 'tab-gs-about', icon: GKD_ICONS.temple, label: 'குருவருள்', href: 'about.html' },
+      { id: 'tab-gs-home', icon: GKD_ICONS.home, label: 'முகப்பு', href: 'index.html' }
     ];
   }
 
   // 15. Help & Support Hub (help.html)
   if (filename === 'help.html') {
     return [
-      { id: 'tab-help-student', icon: '🎓', label: 'மாணவர் வழிகாட்டி', action: "scrollToSection('studentGuideSection')", active: true },
-      { id: 'tab-help-guru', icon: '🧑‍🏫', label: 'ஆசான் வழிகாட்டி', action: "scrollToSection('guruGuideSection')" },
-      { id: 'tab-help-user', icon: '👤', label: 'பயனர் வழிகாட்டி', action: "scrollToSection('userGuideSection')" },
-      { id: 'tab-help-faq', icon: '❓', label: 'பொதுக் கேள்விகள் (FAQ)', action: "scrollToSection('faqSection')" },
-      { id: 'tab-help-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' }
+      { id: 'tab-help-student', icon: GKD_ICONS.grad, label: 'மாணவர் வழிகாட்டி', action: "scrollToSection('studentGuideSection')", active: true },
+      { id: 'tab-help-guru', icon: GKD_ICONS.school, label: 'ஆசான் வழிகாட்டி', action: "scrollToSection('guruGuideSection')" },
+      { id: 'tab-help-user', icon: GKD_ICONS.user, label: 'பயனர் வழிகாட்டி', action: "scrollToSection('userGuideSection')" },
+      { id: 'tab-help-faq', icon: GKD_ICONS.question, label: 'பொதுக் கேள்விகள் (FAQ)', action: "scrollToSection('faqSection')" },
+      { id: 'tab-help-school', icon: GKD_ICONS.school, label: 'இணையப் பள்ளி', href: 'school.html' }
     ];
   }
 
   // Default fallback
   return [
-    { id: 'tab-home', icon: '🏠', label: 'முகப்பு', href: 'index.html' },
-    { id: 'tab-kalvi', icon: '🌿', label: 'வாழ்வியல் நெறி', href: 'kalvi.html' },
-    { id: 'tab-virtues', icon: '🔤', label: 'நற்பண்புகள்', href: 'virtues.html' },
-    { id: 'tab-saiva', icon: '🕉️', label: 'சைவ நெறி', href: 'saiva-neri.html' }
+    { id: 'tab-home', icon: GKD_ICONS.home, label: 'முகப்பு', href: 'index.html' },
+    { id: 'tab-kalvi', icon: GKD_ICONS.leaf, label: 'வாழ்வியல் நெறி', href: 'kalvi.html' },
+    { id: 'tab-virtues', icon: GKD_ICONS.virtues, label: 'நற்பண்புகள்', href: 'virtues.html' },
+    { id: 'tab-saiva', icon: GKD_ICONS.om, label: 'சைவ நெறி', href: 'saiva-neri.html' }
   ];
 }
 
@@ -1579,8 +1600,8 @@ function renderContextTabsIntoHeader() {
 
   const hamburgerBtnHtml = `
     <button type="button" class="primary-hamburger-btn" onclick="togglePrimaryMenu()" title="முதன்மை பட்டி (6 பிரிவுகள்)" aria-label="முதன்மை பட்டி">
-      <span class="hb-icon">☰</span>
-      <span class="hb-emblem">ॐ</span>
+      <span class="hb-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+      <span class="hb-emblem"><svg class="gkd-icon gkd-om-icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 10.5c-.3-.7-.2-1.5.3-2.1.8-.9 2.2-.9 3 .1.4.5.5 1.2.2 1.8-.4.7-1.1 1.2-1.7 1.7.9.3 1.7.9 2 1.7.4 1.1 0 2.4-1 3.1-1.2.9-2.9.7-3.9-.4-.4-.5-.6-1.1-.6-1.7h1.4c0 .4.2.8.5 1 .6.5 1.5.4 2-.1.4-.4.5-1 .2-1.5-.4-.7-1.2-1-2-1v-1.2c.6 0 1.2-.2 1.5-.7.3-.4.3-.9 0-1.3-.4-.5-1.1-.6-1.6-.2-.3.2-.5.6-.5 1H8.2zm6.3-2.5c.8 0 1.5.5 1.8 1.2l-1.2.5c-.2-.4-.5-.6-.8-.6-.6 0-1 .4-1 1s.4 1 1 1c.5 0 .9-.3 1.1-.7l1.1.6c-.4.8-1.2 1.3-2.2 1.3-1.4 0-2.4-1-2.4-2.4 0-1.3 1-2.4 2.4-2.4zm1.5-1.5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z"/></svg></span>
       <span class="hb-label">முதன்மை பட்டி</span>
     </button>
   `;
@@ -1608,9 +1629,9 @@ function renderContextTabsIntoHeader() {
   rightTools.className = 'header-right-tools';
   rightTools.innerHTML = `
     <div class="context-search-wrapper">
-      <span class="context-search-icon">🔍</span>
+      <span class="context-search-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
       <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
-      <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;">✕</button>
+      <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
     </div>
 
     <div class="context-tool-group">
@@ -1619,13 +1640,13 @@ function renderContextTabsIntoHeader() {
       <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க (A+)">A⁺</button>
     </div>
 
-    <button type="button" class="context-tool-btn ambient-drone-btn" id="ambientDroneBtn" onclick="toggleAmbientDrone()" title="நாத தியான ஒலி (Ambient Tanpura Drone)"><span class="drone-icon" id="ambientDroneIcon">🪔</span></button>
+    <button type="button" class="context-tool-btn ambient-drone-btn" id="ambientDroneBtn" onclick="toggleAmbientDrone()" title="நாத தியான ஒலி (Ambient Tanpura Drone)"><span class="drone-icon" id="ambientDroneIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c-.8 2-1.5 3.5-1.5 5a1.5 1.5 0 0 0 3 0c0-1.5-.7-3-1.5-5z" fill="currentColor"/><path d="M5 13c0 4 3 6 7 6s7-2 7-6H5z"/><path d="M10 19v2h4v-2"/></svg></span></button>
         <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள் மாற்று">
-      <span class="theme-icon" id="themeQuickIcon">🌓</span>
+      <span class="theme-icon" id="themeQuickIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
     </button>
 
     <button type="button" class="context-profile-pill" onclick="openUserSettingsModal('profile')" title="பயனர் சுயவிவரம் &amp; அமைப்புகள்">
-      <span class="pill-avatar" id="pillAvatarIcon">👤</span>
+      <span class="pill-avatar" id="pillAvatarIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
       <span class="pill-name" id="pillUserName">சாதகர்</span>
     </button>
   `;
@@ -1695,7 +1716,7 @@ function mountAppShell() {
         <span class="strip-brand-text">குரு குல தேசம்</span>
       </a>
       <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="toggleLeftStrip()" title="விரிவுபடுத்து / சுருக்கு">
-        <span class="strip-toggle-icon">⇤</span>
+        <span class="strip-toggle-icon"><svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></span>
       </button>
     </div>
 
@@ -1731,7 +1752,7 @@ function mountAppShell() {
     strip.classList.add('expanded');
     document.body.classList.add('strip-expanded');
     const toggleIcon = strip.querySelector('.strip-toggle-icon');
-    if (toggleIcon) toggleIcon.innerText = '⇥';
+    if (toggleIcon) toggleIcon.innerHTML = '<svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
   }
 
   // 3. Context Sensitive Top Bar
@@ -1742,7 +1763,11 @@ function mountAppShell() {
     <div class="context-bar-inner">
       <div class="context-left">
         <button type="button" class="context-strip-trigger" onclick="toggleLeftStrip()" title="பக்கப்பட்டி திறக்க/மூட">
-          ☰
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <button type="button" class="context-back-btn" onclick="if(window.history.length > 1){ window.history.back(); } else { window.location.href='index.html'; }" title="பின்னே செல்ல (Go Back)">
+          <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <span class="context-back-label">பின்னே</span>
         </button>
         <div class="context-breadcrumbs" id="contextBreadcrumbs">
           <span class="crumb-root">${ctx.root}</span>
@@ -1753,27 +1778,27 @@ function mountAppShell() {
 
       <div class="context-right">
         <div class="context-search-wrapper">
-          <span class="context-search-icon">🔍</span>
+          <span class="context-search-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
           <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
-          <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;">✕</button>
+          <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
         </div>
 
         <div class="context-tool-group">
-          <button type="button" class="context-tool-btn font-dec-btn" onclick="adjustFontSize(-0.06)" title="எழுத்தளவைக் குறைக்க (A-)">A⁻</button>
+          <button type="button" class="context-tool-btn font-dec-btn" onclick="adjustFontSize(-0.06)" title="எழுத்தளவைக் குறைக்க (A-)"><span style="font-size:0.9em; font-weight:700">A</span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:0.7em; height:0.7em; vertical-align:0.35em"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
           <span class="font-scale-indicator" id="fontScaleIndicator" title="தற்போதைய எழுத்தளவு">100%</span>
-          <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க (A+)">A⁺</button>
+          <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க (A+)"><span style="font-size:0.9em; font-weight:700">A</span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:0.7em; height:0.7em; vertical-align:0.35em"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
         </div>
 
-        <button type="button" class="context-tool-btn ambient-drone-btn" id="ambientDroneBtn" onclick="toggleAmbientDrone()" title="நாத தியான ஒலி (Ambient Tanpura Drone)"><span class="drone-icon" id="ambientDroneIcon">🪔</span></button>
+        <button type="button" class="context-tool-btn ambient-drone-btn" id="ambientDroneBtn" onclick="toggleAmbientDrone()" title="நாத தியான ஒலி (Ambient Tanpura Drone)"><span class="drone-icon" id="ambientDroneIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c-.8 2-1.5 3.5-1.5 5a1.5 1.5 0 0 0 3 0c0-1.5-.7-3-1.5-5z" fill="currentColor"/><path d="M5 13c0 4 3 6 7 6s7-2 7-6H5z"/><path d="M10 19v2h4v-2"/></svg></span></button>
         <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள் மாற்று">
-          <span class="theme-icon" id="themeQuickIcon">🌓</span>
+          <span class="theme-icon" id="themeQuickIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
         </button>
         <a href="help.html" class="context-tool-btn" title="உதவி &amp; வழிகாட்டல் (Help &amp; Support)">
-          <span class="theme-icon">❓</span>
+          <span class="theme-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
         </a>
 
         <button type="button" class="context-profile-pill" onclick="openUserSettingsModal('profile')" title="பயனர் சுயவிவரம் &amp; அமைப்புகள்">
-          <span class="pill-avatar" id="pillAvatarIcon">👤</span>
+          <span class="pill-avatar" id="pillAvatarIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
           <span class="pill-name" id="pillUserName">சாதகர்</span>
           <span class="pill-badge" id="pillUserTier">தரம் 1-4</span>
         </button>
@@ -1799,24 +1824,24 @@ function mountAppShell() {
       <div class="user-modal-header">
         <div class="user-modal-tabs">
           <button type="button" class="user-tab-btn active" id="userTabProfileBtn" onclick="switchUserTab('profile')">
-            <span>👤 சுயவிவரம்</span>
+            <span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> சுயவிவரம்</span>
           </button>
           <button type="button" class="user-tab-btn" id="userTabPrefsBtn" onclick="switchUserTab('preferences')">
-            <span>⚙️ விருப்பங்கள் &amp; அமைப்புகள்</span>
+            <span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> விருப்பங்கள் &amp; அமைப்புகள்</span>
           </button>
         </div>
-        <button type="button" class="user-modal-close-btn" onclick="closeUserSettingsModal()" title="மூடுக">✕</button>
+        <button type="button" class="user-modal-close-btn" onclick="closeUserSettingsModal()" title="மூடுக"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
       </div>
 
       <div class="user-modal-body">
         <!-- PROFILE TAB -->
         <div class="user-tab-content active" id="tabContentProfile">
           <div class="profile-hero-card">
-            <div class="profile-avatar-large" id="profileLargeAvatar">👤</div>
+            <div class="profile-avatar-large" id="profileLargeAvatar"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
             <div class="profile-hero-info">
               <h3 id="profileDisplayNameHead">அன்பான சாதகர்</h3>
-              <span class="profile-tier-badge" id="profileTierBadge">🌟 தொடக்க சாதகர் (Grade 1-4)</span>
-              <p class="profile-streak-line">🔥 தொடர் கற்றல்: <strong id="profileStreakDays">1 நாள்</strong> • படித்த அலகுகள்: <strong id="profileLessonsCount">0</strong></p>
+              <span class="profile-tier-badge" id="profileTierBadge">தொடக்க சாதகர் (Grade 1-4)</span>
+              <p class="profile-streak-line"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 3 4.5 4.5 7 1.5 2.5 1.5 5.5 0 8s-4 4-6.5 4c-3 0-5.5-2.5-5.5-6 0-3.5 2-6 4-8.5.5 1.5 1.5 2.5 2.5 2.5.5-2 .5-4.5 1-7z"/></svg> தொடர் கற்றல்: <strong id="profileStreakDays">1 நாள்</strong> • படித்த அலகுகள்: <strong id="profileLessonsCount">0</strong></p>
             </div>
           </div>
 
@@ -1828,29 +1853,29 @@ function mountAppShell() {
           <div class="settings-form-group">
             <label class="settings-label">ஆன்மீக நிலை / தரம் (Spiritual Learning Level):</label>
             <select id="prefUserTierSelect" class="settings-select" onchange="saveUserProfileFields()">
-              <option value="tier1">🌟 தொடக்க சாதகர் — தரம் 1 முதல் 4 (அறம் அறிதல்)</option>
-              <option value="tier2">🪔 இடைநிலை சாதகர் — தரம் 5 முதல் 8 (அறம் பின்பற்றுதல்)</option>
-              <option value="tier3">🔱 உயர்நிலை சிவநேசர் — தரம் 9 முதல் 12 (அறம் காத்தல்)</option>
+              <option value="tier1">தொடக்க சாதகர் — தரம் 1 முதல் 4 (அறம் அறிதல்)</option>
+              <option value="tier2">இடைநிலை சாதகர் — தரம் 5 முதல் 8 (அறம் பின்பற்றுதல்)</option>
+              <option value="tier3">உயர்நிலை சிவநேசர் — தரம் 9 முதல் 12 (அறம் காத்தல்)</option>
             </select>
           </div>
 
           <div class="settings-form-group">
             <label class="settings-label">சுயவிவரச் சின்னம் (Choose Avatar Icon):</label>
             <div class="avatar-selection-grid" id="avatarSelectionGrid">
-              <button type="button" class="avatar-option" onclick="selectAvatar('👤')">👤</button>
-              <button type="button" class="avatar-option" onclick="selectAvatar('🕉️')">🕉️</button>
-              <button type="button" class="avatar-option" onclick="selectAvatar('🪔')">🪔</button>
-              <button type="button" class="avatar-option" onclick="selectAvatar('🔱')">🔱</button>
-              <button type="button" class="avatar-option" onclick="selectAvatar('🌸')">🌸</button>
-              <button type="button" class="avatar-option" onclick="selectAvatar('🌺')">🌺</button>
-              <button type="button" class="avatar-option" onclick="selectAvatar('📖')">📖</button>
-              <button type="button" class="avatar-option" onclick="selectAvatar('🧘')">🧘</button>
-              <button type="button" class="avatar-option" onclick="selectAvatar('👑')">👑</button>
+              <button type="button" class="avatar-option" onclick="selectAvatar('user')" title="சாதகர்"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+              <button type="button" class="avatar-option" onclick="selectAvatar('om')" title="பிரணவம்"><svg class="gkd-icon gkd-om-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5a3.5 3.5 0 0 1-3.5-3.5 1 1 0 0 1 2 0 1.5 1.5 0 0 0 3 0 1.5 1.5 0 0 0-1.5-1.5H12a1 1 0 0 1 0-2h1a1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 13 6.5a1 1 0 0 1 0-2 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-1.3 2.7A3.5 3.5 0 0 1 13 16.5z"/></svg></button>
+              <button type="button" class="avatar-option" onclick="selectAvatar('deepam')" title="தீபம்"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c.5 2 2 3.5 2 5.5a2 2 0 1 1-4 0c0-2 1.5-3.5 2-5.5z"/><path d="M4 14c0 3 3.5 5 8 5s8-2 8-5H4z"/><path d="M9 19v3h6v-3"/></svg></button>
+              <button type="button" class="avatar-option" onclick="selectAvatar('trishul')" title="திரிசூலம்"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M12 11a5 5 0 0 1 5-5v3M12 11a5 5 0 0 0-5-5v3"/></svg></button>
+              <button type="button" class="avatar-option" onclick="selectAvatar('lotus')" title="தாமரை"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-2 4-2 8 0 11 2-3 2-7 0-11z"/><path d="M12 14c-4-1-7-4-8-8 3 0 7 3 8 8z"/><path d="M12 14c4-1 7-4 8-8-3 0-7 3-8 8z"/><path d="M3 16c3 2 6 2 9 0 3 2 6 2 9 0"/></svg></button>
+              <button type="button" class="avatar-option" onclick="selectAvatar('flower')" title="மலர்"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4z"/><path d="M12 17a4 4 0 0 0-4 4v1a4 4 0 0 0 8 0v-1a4 4 0 0 0-4-4z"/><path d="M22 12a4 4 0 0 0-4-4h-1a4 4 0 0 0 0 8h1a4 4 0 0 0 4-4z"/><path d="M2 12a4 4 0 0 0 4-4h1a4 4 0 0 1 0 8H6a4 4 0 0 0-4-4z"/></svg></button>
+              <button type="button" class="avatar-option" onclick="selectAvatar('book')" title="திருமுறை நூல்"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></button>
+              <button type="button" class="avatar-option" onclick="selectAvatar('meditation')" title="தியானம்"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><path d="M6 21c1-4 3-7 6-7s5 3 6 7"/><path d="M4 13l4-2 4 3 4-3 4 2"/></svg></button>
+              <button type="button" class="avatar-option" onclick="selectAvatar('crown')" title="மகுடம்"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14v2H5v-2z"/></svg></button>
             </div>
           </div>
 
           <div class="profile-stats-card">
-            <h4>📊 உங்கள் ஆன்மீகப் பயணக் குறிப்பு (Personal Dashboard)</h4>
+            <h4><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> உங்கள் ஆன்மீகப் பயணக் குறிப்பு (Personal Dashboard)</h4>
             <div class="stats-grid">
               <div class="stat-box">
                 <div class="stat-number" id="statDaysVisited">1</div>
@@ -1871,39 +1896,39 @@ function mountAppShell() {
         <!-- PREFERENCES TAB -->
         <div class="user-tab-content" id="tabContentPreferences">
           <div class="settings-form-group">
-            <label class="settings-label">🎨 வண்ணக் கருப்பொருள் (Theme Appearance):</label>
+            <label class="settings-label"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg> வண்ணக் கருப்பொருள் (Theme Appearance):</label>
             <div class="radio-pill-group">
               <label class="radio-pill">
                 <input type="radio" name="themeChoice" value="cosmic" onchange="changeTheme('cosmic')">
-                <span>🌌 தர்மப் பேரொளி (Teal-Violet-Blue-Green - Default)</span>
+                <span>தர்மப் பேரொளி (Teal-Violet-Blue-Green - Default)</span>
               </label>
               <label class="radio-pill">
                 <input type="radio" name="themeChoice" value="midnight" onchange="changeTheme('midnight')">
-                <span>🌊 ஆழ்கடல் நீலம் (Midnight Ocean)</span>
+                <span>ஆழ்கடல் நீலம் (Midnight Ocean)</span>
               </label>
               <label class="radio-pill">
                 <input type="radio" name="themeChoice" value="amoled" onchange="changeTheme('amoled')">
-                <span>🖤 அடர் கருப்பு (OLED Pure Black)</span>
+                <span>அடர் கருப்பு (OLED Pure Black)</span>
               </label>
             </div>
           </div>
 
           <div class="settings-form-group">
-            <label class="settings-label">🔤 தமிழ் எழுத்துரு பாணி (Tamil Font Style):</label>
+            <label class="settings-label"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L3 12.5V21h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg> தமிழ் எழுத்துரு பாணி (Tamil Font Style):</label>
             <div class="radio-pill-group">
               <label class="radio-pill">
                 <input type="radio" name="fontChoice" value="mukta" onchange="changeFontStyle('mukta')">
-                <span>📜 முக்த மலர் (மரபுச் செம்மொழி - Mukta Malar)</span>
+                <span>முக்த மலர் (மரபுச் செம்மொழி - Mukta Malar)</span>
               </label>
               <label class="radio-pill">
                 <input type="radio" name="fontChoice" value="noto" onchange="changeFontStyle('noto')">
-                <span>🔤 நோட்டோ சான்ஸ் (நவீனத் தெளிவு - Noto Sans Tamil)</span>
+                <span>நோட்டோ சான்ஸ் (நவீனத் தெளிவு - Noto Sans Tamil)</span>
               </label>
             </div>
           </div>
 
           <div class="settings-form-group">
-            <label class="settings-label">🔍 தளத்தின் பொது எழுத்தளவு (Base Font Scaling):</label>
+            <label class="settings-label"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> தளத்தின் பொது எழுத்தளவு (Base Font Scaling):</label>
             <div class="font-size-slider-row">
               <button type="button" class="btn-secondary" onclick="adjustFontSize(-0.06)">A⁻ சிறிதாக்கு</button>
               <span id="sliderFontLabel" class="slider-font-label">100% (இயல்பு)</span>
@@ -1912,7 +1937,7 @@ function mountAppShell() {
           </div>
 
           <div class="settings-form-group">
-            <label class="settings-label">🎬 காணொளி &amp; ஒலி விருப்பங்கள் (Media Playback):</label>
+            <label class="settings-label"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg> காணொளி &amp; ஒலி விருப்பங்கள் (Media Playback):</label>
             <div class="toggle-option-row">
               <span>தானியங்கி இயக்கம் (Autoplay Video on Open)</span>
               <input type="checkbox" id="prefAutoplay" class="toggle-checkbox" onchange="savePreferences()">
@@ -1924,7 +1949,7 @@ function mountAppShell() {
           </div>
 
           <div class="settings-form-group">
-            <label class="settings-label">🔔 நற்பண்பு வழிகாட்டல் (Virtue Prompt):</label>
+            <label class="settings-label"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg> நற்பண்பு வழிகாட்டல் (Virtue Prompt):</label>
             <div class="toggle-option-row">
               <span>தினம் ஒரு ஆத்திசூடி / குறள் நற்பண்பு நினைவூட்டல்</span>
               <input type="checkbox" id="prefDailyVirtue" class="toggle-checkbox" onchange="savePreferences()">
@@ -1933,13 +1958,13 @@ function mountAppShell() {
 
           <div class="settings-actions-row">
             <a href="help.html" class="btn-secondary" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-              ❓ உதவி மையம்
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> உதவி மையம்
             </a>
             <button type="button" class="btn-secondary" onclick="resetUserSettings()">
-              🔄 மீட்டமை (Reset)
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg> மீட்டமை (Reset)
             </button>
             <button type="button" class="btn-primary" onclick="closeUserSettingsModal()">
-              ✓ சேமித்து மூடுக (Save &amp; Close)
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> சேமித்து மூடுக (Save &amp; Close)
             </button>
           </div>
         </div>
@@ -1991,10 +2016,14 @@ function ensurePageBreadcrumb() {
   const bc = document.createElement('div');
   bc.className = 'page-breadcrumb';
   bc.innerHTML = `
-    <a href="index.html">🏠 முகப்பு</a>
-    <span class="bc-sep">›</span>
+    <button type="button" class="breadcrumb-back-btn" onclick="if(window.history.length > 1){ window.history.back(); } else { window.location.href='${rootLink}'; }" title="பின்னே செல்ல (Go Back)">
+      <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      <span>பின்னே</span>
+    </button>
+    <a href="index.html">${GKD_ICONS.home} முகப்பு</a>
+    <span class="bc-sep">${GKD_ICONS.chevronRight}</span>
     <a href="${rootLink}">${ctx.root}</a>
-    <span class="bc-sep">›</span>
+    <span class="bc-sep">${GKD_ICONS.chevronRight}</span>
     <span class="bc-current">${ctx.title}</span>
   `;
   main.prepend(bc);
@@ -2015,11 +2044,13 @@ function highlightActiveSidebarGroup() {
       group.classList.add('active', 'open');
       matchingLink.classList.add('active');
       const ind = group.querySelector('.strip-sub-indicator');
-      if (ind) ind.innerText = '▴';
+      // Handled via CSS transform rotate
+      // ind.innerText = '▴';
     } else if (filename.startsWith('tharam-') && group.getAttribute('data-group') === 'kalvi') {
       group.classList.add('active', 'open');
       const ind = group.querySelector('.strip-sub-indicator');
-      if (ind) ind.innerText = '▴';
+      // Handled via CSS transform rotate
+      // ind.innerText = '▴';
       const gradePill = group.querySelector(`a[href="${filename}"]`);
       if (gradePill) gradePill.classList.add('active');
     }
@@ -2049,13 +2080,15 @@ document.addEventListener('click', (e) => {
         if (g !== group) {
           g.classList.remove('open');
           const ind = g.querySelector('.strip-sub-indicator');
-          if (ind) ind.innerText = '▾';
+          // Handled via CSS transform rotate
+          // ind.innerText = '▾';
         }
       });
       group.classList.toggle('open', !wasOpen);
       const indicator = subToggle.querySelector('.strip-sub-indicator');
       if (indicator) {
-        indicator.innerText = !wasOpen ? '▴' : '▾';
+        // Handled via CSS transform rotate
+        // indicator.innerText = !wasOpen ? '▴' : '▾';
       }
     }
     return;
@@ -2085,7 +2118,7 @@ document.addEventListener('error', function (e) {
     var d = document.createElement('div');
     d.className = 'sheet-fallback';
     d.style.cssText = 'display:flex;align-items:center;justify-content:center;min-height:140px;color:#94a3b8;font-size:0.85rem;text-align:center;padding:12px;';
-    d.textContent = '📄 பக்கம் — Google Site இல் காண்க ↗';
+    d.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/><line x1="8" y1="7" x2="14" y2="7"/><line x1="8" y1="11" x2="12" y2="11"/></svg> பக்கம் — Google Site இல் காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>';
     thumb.appendChild(d);
     var ov = thumb.querySelector('.sheet-zoom-overlay'); if (ov) ov.style.display = 'none';
     thumb.removeAttribute('onclick');
@@ -2141,42 +2174,42 @@ function renderPatanjaliResult(score) {
   if (score <= 9) {
     ratingNum = '1.5';
     levelName = 'நிலை 1: சுபேச்சை (Subheccha) — நல்விருப்ப தொடக்க நிலை';
-    stars = '⭐️☆☆☆☆';
+    stars = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
     badgeColor = '#38bdf8';
     desc = 'நீங்கள் தர்ம நெறியின் முதற்படியில் அடியெடுத்து வைத்துள்ளீர்கள். ஆன்மீக அமைதியை நாட வேண்டும் என்ற உன்னத விருப்பம் (சுபேச்சை) மலர்ந்துள்ளது. தரம் 1 - 4 தொடக்கப் பாடங்களை வாசித்து, கோபம் தணித்தல், தாய்-தந்தை வழிபாடு மற்றும் தினசரி எளிய தியானத்தில் ஈடுபடுங்கள்.';
     legacyAdvice = 'இல்லற அடித்தளம்: குடும்பத்தில் தினசரி 10 நிமிடம் அமைதி காத்தல், ஒரு குறள் வாசித்தல்.';
   } else if (score <= 12) {
     ratingNum = '2.8';
     levelName = 'நிலை 2: விசாரணை (Vicharana) — மெய்விசாரணை சாதகர் நிலை';
-    stars = '⭐️⭐️☆☆☆';
+    stars = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
     badgeColor = '#2dd4bf';
     desc = 'சாத்திர விவேகமும் மெய்ப்பொருள் ஆய்வும் உங்களில் மலர்ந்துள்ளது. நித்திய-அநித்திய பகுத்தறிவுடன் வாழ்வியல் முடிவுகளை எடுக்கிறீர்கள். தரம் 5 - 8 பாடங்கள், திருமுறைத் தேவாரங்கள் மற்றும் பகவத் கீதை சிந்தனைகள் உங்கள் விவேகத்தை மேலும் கூர்மையாக்கும்.';
     legacyAdvice = 'இல்லற தர்மம்: குழந்தைகளுக்கு நல்லொழுக்கக் கதைகள் கற்பித்தல், எளிய ஜீவகாருண்ய தானம்.';
   } else if (score <= 15) {
     ratingNum = '4.2';
     levelName = 'நிலை 3: தனுமானசி (Tanumanasa) — நுண்ணிய மன அடக்கம் & இல்லற ஒழுக்கம்';
-    stars = '⭐️⭐️⭐️☆☆';
+    stars = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
     badgeColor = '#c084fc';
     desc = 'புலனடக்கமும், கோப மேலாண்மையும் கைகூடியுள்ளது. மனம் சிதறாமல் தர்மத்தில் ஒருமுகப்பட்டுள்ளது. இல்லறத்தில் பஞ்ச மகா யக்ஞங்களைத் தவறாது கடைப்பிடித்து, சினமின்மை என்ற மாபெரும் தவத்தை உங்கள் இல்லத்தில் நிலைநிறுத்துங்கள்.';
     legacyAdvice = 'இல்லற தர்மம்: தினசரி பஞ்ச மகா யக்ஞ டிராக்கரை 30 நாட்கள் தொடர்ச்சியாக பூர்த்தி செய்தல்.';
   } else if (score <= 17) {
     ratingNum = '5.4';
     levelName = 'நிலை 4: சத்வாபத்தி (Sattvapatti) — தூய சத்துவ நிலை & பிரம்ம பாவனை';
-    stars = '⭐️⭐️⭐️⭐️☆';
+    stars = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
     badgeColor = '#facc15';
     desc = 'அகத்தூய்மையும், விருப்பு-வெறுப்பற்ற சமநிலையும் ஆழமாக நிலவுகிறது. உலக சவால்கள் உங்கள் நிம்மதியைக் குலைப்பதில்லை. பதி, பசு, பாச மெய்யறிவை உணர்ந்து, உங்கள் குடும்பத்தை ஆன்மீகத் திருத்தலமாக வழிநடத்தும் சான்றோனாக மிளிர்கிறீர்கள்.';
     legacyAdvice = 'இல்லற தலைமை: குடும்ப அறநெறி சாசனம் (Family Charter) உருவாக்கி தலைமுறை நெறியாக்குதல்.';
   } else if (score <= 19) {
     ratingNum = '6.3';
     levelName = 'நிலை 5: அசம்சக்தி (Asamsakti) — பற்றற்ற நிஷ்காம கர்ம யோகம்';
-    stars = '⭐️⭐️⭐️⭐️⭐️';
+    stars = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
     badgeColor = '#fb923c';
     desc = 'தாமரை இலைத் தண்ணீர் போல குடும்பப் பொறுப்புகளை முழுமையான அன்போடும் கடமையுணர்ச்சியோடும் நிறைவேற்றுகிறீர்கள்; அதே சமயம் எவ்வித சுயநலப் பற்றுமின்றி ஈசன் செயல் என சரணடைகிறீர்கள். மரண பயமற்ற ஜீவன் முக்திப் பாதைக்கு மிக அருகில் உள்ளீர்கள்.';
     legacyAdvice = 'உன்னத மரபு (Legacy): சமுதாய அறப்பணிகள், வித்யா தானம், இளைஞர்களுக்கு தர்ம வழிகாட்டல்.';
   } else {
     ratingNum = '7.0';
     levelName = 'நிலை 6 & 7: பதார்த்த பாவனை & துரியகா (Turiya) — ஜீவன் முக்தி & உன்னத சால்பு';
-    stars = '👑 ⭐️⭐️⭐️⭐️⭐️ 👑';
+    stars = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20v2H2z"/><path d="M3 18l2-11 5 5 4-7 4 7 5-5 2 11H3z"/></svg> <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20v2H2z"/><path d="M3 18l2-11 5 5 4-7 4 7 5-5 2 11H3z"/></svg>';
     badgeColor = '#e11d48';
     desc = '‘வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உறையும் தெய்வத்துள் வைக்கப் படும்’ (குறள் 50). குடும்பத்தை அறவழியில் உயர்த்தி, தலைமுறைகள் போற்றும் அழியாத தர்ம மரபை (Enduring Legacy) நிறுவிய நிறைவு நிலை. பிறவிப் பெருங்கடலை நீந்தி அதிவேக முக்தியை அடைந்துவிட்டீர்கள்!';
     legacyAdvice = 'மரபுச் சின்னம்: முழு சமுதாயத்திற்கும் தெய்விக சான்றாண்மையின் நேரடி கலங்கரை விளக்கம்.';
@@ -2188,7 +2221,7 @@ function renderPatanjaliResult(score) {
     descEl.innerHTML = `
       <div style="margin-bottom:12px;">${desc}</div>
       <div style="background:rgba(255,255,255,0.06); border-left:3px solid ${badgeColor}; padding:10px 14px; border-radius:6px; font-size:0.88rem; color:#f1f5f9; text-align:left;">
-        <strong>🌿 இல்லற &amp; மரபு வழிகாட்டல் (Legacy Action):</strong> ${legacyAdvice}
+        <strong><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg> இல்லற &amp; மரபு வழிகாட்டல் (Legacy Action):</strong> ${legacyAdvice}
       </div>
     `;
   }
@@ -2197,10 +2230,10 @@ function renderPatanjaliResult(score) {
     actionEl.innerHTML = `
       <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:14px;">
         <button type="button" onclick="window.print()" class="sheet-btn" style="background:linear-gradient(135deg,#059669,#0d9488); color:#ffffff; font-weight:700; padding:8px 18px; border-radius:10px; cursor:pointer;">
-          🖨️ மதிப்பீட்டுச் சான்றிதழை அச்சிடுக
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg> மதிப்பீட்டுச் சான்றிதழை அச்சிடுக
         </button>
         <a href="kalvi.html#grihasthaTracker" class="sheet-btn" style="background:linear-gradient(135deg,#d4af37,#996515); color:#000000; font-weight:700; padding:8px 18px; border-radius:10px; text-decoration:none;">
-          ✅ பஞ்ச மகா யக்ஞ சாதனா தொடங்குக ↗
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> பஞ்ச மகா யக்ஞ சாதனா தொடங்குக <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </a>
       </div>
     `;
@@ -2308,7 +2341,7 @@ function playYamaChime(yamaIndex) {
 
   // Show a gentle visual toast if possible
   const yamaNames = ['உஷா காலம் (பிரம்ம முகூர்த்தம்)', 'வித்யா யாமம் (சுவடிப் பாடம்)', 'சேவா யாமம் (கோ சேவை)', 'சந்தியா யாமம் (தீபாராதனை)'];
-  console.log('🪔 ஆசிரம யாம நாதம் ஒலித்தது:', yamaNames[yamaIndex] || 'ஆசிரம மணி');
+  console.log('ஆசிரம யாம நாதம் ஒலித்தது:', yamaNames[yamaIndex] || 'ஆசிரம மணி');
 }
 
 /**
@@ -2329,7 +2362,7 @@ function toggleAshramOmDrone() {
         _isOmPlaying = false;
         if (btn) {
           btn.classList.remove('active');
-          btn.innerHTML = '🪔 <span>ஓம் நாதம் கேட்க</span>';
+          btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-.8 2-1.5 3.5-1.5 5a1.5 1.5 0 0 0 3 0c0-1.5-.7-3-1.5-5z" fill="currentColor"/><path d="M5 13c0 4 3 6 7 6s7-2 7-6H5z"/><path d="M10 19v2h4v-2"/></svg> <span>ஓம் நாதம் கேட்க</span>';
         }
       }, 1000);
     }
@@ -2360,7 +2393,7 @@ function toggleAshramOmDrone() {
 
     if (btn) {
       btn.classList.add('active');
-      btn.innerHTML = '🔕 <span>ஓம் நாதம் நிறுத்துக</span>';
+      btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg> <span>ஓம் நாதம் நிறுத்துக</span>';
     }
     return true;
   }
@@ -2380,7 +2413,7 @@ function togglePalmLeafMode() {
   const btn = document.getElementById('palmLeafToggleBtn');
   if (btn) {
     btn.classList.toggle('active', isEnabled);
-    btn.innerHTML = isEnabled ? '📜 <span>இயல்பு வடிவம் (Modern)</span>' : '📜 <span>ஓலைச்சுவடி வடிவம் (Palm-Leaf)</span>';
+    btn.innerHTML = isEnabled ? (GKD_ICONS.scroll + ' <span>இயல்பு வடிவம் (Modern)</span>') : (GKD_ICONS.scroll + ' <span>ஓலைச்சுவடி வடிவம் (Palm-Leaf)</span>');
   }
 }
 
@@ -2392,7 +2425,7 @@ function restorePalmLeafMode() {
       const btn = document.getElementById('palmLeafToggleBtn');
       if (btn) {
         btn.classList.add('active');
-        btn.innerHTML = '📜 <span>இயல்பு வடிவம் (Modern)</span>';
+        btn.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/><line x1="8" y1="7" x2="14" y2="7"/><line x1="8" y1="11" x2="12" y2="11"/></svg> <span>இயல்பு வடிவம் (Modern)</span>';
       }
     }
   } catch (e) {}
@@ -2405,7 +2438,7 @@ function restorePalmLeafMode() {
 if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('sw.js').then((reg) => {
-      console.log('🏛️ ஆசிரம ஆஃப்லைன் சேவை இயங்குகிறது (PWA Service Worker registered):', reg.scope);
+      console.log('ஆசிரம ஆஃப்லைன் சேவை இயங்குகிறது (PWA Service Worker registered):', reg.scope);
     }).catch((err) => {
       console.warn('PWA Service Worker registration skipped or failed:', err);
     });
@@ -2428,7 +2461,7 @@ function speakLessonText(text, btnElement) {
     window.speechSynthesis.cancel();
     if (btnElement && btnElement.classList.contains('speaking')) {
       btnElement.classList.remove('speaking');
-      btnElement.innerHTML = '🔊 குரு உரை கேட்க';
+      btnElement.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg> குரு உரை கேட்க';
       return;
     }
   }
@@ -2449,20 +2482,20 @@ function speakLessonText(text, btnElement) {
 
   if (btnElement) {
     btnElement.classList.add('speaking');
-    btnElement.innerHTML = '⏹️ நிறுத்துக';
+    btnElement.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg> நிறுத்துக';
   }
 
   utterance.onend = function() {
     if (btnElement) {
       btnElement.classList.remove('speaking');
-      btnElement.innerHTML = '🔊 குரு உரை கேட்க';
+      btnElement.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg> குரு உரை கேட்க';
     }
   };
 
   utterance.onerror = function() {
     if (btnElement) {
       btnElement.classList.remove('speaking');
-      btnElement.innerHTML = '🔊 குரு உரை கேட்க';
+      btnElement.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg> குரு உரை கேட்க';
     }
   };
 
@@ -2581,14 +2614,14 @@ function updateLMSButtonUI(grade, chapter, isCompleted) {
       btn.style.background = 'rgba(16, 185, 129, 0.22)';
       btn.style.borderColor = '#10b981';
       btn.style.color = '#10b981';
-      if (icon) icon.textContent = '✓';
-      if (text) text.textContent = '✓ பாடம் நிறைவுற்றது (Completed)';
+      if (icon) icon.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+      if (text) text.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> பாடம் நிறைவுற்றது (Completed)';
     } else {
       btn.classList.remove('completed');
       btn.style.background = 'rgba(56, 189, 248, 0.12)';
       btn.style.borderColor = 'rgba(56, 189, 248, 0.4)';
       btn.style.color = '#38bdf8';
-      if (icon) icon.textContent = '○';
+      if (icon) icon.innerHTML = '<span class="gkd-status-circle"></span>';
       if (text) text.textContent = 'பாடம் முடிந்தது எனக் குறிக்கவும்';
     }
   }
@@ -2613,7 +2646,7 @@ function toggleChapterCompletion(grade, chapter) {
     if (newState) {
       localStorage.setItem(key, 'true');
       updateLMSButtonUI(grade, chapter, true);
-      showToast('🎉 தரம் ' + grade + ' — பாடம் ' + chapter + ' வெற்றிகரமாக நிறைவுற்றது! (+50 வேத ஞான XP)');
+      showToast('தரம் ' + grade + ' — பாடம் ' + chapter + ' வெற்றிகரமாக நிறைவுற்றது! (+50 வேத ஞான XP)');
       playTempleBell();
     } else {
       localStorage.removeItem(key);

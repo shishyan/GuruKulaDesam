@@ -31,7 +31,7 @@ const STATIC_ASSETS = [
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log('🏛️ ஆசிரமக் களஞ்சியம் சேமிக்கப்படுகிறது (Caching static assets for offline use)...');
+      console.log('[Gurukula Cache] ஆசிரமக் களஞ்சியம் சேமிக்கப்படுகிறது (Caching static assets for offline use)...');
       return cache.addAll(STATIC_ASSETS).catch((err) => {
         console.warn('Non-blocking asset cache failure:', err);
       });
