@@ -1,9 +1,27 @@
-// Guru Kula Desam - Modern Video Portal Logic
+// Guru Kula Desam - Modern Video Portal Logic with Full Lyrics & Meaning Support
 let currentFilter = 'all';
 let currentSearch = '';
 
+function enrichItem(it) {
+  if (!it) return it;
+  const lookup = (window.GURUKULA_ITEMS_BY_ID && window.GURUKULA_ITEMS_BY_ID[it.id]) || {};
+  return {
+    ...lookup,
+    ...it,
+    author: it.author || lookup.author || '',
+    source: it.source || lookup.source || '',
+    lyrics: it.lyrics || lookup.lyrics || '',
+    meaning: it.meaning || lookup.meaning || '',
+    category: it.category || lookup.category || ''
+  };
+}
+
 function initPage(itemsData) {
-  window.pageItems = itemsData;
+  if (Array.isArray(itemsData)) {
+    window.pageItems = itemsData.map(enrichItem);
+  } else {
+    window.pageItems = [];
+  }
   renderCards();
 }
 
@@ -13,10 +31,26 @@ function getFilteredItems() {
     if (currentFilter !== 'all' && it.type !== currentFilter) return false;
     if (currentSearch) {
       const q = currentSearch.toLowerCase();
-      return it.title.toLowerCase().includes(q) || it.id.includes(q);
+      const titleMatch = (it.title || '').toLowerCase().includes(q);
+      const idMatch = (it.id || '').toLowerCase().includes(q);
+      const authorMatch = (it.author || '').toLowerCase().includes(q);
+      const sourceMatch = (it.source || '').toLowerCase().includes(q);
+      const lyricsMatch = (it.lyrics || '').toLowerCase().includes(q);
+      const meaningMatch = (it.meaning || '').toLowerCase().includes(q);
+      return titleMatch || idMatch || authorMatch || sourceMatch || lyricsMatch || meaningMatch;
     }
     return true;
   });
+}
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 function renderCards() {
@@ -35,22 +69,86 @@ function renderCards() {
     return;
   }
 
-  grid.innerHTML = items.map(it => `
-    <div class="video-card" onclick="openPlayer('${it.id}', '${it.title.replace(/'/g, "\\'")}')">
-      <div class="card-thumbnail">
-        <img src="https://i.ytimg.com/vi/${it.id}/mqdefault.jpg" loading="lazy" alt="${it.title}">
+  grid.innerHTML = items.map(it => {
+    const safeTitle = escapeHtml(it.title);
+    const safeAuthor = escapeHtml(it.author);
+    const safeSource = escapeHtml(it.source);
+    const formattedLyrics = it.lyrics ? escapeHtml(it.lyrics).replace(/\n/g, '<br>') : '';
+    const safeMeaning = escapeHtml(it.meaning);
+    const hasDetails = Boolean(it.lyrics || it.meaning || it.author);
+
+    return `
+    <div class="video-card" id="card-${it.id}">
+      <div class="card-thumbnail" onclick="openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')">
+        <img src="https://i.ytimg.com/vi/${it.id}/mqdefault.jpg" loading="lazy" alt="${safeTitle}">
         <span class="card-badge ${it.type === 'film' ? 'badge-film' : 'badge-audio'}">${it.type === 'film' ? 'Film' : 'Audio'}</span>
-        <div class="card-play-btn">▶</div>
+        <div class="card-play-btn" title="காணொளியை இயக்குக">▶</div>
       </div>
       <div class="card-body">
-        <div class="card-title">${it.title}</div>
+        <div class="card-title" onclick="openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')" title="${safeTitle}">
+          ${safeTitle}
+        </div>
+
+        ${(safeAuthor || safeSource) ? `
+          <div class="card-meta-line">
+            ${safeAuthor ? `<span class="card-meta-tag">✍️ ${safeAuthor}</span>` : ''}
+            ${safeSource ? `<span class="card-meta-tag">📖 ${safeSource}</span>` : ''}
+          </div>
+        ` : ''}
+
         <div class="card-footer">
           <span class="tag">${it.type === 'film' ? '🎬 முழுப் படம் (Film)' : '🎵 இசை வெளியீடு (Audio)'}</span>
-          <span>YouTube ↗</span>
+          <a href="https://www.youtube.com/watch?v=${it.id}" target="_blank" rel="noopener noreferrer" class="card-yt-link" onclick="event.stopPropagation()">YouTube ↗</a>
         </div>
+
+        ${hasDetails ? `
+          <button type="button" class="card-lyrics-toggle-btn" onclick="toggleCardLyrics(event, '${it.id}')" aria-expanded="false">
+            <span>📜 வரிகள் &amp; பொருள் விளக்கம்</span>
+            <span class="lyrics-chevron">▾</span>
+          </button>
+
+          <div class="card-lyrics-drawer" id="drawer-${it.id}" style="display: none;">
+            ${it.lyrics ? `
+              <div class="drawer-section">
+                <div class="drawer-section-title">📜 பாடல் வரிகள் (Lyrics)</div>
+                <div class="drawer-lyrics-text">${formattedLyrics}</div>
+              </div>
+            ` : ''}
+
+            ${it.meaning ? `
+              <div class="drawer-section">
+                <div class="drawer-section-title">💡 பொருள் விளக்கம் (Meaning)</div>
+                <div class="drawer-meaning-text">${safeMeaning}</div>
+              </div>
+            ` : ''}
+
+            <button type="button" class="drawer-play-btn" onclick="openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')">
+              ▶ இந்த காணொளியை இயக்குக (Play Video)
+            </button>
+          </div>
+        ` : ''}
       </div>
     </div>
-  `).join('');
+    `;
+  }).join('');
+}
+
+function toggleCardLyrics(e, itemId) {
+  if (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+  const drawer = document.getElementById('drawer-' + itemId);
+  const card = document.getElementById('card-' + itemId);
+  const btn = card ? card.querySelector('.card-lyrics-toggle-btn') : null;
+  if (!drawer) return;
+
+  const isOpen = drawer.style.display !== 'none';
+  drawer.style.display = isOpen ? 'none' : 'block';
+  if (btn) {
+    btn.classList.toggle('open', !isOpen);
+    btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+  }
 }
 
 function setTypeFilter(type) {
@@ -71,12 +169,98 @@ function openPlayer(videoId, title) {
   const iframe = document.getElementById('modalIframe');
   const titleEl = document.getElementById('modalTitle');
 
-  if (modal && iframe) {
-    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
-    if (titleEl) titleEl.innerText = title;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
+  if (!modal || !iframe) return;
+
+  iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
+  if (titleEl) titleEl.innerText = title;
+
+  // Resolve item details
+  let item = (window.GURUKULA_ITEMS_BY_ID && window.GURUKULA_ITEMS_BY_ID[videoId]) ||
+             (window.pageItems && window.pageItems.find(x => x.id === videoId)) ||
+             { id: videoId, title: title };
+  item = enrichItem(item);
+
+  // Render modal details section below the video
+  let detailsEl = document.getElementById('modalDetails');
+  if (!detailsEl) {
+    detailsEl = document.createElement('div');
+    detailsEl.id = 'modalDetails';
+    detailsEl.className = 'modal-details';
+    const box = modal.querySelector('.player-modal-box');
+    if (box) box.appendChild(detailsEl);
   }
+
+  const safeTitle = escapeHtml(item.title || title);
+  const safeAuthor = escapeHtml(item.author || '');
+  const safeSource = escapeHtml(item.source || '');
+  const formattedLyrics = item.lyrics ? escapeHtml(item.lyrics).replace(/\n/g, '<br>') : 'இப்பாடலின் வரிகள் சேகரிக்கப்பட்டு வருகின்றன.';
+  const safeMeaning = escapeHtml(item.meaning || 'இப்பாடலின் தத்துவப் பொருள் விளக்கம் சேகரிக்கப்பட்டு வருகிறது.');
+  const rawLyrics = item.lyrics || '';
+
+  detailsEl.innerHTML = `
+    <div class="modal-meta-row">
+      <div class="modal-meta-tags">
+        <span class="modal-meta-tag badge-${item.type === 'film' ? 'film' : 'audio'}">
+          ${item.type === 'film' ? '🎬 முழுப் படம் (Cinematic Film)' : '🎵 இசை வெளியீடு (Sacred Audio)'}
+        </span>
+        ${safeAuthor ? `<span class="modal-meta-tag">✍️ ஆசிரியர்: <strong>${safeAuthor}</strong></span>` : ''}
+        ${safeSource ? `<span class="modal-meta-tag">📖 மூலம்: <strong>${safeSource}</strong></span>` : ''}
+      </div>
+
+      <div class="modal-action-buttons">
+        <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" class="modal-btn modal-btn-yt">
+          ▶ YouTube-ல் காண்க ↗
+        </a>
+        ${rawLyrics ? `
+          <button type="button" class="modal-btn modal-btn-copy" onclick="copyLyricsText(this, ${JSON.stringify(rawLyrics)})">
+            📋 வரிகளை நகலெடு
+          </button>
+        ` : ''}
+      </div>
+    </div>
+
+    <div class="modal-content-grid">
+      <div class="modal-box modal-lyrics-box">
+        <div class="modal-box-header">
+          <span class="modal-box-icon">📜</span>
+          <h4 class="modal-box-title">பாடல் வரிகள் (Sacred Lyrics)</h4>
+        </div>
+        <div class="modal-box-body lyrics-body">${formattedLyrics}</div>
+      </div>
+
+      <div class="modal-box modal-meaning-box">
+        <div class="modal-box-header">
+          <span class="modal-box-icon">💡</span>
+          <h4 class="modal-box-title">பொருள் விளக்கம் &amp; தத்துவம் (Spiritual Meaning)</h4>
+        </div>
+        <div class="modal-box-body meaning-body">${safeMeaning}</div>
+      </div>
+    </div>
+  `;
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+
+  // Scroll modal details to top
+  const modalBox = modal.querySelector('.player-modal-box');
+  if (modalBox) modalBox.scrollTop = 0;
+}
+
+function copyLyricsText(btn, text) {
+  if (!text) return;
+  navigator.clipboard.writeText(text).then(() => {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '✓ நகலெடுக்கப்பட்டது!';
+    btn.style.borderColor = 'var(--gold)';
+    btn.style.color = 'var(--gold-bright)';
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+      btn.style.borderColor = '';
+      btn.style.color = '';
+    }, 2200);
+  }).catch(err => {
+    console.error('Failed to copy lyrics:', err);
+  });
 }
 
 function closePlayer() {
@@ -120,61 +304,6 @@ function closeMobileNav() {
   }
 }
 
-function toggleDropdown(e) {
-  if (e) {
-    e.preventDefault();
-    e.stopPropagation();
-  }
-  const dropdown = document.querySelector('.nav-dropdown');
-  const toggleBtn = document.getElementById('traditionsDropdownBtn');
-  if (!dropdown) return;
-  const isOpen = dropdown.classList.toggle('open');
-  if (toggleBtn) toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-}
-
-// Close dropdown when clicking outside
-document.addEventListener('click', (e) => {
-  const dropdown = document.querySelector('.nav-dropdown');
-  if (dropdown && !dropdown.contains(e.target)) {
-    dropdown.classList.remove('open');
-    const toggleBtn = document.getElementById('traditionsDropdownBtn');
-    if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
-  }
-});
-
-// Close player and menus on ESC key
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    closePlayer();
-    closeMobileNav();
-    const dropdown = document.querySelector('.nav-dropdown');
-    if (dropdown) dropdown.classList.remove('open');
-  }
-});
-
-// Sheet Modal Handlers
-function openSheetModal(imgSrc, pageNum, pageTitle) {
-  const modal = document.getElementById('sheetModal');
-  const modalImg = document.getElementById('sheetModalImg');
-  const modalTitle = document.getElementById('sheetModalTitle');
-  if (modal && modalImg) {
-    modalImg.src = imgSrc;
-    if (modalTitle) modalTitle.innerText = `தரம் 1 — பக்கம் ${pageNum} ${pageTitle ? '• ' + pageTitle : ''}`;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-}
-
-function closeSheetModal() {
-  const modal = document.getElementById('sheetModal');
-  const modalImg = document.getElementById('sheetModalImg');
-  if (modal) {
-    modal.classList.remove('active');
-    if (modalImg) modalImg.src = '';
-    document.body.style.overflow = '';
-  }
-}
-
 // Multi-dropdown support
 function toggleDropdown(e, dropdownId) {
   if (e) {
@@ -202,3 +331,35 @@ document.addEventListener('click', (e) => {
     }
   });
 });
+
+// Close player and menus on ESC key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closePlayer();
+    closeMobileNav();
+    document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+  }
+});
+
+// Sheet Modal Handlers
+function openSheetModal(imgSrc, pageNum, pageTitle) {
+  const modal = document.getElementById('sheetModal');
+  const modalImg = document.getElementById('sheetModalImg');
+  const modalTitle = document.getElementById('sheetModalTitle');
+  if (modal && modalImg) {
+    modalImg.src = imgSrc;
+    if (modalTitle) modalTitle.innerText = `தரம் 1 — பக்கம் ${pageNum} ${pageTitle ? '• ' + pageTitle : ''}`;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeSheetModal() {
+  const modal = document.getElementById('sheetModal');
+  const modalImg = document.getElementById('sheetModalImg');
+  if (modal) {
+    modal.classList.remove('active');
+    if (modalImg) modalImg.src = '';
+    document.body.style.overflow = '';
+  }
+}
