@@ -13,3 +13,8 @@
 *.webp filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
+
+# Exclude web frontend assets from Git LFS so GitHub Pages serves them directly
+site/assets/images/* !filter !diff !merge
+assets/images/* !filter !diff !merge
+docs/assets/images/* !filter !diff !merge
