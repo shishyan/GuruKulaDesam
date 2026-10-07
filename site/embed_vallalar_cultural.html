@@ -436,7 +436,7 @@
 
   <div class="player-container" id="playerContainer">
     <div class="player-wrapper">
-      <iframe id="videoIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="videoIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
     <div class="player-meta">
       <div class="player-title" id="playerTitle">Now Playing</div>
@@ -557,7 +557,7 @@
       const iframe = document.getElementById('videoIframe');
       const titleElem = document.getElementById('playerTitle');
       
-      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1`;
+      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&playsinline=1`;
       titleElem.innerText = title;
       container.classList.add('active');
       container.scrollIntoView({ behavior: 'smooth', block: 'start' });

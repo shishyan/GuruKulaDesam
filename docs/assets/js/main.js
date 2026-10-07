@@ -179,8 +179,30 @@ function openPlayer(videoId, title) {
 
   if (!iframe) return;
 
-  iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
+  iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0&playsinline=1`;
   if (titleEl) titleEl.innerText = title;
+
+  // Render or update direct YouTube link notice (guarantees playback if embed is restricted)
+  let directNotice = document.getElementById('modalDirectYtNotice');
+  if (!directNotice) {
+    directNotice = document.createElement('div');
+    directNotice.id = 'modalDirectYtNotice';
+    directNotice.className = 'modal-direct-yt-notice';
+    const iframeWrap = document.getElementById('modalIframeWrapper') || (modal && modal.querySelector('.modal-iframe-wrapper'));
+    if (iframeWrap && iframeWrap.parentNode) {
+      iframeWrap.parentNode.insertBefore(directNotice, iframeWrap.nextSibling);
+    }
+  }
+  if (directNotice) {
+    directNotice.innerHTML = `
+      <div class="direct-notice-inner">
+        <span>💡 காணொளி அல்லது ஆடியோ இங்கு இயங்கவில்லை எனில் (If video playback is restricted):</span>
+        <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" class="direct-yt-btn">
+          ▶ YouTube-ல் நேரடியாகத் திறக்க (Watch on YouTube) ↗
+        </a>
+      </div>
+    `;
+  }
 
   // Resolve item details
   let item = (window.GURUKULA_ITEMS_BY_ID && window.GURUKULA_ITEMS_BY_ID[videoId]) ||
@@ -269,26 +291,53 @@ function toggleModalFullscreen() {
   const modalBox = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
   const btn = document.querySelector('.modal-fullscreen-btn');
   
-  if (!document.fullscreenElement && !document.webkitFullscreenElement) {
-    const target = modalBox || document.documentElement;
-    if (target.requestFullscreen) {
-      target.requestFullscreen().catch(() => {
-        if (modalBox) modalBox.classList.toggle('modal-theater-mode');
-      });
-    } else if (target.webkitRequestFullscreen) {
-      target.webkitRequestFullscreen();
-    } else {
-      if (modalBox) modalBox.classList.toggle('modal-theater-mode');
+  // 1. If currently in CSS Big / Theater mode, exit it
+  if (modalBox && modalBox.classList.contains('modal-theater-mode')) {
+    modalBox.classList.remove('modal-theater-mode');
+    if ((document.fullscreenElement || document.webkitFullscreenElement) && document.exitFullscreen) {
+      document.exitFullscreen().catch(() => {});
     }
-    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit)';
-  } else {
+    if (btn) btn.innerHTML = '⛶ பெரிய திரை (Big Mode)';
+    return;
+  }
+
+  // 2. If currently in native hardware fullscreen, exit it
+  if (document.fullscreenElement || document.webkitFullscreenElement) {
     if (document.exitFullscreen) {
       document.exitFullscreen().catch(() => {});
     } else if (document.webkitExitFullscreen) {
       document.webkitExitFullscreen();
     }
     if (modalBox) modalBox.classList.remove('modal-theater-mode');
-    if (btn) btn.innerHTML = '⛶ முழுத்திரை';
+    if (btn) btn.innerHTML = '⛶ பெரிய திரை (Big Mode)';
+    return;
+  }
+
+  // 3. Otherwise enter Big Mode: attempt hardware fullscreen, fallback gracefully to CSS theater mode
+  const target = modalBox || document.documentElement;
+  const req = target.requestFullscreen || target.webkitRequestFullscreen || target.mozRequestFullScreen || target.msRequestFullscreen;
+
+  if (req) {
+    try {
+      const p = req.call(target);
+      if (p && p.then) {
+        p.then(() => {
+          if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+        }).catch(() => {
+          // Hardware fullscreen not allowed by browser/permissions-policy: activate CSS Big Mode!
+          if (modalBox) modalBox.classList.add('modal-theater-mode');
+          if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+        });
+      } else {
+        if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+      }
+    } catch (e) {
+      if (modalBox) modalBox.classList.add('modal-theater-mode');
+      if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
+    }
+  } else {
+    if (modalBox) modalBox.classList.add('modal-theater-mode');
+    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
   }
 }
 
@@ -296,10 +345,11 @@ document.addEventListener('fullscreenchange', function() {
   const btn = document.querySelector('.modal-fullscreen-btn');
   const modalBox = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
   if (!document.fullscreenElement) {
-    if (modalBox) modalBox.classList.remove('modal-theater-mode');
-    if (btn) btn.innerHTML = '⛶ முழுத்திரை';
+    if (modalBox && !modalBox.classList.contains('modal-theater-mode')) {
+      if (btn) btn.innerHTML = '⛶ பெரிய திரை (Big Mode)';
+    }
   } else {
-    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit)';
+    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit Big Mode)';
   }
 });
 
@@ -329,7 +379,7 @@ function createPlayerModalElement() {
       <div class="modal-header">
         <div class="modal-title" id="modalTitle">Now Playing</div>
         <div class="modal-header-actions">
-          <button type="button" class="modal-fullscreen-btn" onclick="toggleModalFullscreen()" title="முழுத்திரை (Fullscreen)">⛶ முழுத்திரை</button>
+          <button type="button" class="modal-fullscreen-btn" onclick="toggleModalFullscreen()" title="பெரிய திரை (Toggle Big Mode / Fullscreen)">⛶ பெரிய திரை (Big Mode)</button>
           <button type="button" class="modal-scroll-btn" onclick="scrollToModalDetails()" title="வரிகளுக்குச் செல்க">
             📜 வரிகள் &amp; பொருள் ↓
           </button>
@@ -337,7 +387,7 @@ function createPlayerModalElement() {
         </div>
       </div>
       <div class="modal-iframe-wrapper" id="modalIframeWrapper">
-        <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
       <div class="modal-scroll-hint" onclick="scrollToModalDetails()">
         <span>▼ கீழே பாடல் வரிகள் &amp; தத்துவப் பொருள் விளக்கம் (Scroll down for Lyrics &amp; Meaning) ▼</span>
