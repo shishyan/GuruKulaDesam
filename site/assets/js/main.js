@@ -265,6 +265,44 @@ function openPlayer(videoId, title) {
   }
 }
 
+function toggleModalFullscreen() {
+  const modalBox = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
+  const btn = document.querySelector('.modal-fullscreen-btn');
+  
+  if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+    const target = modalBox || document.documentElement;
+    if (target.requestFullscreen) {
+      target.requestFullscreen().catch(() => {
+        if (modalBox) modalBox.classList.toggle('modal-theater-mode');
+      });
+    } else if (target.webkitRequestFullscreen) {
+      target.webkitRequestFullscreen();
+    } else {
+      if (modalBox) modalBox.classList.toggle('modal-theater-mode');
+    }
+    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit)';
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen().catch(() => {});
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+    if (modalBox) modalBox.classList.remove('modal-theater-mode');
+    if (btn) btn.innerHTML = '⛶ முழுத்திரை';
+  }
+}
+
+document.addEventListener('fullscreenchange', function() {
+  const btn = document.querySelector('.modal-fullscreen-btn');
+  const modalBox = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
+  if (!document.fullscreenElement) {
+    if (modalBox) modalBox.classList.remove('modal-theater-mode');
+    if (btn) btn.innerHTML = '⛶ முழுத்திரை';
+  } else {
+    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit)';
+  }
+});
+
 function scrollToModalDetails() {
   const details = document.getElementById('modalDetails');
   const box = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
@@ -291,6 +329,7 @@ function createPlayerModalElement() {
       <div class="modal-header">
         <div class="modal-title" id="modalTitle">Now Playing</div>
         <div class="modal-header-actions">
+          <button type="button" class="modal-fullscreen-btn" onclick="toggleModalFullscreen()" title="முழுத்திரை (Fullscreen)">⛶ முழுத்திரை</button>
           <button type="button" class="modal-scroll-btn" onclick="scrollToModalDetails()" title="வரிகளுக்குச் செல்க">
             📜 வரிகள் &amp; பொருள் ↓
           </button>
@@ -334,6 +373,7 @@ function copyLyricsText(btn, text) {
 }
 
 function closePlayer() {
+  if (document.fullscreenElement) { document.exitFullscreen().catch(() => {}); }
   const modal = document.getElementById('playerModal');
   const iframe = document.getElementById('modalIframe');
 
