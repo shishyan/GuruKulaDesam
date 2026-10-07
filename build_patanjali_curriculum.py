@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="ta">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>பாடத்திட்டம் — சைவ நெறி &amp; ஆன்மீகக் கல்வி | Guru Kula Desam</title>
-  <meta name="description" content="குரு குல தேசம் அதிகாரப்பூர்வ பாடத்திட்டம். சைவ நெறி, திருக்குறள் உலகப் பொதுமறை, சுத்த சன்மார்க்கம் மற்றும் இறை இசைப் பாடத்திட்ட வழிகாட்டி.">
-  <link rel="stylesheet" href="assets/css/style.css">
+# -*- coding: utf-8 -*-
+"""
+build_patanjali_curriculum.py
+Generates the comprehensive Patanjali 7-Level Formal Curriculum,
+Progression of Self-Realization Rating, Way of Life, Leading Life,
+and Leaving Legacy framework in syllabus.html, then synchronizes
+across root, site/, and docs/.
+"""
 
+import os
+import shutil
+
+def build_patanjali_html():
+    css_block = '''
   <style>
     /* Patanjali 7-Level Framework Styles */
     .pat-framework-container {
@@ -217,202 +222,9 @@
       display: none;
     }
   </style>
+'''
 
-</head>
-<body class="has-left-strip">
-
-    <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL) -->
-    <!-- LEFT STRIP BAR (PRIMARY MOBILE-STYLE MENU OVERLAY) -->
-    <!-- LEFT STRIP BAR (PRIMARY MOBILE-STYLE MENU OVERLAY) -->
-  <aside class="left-strip-bar" id="leftStripBar" aria-label="முதன்மை பட்டி">
-    <div class="strip-header">
-      <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
-        <span class="strip-emblem">ॐ</span>
-        <span class="strip-brand-text">குரு குல தேசம்</span>
-      </a>
-      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="closePrimaryMenu()" title="பட்டி மூடுக" aria-label="Close Menu">
-        <span class="strip-toggle-icon">✕</span>
-      </button>
-    </div>
-
-    <nav class="strip-nav-list" id="stripNavList">
-
-      <!-- 1. முகப்பு (Home) -->
-      <div class="strip-group" data-group="home">
-        <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
-          <span class="strip-item-icon">🏠</span>
-          <span class="strip-item-label">முகப்பு (Home)</span>
-        </a>
-      </div>
-
-      <!-- 2. வாழ்வியல் நெறி (Dharmic Way of Living & Curriculum) -->
-      <div class="strip-group" data-group="kalvi">
-        <a href="kalvi.html" class="strip-item strip-has-sub" data-tooltip="வாழ்வியல் நெறி">
-          <span class="strip-item-icon">🌿</span>
-          <span class="strip-item-label">வாழ்வியல் நெறி &amp; பாடங்கள்</span>
-          <span class="strip-sub-indicator">▾</span>
-        </a>
-        <div class="strip-sub-menu">
-          <div class="strip-sub-header">வாழ்வியல் &amp; இல்லற தர்மம்</div>
-          <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon">🏛️</span><span>வாழ்வியல் மையம் (12 நிலைகள்)</span></a>
-          <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon">🏫</span><span>இணையப் பள்ளி போர்டல்</span></a>
-          <a href="higher-studies.html" class="strip-sub-item"><span class="strip-sub-icon">🔬</span><span>வேத-நவீன உயர்கல்வி</span></a>
-          <a href="virtues.html" class="strip-sub-item"><span class="strip-sub-icon">🔤</span><span>அகர வரிசை நற்பண்புகள்</span></a>
-          <a href="syllabus.html" class="strip-sub-item"><span class="strip-sub-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>
-          <a href="classes.html" class="strip-sub-item"><span class="strip-sub-icon">⏰</span><span>வகுப்புகள் அட்டவணை</span></a>
-          <div class="strip-sub-header" style="margin-top:6px;">12 வாழ்வியல் நிலைகள் (Grades 1-12)</div>
-          <div class="strip-grades-mini-grid">
-            <a href="tharam-1.html" class="strip-grade-mini-pill">1</a>
-            <a href="tharam-2.html" class="strip-grade-mini-pill">2</a>
-            <a href="tharam-3.html" class="strip-grade-mini-pill">3</a>
-            <a href="tharam-4.html" class="strip-grade-mini-pill">4</a>
-            <a href="tharam-5.html" class="strip-grade-mini-pill">5</a>
-            <a href="tharam-6.html" class="strip-grade-mini-pill">6</a>
-            <a href="tharam-7.html" class="strip-grade-mini-pill">7</a>
-            <a href="tharam-8.html" class="strip-grade-mini-pill">8</a>
-            <a href="tharam-9.html" class="strip-grade-mini-pill">9</a>
-            <a href="tharam-10.html" class="strip-grade-mini-pill">10</a>
-            <a href="tharam-11.html" class="strip-grade-mini-pill">11</a>
-            <a href="tharam-12.html" class="strip-grade-mini-pill">12</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. சைவ நெறி & தெய்வங்கள் (Saiva Neri & Deities) -->
-      <div class="strip-group" data-group="saivam">
-        <a href="saiva-neri.html" class="strip-item strip-has-sub" data-tooltip="சைவ நெறி">
-          <span class="strip-item-icon">🕉️</span>
-          <span class="strip-item-label">சைவ நெறி &amp; தெய்வங்கள்</span>
-          <span class="strip-sub-indicator">▾</span>
-        </a>
-        <div class="strip-sub-menu">
-          <div class="strip-sub-header">சைவ நெறி &amp; தெய்வங்கள்</div>
-          <a href="saiva-neri.html" class="strip-sub-item"><span class="strip-sub-icon">🔱</span><span>சைவ சித்தாந்தம் &amp; நெறி</span></a>
-          <a href="vinayagar.html" class="strip-sub-item"><span class="strip-sub-icon">🐘</span><span>முழுமுதற் கடவுள் விநாயகர்</span></a>
-          <a href="murugan.html" class="strip-sub-item"><span class="strip-sub-icon">🪶</span><span>தமிழ் தெய்வம் முருகன்</span></a>
-          <a href="sakthi.html" class="strip-sub-item"><span class="strip-sub-icon">🌸</span><span>அம்பிகை சக்தி நெறி</span></a>
-          <a href="vaishnava.html" class="strip-sub-item"><span class="strip-sub-icon">🪷</span><span>அரங்கன் &amp; கிருஷ்ணர் வைணவம்</span></a>
-        </div>
-      </div>
-
-      <!-- 4. இறை இசை விருந்து (Devotional Music) -->
-      <div class="strip-group" data-group="isai">
-        <a href="irai-isai-virundhu.html" class="strip-item strip-has-sub" data-tooltip="இறை இசை">
-          <span class="strip-item-icon">🎵</span>
-          <span class="strip-item-label">இறை இசை விருந்து</span>
-          <span class="strip-sub-indicator">▾</span>
-        </a>
-        <div class="strip-sub-menu">
-          <div class="strip-sub-header">இறை இசை &amp; பாடல்கள்</div>
-          <a href="irai-isai-virundhu.html" class="strip-sub-item"><span class="strip-sub-icon">🎶</span><span>இறை இசை விருந்து (580)</span></a>
-          <a href="youtube.html" class="strip-sub-item"><span class="strip-sub-icon">▶️</span><span>காணொளிகள் களஞ்சியம்</span></a>
-        </div>
-      </div>
-
-      <!-- 5. அறநெறி & தத்துவம் (Dharma & Scripture) -->
-      <div class="strip-group" data-group="dharma">
-        <a href="thirukkural.html" class="strip-item strip-has-sub" data-tooltip="அறநெறி">
-          <span class="strip-item-icon">📖</span>
-          <span class="strip-item-label">அறநெறி &amp; தத்துவம்</span>
-          <span class="strip-sub-indicator">▾</span>
-        </a>
-        <div class="strip-sub-menu">
-          <div class="strip-sub-header">அறநெறி &amp; வாழ்வியல்</div>
-          <a href="thirukkural.html" class="strip-sub-item"><span class="strip-sub-icon">📜</span><span>திருக்குறள் (1330 குறள்கள்)</span></a>
-          <a href="sanmargam.html" class="strip-sub-item"><span class="strip-sub-icon">🪔</span><span>சுத்த சன்மார்க்கம் (வள்ளலார்)</span></a>
-        </div>
-      </div>
-
-      <!-- 6. குருவருள் & அறிமுகம் (Guru & About) -->
-      <div class="strip-group" data-group="about">
-        <a href="about.html" class="strip-item strip-has-sub" data-tooltip="குருவருள்">
-          <span class="strip-item-icon">🏛️</span>
-          <span class="strip-item-label">குருவருள் &amp; அறிமுகம்</span>
-          <span class="strip-sub-indicator">▾</span>
-        </a>
-        <div class="strip-sub-menu">
-          <div class="strip-sub-header">குருவருள் &amp; தகவல்</div>
-          <a href="about.html" class="strip-sub-item"><span class="strip-sub-icon">🙏</span><span>மகா பெரியவா அருளுரைகள்</span></a>
-          <a href="google-site.html" class="strip-sub-item"><span class="strip-sub-icon">🌐</span><span>கூகிள் தளம் நேரடி இணைப்பு</span></a>
-        </div>
-      </div>
-
-    </nav>
-
-    <div class="strip-footer-dock">
-      <button type="button" class="strip-dock-btn" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
-        <span class="strip-dock-icon">⚙️</span>
-        <span class="strip-dock-label">அமைப்புகள்</span>
-      </button>
-      <button type="button" class="strip-dock-btn profile-dock-btn" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
-        <span class="strip-dock-avatar" id="stripAvatarIcon">👤</span>
-        <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
-      </button>
-    </div>
-  </aside>
-
-  <div class="strip-backdrop" id="stripBackdrop" onclick="closePrimaryMenu()"></div>
-
-  <!-- CONTEXT-SENSITIVE TOP BAR (Sub-items for active section only) -->
-  <header class="context-top-bar" id="contextTopBar">
-    <div class="context-bar-container">
-      <button type="button" class="primary-hamburger-btn" onclick="togglePrimaryMenu()" title="முதன்மை பட்டி (6 பிரிவுகள்)" aria-label="முதன்மை பட்டி">
-        <span class="hb-icon">☰</span>
-        <span class="hb-emblem">ॐ</span>
-        <span class="hb-label">முதன்மை பட்டி</span>
-      </button>
-      <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Section Tabs">
-        <a href="syllabus.html" class="context-tab-pill active"><span class="context-tab-pill-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>
-        <a href="#patanjaliSyllabus" class="context-tab-pill"><span class="context-tab-pill-icon">🧘</span><span>பதஞ்சலி 7 படிநிலைகள்</span></a>
-        <a href="classes.html" class="context-tab-pill"><span class="context-tab-pill-icon">🏛️</span><span>வகுப்புகள் அட்டவணை</span></a>
-        <a href="virtues.html" class="context-tab-pill"><span class="context-tab-pill-icon">🔤</span><span>நற்பண்பு நெறிமுறை</span></a>
-        <a href="kalvi.html" class="context-tab-pill"><span class="context-tab-pill-icon">🎓</span><span>12 தரங்கள்</span></a>
-      </nav>
-      <div class="header-right-tools">
-        <div class="context-search-wrapper">
-          <span class="context-search-icon">🔍</span>
-          <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
-          <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;">✕</button>
-        </div>
-        <div class="context-tool-group">
-          <button type="button" class="context-tool-btn font-dec-btn" onclick="adjustFontSize(-0.06)" title="எழுத்தளவைக் குறைக்க (A-)">A⁻</button>
-          <span class="font-scale-indicator" id="fontScaleIndicator">100%</span>
-          <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க (A+)">A⁺</button>
-        </div>
-        <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள்">
-          <span class="theme-icon" id="themeQuickIcon">🌓</span>
-        </button>
-        <button type="button" class="context-profile-pill" onclick="openUserSettingsModal('profile')" title="சுயவிவரம் &amp; அமைப்புகள்">
-          <span class="pill-avatar" id="pillAvatarIcon">👤</span>
-          <span class="pill-name" id="pillUserName">சாதகர்</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main class="main-content">
-    <div class="hero-banner">
-      <div class="sacred-tag">📜 குரு குல தேச பாடத்திட்டப் பெருவெளி 📜</div>
-      <h1>பாடத்திட்டம் (Syllabus)</h1>
-      <h2>Comprehensive Spiritual &amp; Ethical Learning Curriculum</h2>
-      <div class="verse-quote">"எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும் கண்ணென்ப வாழும் உயிர்க்கு" — திருக்குறள் 392</div>
-      <p class="hero-desc">
-        நமது ஆதி வேத மரபு, பன்னிரு திருமுறைகள், சைவ சித்தாந்தம், திருக்குறள் வாழ்வியல் தர்மம், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் ஜீவகாருண்ய ஒழுக்கத்தை ஒருங்கிணைத்த முழுமையான பாடத்திட்டம்.
-      </p>
-    </div>
-
-    <!-- Live Google Sites Link Bar -->
-    <div class="google-site-banner">
-      <div class="gs-banner-content">
-        <h3>🌐 கூகிள் சைட்ஸ் பாடத்திட்டப் பக்கம் (Syllabus on Google Sites)</h3>
-        <p>கூகிள் தளத்திலும் இந்த பாடத்திட்டப் பக்கங்கள் நேரலையாக இணைக்கப்பட்டுள்ளன.</p>
-      </div>
-      <a href="https://sites.google.com/view/wwwgurukuladesamcom/home/syllabus/untitled-page" target="_blank" rel="noopener" class="gs-banner-btn">
-        கூகிள் தளப் பாடத்திட்டம் ↗
-      </a>
-    </div>
-
-
+    content_html = '''
     <!-- ========================================== -->
     <!-- PATANJALI 7-LEVEL FORMAL CURRICULUM & SELF-REALIZATION PROGRESSION -->
     <!-- ========================================== -->
@@ -1021,472 +833,127 @@
       </div>
 
     </section>
+'''
 
+    js_block = '''
+  <script>
+    // Patanjali Level Filter
+    function filterPatLevel(lvl) {
+      document.querySelectorAll('.pat-pill-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      if (event && event.target) event.target.classList.add('active');
 
-    <!-- Syllabus Sections -->
-    <div class="scripture-study-section">
-      <span class="source-badge">நிலை 1: தொடக்கக் கல்வி (Primary: Grades 1 - 5)</span>
-      <h2>அறநெறி &amp; பக்தி விதைத்தல் (Ethical &amp; Devotional Foundations)</h2>
-      <p>சிறுவயதிலேயே ஆன்மீகச் சிந்தனைகளையும் தூய ஒழுக்கத்தையும் மனதில் பதியவைக்கும் எளிய பாடநெறி.</p>
-      <ul style="margin-left:20px; margin-top:10px; line-height:1.8;">
-        <li>விநாயகர், சிவபெருமான், முருகன், அம்பிகை துதிப் பாடல்கள் மனனம் செய்தல்</li>
-        <li>திருக்கோயில் வழிபாட்டு முறைகள், திருநீறு அணிவதன் மகிமை, சைவச் சின்னங்கள்</li>
-        <li>அறுபத்து மூவர் நாயன்மார் கதைகள் மற்றும் பெரியபுராண நாயன்மார்களின் தியாக வாழ்வு</li>
-        <li><a href="tharam-1.html" style="color:var(--gold-bright);">தரம் 1 முதல் 60 வண்ணமயமான பாடப் படங்கள்</a> முழுமையான பயிற்சி</li>
-      </ul>
-    </div>
+      var cards = document.querySelectorAll('.pat-level-card');
+      cards.forEach(function(card) {
+        if (lvl === 'all' || card.getAttribute('data-pat-level') === lvl) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
 
-    <div class="scripture-study-section" style="margin-top:24px;">
-      <span class="source-badge">நிலை 2: இடைநிலைக் கல்வி (Middle: Grades 6 - 9)</span>
-      <h2>சைவ சித்தாந்த முப்பொருளியல் &amp; திருமுறை நெறி (Shaiva Philosophy)</h2>
-      <p>பகுத்தறிவோடு கூடிய ஆன்மீகக் கல்வியும், வேத-உபநிடதத் தத்துவங்களும் கற்பிக்கப்படும் நிலை.</p>
-      <ul style="margin-left:20px; margin-top:10px; line-height:1.8;">
-        <li>பதி, பசு, பாசம் எனும் சைவ சித்தாந்த முப்பொருள் உண்மை விளக்கம்</li>
-        <li>மும்மலங்கள் (ஆணவம், கன்மம், மாயை) இயல்பு மற்றும் அவற்றைக் கடக்கும் யோக வழி</li>
-        <li>தேவாரப் பண்கள், திருவாசகம் சிவபுராணம் மற்றும் திருக்கோளறு திருப்பதிகம் ஓதும் நெறி</li>
-        <li>சைவ ஆதீனங்கள், தமிழகத் திருத்தலங்கள், கோயில் கட்டடக் கலை மற்றும் கல்வெட்டுகள்</li>
-      </ul>
-    </div>
+    // Patanjali Self-Realization Score Calculator
+    function calculatePatanjaliScore() {
+      var total = 0;
+      for (var i = 1; i <= 7; i++) {
+        var radios = document.getElementsByName('pq' + i);
+        for (var j = 0; j < radios.length; j++) {
+          if (radios[j].checked) {
+            total += parseInt(radios[j].value, 10);
+            break;
+          }
+        }
+      }
 
-    <div class="scripture-study-section" style="margin-top:24px;">
-      <span class="source-badge">நிலை 3: உயர்நிலைக் கல்வி (High &amp; Advanced: Grades 10 - 12)</span>
-      <h2>மெய்கண்ட சாத்திரங்கள் &amp; ஆன்ம முக்தி (Advanced Siddhanta &amp; Moksha)</h2>
-      <p>பொதுத்தேர்வு (O/L &amp; A/L) வழிகாட்டுதலும், சனாதன-சைவ-சன்மார்க்க மெய்ஞ்ஞானமும்.</p>
-      <ul style="margin-left:20px; margin-top:10px; line-height:1.8;">
-        <li>சிவஞானபோதம், சிவஞான சித்தியார், திருவருட்பயன் உள்ளிட்ட 14 மெய்கண்ட சாத்திரங்கள்</li>
-        <li>காஞ்சி மகா பெரியவா அருளிய 'தெய்வத்தின் குரல்' சனாதன தர்ம ஒருமைப்பாடு</li>
-        <li>திருவள்ளுவர் அருளிய 133 அதிகாரங்களின் உலக தர்ம அறநெறிகள் (185 இசைத் திரைப்படங்கள்)</li>
-        <li>வள்ளலார் சுத்த சன்மார்க்கம்: ஜீவகாருண்யம், அருட்பெருஞ்சோதி அகவல், மரணமிலாப் பெருவாழ்வு</li>
-      </ul>
-    </div>
+      // Min 7 (all 1), Max 21 (all 3) -> scale to 1.0 to 7.0
+      var rawLevel = 1.0 + ((total - 7) / 14.0) * 6.0;
+      var level = Math.round(rawLevel * 10) / 10;
 
-    <div style="text-align:center; margin: 40px 0;">
-      <a href="kalvi.html" class="gs-banner-btn" style="padding:14px 28px; font-size:1.05rem;">
-        12 தரங்களின் பாடங்களைப் பார்வையிட செல்க (Explore All 12 Grades) →
-      </a>
-    </div>
-  </main>
+      var resBox = document.getElementById('patScoreResultBox');
+      var nameEl = document.getElementById('patResultLevelName');
+      var starsEl = document.getElementById('patResultStars');
+      var descEl = document.getElementById('patResultDesc');
 
-  
-    <!-- Complete Master Alphabets to Virtue Hub -->
-    <section class="scripture-study-section" id="virtue-mapping" style="margin-top: 40px; margin-bottom: 40px; border: 1px solid var(--border-gold-hover); background: rgba(14, 17, 24, 0.95); padding: 32px 28px; border-radius: 18px; box-shadow: 0 15px 40px rgba(0,0,0,0.6);">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
-        <span class="source-badge" style="background: var(--gold-gradient); color: #000; font-weight: 800; font-size: 0.85rem;">
-          ✨ அகர வரிசை நற்பண்பு நெறிமுறைமை (Alphabets to Virtue Progression) ✨
-        </span>
-        <span style="color: var(--gold-soft); font-size: 0.85rem; font-weight: 600;">
-          12 வகுப்புகள் • 3 முதிர்ச்சி நிலைகள் • 30+ நற்பண்புகள்
-        </span>
-      </div>
+      var name = "";
+      var stars = "";
+      var desc = "";
 
-      <h2 style="color: var(--gold-bright); font-size: 1.6rem; margin-bottom: 10px;">
-        தமிழ் எழுத்து முதல் தர்ம முழுமை வரை — படிப்படியான நற்பண்பு வளர்ச்சி
-      </h2>
-      <p style="color: var(--text-muted); font-size: 0.96rem; line-height: 1.7; max-width: 900px; margin-bottom: 24px;">
-        ஆத்திசூடி, கொன்றை வேந்தன், திருக்குறள் மற்றும் பன்னிரு திருமுறைகளின் வழியில், தமிழ் எழுத்துக்களோடு மாணவர்களின் நற்பண்புகளையும் ஒழுக்கத்தையும் படிப்படியாகக் கற்பித்து, பின்பற்றி, சோதனைகளிலும் நிலைநிறுத்தும் முழுமையான ஆன்மீகப் பாடத்திட்ட வரைபடம்.
-      </p>
+      if (level < 2.0) {
+        name = "படிநிலை 1: சுபேச்சை (Śubhecchā) — Level " + level.toFixed(1) + " / 7.0";
+        stars = "⭐️";
+        desc = "நீங்கள் வாழ்வின் உண்மையான அர்த்தத்தை நாடத் தொடங்கியுள்ளீர்கள். ஆத்திசூடி, திருக்குறள் பாயிரவியல் மற்றும் தினசரி எளிய வழிபாட்டைத் தொடங்குங்கள். உங்கள் நற்குடும்பத்தின் தொடக்கப் புள்ளி இதுவே!";
+      } else if (level < 3.0) {
+        name = "படிநிலை 2: விசாரணை (Vicāraṇā) — Level " + level.toFixed(1) + " / 7.0";
+        stars = "⭐️⭐️";
+        desc = "சாத்திரங்களை பகுத்தறிவோடு கற்றுணரும் பக்குவம் உங்களிடம் மலர்ந்துள்ளது. தத்வ போதம், திருக்குறள் இல்லறவியல் மற்றும் பதி-பசு-பாச உண்மைகளை ஆழமாகப் படியுங்கள்.";
+      } else if (level < 4.0) {
+        name = "படிநிலை 3: தனுமானசி (Tanumānasī) — Level " + level.toFixed(1) + " / 7.0";
+        stars = "⭐️⭐️⭐️";
+        desc = "மன அடக்கமும் உணர்ச்சிப் பக்குவமும் உங்களிடம் வளரத் தொடங்கியுள்ளது. கோபத்தை அடியோடு நீக்குதல், சகிப்புத்தன்மை மற்றும் பகவத் கீதை கர்ம யோகத்தை அன்றாட வாழ்வில் கடைப்பிடியுங்கள்.";
+      } else if (level < 5.0) {
+        name = "படிநிலை 4: சத்துவாபத்தி (Sattvāpatti) — Level " + level.toFixed(1) + " / 7.0";
+        stars = "⭐️⭐️⭐️⭐️";
+        desc = "உங்கள் உள்ளத்தில் சத்துவக் குணம் நிலைபெற்றுள்ளது. பஞ்ச மகா யக்ஞங்களை தவறாது ஆற்றுங்கள். குடும்பத்தில் சான்றாண்மையை நிலைநிறுத்தி, நன்மக்களை உருவாக்கும் தலைமைத்துவத்தை முழுமையாகச் செயல்படுத்துங்கள்.";
+      } else if (level < 6.0) {
+        name = "படிநிலை 5: அசம்சக்தி (Asaṁśakti) — Level " + level.toFixed(1) + " / 7.0";
+        stars = "⭐️⭐️⭐️⭐️⭐️";
+        desc = "இல்லறக் கடமைகளைச் செய்தாலும் உள்ளத்தில் தாமரை இலைத் தண்ணீர் போன்ற உன்னதப் பற்றின்மையை எய்தியுள்ளீர்கள். 63 நாயன்மார்களின் வரலாற்று வழியில் நின்று தியாக வாழ்வை முன்னெடுத்துச் செல்லுங்கள்.";
+      } else if (level < 6.8) {
+        name = "படிநிலை 6: பதார்த்த பாவனை (Padārtha Bhāvanā) — Level " + level.toFixed(1) + " / 7.0";
+        stars = "⭐️⭐️⭐️⭐️⭐️⭐️";
+        desc = "எங்கும் பரம்பொருளை மட்டுமே காணும் பிரபஞ்சப் பார்வை உங்களிடம் மிளிர்கிறது. சமூகத்திற்கு உதவும் கல்வி மற்றும் தர்ம ஸ்தாபனங்களை நிறுவி, தலைமுறை கடந்து நிற்கும் அறக்கொடையை வழங்குங்கள்.";
+      } else {
+        name = "படிநிலை 7: துரியகா (Turyagā) — Level " + level.toFixed(1) + " / 7.0 (சகஜ நிர்வாணம்)";
+        stars = "⭐️⭐️⭐️⭐️⭐️⭐️⭐️";
+        desc = "'வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உறையும் தெய்வத்துள் வைக்கப் படும்' — குடும்பத்தில் வாழ்ந்தே முக்தி பெற்ற ஜீவன்முக்தர் நிலை! உங்கள் வாழ்வும் வாக்கும் மனிதகுலத்திற்கே வழிகாட்டும் கலங்கரை விளக்கம்.";
+      }
 
-      <!-- 3 Tier Progression Architecture Cards -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-bottom: 28px;">
-        <div style="background: rgba(42, 157, 143, 0.08); border: 1px solid rgba(42, 157, 143, 0.3); border-radius: 12px; padding: 18px;">
-          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <span style="font-size: 1.3rem;">🟢</span>
-            <h4 style="color: #2a9d8f; margin: 0; font-size: 1.05rem;">நிலை 1: அறிதல் &amp; கற்றல் (To Learn)</h4>
-          </div>
-          <div style="font-size: 0.8rem; color: var(--gold-soft); margin-bottom: 8px; font-weight: 700;">தரம் 1 முதல் தரம் 4 வரை (தொடக்க நிலை)</div>
-          <p style="color: var(--text-main); font-size: 0.86rem; line-height: 1.6; margin: 0;">
-            அறம், அன்பு, ஆறுதல், இன்சொல், ஈகை, உண்மை, ஊக்கம், பெற்றோரை மதித்தல் மற்றும் ஜீவகாருண்யம் ஆகிய அடிப்படை நற்பண்புகளை அறிந்து ஆர்வத்துடன் பழகுதல்.
-          </p>
-        </div>
+      if (nameEl) nameEl.textContent = name;
+      if (starsEl) starsEl.textContent = stars;
+      if (descEl) descEl.textContent = desc;
+      if (resBox) {
+        resBox.style.display = 'block';
+        resBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+  </script>
+'''
 
-        <div style="background: rgba(233, 196, 106, 0.08); border: 1px solid rgba(233, 196, 106, 0.3); border-radius: 12px; padding: 18px;">
-          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <span style="font-size: 1.3rem;">🟡</span>
-            <h4 style="color: #e9c46a; margin: 0; font-size: 1.05rem;">நிலை 2: செய்தல் &amp; பின்பற்றுதல் (To Follow)</h4>
-          </div>
-          <div style="font-size: 0.8rem; color: var(--gold-soft); margin-bottom: 8px; font-weight: 700;">தரம் 5 முதல் தரம் 8 வரை (நடுநிலை)</div>
-          <p style="color: var(--text-main); font-size: 0.86rem; line-height: 1.6; margin: 0;">
-            செய்த நன்றியை மறவாமை, ஐம்பொறி அடக்கம், வெகுளாமை (சினமின்மை), நடுவுநிலைமை, பொறையுடைமை மற்றும் கடமை உணர்வை வாழ்க்கையில் தொடர்ச்சியாகக் கடைப்பிடித்தல்.
-          </p>
-        </div>
+    with open('syllabus.html', 'r', encoding='utf-8') as f:
+        html = f.read()
 
-        <div style="background: rgba(231, 111, 81, 0.08); border: 1px solid rgba(231, 111, 81, 0.3); border-radius: 12px; padding: 18px;">
-          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <span style="font-size: 1.3rem;">🔴</span>
-            <h4 style="color: #e76f51; margin: 0; font-size: 1.05rem;">நிலை 3: நிலைநிறுத்துதல் &amp; காத்தல் (To Maintain)</h4>
-          </div>
-          <div style="font-size: 0.8rem; color: var(--gold-soft); margin-bottom: 8px; font-weight: 700;">தரம் 9 முதல் தரம் 12 வரை (உயர்நிலை &amp; மேல்நிலை)</div>
-          <p style="color: var(--text-main); font-size: 0.86rem; line-height: 1.6; margin: 0;">
-            அழுக்காறாமை (பொறாமையின்மை), எந்தச் சூழலிலும் வாய்மை, சான்றாண்மை, உலகியல் ஆசைகளை அறுத்த அவாவறுத்தல், தர்மத்தில் உறுதியோடு நின்று சிவானந்த சரணாகதி அடைதல்.
-          </p>
-        </div>
-      </div>
+    # 1. Insert CSS before </head>
+    if '</head>' in html and 'pat-framework-container' not in html:
+        html = html.replace('</head>', css_block + '\n</head>')
 
-      <!-- Master Matrix Table -->
-      <div style="overflow-x: auto; background: rgba(0,0,0,0.3); border-radius: 12px; border: 1px solid var(--border-gold);">
-        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.88rem;">
-          <thead>
-            <tr style="background: rgba(212,175,55,0.12); border-bottom: 2px solid var(--border-gold);">
-              <th style="padding: 12px 14px; color: var(--gold-bright); font-weight: 700;">வகுப்பு / தரம்</th>
-              <th style="padding: 12px 14px; color: var(--gold-bright); font-weight: 700;">எழுத்துகள்</th>
-              <th style="padding: 12px 14px; color: var(--gold-bright); font-weight: 700;">முதிர்ச்சி நிலை</th>
-              <th style="padding: 12px 14px; color: var(--gold-bright); font-weight: 700;">நற்பண்புகள் (Virtues)</th>
-              <th style="padding: 12px 14px; color: var(--gold-bright); font-weight: 700;">மூலப் பாடல் மேற்கோள்</th>
-              <th style="padding: 12px 14px; color: var(--gold-bright); font-weight: 700; text-align: center;">விரிவுரை</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-1.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 1 (Gr 1) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            அ ஆ இ ஈ
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 1: அறிதல் (Learn)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            அறம், ஆறுதல் / சினம் தணித்தல், இன்சொல், ஈகை
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "அறஞ்செய விரும்பு"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-1.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-2.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 2 (Gr 2) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            உ ஊ எ ஏ
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 1: அறிதல் (Learn)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            உண்மை & உழைப்பு, ஊக்கம், எண்ணும் எழுத்தும், ஏற்பது இகழ்ச்சி
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "உடையது விளம்பேல்"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-2.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-3.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 3 (Gr 3) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            ஐ ஒ ஓ ஔ ஃ
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 1: அறிதல் (Learn)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            ஐயமிட்டு உண், ஒப்புரவு, ஓதுதல், ஔவியமின்மை, அஃகம் சுருக்கேல்
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "ஐயமிட்டு உண்"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-3.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-4.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 4 (Gr 4) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            க ங
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 1: தொடங்குதல் (Initiate)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            கருணை & கொல்லாமை, ஙப்போல் வளைதல்
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "கண்டொன்று சொல்லேல்"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-4.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-5.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 5 (Gr 5) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            ச ஞ
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #e9c46a22; color: #e9c46a; border: 1px solid #e9c46a55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 2: பின்பற்றுதல் (Follow)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            செய்ந்நன்றி அறிதல் & சத்துவம், ஞாயம்பட உரைத்தல் & காலமறிதல்
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "செய்யாமல் செய்த உதவிக்கு வையகமும் வானகமும் ஆற்றல் அரிது"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-5.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-6.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 6 (Gr 6) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            த
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #e9c46a22; color: #e9c46a; border: 1px solid #e9c46a55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 2: பின்பற்றுதல் (Follow)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            அடக்கமுடைமை & தவம்
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "ஒருமையுள் ஆமைபோல் ஐந்துஅடக்கல் ஆற்றின் எழுமையும் ஏமாப் புடைத்து"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-6.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-7.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 7 (Gr 7) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            ந
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #e9c46a22; color: #e9c46a; border: 1px solid #e9c46a55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 2: பின்பற்றுதல் (Follow)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            நடுவுநிலைமை & நற்பண்பு
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "சமன்செய்து சீர்தூக்கும் கோல்போல் அமைந்தொருபால் கோடாமை சான்றோர்க் கணி"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-7.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-8.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 8 (Gr 8) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            ப
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #e9c46a22; color: #e9c46a; border: 1px solid #e9c46a55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 2: உறுதிப்பாடு (Sustain)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            பொறையுடைமை
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "அகழ்வாரைத் தாங்கும் நிலம்போலத் தம்மை இகழ்வார்ப் பொறுத்தல் தலை"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-8.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-9.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 9 (Gr 9) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            ம
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #e76f5122; color: #e76f51; border: 1px solid #e76f5155; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 3: நிலைநிறுத்துதல் (Maintain)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            மனத்தூய்மை & அழுக்காறாமை
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "மனத்துக்கண் மாசிலன் ஆதல் அனைத்தறன் ஆகுல நீர பிற"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-9.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-10.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 10 (Gr 10) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            ய வ
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #e76f5122; color: #e76f51; border: 1px solid #e76f5155; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 3: நிலைநிறுத்துதல் (Maintain)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            யாதும் ஊரே — சமநோக்கு, வாய்மை — தீமையில்லாத உண்மை
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "யாதும் ஊரே யாவரும் கேளிர் தீதும் நன்றும் பிறர்தர வாரா"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-10.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-11.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 11 (Gr 11) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            ழ ள
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #e76f5122; color: #e76f51; border: 1px solid #e76f5155; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 3: நிலைநிறுத்துதல் (Maintain)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            விழுப்பம் — ஒழுக்க மேன்மை, அவாவறுத்தல் & எளிமை
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "ஒழுக்கம் விழுப்பம் தரலான் ஒழுக்கம் உயிரினும் ஓம்பப் படும்"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-11.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
-          <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
-            <a href="tharam-12.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 12 (Gr 12) ↗</a>
-          </td>
-          <td style="padding: 12px 14px; font-weight: 800; font-size: 1.15rem; color: var(--gold); letter-spacing: 2px;">
-            ற ன
-          </td>
-          <td style="padding: 12px 14px;">
-            <span style="background: #e76f5122; color: #e76f51; border: 1px solid #e76f5155; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
-              நிலை 3: ஞான முழுமை (Mastery)
-            </span>
-          </td>
-          <td style="padding: 12px 14px; color: var(--text-main); font-weight: 600;">
-            அறநெறி வழுவாமை, நன்னெறி நிறைவு — அன்பே சிவம் & பூரண சரணாகதி
-          </td>
-          <td style="padding: 12px 14px; font-family: 'Mukta Malar', serif; font-size: 0.92rem; color: var(--gold-soft); font-style: italic;">
-            "அறத்தாறு இதுவென வேண்டா சிவிகை பொறுத்தானோடு ஊர்ந்தான் இடை"
-          </td>
-          <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-12.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
-              பயிற்சி காண்க ↗
-            </a>
-          </td>
-        </tr>
-        
-          </tbody>
-        </table>
-      </div>
-    </section>
-    
+    # 2. Insert Nav Pill in context-tabs-nav
+    target_nav = '<a href="syllabus.html" class="context-tab-pill active"><span class="context-tab-pill-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>'
+    new_nav = target_nav + '\n        <a href="#patanjaliSyllabus" class="context-tab-pill"><span class="context-tab-pill-icon">🧘</span><span>பதஞ்சலி 7 படிநிலைகள்</span></a>'
+    if target_nav in html and '#patanjaliSyllabus' not in html:
+        html = html.replace(target_nav, new_nav)
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-col">
-        <h4>குரு குல தேசம் (Guru Kula Desam)</h4>
-        <p>வேதங்கள், பன்னிரு திருமுறைகள், சைவ சித்தாந்த சாத்திரங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் சுத்த சன்மார்க்க நெறிகளை உலகிற்கு பறைசாற்றும் ஆன்மீக இசை &amp; கல்விப் பெருவெளி.</p>
-        <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">அன்பே சிவம் • யாதும் ஊரே யாவரும் கேளிர் • ஏகன் அநேகன்</p>
-        <div style="margin-top: 14px; font-size: 0.84rem; color: var(--gold-soft); line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 12px; background: rgba(212, 175, 55, 0.05); padding-top: 6px; padding-bottom: 6px; border-radius: 0 8px 8px 0;">
-          📍 <strong>மைய முகவரி (Headquarters):</strong><br>
-          32, SSS Jaya Enclave, Kovaipudur,<br>
-          Coimbatore, 641042, Tamil Nadu, India.
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>வாழ்வியல் நெறி &amp; பாடங்கள்</h4>
-        <ul class="footer-links">
-          <li><a href="kalvi.html">வாழ்வியல் மையம் (Grades 1 - 12)</a></li>
-          <li><a href="tharam-1.html">தரம் 1 — பாலப் பருவ வாழ்வியல் நெறி</a></li>
-          <li><a href="tharam-2.html">தரம் 2 — சிவ சின்னங்கள் &amp; ஆலய வழிபாடு</a></li>
-          <li><a href="tharam-3.html">தரம் 3 முதல் தரம் 12 வரை</a></li>
-          <li><a href="irai-isai-virundhu.html">இறை இசை விருந்து (5 சிறப்புப் பாடல்கள்)</a></li>
-          <li><a href="syllabus.html">பாடத்திட்டம் (Comprehensive Syllabus)</a></li>
-          <li><a href="classes.html">வகுப்புகள் (Online Classes &amp; Timetable)</a></li>
-          <li><a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener">அதிகாரப்பூர்வ கூகிள் தளம் (Google Sites Mirror) ↗</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>ஆன்மீக வழிகள் &amp; இசை</h4>
-        <ul class="footer-links">
-          <li><a href="saiva-neri.html">சிவ நெறி (172 திருமுறைப் பாடல்கள்)</a></li>
-          <li><a href="thirukkural.html">திருக்குறள் (185 அதிகாரப் படங்கள் &amp; இசை)</a></li>
-          <li><a href="sanmargam.html">சன்மார்க்கம் (94 அருட்பெருஞ்சோதிப் பாடல்கள்)</a></li>
-          <li><a href="murugan.html">முருக நெறி (கந்த சஷ்டி &amp; திருப்புகழ்)</a></li>
-          <li><a href="sakthi.html">சக்தி நெறி (அபிராமி அந்தாதி &amp; போற்றிகள்)</a></li>
-          <li><a href="vinayagar.html">விநாயகர் நெறி &amp; வைணவம்</a></li>
-          <li><a href="youtube.html">YouTube இசை &amp; படக் களஞ்சியம்</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      &copy; 2026 குரு குல தேசம் (Guru Kula Desam) | gurukuladesam.com | 32, SSS Jaya Enclave, Kovaipudur, Coimbatore, Tamil Nadu, India | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.
-    </div>
-  </footer>
+    # 3. Insert Main Content before the school sections (before '<div class="scripture-study-section">')
+    target_section = '    <!-- Syllabus Sections -->\n    <div class="scripture-study-section">'
+    if target_section in html and 'id="patanjaliSyllabus"' not in html:
+        html = html.replace(target_section, content_html + '\n\n' + target_section)
 
-  <script src="assets/data/catalog.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+    # 4. Insert JS before </body>
+    if '</body>' in html and 'filterPatLevel' not in html:
+        html = html.replace('</body>', js_block + '\n</body>')
+
+    with open('syllabus.html', 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    print("Updated syllabus.html successfully!")
+
+    # 5. Synchronize across site/ and docs/
+    targets = ['site/syllabus.html', 'docs/syllabus.html']
+    for t in targets:
+        os.makedirs(os.path.dirname(t), exist_ok=True)
+        shutil.copy2('syllabus.html', t)
+        print(f"Synchronized syllabus.html -> {t}")
+
+if __name__ == '__main__':
+    build_patanjali_html()
