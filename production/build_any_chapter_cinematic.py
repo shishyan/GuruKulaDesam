@@ -155,6 +155,48 @@ CHAPTER_REGISTRY = {
         "output": RENDERS_DIR / "adhikaram_46_sitrinanjeraamai_cinematic.mp4",
         "atmosphere": "rain", # rain taking the nature of the soil it touches
     },
+    60: {
+        "title": "Ookkamudaimai (ஊக்கமுடைமை)",
+        "audio_id": "XN5ENUbmSOE",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "60-ookkamudaimai",
+        "output": RENDERS_DIR / "adhikaram_60_ookkamudaimai_cinematic.mp4",
+        "atmosphere": "rain", # tempestuous rain & lightning reflecting fiery boundless zeal
+    },
+    62: {
+        "title": "Aalvinaiyudaimai (ஆள்வினையுடைமை)",
+        "audio_id": "zj4_pEqa_cs",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "62-aalvinaiyudaimai",
+        "output": RENDERS_DIR / "adhikaram_62_aalvinaiyudaimai_cinematic.mp4",
+        "atmosphere": "drizzle", # persistent sweat and labor under refreshing rain mist
+    },
+    65: {
+        "title": "Solvanmai (சொல்வன்மை)",
+        "audio_id": "rOowxP53oWA",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "65-solvanmai",
+        "output": RENDERS_DIR / "adhikaram_65_solvanmai_cinematic.mp4",
+        "atmosphere": "flowers", # blooming jasmine speech & assembly of poetic scholars
+    },
+    66: {
+        "title": "Vinaithooymai (வினைத்தூய்மை)",
+        "audio_id": "D95woYqPoPI",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "66-vinaithooymai",
+        "output": RENDERS_DIR / "adhikaram_66_vinaithooymai_cinematic.mp4",
+        "atmosphere": "drizzle", # cleansing morning dew & moral purity
+    },
+    67: {
+        "title": "Vinaithitpam (வினைத்திட்பம்)",
+        "audio_id": "0WurYH-hkNM",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "67-vinaithitpam",
+        "output": RENDERS_DIR / "adhikaram_67_vinaithitpam_cinematic.mp4",
+        "atmosphere": "rain", # storm & iron will holding like mountain fortress
+    },
+    74: {
+        "title": "Naadu (நாடு)",
+        "audio_id": "gjo0AfKBzsU",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "74-naadu",
+        "output": RENDERS_DIR / "adhikaram_74_naadu_cinematic.mp4",
+        "atmosphere": "flowers", # celebratory blossoms over golden harvest & joyous homeland
+    },
 }
 
 CAMERA_MOVES = [

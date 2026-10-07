@@ -41,7 +41,13 @@ VIDEO_FILES = {
     52: ROOT / "renders" / "releases" / "adhikaram_52_therinthu_vinaiyaadal_cinematic.mp4",
     54: ROOT / "renders" / "releases" / "adhikaram_54_pochchaavaamai_cinematic.mp4",
     57: ROOT / "renders" / "releases" / "adhikaram_57_veruvantha_seyyaamai_cinematic.mp4",
+    60: ROOT / "renders" / "releases" / "adhikaram_60_ookkamudaimai_cinematic.mp4",
     61: ROOT / "renders" / "releases" / "adhikaram_61_madiyinmai_cinematic.mp4",
+    62: ROOT / "renders" / "releases" / "adhikaram_62_aalvinaiyudaimai_cinematic.mp4",
+    65: ROOT / "renders" / "releases" / "adhikaram_65_solvanmai_cinematic.mp4",
+    66: ROOT / "renders" / "releases" / "adhikaram_66_vinaithooymai_cinematic.mp4",
+    67: ROOT / "renders" / "releases" / "adhikaram_67_vinaithitpam_cinematic.mp4",
+    74: ROOT / "renders" / "releases" / "adhikaram_74_naadu_cinematic.mp4",
 }
 
 THUMBNAIL_FILES = {
@@ -62,7 +68,13 @@ THUMBNAIL_FILES = {
     52: ROOT / "production" / "visuals" / "thirukkural" / "52-therinthu-vinaiyaadal" / "01-n01_king_weighs_good_and_evil.jpg",
     54: ROOT / "production" / "visuals" / "thirukkural" / "54-pochchaavaamai" / "01-n01_king_neglecting_affairs.jpg",
     57: ROOT / "production" / "visuals" / "thirukkural" / "57-veruvantha-seyyaamai" / "01-n01_king_patient_hearing.jpg",
+    60: ROOT / "production" / "visuals" / "thirukkural" / "60-ookkamudaimai" / "01-n01_flame_of_determination_in_warrior_eyes.jpg",
     61: ROOT / "production" / "visuals" / "thirukkural" / "61-madiyinmai" / "01-n01_flickering_lamp_neglected_house.jpg",
+    62: ROOT / "production" / "visuals" / "thirukkural" / "62-aalvinaiyudaimai" / "01-n01_mason_carving_steps_up_mountain_cliff.jpg",
+    65: ROOT / "production" / "visuals" / "thirukkural" / "65-solvanmai" / "01-n01_orator_standing_before_grand_royal_council.jpg",
+    66: ROOT / "production" / "visuals" / "thirukkural" / "66-vinaithooymai" / "01-n01_spotless_white_lotus_in_crystal_stream.jpg",
+    67: ROOT / "production" / "visuals" / "thirukkural" / "67-vinaithitpam" / "01-n01_warrior_clenched_fist_over_iron_hilt.jpg",
+    74: ROOT / "production" / "visuals" / "thirukkural" / "74-naadu" / "01-n01_boundless_golden_paddy_fields_swaying_in_breeze.jpg",
 }
 
 def get_authenticated_service():
