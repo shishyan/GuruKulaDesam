@@ -69,20 +69,17 @@ NEW_ARTWORK_MAP = {
 }
 
 def find_zip_file():
-    candidates = [
-        ROOT / "gurukuladesam_film_artworks_a100.zip",
-        ROOT / "gurukuladesam_master_artworks.zip",
-        ROOT / "gurukuladesam_artworks.zip",
-        Path.home() / "Downloads" / "gurukuladesam_film_artworks_a100.zip",
-        Path.home() / "Downloads" / "gurukuladesam_master_artworks.zip",
-        Path.home() / "Downloads" / "gurukuladesam_artworks.zip",
-        Path.home() / "Desktop" / "gurukuladesam_film_artworks_a100.zip",
-        Path.home() / "Desktop" / "gurukuladesam_master_artworks.zip",
-        Path.home() / "Desktop" / "gurukuladesam_artworks.zip"
-    ]
-    for c in candidates:
-        if c.exists() and c.stat().st_size > 1000:
-            return c
+    search_dirs = [Path.home() / "Downloads", Path.home() / "Desktop", ROOT]
+    all_found = []
+    for d in search_dirs:
+        if d.exists():
+            for f in d.glob("*gurukula*.zip"):
+                if f.is_file() and f.stat().st_size > 10000:
+                    all_found.append(f)
+    if all_found:
+        # Sort by modification time descending (newest first)
+        all_found.sort(key=lambda x: x.stat().st_mtime, reverse=True)
+        return all_found[0]
     return None
 
 def extract_and_mirror(zip_path):
