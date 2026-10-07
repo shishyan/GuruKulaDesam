@@ -1420,28 +1420,41 @@ if (document.readyState === 'loading') {
 
 // Accordion support and Drawer auto-close on selection
 document.addEventListener('click', (e) => {
-  // If clicked on any navigation link inside the primary menu drawer, close the drawer
-  if (e.target.closest('#leftStripBar a')) {
+  // 1. If clicked on a group header that has sub-items, TOGGLE THE ACCORDION!
+  const subToggle = e.target.closest('.strip-item.strip-has-sub');
+  if (subToggle) {
+    e.preventDefault();
+    e.stopPropagation();
+    const group = subToggle.closest('.strip-group');
+    if (group) {
+      const wasOpen = group.classList.contains('open');
+      // Close other open groups for clean single-accordion behavior
+      document.querySelectorAll('.strip-group').forEach(g => {
+        if (g !== group) {
+          g.classList.remove('open');
+          const ind = g.querySelector('.strip-sub-indicator');
+          if (ind) ind.innerText = '▾';
+        }
+      });
+      group.classList.toggle('open', !wasOpen);
+      const indicator = subToggle.querySelector('.strip-sub-indicator');
+      if (indicator) {
+        indicator.innerText = !wasOpen ? '▴' : '▾';
+      }
+    }
+    return;
+  }
+
+  // 2. If clicked on an actual destination leaf link inside the drawer, close drawer
+  const leafLink = e.target.closest('#leftStripBar .strip-sub-item, #leftStripBar .strip-item:not(.strip-has-sub)');
+  if (leafLink) {
     closePrimaryMenu();
     return;
   }
 
-  // If clicked on backdrop, close drawer
+  // 3. If clicked on backdrop, close drawer
   if (e.target.id === 'stripBackdrop') {
     closePrimaryMenu();
     return;
-  }
-
-  const subToggle = e.target.closest('.strip-item.strip-has-sub');
-  if (subToggle) {
-    const strip = document.getElementById('leftStripBar');
-    if (strip && (strip.classList.contains('open') || strip.classList.contains('mobile-open') || strip.classList.contains('expanded'))) {
-      const group = subToggle.closest('.strip-group');
-      if (group) {
-        const wasOpen = group.classList.contains('open');
-        document.querySelectorAll('.strip-group').forEach(g => { if (g !== group) g.classList.remove('open'); });
-        group.classList.toggle('open', !wasOpen);
-      }
-    }
   }
 });
