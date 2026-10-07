@@ -5189,3 +5189,21 @@ body.font-mukta {
   margin: 18px 0;
 }
 
+
+/* Sacred Lesson Hero Artwork Card */
+.lesson-hero-visual-card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.lesson-hero-visual-card:hover {
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(56, 189, 248, 0.15) !important;
+}
+.lesson-hero-visual-card:hover img {
+  transform: scale(1.02);
+}
+@media (max-width: 768px) {
+  .lesson-hero-visual-card img {
+    max-height: 240px !important;
+  }
+}

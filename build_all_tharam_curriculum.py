@@ -307,18 +307,34 @@ def build_grade_coursebook(g, data):
           <article class="lesson-card" id="unit-{u['num']}" style="background: rgba(14, 18, 26, 0.95); border: 1px solid var(--border-gold); border-radius: 18px; padding: 28px; margin-bottom: 30px; box-shadow: 0 10px 35px rgba(0,0,0,0.6);">
             
             <!-- Chapter Header -->
-            <div class="lesson-card-head" style="margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+            <div class="lesson-card-head" style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08);">
               <div>
                 <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
                   <span class="wbs-code wbs-code-primary">அத்தியாயம் {u['num']} • Chapter {u['num']}</span>
-                  <span style="background:rgba(255,255,255,0.08); color:#f8fafc; font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px;">WBS {g}.{u['num']}</span>
+                  <span style="background:rgba(56,189,248,0.12); color:#38bdf8; border:1px solid rgba(56,189,248,0.3); font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px;">WBS {g}.{u['num']}</span>
                 </div>
                 <div class="lesson-main-title" style="font-size:1.6rem; color:#ffffff; font-weight:800; margin-bottom:4px;">{u['title']}</div>
-                <div class="lesson-sub-title" style="color:var(--text-muted); font-size:0.95rem;">{u['sub']}</div>
+                <div class="lesson-sub-title" style="color:#94a3b8; font-size:0.95rem;">{u['sub']}</div>
               </div>
               <div style="color:#cbd5e1; font-size:0.88rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:6px;">
                 <span class="wbs-code">GRADE {g:02d}</span>
                 <span>{data['grade_tamil']} • {data['age_group']}</span>
+              </div>
+            </div>
+
+            <!-- Sacred Lesson Hero Artwork Card -->
+            <div class="lesson-hero-visual-card" style="margin-bottom: 24px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(56,189,248,0.25); background: rgba(11, 17, 30, 0.7); box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+              <div style="position: relative; max-height: 380px; overflow: hidden;">
+                <img src="{enrichment.get('hero_image', 'assets/images/lessons/temple_architecture.jpg')}" alt="{enrichment.get('hero_caption', u['title'])}" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 380px; transition: transform 0.4s ease;" loading="lazy">
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(180deg, transparent 0%, rgba(11,17,30,0.92) 80%); padding: 20px 24px 14px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 8px;">
+                  <div>
+                    <span style="display: inline-block; background: rgba(56,189,248,0.2); color: #38bdf8; border: 1px solid rgba(56,189,248,0.4); padding: 3px 10px; border-radius: 10px; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;">🎨 கற்பித்தல் காட்சிப் படம் • Sacred Lesson Art</span>
+                    <div style="color: #f8fafc; font-size: 0.96rem; font-weight: 600; line-height: 1.4;">{enrichment.get('hero_caption', u['title'])}</div>
+                  </div>
+                  <a href="{enrichment.get('hero_image', 'assets/images/lessons/temple_architecture.jpg')}" target="_blank" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); color: #e2e8f0; font-size: 0.8rem; padding: 5px 12px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                    <span>முழு அளவு ↗</span>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -505,7 +521,146 @@ def build_grade_coursebook(g, data):
   <meta name="description" content="சைவ நெறி &amp; வேத வாழ்வியல் பாடநூல் {data['grade_tamil']}. {data['hero_desc']}">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="has-left-strip">
+
+  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL) -->
+  <aside class="left-strip-bar" id="leftStripBar" aria-label="Quick Access Sidebar">
+    <div class="strip-header">
+      <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
+        <span class="strip-emblem">ॐ</span>
+        <span class="strip-brand-text">குரு குல தேசம்</span>
+      </a>
+      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="toggleLeftStrip()" title="விரிவுபடுத்து / சுருக்கு" aria-label="Toggle Sidebar">
+        <span class="strip-toggle-icon">⇤</span>
+      </button>
+    </div>
+
+    <nav class="strip-nav-list" id="stripNavList">
+
+      <!-- 1. முகப்பு (Home) -->
+      <div class="strip-group" data-group="home">
+        <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
+          <span class="strip-item-icon">🏠</span>
+          <span class="strip-item-label">முகப்பு</span>
+        </a>
+      </div>
+
+      <!-- 2. கல்வி நெறி (Curriculum & Academy) -->
+      <div class="strip-group active" data-group="kalvi">
+        <a href="kalvi.html" class="strip-item strip-has-sub active" data-tooltip="கல்வி நெறி">
+          <span class="strip-item-icon">🎓</span>
+          <span class="strip-item-label">கல்வி நெறி</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">கல்வி &amp; இணையப் பள்ளி</div>
+          <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon">🏛️</span><span>கல்வி மையம் (12 தரங்கள்)</span></a>
+          <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon">🏫</span><span>இணையப் பள்ளி போர்டல்</span></a>
+          <a href="higher-studies.html" class="strip-sub-item"><span class="strip-sub-icon">🔬</span><span>வேத-நவீன உயர்கல்வி</span></a>
+          <a href="tharam-{g}.html" class="strip-sub-item active"><span class="strip-sub-icon">📖</span><span>தரம் {g} பாடங்கள்</span></a>
+          <a href="virtues.html" class="strip-sub-item"><span class="strip-sub-icon">🔤</span><span>அகர வரிசை நற்பண்புகள்</span></a>
+          <a href="syllabus.html" class="strip-sub-item"><span class="strip-sub-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>
+        </div>
+      </div>
+
+      <!-- 3. சைவ நெறி & தெய்வங்கள் (Saiva Neri & Deities) -->
+      <div class="strip-group" data-group="saivam">
+        <a href="saiva-neri.html" class="strip-item strip-has-sub" data-tooltip="சைவ நெறி">
+          <span class="strip-item-icon">🕉️</span>
+          <span class="strip-item-label">சைவ நெறி</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">சைவ நெறி &amp; தெய்வங்கள்</div>
+          <a href="saiva-neri.html" class="strip-sub-item"><span class="strip-sub-icon">🔱</span><span>சைவ சித்தாந்தம் &amp; நெறி</span></a>
+          <a href="vinayagar.html" class="strip-sub-item"><span class="strip-sub-icon">🐘</span><span>முழுமுதற் கடவுள் விநாயகர்</span></a>
+          <a href="murugan.html" class="strip-sub-item"><span class="strip-sub-icon">🪶</span><span>தமிழ் தெய்வம் முருகன்</span></a>
+          <a href="sakthi.html" class="strip-sub-item"><span class="strip-sub-icon">🌸</span><span>அம்பிகை சக்தி நெறி</span></a>
+          <a href="vaishnava.html" class="strip-sub-item"><span class="strip-sub-icon">🪷</span><span>அரங்கன் &amp; கிருஷ்ணர் வைணவம்</span></a>
+        </div>
+      </div>
+
+      <!-- 4. இறை இசை விருந்து (Devotional Music) -->
+      <div class="strip-group" data-group="isai">
+        <a href="irai-isai-virundhu.html" class="strip-item strip-has-sub" data-tooltip="இறை இசை">
+          <span class="strip-item-icon">🎵</span>
+          <span class="strip-item-label">இறை இசை</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">இறை இசை &amp; பாடல்கள்</div>
+          <a href="irai-isai-virundhu.html" class="strip-sub-item"><span class="strip-sub-icon">🎶</span><span>இறை இசை விருந்து (580)</span></a>
+          <a href="youtube.html" class="strip-sub-item"><span class="strip-sub-icon">▶️</span><span>காணொளிகள் களஞ்சியம்</span></a>
+        </div>
+      </div>
+
+      <!-- 5. அறநெறி & தத்துவம் (Dharma & Scripture) -->
+      <div class="strip-group" data-group="dharma">
+        <a href="thirukkural.html" class="strip-item strip-has-sub" data-tooltip="அறநெறி">
+          <span class="strip-item-icon">📖</span>
+          <span class="strip-item-label">அறநெறி</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">அறநெறி &amp; வாழ்வியல்</div>
+          <a href="thirukkural.html" class="strip-sub-item"><span class="strip-sub-icon">📜</span><span>திருக்குறள் (1330 குறள்கள்)</span></a>
+          <a href="sanmargam.html" class="strip-sub-item"><span class="strip-sub-icon">🪔</span><span>சுத்த சன்மார்க்கம் (வள்ளலார்)</span></a>
+        </div>
+      </div>
+
+      <!-- 6. குருவருள் & அறிமுகம் (Guru & About) -->
+      <div class="strip-group" data-group="about">
+        <a href="about.html" class="strip-item strip-has-sub" data-tooltip="குருவருள்">
+          <span class="strip-item-icon">🏛️</span>
+          <span class="strip-item-label">குருவருள்</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">குருவருள் &amp; தகவல்</div>
+          <a href="about.html" class="strip-sub-item"><span class="strip-sub-icon">🙏</span><span>மகா பெரியவா அருளுரைகள்</span></a>
+          <a href="google-site.html" class="strip-sub-item"><span class="strip-sub-icon">🌐</span><span>கூகிள் தளம் நேரடி இணைப்பு</span></a>
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="strip-footer-dock">
+      <button type="button" class="strip-dock-btn" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
+        <span class="strip-dock-icon">⚙️</span>
+        <span class="strip-dock-label">அமைப்புகள்</span>
+      </button>
+      <button type="button" class="strip-dock-btn profile-dock-btn" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
+        <span class="strip-dock-avatar" id="stripAvatarIcon">👤</span>
+        <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="strip-backdrop" id="stripBackdrop" onclick="closeMobileStrip()"></div>
+
+  <!-- CONTEXT-SENSITIVE TOP BAR -->
+  <header class="context-top-bar" id="contextTopBar">
+    <div class="context-bar-container">
+      <button type="button" class="context-mobile-btn" onclick="toggleLeftStrip()" title="பக்கப்பட்டி">☰</button>
+      <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Section Tabs">
+        <button type="button" class="context-tab-pill active" onclick="selectChapter(1)"><span class="context-tab-pill-icon">📖</span><span>அத்தியாயம் 1</span></button>
+        <button type="button" class="context-tab-pill" onclick="selectChapter(2)"><span class="context-tab-pill-icon">📖</span><span>அத்தியாயம் 2</span></button>
+        <button type="button" class="context-tab-pill" onclick="selectChapter(3)"><span class="context-tab-pill-icon">📖</span><span>அத்தியாயம் 3</span></button>
+        <button type="button" class="context-tab-pill" onclick="selectChapter(4)"><span class="context-tab-pill-icon">📖</span><span>அத்தியாயம் 4</span></button>
+        <button type="button" class="context-tab-pill" onclick="selectChapter(5)"><span class="context-tab-pill-icon">📖</span><span>அத்தியாயம் 5</span></button>
+        <a href="{prev_link}" class="context-tab-pill"><span class="context-tab-pill-icon">⏮️</span><span>{prev_label}</span></a>
+        <a href="{next_link}" class="context-tab-pill"><span class="context-tab-pill-icon">⏭️</span><span>{next_label}</span></a>
+        <a href="kalvi.html" class="context-tab-pill"><span class="context-tab-pill-icon">🎓</span><span>கல்வி மையம்</span></a>
+      </nav>
+      <div class="context-actions">
+        <button type="button" class="context-profile-pill" onclick="openUserSettingsModal('profile')" title="பயனர் சுயவிவரம் &amp; அமைப்புகள்">
+          <span class="context-avatar-dot"></span>
+          <span class="context-user-name">மாணவர்</span>
+          <span>⚙️</span>
+        </button>
+      </div>
+    </div>
+  </header>
 
   <!-- Site Header -->
   <header class="site-header">
@@ -637,15 +792,7 @@ def build_grade_coursebook(g, data):
     <!-- Anchor for scrolling -->
     <div id="course-content-start"></div>
 
-    <!-- Top Chapter Navigation Stepper (Tabs for Quick Access) -->
-    <div class="course-tabs-wrapper">
-      <div style="font-size:0.85rem; color:#cbd5e1; font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">
-        📌 அத்தியாயத் தேர்வு (Select Chapter to Study):
-      </div>
-      <div class="course-tabs">
-        {top_tabs_html}
-      </div>
-    </div>
+
 
     <!-- Two-Column Layout Container: Sticky Sidebar + Main Content Column -->
     <div class="course-layout-container">
