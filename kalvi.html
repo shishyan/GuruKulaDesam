@@ -6,6 +6,125 @@
   <title>வாழ்வியல் நெறி — உன்னத இல்லற தர்மம் &amp; சான்றாண்மை (Grades 1 to 12) | Guru Kula Desam</title>
   <meta name="description" content="குரு குல தேசம் வாழ்வியல் நெறி தளம். வெறும் படிப்போ போதனையோ அல்ல, அறவழியில் நின்று சான்றோனாகி உன்னத இல்லறத்தை வழிநடத்துவதே அதிவேக முக்திப் பாதை. 12 வாழ்வியல் நிலைகள்.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Grihastha Tracker & Family Charter Styles */
+    .dharma-hub-card {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(24, 34, 53, 0.94));
+      border: 1.5px solid rgba(45, 212, 191, 0.35);
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 32px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.55);
+    }
+    .dharma-hub-card:hover {
+      border-color: rgba(45, 212, 191, 0.55);
+    }
+    .yajna-checkbox-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 12px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .yajna-checkbox-card:hover {
+      background: rgba(45, 212, 191, 0.06);
+      border-color: rgba(45, 212, 191, 0.35);
+      transform: translateY(-1px);
+    }
+    .yajna-checkbox-card.completed {
+      background: rgba(45, 212, 191, 0.12);
+      border-color: rgba(45, 212, 191, 0.5);
+    }
+    .yajna-checkbox-card input[type="checkbox"] {
+      width: 22px;
+      height: 22px;
+      accent-color: #2dd4bf;
+      cursor: pointer;
+      margin-top: 3px;
+    }
+    .charter-preview-frame {
+      background: linear-gradient(135deg, #090e1a 0%, #0d1527 50%, #090e1a 100%);
+      border: 6px double #d4af37;
+      border-radius: 16px;
+      padding: 38px 32px;
+      position: relative;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.65);
+      color: #f1f5f9;
+      overflow: hidden;
+    }
+    .charter-preview-frame::before {
+      content: "ॐ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18rem;
+      color: rgba(212, 175, 55, 0.035);
+      pointer-events: none;
+      font-family: serif;
+      user-select: none;
+    }
+    .charter-corner-emblem {
+      position: absolute;
+      font-size: 1.25rem;
+      color: #d4af37;
+      opacity: 0.85;
+      user-select: none;
+    }
+    .corner-tl { top: 10px; left: 12px; }
+    .corner-tr { top: 10px; right: 12px; }
+    .corner-bl { bottom: 10px; left: 12px; }
+    .corner-br { bottom: 10px; right: 12px; }
+
+    @media print {
+      body * {
+        visibility: hidden !important;
+      }
+      #printableCharterArea, #printableCharterArea * {
+        visibility: visible !important;
+      }
+      #printableCharterArea {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 30px !important;
+        background: #ffffff !important;
+        color: #0f172a !important;
+        border: 5px double #854d0e !important;
+        box-shadow: none !important;
+        page-break-inside: avoid !important;
+      }
+      #printableCharterArea * {
+        color: #0f172a !important;
+        text-shadow: none !important;
+      }
+      #printableCharterArea .charter-title {
+        color: #854d0e !important;
+      }
+      #printableCharterArea .charter-motto-box {
+        background: #f8fafc !important;
+        border: 1px solid #cbd5e1 !important;
+        color: #0f172a !important;
+      }
+      #printableCharterArea .charter-vow-card {
+        background: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
+      }
+      #printableCharterArea .charter-verse-box {
+        background: #f1f5f9 !important;
+        border-color: #cbd5e1 !important;
+      }
+      .no-print, .left-strip-bar, .context-top-bar, .site-footer {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
 <body class="has-left-strip">
 
@@ -152,6 +271,8 @@
       <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Section Tabs">
         <button type="button" class="context-tab-pill active" onclick="scrollToSection('kalviOverview')"><span class="context-tab-pill-icon">🌿</span><span>வாழ்வியல் நெறி அறிமுகம்</span></button>
         <button type="button" class="context-tab-pill" onclick="scrollToSection('dharmaPrinciples')"><span class="context-tab-pill-icon">🏡</span><span>உன்னத இல்லற தர்மம்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToSection('grihasthaTracker')"><span class="context-tab-pill-icon">✅</span><span>பஞ்ச மகா யக்ஞ டிராக்கர்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToSection('familyCharter')"><span class="context-tab-pill-icon">📜</span><span>குடும்ப சாசனம்</span></button>
         <button type="button" class="context-tab-pill" onclick="scrollToSection('virtue-mapping')"><span class="context-tab-pill-icon">🔤</span><span>4 வாழ்வியல் பருவங்கள்</span></button>
         <button type="button" class="context-tab-pill" onclick="scrollToSection('gradesPortalSection')"><span class="context-tab-pill-icon">📚</span><span>12 வாழ்வியல் நிலைகள்</span></button>
         <a href="school.html" class="context-tab-pill"><span class="context-tab-pill-icon">🏫</span><span>இணையப் பள்ளி</span></a>
@@ -221,6 +342,344 @@
           <strong style="color: #fbbf24; font-size: 0.9rem;">3. சரியான வரிசை (Right Order):</strong>
           <div style="color: #94a3b8; font-size: 0.84rem; margin-top: 3px;">அறம் அறிதல் ➔ பின்பற்றுதல் ➔ சான்றாண்மை காத்தல் ➔ உன்னத இல்லற வழி நிர்வாணம் எய்துதல்.</div>
         </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- 1. DAILY GRIHASTHA DHARMA & PANCHA MAHA YAGNA HABIT TRACKER    -->
+    <!-- ============================================================== -->
+    <div id="grihasthaTracker" class="dharma-hub-card">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+        <div>
+          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(45,212,191,0.15); color: #2dd4bf; border: 1px solid rgba(45,212,191,0.35); padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">
+            🏡 இல்லற தர்ம சாதனா மையம் • DAILY GRIHASTHA HABIT TRACKER
+          </div>
+          <h2 style="color: #ffffff; font-size: 1.5rem; font-weight: 800; margin: 8px 0 6px 0;">
+            தினசரி பஞ்ச மகா யக்ஞம் &amp; சான்றாண்மை நற்பண்பு டிராக்கர்
+          </h2>
+          <p style="color: #cbd5e1; font-size: 0.94rem; margin: 0; max-width: 820px; line-height: 1.6;">
+            இல்லறம் என்பது குடும்ப வாழ்வு மட்டுமல்ல; நாள்தோறும் இறைவனுக்கும், முன்னோருக்கும், சக மனிதருக்கும், அனைத்து உயிர்களுக்கும் ஆற்ற வேண்டிய 5 உன்னத வேள்விகள் (யக்ஞங்கள்). இவற்றைக் கடைப்பிடிப்பதே அதிவேக முக்தி தரும் உன்னத இல்லற சாதனை!
+          </p>
+        </div>
+
+        <!-- Metric Counter Badges -->
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+          <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(45,212,191,0.4); border-radius: 12px; padding: 10px 18px; text-align: center; min-width: 110px;">
+            <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">இன்றைய தர்ம நிறைவு</div>
+            <div id="dharmaScoreDisplay" style="font-size: 1.6rem; font-weight: 800; color: #2dd4bf;">0%</div>
+          </div>
+          <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(251,191,36,0.4); border-radius: 12px; padding: 10px 18px; text-align: center; min-width: 110px;">
+            <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">தொடர் சாதனை</div>
+            <div id="dharmaStreakDisplay" style="font-size: 1.6rem; font-weight: 800; color: #fbbf24;">🔥 1 நாள்</div>
+          </div>
+          <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(192,132,252,0.4); border-radius: 12px; padding: 10px 18px; text-align: center; min-width: 140px;">
+            <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">இல்லறப் பட்டயம்</div>
+            <div id="dharmaBadgeDisplay" style="font-size: 0.95rem; font-weight: 700; color: #c084fc; margin-top: 4px;">தர்ம சாதகர்</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Progress Bar -->
+      <div style="background: rgba(255,255,255,0.08); border-radius: 8px; height: 10px; width: 100%; overflow: hidden; margin-bottom: 24px;">
+        <div id="dharmaProgressBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #2dd4bf, #38bdf8, #a855f7); transition: width 0.4s ease; border-radius: 8px;"></div>
+      </div>
+
+      <!-- Grid: 5 Yajnas on Left, 2 Grihastha Virtues on Right -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+        <!-- Left: Pancha Maha Yajna Checklist -->
+        <div>
+          <h3 style="color: #38bdf8; font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <span>🪔</span><span>தினசரி 5 மகா யக்ஞங்கள் (5 Sacred Domestic Offerings)</span>
+          </h3>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            
+            <label class="yajna-checkbox-card" id="yajnaCard_brahma">
+              <input type="checkbox" id="yajna_brahma" onchange="updateDharmaTracker()">
+              <div>
+                <strong style="color: #f8fafc; font-size: 0.95rem; display: block;">1. பிரம்ம யக்ஞம் (Brahma / Rishi Yajna)</strong>
+                <span style="color: #cbd5e1; font-size: 0.84rem; line-height: 1.45; display: block; margin-top: 2px;">
+                  தினசரி திருக்குறள், தேவாரம், திருவாசகம் அல்லது ஆன்மீக மெய்ஞ்ஞான நூல்களை ஓதுதல், ஆழ்ந்து சிந்தித்தல்.
+                </span>
+              </div>
+            </label>
+
+            <label class="yajna-checkbox-card" id="yajnaCard_deva">
+              <input type="checkbox" id="yajna_deva" onchange="updateDharmaTracker()">
+              <div>
+                <strong style="color: #f8fafc; font-size: 0.95rem; display: block;">2. தேவ யக்ஞம் (Deva Yajna)</strong>
+                <span style="color: #cbd5e1; font-size: 0.84rem; line-height: 1.45; display: block; margin-top: 2px;">
+                  இல்லத்தில் காலை/மாலை மங்கள தீபமேற்றி இறைவனை வணங்குதல், பஞ்சபூத இயற்கைக்கும் சூரியனுக்கும் உளமார்ந்த நன்றி செலுத்துதல்.
+                </span>
+              </div>
+            </label>
+
+            <label class="yajna-checkbox-card" id="yajnaCard_pitru">
+              <input type="checkbox" id="yajna_pitru" onchange="updateDharmaTracker()">
+              <div>
+                <strong style="color: #f8fafc; font-size: 0.95rem; display: block;">3. பித்ரு யக்ஞம் (Pitru Yajna)</strong>
+                <span style="color: #cbd5e1; font-size: 0.84rem; line-height: 1.45; display: block; margin-top: 2px;">
+                  பெற்றோருக்கும் இல்லத்துப் பெரியோர்களுக்கும் பணிவிடை செய்து ஆசி பெறுதல்; முன்னோர்களை நன்றியோடு போற்றுதல்.
+                </span>
+              </div>
+            </label>
+
+            <label class="yajna-checkbox-card" id="yajnaCard_manushya">
+              <input type="checkbox" id="yajna_manushya" onchange="updateDharmaTracker()">
+              <div>
+                <strong style="color: #f8fafc; font-size: 0.95rem; display: block;">4. மனுஷ்ய யக்ஞம் (Manushya / Atithi Yajna)</strong>
+                <span style="color: #cbd5e1; font-size: 0.84rem; line-height: 1.45; display: block; margin-top: 2px;">
+                  இல்லம் நாடி வரும் விருந்தினரை இன்முகத்தோடு உபசரித்தல், பசித்த ஒருவருக்காவது ஒருபிடி உணவு அல்லது இயன்ற உதவி அளித்தல்.
+                </span>
+              </div>
+            </label>
+
+            <label class="yajna-checkbox-card" id="yajnaCard_bhuta">
+              <input type="checkbox" id="yajna_bhuta" onchange="updateDharmaTracker()">
+              <div>
+                <strong style="color: #f8fafc; font-size: 0.95rem; display: block;">5. பூத யக்ஞம் (Bhuta Yajna)</strong>
+                <span style="color: #cbd5e1; font-size: 0.84rem; line-height: 1.45; display: block; margin-top: 2px;">
+                  வாயில்லா ஜீவராசிகளுக்கு (பறவைகள், அணில்கள், பசு, எறும்புகள், நாய்) தானியம்/நீர் வழங்குதல், மரஞ்செடிகளைப் பேணி வளர்த்தல்.
+                </span>
+              </div>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- Right: 2 Grihastha Virtues & Action Center -->
+        <div>
+          <h3 style="color: #fbbf24; font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <span>⚖️</span><span>சான்றாண்மை இல்லறப் பண்புகள் (Domestic Virtues Assessment)</span>
+          </h3>
+          <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 18px; margin-bottom: 16px;">
+            
+            <!-- Virtue 1: Non-anger -->
+            <div style="margin-bottom: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label for="virtueAnger" style="color: #f1f5f9; font-weight: 700; font-size: 0.92rem;">
+                  🕊️ சினமின்மை &amp; சாந்தம் (Non-Anger &amp; Forbearance):
+                </label>
+                <span id="angerScoreVal" style="color: #2dd4bf; font-weight: 800; font-size: 1rem;">5 / 5</span>
+              </div>
+              <p style="color: #94a3b8; font-size: 0.8rem; margin: 0 0 8px 0; line-height: 1.4;">
+                "இன்று இல்லத்திலோ வெளி இடங்களிலோ சினத்தைத் தவிர்த்து, பொறுமையோடும் சாந்தத்தோடும் பேசினேனா?"
+              </p>
+              <input type="range" id="virtueAnger" min="1" max="5" value="5" oninput="updateDharmaTracker()" style="width: 100%; accent-color: #2dd4bf; cursor: pointer;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: #64748b; margin-top: 3px;">
+                <span>1 (சினம் உண்டானது)</span>
+                <span>3 (கட்டுப்படுத்தினேன்)</span>
+                <span>5 (முழு சாந்தம்)</span>
+              </div>
+            </div>
+
+            <!-- Virtue 2: Family Harmony -->
+            <div style="margin-bottom: 14px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <label for="virtueHarmony" style="color: #f1f5f9; font-weight: 700; font-size: 0.92rem;">
+                  ❤️ இல்லற நல்லிணக்கம் &amp; இன்சொல் (Family Harmony):
+                </label>
+                <span id="harmonyScoreVal" style="color: #fbbf24; font-weight: 800; font-size: 1rem;">5 / 5</span>
+              </div>
+              <p style="color: #94a3b8; font-size: 0.8rem; margin: 0 0 8px 0; line-height: 1.4;">
+                "குடும்ப உறுப்பினர்களிடம் கடுஞ்சொல் தவிர்த்து, அன்பான இன்சொல் பேசி, ஒருவருக்கொருவர் விட்டுக் கொடுத்தோமா?"
+              </p>
+              <input type="range" id="virtueHarmony" min="1" max="5" value="5" oninput="updateDharmaTracker()" style="width: 100%; accent-color: #fbbf24; cursor: pointer;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: #64748b; margin-top: 3px;">
+                <span>1 (சிறு முரண்)</span>
+                <span>3 (பரஸ்பர சமரசம்)</span>
+                <span>5 (பேரன்பும் ஒற்றுமையும்)</span>
+              </div>
+            </div>
+
+            <!-- Personal Dharmic Note -->
+            <div>
+              <label for="dailyDharmaNote" style="color: #e2e8f0; font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 5px;">
+                📝 இன்றைய இல்லற நற்செயல் குறிப்பு (Daily Virtue Note):
+              </label>
+              <textarea id="dailyDharmaNote" rows="2" placeholder="இன்று ஆற்றிய சிறப்பு தர்மம், உதவி அல்லது கற்ற பாடம்..." style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; color: #fff; padding: 8px 12px; font-family: inherit; font-size: 0.84rem; resize: vertical; box-sizing: border-box;"></textarea>
+            </div>
+
+          </div>
+
+          <!-- Action buttons & feedback -->
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button type="button" onclick="saveDharmaDailyLog()" style="flex: 1; min-width: 180px; background: linear-gradient(135deg, #059669, #0d9488); color: #fff; font-weight: 800; font-size: 0.9rem; padding: 12px 18px; border: none; border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(5,150,105,0.35);">
+              <span>💾</span><span>இன்றைய தர்மப் பதிவைச் சேமிக்க</span>
+            </button>
+            <button type="button" onclick="resetDharmaToday()" style="background: rgba(255,255,255,0.08); color: #94a3b8; font-weight: 600; font-size: 0.84rem; padding: 12px 16px; border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; cursor: pointer;">
+              <span>🔄</span><span>மீளமை</span>
+            </button>
+          </div>
+          <div id="dharmaSaveFeedback" style="margin-top: 10px; font-size: 0.86rem; color: #4ade80; display: none; text-align: center; font-weight: 600;">
+            ✓ இன்றைய சாதனா வெற்றிகரமாகப் பதிவானது! வாழ்க உன்னத இல்லறம்!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- 2. PRINTABLE NOBLE FAMILY LIVING CHARTER (குடும்ப அறநெறி சாசனம்) -->
+    <!-- ============================================================== -->
+    <div id="familyCharter" class="dharma-hub-card">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 14px; margin-bottom: 22px;">
+        <div>
+          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(212,175,55,0.15); color: #d4af37; border: 1px solid rgba(212,175,55,0.35); padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">
+            📜 தலைமுறை சான்றாண்மைச் சாசனம் • NOBLE LIVING CHARTER
+          </div>
+          <h2 style="color: #ffffff; font-size: 1.5rem; font-weight: 800; margin: 8px 0 6px 0;">
+            மாண்புறு குடும்ப அறநெறி சாசனம் (Noble Family Living Charter)
+          </h2>
+          <p style="color: #cbd5e1; font-size: 0.94rem; margin: 0; max-width: 820px; line-height: 1.6;">
+            உங்கள் இல்லத்தின் திருநாமத்தையும், குடும்ப உறுப்பினர்களின் பெயர்களையும் உள்ளிட்டு இச்சாசனத்தை உருவாக்கி, இல்லத்தின் வரவேற்பறையில் சட்டமிட்டு மாட்டுக. இது உங்கள் குடும்பத்தை தலைமுறை தலைமுறையாக தர்மப் பாதையில் நிலைநிறுத்தும்!
+          </p>
+        </div>
+
+        <button type="button" onclick="printNobleCharter()" class="no-print" style="background: linear-gradient(135deg, #d4af37, #996515); color: #000; font-weight: 800; font-size: 0.92rem; padding: 12px 24px; border: none; border-radius: 10px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 6px 20px rgba(212,175,55,0.35);">
+          <span>🖨️</span><span>சாசனத்தை அச்சிடுக / PDF ஆகப் பெறுக</span>
+        </button>
+      </div>
+
+      <!-- Charter Customization Input Form -->
+      <div class="no-print" style="background: rgba(0,0,0,0.3); border: 1px solid rgba(212,175,55,0.25); border-radius: 12px; padding: 18px; margin-bottom: 24px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px;">
+          <div>
+            <label for="charterHomeName" style="color: #fbbf24; font-size: 0.84rem; font-weight: 700; display: block; margin-bottom: 4px;">
+              🏠 இல்லத்தின் பெயர் (Family / House Title):
+            </label>
+            <input type="text" id="charterHomeName" value="ஸ்ரீ சிவகாமசுந்தரி அற இல்லம்" oninput="renderCharterLive()" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; padding: 8px 12px; font-family: inherit; font-size: 0.9rem; box-sizing: border-box;">
+          </div>
+          <div>
+            <label for="charterParents" style="color: #fbbf24; font-size: 0.84rem; font-weight: 700; display: block; margin-bottom: 4px;">
+              👑 இல்லத்தலைவர் &amp; இல்லத்தரசி பெயர்கள் (Parents / Guardians):
+            </label>
+            <input type="text" id="charterParents" value="பெற்றோர்கள் (இல்லத்துத் தலைவர்கள்)" oninput="renderCharterLive()" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; padding: 8px 12px; font-family: inherit; font-size: 0.9rem; box-sizing: border-box;">
+          </div>
+          <div>
+            <label for="charterChildren" style="color: #fbbf24; font-size: 0.84rem; font-weight: 700; display: block; margin-bottom: 4px;">
+              🌱 புதல்வர்கள் / அடுத்த தலைமுறை (Children / Descendants):
+            </label>
+            <input type="text" id="charterChildren" value="புதல்வர்கள் (அறவழிப் பிள்ளைகள்)" oninput="renderCharterLive()" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; padding: 8px 12px; font-family: inherit; font-size: 0.9rem; box-sizing: border-box;">
+          </div>
+          <div>
+            <label for="charterMotto" style="color: #fbbf24; font-size: 0.84rem; font-weight: 700; display: block; margin-bottom: 4px;">
+              🌟 குடும்ப தர்ம முழக்கம் (Family Sacred Motto):
+            </label>
+            <input type="text" id="charterMotto" value="அன்பே சிவம் • வாய்மையே செல்வம் • உன்னத இல்லறமே அதிவேக முக்தி" oninput="renderCharterLive()" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; padding: 8px 12px; font-family: inherit; font-size: 0.9rem; box-sizing: border-box;">
+          </div>
+        </div>
+      </div>
+
+      <!-- The Live Printable Charter Frame -->
+      <div id="printableCharterArea" class="charter-preview-frame">
+        <span class="charter-corner-emblem corner-tl">ॐ</span>
+        <span class="charter-corner-emblem corner-tr">ॐ</span>
+        <span class="charter-corner-emblem corner-bl">ॐ</span>
+        <span class="charter-corner-emblem corner-br">ॐ</span>
+
+        <!-- Charter Header -->
+        <div style="text-align: center; margin-bottom: 24px; position: relative; z-index: 2;">
+          <div style="color: #d4af37; font-size: 1rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">
+            ॐ ஸ்ரீ குருப்யோ நமஹ • சனாதன வேத தர்மம் ॐ
+          </div>
+          <h1 class="charter-title" style="color: #fbbf24; font-size: 2.1rem; font-weight: 900; margin: 10px 0 6px; letter-spacing: 0.5px;">
+            மாண்புறு குடும்ப அறநெறி சாசனம்
+          </h1>
+          <div class="charter-subtitle" style="color: #94a3b8; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+            THE SACRED COVENANT OF NOBLE DOMESTIC LIVING &amp; HIGHER DHARMA
+          </div>
+          
+          <div style="display: inline-block; background: rgba(212,175,55,0.12); border: 1.5px solid rgba(212,175,55,0.45); border-radius: 12px; padding: 8px 26px; margin-top: 14px;">
+            <div id="previewHomeName" style="color: #fef08a; font-size: 1.35rem; font-weight: 800;">
+              ஸ்ரீ சிவகாமசுந்தரி அற இல்லம்
+            </div>
+            <div style="color: #cbd5e1; font-size: 0.86rem; margin-top: 3px;">
+              தலைவர்கள்: <span id="previewParents" style="color: #fff; font-weight: 700;">பெற்றோர்கள் (இல்லத்துத் தலைவர்கள்)</span> | 
+              வாரிசுகள்: <span id="previewChildren" style="color: #fff; font-weight: 700;">புதல்வர்கள் (அறவழிப் பிள்ளைகள்)</span>
+            </div>
+          </div>
+
+          <div class="charter-motto-box" style="margin: 14px auto 0; max-width: 650px; background: rgba(0,0,0,0.3); border-radius: 8px; padding: 8px 16px; border: 1px dashed rgba(212,175,55,0.4); color: #fbbf24; font-size: 0.92rem; font-weight: 700;">
+            " <span id="previewMotto">அன்பே சிவம் • வாய்மையே செல்வம் • உன்னத இல்லறமே அதிவேக முக்தி</span> "
+          </div>
+        </div>
+
+        <!-- 5 Sacred Family Pledges (ஐம்பெரும் குடும்பச் சூளுரைகள்) -->
+        <div style="position: relative; z-index: 2; margin-bottom: 24px;">
+          <div style="color: #38bdf8; font-size: 1.05rem; font-weight: 800; text-align: center; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1px;">
+            ✦ எங்கள் இல்லத்தின் ஐம்பெரும் தர்மச் சூளுரைகள் (Five Sacred Household Vows) ✦
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
+            
+            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+              <strong style="color: #2dd4bf; font-size: 0.9rem; display: block; margin-bottom: 3px;">1. வாய்மையும் இன்சொல்லும்</strong>
+              <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
+                எங்கள் இல்லத்தினுள் எப்போதும் பொய்மையும் கடுஞ்சொற்களும் புகாது; அனைவரிடமும் இன்முகத்தோடு கூடிய உண்மையும் கனிவுமே எங்கள் சொல்லாக இருக்கும்.
+              </div>
+            </div>
+
+            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+              <strong style="color: #38bdf8; font-size: 0.9rem; display: block; margin-bottom: 3px;">2. விருந்தோம்பலும் பசிப்பிணி போக்கலும்</strong>
+              <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
+                எங்கள் இல்லம் நாடி வருவோருக்கு இனிய உணவும் அடைக்கலமும் வழங்குவோம். பசித்தவருக்கு உணவளித்து மகிழ்வதே எங்கள் இல்லத்தின் தலையாய செல்வம்.
+              </div>
+            </div>
+
+            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+              <strong style="color: #fbbf24; font-size: 0.9rem; display: block; margin-bottom: 3px;">3. சினமின்மையும் பரஸ்பர மன்னிப்பும்</strong>
+              <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
+                கோபம் என்னும் கொடுந்தீயை எங்கள் உள்ளத்திலும் இல்லத்திலும் எரிய விடமாட்டோம். ஒருவருக்கொருவர் விட்டுக் கொடுத்து அமைதிப் பூங்காவாய் வாழ்வோம்.
+              </div>
+            </div>
+
+            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+              <strong style="color: #c084fc; font-size: 0.9rem; display: block; margin-bottom: 3px;">4. பெற்றோர் போற்றுதலும் சால்பும்</strong>
+              <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
+                பெற்றோருக்கும் முதியோருக்கும் வாழ்நாள் முழுவதும் பக்தியோடு பணிவிடை ஆற்றுவோம். சான்றாண்மை நற்பண்புகளால் எங்கள் குலப் பெருமையை உலகிற்கு உயர்த்துவோம்.
+              </div>
+            </div>
+
+            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+              <strong style="color: #f472b6; font-size: 0.9rem; display: block; margin-bottom: 3px;">5. இல்லறத்தின் வழியே நிர்வாணம்</strong>
+              <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
+                சுயநலமற்ற தியாக அன்பால் குடும்பக் கடமைகளை ஈஸ்வர அர்ப்பணமாய் ஆற்றி, இல்லறத்தின் வழியே மிகவேகமாக ஆன்ம முக்தியையும் பேரின்பத்தையும் அடைவோம்!
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Sacred Thirukkural Inscription -->
+        <div class="charter-verse-box" style="position: relative; z-index: 2; background: rgba(0,0,0,0.4); border-left: 4px solid #d4af37; border-radius: 8px; padding: 14px 18px; margin-bottom: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+          <div>
+            <div style="color: #d4af37; font-size: 0.82rem; font-weight: 700; text-transform: uppercase;">திருக்குறள் 49 (அதிகாரம் 5: இல்வாழ்க்கை)</div>
+            <div style="color: #ffffff; font-size: 0.94rem; font-weight: 700; margin-top: 3px; font-style: italic;">
+              "அறன்எனப் பட்டதே இல்வாழ்க்கை அஃதும்<br>பிறன்பழிப்ப தில்லாயின் நன்று."
+            </div>
+          </div>
+          <div>
+            <div style="color: #d4af37; font-size: 0.82rem; font-weight: 700; text-transform: uppercase;">திருக்குறள் 50 (அதிகாரம் 5: இல்வாழ்க்கை)</div>
+            <div style="color: #ffffff; font-size: 0.94rem; font-weight: 700; margin-top: 3px; font-style: italic;">
+              "வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உறையும்<br>தெய்வத்துள் வைக்கப் படும்."
+            </div>
+          </div>
+        </div>
+
+        <!-- Signature Block -->
+        <div style="position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; border-top: 1px dashed rgba(212,175,55,0.4); padding-top: 18px;">
+          <div style="text-align: center; min-width: 170px;">
+            <div style="height: 35px; border-bottom: 1px solid rgba(255,255,255,0.3); margin-bottom: 6px;"></div>
+            <div style="font-size: 0.82rem; color: #cbd5e1; font-weight: 600;">இல்லத்தலைவர் / தலைவி கையொப்பம்</div>
+          </div>
+          <div style="text-align: center; min-width: 170px;">
+            <div style="height: 35px; border-bottom: 1px solid rgba(255,255,255,0.3); margin-bottom: 6px;"></div>
+            <div style="font-size: 0.82rem; color: #cbd5e1; font-weight: 600;">புதல்வர்கள் கையொப்பம்</div>
+          </div>
+          <div style="text-align: center; min-width: 150px;">
+            <div id="charterDateDisplay" style="height: 35px; display: flex; align-items: flex-end; justify-content: center; font-size: 0.9rem; color: #fbbf24; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.3); margin-bottom: 6px;"></div>
+            <div style="font-size: 0.82rem; color: #cbd5e1; font-weight: 600;">சாசனப் பிரகடன நாள்</div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -1152,5 +1611,195 @@
 
   <script src="assets/data/catalog.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    // --- Daily Grihastha Dharma Habit Tracker Logic ---
+    function updateDharmaTracker() {
+      const yajnas = ['brahma', 'deva', 'pitru', 'manushya', 'bhuta'];
+      let checkedCount = 0;
+      yajnas.forEach(function(id) {
+        const cb = document.getElementById('yajna_' + id);
+        const card = document.getElementById('yajnaCard_' + id);
+        if (cb && cb.checked) {
+          checkedCount++;
+          if (card) card.classList.add('completed');
+        } else {
+          if (card) card.classList.remove('completed');
+        }
+      });
+
+      const anger = parseInt(document.getElementById('virtueAnger') ? document.getElementById('virtueAnger').value : 5);
+      const harmony = parseInt(document.getElementById('virtueHarmony') ? document.getElementById('virtueHarmony').value : 5);
+
+      const angerDisplay = document.getElementById('angerScoreVal');
+      if (angerDisplay) angerDisplay.textContent = anger + ' / 5';
+
+      const harmonyDisplay = document.getElementById('harmonyScoreVal');
+      if (harmonyDisplay) harmonyDisplay.textContent = harmony + ' / 5';
+
+      // 5 Yajnas = 70% max (14% each), 2 Virtues = 30% max (15% each => 3% per point)
+      const yajnaScore = (checkedCount / 5) * 70;
+      const virtueScore = ((anger + harmony) / 10) * 30;
+      const totalScore = Math.round(yajnaScore + virtueScore);
+
+      const scoreDisplay = document.getElementById('dharmaScoreDisplay');
+      if (scoreDisplay) scoreDisplay.textContent = totalScore + '%';
+
+      const progressBar = document.getElementById('dharmaProgressBar');
+      if (progressBar) progressBar.style.width = totalScore + '%';
+
+      const badgeDisplay = document.getElementById('dharmaBadgeDisplay');
+      if (badgeDisplay) {
+        if (totalScore >= 85) {
+          badgeDisplay.textContent = '🌟 உன்னத இல்லறம்';
+          badgeDisplay.style.color = '#fbbf24';
+        } else if (totalScore >= 50) {
+          badgeDisplay.textContent = '🌿 சான்றோன் இல்லறத்தார்';
+          badgeDisplay.style.color = '#2dd4bf';
+        } else {
+          badgeDisplay.textContent = '🌱 தர்ம சாதகர்';
+          badgeDisplay.style.color = '#c084fc';
+        }
+      }
+    }
+
+    function saveDharmaDailyLog() {
+      const yajnas = ['brahma', 'deva', 'pitru', 'manushya', 'bhuta'];
+      const yajnaState = {};
+      yajnas.forEach(function(id) {
+        const cb = document.getElementById('yajna_' + id);
+        yajnaState[id] = cb ? cb.checked : false;
+      });
+
+      const anger = document.getElementById('virtueAnger') ? document.getElementById('virtueAnger').value : 5;
+      const harmony = document.getElementById('virtueHarmony') ? document.getElementById('virtueHarmony').value : 5;
+      const note = document.getElementById('dailyDharmaNote') ? document.getElementById('dailyDharmaNote').value : '';
+      const today = new Date().toISOString().split('T')[0];
+
+      let streak = parseInt(localStorage.getItem('gkd_dharma_streak') || '1');
+      const lastLogDate = localStorage.getItem('gkd_dharma_last_date');
+      if (lastLogDate) {
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+        if (lastLogDate === yesterday) {
+          streak += 1;
+        } else if (lastLogDate !== today) {
+          streak = 1;
+        }
+      }
+
+      const logData = {
+        date: today,
+        yajnas: yajnaState,
+        anger: anger,
+        harmony: harmony,
+        note: note,
+        streak: streak
+      };
+
+      try {
+        localStorage.setItem('gkd_dharma_today', JSON.stringify(logData));
+        localStorage.setItem('gkd_dharma_streak', streak.toString());
+        localStorage.setItem('gkd_dharma_last_date', today);
+      } catch (e) {
+        console.error(e);
+      }
+
+      const streakDisplay = document.getElementById('dharmaStreakDisplay');
+      if (streakDisplay) streakDisplay.textContent = '🔥 ' + streak + ' நாள்' + (streak > 1 ? 'கள்' : '');
+
+      const feedback = document.getElementById('dharmaSaveFeedback');
+      if (feedback) {
+        feedback.style.display = 'block';
+        setTimeout(function() { feedback.style.display = 'none'; }, 4000);
+      }
+    }
+
+    function resetDharmaToday() {
+      const yajnas = ['brahma', 'deva', 'pitru', 'manushya', 'bhuta'];
+      yajnas.forEach(function(id) {
+        const cb = document.getElementById('yajna_' + id);
+        if (cb) cb.checked = false;
+      });
+      if (document.getElementById('virtueAnger')) document.getElementById('virtueAnger').value = 5;
+      if (document.getElementById('virtueHarmony')) document.getElementById('virtueHarmony').value = 5;
+      if (document.getElementById('dailyDharmaNote')) document.getElementById('dailyDharmaNote').value = '';
+      updateDharmaTracker();
+    }
+
+    function loadSavedDharmaData() {
+      const streak = localStorage.getItem('gkd_dharma_streak') || '1';
+      const streakDisplay = document.getElementById('dharmaStreakDisplay');
+      if (streakDisplay) streakDisplay.textContent = '🔥 ' + streak + ' நாள்' + (parseInt(streak) > 1 ? 'கள்' : '');
+
+      const saved = localStorage.getItem('gkd_dharma_today');
+      if (saved) {
+        try {
+          const data = JSON.parse(saved);
+          const today = new Date().toISOString().split('T')[0];
+          if (data.date === today && data.yajnas) {
+            Object.keys(data.yajnas).forEach(function(id) {
+              const cb = document.getElementById('yajna_' + id);
+              if (cb) cb.checked = data.yajnas[id];
+            });
+            if (document.getElementById('virtueAnger') && data.anger) document.getElementById('virtueAnger').value = data.anger;
+            if (document.getElementById('virtueHarmony') && data.harmony) document.getElementById('virtueHarmony').value = data.harmony;
+            if (document.getElementById('dailyDharmaNote') && data.note) document.getElementById('dailyDharmaNote').value = data.note;
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      updateDharmaTracker();
+    }
+
+    // --- Noble Family Charter Logic ---
+    function renderCharterLive() {
+      const homeName = (document.getElementById('charterHomeName') ? document.getElementById('charterHomeName').value.trim() : '') || 'ஸ்ரீ சிவகாமசுந்தரி அற இல்லம்';
+      const parents = (document.getElementById('charterParents') ? document.getElementById('charterParents').value.trim() : '') || 'பெற்றோர்கள் (இல்லத்துத் தலைவர்கள்)';
+      const children = (document.getElementById('charterChildren') ? document.getElementById('charterChildren').value.trim() : '') || 'புதல்வர்கள் (அறவழிப் பிள்ளைகள்)';
+      const motto = (document.getElementById('charterMotto') ? document.getElementById('charterMotto').value.trim() : '') || 'அன்பே சிவம் • வாய்மையே செல்வம் • உன்னத இல்லறமே அதிவேக முக்தி';
+
+      if (document.getElementById('previewHomeName')) document.getElementById('previewHomeName').textContent = homeName;
+      if (document.getElementById('previewParents')) document.getElementById('previewParents').textContent = parents;
+      if (document.getElementById('previewChildren')) document.getElementById('previewChildren').textContent = children;
+      if (document.getElementById('previewMotto')) document.getElementById('previewMotto').textContent = motto;
+
+      try {
+        localStorage.setItem('gkd_charter_data', JSON.stringify({ homeName: homeName, parents: parents, children: children, motto: motto }));
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    function loadSavedCharterData() {
+      const saved = localStorage.getItem('gkd_charter_data');
+      if (saved) {
+        try {
+          const data = JSON.parse(saved);
+          if (data.homeName && document.getElementById('charterHomeName')) document.getElementById('charterHomeName').value = data.homeName;
+          if (data.parents && document.getElementById('charterParents')) document.getElementById('charterParents').value = data.parents;
+          if (data.children && document.getElementById('charterChildren')) document.getElementById('charterChildren').value = data.children;
+          if (data.motto && document.getElementById('charterMotto')) document.getElementById('charterMotto').value = data.motto;
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      const dateDisplay = document.getElementById('charterDateDisplay');
+      if (dateDisplay) {
+        const now = new Date();
+        dateDisplay.textContent = now.toLocaleDateString('ta-IN', { year: 'numeric', month: 'long', day: 'numeric' });
+      }
+      renderCharterLive();
+    }
+
+    function printNobleCharter() {
+      renderCharterLive();
+      window.print();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      loadSavedDharmaData();
+      loadSavedCharterData();
+    });
+  </script>
 </body>
 </html>
