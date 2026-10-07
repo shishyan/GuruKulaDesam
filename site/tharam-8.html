@@ -123,6 +123,32 @@
 
   <main class="main-content">
     
+    <!-- Grade LMS Learning Progress Dashboard -->
+    <div class="grade-lms-tracker-banner" style="background:linear-gradient(90deg, rgba(15,23,42,0.92), rgba(24,37,64,0.92)); border:1px solid rgba(56, 189, 248, 0.28); border-radius:14px; padding:14px 22px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; box-shadow:0 6px 20px rgba(0,0,0,0.4);">
+      <div style="display:flex; align-items:center; gap:14px;">
+        <div style="font-size:1.8rem; background:rgba(56, 189, 248, 0.12); width:46px; height:46px; display:flex; align-items:center; justify-content:center; border-radius:12px; border:1px solid rgba(56, 189, 248, 0.3);">🏫</div>
+        <div>
+          <div style="color:#ffffff; font-weight:700; font-size:1rem; display:flex; align-items:center; gap:8px;">
+            <span>குருகுல இணையப் பள்ளி — தரம் 8 கற்றல் முன்னேற்றம்</span>
+            <span class="wbs-code" style="font-size:0.75rem;">WBS G08</span>
+          </div>
+          <div style="color:#94a3b8; font-size:0.85rem; margin-top:2px;" id="gradeProgressText-8">முன்னேற்றம்: கணக்கிடப்படுகிறது...</div>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+        <div class="progress-bar-container" style="width:160px; height:10px; background:rgba(255,255,255,0.1); border-radius:10px; overflow:hidden;">
+          <div id="gradeProgressBar-8" style="height:100%; width:0%; background:linear-gradient(90deg, #38bdf8, #2dd4bf); transition:width 0.4s ease;"></div>
+        </div>
+        <span id="gradeProgressPercent-8" style="font-size:0.92rem; font-weight:800; color:#38bdf8;">0%</span>
+        <a href="school.html" class="sheet-btn sheet-btn-view" style="font-size:0.82rem; padding:6px 14px; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+          <span>🏫 இணையப் பள்ளி ↗</span>
+        </a>
+        <a href="higher-studies.html" class="sheet-btn sheet-btn-view" style="font-size:0.82rem; padding:6px 14px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border-color:var(--border-gold); color:var(--gold-bright);">
+          <span>🏛️ உயர்கல்வி ↗</span>
+        </a>
+      </div>
+    </div>
+
     <!-- Hero Banner with WBS Grade Code -->
     <div class="hero-banner">
       <div class="sacred-tag">
@@ -262,6 +288,14 @@
               <span class="wbs-sidebar-code">8.1.10</span>
               <span>🎵 பதிக இசை</span>
             </a>
+            <a href="#u1-fusion" class="sidebar-sub-link" onclick="goToSection(1, 'u1-fusion')">
+              <span class="wbs-sidebar-code">8.1.11</span>
+              <span>🌐 அறிவியல் சங்கமம்</span>
+            </a>
+            <a href="#u1-lms" class="sidebar-sub-link" onclick="goToSection(1, 'u1-lms')">
+              <span class="wbs-sidebar-code">8.1.12</span>
+              <span>🎓 படிப்புப் பதிவு</span>
+            </a>
           </div>
         </div>
         
@@ -317,6 +351,14 @@
             <a href="#u2-audio" class="sidebar-sub-link" onclick="goToSection(2, 'u2-audio')">
               <span class="wbs-sidebar-code">8.2.10</span>
               <span>🎵 பதிக இசை</span>
+            </a>
+            <a href="#u2-fusion" class="sidebar-sub-link" onclick="goToSection(2, 'u2-fusion')">
+              <span class="wbs-sidebar-code">8.2.11</span>
+              <span>🌐 அறிவியல் சங்கமம்</span>
+            </a>
+            <a href="#u2-lms" class="sidebar-sub-link" onclick="goToSection(2, 'u2-lms')">
+              <span class="wbs-sidebar-code">8.2.12</span>
+              <span>🎓 படிப்புப் பதிவு</span>
             </a>
           </div>
         </div>
@@ -374,6 +416,14 @@
               <span class="wbs-sidebar-code">8.3.10</span>
               <span>🎵 பதிக இசை</span>
             </a>
+            <a href="#u3-fusion" class="sidebar-sub-link" onclick="goToSection(3, 'u3-fusion')">
+              <span class="wbs-sidebar-code">8.3.11</span>
+              <span>🌐 அறிவியல் சங்கமம்</span>
+            </a>
+            <a href="#u3-lms" class="sidebar-sub-link" onclick="goToSection(3, 'u3-lms')">
+              <span class="wbs-sidebar-code">8.3.12</span>
+              <span>🎓 படிப்புப் பதிவு</span>
+            </a>
           </div>
         </div>
         
@@ -430,6 +480,14 @@
               <span class="wbs-sidebar-code">8.4.10</span>
               <span>🎵 பதிக இசை</span>
             </a>
+            <a href="#u4-fusion" class="sidebar-sub-link" onclick="goToSection(4, 'u4-fusion')">
+              <span class="wbs-sidebar-code">8.4.11</span>
+              <span>🌐 அறிவியல் சங்கமம்</span>
+            </a>
+            <a href="#u4-lms" class="sidebar-sub-link" onclick="goToSection(4, 'u4-lms')">
+              <span class="wbs-sidebar-code">8.4.12</span>
+              <span>🎓 படிப்புப் பதிவு</span>
+            </a>
           </div>
         </div>
         
@@ -485,6 +543,14 @@
             <a href="#u5-audio" class="sidebar-sub-link" onclick="goToSection(5, 'u5-audio')">
               <span class="wbs-sidebar-code">8.5.10</span>
               <span>🎵 பதிக இசை</span>
+            </a>
+            <a href="#u5-fusion" class="sidebar-sub-link" onclick="goToSection(5, 'u5-fusion')">
+              <span class="wbs-sidebar-code">8.5.11</span>
+              <span>🌐 அறிவியல் சங்கமம்</span>
+            </a>
+            <a href="#u5-lms" class="sidebar-sub-link" onclick="goToSection(5, 'u5-lms')">
+              <span class="wbs-sidebar-code">8.5.12</span>
+              <span>🎓 படிப்புப் பதிவு</span>
             </a>
           </div>
         </div>
@@ -833,6 +899,68 @@
               </a>
             </div>
 
+            <!-- 12. 21st Century Science & Vedic Concepts Fusion -->
+            
+            <div id="u1-fusion" style="background: linear-gradient(135deg, rgba(14, 25, 45, 0.95), rgba(18, 30, 54, 0.92)); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 24px; margin: 28px 0; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(56, 189, 248, 0.2); padding-bottom:12px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span class="wbs-code wbs-code-primary">WBS 8.1.11</span>
+                  <h4 style="color:#ffffff; font-size:1.15rem; font-weight:700; margin:0;">
+                    🌐 21-ஆம் நூற்றாண்டு நவீன அறிவியல் &amp; வேதக் கருத்துக்களின் சங்கமம் (Vedic-STEM Fusion)
+                  </h4>
+                </div>
+                <span style="font-size:0.78rem; font-weight:700; color:#38bdf8; background:rgba(56, 189, 248, 0.1); border:1px solid rgba(56, 189, 248, 0.3); padding:4px 12px; border-radius:20px;">
+                  21ST-CENTURY SKILLS &amp; INQUIRY
+                </span>
+              </div>
+
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:16px;">
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(56, 189, 248, 0.2); border-left:3px solid #38bdf8; border-radius:10px; padding:16px;">
+                  <div style="color:#38bdf8; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🔬 அறிவியல் இணைப்பு (Modern Science Correlation)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    செயல் ஈடுபாடும் பற்றற்ற விவேகமும் (Flow State & Non-Attachment to Outcomes): திருக்குறளின் 'ஊழையும் உப்பக்கம் காண்பர்' மற்றும் பலன் கருதாத கடமை உணர்வு (நிஷ்காம கர்ம நெறி) மனிதனை பலனைப் பற்றிய கவலையிலிருந்து (Performance Anxiety) விடுவித்து தற்போதைய தருணத்தில் 100% ஈடுபாட்டுடன் செயல்பட வைக்கிறது.
+                  </div>
+                </div>
+
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(45, 212, 191, 0.2); border-left:3px solid #2dd4bf; border-radius:10px; padding:16px;">
+                  <div style="color:#2dd4bf; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🌍 உலகளாவிய வாழ்வியல் தேவை (Global World Application)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    தேர்வுப் பயம் நீங்குதலும் உழைப்பில் இன்பமும் (Freedom from Exam Stress & Mastery Mindset): முடிவை எண்ணிப் பயப்படாமல் கடமையைச் சிறப்பாகச் செய்வதில் மட்டுமே கவனம் செலுத்துதல்.
+                  </div>
+                </div>
+              </div>
+
+              <div style="background:rgba(212, 175, 55, 0.06); border:1px solid rgba(212, 175, 55, 0.25); border-radius:10px; padding:14px 18px;">
+                <div style="color:var(--gold-soft); font-size:0.92rem; font-weight:700; line-height:1.6;">
+                  🔬 மாணவர் பரிசோதனை: அடுத்த முறை படிக்கும்போது மதிப்பெண்ணைப் பற்றி நினைக்காமல் பாடத்தைப் புரிந்து கொள்வதில் மட்டுமே 30 நிமிடம் முழு கவனத்துடன் ஈடுபடுங்கள்.
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- 13. LMS Chapter Progress Tracker -->
+            
+        <div id="u1-lms" class="lms-chapter-complete-bar" style="background:rgba(15,23,42,0.85); border:1px solid rgba(56,189,248,0.3); border-radius:14px; padding:16px 20px; margin: 24px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+          <div>
+            <div style="color:#ffffff; font-weight:700; font-size:0.98rem; display:flex; align-items:center; gap:8px;">
+              <span class="wbs-code">WBS 8.1.12</span>
+              <span>🎓 மாணவர் அத்தியாயப் படிப்புப் பதிவு (LMS Progress Check):</span>
+            </div>
+            <div style="color:#94a3b8; font-size:0.85rem; margin-top:3px;">
+              இப்பாடத்தின் விளக்கங்கள், பாடல்கள், அறிவியல் ஆய்வுகளைப் படித்து முடித்தவுடன் குறிக்கவும்.
+            </div>
+          </div>
+          <button type="button" class="lms-mark-btn" id="lms-btn-8-1" onclick="toggleChapterCompletion(8, 1)" style="background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.4); color:#38bdf8; padding:8px 18px; border-radius:10px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:all 0.2s ease;">
+            <span class="lms-icon" id="lms-icon-8-1">○</span>
+            <span class="lms-text" id="lms-text-8-1">பாடம் நிறைவுற்றது (+50 XP)</span>
+          </button>
+        </div>
+        
+
             <!-- Navigation Stepper Footer -->
             <div class="lesson-nav-footer">
               <a href="tharam-7.html" class="lesson-nav-btn lesson-nav-prev">← தரம் 7</a>
@@ -1150,6 +1278,68 @@
                 பாடலைக் கேட்க ↗
               </a>
             </div>
+
+            <!-- 12. 21st Century Science & Vedic Concepts Fusion -->
+            
+            <div id="u2-fusion" style="background: linear-gradient(135deg, rgba(14, 25, 45, 0.95), rgba(18, 30, 54, 0.92)); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 24px; margin: 28px 0; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(56, 189, 248, 0.2); padding-bottom:12px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span class="wbs-code wbs-code-primary">WBS 8.2.11</span>
+                  <h4 style="color:#ffffff; font-size:1.15rem; font-weight:700; margin:0;">
+                    🌐 21-ஆம் நூற்றாண்டு நவீன அறிவியல் &amp; வேதக் கருத்துக்களின் சங்கமம் (Vedic-STEM Fusion)
+                  </h4>
+                </div>
+                <span style="font-size:0.78rem; font-weight:700; color:#38bdf8; background:rgba(56, 189, 248, 0.1); border:1px solid rgba(56, 189, 248, 0.3); padding:4px 12px; border-radius:20px;">
+                  21ST-CENTURY SKILLS &amp; INQUIRY
+                </span>
+              </div>
+
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:16px;">
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(56, 189, 248, 0.2); border-left:3px solid #38bdf8; border-radius:10px; padding:16px;">
+                  <div style="color:#38bdf8; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🔬 அறிவியல் இணைப்பு (Modern Science Correlation)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    அறிவாய்வியல் தர்க்கமும் மெய்யறிவும் (Epistemology & Formal Logic): மெய்கண்ட சாத்திரங்கள் அளவை இயல் (பிரமாணங்கள் - காட்சி, அனுமானம், ஆகமம்) மூலம் இறைக் கொள்கையை தர்க்க ரீதியாக நிறுவுகின்றன.
+                  </div>
+                </div>
+
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(45, 212, 191, 0.2); border-left:3px solid #2dd4bf; border-radius:10px; padding:16px;">
+                  <div style="color:#2dd4bf; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🌍 உலகளாவிய வாழ்வியல் தேவை (Global World Application)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    விவாதத் திறனும் தர்க்க பூர்வமான சிந்தனையும் (Logical Reasoning & Debate Skills): உணர்ச்சிவசப்படாமல் ஆதாரங்களுடன் பேசும் பக்குவமும் முதிர்ச்சியும்.
+                  </div>
+                </div>
+              </div>
+
+              <div style="background:rgba(212, 175, 55, 0.06); border:1px solid rgba(212, 175, 55, 0.25); border-radius:10px; padding:14px 18px;">
+                <div style="color:var(--gold-soft); font-size:0.92rem; font-weight:700; line-height:1.6;">
+                  🔬 மாணவர் பரிசோதனை: மெய்கண்டாரின் ஒரு சூத்திரத்தை எடுத்துக்கொண்டு அதன் தர்க்கப் படிகளை (காரணம், உவமை, முடிவு) பகுப்பாய்வு செய்யுங்கள்.
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- 13. LMS Chapter Progress Tracker -->
+            
+        <div id="u2-lms" class="lms-chapter-complete-bar" style="background:rgba(15,23,42,0.85); border:1px solid rgba(56,189,248,0.3); border-radius:14px; padding:16px 20px; margin: 24px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+          <div>
+            <div style="color:#ffffff; font-weight:700; font-size:0.98rem; display:flex; align-items:center; gap:8px;">
+              <span class="wbs-code">WBS 8.2.12</span>
+              <span>🎓 மாணவர் அத்தியாயப் படிப்புப் பதிவு (LMS Progress Check):</span>
+            </div>
+            <div style="color:#94a3b8; font-size:0.85rem; margin-top:3px;">
+              இப்பாடத்தின் விளக்கங்கள், பாடல்கள், அறிவியல் ஆய்வுகளைப் படித்து முடித்தவுடன் குறிக்கவும்.
+            </div>
+          </div>
+          <button type="button" class="lms-mark-btn" id="lms-btn-8-2" onclick="toggleChapterCompletion(8, 2)" style="background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.4); color:#38bdf8; padding:8px 18px; border-radius:10px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:all 0.2s ease;">
+            <span class="lms-icon" id="lms-icon-8-2">○</span>
+            <span class="lms-text" id="lms-text-8-2">பாடம் நிறைவுற்றது (+50 XP)</span>
+          </button>
+        </div>
+        
 
             <!-- Navigation Stepper Footer -->
             <div class="lesson-nav-footer">
@@ -1484,6 +1674,68 @@
               </a>
             </div>
 
+            <!-- 12. 21st Century Science & Vedic Concepts Fusion -->
+            
+            <div id="u3-fusion" style="background: linear-gradient(135deg, rgba(14, 25, 45, 0.95), rgba(18, 30, 54, 0.92)); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 24px; margin: 28px 0; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(56, 189, 248, 0.2); padding-bottom:12px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span class="wbs-code wbs-code-primary">WBS 8.3.11</span>
+                  <h4 style="color:#ffffff; font-size:1.15rem; font-weight:700; margin:0;">
+                    🌐 21-ஆம் நூற்றாண்டு நவீன அறிவியல் &amp; வேதக் கருத்துக்களின் சங்கமம் (Vedic-STEM Fusion)
+                  </h4>
+                </div>
+                <span style="font-size:0.78rem; font-weight:700; color:#38bdf8; background:rgba(56, 189, 248, 0.1); border:1px solid rgba(56, 189, 248, 0.3); padding:4px 12px; border-radius:20px;">
+                  21ST-CENTURY SKILLS &amp; INQUIRY
+                </span>
+              </div>
+
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:16px;">
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(56, 189, 248, 0.2); border-left:3px solid #38bdf8; border-radius:10px; padding:16px;">
+                  <div style="color:#38bdf8; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🔬 அறிவியல் இணைப்பு (Modern Science Correlation)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    இசைத் தாளமும் மூளையின் நரம்பு அதிர்வுகளும் (Brainwave Entrainment & Pentatonic Scales): திருமுறைப் பண்கள் குறிப்பிட்ட நரம்பு அலைவரிசைகளைத் தூண்டி உடலின் நாளமில்லா சுரப்பிகளை சீராக்குகின்றன.
+                  </div>
+                </div>
+
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(45, 212, 191, 0.2); border-left:3px solid #2dd4bf; border-radius:10px; padding:16px;">
+                  <div style="color:#2dd4bf; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🌍 உலகளாவிய வாழ்வியல் தேவை (Global World Application)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    கலை ஆர்வமும் மன அமைதியும் (Music Therapy & Creative Expression): பரபரப்பான நவீன வாழ்க்கையில் இசை மூலம் மன அமைதியை மீட்டெடுத்தல்.
+                  </div>
+                </div>
+              </div>
+
+              <div style="background:rgba(212, 175, 55, 0.06); border:1px solid rgba(212, 175, 55, 0.25); border-radius:10px; padding:14px 18px;">
+                <div style="color:var(--gold-soft); font-size:0.92rem; font-weight:700; line-height:1.6;">
+                  🔬 மாணவர் பரிசோதனை: ஒரு பதிகத்தைப் பண்ணோடு கேட்டுவிட்டு உங்கள் மன அழுத்த அளவை 1 முதல் 10 வரை மதிப்பிடுங்கள்.
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- 13. LMS Chapter Progress Tracker -->
+            
+        <div id="u3-lms" class="lms-chapter-complete-bar" style="background:rgba(15,23,42,0.85); border:1px solid rgba(56,189,248,0.3); border-radius:14px; padding:16px 20px; margin: 24px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+          <div>
+            <div style="color:#ffffff; font-weight:700; font-size:0.98rem; display:flex; align-items:center; gap:8px;">
+              <span class="wbs-code">WBS 8.3.12</span>
+              <span>🎓 மாணவர் அத்தியாயப் படிப்புப் பதிவு (LMS Progress Check):</span>
+            </div>
+            <div style="color:#94a3b8; font-size:0.85rem; margin-top:3px;">
+              இப்பாடத்தின் விளக்கங்கள், பாடல்கள், அறிவியல் ஆய்வுகளைப் படித்து முடித்தவுடன் குறிக்கவும்.
+            </div>
+          </div>
+          <button type="button" class="lms-mark-btn" id="lms-btn-8-3" onclick="toggleChapterCompletion(8, 3)" style="background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.4); color:#38bdf8; padding:8px 18px; border-radius:10px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:all 0.2s ease;">
+            <span class="lms-icon" id="lms-icon-8-3">○</span>
+            <span class="lms-text" id="lms-text-8-3">பாடம் நிறைவுற்றது (+50 XP)</span>
+          </button>
+        </div>
+        
+
             <!-- Navigation Stepper Footer -->
             <div class="lesson-nav-footer">
               <button type="button" class="lesson-nav-btn lesson-nav-prev" onclick="selectChapter(2)">← முந்தைய பாடம் 2</button>
@@ -1816,6 +2068,68 @@
                 பாடலைக் கேட்க ↗
               </a>
             </div>
+
+            <!-- 12. 21st Century Science & Vedic Concepts Fusion -->
+            
+            <div id="u4-fusion" style="background: linear-gradient(135deg, rgba(14, 25, 45, 0.95), rgba(18, 30, 54, 0.92)); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 24px; margin: 28px 0; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(56, 189, 248, 0.2); padding-bottom:12px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span class="wbs-code wbs-code-primary">WBS 8.4.11</span>
+                  <h4 style="color:#ffffff; font-size:1.15rem; font-weight:700; margin:0;">
+                    🌐 21-ஆம் நூற்றாண்டு நவீன அறிவியல் &amp; வேதக் கருத்துக்களின் சங்கமம் (Vedic-STEM Fusion)
+                  </h4>
+                </div>
+                <span style="font-size:0.78rem; font-weight:700; color:#38bdf8; background:rgba(56, 189, 248, 0.1); border:1px solid rgba(56, 189, 248, 0.3); padding:4px 12px; border-radius:20px;">
+                  21ST-CENTURY SKILLS &amp; INQUIRY
+                </span>
+              </div>
+
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:16px;">
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(56, 189, 248, 0.2); border-left:3px solid #38bdf8; border-radius:10px; padding:16px;">
+                  <div style="color:#38bdf8; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🔬 அறிவியல் இணைப்பு (Modern Science Correlation)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    மனித வளர்ச்சிப் பருவங்களும் உளவியல் முதிர்ச்சியும் (Psychosocial Stages of Development): பிரம்மச்சரியம் (மாணவப் பருவம்), கிரகஸ்தம் (குடும்பப் பருவம்), வானப்பிரஸ்தம் (சமூக வழிகாட்டி), சந்நியாசம் (முக்தி வேட்கை) என்ற ஆசிரமங்கள் மனித வாழ்வின் இயற்கையான பருவ சுழற்சியைப் பிரதிபலிக்கின்றன.
+                  </div>
+                </div>
+
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(45, 212, 191, 0.2); border-left:3px solid #2dd4bf; border-radius:10px; padding:16px;">
+                  <div style="color:#2dd4bf; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🌍 உலகளாவிய வாழ்வியல் தேவை (Global World Application)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    பருவத்திற்கேற்ற கடமைகளும் ஒழுக்கமும் (Role Clarity & Life Balance): மாணவர் பருவத்தில் கல்வியிலும் தவத்திலும் மட்டுமே கவனத்தை ஒருமுகப்படுத்தும் உறுதி.
+                  </div>
+                </div>
+              </div>
+
+              <div style="background:rgba(212, 175, 55, 0.06); border:1px solid rgba(212, 175, 55, 0.25); border-radius:10px; padding:14px 18px;">
+                <div style="color:var(--gold-soft); font-size:0.92rem; font-weight:700; line-height:1.6;">
+                  🔬 மாணவர் பரிசோதனை: ஒரு மாணவராக பிரம்மச்சரிய ஒழுக்கத்தைக் காக்க நீங்கள் மேற்கொள்ளும் 3 கட்டுப்பாடுகளை எழுதுங்கள்.
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- 13. LMS Chapter Progress Tracker -->
+            
+        <div id="u4-lms" class="lms-chapter-complete-bar" style="background:rgba(15,23,42,0.85); border:1px solid rgba(56,189,248,0.3); border-radius:14px; padding:16px 20px; margin: 24px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+          <div>
+            <div style="color:#ffffff; font-weight:700; font-size:0.98rem; display:flex; align-items:center; gap:8px;">
+              <span class="wbs-code">WBS 8.4.12</span>
+              <span>🎓 மாணவர் அத்தியாயப் படிப்புப் பதிவு (LMS Progress Check):</span>
+            </div>
+            <div style="color:#94a3b8; font-size:0.85rem; margin-top:3px;">
+              இப்பாடத்தின் விளக்கங்கள், பாடல்கள், அறிவியல் ஆய்வுகளைப் படித்து முடித்தவுடன் குறிக்கவும்.
+            </div>
+          </div>
+          <button type="button" class="lms-mark-btn" id="lms-btn-8-4" onclick="toggleChapterCompletion(8, 4)" style="background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.4); color:#38bdf8; padding:8px 18px; border-radius:10px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:all 0.2s ease;">
+            <span class="lms-icon" id="lms-icon-8-4">○</span>
+            <span class="lms-text" id="lms-text-8-4">பாடம் நிறைவுற்றது (+50 XP)</span>
+          </button>
+        </div>
+        
 
             <!-- Navigation Stepper Footer -->
             <div class="lesson-nav-footer">
@@ -2150,6 +2464,68 @@
               </a>
             </div>
 
+            <!-- 12. 21st Century Science & Vedic Concepts Fusion -->
+            
+            <div id="u5-fusion" style="background: linear-gradient(135deg, rgba(14, 25, 45, 0.95), rgba(18, 30, 54, 0.92)); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 24px; margin: 28px 0; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(56, 189, 248, 0.2); padding-bottom:12px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span class="wbs-code wbs-code-primary">WBS 8.5.11</span>
+                  <h4 style="color:#ffffff; font-size:1.15rem; font-weight:700; margin:0;">
+                    🌐 21-ஆம் நூற்றாண்டு நவீன அறிவியல் &amp; வேதக் கருத்துக்களின் சங்கமம் (Vedic-STEM Fusion)
+                  </h4>
+                </div>
+                <span style="font-size:0.78rem; font-weight:700; color:#38bdf8; background:rgba(56, 189, 248, 0.1); border:1px solid rgba(56, 189, 248, 0.3); padding:4px 12px; border-radius:20px;">
+                  21ST-CENTURY SKILLS &amp; INQUIRY
+                </span>
+              </div>
+
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:16px;">
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(56, 189, 248, 0.2); border-left:3px solid #38bdf8; border-radius:10px; padding:16px;">
+                  <div style="color:#38bdf8; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🔬 அறிவியல் இணைப்பு (Modern Science Correlation)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    உலகளாவிய உயிரியல் சமத்துவமும் ஒளி தத்துவமும் (Bio-centrism & Quantum Photons): வள்ளலாரின் அருட்பெருஞ்ஜோதி தத்துவம் அனைத்து உயிர்களிலும் விளங்கும் மூல ஆற்றலை 'ஒளி'யாகக் காண்கிறது; நவீன இயற்பியலும் பருப்பொருளை ஒளியின் உறைந்த வடிவமாகவே (E=mc²) காண்கிறது.
+                  </div>
+                </div>
+
+                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(45, 212, 191, 0.2); border-left:3px solid #2dd4bf; border-radius:10px; padding:16px;">
+                  <div style="color:#2dd4bf; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
+                    🌍 உலகளாவிய வாழ்வியல் தேவை (Global World Application)
+                  </div>
+                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                    பசிப்பிணி நீக்குதலும் ஜீவகாருண்யமும் (Eradicating Hunger & Social Justice): ஏழை எளியோரின் பசி தீர்த்தலும் அனைத்து உயிர்களையும் தன்னுயிர் போல் போற்றுதலும்.
+                  </div>
+                </div>
+              </div>
+
+              <div style="background:rgba(212, 175, 55, 0.06); border:1px solid rgba(212, 175, 55, 0.25); border-radius:10px; padding:14px 18px;">
+                <div style="color:var(--gold-soft); font-size:0.92rem; font-weight:700; line-height:1.6;">
+                  🔬 மாணவர் பரிசோதனை: ஒரு ஏழைக்கு அல்லது வாயில்லாப் பிராணிக்கு மனமுவந்து உணவளித்து வள்ளலாரின் கருணையை அனுபவியுங்கள்.
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- 13. LMS Chapter Progress Tracker -->
+            
+        <div id="u5-lms" class="lms-chapter-complete-bar" style="background:rgba(15,23,42,0.85); border:1px solid rgba(56,189,248,0.3); border-radius:14px; padding:16px 20px; margin: 24px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+          <div>
+            <div style="color:#ffffff; font-weight:700; font-size:0.98rem; display:flex; align-items:center; gap:8px;">
+              <span class="wbs-code">WBS 8.5.12</span>
+              <span>🎓 மாணவர் அத்தியாயப் படிப்புப் பதிவு (LMS Progress Check):</span>
+            </div>
+            <div style="color:#94a3b8; font-size:0.85rem; margin-top:3px;">
+              இப்பாடத்தின் விளக்கங்கள், பாடல்கள், அறிவியல் ஆய்வுகளைப் படித்து முடித்தவுடன் குறிக்கவும்.
+            </div>
+          </div>
+          <button type="button" class="lms-mark-btn" id="lms-btn-8-5" onclick="toggleChapterCompletion(8, 5)" style="background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.4); color:#38bdf8; padding:8px 18px; border-radius:10px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:all 0.2s ease;">
+            <span class="lms-icon" id="lms-icon-8-5">○</span>
+            <span class="lms-text" id="lms-text-8-5">பாடம் நிறைவுற்றது (+50 XP)</span>
+          </button>
+        </div>
+        
+
             <!-- Navigation Stepper Footer -->
             <div class="lesson-nav-footer">
               <button type="button" class="lesson-nav-btn lesson-nav-prev" onclick="selectChapter(4)">← முந்தைய பாடம் 4</button>
@@ -2306,6 +2682,54 @@
         document.body.style.overflow = '';
       }
     }
+
+    function toggleChapterCompletion(grade, unit) {
+      var key = 'gkd_completed_' + grade + '_' + unit;
+      var isDone = localStorage.getItem(key) === 'true';
+      localStorage.setItem(key, isDone ? 'false' : 'true');
+      updateLmsButton(grade, unit, !isDone);
+      updateGradeProgress(grade, 5);
+    }
+
+    function updateLmsButton(grade, unit, done) {
+      var btn = document.getElementById('lms-btn-' + grade + '-' + unit);
+      var icon = document.getElementById('lms-icon-' + grade + '-' + unit);
+      var text = document.getElementById('lms-text-' + grade + '-' + unit);
+      if (!btn) return;
+      if (done) {
+        btn.style.background = 'rgba(45, 212, 191, 0.2)';
+        btn.style.borderColor = 'rgba(45, 212, 191, 0.6)';
+        btn.style.color = '#2dd4bf';
+        if (icon) icon.textContent = '✓';
+        if (text) text.textContent = 'நிறைவு செய்யப்பட்டது! (+50 XP)';
+      } else {
+        btn.style.background = 'rgba(56, 189, 248, 0.12)';
+        btn.style.borderColor = 'rgba(56, 189, 248, 0.4)';
+        btn.style.color = '#38bdf8';
+        if (icon) icon.textContent = '○';
+        if (text) text.textContent = 'பாடம் நிறைவுற்றது (+50 XP)';
+      }
+    }
+
+    function updateGradeProgress(grade, totalUnits) {
+      var doneCount = 0;
+      for (var u = 1; u <= totalUnits; u++) {
+        var isDone = localStorage.getItem('gkd_completed_' + grade + '_' + u) === 'true';
+        updateLmsButton(grade, u, isDone);
+        if (isDone) doneCount++;
+      }
+      var pct = Math.round((doneCount / totalUnits) * 100);
+      var bar = document.getElementById('gradeProgressBar-' + grade);
+      var pctEl = document.getElementById('gradeProgressPercent-' + grade);
+      var txtEl = document.getElementById('gradeProgressText-' + grade);
+      if (bar) bar.style.width = pct + '%';
+      if (pctEl) pctEl.textContent = pct + '%';
+      if (txtEl) txtEl.textContent = 'முன்னேற்றம்: ' + doneCount + ' / ' + totalUnits + ' பாடம் நிறைவு';
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      updateGradeProgress(8, 5);
+    });
   </script>
 </body>
 </html>
