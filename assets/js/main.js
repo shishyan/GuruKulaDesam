@@ -1135,9 +1135,13 @@ function resolvePageContext() {
 
   const contextMap = {
     'index.html': { root: 'முகப்பு', title: 'ஆன்மீகப் பெருவெளி', desc: '580 பக்தி இசை வெளியீடுகள்' },
-    'kalvi.html': { root: 'வாழ்வியல்', title: 'வாழ்வியல் நெறி & இல்லற தர்மம்', desc: 'தரம் 1 முதல் 12 வரையிலான உன்னத இல்லற தர்மம் & சான்றாண்மை' },
+    'kalvi.html': { root: 'வாழ்வியல்', title: '12 வகுப்புகள் பாடநெறி & வாழ்வியல் மையம்', desc: 'தரம் 1 முதல் 12 வரையிலான உன்னத இல்லற தர்மம் & சான்றாண்மை' },
+    'school.html': { root: 'கல்வி', title: 'குருகுல இணையப் பள்ளி போர்டல்', desc: '21-ஆம் நூற்றாண்டு நவீன மாணவர் கற்றல் தளம்' },
+    'higher-studies.html': { root: 'கல்வி', title: 'வேதாந்த வித்யாபீடம் — உயர்கல்வித் தளம்', desc: 'பிரஸ்தானத்ரயம், மெய்கண்ட சாத்திரங்கள் & அத்வைத ஆய்வு' },
     'virtues.html': { root: 'வாழ்வியல்', title: 'அகர வரிசை நற்பண்பு நெறிமுறை', desc: '30+ நற்பண்புகள் • 4 வாழ்வியல் பருவங்கள்' },
-    'tharam-1.html': { root: 'வாழ்வியல்', title: 'தரம் 1 (Grade 1)', desc: 'பாலப் பருவ அன்பு & இல்லறத் தொடக்கப் பழக்கங்கள்' },
+    'syllabus.html': { root: 'பாடத்திட்டம்', title: 'முழுமையான சைவ சித்தாந்த பாடத்திட்டம்', desc: 'WBS முறைசார் பாடநெறி & பதஞ்சலி 7-படிநிலை மதிப்பீடு' },
+    'classes.html': { root: 'வகுப்புகள்', title: 'பாடநெறி நேரடி வகுப்புகள் & அட்டவணை', desc: 'குருகுல முறை நேரடிப் பயிற்சி & வழிகாட்டல்' },
+    'tharam-1.html': { root: 'வாழ்வியல்', title: 'தரம் 1 (Grade 1)', desc: 'பாலப் பருவ அன்பு & இல்லறத் தொடக்கப் பழக்கங்கள் (60 தாள்கள்)' },
     'tharam-2.html': { root: 'வாழ்வியல்', title: 'தரம் 2 (Grade 2)', desc: 'சிவ சின்னங்கள், பக்தி & இல்லற தர்மம்' },
     'tharam-3.html': { root: 'வாழ்வியல்', title: 'தரம் 3 (Grade 3)', desc: 'நல்வழி, ஒழுக்கம் & ஆசாரக் கல்வி' },
     'tharam-4.html': { root: 'வாழ்வியல்', title: 'தரம் 4 (Grade 4)', desc: 'கொன்றை வேந்தன் & இல்லற நன்னெறி' },
@@ -1146,8 +1150,8 @@ function resolvePageContext() {
     'tharam-7.html': { root: 'வாழ்வியல்', title: 'தரம் 7 (Grade 7)', desc: 'திருமுறைகள் & நாயன்மார் தியாக வரலாறு' },
     'tharam-8.html': { root: 'வாழ்வியல்', title: 'தரம் 8 (Grade 8)', desc: 'பொறையுடைமை, ஆசிரம தர்மம் & ஆலய தத்துவம்' },
     'tharam-9.html': { root: 'வாழ்வியல்', title: 'தரம் 9 (Grade 9)', desc: 'சான்றாண்மை, புலனடக்கம் & குடும்ப மாண்பு' },
-    'tharam-10.html': { root: 'வாழ்வியல்', title: 'தரம் 10 (Grade 10)', desc: 'O/L வாழ்வியல் நன்னெறி & இல்லற மாண்பு' },
-    'tharam-11.html': { root: 'வாழ்வியல்', title: 'தரம் 11 (Grade 11)', desc: 'A/L உயர்தர தத்துவ ஆய்வு & சால்பு' },
+    'tharam-10.html': { root: 'வாழ்வியல்', title: 'தரம் 10 (Grade 10)', desc: 'O/L வாழ்வியல் நன்னெறி & பதி-பசு-பாச ஆய்வு' },
+    'tharam-11.html': { root: 'வாழ்வியல்', title: 'தரம் 11 (Grade 11)', desc: 'A/L உயர்தர தத்துவ ஒப்பாய்வு & சிவஞானபோதம்' },
     'tharam-12.html': { root: 'வாழ்வியல்', title: 'தரம் 12 (Grade 12)', desc: 'உன்னத இல்லற தர்மம் வழி ஆத்ம நிர்வாணம் / முக்தி' },
     'saiva-neri.html': { root: 'சைவ நெறி', title: 'பன்னிரு திருமுறைகள்', desc: '172 சிவத் திருப்பதிகங்கள் & ருத்ரம்' },
     'murugan.html': { root: 'வழிபாட்டு நெறி', title: 'முருகன் (Kaumaram)', desc: 'கந்த சஷ்டி, திருப்புகழ் & கானங்கள்' },
@@ -1156,10 +1160,10 @@ function resolvePageContext() {
     'vaishnava.html': { root: 'வழிபாட்டு நெறி', title: 'வைணவம் (Vaishnavam)', desc: 'விஷ்ணு, கிருஷ்ணர் & திவ்வியப் பிரபந்தம்' },
     'thirukkural.html': { root: 'தமிழ்மறை', title: 'திருக்குறள் (Thirukkural)', desc: '1330 அருங்குறள்கள் & இசைப்பாடல்கள்' },
     'sanmargam.html': { root: 'சன்மார்க்கம்', title: 'வள்ளலார் சுத்த சன்மார்க்கம்', desc: 'திருவருட்பா & ஆன்மநேய ஒருமைப்பாடு' },
-    'irai-isai-virundhu.html': { root: 'இசை', title: 'இறை இசை விருந்து', desc: 'ஆன்மீக பக்தி ஆல்பங்கள்' },
-    'syllabus.html': { root: 'வாழ்வியல்', title: 'முழுமையான பாடத்திட்டம்', desc: 'வேத & சைவ வாழ்வியல் நெறி அமைப்பு' },
-    'classes.html': { root: 'வகுப்புகள்', title: 'பாடநெறி அட்டவணை', desc: 'குருகுல கல்வி வகுப்புகள்' },
-    'about.html': { root: 'காஞ்சி மகா பெரியவா', title: 'தெய்வத்தின் குரல் & தரிசனம்', desc: 'அருளுரைகள் & வழிகாட்டல்' }
+    'irai-isai-virundhu.html': { root: 'இசை', title: 'இறை இசை விருந்து', desc: '5 சிறப்புப் பக்தி ஆல்பங்கள்' },
+    'youtube.html': { root: 'காணொளி', title: 'YouTube காணொளி அரங்கம்', desc: '580 பக்தி இசை & பாடல்கள்' },
+    'about.html': { root: 'காஞ்சி மகா பெரியவா', title: 'தெய்வத்தின் குரல் & தரிசனம்', desc: 'அருளுரைகள் & வழிகாட்டல்' },
+    'google-site.html': { root: 'இணைப்பு', title: 'அதிகாரப்பூர்வ கூகிள் தளம்', desc: 'Google Sites நேரடி பார்வை' }
   };
 
   return contextMap[filename] || { root: 'குரு குல தேசம்', title: 'ஆன்மீகக் களஞ்சியம்', desc: '' };
@@ -1222,6 +1226,20 @@ function getContextTabsForPage() {
     ];
   }
 
+  // 2c. Higher Studies Vidyapeeth (higher-studies.html)
+  if (filename === 'higher-studies.html') {
+    return [
+      { id: 'tab-hs-hero', icon: '🏛️', label: 'வித்யாபீட அறிமுகம்', action: "scrollToSection('vidyaHero')", active: true },
+      { id: 'tab-hs-ug', icon: '📜', label: 'இளநிலை: பிரஸ்தானத்ரயம்', action: "scrollToSection('tierUG')" },
+      { id: 'tab-hs-pg', icon: '🔱', label: 'முதுநிலை: மெய்கண்ட சாத்திரங்கள்', action: "scrollToSection('tierPG')" },
+      { id: 'tab-hs-phd', icon: '👑', label: 'கலாநிதி ஆய்வுப் பீடம்', action: "scrollToSection('tierPhD')" },
+      { id: 'tab-hs-glossary', icon: '📖', label: 'வேதாந்தக் கலைச்சொற்கள்', action: "scrollToSection('glossarySection')" },
+      { id: 'tab-hs-cert', icon: '📜', label: 'ஆய்வுப் பட்டயம்', action: "scrollToSection('fellowshipSection')" },
+      { id: 'tab-hs-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' },
+      { id: 'tab-hs-grades', icon: '🌿', label: '12 நிலைகள்', href: 'kalvi.html' }
+    ];
+  }
+
   // 3. Virtues Matrix (virtues.html)
   if (filename === 'virtues.html') {
     return [
@@ -1251,7 +1269,7 @@ function getContextTabsForPage() {
   // 5. Saiva Neri (saiva-neri.html)
   if (filename === 'saiva-neri.html') {
     return [
-      { id: 'tab-all-shiva', icon: '🔱', label: 'அனைத்து சிவப்பதிகங்கள்', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-all-shiva', icon: '🔱', label: 'அனைத்து சிவப்பதிகங்கள் (172)', action: "setTypeFilter('all')", active: true },
       { id: 'tab-thevaram', icon: '🌿', label: 'தேவாரம்', action: "filterByText('தேவாரம்')" },
       { id: 'tab-thiruvasagam', icon: '💎', label: 'திருவாசகம்', action: "filterByText('திருவாசகம்')" },
       { id: 'tab-thirumandhiram', icon: '🧘', label: 'திருமந்திரம்', action: "filterByText('திருமந்திரம்')" },
@@ -1272,7 +1290,8 @@ function getContextTabsForPage() {
   // 7. Thirukkural (thirukkural.html)
   if (filename === 'thirukkural.html') {
     return [
-      { id: 'tab-all-tk', icon: '📖', label: 'அனைத்து குறள்கள்', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-all-tk', icon: '📖', label: 'அனைத்து குறள்கள் (185)', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-illaraviyal', icon: '🏡', label: 'இல்லறவியல் (20)', action: "filterIllaraviyal()" },
       { id: 'tab-aram', icon: '🌿', label: 'அறத்துப்பால்', action: "filterByText('அறத்துப்பால்')" },
       { id: 'tab-porul', icon: '👑', label: 'பொருட்பால்', action: "filterByText('பொருட்பால்')" },
       { id: 'tab-inbam', icon: '🌺', label: 'காமத்துப்பால்', action: "filterByText('காமத்துப்பால்')" },
@@ -1283,14 +1302,39 @@ function getContextTabsForPage() {
   // 8. Sanmargam (sanmargam.html)
   if (filename === 'sanmargam.html') {
     return [
-      { id: 'tab-all-san', icon: '🪔', label: 'திருவருட்பா படைப்புகள்', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-all-san', icon: '🪔', label: 'திருவருட்பா படைப்புகள் (94)', action: "setTypeFilter('all')", active: true },
       { id: 'tab-jeeva', icon: '☀️', label: 'ஜீவகாருண்யம்', action: "filterByText('ஜீவகாருண்யம்')" },
       { id: 'tab-jyoti', icon: '🕯️', label: 'ஜோதி வழிபாடு', action: "filterByText('ஜோதி')" },
       { id: 'tab-audio-san', icon: '🎵', label: 'சன்மார்க்க இசை', action: "setTypeFilter('audio')" }
     ];
   }
 
-  // 9. About / Periyava (about.html)
+  // 9. Irai Isai Virundhu (irai-isai-virundhu.html)
+  if (filename === 'irai-isai-virundhu.html') {
+    return [
+      { id: 'tab-isai-all', icon: '🎵', label: '5 சிறப்புப் படைப்புகள்', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-isai-palum', icon: '🥛', label: 'பாலும் தெளிதேனும்', action: "filterByText('பாலும்')" },
+      { id: 'tab-isai-guru', icon: '🙏', label: 'குரு வணக்கம்', action: "filterByText('குரு வணக்கம்')" },
+      { id: 'tab-isai-kandhar', icon: '🔱', label: 'கந்தர் அநுபூதி', action: "filterByText('அநுபூதி')" },
+      { id: 'tab-isai-bharathi', icon: '🇮🇳', label: 'பாரதியார் கானம்', action: "filterByText('பாரதியார்')" },
+      { id: 'tab-isai-sivapuranam', icon: '🪔', label: 'சிவபுராணம்', action: "filterByText('சிவபுராணம்')" },
+      { id: 'tab-isai-yt', icon: '▶️', label: 'காணொளிகள்', href: 'youtube.html' }
+    ];
+  }
+
+  // 10. YouTube Vault (youtube.html)
+  if (filename === 'youtube.html') {
+    return [
+      { id: 'tab-yt-all', icon: '▶️', label: 'அனைத்து காணொளிகள் (580)', action: "setTypeFilter('all')", active: true },
+      { id: 'tab-yt-films', icon: '🎬', label: 'திரைப்படங்கள்', action: "setTypeFilter('film')" },
+      { id: 'tab-yt-audio', icon: '🎵', label: 'இசைப் பாடல்கள்', action: "setTypeFilter('audio')" },
+      { id: 'tab-yt-isai', icon: '🎶', label: 'இறை இசை', href: 'irai-isai-virundhu.html' },
+      { id: 'tab-yt-saiva', icon: '🔱', label: 'சைவ நெறி', href: 'saiva-neri.html' },
+      { id: 'tab-yt-kural', icon: '📖', label: 'திருக்குறள்', href: 'thirukkural.html' }
+    ];
+  }
+
+  // 11. About / Periyava (about.html)
   if (filename === 'about.html') {
     return [
       { id: 'tab-periyava-darshan', icon: '🌟', label: 'மகா பெரியவா தரிசனம்', action: "scrollToSection('darshanSection')", active: true },
@@ -1300,13 +1344,33 @@ function getContextTabsForPage() {
     ];
   }
 
-  // 10. Syllabus / Classes
-  if (filename === 'syllabus.html' || filename === 'classes.html') {
+  // 12. Syllabus (syllabus.html)
+  if (filename === 'syllabus.html') {
     return [
-      { id: 'tab-full-syl', icon: '📚', label: 'முழு பாடத்திட்டம்', href: 'syllabus.html', active: filename === 'syllabus.html' },
-      { id: 'tab-classes', icon: '🏛️', label: 'வகுப்புகள் அட்டவணை', href: 'classes.html', active: filename === 'classes.html' },
-      { id: 'tab-virtues-map', icon: '🔤', label: 'நற்பண்பு நெறிமுறை', href: 'virtues.html' },
-      { id: 'tab-grade-portal', icon: '🌿', label: '12 வாழ்வியல் நிலைகள்', href: 'kalvi.html' }
+      { id: 'tab-syl-patanjali', icon: '🧘', label: 'பதஞ்சலி 7 படிநிலைகள்', action: "scrollToSection('patanjaliSyllabus')", active: true },
+      { id: 'tab-syl-meter', icon: '🪞', label: 'சுய ஆய்வு மதிப்பீடு', action: "scrollToSection('patanjaliAssessmentTool')" },
+      { id: 'tab-syl-virtues', icon: '🔤', label: '4 வாழ்வியல் பருவங்கள்', action: "scrollToSection('virtue-mapping')" },
+      { id: 'tab-syl-grades', icon: '🌿', label: '12 வகுப்புகள் பாடநெறி', href: 'kalvi.html' },
+      { id: 'tab-syl-classes', icon: '⏰', label: 'வகுப்பு அட்டவணை', href: 'classes.html' }
+    ];
+  }
+
+  // 13. Classes (classes.html)
+  if (filename === 'classes.html') {
+    return [
+      { id: 'tab-classes-overview', icon: '🏛️', label: 'வகுப்புகள் அட்டவணை', action: "scrollToSection('timetableSection')", active: true },
+      { id: 'tab-classes-syl', icon: '📚', label: 'முழு பாடத்திட்டம்', href: 'syllabus.html' },
+      { id: 'tab-classes-grades', icon: '🌿', label: '12 வாழ்வியல் நிலைகள்', href: 'kalvi.html' },
+      { id: 'tab-classes-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' }
+    ];
+  }
+
+  // 14. Google Sites Mirror (google-site.html)
+  if (filename === 'google-site.html') {
+    return [
+      { id: 'tab-gs-frame', icon: '🌐', label: 'கூகிள் தளம்', action: "scrollToSection('googleSiteFrame')", active: true },
+      { id: 'tab-gs-about', icon: '🏛️', label: 'குருவருள்', href: 'about.html' },
+      { id: 'tab-gs-home', icon: '🏠', label: 'முகப்பு', href: 'index.html' }
     ];
   }
 
@@ -1743,6 +1807,76 @@ function mountAppShell() {
   loadUserPreferences();
   restorePatanjaliAssessment();
   restorePalmLeafMode();
+  ensurePageBreadcrumb();
+  highlightActiveSidebarGroup();
+}
+
+/**
+ * Standardized Page Breadcrumb: Ensures every non-home page has a clear,
+ * elegant navigation breadcrumb at the top of its main content area.
+ */
+function ensurePageBreadcrumb() {
+  const main = document.querySelector('main.main-content');
+  if (!main) return;
+  // If a breadcrumb already exists in the document, don't duplicate
+  if (main.querySelector('.page-breadcrumb') || main.querySelector('.breadcrumb-container')) return;
+
+  const path = window.location.pathname.toLowerCase();
+  const filename = path.split('/').pop() || 'index.html';
+  if (filename === 'index.html' || filename === '') return; // No breadcrumb needed on root homepage
+
+  const ctx = resolvePageContext();
+  let rootLink = 'index.html';
+  if (ctx.root === 'வாழ்வியல்' || ctx.root === 'கல்வி' || ctx.root === 'பாடத்திட்டம்' || ctx.root === 'வகுப்புகள்') {
+    rootLink = 'kalvi.html';
+  } else if (ctx.root === 'சைவ நெறி' || ctx.root === 'வழிபாட்டு நெறி') {
+    rootLink = 'saiva-neri.html';
+  } else if (ctx.root === 'தமிழ்மறை') {
+    rootLink = 'thirukkural.html';
+  } else if (ctx.root === 'சன்மார்க்கம்') {
+    rootLink = 'sanmargam.html';
+  } else if (ctx.root === 'இசை' || ctx.root === 'காணொளி') {
+    rootLink = 'irai-isai-virundhu.html';
+  } else if (ctx.root === 'காஞ்சி மகா பெரியவா') {
+    rootLink = 'about.html';
+  }
+
+  const bc = document.createElement('div');
+  bc.className = 'page-breadcrumb';
+  bc.innerHTML = `
+    <a href="index.html">🏠 முகப்பு</a>
+    <span class="bc-sep">›</span>
+    <a href="${rootLink}">${ctx.root}</a>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">${ctx.title}</span>
+  `;
+  main.prepend(bc);
+}
+
+/**
+ * Automatically highlights and expands the active group in the left strip bar
+ * so the user always knows exactly where they are in the site hierarchy.
+ */
+function highlightActiveSidebarGroup() {
+  const path = window.location.pathname.toLowerCase();
+  const filename = path.split('/').pop() || 'index.html';
+
+  document.querySelectorAll('#leftStripBar .strip-group').forEach(group => {
+    // Check if any link inside matches current filename
+    const matchingLink = group.querySelector(`a[href="${filename}"]`);
+    if (matchingLink) {
+      group.classList.add('active', 'open');
+      matchingLink.classList.add('active');
+      const ind = group.querySelector('.strip-sub-indicator');
+      if (ind) ind.innerText = '▴';
+    } else if (filename.startsWith('tharam-') && group.getAttribute('data-group') === 'kalvi') {
+      group.classList.add('active', 'open');
+      const ind = group.querySelector('.strip-sub-indicator');
+      if (ind) ind.innerText = '▴';
+      const gradePill = group.querySelector(`a[href="${filename}"]`);
+      if (gradePill) gradePill.classList.add('active');
+    }
+  });
 }
 
 // Auto mount when DOM is ready

@@ -1586,32 +1586,6 @@
       </div>
     </section>
 
-  </main>
-
-  <!-- Mobile Floating Drawer Toggle Button & Backdrop -->
-  <button type="button" class="course-sidebar-mobile-toggle" onclick="toggleCourseSidebar()" aria-label="பொருளடக்கம் காண்க">
-    📋 பொருளடக்கம் (Sections)
-  </button>
-  <div class="course-sidebar-overlay" id="courseSidebarOverlay" onclick="closeCourseSidebar()"></div>
-
-
-  <!-- Sheet Zoom Modal -->
-  <div class="sheet-modal" id="sheetModal" onclick="if(event.target === this) closeSheetModal()">
-    <div class="sheet-modal-box">
-      <div class="sheet-modal-header">
-        <div class="sheet-modal-title" id="sheetModalTitle">தரம் 1 பாட நூல் பக்கம்</div>
-        <button onclick="closeSheetModal()" style="background:transparent; border:none; color:#fff; font-size:1.5rem; cursor:pointer;">✕</button>
-      </div>
-      <div class="sheet-modal-body">
-        <img id="sheetModalImg" src="" alt="Enlarged Sheet">
-      </div>
-      <div style="padding:10px 20px; background:rgba(12,15,21,0.95); display:flex; justify-content:space-between; align-items:center;">
-        <span style="color:var(--text-muted); font-size:0.85rem;">விசைப்பலகை 'ESC' அழுத்தி மூடலாம்</span>
-        <button onclick="closeSheetModal()" style="padding:6px 14px; background:var(--gold); border:none; border-radius:6px; font-weight:700; cursor:pointer;">மூடுக (Close)</button>
-      </div>
-    </div>
-  </div>
-
   
     <!-- Alphabets to Virtue Mapping Section (Grade 1 Specific) -->
     <section id="gradeVirtueBox" class="scripture-study-section" style="margin-top: 36px; margin-bottom: 36px; border: 1px solid var(--border-gold-hover); background: rgba(15, 18, 26, 0.95); box-shadow: 0 10px 30px rgba(0,0,0,0.6);">
@@ -1791,8 +1765,33 @@
           <strong style="color: #fbbf24; font-size: 0.9rem; display: block; margin-bottom: 4px;">3. உயிர்களிடத்தில் அன்பு</strong>
           <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">பறவைகளுக்கும் பிராணிகளுக்கும் நீர்/தானியம் வைத்து, தாவரங்களை அன்போடு வளர்த்து வருதல்.</div>
         </div>
-      </div>
     </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Mobile Floating Drawer Toggle Button & Backdrop -->
+  <button type="button" class="course-sidebar-mobile-toggle" onclick="toggleCourseSidebar()" aria-label="பொருளடக்கம் காண்க">
+    📋 பொருளடக்கம் (Sections)
+  </button>
+  <div class="course-sidebar-overlay" id="courseSidebarOverlay" onclick="closeCourseSidebar()"></div>
+
+  <!-- Sheet Zoom Modal -->
+  <div class="sheet-modal" id="sheetModal" onclick="if(event.target === this) closeSheetModal()">
+    <div class="sheet-modal-box">
+      <div class="sheet-modal-header">
+        <div class="sheet-modal-title" id="sheetModalTitle">தரம் 1 பாட நூல் பக்கம்</div>
+        <button onclick="closeSheetModal()" style="background:transparent; border:none; color:#fff; font-size:1.5rem; cursor:pointer;">✕</button>
+      </div>
+      <div class="sheet-modal-body">
+        <img id="sheetModalImg" src="" alt="Enlarged Sheet">
+      </div>
+      <div style="padding:10px 20px; background:rgba(12,15,21,0.95); display:flex; justify-content:space-between; align-items:center;">
+        <span style="color:var(--text-muted); font-size:0.85rem;">விசைப்பலகை 'ESC' அழுத்தி மூடலாம்</span>
+        <button onclick="closeSheetModal()" style="padding:6px 14px; background:var(--gold); border:none; border-radius:6px; font-weight:700; cursor:pointer;">மூடுக (Close)</button>
+      </div>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="footer-container">
