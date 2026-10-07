@@ -1509,3 +1509,20 @@ document.addEventListener('click', (e) => {
     return;
   }
 });
+
+// Graceful fallback for Google Sites scan images blocked cross-site (CORP: same-site)
+document.addEventListener('error', function (e) {
+  var img = e.target;
+  if (!img || img.tagName !== 'IMG' || !/sitesv-images-rt/.test(img.src || '')) return;
+  img.style.display = 'none';
+  var thumb = img.closest('.sheet-thumb');
+  if (thumb && !thumb.querySelector('.sheet-fallback')) {
+    var d = document.createElement('div');
+    d.className = 'sheet-fallback';
+    d.style.cssText = 'display:flex;align-items:center;justify-content:center;min-height:140px;color:#94a3b8;font-size:0.85rem;text-align:center;padding:12px;';
+    d.textContent = '📄 பக்கம் — Google Site இல் காண்க ↗';
+    thumb.appendChild(d);
+    var ov = thumb.querySelector('.sheet-zoom-overlay'); if (ov) ov.style.display = 'none';
+    thumb.removeAttribute('onclick');
+  }
+}, true);
