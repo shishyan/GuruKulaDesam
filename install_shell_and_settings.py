@@ -1,482 +1,908 @@
-// Guru Kula Desam - Modern Video Portal Logic with Full Lyrics & Meaning Support
-let currentFilter = 'all';
-let currentSearch = '';
+import os
+import re
 
-function enrichItem(it) {
-  if (!it) return it;
-  const lookup = (window.GURUKULA_ITEMS_BY_ID && window.GURUKULA_ITEMS_BY_ID[it.id]) || {};
-  return {
-    ...lookup,
-    ...it,
-    author: it.author || lookup.author || '',
-    source: it.source || lookup.source || '',
-    lyrics: it.lyrics || lookup.lyrics || '',
-    meaning: it.meaning || lookup.meaning || '',
-    category: it.category || lookup.category || ''
-  };
+print("=== Starting Left Strip Bar, Context Top Bar & User Profile/Preferences Integration ===")
+
+# --- 1. CSS UPGRADE ---
+css_paths = ['assets/css/style.css', 'docs/assets/css/style.css', 'site/assets/css/style.css']
+
+SHELL_CSS = """
+/* -------------------------------------------------------------------------- */
+/* THEMES & USER PREFERENCES STYLES                                            */
+/* -------------------------------------------------------------------------- */
+:root {
+  --user-font-scale: 1;
 }
 
-function initPage(itemsData) {
-  if (Array.isArray(itemsData)) {
-    window.pageItems = itemsData.map(enrichItem);
-  } else {
-    window.pageItems = [];
-  }
-  renderCards();
+body {
+  font-size: calc(1rem * var(--user-font-scale, 1));
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-function getFilteredItems() {
-  if (!window.pageItems) return [];
-  return window.pageItems.filter(it => {
-    if (currentFilter !== 'all' && it.type !== currentFilter) return false;
-    if (currentSearch) {
-      const q = currentSearch.toLowerCase();
-      const titleMatch = (it.title || '').toLowerCase().includes(q);
-      const idMatch = (it.id || '').toLowerCase().includes(q);
-      const authorMatch = (it.author || '').toLowerCase().includes(q);
-      const sourceMatch = (it.source || '').toLowerCase().includes(q);
-      const lyricsMatch = (it.lyrics || '').toLowerCase().includes(q);
-      const meaningMatch = (it.meaning || '').toLowerCase().includes(q);
-      return titleMatch || idMatch || authorMatch || sourceMatch || lyricsMatch || meaningMatch;
-    }
-    return true;
-  });
+/* Midnight Navy Theme */
+body.theme-midnight {
+  --bg-dark: #080d1a;
+  --bg-surface: #0e172e;
+  --bg-card: rgba(16, 26, 48, 0.85);
+  --border-gold: rgba(212, 175, 55, 0.3);
+  --border-gold-hover: rgba(255, 215, 0, 0.65);
+  background-color: #080d1a !important;
+  background-image: linear-gradient(180deg, rgba(8, 13, 26, 0.82) 0%, rgba(8, 13, 26, 0.92) 100%), url('../images/western-ghats-bg.jpg') !important;
 }
 
-function escapeHtml(str) {
-  if (!str) return '';
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
+/* AMOLED Pure Black Theme */
+body.theme-amoled {
+  --bg-dark: #000000;
+  --bg-surface: #0a0a0a;
+  --bg-card: rgba(14, 14, 14, 0.95);
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --border-gold: rgba(212, 175, 55, 0.35);
+  --border-gold-hover: rgba(255, 215, 0, 0.7);
+  background-color: #000000 !important;
+  background-image: none !important;
 }
 
-function renderCards() {
-  const items = getFilteredItems();
-  const grid = document.getElementById('cardsGrid');
-  const countBadge = document.getElementById('itemCountBadge');
-
-  if (countBadge) {
-    countBadge.innerText = `காட்டப்படும் பாடல்கள்: ${items.length}`;
-  }
-
-  if (!grid) return;
-
-  if (items.length === 0) {
-    grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 70px 20px; color: var(--text-muted); font-size: 1.15rem;">பொருத்தமான பாடல்கள் காணப்படவில்லை (No matching items found)</div>';
-    return;
-  }
-
-  grid.innerHTML = items.map(it => {
-    const safeTitle = escapeHtml(it.title);
-    const safeAuthor = escapeHtml(it.author);
-    const safeSource = escapeHtml(it.source);
-    const formattedLyrics = it.lyrics ? escapeHtml(it.lyrics).replace(/\\n/g, '<br>') : '';
-    const safeMeaning = escapeHtml(it.meaning);
-    const hasDetails = Boolean(it.lyrics || it.meaning || it.author);
-
-    return `
-    <div class="video-card" id="card-${it.id}">
-      <div class="card-thumbnail" onclick="openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')">
-        <img src="https://i.ytimg.com/vi/${it.id}/mqdefault.jpg" loading="lazy" alt="${safeTitle}">
-        <span class="card-badge ${it.type === 'film' ? 'badge-film' : 'badge-audio'}">${it.type === 'film' ? 'Film' : 'Audio'}</span>
-        <div class="card-play-btn" title="காணொளியை இயக்குக">▶</div>
-      </div>
-      <div class="card-body">
-        <div class="card-title" onclick="openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')" title="${safeTitle}">
-          ${safeTitle}
-        </div>
-
-        ${(safeAuthor || safeSource) ? `
-          <div class="card-meta-line">
-            ${safeAuthor ? `<span class="card-meta-tag">✍️ ${safeAuthor}</span>` : ''}
-            ${safeSource ? `<span class="card-meta-tag">📖 ${safeSource}</span>` : ''}
-          </div>
-        ` : ''}
-
-        <div class="card-footer">
-          <span class="tag">${it.type === 'film' ? '🎬 முழுப் படம் (Film)' : '🎵 இசை வெளியீடு (Audio)'}</span>
-          <a href="https://www.youtube.com/watch?v=${it.id}" target="_blank" rel="noopener noreferrer" class="card-yt-link" onclick="event.stopPropagation()">YouTube ↗</a>
-        </div>
-
-        ${hasDetails ? `
-          <button type="button" class="card-lyrics-toggle-btn" onclick="toggleCardLyrics(event, '${it.id}')" aria-expanded="false">
-            <span>📜 வரிகள் &amp; பொருள் விளக்கம்</span>
-            <span class="lyrics-chevron">▾</span>
-          </button>
-
-          <div class="card-lyrics-drawer" id="drawer-${it.id}" style="display: none;">
-            ${it.lyrics ? `
-              <div class="drawer-section">
-                <div class="drawer-section-title">📜 பாடல் வரிகள் (Lyrics)</div>
-                <div class="drawer-lyrics-text">${formattedLyrics}</div>
-              </div>
-            ` : ''}
-
-            ${it.meaning ? `
-              <div class="drawer-section">
-                <div class="drawer-section-title">💡 பொருள் விளக்கம் (Meaning)</div>
-                <div class="drawer-meaning-text">${safeMeaning}</div>
-              </div>
-            ` : ''}
-
-            <button type="button" class="drawer-play-btn" onclick="openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}')">
-              ▶ இந்த காணொளியை இயக்குக (Play Video)
-            </button>
-          </div>
-        ` : ''}
-      </div>
-    </div>
-    `;
-  }).join('');
+/* Tamil Font Selection */
+body.font-noto {
+  font-family: 'Noto Sans Tamil', 'Outfit', sans-serif !important;
+}
+body.font-mukta {
+  font-family: 'Mukta Malar', 'Outfit', serif !important;
 }
 
-function toggleCardLyrics(e, itemId) {
-  if (e) {
-    e.preventDefault();
-    e.stopPropagation();
-  }
-  const drawer = document.getElementById('drawer-' + itemId);
-  const card = document.getElementById('card-' + itemId);
-  const btn = card ? card.querySelector('.card-lyrics-toggle-btn') : null;
-  if (!drawer) return;
-
-  const isOpen = drawer.style.display !== 'none';
-  drawer.style.display = isOpen ? 'none' : 'block';
-  if (btn) {
-    btn.classList.toggle('open', !isOpen);
-    btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
-  }
+/* -------------------------------------------------------------------------- */
+/* LEFT STRIP BAR (SIDEBAR DOCK)                                              */
+/* -------------------------------------------------------------------------- */
+.left-strip-bar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 68px;
+  background: rgba(10, 13, 20, 0.96);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-right: 1px solid var(--border-gold);
+  z-index: 850;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s ease;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.6);
+  user-select: none;
 }
 
-function setTypeFilter(type) {
-  currentFilter = type;
-  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-  const target = document.getElementById('filter-' + type);
-  if (target) target.classList.add('active');
-  renderCards();
+.left-strip-bar.expanded {
+  width: 230px;
 }
 
-function onSearchInput(val) {
-  currentSearch = val;
-  renderCards();
+.strip-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
 }
 
-function openPlayer(videoId, title) {
-  let modal = document.getElementById('playerModal');
-  let iframe = document.getElementById('modalIframe');
-  let titleEl = document.getElementById('modalTitle');
-
-  // If modal doesn't exist on page, create dynamically
-  if (!modal) {
-    modal = createPlayerModalElement();
-    document.body.appendChild(modal);
-    iframe = document.getElementById('modalIframe');
-    titleEl = document.getElementById('modalTitle');
-  }
-
-  if (!iframe) return;
-
-  iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
-  if (titleEl) titleEl.innerText = title;
-
-  // Resolve item details
-  let item = (window.GURUKULA_ITEMS_BY_ID && window.GURUKULA_ITEMS_BY_ID[videoId]) ||
-             (window.pageItems && window.pageItems.find(x => x.id === videoId)) ||
-             { id: videoId, title: title };
-  item = enrichItem(item);
-
-  // Render modal details section below the video
-  let detailsEl = document.getElementById('modalDetails');
-  if (!detailsEl) {
-    detailsEl = document.createElement('div');
-    detailsEl.id = 'modalDetails';
-    detailsEl.className = 'modal-details';
-    const box = document.getElementById('playerModalBox') || modal.querySelector('.player-modal-box');
-    if (box) box.appendChild(detailsEl);
-  }
-
-  const safeTitle = escapeHtml(item.title || title);
-  const safeAuthor = escapeHtml(item.author || '');
-  const safeSource = escapeHtml(item.source || '');
-  const formattedLyrics = item.lyrics ? escapeHtml(item.lyrics).replace(/\n/g, '<br>') : 'இப்பாடலின் வரிகள் சேகரிக்கப்பட்டு வருகின்றன.';
-  const safeMeaning = escapeHtml(item.meaning || 'இப்பாடலின் தத்துவப் பொருள் விளக்கம் சேகரிக்கப்பட்டு வருகிறது.');
-  const rawLyrics = item.lyrics || '';
-
-  detailsEl.innerHTML = `
-    <div class="modal-meta-row">
-      <div class="modal-meta-tags">
-        <span class="modal-meta-tag badge-${item.type === 'film' ? 'film' : 'audio'}">
-          ${item.type === 'film' ? '🎬 முழுப் படம் (Cinematic Film)' : '🎵 இசை வெளியீடு (Sacred Audio)'}
-        </span>
-        ${safeAuthor ? `<span class="modal-meta-tag">✍️ ஆசிரியர்: <strong>${safeAuthor}</strong></span>` : ''}
-        ${safeSource ? `<span class="modal-meta-tag">📖 மூலம்: <strong>${safeSource}</strong></span>` : ''}
-      </div>
-
-      <div class="modal-action-buttons">
-        <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" class="modal-btn modal-btn-yt">
-          ▶ YouTube-ல் காண்க ↗
-        </a>
-        ${rawLyrics ? `
-          <button type="button" class="modal-btn modal-btn-copy" onclick="copyLyricsText(this, ${JSON.stringify(rawLyrics)})">
-            📋 வரிகளை நகலெடு
-          </button>
-        ` : ''}
-      </div>
-    </div>
-
-    <div class="modal-content-grid">
-      <div class="modal-box modal-lyrics-box">
-        <div class="modal-box-header">
-          <span class="modal-box-icon">📜</span>
-          <h4 class="modal-box-title">பாடல் வரிகள் (Sacred Lyrics)</h4>
-        </div>
-        <div class="modal-box-body lyrics-body">${formattedLyrics}</div>
-      </div>
-
-      <div class="modal-box modal-meaning-box">
-        <div class="modal-box-header">
-          <span class="modal-box-icon">💡</span>
-          <h4 class="modal-box-title">பொருள் விளக்கம் &amp; தத்துவம் (Spiritual Meaning)</h4>
-        </div>
-        <div class="modal-box-body meaning-body">${safeMeaning}</div>
-      </div>
-    </div>
-
-    <div class="modal-bottom-actions">
-      <button type="button" class="modal-btn modal-btn-top" onclick="scrollToModalTop()">
-        ▲ காணொளிக்குத் திரும்புக (Back to Video)
-      </button>
-      <button type="button" class="modal-btn modal-btn-close-bottom" onclick="closePlayer()">
-        ✕ மூடுக (Close Player)
-      </button>
-    </div>
-  `;
-
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-
-  // Scroll modal box to top when opening
-  const modalBox = document.getElementById('playerModalBox') || modal.querySelector('.player-modal-box');
-  if (modalBox) {
-    modalBox.scrollTop = 0;
-  }
+.strip-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  overflow: hidden;
 }
 
-function toggleModalFullscreen() {
-  const modalBox = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
-  const btn = document.querySelector('.modal-fullscreen-btn');
-  
-  if (!document.fullscreenElement && !document.webkitFullscreenElement) {
-    const target = modalBox || document.documentElement;
-    if (target.requestFullscreen) {
-      target.requestFullscreen().catch(() => {
-        if (modalBox) modalBox.classList.toggle('modal-theater-mode');
-      });
-    } else if (target.webkitRequestFullscreen) {
-      target.webkitRequestFullscreen();
-    } else {
-      if (modalBox) modalBox.classList.toggle('modal-theater-mode');
-    }
-    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit)';
-  } else {
-    if (document.exitFullscreen) {
-      document.exitFullscreen().catch(() => {});
-    } else if (document.webkitExitFullscreen) {
-      document.webkitExitFullscreen();
-    }
-    if (modalBox) modalBox.classList.remove('modal-theater-mode');
-    if (btn) btn.innerHTML = '⛶ முழுத்திரை';
-  }
+.strip-emblem {
+  font-size: 1.6rem;
+  color: var(--gold-bright);
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.6));
+  line-height: 1;
+  flex-shrink: 0;
 }
 
-document.addEventListener('fullscreenchange', function() {
-  const btn = document.querySelector('.modal-fullscreen-btn');
-  const modalBox = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
-  if (!document.fullscreenElement) {
-    if (modalBox) modalBox.classList.remove('modal-theater-mode');
-    if (btn) btn.innerHTML = '⛶ முழுத்திரை';
-  } else {
-    if (btn) btn.innerHTML = '⛶ இயல்பு (Exit)';
-  }
-});
+.strip-brand-text {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--gold-soft);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
 
-function scrollToModalDetails() {
-  const details = document.getElementById('modalDetails');
-  const box = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
-  if (details && box) {
-    const topPos = details.offsetTop - 55;
-    box.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+.left-strip-bar.expanded .strip-brand-text {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.strip-toggle-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--gold-soft);
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.strip-toggle-btn:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--gold);
+  color: #fff;
+}
+
+.strip-nav-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.strip-nav-list::-webkit-scrollbar {
+  width: 4px;
+}
+.strip-nav-list::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 2px;
+}
+
+.strip-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.strip-item:hover {
+  background: rgba(212, 175, 55, 0.12);
+  color: var(--gold-soft);
+}
+
+.strip-item.active {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.22), rgba(212, 175, 55, 0.06));
+  color: var(--gold-bright);
+  border-left: 3px solid var(--gold);
+}
+
+.strip-item-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+}
+
+.strip-item-label {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.left-strip-bar.expanded .strip-item-label {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Floating Tooltip when collapsed */
+.left-strip-bar:not(.expanded) .strip-item::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 74px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #141824;
+  color: var(--gold-soft);
+  border: 1px solid var(--border-gold);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.left-strip-bar:not(.expanded) .strip-item:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(4px);
+}
+
+.strip-footer-dock {
+  padding: 10px 8px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-shrink: 0;
+  background: rgba(8, 10, 16, 0.8);
+}
+
+.strip-dock-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.strip-dock-btn:hover {
+  background: rgba(212, 175, 55, 0.14);
+  color: var(--gold-bright);
+}
+
+.strip-dock-avatar {
+  font-size: 1.25rem;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.strip-dock-label {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.left-strip-bar.expanded .strip-dock-label {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Page Layout Offsets on Desktop */
+@media (min-width: 992px) {
+  body {
+    padding-left: 68px;
+    transition: padding-left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  body.strip-expanded {
+    padding-left: 230px;
   }
 }
 
-function scrollToModalTop() {
-  const box = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
-  if (box) {
-    box.scrollTo({ top: 0, behavior: 'smooth' });
+/* Mobile Off-canvas Drawer */
+@media (max-width: 991px) {
+  .left-strip-bar {
+    transform: translateX(-100%);
+    width: 240px;
+  }
+  .left-strip-bar.mobile-open {
+    transform: translateX(0);
+  }
+  .left-strip-bar.mobile-open .strip-item-label,
+  .left-strip-bar.mobile-open .strip-dock-label,
+  .left-strip-bar.mobile-open .strip-brand-text {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .strip-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 840;
+    display: none;
+  }
+  .strip-backdrop.active {
+    display: block;
   }
 }
 
-function createPlayerModalElement() {
-  const modal = document.createElement('div');
-  modal.className = 'player-modal';
-  modal.id = 'playerModal';
-  modal.onclick = function(e) { if (e.target === this) closePlayer(); };
-  modal.innerHTML = `
-    <div class="player-modal-box" id="playerModalBox">
-      <div class="modal-header">
-        <div class="modal-title" id="modalTitle">Now Playing</div>
-        <div class="modal-header-actions">
-          <button type="button" class="modal-fullscreen-btn" onclick="toggleModalFullscreen()" title="முழுத்திரை (Fullscreen)">⛶ முழுத்திரை</button>
-          <button type="button" class="modal-scroll-btn" onclick="scrollToModalDetails()" title="வரிகளுக்குச் செல்க">
-            📜 வரிகள் &amp; பொருள் ↓
-          </button>
-          <button type="button" class="modal-close-btn" onclick="closePlayer()" title="மூடுக">✕ மூடுக (Close)</button>
-        </div>
-      </div>
-      <div class="modal-iframe-wrapper" id="modalIframeWrapper">
-        <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="modal-scroll-hint" onclick="scrollToModalDetails()">
-        <span>▼ கீழே பாடல் வரிகள் &amp; தத்துவப் பொருள் விளக்கம் (Scroll down for Lyrics &amp; Meaning) ▼</span>
-      </div>
-      <div class="modal-details" id="modalDetails"></div>
-    </div>
-  `;
-  return modal;
+/* -------------------------------------------------------------------------- */
+/* CONTEXT-SENSITIVE TOP BAR                                                  */
+/* -------------------------------------------------------------------------- */
+.context-sensitive-bar {
+  position: sticky;
+  top: 57px;
+  z-index: 95;
+  background: rgba(12, 15, 23, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-gold);
+  padding: 8px 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 
-// Global escape key listener
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    closePlayer();
-  }
-});
-
-function copyLyricsText(btn, text) {
-  if (!text) return;
-  navigator.clipboard.writeText(text).then(() => {
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '✓ நகலெடுக்கப்பட்டது!';
-    btn.style.borderColor = 'var(--gold)';
-    btn.style.color = 'var(--gold-bright)';
-    setTimeout(() => {
-      btn.innerHTML = originalText;
-      btn.style.borderColor = '';
-      btn.style.color = '';
-    }, 2200);
-  }).catch(err => {
-    console.error('Failed to copy lyrics:', err);
-  });
+.context-bar-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
-function closePlayer() {
-  if (document.fullscreenElement) { document.exitFullscreen().catch(() => {}); }
-  const modal = document.getElementById('playerModal');
-  const iframe = document.getElementById('modalIframe');
-
-  if (modal && iframe) {
-    iframe.src = '';
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
+.context-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
-function toggleMobileNav() {
-  const nav = document.getElementById('mainNav');
-  const toggleBtn = document.getElementById('mobileNavToggle') || document.querySelector('.mobile-toggle');
-  const overlay = document.getElementById('navOverlay');
-  if (!nav) return;
-  
-  const isOpen = nav.classList.toggle('open');
-  if (overlay) overlay.classList.toggle('open', isOpen);
-  if (toggleBtn) {
-    toggleBtn.innerHTML = isOpen ? '✕' : '☰';
-    toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  }
-  document.body.style.overflow = isOpen ? 'hidden' : '';
+.context-strip-trigger {
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--gold-bright);
+  padding: 5px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+  transition: all 0.2s;
 }
 
-function closeMobileNav() {
-  const nav = document.getElementById('mainNav');
-  const toggleBtn = document.getElementById('mobileNavToggle') || document.querySelector('.mobile-toggle');
-  const overlay = document.getElementById('navOverlay');
-  if (nav && nav.classList.contains('open')) {
-    nav.classList.remove('open');
-    if (overlay) overlay.classList.remove('open');
-    if (toggleBtn) {
-      toggleBtn.innerHTML = '☰';
-      toggleBtn.setAttribute('aria-expanded', 'false');
-    }
-    document.body.style.overflow = '';
-  }
+.context-strip-trigger:hover {
+  background: rgba(212, 175, 55, 0.25);
+  color: #fff;
 }
 
-// Multi-dropdown support
-function toggleDropdown(e, dropdownId) {
-  if (e) {
-    e.preventDefault();
-    e.stopPropagation();
-  }
-  const targetId = dropdownId || (e && e.currentTarget && e.currentTarget.id ? e.currentTarget.id.replace('Btn', '') : null);
-  const dropdown = targetId ? document.getElementById(targetId) : (e ? e.currentTarget.closest('.nav-dropdown') : document.querySelector('.nav-dropdown'));
-  if (!dropdown) return;
-  const wasOpen = dropdown.classList.contains('open');
-  document.querySelectorAll('.nav-dropdown').forEach(d => {
-    if (d !== dropdown) d.classList.remove('open');
-  });
-  dropdown.classList.toggle('open', !wasOpen);
-  const toggleBtn = dropdown.querySelector('.dropdown-toggle');
-  if (toggleBtn) toggleBtn.setAttribute('aria-expanded', !wasOpen ? 'true' : 'false');
+.context-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
 }
 
-document.addEventListener('click', (e) => {
-  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
-    if (!dropdown.contains(e.target)) {
-      dropdown.classList.remove('open');
-      const toggleBtn = dropdown.querySelector('.dropdown-toggle');
-      if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
-    }
-  });
-});
-
-// Close player and menus on ESC key
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    closePlayer();
-    closeMobileNav();
-    document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
-  }
-});
-
-// Sheet Modal Handlers
-function openSheetModal(imgSrc, pageNum, pageTitle, gradeLabel) {
-  const modal = document.getElementById('sheetModal');
-  const modalImg = document.getElementById('sheetModalImg');
-  const modalTitle = document.getElementById('sheetModalTitle');
-  if (modal && modalImg) {
-    modalImg.src = imgSrc;
-    const label = gradeLabel || 'பாடநூல்';
-    if (modalTitle) modalTitle.innerText = `${label} — பக்கம் ${pageNum} ${pageTitle ? '• ' + pageTitle : ''}`;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
+.crumb-root {
+  color: var(--gold-soft);
+  font-weight: 600;
 }
 
-function closeSheetModal() {
-  const modal = document.getElementById('sheetModal');
-  const modalImg = document.getElementById('sheetModalImg');
-  if (modal) {
-    modal.classList.remove('active');
-    if (modalImg) modalImg.src = '';
-    document.body.style.overflow = '';
-  }
+.crumb-separator {
+  color: rgba(212, 175, 55, 0.4);
 }
 
+.crumb-current {
+  color: var(--gold-bright);
+  font-weight: 700;
+}
+
+.context-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Quick Search Input */
+.context-search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.context-search-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 0.82rem;
+  color: var(--gold);
+  pointer-events: none;
+}
+
+.context-search-input {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  padding: 5px 28px 5px 30px;
+  font-size: 0.82rem;
+  color: var(--text-main);
+  width: 170px;
+  transition: width 0.25s ease, border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  font-family: inherit;
+}
+
+.context-search-input:focus {
+  width: 240px;
+  border-color: var(--gold);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.context-search-clear {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+/* Font Size & Tool Buttons */
+.context-tool-group {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 2px 6px;
+  gap: 4px;
+}
+
+.context-tool-btn {
+  background: none;
+  border: none;
+  color: var(--gold-soft);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+  font-family: inherit;
+}
+
+.context-tool-btn:hover {
+  background: rgba(212, 175, 55, 0.2);
+  color: #fff;
+}
+
+.font-scale-indicator {
+  font-size: 0.74rem;
+  color: var(--amber);
+  min-width: 34px;
+  text-align: center;
+}
+
+.theme-quick-btn {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid var(--border-gold);
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+
+/* Profile Pill */
+.context-profile-pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 20px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.context-profile-pill:hover {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: var(--gold);
+}
+
+.pill-avatar {
+  font-size: 1rem;
+}
+
+.pill-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold-soft);
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pill-badge {
+  font-size: 0.7rem;
+  background: rgba(212, 175, 55, 0.25);
+  color: var(--gold-bright);
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------- */
+/* USER PROFILE & PREFERENCES MODAL                                          */
+/* -------------------------------------------------------------------------- */
+.user-settings-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.user-settings-modal.active {
+  display: flex;
+}
+
+.user-modal-box {
+  background: #0d111a;
+  border: 1px solid var(--border-gold);
+  border-radius: 18px;
+  width: 100%;
+  max-width: 620px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(212, 175, 55, 0.25);
+  overflow: hidden;
+  animation: modalScale 0.25s ease;
+}
+
+.user-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: #131724;
+  border-bottom: 1px solid var(--border-gold);
+}
+
+.user-modal-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.user-tab-btn {
+  background: none;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.user-tab-btn.active {
+  background: rgba(212, 175, 55, 0.18);
+  color: var(--gold-bright);
+}
+
+.user-modal-close-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.user-modal-close-btn:hover {
+  background: rgba(255, 77, 77, 0.2);
+  border-color: #ff6666;
+  color: #ffcccc;
+}
+
+.user-modal-body {
+  padding: 22px 24px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.user-tab-content {
+  display: none;
+}
+
+.user-tab-content.active {
+  display: block;
+}
+
+/* Profile Hero Card */
+.profile-hero-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(224, 159, 62, 0.06));
+  border: 1px solid var(--border-gold);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 22px;
+}
+
+.profile-avatar-large {
+  font-size: 3rem;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.2);
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.profile-hero-info h3 {
+  color: var(--gold-bright);
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.profile-tier-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  background: rgba(212, 175, 55, 0.2);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-soft);
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.profile-streak-line {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.profile-streak-line strong {
+  color: var(--amber);
+}
+
+/* Form Groups in Settings */
+.settings-form-group {
+  margin-bottom: 20px;
+}
+
+.settings-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--gold-soft);
+  margin-bottom: 8px;
+}
+
+.settings-input,
+.settings-select {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-gold);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.92rem;
+  color: var(--text-main);
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.settings-input:focus,
+.settings-select:focus {
+  border-color: var(--gold-bright);
+}
+
+.avatar-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 8px;
+}
+
+.avatar-option {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 8px 4px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-option:hover,
+.avatar-option.selected {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: var(--gold);
+  transform: scale(1.1);
+}
+
+.radio-pill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radio-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.radio-pill:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: var(--border-gold);
+}
+
+.radio-pill input[type="radio"] {
+  accent-color: var(--gold);
+}
+
+.font-size-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+}
+
+.slider-font-label {
+  font-weight: 700;
+  color: var(--gold);
+  min-width: 120px;
+  text-align: center;
+}
+
+.toggle-option-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.toggle-checkbox {
+  accent-color: var(--gold);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.profile-stats-card {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-top: 18px;
+}
+
+.profile-stats-card h4 {
+  font-size: 0.9rem;
+  color: var(--gold-soft);
+  margin-bottom: 12px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--gold-bright);
+}
+
+.stat-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.settings-actions-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold), #b8860b);
+  color: #07080b;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 700;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.15);
+}
+"""
+
+for cp in css_paths:
+    if os.path.exists(cp):
+        with open(cp, 'r', encoding='utf-8') as fp:
+            css_text = fp.read()
+        
+        # Check if already appended
+        if '/* LEFT STRIP BAR (SIDEBAR DOCK) */' not in css_text:
+            css_text += "\n" + SHELL_CSS
+            with open(cp, 'w', encoding='utf-8') as fp:
+                fp.write(css_text)
+            print(f"Appended shell and settings CSS to: {cp}")
+        else:
+            print(f"CSS already present in: {cp}")
 
 
+# --- 2. JS APP SHELL ENGINE ---
+SHELL_JS = r'''
 /* ========================================================================== */
 /* GURUKULA APP SHELL: LEFT STRIP, CONTEXT BAR, USER PROFILE & PREFERENCES     */
 /* ========================================================================== */
@@ -596,9 +1022,9 @@ function applyUserPreferences() {
   if (tierSelect) tierSelect.value = userPrefs.tier || 'tier1';
 
   // Radio choices in Settings modal
-  const themeRadios = document.querySelectorAll('input[name="themeChoice"]');
+  const themeRadios = document.getElementsByName('themeChoice');
   themeRadios.forEach(r => { r.checked = (r.value === userPrefs.theme); });
-  const fontRadios = document.querySelectorAll('input[name="fontChoice"]');
+  const fontRadios = document.getElementsByName('fontChoice');
   fontRadios.forEach(r => { r.checked = (r.value === userPrefs.fontStyle); });
 
   const apCb = document.getElementById('prefAutoplay');
@@ -954,10 +1380,10 @@ function mountAppShell() {
     </div>
   `;
 
-  // Attach inside header for unified sticky behavior
+  // Insert right below header if present, else top of main
   const header = document.querySelector('header.site-header');
-  if (header) {
-    header.appendChild(contextBar);
+  if (header && header.nextSibling) {
+    header.parentNode.insertBefore(contextBar, header.nextSibling);
   } else {
     document.body.prepend(contextBar);
   }
@@ -1129,3 +1555,21 @@ if (document.readyState === 'loading') {
 } else {
   mountAppShell();
 }
+'''
+
+js_paths = ['assets/js/main.js', 'docs/assets/js/main.js', 'site/assets/js/main.js']
+for jp in js_paths:
+    if os.path.exists(jp):
+        with open(jp, 'r', encoding='utf-8') as fp:
+            js_text = fp.read()
+        
+        # Check if already appended
+        if '/* GURUKULA APP SHELL: LEFT STRIP' not in js_text:
+            js_text += "\n\n" + SHELL_JS
+            with open(jp, 'w', encoding='utf-8') as fp:
+                fp.write(js_text)
+            print(f"Appended shell and settings JS to: {jp}")
+        else:
+            print(f"JS already present in: {jp}")
+
+print("=== App Shell Integration Complete ===")

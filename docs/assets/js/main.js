@@ -596,9 +596,9 @@ function applyUserPreferences() {
   if (tierSelect) tierSelect.value = userPrefs.tier || 'tier1';
 
   // Radio choices in Settings modal
-  const themeRadios = document.getElementsByName('themeChoice');
+  const themeRadios = document.querySelectorAll('input[name="themeChoice"]');
   themeRadios.forEach(r => { r.checked = (r.value === userPrefs.theme); });
-  const fontRadios = document.getElementsByName('fontChoice');
+  const fontRadios = document.querySelectorAll('input[name="fontChoice"]');
   fontRadios.forEach(r => { r.checked = (r.value === userPrefs.fontStyle); });
 
   const apCb = document.getElementById('prefAutoplay');
