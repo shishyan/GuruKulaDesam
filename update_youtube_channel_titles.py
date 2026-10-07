@@ -21,12 +21,28 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 UPDATES_FILE = os.path.join(os.path.dirname(__file__), "all_channel_title_updates.json")
+MASTER_FILE = os.path.join(os.path.dirname(__file__), "master_all_598_songs_catalog.json")
 
-def load_updates():
-    if not os.path.exists(UPDATES_FILE):
-        raise FileNotFoundError(f"Updates manifest not found: {UPDATES_FILE}")
-    with open(UPDATES_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_updates(use_master=False):
+    target = MASTER_FILE if use_master else UPDATES_FILE
+    if not os.path.exists(target):
+        raise FileNotFoundError(f"Manifest not found: {target}")
+    with open(target, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    if use_master:
+        # Convert master records to updates schema
+        updates = []
+        for r in data:
+            updates.append({
+                "video_id": r["video_id"],
+                "current_title": r.get("canonical_title"),
+                "new_title": r.get("canonical_title"),
+                "length": r.get("length", len(r.get("canonical_title", ""))),
+                "playlists": r.get("playlists", [])
+            })
+        return updates
+    return data
+
 
 def get_authenticated_service(client_secret_file="client_secrets.json", token_file="token.json"):
     from google_auth_oauthlib.flow import InstalledAppFlow
@@ -157,13 +173,15 @@ def main():
     parser = argparse.ArgumentParser(description="Sync standardized titles to YouTube channel @guru-kula-desam")
     parser.add_argument("--live", action="store_true", help="Execute live updates using YouTube Data API")
     parser.add_argument("--dry-run", action="store_true", default=True, help="Simulate updates without calling API (default)")
+    parser.add_argument("--all", action="store_true", help="Verify and process all 598 catalog tracks instead of only changed tracks")
     args = parser.parse_args()
 
-    updates = load_updates()
+    updates = load_updates(use_master=args.all)
     if args.live:
         run_live(updates)
     else:
         run_dry_run(updates)
+
 
 if __name__ == "__main__":
     main()
