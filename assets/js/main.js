@@ -1197,11 +1197,11 @@ function getContextTabsForPage() {
   if (filename === 'kalvi.html') {
     return [
       { id: 'tab-overview', icon: '🌿', label: 'வாழ்வியல் நெறி அறிமுகம்', action: "scrollToSection('kalviOverview')", active: true },
-      { id: 'tab-dharma', icon: '🏡', label: 'உன்னத இல்லற தர்மம்', action: "scrollToSection('dharmaPrinciples')" },
+      { id: 'tab-grades', icon: '📚', label: '12 வகுப்புகள் பாடநெறி', action: "scrollToSection('gradesPortalSection')" },
+      { id: 'tab-stages', icon: '🔤', label: '4 வாழ்வியல் பருவங்கள்', action: "scrollToSection('virtue-mapping')" },
       { id: 'tab-tracker', icon: '✅', label: 'பஞ்ச மகா யக்ஞ டிராக்கர்', action: "scrollToSection('grihasthaTracker')" },
       { id: 'tab-charter', icon: '📜', label: 'குடும்ப சாசனம்', action: "scrollToSection('familyCharter')" },
-      { id: 'tab-stages', icon: '🔤', label: '4 வாழ்வியல் பருவங்கள்', action: "scrollToSection('virtue-mapping')" },
-      { id: 'tab-grades', icon: '📚', label: '12 வாழ்வியல் நிலைகள்', action: "scrollToSection('gradesPortalSection')" },
+      { id: 'tab-portals', icon: '🏛️', label: 'வித்யாபீடங்கள்', action: "scrollToSection('relatedPortals')" },
       { id: 'tab-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' },
       { id: 'tab-higher', icon: '🔬', label: 'உயர்கல்வி', href: 'higher-studies.html' },
       { id: 'tab-syllabus', icon: '📜', label: 'முழு பாடத்திட்டம்', href: 'syllabus.html' }
