@@ -850,7 +850,7 @@ function handleContextSearch(val) {
 
   // 2. Also filter in-page text or cards
   const query = val.toLowerCase().trim();
-  const searchTargets = document.querySelectorAll('.video-card, .virtue-card, .lesson-unit-panel, .canonical-card, .quiz-card');
+  const searchTargets = document.querySelectorAll('.video-card, .virtue-card, .lesson-unit-panel, .canonical-card, .quiz-card, .grade-card, .degree-program-card, .sheet-item');
   if (searchTargets.length > 0 && typeof onSearchInput !== 'function') {
     searchTargets.forEach(el => {
       const text = el.innerText.toLowerCase();
@@ -1368,7 +1368,7 @@ function getContextTabsForPage() {
   // 14. Google Sites Mirror (google-site.html)
   if (filename === 'google-site.html') {
     return [
-      { id: 'tab-gs-frame', icon: '🌐', label: 'கூகிள் தளம்', action: "scrollToSection('googleSiteFrame')", active: true },
+      { id: 'tab-gs-frame', icon: '🌐', label: 'கூகிள் தளம்', action: "scrollToSection('googleSiteLinks')", active: true },
       { id: 'tab-gs-about', icon: '🏛️', label: 'குருவருள்', href: 'about.html' },
       { id: 'tab-gs-home', icon: '🏠', label: 'முகப்பு', href: 'index.html' }
     ];
@@ -1809,6 +1809,7 @@ function mountAppShell() {
   restorePalmLeafMode();
   ensurePageBreadcrumb();
   highlightActiveSidebarGroup();
+  restoreLMSProgress();
 }
 
 /**
@@ -2322,4 +2323,260 @@ function speakLessonText(text, btnElement) {
   window.speechSynthesis.speak(utterance);
 }
 
+/* ========================================================================== */
+/* FEATURE 7: UNIVERSAL TEMPLE BELL & AUDIO CHIME (432Hz HARMONICS)           */
+/* ========================================================================== */
 
+let _gkdAudioContext = null;
+
+function getGurukulaAudioContext() {
+  if (!_gkdAudioContext) {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (AudioContext) {
+      _gkdAudioContext = new AudioContext();
+    }
+  }
+  return _gkdAudioContext;
+}
+
+function playTempleBell() {
+  try {
+    const ctx = getGurukulaAudioContext();
+    if (!ctx) return;
+    if (ctx.state === 'suspended') {
+      ctx.resume();
+    }
+    const now = ctx.currentTime;
+    // Fundamental Bell strike + Harmonics (432Hz root, 864Hz octave, 1296Hz fifth, 1728Hz)
+    const freqs = [432, 864, 1296, 1728];
+    const gains = [0.4, 0.25, 0.15, 0.08];
+
+    freqs.forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      const gainNode = ctx.createGain();
+
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, now);
+
+      gainNode.gain.setValueAtTime(gains[i], now);
+      gainNode.gain.exponentialRampToValueAtTime(0.0001, now + 3.2);
+
+      osc.connect(gainNode);
+      gainNode.connect(ctx.destination);
+
+      osc.start(now);
+      osc.stop(now + 3.3);
+    });
+  } catch (err) {
+    console.warn('Audio bell synthesis skipped:', err);
+  }
+}
+
+/* ========================================================================== */
+/* FEATURE 8: UNIVERSAL TOAST NOTIFICATION SYSTEM                            */
+/* ========================================================================== */
+
+function showToast(message, duration) {
+  duration = duration || 3500;
+  let container = document.getElementById('gurukula-toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.id = 'gurukula-toast-container';
+    container.style.cssText = 'position:fixed;bottom:24px;right:24px;z-index:100000;display:flex;flex-direction:column;gap:10px;pointer-events:none;';
+    document.body.appendChild(container);
+  }
+
+  const toast = document.createElement('div');
+  toast.className = 'gurukula-toast';
+  toast.style.cssText = 'background:rgba(15,23,42,0.96);border:1px solid var(--border-gold-hover,#f6e05e);color:#ffffff;padding:12px 20px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.5),0 0 15px rgba(246,224,94,0.2);font-size:0.92rem;font-weight:600;display:flex;align-items:center;gap:10px;transform:translateY(20px);opacity:0;transition:all 0.3s cubic-bezier(0.16,1,0.3,1);pointer-events:auto;max-width:420px;line-height:1.5;';
+  toast.innerHTML = '<span>' + message + '</span>';
+  container.appendChild(toast);
+
+  // Animate in
+  requestAnimationFrame(() => {
+    toast.style.transform = 'translateY(0)';
+    toast.style.opacity = '1';
+  });
+
+  // Animate out
+  setTimeout(() => {
+    toast.style.transform = 'translateY(20px)';
+    toast.style.opacity = '0';
+    setTimeout(() => {
+      if (toast.parentNode) {
+        toast.parentNode.removeChild(toast);
+      }
+    }, 300);
+  }, duration);
+}
+
+/* ========================================================================== */
+/* FEATURE 9: GURUKULA STUDENT LMS PROGRESS TRACKER & COMPLETION SYSTEM      */
+/* ========================================================================== */
+
+function isChapterCompleted(grade, chapter) {
+  try {
+    return localStorage.getItem('gkd_completed_' + grade + '_' + chapter) === 'true';
+  } catch (e) {
+    return false;
+  }
+}
+
+function updateLMSButtonUI(grade, chapter, isCompleted) {
+  const btn = document.getElementById('lms-btn-' + grade + '-' + chapter);
+  const icon = document.getElementById('lms-icon-' + grade + '-' + chapter);
+  const text = document.getElementById('lms-text-' + grade + '-' + chapter);
+  const box = document.getElementById('lms-box-' + grade + '-' + chapter);
+
+  if (btn) {
+    if (isCompleted) {
+      btn.classList.add('completed');
+      btn.style.background = 'rgba(16, 185, 129, 0.22)';
+      btn.style.borderColor = '#10b981';
+      btn.style.color = '#10b981';
+      if (icon) icon.textContent = '✓';
+      if (text) text.textContent = '✓ பாடம் நிறைவுற்றது (Completed)';
+    } else {
+      btn.classList.remove('completed');
+      btn.style.background = 'rgba(56, 189, 248, 0.12)';
+      btn.style.borderColor = 'rgba(56, 189, 248, 0.4)';
+      btn.style.color = '#38bdf8';
+      if (icon) icon.textContent = '○';
+      if (text) text.textContent = 'பாடம் முடிந்தது எனக் குறிக்கவும்';
+    }
+  }
+
+  if (box) {
+    if (isCompleted) {
+      box.style.borderColor = 'rgba(16, 185, 129, 0.5)';
+      box.style.background = 'rgba(16, 185, 129, 0.06)';
+    } else {
+      box.style.borderColor = '';
+      box.style.background = '';
+    }
+  }
+}
+
+function toggleChapterCompletion(grade, chapter) {
+  try {
+    const key = 'gkd_completed_' + grade + '_' + chapter;
+    const currentState = localStorage.getItem(key) === 'true';
+    const newState = !currentState;
+
+    if (newState) {
+      localStorage.setItem(key, 'true');
+      updateLMSButtonUI(grade, chapter, true);
+      showToast('🎉 தரம் ' + grade + ' — பாடம் ' + chapter + ' வெற்றிகரமாக நிறைவுற்றது! (+50 வேத ஞான XP)');
+      playTempleBell();
+    } else {
+      localStorage.removeItem(key);
+      updateLMSButtonUI(grade, chapter, false);
+      showToast('பாடப் பதிவு மீட்டமைக்கப்பட்டது.');
+    }
+
+    // If on school.html, update overall metrics dynamically
+    if (typeof calculateOverallSchoolProgress === 'function') {
+      calculateOverallSchoolProgress();
+    }
+  } catch (err) {
+    console.error('Error toggling LMS chapter completion:', err);
+  }
+}
+
+function restoreLMSProgress() {
+  try {
+    const buttons = document.querySelectorAll('[id^="lms-btn-"]');
+    buttons.forEach(btn => {
+      const parts = btn.id.split('-');
+      if (parts.length >= 4) {
+        const grade = parts[2];
+        const chapter = parts[3];
+        if (isChapterCompleted(grade, chapter)) {
+          updateLMSButtonUI(grade, chapter, true);
+        }
+      }
+    });
+
+    if (typeof calculateOverallSchoolProgress === 'function') {
+      calculateOverallSchoolProgress();
+    }
+  } catch (e) {
+    console.warn('Could not restore LMS progress:', e);
+  }
+}
+
+/* ========================================================================== */
+/* FEATURE 10: PATANJALI 7-LEVEL MATRIX FILTER (SYLLABUS PORTAL)             */
+/* ========================================================================== */
+
+function filterPatLevel(level) {
+  // Update pill active states
+  const pills = document.querySelectorAll('.pat-pill-btn');
+  pills.forEach(pill => {
+    const oc = pill.getAttribute('onclick') || '';
+    if (oc.includes("'" + level + "'")) {
+      pill.classList.add('active');
+    } else {
+      pill.classList.remove('active');
+    }
+  });
+
+  // Filter cards
+  const cards = document.querySelectorAll('.pat-level-card');
+  cards.forEach(card => {
+    const cardLevel = card.getAttribute('data-pat-level');
+    if (level === 'all' || cardLevel === level) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  if (level !== 'all') {
+    const targetCard = document.querySelector('.pat-level-card[data-pat-level="' + level + '"]');
+    if (targetCard) {
+      targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+}
+
+/* ========================================================================== */
+/* FEATURE 11: VIRTUES & ETHICAL TIERS FILTER (VIRTUES PORTAL)              */
+/* ========================================================================== */
+
+function filterVirtues(tier, btn) {
+  // Sync tab pills
+  document.querySelectorAll('.context-tab-pill').forEach(b => {
+    const oc = b.getAttribute('onclick') || '';
+    if (oc.includes("'" + tier + "'")) {
+      b.classList.add('active');
+    } else if (oc.includes('filterVirtues')) {
+      b.classList.remove('active');
+    }
+  });
+
+  // Sync tier-filter-btn
+  document.querySelectorAll('.tier-filter-btn').forEach(b => {
+    const oc = b.getAttribute('onclick') || '';
+    if (oc.includes("'" + tier + "'")) {
+      b.classList.add('active');
+    } else {
+      b.classList.remove('active');
+    }
+  });
+
+  // Toggle display of .virtue-grade-block
+  const blocks = document.querySelectorAll('.virtue-grade-block');
+  blocks.forEach(b => {
+    if (tier === 'all' || b.classList.contains(tier)) {
+      b.style.display = 'block';
+    } else {
+      b.style.display = 'none';
+    }
+  });
+}
+
+// Alias for backwards compatibility
+function filterTier(tier, btn) {
+  filterVirtues(tier, btn);
+}
