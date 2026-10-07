@@ -466,6 +466,7 @@ const DEFAULT_USER_PREFS = {
   theme: 'gold',
   fontStyle: 'mukta',
   fontScale: 1.0,
+  navLayout: 'sidebar', // 'sidebar' (default), 'topbar' (classic), 'hybrid' (both)
   autoplay: false,
   continuous: false,
   dailyVirtue: true,
@@ -529,6 +530,45 @@ function applyUserPreferences() {
   if (indicator) indicator.innerText = Math.round(scale * 100) + '%';
   const sliderLabel = document.getElementById('sliderFontLabel');
   if (sliderLabel) sliderLabel.innerText = Math.round(scale * 100) + '% ' + (scale === 1.0 ? '(இயல்பு)' : '');
+
+  // Navigation Shell Layout Mode
+  const layout = userPrefs.navLayout || 'sidebar';
+  const strip = document.getElementById('leftStripBar');
+  const oldNav = document.getElementById('mainNav');
+  const contextTabsNav = document.getElementById('contextTabsNav');
+
+  document.body.classList.remove('layout-sidebar', 'layout-topbar', 'layout-hybrid');
+  document.body.classList.add('layout-' + layout);
+
+  if (layout === 'topbar') {
+    // Classic top navbar mode
+    if (strip) strip.style.display = 'none';
+    if (oldNav) oldNav.style.display = 'flex';
+    if (contextTabsNav) contextTabsNav.style.display = 'none';
+    document.body.style.paddingLeft = '0';
+  } else if (layout === 'hybrid') {
+    // Dual Hybrid Shell
+    if (strip) strip.style.display = 'flex';
+    if (oldNav) oldNav.style.display = 'flex';
+    if (contextTabsNav) contextTabsNav.style.display = 'flex';
+    if (window.innerWidth >= 992) {
+      const isExp = strip && strip.classList.contains('expanded');
+      document.body.style.paddingLeft = isExp ? '230px' : '68px';
+    }
+  } else {
+    // 'sidebar' (DEFAULT): Left sidebar dock + clean context-sensitive top tabs
+    if (strip) strip.style.display = 'flex';
+    if (oldNav) oldNav.style.display = 'none';
+    if (contextTabsNav) contextTabsNav.style.display = 'flex';
+    if (window.innerWidth >= 992) {
+      const isExp = strip && strip.classList.contains('expanded');
+      document.body.style.paddingLeft = isExp ? '230px' : '68px';
+    }
+  }
+
+  // Update layout radio in Settings modal
+  const layoutRadios = document.querySelectorAll('input[name="layoutChoice"]');
+  layoutRadios.forEach(r => { r.checked = (r.value === layout); });
 
   // Profile Badges & Avatars in UI
   const pillAvatar = document.getElementById('pillAvatarIcon');
@@ -599,6 +639,12 @@ function adjustFontSize(delta) {
   let scale = (userPrefs.fontScale || 1.0) + delta;
   scale = Math.max(0.82, Math.min(1.28, Math.round(scale * 100) / 100));
   userPrefs.fontScale = scale;
+  saveUserPreferences();
+  applyUserPreferences();
+}
+
+function changeNavLayout(layout) {
+  userPrefs.navLayout = layout;
   saveUserPreferences();
   applyUserPreferences();
 }
