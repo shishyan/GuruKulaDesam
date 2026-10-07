@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Upgraded Guru Kula Desam Curriculum Coursebook Generator
+Upgraded Guru Kula Desam Curriculum Coursebook Generator with Sidebar & Sections
 Builds world-class, paced, interactive, visual school coursebooks for Grades 2 to 12.
 Includes:
-- Interactive Chapter Stepper & Navigation Tabs (Go slow, one topic at a time)
+- Two-Column Layout with Sticky Course Navigation Sidebar
+- Detailed Sections with Smooth-Scrolling Anchors
+- Mobile Flyout Drawer for Chapter & Section Navigation
 - Pedagogical Learning Objectives (கற்றல் நோக்கங்கள்)
 - Key Vocabulary Builder (சொற்களஞ்சியம்)
 - Step-by-Step Paced In-depth Lessons with Subheadings (படிமுறை விளக்கம்)
@@ -15,6 +17,7 @@ Includes:
 - Daily Student Sadhana Checklist (தினசரி தர்ம சாதனைப் பட்டியல்)
 - Devotional Audio Links (இறை இசை விருந்து)
 - Grade 2 Scanned Textbook Reader (64 Sheets Gallery with Zoom Modal)
+- Quick Grade Switcher Grid at the Sidebar Bottom
 """
 
 import sys
@@ -61,56 +64,116 @@ def build_grade_coursebook(g, data):
     next_g = g + 1 if g < 12 else None
     
     prev_link = f"tharam-{prev_g}.html" if prev_g >= 1 else "kalvi.html"
-    prev_label = f"← முந்தைய தரம்: தரம் {prev_g}" if prev_g >= 1 else "← அனைத்து தரங்கள் (Kalvi Hub)"
+    prev_label = f"← தரம் {prev_g}" if prev_g >= 1 else "← Kalvi Hub"
     
     if next_g:
         next_link = f"tharam-{next_g}.html"
-        next_label = f"அடுத்த தரம்: தரம் {next_g} (Grade {next_g}) →"
+        next_label = f"தரம் {next_g} →"
     else:
         next_link = "kalvi.html"
-        next_label = "கல்வித் தளம் (Curriculum Hub) 🎓"
+        next_label = "Kalvi Hub 🎓"
 
     units = data['units']
     total_units = len(units)
 
-    # Tabs HTML
-    tabs_html = ""
+    # 1. Build Sidebar Navigation Groups
+    sidebar_groups_html = ""
+    for idx, u in enumerate(units):
+        active_group_class = "active" if idx == 0 else ""
+        active_btn_class = "active" if idx == 0 else ""
+        short_title = u['title'].split('—')[0].strip()
+        
+        sidebar_groups_html += f"""
+        <div class="sidebar-chapter-group {active_group_class}" id="side-group-{u['num']}">
+          <button type="button" class="sidebar-chapter-btn {active_btn_class}" id="side-btn-{u['num']}" onclick="selectChapter({u['num']})">
+            <span class="sidebar-chapter-pill">
+              <span class="sidebar-num">{u['num']}</span>
+              <span>{short_title}</span>
+            </span>
+            <span class="sidebar-arrow">▶</span>
+          </button>
+          <div class="sidebar-subsections">
+            <a href="#u{u['num']}-objectives" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-objectives')">🎯 கற்றல் நோக்கங்கள்</a>
+            <a href="#u{u['num']}-vocab" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-vocab')">📖 சொற்களஞ்சியம்</a>
+            <a href="#u{u['num']}-diagram" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-diagram')">🎨 காட்சி விளக்கம் (வரைபடம்)</a>
+            <a href="#u{u['num']}-lessons" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-lessons')">📚 படிமுறை விளக்கம்</a>
+            <a href="#u{u['num']}-verse" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-verse')">🪔 மூலப் பாடல் &amp; பதவுரை</a>
+            <a href="#u{u['num']}-story" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-story')">📜 ஆன்மீக வரலாறு</a>
+            <a href="#u{u['num']}-living" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-living')">🌿 வாழ்வியல் தர்மம்</a>
+            <a href="#u{u['num']}-quiz" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-quiz')">❓ சுய பரிசோதனை</a>
+            <a href="#u{u['num']}-sadhana" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-sadhana')">✅ தர்ம சாதனைப் பட்டியல்</a>
+          </div>
+        </div>
+        """
+
+    # If Grade 2, add Sheets tab to sidebar
+    if g == 2 and grade2_sheets:
+        sidebar_groups_html += f"""
+        <div class="sidebar-chapter-group" id="side-group-sheets">
+          <button type="button" class="sidebar-chapter-btn" id="side-btn-sheets" onclick="selectChapter('sheets')">
+            <span class="sidebar-chapter-pill">
+              <span class="sidebar-num">📖</span>
+              <span>பாடநூல் தாள்கள் ({len(grade2_sheets)})</span>
+            </span>
+          </button>
+        </div>
+        """
+
+    # All Chapters option
+    sidebar_groups_html += """
+    <div class="sidebar-chapter-group" id="side-group-all">
+      <button type="button" class="sidebar-chapter-btn" id="side-btn-all" onclick="selectChapter('all')">
+        <span class="sidebar-chapter-pill">
+          <span class="sidebar-num">📚</span>
+          <span>முழு பாடநூல் பார்வை</span>
+        </span>
+      </button>
+    </div>
+    """
+
+    # Quick Grade Switcher Grid at the Sidebar Bottom
+    sidebar_grades_grid = ""
+    for grade_i in range(1, 13):
+        is_cur = "active" if grade_i == g else ""
+        sidebar_grades_grid += f"""<a href="tharam-{grade_i}.html" class="sidebar-grade-pill {is_cur}">{grade_i}</a>"""
+
+    # Top Tabs Stepper HTML
+    top_tabs_html = ""
     for idx, u in enumerate(units):
         active_class = "active" if idx == 0 else ""
-        tabs_html += f"""
-        <button class="course-tab-btn {active_class}" id="tab-btn-{u['num']}" onclick="switchChapter({u['num']})">
+        short_title = u['title'].split('—')[0].strip()
+        top_tabs_html += f"""
+        <button type="button" class="course-tab-btn {active_class}" id="tab-btn-{u['num']}" onclick="selectChapter({u['num']})">
           <span class="course-tab-num">{u['num']}</span>
-          <span>{u['title'].split('—')[0].strip()}</span>
+          <span>{short_title}</span>
         </button>
         """
 
-    # If Grade 2, add Sheets tab
     if g == 2 and grade2_sheets:
-        tabs_html += """
-        <button class="course-tab-btn" id="tab-btn-sheets" onclick="switchChapter('sheets')">
+        top_tabs_html += """
+        <button type="button" class="course-tab-btn" id="tab-btn-sheets" onclick="selectChapter('sheets')">
           <span class="course-tab-num">📖</span>
-          <span>பாடநூல் தாள்கள் (64 பக்கங்கள்)</span>
+          <span>பாடநூல் தாள்கள் (64)</span>
         </button>
         """
 
-    # Full view tab
-    tabs_html += """
-    <button class="course-tab-btn" id="tab-btn-all" onclick="switchChapter('all')">
+    top_tabs_html += """
+    <button type="button" class="course-tab-btn" id="tab-btn-all" onclick="selectChapter('all')">
       <span class="course-tab-num">📚</span>
-      <span>முழு பாடநூல் பார்வை (Full Course)</span>
+      <span>முழு பாடநூல் பார்வை</span>
     </button>
     """
 
-    # Panels HTML
+    # 2. Build Lesson Panels with Distinct Section Anchors
     panels_html = ""
     for idx, u in enumerate(units):
         active_class = "active" if idx == 0 else ""
         enrichment = enrich_unit(g, u)
         
-        # Objectives HTML
+        # Objectives
         obj_li = "".join([f"<li>{o}</li>" for o in enrichment['objectives']])
         objectives_html = f"""
-        <div class="objectives-card">
+        <div id="u{u['num']}-objectives" class="objectives-card">
           <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
           <ul class="objectives-list">
             {obj_li}
@@ -118,7 +181,7 @@ def build_grade_coursebook(g, data):
         </div>
         """
 
-        # Vocab HTML
+        # Vocab
         vocab_cards = ""
         for v in enrichment['vocab']:
             vocab_cards += f"""
@@ -128,7 +191,7 @@ def build_grade_coursebook(g, data):
             </div>
             """
         vocab_html = f"""
-        <div class="vocab-section">
+        <div id="u{u['num']}-vocab" class="vocab-section">
           <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
             <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
           </h4>
@@ -138,7 +201,7 @@ def build_grade_coursebook(g, data):
         </div>
         """
 
-        # Deep Dive Subsections (Paced, Slow)
+        # Deep Dive Subsections
         deep_dive_html = ""
         for dd in enrichment['deep_dive']:
             deep_dive_html += f"""
@@ -151,7 +214,11 @@ def build_grade_coursebook(g, data):
             """
 
         # Visual Diagram
-        diagram_html = get_diagram_for_topic(enrichment['diagram_key'])
+        diagram_html = f"""
+        <div id="u{u['num']}-diagram">
+          {get_diagram_for_topic(enrichment['diagram_key'])}
+        </div>
+        """
 
         # Formatted Verse
         formatted_verse = u['verse'].replace('\n', '<br>')
@@ -159,7 +226,7 @@ def build_grade_coursebook(g, data):
         formatted_living = text_to_html(u['living'])
         formatted_story = text_to_html(u['story'])
 
-        # Interactive Quiz HTML
+        # Interactive Quiz
         quiz_items = ""
         for q_idx, q in enumerate(enrichment['quiz']):
             quiz_items += f"""
@@ -177,7 +244,7 @@ def build_grade_coursebook(g, data):
             </div>
             """
         quiz_section_html = f"""
-        <div class="quiz-section">
+        <div id="u{u['num']}-quiz" class="quiz-section">
           <h4 style="color:var(--gold-bright); font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
             <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
           </h4>
@@ -188,7 +255,7 @@ def build_grade_coursebook(g, data):
         </div>
         """
 
-        # Daily Sadhana Checklist HTML
+        # Daily Sadhana Checklist
         sadhana_items = ""
         for s_idx, s in enumerate(enrichment['sadhana']):
             sadhana_items += f"""
@@ -198,7 +265,7 @@ def build_grade_coursebook(g, data):
             </div>
             """
         sadhana_html = f"""
-        <div class="sadhana-box">
+        <div id="u{u['num']}-sadhana" class="sadhana-box">
           <div class="sadhana-header">
             <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
           </div>
@@ -209,16 +276,16 @@ def build_grade_coursebook(g, data):
         # Stepper buttons
         prev_btn = ""
         if u['num'] > 1:
-            prev_btn = f"""<button class="lesson-nav-btn lesson-nav-prev" onclick="switchChapter({u['num']-1})">← முந்தைய பாடம் {u['num']-1}</button>"""
+            prev_btn = f"""<button type="button" class="lesson-nav-btn lesson-nav-prev" onclick="selectChapter({u['num']-1})">← முந்தைய பாடம் {u['num']-1}</button>"""
         else:
             prev_btn = f"""<a href="{prev_link}" class="lesson-nav-btn lesson-nav-prev">{prev_label}</a>"""
 
         next_btn = ""
         if u['num'] < total_units:
-            next_btn = f"""<button class="lesson-nav-btn lesson-nav-next" onclick="switchChapter({u['num']+1})">அடுத்த பாடம் {u['num']+1} →</button>"""
+            next_btn = f"""<button type="button" class="lesson-nav-btn lesson-nav-next" onclick="selectChapter({u['num']+1})">அடுத்த பாடம் {u['num']+1} →</button>"""
         else:
             if g == 2 and grade2_sheets:
-                next_btn = """<button class="lesson-nav-btn lesson-nav-next" onclick="switchChapter('sheets')">பாடநூல் தாள்கள் காண்க 📖 →</button>"""
+                next_btn = """<button type="button" class="lesson-nav-btn lesson-nav-next" onclick="selectChapter('sheets')">பாடநூல் தாள்கள் காண்க 📖 →</button>"""
             else:
                 next_btn = f"""<a href="{next_link}" class="lesson-nav-btn lesson-nav-next">{next_label}</a>"""
 
@@ -247,7 +314,7 @@ def build_grade_coursebook(g, data):
             {diagram_html}
 
             <!-- 4. Paced Step-by-Step Deep Dive Sections -->
-            <div style="margin: 28px 0;">
+            <div id="u{u['num']}-lessons" style="margin: 28px 0;">
               <h4 style="color:var(--gold-bright); font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
                 <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
               </h4>
@@ -258,14 +325,14 @@ def build_grade_coursebook(g, data):
             </div>
 
             <!-- 5. Sacred Verse / Mantra Box -->
-            <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <div id="u{u['num']}-verse" style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
               <div style="font-size:0.82rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
               <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#fff; line-height:1.9; font-weight:600;">{formatted_verse}</div>
               <div style="font-size:0.9rem; color:var(--gold-bright); margin-top:10px; font-weight:600;">— {u['source']}</div>
             </div>
 
             <!-- 6. Philosophical Meaning -->
-            <div style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
+            <div id="u{u['num']}-meaning" style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
               <h4 style="color:var(--gold); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
                 <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
               </h4>
@@ -273,7 +340,7 @@ def build_grade_coursebook(g, data):
             </div>
 
             <!-- 7. Inspirational Story -->
-            <div style="margin: 28px 0; background:rgba(224,159,62,0.06); border-radius:14px; padding:22px; border:1px solid rgba(224,159,62,0.25);">
+            <div id="u{u['num']}-story" style="margin: 28px 0; background:rgba(224,159,62,0.06); border-radius:14px; padding:22px; border:1px solid rgba(224,159,62,0.25);">
               <h4 style="color:var(--amber); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
                 <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
               </h4>
@@ -281,7 +348,7 @@ def build_grade_coursebook(g, data):
             </div>
 
             <!-- 8. Dharmic Living in Daily Life -->
-            <div style="margin: 28px 0; background:rgba(42,157,143,0.08); border-radius:14px; padding:22px; border:1px solid rgba(42,157,143,0.3);">
+            <div id="u{u['num']}-living" style="margin: 28px 0; background:rgba(42,157,143,0.08); border-radius:14px; padding:22px; border:1px solid rgba(42,157,143,0.3);">
               <h4 style="color:#2a9d8f; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
                 <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
               </h4>
@@ -295,7 +362,7 @@ def build_grade_coursebook(g, data):
             {quiz_section_html}
 
             <!-- 11. Audio Link to Hymns -->
-            <div style="background:rgba(212,175,55,0.06); border:1px solid var(--border-gold); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
+            <div id="u{u['num']}-audio" style="background:rgba(212,175,55,0.06); border:1px solid var(--border-gold); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
               <div>
                 <strong style="color:var(--gold-bright);">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
                 <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
@@ -308,7 +375,7 @@ def build_grade_coursebook(g, data):
             <!-- Navigation Stepper Footer -->
             <div class="lesson-nav-footer">
               {prev_btn}
-              <button onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:var(--border-gold); color:var(--gold-soft);">
+              <button type="button" onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:var(--border-gold); color:var(--gold-soft);">
                 🖨️ பாடம் அச்சிடுக (Print / PDF)
               </button>
               {next_btn}
@@ -334,7 +401,7 @@ def build_grade_coursebook(g, data):
                 <div class="sheet-zoom-overlay">🔍</div>
               </div>
               <div class="sheet-actions">
-                <button class="sheet-btn sheet-btn-view" onclick="openSheetModal('{img_url}', {p_num}, 'சைவ நெறி தரம் 2', 'தரம் 2')">
+                <button type="button" class="sheet-btn sheet-btn-view" onclick="openSheetModal('{img_url}', {p_num}, 'சைவ நெறி தரம் 2', 'தரம் 2')">
                   🔍 பெரிதாக்குக
                 </button>
                 <a href="https://sites.google.com/view/wwwgurukuladesamcom/home/%E0%AE%9A%E0%AE%B5-%E0%AE%A8%E0%AE%B1/%E0%AE%A4%E0%AE%B0%E0%AE%AE-2" target="_blank" rel="noopener" class="sheet-btn sheet-btn-direct" title="கூகிள் தளத்தில் காண்க">
@@ -357,13 +424,13 @@ def build_grade_coursebook(g, data):
             {sheet_cards}
           </div>
           <div class="lesson-nav-footer">
-            <button class="lesson-nav-btn lesson-nav-prev" onclick="switchChapter(5)">← அத்தியாயம் 5 திரும்புக</button>
+            <button type="button" class="lesson-nav-btn lesson-nav-prev" onclick="selectChapter(5)">← அத்தியாயம் 5 திரும்புக</button>
             <a href="tharam-3.html" class="lesson-nav-btn lesson-nav-next">தரம் 3 காண்க (Grade 3) →</a>
           </div>
         </div>
         """
 
-    # Assemble complete page HTML
+    # Assemble complete page HTML with the 2-Column Sidebar & Sections Layout
     html_content = f"""<!DOCTYPE html>
 <html lang="ta">
 <head>
@@ -502,22 +569,55 @@ def build_grade_coursebook(g, data):
     <!-- Anchor for scrolling -->
     <div id="course-content-start"></div>
 
-    <!-- Chapter Navigation Stepper (Tabs for Paced Learning) -->
+    <!-- Top Chapter Navigation Stepper (Tabs for Quick Access) -->
     <div class="course-tabs-wrapper">
       <div style="font-size:0.85rem; color:var(--gold-bright); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">
-        📌 அத்தியாயத் தேர்வு (Select Chapter to Study at your own pace):
+        📌 அத்தியாயத் தேர்வு (Select Chapter to Study):
       </div>
       <div class="course-tabs">
-        {tabs_html}
+        {top_tabs_html}
       </div>
     </div>
 
-    <!-- Lesson Panels Container -->
-    <div class="course-panels-container">
-      {panels_html}
+    <!-- Two-Column Layout Container: Sticky Sidebar + Main Content Column -->
+    <div class="course-layout-container">
+      
+      <!-- Left Course Navigation Sidebar -->
+      <aside class="course-sidebar" id="courseSidebar">
+        <div class="sidebar-header">
+          <span class="sidebar-grade-badge">{data['grade_tamil']} பாடநெறி</span>
+          <h3 class="sidebar-title">பாடப் பொருளடக்கம்</h3>
+          <p class="sidebar-sub">அத்தியாயங்கள் &amp; உட்பிரிவுகள் (Sections)</p>
+        </div>
+
+        <!-- Sidebar Navigation List -->
+        <nav class="sidebar-nav" aria-label="Course Sections">
+          {sidebar_groups_html}
+        </nav>
+
+        <!-- Quick Grade Switcher in Sidebar -->
+        <div class="sidebar-other-grades">
+          <div class="sidebar-other-grades-title">அனைத்து 12 தரங்கள் (Jump to Grade):</div>
+          <div class="sidebar-grades-grid">
+            {sidebar_grades_grid}
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Course Column -->
+      <div class="course-main-column">
+        {panels_html}
+      </div>
+
     </div>
 
   </main>
+
+  <!-- Mobile Floating Drawer Toggle Button & Backdrop -->
+  <button type="button" class="course-sidebar-mobile-toggle" onclick="toggleCourseSidebar()" aria-label="பொருளடக்கம் காண்க">
+    📋 பொருளடக்கம் (Sections)
+  </button>
+  <div class="course-sidebar-overlay" id="courseSidebarOverlay" onclick="closeCourseSidebar()"></div>
 
   <!-- Sheet Zoom Modal -->
   <div class="sheet-modal-overlay" id="sheetModal" onclick="closeSheetModal()">
@@ -570,32 +670,85 @@ def build_grade_coursebook(g, data):
   <script src="assets/data/catalog.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    function switchChapter(unitNum) {{
+    function selectChapter(unitNum) {{
       const panels = document.querySelectorAll('.lesson-unit-panel');
       panels.forEach(p => p.classList.remove('active'));
       
       const tabs = document.querySelectorAll('.course-tab-btn');
       tabs.forEach(t => t.classList.remove('active'));
+
+      const sideGroups = document.querySelectorAll('.sidebar-chapter-group');
+      sideGroups.forEach(g => g.classList.remove('active'));
+
+      const sideBtns = document.querySelectorAll('.sidebar-chapter-btn');
+      sideBtns.forEach(b => b.classList.remove('active'));
       
       if (unitNum === 'all') {{
         panels.forEach(p => p.classList.add('active'));
         const allBtn = document.getElementById('tab-btn-all');
         if (allBtn) allBtn.classList.add('active');
+        const sideAll = document.getElementById('side-group-all');
+        if (sideAll) sideAll.classList.add('active');
       }} else if (unitNum === 'sheets') {{
         const sheetsPanel = document.getElementById('unit-panel-sheets');
         const sheetsTab = document.getElementById('tab-btn-sheets');
+        const sideSheets = document.getElementById('side-group-sheets');
         if (sheetsPanel) sheetsPanel.classList.add('active');
         if (sheetsTab) sheetsTab.classList.add('active');
+        if (sideSheets) sideSheets.classList.add('active');
       }} else {{
         const targetPanel = document.getElementById('unit-panel-' + unitNum);
         const targetTab = document.getElementById('tab-btn-' + unitNum);
+        const sideGroup = document.getElementById('side-group-' + unitNum);
+        const sideBtn = document.getElementById('side-btn-' + unitNum);
         if (targetPanel) targetPanel.classList.add('active');
         if (targetTab) targetTab.classList.add('active');
+        if (sideGroup) sideGroup.classList.add('active');
+        if (sideBtn) sideBtn.classList.add('active');
       }}
       
+      closeCourseSidebar();
       const targetStart = document.getElementById('course-content-start');
       if (targetStart) {{
         targetStart.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+      }}
+    }}
+
+    function goToSection(unitNum, sectionId) {{
+      selectChapter(unitNum);
+      closeCourseSidebar();
+      setTimeout(() => {{
+        const el = document.getElementById(sectionId);
+        if (el) {{
+          el.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+        }}
+      }}, 50);
+    }}
+
+    function toggleCourseSidebar() {{
+      const sidebar = document.getElementById('courseSidebar');
+      const overlay = document.getElementById('courseSidebarOverlay');
+      if (sidebar && overlay) {{
+        const isOpen = sidebar.classList.contains('open');
+        if (isOpen) {{
+          sidebar.classList.remove('open');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }} else {{
+          sidebar.classList.add('open');
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }}
+      }}
+    }}
+
+    function closeCourseSidebar() {{
+      const sidebar = document.getElementById('courseSidebar');
+      const overlay = document.getElementById('courseSidebarOverlay');
+      if (sidebar && overlay) {{
+        sidebar.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
       }}
     }}
   </script>
@@ -605,7 +758,7 @@ def build_grade_coursebook(g, data):
     return html_content
 
 def main():
-    print("Building comprehensive school curriculum coursebooks for Tharams 2 to 12...")
+    print("Building comprehensive school curriculum coursebooks with Sidebar & Sections for Tharams 2 to 12...")
     
     for g in sorted(ALL_GRADES.keys()):
         data = ALL_GRADES[g]
@@ -628,7 +781,7 @@ def main():
             
         print(f"Generated {filename} ({len(html)} bytes) across root, site/, and docs/")
 
-    print("\nAll 11 Grade Coursebooks successfully generated!")
+    print("\nAll 11 Grade Coursebooks successfully generated with Sidebar & Sections navigation!")
 
 if __name__ == '__main__':
     main()

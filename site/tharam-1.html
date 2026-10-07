@@ -180,8 +180,81 @@
       <a href="tharam-2.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 2 காண்க (Grade 2) →</a>
     </div>
 
+    <!-- Two-Column Layout Container: Sticky Sidebar + Main Content Column -->
+    <div class="course-layout-container">
+      
+      <!-- Left Course Navigation Sidebar -->
+      <aside class="course-sidebar" id="courseSidebar">
+        <div class="sidebar-header">
+          <span class="sidebar-grade-badge">தரம் 1 பாடநெறி</span>
+          <h3 class="sidebar-title">பாடப் பொருளடக்கம்</h3>
+          <p class="sidebar-sub">அத்தியாயங்கள் &amp; உட்பிரிவுகள்</p>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Course Sections">
+          <div class="sidebar-chapter-group active" id="side-group-sheets">
+            <a href="#sheets-section" class="sidebar-chapter-btn active" style="text-decoration:none;">
+              <span class="sidebar-chapter-pill">
+                <span class="sidebar-num">📖</span>
+                <span>60 பாடநூல் தாள்கள்</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="sidebar-chapter-group" id="side-group-highlights">
+            <a href="#syllabus-highlights" class="sidebar-chapter-btn" style="text-decoration:none;">
+              <span class="sidebar-chapter-pill">
+                <span class="sidebar-num">🎯</span>
+                <span>பாடத்திட்ட உள்ளடக்கம்</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="sidebar-chapter-group" id="side-group-virtue">
+            <a href="#virtue-section" class="sidebar-chapter-btn" style="text-decoration:none;">
+              <span class="sidebar-chapter-pill">
+                <span class="sidebar-num">✨</span>
+                <span>அகர வரிசை நற்பண்புகள்</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="sidebar-chapter-group" id="side-group-google">
+            <a href="https://sites.google.com/view/wwwgurukuladesamcom/home/%E0%AE%9A%E0%AE%B5-%E0%AE%A8%E0%AE%B1/%E0%AE%A4%E0%AE%B0%E0%AE%AE-1" target="_blank" rel="noopener" class="sidebar-chapter-btn" style="text-decoration:none;">
+              <span class="sidebar-chapter-pill">
+                <span class="sidebar-num">🌐</span>
+                <span>கூகிள் தளம் நேரடி ↗</span>
+              </span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Quick Grade Switcher in Sidebar -->
+        <div class="sidebar-other-grades">
+          <div class="sidebar-other-grades-title">அனைத்து 12 தரங்கள் (Jump to Grade):</div>
+          <div class="sidebar-grades-grid">
+            <a href="tharam-1.html" class="sidebar-grade-pill active">1</a>
+            <a href="tharam-2.html" class="sidebar-grade-pill">2</a>
+            <a href="tharam-3.html" class="sidebar-grade-pill">3</a>
+            <a href="tharam-4.html" class="sidebar-grade-pill">4</a>
+            <a href="tharam-5.html" class="sidebar-grade-pill">5</a>
+            <a href="tharam-6.html" class="sidebar-grade-pill">6</a>
+            <a href="tharam-7.html" class="sidebar-grade-pill">7</a>
+            <a href="tharam-8.html" class="sidebar-grade-pill">8</a>
+            <a href="tharam-9.html" class="sidebar-grade-pill">9</a>
+            <a href="tharam-10.html" class="sidebar-grade-pill">10</a>
+            <a href="tharam-11.html" class="sidebar-grade-pill">11</a>
+            <a href="tharam-12.html" class="sidebar-grade-pill">12</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Course Column -->
+      <div class="course-main-column">
+
+
     <!-- Chapter Breakdown / Highlights -->
-    <div class="scripture-study-section" style="margin-top: 20px;">
+    <div id="syllabus-highlights" class="scripture-study-section" style="margin-top: 20px;">
       <span class="source-badge">தரம் 1 பாடக் குறிப்புகள் &amp; நற்சிந்தனைகள்</span>
       <h2>தரம் 1 பாடத்திட்ட உள்ளடக்கம் (Syllabus Highlights)</h2>
       <ul style="margin-left: 20px; margin-top: 12px; color: var(--text-main); line-height: 1.8;">
@@ -194,7 +267,7 @@
     </div>
 
     <!-- 60 Sheets Grid -->
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:30px;">
+    <div id="sheets-section" style="display:flex; justify-content:space-between; align-items:center; margin-top:30px;">
       <h2 class="section-divider-title" style="margin:0;">முழுமையான 60 பாடநூல் பக்கங்கள் (All 60 Pages)</h2>
       <span style="color:var(--gold-bright); font-size:0.9rem; font-weight:600;">மொத்தம்: 60 பக்கங்கள்</span>
     </div>
@@ -1351,7 +1424,16 @@
         அடுத்த தரம்: தரம் 2 நோக்கிச் செல்க (Proceed to Grade 2) →
       </a>
     </div>
+        </div>
+    </div>
   </main>
+
+  <!-- Mobile Floating Drawer Toggle Button & Backdrop -->
+  <button type="button" class="course-sidebar-mobile-toggle" onclick="toggleCourseSidebar()" aria-label="பொருளடக்கம் காண்க">
+    📋 பொருளடக்கம் (Sections)
+  </button>
+  <div class="course-sidebar-overlay" id="courseSidebarOverlay" onclick="closeCourseSidebar()"></div>
+
 
   <!-- Sheet Zoom Modal -->
   <div class="sheet-modal" id="sheetModal" onclick="if(event.target === this) closeSheetModal()">
@@ -1522,5 +1604,35 @@
 
   <script src="assets/data/catalog.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function toggleCourseSidebar() {
+      const sidebar = document.getElementById('courseSidebar');
+      const overlay = document.getElementById('courseSidebarOverlay');
+      if (sidebar && overlay) {
+        const isOpen = sidebar.classList.contains('open');
+        if (isOpen) {
+          sidebar.classList.remove('open');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        } else {
+          sidebar.classList.add('open');
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+    }
+
+    function closeCourseSidebar() {
+      const sidebar = document.getElementById('courseSidebar');
+      const overlay = document.getElementById('courseSidebarOverlay');
+      if (sidebar && overlay) {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+  </script>
+
 </body>
 </html>
