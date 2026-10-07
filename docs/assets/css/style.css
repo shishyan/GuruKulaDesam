@@ -815,12 +815,18 @@ main.main-content {
 }
 
 .modal-box {
-  background: rgba(18, 22, 32, 0.85);
-  border: 1px solid var(--border-gold);
+  background: rgba(14, 22, 38, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   border-radius: 12px;
   padding: 18px 20px;
   display: flex;
   flex-direction: column;
+}
+
+.modal-box:nth-child(2) {
+  border-color: rgba(52, 211, 153, 0.25);
 }
 
 .modal-box-header {
@@ -840,7 +846,11 @@ main.main-content {
   margin: 0;
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--gold-bright);
+  color: #38bdf8;
+}
+
+.modal-box:nth-child(2) .modal-box-title {
+  color: #34d399;
 }
 
 .modal-box-body {
@@ -1403,20 +1413,21 @@ footer.site-footer {
 }
 
 
-/* Sacred Text & Scholarly Content Sections */
+/* Sacred Text & Scholarly Content Sections - Mild Transparent Glass */
 .scripture-study-section {
-  background: var(--bg-card);
-  border: 1px solid var(--border-gold);
+  background: rgba(14, 22, 38, 0.65);
+  border: 1px solid rgba(56, 189, 248, 0.22);
   border-radius: 18px;
   padding: 36px 32px;
   margin-bottom: 45px;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.45);
 }
 
 .scripture-study-section h2 {
   font-size: 1.8rem;
-  color: #ffffff;
+  color: #38bdf8;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
@@ -1440,9 +1451,9 @@ footer.site-footer {
 
 .source-badge {
   display: inline-block;
-  background: rgba(224, 159, 62, 0.15);
-  border: 1px solid var(--amber);
-  color: var(--gold-soft);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #7dd3fc;
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1453,12 +1464,13 @@ footer.site-footer {
 }
 
 .vedic-verse-box {
-  background: rgba(0, 0, 0, 0.4);
-  border-left: 4px solid var(--gold);
+  background: rgba(10, 16, 28, 0.6);
+  border-left: 4px solid #34d399;
   border-radius: 0 12px 12px 0;
   padding: 18px 24px;
   margin: 20px 0;
   font-family: 'Mukta Malar', serif;
+  backdrop-filter: blur(10px);
 }
 
 .vedic-verse-box .sanskrit {
@@ -1484,11 +1496,12 @@ footer.site-footer {
 }
 
 .periyava-quote-box {
-  background: rgba(224, 159, 62, 0.07);
-  border: 1px dashed rgba(224, 159, 62, 0.4);
+  background: rgba(14, 22, 38, 0.6);
+  border: 1px dashed rgba(56, 189, 248, 0.35);
   border-radius: 14px;
   padding: 22px 26px;
   margin: 24px 0;
+  backdrop-filter: blur(10px);
 }
 
 .periyava-quote-box .quote-header {
@@ -1496,9 +1509,8 @@ footer.site-footer {
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  color: var(--amber);
+  color: #38bdf8;
   margin-bottom: 10px;
-  font-size: 1.05rem;
 }
 
 .periyava-quote-box p {
@@ -1516,16 +1528,38 @@ footer.site-footer {
 }
 
 .canonical-card {
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: 16px 20px;
+  background: rgba(14, 22, 38, 0.62);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 14px;
+  padding: 18px 22px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.canonical-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.canonical-card:nth-child(even) {
+  border-color: rgba(52, 211, 153, 0.2);
+}
+
+.canonical-card:nth-child(even):hover {
+  border-color: rgba(52, 211, 153, 0.45);
 }
 
 .canonical-card h4 {
-  color: var(--gold);
-  font-size: 1.05rem;
+  color: #38bdf8;
+  font-size: 1.08rem;
   margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.canonical-card:nth-child(even) h4 {
+  color: #34d399;
 }
 
 .canonical-card p {
@@ -1555,20 +1589,21 @@ footer.site-footer {
 }
 
 
-/* Sacred Text & Scholarly Content Sections */
+/* Sacred Text & Scholarly Content Sections - Mild Transparent Glass */
 .scripture-study-section {
-  background: var(--bg-card);
-  border: 1px solid var(--border-gold);
+  background: rgba(14, 22, 38, 0.65);
+  border: 1px solid rgba(56, 189, 248, 0.22);
   border-radius: 18px;
   padding: 36px 32px;
   margin-bottom: 45px;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.45);
 }
 
 .scripture-study-section h2 {
   font-size: 1.8rem;
-  color: var(--gold-soft);
+  color: #38bdf8;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
@@ -1592,9 +1627,9 @@ footer.site-footer {
 
 .source-badge {
   display: inline-block;
-  background: rgba(224, 159, 62, 0.15);
-  border: 1px solid var(--amber);
-  color: var(--gold-soft);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #7dd3fc;
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1605,12 +1640,13 @@ footer.site-footer {
 }
 
 .vedic-verse-box {
-  background: rgba(0, 0, 0, 0.4);
-  border-left: 4px solid var(--gold);
+  background: rgba(10, 16, 28, 0.6);
+  border-left: 4px solid #34d399;
   border-radius: 0 12px 12px 0;
   padding: 18px 24px;
   margin: 20px 0;
   font-family: 'Mukta Malar', serif;
+  backdrop-filter: blur(10px);
 }
 
 .vedic-verse-box .sanskrit {
@@ -1636,11 +1672,12 @@ footer.site-footer {
 }
 
 .periyava-quote-box {
-  background: rgba(224, 159, 62, 0.07);
-  border: 1px dashed rgba(224, 159, 62, 0.4);
+  background: rgba(14, 22, 38, 0.6);
+  border: 1px dashed rgba(56, 189, 248, 0.35);
   border-radius: 14px;
   padding: 22px 26px;
   margin: 24px 0;
+  backdrop-filter: blur(10px);
 }
 
 .periyava-quote-box .quote-header {
@@ -1648,9 +1685,8 @@ footer.site-footer {
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  color: var(--amber);
+  color: #38bdf8;
   margin-bottom: 10px;
-  font-size: 1.05rem;
 }
 
 .periyava-quote-box p {
@@ -1668,16 +1704,38 @@ footer.site-footer {
 }
 
 .canonical-card {
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: 16px 20px;
+  background: rgba(14, 22, 38, 0.62);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 14px;
+  padding: 18px 22px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.canonical-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.canonical-card:nth-child(even) {
+  border-color: rgba(52, 211, 153, 0.2);
+}
+
+.canonical-card:nth-child(even):hover {
+  border-color: rgba(52, 211, 153, 0.45);
 }
 
 .canonical-card h4 {
-  color: var(--gold);
-  font-size: 1.05rem;
+  color: #38bdf8;
+  font-size: 1.08rem;
   margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.canonical-card:nth-child(even) h4 {
+  color: #34d399;
 }
 
 .canonical-card p {
@@ -1707,20 +1765,21 @@ footer.site-footer {
 }
 
 
-/* Sacred Text & Scholarly Content Sections */
+/* Sacred Text & Scholarly Content Sections - Mild Transparent Glass */
 .scripture-study-section {
-  background: var(--bg-card);
-  border: 1px solid var(--border-gold);
+  background: rgba(14, 22, 38, 0.65);
+  border: 1px solid rgba(56, 189, 248, 0.22);
   border-radius: 18px;
   padding: 36px 32px;
   margin-bottom: 45px;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.45);
 }
 
 .scripture-study-section h2 {
   font-size: 1.8rem;
-  color: var(--gold-soft);
+  color: #38bdf8;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
@@ -1744,9 +1803,9 @@ footer.site-footer {
 
 .source-badge {
   display: inline-block;
-  background: rgba(224, 159, 62, 0.15);
-  border: 1px solid var(--amber);
-  color: var(--gold-soft);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #7dd3fc;
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1757,12 +1816,13 @@ footer.site-footer {
 }
 
 .vedic-verse-box {
-  background: rgba(0, 0, 0, 0.4);
-  border-left: 4px solid var(--gold);
+  background: rgba(10, 16, 28, 0.6);
+  border-left: 4px solid #34d399;
   border-radius: 0 12px 12px 0;
   padding: 18px 24px;
   margin: 20px 0;
   font-family: 'Mukta Malar', serif;
+  backdrop-filter: blur(10px);
 }
 
 .vedic-verse-box .sanskrit {
@@ -1788,11 +1848,12 @@ footer.site-footer {
 }
 
 .periyava-quote-box {
-  background: rgba(224, 159, 62, 0.07);
-  border: 1px dashed rgba(224, 159, 62, 0.4);
+  background: rgba(14, 22, 38, 0.6);
+  border: 1px dashed rgba(56, 189, 248, 0.35);
   border-radius: 14px;
   padding: 22px 26px;
   margin: 24px 0;
+  backdrop-filter: blur(10px);
 }
 
 .periyava-quote-box .quote-header {
@@ -1800,9 +1861,8 @@ footer.site-footer {
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  color: var(--amber);
+  color: #38bdf8;
   margin-bottom: 10px;
-  font-size: 1.05rem;
 }
 
 .periyava-quote-box p {
@@ -1820,16 +1880,38 @@ footer.site-footer {
 }
 
 .canonical-card {
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: 16px 20px;
+  background: rgba(14, 22, 38, 0.62);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 14px;
+  padding: 18px 22px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.canonical-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.canonical-card:nth-child(even) {
+  border-color: rgba(52, 211, 153, 0.2);
+}
+
+.canonical-card:nth-child(even):hover {
+  border-color: rgba(52, 211, 153, 0.45);
 }
 
 .canonical-card h4 {
-  color: var(--gold);
-  font-size: 1.05rem;
+  color: #38bdf8;
+  font-size: 1.08rem;
   margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.canonical-card:nth-child(even) h4 {
+  color: #34d399;
 }
 
 .canonical-card p {
@@ -1859,20 +1941,21 @@ footer.site-footer {
 }
 
 
-/* Sacred Text & Scholarly Content Sections */
+/* Sacred Text & Scholarly Content Sections - Mild Transparent Glass */
 .scripture-study-section {
-  background: var(--bg-card);
-  border: 1px solid var(--border-gold);
+  background: rgba(14, 22, 38, 0.65);
+  border: 1px solid rgba(56, 189, 248, 0.22);
   border-radius: 18px;
   padding: 36px 32px;
   margin-bottom: 45px;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.45);
 }
 
 .scripture-study-section h2 {
   font-size: 1.8rem;
-  color: var(--gold-soft);
+  color: #38bdf8;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
@@ -1896,9 +1979,9 @@ footer.site-footer {
 
 .source-badge {
   display: inline-block;
-  background: rgba(224, 159, 62, 0.15);
-  border: 1px solid var(--amber);
-  color: var(--gold-soft);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #7dd3fc;
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1909,12 +1992,13 @@ footer.site-footer {
 }
 
 .vedic-verse-box {
-  background: rgba(0, 0, 0, 0.4);
-  border-left: 4px solid var(--gold);
+  background: rgba(10, 16, 28, 0.6);
+  border-left: 4px solid #34d399;
   border-radius: 0 12px 12px 0;
   padding: 18px 24px;
   margin: 20px 0;
   font-family: 'Mukta Malar', serif;
+  backdrop-filter: blur(10px);
 }
 
 .vedic-verse-box .sanskrit {
@@ -1940,11 +2024,12 @@ footer.site-footer {
 }
 
 .periyava-quote-box {
-  background: rgba(224, 159, 62, 0.07);
-  border: 1px dashed rgba(224, 159, 62, 0.4);
+  background: rgba(14, 22, 38, 0.6);
+  border: 1px dashed rgba(56, 189, 248, 0.35);
   border-radius: 14px;
   padding: 22px 26px;
   margin: 24px 0;
+  backdrop-filter: blur(10px);
 }
 
 .periyava-quote-box .quote-header {
@@ -1952,9 +2037,8 @@ footer.site-footer {
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  color: var(--amber);
+  color: #38bdf8;
   margin-bottom: 10px;
-  font-size: 1.05rem;
 }
 
 .periyava-quote-box p {
@@ -1972,16 +2056,38 @@ footer.site-footer {
 }
 
 .canonical-card {
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: 16px 20px;
+  background: rgba(14, 22, 38, 0.62);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 14px;
+  padding: 18px 22px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.canonical-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.canonical-card:nth-child(even) {
+  border-color: rgba(52, 211, 153, 0.2);
+}
+
+.canonical-card:nth-child(even):hover {
+  border-color: rgba(52, 211, 153, 0.45);
 }
 
 .canonical-card h4 {
-  color: var(--gold);
-  font-size: 1.05rem;
+  color: #38bdf8;
+  font-size: 1.08rem;
   margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.canonical-card:nth-child(even) h4 {
+  color: #34d399;
 }
 
 .canonical-card p {
@@ -2051,8 +2157,10 @@ footer.site-footer {
 }
 
 .grade-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-gold);
+  background: rgba(14, 22, 38, 0.62);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
   border-radius: 16px;
   padding: 24px;
   transition: all 0.3s ease;
@@ -2064,14 +2172,23 @@ footer.site-footer {
   color: inherit;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .grade-card:hover {
   transform: translateY(-4px);
-  border-color: var(--gold-bright);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.6), var(--shadow-gold);
-  background: rgba(24, 29, 39, 0.95);
+  border-color: #38bdf8;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(56, 189, 248, 0.25);
+  background: rgba(18, 28, 48, 0.75);
+}
+
+.grade-card:nth-child(even) {
+  border-color: rgba(52, 211, 153, 0.2);
+}
+
+.grade-card:nth-child(even):hover {
+  border-color: #34d399;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(52, 211, 153, 0.25);
 }
 
 .grade-card-badge {
@@ -2102,9 +2219,13 @@ footer.site-footer {
 
 .grade-card-title h3 {
   font-size: 1.25rem;
-  color: #f8fafc;
+  color: #38bdf8;
   font-weight: 700;
   margin-bottom: 2px;
+}
+
+.grade-card:nth-child(even) .grade-card-title h3 {
+  color: #34d399;
 }
 
 .grade-card-title span {
@@ -2124,10 +2245,14 @@ footer.site-footer {
   align-items: center;
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--gold);
+  color: #38bdf8;
   border-top: 1px solid var(--border-subtle);
   padding-top: 12px;
   margin-top: 4px;
+}
+
+.grade-card:nth-child(even) .grade-card-footer {
+  color: #34d399;
 }
 
 /* 60 Sheets Grid for Grade 1 */
