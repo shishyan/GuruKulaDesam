@@ -94,57 +94,21 @@ def build_grade_coursebook(g, data):
             <span class="sidebar-arrow">▶</span>
           </button>
           <div class="sidebar-subsections">
-            <a href="#u{u['num']}-objectives" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-objectives')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.0</span>
-              <span>🎯 கற்றல் நோக்கங்கள்</span>
-            </a>
-            <a href="#u{u['num']}-vocab" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-vocab')">
+            <a href="#u{u['num']}-part1" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-part1')">
               <span class="wbs-sidebar-code">{g}.{u['num']}.1</span>
-              <span>📖 சொற்களஞ்சியம்</span>
+              <span>📖 பாடம் &amp; பாடல்</span>
             </a>
-            <a href="#u{u['num']}-diagram" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-diagram')">
+            <a href="#u{u['num']}-part2" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-part2')">
               <span class="wbs-sidebar-code">{g}.{u['num']}.2</span>
-              <span>🎨 காட்சி வரைபடம்</span>
+              <span>🎨 காட்சி &amp; வரலாறு</span>
             </a>
-            <a href="#u{u['num']}-lessons" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-lessons')">
+            <a href="#u{u['num']}-part3" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-part3')">
               <span class="wbs-sidebar-code">{g}.{u['num']}.3</span>
-              <span>📚 படிமுறை விளக்கம்</span>
+              <span>🌿 வாழ்வியல் &amp; அறிவியல்</span>
             </a>
-            <a href="#u{u['num']}-verse" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-verse')">
+            <a href="#u{u['num']}-part4" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-part4')">
               <span class="wbs-sidebar-code">{g}.{u['num']}.4</span>
-              <span>🪔 மூலப் பாடல் &amp; உரை</span>
-            </a>
-            <a href="#u{u['num']}-meaning" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-meaning')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.5</span>
-              <span>💡 தத்துவப் பொழிப்புரை</span>
-            </a>
-            <a href="#u{u['num']}-story" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-story')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.6</span>
-              <span>📜 ஆன்மீக வரலாறு</span>
-            </a>
-            <a href="#u{u['num']}-living" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-living')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.7</span>
-              <span>🌿 வாழ்வியல் தர்மம்</span>
-            </a>
-            <a href="#u{u['num']}-sadhana" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-sadhana')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.8</span>
-              <span>✅ தர்ம சாதனை</span>
-            </a>
-            <a href="#u{u['num']}-quiz" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-quiz')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.9</span>
-              <span>❓ சுய பரிசோதனை</span>
-            </a>
-            <a href="#u{u['num']}-audio" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-audio')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.10</span>
-              <span>🎵 பதிக இசை</span>
-            </a>
-            <a href="#u{u['num']}-fusion" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-fusion')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.11</span>
-              <span>🌐 அறிவியல் சங்கமம்</span>
-            </a>
-            <a href="#u{u['num']}-lms" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-lms')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.12</span>
-              <span>🎓 படிப்புப் பதிவு</span>
+              <span>✍️ பயிற்சி &amp; பதிவு</span>
             </a>
           </div>
         </div>
@@ -214,188 +178,106 @@ def build_grade_coursebook(g, data):
         active_class = "active" if idx == 0 else ""
         enrichment = enrich_unit(g, u)
         
-        # Objectives
+        # 1. Objectives & Vocabulary (for Phase 1 Intro Grid)
         obj_li = "".join([f"<li>{o}</li>" for o in enrichment['objectives']])
-        objectives_html = f"""
-        <div id="u{u['num']}-objectives" class="objectives-card">
-          <div class="objectives-title">
-            <span class="wbs-code">WBS {g}.{u['num']}.0</span>
-            <span>🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</span>
-          </div>
-          <ul class="objectives-list">
-            {obj_li}
-          </ul>
-        </div>
-        """
-
-        # Vocab
-        vocab_cards = ""
-        for v_idx, v in enumerate(enrichment['vocab']):
-            vocab_cards += f"""
-            <div class="vocab-card">
-              <div class="vocab-term">
-                <span class="wbs-code">WBS {g}.{u['num']}.1.{v_idx+1}</span>
-                <span>📌 {v['term']}</span>
-              </div>
-              <div class="vocab-meaning">{v['meaning']}</div>
+        
+        vocab_items = ""
+        for v in enrichment['vocab']:
+            vocab_items += f"""
+            <div class="vocab-clean-item">
+              <strong>📌 {v['term']}:</strong> {v['meaning']}
             </div>
             """
-        vocab_html = f"""
-        <div id="u{u['num']}-vocab" class="vocab-section">
-          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-            <span class="wbs-code">WBS {g}.{u['num']}.1</span>
-            <span>📖 சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
-          </h4>
-          <div class="vocab-grid">
-            {vocab_cards}
-          </div>
-        </div>
-        """
 
-        # Deep Dive Subsections
+        # 2. Paced Deep Dive Lessons (for Phase 1)
         deep_dive_html = ""
         for dd_idx, dd in enumerate(enrichment['deep_dive']):
+            h_text = dd['heading'] if re.match(r'^\d+\.', dd['heading']) else f"{dd_idx+1}. {dd['heading']}"
             deep_dive_html += f"""
-            <div class="lesson-step-section">
-              <div class="lesson-step-title">
-                <span class="wbs-code">WBS {g}.{u['num']}.3.{dd_idx+1}</span>
-                <span>{dd['heading']}</span>
+            <div class="lesson-step-section" style="margin-bottom: 20px;">
+              <div class="lesson-step-title" style="color:#38bdf8; font-size:1.05rem; font-weight:700; margin-bottom:6px;">
+                <span>{h_text}</span>
               </div>
-              <div class="lesson-step-content">
+              <div class="lesson-step-content" style="color:#cbd5e1; font-size:0.96rem; line-height:1.8;">
                 <p>{text_to_html(dd['content'])}</p>
               </div>
             </div>
             """
 
-        # Visual Diagram
-        diagram_html = f"""
-        <div id="u{u['num']}-diagram" style="margin: 28px 0;">
-          <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span class="wbs-code">WBS {g}.{u['num']}.2</span>
-            <span style="font-size:0.88rem; color:#94a3b8; font-weight:600;">காட்சி வரைபடம் &amp; கருத்துப் படிமம் (Visual Schema)</span>
-          </div>
-          {get_diagram_for_topic(enrichment['diagram_key'])}
-        </div>
-        """
-
-        # Formatted Verse
+        # 3. Formatted Verses & Texts
         formatted_verse = u['verse'].replace('\n', '<br>')
         formatted_meaning = text_to_html(u['meaning'])
         formatted_living = text_to_html(u['living'])
         formatted_story = text_to_html(u['story'])
 
-        # Interactive Quiz
-        quiz_items = ""
-        for q_idx, q in enumerate(enrichment['quiz']):
-            quiz_items += f"""
-            <div class="quiz-card">
-              <details>
-                <summary>
-                  <span>
-                    <span class="wbs-code">WBS {g}.{u['num']}.9.{q_idx+1}</span>
-                    <strong>வினா {q_idx+1}:</strong> {q['q']}
-                  </span>
-                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
-                </summary>
-                <div class="quiz-body">
-                  <div class="quiz-answer-highlight">✓ விடை: {q['a']}</div>
-                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: {q['hint']}</div>
-                </div>
-              </details>
-            </div>
-            """
-        quiz_section_html = f"""
-        <div id="u{u['num']}-quiz" class="quiz-section">
-          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-            <span class="wbs-code">WBS {g}.{u['num']}.9</span>
-            <span>❓ சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
-          </h4>
-          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
-            கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
-          </p>
-          {quiz_items}
-        </div>
-        """
+        # 4. Diagram for Phase 2
+        diagram_html = get_diagram_for_topic(enrichment['diagram_key'])
 
-        # Daily Sadhana Checklist
-        sadhana_items = ""
-        for s_idx, s in enumerate(enrichment['sadhana']):
-            sadhana_items += f"""
-            <div class="sadhana-item">
-              <input type="checkbox" id="g{g}u{u['num']}s{s_idx}">
-              <label for="g{g}u{u['num']}s{s_idx}">
-                <span class="wbs-code">WBS {g}.{u['num']}.8.{s_idx+1}</span>
-                <span>{s}</span>
-              </label>
-            </div>
-            """
-        sadhana_html = f"""
-        <div id="u{u['num']}-sadhana" class="sadhana-box">
-          <div class="sadhana-header">
-            <span class="wbs-code">WBS {g}.{u['num']}.8</span>
-            <span>🌿 மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
-          </div>
-          {sadhana_items}
-        </div>
-        """
-
-        # 11. Vedic-STEM 21st Century Fusion
+        # 5. Vedic-STEM 21st Century Fusion for Phase 3
         fusion = FUSION_DATA.get((g, u['num']))
         fusion_html = ""
         if fusion:
             fusion_html = f"""
-            <div id="u{u['num']}-fusion" style="background: linear-gradient(135deg, rgba(14, 25, 45, 0.95), rgba(18, 30, 54, 0.92)); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 24px; margin: 28px 0; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
-              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(56, 189, 248, 0.2); padding-bottom:12px;">
-                <div style="display:flex; align-items:center; gap:8px;">
-                  <span class="wbs-code wbs-code-primary">WBS {g}.{u['num']}.11</span>
-                  <h4 style="color:#ffffff; font-size:1.15rem; font-weight:700; margin:0;">
-                    🌐 21-ஆம் நூற்றாண்டு நவீன அறிவியல் &amp; வேதக் கருத்துக்களின் சங்கமம் (Vedic-STEM Fusion)
-                  </h4>
-                </div>
-                <span style="font-size:0.78rem; font-weight:700; color:#38bdf8; background:rgba(56, 189, 248, 0.1); border:1px solid rgba(56, 189, 248, 0.3); padding:4px 12px; border-radius:20px;">
-                  21ST-CENTURY SKILLS &amp; INQUIRY
-                </span>
+            <div style="background: rgba(0, 0, 0, 0.28); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 14px; padding: 18px 22px; margin-top: 18px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:8px;">
+                <strong style="color:#38bdf8; font-size:1rem; display:flex; align-items:center; gap:8px;">
+                  <span>🌐 21-ஆம் நூற்றாண்டு நவீன அறிவியல் பார்வை (Vedic-STEM Fusion)</span>
+                </strong>
+                <span style="font-size:0.75rem; color:#2dd4bf; background:rgba(45,212,191,0.1); padding:2px 10px; border-radius:12px; font-weight:700;">அறிவியல் சிந்தனை</span>
               </div>
-
-              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:16px;">
-                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(56, 189, 248, 0.2); border-left:3px solid #38bdf8; border-radius:10px; padding:16px;">
-                  <div style="color:#38bdf8; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
-                    🔬 அறிவியல் இணைப்பு (Modern Science Correlation)
-                  </div>
-                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
-                    {fusion['science_correlation']}
-                  </div>
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin-bottom:12px;">
+                <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                  <strong style="color:#38bdf8;">🔬 அறிவியல் விளக்கம்:</strong><br>{fusion['science_correlation']}
                 </div>
-
-                <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(45, 212, 191, 0.2); border-left:3px solid #2dd4bf; border-radius:10px; padding:16px;">
-                  <div style="color:#2dd4bf; font-size:0.95rem; font-weight:700; margin-bottom:8px;">
-                    🌍 உலகளாவிய வாழ்வியல் தேவை (Global World Application)
-                  </div>
-                  <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
-                    {fusion['world_application']}
-                  </div>
+                <div style="color:#cbd5e1; font-size:0.92rem; line-height:1.7;">
+                  <strong style="color:#2dd4bf;">🌍 வாழ்வியல் தேவை:</strong><br>{fusion['world_application']}
                 </div>
               </div>
-
-              <div style="background:rgba(212, 175, 55, 0.06); border:1px solid rgba(212, 175, 55, 0.25); border-radius:10px; padding:14px 18px;">
-                <div style="color:var(--gold-soft); font-size:0.92rem; font-weight:700; line-height:1.6;">
-                  {fusion['inquiry_lab']}
-                </div>
+              <div style="background:rgba(212, 175, 55, 0.08); border-left:3px solid var(--gold); border-radius:8px; padding:10px 14px; color:var(--gold-soft); font-size:0.9rem; line-height:1.6;">
+                {fusion['inquiry_lab']}
               </div>
             </div>
             """
 
-        # 12. LMS Chapter Progress Tracker
+        # 6. Interactive Quiz for Phase 4
+        quiz_items = ""
+        for q_idx, q in enumerate(enrichment['quiz']):
+            quiz_items += f"""
+            <div class="quiz-card" style="margin-bottom:12px;">
+              <details>
+                <summary style="padding:14px 18px; font-size:0.96rem;">
+                  <span><strong>வினா {q_idx+1}:</strong> {q['q']}</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body" style="padding:14px 18px;">
+                  <div class="quiz-answer-highlight">✓ விடை: {q['a']}</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம்: {q['hint']}</div>
+                </div>
+              </details>
+            </div>
+            """
+
+        # 7. Daily Habits Checklist for Phase 4
+        sadhana_items = ""
+        for s_idx, s in enumerate(enrichment['sadhana']):
+            sadhana_items += f"""
+            <div class="sadhana-item" style="margin-bottom:8px;">
+              <input type="checkbox" id="g{g}u{u['num']}s{s_idx}">
+              <label for="g{g}u{u['num']}s{s_idx}" style="cursor:pointer;">
+                <span>{s}</span>
+              </label>
+            </div>
+            """
+
+        # 8. LMS Chapter Completion Tracker for Phase 4
         lms_chapter_html = f"""
-        <div id="u{u['num']}-lms" class="lms-chapter-complete-bar" style="background:rgba(15,23,42,0.85); border:1px solid rgba(56,189,248,0.3); border-radius:14px; padding:16px 20px; margin: 24px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+        <div class="lms-chapter-complete-bar" style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(56,189,248,0.25); border-radius:12px; padding:16px 20px; margin-top:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
           <div>
-            <div style="color:#ffffff; font-weight:700; font-size:0.98rem; display:flex; align-items:center; gap:8px;">
-              <span class="wbs-code">WBS {g}.{u['num']}.12</span>
-              <span>🎓 மாணவர் அத்தியாயப் படிப்புப் பதிவு (LMS Progress Check):</span>
+            <div style="color:#ffffff; font-weight:700; font-size:0.95rem; display:flex; align-items:center; gap:8px;">
+              <span style="font-size:1.1rem;">🎓</span>
+              <span>அத்தியாயம் {u['num']} கற்றல் நிறைவுப் பதிவு (Progress Tracker):</span>
             </div>
-            <div style="color:#94a3b8; font-size:0.85rem; margin-top:3px;">
-              இப்பாடத்தின் விளக்கங்கள், பாடல்கள், அறிவியல் ஆய்வுகளைப் படித்து முடித்தவுடன் குறிக்கவும்.
-            </div>
+            <div style="color:#94a3b8; font-size:0.82rem; margin-top:2px;">இப்பாடத்தைப் படித்து முடித்ததும் 'பாடம் நிறைவுற்றது' என்பதை அழுத்தவும்.</div>
           </div>
           <button type="button" class="lms-mark-btn" id="lms-btn-{g}-{u['num']}" onclick="toggleChapterCompletion({g}, {u['num']})" style="background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.4); color:#38bdf8; padding:8px 18px; border-radius:10px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:all 0.2s ease;">
             <span class="lms-icon" id="lms-icon-{g}-{u['num']}">○</span>
@@ -407,13 +289,13 @@ def build_grade_coursebook(g, data):
         # Stepper buttons
         prev_btn = ""
         if u['num'] > 1:
-            prev_btn = f"""<button type="button" class="lesson-nav-btn lesson-nav-prev" onclick="selectChapter({u['num']-1})">← முந்தைய பாடம் {u['num']-1}</button>"""
+            prev_btn = f"""<button type="button" class="lesson-nav-btn lesson-nav-prev" onclick="selectChapter({u['num']-1})">← முந்தைய அத்தியாயம் {u['num']-1}</button>"""
         else:
             prev_btn = f"""<a href="{prev_link}" class="lesson-nav-btn lesson-nav-prev">{prev_label}</a>"""
 
         next_btn = ""
         if u['num'] < total_units:
-            next_btn = f"""<button type="button" class="lesson-nav-btn lesson-nav-next" onclick="selectChapter({u['num']+1})">அடுத்த பாடம் {u['num']+1} →</button>"""
+            next_btn = f"""<button type="button" class="lesson-nav-btn lesson-nav-next" onclick="selectChapter({u['num']+1})">அடுத்த அத்தியாயம் {u['num']+1} →</button>"""
         else:
             if g == 2 and grade2_sheets:
                 next_btn = """<button type="button" class="lesson-nav-btn lesson-nav-next" onclick="selectChapter('sheets')">பாடநூல் தாள்கள் காண்க 📖 →</button>"""
@@ -422,111 +304,141 @@ def build_grade_coursebook(g, data):
 
         panels_html += f"""
         <div class="lesson-unit-panel {active_class}" id="unit-panel-{u['num']}">
-          <article class="lesson-card" id="unit-{u['num']}" style="background: rgba(18, 22, 28, 0.92); border: 1px solid var(--border-gold); border-radius: 18px; padding: 32px; margin-bottom: 30px; box-shadow: 0 10px 35px rgba(0,0,0,0.6);">
+          <article class="lesson-card" id="unit-{u['num']}" style="background: rgba(14, 18, 26, 0.95); border: 1px solid var(--border-gold); border-radius: 18px; padding: 28px; margin-bottom: 30px; box-shadow: 0 10px 35px rgba(0,0,0,0.6);">
             
-            <div class="lesson-card-head">
+            <!-- Chapter Header -->
+            <div class="lesson-card-head" style="margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08);">
               <div>
                 <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
-                  <span class="wbs-code wbs-code-primary">WBS {g}.{u['num']}</span>
-                  <span style="background:rgba(255,255,255,0.08); color:#f8fafc; font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px; letter-spacing:0.5px;">அத்தியாயம் {u['num']} (Chapter {u['num']})</span>
+                  <span class="wbs-code wbs-code-primary">அத்தியாயம் {u['num']} • Chapter {u['num']}</span>
+                  <span style="background:rgba(255,255,255,0.08); color:#f8fafc; font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px;">WBS {g}.{u['num']}</span>
                 </div>
-                <div class="lesson-main-title">{u['title']}</div>
-                <div class="lesson-sub-title">{u['sub']}</div>
+                <div class="lesson-main-title" style="font-size:1.6rem; color:#ffffff; font-weight:800; margin-bottom:4px;">{u['title']}</div>
+                <div class="lesson-sub-title" style="color:var(--text-muted); font-size:0.95rem;">{u['sub']}</div>
               </div>
-              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:6px;">
+              <div style="color:#cbd5e1; font-size:0.88rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:6px;">
                 <span class="wbs-code">GRADE {g:02d}</span>
                 <span>{data['grade_tamil']} • {data['age_group']}</span>
               </div>
             </div>
 
-            <!-- 1. Learning Objectives -->
-            {objectives_html}
-
-            <!-- 2. Vocabulary Builder -->
-            {vocab_html}
-
-            <!-- 3. Visual SVG Diagram / Infographic -->
-            {diagram_html}
-
-            <!-- 4. Paced Step-by-Step Deep Dive Sections -->
-            <div id="u{u['num']}-lessons" style="margin: 28px 0;">
-              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                <span class="wbs-code">WBS {g}.{u['num']}.3</span>
-                <span>📚 படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
-              </h4>
-              <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
-                ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
-              </p>
-              {deep_dive_html}
-            </div>
-
-            <!-- 5. Sacred Verse / Mantra Box -->
-            <div id="u{u['num']}-verse" style="background:rgba(255,255,255,0.03); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">
-                <span class="wbs-code">WBS {g}.{u['num']}.4</span> 📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:
+            <!-- PHASE 1: பாடம் & மூலப் பாடல் -->
+            <section class="learning-phase-card phase-1-card" id="u{u['num']}-part1">
+              <div class="phase-header">
+                <span class="phase-badge phase-badge-blue">பகுதி 1</span>
+                <h3 class="phase-title">📖 பாட அறிமுகமும் மூலப் பாடலும் (Core Lesson &amp; Scripture)</h3>
               </div>
-              <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#ffffff; line-height:1.9; font-weight:600;">{formatted_verse}</div>
-              <div style="font-size:0.9rem; color:var(--gold); margin-top:10px; font-weight:600;">— {u['source']}</div>
-            </div>
 
-            <!-- 6. Philosophical Meaning -->
-            <div id="u{u['num']}-meaning" style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                <span class="wbs-code">WBS {g}.{u['num']}.5</span>
-                <span>💡 பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
-              </h4>
-              <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">{formatted_meaning}</div>
-            </div>
-
-            <!-- 7. Inspirational Story -->
-            <div id="u{u['num']}-story" style="margin: 28px 0; background:rgba(255,255,255,0.02); border-radius:14px; padding:22px; border:1px solid rgba(255,255,255,0.08);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                <span class="wbs-code">WBS {g}.{u['num']}.6</span>
-                <span>📜 ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
-              </h4>
-              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">{formatted_story}</div>
-            </div>
-
-            <!-- 8. Dharmic Living in Daily Life -->
-            <div id="u{u['num']}-living" style="margin: 28px 0; background:rgba(45,212,191,0.05); border-radius:14px; padding:22px; border:1px solid rgba(45,212,191,0.25);">
-              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                <span class="wbs-code">WBS {g}.{u['num']}.7</span>
-                <span>🌿 மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
-              </h4>
-              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">{formatted_living}</div>
-            </div>
-
-            <!-- 9. Daily Dharmic Habits Checklist -->
-            {sadhana_html}
-
-            <!-- 10. Self-Learning Interactive Quiz -->
-            {quiz_section_html}
-
-            <!-- 11. Audio Link to Hymns -->
-            <div id="u{u['num']}-audio" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
-              <div>
-                <strong style="color:#f8fafc; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
-                  <span class="wbs-code">WBS {g}.{u['num']}.10</span>
-                  <span>🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</span>
-                </strong>
-                <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
+              <!-- Objectives & Key Vocabulary Split Grid -->
+              <div class="intro-grid">
+                <div class="objectives-compact">
+                  <div class="intro-box-title">🎯 கற்றல் நோக்கங்கள் (Learning Focus):</div>
+                  <ul class="objectives-list-clean">
+                    {obj_li}
+                  </ul>
+                </div>
+                <div class="vocab-compact">
+                  <div class="intro-box-title">📌 முக்கிய சொற்களஞ்சியம் (Key Vocabulary):</div>
+                  <div class="vocab-clean-list">
+                    {vocab_items}
+                  </div>
+                </div>
               </div>
-              <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
-                பாடலைக் கேட்க ↗
-              </a>
-            </div>
 
-            <!-- 12. 21st Century Science & Vedic Concepts Fusion -->
-            {fusion_html}
+              <!-- Paced Detailed Lessons -->
+              <div style="margin: 22px 0;">
+                <div class="phase-sub-title">📚 படிமுறைப் பாட விளக்கம் (Detailed Paced Lessons):</div>
+                {deep_dive_html}
+              </div>
 
-            <!-- 13. LMS Chapter Progress Tracker -->
-            {lms_chapter_html}
+              <!-- Sacred Verse & Meaning -->
+              <div class="verse-callout-clean">
+                <div class="verse-callout-tag">🪔 மூலப் பாடல் / தேவாரம்:</div>
+                <div class="verse-text-sacred">{formatted_verse}</div>
+                <div class="verse-source-tag">— {u['source']}</div>
+                <div class="verse-meaning-clean">
+                  <strong style="color:var(--gold-soft);">💡 எளிய தத்துவப் பொழிப்புரை:</strong><br>{formatted_meaning}
+                </div>
+              </div>
+            </section>
+
+            <!-- PHASE 2: காட்சி & வரலாறு -->
+            <section class="learning-phase-card phase-2-card" id="u{u['num']}-part2">
+              <div class="phase-header">
+                <span class="phase-badge phase-badge-purple">பகுதி 2</span>
+                <h3 class="phase-title">🎨 காட்சி வரைபடமும் ஆன்மீக வரலாறும் (Visual &amp; History)</h3>
+              </div>
+
+              <!-- Visual Diagram -->
+              <div style="margin: 16px 0;">
+                <div class="phase-sub-title">🎨 காட்சி வரைபடம் &amp; கருத்துப் படிமம் (Visual Schema):</div>
+                {diagram_html}
+              </div>
+
+              <!-- Inspiring Historical / Puranic Story -->
+              <div class="story-card-clean">
+                <div class="phase-sub-title" style="margin-top:0; color:#c084fc;">📜 ஆன்மீக வரலாறு &amp; உத்வேகக் கதை (Inspirational Narrative):</div>
+                <div class="story-content-text">{formatted_story}</div>
+              </div>
+            </section>
+
+            <!-- PHASE 3: வாழ்வியல் தர்மமும் அறிவியல் பார்வையும் -->
+            <section class="learning-phase-card phase-3-card" id="u{u['num']}-part3">
+              <div class="phase-header">
+                <span class="phase-badge phase-badge-teal">பகுதி 3</span>
+                <h3 class="phase-title">🌿 வாழ்வியல் நெறியும் நவீன அறிவியலும் (Living Values &amp; STEM)</h3>
+              </div>
+
+              <!-- Student Daily Conduct -->
+              <div class="living-conduct-clean">
+                <div class="phase-sub-title" style="margin-top:0; color:#2dd4bf;">🌿 மாணவர் அன்றாட வாழ்வியல் நெறி (Student Daily Conduct):</div>
+                <div class="living-conduct-text">{formatted_living}</div>
+              </div>
+
+              <!-- Vedic-STEM Fusion -->
+              {fusion_html}
+            </section>
+
+            <!-- PHASE 4: சுயபயிற்சியும் சாதனைப் பதிவும் -->
+            <section class="learning-phase-card phase-4-card" id="u{u['num']}-part4">
+              <div class="phase-header">
+                <span class="phase-badge phase-badge-gold">பகுதி 4</span>
+                <h3 class="phase-title">✍️ சுயபயிற்சி, பதிக இசை &amp; படிப்புப் பதிவு (Review &amp; Progress)</h3>
+              </div>
+
+              <!-- Interactive Quiz -->
+              <div style="margin: 16px 0;">
+                <div class="phase-sub-title">❓ சுய பரிசோதனை வினாடி-வினா (Self-Check Quiz):</div>
+                <p style="color:var(--text-muted); font-size:0.88rem; margin-bottom:12px;">வினாவை வாசித்து விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்தி சரிபார்க்கவும்.</p>
+                {quiz_items}
+              </div>
+
+              <!-- Daily Habits Checklist -->
+              <div style="background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 18px 22px; margin: 18px 0;">
+                <div class="phase-sub-title" style="margin-top:0; color:#fbbf24;">✅ மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Habit Checklist):</div>
+                {sadhana_items}
+              </div>
+
+              <!-- Devotional Audio Link -->
+              <div class="audio-clean-wrapper">
+                <div>
+                  <strong style="color:#ffffff;">🎵 இப்பாடத்திற்கான திருமுறைப் பதிக இசை</strong>
+                  <div style="color:var(--text-muted); font-size:0.85rem; margin-top:2px;">இறை இசையைக் கேட்டு மன அமைதி பெறுங்கள்.</div>
+                </div>
+                <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
+                  பாடலைக் கேட்க ↗
+                </a>
+              </div>
+
+              <!-- LMS Chapter Completion Bar -->
+              {lms_chapter_html}
+            </section>
 
             <!-- Navigation Stepper Footer -->
             <div class="lesson-nav-footer">
               {prev_btn}
               <button type="button" onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:rgba(255,255,255,0.15); color:#cbd5e1;">
-                🖨️ பாடம் அச்சிடுக (Print / PDF)
+                🖨️ அத்தியாயம் அச்சிடுக (Print / PDF)
               </button>
               {next_btn}
             </div>
@@ -609,8 +521,6 @@ def build_grade_coursebook(g, data):
       <div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div>
       <nav class="main-nav" id="mainNav">
         <a href="index.html" class="nav-link">முகப்பு</a>
-        <a href="school.html" class="nav-link" style="color:#38bdf8; font-weight:700;">🏫 இணையப் பள்ளி</a>
-        <a href="higher-studies.html" class="nav-link" style="color:var(--gold-bright); font-weight:700;">🏛️ உயர்கல்வி</a>
         <a href="saiva-neri.html" class="nav-link">சைவ நெறி</a>
 
         <!-- Kalvi (Grades 1-12) Dropdown -->
@@ -620,20 +530,6 @@ def build_grade_coursebook(g, data):
             <span class="dropdown-arrow">▾</span>
           </button>
           <div class="dropdown-menu kalvi-menu" id="kalviDropdownMenu">
-            <a href="school.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
-              <span class="dropdown-item-icon">🏫</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title" style="color:#38bdf8;">குருகுல இணையப் பள்ளி (Online School Portal)</div>
-                <div class="dropdown-item-desc">வேத-அறிவியல் சங்கமம், போமோடோரோ தியான அறை &amp; சான்றிதழ்</div>
-              </div>
-            </a>
-            <a href="higher-studies.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
-              <span class="dropdown-item-icon">🏛️</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title" style="color:var(--gold-bright);">வேதாந்த வித்யாபீடம் — உயர்கல்வி (Higher Studies)</div>
-                <div class="dropdown-item-desc">பிரஸ்தானத்ரயம், சம்ஸ்கிருத மூல சாத்திர பாஷ்யங்கள் &amp; பட்டயம்</div>
-              </div>
-            </a>
             <a href="kalvi.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
               <span class="dropdown-item-icon">🏛️</span>
               <div class="dropdown-item-content">
@@ -709,32 +605,6 @@ def build_grade_coursebook(g, data):
 
   <main class="main-content">
     
-    <!-- Grade LMS Learning Progress Dashboard -->
-    <div class="grade-lms-tracker-banner" style="background:linear-gradient(90deg, rgba(15,23,42,0.92), rgba(24,37,64,0.92)); border:1px solid rgba(56, 189, 248, 0.28); border-radius:14px; padding:14px 22px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; box-shadow:0 6px 20px rgba(0,0,0,0.4);">
-      <div style="display:flex; align-items:center; gap:14px;">
-        <div style="font-size:1.8rem; background:rgba(56, 189, 248, 0.12); width:46px; height:46px; display:flex; align-items:center; justify-content:center; border-radius:12px; border:1px solid rgba(56, 189, 248, 0.3);">🏫</div>
-        <div>
-          <div style="color:#ffffff; font-weight:700; font-size:1rem; display:flex; align-items:center; gap:8px;">
-            <span>குருகுல இணையப் பள்ளி — {data['grade_tamil']} கற்றல் முன்னேற்றம்</span>
-            <span class="wbs-code" style="font-size:0.75rem;">WBS G{g:02d}</span>
-          </div>
-          <div style="color:#94a3b8; font-size:0.85rem; margin-top:2px;" id="gradeProgressText-{g}">முன்னேற்றம்: கணக்கிடப்படுகிறது...</div>
-        </div>
-      </div>
-      <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
-        <div class="progress-bar-container" style="width:160px; height:10px; background:rgba(255,255,255,0.1); border-radius:10px; overflow:hidden;">
-          <div id="gradeProgressBar-{g}" style="height:100%; width:0%; background:linear-gradient(90deg, #38bdf8, #2dd4bf); transition:width 0.4s ease;"></div>
-        </div>
-        <span id="gradeProgressPercent-{g}" style="font-size:0.92rem; font-weight:800; color:#38bdf8;">0%</span>
-        <a href="school.html" class="sheet-btn sheet-btn-view" style="font-size:0.82rem; padding:6px 14px; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-          <span>🏫 இணையப் பள்ளி ↗</span>
-        </a>
-        <a href="higher-studies.html" class="sheet-btn sheet-btn-view" style="font-size:0.82rem; padding:6px 14px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border-color:var(--border-gold); color:var(--gold-bright);">
-          <span>🏛️ உயர்கல்வி ↗</span>
-        </a>
-      </div>
-    </div>
-
     <!-- Hero Banner with WBS Grade Code -->
     <div class="hero-banner">
       <div class="sacred-tag">
@@ -949,54 +819,6 @@ def build_grade_coursebook(g, data):
         document.body.style.overflow = '';
       }}
     }}
-
-    function toggleChapterCompletion(grade, unit) {{
-      var key = 'gkd_completed_' + grade + '_' + unit;
-      var isDone = localStorage.getItem(key) === 'true';
-      localStorage.setItem(key, isDone ? 'false' : 'true');
-      updateLmsButton(grade, unit, !isDone);
-      updateGradeProgress(grade, {total_units});
-    }}
-
-    function updateLmsButton(grade, unit, done) {{
-      var btn = document.getElementById('lms-btn-' + grade + '-' + unit);
-      var icon = document.getElementById('lms-icon-' + grade + '-' + unit);
-      var text = document.getElementById('lms-text-' + grade + '-' + unit);
-      if (!btn) return;
-      if (done) {{
-        btn.style.background = 'rgba(45, 212, 191, 0.2)';
-        btn.style.borderColor = 'rgba(45, 212, 191, 0.6)';
-        btn.style.color = '#2dd4bf';
-        if (icon) icon.textContent = '✓';
-        if (text) text.textContent = 'நிறைவு செய்யப்பட்டது! (+50 XP)';
-      }} else {{
-        btn.style.background = 'rgba(56, 189, 248, 0.12)';
-        btn.style.borderColor = 'rgba(56, 189, 248, 0.4)';
-        btn.style.color = '#38bdf8';
-        if (icon) icon.textContent = '○';
-        if (text) text.textContent = 'பாடம் நிறைவுற்றது (+50 XP)';
-      }}
-    }}
-
-    function updateGradeProgress(grade, totalUnits) {{
-      var doneCount = 0;
-      for (var u = 1; u <= totalUnits; u++) {{
-        var isDone = localStorage.getItem('gkd_completed_' + grade + '_' + u) === 'true';
-        updateLmsButton(grade, u, isDone);
-        if (isDone) doneCount++;
-      }}
-      var pct = Math.round((doneCount / totalUnits) * 100);
-      var bar = document.getElementById('gradeProgressBar-' + grade);
-      var pctEl = document.getElementById('gradeProgressPercent-' + grade);
-      var txtEl = document.getElementById('gradeProgressText-' + grade);
-      if (bar) bar.style.width = pct + '%';
-      if (pctEl) pctEl.textContent = pct + '%';
-      if (txtEl) txtEl.textContent = 'முன்னேற்றம்: ' + doneCount + ' / ' + totalUnits + ' பாடம் நிறைவு';
-    }}
-
-    document.addEventListener('DOMContentLoaded', function() {{
-      updateGradeProgress({g}, {total_units});
-    }});
   </script>
 </body>
 </html>

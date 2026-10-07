@@ -4992,3 +4992,200 @@ body.font-mukta {
     display: inline-block;
   }
 }
+
+/* -------------------------------------------------------------------------- */
+/* 4-PHASE PEDAGOGICAL LEARNING STRUCTURE (CLEAN, PACED & EASY TO FOLLOW)      */
+/* -------------------------------------------------------------------------- */
+.learning-phase-card {
+  background: rgba(14, 20, 32, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin: 22px 0;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.2s ease;
+}
+
+.phase-1-card { border-left: 4px solid #38bdf8; }
+.phase-2-card { border-left: 4px solid #a855f7; }
+.phase-3-card { border-left: 4px solid #2dd4bf; }
+.phase-4-card { border-left: 4px solid #fbbf24; }
+
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+}
+
+.phase-badge {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.phase-badge-blue { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+.phase-badge-purple { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+.phase-badge-teal { background: rgba(45, 212, 191, 0.15); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.3); }
+.phase-badge-gold { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+.phase-title {
+  color: #ffffff;
+  font-size: 1.22rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.phase-sub-title {
+  color: #f8fafc;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 18px 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Intro Split Grid: Objectives & Vocab */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .intro-grid { grid-template-columns: 1fr; }
+}
+
+.objectives-compact, .vocab-compact {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.intro-box-title {
+  color: #38bdf8;
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.objectives-list-clean {
+  padding-left: 18px;
+  color: #e2e8f0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.objectives-list-clean li {
+  margin-bottom: 6px;
+}
+
+.vocab-clean-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vocab-clean-item {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+.vocab-clean-item strong {
+  color: #ffffff;
+}
+
+/* Verse Callout */
+.verse-callout-clean {
+  background: rgba(212, 175, 55, 0.04);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin: 20px 0 10px 0;
+}
+
+.verse-callout-tag {
+  color: var(--gold-soft);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.verse-text-sacred {
+  font-family: 'Mukta Malar', serif;
+  font-size: 1.22rem;
+  color: #ffffff;
+  line-height: 1.9;
+  font-weight: 600;
+}
+
+.verse-source-tag {
+  color: var(--gold);
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin: 8px 0 12px 0;
+}
+
+.verse-meaning-clean {
+  color: #e2e8f0;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-top: 12px;
+}
+
+/* Story Card */
+.story-card-clean {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-top: 18px;
+}
+
+.story-content-text {
+  color: #cbd5e1;
+  font-size: 0.98rem;
+  line-height: 1.85;
+}
+
+/* Living Conduct */
+.living-conduct-clean {
+  background: rgba(45, 212, 191, 0.05);
+  border: 1px solid rgba(45, 212, 191, 0.2);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+}
+
+.living-conduct-text {
+  color: #e2e8f0;
+  font-size: 0.98rem;
+  line-height: 1.85;
+}
+
+/* Audio clean bar */
+.audio-clean-wrapper {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+}
+
