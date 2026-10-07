@@ -73,6 +73,102 @@
   ],
   "releases": [
     {
+      "chapter_number": 5,
+      "chapter_name": "இல்வாழ்க்கை",
+      "english_name": "Ilvaazhkkai (Domestic Virtue & Grihastha Dharma)",
+      "audio_release_id": "v_dsHTOvKP8",
+      "audio_title": "திருக்குறள் - இல்வாழ்க்கை",
+      "render_video_filename": "adhikaram_05_ilvaazhkkai_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_5",
+        "original_audio_id": "v_dsHTOvKP8",
+        "title": "அதிகாரம் 5 - இல்வாழ்க்கை | Ilvaazhkkai Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 5 - இல்வாழ்க்கை | Ilvaazhkkai - Domestic Virtue & Grihastha Dharma\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Ilvaazhkkai #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 5 - இல்வாழ்க்கை",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 8,
+      "chapter_name": "அன்புடைமை",
+      "english_name": "Anbudaimai (Loving-Kindness & Universal Affection)",
+      "audio_release_id": "lneosghJWgs",
+      "audio_title": "திருக்குறள் - அன்புடைமை",
+      "render_video_filename": "adhikaram_08_anbudaimai_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_8",
+        "original_audio_id": "lneosghJWgs",
+        "title": "அதிகாரம் 8 - அன்புடைமை | Anbudaimai Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 8 - அன்புடைமை | Anbudaimai - Loving-Kindness & Universal Affection\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Anbudaimai #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 8 - அன்புடைமை",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 16,
+      "chapter_name": "பொறையுடைமை",
+      "english_name": "Poraiyudaimai (Forbearance & Supreme Forgiveness)",
+      "audio_release_id": "R82hz_s2YGQ",
+      "audio_title": "திருக்குறள் - பொறையுடைமை",
+      "render_video_filename": "adhikaram_16_poraiyudaimai_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_16",
+        "original_audio_id": "R82hz_s2YGQ",
+        "title": "அதிகாரம் 16 - பொறையுடைமை | Poraiyudaimai Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 16 - பொறையுடைமை | Poraiyudaimai - Forbearance & Supreme Forgiveness\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Poraiyudaimai #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 16 - பொறையுடைமை",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 25,
+      "chapter_name": "அருளுடைமை",
+      "english_name": "Aruludaimai (Universal Grace & Compassion to All Beings)",
+      "audio_release_id": "EChaj0wXk_0",
+      "audio_title": "திருக்குறள் - அருளுடைமை",
+      "render_video_filename": "adhikaram_25_aruludaimai_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_25",
+        "original_audio_id": "EChaj0wXk_0",
+        "title": "அதிகாரம் 25 - அருளுடைமை | Aruludaimai Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 25 - அருளுடைமை | Aruludaimai - Universal Grace & Compassion to All Beings\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Aruludaimai #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 25 - அருளுடைமை",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
       "chapter_number": 26,
       "chapter_name": "புலால் உண்ணாமை",
       "english_name": "Pulaal Unnaamai (Abstinence from Meat / Universal Compassion)",
@@ -118,6 +214,198 @@
         "source": "திருக்குறள் — அதிகாரம் 27: தவம்",
         "lyrics": "உற்றநோய் நோன்றல் உயிர்க்குறுகண் செய்யாமை\nஅற்றே தவத்திற்கு உரு.",
         "meaning": "தனக்கு நேரும் துன்பங்களைப் பொறுத்துக் கொள்வதும், மற்ற எந்த உயிருக்கும் துன்பம் செய்யாமல் இருப்பதுமே தவத்தின் உண்மையான வடிவமாகும்."
+      }
+    },
+    {
+      "chapter_number": 30,
+      "chapter_name": "வாய்மை",
+      "english_name": "Vaaimai (The Power of Absolute Truthfulness)",
+      "audio_release_id": "BoOWFaOGczE",
+      "audio_title": "திருக்குறள் - வாய்மை",
+      "render_video_filename": "adhikaram_30_vaaimai_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_30",
+        "original_audio_id": "BoOWFaOGczE",
+        "title": "அதிகாரம் 30 - வாய்மை | Vaaimai Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 30 - வாய்மை | Vaaimai - The Power of Absolute Truthfulness\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Vaaimai #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 30 - வாய்மை",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 31,
+      "chapter_name": "வெகுளாமை",
+      "english_name": "Vegulaamai (Restraint from Anger & Conquest of Wrath)",
+      "audio_release_id": "WM8EPZ4KK2s",
+      "audio_title": "திருக்குறள் - வெகுளாமை",
+      "render_video_filename": "adhikaram_31_vegulaamai_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_31",
+        "original_audio_id": "WM8EPZ4KK2s",
+        "title": "அதிகாரம் 31 - வெகுளாமை | Vegulaamai Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 31 - வெகுளாமை | Vegulaamai - Restraint from Anger & Conquest of Wrath\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Vegulaamai #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 31 - வெகுளாமை",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 39,
+      "chapter_name": "இறைமாட்சி",
+      "english_name": "Iraimaatchi (Sovereign Majesty & Royal Excellence)",
+      "audio_release_id": "mCwNR1Bytj4",
+      "audio_title": "திருக்குறள் - இறைமாட்சி",
+      "render_video_filename": "adhikaram_39_iraimaatchi_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_39",
+        "original_audio_id": "mCwNR1Bytj4",
+        "title": "அதிகாரம் 39 - இறைமாட்சி | Iraimaatchi Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 39 - இறைமாட்சி | Iraimaatchi - Sovereign Majesty & Royal Excellence\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Iraimaatchi #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 39 - இறைமாட்சி",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 40,
+      "chapter_name": "கல்வி",
+      "english_name": "Kalvi (Sacred Learning & The Lamp of Education)",
+      "audio_release_id": "KZxknhbVIk0",
+      "audio_title": "திருக்குறள் - கல்வி",
+      "render_video_filename": "adhikaram_40_kalvi_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_40",
+        "original_audio_id": "KZxknhbVIk0",
+        "title": "அதிகாரம் 40 - கல்வி | Kalvi Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 40 - கல்வி | Kalvi - Sacred Learning & The Lamp of Education\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Kalvi #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 40 - கல்வி",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 42,
+      "chapter_name": "கேள்வி",
+      "english_name": "Kelvi (The Wisdom of Listening to the Sages)",
+      "audio_release_id": "vbMywONB5Wc",
+      "audio_title": "திருக்குறள் - கேள்வி",
+      "render_video_filename": "adhikaram_42_kelvi_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_42",
+        "original_audio_id": "vbMywONB5Wc",
+        "title": "அதிகாரம் 42 - கேள்வி | Kelvi Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 42 - கேள்வி | Kelvi - The Wisdom of Listening to the Sages\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Kelvi #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 42 - கேள்வி",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 44,
+      "chapter_name": "குற்றங்கடிதல்",
+      "english_name": "Kutrangadithal (Guarding against Faults & Moral Vigilance)",
+      "audio_release_id": "VVkl8bORJXg",
+      "audio_title": "திருக்குறள் - குற்றங்கடிதல்",
+      "render_video_filename": "adhikaram_44_kutrangadithal_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_44",
+        "original_audio_id": "VVkl8bORJXg",
+        "title": "அதிகாரம் 44 - குற்றங்கடிதல் | Kutrangadithal Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 44 - குற்றங்கடிதல் | Kutrangadithal - Guarding against Faults & Moral Vigilance\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Kutrangadithal #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 44 - குற்றங்கடிதல்",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 45,
+      "chapter_name": "பெரியாரைத் துணைக்கோடல்",
+      "english_name": "Periyaaraith Thunaikkodal (Seeking the Fellowship & Counsel of Sages)",
+      "audio_release_id": "HRN77i6Kio8",
+      "audio_title": "திருக்குறள் - பெரியாரைத் துணைக்கோடல்",
+      "render_video_filename": "adhikaram_45_periyaaraith_thunaikkodal_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_45",
+        "original_audio_id": "HRN77i6Kio8",
+        "title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் | Periyaaraith Thunaikkodal Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் | Periyaaraith Thunaikkodal - Seeking the Fellowship & Counsel of Sages\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Periyaaraith Thunaikkodal #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல்",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
+      }
+    },
+    {
+      "chapter_number": 46,
+      "chapter_name": "சிற்றினஞ்சேராமை",
+      "english_name": "Sitrinanjeraamai (Avoiding Base Fellowship & The Law of Association)",
+      "audio_release_id": "wylRNpaJNmY",
+      "audio_title": "திருக்குறள் - சிற்றினஞ்சேராமை",
+      "render_video_filename": "adhikaram_46_sitrinanjeraamai_cinematic.mp4",
+      "catalog_film_entry": {
+        "id": "PENDING_UPLOAD_CH_46",
+        "original_audio_id": "wylRNpaJNmY",
+        "title": "அதிகாரம் 46 - சிற்றினஞ்சேராமை | Sitrinanjeraamai Cinematic Thirukkural Film",
+        "type": "film",
+        "playlists": [
+          "Discography",
+          "திருக்குறள் | Thirukkural — Master Collection"
+        ],
+        "category": "thirukkural",
+        "description": "திருக்குறள் அதிகாரம் 46 - சிற்றினஞ்சேராமை | Sitrinanjeraamai - Avoiding Base Fellowship & The Law of Association\n\nA full-song cinematic film from Guru Kula Desam.\nMusic & Audio: Guru Kula Desam\n\n#Thirukkural #Sitrinanjeraamai #GuruKulaDesam #TamilCulture",
+        "author": "திருவள்ளுவர் (Thiruvalluvar)",
+        "source": "திருக்குறள் — அதிகாரம் 46 - சிற்றினஞ்சேராமை",
+        "lyrics": "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        "meaning": "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாகக் கொண்டு தொடங்குவது போல உலகம் இறைவனை முதலாகக் கொண்டு இயங்குகிறது."
       }
     },
     {
