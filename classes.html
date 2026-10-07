@@ -16,8 +16,8 @@
         <span class="strip-emblem">ॐ</span>
         <span class="strip-brand-text">குரு குல தேசம்</span>
       </a>
-      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="toggleLeftStrip()" title="விரிவுபடுத்து / சுருக்கு" aria-label="Toggle Sidebar">
-        <span class="strip-toggle-icon">⇤</span>
+      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="closePrimaryMenu()" title="பட்டி மூடுக" aria-label="Close Primary Menu">
+        <span class="strip-toggle-icon">✕</span>
       </button>
     </div>
 
@@ -122,12 +122,16 @@
     </div>
   </aside>
 
-  <div class="strip-backdrop" id="stripBackdrop" onclick="closeMobileStrip()"></div>
+  <div class="strip-backdrop" id="stripBackdrop" onclick="closePrimaryMenu()"></div>
 
   <!-- CONTEXT-SENSITIVE TOP BAR (Sub-items for active section only) -->
   <header class="context-top-bar" id="contextTopBar">
     <div class="context-bar-container">
-      <button type="button" class="context-mobile-btn" onclick="toggleLeftStrip()" title="பக்கப்பட்டி">☰</button>
+      <button type="button" class="primary-hamburger-btn" onclick="togglePrimaryMenu()" title="முதன்மை பட்டி (6 பிரிவுகள்)" aria-label="முதன்மை பட்டி">
+        <span class="hb-icon">☰</span>
+        <span class="hb-emblem">ॐ</span>
+        <span class="hb-label">முதன்மை பட்டி</span>
+      </button>
       <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Section Tabs">
         <a href="syllabus.html" class="context-tab-pill"><span class="context-tab-pill-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>
         <a href="classes.html" class="context-tab-pill active"><span class="context-tab-pill-icon">🏛️</span><span>வகுப்புகள் அட்டவணை</span></a>

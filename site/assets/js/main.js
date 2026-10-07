@@ -705,30 +705,43 @@ function resetUserSettings() {
 }
 
 // --------------------------------------------------------------------------
-// MODAL & SIDEBAR CONTROLS
+// PRIMARY 6-GROUP MENU DRAWER & SIDEBAR CONTROLS
 // --------------------------------------------------------------------------
-function toggleLeftStrip() {
+function togglePrimaryMenu() {
   const strip = document.getElementById('leftStripBar');
   const backdrop = document.getElementById('stripBackdrop');
   if (!strip) return;
+  const isOpen = strip.classList.toggle('open');
+  document.body.classList.toggle('primary-menu-open', isOpen);
+  if (backdrop) backdrop.classList.toggle('active', isOpen);
+}
 
-  if (window.innerWidth <= 991) {
-    const isMobileOpen = strip.classList.toggle('mobile-open');
-    if (backdrop) backdrop.classList.toggle('active', isMobileOpen);
-  } else {
-    const isExpanded = strip.classList.toggle('expanded');
-    document.body.classList.toggle('strip-expanded', isExpanded);
-    const toggleIcon = strip.querySelector('.strip-toggle-icon');
-    if (toggleIcon) toggleIcon.innerText = isExpanded ? '⇥' : '⇤';
-    localStorage.setItem('GURUKULA_STRIP_EXPANDED', isExpanded ? 'true' : 'false');
+function openPrimaryMenu() {
+  const strip = document.getElementById('leftStripBar');
+  const backdrop = document.getElementById('stripBackdrop');
+  if (!strip) return;
+  strip.classList.add('open');
+  document.body.classList.add('primary-menu-open');
+  if (backdrop) backdrop.classList.add('active');
+}
+
+function closePrimaryMenu() {
+  const strip = document.getElementById('leftStripBar');
+  const backdrop = document.getElementById('stripBackdrop');
+  if (strip) {
+    strip.classList.remove('open');
+    strip.classList.remove('mobile-open');
   }
+  document.body.classList.remove('primary-menu-open');
+  if (backdrop) backdrop.classList.remove('active');
+}
+
+function toggleLeftStrip() {
+  togglePrimaryMenu();
 }
 
 function closeMobileStrip() {
-  const strip = document.getElementById('leftStripBar');
-  const backdrop = document.getElementById('stripBackdrop');
-  if (strip) strip.classList.remove('mobile-open');
-  if (backdrop) backdrop.classList.remove('active');
+  closePrimaryMenu();
 }
 
 function openUserSettingsModal(tab) {
@@ -1027,14 +1040,22 @@ function renderContextTabsIntoHeader() {
   const existingTools = document.querySelector('.header-right-tools');
   if (existingTools && existingTools.parentNode) existingTools.parentNode.removeChild(existingTools);
 
-  // 3. Build Context-Sensitive Menu Tabs
+  // 3. Build Context-Sensitive Menu Tabs with Primary Hamburger Trigger
   const tabs = getContextTabsForPage();
   const tabsNav = document.createElement('nav');
   tabsNav.id = 'contextTabsNav';
   tabsNav.className = 'context-tabs-nav';
   tabsNav.setAttribute('aria-label', 'Context Specific Tabs');
 
-  tabsNav.innerHTML = tabs.map((t, idx) => {
+  const hamburgerBtnHtml = `
+    <button type="button" class="primary-hamburger-btn" onclick="togglePrimaryMenu()" title="முதன்மை பட்டி (6 பிரிவுகள்)" aria-label="முதன்மை பட்டி">
+      <span class="hb-icon">☰</span>
+      <span class="hb-emblem">ॐ</span>
+      <span class="hb-label">முதன்மை பட்டி</span>
+    </button>
+  `;
+
+  tabsNav.innerHTML = hamburgerBtnHtml + tabs.map((t, idx) => {
     if (t.href) {
       return `
         <a href="${t.href}" class="context-tab-pill ${t.active ? 'active' : ''}" id="${t.id}">
@@ -1397,14 +1418,24 @@ if (document.readyState === 'loading') {
   mountAppShell();
 }
 
-// Accordion support for grouped sidebar submenus
+// Accordion support and Drawer auto-close on selection
 document.addEventListener('click', (e) => {
+  // If clicked on any navigation link inside the primary menu drawer, close the drawer
+  if (e.target.closest('#leftStripBar a')) {
+    closePrimaryMenu();
+    return;
+  }
+
+  // If clicked on backdrop, close drawer
+  if (e.target.id === 'stripBackdrop') {
+    closePrimaryMenu();
+    return;
+  }
+
   const subToggle = e.target.closest('.strip-item.strip-has-sub');
   if (subToggle) {
     const strip = document.getElementById('leftStripBar');
-    const isExpanded = strip && (strip.classList.contains('expanded') || strip.classList.contains('mobile-open'));
-    if (isExpanded) {
-      // Toggle accordion open/close on mobile or expanded sidebar
+    if (strip && (strip.classList.contains('open') || strip.classList.contains('mobile-open') || strip.classList.contains('expanded'))) {
       const group = subToggle.closest('.strip-group');
       if (group) {
         const wasOpen = group.classList.contains('open');
