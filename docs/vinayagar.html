@@ -207,16 +207,24 @@
   </main>
 
   
-  <div class="player-modal" id="playerModal" onclick="if(event.target === this) closePlayer()">
-    <div class="player-modal-box">
-      <div class="modal-iframe-wrapper">
+    <div class="player-modal" id="playerModal" onclick="if(event.target === this) closePlayer()">
+    <div class="player-modal-box" id="playerModalBox">
+      <div class="modal-header">
+        <div class="modal-title" id="modalTitle">Now Playing</div>
+        <div class="modal-header-actions">
+          <button type="button" class="modal-scroll-btn" onclick="scrollToModalDetails()" title="வரிகளுக்குச் செல்க">
+            📜 வரிகள் &amp; பொருள் ↓
+          </button>
+          <button type="button" class="modal-close-btn" onclick="closePlayer()" title="மூடுக">✕ மூடுக (Close)</button>
+        </div>
+      </div>
+      <div class="modal-iframe-wrapper" id="modalIframeWrapper">
         <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="modal-footer">
-        <div class="modal-title" id="modalTitle">Now Playing</div>
-      <div class="modal-details" id="modalDetails"></div>
-        <button class="modal-close-btn" onclick="closePlayer()">✕ மூடுக (Close)</button>
+      <div class="modal-scroll-hint" onclick="scrollToModalDetails()">
+        <span>▼ கீழே பாடல் வரிகள் &amp; தத்துவப் பொருள் விளக்கம் (Scroll down for Lyrics &amp; Meaning) ▼</span>
       </div>
+      <div class="modal-details" id="modalDetails"></div>
     </div>
   </div>
 

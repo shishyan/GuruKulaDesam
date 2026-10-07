@@ -73,7 +73,7 @@ function renderCards() {
     const safeTitle = escapeHtml(it.title);
     const safeAuthor = escapeHtml(it.author);
     const safeSource = escapeHtml(it.source);
-    const formattedLyrics = it.lyrics ? escapeHtml(it.lyrics).replace(/\n/g, '<br>') : '';
+    const formattedLyrics = it.lyrics ? escapeHtml(it.lyrics).replace(/\\n/g, '<br>') : '';
     const safeMeaning = escapeHtml(it.meaning);
     const hasDetails = Boolean(it.lyrics || it.meaning || it.author);
 
@@ -165,11 +165,19 @@ function onSearchInput(val) {
 }
 
 function openPlayer(videoId, title) {
-  const modal = document.getElementById('playerModal');
-  const iframe = document.getElementById('modalIframe');
-  const titleEl = document.getElementById('modalTitle');
+  let modal = document.getElementById('playerModal');
+  let iframe = document.getElementById('modalIframe');
+  let titleEl = document.getElementById('modalTitle');
 
-  if (!modal || !iframe) return;
+  // If modal doesn't exist on page, create dynamically
+  if (!modal) {
+    modal = createPlayerModalElement();
+    document.body.appendChild(modal);
+    iframe = document.getElementById('modalIframe');
+    titleEl = document.getElementById('modalTitle');
+  }
+
+  if (!iframe) return;
 
   iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
   if (titleEl) titleEl.innerText = title;
@@ -186,7 +194,7 @@ function openPlayer(videoId, title) {
     detailsEl = document.createElement('div');
     detailsEl.id = 'modalDetails';
     detailsEl.className = 'modal-details';
-    const box = modal.querySelector('.player-modal-box');
+    const box = document.getElementById('playerModalBox') || modal.querySelector('.player-modal-box');
     if (box) box.appendChild(detailsEl);
   }
 
@@ -236,15 +244,77 @@ function openPlayer(videoId, title) {
         <div class="modal-box-body meaning-body">${safeMeaning}</div>
       </div>
     </div>
+
+    <div class="modal-bottom-actions">
+      <button type="button" class="modal-btn modal-btn-top" onclick="scrollToModalTop()">
+        ▲ காணொளிக்குத் திரும்புக (Back to Video)
+      </button>
+      <button type="button" class="modal-btn modal-btn-close-bottom" onclick="closePlayer()">
+        ✕ மூடுக (Close Player)
+      </button>
+    </div>
   `;
 
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
 
-  // Scroll modal details to top
-  const modalBox = modal.querySelector('.player-modal-box');
-  if (modalBox) modalBox.scrollTop = 0;
+  // Scroll modal box to top when opening
+  const modalBox = document.getElementById('playerModalBox') || modal.querySelector('.player-modal-box');
+  if (modalBox) {
+    modalBox.scrollTop = 0;
+  }
 }
+
+function scrollToModalDetails() {
+  const details = document.getElementById('modalDetails');
+  const box = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
+  if (details && box) {
+    const topPos = details.offsetTop - 55;
+    box.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+  }
+}
+
+function scrollToModalTop() {
+  const box = document.getElementById('playerModalBox') || document.querySelector('.player-modal-box');
+  if (box) {
+    box.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+function createPlayerModalElement() {
+  const modal = document.createElement('div');
+  modal.className = 'player-modal';
+  modal.id = 'playerModal';
+  modal.onclick = function(e) { if (e.target === this) closePlayer(); };
+  modal.innerHTML = `
+    <div class="player-modal-box" id="playerModalBox">
+      <div class="modal-header">
+        <div class="modal-title" id="modalTitle">Now Playing</div>
+        <div class="modal-header-actions">
+          <button type="button" class="modal-scroll-btn" onclick="scrollToModalDetails()" title="வரிகளுக்குச் செல்க">
+            📜 வரிகள் &amp; பொருள் ↓
+          </button>
+          <button type="button" class="modal-close-btn" onclick="closePlayer()" title="மூடுக">✕ மூடுக (Close)</button>
+        </div>
+      </div>
+      <div class="modal-iframe-wrapper" id="modalIframeWrapper">
+        <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-scroll-hint" onclick="scrollToModalDetails()">
+        <span>▼ கீழே பாடல் வரிகள் &amp; தத்துவப் பொருள் விளக்கம் (Scroll down for Lyrics &amp; Meaning) ▼</span>
+      </div>
+      <div class="modal-details" id="modalDetails"></div>
+    </div>
+  `;
+  return modal;
+}
+
+// Global escape key listener
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closePlayer();
+  }
+});
 
 function copyLyricsText(btn, text) {
   if (!text) return;
@@ -342,13 +412,14 @@ document.addEventListener('keydown', e => {
 });
 
 // Sheet Modal Handlers
-function openSheetModal(imgSrc, pageNum, pageTitle) {
+function openSheetModal(imgSrc, pageNum, pageTitle, gradeLabel) {
   const modal = document.getElementById('sheetModal');
   const modalImg = document.getElementById('sheetModalImg');
   const modalTitle = document.getElementById('sheetModalTitle');
   if (modal && modalImg) {
     modalImg.src = imgSrc;
-    if (modalTitle) modalTitle.innerText = `தரம் 1 — பக்கம் ${pageNum} ${pageTitle ? '• ' + pageTitle : ''}`;
+    const label = gradeLabel || 'பாடநூல்';
+    if (modalTitle) modalTitle.innerText = `${label} — பக்கம் ${pageNum} ${pageTitle ? '• ' + pageTitle : ''}`;
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
   }

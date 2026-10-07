@@ -3,56 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>சைவ நெறி — தரம் 3 (Grade 3) | Guru Kula Desam</title>
-  <meta name="description" content="குரு குல தேசம் சைவ நெறி தரம் 3. சமய குரவர் நால்வர் பெருமை, மாணிக்கவாசகரின் திருவெம்பாவை, பஞ்ச பூதத் திருத்தலங்கள் மற்றும் மூதுரை வாழ்வியல் ஒழுக்கங்கள்.">
+  <title>தரம் 3 (Grade 3 Coursebook) | Guru Kula Desam</title>
+  <meta name="description" content="சைவ நெறி &amp; வேத வாழ்வியல் பாடநூல் தரம் 3. சமய குரவர் நால்வர் பெருமை, மாணிக்கவாசகரின் திருவெம்பாவை, பஞ்ச பூதத் திருத்தலங்கள் மற்றும் மூதுரை வாழ்வியல் ஒழுக்கங்கள்.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+  <!-- Site Header -->
   <header class="site-header">
     <div class="header-container">
       <a href="index.html" class="brand" aria-label="Guru Kula Desam Home">
-        <div class="brand-emblem">ॐ</div>
+        <div class="brand-emblem">🔱</div>
         <div class="brand-text">
           <h1>குரு குல தேசம்</h1>
-          <span>Guru Kula Desam <span class="brand-sub-extra">• வேத &amp; சைவ நெறி</span></span>
+          <span>Guru Kula Desam <span class="brand-sub-extra">• வேத &amp; சைவ வாழ்வியல் கல்வி</span></span>
         </div>
       </a>
       <button class="mobile-toggle" id="mobileNavToggle" onclick="toggleMobileNav()" aria-label="பட்டி (Menu)" aria-expanded="false">☰</button>
       <div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div>
       <nav class="main-nav" id="mainNav">
-        <a href="index.html" class="nav-link ">முகப்பு</a>
-        <a href="saiva-neri.html" class="nav-link ">சைவ நெறி</a>
+        <a href="index.html" class="nav-link">முகப்பு</a>
+        <a href="saiva-neri.html" class="nav-link">சைவ நெறி</a>
 
         <!-- Kalvi (Grades 1-12) Dropdown -->
-        <div class="nav-dropdown " id="kalviDropdown">
-          <button class="nav-link dropdown-toggle " id="kalviDropdownBtn" onclick="toggleDropdown(event, 'kalviDropdown')" aria-haspopup="true" aria-expanded="false">
+        <div class="nav-dropdown active" id="kalviDropdown">
+          <button class="nav-link dropdown-toggle active" id="kalviDropdownBtn" onclick="toggleDropdown(event, 'kalviDropdown')" aria-haspopup="true" aria-expanded="false">
             <span>கல்வி (Grades 1-12)</span>
             <span class="dropdown-arrow">▾</span>
           </button>
           <div class="dropdown-menu kalvi-menu" id="kalviDropdownMenu">
-            <a href="kalvi.html" class="dropdown-item " style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
+            <a href="kalvi.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
               <span class="dropdown-item-icon">🏛️</span>
               <div class="dropdown-item-content">
                 <div class="dropdown-item-title">சைவ நெறி கல்வித் தளம் (Curriculum Hub)</div>
                 <div class="dropdown-item-desc">தரம் 1 முதல் 12 வரையிலான முழுமையான பாடநெறி</div>
               </div>
             </a>
-            <a href="virtues.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
-              <span class="dropdown-item-icon">🔤</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">அகர வரிசை நற்பண்பு நெறி (Virtues Mapping)</div>
-                <div class="dropdown-item-desc">தமிழ் எழுத்து முதல் தர்மம் வரை — 12 தரங்களின் நற்பண்பு வளர்ச்சி</div>
-              </div>
-            </a>
-            <a href="irai-isai-virundhu.html" class="dropdown-item " style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
+            <a href="irai-isai-virundhu.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
               <span class="dropdown-item-icon">🎵</span>
               <div class="dropdown-item-content">
                 <div class="dropdown-item-title">இறை இசை விருந்து (Syllabus Music)</div>
                 <div class="dropdown-item-desc">தேவாரம், திருப்புகழ், விநாயகர் &amp; சிவபுராண இசை அமுது</div>
               </div>
             </a>
-            <a href="tharam-1.html" class="dropdown-item ">
+            <a href="tharam-1.html" class="dropdown-item">
               <span class="dropdown-item-icon">📖</span>
               <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 1 (Grade 1)</div></div>
             </a>
@@ -103,538 +97,1470 @@
           </div>
         </div>
 
-        <!-- Traditions Dropdown -->
-        <div class="nav-dropdown " id="traditionsDropdown">
-          <button class="nav-link dropdown-toggle" id="traditionsDropdownBtn" onclick="toggleDropdown(event, 'traditionsDropdown')" aria-haspopup="true" aria-expanded="false">
-            <span>வழிபாட்டு நெறிகள்</span>
-            <span class="dropdown-arrow">▾</span>
-          </button>
-          <div class="dropdown-menu" id="traditionsDropdownMenu">
-            <a href="murugan.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🔱</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">முருகன் (Kaumaram)</div>
-                <div class="dropdown-item-desc">கந்த சஷ்டி, திருப்புகழ் &amp; கானங்கள்</div>
-              </div>
-            </a>
-            <a href="sakthi.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🌸</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">சக்தி (Shaktham)</div>
-                <div class="dropdown-item-desc">அபிராமி அந்தாதி &amp; லலிதா போற்றிகள்</div>
-              </div>
-            </a>
-            <a href="vinayagar.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🐘</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">விநாயகர் (Ganapathyam)</div>
-                <div class="dropdown-item-desc">விநாயகர் அகவல் &amp; மூல கணபதி பதிகங்கள்</div>
-              </div>
-            </a>
-            <a href="vaishnava.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🪷</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">வைணவம் (Vaishnavam)</div>
-                <div class="dropdown-item-desc">விஷ்ணு, கிருஷ்ணர் &amp; திவ்வியப் பிரபந்தம்</div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <a href="thirukkural.html" class="nav-link ">திருக்குறள்</a>
-        <a href="sanmargam.html" class="nav-link ">சன்மார்க்கம்</a>
-        <a href="irai-isai-virundhu.html" class="nav-link ">இறை இசை</a>
-        <a href="syllabus.html" class="nav-link ">பாடத்திட்டம்</a>
-        <a href="classes.html" class="nav-link ">வகுப்புகள்</a>
-        <a href="about.html" class="nav-link ">பெரியவா தரிசனம்</a>
-        <a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener" class="nav-link" style="border: 1px solid var(--border-gold); padding: 5px 12px; border-radius: 16px; color: var(--gold-bright);">🌐 கூகிள் தளம் ↗</a>
-        <a href="https://www.youtube.com/@guru-kula-desam?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="yt-btn-header">
-          ▶ YouTube
-        </a>
+        <a href="thirukkural.html" class="nav-link">திருக்குறள்</a>
+        <a href="sanmargam.html" class="nav-link">சன்மார்க்கம்</a>
+        <a href="syllabus.html" class="nav-link">பாடத்திட்டம்</a>
+        <a href="classes.html" class="nav-link">வகுப்புகள்</a>
       </nav>
     </div>
   </header>
 
   <main class="main-content">
+    
+    <!-- Hero Banner -->
     <div class="hero-banner">
-      <div class="sacred-tag">ॐ சைவ நெறி • தரம் 3 • Grade 3 • வயது 7 - 8 (தொடக்க நிலை III) ॐ</div>
-      <h1>சைவ நெறி — தரம் 3</h1>
-      <h2>Saiva Neri Spiritual &amp; Vedic Curriculum — Grade 3</h2>
+      <div class="sacred-tag">📖 தரம் 3 • பாடநூல் &amp; சுயகற்றல் பயிற்சி நெறி 📖</div>
+      <h1>சைவ நெறி — தரம் 3 (Grade 3)</h1>
+      <h2>Vedic &amp; Saiva Dharmic Living Coursebook — வயது 7 - 8 (தொடக்க நிலை III)</h2>
       <div class="verse-quote">"ஆதியும் அந்தமும் இல்லா அரும்பெருஞ் சோதியை யாம்பாடக் கேட்டேயும் — மாணிக்கவாசகர்"</div>
-      <p class="hero-desc">சமய குரவர் நால்வர் பெருமை, மாணிக்கவாசகரின் திருவெம்பாவை, பஞ்ச பூதத் திருத்தலங்கள் மற்றும் மூதுரை வாழ்வியல் ஒழுக்கங்கள்.</p>
+      <p class="hero-desc">
+        சமய குரவர் நால்வர் பெருமை, மாணிக்கவாசகரின் திருவெம்பாவை, பஞ்ச பூதத் திருத்தலங்கள் மற்றும் மூதுரை வாழ்வியல் ஒழுக்கங்கள்.
+      </p>
     </div>
 
-    <!-- Live Google Sites Link Bar -->
-    <div class="google-site-banner">
-      <div class="gs-banner-content">
-        <h3>🌐 கூகிள் சைட்ஸ் நேரடி இணைப்பு (Google Sites Mirror)</h3>
-        <p>கூகிள் தளத்தில் உள்ள இந்த தரம் 3 பக்கத்தை நேரடியாகப் பார்வையிடவும்.</p>
-      </div>
-      <a href="https://sites.google.com/view/wwwgurukuladesamcom/home/%E0%AE%9A%E0%AE%B5-%E0%AE%A8%E0%AE%B1/%E0%AE%A4%E0%AE%B0%E0%AE%AE-3" target="_blank" rel="noopener" class="gs-banner-btn">
-        கூகிள் தளத்தில் தரம் 3 காண்க ↗
-      </a>
+    <!-- Course Metadata Bar -->
+    <div class="course-header-meta">
+      <div class="course-meta-badge">📚 பாடநெறி: <strong>சைவ நெறி &amp; வேத வாழ்வியல்</strong></div>
+      <div class="course-meta-badge">🎯 நிலை: <strong>வயது 7 - 8 (தொடக்க நிலை III)</strong></div>
+      <div class="course-meta-badge">🧩 அலகுகள்: <strong>5 விரிவான அத்தியாயங்கள்</strong></div>
+      <div class="course-meta-badge">🎨 காட்சி விளக்கங்கள்: <strong>அனைத்து அத்தியாயங்களிலும் உண்டு</strong></div>
     </div>
 
-    <!-- Grade Quick Navigation -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin: 20px 0; padding: 14px 20px; background:var(--bg-card); border-radius:12px; border:1px solid var(--border-gold);">
+    <!-- Quick Grade Switcher Bar -->
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin: 15px 0 25px 0; padding: 14px 20px; background:var(--bg-card); border-radius:12px; border:1px solid var(--border-gold);">
       <a href="tharam-2.html" style="color:var(--gold); text-decoration:none; font-weight:600;">← முந்தைய தரம்: தரம் 2</a>
-      <a href="kalvi.html" style="color:var(--text-muted); text-decoration:none; font-size:0.9rem;">கல்வித் தளம் (தரம் 3 / 12)</a>
+      <span style="color:var(--text-muted); font-size:0.9rem;">தரம் 3 / 12</span>
       <a href="tharam-4.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">அடுத்த தரம்: தரம் 4 (Grade 4) →</a>
     </div>
 
-    <!-- Syllabus Content Box -->
-    <div class="scripture-study-section" style="margin-bottom:30px;">
-      <span class="source-badge">தரம் 3 — பாடத்திட்ட விவரங்கள் &amp; தலைப்புகள்</span>
-      <h2>கற்பித்தல் நெறிகளும் பாட உள்ளடக்கமும் (Curriculum &amp; Learning Outcomes)</h2>
-      <ul style="margin-left: 20px; margin-top: 14px; color: var(--text-main); line-height: 1.8;">
-        <li style='margin-bottom:8px;'><strong>சமய குரவர் நால்வர்:</strong> திருஞானசம்பந்தர், திருநாவுக்கரசர், சுந்தரமூர்த்தி நாயனார், மாணிக்கவாசகர் சிறப்புக்கள்.</li><li style='margin-bottom:8px;'><strong>திருவெம்பாவை:</strong> மார்கழி மாத அதிகாலை வழிபாடும், உலக நன்மையும்.</li><li style='margin-bottom:8px;'><strong>பஞ்ச பூதத் தலங்கள்:</strong> நிலம், நீர், நெருப்பு, காற்று, ஆகாயம் ஆகிய தலங்களின் அடையாளம்.</li><li style='margin-bottom:8px;'><strong>நீதி நெறி:</strong> ஔவையாரின் மூதுரை மூலம் பயன் கருதாது உதவி செய்யும் தர்மம்.</li><li style='margin-bottom:8px;'><strong>வேத காலை வணக்கம்:</strong> 'கராக்ரே வசதே லக்ஷ்மீ' மற்றும் பூமி மாதா பிரார்த்தனை.</li>
-      </ul>
+    <!-- Anchor for scrolling -->
+    <div id="course-content-start"></div>
+
+    <!-- Chapter Navigation Stepper (Tabs for Paced Learning) -->
+    <div class="course-tabs-wrapper">
+      <div style="font-size:0.85rem; color:var(--gold-bright); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">
+        📌 அத்தியாயத் தேர்வு (Select Chapter to Study at your own pace):
+      </div>
+      <div class="course-tabs">
+        
+        <button class="course-tab-btn active" id="tab-btn-1" onclick="switchChapter(1)">
+          <span class="course-tab-num">1</span>
+          <span>சைவ சமய குரவர் நால்வர் பெருமக்கள்</span>
+        </button>
+        
+        <button class="course-tab-btn " id="tab-btn-2" onclick="switchChapter(2)">
+          <span class="course-tab-num">2</span>
+          <span>மாணிக்கவாசகரின் திருவெம்பாவை</span>
+        </button>
+        
+        <button class="course-tab-btn " id="tab-btn-3" onclick="switchChapter(3)">
+          <span class="course-tab-num">3</span>
+          <span>பஞ்ச பூதத் திருத்தலங்கள் & இயற்கை வழிபாடு</span>
+        </button>
+        
+        <button class="course-tab-btn " id="tab-btn-4" onclick="switchChapter(4)">
+          <span class="course-tab-num">4</span>
+          <span>ஔவையாரின் மூதுரை</span>
+        </button>
+        
+        <button class="course-tab-btn " id="tab-btn-5" onclick="switchChapter(5)">
+          <span class="course-tab-num">5</span>
+          <span>வேத காலை வணக்கம் & பூமி மாதா பிரார்த்தனை</span>
+        </button>
+        
+    <button class="course-tab-btn" id="tab-btn-all" onclick="switchChapter('all')">
+      <span class="course-tab-num">📚</span>
+      <span>முழு பாடநூல் பார்வை (Full Course)</span>
+    </button>
+    
+      </div>
     </div>
 
-    
-    <!-- Alphabets to Virtue Mapping Section (Grade 3 Specific) -->
-    <section class="scripture-study-section" style="margin-top: 36px; margin-bottom: 36px; border: 1px solid var(--border-gold-hover); background: rgba(15, 18, 26, 0.95); box-shadow: 0 10px 30px rgba(0,0,0,0.6);">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 10px;">
-        <span class="source-badge" style="background: linear-gradient(135deg, #d4af37, #996515); color: #000; font-weight: 800;">🔤 அகர வரிசை நற்பண்பு நெறிமுறைமை • தரம் 3</span>
-        <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 4px 12px; border-radius: 14px; font-size: 0.8rem; font-weight: 700;">
-          நிலை 1: அறிதல் (Learn)
-        </span>
-      </div>
-
-      <h2 style="color: var(--gold-bright); font-size: 1.35rem; margin-bottom: 8px;">
-        எழுத்துகள் ‘ஐ’ • ‘ஒ’ • ‘ஓ’ • ‘ஔ’ • ‘ஃ’ — ஐயமின்மை, ஒப்புரவு, ஓதுதல், ஔவியமின்மை & நேர்மை
-      </h2>
-      <div style="font-size: 0.88rem; color: var(--gold-soft); margin-bottom: 14px; font-weight: 600;">
-        Charity, Community Harmony, Daily Scripture Reading, Freedom from Malice & Equanimity • Tier 1: அறிதல் & கற்றல் (To Learn & Cultivate)
-      </div>
-      <p style="color: var(--text-main); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;">
-        சமூகத்தோடு இணைந்து வாழும் நெறி, தினமும் திருமுறைகளை ஓதும் பழக்கம், பொறாமையற்ற குணம் மற்றும் நேர்மையான அளவீடு.
-      </p>
-
-      <div class="virtues-container">
-        
-        <div style="background: rgba(0, 0, 0, 0.4); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 14px 18px; margin-bottom: 14px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
-            <div style="color: var(--gold-bright); font-size: 1.05rem; font-weight: 700;">
-              <span style="display: inline-block; background: var(--gold); color: #0a0c10; width: 26px; height: 26px; line-height: 26px; text-align: center; border-radius: 50%; font-weight: 800; margin-right: 8px;">ஐ</span>
-              ஐயமிட்டு உண் (Feed the Needy First)
-            </div>
-            <span style="font-size: 0.76rem; color: var(--gold-soft); background: rgba(212,175,55,0.12); padding: 2px 10px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.25);">தரம் 3 இலக்கு</span>
-          </div>
-          <div style="font-family: 'Mukta Malar', serif; font-size: 0.98rem; color: #fff; line-height: 1.6; margin-bottom: 6px; font-weight: 500;">
-            📖 <em>ஐயமிட்டு உண் — ஆத்திசூடி / ஐயம் புகினும் செய்வன செய் — கொன்றை வேந்தன்</em>
-          </div>
-          <div style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px;">
-            💡 <strong>விளக்கம்:</strong> பசித்திருக்கும் ஏழைகளுக்கும் பிற உயிர்களுக்கும் உணவளித்த பின்னரே தான் உண்ண வேண்டும் என்ற ஜீவகாருண்யம்.
-          </div>
-          <div style="background: rgba(42, 157, 143, 0.08); border: 1px solid rgba(42, 157, 143, 0.25); border-radius: 6px; padding: 8px 12px; font-size: 0.88rem; color: #b7e4c7; line-height: 1.5;">
-            🎯 <strong>மாணவர் அன்றாடப் பயிற்சி (Daily Practice):</strong> வீட்டு வாசலில் வரும் பறவைகளுக்கும் பிராணிகளுக்கும் ஒரு பிடி உணவும் நீரும் வைத்த பின் உண்ணுதல்.
-          </div>
-        </div>
-        
-        <div style="background: rgba(0, 0, 0, 0.4); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 14px 18px; margin-bottom: 14px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
-            <div style="color: var(--gold-bright); font-size: 1.05rem; font-weight: 700;">
-              <span style="display: inline-block; background: var(--gold); color: #0a0c10; width: 26px; height: 26px; line-height: 26px; text-align: center; border-radius: 50%; font-weight: 800; margin-right: 8px;">ஒ</span>
-              ஒப்புரவு (Universal Harmony & Cooperation)
-            </div>
-            <span style="font-size: 0.76rem; color: var(--gold-soft); background: rgba(212,175,55,0.12); padding: 2px 10px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.25);">தரம் 3 இலக்கு</span>
-          </div>
-          <div style="font-family: 'Mukta Malar', serif; font-size: 0.98rem; color: #fff; line-height: 1.6; margin-bottom: 6px; font-weight: 500;">
-            📖 <em>ஒப்புரவு ஒழுகு — ஆத்திசூடி / ஒன்றுபட்டால் உண்டு வாழ்வு</em>
-          </div>
-          <div style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px;">
-            💡 <strong>விளக்கம்:</strong> ஊரோடும் உலகத்தோடும் ஒத்துப்போய், அனைவரையும் தன்னுடை சகோதரர்களாகக் கருதி ஒற்றுமையுடன் வாழ்தல்.
-          </div>
-          <div style="background: rgba(42, 157, 143, 0.08); border: 1px solid rgba(42, 157, 143, 0.25); border-radius: 6px; padding: 8px 12px; font-size: 0.88rem; color: #b7e4c7; line-height: 1.5;">
-            🎯 <strong>மாணவர் அன்றாடப் பயிற்சி (Daily Practice):</strong> பள்ளியில் அனைத்து மாணவர்களுடனும் பேதமின்றி நட்பு பாராட்டி ஒற்றுமையாகச் செயல்படுதல்.
-          </div>
-        </div>
-        
-        <div style="background: rgba(0, 0, 0, 0.4); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 14px 18px; margin-bottom: 14px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
-            <div style="color: var(--gold-bright); font-size: 1.05rem; font-weight: 700;">
-              <span style="display: inline-block; background: var(--gold); color: #0a0c10; width: 26px; height: 26px; line-height: 26px; text-align: center; border-radius: 50%; font-weight: 800; margin-right: 8px;">ஓ</span>
-              ஓதுதல் (Sacred Chanting & Reading)
-            </div>
-            <span style="font-size: 0.76rem; color: var(--gold-soft); background: rgba(212,175,55,0.12); padding: 2px 10px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.25);">தரம் 3 இலக்கு</span>
-          </div>
-          <div style="font-family: 'Mukta Malar', serif; font-size: 0.98rem; color: #fff; line-height: 1.6; margin-bottom: 6px; font-weight: 500;">
-            📖 <em>ஓதுவது ஒழியேல் — ஆத்திசூடி / ஓதலின் நன்றே ஒழுக்கம் உடைமை — கொன்றை வேந்தன்</em>
-          </div>
-          <div style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px;">
-            💡 <strong>விளக்கம்:</strong> அறிவு தரும் நூல்களையும் தேவாரம், திருவாசகப் பதிகங்களையும் ஒருநாளும் ஓதாமல் விடக்கூடாது.
-          </div>
-          <div style="background: rgba(42, 157, 143, 0.08); border: 1px solid rgba(42, 157, 143, 0.25); border-radius: 6px; padding: 8px 12px; font-size: 0.88rem; color: #b7e4c7; line-height: 1.5;">
-            🎯 <strong>மாணவர் அன்றாடப் பயிற்சி (Daily Practice):</strong> தினமும் காலையிலும் மாலையிலும் ஒரு திருமுறைப் பாடலை பண்ணோடு பாடி வழிபடுதல்.
-          </div>
-        </div>
-        
-        <div style="background: rgba(0, 0, 0, 0.4); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 14px 18px; margin-bottom: 14px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
-            <div style="color: var(--gold-bright); font-size: 1.05rem; font-weight: 700;">
-              <span style="display: inline-block; background: var(--gold); color: #0a0c10; width: 26px; height: 26px; line-height: 26px; text-align: center; border-radius: 50%; font-weight: 800; margin-right: 8px;">ஔ</span>
-              ஔவியமின்மை (Absence of Envy & Jealousy)
-            </div>
-            <span style="font-size: 0.76rem; color: var(--gold-soft); background: rgba(212,175,55,0.12); padding: 2px 10px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.25);">தரம் 3 இலக்கு</span>
-          </div>
-          <div style="font-family: 'Mukta Malar', serif; font-size: 0.98rem; color: #fff; line-height: 1.6; margin-bottom: 6px; font-weight: 500;">
-            📖 <em>ஔவியம் பேசேல் — ஆத்திசூடி / ஔவியம் பேசுதல் ஆக்கத்திற்கு அழிவு — கொன்றை வேந்தன்</em>
-          </div>
-          <div style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px;">
-            💡 <strong>விளக்கம்:</strong> மற்றொருவர் நல்ல நிலையை அடையும் போது பொறாமைப்பட்டுப் பேசக்கூடாது; பொறாமை நல்வாழ்வை அழிக்கும்.
-          </div>
-          <div style="background: rgba(42, 157, 143, 0.08); border: 1px solid rgba(42, 157, 143, 0.25); border-radius: 6px; padding: 8px 12px; font-size: 0.88rem; color: #b7e4c7; line-height: 1.5;">
-            🎯 <strong>மாணவர் அன்றாடப் பயிற்சி (Daily Practice):</strong> வகுப்பில் மற்றொரு மாணவர் வெற்றி பெறும் போது மனதாரப் பாராட்டி மகிழ்தல்.
-          </div>
-        </div>
-        
-        <div style="background: rgba(0, 0, 0, 0.4); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 14px 18px; margin-bottom: 14px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
-            <div style="color: var(--gold-bright); font-size: 1.05rem; font-weight: 700;">
-              <span style="display: inline-block; background: var(--gold); color: #0a0c10; width: 26px; height: 26px; line-height: 26px; text-align: center; border-radius: 50%; font-weight: 800; margin-right: 8px;">ஃ</span>
-              அஃகம் சுருக்கேல் (Fair Dealing & Integrity in Measure)
-            </div>
-            <span style="font-size: 0.76rem; color: var(--gold-soft); background: rgba(212,175,55,0.12); padding: 2px 10px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.25);">தரம் 3 இலக்கு</span>
-          </div>
-          <div style="font-family: 'Mukta Malar', serif; font-size: 0.98rem; color: #fff; line-height: 1.6; margin-bottom: 6px; font-weight: 500;">
-            📖 <em>அஃகம் சுருக்கேல் — ஆத்திசூடி / அஃகமும் காசும் சிக்கெனத் தேடு — கொன்றை வேந்தன்</em>
-          </div>
-          <div style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px;">
-            💡 <strong>விளக்கம்:</strong> கொடுக்கல் வாங்கலில் எடையையோ அளவையோ குறைத்து நேர்மையற்ற முறையில் ஆதாயம் தேடக்கூடாது.
-          </div>
-          <div style="background: rgba(42, 157, 143, 0.08); border: 1px solid rgba(42, 157, 143, 0.25); border-radius: 6px; padding: 8px 12px; font-size: 0.88rem; color: #b7e4c7; line-height: 1.5;">
-            🎯 <strong>மாணவர் அன்றாடப் பயிற்சி (Daily Practice):</strong> விளையாட்டிலும் படிப்பிலும் நேர்மையைக் கடைப்பிடித்தல், குறுக்கு வழியைத் தவிர்த்தல்.
-          </div>
-        </div>
-        
-      </div>
-
-      <div style="margin-top: 14px; padding-top: 10px; border-top: 1px dashed rgba(212,175,55,0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.82rem; color: var(--text-muted);">
-        <span>🌱 படிப்படியான நற்பண்பு வளர்ச்சி: கற்றல் (Grades 1-4) ➔ பின்பற்றுதல் (Grades 5-8) ➔ நிலைநிறுத்துதல் (Grades 9-12)</span>
-        <a href="kalvi.html#virtue-mapping" style="color: var(--gold); text-decoration: none; font-weight: 700;">அனைத்து 12 தரங்களின் நற்பண்பு அட்டவணை ↗</a>
-      </div>
-    </section>
-    
-
-    <!-- Detailed Learning Units / Master Lessons -->
-    <h2 class="section-divider-title" style="margin-top:20px;">முழுமையான பாட அலகுகள் &amp; விரிவுரைகள் (Core Lessons &amp; Study Units)</h2>
-    <p style="color:var(--text-muted); font-size:0.95rem; margin-top:6px; margin-bottom:24px;">
-      மாணவர்கள் முறையாகப் படித்து வாழ்க்கையில் கடைப்பிடிப்பதற்கான வேத தத்துவங்கள், மூலப் பாடல்கள், வாழ்வியல் பயிற்சி மற்றும் சிந்தனை வினாக்கள்.
-    </p>
-
-    <div class="lessons-container">
+    <!-- Lesson Panels Container -->
+    <div class="course-panels-container">
       
-      <article class="lesson-card" id="unit-1" style="background: rgba(18, 22, 28, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 28px; margin-bottom: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.5);">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.25); padding-bottom:12px;">
-          <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:5px 14px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">பாட அலகு 1</span>
-          <span style="color:var(--gold-soft); font-size:0.9rem; font-weight:600;">சம்பந்தர், அப்பர், சுந்தரர், மாணிக்கவாசகர்</span>
-        </div>
+        <div class="lesson-unit-panel active" id="unit-panel-1">
+          <article class="lesson-card" id="unit-1" style="background: rgba(18, 22, 28, 0.92); border: 1px solid var(--border-gold); border-radius: 18px; padding: 32px; margin-bottom: 30px; box-shadow: 0 10px 35px rgba(0,0,0,0.6);">
+            
+            <div class="lesson-card-head">
+              <div>
+                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 1 (Chapter 1)</span>
+                <div class="lesson-main-title" style="margin-top:12px;">சைவ சமய குரவர் நால்வர் பெருமக்கள்</div>
+                <div class="lesson-sub-title">சம்பந்தர், அப்பர், சுந்தரர், மாணிக்கவாசகர்</div>
+              </div>
+              <div style="color:var(--gold-bright); font-size:0.9rem; font-weight:600; background:rgba(212,175,55,0.1); padding:6px 14px; border-radius:20px; border:1px solid var(--border-gold);">
+                தரம் 3 • வயது 7 - 8 (தொடக்க நிலை III)
+              </div>
+            </div>
 
-        <h3 style="color:var(--gold-bright); font-size:1.45rem; margin-bottom:16px; font-weight:700;">சைவ சமய குரவர் நால்வர் பெருமக்கள்</h3>
+            <!-- 1. Learning Objectives -->
+            
+        <div class="objectives-card">
+          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <ul class="objectives-list">
+            <li>சமயக் குரவர் நால்வரும் உலகிற்கு வழிகாட்டிய நான்கு ஆன்மீக நெறிகளை அறிதல்.</li><li>அப்பரின் உழவாரப் பணியைப் போல பிறருக்கு தன்னலமற்ற சேவை செய்யும் மனப்பான்மையை வளர்த்தல்.</li><li>திருவாசகம் மற்றும் தேவாரப் பாடல்களின் இனிமையை உணர்ந்து பாடுதல்.</li>
+          </ul>
+        </div>
         
-        <!-- Sacred Verse / Vedic Mantra Box -->
-        <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:16px 20px; border-radius:0 12px 12px 0; margin-bottom:20px;">
-          <div style="font-size:0.8rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திர மேற்கோள்:</div>
-          <div style="font-family:'Mukta Malar', serif; font-size:1.18rem; color:#fff; line-height:1.85; font-style:normal; font-weight:600;">பூழியர்கோன் வெப்பொழித்த புகலியர்கோன் கழல்போற்றி<br>ஆழிமிசைக் கல்மிதப்பில் அணைந்தபிரான் அடிபோற்றி<br>வாழிதிரு நாவலூர் வன்தொண்டர் பதம் போற்றி<br>ஊழிமலி திருவாதவூரர் திருத்தாள் போற்றி.</div>
-          <div style="font-size:0.88rem; color:var(--gold-light); margin-top:8px; font-weight:500;">— சமய குரவர் நால்வர் துதி</div>
-        </div>
 
-        <!-- Philosophical Meaning -->
-        <div style="margin-bottom:18px;">
-          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>💡</span> <span>தத்துவ விளக்கம் &amp; ஆழமான பொருளுரை (Spiritual Essence):</span>
+            <!-- 2. Vocabulary Builder -->
+            
+        <div class="vocab-section">
+          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
           </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:1rem; margin-left:4px;">பாண்டிய மன்னனின் வெப்புநோய் தீர்த்த சீர்காழி வள்ளல் திருஞானசம்பந்தர், கல்லையே மிதப்பாகக் கொண்டு கடலில் நீந்திய திருநாவுக்கரசர், நாவலூரில் அவதரித்த இறைவனின் தோழர் சுந்தரமூர்த்தி நாயனார், திருவாதவூரில் தோன்றி திருவாசகம் அருளிய மாணிக்கவாசகர் ஆகிய நால்வரின் திருவடிகளைப் போற்றுகின்றோம்.</div>
+          <div class="vocab-grid">
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 சமயக் குரவர் நால்வர்</div>
+              <div class="vocab-meaning">திருஞானசம்பந்தர், திருநாவுக்கரசர் (அப்பர்), சுந்தரமூர்த்தி நாயனார், மாணிக்கவாசகர்.</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 சரியை (Charya)</div>
+              <div class="vocab-meaning">உடலால் இறைவனுக்கும் திருக்கோயிலுக்கும் செய்யும் உழவாரப் பணி மற்றும் தொண்டு (தாச மார்க்கம்).</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 ஞானம் (Jnana)</div>
+              <div class="vocab-meaning">அறிவால் இறைவனை உணர்ந்து இரண்டறக் கலக்கும் உயர்ந்த நிலை (சன்மார்க்கம்).</div>
+            </div>
+            
+          </div>
         </div>
-
-        <!-- Dharmic Way of Living -->
-        <div style="margin-bottom:18px; background:rgba(42,157,143,0.06); border-radius:10px; padding:16px; border:1px solid rgba(42,157,143,0.2);">
-          <h4 style="color:#2a9d8f; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; அன்றாடப் பயிற்சி (Dharmic Living in Daily Life):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">சமய குரவர் நால்வரும் நமக்கு நான்கு பாதங்களைக் காட்டியுள்ளனர்: சம்பந்தர் காட்டியது மகன் நெறி (சற்புத்திர மார்க்கம்), அப்பர் காட்டியது தொண்டு நெறி (தாச மார்க்கம்), சுந்தரர் காட்டியது தோழமை நெறி (சக மார்க்கம்), மாணிக்கவாசகர் காட்டியது ஞான அன்பு நெறி (சன்மார்க்கம்). நாமும் திருக்கோயில்களில் கூட்டிப் பெருக்கும் உழவாரப் பணிகளையும் எளியோருக்கு உதவும் தொண்டுகளையும் செய்ய வேண்டும்.</div>
-        </div>
-
-        <!-- Puranic / Historic / Saint Story -->
-        <div style="margin-bottom:20px; background:rgba(230,57,70,0.05); border-radius:10px; padding:16px; border:1px solid rgba(230,57,70,0.18);">
-          <h4 style="color:#f28482; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>📜</span> <span>ஆன்மீக வரலாறு &amp; வழிகாட்டும் நிகழ்வு (Inspirational Story):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">திருநாவுக்கரசர் சமணர்களால் கல்லோடு சேர்த்துக் கட்டப்பட்டு நடுக்கடலில் வீசப்பட்டார். ஆனால் அவர் சிறிதும் அஞ்சாமல் 'சொற்றுணை வேதியன் சோதி வானவன்' என்று நமசிவாயப் பதிகம் பாடினார். அக்கல் ஒரு தெப்பமாக (படகு) மாறி அவரைத் திருப்பாதிரிப்புலியூர் கரையில் சேர்த்தது. இறைவனை முழுமையாக நம்புவோரைக் கல்லும் கடலும் கூட காக்கும்.</div>
-        </div>
-
-        <!-- Self-Reflection Questions -->
-        <div style="background:rgba(255,255,255,0.03); border:1px dashed var(--border-gold); border-radius:10px; padding:16px 20px;">
-          <strong style="color:var(--gold-bright); font-size:0.95rem; display:block; margin-bottom:8px;">❓ சிந்தனை வினாக்கள் &amp; சுய மதிப்பீடு (Self-Reflection Questions):</strong>
-          <ol style="margin-left:22px; color:var(--text-muted); line-height:1.75; font-size:0.92rem;">
-            <li style='margin-bottom:6px;'>சைவ சமய குரவர் நால்வர் யார் யார்?</li><li style='margin-bottom:6px;'>கல்லையே மிதப்பாகக் கொண்டு கடலில் மிதந்த அருளாளர் யார்?</li><li style='margin-bottom:6px;'>அப்பர் பெருமான் காட்டிய வழிபாட்டு நெறி எது?</li>
-          </ol>
-        </div>
-      </article>
-
-      <article class="lesson-card" id="unit-2" style="background: rgba(18, 22, 28, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 28px; margin-bottom: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.5);">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.25); padding-bottom:12px;">
-          <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:5px 14px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">பாட அலகு 2</span>
-          <span style="color:var(--gold-soft); font-size:0.9rem; font-weight:600;">மார்கழி மாத ஆன்மீகத் திருவிழா</span>
-        </div>
-
-        <h3 style="color:var(--gold-bright); font-size:1.45rem; margin-bottom:16px; font-weight:700;">மாணிக்கவாசகரின் திருவெம்பாவை — அதிகாலை விழிப்பு</h3>
         
-        <!-- Sacred Verse / Vedic Mantra Box -->
-        <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:16px 20px; border-radius:0 12px 12px 0; margin-bottom:20px;">
-          <div style="font-size:0.8rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திர மேற்கோள்:</div>
-          <div style="font-family:'Mukta Malar', serif; font-size:1.18rem; color:#fff; line-height:1.85; font-style:normal; font-weight:600;">ஆதியும் அந்தமும் இல்லா அரும்பெருஞ்<br>சோதியை யாம்பாடக் கேட்டேயும் வாள்தடங்கண்<br>மாதே வளருதியோ வன்செவியோ நின்செவிதான்<br>மாதேவன் வார்கழல்கள் வாழ்த்திய வாழ்த்தொலிபோய்<br>வீதிவிழிப் போய்க்கேட்ட லுமேவெம் விம்மிவிம்மிப்<br>பாதா ரவிந்தம் பணிவார்போல் நின்றிலையோ.</div>
-          <div style="font-size:0.88rem; color:var(--gold-light); margin-top:8px; font-weight:500;">— எட்டாம் திருமுறை — மாணிக்கவாசகர் திருவெம்பாவை (பாடல் 1)</div>
-        </div>
 
-        <!-- Philosophical Meaning -->
-        <div style="margin-bottom:18px;">
-          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>💡</span> <span>தத்துவ விளக்கம் &amp; ஆழமான பொருளுரை (Spiritual Essence):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:1rem; margin-left:4px;">தொடக்கமும் முடிவும் இல்லாத எல்லையற்ற ஜோதி வடிவினனான சிவபெருமானின் புகழை நாங்கள் பாடுவதைக் கேட்டும் தூங்குகின்றாயோ? ஊரெல்லாம் இறைவனின் திருநாமங்கள் எதிரொலிக்கின்றன. விரைந்து எழுந்து நீராடி இறைவனைத் துதிப்போம் வா!</div>
-        </div>
-
-        <!-- Dharmic Way of Living -->
-        <div style="margin-bottom:18px; background:rgba(42,157,143,0.06); border-radius:10px; padding:16px; border:1px solid rgba(42,157,143,0.2);">
-          <h4 style="color:#2a9d8f; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; அன்றாடப் பயிற்சி (Dharmic Living in Daily Life):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">அதிகாலையில் (பிரம்ம முகூர்த்தத்தில்) எழுவது உடலுக்கும் மூளைக்கும் புத்துணர்ச்சியைத் தரும். மார்கழி மாதத்தில் அதிகாலையில் எழுந்து நீராடி, வாசலில் கோலமிட்டு, திருப்பாவை திருவெம்பாவை பாடல்களைப் பாடி இறைவனை வழிபட வேண்டும்.</div>
-        </div>
-
-        <!-- Puranic / Historic / Saint Story -->
-        <div style="margin-bottom:20px; background:rgba(230,57,70,0.05); border-radius:10px; padding:16px; border:1px solid rgba(230,57,70,0.18);">
-          <h4 style="color:#f28482; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>📜</span> <span>ஆன்மீக வரலாறு &amp; வழிகாட்டும் நிகழ்வு (Inspirational Story):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">மாணிக்கவாசகர் திருவண்ணாமலையில் தங்கியிருந்த போது, மார்கழி மாதத்தில் இளம் பெண்கள் அதிகாலையில் எழுந்து ஒருவரையொருவர் தட்டியெழுப்பி, தாமரைப் பொய்கையில் நீராடி அண்ணாமலையாரை வழிபடச் செல்வதைக் கண்டார். அந்த அன்புக் காட்சியை ஆன்மாவின் விழிப்பாகப் பாடியதே திருவெம்பாவையின் 20 பாடல்களாகும்.</div>
-        </div>
-
-        <!-- Self-Reflection Questions -->
-        <div style="background:rgba(255,255,255,0.03); border:1px dashed var(--border-gold); border-radius:10px; padding:16px 20px;">
-          <strong style="color:var(--gold-bright); font-size:0.95rem; display:block; margin-bottom:8px;">❓ சிந்தனை வினாக்கள் &amp; சுய மதிப்பீடு (Self-Reflection Questions):</strong>
-          <ol style="margin-left:22px; color:var(--text-muted); line-height:1.75; font-size:0.92rem;">
-            <li style='margin-bottom:6px;'>திருவெம்பாவையை இயற்றிய அருளாளர் யார்?</li><li style='margin-bottom:6px;'>திருவெம்பாவை எந்தத் திருத்தலத்தில் வைத்து பாடப்பட்டது?</li><li style='margin-bottom:6px;'>அதிகாலையில் விழித்தெழுவதால் ஏற்படும் நன்மைகள் என்ன?</li>
-          </ol>
-        </div>
-      </article>
-
-      <article class="lesson-card" id="unit-3" style="background: rgba(18, 22, 28, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 28px; margin-bottom: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.5);">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.25); padding-bottom:12px;">
-          <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:5px 14px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">பாட அலகு 3</span>
-          <span style="color:var(--gold-soft); font-size:0.9rem; font-weight:600;">நிலம், நீர், நெருப்பு, காற்று, ஆகாயம்</span>
-        </div>
-
-        <h3 style="color:var(--gold-bright); font-size:1.45rem; margin-bottom:16px; font-weight:700;">பஞ்ச பூதத் திருத்தலங்கள் & இயற்கை வழிபாடு</h3>
+            <!-- 3. Visual SVG Diagram / Infographic -->
+            
+    <div class="visual-diagram-card">
+      <div class="diagram-header">
+        <span class="diagram-tag">🎨 காட்சி விளக்கம் (Visual Diagram)</span>
+        <h4>சைவ நால்வர் & நான்கு முக்தி மார்க்கங்கள்</h4>
+      </div>
+      <svg viewBox="0 0 700 240" class="pedagogy-svg" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="240" rx="12" fill="rgba(10,14,20,0.85)" stroke="rgba(212,175,55,0.3)" stroke-width="1.5"/>
         
-        <!-- Sacred Verse / Vedic Mantra Box -->
-        <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:16px 20px; border-radius:0 12px 12px 0; margin-bottom:20px;">
-          <div style="font-size:0.8rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திர மேற்கோள்:</div>
-          <div style="font-family:'Mukta Malar', serif; font-size:1.18rem; color:#fff; line-height:1.85; font-style:normal; font-weight:600;">வானாகி மண்ணாகி வளியாகி ஒளியாகி<br>ஊனாகி உயிராகி உண்மையுமாய் இன்மையுமாய்க்<br>கோனாகி யான்எனதென் றவரவரைக் கூத்தாட்டு<br>வானாகி நின்றாயை என்சொல்லி வாழ்த்துவனே.</div>
-          <div style="font-size:0.88rem; color:var(--gold-light); margin-top:8px; font-weight:500;">— திருவாசகம் — மாணிக்கவாசகர் (திருச்சதகம்)</div>
-        </div>
+        <g transform="translate(30, 30)">
+          <rect width="145" height="150" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(212,175,55,0.3)"/>
+          <text x="72" y="32" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="15" font-weight="bold">அப்பர் சுவாமிகள்</text>
+          <text x="72" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="13">சரியை நெறி</text>
+          <text x="72" y="75" text-anchor="middle" fill="#2a9d8f" font-family="'Mukta Malar', sans-serif" font-size="12">தாச மார்க்கம்</text>
+          <text x="72" y="100" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">தொண்டு செய்தல்</text>
+          <text x="72" y="118" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">(உழவாரப் பணி)</text>
+          <rect x="25" y="128" width="95" height="18" rx="4" fill="rgba(212,175,55,0.2)"/>
+          <text x="72" y="141" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="10">சாலோக முக்தி</text>
+        </g>
 
-        <!-- Philosophical Meaning -->
-        <div style="margin-bottom:18px;">
-          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>💡</span> <span>தத்துவ விளக்கம் &amp; ஆழமான பொருளுரை (Spiritual Essence):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:1rem; margin-left:4px;">சிவபெருமான் ஆகாயமாகவும், பூமியாகவும், காற்றாகவும், ஒளியாகவும் (நெருப்பு), உடலாகவும், அதற்குள் இருக்கும் உயிராகவும் எங்கும் நீக்கமற நிறைந்துள்ளார்.</div>
-        </div>
+        <g transform="translate(195, 30)">
+          <rect width="145" height="150" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(212,175,55,0.3)"/>
+          <text x="72" y="32" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="15" font-weight="bold">சம்பந்த சுவாமிகள்</text>
+          <text x="72" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="13">கிரியை நெறி</text>
+          <text x="72" y="75" text-anchor="middle" fill="#2a9d8f" font-family="'Mukta Malar', sans-serif" font-size="12">சற்புத்திர மார்க்கம்</text>
+          <text x="72" y="100" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">மகன் போன்ற பக்தி</text>
+          <text x="72" y="118" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">(வழிபாட்டு நெறி)</text>
+          <rect x="25" y="128" width="95" height="18" rx="4" fill="rgba(212,175,55,0.2)"/>
+          <text x="72" y="141" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="10">சாமீப முக்தி</text>
+        </g>
 
-        <!-- Dharmic Way of Living -->
-        <div style="margin-bottom:18px; background:rgba(42,157,143,0.06); border-radius:10px; padding:16px; border:1px solid rgba(42,157,143,0.2);">
-          <h4 style="color:#2a9d8f; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; அன்றாடப் பயிற்சி (Dharmic Living in Daily Life):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">இயற்கையே இறைவனின் வடிவம். பஞ்ச பூதங்களை மாசுபடுத்தாமல் காக்க வேண்டும்: நிலத்தில் பிளாஸ்டிக் குப்பைகளைக் கொட்டக் கூடாது, நீர்நிலைகளைத் தூய்மையாக வைத்திருக்க வேண்டும், காற்றை மாசுபடாமல் காக்க மரங்களை நட வேண்டும்.</div>
-        </div>
+        <g transform="translate(360, 30)">
+          <rect width="145" height="150" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(212,175,55,0.3)"/>
+          <text x="72" y="32" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="15" font-weight="bold">சுந்தர சுவாமிகள்</text>
+          <text x="72" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="13">யோக நெறி</text>
+          <text x="72" y="75" text-anchor="middle" fill="#2a9d8f" font-family="'Mukta Malar', sans-serif" font-size="12">சக மார்க்கம்</text>
+          <text x="72" y="100" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">தோழமைப் பக்தி</text>
+          <text x="72" y="118" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">(அகத் தியானம்)</text>
+          <rect x="25" y="128" width="95" height="18" rx="4" fill="rgba(212,175,55,0.2)"/>
+          <text x="72" y="141" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="10">சாரூப முக்தி</text>
+        </g>
 
-        <!-- Puranic / Historic / Saint Story -->
-        <div style="margin-bottom:20px; background:rgba(230,57,70,0.05); border-radius:10px; padding:16px; border:1px solid rgba(230,57,70,0.18);">
-          <h4 style="color:#f28482; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>📜</span> <span>ஆன்மீக வரலாறு &amp; வழிகாட்டும் நிகழ்வு (Inspirational Story):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">பஞ்ச பூத ஸ்தலங்கள்: 1. காஞ்சிபுரம் ஏகாம்பரேஸ்வரர் (மண் - நிலம்), 2. திருவானைக்காவல் ஜம்புகேஸ்வரர் (நீர்), 3. திருவண்ணாமலை அருணாசலேஸ்வரர் (நெருப்பு), 4. திருக்காளத்தி காளத்தீஸ்வரர் (காற்று), 5. சிதம்பரம் நடராஜர் (ஆகாயம்). இத்தலங்கள் அனைத்தும் பாரத தேசத்தின் தத்துவ மேன்மையை உலகிற்குப் பறைசாற்றுகின்றன.</div>
-        </div>
+        <g transform="translate(525, 30)">
+          <rect width="145" height="150" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(212,175,55,0.3)"/>
+          <text x="72" y="32" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="15" font-weight="bold">மாணிக்கவாசகர்</text>
+          <text x="72" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="13">ஞான நெறி</text>
+          <text x="72" y="75" text-anchor="middle" fill="#2a9d8f" font-family="'Mukta Malar', sans-serif" font-size="12">சன்மார்க்கம்</text>
+          <text x="72" y="100" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">பேரன்பு &amp; ஞானம்</text>
+          <text x="72" y="118" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">(திருவாசக உருக்கம்)</text>
+          <rect x="25" y="128" width="95" height="18" rx="4" fill="rgba(212,175,55,0.2)"/>
+          <text x="72" y="141" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="10">சாயுச்சிய முக்தி</text>
+        </g>
 
-        <!-- Self-Reflection Questions -->
-        <div style="background:rgba(255,255,255,0.03); border:1px dashed var(--border-gold); border-radius:10px; padding:16px 20px;">
-          <strong style="color:var(--gold-bright); font-size:0.95rem; display:block; margin-bottom:8px;">❓ சிந்தனை வினாக்கள் &amp; சுய மதிப்பீடு (Self-Reflection Questions):</strong>
-          <ol style="margin-left:22px; color:var(--text-muted); line-height:1.75; font-size:0.92rem;">
-            <li style='margin-bottom:6px;'>பஞ்ச பூதங்கள் என்பவை எவை?</li><li style='margin-bottom:6px;'>நெருப்புத் தலமாக விளங்கும் புண்ணிய பூமி எது?</li><li style='margin-bottom:6px;'>இயற்கையை நாம் எவ்வாறு பாதுகாக்க வேண்டும்?</li>
-          </ol>
-        </div>
-      </article>
-
-      <article class="lesson-card" id="unit-4" style="background: rgba(18, 22, 28, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 28px; margin-bottom: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.5);">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.25); padding-bottom:12px;">
-          <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:5px 14px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">பாட அலகு 4</span>
-          <span style="color:var(--gold-soft); font-size:0.9rem; font-weight:600;">நன்றி மறவாமை & சுயநலமற்ற உதவி</span>
-        </div>
-
-        <h3 style="color:var(--gold-bright); font-size:1.45rem; margin-bottom:16px; font-weight:700;">ஔவையாரின் மூதுரை — பயன் கருதாத அறம்</h3>
-        
-        <!-- Sacred Verse / Vedic Mantra Box -->
-        <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:16px 20px; border-radius:0 12px 12px 0; margin-bottom:20px;">
-          <div style="font-size:0.8rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திர மேற்கோள்:</div>
-          <div style="font-family:'Mukta Malar', serif; font-size:1.18rem; color:#fff; line-height:1.85; font-style:normal; font-weight:600;">நன்றி ஒருவருக்குச் செய்தக்கால் அந்நன்றி<br>'என்று தருங்கொல்?' எனவேண்டா — நின்று<br>தளரா வளர்தெங்கு தாளுண்ட நீரைத்<br>தலையாலே தான்தருவ தால்.</div>
-          <div style="font-size:0.88rem; color:var(--gold-light); margin-top:8px; font-weight:500;">— மூதுரை — தமிழ் மூதாட்டி ஔவையார் (பாடல் 1)</div>
-        </div>
-
-        <!-- Philosophical Meaning -->
-        <div style="margin-bottom:18px;">
-          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>💡</span> <span>தத்துவ விளக்கம் &amp; ஆழமான பொருளுரை (Spiritual Essence):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:1rem; margin-left:4px;">ஒருவருக்கு நாம் உதவி செய்தால், 'அவர் நமக்கு எப்போது கைமாறு செய்வார்?' என்று எதிர்பார்க்கக் கூடாது. தென்னை மரம் தன் வேரினால் உறிஞ்சிய சிறு தண்ணீரை, தன் வாழ்நாளின் இறுதியில் இனிமையான இளநீராகத் தலையிலே தாங்கி உலகிற்குத் தருகிறது. அதுபோல நல்ல மனிதர்கள் செய்த உதவியை மறக்காமல் பல மடங்கு நன்மையாகத் திருப்பித் தருவர்.</div>
-        </div>
-
-        <!-- Dharmic Way of Living -->
-        <div style="margin-bottom:18px; background:rgba(42,157,143,0.06); border-radius:10px; padding:16px; border:1px solid rgba(42,157,143,0.2);">
-          <h4 style="color:#2a9d8f; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; அன்றாடப் பயிற்சி (Dharmic Living in Daily Life):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">நாம் யாருக்காவது உதவி செய்தால் உடனே அவரிடமிருந்து பாராட்டுதலையோ அல்லது திருப்பி உதவியையோ எதிர்பார்க்கக் கூடாது. பிறர் செய்த சிறு நன்மையையும் வாழ்நாள் முழுவதும் மறக்காமல் நன்றியோடு நினைக்க வேண்டும்.</div>
-        </div>
-
-        <!-- Puranic / Historic / Saint Story -->
-        <div style="margin-bottom:20px; background:rgba(230,57,70,0.05); border-radius:10px; padding:16px; border:1px solid rgba(230,57,70,0.18);">
-          <h4 style="color:#f28482; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>📜</span> <span>ஆன்மீக வரலாறு &amp; வழிகாட்டும் நிகழ்வு (Inspirational Story):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">ஒரு முனிவர் ஆற்றில் அடித்துச் செல்லப்பட்ட தேளைக் காப்பாற்றத் தன் கையில் எடுத்தார். அது அவரைத் திரும்பத் திரும்பக் கொட்டியது. ஆனாலும் முனிவர் விடாமல் அதைக் கரையில் விட்டார். சீடர்கள் 'கொட்டும் தேளுக்கு ஏன் உதவி செய்தீர்கள்?' என்று கேட்டனர். முனிவர் சிரித்துக் கொண்டே, 'கொட்டுவது அதன் இயல்பு, காப்பாற்றுவது என் தர்மம்' என்றார். எவரிடமும் கைமாறு எதிர்பாராது நன்மையே செய்வது உத்தம குணம்.</div>
-        </div>
-
-        <!-- Self-Reflection Questions -->
-        <div style="background:rgba(255,255,255,0.03); border:1px dashed var(--border-gold); border-radius:10px; padding:16px 20px;">
-          <strong style="color:var(--gold-bright); font-size:0.95rem; display:block; margin-bottom:8px;">❓ சிந்தனை வினாக்கள் &amp; சுய மதிப்பீடு (Self-Reflection Questions):</strong>
-          <ol style="margin-left:22px; color:var(--text-muted); line-height:1.75; font-size:0.92rem;">
-            <li style='margin-bottom:6px;'>தென்னை மரம் மனிதனுக்கு எதனை உதாரணமாகக் காட்டுகிறது?</li><li style='margin-bottom:6px;'>உதவி செய்யும் போது நாம் எதை எதிர்பார்க்கக் கூடாது?</li><li style='margin-bottom:6px;'>மூதுரை நூலை இயற்றியவர் யார்?</li>
-          </ol>
-        </div>
-      </article>
-
-      <article class="lesson-card" id="unit-5" style="background: rgba(18, 22, 28, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 28px; margin-bottom: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.5);">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.25); padding-bottom:12px;">
-          <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:5px 14px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">பாட அலகு 5</span>
-          <span style="color:var(--gold-soft); font-size:0.9rem; font-weight:600;">கையில் இறை தரிசனம் & பூமி வணக்கம்</span>
-        </div>
-
-        <h3 style="color:var(--gold-bright); font-size:1.45rem; margin-bottom:16px; font-weight:700;">வேத காலை வணக்கம் & பூமி மாதா பிரார்த்தனை</h3>
-        
-        <!-- Sacred Verse / Vedic Mantra Box -->
-        <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:16px 20px; border-radius:0 12px 12px 0; margin-bottom:20px;">
-          <div style="font-size:0.8rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திர மேற்கோள்:</div>
-          <div style="font-family:'Mukta Malar', serif; font-size:1.18rem; color:#fff; line-height:1.85; font-style:normal; font-weight:600;">கராக்ரே வசதே லக்ஷ்மீ: கரமத்யே ஸரஸ்வதீ |<br>கரமூலே து கோவிந்த: ப்ரபாதே கரதர்சனம் ||<br>ஸமுத்ர வஸனே தேவி பர்வதஸ்தன மண்டலே |<br>விஷ்ணுபத்னி நமஸ்துப்யம் பாதஸ்பர்சம் க்ஷமஸ்வமே ||</div>
-          <div style="font-size:0.88rem; color:var(--gold-light); margin-top:8px; font-weight:500;">— வேத சனாதன தினசரி பிரார்த்தனை ஸ்லோகங்கள்</div>
-        </div>
-
-        <!-- Philosophical Meaning -->
-        <div style="margin-bottom:18px;">
-          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>💡</span> <span>தத்துவ விளக்கம் &amp; ஆழமான பொருளுரை (Spiritual Essence):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:1rem; margin-left:4px;">கையின் நுனியில் மகாலக்ஷ்மியும், நடுவில் சரஸ்வதியும், அடியில் கோவிந்தனும் (இறைவனும்) உறைகின்றனர்; ஆகவே காலையில் கைகளைப் பார்த்து வணங்குதல் வேண்டும். கடலை ஆடையாகவும் மலைகளை மார்பாகவும் கொண்ட பூமித் தாயே, உன் மீது பாதம் பதிக்க நேர்வதால் என் பிழையைப் பொறுத்தருள்வாயாக!</div>
-        </div>
-
-        <!-- Dharmic Way of Living -->
-        <div style="margin-bottom:18px; background:rgba(42,157,143,0.06); border-radius:10px; padding:16px; border:1px solid rgba(42,157,143,0.2);">
-          <h4 style="color:#2a9d8f; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; அன்றாடப் பயிற்சி (Dharmic Living in Daily Life):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">காலையில் படுக்கையை விட்டு எழுந்ததும் உடனே தரையில் கால்களை வைக்காமல், இரு கைகளையும் இணைத்துக் குவித்து உள்ளங்கைகளைப் பார்த்து 'கராக்ரே வசதே லக்ஷ்மீ' என்று சொல்ல வேண்டும். பின் பூமித் தாயைத் தொட்டுக் கண்ணில் ஒற்றிக்கொண்டு எழுந்திருக்க வேண்டும். இது உடலுக்கும் உள்ளத்திற்கும் நன்றி உணர்வைத் தரும்.</div>
-        </div>
-
-        <!-- Puranic / Historic / Saint Story -->
-        <div style="margin-bottom:20px; background:rgba(230,57,70,0.05); border-radius:10px; padding:16px; border:1px solid rgba(230,57,70,0.18);">
-          <h4 style="color:#f28482; font-size:1.1rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-            <span>📜</span> <span>ஆன்மீக வரலாறு &amp; வழிகாட்டும் நிகழ்வு (Inspirational Story):</span>
-          </h4>
-          <div style="color:var(--text-main); line-height:1.85; font-size:0.98rem; margin:0;">காஞ்சி மகா பெரியவாள் தன் வாழ்நாள் முழுவதும் இந்த பூமி வந்தனத்தை விடாது கடைப்பிடித்தார்கள். உலகமே நம்மைத் தாங்குகிறது; காற்று நமக்கு மூச்சுத் தருகிறது; நீர் தாகம் தீர்க்கிறது. காலையில் நன்றி உணர்வோடு தொடங்கும் நாளே அமைதியான நன்னாளாக அமையும்.</div>
-        </div>
-
-        <!-- Self-Reflection Questions -->
-        <div style="background:rgba(255,255,255,0.03); border:1px dashed var(--border-gold); border-radius:10px; padding:16px 20px;">
-          <strong style="color:var(--gold-bright); font-size:0.95rem; display:block; margin-bottom:8px;">❓ சிந்தனை வினாக்கள் &amp; சுய மதிப்பீடு (Self-Reflection Questions):</strong>
-          <ol style="margin-left:22px; color:var(--text-muted); line-height:1.75; font-size:0.92rem;">
-            <li style='margin-bottom:6px;'>காலையில் எழுந்தவுடன் முதலில் எதைப் பார்க்க வேண்டும்?</li><li style='margin-bottom:6px;'>பூமி மாதாவை ஏன் தொட்டு வணங்க வேண்டும்?</li><li style='margin-bottom:6px;'>உள்ளங்கையில் உறையும் முப்பெரும் தெய்வங்கள் யார் யார்?</li>
-          </ol>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- Vedic Way of Living Box -->
-    <div style="background: linear-gradient(135deg, rgba(212,175,55,0.1) 0%, rgba(26,29,36,0.9) 100%); border: 2px solid var(--gold); border-radius: 16px; padding: 26px; margin: 40px 0;">
-      <h3 style="color:var(--gold-bright); font-size:1.35rem; margin-bottom:12px; display:flex; align-items:center; gap:10px;">
-        <span>🕉️</span> <span>தரம் 3 மாணவர்களுக்கான வேத வாழ்வியல் நெறிமுறைகள் (Dharmic Code of Living)</span>
-      </h3>
-      <p style="color:var(--text-main); line-height:1.8; margin-bottom:14px;">
-        சைவ நெறியும் வேத தர்மமும் வெறும் நூலறிவு மட்டுமல்ல; அவை ஒரு மனிதனை உலகிற்கே ஒளியாக மாற்றும் நடைமுறை வாழ்வியல் முறையாகும். மாணவர்கள் தினமும் கீழ்க்கண்ட நெறிகளைக் கடைப்பிடிக்க வேண்டும்:
-      </p>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
-        <div style="background:rgba(0,0,0,0.3); border-radius:10px; padding:14px; border-left:3px solid var(--gold);">
-          <strong style="color:var(--gold-soft); display:block; margin-bottom:4px;">1. பிரம்ம முகூர்த்த விழிப்பு:</strong>
-          <span style="font-size:0.9rem; color:var(--text-muted);">அதிகாலையில் எழுந்து இரு கைகளையும் பார்த்து பூமி மாதாவை வணங்குதல்.</span>
-        </div>
-        <div style="background:rgba(0,0,0,0.3); border-radius:10px; padding:14px; border-left:3px solid var(--gold);">
-          <strong style="color:var(--gold-soft); display:block; margin-bottom:4px;">2. தூய்மையும் திருநீறும்:</strong>
-          <span style="font-size:0.9rem; color:var(--text-muted);">நீராடி தூய ஆடை அணிந்து, நெற்றியில் 'சிவ சிவ' கூறி திருநீறு அணிதல்.</span>
-        </div>
-        <div style="background:rgba(0,0,0,0.3); border-radius:10px; padding:14px; border-left:3px solid var(--gold);">
-          <strong style="color:var(--gold-soft); display:block; margin-bottom:4px;">3. பெற்றோர் &amp; ஆசிரியர் மரியாதை:</strong>
-          <span style="font-size:0.9rem; color:var(--text-muted);">தினமும் பெற்றோர் கால்களைத் தொட்டு வணங்குதல்; ஆசிரியருக்குக் கீழ்ப்படிதல்.</span>
-        </div>
-        <div style="background:rgba(0,0,0,0.3); border-radius:10px; padding:14px; border-left:3px solid var(--gold);">
-          <strong style="color:var(--gold-soft); display:block; margin-bottom:4px;">4. சாத்வீக உணவு &amp; ஜீவகாருண்யம்:</strong>
-          <span style="font-size:0.9rem; color:var(--text-muted);">புலால் உணவைத் தவிர்த்து சாத்வீக உணவு உண்ணுதல்; எளிய உயிர்களுக்கு உணவளித்தல்.</span>
-        </div>
+        <text x="350" y="215" text-anchor="middle" fill="#fbf2d3" font-family="'Mukta Malar', sans-serif" font-size="12">தொண்டு, வழிபாடு, யோகம், ஞானம் ஆகிய நான்கும் படிப்படியாக ஆன்மாவை முக்தியில் சேர்க்கும் படிக்கட்டுகளாகும்.</text>
+      </svg>
+      <div class="diagram-footer">
+        <p><strong>படிமுறை நெறி:</strong> சாலோகம் (இறை உலகம் அடைதல்), சாமீபம் (இறைவனருகே இருத்தல்), சாரூபம் (இறைவடிவம் பெறுதல்), சாயுச்சியம் (இறைவனோடு இரண்டறக் கலத்தல்) என்ற நான்கு நிலைகளை நால்வர் வழிகாட்டுகின்றனர்.</p>
       </div>
     </div>
+    
 
-    <!-- Related Devotional Links -->
-    <h2 class="section-divider-title" style="margin-top:40px;">இணைந்த ஆன்மீகப் பிரிவுகள் &amp; இசை நூலகம் (Related Traditions)</h2>
-    <div class="canonical-grid">
-      <div class="canonical-card" onclick="location.href='saiva-neri.html'" style="cursor: pointer;">
-        <h4>🔱 பன்னிரு திருமுறைகள் (178 பாடல்கள்)</h4>
-        <p>தேவாரம், திருவாசகம், திருவிசைப்பா, திருமந்திரப் பெருவெளியின் இசை வடிவங்கள்.</p>
-        <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">கேட்க &amp; தியானிக்க ↗</span>
+            <!-- 4. Paced Step-by-Step Deep Dive Sections -->
+            <div style="margin: 28px 0;">
+              <h4 style="color:var(--gold-bright); font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              </h4>
+              <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
+                ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
+              </p>
+              
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">1. நால்வரின் நான்கு பெருவழிகள் (The 4 Divine Paths)</div>
+              <div class="lesson-step-content">
+                <p>1) அப்பர் காட்டிய தாச மார்க்கம் (சரியை): இறைவனைத் தலைவனாகவும், தன்னைத் தொண்டனாகவும் பாவித்து திருக்கோயில் வளாகத்தைத் தூய்மை செய்யும் உழவாரப் பணி. 2) சம்பந்தர் காட்டிய சற்புத்திர மார்க்கம் (கிரியை): இறைவனைத் தந்தையாகவும் தன்னை மகனாகவும் பாவித்து மலர் தூவி வழிபடும் பக்தி. 3) சுந்தரர் காட்டிய சக மார்க்கம் (யோகம்): இறைவனை ஆருயிர் தோழனாகப் பாவித்து உள்ளத்தில் தியானிக்கும் யோகம். 4) மாணிக்கவாசகர் காட்டிய சன்மார்க்கம் (ஞானம்): இறைவனோடு இரண்டறக் கலந்து பேரன்பில் திளைக்கும் மெய்ஞானம்.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">2. அப்பரின் வீரமும் வைராக்கியமும்</div>
+              <div class="lesson-step-content">
+                <p>'நாமார்க்கும் குடியல்லோம் நமனை அஞ்சோம்' என்று பல்லவ மன்னனின் ஆணையை எதிர்த்து நின்றவர் அப்பர் பெருமான். சுண்ணாம்புக் காளவாயில் போட்ட போதும் 'மாசில் வீணையும் மாலை மதியமும்' எனப் பாடி சிவனை நினைத்து ஆனந்தமாக இருந்தார். உண்மையான இறைபக்தி உள்ளவனுக்கு உலகியல் அச்சங்கள் எதுவும் இருப்பதில்லை.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">3. மாணிக்கவாசகரின் உருகும் பக்தி</div>
+              <div class="lesson-step-content">
+                <p>'திருவாசகத்திற்கு உருகார் ஒரு வாசகத்திற்கும் உருகார்' என்பது பழமொழி. தனது அமைச்சர் பதவியையும் செல்வத்தையும் துறந்து சிவபெருமானின் திருவடிக்குத் தன் வாழ்வையே அர்ப்பணித்தவர். அன்பினால் மட்டுமே இறைவனை அடைய முடியும் என்பதை அவரது திருவாசகம் மெய்ப்பிக்கிறது.</p>
+              </div>
+            </div>
+            
+            </div>
+
+            <!-- 5. Sacred Verse / Mantra Box -->
+            <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+              <div style="font-size:0.82rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#fff; line-height:1.9; font-weight:600;">பூழியர்கோன் வெப்பொழித்த புகலியர்கோன் கழல்போற்றி<br>ஆழிமிசைக் கல்மிதப்பில் அணைந்தபிரான் அடிபோற்றி<br>வாழிதிரு நாவலூர் வன்தொண்டர் பதம் போற்றி<br>ஊழிமலி திருவாதவூரர் திருத்தாள் போற்றி.</div>
+              <div style="font-size:0.9rem; color:var(--gold-bright); margin-top:10px; font-weight:600;">— சமய குரவர் நால்வர் துதி</div>
+            </div>
+
+            <!-- 6. Philosophical Meaning -->
+            <div style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
+              <h4 style="color:var(--gold); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">பாண்டிய மன்னனின் வெப்புநோய் தீர்த்த சீர்காழி வள்ளல் திருஞானசம்பந்தர், கல்லையே மிதப்பாகக் கொண்டு கடலில் நீந்திய திருநாவுக்கரசர், நாவலூரில் அவதரித்த இறைவனின் தோழர் சுந்தரமூர்த்தி நாயனார், திருவாதவூரில் தோன்றி திருவாசகம் அருளிய மாணிக்கவாசகர் ஆகிய நால்வரின் திருவடிகளைப் போற்றுகின்றோம்.</div>
+            </div>
+
+            <!-- 7. Inspirational Story -->
+            <div style="margin: 28px 0; background:rgba(224,159,62,0.06); border-radius:14px; padding:22px; border:1px solid rgba(224,159,62,0.25);">
+              <h4 style="color:var(--amber); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">திருநாவுக்கரசர் சமணர்களால் கல்லோடு சேர்த்துக் கட்டப்பட்டு நடுக்கடலில் வீசப்பட்டார். ஆனால் அவர் சிறிதும் அஞ்சாமல் 'சொற்றுணை வேதியன் சோதி வானவன்' என்று நமசிவாயப் பதிகம் பாடினார். அக்கல் ஒரு தெப்பமாக (படகு) மாறி அவரைத் திருப்பாதிரிப்புலியூர் கரையில் சேர்த்தது. இறைவனை முழுமையாக நம்புவோரைக் கல்லும் கடலும் கூட காக்கும்.</div>
+            </div>
+
+            <!-- 8. Dharmic Living in Daily Life -->
+            <div style="margin: 28px 0; background:rgba(42,157,143,0.08); border-radius:14px; padding:22px; border:1px solid rgba(42,157,143,0.3);">
+              <h4 style="color:#2a9d8f; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">சமய குரவர் நால்வரும் நமக்கு நான்கு பாதங்களைக் காட்டியுள்ளனர்: சம்பந்தர் காட்டியது மகன் நெறி (சற்புத்திர மார்க்கம்), அப்பர் காட்டியது தொண்டு நெறி (தாச மார்க்கம்), சுந்தரர் காட்டியது தோழமை நெறி (சக மார்க்கம்), மாணிக்கவாசகர் காட்டியது ஞான அன்பு நெறி (சன்மார்க்கம்). நாமும் திருக்கோயில்களில் கூட்டிப் பெருக்கும் உழவாரப் பணிகளையும் எளியோருக்கு உதவும் தொண்டுகளையும் செய்ய வேண்டும்.</div>
+            </div>
+
+            <!-- 9. Daily Dharmic Habits Checklist -->
+            
+        <div class="sadhana-box">
+          <div class="sadhana-header">
+            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+          </div>
+          
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u1s0">
+              <label for="g3u1s0">வீட்டிலும் பள்ளியிலும் குப்பைகளை அகற்றி அப்பரைப் போல தூய்மைப் பணி செய்தேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u1s1">
+              <label for="g3u1s1">தினமும் ஒரு தேவாரப் பாடலையாவது இனிமையாகப் பாடினேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u1s2">
+              <label for="g3u1s2">நண்பர்களோடு சுந்தரரைப் போல நேர்மையோடும் உண்மை அன்போடும் பழகினேன்.</label>
+            </div>
+            
+        </div>
+        
+
+            <!-- 10. Self-Learning Interactive Quiz -->
+            
+        <div class="quiz-section">
+          <h4 style="color:var(--gold-bright); font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          </h4>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
+            கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
+          </p>
+          
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 1:</strong> உழவாரப் படையுடன் திருக்கோயில்களைத் தூய்மை செய்த சமயக் குரவர் யார்?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: திருநாவுக்கரசர் (அப்பர் பெருமான்).</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: தாச மார்க்கத்தின் தலைவர்.</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 2:</strong> சுந்தரமூர்த்தி நாயனார் இறைவனை எந்த முறையில் வழிபட்டார்?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: சக மார்க்கம் — இறைவனைத் தோழனாக (நண்பனாக) பாவித்து வழிபட்டார்.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: தம்பிரான் தோழர் என அழைக்கப்படுபவர்.</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 3:</strong> 'நாமார்க்கும் குடியல்லோம் நமனை அஞ்சோம்' என்ற வீர முழக்கத்தைப் பாடியவர் யார்?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: அப்பர் பெருமான் (திருநாவுக்கரசர்).</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: சுண்ணாம்புக் காளவாயில் இருந்து மீண்டவர்.</div>
+                </div>
+              </details>
+            </div>
+            
+        </div>
+        
+
+            <!-- 11. Audio Link to Hymns -->
+            <div style="background:rgba(212,175,55,0.06); border:1px solid var(--border-gold); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
+              <div>
+                <strong style="color:var(--gold-bright);">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
+              </div>
+              <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
+                பாடலைக் கேட்க ↗
+              </a>
+            </div>
+
+            <!-- Navigation Stepper Footer -->
+            <div class="lesson-nav-footer">
+              <a href="tharam-2.html" class="lesson-nav-btn lesson-nav-prev">← முந்தைய தரம்: தரம் 2</a>
+              <button onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:var(--border-gold); color:var(--gold-soft);">
+                🖨️ பாடம் அச்சிடுக (Print / PDF)
+              </button>
+              <button class="lesson-nav-btn lesson-nav-next" onclick="switchChapter(2)">அடுத்த பாடம் 2 →</button>
+            </div>
+
+          </article>
+        </div>
+        
+        <div class="lesson-unit-panel " id="unit-panel-2">
+          <article class="lesson-card" id="unit-2" style="background: rgba(18, 22, 28, 0.92); border: 1px solid var(--border-gold); border-radius: 18px; padding: 32px; margin-bottom: 30px; box-shadow: 0 10px 35px rgba(0,0,0,0.6);">
+            
+            <div class="lesson-card-head">
+              <div>
+                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 2 (Chapter 2)</span>
+                <div class="lesson-main-title" style="margin-top:12px;">மாணிக்கவாசகரின் திருவெம்பாவை — அதிகாலை விழிப்பு</div>
+                <div class="lesson-sub-title">மார்கழி மாத ஆன்மீகத் திருவிழா</div>
+              </div>
+              <div style="color:var(--gold-bright); font-size:0.9rem; font-weight:600; background:rgba(212,175,55,0.1); padding:6px 14px; border-radius:20px; border:1px solid var(--border-gold);">
+                தரம் 3 • வயது 7 - 8 (தொடக்க நிலை III)
+              </div>
+            </div>
+
+            <!-- 1. Learning Objectives -->
+            
+        <div class="objectives-card">
+          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <ul class="objectives-list">
+            <li>அன்றாட வாழ்வில் கடைப்பிடிக்க வேண்டிய உயர்ந்த தர்ம நெறிகளைப் புரிந்துகொள்ளுதல்.</li><li>பெற்றோரையும் ஆசிரியரையும் மதித்து நற்பண்புகளுடன் விளங்குதல்.</li><li>இறை நம்பிக்கையுடன் கூடிய நேர்மையான மாணவராகத் திகழ்தல்.</li>
+          </ul>
+        </div>
+        
+
+            <!-- 2. Vocabulary Builder -->
+            
+        <div class="vocab-section">
+          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          </h4>
+          <div class="vocab-grid">
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 தர்மம் (Dharma)</div>
+              <div class="vocab-meaning">அனைத்து உயிர்களையும் தாங்கி நிற்கும் பேரறம்; நேர்மை மற்றும் கடமை.</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 சத்சங்கம் (Satsanga)</div>
+              <div class="vocab-meaning">நல்ல சிந்தனை உடைய பெரியோர்களுடனும் நல்ல நண்பர்களுடனும் இணைந்திருத்தல்.</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 ஜீவகாருண்யம் (Jivakarunyam)</div>
+              <div class="vocab-meaning">எல்லா உயிர்களிடத்தும் இரக்கமும் கருணையும் கொண்டு வாழ்தல்.</div>
+            </div>
+            
+          </div>
+        </div>
+        
+
+            <!-- 3. Visual SVG Diagram / Infographic -->
+            
+    <div class="visual-diagram-card">
+      <div class="diagram-header">
+        <span class="diagram-tag">🎨 காட்சி விளக்கம் (Visual Diagram)</span>
+        <h4>மாணவர் தினசரி வேத வாழ்வியல் சுழற்சி (தினசரியை - Dinacharya)</h4>
       </div>
+      <svg viewBox="0 0 700 240" class="pedagogy-svg" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="240" rx="12" fill="rgba(10,14,20,0.85)" stroke="rgba(212,175,55,0.3)" stroke-width="1.5"/>
+        
+        <g transform="translate(60, 30)">
+          <rect x="0" y="0" width="130" height="130" rx="8" fill="rgba(224,159,62,0.15)" stroke="#e09f3e" stroke-width="1.5"/>
+          <text x="65" y="30" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">1. பிரம்ம முகூர்த்தம்</text>
+          <text x="65" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">விடியற்காலை எழுதல்</text>
+          <text x="65" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">நீராடல் &amp; திருநீறு</text>
+          <text x="65" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">சூரிய நமஸ்காரம்</text>
+        </g>
 
-      <div class="canonical-card" onclick="location.href='irai-isai-virundhu.html'" style="cursor: pointer;">
-        <h4>🎵 இறை இசை விருந்து (5 பாடல்கள்)</h4>
-        <p>பாலும் தெளிர் தேனும், குரு வணக்கம், கந்தர் அநுபூதி, சிவபுராணப் பாடல்கள்.</p>
-        <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">இறை இசை கேட்க ↗</span>
-      </div>
+        <path d="M 200 95 L 225 95" stroke="#d4af37" stroke-width="2"/>
 
-      <div class="canonical-card" onclick="location.href='thirukkural.html'" style="cursor: pointer;">
-        <h4>📜 திருக்குறள் வாழ்வியல் தர்மம் (185 அதிகாரங்கள்)</h4>
-        <p>அறத்துப்பால், பொருட்பால், இன்பத்துப்பால் அதிகாரங்களின் சினிமா இசைத் திரைப்படங்கள்.</p>
-        <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">குறள் நல்வழி ↗</span>
-      </div>
+        <g transform="translate(235, 30)">
+          <rect x="0" y="0" width="130" height="130" rx="8" fill="rgba(212,175,55,0.15)" stroke="#d4af37" stroke-width="1.5"/>
+          <text x="65" y="30" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">2. குரு &amp; கல்வி</text>
+          <text x="65" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">பெற்றோர் வணக்கம்</text>
+          <text x="65" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">பள்ளிப் பாடம் கற்றல்</text>
+          <text x="65" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">நேர்மை &amp; இன்சொல்</text>
+        </g>
 
-      <div class="canonical-card" onclick="location.href='classes.html'" style="cursor: pointer;">
-        <h4>🏛️ ஆன்லைன் &amp; குருகுல வகுப்புகள்</h4>
-        <p>வாராந்திர நேரலை வகுப்புகள் மற்றும் தேர்வு வழிகாட்டுதலில் இணையுங்கள்.</p>
-        <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">வகுப்பில் சேர ↗</span>
+        <path d="M 375 95 L 400 95" stroke="#d4af37" stroke-width="2"/>
+
+        <g transform="translate(410, 30)">
+          <rect x="0" y="0" width="130" height="130" rx="8" fill="rgba(42,157,143,0.15)" stroke="#2a9d8f" stroke-width="1.5"/>
+          <text x="65" y="30" text-anchor="middle" fill="#2a9d8f" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">3. மாலை சந்தியா</text>
+          <text x="65" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">தீப வழிபாடு</text>
+          <text x="65" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">தேவார திருமுறை பாடுதல்</text>
+          <text x="65" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">தியானம் &amp; அமைதி</text>
+        </g>
+
+        <path d="M 550 95 L 575 95" stroke="#d4af37" stroke-width="2"/>
+
+        <g transform="translate(585, 30)">
+          <rect x="0" y="0" width="105" height="130" rx="8" fill="rgba(230,57,70,0.15)" stroke="#e63946" stroke-width="1.5"/>
+          <text x="52" y="30" text-anchor="middle" fill="#e63946" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">4. இரவு நிஷ்டை</text>
+          <text x="52" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">சுய பரிசோதனை</text>
+          <text x="52" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">நமசிவாய ஜபம்</text>
+          <text x="52" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">அமைதியான உறக்கம்</text>
+        </g>
+
+        <text x="350" y="210" text-anchor="middle" fill="#fbf2d3" font-family="'Mukta Malar', sans-serif" font-size="13">"காலையும் மாலையும் சிவசிந்தனையோடு வாழும் மாணவன் உலகில் எங்கும் வெல்வான்"</text>
+      </svg>
+      <div class="diagram-footer">
+        <p><strong>வாழ்வியல் நெறிமுறை:</strong> விடியற்காலையில் எழுவது மூளைக்கு புத்துணர்ச்சியையும், மாலையில் திருமுறை ஓதுவது மனதிற்குப் பேரமைதியையும் நல்குகிறது.</p>
       </div>
     </div>
+    
+
+            <!-- 4. Paced Step-by-Step Deep Dive Sections -->
+            <div style="margin: 28px 0;">
+              <h4 style="color:var(--gold-bright); font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              </h4>
+              <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
+                ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
+              </p>
+              
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">1. தர்மத்தின் மேன்மை (The Greatness of Dharma)</div>
+              <div class="lesson-step-content">
+                <p>'தர்மமே வெல்லும்; தர்மத்தைக் காப்பவனை தர்மம் காக்கும் (தFilter: தர்மோ ரக்ஷதி ரக்ஷிதஃ)' என்பது நமது முன்னோர்களின் அழியாத வாக்கு. உண்மை, நேர்மை, இன்சொல், பிறருக்கு உதவுதல் ஆகியவை ஒரு மாணவனின் உண்மையான அணிகலன்களாகும்.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)</div>
+              <div class="lesson-step-content">
+                <p>ஆசிரியரை 'குரு'வாகப் போற்றி, பணிவோடு வினாக்கள் கேட்டு மெய்யறிவைப் பெறுவதே பாரத நாட்டின் சிறந்த கல்வி முறையாகும். பணிவு உள்ள இடத்திலேயே ஞானம் தங்கும்.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">3. உயிர்களிடத்தில் அன்பு (Universal Compassion)</div>
+              <div class="lesson-step-content">
+                <p>மனிதர்கள் மட்டுமல்லாமல் வாயில்லாப் பிராணிகள், பறவைகள், தாவரங்கள் என அனைத்து இயற்கைக்கும் மதிப்பளித்து, அன்பு காட்டுவதே மெய்யான ஆன்மீகமாகும்.</p>
+              </div>
+            </div>
+            
+            </div>
+
+            <!-- 5. Sacred Verse / Mantra Box -->
+            <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+              <div style="font-size:0.82rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#fff; line-height:1.9; font-weight:600;">ஆதியும் அந்தமும் இல்லா அரும்பெருஞ்<br>சோதியை யாம்பாடக் கேட்டேயும் வாள்தடங்கண்<br>மாதே வளருதியோ வன்செவியோ நின்செவிதான்<br>மாதேவன் வார்கழல்கள் வாழ்த்திய வாழ்த்தொலிபோய்<br>வீதிவிழிப் போய்க்கேட்ட லுமேவெம் விம்மிவிம்மிப்<br>பாதா ரவிந்தம் பணிவார்போல் நின்றிலையோ.</div>
+              <div style="font-size:0.9rem; color:var(--gold-bright); margin-top:10px; font-weight:600;">— எட்டாம் திருமுறை — மாணிக்கவாசகர் திருவெம்பாவை (பாடல் 1)</div>
+            </div>
+
+            <!-- 6. Philosophical Meaning -->
+            <div style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
+              <h4 style="color:var(--gold); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">தொடக்கமும் முடிவும் இல்லாத எல்லையற்ற ஜோதி வடிவினனான சிவபெருமானின் புகழை நாங்கள் பாடுவதைக் கேட்டும் தூங்குகின்றாயோ? ஊரெல்லாம் இறைவனின் திருநாமங்கள் எதிரொலிக்கின்றன. விரைந்து எழுந்து நீராடி இறைவனைத் துதிப்போம் வா!</div>
+            </div>
+
+            <!-- 7. Inspirational Story -->
+            <div style="margin: 28px 0; background:rgba(224,159,62,0.06); border-radius:14px; padding:22px; border:1px solid rgba(224,159,62,0.25);">
+              <h4 style="color:var(--amber); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">மாணிக்கவாசகர் திருவண்ணாமலையில் தங்கியிருந்த போது, மார்கழி மாதத்தில் இளம் பெண்கள் அதிகாலையில் எழுந்து ஒருவரையொருவர் தட்டியெழுப்பி, தாமரைப் பொய்கையில் நீராடி அண்ணாமலையாரை வழிபடச் செல்வதைக் கண்டார். அந்த அன்புக் காட்சியை ஆன்மாவின் விழிப்பாகப் பாடியதே திருவெம்பாவையின் 20 பாடல்களாகும்.</div>
+            </div>
+
+            <!-- 8. Dharmic Living in Daily Life -->
+            <div style="margin: 28px 0; background:rgba(42,157,143,0.08); border-radius:14px; padding:22px; border:1px solid rgba(42,157,143,0.3);">
+              <h4 style="color:#2a9d8f; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">அதிகாலையில் (பிரம்ம முகூர்த்தத்தில்) எழுவது உடலுக்கும் மூளைக்கும் புத்துணர்ச்சியைத் தரும். மார்கழி மாதத்தில் அதிகாலையில் எழுந்து நீராடி, வாசலில் கோலமிட்டு, திருப்பாவை திருவெம்பாவை பாடல்களைப் பாடி இறைவனை வழிபட வேண்டும்.</div>
+            </div>
+
+            <!-- 9. Daily Dharmic Habits Checklist -->
+            
+        <div class="sadhana-box">
+          <div class="sadhana-header">
+            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+          </div>
+          
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u2s0">
+              <label for="g3u2s0">பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u2s1">
+              <label for="g3u2s1">செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u2s2">
+              <label for="g3u2s2">எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்.</label>
+            </div>
+            
+        </div>
+        
+
+            <!-- 10. Self-Learning Interactive Quiz -->
+            
+        <div class="quiz-section">
+          <h4 style="color:var(--gold-bright); font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          </h4>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
+            கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
+          </p>
+          
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 1:</strong> 'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: நாம் தர்மத்தைக் காப்பாற்றினால், அந்த தர்மம் நம்மை எல்லா ஆபத்துக்களிலிருந்தும் காப்பாற்றும்.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: அறம் காப்பவனை அறம் காக்கும்.</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 2:</strong> மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: பணிவு, வாய்மை மற்றும் குரு பக்தி.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: அடக்கமும் உண்மை பேசும் பண்பும்.</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 3:</strong> ஜீவகாருண்யம் என்றால் என்ன?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: எல்லா உயிர்களிடத்தும் அன்பு காட்டி எவ்வுயிருக்கும் துன்பம் செய்யாமல் இருத்தல்.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: வள்ளலார் போற்றிய கருணை நெறி.</div>
+                </div>
+              </details>
+            </div>
+            
+        </div>
+        
+
+            <!-- 11. Audio Link to Hymns -->
+            <div style="background:rgba(212,175,55,0.06); border:1px solid var(--border-gold); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
+              <div>
+                <strong style="color:var(--gold-bright);">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
+              </div>
+              <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
+                பாடலைக் கேட்க ↗
+              </a>
+            </div>
+
+            <!-- Navigation Stepper Footer -->
+            <div class="lesson-nav-footer">
+              <button class="lesson-nav-btn lesson-nav-prev" onclick="switchChapter(1)">← முந்தைய பாடம் 1</button>
+              <button onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:var(--border-gold); color:var(--gold-soft);">
+                🖨️ பாடம் அச்சிடுக (Print / PDF)
+              </button>
+              <button class="lesson-nav-btn lesson-nav-next" onclick="switchChapter(3)">அடுத்த பாடம் 3 →</button>
+            </div>
+
+          </article>
+        </div>
+        
+        <div class="lesson-unit-panel " id="unit-panel-3">
+          <article class="lesson-card" id="unit-3" style="background: rgba(18, 22, 28, 0.92); border: 1px solid var(--border-gold); border-radius: 18px; padding: 32px; margin-bottom: 30px; box-shadow: 0 10px 35px rgba(0,0,0,0.6);">
+            
+            <div class="lesson-card-head">
+              <div>
+                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 3 (Chapter 3)</span>
+                <div class="lesson-main-title" style="margin-top:12px;">பஞ்ச பூதத் திருத்தலங்கள் & இயற்கை வழிபாடு</div>
+                <div class="lesson-sub-title">நிலம், நீர், நெருப்பு, காற்று, ஆகாயம்</div>
+              </div>
+              <div style="color:var(--gold-bright); font-size:0.9rem; font-weight:600; background:rgba(212,175,55,0.1); padding:6px 14px; border-radius:20px; border:1px solid var(--border-gold);">
+                தரம் 3 • வயது 7 - 8 (தொடக்க நிலை III)
+              </div>
+            </div>
+
+            <!-- 1. Learning Objectives -->
+            
+        <div class="objectives-card">
+          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <ul class="objectives-list">
+            <li>திருக்கோயில் அமைப்பு மனித உடலோடு எவ்வாறு ஒப்பிடப்படுகிறது என்பதைப் புரிந்துகொள்ளுதல்.</li><li>கோயிலுக்குள் நுழையும் போது கடைப்பிடிக்க வேண்டிய 5 புனித ஒழுக்கங்களைக் கற்றல்.</li><li>நந்தி தேவரை வணங்கி சிவலிங்கப் பெருமானைத் தரிசிக்கும் முறையை அறிதல்.</li>
+          </ul>
+        </div>
+        
+
+            <!-- 2. Vocabulary Builder -->
+            
+        <div class="vocab-section">
+          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          </h4>
+          <div class="vocab-grid">
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 ராஜகோபுரம் (Gopuram)</div>
+              <div class="vocab-meaning">திருக்கோயிலின் முதன்மை நுழைவாயிலில் விண்ணை முட்டி நிற்கும் பிரம்மாண்டக் கோபுரம்; உடலின் பாதத்தைக் குறிப்பது.</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 பலிபீடம் (Balipitham)</div>
+              <div class="vocab-meaning">நந்தியின் அருகில் உள்ள பீடம்; கோயிலுக்குள் நுழையும் முன் நம் அகந்தை மற்றும் சுயநலத்தை பலியிடும் இடம்.</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 கர்ப்பக்கிருகம் (Sanctum)</div>
+              <div class="vocab-meaning">இறைவன் எழுந்தருளியுள்ள கருவறை; மனித உடலின் இருதய ஸ்தானத்தைக் குறிப்பது.</div>
+            </div>
+            
+          </div>
+        </div>
+        
+
+            <!-- 3. Visual SVG Diagram / Infographic -->
+            
+    <div class="visual-diagram-card">
+      <div class="diagram-header">
+        <span class="diagram-tag">🎨 காட்சி விளக்கம் (Visual Diagram)</span>
+        <h4>திருக்கோயில் அமைப்பு & மனித உடல் தத்துவ விளக்கம்</h4>
+      </div>
+      <svg viewBox="0 0 700 250" class="pedagogy-svg" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="250" rx="12" fill="rgba(10,14,20,0.85)" stroke="rgba(212,175,55,0.3)" stroke-width="1.5"/>
+        
+        <!-- Step 1: Gopuram -->
+        <g transform="translate(60, 40)">
+          <polygon points="40,20 10,140 70,140" fill="rgba(212,175,55,0.2)" stroke="#ffd700" stroke-width="2"/>
+          <text x="40" y="165" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="14" font-weight="bold">ராஜகோபுரம்</text>
+          <text x="40" y="185" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="12">பாதம் (Feet)</text>
+        </g>
+        
+        <line x1="150" y1="100" x2="180" y2="100" stroke="rgba(212,175,55,0.5)" stroke-width="2"/>
+        
+        <!-- Step 2: Kodimaram & Balipitham -->
+        <g transform="translate(200, 40)">
+          <line x1="30" y1="20" x2="30" y2="140" stroke="#d4af37" stroke-width="4"/>
+          <circle cx="30" cy="20" r="6" fill="#ffd700"/>
+          <rect x="55" y="110" width="30" height="30" rx="3" fill="rgba(230,57,70,0.3)" stroke="#e63946" stroke-width="1.5"/>
+          <text x="45" y="165" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">கொடிமரம் & பலிபீடம்</text>
+          <text x="45" y="185" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="12">முதுகெலும்பு & ஆணவப் பலி</text>
+        </g>
+
+        <line x1="310" y1="100" x2="340" y2="100" stroke="rgba(212,175,55,0.5)" stroke-width="2"/>
+
+        <!-- Step 3: Nandi -->
+        <g transform="translate(360, 50)">
+          <ellipse cx="40" cy="80" rx="25" ry="18" fill="rgba(255,255,255,0.15)" stroke="#fff" stroke-width="1.5"/>
+          <circle cx="58" cy="72" r="10" fill="rgba(255,255,255,0.2)" stroke="#fff" stroke-width="1"/>
+          <text x="40" y="155" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="14" font-weight="bold">நந்தி தேவர்</text>
+          <text x="40" y="175" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="12">ஆன்மா (ஜீவாத்மா)</text>
+        </g>
+
+        <line x1="450" y1="100" x2="480" y2="100" stroke="rgba(212,175,55,0.5)" stroke-width="2"/>
+
+        <!-- Step 4: Garbhagriha / Sivalinga -->
+        <g transform="translate(500, 35)">
+          <rect x="20" y="25" width="70" height="115" rx="6" fill="rgba(212,175,55,0.15)" stroke="#ffd700" stroke-width="2"/>
+          <ellipse cx="55" cy="100" rx="22" ry="8" fill="#555"/>
+          <path d="M 43 100 L 43 75 Q 55 60 67 75 L 67 100 Z" fill="#222" stroke="#d4af37" stroke-width="1"/>
+          <circle cx="55" cy="45" r="4" fill="#ffd700" filter="drop-shadow(0 0 6px #ffd700)"/>
+          <text x="55" y="170" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="14" font-weight="bold">கருவறை (சிவலிங்கம்)</text>
+          <text x="55" y="190" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="12">இதயம் / சிவ பரம்பொருள்</text>
+        </g>
+
+        <text x="350" y="230" text-anchor="middle" fill="#fbf2d3" font-family="'Mukta Malar', sans-serif" font-size="13">"உடம்பே ஆலயம், வாய் கோபுர வாசல், ஜீவனே சிவலிங்கம்" — திருமூலர் திருமந்திரம்</text>
+      </svg>
+      <div class="diagram-footer">
+        <p><strong>விளக்கம்:</strong> கோயிலின் வெளிப்புற ராஜகோபுரத்தைக் கண்டு வணங்குவது பாதம் தொழுவதாகும். பலிபீடத்தில் நம் சுயநலத்தை பலியிட்டு, நந்தியின் பணிவோடு கருவறையில் உள்ள சிவனைத் தரிசிக்க வேண்டும்.</p>
+      </div>
+    </div>
+    
+
+            <!-- 4. Paced Step-by-Step Deep Dive Sections -->
+            <div style="margin: 28px 0;">
+              <h4 style="color:var(--gold-bright); font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              </h4>
+              <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
+                ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
+              </p>
+              
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">1. 'உடம்பே ஆலயம்' — திருமூலர் காட்டும் தத்துவம்</div>
+              <div class="lesson-step-content">
+                <p>திருக்கோயில் என்பது வெறும் கல் கட்டடம் அல்ல; அது மனித உடலின் மாபெரும் குறியீடாகும். கோபுரம் பாதம், கொடிமரம் மூலாதாரம் முதல் பிரம்மரந்திரம் வரை செல்லும் சுழுமுனை நாடி, பலிபீடம் நமது ஆணவம், நந்தி நமது ஆன்மா, கருவறை நமது இதயம். எனவே கோயிலை வலம் வரும் போது நம் உடலையும் உள்ளத்தையும் தூய்மையாக்குகிறோம் என்ற உணர்வு வேண்டும்.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">2. ஆலயம் செல்லும் முறையான படிநிலைகள் (Step-by-Step Temple Etiquette)</div>
+              <div class="lesson-step-content">
+                <p>1) காலணிகளைக் கோயிலுக்கு வெளியே பாதுகாப்பாக விட வேண்டும். 2) கை, கால்களைக் கழுவி தூய ஆடையில் செல்ல வேண்டும். 3) ராஜகோபுரத்தைக் கண்டதும் இருகரம் கூப்பி 'கோபுர தரிசனம் கோடி புண்ணியம்' என வணங்க வேண்டும். 4) கொடிமரத்தின் முன் ஆண்கள் அஷ்டாங்க நமஸ்காரமும், பெண்கள் பஞ்சாங்க நமஸ்காரமும் செய்ய வேண்டும். 5) நந்தி பகவானின் இரு கொம்புகளின் நடுவே கருவறைச் சிவனை அமைதியாகத் தரிசிக்க வேண்டும்.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">3. கோயிலில் செய்யக் கூடாதவை (Important Don'ts in a Temple)</div>
+              <div class="lesson-step-content">
+                <p>சத்தமாகப் பேசுதல், கைபேசியைப் பயன்படுத்துதல், வீண் அரட்டையடித்தல், கொடிமரத்திற்கும் நந்திக்கும் நடுவே நடத்தல், விக்ரகங்களைத் தொடுதல் ஆகியவற்றைத் தவிர்க்க வேண்டும். அங்கு நிலவும் அமைதியான தெய்வீக அலைகளை நம் மனதிற்குள் உள்வாங்க வேண்டும்.</p>
+              </div>
+            </div>
+            
+            </div>
+
+            <!-- 5. Sacred Verse / Mantra Box -->
+            <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+              <div style="font-size:0.82rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#fff; line-height:1.9; font-weight:600;">வானாகி மண்ணாகி வளியாகி ஒளியாகி<br>ஊனாகி உயிராகி உண்மையுமாய் இன்மையுமாய்க்<br>கோனாகி யான்எனதென் றவரவரைக் கூத்தாட்டு<br>வானாகி நின்றாயை என்சொல்லி வாழ்த்துவனே.</div>
+              <div style="font-size:0.9rem; color:var(--gold-bright); margin-top:10px; font-weight:600;">— திருவாசகம் — மாணிக்கவாசகர் (திருச்சதகம்)</div>
+            </div>
+
+            <!-- 6. Philosophical Meaning -->
+            <div style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
+              <h4 style="color:var(--gold); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">சிவபெருமான் ஆகாயமாகவும், பூமியாகவும், காற்றாகவும், ஒளியாகவும் (நெருப்பு), உடலாகவும், அதற்குள் இருக்கும் உயிராகவும் எங்கும் நீக்கமற நிறைந்துள்ளார்.</div>
+            </div>
+
+            <!-- 7. Inspirational Story -->
+            <div style="margin: 28px 0; background:rgba(224,159,62,0.06); border-radius:14px; padding:22px; border:1px solid rgba(224,159,62,0.25);">
+              <h4 style="color:var(--amber); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">பஞ்ச பூத ஸ்தலங்கள்: 1. காஞ்சிபுரம் ஏகாம்பரேஸ்வரர் (மண் - நிலம்), 2. திருவானைக்காவல் ஜம்புகேஸ்வரர் (நீர்), 3. திருவண்ணாமலை அருணாசலேஸ்வரர் (நெருப்பு), 4. திருக்காளத்தி காளத்தீஸ்வரர் (காற்று), 5. சிதம்பரம் நடராஜர் (ஆகாயம்). இத்தலங்கள் அனைத்தும் பாரத தேசத்தின் தத்துவ மேன்மையை உலகிற்குப் பறைசாற்றுகின்றன.</div>
+            </div>
+
+            <!-- 8. Dharmic Living in Daily Life -->
+            <div style="margin: 28px 0; background:rgba(42,157,143,0.08); border-radius:14px; padding:22px; border:1px solid rgba(42,157,143,0.3);">
+              <h4 style="color:#2a9d8f; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">இயற்கையே இறைவனின் வடிவம். பஞ்ச பூதங்களை மாசுபடுத்தாமல் காக்க வேண்டும்: நிலத்தில் பிளாஸ்டிக் குப்பைகளைக் கொட்டக் கூடாது, நீர்நிலைகளைத் தூய்மையாக வைத்திருக்க வேண்டும், காற்றை மாசுபடாமல் காக்க மரங்களை நட வேண்டும்.</div>
+            </div>
+
+            <!-- 9. Daily Dharmic Habits Checklist -->
+            
+        <div class="sadhana-box">
+          <div class="sadhana-header">
+            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+          </div>
+          
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u3s0">
+              <label for="g3u3s0">கோயிலுக்குச் செல்லும்போது அமைதியாகவும் பயபக்தியுடனும் இருந்தேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u3s1">
+              <label for="g3u3s1">கொடிமரத்தின் முன் வீழ்ந்து வணங்கி எனது சுயநல எண்ணங்களை விட்டுவிட்டேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u3s2">
+              <label for="g3u3s2">கருவறை தீபாராதனையின் போது கண்களை மூடி இறைவனை நெஞ்சில் உணர்ந்தேன்.</label>
+            </div>
+            
+        </div>
+        
+
+            <!-- 10. Self-Learning Interactive Quiz -->
+            
+        <div class="quiz-section">
+          <h4 style="color:var(--gold-bright); font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          </h4>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
+            கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
+          </p>
+          
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 1:</strong> திருக்கோயிலில் பலிபீடம் எதைக் குறிக்கிறது?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: நமது ஆணவத்தையும் (சுயநல அகங்காரம்) தீய எண்ணங்களையும் இறைவனிடம் பலியிட்டு முழுமையாகச் சரணடைவதைக் குறிக்கிறது.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: உயிர்ப் பலி அல்ல; மனப்பலி!</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 2:</strong> நந்தி பகவானை எவ்வாறு தரிசிக்க வேண்டும்?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: நந்தியின் இரு கொம்புகளின் இடைவெளியின் வழியே கருவறையில் உள்ள சிவலிங்கப் பெருமானைத் தரிசிக்க வேண்டும்.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: நந்தி ஆன்மாவின் பணிவைக் காட்டுகிறது.</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 3:</strong> திருக்கோயிலில் கொடிமரம் உடலின் எந்தப் பகுதியோடு ஒப்பிடப்படுகிறது?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: மனித உடலின் முதுகெலும்பு மற்றும் சுழுமுனை நாடி (Spinal column / Kundalini path).</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: மூலாதாரத்திலிருந்து தலை உச்சி வரை செல்லும் பாதை.</div>
+                </div>
+              </details>
+            </div>
+            
+        </div>
+        
+
+            <!-- 11. Audio Link to Hymns -->
+            <div style="background:rgba(212,175,55,0.06); border:1px solid var(--border-gold); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
+              <div>
+                <strong style="color:var(--gold-bright);">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
+              </div>
+              <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
+                பாடலைக் கேட்க ↗
+              </a>
+            </div>
+
+            <!-- Navigation Stepper Footer -->
+            <div class="lesson-nav-footer">
+              <button class="lesson-nav-btn lesson-nav-prev" onclick="switchChapter(2)">← முந்தைய பாடம் 2</button>
+              <button onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:var(--border-gold); color:var(--gold-soft);">
+                🖨️ பாடம் அச்சிடுக (Print / PDF)
+              </button>
+              <button class="lesson-nav-btn lesson-nav-next" onclick="switchChapter(4)">அடுத்த பாடம் 4 →</button>
+            </div>
+
+          </article>
+        </div>
+        
+        <div class="lesson-unit-panel " id="unit-panel-4">
+          <article class="lesson-card" id="unit-4" style="background: rgba(18, 22, 28, 0.92); border: 1px solid var(--border-gold); border-radius: 18px; padding: 32px; margin-bottom: 30px; box-shadow: 0 10px 35px rgba(0,0,0,0.6);">
+            
+            <div class="lesson-card-head">
+              <div>
+                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 4 (Chapter 4)</span>
+                <div class="lesson-main-title" style="margin-top:12px;">ஔவையாரின் மூதுரை — பயன் கருதாத அறம்</div>
+                <div class="lesson-sub-title">நன்றி மறவாமை & சுயநலமற்ற உதவி</div>
+              </div>
+              <div style="color:var(--gold-bright); font-size:0.9rem; font-weight:600; background:rgba(212,175,55,0.1); padding:6px 14px; border-radius:20px; border:1px solid var(--border-gold);">
+                தரம் 3 • வயது 7 - 8 (தொடக்க நிலை III)
+              </div>
+            </div>
+
+            <!-- 1. Learning Objectives -->
+            
+        <div class="objectives-card">
+          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <ul class="objectives-list">
+            <li>அன்றாட வாழ்வில் கடைப்பிடிக்க வேண்டிய உயர்ந்த தர்ம நெறிகளைப் புரிந்துகொள்ளுதல்.</li><li>பெற்றோரையும் ஆசிரியரையும் மதித்து நற்பண்புகளுடன் விளங்குதல்.</li><li>இறை நம்பிக்கையுடன் கூடிய நேர்மையான மாணவராகத் திகழ்தல்.</li>
+          </ul>
+        </div>
+        
+
+            <!-- 2. Vocabulary Builder -->
+            
+        <div class="vocab-section">
+          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          </h4>
+          <div class="vocab-grid">
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 தர்மம் (Dharma)</div>
+              <div class="vocab-meaning">அனைத்து உயிர்களையும் தாங்கி நிற்கும் பேரறம்; நேர்மை மற்றும் கடமை.</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 சத்சங்கம் (Satsanga)</div>
+              <div class="vocab-meaning">நல்ல சிந்தனை உடைய பெரியோர்களுடனும் நல்ல நண்பர்களுடனும் இணைந்திருத்தல்.</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 ஜீவகாருண்யம் (Jivakarunyam)</div>
+              <div class="vocab-meaning">எல்லா உயிர்களிடத்தும் இரக்கமும் கருணையும் கொண்டு வாழ்தல்.</div>
+            </div>
+            
+          </div>
+        </div>
+        
+
+            <!-- 3. Visual SVG Diagram / Infographic -->
+            
+    <div class="visual-diagram-card">
+      <div class="diagram-header">
+        <span class="diagram-tag">🎨 காட்சி விளக்கம் (Visual Diagram)</span>
+        <h4>மாணவர் தினசரி வேத வாழ்வியல் சுழற்சி (தினசரியை - Dinacharya)</h4>
+      </div>
+      <svg viewBox="0 0 700 240" class="pedagogy-svg" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="240" rx="12" fill="rgba(10,14,20,0.85)" stroke="rgba(212,175,55,0.3)" stroke-width="1.5"/>
+        
+        <g transform="translate(60, 30)">
+          <rect x="0" y="0" width="130" height="130" rx="8" fill="rgba(224,159,62,0.15)" stroke="#e09f3e" stroke-width="1.5"/>
+          <text x="65" y="30" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">1. பிரம்ம முகூர்த்தம்</text>
+          <text x="65" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">விடியற்காலை எழுதல்</text>
+          <text x="65" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">நீராடல் &amp; திருநீறு</text>
+          <text x="65" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">சூரிய நமஸ்காரம்</text>
+        </g>
+
+        <path d="M 200 95 L 225 95" stroke="#d4af37" stroke-width="2"/>
+
+        <g transform="translate(235, 30)">
+          <rect x="0" y="0" width="130" height="130" rx="8" fill="rgba(212,175,55,0.15)" stroke="#d4af37" stroke-width="1.5"/>
+          <text x="65" y="30" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">2. குரு &amp; கல்வி</text>
+          <text x="65" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">பெற்றோர் வணக்கம்</text>
+          <text x="65" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">பள்ளிப் பாடம் கற்றல்</text>
+          <text x="65" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">நேர்மை &amp; இன்சொல்</text>
+        </g>
+
+        <path d="M 375 95 L 400 95" stroke="#d4af37" stroke-width="2"/>
+
+        <g transform="translate(410, 30)">
+          <rect x="0" y="0" width="130" height="130" rx="8" fill="rgba(42,157,143,0.15)" stroke="#2a9d8f" stroke-width="1.5"/>
+          <text x="65" y="30" text-anchor="middle" fill="#2a9d8f" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">3. மாலை சந்தியா</text>
+          <text x="65" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">தீப வழிபாடு</text>
+          <text x="65" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">தேவார திருமுறை பாடுதல்</text>
+          <text x="65" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">தியானம் &amp; அமைதி</text>
+        </g>
+
+        <path d="M 550 95 L 575 95" stroke="#d4af37" stroke-width="2"/>
+
+        <g transform="translate(585, 30)">
+          <rect x="0" y="0" width="105" height="130" rx="8" fill="rgba(230,57,70,0.15)" stroke="#e63946" stroke-width="1.5"/>
+          <text x="52" y="30" text-anchor="middle" fill="#e63946" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">4. இரவு நிஷ்டை</text>
+          <text x="52" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">சுய பரிசோதனை</text>
+          <text x="52" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">நமசிவாய ஜபம்</text>
+          <text x="52" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">அமைதியான உறக்கம்</text>
+        </g>
+
+        <text x="350" y="210" text-anchor="middle" fill="#fbf2d3" font-family="'Mukta Malar', sans-serif" font-size="13">"காலையும் மாலையும் சிவசிந்தனையோடு வாழும் மாணவன் உலகில் எங்கும் வெல்வான்"</text>
+      </svg>
+      <div class="diagram-footer">
+        <p><strong>வாழ்வியல் நெறிமுறை:</strong> விடியற்காலையில் எழுவது மூளைக்கு புத்துணர்ச்சியையும், மாலையில் திருமுறை ஓதுவது மனதிற்குப் பேரமைதியையும் நல்குகிறது.</p>
+      </div>
+    </div>
+    
+
+            <!-- 4. Paced Step-by-Step Deep Dive Sections -->
+            <div style="margin: 28px 0;">
+              <h4 style="color:var(--gold-bright); font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              </h4>
+              <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
+                ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
+              </p>
+              
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">1. தர்மத்தின் மேன்மை (The Greatness of Dharma)</div>
+              <div class="lesson-step-content">
+                <p>'தர்மமே வெல்லும்; தர்மத்தைக் காப்பவனை தர்மம் காக்கும் (தFilter: தர்மோ ரக்ஷதி ரக்ஷிதஃ)' என்பது நமது முன்னோர்களின் அழியாத வாக்கு. உண்மை, நேர்மை, இன்சொல், பிறருக்கு உதவுதல் ஆகியவை ஒரு மாணவனின் உண்மையான அணிகலன்களாகும்.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)</div>
+              <div class="lesson-step-content">
+                <p>ஆசிரியரை 'குரு'வாகப் போற்றி, பணிவோடு வினாக்கள் கேட்டு மெய்யறிவைப் பெறுவதே பாரத நாட்டின் சிறந்த கல்வி முறையாகும். பணிவு உள்ள இடத்திலேயே ஞானம் தங்கும்.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">3. உயிர்களிடத்தில் அன்பு (Universal Compassion)</div>
+              <div class="lesson-step-content">
+                <p>மனிதர்கள் மட்டுமல்லாமல் வாயில்லாப் பிராணிகள், பறவைகள், தாவரங்கள் என அனைத்து இயற்கைக்கும் மதிப்பளித்து, அன்பு காட்டுவதே மெய்யான ஆன்மீகமாகும்.</p>
+              </div>
+            </div>
+            
+            </div>
+
+            <!-- 5. Sacred Verse / Mantra Box -->
+            <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+              <div style="font-size:0.82rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#fff; line-height:1.9; font-weight:600;">நன்றி ஒருவருக்குச் செய்தக்கால் அந்நன்றி<br>'என்று தருங்கொல்?' எனவேண்டா — நின்று<br>தளரா வளர்தெங்கு தாளுண்ட நீரைத்<br>தலையாலே தான்தருவ தால்.</div>
+              <div style="font-size:0.9rem; color:var(--gold-bright); margin-top:10px; font-weight:600;">— மூதுரை — தமிழ் மூதாட்டி ஔவையார் (பாடல் 1)</div>
+            </div>
+
+            <!-- 6. Philosophical Meaning -->
+            <div style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
+              <h4 style="color:var(--gold); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">ஒருவருக்கு நாம் உதவி செய்தால், 'அவர் நமக்கு எப்போது கைமாறு செய்வார்?' என்று எதிர்பார்க்கக் கூடாது. தென்னை மரம் தன் வேரினால் உறிஞ்சிய சிறு தண்ணீரை, தன் வாழ்நாளின் இறுதியில் இனிமையான இளநீராகத் தலையிலே தாங்கி உலகிற்குத் தருகிறது. அதுபோல நல்ல மனிதர்கள் செய்த உதவியை மறக்காமல் பல மடங்கு நன்மையாகத் திருப்பித் தருவர்.</div>
+            </div>
+
+            <!-- 7. Inspirational Story -->
+            <div style="margin: 28px 0; background:rgba(224,159,62,0.06); border-radius:14px; padding:22px; border:1px solid rgba(224,159,62,0.25);">
+              <h4 style="color:var(--amber); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">ஒரு முனிவர் ஆற்றில் அடித்துச் செல்லப்பட்ட தேளைக் காப்பாற்றத் தன் கையில் எடுத்தார். அது அவரைத் திரும்பத் திரும்பக் கொட்டியது. ஆனாலும் முனிவர் விடாமல் அதைக் கரையில் விட்டார். சீடர்கள் 'கொட்டும் தேளுக்கு ஏன் உதவி செய்தீர்கள்?' என்று கேட்டனர். முனிவர் சிரித்துக் கொண்டே, 'கொட்டுவது அதன் இயல்பு, காப்பாற்றுவது என் தர்மம்' என்றார். எவரிடமும் கைமாறு எதிர்பாராது நன்மையே செய்வது உத்தம குணம்.</div>
+            </div>
+
+            <!-- 8. Dharmic Living in Daily Life -->
+            <div style="margin: 28px 0; background:rgba(42,157,143,0.08); border-radius:14px; padding:22px; border:1px solid rgba(42,157,143,0.3);">
+              <h4 style="color:#2a9d8f; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">நாம் யாருக்காவது உதவி செய்தால் உடனே அவரிடமிருந்து பாராட்டுதலையோ அல்லது திருப்பி உதவியையோ எதிர்பார்க்கக் கூடாது. பிறர் செய்த சிறு நன்மையையும் வாழ்நாள் முழுவதும் மறக்காமல் நன்றியோடு நினைக்க வேண்டும்.</div>
+            </div>
+
+            <!-- 9. Daily Dharmic Habits Checklist -->
+            
+        <div class="sadhana-box">
+          <div class="sadhana-header">
+            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+          </div>
+          
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u4s0">
+              <label for="g3u4s0">பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u4s1">
+              <label for="g3u4s1">செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u4s2">
+              <label for="g3u4s2">எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்.</label>
+            </div>
+            
+        </div>
+        
+
+            <!-- 10. Self-Learning Interactive Quiz -->
+            
+        <div class="quiz-section">
+          <h4 style="color:var(--gold-bright); font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          </h4>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
+            கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
+          </p>
+          
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 1:</strong> 'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: நாம் தர்மத்தைக் காப்பாற்றினால், அந்த தர்மம் நம்மை எல்லா ஆபத்துக்களிலிருந்தும் காப்பாற்றும்.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: அறம் காப்பவனை அறம் காக்கும்.</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 2:</strong> மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: பணிவு, வாய்மை மற்றும் குரு பக்தி.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: அடக்கமும் உண்மை பேசும் பண்பும்.</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 3:</strong> ஜீவகாருண்யம் என்றால் என்ன?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: எல்லா உயிர்களிடத்தும் அன்பு காட்டி எவ்வுயிருக்கும் துன்பம் செய்யாமல் இருத்தல்.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: வள்ளலார் போற்றிய கருணை நெறி.</div>
+                </div>
+              </details>
+            </div>
+            
+        </div>
+        
+
+            <!-- 11. Audio Link to Hymns -->
+            <div style="background:rgba(212,175,55,0.06); border:1px solid var(--border-gold); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
+              <div>
+                <strong style="color:var(--gold-bright);">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
+              </div>
+              <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
+                பாடலைக் கேட்க ↗
+              </a>
+            </div>
+
+            <!-- Navigation Stepper Footer -->
+            <div class="lesson-nav-footer">
+              <button class="lesson-nav-btn lesson-nav-prev" onclick="switchChapter(3)">← முந்தைய பாடம் 3</button>
+              <button onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:var(--border-gold); color:var(--gold-soft);">
+                🖨️ பாடம் அச்சிடுக (Print / PDF)
+              </button>
+              <button class="lesson-nav-btn lesson-nav-next" onclick="switchChapter(5)">அடுத்த பாடம் 5 →</button>
+            </div>
+
+          </article>
+        </div>
+        
+        <div class="lesson-unit-panel " id="unit-panel-5">
+          <article class="lesson-card" id="unit-5" style="background: rgba(18, 22, 28, 0.92); border: 1px solid var(--border-gold); border-radius: 18px; padding: 32px; margin-bottom: 30px; box-shadow: 0 10px 35px rgba(0,0,0,0.6);">
+            
+            <div class="lesson-card-head">
+              <div>
+                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 5 (Chapter 5)</span>
+                <div class="lesson-main-title" style="margin-top:12px;">வேத காலை வணக்கம் & பூமி மாதா பிரார்த்தனை</div>
+                <div class="lesson-sub-title">கையில் இறை தரிசனம் & பூமி வணக்கம்</div>
+              </div>
+              <div style="color:var(--gold-bright); font-size:0.9rem; font-weight:600; background:rgba(212,175,55,0.1); padding:6px 14px; border-radius:20px; border:1px solid var(--border-gold);">
+                தரம் 3 • வயது 7 - 8 (தொடக்க நிலை III)
+              </div>
+            </div>
+
+            <!-- 1. Learning Objectives -->
+            
+        <div class="objectives-card">
+          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <ul class="objectives-list">
+            <li>அன்றாட வாழ்வில் கடைப்பிடிக்க வேண்டிய உயர்ந்த தர்ம நெறிகளைப் புரிந்துகொள்ளுதல்.</li><li>பெற்றோரையும் ஆசிரியரையும் மதித்து நற்பண்புகளுடன் விளங்குதல்.</li><li>இறை நம்பிக்கையுடன் கூடிய நேர்மையான மாணவராகத் திகழ்தல்.</li>
+          </ul>
+        </div>
+        
+
+            <!-- 2. Vocabulary Builder -->
+            
+        <div class="vocab-section">
+          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          </h4>
+          <div class="vocab-grid">
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 தர்மம் (Dharma)</div>
+              <div class="vocab-meaning">அனைத்து உயிர்களையும் தாங்கி நிற்கும் பேரறம்; நேர்மை மற்றும் கடமை.</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 சத்சங்கம் (Satsanga)</div>
+              <div class="vocab-meaning">நல்ல சிந்தனை உடைய பெரியோர்களுடனும் நல்ல நண்பர்களுடனும் இணைந்திருத்தல்.</div>
+            </div>
+            
+            <div class="vocab-card">
+              <div class="vocab-term">📌 ஜீவகாருண்யம் (Jivakarunyam)</div>
+              <div class="vocab-meaning">எல்லா உயிர்களிடத்தும் இரக்கமும் கருணையும் கொண்டு வாழ்தல்.</div>
+            </div>
+            
+          </div>
+        </div>
+        
+
+            <!-- 3. Visual SVG Diagram / Infographic -->
+            
+    <div class="visual-diagram-card">
+      <div class="diagram-header">
+        <span class="diagram-tag">🎨 காட்சி விளக்கம் (Visual Diagram)</span>
+        <h4>மாணவர் தினசரி வேத வாழ்வியல் சுழற்சி (தினசரியை - Dinacharya)</h4>
+      </div>
+      <svg viewBox="0 0 700 240" class="pedagogy-svg" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="240" rx="12" fill="rgba(10,14,20,0.85)" stroke="rgba(212,175,55,0.3)" stroke-width="1.5"/>
+        
+        <g transform="translate(60, 30)">
+          <rect x="0" y="0" width="130" height="130" rx="8" fill="rgba(224,159,62,0.15)" stroke="#e09f3e" stroke-width="1.5"/>
+          <text x="65" y="30" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">1. பிரம்ம முகூர்த்தம்</text>
+          <text x="65" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">விடியற்காலை எழுதல்</text>
+          <text x="65" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">நீராடல் &amp; திருநீறு</text>
+          <text x="65" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">சூரிய நமஸ்காரம்</text>
+        </g>
+
+        <path d="M 200 95 L 225 95" stroke="#d4af37" stroke-width="2"/>
+
+        <g transform="translate(235, 30)">
+          <rect x="0" y="0" width="130" height="130" rx="8" fill="rgba(212,175,55,0.15)" stroke="#d4af37" stroke-width="1.5"/>
+          <text x="65" y="30" text-anchor="middle" fill="#ffd700" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">2. குரு &amp; கல்வி</text>
+          <text x="65" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">பெற்றோர் வணக்கம்</text>
+          <text x="65" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">பள்ளிப் பாடம் கற்றல்</text>
+          <text x="65" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">நேர்மை &amp; இன்சொல்</text>
+        </g>
+
+        <path d="M 375 95 L 400 95" stroke="#d4af37" stroke-width="2"/>
+
+        <g transform="translate(410, 30)">
+          <rect x="0" y="0" width="130" height="130" rx="8" fill="rgba(42,157,143,0.15)" stroke="#2a9d8f" stroke-width="1.5"/>
+          <text x="65" y="30" text-anchor="middle" fill="#2a9d8f" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">3. மாலை சந்தியா</text>
+          <text x="65" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">தீப வழிபாடு</text>
+          <text x="65" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">தேவார திருமுறை பாடுதல்</text>
+          <text x="65" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">தியானம் &amp; அமைதி</text>
+        </g>
+
+        <path d="M 550 95 L 575 95" stroke="#d4af37" stroke-width="2"/>
+
+        <g transform="translate(585, 30)">
+          <rect x="0" y="0" width="105" height="130" rx="8" fill="rgba(230,57,70,0.15)" stroke="#e63946" stroke-width="1.5"/>
+          <text x="52" y="30" text-anchor="middle" fill="#e63946" font-family="'Mukta Malar', sans-serif" font-size="13" font-weight="bold">4. இரவு நிஷ்டை</text>
+          <text x="52" y="55" text-anchor="middle" fill="#fff" font-family="'Mukta Malar', sans-serif" font-size="11">சுய பரிசோதனை</text>
+          <text x="52" y="75" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">நமசிவாய ஜபம்</text>
+          <text x="52" y="95" text-anchor="middle" fill="#9aa2b1" font-family="'Mukta Malar', sans-serif" font-size="11">அமைதியான உறக்கம்</text>
+        </g>
+
+        <text x="350" y="210" text-anchor="middle" fill="#fbf2d3" font-family="'Mukta Malar', sans-serif" font-size="13">"காலையும் மாலையும் சிவசிந்தனையோடு வாழும் மாணவன் உலகில் எங்கும் வெல்வான்"</text>
+      </svg>
+      <div class="diagram-footer">
+        <p><strong>வாழ்வியல் நெறிமுறை:</strong> விடியற்காலையில் எழுவது மூளைக்கு புத்துணர்ச்சியையும், மாலையில் திருமுறை ஓதுவது மனதிற்குப் பேரமைதியையும் நல்குகிறது.</p>
+      </div>
+    </div>
+    
+
+            <!-- 4. Paced Step-by-Step Deep Dive Sections -->
+            <div style="margin: 28px 0;">
+              <h4 style="color:var(--gold-bright); font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              </h4>
+              <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
+                ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
+              </p>
+              
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">1. தர்மத்தின் மேன்மை (The Greatness of Dharma)</div>
+              <div class="lesson-step-content">
+                <p>'தர்மமே வெல்லும்; தர்மத்தைக் காப்பவனை தர்மம் காக்கும் (தFilter: தர்மோ ரக்ஷதி ரக்ஷிதஃ)' என்பது நமது முன்னோர்களின் அழியாத வாக்கு. உண்மை, நேர்மை, இன்சொல், பிறருக்கு உதவுதல் ஆகியவை ஒரு மாணவனின் உண்மையான அணிகலன்களாகும்.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)</div>
+              <div class="lesson-step-content">
+                <p>ஆசிரியரை 'குரு'வாகப் போற்றி, பணிவோடு வினாக்கள் கேட்டு மெய்யறிவைப் பெறுவதே பாரத நாட்டின் சிறந்த கல்வி முறையாகும். பணிவு உள்ள இடத்திலேயே ஞானம் தங்கும்.</p>
+              </div>
+            </div>
+            
+            <div class="lesson-step-section">
+              <div class="lesson-step-title">3. உயிர்களிடத்தில் அன்பு (Universal Compassion)</div>
+              <div class="lesson-step-content">
+                <p>மனிதர்கள் மட்டுமல்லாமல் வாயில்லாப் பிராணிகள், பறவைகள், தாவரங்கள் என அனைத்து இயற்கைக்கும் மதிப்பளித்து, அன்பு காட்டுவதே மெய்யான ஆன்மீகமாகும்.</p>
+              </div>
+            </div>
+            
+            </div>
+
+            <!-- 5. Sacred Verse / Mantra Box -->
+            <div style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+              <div style="font-size:0.82rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#fff; line-height:1.9; font-weight:600;">கராக்ரே வசதே லக்ஷ்மீ: கரமத்யே ஸரஸ்வதீ |<br>கரமூலே து கோவிந்த: ப்ரபாதே கரதர்சனம் ||<br>ஸமுத்ர வஸனே தேவி பர்வதஸ்தன மண்டலே |<br>விஷ்ணுபத்னி நமஸ்துப்யம் பாதஸ்பர்சம் க்ஷமஸ்வமே ||</div>
+              <div style="font-size:0.9rem; color:var(--gold-bright); margin-top:10px; font-weight:600;">— வேத சனாதன தினசரி பிரார்த்தனை ஸ்லோகங்கள்</div>
+            </div>
+
+            <!-- 6. Philosophical Meaning -->
+            <div style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
+              <h4 style="color:var(--gold); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">கையின் நுனியில் மகாலக்ஷ்மியும், நடுவில் சரஸ்வதியும், அடியில் கோவிந்தனும் (இறைவனும்) உறைகின்றனர்; ஆகவே காலையில் கைகளைப் பார்த்து வணங்குதல் வேண்டும். கடலை ஆடையாகவும் மலைகளை மார்பாகவும் கொண்ட பூமித் தாயே, உன் மீது பாதம் பதிக்க நேர்வதால் என் பிழையைப் பொறுத்தருள்வாயாக!</div>
+            </div>
+
+            <!-- 7. Inspirational Story -->
+            <div style="margin: 28px 0; background:rgba(224,159,62,0.06); border-radius:14px; padding:22px; border:1px solid rgba(224,159,62,0.25);">
+              <h4 style="color:var(--amber); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">காஞ்சி மகா பெரியவாள் தன் வாழ்நாள் முழுவதும் இந்த பூமி வந்தனத்தை விடாது கடைப்பிடித்தார்கள். உலகமே நம்மைத் தாங்குகிறது; காற்று நமக்கு மூச்சுத் தருகிறது; நீர் தாகம் தீர்க்கிறது. காலையில் நன்றி உணர்வோடு தொடங்கும் நாளே அமைதியான நன்னாளாக அமையும்.</div>
+            </div>
+
+            <!-- 8. Dharmic Living in Daily Life -->
+            <div style="margin: 28px 0; background:rgba(42,157,143,0.08); border-radius:14px; padding:22px; border:1px solid rgba(42,157,143,0.3);">
+              <h4 style="color:#2a9d8f; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              </h4>
+              <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">காலையில் படுக்கையை விட்டு எழுந்ததும் உடனே தரையில் கால்களை வைக்காமல், இரு கைகளையும் இணைத்துக் குவித்து உள்ளங்கைகளைப் பார்த்து 'கராக்ரே வசதே லக்ஷ்மீ' என்று சொல்ல வேண்டும். பின் பூமித் தாயைத் தொட்டுக் கண்ணில் ஒற்றிக்கொண்டு எழுந்திருக்க வேண்டும். இது உடலுக்கும் உள்ளத்திற்கும் நன்றி உணர்வைத் தரும்.</div>
+            </div>
+
+            <!-- 9. Daily Dharmic Habits Checklist -->
+            
+        <div class="sadhana-box">
+          <div class="sadhana-header">
+            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+          </div>
+          
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u5s0">
+              <label for="g3u5s0">பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u5s1">
+              <label for="g3u5s1">செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.</label>
+            </div>
+            
+            <div class="sadhana-item">
+              <input type="checkbox" id="g3u5s2">
+              <label for="g3u5s2">எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்.</label>
+            </div>
+            
+        </div>
+        
+
+            <!-- 10. Self-Learning Interactive Quiz -->
+            
+        <div class="quiz-section">
+          <h4 style="color:var(--gold-bright); font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          </h4>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
+            கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
+          </p>
+          
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 1:</strong> 'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: நாம் தர்மத்தைக் காப்பாற்றினால், அந்த தர்மம் நம்மை எல்லா ஆபத்துக்களிலிருந்தும் காப்பாற்றும்.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: அறம் காப்பவனை அறம் காக்கும்.</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 2:</strong> மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: பணிவு, வாய்மை மற்றும் குரு பக்தி.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: அடக்கமும் உண்மை பேசும் பண்பும்.</div>
+                </div>
+              </details>
+            </div>
+            
+            <div class="quiz-card">
+              <details>
+                <summary>
+                  <span><strong>வினா 3:</strong> ஜீவகாருண்யம் என்றால் என்ன?</span>
+                  <span class="quiz-badge">விடையைக் காண்க ▾</span>
+                </summary>
+                <div class="quiz-body">
+                  <div class="quiz-answer-highlight">✓ விடை: எல்லா உயிர்களிடத்தும் அன்பு காட்டி எவ்வுயிருக்கும் துன்பம் செய்யாமல் இருத்தல்.</div>
+                  <div style="color:var(--text-muted); font-size:0.88rem; margin-top:4px;">💡 விளக்கம் / குறிப்பு: வள்ளலார் போற்றிய கருணை நெறி.</div>
+                </div>
+              </details>
+            </div>
+            
+        </div>
+        
+
+            <!-- 11. Audio Link to Hymns -->
+            <div style="background:rgba(212,175,55,0.06); border:1px solid var(--border-gold); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
+              <div>
+                <strong style="color:var(--gold-bright);">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
+              </div>
+              <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
+                பாடலைக் கேட்க ↗
+              </a>
+            </div>
+
+            <!-- Navigation Stepper Footer -->
+            <div class="lesson-nav-footer">
+              <button class="lesson-nav-btn lesson-nav-prev" onclick="switchChapter(4)">← முந்தைய பாடம் 4</button>
+              <button onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:var(--border-gold); color:var(--gold-soft);">
+                🖨️ பாடம் அச்சிடுக (Print / PDF)
+              </button>
+              <a href="tharam-4.html" class="lesson-nav-btn lesson-nav-next">அடுத்த தரம்: தரம் 4 (Grade 4) →</a>
+            </div>
+
+          </article>
+        </div>
+        
+    </div>
+
   </main>
 
+  <!-- Sheet Zoom Modal -->
+  <div class="sheet-modal-overlay" id="sheetModal" onclick="closeSheetModal()">
+    <div class="sheet-modal-content" onclick="event.stopPropagation()">
+      <div class="sheet-modal-header">
+        <div class="sheet-modal-title" id="sheetModalTitle">பாடநூல் பக்கம்</div>
+        <button class="sheet-modal-close" onclick="closeSheetModal()" aria-label="மூடுக">✕</button>
+      </div>
+      <div class="sheet-modal-body">
+        <img src="" id="sheetModalImg" alt="பெரிதாக்கப்பட்ட பாடப் படம்">
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-col">
         <h4>குரு குல தேசம் (Guru Kula Desam)</h4>
         <p>வேதங்கள், பன்னிரு திருமுறைகள், சைவ சித்தாந்த சாத்திரங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் சுத்த சன்மார்க்க நெறிகளை உலகிற்கு பறைசாற்றும் ஆன்மீக இசை &amp; கல்விப் பெருவெளி.</p>
         <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">அன்பே சிவம் • யாதும் ஊரே யாவரும் கேளிர் • ஏகன் அநேகன்</p>
-        <div style="margin-top: 14px; font-size: 0.84rem; color: var(--gold-soft); line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 12px; background: rgba(212, 175, 55, 0.05); padding-top: 6px; padding-bottom: 6px; border-radius: 0 8px 8px 0;">
-          📍 <strong>மைய முகவரி (Headquarters):</strong><br>
-          32, SSS Jaya Enclave, Kovaipudur,<br>
-          Coimbatore, 641042, Tamil Nadu, India.
-        </div>
       </div>
       <div class="footer-col">
         <h4>சைவ நெறி கல்வி &amp; பாடங்கள்</h4>
@@ -642,26 +1568,19 @@
           <li><a href="kalvi.html">சைவ நெறி கல்வித் தளம் (Grades 1 - 12)</a></li>
           <li><a href="tharam-1.html">தரம் 1 — 60 பாடப் படங்கள் &amp; நூல்கள்</a></li>
           <li><a href="tharam-2.html">தரம் 2 — சிவ சின்னங்கள் &amp; ஆலய வழிபாடு</a></li>
-          <li><a href="tharam-3.html">தரம் 3 — சமய குரவர் நால்வர் &amp; திருவெம்பாவை</a></li>
-          <li><a href="tharam-4.html">தரம் 4 — பன்னிரு திருமுறைகள் &amp; சைவ விரதங்கள்</a></li>
-          <li><a href="tharam-5.html">தரம் 5 — 63 நாயன்மார்கள் &amp; திருக்குறள் அறம்</a></li>
-          <li><a href="tharam-6.html">தரம் 6 — நான்கு வேதங்கள் &amp; பதி-பசு-பாசம்</a></li>
-          <li><a href="tharam-7.html">தரம் 7 முதல் தரம் 12 வரை (O/L &amp; A/L)</a></li>
-          <li><a href="irai-isai-virundhu.html">இறை இசை விருந்து (5 சிறப்புப் பாடல்கள்)</a></li>
-          <li><a href="syllabus.html">பாடத்திட்டம் (Comprehensive Syllabus)</a></li>
+          <li><a href="tharam-6.html">தரம் 6 — பதி-பசு-பாசம் &amp; திருமுறைகள்</a></li>
+          <li><a href="tharam-10.html">தரம் 10 — சைவ சித்தாந்தம் (O/L)</a></li>
+          <li><a href="tharam-12.html">தரம் 12 — உபநிடதங்கள் &amp; நடராஜ தத்துவம் (A/L)</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>ஆன்மீக வழிகள் &amp; இசை</h4>
         <ul class="footer-links">
-          <li><a href="saiva-neri.html">சிவ நெறி (178 திருமுறைப் பாடல்கள்)</a></li>
+          <li><a href="saiva-neri.html">சிவ நெறி (172 திருமுறைப் பாடல்கள்)</a></li>
           <li><a href="thirukkural.html">திருக்குறள் (185 அதிகாரப் படங்கள் &amp; இசை)</a></li>
-          <li><a href="sanmargam.html">சன்மார்க்கம் (96 அருட்பெருஞ்சோதிப் பாடல்கள்)</a></li>
-          <li><a href="murugan.html">முருக நெறி (47 கந்த சஷ்டி &amp; திருப்புகழ்)</a></li>
-          <li><a href="sakthi.html">சக்தி நெறி (23 அபிராமி அந்தாதி &amp; போற்றிகள்)</a></li>
-          <li><a href="vinayagar.html">விநாயகர் நெறி (11 கானங்கள்)</a></li>
-          <li><a href="vaishnava.html">வைணவ நெறி (40 கானங்கள்)</a></li>
-          <li><a href="youtube.html">YouTube இசை &amp; படக் களஞ்சியம்</a></li>
+          <li><a href="sanmargam.html">சன்மார்க்கம் (94 அருட்பெருஞ்சோதிப் பாடல்கள்)</a></li>
+          <li><a href="murugan.html">முருக நெறி &amp; சக்தி நெறி</a></li>
+          <li><a href="youtube.html">YouTube இசை &amp; பாடல்கள்</a></li>
         </ul>
       </div>
     </div>
@@ -670,6 +1589,37 @@
     </div>
   </footer>
 
+  <script src="assets/data/catalog.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    function switchChapter(unitNum) {
+      const panels = document.querySelectorAll('.lesson-unit-panel');
+      panels.forEach(p => p.classList.remove('active'));
+      
+      const tabs = document.querySelectorAll('.course-tab-btn');
+      tabs.forEach(t => t.classList.remove('active'));
+      
+      if (unitNum === 'all') {
+        panels.forEach(p => p.classList.add('active'));
+        const allBtn = document.getElementById('tab-btn-all');
+        if (allBtn) allBtn.classList.add('active');
+      } else if (unitNum === 'sheets') {
+        const sheetsPanel = document.getElementById('unit-panel-sheets');
+        const sheetsTab = document.getElementById('tab-btn-sheets');
+        if (sheetsPanel) sheetsPanel.classList.add('active');
+        if (sheetsTab) sheetsTab.classList.add('active');
+      } else {
+        const targetPanel = document.getElementById('unit-panel-' + unitNum);
+        const targetTab = document.getElementById('tab-btn-' + unitNum);
+        if (targetPanel) targetPanel.classList.add('active');
+        if (targetTab) targetTab.classList.add('active');
+      }
+      
+      const targetStart = document.getElementById('course-content-start');
+      if (targetStart) {
+        targetStart.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
 </body>
 </html>
