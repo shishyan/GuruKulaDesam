@@ -92,10 +92,62 @@ function closePlayer() {
 
 function toggleMobileNav() {
   const nav = document.getElementById('mainNav');
-  if (nav) nav.classList.toggle('open');
+  const toggleBtn = document.getElementById('mobileNavToggle') || document.querySelector('.mobile-toggle');
+  const overlay = document.getElementById('navOverlay');
+  if (!nav) return;
+  
+  const isOpen = nav.classList.toggle('open');
+  if (overlay) overlay.classList.toggle('open', isOpen);
+  if (toggleBtn) {
+    toggleBtn.innerHTML = isOpen ? '✕' : '☰';
+    toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+  document.body.style.overflow = isOpen ? 'hidden' : '';
 }
 
-// Close player on ESC key
+function closeMobileNav() {
+  const nav = document.getElementById('mainNav');
+  const toggleBtn = document.getElementById('mobileNavToggle') || document.querySelector('.mobile-toggle');
+  const overlay = document.getElementById('navOverlay');
+  if (nav && nav.classList.contains('open')) {
+    nav.classList.remove('open');
+    if (overlay) overlay.classList.remove('open');
+    if (toggleBtn) {
+      toggleBtn.innerHTML = '☰';
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    }
+    document.body.style.overflow = '';
+  }
+}
+
+function toggleDropdown(e) {
+  if (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+  const dropdown = document.querySelector('.nav-dropdown');
+  const toggleBtn = document.getElementById('traditionsDropdownBtn');
+  if (!dropdown) return;
+  const isOpen = dropdown.classList.toggle('open');
+  if (toggleBtn) toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+  const dropdown = document.querySelector('.nav-dropdown');
+  if (dropdown && !dropdown.contains(e.target)) {
+    dropdown.classList.remove('open');
+    const toggleBtn = document.getElementById('traditionsDropdownBtn');
+    if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+
+// Close player and menus on ESC key
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closePlayer();
+  if (e.key === 'Escape') {
+    closePlayer();
+    closeMobileNav();
+    const dropdown = document.querySelector('.nav-dropdown');
+    if (dropdown) dropdown.classList.remove('open');
+  }
 });
