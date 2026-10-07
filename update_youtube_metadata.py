@@ -183,21 +183,37 @@ def run_live_update(updates, client_secret_file, token_file):
 
     print("\nAll updates completed successfully!")
 
+def find_client_secrets(provided_path=None):
+    if provided_path and os.path.isfile(provided_path):
+        return provided_path
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    if provided_path and os.path.isdir(provided_path):
+        search_dirs = [provided_path, script_dir]
+    else:
+        search_dirs = [script_dir, os.getcwd()]
+    for d in search_dirs:
+        for f in os.listdir(d):
+            if f.startswith("client_secret") and f.endswith(".json"):
+                return os.path.join(d, f)
+    return provided_path or "client_secrets.json"
+
 def main():
     parser = argparse.ArgumentParser(description="Update Thirukkural titles and playlist on @guru-kula-desam")
     parser.add_argument("--live", action="store_true", help="Execute live updates using YouTube Data API")
-    parser.add_argument("--client-secrets", default="client_secrets.json", help="Path to OAuth client secrets JSON")
+    parser.add_argument("--client-secrets", default=None, help="Path to OAuth client secrets JSON")
     parser.add_argument("--token", default="token.json", help="Path to token cache file")
     args = parser.parse_args()
+
+    client_secrets_file = find_client_secrets(args.client_secrets)
 
     updates = load_updates()
 
     if args.live:
-        run_live_update(updates, args.client_secrets, args.token)
+        run_live_update(updates, client_secrets_file, args.token)
     else:
         run_dry_run(updates)
         print("\nNote: To run live updates with OAuth, run:")
-        print("  python update_youtube_metadata.py --live --client-secrets <path-to-client-secret.json>")
+        print("  python update_youtube_metadata.py --live")
 
 if __name__ == "__main__":
     main()

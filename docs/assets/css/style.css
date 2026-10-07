@@ -24,17 +24,26 @@
 
 body {
   font-family: 'Outfit', 'Mukta Malar', sans-serif;
-  background-color: var(--bg-dark);
+  background-color: #07080b;
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 10% 30%, rgba(224, 159, 62, 0.05) 0%, transparent 40%),
-    radial-gradient(circle at 90% 70%, rgba(230, 57, 70, 0.03) 0%, transparent 40%);
+    linear-gradient(180deg, rgba(7, 9, 13, 0.72) 0%, rgba(7, 9, 13, 0.82) 35%, rgba(7, 9, 13, 0.90) 100%),
+    url('../images/western-ghats-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--text-main);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 /* Header & Navigation */

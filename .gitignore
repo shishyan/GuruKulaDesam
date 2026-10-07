@@ -23,3 +23,25 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
+# Credentials & Tokens
+*client_secret*.json
+token.json
+client_secrets.json
+
+# Scratch files
+python
+*.txt
+*.csv
+audit_*.py
+check_*.py
+catalog_*.py
+classify_*.py
+deep_audit_*.py
+dump_*.py
+filter_*.py
+find_*.py
+inspect_*.py
+list_*.py
+print_*.py
+search_*.py
+strict_*.py

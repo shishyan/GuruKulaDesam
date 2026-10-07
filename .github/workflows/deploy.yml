@@ -25,10 +25,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Prepare site directory
+        run: |
+          if [ -d "Site" ] && [ ! -d "site" ]; then
+            cp -r Site site
+          elif [ -d "site" ] && [ ! -d "Site" ]; then
+            cp -r site Site
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'Site'
+          path: 'site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
