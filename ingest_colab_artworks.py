@@ -70,12 +70,15 @@ NEW_ARTWORK_MAP = {
 
 def find_zip_file():
     candidates = [
-        ROOT / "gurukuladesam_artworks.zip",
+        ROOT / "gurukuladesam_film_artworks_a100.zip",
         ROOT / "gurukuladesam_master_artworks.zip",
-        Path.home() / "Downloads" / "gurukuladesam_artworks.zip",
+        ROOT / "gurukuladesam_artworks.zip",
+        Path.home() / "Downloads" / "gurukuladesam_film_artworks_a100.zip",
         Path.home() / "Downloads" / "gurukuladesam_master_artworks.zip",
-        Path.home() / "Desktop" / "gurukuladesam_artworks.zip",
-        Path.home() / "Desktop" / "gurukuladesam_master_artworks.zip"
+        Path.home() / "Downloads" / "gurukuladesam_artworks.zip",
+        Path.home() / "Desktop" / "gurukuladesam_film_artworks_a100.zip",
+        Path.home() / "Desktop" / "gurukuladesam_master_artworks.zip",
+        Path.home() / "Desktop" / "gurukuladesam_artworks.zip"
     ]
     for c in candidates:
         if c.exists() and c.stat().st_size > 1000:
