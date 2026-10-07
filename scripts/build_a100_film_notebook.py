@@ -67,28 +67,38 @@ def build():
         ]
     })
 
-    # Cell 3: Step 2: Initialize FLUX.1-schnell
+    # Cell 3: Step 2: Initialize Engine (Auto-detects T4 vs A100)
     cells.append({
         "cell_type": "code",
         "execution_count": None,
         "metadata": {"id": "step2_load_pipeline"},
         "outputs": [],
         "source": [
-            "# Step 2: Initialize FLUX.1-schnell Pipeline\n",
-            "ENGINE = 'FLUX-schnell'  # Default for A100; change to 'SDXL-Lightning' if desired\n",
-            "\n",
+            "# Step 2: Initialize Generation Pipeline (Auto-detects T4 vs A100)\n",
             "import torch\n",
+            "\n",
+            "# Auto-detect GPU and select optimal engine\n",
+            "vram_gb = torch.cuda.get_device_properties(0).total_memory / 1e9 if torch.cuda.is_available() else 0\n",
+            "device_name = torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU'\n",
+            "\n",
+            "if vram_gb >= 24:\n",
+            "    ENGINE = 'FLUX-schnell'  # A100 / L4 / V100 with >= 24GB VRAM\n",
+            "    print(f'🚀 {device_name} detected ({vram_gb:.1f} GB VRAM) -> Using FLUX.1-schnell (12B flow transformer in bfloat16)!')\n",
+            "else:\n",
+            "    ENGINE = 'SDXL-Lightning'  # T4 GPU (15GB VRAM) — fast 4-step, zero OOM risk\n",
+            "    print(f'⚡ {device_name} detected ({vram_gb:.1f} GB VRAM) -> Automatically using SDXL-Lightning (4-step ultra-fast, ~2.5s/image, no OOM)!')\n",
+            "\n",
             "pipe = None\n",
             "\n",
             "if ENGINE == 'FLUX-schnell':\n",
-            "    print('⏳ Loading FLUX.1-schnell (12B Flow Transformer in bfloat16)...')\n",
+            "    print('⏳ Loading FLUX.1-schnell...')\n",
             "    from diffusers import FluxPipeline\n",
             "    pipe = FluxPipeline.from_pretrained(\n",
             "        'black-forest-labs/FLUX.1-schnell',\n",
             "        torch_dtype=torch.bfloat16\n",
             "    )\n",
             "    pipe.to('cuda')\n",
-            "    print('✅ FLUX.1-schnell ready on A100 GPU!')\n",
+            "    print('✅ FLUX.1-schnell ready!')\n",
             "else:\n",
             "    print('⏳ Loading SDXL-Lightning 4-step Pipeline...')\n",
             "    from diffusers import StableDiffusionXLPipeline, UNet2DConditionModel, EulerDiscreteScheduler\n",
@@ -102,7 +112,7 @@ def build():
             "    unet.load_state_dict(load_file(hf_hub_download(repo, ckpt), device='cuda'))\n",
             "    pipe = StableDiffusionXLPipeline.from_pretrained(base, unet=unet, torch_dtype=torch.float16, variant='fp16').to('cuda')\n",
             "    pipe.scheduler = EulerDiscreteScheduler.from_config(pipe.scheduler.config, timestep_spacing='trailing')\n",
-            "    print('✅ SDXL-Lightning ready!')\n"
+            "    print('✅ SDXL-Lightning ready on T4 GPU! (~2.5s per image)')\n"
         ]
     })
 
