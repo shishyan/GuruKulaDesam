@@ -986,10 +986,10 @@ const UNIVERSAL_SEARCH_ITEMS = [
   { title: "இணையப் பள்ளி போர்டல் (Vedic-Modern Online School LMS)", desc: "21-ஆம் நூற்றாண்டு அறிவியல்-வேத சங்கமம், மாணவர் போர்டல் & படிப்பு அரங்கம்", url: "school.html", category: "பள்ளி", badge: "Online School" },
   
   // Degrees
-  { title: "B.A. Grihastha Dharma (DEG-BA-GRI)", desc: "இல்லற தர்ம இளங்கலை — அறம், இல்லற மேலாண்மை & சான்றாண்மை விழுமியங்கள்", url: "higher-studies.html#degBaGri", category: "உயர்கல்வி", badge: "B.A. பட்டம்" },
-  { title: "M.A. Applied Domestic Vedanta (DEG-MA-GRI)", desc: "பயன்முறை இல்லற வேதாந்த முதுகலை — சங்கர அத்வைதம், ராமானுஜ விசிஷ்டாத்வைதம் & இல்லற சமரசம்", url: "higher-studies.html#degMaGri", category: "உயர்கல்வி", badge: "M.A. பட்டம்" },
-  { title: "Ph.D. in Family Self-Sacrifice as Fastest Vehicle for Nirvana (DOC-PHD-GRI)", desc: "இல்லறத் தியாக அன்பே அதிவேக முக்தி தரும் பெருவழி — முனைவர் பட்ட ஆய்வுநெறி", url: "higher-studies.html#docPhdGri", category: "உயர்கல்வி", badge: "Ph.D. ஆய்வு" },
-  { title: "Fellowship in Applied Domestic Dharma (FEL-GRI-01)", desc: "சான்றோன் இல்லற ஆய்வு கூட்டுறவு — தலைமுறை தலைமுறையாக தர்மத்தை நிலைநிறுத்தும் சாசனம்", url: "higher-studies.html#felGri01", category: "உயர்கல்வி", badge: "Fellowship" },
+  { title: "B.A. Grihastha Dharma (DEG-BA-GRI)", desc: "இல்லற தர்ம இளங்கலை — அறம், இல்லற மேலாண்மை & சான்றாண்மை விழுமியங்கள்", url: "higher-studies.html", category: "உயர்கல்வி", badge: "B.A. பட்டம்" },
+  { title: "M.A. Applied Domestic Vedanta (DEG-MA-GRI)", desc: "பயன்முறை இல்லற வேதாந்த முதுகலை — சங்கர அத்வைதம், ராமானுஜ விசிஷ்டாத்வைதம் & இல்லற சமரசம்", url: "higher-studies.html", category: "உயர்கல்வி", badge: "M.A. பட்டம்" },
+  { title: "Ph.D. in Family Self-Sacrifice as Fastest Vehicle for Nirvana (DOC-PHD-GRI)", desc: "இல்லறத் தியாக அன்பே அதிவேக முக்தி தரும் பெருவழி — முனைவர் பட்ட ஆய்வுநெறி", url: "higher-studies.html", category: "உயர்கல்வி", badge: "Ph.D. ஆய்வு" },
+  { title: "Fellowship in Applied Domestic Dharma (FEL-GRI-01)", desc: "சான்றோன் இல்லற ஆய்வு கூட்டுறவு — தலைமுறை தலைமுறையாக தர்மத்தை நிலைநிறுத்தும் சாசனம்", url: "higher-studies.html", category: "உயர்கல்வி", badge: "Fellowship" },
 
   // Grades 1-12
   { title: "தரம் 1 — பாலப் பருவ வாழ்வியல் நெறி (Grade 1)", desc: "பாலப் பருவ அன்பு, பெற்றோர் பணிவிடை & நற்பண்புத் தொடக்கம்", url: "tharam-1.html", category: "பள்ளிக் கல்வி", badge: "Grade 1" },
