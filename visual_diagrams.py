@@ -640,6 +640,13 @@ DIAGRAM_MAP = {
     "karma_wheel": generate_svg_karma_wheel,
 }
 
+# Integrate expanded diagram suite
+try:
+    from visual_diagrams_expanded import EXPANDED_DIAGRAM_MAP
+    DIAGRAM_MAP.update(EXPANDED_DIAGRAM_MAP)
+except ImportError:
+    pass
+
 def get_diagram_for_topic(diagram_key):
     if diagram_key in DIAGRAM_MAP:
         return DIAGRAM_MAP[diagram_key]()
