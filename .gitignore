@@ -43,5 +43,8 @@ find_*.py
 inspect_*.py
 list_*.py
 print_*.py
-search_*.py
-strict_*.py
+# Raw video renders and heavy production scratch
+renders/
+production/*.mp4
+production/temp*/
+source/youtube/

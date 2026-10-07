@@ -200,7 +200,8 @@
 
       <div class="vedic-verse-box">
         <div class="tamil">அறன்வலியுறுத்தல்: "மனத்துக்கண் மாசிலன் ஆதல் அனைத்தறன் ஆகுல நீர பிற" (குறள் 34)</div>
-        <div class="meaning">பொருள்: மனத்தில் எந்தக் குற்றமும் இல்லாமல் தூய்மையாக இருப்பதே உண்மையான அறம்; மற்ற வெளிப்பகட்டுகள் அனைத்தும் வெறும் ஆரவாரமே.
+        <div class="meaning">பொருள்: மனத்தில் எந்தக் குற்றமும் இல்லாமல் தூய்மையாக இருப்பதே உண்மையான அறம்; மற்ற வெளிப்பகட்டுகள் அனைத்தும் வெறும் ஆரவாரமே.</div>
+      </div>
 
       <div class="canonical-grid">
         <div class="canonical-card">
@@ -232,6 +233,101 @@
       </p>
     </div>
 
+    <!-- Master Cinema Screening Room for Full Films & Micro-Learning Shorts -->
+    <div class="thirukkural-cinema-theatre" id="thirukkuralCinemaRoom" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.98), rgba(24, 37, 64, 0.95)); border: 1px solid rgba(229, 169, 60, 0.4); border-radius: 20px; padding: 28px; margin: 30px 0; box-shadow: 0 15px 45px rgba(0, 0, 0, 0.65);">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:20px; border-bottom:1px solid rgba(229, 169, 60, 0.25); padding-bottom:14px;">
+        <div>
+          <span style="background: rgba(229, 169, 60, 0.15); color: var(--gold-bright); border: 1px solid rgba(229, 169, 60, 0.3); font-size: 0.78rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; display: inline-block; margin-bottom: 6px;">🎬 உயர் வரையறை சினிமா திரைப்பட அரங்கம் (Cinematic Screening Room)</span>
+          <h2 style="font-size: 1.6rem; color: #ffffff; margin: 0; display: flex; align-items: center; gap: 10px;">
+            <span>திருக்குறள் காட்சிப் பட அரங்கம் (Thirukkural Cinema Room)</span>
+          </h2>
+          <p style="color: #94a3b8; font-size: 0.92rem; margin-top: 4px;">அறம், தவம், நிர்வாகம் மற்றும் விழிப்புணர்வை விளக்கும் முழு சினிமாப் படங்களும் வேகக் கற்றல் குறும்படங்களும்.</p>
+        </div>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <span style="font-size:0.85rem; color:#2dd4bf; background:rgba(45,212,191,0.1); border:1px solid rgba(45,212,191,0.3); padding:6px 14px; border-radius:20px; font-weight:600;">⚡ வேகக் கற்றல் (Fast Learning)</span>
+        </div>
+      </div>
+
+      <!-- Chapter Tabs -->
+      <div class="cinema-chapter-tabs" style="display: flex; gap: 10px; overflow-x: auto; padding-bottom: 14px; margin-bottom: 20px;">
+        <button type="button" class="cinema-tab-btn active" id="cin-tab-26" onclick="selectCinemaFilm(26)" style="background:rgba(229,169,60,0.15); border:1px solid var(--accent-gold); color:var(--accent-gold); padding:10px 16px; border-radius:10px; cursor:pointer; text-align:left; white-space:nowrap;">
+          <span style="font-weight:700; display:block;">அதிகாரம் 26: புலால் உண்ணாமை</span>
+          <span style="font-size:0.78rem; opacity:0.85;">அஹிம்சை &amp; ஜீவகாருண்யம் (46 காட்சிகள்)</span>
+        </button>
+        <button type="button" class="cinema-tab-btn" id="cin-tab-27" onclick="selectCinemaFilm(27)" style="background:rgba(18,22,31,0.9); border:1px solid rgba(255,255,255,0.1); color:#94a3b8; padding:10px 16px; border-radius:10px; cursor:pointer; text-align:left; white-space:nowrap;">
+          <span style="font-weight:700; display:block;">அதிகாரம் 27: தவம்</span>
+          <span style="font-size:0.78rem; opacity:0.85;">ஆழ்ந்த நோன்பும் மனக் கட்டுப்பாடும்</span>
+        </button>
+        <button type="button" class="cinema-tab-btn" id="cin-tab-52" onclick="selectCinemaFilm(52)" style="background:rgba(18,22,31,0.9); border:1px solid rgba(255,255,255,0.1); color:#94a3b8; padding:10px 16px; border-radius:10px; cursor:pointer; text-align:left; white-space:nowrap;">
+          <span style="font-weight:700; display:block;">அதிகாரம் 52: தெரிந்து வினையாடல்</span>
+          <span style="font-size:0.78rem; opacity:0.85;">தகுதியறிந்து பொறுப்பளிக்கும் நிர்வாகம்</span>
+        </button>
+        <button type="button" class="cinema-tab-btn" id="cin-tab-54" onclick="selectCinemaFilm(54)" style="background:rgba(18,22,31,0.9); border:1px solid rgba(255,255,255,0.1); color:#94a3b8; padding:10px 16px; border-radius:10px; cursor:pointer; text-align:left; white-space:nowrap;">
+          <span style="font-weight:700; display:block;">அதிகாரம் 54: பொச்சாவாமை</span>
+          <span style="font-size:0.78rem; opacity:0.85;">மறதியின்மையும் விழிப்புணர்வும்</span>
+        </button>
+        <button type="button" class="cinema-tab-btn" id="cin-tab-57" onclick="selectCinemaFilm(57)" style="background:rgba(18,22,31,0.9); border:1px solid rgba(255,255,255,0.1); color:#94a3b8; padding:10px 16px; border-radius:10px; cursor:pointer; text-align:left; white-space:nowrap;">
+          <span style="font-weight:700; display:block;">அதிகாரம் 57: வெருவந்த செய்யாமை</span>
+          <span style="font-size:0.78rem; opacity:0.85;">இன்சொல்லும் நீதியும் காக்கும் தலைமை</span>
+        </button>
+        <button type="button" class="cinema-tab-btn" id="cin-tab-61" onclick="selectCinemaFilm(61)" style="background:rgba(18,22,31,0.9); border:1px solid rgba(255,255,255,0.1); color:#94a3b8; padding:10px 16px; border-radius:10px; cursor:pointer; text-align:left; white-space:nowrap;">
+          <span style="font-weight:700; display:block;">அதிகாரம் 61: மடியின்மை</span>
+          <span style="font-size:0.78rem; opacity:0.85;">சோம்பலை வென்று உழைக்கும் மாண்பு</span>
+        </button>
+      </div>
+
+      <!-- Main Cinema Display Grid (Video Screen + Detail & Lyrics Pane) -->
+      <div class="cinema-display-grid" style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 24px; align-items: start;">
+        
+        <!-- Video Player Column -->
+        <div>
+          <div style="position: relative; border-radius: 16px; overflow: hidden; background: #000; box-shadow: 0 12px 30px rgba(0,0,0,0.7); border: 1px solid rgba(255,255,255,0.1);">
+            <video id="cinemaVideoElement" controls preload="metadata" poster="assets/images/lessons/noble_feast_ahimsa.jpg" style="width: 100%; max-height: 480px; display: block;" playsinline>
+              <source id="cinemaVideoSource" src="assets/videos/adhikaram_26_pulaal_unnaamai.mp4" type="video/mp4">
+              உங்கள் உலாவி வீடியோ இயக்கத்தை ஆதரிக்கவில்லை.
+            </video>
+          </div>
+          
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 14px;">
+            <div style="display: flex; gap: 8px;">
+              <button type="button" class="cinema-mode-btn active" id="btnModeFull" onclick="setCinemaMode('full')" style="background: rgba(229,169,60,0.2); border: 1px solid var(--accent-gold); color: #fff; padding: 6px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 700; cursor: pointer;">🎬 முழு திரைப்படம் (Full Film)</button>
+              <button type="button" class="cinema-mode-btn" id="btnModeShort" onclick="setCinemaMode('short')" style="background: rgba(56,189,248,0.12); border: 1px solid rgba(56,189,248,0.3); color: #38bdf8; padding: 6px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 700; cursor: pointer;">⚡ 40 வினாடி குறும்படம் (Quick Short)</button>
+            </div>
+            <span style="font-size: 0.82rem; color: #94a3b8;" id="cinemaDurationBadge">கால அளவு: ~4.5 நிமிடங்கள் • 1080p HD</span>
+          </div>
+        </div>
+
+        <!-- Chapter Treatise & Kural Breakdown Column -->
+        <div style="background: rgba(11, 16, 26, 0.75); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 22px; height: 100%;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+            <span class="wbs-code" id="cinemaChapterBadge">அதிகாரம் 26</span>
+            <span style="color: #2dd4bf; font-size: 0.82rem; font-weight: 700;" id="cinemaCategoryBadge">அறத்துப்பால் • துறவறவியல்</span>
+          </div>
+          <h3 style="font-size: 1.35rem; color: #ffffff; margin-bottom: 6px;" id="cinemaChapterTitle">புலால் உண்ணாமை (Abstinence from Flesh)</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px;" id="cinemaChapterDesc">
+            பிற உயிர்களைத் தன்னுயிர் போல் கருதி, அவைகளின் உடலைத் தன் உடலை வளர்க்க உண்ணாது வாழும் மாபெரும் ஜீவகாருண்ய அறம்.
+          </p>
+
+          <div style="background: rgba(229,169,60,0.08); border-left: 3px solid var(--accent-gold); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px;">
+            <div style="font-size: 0.8rem; color: var(--gold-soft); font-weight: 700; margin-bottom: 4px;">🪔 அதிகாரத்தின் மணிமகுடக் குறள் (Key Kural):</div>
+            <div style="font-size: 1.02rem; color: #ffffff; font-weight: 700; line-height: 1.6;" id="cinemaKuralVerse">
+              "தன்னுன் பெருக்கற்குத் தான்பிறி தூனுண்ணும்<br>எங்ஙனம் ஆளும் அருள்" (குறள் 251)
+            </div>
+            <div style="font-size: 0.86rem; color: #cbd5e1; margin-top: 6px; line-height: 1.5;" id="cinemaKuralMeaning">
+              பொருள்: தன் உடலைப் பருக்கச் செய்வதற்காகத் தான் மற்றோர் உயிரின் உடலைத் தின்னும் மனிதன், எவ்வாறு அருளுடையவனாக இருக்க முடியும்?
+            </div>
+          </div>
+
+          <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 10px; padding: 12px 16px;">
+            <div style="font-size: 0.82rem; color: #38bdf8; font-weight: 700; margin-bottom: 4px;">🌿 வாழ்வியல் நெறி &amp; இல்லற முக்திப் பாடம்:</div>
+            <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.6; margin: 0;" id="cinemaLivingLesson">
+              அனைத்து உயிர்களையும் ஆதரித்து, விருந்தோம்பி, எவ்வுயிர்க்கும் துன்பம் விளைவிக்காத சாத்வீக வாழ்வை இல்லறத்தில் வாழ்வதே அதிவேக முக்தியாகும்.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <!-- Interactive Media Catalog Section -->
     <h2 class="section-divider-title">இசை & திரைப்படக் களஞ்சியம் (185 படைப்புகள்)</h2>
@@ -328,6 +424,174 @@
   <script src="assets/js/main.js"></script>
   <script>
     const PAGE_ITEMS = [{"id": "02C8glMmetw", "title": "அதிகாரம் 1 - கடவுள் வாழ்த்து (அகர முதல) | Agara Muthala | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "SWAjAbur-TQ", "title": "அதிகாரம் 1 - கடவுள் வாழ்த்து | Kadavul Vazhthu Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "JDqbpISJjIA", "title": "அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 1)", "type": "film", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "KFtS403RfbY", "title": "அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 1) | Nenjari Vuruthal Part 1 Cinematic Film", "type": "film", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "7wJJCQrYo04", "title": "அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 2)", "type": "film", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "lpOcAVJIax0", "title": "அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 2) | Compassion Journey Cinematic Film", "type": "film", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "R8OyFbqJJEw", "title": "அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 2) | Nenjari Vuruthal Part 2 Cinematic Film", "type": "film", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "aSQrSHA4YtU", "title": "அதிகாரம் 16 - பொறையுடைமை", "type": "film", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "KI7uUFiJO1E", "title": "அதிகாரம் 16 - பொறையுடைமை | Patience Story Cinematic Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "R82hz_s2YGQ", "title": "அதிகாரம் 16 - பொறையுடைமை | Porai Udaimai Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "f1jxgAbXcdE", "title": "அதிகாரம் 2 - வான் சிறப்பு | Vaan Sirappu Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "0fD-z3s_g2A", "title": "அதிகாரம் 25 - அருளுடைமை | Aruludaimai Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "wPT_1jgn2Ys", "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam Symphony Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "tzAYLpH3TkI", "title": "அதிகாரம் 29 - கள்ளாமை (Symphony) | Kallaamai Symphony Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "9EAskIS2xuc", "title": "அதிகாரம் 29 - கள்ளாமை | Kallaamai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "djYooU1LmGk", "title": "அதிகாரம் 30 - வாய்மை (Remix) | Vaaymai Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "xcUlgFsrepU", "title": "அதிகாரம் 31 - வெகுளாமை | Vegulaamai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "Y3xujLwXuBs", "title": "அதிகாரம் 32 - இன்னா செய்யாமை (இன்னா செய்தாரை)", "type": "film", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "7npbkuQwjEE", "title": "அதிகாரம் 32 - இன்னா செய்யாமை (இன்னா செய்தாரை) | Inna Seidharai Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "fRNAsDZr3QA", "title": "அதிகாரம் 32 - இன்னா செய்யாமை (இன்னா செய்தாரை) | Kindness Story Cinematic Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "L6DWSjPqoH0", "title": "அதிகாரம் 33 - கொல்லாமை | Kollaamai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "JreH0hqB2po", "title": "அதிகாரம் 34 - நிலையாமை | Nilaiyaamai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "6MaQYObW8OQ", "title": "அதிகாரம் 35 - துறவு (Female) | Thuravu Female Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "8AEEcskF-Jo", "title": "அதிகாரம் 35 - துறவு | Thuravu | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "9NIv50lV4-M", "title": "அதிகாரம் 36 - மெய்யுணர்தல் | Meyyunarithal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "HezzLu_n6qE", "title": "அதிகாரம் 37 - அவாவறுத்தல் | Avaa Aruththal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "dD_cXqU_XVQ", "title": "அதிகாரம் 38 - ஊழ் (ஊழ் வினை) | Oozh Vinai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "mCwNR1Bytj4", "title": "அதிகாரம் 39 - இறைமாட்சி | Irai Maatchi | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "KZxknhbVIk0", "title": "அதிகாரம் 40 - கல்வி | Kalvi Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "Gnu-TzZfe7A", "title": "அதிகாரம் 41 - கல்லாமை | Kallaamai Learning | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "vbMywONB5Wc", "title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) (Remix) | Kelvi Selvam Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "9kHN9Dzrv7o", "title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) | Kelvi Selvam | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "xVyPWHTMXHw", "title": "அதிகாரம் 43 - அறிவுடைமை (Remix) | Arivudaimai Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "_Q2t-TcmDT4", "title": "அதிகாரம் 43 - அறிவுடைமை | Arivudaimai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "VVkl8bORJXg", "title": "அதிகாரம் 44 - குற்றங்கடிதல் (Remix) | Kuttrangadithal Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "B60TIM5LLvY", "title": "அதிகாரம் 44 - குற்றங்கடிதல் | Kuttrankadithal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "HRN77i6Kio8", "title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Remix)", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "wylRNpaJNmY", "title": "அதிகாரம் 46 - சிற்றினம் சேராமை (Remix) | Sittrinam Seramai Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "2U45AXlx7DA", "title": "அதிகாரம் 46 - சிற்றினம் சேராமை | Sitrinam Seraamai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "BfgGC7DsHMI", "title": "அதிகாரம் 47 - தெரிந்து செயல்வகை | Therinthu Seyalvagai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "KLsXZa28uyE", "title": "அதிகாரம் 48 - வலியறிதல் (Remix) | Valiyarithal Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "dVYI3ZgpDC8", "title": "அதிகாரம் 49 - காலமறிதல் (Remix) | Kaalamarithal Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "DIDV-3cHhag", "title": "அதிகாரம் 49 - காலமறிதல் | Kaalamarithal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "C05GEfkJZaY", "title": "அதிகாரம் 5 - இல்வாழ்க்கை | Ilvazhkkai Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "oEQ3sx6ujQc", "title": "அதிகாரம் 50 - இடனறிதல் (Remix) | Idanarithal Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "817Wxel4F5s", "title": "அதிகாரம் 50 - இடனறிதல் | Idanarithal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "bH23l5vVgL8", "title": "அதிகாரம் 51 - தெரிந்து தெளிதல் | Therinthu Thelithal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "Nb1nAcrGNeU", "title": "அதிகாரம் 53 - சுற்றந்தழால் | Suttranthazhaal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "lCBVB2Yj_7U", "title": "அதிகாரம் 55 - செங்கோன்மை | Sengonmai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "wzdoeFDq0iQ", "title": "அதிகாரம் 56 - கொடுங்கோன்மை | Kodungonmai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "mv7AezrLzoU", "title": "அதிகாரம் 58 - கண்ணோட்டம் | Kannottam | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "TQtjI3EepPQ", "title": "அதிகாரம் 59 - ஒற்றாடல் | Ottraadal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "hCHBPd8BH8A", "title": "அதிகாரம் 6 - வாழ்க்கைத் துணைநலம் | Vaazkkai Thunai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "XN5ENUbmSOE", "title": "அதிகாரம் 60 - ஊக்கமுடைமை | Ookkamudaimai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "zj4_pEqa_cs", "title": "அதிகாரம் 62 - ஆள்வினையுடைமை | Aalvinaiyudaimai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "QXWB2raWKXE", "title": "அதிகாரம் 63 - இடுக்கண் அழியாமை (Remix) | Idukkan Azhiyamai Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "daM5VkysZqg", "title": "அதிகாரம் 63 - இடுக்கண் அழியாமை | Idukkan Azhiyaamai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "JvonvWQHKQY", "title": "அதிகாரம் 64 - அமைச்சு (Remix) | Amaichu Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "VENn3ip3XPA", "title": "அதிகாரம் 64 - அமைச்சு | Amaichu | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "rOowxP53oWA", "title": "அதிகாரம் 65 - சொல்வன்மை (Remix) | Solvanmai Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "q6Rg5CUbOD0", "title": "அதிகாரம் 65 - சொல்வன்மை | Solvanmai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "D95woYqPoPI", "title": "அதிகாரம் 66 - வினைத்தூய்மை (Remix) | Vinai Thooymai Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "0WurYH-hkNM", "title": "அதிகாரம் 67 - வினைத்திட்பம் (Remix) | Vinai Thitpam Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "3yB_oTqh6Jk", "title": "அதிகாரம் 68 - வினைசெயல்வகை (Female) | Vinai Seyalvagai Female Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "x3CyxNH5bpQ", "title": "அதிகாரம் 69 - தூது (Remix) | Thoothu Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "nR7R0TWyZHk", "title": "அதிகாரம் 69 - தூது | Thoothu | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "dthZW-Wo8IU", "title": "அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Female)", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "2Qs07DTJvvM", "title": "அதிகாரம் 71 - குறிப்பறிதல் (Remix) | Kuripparithal Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "dBIUA3fKBJ0", "title": "அதிகாரம் 71 - குறிப்பறிதல் | Kuripparithal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "CEh2a8KUIKU", "title": "அதிகாரம் 72 - அவையறிதல் | Avaiyarithal | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "wyDIU74Rs7Y", "title": "அதிகாரம் 73 - அவையஞ்சாமை (Female) | Avai Anjaamai Female Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "W4LQ0TT2cRA", "title": "அதிகாரம் 73 - அவையஞ்சாமை | Avai Anjaamai | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "gjo0AfKBzsU", "title": "அதிகாரம் 74 - நாடு (Remix) | Naadu Remix Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "irx33IVWrPY", "title": "அதிகாரம் 75 - அரண் (Symphony) | Aran Symphony Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "6r6TpY-sgbw", "title": "அதிகாரம் 75 - அரண் | Aran | Full Song Film", "type": "film", "playlists": ["திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "cR_u-JuGJAU", "title": "அதிகாரம் 76 - பொருள் செயல்வகை | Porul Seyalvagai | Full Song Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "79u01V3wbZc", "title": "அதிகாரம் 78 - படைச்செருக்கு | Padaicherukku | Full Song Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "jdvz-yoK5eI", "title": "அதிகாரம் 79 - நட்பு | Natpu | Full Song Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "jO2i4bcZ2ts", "title": "அதிகாரம் 8 - அன்புடைமை | Anbudaimai Cinematic Thirukkural Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "sAgX9WX86Rw", "title": "அதிகாரம் 80 - நட்பாராய்தல் | Natpaaraaythal | Full Song Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "778r-nAUX9Q", "title": "அதிகாரம் 81 - பழைமை | Pazhaimai | Full Song Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "4zff_qi_G1E", "title": "அதிகாரம் 82 - தீ நட்பு | Thee Natpu | Full Song Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "8uX2yl_EnMI", "title": "அதிகாரம் 83 - கூடா நட்பு | Kooda Natpu | Full Song Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "91RgQ8AygF4", "title": "அதிகாரம் 84 - பேதைமை | Pethaimai | Full Song Film", "type": "film", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "QXhT9uoA7_w", "title": "அதிகாரம் 1 - கடவுள் வாழ்த்து (அகர முதல) (Agara Muthala ( எழுத்தெல்லாம்)", "type": "audio", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "tX4JtRSOuxE", "title": "அதிகாரம் 2 - வான் சிறப்பு (Vaan Sirappu)", "type": "audio", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "6ofQ9hrD1RQ", "title": "அதிகாரம் 6 - வாழ்க்கைத் துணைநலம் (Vaazkkai Thunai)", "type": "audio", "playlists": ["Discography", "Other Songs", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "jBA9wlyNjAE", "title": "அதிகாரம் 64 - அமைச்சு (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "FGFVertqRUU", "title": "அதிகாரம் 64 - அமைச்சு (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "IiZoud1sP2o", "title": "அதிகாரம் 75 - அரண் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "YBmfJyQNSCY", "title": "அதிகாரம் 75 - அரண் (Symphony)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "FkQqysk6vmE", "title": "அதிகாரம் 43 - அறிவுடைமை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "bUepGv6PJQA", "title": "அதிகாரம் 43 - அறிவுடைமை (Pop)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "0bz1myKXoJQ", "title": "அதிகாரம் 43 - அறிவுடைமை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "kdZSlrXEfvs", "title": "அதிகாரம் 73 - அவையஞ்சாமை (Female)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "FrZmyvY3sEc", "title": "அதிகாரம் 73 - அவையஞ்சாமை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "t9Ke0-KMTyM", "title": "அதிகாரம் 73 - அவையஞ்சாமை (Symphony)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "9mOpq9daQVs", "title": "அதிகாரம் 72 - அவையறிதல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "HxxLl5p1t0A", "title": "அதிகாரம் 72 - அவையறிதல் (Sad)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "um09tyT-2p0", "title": "அதிகாரம் 62 - ஆள்வினையுடைமை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "37qaN4sG53k", "title": "அதிகாரம் 62 - ஆள்வினையுடைமை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "L-FvFZeT_cQ", "title": "அதிகாரம் 50 - இடனறிதல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "0DoegY9d0ZM", "title": "அதிகாரம் 50 - இடனறிதல் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "B9N2j7r2KkI", "title": "அதிகாரம் 63 - இடுக்கண் அழியாமை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "ulW6fg4lkYA", "title": "அதிகாரம் 63 - இடுக்கண் அழியாமை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "nHj4Q196kU4", "title": "அதிகாரம் 60 - ஊக்கமுடைமை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "FXMVQIidbJU", "title": "அதிகாரம் 60 - ஊக்கமுடைமை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "cn776n6oKXQ", "title": "அதிகாரம் 59 - ஒற்றாடல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "tj_5hsasdyU", "title": "அதிகாரம் 59 - ஒற்றாடல் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "SI8ItN6nqck", "title": "அதிகாரம் 58 - கண்ணோட்டம் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "Vj6wcfC3rPk", "title": "அதிகாரம் 58 - கண்ணோட்டம் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "E7yfNOiwJmM", "title": "அதிகாரம் 58 - கண்ணோட்டம் (Symphony)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "h4Pc0KxvnRo", "title": "அதிகாரம் 29 - கள்ளாமை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "jXOalu0JJoA", "title": "அதிகாரம் 29 - கள்ளாமை (Symphony)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "diUv8fkOqv0", "title": "அதிகாரம் 49 - காலமறிதல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "cUt716Zafy0", "title": "அதிகாரம் 49 - காலமறிதல் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "6hfla_PRW40", "title": "அதிகாரம் 71 - குறிப்பறிதல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "GN181JJ1lXU", "title": "அதிகாரம் 71 - குறிப்பறிதல் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "K35B1jST2xw", "title": "அதிகாரம் 71 - குறிப்பறிதல் (Symphony)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "2_TfLljo1qg", "title": "அதிகாரம் 44 - குற்றங்கடிதல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "OzejLLvDq5s", "title": "அதிகாரம் 44 - குற்றங்கடிதல் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "mvOSVEFhvDc", "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "NxZf0eRutEY", "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "3CICxCn-4A0", "title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "r75xdfETSbE", "title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "tqF2NBWp6_8", "title": "அதிகாரம் 56 - கொடுங்கோன்மை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "01g0sJdaL2I", "title": "அதிகாரம் 56 - கொடுங்கோன்மை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "5-z9v-1INWg", "title": "அதிகாரம் 46 - சிற்றினம் சேராமை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "UyCe3KLqY_8", "title": "அதிகாரம் 46 - சிற்றினம் சேராமை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "pTxTsQzF8Xs", "title": "அதிகாரம் 53 - சுற்றந்தழால் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "9-SvikTz2FU", "title": "அதிகாரம் 53 - சுற்றந்தழால் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "sScywbUNArA", "title": "அதிகாரம் 55 - செங்கோன்மை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "5coBrJy6a5M", "title": "அதிகாரம் 55 - செங்கோன்மை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "NIvQ6yD1wnY", "title": "அதிகாரம் 65 - சொல்வன்மை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "q2oGlYiV-qg", "title": "அதிகாரம் 65 - சொல்வன்மை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "_Ceq0AzIQ9c", "title": "அதிகாரம் 40 - கல்வி", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "EChaj0wXk_0", "title": "அதிகாரம் 25 - அருளுடைமை", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "C7PTFCAFIRI", "title": "அதிகாரம் 37 - அவா அறுத்தல்", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "K6mhIh64XE8", "title": "அதிகாரம் 39 - இறைமாட்சி", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "scUcWDtCge8", "title": "அதிகாரம் 38 - ஊழ் (ஊழ் வினை)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "kA_mQ4bRB2E", "title": "அதிகாரம் 1 - கடவுள் வாழ்த்து", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "9YAr421Ft00", "title": "அதிகாரம் 41 - கல்லாமை", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "rBeSH7tNEzA", "title": "அதிகாரம் 33 - கொல்லாமை", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "IEk-wwY3rC8", "title": "அதிகாரம் 27 - தவம்", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "YL6ocN5OMzI", "title": "அதிகாரம் 34 - நிலையாமை (2026)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "h2q-ADrbBc4", "title": "அதிகாரம் 26 - புலால் உண்ணாமை", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "A86cP9ae6Vs", "title": "அதிகாரம் 36 - மெய்யுணர்தல்", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "WM8EPZ4KK2s", "title": "அதிகாரம் 31 - வெகுளாமை (2026)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "lneosghJWgs", "title": "அதிகாரம் 8 - அன்புடைமை", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "v_dsHTOvKP8", "title": "அதிகாரம் 5 - இல்வாழ்க்கை", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "QAv04nxeH4c", "title": "அதிகாரம் 35 - துறவு (Female)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "WKCMHUFbf2Q", "title": "அதிகாரம் 35 - துறவு (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "LjiR9PIRl8o", "title": "அதிகாரம் 35 - துறவு (Rock)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "rq7PXPBI7SA", "title": "அதிகாரம் 35 - துறவு (Symphony)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "aBA50x-gDME", "title": "அதிகாரம் 69 - தூது (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "RY7nPGorS94", "title": "அதிகாரம் 69 - தூது (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "mpgnALSm7wk", "title": "அதிகாரம் 47 - தெரிந்து செயல்வகை (Female)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "OqRZLEMvx8s", "title": "அதிகாரம் 47 - தெரிந்து செயல்வகை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "hrg_nAlW7VQ", "title": "அதிகாரம் 51 - தெரிந்து தெளிதல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "tLt9J-X9WOE", "title": "அதிகாரம் 51 - தெரிந்து தெளிதல் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "5uRYFxhT32k", "title": "அதிகாரம் 52 - தெரிந்து வினையாடல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "F-aVgFOdKFo", "title": "அதிகாரம் 52 - தெரிந்து வினையாடல் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "nf8EO1GdKlY", "title": "அதிகாரம் 74 - நாடு (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "RAUafMVpT5k", "title": "அதிகாரம் 74 - நாடு (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "aTFvlXMPBSE", "title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "2Pun6K7h984", "title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "O0hASl4BS2c", "title": "அதிகாரம் 54 - பொச்சாவாமை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "DhHGetUJlAI", "title": "அதிகாரம் 54 - பொச்சாவாமை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "GfGlO3RQuik", "title": "அதிகாரம் 61 - மடியின்மை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "Fh3HfGUObmg", "title": "அதிகாரம் 61 - மடியின்மை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "zq1dxg5R-rY", "title": "அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Female)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "u9NeXaCHu-A", "title": "அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "Js6Vepbegr8", "title": "அதிகாரம் 48 - வலியறிதல் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "FS5fUOxZySE", "title": "அதிகாரம் 48 - வலியறிதல் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "BoOWFaOGczE", "title": "அதிகாரம் 30 - வாய்மை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "R-5gWfRNMts", "title": "அதிகாரம் 30 - வாய்மை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "MvwT6dnGE0U", "title": "அதிகாரம் 68 - வினைசெயல்வகை (Female)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "gBRvVKE_so8", "title": "அதிகாரம் 68 - வினைசெயல்வகை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "--4jzoezBW8", "title": "அதிகாரம் 67 - வினைத்திட்பம் (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "J-mAIpyxy4A", "title": "அதிகாரம் 67 - வினைத்திட்பம் (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "cj6mlDwjJEo", "title": "அதிகாரம் 66 - வினைத்தூய்மை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "XRizXIUU57g", "title": "அதிகாரம் 66 - வினைத்தூய்மை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "8wZGK0nGTEo", "title": "அதிகாரம் 66 - வினைத்தூய்மை (Slow)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "hjcH8zbEleE", "title": "அதிகாரம் 57 - வெருவந்த செய்யாமை (Original)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}, {"id": "PmziMZrMHfE", "title": "அதிகாரம் 57 - வெருவந்த செய்யாமை (Remix)", "type": "audio", "playlists": ["Discography", "திருக்குறள் | Thirukkural — Master Collection"]}];
+    const CINEMA_FILMS_DATA = {
+      26: {
+        num: 26,
+        badge: "அதிகாரம் 26",
+        cat: "அறத்துப்பால் • துறவறவியல்",
+        title: "புலால் உண்ணாமை (Abstinence from Flesh)",
+        desc: "பிற உயிர்களைத் தன்னுயிர் போல் கருதி, அவைகளின் உடலைத் தன் உடலை வளர்க்க உண்ணாது வாழும் மாபெரும் ஜீவகாருண்ய அறம்.",
+        verse: '"தன்னுன் பெருக்கற்குத் தான்பிறி தூனுண்ணும்<br>எங்ஙனம் ஆளும் அருள்" (குறள் 251)',
+        meaning: "பொருள்: தன் உடலைப் பருக்கச் செய்வதற்காகத் தான் மற்றோர் உயிரின் உடலைத் தின்னும் மனிதன், எவ்வாறு அருளுடையவனாக இருக்க முடியும்?",
+        living: "எவ்வுயிர்க்கும் அன்பு செய்து, உன்னத இல்லறத்தை அஹிம்சை நெறியில் வாழ்ந்து காட்டுவதே அதிவேக முக்தியாகும்.",
+        fullVideo: "assets/videos/adhikaram_26_pulaal_unnaamai.mp4",
+        shortVideo: "assets/videos/short_26_ahimsa.mp4",
+        poster: "assets/images/lessons/noble_feast_ahimsa.jpg",
+        fullDur: "கால அளவு: 4.5 நிமிடங்கள் • 1080p HD",
+        shortDur: "கால அளவு: 42 வினாடிகள் • வேகக் குறும்படம்"
+      },
+      27: {
+        num: 27,
+        badge: "அதிகாரம் 27",
+        cat: "அறத்துப்பால் • துறவறவியல்",
+        title: "தவம் (Austerity & Inner Mastery)",
+        desc: "தனக்கு வரும் துன்பங்களைப் பொறுத்துக்கொண்டு, பிற உயிர்களுக்கு எந்தத் துன்பமும் செய்யாமல் ஐம்பொறிகளை அடக்கும் மன உறுதி.",
+        verse: '"உற்றநோய் நோன்றல் உயிர்க்குறுகண் செய்யாமை<br>அற்றே தவத்திற் குரு" (குறள் 261)',
+        meaning: "பொருள்: தனக்கு நேரும் துன்பங்களைப் பொறுத்துக் கொள்ளுதலும், பிற உயிர்களுக்குத் துன்பம் செய்யாமையுமே தவத்தின் உண்மையான வடிவமாகும்.",
+        living: "சோதனைகள் வரும்போது மனந்தளராமல் பொறுமை காத்து, தினசரி தர்மக் கடமையை ஆத்மார்த்தமாக நிறைவேற்றுவதே சிறந்த தவம்.",
+        fullVideo: "assets/videos/adhikaram_27_thavam.mp4",
+        shortVideo: "assets/videos/short_27_thavam.mp4",
+        poster: "assets/images/lessons/thavam_tapas_meditation.jpg",
+        fullDur: "கால அளவு: 4.5 நிமிடங்கள் • 1080p HD",
+        shortDur: "கால அளவு: 40 வினாடிகள் • வேகக் குறும்படம்"
+      },
+      52: {
+        num: 52,
+        badge: "அதிகாரம் 52",
+        cat: "பொருட்பால் • அமைச்சு / அரசியல்",
+        title: "தெரிந்து வினையாடல் (Discerning Management & Action)",
+        desc: "தகுதியான நபர்களை அவர்களின் அறிவு, ஒழுக்கம், விசுவாசம் ஆகியவற்றால் ஆய்ந்து அறிந்து, தகுந்த பணிகளில் பொறுப்பளிக்கும் மேலாண்மை நெறி.",
+        verse: '"இதனை இதனால் இவன்முடிக்கும் என்றாய்ந்து<br>அதனை அவன்கண் விடல்" (குறள் 517)',
+        meaning: "பொருள்: இந்தச் செயலை இக்கருவியினால் இவன் முடிப்பான் என்று தீர ஆராய்ந்து, அச்செயலை அவனிடம் ஒப்படைக்க வேண்டும்.",
+        living: "குடும்பத்திலும் சமுதாயத்திலும் சரியான நபர்களுக்கு மதிப்பளித்து பொறுப்புகளைப் பகிர்ந்து தலைமை தாங்கும் நிர்வாக மாண்பு.",
+        fullVideo: "assets/videos/adhikaram_52_therinthu_vinaiyaadal.mp4",
+        shortVideo: "assets/videos/short_52_vinai.mp4",
+        poster: "assets/images/lessons/royal_administration_dharma.jpg",
+        fullDur: "கால அளவு: 6 நிமிடங்கள் • 1080p HD",
+        shortDur: "கால அளவு: 45 வினாடிகள் • வேகக் குறும்படம்"
+      },
+      54: {
+        num: 54,
+        badge: "அதிகாரம் 54",
+        cat: "பொருட்பால் • அமைச்சு / ஆட்சி",
+        title: "பொச்சாவாமை (Unfailing Vigilance & Mindfulness)",
+        desc: "எக்காலத்திலும் கடமைகளில் மறதியும் கவனக்குறைவும் இன்றி, எப்போதும் விழிப்புணர்வுடன் செயலாற்றும் உயர் பண்பு.",
+        verse: '"இறந்த வெகுளியின் தீதே சிறந்த<br>உவகை மகிழ்ச்சியின் சோர்வு" (குறள் 531)',
+        meaning: "பொருள்: மிதமிஞ்சிய கோபத்தை விட, மிகுந்த மகிழ்ச்சியினால் உண்டாகும் கவனக்குறைவும் மறதியும் ஒருவருக்குப் பெருங்கேடு விளைவிக்கும்.",
+        living: "வெற்றி அல்லது மகிழ்ச்சிக் காலங்களிலும் தன் தர்மத்தையும் பணிவையும் மறக்காமல் எப்போதும் விழிப்புடன் வாழும் நெறி.",
+        fullVideo: "assets/videos/adhikaram_54_pochchaavaamai.mp4",
+        shortVideo: "assets/videos/short_54_vigilance.mp4",
+        poster: "assets/images/lessons/mindfulness_vigilance.jpg",
+        fullDur: "கால அளவு: 5 நிமிடங்கள் • 1080p HD",
+        shortDur: "கால அளவு: 40 வினாடிகள் • வேகக் குறும்படம்"
+      },
+      57: {
+        num: 57,
+        badge: "அதிகாரம் 57",
+        cat: "பொருட்பால் • அரசியல் / சான்றாண்மை",
+        title: "வெருவந்த செய்யாமை (Gentle & Just Leadership)",
+        desc: "மக்களை அச்சுறுத்தும் கொடுஞ்செயல்களைச் செய்யாமல், இனிய முகத்தோடும் நியாயமான தீர்ப்போடும் தலைமை தாங்கும் நீதி நெறி.",
+        verse: '"இன்சொலான் ஈத்தளிக்க வல்லார்க்குத் தன்சொலான்<br>தான்கண் டனைத்திவ் வுலகு" (குறள் 568)',
+        meaning: "பொருள்: இன்சொல் கூறி, தக்கவர்க்குப் பொருளுதவி செய்து காக்க வல்ல தலைவனுக்கு, உலகம் அவன் விரும்புமாறு அமையும்.",
+        living: "வீட்டிலும் வெளியிலும் பயமுறுத்தும் அதிகாரமின்றி, இன்சொல்லாலும் அன்பாலும் அனைவரையும் வழிநடத்தும் குடும்பத் தலைவன் பண்பு.",
+        fullVideo: "assets/videos/adhikaram_57_veruvantha_seyyaamai.mp4",
+        shortVideo: "assets/videos/short_57_justice.mp4",
+        poster: "assets/images/lessons/gentle_justice_governance.jpg",
+        fullDur: "கால அளவு: 5.5 நிமிடங்கள் • 1080p HD",
+        shortDur: "கால அளவு: 42 வினாடிகள் • வேகக் குறும்படம்"
+      },
+      61: {
+        num: 61,
+        badge: "அதிகாரம் 61",
+        cat: "பொருட்பால் • குடிசெயல்வகை",
+        title: "மடியின்மை (Conquering Sloth & Relentless Industry)",
+        desc: "சோம்பலை வேரறுத்து, சுறுசுறுப்புடனும் விடாமுயற்சியுடனும் உழைத்துத் தன் குடும்பத்தையும் சமுதாயத்தையும் உயர்த்தும் அறம்.",
+        verse: '"குடிமடிந்து குற்றம் பெருகும் மடிமடிந்து<br>மாண்ட உஞற்றி லவர்க்கு" (குறள் 604)',
+        meaning: "பொருள்: சோம்பலில் மூழ்கிச் சிறந்த முயற்சி செய்யாதவர்களுடைய குடும்பப் பெருமை அழியும்; குற்றங்கள் பெருகும்.",
+        living: "தினமும் அதிகாலை எழுந்து தன் உழைப்பை ஈசனுக்கே அர்ப்பணித்து, சோம்பலை மாய்த்து தன் குடும்பத்தை மாண்புறச் செய்தல்.",
+        fullVideo: "assets/videos/adhikaram_61_madiyinmai.mp4",
+        shortVideo: "assets/videos/short_61_industry.mp4",
+        poster: "assets/images/lessons/industrious_diligent_artisan.jpg",
+        fullDur: "கால அளவு: 4 நிமிடங்கள் • 1080p HD",
+        shortDur: "கால அளவு: 38 வினாடிகள் • வேகக் குறும்படம்"
+      }
+    };
+
+    let currentCinemaChapter = 26;
+    let currentCinemaMode = 'full';
+
+    function selectCinemaFilm(chNum) {
+      currentCinemaChapter = chNum;
+      const data = CINEMA_FILMS_DATA[chNum];
+      if (!data) return;
+
+      // Update Tab styling
+      [26, 27, 52, 54, 57, 61].forEach(n => {
+        const btn = document.getElementById(`cin-tab-${n}`);
+        if (btn) {
+          if (n === chNum) {
+            btn.style.background = 'rgba(229,169,60,0.15)';
+            btn.style.borderColor = 'var(--accent-gold)';
+            btn.style.color = 'var(--accent-gold)';
+          } else {
+            btn.style.background = 'rgba(18,22,31,0.9)';
+            btn.style.borderColor = 'rgba(255,255,255,0.1)';
+            btn.style.color = '#94a3b8';
+          }
+        }
+      });
+
+      // Update Text details
+      document.getElementById('cinemaChapterBadge').textContent = data.badge;
+      document.getElementById('cinemaCategoryBadge').textContent = data.cat;
+      document.getElementById('cinemaChapterTitle').textContent = data.title;
+      document.getElementById('cinemaChapterDesc').textContent = data.desc;
+      document.getElementById('cinemaKuralVerse').innerHTML = data.verse;
+      document.getElementById('cinemaKuralMeaning').textContent = data.meaning;
+      document.getElementById('cinemaLivingLesson').textContent = data.living;
+
+      updateCinemaVideo();
+    }
+
+    function setCinemaMode(mode) {
+      currentCinemaMode = mode;
+      const btnFull = document.getElementById('btnModeFull');
+      const btnShort = document.getElementById('btnModeShort');
+      if (mode === 'full') {
+        btnFull.style.background = 'rgba(229,169,60,0.2)';
+        btnFull.style.borderColor = 'var(--accent-gold)';
+        btnFull.style.color = '#fff';
+        btnShort.style.background = 'rgba(56,189,248,0.12)';
+        btnShort.style.borderColor = 'rgba(56,189,248,0.3)';
+        btnShort.style.color = '#38bdf8';
+      } else {
+        btnShort.style.background = 'rgba(56,189,248,0.25)';
+        btnShort.style.borderColor = '#38bdf8';
+        btnShort.style.color = '#fff';
+        btnFull.style.background = 'rgba(18,22,31,0.8)';
+        btnFull.style.borderColor = 'rgba(255,255,255,0.1)';
+        btnFull.style.color = '#94a3b8';
+      }
+      updateCinemaVideo();
+    }
+
+    function updateCinemaVideo() {
+      const data = CINEMA_FILMS_DATA[currentCinemaChapter];
+      if (!data) return;
+      const vElem = document.getElementById('cinemaVideoElement');
+      const vSrc = document.getElementById('cinemaVideoSource');
+      const dBadge = document.getElementById('cinemaDurationBadge');
+      const isShort = currentCinemaMode === 'short';
+      const targetSrc = isShort ? data.shortVideo : data.fullVideo;
+      
+      dBadge.textContent = isShort ? data.shortDur : data.fullDur;
+      vElem.poster = data.poster;
+      if (vSrc.getAttribute('src') !== targetSrc) {
+        vSrc.setAttribute('src', targetSrc);
+        vElem.load();
+      }
+    }
+
     initPage(PAGE_ITEMS);
   </script>
 </body>

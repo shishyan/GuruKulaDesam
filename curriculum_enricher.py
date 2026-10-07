@@ -7,7 +7,7 @@ and daily sadhana checklists for all 55 units across Grades 2 to 12.
 """
 
 UNIT_VISUAL_MAP = {
-    # Grade 2
+    # Grade 2 (பாலப் பருவம் - அறமும் இல்லறப் பழக்கங்களும்)
     (2, 1): {
         "diagram_key": "thiruneeru",
         "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
@@ -25,25 +25,29 @@ UNIT_VISUAL_MAP = {
     },
     (2, 4): {
         "diagram_key": "konrai_vendhan",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "ஔவையாரின் கொன்றை வேந்தன் — மாணவர்களுக்கான நல்லொழுக்க ஏணிப்படிகள்"
+        "hero_image": "assets/images/lessons/children_feeding_creatures.jpg",
+        "hero_caption": "ஔவையாரின் கொன்றை வேந்தன் — பகிர்ந்து உண்ணுதலும் சக உயிர்களிடத்தில் அன்பும்"
     },
     (2, 5): {
         "diagram_key": "jivakarunyam",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "ஜீவகாருண்யம் — அனைத்து உயிர்களிடத்தும் கருணையும் பஞ்சபூத சமநிலையும்"
+        "hero_image": "assets/images/lessons/dharma_cow_calf.jpg",
+        "hero_caption": "ஜீவகாருண்யம் & தாவர உணவு — தாய்ப் பசுவும் கன்றும், எவ்வுயிர்க்கும் தீங்கிழையா அஹிம்சை நெறி",
+        "video_clip": "assets/videos/short_26_ahimsa.mp4",
+        "video_title": "அதிகாரம் 26: புலால் உண்ணாமை — அஹிம்சை & கருணை குறும்படம் (42 வினாடிகள்)",
+        "video_note": "அனைத்து உயிர்களையும் தன் உயிர் போல் நேசித்து, தாவர உணவை ஏற்று வாழும் எளிய குழந்தைப் பருவம்.",
+        "video_poster": "assets/images/lessons/dharma_cow_calf.jpg"
     },
     
     # Grade 3
     (3, 1): {
         "diagram_key": "naalvar",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "சமயக் குரவர் நால்வர் — சரியை, கிரியை, யோகம், ஞானம் காட்டிய வழிகாட்டிகள்"
+        "hero_image": "assets/images/lessons/disciples_under_sacred_tree.jpg",
+        "hero_caption": "சமயக் குரவர் நால்வர் — ஆலமரத்தடியில் குரு சீடருக்கு உபதேசிக்கும் மெய்ஞான மரபு"
     },
     (3, 2): {
         "diagram_key": "sandhyavandanam",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
-        "hero_caption": "மாணிக்கவாசகரின் திருவெம்பாவை — அதிகாலை சூரிய உதயமும் இறை வழிபாடும்"
+        "hero_image": "assets/images/lessons/temple_bell_morning.jpg",
+        "hero_caption": "மாணிக்கவாசகரின் திருவெம்பாவை — அதிகாலை கோபுர மணியோசையும் திருப்பள்ளியெழுச்சி வழிபாடும்"
     },
     (3, 3): {
         "diagram_key": "pancha_bhuta",
@@ -52,20 +56,20 @@ UNIT_VISUAL_MAP = {
     },
     (3, 4): {
         "diagram_key": "konrai_vendhan",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "ஔவையாரின் மூதுரை — பயன் கருதாது உதவும் நன்னெறி தத்துவம்"
+        "hero_image": "assets/images/lessons/scholar_palm_manuscript.jpg",
+        "hero_caption": "ஔவையாரின் மூதுரை — ஏடு பார்த்து நல்லறம் கற்கும் அறிஞர் மரபு"
     },
     (3, 5): {
         "diagram_key": "dinacharya",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "திருப்பள்ளியெழுச்சி — காலை எழும்போதே தூய எண்ணமும் இறை நினைவும்"
+        "hero_image": "assets/images/lessons/universal_anjali_prayer.jpg",
+        "hero_caption": "திருப்பள்ளியெழுச்சி — காலை எழும்போதே தூய அஞ்சலி முத்திரையுடன் உலக நலன் பிரார்த்தித்தல்"
     },
 
     # Grade 4
     (4, 1): {
         "diagram_key": "isai_pann",
-        "hero_image": "assets/images/lessons/nataraja_cosmic_dance.jpg",
-        "hero_caption": "பன்னிரு திருமுறைகள் — தமிழோடு இசைபாடி ஈசனை அடையும் பக்தி நெறி"
+        "hero_image": "assets/images/lessons/sage_sacred_scripture.jpg",
+        "hero_caption": "பன்னிரு திருமுறைகள் — ஓலைச்சுவடியில் பொறிக்கப்பட்ட திருமுறைப் பதிக ஞானம்"
     },
     (4, 2): {
         "diagram_key": "naalvar",
@@ -79,24 +83,28 @@ UNIT_VISUAL_MAP = {
     },
     (4, 4): {
         "diagram_key": "konrai_vendhan",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "ஔவையாரின் நல்வழி — 'சாதி இரண்டொழிய வேறில்லை' எனும் சமத்துவ அறம்"
+        "hero_image": "assets/images/lessons/wildlife_stream_harmony.jpg",
+        "hero_caption": "ஔவையாரின் நல்வழி — காட்டாற்று நீரைப் பருகும் மான் கூட்டம், இயற்கையோடு இயைந்த வாழ்வு"
     },
     (4, 5): {
         "diagram_key": "jivakarunyam",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "சாத்வீக உணவு — பிற உயிர்களைத் துன்புறுத்தாத அஹிம்சை வாழ்வு"
+        "hero_image": "assets/images/lessons/noble_feast_ahimsa.jpg",
+        "hero_caption": "சாத்வீக உணவு — பிற உயிர்களைக் கொல்லாது விளைந்த காய், கனி, தானியங்களை உண்ணும் தூய இல்லற விருந்து",
+        "video_clip": "assets/videos/short_26_ahimsa.mp4",
+        "video_title": "அதிகாரம் 26: புலால் உண்ணாமை — சாத்வீக உணவின் மாண்பு (42 வினாடிகள்)",
+        "video_note": "உடல், மனம் இரண்டையும் தூய்மையாக வைத்து நோயற்ற வாழ்வு வாழ சாத்வீக உணவே சிறந்த வழி.",
+        "video_poster": "assets/images/lessons/noble_feast_ahimsa.jpg"
     },
 
-    # Grade 5
+    # Grade 5 (மாணவர் பருவம் - கடமையும் ஐம்பொறி அடக்கமும்)
     (5, 1): {
         "diagram_key": "nayanmar_lineage",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "அறுபத்து மூன்று நாயன்மார்கள் — சிவபக்திக்காக தன்னுயிரையும் ஈந்த பெருமக்கள்"
+        "hero_image": "assets/images/lessons/gurukulam_sacred_refuge.jpg",
+        "hero_caption": "அறுபத்து மூன்று நாயன்மார்கள் — குருகுலத்தின் ஆசிரம அடைக்கலமும் ஈடு இணையற்ற தியாகமும்"
     },
     (5, 2): {
         "diagram_key": "naalvar",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
+        "hero_image": "assets/images/lessons/disciples_under_sacred_tree.jpg",
         "hero_caption": "சுந்தரரின் திருத்தொண்டர் தொகை — அடியார்க்கும் அடியேன் எனும் சரணாகதி"
     },
     (5, 3): {
@@ -111,47 +119,59 @@ UNIT_VISUAL_MAP = {
     },
     (5, 5): {
         "diagram_key": "karma_wheel",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "சத்தியமும் நேர்மையும் — தர்மத்தின் இரு தூண்களும் நல்வினைப் பயனும்"
+        "hero_image": "assets/images/lessons/industrious_diligent_artisan.jpg",
+        "hero_caption": "சத்தியமும் நேர்மையும் — சோம்பல் நீக்கி அதிகாலை எழுந்து உழைக்கும் சிற்பி கலைஞர்",
+        "video_clip": "assets/videos/short_61_industry.mp4",
+        "video_title": "அதிகாரம் 61: மடியின்மை — விடாமுயற்சியின் பெருமை (38 வினாடிகள்)",
+        "video_note": "குடிமக்களை உயர்த்தும் குணம் மடியின்மையே; மடி என்னும் சோம்பலை மாய்ப்போரே வெற்றி பெறுவர்.",
+        "video_poster": "assets/images/lessons/industrious_diligent_artisan.jpg"
     },
 
     # Grade 6
     (6, 1): {
         "diagram_key": "vedas_tree",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "நான்கு வேதங்கள் — ரிக், யஜுர், சாம, அதர்வ வேதங்களின் ஞான விருட்சம்"
+        "hero_image": "assets/images/lessons/scholar_palm_manuscript.jpg",
+        "hero_caption": "நான்கு வேதங்கள் — ரிக், யஜுர், சாம, அதர்வ வேதங்களின் ஞானப் பொக்கிஷம்"
     },
     (6, 2): {
         "diagram_key": "ashtanga_yoga",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
+        "hero_image": "assets/images/lessons/disciples_under_sacred_tree.jpg",
         "hero_caption": "திருமந்திர குரு-சீடர் உறவு — மாணவருக்கு மெய்ஞானம் நல்கும் குருவருள்"
     },
     (6, 3): {
         "diagram_key": "pati_pasu_pasam",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "முப்பொருள் உண்மை — பதி (இறைவன்), பசு (ஆன்மா), பாசம் (மும்மலங்கள்)"
+        "hero_image": "assets/images/lessons/siddha_herbal_wisdom.jpg",
+        "hero_caption": "முப்பொருள் உண்மை & சித்த மருத்துவம் — உடலை ஓம்பும் மூலிகைகளும் பதி-பசு-பாச அறிவும்"
     },
     (6, 4): {
         "diagram_key": "pancha_yajna",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "பஞ்ச மகா யக்ஞங்கள் — மனிதன் ஆற்ற வேண்டிய 5 உன்னத சனாதனக் கடமைகள்"
+        "hero_image": "assets/images/lessons/harvesting_family_dharma.jpg",
+        "hero_caption": "பஞ்ச மகா யக்ஞங்கள் — உழவு செய்து விளைச்சலைப் பகிர்ந்தளிக்கும் இல்லறக் கடமைகள்"
     },
     (6, 5): {
         "diagram_key": "thirukkural_trivarga",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "திருக்குறள் பொருட்பால் — 'கற்க கசடற' கல்வியும் மடியின்மையும்"
+        "hero_image": "assets/images/lessons/harvest_triumph_effort.jpg",
+        "hero_caption": "திருக்குறள் பொருட்பால் — 'கற்க கசடற' கல்வி மற்றும் உழைப்பின் உன்னத வெற்றி",
+        "video_clip": "assets/videos/short_61_industry.mp4",
+        "video_title": "அதிகாரம் 61: மடியின்மை — அறியாமையையும் சோம்பலையும் வெல்லுதல் (38 வினாடிகள்)",
+        "video_note": "விடாமுயற்சியுடன் கல்வி பயின்று, தன் குடும்பத்தையும் சமுதாயத்தையும் தலைநிமிரச் செய்யும் அறம்.",
+        "video_poster": "assets/images/lessons/harvest_triumph_effort.jpg"
     },
 
     # Grade 7
     (7, 1): {
         "diagram_key": "ashtanga_yoga",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
-        "hero_caption": "திருமந்திரப் பேரறிவு — 'யான்பெற்ற இன்பம் பெறுக இவ்வையகம்' என்ற யோக நெறி"
+        "hero_image": "assets/images/lessons/western_ghats_hermitage.jpg",
+        "hero_caption": "திருமந்திரப் பேரறிவு — மேற்குத் தொடர்ச்சி மலை அமைதியில் ஒலிக்கும் யோக நெறி"
     },
     (7, 2): {
         "diagram_key": "thirukkural_trivarga",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "சதுர்வித புருஷார்த்தங்கள் — அறம், பொருள், இன்பம், வீடு எனும் நால்வகை இலக்கு"
+        "hero_image": "assets/images/lessons/thavam_tapas_meditation.jpg",
+        "hero_caption": "சதுர்வித புருஷார்த்தங்கள் — தவம், மன அமைதி மற்றும் தர்மத்தை நிலைநிறுத்தும் ஆற்றல்",
+        "video_clip": "assets/videos/short_27_thavam.mp4",
+        "video_title": "அதிகாரம் 27: தவம் — மனக் கட்டுப்பாடும் இலக்கு நோக்கிய உறுதியும் (40 வினாடிகள்)",
+        "video_note": "உற்றநோய் நோன்றல் உயிர்க்குறுகண் செய்யாமை — தனக்கு வரும் துன்பத்தைப் பொறுத்துக் கொண்டு மற்றவர்க்குத் துன்பம் செய்யாத தவ வலிமை.",
+        "video_poster": "assets/images/lessons/thavam_tapas_meditation.jpg"
     },
     (7, 3): {
         "diagram_key": "nayanmar_lineage",
@@ -160,8 +180,8 @@ UNIT_VISUAL_MAP = {
     },
     (7, 4): {
         "diagram_key": "karma_wheel",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "கர்ம விதி — சஞ்சிதம், பிராரப்தம், ஆகாமியம் எனும் காரண-காரியச் சக்கரம்"
+        "hero_image": "assets/images/lessons/animals_peaceful_sanctuary.jpg",
+        "hero_caption": "கர்ம விதி — பிராணிகள் கூடி வாழும் அமைதிப் பூங்கா, விதைத்ததே விளையும் இயற்கை நீதி"
     },
     (7, 5): {
         "diagram_key": "thirukkural_trivarga",
@@ -172,23 +192,31 @@ UNIT_VISUAL_MAP = {
     # Grade 8
     (8, 1): {
         "diagram_key": "karma_wheel",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "திருக்குறள் கர்ம நெறி — ஊக்கமுடைமையும் பலனில் பற்றற்ற கடமையாற்றலும்"
+        "hero_image": "assets/images/lessons/industrious_diligent_artisan.jpg",
+        "hero_caption": "திருக்குறள் கர்ம நெறி — ஊக்கமுடைமையும் பலனில் பற்றற்ற கடமையாற்றலும்",
+        "video_clip": "assets/videos/adhikaram_61_madiyinmai.mp4",
+        "video_title": "அதிகாரம் 61: மடியின்மை — முழுமையான சினிமா பாடல் படம் (4 நிமிடங்கள்)",
+        "video_note": "சோம்பலை ஒழித்து, உழைப்பின் மகிமையால் தன் குடும்பத்தை மேன்மையடையச் செய்யும் மாபெரும் அறம்.",
+        "video_poster": "assets/images/lessons/industrious_diligent_artisan.jpg"
     },
     (8, 2): {
         "diagram_key": "agamas_shastras",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
+        "hero_image": "assets/images/lessons/sage_sacred_scripture.jpg",
         "hero_caption": "பதினான்கு மெய்கண்ட சாத்திரங்கள் — சித்தாந்த தத்துவ விளக்க மரபு"
     },
     (8, 3): {
         "diagram_key": "isai_pann",
-        "hero_image": "assets/images/lessons/nataraja_cosmic_dance.jpg",
-        "hero_caption": "பண்ணிசை மரபு — பண்ணோடு தமிழ்ப்பாடல் பாடும் திருக்கோயில் மரபு"
+        "hero_image": "assets/images/lessons/noble_feast_ahimsa.jpg",
+        "hero_caption": "புலால் மறுத்தல் & ஜீவகாருண்யம் — அனைத்து உயிர்களுக்கும் உணவளிக்கும் உன்னத இல்லறம்",
+        "video_clip": "assets/videos/adhikaram_26_pulaal_unnaamai.mp4",
+        "video_title": "அதிகாரம் 26: புலால் உண்ணாமை — முழுமையான சினிமா திரைப்படம் (4.5 நிமிடங்கள்)",
+        "video_note": "தன்னுன் பெருக்கற்குத் தான்பிறி தூனுண்ணும் எங்ஙனம் ஆளும் அருள் — தன் உடலை வளர்க்கப் பிறிதொரு உயிரின் உடலை உண்ணாத உயர் பண்பு.",
+        "video_poster": "assets/images/lessons/noble_feast_ahimsa.jpg"
     },
     (8, 4): {
         "diagram_key": "vedas_tree",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "வேத ஆசிரம தர்மங்கள் — பிரம்மச்சர்யம், கிரகஸ்தம், வானப்பிரஸ்தம், சந்நியாசம்"
+        "hero_image": "assets/images/lessons/harvesting_family_dharma.jpg",
+        "hero_caption": "வேத ஆசிரம தர்மங்கள் — இல்லற தர்மமே மற்ற அனைத்து ஆசிரமங்களுக்கும் தூணாக அமைகிறது"
     },
     (8, 5): {
         "diagram_key": "vallalar_jyothi",
@@ -196,31 +224,35 @@ UNIT_VISUAL_MAP = {
         "hero_caption": "வள்ளலார் அருட்பெருஞ்ஜோதி — 7 மாயைத் திரைகளை அகற்றும் ஜோதி தரிசனம்"
     },
 
-    # Grade 9
+    # Grade 9 (இளைஞர் பருவம் - சான்றாண்மையும் சமூக மாண்பும்)
     (9, 1): {
         "diagram_key": "agamas_shastras",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
+        "hero_image": "assets/images/lessons/sage_sacred_scripture.jpg",
         "hero_caption": "இருபத்தெட்டு சைவ ஆகமங்கள் — சரியை, கிரியை, யோகம், ஞான பாதங்கள்"
     },
     (9, 2): {
         "diagram_key": "temple",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
+        "hero_image": "assets/images/lessons/temple_architecture.jpg",
         "hero_caption": "உடலே ஆலயம் — மனித உடலியலும் திருக்கோயில் அமைப்பும் ஒன்றெனக் காட்டும் தத்துவம்"
     },
     (9, 3): {
         "diagram_key": "vedas_tree",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
+        "hero_image": "assets/images/lessons/disciples_under_sacred_tree.jpg",
         "hero_caption": "பாரதத்தின் ஷட்தர்சனங்கள் — நியாயம், வைசேஷிகம், சாங்கியம், யோகம், மீமாம்சம், வேதாந்தம்"
     },
     (9, 4): {
         "diagram_key": "ashtanga_yoga",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "யம & நியமங்கள் — மனதையும் நடத்தையையும் தூய்மைப்படுத்தும் யோக ஒழுக்கம்"
+        "hero_image": "assets/images/lessons/mindfulness_vigilance.jpg",
+        "hero_caption": "யம & நியமங்கள், விழிப்புணர்வு — ஒரு கணமும் மறதியின்றி கடமையாற்றும் பொச்சாவாமை",
+        "video_clip": "assets/videos/short_54_vigilance.mp4",
+        "video_title": "அதிகாரம் 54: பொச்சாவாமை — விழிப்புணர்வும் மறதியின்மையும் (40 வினாடிகள்)",
+        "video_note": "இறந்த குறிக்கோளை அடைய விழிப்புணர்வே காவல்; ஒரு கண மறதியும் வாழ்வைச் சிதைக்காமல் காக்கும் அறம்.",
+        "video_poster": "assets/images/lessons/mindfulness_vigilance.jpg"
     },
     (9, 5): {
         "diagram_key": "thirukkural_trivarga",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "திருக்குறள் அரசியல் — அறநெறி வழுவாத செங்கோன்மையும் நீதி பரிபாலனமும்"
+        "hero_image": "assets/images/lessons/royal_administration_dharma.jpg",
+        "hero_caption": "திருக்குறள் அரசியல் — அறநெறி வழுவாத செங்கோன்மையும் குடும்ப, சமுதாய தலைமைத்துவமும்"
     },
 
     # Grade 10
@@ -231,13 +263,21 @@ UNIT_VISUAL_MAP = {
     },
     (10, 2): {
         "diagram_key": "naalvar",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "நால்வகை நெறிகள் — சாலோகம், சாமீபம், சாரூபம், சாயுஜ்ய முக்திப் பேறுகள்"
+        "hero_image": "assets/images/lessons/hill_fortress_vigilance.jpg",
+        "hero_caption": "நால்வகை நெறிகள் & விழிப்புணர்வு — கோட்டைக்காவலன் போல் தன் மனதைக் காக்கும் விழிப்புணர்வு",
+        "video_clip": "assets/videos/short_54_vigilance.mp4",
+        "video_title": "அதிகாரம் 54: பொச்சாவாமை — தலைமைத்துவ விழிப்புணர்வு (40 வினாடிகள்)",
+        "video_note": "அச்சமும் சோம்பலும் நீங்கி எப்போதும் எச்சரிக்கையுடன் நற்பணிகளை வழிநடத்தும் பண்பு.",
+        "video_poster": "assets/images/lessons/hill_fortress_vigilance.jpg"
     },
     (10, 3): {
         "diagram_key": "deivathin_kural",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
-        "hero_caption": "காஞ்சி மகா பெரியவாளின் தெய்வத்தின் குரல் — வேத சம்ரக்ஷணம் & கோ சம்ரக்ஷணம்"
+        "hero_image": "assets/images/lessons/royal_administration_dharma.jpg",
+        "hero_caption": "தெரிந்து வினையாடல் — தகுதியானோரை ஆய்ந்து அறிந்து பொறுப்பளிக்கும் உன்னத நிர்வாகம்",
+        "video_clip": "assets/videos/short_52_vinai.mp4",
+        "video_title": "அதிகாரம் 52: தெரிந்து வினையாடல் — நிர்வாகத் தலைமை குறும்படம் (45 வினாடிகள்)",
+        "video_note": "இதனை இதனால் இவன்முடிக்கும் என்றாய்ந்து அதனை அவன்கண் விடல் — சரியான நபரிடம் பொறுப்பை ஒப்படைக்கும் விவேகம்.",
+        "video_poster": "assets/images/lessons/royal_administration_dharma.jpg"
     },
     (10, 4): {
         "diagram_key": "panchakshara",
@@ -246,25 +286,37 @@ UNIT_VISUAL_MAP = {
     },
     (10, 5): {
         "diagram_key": "dinacharya",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "O/L பொதுத் தேர்வு வழிகாட்டி — அமைதியான மனதுடன் தேர்வினை எதிர்கொள்ளும் வழி"
+        "hero_image": "assets/images/lessons/chola_anicut_engineers.jpg",
+        "hero_caption": "தர்மப் பொறியியல் — கல்லணை கட்டிய சோழப் பெருவேந்தரின் தர்ம நெறியும் பொறியியல் அறிவும்"
     },
 
-    # Grade 11
+    # Grade 11 (உயர் வாழ்வியல் - தத்துவமும் ஆளுமையும்)
     (11, 1): {
         "diagram_key": "vedas_tree",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "வேதாந்த சித்தாந்த ஒப்பாய்வு — அத்துவைதம், விசிஷ்டாத்துவைதம், துவைதம் & சைவ சித்தாந்தம்"
+        "hero_image": "assets/images/lessons/mountain_cave_tapas.jpg",
+        "hero_caption": "வேதாந்த சித்தாந்த ஒப்பாய்வு — குகைத் தவத்தில் ஒளிரும் ஆத்ம ஞான அனுபவம்",
+        "video_clip": "assets/videos/short_27_thavam.mp4",
+        "video_title": "அதிகாரம் 27: தவம் — ஆத்ம ஞானத்திற்கான பெருந்தவம் (40 வினாடிகள்)",
+        "video_note": "சுடச்சுடரும் பொன்போல் ஒளிவிடும் தவம் — புலன்களை அடக்கி ஆத்மார்த்தமாக வாழும் முறை.",
+        "video_poster": "assets/images/lessons/mountain_cave_tapas.jpg"
     },
     (11, 2): {
         "diagram_key": "chakra_system",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
-        "hero_caption": "நசிகேதன் ஞான வேட்கை — கடோபநிடதத்தில் எமதர்மனிடம் பெற்ற ஆத்ம ஞானம்"
+        "hero_image": "assets/images/lessons/royal_administration_dharma.jpg",
+        "hero_caption": "தெரிந்து வினையாடல் — கடோபநிடத நசிகேதன் விவேகமும் நிர்வாக நெறிமுறைகளும்",
+        "video_clip": "assets/videos/adhikaram_52_therinthu_vinaiyaadal.mp4",
+        "video_title": "அதிகாரம் 52: தெரிந்து வினையாடல் — முழுமையான சினிமா பாடல் திரைப்படம் (6 நிமிடங்கள்)",
+        "video_note": "அறிவும், ஆற்றலும், பொறுமையும் கொண்டோரைத் தேர்ந்தெடுத்து நற்பணிகளை வளர்க்கும் மேலாண்மை.",
+        "video_poster": "assets/images/lessons/royal_administration_dharma.jpg"
     },
     (11, 3): {
         "diagram_key": "agamas_shastras",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "சிவஞானபோதத்தின் தர்க்கவியல் கட்டமைப்பு — மெய்கண்ட தேவ நாயனாரின் 12 சூத்திரங்கள்"
+        "hero_image": "assets/images/lessons/gentle_justice_governance.jpg",
+        "hero_caption": "வெருவந்த செய்யாமை — கொடுங்கோன்மையின்றி இன்சொல்லும் நீதியும் காக்கும் சான்றோன் பண்பு",
+        "video_clip": "assets/videos/short_57_justice.mp4",
+        "video_title": "அதிகாரம் 57: வெருவந்த செய்யாமை — இன்சொல்லும் நீதியும் (42 வினாடிகள்)",
+        "video_note": "இன்சொலான் ஓம்பப் பெறின் — மக்களை அச்சுறுத்தாமல் அன்பால் ஆளும் தலைவனின் மாண்பு.",
+        "video_poster": "assets/images/lessons/gentle_justice_governance.jpg"
     },
     (11, 4): {
         "diagram_key": "chakra_system",
@@ -273,35 +325,47 @@ UNIT_VISUAL_MAP = {
     },
     (11, 5): {
         "diagram_key": "dinacharya",
-        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
-        "hero_caption": "A/L உயர்தரத் தேர்வு வழிகாட்டி — ஆழ்ந்த சிந்தனையோடு உயர் கல்வியைத் திட்டமிடுதல்"
+        "hero_image": "assets/images/lessons/agrarian_abundance.jpg",
+        "hero_caption": "உயர்தர சாதனை & வேளாண்மை — பொன் விளையும் களஞ்சியமும் அறம் சார்ந்த வாழ்வாதாரமும்"
     },
 
-    # Grade 12
+    # Grade 12 (உன்னத இல்லறம் வழி முக்தி / நிர்வாணம்)
     (12, 1): {
         "diagram_key": "saiva_siddhanta_36_tattvas",
-        "hero_image": "assets/images/lessons/nataraja_cosmic_dance.jpg",
+        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
         "hero_caption": "ஜீவன் முக்தி & விதேக முக்தி — 36 தத்துவங்களையும் கடந்து சிவத்தோடு இரண்டறக் கலத்தல்"
     },
     (12, 2): {
         "diagram_key": "ashtanga_yoga",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
-        "hero_caption": "தாயுமானவரும் திருமந்திரமும் — 'எல்லாரும் இன்புற்றிருக்க நினைப்பதுவே யல்லாமல் வேறொன்றறியேன் பராபரமே'"
+        "hero_image": "assets/images/lessons/western_ghats_hermitage.jpg",
+        "hero_caption": "தாயுமானவரும் திருமந்திரமும் — 'எல்லாரும் இன்புற்றிருக்க நினைப்பதுவே யல்லாமல் வேறொன்றறியேன் பராபரமே'",
+        "video_clip": "assets/videos/adhikaram_27_thavam.mp4",
+        "video_title": "அதிகாரம் 27: தவம் — முழுமையான சினிமா தியானத் திரைப்படம் (4.5 நிமிடங்கள்)",
+        "video_note": "தவமும் தவம் உடையார்க்கு ஆகும் — தன்னலமற்ற தியாகத்தினால் பிரபஞ்ச உண்மையைக் காணும் உயரிய நிலை.",
+        "video_poster": "assets/images/lessons/western_ghats_hermitage.jpg"
     },
     (12, 3): {
         "diagram_key": "nataraja",
-        "hero_image": "assets/images/lessons/nataraja_cosmic_dance.jpg",
-        "hero_caption": "நவீன அறிவியலும் நடராஜர் தத்துவமும் — CERN வாசலில் ஒளிரும் பிரபஞ்சப் பெருநடனம்"
+        "hero_image": "assets/images/lessons/wise_counsel_nobility.jpg",
+        "hero_caption": "வெருவந்த செய்யாமை & சான்றாண்மை — அறிஞர்களின் ஆலோசனையுடன் உலகை வழிநடத்தும் ஞானம்",
+        "video_clip": "assets/videos/adhikaram_57_veruvantha_seyyaamai.mp4",
+        "video_title": "அதிகாரம் 57: வெருவந்த செய்யாமை — முழுமையான சினிமா திரைப்படம் (5.5 நிமிடங்கள்)",
+        "video_note": "சான்றோன் ஆக்குதல் தந்தைக்குக் கடனே — நற்பண்புகளால் உலகை வெல்லும் சான்றாண்மை.",
+        "video_poster": "assets/images/lessons/wise_counsel_nobility.jpg"
     },
     (12, 4): {
         "diagram_key": "pancha_bhuta",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "சுற்றுச்சூழல் தர்மம் — பூமியை அன்னையாகவும் இயற்கையை சிவரூபமாகவும் போற்றும் வேதப் பார்வை"
+        "hero_image": "assets/images/lessons/harvest_triumph_effort.jpg",
+        "hero_caption": "சுற்றுச்சூழல் தர்மமும் உழைப்பும் — இயற்கையை தாயாகவும் ஈசனின் அருட்கொடையாகவும் போற்றும் பார்வை"
     },
     (12, 5): {
         "diagram_key": "dinacharya",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "உலக சமுதாயத்தில் சனாதன தர்ம நெறியாளன் — 'யாதும் ஊரே யாவரும் கேளிர்' எனும் உலகளாவிய பார்வை"
+        "hero_image": "assets/images/lessons/harvesting_family_dharma.jpg",
+        "hero_caption": "உன்னத இல்லறம் வழி முக்தி — 'அறத்தாற்றின் இல்வாழ்க்கை ஆற்றின் புறத்தாற்றின் போஒய்ப் பெறுவ தெவன்?' (குறள் 46)",
+        "video_clip": "assets/videos/adhikaram_26_pulaal_unnaamai.mp4",
+        "video_title": "அதிகாரம் 26: புலால் உண்ணாமை & ஜீவகாருண்யம் — இல்லற முக்தி சினிமா படம்",
+        "video_note": "எவ்வுயிர்க்கும் அன்பு செய்து, உன்னத இல்லறத்தை அறவழியில் நடத்துவதே அதிவேக முக்தி!",
+        "video_poster": "assets/images/lessons/harvesting_family_dharma.jpg"
     }
 }
 
@@ -696,5 +760,9 @@ def enrich_unit(grade_num, unit):
         "objectives": objectives,
         "deep_dive": deep_dive,
         "quiz": quiz,
-        "sadhana": sadhana
+        "sadhana": sadhana,
+        "video_clip": visual_info.get("video_clip"),
+        "video_title": visual_info.get("video_title"),
+        "video_note": visual_info.get("video_note"),
+        "video_poster": visual_info.get("video_poster", hero_image)
     }

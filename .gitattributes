@@ -18,3 +18,6 @@
 site/assets/images/* !filter !diff !merge
 assets/images/* !filter !diff !merge
 docs/assets/images/* !filter !diff !merge
+site/assets/videos/* !filter !diff !merge
+assets/videos/* !filter !diff !merge
+docs/assets/videos/* !filter !diff !merge

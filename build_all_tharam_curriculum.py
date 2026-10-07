@@ -210,8 +210,38 @@ def build_grade_coursebook(g, data):
         formatted_living = text_to_html(u['living'])
         formatted_story = text_to_html(u['story'])
 
-        # 4. Diagram for Phase 2
+        # 4. Diagram & Video Micro-Clip for Phase 2
         diagram_html = get_diagram_for_topic(enrichment['diagram_key'])
+
+        video_card_html = ""
+        if enrichment.get('video_clip'):
+            v_clip = enrichment['video_clip']
+            v_title = enrichment.get('video_title', 'பாடக் காட்சிக் குறும்படம்')
+            v_note = enrichment.get('video_note', 'காட்சியைப் பார்த்து பாடக் கருத்தை உணருங்கள்.')
+            v_poster = enrichment.get('video_poster', enrichment.get('hero_image', 'assets/images/lessons/temple_architecture.jpg'))
+            video_card_html = f"""
+            <div class="lesson-video-microclip-card" style="margin: 22px 0; background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.92)); border: 1px solid rgba(229, 169, 60, 0.4); border-radius: 16px; padding: 20px 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:10px;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <span style="font-size:1.4rem;">🎬</span>
+                  <div>
+                    <strong style="color:#ffffff; font-size:1rem; display:block;">காட்சிக் குறும்படம் (Cinematic Micro-Learning Film)</strong>
+                    <span style="color:var(--gold-soft); font-size:0.86rem;">{v_title}</span>
+                  </div>
+                </div>
+                <span style="background:rgba(229,169,60,0.15); color:var(--accent-gold); border:1px solid rgba(229,169,60,0.3); font-size:0.75rem; font-weight:700; padding:4px 12px; border-radius:12px;">HD FILM CLIP</span>
+              </div>
+              <div style="position:relative; border-radius:12px; overflow:hidden; background:#000; box-shadow:0 8px 24px rgba(0,0,0,0.6);">
+                <video controls preload="metadata" poster="{v_poster}" style="width:100%; max-height:420px; display:block;" playsinline>
+                  <source src="{v_clip}" type="video/mp4">
+                  உங்கள் உலாவி வீடியோ இயக்கத்தை ஆதரிக்கவில்லை.
+                </video>
+              </div>
+              <div style="margin-top:12px; font-size:0.88rem; color:#cbd5e1; line-height:1.6; background:rgba(0,0,0,0.25); padding:10px 14px; border-radius:8px; border-left:3px solid var(--accent-gold);">
+                💡 <strong style="color:#38bdf8;">கற்றல் சிந்தனை:</strong> {v_note}
+              </div>
+            </div>
+            """
 
         # 5. Vedic-STEM 21st Century Fusion for Phase 3
         fusion = FUSION_DATA.get((g, u['num']))
@@ -390,6 +420,8 @@ def build_grade_coursebook(g, data):
                 <div class="phase-sub-title">🎨 காட்சி வரைபடம் &amp; கருத்துப் படிமம் (Visual Schema):</div>
                 {diagram_html}
               </div>
+
+              {video_card_html}
 
               <!-- Inspiring Historical / Puranic Story -->
               <div class="story-card-clean">
