@@ -1,0 +1,740 @@
+import json
+import os
+
+releases = [
+    {
+        "chapter_number": 26,
+        "tamil_title": "அதிகாரம் 26 - புலால் உண்ணாமை",
+        "transliterated_title": "Pulaal Unnaamai",
+        "thematic_english_title": "Universal Compassion & Ahimsa",
+        "canonical_youtube_title": "அதிகாரம் 26 - புலால் உண்ணாமை | Pulaal Unnaamai - Universal Compassion & Ahimsa | Guru Kula Desam",
+        "track_id": "h2q-ADrbBc4",
+        "paal": "அறத்துப்பால் (Book of Virtue)",
+        "iyal": "துறவறவியல் (Ascetic Virtue)",
+        "kural_range": "251 - 260",
+        "key_kurals": [
+            {
+                "number": 251,
+                "tamil": "தன்ஊன் பெருக்கற்குத் தான்பிறிது ஊனுண்பான்\nஎங்ஙனம் ஆளும் அருள்.",
+                "english": "How can one possess compassion when nourishing one's own flesh by devouring the flesh of another creature?"
+            },
+            {
+                "number": 257,
+                "tamil": "உண்ணாமை வேண்டும் புலாஅல் பிறிதொன்றன்\nபுண்ணது உணர்வார்ப் பெறின்.",
+                "english": "Flesh is nothing other than the open wound of a slain creature; whoever perceives this truth will never consume it."
+            }
+        ],
+        "description": {
+            "tamil_summary": "அதிகாரம் 26: புலால் உண்ணாமை (Pulaal Unnaamai) — அனைத்து உயிர்களிடத்தும் கருணையும் கொல்லாமையும் போற்றும் உன்னத அதிகாரம்.\n\n'தன்ஊன் பெருக்கற்குத் தான்பிறிது ஊனுண்பான்\nஎங்ஙனம் ஆளும் அருள்.' (குறள் 251)\n\nதன் உடலை வளர்ப்பதற்காக மற்றோர் உயிரின் உடலைத் தின்னும் ஒருவன் எங்ஙனம் அருளுடையவனாக இருக்க முடியும் என்று திருவள்ளுவர் வினவுகிறார்.\n\nபுலால் உண்ணாமை என்பது வெறும் உணவுப் பழக்கம் மட்டுமல்ல; அது சக உயிர்களிடத்தும் இயற்கையிடமும் நாம் கொள்ள வேண்டிய உச்சகட்ட அன்பின், அருளின், அகிம்சையின் அடையாளம். பிற உயிர்களின் துன்பத்தைத் தன் துன்பமாகக் கருதும் இரக்கமே மாந்தனின் ஆன்ம உயர்வுக்கு அடிப்படை என்று இந்நூல் போதிக்கிறது.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) மெய்ஞான இசையமைப்பில், சங்க காலத்து எழில்மிகு இயற்கை, தூய மலைச்சாரல், அமைதியான வனவிலங்குகள் மற்றும் தவவமைதி தவழும் காட்சிகளுடன் இணைந்த தெய்வீகப் படைப்பு.",
+            "english_summary": "Chapter 26: Pulaal Unnaamai (Universal Compassion & Reverence for All Life / Abstinence from Meat) from the timeless ethical treatise, Thirukkural by Thiruvalluvar.\n\n'How can someone practice true compassion when they nourish their own flesh by consuming the flesh of another living being?' (Kural 251)\n\nIn this profound chapter, Valluvar illuminates Ahimsa (non-injury) not merely as dietary restraint, but as the supreme awakening of unconditional universal love. The philosophy asserts that genuine spiritual consciousness cannot blossom where harm is inflicted upon innocent sentient beings. Reverence for all forms of life constitutes the eternal bedrock of moral integrity and cosmic harmony.\n\nExperience this majestic classical recording produced by Guru Kula Desam, harmonized with breathtaking photorealistic visual storytelling depicting ancient Tamil Sangam landscapes, tranquil fauna, and timeless ethical wisdom.",
+            "timestamps": [
+                {"time": "00:00", "label": "சங்க கால மலைமுகடுகளும் அதிகாலை விடியலும் (Sangam Dawn & Western Ghats)"},
+                {"time": "01:15", "label": "உயிர்களிடத்தில் அருள் நெறி - குறள் 251 (Sacred Harmony & Reverence for Life)"},
+                {"time": "02:45", "label": "திருவள்ளுவரின் அகிம்சை தத்துவம் - குறள் 257 (Timeless Ahimsa Philosophy)"},
+                {"time": "04:00", "label": "ஆன்ம அமைதியும் நிறைவும் (Spiritual Serenity & Conclusion)"}
+            ],
+            "audio_credits": {
+                "track": "அதிகாரம் 26 - புலால் உண்ணாமை (Original Master)",
+                "artist": "Guru Kula Desam",
+                "vocals_engineering": "Nagarajan Balasubramanian",
+                "audio_source_url": "https://www.youtube.com/watch?v=h2q-ADrbBc4",
+                "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+            },
+            "call_to_action": "Subscribe to @guru-kula-desam for authentic Thirukkural cinematic musical compositions, ancient Tamil philosophy, and spiritual heritage."
+        },
+        "hashtags": [
+            "#திருக்குறள்",
+            "#புலால்உண்ணாமை",
+            "#Thirukkural",
+            "#PulaalUnnaamai",
+            "#Ahimsa",
+            "#UniversalCompassion",
+            "#TamilHeritage",
+            "#GuruKulaDesam",
+            "#Spirituality",
+            "#Thiruvalluvar",
+            "#TamilWisdom"
+        ],
+        "search_tags": [
+            "திருக்குறள்",
+            "அதிகாரம் 26",
+            "புலால் உண்ணாமை",
+            "Thirukkural Chapter 26",
+            "Pulaal Unnaamai",
+            "Pulaal Unnamai",
+            "Ahimsa in Tamil",
+            "Thiruvalluvar Vegetarianism",
+            "Universal Compassion",
+            "Non-violence",
+            "Tamil moral philosophy",
+            "Guru Kula Desam",
+            "Sangam literature",
+            "ancient Tamil wisdom",
+            "Thirukkural songs",
+            "Tamil devotional music",
+            "Arathuppaal",
+            "Thuravaraviyal",
+            "Kural 251",
+            "vegetarianism philosophy",
+            "Tamil classical music"
+        ],
+        "google_flow_director_prompt": {
+            "aspect_ratio": "16:9",
+            "frame_rate": "24 fps",
+            "resolution": "8K Photorealistic",
+            "visual_grammar": "Authentic ancient classical Sangam Tamil aesthetics, natural atmospheric lighting, zero digital distortion",
+            "continuity_bible": {
+                "setting": "Ancient Sangam Tamil landscape, Western Ghats predawn mist, pristine streams flowing through weathered granite boulders, banyan groves",
+                "lighting": "Warm dawn sunlight (6:00 AM) breaking through lavender mountain mist, golden hour backlight, soft bronze oil lamp warmth",
+                "atmosphere": "Deep tranquility, ethical reverence, procedural mountain mist haze, sacred calm",
+                "hard_exclusions": "No modern artifacts, no roads, no electrical wires, no subtitles, no text overlays, no morphing limbs, no floating items"
+            },
+            "scenes": [
+                {
+                    "scene": 1,
+                    "timeframe": "00:00 - 00:10",
+                    "title": "Sacred Landscape & Predawn Reveal",
+                    "prompt": "Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. Wide aerial glide over majestic Western Ghats mountain ridges in ancient Tamil Nadu at predawn. Layered misty green peaks, morning clouds drifting gently across forested valleys, pristine mountain stream flowing through weathered granite boulders. Soft golden sun rays piercing through lavender mist. 8k resolution, ultra-detailed nature cinematography, calm spiritual grandeur."
+                },
+                {
+                    "scene": 2,
+                    "timeframe": "00:10 - 00:20",
+                    "title": "Ahimsa & Peaceful Coexistence",
+                    "prompt": "Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Ground-level slow dolly forward along an ancient granite courtyard surrounded by lush tropical trees. Universal compassion, ahimsa, non-harming to all living creatures, lush green nature and peaceful wildlife, sacred cows and deer grazing peacefully under morning sun in ancient Tamil landscape. Bronze oil lamps (kuthuvilakku) glow on stone ledges with natural flickering flames. A gentle mountain breeze sways nearby foliage, and subtle incense smoke curls toward the morning sky."
+                },
+                {
+                    "scene": 3,
+                    "timeframe": "00:20 - 00:30",
+                    "title": "Timeless Ethical Awakening",
+                    "prompt": "Create a single continuous 16:9 cinematic slow crane rise at 24 fps. An ancient Tamil sage / philosopher seated in peaceful contemplation on stone steps overlooking a tranquil lotus pond reflecting the morning sky. Sacred temple tower in distant mist. Deep moral serenity, profound inner peace."
+                }
+            ]
+        }
+    },
+    {
+        "chapter_number": 27,
+        "tamil_title": "அதிகாரம் 27 - தவம்",
+        "transliterated_title": "Thavam",
+        "thematic_english_title": "Spiritual Austerity & Meditation",
+        "canonical_youtube_title": "அதிகாரம் 27 - தவம் | Thavam - Spiritual Austerity & Meditation | Guru Kula Desam",
+        "track_id": "IEk-wwY3rC8",
+        "paal": "அறத்துப்பால் (Book of Virtue)",
+        "iyal": "துறவறவியல் (Ascetic Virtue)",
+        "kural_range": "261 - 270",
+        "key_kurals": [
+            {
+                "number": 261,
+                "tamil": "உற்றநோய் நோன்றல் உயிர்க்குறுகண் செய்யாமை\nஅற்றே தவத்திற்கு உரு.",
+                "english": "Patience in enduring one's own suffering and refraining from inflicting distress on any living being—that alone is the true form of penance."
+            },
+            {
+                "number": 267,
+                "tamil": "சுடச்சுடரும் பொன்போல் ஒளிவிடும் துன்பம்\nசுடச்சுட நோற்கிற் பவர்க்கு.",
+                "english": "Just as gold glistens with purer brilliance the more it is refined in blazing fire, so does the spirit shine as pain is endured in steadfast austerity."
+            }
+        ],
+        "description": {
+            "tamil_summary": "அதிகாரம் 27: தவம் (Thavam) — ஆன்மாவின் தூய்மையையும், புலனடக்கத்தின் பேராற்றலையும் உணர்த்தும் உன்னத மெய்யியல் அதிகாரம்.\n\n'உற்றநோய் நோன்றல் உயிர்க்குறுகண் செய்யாமை\nஅற்றே தவத்திற்கு உரு.' (குறள் 261)\n\nதனக்கு வரும் துன்பங்களைப் பொறுத்துக் கொள்வதும், பிற உயிர்களுக்கு எவ்விதத் தீங்கும் செய்யாமல் இருப்பதுமே தவத்தின் மெய்யான இலக்கணமாகும்.\n\n'சுடச்சுடரும் பொன்போல் ஒளிவிடும் துன்பம்\nசுடச்சுட நோற்கிற் பவர்க்கு.' (குறள் 267)\n\nநெருப்பில் சுடச்சுட பொன் மாசற்றுப் பிரகாசிப்பது போல, தவத்தின் வழியே வரும் இன்னல்களைத் தாங்கும் மனிதனின் ஆன்ம ஒளி உலகமெங்கும் சுடர்ந்து விளங்கும். தவம் என்பது உலகை வெறுத்து ஒதுங்குவதல்ல; மாறாக மனதை ஒருமுகப்படுத்தி, புலன்களை அடக்கி, பேரருளை எய்தும் மாபெரும் ஆன்ம சாதனை.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) தெய்வீகப் பண்ணிசை அமைப்பில், அமைதி தவழும் குகைத் தவம், ஞானியரின் ஒருமைப்பாடு, மற்றும் சங்க காலத்து தியானக் காட்சிகளுடன் கூடிய முழுமையான வீடியோ படைப்பு.",
+            "english_summary": "Chapter 27: Thavam (Spiritual Austerity, Deep Meditation & Penance) from Thirukkural by Thiruvalluvar.\n\n'To endure suffering with patience and to inflict no harm upon any living soul—this is the true essence of penance.' (Kural 261)\n\n'Just as gold shines brighter the more it is refined in fire, so does the spirit of the ascetic radiate pure spiritual luster through conscious endurance.' (Kural 267)\n\nValluvar presents Thavam not as world-denying isolation, but as supreme inner mastery—the forging of unshakable willpower, sensory equanimity, and profound union with ultimate truth. It is the spiritual crucible where self-purification burns away illusion to reveal eternal light.\n\nImmerse yourself in this sacred sonic composition by Guru Kula Desam, paired with evocative visuals of ancient ascetics in mountain meditation caves, gentle temple oil lamps, and the timeless stillness of Sangam hermitage groves.",
+            "timestamps": [
+                {"time": "00:00", "label": "தவ அமைதியும் விடியலின் தொடக்கமும் (Dawn of Inner Stillness)"},
+                {"time": "01:10", "label": "தவத்தின் இலக்கணம் - குறள் 261 (Essence of Penance & Non-injury)"},
+                {"time": "02:30", "label": "புடமிட்ட பொன்னென ஆன்ம ஒளி - குறள் 267 (Purification Through Spiritual Fire)"},
+                {"time": "03:55", "label": "மெய்யுணர்வு மற்றும் ஆசி (Transcendent Realization & Closure)"}
+            ],
+            "audio_credits": {
+                "track": "அதிகாரம் 27 - தவம் (Original Master)",
+                "artist": "Guru Kula Desam",
+                "banjo_engineering": "Nagarajan Balasubramanian",
+                "audio_source_url": "https://www.youtube.com/watch?v=IEk-wwY3rC8",
+                "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+            },
+            "call_to_action": "Subscribe to @guru-kula-desam to cultivate daily meditation, inner discipline, and immersion into classic Tamil wisdom."
+        },
+        "hashtags": [
+            "#திருக்குறள்",
+            "#தவம்",
+            "#Thirukkural",
+            "#Thavam",
+            "#Meditation",
+            "#SpiritualAusterity",
+            "#Tapas",
+            "#TamilHeritage",
+            "#GuruKulaDesam",
+            "#Spirituality",
+            "#InnerPeace",
+            "#Mindfulness"
+        ],
+        "search_tags": [
+            "திருக்குறள்",
+            "அதிகாரம் 27",
+            "தவம்",
+            "Thirukkural Chapter 27",
+            "Thavam",
+            "Tapas in Tamil",
+            "Spiritual Austerity",
+            "Deep Meditation",
+            "Asceticism",
+            "Thiruvalluvar Thavam",
+            "Tamil meditation music",
+            "Guru Kula Desam",
+            "Kural 261",
+            "Kural 267",
+            "inner peace",
+            "self discipline",
+            "Sangam Tamil philosophy",
+            "spiritual enlightenment",
+            "padmasana meditation",
+            "ancient Tamil ascetics"
+        ],
+        "google_flow_director_prompt": {
+            "aspect_ratio": "16:9",
+            "frame_rate": "24 fps",
+            "resolution": "8K Photorealistic",
+            "visual_grammar": "Authentic ancient classical Sangam Tamil aesthetics, sacred cave shelter, contemplative stillness",
+            "continuity_bible": {
+                "setting": "Ancient Western Ghats mountain cave shelter, sacred banyan tree roots, granite floor, tranquil dawn mist",
+                "lighting": "Warm dawn sunlight (6:00 AM) breaking through mountain mist, golden hour backlight, bronze oil lamp flickering warmth",
+                "atmosphere": "Deep meditative austerity, reverence, ethical moral clarity, gentle procedural dhoopam / mountain mist haze",
+                "hard_exclusions": "No subtitles, no text on screen, no logos, no watermarks, no modern vehicles, no electric wires, no plastic, no morphing fingers/limbs"
+            },
+            "scenes": [
+                {
+                    "scene": 1,
+                    "timeframe": "00:00 - 00:10",
+                    "title": "Sacred Landscape & Predawn Reveal",
+                    "prompt": "Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. Wide aerial glide over majestic Western Ghats mountain ridges in ancient Tamil Nadu at predawn. Layered misty green peaks, morning clouds drifting gently across forested valleys, pristine mountain stream flowing through weathered granite boulders. Soft golden sun rays piercing through lavender mist. 8k resolution, ultra-detailed nature cinematography, calm spiritual grandeur."
+                },
+                {
+                    "scene": 2,
+                    "timeframe": "00:10 - 00:20",
+                    "title": "Deep Padmasana Meditation",
+                    "prompt": "Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Ground-level slow dolly forward along an ancient granite courtyard surrounded by lush tropical trees. Deep meditative spiritual austerity, an ancient Tamil ascetic sage seated in deep padmasana meditation under a sacred banyan tree near mountain cave, surrounded by tranquil misty Western Ghats ridges and glowing oil flame. Bronze oil lamps (kuthuvilakku) glow on stone ledges with natural flickering flames. A gentle mountain breeze sways nearby foliage, and subtle incense smoke curls toward the morning sky."
+                },
+                {
+                    "scene": 3,
+                    "timeframe": "00:20 - 00:30",
+                    "title": "Timeless Ethical Awakening",
+                    "prompt": "Create a single continuous 16:9 cinematic slow crane rise at 24 fps. An ancient Tamil sage / philosopher seated in peaceful contemplation on stone steps overlooking a tranquil lotus pond reflecting the morning sky. Sacred temple tower in distant mist. Deep moral serenity, profound inner peace."
+                }
+            ]
+        }
+    },
+    {
+        "chapter_number": 52,
+        "tamil_title": "அதிகாரம் 52 - தெரிந்து வினையாடல்",
+        "transliterated_title": "Therinthu Vinaiyaadal",
+        "thematic_english_title": "Right Delegation & Entrusted Responsibility",
+        "canonical_youtube_title": "அதிகாரம் 52 - தெரிந்து வினையாடல் | Therinthu Vinaiyaadal - Right Delegation | Guru Kula Desam",
+        "track_id": "5uRYFxhT32k",
+        "paal": "பொருட்பால் (Book of Wealth & Governance)",
+        "iyal": "அரசியல் (Royal Statecraft & Leadership)",
+        "kural_range": "511 - 520",
+        "key_kurals": [
+            {
+                "number": 517,
+                "tamil": "இதனை இதனால் இவன்முடிக்கும் என்றாய்ந்து\nஅதனை அவன்கண் விடல்.",
+                "english": "Having thoroughly investigated that this person can accomplish this duty by these means, entrust the assignment entirely to them."
+            },
+            {
+                "number": 518,
+                "tamil": "வினைக்குஉரிமை நாடிய பின்றை அவனை\nஅதற்குரிய னாக முயல்.",
+                "english": "Having ascertained a person's complete fitness for an undertaking, empower them to perform that duty with full authority."
+            }
+        ],
+        "description": {
+            "tamil_summary": "அதிகாரம் 52: தெரிந்து வினையாடல் (Therinthu Vinaiyaadal) — தலைமைப் பண்பு, தகுதியான நபரைத் தேர்ந்தெடுத்தல் மற்றும் பொறுப்புகளை ஒப்படைத்தல் குறித்த உலகளாவிய மேலாண்மைப் பாடம்.\n\n'இதனை இதனால் இவன்முடிக்கும் என்றாய்ந்து\nஅதனை அவன்கண் விடல்.' (குறள் 517)\n\nஇச்செயலை இந்த வழியில் இவன் மிகச்சிறப்பாக முடிப்பான் என்பதை நன்கு ஆராய்ந்துணர்ந்து, அச்செயலை அவனிடம் முழுமையாக ஒப்படைத்துவிட வேண்டும்.\n\nவள்ளுவர் வகுத்த இந்த அரசியல் மற்றும் மேலாண்மைத் தத்துவம், இரண்டாயிரம் ஆண்டுகளைக் கடந்தும் இன்றைய நிர்வாகவியலுக்கும் தலைமைத்துவத்திற்கும் முதன்மை வழிகாட்டியாக விளங்குகிறது. தகுதியுள்ளோரை இனம்கண்டு, அவர்களின் ஆற்றலின் மீது நம்பிக்கை வைத்து, முழு அதிகாரத்தையும் வழங்குவதே ஒரு சிறந்த தலைவனின் வெற்றியின் ரகசியமாகும்.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) கம்பீரமான இசை அமைப்பில், பண்டைய தமிழ் மன்னர்களின் சபை, செப்பேடு பட்டயங்கள் வழங்கும் அரசுப் பேராளர்கள் மற்றும் நிர்வாக மாண்பை விளக்கும் வரலாற்றுச் சிறப்புமிக்க காட்சிப் பதிவு.",
+            "english_summary": "Chapter 52: Therinthu Vinaiyaadal (Selection & Delegation of Duties / Entrusted Responsibility) from the Porutpaal (Book of Governance) of Thirukkural.\n\n'Analyze thoroughly that this person will accomplish this task through these specific means; having resolved so, entrust the work completely to them.' (Kural 517)\n\nThiruvalluvar delivers one of the most timeless masterclasses on leadership, human resource evaluation, and organizational governance ever written. Centuries before modern management theory, the Kural established that great leaders do not micromanage—they discern character, test competence, align right tools with right talents, and empower their ministers with total trust and autonomy.\n\nExperience this majestic production by Guru Kula Desam, featuring classical orchestration accompanied by evocative Sangam palace council chambers, royal copper edict ceremonies, and ancient governance ethics.",
+            "timestamps": [
+                {"time": "00:00", "label": "சங்க கால அரசவை விடியல் (Dawn over Ancient Tamil Capital)"},
+                {"time": "01:20", "label": "அதிகாரத் தத்துவம் - குறள் 517 (Principles of Wise Delegation)"},
+                {"time": "03:00", "label": "தகுதி அறிதலும் அதிகாரமும் - குறள் 518 (Empowering Competence)"},
+                {"time": "05:00", "label": "நல்லாட்சியின் நற்பயன்கள் (Triumph of Righteous Governance)"}
+            ],
+            "audio_credits": {
+                "track": "அதிகாரம் 52 - தெரிந்து வினையாடல் (Original Master)",
+                "artist": "Guru Kula Desam",
+                "banjo_engineering": "Nagarajan Balasubramanian",
+                "audio_source_url": "https://www.youtube.com/watch?v=5uRYFxhT32k",
+                "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+            },
+            "call_to_action": "Subscribe to @guru-kula-desam for leadership insights, administrative ethics, and musical masterworks rooted in classical Tamil wisdom."
+        },
+        "hashtags": [
+            "#திருக்குறள்",
+            "#தெரிந்துவினையாடல்",
+            "#Thirukkural",
+            "#TherinthuVinaiyaadal",
+            "#Leadership",
+            "#ManagementWisdom",
+            "#Delegation",
+            "#TamilHeritage",
+            "#GuruKulaDesam",
+            "#Statecraft",
+            "#Governance"
+        ],
+        "search_tags": [
+            "திருக்குறள்",
+            "அதிகாரம் 52",
+            "தெரிந்து வினையாடல்",
+            "Thirukkural Chapter 52",
+            "Therinthu Vinaiyaadal",
+            "Leadership lessons in Thirukkural",
+            "Delegation of authority",
+            "Tamil management principles",
+            "Thiruvalluvar leadership",
+            "Porutpaal",
+            "Kural 517",
+            "ancient Tamil governance",
+            "administrative wisdom",
+            "Guru Kula Desam",
+            "Sangam kings",
+            "ethical leadership",
+            "organizational management"
+        ],
+        "google_flow_director_prompt": {
+            "aspect_ratio": "16:9",
+            "frame_rate": "24 fps",
+            "resolution": "8K Photorealistic",
+            "visual_grammar": "Authentic ancient classical Sangam Tamil aesthetics, regal governance council, stone pillared hall",
+            "continuity_bible": {
+                "setting": "Ancient Sangam royal court hall, carved granite pillared pavilion, morning sunlight casting geometric beam shadows",
+                "lighting": "Warm dawn sunlight (6:00 AM) breaking through mountain mist, golden hour backlight, bronze oil lamp flickering warmth",
+                "atmosphere": "Regal dignity, administrative solemnity, bronze oil lamps, palm-leaf & copper-plate royal edicts",
+                "hard_exclusions": "No modern artifacts, no subtitles, no text on screen, no logos, no watermarks, no electric wires, no plastic"
+            },
+            "scenes": [
+                {
+                    "scene": 1,
+                    "timeframe": "00:00 - 00:10",
+                    "title": "Sacred Capital & River Basin Panorama",
+                    "prompt": "Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. Wide aerial glide over majestic Western Ghats mountain ridges in ancient Tamil Nadu at predawn. Layered misty green peaks, morning clouds drifting gently across forested valleys, pristine mountain stream flowing through weathered granite boulders. Soft golden sun rays piercing through lavender mist. 8k resolution, ultra-detailed nature cinematography, calm spiritual grandeur."
+                },
+                {
+                    "scene": 2,
+                    "timeframe": "00:10 - 00:20",
+                    "title": "Council of Delegation & Royal Trust",
+                    "prompt": "Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Ground-level slow dolly forward along an ancient granite courtyard surrounded by lush tropical trees. Grand ancient Tamil kingdom administrative council, a wise noble ruler in a majestic granite court hall entrusting sacred duties and copper-plate edicts to righteous ministers and elders with profound wisdom. Bronze oil lamps (kuthuvilakku) glow on stone ledges with natural flickering flames. A gentle mountain breeze sways nearby foliage, and subtle incense smoke curls toward the morning sky."
+                },
+                {
+                    "scene": 3,
+                    "timeframe": "00:20 - 00:30",
+                    "title": "Timeless Ethical Awakening",
+                    "prompt": "Create a single continuous 16:9 cinematic slow crane rise at 24 fps. An ancient Tamil sage / philosopher seated in peaceful contemplation on stone steps overlooking a tranquil lotus pond reflecting the morning sky. Sacred temple tower in distant mist. Deep moral serenity, profound inner peace."
+                }
+            ]
+        }
+    },
+    {
+        "chapter_number": 54,
+        "tamil_title": "அதிகாரம் 54 - பொச்சாவாமை",
+        "transliterated_title": "Pochchaavaamai",
+        "thematic_english_title": "Unfailing Vigilance & Mindfulness",
+        "canonical_youtube_title": "அதிகாரம் 54 - பொச்சாவாமை | Pochchaavaamai - Unfailing Vigilance & Mindfulness | Guru Kula Desam",
+        "track_id": "O0hASl4BS2c",
+        "paal": "பொருட்பால் (Book of Wealth & Governance)",
+        "iyal": "அமைச்சு / அரசியல் (Statecraft & Vigilance)",
+        "kural_range": "531 - 540",
+        "key_kurals": [
+            {
+                "number": 539,
+                "tamil": "இகழ்ச்சியின் கெட்டாரை உள்ளுக தாம்தம்\nமகிழ்ச்சியின் மைந்துறும் போழ்து.",
+                "english": "Call to mind those ruined by heedlessness whenever your heart is intoxicated with rejoicing."
+            },
+            {
+                "number": 535,
+                "tamil": "பொச்சாப்புக் கொல்லும் புகழை அறிவினை\nநிச்சலும் கொன்றொழுகும் நோய்.",
+                "english": "Forgetfulness and negligence destroy renown; like an insidious disease, it eats away intellect every day."
+            }
+        ],
+        "description": {
+            "tamil_summary": "அதிகாரம் 54: பொச்சாவாமை (Pochchaavaamai) — மறதியின்மை, விழிப்புணர்வு மற்றும் கவனமின்மையை விரட்டும் பேரறிவு நெறி.\n\n'இகழ்ச்சியின் கெட்டாரை உள்ளுக தாம்தம்\nமகிழ்ச்சியின் மைந்துறும் போழ்து.' (குறள் 539)\n\nமகிழ்ச்சியின் மிகுதியால் தனது கடமையை மறந்து சோம்பி இருக்கும் தருணங்களில், முன்னரே கவனக்குறைவால் அழிந்துபோனவர்களை நினைத்துப் பார்க்க வேண்டும்.\n\nபொச்சாவாமை என்பது கடமையில் ஒருபோதும் மறதி கொள்ளாத விழிப்புணர்வாகும். அலட்சியமும் கவனமின்மையும் ஒரு மனிதனின் செல்வம், புகழ், அறிவு அனைத்தையும் ஒரே நொடியில் அழித்துவிடும் வல்லமை கொண்டவை. வாழ்க்கையிலும் பணியிலும் இடைவிடாத விழிப்புணர்வே பாதுகாப்பின் கவசம் என்று வள்ளுவர் எச்சரிக்கிறார்.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) நுண்ணிய இசைப் பின்னணியில், சங்க காலக் கோட்டை கண்காணிப்புக் கோபுரங்கள், சுவடி காப்பகங்கள் மற்றும் விழிப்புடன் கூடிய காவல் அமைப்புகளைச் சித்தரிக்கும் விழிப்புணர்வுப் பதிவு.",
+            "english_summary": "Chapter 54: Pochchaavaamai (Unfailing Vigilance, Mindfulness & Freedom from Negligence) from Thirukkural by Thiruvalluvar.\n\n'Recall to mind those who were ruined by negligence, whenever you are tempted to become reckless in moments of excessive joy.' (Kural 539)\n\nValluvar explores the subtle yet fatal danger of heedlessness (Pochchaappu). In moments of triumph and complacency, humans let down their guard—and therein lies destruction. True mastery demands unwavering vigilance, steady awareness, and conscious presence of mind in every duty and thought.\n\nPresented with the stirring musical composition of Guru Kula Desam, illustrating ancient fortress sentinels keeping watch over misty horizons, scholarly scribes safeguarding manuscripts by lamplight, and meditative mindfulness.",
+            "timestamps": [
+                {"time": "00:00", "label": "விழிப்புணர்வின் அதிகாலை அழைப்பு (Dawn Call to Awareness)"},
+                {"time": "01:15", "label": "அலட்சியத்தின் ஆபத்து - குறள் 539 (The Danger of Complacency)"},
+                {"time": "02:45", "label": "மறதியின் அழிவும் அறிவின் ஒளியும் - குறள் 535 (Overcoming Forgetfulness)"},
+                {"time": "04:30", "label": "கடமை உணர்வும் விழிப்புநிலையும் (Ethical Vigilance & Climax)"}
+            ],
+            "audio_credits": {
+                "track": "அதிகாரம் 54 - பொச்சாவாமை (Original Master)",
+                "artist": "Guru Kula Desam",
+                "vocals_engineering": "Nagarajan Balasubramanian",
+                "audio_source_url": "https://www.youtube.com/watch?v=O0hASl4BS2c",
+                "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+            },
+            "call_to_action": "Subscribe to @guru-kula-desam for songs and teachings that cultivate alertness, mindfulness, and classical spiritual resilience."
+        },
+        "hashtags": [
+            "#திருக்குறள்",
+            "#பொச்சாவாமை",
+            "#Thirukkural",
+            "#Pochchaavaamai",
+            "#Mindfulness",
+            "#Vigilance",
+            "#Focus",
+            "#TamilHeritage",
+            "#GuruKulaDesam",
+            "#SelfDiscipline",
+            "#Wisdom"
+        ],
+        "search_tags": [
+            "திருக்குறள்",
+            "அதிகாரம் 54",
+            "பொச்சாவாமை",
+            "Thirukkural Chapter 54",
+            "Pochchaavaamai",
+            "Pochavaamai",
+            "Mindfulness in Tamil",
+            "Unfailing vigilance",
+            "Alertness",
+            "Overcoming negligence",
+            "Thiruvalluvar on focus",
+            "Porutpaal",
+            "Kural 539",
+            "ancient Tamil security",
+            "mental awareness",
+            "Guru Kula Desam",
+            "self discipline",
+            "focus and attention"
+        ],
+        "google_flow_director_prompt": {
+            "aspect_ratio": "16:9",
+            "frame_rate": "24 fps",
+            "resolution": "8K Photorealistic",
+            "visual_grammar": "Authentic ancient classical Sangam Tamil aesthetics, watchful sentinels, quiet scholarly scrutiny",
+            "continuity_bible": {
+                "setting": "Ancient fortress watchtowers overlooking misty valleys at dawn, granite study halls with olai chuvadi manuscripts",
+                "lighting": "Warm dawn sunlight (6:00 AM) breaking through mountain mist, golden hour backlight, bronze oil lamp flickering warmth",
+                "atmosphere": "Alertness, wisdom and perpetual awareness, calm procedural haze, steady flame illumination",
+                "hard_exclusions": "No subtitles, no text on screen, no logos, no watermarks, no modern vehicles, no electric wires, no plastic"
+            },
+            "scenes": [
+                {
+                    "scene": 1,
+                    "timeframe": "00:00 - 00:10",
+                    "title": "Misty Watchtower & Dawn Mountain Ridge",
+                    "prompt": "Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. Wide aerial glide over majestic Western Ghats mountain ridges in ancient Tamil Nadu at predawn. Layered misty green peaks, morning clouds drifting gently across forested valleys, pristine mountain stream flowing through weathered granite boulders. Soft golden sun rays piercing through lavender mist. 8k resolution, ultra-detailed nature cinematography, calm spiritual grandeur."
+                },
+                {
+                    "scene": 2,
+                    "timeframe": "00:10 - 00:20",
+                    "title": "Sentinels of Awareness & Preservation",
+                    "prompt": "Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Ground-level slow dolly forward along an ancient granite courtyard surrounded by lush tropical trees. Alertness, wisdom and perpetual awareness, ancient fortress watchtowers overlooking misty valleys at dawn, scholars preserving sacred palm-leaf manuscripts under steady bronze oil lamps. Bronze oil lamps (kuthuvilakku) glow on stone ledges with natural flickering flames. A gentle mountain breeze sways nearby foliage, and subtle incense smoke curls toward the morning sky."
+                },
+                {
+                    "scene": 3,
+                    "timeframe": "00:20 - 00:30",
+                    "title": "Timeless Ethical Awakening",
+                    "prompt": "Create a single continuous 16:9 cinematic slow crane rise at 24 fps. An ancient Tamil sage / philosopher seated in peaceful contemplation on stone steps overlooking a tranquil lotus pond reflecting the morning sky. Sacred temple tower in distant mist. Deep moral serenity, profound inner peace."
+                }
+            ]
+        }
+    },
+    {
+        "chapter_number": 57,
+        "tamil_title": "அதிகாரம் 57 - வெருவந்த செய்யாமை",
+        "transliterated_title": "Veruvantha Seyyaamai",
+        "thematic_english_title": "Benevolent & Gentle Governance",
+        "canonical_youtube_title": "அதிகாரம் 57 - வெருவந்த செய்யாமை | Veruvantha Seyyaamai - Benevolent Governance | Guru Kula Desam",
+        "track_id": "hjcH8zbEleE",
+        "paal": "பொருட்பால் (Book of Wealth & Governance)",
+        "iyal": "செங்கோன்மை / அரசியல் (Compassionate Rule & Justice)",
+        "kural_range": "561 - 570",
+        "key_kurals": [
+            {
+                "number": 561,
+                "tamil": "தக்காங்கு நாடித் தலைச்செல்லா வண்ணத்தால்\nஒத்தங்கு ஒறுப்பது வேந்து.",
+                "english": "A righteous ruler investigates impartially and applies proportionate correction so that misconduct is not repeated."
+            },
+            {
+                "number": 566,
+                "tamil": "கடுஞ்சொல்லன் கண்ணிலன் ஆயின் அவன்றன்\nநெடுஞ்செல்வம் நீங்கி விடும்.",
+                "english": "If a ruler is harsh in speech and devoid of compassionate eyes, their vast wealth and rule will perish swiftly."
+            }
+        ],
+        "description": {
+            "tamil_summary": "அதிகாரம் 57: வெருவந்த செய்யாமை (Veruvantha Seyyaamai) — கொடுங்கோல் ஆட்சியை மறுத்து, குடிமக்கள் அஞ்சாத பரிவான நல்லாட்சியை வலியுறுத்தும் அரசியல் அதிகாரம்.\n\n'தக்காங்கு நாடித் தலைச்செல்லா வண்ணத்தால்\nஒத்தங்கு ஒறுப்பது வேந்து.' (குறள் 561)\n\nகுற்றங்களை நடுநிலையோடு ஆராய்ந்து, மீண்டும் அக்குற்றம் நேராத வகையில், குற்றத்திற்குப் பொருத்தமான அளவோடு தண்டனை விதிப்பவனே உண்மையான அரசன்.\n\n'கடுஞ்சொல்லன் கண்ணிலன் ஆயின் அவன்றன்\nநெடுஞ்செல்வம் நீங்கி விடும்.' (குறள் 566)\n\nகடுமையான சொற்களைப் பேசி, இரக்கமற்ற பார்வை கொண்ட ஆட்சியாளனின் பெரும் செல்வமும் அதிகாரமும் மிக விரைவில் அழிந்துபோம். அதிகாரம் என்பது அச்சுறுத்துவதற்கல்ல; குடிமக்களைப் பெற்றோன் போல அரவணைத்து, அச்சமின்றி வாழ வைப்பதற்கே என்று அறம் பகர்கிறார் வள்ளுவப் பெருந்தகை.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) கம்பீரமும் கருணையும் கலந்த இசையமைப்பில், குடிமக்களுக்கு இன்னருள் புரியும் மாமன்னர், மக்கள் மன்றம் மற்றும் செங்கோல் நீதியை விளக்கும் அற்புதக் காட்சிப் பதிவு.",
+            "english_summary": "Chapter 57: Veruvantha Seyyaamai (Absence of Tyranny / Benevolent & Gentle Governance) from Thirukkural by Thiruvalluvar.\n\n'A true sovereign investigates impartially and metes out proportional correction so that offense does not recur.' (Kural 561)\n\n'If a ruler speaks harsh words and lacks compassionate eyes, their vast wealth and empire will swiftly dissolve away.' (Kural 566)\n\nValluvar issues an uncompromising denunciation of authoritarian fear and cruelty. Legitimate power is rooted never in terror, but in benevolent accessibility, fair justice, and empathetic listening to the grievances of ordinary citizens. The ruler whose subjects tremble in fear will soon witness the collapse of their realm.\n\nAccompanied by the moving orchestration of Guru Kula Desam, depicting ancient Tamil courts where just rulers grant relief to agrarian families beneath open stone mandapams with gentle dignity.",
+            "timestamps": [
+                {"time": "00:00", "label": "நீதி நெறிமுறை விடியல் (Dawn of Righteous Law)"},
+                {"time": "01:20", "label": "நடுநிலைத் தண்டனையும் நீதியும் - குறள் 561 (Proportional Justice)"},
+                {"time": "02:40", "label": "கொடுங்கோல் ஆட்சியின் அழிவு - குறள் 566 (The Fall of Tyranny)"},
+                {"time": "04:10", "label": "மக்கள் மகிழும் செங்கோல் மாண்பு (Flourishing Kingdom of Benevolence)"}
+            ],
+            "audio_credits": {
+                "track": "அதிகாரம் 57 - வெருவந்த செய்யாமை (Original Master)",
+                "artist": "Guru Kula Desam",
+                "vocals_engineering": "Nagarajan Balasubramanian",
+                "audio_source_url": "https://www.youtube.com/watch?v=hjcH8zbEleE",
+                "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+            },
+            "call_to_action": "Subscribe to @guru-kula-desam to discover timeless ethical governance and classical Tamil culture."
+        },
+        "hashtags": [
+            "#திருக்குறள்",
+            "#வெருவந்தசெய்யாமை",
+            "#Thirukkural",
+            "#VeruvanthaSeyyaamai",
+            "#Justice",
+            "#GoodGovernance",
+            "#CompassionateLeadership",
+            "#TamilHeritage",
+            "#GuruKulaDesam",
+            "#HumanRights",
+            "#RighteousRule"
+        ],
+        "search_tags": [
+            "திருக்குறள்",
+            "அதிகாரம் 57",
+            "வெருவந்த செய்யாமை",
+            "Thirukkural Chapter 57",
+            "Veruvantha Seyyaamai",
+            "Absence of tyranny",
+            "Just governance",
+            "Compassionate leadership",
+            "Rule of law in ancient Tamil",
+            "Thiruvalluvar politics",
+            "Kural 561",
+            "Kural 566",
+            "Porutpaal",
+            "justice and mercy",
+            "good governance",
+            "Guru Kula Desam",
+            "ancient Sangam justice",
+            "benevolent king"
+        ],
+        "google_flow_director_prompt": {
+            "aspect_ratio": "16:9",
+            "frame_rate": "24 fps",
+            "resolution": "8K Photorealistic",
+            "visual_grammar": "Authentic ancient classical Sangam Tamil aesthetics, accessible sovereign, compassionate court",
+            "continuity_bible": {
+                "setting": "Ancient stone open mandapam, village elders and farming families presenting petitions to a noble seated king",
+                "lighting": "Warm dawn sunlight (6:00 AM) breaking through mountain mist, golden hour backlight, bronze oil lamp flickering warmth",
+                "atmosphere": "Deep tranquility, reverence, ethical moral clarity, gentle procedural dhoopam / mountain mist haze",
+                "hard_exclusions": "No modern artifacts, no subtitles, no text on screen, no logos, no watermarks, no electric wires, no plastic"
+            },
+            "scenes": [
+                {
+                    "scene": 1,
+                    "timeframe": "00:00 - 00:10",
+                    "title": "Misty Agrarian River Plain & Capital",
+                    "prompt": "Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. Wide aerial glide over majestic Western Ghats mountain ridges in ancient Tamil Nadu at predawn. Layered misty green peaks, morning clouds drifting gently across forested valleys, pristine mountain stream flowing through weathered granite boulders. Soft golden sun rays piercing through lavender mist. 8k resolution, ultra-detailed nature cinematography, calm spiritual grandeur."
+                },
+                {
+                    "scene": 2,
+                    "timeframe": "00:10 - 00:20",
+                    "title": "The Compassionate Audience Hall",
+                    "prompt": "Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Ground-level slow dolly forward along an ancient granite courtyard surrounded by lush tropical trees. Just, merciful, and gentle governance; a benevolent righteous Tamil king granting compassionate audience and relief to common farmers and families in a sunlit stone pavilion. Bronze oil lamps (kuthuvilakku) glow on stone ledges with natural flickering flames. A gentle mountain breeze sways nearby foliage, and subtle incense smoke curls toward the morning sky."
+                },
+                {
+                    "scene": 3,
+                    "timeframe": "00:20 - 00:30",
+                    "title": "Timeless Ethical Awakening",
+                    "prompt": "Create a single continuous 16:9 cinematic slow crane rise at 24 fps. An ancient Tamil sage / philosopher seated in peaceful contemplation on stone steps overlooking a tranquil lotus pond reflecting the morning sky. Sacred temple tower in distant mist. Deep moral serenity, profound inner peace."
+                }
+            ]
+        }
+    },
+    {
+        "chapter_number": 61,
+        "tamil_title": "அதிகாரம் 61 - மடியின்மை",
+        "transliterated_title": "Madiyinmai",
+        "thematic_english_title": "Overcoming Indolence & Energetic Diligence",
+        "canonical_youtube_title": "அதிகாரம் 61 - மடியின்மை | Madiyinmai - Overcoming Indolence & Diligence | Guru Kula Desam",
+        "track_id": "GfGlO3RQuik",
+        "paal": "பொருட்பால் (Book of Wealth & Governance)",
+        "iyal": "குடிமை / வினையியல் (Action & Family Dignity)",
+        "kural_range": "601 - 610",
+        "key_kurals": [
+            {
+                "number": 602,
+                "tamil": "மடியை மடியா தொழுகல் குடியைக்\nகுடியாக வேண்டு பவர்.",
+                "english": "Let those who yearn to exalt their family and community destroy sloth without giving it any quarter."
+            },
+            {
+                "number": 604,
+                "tamil": "குடிமடிந்து குற்றம் பெருகும் மடிமடிந்து\nமாண்ட உஞற்றி இலர்க்கு.",
+                "english": "The honor of one's lineage perishes and transgressions multiply for those who sink into sluggish indolence and lack noble effort."
+            }
+        ],
+        "description": {
+            "tamil_summary": "அதிகாரம் 61: மடியின்மை (Madiyinmai) — சோம்பலை அறவே ஒழித்து, சுறுசுறுப்பும் இடைவிடாத உழைப்பும் கொண்டு வாழ்க்கையை உயர்த்தும் மாபெரும் ஊக்க அதிகாரம்.\n\n'மடியை மடியா தொழுகல் குடியைக்\nகுடியாக வேண்டு பவர்.' (குறள் 602)\n\nதன் குடும்பத்தையும் குலத்தையும் மேலோங்கச் செய்ய விரும்புகிறவன், சோம்பலைத் தனக்குள் ஒருபோதும் புகவிடாமல் அடியோடு அழித்து வாழ வேண்டும்.\n\n'குடிமடிந்து குற்றம் பெருகும் மடிமடிந்து\nமாண்ட உஞற்றி இலர்க்கு.' (குறள் 604)\n\nசோம்பலில் மூழ்கிச் சிறந்த முயற்சி செய்யாதவர்களது குடும்பப் பெருமை அழியும்; குற்றங்களும் குறைகளும் நாளுக்கு நாள் பெருகும். காலம் பொன் போன்றது; விடியலின் ஆற்றலை உணர்ந்து சுறுசுறுப்புடன் உழைப்பவனே உலகை ஆள்வான் என்ற அசைக்க முடியாத உழைப்பின் தத்துவத்தை வள்ளுவம் பறைசாற்றுகிறது.\n\nகுரு குல தேசத்தின் (@guru-kula-desam) ஊக்கமூட்டும் வீரிய இசையில், அதிகாலை பொன்போல் ஒளிரும் நெல் வயல் அறுவடை, பொங்கிப் பாயும் நதிகள் மற்றும் வானுயர்ந்த கோவில் கோபுர சிற்பக் கலைப் பணிகளுடன் இணைந்த உத்வேகப் படைப்பு.",
+            "english_summary": "Chapter 61: Madiyinmai (Overcoming Indolence, Sloth & Cultivating Energetic Diligence) from Thirukkural by Thiruvalluvar.\n\n'Let those who wish to elevate the nobility of their family and nation extinguish sloth from within themselves.' (Kural 602)\n\n'The lineage perishes and vices multiply for those who wallow in indolence, devoid of honorable exertion.' (Kural 604)\n\nValluvar delivers an electrifying call to vigorous purposeful action. Sloth is condemned as the silent poison that rots dynasties, dissipates fortune, and invites ignominy. Conversely, relentless effort, early rising, and persistent industriousness conquer even fate itself.\n\nSet to an invigorating, rhythmic classical soundtrack produced by Guru Kula Desam, capturing Sangam dawn harvests across lush delta paddy fields, sculptors carving monumental granite gopurams, and the glory of purposeful work.",
+            "timestamps": [
+                {"time": "00:00", "label": "அதிகாலை உழைப்பின் உத்வேகம் (Dawn Energy & Awakening)"},
+                {"time": "01:05", "label": "சோம்பலின் அழிவு - குறள் 602 & 604 (Vanquishing Sloth)"},
+                {"time": "02:25", "label": "முயற்சியின் மாண்பும் குலப்பெருமையும் (Exertion, Honor & Diligence)"},
+                {"time": "03:40", "label": "உழைப்பின் வெற்றிப் பேரொளி (Triumph of Industrious Spirit)"}
+            ],
+            "audio_credits": {
+                "track": "அதிகாரம் 61 - மடியின்மை (Original Master)",
+                "artist": "Guru Kula Desam",
+                "vocals_engineering": "Nagarajan Balasubramanian",
+                "audio_source_url": "https://www.youtube.com/watch?v=GfGlO3RQuik",
+                "playlist_url": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro"
+            },
+            "call_to_action": "Subscribe to @guru-kula-desam for inspiring motivational melodies, ancient work ethics, and timeless Tamil wisdom."
+        },
+        "hashtags": [
+            "#திருக்குறள்",
+            "#மடியின்மை",
+            "#Thirukkural",
+            "#Madiyinmai",
+            "#HardWork",
+            "#Diligence",
+            "#OvercomingLaziness",
+            "#TamilHeritage",
+            "#GuruKulaDesam",
+            "#Motivation",
+            "#SuccessMindset"
+        ],
+        "search_tags": [
+            "திருக்குறள்",
+            "அதிகாரம் 61",
+            "மடியின்மை",
+            "Thirukkural Chapter 61",
+            "Madiyinmai",
+            "Overcoming laziness",
+            "Diligence and hard work",
+            "Motivation in Tamil",
+            "Thiruvalluvar productivity",
+            "Porutpaal",
+            "Kural 602",
+            "Kural 604",
+            "work ethic",
+            "industriousness",
+            "Guru Kula Desam",
+            "Tamil motivational song",
+            "success through effort",
+            "Sangam Tamil work culture"
+        ],
+        "google_flow_director_prompt": {
+            "aspect_ratio": "16:9",
+            "frame_rate": "24 fps",
+            "resolution": "8K Photorealistic",
+            "visual_grammar": "Authentic ancient classical Sangam Tamil aesthetics, energetic industrious morning, golden delta fields",
+            "continuity_bible": {
+                "setting": "Lush delta paddy fields at sunrise, stone carving yards of ancient temple builders, brisk flowing river",
+                "lighting": "Warm dawn sunlight (6:00 AM) breaking through mountain mist, golden hour backlight, bronze oil lamp flickering warmth",
+                "atmosphere": "Vibrant purposeful energy, crisp morning dew, artisanal focus, moral determination",
+                "hard_exclusions": "No modern vehicles, no heavy machinery, no subtitles, no text on screen, no logos, no watermarks"
+            },
+            "scenes": [
+                {
+                    "scene": 1,
+                    "timeframe": "00:00 - 00:10",
+                    "title": "Dawn Over Golden Delta Valleys",
+                    "prompt": "Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. Wide aerial glide over majestic Western Ghats mountain ridges in ancient Tamil Nadu at predawn. Layered misty green peaks, morning clouds drifting gently across forested valleys, pristine mountain stream flowing through weathered granite boulders. Soft golden sun rays piercing through lavender mist. 8k resolution, ultra-detailed nature cinematography, calm spiritual grandeur."
+                },
+                {
+                    "scene": 2,
+                    "timeframe": "00:10 - 00:20",
+                    "title": "Industrious Purpose & Stone Craft",
+                    "prompt": "Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Ground-level slow dolly forward along an ancient granite courtyard surrounded by lush tropical trees. Overcoming laziness through energetic morning purpose; farmers harvesting golden paddy fields at sunrise with vibrant flowing rivers, master stonemasons chiseling magnificent granite temple gopurams. Bronze oil lamps (kuthuvilakku) glow on stone ledges with natural flickering flames. A gentle mountain breeze sways nearby foliage, and subtle incense smoke curls toward the morning sky."
+                },
+                {
+                    "scene": 3,
+                    "timeframe": "00:20 - 00:30",
+                    "title": "Timeless Ethical Awakening",
+                    "prompt": "Create a single continuous 16:9 cinematic slow crane rise at 24 fps. An ancient Tamil sage / philosopher seated in peaceful contemplation on stone steps overlooking a tranquil lotus pond reflecting the morning sky. Sacred temple tower in distant mist. Deep moral serenity, profound inner peace."
+                }
+            ]
+        }
+    }
+]
+
+# Write JSON
+json_out_path = os.path.join("production", "metadata", "thirukkural_releases_metadata.json")
+with open(json_out_path, "w", encoding="utf-8") as f:
+    json.dump(releases, f, ensure_ascii=False, indent=2)
+
+print(f"Saved JSON metadata to {json_out_path} ({len(releases)} items)")
+
+# Generate Markdown Guide
+md_content = []
+md_content.append("# Guru Kula Desam — Thirukkural Video Releases Metadata Guide")
+md_content.append("## Production-Ready YouTube Metadata & Google Flow Directorial Guide")
+md_content.append("\n**Master Playlist:** [திருக்குறள் | Thirukkural — Master Collection](https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro)")
+md_content.append("**Channel:** [@guru-kula-desam](https://www.youtube.com/@guru-kula-desam)")
+md_content.append("\nThis document provides the complete, copy-paste ready release package for the six new Thirukkural cinematic releases, including bilingual descriptions, SEO tags, hashtags, and Google Flow visual director prompts.\n")
+md_content.append("---\n")
+
+for item in releases:
+    ch = item["chapter_number"]
+    tam_title = item["tamil_title"]
+    trans = item["transliterated_title"]
+    eng_sub = item["thematic_english_title"]
+    full_title = item["canonical_youtube_title"]
+    tid = item["track_id"]
+    paal = item["paal"]
+    iyal = item["iyal"]
+    k_range = item["kural_range"]
+    desc = item["description"]
+    flow = item["google_flow_director_prompt"]
+    
+    md_content.append(f"## {tam_title} ({trans} — {eng_sub})")
+    md_content.append(f"- **Chapter:** {ch} ({paal} — {iyal})")
+    md_content.append(f"- **Kural Range:** {k_range}")
+    md_content.append(f"- **Track ID:** `{tid}` ([YouTube Link](https://www.youtube.com/watch?v={tid}))")
+    md_content.append(f"- **Title Character Count:** {len(full_title)} / 100 max")
+    md_content.append("\n### 1. YouTube Video Title")
+    md_content.append("```text")
+    md_content.append(full_title)
+    md_content.append("```\n")
+    
+    md_content.append("### 2. Formatted YouTube Description")
+    md_content.append("```text")
+    md_content.append(f"{full_title}\n")
+    md_content.append(f"{desc['tamil_summary']}\n")
+    md_content.append("Key Kurals:")
+    for k in item["key_kurals"]:
+        md_content.append(f"குறள் {k['number']}:")
+        md_content.append(k['tamil'])
+        md_content.append(f"English: \"{k['english']}\"\n")
+    md_content.append(f"{desc['english_summary']}\n")
+    md_content.append("⏱️ Timestamps / அத்தியாயங்கள்:")
+    for ts in desc["timestamps"]:
+        md_content.append(f"{ts['time']} - {ts['label']}")
+    md_content.append("\n🎵 Credits & Release Info:")
+    md_content.append(f"• Track: {desc['audio_credits']['track']}")
+    md_content.append(f"• Channel: {desc['audio_credits']['artist']} (@guru-kula-desam)")
+    if "vocals_engineering" in desc['audio_credits']:
+        md_content.append(f"• Production & Vocals: {desc['audio_credits']['vocals_engineering']}")
+    if "banjo_engineering" in desc['audio_credits']:
+        md_content.append(f"• Production & Instrumentation: {desc['audio_credits']['banjo_engineering']}")
+    md_content.append(f"• Audio Master: {desc['audio_credits']['audio_source_url']}")
+    md_content.append(f"• Thirukkural Master Collection: {desc['audio_credits']['playlist_url']}\n")
+    md_content.append(f"{desc['call_to_action']}\n")
+    md_content.append(" ".join(item["hashtags"]))
+    md_content.append("```\n")
+    
+    md_content.append("### 3. Hashtags")
+    md_content.append("```text")
+    md_content.append(" ".join(item["hashtags"]))
+    md_content.append("```\n")
+    
+    md_content.append("### 4. Search Tags (Comma-Separated for YouTube Studio)")
+    md_content.append("```text")
+    md_content.append(", ".join(item["search_tags"]))
+    md_content.append("```\n")
+    
+    md_content.append("### 5. Google Flow Director Prompt Summary")
+    md_content.append(f"- **Visual Concept & Grammar:** {flow['visual_grammar']}")
+    md_content.append(f"- **Resolution & Speed:** {flow['resolution']}, {flow['aspect_ratio']}, {flow['frame_rate']}")
+    md_content.append(f"- **Setting:** {flow['continuity_bible']['setting']}")
+    md_content.append(f"- **Lighting & Atmosphere:** {flow['continuity_bible']['lighting']} | {flow['continuity_bible']['atmosphere']}")
+    md_content.append(f"- **Strict Exclusions:** {flow['continuity_bible']['hard_exclusions']}")
+    md_content.append("\n**Continuous Scene Sequence:**")
+    for s in flow["scenes"]:
+        md_content.append(f"- **Scene {s['scene']} ({s['timeframe']}) — {s['title']}:**")
+        md_content.append(f"  > *\"{s['prompt']}\"*")
+    
+    md_content.append("\n---\n")
+
+md_out_path = os.path.join("production", "metadata", "thirukkural_releases_guide.md")
+with open(md_out_path, "w", encoding="utf-8") as f:
+    f.write("\n".join(md_content))
+
+print(f"Saved Markdown guide to {md_out_path}")
