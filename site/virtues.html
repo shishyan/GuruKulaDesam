@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>அகர வரிசை நற்பண்பு நெறிமுறைமை — தமிழ் எழுத்து முதல் தர்மம் வரை | குரு குல தேசம்</title>
+  <meta name="description" content="தமிழ் எழுத்துக்களோடு மாணவர்களின் நற்பண்புகளையும் ஒழுக்கத்தையும் படிப்படியாகக் கற்பித்து, பின்பற்றி, நிலைநிறுத்தும் 12 தரங்களுக்கான நற்பண்பு வரைபடம்.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .letter-circle {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      background: var(--gold);
+      color: #07080b;
+      font-weight: 800;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .tier-filter-btn {
+      padding: 8px 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(212,175,55,0.25);
+      color: var(--text-muted);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.88rem;
+      transition: all 0.2s;
+    }
+    .tier-filter-btn:hover, .tier-filter-btn.active {
+      background: var(--gold);
+      color: #000;
+      border-color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="om-symbol">ॐ</span>
+        <div class="logo-text">
+          <span class="logo-main">குரு குல தேசம்</span>
+          <span class="logo-sub">GURU KULA DESAM</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileNavToggle" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="nav-links" id="mainNav">
+        <a href="index.html" class="nav-link">முகப்பு</a>
+        
+        <!-- Kalvi Dropdown -->
+        <div class="nav-dropdown" id="kalviDropdown">
+          <button class="nav-link dropdown-toggle" id="kalviDropdownBtn" onclick="toggleDropdown(event, 'kalviDropdown')" aria-haspopup="true" aria-expanded="false">
+            <span>கல்வி (Grades 1-12)</span>
+            <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="dropdown-menu dropdown-grid-4col" id="kalviDropdownMenu">
+            <a href="kalvi.html" class="dropdown-item dropdown-item-hub">
+              <span class="dropdown-item-icon">🏛️</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">கல்வி முகப்பு (Hub)</div>
+                <div class="dropdown-item-desc">அனைத்து 12 தரங்களின் பாடநெறி</div>
+              </div>
+            </a>
+            <a href="virtues.html" class="dropdown-item dropdown-item-hub active" style="grid-column: span 3;">
+              <span class="dropdown-item-icon">🔤</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">அகர வரிசை நற்பண்பு நெறி (Virtues Mapping)</div>
+                <div class="dropdown-item-desc">எழுத்து முதல் தர்மம் வரை — 12 தரங்களின் நற்பண்பு வளர்ச்சி</div>
+              </div>
+            </a>
+            <a href="tharam-1.html" class="dropdown-item"><span class="dropdown-item-icon">📖</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 1 (Grade 1)</div></div></a>
+            <a href="tharam-2.html" class="dropdown-item"><span class="dropdown-item-icon">🪔</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 2 (Grade 2)</div></div></a>
+            <a href="tharam-3.html" class="dropdown-item"><span class="dropdown-item-icon">🔱</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 3 (Grade 3)</div></div></a>
+            <a href="tharam-4.html" class="dropdown-item"><span class="dropdown-item-icon">🌿</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 4 (Grade 4)</div></div></a>
+            <a href="tharam-5.html" class="dropdown-item"><span class="dropdown-item-icon">🌺</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 5 (Grade 5)</div></div></a>
+            <a href="tharam-6.html" class="dropdown-item"><span class="dropdown-item-icon">📿</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 6 (Grade 6)</div></div></a>
+            <a href="tharam-7.html" class="dropdown-item"><span class="dropdown-item-icon">🕉️</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 7 (Grade 7)</div></div></a>
+            <a href="tharam-8.html" class="dropdown-item"><span class="dropdown-item-icon">📜</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 8 (Grade 8)</div></div></a>
+            <a href="tharam-9.html" class="dropdown-item"><span class="dropdown-item-icon">🔆</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 9 (Grade 9)</div></div></a>
+            <a href="tharam-10.html" class="dropdown-item"><span class="dropdown-item-icon">🌟</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 10 (Grade 10)</div></div></a>
+            <a href="tharam-11.html" class="dropdown-item"><span class="dropdown-item-icon">🔱</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 11 (Grade 11)</div></div></a>
+            <a href="tharam-12.html" class="dropdown-item"><span class="dropdown-item-icon">👑</span><div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 12 (Grade 12)</div></div></a>
+          </div>
+        </div>
+
+        <a href="saiva-neri.html" class="nav-link">சிவ நெறி</a>
+        <a href="thirukkural.html" class="nav-link">திருக்குறள்</a>
+        <a href="sanmargam.html" class="nav-link">சன்மார்க்கம்</a>
+        <a href="irai-isai-virundhu.html" class="nav-link">இறை இசை</a>
+        <a href="syllabus.html" class="nav-link">பாடத்திட்டம்</a>
+        <a href="classes.html" class="nav-link">வகுப்புகள்</a>
+        <a href="about.html" class="nav-link">பெரியவா தரிசனம்</a>
+        <a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener" class="nav-link" style="border: 1px solid var(--border-gold); padding: 5px 12px; border-radius: 16px; color: var(--gold-bright);">🌐 கூகிள் தளம் ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="hero-banner">
+      <div class="sacred-tag">🔤 அகர வரிசை நற்பண்பு நெறிமுறைமை • Alphabet to Virtue Progression Portal 🔤</div>
+      <h1>அகர வரிசை நற்பண்பு நெறி</h1>
+      <h2>Alphabet to Virtue Progression Matrix — From First Letter to Divine Wisdom</h2>
+      <div class="verse-quote">"எண்ணும் எழுத்தும் கண் எனத் தகும் — ஔவையார் (கொன்றை வேந்தன்)"</div>
+      <p class="hero-desc">
+        குழந்தைகள் மற்றும் மாணவர்கள் தமிழ் எழுத்துக்களைக் கற்கும் போதே, அதனோடு இணைந்து நற்பண்புகளையும் அறிந்து, பின்பற்றி, வாழ்வின் சோதனைகளிலும் நிலைநிறுத்தும் முப்பரிமாண ஆன்மீக ஒழுக்க வளர்ச்சிப் பாடத்திட்டம்.
+      </p>
+    </div>
+
+    <!-- 3 Tier Progression Summary Cards -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+      <div style="background: rgba(42, 157, 143, 0.1); border: 2px solid #2a9d8f; border-radius: 14px; padding: 22px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <span style="font-size: 1.6rem;">🟢</span>
+          <div>
+            <h3 style="color: #2a9d8f; margin: 0; font-size: 1.15rem;">நிலை 1: அறிதல் &amp; கற்றல் (To Learn)</h3>
+            <span style="font-size: 0.8rem; color: var(--gold-soft); font-weight: 700;">தரம் 1 முதல் தரம் 4 வரை (வயது 5 - 9)</span>
+          </div>
+        </div>
+        <p style="color: var(--text-main); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+          அறஞ்செய விரும்பு, ஆறுவது சினம், இன்சொல், ஈகை, உண்மை, ஊக்கம் மற்றும் ஜீவகாருண்யம் ஆகிய அடிப்படை நற்பண்புகளை எளிமையான கதைகள், பாடல்கள் மூலம் அறிந்து கொள்ளுதல்.
+        </p>
+      </div>
+
+      <div style="background: rgba(233, 196, 106, 0.1); border: 2px solid #e9c46a; border-radius: 14px; padding: 22px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <span style="font-size: 1.6rem;">🟡</span>
+          <div>
+            <h3 style="color: #e9c46a; margin: 0; font-size: 1.15rem;">நிலை 2: செய்தல் &amp; பின்பற்றுதல் (To Follow)</h3>
+            <span style="font-size: 0.8rem; color: var(--gold-soft); font-weight: 700;">தரம் 5 முதல் தரம் 8 வரை (வயது 10 - 13)</span>
+          </div>
+        </div>
+        <p style="color: var(--text-main); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+          செய்த நன்றியை மறவாமை, ஐம்பொறி அடக்கம், வெகுளாமை, நடுவுநிலைமை மற்றும் கடமை உணர்வை வாழ்க்கையில் விருப்பத்தோடு இடைவிடாது கடைப்பிடித்து நற்பழக்கமாக்குதல்.
+        </p>
+      </div>
+
+      <div style="background: rgba(231, 111, 81, 0.1); border: 2px solid #e76f51; border-radius: 14px; padding: 22px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <span style="font-size: 1.6rem;">🔴</span>
+          <div>
+            <h3 style="color: #e76f51; margin: 0; font-size: 1.15rem;">நிலை 3: நிலைநிறுத்துதல் &amp; காத்தல் (To Maintain)</h3>
+            <span style="font-size: 0.8rem; color: var(--gold-soft); font-weight: 700;">தரம் 9 முதல் தரம் 12 வரை (வயது 14 - 18)</span>
+          </div>
+        </div>
+        <p style="color: var(--text-main); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+          அழுக்காறாமை, எந்தச் சூழ்நிலையிலும் வாய்மை தவறாமை, உயிரினும் மேலாக ஒழுக்கத்தைப் பேணல், அவாவறுத்தல் மற்றும் உலக நன்மைக்காக தர்மத்தை நிலைநிறுத்தி பரசிவ சரணாகதி அடைதல்.
+        </p>
+      </div>
+    </div>
+
+    <!-- Filter Buttons Bar -->
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; justify-content: center; background: var(--bg-card); padding: 14px; border-radius: 14px; border: 1px solid var(--border-gold);">
+      <button class="tier-filter-btn active" onclick="filterTier('all', this)">அனைத்து 12 தரங்களும் (All Grades)</button>
+      <button class="tier-filter-btn" onclick="filterTier('tier-1', this)">🟢 நிலை 1: அறிதல் (Grades 1-4)</button>
+      <button class="tier-filter-btn" onclick="filterTier('tier-2', this)">🟡 நிலை 2: பின்பற்றுதல் (Grades 5-8)</button>
+      <button class="tier-filter-btn" onclick="filterTier('tier-3', this)">🔴 நிலை 3: நிலைநிறுத்துதல் (Grades 9-12)</button>
+    </div>
+
+    <!-- Grades Container -->
+    <div id="virtuesContainer">
+      
+        <div class="virtue-grade-block tier-1" id="grade-1-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 1 (Grade 1)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘அ’ • ‘ஆ’ • ‘இ’ • ‘ஈ’ — அறம், சாந்தம், இன்சொல் & ஈகை
+              </span>
+            </div>
+            <span style="background:#2a9d8f22; color:#2a9d8f; border:1px solid #2a9d8f55; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 1: அறிதல் (Learn)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Righteousness, Calmness, Pleasant Speech & Sharing • Tier 1: அறிதல் & கற்றல் (To Learn & Cultivate)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            குழந்தைப் பருவத்தில் எளிய வாழ்க்கை நெறிகளாக அறத்தை விரும்புதல், கோபத்தைத் தணித்தல், இனிமையாகப் பேசுதல் மற்றும் பிறருடன் பகிர்ந்து உண்ணுதல் ஆகிய அடிப்படைப் பண்புகளை அறிந்து பழகுதல்.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">அ</span> அறம் (Righteousness & Love of Virtue)
+                </div>
+                <span class="card-badge badge-audio">தரம் 1</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>அறஞ்செய விரும்பு — ஔவையார் (ஆத்திசூடி) / அகர முதல எழுத்தெல்லாம் — திருக்குறள் 1</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> எல்லா எழுத்துக்களுக்கும் 'அ'கரம் முதலாவது போல, மனித வாழ்க்கைக்கு நற்செயல்களை விரும்பிச் செய்வதே முதன்மையான பண்பாகும்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> தினமும் ஒரு நல்ல செயலை (பெரியவர்களுக்கு உதவுதல், தாவரங்களுக்கு நீர் ஊற்றுதல்) விரும்பிச் செய்தல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஆ</span> ஆறுதல் / சினம் தணித்தல் (Calmness & Gentleness)
+                </div>
+                <span class="card-badge badge-audio">தரம் 1</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஆறுவது சினம் — ஔவையார் (ஆத்திசூடி) / ஆலயம் தொழுவது சாலவும் நன்று — கொன்றை வேந்தன்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> கோபத்தை உடனுக்குடன் தணித்துக் கொள்வது அமைதியான உள்ளத்திற்கும் நல்ல நட்பிற்கும் வித்தாகும்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> கோபம் வரும் போது அமைதியாக 'ஓம் நமச்சிவாய' சொல்லி 10 வரை எண்ணி மனதை அமைதிப்படுத்துதல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">இ</span> இன்சொல் (Pleasant & Respectful Speech)
+                </div>
+                <span class="card-badge badge-audio">தரம் 1</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>இனிய உளவாக இன்னாத கூறல் கனியிருப்பக் காய்கவர்ந் தற்று — திருக்குறள் 100</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> இனிமையான சொற்கள் இருக்கும் போது கடுமையான சொற்களைப் பேசுவது இனிய பழத்தை விடுத்துக் காயைத் தின்பதற்கு ஒப்பானது.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> வீட்டிலும் பள்ளியிலும் அனைவரிடமும் 'தயவுசெய்து', 'நன்றி', 'வணக்கம்' போன்ற இன்சொற்களைப் பேசுதல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஈ</span> ஈகை (Sharing with Love)
+                </div>
+                <span class="card-badge badge-audio">தரம் 1</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஈவது விலக்கேல் — ஆத்திசூடி / ஈதல் இசைபட வாழ்தல் — திருக்குறள் 231</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> தேவையுள்ளோருக்கு உங்களால் இயன்ற உணவையோ பொருள்களையோ மகிழ்ச்சியோடு பகிர்ந்து கொடுத்தல்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> தன்னுடைய சிற்றுண்டியை அல்லது எழுத்துப் பொருளைத் தோழர்களுடன் இன்முகத்தோடு பகிர்தல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 1 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-1.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 1 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-1" id="grade-2-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 2 (Grade 2)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘உ’ • ‘ஊ’ • ‘எ’ • ‘ஏ’ — உண்மை, ஊக்கம், கல்வி மரியாதை & தன்மானம்
+              </span>
+            </div>
+            <span style="background:#2a9d8f22; color:#2a9d8f; border:1px solid #2a9d8f55; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 1: அறிதல் (Learn)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Truthfulness, Enthusiasm, Reverence for Learning & Self-Reliance • Tier 1: அறிதல் & கற்றல் (To Learn & Cultivate)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            உண்மை பேசுதல், கல்வியில் சோர்வில்லா ஊக்கம் காட்டுதல், பெற்றோர் ஆசிரியர்களை மதித்தல் மற்றும் தன்மானத்தோடு வாழ்வதன் அடிப்படைகளை அறிதல்.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">உ</span> உண்மை & உழைப்பு (Truthfulness & Diligence)
+                </div>
+                <span class="card-badge badge-audio">தரம் 2</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>உடையது விளம்பேல் — ஆத்திசூடி / அன்னையும் பிதாவும் முன்னறி தெய்வம் — கொன்றை வேந்தன்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> தவறு நிகழ்ந்தாலும் அஞ்சாமல் உண்மையை ஒப்புக்கொள்ளுதல்; பெற்றோருக்கு உதவியாக இருத்தல்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> தன் அன்றாடப் பாடங்களையும் வேலைகளையும் சோம்பலின்றித் தானே செய்து முடித்தல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஊ</span> ஊக்கம் (Enthusiasm in Studies & Play)
+                </div>
+                <span class="card-badge badge-audio">தரம் 2</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஊக்கமது கைவிடேல் — ஆத்திசூடி / ஊருடன் பகைக்கின் வேருடன் கெடும் — கொன்றை வேந்தன்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> எந்தச் செயலைச் செய்தாலும் சோர்வடையாமல் ஆர்வத்தோடும் புத்துணர்ச்சியோடும் ஈடுபடுதல்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> கடினமான பாடம் அல்லது விளையாட்டாக இருந்தாலும் விடாமுயற்சியோடு கற்றுக்கொள்ளுதல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">எ</span> எண்ணும் எழுத்தும் (Reverence for Literacy & Numeracy)
+                </div>
+                <span class="card-badge badge-audio">தரம் 2</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>எண் எழுத்து இகழேல் — ஆத்திசூடி / எண்ணும் எழுத்தும் கண் எனத் தகும் — கொன்றை வேந்தன்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> கணிதமும் மொழியும் மனிதருக்கு இரு கண்கள் போன்றவை; கல்வியை ஒருபோதும் அலட்சியம் செய்யலாகாது.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> புத்தகங்களையும் எழுத்துக் கருவிகளையும் கடவுளைப் போல தூய்மையாகவும் பக்தியோடும் கையாளுதல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஏ</span> ஏற்பது இகழ்ச்சி (Self-Reliance & Noble Independence)
+                </div>
+                <span class="card-badge badge-audio">தரம் 2</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஏற்பது இகழ்ச்சி — ஆத்திசூடி / ஏவா மக்கள் மூவா மருந்து — கொன்றை வேந்தன்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> பிறரிடம் கையேந்திப் பிச்சையெடுப்பது இழிவானது; சொல்லாமலேயே நற்பணிகளைச் செய்யும் பிள்ளைகள் அமுதமாவர்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> தன் பொருள்களைத் தானே பாதுகாத்துக் கொள்ளுதல், பிறரைச் சார்ந்து வாழும் பழக்கத்தைத் தவிர்த்தல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 2 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-2.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 2 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-1" id="grade-3-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 3 (Grade 3)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘ஐ’ • ‘ஒ’ • ‘ஓ’ • ‘ஔ’ • ‘ஃ’ — ஐயமின்மை, ஒப்புரவு, ஓதுதல், ஔவியமின்மை & நேர்மை
+              </span>
+            </div>
+            <span style="background:#2a9d8f22; color:#2a9d8f; border:1px solid #2a9d8f55; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 1: அறிதல் (Learn)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Charity, Community Harmony, Daily Scripture Reading, Freedom from Malice & Equanimity • Tier 1: அறிதல் & கற்றல் (To Learn & Cultivate)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            சமூகத்தோடு இணைந்து வாழும் நெறி, தினமும் திருமுறைகளை ஓதும் பழக்கம், பொறாமையற்ற குணம் மற்றும் நேர்மையான அளவீடு.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஐ</span> ஐயமிட்டு உண் (Feed the Needy First)
+                </div>
+                <span class="card-badge badge-audio">தரம் 3</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஐயமிட்டு உண் — ஆத்திசூடி / ஐயம் புகினும் செய்வன செய் — கொன்றை வேந்தன்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> பசித்திருக்கும் ஏழைகளுக்கும் பிற உயிர்களுக்கும் உணவளித்த பின்னரே தான் உண்ண வேண்டும் என்ற ஜீவகாருண்யம்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> வீட்டு வாசலில் வரும் பறவைகளுக்கும் பிராணிகளுக்கும் ஒரு பிடி உணவும் நீரும் வைத்த பின் உண்ணுதல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஒ</span> ஒப்புரவு (Universal Harmony & Cooperation)
+                </div>
+                <span class="card-badge badge-audio">தரம் 3</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஒப்புரவு ஒழுகு — ஆத்திசூடி / ஒன்றுபட்டால் உண்டு வாழ்வு</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> ஊரோடும் உலகத்தோடும் ஒத்துப்போய், அனைவரையும் தன்னுடை சகோதரர்களாகக் கருதி ஒற்றுமையுடன் வாழ்தல்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> பள்ளியில் அனைத்து மாணவர்களுடனும் பேதமின்றி நட்பு பாராட்டி ஒற்றுமையாகச் செயல்படுதல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஓ</span> ஓதுதல் (Sacred Chanting & Reading)
+                </div>
+                <span class="card-badge badge-audio">தரம் 3</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஓதுவது ஒழியேல் — ஆத்திசூடி / ஓதலின் நன்றே ஒழுக்கம் உடைமை — கொன்றை வேந்தன்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> அறிவு தரும் நூல்களையும் தேவாரம், திருவாசகப் பதிகங்களையும் ஒருநாளும் ஓதாமல் விடக்கூடாது.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> தினமும் காலையிலும் மாலையிலும் ஒரு திருமுறைப் பாடலை பண்ணோடு பாடி வழிபடுதல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஔ</span> ஔவியமின்மை (Absence of Envy & Jealousy)
+                </div>
+                <span class="card-badge badge-audio">தரம் 3</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஔவியம் பேசேல் — ஆத்திசூடி / ஔவியம் பேசுதல் ஆக்கத்திற்கு அழிவு — கொன்றை வேந்தன்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> மற்றொருவர் நல்ல நிலையை அடையும் போது பொறாமைப்பட்டுப் பேசக்கூடாது; பொறாமை நல்வாழ்வை அழிக்கும்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> வகுப்பில் மற்றொரு மாணவர் வெற்றி பெறும் போது மனதாரப் பாராட்டி மகிழ்தல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஃ</span> அஃகம் சுருக்கேல் (Fair Dealing & Integrity in Measure)
+                </div>
+                <span class="card-badge badge-audio">தரம் 3</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>அஃகம் சுருக்கேல் — ஆத்திசூடி / அஃகமும் காசும் சிக்கெனத் தேடு — கொன்றை வேந்தன்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> கொடுக்கல் வாங்கலில் எடையையோ அளவையோ குறைத்து நேர்மையற்ற முறையில் ஆதாயம் தேடக்கூடாது.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> விளையாட்டிலும் படிப்பிலும் நேர்மையைக் கடைப்பிடித்தல், குறுக்கு வழியைத் தவிர்த்தல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 3 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-3.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 3 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-1" id="grade-4-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 4 (Grade 4)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘க’ • ‘ங’ — கருணை, ஜீவகாருண்யம் & குடும்பப் பணிவு
+              </span>
+            </div>
+            <span style="background:#2a9d8f22; color:#2a9d8f; border:1px solid #2a9d8f55; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 1: தொடங்குதல் (Initiate)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Universal Compassion, Non-injury & Family Adaptability • Tier 1: அறிதல் & தொடங்குதல் (To Learn & Initiate Action)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            அனைத்து உயிர்களிடத்தும் கருணை காட்டுதல், தன் சுற்றத்தாரோடும் சமூகத்தோடும் பணிவோடு இணைந்து செயல்படுதல்.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">க</span> கருணை & கொல்லாமை (Compassion & Non-violence)
+                </div>
+                <span class="card-badge badge-audio">தரம் 4</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>கண்டொன்று சொல்லேல் — ஆத்திசூடி / வாடிய பயிரைக் கண்டபோதெல்லாம் வாடினேன் — வள்ளலார்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> மனதில் ஒன்றை வைத்துக்கொண்டு வாயில் வேறொன்றைப் பேசலாகாது; எவ்வுயிருக்கும் துன்பம் செய்யாத தயவு.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> மரக்கிளைகளை முறிக்காமல், எறும்பு, பூச்சிகளை மிதிக்காமல் இயற்கையைக் காக்கும் வாழ்வியல் பழக்கம்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ங</span> ஙப்போல் வளைதல் (Humility & Adaptability with Kin)
+                </div>
+                <span class="card-badge badge-audio">தரம் 4</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஙப் போல் வளை — ஔவையார் (ஆத்திசூடி)</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> ‘ங’ என்ற மெல்லின எழுத்து தன் இன வல்லினக் கூட்டத்தோடு பொருந்தி வளைவது போல, குடும்பத்தோடும் நல்லோரோடும் பணிந்து வாழ்தல்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> ஆணவமும் பிடிவாதமும் இல்லாமல் பெற்றோர் மற்றும் ஆசிரியரின் வழிகாட்டுதலை பணிவோடு ஏற்றல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 4 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-4.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 4 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-2" id="grade-5-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 5 (Grade 5)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘ச’ • ‘ஞ’ — சத்துவ ஒழுக்கம், செய்ந்நன்றி & ஞான நாட்டம்
+              </span>
+            </div>
+            <span style="background:#e9c46a22; color:#e9c46a; border:1px solid #e9c46a55; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 2: பின்பற்றுதல் (Follow)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Sattvic Discipline, Lifelong Gratitude & Thirst for Wisdom • Tier 2: செய்தல் & பின்பற்றுதல் (To Follow & Habituate)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            உடல், மனம், வாக்கு ஆகிய மூன்றிலும் தூய்மை பேணுதல்; செய்த நன்றியை எக்காலத்தும் மறவாமை; ஞான நூல்களைத் தேடிக் கற்றல்.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ச</span> செய்ந்நன்றி அறிதல் & சத்துவம் (Gratitude & Pure Character)
+                </div>
+                <span class="card-badge badge-audio">தரம் 5</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>செய்யாமல் செய்த உதவிக்கு வையகமும் வானகமும் ஆற்றல் அரிது — திருக்குறள் 101 / சனி நீராடு — ஆத்திசூடி</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> தான் ஓர் உதவியும் செய்யாதிருந்தும் தனக்கு உதவி செய்தவரின் நன்மையை மூவுலகைக் காட்டிலும் பெரிதாகப் போற்றுதல்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> தனக்கு கல்வி கற்பிக்கும் ஆசிரியர்களுக்கும் வளர்க்கும் பெற்றோருக்கும் நன்றி செலுத்தி பணிவிடை செய்தல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ஞ</span> ஞாயம்பட உரைத்தல் & காலமறிதல் (Righteous Wisdom & Timely Action)
+                </div>
+                <span class="card-badge badge-audio">தரம் 5</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஞயம்பட உரை — ஆத்திசூடி / ஞாலம் கருதினுங் கைகூடும் காலம் கருதி இடத்தாற் செயின் — திருக்குறள் 484</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> நீதியும் அழகும் பொருந்தப் பேசுதல்; செய்ய வேண்டிய கடமைகளை உரிய காலத்தில் தகுந்த முறையில் செய்து முடித்தல்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> நேரத்தை வீணடிக்காமல் கால அட்டவணையின்படி படித்து, நற்பணிகளில் முன்னிற்பது.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 5 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-5.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 5 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-2" id="grade-6-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 6 (Grade 6)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘த’ — தன்னடக்கம், ஐம்பொறி அடக்கம் & அடக்கமுடைமை
+              </span>
+            </div>
+            <span style="background:#e9c46a22; color:#e9c46a; border:1px solid #e9c46a55; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 2: பின்பற்றுதல் (Follow)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Self-Restraint, Mastery of Five Senses & Humility • Tier 2: செய்தல் & பின்பற்றுதல் (To Follow & Habituate)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            ஐம்பொறிகளின் வழியே மனதைச் செல்லவிடாமல் நெறிப்படுத்துதல்; கல்வி அறிவினால் செருக்கு அடையாமல் அடக்கத்தோடு இருத்தல்.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">த</span> அடக்கமுடைமை & தவம் (Sensory Control & Temperance)
+                </div>
+                <span class="card-badge badge-audio">தரம் 6</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஒருமையுள் ஆமைபோல் ஐந்துஅடக்கல் ஆற்றின் எழுமையும் ஏமாப் புடைத்து — திருக்குறள் 126 / தீயாரைக் காண்பதுவும் தீதே</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> ஆமை ஆபத்து வரும்போது தன் ஐந்து உறுப்புகளையும் அடக்கிக் கொள்வது போல, தீமையிலிருந்து தன் ஐம்பொறிகளையும் காப்பவனுக்குப் பிறவிதோறும் காவல் உண்டாகும்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> கண் (தீய காட்சிகளைப் பாராமை), செவி (புறங்கூறலைக் கேளாமை), நாக்கு (தீய சொற்களைப் பேசாமை, சுவைக்கு அடிமையாகாமை) என புலனடக்கம் பழகுதல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 6 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-6.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 6 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-2" id="grade-7-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 7 (Grade 7)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘ந’ — நடுவுநிலைமை, நன்றி மறவாமை & நட்பாராய்தல்
+              </span>
+            </div>
+            <span style="background:#e9c46a22; color:#e9c46a; border:1px solid #e9c46a55; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 2: பின்பற்றுதல் (Follow)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Impartial Justice, Unshakable Gratitude & Noble Friendship • Tier 2: செய்தல் & பின்பற்றுதல் (To Follow & Habituate)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            சுயநலமோ பாரபட்சமோ இன்றி நடுவுநிலை தவறாது நீதியை நிலைநிறுத்துதல்; தீய நட்பை விலக்கித் தூய நற்பண்பாளர்களைத் தேர்ந்தெடுத்தல்.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ந</span> நடுவுநிலைமை & நற்பண்பு (Impartiality & Right Association)
+                </div>
+                <span class="card-badge badge-audio">தரம் 7</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>சமன்செய்து சீர்தூக்கும் கோல்போல் அமைந்தொருபால் கோடாமை சான்றோர்க் கணி — திருக்குறள் 118 / நன்மை கடைப்பிடி</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> துலாக்கோல் போல சமமாக நின்று எளியவர் வலியவர் என்ற பாரபட்சமின்றி நியாயத்தின் வழி நிற்றல் சான்றோரின் அழகாகும்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> தோழர்களிடையே பிரச்சனை வரும்போது தன் நண்பன் என்பதற்காக தவறை நியாயப்படுத்தாமல் நீதியின் பக்கம் பேசுதல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 7 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-7.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 7 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-2" id="grade-8-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 8 (Grade 8)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘ப’ — பொறையுடைமை, பெரியாரைத் துணைக்கோடல் & பக்தி
+              </span>
+            </div>
+            <span style="background:#e9c46a22; color:#e9c46a; border:1px solid #e9c46a55; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 2: உறுதிப்பாடு (Sustain)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Forbearance under Insult, Seeking Noble Mentors & Deep Devotion • Tier 2: நிலைநிறுத்துதல் தொடக்கம் (Transition to Sustained Virtue)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            துன்பமும் ஏளனமும் வரும்போது நிலம் போலப் பொறுமை காத்தல்; ஆன்மீகப் பெரியோர்களின் துணையை நாடி நிற்றல்.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ப</span> பொறையுடைமை (Forbearance & Tolerance)
+                </div>
+                <span class="card-badge badge-audio">தரம் 8</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>அகழ்வாரைத் தாங்கும் நிலம்போலத் தம்மை இகழ்வார்ப் பொறுத்தல் தலை — திருக்குறள் 151 / பெரியாரைத் துணைக்கோடல்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> தன்னைத் தோண்டுபவரையும் தாங்கும் பூமியைப் போல, தம்மை இகழ்ந்து பேசுபவரையும் பொறுத்துக் கொள்வதே தலைசிறந்த பண்பு.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> கோபமூட்டும் சொற்களை எதிர்கொள்ளும்போது வன்முறையோ மறுபழிச்சொல்லோ இன்றி பொறுமையோடு புன்னகையுடன் கையாளுதல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 8 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-8.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 8 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-3" id="grade-9-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 9 (Grade 9)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘ம’ — மனத்தூய்மை, அழுக்காறாமை & சான்றாண்மை
+              </span>
+            </div>
+            <span style="background:#e76f5122; color:#e76f51; border:1px solid #e76f5155; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 3: நிலைநிறுத்துதல் (Maintain)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Inner Purity, Freedom from Envy & Resolute Character • Tier 3: நிலைநிறுத்துதல் & காத்தல் (To Maintain & Uphold under Adversity)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            வெளியில் நல்லவராகக் காட்டி உள்ளத்தில் மாசோடு வாழாமல், மனசாட்சிக்கு விரோதமில்லாத அகத்தூய்மையை நிலைநிறுத்துதல்.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ம</span> மனத்தூய்மை & அழுக்காறாமை (Purity of Mind & Soul)
+                </div>
+                <span class="card-badge badge-audio">தரம் 9</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>மனத்துக்கண் மாசிலன் ஆதல் அனைத்தறன் ஆகுல நீர பிற — திருக்குறள் 34 / மன்னிக்கப் பழகு</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> மனதில் குற்றம் இல்லாமல் வாழ்வதே அறத்தின் முழுமை; மற்ற ஆரவாரச் சடங்குகள் எல்லாம் பயனற்ற வெற்று ஆரவாரங்களே.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> யாரும் பார்க்காத தனிமையிலும் மனதில் தீய எண்ணங்கள், காழ்ப்புணர்ச்சி வராமல் சிவ சிந்தனையோடு மனதை தூய்மையாக வைத்தல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 9 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-9.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 9 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-3" id="grade-10-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 10 (Grade 10)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘ய’ • ‘வ’ — யாதும் ஊரே — சமநோக்கு & எந்தச் சூழலிலும் வாய்மை
+              </span>
+            </div>
+            <span style="background:#e76f5122; color:#e76f51; border:1px solid #e76f5155; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 3: நிலைநிறுத்துதல் (Maintain)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Cosmic Brotherhood, Universal Vision & Absolute Truthfulness • Tier 3: நிலைநிறுத்துதல் & காத்தல் (To Maintain & Uphold under Adversity)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            குறுகிய எல்லைகளைக் கடந்து உலக மாந்தர் அனைவரையும் உடன் பிறந்தாராகப் பார்த்தல்; எந்தச் சோதனை வந்தாலும் வாய்மை தவறாமை.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ய</span> யாதும் ஊரே — சமநோக்கு (Cosmic Brotherhood)
+                </div>
+                <span class="card-badge badge-audio">தரம் 10</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>யாதும் ஊரே யாவரும் கேளிர் தீதும் நன்றும் பிறர்தர வாரா — புறநானூறு 192 / யாகாவா ராயினும் நாகாக்க — திருக்குறள் 127</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> எல்லா ஊர்களும் எம் ஊரே; எல்லா மக்களும் எம் உறவினரே. நன்மையும் தீமையும் பிறரால் வருவதில்லை, நம் செயல்களாலேயே வருகின்றன.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> சாதி, மதம், மொழி, தேச பேதங்களின்றி மனிதநேயத்தோடு அனைவரிடமும் சமநோக்குடன் பழகுதல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">வ</span> வாய்மை — தீமையில்லாத உண்மை (Absolute Truthfulness)
+                </div>
+                <span class="card-badge badge-audio">தரம் 10</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>வாய்மை எனப்படுவது யாதெனின் யாதொன்றும் தீமை இலாத சொலல் — திருக்குறள் 291 / வினைத்திட்பம்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> எந்த உயிருக்கும் ஒரு சிறிதும் தீங்கு விளைவிக்காத நன்மையான சொற்களைப் பேசுவதே வாய்மையாகும்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> தமக்கு நஷ்டமோ தண்டனையோ ஏற்படும் சூழ்நிலையிலும் துணிவோடு உண்மையை நிலைநாட்டுதல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 10 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-10.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 10 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-3" id="grade-11-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 11 (Grade 11)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘ழ’ • ‘ள’ — விழுப்பம் — ஒழுக்கத்தை உயிரினும் மேலாகப் பேணல் & அவாவறுத்தல்
+              </span>
+            </div>
+            <span style="background:#e76f5122; color:#e76f51; border:1px solid #e76f5155; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 3: நிலைநிறுத்துதல் (Maintain)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Moral Excellence Beyond Life Itself & Transcendence of Desires • Tier 3: நிலைநிறுத்துதல் & காத்தல் (To Maintain & Uphold under Adversity)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            உயிரே போகும் நிலை வரினும் தன் ஒழுக்க நெறியைக் கைவிடாமை; உலகியல் மாயைகளில் சிக்காமல் பற்றற்ற ஞான வாழ்வை நிலைநிறுத்துதல்.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ழ</span> விழுப்பம் — ஒழுக்க மேன்மை (Highest Moral Excellence)
+                </div>
+                <span class="card-badge badge-audio">தரம் 11</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>ஒழுக்கம் விழுப்பம் தரலான் ஒழுக்கம் உயிரினும் ஓம்பப் படும் — திருக்குறள் 131</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> ஒழுக்கமே மனிதனுக்குச் சிறப்பைத் தரும்; ஆகவே அவ்வொழுக்கத்தை உயிரை விடவும் மேலானதாகப் போற்றிக் காக்க வேண்டும்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> பிரபலமான சமூக அழுத்தங்கள், கவர்ச்சிகள், நண்பர்களின் தூண்டுதல்கள் இருப்பினும் தன் ஆன்மீகக் கொள்கையில் தளராமல் நிற்றல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ள</span> அவாவறுத்தல் & எளிமை (Transcendence of Greed & Simplicity)
+                </div>
+                <span class="card-badge badge-audio">தரம் 11</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>வேண்டுங்கால் வேண்டும் பிறவாமை மற்றது வேண்டாமை வேண்ட வரும் — திருக்குறள் 362</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> ஒருவன் எதையாவது விரும்ப வேண்டுமானால், பிறப்பற்ற முக்தியையே விரும்ப வேண்டும்; அது ஆசைகளை அறுத்தலாலேயே கிட்டும்.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> ஆடம்பரம், பகட்டு, வீண் நுகர்வுப் பழக்கங்களைத் துறந்து எளிய தெய்வீக வாழ்வை மனதாரப் பின்பற்றுதல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 11 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-11.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 11 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+        <div class="virtue-grade-block tier-3" id="grade-12-block" style="background: rgba(18, 22, 32, 0.9); border: 1px solid var(--border-gold); border-radius: 16px; padding: 26px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid rgba(212,175,55,0.2); padding-bottom:12px;">
+            <div>
+              <span style="background:var(--gold-gradient); color:#000; font-weight:800; font-size:0.85rem; padding:4px 14px; border-radius:14px; margin-right:10px;">
+                தரம் 12 (Grade 12)
+              </span>
+              <span style="color:var(--gold-bright); font-size:1.25rem; font-weight:700;">
+                எழுத்துகள் ‘ற’ • ‘ன’ — அறநெறி வழுவாமை & சிவானந்தப் பூரண சரணாகதி
+              </span>
+            </div>
+            <span style="background:#e76f5122; color:#e76f51; border:1px solid #e76f5155; padding:4px 12px; border-radius:14px; font-size:0.82rem; font-weight:700;">
+              நிலை 3: ஞான முழுமை (Mastery)
+            </span>
+          </div>
+
+          <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:600; margin-bottom:12px;">
+            Unyielding Steadfastness in Dharma & Ultimate Divine Union • Tier 3: முழுமை & முக்தி நிலை (Mastery, Cosmic Dharma & Surrender)
+          </div>
+          <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">
+            இறைவனோடு இரண்டறக் கலக்கும் சிவானந்தப் பெருநிலை; உலகியல் மாயைகள் முற்றிலுமாக ஒழிந்து அன்பே சிவமாய் வாழும் ஜீவன்முக்தி நிலை.
+          </p>
+
+          <div class="virtues-list">
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ற</span> அறநெறி வழுவாமை (Unyielding Cosmic Dharma)
+                </div>
+                <span class="card-badge badge-audio">தரம் 12</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>அறத்தாறு இதுவென வேண்டா சிவிகை பொறுத்தானோடு ஊர்ந்தான் இடை — திருக்குறள் 37 / மேன்மைகொள் சைவநீதி விளங்குக உலகம் எல்லாம் — தேவாரம்</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> பல்லக்கைச் சுமப்பவனுக்கும் அதில் ஏறிச் செல்பவனுக்கும் இடையில் உள்ள அறத்தின் பயனை உணர்ந்து எக்காலத்தும் அறநெறி தவறாமை.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> வாழ்வின் இன்ப துன்பங்கள், வெற்றி தோல்விகள் இரண்டையும் சமமாகப் பாவித்து தர்மத்தை மட்டுமே உறுதியாகப் பற்றிக்கொள்ளுதல்.
+              </div>
+            </div>
+            
+            <div class="virtue-item-card" style="background: rgba(0,0,0,0.35); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--gold-bright);">
+                  <span class="letter-circle">ன</span> நன்னெறி நிறைவு — அன்பே சிவம் & பூரண சரணாகதி (Supreme Divine Realization)
+                </div>
+                <span class="card-badge badge-audio">தரம் 12</span>
+              </div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.02rem; color:#fff; line-height:1.6; margin-bottom:8px; font-weight:500;">
+                📖 <em>அன்பும் சிவமும் இரண்டென்பர் அறிவிலார் அன்பே சிவமாவது ஆரும் அறிகிலார் — திருமந்திரம் (திருமூலர்) / சிவோஹம் பாவனை</em>
+              </div>
+              <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:10px;">
+                💡 <strong>தத்துவ விளக்கம்:</strong> அன்பும் சிவமும் தனித்தனியானவை அல்ல; தூய அன்பே சிவம் என்பதை உணர்ந்து சகல ஜீவராசிகளிடத்தும் பரம்பொருளைக் காணும் பேரானந்த நிலை.
+              </div>
+              <div style="background:rgba(42,157,143,0.08); border:1px solid rgba(42,157,143,0.25); border-radius:8px; padding:10px 14px; font-size:0.9rem; color:#b7e4c7; line-height:1.5;">
+                🎯 <strong>மாணவர் அன்றாட வாழ்வியல் பயிற்சி (Daily Living Practice):</strong> 'யான்' 'எனது' என்ற அகந்தையை முழுமையாக ஈசனின் திருவடிகளில் சமர்ப்பித்து, உலக நன்மைக்காகவே தன் வாழ்க்கையை அர்ப்பணித்தல்.
+              </div>
+            </div>
+            
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; padding-top:12px; border-top:1px dashed rgba(212,175,55,0.2); font-size:0.84rem;">
+            <span style="color:var(--text-muted);">இத்தகு நற்பண்பை வளர்க்கும் தரம் 12 சைவ நெறி பாடநூல்கள்:</span>
+            <a href="tharam-12.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">தரம் 12 பாடங்களைக் காண்க ↗</a>
+          </div>
+        </div>
+        
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>குரு குல தேசம் (Guru Kula Desam)</h4>
+        <p>வேதங்கள், பன்னிரு திருமுறைகள், சைவ சித்தாந்த சாத்திரங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் சுத்த சன்மார்க்க நெறிகளை உலகிற்கு பறைசாற்றும் ஆன்மீக இசை &amp; கல்விப் பெருவெளி.</p>
+        <div style="margin-top: 14px; font-size: 0.84rem; color: var(--gold-soft); line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 12px; background: rgba(212, 175, 55, 0.05); padding-top: 6px; padding-bottom: 6px; border-radius: 0 8px 8px 0;">
+          📍 <strong>மைய முகவரி:</strong> 32, SSS Jaya Enclave, Kovaipudur, Coimbatore, 641042, Tamil Nadu, India.
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>கல்வி &amp; நற்பண்பு நெறி</h4>
+        <ul class="footer-links">
+          <li><a href="virtues.html">அகர வரிசை நற்பண்பு நெறி (Virtues Mapping)</a></li>
+          <li><a href="kalvi.html">சைவ நெறி கல்வித் தளம் (Grades 1 - 12)</a></li>
+          <li><a href="syllabus.html">பாடத்திட்டம் (Comprehensive Syllabus)</a></li>
+          <li><a href="tharam-1.html">தரம் 1 — 60 பாடப் படங்கள்</a></li>
+          <li><a href="classes.html">வகுப்புகள் (Online Classes &amp; Timetable)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ஆன்மீக வழிகள் &amp; இசை</h4>
+        <ul class="footer-links">
+          <li><a href="saiva-neri.html">சிவ நெறி (172 திருமுறைப் பாடல்கள்)</a></li>
+          <li><a href="thirukkural.html">திருக்குறள் (185 அதிகாரப் படங்கள் &amp; இசை)</a></li>
+          <li><a href="sanmargam.html">சன்மார்க்கம் (94 அருட்பெருஞ்சோதிப் பாடல்கள்)</a></li>
+          <li><a href="murugan.html">முருக நெறி &amp; கந்த சஷ்டி</a></li>
+          <li><a href="sakthi.html">சக்தி நெறி &amp; விநாயகர்</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 குரு குல தேசம் (Guru Kula Desam) | gurukuladesam.com | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.
+    </div>
+  </footer>
+
+  <script src="assets/data/catalog.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function filterTier(tier, btn) {
+      document.querySelectorAll('.tier-filter-btn').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      if (btn) btn.classList.add('active');
+
+      var blocks = document.querySelectorAll('.virtue-grade-block');
+      blocks.forEach(function(b) {
+        if (tier === 'all' || b.classList.contains(tier)) {
+          b.style.display = 'block';
+        } else {
+          b.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
