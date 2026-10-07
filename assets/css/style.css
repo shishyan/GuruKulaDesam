@@ -3734,18 +3734,47 @@ body.primary-menu-open .left-strip-bar {
 .strip-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.35); /* Lightweight mobile overlay - does NOT hide page */
   z-index: 1190;
   display: none;
   opacity: 0;
-  transition: opacity 0.25s ease;
+  transition: opacity 0.2s ease;
 }
 .strip-backdrop.active,
 body.primary-menu-open .strip-backdrop {
   display: block !important;
   opacity: 1 !important;
+}
+
+/* 12-Grade Mini Grid inside Primary Menu Drawer */
+.strip-grades-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  padding: 4px 6px;
+  margin-top: 4px;
+}
+
+.strip-grade-mini-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+.strip-grade-mini-pill:hover,
+.strip-grade-mini-pill.active {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+  color: #38bdf8;
 }
 
 /* Primary Menu Hamburger Button (Top Left Trigger) */

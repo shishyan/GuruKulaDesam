@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>வேதாந்த வித்யாபீடம் — உயர்கல்வித் தளம் (Advanced Vedanta & Indic Higher Studies) | Guru Kula Desam</title>
-  <meta name="description" content="பாரதத்தின் தலைசிறந்த வேதாந்தப் பல்கலைக்கழகங்கள் மற்றும் குருகுலங்களின் பாடத்திட்டங்களை உள்ளடக்கிய உயர்கல்வித் தளம். பிரஸ்தானத்ரயம், பிரகரண கிரந்தங்கள், சைவ சித்தாந்த சாத்திரங்கள் மற்றும் பிரயோக வேதாந்தம்.">
+  <title>வேதாந்த வித்யாபீடம் — உயர்கல்வி &amp; பட்டப் படிப்புகள் (Collegiate Indic Higher Studies) | Guru Kula Desam</title>
+  <meta name="description" content="குரு குல தேசம் வேதாந்த வித்யாபீடத்தின் இளங்கலை (B.A./B.Sc.), முதுகலை (M.A./Acharya), முனைவர் (Ph.D.) மற்றும் உயர் ஆய்வுப் பட்டயப் படிப்புகள். பிரஸ்தானத்ரயம், சைவ சித்தாந்தம், ஷட்தர்சனங்கள் மற்றும் பிரயோக வேதாந்தம்.">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
+    /* Collegiate Higher Studies Design System */
     .vidya-hero {
-      background: linear-gradient(135deg, rgba(8, 14, 26, 0.96) 0%, rgba(15, 23, 42, 0.94) 50%, rgba(13, 31, 56, 0.96) 100%);
+      background: linear-gradient(135deg, rgba(8, 14, 26, 0.98) 0%, rgba(15, 23, 42, 0.95) 50%, rgba(13, 31, 56, 0.98) 100%);
       border: 1px solid rgba(212, 175, 55, 0.35);
       border-radius: 20px;
       padding: 38px 32px;
@@ -20,81 +21,230 @@
     .vidya-hero::after {
       content: "ॐ";
       position: absolute;
-      right: 20px;
-      top: -20px;
+      right: 25px;
+      top: -25px;
       font-size: 16rem;
       color: rgba(212, 175, 55, 0.03);
       font-family: serif;
       pointer-events: none;
     }
-    .vidya-track-card {
+    .degree-nav-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 24px 0 32px;
+      justify-content: center;
+    }
+    .degree-filter-btn {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #cbd5e1;
+      padding: 9px 20px;
+      border-radius: 24px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .degree-filter-btn:hover, .degree-filter-btn.active {
+      background: rgba(212, 175, 55, 0.18);
+      border-color: var(--gold, #d4af37);
+      color: var(--gold-bright, #ffd700);
+      box-shadow: 0 0 18px rgba(212, 175, 55, 0.2);
+    }
+    .degree-tier-section {
+      margin-bottom: 48px;
+    }
+    .tier-header-banner {
+      background: linear-gradient(90deg, rgba(15, 23, 42, 0.92), rgba(24, 37, 64, 0.92));
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-left: 5px solid var(--gold, #d4af37);
+      border-radius: 14px;
+      padding: 16px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .tier-title-group h2 {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin: 0 0 4px 0;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .tier-title-group p {
+      color: #94a3b8;
+      font-size: 0.88rem;
+      margin: 0;
+    }
+    .tier-badge {
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .tier-badge.ug { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); }
+    .tier-badge.pg { background: rgba(45, 212, 191, 0.15); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.35); }
+    .tier-badge.phd { background: rgba(212, 175, 55, 0.15); color: #ffd700; border: 1px solid rgba(212, 175, 55, 0.35); }
+    .tier-badge.fel { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.35); }
+
+    .degree-program-card {
       background: rgba(15, 23, 42, 0.88);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 16px;
-      padding: 24px;
+      padding: 24px 28px;
       margin-bottom: 22px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.45);
       transition: all 0.25s ease;
     }
-    .vidya-track-card:hover {
+    .degree-program-card:hover {
       border-color: rgba(212, 175, 55, 0.5);
-      transform: translateY(-2px);
       box-shadow: 0 12px 30px rgba(0,0,0,0.6), 0 0 20px rgba(212, 175, 55, 0.1);
     }
-    .vidya-track-header {
+    .degree-program-header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       flex-wrap: wrap;
       gap: 12px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       padding-bottom: 14px;
       margin-bottom: 16px;
     }
-    .vidya-module-grid {
+    .program-code {
+      font-family: monospace;
+      font-size: 0.82rem;
+      background: rgba(212, 175, 55, 0.12);
+      color: var(--gold-bright, #ffd700);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+    .program-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 6px 0 4px;
+    }
+    .program-meta {
+      font-size: 0.86rem;
+      color: #94a3b8;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .program-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .program-desc {
+      color: #cbd5e1;
+      font-size: 0.94rem;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .program-modules-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 14px;
       margin-top: 14px;
     }
-    .vidya-module-box {
+    .program-module-box {
       background: rgba(0, 0, 0, 0.35);
       border: 1px solid rgba(255, 255, 255, 0.06);
       border-left: 3px solid var(--gold);
       border-radius: 0 10px 10px 0;
       padding: 14px 16px;
     }
-    .vidya-module-box.cyan {
-      border-left-color: #38bdf8;
+    .program-module-box.blue { border-left-color: #38bdf8; }
+    .program-module-box.teal { border-left-color: #2dd4bf; }
+    .program-module-box.purple { border-left-color: #a855f7; }
+    .program-module-box.gold { border-left-color: #f59e0b; }
+
+    .module-code-pill {
+      font-size: 0.74rem;
+      font-family: monospace;
+      color: #94a3b8;
+      margin-bottom: 4px;
     }
-    .vidya-module-box.emerald {
-      border-left-color: #2dd4bf;
-    }
-    .vidya-module-box.amber {
-      border-left-color: #f59e0b;
-    }
-    .vidya-module-title {
+    .module-title {
       font-weight: 700;
       color: #ffffff;
-      font-size: 0.98rem;
+      font-size: 0.96rem;
       margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
     }
-    .vidya-module-desc {
+    .module-desc {
       color: #94a3b8;
       font-size: 0.86rem;
       line-height: 1.6;
     }
+    .module-sources {
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: var(--gold-soft, #fef5d1);
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+      padding-top: 6px;
+    }
+
+    .program-footer-bar {
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+    .benchmark-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+      padding: 4px 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+    .enroll-action-btn {
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      color: var(--gold-bright, #ffd700);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .enroll-action-btn:hover {
+      background: var(--gold, #d4af37);
+      color: #0b0d13;
+    }
+
+    /* Glossary Section */
     .glossary-pill {
       display: inline-block;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.12);
       color: #cbd5e1;
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 16px;
-      font-size: 0.84rem;
+      font-size: 0.85rem;
       margin: 4px;
       cursor: pointer;
       transition: all 0.2s ease;
@@ -103,9 +253,11 @@
       background: rgba(212, 175, 55, 0.2);
       border-color: var(--gold);
       color: #ffffff;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
     }
+
     @media print {
-      .left-strip-bar, .context-top-bar, .no-print, header, footer, .vidya-hero, .glossary-section, .fellowship-controls {
+      .left-strip-bar, .context-top-bar, .no-print, header, footer, .vidya-hero, .degree-nav-filters, .tier-header-banner, .degree-program-card, .glossary-section {
         display: none !important;
       }
       body { background: #ffffff !important; color: #000000 !important; }
@@ -115,6 +267,7 @@
         color: #000000 !important;
         box-shadow: none !important;
         max-width: 100% !important;
+        display: block !important;
       }
     }
   </style>
@@ -133,7 +286,7 @@
       </button>
     </div>
 
-        <nav class="strip-nav-list" id="stripNavList">
+    <nav class="strip-nav-list" id="stripNavList">
 
       <!-- 1. முகப்பு (Home) -->
       <div class="strip-group" data-group="home">
@@ -245,643 +398,630 @@
         <span class="hb-label">முதன்மை பட்டி</span>
       </button>
       <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Section Tabs">
-        <button type="button" class="context-tab-pill active" onclick="scrollToId('vidyaHero')"><span class="context-tab-pill-icon">🏛️</span><span>அறிமுகம் &amp; பீடம்</span></button>
-        <button type="button" class="context-tab-pill" onclick="scrollToId('tracksSection')"><span class="context-tab-pill-icon">📜</span><span>5 முதன்மைத் துறைகள்</span></button>
-        <button type="button" class="context-tab-pill" onclick="scrollToId('sanskritShastraHall')"><span class="context-tab-pill-icon">🕉️</span><span>சம்ஸ்கிருத மூல சாத்திர பாஷ்யக் களம்</span></button>
-        <button type="button" class="context-tab-pill" onclick="scrollToId('glossarySection')"><span class="context-tab-pill-icon">🔍</span><span>சாத்திர கலைச்சொற்களஞ்சியம்</span></button>
-        <button type="button" class="context-tab-pill" onclick="scrollToId('fellowshipSection')"><span class="context-tab-pill-icon">🎓</span><span>உயர் பட்டயச் சான்றிதழ்</span></button>
-        <a href="school.html" class="context-tab-pill" style="border-color:rgba(56,189,248,0.4); color:#38bdf8;"><span class="context-tab-pill-icon">🏫</span><span>பள்ளி போர்டல்</span></a>
+        <button type="button" class="context-tab-pill active" onclick="scrollToId('vidyaHero')"><span class="context-tab-pill-icon">🏛️</span><span>பீட அறிமுகம்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('tierUG')"><span class="context-tab-pill-icon">🎓</span><span>இளங்கலை B.A./B.Sc.</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('tierPG')"><span class="context-tab-pill-icon">📜</span><span>முதுகலை M.A./Acharya</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('tierPhD')"><span class="context-tab-pill-icon">🔬</span><span>முனைவர் Ph.D.</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('tierFellowship')"><span class="context-tab-pill-icon">🎖️</span><span>உயர் பட்டயங்கள்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('glossarySection')"><span class="context-tab-pill-icon">🔍</span><span>சாத்திர கலைச்சொற்கள்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('fellowshipSection')"><span class="context-tab-pill-icon">🖨️</span><span>பட்டயச் சான்றிதழ்</span></button>
       </nav>
+      <div class="header-right-tools">
+        <a href="school.html" class="sheet-btn sheet-btn-view" style="font-size:0.82rem; padding:6px 14px; text-decoration:none;">
+          <span>🏫 பள்ளி போர்டல் ↗</span>
+        </a>
+      </div>
     </div>
   </header>
 
-  <main class="page-container" style="max-width:1300px; margin: 0 auto; padding: 24px 20px 80px;">
+  <main class="main-content" style="max-width:1320px; margin: 0 auto; padding: 24px 20px 80px;">
 
     <!-- 1. HERO SECTION -->
     <section class="vidya-hero" id="vidyaHero">
-      <div style="max-width:880px;">
+      <div style="max-width:920px;">
         <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(212,175,55,0.12); color:var(--gold-bright); border:1px solid rgba(212,175,55,0.35); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:5px 14px; border-radius:20px; margin-bottom:14px;">
-          <span>🏛️ Higher Collegiate Indic Studies • Post-School Academy</span>
+          <span>🏛️ Collegiate Indic Higher Studies &amp; Research Academy</span>
         </div>
-        <h1 style="color:#ffffff; font-size:2.25rem; font-weight:800; line-height:1.2; margin-bottom:12px;">
-          வேதாந்த வித்யாபீடம் — உயர்கல்வித் தளம்
+        <h1 style="color:#ffffff; font-size:2.35rem; font-weight:800; line-height:1.2; margin-bottom:12px;">
+          வேதாந்த வித்யாபீடம் — உயர்கல்வி &amp; பட்டப் படிப்புகள்
         </h1>
         <p style="color:var(--gold-soft); font-size:1.15rem; font-weight:600; margin-bottom:12px;">
-          The Advanced Institute of Vedanta, Shaiva Siddhanta &amp; Indic Knowledge Systems
+          The Collegiate Faculty of Advanced Vedanta, Shaiva Siddhanta &amp; Indic Epistemology
         </p>
         <p style="color:#cbd5e1; font-size:0.98rem; line-height:1.8; margin-bottom:18px;">
-          பாரதத்தின் புகழ்பெற்ற <strong>சின்மயா மிஷன் (CIF &amp; CVV), ஆர்ஷ வித்யா குருகுலம் (சுவாமி தயானந்த சரஸ்வதி), ராமகிருஷ்ண மிஷன் விவேகானந்தா பல்கலைக்கழகம் (RKMVERI), யோக-வேதாந்த வனக் கல்விக்கூடம் (ரிஷிகேஷ் - சுவாமி சிவானந்தா &amp; கிருஷ்ணானந்தா)</strong> மற்றும் <strong>காஞ்சி மெய்கண்ட சாத்திர பாடசாலைகளின்</strong> ஆழமான உயர்கல்விப் பாடத்திட்டங்களை ஒருங்கிணைத்து உருவாக்கப்பட்டுள்ள அதிநவீன தத்துவப் பெருவளாகம்.
+          பள்ளிப் படிப்பைக் கடந்த கல்லூரி மாணவர்கள், இளைஞர்கள், பல்கலைக்கழக ஆய்வாளர்கள் மற்றும் ஆன்மீகச் சாதகர்களுக்காக முறைப்படுத்தப்பட்ட <strong>இளங்கலை (Undergraduate), முதுகலை (Postgraduate), முனைவர் ஆய்வு (Ph.D. / Research) மற்றும் முதுநிலை ஆய்வாளர் பட்டய (Post-Graduate Fellowships)</strong> கல்வித் திட்டங்கள்.
         </p>
 
-        <!-- Institutional Inspirations Pills -->
+        <!-- Institutional Accreditations & Benchmarks -->
         <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
-          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:4px 10px; border-radius:12px;">🎓 Arsha Vidya Tradition</span>
-          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:4px 10px; border-radius:12px;">🪔 Chinmaya Vishwa Vidyapeeth</span>
-          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:4px 10px; border-radius:12px;">🔱 Yoga-Vedanta Forest Academy</span>
-          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:4px 10px; border-radius:12px;">🌺 Ramakrishna Mission Institute</span>
-          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:4px 10px; border-radius:12px;">📜 Meykanda Shastra Sampradaya</span>
+          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:5px 12px; border-radius:12px;">🎓 Arsha Vidya Gurukulam (Swami Dayananda)</span>
+          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:5px 12px; border-radius:12px;">🪔 Chinmaya Vishwa Vidyapeeth (CVV &amp; CIF)</span>
+          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:5px 12px; border-radius:12px;">🔱 The Yoga-Vedanta Forest Academy (Rishikesh)</span>
+          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:5px 12px; border-radius:12px;">🌺 Ramakrishna Mission University (RKMVERI)</span>
+          <span style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; font-size:0.78rem; padding:5px 12px; border-radius:12px;">📜 Meykanda Shastra Adheenam Pathashalas</span>
         </div>
       </div>
     </section>
 
-    <!-- 2. THE 5 ADVANCED DEGREE & FELLOWSHIP TRACKS -->
-    <section id="tracksSection" style="margin: 48px 0;">
-      <div style="text-align:center; max-width:850px; margin:0 auto 32px;">
-        <div style="display:inline-block; font-size:0.8rem; font-weight:700; color:var(--gold); background:rgba(212,175,55,0.1); border:1px solid rgba(212,175,55,0.3); padding:4px 14px; border-radius:20px; text-transform:uppercase; margin-bottom:10px;">
-          Curriculum of Collegiate Excellence
+    <!-- DEGREE FILTER CONTROLS -->
+    <div class="degree-nav-filters no-print">
+      <button type="button" class="degree-filter-btn active" onclick="filterDegrees('all')">📚 அனைத்து பட்டப் படிப்புகள் (All Degrees)</button>
+      <button type="button" class="degree-filter-btn" onclick="filterDegrees('ug')">🎓 1. இளங்கலைப் பட்டங்கள் (B.A. / B.Sc.)</button>
+      <button type="button" class="degree-filter-btn" onclick="filterDegrees('pg')">📜 2. முதுகலைப் பட்டங்கள் (M.A. / Acharya)</button>
+      <button type="button" class="degree-filter-btn" onclick="filterDegrees('phd')">🔬 3. முனைவர் ஆய்வு (Ph.D.)</button>
+      <button type="button" class="degree-filter-btn" onclick="filterDegrees('fel')">🎖️ 4. உயர் பட்டயங்கள் (Fellowships)</button>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- DIVISION 1: UNDERGRADUATE DEGREES (B.A. / B.Sc.) -->
+    <!-- ========================================== -->
+    <section class="degree-tier-section" id="tierUG" data-tier="ug">
+      <div class="tier-header-banner">
+        <div class="tier-title-group">
+          <h2><span>🎓</span> பிரிவு 1: இளங்கலைப் பட்டப் படிப்புகள் (Undergraduate Degree Programs)</h2>
+          <p>பன்னிரண்டாம் வகுப்பு / தரம் 12 முடித்த மாணவர்களுக்கான 3 ஆண்டு கால முழுமையான பட்டப் படிப்புகள் (3-Year UG Degree • 120 Credits).</p>
         </div>
-        <h2 style="color:#ffffff; font-size:1.85rem; font-weight:800; margin-bottom:10px;">
-          📜 வேதாந்த வித்யாபீடத்தின் 5 முதன்மைத் துறைகள்
-        </h2>
-        <p style="color:#94a3b8; font-size:0.95rem; line-height:1.7;">
-          பள்ளிப் படிப்பைக் கடந்த ஆய்வாளர்கள், இளைஞர்கள் மற்றும் தீவிர ஆன்மீகச் சாதகர்களுக்காக வடிவமைக்கப்பட்ட சாஸ்திர பூர்வமான உயர்கல்வித் தடங்கள்.
-        </p>
+        <span class="tier-badge ug">Undergraduate (UG)</span>
       </div>
 
-      <!-- TRACK 1: PRASTHANATRAYA MASTERY -->
-      <article class="vidya-track-card">
-        <div class="vidya-track-header">
+      <!-- PROGRAM UG-1 -->
+      <article class="degree-program-card">
+        <div class="degree-program-header">
           <div>
-            <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-              <span class="wbs-code wbs-code-primary">TRACK 01</span>
-              <span style="font-size:0.82rem; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">பிரஸ்தானத்ரய ஆய்வுப் பட்டயம் (Prasthanatraya Fellowship)</span>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="program-code">DEG-BA-VED</span>
+              <span style="font-size:0.8rem; color:#38bdf8; font-weight:700;">3 ஆண்டுகள் • 120 Credits</span>
             </div>
-            <h3 style="color:#ffffff; font-size:1.4rem; font-weight:800; margin:0;">
-              பிரஸ்தானத்ரய பிரவேசம் — உபநிடதங்கள், பகவத் கீதை &amp; பிரம்ம சூத்திரம்
-            </h3>
+            <h3 class="program-title">B.A. அத்வைத வேதாந்தமும் பாரத தத்துவமும் (B.A. in Advaita Vedanta &amp; Indic Epistemology)</h3>
+            <div class="program-meta">
+              <span>🏛️ பயிற்றுவிக்கும் பீடம்: தத்துவவியல் துறை</span>
+              <span>📖 தகுதி: மேல்நிலைக்கல்வி / தரம் 12 தேர்ச்சி</span>
+              <span>🎓 நெறி: ஆர்ஷ வித்யா &amp; சின்மயா பாடத்திட்டம்</span>
+            </div>
           </div>
-          <span style="font-size:0.85rem; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.25); padding:6px 14px; border-radius:20px; font-weight:600;">
-            ஆர்ஷ வித்யா &amp; சின்மயா மரபு
-          </span>
+          <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('B.A. அத்வைத வேதாந்தப் பட்டம் (B.A. in Advaita Vedanta)')">சான்றிதழ் தேர்வில் சேர் ↗</button>
         </div>
 
-        <p style="color:#cbd5e1; font-size:0.93rem; line-height:1.75;">
-          அத்வைத வேதாந்தத்தின் மூன்று அழியாத மூலத் தூண்களான ஸ்ருதி பிரஸ்தானம் (உபநிடதங்கள்), ஸ்மிருதி பிரஸ்தானம் (பகவத் கீதை) மற்றும் நியாய பிரஸ்தானம் (பிரம்ம சூத்திரம்) ஆகியவற்றை ஆதிசங்கரரின் மூல பாஷ்ய விளக்கங்களுடன் கற்கும் உச்சக்கட்ட உயர் ஆய்வு நெறி.
+        <p class="program-desc">
+          ஆதிசங்கரரின் அத்வைத வேதாந்தத்தை தத்வ போதம் முதல் விவேகசூடாமணி, பகவத் கீதை மற்றும் முதன்மை உபநிடதங்கள் வரை படிப்படியாகக் கற்கும் தலைசிறந்த இளங்கலைப் பட்டப் படிப்பு. மன அடக்கம் (அந்தஃகரண சுத்தி), ஆன்ம விசாரணை மற்றும் பகுத்தறிவுக் கூர்மையை வளர்க்கிறது.
         </p>
 
-        <div class="vidya-module-grid">
-          <div class="vidya-module-box">
-            <div class="vidya-module-title"><span>📖</span> தச உபநிடதங்கள் (10 Principal Upanishads)</div>
-            <div class="vidya-module-desc">ஈசாவாஸ்யம், கேனம், கடோபநிடதம் (நசிகேதன் மரண விசாரணை), பிரச்னம், முண்டகம் (இரண்டு பறவைகள் தத்துவம்), மாண்டூக்யம் (ஓம் &amp; துரிய நிலை), தைத்திரீயம் (பஞ்ச கோசம்), ஐதரேயம், சாந்தோக்யம் (தத்வமஸி) &amp; பிருஹதாரண்யகம் (நேதி நேதி).</div>
+        <div class="program-modules-grid">
+          <div class="program-module-box blue">
+            <div class="module-code-pill">SEM 1-2 • VED-101</div>
+            <div class="module-title">தத்வ போதமும் சரீர த்ரய விவேகமும்</div>
+            <div class="module-desc">அதிகாரி லக்ஷணம் (விவேகம், வைராக்கியம், சம-தமாதி ஷட்க சம்பத்து, முமுக்ஷுத்துவம்). ஸ்தூல, சூக்ஷ்ம, காரண சரீரப் பகுப்பாய்வு; ஜாக்கிரத், ஸ்வப்ன, சுஷுப்தி அவஸ்தா த்ரய விவேகம்.</div>
+            <div class="module-sources">📖 மூல நூல்: ஆதிசங்கரரின் தத்வ போதம்</div>
           </div>
 
-          <div class="vidya-module-box cyan">
-            <div class="vidya-module-title"><span>🪷</span> பகவத் கீதை சாங்கர பாஷ்யம்</div>
-            <div class="vidya-module-desc">அர்ஜுன விஷாத யோகம் முதல் மோக்ஷ சந்யாச யோகம் வரையிலான 18 அத்தியாயங்கள். சாங்கிய யோகம் (அத். 2), கர்ம யோகம் (அத். 3), புருஷோத்தம யோகம் (அத். 15) மற்றும் ஸ்திதப்பிரக்ஞன் லட்சணங்களின் ஆழமான உளவியல் ஆய்வு.</div>
+          <div class="program-module-box teal">
+            <div class="module-code-pill">SEM 2-3 • VED-102</div>
+            <div class="module-title">பகவத் கீதை ஆரம்ப இயல் (கர்ம &amp; சாங்கிய யோகம்)</div>
+            <div class="module-desc">அர்ஜுன விஷாத யோகம், சாங்கிய யோகத்தின் ஆன்ம நித்தியத்துவ ஆய்வு (அத். 2), கர்ம யோகத்தின் உளவியல் நுணுக்கங்கள் (அத். 3), ஸ்திதப்பிரக்ஞன் மனோநிலை மற்றும் நிஷ்காம கர்ம நெறி.</div>
+            <div class="module-sources">📖 மூல நூல்: பகவத் கீதை சாங்கர பாஷ்யம் (அத். 1-6)</div>
           </div>
 
-          <div class="vidya-module-box emerald">
-            <div class="vidya-module-title"><span>⚖️</span> பிரம்ம சூத்திரம் &amp; அத்யாச பாஷ்யம்</div>
-            <div class="vidya-module-desc">பாதராயணரின் சூத்திரங்கள். குறிப்பாக முதல் நான்கு சூத்திரங்களான 'சதுஸ்-சூத்ரி' (அதாத்தோ பிரம்ம ஜிக்ஞாசா, ஜன்மாத்யஸ்ய யதஃ, சாஸ்திர யோனித்வாத், தத்து சமன்வயாதாத்) மற்றும் மனிதன் மாயையில் உண்மைக்கு மாறாக அறிவதை விளக்கும் 'அத்யாச பாஷ்யம்'.</div>
+          <div class="program-module-box purple">
+            <div class="module-code-pill">SEM 4-5 • VED-201</div>
+            <div class="module-title">விவேகசூடாமணி மூல சாத்திர ஆய்வு</div>
+            <div class="module-desc">மாயையின் இரு பெரும் சக்திகளான விக்ஷேப மற்றும் ஆவரண சக்திகள். பஞ்ச கோசங்களை உரித்து ஆன்மாவைத் தரிசிக்கும் 'நேதி நேதி' முறை; ஆத்ம-அனாத்ம விவேகத்தின் 580 சுலோக ஆய்வு.</div>
+            <div class="module-sources">📖 மூல நூல்: ஸ்ரீ ஆதிசங்கரரின் விவேகசூடாமணி</div>
           </div>
+
+          <div class="program-module-box gold">
+            <div class="module-code-pill">SEM 5-6 • VED-301</div>
+            <div class="module-title">பாரத அளவையியலும் தர்க்க சங்கிரஹமும்</div>
+            <div class="module-desc">அன்னம்பட்டரின் தர்க்க சங்கிரஹம். பிரத்யக்ஷம் (காட்சி), அனுமானம் (வியாப்தி, ஹேது), உபமானம் (ஒப்பீடு), சப்தம் (வேத பிரமாணம்). தத்துவ விவாதங்களின் நெறிமுறைகள்.</div>
+            <div class="module-sources">📖 மூல நூல்: அன்னம்பட்டர் அருளிய தர்க்க சங்கிரஹம்</div>
+          </div>
+        </div>
+
+        <div class="program-footer-bar">
+          <span class="benchmark-tag">🏆 Benchmark: Arsha Vidya Gurukulam &amp; Chinmaya International Foundation (CIF)</span>
+          <span>செமஸ்டர் தேர்வுகள்: 6 பருவம் • செய்முறை தியானப் பயிற்சி &amp; சாத்திர விவாதம்</span>
         </div>
       </article>
 
-      <!-- TRACK 2: PRAKARANA GRANTHAS -->
-      <article class="vidya-track-card">
-        <div class="vidya-track-header">
+      <!-- PROGRAM UG-2 -->
+      <article class="degree-program-card">
+        <div class="degree-program-header">
           <div>
-            <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-              <span class="wbs-code wbs-code-primary">TRACK 02</span>
-              <span style="font-size:0.82rem; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">பிரகரண கிரந்தப் பட்டயம் (Classical Prakarana Granthas)</span>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="program-code">DEG-BA-SHV</span>
+              <span style="font-size:0.8rem; color:#2dd4bf; font-weight:700;">3 ஆண்டுகள் • 120 Credits</span>
             </div>
-            <h3 style="color:#ffffff; font-size:1.4rem; font-weight:800; margin:0;">
-              அடிப்படைக் கோட்பாடுகள் முதல் விவேகசூடாமணி &amp; பஞ்சதசி வரை
-            </h3>
+            <h3 class="program-title">B.A. சைவ சித்தாந்தமும் தமிழ் மெய்யியலும் (B.A. in Shaiva Siddhanta &amp; Tamil Philosophy)</h3>
+            <div class="program-meta">
+              <span>🏛️ பயிற்றுவிக்கும் பீடம்: சைவ சித்தாந்த மெய்யியல் துறை</span>
+              <span>📖 தகுதி: மேல்நிலைக்கல்வி / தரம் 12 தேர்ச்சி</span>
+              <span>🎓 நெறி: மதுரை காமராஜர் &amp; திருவாவடுதுறை ஆதீன மரபு</span>
+            </div>
           </div>
-          <span style="font-size:0.85rem; color:#2dd4bf; background:rgba(45,212,191,0.1); border:1px solid rgba(45,212,191,0.25); padding:6px 14px; border-radius:20px; font-weight:600;">
-            CIF Foundation &amp; Advanced Course
-          </span>
+          <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('B.A. சைவ சித்தாந்தப் பட்டம் (B.A. in Shaiva Siddhanta)')">சான்றிதழ் தேர்வில் சேர் ↗</button>
         </div>
 
-        <p style="color:#cbd5e1; font-size:0.93rem; line-height:1.75;">
-          நேரடியாக உபநிடதங்களுக்குள் நுழையும் முன், வேதாந்த கலைச்சொற்கள், மனித உடலின் 3 சரீரங்கள், 3 அவஸ்தைகள், பஞ்ச கோசங்கள் மற்றும் பகுத்தறியும் விவேகத்தைப் பயிற்றுவிக்கும் அடிப்படை மற்றும் இடைநிலை நூல்களின் தொகுப்பு.
+        <p class="program-desc">
+          தென்னகத் தமிழர்களின் இணையற்ற மெய்யியல் சாதனையான சைவ சித்தாந்த சாத்திரங்கள், பன்னிரு திருமுறைப் பதிக இலக்கியங்கள், பதி-பசு-பாச முப்பொருள் உண்மை மற்றும் வள்ளலாரின் அருட்பெருஞ்சோதி சுத்த சன்மார்க்க நெறியை ஒருங்கே பயிற்றுவிக்கும் செழுமையான பட்டப் படிப்பு.
         </p>
 
-        <div class="vidya-module-grid">
-          <div class="vidya-module-box">
-            <div class="vidya-module-title"><span>📜</span> தத்வ போதம் (Tattva Bodha)</div>
-            <div class="vidya-module-desc">ஆதிசங்கரரின் பாலபாட நூல். அதிகாரி லக்ஷணம் (விவேகம், வைராக்கியம், சம-தமாதி ஷட்க சம்பத்து, முமுக்ஷுத்துவம்), ஸ்தூல, சூக்ஷ்ம, காரண சரீரப் பகுப்பாய்வு, ஜாக்கிரத், ஸ்வப்ன, சுஷுப்தி அவஸ்தா த்ரய விவேகம்.</div>
+        <div class="program-modules-grid">
+          <div class="program-module-box blue">
+            <div class="module-code-pill">SEM 1-2 • SHV-101</div>
+            <div class="module-title">பதி-பசு-பாச முப்பொருள் உண்மை அறிமுகம்</div>
+            <div class="module-desc">இறைவன் (பதி), ஆன்மா (பசு), உலகத் தளைகள் (பாசம் — ஆணவம், கன்மம், மாயை மும்மலங்கள்). ஆன்மாவின் மூல இயல்பான 'சார்ந்ததன் வண்ணமாதல்' மற்றும் மலபரிபாகக் கோட்பாடுகள்.</div>
+            <div class="module-sources">📖 மூல நூல்: உண்மை விளக்கம் &amp; திருக்களிற்றுப்படியார்</div>
           </div>
 
-          <div class="vidya-module-box cyan">
-            <div class="vidya-module-title"><span>💎</span> விவேகசூடாமணி (Vivekachudamani)</div>
-            <div class="vidya-module-desc">580 சுலோகங்கள் கொண்ட அத்வைத கிரீட ரத்தினம். மாயையின் விக்ஷேப, ஆவரண சக்திகள், மனிதனின் அனான்ம அடையாளங்களை அறுத்தெறியும் 'நேதி நேதி' வழிமுறை மற்றும் பிரம்ம நிர்வாணத்தின் ஆனந்த அனுபவம்.</div>
+          <div class="program-module-box teal">
+            <div class="module-code-pill">SEM 2-3 • SHV-102</div>
+            <div class="module-title">பன்னிரு திருமுறை இலக்கியமும் சமயக்குரவர் வரலாறும்</div>
+            <div class="module-desc">சம்பந்தர், அப்பர், சுந்தரர் தேவாரப் பதிகங்களின் இலக்கிய-இசைச் சிறப்பு. மாணிக்கவாசகரின் திருவாசக உருக்கம். திருமூலரின் திருமந்திர உடற்கூற்றியல் மற்றும் பக்தி இயக்க வரலாறு.</div>
+            <div class="module-sources">📖 மூல நூல்: பன்னிரு திருமுறைகள் &amp; பெரியபுராணம்</div>
           </div>
 
-          <div class="vidya-module-box amber">
-            <div class="vidya-module-title"><span>🕯️</span> பஞ்சதசி &amp; ஆத்ம போதம் (Panchadasi &amp; Atmabodha)</div>
-            <div class="vidya-module-desc">வித்யாரண்ய சுவாமிகளின் 'பஞ்சதசி' — விவேக தீபம், நாடக தீபம், தியான தீபம் மற்றும் பிரம்மானந்தத்தின் 15 அத்தியாய பகுப்பாய்வு. ஆத்ம போதத்தின் 68 எளிய உவமை விளக்கங்கள்.</div>
+          <div class="program-module-box purple">
+            <div class="module-code-pill">SEM 4-5 • SHV-201</div>
+            <div class="module-title">சிவஞானபோதம் 12 சூத்திர மூல ஆய்வு</div>
+            <div class="module-desc">மெய்கண்ட தேவநாயனாரின் 12 சூத்திரங்கள்: பிரமாண இயல் (1-3), இலக்கண இயல் (4-6), சாதன இயல் (7-9), பயனியல் (10-12). ஆன்மா சிவத்துடன் அத்துவிதமாய் இரண்டறக் கலக்கும் முக்தி நிலை.</div>
+            <div class="module-sources">📖 மூல நூல்: மெய்கண்டாரின் சிவஞானபோதம்</div>
           </div>
 
-          <div class="vidya-module-box emerald">
-            <div class="vidya-module-title"><span>🌿</span> உபதேச சாரம் (Upadesha Sara)</div>
-            <div class="vidya-module-desc">பகவான் ரமண மகரிஷி அருளிய 30 சுலோகங்கள். கர்மம், பக்தி, யோகப் பிராணாயாமம் ஆகியவற்றைத் தாண்டி 'நான் யார்?' என்ற நேரடி ஆன்ம விசாரத்தின் உன்னதப் படிநிலைகள்.</div>
+          <div class="program-module-box gold">
+            <div class="module-code-pill">SEM 5-6 • SHV-301</div>
+            <div class="module-title">28 சிவ ஆகம கிரியைகளும் ஆலயம்-மனிதன் உருவகமும்</div>
+            <div class="module-desc">காமிகம், காரணம் முதலான 28 சிவ ஆகமங்கள். சரியை, கிரியை, யோகம், ஞானம் ஆகிய நான்கு பாதங்கள். 'உடம்பே ஆலயம், வாயே கோபுரவாசல்' என்ற தத்துவத்தின் சிற்ப-கட்டிடக்கலைப் பிரயோகம்.</div>
+            <div class="module-sources">📖 மூல நூல்: சிவ ஆகம சாரம் &amp; திருமந்திரம் 7-ஆம் தந்திரம்</div>
           </div>
+        </div>
+
+        <div class="program-footer-bar">
+          <span class="benchmark-tag">🏆 Benchmark: Madras University Chair of Shaiva Siddhanta &amp; Dharmapuram Adheenam</span>
+          <span>ஆய்வுப் பயிற்சி: தேவாரம் பண்ணிசை, கோவில் கல்வெட்டுகள் &amp; மெய்கண்ட சாத்திர ஓலைச்சுவடி ஆய்வு</span>
         </div>
       </article>
 
-      <!-- TRACK 3: ADVANCED SHAIVA SIDDHANTA -->
-      <article class="vidya-track-card">
-        <div class="vidya-track-header">
+      <!-- PROGRAM UG-3 -->
+      <article class="degree-program-card">
+        <div class="degree-program-header">
           <div>
-            <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-              <span class="wbs-code wbs-code-primary">TRACK 03</span>
-              <span style="font-size:0.82rem; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">சைவ சித்தாந்த உயர் சாத்திரங்கள் (Shaiva Siddhanta Shastras)</span>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="program-code">DEG-BSC-COG</span>
+              <span style="font-size:0.8rem; color:#ffd700; font-weight:700;">3 ஆண்டுகள் • 120 Credits</span>
             </div>
-            <h3 style="color:#ffffff; font-size:1.4rem; font-weight:800; margin:0;">
-              மெய்கண்ட சாத்திரங்கள் 14 &amp; சிவாக்கிர பாஷ்ய தத்துவ இயல்
-            </h3>
+            <h3 class="program-title">B.Sc. பிரயோக வேதாந்தமும் உணர்வுநிலை அறிவியலும் (B.Sc. in Applied Vedanta &amp; Consciousness Studies)</h3>
+            <div class="program-meta">
+              <span>🏛️ பயிற்றுவிக்கும் பீடம்: வேத அறிவியல் &amp; அறிவாற்றல் துறை</span>
+              <span>📖 தகுதி: மேல்நிலைக்கல்வி (அறிவியல் / கணிதம் / கலை) தேர்ச்சி</span>
+              <span>🎓 நெறி: RKMVERI &amp; நவீன நரம்பியல் உளவியல் மரபு</span>
+            </div>
           </div>
-          <span style="font-size:0.85rem; color:var(--gold); background:rgba(212,175,55,0.1); border:1px solid rgba(212,175,55,0.3); padding:6px 14px; border-radius:20px; font-weight:600;">
-            தமிழ் மெய்யியல் உச்சக்கட்டம்
-          </span>
+          <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('B.Sc. பிரயோக வேதாந்த உணர்வுநிலை அறிவியல் பட்டம்')">சான்றிதழ் தேர்வில் சேர் ↗</button>
         </div>
 
-        <p style="color:#cbd5e1; font-size:0.93rem; line-height:1.75;">
-          தென்தமிழகத்தின் 14 மெய்கண்ட சாத்திரங்களின் ஆழமான தர்க்கவியல் பார்வை. பதி-பசு-பாச முப்பொருள் உண்மை, ஆணவ மலத்தின் இருப்பு, வினைக் கொள்கை, சத்தினிபாதம் மற்றும் சிவானந்தப் பேறு பற்றிய முழுமையான சாத்திர ஆய்வு.
+        <p class="program-desc">
+          சுவாமி விவேகானந்தரின் பிரயோக வேதாந்தத்தையும் (Practical Vedanta), பதஞ்சலி யோக சூத்திரங்களையும் நவீன நரம்பியல் (Neuroscience), அறிவாற்றல் உளவியல் (Cognitive Psychology) மற்றும் மன நல மேலாண்மையோடு இணைக்கும் அதிநவீன அறிவியல்-வேதப் பட்டப் படிப்பு.
         </p>
 
-        <div class="vidya-module-grid">
-          <div class="vidya-module-box">
-            <div class="vidya-module-title"><span>🔱</span> சிவஞானபோதம் &amp; மாபாடியம்</div>
-            <div class="vidya-module-desc">மெய்கண்ட தேவநாயனாரின் 12 சூத்திரங்கள். மாதவச் சிவஞான யோகிகள் அருளிய உலகப் புகழ் பெற்ற 'திராவிட மகாபாஷ்யம்'. பிரமாண இயல், இலக்கண இயல், சாதன இயல், பயன் இயல் ஆகிய நான்கு பிரிவுகள்.</div>
+        <div class="program-modules-grid">
+          <div class="program-module-box blue">
+            <div class="module-code-pill">SEM 1-2 • COG-101</div>
+            <div class="module-title">அந்தக்கரணம் — மனத்தின் 4 அடுக்குகள் &amp; அறிவாற்றல்</div>
+            <div class="module-desc">மனஸ் (சங்கல்ப-விகல்பம்), புத்தி (தீர்மானம்), சித்தம் (நினைவுக் களஞ்சியம்), அகங்காரம் (சுய அடையாளம்). நவீன Cognitive Science ஆய்வுகளுடன் ஒப்பாய்வு.</div>
+            <div class="module-sources">📖 மூல நூல்: சங்கரரின் உபதேச சஹஸ்ரி &amp; நரம்பியல் ஆய்வுக் கட்டுரைகள்</div>
           </div>
 
-          <div class="vidya-module-box cyan">
-            <div class="vidya-module-title"><span>🛡️</span> சிவஞான சித்தியார் (Siddhiyar)</div>
-            <div class="vidya-module-desc">அருணந்தி சிவாச்சாரியாரின் பெருநூல். உலகாயதம், பௌத்தம், ஜைனம், மாயாவாதம் போன்ற பிற தத்துவங்களின் வாதங்களை மறுக்கும் 'பரபக்கம்' மற்றும் சித்தாந்தத்தை நிறுவும் 'சுபக்கம்'.</div>
+          <div class="program-module-box teal">
+            <div class="module-code-pill">SEM 2-3 • COG-102</div>
+            <div class="module-title">பதஞ்சலி யோக சூத்திர உளவியலும் நரம்பியல் நெகிழ்வுத்தன்மையும்</div>
+            <div class="module-desc">சித்தம் விருத்தி நிரோதம்; அபியாசம், வைராக்கியம்; சமாதி பாதம், சாதன பாதம். தியானத்தின் போது மூளையின் அலைகள் (Alpha, Theta, Gamma) மற்றும் Neuroplasticity மாற்றங்கள்.</div>
+            <div class="module-sources">📖 மூல நூல்: பதஞ்சலி யோக சூத்திரம் &amp; வ்யாச பாஷ்யம்</div>
           </div>
 
-          <div class="vidya-module-box emerald">
-            <div class="vidya-module-title"><span>✨</span> திருவருட்பயன் &amp; உண்மை விளக்கம்</div>
-            <div class="vidya-module-desc">கொற்றவன்குடி உமாபதி சிவாச்சாரியாரின் குறள் வெண்பாக்கள். பதிமுதுநிலை, உயிர்க்குயிராதல், பாசமறுத்தல் மற்றும் மனவாசகங்கடந்தாரின் உண்மை விளக்கக் கேனோபநிடத ஒப்புமை.</div>
+          <div class="program-module-box purple">
+            <div class="module-code-pill">SEM 4-5 • COG-201</div>
+            <div class="module-title">பஞ்ச கோசங்கள் &amp; நவீன மனநல சிகிச்சை முறைகள்</div>
+            <div class="module-desc">அன்னமய, பிராணமய, மனோமய, விஞ்ஞானமய, ஆனந்தமய கோசங்கள். மன அழுத்தம், பதற்றம், எக்ஸைட்டி குறைபாடுகளுக்கு CBT (Cognitive Behavioral Therapy) மற்றும் பிராணாயாமப் பயிற்சிகள்.</div>
+            <div class="module-sources">📖 மூல நூல்: தைத்திரீய உபநிடதம் (பிருகு வல்லி)</div>
           </div>
 
-          <div class="vidya-module-box amber">
-            <div class="vidya-module-title"><span>🏛️</span> 28 ஆகம கிரியா தத்துவம் (Agamic Tantra)</div>
-            <div class="vidya-module-desc">காமிகம், காரணம் முதலான 28 சிவ ஆகமங்கள். சரியை, கிரியை, யோகம், ஞானம் ஆகிய பாதங்கள். ஆலயம் நிர்மாணித்தல், மூர்த்திப் பிரதிஷ்டை மற்றும் மந்திர உபாசனா இரகசியங்கள்.</div>
+          <div class="program-module-box gold">
+            <div class="module-code-pill">SEM 5-6 • COG-301</div>
+            <div class="module-title">குவாண்டம் இயற்பியலும் அத்வைத அண்டவியலும்</div>
+            <div class="module-desc">ஷ்ரோடிங்கரின் 'Mind and Matter', ஹைசன்பர்க்கின் நிச்சயமற்ற தத்துவம் (Uncertainty Principle), நீல்ஸ் போரின் பூரகக் கொள்கை மற்றும் உபநிடத 'ஏகம் ஏவ அத்விதீயம்' ஒப்புமை.</div>
+            <div class="module-sources">📖 ஆய்வுக் குறிப்பு: Fritjof Capra, Erwin Schrödinger &amp; விவேகானந்தரின் சொற்பொழிவுகள்</div>
           </div>
+        </div>
+
+        <div class="program-footer-bar">
+          <span class="benchmark-tag">🏆 Benchmark: Ramakrishna Mission (RKMVERI) &amp; MIT Consciousness Studies Group</span>
+          <span>ஆய்வகப் பணி: EEG பயோ-ஃபீட்பேக், தியான நரம்பியல் பதிவு &amp; மூளை அலை பகுப்பாய்வு</span>
         </div>
       </article>
-
-      <!-- TRACK 4: SHAD-DARSHANAS & COMPARATIVE EPISTEMOLOGY -->
-      <article class="vidya-track-card">
-        <div class="vidya-track-header">
-          <div>
-            <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-              <span class="wbs-code wbs-code-primary">TRACK 04</span>
-              <span style="font-size:0.82rem; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">பாரத தர்சன தர்க்கவியல் &amp; மேலைநாட்டு மெய்யியல்</span>
-            </div>
-            <h3 style="color:#ffffff; font-size:1.4rem; font-weight:800; margin:0;">
-              ஷட்தர்சனங்கள், அளவையியல் &amp; உலக மெய்யியல் ஒப்பாய்வு
-            </h3>
-          </div>
-          <span style="font-size:0.85rem; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.25); padding:6px 14px; border-radius:20px; font-weight:600;">
-            Forest Academy &amp; University Rigor
-          </span>
-        </div>
-
-        <p style="color:#cbd5e1; font-size:0.93rem; line-height:1.75;">
-          நியாய, வைசேஷிக, சாங்கிய, யோக, மீமாம்ச, வேதாந்த தத்துவங்களின் அளவையியல் (Epistemology). மேலும் இம்மானுவேல் காண்ட், ஸ்பினோஸா, ஷோபன்ஹாவர் போன்ற மேலைநாட்டு சிந்தனையாளர்களோடு வேதாந்தத்தை ஒப்பிடும் அறிவார்ந்த பகுப்பாய்வு.
-        </p>
-
-        <div class="vidya-module-grid">
-          <div class="vidya-module-box">
-            <div class="vidya-module-title"><span>⚖️</span> நியாய-வைசேஷிக பிரமாண சாஸ்திரம்</div>
-            <div class="vidya-module-desc">அட்சபாத கௌதமரின் தர்க்க நியாயங்கள். பிரத்யக்ஷம் (நேரடிக் காட்சி), அனுமானம் (ஊகம் - வியாப்தி, ஹேது), உபமானம் (ஒப்பீடு), சப்தம் (வேத வாக்கு). அன்னம்பட்டரின் 'தர்க்க சங்கிரஹம்'.</div>
-          </div>
-
-          <div class="vidya-module-box cyan">
-            <div class="vidya-module-title"><span>🧘</span> சாங்கிய-யோக உளவியல்</div>
-            <div class="vidya-module-desc">கபிலரின் சாங்கிய காரிகைகள் — 25 தத்துவங்கள். பிரகிருதி-புருஷ விவேகம். பதஞ்சலி மகரிஷியின் யோக சூத்திரங்கள் (சமாதி பாதம், சாதன பாதம், விபூதி பாதம், கைவல்ய பாதம்).</div>
-          </div>
-
-          <div class="vidya-module-box emerald">
-            <div class="vidya-module-title"><span>🌍</span> மேலைநாட்டு மெய்யியல் ஒப்பாய்வு</div>
-            <div class="vidya-module-desc">பிளேட்டோவின் 'Cave Allegory' vs. மாயை. காண்ட்டின் 'Thing-in-itself' (Noumenon) vs. பிரம்மம். ஸ்பினோஸாவின் Pantheism vs. அத்வைதம். ஷோபன்ஹாவரின் உபநிடதப் புகழுரைகள்.</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- TRACK 5: APPLIED VEDANTA & CONSCIOUSNESS STUDIES -->
-      <article class="vidya-track-card">
-        <div class="vidya-track-header">
-          <div>
-            <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-              <span class="wbs-code wbs-code-primary">TRACK 05</span>
-              <span style="font-size:0.82rem; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">பிரயோக வேதாந்தமும் உணர்வுநிலை ஆய்வுகளும்</span>
-            </div>
-            <h3 style="color:#ffffff; font-size:1.4rem; font-weight:800; margin:0;">
-              சுவாமி விவேகானந்தரின் பிரயோக வேதாந்தம் &amp; குவாண்டம் அறிவாற்றல்
-            </h3>
-          </div>
-          <span style="font-size:0.85rem; color:#2dd4bf; background:rgba(45,212,191,0.1); border:1px solid rgba(45,212,191,0.25); padding:6px 14px; border-radius:20px; font-weight:600;">
-            RKMVERI &amp; Modern Indic Science
-          </span>
-        </div>
-
-        <p style="color:#cbd5e1; font-size:0.93rem; line-height:1.75;">
-          வேதாந்தத்தை காடுகளிலிருந்தும் மடாலயங்களிலிருந்தும் அன்றாட மனித வாழ்வின் உழைப்புக் களத்திற்கும், நவீன அறிவியல் ஆய்வுகூடங்களுக்கும் கொண்டுவந்த சுவாமி விவேகானந்தரின் பிரயோக வேதாந்தம் (Practical Vedanta).
-        </p>
-
-        <div class="vidya-module-grid">
-          <div class="vidya-module-box">
-            <div class="vidya-module-title"><span>⚡</span> விவேகானந்தரின் பிரயோக வேதாந்தம்</div>
-            <div class="vidya-module-desc">மனிதனை உருவாக்கும் கல்வி (Man-Making Education), 'ஏழையின் கண்ணீரைத் துடைப்பதே உண்மையான சிவபூஜை' (சிவஞானத்தில் ஜீவகாருண்யம்), மற்றும் அச்சமின்மை (Abhaya).</div>
-          </div>
-
-          <div class="vidya-module-box cyan">
-            <div class="vidya-module-title"><span>⚛️</span> குவாண்டம் இயற்பியலும் அத்வைதமும்</div>
-            <div class="vidya-module-desc">எர்வின் ஷ்ரோடிங்கர் (Erwin Schrödinger), வெர்னர் ஹைசன்பர்க் (Werner Heisenberg) மற்றும் நீல்ஸ் போர் (Niels Bohr) ஆகியோரின் குவாண்டம் சிந்தனைகளுக்கும் உபநிடதங்களுக்குமான நேரடித் தொடர்புகள்.</div>
-          </div>
-
-          <div class="vidya-module-box emerald">
-            <div class="vidya-module-title"><span>🧠</span> அறிவாற்றல் மறுவடிவமைப்பும் மன நலமும்</div>
-            <div class="vidya-module-desc">நவீன CBT (Cognitive Behavioral Therapy) மற்றும் Acceptance &amp; Commitment Therapy முறைகளை விட வலிமையான விவேக-வைராக்கிய மனப்பயிற்சி. மன அழுத்தம், பர்ன்-அவுட் தவிர்த்து ஆன்ம பலத்துடன் சாதனை படைத்தல்.</div>
-          </div>
-        </div>
-      </article>
-
     </section>
 
-    <!-- 2.5 SANSKRIT SHASTRA & BHASHYA RESEARCH HALL (சம்ஸ்கிருத மூல சாத்திர பாஷ்யக் களம்) -->
-    <section id="sanskritShastraHall" style="margin: 60px 0; background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%); border: 1px solid rgba(212, 175, 55, 0.4); border-radius: 20px; padding: 36px 30px; box-shadow: 0 16px 40px rgba(0,0,0,0.6);">
-      
-      <div style="text-align:center; max-width:900px; margin:0 auto 36px;">
-        <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(212,175,55,0.15); color:var(--gold-bright); border:1px solid rgba(212,175,55,0.35); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:5px 16px; border-radius:20px; margin-bottom:12px;">
-          <span>🕉️ Collegiate Shastra Repository • Higher Studies Portal</span>
+    <!-- ========================================== -->
+    <!-- DIVISION 2: POSTGRADUATE DEGREES (M.A. / Acharya) -->
+    <!-- ========================================== -->
+    <section class="degree-tier-section" id="tierPG" data-tier="pg">
+      <div class="tier-header-banner">
+        <div class="tier-title-group">
+          <h2><span>📜</span> பிரிவு 2: முதுகலைப் பட்டப் படிப்புகள் (Postgraduate Master's Programs)</h2>
+          <p>இளங்கலைப் பட்டம் பெற்றவர்களுக்கான 2 ஆண்டு கால ஆழ்ந்த மூல சாத்திர ஆராய்ச்சிப் படிப்புகள் (2-Year Master's Degree • 80 Credits).</p>
         </div>
-        <h2 style="color:#ffffff; font-size:2rem; font-weight:800; margin-bottom:12px;">
-          சம்ஸ்கிருத மூல சாத்திர பாஷ்யக் களம்
-        </h2>
-        <p style="color:#cbd5e1; font-size:0.96rem; line-height:1.8;">
-          பள்ளிப் பாடத்திட்டங்களிலிருந்து கல்லூரி மற்றும் உயர்கல்வி நிலைக்கு உயர்த்தப்பட்ட அதிமேம்பட்ட வேத, உபநிடத, கீதை மற்றும் சாங்கர பாஷ்ய மூலப் பிரமாணங்கள். தூய தேவநாகரி வடிவம், தமிழ் ஒலிபெயர்ப்பு, பதவுரை (Word-by-Word), அன்வயம் மற்றும் ஆதிசங்கரர் முதலான ஆச்சாரியர்களின் ஆழமான தத்துவ ஆய்வுரைகள்.
-        </p>
+        <span class="tier-badge pg">Postgraduate (PG / Acharya)</span>
       </div>
 
-      <div style="display:flex; flex-direction:column; gap:28px;">
-
-        <!-- SHASTRA 1: SRI RUDRAM -->
-        <div class="vidya-track-card" style="border-left: 4px solid var(--gold);">
-          <div class="vidya-track-header">
-            <div>
-              <span class="wbs-code wbs-code-primary">SHASTRA 01</span>
-              <span style="font-size:0.82rem; color:var(--gold); font-weight:700; text-transform:uppercase; margin-left:8px;">கிருஷ்ண யஜுர்வேதம் — தைத்ரிய சம்ஹிதை</span>
-              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
-                ஸ்ரீ ருத்ர நமகம் &amp; சமகம் (Sri Rudram Namakam &amp; Chamakam)
-              </h3>
+      <!-- PROGRAM PG-1 -->
+      <article class="degree-program-card">
+        <div class="degree-program-header">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="program-code">DEG-MA-PRA</span>
+              <span style="font-size:0.8rem; color:#2dd4bf; font-weight:700;">2 ஆண்டுகள் • 80 Credits</span>
             </div>
-            <span style="font-size:0.8rem; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.25); padding:5px 12px; border-radius:16px;">
-              தரம் 5-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
-            </span>
-          </div>
-
-          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
-            <div style="font-size:0.82rem; color:var(--gold); font-weight:700; margin-bottom:8px; text-transform:uppercase;">மூல தேவநாகரி மந்திரம் (Original Sanskrit Devanagari):</div>
-            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#fef08a; line-height:1.9; margin-bottom:12px;">
-              ॐ नमस्ते रुद्र मन्यव उतोत इषवे नमः ।<br>
-              नमस्ते अस्तु धन्वने बाहुभ्यामुत ते नमः ॥<br>
-              या ते रुद्र शिवा तनूरघोराऽपापकाशिनी ।<br>
-              तया नस्तनुवा शंतमया गिरिशन्ताभिचाकशीहि ॥
-            </div>
-            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
-            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
-              ஓம் நமஸ்தே ருத்ர மன்யவ உதோத இஷவே நம: |<br>
-              நமஸ்தே அஸ்து தன்வனே பாஹுப்யாம் உத தே நம: ||<br>
-              யா தே ருத்ர சிவா தனூ ரகோரா பாபகாசினீ |<br>
-              தயா நஸ் தனுவா சம்தமயா கிரிசந்தா பிசாகசீஹி ||
+            <h3 class="program-title">M.A. பிரஸ்தானத்ரய மூல ஆய்வு (M.A. in Prasthanatraya &amp; Shankara Bhashya Hermeneutics)</h3>
+            <div class="program-meta">
+              <span>🏛️ பயிற்றுவிக்கும் பீடம்: உயர் வேதாந்த ஆய்வுப் பிரிவு</span>
+              <span>📖 தகுதி: ஏதேனும் இளங்கலைப் பட்டம் (B.A. / B.Sc. / சாஸ்திரி)</span>
+              <span>🎓 நெறி: சின்மயா விஸ்வ வித்யாபீடம் (CVV) &amp; சிருங்கேரி சாரதா பீட மரபு</span>
             </div>
           </div>
+          <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('M.A. பிரஸ்தானத்ரய முதுகலைப் பட்டம் (Acharya in Prasthanatraya)')">சான்றிதழ் தேர்வில் சேர் ↗</button>
+        </div>
 
-          <div class="vidya-module-grid">
-            <div class="vidya-module-box">
-              <div class="vidya-module-title"><span>📖</span> பதவுரை &amp; அன்வயம் (Padartha Analysis)</div>
-              <div class="vidya-module-desc">
-                <strong>ருத்ர</strong> = துயர் துடைக்கும் பரமேஸ்வரனே; <strong>மன்யவே</strong> = உமது சீற்றத்திற்கு; <strong>நம:</strong> = வணக்கம்; <strong>உத</strong> = மேலும்; <strong>இஷவே</strong> = உமது அம்பிற்கும்; <strong>தே தன்வனே</strong> = உமது வில்லிற்கும்; <strong>பாஹுப்யாம்</strong> = இரு திருக்கரங்களுக்கும்; <strong>நம: அஸ்து</strong> = பணிவான வணக்கங்கள் ஆகுக! <strong>சிவா தனூ:</strong> = மங்களகரமான திருமேனி கொண்டு எங்களுக்குப் பேரருள் புரிவீராக.
-              </div>
-            </div>
-            <div class="vidya-module-box cyan">
-              <div class="vidya-module-title"><span>🔱</span> வேதாந்த பாஷ்ய தத்துவம் (Philosophical Bhashya)</div>
-              <div class="vidya-module-desc">
-                ஸ்ரீ ருத்ரம் வேதங்களின் இதய கமலமாகப் போற்றப்படுகிறது. சாயணாசாரியர் மற்றும் பட்ட பாஸ்கர பாஷ்யங்களின்படி, இப்பிரபஞ்சத்தின் தாவரங்கள், மரங்கள் (விருட்சேப்யோ), திருடர்கள், வேடர்கள், முனிவர்கள், நதிகள், கற்கள் என சகலத்திலும் சிவபெருமானின் சர்வவியாபக 'விராட்' சொரூபத்தை தரிசிக்கும் அத்வைத பாவனை இதில் வெளிப்படுகிறது.
-              </div>
-            </div>
+        <p class="program-desc">
+          அத்வைத வேதாந்தத்தின் மூன்று அழியாத மூலத் தூண்களான ஸ்ருதி பிரஸ்தானம் (பத்து உபநிடதங்கள்), ஸ்மிருதி பிரஸ்தானம் (பகவத் கீதை) மற்றும் நியாய பிரஸ்தானம் (பாதராயணரின் பிரம்ம சூத்திரம்) ஆகியவற்றை ஆதிசங்கரரின் மூல சமஸ்கிருத பாஷ்யங்களுடனும் தமிழ் மெய்யியல் விளக்கங்களுடனும் கற்கும் தலைசிறந்த முதுகலை ஆய்வு நெறி.
+        </p>
+
+        <div class="program-modules-grid">
+          <div class="program-module-box blue">
+            <div class="module-code-pill">SEM 1 • PRA-501</div>
+            <div class="module-title">பிரம்ம சூத்திரம் — சதுஸ்-சூத்ரி &amp; அத்யாச பாஷ்யம்</div>
+            <div class="module-desc">முதல் 4 சூத்திரங்கள்: 1. அதாதோ பிரம்மஜிக்ஞாஸா, 2. ஜன்மாத்யஸ்ய யதஃ, 3. சாஸ்திரயோனித்வாத், 4. தத்து சமன்வயாதாத். மாயையில் கயிற்றைப் பாம்பாக அறிவது போன்ற மனிதனின் விபரீத உணர்வை விளக்கும் அத்யாச பாஷ்யம்.</div>
+            <div class="module-sources">📖 மூல நூல்: பாதராயண பிரம்ம சூத்திர சாங்கர பாஷ்யம்</div>
+          </div>
+
+          <div class="program-module-box teal">
+            <div class="module-code-pill">SEM 2 • PRA-502</div>
+            <div class="module-title">மாண்டூக்ய காரிகையும் கௌடபாதரின் அஜாத வாதமும்</div>
+            <div class="module-desc">கௌடபாத காரிகையின் 4 பிரகரணங்கள்: ஆகம, வைதத்ய, அத்வைத, அலாதசாந்தி பிரகரணங்கள். துரிய நிலை; எப்பொருளும் உண்மையில் பிறக்கவே இல்லை என்ற பரம அத்வைத 'அஜாத வாதம்'.</div>
+            <div class="module-sources">📖 மூல நூல்: கௌடபாத காரிகை &amp; சாங்கர பாஷ்யம்</div>
+          </div>
+
+          <div class="program-module-box purple">
+            <div class="module-code-pill">SEM 3 • PRA-503</div>
+            <div class="module-title">சாந்தோக்யம் &amp; பிருஹதாரண்யக மகா வாக்கிய ஆய்வு</div>
+            <div class="module-desc">சாந்தோக்ய உபநிடதத்தின் 'தத்வமஸி' (நீயே அதுவாய் இருக்கிறாய்) உபதேசம்; பிருஹதாரண்யக உபநிடதத்தின் யாக்ஞவல்கியர்-மைத்ரேயி உரையாடல்; 'நேதி நேதி' (இதுவல்ல, இதுவல்ல) தூய ஆன்ம தரிசனம்.</div>
+            <div class="module-sources">📖 மூல நூல்: சாந்தோக்ய &amp; பிருஹதாரண்யக உபநிடத பாஷ்யங்கள்</div>
+          </div>
+
+          <div class="program-module-box gold">
+            <div class="module-code-pill">SEM 4 • PRA-504</div>
+            <div class="module-title">பகவத் கீதை 18 அத்தியாய முழுமையான பாஷ்ய இயல்</div>
+            <div class="module-desc">விஸ்வரூப தரிசனம் (அத். 11), க்ஷேத்ர-க்ஷேத்ரக்ஞ விபாக யோகம் (அத். 13), குணத்ரய விபாகம் (அத். 14), புருஷோத்தம யோகம் (அத். 15), மோக்ஷ சந்யாச யோகம் (அத். 18). ஜீவன்முக்தி அனுபவம்.</div>
+            <div class="module-sources">📖 மூல நூல்: ஸ்ரீமத் பகவத் கீதை சாங்கர பாஷ்யம் முழுமை</div>
           </div>
         </div>
 
-        <!-- SHASTRA 2: DASHA UPANISHAD SHANTI MANTRAS -->
-        <div class="vidya-track-card" style="border-left: 4px solid #38bdf8;">
-          <div class="vidya-track-header">
-            <div>
-              <span class="wbs-code wbs-code-cyan">SHASTRA 02</span>
-              <span style="font-size:0.82rem; color:#38bdf8; font-weight:700; text-transform:uppercase; margin-left:8px;">தைத்திரீய &amp; கடோபநிடதம் (கிருஷ்ண யஜுர்வேதம்)</span>
-              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
-                தச உபநிடத சாந்தி மந்திரங்கள் &amp; குரு-சீடர் ஐக்கிய பாஷ்யம்
-              </h3>
-            </div>
-            <span style="font-size:0.8rem; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.25); padding:5px 12px; border-radius:16px;">
-              தரம் 6-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
-            </span>
-          </div>
+        <div class="program-footer-bar">
+          <span class="benchmark-tag">🏆 Benchmark: Chinmaya Vishwa Vidyapeeth (CVV) &amp; Banaras Hindu University (BHU)</span>
+          <span>முதுகலை ஆய்வேடு: ஒரு உபநிடதம் அல்லது பிரம்ம சூத்திர அதிகாரணத்தின் மூல ஆய்வுக் கட்டுரை (Master's Thesis)</span>
+        </div>
+      </article>
 
-          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
-            <div style="font-size:0.82rem; color:#38bdf8; font-weight:700; margin-bottom:8px; text-transform:uppercase;">தைத்திரீய சாந்தி மந்திரம் (Devanagari):</div>
-            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#bae6fd; line-height:1.9; margin-bottom:12px;">
-              ॐ सह नाववतु । सह नौ भुनक्तु । सह वीर्यं करवावहै ।<br>
-              तेजस्वि नावधीतमस्तु मा विद्विषावहै ॥<br>
-              ॐ शान्तिः शान्तिः शान्तिः ॥
+      <!-- PROGRAM PG-2 -->
+      <article class="degree-program-card">
+        <div class="degree-program-header">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="program-code">DEG-MA-MSH</span>
+              <span style="font-size:0.8rem; color:#c084fc; font-weight:700;">2 ஆண்டுகள் • 80 Credits</span>
             </div>
-            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
-            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
-              ஓம் ஸஹ நாவவது | ஸஹ நௌ புனக்து | ஸஹ வீர்யம் கரவாவஹை |<br>
-              தேஜஸ்வி நாவதீதமஸ்து மா வித்விஷாவஹை ||<br>
-              ஓம் சாந்தி: சாந்தி: சாந்தி: ||
+            <h3 class="program-title">M.A. மெய்கண்ட சாத்திரங்களும் சைவ ஆகம தத்துவமும் (M.A. in Meykanda Shastras &amp; Agamas)</h3>
+            <div class="program-meta">
+              <span>🏛️ பயிற்றுவிக்கும் பீடம்: சைவ சித்தாந்த முதுகலைத் துறை</span>
+              <span>📖 தகுதி: இளங்கலைப் பட்டம் (B.A. தமிழ் / தத்துவம் / ஏதேனும் பட்டம்)</span>
+              <span>🎓 நெறி: மதுரை காமராஜர் பல்கலைக்கழகம் &amp; ஆதீன சாத்திர பாடசாலைகள்</span>
             </div>
           </div>
+          <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('M.A. மெய்கண்ட சாத்திர முதுகலைப் பட்டம் (Acharya in Siddhanta)')">சான்றிதழ் தேர்வில் சேர் ↗</button>
+        </div>
 
-          <div class="vidya-module-grid">
-            <div class="vidya-module-box cyan">
-              <div class="vidya-module-title"><span>🔍</span> பதவுரை &amp; சாங்கர பாஷ்யம் (Shankara Commentary)</div>
-              <div class="vidya-module-desc">
-                <strong>ஸஹ நௌ அவது</strong> = குரு மற்றும் சீடராகிய நம் இருவரையும் பிரம்மம் ஒன்றாகப் பாதுகாக்கட்டும்; <strong>ஸஹ நௌ புனக்து</strong> = பிரம்ம வித்தையின் ஞானப் பலனை இருவரும் சமமாக அனுபவிப்போமாக; <strong>ஸஹ வீர்யம் கரவாவஹை</strong> = ஞானத்தைப் பெறும் பெரும் ஆற்றலை ஒன்றாக உருவாக்குவோமாக; <strong>தேஜஸ்வி நௌ அதீதம் அஸ்து</strong> = நாம் கற்ற வித்தை பேரொளி வீசுவதாக அமையட்டும்; <strong>மா வித்விஷாவஹை</strong> = நமக்குள் எப்போதும் பேதமோ காழ்ப்புணர்ச்சியோ நேராமல் இருக்கட்டும்.
-              </div>
-            </div>
-            <div class="vidya-module-box emerald">
-              <div class="vidya-module-title"><span>🕊️</span> திரிவித தாப நிவர்த்தி (The Trifold Peace)</div>
-              <div class="vidya-module-desc">
-                மூன்று முறை 'சாந்தி:' என உச்சரிப்பது மூன்று வகை உலகியல் துன்பங்களை நீக்குவதற்கே: 1. <em>ஆத்யாத்மிகம்</em> (தன் உடலினாலும் மனதினாலும் எழும் நோய், கவலைகள்), 2. <em>ஆதிபௌதிகம்</em> (பிற மனிதர்கள், மிருகங்கள், பூச்சிகளால் விளையும் துன்பங்கள்), 3. <em>ஆதிதெய்வீகம்</em> (மின்னல், நிலநடுக்கம், வெள்ளம் முதலான இயற்கைப் பேரழிவுகள்).
-              </div>
-            </div>
+        <p class="program-desc">
+          சிவஞான மாபாடியம் எனப் புகழப்படும் மாதவச் சிவஞான யோகிகளின் திராவிட மகாபாஷ்யம், சிவஞான சித்தியார் பரபக்க-சுபக்க தர்க்கங்கள் மற்றும் 28 சிவ ஆகமங்களின் தத்துவ-கிரியா ரகசியங்களை உலகளாவிய மெய்யியல் தரத்தில் ஆராயும் சிறப்பு முதுகலைப் படிப்பு.
+        </p>
+
+        <div class="program-modules-grid">
+          <div class="program-module-box blue">
+            <div class="module-code-pill">SEM 1 • MSH-501</div>
+            <div class="module-title">திராவிட மகாபாஷ்யம் (சிவஞான மாபாடியம்)</div>
+            <div class="module-desc">மெய்கண்டாரின் சிவஞானபோதத்திற்கு மாதவச் சிவஞான முனிவர் அருளிய தலைசிறந்த விரிவுரை. சங்கர, ராமானுஜ, மத்வ உரைகளுடன் ஒப்பிடும் தமிழ் தத்துவத்தின் மணிமகுட ஆய்வு.</div>
+            <div class="module-sources">📖 மூல நூல்: மாதவச் சிவஞான யோகிகளின் திராவிட மகாபாஷ்யம்</div>
+          </div>
+
+          <div class="program-module-box teal">
+            <div class="module-code-pill">SEM 2 • MSH-502</div>
+            <div class="module-title">சிவஞான சித்தியார் பரபக்க-சுபக்க ஒப்பாய்வு</div>
+            <div class="module-desc">அருணந்தி சிவாச்சாரியாரின் சித்தியார். உலகாயதம், சௌத்திராந்திக, யோகாசார, மாத்யமிக பௌத்தம், நிகண்டவாதம், மாயாவாதம், பாஞ்சராத்திரம் ஆகிய 14 புறச்சமயங்களை மறுக்கும் பரபக்க வாதக் கலை.</div>
+            <div class="module-sources">📖 மூல நூல்: சிவஞான சித்தியார் (அருணந்தி தேவநாயனார்)</div>
+          </div>
+
+          <div class="program-module-box purple">
+            <div class="module-code-pill">SEM 3 • MSH-503</div>
+            <div class="module-title">14 மெய்கண்ட சாத்திரங்களின் தத்துவத் தொகுப்பு</div>
+            <div class="module-desc">திருவுந்தியார், திருக்களிற்றுப்படியார், சிவப்பிரகாசம், திருவருட்பயன், வினாவெண்பா, போற்றிப்பஃறொடை, கொடிக்கவி, நெஞ்சுவிடுதூது, உண்மைநெறிவிளக்கம், சங்கற்பநிராகரணம் ஆகிய சாத்திரங்களின் ஒப்பாய்வு.</div>
+            <div class="module-sources">📖 மூல நூல்: சந்தான குரவர்கள் அருளிய பதினான்கு மெய்கண்ட சாத்திரங்கள்</div>
+          </div>
+
+          <div class="program-module-box gold">
+            <div class="module-code-pill">SEM 4 • MSH-504</div>
+            <div class="module-title">சைவ சித்தாந்தமும் காஷ்மீர பிரத்யபிஜ்ஞா தத்துவமும்</div>
+            <div class="module-desc">அபினவகுப்தரின் காஷ்மீர சைவம் (Spanda, Pratyabhijna) மற்றும் தென்னகத்துச் சைவ சித்தாந்தம் (Meykandar) இடையேயான ஆழமான ஒற்றுமைகள், வேற்றுமைகள் மற்றும் சிவானந்த அனுபவப் பகுப்பாய்வு.</div>
+            <div class="module-sources">📖 மூல நூல்: ஈஸ்வர பிரத்யபிஜ்ஞா விமர்சினி &amp; சிவப்பிரகாசம்</div>
           </div>
         </div>
 
-        <!-- SHASTRA 3: CHATUR VEDA MAHAVAKYAS -->
-        <div class="vidya-track-card" style="border-left: 4px solid #a855f7;">
-          <div class="vidya-track-header">
-            <div>
-              <span class="wbs-code wbs-code-amber">SHASTRA 03</span>
-              <span style="font-size:0.82rem; color:#c084fc; font-weight:700; text-transform:uppercase; margin-left:8px;">ரிக், யஜுர், சாம, அதர்வண வேதாந்த சிகரம்</span>
-              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
-                நான்கு வேத மகா வாக்கியங்கள் — சாங்கர பாஷ்ய பாகத்தியாக லக்ஷணை
-              </h3>
-            </div>
-            <span style="font-size:0.8rem; color:#c084fc; background:rgba(168,85,247,0.1); border:1px solid rgba(168,85,247,0.25); padding:5px 12px; border-radius:16px;">
-              தரம் 7-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
-            </span>
-          </div>
+        <div class="program-footer-bar">
+          <span class="benchmark-tag">🏆 Benchmark: Thiruvavaduthurai Adheenam &amp; Tanjore Tamil University</span>
+          <span>முதுகலை ஆய்வேடு: சிவஞானபோதத்தின் ஒரு சூத்திரத்திற்குரிய தர்க்கவியல் ஒப்பாய்வு (Master's Thesis)</span>
+        </div>
+      </article>
+    </section>
 
-          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px;">
-              <div style="border-left:2px solid #38bdf8; padding-left:12px;">
-                <div style="font-size:0.78rem; color:#38bdf8; font-weight:700;">ரிக்வேதம் • ஐதரேய உபநிடதம் (லக்ஷண வாக்கியம்)</div>
-                <div style="font-family:'Noto Sans Devanagari', serif; font-size:1.1rem; color:#bae6fd;">प्रज्ञानं ब्रह्म (ப்ரஜ்ஞானம் ப்ரஹ்ம)</div>
-                <div style="font-size:0.85rem; color:#cbd5e1; margin-top:4px;">"தூய உணர்வுப் பேரறிவே பிரம்மம்" — பிரம்மத்தின் தத்துவ சொரூப வரையறை.</div>
-              </div>
-              <div style="border-left:2px solid var(--gold); padding-left:12px;">
-                <div style="font-size:0.78rem; color:var(--gold); font-weight:700;">சாமவேதம் • சாந்தோக்ய உபநிடதம் (உபதேச வாக்கியம்)</div>
-                <div style="font-family:'Noto Sans Devanagari', serif; font-size:1.1rem; color:#fef08a;">तत्त्वमसि (தத் த்வமஸி)</div>
-                <div style="font-size:0.85rem; color:#cbd5e1; margin-top:4px;">"அந்தப் பரம்பொருளாக நீயே இருக்கிறாய்" — குரு உத்தாலகர் சுவேதகேதுவிற்கு உபதேசித்தது.</div>
-              </div>
-              <div style="border-left:2px solid #2dd4bf; padding-left:12px;">
-                <div style="font-size:0.78rem; color:#2dd4bf; font-weight:700;">அதர்வணவேதம் • மாண்டூக்ய உபநிடதம் (அனுபவ வாக்கியம்)</div>
-                <div style="font-family:'Noto Sans Devanagari', serif; font-size:1.1rem; color:#a7f3d0;">अयमात्मा ब्रह्म (அயம் ஆத்மா ப்ரஹ்ம)</div>
-                <div style="font-size:0.85rem; color:#cbd5e1; margin-top:4px;">"இந்த உள்ளுறை ஆத்மாவே பிரம்மம்" — சாதகன் தன் அகத்தே அடையும் நேரடி அனுபூதி.</div>
-              </div>
-              <div style="border-left:2px solid #f43f5e; padding-left:12px;">
-                <div style="font-size:0.78rem; color:#f43f5e; font-weight:700;">யஜுர்வேதம் • பிருஹதாரண்யகம் (அனுசந்தான வாக்கியம்)</div>
-                <div style="font-family:'Noto Sans Devanagari', serif; font-size:1.1rem; color:#fecdd3;">अहं ब्रह्मास्मि (அஹம் ப்ரஹ்மாஸ்மி)</div>
-                <div style="font-size:0.85rem; color:#cbd5e1; margin-top:4px;">"நான் பிரம்மமாகவே விளங்குகிறேன்" — முக்தன் உரைக்கும் பூரண முக்திப் பிரகடனம்.</div>
-              </div>
+    <!-- ========================================== -->
+    <!-- DIVISION 3: DOCTORAL RESEARCH (Ph.D. / Vidyavaridhi) -->
+    <!-- ========================================== -->
+    <section class="degree-tier-section" id="tierPhD" data-tier="phd">
+      <div class="tier-header-banner">
+        <div class="tier-title-group">
+          <h2><span>🔬</span> பிரிவு 3: முனைவர் பட்ட ஆய்வுப் படிப்புகள் (Ph.D. Doctoral Research)</h2>
+          <p>முதுகலைப் பட்டம் பெற்ற அறிஞர்கள் பாரத மெய்யியலையும் நவீன உலக அறிவியலையும் இணைத்து மேற்கொள்ளும் உயர் ஆய்வு (3-5 Years Ph.D. • Vidyavaridhi).</p>
+        </div>
+        <span class="tier-badge phd">Doctoral (Ph.D.)</span>
+      </div>
+
+      <!-- DOCTORAL PROGRAM 1 -->
+      <article class="degree-program-card">
+        <div class="degree-program-header">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="program-code">DOC-PHD-QNT</span>
+              <span style="font-size:0.8rem; color:#ffd700; font-weight:700;">3-5 ஆண்டுகள் • Doctoral Research</span>
+            </div>
+            <h3 class="program-title">Ph.D. வேதாந்தமும் நவீன குவாண்டம் இயற்பியலும் (Ph.D. in Quantum Vedanta &amp; Non-Dual Physics)</h3>
+            <div class="program-meta">
+              <span>🏛️ பயிற்றுவிக்கும் பீடம்: தத்துவவியல் &amp; அண்டவியல் ஆய்வு மையம்</span>
+              <span>📖 தகுதி: M.A. வேதாந்தம் / M.Sc. இயற்பியல் / தொடர்புடைய முதுகலை</span>
+              <span>🎓 நெறி: IISc &amp; IIT Indic Knowledge Systems Research Group</span>
             </div>
           </div>
+          <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('Ph.D. குவாண்டம் வேதாந்த முனைவர் பட்டம் (Doctor of Philosophy)')">ஆய்வுத் திட்டத்தில் பதிவு செய் ↗</button>
+        </div>
 
-          <div class="vidya-module-grid">
-            <div class="vidya-module-box">
-              <div class="vidya-module-title"><span>⚖️</span> பாகத்தியாக லக்ஷணை (Bhagatyaga Lakshana)</div>
-              <div class="vidya-module-desc">
-                ஆதிசங்கரரின் வேதாந்த பாஷ்யப்படி, 'தத் த்வமசி' வாக்கியத்தில் 'தத்' (ஈஸ்வரன்) என்பது சர்வக்ஞத்துவம் (எல்லாம் அறிதல்) எனும் உபாதியைக் கொண்டது; 'த்வம்' (ஜீவன்) என்பது அற்பக்ஞத்துவம் (குறைந்த அறிவு) எனும் உபாதியைக் கொண்டது. இரண்டும் முரண்படுவதால், இரு தரப்பிலும் உள்ள உபாதிப் பகுதிகளை விலக்கி (பாகத்தியாகம் செய்து), இரண்டிற்கும் ஆதாரமாக விளங்கும் சைதன்யத்தை (தூய ஆத்மாவை) ஒன்றென உணர்வதே அத்வைத அனுபூதியாகும்.
-              </div>
-            </div>
-            <div class="vidya-module-box amber">
-              <div class="vidya-module-title"><span>🔱</span> சைவ சித்தாந்த சமரச பார்வை (Saiva Siddhanta Synthesis)</div>
-              <div class="vidya-module-desc">
-                சைவ சித்தாந்தத்தில் இந்த மகா வாக்கியங்களை சுத்தாத்வைத நோக்கில் உரைப்பர்: உடம்பில் உள்ள கண்ணிற்குப் பார்வை தருவது சூரிய ஒளி போல, பசுவாகிய உயிருக்கு அறிவாய் விளங்குவது பதியாகிய சிவம். 'அஹம் பிரம்மாஸ்மி' என்பது 'நான் சிவமாகிறேன்' என்ற சிவோஹம்பாவனையாகும்.
-              </div>
-            </div>
+        <p class="program-desc">
+          பிரபஞ்சத்தின் மூல இருப்புப் பற்றிய குவாண்டம் இயற்பியல் கண்டுபிடிப்புகளான அலை-துகள் இரட்டைத்தன்மை (Wave-Particle Duality), பார்வையாளன் விளைவு (Observer Effect), மற்றும் நான்-லோக்காலிட்டி (Quantum Non-Locality) ஆகியவற்றை அத்வைத வேதாந்தத்தின் விவர்த்த வாதம், மாயைக் கோட்பாடு மற்றும் சச்சிதானந்தத் தத்துவத்தோடு ஒப்பிட்டு உலகளாவிய புதிய அறிவியல்-வேதப் பார்வையை உருவாக்கும் அதிஉயர் முனைவர் ஆய்வு.
+        </p>
+
+        <div class="program-modules-grid">
+          <div class="program-module-box blue">
+            <div class="module-code-pill">CORE RESEARCH I • DOC-801</div>
+            <div class="module-title">குவாண்டம் பிணைப்பும் அத்வைத அத்துவித நிலையும்</div>
+            <div class="module-desc">எண்டாங்கிள்மென்ட் (Quantum Entanglement) மூலம் பிரபஞ்சத்தின் தொலைதூரத் துகள்கள் தங்களுக்குள் உடனடித் தொடர்பு கொள்வது, 'சர்வம் கலு இதம் பிரம்மா' என்ற வேதாந்த ஒருமைப்பாட்டின் அறிவியல் வடிவமா? விரிவான சமன்பாடுகள் &amp; தத்துவப் பகுப்பாய்வு.</div>
+          </div>
+
+          <div class="program-module-box teal">
+            <div class="module-code-pill">CORE RESEARCH II • DOC-802</div>
+            <div class="module-title">பார்வையாளன் விளைவும் திருஷ்டி-சிருஷ்டி வாதமும்</div>
+            <div class="module-desc">பார்வையிடும் வரை துகள் நிலையடையாமல் நிகழ்தகவு அலையாகவே (Probability Wave) இருப்பது, பிரகாசானந்தரின் 'திருஷ்டி-சிருஷ்டி வாதம்' (பார்வையினாலேயே உலகம் தோற்றமடைகிறது) மற்றும் சங்கரரின் விவர்த்த வாதத்துடன் எவ்வாறு உடன்படுகிறது?</div>
+          </div>
+
+          <div class="program-module-box gold">
+            <div class="module-code-pill">THESIS • DOC-899</div>
+            <div class="module-title">முனைவர் பட்ட ஆய்வு ஏடு (Doctoral Dissertation)</div>
+            <div class="module-desc">சர்வதேச அறிஞர்கள் முன்னிலையில் சமர்ப்பிக்கப்படும் 80,000 வார்த்தைகள் கொண்ட புதிய கண்டுபிடிப்பு ஆய்வு நூல் (Peer-Reviewed Doctoral Dissertation).</div>
           </div>
         </div>
 
-        <!-- SHASTRA 4: BHAGAVAD GITA 2.47 KARMA YOGA -->
-        <div class="vidya-track-card" style="border-left: 4px solid #f59e0b;">
-          <div class="vidya-track-header">
-            <div>
-              <span class="wbs-code wbs-code-amber">SHASTRA 04</span>
-              <span style="font-size:0.82rem; color:#f59e0b; font-weight:700; text-transform:uppercase; margin-left:8px;">ஸ்ரீமத் பகவத் கீதை — சாங்கிய யோகம் (அத்தியாயம் 2)</span>
-              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
-                கீதை 2.47 — நிஷ்காம கர்ம யோக சாங்கர பாஷ்யம் (Nishkama Karma Yoga)
-              </h3>
-            </div>
-            <span style="font-size:0.8rem; color:#f59e0b; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.25); padding:5px 12px; border-radius:16px;">
-              தரம் 8-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
-            </span>
-          </div>
+        <div class="program-footer-bar">
+          <span class="benchmark-tag">🏆 Peer Review: International Journal of Indic Epistemology &amp; Quantum Foundations</span>
+          <span>ஆய்வு வழிநடத்துதல்: பல்கலைக்கழகப் பேராசிரியர்கள், அத்வைத ஆச்சார்யர்கள் &amp; குவாண்டம் விஞ்ஞானிகள் சபை</span>
+        </div>
+      </article>
 
-          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
-            <div style="font-size:0.82rem; color:#f59e0b; font-weight:700; margin-bottom:8px; text-transform:uppercase;">மூல தேவநாகரி ஸ்லோகம் (Devanagari):</div>
-            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#fed7aa; line-height:1.9; margin-bottom:12px;">
-              कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।<br>
-              मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥
+      <!-- DOCTORAL PROGRAM 2 -->
+      <article class="degree-program-card">
+        <div class="degree-program-header">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="program-code">DOC-PHD-ARC</span>
+              <span style="font-size:0.8rem; color:#2dd4bf; font-weight:700;">3-5 ஆண்டுகள் • Doctoral Research</span>
             </div>
-            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
-            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
-              கர்மண்யே வாதிகாரஸ்தே மா பலேஷு கதாசன |<br>
-              மா கர்மபலஹேதுர் பூர் மா தே ஸங்கோஸ்த்வகர்மணி ||
+            <h3 class="program-title">Ph.D. சைவ ஆகமக் கோவில் கட்டிடக்கலையும் மெய்யியல் உளவியலும் (Ph.D. in Agamic Architecture)</h3>
+            <div class="program-meta">
+              <span>🏛️ பயிற்றுவிக்கும் பீடம்: ஆகம கலை &amp; கோவில் கட்டடவியல் மையம்</span>
+              <span>📖 தகுதி: M.A. சைவ சித்தாந்தம் / M.Arch. / தொடர்புடைய முதுகலை</span>
+              <span>🎓 நெறி: தஞ்சாவூர் தமிழ்ப் பல்கலைக்கழகம் &amp; பிரெஞ்சு இந்தியக் கல்வி நிறுவனம் (IFP)</span>
             </div>
           </div>
+          <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('Ph.D. சைவ ஆகமக் கலை முனைவர் பட்டம் (Doctor of Philosophy)')">ஆய்வுத் திட்டத்தில் பதிவு செய் ↗</button>
+        </div>
 
-          <div class="vidya-module-grid">
-            <div class="vidya-module-box amber">
-              <div class="vidya-module-title"><span>📜</span> பதவுரை &amp; சாங்கர பாஷ்யம் (Padartha &amp; Commentary)</div>
-              <div class="vidya-module-desc">
-                <strong>கர்மணி ஏவ தே அதிகார:</strong> = கடமைகளைச் செய்வதில் மட்டுமே உனக்கு உரிமை (அதிகாரம்) உண்டு; <strong>மா பலேஷு கதாசன</strong> = செயல்களின் பலன்களில் ஒருபோதும் உனக்கு உரிமையில்லை; <strong>மா கர்மபலஹேது: பூ:</strong> = செயலின் பலனுக்கு நீயே காரணம் என்ற அகந்தை கொள்ளாதே; <strong>அகர்மணி தே சங்க: மா அஸ்து</strong> = கடமையைச் செய்யாமல் சோம்பலில் உனக்குப் பற்றுதல் உண்டாகாமல் இருக்கட்டும்.
-              </div>
-            </div>
-            <div class="vidya-module-box cyan">
-              <div class="vidya-module-title"><span>💡</span> சித்த சுத்தி முதல் ஞான நிஷ்டை வரை (Sadhana Hierarchy)</div>
-              <div class="vidya-module-desc">
-                ஆதிசங்கரரின் கீதா பாஷ்ய விளக்கம்: செயல்களின் பலனில் பற்று வைக்கும் வரை மனம் சஞ்சலப்பட்டுப் புதிய வினைகளை ஈட்டும். மாறாக, பலனை ஈஸ்வரார்ப்பணமாகச் செய்து கடமையை முடிக்கும் போது, 'சித்த சுத்தி' (மனத்தூய்மை) வாய்க்கிறது. சித்த சுத்தியே ஞான யோகத்தில் நிலைத்து முக்தி பெறுவதற்கான நுழைவாயிலாகும்.
-              </div>
-            </div>
+        <p class="program-desc">
+          தென்னகத்தின் பிரம்மாண்டமான திராவிடக் கற்றளிக் கோவில்கள், வாஸ்து புருஷ மண்டலம், ஆகம பிரதிஷ்டா விதிகள், கோபுர தத்துவங்கள் மற்றும் கோவில் நாத-ஒலியியல் (Temple Acoustics) மனித மூளையிலும் உடலிலும் ஏற்படுத்தும் ஆன்ம உளவியல் அமைதியை ஆராயும் ஒப்பற்ற கள முனைவர் ஆய்வு.
+        </p>
+
+        <div class="program-modules-grid">
+          <div class="program-module-box purple">
+            <div class="module-code-pill">CORE RESEARCH I • DOC-804</div>
+            <div class="module-title">வாஸ்து புருஷ மண்டலமும் பிண்ட-அண்ட தத்துவமும்</div>
+            <div class="module-desc">கருவறை = சஹஸ்ராரம், அர்த்தமண்டபம் = ஆக்ஞா, மகா மண்டபம் = அனாஹதம், கொடிமரம் = மூலாதாரம்; மனித உடலின் சக்கரங்களுடன் கோவில் உறுப்புகள் பொருந்தும் அறிவியல் மற்றும் ஆகம அமைப்புகள்.</div>
+          </div>
+
+          <div class="program-module-box gold">
+            <div class="module-code-pill">CORE RESEARCH II • DOC-805</div>
+            <div class="module-title">கோவில் ஒலியியல் அதிர்வுகளும் மூளை அமைதியும்</div>
+            <div class="module-desc">கருவறையின் கருங்கல் சுவர்கள் மந்திர ஒலிகளை எதிரொலிக்கும் அதிர்வெண் (Resonance Frequency - 110Hz to 136.1Hz Om frequency) நரம்பு மண்டலத்தில் உருவாக்கும் தியான சாந்தம் பற்றிய ஒலிப்பதிவு அளவீட்டு ஆய்வு.</div>
           </div>
         </div>
 
-        <!-- SHASTRA 5: KATHA UPANISHAD NACHIKETA & CHARIOT -->
-        <div class="vidya-track-card" style="border-left: 4px solid #ef4444;">
-          <div class="vidya-track-header">
-            <div>
-              <span class="wbs-code wbs-code-amber" style="background:#ef4444; border-color:#f87171;">SHASTRA 05</span>
-              <span style="font-size:0.82rem; color:#f87171; font-weight:700; text-transform:uppercase; margin-left:8px;">கிருஷ்ண யஜுர்வேத கடோபநிடதம் (1.3.14 &amp; 1.3.3)</span>
-              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
-                கடோபநிடத நசிகேத சம்வாதம் &amp; ரத கல்பனா பாஷ்யம் (Katha Chariot Allegory)
-              </h3>
-            </div>
-            <span style="font-size:0.8rem; color:#f87171; background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.25); padding:5px 12px; border-radius:16px;">
-              தரம் 11-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
-            </span>
-          </div>
+        <div class="program-footer-bar">
+          <span class="benchmark-tag">🏆 Benchmark: French Institute of Pondicherry (IFP Agamic Archives) &amp; ASI Research</span>
+          <span>களப்பணி: தஞ்சை பெருவுடையார் கோவில், தாராசுரம், சிதம்பரம் &amp; மதுரை மீனாட்சி அம்மன் கோவில் அளவீடுகள்</span>
+        </div>
+      </article>
+    </section>
 
-          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
-            <div style="font-size:0.82rem; color:#f87171; font-weight:700; margin-bottom:8px; text-transform:uppercase;">மூல மந்திரங்கள் (Devanagari):</div>
-            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#fca5a5; line-height:1.9; margin-bottom:12px;">
-              उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत ।<br>
-              क्षुरस्य धारा निशिता दुरत्यया दुर्गं पथस्तत्कवयो वदन्ति ॥ (1.3.14)<br><br>
-              आत्मानं रथिनं विद्धि शरीरं रथमेव तु ।<br>
-              बुद्धिं तु सारथिं विद्धि मनः प्रग्रहमेव च ॥ (1.3.3)
-            </div>
-            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
-            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
-              உத்திஷ்டத ஜாக்ரத பிராப்ய வரான் நிபோதத |<br>
-              க்ஷுரஸ்ய தாரா நிசிதா துரத்யயா துர்கம் பதஸ்தத் கவயோ வதந்தி ||<br><br>
-              ஆத்மானம் ரதினாம் வித்தி சரீரம் ரதமேவ து |<br>
-              புத்திம் து சாரதிம் வித்தி மன: பிரக்ரஹமேவ ச ||
-            </div>
-          </div>
+    <!-- ========================================== -->
+    <!-- DIVISION 4: POST-GRADUATE FELLOWSHIPS & DIPLOMAS -->
+    <!-- ========================================== -->
+    <section class="degree-tier-section" id="tierFellowship" data-tier="fel">
+      <div class="tier-header-banner">
+        <div class="tier-title-group">
+          <h2><span>🎖️</span> பிரிவு 4: உயர்தனிச் சான்றிதழ் &amp; சிறப்புப் பட்டயங்கள் (Post-Graduate Fellowships &amp; Diplomas)</h2>
+          <p>பணியிலிருக்கும் வல்லுநர்கள், ஆசிரியர்கள் மற்றும் தீவிர சாதகர்களுக்கான 1 ஆண்டு கால சிறப்புப் பட்டயங்கள் (1-Year Executive Fellowship • 40 Credits).</p>
+        </div>
+        <span class="tier-badge fel">Fellowship &amp; Diploma</span>
+      </div>
 
-          <div class="vidya-module-grid">
-            <div class="vidya-module-box">
-              <div class="vidya-module-title"><span>⚔️</span> கத்தியின் கூர்முனைப் பாதை (Kshurasya Dhara)</div>
-              <div class="vidya-module-desc">
-                சுவாமி விவேகானந்தரால் 'எழுமின்! விழிமின்! குறிக்கோளை அடையும் வரை நில்லாது உழைமின்!' என்று முழங்கப்பட்ட புகழ்பெற்ற மந்திரம் இதுவாகும். ஆதிசங்கரர் பாஷ்யத்தில், அறியாமை உறக்கத்திலிருந்து ஆன்ம விழிப்புணர்ச்சிக்கு எழ வேண்டும் என்றும், பிரம்ம ஞானப் பாதை சவரக் கத்தியின் கூரிய விளிம்பைப் போல நுண்ணியதும் கடினமானதுமான தர்க்க நெறியாகும் என விளக்குகிறார்.
-              </div>
-            </div>
-            <div class="vidya-module-box emerald">
-              <div class="vidya-module-title"><span>🐎</span> ரத கல்பனா உருவகம் (The Chariot Allegory)</div>
-              <div class="vidya-module-desc">
-                <strong>ரதீ</strong> = தேரின் தலைவன் (ஆத்மா); <strong>ரதம்</strong> = தேர் (மனித உடல்); <strong>சாரதி</strong> = தேரோட்டி (விவேக புத்தி); <strong>பிரக்ரஹம்</strong> = கடிவாளம் (மனம்); <strong>அஸ்வா:</strong> = குதிரைகள் (ஐம்புலன்கள்); <strong>கோசரா:</strong> = பாதை (உலகப் பொருட்கள்). சாரதியான புத்தி விவேகத்தோடு கடிவாளத்தை (மனதை) இழுத்துப் பிடித்தால் மட்டுமே, புலன் குதிரைகள் அடங்கி மனிதன் முக்தியாகிய பரமபதத்தை அடைவான்.
-              </div>
-            </div>
+      <div class="program-modules-grid">
+        <!-- FELLOWSHIP 1 -->
+        <div class="degree-program-card" style="margin-bottom:0;">
+          <div class="module-code-pill">FELLOWSHIP 01 • FEL-VED-01</div>
+          <h4 style="color:#ffffff; font-size:1.15rem; margin:6px 0;">பிரஸ்தானத்ரய உயர் ஆய்வுப் பட்டயம் (Prasthanatraya Fellowship)</h4>
+          <p style="color:#94a3b8; font-size:0.86rem; line-height:1.6;">
+            உபநிடதங்கள், கீதை மற்றும் பிரம்ம சூத்திரத்தின் ஆழமான சாங்கர பாஷ்ய தத்துவ ஆய்வு. ஆர்ஷ வித்யா குருகுல தத்துவக் கலந்துரையாடல் மரபு.
+          </p>
+          <div style="margin-top:12px;">
+            <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('பிரஸ்தானத்ரய உயர் ஆய்வுப் பட்டயம் (Prasthanatraya Fellowship)')">பட்டயத்திற்குத் தேர்வு செய்க ↗</button>
           </div>
         </div>
 
-        <!-- SHASTRA 6: TAITTIRIYA PANCHAKOSHA VIVEKA -->
-        <div class="vidya-track-card" style="border-left: 4px solid #2dd4bf;">
-          <div class="vidya-track-header">
-            <div>
-              <span class="wbs-code wbs-code-cyan" style="background:#2dd4bf; color:#0b111e;">SHASTRA 06</span>
-              <span style="font-size:0.82rem; color:#2dd4bf; font-weight:700; text-transform:uppercase; margin-left:8px;">தைத்திரீய உபநிடதம் — பிரம்மானந்தவல்லி &amp; பிருகுவல்லி</span>
-              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
-                பஞ்ச கோச விவேக பாஷ்யம் &amp; நேதி-நேதி ஆத்ம விசர்ஜனம்
-              </h3>
-            </div>
-            <span style="font-size:0.8rem; color:#2dd4bf; background:rgba(45,212,191,0.1); border:1px solid rgba(45,212,191,0.25); padding:5px 12px; border-radius:16px;">
-              தரம் 11-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
-            </span>
-          </div>
-
-          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
-            <div style="font-size:0.82rem; color:#2dd4bf; font-weight:700; margin-bottom:8px; text-transform:uppercase;">தைத்திரீய பிரம்மவல்லி சூத்திரங்கள் (Devanagari):</div>
-            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#99f6e4; line-height:1.9; margin-bottom:12px;">
-              स वा एष पुरुषोऽन्नरसमयः । तस्माद्वा एतस्मादन्नरसमयात् ।<br>
-              अन्योऽन्तर आत्मा प्राणमयः । अन्यோऽन्तर आत्मा मनोमयः ।<br>
-              अन्योऽन्तर आत्मा विज्ञानमयः । अन्यோऽन्तर आत्माऽऽनन्दमयः ॥
-            </div>
-            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
-            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
-              ஸ வா ஏஷ புருஷோ அன்னரசமய: | தஸ்மாத்வா ஏதஸ்மாத் அன்னரசமயாத் |<br>
-              அன்யோ அந்தர ஆத்மா பிராணமய: | அன்யோ அந்தர ஆத்மா மனோமய: |<br>
-              அன்யோ அந்தர ஆத்மா விஞ்ஞானமய: | அன்யோ அந்தர ஆத்மா ஆனந்தமய: ||
-            </div>
-          </div>
-
-          <div class="vidya-module-grid">
-            <div class="vidya-module-box cyan">
-              <div class="vidya-module-title"><span>🧅</span> ஐந்து உறைகளின் அடுக்குகள் (The Five Koshas)</div>
-              <div class="vidya-module-desc">
-                1. <strong>அன்னமய கோசம்</strong>: உணவினால் தோன்றி உணவாலேயே அழியும் பருவுடல்.<br>
-                2. <strong>பிராணமய கோசம்</strong>: பிராணன், அபானன், வியானன், உதானன், சமானன் எனும் பஞ்ச பிராணன்களின் சக்தி உடல்.<br>
-                3. <strong>மனோமய கோசம்</strong>: ஆசை, விருப்பு, வெறுப்பு, சங்கல்ப-விகல்ப எண்ணங்கள் தோன்றும் மன உடல்.<br>
-                4. <strong>விஞ்ஞானமய கோசம்</strong>: 'நான் செய்கிறேன்' எனும் கர்த்திருத்துவ புத்தி அறிவு உடல்.<br>
-                5. <strong>ஆனந்தமய கோசம்</strong>: அறியாமையோடு கூடிய பிரிய, மோத, பிரமோத சுகங்களை அனுபவிக்கும் காரண உடல்.
-              </div>
-            </div>
-            <div class="vidya-module-box">
-              <div class="vidya-module-title"><span>✨</span> நேதி-நேதி ஆத்ம சாட்சாத் காரம் (Beyond the Koshas)</div>
-              <div class="vidya-module-desc">
-                வெங்காயத்தின் தோல்களை ஒவ்வொன்றாக உரிப்பது போல, 'அன்னமயம் நான் அல்ல; பிராணமயம் நான் அல்ல; மனோமயம் நான் அல்ல; விஞ்ஞானமயம் நான் அல்ல; ஆனந்தமயமும் நான் அல்ல' என்று நேதி-நேதி (இதுவல்ல, இதுவல்ல) முறையில் ஐந்து கோசங்களையும் நீக்கிய பின் எஞ்சியிருக்கும் எல்லைகளற்ற தூய சாட்சிப் பேரறிவே ஆத்மா/பிரம்மம் என சங்கர பாஷ்யம் நிலைநாட்டுகிறது.
-              </div>
-            </div>
+        <!-- FELLOWSHIP 2 -->
+        <div class="degree-program-card" style="margin-bottom:0;">
+          <div class="module-code-pill">FELLOWSHIP 02 • FEL-PRA-02</div>
+          <h4 style="color:#ffffff; font-size:1.15rem; margin:6px 0;">விவேகசூடாமணி &amp; பிரகரண கிரந்தப் பட்டயம் (Prakarana Granthas)</h4>
+          <p style="color:#94a3b8; font-size:0.86rem; line-height:1.6;">
+            தத்வ போதம், விவேகசூடாமணி, பஞ்சதசி, ஆத்ம போதம் மற்றும் பகவான் ரமண மகரிஷியின் உபதேச சாரம் ஆகிய நூல்களின் நேரடி விவேகப் பயிற்சி.
+          </p>
+          <div style="margin-top:12px;">
+            <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('விவேகசூடாமணி &amp; பிரகரண கிரந்த உயர் ஆய்வுப் பட்டயம்')">பட்டயத்திற்குத் தேர்வு செய்க ↗</button>
           </div>
         </div>
 
+        <!-- FELLOWSHIP 3 -->
+        <div class="degree-program-card" style="margin-bottom:0;">
+          <div class="module-code-pill">FELLOWSHIP 03 • FEL-SHV-03</div>
+          <h4 style="color:#ffffff; font-size:1.15rem; margin:6px 0;">சைவ சித்தாந்த மெய்கண்ட சாத்திரப் பட்டயம் (Meykanda Shastras)</h4>
+          <p style="color:#94a3b8; font-size:0.86rem; line-height:1.6;">
+            சிவஞானபோதம், சிவஞான சித்தியார் சுபக்கம்-பரபக்கம், திருவருட்பயன் மற்றும் ஆகம தத்துவங்களின் நடைமுறை ஆன்ம வாழ்வியல் ஆய்வு.
+          </p>
+          <div style="margin-top:12px;">
+            <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('சைவ சித்தாந்த மெய்கண்ட சாத்திரப் பட்டயம் (Meykanda Shastras)')">பட்டயத்திற்குத் தேர்வு செய்க ↗</button>
+          </div>
+        </div>
+
+        <!-- FELLOWSHIP 4 -->
+        <div class="degree-program-card" style="margin-bottom:0;">
+          <div class="module-code-pill">FELLOWSHIP 04 • FEL-APP-04</div>
+          <h4 style="color:#ffffff; font-size:1.15rem; margin:6px 0;">சுவாமி விவேகானந்தர் பிரயோக வேதாந்தத் தலைமைப் பட்டயம்</h4>
+          <p style="color:#94a3b8; font-size:0.86rem; line-height:1.6;">
+            அச்சமின்மை (Abhaya), மனிதனை உருவாக்கும் கல்வி, சமூகத் தொண்டு (சிவஞானத்தில் ஜீவகாருண்யம்), மற்றும் ஆன்ம பலத்துடனான நிருவாக மேலாண்மை.
+          </p>
+          <div style="margin-top:12px;">
+            <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('சுவாமி விவேகானந்தர் பிரயோக வேதாந்தத் தலைமைத்துவப் பட்டயம்')">பட்டயத்திற்குத் தேர்வு செய்க ↗</button>
+          </div>
+        </div>
+
+        <!-- FELLOWSHIP 5 -->
+        <div class="degree-program-card" style="margin-bottom:0;">
+          <div class="module-code-pill">FELLOWSHIP 05 • FEL-MAN-05</div>
+          <h4 style="color:#ffffff; font-size:1.15rem; margin:6px 0;">சாத்திர ஓலைச்சுவடியியல் &amp; மூலபாஷ்யப் பட்டயம் (Indic Manuscriptology)</h4>
+          <p style="color:#94a3b8; font-size:0.86rem; line-height:1.6;">
+            கிரந்த எழுத்துக்கள், பழந்தமிழ் ஓலைச்சுவடிகள் வாசிப்பு, சுவடிகளைப் பாதுகாக்கும் முறைகள் மற்றும் மூல உரைகளை நவீன மொழிகளில் மொழிபெயர்க்கும் திறன்.
+          </p>
+          <div style="margin-top:12px;">
+            <button type="button" class="enroll-action-btn" onclick="selectTrackForCert('சாத்திர ஓலைச்சுவடியியல் &amp; மூலபாஷ்யப் பட்டயம் (Indic Manuscriptology)')">பட்டயத்திற்குத் தேர்வு செய்க ↗</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- 3. PRAKARANA GRANTHAS & SHASTRA GLOSSARY -->
+    <!-- ========================================== -->
+    <!-- 5. COMPREHENSIVE INDIC SHASTRA GLOSSARY -->
+    <!-- ========================================== -->
     <section class="glossary-section" id="glossarySection" style="margin: 56px 0; background:rgba(15,23,42,0.85); border:1px solid rgba(212,175,55,0.25); border-radius:18px; padding:32px;">
-      <div style="text-align:center; max-width:800px; margin:0 auto 24px;">
+      <div style="text-align:center; max-width:820px; margin:0 auto 24px;">
         <div style="font-size:0.8rem; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">
           Epistemic Terminology Engine
         </div>
-        <h2 style="color:#ffffff; font-size:1.6rem; font-weight:800; margin-bottom:8px;">
+        <h2 style="color:#ffffff; font-size:1.75rem; font-weight:800; margin-bottom:8px;">
           🔍 வேதாந்த-சித்தாந்த சாத்திரக் கலைச்சொற்களஞ்சியம்
         </h2>
         <p style="color:#94a3b8; font-size:0.92rem;">
-          உயர்கல்விப் பாடங்களைப் பயில்வதற்கு அவசியமான முதன்மை சாத்திரக் கலைச்சொற்களைச் சொடுக்கி அவற்றின் துல்லியமான விளக்கத்தைக் காண்க.
+          உயர்கல்வி மற்றும் கல்லூரிப் பாடங்களைப் பயில்வதற்கு அவசியமான முதன்மை சாத்திரக் கலைச்சொற்களைச் சொடுக்கி அவற்றின் துல்லியமான விளக்கத்தைக் காண்க.
         </p>
       </div>
 
-      <!-- Keyword Pills -->
-      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:6px; margin-bottom:20px;">
-        <button type="button" class="glossary-pill active" onclick="showGlossaryTerm('adhikari')">அதிகாரி லக்ஷணம்</button>
-        <button type="button" class="glossary-pill" onclick="showGlossaryTerm('viveka')">நித்தியாநித்திய விவேகம்</button>
-        <button type="button" class="glossary-pill" onclick="showGlossaryTerm('vairagya')">வைராக்கியம்</button>
-        <button type="button" class="glossary-pill" onclick="showGlossaryTerm('shatsampat')">சம-தமாதி ஷட்க சம்பத்து</button>
-        <button type="button" class="glossary-pill" onclick="showGlossaryTerm('mumukshutva')">முமுக்ஷுத்துவம்</button>
-        <button type="button" class="glossary-pill" onclick="showGlossaryTerm('adhyasa')">அத்யாசம் (Superimposition)</button>
-        <button type="button" class="glossary-pill" onclick="showGlossaryTerm('vivarta')">விவர்த்த வாதம்</button>
-        <button type="button" class="glossary-pill" onclick="showGlossaryTerm('maya')">மாயை &amp; மித்யை</button>
-        <button type="button" class="glossary-pill" onclick="showGlossaryTerm('anavam')">ஆணவ மலம்</button>
-        <button type="button" class="glossary-pill" onclick="showGlossaryTerm('satchitananda')">சச்சிதானந்தம்</button>
+      <!-- Keyword Pills Grid -->
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:6px; margin-bottom:20px;" id="glossaryPillsContainer">
+        <!-- Javascript renders pills here -->
       </div>
 
       <!-- Detail Box -->
       <div id="glossaryDisplayBox" style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.3); border-radius:12px; padding:22px; max-width:850px; margin:0 auto;">
-        <h4 id="glossaryTitle" style="color:var(--gold-bright); font-size:1.2rem; margin-bottom:10px;">அதிகாரி லக்ஷணம் (Qualifications of a Seeker)</h4>
+        <h4 id="glossaryTitle" style="color:var(--gold-bright); font-size:1.25rem; margin-bottom:10px;">அதிகாரி லக்ஷணம் (Qualifications of a Seeker)</h4>
         <div id="glossaryDesc" style="color:#cbd5e1; font-size:0.95rem; line-height:1.75;">
-          வேதாந்த சாத்திரங்களைக் கற்றுணர்வதற்கு மாணவரிடம் இருக்க வேண்டிய நான்கு பிரதான தகுதிகள்: 1. விவேகம் (நித்தியமானது எது, அநித்தியமானது எது எனப் பிரித்தறியும் அறிவு), 2. வைராக்கியம் (அநித்தியமான உலகப் பொருட்களின் மீதான பற்றின்மை), 3. சம-தமாதிகள் (மனக்கட்டுப்பாடு, புலனடக்கம் உள்ளிட்ட 6 நற்பண்புகள்), 4. முமுக்ஷுத்துவம் (விடுதலை பெற வேண்டும் என்ற தீவிர வேட்கை).
+          வேதாந்த சாத்திரங்களைக் கற்றுணர்வதற்கு மாணவரிடம் இருக்க வேண்டிய நான்கு பிரதான தகுதிகள் (சாதன சதுஷ்டயம்): 1. விவேகம் (நித்திய-அநித்திய பகுத்தறிவு), 2. வைராக்கியம் (அநித்திய சுகங்களின் மீதான பற்றின்மை), 3. சம-தமாதிகள் (மனக்கட்டுப்பாடு, புலனடக்கம் உள்ளிட்ட 6 நற்குணங்கள்), 4. முமுக்ஷுத்துவம் (விடுதலை பெற வேண்டும் என்ற தீவிர வேட்கை).
         </div>
       </div>
     </section>
 
-    <!-- 4. VIDYAPEETH FELLOWSHIP CERTIFICATE GENERATOR -->
+    <!-- ========================================== -->
+    <!-- 6. ACADEMIC FELLOWSHIP & DEGREE CERTIFICATE GENERATOR -->
+    <!-- ========================================== -->
     <section id="fellowshipSection" style="margin: 56px 0;">
       <div style="text-align:center; max-width:800px; margin:0 auto 24px;">
         <div style="display:inline-block; font-size:0.8rem; font-weight:700; color:var(--gold); background:rgba(212,175,55,0.1); border:1px solid rgba(212,175,55,0.3); padding:4px 14px; border-radius:20px; text-transform:uppercase; margin-bottom:10px;">
-          Collegiate Academic Fellowship
+          Collegiate Academic Fellowship &amp; Degrees
         </div>
         <h2 style="color:#ffffff; font-size:1.85rem; font-weight:800; margin-bottom:10px;">
           🎓 வேதாந்த வித்யாபீடப் பட்டயச் சான்றிதழ் இயற்றி
         </h2>
         <p style="color:#cbd5e1; font-size:0.95rem; line-height:1.7;">
-          உயர்கல்வித் தடங்களை ஆய்வு செய்த மாணவர்களும் அறிஞர்களும் தங்களின் அதிகாரப்பூர்வ வித்யாபீட ஆய்வுப் பட்டயச் சான்றிதழைப் பெற்று அச்சிடலாம்.
+          உயர்கல்வித் திட்டங்களை ஆய்வு செய்த மாணவர்களும் அறிஞர்களும் தங்களின் அதிகாரப்பூர்வ வித்யாபீட ஆய்வுப் பட்டயச் சான்றிதழைப் பெற்று அச்சிடலாம் / PDF வடிவில் சேமிக்கலாம்.
         </p>
       </div>
 
-      <div class="no-print" style="background:rgba(15,23,42,0.85); border:1px solid rgba(255,255,255,0.1); border-radius:14px; padding:18px 24px; max-width:800px; margin:0 auto 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
-        <div>
-          <label style="font-size:0.8rem; color:#94a3b8; display:block; margin-bottom:4px;">தேர்ந்தெடுக்கப்பட்ட ஆய்வுத் துறை (Specialization Track):</label>
-          <select id="fellowshipTrackSelect" onchange="updateFellowshipPreview()" style="background:#0b111e; border:1px solid var(--gold); color:#ffffff; padding:7px 12px; border-radius:6px; font-family:inherit;">
-            <option value="பிரஸ்தானத்ரய ஆய்வுப் பட்டயம் (Prasthanatraya Fellowship)">துறை 1: பிரஸ்தானத்ரய பிரவேசம் (உபநிடதங்கள், கீதை, பிரம்ம சூத்திரம்)</option>
-            <option value="வேதாந்தப் பிரகரண கிரந்த சான்றிதழ் (Prakarana Granthas)">துறை 2: தத்வ போதம், விவேகசூடாமணி, பஞ்சதசி &amp; ரமண உபதேசம்</option>
-            <option value="சைவ சித்தாந்த மெய்கண்ட சாத்திரப் பட்டயம் (Meykanda Shastras)">துறை 3: சிவஞானபோதம், சிவஞான சித்தியார் &amp; ஆகம கிரியைகள்</option>
-            <option value="பாரத தர்சன தர்க்கவியல் சான்றிதழ் (Comparative Epistemology)">துறை 4: ஷட்தர்சனங்கள், நியாய தர்க்கம் &amp; மேலைநாட்டு மெய்யியல்</option>
-            <option value="பிரயோக வேதாந்த ஆய்வாளர் பட்டயம் (Applied Vedanta &amp; Science)">துறை 5: விவேகானந்தர் பிரயோக வேதாந்தம் &amp; குவாண்டம் அறிவியல்</option>
+      <div class="no-print" style="background:rgba(15,23,42,0.85); border:1px solid rgba(255,255,255,0.1); border-radius:14px; padding:18px 24px; max-width:880px; margin:0 auto 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+        <div style="flex:1; min-width:280px;">
+          <label style="font-size:0.8rem; color:#94a3b8; display:block; margin-bottom:4px;">தேர்ந்தெடுக்கப்பட்ட பட்டப் படிப்பு / ஆய்வுத் துறை (Degree / Specialization):</label>
+          <select id="fellowshipTrackSelect" onchange="updateFellowshipPreview()" style="width:100%; background:#0b111e; border:1px solid var(--gold); color:#ffffff; padding:8px 12px; border-radius:6px; font-family:inherit; font-size:0.9rem;">
+            <optgroup label="இளங்கலைப் பட்டங்கள் (Undergraduate Degrees)">
+              <option value="B.A. அத்வைத வேதாந்தப் பட்டம் (B.A. in Advaita Vedanta)">B.A. அத்வைத வேதாந்தமும் பாரத தத்துவமும் (B.A. Advaita Vedanta)</option>
+              <option value="B.A. சைவ சித்தாந்தப் பட்டம் (B.A. in Shaiva Siddhanta)">B.A. சைவ சித்தாந்தமும் தமிழ் மெய்யியலும் (B.A. Shaiva Siddhanta)</option>
+              <option value="B.Sc. பிரயோக வேதாந்த உணர்வுநிலை அறிவியல் பட்டம்">B.Sc. பிரயோக வேதாந்தமும் உணர்வுநிலை அறிவியலும் (B.Sc. Applied Vedanta)</option>
+            </optgroup>
+            <optgroup label="முதுகலைப் பட்டங்கள் (Postgraduate Master's Degrees)">
+              <option value="M.A. பிரஸ்தானத்ரய முதுகலைப் பட்டம் (Acharya in Prasthanatraya)">M.A. பிரஸ்தானத்ரய மூல ஆய்வு (Acharya in Prasthanatraya)</option>
+              <option value="M.A. மெய்கண்ட சாத்திர முதுகலைப் பட்டம் (Acharya in Siddhanta)">M.A. மெய்கண்ட சாத்திரங்களும் சைவ ஆகம தத்துவமும்</option>
+              <option value="M.A. ஒப்பீட்டு உலக மெய்யியலும் தர்சனங்களும்">M.A. ஒப்பீட்டு உலக மெய்யியலும் பாரத தர்சனங்களும்</option>
+            </optgroup>
+            <optgroup label="முனைவர் ஆய்வுப் பட்டங்கள் (Doctoral Ph.D. Degrees)">
+              <option value="Ph.D. குவாண்டம் வேதாந்த முனைவர் பட்டம் (Doctor of Philosophy)">Ph.D. வேதாந்தமும் நவீன குவாண்டம் இயற்பியலும் (Ph.D. Quantum Vedanta)</option>
+              <option value="Ph.D. சைவ ஆகமக் கலை முனைவர் பட்டம் (Doctor of Philosophy)">Ph.D. சைவ ஆகமக் கோவில் கட்டிடக்கலையும் மெய்யியல் உளவியலும்</option>
+            </optgroup>
+            <optgroup label="சிறப்புப் பட்டயங்கள் (Post-Graduate Fellowships)">
+              <option value="பிரஸ்தானத்ரய உயர் ஆய்வுப் பட்டயம் (Prasthanatraya Fellowship)" selected>துறை 1: பிரஸ்தானத்ரய உயர் ஆய்வுப் பட்டயம் (Prasthanatraya Fellowship)</option>
+              <option value="விவேகசூடாமணி &amp; பிரகரண கிரந்த உயர் ஆய்வுப் பட்டயம்">துறை 2: விவேகசூடாமணி &amp; பிரகரண கிரந்த உயர் ஆய்வுப் பட்டயம்</option>
+              <option value="சைவ சித்தாந்த மெய்கண்ட சாத்திரப் பட்டயம் (Meykanda Shastras)">துறை 3: சைவ சித்தாந்த மெய்கண்ட சாத்திரப் பட்டயம் (Meykanda Shastras)</option>
+              <option value="சுவாமி விவேகானந்தர் பிரயோக வேதாந்தத் தலைமைத்துவப் பட்டயம்">துறை 4: சுவாமி விவேகானந்தர் பிரயோக வேதாந்தத் தலைமைத்துவப் பட்டயம்</option>
+              <option value="சாத்திர ஓலைச்சுவடியியல் &amp; மூலபாஷ்யப் பட்டயம் (Indic Manuscriptology)">துறை 5: சாத்திர ஓலைச்சுவடியியல் &amp; மூலபாஷ்யப் பட்டயம் (Manuscriptology)</option>
+            </optgroup>
           </select>
         </div>
 
         <button type="button" onclick="window.print()" class="sheet-btn sheet-btn-view" style="padding:10px 22px; font-weight:700; display:inline-flex; align-items:center; gap:8px;">
-          <span>🖨️ பட்டயத்தை அச்சிடுக / PDF</span>
+          <span>🖨️ பட்டயத்தை அச்சிடுக / PDF சேமிக்க</span>
         </button>
       </div>
 
@@ -891,7 +1031,7 @@
         <div class="certificate-title-tamil">குரு குல தேசம் — வேதாந்த வித்யாபீடம்</div>
         <div class="certificate-title-en">INSTITUTE OF ADVANCED VEDANTA &amp; INDIC SHASTRA STUDIES</div>
         
-        <div style="font-size:0.85rem; color:#94a3b8; margin-top:14px; text-transform:uppercase; letter-spacing:2px;">
+        <div style="font-size:0.85rem; color:#94a3b8; margin-top:14px; text-transform:uppercase; letter-spacing:2px;" id="certAwardType">
           உயர் ஆய்வாளர் பட்டயம் • POST-GRADUATE ACADEMIC FELLOWSHIP
         </div>
 
@@ -926,6 +1066,37 @@
 
   </main>
 
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>வேதாந்த வித்யாபீடம் (Gurukula Vedanta Vidyapeeth)</h4>
+        <p>பாரதத்தின் பிரஸ்தானத்ரயம், 14 மெய்கண்ட சாத்திரங்கள், ஷட்தர்சனங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் சுவாமி விவேகானந்தரின் பிரயோக வேதாந்தத்தை நவீன அறிவியல் உலகுடன் இணைக்கும் உயர்கல்வி ஆராய்ச்சிப் பெருவெளி.</p>
+        <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">அன்பே சிவம் • ஏகன் அநேகன் • தத்வமஸி</p>
+      </div>
+      <div class="footer-col">
+        <h4>உயர்கல்விப் பட்டப் பிரிவுகள்</h4>
+        <ul class="footer-links">
+          <li><a href="#tierUG">இளங்கலை B.A. / B.Sc. (3 Years)</a></li>
+          <li><a href="#tierPG">முதுகலை M.A. / Acharya (2 Years)</a></li>
+          <li><a href="#tierPhD">முனைவர் Ph.D. / Research (3-5 Years)</a></li>
+          <li><a href="#tierFellowship">உயர் ஆய்வுப் பட்டயங்கள் (Fellowships)</a></li>
+          <li><a href="school.html">இணையப் பள்ளி போர்டல் (Grades 1-12)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>மத்திய வளாக முகவரி</h4>
+        <div style="font-size: 0.84rem; color: var(--gold-soft); line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 12px; background: rgba(212, 175, 55, 0.05); padding-top: 6px; padding-bottom: 6px; border-radius: 0 8px 8px 0;">
+          📍 <strong>வித்யாபீட நிர்வாக வளாகம்:</strong><br>
+          32, SSS Jaya Enclave, Kovaipudur,<br>
+          Coimbatore, 641042, Tamil Nadu, India.
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 குரு குல தேசம் (Guru Kula Desam) — வேதாந்த வித்யாபீடம் | gurukuladesam.com | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.
+    </div>
+  </footer>
+
   <!-- JAVASCRIPT LOGIC -->
   <script>
     function scrollToId(id) {
@@ -936,32 +1107,64 @@
       }
     }
 
-    function toggleLeftStrip() {
+    function togglePrimaryMenu() {
       var bar = document.getElementById('leftStripBar');
       var backdrop = document.getElementById('stripBackdrop');
       if (bar) bar.classList.toggle('open');
       if (backdrop) backdrop.classList.toggle('active');
     }
 
-    function closeMobileStrip() {
+    function closePrimaryMenu() {
       var bar = document.getElementById('leftStripBar');
       var backdrop = document.getElementById('stripBackdrop');
       if (bar) bar.classList.remove('open');
       if (backdrop) backdrop.classList.remove('active');
     }
 
-    // Glossary dictionary
+    // Degree Level Filter
+    function filterDegrees(tier) {
+      document.querySelectorAll('.degree-filter-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+
+      var sections = document.querySelectorAll('.degree-tier-section');
+      sections.forEach(function(sec) {
+        if (tier === 'all' || sec.getAttribute('data-tier') === tier) {
+          sec.style.display = 'block';
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+    }
+
+    // Select track into certificate generator
+    function selectTrackForCert(trackName) {
+      var select = document.getElementById('fellowshipTrackSelect');
+      if (select) {
+        for (var i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === trackName || select.options[i].text.indexOf(trackName) !== -1) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+        updateFellowshipPreview();
+        scrollToId('fellowshipSection');
+      }
+    }
+
+    // Comprehensive 24-Term Indic Epistemic Glossary
     var glossary = {
       adhikari: {
         title: "அதிகாரி லக்ஷணம் (Qualifications of a Seeker)",
-        desc: "வேதாந்த சாத்திரங்களைக் கற்றுணர்வதற்கு மாணவரிடம் இருக்க வேண்டிய நான்கு பிரதான தகுதிகள்: 1. விவேகம், 2. வைராக்கியம், 3. சம-தமாதிகள் (6 நற்பண்புகள்), 4. முமுக்ஷுத்துவம் (தீவிர விடுதலை வேட்கை)."
+        desc: "வேதாந்த சாத்திரங்களைக் கற்றுணர்வதற்கு மாணவரிடம் இருக்க வேண்டிய நான்கு பிரதான தகுதிகள் (சாதன சதுஷ்டயம்): 1. விவேகம் (நித்திய-அநித்திய பகுத்தறிவு), 2. வைராக்கியம் (அநித்திய சுகங்களின் மீதான பற்றின்மை), 3. சம-தமாதிகள் (மனக்கட்டுப்பாடு, புலனடக்கம் உள்ளிட்ட 6 நற்குணங்கள்), 4. முமுக்ஷுத்துவம் (விடுதலை பெற வேண்டும் என்ற தீவிர வேட்கை)."
       },
       viveka: {
         title: "நித்தியாநித்திய வஸ்து விவேகம் (Discrimination of Real vs Transient)",
         desc: "எப்போதும் அழியாமல் நிலையானதாக இருக்கும் சச்சிதானந்த பரம்பொருள் மட்டுமே 'நித்தியம்' என்றும், தோன்றி மறையும் உலகம் மற்றும் உடலின் இன்ப துன்பங்கள் யாவும் 'அநித்தியம்' என்றும் பகுத்தறியும் விவேக அறிவு."
       },
       vairagya: {
-        title: "இக-அமுத்ர பலபோக விராகம் / வைராக்கியம் (Dispassion & Freedom from Craving)",
+        title: "இக-அமுத்ர பலபோக விராகம் / வைராக்கியம் (Dispassion)",
         desc: "இவ்வுலகிலும் மேலுலகிலும் உள்ள நிலையற்ற சுகபோகங்கள் மீதான பற்றின்மை; உள்ளத்தில் தோன்றும் ஆசைகளை விடுத்து தர்மத்திலும் ஞானத்திலும் மனம் உறுதியுடன் நிற்றல்."
       },
       shatsampat: {
@@ -984,19 +1187,89 @@
         title: "மாயை & மித்யை (The Cosmic Principle of Appearance)",
         desc: "மாயை என்பது சத் (உண்மை) என்றும் கூற முடியாத, அசத் (முற்றிலும் பொய்) என்றும் கூற முடியாத 'அநிர்வசனீயம்'. மித்யை என்பது ஆதாரமில்லாமல் தனித்து இயங்க முடியாத சார்பு நிலை (Dependent Reality)."
       },
-      anavam: {
-        title: "ஆணவ மலம் (The Innate Impurity in Shaiva Siddhanta)",
-        desc: "சைவ சித்தாந்தத்தில் ஆன்மாவின் மூலப் பேரறிவை மறைத்து 'நான்', 'எனது' என்ற அகந்தையை உண்டாக்கும் மூல இருள் மலமாகும். இறைவனின் திருவருளாலேயே இது நீங்கும்."
-      },
       satchitananda: {
         title: "சச்சிதானந்தம் (Existence-Consciousness-Bliss)",
         desc: "சத் (எக்காலத்திலும் அழியாத இருப்பு), சித் (தன்னைத் தானே ஒளிரச் செய்து பிறவற்றை அறியும் தூய உணர்வுநிலை), ஆனந்தம் (எல்லையற்ற பேரமைதி). இதுவே பரம்பொருளின் மற்றும் மனிதனின் மெய்யியற்கை."
+      },
+      mahavakya: {
+        title: "மகா வாக்கியங்கள் (The 4 Great Vedantic Axioms)",
+        desc: "1. பிரக்ஞானம் பிரம்ம (ரிக் வேதம் - உணர்வே பிரம்மம்), 2. அயம் ஆத்மா பிரம்ம (அதர்வண வேதம் - இந்த ஆன்மாவே பிரம்மம்), 3. தத்வமஸி (சாம வேதம் - நீயே அதுவாய் இருக்கிறாய்), 4. அஹம் பிரம்மாஸ்மி (யஜுர் வேதம் - நான் பிரம்மமாக இருக்கிறேன்)."
+      },
+      turiya: {
+        title: "துரிய நிலை (The Fourth State of Pure Consciousness)",
+        desc: "விழிப்பு (ஜாக்கிரத்), கனவு (ஸ்வப்னம்), ஆழ்துயில் (சுஷுப்தி) ஆகிய மூன்றையும் கடந்து, இந்த மூன்று நிலைகளுக்கும் மௌன சாட்சியாய் விளங்கும் தூய அகநிலை உணர்வு (மாண்டூக்ய உபநிடதம்)."
+      },
+      netineti: {
+        title: "நேதி நேதி (Not this, Not this)",
+        desc: "பிருஹதாரண்யக உபநிடதத்தில் யாக்ஞவல்கியர் அருளிய ஆன்ம விசாரணை முறை. 'நான் உடலல்ல, இந்திரியங்களல்ல, மனமல்ல, புத்தியல்ல' என்று தோன்றும் அனைத்தையும் கழித்து எஞ்சியிருக்கும் சாட்சிப் பொருளை அறிதல்."
+      },
+      pati_pasu_pasa: {
+        title: "பதி-பசு-பாசம் (The Triad of Shaiva Siddhanta)",
+        desc: "பதி (முழுமுதற் கடவுள் சிவன்), பசு (மலங்களால் கட்டப்பட்ட தனி ஆன்மா), பாசம் (ஆணவம், கன்மம், மாயை என்னும் மூன்று தளைகள்). இறைவனின் திருவருளினாலே ஆன்மா பாசத்தை அறுத்து பதியை அடையும்."
+      },
+      anavam: {
+        title: "ஆணவ மலம் (The Innate Impurity in Shaiva Siddhanta)",
+        desc: "சைவ சித்தாந்தத்தில் ஆன்மாவின் மூலப் பேரறிவை மறைத்து 'நான்', 'எனது' என்ற அகந்தையை உண்டாக்கும் மூல இருள் மலம். செம்பில் களிம்பு போல ஆன்மாவுடன் அநாதியாய் இணைந்திருப்பது."
+      },
+      malaparipakam: {
+        title: "மலபரிபாகமும் சத்தினிபாதமும் (Ripening of Impurity & Descent of Grace)",
+        desc: "ஆன்மாவை பீடித்த ஆணவ மலம் தனது வலிமை இழந்து பக்குவமடைவது மலபரிபாகம். அந்தப் பக்குவ நிலையில் ஆன்மாவின் மீது சிவபெருமானின் திருவருள் வீழ்வதே சத்தினிபாதம்."
+      },
+      sadhya_mukti: {
+        title: "சிவானந்தப் பேறு / ஜீவன் முக்தி (Liberation while Living)",
+        desc: "உடலுடன் வாழும் போதே இறைவனின் பேரருளை உணர்ந்து, வினைகளின் தாக்கமின்றி, உலக உயிர்களிடத்து சிவத்தையே கண்டு வாழும் மெய்ஞ்ஞானியின் முக்தி நிலை."
+      },
+      pramana: {
+        title: "பிரமாணங்கள் (Indic Epistemology / Means of Valid Knowledge)",
+        desc: "அறிவைப் பெறும் வழிமுறைகள்: பிரத்யக்ஷம் (நேரடிக் காட்சி), அனுமானம் (ஊகம் - நெருப்பைக் கண்டு புகையை அறிதல்), உபமானம் (ஒப்பீடு), சப்தம் (ஆப்த வாக்கியம் / சாத்திரப் பிரமாணம்)."
+      },
+      karma_thraya: {
+        title: "மும்மை வினைகள் (Sanchita, Prarabdha, Agami)",
+        desc: "சஞ்சிதம் (முற்பிறவிகளில் சேர்த்து வைக்கப்பட்ட வினைகளின் கிடங்கு), பிராரப்தம் (இப்பிறவியில் நாம் நுகர்ந்து தீர்க்க வேண்டிய வினைப் பகுதி), ஆகாமியம் (இப்பிறவியில் நாம் புதிதாகச் செய்யும் வினைகள்)."
+      },
+      nishkama_karma: {
+        title: "நிஷ்காம கர்மம் (Selfless Action without Attachment)",
+        desc: "பகவத் கீதையின் சாரமான 'கர்மண்யேவாதிகாரஸ்தே மா பலேஷு கதாசன'. செயலின் பலனில் பற்றின்றி, உலக நன்மைக்காக கடமையை ஈசனுக்கே அர்ப்பணித்துச் செய்தல்."
+      },
+      upadesha_sara: {
+        title: "உபதேச சாரம் (Essence of Direct Enquiry)",
+        desc: "பகவான் ரமண மகரிஷி அருளிய 30 சுலோகங்களின் சாரம். 'நான் யார்?' என்று மனதின் மூலத்தைத் தேடி ஒடுக்கும் போது, அகந்தை அழிந்து ஆன்ம ஜோதி தானே ஒளிரும்."
+      },
+      shad_darshana: {
+        title: "ஷட்தர்சனங்கள் (The Six Orthodox Systems)",
+        desc: "நியாயம் (கௌதமர்), வைசேஷிகம் (கணாதர்), சாங்கியம் (கபிலர்), யோகம் (பதஞ்சலி), பூர்வ மீமாம்சை (ஜைமினி), உத்தர மீமாம்சை / வேதாந்தம் (பாதராயணர்)."
+      },
+      pratibimba_vada: {
+        title: "பிரதிபிம்ப வாதம் (The Reflection Theory)",
+        desc: "வானத்திலுள்ள ஒரே சூரியன் பல நீர் நிலைகளில் பல சூரியன்களாகப் பிரதிபலிப்பது போல, ஒரே பிரம்மம் பல அந்தக்கரணங்களில் பல ஜீவர்களாகத் தோற்றமளிக்கிறது."
+      },
+      spota_vada: {
+        title: "ஸ்போட வாதம் (The Metaphysics of Word & Meaning)",
+        desc: "பர்த்ருஹரியின் வாக்கியபதீயம். சொல்லும் பொருளும் பிரிக்க முடியாத பிரபஞ்ச வித்து. சொல்லின் மூல ஆற்றல் அகத்தில் வெடித்து பொருளாகப் புலப்படுவது ஸ்போடம்."
+      },
+      aparoksha_anubhuti: {
+        title: "அபரோக்ஷ அனுபூதி (Direct Spiritual Experience)",
+        desc: "சாத்திரங்களை நூலளவாகப் படிப்பது பரோக்ஷம் (மறைமுக அறிவு). ஆனால் 'நானே பிரம்மம்' என்று தனக்குள் நேருக்கு நேராக அனுபவித்து உணர்வது அபரோக்ஷ அனுபூதியாகும்."
       }
     };
 
+    // Render glossary pills dynamically
+    function renderGlossaryPills() {
+      var container = document.getElementById('glossaryPillsContainer');
+      if (!container) return;
+      var html = '';
+      var first = true;
+      for (var key in glossary) {
+        var activeClass = first ? ' active' : '';
+        html += '<button type="button" class="glossary-pill' + activeClass + '" onclick="showGlossaryTerm(\'' + key + '\')">' + glossary[key].title.split(' (')[0] + '</button>';
+        first = false;
+      }
+      container.innerHTML = html;
+    }
+
     function showGlossaryTerm(key) {
       document.querySelectorAll('.glossary-pill').forEach(function(p) { p.classList.remove('active'); });
-      event.target.classList.add('active');
+      if (event && event.target) event.target.classList.add('active');
       var item = glossary[key];
       if (item) {
         document.getElementById('glossaryTitle').textContent = item.title;
@@ -1004,15 +1277,29 @@
       }
     }
 
+    // Fellowship Certificate Live Updater
     function updateFellowshipPreview() {
       var track = document.getElementById('fellowshipTrackSelect').value;
       var bodyEl = document.getElementById('fellowshipBodyDisplay');
+      var certTypeEl = document.getElementById('certAwardType');
+
+      if (track.indexOf('B.A.') !== -1 || track.indexOf('B.Sc.') !== -1) {
+        if (certTypeEl) certTypeEl.textContent = 'இளங்கலைப் பட்டச் சான்றிதழ் • BACHELOR OF ARTS / SCIENCE';
+      } else if (track.indexOf('M.A.') !== -1) {
+        if (certTypeEl) certTypeEl.textContent = 'முதுகலைப் பட்டச் சான்றிதழ் • MASTER OF ARTS / ACHARYA';
+      } else if (track.indexOf('Ph.D.') !== -1) {
+        if (certTypeEl) certTypeEl.textContent = 'முனைவர் பட்டச் சான்றிதழ் • DOCTOR OF PHILOSOPHY (Ph.D.)';
+      } else {
+        if (certTypeEl) certTypeEl.textContent = 'உயர் ஆய்வாளர் பட்டயம் • POST-GRADUATE ACADEMIC FELLOWSHIP';
+      }
+
       if (bodyEl) {
-        bodyEl.innerHTML = 'மேற்குறிப்பிட்ட மாணவர் குரு குல தேச வேதாந்த வித்யாபீடத்தின் <strong>' + track + '</strong> உயர்நிலைத் தத்துவப் பாடநெறிகள், மூல சாத்திர பாஷ்யங்கள், தர்க்க விவாதங்கள் மற்றும் பிரயோக வேதாந்த வாழ்வியல் ஆய்வுகளை மிகச் சிறந்த முறையில் நிறைவு செய்து இப்பேறுபெற்ற பட்டயத்தை எய்துகிறார் எனச் சான்றளிக்கப்படுகிறது.';
+        bodyEl.innerHTML = 'மேற்குறிப்பிட்ட மாணவர் குரு குல தேச வேதாந்த வித்யாபீடத்தின் <strong>' + track + '</strong> உயர்நிலைத் தத்துவப் பாடநெறிகள், மூல சாத்திர பாஷ்யங்கள், தர்க்க விவாதங்கள், சமர்ப்பிக்கப்பட்ட ஆய்வேடுகள் மற்றும் பிரயோக வேதாந்த வாழ்வியல் ஆய்வுகளை மிகச் சிறந்த முறையில் நிறைவு செய்து இப்பேறுபெற்ற பட்டயத்தை எய்துகிறார் எனச் சான்றளிக்கப்படுகிறது.';
       }
     }
 
     document.addEventListener('DOMContentLoaded', function() {
+      renderGlossaryPills();
       var savedName = localStorage.getItem('gkd_student_name') || 'செல்வன் / செல்வி ஆய்வாளர்';
       var nameEl = document.getElementById('fellowshipStudentNameDisplay');
       if (nameEl) nameEl.textContent = savedName;

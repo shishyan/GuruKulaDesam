@@ -11,32 +11,33 @@
 
   
         <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL) -->
-  <aside class="left-strip-bar" id="leftStripBar" aria-label="Quick Access Sidebar">
+    <!-- LEFT STRIP BAR (PRIMARY MOBILE-STYLE MENU OVERLAY) -->
+  <aside class="left-strip-bar" id="leftStripBar" aria-label="முதன்மை பட்டி">
     <div class="strip-header">
       <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
         <span class="strip-emblem">ॐ</span>
         <span class="strip-brand-text">குரு குல தேசம்</span>
       </a>
-      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="closePrimaryMenu()" title="பட்டி மூடுக" aria-label="Close Primary Menu">
+      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="closePrimaryMenu()" title="பட்டி மூடுக" aria-label="Close Menu">
         <span class="strip-toggle-icon">✕</span>
       </button>
     </div>
 
-        <nav class="strip-nav-list" id="stripNavList">
+    <nav class="strip-nav-list" id="stripNavList">
 
       <!-- 1. முகப்பு (Home) -->
       <div class="strip-group" data-group="home">
         <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
           <span class="strip-item-icon">🏠</span>
-          <span class="strip-item-label">முகப்பு</span>
+          <span class="strip-item-label">முகப்பு (Home)</span>
         </a>
       </div>
 
-      <!-- 2. கல்வி நெறி (Curriculum & Academy) -->
+      <!-- 2. கல்வி நெறி (Curriculum & School) -->
       <div class="strip-group" data-group="kalvi">
         <a href="kalvi.html" class="strip-item strip-has-sub" data-tooltip="கல்வி நெறி">
           <span class="strip-item-icon">🎓</span>
-          <span class="strip-item-label">கல்வி நெறி</span>
+          <span class="strip-item-label">கல்வி நெறி &amp; பாடங்கள்</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
@@ -44,9 +45,24 @@
           <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon">🏛️</span><span>கல்வி மையம் (12 தரங்கள்)</span></a>
           <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon">🏫</span><span>இணையப் பள்ளி போர்டல்</span></a>
           <a href="higher-studies.html" class="strip-sub-item"><span class="strip-sub-icon">🔬</span><span>வேத-நவீன உயர்கல்வி</span></a>
-          <a href="tharam-1.html" class="strip-sub-item"><span class="strip-sub-icon">📖</span><span>தரம் 1 முதல் 12 பாடங்கள்</span></a>
           <a href="virtues.html" class="strip-sub-item"><span class="strip-sub-icon">🔤</span><span>அகர வரிசை நற்பண்புகள்</span></a>
           <a href="syllabus.html" class="strip-sub-item"><span class="strip-sub-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>
+          <a href="classes.html" class="strip-sub-item"><span class="strip-sub-icon">⏰</span><span>வகுப்புகள் அட்டவணை</span></a>
+          <div class="strip-sub-header" style="margin-top:6px;">12 தரப் பாடநூல்கள் (Grades 1-12)</div>
+          <div class="strip-grades-mini-grid">
+            <a href="tharam-1.html" class="strip-grade-mini-pill">1</a>
+            <a href="tharam-2.html" class="strip-grade-mini-pill">2</a>
+            <a href="tharam-3.html" class="strip-grade-mini-pill">3</a>
+            <a href="tharam-4.html" class="strip-grade-mini-pill">4</a>
+            <a href="tharam-5.html" class="strip-grade-mini-pill">5</a>
+            <a href="tharam-6.html" class="strip-grade-mini-pill">6</a>
+            <a href="tharam-7.html" class="strip-grade-mini-pill">7</a>
+            <a href="tharam-8.html" class="strip-grade-mini-pill">8</a>
+            <a href="tharam-9.html" class="strip-grade-mini-pill">9</a>
+            <a href="tharam-10.html" class="strip-grade-mini-pill">10</a>
+            <a href="tharam-11.html" class="strip-grade-mini-pill">11</a>
+            <a href="tharam-12.html" class="strip-grade-mini-pill">12</a>
+          </div>
         </div>
       </div>
 
@@ -54,7 +70,7 @@
       <div class="strip-group" data-group="saivam">
         <a href="saiva-neri.html" class="strip-item strip-has-sub" data-tooltip="சைவ நெறி">
           <span class="strip-item-icon">🕉️</span>
-          <span class="strip-item-label">சைவ நெறி</span>
+          <span class="strip-item-label">சைவ நெறி &amp; தெய்வங்கள்</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
@@ -71,7 +87,7 @@
       <div class="strip-group" data-group="isai">
         <a href="irai-isai-virundhu.html" class="strip-item strip-has-sub" data-tooltip="இறை இசை">
           <span class="strip-item-icon">🎵</span>
-          <span class="strip-item-label">இறை இசை</span>
+          <span class="strip-item-label">இறை இசை விருந்து</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
@@ -85,7 +101,7 @@
       <div class="strip-group" data-group="dharma">
         <a href="thirukkural.html" class="strip-item strip-has-sub" data-tooltip="அறநெறி">
           <span class="strip-item-icon">📖</span>
-          <span class="strip-item-label">அறநெறி</span>
+          <span class="strip-item-label">அறநெறி &amp; தத்துவம்</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
@@ -96,15 +112,15 @@
       </div>
 
       <!-- 6. குருவருள் & அறிமுகம் (Guru & About) -->
-      <div class="strip-group active" data-group="about">
-        <a href="about.html" class="strip-item strip-has-sub active" data-tooltip="குருவருள்">
+      <div class="strip-group" data-group="about">
+        <a href="about.html" class="strip-item strip-has-sub" data-tooltip="குருவருள்">
           <span class="strip-item-icon">🏛️</span>
-          <span class="strip-item-label">குருவருள்</span>
+          <span class="strip-item-label">குருவருள் &amp; அறிமுகம்</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
           <div class="strip-sub-header">குருவருள் &amp; தகவல்</div>
-          <a href="about.html" class="strip-sub-item active"><span class="strip-sub-icon">🙏</span><span>மகா பெரியவா அருளுரைகள்</span></a>
+          <a href="about.html" class="strip-sub-item"><span class="strip-sub-icon">🙏</span><span>மகா பெரியவா அருளுரைகள்</span></a>
           <a href="google-site.html" class="strip-sub-item"><span class="strip-sub-icon">🌐</span><span>கூகிள் தளம் நேரடி இணைப்பு</span></a>
         </div>
       </div>
@@ -163,55 +179,11 @@
 
 
   <main class="main-content">
-    <div class="course-layout-container">
-      
-    <!-- Dedicated Sub-Menu Sidebar for Guru Group -->
-    <aside class="course-sidebar dedicated-sub-sidebar" id="guruSidebar">
-      <div class="sidebar-header">
-        <div class="dedicated-sub-header">
-          <span class="dedicated-group-pill">🏛️ குருவருள் (Guru Sub-menu)</span>
-        </div>
-        <h3 class="sidebar-title">குருவருள் &amp; அறிமுகம்</h3>
-        <p class="sidebar-sub">காஞ்சி மகா பெரியவா அருளுரைகள்</p>
-      </div>
-
-      <nav class="sidebar-nav" aria-label="Guru Sections">
-        <div class="sidebar-chapter-group active">
-          <a href="about.html" class="sidebar-chapter-btn active">
-            <span class="sidebar-chapter-pill">
-              <span class="sidebar-num">🙏</span>
-              <span>மகா பெரியவா தத்துவம்</span>
-            </span>
-          </a>
-        </div>
-        <div class="sidebar-chapter-group">
-          <a href="google-site.html" class="sidebar-chapter-btn">
-            <span class="sidebar-chapter-pill">
-              <span class="sidebar-num">🌐</span>
-              <span>கூகிள் தளம் நேரடி இணைப்பு</span>
-            </span>
-          </a>
-        </div>
-      </nav>
-
-      <div style="margin-top:16px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08);">
-        <div style="font-size:0.76rem; color:#38bdf8; font-weight:700; text-transform:uppercase; margin-bottom:8px;">அருளுரை பகுதிகள்:</div>
-        <div style="display:flex; flex-direction:column; gap:6px;">
-          <button type="button" class="sidebar-chapter-btn" onclick="scrollToSection('teachingsSection')"><span class="sidebar-chapter-pill"><span class="sidebar-num">📖</span><span>தெய்வத்தின் குரல் சாரம்</span></span></button>
-          <button type="button" class="sidebar-chapter-btn" onclick="scrollToSection('vedicSection')"><span class="sidebar-chapter-pill"><span class="sidebar-num">🕉️</span><span>வேத சம்ரக்ஷண இயக்கம்</span></span></button>
-          <button type="button" class="sidebar-chapter-btn" onclick="scrollToSection('darshanSection')"><span class="sidebar-chapter-pill"><span class="sidebar-num">🌟</span><span>நேரடி தரிசன பதிவுகள்</span></span></button>
-        </div>
-      </div>
-    </aside>
-
-      <div class="course-main-column">
-        
     <div class="hero-banner">
       <div class="sacred-tag">ॐ வேத சாரம் • சைவ சித்தாந்தம் • தெய்வத்தின் குரல் ॐ</div>
       <h1>புதிய யுகத்திற்கான சைவ நெறி தரிசனம்</h1>
       <h2>Preparing the World for the New Spiritual Era through Saiva Neri & Vedic Truth</h2>
-      <div class="verse-quote">"யாதும் ஊரே யாவரும் கேளிர்; தீதும் நன்றும் பிறர்தர வாரா" — கணியன் பூங்குன்றனார்</div>
-    </div>
+      <div class="verse-quote">"யாதும் ஊரே யாவரும் கேளிர்; தீதும் நன்றும் பிறர்தர வாரா" — கணியன் பூங்குன்றனார்
 
     <div class="scripture-study-section">
       <span class="source-badge">மகா சங்கல்பம்</span>
@@ -333,7 +305,7 @@
         </div>
       </div>
       <div class="modal-iframe-wrapper" id="modalIframeWrapper">
-        <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
+        <iframe id="modalIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
       <div class="modal-scroll-hint" onclick="scrollToModalDetails()">
         <span>▼ கீழே பாடல் வரிகள் &amp; தத்துவப் பொருள் விளக்கம் (Scroll down for Lyrics &amp; Meaning) ▼</span>
