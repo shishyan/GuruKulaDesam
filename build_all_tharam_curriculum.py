@@ -261,6 +261,46 @@ def build_grade_coursebook(g, data):
             </div>
             """
 
+        # Story Artwork (Phase 2)
+        story_visual_html = ""
+        if enrichment.get('story_image'):
+            s_img = enrichment['story_image']
+            s_cap = enrichment.get('story_caption', 'புராண / வரலாற்று ஆன்மீகக் கதை')
+            story_visual_html = f"""
+            <div class="story-visual-card" style="margin-bottom:16px; border-radius:12px; overflow:hidden; border:1px solid rgba(192,132,252,0.3); background:rgba(20,10,35,0.6);">
+              <div style="position:relative; max-height:360px; overflow:hidden;">
+                <img src="{s_img}" alt="{s_cap}" style="width:100%; height:auto; display:block; object-fit:cover; max-height:360px;" loading="lazy">
+                <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(180deg, transparent 0%, rgba(20,10,35,0.92) 80%); padding:14px 18px 10px; display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:8px;">
+                  <div>
+                    <span style="display:inline-block; background:rgba(192,132,252,0.2); color:#c084fc; border:1px solid rgba(192,132,252,0.4); padding:2px 8px; border-radius:8px; font-size:0.75rem; font-weight:700; margin-bottom:4px;">📜 ஆன்மீக வரலாற்றுக் காட்சி ஓவியம்</span>
+                    <div style="color:#f8fafc; font-size:0.92rem; font-weight:600;">{s_cap}</div>
+                  </div>
+                  <a href="{s_img}" target="_blank" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.25); color:#e2e8f0; font-size:0.75rem; padding:4px 10px; border-radius:6px; text-decoration:none;">முழு அளவு ↗</a>
+                </div>
+              </div>
+            </div>
+            """
+
+        # Dharma Artwork (Phase 3)
+        dharma_visual_html = ""
+        if enrichment.get('dharma_image'):
+            d_img = enrichment['dharma_image']
+            d_cap = enrichment.get('dharma_caption', 'வாழ்வியல் தர்ம இல்லற நெறி')
+            dharma_visual_html = f"""
+            <div class="dharma-visual-card" style="margin-bottom:16px; border-radius:12px; overflow:hidden; border:1px solid rgba(45,212,191,0.3); background:rgba(6,30,26,0.6);">
+              <div style="position:relative; max-height:360px; overflow:hidden;">
+                <img src="{d_img}" alt="{d_cap}" style="width:100%; height:auto; display:block; object-fit:cover; max-height:360px;" loading="lazy">
+                <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(180deg, transparent 0%, rgba(6,30,26,0.92) 80%); padding:14px 18px 10px; display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:8px;">
+                  <div>
+                    <span style="display:inline-block; background:rgba(45,212,191,0.2); color:#2dd4bf; border:1px solid rgba(45,212,191,0.4); padding:2px 8px; border-radius:8px; font-size:0.75rem; font-weight:700; margin-bottom:4px;">🌿 இல்லற தர்ம நடைமுறைக் காட்சி</span>
+                    <div style="color:#f8fafc; font-size:0.92rem; font-weight:600;">{d_cap}</div>
+                  </div>
+                  <a href="{d_img}" target="_blank" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.25); color:#e2e8f0; font-size:0.75rem; padding:4px 10px; border-radius:6px; text-decoration:none;">முழு அளவு ↗</a>
+                </div>
+              </div>
+            </div>
+            """
+
         # 5. Vedic-STEM 21st Century Fusion for Phase 3
         fusion = FUSION_DATA.get((g, u['num']))
         fusion_html = ""
@@ -444,6 +484,7 @@ def build_grade_coursebook(g, data):
               <!-- Inspiring Historical / Puranic Story -->
               <div class="story-card-clean">
                 <div class="phase-sub-title" style="margin-top:0; color:#c084fc;">📜 ஆன்மீக வரலாறு &amp; உத்வேகக் கதை (Inspirational Narrative):</div>
+                {story_visual_html}
                 <div class="story-content-text">{formatted_story}</div>
               </div>
             </section>
@@ -466,6 +507,7 @@ def build_grade_coursebook(g, data):
               <!-- Student Daily Conduct -->
               <div class="living-conduct-clean">
                 <div class="phase-sub-title" style="margin-top:0; color:#2dd4bf;">🌿 மாணவர் அன்றாட இல்லற-வாழ்வியல் நெறி (Student Daily Living &amp; Conduct):</div>
+                {dharma_visual_html}
                 <div class="living-conduct-text">{formatted_living}</div>
               </div>
 

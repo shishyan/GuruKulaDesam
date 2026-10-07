@@ -369,6 +369,343 @@ UNIT_VISUAL_MAP = {
     }
 }
 
+UNIT_STORY_ARTWORKS = {
+    # Grade 3
+    (3, 1): {
+        "image": "assets/images/lessons/stories/grade3_sambandar_divine_milk.jpg",
+        "caption": "ஞானசம்பந்தருக்கு உமையம்மை ஞானப்பால் ஊட்டுதல் — சீர்காழி திருக்கோயில் திருக்குளப் படித்துறையில் உமையம்மையின் திருவருள்"
+    },
+    (3, 4): {
+        "image": "assets/images/lessons/stories/grade3_avvaiyar_athiyaman_amla.jpg",
+        "caption": "அதியமான் ஔவையாருக்கு நெல்லிக்கனி நல்குதல் — தமிழ் மூதாட்டி நீண்ட காலம் வாழ அரிய சாகா நெல்லிக்கனியை வழங்கிய வள்ளல் மாண்பு"
+    },
+    # Grade 4
+    (4, 2): {
+        "image": "assets/images/lessons/stories/grade4_appar_lime_kiln.jpg",
+        "caption": "அப்பர் பெருமான் நீற்றறையிலிருந்து மாசில் வீணையுடன் வெளிவருதல் — பல்லவ மன்னனின் சுண்ணாம்புக் காளவாயைத் தென்றலாக மாற்றிய சிவபக்தி"
+    },
+    (4, 4): {
+        "image": "assets/images/lessons/stories/grade4_nandanar_nandi_miracle.jpg",
+        "caption": "திருப்புன்கூரில் நந்தனாருக்காக நந்தி விலகிய அற்புதம் — நந்தனாரின் கலங்கமற்ற பக்திக்கு நந்தியே வழிவிட்ட அற்புதக் காட்சி"
+    },
+    # Grade 5
+    (5, 2): {
+        "image": "assets/images/lessons/stories/grade5_sundarar_wedding_interruption.jpg",
+        "caption": "சுந்தரரின் திருமணத்தில் முதிய அந்தணராக இறைவன் தோன்றி தடுத்தாட்கொள்ளுதல் — பழையோலை காட்டித் தடுத்தாண்ட தம்பிரான் தோழன் நெறி"
+    },
+    (5, 5): {
+        "image": "assets/images/lessons/stories/grade5_markandeya_yama_victory.jpg",
+        "caption": "மார்க்கண்டேயன் சிவலிங்கத்தை கட்டித் தழுவி மரணத்தை வெல்லுதல் — எமனை உதைத்து ஆட்கொண்ட காலசம்ஹார மூர்த்தியின் திருவருள்"
+    },
+    # Grade 6
+    (6, 2): {
+        "image": "assets/images/lessons/stories/grade6_thirumoolar_cattle_compassion.jpg",
+        "caption": "திருமூலர் இடையன் மூலனின் உடலினுள் புகுந்து பசுக்களைக் காத்தல் — பசுக்களின் துயர் துடைத்த யோகியின் ஜீவகாருண்யப் பெருநெறி"
+    },
+    (6, 4): {
+        "image": "assets/images/lessons/stories/grade6_rajaraja_chola_temple_dedication.jpg",
+        "caption": "முதலாம் ராஜராஜ சோழன் தஞ்சைப் பெரிய கோயிலை அர்ப்பணித்தல் — வானுயர்ந்த 216 அடி பிரகதீஸ்வரர் திருவிமான அர்ப்பணிப்பு"
+    },
+    # Grade 7
+    (7, 2): {
+        "image": "assets/images/lessons/stories/grade7_kannappa_nayanar_supreme_love.jpg",
+        "caption": "கண்ணப்ப நாயனார் தன் கண்களை ஈசனுக்கு அற்பணித்தல் — காளஹஸ்தி மலையில் ஈசனின் திருக்கரம் கண்ணப்பனின் கையைப் பிடித்த பேரருள்"
+    },
+    (7, 4): {
+        "image": "assets/images/lessons/stories/grade7_sekkizhar_periyapuranam_recital.jpg",
+        "caption": "சேக்கிழார் பெருமான் தில்லை நடராஜர் சந்நிதியில் பெரியபுராணம் அரங்கேற்றுதல் — இரண்டாம் குலோத்துங்க சோழன் முன்னிலையில் அரங்கேற்றம்"
+    },
+    # Grade 8
+    (8, 2): {
+        "image": "assets/images/lessons/stories/grade8_karaikkal_ammaiyar_kailash.jpg",
+        "caption": "காரைக்கால் அம்மையார் தலைகீழாக கயிலை மலையில் நடத்தல் — எலும்புருவில் கயிலையேறிய அம்மையாரை 'அம்மையே' என அழைத்த எம்பெருமான்"
+    },
+    (8, 3): {
+        "image": "assets/images/lessons/stories/grade8_pattinathar_renunciation.jpg",
+        "caption": "பட்டினத்தார் 'காதற்ற ஊசியும் வாராது காண்' எனும் ஞானம் பெறுதல் — காவேரிப்பூம்பட்டினத்துக் கோடீஸ்வர வணிகன் துறவியான திருக்கதை"
+    },
+    # Grade 9
+    (9, 2): {
+        "image": "assets/images/lessons/stories/grade9_siruthondar_divine_guest.jpg",
+        "caption": "சிறுத்தொண்ட நாயனார் வைரவர் பெருமானை இல்லறத்தில் உபசரித்தல் — அதிதி தேவோ பவ எனும் விருந்தோம்பல் உன்னத மாண்பு"
+    },
+    (9, 3): {
+        "image": "assets/images/lessons/stories/grade9_sambandar_madurai_debate.jpg",
+        "caption": "மதுரையில் திருஞானசம்பந்தர் அனல்வாதம் மற்றும் புனல்வாதம் வெல்லுதல் — வைகையாற்றில் எதிர்நீச்சலிட்ட திருமுறை ஏடு"
+    },
+    # Grade 10
+    (10, 2): {
+        "image": "assets/images/lessons/stories/grade10_manikkavasagar_horses_miracle.jpg",
+        "caption": "நரிகளை பரிகளாக்கிய மாணிக்கவாசகரின் அற்புதம் — மதுரை மன்னன் அரிமர்த்தன பாண்டியன் முன்னிலையில் இறைவன் நிகழ்த்திய திருவிளையாடல்"
+    },
+    (10, 3): {
+        "image": "assets/images/lessons/stories/grade10_arunagirinathar_murugan_grace.jpg",
+        "caption": "அருணகிரிநாதரை முருகன் தன் வேல் கொண்டு ஆட்கொள்ளுதல் — திருவண்ணாமலைக் கோபுரத்திலிருந்து விழுந்த பக்தனைக் காத்த வேலவன்"
+    },
+    # Grade 11
+    (11, 1): {
+        "image": "assets/images/lessons/stories/grade11_shravana_kumara_devotion.jpg",
+        "caption": "சிரவணகுமாரன் தன் குருடான தாய் தந்தையரை காவடியில் சுமத்தல் — பெற்றோர் வழிபாட்டின் உன்னத மாத்ரு-பித்ரு பக்தி மாண்பு"
+    },
+    (11, 3): {
+        "image": "assets/images/lessons/stories/grade11_harischandra_truth_triumph.jpg",
+        "caption": "அரிச்சந்திரன் மயானத்தில் வாய்மை தவறாத மாண்பு — காசி சுடுகாட்டிலும் தர்மநெறி பிறழாது உண்மை காத்த சத்திய விரதம்"
+    },
+    # Grade 12
+    (12, 1): {
+        "image": "assets/images/lessons/stories/grade12_nachiketas_return_enlightened.jpg",
+        "caption": "நசிகேதன் ஆத்ம ஞானம் பெற்று பூமிக்கு மீளுதல் — எமதர்மனிடம் சாகா வரம் பெற்று ஆசிரமம் மீண்ட ஞான இளைஞன்"
+    },
+    (12, 2): {
+        "image": "assets/images/lessons/stories/grade12_vallalar_light_dissolution.jpg",
+        "caption": "வள்ளலார் பெருமான் சித்தி வளாகத்தில் ஜோதியாக கலத்தல் — வடலூரில் மரணமிலாப் பெருவாழ்வு பெற்று அருட்பெருஞ்ஜோதியோடு இரண்டறக் கலத்தல்"
+    }
+}
+
+UNIT_DHARMA_ARTWORKS = {
+    # Grade 2
+    (2, 1): {
+        "image": "assets/images/lessons/dharma/dharma_01_morning_parent_reverence.jpg",
+        "caption": "அதிகாலை பெற்றோரின் திருப்பாதங்களை வணங்கி ஆசி பெறுதல் — பாலப் பருவ இல்லற நற்பழக்கம்"
+    },
+    (2, 2): {
+        "image": "assets/images/lessons/dharma/dharma_02_kolam_courtyard_sanctity.jpg",
+        "caption": "அதிகாலை வாசலில் அரிசி மாவு கோலமிட்டு எறும்பு, பறவைகளுக்கு உணவளித்தல் — உன்னத இல்லற மாண்பு"
+    },
+    (2, 3): {
+        "image": "assets/images/lessons/dharma/dharma_07_joint_family_evening_thevaram.jpg",
+        "caption": "மாலை விளக்கேற்றி குடும்பத்தோடு திருமுறைப் பதிகம் பாடுதல் — இறை இசை நல்வாழ்வு"
+    },
+    (2, 4): {
+        "image": "assets/images/lessons/dharma/dharma_11_ahimsa_protecting_creatures.jpg",
+        "caption": "அனைத்து உயிர்களிடத்தும் அன்பு காட்டும் கொல்லாமை நெறி — பறவைகளுக்கும் பூச்சிகளுக்கும் உணவளித்தல்"
+    },
+    (2, 5): {
+        "image": "assets/images/lessons/dharma/dharma_06_cow_veneration_kamadhenu.jpg",
+        "caption": "பசுவையும் கன்றையும் கோமாதாவாக போற்றி வணங்குதல் — ஜீவகாருண்யத் தொண்டு"
+    },
+
+    # Grade 3
+    (3, 1): {
+        "image": "assets/images/lessons/dharma/dharma_13_temple_service_uzhavaram.jpg",
+        "caption": "திருக்கோயில் திருப்பணியில் குடும்பத்தோடு ஈடுபடுதல் — உழவாரப் பணி நெறி"
+    },
+    (3, 2): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "அந்தி சந்தி வந்தனம் & காயத்ரி ஜெபம் — அதிகாலை ஆற்றுப் படித்துறையில் சூரிய நமஸ்காரம்"
+    },
+    (3, 3): {
+        "image": "assets/images/lessons/dharma/dharma_15_planting_shade_trees.jpg",
+        "caption": "வழிப்போக்கர்களுக்காக நிழல் தரும் மரங்களை நடுதல் — பூத யாகத்தின் நற்பயன்"
+    },
+    (3, 4): {
+        "image": "assets/images/lessons/dharma/dharma_17_learning_scriptures_olai_chuvadi.jpg",
+        "caption": "நாள்தோறும் திருமுறை & திருக்குறள் ஓதுதல் — குடும்பத்தோடு கல்வி கற்கும் நெறி"
+    },
+    (3, 5): {
+        "image": "assets/images/lessons/dharma/dharma_08_elder_care_veneration.jpg",
+        "caption": "முதியோரை அன்போடு அரவணைத்துப் பேணுதல் — பெற்றோரின் துயர் துடைக்கும் மாண்பு"
+    },
+
+    # Grade 4
+    (4, 1): {
+        "image": "assets/images/lessons/dharma/dharma_17_learning_scriptures_olai_chuvadi.jpg",
+        "caption": "ஓலைச்சுவடி திருமுறைகளைப் போற்றிப் பாதுகாத்து ஓதுதல் — பிரம்ம யாகம்"
+    },
+    (4, 2): {
+        "image": "assets/images/lessons/dharma/dharma_13_temple_service_uzhavaram.jpg",
+        "caption": "கோயில் வளாகத்தில் முட்களை நீக்கித் தூய்மை செய்தல் — அப்பரின் அடிச்சுவடு"
+    },
+    (4, 3): {
+        "image": "assets/images/lessons/dharma/dharma_04_garland_making_puja.jpg",
+        "caption": "இறைவனுக்கு நறுமணப் பூமாலை தொடுத்து வழிபடும் விரத நெறி — குடும்ப சிவபூஜை"
+    },
+    (4, 4): {
+        "image": "assets/images/lessons/dharma/dharma_10_truthful_merchant_dharma.jpg",
+        "caption": "வாணிகத்தில் நேர்மையும் தூய அறமும் — குறள் காட்டும் வணிக தர்மம்"
+    },
+    (4, 5): {
+        "image": "assets/images/lessons/dharma/dharma_04_feeding_hungry_guest.jpg",
+        "caption": "பசித்த விருந்தினருக்கு முகம் மலர்ந்து சாத்வீக உணவளித்தல் — இல்லறத்தான் பெருமை"
+    },
+
+    # Grade 5
+    (5, 1): {
+        "image": "assets/images/lessons/dharma/dharma_09_guru_dakshina_reverence.jpg",
+        "caption": "ஆசிரியரைத் தெய்வமாகப் போற்றி குரு தட்சிணை சமர்ப்பித்தல் — ஆசிரம நெறி"
+    },
+    (5, 2): {
+        "image": "assets/images/lessons/dharma/dharma_07_family_evening_thevaram.jpg",
+        "caption": "அடியார்கள் கூட்டத்தில் இணைந்து தேவாரத் திருப்பதிகம் பாடுதல் — சிவனேயம்"
+    },
+    (5, 3): {
+        "image": "assets/images/lessons/dharma/dharma_12_mutual_respect_spouses.jpg",
+        "caption": "கணவன் மனைவி இடையே நிலவும் சமத்துவ அன்பு — அறத்துப்பால் இல்லற மாண்பு"
+    },
+    (5, 4): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "மனோவசியமும் ஆத்ம தியானமும் — ஆற்றுப் படித்துறையில் காயத்ரி உபாசனை"
+    },
+    (5, 5): {
+        "image": "assets/images/lessons/dharma/dharma_10_truthful_merchant_dharma.jpg",
+        "caption": "சோம்பலின்றி நேர்மையான உழைப்பால் செல்வம் ஈட்டுதல் — மடியின்மை தர்மம்"
+    },
+
+    # Grade 6
+    (6, 1): {
+        "image": "assets/images/lessons/dharma/dharma_03_pancha_maha_yajna_offering.jpg",
+        "caption": "இல்லறத்தான் இயற்றும் பஞ்ச மகா யாகங்கள் — வேத தர்மத்தின் அஸ்திவாரம்"
+    },
+    (6, 2): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "அஷ்டாங்க யோகமும் உள்ளொளி தியானமும் — மன அமைதிக்கும் உடல் நலத்திற்குமான நெறி"
+    },
+    (6, 3): {
+        "image": "assets/images/lessons/dharma/dharma_06_cow_veneration_kamadhenu.jpg",
+        "caption": "பதி, பசு, பாசம் தத்துவத்தை உணர்ந்து எவ்வுயிர்க்கும் தீங்கிழையாது வாழ்தல்"
+    },
+    (6, 4): {
+        "image": "assets/images/lessons/dharma/dharma_14_charity_annadhanam_festival.jpg",
+        "caption": "திருக்கோயில் பெருவிழாவில் ஆயிரக்கணக்கானோருக்கு அன்னதானம் வழங்குதல்"
+    },
+    (6, 5): {
+        "image": "assets/images/lessons/dharma/dharma_09_community_canal_maintenance.jpg",
+        "caption": "ஊர்ப் பொதுக் குளங்களையும் வாய்க்கால்களையும் தூர்வாரிப் பராமரித்தல் — சமூக தர்மம்"
+    },
+
+    # Grade 7
+    (7, 1): {
+        "image": "assets/images/lessons/dharma/dharma_11_ahimsa_protecting_creatures.jpg",
+        "caption": "எல்லா உயிர்களிலும் இறைவனைக் காணும் உயரிய கண்ணோட்டம் — ஜீவ நேயம்"
+    },
+    (7, 2): {
+        "image": "assets/images/lessons/dharma/dharma_08_satvik_food_preparation.jpg",
+        "caption": "தூய சாத்வீக உணவை அன்போடு சமைத்துப் பரிமாறுதல் — இல்லற புனிதச் சடங்கு"
+    },
+    (7, 3): {
+        "image": "assets/images/lessons/dharma/dharma_16_water_charity_thanneer_panthal.jpg",
+        "caption": "கோடைக் காலத்தில் தாகம் தீர்க்கும் தண்ணீர் பந்தல் அமைத்தல் — சமுதாயத் தொண்டு"
+    },
+    (7, 4): {
+        "image": "assets/images/lessons/dharma/dharma_14_charity_annadhanam_festival.jpg",
+        "caption": "சான்றோர்களை வரவேற்று இல்லத்தில் உபசரித்து மகிழ்தல் — அதிதி பூஜை"
+    },
+    (7, 5): {
+        "image": "assets/images/lessons/dharma/dharma_18_forgiveness_resolving_dispute.jpg",
+        "caption": "பொறாமையும் கோபமும் நீக்கி பொறுமையால் அமைதி காத்தல் — நற்குணச் சாதனை"
+    },
+
+    # Grade 8
+    (8, 1): {
+        "image": "assets/images/lessons/dharma/dharma_08_elder_care_veneration.jpg",
+        "caption": "முதியோரை அன்போடு அரவணைத்துப் பேணுதல் — பித்ருக்களின் ஆசி பெறும் மாண்பு"
+    },
+    (8, 2): {
+        "image": "assets/images/lessons/dharma/dharma_19_frugal_noble_living.jpg",
+        "caption": "ஆடம்பரமின்றி எளிய தூய வாழ்வு வாழ்தல் — காரைக்கால் அம்மையாரின் பக்தி வைராக்கியம்"
+    },
+    (8, 3): {
+        "image": "assets/images/lessons/dharma/dharma_19_frugal_noble_living.jpg",
+        "caption": "பொருளாசையைக் கடந்து உள்ளத்தில் நிறைவு காணுதல் — பட்டினத்தார் துறவு நெறி"
+    },
+    (8, 4): {
+        "image": "assets/images/lessons/dharma/dharma_03_pancha_maha_yajna_offering.jpg",
+        "caption": "சதுர் ஆசிரமங்களுக்குத் தூணாக நின்று அன்னதானம் வழங்கும் இல்லறத்தான் உன்னத மாண்பு"
+    },
+    (8, 5): {
+        "image": "assets/images/lessons/dharma/dharma_04_feeding_hungry_guest.jpg",
+        "caption": "வள்ளலாரின் அணையா அடுப்பு போல எளியோரின் பசிப்பிணி நீக்கும் சத்திய தருமம்"
+    },
+
+    # Grade 9
+    (9, 1): {
+        "image": "assets/images/lessons/dharma/dharma_04_garland_making_puja.jpg",
+        "caption": "ஆகம விதிப்படி வீட்டில் அந்தி சந்தி வழிபாடுகளைத் தவறாது செய்தல்"
+    },
+    (9, 2): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "உடலைத் தூய கோயிலாகப் பேணி மது, மாமிசம், தீய பழக்கங்களிலிருந்து விலகி வாழ்தல்"
+    },
+    (9, 3): {
+        "image": "assets/images/lessons/dharma/dharma_17_learning_scriptures_olai_chuvadi.jpg",
+        "caption": "தத்துவ நூல்களை ஆராய்ந்து விவேகத்தோடு அறவழியில் முடிவெடுத்தல்"
+    },
+    (9, 4): {
+        "image": "assets/images/lessons/dharma/dharma_18_forgiveness_resolving_dispute.jpg",
+        "caption": "யம நியமங்களை அன்றாட வாழ்வில் கடைப்பிடித்து இன்சொல்லும் பொறுமையும் காத்தல்"
+    },
+    (9, 5): {
+        "image": "assets/images/lessons/dharma/dharma_10_truthful_merchant_dharma.jpg",
+        "caption": "அரசியலிலும் சமூகத்திலும் நடுவுநிலைமை தவறாது நேர்மையோடு கடமையாற்றுதல்"
+    },
+
+    # Grade 10
+    (10, 1): {
+        "image": "assets/images/lessons/dharma/dharma_03_pancha_maha_yajna_offering.jpg",
+        "caption": "ஆணவம், கன்மம், மாயை விலக்கி பதிப் பரம்பொருளின் திருவடிகளைச் சரணடைதல்"
+    },
+    (10, 2): {
+        "image": "assets/images/lessons/dharma/dharma_13_temple_service_uzhavaram.jpg",
+        "caption": "சரியை, கிரியை, யோகம், ஞானம் நால்வகை நெறிகளிலும் தன்னை அர்ப்பணித்தல்"
+    },
+    (10, 3): {
+        "image": "assets/images/lessons/dharma/dharma_08_satvik_food_preparation.jpg",
+        "caption": "காஞ்சி மகா பெரியவா அருளிய சனாதன தர்மத்தின்படி தூய சாத்வீக வாழ்வு வாழ்தல்"
+    },
+    (10, 4): {
+        "image": "assets/images/lessons/dharma/dharma_14_charity_annadhanam_festival.jpg",
+        "caption": "விரத நாட்களிலும் திருவிழாக்களிலும் பொதுமக்களுக்கு அன்னதானம் செய்து மகிழ்தல்"
+    },
+    (10, 5): {
+        "image": "assets/images/lessons/dharma/dharma_09_guru_dakshina_reverence.jpg",
+        "caption": "பொதுத் தேர்வில் சிறந்த தேர்ச்சி பெற்று ஆசிரியர்களுக்கும் பெற்றோருக்கும் நற்பெயர் ஈட்டுதல்"
+    },
+
+    # Grade 11
+    (11, 1): {
+        "image": "assets/images/lessons/dharma/dharma_12_mutual_respect_spouses.jpg",
+        "caption": "சிந்தனைத் தெளிவும் பரஸ்பர மரியாதையும் கொண்டு வாழ்வியல் சிக்கல்களைத் தீர்த்தல்"
+    },
+    (11, 2): {
+        "image": "assets/images/lessons/dharma/dharma_19_frugal_noble_living.jpg",
+        "caption": "அழியக்கூடிய உலகப் பொருள்களைக் காட்டிலும் அழியாத ஆத்ம ஞானத்திற்கு முதலிடம் அளித்தல்"
+    },
+    (11, 3): {
+        "image": "assets/images/lessons/dharma/dharma_17_learning_scriptures_olai_chuvadi.jpg",
+        "caption": "சிவஞானபோதத்தின் தர்க்கவியல் முறைப்படி வாழ்க்கையின் தத்துவங்களை ஆய்ந்தறிதல்"
+    },
+    (11, 4): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "பஞ்ச கோசங்களையும் கடந்து தூய ஆனந்தமய ஆன்ம விழிப்புணர்வில் நிலைபெறுதல்"
+    },
+    (11, 5): {
+        "image": "assets/images/lessons/dharma/dharma_09_guru_dakshina_reverence.jpg",
+        "caption": "உயர்தர ஆய்வுக் கல்வியில் பாரதத்தின் தத்துவ ஞானத்தை உலக அரங்கில் நிலைநாட்டுதல்"
+    },
+
+    # Grade 12
+    (12, 1): {
+        "image": "assets/images/lessons/dharma/dharma_20_peaceful_fulfillment_old_age.jpg",
+        "caption": "உடலோடு வாழும் போதே மன அமைதியும் முக்தியும் பெற்று சான்றோனாகத் திகழ்தல்"
+    },
+    (12, 2): {
+        "image": "assets/images/lessons/dharma/dharma_18_forgiveness_resolving_dispute.jpg",
+        "caption": "'எல்லாரும் இன்புற்றிருக்க நினைப்பதுவே' எனும் தாயுமானவ சுவாமிகளின் சமரச நேயம்"
+    },
+    (12, 3): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "பிரபஞ்ச இயக்கத்தோடு தன் மனதை ஒருமுகப்படுத்தி ஆத்ம அமைதி காணுதல்"
+    },
+    (12, 4): {
+        "image": "assets/images/lessons/dharma/dharma_15_planting_shade_trees.jpg",
+        "caption": "சுற்றுச்சூழலைக் காத்து அடுத்த தலைமுறைக்காக மரங்களையும் நீராதாரங்களையும் பாதுகாத்தல்"
+    },
+    (12, 5): {
+        "image": "assets/images/lessons/dharma/dharma_20_peaceful_fulfillment_old_age.jpg",
+        "caption": "அறவழியில் இல்லறம் நடத்தி நிறைவடைந்த முதியோரின் சாந்தமும் உலக நன்மைக்கான ஆசியும்"
+    }
+}
+
 def enrich_unit(grade_num, unit):
     u_num = unit["num"]
     title = unit["title"]
@@ -378,6 +715,10 @@ def enrich_unit(grade_num, unit):
     diagram_key = visual_info.get("diagram_key", "dinacharya")
     hero_image = visual_info.get("hero_image", "assets/images/lessons/temple_architecture.jpg")
     hero_caption = visual_info.get("hero_caption", f"தரம் {grade_num} • {title}")
+
+    # Story and Dharma visuals
+    story_info = UNIT_STORY_ARTWORKS.get((grade_num, u_num), {})
+    dharma_info = UNIT_DHARMA_ARTWORKS.get((grade_num, u_num), {})
 
     # Vocabulary builder
     vocab = []
@@ -764,5 +1105,10 @@ def enrich_unit(grade_num, unit):
         "video_clip": visual_info.get("video_clip"),
         "video_title": visual_info.get("video_title"),
         "video_note": visual_info.get("video_note"),
-        "video_poster": visual_info.get("video_poster", hero_image)
+        "video_poster": visual_info.get("video_poster", hero_image),
+        "story_image": story_info.get("image"),
+        "story_caption": story_info.get("caption"),
+        "dharma_image": dharma_info.get("image"),
+        "dharma_caption": dharma_info.get("caption")
     }
+
