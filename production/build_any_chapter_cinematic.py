@@ -34,36 +34,42 @@ CHAPTER_REGISTRY = {
         "audio_id": "h2q-ADrbBc4",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "26-pulaal-unnaamai",
         "output": RENDERS_DIR / "adhikaram_26_pulaal_unnaamai_cinematic.mp4",
+        "atmosphere": "drizzle", # gentle compassionate morning mist/drizzle
     },
     27: {
         "title": "Thavam (தவம்)",
         "audio_id": "IEk-wwY3rC8",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "27-thavam",
         "output": RENDERS_DIR / "adhikaram_27_thavam_cinematic.mp4",
+        "atmosphere": "snow", # sacred Himalayan / mountain stillness
     },
     52: {
         "title": "Therinthu Vinaiyaadal (தெரிந்து வினையாடல்)",
         "audio_id": "5uRYFxhT32k",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "52-therinthu-vinaiyaadal",
         "output": RENDERS_DIR / "adhikaram_52_therinthu_vinaiyaadal_cinematic.mp4",
+        "atmosphere": "rain", # default rain (monsoon delta waterworks & statecraft)
     },
     54: {
         "title": "Pochchaavaamai (பொச்சாவாமை)",
         "audio_id": "O0hASl4BS2c",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "54-pochchaavaamai",
         "output": RENDERS_DIR / "adhikaram_54_pochchaavaamai_cinematic.mp4",
+        "atmosphere": "drizzle", # fine mist over frontier watchtowers
     },
     57: {
         "title": "Veruvantha Seyyaamai (வெருவந்த செய்யாமை)",
         "audio_id": "hjcH8zbEleE",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "57-veruvantha-seyyaamai",
         "output": RENDERS_DIR / "adhikaram_57_veruvantha_seyyaamai_cinematic.mp4",
+        "atmosphere": "flowers", # floating jasmine/lotus petals over righteous celebration
     },
     61: {
         "title": "Madiyinmai (மடியின்மை)",
         "audio_id": "GfGlO3RQuik",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "61-madiyinmai",
         "output": RENDERS_DIR / "adhikaram_61_madiyinmai_cinematic.mp4",
+        "atmosphere": "rain", # default rain (relentless perseverance through rain & storm)
     },
 }
 
@@ -169,23 +175,36 @@ def render_chapter(ch_num: int):
     ]
     subprocess.run(cmd_concat, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
     
-    rain = ROOT / "production" / "rain_composite_loop.mp4"
+    # Select atmospheric layer based on chapter mood (default: rain)
+    atmo_type = cfg.get("atmosphere", "rain")
+    atmo_configs = {
+        "rain": {"file": ROOT / "production" / "rain_composite_loop.mp4", "opacity": 0.20},
+        "drizzle": {"file": ROOT / "production" / "drizzle_composite_loop.mp4", "opacity": 0.22},
+        "snow": {"file": ROOT / "production" / "snow_composite_loop.mp4", "opacity": 0.18},
+        "flowers": {"file": ROOT / "production" / "flowers_composite_loop.mp4", "opacity": 0.24},
+    }
+    atmo = atmo_configs.get(atmo_type, atmo_configs["rain"])
+    atmo_file = atmo["file"]
+    atmo_opacity = atmo["opacity"]
+    
     smoke = ROOT / "production" / "smoke_composite_loop.mp4"
     audio_path = ROOT / "source" / "youtube" / f"{cfg['audio_id']}.m4a"
     out_master = cfg["output"]
     
+    print(f"Atmospheric mood layer: {atmo_type.upper()} ({atmo_file.name}, opacity={atmo_opacity}) + DHOOPAM SMOKE", flush=True)
+    
     filter_complex = (
         "[0:v]format=gbrp[base];"
-        "[1:v]format=gbrp[rain];"
+        f"[1:v]format=gbrp[atmo];"
         "[2:v]format=gray,lut='val*0.15',format=gbrp[smoke];"
-        "[base][rain]blend=all_mode=screen:all_opacity=0.20[v1];"
+        f"[base][atmo]blend=all_mode=screen:all_opacity={atmo_opacity}[v1];"
         "[v1][smoke]blend=all_mode=screen:all_opacity=0.10,format=yuv420p[vout]"
     )
     
     cmd_composite = [
         FFMPEG, "-y",
         "-i", str(concat_video),
-        "-stream_loop", "-1", "-i", str(rain),
+        "-stream_loop", "-1", "-i", str(atmo_file),
         "-stream_loop", "-1", "-i", str(smoke),
         "-i", str(audio_path),
         "-filter_complex", filter_complex,

@@ -2230,9 +2230,36 @@
         let currentChapter = 26;
         const player = document.getElementById('mainPlayer');
 
+        function getInitialChapter() {
+            // 1. Check URL hash first (e.g. #chapter-54 or #54)
+            const hash = window.location.hash.replace('#', '').replace('chapter-', '');
+            if (hash && CHAPTER_DATA[hash]) {
+                return parseInt(hash);
+            }
+            // 2. Check localStorage
+            try {
+                const saved = localStorage.getItem('gurukulam_review_chapter');
+                if (saved && CHAPTER_DATA[saved]) {
+                    return parseInt(saved);
+                }
+            } catch(e) {}
+            return 26;
+        }
+
         function loadChapter(ch) {
+            ch = parseInt(ch);
             currentChapter = ch;
+            
+            // Persist selection so it never resets on reload
+            try {
+                localStorage.setItem('gurukulam_review_chapter', ch);
+                if (window.location.hash !== `#chapter-${ch}`) {
+                    history.replaceState(null, '', `#chapter-${ch}`);
+                }
+            } catch(e) {}
+
             const data = CHAPTER_DATA[ch];
+            if (!data) return;
 
             // Update Tab Active
             document.querySelectorAll('.tab-btn').forEach((btn, idx) => {
@@ -2298,8 +2325,16 @@
             return `${m}:${s < 10 ? '0' : ''}${s}`;
         }
 
-        // Initialize Chapter 26 on load
-        loadChapter(26);
+        // Listen for back/forward navigation or hash changes
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.replace('#', '').replace('chapter-', '');
+            if (hash && CHAPTER_DATA[hash] && parseInt(hash) !== currentChapter) {
+                loadChapter(parseInt(hash));
+            }
+        });
+
+        // Initialize from URL hash or localStorage
+        loadChapter(getInitialChapter());
     </script>
 </body>
 </html>
