@@ -71,6 +71,48 @@ CHAPTER_REGISTRY = {
         "output": RENDERS_DIR / "adhikaram_61_madiyinmai_cinematic.mp4",
         "atmosphere": "rain", # default rain (relentless perseverance through rain & storm)
     },
+    5: {
+        "title": "Ilvaazhkkai (இல்வாழ்க்கை)",
+        "audio_id": "v_dsHTOvKP8",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "05-ilvaazhkkai",
+        "output": RENDERS_DIR / "adhikaram_05_ilvaazhkkai_cinematic.mp4",
+        "atmosphere": "flowers", # sacred floral garland / domestic serenity
+    },
+    8: {
+        "title": "Anbudaimai (அன்புடைமை)",
+        "audio_id": "lneosghJWgs",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "08-anbudaimai",
+        "output": RENDERS_DIR / "adhikaram_08_anbudaimai_cinematic.mp4",
+        "atmosphere": "drizzle", # gentle tender morning dew / compassionate mist
+    },
+    16: {
+        "title": "Poraiyudaimai (பொறையுடைமை)",
+        "audio_id": "R82hz_s2YGQ",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "16-poraiyudaimai",
+        "output": RENDERS_DIR / "adhikaram_16_poraiyudaimai_cinematic.mp4",
+        "atmosphere": "rain", # default rain / mother earth bearing all
+    },
+    25: {
+        "title": "Aruludaimai (அருளுடைமை)",
+        "audio_id": "EChaj0wXk_0",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "25-aruludaimai",
+        "output": RENDERS_DIR / "adhikaram_25_aruludaimai_cinematic.mp4",
+        "atmosphere": "drizzle", # soft universal grace & mercy
+    },
+    30: {
+        "title": "Vaaimai (வாய்மை)",
+        "audio_id": "BoOWFaOGczE",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "30-vaaimai",
+        "output": RENDERS_DIR / "adhikaram_30_vaaimai_cinematic.mp4",
+        "atmosphere": "rain", # steadfast flame of truth in the rain
+    },
+    31: {
+        "title": "Vegulaamai (வெகுளாமை)",
+        "audio_id": "WM8EPZ4KK2s",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "31-vegulaamai",
+        "output": RENDERS_DIR / "adhikaram_31_vegulaamai_cinematic.mp4",
+        "atmosphere": "rain", # cooling rain quenching the flames of anger
+    },
 }
 
 CAMERA_MOVES = [
