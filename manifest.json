@@ -1,0 +1,27 @@
+{
+  "name": "குரு குல ஆசிரமம் — Guru Kula Desam",
+  "short_name": "குருகுலதேசம்",
+  "description": "உன்னத இல்லற தர்மம், சப்த ஞான பூமி, பன்னிரு திருமுறை & திருக்குறள் தொல் ஆசிரமப் பெருவெளி",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#040d1a",
+  "theme_color": "#14b8a6",
+  "orientation": "portrait-primary",
+  "categories": ["education", "spirituality", "lifestyle"],
+  "lang": "ta",
+  "icons": [
+    {
+      "src": "assets/images/lessons/disciples_under_sacred_tree.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/lessons/western_ghats_hermitage.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

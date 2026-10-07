@@ -6,6 +6,7 @@
   <title>திருக்குறள் — உலகப் பொதுமறை அறநெறி | Guru Kula Desam</title>
   <meta name="description" content="சாதி, மத, தேச பேதமற்ற மனிதகுலத்திற்கான வாழ்வியல் வழிகாட்டி. 133 அதிகாரங்களின் சினிமா திரைப்படங்கள் & இசை வெளியீடுகள்.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body class="has-left-strip">
 
@@ -170,6 +171,12 @@
           <span class="font-scale-indicator" id="fontScaleIndicator">100%</span>
           <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க (A+)">A⁺</button>
         </div>
+        <button type="button" class="context-tool-btn" id="palmLeafToggleBtn" onclick="togglePalmLeafMode()" title="ஓலைச்சுவடி வடிவம் (Palm-Leaf Mode)">
+          <span class="theme-icon">📜</span>
+        </button>
+        <button type="button" class="context-tool-btn" id="ashramSoundToggleBtn" onclick="toggleAshramOmDrone()" title="ஆசிரம பிரணவ ஓம் நாதம் (Om Soundscape)">
+          <span class="theme-icon">🪔</span>
+        </button>
         <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள்">
           <span class="theme-icon" id="themeQuickIcon">🌓</span>
         </button>

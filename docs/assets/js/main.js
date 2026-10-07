@@ -1741,6 +1741,8 @@ function mountAppShell() {
 
   // Initialize preferences
   loadUserPreferences();
+  restorePatanjaliAssessment();
+  restorePalmLeafMode();
 }
 
 // Auto mount when DOM is ready
@@ -1807,3 +1809,383 @@ document.addEventListener('error', function (e) {
     thumb.removeAttribute('onclick');
   }
 }, true);
+
+/* ========================================================================== */
+/* FEATURE 1: PATANJALI 7-STAGE SELF-REALIZATION ASSESSMENT & RATING ENGINE   */
+/* ========================================================================== */
+
+function calculatePatanjaliScore() {
+  const qNames = ['pq1', 'pq2', 'pq3', 'pq4', 'pq5', 'pq6', 'pq7'];
+  let totalScore = 0;
+  const answers = {};
+
+  for (let i = 0; i < qNames.length; i++) {
+    const radios = document.getElementsByName(qNames[i]);
+    let val = 1;
+    for (let r of radios) {
+      if (r.checked) {
+        val = parseInt(r.value, 10);
+        break;
+      }
+    }
+    answers[qNames[i]] = val;
+    totalScore += val;
+  }
+
+  try {
+    localStorage.setItem('gurukula_patanjali_answers', JSON.stringify(answers));
+    localStorage.setItem('gurukula_patanjali_score', totalScore);
+  } catch (e) {}
+
+  renderPatanjaliResult(totalScore);
+}
+
+function renderPatanjaliResult(score) {
+  const resultBox = document.getElementById('patScoreResultBox');
+  const levelNameEl = document.getElementById('patResultLevelName');
+  const starsEl = document.getElementById('patResultStars');
+  const descEl = document.getElementById('patResultDesc');
+  const actionEl = document.getElementById('patResultAction');
+
+  if (!resultBox) return;
+
+  let levelName = '';
+  let stars = '';
+  let desc = '';
+  let badgeColor = '#38bdf8';
+  let ratingNum = '1.0';
+  let legacyAdvice = '';
+
+  if (score <= 9) {
+    ratingNum = '1.5';
+    levelName = 'நிலை 1: சுபேச்சை (Subheccha) — நல்விருப்ப தொடக்க நிலை';
+    stars = '⭐️☆☆☆☆';
+    badgeColor = '#38bdf8';
+    desc = 'நீங்கள் தர்ம நெறியின் முதற்படியில் அடியெடுத்து வைத்துள்ளீர்கள். ஆன்மீக அமைதியை நாட வேண்டும் என்ற உன்னத விருப்பம் (சுபேச்சை) மலர்ந்துள்ளது. தரம் 1 - 4 தொடக்கப் பாடங்களை வாசித்து, கோபம் தணித்தல், தாய்-தந்தை வழிபாடு மற்றும் தினசரி எளிய தியானத்தில் ஈடுபடுங்கள்.';
+    legacyAdvice = 'இல்லற அடித்தளம்: குடும்பத்தில் தினசரி 10 நிமிடம் அமைதி காத்தல், ஒரு குறள் வாசித்தல்.';
+  } else if (score <= 12) {
+    ratingNum = '2.8';
+    levelName = 'நிலை 2: விசாரணை (Vicharana) — மெய்விசாரணை சாதகர் நிலை';
+    stars = '⭐️⭐️☆☆☆';
+    badgeColor = '#2dd4bf';
+    desc = 'சாத்திர விவேகமும் மெய்ப்பொருள் ஆய்வும் உங்களில் மலர்ந்துள்ளது. நித்திய-அநித்திய பகுத்தறிவுடன் வாழ்வியல் முடிவுகளை எடுக்கிறீர்கள். தரம் 5 - 8 பாடங்கள், திருமுறைத் தேவாரங்கள் மற்றும் பகவத் கீதை சிந்தனைகள் உங்கள் விவேகத்தை மேலும் கூர்மையாக்கும்.';
+    legacyAdvice = 'இல்லற தர்மம்: குழந்தைகளுக்கு நல்லொழுக்கக் கதைகள் கற்பித்தல், எளிய ஜீவகாருண்ய தானம்.';
+  } else if (score <= 15) {
+    ratingNum = '4.2';
+    levelName = 'நிலை 3: தனுமானசி (Tanumanasa) — நுண்ணிய மன அடக்கம் & இல்லற ஒழுக்கம்';
+    stars = '⭐️⭐️⭐️☆☆';
+    badgeColor = '#c084fc';
+    desc = 'புலனடக்கமும், கோப மேலாண்மையும் கைகூடியுள்ளது. மனம் சிதறாமல் தர்மத்தில் ஒருமுகப்பட்டுள்ளது. இல்லறத்தில் பஞ்ச மகா யக்ஞங்களைத் தவறாது கடைப்பிடித்து, சினமின்மை என்ற மாபெரும் தவத்தை உங்கள் இல்லத்தில் நிலைநிறுத்துங்கள்.';
+    legacyAdvice = 'இல்லற தர்மம்: தினசரி பஞ்ச மகா யக்ஞ டிராக்கரை 30 நாட்கள் தொடர்ச்சியாக பூர்த்தி செய்தல்.';
+  } else if (score <= 17) {
+    ratingNum = '5.4';
+    levelName = 'நிலை 4: சத்வாபத்தி (Sattvapatti) — தூய சத்துவ நிலை & பிரம்ம பாவனை';
+    stars = '⭐️⭐️⭐️⭐️☆';
+    badgeColor = '#facc15';
+    desc = 'அகத்தூய்மையும், விருப்பு-வெறுப்பற்ற சமநிலையும் ஆழமாக நிலவுகிறது. உலக சவால்கள் உங்கள் நிம்மதியைக் குலைப்பதில்லை. பதி, பசு, பாச மெய்யறிவை உணர்ந்து, உங்கள் குடும்பத்தை ஆன்மீகத் திருத்தலமாக வழிநடத்தும் சான்றோனாக மிளிர்கிறீர்கள்.';
+    legacyAdvice = 'இல்லற தலைமை: குடும்ப அறநெறி சாசனம் (Family Charter) உருவாக்கி தலைமுறை நெறியாக்குதல்.';
+  } else if (score <= 19) {
+    ratingNum = '6.3';
+    levelName = 'நிலை 5: அசம்சக்தி (Asamsakti) — பற்றற்ற நிஷ்காம கர்ம யோகம்';
+    stars = '⭐️⭐️⭐️⭐️⭐️';
+    badgeColor = '#fb923c';
+    desc = 'தாமரை இலைத் தண்ணீர் போல குடும்பப் பொறுப்புகளை முழுமையான அன்போடும் கடமையுணர்ச்சியோடும் நிறைவேற்றுகிறீர்கள்; அதே சமயம் எவ்வித சுயநலப் பற்றுமின்றி ஈசன் செயல் என சரணடைகிறீர்கள். மரண பயமற்ற ஜீவன் முக்திப் பாதைக்கு மிக அருகில் உள்ளீர்கள்.';
+    legacyAdvice = 'உன்னத மரபு (Legacy): சமுதாய அறப்பணிகள், வித்யா தானம், இளைஞர்களுக்கு தர்ம வழிகாட்டல்.';
+  } else {
+    ratingNum = '7.0';
+    levelName = 'நிலை 6 & 7: பதார்த்த பாவனை & துரியகா (Turiya) — ஜீவன் முக்தி & உன்னத சால்பு';
+    stars = '👑 ⭐️⭐️⭐️⭐️⭐️ 👑';
+    badgeColor = '#e11d48';
+    desc = '‘வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உறையும் தெய்வத்துள் வைக்கப் படும்’ (குறள் 50). குடும்பத்தை அறவழியில் உயர்த்தி, தலைமுறைகள் போற்றும் அழியாத தர்ம மரபை (Enduring Legacy) நிறுவிய நிறைவு நிலை. பிறவிப் பெருங்கடலை நீந்தி அதிவேக முக்தியை அடைந்துவிட்டீர்கள்!';
+    legacyAdvice = 'மரபுச் சின்னம்: முழு சமுதாயத்திற்கும் தெய்விக சான்றாண்மையின் நேரடி கலங்கரை விளக்கம்.';
+  }
+
+  if (levelNameEl) levelNameEl.innerHTML = `<span style="color:${badgeColor}; font-size:1.1rem; display:block; margin-bottom:4px;">ஆன்ம முதிர்ச்சி எண்: ${ratingNum} / 7.0 (மதிப்பெண்: ${score}/21)</span>${levelName}`;
+  if (starsEl) starsEl.innerHTML = stars;
+  if (descEl) {
+    descEl.innerHTML = `
+      <div style="margin-bottom:12px;">${desc}</div>
+      <div style="background:rgba(255,255,255,0.06); border-left:3px solid ${badgeColor}; padding:10px 14px; border-radius:6px; font-size:0.88rem; color:#f1f5f9; text-align:left;">
+        <strong>🌿 இல்லற &amp; மரபு வழிகாட்டல் (Legacy Action):</strong> ${legacyAdvice}
+      </div>
+    `;
+  }
+
+  if (actionEl) {
+    actionEl.innerHTML = `
+      <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:14px;">
+        <button type="button" onclick="window.print()" class="sheet-btn" style="background:linear-gradient(135deg,#059669,#0d9488); color:#ffffff; font-weight:700; padding:8px 18px; border-radius:10px; cursor:pointer;">
+          🖨️ மதிப்பீட்டுச் சான்றிதழை அச்சிடுக
+        </button>
+        <a href="kalvi.html#grihasthaTracker" class="sheet-btn" style="background:linear-gradient(135deg,#d4af37,#996515); color:#000000; font-weight:700; padding:8px 18px; border-radius:10px; text-decoration:none;">
+          ✅ பஞ்ச மகா யக்ஞ சாதனா தொடங்குக ↗
+        </a>
+      </div>
+    `;
+  }
+
+  resultBox.style.display = 'block';
+  resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function restorePatanjaliAssessment() {
+  try {
+    const raw = localStorage.getItem('gurukula_patanjali_answers');
+    if (!raw) return;
+    const answers = JSON.parse(raw);
+    for (let k in answers) {
+      const radios = document.getElementsByName(k);
+      for (let r of radios) {
+        if (parseInt(r.value, 10) === answers[k]) {
+          r.checked = true;
+        }
+      }
+    }
+    const score = parseInt(localStorage.getItem('gurukula_patanjali_score'), 10);
+    if (score && document.getElementById('patScoreResultBox')) {
+      renderPatanjaliResult(score);
+    }
+  } catch (e) {}
+}
+
+/* ========================================================================== */
+/* FEATURE 2: ASHRAM SOUNDSCAPE & DINACHARYA BELL (WEB AUDIO SYNTHESIS)       */
+/* ========================================================================== */
+
+let _audioCtx = null;
+let _omOsc1 = null;
+let _omOsc2 = null;
+let _omGain = null;
+let _isOmPlaying = false;
+
+function getAudioContext() {
+  if (!_audioCtx) {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (AudioContext) {
+      _audioCtx = new AudioContext();
+    }
+  }
+  if (_audioCtx && _audioCtx.state === 'suspended') {
+    _audioCtx.resume();
+  }
+  return _audioCtx;
+}
+
+/**
+ * Synthesizes an authentic bronze temple bell with inharmonic resonant partials.
+ * @param {number} baseFreq Base frequency in Hz (Default: 432 Hz sacred A / 528 Hz)
+ */
+function playAshramTempleBell(baseFreq = 432) {
+  const ctx = getAudioContext();
+  if (!ctx) return;
+
+  const now = ctx.currentTime;
+  const masterGain = ctx.createGain();
+  masterGain.connect(ctx.destination);
+
+  // Inharmonic bell partial multipliers (approx. resonant ratios of traditional temple bells)
+  const partials = [
+    { ratio: 1.0, gain: 0.6, decay: 3.5 },
+    { ratio: 2.02, gain: 0.4, decay: 2.8 },
+    { ratio: 3.01, gain: 0.25, decay: 2.0 },
+    { ratio: 4.24, gain: 0.18, decay: 1.5 },
+    { ratio: 5.43, gain: 0.12, decay: 1.1 },
+    { ratio: 6.81, gain: 0.08, decay: 0.8 }
+  ];
+
+  masterGain.gain.setValueAtTime(0.8, now);
+
+  partials.forEach(p => {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(baseFreq * p.ratio, now);
+
+    // Strike attack and exponential decay
+    gain.gain.setValueAtTime(0, now);
+    gain.gain.linearRampToValueAtTime(p.gain, now + 0.008);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + p.decay);
+
+    osc.connect(gain);
+    gain.connect(masterGain);
+
+    osc.start(now);
+    osc.stop(now + p.decay + 0.1);
+  });
+}
+
+/**
+ * Plays a distinct melodic chime for each of the 4 Ashram Yamas.
+ * @param {number} yamaIndex 0: Usha (528Hz), 1: Vidya (432Hz), 2: Seva (384Hz), 3: Sandhya (288Hz)
+ */
+function playYamaChime(yamaIndex) {
+  const freqs = [528, 432, 384, 288];
+  const freq = freqs[yamaIndex] || 432;
+  playAshramTempleBell(freq);
+
+  // Show a gentle visual toast if possible
+  const yamaNames = ['உஷா காலம் (பிரம்ம முகூர்த்தம்)', 'வித்யா யாமம் (சுவடிப் பாடம்)', 'சேவா யாமம் (கோ சேவை)', 'சந்தியா யாமம் (தீபாராதனை)'];
+  console.log('🪔 ஆசிரம யாம நாதம் ஒலித்தது:', yamaNames[yamaIndex] || 'ஆசிரம மணி');
+}
+
+/**
+ * Toggles ambient continuous Pranava Om (136.1 Hz) + Tambura harmonic drone.
+ */
+function toggleAshramOmDrone() {
+  const ctx = getAudioContext();
+  if (!ctx) return false;
+
+  const btn = document.getElementById('ashramSoundToggleBtn');
+
+  if (_isOmPlaying) {
+    if (_omGain) {
+      _omGain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 1.0);
+      setTimeout(() => {
+        if (_omOsc1) { _omOsc1.stop(); _omOsc1.disconnect(); }
+        if (_omOsc2) { _omOsc2.stop(); _omOsc2.disconnect(); }
+        _isOmPlaying = false;
+        if (btn) {
+          btn.classList.remove('active');
+          btn.innerHTML = '🪔 <span>ஓம் நாதம் கேட்க</span>';
+        }
+      }, 1000);
+    }
+    return false;
+  } else {
+    const now = ctx.currentTime;
+    _omGain = ctx.createGain();
+    _omGain.gain.setValueAtTime(0.0001, now);
+    _omGain.gain.linearRampToValueAtTime(0.25, now + 1.5);
+    _omGain.connect(ctx.destination);
+
+    // Fundamental Om tone (136.1 Hz - Earth frequency / Cosmic Aum)
+    _omOsc1 = ctx.createOscillator();
+    _omOsc1.type = 'sine';
+    _omOsc1.frequency.setValueAtTime(136.1, now);
+
+    // Fifth harmonic (204.15 Hz Pa / Panchama tanpura string)
+    _omOsc2 = ctx.createOscillator();
+    _omOsc2.type = 'sine';
+    _omOsc2.frequency.setValueAtTime(204.15, now);
+
+    _omOsc1.connect(_omGain);
+    _omOsc2.connect(_omGain);
+
+    _omOsc1.start(now);
+    _omOsc2.start(now);
+    _isOmPlaying = true;
+
+    if (btn) {
+      btn.classList.add('active');
+      btn.innerHTML = '🔕 <span>ஓம் நாதம் நிறுத்துக</span>';
+    }
+    return true;
+  }
+}
+
+/* ========================================================================== */
+/* FEATURE 4: PALM-LEAF MANUSCRIPT (ஓலைச்சுவடி வடிவம்) CONTROLLER             */
+/* ========================================================================== */
+
+function togglePalmLeafMode() {
+  document.body.classList.toggle('palm-leaf-mode-active');
+  const isEnabled = document.body.classList.contains('palm-leaf-mode-active');
+  try {
+    localStorage.setItem('gurukula_palm_leaf_mode', isEnabled ? 'true' : 'false');
+  } catch (e) {}
+
+  const btn = document.getElementById('palmLeafToggleBtn');
+  if (btn) {
+    btn.classList.toggle('active', isEnabled);
+    btn.innerHTML = isEnabled ? '📜 <span>இயல்பு வடிவம் (Modern)</span>' : '📜 <span>ஓலைச்சுவடி வடிவம் (Palm-Leaf)</span>';
+  }
+}
+
+function restorePalmLeafMode() {
+  try {
+    const isEnabled = localStorage.getItem('gurukula_palm_leaf_mode') === 'true';
+    if (isEnabled) {
+      document.body.classList.add('palm-leaf-mode-active');
+      const btn = document.getElementById('palmLeafToggleBtn');
+      if (btn) {
+        btn.classList.add('active');
+        btn.innerHTML = '📜 <span>இயல்பு வடிவம் (Modern)</span>';
+      }
+    }
+  } catch (e) {}
+}
+
+/* ========================================================================== */
+/* FEATURE 5: PWA & OFFLINE SERVICE WORKER REGISTRATION                       */
+/* ========================================================================== */
+
+if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').then((reg) => {
+      console.log('🏛️ ஆசிரம ஆஃப்லைன் சேவை இயங்குகிறது (PWA Service Worker registered):', reg.scope);
+    }).catch((err) => {
+      console.warn('PWA Service Worker registration skipped or failed:', err);
+    });
+  });
+}
+
+/* ========================================================================== */
+/* FEATURE 6: GURU SPEECH SYNTHESIS ENGINE (குரு உரை கேட்போம்)                 */
+/* ========================================================================== */
+
+let _currentSpeechUtterance = null;
+
+function speakLessonText(text, btnElement) {
+  if (!('speechSynthesis' in window)) {
+    alert('உங்கள் உலாவியில் குரல் வாசிப்பு வசதி (Speech Synthesis) ஆதரிக்கப்படவில்லை.');
+    return;
+  }
+
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    if (btnElement && btnElement.classList.contains('speaking')) {
+      btnElement.classList.remove('speaking');
+      btnElement.innerHTML = '🔊 குரு உரை கேட்க';
+      return;
+    }
+  }
+
+  const cleanText = text.replace(/<[^>]*>/g, '').trim();
+  if (!cleanText) return;
+
+  const utterance = new SpeechSynthesisUtterance(cleanText);
+  utterance.rate = 0.88; // Calm, meditative pace
+  utterance.pitch = 1.0;
+
+  // Search for available Tamil voice
+  const voices = window.speechSynthesis.getVoices();
+  const tamilVoice = voices.find(v => v.lang.startsWith('ta')) || voices.find(v => v.lang.includes('IN'));
+  if (tamilVoice) {
+    utterance.voice = tamilVoice;
+  }
+
+  if (btnElement) {
+    btnElement.classList.add('speaking');
+    btnElement.innerHTML = '⏹️ நிறுத்துக';
+  }
+
+  utterance.onend = function() {
+    if (btnElement) {
+      btnElement.classList.remove('speaking');
+      btnElement.innerHTML = '🔊 குரு உரை கேட்க';
+    }
+  };
+
+  utterance.onerror = function() {
+    if (btnElement) {
+      btnElement.classList.remove('speaking');
+      btnElement.innerHTML = '🔊 குரு உரை கேட்க';
+    }
+  };
+
+  _currentSpeechUtterance = utterance;
+  window.speechSynthesis.speak(utterance);
+}
+
+

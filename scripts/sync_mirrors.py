@@ -27,6 +27,9 @@ HTML_FILES = [
     "embed_vallalar_sanmargam.html", "embed_vinayagar.html", "embed_vishnu_krishna.html"
 ] + [f"tharam-{i}.html" for i in range(1, 13)]
 
+# Root-level PWA and manifest files
+ROOT_PWA_FILES = ["manifest.json", "sw.js"]
+
 ASSET_SUBDIRS = [
     "assets/css",
     "assets/js",
@@ -63,7 +66,16 @@ def sync_all():
         if sync_file(src, DOCS_DIR / fn):
             copied_docs += 1
 
-    # 2. Sync core asset directories
+    # 2. Sync PWA files
+    for fn in ROOT_PWA_FILES:
+        src = ROOT / fn
+        if src.exists():
+            if sync_file(src, SITE_DIR / fn):
+                copied_site += 1
+            if sync_file(src, DOCS_DIR / fn):
+                copied_docs += 1
+
+    # 3. Sync core asset directories
     for sub in ASSET_SUBDIRS:
         src_dir = ROOT / sub
         if not src_dir.exists():

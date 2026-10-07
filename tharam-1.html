@@ -315,8 +315,13 @@
     <div id="syllabus-highlights" class="scripture-study-section" style="margin-top: 20px;">
         <div style="margin-bottom:8px;"><span class="wbs-code wbs-code-primary">WBS 1.2</span> <span class="source-badge">பாடத்திட்ட உள்ளடக்கச் சுருக்கம்</span></div>
       <span class="source-badge">தரம் 1 பாடக் குறிப்புகள் &amp; நற்சிந்தனைகள்</span>
-      <h2>தரம் 1 பாடத்திட்ட உள்ளடக்கம் (Syllabus Highlights)</h2>
-      <ul style="margin-left: 20px; margin-top: 12px; color: var(--text-main); line-height: 1.8;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 6px; margin-bottom: 8px;">
+        <h2 style="margin: 0;">தரம் 1 பாடத்திட்ட உள்ளடக்கம் (Syllabus Highlights)</h2>
+        <button type="button" class="lesson-speech-btn" onclick="speakLessonText(document.getElementById('gradeLessonSummaryText').innerText, this)" title="குரல்வழிக் கேட்க">
+          <span>🔊 குரு உரை கேட்க</span>
+        </button>
+      </div>
+      <ul id="gradeLessonSummaryText" style="margin-left: 20px; margin-top: 12px; color: var(--text-main); line-height: 1.8;">
         <li><strong>கடவுள் வணக்கம்:</strong> முழுமுதற் கடவுள் விநாயகர் வணக்கம், நமசிவாய மந்திரம் ஓதுதல்.</li>
         <li><strong>சைவத் தெய்வங்கள்:</strong> சிவபெருமான், உமையம்மை, முருகப்பெருமான், பிள்ளையார் அறிமுகம்.</li>
         <li><strong>திருக்கோயில் பழக்கங்கள்:</strong> நீராடித் தூய ஆடை அணிந்து திருக்கோயிலுக்குச் செல்லுதல், திருநீறு அணிதல்.</li>

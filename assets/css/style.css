@@ -5792,3 +5792,124 @@ main.main-content svg { max-width: 100%; height: auto; }
   text-align: center;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), 0 0 20px rgba(45, 212, 191, 0.15);
 }
+
+/* ========================================================================== */
+/* FEATURE 3: HIGH-RESOLUTION FRAMABLE FAMILY CHARTER THEMES                 */
+/* ========================================================================== */
+
+.charter-theme-gold {
+  border: 6px double #d4af37 !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.25) !important;
+}
+
+.charter-theme-emerald {
+  border: 6px double #10b981 !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(16, 185, 129, 0.25) !important;
+}
+
+.charter-theme-emerald .charter-corner-emblem {
+  color: #10b981 !important;
+}
+
+.charter-theme-copper {
+  border: 6px double #f97316 !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(249, 115, 22, 0.25) !important;
+}
+
+.charter-theme-copper .charter-corner-emblem {
+  color: #fb923c !important;
+}
+
+.charter-theme-indigo {
+  border: 6px double #38bdf8 !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(56, 189, 248, 0.25) !important;
+}
+
+.charter-theme-indigo .charter-corner-emblem {
+  color: #38bdf8 !important;
+}
+
+/* ========================================================================== */
+/* FEATURE 4: ANCIENT PALM-LEAF MANUSCRIPT (சுவடி வாசிப்பு) DESIGN SYSTEM     */
+/* ========================================================================== */
+
+.palm-leaf-mode-active .scripture-study-section,
+.palm-leaf-mode-active .canonical-card,
+.palm-leaf-mode-active .course-card,
+.palm-leaf-mode-active .illaraviyal-lounge {
+  background: linear-gradient(90deg, #18120b 0%, #261c12 50%, #18120b 100%) !important;
+  border: 2px solid #855829 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), inset 0 0 40px rgba(0, 0, 0, 0.5) !important;
+  color: #faebd7 !important;
+  position: relative;
+}
+
+.palm-leaf-mode-active .tamil,
+.palm-leaf-mode-active .verse-quote,
+.palm-leaf-mode-active .vedic-verse-box {
+  font-family: 'Georgia', 'Palatino', serif !important;
+  color: #fef3c7 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.03em;
+}
+
+/* Punch-hole Cord markers on left and right */
+.palm-leaf-mode-active .scripture-study-section::before,
+.palm-leaf-mode-active .course-card::before {
+  content: "○ 🧵";
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  font-size: 1.1rem;
+  color: #b45309;
+  opacity: 0.85;
+}
+
+.palm-leaf-mode-active .scripture-study-section::after,
+.palm-leaf-mode-active .course-card::after {
+  content: "🧵 ○";
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  font-size: 1.1rem;
+  color: #b45309;
+  opacity: 0.85;
+}
+
+/* ========================================================================== */
+/* FEATURE 6: GURU AUDIO SPEECH RECITATION BUTTON                             */
+/* ========================================================================== */
+
+.lesson-speech-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #38bdf8;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lesson-speech-btn:hover {
+  background: rgba(56, 189, 248, 0.25);
+  transform: translateY(-1px);
+}
+
+.lesson-speech-btn.speaking {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.5);
+  color: #f87171;
+  animation: pulseSpeaking 1.5s infinite;
+}
+
+@keyframes pulseSpeaking {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+

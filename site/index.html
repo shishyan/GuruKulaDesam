@@ -6,6 +6,7 @@
   <title>குரு குல ஆசிரமம் (Guru Kula Ashram) — தொன்மையான வாழ்வியல் வித்யாபீடம்</title>
   <meta name="description" content="ஆலமரத்தடி ஆசிரம போதனை மரபு: ஸ்ரவணம் (கேட்டல்), மனனம் (சிந்தித்தல்), மற்றும் உன்னத இல்லற தர்மத்தில் வாழ்ந்து காட்டுதல். வேத, சைவ, திருக்குறள் நெறிகளின் உலகளாவிய வித்யாபீடம்.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body class="has-left-strip theme-cosmic">
 
@@ -304,41 +305,58 @@
             ஆசிரம தினசரி காலச்சக்கரம் (Ashram Daily Dinacharya)
           </h2>
           <p style="color: #94a3b8; font-size: 0.92rem; margin: 0;">
-            இயற்கையோடும் தர்மத்தோடும் இயைந்து வாழும் தொன்மையான 4 யாமங்கள்:
+            இயற்கையோடும் தர்மத்தோடும் இயைந்து வாழும் தொன்மையான 4 யாமங்கள் (மணியோசை கேட்க அட்டையைக் கிளிக் செய்க):
           </p>
         </div>
-        <a href="classes.html" class="sheet-btn" style="background: rgba(45, 212, 191, 0.12); border: 1px solid rgba(45, 212, 191, 0.35); color: #2dd4bf; font-weight: 700; padding: 8px 16px; text-decoration: none; border-radius: 8px; font-size: 0.86rem;">
-          முழு வகுப்பு அட்டவணை காண்க ↗
-        </a>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button type="button" id="ashramSoundToggleBtn" onclick="toggleAshramOmDrone()" class="sheet-btn" style="background: rgba(139, 92, 246, 0.18); border: 1px solid rgba(168, 85, 247, 0.45); color: #d8b4fe; font-weight: 700; padding: 8px 16px; border-radius: 8px; font-size: 0.86rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+            🪔 <span>ஓம் நாதம் கேட்க</span>
+          </button>
+          <a href="classes.html" class="sheet-btn" style="background: rgba(45, 212, 191, 0.12); border: 1px solid rgba(45, 212, 191, 0.35); color: #2dd4bf; font-weight: 700; padding: 8px 16px; text-decoration: none; border-radius: 8px; font-size: 0.86rem;">
+            முழு வகுப்பு அட்டவணை காண்க ↗
+          </a>
+        </div>
       </div>
 
       <div class="ashram-dinacharya-timeline">
-        <div class="ashram-yama-card">
-          <div style="font-size: 0.8rem; font-weight: 800; color: #2dd4bf; text-transform: uppercase; margin-bottom: 4px;">யாமம் 1 • 4:30 AM - 6:00 AM</div>
+        <div class="ashram-yama-card" onclick="playYamaChime(0)" style="cursor: pointer;" title="மணி நாதம் கேட்க கிளிக் செய்க">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+            <span style="font-size: 0.8rem; font-weight: 800; color: #2dd4bf; text-transform: uppercase;">யாமம் 1 • 4:30 AM - 6:00 AM</span>
+            <span style="font-size: 0.75rem; color: #2dd4bf; background: rgba(45,212,191,0.15); padding: 2px 8px; border-radius: 10px;">🔔 ஒலி</span>
+          </div>
           <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">🌅 உஷத் காலம் (Brahma Muhurtham)</h4>
           <p style="font-size: 0.84rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
             விடியலில் நீராடல், வெண்ணீறு (திருநீறு) தாரணம், பிராணாயாமம், பஞ்சாட்சர &amp; காயத்ரி ஜபம், நெய்தீபம் ஏற்றி பிரம்ம யக்ஞ சிந்தனை.
           </p>
         </div>
 
-        <div class="ashram-yama-card">
-          <div style="font-size: 0.8rem; font-weight: 800; color: #38bdf8; text-transform: uppercase; margin-bottom: 4px;">யாமம் 2 • 7:00 AM - 12:00 PM</div>
+        <div class="ashram-yama-card" onclick="playYamaChime(1)" style="cursor: pointer;" title="மணி நாதம் கேட்க கிளிக் செய்க">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+            <span style="font-size: 0.8rem; font-weight: 800; color: #38bdf8; text-transform: uppercase;">யாமம் 2 • 7:00 AM - 12:00 PM</span>
+            <span style="font-size: 0.75rem; color: #38bdf8; background: rgba(56,189,248,0.15); padding: 2px 8px; border-radius: 10px;">🔔 ஒலி</span>
+          </div>
           <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">☀️ வித்யா காலம் (Purvahnam)</h4>
           <p style="font-size: 0.84rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
             ஆலமரத்தடி திருமுறை &amp; குறள் ஓதுதல், பனை ஓலைச் சுவடிப் பாடம், வானியல், கணிதம், சித்த மருத்துவம் மற்றும் தத்துவ உசாவுதல்.
           </p>
         </div>
 
-        <div class="ashram-yama-card">
-          <div style="font-size: 0.8rem; font-weight: 800; color: #10b981; text-transform: uppercase; margin-bottom: 4px;">யாமம் 3 • 12:00 PM - 3:30 PM</div>
+        <div class="ashram-yama-card" onclick="playYamaChime(2)" style="cursor: pointer;" title="மணி நாதம் கேட்க கிளிக் செய்க">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+            <span style="font-size: 0.8rem; font-weight: 800; color: #10b981; text-transform: uppercase;">யாமம் 3 • 12:00 PM - 3:30 PM</span>
+            <span style="font-size: 0.75rem; color: #10b981; background: rgba(16,185,129,0.15); padding: 2px 8px; border-radius: 10px;">🔔 ஒலி</span>
+          </div>
           <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">🐄 சேவா காலம் (Madhyahnam)</h4>
           <p style="font-size: 0.84rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
             ஆசிரம கோசாலைப் பசுக்களுக்குப் புல் வழங்குதல் (கோ சேவை), அதிதி விருந்தோம்பல், மூலிகைத் தோட்டம், கைவினைப் பயிற்சி.
           </p>
         </div>
 
-        <div class="ashram-yama-card">
-          <div style="font-size: 0.8rem; font-weight: 800; color: #c084fc; text-transform: uppercase; margin-bottom: 4px;">யாமம் 4 • 5:30 PM - 8:30 PM</div>
+        <div class="ashram-yama-card" onclick="playYamaChime(3)" style="cursor: pointer;" title="மணி நாதம் கேட்க கிளிக் செய்க">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+            <span style="font-size: 0.8rem; font-weight: 800; color: #c084fc; text-transform: uppercase;">யாமம் 4 • 5:30 PM - 8:30 PM</span>
+            <span style="font-size: 0.75rem; color: #c084fc; background: rgba(192,132,252,0.15); padding: 2px 8px; border-radius: 10px;">🔔 ஒலி</span>
+          </div>
           <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">🔔 சந்தியா காலம் (Sayahnam)</h4>
           <p style="font-size: 0.84rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
             சாந்திகால தீபாராதனை, 12 திருமுறை இன்னிசைப் பதிகங்கள், இரவு தத்துவ சிந்தனை, குடும்ப நல்லிணக்க சத்சங்கம்.
