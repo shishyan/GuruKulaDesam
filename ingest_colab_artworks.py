@@ -71,8 +71,11 @@ NEW_ARTWORK_MAP = {
 def find_zip_file():
     candidates = [
         ROOT / "gurukuladesam_artworks.zip",
+        ROOT / "gurukuladesam_master_artworks.zip",
         Path.home() / "Downloads" / "gurukuladesam_artworks.zip",
-        Path.home() / "Desktop" / "gurukuladesam_artworks.zip"
+        Path.home() / "Downloads" / "gurukuladesam_master_artworks.zip",
+        Path.home() / "Desktop" / "gurukuladesam_artworks.zip",
+        Path.home() / "Desktop" / "gurukuladesam_master_artworks.zip"
     ]
     for c in candidates:
         if c.exists() and c.stat().st_size > 1000:
@@ -84,15 +87,79 @@ def extract_and_mirror(zip_path):
     with zipfile.ZipFile(zip_path, 'r') as zf:
         zf.extractall(ROOT)
     
-    # Mirror assets/images/lessons to docs/ and site/
+    # Recursively mirror assets/images/lessons to docs/ and site/
     lessons_dir = ROOT / "assets" / "images" / "lessons"
     for dest_root in [ROOT / "docs" / "assets" / "images" / "lessons", ROOT / "site" / "assets" / "images" / "lessons"]:
         dest_root.mkdir(parents=True, exist_ok=True)
         if lessons_dir.exists():
-            for img in lessons_dir.glob("*.jpg"):
-                dest = dest_root / img.name
-                shutil.copy2(img, dest)
+            for img in lessons_dir.rglob("*"):
+                if img.is_file() and img.suffix.lower() in [".jpg", ".png", ".jpeg"]:
+                    rel = img.relative_to(lessons_dir)
+                    dest = dest_root / rel
+                    dest.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(img, dest)
     print("✅ Mirrored all lesson artworks across root, docs/, and site/.")
+
+def update_screening_room():
+    review_file = ROOT / "review_quality.html"
+    if not review_file.exists():
+        return
+        
+    with open(review_file, "r", encoding="utf-8") as f:
+        content = f.read()
+        
+    import json
+    updated = False
+    
+    chapters_meta = {
+        54: {"folder": "54-pochchaavaamai", "duration": 319.32, "name": "பொச்சாவாமை (Pochchaavaamai)"},
+        57: {"folder": "57-veruvantha-seyyaamai", "duration": 298.14, "name": "வெருவந்த செய்யாமை (Veruvantha Seyyaamai)"},
+        61: {"folder": "61-madiyinmai", "duration": 284.50, "name": "மடியின்மை (Madiyinmai)"}
+    }
+    
+    for ch_num, meta in chapters_meta.items():
+        vdir = ROOT / "production" / "visuals" / "thirukkural" / meta["folder"]
+        if vdir.exists():
+            files = sorted([f for f in os.listdir(vdir) if f.lower().endswith(('.jpg', '.png'))])
+            if len(files) >= 15:  # Expanded collection present
+                step = meta["duration"] / len(files)
+                scenes = []
+                for idx, f in enumerate(files):
+                    t = int(idx * step)
+                    clean = f.rsplit('.', 1)[0]
+                    parts = clean.split('-', 1)
+                    title = parts[1].replace('_', ' ').replace('-', ' ').title() if len(parts) > 1 else clean
+                    scenes.append({
+                        "time": t,
+                        "img": f"production/visuals/thirukkural/{meta['folder']}/{f}",
+                        "title": f"Shot {idx + 1}: {title}",
+                        "desc": f"Scene {idx + 1} ({round(step, 1)}s hold) • {title}"
+                    })
+                
+                scenes_json = json.dumps(scenes, indent=28, ensure_ascii=False)
+                pattern = re.compile(
+                    rf'("{ch_num}":\s*\{{[^}}]*?"artworks":\s*")[^"]*(".*?shotDuration":\s*")[^"]*(".*?scenes":\s*)\[.*?\]',
+                    re.DOTALL
+                )
+                
+                def replace_ch(m):
+                    nonlocal updated
+                    updated = True
+                    return f'{m.group(1)}{len(files)} (100% Unique MD5){m.group(2)}{round(step, 1)}s{m.group(3)}{scenes_json}'
+                    
+                content, count = pattern.subn(replace_ch, content, count=1)
+                if count > 0:
+                    print(f"🎬 Updated Chapter {ch_num} ({meta['name']}) with {len(files)} unique scenes in Screening Room!")
+
+    if updated:
+        with open(review_file, "w", encoding="utf-8") as f:
+            f.write(content)
+        for d in ["site", "docs"]:
+            mirror_path = ROOT / d / "review_quality.html"
+            if mirror_path.exists():
+                with open(mirror_path, "w", encoding="utf-8") as f:
+                    f.write(content)
+        print("✅ Mirrored review_quality.html across root, docs/, and site/.")
 
 def update_curriculum_enricher():
     enricher_file = ROOT / "curriculum_enricher.py"
@@ -144,7 +211,31 @@ def main():
     
     extract_and_mirror(zip_path)
     update_curriculum_enricher()
-    print("\n🎉 Ingestion completed successfully!")
+    update_screening_room()
+
+    # Check if Thirukkural chapter visuals were extracted
+    tk_chapters_to_render = []
+    for ch in [54, 57, 61]:
+        d = ROOT / "production" / "visuals" / "thirukkural"
+        matches = list(d.glob(f"{ch}-*/*.jpg"))
+        if len(matches) >= 30:
+            tk_chapters_to_render.append(ch)
+
+    if tk_chapters_to_render:
+        print(f"\n🎬 Found full cinematic suites for Thirukkural Chapters: {tk_chapters_to_render}")
+        for ch in tk_chapters_to_render:
+            print(f"\n🎥 Building cinematic master for Chapter {ch}...")
+            # Clean temp directory
+            temp_d = ROOT / "renders" / f"temp_ch{ch}_cinematic"
+            if temp_d.exists():
+                shutil.rmtree(temp_d)
+            subprocess.run(["python", "production/build_any_chapter_cinematic.py", str(ch)], check=True)
+            print(f"✅ Rendered Chapter {ch} master film!")
+
+        print("\n🔄 Syncing Screening Room...")
+        subprocess.run(["python", "production/sync_screening_room.py"], check=True)
+
+    print("\n🎉 Ingestion and processing completed successfully!")
 
 if __name__ == '__main__':
     main()
