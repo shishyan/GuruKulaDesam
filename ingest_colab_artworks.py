@@ -3,14 +3,20 @@
 Guru Kula Desam - Colab Artworks Ingestion & Tri-Folder Mirroring Utility
 Extracts `gurukuladesam_artworks.zip` generated from Google Colab,
 mirrors all lesson images across ./, docs/, and site/,
-updates curriculum_enricher.py, and rebuilds all grade coursebooks.
+updates curriculum_enricher.py with the new artworks,
+updates review_quality.html if Thirukkural visuals are added,
+and rebuilds all grade coursebooks.
 """
 
+import sys
 import os
+import re
 import shutil
 import zipfile
 import subprocess
 from pathlib import Path
+
+sys.stdout.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parent
 
@@ -93,33 +99,47 @@ def update_curriculum_enricher():
     with open(enricher_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    updated = False
+    modified = False
     for (g, u), data in NEW_ARTWORK_MAP.items():
-        img_name = Path(data["image"]).name
-        actual_img = ROOT / data["image"]
+        img_path = data["image"]
+        new_caption = data["caption"]
+        actual_img = ROOT / img_path
+        
         if actual_img.exists():
-            # Check if curriculum_enricher has this image mapped
-            old_pattern = f'({g}, {u}):'
-            if old_pattern in content:
-                print(f"Updating Unit ({g}, {u}) with {img_name}")
-                # We can perform replacement if not already using this image
-                if img_name not in content:
-                    # Replace hero_image for this unit block
-                    updated = True
+            # Regex pattern for this unit's block in UNIT_VISUAL_MAP
+            # e.g., (8, 4): { ... "hero_image": "...", "hero_caption": "..." }
+            pattern = re.compile(
+                rf'(\({g},\s*{u}\):\s*\{{[^}}]*?"hero_image":\s*")[^"]*(".*?hero_caption":\s*")[^"]*(")',
+                re.DOTALL
+            )
+            
+            def replace_unit(match):
+                nonlocal modified
+                modified = True
+                return f'{match.group(1)}{img_path}{match.group(2)}{new_caption}{match.group(3)}'
+                
+            content, count = pattern.subn(replace_unit, content, count=1)
+            if count > 0:
+                print(f"✅ Mapped Unit ({g}, {u}) -> {img_path}")
+            else:
+                print(f"⚠️ Could not find exact pattern for Unit ({g}, {u})")
 
-    if updated:
+    if modified:
+        with open(enricher_file, "w", encoding="utf-8") as f:
+            f.write(content)
+        print("✅ Saved updated curriculum_enricher.py")
+        
         # Re-run coursebook builder
         print("🔨 Rebuilding all grade coursebooks...")
         subprocess.run(["python", "build_all_tharam_curriculum.py"], check=True)
-        print("✅ All 11 coursebooks rebuilt successfully!")
+        print("✅ All 11 coursebooks rebuilt successfully across root, docs/, and site/!")
 
 def main():
     print("=== Guru Kula Desam Artworks Ingestion Utility ===")
     zip_path = find_zip_file()
     if not zip_path:
         print("❌ Could not find 'gurukuladesam_artworks.zip'.")
-        print("   Please ensure you have run the Colab notebook and placed the downloaded zip file")
-        print("   in this folder, in your Downloads folder, or on your Desktop.")
+        print("   Please ensure you have placed the downloaded zip file in Downloads or Desktop.")
         return
     
     extract_and_mirror(zip_path)

@@ -215,8 +215,8 @@ UNIT_VISUAL_MAP = {
     },
     (8, 4): {
         "diagram_key": "vedas_tree",
-        "hero_image": "assets/images/lessons/harvesting_family_dharma.jpg",
-        "hero_caption": "வேத ஆசிரம தர்மங்கள் — இல்லற தர்மமே மற்ற அனைத்து ஆசிரமங்களுக்கும் தூணாக அமைகிறது"
+        "hero_image": "assets/images/lessons/grade8_chatur_ashrama.jpg",
+        "hero_caption": "சதுர் ஆசிரமங்கள் — இல்லற தர்மமே மற்ற அனைத்து ஆசிரமங்களுக்கும் தூணாக அமையும் உன்னத மாண்பு"
     },
     (8, 5): {
         "diagram_key": "vallalar_jyothi",
@@ -227,18 +227,18 @@ UNIT_VISUAL_MAP = {
     # Grade 9 (இளைஞர் பருவம் - சான்றாண்மையும் சமூக மாண்பும்)
     (9, 1): {
         "diagram_key": "agamas_shastras",
-        "hero_image": "assets/images/lessons/sage_sacred_scripture.jpg",
-        "hero_caption": "இருபத்தெட்டு சைவ ஆகமங்கள் — சரியை, கிரியை, யோகம், ஞான பாதங்கள்"
+        "hero_image": "assets/images/lessons/grade9_saiva_agamas.jpg",
+        "hero_caption": "இருபத்தெட்டு சைவ ஆகமங்கள் — சரியை, கிரியை, யோகம், ஞானம் நல்கும் திருக்கோயில் ஆகம சாஸ்திரம்"
     },
     (9, 2): {
         "diagram_key": "temple",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "உடலே ஆலயம் — மனித உடலியலும் திருக்கோயில் அமைப்பும் ஒன்றெனக் காட்டும் தத்துவம்"
+        "hero_image": "assets/images/lessons/grade9_body_is_temple.jpg",
+        "hero_caption": "உடலே ஆலயம் — 'உள்ளம் பெருங்கோயில் ஊனுடம்பு ஆலயம்' எனும் திருமந்திர மெய்ஞ்ஞானத் தத்துவம்"
     },
     (9, 3): {
         "diagram_key": "vedas_tree",
-        "hero_image": "assets/images/lessons/disciples_under_sacred_tree.jpg",
-        "hero_caption": "பாரதத்தின் ஷட்தர்சனங்கள் — நியாயம், வைசேஷிகம், சாங்கியம், யோகம், மீமாம்சம், வேதாந்தம்"
+        "hero_image": "assets/images/lessons/grade9_shaddarshanas_dialogue.jpg",
+        "hero_caption": "பாரதத்தின் ஷட்தர்சனங்கள் — நியாயம், வைசேஷிகம், சாங்கியம், யோகம், மீமாம்சம், வேதாந்த தரிசன உரையாடல்"
     },
     (9, 4): {
         "diagram_key": "ashtanga_yoga",
@@ -258,8 +258,8 @@ UNIT_VISUAL_MAP = {
     # Grade 10
     (10, 1): {
         "diagram_key": "pati_pasu_pasam",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "பதி பசு பாசம் — சைவ சித்தாந்தத்தின் முழுமை பெற்ற ஆன்ம தத்துவ விளக்கம்"
+        "hero_image": "assets/images/lessons/grade10_pati_pasu_pasam.jpg",
+        "hero_caption": "பதி பசு பாசம் — பதிப் பரம்பொருளின் பேரருளால் ஆணவம், கன்மம், மாயை நீங்கி ஆன்மா முக்தி பெறுதல்"
     },
     (10, 2): {
         "diagram_key": "naalvar",
@@ -281,8 +281,8 @@ UNIT_VISUAL_MAP = {
     },
     (10, 4): {
         "diagram_key": "panchakshara",
-        "hero_image": "assets/images/lessons/nataraja_cosmic_dance.jpg",
-        "hero_caption": "சைவ சமய மஹோத்ஸவங்கள் — சிவராத்திரி, திருவாதிரை, கந்த சஷ்டி விழிப்புணர்வுகள்"
+        "hero_image": "assets/images/lessons/grade10_temple_chariot_festival.jpg",
+        "hero_caption": "திருக்கோயில் தேர்த் திருவிழா — ஆயிரக்கணக்கான அடியார்கள் ஒருமனப்பட்டு வடம் பிடிக்கும் பக்திப் பெருவிழா"
     },
     (10, 5): {
         "diagram_key": "dinacharya",
@@ -302,8 +302,8 @@ UNIT_VISUAL_MAP = {
     },
     (11, 2): {
         "diagram_key": "chakra_system",
-        "hero_image": "assets/images/lessons/royal_administration_dharma.jpg",
-        "hero_caption": "தெரிந்து வினையாடல் — கடோபநிடத நசிகேதன் விவேகமும் நிர்வாக நெறிமுறைகளும்",
+        "hero_image": "assets/images/lessons/grade11_nachiketas_yama.jpg",
+        "hero_caption": "கதா உபநிடதம் — இளம் நசிகேதன் எமதர்மனிடம் சாகா வரம் மற்றும் ஆத்ம ஞானம் உசாவும் மெய்யறிவு",
         "video_clip": "assets/videos/adhikaram_52_therinthu_vinaiyaadal.mp4",
         "video_title": "அதிகாரம் 52: தெரிந்து வினையாடல் — முழுமையான சினிமா பாடல் திரைப்படம் (6 நிமிடங்கள்)",
         "video_note": "அறிவும், ஆற்றலும், பொறுமையும் கொண்டோரைத் தேர்ந்தெடுத்து நற்பணிகளை வளர்க்கும் மேலாண்மை.",
@@ -320,8 +320,8 @@ UNIT_VISUAL_MAP = {
     },
     (11, 4): {
         "diagram_key": "chakra_system",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "பஞ்ச கோச விவேகம் — அன்னமய, பிராணமய, மனோமய, விஞ்ஞானமய, ஆனந்தமய கோசங்கள்"
+        "hero_image": "assets/images/lessons/grade11_pancha_koshas.jpg",
+        "hero_caption": "பஞ்ச கோசங்கள் — அன்னமய, பிராணமய, மனோமய, விஞ்ஞானமய, ஆனந்தமய கோசங்கள் கடந்த ஆன்ம நிலை"
     },
     (11, 5): {
         "diagram_key": "dinacharya",
@@ -332,13 +332,13 @@ UNIT_VISUAL_MAP = {
     # Grade 12 (உன்னத இல்லறம் வழி முக்தி / நிர்வாணம்)
     (12, 1): {
         "diagram_key": "saiva_siddhanta_36_tattvas",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "ஜீவன் முக்தி & விதேக முக்தி — 36 தத்துவங்களையும் கடந்து சிவத்தோடு இரண்டறக் கலத்தல்"
+        "hero_image": "assets/images/lessons/grade12_jivanmukti_36tattvas.jpg",
+        "hero_caption": "ஜீவன்முக்தி & 36 தத்துவங்கள் — முப்பத்தாறு தத்துவங்களையும் கடந்து உடலோடு வாழும் போதே அடையும் சிவானந்தப் பேறு"
     },
     (12, 2): {
         "diagram_key": "ashtanga_yoga",
-        "hero_image": "assets/images/lessons/western_ghats_hermitage.jpg",
-        "hero_caption": "தாயுமானவரும் திருமந்திரமும் — 'எல்லாரும் இன்புற்றிருக்க நினைப்பதுவே யல்லாமல் வேறொன்றறியேன் பராபரமே'",
+        "hero_image": "assets/images/lessons/grade12_thayumanavar_universal.jpg",
+        "hero_caption": "தாயுமானவ சுவாமிகள் — 'எல்லாரும் இன்புற்றிருக்க நினைப்பதுவே யல்லாமல் வேறொன்றறியேன் பராபரமே'",
         "video_clip": "assets/videos/adhikaram_27_thavam.mp4",
         "video_title": "அதிகாரம் 27: தவம் — முழுமையான சினிமா தியானத் திரைப்படம் (4.5 நிமிடங்கள்)",
         "video_note": "தவமும் தவம் உடையார்க்கு ஆகும் — தன்னலமற்ற தியாகத்தினால் பிரபஞ்ச உண்மையைக் காணும் உயரிய நிலை.",
@@ -360,8 +360,8 @@ UNIT_VISUAL_MAP = {
     },
     (12, 5): {
         "diagram_key": "dinacharya",
-        "hero_image": "assets/images/lessons/harvesting_family_dharma.jpg",
-        "hero_caption": "உன்னத இல்லறம் வழி முக்தி — 'அறத்தாற்றின் இல்வாழ்க்கை ஆற்றின் புறத்தாற்றின் போஒய்ப் பெறுவ தெவன்?' (குறள் 46)",
+        "hero_image": "assets/images/lessons/grade12_grihastha_nirvana.jpg",
+        "hero_caption": "இல்லற தர்மமே அதிவேக முக்தி — அறவழியில் குடும்பம் நடத்தி உலகிற்கு வழிகாட்டும் சான்றோன் பெருநெறி",
         "video_clip": "assets/videos/adhikaram_26_pulaal_unnaamai.mp4",
         "video_title": "அதிகாரம் 26: புலால் உண்ணாமை & ஜீவகாருண்யம் — இல்லற முக்தி சினிமா படம்",
         "video_note": "எவ்வுயிர்க்கும் அன்பு செய்து, உன்னத இல்லறத்தை அறவழியில் நடத்துவதே அதிவேக முக்தி!",
