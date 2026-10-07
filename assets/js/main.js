@@ -513,7 +513,7 @@ const DEFAULT_USER_PREFS = {
   name: 'அன்பான சாதகர்',
   tier: 'tier1',
   avatar: '👤',
-  theme: 'gold',
+  theme: 'cosmic',
   fontStyle: 'mukta',
   fontScale: 1.0,
   navLayout: 'sidebar', // 'sidebar' (default), 'topbar' (classic), 'hybrid' (both)
@@ -533,6 +533,7 @@ function loadUserPreferences() {
     const saved = localStorage.getItem('GURUKULA_USER_PREFS');
     if (saved) {
       userPrefs = { ...DEFAULT_USER_PREFS, ...JSON.parse(saved) };
+      if (userPrefs.theme === 'gold' || !userPrefs.theme) userPrefs.theme = 'cosmic';
     }
   } catch (e) {
     console.warn('Failed to load user preferences:', e);
@@ -564,9 +565,10 @@ function saveUserPreferences() {
 
 function applyUserPreferences() {
   // Theme
-  document.body.classList.remove('theme-midnight', 'theme-amoled');
+  document.body.classList.remove('theme-cosmic', 'theme-midnight', 'theme-amoled');
   if (userPrefs.theme === 'midnight') document.body.classList.add('theme-midnight');
-  if (userPrefs.theme === 'amoled') document.body.classList.add('theme-amoled');
+  else if (userPrefs.theme === 'amoled') document.body.classList.add('theme-amoled');
+  else document.body.classList.add('theme-cosmic');
 
   // Font Style
   document.body.classList.remove('font-noto', 'font-mukta');
@@ -706,8 +708,8 @@ function changeTheme(themeName) {
 }
 
 function cycleTheme() {
-  const themes = ['gold', 'midnight', 'amoled'];
-  const curIdx = themes.indexOf(userPrefs.theme || 'gold');
+  const themes = ['cosmic', 'midnight', 'amoled'];
+  const curIdx = themes.indexOf(userPrefs.theme || 'cosmic');
   const nextTheme = themes[(curIdx + 1) % themes.length];
   changeTheme(nextTheme);
 }
@@ -1648,12 +1650,12 @@ function mountAppShell() {
             <label class="settings-label">🎨 வண்ணக் கருப்பொருள் (Theme Appearance):</label>
             <div class="radio-pill-group">
               <label class="radio-pill">
-                <input type="radio" name="themeChoice" value="gold" onchange="changeTheme('gold')">
-                <span>✨ தங்கக் கருமை (Cosmic Gold - Default)</span>
+                <input type="radio" name="themeChoice" value="cosmic" onchange="changeTheme('cosmic')">
+                <span>🌌 தர்மப் பேரொளி (Teal-Violet-Blue-Green - Default)</span>
               </label>
               <label class="radio-pill">
                 <input type="radio" name="themeChoice" value="midnight" onchange="changeTheme('midnight')">
-                <span>🌌 நள்ளிரவு நீலம் (Midnight Navy)</span>
+                <span>🌊 ஆழ்கடல் நீலம் (Midnight Ocean)</span>
               </label>
               <label class="radio-pill">
                 <input type="radio" name="themeChoice" value="amoled" onchange="changeTheme('amoled')">

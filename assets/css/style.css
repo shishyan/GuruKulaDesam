@@ -2,32 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --bg-dark: #07080b;
-  --bg-surface: #0f1218;
-  --bg-card: rgba(19, 23, 31, 0.8);
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-gold: rgba(212, 175, 55, 0.25);
-  --border-gold-hover: rgba(212, 175, 55, 0.55);
-  --gold: #d4af37;
-  --gold-bright: #ffd700;
-  --gold-soft: #fbf2d3;
-  --amber: #e09f3e;
-  --text-main: #f3f5f8;
-  --text-muted: #9aa2b1;
+  --bg-dark: #040d1a;
+  --bg-surface: #071526;
+  --bg-card: rgba(10, 23, 40, 0.82);
+  --border-subtle: rgba(56, 189, 248, 0.14);
+  --border-gold: rgba(45, 212, 191, 0.32);
+  --border-gold-hover: rgba(56, 189, 248, 0.65);
+  --teal: #14b8a6;
+  --teal-bright: #2dd4bf;
+  --teal-glow: rgba(20, 184, 166, 0.35);
+  --violet: #8b5cf6;
+  --violet-deep: #7c3aed;
+  --violet-glow: rgba(139, 92, 246, 0.35);
+  --blue: #0ea5e9;
+  --blue-cyan: #38bdf8;
+  --blue-glow: rgba(14, 165, 233, 0.30);
+  --green: #10b981;
+  --green-emerald: #059669;
+  --green-glow: rgba(16, 185, 129, 0.30);
+  --gold: #2dd4bf;
+  --gold-bright: #38bdf8;
+  --gold-soft: #a7f3d0;
+  --amber: #06b6d4;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
   --badge-film: #e63946;
-  --badge-audio: #2a9d8f;
-  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.45);
-  --shadow-gold: 0 0 25px rgba(212, 175, 55, 0.2);
+  --badge-audio: #0d9488;
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.55), 0 0 18px rgba(20, 184, 166, 0.08);
+  --shadow-gold: 0 0 25px rgba(45, 212, 191, 0.35);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   font-family: 'Outfit', 'Mukta Malar', sans-serif;
-  background-color: #07080b;
+  background-color: #040d1a;
   background-image: 
-    linear-gradient(180deg, rgba(7, 9, 13, 0.72) 0%, rgba(7, 9, 13, 0.82) 35%, rgba(7, 9, 13, 0.90) 100%),
-    url('../images/western-ghats-bg.jpg');
+    radial-gradient(ellipse 85% 55% at 12% -8%, rgba(20, 184, 166, 0.38) 0%, transparent 62%),
+    radial-gradient(ellipse 75% 60% at 88% 8%, rgba(139, 92, 246, 0.35) 0%, transparent 64%),
+    radial-gradient(ellipse 85% 50% at 50% 48%, rgba(14, 165, 233, 0.25) 0%, transparent 68%),
+    radial-gradient(ellipse 70% 55% at 8% 88%, rgba(16, 185, 129, 0.30) 0%, transparent 62%),
+    radial-gradient(ellipse 80% 60% at 92% 82%, rgba(99, 102, 241, 0.32) 0%, transparent 68%),
+    linear-gradient(180deg, #040d1a 0%, #061526 28%, #081d33 52%, #06192a 78%, #030a14 100%);
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
@@ -3436,15 +3452,41 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Midnight Navy Theme */
+/* Cosmic Teal-Violet-Blue-Green Theme (Default) */
+body.theme-cosmic {
+  --bg-dark: #040d1a;
+  --bg-surface: #071526;
+  --bg-card: rgba(10, 23, 40, 0.82);
+  background-color: #040d1a !important;
+  background-image: 
+    radial-gradient(ellipse 85% 55% at 12% -8%, rgba(20, 184, 166, 0.38) 0%, transparent 62%),
+    radial-gradient(ellipse 75% 60% at 88% 8%, rgba(139, 92, 246, 0.35) 0%, transparent 64%),
+    radial-gradient(ellipse 85% 50% at 50% 48%, rgba(14, 165, 233, 0.25) 0%, transparent 68%),
+    radial-gradient(ellipse 70% 55% at 8% 88%, rgba(16, 185, 129, 0.30) 0%, transparent 62%),
+    radial-gradient(ellipse 80% 60% at 92% 82%, rgba(99, 102, 241, 0.32) 0%, transparent 68%),
+    linear-gradient(180deg, #040d1a 0%, #061526 28%, #081d33 52%, #06192a 78%, #030a14 100%) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Midnight Ocean Theme */
 body.theme-midnight {
-  --bg-dark: #080d1a;
-  --bg-surface: #0e172e;
-  --bg-card: rgba(16, 26, 48, 0.85);
-  --border-gold: rgba(212, 175, 55, 0.3);
-  --border-gold-hover: rgba(255, 215, 0, 0.65);
-  background-color: #080d1a !important;
-  background-image: linear-gradient(180deg, rgba(8, 13, 26, 0.82) 0%, rgba(8, 13, 26, 0.92) 100%), url('../images/western-ghats-bg.jpg') !important;
+  --bg-dark: #051024;
+  --bg-surface: #091a38;
+  --bg-card: rgba(11, 28, 54, 0.85);
+  --border-gold: rgba(56, 189, 248, 0.32);
+  --border-gold-hover: rgba(45, 212, 191, 0.65);
+  background-color: #051024 !important;
+  background-image: 
+    radial-gradient(ellipse 85% 55% at 15% 0%, rgba(20, 184, 166, 0.30) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 85% 15%, rgba(139, 92, 246, 0.28) 0%, transparent 60%),
+    radial-gradient(ellipse 90% 60% at 50% 50%, rgba(14, 165, 233, 0.25) 0%, transparent 65%),
+    radial-gradient(ellipse 75% 55% at 10% 85%, rgba(16, 185, 129, 0.25) 0%, transparent 60%),
+    linear-gradient(180deg, #040c1a 0%, #06162c 50%, #040c18 100%) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
 /* AMOLED Pure Black Theme */
