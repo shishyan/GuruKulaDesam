@@ -23,3 +23,4 @@ for ch in chapters:
     time.sleep(3)
 
 print("🎉 ALL BATCH 3 CHAPTERS PUBLISHED TO YOUTUBE!")
+

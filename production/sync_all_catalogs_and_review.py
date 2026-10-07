@@ -108,6 +108,66 @@ CHAPTER_SPECS = [
         "tab_label": "Vegulaamai • 52 Scenes (6.2s pan) ✔"
     },
     {
+        "ch": 39,
+        "name_ta": "இறைமாட்சி",
+        "name_en": "Iraimaatchi",
+        "sub": "The Greatness of the Sovereign • Master Film",
+        "folder": "39-iraimaatchi",
+        "video": "renders/releases/adhikaram_39_iraimaatchi_cinematic.mp4",
+        "atmo": "Flowers 🌸",
+        "tab_label": "Iraimaatchi • 37 Scenes (6.2s pan) ✔"
+    },
+    {
+        "ch": 40,
+        "name_ta": "கல்வி",
+        "name_en": "Kalvi",
+        "sub": "True Learning & Enlightened Knowledge • Master Film",
+        "folder": "40-kalvi",
+        "video": "renders/releases/adhikaram_40_kalvi_cinematic.mp4",
+        "atmo": "Drizzle 🌧️",
+        "tab_label": "Kalvi • 59 Scenes (6.2s pan) ✔"
+    },
+    {
+        "ch": 42,
+        "name_ta": "கேள்வி",
+        "name_en": "Kelvi",
+        "sub": "The Wisdom of Attentive Listening • Master Film",
+        "folder": "42-kelvi",
+        "video": "renders/releases/adhikaram_42_kelvi_cinematic.mp4",
+        "atmo": "Rain 🌧️",
+        "tab_label": "Kelvi • 41 Scenes (6.2s pan) ✔"
+    },
+    {
+        "ch": 44,
+        "name_ta": "குற்றங்கடிதல்",
+        "name_en": "Kutrangadithal",
+        "sub": "Guarding Against Flaws & Inner Weakness • Master Film",
+        "folder": "44-kutrangadithal",
+        "video": "renders/releases/adhikaram_44_kutrangadithal_cinematic.mp4",
+        "atmo": "Rain 🌧️",
+        "tab_label": "Kutrangadithal • 36 Scenes (6.1s pan) ✔"
+    },
+    {
+        "ch": 45,
+        "name_ta": "பெரியாரைத் துணைக்கோடல்",
+        "name_en": "Periyaaraith Thunaikkodal",
+        "sub": "Securing the Alliance of the Wise • Master Film",
+        "folder": "45-periyaaraith-thunaikkodal",
+        "video": "renders/releases/adhikaram_45_periyaaraith_thunaikkodal_cinematic.mp4",
+        "atmo": "Drizzle 🌧️",
+        "tab_label": "Periyaarai • 42 Scenes (6.3s pan) ✔"
+    },
+    {
+        "ch": 46,
+        "name_ta": "சிற்றினஞ்சேராமை",
+        "name_en": "Sitrinanjeraamai",
+        "sub": "Avoiding Base Fellowship & Preserving Purity • Master Film",
+        "folder": "46-sitrinanjeraamai",
+        "video": "renders/releases/adhikaram_46_sitrinanjeraamai_cinematic.mp4",
+        "atmo": "Rain 🌧️",
+        "tab_label": "Sitrinam • 53 Scenes (6.2s pan) ✔"
+    },
+    {
         "ch": 52,
         "name_ta": "தெரிந்து வினையாடல்",
         "name_en": "Therinthu Vinaiyaadal",
@@ -252,10 +312,14 @@ with open(REVIEW_HTML_PATH, "w", encoding="utf-8") as f:
 print(f"✅ review_quality.html synchronized with all {len(CHAPTER_SPECS)} master chapters!")
 
 # Now synchronize site catalogs
-CATALOG_PATH = ROOT / "assets" / "data" / "catalog.json"
-SITE_CATALOG_PATH = ROOT / "site_catalog.json"
+CATALOG_PATHS = [
+    ROOT / "assets" / "data" / "catalog.json",
+    ROOT / "site_catalog.json",
+    ROOT / "docs" / "assets" / "data" / "catalog.json",
+    ROOT / "site" / "assets" / "data" / "catalog.json",
+]
 
-for cat_p in [CATALOG_PATH, SITE_CATALOG_PATH]:
+for cat_p in CATALOG_PATHS:
     if not cat_p.exists():
         continue
     with open(cat_p, "r", encoding="utf-8") as f:

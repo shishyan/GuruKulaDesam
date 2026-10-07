@@ -5,6 +5,7 @@ Render all Batch 3 chapters sequentially:
 """
 
 import sys
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,3 +29,4 @@ if __name__ == "__main__":
         print(f"COMPLETED CHAPTER {ch}: {CHAPTER_REGISTRY[ch]['output']}\n", flush=True)
         
     print("\n🎉 ALL BATCH 3 CHAPTER FILMS RENDERED SUCCESSFULLY!", flush=True)
+

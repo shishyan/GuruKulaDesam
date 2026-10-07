@@ -9,7 +9,7 @@ import os
 import re
 import json
 
-ALL_CHAPTERS = [5, 8, 16, 25, 26, 27, 30, 31, 52, 54, 57, 61]
+ALL_CHAPTERS = [5, 8, 16, 25, 26, 27, 30, 31, 39, 40, 42, 44, 45, 46, 52, 54, 57, 61]
 
 CHAPTER_INFO = {
     5: {
@@ -154,6 +154,114 @@ CHAPTER_INFO = {
         "poster": "assets/images/lessons/mountain_cave_tapas.jpg",
         "youtubeId": "xvkMEdaF7w4",
         "fullDur": "கால அளவு: ~5 நிமிடங்கள் • 1080p HD",
+        "shortDur": "கால அளவு: 40 வினாடிகள் • வேகக் குறும்படம்"
+    },
+    39: {
+        "num": 39,
+        "tabTitle": "அதிகாரம் 39: இறைமாட்சி",
+        "tabSub": "அரசனின் மாண்பும் செங்கோல் நீதியும் (37 காட்சிகள்)",
+        "badge": "அதிகாரம் 39",
+        "cat": "பொருட்பால் • அரசியல்",
+        "title": "இறைமாட்சி (Sovereign Majesty & Royal Excellence)",
+        "desc": "படை, குடி, கூழ், அமைச்சு, நட்பு, அரண் உடைய மன்னனின் கம்பீரமும் தர்ம பரிபாலனமும்.",
+        "verse": '"படைகுடி கூழ்அமைச்சு நட்பரண் ஆறும்<br>உடையான் அரசருள் ஏறு" (குறள் 381)',
+        "meaning": "பொருள்: படை, குடி, உணவு, அமைச்சு, நட்பு, அரண் ஆகிய ஆறு உறுப்புகளையும் உடையவனே அரசர்களுள் சிங்கம் போன்றவன்.",
+        "living": "குடும்பத்திலும் தொழில் நிர்வாகத்திலும் இந்த ஆறு அரண்களையும் பலப்படுத்தி தர்ம நெறியோடு நல்வழி நடத்துதல்.",
+        "fullVideo": "renders/releases/adhikaram_39_iraimaatchi_cinematic.mp4",
+        "shortVideo": "assets/videos/short_39_royalty.mp4",
+        "poster": "production/visuals/thirukkural/39-iraimaatchi/01-n01_six_limbs_of_sovereignty.jpg",
+        "youtubeId": "9nD8x8gbjBg",
+        "fullDur": "கால அளவு: 3.8 நிமிடங்கள் • 1080p HD",
+        "shortDur": "கால அளவு: 40 வினாடிகள் • வேகக் குறும்படம்"
+    },
+    40: {
+        "num": 40,
+        "tabTitle": "அதிகாரம் 40: கல்வி",
+        "tabSub": "கசடறக் கற்கும் ஞான தீபம் (59 காட்சிகள்)",
+        "badge": "அதிகாரம் 40",
+        "cat": "பொருட்பால் • அரசியல் / கல்வி",
+        "title": "கல்வி (Sacred Learning & Enlightened Knowledge)",
+        "desc": "கற்க வேண்டிய நூல்களைக் குற்றமறக் கற்று, கற்ற வழியில் வழுவாது நிற்கும் உன்னத நெறி.",
+        "verse": '"கற்க கசடறக் கற்பவை கற்றபின்<br>நிற்க அதற்குத் தக" (குறள் 391)',
+        "meaning": "பொருள்: கற்கத் தகுந்த நூல்களைக் குற்றமறக் கற்க வேண்டும்; கற்ற பிறகு அந்த அறிவின் நெறியில் வழுவாமல் வாழ வேண்டும்.",
+        "living": "வெறும் பட்டங்களுக்காக அல்லாமல், ஆன்ம சுத்திக்கும் தர்ம வாழ்விற்கும் கல்வியைப் பயின்று நடத்தல்.",
+        "fullVideo": "renders/releases/adhikaram_40_kalvi_cinematic.mp4",
+        "shortVideo": "assets/videos/short_40_learning.mp4",
+        "poster": "production/visuals/thirukkural/40-kalvi/01-n01_mastering_the_palm_leaf_scroll.jpg",
+        "youtubeId": "uadGicFNeqo",
+        "fullDur": "கால அளவு: 6 நிமிடங்கள் • 1080p HD",
+        "shortDur": "கால அளவு: 40 வினாடிகள் • வேகக் குறும்படம்"
+    },
+    42: {
+        "num": 42,
+        "tabTitle": "அதிகாரம் 42: கேள்வி",
+        "tabSub": "சான்றோர் உரை கேட்கும் செவிச்செல்வம் (41 காட்சிகள்)",
+        "badge": "அதிகாரம் 42",
+        "cat": "பொருட்பால் • அரசியல் / கேள்வி",
+        "title": "கேள்வி (The Wisdom of Attentive Listening)",
+        "desc": "சான்றோர்களின் அருள்வாக்கைக் கூர்ந்து கேட்டு மனதில் இருத்தும் தலையாய செல்வப் பேறு.",
+        "verse": '"செல்வத்துள் செல்வம் செவிச்செல்வம் அச்செல்வம்<br>செல்வத்துள் எல்லாம் தலை" (குறள் 411)',
+        "meaning": "பொருள்: செவியால் கேட்டுப் பெறும் அறிவாகிய செல்வமே எல்லாச் செல்வங்களிலும் தலையாய சிறந்த செல்வம் ஆகும்.",
+        "living": "வீண் பேச்சுகளைத் தவிர்த்து, பெரியோர்களின் அறவுரைகளை ஆர்வத்துடன் கேட்டு நடைமுறையில் பின்பற்றுதல்.",
+        "fullVideo": "renders/releases/adhikaram_42_kelvi_cinematic.mp4",
+        "shortVideo": "assets/videos/short_42_listening.mp4",
+        "poster": "production/visuals/thirukkural/42-kelvi/01-n01_listening_to_the_elder_sage.jpg",
+        "youtubeId": "c5OwVOaYsW0",
+        "fullDur": "கால அளவு: 4.2 நிமிடங்கள் • 1080p HD",
+        "shortDur": "கால அளவு: 40 வினாடிகள் • வேகக் குறும்படம்"
+    },
+    44: {
+        "num": 44,
+        "tabTitle": "அதிகாரம் 44: குற்றங்கடிதல்",
+        "tabSub": "குற்றங்களை முளையிலேயே களையும் விவேகம் (36 காட்சிகள்)",
+        "badge": "அதிகாரம் 44",
+        "cat": "பொருட்பால் • அரசியல்",
+        "title": "குற்றங்கடிதல் (Guarding Against Inner Faults)",
+        "desc": "செருக்கு, சினம், சிற்றின்பம் போன்ற குற்றங்களை அறிந்து அவற்றைத் தன்னுள் நுழைய விடாமல் காக்கும் அறம்.",
+        "verse": '"வருமுன்னர்க் காவாதான் வாழ்க்கை எரிமுன்னர்<br>வைத்தூறு போலக் கெடும்" (குறள் 435)',
+        "meaning": "பொருள்: குற்றம் வருவதற்கு முன்பே அறிந்து காத்துக் கொள்ளாதவனுடைய வாழ்க்கை, நெருப்பின் முன் வைக்கப்பட்ட வைக்கோல் போர் போல அழிந்துவிடும்.",
+        "living": "தவறுகள் சிறியதாக இருக்கும்போதே திருத்திக் கொண்டு, தூய தர்ம வழியில் விழிப்புணர்வுடன் இருத்தல்.",
+        "fullVideo": "renders/releases/adhikaram_44_kutrangadithal_cinematic.mp4",
+        "shortVideo": "assets/videos/short_44_faults.mp4",
+        "poster": "production/visuals/thirukkural/44-kutrangadithal/01-n01_pride_wrath_lust_destroyers.jpg",
+        "youtubeId": "zzJZkyX1GL4",
+        "fullDur": "கால அளவு: 3.7 நிமிடங்கள் • 1080p HD",
+        "shortDur": "கால அளவு: 40 வினாடிகள் • வேகக் குறும்படம்"
+    },
+    45: {
+        "num": 45,
+        "tabTitle": "அதிகாரம் 45: பெரியாரைத் துணைக்கோடல்",
+        "tabSub": "ஞான முதியோரின் உன்னத துணை (42 காட்சிகள்)",
+        "badge": "அதிகாரம் 45",
+        "cat": "பொருட்பால் • அரசியல்",
+        "title": "பெரியாரைத் துணைக்கோடல் (Securing Wise Counsel)",
+        "desc": "அறிவிலும் ஒழுக்கத்திலும் சிறந்த பெரியோரை நட்பாகவும் ஆசானாகவும் கொண்டு போற்றும் பாதுகாப்பு.",
+        "verse": '"இடிப்பாரை இல்லாத ஏமரா மன்னன்<br>கெடுப்பார் இலானும் கெடும்" (குறள் 448)',
+        "meaning": "பொருள்: தவறு கண்டபோது கடிந்துரைக்கும் பெரியோரின் துணை இல்லாத தலைவன், அவனைக் கெடுக்க பகைவர் இல்லாவிட்டாலும் தானே கெடுவான்.",
+        "living": "நல்வழி காட்டும் ஆன்மீக குருவையும் ஒழுக்கசீலர்களையும் வாழ்க்கைத் துணையாக ஏற்று நடத்தல்.",
+        "fullVideo": "renders/releases/adhikaram_45_periyaaraith_thunaikkodal_cinematic.mp4",
+        "shortVideo": "assets/videos/short_45_counsel.mp4",
+        "poster": "production/visuals/thirukkural/45-periyaaraith-thunaikkodal/01-n01_monarch_inviting_venerable_sages.jpg",
+        "youtubeId": "aZ830iKkqBs",
+        "fullDur": "கால அளவு: 4.4 நிமிடங்கள் • 1080p HD",
+        "shortDur": "கால அளவு: 40 வினாடிகள் • வேகக் குறும்படம்"
+    },
+    46: {
+        "num": 46,
+        "tabTitle": "அதிகாரம் 46: சிற்றினஞ்சேராமை",
+        "tabSub": "தீயவர் சேர்க்கையை விலக்கும் தூய்மை (53 காட்சிகள்)",
+        "badge": "அதிகாரம் 46",
+        "cat": "பொருட்பால் • அரசியல்",
+        "title": "சிற்றினஞ்சேராமை (Avoiding Base Fellowship)",
+        "desc": "அற்ப குணமும் தீய எண்ணமும் உடைய கீழ்மக்களின் சேர்க்கையை அஞ்சி விலகி, மேன்மக்களோடு உறவாடும் தூய பண்பு.",
+        "verse": '"நிலத்தியல்பான் நீர்திரிந் தற்றாகும் மாந்தர்க்கு<br>இனத்தியல்ப தாகும் அறிவு" (குறள் 452)',
+        "meaning": "பொருள்: நிலத்தின் தன்மையால் நீர் தன் குணம் மாறுவது போல, சேரும் கூட்டத்தின் தன்மையால் மனிதனின் அறிவு மாறும்.",
+        "living": "சத்சங்கத்தை நாடி, தீய நண்பர்களைத் தவிர்த்து, தூய ஒழுக்கமும் ஞானமும் கொண்டவர்களோடு இணைந்திருத்தல்.",
+        "fullVideo": "renders/releases/adhikaram_46_sitrinanjeraamai_cinematic.mp4",
+        "shortVideo": "assets/videos/short_46_company.mp4",
+        "poster": "production/visuals/thirukkural/46-sitrinanjeraamai/01-n01_noble_soul_turning_from_base_crowd.jpg",
+        "youtubeId": "53AcrjC3imY",
+        "fullDur": "கால அளவு: 5.5 நிமிடங்கள் • 1080p HD",
         "shortDur": "கால அளவு: 40 வினாடிகள் • வேகக் குறும்படம்"
     },
     52: {
