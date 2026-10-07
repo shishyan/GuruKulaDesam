@@ -192,7 +192,7 @@ def build_grade_coursebook(g, data):
             """
         vocab_html = f"""
         <div id="u{u['num']}-vocab" class="vocab-section">
-          <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
             <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
           </h4>
           <div class="vocab-grid">
@@ -245,7 +245,7 @@ def build_grade_coursebook(g, data):
             """
         quiz_section_html = f"""
         <div id="u{u['num']}-quiz" class="quiz-section">
-          <h4 style="color:var(--gold-bright); font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
             <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
           </h4>
           <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
@@ -299,7 +299,7 @@ def build_grade_coursebook(g, data):
                 <div class="lesson-main-title" style="margin-top:12px;">{u['title']}</div>
                 <div class="lesson-sub-title">{u['sub']}</div>
               </div>
-              <div style="color:var(--gold-bright); font-size:0.9rem; font-weight:600; background:rgba(212,175,55,0.1); padding:6px 14px; border-radius:20px; border:1px solid var(--border-gold);">
+              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12);">
                 {data['grade_tamil']} • {data['age_group']}
               </div>
             </div>
@@ -315,7 +315,7 @@ def build_grade_coursebook(g, data):
 
             <!-- 4. Paced Step-by-Step Deep Dive Sections -->
             <div id="u{u['num']}-lessons" style="margin: 28px 0;">
-              <h4 style="color:var(--gold-bright); font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
                 <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
               </h4>
               <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
@@ -325,31 +325,31 @@ def build_grade_coursebook(g, data):
             </div>
 
             <!-- 5. Sacred Verse / Mantra Box -->
-            <div id="u{u['num']}-verse" style="background:rgba(212,175,55,0.08); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-              <div style="font-size:0.82rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
-              <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#fff; line-height:1.9; font-weight:600;">{formatted_verse}</div>
-              <div style="font-size:0.9rem; color:var(--gold-bright); margin-top:10px; font-weight:600;">— {u['source']}</div>
+            <div id="u{u['num']}-verse" style="background:rgba(255,255,255,0.03); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#ffffff; line-height:1.9; font-weight:600;">{formatted_verse}</div>
+              <div style="font-size:0.9rem; color:var(--gold); margin-top:10px; font-weight:600;">— {u['source']}</div>
             </div>
 
             <!-- 6. Philosophical Meaning -->
             <div id="u{u['num']}-meaning" style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
-              <h4 style="color:var(--gold); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
                 <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">{formatted_meaning}</div>
             </div>
 
             <!-- 7. Inspirational Story -->
-            <div id="u{u['num']}-story" style="margin: 28px 0; background:rgba(224,159,62,0.06); border-radius:14px; padding:22px; border:1px solid rgba(224,159,62,0.25);">
-              <h4 style="color:var(--amber); font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+            <div id="u{u['num']}-story" style="margin: 28px 0; background:rgba(255,255,255,0.02); border-radius:14px; padding:22px; border:1px solid rgba(255,255,255,0.08);">
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
                 <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">{formatted_story}</div>
             </div>
 
             <!-- 8. Dharmic Living in Daily Life -->
-            <div id="u{u['num']}-living" style="margin: 28px 0; background:rgba(42,157,143,0.08); border-radius:14px; padding:22px; border:1px solid rgba(42,157,143,0.3);">
-              <h4 style="color:#2a9d8f; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+            <div id="u{u['num']}-living" style="margin: 28px 0; background:rgba(45,212,191,0.05); border-radius:14px; padding:22px; border:1px solid rgba(45,212,191,0.25);">
+              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
                 <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">{formatted_living}</div>
@@ -362,9 +362,9 @@ def build_grade_coursebook(g, data):
             {quiz_section_html}
 
             <!-- 11. Audio Link to Hymns -->
-            <div id="u{u['num']}-audio" style="background:rgba(212,175,55,0.06); border:1px solid var(--border-gold); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
+            <div id="u{u['num']}-audio" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
               <div>
-                <strong style="color:var(--gold-bright);">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <strong style="color:#f8fafc;">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
                 <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
               </div>
               <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
@@ -375,7 +375,7 @@ def build_grade_coursebook(g, data):
             <!-- Navigation Stepper Footer -->
             <div class="lesson-nav-footer">
               {prev_btn}
-              <button type="button" onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:var(--border-gold); color:var(--gold-soft);">
+              <button type="button" onclick="window.print()" class="lesson-nav-btn lesson-nav-prev" style="border-color:rgba(255,255,255,0.15); color:#cbd5e1;">
                 🖨️ பாடம் அச்சிடுக (Print / PDF)
               </button>
               {next_btn}
@@ -415,7 +415,7 @@ def build_grade_coursebook(g, data):
         <div class="lesson-unit-panel" id="unit-panel-sheets">
           <div class="scripture-study-section" style="margin-bottom:24px;">
             <span class="source-badge">அங்கீகரிக்கப்பட்ட பாடநூல் படங்கள் • மொத்தம் {len(grade2_sheets)} பக்கங்கள்</span>
-            <h3 style="color:var(--gold-bright); font-size:1.4rem; margin-top:8px;">தரம் 2 முழுமையான பாடநூல் பக்கங்கள் (Official Textbook Sheets)</h3>
+            <h3 style="color:#f8fafc; font-size:1.4rem; margin-top:8px;">தரம் 2 முழுமையான பாடநூல் பக்கங்கள் (Official Textbook Sheets)</h3>
             <p style="color:var(--text-muted); font-size:0.92rem; margin-top:6px;">
               எந்தவொரு பக்கத்தின் மீதும் கிளிக் செய்து பெரிய அளவில் வாசிக்கலாம் (Click any sheet to zoom and read in high resolution).
             </p>
@@ -563,7 +563,7 @@ def build_grade_coursebook(g, data):
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin: 15px 0 25px 0; padding: 14px 20px; background:var(--bg-card); border-radius:12px; border:1px solid var(--border-gold);">
       <a href="{prev_link}" style="color:var(--gold); text-decoration:none; font-weight:600;">{prev_label}</a>
       <span style="color:var(--text-muted); font-size:0.9rem;">{data['grade_tamil']} / 12</span>
-      <a href="{next_link}" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">{next_label}</a>
+      <a href="{next_link}" style="color:#ffffff; text-decoration:none; font-weight:700;">{next_label}</a>
     </div>
 
     <!-- Anchor for scrolling -->
@@ -571,7 +571,7 @@ def build_grade_coursebook(g, data):
 
     <!-- Top Chapter Navigation Stepper (Tabs for Quick Access) -->
     <div class="course-tabs-wrapper">
-      <div style="font-size:0.85rem; color:var(--gold-bright); font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">
+      <div style="font-size:0.85rem; color:#cbd5e1; font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">
         📌 அத்தியாயத் தேர்வு (Select Chapter to Study):
       </div>
       <div class="course-tabs">
