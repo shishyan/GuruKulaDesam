@@ -5887,7 +5887,7 @@ main.main-content svg { max-width: 100%; height: auto; }
 /* Punch-hole Cord markers on left and right */
 .palm-leaf-mode-active .scripture-study-section::before,
 .palm-leaf-mode-active .course-card::before {
-  content: "◎";
+  content: ""; width: 12px; height: 12px; border: 2px solid #b45309; border-radius: 50%; display: inline-block;
   position: absolute;
   left: 14px;
   top: 14px;
@@ -5898,7 +5898,7 @@ main.main-content svg { max-width: 100%; height: auto; }
 
 .palm-leaf-mode-active .scripture-study-section::after,
 .palm-leaf-mode-active .course-card::after {
-  content: "◎";
+  content: ""; width: 12px; height: 12px; border: 2px solid #b45309; border-radius: 50%; display: inline-block;
   position: absolute;
   right: 14px;
   top: 14px;

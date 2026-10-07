@@ -1,0 +1,1114 @@
+# -*- coding: utf-8 -*-
+"""
+Curriculum Pedagogical Enricher for Guru Kula Desam
+Provides learning objectives, vocabulary, step-by-step paced deep dives,
+interactive self-learning quizzes, visual diagrams, hero visual artwork,
+and daily sadhana checklists for all 55 units across Grades 2 to 12.
+"""
+
+UNIT_VISUAL_MAP = {
+    # Grade 2 (பாலப் பருவம் - அறமும் இல்லறப் பழக்கங்களும்)
+    (2, 1): {
+        "diagram_key": "thiruneeru",
+        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
+        "hero_caption": "சிவ சின்னங்கள் — நெற்றியில் தரிக்கும் தூய திருநீறு (திரிபுண்டரம்) மற்றும் ஆன்மீக ஒளி"
+    },
+    (2, 2): {
+        "diagram_key": "temple",
+        "hero_image": "assets/images/lessons/temple_architecture.jpg",
+        "hero_caption": "திருக்கோயில் அமைப்பு — விண்ணை முட்டும் ராஜகோபுரமும் கருவறை ஜோதி தரிசனமும்"
+    },
+    (2, 3): {
+        "diagram_key": "isai_pann",
+        "hero_image": "assets/images/lessons/nataraja_cosmic_dance.jpg",
+        "hero_caption": "இறை இசைப் பாடல் — பிரபஞ்ச நாத நடனமும் சம்பந்தரின் முதல் பதிகமும்"
+    },
+    (2, 4): {
+        "diagram_key": "konrai_vendhan",
+        "hero_image": "assets/images/lessons/children_feeding_creatures.jpg",
+        "hero_caption": "ஔவையாரின் கொன்றை வேந்தன் — பகிர்ந்து உண்ணுதலும் சக உயிர்களிடத்தில் அன்பும்"
+    },
+    (2, 5): {
+        "diagram_key": "jivakarunyam",
+        "hero_image": "assets/images/lessons/dharma_cow_calf.jpg",
+        "hero_caption": "ஜீவகாருண்யம் & தாவர உணவு — தாய்ப் பசுவும் கன்றும், எவ்வுயிர்க்கும் தீங்கிழையா அஹிம்சை நெறி",
+        "video_clip": "assets/videos/short_26_ahimsa.mp4",
+        "video_title": "அதிகாரம் 26: புலால் உண்ணாமை — அஹிம்சை & கருணை குறும்படம் (42 வினாடிகள்)",
+        "video_note": "அனைத்து உயிர்களையும் தன் உயிர் போல் நேசித்து, தாவர உணவை ஏற்று வாழும் எளிய குழந்தைப் பருவம்.",
+        "video_poster": "assets/images/lessons/dharma_cow_calf.jpg"
+    },
+    
+    # Grade 3
+    (3, 1): {
+        "diagram_key": "naalvar",
+        "hero_image": "assets/images/lessons/grade3_naalvar_saints.jpg",
+        "hero_caption": "சமயக் குரவர் நால்வர் — அப்பர், சம்பந்தர், சுந்தரர், மாணிக்கவாசகர் அருளிய பக்தி ஞான நெறி"
+    },
+    (3, 2): {
+        "diagram_key": "sandhyavandanam",
+        "hero_image": "assets/images/lessons/temple_bell_morning.jpg",
+        "hero_caption": "மாணிக்கவாசகரின் திருவெம்பாவை — அதிகாலை கோபுர மணியோசையும் திருப்பள்ளியெழுச்சி வழிபாடும்"
+    },
+    (3, 3): {
+        "diagram_key": "pancha_bhuta",
+        "hero_image": "assets/images/lessons/grade3_pancha_bhuta_temples.jpg",
+        "hero_caption": "பஞ்ச பூதத் தலங்கள் — நிலம், நீர், தீ, காற்று, ஆகாயம் எங்கும் அருளும் சிவ பரம்பொருளின் திருக்கோயில்கள்"
+    },
+    (3, 4): {
+        "diagram_key": "konrai_vendhan",
+        "hero_image": "assets/images/lessons/scholar_palm_manuscript.jpg",
+        "hero_caption": "ஔவையாரின் மூதுரை — ஏடு பார்த்து நல்லறம் கற்கும் அறிஞர் மரபு"
+    },
+    (3, 5): {
+        "diagram_key": "dinacharya",
+        "hero_image": "assets/images/lessons/universal_anjali_prayer.jpg",
+        "hero_caption": "திருப்பள்ளியெழுச்சி — காலை எழும்போதே தூய அஞ்சலி முத்திரையுடன் உலக நலன் பிரார்த்தித்தல்"
+    },
+
+    # Grade 4
+    (4, 1): {
+        "diagram_key": "isai_pann",
+        "hero_image": "assets/images/lessons/sage_sacred_scripture.jpg",
+        "hero_caption": "பன்னிரு திருமுறைகள் — ஓலைச்சுவடியில் பொறிக்கப்பட்ட திருமுறைப் பதிக ஞானம்"
+    },
+    (4, 2): {
+        "diagram_key": "naalvar",
+        "hero_image": "assets/images/lessons/grade4_appar_service.jpg",
+        "hero_caption": "அப்பர் பெருமானின் உழவாரத் தொண்டு — 'என் கடன் பணி செய்து கிடப்பதே' எனும் தன்னலமற்ற சிவாலயத் தொண்டு"
+    },
+    (4, 3): {
+        "diagram_key": "panchakshara",
+        "hero_image": "assets/images/lessons/grade4_saiva_vratas.jpg",
+        "hero_caption": "சைவ விரதங்கள் & சிவபூஜை — தூய இல்லறத்தில் வில்வ தளங்களால் சிவலிங்கத்தை வழிபடும் திருக்குடும்பம்"
+    },
+    (4, 4): {
+        "diagram_key": "konrai_vendhan",
+        "hero_image": "assets/images/lessons/wildlife_stream_harmony.jpg",
+        "hero_caption": "ஔவையாரின் நல்வழி — காட்டாற்று நீரைப் பருகும் மான் கூட்டம், இயற்கையோடு இயைந்த வாழ்வு"
+    },
+    (4, 5): {
+        "diagram_key": "jivakarunyam",
+        "hero_image": "assets/images/lessons/noble_feast_ahimsa.jpg",
+        "hero_caption": "சாத்வீக உணவு — பிற உயிர்களைக் கொல்லாது விளைந்த காய், கனி, தானியங்களை உண்ணும் தூய இல்லற விருந்து",
+        "video_clip": "assets/videos/short_26_ahimsa.mp4",
+        "video_title": "அதிகாரம் 26: புலால் உண்ணாமை — சாத்வீக உணவின் மாண்பு (42 வினாடிகள்)",
+        "video_note": "உடல், மனம் இரண்டையும் தூய்மையாக வைத்து நோயற்ற வாழ்வு வாழ சாத்வீக உணவே சிறந்த வழி.",
+        "video_poster": "assets/images/lessons/noble_feast_ahimsa.jpg"
+    },
+
+    # Grade 5 (மாணவர் பருவம் - கடமையும் ஐம்பொறி அடக்கமும்)
+    (5, 1): {
+        "diagram_key": "nayanmar_lineage",
+        "hero_image": "assets/images/lessons/gurukulam_sacred_refuge.jpg",
+        "hero_caption": "அறுபத்து மூன்று நாயன்மார்கள் — குருகுலத்தின் ஆசிரம அடைக்கலமும் ஈடு இணையற்ற தியாகமும்"
+    },
+    (5, 2): {
+        "diagram_key": "naalvar",
+        "hero_image": "assets/images/lessons/grade5_sundarar_thiruvarur.jpg",
+        "hero_caption": "சுந்தரரின் திருத்தொண்டர் தொகை — திருவாரூர் தேவாசிரியன் மண்டபத்தில் சிவனடியார்களை வணங்கிப் பாடிய அடியார்க்கும் அடியேன் நெறி"
+    },
+    (5, 3): {
+        "diagram_key": "thirukkural_trivarga",
+        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
+        "hero_caption": "திருக்குறள் அறத்துப்பால் — மனித வாழ்வை நிலைநிறுத்தும் அறநெறி அடித்தளம்"
+    },
+    (5, 4): {
+        "diagram_key": "panchakshara",
+        "hero_image": "assets/images/lessons/grade5_manikkavasagar_thiruvasagam.jpg",
+        "hero_caption": "மாணிக்கவாசகப் பெருமான் — சிதம்பரக் கனகசபையில் ஆனந்தக் கண்ணீருடன் திருவாசகத் தேன் பொழியும் மெய்பக்தி"
+    },
+    (5, 5): {
+        "diagram_key": "karma_wheel",
+        "hero_image": "assets/images/lessons/industrious_diligent_artisan.jpg",
+        "hero_caption": "சத்தியமும் நேர்மையும் — சோம்பல் நீக்கி அதிகாலை எழுந்து உழைக்கும் சிற்பி கலைஞர்",
+        "video_clip": "assets/videos/short_61_industry.mp4",
+        "video_title": "அதிகாரம் 61: மடியின்மை — விடாமுயற்சியின் பெருமை (38 வினாடிகள்)",
+        "video_note": "குடிமக்களை உயர்த்தும் குணம் மடியின்மையே; மடி என்னும் சோம்பலை மாய்ப்போரே வெற்றி பெறுவர்.",
+        "video_poster": "assets/images/lessons/industrious_diligent_artisan.jpg"
+    },
+
+    # Grade 6
+    (6, 1): {
+        "diagram_key": "vedas_tree",
+        "hero_image": "assets/images/lessons/scholar_palm_manuscript.jpg",
+        "hero_caption": "நான்கு வேதங்கள் — ரிக், யஜுர், சாம, அதர்வ வேதங்களின் ஞானப் பொக்கிஷம்"
+    },
+    (6, 2): {
+        "diagram_key": "ashtanga_yoga",
+        "hero_image": "assets/images/lessons/grade6_thirumoolar_tapas.jpg",
+        "hero_caption": "திருமூல நாயனார் தவநெறி — ஆலமர நிழலில் யோக சமாதியில் 'அன்பே சிவம்' எனும் திருமந்திரம் அருளிய மாமுனிவர்"
+    },
+    (6, 3): {
+        "diagram_key": "pati_pasu_pasam",
+        "hero_image": "assets/images/lessons/siddha_herbal_wisdom.jpg",
+        "hero_caption": "முப்பொருள் உண்மை & சித்த மருத்துவம் — உடலை ஓம்பும் மூலிகைகளும் பதி-பசு-பாச அறிவும்"
+    },
+    (6, 4): {
+        "diagram_key": "pancha_yajna",
+        "hero_image": "assets/images/lessons/grade6_pancha_maha_yajna.jpg",
+        "hero_caption": "பஞ்ச மகா யக்ஞங்கள் — தென்புலத்தார், தெய்வம், விருந்து, ஒக்கல், தான் என்ற ஐம்புலக் கடமைகளையும் இல்லறத்தில் ஆற்றுதல்"
+    },
+    (6, 5): {
+        "diagram_key": "thirukkural_trivarga",
+        "hero_image": "assets/images/lessons/harvest_triumph_effort.jpg",
+        "hero_caption": "திருக்குறள் பொருட்பால் — 'கற்க கசடற' கல்வி மற்றும் உழைப்பின் உன்னத வெற்றி",
+        "video_clip": "assets/videos/short_61_industry.mp4",
+        "video_title": "அதிகாரம் 61: மடியின்மை — அறியாமையையும் சோம்பலையும் வெல்லுதல் (38 வினாடிகள்)",
+        "video_note": "விடாமுயற்சியுடன் கல்வி பயின்று, தன் குடும்பத்தையும் சமுதாயத்தையும் தலைநிமிரச் செய்யும் அறம்.",
+        "video_poster": "assets/images/lessons/harvest_triumph_effort.jpg"
+    },
+
+    # Grade 7
+    (7, 1): {
+        "diagram_key": "ashtanga_yoga",
+        "hero_image": "assets/images/lessons/western_ghats_hermitage.jpg",
+        "hero_caption": "திருமந்திரப் பேரறிவு — மேற்குத் தொடர்ச்சி மலை அமைதியில் ஒலிக்கும் யோக நெறி"
+    },
+    (7, 2): {
+        "diagram_key": "thirukkural_trivarga",
+        "hero_image": "assets/images/lessons/thavam_tapas_meditation.jpg",
+        "hero_caption": "சதுர்வித புருஷார்த்தங்கள் — தவம், மன அமைதி மற்றும் தர்மத்தை நிலைநிறுத்தும் ஆற்றல்",
+        "video_clip": "assets/videos/short_27_thavam.mp4",
+        "video_title": "அதிகாரம் 27: தவம் — மனக் கட்டுப்பாடும் இலக்கு நோக்கிய உறுதியும் (40 வினாடிகள்)",
+        "video_note": "உற்றநோய் நோன்றல் உயிர்க்குறுகண் செய்யாமை — தனக்கு வரும் துன்பத்தைப் பொறுத்துக் கொண்டு மற்றவர்க்குத் துன்பம் செய்யாத தவ வலிமை.",
+        "video_poster": "assets/images/lessons/thavam_tapas_meditation.jpg"
+    },
+    (7, 3): {
+        "diagram_key": "nayanmar_lineage",
+        "hero_image": "assets/images/lessons/grade7_periyapuranam_sekkizhar.jpg",
+        "hero_caption": "சேக்கிழார் பெருமான் பெரியபுராணம் — அனபாய சோழ மன்னரின் அரசவையில் திருத்தொண்டர் புராணத்தை அரங்கேற்றிய காட்சி"
+    },
+    (7, 4): {
+        "diagram_key": "karma_wheel",
+        "hero_image": "assets/images/lessons/animals_peaceful_sanctuary.jpg",
+        "hero_caption": "கர்ம விதி — பிராணிகள் கூடி வாழும் அமைதிப் பூங்கா, விதைத்ததே விளையும் இயற்கை நீதி"
+    },
+    (7, 5): {
+        "diagram_key": "thirukkural_trivarga",
+        "hero_image": "assets/images/lessons/thirukkural_valluvar.jpg",
+        "hero_caption": "திருக்குறள் மெய்யுணர்தல் — 'எப்பொருள் எத்தன்மைத் தாயினும் மெய்ப்பொருள் காண்பது அறிவு'"
+    },
+
+    # Grade 8
+    (8, 1): {
+        "diagram_key": "karma_wheel",
+        "hero_image": "assets/images/lessons/industrious_diligent_artisan.jpg",
+        "hero_caption": "திருக்குறள் கர்ம நெறி — ஊக்கமுடைமையும் பலனில் பற்றற்ற கடமையாற்றலும்",
+        "video_clip": "assets/videos/adhikaram_61_madiyinmai.mp4",
+        "video_title": "அதிகாரம் 61: மடியின்மை — முழுமையான சினிமா பாடல் படம் (4 நிமிடங்கள்)",
+        "video_note": "சோம்பலை ஒழித்து, உழைப்பின் மகிமையால் தன் குடும்பத்தை மேன்மையடையச் செய்யும் மாபெரும் அறம்.",
+        "video_poster": "assets/images/lessons/industrious_diligent_artisan.jpg"
+    },
+    (8, 2): {
+        "diagram_key": "agamas_shastras",
+        "hero_image": "assets/images/lessons/grade8_meykanda_sastras.jpg",
+        "hero_caption": "பதினான்கு மெய்கண்ட சாத்திரங்கள் — மெய்கண்ட தேவர் சிவஞான போதத்தை அருளருந்தி சிவாச்சாரியாருக்கு உபதேசித்த ஞான நெறி"
+    },
+    (8, 3): {
+        "diagram_key": "isai_pann",
+        "hero_image": "assets/images/lessons/noble_feast_ahimsa.jpg",
+        "hero_caption": "புலால் மறுத்தல் & ஜீவகாருண்யம் — அனைத்து உயிர்களுக்கும் உணவளிக்கும் உன்னத இல்லறம்",
+        "video_clip": "assets/videos/adhikaram_26_pulaal_unnaamai.mp4",
+        "video_title": "அதிகாரம் 26: புலால் உண்ணாமை — முழுமையான சினிமா திரைப்படம் (4.5 நிமிடங்கள்)",
+        "video_note": "தன்னுன் பெருக்கற்குத் தான்பிறி தூனுண்ணும் எங்ஙனம் ஆளும் அருள் — தன் உடலை வளர்க்கப் பிறிதொரு உயிரின் உடலை உண்ணாத உயர் பண்பு.",
+        "video_poster": "assets/images/lessons/noble_feast_ahimsa.jpg"
+    },
+    (8, 4): {
+        "diagram_key": "vedas_tree",
+        "hero_image": "assets/images/lessons/grade8_chatur_ashrama.jpg",
+        "hero_caption": "சதுர் ஆசிரமங்கள் — இல்லற தர்மமே மற்ற அனைத்து ஆசிரமங்களுக்கும் தூணாக அமையும் உன்னத மாண்பு"
+    },
+    (8, 5): {
+        "diagram_key": "vallalar_jyothi",
+        "hero_image": "assets/images/lessons/grade8_vallalar_jyothi.jpg",
+        "hero_caption": "வள்ளலார் அருட்பெருஞ்ஜோதி — வடலூர் சத்திய ஞான சபையில் 7 மாயைத் திரைகளை நீக்கி ஒளிரும் ஜோதி தரிசனம்"
+    },
+
+    # Grade 9 (இளைஞர் பருவம் - சான்றாண்மையும் சமூக மாண்பும்)
+    (9, 1): {
+        "diagram_key": "agamas_shastras",
+        "hero_image": "assets/images/lessons/grade9_saiva_agamas.jpg",
+        "hero_caption": "இருபத்தெட்டு சைவ ஆகமங்கள் — சரியை, கிரியை, யோகம், ஞானம் நல்கும் திருக்கோயில் ஆகம சாஸ்திரம்"
+    },
+    (9, 2): {
+        "diagram_key": "temple",
+        "hero_image": "assets/images/lessons/grade9_body_is_temple.jpg",
+        "hero_caption": "உடலே ஆலயம் — 'உள்ளம் பெருங்கோயில் ஊனுடம்பு ஆலயம்' எனும் திருமந்திர மெய்ஞ்ஞானத் தத்துவம்"
+    },
+    (9, 3): {
+        "diagram_key": "vedas_tree",
+        "hero_image": "assets/images/lessons/grade9_shaddarshanas_dialogue.jpg",
+        "hero_caption": "பாரதத்தின் ஷட்தர்சனங்கள் — நியாயம், வைசேஷிகம், சாங்கியம், யோகம், மீமாம்சம், வேதாந்த தரிசன உரையாடல்"
+    },
+    (9, 4): {
+        "diagram_key": "ashtanga_yoga",
+        "hero_image": "assets/images/lessons/mindfulness_vigilance.jpg",
+        "hero_caption": "யம & நியமங்கள், விழிப்புணர்வு — ஒரு கணமும் மறதியின்றி கடமையாற்றும் பொச்சாவாமை",
+        "video_clip": "assets/videos/short_54_vigilance.mp4",
+        "video_title": "அதிகாரம் 54: பொச்சாவாமை — விழிப்புணர்வும் மறதியின்மையும் (40 வினாடிகள்)",
+        "video_note": "இறந்த குறிக்கோளை அடைய விழிப்புணர்வே காவல்; ஒரு கண மறதியும் வாழ்வைச் சிதைக்காமல் காக்கும் அறம்.",
+        "video_poster": "assets/images/lessons/mindfulness_vigilance.jpg"
+    },
+    (9, 5): {
+        "diagram_key": "thirukkural_trivarga",
+        "hero_image": "assets/images/lessons/royal_administration_dharma.jpg",
+        "hero_caption": "திருக்குறள் அரசியல் — அறநெறி வழுவாத செங்கோன்மையும் குடும்ப, சமுதாய தலைமைத்துவமும்"
+    },
+
+    # Grade 10
+    (10, 1): {
+        "diagram_key": "pati_pasu_pasam",
+        "hero_image": "assets/images/lessons/grade10_pati_pasu_pasam.jpg",
+        "hero_caption": "பதி பசு பாசம் — பதிப் பரம்பொருளின் பேரருளால் ஆணவம், கன்மம், மாயை நீங்கி ஆன்மா முக்தி பெறுதல்"
+    },
+    (10, 2): {
+        "diagram_key": "naalvar",
+        "hero_image": "assets/images/lessons/hill_fortress_vigilance.jpg",
+        "hero_caption": "நால்வகை நெறிகள் & விழிப்புணர்வு — கோட்டைக்காவலன் போல் தன் மனதைக் காக்கும் விழிப்புணர்வு",
+        "video_clip": "assets/videos/short_54_vigilance.mp4",
+        "video_title": "அதிகாரம் 54: பொச்சாவாமை — தலைமைத்துவ விழிப்புணர்வு (40 வினாடிகள்)",
+        "video_note": "அச்சமும் சோம்பலும் நீங்கி எப்போதும் எச்சரிக்கையுடன் நற்பணிகளை வழிநடத்தும் பண்பு.",
+        "video_poster": "assets/images/lessons/hill_fortress_vigilance.jpg"
+    },
+    (10, 3): {
+        "diagram_key": "deivathin_kural",
+        "hero_image": "assets/images/lessons/royal_administration_dharma.jpg",
+        "hero_caption": "தெரிந்து வினையாடல் — தகுதியானோரை ஆய்ந்து அறிந்து பொறுப்பளிக்கும் உன்னத நிர்வாகம்",
+        "video_clip": "assets/videos/short_52_vinai.mp4",
+        "video_title": "அதிகாரம் 52: தெரிந்து வினையாடல் — நிர்வாகத் தலைமை குறும்படம் (45 வினாடிகள்)",
+        "video_note": "இதனை இதனால் இவன்முடிக்கும் என்றாய்ந்து அதனை அவன்கண் விடல் — சரியான நபரிடம் பொறுப்பை ஒப்படைக்கும் விவேகம்.",
+        "video_poster": "assets/images/lessons/royal_administration_dharma.jpg"
+    },
+    (10, 4): {
+        "diagram_key": "panchakshara",
+        "hero_image": "assets/images/lessons/grade10_temple_chariot_festival.jpg",
+        "hero_caption": "திருக்கோயில் தேர்த் திருவிழா — ஆயிரக்கணக்கான அடியார்கள் ஒருமனப்பட்டு வடம் பிடிக்கும் பக்திப் பெருவிழா"
+    },
+    (10, 5): {
+        "diagram_key": "dinacharya",
+        "hero_image": "assets/images/lessons/chola_anicut_engineers.jpg",
+        "hero_caption": "தர்மப் பொறியியல் — கல்லணை கட்டிய சோழப் பெருவேந்தரின் தர்ம நெறியும் பொறியியல் அறிவும்"
+    },
+
+    # Grade 11 (உயர் வாழ்வியல் - தத்துவமும் ஆளுமையும்)
+    (11, 1): {
+        "diagram_key": "vedas_tree",
+        "hero_image": "assets/images/lessons/mountain_cave_tapas.jpg",
+        "hero_caption": "வேதாந்த சித்தாந்த ஒப்பாய்வு — குகைத் தவத்தில் ஒளிரும் ஆத்ம ஞான அனுபவம்",
+        "video_clip": "assets/videos/short_27_thavam.mp4",
+        "video_title": "அதிகாரம் 27: தவம் — ஆத்ம ஞானத்திற்கான பெருந்தவம் (40 வினாடிகள்)",
+        "video_note": "சுடச்சுடரும் பொன்போல் ஒளிவிடும் தவம் — புலன்களை அடக்கி ஆத்மார்த்தமாக வாழும் முறை.",
+        "video_poster": "assets/images/lessons/mountain_cave_tapas.jpg"
+    },
+    (11, 2): {
+        "diagram_key": "chakra_system",
+        "hero_image": "assets/images/lessons/grade11_nachiketas_yama.jpg",
+        "hero_caption": "கதா உபநிடதம் — இளம் நசிகேதன் எமதர்மனிடம் சாகா வரம் மற்றும் ஆத்ம ஞானம் உசாவும் மெய்யறிவு",
+        "video_clip": "assets/videos/adhikaram_52_therinthu_vinaiyaadal.mp4",
+        "video_title": "அதிகாரம் 52: தெரிந்து வினையாடல் — முழுமையான சினிமா பாடல் திரைப்படம் (6 நிமிடங்கள்)",
+        "video_note": "அறிவும், ஆற்றலும், பொறுமையும் கொண்டோரைத் தேர்ந்தெடுத்து நற்பணிகளை வளர்க்கும் மேலாண்மை.",
+        "video_poster": "assets/images/lessons/royal_administration_dharma.jpg"
+    },
+    (11, 3): {
+        "diagram_key": "agamas_shastras",
+        "hero_image": "assets/images/lessons/gentle_justice_governance.jpg",
+        "hero_caption": "வெருவந்த செய்யாமை — கொடுங்கோன்மையின்றி இன்சொல்லும் நீதியும் காக்கும் சான்றோன் பண்பு",
+        "video_clip": "assets/videos/short_57_justice.mp4",
+        "video_title": "அதிகாரம் 57: வெருவந்த செய்யாமை — இன்சொல்லும் நீதியும் (42 வினாடிகள்)",
+        "video_note": "இன்சொலான் ஓம்பப் பெறின் — மக்களை அச்சுறுத்தாமல் அன்பால் ஆளும் தலைவனின் மாண்பு.",
+        "video_poster": "assets/images/lessons/gentle_justice_governance.jpg"
+    },
+    (11, 4): {
+        "diagram_key": "chakra_system",
+        "hero_image": "assets/images/lessons/grade11_pancha_koshas.jpg",
+        "hero_caption": "பஞ்ச கோசங்கள் — அன்னமய, பிராணமய, மனோமய, விஞ்ஞானமய, ஆனந்தமய கோசங்கள் கடந்த ஆன்ம நிலை"
+    },
+    (11, 5): {
+        "diagram_key": "dinacharya",
+        "hero_image": "assets/images/lessons/agrarian_abundance.jpg",
+        "hero_caption": "உயர்தர சாதனை & வேளாண்மை — பொன் விளையும் களஞ்சியமும் அறம் சார்ந்த வாழ்வாதாரமும்"
+    },
+
+    # Grade 12 (உன்னத இல்லறம் வழி முக்தி / நிர்வாணம்)
+    (12, 1): {
+        "diagram_key": "saiva_siddhanta_36_tattvas",
+        "hero_image": "assets/images/lessons/grade12_jivanmukti_36tattvas.jpg",
+        "hero_caption": "ஜீவன்முக்தி & 36 தத்துவங்கள் — முப்பத்தாறு தத்துவங்களையும் கடந்து உடலோடு வாழும் போதே அடையும் சிவானந்தப் பேறு"
+    },
+    (12, 2): {
+        "diagram_key": "ashtanga_yoga",
+        "hero_image": "assets/images/lessons/grade12_thayumanavar_universal.jpg",
+        "hero_caption": "தாயுமானவ சுவாமிகள் — 'எல்லாரும் இன்புற்றிருக்க நினைப்பதுவே யல்லாமல் வேறொன்றறியேன் பராபரமே'",
+        "video_clip": "assets/videos/adhikaram_27_thavam.mp4",
+        "video_title": "அதிகாரம் 27: தவம் — முழுமையான சினிமா தியானத் திரைப்படம் (4.5 நிமிடங்கள்)",
+        "video_note": "தவமும் தவம் உடையார்க்கு ஆகும் — தன்னலமற்ற தியாகத்தினால் பிரபஞ்ச உண்மையைக் காணும் உயரிய நிலை.",
+        "video_poster": "assets/images/lessons/western_ghats_hermitage.jpg"
+    },
+    (12, 3): {
+        "diagram_key": "nataraja",
+        "hero_image": "assets/images/lessons/wise_counsel_nobility.jpg",
+        "hero_caption": "வெருவந்த செய்யாமை & சான்றாண்மை — அறிஞர்களின் ஆலோசனையுடன் உலகை வழிநடத்தும் ஞானம்",
+        "video_clip": "assets/videos/adhikaram_57_veruvantha_seyyaamai.mp4",
+        "video_title": "அதிகாரம் 57: வெருவந்த செய்யாமை — முழுமையான சினிமா திரைப்படம் (5.5 நிமிடங்கள்)",
+        "video_note": "சான்றோன் ஆக்குதல் தந்தைக்குக் கடனே — நற்பண்புகளால் உலகை வெல்லும் சான்றாண்மை.",
+        "video_poster": "assets/images/lessons/wise_counsel_nobility.jpg"
+    },
+    (12, 4): {
+        "diagram_key": "pancha_bhuta",
+        "hero_image": "assets/images/lessons/harvest_triumph_effort.jpg",
+        "hero_caption": "சுற்றுச்சூழல் தர்மமும் உழைப்பும் — இயற்கையை தாயாகவும் ஈசனின் அருட்கொடையாகவும் போற்றும் பார்வை"
+    },
+    (12, 5): {
+        "diagram_key": "dinacharya",
+        "hero_image": "assets/images/lessons/grade12_grihastha_nirvana.jpg",
+        "hero_caption": "இல்லற தர்மமே அதிவேக முக்தி — அறவழியில் குடும்பம் நடத்தி உலகிற்கு வழிகாட்டும் சான்றோன் பெருநெறி",
+        "video_clip": "assets/videos/adhikaram_26_pulaal_unnaamai.mp4",
+        "video_title": "அதிகாரம் 26: புலால் உண்ணாமை & ஜீவகாருண்யம் — இல்லற முக்தி சினிமா படம்",
+        "video_note": "எவ்வுயிர்க்கும் அன்பு செய்து, உன்னத இல்லறத்தை அறவழியில் நடத்துவதே அதிவேக முக்தி!",
+        "video_poster": "assets/images/lessons/harvesting_family_dharma.jpg"
+    }
+}
+
+UNIT_STORY_ARTWORKS = {
+    # Grade 3
+    (3, 1): {
+        "image": "assets/images/lessons/stories/grade3_sambandar_divine_milk.jpg",
+        "caption": "ஞானசம்பந்தருக்கு உமையம்மை ஞானப்பால் ஊட்டுதல் — சீர்காழி திருக்கோயில் திருக்குளப் படித்துறையில் உமையம்மையின் திருவருள்"
+    },
+    (3, 4): {
+        "image": "assets/images/lessons/stories/grade3_avvaiyar_athiyaman_amla.jpg",
+        "caption": "அதியமான் ஔவையாருக்கு நெல்லிக்கனி நல்குதல் — தமிழ் மூதாட்டி நீண்ட காலம் வாழ அரிய சாகா நெல்லிக்கனியை வழங்கிய வள்ளல் மாண்பு"
+    },
+    # Grade 4
+    (4, 2): {
+        "image": "assets/images/lessons/stories/grade4_appar_lime_kiln.jpg",
+        "caption": "அப்பர் பெருமான் நீற்றறையிலிருந்து மாசில் வீணையுடன் வெளிவருதல் — பல்லவ மன்னனின் சுண்ணாம்புக் காளவாயைத் தென்றலாக மாற்றிய சிவபக்தி"
+    },
+    (4, 4): {
+        "image": "assets/images/lessons/stories/grade4_nandanar_nandi_miracle.jpg",
+        "caption": "திருப்புன்கூரில் நந்தனாருக்காக நந்தி விலகிய அற்புதம் — நந்தனாரின் கலங்கமற்ற பக்திக்கு நந்தியே வழிவிட்ட அற்புதக் காட்சி"
+    },
+    # Grade 5
+    (5, 2): {
+        "image": "assets/images/lessons/stories/grade5_sundarar_wedding_interruption.jpg",
+        "caption": "சுந்தரரின் திருமணத்தில் முதிய அந்தணராக இறைவன் தோன்றி தடுத்தாட்கொள்ளுதல் — பழையோலை காட்டித் தடுத்தாண்ட தம்பிரான் தோழன் நெறி"
+    },
+    (5, 5): {
+        "image": "assets/images/lessons/stories/grade5_markandeya_yama_victory.jpg",
+        "caption": "மார்க்கண்டேயன் சிவலிங்கத்தை கட்டித் தழுவி மரணத்தை வெல்லுதல் — எமனை உதைத்து ஆட்கொண்ட காலசம்ஹார மூர்த்தியின் திருவருள்"
+    },
+    # Grade 6
+    (6, 2): {
+        "image": "assets/images/lessons/stories/grade6_thirumoolar_cattle_compassion.jpg",
+        "caption": "திருமூலர் இடையன் மூலனின் உடலினுள் புகுந்து பசுக்களைக் காத்தல் — பசுக்களின் துயர் துடைத்த யோகியின் ஜீவகாருண்யப் பெருநெறி"
+    },
+    (6, 4): {
+        "image": "assets/images/lessons/stories/grade6_rajaraja_chola_temple_dedication.jpg",
+        "caption": "முதலாம் ராஜராஜ சோழன் தஞ்சைப் பெரிய கோயிலை அர்ப்பணித்தல் — வானுயர்ந்த 216 அடி பிரகதீஸ்வரர் திருவிமான அர்ப்பணிப்பு"
+    },
+    # Grade 7
+    (7, 2): {
+        "image": "assets/images/lessons/stories/grade7_kannappa_nayanar_supreme_love.jpg",
+        "caption": "கண்ணப்ப நாயனார் தன் கண்களை ஈசனுக்கு அற்பணித்தல் — காளஹஸ்தி மலையில் ஈசனின் திருக்கரம் கண்ணப்பனின் கையைப் பிடித்த பேரருள்"
+    },
+    (7, 4): {
+        "image": "assets/images/lessons/stories/grade7_sekkizhar_periyapuranam_recital.jpg",
+        "caption": "சேக்கிழார் பெருமான் தில்லை நடராஜர் சந்நிதியில் பெரியபுராணம் அரங்கேற்றுதல் — இரண்டாம் குலோத்துங்க சோழன் முன்னிலையில் அரங்கேற்றம்"
+    },
+    # Grade 8
+    (8, 2): {
+        "image": "assets/images/lessons/stories/grade8_karaikkal_ammaiyar_kailash.jpg",
+        "caption": "காரைக்கால் அம்மையார் தலைகீழாக கயிலை மலையில் நடத்தல் — எலும்புருவில் கயிலையேறிய அம்மையாரை 'அம்மையே' என அழைத்த எம்பெருமான்"
+    },
+    (8, 3): {
+        "image": "assets/images/lessons/stories/grade8_pattinathar_renunciation.jpg",
+        "caption": "பட்டினத்தார் 'காதற்ற ஊசியும் வாராது காண்' எனும் ஞானம் பெறுதல் — காவேரிப்பூம்பட்டினத்துக் கோடீஸ்வர வணிகன் துறவியான திருக்கதை"
+    },
+    # Grade 9
+    (9, 2): {
+        "image": "assets/images/lessons/stories/grade9_siruthondar_divine_guest.jpg",
+        "caption": "சிறுத்தொண்ட நாயனார் வைரவர் பெருமானை இல்லறத்தில் உபசரித்தல் — அதிதி தேவோ பவ எனும் விருந்தோம்பல் உன்னத மாண்பு"
+    },
+    (9, 3): {
+        "image": "assets/images/lessons/stories/grade9_sambandar_madurai_debate.jpg",
+        "caption": "மதுரையில் திருஞானசம்பந்தர் அனல்வாதம் மற்றும் புனல்வாதம் வெல்லுதல் — வைகையாற்றில் எதிர்நீச்சலிட்ட திருமுறை ஏடு"
+    },
+    # Grade 10
+    (10, 2): {
+        "image": "assets/images/lessons/stories/grade10_manikkavasagar_horses_miracle.jpg",
+        "caption": "நரிகளை பரிகளாக்கிய மாணிக்கவாசகரின் அற்புதம் — மதுரை மன்னன் அரிமர்த்தன பாண்டியன் முன்னிலையில் இறைவன் நிகழ்த்திய திருவிளையாடல்"
+    },
+    (10, 3): {
+        "image": "assets/images/lessons/stories/grade10_arunagirinathar_murugan_grace.jpg",
+        "caption": "அருணகிரிநாதரை முருகன் தன் வேல் கொண்டு ஆட்கொள்ளுதல் — திருவண்ணாமலைக் கோபுரத்திலிருந்து விழுந்த பக்தனைக் காத்த வேலவன்"
+    },
+    # Grade 11
+    (11, 1): {
+        "image": "assets/images/lessons/stories/grade11_shravana_kumara_devotion.jpg",
+        "caption": "சிரவணகுமாரன் தன் குருடான தாய் தந்தையரை காவடியில் சுமத்தல் — பெற்றோர் வழிபாட்டின் உன்னத மாத்ரு-பித்ரு பக்தி மாண்பு"
+    },
+    (11, 3): {
+        "image": "assets/images/lessons/stories/grade11_harischandra_truth_triumph.jpg",
+        "caption": "அரிச்சந்திரன் மயானத்தில் வாய்மை தவறாத மாண்பு — காசி சுடுகாட்டிலும் தர்மநெறி பிறழாது உண்மை காத்த சத்திய விரதம்"
+    },
+    # Grade 12
+    (12, 1): {
+        "image": "assets/images/lessons/stories/grade12_nachiketas_return_enlightened.jpg",
+        "caption": "நசிகேதன் ஆத்ம ஞானம் பெற்று பூமிக்கு மீளுதல் — எமதர்மனிடம் சாகா வரம் பெற்று ஆசிரமம் மீண்ட ஞான இளைஞன்"
+    },
+    (12, 2): {
+        "image": "assets/images/lessons/stories/grade12_vallalar_light_dissolution.jpg",
+        "caption": "வள்ளலார் பெருமான் சித்தி வளாகத்தில் ஜோதியாக கலத்தல் — வடலூரில் மரணமிலாப் பெருவாழ்வு பெற்று அருட்பெருஞ்ஜோதியோடு இரண்டறக் கலத்தல்"
+    }
+}
+
+UNIT_DHARMA_ARTWORKS = {
+    # Grade 2
+    (2, 1): {
+        "image": "assets/images/lessons/dharma/dharma_01_morning_parent_reverence.jpg",
+        "caption": "அதிகாலை பெற்றோரின் திருப்பாதங்களை வணங்கி ஆசி பெறுதல் — பாலப் பருவ இல்லற நற்பழக்கம்"
+    },
+    (2, 2): {
+        "image": "assets/images/lessons/dharma/dharma_02_kolam_courtyard_sanctity.jpg",
+        "caption": "அதிகாலை வாசலில் அரிசி மாவு கோலமிட்டு எறும்பு, பறவைகளுக்கு உணவளித்தல் — உன்னத இல்லற மாண்பு"
+    },
+    (2, 3): {
+        "image": "assets/images/lessons/dharma/dharma_07_joint_family_evening_thevaram.jpg",
+        "caption": "மாலை விளக்கேற்றி குடும்பத்தோடு திருமுறைப் பதிகம் பாடுதல் — இறை இசை நல்வாழ்வு"
+    },
+    (2, 4): {
+        "image": "assets/images/lessons/dharma/dharma_11_ahimsa_protecting_creatures.jpg",
+        "caption": "அனைத்து உயிர்களிடத்தும் அன்பு காட்டும் கொல்லாமை நெறி — பறவைகளுக்கும் பூச்சிகளுக்கும் உணவளித்தல்"
+    },
+    (2, 5): {
+        "image": "assets/images/lessons/dharma/dharma_06_cow_veneration_kamadhenu.jpg",
+        "caption": "பசுவையும் கன்றையும் கோமாதாவாக போற்றி வணங்குதல் — ஜீவகாருண்யத் தொண்டு"
+    },
+
+    # Grade 3
+    (3, 1): {
+        "image": "assets/images/lessons/dharma/dharma_13_temple_service_uzhavaram.jpg",
+        "caption": "திருக்கோயில் திருப்பணியில் குடும்பத்தோடு ஈடுபடுதல் — உழவாரப் பணி நெறி"
+    },
+    (3, 2): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "அந்தி சந்தி வந்தனம் & காயத்ரி ஜெபம் — அதிகாலை ஆற்றுப் படித்துறையில் சூரிய நமஸ்காரம்"
+    },
+    (3, 3): {
+        "image": "assets/images/lessons/dharma/dharma_15_planting_shade_trees.jpg",
+        "caption": "வழிப்போக்கர்களுக்காக நிழல் தரும் மரங்களை நடுதல் — பூத யாகத்தின் நற்பயன்"
+    },
+    (3, 4): {
+        "image": "assets/images/lessons/dharma/dharma_17_learning_scriptures_olai_chuvadi.jpg",
+        "caption": "நாள்தோறும் திருமுறை & திருக்குறள் ஓதுதல் — குடும்பத்தோடு கல்வி கற்கும் நெறி"
+    },
+    (3, 5): {
+        "image": "assets/images/lessons/dharma/dharma_08_elder_care_veneration.jpg",
+        "caption": "முதியோரை அன்போடு அரவணைத்துப் பேணுதல் — பெற்றோரின் துயர் துடைக்கும் மாண்பு"
+    },
+
+    # Grade 4
+    (4, 1): {
+        "image": "assets/images/lessons/dharma/dharma_17_learning_scriptures_olai_chuvadi.jpg",
+        "caption": "ஓலைச்சுவடி திருமுறைகளைப் போற்றிப் பாதுகாத்து ஓதுதல் — பிரம்ம யாகம்"
+    },
+    (4, 2): {
+        "image": "assets/images/lessons/dharma/dharma_13_temple_service_uzhavaram.jpg",
+        "caption": "கோயில் வளாகத்தில் முட்களை நீக்கித் தூய்மை செய்தல் — அப்பரின் அடிச்சுவடு"
+    },
+    (4, 3): {
+        "image": "assets/images/lessons/dharma/dharma_04_garland_making_puja.jpg",
+        "caption": "இறைவனுக்கு நறுமணப் பூமாலை தொடுத்து வழிபடும் விரத நெறி — குடும்ப சிவபூஜை"
+    },
+    (4, 4): {
+        "image": "assets/images/lessons/dharma/dharma_10_truthful_merchant_dharma.jpg",
+        "caption": "வாணிகத்தில் நேர்மையும் தூய அறமும் — குறள் காட்டும் வணிக தர்மம்"
+    },
+    (4, 5): {
+        "image": "assets/images/lessons/dharma/dharma_04_feeding_hungry_guest.jpg",
+        "caption": "பசித்த விருந்தினருக்கு முகம் மலர்ந்து சாத்வீக உணவளித்தல் — இல்லறத்தான் பெருமை"
+    },
+
+    # Grade 5
+    (5, 1): {
+        "image": "assets/images/lessons/dharma/dharma_09_guru_dakshina_reverence.jpg",
+        "caption": "ஆசிரியரைத் தெய்வமாகப் போற்றி குரு தட்சிணை சமர்ப்பித்தல் — ஆசிரம நெறி"
+    },
+    (5, 2): {
+        "image": "assets/images/lessons/dharma/dharma_07_family_evening_thevaram.jpg",
+        "caption": "அடியார்கள் கூட்டத்தில் இணைந்து தேவாரத் திருப்பதிகம் பாடுதல் — சிவனேயம்"
+    },
+    (5, 3): {
+        "image": "assets/images/lessons/dharma/dharma_12_mutual_respect_spouses.jpg",
+        "caption": "கணவன் மனைவி இடையே நிலவும் சமத்துவ அன்பு — அறத்துப்பால் இல்லற மாண்பு"
+    },
+    (5, 4): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "மனோவசியமும் ஆத்ம தியானமும் — ஆற்றுப் படித்துறையில் காயத்ரி உபாசனை"
+    },
+    (5, 5): {
+        "image": "assets/images/lessons/dharma/dharma_10_truthful_merchant_dharma.jpg",
+        "caption": "சோம்பலின்றி நேர்மையான உழைப்பால் செல்வம் ஈட்டுதல் — மடியின்மை தர்மம்"
+    },
+
+    # Grade 6
+    (6, 1): {
+        "image": "assets/images/lessons/dharma/dharma_03_pancha_maha_yajna_offering.jpg",
+        "caption": "இல்லறத்தான் இயற்றும் பஞ்ச மகா யாகங்கள் — வேத தர்மத்தின் அஸ்திவாரம்"
+    },
+    (6, 2): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "அஷ்டாங்க யோகமும் உள்ளொளி தியானமும் — மன அமைதிக்கும் உடல் நலத்திற்குமான நெறி"
+    },
+    (6, 3): {
+        "image": "assets/images/lessons/dharma/dharma_06_cow_veneration_kamadhenu.jpg",
+        "caption": "பதி, பசு, பாசம் தத்துவத்தை உணர்ந்து எவ்வுயிர்க்கும் தீங்கிழையாது வாழ்தல்"
+    },
+    (6, 4): {
+        "image": "assets/images/lessons/dharma/dharma_14_charity_annadhanam_festival.jpg",
+        "caption": "திருக்கோயில் பெருவிழாவில் ஆயிரக்கணக்கானோருக்கு அன்னதானம் வழங்குதல்"
+    },
+    (6, 5): {
+        "image": "assets/images/lessons/dharma/dharma_09_community_canal_maintenance.jpg",
+        "caption": "ஊர்ப் பொதுக் குளங்களையும் வாய்க்கால்களையும் தூர்வாரிப் பராமரித்தல் — சமூக தர்மம்"
+    },
+
+    # Grade 7
+    (7, 1): {
+        "image": "assets/images/lessons/dharma/dharma_11_ahimsa_protecting_creatures.jpg",
+        "caption": "எல்லா உயிர்களிலும் இறைவனைக் காணும் உயரிய கண்ணோட்டம் — ஜீவ நேயம்"
+    },
+    (7, 2): {
+        "image": "assets/images/lessons/dharma/dharma_08_satvik_food_preparation.jpg",
+        "caption": "தூய சாத்வீக உணவை அன்போடு சமைத்துப் பரிமாறுதல் — இல்லற புனிதச் சடங்கு"
+    },
+    (7, 3): {
+        "image": "assets/images/lessons/dharma/dharma_16_water_charity_thanneer_panthal.jpg",
+        "caption": "கோடைக் காலத்தில் தாகம் தீர்க்கும் தண்ணீர் பந்தல் அமைத்தல் — சமுதாயத் தொண்டு"
+    },
+    (7, 4): {
+        "image": "assets/images/lessons/dharma/dharma_14_charity_annadhanam_festival.jpg",
+        "caption": "சான்றோர்களை வரவேற்று இல்லத்தில் உபசரித்து மகிழ்தல் — அதிதி பூஜை"
+    },
+    (7, 5): {
+        "image": "assets/images/lessons/dharma/dharma_18_forgiveness_resolving_dispute.jpg",
+        "caption": "பொறாமையும் கோபமும் நீக்கி பொறுமையால் அமைதி காத்தல் — நற்குணச் சாதனை"
+    },
+
+    # Grade 8
+    (8, 1): {
+        "image": "assets/images/lessons/dharma/dharma_08_elder_care_veneration.jpg",
+        "caption": "முதியோரை அன்போடு அரவணைத்துப் பேணுதல் — பித்ருக்களின் ஆசி பெறும் மாண்பு"
+    },
+    (8, 2): {
+        "image": "assets/images/lessons/dharma/dharma_19_frugal_noble_living.jpg",
+        "caption": "ஆடம்பரமின்றி எளிய தூய வாழ்வு வாழ்தல் — காரைக்கால் அம்மையாரின் பக்தி வைராக்கியம்"
+    },
+    (8, 3): {
+        "image": "assets/images/lessons/dharma/dharma_19_frugal_noble_living.jpg",
+        "caption": "பொருளாசையைக் கடந்து உள்ளத்தில் நிறைவு காணுதல் — பட்டினத்தார் துறவு நெறி"
+    },
+    (8, 4): {
+        "image": "assets/images/lessons/dharma/dharma_03_pancha_maha_yajna_offering.jpg",
+        "caption": "சதுர் ஆசிரமங்களுக்குத் தூணாக நின்று அன்னதானம் வழங்கும் இல்லறத்தான் உன்னத மாண்பு"
+    },
+    (8, 5): {
+        "image": "assets/images/lessons/dharma/dharma_04_feeding_hungry_guest.jpg",
+        "caption": "வள்ளலாரின் அணையா அடுப்பு போல எளியோரின் பசிப்பிணி நீக்கும் சத்திய தருமம்"
+    },
+
+    # Grade 9
+    (9, 1): {
+        "image": "assets/images/lessons/dharma/dharma_04_garland_making_puja.jpg",
+        "caption": "ஆகம விதிப்படி வீட்டில் அந்தி சந்தி வழிபாடுகளைத் தவறாது செய்தல்"
+    },
+    (9, 2): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "உடலைத் தூய கோயிலாகப் பேணி மது, மாமிசம், தீய பழக்கங்களிலிருந்து விலகி வாழ்தல்"
+    },
+    (9, 3): {
+        "image": "assets/images/lessons/dharma/dharma_17_learning_scriptures_olai_chuvadi.jpg",
+        "caption": "தத்துவ நூல்களை ஆராய்ந்து விவேகத்தோடு அறவழியில் முடிவெடுத்தல்"
+    },
+    (9, 4): {
+        "image": "assets/images/lessons/dharma/dharma_18_forgiveness_resolving_dispute.jpg",
+        "caption": "யம நியமங்களை அன்றாட வாழ்வில் கடைப்பிடித்து இன்சொல்லும் பொறுமையும் காத்தல்"
+    },
+    (9, 5): {
+        "image": "assets/images/lessons/dharma/dharma_10_truthful_merchant_dharma.jpg",
+        "caption": "அரசியலிலும் சமூகத்திலும் நடுவுநிலைமை தவறாது நேர்மையோடு கடமையாற்றுதல்"
+    },
+
+    # Grade 10
+    (10, 1): {
+        "image": "assets/images/lessons/dharma/dharma_03_pancha_maha_yajna_offering.jpg",
+        "caption": "ஆணவம், கன்மம், மாயை விலக்கி பதிப் பரம்பொருளின் திருவடிகளைச் சரணடைதல்"
+    },
+    (10, 2): {
+        "image": "assets/images/lessons/dharma/dharma_13_temple_service_uzhavaram.jpg",
+        "caption": "சரியை, கிரியை, யோகம், ஞானம் நால்வகை நெறிகளிலும் தன்னை அர்ப்பணித்தல்"
+    },
+    (10, 3): {
+        "image": "assets/images/lessons/dharma/dharma_08_satvik_food_preparation.jpg",
+        "caption": "காஞ்சி மகா பெரியவா அருளிய சனாதன தர்மத்தின்படி தூய சாத்வீக வாழ்வு வாழ்தல்"
+    },
+    (10, 4): {
+        "image": "assets/images/lessons/dharma/dharma_14_charity_annadhanam_festival.jpg",
+        "caption": "விரத நாட்களிலும் திருவிழாக்களிலும் பொதுமக்களுக்கு அன்னதானம் செய்து மகிழ்தல்"
+    },
+    (10, 5): {
+        "image": "assets/images/lessons/dharma/dharma_09_guru_dakshina_reverence.jpg",
+        "caption": "பொதுத் தேர்வில் சிறந்த தேர்ச்சி பெற்று ஆசிரியர்களுக்கும் பெற்றோருக்கும் நற்பெயர் ஈட்டுதல்"
+    },
+
+    # Grade 11
+    (11, 1): {
+        "image": "assets/images/lessons/dharma/dharma_12_mutual_respect_spouses.jpg",
+        "caption": "சிந்தனைத் தெளிவும் பரஸ்பர மரியாதையும் கொண்டு வாழ்வியல் சிக்கல்களைத் தீர்த்தல்"
+    },
+    (11, 2): {
+        "image": "assets/images/lessons/dharma/dharma_19_frugal_noble_living.jpg",
+        "caption": "அழியக்கூடிய உலகப் பொருள்களைக் காட்டிலும் அழியாத ஆத்ம ஞானத்திற்கு முதலிடம் அளித்தல்"
+    },
+    (11, 3): {
+        "image": "assets/images/lessons/dharma/dharma_17_learning_scriptures_olai_chuvadi.jpg",
+        "caption": "சிவஞானபோதத்தின் தர்க்கவியல் முறைப்படி வாழ்க்கையின் தத்துவங்களை ஆய்ந்தறிதல்"
+    },
+    (11, 4): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "பஞ்ச கோசங்களையும் கடந்து தூய ஆனந்தமய ஆன்ம விழிப்புணர்வில் நிலைபெறுதல்"
+    },
+    (11, 5): {
+        "image": "assets/images/lessons/dharma/dharma_09_guru_dakshina_reverence.jpg",
+        "caption": "உயர்தர ஆய்வுக் கல்வியில் பாரதத்தின் தத்துவ ஞானத்தை உலக அரங்கில் நிலைநாட்டுதல்"
+    },
+
+    # Grade 12
+    (12, 1): {
+        "image": "assets/images/lessons/dharma/dharma_20_peaceful_fulfillment_old_age.jpg",
+        "caption": "உடலோடு வாழும் போதே மன அமைதியும் முக்தியும் பெற்று சான்றோனாகத் திகழ்தல்"
+    },
+    (12, 2): {
+        "image": "assets/images/lessons/dharma/dharma_18_forgiveness_resolving_dispute.jpg",
+        "caption": "'எல்லாரும் இன்புற்றிருக்க நினைப்பதுவே' எனும் தாயுமானவ சுவாமிகளின் சமரச நேயம்"
+    },
+    (12, 3): {
+        "image": "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
+        "caption": "பிரபஞ்ச இயக்கத்தோடு தன் மனதை ஒருமுகப்படுத்தி ஆத்ம அமைதி காணுதல்"
+    },
+    (12, 4): {
+        "image": "assets/images/lessons/dharma/dharma_15_planting_shade_trees.jpg",
+        "caption": "சுற்றுச்சூழலைக் காத்து அடுத்த தலைமுறைக்காக மரங்களையும் நீராதாரங்களையும் பாதுகாத்தல்"
+    },
+    (12, 5): {
+        "image": "assets/images/lessons/dharma/dharma_20_peaceful_fulfillment_old_age.jpg",
+        "caption": "அறவழியில் இல்லறம் நடத்தி நிறைவடைந்த முதியோரின் சாந்தமும் உலக நன்மைக்கான ஆசியும்"
+    }
+}
+
+def enrich_unit(grade_num, unit):
+    u_num = unit["num"]
+    title = unit["title"]
+    
+    # Retrieve visual info from mapping if available
+    visual_info = UNIT_VISUAL_MAP.get((grade_num, u_num), {})
+    diagram_key = visual_info.get("diagram_key", "dinacharya")
+    hero_image = visual_info.get("hero_image", "assets/images/lessons/temple_architecture.jpg")
+    hero_caption = visual_info.get("hero_caption", f"தரம் {grade_num} • {title}")
+
+    # Story and Dharma visuals
+    story_info = UNIT_STORY_ARTWORKS.get((grade_num, u_num), {})
+    dharma_info = UNIT_DHARMA_ARTWORKS.get((grade_num, u_num), {})
+
+    # Vocabulary builder
+    vocab = []
+    # Objectives
+    objectives = []
+    # Deep dive sub-sections
+    deep_dive = []
+    # Interactive quiz items
+    quiz = []
+    # Daily sadhana checklist
+    sadhana = []
+
+    # Specific enrichments based on topic keywords and diagram types
+    if "திருநீறு" in title or "சின்னங்கள்" in title:
+        vocab = [
+            {"term": "திரிபுண்டரம் (Tripundram)", "meaning": "நெற்றியில் அணியப்படும் மூன்று வெண்மையான திருநீற்றுக் கோடுகள்."},
+            {"term": "மும்மலம் (Three Malas)", "meaning": "ஆணவம் (செருக்கு), கன்மம் (வினை), மாயை (மயக்கம்) ஆகிய ஆன்மாவைப் பிணித்துள்ள மூன்று மாசுகள்."},
+            {"term": "விபூதி (Vibhuti)", "meaning": "அக்னியில் புடமிடப்பட்டு தூய்மையாக்கப்பட்ட ஆன்மீகச் சாம்பல்; 'பேரொளி' மற்றும் 'செல்வம்' என்று பொருள்."}
+        ]
+        objectives = [
+            "சிவ சின்னங்களின் ஆன்மீகப் பெருமையையும் அறிவியல் அவசியத்தையும் அறிதல்.",
+            "திருநீற்றை நெற்றியில் முறைப்படி மூன்று கோடுகளாக (திரிபுண்டரம்) அணியும் நெறியைக் கற்றல்.",
+            "மும்மலங்களை நீக்குவதற்கான வைராக்கியத்தை அன்றாட வாழ்வில் உருவாக்குதல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. திருநீற்றின் தோற்றமும் தயாரிப்பு முறையும் (Preparation & Sacred Origin)",
+                "content": "திருநீறு என்பது சாதாரண மரக்கட்டைச் சாம்பல் அல்ல. அது நாட்டுப் பசுவின் தூய சாணத்தை எடுத்து, உருண்டைகளாக்கி, உலர்த்தி, வேதியியல் முறைப்படி 'சிவாகம' விதிகளின்படி உமி மற்றும் பசு நெய்யால் வேள்வித் தீயில் சுட்டுத் தயாரிக்கப்படுவதாகும். இவ்வாறு அக்னியில் எரிக்கப்படும் போது அதில் உள்ள நுண்ணுயிர்ப் பொருட்கள் தூய்மையாகி, உடலின் அதிகப்படியான ஈரப்பதத்தை உறிஞ்சி தலைவலி, சளி போன்றவற்றைப் போக்கும் மருத்துவக் குணம் பெறுகிறது."
+            },
+            {
+                "heading": "2. மூன்று விரல்களால் அணியும் தத்துவம் (Why Use Three Fingers?)",
+                "content": "திருநீற்றை அள்ளி நெற்றியில் வீசக் கூடாது. வலது கையின் நடு மூன்று விரல்களான மோதிர விரல், நடுவிரல், ஆள்காட்டி விரல் (அல்லது பெருவிரல் துணையுடன்) ஆகியவற்றால் எடுத்து கிழக்கு அல்லது வடக்கு நோக்கி நின்று அணிய வேண்டும். இந்த மூன்று விரல்களும் பராசக்தி, ஞானசக்தி, கிரியாசக்தி ஆகிய முச்சக்திகளையும், மும்மலங்களை சுட்டெரிக்கும் சங்கற்பத்தையும் நினைவூட்டுகின்றன."
+            },
+            {
+                "heading": "3. மாணவர் வாழ்வில் திருநீற்றின் பங்கு (Benefits for Students)",
+                "content": "நெற்றியின் புருவ மத்தியில் உள்ள ஆக்ஞா சக்கரம் (நினைவாற்றல் மையம்) திருநீறு பூசுவதால் எப்போதும் குளிர்ச்சியாகவும் விழிப்புணர்ச்சியுடனும் வைக்கப்படுகிறது. இது மாணவர்களின் கவனக்குவிப்பை (Focus) அதிகரித்து, தேவையற்ற எதிர்மறை எண்ணங்கள் உள்ளே புகாமல் கவசமாகப் பாதுகாக்கிறது."
+            }
+        ]
+        quiz = [
+            {"q": "திருநீறு நெற்றியில் அணியப்படும் மூன்று கோடுகளுக்கு என்ன பெயர்?", "a": "திரிபுண்டரம் (Tripundram).", "hint": "'திரி' என்றால் மூன்று, 'புண்டரம்' என்றால் குறி."},
+            {"q": "திருநீறு உடலுக்குத் தரும் மருத்துவ நன்மை யாது?", "a": "தலையில் உள்ள அதிகப்படியான நீர்க் கோர்வையை உறிஞ்சி, நரம்புகளைக் குளிர்வித்து நினைவாற்றலைத் தூண்டுகிறது.", "hint": "புருவ மத்தியில் உள்ள ஆக்ஞா சக்கரத்தை நினைவில் கொள்க."},
+            {"q": "திருநீற்றை எந்தத் திசையை நோக்கி நின்று அணிய வேண்டும்?", "a": "கிழக்கு அல்லது வடக்குத் திசையை நோக்கி நின்று இறை நாமங்களை உச்சரித்து அணிய வேண்டும்.", "hint": "சூரியன் உதிக்கும் திசை அல்லது புனித இமயமலை திசை."}
+        ]
+        sadhana = [
+            "காலை நீராடிய பின் 'ஓம் நமசிவாய' கூறி திருநீறு அணிந்தேன்.",
+            "திருநீற்றை நிலத்தில் சிந்தாமல் மரியாதையோடு கையாண்டேன்.",
+            "மாலையிலும் முகம் கழுவி திருநீறு தரித்து கல்வி பயில அமர்ந்தேன்."
+        ]
+
+    elif "கோயில்" in title or "ஆலயம்" in title or "வழிபாடு" in title:
+        vocab = [
+            {"term": "ராஜகோபுரம் (Gopuram)", "meaning": "திருக்கோயிலின் முதன்மை நுழைவாயிலில் விண்ணை முட்டி நிற்கும் பிரம்மாண்டக் கோபுரம்; உடலின் பாதத்தைக் குறிப்பது."},
+            {"term": "பலிபீடம் (Balipitham)", "meaning": "நந்தியின் அருகில் உள்ள பீடம்; கோயிலுக்குள் நுழையும் முன் நம் அகந்தை மற்றும் சுயநலத்தை பலியிடும் இடம்."},
+            {"term": "கர்ப்பக்கிருகம் (Sanctum)", "meaning": "இறைவன் எழுந்தருளியுள்ள கருவறை; மனித உடலின் இருதய ஸ்தானத்தைக் குறிப்பது."}
+        ]
+        objectives = [
+            "திருக்கோயில் அமைப்பு மனித உடலோடு எவ்வாறு ஒப்பிடப்படுகிறது என்பதைப் புரிந்துகொள்ளுதல்.",
+            "கோயிலுக்குள் நுழையும் போது கடைப்பிடிக்க வேண்டிய 5 புனித ஒழுக்கங்களைக் கற்றல்.",
+            "நந்தி தேவரை வணங்கி சிவலிங்கப் பெருமானைத் தரிசிக்கும் முறையை அறிதல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. 'உடம்பே ஆலயம்' — திருமூலர் காட்டும் தத்துவம்",
+                "content": "திருக்கோயில் என்பது வெறும் கல் கட்டடம் அல்ல; அது மனித உடலின் மாபெரும் குறியீடாகும். கோபுரம் பாதம், கொடிமரம் மூலாதாரம் முதல் பிரம்மரந்திரம் வரை செல்லும் சுழுமுனை நாடி, பலிபீடம் நமது ஆணவம், நந்தி நமது ஆன்மா, கருவறை நமது இதயம். எனவே கோயிலை வலம் வரும் போது நம் உடலையும் உள்ளத்தையும் தூய்மையாக்குகிறோம் என்ற உணர்வு வேண்டும்."
+            },
+            {
+                "heading": "2. ஆலயம் செல்லும் முறையான படிநிலைகள் (Step-by-Step Temple Etiquette)",
+                "content": "1) காலணிகளைக் கோயிலுக்கு வெளியே பாதுகாப்பாக விட வேண்டும். 2) கை, கால்களைக் கழுவி தூய ஆடையில் செல்ல வேண்டும். 3) ராஜகோபுரத்தைக் கண்டதும் இருகரம் கூப்பி 'கோபுர தரிசனம் கோடி புண்ணியம்' என வணங்க வேண்டும். 4) கொடிமரத்தின் முன் ஆண்கள் அஷ்டாங்க நமஸ்காரமும், பெண்கள் பஞ்சாங்க நமஸ்காரமும் செய்ய வேண்டும். 5) நந்தி பகவானின் இரு கொம்புகளின் நடுவே கருவறைச் சிவனை அமைதியாகத் தரிசிக்க வேண்டும்."
+            },
+            {
+                "heading": "3. கோயிலில் செய்யக் கூடாதவை (Important Don'ts in a Temple)",
+                "content": "சத்தமாகப் பேசுதல், கைபேசியைப் பயன்படுத்துதல், வீண் அரட்டையடித்தல், கொடிமரத்திற்கும் நந்திக்கும் நடுவே நடத்தல், விக்ரகங்களைத் தொடுதல் ஆகியவற்றைத் தவிர்க்க வேண்டும். அங்கு நிலவும் அமைதியான தெய்வீக அலைகளை நம் மனதிற்குள் உள்வாங்க வேண்டும்."
+            }
+        ]
+        quiz = [
+            {"q": "திருக்கோயிலில் பலிபீடம் எதைக் குறிக்கிறது?", "a": "நமது ஆணவத்தையும் (சுயநல அகங்காரம்) தீய எண்ணங்களையும் இறைவனிடம் பலியிட்டு முழுமையாகச் சரணடைவதைக் குறிக்கிறது.", "hint": "உயிர்ப் பலி அல்ல; மனப்பலி!"},
+            {"q": "நந்தி பகவானை எவ்வாறு தரிசிக்க வேண்டும்?", "a": "நந்தியின் இரு கொம்புகளின் இடைவெளியின் வழியே கருவறையில் உள்ள சிவலிங்கப் பெருமானைத் தரிசிக்க வேண்டும்.", "hint": "நந்தி ஆன்மாவின் பணிவைக் காட்டுகிறது."},
+            {"q": "திருக்கோயிலில் கொடிமரம் உடலின் எந்தப் பகுதியோடு ஒப்பிடப்படுகிறது?", "a": "மனித உடலின் முதுகெலும்பு மற்றும் சுழுமுனை நாடி (Spinal column / Kundalini path).", "hint": "மூலாதாரத்திலிருந்து தலை உச்சி வரை செல்லும் பாதை."}
+        ]
+        sadhana = [
+            "கோயிலுக்குச் செல்லும்போது அமைதியாகவும் பயபக்தியுடனும் இருந்தேன்.",
+            "கொடிமரத்தின் முன் வீழ்ந்து வணங்கி எனது சுயநல எண்ணங்களை விட்டுவிட்டேன்.",
+            "கருவறை தீபாராதனையின் போது கண்களை மூடி இறைவனை நெஞ்சில் உணர்ந்தேன்."
+        ]
+
+    elif "திருக்குறள்" in title:
+        vocab = [
+            {"term": "முப்பால் (Trivarga)", "meaning": "அறத்துப்பால், பொருட்பால், காமத்துப்பால் (இன்பத்துப்பால்) ஆகிய வாழ்வின் மூன்று பெரும் பகுதிகள்."},
+            {"term": "வாய்மை (Truthfulness)", "meaning": "'வாய்மை எனப்படுவது யாதெனின் யாதொன்றும் தீமை இலாத சொலல்' — பிறருக்குத் தீங்கு தராத நன்மொழி."},
+            {"term": "ஒழுக்கம் (Virtuous Conduct)", "meaning": "உயிரினும் மேலாகப் போற்றிப் பாதுகாக்கப்பட வேண்டிய வாழ்வியல் தூய்மை."}
+        ]
+        objectives = [
+            "திருக்குறள் உலகப் பொதுமறை எனப் போற்றப்படுவதன் காரணத்தை உணர்தல்.",
+            "அறம், பொருள், இன்பம் என்ற முப்பால் நெறிகளை அன்றாட வாழ்வில் பின்பற்றுதல்.",
+            "குறட்பாக்களின் ஆழ்ந்த தத்துவப் பொருளை உணர்ந்து நெட்டுருச் செய்தல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. வள்ளுவம் காட்டும் உலகளாவிய அறம் (Universal Ethics)",
+                "content": "திருக்குறள் எந்த ஒரு குறிப்பிட்ட மதத்திற்கோ, மொழிக்கோ, நாட்டிற்கோ உரிய நூல் அல்ல. மனித குலம் முழுமைக்கும் தேவையான அறநெறிகளைப் பேசும் மாபெரும் வாழ்வியல் களஞ்சியம். சாதி, மத எல்லைகளைக் கடந்து அனைத்து மனிதர்களும் கடைப்பிடிக்க வேண்டிய பொது உண்மைகளை வள்ளுவப் பெருந்தகை 1330 குறட்பாக்களில் வகுத்தளித்துள்ளார்."
+            },
+            {
+                "heading": "2. மாணவர்களுக்கான கல்வி நெறி (The Pillar of Learning)",
+                "content": "'கற்க கசடறக் கற்பவை கற்றபின் நிற்க அதற்குத் தக' — நாம் கற்கும் கல்வியை ஐயமறக் கற்க வேண்டும்; கற்ற கல்வியின் நெறியில் நமது நடத்தை அமைய வேண்டும். கல்வி என்பது மதிப்பெண்களுக்காக மட்டுமல்ல, சிறந்த நற்குணங்களை உருவாக்குவதற்கே என்பதை வள்ளுவர் கற்பிக்கிறார்."
+            },
+            {
+                "heading": "3. மெய்யுணர்தல் — உண்மைப் பொருளைக் காணும் பேரறிவு",
+                "content": "'எப்பொருள் எத்தன்மைத் தாயினும் அப்பொருள் மெய்ப்பொருள் காண்பது அறிவு'. ஒரு செய்தியை யார் கூறினாலும், அதன் புறத்தோற்றத்தைக் கண்டு மயங்காமல், அதன் உண்மைத் தன்மையை ஆராய்ந்து அறியும் பகுத்தறிவே மெய்யறிவாகும்."
+            }
+        ]
+        quiz = [
+            {"q": "திருக்குறளில் உள்ள மொத்த அதிகாரங்கள் மற்றும் குறட்பாக்கள் எத்தனை?", "a": "133 அதிகாரங்கள் மற்றும் 1330 குறட்பாக்கள்.", "hint": "ஒரு அதிகாரத்திற்கு 10 குறள்கள் வீதம்."},
+            {"q": "திருக்குறளின் மூன்று பால்கள் யாவை?", "a": "அறத்துப்பால், பொருட்பால், இன்பத்துப்பால் (காமத்துப்பால்).", "hint": "தர்ம, அர்த்த, காம."},
+            {"q": "'ஒழுக்கம் விழுப்பம் தரலான்' என்ற குறள் ஒழுக்கத்தை எதனினும் உயர்ந்ததாகக் கூறுகிறது?", "a": "உயிரினும் மேலானதாகக் கூறுகிறது ('ஒழுக்கம் உயிரினும் ஓம்பப் படும்').", "hint": "மனிதனின் விலைமதிப்பற்ற உயிர்."}
+        ]
+        sadhana = [
+            "தினமும் ஒரு திருக்குறளையாவது பொருளுடன் மனப்பாடம் செய்தேன்.",
+            "பேசும் போது பிறர் மனம் புண்படாத இன்சொற்களை மட்டுமே பேசினேன்.",
+            "கற்ற கல்வியின்படி நேர்மையாகவும் உண்மையாகவும் நடந்துகொண்டேன்."
+        ]
+
+    elif "வள்ளலார்" in title or "அருட்பெருஞ்ஜோதி" in title or "ஜீவகாருண்யம்" in title:
+        vocab = [
+            {"term": "அருட்பெருஞ்ஜோதி", "meaning": "அளவிட முடியாத எல்லையற்ற கருணை நிறைந்த முழுமுதற் கடவுளின் ஜோதி வடிவம்."},
+            {"term": "ஜீவகாருண்யம் (Compassion)", "meaning": "மனிதர்கள் மட்டுமல்லாமல் புல், பூண்டு, மரம், விலங்கு உள்ளிட்ட அனைத்து உயிர்களிடத்தும் காட்டும் கருணை."},
+            {"term": "ஆன்மநேய ஒருமைப்பாடு", "meaning": "உலகிலுள்ள அனைத்து உயிர்களையும் தன்னுயிர் போலக் கருதும் உன்னத ஆன்மீக ஒருமை."}
+        ]
+        objectives = [
+            "வள்ளலாரின் ஜீவகாருண்ய ஒழுக்கத்தின் மேன்மையை அறிதல்.",
+            "பசித்திருக்கும் உயிர்களுக்கு உணவளிக்கும் அன்னதான தர்மத்தைப் புரிந்துகொள்ளுதல்.",
+            "சாதி, மத பேதங்களைக் கடந்து அனைத்து உயிர்களிடத்தும் அன்பு செலுத்துதல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. 'வாடிய பயிரைக் கண்டபோதெல்லாம் வாடினேன்' — வள்ளலாரின் பெருங்கருணை",
+                "content": "வடலூர் இராமலிங்க வள்ளலார் பெருமான் உலக உயிர்களின் பசியையும் துன்பத்தையும் கண்டு உருகிய கருணைக் கடல். வாயில்லாப் பிராணிகள் மட்டுமன்றி, நீரின்றிக் காய்ந்த பயிரைக் கண்டபோதும் தன் நெஞ்சம் வாடியதாகப் பாடியவர். எல்லா உயிர்களிலும் விளங்குவது ஒரே ஆன்ம ஜோதியே என்பதை அவர் மெய்ப்பித்தார்."
+            },
+            {
+                "heading": "2. வடலூர் சத்திய தருமச்சாலை — அணையாத அடுப்பு",
+                "content": "1867-ஆம் ஆண்டு வடலூரில் வள்ளலாரால் ஏற்றப்பட்ட சத்திய தருமச்சாலையின் அடுப்பு, 150 ஆண்டுகளுக்கும் மேலாக இன்று வரை அணையாமல் தொடர்ந்து பசித்த ஏழைகளுக்கு உணவளித்து வருகிறது. 'பசிப்பிணி நீக்குவதே இறைவழிபாட்டின் முதற்படி' என்பதை வள்ளலார் உலகுக்குச் செயலில் காட்டினார்."
+            },
+            {
+                "heading": "3. அருட்பெருஞ்ஜோதி தனிப்பெருங்கருணை — ஜோதி வழிபாடு",
+                "content": "உருவ வழிபாட்டின் உச்ச நிலையாக விளங்குவது ஜோதி வழிபாடாகும். அறியாமை, சுயநலம், பொறாமை போன்ற ஏழு திரைகளை விலக்கினால், உள்ளே ஆன்மாவில் வீற்றிருக்கும் இறைவனின் அருட்பெருஞ்ஜோதியைக் காண முடியும் என வள்ளலார் வழிகாட்டினார்."
+            }
+        ]
+        quiz = [
+            {"q": "'வாடிய பயிரைக் கண்டபோதெல்லாம் வாடினேன்' என்று பாடிய மகான் யார்?", "a": "திருவருட்பிரகாச வள்ளலார் (வடலூர் இராமலிங்க அடிகள்).", "hint": "சமரச சுத்த சன்மார்க்க நெறியை நிறுவியவர்."},
+            {"q": "வடலூர் சத்திய தருமச்சாலையில் எப்போது முதல் அடுப்பு அணையாமல் எரிந்து வருகிறது?", "a": "1867-ஆம் ஆண்டு முதல் இன்று வரை.", "hint": "நூற்று ஐம்பது ஆண்டுகளுக்கும் மேலாக."},
+            {"q": "வள்ளலார் அருளிய மகா மந்திரம் எது?", "a": "'அருட்பெருஞ்ஜோதி அருட்பெருஞ்ஜோதி தனிப்பெருங்கருணை அருட்பெருஞ்ஜோதி'.", "hint": "ஜோதி மற்றும் கருணை நிறைந்த மந்திரம்."}
+        ]
+        sadhana = [
+            "பறவைகளுக்கும் வாயில்லா விலங்குகளுக்கும் உணவும் தண்ணீரும் வைத்தேன்.",
+            "உணவை வீணாக்காமல் நன்றியோடு உண்டேன்.",
+            "எல்லா மனிதர்களிடமும் சாதி பேதமின்றி சகோதர உணர்வோடு பழகினேன்."
+        ]
+
+    elif "நால்வர்" in title or "அப்பர்" in title or "சம்பந்தர்" in title or "சுந்தரர்" in title or "மாணிக்கவாசகர்" in title:
+        vocab = [
+            {"term": "சமயக் குரவர் நால்வர்", "meaning": "திருஞானசம்பந்தர், திருநாவுக்கரசர் (அப்பர்), சுந்தரமூர்த்தி நாயனார், மாணிக்கவாசகர்."},
+            {"term": "சரியை (Charya)", "meaning": "உடலால் இறைவனுக்கும் திருக்கோயிலுக்கும் செய்யும் உழவாரப் பணி மற்றும் தொண்டு (தாச மார்க்கம்)."},
+            {"term": "ஞானம் (Jnana)", "meaning": "அறிவால் இறைவனை உணர்ந்து இரண்டறக் கலக்கும் உயர்ந்த நிலை (சன்மார்க்கம்)."}
+        ]
+        objectives = [
+            "சமயக் குரவர் நால்வரும் உலகிற்கு வழிகாட்டிய நான்கு ஆன்மீக நெறிகளை அறிதல்.",
+            "அப்பரின் உழவாரப் பணியைப் போல பிறருக்கு தன்னலமற்ற சேவை செய்யும் மனப்பான்மையை வளர்த்தல்.",
+            "திருவாசகம் மற்றும் தேவாரப் பாடல்களின் இனிமையை உணர்ந்து பாடுதல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. நால்வரின் நான்கு பெருவழிகள் (The 4 Divine Paths)",
+                "content": "1) அப்பர் காட்டிய தாச மார்க்கம் (சரியை): இறைவனைத் தலைவனாகவும், தன்னைத் தொண்டனாகவும் பாவித்து திருக்கோயில் வளாகத்தைத் தூய்மை செய்யும் உழவாரப் பணி. 2) சம்பந்தர் காட்டிய சற்புத்திர மார்க்கம் (கிரியை): இறைவனைத் தந்தையாகவும் தன்னை மகனாகவும் பாவித்து மலர் தூவி வழிபடும் பக்தி. 3) சுந்தரர் காட்டிய சக மார்க்கம் (யோகம்): இறைவனை ஆருயிர் தோழனாகப் பாவித்து உள்ளத்தில் தியானிக்கும் யோகம். 4) மாணிக்கவாசகர் காட்டிய சன்மார்க்கம் (ஞானம்): இறைவனோடு இரண்டறக் கலந்து பேரன்பில் திளைக்கும் மெய்ஞானம்."
+            },
+            {
+                "heading": "2. அப்பரின் வீரமும் வைராக்கியமும்",
+                "content": "'நாமார்க்கும் குடியல்லோம் நமனை அஞ்சோம்' என்று பல்லவ மன்னனின் ஆணையை எதிர்த்து நின்றவர் அப்பர் பெருமான். சுண்ணாம்புக் காளவாயில் போட்ட போதும் 'மாசில் வீணையும் மாலை மதியமும்' எனப் பாடி சிவனை நினைத்து ஆனந்தமாக இருந்தார். உண்மையான இறைபக்தி உள்ளவனுக்கு உலகியல் அச்சங்கள் எதுவும் இருப்பதில்லை."
+            },
+            {
+                "heading": "3. மாணிக்கவாசகரின் உருகும் பக்தி",
+                "content": "'திருவாசகத்திற்கு உருகார் ஒரு வாசகத்திற்கும் உருகார்' என்பது பழமொழி. தனது அமைச்சர் பதவியையும் செல்வத்தையும் துறந்து சிவபெருமானின் திருவடிக்குத் தன் வாழ்வையே அர்ப்பணித்தவர். அன்பினால் மட்டுமே இறைவனை அடைய முடியும் என்பதை அவரது திருவாசகம் மெய்ப்பிக்கிறது."
+            }
+        ]
+        quiz = [
+            {"q": "உழவாரப் படையுடன் திருக்கோயில்களைத் தூய்மை செய்த சமயக் குரவர் யார்?", "a": "திருநாவுக்கரசர் (அப்பர் பெருமான்).", "hint": "தாச மார்க்கத்தின் தலைவர்."},
+            {"q": "சுந்தரமூர்த்தி நாயனார் இறைவனை எந்த முறையில் வழிபட்டார்?", "a": "சக மார்க்கம் — இறைவனைத் தோழனாக (நண்பனாக) பாவித்து வழிபட்டார்.", "hint": "தம்பிரான் தோழர் என அழைக்கப்படுபவர்."},
+            {"q": "'நாமார்க்கும் குடியல்லோம் நமனை அஞ்சோம்' என்ற வீர முழக்கத்தைப் பாடியவர் யார்?", "a": "அப்பர் பெருமான் (திருநாவுக்கரசர்).", "hint": "சுண்ணாம்புக் காளவாயில் இருந்து மீண்டவர்."}
+        ]
+        sadhana = [
+            "வீட்டிலும் பள்ளியிலும் குப்பைகளை அகற்றி அப்பரைப் போல தூய்மைப் பணி செய்தேன்.",
+            "தினமும் ஒரு தேவாரப் பாடலையாவது இனிமையாகப் பாடினேன்.",
+            "நண்பர்களோடு சுந்தரரைப் போல நேர்மையோடும் உண்மை அன்போடும் பழகினேன்."
+        ]
+
+    elif "நடராஜர்" in title or "தாண்டவம்" in title or "இயற்பியல்" in title or "சிதம்பரம்" in title:
+        vocab = [
+            {"term": "ஆனந்த தாண்டவம்", "meaning": "சிதம்பரப் பொன்னம்பலத்தில் சிவபெருமான் இடைவிடாது நிகழ்த்தும் பிரபஞ்சப் பேரானந்தத் திருநடனம்."},
+            {"term": "பஞ்ச கிருத்தியம் (5 Divine Deeds)", "meaning": "சிருஷ்டி (படைத்தல்), திதி (காத்தல்), சங்காரம் (அழித்தல்), திரோபாவம் (மறைத்தல்), அனுக்ரகம் (முத்தியளித்தல்)."},
+            {"term": "முயலகன்", "meaning": "நடராஜரின் ஊன்றிய திருவடியின் கீழ் கிடக்கும் குள்ள வடிவம்; மனிதனின் ஆணவ அறியாமையின் குறியீடு."}
+        ]
+        objectives = [
+            "நடராஜ பெருமானின் ஐந்து திருக்கர/திருவடி இயக்கங்களின் தத்துவத்தை அறிதல்.",
+            "நவீன அணு இயற்பியலும் (Quantum Physics) நடராஜர் தாண்டவமும் எவ்வாறு ஒத்திருக்கின்றன என்பதைப் புரிந்துகொள்ளுதல்.",
+            "சிதம்பர ரகசியத்தின் மெய்ப்பொருளான 'வெட்டவெளி' (ஆகாசம்) தத்துவத்தைக் கற்றல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. நடராஜரின் திருவுருவக் குறியீடுகள் (Divine Iconography of Nataraja)",
+                "content": "வலது மேல் கையில் உடுக்கை — பிரபஞ்ச அணுக்களையும் ஒலியையும் படைத்தல் (சிருஷ்டி); இடது மேல் கையில் எரியகழல் — பழையவற்றை மாற்றி புதியவற்றிற்கு இடமளிக்கும் அழித்தல் (சங்காரம்); வலது கீழ்க் கையில் அபய முத்திரை — அஞ்சேல் என அனைத்து உயிர்களையும் காத்தல் (திதி); ஊன்றிய வலது திருவடி — ஆணவ அறியாமையான முயலகனை அடக்கி மறைத்தல் (திரோபாவம்); தூக்கிய இடது திருவடி — தன்னிடம் சரணடைந்த ஆன்மாக்களுக்குப் பிறவித் துன்பம் நீக்கி முக்தி அருளுதல் (அனுக்ரகம்)."
+            },
+            {
+                "heading": "2. குவாண்டம் இயற்பியலும் நடராஜர் நடனமும் (CERN & Fritjof Capra)",
+                "content": "சுவிட்சர்லாந்தின் உலகப் புகழ்பெற்ற அணு ஆராய்ச்சி மையமான 'CERN' வாசலில் 2 மீட்டர் உயர நடராஜர் திருவுருவம் நிறுவப்பட்டுள்ளது. இயற்பியலாளர் பிரிட்ஜோஃப் காப்ரா (Fritjof Capra) தனது 'The Tao of Physics' நூலில், 'அணுவுக்குள் இருக்கும் நுண்ணிய துகள்கள் இடையறாது சுழன்று இயங்குவது சிவபெருமானின் ஆனந்த தாண்டவத்திற்கு ஒப்பானது' என வியந்து கூறுகிறார்."
+            },
+            {
+                "heading": "3. சிதம்பர ரகசியம் (The Secret of Void / Chidambara Rahasya)",
+                "content": "சிதம்பரக் கோயிலில் நடராஜர் திருவுருவத்திற்கு அருகில் ஒரு திரை இருக்கும். அந்தத் திரையை விலக்கினால் அங்கு உருவம் எதுவும் இருக்காது; தங்க வில்வ மாலை மட்டுமே தொங்கும். இறைவன் உருவமாகவும் இருக்கிறார் (சகளன்), உருவமற்ற வெட்டவெளியாகவும் எங்கும் வியாபித்திருக்கிறார் (நிஷ்களன்) என்பதை இது உணர்த்துகிறது."
+            }
+        ]
+        quiz = [
+            {"q": "நடராஜரின் கையில் உள்ள உடுக்கை எந்தத் தொழிலைக் குறிக்கிறது?", "a": "சிருஷ்டி — பிரபஞ்சத்தையும் ஒலியையும் படைக்கும் தொழில்.", "hint": "ஓங்கார நாதம் எழும் கருவி."},
+            {"q": "நடராஜரின் தூக்கிய திருவடி எதனை உணர்த்துகிறது?", "a": "அனுக்ரகம் — பிறவித் துன்பங்களிலிருந்து ஆன்மாவிற்கு விடுதலை (முக்தி) அளித்தல்.", "hint": "சரணடைந்தோருக்குப் புகலிடம்."},
+            {"q": "எந்த சர்வதேச விஞ்ஞான ஆராய்ச்சி நிறுவனத்தின் வளாகத்தில் நடராஜர் சிலை நிறுவப்பட்டுள்ளது?", "a": "ஐரோப்பிய அணு ஆராய்ச்சி நிறுவனம் (CERN - Geneva, Switzerland).", "hint": "லார்ஜ் ஹாட்ரான் கொலைடர் அமைந்துள்ள மையம்."}
+        ]
+        sadhana = [
+            "பிரபஞ்சத்தின் ஒவ்வொரு அணுவிலும் இறைவனின் பேரொழுங்கு இருப்பதை உணர்ந்தேன்.",
+            "கோபத்தையும் அகந்தையையும் முயலகனைப் போல என் காலடியில் அடக்கினேன்.",
+            "சிதம்பர ரகசியத்தை நினைவுகூர்ந்து மனதை அமைதியான வெட்டவெளியாக்கினேன்."
+        ]
+
+    elif "யோகம்" in title or "அட்டாங்க" in title or "திருமந்திரம்" in title:
+        vocab = [
+            {"term": "அட்டாங்க யோகம் (Ashtanga Yoga)", "meaning": "இயமம், நியமம், ஆதனம், பிராணாயாமம், பிரத்தியாகாரம், தாரணை, தியானம், சமாதி ஆகிய 8 படிகள்."},
+            {"term": "பிராணாயாமம் (Pranayama)", "meaning": "மூச்சுக்காற்றை முறைப்படுத்தி மனதை அடக்கும் சுவாசக் கலை."},
+            {"term": "சமாதி (Samadhi)", "meaning": "ஆன்மா இறைவனோடு இரண்டறக் கலந்து பேரமைதி பெறும் உச்ச நிலை."}
+        ]
+        objectives = [
+            "திருமூலர் காட்டும் அட்டாங்க யோகத்தின் எட்டுப் படிகளை வரிசையாக அறிதல்.",
+            "தினசரி பிராணாயாமம் செய்வதால் நினைவாற்றல் மற்றும் உடல்நலம் பெருகுவதைக் கற்றல்.",
+            "'உடம்பார் அழியில் உயிரார் அழிவர்' என்ற மந்திரத்தின்படி உடலைப் பேணும் நெறியைப் புரிந்துகொள்ளுதல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. 'உடம்பினைப் பெற்ற பயன்' — திருமூலர் வாக்கு",
+                "content": "முற்காலத்தில் பலர் உடம்பை ஒரு மாயை என்றும், அதை வருத்தி அழிக்க வேண்டும் என்றும் எண்ணினர். ஆனால் திருமூலரோ, 'உடம்பார் அழியில் உயிரார் அழிவர்... உடம்பினை முன்னம் இழுக்கென்று எண்ணினேன்; உடம்பினுக் குள்ளே உறுபொருள் கண்டேன்; உடம்புளே உத்தமன் கோயில்கொண்டான் என்று உடம்பினை யான்இருந்து ஓம்புகின்றேனே' என்றார். உடம்பே இறைவன் வாழும் கோயில்; அதைச் சுத்தமாகவும் ஆரோக்கியமாகவும் பேணுவது ஆன்மீகக் கடமையாகும்."
+            },
+            {
+                "heading": "2. அட்டாங்க யோகத்தின் 8 படிகள் (The 8 Limbs Explained)",
+                "content": "1) இயமம்: கொலையாமை, பொய் பேசாமை போன்ற தீய செயல்களைத் தவிர்த்தல். 2) நியமம்: தூய்மை, தவம், திருப்தி போன்ற நற்பண்புகளை வளர்த்தல். 3) ஆதனம்: உடலை நெகிழ்வாக்கும் யோகாசனங்கள். 4) பிராணாயாமம்: சுவாசக் கட்டுப்பாடு. 5) பிரத்தியாகாரம்: புலன்களை வெளி உலக ஆசைகளிலிருந்து உள்நோக்கித் திருப்புதல். 6) தாரணை: மனதை ஒரே இலக்கில் நிலைநிறுத்துதல். 7) தியானம்: இறை நினைவில் ஆழ்ந்திருத்தல். 8) சமாதி: சிவத்தோடு ஒன்றிப்போதல்."
+            },
+            {
+                "heading": "3. மாணவர்களுக்கான எளிய யோகப் பயிற்சி (Daily Student Practice)",
+                "content": "மாணவர்கள் தினமும் 10 நிமிடங்கள் நாடி சுத்தி பிராணாயாமமும், 5 நிமிடங்கள் தியானமும் செய்தால், தேர்வு பயம் நீங்கி, நினைவாற்றல் பன்மடங்கு பெருகும்."
+            }
+        ]
+        quiz = [
+            {"q": "திருமந்திரத்தை இயற்றிய மகா சித்தர் யார்?", "a": "திருமூலர் நாயனார் (மூவாயிரம் ஆண்டுகள் வாழ்ந்து ஆண்டுக்கு ஒரு பாடல் வீதம் அருளியவர்).", "hint": "ஒன்பதாம் திருமுறை அல்ல; பத்தாம் திருமுறை ஆசிரியர்."},
+            {"q": "'உடம்பார் அழியில் உயிரார் அழிவர்' என்று கூறியதன் உட்கருத்து என்ன?", "a": "உடம்பே இறைவன் வாழும் கோயில்; உடம்பை ஆரோக்கியமாகப் பேணினால் மட்டுமே ஆன்மீக அறிவையும் கல்வியையும் முழுமையாகப் பெற முடியும்.", "hint": "உடற்பாதுகாப்பின் ஆன்மீக முக்கியத்துவம்."},
+            {"q": "அட்டாங்க யோகத்தின் நான்காவது படி எது?", "a": "பிராணாயாமம் (மூச்சுப் பயிற்சி).", "hint": "இயமம், நியமம், ஆதனம் ஆகியவற்றிற்கு அடுத்த நிலை."}
+        ]
+        sadhana = [
+            "காலை எழுந்ததும் 5 நிமிடங்கள் நாடிசுத்தி பிராணாயாமம் செய்தேன்.",
+            "உடலை ஆரோக்கியமாக வைக்க சத்தான உணவை மட்டுமே உண்டேன்.",
+            "எந்த நிலையிலும் மன அமைதியை இழக்காமல் தியானத்தில் அமர்ந்தேன்."
+        ]
+
+    elif "வேதம்" in title or "உபநிடதம்" in title or "சாத்திரம்" in title or "ஆகமங்கள்" in title:
+        vocab = [
+            {"term": "அபௌருஷேயம் (Apaurusheya)", "meaning": "எந்த ஒரு மனிதராலும் எழுதப்படாமல் இறைவனின் மூச்சுக் காற்றாக ரிஷிகளின் தவத்தில் வெளிப்பட்ட வேதம்."},
+            {"term": "உபநிடதம் (Upanishad)", "meaning": "வேதங்களின் முடிவான ஞானப் பகுதி (வேதாந்தம்); 'அருகில் அமர்ந்து ரகசிய மெய்ப்பொருளைக் கற்றல்'."},
+            {"term": "சைவ ஆகமங்கள்", "meaning": "சிவபெருமானின் திருவாக்கிலிருந்து வெளிப்பட்ட 28 மூல ஆகமங்கள்; சரியை, கிரியை, யோகம், ஞானம் ஆகிய நால்வகை நெறிகளைக் கூறுபவை."}
+        ]
+        objectives = [
+            "நான்கு வேதங்கள் மற்றும் இருபத்தெட்டு சைவ ஆகமங்களின் கட்டமைப்பைப் புரிந்துகொள்ளுதல்.",
+            "உபநிடதங்கள் மனித வாழ்வின் இறுதி லட்சியமான 'முக்தி' குறித்து என்ன கூறுகின்றன என்பதை அறிதல்.",
+            "சாத்திர நூல்களைக் கற்று வாழ்க்கையில் விவேகத்துடன் செயல்படுதல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. நான்கு வேதங்களின் கட்டமைப்பு (Structure of 4 Vedas)",
+                "content": "வேதங்கள் ரிக், யஜுர், சாம, அதர்வ என நான்காகும். 1) ரிக் வேதம் — இயற்கை சக்திகளையும் இறைவனையும் போற்றும் மந்திரங்கள். 2) யஜுர் வேதம் — அன்றாட யாகங்களும் ஸ்ரீ ருத்ரமும் கொண்ட செயல் நெறி. 3) சாம வேதம் — இறைவனை இன்னிசையோடு பாடும் இசை வேதம். 4) அதர்வ வேதம் — அறிவியல், மருத்துவம், சமுதாய தர்ம வாழ்வியல் நெறிகள்."
+            },
+            {
+                "heading": "2. உபநிடதங்களின் அமிர்த மொழிகள் (The Core Teaching of Upanishads)",
+                "content": "'ஈசாவாஸ்யம் இதம் சர்வம்' — இந்த உலகம் முழுவதும் இறைவனால் நிரம்பியுள்ளது; பிறர் பொருளுக்கு ஆசைப்படாதே என்கிறது ஈசாவாஸ்ய உபநிடதம். 'சத்தியமே வெல்லும் (சத்யமேவ ஜெயதே)' என்கிறது முண்டக உபநிடதம். மனிதன் வெறும் சதையும் எலும்பும் அல்ல; அவன் மரணமற்ற பேரொளியான ஆத்மா என்பதை உபநிடதங்கள் முழங்குகின்றன."
+            },
+            {
+                "heading": "3. வேதமும் சைவமும் (The Unity of Veda & Saiva)",
+                "content": "'வேத நெறி தழைத்தோங்க மிகு சைவத் துறை விளங்க' என்று சேக்கிழார் பாடியது போல, வேதமும் சிவாகமங்களும் ஒரே மரத்தின் வேரும் கனியும் போன்றவை. வேதங்கள் பொதுவானவை; ஆகமங்கள் சிறப்பு வழிபாட்டு நெறிகளைத் தருபவை."
+            }
+        ]
+        quiz = [
+            {"q": "இசைக்கு அடிப்படையாக விளங்கும் வேதம் எது?", "a": "சாம வேதம் (Sama Veda).", "hint": "இனிய கானங்களால் பாடப்படும் வேதம்."},
+            {"q": "'சத்யமேவ ஜெயதே' (வாய்மையே வெல்லும்) என்ற தொடர் எந்த உபநிடதத்திலிருந்து எடுக்கப்பட்டது?", "a": "முண்டக உபநிடதம் (Mundaka Upanishad).", "hint": "இந்திய நாட்டின் தேசிய இலச்சினையில் உள்ள வாசகம்."},
+            {"q": "சைவ ஆகமங்கள் மொத்தம் எத்தனை?", "a": "இருபத்தெட்டு (28) சிவாகமங்கள் (காமிகம் முதல் வாதுளம் வரை).", "hint": "காமிகம் முதலாக வரும் ஆகமங்களின் எண்ணிக்கை."}
+        ]
+        sadhana = [
+            "தினமும் ஒரு நன்னெறி சுலோகத்தையாவது பொருளுடன் கற்றேன்.",
+            "'சத்தியமே வெல்லும்' என்ற கொள்கையுடன் எப்போதும் உண்மையே பேசினேன்.",
+            "வேத ஆகம பாரம்பரியத்தை பெருமையோடு போற்றிப் பாதுகாப்பேன் என உறுதியேற்றேன்."
+        ]
+
+    elif "கன்மம்" in title or "வினை" in title or "தர்மம்" in title or "புருஷார்த்தம்" in title:
+        vocab = [
+            {"term": "கன்மம் (Karma)", "meaning": "நாம் மனம், வாக்கு, காயத்தால் செய்யும் செயல்களும் அதற்கான தவிர்க்க முடியாத விளைவுகளும்."},
+            {"term": "சஞ்சிதம் (Sanchita)", "meaning": "முற்பிறவிகளில் சேர்த்து வைக்கப்பட்ட மொத்த வினைகளின் களஞ்சியம்."},
+            {"term": "பிராரப்தம் (Prarabdha)", "meaning": "இப்பிறவியில் நாம் அனுபவிப்பதற்காக முதிர்ந்து வந்துள்ள வினைப் பயன்."}
+        ]
+        objectives = [
+            "கன்ம வினைக் கோட்பாட்டின் மூன்று நிலைகளைப் புரிந்துகொள்ளுதல்.",
+            "'தீதும் நன்றும் பிறர்தர வாரா' என்ற தமிழ் மறையின்படி நம் வாழ்விற்கு நாமே பொறுப்பு என்பதை உணர்தல்.",
+            "புதிய வினைகள் சேராமல் தூய நற்செயல்களை மட்டுமே செய்யும் மனப்பக்குவத்தை அடைதல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. கன்ம விதியின் அறிவியல் உண்மை (Newton's 3rd Law of Karma)",
+                "content": "'ஒவ்வொரு வினைக்கும் அதற்கு சமமானதும் எதிரானதுமான எதிர்வினை உண்டு' என்பது நியூட்டனின் மூன்றாம் விதி. இதே விதியை ஆன்மீகத்தில் கன்மக் கோட்பாடு கூறுகிறது. நாம் பிறருக்கு அன்பைக் கொடுத்தால் அன்பு திரும்ப வரும்; துன்பத்தைக் கொடுத்தால் ஏதோ ஒரு வடிவில் துன்பம் நம்மை வந்தடையும். 'விதைத்தவன் தினை விதைத்தால் தினை அறுப்பான்; வினை விதைத்தால் வினை அறுப்பான்'."
+            },
+            {
+                "heading": "2. வினைகளின் மூன்று பிரிவுகள் (3 Types of Karma)",
+                "content": "1) சஞ்சிதம்: நெல் சேமித்து வைக்கப்பட்ட பெரிய கிடங்கு போன்றது. 2) பிராரப்தம்: அந்தக் கிடங்கிலிருந்து இந்த வருட உணவுக்காக நாம் எடுத்துச் சமைக்கும் அரிசி போன்றது (இப்பிறவியின் சுக-துக்கங்கள்). 3) ஆகாமியம்: இந்த வருடம் வயலில் நாம் புதிதாக விதைக்கும் விதை போன்றது (நிகழ்காலத்தில் செய்யும் புதிய செயல்கள்)."
+            },
+            {
+                "heading": "3. கன்ம வினையிலிருந்து விடுதலை பெறும் வழி",
+                "content": "இறைவனிடம் பூரண சரணாகதி அடைந்து, செய்யும் செயல்கள் அனைத்தையும் 'சிவப்பணி'யாக தன்னலமின்றிச் செய்யும் போது (நிஷ்காம கர்மம்), புதிய வினைகள் ஒட்டாது. தீய வினைகளை சிவ நாம ஜபமும் தர்மமும் எரித்துவிடும்."
+            }
+        ]
+        quiz = [
+            {"q": "இப்பிறவியில் நாம் அனுபவித்து வரும் வினையின் பெயர் என்ன?", "a": "பிராரப்த கன்மம் (Prarabdha Karma).", "hint": "நுகரப்பட்டுத் தீரும் வினை."},
+            {"q": "'தீதும் நன்றும் பிறர்தர வாரா' என்று பாடிய சங்கப் புலவர் யார்?", "a": "கணியன் பூங்குன்றனார் (புறநானூறு).", "hint": "'யாதும் ஊரே யாவரும் கேளிர்' பாடியவர்."},
+            {"q": "புதிய வினைகள் (ஆகாமியம்) சேராமல் இருக்க என்ன செய்ய வேண்டும்?", "a": "சுயநலமின்றி பிறர் நலம் கருதி அனைத்துச் செயல்களையும் இறைவனுக்கே அர்ப்பணித்துச் செய்ய வேண்டும் (நிஷ்காம கர்மம்).", "hint": "பயனை எதிர்பாராது கடமையைச் செய்தல்."}
+        ]
+        sadhana = [
+            "எனக்கு ஏற்படும் சோதனைகளுக்கு மற்றவரைக் குறை கூறாமல் அமைதி காத்தேன்.",
+            "யாருக்கும் தீங்கு செய்யாமல் நற்செயல்களையே செய்தேன்.",
+            "படிப்பதை என் தர்மக் கடமையாக உணர்ந்து நேர்மையோடு படித்தேன்."
+        ]
+
+    else:
+        # High-value structured fallback
+        vocab = [
+            {"term": "தர்மம் (Dharma)", "meaning": "அனைத்து உயிர்களையும் தாங்கி நிற்கும் பேரறம்; நேர்மை மற்றும் கடமை."},
+            {"term": "சத்சங்கம் (Satsanga)", "meaning": "நல்ல சிந்தனை உடைய பெரியோர்களுடனும் நல்ல நண்பர்களுடனும் இணைந்திருத்தல்."},
+            {"term": "ஜீவகாருண்யம் (Jivakarunyam)", "meaning": "எல்லா உயிர்களிடத்தும் இரக்கமும் கருணையும் கொண்டு வாழ்தல்."}
+        ]
+        objectives = [
+            "அன்றாட வாழ்வில் கடைப்பிடிக்க வேண்டிய உயர்ந்த தர்ம நெறிகளைப் புரிந்துகொள்ளுதல்.",
+            "பெற்றோரையும் ஆசிரியரையும் மதித்து நற்பண்புகளுடன் விளங்குதல்.",
+            "இறை நம்பிக்கையுடன் கூடிய நேர்மையான மாணவராகத் திகழ்தல்."
+        ]
+        deep_dive = [
+            {
+                "heading": "1. தர்மத்தின் மேன்மை (The Greatness of Dharma)",
+                "content": "'தர்மமே வெல்லும்; தர்மத்தைக் காப்பவனை தர்மம் காக்கும் (தர்மோ ரக்ஷதி ரக்ஷிதஃ)' என்பது நமது முன்னோர்களின் அழியாத வாக்கு. உண்மை, நேர்மை, இன்சொல், பிறருக்கு உதவுதல் ஆகியவை ஒரு மாணவனின் உண்மையான அணிகலன்களாகும்."
+            },
+            {
+                "heading": "2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)",
+                "content": "ஆசிரியரை 'குரு'வாகப் போற்றி, பணிவோடு வினாக்கள் கேட்டு மெய்யறிவைப் பெறுவதே பாரத நாட்டின் சிறந்த கல்வி முறையாகும். பணிவு உள்ள இடத்திலேயே ஞானம் தங்கும்."
+            },
+            {
+                "heading": "3. உயிர்களிடத்தில் அன்பு (Universal Compassion)",
+                "content": "மனிதர்கள் மட்டுமல்லாமல் வாயில்லாப் பிராணிகள், பறவைகள், தாவரங்கள் என அனைத்து இயற்கைக்கும் மதிப்பளித்து, அன்பு காட்டுவதே மெய்யான ஆன்மீகமாகும்."
+            }
+        ]
+        quiz = [
+            {"q": "'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?", "a": "நாம் தர்மத்தைக் காப்பாற்றினால், அந்த தர்மம் நம்மை எல்லா ஆபத்துக்களிலிருந்தும் காப்பாற்றும்.", "hint": "அறம் காப்பவனை அறம் காக்கும்."},
+            {"q": "மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?", "a": "பணிவு, வாய்மை மற்றும் குரு பக்தி.", "hint": "அடக்கமும் உண்மை பேசும் பண்பும்."},
+            {"q": "ஜீவகாருண்யம் என்றால் என்ன?", "a": "எல்லா உயிர்களிடத்தும் அன்பு காட்டி எவ்வுயிருக்கும் துன்பம் செய்யாமல் இருத்தல்.", "hint": "வள்ளலார் போற்றிய கருணை நெறி."}
+        ]
+        sadhana = [
+            "பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.",
+            "செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.",
+            "எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்."
+        ]
+        
+    return {
+        "diagram_key": diagram_key,
+        "hero_image": hero_image,
+        "hero_caption": hero_caption,
+        "vocab": vocab,
+        "objectives": objectives,
+        "deep_dive": deep_dive,
+        "quiz": quiz,
+        "sadhana": sadhana,
+        "video_clip": visual_info.get("video_clip"),
+        "video_title": visual_info.get("video_title"),
+        "video_note": visual_info.get("video_note"),
+        "video_poster": visual_info.get("video_poster", hero_image),
+        "story_image": story_info.get("image"),
+        "story_caption": story_info.get("caption"),
+        "dharma_image": dharma_info.get("image"),
+        "dharma_caption": dharma_info.get("caption")
+    }
+

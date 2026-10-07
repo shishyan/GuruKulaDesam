@@ -229,8 +229,10 @@ def render_chapter(ch_num: int):
         out_shot = temp_dir / f"shot_{i:03d}.mp4"
         shot_files.append(out_shot)
         
+        # Re-render if shot doesn't exist, is corrupt, or if source image is newer
         if out_shot.exists() and out_shot.stat().st_size > 10000:
-            continue
+            if out_shot.stat().st_mtime >= img.stat().st_mtime:
+                continue
             
         vf = build_shot_filter(move, n_frames)
         cmd = [

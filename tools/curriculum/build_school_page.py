@@ -1,0 +1,1013 @@
+# -*- coding: utf-8 -*-
+"""
+Builds the Flagship Professional Online School Portal (school.html)
+A complete fusion of ancient Vedic Gurukulam wisdom and 21st-century modern online academy.
+Synchronizes across ., site/, and docs/.
+"""
+
+import os
+import shutil
+
+HTML_CONTENT = """<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>குருகுல இணையப் பள்ளி — The Professional Vedic-Modern Online Academy | Guru Kula Desam</title>
+  <meta name="description" content="21-ஆம் நூற்றாண்டுக்கான அதிநவீன குருகுல இணையப் பள்ளி. வேதக் கோட்பாடுகள், நவீன குவாண்டம் இயற்பியல், நரம்பியல், சுற்றுச்சூழல் மற்றும் தர்ம வாழ்வியல் சங்கமம்.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    @media print {
+      .left-strip-bar, .context-top-bar, .school-hero, .fusion-grid, .study-room-panel, .flashcards-container, .dual-track-section, .no-print, header, footer {
+        display: none !important;
+      }
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .certificate-preview-card {
+        border: 4px double #b8860b !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        page-break-inside: avoid;
+      }
+      .certificate-student-name {
+        color: #000000 !important;
+        border-bottom-color: #b8860b !important;
+      }
+      .certificate-title-tamil {
+        color: #b8860b !important;
+      }
+      .certificate-body-tamil {
+        color: #333333 !important;
+      }
+    }
+  </style>
+</head>
+<body class="has-left-strip">
+
+  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL) -->
+  <aside class="left-strip-bar" id="leftStripBar" aria-label="Quick Access Sidebar">
+    <div class="strip-header">
+      <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
+        <span class="strip-emblem">ॐ</span>
+        <span class="strip-brand-text">குரு குல தேசம்</span>
+      </a>
+      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="toggleLeftStrip()" title="விரிவுபடுத்து / சுருக்கு" aria-label="Toggle Sidebar">
+        <span class="strip-toggle-icon">⇤</span>
+      </button>
+    </div>
+
+    <nav class="strip-nav-list" id="stripNavList">
+      <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
+        <span class="strip-item-icon">🏠</span>
+        <span class="strip-item-label">முகப்பு</span>
+      </a>
+      <a href="kalvi.html" class="strip-item" data-tooltip="கல்வி நெறி">
+        <span class="strip-item-icon">🎓</span>
+        <span class="strip-item-label">கல்வி நெறி</span>
+      </a>
+      <a href="school.html" class="strip-item active" data-tooltip="இணையப் பள்ளி">
+        <span class="strip-item-icon">🏫</span>
+        <span class="strip-item-label">இணையப் பள்ளி</span>
+      </a>
+      <a href="virtues.html" class="strip-item" data-tooltip="நற்பண்புகள்">
+        <span class="strip-item-icon">🔤</span>
+        <span class="strip-item-label">நற்பண்புகள்</span>
+      </a>
+      <a href="saiva-neri.html" class="strip-item" data-tooltip="சைவ நெறி">
+        <span class="strip-item-icon">🕉️</span>
+        <span class="strip-item-label">சைவ நெறி</span>
+      </a>
+      <a href="irai-isai-virundhu.html" class="strip-item" data-tooltip="இறை இசை">
+        <span class="strip-item-icon">🎵</span>
+        <span class="strip-item-label">இறை இசை</span>
+      </a>
+      <a href="thirukkural.html" class="strip-item" data-tooltip="திருக்குறள்">
+        <span class="strip-item-icon">📖</span>
+        <span class="strip-item-label">திருக்குறள்</span>
+      </a>
+      <a href="sanmargam.html" class="strip-item" data-tooltip="சன்மார்க்கம்">
+        <span class="strip-item-icon">🪔</span>
+        <span class="strip-item-label">சன்மார்க்கம்</span>
+      </a>
+      <a href="murugan.html" class="strip-item" data-tooltip="முருகன்">
+        <span class="strip-item-icon">🔱</span>
+        <span class="strip-item-label">முருகன்</span>
+      </a>
+      <a href="sakthi.html" class="strip-item" data-tooltip="சக்தி நெறி">
+        <span class="strip-item-icon">🌸</span>
+        <span class="strip-item-label">சக்தி நெறி</span>
+      </a>
+      <a href="vinayagar.html" class="strip-item" data-tooltip="விநாயகர்">
+        <span class="strip-item-icon">🐘</span>
+        <span class="strip-item-label">விநாயகர்</span>
+      </a>
+      <a href="vaishnava.html" class="strip-item" data-tooltip="வைணவம்">
+        <span class="strip-item-icon">🪷</span>
+        <span class="strip-item-label">வைணவம்</span>
+      </a>
+      <a href="syllabus.html" class="strip-item" data-tooltip="பாடத்திட்டம்">
+        <span class="strip-item-icon">📚</span>
+        <span class="strip-item-label">பாடத்திட்டம்</span>
+      </a>
+      <a href="about.html" class="strip-item" data-tooltip="பெரியவா">
+        <span class="strip-item-icon">🏛️</span>
+        <span class="strip-item-label">பெரியவா</span>
+      </a>
+    </nav>
+
+    <div class="strip-footer-dock">
+      <button type="button" class="strip-dock-btn" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
+        <span class="strip-dock-icon">⚙️</span>
+        <span class="strip-dock-label">அமைப்புகள்</span>
+      </button>
+      <button type="button" class="strip-dock-btn profile-dock-btn" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
+        <span class="strip-dock-avatar" id="stripAvatarIcon">👤</span>
+        <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="strip-backdrop" id="stripBackdrop" onclick="closeMobileStrip()"></div>
+
+  <!-- CONTEXT-SENSITIVE TOP BAR -->
+  <header class="context-top-bar" id="contextTopBar">
+    <div class="context-bar-container">
+      <button type="button" class="context-mobile-btn" onclick="toggleLeftStrip()" title="பக்கப்பட்டி">☰</button>
+      <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Section Tabs">
+        <button type="button" class="context-tab-pill active" onclick="scrollToId('portalDashboard')"><span class="context-tab-pill-icon">📊</span><span>மாணவர் போர்டல்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('stemFusionSection')"><span class="context-tab-pill-icon">🔬</span><span>அறிவியல்-வேத சங்கமம்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('focusStudyHall')"><span class="context-tab-pill-icon">⏱️</span><span>தியான &amp; படிப்பு அரங்கம்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('certificateSection')"><span class="context-tab-pill-icon">📜</span><span>பட்டயச் சான்றிதழ்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('flashcardsSection')"><span class="context-tab-pill-icon">🗂️</span><span>நினைவாற்றல் அட்டைகள்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('roadmapSection')"><span class="context-tab-pill-icon">🧭</span><span>12 தரப் பாடநெறி</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container" style="max-width:1300px; margin: 0 auto; padding: 24px 20px 80px;">
+
+    <!-- 1. HERO & STUDENT LMS COMMAND CENTER -->
+    <section class="school-hero" id="portalDashboard">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:20px;">
+        <div style="max-width:800px;">
+          <div class="school-badge">
+            <span>✨ 21st-Century Global Academy • Sanatana Science</span>
+          </div>
+          <h1 style="color:#ffffff; font-size:2.2rem; font-weight:800; line-height:1.2; margin-bottom:12px;">
+            குருகுல இணையப் பள்ளி
+          </h1>
+          <p style="color:#38bdf8; font-size:1.15rem; font-weight:600; margin-bottom:10px;">
+            The Professional Vedic-Modern Online School for the New World
+          </p>
+          <p style="color:#cbd5e1; font-size:0.98rem; line-height:1.75; margin-bottom:16px;">
+            தொன்மையான சனாதன வேத தர்மம், சைவ சித்தாந்த வாழ்வியல் ஒழுக்கங்கள் மற்றும் 21-ஆம் நூற்றாண்டின் குவாண்டம் இயற்பியல், நரம்பியல், சுற்றுச்சூழல், செயற்கை நுண்ணறிவு (AI) நெறிமுறைகள் ஆகியவற்றின் முழுமையான சங்கமம்.
+          </p>
+
+          <!-- Student Name Customization -->
+          <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:14px; background:rgba(0,0,0,0.3); padding:10px 16px; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+            <span style="color:#f8fafc; font-size:0.9rem; font-weight:600;">மாணவர் பெயர் (Student Name):</span>
+            <input type="text" id="studentNameInput" placeholder="உங்கள் பெயரை உள்ளிடுக..." oninput="saveStudentName(this.value)" style="background:rgba(255,255,255,0.08); border:1px solid rgba(56,189,248,0.4); color:#ffffff; padding:6px 12px; border-radius:6px; font-size:0.95rem; font-family:inherit; min-width:220px;">
+            <span style="font-size:0.8rem; color:#94a3b8;">(சான்றிதழிலும் முன்னேற்றத்திலும் தோன்றும்)</span>
+          </div>
+        </div>
+
+        <!-- Quick Jump to Current Grade -->
+        <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(56,189,248,0.3); border-radius:16px; padding:18px 22px; min-width:240px; text-align:center;">
+          <div style="font-size:0.82rem; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">விரைவுப் படிப்பு</div>
+          <div style="font-size:1.1rem; color:#ffffff; font-weight:700; margin-bottom:12px;">உங்கள் தரம் எது?</div>
+          <select id="quickGradeSelect" onchange="jumpToGrade(this.value)" style="width:100%; background:#0f172a; border:1px solid #38bdf8; color:#ffffff; padding:8px 12px; border-radius:8px; font-family:inherit; font-weight:600; cursor:pointer;">
+            <option value="">தரத்தைத் தேர்ந்தெடுக்கவும்...</option>
+            <option value="1">தரம் 1 — தொடக்க நிலை</option>
+            <option value="2">தரம் 2 — சிவ சின்னங்கள் &amp; ஒழுக்கம்</option>
+            <option value="3">தரம் 3 — பஞ்சபூதம் &amp; விழிப்பு</option>
+            <option value="4">தரம் 4 — பன்னிரு திருமுறை &amp; உணவு</option>
+            <option value="5">தரம் 5 — நாயன்மார்கள் &amp; குறள்</option>
+            <option value="6">தரம் 6 — நான்கு வேதம் &amp; சித்தாந்தம்</option>
+            <option value="7">தரம் 7 — மகா வாக்கியம் &amp; கர்ம விதி</option>
+            <option value="8">தரம் 8 — பகவத் கீதை &amp; வள்ளலார்</option>
+            <option value="9">தரம் 9 — ஆகமங்கள் &amp; உடலே ஆலயம்</option>
+            <option value="10">தரம் 10 — பதி பசு பாசம் &amp; O/L</option>
+            <option value="11">தரம் 11 — கடோபநிடதம் &amp; A/L</option>
+            <option value="12">தரம் 12 — ஜீவன் முக்தி &amp; நடராஜர்</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Live Student LMS Stats Row -->
+      <div class="school-stats-row">
+        <div class="school-stat-card">
+          <div class="school-stat-icon" style="color:#38bdf8;">📚</div>
+          <div>
+            <div class="school-stat-val" id="totalLessonsCount">60</div>
+            <div class="school-stat-lbl">மொத்தப் பாடப் பிரிவுகள்</div>
+          </div>
+        </div>
+
+        <div class="school-stat-card">
+          <div class="school-stat-icon" style="color:#2dd4bf;">✓</div>
+          <div>
+            <div class="school-stat-val" id="completedLessonsCount">0</div>
+            <div class="school-stat-lbl">படித்து முடித்தவை</div>
+          </div>
+        </div>
+
+        <div class="school-stat-card">
+          <div class="school-stat-icon" style="color:var(--gold-bright);">⚡</div>
+          <div>
+            <div class="school-stat-val" id="totalVedicXP">0</div>
+            <div class="school-stat-lbl">வேத தர்ம புள்ளிகள் (XP)</div>
+          </div>
+        </div>
+
+        <div class="school-stat-card">
+          <div class="school-stat-icon" style="color:#f43f5e;">🔥</div>
+          <div>
+            <div class="school-stat-val" id="sadhanaStreakDays">1 நாள்</div>
+            <div class="school-stat-lbl">தினசரி சாதனைக் காலம்</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overall School Progress Bar -->
+      <div style="margin-top:24px; background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:16px 20px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; font-size:0.9rem;">
+          <span style="color:#f8fafc; font-weight:700;">ஒட்டுமொத்த குருகுலப் பட்டய முன்னேற்றம் (Overall Academy Progress):</span>
+          <span style="color:#38bdf8; font-weight:800;" id="overallProgressPercent">0%</span>
+        </div>
+        <div style="width:100%; height:12px; background:rgba(255,255,255,0.08); border-radius:10px; overflow:hidden;">
+          <div id="overallProgressBar" style="height:100%; width:0%; background:linear-gradient(90deg, #38bdf8, #2dd4bf, var(--gold)); transition:width 0.4s ease;"></div>
+        </div>
+        <div style="font-size:0.8rem; color:#94a3b8; margin-top:6px;">ஒவ்வொரு தரம் மற்றும் அத்தியாயத்தில் [✓] பாடம் முடிந்தது பொத்தானைக் கிளிக் செய்யும்போது தானாகப் புதுப்பிக்கப்படும்.</div>
+      </div>
+    </section>
+
+    <!-- 2. VEDIC-MODERN STEM CONVERGENCE (8 PILLARS) -->
+    <section id="stemFusionSection" style="margin: 48px 0;">
+      <div style="text-align:center; max-width:850px; margin:0 auto 32px;">
+        <div style="display:inline-block; font-size:0.8rem; font-weight:700; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:4px 14px; border-radius:20px; text-transform:uppercase; margin-bottom:10px;">
+          The Nexus of Shastra &amp; Science
+        </div>
+        <h2 style="color:#ffffff; font-size:1.85rem; font-weight:800; margin-bottom:12px;">
+          🔬 வேத-நவீன அறிவியல் சங்கமத்தின் 8 தூண்கள்
+        </h2>
+        <p style="color:#94a3b8; font-size:0.95rem; line-height:1.7;">
+          நமது ஆன்மீக ரிஷிகளும் ஞானிகளும் உணர்ந்த பிரபஞ்ச உண்மைகள், இன்றைய அதிநவீன இயற்பியல், நரம்பியல், உயிரியல் மற்றும் கணினியியல் ஆய்வுகளோடு எவ்வாறு முழுமையாக ஒத்திசைகின்றன என்பதன் விரிவான பார்வை.
+        </p>
+      </div>
+
+      <div class="fusion-grid">
+        <!-- Pillar 1 -->
+        <article class="fusion-pillar-card">
+          <div class="fusion-pillar-header">
+            <span class="fusion-pillar-num">தூண் 01</span>
+            <div class="fusion-pillar-title">குவாண்டம் இயற்பியலும் அத்வைத மெய்யியலும்</div>
+          </div>
+          <div class="fusion-desc-box">
+            <strong>🔬 அறிவியல் உண்மை:</strong> குவாண்டம் இயற்பியலின் 'Observer Effect' மற்றும் 'Wave Function Collapse' (அவதானிப்பாளர் விளைவு) பருப்பொருள் என்பது நிலையானது அல்ல, அது கவனிக்கும் உணர்வின் மூலமே வடிவமடைகிறது என்பதை நிரூபிக்கிறது.
+          </div>
+          <div class="fusion-application-box">
+            <strong>🚀 வாழ்வியல் பயன்பாடு:</strong> மாயை (Simulation/Illusion) என்பதை உணர்ந்து, புற உலகின் சவால்களால் மன அமைதியை இழக்காமல் எல்லையற்ற பிரம்ம உணர்வில் நிலைத்திருத்தல்.
+          </div>
+          <div class="fusion-sutra-tag">
+            <span>🪔 'பிரஞ்ஞானம் பிரம்ம' — ஐதரேய உபநிடதம்</span>
+          </div>
+        </article>
+
+        <!-- Pillar 2 -->
+        <article class="fusion-pillar-card">
+          <div class="fusion-pillar-header">
+            <span class="fusion-pillar-num">தூண் 02</span>
+            <div class="fusion-pillar-title">நரம்பியல் &amp; மந்திர தியான அறிவியல்</div>
+          </div>
+          <div class="fusion-desc-box">
+            <strong>🔬 அறிவியல் உண்மை:</strong> 'ஓம்' மற்றும் பஞ்சாட்சர ஜபம் செய்யும் போது மூளையின் 'Default Mode Network' (கவலை மையம்) அமைதியாகி, வேகஸ் நரம்பு (Vagus Nerve) தூண்டப்பட்டு ஆல்பா மற்றும் தீட்டா அலைகள் உருவாகின்றன.
+          </div>
+          <div class="fusion-application-box">
+            <strong>🚀 வாழ்வியல் பயன்பாடு:</strong> அதிகப்படியான மன உளைச்சல், தேர்வு பயம் மற்றும் கவனச் சிதறலை நீக்கி, மாணவர்களுக்கு மிக உயர்ந்த கவனக்குவிப்பையும் அமைதியையும் தருகிறது.
+          </div>
+          <div class="fusion-sutra-tag">
+            <span>🪔 'யோகஃ சித்தவிருத்தி நிரோதஃ' — பதஞ்சலி யோக சூத்திரம்</span>
+          </div>
+        </article>
+
+        <!-- Pillar 3 -->
+        <article class="fusion-pillar-card">
+          <div class="fusion-pillar-header">
+            <span class="fusion-pillar-num">தூண் 03</span>
+            <div class="fusion-pillar-title">வேதக் கணிதமும் கணினி அல்காரிதம்களும்</div>
+          </div>
+          <div class="fusion-desc-box">
+            <strong>🔬 அறிவியல் உண்மை:</strong> பிங்கலரின் 'சந்தஸ் சாஸ்திரம்' உலகின் முதல் இரும எண் அமைப்பை (Binary Code 0 &amp; 1) விவரித்தது. பாரதி கிருஷ்ண தீர்த்தரின் வேத கணித சூத்திரங்கள் மனக்கணக்குகளை கணினியை விட வேகமாகச் செய்ய உதவுகின்றன.
+          </div>
+          <div class="fusion-application-box">
+            <strong>🚀 வாழ்வியல் பயன்பாடு:</strong> நவீன நிரலாக்கம் (Coding), அல்காரிதமிக் சிந்தனை மற்றும் துரித கணிதத் தேர்வுகளில் மாணவர்கள் நிகரற்ற திறனை அடைதல்.
+          </div>
+          <div class="fusion-sutra-tag">
+            <span>🪔 'ஏகாதிகேன பூர்வேண' — வேத கணித சூத்திரம்</span>
+          </div>
+        </article>
+
+        <!-- Pillar 4 -->
+        <article class="fusion-pillar-card">
+          <div class="fusion-pillar-header">
+            <span class="fusion-pillar-num">தூண் 04</span>
+            <div class="fusion-pillar-title">சுற்றுச்சூழல் அறிவியலும் பஞ்சபூத சமநிலையும்</div>
+          </div>
+          <div class="fusion-desc-box">
+            <strong>🔬 அறிவியல் உண்மை:</strong> அதர்வண வேதத்தின் பூமி சூக்தம் மனிதனை இயற்கையின் எஜமானாக அல்லாமல், அதன் ஒரு பகுதியாகக் காண்கிறது. ஐந்து பூதங்களின் (திண்மம், திரவம், ஆற்றல், வாயு, வெளி) சுழற்சியே உயிர் மண்டலத்தைக் காக்கிறது.
+          </div>
+          <div class="fusion-application-box">
+            <strong>🚀 வாழ்வியல் பயன்பாடு:</strong> பூமி வெப்பமயமாதல், பிளாஸ்டிக் கழிவுகள் ஆகியவற்றை எதிர்த்து மரம் நடுதல், நீர்நிலைகளைப் பாதுகாத்தல் போன்ற 'பூத யக்ஞம்' செய்தல்.
+          </div>
+          <div class="fusion-sutra-tag">
+            <span>🪔 'மாதா பூமிஃ புத்ரோ அஹம் பிருதிவ்யாஃ' — அதர்வண வேதம்</span>
+          </div>
+        </article>
+
+        <!-- Pillar 5 -->
+        <article class="fusion-pillar-card">
+          <div class="fusion-pillar-header">
+            <span class="fusion-pillar-num">தூண் 05</span>
+            <div class="fusion-pillar-title">அமைப்பியல் கோட்பாடும் கர்ம விதிகளும்</div>
+          </div>
+          <div class="fusion-desc-box">
+            <strong>🔬 அறிவியல் உண்மை:</strong> நவீன அமைப்பியல் அறிவியலில் (Systems Dynamics) கூறப்படும் 'காரண காரிய சுழற்சி' மற்றும் பட்டர்ஃபிளை எஃபெக்ட் (Butterfly Effect), நமது முன்னோர்கள் வகுத்த கர்ம வினைக் கோட்பாட்டோடு நூறு சதவீதம் ஒத்திருக்கிறது.
+          </div>
+          <div class="fusion-application-box">
+            <strong>🚀 வாழ்வியல் பயன்பாடு:</strong> நாம் செய்யும் ஒவ்வொரு சிறிய செயலும் சமுதாயத்திற்கும் நமக்கும் ஒரு விளைவை உருவாக்கும் என்ற முழுமையான விழிப்புணர்வுடன் அறவழியில் செயல்படுதல்.
+          </div>
+          <div class="fusion-sutra-tag">
+            <span>🪔 'தீதும் நன்றும் பிறர்தர வாரா' — புறநானூறு</span>
+          </div>
+        </article>
+
+        <!-- Pillar 6 -->
+        <article class="fusion-pillar-card">
+          <div class="fusion-pillar-header">
+            <span class="fusion-pillar-num">தூண் 06</span>
+            <div class="fusion-pillar-title">செயற்கை நுண்ணறிவும் தர்ம நெறிமுறைகளும்</div>
+          </div>
+          <div class="fusion-desc-box">
+            <strong>🔬 அறிவியல் உண்மை:</strong> AI தொழில்நுட்பம் மனித சிந்தனையைப் பிரதிபலிக்கும் இக்காலத்தில், அதற்கு 'உண்மை' (Satya), 'அஹிம்சை' (Ahimsa), 'அறம்' (Dharma) ஆகிய கட்டுப்பாடுகள் இன்றியமையாதவை.
+          </div>
+          <div class="fusion-application-box">
+            <strong>🚀 வாழ்வியல் பயன்பாடு:</strong> டிஜிட்டல் உலகில் போலிச் செய்திகளைத் தவிர்த்தல், ஆரோக்கியமான திரைநேர ஒழுக்கம் மற்றும் மனித நேயமுள்ள தொழில்நுட்பங்களை உருவாக்குதல்.
+          </div>
+          <div class="fusion-sutra-tag">
+            <span>🪔 'சத்யம் வத • தர்மம் சர' — தைத்திரீய உபநிடதம்</span>
+          </div>
+        </article>
+
+        <!-- Pillar 7 -->
+        <article class="fusion-pillar-card">
+          <div class="fusion-pillar-header">
+            <span class="fusion-pillar-num">தூண் 07</span>
+            <div class="fusion-pillar-title">மரபணுவியலும் ஆயுர்வேத சாத்வீக உணவும்</div>
+          </div>
+          <div class="fusion-desc-box">
+            <strong>🔬 அறிவியல் உண்மை:</strong> எபிஜெனெடிக்ஸ் (Nutritional Epigenetics) ஆய்வுகள் நாம் உண்ணும் உணவு நமது மரபணுக்களின் வெளிப்பாட்டை (Gene Expression) மாற்றுகிறது என்பதையும், சாத்வீக தாவர உணவு வீக்கத்தைக் (Inflammation) குறைத்து புத்துணர்ச்சி தருகிறது என்பதையும் உறுதிப்படுத்துகிறது.
+          </div>
+          <div class="fusion-application-box">
+            <strong>🚀 வாழ்வியல் பயன்பாடு:</strong> துரித உணவுகளைத் தவிர்த்து, இயற்கை காய்கறிகள், கீரைகள், தானியங்கள் உண்டு உடலையும் புத்தியையும் கூர்மையாகவும் நோயின்றியும் வைத்திருத்தல்.
+          </div>
+          <div class="fusion-sutra-tag">
+            <span>🪔 'ஆஹார சுத்தௌ சத்துவ சுத்திஃ' — சாந்தோக்கிய உபநிடதம்</span>
+          </div>
+        </article>
+
+        <!-- Pillar 8 -->
+        <article class="fusion-pillar-card">
+          <div class="fusion-pillar-header">
+            <span class="fusion-pillar-num">தூண் 08</span>
+            <div class="fusion-pillar-title">ஒலியியல் &amp; நாத யோக அதிர்வுகள்</div>
+          </div>
+          <div class="fusion-desc-box">
+            <strong>🔬 அறிவியல் உண்மை:</strong> சைமாடிக்ஸ் (Cymatics) அறிவியல் ஒலியின் அதிர்வுகள் பருப்பொருளில் வடிவியல் கோலங்களை உருவாக்குவதை நிரூபிக்கிறது. 432Hz இயற்கை அலைவரிசையில் தேவாரம், திருவாசகம் பாடும்போது உடலின் நீர் மூலக்கூறுகள் சீரான வடிவத்தைப் பெறுகின்றன.
+          </div>
+          <div class="fusion-application-box">
+            <strong>🚀 வாழ்வியல் பயன்பாடு:</strong> பதிகங்களை பண்ணோடு பாடுவதன் மூலம் மனச்சோர்வு நீங்கி, நரம்பு மண்டலம் உடனடி அமைதியையும் பேரானந்தத்தையும் எய்துகிறது.
+          </div>
+          <div class="fusion-sutra-tag">
+            <span>🪔 'நாத பிந்து கலாதீதம்' — திருப்புகழ்</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. VEDIC FOCUS & DINACHARYA STUDY HALL -->
+    <section class="study-room-panel" id="focusStudyHall">
+      <div style="text-align:center; max-width:800px; margin:0 auto 28px;">
+        <div style="display:inline-block; font-size:0.8rem; font-weight:700; color:var(--gold); background:rgba(212,175,55,0.1); border:1px solid rgba(212,175,55,0.3); padding:4px 14px; border-radius:20px; text-transform:uppercase; margin-bottom:10px;">
+          Virtual Gurukulam Focus Hall
+        </div>
+        <h2 style="color:#ffffff; font-size:1.85rem; font-weight:800; margin-bottom:10px;">
+          ⏱️ குருகுல மெய்நிகர் தியான &amp; படிப்பு அரங்கம்
+        </h2>
+        <p style="color:#cbd5e1; font-size:0.95rem; line-height:1.7;">
+          போமோடோரோ படிப்பு கடிகாரம், தியானப் பிராணாயாம வழிகாட்டி மற்றும் கோவில் மணி நாதத்துடன் கூடிய இணையப் படிப்பு அறை.
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px; align-items:center;">
+        <!-- Timer Box -->
+        <div class="timer-box">
+          <div style="margin-bottom:14px;">
+            <button type="button" class="timer-mode-btn active" id="modeBtnStudy" onclick="setTimerMode('study')">📖 பாடம் (25 நிமி)</button>
+            <button type="button" class="timer-mode-btn" id="modeBtnBreath" onclick="setTimerMode('breath')">🪔 பிராணாயாமம் (5 நிமி)</button>
+            <button type="button" class="timer-mode-btn" id="modeBtnDeep" onclick="setTimerMode('deep')">⚡ ஆழ்நிலை (50 நிமி)</button>
+          </div>
+
+          <div class="timer-digits" id="timerDisplay">25:00</div>
+
+          <div style="display:flex; justify-content:center; align-items:center; margin-bottom:16px;">
+            <button type="button" class="timer-ctrl-btn" id="timerStartBtn" onclick="toggleTimer()">தொடங்கு (Start)</button>
+            <button type="button" class="timer-reset-btn" onclick="resetTimer()">மீட்டமை (Reset)</button>
+          </div>
+
+          <div style="display:flex; justify-content:center; align-items:center; gap:8px; font-size:0.85rem; color:#94a3b8;">
+            <input type="checkbox" id="bellSoundToggle" checked style="cursor:pointer;">
+            <label for="bellSoundToggle" style="cursor:pointer;">🔔 திருக்கோவில் மணி நாதம் (Web Audio)</label>
+            <button type="button" onclick="playTempleBell()" style="background:none; border:none; color:var(--gold); cursor:pointer; font-size:0.82rem; text-decoration:underline;">ஒலி சோதி</button>
+          </div>
+        </div>
+
+        <!-- Breath Pacer (4-7-8 Pranayama) -->
+        <div class="breath-pacer-box" style="background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.08); border-radius:16px;">
+          <div style="font-size:0.85rem; color:#38bdf8; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:12px;">
+            4-7-8 வேதப் பிராணாயாம வழிகாட்டி
+          </div>
+          <div class="breath-circle" id="breathCircle">
+            <span style="font-size:2rem;">🪷</span>
+          </div>
+          <div class="breath-instruction" id="breathText">மூச்சை உள்ளிழுக்கவும் (Inhale 4s)</div>
+          <div class="breath-sub-instruction" id="breathSubText">மூக்கு வழியாக மென்மையாக உள்ளிழுக்கவும்</div>
+          <button type="button" id="breathToggleBtn" onclick="toggleBreathPacer()" style="margin-top:16px; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); color:#38bdf8; padding:6px 18px; border-radius:20px; font-size:0.85rem; font-weight:700; cursor:pointer;">
+            பயிற்சியைத் தொடங்கு
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. OFFICIAL DIGITAL GURUKULAM CERTIFICATE GENERATOR -->
+    <section id="certificateSection" style="margin: 48px 0;">
+      <div style="text-align:center; max-width:800px; margin:0 auto 24px;">
+        <div style="display:inline-block; font-size:0.8rem; font-weight:700; color:var(--gold); background:rgba(212,175,55,0.1); border:1px solid rgba(212,175,55,0.3); padding:4px 14px; border-radius:20px; text-transform:uppercase; margin-bottom:10px;">
+          Verifiable Academic Credential
+        </div>
+        <h2 style="color:#ffffff; font-size:1.85rem; font-weight:800; margin-bottom:10px;">
+          📜 குருகுலப் பட்டயச் சான்றிதழ் இயற்றி
+        </h2>
+        <p style="color:#cbd5e1; font-size:0.95rem; line-height:1.7;">
+          பாடங்களை நிறைவு செய்த மாணவர்கள் தங்களின் அதிகாரப்பூர்வ குருகுல இணையப் பள்ளி சாதனைச் சான்றிதழை உடனடிப் பார்வையில் சரிபார்த்து அச்சிடலாம் அல்லது PDF ஆகச் சேமிக்கலாம்.
+        </p>
+      </div>
+
+      <!-- Certificate Controls -->
+      <div class="no-print" style="background:rgba(15,23,42,0.8); border:1px solid rgba(255,255,255,0.1); border-radius:14px; padding:18px 24px; max-width:800px; margin:0 auto 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <div>
+            <label style="font-size:0.8rem; color:#94a3b8; display:block; margin-bottom:4px;">சான்றிதழ் தரம்:</label>
+            <select id="certGradeSelect" onchange="updateCertificatePreview()" style="background:#0b111e; border:1px solid var(--gold); color:#ffffff; padding:6px 12px; border-radius:6px; font-family:inherit;">
+              <option value="தரம் 1">தரம் 1 — தொடக்க நிலை</option>
+              <option value="தரம் 2">தரம் 2 — சிவ சின்னங்கள்</option>
+              <option value="தரம் 3">தரம் 3 — பஞ்சபூத வழிபாடு</option>
+              <option value="தரம் 4">தரம் 4 — பன்னிரு திருமுறைகள்</option>
+              <option value="தரம் 5">தரம் 5 — நாயன்மார்களின் தியாகம்</option>
+              <option value="தரம் 6">தரம் 6 — நான்கு வேதங்கள்</option>
+              <option value="தரம் 7">தரம் 7 — உபநிடத மகா வாக்கியங்கள்</option>
+              <option value="தரம் 8">தரம் 8 — பகவத் கீதை &amp; வள்ளலார்</option>
+              <option value="தரம் 9">தரம் 9 — சைவ ஆகமங்கள்</option>
+              <option value="தரம் 10">தரம் 10 — பதி பசு பாசம் (O/L)</option>
+              <option value="தரம் 11">தரம் 11 — கடோபநிடதம் (A/L)</option>
+              <option value="தரம் 12">தரம் 12 — ஜீவன் முக்தி &amp; நடராஜர்</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="button" onclick="window.print()" class="sheet-btn sheet-btn-view" style="padding:10px 24px; font-weight:700; display:inline-flex; align-items:center; gap:8px;">
+          <span>🖨️ சான்றிதழை அச்சிடுக / PDF</span>
+        </button>
+      </div>
+
+      <!-- Live Certificate Frame -->
+      <div class="certificate-preview-card" id="certificateFrame">
+        <div class="certificate-seal">ॐ</div>
+        <div class="certificate-title-tamil">குரு குல தேசம் — இணையப் பள்ளி</div>
+        <div class="certificate-title-en">GURU KULA DESAM VEDIC-MODERN ACADEMY</div>
+        
+        <div style="font-size:0.85rem; color:#94a3b8; margin-top:14px; text-transform:uppercase; letter-spacing:2px;">
+          சாதனைப் பட்டயச் சான்றிதழ் • CERTIFICATE OF ACADEMIC MERIT
+        </div>
+
+        <div style="margin-top:20px; color:#cbd5e1; font-size:1.05rem;">
+          இச்சான்றிதழ் பெருமதிப்புடன் வழங்கப்படுகிறது:
+        </div>
+
+        <div class="certificate-student-name" id="certStudentNameDisplay">
+          செல்வன் / செல்வி மாணவர்
+        </div>
+
+        <div class="certificate-body-tamil" id="certBodyDisplay">
+          மேற்குறிப்பிட்ட மாணவர் குரு குல தேசத்தின் அதிநவீன சனாதன வேத தர்மக் கல்வி நெறிமுறைகளின் கீழ் <strong>தரம் 1</strong> பாடத்திட்டம், நவீன அறிவியல் ஒப்பீடுகள், தினசரி தர்ம சாதனை மற்றும் வினாடி-வினாத் தேர்வுகளை முழுமையாக நிறைவு செய்து இப்பேறுபெற்ற சான்றிதழைப் பெறுகிறார் எனச் சான்றளிக்கப்படுகிறது.
+        </div>
+
+        <div class="certificate-meta-row">
+          <div style="text-align:left;">
+            <div>பதிவு எண் (Credential ID): <strong style="color:#ffffff;" id="certUidDisplay">GKD-2026-8842</strong></div>
+            <div>வழங்கப்பட்ட நாள்: <span id="certDateDisplay">07-10-2026</span></div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-size:1.4rem; color:var(--gold);">🪔</div>
+            <div style="font-size:0.75rem; color:#cbd5e1; letter-spacing:1px;">அங்கீகரிக்கப்பட்ட முத்திரை</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="border-bottom:1px solid rgba(255,255,255,0.3); padding-bottom:4px; min-width:140px; font-weight:700; color:#ffffff;">ஆச்சார்ய குரு பீடம்</div>
+            <div style="font-size:0.75rem; color:#94a3b8; margin-top:2px;">Academic Dean &amp; Acharya</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ACTIVE RECALL FLASHCARDS -->
+    <section id="flashcardsSection" style="margin: 48px 0;">
+      <div style="text-align:center; max-width:800px; margin:0 auto 24px;">
+        <div style="display:inline-block; font-size:0.8rem; font-weight:700; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:4px 14px; border-radius:20px; text-transform:uppercase; margin-bottom:10px;">
+          Spaced Repetition &amp; Active Recall
+        </div>
+        <h2 style="color:#ffffff; font-size:1.85rem; font-weight:800; margin-bottom:10px;">
+          🗂️ வேத-அறிவியல் நினைவாற்றல் வினா அட்டைகள்
+        </h2>
+        <p style="color:#cbd5e1; font-size:0.95rem; line-height:1.7;">
+          வினா அட்டையைக் கிளிக் செய்து விடையையும், அதனுடன் இணைந்த நவீன அறிவியல் உண்மையையும் பாருங்கள்.
+        </p>
+      </div>
+
+      <div class="flashcards-container">
+        <div class="flashcard-box" id="flashcardBox" onclick="flipFlashcard()">
+          <span class="flashcard-badge" id="fcBadge">அட்டை 1 / 6 • தரம் 2</span>
+          <div class="flashcard-q" id="fcQuestion">
+            திருநீற்றை நெற்றியில் மூன்று கோடுகளாக அணிவதன் தத்துவம் மற்றும் மருத்துவ நன்மை யாது?
+          </div>
+          <div class="flashcard-a" id="fcAnswer">
+            <strong>விடை:</strong> திரிபுண்டரம் என்பது மும்மலங்களை சுட்டெரிக்கும் சங்கற்பம். மருத்துவ ரீதியாக, நாட்டுப் பசுவின் விபூதி நெற்றியின் ஆக்ஞா மையத்தைக் குளிர்வித்து தலைவலி, சைனஸ் போன்றவற்றை நீக்கி நினைவாற்றலைத் தூண்டுகிறது.
+          </div>
+          <div class="flashcard-flip-prompt">👆 விடையைக் காண அட்டையைக் கிளிக் செய்க (Click to Flip)</div>
+        </div>
+
+        <div style="display:flex; justify-content:center; align-items:center; gap:16px; margin-top:16px;">
+          <button type="button" class="sheet-btn sheet-btn-prev" onclick="prevFlashcard()">← முந்தைய அட்டை</button>
+          <button type="button" class="sheet-btn sheet-btn-next" onclick="nextFlashcard()">அடுத்த அட்டை →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. DUAL-TRACK 12-GRADE ROADMAP TABLE -->
+    <section class="dual-track-section" id="roadmapSection" style="margin: 56px 0;">
+      <div style="text-align:center; max-width:850px; margin:0 auto 32px;">
+        <div style="display:inline-block; font-size:0.8rem; font-weight:700; color:var(--gold); background:rgba(212,175,55,0.1); border:1px solid rgba(212,175,55,0.3); padding:4px 14px; border-radius:20px; text-transform:uppercase; margin-bottom:10px;">
+          Comprehensive 12-Tier Curriculum
+        </div>
+        <h2 style="color:#ffffff; font-size:1.85rem; font-weight:800; margin-bottom:10px;">
+          🧭 12 தரங்களுக்கான இருவழிப் பாடத்திட்ட வரைபடம்
+        </h2>
+        <p style="color:#cbd5e1; font-size:0.95rem; line-height:1.7;">
+          பாரம்பரிய வேத-சித்தாந்த மெய்யறிவும், 21-ஆம் நூற்றாண்டு நவீன அறிவியல்-தொழில்நுட்பத் திறன்களும் ஒரே பார்வையில்.
+        </p>
+      </div>
+
+      <div style="background:rgba(15,23,42,0.85); border:1px solid rgba(56,189,248,0.25); border-radius:16px; overflow:hidden; box-shadow:0 12px 35px rgba(0,0,0,0.5);">
+        <div style="overflow-x:auto;">
+          <table style="width:100%; border-collapse:collapse; text-align:left; font-size:0.92rem;">
+            <thead>
+              <tr style="background:rgba(56,189,248,0.12); border-bottom:1px solid rgba(56,189,248,0.3); color:#38bdf8;">
+                <th style="padding:14px 18px; font-weight:700;">தரம் &amp; WBS</th>
+                <th style="padding:14px 18px; font-weight:700;">வேத &amp; சைவ நெறிப் பாடம் (Traditional Shastras)</th>
+                <th style="padding:14px 18px; font-weight:700;">21-ஆம் நூற்றாண்டு அறிவியல் &amp; திறன் (Modern STEM &amp; Life Skills)</th>
+                <th style="padding:14px 18px; font-weight:700; text-align:center;">பாடம் தொடங்கு</th>
+              </tr>
+            </thead>
+            <tbody style="color:#cbd5e1;">
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G01</span> தரம் 1</td>
+                <td style="padding:14px 18px;">அகர வரிசை நற்பண்புகள், அறம், இன்சொல், ஈகை, இறை வணக்கம்</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">பஞ்சபூத உணர்வுசார் விளையாட்டு, திரைநேரக் கட்டுப்பாடு, இயற்கை நேசம்</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-1.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.015);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G02</span> தரம் 2</td>
+                <td style="padding:14px 18px;">சிவ சின்னங்கள், திருக்கோயில் வழிபாடு, கொன்றை வேந்தன், ஜீவகாருண்யம்</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">கட்டட ஒலியியல், நரம்பியல் குளிர்ச்சி, ஆக்ஸிடோசின் சுரப்பு, நற்பழக்க உருவாக்கம்</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-2.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G03</span> தரம் 3</td>
+                <td style="padding:14px 18px;">சமயக் குரவர் நால்வர், திருவெம்பாவை, பஞ்ச பூதத் தலங்கள், மூதுரை</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">சிர்காடியன் உயிரியல் (அதிகாலை விழிப்பு), பருப்பொருள் நிலைகள், புவி ஈர்ப்பு சமநிலை</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-3.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.015);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G04</span> தரம் 4</td>
+                <td style="padding:14px 18px;">பன்னிரு திருமுறைகள், அப்பர் தேவார அமைதி, விரதங்கள், சாத்வீக உணவு</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">ஆட்டோஃபேஜி (Autophagy/நோன்பு), குடல் நுண்ணுயிர் செரோடோனின், பதற்றத் தணிப்பு</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-4.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G05</span> தரம் 5</td>
+                <td style="padding:14px 18px;">63 நாயன்மார்கள் தியாகம், சுந்தரர் அடியார்தொகை, குறள் அறத்துப்பால், ருத்ரம்</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">மிரர் நியூரான் தியாக உணர்வு, முன்கபால முடிவெடுத்தல், வாய்மை நரம்பியல்</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-5.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.015);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G06</span> தரம் 6</td>
+                <td style="padding:14px 18px;">நான்கு வேதக் கட்டமைப்பு, குரு-சீடர் மந்திரம், பதி பசு பாசம், பஞ்ச மகா யக்ஞம்</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">தகவல் ஒலி குறியாக்கம், நரம்பியல் ஒத்திசைவு, சுழற்சிப் பொருளாதாரம் (SDGs)</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-6.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G07</span> தரம் 7</td>
+                <td style="padding:14px 18px;">வேத மகா வாக்கியங்கள், புருஷார்த்தங்கள், பெரியபுராண வீரம், கர்ம விதி</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">குவாண்டம் ஒருமைப்பாடு, மாஸ்லோவின் முழுமைத் தேவை, நியூட்டனின் எதிர்வினை விதி</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-7.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.015);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G08</span> தரம் 8</td>
+                <td style="padding:14px 18px;">கீதையின் கர்ம யோகம், மெய்கண்ட சாத்திரங்கள், பன்னிரு திருமுறைப் பண்ணிசை</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">ஃப்ளோ நிலை (Flow State), மூளை அலை ஒத்திசைவு, பற்றற்ற செயல் திறன்</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-8.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G09</span> தரம் 9</td>
+                <td style="padding:14px 18px;">28 சைவ ஆகமங்கள், உடலே ஆலயம் மனித உடலியல், ஷட்தர்சனங்கள், யம நியமங்கள்</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">பயோமார்பிக் கட்டடக் கலை, வேகல் சமநிலை (Vagal Tone), டிஜிட்டல் நச்சுநீக்கம்</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-9.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.015);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G10</span> தரம் 10</td>
+                <td style="padding:14px 18px;">பதி பசு பாசம் முழுமை, சரியை கிரியை யோக ஞானம், காஞ்சி பெரியவா போதனைகள்</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">காய்ஸென் படிமுறை பரிணாமம், சந்திர-சூரிய நாளமில்லா சுரப்பி இயக்கம், O/L வழிகாட்டி</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-10.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G11</span> தரம் 11</td>
+                <td style="padding:14px 18px;">நான்கு தத்துவ தரிசன ஒப்பாய்வு, கடோபநிடத நசிகேதன், சிவஞானபோத தர்க்கம்</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">அழிவின்மை ஆற்றல் மாறாக் கோட்பாடு, கணித நிரூபண தர்க்கம், பஞ்ச கோச உளவியல்</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-11.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+              <tr style="background:rgba(255,255,255,0.015);">
+                <td style="padding:14px 18px; font-weight:700; color:#ffffff;"><span class="wbs-code">WBS G12</span> தரம் 12</td>
+                <td style="padding:14px 18px;">ஜீவன் முக்தி, திருமந்திரம் &amp; தாயுமானவர், நடராஜர் தாண்டவம், சனாதன விஸ்வ தர்மம்</td>
+                <td style="padding:14px 18px; color:#2dd4bf;">காமா ஒத்திசைவு பேரமைதி, CERN அணு ஆராய்ச்சி, புத்தாக்க தகவமைப்பு, உலகளாவிய தலைமை</td>
+                <td style="padding:14px 18px; text-align:center;"><a href="tharam-12.html" class="sheet-btn sheet-btn-view" style="padding:4px 12px; font-size:0.8rem; text-decoration:none;">தொடங்கு ↗</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // 1. Navigation Helper
+    function scrollToId(id) {
+      var el = document.getElementById(id);
+      if (el) {
+        var top = el.getBoundingClientRect().top + window.pageYOffset - 90;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    }
+
+    function toggleLeftStrip() {
+      var bar = document.getElementById('leftStripBar');
+      var backdrop = document.getElementById('stripBackdrop');
+      if (bar) bar.classList.toggle('open');
+      if (backdrop) backdrop.classList.toggle('active');
+    }
+
+    function closeMobileStrip() {
+      var bar = document.getElementById('leftStripBar');
+      var backdrop = document.getElementById('stripBackdrop');
+      if (bar) bar.classList.remove('open');
+      if (backdrop) backdrop.classList.remove('active');
+    }
+
+    function jumpToGrade(val) {
+      if (val) {
+        window.location.href = 'tharam-' + val + '.html';
+      }
+    }
+
+    // 2. Student LMS Profile & Progress
+    function saveStudentName(name) {
+      localStorage.setItem('gkd_student_name', name);
+      updateStudentNameDisplays(name);
+    }
+
+    function updateStudentNameDisplays(name) {
+      var defaultName = name && name.trim() ? name.trim() : 'செல்வன் / செல்வி மாணவர்';
+      var stripEl = document.getElementById('stripUserName');
+      if (stripEl) stripEl.textContent = name && name.trim() ? name.trim().split(' ')[0] : 'சுயவிவரம்';
+      var certNameEl = document.getElementById('certStudentNameDisplay');
+      if (certNameEl) certNameEl.textContent = defaultName;
+    }
+
+    function calculateOverallSchoolProgress() {
+      var totalUnits = 60; // 5 units * 11 grades + 5 in grade 1
+      var completedCount = 0;
+      
+      for (var g = 1; g <= 12; g++) {
+        for (var u = 1; u <= 6; u++) {
+          if (localStorage.getItem('gkd_completed_' + g + '_' + u) === 'true') {
+            completedCount++;
+          }
+        }
+      }
+
+      var pct = Math.round((completedCount / totalUnits) * 100);
+      var countEl = document.getElementById('completedLessonsCount');
+      var xpEl = document.getElementById('totalVedicXP');
+      var barEl = document.getElementById('overallProgressBar');
+      var pctEl = document.getElementById('overallProgressPercent');
+
+      if (countEl) countEl.textContent = completedCount;
+      if (xpEl) xpEl.textContent = (completedCount * 50);
+      if (barEl) barEl.style.width = pct + '%';
+      if (pctEl) pctEl.textContent = pct + '%';
+    }
+
+    // 3. Web Audio Synthesized Temple Bell & Chime
+    var audioCtx = null;
+    function getAudioContext() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      return audioCtx;
+    }
+
+    function playTempleBell() {
+      try {
+        var ctx = getAudioContext();
+        var now = ctx.currentTime;
+
+        // Fundamental Bell strike + Harmonics (432Hz root, 864Hz octave, 1296Hz fifth)
+        var freqs = [432, 864, 1296, 1728];
+        var gains = [0.4, 0.25, 0.15, 0.08];
+
+        freqs.forEach(function(freq, i) {
+          var osc = ctx.createOscillator();
+          var gainNode = ctx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, now);
+
+          gainNode.gain.setValueAtTime(gains[i], now);
+          gainNode.gain.exponentialRampToValueAtTime(0.0001, now + 3.5);
+
+          osc.connect(gainNode);
+          gainNode.connect(ctx.destination);
+
+          osc.start(now);
+          osc.stop(now + 3.6);
+        });
+      } catch (e) {
+        console.log('Audio synthesis note:', e);
+      }
+    }
+
+    // 4. Pomodoro Focus Timer
+    var timerSeconds = 25 * 60;
+    var timerInterval = null;
+    var currentTimerMode = 'study';
+
+    function setTimerMode(mode) {
+      clearInterval(timerInterval);
+      timerInterval = null;
+      var startBtn = document.getElementById('timerStartBtn');
+      if (startBtn) startBtn.textContent = 'தொடங்கு (Start)';
+
+      document.querySelectorAll('.timer-mode-btn').forEach(function(b) { b.classList.remove('active'); });
+
+      if (mode === 'study') {
+        timerSeconds = 25 * 60;
+        document.getElementById('modeBtnStudy').classList.add('active');
+      } else if (mode === 'breath') {
+        timerSeconds = 5 * 60;
+        document.getElementById('modeBtnBreath').classList.add('active');
+      } else if (mode === 'deep') {
+        timerSeconds = 50 * 60;
+        document.getElementById('modeBtnDeep').classList.add('active');
+      }
+      currentTimerMode = mode;
+      updateTimerDisplay();
+    }
+
+    function updateTimerDisplay() {
+      var mins = Math.floor(timerSeconds / 60);
+      var secs = timerSeconds % 60;
+      var str = (mins < 10 ? '0' : '') + mins + ':' + (secs < 10 ? '0' : '') + secs;
+      var el = document.getElementById('timerDisplay');
+      if (el) el.textContent = str;
+    }
+
+    function toggleTimer() {
+      var startBtn = document.getElementById('timerStartBtn');
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        if (startBtn) startBtn.textContent = 'தொடர்க (Resume)';
+      } else {
+        if (startBtn) startBtn.textContent = 'நிறுத்து (Pause)';
+        timerInterval = setInterval(function() {
+          if (timerSeconds > 0) {
+            timerSeconds--;
+            updateTimerDisplay();
+          } else {
+            clearInterval(timerInterval);
+            timerInterval = null;
+            if (startBtn) startBtn.textContent = 'தொடங்கு (Start)';
+            var bellCheck = document.getElementById('bellSoundToggle');
+            if (bellCheck && bellCheck.checked) {
+              playTempleBell();
+            }
+            alert('வேத படிப்பு நேரம் நிறைவடைந்தது! ஆழ்ந்த அமைதியுடன் ஓய்வெடுங்கள்.');
+          }
+        }, 1000);
+      }
+    }
+
+    function resetTimer() {
+      setTimerMode(currentTimerMode);
+    }
+
+    // 5. 4-7-8 Pranayama Breath Pacer
+    var breathInterval = null;
+    var breathStep = 0; // 0=inhale(4), 1=hold(7), 2=exhale(8)
+
+    function toggleBreathPacer() {
+      var btn = document.getElementById('breathToggleBtn');
+      if (breathInterval) {
+        clearInterval(breathInterval);
+        breathInterval = null;
+        if (btn) btn.textContent = 'பயிற்சியைத் தொடங்கு';
+        var circle = document.getElementById('breathCircle');
+        if (circle) circle.className = 'breath-circle';
+        var txt = document.getElementById('breathText');
+        if (txt) txt.textContent = 'மூச்சை உள்ளிழுக்கவும் (Inhale 4s)';
+      } else {
+        if (btn) btn.textContent = 'பயிற்சியை நிறுத்து';
+        runBreathCycle();
+      }
+    }
+
+    function runBreathCycle() {
+      var circle = document.getElementById('breathCircle');
+      var txt = document.getElementById('breathText');
+      var sub = document.getElementById('breathSubText');
+
+      // 1. Inhale 4s
+      if (circle) circle.className = 'breath-circle inhale';
+      if (txt) txt.textContent = 'மூச்சை உள்ளிழுக்கவும் (Inhale 4s)';
+      if (sub) sub.textContent = 'நாசி வழியே அமைதியாக ஆழமாக உள்ளிழுக்கவும்';
+
+      setTimeout(function() {
+        if (!breathInterval && breathInterval !== null) return;
+        // 2. Hold 7s
+        if (circle) circle.className = 'breath-circle hold';
+        if (txt) txt.textContent = 'அமைதியாக நிறுத்தவும் (Hold 7s)';
+        if (sub) sub.textContent = 'பிராண ஆற்றலை மனதில் குவித்து அமைதி காக்கவும்';
+
+        setTimeout(function() {
+          if (!breathInterval && breathInterval !== null) return;
+          // 3. Exhale 8s
+          if (circle) circle.className = 'breath-circle exhale';
+          if (txt) txt.textContent = 'மெதுவாக வெளிவிடவும் (Exhale 8s)';
+          if (sub) sub.textContent = 'வாய் வழியே உஸ் என்ற மெல்லிய ஓசையுடன் வெளிவிடவும்';
+
+          setTimeout(function() {
+            if (breathInterval !== null) {
+              runBreathCycle();
+            }
+          }, 8000);
+
+        }, 7000);
+
+      }, 4000);
+
+      if (!breathInterval) {
+        breathInterval = 1; // sentinel to keep cycle alive
+      }
+    }
+
+    // 6. Flashcard System
+    var flashcards = [
+      {
+        badge: 'அட்டை 1 / 6 • தரம் 2',
+        q: 'திருநீற்றை நெற்றியில் மூன்று கோடுகளாக அணிவதன் தத்துவம் மற்றும் அறிவியல் உண்மை யாது?',
+        a: 'திரிபுண்டரம் என்பது மும்மலங்களை சுட்டெரிக்கும் சங்கற்பம். மருத்துவ ரீதியாக, நாட்டுப் பசுவின் விபூதி நெற்றியின் ஆக்ஞா நரம்பு முனையைக் குளிர்வித்து மன அழுத்தத்தைக் குறைத்து நினைவாற்றலைத் தூண்டுகிறது.'
+      },
+      {
+        badge: 'அட்டை 2 / 6 • தரம் 3',
+        q: 'அதிகாலை பிரம்ம முகூர்த்தத்தில் (காலை 4:30 - 6:00) எழுந்து படிப்பதன் நரம்பியல் உண்மை என்ன?',
+        a: 'அதிகாலையில் காற்றில் தூய ஓசோன் மற்றும் பிராண வாயு அடர்த்தி அதிகம். மனித மூளையில் அமைதி தரும் மெலடோனின் மற்றும் புத்துணர்ச்சி தரும் கார்டிசோல் சமநிலையில் இருப்பதால் கவனக்குவிப்பு 3 மடங்கு அதிகரிக்கிறது.'
+      },
+      {
+        badge: 'அட்டை 3 / 6 • தரம் 4',
+        q: 'சைவ விரதங்களில் உள்ள உண்ணா நோன்பு எவ்வாறு மனித செல்களைப் புதுப்பிக்கிறது?',
+        a: 'நோபல் பரிசு பெற்ற ‘ஆட்டோஃபேஜி’ (Autophagy) தத்துவப்படி, உண்ணா நோன்பின் போது உடலின் நோயுற்ற செல்களை உடலே மறுசுழற்சி செய்து அழித்து நச்சுக்களை வெளியேற்றுகிறது.'
+      },
+      {
+        badge: 'அட்டை 4 / 6 • தரம் 6',
+        q: 'சைவ சித்தாந்த முப்பொருள் உண்மை (பதி, பசு, பாசம்) நவீன அமைப்பியலுடன் எவ்வாறு பொருந்துகிறது?',
+        a: 'பதி என்பது பேரறிவு (Universal Master Code), பசு என்பது ஆன்மா (Autonomous Agent), பாசம் என்பது அறியாமை மற்றும் மாயை (Resistance & Resistance in System). பாசத்தை நீக்குவதே மெய்யறிவு.'
+      },
+      {
+        badge: 'அட்டை 5 / 6 • தரம் 8',
+        q: 'பகவத் கீதையின் கர்ம யோகம் (பலனில் பற்றற்ற கடமை) தேர்வுகளுக்கு எவ்வாறு உதவுகிறது?',
+        a: 'முடிவைப் பற்றிய பயத்தை நீக்கி (Performance Anxiety Relief), நிகழ்காலத்தில் முழு மன ஈடுபாட்டோடு (Flow State) செயல்பட்டு மிக உயர்ந்த வெற்றியை ஈட்ட உதவுகிறது.'
+      },
+      {
+        badge: 'அட்டை 6 / 6 • தரம் 12',
+        q: 'சுவிட்சர்லாந்து CERN அணு ஆராய்ச்சி மையத்தில் நடராஜர் சிலை வைக்கப்பட்டிருப்பதன் அறிவியல் காரணம் என்ன?',
+        a: 'அணுத்துகள்களின் தொடர்ச்சியான தோற்றமும், இருப்பும், மறைவும் (Creation & Annihilation of Subatomic Particles) நடராஜரின் ஆனந்தத் தாண்டவத்தோடு துல்லியமாக ஒத்திருப்பதே காரணம்.'
+      }
+    ];
+
+    var currentFcIndex = 0;
+    var isFlipped = false;
+
+    function renderFlashcard() {
+      var card = flashcards[currentFcIndex];
+      document.getElementById('fcBadge').textContent = card.badge;
+      document.getElementById('fcQuestion').textContent = card.q;
+      document.getElementById('fcAnswer').innerHTML = '<strong>விடை:</strong> ' + card.a;
+      document.getElementById('fcAnswer').style.display = 'none';
+      document.getElementById('fcQuestion').style.display = 'block';
+      isFlipped = false;
+    }
+
+    function flipFlashcard() {
+      var q = document.getElementById('fcQuestion');
+      var a = document.getElementById('fcAnswer');
+      isFlipped = !isFlipped;
+      if (isFlipped) {
+        q.style.display = 'none';
+        a.style.display = 'block';
+      } else {
+        q.style.display = 'block';
+        a.style.display = 'none';
+      }
+    }
+
+    function nextFlashcard() {
+      currentFcIndex = (currentFcIndex + 1) % flashcards.length;
+      renderFlashcard();
+    }
+
+    function prevFlashcard() {
+      currentFcIndex = (currentFcIndex - 1 + flashcards.length) % flashcards.length;
+      renderFlashcard();
+    }
+
+    // 7. Certificate Generator
+    function updateCertificatePreview() {
+      var grade = document.getElementById('certGradeSelect').value;
+      var bodyEl = document.getElementById('certBodyDisplay');
+      if (bodyEl) {
+        bodyEl.innerHTML = 'மேற்குறிப்பிட்ட மாணவர் குரு குல தேசத்தின் அதிநவீன சனாதன வேத தர்மக் கல்வி நெறிமுறைகளின் கீழ் <strong>' + grade + '</strong> பாடத்திட்டம், நவீன அறிவியல் ஒப்பீடுகள், தினசரி தர்ம சாதனை மற்றும் வினாடி-வினாத் தேர்வுகளை முழுமையாக நிறைவு செய்து இப்பேறுபெற்ற சான்றிதழைப் பெறுகிறார் எனச் சான்றளிக்கப்படுகிறது.';
+      }
+    }
+
+    // Initial Load
+    document.addEventListener('DOMContentLoaded', function() {
+      var savedName = localStorage.getItem('gkd_student_name') || '';
+      var input = document.getElementById('studentNameInput');
+      if (input && savedName) input.value = savedName;
+      updateStudentNameDisplays(savedName);
+      calculateOverallSchoolProgress();
+      renderFlashcard();
+      updateCertificatePreview();
+    });
+  </script>
+</body>
+</html>
+"""
+
+def main():
+    targets = ['school.html', 'site/school.html', 'docs/school.html']
+    for t in targets:
+        os.makedirs(os.path.dirname(t) if os.path.dirname(t) else '.', exist_ok=True)
+        with open(t, 'w', encoding='utf-8') as f:
+            f.write(HTML_CONTENT)
+        print(f"Created {t}")
+
+if __name__ == '__main__':
+    main()
