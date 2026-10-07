@@ -1163,7 +1163,8 @@ function resolvePageContext() {
     'irai-isai-virundhu.html': { root: 'இசை', title: 'இறை இசை விருந்து', desc: '5 சிறப்புப் பக்தி ஆல்பங்கள்' },
     'youtube.html': { root: 'காணொளி', title: 'YouTube காணொளி அரங்கம்', desc: '580 பக்தி இசை & பாடல்கள்' },
     'about.html': { root: 'காஞ்சி மகா பெரியவா', title: 'தெய்வத்தின் குரல் & தரிசனம்', desc: 'அருளுரைகள் & வழிகாட்டல்' },
-    'google-site.html': { root: 'இணைப்பு', title: 'அதிகாரப்பூர்வ கூகிள் தளம்', desc: 'Google Sites நேரடி பார்வை' }
+    'google-site.html': { root: 'இணைப்பு', title: 'அதிகாரப்பூர்வ கூகிள் தளம்', desc: 'Google Sites நேரடி பார்வை' },
+    'review_quality.html': { root: 'தமிழ்மறை', title: 'திரைத் தர ஆய்வு அரங்கம் (Film Quality Screening Room)', desc: 'திருக்குறள் மாஸ்டர் சினிமா ஆய்வு & காட்சி சரிபார்ப்பு' }
   };
 
   return contextMap[filename] || { root: 'குரு குல தேசம்', title: 'ஆன்மீகக் களஞ்சியம்', desc: '' };
@@ -1295,7 +1296,24 @@ function getContextTabsForPage() {
       { id: 'tab-aram', icon: '🌿', label: 'அறத்துப்பால்', action: "filterByText('அறத்துப்பால்')" },
       { id: 'tab-porul', icon: '👑', label: 'பொருட்பால்', action: "filterByText('பொருட்பால்')" },
       { id: 'tab-inbam', icon: '🌺', label: 'காமத்துப்பால்', action: "filterByText('காமத்துப்பால்')" },
-      { id: 'tab-films-tk', icon: '🎬', label: 'குறள் திரைப்படங்கள்', action: "setTypeFilter('film')" }
+      { id: 'tab-films-tk', icon: '🎬', label: 'குறள் திரைப்படங்கள்', action: "setTypeFilter('film')" },
+      { id: 'tab-review-qa', icon: '🔬', label: 'திரைப் பரிசோதனை கூடம் (QA)', href: 'review_quality.html' }
+    ];
+  }
+
+  // 7b. Film Quality Screening Room (review_quality.html)
+  if (filename === 'review_quality.html') {
+    return [
+      { id: 'tab-rev-5', icon: '🏡', label: 'அதி 5 (இல்வாழ்க்கை)', action: "loadChapter(5)" },
+      { id: 'tab-rev-8', icon: '❤️', label: 'அதி 8 (அன்புடைமை)', action: "loadChapter(8)" },
+      { id: 'tab-rev-16', icon: '🛡️', label: 'அதி 16 (பொறையுடைமை)', action: "loadChapter(16)" },
+      { id: 'tab-rev-26', icon: '🌱', label: 'அதி 26 (புலால்)', action: "loadChapter(26)" },
+      { id: 'tab-rev-27', icon: '🧘', label: 'அதி 27 (தவம்)', action: "loadChapter(27)" },
+      { id: 'tab-rev-52', icon: '👑', label: 'அதி 52 (தெரிந்து)', action: "loadChapter(52)" },
+      { id: 'tab-rev-54', icon: '🏹', label: 'அதி 54 (பொச்சா)', action: "loadChapter(54)" },
+      { id: 'tab-rev-57', icon: '⚖️', label: 'அதி 57 (வெருவந்த)', action: "loadChapter(57)" },
+      { id: 'tab-rev-61', icon: '☀️', label: 'அதி 61 (மடி)', action: "loadChapter(61)" },
+      { id: 'tab-rev-back', icon: '📖', label: 'திருக்குறள் தளம்', href: 'thirukkural.html' }
     ];
   }
 
