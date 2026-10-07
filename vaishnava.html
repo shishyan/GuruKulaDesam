@@ -7,148 +7,119 @@
   <meta name="description" content="ஆண்டாள் திருப்பாவை, பெரியாழ்வார் திருமொழி தாலாட்டு, நமோ நாராயணம் மற்றும் நாம சங்கீர்த்தனம்.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="has-left-strip">
 
   
-      <header class="site-header">
-    <div class="header-container">
-      <a href="index.html" class="brand" aria-label="Guru Kula Desam Home">
-        <div class="brand-emblem">ॐ</div>
-        <div class="brand-text">
-          <h1>குரு குல தேசம்</h1>
-          <span>Guru Kula Desam <span class="brand-sub-extra">• வேத &amp; சைவ நெறி</span></span>
-        </div>
+        <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL) -->
+  <aside class="left-strip-bar" id="leftStripBar" aria-label="Quick Access Sidebar">
+    <div class="strip-header">
+      <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
+        <span class="strip-emblem">ॐ</span>
+        <span class="strip-brand-text">குரு குல தேசம்</span>
       </a>
-      <button class="mobile-toggle" id="mobileNavToggle" onclick="toggleMobileNav()" aria-label="பட்டி (Menu)" aria-expanded="false">☰</button>
-      <div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div>
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html" class="nav-link ">முகப்பு</a>
-        <a href="saiva-neri.html" class="nav-link ">சைவ நெறி</a>
+      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="toggleLeftStrip()" title="விரிவுபடுத்து / சுருக்கு" aria-label="Toggle Sidebar">
+        <span class="strip-toggle-icon">⇤</span>
+      </button>
+    </div>
 
-        <!-- Kalvi (Grades 1-12) Dropdown -->
-        <div class="nav-dropdown " id="kalviDropdown">
-          <button class="nav-link dropdown-toggle " id="kalviDropdownBtn" onclick="toggleDropdown(event, 'kalviDropdown')" aria-haspopup="true" aria-expanded="false">
-            <span>கல்வி (Grades 1-12)</span>
-            <span class="dropdown-arrow">▾</span>
-          </button>
-          <div class="dropdown-menu kalvi-menu" id="kalviDropdownMenu">
-            <a href="kalvi.html" class="dropdown-item " style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
-              <span class="dropdown-item-icon">🏛️</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">சைவ நெறி கல்வித் தளம் (Curriculum Hub)</div>
-                <div class="dropdown-item-desc">தரம் 1 முதல் 12 வரையிலான முழுமையான பாடநெறி</div>
-              </div>
-            </a>
-            <a href="virtues.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
-              <span class="dropdown-item-icon">🔤</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">அகர வரிசை நற்பண்பு நெறி (Virtues Mapping)</div>
-                <div class="dropdown-item-desc">தமிழ் எழுத்து முதல் தர்மம் வரை — 12 தரங்களின் நற்பண்பு வளர்ச்சி</div>
-              </div>
-            </a>
-            <a href="tharam-1.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">📖</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">தரம் 1 (Grade 1)</div>
-                <div class="dropdown-item-desc">60 பாடப் படங்கள் &amp; நூல்கள்</div>
-              </div>
-            </a>
-            <a href="tharam-2.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🪔</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 2 (Grade 2)</div></div>
-            </a>
-            <a href="tharam-3.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🔱</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 3 (Grade 3)</div></div>
-            </a>
-            <a href="tharam-4.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">📜</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 4 (Grade 4)</div></div>
-            </a>
-            <a href="tharam-5.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🌺</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 5 (Grade 5)</div></div>
-            </a>
-            <a href="tharam-6.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🕉️</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 6 (Grade 6)</div></div>
-            </a>
-            <a href="tharam-7.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🔔</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 7 (Grade 7)</div></div>
-            </a>
-            <a href="tharam-8.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">✨</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 8 (Grade 8)</div></div>
-            </a>
-            <a href="tharam-9.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">⚜️</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 9 (Grade 9)</div></div>
-            </a>
-            <a href="tharam-10.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🌟</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 10 (Grade 10)</div></div>
-            </a>
-            <a href="tharam-11.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🔱</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 11 (Grade 11)</div></div>
-            </a>
-            <a href="tharam-12.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">👑</span>
-              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 12 (Grade 12)</div></div>
-            </a>
-          </div>
-        </div>
+    <nav class="strip-nav-list" id="stripNavList">
+      <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
+        <span class="strip-item-icon">🏠</span>
+        <span class="strip-item-label">முகப்பு</span>
+      </a>
+      <a href="kalvi.html" class="strip-item" data-tooltip="கல்வி நெறி">
+        <span class="strip-item-icon">🎓</span>
+        <span class="strip-item-label">கல்வி நெறி</span>
+      </a>
+      <a href="virtues.html" class="strip-item" data-tooltip="நற்பண்புகள்">
+        <span class="strip-item-icon">🔤</span>
+        <span class="strip-item-label">நற்பண்புகள்</span>
+      </a>
+      <a href="saiva-neri.html" class="strip-item" data-tooltip="சைவ நெறி">
+        <span class="strip-item-icon">🕉️</span>
+        <span class="strip-item-label">சைவ நெறி</span>
+      </a>
+      <a href="irai-isai-virundhu.html" class="strip-item" data-tooltip="இறை இசை">
+        <span class="strip-item-icon">🎵</span>
+        <span class="strip-item-label">இறை இசை</span>
+      </a>
+      <a href="thirukkural.html" class="strip-item" data-tooltip="திருக்குறள்">
+        <span class="strip-item-icon">📖</span>
+        <span class="strip-item-label">திருக்குறள்</span>
+      </a>
+      <a href="sanmargam.html" class="strip-item" data-tooltip="சன்மார்க்கம்">
+        <span class="strip-item-icon">🪔</span>
+        <span class="strip-item-label">சன்மார்க்கம்</span>
+      </a>
+      <a href="murugan.html" class="strip-item" data-tooltip="முருகன்">
+        <span class="strip-item-icon">🔱</span>
+        <span class="strip-item-label">முருகன்</span>
+      </a>
+      <a href="sakthi.html" class="strip-item" data-tooltip="சக்தி நெறி">
+        <span class="strip-item-icon">🌸</span>
+        <span class="strip-item-label">சக்தி நெறி</span>
+      </a>
+      <a href="vinayagar.html" class="strip-item" data-tooltip="விநாயகர்">
+        <span class="strip-item-icon">🐘</span>
+        <span class="strip-item-label">விநாயகர்</span>
+      </a>
+      <a href="vaishnava.html" class="strip-item active" data-tooltip="வைணவம்">
+        <span class="strip-item-icon">🪷</span>
+        <span class="strip-item-label">வைணவம்</span>
+      </a>
+      <a href="syllabus.html" class="strip-item" data-tooltip="பாடத்திட்டம்">
+        <span class="strip-item-icon">📚</span>
+        <span class="strip-item-label">பாடத்திட்டம்</span>
+      </a>
+      <a href="about.html" class="strip-item" data-tooltip="பெரியவா">
+        <span class="strip-item-icon">🏛️</span>
+        <span class="strip-item-label">பெரியவா</span>
+      </a>
+    </nav>
 
-        <!-- Traditions Dropdown -->
-        <div class="nav-dropdown " id="traditionsDropdown">
-          <button class="nav-link dropdown-toggle" id="traditionsDropdownBtn" onclick="toggleDropdown(event, 'traditionsDropdown')" aria-haspopup="true" aria-expanded="false">
-            <span>வழிபாட்டு நெறிகள்</span>
-            <span class="dropdown-arrow">▾</span>
-          </button>
-          <div class="dropdown-menu" id="traditionsDropdownMenu">
-            <a href="murugan.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🔱</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">முருகன் (Kaumaram)</div>
-                <div class="dropdown-item-desc">கந்த சஷ்டி, திருப்புகழ் &amp; கானங்கள்</div>
-              </div>
-            </a>
-            <a href="sakthi.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🌸</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">சக்தி (Shaktham)</div>
-                <div class="dropdown-item-desc">அபிராமி அந்தாதி &amp; லலிதா போற்றிகள்</div>
-              </div>
-            </a>
-            <a href="vinayagar.html" class="dropdown-item ">
-              <span class="dropdown-item-icon">🐘</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">விநாயகர் (Ganapathyam)</div>
-                <div class="dropdown-item-desc">விநாயகர் அகவல் &amp; மூல கணபதி பதிகங்கள்</div>
-              </div>
-            </a>
-            <a href="vaishnava.html" class="dropdown-item active">
-              <span class="dropdown-item-icon">🪷</span>
-              <div class="dropdown-item-content">
-                <div class="dropdown-item-title">வைணவம் (Vaishnavam)</div>
-                <div class="dropdown-item-desc">விஷ்ணு, கிருஷ்ணர் &amp; திவ்வியப் பிரபந்தம்</div>
-              </div>
-            </a>
-          </div>
-        </div>
+    <div class="strip-footer-dock">
+      <button type="button" class="strip-dock-btn" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
+        <span class="strip-dock-icon">⚙️</span>
+        <span class="strip-dock-label">அமைப்புகள்</span>
+      </button>
+      <button type="button" class="strip-dock-btn profile-dock-btn" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
+        <span class="strip-dock-avatar" id="stripAvatarIcon">👤</span>
+        <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
+      </button>
+    </div>
+  </aside>
 
-        <a href="thirukkural.html" class="nav-link ">திருக்குறள்</a>
-        <a href="sanmargam.html" class="nav-link ">சன்மார்க்கம்</a>
-        <a href="irai-isai-virundhu.html" class="nav-link ">இறை இசை</a>
-        <a href="syllabus.html" class="nav-link ">பாடத்திட்டம்</a>
-        <a href="classes.html" class="nav-link ">வகுப்புகள்</a>
-        <a href="about.html" class="nav-link ">பெரியவா தரிசனம்</a>
-        <a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener" class="nav-link" style="border: 1px solid var(--border-gold); padding: 5px 12px; border-radius: 16px; color: var(--gold-bright);">🌐 கூகிள் தளம் ↗</a>
-        <a href="https://www.youtube.com/@guru-kula-desam?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="yt-btn-header">
-          ▶ YouTube
-        </a>
+  <div class="strip-backdrop" id="stripBackdrop" onclick="closeMobileStrip()"></div>
+
+  <!-- CONTEXT-SENSITIVE TOP BAR (Sub-items for active section only) -->
+  <header class="context-top-bar" id="contextTopBar">
+    <div class="context-bar-container">
+      <button type="button" class="context-mobile-btn" onclick="toggleLeftStrip()" title="பக்கப்பட்டி">☰</button>
+      <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Section Tabs">
+        <a href="murugan.html" class="context-tab-pill"><span class="context-tab-pill-icon">🔱</span><span>முருகன் (Kaumaram)</span></a>
+        <a href="sakthi.html" class="context-tab-pill"><span class="context-tab-pill-icon">🌸</span><span>சக்தி (Shaktham)</span></a>
+        <a href="vinayagar.html" class="context-tab-pill"><span class="context-tab-pill-icon">🐘</span><span>விநாயகர் (Ganapathyam)</span></a>
+        <a href="vaishnava.html" class="context-tab-pill active"><span class="context-tab-pill-icon">🪷</span><span>வைணவம் (Vaishnavam)</span></a>
       </nav>
+      <div class="header-right-tools">
+        <div class="context-search-wrapper">
+          <span class="context-search-icon">🔍</span>
+          <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
+          <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;">✕</button>
+        </div>
+        <div class="context-tool-group">
+          <button type="button" class="context-tool-btn font-dec-btn" onclick="adjustFontSize(-0.06)" title="எழுத்தளவைக் குறைக்க (A-)">A⁻</button>
+          <span class="font-scale-indicator" id="fontScaleIndicator">100%</span>
+          <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க (A+)">A⁺</button>
+        </div>
+        <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள்">
+          <span class="theme-icon" id="themeQuickIcon">🌓</span>
+        </button>
+        <button type="button" class="context-profile-pill" onclick="openUserSettingsModal('profile')" title="சுயவிவரம் &amp; அமைப்புகள்">
+          <span class="pill-avatar" id="pillAvatarIcon">👤</span>
+          <span class="pill-name" id="pillUserName">சாதகர்</span>
+        </button>
+      </div>
     </div>
   </header>
 

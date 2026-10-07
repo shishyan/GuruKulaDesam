@@ -360,7 +360,87 @@
     }
   </style>
 </head>
-<body>
+<body class="has-left-strip">
+  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL) -->
+  <aside class="left-strip-bar" id="leftStripBar" aria-label="Quick Access Sidebar">
+    <div class="strip-header">
+      <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
+        <span class="strip-emblem">ॐ</span>
+        <span class="strip-brand-text">குரு குல தேசம்</span>
+      </a>
+      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="toggleLeftStrip()" title="விரிவுபடுத்து / சுருக்கு" aria-label="Toggle Sidebar">
+        <span class="strip-toggle-icon">⇤</span>
+      </button>
+    </div>
+
+    <nav class="strip-nav-list" id="stripNavList">
+      <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
+        <span class="strip-item-icon">🏠</span>
+        <span class="strip-item-label">முகப்பு</span>
+      </a>
+      <a href="kalvi.html" class="strip-item" data-tooltip="கல்வி நெறி">
+        <span class="strip-item-icon">🎓</span>
+        <span class="strip-item-label">கல்வி நெறி</span>
+      </a>
+      <a href="virtues.html" class="strip-item" data-tooltip="நற்பண்புகள்">
+        <span class="strip-item-icon">🔤</span>
+        <span class="strip-item-label">நற்பண்புகள்</span>
+      </a>
+      <a href="saiva-neri.html" class="strip-item" data-tooltip="சைவ நெறி">
+        <span class="strip-item-icon">🕉️</span>
+        <span class="strip-item-label">சைவ நெறி</span>
+      </a>
+      <a href="irai-isai-virundhu.html" class="strip-item" data-tooltip="இறை இசை">
+        <span class="strip-item-icon">🎵</span>
+        <span class="strip-item-label">இறை இசை</span>
+      </a>
+      <a href="thirukkural.html" class="strip-item" data-tooltip="திருக்குறள்">
+        <span class="strip-item-icon">📖</span>
+        <span class="strip-item-label">திருக்குறள்</span>
+      </a>
+      <a href="sanmargam.html" class="strip-item" data-tooltip="சன்மார்க்கம்">
+        <span class="strip-item-icon">🪔</span>
+        <span class="strip-item-label">சன்மார்க்கம்</span>
+      </a>
+      <a href="murugan.html" class="strip-item" data-tooltip="முருகன்">
+        <span class="strip-item-icon">🔱</span>
+        <span class="strip-item-label">முருகன்</span>
+      </a>
+      <a href="sakthi.html" class="strip-item" data-tooltip="சக்தி நெறி">
+        <span class="strip-item-icon">🌸</span>
+        <span class="strip-item-label">சக்தி நெறி</span>
+      </a>
+      <a href="vinayagar.html" class="strip-item" data-tooltip="விநாயகர்">
+        <span class="strip-item-icon">🐘</span>
+        <span class="strip-item-label">விநாயகர்</span>
+      </a>
+      <a href="vaishnava.html" class="strip-item" data-tooltip="வைணவம்">
+        <span class="strip-item-icon">🪷</span>
+        <span class="strip-item-label">வைணவம்</span>
+      </a>
+      <a href="syllabus.html" class="strip-item" data-tooltip="பாடத்திட்டம்">
+        <span class="strip-item-icon">📚</span>
+        <span class="strip-item-label">பாடத்திட்டம்</span>
+      </a>
+      <a href="about.html" class="strip-item" data-tooltip="பெரியவா">
+        <span class="strip-item-icon">🏛️</span>
+        <span class="strip-item-label">பெரியவா</span>
+      </a>
+    </nav>
+
+    <div class="strip-footer-dock">
+      <button type="button" class="strip-dock-btn" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
+        <span class="strip-dock-icon">⚙️</span>
+        <span class="strip-dock-label">அமைப்புகள்</span>
+      </button>
+      <button type="button" class="strip-dock-btn profile-dock-btn" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
+        <span class="strip-dock-avatar" id="stripAvatarIcon">👤</span>
+        <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="strip-backdrop" id="stripBackdrop" onclick="closeMobileStrip()"></div>
 
   <div class="banner">
     <div class="sacred-emblem">ॐ சிவாய நம ஓம்</div>

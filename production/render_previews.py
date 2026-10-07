@@ -2,13 +2,11 @@ from __future__ import annotations
 
 import math
 import subprocess
+import shutil
 from pathlib import Path
 
-import imageio_ffmpeg
-
-
 ROOT = Path(__file__).resolve().parents[1]
-FFMPEG = Path(imageio_ffmpeg.get_ffmpeg_exe())
+FFMPEG = Path(shutil.which('ffmpeg') or 'C:/ffmpeg/bin/ffmpeg.exe')
 VISUALS = ROOT / "production" / "visuals"
 SOURCES = ROOT / "source" / "youtube"
 OUT = ROOT / "renders" / "previews"
