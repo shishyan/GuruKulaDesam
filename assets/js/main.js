@@ -1218,10 +1218,13 @@ function getContextTabsForPage() {
   // 4. Master Home (index.html)
   if (filename === 'index.html' || filename === '') {
     return [
-      { id: 'tab-all-media', icon: '🌟', label: 'அனைத்து வெளியீடுகள் (580)', action: "setTypeFilter('all')", active: true },
-      { id: 'tab-films', icon: '🎬', label: 'முழுத் திரைப்படங்கள்', action: "setTypeFilter('film')" },
-      { id: 'tab-audio', icon: '🎵', label: 'இசை வெளியீடுகள்', action: "setTypeFilter('audio')" },
-      { id: 'tab-phil', icon: '🔱', label: 'தத்துவ சாரம்', action: "scrollToSection('philosophySection')" },
+      { id: 'tab-home', icon: '🏠', label: 'முகப்பு', href: 'index.html', active: true },
+      { id: 'tab-kalvi', icon: '🌿', label: 'வாழ்வியல் நெறி (12 நிலைகள்)', href: 'kalvi.html' },
+      { id: 'tab-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' },
+      { id: 'tab-kural', icon: '📜', label: 'திருக்குறள் தர்மம்', href: 'thirukkural.html' },
+      { id: 'tab-saivam', icon: '🔱', label: 'சைவ நெறி', href: 'saiva-neri.html' },
+      { id: 'tab-featured', icon: '🎬', label: 'சிறப்புத் திரையரங்கம்', action: "scrollToSection('featuredScreeningRoom')" },
+      { id: 'tab-catalog', icon: '📺', label: '580 வெளியீடுகள்', href: 'youtube.html' },
       { id: 'tab-contact', icon: '📍', label: 'மைய முகவரி', action: "scrollToSection('siteFooter')" }
     ];
   }
