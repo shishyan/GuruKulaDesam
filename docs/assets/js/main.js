@@ -866,21 +866,263 @@ function clearContextSearch() {
   }
 }
 
-// Keyboard shortcuts: '/' to search, 'Esc' to close
+// Keyboard shortcuts: '/' or 'Ctrl+K' to open universal search, 'Esc' to close modals
 document.addEventListener('keydown', e => {
-  if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-    const input = document.getElementById('contextQuickSearch');
-    if (input) {
-      e.preventDefault();
-      input.focus();
-      input.select();
-    }
+  if ((e.key === '/' || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k')) && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+    e.preventDefault();
+    openUniversalSearch();
   }
   if (e.key === 'Escape') {
+    closeUniversalSearch();
     closeUserSettingsModal();
     closeMobileStrip();
   }
 });
+
+// --------------------------------------------------------------------------
+// 1. AMBIENT MEDITATIVE TANPURA DRONE (Web Audio API)
+// --------------------------------------------------------------------------
+let droneAudioCtx = null;
+let droneOscillators = [];
+let droneGainNode = null;
+let isDronePlaying = false;
+
+function toggleAmbientDrone() {
+  if (isDronePlaying) {
+    stopAmbientDrone();
+  } else {
+    startAmbientDrone();
+  }
+}
+
+function startAmbientDrone() {
+  try {
+    const AudioCtxClass = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtxClass) return;
+    if (!droneAudioCtx) {
+      droneAudioCtx = new AudioCtxClass();
+    }
+    if (droneAudioCtx.state === 'suspended') {
+      droneAudioCtx.resume();
+    }
+
+    droneGainNode = droneAudioCtx.createGain();
+    droneGainNode.gain.setValueAtTime(0.001, droneAudioCtx.currentTime);
+    droneGainNode.gain.exponentialRampToValueAtTime(0.12, droneAudioCtx.currentTime + 2.5);
+    droneGainNode.connect(droneAudioCtx.destination);
+
+    // C# Tanpura Harmonic Frequencies:
+    // Kharaj Sa (C#3 - 138.59 Hz), Pa (G#3 - 207.65 Hz), Sa (C#4 - 277.18 Hz), Sa (C#4 - 277.65 Hz)
+    const freqs = [138.59, 207.65, 277.18, 277.65];
+    droneOscillators = freqs.map((freq, i) => {
+      const osc = droneAudioCtx.createOscillator();
+      const oscGain = droneAudioCtx.createGain();
+      osc.type = (i === 0) ? 'triangle' : 'sine';
+      osc.frequency.setValueAtTime(freq, droneAudioCtx.currentTime);
+
+      const lfo = droneAudioCtx.createOscillator();
+      lfo.frequency.setValueAtTime(0.12 + (i * 0.04), droneAudioCtx.currentTime);
+      const lfoGain = droneAudioCtx.createGain();
+      lfoGain.gain.setValueAtTime(0.4, droneAudioCtx.currentTime);
+      lfo.connect(lfoGain);
+      lfoGain.connect(osc.frequency);
+      lfo.start();
+
+      oscGain.gain.setValueAtTime(i === 0 ? 0.35 : 0.22, droneAudioCtx.currentTime);
+      osc.connect(oscGain);
+      oscGain.connect(droneGainNode);
+      osc.start();
+      return { osc, lfo };
+    });
+
+    isDronePlaying = true;
+    updateDroneUI(true);
+  } catch (err) {
+    console.error('Ambient drone initialization error:', err);
+  }
+}
+
+function stopAmbientDrone() {
+  if (droneGainNode && droneAudioCtx) {
+    try {
+      droneGainNode.gain.exponentialRampToValueAtTime(0.0001, droneAudioCtx.currentTime + 1.2);
+    } catch(e){}
+    setTimeout(() => {
+      droneOscillators.forEach(o => {
+        try { o.osc.stop(); o.lfo.stop(); } catch(e){}
+      });
+      droneOscillators = [];
+      isDronePlaying = false;
+      updateDroneUI(false);
+    }, 1200);
+  } else {
+    isDronePlaying = false;
+    updateDroneUI(false);
+  }
+}
+
+function updateDroneUI(playing) {
+  const btns = document.querySelectorAll('.ambient-drone-btn');
+  btns.forEach(btn => {
+    if (playing) {
+      btn.classList.add('playing');
+      btn.title = 'நாத தியான ஒலி இயங்குகிறது (நிறுத்த கிளிக் செய்க)';
+    } else {
+      btn.classList.remove('playing');
+      btn.title = 'நாத தியான ஒலி (Ambient Tanpura Drone)';
+    }
+  });
+}
+
+// --------------------------------------------------------------------------
+// 2. UNIVERSAL SITE-WIDE SEARCH MODAL ENGINE
+// --------------------------------------------------------------------------
+const UNIVERSAL_SEARCH_ITEMS = [
+  // Flagship Living Dharma Tools
+  { title: "பஞ்ச மகா யக்ஞ டிராக்கர் (Daily Pancha Maha Yagna Habit Tracker)", desc: "தினசரி 5 வேள்விகள், சினமின்மை, இல்லற நல்லிணக்கம் & தொடர் சாதனா டிராக்கர்", url: "kalvi.html#grihasthaTracker", category: "இல்லற சாதனா", badge: "தினசரி சாதனா" },
+  { title: "மாண்புறு குடும்ப அறநெறி சாசனம் (Printable Noble Family Living Charter)", desc: "இல்லத்தின் பெயர், உறுப்பினர்கள் & ஐம்பெரும் குடும்பச் சூளுரைகளுடன் சட்டமிடக்கூடிய சாசனம்", url: "kalvi.html#familyCharter", category: "இல்லற சாதனா", badge: "அச்சிடுக / PDF" },
+  { title: "பதஞ்சலி 7 படிநிலைகள் (Patanjali 7-Level Self-Realization Curriculum)", desc: "சுபேச்சை முதல் துரியகா வரை 7 யோக மெய்ஞ்ஞான படிநிலைகள் & சுயமதிப்பீட்டுத் தேர்வு", url: "syllabus.html#patanjaliSyllabus", category: "பாடத்திட்டம்", badge: "7 படிநிலைகள்" },
+  { title: "திருக்குறள் இல்லறவியல் 20 அதிகாரங்கள் அரங்கம் (Illaraviyal Cinema Lounge)", desc: "இல்வாழ்க்கை, துணைநலம், அன்புடைமை, பொறையுடைமை முதல் புகழ் வரை 20 தூண்கள்", url: "thirukkural.html#illaraviyalLounge", category: "திருக்குறள்", badge: "20 அதிகாரங்கள்" },
+  { title: "இணையப் பள்ளி போர்டல் (Vedic-Modern Online School LMS)", desc: "21-ஆம் நூற்றாண்டு அறிவியல்-வேத சங்கமம், மாணவர் போர்டல் & படிப்பு அரங்கம்", url: "school.html", category: "பள்ளி", badge: "Online School" },
+  
+  // Degrees
+  { title: "B.A. Grihastha Dharma (DEG-BA-GRI)", desc: "இல்லற தர்ம இளங்கலை — அறம், இல்லற மேலாண்மை & சான்றாண்மை விழுமியங்கள்", url: "higher-studies.html#degBaGri", category: "உயர்கல்வி", badge: "B.A. பட்டம்" },
+  { title: "M.A. Applied Domestic Vedanta (DEG-MA-GRI)", desc: "பயன்முறை இல்லற வேதாந்த முதுகலை — சங்கர அத்வைதம், ராமானுஜ விசிஷ்டாத்வைதம் & இல்லற சமரசம்", url: "higher-studies.html#degMaGri", category: "உயர்கல்வி", badge: "M.A. பட்டம்" },
+  { title: "Ph.D. in Family Self-Sacrifice as Fastest Vehicle for Nirvana (DOC-PHD-GRI)", desc: "இல்லறத் தியாக அன்பே அதிவேக முக்தி தரும் பெருவழி — முனைவர் பட்ட ஆய்வுநெறி", url: "higher-studies.html#docPhdGri", category: "உயர்கல்வி", badge: "Ph.D. ஆய்வு" },
+  { title: "Fellowship in Applied Domestic Dharma (FEL-GRI-01)", desc: "சான்றோன் இல்லற ஆய்வு கூட்டுறவு — தலைமுறை தலைமுறையாக தர்மத்தை நிலைநிறுத்தும் சாசனம்", url: "higher-studies.html#felGri01", category: "உயர்கல்வி", badge: "Fellowship" },
+
+  // Grades 1-12
+  { title: "தரம் 1 — பாலப் பருவ வாழ்வியல் நெறி (Grade 1)", desc: "பாலப் பருவ அன்பு, பெற்றோர் பணிவிடை & நற்பண்புத் தொடக்கம்", url: "tharam-1.html", category: "பள்ளிக் கல்வி", badge: "Grade 1" },
+  { title: "தரம் 2 — சிவ சின்னங்கள் & ஆலய வழிபாடு (Grade 2)", desc: "திருநீறு, ருத்ராட்சம், பஞ்சாட்சரம் & ஒழுக்கம்", url: "tharam-2.html", category: "பள்ளிக் கல்வி", badge: "Grade 2" },
+  { title: "தரம் 3 — பஞ்சபூதம் & விழிப்புணர்வு (Grade 3)", desc: "நல்வழி, இயற்கை ஆராதனை & ஆசாரக் கல்வி", url: "tharam-3.html", category: "பள்ளிக் கல்வி", badge: "Grade 3" },
+  { title: "தரம் 4 — பன்னிரு திருமுறை & சாத்வீக உணவு (Grade 4)", desc: "கொன்றை வேந்தன், திருமுறை பக்தி & அஹிம்சை", url: "tharam-4.html", category: "பள்ளிக் கல்வி", badge: "Grade 4" },
+  { title: "தரம் 5 — 63 நாயன்மார்கள் & அறத்துப்பால் (Grade 5)", desc: "திருத்தொண்டர் தொகை, சுற்றந்தழால் & தேவாரம்", url: "tharam-5.html", category: "பள்ளிக் கல்வி", badge: "Grade 5" },
+  { title: "தரம் 6 — நான்கு வேதங்கள் & சைவ சித்தாந்தம் (Grade 6)", desc: "தைத்திரீய சாந்தி மந்திரம், பதி-பசு-பாசம் & பஞ்ச மகா யக்ஞம்", url: "tharam-6.html", category: "பள்ளிக் கல்வி", badge: "Grade 6" },
+  { title: "தரம் 7 — உபநிடத மகா வாக்கியங்கள் & கர்ம விதி (Grade 7)", desc: "பிரக்ஞானம் பிரம்ம, தத்வமஸி & புனர்ஜென்ம கர்ம நியதி", url: "tharam-7.html", category: "பள்ளிக் கல்வி", badge: "Grade 7" },
+  { title: "தரம் 8 — பகவத் கீதை கர்ம யோகம் & வள்ளலார் (Grade 8)", desc: "கடமையைச் செய் பலனை எதிர்பாராதே & ஜீவகாருண்யம்", url: "tharam-8.html", category: "பள்ளிக் கல்வி", badge: "Grade 8" },
+  { title: "தரம் 9 — ஆகமங்கள், ஆலய தத்துவம் & யோகம் (Grade 9)", desc: "உடலே ஆலயம், குண்டலினி சக்கரங்கள் & தியான அறிவியல்", url: "tharam-9.html", category: "பள்ளிக் கல்வி", badge: "Grade 9" },
+  { title: "தரம் 10 — பதி பசு பாசம் & O/L வாழ்வியல் தேர்ச்சி (Grade 10)", desc: "சைவ சித்தாந்த முப்பொருள் உண்மை & முக்தி தத்துவம்", url: "tharam-10.html", category: "பள்ளிக் கல்வி", badge: "Grade 10" },
+  { title: "தரம் 11 — கடோபநிடதம் & A/L தத்துவார்த்த ஒப்பாய்வு (Grade 11)", desc: "மரணத்தை வென்ற நசிகேதன் & பஞ்ச கோச உளவியல்", url: "tharam-11.html", category: "பள்ளிக் கல்வி", badge: "Grade 11" },
+  { title: "தரம் 12 — ஜீவன் முக்தி, நடராஜர் & குவாண்டம் சங்கமம் (Grade 12)", desc: "உன்னத இல்லற வாழ்வு வழி அதிவேக முக்திப் பேறு", url: "tharam-12.html", category: "பள்ளிக் கல்வி", badge: "Grade 12" },
+
+  // Canonical Paths
+  { title: "சிவ நெறி — பன்னிரு திருமுறைகள் (Saiva Neri)", desc: "172 சிவத் திருப்பதிகங்கள், தேவாரப் பண்கள் & ஸ்ரீ ருத்ரம்", url: "saiva-neri.html", category: "ஆன்மீக நெறி", badge: "172 பாடல்கள்" },
+  { title: "திருக்குறள் — உலகப் பொதுமறை அறநெறி (Thirukkural)", desc: "1330 அருங்குறள்கள், சினிமாத் திரைப்படங்கள் & இசை வெளியீடுகள்", url: "thirukkural.html", category: "ஆன்மீக நெறி", badge: "185 வெளியீடுகள்" },
+  { title: "சுத்த சன்மார்க்கம் — வள்ளலார் பெருமான் (Sanmargam)", desc: "திருவருட்பா, ஜோதி வழிபாடு & பசிப்பிணி போக்கும் அன்னதானம்", url: "sanmargam.html", category: "ஆன்மீக நெறி", badge: "94 பாடல்கள்" },
+  { title: "முருக நெறி — கௌமாரம் (Murugan)", desc: "கந்த சஷ்டி கவசம், திருப்புகழ் & அறுபடை வீடு திருவருள்", url: "murugan.html", category: "ஆன்மீக நெறி", badge: "முருகன்" },
+  { title: "சக்தி நெறி — சாக்தம் (Sakthi)", desc: "அபிராமி அந்தாதி, லலிதா திரிசதி & தேவி போற்றிகள்", url: "sakthi.html", category: "ஆன்மீக நெறி", badge: "அம்பாள்" },
+  { title: "விநாயகர் & வைணவ நெறி (Vinayagar & Vaishnavam)", desc: "விநாயகர் அகவல், திவ்யப் பிரபந்தம் & விஷ்ணு-கிருஷ்ண கானங்கள்", url: "vinayagar.html", category: "ஆன்மீக நெறி", badge: "விநாயகர்/வைணவம்" },
+  { title: "காஞ்சி மகா பெரியவா அருளுரைகள் (Deivathin Kural)", desc: "வேத தர்மம், சனாதன சம்ஸ்கிருதி & மகா பெரியவா திவ்ய உபதேசங்கள்", url: "about.html", category: "குருவருள்", badge: "தெய்வத்தின் குரல்" }
+];
+
+function ensureUniversalSearchModal() {
+  let modal = document.getElementById('universalSearchModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'universalSearchModal';
+    modal.className = 'universal-search-modal';
+    modal.onclick = function(e) { if (e.target === this) closeUniversalSearch(); };
+    modal.innerHTML = `
+      <div class="universal-search-box">
+        <div class="universal-search-header">
+          <span style="font-size:1.15rem; color:#38bdf8;">🔍</span>
+          <input type="text" id="universalSearchInput" class="universal-search-input" placeholder="குருகுல தேசத்தில் தேடுக... (எ.கா: தரம் 1, இல்லறம், குறள், PhD, யக்ஞம்)" autocomplete="off" oninput="handleUniversalSearchQuery(this.value)">
+          <button type="button" class="universal-search-close" onclick="closeUniversalSearch()">Esc</button>
+        </div>
+        <div class="universal-search-results" id="universalSearchResults"></div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  }
+  return modal;
+}
+
+function openUniversalSearch() {
+  const modal = ensureUniversalSearchModal();
+  modal.classList.add('open');
+  const input = document.getElementById('universalSearchInput');
+  if (input) {
+    input.value = '';
+    input.focus();
+  }
+  handleUniversalSearchQuery('');
+}
+
+function closeUniversalSearch() {
+  const modal = document.getElementById('universalSearchModal');
+  if (modal) modal.classList.remove('open');
+}
+
+function handleUniversalSearchQuery(q) {
+  const container = document.getElementById('universalSearchResults');
+  if (!container) return;
+
+  const query = q.toLowerCase().trim();
+  let results = [];
+
+  if (!query) {
+    results = UNIVERSAL_SEARCH_ITEMS.slice(0, 8);
+  } else {
+    results = UNIVERSAL_SEARCH_ITEMS.filter(item => {
+      const haystack = (item.title + ' ' + item.desc + ' ' + item.category + ' ' + (item.badge || '')).toLowerCase();
+      return haystack.includes(query);
+    });
+
+    if (window.GURUKULA_CATALOG && query.length >= 2) {
+      let catalogMatches = [];
+      Object.keys(window.GURUKULA_CATALOG).forEach(cat => {
+        const list = window.GURUKULA_CATALOG[cat];
+        if (Array.isArray(list)) {
+          list.forEach(item => {
+            const h = (item.title + ' ' + (item.lyrics || '') + ' ' + (item.meaning || '')).toLowerCase();
+            if (h.includes(query)) {
+              catalogMatches.push({
+                title: item.title,
+                desc: (item.meaning || item.lyrics || '').slice(0, 90) + '...',
+                url: (cat === 'thirukkural') ? 'thirukkural.html' : (cat === 'shiva' ? 'saiva-neri.html' : 'index.html'),
+                category: cat === 'thirukkural' ? 'திருக்குறள்' : (cat === 'shiva' ? 'சிவ நெறி' : 'பக்தி இசை'),
+                badge: item.type === 'film' ? '🎬 படம்' : '🎵 பாடல்'
+              });
+            }
+          });
+        }
+      });
+      results = results.concat(catalogMatches.slice(0, 10));
+    }
+  }
+
+  if (results.length === 0) {
+    container.innerHTML = `
+      <div style="text-align:center; padding:30px 10px; color:#94a3b8;">
+        <div style="font-size:2rem; margin-bottom:8px;">🌿</div>
+        <div>"${q}" என்பதற்குரிய முடிவுகள் கிடைக்கவில்லை.</div>
+        <div style="font-size:0.82rem; margin-top:4px; color:#64748b;">வேத தர்மம், குறள், தரம் 1-12, அல்லது இல்லறம் எனத் தேடிப் பாருங்கள்.</div>
+      </div>
+    `;
+    return;
+  }
+
+  let html = '';
+  if (!query) {
+    html += '<div class="search-group-title">🌟 பரிந்துரைக்கப்படும் முதன்மை வாழ்வியல் &amp; தர்மப் பாதைகள்:</div>';
+  } else {
+    html += `<div class="search-group-title">🔍 கண்டறியப்பட்ட தேடல் முடிவுகள் (${results.length}):</div>`;
+  }
+
+  results.forEach(r => {
+    html += `
+      <a href="${r.url}" class="search-result-item" onclick="closeUniversalSearch()">
+        <div class="search-item-info">
+          <span class="search-item-title">${r.title}</span>
+          <span class="search-item-desc">${r.desc}</span>
+        </div>
+        <span class="search-item-badge">${r.badge || r.category}</span>
+      </a>
+    `;
+  });
+
+  container.innerHTML = html;
+}
 
 // --------------------------------------------------------------------------
 // APP SHELL DOM MOUNTING & CONTEXT RESOLUTION
@@ -1140,7 +1382,8 @@ function renderContextTabsIntoHeader() {
       <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க (A+)">A⁺</button>
     </div>
 
-    <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள் மாற்று">
+    <button type="button" class="context-tool-btn ambient-drone-btn" id="ambientDroneBtn" onclick="toggleAmbientDrone()" title="நாத தியான ஒலி (Ambient Tanpura Drone)"><span class="drone-icon" id="ambientDroneIcon">🪔</span></button>
+        <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள் மாற்று">
       <span class="theme-icon" id="themeQuickIcon">🌓</span>
     </button>
 
@@ -1280,6 +1523,7 @@ function mountAppShell() {
           <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க (A+)">A⁺</button>
         </div>
 
+        <button type="button" class="context-tool-btn ambient-drone-btn" id="ambientDroneBtn" onclick="toggleAmbientDrone()" title="நாத தியான ஒலி (Ambient Tanpura Drone)"><span class="drone-icon" id="ambientDroneIcon">🪔</span></button>
         <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள் மாற்று">
           <span class="theme-icon" id="themeQuickIcon">🌓</span>
         </button>
