@@ -151,3 +151,54 @@ document.addEventListener('keydown', e => {
     if (dropdown) dropdown.classList.remove('open');
   }
 });
+
+// Sheet Modal Handlers
+function openSheetModal(imgSrc, pageNum, pageTitle) {
+  const modal = document.getElementById('sheetModal');
+  const modalImg = document.getElementById('sheetModalImg');
+  const modalTitle = document.getElementById('sheetModalTitle');
+  if (modal && modalImg) {
+    modalImg.src = imgSrc;
+    if (modalTitle) modalTitle.innerText = `தரம் 1 — பக்கம் ${pageNum} ${pageTitle ? '• ' + pageTitle : ''}`;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeSheetModal() {
+  const modal = document.getElementById('sheetModal');
+  const modalImg = document.getElementById('sheetModalImg');
+  if (modal) {
+    modal.classList.remove('active');
+    if (modalImg) modalImg.src = '';
+    document.body.style.overflow = '';
+  }
+}
+
+// Multi-dropdown support
+function toggleDropdown(e, dropdownId) {
+  if (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+  const targetId = dropdownId || (e && e.currentTarget && e.currentTarget.id ? e.currentTarget.id.replace('Btn', '') : null);
+  const dropdown = targetId ? document.getElementById(targetId) : (e ? e.currentTarget.closest('.nav-dropdown') : document.querySelector('.nav-dropdown'));
+  if (!dropdown) return;
+  const wasOpen = dropdown.classList.contains('open');
+  document.querySelectorAll('.nav-dropdown').forEach(d => {
+    if (d !== dropdown) d.classList.remove('open');
+  });
+  dropdown.classList.toggle('open', !wasOpen);
+  const toggleBtn = dropdown.querySelector('.dropdown-toggle');
+  if (toggleBtn) toggleBtn.setAttribute('aria-expanded', !wasOpen ? 'true' : 'false');
+}
+
+document.addEventListener('click', (e) => {
+  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+      const toggleBtn = dropdown.querySelector('.dropdown-toggle');
+      if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+});

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>இறை இசை விருந்து (Syllabus Music Feasts) | Guru Kula Desam</title>
+  <meta name="description" content="பாலும் தெளிர் தேனும், குரு வணக்கம், கந்தர் அநுபூதி, பாரதியார் பாடல் மற்றும் சிவபுராணம் அடங்கிய குரு குல தேசத்தின் ஐந்து அமிர்த கானங்கள்.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand" aria-label="Guru Kula Desam Home">
+        <div class="brand-emblem">ॐ</div>
+        <div class="brand-text">
+          <h1>குரு குல தேசம்</h1>
+          <span>Guru Kula Desam <span class="brand-sub-extra">• வேத &amp; சைவ நெறி</span></span>
+        </div>
+      </a>
+      <button class="mobile-toggle" id="mobileNavToggle" onclick="toggleMobileNav()" aria-label="பட்டி (Menu)" aria-expanded="false">☰</button>
+      <div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link ">முகப்பு</a>
+        <a href="saiva-neri.html" class="nav-link ">சைவ நெறி</a>
+
+        <!-- Kalvi (Grades 1-12) Dropdown -->
+        <div class="nav-dropdown " id="kalviDropdown">
+          <button class="nav-link dropdown-toggle " id="kalviDropdownBtn" onclick="toggleDropdown(event, 'kalviDropdown')" aria-haspopup="true" aria-expanded="false">
+            <span>கல்வி (Grades 1-12)</span>
+            <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="dropdown-menu kalvi-menu" id="kalviDropdownMenu">
+            <a href="kalvi.html" class="dropdown-item " style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
+              <span class="dropdown-item-icon">🏛️</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">சைவ நெறி கல்வித் தளம் (Curriculum Hub)</div>
+                <div class="dropdown-item-desc">தரம் 1 முதல் 12 வரையிலான முழுமையான பாடநெறி</div>
+              </div>
+            </a>
+            <a href="tharam-1.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">📖</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">தரம் 1 (Grade 1)</div>
+                <div class="dropdown-item-desc">60 பாடப் படங்கள் &amp; நூல்கள்</div>
+              </div>
+            </a>
+            <a href="tharam-2.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🪔</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 2 (Grade 2)</div></div>
+            </a>
+            <a href="tharam-3.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 3 (Grade 3)</div></div>
+            </a>
+            <a href="tharam-4.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">📜</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 4 (Grade 4)</div></div>
+            </a>
+            <a href="tharam-5.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🌺</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 5 (Grade 5)</div></div>
+            </a>
+            <a href="tharam-6.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🕉️</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 6 (Grade 6)</div></div>
+            </a>
+            <a href="tharam-7.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔔</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 7 (Grade 7)</div></div>
+            </a>
+            <a href="tharam-8.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">✨</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 8 (Grade 8)</div></div>
+            </a>
+            <a href="tharam-9.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">⚜️</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 9 (Grade 9)</div></div>
+            </a>
+            <a href="tharam-10.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🌟</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 10 (Grade 10)</div></div>
+            </a>
+            <a href="tharam-11.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 11 (Grade 11)</div></div>
+            </a>
+            <a href="tharam-12.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">👑</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 12 (Grade 12)</div></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Traditions Dropdown -->
+        <div class="nav-dropdown " id="traditionsDropdown">
+          <button class="nav-link dropdown-toggle" id="traditionsDropdownBtn" onclick="toggleDropdown(event, 'traditionsDropdown')" aria-haspopup="true" aria-expanded="false">
+            <span>வழிபாட்டு நெறிகள்</span>
+            <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="dropdown-menu" id="traditionsDropdownMenu">
+            <a href="murugan.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">முருகன் (Kaumaram)</div>
+                <div class="dropdown-item-desc">கந்த சஷ்டி, திருப்புகழ் &amp; கானங்கள்</div>
+              </div>
+            </a>
+            <a href="sakthi.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🌸</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">சக்தி (Shaktham)</div>
+                <div class="dropdown-item-desc">அபிராமி அந்தாதி &amp; லலிதா போற்றிகள்</div>
+              </div>
+            </a>
+            <a href="vinayagar.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🐘</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">விநாயகர் (Ganapathyam)</div>
+                <div class="dropdown-item-desc">விநாயகர் அகவல் &amp; மூல கணபதி பதிகங்கள்</div>
+              </div>
+            </a>
+            <a href="vaishnava.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🪷</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">வைணவம் (Vaishnavam)</div>
+                <div class="dropdown-item-desc">விஷ்ணு, கிருஷ்ணர் &amp; திவ்வியப் பிரபந்தம்</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="thirukkural.html" class="nav-link ">திருக்குறள்</a>
+        <a href="sanmargam.html" class="nav-link ">சன்மார்க்கம்</a>
+        <a href="irai-isai-virundhu.html" class="nav-link active">இறை இசை</a>
+        <a href="syllabus.html" class="nav-link ">பாடத்திட்டம்</a>
+        <a href="classes.html" class="nav-link ">வகுப்புகள்</a>
+        <a href="about.html" class="nav-link ">பெரியவா தரிசனம்</a>
+        <a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener" class="nav-link" style="border: 1px solid var(--border-gold); padding: 5px 12px; border-radius: 16px; color: var(--gold-bright);">🌐 கூகிள் தளம் ↗</a>
+        <a href="https://www.youtube.com/@guru-kula-desam?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="yt-btn-header">
+          ▶ YouTube
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="hero-banner">
+      <div class="sacred-tag">🎵 பாடத்திட்ட இறை இசை விருந்து • 5 அமிர்தப் பாடல்கள் 🎵</div>
+      <h1>இறை இசை விருந்து</h1>
+      <h2>Syllabus Devotional Music Feasts — Sacred Tamil Hymns</h2>
+      <div class="verse-quote">"இறைவன் இசையாய் இருப்பதனால் இசையே இறைவனை அடையும் எளிய வழி" — தேவாரம்</div>
+      <p class="hero-desc">
+        கூகிள் சைட்ஸ் பாடத்திட்டத்தில் இடம்பெற்றுள்ள 5 முக்கிய தெய்வீகப் பாடல்கள். விநாயகர் துதி, குரு வணக்கம், கந்தர் அநுபூதி, தேசபக்தி கானம் மற்றும் சிவபுராணம் ஆகிய ஐந்து அமிர்த கானங்களின் வீடியோக்கள், வரிகள் மற்றும் தத்துவ விளக்கங்கள்.
+      </p>
+    </div>
+
+    <!-- Live Google Sites Link Bar -->
+    <div class="google-site-banner">
+      <div class="gs-banner-content">
+        <h3>🌐 கூகிள் சைட்ஸ் 'இறை இசை விருந்து' நேரடிப் பக்கம்</h3>
+        <p>Google Sites தளத்தில் அமைக்கப்பட்ட அதே ஐந்து இசைத் தொகுப்புகளை அங்கும் பார்வையிடலாம்.</p>
+      </div>
+      <a href="https://sites.google.com/view/wwwgurukuladesamcom/home/syllabus/%E0%AE%87%E0%AE%B1-%E0%AE%87%E0%AE%9A-%E0%AE%B5%E0%AE%B0%E0%AE%A8%E0%AE%A4" target="_blank" rel="noopener" class="gs-banner-btn">
+        கூகிள் தளத்தில் இறை இசை காண்க ↗
+      </a>
+    </div>
+
+    <div style="margin-top: 30px;">
+      
+        <div class="music-feast-card">
+          <div class="feast-media-frame">
+            <iframe src="https://www.youtube.com/embed/bJ2dt95RvqY?enablejsapi=1" title="பாலும் தெளிர் தேனும்" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="feast-details">
+            <div class="feast-badge-row">
+              <span class="card-badge badge-film">இறை இசை விருந்து</span>
+              <span class="card-badge badge-audio">முழுமுதற் கடவுள் ஸ்ரீ கணபதி (Lord Vinayagar)</span>
+            </div>
+            <h3 class="feast-title">பாலும் தெளிர் தேனும்</h3>
+            <div class="feast-meta">✍️ இயற்றியவர்: ஔவையார் (நல்வழி)</div>
+            <div class="feast-lyrics-box">பாலும் தெளிதேனும் பாகும் பருப்பும் இவை
+நாலும் கலந்துனக்கு நான் தருவேன் - கோலஞ்செய்
+துங்கக் கரிமுகத்துத் தூமணியே நீயெனக்குச்
+சங்கத் தமிழ் மூன்றும் தா!</div>
+            <div class="feast-meaning">
+              <strong>பொருள் விளக்கம்:</strong> அழகிய தும்பிக்கையுடைய யானை முகப் பெருமானே! பால், தெளிந்த தேன், சர்க்கரைப் பாகு, சுவையான பருப்பு ஆகிய நான்கு அருமையான பொருள்களையும் கலந்து உனக்குப் படைக்கின்றேன். நீ எனக்கு இயல், இசை, நாடகம் என்னும் முத்தமிழ்ச் செல்வத்தையும் ஞானத்தையும் தந்தருள்வாயாக!
+            </div>
+            <div style="margin-top:8px;">
+              <a href="https://www.youtube.com/watch?v=bJ2dt95RvqY" target="_blank" rel="noopener noreferrer" style="color:var(--gold-bright); font-size:0.85rem; font-weight:700; text-decoration:none;">
+                YouTube தளத்தில் காண்க ↗
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="music-feast-card">
+          <div class="feast-media-frame">
+            <iframe src="https://www.youtube.com/embed/QiK97x3oK_Y?enablejsapi=1" title="குரு வணக்கம் (Guru Vanakkam)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="feast-details">
+            <div class="feast-badge-row">
+              <span class="card-badge badge-film">இறை இசை விருந்து</span>
+              <span class="card-badge badge-audio">ஸ்ரீ தட்சிணாமூர்த்தி & சற்குருநாதர் (Satguru)</span>
+            </div>
+            <h3 class="feast-title">குரு வணக்கம் (Guru Vanakkam)</h3>
+            <div class="feast-meta">✍️ இயற்றியவர்: பாரம்பரிய குருவந்தனம் & ஆசிரியப் பெருமை</div>
+            <div class="feast-lyrics-box">குருபிரம்மா குருவிஷ்ணு குருதேவோ மஹேஸ்வர:
+குரு சாக்ஷாத் பரம்பிரம்மா தஸ்மை ஸ்ரீ குரவே நம:
+
+தெள்ளிய ஆலின் கீழ் இருந்த செல்வன் நல்கிய
+அள்ளல் இல் இன்பத்து அமுதினை மாந்திடுவோம்!</div>
+            <div class="feast-meaning">
+              <strong>பொருள் விளக்கம்:</strong> படைக்கும் பிரம்மனும், காக்கும் திருமாலும், சம்ஹரிக்கும் மகேஸ்வரனும் குருவே. கண்கண்ட பரப்பிரம்மமாக விளங்கும் அந்த குருபிரானுக்கு எனது சிரம் தாழ்ந்த நமஸ்காரங்கள். கல்லால மரத்தடியில் மௌன குருவாய் அமர்ந்து சனகாதி முனிவர்களுக்கு ஞானம் அருளிய தட்சிணாமூர்த்தியின் திருவடிகளைப் போற்றுகின்றோம்.
+            </div>
+            <div style="margin-top:8px;">
+              <a href="https://www.youtube.com/watch?v=QiK97x3oK_Y" target="_blank" rel="noopener noreferrer" style="color:var(--gold-bright); font-size:0.85rem; font-weight:700; text-decoration:none;">
+                YouTube தளத்தில் காண்க ↗
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="music-feast-card">
+          <div class="feast-media-frame">
+            <iframe src="https://www.youtube.com/embed/a8PMcn1cjDo?enablejsapi=1" title="உருவாய் அருவாய் (கந்தர் அநுபூதி)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="feast-details">
+            <div class="feast-badge-row">
+              <span class="card-badge badge-film">இறை இசை விருந்து</span>
+              <span class="card-badge badge-audio">ஸ்ரீ பாலசுப்பிரமணியக் கடவுள் (Lord Murugan)</span>
+            </div>
+            <h3 class="feast-title">உருவாய் அருவாய் (கந்தர் அநுபூதி)</h3>
+            <div class="feast-meta">✍️ இயற்றியவர்: அருணகிரிநாத சுவாமிகள் (கந்தர் அநுபூதி)</div>
+            <div class="feast-lyrics-box">உருவாய் அருவாய் உளதாய் இலதாய்
+மருவாய் மலராய் மணியாய் ஒளியாய்க்
+கருவாய் உயிராய்க் கதியாய் விதியாய்க்
+குருவாய் வருவாய் அருள்வாய் குகனே!</div>
+            <div class="feast-meaning">
+              <strong>பொருள் விளக்கம்:</strong> உருவமாகவும், அருவமாகவும், உள்ளதாகவும், இல்லாததாகவும், மணமாயும், மலராயும், நவரத்தின மணியாயும், அதனுள் ஒளிரும் சுடராயும், கருவாயும், உயிராயும், நாம் அடையும் நற்கதியாயும், இறை நியதியாயும் விளங்கும் குகப்பெருமானே! எனக்கு சற்குருவாக நேரில் வந்து உன் திருவடி ஞானத்தை அருள்புரிவாயாக!
+            </div>
+            <div style="margin-top:8px;">
+              <a href="https://www.youtube.com/watch?v=a8PMcn1cjDo" target="_blank" rel="noopener noreferrer" style="color:var(--gold-bright); font-size:0.85rem; font-weight:700; text-decoration:none;">
+                YouTube தளத்தில் காண்க ↗
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="music-feast-card">
+          <div class="feast-media-frame">
+            <iframe src="https://www.youtube.com/embed/ex9sEZwE2Co?enablejsapi=1" title="என்று தணியும் இந்த சுதந்திர தாகம்" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="feast-details">
+            <div class="feast-badge-row">
+              <span class="card-badge badge-film">இறை இசை விருந்து</span>
+              <span class="card-badge badge-audio">பாரத மாதா & தர்ம தேவதை</span>
+            </div>
+            <h3 class="feast-title">என்று தணியும் இந்த சுதந்திர தாகம்</h3>
+            <div class="feast-meta">✍️ இயற்றியவர்: மகாகவி சுப்பிரமணிய பாரதியார்</div>
+            <div class="feast-lyrics-box">என்று தணியும் இந்த சுதந்திர தாகம்?
+என்று மடியும் எங்கள் அடிமையின் மோகம்?
+என்றெம தன்னையின் கைகள் தளரும்?
+என்றுநம் துன்பங்கள் தீர்ந்துபொய் யோயும்?
+
+அன்னையே தாயே அருள் செய்ய வாராய்!</div>
+            <div class="feast-meaning">
+              <strong>பொருள் விளக்கம்:</strong> மகாகவி பாரதியாரின் அனல் பறக்கும் தேசபக்தி மற்றும் ஆன்மீக விடுதலைப் பாடல். பாரத தாயின் விலங்குகளை ஒடித்து, தர்ம நெறியையும் சத்தியத்தையும் காக்கும் வீரத்தை நமக்கு வழங்கி அருளுமாறு பராசக்தியிடம் வேண்டும் விடுதலைப் பெருங்கானம்.
+            </div>
+            <div style="margin-top:8px;">
+              <a href="https://www.youtube.com/watch?v=ex9sEZwE2Co" target="_blank" rel="noopener noreferrer" style="color:var(--gold-bright); font-size:0.85rem; font-weight:700; text-decoration:none;">
+                YouTube தளத்தில் காண்க ↗
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="music-feast-card">
+          <div class="feast-media-frame">
+            <iframe src="https://www.youtube.com/embed/Q8EDvpYLObA?enablejsapi=1" title="சிவ புராணம் (Siva Puranam)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="feast-details">
+            <div class="feast-badge-row">
+              <span class="card-badge badge-film">இறை இசை விருந்து</span>
+              <span class="card-badge badge-audio">சிவபெருமான் (Lord Shiva)</span>
+            </div>
+            <h3 class="feast-title">சிவ புராணம் (Siva Puranam)</h3>
+            <div class="feast-meta">✍️ இயற்றியவர்: மாணிக்கவாசகப் பெருமான் (திருவாசகம் - எட்டாம் திருமுறை)</div>
+            <div class="feast-lyrics-box">நமச்சிவாய வாழ்க நாதன் தாள் வாழ்க
+இமைப்பொழுதும் என் நெஞ்சில் நீங்காதான் தாள் வாழ்க
+கோகழி ஆண்ட குருமணிதன் தாள் வாழ்க
+ஆகமம் ஆகிநின்று அண்ணிப்பான் தாள் வாழ்க
+ஏகன் அநேகன் இறைவன் அடிவாழ்க!</div>
+            <div class="feast-meaning">
+              <strong>பொருள் விளக்கம்:</strong> பன்னிரு திருமுறைகளில் எட்டாம் திருமுறையான திருவாசகத்தின் முதற்பகுதி சிவபுராணம். திருவைந்தெழுத்தாகிய நமசிவாய மந்திரத்தை வாழ்த்தி, இமைக்கும் நொடிப்பொழுதும் இதயத்தை விட்டு அகலாத சிவபெருமானின் திருவடிகளைப் போற்றி ஆன்ம முக்தி நாடும் பரவசப் பனுவல்.
+            </div>
+            <div style="margin-top:8px;">
+              <a href="https://www.youtube.com/watch?v=Q8EDvpYLObA" target="_blank" rel="noopener noreferrer" style="color:var(--gold-bright); font-size:0.85rem; font-weight:700; text-decoration:none;">
+                YouTube தளத்தில் காண்க ↗
+              </a>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>குரு குல தேசம் (Guru Kula Desam)</h4>
+        <p>வேதங்கள், பன்னிரு திருமுறைகள், சைவ சித்தாந்த சாத்திரங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் சுத்த சன்மார்க்க நெறிகளை உலகிற்கு பறைசாற்றும் ஆன்மீக இசை &amp; கல்விப் பெருவெளி.</p>
+        <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">அன்பே சிவம் • யாதும் ஊரே யாவரும் கேளிர் • ஏகன் அநேகன்</p>
+        <div style="margin-top: 14px; font-size: 0.84rem; color: var(--gold-soft); line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 12px; background: rgba(212, 175, 55, 0.05); padding-top: 6px; padding-bottom: 6px; border-radius: 0 8px 8px 0;">
+          📍 <strong>மைய முகவரி (Headquarters):</strong><br>
+          32, SSS Jaya Enclave, Kovaipudur,<br>
+          Coimbatore, 641042, Tamil Nadu, India.
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>சைவ நெறி கல்வி &amp; பாடங்கள்</h4>
+        <ul class="footer-links">
+          <li><a href="kalvi.html">சைவ நெறி கல்வித் தளம் (Grades 1 - 12)</a></li>
+          <li><a href="tharam-1.html">தரம் 1 — 60 பாடப் படங்கள் &amp; நூல்கள்</a></li>
+          <li><a href="tharam-2.html">தரம் 2 — சிவ சின்னங்கள் &amp; ஆலய வழிபாடு</a></li>
+          <li><a href="tharam-3.html">தரம் 3 முதல் தரம் 12 வரை</a></li>
+          <li><a href="irai-isai-virundhu.html">இறை இசை விருந்து (5 சிறப்புப் பாடல்கள்)</a></li>
+          <li><a href="syllabus.html">பாடத்திட்டம் (Comprehensive Syllabus)</a></li>
+          <li><a href="classes.html">வகுப்புகள் (Online Classes &amp; Timetable)</a></li>
+          <li><a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener">அதிகாரப்பூர்வ கூகிள் தளம் (Google Sites Mirror) ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ஆன்மீக வழிகள் &amp; இசை</h4>
+        <ul class="footer-links">
+          <li><a href="saiva-neri.html">சிவ நெறி (172 திருமுறைப் பாடல்கள்)</a></li>
+          <li><a href="thirukkural.html">திருக்குறள் (185 அதிகாரப் படங்கள் &amp; இசை)</a></li>
+          <li><a href="sanmargam.html">சன்மார்க்கம் (94 அருட்பெருஞ்சோதிப் பாடல்கள்)</a></li>
+          <li><a href="murugan.html">முருக நெறி (கந்த சஷ்டி &amp; திருப்புகழ்)</a></li>
+          <li><a href="sakthi.html">சக்தி நெறி (அபிராமி அந்தாதி &amp; போற்றிகள்)</a></li>
+          <li><a href="vinayagar.html">விநாயகர் நெறி &amp; வைணவம்</a></li>
+          <li><a href="youtube.html">YouTube இசை &amp; படக் களஞ்சியம்</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 குரு குல தேசம் (Guru Kula Desam) | gurukuladesam.com | 32, SSS Jaya Enclave, Kovaipudur, Coimbatore, Tamil Nadu, India | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

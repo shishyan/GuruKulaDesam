@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>சைவ நெறி — தரம் 10 (Grade 10) | Guru Kula Desam</title>
+  <meta name="description" content="குரு குல தேசம் சைவ நெறி தரம் 10. பாடத்திட்டம், பன்னிரு திருமுறைகள், சிவ சின்னங்கள் &amp; ஆன்மீக வழிகாட்டி.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand" aria-label="Guru Kula Desam Home">
+        <div class="brand-emblem">ॐ</div>
+        <div class="brand-text">
+          <h1>குரு குல தேசம்</h1>
+          <span>Guru Kula Desam <span class="brand-sub-extra">• வேத &amp; சைவ நெறி</span></span>
+        </div>
+      </a>
+      <button class="mobile-toggle" id="mobileNavToggle" onclick="toggleMobileNav()" aria-label="பட்டி (Menu)" aria-expanded="false">☰</button>
+      <div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link ">முகப்பு</a>
+        <a href="saiva-neri.html" class="nav-link ">சைவ நெறி</a>
+
+        <!-- Kalvi (Grades 1-12) Dropdown -->
+        <div class="nav-dropdown " id="kalviDropdown">
+          <button class="nav-link dropdown-toggle " id="kalviDropdownBtn" onclick="toggleDropdown(event, 'kalviDropdown')" aria-haspopup="true" aria-expanded="false">
+            <span>கல்வி (Grades 1-12)</span>
+            <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="dropdown-menu kalvi-menu" id="kalviDropdownMenu">
+            <a href="kalvi.html" class="dropdown-item " style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
+              <span class="dropdown-item-icon">🏛️</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">சைவ நெறி கல்வித் தளம் (Curriculum Hub)</div>
+                <div class="dropdown-item-desc">தரம் 1 முதல் 12 வரையிலான முழுமையான பாடநெறி</div>
+              </div>
+            </a>
+            <a href="tharam-1.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">📖</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">தரம் 1 (Grade 1)</div>
+                <div class="dropdown-item-desc">60 பாடப் படங்கள் &amp; நூல்கள்</div>
+              </div>
+            </a>
+            <a href="tharam-2.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🪔</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 2 (Grade 2)</div></div>
+            </a>
+            <a href="tharam-3.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 3 (Grade 3)</div></div>
+            </a>
+            <a href="tharam-4.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">📜</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 4 (Grade 4)</div></div>
+            </a>
+            <a href="tharam-5.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🌺</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 5 (Grade 5)</div></div>
+            </a>
+            <a href="tharam-6.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🕉️</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 6 (Grade 6)</div></div>
+            </a>
+            <a href="tharam-7.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔔</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 7 (Grade 7)</div></div>
+            </a>
+            <a href="tharam-8.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">✨</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 8 (Grade 8)</div></div>
+            </a>
+            <a href="tharam-9.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">⚜️</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 9 (Grade 9)</div></div>
+            </a>
+            <a href="tharam-10.html" class="dropdown-item active">
+              <span class="dropdown-item-icon">🌟</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 10 (Grade 10)</div></div>
+            </a>
+            <a href="tharam-11.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 11 (Grade 11)</div></div>
+            </a>
+            <a href="tharam-12.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">👑</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 12 (Grade 12)</div></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Traditions Dropdown -->
+        <div class="nav-dropdown " id="traditionsDropdown">
+          <button class="nav-link dropdown-toggle" id="traditionsDropdownBtn" onclick="toggleDropdown(event, 'traditionsDropdown')" aria-haspopup="true" aria-expanded="false">
+            <span>வழிபாட்டு நெறிகள்</span>
+            <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="dropdown-menu" id="traditionsDropdownMenu">
+            <a href="murugan.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">முருகன் (Kaumaram)</div>
+                <div class="dropdown-item-desc">கந்த சஷ்டி, திருப்புகழ் &amp; கானங்கள்</div>
+              </div>
+            </a>
+            <a href="sakthi.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🌸</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">சக்தி (Shaktham)</div>
+                <div class="dropdown-item-desc">அபிராமி அந்தாதி &amp; லலிதா போற்றிகள்</div>
+              </div>
+            </a>
+            <a href="vinayagar.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🐘</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">விநாயகர் (Ganapathyam)</div>
+                <div class="dropdown-item-desc">விநாயகர் அகவல் &amp; மூல கணபதி பதிகங்கள்</div>
+              </div>
+            </a>
+            <a href="vaishnava.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🪷</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">வைணவம் (Vaishnavam)</div>
+                <div class="dropdown-item-desc">விஷ்ணு, கிருஷ்ணர் &amp; திவ்வியப் பிரபந்தம்</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="thirukkural.html" class="nav-link ">திருக்குறள்</a>
+        <a href="sanmargam.html" class="nav-link ">சன்மார்க்கம்</a>
+        <a href="irai-isai-virundhu.html" class="nav-link ">இறை இசை</a>
+        <a href="syllabus.html" class="nav-link ">பாடத்திட்டம்</a>
+        <a href="classes.html" class="nav-link ">வகுப்புகள்</a>
+        <a href="about.html" class="nav-link ">பெரியவா தரிசனம்</a>
+        <a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener" class="nav-link" style="border: 1px solid var(--border-gold); padding: 5px 12px; border-radius: 16px; color: var(--gold-bright);">🌐 கூகிள் தளம் ↗</a>
+        <a href="https://www.youtube.com/@guru-kula-desam?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="yt-btn-header">
+          ▶ YouTube
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="hero-banner">
+      <div class="sacred-tag">ॐ சைவ நெறி • தரம் 10 • Grade 10 ॐ</div>
+      <h1>சைவ நெறி — தரம் 10</h1>
+      <h2>Saiva Neri Spiritual Curriculum — Grade 10</h2>
+      <div class="verse-quote">"சாத்திர ஞானமும் திருமுறைப் பனுவலும் ஆன்ம முக்திக்கு வாயில்கள்"</div>
+      <p class="hero-desc">பொதுத் தேர்வு (GCE O/L) பாடநெறி — சிவஞான சித்தியார் & ஆன்ம இயல்பு</p>
+    </div>
+
+    <!-- Live Google Sites Link Bar -->
+    <div class="google-site-banner">
+      <div class="gs-banner-content">
+        <h3>🌐 கூகிள் சைட்ஸ் நேரடி இணைப்பு (Google Sites Mirror)</h3>
+        <p>கூகிள் தளத்தில் உள்ள இந்த தரம் 10 பக்கத்தை நேரடியாகப் பார்வையிடவும்.</p>
+      </div>
+      <a href="https://sites.google.com/view/wwwgurukuladesamcom/home/%E0%AE%9A%E0%AE%B5-%E0%AE%A8%E0%AE%B1/%E0%AE%A4%E0%AE%B0%E0%AE%AE-10" target="_blank" rel="noopener" class="gs-banner-btn">
+        கூகிள் தளத்தில் தரம் 10 காண்க ↗
+      </a>
+    </div>
+
+    <!-- Grade Quick Navigation -->
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin: 20px 0; padding: 14px 20px; background:var(--bg-card); border-radius:12px; border:1px solid var(--border-gold);">
+      <a href="tharam-9.html" style="color:var(--gold); text-decoration:none; font-weight:600;">← முந்தைய தரம்: தரம் 9</a>
+      <a href="kalvi.html" style="color:var(--text-muted); text-decoration:none; font-size:0.9rem;">கல்வித் தளம் (Curriculum Hub)</a>
+      <a href="tharam-11.html" style="color:var(--gold-bright); text-decoration:none; font-weight:700;">அடுத்த தரம்: தரம் 11 →</a>
+    </div>
+
+    <!-- Syllabus Content Box -->
+    <div class="scripture-study-section">
+      <span class="source-badge">தரம் 10 — பாடத்திட்ட விவரங்கள் &amp; தலைப்புகள்</span>
+      <h2>கற்பித்தல் நெறிகளும் பாட உள்ளடக்கமும் (Curriculum &amp; Learning Outcomes)</h2>
+      <ul style="margin-left: 20px; margin-top: 14px; color: var(--text-main); line-height: 1.8;">
+        <li>அருணந்தி சிவாசாரியார் அருளிய சிவஞான சித்தியார்: பரபக்கம் மற்றும் சுபக்கம் ஒப்பீடு</li><li>ஆன்மாவின் இலக்கணம்: சாக்கிரம், சொப்பனம், சுழுத்தி, துரியம், துரியாதீதம் ஆகிய ஐந்து அவத்தைகள்</li><li>கன்ம வினைப் பயன்கள்: சஞ்சிதம், பிராரப்தம், ஆகாமியம் அறுபடும் முறை</li><li>சைவ இலக்கிய ஆழம்: கந்தபுராணம், திருவிளையாடற் புராணம், திருப்புகழ் தத்துவங்கள்</li><li>தேர்வு வழிகாட்டி: முந்தைய ஆண்டு வினாத்தாள்கள், மாதிரிக் கட்டுரைகள், பதிக ஒப்புவித்தல்</li>
+      </ul>
+    </div>
+
+    <!-- Related Devotional Links -->
+    <h2 class="section-divider-title" style="margin-top:40px;">இணைந்த ஆன்மீகப் பிரிவுகள் (Related Traditions)</h2>
+    <div class="canonical-grid">
+      <div class="canonical-card" onclick="location.href='saiva-neri.html'" style="cursor: pointer;">
+        <h4>🔱 பன்னிரு திருமுறைகள் (172 பாடல்கள்)</h4>
+        <p>தேவாரம், திருவாசகம், திருவிசைப்பா, திருமந்திரப் பெருவெளியின் இசை வடிவங்கள்.</p>
+        <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">கேட்க &amp; தியானிக்க ↗</span>
+      </div>
+
+      <div class="canonical-card" onclick="location.href='irai-isai-virundhu.html'" style="cursor: pointer;">
+        <h4>🎵 இறை இசை விருந்து (5 பாடல்கள்)</h4>
+        <p>பாலும் தெளிர் தேனும், குரு வணக்கம், கந்தர் அநுபூதி, சிவபுராணப் பாடல்கள்.</p>
+        <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">இறை இசை கேட்க ↗</span>
+      </div>
+
+      <div class="canonical-card" onclick="location.href='thirukkural.html'" style="cursor: pointer;">
+        <h4>📜 திருக்குறள் வாழ்வியல் தர்மம்</h4>
+        <p>அறத்துப்பால், பொருட்பால், இன்பத்துப்பால் 133 அதிகாரங்களின் சினிமா இசைத் திரைப்படங்கள்.</p>
+        <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">குறள் நல்வழி ↗</span>
+      </div>
+
+      <div class="canonical-card" onclick="location.href='classes.html'" style="cursor: pointer;">
+        <h4>🏛️ ஆன்லைன் &amp; குருகுல வகுப்புகள்</h4>
+        <p>வாராந்திர நேரலை வகுப்புகள் மற்றும் தேர்வு வழிகாட்டுதலில் இணையுங்கள்.</p>
+        <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700; margin-top: 6px; display: inline-block;">வகுப்பில் சேர ↗</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>குரு குல தேசம் (Guru Kula Desam)</h4>
+        <p>வேதங்கள், பன்னிரு திருமுறைகள், சைவ சித்தாந்த சாத்திரங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் சுத்த சன்மார்க்க நெறிகளை உலகிற்கு பறைசாற்றும் ஆன்மீக இசை &amp; கல்விப் பெருவெளி.</p>
+        <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">அன்பே சிவம் • யாதும் ஊரே யாவரும் கேளிர் • ஏகன் அநேகன்</p>
+        <div style="margin-top: 14px; font-size: 0.84rem; color: var(--gold-soft); line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 12px; background: rgba(212, 175, 55, 0.05); padding-top: 6px; padding-bottom: 6px; border-radius: 0 8px 8px 0;">
+          📍 <strong>மைய முகவரி (Headquarters):</strong><br>
+          32, SSS Jaya Enclave, Kovaipudur,<br>
+          Coimbatore, 641042, Tamil Nadu, India.
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>சைவ நெறி கல்வி &amp; பாடங்கள்</h4>
+        <ul class="footer-links">
+          <li><a href="kalvi.html">சைவ நெறி கல்வித் தளம் (Grades 1 - 12)</a></li>
+          <li><a href="tharam-1.html">தரம் 1 — 60 பாடப் படங்கள் &amp; நூல்கள்</a></li>
+          <li><a href="tharam-2.html">தரம் 2 — சிவ சின்னங்கள் &amp; ஆலய வழிபாடு</a></li>
+          <li><a href="tharam-3.html">தரம் 3 முதல் தரம் 12 வரை</a></li>
+          <li><a href="irai-isai-virundhu.html">இறை இசை விருந்து (5 சிறப்புப் பாடல்கள்)</a></li>
+          <li><a href="syllabus.html">பாடத்திட்டம் (Comprehensive Syllabus)</a></li>
+          <li><a href="classes.html">வகுப்புகள் (Online Classes &amp; Timetable)</a></li>
+          <li><a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener">அதிகாரப்பூர்வ கூகிள் தளம் (Google Sites Mirror) ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ஆன்மீக வழிகள் &amp; இசை</h4>
+        <ul class="footer-links">
+          <li><a href="saiva-neri.html">சிவ நெறி (172 திருமுறைப் பாடல்கள்)</a></li>
+          <li><a href="thirukkural.html">திருக்குறள் (185 அதிகாரப் படங்கள் &amp; இசை)</a></li>
+          <li><a href="sanmargam.html">சன்மார்க்கம் (94 அருட்பெருஞ்சோதிப் பாடல்கள்)</a></li>
+          <li><a href="murugan.html">முருக நெறி (கந்த சஷ்டி &amp; திருப்புகழ்)</a></li>
+          <li><a href="sakthi.html">சக்தி நெறி (அபிராமி அந்தாதி &amp; போற்றிகள்)</a></li>
+          <li><a href="vinayagar.html">விநாயகர் நெறி &amp; வைணவம்</a></li>
+          <li><a href="youtube.html">YouTube இசை &amp; படக் களஞ்சியம்</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 குரு குல தேசம் (Guru Kula Desam) | gurukuladesam.com | 32, SSS Jaya Enclave, Kovaipudur, Coimbatore, Tamil Nadu, India | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>சைவ நெறி கல்வித் தளம் — தரம் 1 முதல் தரம் 12 வரை | Guru Kula Desam</title>
+  <meta name="description" content="குரு குல தேசம் சைவ நெறி பாடநெறி தளம். தரம் 1 முதல் 12 வரையிலான பள்ளி & ஆன்மீகப் பாடங்கள், திருமுறைத் தேவாரங்கள் மற்றும் பாடநூல்கள்.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand" aria-label="Guru Kula Desam Home">
+        <div class="brand-emblem">ॐ</div>
+        <div class="brand-text">
+          <h1>குரு குல தேசம்</h1>
+          <span>Guru Kula Desam <span class="brand-sub-extra">• வேத &amp; சைவ நெறி</span></span>
+        </div>
+      </a>
+      <button class="mobile-toggle" id="mobileNavToggle" onclick="toggleMobileNav()" aria-label="பட்டி (Menu)" aria-expanded="false">☰</button>
+      <div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link ">முகப்பு</a>
+        <a href="saiva-neri.html" class="nav-link ">சைவ நெறி</a>
+
+        <!-- Kalvi (Grades 1-12) Dropdown -->
+        <div class="nav-dropdown " id="kalviDropdown">
+          <button class="nav-link dropdown-toggle " id="kalviDropdownBtn" onclick="toggleDropdown(event, 'kalviDropdown')" aria-haspopup="true" aria-expanded="false">
+            <span>கல்வி (Grades 1-12)</span>
+            <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="dropdown-menu kalvi-menu" id="kalviDropdownMenu">
+            <a href="kalvi.html" class="dropdown-item active" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
+              <span class="dropdown-item-icon">🏛️</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">சைவ நெறி கல்வித் தளம் (Curriculum Hub)</div>
+                <div class="dropdown-item-desc">தரம் 1 முதல் 12 வரையிலான முழுமையான பாடநெறி</div>
+              </div>
+            </a>
+            <a href="tharam-1.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">📖</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">தரம் 1 (Grade 1)</div>
+                <div class="dropdown-item-desc">60 பாடப் படங்கள் &amp; நூல்கள்</div>
+              </div>
+            </a>
+            <a href="tharam-2.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🪔</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 2 (Grade 2)</div></div>
+            </a>
+            <a href="tharam-3.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 3 (Grade 3)</div></div>
+            </a>
+            <a href="tharam-4.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">📜</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 4 (Grade 4)</div></div>
+            </a>
+            <a href="tharam-5.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🌺</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 5 (Grade 5)</div></div>
+            </a>
+            <a href="tharam-6.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🕉️</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 6 (Grade 6)</div></div>
+            </a>
+            <a href="tharam-7.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔔</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 7 (Grade 7)</div></div>
+            </a>
+            <a href="tharam-8.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">✨</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 8 (Grade 8)</div></div>
+            </a>
+            <a href="tharam-9.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">⚜️</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 9 (Grade 9)</div></div>
+            </a>
+            <a href="tharam-10.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🌟</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 10 (Grade 10)</div></div>
+            </a>
+            <a href="tharam-11.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 11 (Grade 11)</div></div>
+            </a>
+            <a href="tharam-12.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">👑</span>
+              <div class="dropdown-item-content"><div class="dropdown-item-title">தரம் 12 (Grade 12)</div></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Traditions Dropdown -->
+        <div class="nav-dropdown " id="traditionsDropdown">
+          <button class="nav-link dropdown-toggle" id="traditionsDropdownBtn" onclick="toggleDropdown(event, 'traditionsDropdown')" aria-haspopup="true" aria-expanded="false">
+            <span>வழிபாட்டு நெறிகள்</span>
+            <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="dropdown-menu" id="traditionsDropdownMenu">
+            <a href="murugan.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">முருகன் (Kaumaram)</div>
+                <div class="dropdown-item-desc">கந்த சஷ்டி, திருப்புகழ் &amp; கானங்கள்</div>
+              </div>
+            </a>
+            <a href="sakthi.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🌸</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">சக்தி (Shaktham)</div>
+                <div class="dropdown-item-desc">அபிராமி அந்தாதி &amp; லலிதா போற்றிகள்</div>
+              </div>
+            </a>
+            <a href="vinayagar.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🐘</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">விநாயகர் (Ganapathyam)</div>
+                <div class="dropdown-item-desc">விநாயகர் அகவல் &amp; மூல கணபதி பதிகங்கள்</div>
+              </div>
+            </a>
+            <a href="vaishnava.html" class="dropdown-item ">
+              <span class="dropdown-item-icon">🪷</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title">வைணவம் (Vaishnavam)</div>
+                <div class="dropdown-item-desc">விஷ்ணு, கிருஷ்ணர் &amp; திவ்வியப் பிரபந்தம்</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="thirukkural.html" class="nav-link ">திருக்குறள்</a>
+        <a href="sanmargam.html" class="nav-link ">சன்மார்க்கம்</a>
+        <a href="irai-isai-virundhu.html" class="nav-link ">இறை இசை</a>
+        <a href="syllabus.html" class="nav-link ">பாடத்திட்டம்</a>
+        <a href="classes.html" class="nav-link ">வகுப்புகள்</a>
+        <a href="about.html" class="nav-link ">பெரியவா தரிசனம்</a>
+        <a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener" class="nav-link" style="border: 1px solid var(--border-gold); padding: 5px 12px; border-radius: 16px; color: var(--gold-bright);">🌐 கூகிள் தளம் ↗</a>
+        <a href="https://www.youtube.com/@guru-kula-desam?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="yt-btn-header">
+          ▶ YouTube
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="hero-banner">
+      <div class="sacred-tag">ॐ சைவ நெறிப் பள்ளிக் கல்வி • தரம் 1 முதல் 12 வரை ॐ</div>
+      <h1>சைவ நெறி கல்வித் தளம்</h1>
+      <h2>Saiva Neri Spiritual &amp; Cultural Curriculum (Grades 1 to 12)</h2>
+      <div class="verse-quote">"கற்றதனால் ஆய பயனென்கொல் வாலறிவன் நற்றாள் தொழாஅர் எனின்" — திருக்குறள் 2</div>
+      <p class="hero-desc">
+        மாணவர்களின் உள்ளத்தில் பக்தியையும், ஒழுக்கத்தையும், மெய்ஞ்ஞானத்தையும் விதைக்கும் உன்னதக் கல்வித் தளம். திருமுறைப் பாடல்கள், சைவ சித்தாந்த அடிப்படைகள், நாயன்மார் வரலாறுகள், இறை இசை மற்றும் ஒழுக்க நெறிகளை உள்ளடக்கிய 12 தரங்களுக்கான முழுமையான களஞ்சியம்.
+      </p>
+    </div>
+
+    <!-- Google Sites Live Sync Banner -->
+    <div class="google-site-banner">
+      <div class="gs-banner-content">
+        <h3>🌐 அதிகாரப்பூர்வ கூகிள் தளத்திலும் கிடைக்கிறது</h3>
+        <p>குரு குல தேசம் கூகிள் சைட்ஸ் (Google Sites) தளத்தில் அமைக்கப்பட்ட அனைத்து பக்கங்களும் இங்கு ஒருங்கிணைக்கப்பட்டுள்ளன.</p>
+      </div>
+      <a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener" class="gs-banner-btn">
+        நேரடி கூகிள் தளம் காண்க ↗
+      </a>
+    </div>
+
+    <!-- Key Navigation Highlights -->
+    <div class="canonical-grid" style="margin-bottom: 30px;">
+      <div class="canonical-card" onclick="location.href='tharam-1.html'" style="cursor: pointer; border-color: var(--gold-bright);">
+        <h4>📖 தரம் 1 — முழுமையான 60 பாடப் படங்கள்</h4>
+        <p>முதல் தர மாணவர்களுக்கான வண்ணமயமான 60 பாடநூல் பக்கங்கள், கடவுள் வாழ்த்து மற்றும் எளிய பயிற்சிகள்.</p>
+        <span style="color: var(--gold); font-size: 0.82rem; font-weight: 700; margin-top: 6px; display: inline-block;">பக்கங்களை வாசிக்க ↗</span>
+      </div>
+
+      <div class="canonical-card" onclick="location.href='irai-isai-virundhu.html'" style="cursor: pointer;">
+        <h4>🎵 இறை இசை விருந்து (Syllabus Music)</h4>
+        <p>பாலும் தெளிர் தேனும், குரு வணக்கம், கந்தர் அநுபூதி, பாரதியார் கானம், சிவபுராணம் ஆகிய 5 சிறப்புப் படைப்புகள்.</p>
+        <span style="color: var(--gold); font-size: 0.82rem; font-weight: 700; margin-top: 6px; display: inline-block;">கேட்க & பாட ↗</span>
+      </div>
+
+      <div class="canonical-card" onclick="location.href='classes.html'" style="cursor: pointer;">
+        <h4>🏛️ ஆன்லைன் வகுப்புகள் (Classes)</h4>
+        <p>குருகுல முறை நேரடிப் பயிற்சி, வாராந்திர வகுப்புகள் மற்றும் தேர்வு வழிகாட்டுதல்கள்.</p>
+        <span style="color: var(--gold); font-size: 0.82rem; font-weight: 700; margin-top: 6px; display: inline-block;">வகுப்பு விவரங்கள் ↗</span>
+      </div>
+
+      <div class="canonical-card" onclick="location.href='syllabus.html'" style="cursor: pointer;">
+        <h4>📜 விரிவான பாடத்திட்டம் (Full Syllabus)</h4>
+        <p>தொடக்க நிலை, இடைநிலை, உயர்நிலை மாணவர்களுக்கான முழுமையான சைவ சித்தாந்தப் பாடத்திட்டம்.</p>
+        <span style="color: var(--gold); font-size: 0.82rem; font-weight: 700; margin-top: 6px; display: inline-block;">பாடத்திட்டம் அறிய ↗</span>
+      </div>
+    </div>
+
+    <h2 class="section-divider-title">அனைத்து 12 தரங்களின் பாடநெறி (Select Your Grade)</h2>
+
+    <div class="grades-grid">
+      
+        <a href="tharam-1.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 1 (Grade 1)</span>
+              <span class="grade-card-badge">60 பாடப் படங்கள்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">📖</div>
+              <div class="grade-card-title">
+                <h3>தரம் 1 — சைவ நெறி</h3>
+                <span>Grade 1 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">தொடக்கநிலை சைவ நெறி — கடவுள் வணக்கம், நற்பண்புகள் & 60 பாட நூல்கள்</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-2.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 2 (Grade 2)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">🪔</div>
+              <div class="grade-card-title">
+                <h3>தரம் 2 — சைவ நெறி</h3>
+                <span>Grade 2 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">சிவ சின்னங்களின் மகிமை, திருக்கோயில் வழிபாடு & ஒழுக்க நெறிகள்</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "மந்திர மாவது நீறு வானவர் மேலது நீறு"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-3.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 3 (Grade 3)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">🔱</div>
+              <div class="grade-card-title">
+                <h3>தரம் 3 — சைவ நெறி</h3>
+                <span>Grade 3 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">அறுபத்து மூவர் நாயன்மார் கதைகள் & பன்னிரு திருமுறைகள் அறிமுகம்</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "கண்ணப்பன் ஒப்பதோர் அன்பின்மை கண்டபின் என் ஒப்பன் என்று அருள் செய்து"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-4.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 4 (Grade 4)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">📜</div>
+              <div class="grade-card-title">
+                <h3>தரம் 4 — சைவ நெறி</h3>
+                <span>Grade 4 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">நால்வர் பெருமக்கள் வாழ்வு, திருக்கோயில் கட்டடக் கலை & திருவாசகம்</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "பித்தா பிறைசூடி பெருமானே அருளாளா"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-5.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 5 (Grade 5)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">🌺</div>
+              <div class="grade-card-title">
+                <h3>தரம் 5 — சைவ நெறி</h3>
+                <span>Grade 5 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">சைவ விரதங்கள், பெரியபுராண நாயன்மார்கள் & சமூக நல்லிணக்கம்</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "சொற்றுணை வேதியன் சோதி வானவன் நற்றுணை யாவது நமச்சி வாயவே"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-6.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 6 (Grade 6)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">🕉️</div>
+              <div class="grade-card-title">
+                <h3>தரம் 6 — சைவ நெறி</h3>
+                <span>Grade 6 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">சைவ சித்தாந்த தத்துவ தொடக்கம் — பதி, பசு, பாசம் & பண்கள்</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "அன்பும் சிவமும் இரண்டென்பர் அறிவிலார் அன்பே சிவமாவது ஆரும் அறிகிலார்"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-7.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 7 (Grade 7)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">🔔</div>
+              <div class="grade-card-title">
+                <h3>தரம் 7 — சைவ நெறி</h3>
+                <span>Grade 7 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">கோளறு திருப்பதிகம், நவக்கிரக தத்துவம் & சைவ சமய மறுமலர்ச்சி</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "வேயுறு தோளிபங்கன் விடமுண்ட கண்டன் மிகநல்ல வீணை தடவி"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-8.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 8 (Grade 8)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">✨</div>
+              <div class="grade-card-title">
+                <h3>தரம் 8 — சைவ நெறி</h3>
+                <span>Grade 8 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">திருத்தொண்டத் தொகை, யோக மார்க்கம் & சைவ தீட்சை நெறிகள்</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "திருத்தொண்டத் தொகை உரைத்த தம்பிரான் தோழர் சுந்தரர்"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-9.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 9 (Grade 9)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">⚜️</div>
+              <div class="grade-card-title">
+                <h3>தரம் 9 — சைவ நெறி</h3>
+                <span>Grade 9 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">மெய்கண்ட சாத்திரங்கள், சிவஞானபோதம் & சதாசிவ தத்துவம்</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "மெய்கண்ட தேவர் அருளிய சிவஞான போதம் நற்பாடம்"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-10.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 10 (Grade 10)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">🌟</div>
+              <div class="grade-card-title">
+                <h3>தரம் 10 — சைவ நெறி</h3>
+                <span>Grade 10 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">பொதுத் தேர்வு (GCE O/L) பாடநெறி — சிவஞான சித்தியார் & ஆன்ம இயல்பு</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "சாத்திர ஞானமும் திருமுறைப் பனுவலும் ஆன்ம முக்திக்கு வாயில்கள்"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-11.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 11 (Grade 11)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">🔱</div>
+              <div class="grade-card-title">
+                <h3>தரம் 11 — சைவ நெறி</h3>
+                <span>Grade 11 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">சைவப் பண்பாட்டு வரலாறு, கல்வெட்டுகள் & சோழர்-பாண்டியர் பேரரசு</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "யாவர்க்குமாம் இறைவற்கு ஒரு பச்சிலை யாவர்க்குமாம் பசுவுக்கு ஒரு வாயுறை"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+        <a href="tharam-12.html" class="grade-card">
+          <div>
+            <div class="grade-card-badge-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="grade-card-badge">தரம் 12 (Grade 12)</span>
+              <span class="grade-card-badge">பாடத்திட்டம்</span>
+            </div>
+            <div class="grade-card-header">
+              <div class="grade-card-icon">👑</div>
+              <div class="grade-card-title">
+                <h3>தரம் 12 — சைவ நெறி</h3>
+                <span>Grade 12 Spiritual Education</span>
+              </div>
+            </div>
+            <p class="grade-card-desc" style="margin-top:12px;">உயர்நிலை (GCE A/L) சைவ சித்தாந்த சாத்திரங்கள், மகா பெரியவா & சன்மார்க்கம்</p>
+            <div style="font-size:0.8rem; color:var(--gold-soft); margin-top:10px; font-style:italic;">
+              "செம்மலர் நோன்றாள் சேரல் — பரமுக்திப் பேறு"
+            </div>
+          </div>
+          <div class="grade-card-footer">
+            <span>பாடங்களைக் காண்க</span>
+            <span>அணுகுக ↗</span>
+          </div>
+        </a>
+        
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>குரு குல தேசம் (Guru Kula Desam)</h4>
+        <p>வேதங்கள், பன்னிரு திருமுறைகள், சைவ சித்தாந்த சாத்திரங்கள், காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் வள்ளலார் பெருமானின் சுத்த சன்மார்க்க நெறிகளை உலகிற்கு பறைசாற்றும் ஆன்மீக இசை &amp; கல்விப் பெருவெளி.</p>
+        <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">அன்பே சிவம் • யாதும் ஊரே யாவரும் கேளிர் • ஏகன் அநேகன்</p>
+        <div style="margin-top: 14px; font-size: 0.84rem; color: var(--gold-soft); line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 12px; background: rgba(212, 175, 55, 0.05); padding-top: 6px; padding-bottom: 6px; border-radius: 0 8px 8px 0;">
+          📍 <strong>மைய முகவரி (Headquarters):</strong><br>
+          32, SSS Jaya Enclave, Kovaipudur,<br>
+          Coimbatore, 641042, Tamil Nadu, India.
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>சைவ நெறி கல்வி &amp; பாடங்கள்</h4>
+        <ul class="footer-links">
+          <li><a href="kalvi.html">சைவ நெறி கல்வித் தளம் (Grades 1 - 12)</a></li>
+          <li><a href="tharam-1.html">தரம் 1 — 60 பாடப் படங்கள் &amp; நூல்கள்</a></li>
+          <li><a href="tharam-2.html">தரம் 2 — சிவ சின்னங்கள் &amp; ஆலய வழிபாடு</a></li>
+          <li><a href="tharam-3.html">தரம் 3 முதல் தரம் 12 வரை</a></li>
+          <li><a href="irai-isai-virundhu.html">இறை இசை விருந்து (5 சிறப்புப் பாடல்கள்)</a></li>
+          <li><a href="syllabus.html">பாடத்திட்டம் (Comprehensive Syllabus)</a></li>
+          <li><a href="classes.html">வகுப்புகள் (Online Classes &amp; Timetable)</a></li>
+          <li><a href="https://sites.google.com/view/wwwgurukuladesamcom" target="_blank" rel="noopener">அதிகாரப்பூர்வ கூகிள் தளம் (Google Sites Mirror) ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ஆன்மீக வழிகள் &amp; இசை</h4>
+        <ul class="footer-links">
+          <li><a href="saiva-neri.html">சிவ நெறி (172 திருமுறைப் பாடல்கள்)</a></li>
+          <li><a href="thirukkural.html">திருக்குறள் (185 அதிகாரப் படங்கள் &amp; இசை)</a></li>
+          <li><a href="sanmargam.html">சன்மார்க்கம் (94 அருட்பெருஞ்சோதிப் பாடல்கள்)</a></li>
+          <li><a href="murugan.html">முருக நெறி (கந்த சஷ்டி &amp; திருப்புகழ்)</a></li>
+          <li><a href="sakthi.html">சக்தி நெறி (அபிராமி அந்தாதி &amp; போற்றிகள்)</a></li>
+          <li><a href="vinayagar.html">விநாயகர் நெறி &amp; வைணவம்</a></li>
+          <li><a href="youtube.html">YouTube இசை &amp; படக் களஞ்சியம்</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 குரு குல தேசம் (Guru Kula Desam) | gurukuladesam.com | 32, SSS Jaya Enclave, Kovaipudur, Coimbatore, Tamil Nadu, India | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
