@@ -5940,3 +5940,49 @@ main.main-content svg { max-width: 100%; height: auto; }
   100% { transform: scale(1); }
 }
 
+
+/* ==========================================================================
+   Modern Professional SVG Icon System (Guru Kula Desam)
+   ========================================================================== */
+.gkd-icon {
+  width: 1.15em;
+  height: 1.15em;
+  display: inline-block;
+  vertical-align: -0.16em;
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.strip-item-icon .gkd-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+}
+.strip-sub-icon .gkd-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  vertical-align: middle;
+}
+.gkd-sub-arrow {
+  width: 0.75em !important;
+  height: 0.75em !important;
+  vertical-align: middle;
+}
+.strip-toggle-icon .gkd-icon {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+}
+.modal-close-btn .gkd-icon,
+.modal-fullscreen-btn .gkd-icon,
+.modal-scroll-btn .gkd-icon {
+  width: 0.95em;
+  height: 0.95em;
+  margin-right: 4px;
+}
+.icon-svg-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}

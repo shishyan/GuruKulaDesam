@@ -1,3 +1,108 @@
+// Modern Professional SVG Icon System
+const GKD_ICONS = {
+  home: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>',
+  temple: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg>',
+  leaf: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg>',
+  om: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M11.5 7.5c-1.8 0-2.8 1.2-2.8 2.5 0 1.8 2.5 2.2 2.5 4 0 .8-.6 1.2-1.2 1.2s-1.2-.4-1.2-1.2"/><path d="M11.5 11c.8-.8 1.8-.8 2.2 0s0 1.8-1.2 2.2"/><circle cx="14.8" cy="8.2" r=".6" fill="currentColor"/><path d="M13.5 6.5c.8 0 1.8.4 2.2 1.2"/></svg>',
+  trishul: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M12 6c-3.5 0-6 2.5-6 6v3h2v-3c0-2.5 1.8-4 4-4s4 1.5 4 4v3h2v-3c0-3.5-2.5-6-6-6z"/><path d="M9 16h6"/><polygon points="12 2 10.5 5 13.5 5 12 2" fill="currentColor"/></svg>',
+  ganesha: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4 0-7 3.5-7 7.5 0 2.5 1.2 4.7 3 6l1 4.5h6l1-4.5c1.8-1.3 3-3.5 3-6C19 6.5 16 3 12 3z"/><path d="M12 9v5a1.5 1.5 0 0 1-3 0"/><circle cx="9" cy="8" r="1" fill="currentColor"/><circle cx="15" cy="8" r="1" fill="currentColor"/></svg>',
+  vel: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V9"/><path d="M12 2C9.5 5 7 8 7 11c0 3 2 4.5 5 5 3-.5 5-2 5-5 0-3-2.5-6-5-9z"/><line x1="9" y1="22" x2="15" y2="22"/></svg>',
+  lotus: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-1.5 3-2 6-2 9 1 0 2-1 2-2 0 1 1 2 2 2 0-3-.5-6-2-9z"/><path d="M7 10c0 3 1.5 5 3 6-2 0-4-1.5-4.5-4 .5-.7 1-1.3 1.5-2z"/><path d="M17 10c0 3-1.5 5-3 6 2 0 4-1.5 4.5-4-.5-.7-1-1.3-1.5-2z"/><path d="M4 15c2 3 5 4 8 4s6-1 8-4c-2.5 0-4.5 1-8 1s-5.5-1-8-1z"/></svg>',
+  chakra: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="3" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="3" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="21" y2="12"/><line x1="5.6" y1="5.6" x2="9.9" y2="9.9"/><line x1="14.1" y1="14.1" x2="18.4" y2="18.4"/><line x1="18.4" y1="5.6" x2="14.1" y2="9.9"/><line x1="9.9" y1="14.1" x2="5.6" y2="18.4"/></svg>',
+  music: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>',
+  scroll: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/><line x1="8" y1="7" x2="14" y2="7"/><line x1="8" y1="11" x2="12" y2="11"/></svg>',
+  flame: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 3 4.5 4.5 7 1.5 2.5 1.5 5.5 0 8s-4 4-6.5 4c-3 0-5.5-2.5-5.5-6 0-3.5 2-6 4-8.5.5 1.5 1.5 2.5 2.5 2.5.5-2 .5-4.5 1-7z"/></svg>',
+  crown: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20v2H2z"/><path d="M3 18l2-11 5 5 4-7 4 7 5-5 2 11H3z"/></svg>',
+  book: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+  target: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+  school: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>',
+  grad: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>',
+  science: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(90 12 12)"/></svg>',
+  virtues: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L3 12.5V21h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>',
+  clock: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+  play: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor"/></svg>',
+  search: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
+  close: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
+  fullscreen: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>',
+  bulb: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.3 4.7 3.2 6H15.8c1.9-1.3 3.2-3.5 3.2-6a7 7 0 0 0-7-7z"/></svg>',
+  pin: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="17" x2="12" y2="22"/><path d="M5 17h14l-2-6V4H7v7l-2 6z"/><line x1="9" y1="4" x2="15" y2="4"/></svg>',
+  pencil: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>',
+  palette: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>',
+  check: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
+  print: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>',
+  chevronDown: '<svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>',
+  deepam: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-.8 2-1.5 3.5-1.5 5a1.5 1.5 0 0 0 3 0c0-1.5-.7-3-1.5-5z" fill="currentColor"/><path d="M5 13c0 4 3 6 7 6s7-2 7-6H5z"/><path d="M10 19v2h4v-2"/></svg>',
+  cinema: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>',
+  mapPin: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  bell: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>',
+  question: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
+  settings: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+  user: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>'
+};
+
+// Global DOM Icon Hydrator
+function hydrateModernIcons(root) {
+  const container = root || document.body;
+  if (!container) return;
+
+  const emojiMap = {
+    '🏛️': GKD_ICONS.temple,
+    '🏛': GKD_ICONS.temple,
+    '🏠': GKD_ICONS.home,
+    '🌿': GKD_ICONS.leaf,
+    '🕉️': GKD_ICONS.om,
+    '🕉': GKD_ICONS.om,
+    '🎵': GKD_ICONS.music,
+    '🎶': GKD_ICONS.music,
+    '📜': GKD_ICONS.scroll,
+    '✨': GKD_ICONS.flame,
+    '🌟': GKD_ICONS.flame,
+    '🔥': GKD_ICONS.flame,
+    '👑': GKD_ICONS.crown,
+    '📖': GKD_ICONS.book,
+    '📚': GKD_ICONS.book,
+    '🎯': GKD_ICONS.target,
+    '🏫': GKD_ICONS.school,
+    '🔬': GKD_ICONS.science,
+    '🔤': GKD_ICONS.virtues,
+    '⏰': GKD_ICONS.clock,
+    '🔱': GKD_ICONS.trishul,
+    '🐘': GKD_ICONS.ganesha,
+    '🪶': GKD_ICONS.vel,
+    '🌸': GKD_ICONS.lotus,
+    '🪷': GKD_ICONS.chakra,
+    '▶️': GKD_ICONS.play,
+    '▶': GKD_ICONS.play,
+    '🎬': GKD_ICONS.cinema,
+    '🔍': GKD_ICONS.search,
+    '💡': GKD_ICONS.bulb,
+    '📌': GKD_ICONS.pin,
+    '✍️': GKD_ICONS.pencil,
+    '✍': GKD_ICONS.pencil,
+    '🎨': GKD_ICONS.palette,
+    '🎓': GKD_ICONS.grad,
+    '✓': GKD_ICONS.check,
+    '✅': GKD_ICONS.check,
+    '🖨️': GKD_ICONS.print,
+    '🖨': GKD_ICONS.print,
+    '🪔': GKD_ICONS.deepam,
+    '📍': GKD_ICONS.mapPin,
+    '⚙️': GKD_ICONS.settings,
+    '⚙': GKD_ICONS.settings,
+    '👤': GKD_ICONS.user,
+    '❓': GKD_ICONS.question
+  };
+
+  const targets = container.querySelectorAll('.strip-item-icon, .strip-sub-icon, .card-type, .badge, .btn-icon, .search-icon, .item-badge');
+  targets.forEach(el => {
+    const txt = el.textContent.trim();
+    if (emojiMap[txt]) {
+      el.innerHTML = emojiMap[txt];
+    }
+  });
+}
+
+
 // Guru Kula Desam - Modern Video Portal Logic with Full Lyrics & Meaning Support
 let currentFilter = 'all';
 let currentSearch = '';
@@ -800,6 +905,7 @@ function openUserSettingsModal(tab) {
   let modal = document.getElementById('userSettingsModal');
   if (!modal) {
     mountAppShell();
+  hydrateModernIcons();
     modal = document.getElementById('userSettingsModal');
   }
   if (modal) {
@@ -1567,19 +1673,19 @@ function mountAppShell() {
   strip.setAttribute('aria-label', 'Quick Portals');
 
   const navItems = [
-    { href: 'index.html', icon: '🏠', label: 'முகப்பு' },
-    { href: 'kalvi.html', icon: '🌿', label: 'வாழ்வியல் நெறி' },
-    { href: 'virtues.html', icon: '🔤', label: 'நற்பண்புகள்' },
-    { href: 'saiva-neri.html', icon: '🕉️', label: 'சைவ நெறி' },
-    { href: 'irai-isai-virundhu.html', icon: '🎵', label: 'இறை இசை' },
-    { href: 'thirukkural.html', icon: '📖', label: 'திருக்குறள்' },
-    { href: 'sanmargam.html', icon: '🪔', label: 'சன்மார்க்கம்' },
-    { href: 'murugan.html', icon: '🔱', label: 'முருகன்' },
-    { href: 'sakthi.html', icon: '🌸', label: 'சக்தி நெறி' },
-    { href: 'vinayagar.html', icon: '🐘', label: 'விநாயகர்' },
-    { href: 'vaishnava.html', icon: '🪷', label: 'வைணவம்' },
-    { href: 'syllabus.html', icon: '📚', label: 'பாடத்திட்டம்' },
-    { href: 'about.html', icon: '🏛️', label: 'பெரியவா' }
+    { href: 'index.html', icon: GKD_ICONS.home, label: 'முகப்பு' },
+    { href: 'kalvi.html', icon: GKD_ICONS.leaf, label: 'வாழ்வியல் நெறி' },
+    { href: 'virtues.html', icon: GKD_ICONS.virtues, label: 'நற்பண்புகள்' },
+    { href: 'saiva-neri.html', icon: GKD_ICONS.om, label: 'சைவ நெறி' },
+    { href: 'irai-isai-virundhu.html', icon: GKD_ICONS.music, label: 'இறை இசை' },
+    { href: 'thirukkural.html', icon: GKD_ICONS.scroll, label: 'திருக்குறள்' },
+    { href: 'sanmargam.html', icon: GKD_ICONS.flame, label: 'சன்மார்க்கம்' },
+    { href: 'murugan.html', icon: GKD_ICONS.vel, label: 'முருகன்' },
+    { href: 'sakthi.html', icon: GKD_ICONS.lotus, label: 'சக்தி நெறி' },
+    { href: 'vinayagar.html', icon: GKD_ICONS.ganesha, label: 'விநாயகர்' },
+    { href: 'vaishnava.html', icon: GKD_ICONS.chakra, label: 'வைணவம்' },
+    { href: 'syllabus.html', icon: GKD_ICONS.book, label: 'பாடத்திட்டம்' },
+    { href: 'about.html', icon: GKD_ICONS.temple, label: 'பெரியவா' }
   ];
 
   strip.innerHTML = `
@@ -1604,15 +1710,15 @@ function mountAppShell() {
 
     <div class="strip-footer-dock">
       <a href="help.html" class="strip-dock-btn" title="உதவி &amp; வழிகாட்டல் (Help &amp; Support)">
-        <span class="strip-item-icon">❓</span>
+        <span class="strip-item-icon">${GKD_ICONS.question}</span>
         <span class="strip-dock-label">உதவி மையம்</span>
       </a>
       <button type="button" class="strip-dock-btn" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
-        <span class="strip-item-icon">⚙️</span>
+        <span class="strip-item-icon">${GKD_ICONS.settings}</span>
         <span class="strip-dock-label">அமைப்புகள்</span>
       </button>
       <button type="button" class="strip-dock-btn profile-dock-btn" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
-        <span class="strip-dock-avatar" id="stripAvatarIcon">👤</span>
+        <span class="strip-dock-avatar" id="stripAvatarIcon">${GKD_ICONS.user}</span>
         <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
       </button>
     </div>
@@ -1925,6 +2031,7 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', mountAppShell);
 } else {
   mountAppShell();
+  hydrateModernIcons();
 }
 
 // Accordion support and Drawer auto-close on selection
