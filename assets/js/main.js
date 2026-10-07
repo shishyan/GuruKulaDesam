@@ -1164,7 +1164,8 @@ function resolvePageContext() {
     'youtube.html': { root: 'காணொளி', title: 'YouTube காணொளி அரங்கம்', desc: '580 பக்தி இசை & பாடல்கள்' },
     'about.html': { root: 'காஞ்சி மகா பெரியவா', title: 'தெய்வத்தின் குரல் & தரிசனம்', desc: 'அருளுரைகள் & வழிகாட்டல்' },
     'google-site.html': { root: 'இணைப்பு', title: 'அதிகாரப்பூர்வ கூகிள் தளம்', desc: 'Google Sites நேரடி பார்வை' },
-    'review_quality.html': { root: 'தமிழ்மறை', title: 'திரைத் தர ஆய்வு அரங்கம் (Film Quality Screening Room)', desc: 'திருக்குறள் மாஸ்டர் சினிமா ஆய்வு & காட்சி சரிபார்ப்பு' }
+    'review_quality.html': { root: 'தமிழ்மறை', title: 'திரைத் தர ஆய்வு அரங்கம் (Film Quality Screening Room)', desc: 'திருக்குறள் மாஸ்டர் சினிமா ஆய்வு & காட்சி சரிபார்ப்பு' },
+    'help.html': { root: 'உதவி', title: 'உதவி & வழிகாட்டல் மையம் (Help & Support)', desc: 'மாணவர், ஆசான் & பயனர் வழிகாட்டிகள்' }
   };
 
   return contextMap[filename] || { root: 'குரு குல தேசம்', title: 'ஆன்மீகக் களஞ்சியம்', desc: '' };
@@ -1392,6 +1393,17 @@ function getContextTabsForPage() {
     ];
   }
 
+  // 15. Help & Support Hub (help.html)
+  if (filename === 'help.html') {
+    return [
+      { id: 'tab-help-student', icon: '🎓', label: 'மாணவர் வழிகாட்டி', action: "scrollToSection('studentGuideSection')", active: true },
+      { id: 'tab-help-guru', icon: '🧑‍🏫', label: 'ஆசான் வழிகாட்டி', action: "scrollToSection('guruGuideSection')" },
+      { id: 'tab-help-user', icon: '👤', label: 'பயனர் வழிகாட்டி', action: "scrollToSection('userGuideSection')" },
+      { id: 'tab-help-faq', icon: '❓', label: 'பொதுக் கேள்விகள் (FAQ)', action: "scrollToSection('faqSection')" },
+      { id: 'tab-help-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' }
+    ];
+  }
+
   // Default fallback
   return [
     { id: 'tab-home', icon: '🏠', label: 'முகப்பு', href: 'index.html' },
@@ -1591,6 +1603,10 @@ function mountAppShell() {
     </nav>
 
     <div class="strip-footer-dock">
+      <a href="help.html" class="strip-dock-btn" title="உதவி &amp; வழிகாட்டல் (Help &amp; Support)">
+        <span class="strip-item-icon">❓</span>
+        <span class="strip-dock-label">உதவி மையம்</span>
+      </a>
       <button type="button" class="strip-dock-btn" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
         <span class="strip-item-icon">⚙️</span>
         <span class="strip-dock-label">அமைப்புகள்</span>
@@ -1646,6 +1662,9 @@ function mountAppShell() {
         <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள் மாற்று">
           <span class="theme-icon" id="themeQuickIcon">🌓</span>
         </button>
+        <a href="help.html" class="context-tool-btn" title="உதவி &amp; வழிகாட்டல் (Help &amp; Support)">
+          <span class="theme-icon">❓</span>
+        </a>
 
         <button type="button" class="context-profile-pill" onclick="openUserSettingsModal('profile')" title="பயனர் சுயவிவரம் &amp; அமைப்புகள்">
           <span class="pill-avatar" id="pillAvatarIcon">👤</span>
@@ -1807,6 +1826,9 @@ function mountAppShell() {
           </div>
 
           <div class="settings-actions-row">
+            <a href="help.html" class="btn-secondary" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+              ❓ உதவி மையம்
+            </a>
             <button type="button" class="btn-secondary" onclick="resetUserSettings()">
               🔄 மீட்டமை (Reset)
             </button>

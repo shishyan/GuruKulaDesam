@@ -17,7 +17,7 @@ DOCS_DIR = ROOT / "docs"
 
 # All core active HTML pages to mirror
 HTML_FILES = [
-    "about.html", "classes.html", "google-site.html", "higher-studies.html",
+    "about.html", "classes.html", "google-site.html", "help.html", "higher-studies.html",
     "index.html", "irai-isai-virundhu.html", "kalvi.html", "murugan.html",
     "review_quality.html", "saiva-neri.html", "sakthi.html", "sanmargam.html",
     "school.html", "syllabus.html", "thirukkural.html", "vaishnava.html",

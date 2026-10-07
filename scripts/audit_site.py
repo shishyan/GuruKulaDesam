@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # Core active site pages
 ACTIVE_PAGES = [
-    "about.html", "classes.html", "google-site.html", "higher-studies.html",
+    "about.html", "classes.html", "google-site.html", "help.html", "higher-studies.html",
     "index.html", "irai-isai-virundhu.html", "kalvi.html", "murugan.html",
     "review_quality.html", "saiva-neri.html", "sakthi.html", "sanmargam.html",
     "school.html", "syllabus.html", "thirukkural.html", "vaishnava.html",
