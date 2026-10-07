@@ -65,14 +65,14 @@ def build_grade_coursebook(g, data):
     next_g = g + 1 if g < 12 else None
     
     prev_link = f"tharam-{prev_g}.html" if prev_g >= 1 else "kalvi.html"
-    prev_label = f"← தரம் {prev_g}" if prev_g >= 1 else "← Kalvi Hub"
+    prev_label = f"← தரம் {prev_g}" if prev_g >= 1 else "← வாழ்வியல் மையம்"
     
     if next_g:
         next_link = f"tharam-{next_g}.html"
         next_label = f"தரம் {next_g} →"
     else:
         next_link = "kalvi.html"
-        next_label = "Kalvi Hub 🎓"
+        next_label = "வாழ்வியல் மையம் 🌿"
 
     units = data['units']
     total_units = len(units)
@@ -104,7 +104,7 @@ def build_grade_coursebook(g, data):
             </a>
             <a href="#u{u['num']}-part3" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-part3')">
               <span class="wbs-sidebar-code">{g}.{u['num']}.3</span>
-              <span>🌿 வாழ்வியல் &amp; அறிவியல்</span>
+              <span>🌿 வாழ்வியல் &amp; இல்லற தர்மம்</span>
             </a>
             <a href="#u{u['num']}-part4" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-part4')">
               <span class="wbs-sidebar-code">{g}.{u['num']}.4</span>
@@ -398,16 +398,24 @@ def build_grade_coursebook(g, data):
               </div>
             </section>
 
-            <!-- PHASE 3: வாழ்வியல் தர்மமும் அறிவியல் பார்வையும் -->
+            <!-- PHASE 3: வாழ்வியல் தர்மமும் உன்னத இல்லற மாண்பும் -->
             <section class="learning-phase-card phase-3-card" id="u{u['num']}-part3">
               <div class="phase-header">
                 <span class="phase-badge phase-badge-teal">பகுதி 3</span>
-                <h3 class="phase-title">🌿 வாழ்வியல் நெறியும் நவீன அறிவியலும் (Living Values &amp; STEM)</h3>
+                <h3 class="phase-title">🌿 வாழ்வியல் தர்மமும் உன்னத இல்லற மாண்பும் (Living Dharma &amp; Family Nobility)</h3>
+              </div>
+
+              <!-- Sacred Dharma Callout -->
+              <div style="background: rgba(45, 212, 191, 0.08); border: 1px solid rgba(45, 212, 191, 0.25); border-radius: 10px; padding: 12px 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 1.5rem;">🏡</span>
+                <div style="font-size: 0.88rem; color: #e2e8f0; line-height: 1.6;">
+                  <strong style="color: #2dd4bf;">வாழ்வியல் நெறியின் தலையாய லட்சியம்:</strong> வெறும் ஏட்டுக் கல்வியோ போதனையோ அல்ல — நற்பண்புகள் நிறைந்த சான்றோனாக வளர்ந்து, உன்னத இல்லறத்தை அறவழியில் வழிநடத்துவதே அதிவேக முக்தி / நிர்வாணப் பாதை.
+                </div>
               </div>
 
               <!-- Student Daily Conduct -->
               <div class="living-conduct-clean">
-                <div class="phase-sub-title" style="margin-top:0; color:#2dd4bf;">🌿 மாணவர் அன்றாட வாழ்வியல் நெறி (Student Daily Conduct):</div>
+                <div class="phase-sub-title" style="margin-top:0; color:#2dd4bf;">🌿 மாணவர் அன்றாட இல்லற-வாழ்வியல் நெறி (Student Daily Living &amp; Conduct):</div>
                 <div class="living-conduct-text">{formatted_living}</div>
               </div>
 
@@ -517,8 +525,8 @@ def build_grade_coursebook(g, data):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{data['grade_tamil']} ({data['grade_eng']} Coursebook) | Guru Kula Desam</title>
-  <meta name="description" content="சைவ நெறி &amp; வேத வாழ்வியல் பாடநூல் {data['grade_tamil']}. {data['hero_desc']}">
+  <title>வாழ்வியல் நெறி — {data['grade_tamil']} ({data['grade_eng']} Coursebook) | Guru Kula Desam</title>
+  <meta name="description" content="வாழ்வியல் நெறி &amp; உன்னத இல்லற தர்மப் பாடநூல் {data['grade_tamil']}. {data['hero_desc']}">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="has-left-strip">
@@ -545,22 +553,22 @@ def build_grade_coursebook(g, data):
         </a>
       </div>
 
-      <!-- 2. கல்வி நெறி (Curriculum & School) -->
+      <!-- 2. வாழ்வியல் நெறி (Dharmic Way of Living & Curriculum) -->
       <div class="strip-group active" data-group="kalvi">
-        <a href="kalvi.html" class="strip-item strip-has-sub" data-tooltip="கல்வி நெறி">
-          <span class="strip-item-icon">🎓</span>
-          <span class="strip-item-label">கல்வி நெறி &amp; பாடங்கள்</span>
+        <a href="kalvi.html" class="strip-item strip-has-sub" data-tooltip="வாழ்வியல் நெறி">
+          <span class="strip-item-icon">🌿</span>
+          <span class="strip-item-label">வாழ்வியல் நெறி &amp; பாடங்கள்</span>
           <span class="strip-sub-indicator">▾</span>
         </a>
         <div class="strip-sub-menu">
-          <div class="strip-sub-header">கல்வி &amp; இணையப் பள்ளி</div>
-          <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon">🏛️</span><span>கல்வி மையம் (12 தரங்கள்)</span></a>
+          <div class="strip-sub-header">வாழ்வியல் &amp; இல்லற தர்மம்</div>
+          <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon">🏛️</span><span>வாழ்வியல் மையம் (12 நிலைகள்)</span></a>
           <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon">🏫</span><span>இணையப் பள்ளி போர்டல்</span></a>
           <a href="higher-studies.html" class="strip-sub-item"><span class="strip-sub-icon">🔬</span><span>வேத-நவீன உயர்கல்வி</span></a>
           <a href="virtues.html" class="strip-sub-item"><span class="strip-sub-icon">🔤</span><span>அகர வரிசை நற்பண்புகள்</span></a>
           <a href="syllabus.html" class="strip-sub-item"><span class="strip-sub-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>
           <a href="classes.html" class="strip-sub-item"><span class="strip-sub-icon">⏰</span><span>வகுப்புகள் அட்டவணை</span></a>
-          <div class="strip-sub-header" style="margin-top:6px;">12 தரப் பாடநூல்கள் (Grades 1-12)</div>
+          <div class="strip-sub-header" style="margin-top:6px;">12 வாழ்வியல் நிலைகள் (Grades 1-12)</div>
           <div class="strip-grades-mini-grid">
             <a href="tharam-1.html" class="strip-grade-mini-pill">1</a>
             <a href="tharam-2.html" class="strip-grade-mini-pill">2</a>
@@ -669,7 +677,7 @@ def build_grade_coursebook(g, data):
         <button type="button" class="context-tab-pill" onclick="selectChapter(5)"><span class="context-tab-pill-icon">📖</span><span>அத்தியாயம் 5</span></button>
         <a href="{prev_link}" class="context-tab-pill"><span class="context-tab-pill-icon">⏮️</span><span>{prev_label}</span></a>
         <a href="{next_link}" class="context-tab-pill"><span class="context-tab-pill-icon">⏭️</span><span>{next_label}</span></a>
-        <a href="kalvi.html" class="context-tab-pill"><span class="context-tab-pill-icon">🎓</span><span>கல்வி மையம்</span></a>
+        <a href="kalvi.html" class="context-tab-pill"><span class="context-tab-pill-icon">🌿</span><span>வாழ்வியல் மையம்</span></a>
       </nav>
       <div class="context-actions">
         <button type="button" class="context-profile-pill" onclick="openUserSettingsModal('profile')" title="பயனர் சுயவிவரம் &amp; அமைப்புகள்">
@@ -688,7 +696,7 @@ def build_grade_coursebook(g, data):
         <div class="brand-emblem">🔱</div>
         <div class="brand-text">
           <h1>குரு குல தேசம்</h1>
-          <span>Guru Kula Desam <span class="brand-sub-extra">• வேத &amp; சைவ வாழ்வியல் கல்வி</span></span>
+          <span>Guru Kula Desam <span class="brand-sub-extra">• வேத &amp; சைவ வாழ்வியல் நெறி</span></span>
         </div>
       </a>
       <button class="mobile-toggle" id="mobileNavToggle" onclick="toggleMobileNav()" aria-label="பட்டி (Menu)" aria-expanded="false">☰</button>
@@ -700,15 +708,15 @@ def build_grade_coursebook(g, data):
         <!-- Kalvi (Grades 1-12) Dropdown -->
         <div class="nav-dropdown active" id="kalviDropdown">
           <button class="nav-link dropdown-toggle active" id="kalviDropdownBtn" onclick="toggleDropdown(event, 'kalviDropdown')" aria-haspopup="true" aria-expanded="false">
-            <span>கல்வி (Grades 1-12)</span>
+            <span>வாழ்வியல் (Grades 1-12)</span>
             <span class="dropdown-arrow">▾</span>
           </button>
           <div class="dropdown-menu kalvi-menu" id="kalviDropdownMenu">
             <a href="kalvi.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
-              <span class="dropdown-item-icon">🏛️</span>
+              <span class="dropdown-item-icon">🌿</span>
               <div class="dropdown-item-content">
-                <div class="dropdown-item-title">சைவ நெறி கல்வித் தளம் (Curriculum Hub)</div>
-                <div class="dropdown-item-desc">தரம் 1 முதல் 12 வரையிலான முழுமையான பாடநெறி</div>
+                <div class="dropdown-item-title">வாழ்வியல் நெறி மையம் (Living the Dharma Hub)</div>
+                <div class="dropdown-item-desc">சான்றாண்மை, உன்னத இல்லற தர்மம் &amp; அதிவேக முக்திப் பாதை</div>
               </div>
             </a>
             <a href="irai-isai-virundhu.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
@@ -783,11 +791,11 @@ def build_grade_coursebook(g, data):
     <div class="hero-banner">
       <div class="sacred-tag">
         <span class="wbs-code">WBS G{g:02d}</span>
-        📖 {data['grade_tamil']} • பாடநூல் &amp; சுயகற்றல் பயிற்சி நெறி 📖
+        🌿 {data['grade_tamil']} • வாழ்வியல் நெறி &amp; இல்லற தர்மப் பாடநூல் 🌿
       </div>
-      <h1>சைவ நெறி — {data['grade_tamil']} ({data['grade_eng']})</h1>
+      <h1>வாழ்வியல் நெறி — {data['grade_tamil']} ({data['grade_eng']})</h1>
       <h2>Vedic &amp; Saiva Dharmic Living Coursebook — {data['age_group']}</h2>
-      <div class="verse-quote">"{data['verse_quote']}"</div>
+      <div class="verse-quote">"அறத்தாற்றின் இல்வாழ்க்கை ஆற்றின் புறத்தாற்றின் போஒய்ப் பெறுவ தெவன்?" — திருக்குறள் 46</div>
       <p class="hero-desc">
         {data['hero_desc']}
       </p>
@@ -796,9 +804,9 @@ def build_grade_coursebook(g, data):
     <!-- Course Metadata Bar -->
     <div class="course-header-meta">
       <div class="course-meta-badge"><span class="wbs-code">WBS G{g:02d}</span> நிலை: <strong>{data['age_group']}</strong></div>
-      <div class="course-meta-badge">📚 பாடநெறி: <strong>சைவ நெறி &amp; வேத வாழ்வியல்</strong></div>
+      <div class="course-meta-badge">🌿 பாடநெறி: <strong>வாழ்வியல் நெறி &amp; உன்னத இல்லற தர்மம்</strong></div>
       <div class="course-meta-badge">🧩 அலகுகள்: <strong>{total_units} விரிவான அத்தியாயங்கள்</strong></div>
-      <div class="course-meta-badge">🎨 காட்சி வரைபடங்கள்: <strong>WBS குறியீடுகளுடன் உண்டு</strong></div>
+      <div class="course-meta-badge">👑 லட்சியம்: <strong>சான்றாண்மை &amp; இல்லற வழி முக்தி</strong></div>
     </div>
 
     <!-- Quick Grade Switcher Bar -->
@@ -820,9 +828,9 @@ def build_grade_coursebook(g, data):
       <aside class="course-sidebar dedicated-sub-sidebar" id="courseSidebar">
         <div class="sidebar-header">
           <div class="dedicated-sub-header">
-            <span class="dedicated-group-pill">🎓 கல்வி நெறி (Academy Sub-menu)</span>
+            <span class="dedicated-group-pill">🌿 வாழ்வியல் நெறி (Dharmic Living)</span>
           </div>
-          <span class="sidebar-grade-badge">{data['grade_tamil']} பாடநெறி</span>
+          <span class="sidebar-grade-badge">{data['grade_tamil']} வாழ்வியல் நெறி</span>
           <h3 class="sidebar-title">பாடப் பொருளடக்கம்</h3>
           <p class="sidebar-sub">அத்தியாயங்கள் &amp; உட்பிரிவுகள் (Sections)</p>
         </div>
@@ -878,10 +886,10 @@ def build_grade_coursebook(g, data):
         <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">அன்பே சிவம் • யாதும் ஊரே யாவரும் கேளிர் • ஏகன் அநேகன்</p>
       </div>
       <div class="footer-col">
-        <h4>சைவ நெறி கல்வி &amp; பாடங்கள்</h4>
+        <h4>வாழ்வியல் நெறி &amp; பாடங்கள்</h4>
         <ul class="footer-links">
-          <li><a href="kalvi.html">சைவ நெறி கல்வித் தளம் (Grades 1 - 12)</a></li>
-          <li><a href="tharam-1.html">தரம் 1 — 60 பாடப் படங்கள் &amp; நூல்கள்</a></li>
+          <li><a href="kalvi.html">வாழ்வியல் மையம் (Grades 1 - 12)</a></li>
+          <li><a href="tharam-1.html">தரம் 1 — பாலப் பருவ வாழ்வியல் நெறி</a></li>
           <li><a href="tharam-2.html">தரம் 2 — சிவ சின்னங்கள் &amp; ஆலய வழிபாடு</a></li>
           <li><a href="tharam-6.html">தரம் 6 — பதி-பசு-பாசம் &amp; திருமுறைகள்</a></li>
           <li><a href="tharam-10.html">தரம் 10 — சைவ சித்தாந்தம் (O/L)</a></li>

@@ -891,20 +891,20 @@ function resolvePageContext() {
 
   const contextMap = {
     'index.html': { root: 'முகப்பு', title: 'ஆன்மீகப் பெருவெளி', desc: '580 பக்தி இசை வெளியீடுகள்' },
-    'kalvi.html': { root: 'கல்வி', title: 'சைவ நெறி பாடநெறி', desc: 'தரம் 1 முதல் 12 வரையிலான முழுமைப் பாடத்திட்டம்' },
-    'virtues.html': { root: 'கல்வி', title: 'அகர வரிசை நற்பண்பு நெறிமுறை', desc: '30+ நற்பண்புகள் • 3 நிலைகள்' },
-    'tharam-1.html': { root: 'கல்வி', title: 'தரம் 1 (Grade 1)', desc: 'அடிப்படை சைவ நெறி & நற்பண்புகள்' },
-    'tharam-2.html': { root: 'கல்வி', title: 'தரம் 2 (Grade 2)', desc: 'இறைவணக்கம் & இல்லற தர்மம்' },
-    'tharam-3.html': { root: 'கல்வி', title: 'தரம் 3 (Grade 3)', desc: 'நல்வழி & ஆசாரக் கல்வி' },
-    'tharam-4.html': { root: 'கல்வி', title: 'தரம் 4 (Grade 4)', desc: 'கொன்றை வேந்தன் & ஒழுக்கம்' },
-    'tharam-5.html': { root: 'கல்வி', title: 'தரம் 5 (Grade 5)', desc: 'பன்னிரு திருமுறை அறிமுகம்' },
-    'tharam-6.html': { root: 'கல்வி', title: 'தரம் 6 (Grade 6)', desc: 'சைவ சித்தாந்த ஆரம்ப நெறி' },
-    'tharam-7.html': { root: 'கல்வி', title: 'தரம் 7 (Grade 7)', desc: 'திருமுறைகள் & நாயன்மார் வரலாறு' },
-    'tharam-8.html': { root: 'கல்வி', title: 'தரம் 8 (Grade 8)', desc: 'அட்ட வீரட்டம் & ஆலய தத்துவம்' },
-    'tharam-9.html': { root: 'கல்வி', title: 'தரம் 9 (Grade 9)', desc: 'சைவ சித்தாந்த சாத்திரங்கள்' },
-    'tharam-10.html': { root: 'கல்வி', title: 'தரம் 10 (Grade 10)', desc: 'O/L சைவ நன்னெறி முழுமைப் பாடநெறி' },
-    'tharam-11.html': { root: 'கல்வி', title: 'தரம் 11 (Grade 11)', desc: 'A/L உயர்தர சைவ சித்தாந்தம்' },
-    'tharam-12.html': { root: 'கல்வி', title: 'தரம் 12 (Grade 12)', desc: 'A/L தத்துவ ஆய்வு & சிவபோக நிலை' },
+    'kalvi.html': { root: 'வாழ்வியல்', title: 'வாழ்வியல் நெறி & இல்லற தர்மம்', desc: 'தரம் 1 முதல் 12 வரையிலான உன்னத இல்லற தர்மம் & சான்றாண்மை' },
+    'virtues.html': { root: 'வாழ்வியல்', title: 'அகர வரிசை நற்பண்பு நெறிமுறை', desc: '30+ நற்பண்புகள் • 4 வாழ்வியல் பருவங்கள்' },
+    'tharam-1.html': { root: 'வாழ்வியல்', title: 'தரம் 1 (Grade 1)', desc: 'பாலப் பருவ அன்பு & இல்லறத் தொடக்கப் பழக்கங்கள்' },
+    'tharam-2.html': { root: 'வாழ்வியல்', title: 'தரம் 2 (Grade 2)', desc: 'சிவ சின்னங்கள், பக்தி & இல்லற தர்மம்' },
+    'tharam-3.html': { root: 'வாழ்வியல்', title: 'தரம் 3 (Grade 3)', desc: 'நல்வழி, ஒழுக்கம் & ஆசாரக் கல்வி' },
+    'tharam-4.html': { root: 'வாழ்வியல்', title: 'தரம் 4 (Grade 4)', desc: 'கொன்றை வேந்தன் & இல்லற நன்னெறி' },
+    'tharam-5.html': { root: 'வாழ்வியல்', title: 'தரம் 5 (Grade 5)', desc: 'திருமுறைகள் & சுற்றந்தழால் தர்மம்' },
+    'tharam-6.html': { root: 'வாழ்வியல்', title: 'தரம் 6 (Grade 6)', desc: 'சைவ சித்தாந்த ஆரம்ப நெறி & கடமை உணர்வு' },
+    'tharam-7.html': { root: 'வாழ்வியல்', title: 'தரம் 7 (Grade 7)', desc: 'திருமுறைகள் & நாயன்மார் தியாக வரலாறு' },
+    'tharam-8.html': { root: 'வாழ்வியல்', title: 'தரம் 8 (Grade 8)', desc: 'பொறையுடைமை, ஆசிரம தர்மம் & ஆலய தத்துவம்' },
+    'tharam-9.html': { root: 'வாழ்வியல்', title: 'தரம் 9 (Grade 9)', desc: 'சான்றாண்மை, புலனடக்கம் & குடும்ப மாண்பு' },
+    'tharam-10.html': { root: 'வாழ்வியல்', title: 'தரம் 10 (Grade 10)', desc: 'O/L வாழ்வியல் நன்னெறி & இல்லற மாண்பு' },
+    'tharam-11.html': { root: 'வாழ்வியல்', title: 'தரம் 11 (Grade 11)', desc: 'A/L உயர்தர தத்துவ ஆய்வு & சால்பு' },
+    'tharam-12.html': { root: 'வாழ்வியல்', title: 'தரம் 12 (Grade 12)', desc: 'உன்னத இல்லற தர்மம் வழி ஆத்ம நிர்வாணம் / முக்தி' },
     'saiva-neri.html': { root: 'சைவ நெறி', title: 'பன்னிரு திருமுறைகள்', desc: '172 சிவத் திருப்பதிகங்கள் & ருத்ரம்' },
     'murugan.html': { root: 'வழிபாட்டு நெறி', title: 'முருகன் (Kaumaram)', desc: 'கந்த சஷ்டி, திருப்புகழ் & கானங்கள்' },
     'sakthi.html': { root: 'வழிபாட்டு நெறி', title: 'சக்தி (Shaktham)', desc: 'அபிராமி அந்தாதி & லலிதா போற்றிகள்' },
@@ -913,7 +913,7 @@ function resolvePageContext() {
     'thirukkural.html': { root: 'தமிழ்மறை', title: 'திருக்குறள் (Thirukkural)', desc: '1330 அருங்குறள்கள் & இசைப்பாடல்கள்' },
     'sanmargam.html': { root: 'சன்மார்க்கம்', title: 'வள்ளலார் சுத்த சன்மார்க்கம்', desc: 'திருவருட்பா & ஆன்மநேய ஒருமைப்பாடு' },
     'irai-isai-virundhu.html': { root: 'இசை', title: 'இறை இசை விருந்து', desc: 'ஆன்மீக பக்தி ஆல்பங்கள்' },
-    'syllabus.html': { root: 'கல்வி', title: 'முழுமையான பாடத்திட்டம்', desc: 'வேத & சைவ நெறி கல்வி அமைப்பு' },
+    'syllabus.html': { root: 'வாழ்வியல்', title: 'முழுமையான பாடத்திட்டம்', desc: 'வேத & சைவ வாழ்வியல் நெறி அமைப்பு' },
     'classes.html': { root: 'வகுப்புகள்', title: 'பாடநெறி அட்டவணை', desc: 'குருகுல கல்வி வகுப்புகள்' },
     'about.html': { root: 'காஞ்சி மகா பெரியவா', title: 'தெய்வத்தின் குரல் & தரிசனம்', desc: 'அருளுரைகள் & வழிகாட்டல்' }
   };
@@ -945,19 +945,20 @@ function getContextTabsForPage() {
       { id: 'tab-sadhana', icon: '🪔', label: 'தினசரி சாதனை', action: "scrollToSection('sadhanaBox')" },
       ...(prevGrade ? [{ id: 'tab-prev', icon: '⏪', label: `தரம் ${gradeNum - 1}`, href: prevGrade }] : []),
       ...(nextGrade ? [{ id: 'tab-next', icon: '⏩', label: `தரம் ${gradeNum + 1}`, href: nextGrade }] : []),
-      { id: 'tab-all-grades', icon: '🎓', label: 'அனைத்து தரங்கள்', href: 'kalvi.html' }
+      { id: 'tab-all-grades', icon: '🌿', label: '12 வாழ்வியல் நிலைகள்', href: 'kalvi.html' }
     ];
   }
 
   // 2. Curriculum Hub (kalvi.html)
   if (filename === 'kalvi.html') {
     return [
-      { id: 'tab-overview', icon: '🏛️', label: 'பாடநெறி அறிமுகம்', action: "scrollToSection('kalviOverview')", active: true },
-      { id: 'tab-virtues', icon: '🔤', label: 'அகர வரிசை நற்பண்புகள்', href: 'virtues.html' },
-      { id: 'tab-tier1', icon: '🌟', label: 'தரம் 1-4 (தொடக்க நிலை)', action: "scrollToSection('tier1Section')" },
-      { id: 'tab-tier2', icon: '🪔', label: 'தரம் 5-8 (இடைநிலை)', action: "scrollToSection('tier2Section')" },
-      { id: 'tab-tier3', icon: '🔱', label: 'தரம் 9-12 (உயர்நிலை)', action: "scrollToSection('tier3Section')" },
-      { id: 'tab-syllabus', icon: '📚', label: 'முழு பாடத்திட்டம்', href: 'syllabus.html' }
+      { id: 'tab-overview', icon: '🌿', label: 'வாழ்வியல் நெறி அறிமுகம்', action: "scrollToSection('kalviOverview')", active: true },
+      { id: 'tab-dharma', icon: '🏡', label: 'உன்னத இல்லற தர்மம்', action: "scrollToSection('dharmaPrinciples')" },
+      { id: 'tab-stages', icon: '🔤', label: '4 வாழ்வியல் பருவங்கள்', action: "scrollToSection('virtue-mapping')" },
+      { id: 'tab-grades', icon: '📚', label: '12 வாழ்வியல் நிலைகள்', action: "scrollToSection('gradesPortalSection')" },
+      { id: 'tab-school', icon: '🏫', label: 'இணையப் பள்ளி', href: 'school.html' },
+      { id: 'tab-higher', icon: '🔬', label: 'உயர்கல்வி', href: 'higher-studies.html' },
+      { id: 'tab-syllabus', icon: '📜', label: 'முழு பாடத்திட்டம்', href: 'syllabus.html' }
     ];
   }
 
@@ -965,10 +966,10 @@ function getContextTabsForPage() {
   if (filename === 'virtues.html') {
     return [
       { id: 'tab-all', icon: '🌟', label: 'அனைத்து நற்பண்புகள் (30+)', action: "filterVirtues('all')", active: true },
-      { id: 'tab-t1', icon: '🟢', label: 'Tier 1: அறிதல் (தரம் 1-4)', action: "filterVirtues('tier-1')" },
-      { id: 'tab-t2', icon: '🟡', label: 'Tier 2: செய்தல் (தரம் 5-8)', action: "filterVirtues('tier-2')" },
-      { id: 'tab-t3', icon: '🔴', label: 'Tier 3: காத்தல் (தரம் 9-12)', action: "filterVirtues('tier-3')" },
-      { id: 'tab-kalvi', icon: '🎓', label: 'கல்வித் தளம்', href: 'kalvi.html' }
+      { id: 'tab-t1', icon: '🟢', label: 'பருவம் 1: அறிதல் (தரம் 1-4)', action: "filterVirtues('tier-1')" },
+      { id: 'tab-t2', icon: '🟡', label: 'பருவம் 2: செய்தல் (தரம் 5-8)', action: "filterVirtues('tier-2')" },
+      { id: 'tab-t3', icon: '🔴', label: 'பருவம் 3: காத்தல் (தரம் 9-12)', action: "filterVirtues('tier-3')" },
+      { id: 'tab-kalvi', icon: '🌿', label: 'வாழ்வியல் மையம்', href: 'kalvi.html' }
     ];
   }
 
@@ -1041,14 +1042,14 @@ function getContextTabsForPage() {
       { id: 'tab-full-syl', icon: '📚', label: 'முழு பாடத்திட்டம்', href: 'syllabus.html', active: filename === 'syllabus.html' },
       { id: 'tab-classes', icon: '🏛️', label: 'வகுப்புகள் அட்டவணை', href: 'classes.html', active: filename === 'classes.html' },
       { id: 'tab-virtues-map', icon: '🔤', label: 'நற்பண்பு நெறிமுறை', href: 'virtues.html' },
-      { id: 'tab-grade-portal', icon: '🎓', label: '12 தரங்கள்', href: 'kalvi.html' }
+      { id: 'tab-grade-portal', icon: '🌿', label: '12 வாழ்வியல் நிலைகள்', href: 'kalvi.html' }
     ];
   }
 
   // Default fallback
   return [
     { id: 'tab-home', icon: '🏠', label: 'முகப்பு', href: 'index.html' },
-    { id: 'tab-kalvi', icon: '🎓', label: 'கல்வி', href: 'kalvi.html' },
+    { id: 'tab-kalvi', icon: '🌿', label: 'வாழ்வியல் நெறி', href: 'kalvi.html' },
     { id: 'tab-virtues', icon: '🔤', label: 'நற்பண்புகள்', href: 'virtues.html' },
     { id: 'tab-saiva', icon: '🕉️', label: 'சைவ நெறி', href: 'saiva-neri.html' }
   ];
@@ -1193,7 +1194,7 @@ function mountAppShell() {
 
   const navItems = [
     { href: 'index.html', icon: '🏠', label: 'முகப்பு' },
-    { href: 'kalvi.html', icon: '🎓', label: 'கல்வி நெறி' },
+    { href: 'kalvi.html', icon: '🌿', label: 'வாழ்வியல் நெறி' },
     { href: 'virtues.html', icon: '🔤', label: 'நற்பண்புகள்' },
     { href: 'saiva-neri.html', icon: '🕉️', label: 'சைவ நெறி' },
     { href: 'irai-isai-virundhu.html', icon: '🎵', label: 'இறை இசை' },
