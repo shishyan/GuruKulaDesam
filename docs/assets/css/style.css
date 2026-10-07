@@ -4847,3 +4847,148 @@ body.font-mukta {
   width: 100%;
   box-sizing: border-box;
 }
+
+/* -------------------------------------------------------------------------- */
+/* GROUPED SIDEBAR NAVIGATION WITH FLYOUT & ACCORDION (MAX 6-7 ITEMS)         */
+/* -------------------------------------------------------------------------- */
+.strip-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.strip-item.strip-has-sub {
+  position: relative;
+  padding-right: 14px;
+}
+
+.strip-sub-indicator {
+  display: none;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  transition: transform 0.2s ease, color 0.2s ease;
+  margin-left: auto;
+}
+
+.left-strip-bar.expanded .strip-sub-indicator {
+  display: inline-block;
+}
+
+/* Collapsed Sidebar Flyout (Desktop) */
+.left-strip-bar:not(.expanded) .strip-item.strip-has-sub::after {
+  display: none !important;
+}
+
+.left-strip-bar:not(.expanded) .strip-sub-menu {
+  display: none;
+  position: absolute;
+  left: 62px;
+  top: 0;
+  min-width: 250px;
+  background: rgba(11, 17, 30, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 14px;
+  padding: 8px 6px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), 0 0 20px rgba(56, 189, 248, 0.15);
+  z-index: 1000;
+}
+
+.left-strip-bar:not(.expanded) .strip-group:hover .strip-sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  animation: stripFlyoutIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes stripFlyoutIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Expanded Sidebar Inline Accordion Sub-menu */
+.left-strip-bar.expanded .strip-sub-menu {
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  margin: 2px 6px 8px 24px;
+  padding: 4px 0 4px 10px;
+  border-left: 2px solid rgba(56, 189, 248, 0.3);
+}
+
+.left-strip-bar.expanded .strip-group.active .strip-sub-menu,
+.left-strip-bar.expanded .strip-group:hover .strip-sub-menu,
+.left-strip-bar.expanded .strip-group.open .strip-sub-menu {
+  display: flex;
+}
+
+.left-strip-bar.expanded .strip-group.active .strip-sub-indicator,
+.left-strip-bar.expanded .strip-group:hover .strip-sub-indicator {
+  transform: rotate(180deg);
+  color: #38bdf8;
+}
+
+/* Sub-menu Items Styling */
+.strip-sub-header {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 10px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.strip-sub-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+
+.strip-sub-item:hover {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  transform: translateX(3px);
+}
+
+.strip-sub-item.active {
+  background: rgba(52, 211, 153, 0.14);
+  color: #34d399;
+  font-weight: 700;
+  border-left: 2px solid #34d399;
+}
+
+.strip-sub-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* Mobile Off-canvas Drawer Sub-menus */
+@media (max-width: 991px) {
+  .left-strip-bar.mobile-open .strip-sub-menu {
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+    margin: 2px 6px 8px 24px;
+    padding: 4px 0 4px 10px;
+    border-left: 2px solid rgba(56, 189, 248, 0.3);
+  }
+  .left-strip-bar.mobile-open .strip-group.active .strip-sub-menu,
+  .left-strip-bar.mobile-open .strip-group.open .strip-sub-menu {
+    display: flex;
+  }
+  .left-strip-bar.mobile-open .strip-sub-indicator {
+    display: inline-block;
+  }
+}

@@ -1396,3 +1396,21 @@ if (document.readyState === 'loading') {
 } else {
   mountAppShell();
 }
+
+// Accordion support for grouped sidebar submenus
+document.addEventListener('click', (e) => {
+  const subToggle = e.target.closest('.strip-item.strip-has-sub');
+  if (subToggle) {
+    const strip = document.getElementById('leftStripBar');
+    const isExpanded = strip && (strip.classList.contains('expanded') || strip.classList.contains('mobile-open'));
+    if (isExpanded) {
+      // Toggle accordion open/close on mobile or expanded sidebar
+      const group = subToggle.closest('.strip-group');
+      if (group) {
+        const wasOpen = group.classList.contains('open');
+        document.querySelectorAll('.strip-group').forEach(g => { if (g !== group) g.classList.remove('open'); });
+        group.classList.toggle('open', !wasOpen);
+      }
+    }
+  }
+});

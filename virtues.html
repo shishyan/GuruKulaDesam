@@ -55,67 +55,93 @@
       </button>
     </div>
 
-    <nav class="strip-nav-list" id="stripNavList">
-      <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
-        <span class="strip-item-icon">🏠</span>
-        <span class="strip-item-label">முகப்பு</span>
-      </a>
-      <a href="kalvi.html" class="strip-item" data-tooltip="கல்வி நெறி">
-        <span class="strip-item-icon">🎓</span>
-        <span class="strip-item-label">கல்வி நெறி</span>
-      </a>
-      <a href="school.html" class="strip-item" data-tooltip="இணையப் பள்ளி">
-        <span class="strip-item-icon">🏫</span>
-        <span class="strip-item-label">இணையப் பள்ளி</span>
-      </a>
-      <a href="higher-studies.html" class="strip-item" data-tooltip="உயர்கல்வி">
-        <span class="strip-item-icon">🏛️</span>
-        <span class="strip-item-label">உயர்கல்வி</span>
-      </a>
-      <a href="virtues.html" class="strip-item active" data-tooltip="நற்பண்புகள்">
-        <span class="strip-item-icon">🔤</span>
-        <span class="strip-item-label">நற்பண்புகள்</span>
-      </a>
-      <a href="saiva-neri.html" class="strip-item" data-tooltip="சைவ நெறி">
-        <span class="strip-item-icon">🕉️</span>
-        <span class="strip-item-label">சைவ நெறி</span>
-      </a>
-      <a href="irai-isai-virundhu.html" class="strip-item" data-tooltip="இறை இசை">
-        <span class="strip-item-icon">🎵</span>
-        <span class="strip-item-label">இறை இசை</span>
-      </a>
-      <a href="thirukkural.html" class="strip-item" data-tooltip="திருக்குறள்">
-        <span class="strip-item-icon">📖</span>
-        <span class="strip-item-label">திருக்குறள்</span>
-      </a>
-      <a href="sanmargam.html" class="strip-item" data-tooltip="சன்மார்க்கம்">
-        <span class="strip-item-icon">🪔</span>
-        <span class="strip-item-label">சன்மார்க்கம்</span>
-      </a>
-      <a href="murugan.html" class="strip-item" data-tooltip="முருகன்">
-        <span class="strip-item-icon">🔱</span>
-        <span class="strip-item-label">முருகன்</span>
-      </a>
-      <a href="sakthi.html" class="strip-item" data-tooltip="சக்தி நெறி">
-        <span class="strip-item-icon">🌸</span>
-        <span class="strip-item-label">சக்தி நெறி</span>
-      </a>
-      <a href="vinayagar.html" class="strip-item" data-tooltip="விநாயகர்">
-        <span class="strip-item-icon">🐘</span>
-        <span class="strip-item-label">விநாயகர்</span>
-      </a>
-      <a href="vaishnava.html" class="strip-item" data-tooltip="வைணவம்">
-        <span class="strip-item-icon">🪷</span>
-        <span class="strip-item-label">வைணவம்</span>
-      </a>
-      <a href="syllabus.html" class="strip-item" data-tooltip="பாடத்திட்டம்">
-        <span class="strip-item-icon">📚</span>
-        <span class="strip-item-label">பாடத்திட்டம்</span>
-      </a>
-      <a href="about.html" class="strip-item" data-tooltip="பெரியவா">
-        <span class="strip-item-icon">🏛️</span>
-        <span class="strip-item-label">பெரியவா</span>
-      </a>
+        <nav class="strip-nav-list" id="stripNavList">
+
+      <!-- 1. முகப்பு (Home) -->
+      <div class="strip-group" data-group="home">
+        <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
+          <span class="strip-item-icon">🏠</span>
+          <span class="strip-item-label">முகப்பு</span>
+        </a>
+      </div>
+
+      <!-- 2. கல்வி நெறி (Curriculum & Academy) -->
+      <div class="strip-group active" data-group="kalvi">
+        <a href="kalvi.html" class="strip-item strip-has-sub active" data-tooltip="கல்வி நெறி">
+          <span class="strip-item-icon">🎓</span>
+          <span class="strip-item-label">கல்வி நெறி</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">கல்வி &amp; இணையப் பள்ளி</div>
+          <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon">🏛️</span><span>கல்வி மையம் (12 தரங்கள்)</span></a>
+          <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon">🏫</span><span>இணையப் பள்ளி போர்டல்</span></a>
+          <a href="higher-studies.html" class="strip-sub-item"><span class="strip-sub-icon">🔬</span><span>வேத-நவீன உயர்கல்வி</span></a>
+          <a href="tharam-1.html" class="strip-sub-item"><span class="strip-sub-icon">📖</span><span>தரம் 1 முதல் 12 பாடங்கள்</span></a>
+          <a href="virtues.html" class="strip-sub-item active"><span class="strip-sub-icon">🔤</span><span>அகர வரிசை நற்பண்புகள்</span></a>
+          <a href="syllabus.html" class="strip-sub-item"><span class="strip-sub-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>
+        </div>
+      </div>
+
+      <!-- 3. சைவ நெறி & தெய்வங்கள் (Saiva Neri & Deities) -->
+      <div class="strip-group" data-group="saivam">
+        <a href="saiva-neri.html" class="strip-item strip-has-sub" data-tooltip="சைவ நெறி">
+          <span class="strip-item-icon">🕉️</span>
+          <span class="strip-item-label">சைவ நெறி</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">சைவ நெறி &amp; தெய்வங்கள்</div>
+          <a href="saiva-neri.html" class="strip-sub-item"><span class="strip-sub-icon">🔱</span><span>சைவ சித்தாந்தம் &amp; நெறி</span></a>
+          <a href="vinayagar.html" class="strip-sub-item"><span class="strip-sub-icon">🐘</span><span>முழுமுதற் கடவுள் விநாயகர்</span></a>
+          <a href="murugan.html" class="strip-sub-item"><span class="strip-sub-icon">🪶</span><span>தமிழ் தெய்வம் முருகன்</span></a>
+          <a href="sakthi.html" class="strip-sub-item"><span class="strip-sub-icon">🌸</span><span>அம்பிகை சக்தி நெறி</span></a>
+          <a href="vaishnava.html" class="strip-sub-item"><span class="strip-sub-icon">🪷</span><span>அரங்கன் &amp; கிருஷ்ணர் வைணவம்</span></a>
+        </div>
+      </div>
+
+      <!-- 4. இறை இசை விருந்து (Devotional Music) -->
+      <div class="strip-group" data-group="isai">
+        <a href="irai-isai-virundhu.html" class="strip-item strip-has-sub" data-tooltip="இறை இசை">
+          <span class="strip-item-icon">🎵</span>
+          <span class="strip-item-label">இறை இசை</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">இறை இசை &amp; பாடல்கள்</div>
+          <a href="irai-isai-virundhu.html" class="strip-sub-item"><span class="strip-sub-icon">🎶</span><span>இறை இசை விருந்து (580)</span></a>
+          <a href="youtube.html" class="strip-sub-item"><span class="strip-sub-icon">▶️</span><span>காணொளிகள் களஞ்சியம்</span></a>
+        </div>
+      </div>
+
+      <!-- 5. அறநெறி & தத்துவம் (Dharma & Scripture) -->
+      <div class="strip-group" data-group="dharma">
+        <a href="thirukkural.html" class="strip-item strip-has-sub" data-tooltip="அறநெறி">
+          <span class="strip-item-icon">📖</span>
+          <span class="strip-item-label">அறநெறி</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">அறநெறி &amp; வாழ்வியல்</div>
+          <a href="thirukkural.html" class="strip-sub-item"><span class="strip-sub-icon">📜</span><span>திருக்குறள் (1330 குறள்கள்)</span></a>
+          <a href="sanmargam.html" class="strip-sub-item"><span class="strip-sub-icon">🪔</span><span>சுத்த சன்மார்க்கம் (வள்ளலார்)</span></a>
+        </div>
+      </div>
+
+      <!-- 6. குருவருள் & அறிமுகம் (Guru & About) -->
+      <div class="strip-group" data-group="about">
+        <a href="about.html" class="strip-item strip-has-sub" data-tooltip="குருவருள்">
+          <span class="strip-item-icon">🏛️</span>
+          <span class="strip-item-label">குருவருள்</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">குருவருள் &amp; தகவல்</div>
+          <a href="about.html" class="strip-sub-item"><span class="strip-sub-icon">🙏</span><span>மகா பெரியவா அருளுரைகள்</span></a>
+          <a href="google-site.html" class="strip-sub-item"><span class="strip-sub-icon">🌐</span><span>கூகிள் தளம் நேரடி இணைப்பு</span></a>
+        </div>
+      </div>
+
     </nav>
 
     <div class="strip-footer-dock">

@@ -31,7 +31,7 @@ from curriculum_data_primary_middle import GRADES_2_TO_6
 from curriculum_data_secondary_advanced import GRADES_7_TO_12
 from visual_diagrams import get_diagram_for_topic
 from curriculum_enricher import enrich_unit
-from curriculum_fusion import get_fusion_for_unit
+from curriculum_fusion import FUSION_DATA
 
 # Combine all grades
 ALL_GRADES = {}
@@ -137,10 +137,6 @@ def build_grade_coursebook(g, data):
             <a href="#u{u['num']}-audio" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-audio')">
               <span class="wbs-sidebar-code">{g}.{u['num']}.10</span>
               <span>🎵 பதிக இசை</span>
-            </a>
-            <a href="#u{u['num']}-fusion" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-fusion')">
-              <span class="wbs-sidebar-code">{g}.{u['num']}.11</span>
-              <span>🌐 அறிவியல்-வேத சங்கமம்</span>
             </a>
           </div>
         </div>
@@ -351,57 +347,6 @@ def build_grade_coursebook(g, data):
             else:
                 next_btn = f"""<a href="{next_link}" class="lesson-nav-btn lesson-nav-next">{next_label}</a>"""
 
-        # Modern Science & Vedic Fusion (WBS {g}.{u['num']}.11)
-        fusion = get_fusion_for_unit(g, u['num'], u['title'])
-        fusion_html = f"""
-        <div id="u{u['num']}-fusion" class="school-fusion-card" style="margin: 28px 0; background: linear-gradient(135deg, rgba(14, 25, 45, 0.95), rgba(18, 30, 54, 0.9)); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 26px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
-          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid rgba(56, 189, 248, 0.2); padding-bottom:12px;">
-            <div style="display:flex; align-items:center; gap:8px;">
-              <span class="wbs-code" style="background:rgba(56, 189, 248, 0.15); color:#38bdf8; border-color:rgba(56, 189, 248, 0.4);">WBS {g}.{u['num']}.11</span>
-              <h4 style="color:#ffffff; font-size:1.25rem; font-weight:700; margin:0; display:flex; align-items:center; gap:8px;">
-                <span>🌐 நவீன அறிவியல் &amp; வேதக் கருத்துக்களின் சங்கமம்</span>
-              </h4>
-            </div>
-            <span style="font-size:0.78rem; font-weight:700; color:#38bdf8; background:rgba(56, 189, 248, 0.1); border:1px solid rgba(56, 189, 248, 0.3); padding:4px 12px; border-radius:20px; letter-spacing:0.5px;">
-              21st-CENTURY STEM &amp; VEDIC FUSION
-            </span>
-          </div>
-          
-          <p style="color:#94a3b8; font-size:0.92rem; margin-bottom:18px; line-height:1.6;">
-            தொன்மையான வேத-சித்தாந்த மெய்யறிவு நவீன உலகளாவிய அறிவியல் கோட்பாடுகள், நரம்பியல், சுற்றுச்சூழல் மற்றும் 21-ஆம் நூற்றாண்டு வாழ்வியல் திறன்களோடு எவ்வாறு முழுமையாகப் பொருந்தி வழிகாட்டுகிறது என்பதற்கான ஆய்வுப் பார்வை:
-          </p>
-
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:18px;">
-            <!-- Card 1: Science Correlation -->
-            <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(56, 189, 248, 0.2); border-left:3px solid #38bdf8; border-radius:10px; padding:16px;">
-              <div style="color:#38bdf8; font-size:0.95rem; font-weight:700; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
-                <span>🔬 அறிவியல் கோட்பாட்டு ஒப்பீடு</span>
-              </div>
-              <div style="color:#cbd5e1; font-size:0.9rem; line-height:1.7;">
-                {fusion['science_correlation']}
-              </div>
-            </div>
-
-            <!-- Card 2: 21st Century World Application -->
-            <div style="background:rgba(0, 0, 0, 0.35); border:1px solid rgba(45, 212, 191, 0.2); border-left:3px solid #2dd4bf; border-radius:10px; padding:16px;">
-              <div style="color:#2dd4bf; font-size:0.95rem; font-weight:700; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
-                <span>🚀 21-ஆம் நூற்றாண்டு உலகளாவிய பயன்பாடு</span>
-              </div>
-              <div style="color:#cbd5e1; font-size:0.9rem; line-height:1.7;">
-                {fusion['world_application']}
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Student Hands-on Living Lab / Inquiry -->
-          <div style="background:rgba(212, 175, 55, 0.06); border:1px solid rgba(212, 175, 55, 0.25); border-radius:10px; padding:14px 18px;">
-            <div style="color:var(--gold-soft); font-size:0.92rem; font-weight:700; margin-bottom:4px;">
-              {fusion['inquiry_lab']}
-            </div>
-          </div>
-        </div>
-        """
-
         panels_html += f"""
         <div class="lesson-unit-panel {active_class}" id="unit-panel-{u['num']}">
           <article class="lesson-card" id="unit-{u['num']}" style="background: rgba(18, 22, 28, 0.92); border: 1px solid var(--border-gold); border-radius: 18px; padding: 32px; margin-bottom: 30px; box-shadow: 0 10px 35px rgba(0,0,0,0.6);">
@@ -497,23 +442,6 @@ def build_grade_coursebook(g, data):
                 பாடலைக் கேட்க ↗
               </a>
             </div>
-            <!-- 11. Modern Science & Vedic Concepts Fusion -->
-            {fusion_html}
-
-            <!-- 12. Student LMS Completion Engine -->
-            <div class="lms-chapter-complete-bar" id="lms-box-{g}-{u['num']}">
-              <div>
-                <div style="color:#ffffff; font-weight:700; font-size:0.95rem; display:flex; align-items:center; gap:8px;">
-                  <span style="font-size:1.2rem;">🎓</span>
-                  <span>மாணவர் படிப்புப் பதிவு (Student Progress Tracker):</span>
-                </div>
-                <div style="color:#94a3b8; font-size:0.85rem; margin-top:2px;">இப்பாடத்தை முழுமையாகப் படித்து முடித்தவுடன் குறிக்கவும். உங்கள் இணையப் பள்ளி சான்றிதழுக்கு மதிப்பெண் சேரும்.</div>
-              </div>
-              <button type="button" class="lms-mark-btn" id="lms-btn-{g}-{u['num']}" onclick="toggleChapterCompletion({g}, {u['num']})">
-                <span class="lms-icon" id="lms-icon-{g}-{u['num']}">○</span>
-                <span class="lms-text" id="lms-text-{g}-{u['num']}">பாடம் முடிந்தது எனக் குறிக்கவும்</span>
-              </button>
-            </div>
 
             <!-- Navigation Stepper Footer -->
             <div class="lesson-nav-footer">
@@ -576,31 +504,6 @@ def build_grade_coursebook(g, data):
         </div>
         """
 
-    # Grade LMS Learning Progress Banner
-    grade_lms_banner = f"""
-    <div class="grade-lms-tracker-banner" style="background:linear-gradient(90deg, rgba(15,23,42,0.92), rgba(24,37,64,0.92)); border:1px solid rgba(56, 189, 248, 0.28); border-radius:14px; padding:14px 22px; margin-bottom:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; box-shadow:0 6px 20px rgba(0,0,0,0.4);">
-      <div style="display:flex; align-items:center; gap:14px;">
-        <div style="font-size:1.8rem; background:rgba(56, 189, 248, 0.12); width:46px; height:46px; display:flex; align-items:center; justify-content:center; border-radius:12px; border:1px solid rgba(56, 189, 248, 0.3);">🏫</div>
-        <div>
-          <div style="color:#ffffff; font-weight:700; font-size:1rem; display:flex; align-items:center; gap:8px;">
-            <span>குருகுல இணையப் பள்ளி — {data['grade_tamil']} கற்றல் முன்னேற்றம்</span>
-            <span class="wbs-code" style="font-size:0.75rem;">WBS G{g:02d}</span>
-          </div>
-          <div style="color:#94a3b8; font-size:0.85rem; margin-top:2px;" id="gradeProgressText-{g}">முன்னேற்றம்: கணக்கிடப்படுகிறது...</div>
-        </div>
-      </div>
-      <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
-        <div class="progress-bar-container" style="width:160px; height:10px; background:rgba(255,255,255,0.1); border-radius:10px; overflow:hidden;">
-          <div id="gradeProgressBar-{g}" style="height:100%; width:0%; background:linear-gradient(90deg, #38bdf8, #2dd4bf); transition:width 0.4s ease;"></div>
-        </div>
-        <span id="gradeProgressPercent-{g}" style="font-size:0.92rem; font-weight:800; color:#38bdf8;">0%</span>
-        <a href="school.html" class="sheet-btn sheet-btn-view" style="font-size:0.82rem; padding:6px 14px; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-          <span>பள்ளி போர்டல் ↗</span>
-        </a>
-      </div>
-    </div>
-    """
-
     # Assemble complete page HTML with the 2-Column Sidebar & Sections Layout
     html_content = f"""<!DOCTYPE html>
 <html lang="ta">
@@ -628,6 +531,7 @@ def build_grade_coursebook(g, data):
       <nav class="main-nav" id="mainNav">
         <a href="index.html" class="nav-link">முகப்பு</a>
         <a href="school.html" class="nav-link" style="color:#38bdf8; font-weight:700;">🏫 இணையப் பள்ளி</a>
+        <a href="higher-studies.html" class="nav-link" style="color:var(--gold-bright); font-weight:700;">🏛️ உயர்கல்வி</a>
         <a href="saiva-neri.html" class="nav-link">சைவ நெறி</a>
 
         <!-- Kalvi (Grades 1-12) Dropdown -->
@@ -642,6 +546,13 @@ def build_grade_coursebook(g, data):
               <div class="dropdown-item-content">
                 <div class="dropdown-item-title" style="color:#38bdf8;">குருகுல இணையப் பள்ளி (Online School Portal)</div>
                 <div class="dropdown-item-desc">வேத-அறிவியல் சங்கமம், போமோடோரோ தியான அறை &amp; சான்றிதழ்</div>
+              </div>
+            </a>
+            <a href="higher-studies.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
+              <span class="dropdown-item-icon">🏛️</span>
+              <div class="dropdown-item-content">
+                <div class="dropdown-item-title" style="color:var(--gold-bright);">வேதாந்த வித்யாபீடம் — உயர்கல்வி (Higher Studies)</div>
+                <div class="dropdown-item-desc">பிரஸ்தானத்ரயம், சம்ஸ்கிருத மூல சாத்திர பாஷ்யங்கள் &amp; பட்டயம்</div>
               </div>
             </a>
             <a href="kalvi.html" class="dropdown-item" style="grid-column: 1 / -1; border-bottom: 1px solid var(--border-subtle); margin-bottom: 4px;">
@@ -788,7 +699,6 @@ def build_grade_coursebook(g, data):
 
       <!-- Main Course Column -->
       <div class="course-main-column">
-        {grade_lms_banner}
         {panels_html}
       </div>
 
@@ -934,55 +844,6 @@ def build_grade_coursebook(g, data):
         document.body.style.overflow = '';
       }}
     }}
-
-    // Student LMS Progress Persistence
-    function toggleChapterCompletion(grade, unit) {{
-      var key = 'gkd_completed_' + grade + '_' + unit;
-      var isDone = localStorage.getItem(key) === 'true';
-      localStorage.setItem(key, isDone ? 'false' : 'true');
-      updateLmsButton(grade, unit, !isDone);
-      updateGradeProgress(grade, {len(units)});
-    }}
-
-    function updateLmsButton(grade, unit, done) {{
-      var btn = document.getElementById('lms-btn-' + grade + '-' + unit);
-      var icon = document.getElementById('lms-icon-' + grade + '-' + unit);
-      var text = document.getElementById('lms-text-' + grade + '-' + unit);
-      if (!btn) return;
-      if (done) {{
-        btn.style.background = 'rgba(45, 212, 191, 0.2)';
-        btn.style.borderColor = 'rgba(45, 212, 191, 0.6)';
-        btn.style.color = '#2dd4bf';
-        if (icon) icon.textContent = '✓';
-        if (text) text.textContent = 'நிறைவு செய்யப்பட்டது! (+50 XP)';
-      }} else {{
-        btn.style.background = 'rgba(56, 189, 248, 0.12)';
-        btn.style.borderColor = 'rgba(56, 189, 248, 0.4)';
-        btn.style.color = '#38bdf8';
-        if (icon) icon.textContent = '○';
-        if (text) text.textContent = 'பாடம் முடிந்தது எனக் குறிக்கவும்';
-      }}
-    }}
-
-    function updateGradeProgress(grade, totalUnits) {{
-      var doneCount = 0;
-      for (var u = 1; u <= totalUnits; u++) {{
-        var isDone = localStorage.getItem('gkd_completed_' + grade + '_' + u) === 'true';
-        updateLmsButton(grade, u, isDone);
-        if (isDone) doneCount++;
-      }}
-      var pct = Math.round((doneCount / totalUnits) * 100);
-      var bar = document.getElementById('gradeProgressBar-' + grade);
-      var pctEl = document.getElementById('gradeProgressPercent-' + grade);
-      var txtEl = document.getElementById('gradeProgressText-' + grade);
-      if (bar) bar.style.width = pct + '%';
-      if (pctEl) pctEl.textContent = pct + '%';
-      if (txtEl) txtEl.textContent = 'முன்னேற்றம்: ' + doneCount + ' / ' + totalUnits + ' அத்தியாயங்கள் நிறைவு';
-    }}
-
-    document.addEventListener('DOMContentLoaded', function() {{
-      updateGradeProgress({g}, {len(units)});
-    }});
   </script>
 </body>
 </html>

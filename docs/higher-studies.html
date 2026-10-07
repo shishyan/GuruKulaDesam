@@ -133,67 +133,93 @@
       </button>
     </div>
 
-    <nav class="strip-nav-list" id="stripNavList">
-      <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
-        <span class="strip-item-icon">🏠</span>
-        <span class="strip-item-label">முகப்பு</span>
-      </a>
-      <a href="kalvi.html" class="strip-item" data-tooltip="கல்வி நெறி">
-        <span class="strip-item-icon">🎓</span>
-        <span class="strip-item-label">கல்வி நெறி</span>
-      </a>
-      <a href="school.html" class="strip-item" data-tooltip="இணையப் பள்ளி">
-        <span class="strip-item-icon">🏫</span>
-        <span class="strip-item-label">இணையப் பள்ளி</span>
-      </a>
-      <a href="higher-studies.html" class="strip-item active" data-tooltip="உயர்கல்வி">
-        <span class="strip-item-icon">🏛️</span>
-        <span class="strip-item-label">உயர்கல்வி</span>
-      </a>
-      <a href="virtues.html" class="strip-item" data-tooltip="நற்பண்புகள்">
-        <span class="strip-item-icon">🔤</span>
-        <span class="strip-item-label">நற்பண்புகள்</span>
-      </a>
-      <a href="saiva-neri.html" class="strip-item" data-tooltip="சைவ நெறி">
-        <span class="strip-item-icon">🕉️</span>
-        <span class="strip-item-label">சைவ நெறி</span>
-      </a>
-      <a href="irai-isai-virundhu.html" class="strip-item" data-tooltip="இறை இசை">
-        <span class="strip-item-icon">🎵</span>
-        <span class="strip-item-label">இறை இசை</span>
-      </a>
-      <a href="thirukkural.html" class="strip-item" data-tooltip="திருக்குறள்">
-        <span class="strip-item-icon">📖</span>
-        <span class="strip-item-label">திருக்குறள்</span>
-      </a>
-      <a href="sanmargam.html" class="strip-item" data-tooltip="சன்மார்க்கம்">
-        <span class="strip-item-icon">🪔</span>
-        <span class="strip-item-label">சன்மார்க்கம்</span>
-      </a>
-      <a href="murugan.html" class="strip-item" data-tooltip="முருகன்">
-        <span class="strip-item-icon">🔱</span>
-        <span class="strip-item-label">முருகன்</span>
-      </a>
-      <a href="sakthi.html" class="strip-item" data-tooltip="சக்தி நெறி">
-        <span class="strip-item-icon">🌸</span>
-        <span class="strip-item-label">சக்தி நெறி</span>
-      </a>
-      <a href="vinayagar.html" class="strip-item" data-tooltip="விநாயகர்">
-        <span class="strip-item-icon">🐘</span>
-        <span class="strip-item-label">விநாயகர்</span>
-      </a>
-      <a href="vaishnava.html" class="strip-item" data-tooltip="வைணவம்">
-        <span class="strip-item-icon">🪷</span>
-        <span class="strip-item-label">வைணவம்</span>
-      </a>
-      <a href="syllabus.html" class="strip-item" data-tooltip="பாடத்திட்டம்">
-        <span class="strip-item-icon">📚</span>
-        <span class="strip-item-label">பாடத்திட்டம்</span>
-      </a>
-      <a href="about.html" class="strip-item" data-tooltip="பெரியவா">
-        <span class="strip-item-icon">🏛️</span>
-        <span class="strip-item-label">பெரியவா</span>
-      </a>
+        <nav class="strip-nav-list" id="stripNavList">
+
+      <!-- 1. முகப்பு (Home) -->
+      <div class="strip-group" data-group="home">
+        <a href="index.html" class="strip-item" data-tooltip="முகப்பு">
+          <span class="strip-item-icon">🏠</span>
+          <span class="strip-item-label">முகப்பு</span>
+        </a>
+      </div>
+
+      <!-- 2. கல்வி நெறி (Curriculum & Academy) -->
+      <div class="strip-group active" data-group="kalvi">
+        <a href="kalvi.html" class="strip-item strip-has-sub active" data-tooltip="கல்வி நெறி">
+          <span class="strip-item-icon">🎓</span>
+          <span class="strip-item-label">கல்வி நெறி</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">கல்வி &amp; இணையப் பள்ளி</div>
+          <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon">🏛️</span><span>கல்வி மையம் (12 தரங்கள்)</span></a>
+          <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon">🏫</span><span>இணையப் பள்ளி போர்டல்</span></a>
+          <a href="higher-studies.html" class="strip-sub-item active"><span class="strip-sub-icon">🔬</span><span>வேத-நவீன உயர்கல்வி</span></a>
+          <a href="tharam-1.html" class="strip-sub-item"><span class="strip-sub-icon">📖</span><span>தரம் 1 முதல் 12 பாடங்கள்</span></a>
+          <a href="virtues.html" class="strip-sub-item"><span class="strip-sub-icon">🔤</span><span>அகர வரிசை நற்பண்புகள்</span></a>
+          <a href="syllabus.html" class="strip-sub-item"><span class="strip-sub-icon">📚</span><span>முழு பாடத்திட்டம்</span></a>
+        </div>
+      </div>
+
+      <!-- 3. சைவ நெறி & தெய்வங்கள் (Saiva Neri & Deities) -->
+      <div class="strip-group" data-group="saivam">
+        <a href="saiva-neri.html" class="strip-item strip-has-sub" data-tooltip="சைவ நெறி">
+          <span class="strip-item-icon">🕉️</span>
+          <span class="strip-item-label">சைவ நெறி</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">சைவ நெறி &amp; தெய்வங்கள்</div>
+          <a href="saiva-neri.html" class="strip-sub-item"><span class="strip-sub-icon">🔱</span><span>சைவ சித்தாந்தம் &amp; நெறி</span></a>
+          <a href="vinayagar.html" class="strip-sub-item"><span class="strip-sub-icon">🐘</span><span>முழுமுதற் கடவுள் விநாயகர்</span></a>
+          <a href="murugan.html" class="strip-sub-item"><span class="strip-sub-icon">🪶</span><span>தமிழ் தெய்வம் முருகன்</span></a>
+          <a href="sakthi.html" class="strip-sub-item"><span class="strip-sub-icon">🌸</span><span>அம்பிகை சக்தி நெறி</span></a>
+          <a href="vaishnava.html" class="strip-sub-item"><span class="strip-sub-icon">🪷</span><span>அரங்கன் &amp; கிருஷ்ணர் வைணவம்</span></a>
+        </div>
+      </div>
+
+      <!-- 4. இறை இசை விருந்து (Devotional Music) -->
+      <div class="strip-group" data-group="isai">
+        <a href="irai-isai-virundhu.html" class="strip-item strip-has-sub" data-tooltip="இறை இசை">
+          <span class="strip-item-icon">🎵</span>
+          <span class="strip-item-label">இறை இசை</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">இறை இசை &amp; பாடல்கள்</div>
+          <a href="irai-isai-virundhu.html" class="strip-sub-item"><span class="strip-sub-icon">🎶</span><span>இறை இசை விருந்து (580)</span></a>
+          <a href="youtube.html" class="strip-sub-item"><span class="strip-sub-icon">▶️</span><span>காணொளிகள் களஞ்சியம்</span></a>
+        </div>
+      </div>
+
+      <!-- 5. அறநெறி & தத்துவம் (Dharma & Scripture) -->
+      <div class="strip-group" data-group="dharma">
+        <a href="thirukkural.html" class="strip-item strip-has-sub" data-tooltip="அறநெறி">
+          <span class="strip-item-icon">📖</span>
+          <span class="strip-item-label">அறநெறி</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">அறநெறி &amp; வாழ்வியல்</div>
+          <a href="thirukkural.html" class="strip-sub-item"><span class="strip-sub-icon">📜</span><span>திருக்குறள் (1330 குறள்கள்)</span></a>
+          <a href="sanmargam.html" class="strip-sub-item"><span class="strip-sub-icon">🪔</span><span>சுத்த சன்மார்க்கம் (வள்ளலார்)</span></a>
+        </div>
+      </div>
+
+      <!-- 6. குருவருள் & அறிமுகம் (Guru & About) -->
+      <div class="strip-group" data-group="about">
+        <a href="about.html" class="strip-item strip-has-sub" data-tooltip="குருவருள்">
+          <span class="strip-item-icon">🏛️</span>
+          <span class="strip-item-label">குருவருள்</span>
+          <span class="strip-sub-indicator">▾</span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">குருவருள் &amp; தகவல்</div>
+          <a href="about.html" class="strip-sub-item"><span class="strip-sub-icon">🙏</span><span>மகா பெரியவா அருளுரைகள்</span></a>
+          <a href="google-site.html" class="strip-sub-item"><span class="strip-sub-icon">🌐</span><span>கூகிள் தளம் நேரடி இணைப்பு</span></a>
+        </div>
+      </div>
+
     </nav>
 
     <div class="strip-footer-dock">
@@ -217,6 +243,7 @@
       <nav class="context-tabs-nav" id="contextTabsNav" aria-label="Section Tabs">
         <button type="button" class="context-tab-pill active" onclick="scrollToId('vidyaHero')"><span class="context-tab-pill-icon">🏛️</span><span>அறிமுகம் &amp; பீடம்</span></button>
         <button type="button" class="context-tab-pill" onclick="scrollToId('tracksSection')"><span class="context-tab-pill-icon">📜</span><span>5 முதன்மைத் துறைகள்</span></button>
+        <button type="button" class="context-tab-pill" onclick="scrollToId('sanskritShastraHall')"><span class="context-tab-pill-icon">🕉️</span><span>சம்ஸ்கிருத மூல சாத்திர பாஷ்யக் களம்</span></button>
         <button type="button" class="context-tab-pill" onclick="scrollToId('glossarySection')"><span class="context-tab-pill-icon">🔍</span><span>சாத்திர கலைச்சொற்களஞ்சியம்</span></button>
         <button type="button" class="context-tab-pill" onclick="scrollToId('fellowshipSection')"><span class="context-tab-pill-icon">🎓</span><span>உயர் பட்டயச் சான்றிதழ்</span></button>
         <a href="school.html" class="context-tab-pill" style="border-color:rgba(56,189,248,0.4); color:#38bdf8;"><span class="context-tab-pill-icon">🏫</span><span>பள்ளி போர்டல்</span></a>
@@ -472,6 +499,318 @@
         </div>
       </article>
 
+    </section>
+
+    <!-- 2.5 SANSKRIT SHASTRA & BHASHYA RESEARCH HALL (சம்ஸ்கிருத மூல சாத்திர பாஷ்யக் களம்) -->
+    <section id="sanskritShastraHall" style="margin: 60px 0; background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%); border: 1px solid rgba(212, 175, 55, 0.4); border-radius: 20px; padding: 36px 30px; box-shadow: 0 16px 40px rgba(0,0,0,0.6);">
+      
+      <div style="text-align:center; max-width:900px; margin:0 auto 36px;">
+        <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(212,175,55,0.15); color:var(--gold-bright); border:1px solid rgba(212,175,55,0.35); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:5px 16px; border-radius:20px; margin-bottom:12px;">
+          <span>🕉️ Collegiate Shastra Repository • Higher Studies Portal</span>
+        </div>
+        <h2 style="color:#ffffff; font-size:2rem; font-weight:800; margin-bottom:12px;">
+          சம்ஸ்கிருத மூல சாத்திர பாஷ்யக் களம்
+        </h2>
+        <p style="color:#cbd5e1; font-size:0.96rem; line-height:1.8;">
+          பள்ளிப் பாடத்திட்டங்களிலிருந்து கல்லூரி மற்றும் உயர்கல்வி நிலைக்கு உயர்த்தப்பட்ட அதிமேம்பட்ட வேத, உபநிடத, கீதை மற்றும் சாங்கர பாஷ்ய மூலப் பிரமாணங்கள். தூய தேவநாகரி வடிவம், தமிழ் ஒலிபெயர்ப்பு, பதவுரை (Word-by-Word), அன்வயம் மற்றும் ஆதிசங்கரர் முதலான ஆச்சாரியர்களின் ஆழமான தத்துவ ஆய்வுரைகள்.
+        </p>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:28px;">
+
+        <!-- SHASTRA 1: SRI RUDRAM -->
+        <div class="vidya-track-card" style="border-left: 4px solid var(--gold);">
+          <div class="vidya-track-header">
+            <div>
+              <span class="wbs-code wbs-code-primary">SHASTRA 01</span>
+              <span style="font-size:0.82rem; color:var(--gold); font-weight:700; text-transform:uppercase; margin-left:8px;">கிருஷ்ண யஜுர்வேதம் — தைத்ரிய சம்ஹிதை</span>
+              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
+                ஸ்ரீ ருத்ர நமகம் &amp; சமகம் (Sri Rudram Namakam &amp; Chamakam)
+              </h3>
+            </div>
+            <span style="font-size:0.8rem; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.25); padding:5px 12px; border-radius:16px;">
+              தரம் 5-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
+            </span>
+          </div>
+
+          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
+            <div style="font-size:0.82rem; color:var(--gold); font-weight:700; margin-bottom:8px; text-transform:uppercase;">மூல தேவநாகரி மந்திரம் (Original Sanskrit Devanagari):</div>
+            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#fef08a; line-height:1.9; margin-bottom:12px;">
+              ॐ नमस्ते रुद्र मन्यव उतोत इषवे नमः ।<br>
+              नमस्ते अस्तु धन्वने बाहुभ्यामुत ते नमः ॥<br>
+              या ते रुद्र शिवा तनूरघोराऽपापकाशिनी ।<br>
+              तया नस्तनुवा शंतमया गिरिशन्ताभिचाकशीहि ॥
+            </div>
+            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
+            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
+              ஓம் நமஸ்தே ருத்ர மன்யவ உதோத இஷவே நம: |<br>
+              நமஸ்தே அஸ்து தன்வனே பாஹுப்யாம் உத தே நம: ||<br>
+              யா தே ருத்ர சிவா தனூ ரகோரா பாபகாசினீ |<br>
+              தயா நஸ் தனுவா சம்தமயா கிரிசந்தா பிசாகசீஹி ||
+            </div>
+          </div>
+
+          <div class="vidya-module-grid">
+            <div class="vidya-module-box">
+              <div class="vidya-module-title"><span>📖</span> பதவுரை &amp; அன்வயம் (Padartha Analysis)</div>
+              <div class="vidya-module-desc">
+                <strong>ருத்ர</strong> = துயர் துடைக்கும் பரமேஸ்வரனே; <strong>மன்யவே</strong> = உமது சீற்றத்திற்கு; <strong>நம:</strong> = வணக்கம்; <strong>உத</strong> = மேலும்; <strong>இஷவே</strong> = உமது அம்பிற்கும்; <strong>தே தன்வனே</strong> = உமது வில்லிற்கும்; <strong>பாஹுப்யாம்</strong> = இரு திருக்கரங்களுக்கும்; <strong>நம: அஸ்து</strong> = பணிவான வணக்கங்கள் ஆகுக! <strong>சிவா தனூ:</strong> = மங்களகரமான திருமேனி கொண்டு எங்களுக்குப் பேரருள் புரிவீராக.
+              </div>
+            </div>
+            <div class="vidya-module-box cyan">
+              <div class="vidya-module-title"><span>🔱</span> வேதாந்த பாஷ்ய தத்துவம் (Philosophical Bhashya)</div>
+              <div class="vidya-module-desc">
+                ஸ்ரீ ருத்ரம் வேதங்களின் இதய கமலமாகப் போற்றப்படுகிறது. சாயணாசாரியர் மற்றும் பட்ட பாஸ்கர பாஷ்யங்களின்படி, இப்பிரபஞ்சத்தின் தாவரங்கள், மரங்கள் (விருட்சேப்யோ), திருடர்கள், வேடர்கள், முனிவர்கள், நதிகள், கற்கள் என சகலத்திலும் சிவபெருமானின் சர்வவியாபக 'விராட்' சொரூபத்தை தரிசிக்கும் அத்வைத பாவனை இதில் வெளிப்படுகிறது.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHASTRA 2: DASHA UPANISHAD SHANTI MANTRAS -->
+        <div class="vidya-track-card" style="border-left: 4px solid #38bdf8;">
+          <div class="vidya-track-header">
+            <div>
+              <span class="wbs-code wbs-code-cyan">SHASTRA 02</span>
+              <span style="font-size:0.82rem; color:#38bdf8; font-weight:700; text-transform:uppercase; margin-left:8px;">தைத்திரீய &amp; கடோபநிடதம் (கிருஷ்ண யஜுர்வேதம்)</span>
+              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
+                தச உபநிடத சாந்தி மந்திரங்கள் &amp; குரு-சீடர் ஐக்கிய பாஷ்யம்
+              </h3>
+            </div>
+            <span style="font-size:0.8rem; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.25); padding:5px 12px; border-radius:16px;">
+              தரம் 6-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
+            </span>
+          </div>
+
+          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
+            <div style="font-size:0.82rem; color:#38bdf8; font-weight:700; margin-bottom:8px; text-transform:uppercase;">தைத்திரீய சாந்தி மந்திரம் (Devanagari):</div>
+            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#bae6fd; line-height:1.9; margin-bottom:12px;">
+              ॐ सह नाववतु । सह नौ भुनक्तु । सह वीर्यं करवावहै ।<br>
+              तेजस्वि नावधीतमस्तु मा विद्विषावहै ॥<br>
+              ॐ शान्तिः शान्तिः शान्तिः ॥
+            </div>
+            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
+            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
+              ஓம் ஸஹ நாவவது | ஸஹ நௌ புனக்து | ஸஹ வீர்யம் கரவாவஹை |<br>
+              தேஜஸ்வி நாவதீதமஸ்து மா வித்விஷாவஹை ||<br>
+              ஓம் சாந்தி: சாந்தி: சாந்தி: ||
+            </div>
+          </div>
+
+          <div class="vidya-module-grid">
+            <div class="vidya-module-box cyan">
+              <div class="vidya-module-title"><span>🔍</span> பதவுரை &amp; சாங்கர பாஷ்யம் (Shankara Commentary)</div>
+              <div class="vidya-module-desc">
+                <strong>ஸஹ நௌ அவது</strong> = குரு மற்றும் சீடராகிய நம் இருவரையும் பிரம்மம் ஒன்றாகப் பாதுகாக்கட்டும்; <strong>ஸஹ நௌ புனக்து</strong> = பிரம்ம வித்தையின் ஞானப் பலனை இருவரும் சமமாக அனுபவிப்போமாக; <strong>ஸஹ வீர்யம் கரவாவஹை</strong> = ஞானத்தைப் பெறும் பெரும் ஆற்றலை ஒன்றாக உருவாக்குவோமாக; <strong>தேஜஸ்வி நௌ அதீதம் அஸ்து</strong> = நாம் கற்ற வித்தை பேரொளி வீசுவதாக அமையட்டும்; <strong>மா வித்விஷாவஹை</strong> = நமக்குள் எப்போதும் பேதமோ காழ்ப்புணர்ச்சியோ நேராமல் இருக்கட்டும்.
+              </div>
+            </div>
+            <div class="vidya-module-box emerald">
+              <div class="vidya-module-title"><span>🕊️</span> திரிவித தாப நிவர்த்தி (The Trifold Peace)</div>
+              <div class="vidya-module-desc">
+                மூன்று முறை 'சாந்தி:' என உச்சரிப்பது மூன்று வகை உலகியல் துன்பங்களை நீக்குவதற்கே: 1. <em>ஆத்யாத்மிகம்</em> (தன் உடலினாலும் மனதினாலும் எழும் நோய், கவலைகள்), 2. <em>ஆதிபௌதிகம்</em> (பிற மனிதர்கள், மிருகங்கள், பூச்சிகளால் விளையும் துன்பங்கள்), 3. <em>ஆதிதெய்வீகம்</em> (மின்னல், நிலநடுக்கம், வெள்ளம் முதலான இயற்கைப் பேரழிவுகள்).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHASTRA 3: CHATUR VEDA MAHAVAKYAS -->
+        <div class="vidya-track-card" style="border-left: 4px solid #a855f7;">
+          <div class="vidya-track-header">
+            <div>
+              <span class="wbs-code wbs-code-amber">SHASTRA 03</span>
+              <span style="font-size:0.82rem; color:#c084fc; font-weight:700; text-transform:uppercase; margin-left:8px;">ரிக், யஜுர், சாம, அதர்வண வேதாந்த சிகரம்</span>
+              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
+                நான்கு வேத மகா வாக்கியங்கள் — சாங்கர பாஷ்ய பாகத்தியாக லக்ஷணை
+              </h3>
+            </div>
+            <span style="font-size:0.8rem; color:#c084fc; background:rgba(168,85,247,0.1); border:1px solid rgba(168,85,247,0.25); padding:5px 12px; border-radius:16px;">
+              தரம் 7-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
+            </span>
+          </div>
+
+          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px;">
+              <div style="border-left:2px solid #38bdf8; padding-left:12px;">
+                <div style="font-size:0.78rem; color:#38bdf8; font-weight:700;">ரிக்வேதம் • ஐதரேய உபநிடதம் (லக்ஷண வாக்கியம்)</div>
+                <div style="font-family:'Noto Sans Devanagari', serif; font-size:1.1rem; color:#bae6fd;">प्रज्ञानं ब्रह्म (ப்ரஜ்ஞானம் ப்ரஹ்ம)</div>
+                <div style="font-size:0.85rem; color:#cbd5e1; margin-top:4px;">"தூய உணர்வுப் பேரறிவே பிரம்மம்" — பிரம்மத்தின் தத்துவ சொரூப வரையறை.</div>
+              </div>
+              <div style="border-left:2px solid var(--gold); padding-left:12px;">
+                <div style="font-size:0.78rem; color:var(--gold); font-weight:700;">சாமவேதம் • சாந்தோக்ய உபநிடதம் (உபதேச வாக்கியம்)</div>
+                <div style="font-family:'Noto Sans Devanagari', serif; font-size:1.1rem; color:#fef08a;">तत्त्वमसि (தத் த்வமஸி)</div>
+                <div style="font-size:0.85rem; color:#cbd5e1; margin-top:4px;">"அந்தப் பரம்பொருளாக நீயே இருக்கிறாய்" — குரு உத்தாலகர் சுவேதகேதுவிற்கு உபதேசித்தது.</div>
+              </div>
+              <div style="border-left:2px solid #2dd4bf; padding-left:12px;">
+                <div style="font-size:0.78rem; color:#2dd4bf; font-weight:700;">அதர்வணவேதம் • மாண்டூக்ய உபநிடதம் (அனுபவ வாக்கியம்)</div>
+                <div style="font-family:'Noto Sans Devanagari', serif; font-size:1.1rem; color:#a7f3d0;">अयमात्मा ब्रह्म (அயம் ஆத்மா ப்ரஹ்ம)</div>
+                <div style="font-size:0.85rem; color:#cbd5e1; margin-top:4px;">"இந்த உள்ளுறை ஆத்மாவே பிரம்மம்" — சாதகன் தன் அகத்தே அடையும் நேரடி அனுபூதி.</div>
+              </div>
+              <div style="border-left:2px solid #f43f5e; padding-left:12px;">
+                <div style="font-size:0.78rem; color:#f43f5e; font-weight:700;">யஜுர்வேதம் • பிருஹதாரண்யகம் (அனுசந்தான வாக்கியம்)</div>
+                <div style="font-family:'Noto Sans Devanagari', serif; font-size:1.1rem; color:#fecdd3;">अहं ब्रह्मास्मि (அஹம் ப்ரஹ்மாஸ்மி)</div>
+                <div style="font-size:0.85rem; color:#cbd5e1; margin-top:4px;">"நான் பிரம்மமாகவே விளங்குகிறேன்" — முக்தன் உரைக்கும் பூரண முக்திப் பிரகடனம்.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="vidya-module-grid">
+            <div class="vidya-module-box">
+              <div class="vidya-module-title"><span>⚖️</span> பாகத்தியாக லக்ஷணை (Bhagatyaga Lakshana)</div>
+              <div class="vidya-module-desc">
+                ஆதிசங்கரரின் வேதாந்த பாஷ்யப்படி, 'தத் த்வமசி' வாக்கியத்தில் 'தத்' (ஈஸ்வரன்) என்பது சர்வக்ஞத்துவம் (எல்லாம் அறிதல்) எனும் உபாதியைக் கொண்டது; 'த்வம்' (ஜீவன்) என்பது அற்பக்ஞத்துவம் (குறைந்த அறிவு) எனும் உபாதியைக் கொண்டது. இரண்டும் முரண்படுவதால், இரு தரப்பிலும் உள்ள உபாதிப் பகுதிகளை விலக்கி (பாகத்தியாகம் செய்து), இரண்டிற்கும் ஆதாரமாக விளங்கும் சைதன்யத்தை (தூய ஆத்மாவை) ஒன்றென உணர்வதே அத்வைத அனுபூதியாகும்.
+              </div>
+            </div>
+            <div class="vidya-module-box amber">
+              <div class="vidya-module-title"><span>🔱</span> சைவ சித்தாந்த சமரச பார்வை (Saiva Siddhanta Synthesis)</div>
+              <div class="vidya-module-desc">
+                சைவ சித்தாந்தத்தில் இந்த மகா வாக்கியங்களை சுத்தாத்வைத நோக்கில் உரைப்பர்: உடம்பில் உள்ள கண்ணிற்குப் பார்வை தருவது சூரிய ஒளி போல, பசுவாகிய உயிருக்கு அறிவாய் விளங்குவது பதியாகிய சிவம். 'அஹம் பிரம்மாஸ்மி' என்பது 'நான் சிவமாகிறேன்' என்ற சிவோஹம்பாவனையாகும்.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHASTRA 4: BHAGAVAD GITA 2.47 KARMA YOGA -->
+        <div class="vidya-track-card" style="border-left: 4px solid #f59e0b;">
+          <div class="vidya-track-header">
+            <div>
+              <span class="wbs-code wbs-code-amber">SHASTRA 04</span>
+              <span style="font-size:0.82rem; color:#f59e0b; font-weight:700; text-transform:uppercase; margin-left:8px;">ஸ்ரீமத் பகவத் கீதை — சாங்கிய யோகம் (அத்தியாயம் 2)</span>
+              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
+                கீதை 2.47 — நிஷ்காம கர்ம யோக சாங்கர பாஷ்யம் (Nishkama Karma Yoga)
+              </h3>
+            </div>
+            <span style="font-size:0.8rem; color:#f59e0b; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.25); padding:5px 12px; border-radius:16px;">
+              தரம் 8-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
+            </span>
+          </div>
+
+          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
+            <div style="font-size:0.82rem; color:#f59e0b; font-weight:700; margin-bottom:8px; text-transform:uppercase;">மூல தேவநாகரி ஸ்லோகம் (Devanagari):</div>
+            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#fed7aa; line-height:1.9; margin-bottom:12px;">
+              कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।<br>
+              मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥
+            </div>
+            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
+            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
+              கர்மண்யே வாதிகாரஸ்தே மா பலேஷு கதாசன |<br>
+              மா கர்மபலஹேதுர் பூர் மா தே ஸங்கோஸ்த்வகர்மணி ||
+            </div>
+          </div>
+
+          <div class="vidya-module-grid">
+            <div class="vidya-module-box amber">
+              <div class="vidya-module-title"><span>📜</span> பதவுரை &amp; சாங்கர பாஷ்யம் (Padartha &amp; Commentary)</div>
+              <div class="vidya-module-desc">
+                <strong>கர்மணி ஏவ தே அதிகார:</strong> = கடமைகளைச் செய்வதில் மட்டுமே உனக்கு உரிமை (அதிகாரம்) உண்டு; <strong>மா பலேஷு கதாசன</strong> = செயல்களின் பலன்களில் ஒருபோதும் உனக்கு உரிமையில்லை; <strong>மா கர்மபலஹேது: பூ:</strong> = செயலின் பலனுக்கு நீயே காரணம் என்ற அகந்தை கொள்ளாதே; <strong>அகர்மணி தே சங்க: மா அஸ்து</strong> = கடமையைச் செய்யாமல் சோம்பலில் உனக்குப் பற்றுதல் உண்டாகாமல் இருக்கட்டும்.
+              </div>
+            </div>
+            <div class="vidya-module-box cyan">
+              <div class="vidya-module-title"><span>💡</span> சித்த சுத்தி முதல் ஞான நிஷ்டை வரை (Sadhana Hierarchy)</div>
+              <div class="vidya-module-desc">
+                ஆதிசங்கரரின் கீதா பாஷ்ய விளக்கம்: செயல்களின் பலனில் பற்று வைக்கும் வரை மனம் சஞ்சலப்பட்டுப் புதிய வினைகளை ஈட்டும். மாறாக, பலனை ஈஸ்வரார்ப்பணமாகச் செய்து கடமையை முடிக்கும் போது, 'சித்த சுத்தி' (மனத்தூய்மை) வாய்க்கிறது. சித்த சுத்தியே ஞான யோகத்தில் நிலைத்து முக்தி பெறுவதற்கான நுழைவாயிலாகும்.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHASTRA 5: KATHA UPANISHAD NACHIKETA & CHARIOT -->
+        <div class="vidya-track-card" style="border-left: 4px solid #ef4444;">
+          <div class="vidya-track-header">
+            <div>
+              <span class="wbs-code wbs-code-amber" style="background:#ef4444; border-color:#f87171;">SHASTRA 05</span>
+              <span style="font-size:0.82rem; color:#f87171; font-weight:700; text-transform:uppercase; margin-left:8px;">கிருஷ்ண யஜுர்வேத கடோபநிடதம் (1.3.14 &amp; 1.3.3)</span>
+              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
+                கடோபநிடத நசிகேத சம்வாதம் &amp; ரத கல்பனா பாஷ்யம் (Katha Chariot Allegory)
+              </h3>
+            </div>
+            <span style="font-size:0.8rem; color:#f87171; background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.25); padding:5px 12px; border-radius:16px;">
+              தரம் 11-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
+            </span>
+          </div>
+
+          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
+            <div style="font-size:0.82rem; color:#f87171; font-weight:700; margin-bottom:8px; text-transform:uppercase;">மூல மந்திரங்கள் (Devanagari):</div>
+            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#fca5a5; line-height:1.9; margin-bottom:12px;">
+              उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत ।<br>
+              क्षुरस्य धारा निशिता दुरत्यया दुर्गं पथस्तत्कवयो वदन्ति ॥ (1.3.14)<br><br>
+              आत्मानं रथिनं विद्धि शरीरं रथमेव तु ।<br>
+              बुद्धिं तु सारथिं विद्धि मनः प्रग्रहमेव च ॥ (1.3.3)
+            </div>
+            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
+            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
+              உத்திஷ்டத ஜாக்ரத பிராப்ய வரான் நிபோதத |<br>
+              க்ஷுரஸ்ய தாரா நிசிதா துரத்யயா துர்கம் பதஸ்தத் கவயோ வதந்தி ||<br><br>
+              ஆத்மானம் ரதினாம் வித்தி சரீரம் ரதமேவ து |<br>
+              புத்திம் து சாரதிம் வித்தி மன: பிரக்ரஹமேவ ச ||
+            </div>
+          </div>
+
+          <div class="vidya-module-grid">
+            <div class="vidya-module-box">
+              <div class="vidya-module-title"><span>⚔️</span> கத்தியின் கூர்முனைப் பாதை (Kshurasya Dhara)</div>
+              <div class="vidya-module-desc">
+                சுவாமி விவேகானந்தரால் 'எழுமின்! விழிமின்! குறிக்கோளை அடையும் வரை நில்லாது உழைமின்!' என்று முழங்கப்பட்ட புகழ்பெற்ற மந்திரம் இதுவாகும். ஆதிசங்கரர் பாஷ்யத்தில், அறியாமை உறக்கத்திலிருந்து ஆன்ம விழிப்புணர்ச்சிக்கு எழ வேண்டும் என்றும், பிரம்ம ஞானப் பாதை சவரக் கத்தியின் கூரிய விளிம்பைப் போல நுண்ணியதும் கடினமானதுமான தர்க்க நெறியாகும் என விளக்குகிறார்.
+              </div>
+            </div>
+            <div class="vidya-module-box emerald">
+              <div class="vidya-module-title"><span>🐎</span> ரத கல்பனா உருவகம் (The Chariot Allegory)</div>
+              <div class="vidya-module-desc">
+                <strong>ரதீ</strong> = தேரின் தலைவன் (ஆத்மா); <strong>ரதம்</strong> = தேர் (மனித உடல்); <strong>சாரதி</strong> = தேரோட்டி (விவேக புத்தி); <strong>பிரக்ரஹம்</strong> = கடிவாளம் (மனம்); <strong>அஸ்வா:</strong> = குதிரைகள் (ஐம்புலன்கள்); <strong>கோசரா:</strong> = பாதை (உலகப் பொருட்கள்). சாரதியான புத்தி விவேகத்தோடு கடிவாளத்தை (மனதை) இழுத்துப் பிடித்தால் மட்டுமே, புலன் குதிரைகள் அடங்கி மனிதன் முக்தியாகிய பரமபதத்தை அடைவான்.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHASTRA 6: TAITTIRIYA PANCHAKOSHA VIVEKA -->
+        <div class="vidya-track-card" style="border-left: 4px solid #2dd4bf;">
+          <div class="vidya-track-header">
+            <div>
+              <span class="wbs-code wbs-code-cyan" style="background:#2dd4bf; color:#0b111e;">SHASTRA 06</span>
+              <span style="font-size:0.82rem; color:#2dd4bf; font-weight:700; text-transform:uppercase; margin-left:8px;">தைத்திரீய உபநிடதம் — பிரம்மானந்தவல்லி &amp; பிருகுவல்லி</span>
+              <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:6px 0 0;">
+                பஞ்ச கோச விவேக பாஷ்யம் &amp; நேதி-நேதி ஆத்ம விசர்ஜனம்
+              </h3>
+            </div>
+            <span style="font-size:0.8rem; color:#2dd4bf; background:rgba(45,212,191,0.1); border:1px solid rgba(45,212,191,0.25); padding:5px 12px; border-radius:16px;">
+              தரம் 11-இலிருந்து கல்லூரி ஆய்வுக்கு உயர்த்தப்பட்டது
+            </span>
+          </div>
+
+          <div style="background:rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:16px;">
+            <div style="font-size:0.82rem; color:#2dd4bf; font-weight:700; margin-bottom:8px; text-transform:uppercase;">தைத்திரீய பிரம்மவல்லி சூத்திரங்கள் (Devanagari):</div>
+            <div style="font-family:'Noto Sans Devanagari', 'Sanskrit Text', serif; font-size:1.15rem; color:#99f6e4; line-height:1.9; margin-bottom:12px;">
+              स वा एष पुरुषोऽन्नरसमयः । तस्माद्वा एतस्मादन्नरसमयात् ।<br>
+              अन्योऽन्तर आत्मा प्राणमयः । अन्यோऽन्तर आत्मा मनोमयः ।<br>
+              अन्योऽन्तर आत्मा विज्ञानमयः । अन्यோऽन्तर आत्माऽऽनन्दमयः ॥
+            </div>
+            <div style="font-size:0.82rem; color:#94a3b8; font-weight:700; margin-bottom:4px; text-transform:uppercase;">தமிழ் ஒலிபெயர்ப்பு (Transliteration):</div>
+            <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7; font-style:italic;">
+              ஸ வா ஏஷ புருஷோ அன்னரசமய: | தஸ்மாத்வா ஏதஸ்மாத் அன்னரசமயாத் |<br>
+              அன்யோ அந்தர ஆத்மா பிராணமய: | அன்யோ அந்தர ஆத்மா மனோமய: |<br>
+              அன்யோ அந்தர ஆத்மா விஞ்ஞானமய: | அன்யோ அந்தர ஆத்மா ஆனந்தமய: ||
+            </div>
+          </div>
+
+          <div class="vidya-module-grid">
+            <div class="vidya-module-box cyan">
+              <div class="vidya-module-title"><span>🧅</span> ஐந்து உறைகளின் அடுக்குகள் (The Five Koshas)</div>
+              <div class="vidya-module-desc">
+                1. <strong>அன்னமய கோசம்</strong>: உணவினால் தோன்றி உணவாலேயே அழியும் பருவுடல்.<br>
+                2. <strong>பிராணமய கோசம்</strong>: பிராணன், அபானன், வியானன், உதானன், சமானன் எனும் பஞ்ச பிராணன்களின் சக்தி உடல்.<br>
+                3. <strong>மனோமய கோசம்</strong>: ஆசை, விருப்பு, வெறுப்பு, சங்கல்ப-விகல்ப எண்ணங்கள் தோன்றும் மன உடல்.<br>
+                4. <strong>விஞ்ஞானமய கோசம்</strong>: 'நான் செய்கிறேன்' எனும் கர்த்திருத்துவ புத்தி அறிவு உடல்.<br>
+                5. <strong>ஆனந்தமய கோசம்</strong>: அறியாமையோடு கூடிய பிரிய, மோத, பிரமோத சுகங்களை அனுபவிக்கும் காரண உடல்.
+              </div>
+            </div>
+            <div class="vidya-module-box">
+              <div class="vidya-module-title"><span>✨</span> நேதி-நேதி ஆத்ம சாட்சாத் காரம் (Beyond the Koshas)</div>
+              <div class="vidya-module-desc">
+                வெங்காயத்தின் தோல்களை ஒவ்வொன்றாக உரிப்பது போல, 'அன்னமயம் நான் அல்ல; பிராணமயம் நான் அல்ல; மனோமயம் நான் அல்ல; விஞ்ஞானமயம் நான் அல்ல; ஆனந்தமயமும் நான் அல்ல' என்று நேதி-நேதி (இதுவல்ல, இதுவல்ல) முறையில் ஐந்து கோசங்களையும் நீக்கிய பின் எஞ்சியிருக்கும் எல்லைகளற்ற தூய சாட்சிப் பேரறிவே ஆத்மா/பிரம்மம் என சங்கர பாஷ்யம் நிலைநாட்டுகிறது.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- 3. PRAKARANA GRANTHAS & SHASTRA GLOSSARY -->
