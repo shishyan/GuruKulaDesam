@@ -76,7 +76,7 @@ def build_grade_coursebook(g, data):
     units = data['units']
     total_units = len(units)
 
-    # 1. Build Sidebar Navigation Groups
+    # 1. Build Sidebar Navigation Groups with WBS Identification
     sidebar_groups_html = ""
     for idx, u in enumerate(units):
         active_group_class = "active" if idx == 0 else ""
@@ -87,21 +87,56 @@ def build_grade_coursebook(g, data):
         <div class="sidebar-chapter-group {active_group_class}" id="side-group-{u['num']}">
           <button type="button" class="sidebar-chapter-btn {active_btn_class}" id="side-btn-{u['num']}" onclick="selectChapter({u['num']})">
             <span class="sidebar-chapter-pill">
-              <span class="sidebar-num">{u['num']}</span>
+              <span class="sidebar-num">{g}.{u['num']}</span>
               <span>{short_title}</span>
             </span>
             <span class="sidebar-arrow">▶</span>
           </button>
           <div class="sidebar-subsections">
-            <a href="#u{u['num']}-objectives" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-objectives')">🎯 கற்றல் நோக்கங்கள்</a>
-            <a href="#u{u['num']}-vocab" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-vocab')">📖 சொற்களஞ்சியம்</a>
-            <a href="#u{u['num']}-diagram" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-diagram')">🎨 காட்சி விளக்கம் (வரைபடம்)</a>
-            <a href="#u{u['num']}-lessons" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-lessons')">📚 படிமுறை விளக்கம்</a>
-            <a href="#u{u['num']}-verse" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-verse')">🪔 மூலப் பாடல் &amp; பதவுரை</a>
-            <a href="#u{u['num']}-story" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-story')">📜 ஆன்மீக வரலாறு</a>
-            <a href="#u{u['num']}-living" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-living')">🌿 வாழ்வியல் தர்மம்</a>
-            <a href="#u{u['num']}-quiz" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-quiz')">❓ சுய பரிசோதனை</a>
-            <a href="#u{u['num']}-sadhana" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-sadhana')">✅ தர்ம சாதனைப் பட்டியல்</a>
+            <a href="#u{u['num']}-objectives" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-objectives')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.0</span>
+              <span>🎯 கற்றல் நோக்கங்கள்</span>
+            </a>
+            <a href="#u{u['num']}-vocab" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-vocab')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.1</span>
+              <span>📖 சொற்களஞ்சியம்</span>
+            </a>
+            <a href="#u{u['num']}-diagram" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-diagram')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.2</span>
+              <span>🎨 காட்சி வரைபடம்</span>
+            </a>
+            <a href="#u{u['num']}-lessons" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-lessons')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.3</span>
+              <span>📚 படிமுறை விளக்கம்</span>
+            </a>
+            <a href="#u{u['num']}-verse" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-verse')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.4</span>
+              <span>🪔 மூலப் பாடல் &amp; உரை</span>
+            </a>
+            <a href="#u{u['num']}-meaning" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-meaning')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.5</span>
+              <span>💡 தத்துவப் பொழிப்புரை</span>
+            </a>
+            <a href="#u{u['num']}-story" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-story')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.6</span>
+              <span>📜 ஆன்மீக வரலாறு</span>
+            </a>
+            <a href="#u{u['num']}-living" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-living')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.7</span>
+              <span>🌿 வாழ்வியல் தர்மம்</span>
+            </a>
+            <a href="#u{u['num']}-sadhana" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-sadhana')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.8</span>
+              <span>✅ தர்ம சாதனை</span>
+            </a>
+            <a href="#u{u['num']}-quiz" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-quiz')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.9</span>
+              <span>❓ சுய பரிசோதனை</span>
+            </a>
+            <a href="#u{u['num']}-audio" class="sidebar-sub-link" onclick="goToSection({u['num']}, 'u{u['num']}-audio')">
+              <span class="wbs-sidebar-code">{g}.{u['num']}.10</span>
+              <span>🎵 பதிக இசை</span>
+            </a>
           </div>
         </div>
         """
@@ -112,7 +147,7 @@ def build_grade_coursebook(g, data):
         <div class="sidebar-chapter-group" id="side-group-sheets">
           <button type="button" class="sidebar-chapter-btn" id="side-btn-sheets" onclick="selectChapter('sheets')">
             <span class="sidebar-chapter-pill">
-              <span class="sidebar-num">📖</span>
+              <span class="sidebar-num">2.S</span>
               <span>பாடநூல் தாள்கள் ({len(grade2_sheets)})</span>
             </span>
           </button>
@@ -144,7 +179,7 @@ def build_grade_coursebook(g, data):
         short_title = u['title'].split('—')[0].strip()
         top_tabs_html += f"""
         <button type="button" class="course-tab-btn {active_class}" id="tab-btn-{u['num']}" onclick="selectChapter({u['num']})">
-          <span class="course-tab-num">{u['num']}</span>
+          <span class="course-tab-num">{g}.{u['num']}</span>
           <span>{short_title}</span>
         </button>
         """
@@ -152,7 +187,7 @@ def build_grade_coursebook(g, data):
     if g == 2 and grade2_sheets:
         top_tabs_html += """
         <button type="button" class="course-tab-btn" id="tab-btn-sheets" onclick="selectChapter('sheets')">
-          <span class="course-tab-num">📖</span>
+          <span class="course-tab-num">2.S</span>
           <span>பாடநூல் தாள்கள் (64)</span>
         </button>
         """
@@ -174,7 +209,10 @@ def build_grade_coursebook(g, data):
         obj_li = "".join([f"<li>{o}</li>" for o in enrichment['objectives']])
         objectives_html = f"""
         <div id="u{u['num']}-objectives" class="objectives-card">
-          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <div class="objectives-title">
+            <span class="wbs-code">WBS {g}.{u['num']}.0</span>
+            <span>🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</span>
+          </div>
           <ul class="objectives-list">
             {obj_li}
           </ul>
@@ -183,17 +221,21 @@ def build_grade_coursebook(g, data):
 
         # Vocab
         vocab_cards = ""
-        for v in enrichment['vocab']:
+        for v_idx, v in enumerate(enrichment['vocab']):
             vocab_cards += f"""
             <div class="vocab-card">
-              <div class="vocab-term">📌 {v['term']}</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS {g}.{u['num']}.1.{v_idx+1}</span>
+                <span>📌 {v['term']}</span>
+              </div>
               <div class="vocab-meaning">{v['meaning']}</div>
             </div>
             """
         vocab_html = f"""
         <div id="u{u['num']}-vocab" class="vocab-section">
-          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
-            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS {g}.{u['num']}.1</span>
+            <span>📖 சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
           </h4>
           <div class="vocab-grid">
             {vocab_cards}
@@ -203,10 +245,13 @@ def build_grade_coursebook(g, data):
 
         # Deep Dive Subsections
         deep_dive_html = ""
-        for dd in enrichment['deep_dive']:
+        for dd_idx, dd in enumerate(enrichment['deep_dive']):
             deep_dive_html += f"""
             <div class="lesson-step-section">
-              <div class="lesson-step-title">{dd['heading']}</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS {g}.{u['num']}.3.{dd_idx+1}</span>
+                <span>{dd['heading']}</span>
+              </div>
               <div class="lesson-step-content">
                 <p>{text_to_html(dd['content'])}</p>
               </div>
@@ -215,7 +260,11 @@ def build_grade_coursebook(g, data):
 
         # Visual Diagram
         diagram_html = f"""
-        <div id="u{u['num']}-diagram">
+        <div id="u{u['num']}-diagram" style="margin: 28px 0;">
+          <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+            <span class="wbs-code">WBS {g}.{u['num']}.2</span>
+            <span style="font-size:0.88rem; color:#94a3b8; font-weight:600;">காட்சி வரைபடம் &amp; கருத்துப் படிமம் (Visual Schema)</span>
+          </div>
           {get_diagram_for_topic(enrichment['diagram_key'])}
         </div>
         """
@@ -233,7 +282,10 @@ def build_grade_coursebook(g, data):
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா {q_idx+1}:</strong> {q['q']}</span>
+                  <span>
+                    <span class="wbs-code">WBS {g}.{u['num']}.9.{q_idx+1}</span>
+                    <strong>வினா {q_idx+1}:</strong> {q['q']}
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -245,8 +297,9 @@ def build_grade_coursebook(g, data):
             """
         quiz_section_html = f"""
         <div id="u{u['num']}-quiz" class="quiz-section">
-          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS {g}.{u['num']}.9</span>
+            <span>❓ சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
           </h4>
           <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
             கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
@@ -261,13 +314,17 @@ def build_grade_coursebook(g, data):
             sadhana_items += f"""
             <div class="sadhana-item">
               <input type="checkbox" id="g{g}u{u['num']}s{s_idx}">
-              <label for="g{g}u{u['num']}s{s_idx}">{s}</label>
+              <label for="g{g}u{u['num']}s{s_idx}">
+                <span class="wbs-code">WBS {g}.{u['num']}.8.{s_idx+1}</span>
+                <span>{s}</span>
+              </label>
             </div>
             """
         sadhana_html = f"""
         <div id="u{u['num']}-sadhana" class="sadhana-box">
           <div class="sadhana-header">
-            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+            <span class="wbs-code">WBS {g}.{u['num']}.8</span>
+            <span>🌿 மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
           </div>
           {sadhana_items}
         </div>
@@ -295,12 +352,16 @@ def build_grade_coursebook(g, data):
             
             <div class="lesson-card-head">
               <div>
-                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் {u['num']} (Chapter {u['num']})</span>
-                <div class="lesson-main-title" style="margin-top:12px;">{u['title']}</div>
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+                  <span class="wbs-code wbs-code-primary">WBS {g}.{u['num']}</span>
+                  <span style="background:rgba(255,255,255,0.08); color:#f8fafc; font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px; letter-spacing:0.5px;">அத்தியாயம் {u['num']} (Chapter {u['num']})</span>
+                </div>
+                <div class="lesson-main-title">{u['title']}</div>
                 <div class="lesson-sub-title">{u['sub']}</div>
               </div>
-              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12);">
-                {data['grade_tamil']} • {data['age_group']}
+              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:6px;">
+                <span class="wbs-code">GRADE {g:02d}</span>
+                <span>{data['grade_tamil']} • {data['age_group']}</span>
               </div>
             </div>
 
@@ -315,8 +376,9 @@ def build_grade_coursebook(g, data):
 
             <!-- 4. Paced Step-by-Step Deep Dive Sections -->
             <div id="u{u['num']}-lessons" style="margin: 28px 0;">
-              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS {g}.{u['num']}.3</span>
+                <span>📚 படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
               </h4>
               <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
                 ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
@@ -326,31 +388,36 @@ def build_grade_coursebook(g, data):
 
             <!-- 5. Sacred Verse / Mantra Box -->
             <div id="u{u['num']}-verse" style="background:rgba(255,255,255,0.03); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">
+                <span class="wbs-code">WBS {g}.{u['num']}.4</span> 📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:
+              </div>
               <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#ffffff; line-height:1.9; font-weight:600;">{formatted_verse}</div>
               <div style="font-size:0.9rem; color:var(--gold); margin-top:10px; font-weight:600;">— {u['source']}</div>
             </div>
 
             <!-- 6. Philosophical Meaning -->
             <div id="u{u['num']}-meaning" style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS {g}.{u['num']}.5</span>
+                <span>💡 பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">{formatted_meaning}</div>
             </div>
 
             <!-- 7. Inspirational Story -->
             <div id="u{u['num']}-story" style="margin: 28px 0; background:rgba(255,255,255,0.02); border-radius:14px; padding:22px; border:1px solid rgba(255,255,255,0.08);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS {g}.{u['num']}.6</span>
+                <span>📜 ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">{formatted_story}</div>
             </div>
 
             <!-- 8. Dharmic Living in Daily Life -->
             <div id="u{u['num']}-living" style="margin: 28px 0; background:rgba(45,212,191,0.05); border-radius:14px; padding:22px; border:1px solid rgba(45,212,191,0.25);">
-              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS {g}.{u['num']}.7</span>
+                <span>🌿 மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">{formatted_living}</div>
             </div>
@@ -364,7 +431,10 @@ def build_grade_coursebook(g, data):
             <!-- 11. Audio Link to Hymns -->
             <div id="u{u['num']}-audio" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
               <div>
-                <strong style="color:#f8fafc;">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <strong style="color:#f8fafc; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  <span class="wbs-code">WBS {g}.{u['num']}.10</span>
+                  <span>🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</span>
+                </strong>
                 <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
               </div>
               <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
@@ -414,7 +484,10 @@ def build_grade_coursebook(g, data):
         panels_html += f"""
         <div class="lesson-unit-panel" id="unit-panel-sheets">
           <div class="scripture-study-section" style="margin-bottom:24px;">
-            <span class="source-badge">அங்கீகரிக்கப்பட்ட பாடநூல் படங்கள் • மொத்தம் {len(grade2_sheets)} பக்கங்கள்</span>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+              <span class="wbs-code wbs-code-primary">WBS 2.S</span>
+              <span class="source-badge">அங்கீகரிக்கப்பட்ட பாடநூல் படங்கள் • மொத்தம் {len(grade2_sheets)} பக்கங்கள்</span>
+            </div>
             <h3 style="color:#f8fafc; font-size:1.4rem; margin-top:8px;">தரம் 2 முழுமையான பாடநூல் பக்கங்கள் (Official Textbook Sheets)</h3>
             <p style="color:var(--text-muted); font-size:0.92rem; margin-top:6px;">
               எந்தவொரு பக்கத்தின் மீதும் கிளிக் செய்து பெரிய அளவில் வாசிக்கலாம் (Click any sheet to zoom and read in high resolution).
@@ -540,9 +613,12 @@ def build_grade_coursebook(g, data):
 
   <main class="main-content">
     
-    <!-- Hero Banner -->
+    <!-- Hero Banner with WBS Grade Code -->
     <div class="hero-banner">
-      <div class="sacred-tag">📖 {data['grade_tamil']} • பாடநூல் &amp; சுயகற்றல் பயிற்சி நெறி 📖</div>
+      <div class="sacred-tag">
+        <span class="wbs-code">WBS G{g:02d}</span>
+        📖 {data['grade_tamil']} • பாடநூல் &amp; சுயகற்றல் பயிற்சி நெறி 📖
+      </div>
       <h1>சைவ நெறி — {data['grade_tamil']} ({data['grade_eng']})</h1>
       <h2>Vedic &amp; Saiva Dharmic Living Coursebook — {data['age_group']}</h2>
       <div class="verse-quote">"{data['verse_quote']}"</div>
@@ -553,10 +629,10 @@ def build_grade_coursebook(g, data):
 
     <!-- Course Metadata Bar -->
     <div class="course-header-meta">
+      <div class="course-meta-badge"><span class="wbs-code">WBS G{g:02d}</span> நிலை: <strong>{data['age_group']}</strong></div>
       <div class="course-meta-badge">📚 பாடநெறி: <strong>சைவ நெறி &amp; வேத வாழ்வியல்</strong></div>
-      <div class="course-meta-badge">🎯 நிலை: <strong>{data['age_group']}</strong></div>
       <div class="course-meta-badge">🧩 அலகுகள்: <strong>{total_units} விரிவான அத்தியாயங்கள்</strong></div>
-      <div class="course-meta-badge">🎨 காட்சி விளக்கங்கள்: <strong>அனைத்து அத்தியாயங்களிலும் உண்டு</strong></div>
+      <div class="course-meta-badge">🎨 காட்சி வரைபடங்கள்: <strong>WBS குறியீடுகளுடன் உண்டு</strong></div>
     </div>
 
     <!-- Quick Grade Switcher Bar -->

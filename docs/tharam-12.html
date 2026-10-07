@@ -107,9 +107,12 @@
 
   <main class="main-content">
     
-    <!-- Hero Banner -->
+    <!-- Hero Banner with WBS Grade Code -->
     <div class="hero-banner">
-      <div class="sacred-tag">📖 தரம் 12 • பாடநூல் &amp; சுயகற்றல் பயிற்சி நெறி 📖</div>
+      <div class="sacred-tag">
+        <span class="wbs-code">WBS G12</span>
+        📖 தரம் 12 • பாடநூல் &amp; சுயகற்றல் பயிற்சி நெறி 📖
+      </div>
       <h1>சைவ நெறி — தரம் 12 (Grade 12)</h1>
       <h2>Vedic &amp; Saiva Dharmic Living Coursebook — வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)</h2>
       <div class="verse-quote">"ஒன்றே குலமும் ஒருவனே தேவனும் • யாதும் ஊரே யாவரும் கேளிர் • அன்பும் சிவமும் இரண்டென்பர் அறிவிலார்"</div>
@@ -120,10 +123,10 @@
 
     <!-- Course Metadata Bar -->
     <div class="course-header-meta">
+      <div class="course-meta-badge"><span class="wbs-code">WBS G12</span> நிலை: <strong>வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)</strong></div>
       <div class="course-meta-badge">📚 பாடநெறி: <strong>சைவ நெறி &amp; வேத வாழ்வியல்</strong></div>
-      <div class="course-meta-badge">🎯 நிலை: <strong>வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)</strong></div>
       <div class="course-meta-badge">🧩 அலகுகள்: <strong>5 விரிவான அத்தியாயங்கள்</strong></div>
-      <div class="course-meta-badge">🎨 காட்சி விளக்கங்கள்: <strong>அனைத்து அத்தியாயங்களிலும் உண்டு</strong></div>
+      <div class="course-meta-badge">🎨 காட்சி வரைபடங்கள்: <strong>WBS குறியீடுகளுடன் உண்டு</strong></div>
     </div>
 
     <!-- Quick Grade Switcher Bar -->
@@ -144,27 +147,27 @@
       <div class="course-tabs">
         
         <button type="button" class="course-tab-btn active" id="tab-btn-1" onclick="selectChapter(1)">
-          <span class="course-tab-num">1</span>
+          <span class="course-tab-num">12.1</span>
           <span>ஜீவன் முக்தி & விதேக முக்தி</span>
         </button>
         
         <button type="button" class="course-tab-btn " id="tab-btn-2" onclick="selectChapter(2)">
-          <span class="course-tab-num">2</span>
+          <span class="course-tab-num">12.2</span>
           <span>திருமந்திரமும் தாயுமானவரும்</span>
         </button>
         
         <button type="button" class="course-tab-btn " id="tab-btn-3" onclick="selectChapter(3)">
-          <span class="course-tab-num">3</span>
+          <span class="course-tab-num">12.3</span>
           <span>நவீன அறிவியலும் நடராஜர் தத்துவமும்</span>
         </button>
         
         <button type="button" class="course-tab-btn " id="tab-btn-4" onclick="selectChapter(4)">
-          <span class="course-tab-num">4</span>
+          <span class="course-tab-num">12.4</span>
           <span>சுற்றுச்சூழல் தர்மம் & வேத சனாதன தீர்வுகள்</span>
         </button>
         
         <button type="button" class="course-tab-btn " id="tab-btn-5" onclick="selectChapter(5)">
-          <span class="course-tab-num">5</span>
+          <span class="course-tab-num">12.5</span>
           <span>உலக சமுதாயத்தில் சனாதன தர்ம நெறியாளன்</span>
         </button>
         
@@ -193,105 +196,280 @@
         <div class="sidebar-chapter-group active" id="side-group-1">
           <button type="button" class="sidebar-chapter-btn active" id="side-btn-1" onclick="selectChapter(1)">
             <span class="sidebar-chapter-pill">
-              <span class="sidebar-num">1</span>
+              <span class="sidebar-num">12.1</span>
               <span>ஜீவன் முக்தி & விதேக முக்தி</span>
             </span>
             <span class="sidebar-arrow">▶</span>
           </button>
           <div class="sidebar-subsections">
-            <a href="#u1-objectives" class="sidebar-sub-link" onclick="goToSection(1, 'u1-objectives')">🎯 கற்றல் நோக்கங்கள்</a>
-            <a href="#u1-vocab" class="sidebar-sub-link" onclick="goToSection(1, 'u1-vocab')">📖 சொற்களஞ்சியம்</a>
-            <a href="#u1-diagram" class="sidebar-sub-link" onclick="goToSection(1, 'u1-diagram')">🎨 காட்சி விளக்கம் (வரைபடம்)</a>
-            <a href="#u1-lessons" class="sidebar-sub-link" onclick="goToSection(1, 'u1-lessons')">📚 படிமுறை விளக்கம்</a>
-            <a href="#u1-verse" class="sidebar-sub-link" onclick="goToSection(1, 'u1-verse')">🪔 மூலப் பாடல் &amp; பதவுரை</a>
-            <a href="#u1-story" class="sidebar-sub-link" onclick="goToSection(1, 'u1-story')">📜 ஆன்மீக வரலாறு</a>
-            <a href="#u1-living" class="sidebar-sub-link" onclick="goToSection(1, 'u1-living')">🌿 வாழ்வியல் தர்மம்</a>
-            <a href="#u1-quiz" class="sidebar-sub-link" onclick="goToSection(1, 'u1-quiz')">❓ சுய பரிசோதனை</a>
-            <a href="#u1-sadhana" class="sidebar-sub-link" onclick="goToSection(1, 'u1-sadhana')">✅ தர்ம சாதனைப் பட்டியல்</a>
+            <a href="#u1-objectives" class="sidebar-sub-link" onclick="goToSection(1, 'u1-objectives')">
+              <span class="wbs-sidebar-code">12.1.0</span>
+              <span>🎯 கற்றல் நோக்கங்கள்</span>
+            </a>
+            <a href="#u1-vocab" class="sidebar-sub-link" onclick="goToSection(1, 'u1-vocab')">
+              <span class="wbs-sidebar-code">12.1.1</span>
+              <span>📖 சொற்களஞ்சியம்</span>
+            </a>
+            <a href="#u1-diagram" class="sidebar-sub-link" onclick="goToSection(1, 'u1-diagram')">
+              <span class="wbs-sidebar-code">12.1.2</span>
+              <span>🎨 காட்சி வரைபடம்</span>
+            </a>
+            <a href="#u1-lessons" class="sidebar-sub-link" onclick="goToSection(1, 'u1-lessons')">
+              <span class="wbs-sidebar-code">12.1.3</span>
+              <span>📚 படிமுறை விளக்கம்</span>
+            </a>
+            <a href="#u1-verse" class="sidebar-sub-link" onclick="goToSection(1, 'u1-verse')">
+              <span class="wbs-sidebar-code">12.1.4</span>
+              <span>🪔 மூலப் பாடல் &amp; உரை</span>
+            </a>
+            <a href="#u1-meaning" class="sidebar-sub-link" onclick="goToSection(1, 'u1-meaning')">
+              <span class="wbs-sidebar-code">12.1.5</span>
+              <span>💡 தத்துவப் பொழிப்புரை</span>
+            </a>
+            <a href="#u1-story" class="sidebar-sub-link" onclick="goToSection(1, 'u1-story')">
+              <span class="wbs-sidebar-code">12.1.6</span>
+              <span>📜 ஆன்மீக வரலாறு</span>
+            </a>
+            <a href="#u1-living" class="sidebar-sub-link" onclick="goToSection(1, 'u1-living')">
+              <span class="wbs-sidebar-code">12.1.7</span>
+              <span>🌿 வாழ்வியல் தர்மம்</span>
+            </a>
+            <a href="#u1-sadhana" class="sidebar-sub-link" onclick="goToSection(1, 'u1-sadhana')">
+              <span class="wbs-sidebar-code">12.1.8</span>
+              <span>✅ தர்ம சாதனை</span>
+            </a>
+            <a href="#u1-quiz" class="sidebar-sub-link" onclick="goToSection(1, 'u1-quiz')">
+              <span class="wbs-sidebar-code">12.1.9</span>
+              <span>❓ சுய பரிசோதனை</span>
+            </a>
+            <a href="#u1-audio" class="sidebar-sub-link" onclick="goToSection(1, 'u1-audio')">
+              <span class="wbs-sidebar-code">12.1.10</span>
+              <span>🎵 பதிக இசை</span>
+            </a>
           </div>
         </div>
         
         <div class="sidebar-chapter-group " id="side-group-2">
           <button type="button" class="sidebar-chapter-btn " id="side-btn-2" onclick="selectChapter(2)">
             <span class="sidebar-chapter-pill">
-              <span class="sidebar-num">2</span>
+              <span class="sidebar-num">12.2</span>
               <span>திருமந்திரமும் தாயுமானவரும்</span>
             </span>
             <span class="sidebar-arrow">▶</span>
           </button>
           <div class="sidebar-subsections">
-            <a href="#u2-objectives" class="sidebar-sub-link" onclick="goToSection(2, 'u2-objectives')">🎯 கற்றல் நோக்கங்கள்</a>
-            <a href="#u2-vocab" class="sidebar-sub-link" onclick="goToSection(2, 'u2-vocab')">📖 சொற்களஞ்சியம்</a>
-            <a href="#u2-diagram" class="sidebar-sub-link" onclick="goToSection(2, 'u2-diagram')">🎨 காட்சி விளக்கம் (வரைபடம்)</a>
-            <a href="#u2-lessons" class="sidebar-sub-link" onclick="goToSection(2, 'u2-lessons')">📚 படிமுறை விளக்கம்</a>
-            <a href="#u2-verse" class="sidebar-sub-link" onclick="goToSection(2, 'u2-verse')">🪔 மூலப் பாடல் &amp; பதவுரை</a>
-            <a href="#u2-story" class="sidebar-sub-link" onclick="goToSection(2, 'u2-story')">📜 ஆன்மீக வரலாறு</a>
-            <a href="#u2-living" class="sidebar-sub-link" onclick="goToSection(2, 'u2-living')">🌿 வாழ்வியல் தர்மம்</a>
-            <a href="#u2-quiz" class="sidebar-sub-link" onclick="goToSection(2, 'u2-quiz')">❓ சுய பரிசோதனை</a>
-            <a href="#u2-sadhana" class="sidebar-sub-link" onclick="goToSection(2, 'u2-sadhana')">✅ தர்ம சாதனைப் பட்டியல்</a>
+            <a href="#u2-objectives" class="sidebar-sub-link" onclick="goToSection(2, 'u2-objectives')">
+              <span class="wbs-sidebar-code">12.2.0</span>
+              <span>🎯 கற்றல் நோக்கங்கள்</span>
+            </a>
+            <a href="#u2-vocab" class="sidebar-sub-link" onclick="goToSection(2, 'u2-vocab')">
+              <span class="wbs-sidebar-code">12.2.1</span>
+              <span>📖 சொற்களஞ்சியம்</span>
+            </a>
+            <a href="#u2-diagram" class="sidebar-sub-link" onclick="goToSection(2, 'u2-diagram')">
+              <span class="wbs-sidebar-code">12.2.2</span>
+              <span>🎨 காட்சி வரைபடம்</span>
+            </a>
+            <a href="#u2-lessons" class="sidebar-sub-link" onclick="goToSection(2, 'u2-lessons')">
+              <span class="wbs-sidebar-code">12.2.3</span>
+              <span>📚 படிமுறை விளக்கம்</span>
+            </a>
+            <a href="#u2-verse" class="sidebar-sub-link" onclick="goToSection(2, 'u2-verse')">
+              <span class="wbs-sidebar-code">12.2.4</span>
+              <span>🪔 மூலப் பாடல் &amp; உரை</span>
+            </a>
+            <a href="#u2-meaning" class="sidebar-sub-link" onclick="goToSection(2, 'u2-meaning')">
+              <span class="wbs-sidebar-code">12.2.5</span>
+              <span>💡 தத்துவப் பொழிப்புரை</span>
+            </a>
+            <a href="#u2-story" class="sidebar-sub-link" onclick="goToSection(2, 'u2-story')">
+              <span class="wbs-sidebar-code">12.2.6</span>
+              <span>📜 ஆன்மீக வரலாறு</span>
+            </a>
+            <a href="#u2-living" class="sidebar-sub-link" onclick="goToSection(2, 'u2-living')">
+              <span class="wbs-sidebar-code">12.2.7</span>
+              <span>🌿 வாழ்வியல் தர்மம்</span>
+            </a>
+            <a href="#u2-sadhana" class="sidebar-sub-link" onclick="goToSection(2, 'u2-sadhana')">
+              <span class="wbs-sidebar-code">12.2.8</span>
+              <span>✅ தர்ம சாதனை</span>
+            </a>
+            <a href="#u2-quiz" class="sidebar-sub-link" onclick="goToSection(2, 'u2-quiz')">
+              <span class="wbs-sidebar-code">12.2.9</span>
+              <span>❓ சுய பரிசோதனை</span>
+            </a>
+            <a href="#u2-audio" class="sidebar-sub-link" onclick="goToSection(2, 'u2-audio')">
+              <span class="wbs-sidebar-code">12.2.10</span>
+              <span>🎵 பதிக இசை</span>
+            </a>
           </div>
         </div>
         
         <div class="sidebar-chapter-group " id="side-group-3">
           <button type="button" class="sidebar-chapter-btn " id="side-btn-3" onclick="selectChapter(3)">
             <span class="sidebar-chapter-pill">
-              <span class="sidebar-num">3</span>
+              <span class="sidebar-num">12.3</span>
               <span>நவீன அறிவியலும் நடராஜர் தத்துவமும்</span>
             </span>
             <span class="sidebar-arrow">▶</span>
           </button>
           <div class="sidebar-subsections">
-            <a href="#u3-objectives" class="sidebar-sub-link" onclick="goToSection(3, 'u3-objectives')">🎯 கற்றல் நோக்கங்கள்</a>
-            <a href="#u3-vocab" class="sidebar-sub-link" onclick="goToSection(3, 'u3-vocab')">📖 சொற்களஞ்சியம்</a>
-            <a href="#u3-diagram" class="sidebar-sub-link" onclick="goToSection(3, 'u3-diagram')">🎨 காட்சி விளக்கம் (வரைபடம்)</a>
-            <a href="#u3-lessons" class="sidebar-sub-link" onclick="goToSection(3, 'u3-lessons')">📚 படிமுறை விளக்கம்</a>
-            <a href="#u3-verse" class="sidebar-sub-link" onclick="goToSection(3, 'u3-verse')">🪔 மூலப் பாடல் &amp; பதவுரை</a>
-            <a href="#u3-story" class="sidebar-sub-link" onclick="goToSection(3, 'u3-story')">📜 ஆன்மீக வரலாறு</a>
-            <a href="#u3-living" class="sidebar-sub-link" onclick="goToSection(3, 'u3-living')">🌿 வாழ்வியல் தர்மம்</a>
-            <a href="#u3-quiz" class="sidebar-sub-link" onclick="goToSection(3, 'u3-quiz')">❓ சுய பரிசோதனை</a>
-            <a href="#u3-sadhana" class="sidebar-sub-link" onclick="goToSection(3, 'u3-sadhana')">✅ தர்ம சாதனைப் பட்டியல்</a>
+            <a href="#u3-objectives" class="sidebar-sub-link" onclick="goToSection(3, 'u3-objectives')">
+              <span class="wbs-sidebar-code">12.3.0</span>
+              <span>🎯 கற்றல் நோக்கங்கள்</span>
+            </a>
+            <a href="#u3-vocab" class="sidebar-sub-link" onclick="goToSection(3, 'u3-vocab')">
+              <span class="wbs-sidebar-code">12.3.1</span>
+              <span>📖 சொற்களஞ்சியம்</span>
+            </a>
+            <a href="#u3-diagram" class="sidebar-sub-link" onclick="goToSection(3, 'u3-diagram')">
+              <span class="wbs-sidebar-code">12.3.2</span>
+              <span>🎨 காட்சி வரைபடம்</span>
+            </a>
+            <a href="#u3-lessons" class="sidebar-sub-link" onclick="goToSection(3, 'u3-lessons')">
+              <span class="wbs-sidebar-code">12.3.3</span>
+              <span>📚 படிமுறை விளக்கம்</span>
+            </a>
+            <a href="#u3-verse" class="sidebar-sub-link" onclick="goToSection(3, 'u3-verse')">
+              <span class="wbs-sidebar-code">12.3.4</span>
+              <span>🪔 மூலப் பாடல் &amp; உரை</span>
+            </a>
+            <a href="#u3-meaning" class="sidebar-sub-link" onclick="goToSection(3, 'u3-meaning')">
+              <span class="wbs-sidebar-code">12.3.5</span>
+              <span>💡 தத்துவப் பொழிப்புரை</span>
+            </a>
+            <a href="#u3-story" class="sidebar-sub-link" onclick="goToSection(3, 'u3-story')">
+              <span class="wbs-sidebar-code">12.3.6</span>
+              <span>📜 ஆன்மீக வரலாறு</span>
+            </a>
+            <a href="#u3-living" class="sidebar-sub-link" onclick="goToSection(3, 'u3-living')">
+              <span class="wbs-sidebar-code">12.3.7</span>
+              <span>🌿 வாழ்வியல் தர்மம்</span>
+            </a>
+            <a href="#u3-sadhana" class="sidebar-sub-link" onclick="goToSection(3, 'u3-sadhana')">
+              <span class="wbs-sidebar-code">12.3.8</span>
+              <span>✅ தர்ம சாதனை</span>
+            </a>
+            <a href="#u3-quiz" class="sidebar-sub-link" onclick="goToSection(3, 'u3-quiz')">
+              <span class="wbs-sidebar-code">12.3.9</span>
+              <span>❓ சுய பரிசோதனை</span>
+            </a>
+            <a href="#u3-audio" class="sidebar-sub-link" onclick="goToSection(3, 'u3-audio')">
+              <span class="wbs-sidebar-code">12.3.10</span>
+              <span>🎵 பதிக இசை</span>
+            </a>
           </div>
         </div>
         
         <div class="sidebar-chapter-group " id="side-group-4">
           <button type="button" class="sidebar-chapter-btn " id="side-btn-4" onclick="selectChapter(4)">
             <span class="sidebar-chapter-pill">
-              <span class="sidebar-num">4</span>
+              <span class="sidebar-num">12.4</span>
               <span>சுற்றுச்சூழல் தர்மம் & வேத சனாதன தீர்வுகள்</span>
             </span>
             <span class="sidebar-arrow">▶</span>
           </button>
           <div class="sidebar-subsections">
-            <a href="#u4-objectives" class="sidebar-sub-link" onclick="goToSection(4, 'u4-objectives')">🎯 கற்றல் நோக்கங்கள்</a>
-            <a href="#u4-vocab" class="sidebar-sub-link" onclick="goToSection(4, 'u4-vocab')">📖 சொற்களஞ்சியம்</a>
-            <a href="#u4-diagram" class="sidebar-sub-link" onclick="goToSection(4, 'u4-diagram')">🎨 காட்சி விளக்கம் (வரைபடம்)</a>
-            <a href="#u4-lessons" class="sidebar-sub-link" onclick="goToSection(4, 'u4-lessons')">📚 படிமுறை விளக்கம்</a>
-            <a href="#u4-verse" class="sidebar-sub-link" onclick="goToSection(4, 'u4-verse')">🪔 மூலப் பாடல் &amp; பதவுரை</a>
-            <a href="#u4-story" class="sidebar-sub-link" onclick="goToSection(4, 'u4-story')">📜 ஆன்மீக வரலாறு</a>
-            <a href="#u4-living" class="sidebar-sub-link" onclick="goToSection(4, 'u4-living')">🌿 வாழ்வியல் தர்மம்</a>
-            <a href="#u4-quiz" class="sidebar-sub-link" onclick="goToSection(4, 'u4-quiz')">❓ சுய பரிசோதனை</a>
-            <a href="#u4-sadhana" class="sidebar-sub-link" onclick="goToSection(4, 'u4-sadhana')">✅ தர்ம சாதனைப் பட்டியல்</a>
+            <a href="#u4-objectives" class="sidebar-sub-link" onclick="goToSection(4, 'u4-objectives')">
+              <span class="wbs-sidebar-code">12.4.0</span>
+              <span>🎯 கற்றல் நோக்கங்கள்</span>
+            </a>
+            <a href="#u4-vocab" class="sidebar-sub-link" onclick="goToSection(4, 'u4-vocab')">
+              <span class="wbs-sidebar-code">12.4.1</span>
+              <span>📖 சொற்களஞ்சியம்</span>
+            </a>
+            <a href="#u4-diagram" class="sidebar-sub-link" onclick="goToSection(4, 'u4-diagram')">
+              <span class="wbs-sidebar-code">12.4.2</span>
+              <span>🎨 காட்சி வரைபடம்</span>
+            </a>
+            <a href="#u4-lessons" class="sidebar-sub-link" onclick="goToSection(4, 'u4-lessons')">
+              <span class="wbs-sidebar-code">12.4.3</span>
+              <span>📚 படிமுறை விளக்கம்</span>
+            </a>
+            <a href="#u4-verse" class="sidebar-sub-link" onclick="goToSection(4, 'u4-verse')">
+              <span class="wbs-sidebar-code">12.4.4</span>
+              <span>🪔 மூலப் பாடல் &amp; உரை</span>
+            </a>
+            <a href="#u4-meaning" class="sidebar-sub-link" onclick="goToSection(4, 'u4-meaning')">
+              <span class="wbs-sidebar-code">12.4.5</span>
+              <span>💡 தத்துவப் பொழிப்புரை</span>
+            </a>
+            <a href="#u4-story" class="sidebar-sub-link" onclick="goToSection(4, 'u4-story')">
+              <span class="wbs-sidebar-code">12.4.6</span>
+              <span>📜 ஆன்மீக வரலாறு</span>
+            </a>
+            <a href="#u4-living" class="sidebar-sub-link" onclick="goToSection(4, 'u4-living')">
+              <span class="wbs-sidebar-code">12.4.7</span>
+              <span>🌿 வாழ்வியல் தர்மம்</span>
+            </a>
+            <a href="#u4-sadhana" class="sidebar-sub-link" onclick="goToSection(4, 'u4-sadhana')">
+              <span class="wbs-sidebar-code">12.4.8</span>
+              <span>✅ தர்ம சாதனை</span>
+            </a>
+            <a href="#u4-quiz" class="sidebar-sub-link" onclick="goToSection(4, 'u4-quiz')">
+              <span class="wbs-sidebar-code">12.4.9</span>
+              <span>❓ சுய பரிசோதனை</span>
+            </a>
+            <a href="#u4-audio" class="sidebar-sub-link" onclick="goToSection(4, 'u4-audio')">
+              <span class="wbs-sidebar-code">12.4.10</span>
+              <span>🎵 பதிக இசை</span>
+            </a>
           </div>
         </div>
         
         <div class="sidebar-chapter-group " id="side-group-5">
           <button type="button" class="sidebar-chapter-btn " id="side-btn-5" onclick="selectChapter(5)">
             <span class="sidebar-chapter-pill">
-              <span class="sidebar-num">5</span>
+              <span class="sidebar-num">12.5</span>
               <span>உலக சமுதாயத்தில் சனாதன தர்ம நெறியாளன்</span>
             </span>
             <span class="sidebar-arrow">▶</span>
           </button>
           <div class="sidebar-subsections">
-            <a href="#u5-objectives" class="sidebar-sub-link" onclick="goToSection(5, 'u5-objectives')">🎯 கற்றல் நோக்கங்கள்</a>
-            <a href="#u5-vocab" class="sidebar-sub-link" onclick="goToSection(5, 'u5-vocab')">📖 சொற்களஞ்சியம்</a>
-            <a href="#u5-diagram" class="sidebar-sub-link" onclick="goToSection(5, 'u5-diagram')">🎨 காட்சி விளக்கம் (வரைபடம்)</a>
-            <a href="#u5-lessons" class="sidebar-sub-link" onclick="goToSection(5, 'u5-lessons')">📚 படிமுறை விளக்கம்</a>
-            <a href="#u5-verse" class="sidebar-sub-link" onclick="goToSection(5, 'u5-verse')">🪔 மூலப் பாடல் &amp; பதவுரை</a>
-            <a href="#u5-story" class="sidebar-sub-link" onclick="goToSection(5, 'u5-story')">📜 ஆன்மீக வரலாறு</a>
-            <a href="#u5-living" class="sidebar-sub-link" onclick="goToSection(5, 'u5-living')">🌿 வாழ்வியல் தர்மம்</a>
-            <a href="#u5-quiz" class="sidebar-sub-link" onclick="goToSection(5, 'u5-quiz')">❓ சுய பரிசோதனை</a>
-            <a href="#u5-sadhana" class="sidebar-sub-link" onclick="goToSection(5, 'u5-sadhana')">✅ தர்ம சாதனைப் பட்டியல்</a>
+            <a href="#u5-objectives" class="sidebar-sub-link" onclick="goToSection(5, 'u5-objectives')">
+              <span class="wbs-sidebar-code">12.5.0</span>
+              <span>🎯 கற்றல் நோக்கங்கள்</span>
+            </a>
+            <a href="#u5-vocab" class="sidebar-sub-link" onclick="goToSection(5, 'u5-vocab')">
+              <span class="wbs-sidebar-code">12.5.1</span>
+              <span>📖 சொற்களஞ்சியம்</span>
+            </a>
+            <a href="#u5-diagram" class="sidebar-sub-link" onclick="goToSection(5, 'u5-diagram')">
+              <span class="wbs-sidebar-code">12.5.2</span>
+              <span>🎨 காட்சி வரைபடம்</span>
+            </a>
+            <a href="#u5-lessons" class="sidebar-sub-link" onclick="goToSection(5, 'u5-lessons')">
+              <span class="wbs-sidebar-code">12.5.3</span>
+              <span>📚 படிமுறை விளக்கம்</span>
+            </a>
+            <a href="#u5-verse" class="sidebar-sub-link" onclick="goToSection(5, 'u5-verse')">
+              <span class="wbs-sidebar-code">12.5.4</span>
+              <span>🪔 மூலப் பாடல் &amp; உரை</span>
+            </a>
+            <a href="#u5-meaning" class="sidebar-sub-link" onclick="goToSection(5, 'u5-meaning')">
+              <span class="wbs-sidebar-code">12.5.5</span>
+              <span>💡 தத்துவப் பொழிப்புரை</span>
+            </a>
+            <a href="#u5-story" class="sidebar-sub-link" onclick="goToSection(5, 'u5-story')">
+              <span class="wbs-sidebar-code">12.5.6</span>
+              <span>📜 ஆன்மீக வரலாறு</span>
+            </a>
+            <a href="#u5-living" class="sidebar-sub-link" onclick="goToSection(5, 'u5-living')">
+              <span class="wbs-sidebar-code">12.5.7</span>
+              <span>🌿 வாழ்வியல் தர்மம்</span>
+            </a>
+            <a href="#u5-sadhana" class="sidebar-sub-link" onclick="goToSection(5, 'u5-sadhana')">
+              <span class="wbs-sidebar-code">12.5.8</span>
+              <span>✅ தர்ம சாதனை</span>
+            </a>
+            <a href="#u5-quiz" class="sidebar-sub-link" onclick="goToSection(5, 'u5-quiz')">
+              <span class="wbs-sidebar-code">12.5.9</span>
+              <span>❓ சுய பரிசோதனை</span>
+            </a>
+            <a href="#u5-audio" class="sidebar-sub-link" onclick="goToSection(5, 'u5-audio')">
+              <span class="wbs-sidebar-code">12.5.10</span>
+              <span>🎵 பதிக இசை</span>
+            </a>
           </div>
         </div>
         
@@ -323,19 +501,26 @@
             
             <div class="lesson-card-head">
               <div>
-                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 1 (Chapter 1)</span>
-                <div class="lesson-main-title" style="margin-top:12px;">ஜீவன் முக்தி & விதேக முக்தி — ஆன்ம விடுதலை</div>
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+                  <span class="wbs-code wbs-code-primary">WBS 12.1</span>
+                  <span style="background:rgba(255,255,255,0.08); color:#f8fafc; font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px; letter-spacing:0.5px;">அத்தியாயம் 1 (Chapter 1)</span>
+                </div>
+                <div class="lesson-main-title">ஜீவன் முக்தி & விதேக முக்தி — ஆன்ம விடுதலை</div>
                 <div class="lesson-sub-title">வாழ்விலேயே விடுதலை பெற்ற ஞானியின் இலக்கணம்</div>
               </div>
-              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12);">
-                தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)
+              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:6px;">
+                <span class="wbs-code">GRADE 12</span>
+                <span>தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)</span>
               </div>
             </div>
 
             <!-- 1. Learning Objectives -->
             
         <div id="u1-objectives" class="objectives-card">
-          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <div class="objectives-title">
+            <span class="wbs-code">WBS 12.1.0</span>
+            <span>🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</span>
+          </div>
           <ul class="objectives-list">
             <li>அன்றாட வாழ்வில் கடைப்பிடிக்க வேண்டிய உயர்ந்த தர்ம நெறிகளைப் புரிந்துகொள்ளுதல்.</li><li>பெற்றோரையும் ஆசிரியரையும் மதித்து நற்பண்புகளுடன் விளங்குதல்.</li><li>இறை நம்பிக்கையுடன் கூடிய நேர்மையான மாணவராகத் திகழ்தல்.</li>
           </ul>
@@ -345,23 +530,33 @@
             <!-- 2. Vocabulary Builder -->
             
         <div id="u1-vocab" class="vocab-section">
-          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
-            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.1.1</span>
+            <span>📖 சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
           </h4>
           <div class="vocab-grid">
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 தர்மம் (Dharma)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.1.1.1</span>
+                <span>📌 தர்மம் (Dharma)</span>
+              </div>
               <div class="vocab-meaning">அனைத்து உயிர்களையும் தாங்கி நிற்கும் பேரறம்; நேர்மை மற்றும் கடமை.</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 சத்சங்கம் (Satsanga)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.1.1.2</span>
+                <span>📌 சத்சங்கம் (Satsanga)</span>
+              </div>
               <div class="vocab-meaning">நல்ல சிந்தனை உடைய பெரியோர்களுடனும் நல்ல நண்பர்களுடனும் இணைந்திருத்தல்.</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 ஜீவகாருண்யம் (Jivakarunyam)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.1.1.3</span>
+                <span>📌 ஜீவகாருண்யம் (Jivakarunyam)</span>
+              </div>
               <div class="vocab-meaning">எல்லா உயிர்களிடத்தும் இரக்கமும் கருணையும் கொண்டு வாழ்தல்.</div>
             </div>
             
@@ -371,7 +566,11 @@
 
             <!-- 3. Visual SVG Diagram / Infographic -->
             
-        <div id="u1-diagram">
+        <div id="u1-diagram" style="margin: 28px 0;">
+          <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+            <span class="wbs-code">WBS 12.1.2</span>
+            <span style="font-size:0.88rem; color:#94a3b8; font-weight:600;">காட்சி வரைபடம் &amp; கருத்துப் படிமம் (Visual Schema)</span>
+          </div>
           
     <div class="visual-diagram-card">
       <div class="diagram-header">
@@ -431,29 +630,39 @@
 
             <!-- 4. Paced Step-by-Step Deep Dive Sections -->
             <div id="u1-lessons" style="margin: 28px 0;">
-              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.1.3</span>
+                <span>📚 படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
               </h4>
               <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
                 ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
               </p>
               
             <div class="lesson-step-section">
-              <div class="lesson-step-title">1. தர்மத்தின் மேன்மை (The Greatness of Dharma)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.1.3.1</span>
+                <span>1. தர்மத்தின் மேன்மை (The Greatness of Dharma)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>'தர்மமே வெல்லும்; தர்மத்தைக் காப்பவனை தர்மம் காக்கும் (தFilter: தர்மோ ரக்ஷதி ரக்ஷிதஃ)' என்பது நமது முன்னோர்களின் அழியாத வாக்கு. உண்மை, நேர்மை, இன்சொல், பிறருக்கு உதவுதல் ஆகியவை ஒரு மாணவனின் உண்மையான அணிகலன்களாகும்.</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.1.3.2</span>
+                <span>2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>ஆசிரியரை 'குரு'வாகப் போற்றி, பணிவோடு வினாக்கள் கேட்டு மெய்யறிவைப் பெறுவதே பாரத நாட்டின் சிறந்த கல்வி முறையாகும். பணிவு உள்ள இடத்திலேயே ஞானம் தங்கும்.</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">3. உயிர்களிடத்தில் அன்பு (Universal Compassion)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.1.3.3</span>
+                <span>3. உயிர்களிடத்தில் அன்பு (Universal Compassion)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>மனிதர்கள் மட்டுமல்லாமல் வாயில்லாப் பிராணிகள், பறவைகள், தாவரங்கள் என அனைத்து இயற்கைக்கும் மதிப்பளித்து, அன்பு காட்டுவதே மெய்யான ஆன்மீகமாகும்.</p>
               </div>
@@ -463,31 +672,36 @@
 
             <!-- 5. Sacred Verse / Mantra Box -->
             <div id="u1-verse" style="background:rgba(255,255,255,0.03); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">
+                <span class="wbs-code">WBS 12.1.4</span> 📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:
+              </div>
               <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#ffffff; line-height:1.9; font-weight:600;">அவன்அரு ளாலே அவன்தாள் வணங்கிச்<br>சிந்தை மகிழச் சிவபுரா ணந்தன்னை<br>முந்தை வினைமுழுதும் ஓய உரைப்பன்யான்.</div>
               <div style="font-size:0.9rem; color:var(--gold); margin-top:10px; font-weight:600;">— எட்டாம் திருமுறை — மாணிக்கவாசகர் சிவபுராணம்</div>
             </div>
 
             <!-- 6. Philosophical Meaning -->
             <div id="u1-meaning" style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.1.5</span>
+                <span>💡 பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;"><div style='margin-left:14px; margin-top:5px;'>• <strong style="color:var(--gold-soft);">ஜீவன் முக்தர்</strong>: உடலோடு இந்த பூமியில் வாழும் போதே மும்மலங்களின் பற்றுகளிலிருந்து விடுபட்டு, எல்லாவற்றிலும் சிவத்தைக் கண்டு பேரின்பத்தில் திளைப்பவர். அவர்க்கு விருப்பு வெறுப்பு இல்லை; கர்ம வினைகள் அவரைத் தீண்டாது.</div><br><div style='margin-left:14px; margin-top:5px;'>• <strong style="color:var(--gold-soft);">விதேக முக்தர்</strong>: உடல் மறைந்த பின் இறைவனின் பரஞ்சோதியில் இரண்டறக் கலந்து பிறப்பிறப்பற்ற நிலையை அடைபவர்.</div></div>
             </div>
 
             <!-- 7. Inspirational Story -->
             <div id="u1-story" style="margin: 28px 0; background:rgba(255,255,255,0.02); border-radius:14px; padding:22px; border:1px solid rgba(255,255,255,0.08);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.1.6</span>
+                <span>📜 ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">ரமண மகரிஷி திருவண்ணாமலையில் மௌனமாக அமர்ந்திருந்தார். அவர் உடலுக்குப் புற்றுநோய் வந்த போதும், 'உடலுக்கு நோய் வந்துள்ளது, ஆன்மாவிற்கு எந்த நோயும் இல்லை' என்று புன்னகையோடு இருந்தார். தன்னை அணுகிய விலங்குகள், பறவைகள், பக்தர்களிடம் பேதமின்றி அதே தெய்வீக அன்பைப் பொழிந்தார். இவரே நவீன காலத்து ஜீவன் முக்தர்.</div>
             </div>
 
             <!-- 8. Dharmic Living in Daily Life -->
             <div id="u1-living" style="margin: 28px 0; background:rgba(45,212,191,0.05); border-radius:14px; padding:22px; border:1px solid rgba(45,212,191,0.25);">
-              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.1.7</span>
+                <span>🌿 மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">வாழ்க்கையில் வெற்றி தோல்விகள், இன்ப துன்பங்கள் வரும் போது சமநிலை காக்க வேண்டும் (சமத்துவம் யோக உச்யதே). 'எல்லாம் அவன் செயல்' என்ற சரணாகதி உணர்வோடு வாழும் போது மனதில் அச்சமும் கவலையும் மறைந்துவிடும்.</div>
             </div>
@@ -496,22 +710,32 @@
             
         <div id="u1-sadhana" class="sadhana-box">
           <div class="sadhana-header">
-            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+            <span class="wbs-code">WBS 12.1.8</span>
+            <span>🌿 மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
           </div>
           
             <div class="sadhana-item">
               <input type="checkbox" id="g12u1s0">
-              <label for="g12u1s0">பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.</label>
+              <label for="g12u1s0">
+                <span class="wbs-code">WBS 12.1.8.1</span>
+                <span>பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u1s1">
-              <label for="g12u1s1">செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.</label>
+              <label for="g12u1s1">
+                <span class="wbs-code">WBS 12.1.8.2</span>
+                <span>செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u1s2">
-              <label for="g12u1s2">எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்.</label>
+              <label for="g12u1s2">
+                <span class="wbs-code">WBS 12.1.8.3</span>
+                <span>எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்.</span>
+              </label>
             </div>
             
         </div>
@@ -520,8 +744,9 @@
             <!-- 10. Self-Learning Interactive Quiz -->
             
         <div id="u1-quiz" class="quiz-section">
-          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.1.9</span>
+            <span>❓ சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
           </h4>
           <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
             கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
@@ -530,7 +755,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 1:</strong> 'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.1.9.1</span>
+                    <strong>வினா 1:</strong> 'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -543,7 +771,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 2:</strong> மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.1.9.2</span>
+                    <strong>வினா 2:</strong> மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -556,7 +787,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 3:</strong> ஜீவகாருண்யம் என்றால் என்ன?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.1.9.3</span>
+                    <strong>வினா 3:</strong> ஜீவகாருண்யம் என்றால் என்ன?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -572,7 +806,10 @@
             <!-- 11. Audio Link to Hymns -->
             <div id="u1-audio" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
               <div>
-                <strong style="color:#f8fafc;">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <strong style="color:#f8fafc; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  <span class="wbs-code">WBS 12.1.10</span>
+                  <span>🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</span>
+                </strong>
                 <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
               </div>
               <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
@@ -597,19 +834,26 @@
             
             <div class="lesson-card-head">
               <div>
-                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 2 (Chapter 2)</span>
-                <div class="lesson-main-title" style="margin-top:12px;">திருமந்திரமும் தாயுமானவரும் — உலகளாவிய சமரச பக்தி</div>
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+                  <span class="wbs-code wbs-code-primary">WBS 12.2</span>
+                  <span style="background:rgba(255,255,255,0.08); color:#f8fafc; font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px; letter-spacing:0.5px;">அத்தியாயம் 2 (Chapter 2)</span>
+                </div>
+                <div class="lesson-main-title">திருமந்திரமும் தாயுமானவரும் — உலகளாவிய சமரச பக்தி</div>
                 <div class="lesson-sub-title">ஒன்றே குலமும் ஒருவனே தேவனும் • அன்பே சிவம்</div>
               </div>
-              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12);">
-                தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)
+              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:6px;">
+                <span class="wbs-code">GRADE 12</span>
+                <span>தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)</span>
               </div>
             </div>
 
             <!-- 1. Learning Objectives -->
             
         <div id="u2-objectives" class="objectives-card">
-          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <div class="objectives-title">
+            <span class="wbs-code">WBS 12.2.0</span>
+            <span>🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</span>
+          </div>
           <ul class="objectives-list">
             <li>அன்றாட வாழ்வில் கடைப்பிடிக்க வேண்டிய உயர்ந்த தர்ம நெறிகளைப் புரிந்துகொள்ளுதல்.</li><li>பெற்றோரையும் ஆசிரியரையும் மதித்து நற்பண்புகளுடன் விளங்குதல்.</li><li>இறை நம்பிக்கையுடன் கூடிய நேர்மையான மாணவராகத் திகழ்தல்.</li>
           </ul>
@@ -619,23 +863,33 @@
             <!-- 2. Vocabulary Builder -->
             
         <div id="u2-vocab" class="vocab-section">
-          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
-            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.2.1</span>
+            <span>📖 சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
           </h4>
           <div class="vocab-grid">
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 தர்மம் (Dharma)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.2.1.1</span>
+                <span>📌 தர்மம் (Dharma)</span>
+              </div>
               <div class="vocab-meaning">அனைத்து உயிர்களையும் தாங்கி நிற்கும் பேரறம்; நேர்மை மற்றும் கடமை.</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 சத்சங்கம் (Satsanga)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.2.1.2</span>
+                <span>📌 சத்சங்கம் (Satsanga)</span>
+              </div>
               <div class="vocab-meaning">நல்ல சிந்தனை உடைய பெரியோர்களுடனும் நல்ல நண்பர்களுடனும் இணைந்திருத்தல்.</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 ஜீவகாருண்யம் (Jivakarunyam)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.2.1.3</span>
+                <span>📌 ஜீவகாருண்யம் (Jivakarunyam)</span>
+              </div>
               <div class="vocab-meaning">எல்லா உயிர்களிடத்தும் இரக்கமும் கருணையும் கொண்டு வாழ்தல்.</div>
             </div>
             
@@ -645,7 +899,11 @@
 
             <!-- 3. Visual SVG Diagram / Infographic -->
             
-        <div id="u2-diagram">
+        <div id="u2-diagram" style="margin: 28px 0;">
+          <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+            <span class="wbs-code">WBS 12.2.2</span>
+            <span style="font-size:0.88rem; color:#94a3b8; font-weight:600;">காட்சி வரைபடம் &amp; கருத்துப் படிமம் (Visual Schema)</span>
+          </div>
           
     <div class="visual-diagram-card">
       <div class="diagram-header">
@@ -705,29 +963,39 @@
 
             <!-- 4. Paced Step-by-Step Deep Dive Sections -->
             <div id="u2-lessons" style="margin: 28px 0;">
-              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.2.3</span>
+                <span>📚 படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
               </h4>
               <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
                 ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
               </p>
               
             <div class="lesson-step-section">
-              <div class="lesson-step-title">1. தர்மத்தின் மேன்மை (The Greatness of Dharma)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.2.3.1</span>
+                <span>1. தர்மத்தின் மேன்மை (The Greatness of Dharma)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>'தர்மமே வெல்லும்; தர்மத்தைக் காப்பவனை தர்மம் காக்கும் (தFilter: தர்மோ ரக்ஷதி ரக்ஷிதஃ)' என்பது நமது முன்னோர்களின் அழியாத வாக்கு. உண்மை, நேர்மை, இன்சொல், பிறருக்கு உதவுதல் ஆகியவை ஒரு மாணவனின் உண்மையான அணிகலன்களாகும்.</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.2.3.2</span>
+                <span>2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>ஆசிரியரை 'குரு'வாகப் போற்றி, பணிவோடு வினாக்கள் கேட்டு மெய்யறிவைப் பெறுவதே பாரத நாட்டின் சிறந்த கல்வி முறையாகும். பணிவு உள்ள இடத்திலேயே ஞானம் தங்கும்.</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">3. உயிர்களிடத்தில் அன்பு (Universal Compassion)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.2.3.3</span>
+                <span>3. உயிர்களிடத்தில் அன்பு (Universal Compassion)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>மனிதர்கள் மட்டுமல்லாமல் வாயில்லாப் பிராணிகள், பறவைகள், தாவரங்கள் என அனைத்து இயற்கைக்கும் மதிப்பளித்து, அன்பு காட்டுவதே மெய்யான ஆன்மீகமாகும்.</p>
               </div>
@@ -737,31 +1005,36 @@
 
             <!-- 5. Sacred Verse / Mantra Box -->
             <div id="u2-verse" style="background:rgba(255,255,255,0.03); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">
+                <span class="wbs-code">WBS 12.2.4</span> 📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:
+              </div>
               <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#ffffff; line-height:1.9; font-weight:600;">ஒன்றே குலமும் ஒருவனே தேவனும்<br>நன்றே நினைமின் நமனில்லை நாணாமே<br>சென்றே புகும்கதி இல்லைநும் சித்தத்து<br>நின்றே நிலைபெற நீர்நினைந் துய்மினே.<br><br>அன்பும் சிவமும் இரண்டென்பர் அறிவிலார்<br>அன்பே சிவமாவ தாரும் அறிகிலார்.<br><br>எல்லாரும் இன்புற்று இருக்க நினைப்பதுவே<br>அல்லாமல் வேறொன் றறியேன் பராபரமே.</div>
               <div style="font-size:0.9rem; color:var(--gold); margin-top:10px; font-weight:600;">— திருமூலர் திருமந்திரம் & தாயுமானவர் திருப்பாடல்கள்</div>
             </div>
 
             <!-- 6. Philosophical Meaning -->
             <div id="u2-meaning" style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.2.5</span>
+                <span>💡 பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">மனித குலம் ஒன்றே; முழுமுதற் கடவுளும் ஒருவனே. நன்மையான தர்மத்தையே நினையுங்கள், எம பயம் இல்லை. அன்பும் கடவுளும் வேறு வேறு அல்ல; தூய அன்பே கடவுள். உலகில் உள்ள மனிதர்கள், உயிர்கள் யாவும் இன்புற்று வாழ வேண்டும் என்பதைத் தவிர என் மனதில் வேறு எந்த ஆசையும் இல்லை என்று தாயுமானவர் வேண்டுகிறார்.</div>
             </div>
 
             <!-- 7. Inspirational Story -->
             <div id="u2-story" style="margin: 28px 0; background:rgba(255,255,255,0.02); border-radius:14px; padding:22px; border:1px solid rgba(255,255,255,0.08);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.2.6</span>
+                <span>📜 ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">வள்ளலார் பெருமான் 'வாடிய பயிரைக் கண்டபோதெல்லாம் வாடினேன்' என்று பாடினார். தாயுமானவர் திருச்சிராப்பள்ளியில் அமைச்சராக இருந்த போதும், ஆன்மீக விழிப்புற்று காடு மலைகளில் தியானித்து 'பராபரக் கண்ணி' மூலம் உலக அமைதிக்காகப் பாடினார்.</div>
             </div>
 
             <!-- 8. Dharmic Living in Daily Life -->
             <div id="u2-living" style="margin: 28px 0; background:rgba(45,212,191,0.05); border-radius:14px; padding:22px; border:1px solid rgba(45,212,191,0.25);">
-              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.2.7</span>
+                <span>🌿 மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">மதம், இனம், மொழி, நாடு ஆகிய எல்லைகளைக் கடந்து மனித நேயத்தைப் போற்ற வேண்டும். எவரிடத்தும் வெறுப்பைக் காட்டக் கூடாது. அன்பே கடவுள் என்பதை அன்றாடச் செயல்களில் வெளிப்படுத்த வேண்டும்.</div>
             </div>
@@ -770,22 +1043,32 @@
             
         <div id="u2-sadhana" class="sadhana-box">
           <div class="sadhana-header">
-            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+            <span class="wbs-code">WBS 12.2.8</span>
+            <span>🌿 மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
           </div>
           
             <div class="sadhana-item">
               <input type="checkbox" id="g12u2s0">
-              <label for="g12u2s0">பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.</label>
+              <label for="g12u2s0">
+                <span class="wbs-code">WBS 12.2.8.1</span>
+                <span>பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u2s1">
-              <label for="g12u2s1">செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.</label>
+              <label for="g12u2s1">
+                <span class="wbs-code">WBS 12.2.8.2</span>
+                <span>செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u2s2">
-              <label for="g12u2s2">எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்.</label>
+              <label for="g12u2s2">
+                <span class="wbs-code">WBS 12.2.8.3</span>
+                <span>எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்.</span>
+              </label>
             </div>
             
         </div>
@@ -794,8 +1077,9 @@
             <!-- 10. Self-Learning Interactive Quiz -->
             
         <div id="u2-quiz" class="quiz-section">
-          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.2.9</span>
+            <span>❓ சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
           </h4>
           <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
             கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
@@ -804,7 +1088,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 1:</strong> 'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.2.9.1</span>
+                    <strong>வினா 1:</strong> 'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -817,7 +1104,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 2:</strong> மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.2.9.2</span>
+                    <strong>வினா 2:</strong> மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -830,7 +1120,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 3:</strong> ஜீவகாருண்யம் என்றால் என்ன?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.2.9.3</span>
+                    <strong>வினா 3:</strong> ஜீவகாருண்யம் என்றால் என்ன?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -846,7 +1139,10 @@
             <!-- 11. Audio Link to Hymns -->
             <div id="u2-audio" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
               <div>
-                <strong style="color:#f8fafc;">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <strong style="color:#f8fafc; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  <span class="wbs-code">WBS 12.2.10</span>
+                  <span>🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</span>
+                </strong>
                 <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
               </div>
               <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
@@ -871,19 +1167,26 @@
             
             <div class="lesson-card-head">
               <div>
-                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 3 (Chapter 3)</span>
-                <div class="lesson-main-title" style="margin-top:12px;">நவீன அறிவியலும் நடராஜர் தத்துவமும் — அண்டப் பெருநடனம்</div>
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+                  <span class="wbs-code wbs-code-primary">WBS 12.3</span>
+                  <span style="background:rgba(255,255,255,0.08); color:#f8fafc; font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px; letter-spacing:0.5px;">அத்தியாயம் 3 (Chapter 3)</span>
+                </div>
+                <div class="lesson-main-title">நவீன அறிவியலும் நடராஜர் தத்துவமும் — அண்டப் பெருநடனம்</div>
                 <div class="lesson-sub-title">குவாண்டம் இயற்பியலும் சிதம்பர ரகசியமும்</div>
               </div>
-              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12);">
-                தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)
+              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:6px;">
+                <span class="wbs-code">GRADE 12</span>
+                <span>தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)</span>
               </div>
             </div>
 
             <!-- 1. Learning Objectives -->
             
         <div id="u3-objectives" class="objectives-card">
-          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <div class="objectives-title">
+            <span class="wbs-code">WBS 12.3.0</span>
+            <span>🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</span>
+          </div>
           <ul class="objectives-list">
             <li>நடராஜ பெருமானின் ஐந்து திருக்கர/திருவடி இயக்கங்களின் தத்துவத்தை அறிதல்.</li><li>நவீன அணு இயற்பியலும் (Quantum Physics) நடராஜர் தாண்டவமும் எவ்வாறு ஒத்திருக்கின்றன என்பதைப் புரிந்துகொள்ளுதல்.</li><li>சிதம்பர ரகசியத்தின் மெய்ப்பொருளான 'வெட்டவெளி' (ஆகாசம்) தத்துவத்தைக் கற்றல்.</li>
           </ul>
@@ -893,23 +1196,33 @@
             <!-- 2. Vocabulary Builder -->
             
         <div id="u3-vocab" class="vocab-section">
-          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
-            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.3.1</span>
+            <span>📖 சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
           </h4>
           <div class="vocab-grid">
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 ஆனந்த தாண்டவம்</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.3.1.1</span>
+                <span>📌 ஆனந்த தாண்டவம்</span>
+              </div>
               <div class="vocab-meaning">சிதம்பரப் பொன்னம்பலத்தில் சிவபெருமான் இடைவிடாது நிகழ்த்தும் பிரபஞ்சப் பேரானந்தத் திருநடனம்.</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 பஞ்ச கிருத்தியம் (5 Divine Deeds)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.3.1.2</span>
+                <span>📌 பஞ்ச கிருத்தியம் (5 Divine Deeds)</span>
+              </div>
               <div class="vocab-meaning">சிருஷ்டி (படைத்தல்), திதி (காத்தல்), சங்காரம் (அழித்தல்), திரோபாவம் (மறைத்தல்), அனுக்ரகம் (முத்தியளித்தல்).</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 முயலகன்</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.3.1.3</span>
+                <span>📌 முயலகன்</span>
+              </div>
               <div class="vocab-meaning">நடராஜரின் ஊன்றிய திருவடியின் கீழ் கிடக்கும் குள்ள வடிவம்; மனிதனின் ஆணவ அறியாமையின் குறியீடு.</div>
             </div>
             
@@ -919,7 +1232,11 @@
 
             <!-- 3. Visual SVG Diagram / Infographic -->
             
-        <div id="u3-diagram">
+        <div id="u3-diagram" style="margin: 28px 0;">
+          <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+            <span class="wbs-code">WBS 12.3.2</span>
+            <span style="font-size:0.88rem; color:#94a3b8; font-weight:600;">காட்சி வரைபடம் &amp; கருத்துப் படிமம் (Visual Schema)</span>
+          </div>
           
     <div class="visual-diagram-card">
       <div class="diagram-header">
@@ -965,29 +1282,39 @@
 
             <!-- 4. Paced Step-by-Step Deep Dive Sections -->
             <div id="u3-lessons" style="margin: 28px 0;">
-              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.3.3</span>
+                <span>📚 படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
               </h4>
               <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
                 ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
               </p>
               
             <div class="lesson-step-section">
-              <div class="lesson-step-title">1. நடராஜரின் திருவுருவக் குறியீடுகள் (Divine Iconography of Nataraja)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.3.3.1</span>
+                <span>1. நடராஜரின் திருவுருவக் குறியீடுகள் (Divine Iconography of Nataraja)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>வலது மேல் கையில் உடுக்கை — பிரபஞ்ச அணுக்களையும் ஒலியையும் படைத்தல் (சிருஷ்டி); இடது மேல் கையில் எரியகழல் — பழையவற்றை மாற்றி புதியவற்றிற்கு இடமளிக்கும் அழித்தல் (சங்காரம்); வலது கீழ்க் கையில் அபய முத்திரை — அஞ்சேல் என அனைத்து உயிர்களையும் காத்தல் (திதி); ஊன்றிய வலது திருவடி — ஆணவ அறியாமையான முயலகனை அடக்கி மறைத்தல் (திரோபாவம்); தூக்கிய இடது திருவடி — தன்னிடம் சரணடைந்த ஆன்மாக்களுக்குப் பிறவித் துன்பம் நீக்கி முக்தி அருளுதல் (அனுக்ரகம்).</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">2. குவாண்டம் இயற்பியலும் நடராஜர் நடனமும் (CERN & Fritjof Capra)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.3.3.2</span>
+                <span>2. குவாண்டம் இயற்பியலும் நடராஜர் நடனமும் (CERN & Fritjof Capra)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>சுவிட்சர்லாந்தின் உலகப் புகழ்பெற்ற அணு ஆராய்ச்சி மையமான 'CERN' வாசலில் 2 மீட்டர் உயர நடராஜர் திருவுருவம் நிறுவப்பட்டுள்ளது. இயற்பியலாளர் பிரிட்ஜோஃப் காப்ரா (Fritjof Capra) தனது 'The Tao of Physics' நூலில், 'அணுவுக்குள் இருக்கும் நுண்ணிய துகள்கள் இடையறாது சுழன்று இயங்குவது சிவபெருமானின் ஆனந்த தாண்டவத்திற்கு ஒப்பானது' என வியந்து கூறுகிறார்.</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">3. சிதம்பர ரகசியம் (The Secret of Void / Chidambara Rahasya)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.3.3.3</span>
+                <span>3. சிதம்பர ரகசியம் (The Secret of Void / Chidambara Rahasya)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>சிதம்பரக் கோயிலில் நடராஜர் திருவுருவத்திற்கு அருகில் ஒரு திரை இருக்கும். அந்தத் திரையை விலக்கினால் அங்கு உருவம் எதுவும் இருக்காது; தங்க வில்வ மாலை மட்டுமே தொங்கும். இறைவன் உருவமாகவும் இருக்கிறார் (சகளன்), உருவமற்ற வெட்டவெளியாகவும் எங்கும் வியாபித்திருக்கிறார் (நிஷ்களன்) என்பதை இது உணர்த்துகிறது.</p>
               </div>
@@ -997,31 +1324,36 @@
 
             <!-- 5. Sacred Verse / Mantra Box -->
             <div id="u3-verse" style="background:rgba(255,255,255,0.03); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">
+                <span class="wbs-code">WBS 12.3.4</span> 📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:
+              </div>
               <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#ffffff; line-height:1.9; font-weight:600;">ஆனந்த நடனக் கூத்து அண்டங்கள் எல்லாம் ஆட<br>ஊன நடனம் ஒருபுறம் ஞான நடனம் ஒருபுறம்<br>தானந்த மாகத் தழைக்கும் தில்லைப் பொன்னம்பலத்தே.</div>
               <div style="font-size:0.9rem; color:var(--gold); margin-top:10px; font-weight:600;">— உண்மை விளக்கம் — மனவாசகம் கடந்தார் & திருமந்திரம்</div>
             </div>
 
             <!-- 6. Philosophical Meaning -->
             <div id="u3-meaning" style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.3.5</span>
+                <span>💡 பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">சிவபெருமானின் ஆனந்த நடனம் என்பது பிரபஞ்சத்தின் ஐந்து தொழில்களைக் குறிக்கிறது:<br><div style='margin-left:14px; margin-top:6px;'>1. உடுக்கை ஒலி = படைத்தல் (Creation / Big Bang)</div><br><div style='margin-left:14px; margin-top:6px;'>2. அபய ஹஸ்தம் = காத்தல் (Preservation)</div><br><div style='margin-left:14px; margin-top:6px;'>3. கையில் நெருப்பு = அழித்தல் / ஒடுக்குதல் (Dissolution)</div><br><div style='margin-left:14px; margin-top:6px;'>4. முயலகன் மீது ஊன்றிய கால் = மறைத்தல் (Maya / Concealment)</div><br><div style='margin-left:14px; margin-top:6px;'>5. தூக்கிய திருவடி = அருளல் (Liberation / Mukti).</div><br>நவீன இயற்பியலாளர் ஃப்ரிட்ஜாஃப் காப்ரா (Fritjof Capra) தன் 'தி டாவ் ஆஃப் பிசிக்ஸ்' (The Tao of Physics) நூலில், அணுக்களுக்குள் துணை அணுத்துகள்கள் இடைவிடாது இயங்கிக் கொண்டிருப்பதை 'நடராஜரின் அண்ட நடனத்தோடு' (Cosmic Dance of Shiva) ஒப்பிட்டு வியக்கிறார்.</div>
             </div>
 
             <!-- 7. Inspirational Story -->
             <div id="u3-story" style="margin: 28px 0; background:rgba(255,255,255,0.02); border-radius:14px; padding:22px; border:1px solid rgba(255,255,255,0.08);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.3.6</span>
+                <span>📜 ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">இயற்பியல் அறிஞர்கள் பிரபஞ்சத்தின் சக்தி ஒருபோதும் அழிவதில்லை; அது உருமாறிக் கொண்டே இருக்கிறது (Energy can neither be created nor destroyed) என்கின்றனர். இதைத்தான் பல்லாயிரம் ஆண்டுகளுக்கு முன்பே நடராஜரின் உடுக்கையும் அக்னியும் உணர்த்தின.</div>
             </div>
 
             <!-- 8. Dharmic Living in Daily Life -->
             <div id="u3-living" style="margin: 28px 0; background:rgba(45,212,191,0.05); border-radius:14px; padding:22px; border:1px solid rgba(45,212,191,0.25);">
-              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.3.7</span>
+                <span>🌿 மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">சுவிட்சர்லாந்தில் உள்ள ஐரோப்பிய அணு ஆராய்ச்சி மையமான CERN (Large Hadron Collider) வளாகத்தின் நடுவே பிரம்மாண்டமான நடராஜர் சிலை நிறுவப்பட்டுள்ளது. நமது முன்னோர்கள் ஆன்மீக ஞானத்தின் மூலம் உணர்ந்த உண்மைகளை இன்று அறிவியல் கருவிகள் மூலம் மெய்ப்பித்து வருகிறது.</div>
             </div>
@@ -1030,22 +1362,32 @@
             
         <div id="u3-sadhana" class="sadhana-box">
           <div class="sadhana-header">
-            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+            <span class="wbs-code">WBS 12.3.8</span>
+            <span>🌿 மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
           </div>
           
             <div class="sadhana-item">
               <input type="checkbox" id="g12u3s0">
-              <label for="g12u3s0">பிரபஞ்சத்தின் ஒவ்வொரு அணுவிலும் இறைவனின் பேரொழுங்கு இருப்பதை உணர்ந்தேன்.</label>
+              <label for="g12u3s0">
+                <span class="wbs-code">WBS 12.3.8.1</span>
+                <span>பிரபஞ்சத்தின் ஒவ்வொரு அணுவிலும் இறைவனின் பேரொழுங்கு இருப்பதை உணர்ந்தேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u3s1">
-              <label for="g12u3s1">கோபத்தையும் அகந்தையையும் முயலகனைப் போல என் காலடியில் அடக்கினேன்.</label>
+              <label for="g12u3s1">
+                <span class="wbs-code">WBS 12.3.8.2</span>
+                <span>கோபத்தையும் அகந்தையையும் முயலகனைப் போல என் காலடியில் அடக்கினேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u3s2">
-              <label for="g12u3s2">சிதம்பர ரகசியத்தை நினைவுகூர்ந்து மனதை அமைதியான வெட்டவெளியாக்கினேன்.</label>
+              <label for="g12u3s2">
+                <span class="wbs-code">WBS 12.3.8.3</span>
+                <span>சிதம்பர ரகசியத்தை நினைவுகூர்ந்து மனதை அமைதியான வெட்டவெளியாக்கினேன்.</span>
+              </label>
             </div>
             
         </div>
@@ -1054,8 +1396,9 @@
             <!-- 10. Self-Learning Interactive Quiz -->
             
         <div id="u3-quiz" class="quiz-section">
-          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.3.9</span>
+            <span>❓ சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
           </h4>
           <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
             கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
@@ -1064,7 +1407,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 1:</strong> நடராஜரின் கையில் உள்ள உடுக்கை எந்தத் தொழிலைக் குறிக்கிறது?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.3.9.1</span>
+                    <strong>வினா 1:</strong> நடராஜரின் கையில் உள்ள உடுக்கை எந்தத் தொழிலைக் குறிக்கிறது?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -1077,7 +1423,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 2:</strong> நடராஜரின் தூக்கிய திருவடி எதனை உணர்த்துகிறது?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.3.9.2</span>
+                    <strong>வினா 2:</strong> நடராஜரின் தூக்கிய திருவடி எதனை உணர்த்துகிறது?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -1090,7 +1439,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 3:</strong> எந்த சர்வதேச விஞ்ஞான ஆராய்ச்சி நிறுவனத்தின் வளாகத்தில் நடராஜர் சிலை நிறுவப்பட்டுள்ளது?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.3.9.3</span>
+                    <strong>வினா 3:</strong> எந்த சர்வதேச விஞ்ஞான ஆராய்ச்சி நிறுவனத்தின் வளாகத்தில் நடராஜர் சிலை நிறுவப்பட்டுள்ளது?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -1106,7 +1458,10 @@
             <!-- 11. Audio Link to Hymns -->
             <div id="u3-audio" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
               <div>
-                <strong style="color:#f8fafc;">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <strong style="color:#f8fafc; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  <span class="wbs-code">WBS 12.3.10</span>
+                  <span>🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</span>
+                </strong>
                 <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
               </div>
               <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
@@ -1131,19 +1486,26 @@
             
             <div class="lesson-card-head">
               <div>
-                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 4 (Chapter 4)</span>
-                <div class="lesson-main-title" style="margin-top:12px;">சுற்றுச்சூழல் தர்மம் & வேத சனாதன தீர்வுகள்</div>
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+                  <span class="wbs-code wbs-code-primary">WBS 12.4</span>
+                  <span style="background:rgba(255,255,255,0.08); color:#f8fafc; font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px; letter-spacing:0.5px;">அத்தியாயம் 4 (Chapter 4)</span>
+                </div>
+                <div class="lesson-main-title">சுற்றுச்சூழல் தர்மம் & வேத சனாதன தீர்வுகள்</div>
                 <div class="lesson-sub-title">பூமி மாதாவைக் காக்கும் வேதப் பார்வை</div>
               </div>
-              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12);">
-                தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)
+              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:6px;">
+                <span class="wbs-code">GRADE 12</span>
+                <span>தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)</span>
               </div>
             </div>
 
             <!-- 1. Learning Objectives -->
             
         <div id="u4-objectives" class="objectives-card">
-          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <div class="objectives-title">
+            <span class="wbs-code">WBS 12.4.0</span>
+            <span>🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</span>
+          </div>
           <ul class="objectives-list">
             <li>கன்ம வினைக் கோட்பாட்டின் மூன்று நிலைகளைப் புரிந்துகொள்ளுதல்.</li><li>'தீதும் நன்றும் பிறர்தர வாரா' என்ற தமிழ் மறையின்படி நம் வாழ்விற்கு நாமே பொறுப்பு என்பதை உணர்தல்.</li><li>புதிய வினைகள் சேராமல் தூய நற்செயல்களை மட்டுமே செய்யும் மனப்பக்குவத்தை அடைதல்.</li>
           </ul>
@@ -1153,23 +1515,33 @@
             <!-- 2. Vocabulary Builder -->
             
         <div id="u4-vocab" class="vocab-section">
-          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
-            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.4.1</span>
+            <span>📖 சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
           </h4>
           <div class="vocab-grid">
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 கன்மம் (Karma)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.4.1.1</span>
+                <span>📌 கன்மம் (Karma)</span>
+              </div>
               <div class="vocab-meaning">நாம் மனம், வாக்கு, காயத்தால் செய்யும் செயல்களும் அதற்கான தவிர்க்க முடியாத விளைவுகளும்.</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 சஞ்சிதம் (Sanchita)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.4.1.2</span>
+                <span>📌 சஞ்சிதம் (Sanchita)</span>
+              </div>
               <div class="vocab-meaning">முற்பிறவிகளில் சேர்த்து வைக்கப்பட்ட மொத்த வினைகளின் களஞ்சியம்.</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 பிராரப்தம் (Prarabdha)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.4.1.3</span>
+                <span>📌 பிராரப்தம் (Prarabdha)</span>
+              </div>
               <div class="vocab-meaning">இப்பிறவியில் நாம் அனுபவிப்பதற்காக முதிர்ந்து வந்துள்ள வினைப் பயன்.</div>
             </div>
             
@@ -1179,7 +1551,11 @@
 
             <!-- 3. Visual SVG Diagram / Infographic -->
             
-        <div id="u4-diagram">
+        <div id="u4-diagram" style="margin: 28px 0;">
+          <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+            <span class="wbs-code">WBS 12.4.2</span>
+            <span style="font-size:0.88rem; color:#94a3b8; font-weight:600;">காட்சி வரைபடம் &amp; கருத்துப் படிமம் (Visual Schema)</span>
+          </div>
           
     <div class="visual-diagram-card">
       <div class="diagram-header">
@@ -1226,29 +1602,39 @@
 
             <!-- 4. Paced Step-by-Step Deep Dive Sections -->
             <div id="u4-lessons" style="margin: 28px 0;">
-              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.4.3</span>
+                <span>📚 படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
               </h4>
               <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
                 ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
               </p>
               
             <div class="lesson-step-section">
-              <div class="lesson-step-title">1. கன்ம விதியின் அறிவியல் உண்மை (Newton's 3rd Law of Karma)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.4.3.1</span>
+                <span>1. கன்ம விதியின் அறிவியல் உண்மை (Newton's 3rd Law of Karma)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>'ஒவ்வொரு வினைக்கும் அதற்கு சமமானதும் எதிரானதுமான எதிர்வினை உண்டு' என்பது நியூட்டனின் மூன்றாம் விதி. இதே விதியை ஆன்மீகத்தில் கன்மக் கோட்பாடு கூறுகிறது. நாம் பிறருக்கு அன்பைக் கொடுத்தால் அன்பு திரும்ப வரும்; துன்பத்தைக் கொடுத்தால் ஏதோ ஒரு வடிவில் துன்பம் நம்மை வந்தடையும். 'விதைத்தவன் தினை விதைத்தால் தினை அறுப்பான்; வினை விதைத்தால் வினை அறுப்பான்'.</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">2. வினைகளின் மூன்று பிரிவுகள் (3 Types of Karma)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.4.3.2</span>
+                <span>2. வினைகளின் மூன்று பிரிவுகள் (3 Types of Karma)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>1) சஞ்சிதம்: நெல் சேமித்து வைக்கப்பட்ட பெரிய கிடங்கு போன்றது. 2) பிராரப்தம்: அந்தக் கிடங்கிலிருந்து இந்த வருட உணவுக்காக நாம் எடுத்துச் சமைக்கும் அரிசி போன்றது (இப்பிறவியின் சுக-துக்கங்கள்). 3) ஆகாமியம்: இந்த வருடம் வயலில் நாம் புதிதாக விதைக்கும் விதை போன்றது (நிகழ்காலத்தில் செய்யும் புதிய செயல்கள்).</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">3. கன்ம வினையிலிருந்து விடுதலை பெறும் வழி</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.4.3.3</span>
+                <span>3. கன்ம வினையிலிருந்து விடுதலை பெறும் வழி</span>
+              </div>
               <div class="lesson-step-content">
                 <p>இறைவனிடம் பூரண சரணாகதி அடைந்து, செய்யும் செயல்கள் அனைத்தையும் 'சிவப்பணி'யாக தன்னலமின்றிச் செய்யும் போது (நிஷ்காம கர்மம்), புதிய வினைகள் ஒட்டாது. தீய வினைகளை சிவ நாம ஜபமும் தர்மமும் எரித்துவிடும்.</p>
               </div>
@@ -1258,31 +1644,36 @@
 
             <!-- 5. Sacred Verse / Mantra Box -->
             <div id="u4-verse" style="background:rgba(255,255,255,0.03); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">
+                <span class="wbs-code">WBS 12.4.4</span> 📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:
+              </div>
               <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#ffffff; line-height:1.9; font-weight:600;">மாதா பூமி: புத்ரோ அஹம் பிருதிவ்யா: |<br>(பூமி என் தாய்; நான் பூமியின் புதல்வன் — அதர்வணவேத பூமி சூக்தம்)</div>
               <div style="font-size:0.9rem; color:var(--gold); margin-top:10px; font-weight:600;">— அதர்வணவேதம் — பூமி சூக்தம்</div>
             </div>
 
             <!-- 6. Philosophical Meaning -->
             <div id="u4-meaning" style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.4.5</span>
+                <span>💡 பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">பூமி மனிதன் சுரண்டுவதற்கான வெறும் ஜடப்பொருள் அல்ல; அவள் நம்மைத் தாங்கிப் போஷிக்கும் தெய்வீக அன்னை ஆவாள். நதிகள் அன்னையர்; மரங்கள் தெய்வங்கள்; காற்று பிராணன்; சூரியன் ஆத்ம காரகன்.</div>
             </div>
 
             <!-- 7. Inspirational Story -->
             <div id="u4-story" style="margin: 28px 0; background:rgba(255,255,255,0.02); border-radius:14px; padding:22px; border:1px solid rgba(255,255,255,0.08);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.4.6</span>
+                <span>📜 ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">ராஜஸ்தானில் உள்ள பிஷ்னோய் சமூக மக்கள் மரங்களைக் காப்பதற்காகத் தங்கள் உயிரையே அர்ப்பணித்தனர். அம்ரிதா தேவி தலைமையில் 363 மக்கள் மரங்களைக் கட்டிப்பிடித்து மன்னனின் கோடாரிக்குத் தங்கள் தலைகளைக் கொடுத்தனர். இயற்கையைக் காக்க உயிரையும் தரும் இந்த தர்மமே பாரதத்தின் ஆன்மா.</div>
             </div>
 
             <!-- 8. Dharmic Living in Daily Life -->
             <div id="u4-living" style="margin: 28px 0; background:rgba(45,212,191,0.05); border-radius:14px; padding:22px; border:1px solid rgba(45,212,191,0.25);">
-              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.4.7</span>
+                <span>🌿 மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">இன்று உலகம் சந்திக்கும் புவி வெப்பமயமாதல் (Global Warming), பருவநிலை மாற்றம், நீர் பற்றாக்குறை ஆகியவற்றிற்கு வேத வாழ்க்கை முறையே தீர்வாகும்:<br><div style='margin-left:14px; margin-top:5px;'>• மரங்களை நடுதல் மற்றும் பாதுகாத்தல்.</div><br><div style='margin-left:14px; margin-top:5px;'>• நீர்நிலைகளை அசுத்தப்படுத்தாமல் புனித தீர்த்தங்களாகப் போற்றுதல்.</div><br><div style='margin-left:14px; margin-top:5px;'>• தேவைக்கு மட்டுமே நுகர்தல் (Sustainable Living) — பேராசையைத் தவிர்த்தல்.</div></div>
             </div>
@@ -1291,22 +1682,32 @@
             
         <div id="u4-sadhana" class="sadhana-box">
           <div class="sadhana-header">
-            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+            <span class="wbs-code">WBS 12.4.8</span>
+            <span>🌿 மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
           </div>
           
             <div class="sadhana-item">
               <input type="checkbox" id="g12u4s0">
-              <label for="g12u4s0">எனக்கு ஏற்படும் சோதனைகளுக்கு மற்றவரைக் குறை கூறாமல் அமைதி காத்தேன்.</label>
+              <label for="g12u4s0">
+                <span class="wbs-code">WBS 12.4.8.1</span>
+                <span>எனக்கு ஏற்படும் சோதனைகளுக்கு மற்றவரைக் குறை கூறாமல் அமைதி காத்தேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u4s1">
-              <label for="g12u4s1">யாருக்கும் தீங்கு செய்யாமல் நற்செயல்களையே செய்தேன்.</label>
+              <label for="g12u4s1">
+                <span class="wbs-code">WBS 12.4.8.2</span>
+                <span>யாருக்கும் தீங்கு செய்யாமல் நற்செயல்களையே செய்தேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u4s2">
-              <label for="g12u4s2">படிப்பதை என் தர்மக் கடமையாக உணர்ந்து நேர்மையோடு படித்தேன்.</label>
+              <label for="g12u4s2">
+                <span class="wbs-code">WBS 12.4.8.3</span>
+                <span>படிப்பதை என் தர்மக் கடமையாக உணர்ந்து நேர்மையோடு படித்தேன்.</span>
+              </label>
             </div>
             
         </div>
@@ -1315,8 +1716,9 @@
             <!-- 10. Self-Learning Interactive Quiz -->
             
         <div id="u4-quiz" class="quiz-section">
-          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.4.9</span>
+            <span>❓ சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
           </h4>
           <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
             கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
@@ -1325,7 +1727,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 1:</strong> இப்பிறவியில் நாம் அனுபவித்து வரும் வினையின் பெயர் என்ன?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.4.9.1</span>
+                    <strong>வினா 1:</strong> இப்பிறவியில் நாம் அனுபவித்து வரும் வினையின் பெயர் என்ன?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -1338,7 +1743,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 2:</strong> 'தீதும் நன்றும் பிறர்தர வாரா' என்று பாடிய சங்கப் புலவர் யார்?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.4.9.2</span>
+                    <strong>வினா 2:</strong> 'தீதும் நன்றும் பிறர்தர வாரா' என்று பாடிய சங்கப் புலவர் யார்?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -1351,7 +1759,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 3:</strong> புதிய வினைகள் (ஆகாமியம்) சேராமல் இருக்க என்ன செய்ய வேண்டும்?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.4.9.3</span>
+                    <strong>வினா 3:</strong> புதிய வினைகள் (ஆகாமியம்) சேராமல் இருக்க என்ன செய்ய வேண்டும்?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -1367,7 +1778,10 @@
             <!-- 11. Audio Link to Hymns -->
             <div id="u4-audio" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
               <div>
-                <strong style="color:#f8fafc;">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <strong style="color:#f8fafc; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  <span class="wbs-code">WBS 12.4.10</span>
+                  <span>🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</span>
+                </strong>
                 <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
               </div>
               <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">
@@ -1392,19 +1806,26 @@
             
             <div class="lesson-card-head">
               <div>
-                <span style="background:var(--gold-gradient); color:#0a0c10; font-weight:800; font-size:0.85rem; padding:6px 16px; border-radius:14px; text-transform:uppercase; letter-spacing:0.5px;">அத்தியாயம் 5 (Chapter 5)</span>
-                <div class="lesson-main-title" style="margin-top:12px;">உலக சமுதாயத்தில் சனாதன தர்ம நெறியாளன்</div>
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+                  <span class="wbs-code wbs-code-primary">WBS 12.5</span>
+                  <span style="background:rgba(255,255,255,0.08); color:#f8fafc; font-weight:700; font-size:0.82rem; padding:4px 12px; border-radius:12px; letter-spacing:0.5px;">அத்தியாயம் 5 (Chapter 5)</span>
+                </div>
+                <div class="lesson-main-title">உலக சமுதாயத்தில் சனாதன தர்ம நெறியாளன்</div>
                 <div class="lesson-sub-title">வசுதைவ குடும்பகம் • யாதும் ஊரே யாவரும் கேளிர்</div>
               </div>
-              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12);">
-                தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)
+              <div style="color:#cbd5e1; font-size:0.9rem; font-weight:600; background:rgba(255,255,255,0.06); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; gap:6px;">
+                <span class="wbs-code">GRADE 12</span>
+                <span>தரம் 12 • வயது 16 - 17 (முழுமை நிலை — A/L Advanced Level II & Graduation)</span>
               </div>
             </div>
 
             <!-- 1. Learning Objectives -->
             
         <div id="u5-objectives" class="objectives-card">
-          <div class="objectives-title">🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</div>
+          <div class="objectives-title">
+            <span class="wbs-code">WBS 12.5.0</span>
+            <span>🎯 இப்பாடத்தின் கற்றல் நோக்கங்கள் (Learning Objectives):</span>
+          </div>
           <ul class="objectives-list">
             <li>அன்றாட வாழ்வில் கடைப்பிடிக்க வேண்டிய உயர்ந்த தர்ம நெறிகளைப் புரிந்துகொள்ளுதல்.</li><li>பெற்றோரையும் ஆசிரியரையும் மதித்து நற்பண்புகளுடன் விளங்குதல்.</li><li>இறை நம்பிக்கையுடன் கூடிய நேர்மையான மாணவராகத் திகழ்தல்.</li>
           </ul>
@@ -1414,23 +1835,33 @@
             <!-- 2. Vocabulary Builder -->
             
         <div id="u5-vocab" class="vocab-section">
-          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
-            <span>📖</span> <span>சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
+          <h4 style="color:#f8fafc; font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.5.1</span>
+            <span>📖 சொற்களஞ்சியம் &amp; கலைச்சொல் விளக்கம் (Key Terminology):</span>
           </h4>
           <div class="vocab-grid">
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 தர்மம் (Dharma)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.5.1.1</span>
+                <span>📌 தர்மம் (Dharma)</span>
+              </div>
               <div class="vocab-meaning">அனைத்து உயிர்களையும் தாங்கி நிற்கும் பேரறம்; நேர்மை மற்றும் கடமை.</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 சத்சங்கம் (Satsanga)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.5.1.2</span>
+                <span>📌 சத்சங்கம் (Satsanga)</span>
+              </div>
               <div class="vocab-meaning">நல்ல சிந்தனை உடைய பெரியோர்களுடனும் நல்ல நண்பர்களுடனும் இணைந்திருத்தல்.</div>
             </div>
             
             <div class="vocab-card">
-              <div class="vocab-term">📌 ஜீவகாருண்யம் (Jivakarunyam)</div>
+              <div class="vocab-term">
+                <span class="wbs-code">WBS 12.5.1.3</span>
+                <span>📌 ஜீவகாருண்யம் (Jivakarunyam)</span>
+              </div>
               <div class="vocab-meaning">எல்லா உயிர்களிடத்தும் இரக்கமும் கருணையும் கொண்டு வாழ்தல்.</div>
             </div>
             
@@ -1440,7 +1871,11 @@
 
             <!-- 3. Visual SVG Diagram / Infographic -->
             
-        <div id="u5-diagram">
+        <div id="u5-diagram" style="margin: 28px 0;">
+          <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+            <span class="wbs-code">WBS 12.5.2</span>
+            <span style="font-size:0.88rem; color:#94a3b8; font-weight:600;">காட்சி வரைபடம் &amp; கருத்துப் படிமம் (Visual Schema)</span>
+          </div>
           
     <div class="visual-diagram-card">
       <div class="diagram-header">
@@ -1500,29 +1935,39 @@
 
             <!-- 4. Paced Step-by-Step Deep Dive Sections -->
             <div id="u5-lessons" style="margin: 28px 0;">
-              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-                <span>📚</span> <span>படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
+              <h4 style="color:#f8fafc; font-size:1.2rem; margin-bottom:8px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.5.3</span>
+                <span>📚 படிமுறைப் பாட விளக்கம் (Paced Course Lessons):</span>
               </h4>
               <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;">
                 ஒவ்வொரு கருத்தையும் நிதானமாகப் படித்து, அன்றாட வாழ்வியலோடு பொருத்திப் பாருங்கள்.
               </p>
               
             <div class="lesson-step-section">
-              <div class="lesson-step-title">1. தர்மத்தின் மேன்மை (The Greatness of Dharma)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.5.3.1</span>
+                <span>1. தர்மத்தின் மேன்மை (The Greatness of Dharma)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>'தர்மமே வெல்லும்; தர்மத்தைக் காப்பவனை தர்மம் காக்கும் (தFilter: தர்மோ ரக்ஷதி ரக்ஷிதஃ)' என்பது நமது முன்னோர்களின் அழியாத வாக்கு. உண்மை, நேர்மை, இன்சொல், பிறருக்கு உதவுதல் ஆகியவை ஒரு மாணவனின் உண்மையான அணிகலன்களாகும்.</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.5.3.2</span>
+                <span>2. குரு-சிஷ்ய பாரம்பரியம் (The Sacred Student-Teacher Bond)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>ஆசிரியரை 'குரு'வாகப் போற்றி, பணிவோடு வினாக்கள் கேட்டு மெய்யறிவைப் பெறுவதே பாரத நாட்டின் சிறந்த கல்வி முறையாகும். பணிவு உள்ள இடத்திலேயே ஞானம் தங்கும்.</p>
               </div>
             </div>
             
             <div class="lesson-step-section">
-              <div class="lesson-step-title">3. உயிர்களிடத்தில் அன்பு (Universal Compassion)</div>
+              <div class="lesson-step-title">
+                <span class="wbs-code">WBS 12.5.3.3</span>
+                <span>3. உயிர்களிடத்தில் அன்பு (Universal Compassion)</span>
+              </div>
               <div class="lesson-step-content">
                 <p>மனிதர்கள் மட்டுமல்லாமல் வாயில்லாப் பிராணிகள், பறவைகள், தாவரங்கள் என அனைத்து இயற்கைக்கும் மதிப்பளித்து, அன்பு காட்டுவதே மெய்யான ஆன்மீகமாகும்.</p>
               </div>
@@ -1532,31 +1977,36 @@
 
             <!-- 5. Sacred Verse / Mantra Box -->
             <div id="u5-verse" style="background:rgba(255,255,255,0.03); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 14px 14px 0; margin:28px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:</div>
+              <div style="font-size:0.82rem; color:#cbd5e1; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; font-weight:700;">
+                <span class="wbs-code">WBS 12.5.4</span> 📖 மூலப் பாடல் / வேத மந்திரம் &amp; சந்த கானம்:
+              </div>
               <div style="font-family:'Mukta Malar', serif; font-size:1.2rem; color:#ffffff; line-height:1.9; font-weight:600;">யாதும் ஊரே யாவரும் கேளிர்<br>தீதும் நன்றும் பிறர்தர வாரா. (புறநானூறு 192)<br><br>அயம் நிஜ: பரோ வேத்தி கணனா லகுசேதஸாம் |<br>உதாரசரிதானாம் து வஸுதைவ குடும்பகம் || (ஹிதோபதேசம்)<br><br>ஸர்வே பவந்து ஸுகின: ஸர்வே ஸந்து நிராமயா: |<br>ஸர்வே பத்ராணி பச்யந்து மா கஸ்சித் துக்கபாக்பவேத் ||</div>
               <div style="font-size:0.9rem; color:var(--gold); margin-top:10px; font-weight:600;">— புறநானூறு — கணியன் பூங்குன்றனார் & உபநிடத சாந்தி மந்திரம்</div>
             </div>
 
             <!-- 6. Philosophical Meaning -->
             <div id="u5-meaning" style="margin: 24px 0; background: rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid var(--border-subtle);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>💡</span> <span>பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.5.5</span>
+                <span>💡 பதவுரை &amp; தத்துவப் பொழிப்புரை (Spiritual Essence):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1.02rem;">எல்லா ஊர்களும் எம் ஊரே; எல்லா மக்களும் எம் உறவினரே. 'இவர் நம்முடையவர், இவர் மற்றவர்' என்று பிரித்துப் பார்ப்பது அற்ப மனம் படைத்தோரின் குணம்; பரந்த உள்ளம் கொண்ட உத்தமர்களுக்கு இந்த அகில உலகமே ஒரு குடும்பமாகும் (வசுதைவ குடும்பகம்). உலகில் உள்ள எல்லா உயிர்களும் நோயின்றி மகிழ்ச்சியாக வாழட்டும்! எவருக்கும் எந்தத் துன்பமும் நேராமல் இருக்கட்டும்!</div>
             </div>
 
             <!-- 7. Inspirational Story -->
             <div id="u5-story" style="margin: 28px 0; background:rgba(255,255,255,0.02); border-radius:14px; padding:22px; border:1px solid rgba(255,255,255,0.08);">
-              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>📜</span> <span>ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
+              <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.5.6</span>
+                <span>📜 ஆன்மீக வரலாறு / உத்வேகக் கதை (Inspirational Puranic &amp; Historic Event):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">சுவாமி விவேகானந்தர், மகாத்மா காந்தி, டாக்டர் அப்துல் கலாம் ஆகியோர் இந்த பாரத தர்மத்தின் வழியே உலகையே வழிநடத்தினார்கள். நீங்களும் ஒரு தர்ம நெறியாளனாக வாழ்ந்து இந்த உலகிற்கு வழிகாட்ட முடியும். தர்மமே உங்களை வழிநடத்தும்; 'தர்மம் காப்போரை தர்மம் காக்கும்' (தfilter தர்மோ ரக்ஷதி ரக்ஷித:).</div>
             </div>
 
             <!-- 8. Dharmic Living in Daily Life -->
             <div id="u5-living" style="margin: 28px 0; background:rgba(45,212,191,0.05); border-radius:14px; padding:22px; border:1px solid rgba(45,212,191,0.25);">
-              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-                <span>🌿</span> <span>மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
+              <h4 style="color:#2dd4bf; font-size:1.15rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="wbs-code">WBS 12.5.7</span>
+                <span>🌿 மாணவர் வாழ்வியல் தர்மம் &amp; ஒழுக்க நெறிமுறை (Student Daily Conduct):</span>
               </h4>
               <div style="color:var(--text-main); line-height:1.85; font-size:1rem;">பள்ளிப் படிப்பை முடித்து கல்லூரிக்கும் உலக அரங்கிற்கும் செல்லும் மாணவர்கள் பாரதத்தின் இந்த உன்னத உலகளாவிய தர்மத்தைத் தங்கள் இதயத்தில் தாங்கிச் செல்ல வேண்டும். எந்தத் துறையில் பணியாற்றினாலும் நேர்மை, மனிதநேயம், சேவை மனப்பான்மை, உலக நன்மை ஆகியவற்றை முன்னிறுத்த வேண்டும்.</div>
             </div>
@@ -1565,22 +2015,32 @@
             
         <div id="u5-sadhana" class="sadhana-box">
           <div class="sadhana-header">
-            <span>🌿</span> <span>மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
+            <span class="wbs-code">WBS 12.5.8</span>
+            <span>🌿 மாணவர் தினசரி தர்ம சாதனைப் பட்டியல் (Daily Dharmic Habits Checklist)</span>
           </div>
           
             <div class="sadhana-item">
               <input type="checkbox" id="g12u5s0">
-              <label for="g12u5s0">பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.</label>
+              <label for="g12u5s0">
+                <span class="wbs-code">WBS 12.5.8.1</span>
+                <span>பெற்றோரிடம் இன்சொல் பேசி அவர்களின் ஆசியைப் பெற்றேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u5s1">
-              <label for="g12u5s1">செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.</label>
+              <label for="g12u5s1">
+                <span class="wbs-code">WBS 12.5.8.2</span>
+                <span>செடிகளுக்கு நீர் ஊற்றி பிராணிகளுக்கு உணவு அளித்தேன்.</span>
+              </label>
             </div>
             
             <div class="sadhana-item">
               <input type="checkbox" id="g12u5s2">
-              <label for="g12u5s2">எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்.</label>
+              <label for="g12u5s2">
+                <span class="wbs-code">WBS 12.5.8.3</span>
+                <span>எப்போதும் உண்மை மட்டுமே பேசுவேன் என உறுதியுடன் வாழ்ந்தேன்.</span>
+              </label>
             </div>
             
         </div>
@@ -1589,8 +2049,9 @@
             <!-- 10. Self-Learning Interactive Quiz -->
             
         <div id="u5-quiz" class="quiz-section">
-          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-            <span>❓</span> <span>சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
+          <h4 style="color:#f8fafc; font-size:1.15rem; margin-bottom:14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="wbs-code">WBS 12.5.9</span>
+            <span>❓ சுய பரிசோதனை வினாடி-வினா (Interactive Self-Learning Check):</span>
           </h4>
           <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:12px;">
             கேள்வியை வாசித்து உங்கள் விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்திச் சரிபார்க்கவும்.
@@ -1599,7 +2060,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 1:</strong> 'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.5.9.1</span>
+                    <strong>வினா 1:</strong> 'தர்மோ ரக்ஷதி ரக்ஷிதஃ' என்பதன் பொருள் யாது?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -1612,7 +2076,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 2:</strong> மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.5.9.2</span>
+                    <strong>வினா 2:</strong> மாணவனின் வாழ்க்கையில் மிக முக்கியமான நற்பண்பு எது?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -1625,7 +2092,10 @@
             <div class="quiz-card">
               <details>
                 <summary>
-                  <span><strong>வினா 3:</strong> ஜீவகாருண்யம் என்றால் என்ன?</span>
+                  <span>
+                    <span class="wbs-code">WBS 12.5.9.3</span>
+                    <strong>வினா 3:</strong> ஜீவகாருண்யம் என்றால் என்ன?
+                  </span>
                   <span class="quiz-badge">விடையைக் காண்க ▾</span>
                 </summary>
                 <div class="quiz-body">
@@ -1641,7 +2111,10 @@
             <!-- 11. Audio Link to Hymns -->
             <div id="u5-audio" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:24px;">
               <div>
-                <strong style="color:#f8fafc;">🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</strong>
+                <strong style="color:#f8fafc; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  <span class="wbs-code">WBS 12.5.10</span>
+                  <span>🎵 இப்பாடத்திற்கான திருமுறைப் பதிகம்:</span>
+                </strong>
                 <div style="color:var(--text-muted); font-size:0.88rem; margin-top:3px;">குரு குல தேசம் இசை அலைவரிசையில் கேட்டு மனதை அமைதிப்படுத்துங்கள்.</div>
               </div>
               <a href="irai-isai-virundhu.html" class="sheet-btn sheet-btn-view" style="text-decoration:none; padding:8px 18px;">

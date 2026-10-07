@@ -2518,15 +2518,18 @@ footer.site-footer {
 }
 
 .course-tab-num {
-  width: 22px;
+  min-width: 28px;
   height: 22px;
-  border-radius: 50%;
+  padding: 0 6px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
   color: inherit;
+  flex-shrink: 0;
 }
 
 .course-tab-btn.active .course-tab-num {
@@ -2879,6 +2882,49 @@ footer.site-footer {
 }
 
 /* ==========================================================================
+   WBS (Work Breakdown Structure) Identification System
+   ========================================================================== */
+
+.wbs-code {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Outfit', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 2px 7px;
+  border-radius: 6px;
+  margin-right: 6px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 1.3;
+}
+
+.wbs-code-primary {
+  background: rgba(212, 175, 55, 0.12);
+  color: var(--gold);
+  border-color: rgba(212, 175, 55, 0.35);
+  font-size: 0.8rem;
+  padding: 3px 9px;
+  border-radius: 8px;
+}
+
+.wbs-sidebar-code {
+  font-family: 'Outfit', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
    Courseware Sidebar & Section Navigation Architecture
    ========================================================================== */
 
@@ -3010,15 +3056,16 @@ html {
 }
 
 .sidebar-num {
-  width: 22px;
+  min-width: 28px;
   height: 22px;
-  border-radius: 50%;
+  padding: 0 5px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
   color: #cbd5e1;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   flex-shrink: 0;
 }
