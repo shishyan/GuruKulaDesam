@@ -113,6 +113,48 @@ CHAPTER_REGISTRY = {
         "output": RENDERS_DIR / "adhikaram_31_vegulaamai_cinematic.mp4",
         "atmosphere": "rain", # cooling rain quenching the flames of anger
     },
+    39: {
+        "title": "Iraimaatchi (இறைமாட்சி)",
+        "audio_id": "mCwNR1Bytj4",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "39-iraimaatchi",
+        "output": RENDERS_DIR / "adhikaram_39_iraimaatchi_cinematic.mp4",
+        "atmosphere": "flowers", # ceremonial royal courtyard & coronation blossoms
+    },
+    40: {
+        "title": "Kalvi (கல்வி)",
+        "audio_id": "KZxknhbVIk0",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "40-kalvi",
+        "output": RENDERS_DIR / "adhikaram_40_kalvi_cinematic.mp4",
+        "atmosphere": "drizzle", # dawn mist over temple library & quiet learning
+    },
+    42: {
+        "title": "Kelvi (கேள்வி)",
+        "audio_id": "vbMywONB5Wc",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "42-kelvi",
+        "output": RENDERS_DIR / "adhikaram_42_kelvi_cinematic.mp4",
+        "atmosphere": "rain", # contemplative steady rain on granite mandapam
+    },
+    44: {
+        "title": "Kutrangadithal (குற்றங்கடிதல்)",
+        "audio_id": "VVkl8bORJXg",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "44-kutrangadithal",
+        "output": RENDERS_DIR / "adhikaram_44_kutrangadithal_cinematic.mp4",
+        "atmosphere": "rain", # storm & lightning warning against moral lapses
+    },
+    45: {
+        "title": "Periyaaraith Thunaikkodal (பெரியாரைத் துணைக்கோடல்)",
+        "audio_id": "HRN77i6Kio8",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "45-periyaaraith-thunaikkodal",
+        "output": RENDERS_DIR / "adhikaram_45_periyaaraith_thunaikkodal_cinematic.mp4",
+        "atmosphere": "drizzle", # gentle forest mist around venerable sages
+    },
+    46: {
+        "title": "Sitrinanjeraamai (சிற்றினஞ்சேராமை)",
+        "audio_id": "wylRNpaJNmY",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "46-sitrinanjeraamai",
+        "output": RENDERS_DIR / "adhikaram_46_sitrinanjeraamai_cinematic.mp4",
+        "atmosphere": "rain", # rain taking the nature of the soil it touches
+    },
 }
 
 CAMERA_MOVES = [
