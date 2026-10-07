@@ -515,6 +515,28 @@
           </div>
         </div>
       </div>
+
+      <!-- 30-Day Visual Sadhana Streak Calendar -->
+      <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(45,212,191,0.2);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.1rem;">📅</span>
+            <strong style="color: #f8fafc; font-size: 0.95rem;">கடந்த 30 நாட்கள் இல்லற சாதனா நாட்காட்டி (30-Day Dharma Streak Calendar)</strong>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; font-size: 0.78rem; color: #94a3b8;">
+            <span style="display: flex; align-items: center; gap: 4px;"><span style="display:inline-block; width:12px; height:12px; background:#2dd4bf; border-radius:3px;"></span> 100% நிறைவு</span>
+            <span style="display: flex; align-items: center; gap: 4px;"><span style="display:inline-block; width:12px; height:12px; background:#fbbf24; border-radius:3px;"></span> பகுதி சாதனா</span>
+            <span style="display: flex; align-items: center; gap: 4px;"><span style="display:inline-block; width:12px; height:12px; background:rgba(255,255,255,0.08); border-radius:3px;"></span> விடுபட்டவை</span>
+          </div>
+        </div>
+
+        <div id="dharmaCalendarGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(32px, 1fr)); gap: 8px; margin-bottom: 10px;">
+          <!-- Dynamically populated 30 days -->
+        </div>
+        <div id="calendarDayDetail" style="background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 14px; font-size: 0.82rem; color: #cbd5e1; display: none;">
+          <!-- Dynamic details on click -->
+        </div>
+      </div>
     </div>
 
     <!-- ============================================================== -->
@@ -1662,18 +1684,33 @@
       }
     }
 
+    function getDharmaHistory() {
+      try {
+        return JSON.parse(localStorage.getItem('gkd_dharma_history') || '{}');
+      } catch (e) {
+        return {};
+      }
+    }
+
     function saveDharmaDailyLog() {
       const yajnas = ['brahma', 'deva', 'pitru', 'manushya', 'bhuta'];
       const yajnaState = {};
+      let checkedCount = 0;
       yajnas.forEach(function(id) {
         const cb = document.getElementById('yajna_' + id);
-        yajnaState[id] = cb ? cb.checked : false;
+        const val = cb ? cb.checked : false;
+        yajnaState[id] = val;
+        if (val) checkedCount++;
       });
 
-      const anger = document.getElementById('virtueAnger') ? document.getElementById('virtueAnger').value : 5;
-      const harmony = document.getElementById('virtueHarmony') ? document.getElementById('virtueHarmony').value : 5;
+      const anger = parseInt(document.getElementById('virtueAnger') ? document.getElementById('virtueAnger').value : 5);
+      const harmony = parseInt(document.getElementById('virtueHarmony') ? document.getElementById('virtueHarmony').value : 5);
       const note = document.getElementById('dailyDharmaNote') ? document.getElementById('dailyDharmaNote').value : '';
       const today = new Date().toISOString().split('T')[0];
+
+      const yajnaScore = (checkedCount / 5) * 70;
+      const virtueScore = ((anger + harmony) / 10) * 30;
+      const totalScore = Math.round(yajnaScore + virtueScore);
 
       let streak = parseInt(localStorage.getItem('gkd_dharma_streak') || '1');
       const lastLogDate = localStorage.getItem('gkd_dharma_last_date');
@@ -1688,6 +1725,7 @@
 
       const logData = {
         date: today,
+        score: totalScore,
         yajnas: yajnaState,
         anger: anger,
         harmony: harmony,
@@ -1699,6 +1737,10 @@
         localStorage.setItem('gkd_dharma_today', JSON.stringify(logData));
         localStorage.setItem('gkd_dharma_streak', streak.toString());
         localStorage.setItem('gkd_dharma_last_date', today);
+
+        const history = getDharmaHistory();
+        history[today] = logData;
+        localStorage.setItem('gkd_dharma_history', JSON.stringify(history));
       } catch (e) {
         console.error(e);
       }
@@ -1706,11 +1748,90 @@
       const streakDisplay = document.getElementById('dharmaStreakDisplay');
       if (streakDisplay) streakDisplay.textContent = '🔥 ' + streak + ' நாள்' + (streak > 1 ? 'கள்' : '');
 
+      render30DayStreakCalendar();
+
       const feedback = document.getElementById('dharmaSaveFeedback');
       if (feedback) {
         feedback.style.display = 'block';
         setTimeout(function() { feedback.style.display = 'none'; }, 4000);
       }
+    }
+
+    function render30DayStreakCalendar() {
+      const grid = document.getElementById('dharmaCalendarGrid');
+      if (!grid) return;
+      const history = getDharmaHistory();
+      const today = new Date();
+      let html = '';
+
+      for (let i = 29; i >= 0; i--) {
+        const d = new Date(today);
+        d.setDate(today.getDate() - i);
+        const dateStr = d.toISOString().split('T')[0];
+        const dayNum = d.getDate();
+        const monthNum = d.getMonth() + 1;
+        const entry = history[dateStr];
+
+        let bg = 'rgba(255,255,255,0.06)';
+        let border = 'rgba(255,255,255,0.12)';
+        let title = dateStr + ': சாதனை பதிவாகவில்லை';
+
+        if (entry) {
+          const score = entry.score || 0;
+          if (score >= 90) {
+            bg = 'linear-gradient(135deg, rgba(5,150,105,0.85), rgba(45,212,191,0.85))';
+            border = '#2dd4bf';
+            title = dateStr + ': ' + score + '% முழு நிறைவு (' + (entry.streak || 1) + ' நாள் தொடர்)';
+          } else if (score > 0) {
+            bg = 'linear-gradient(135deg, rgba(217,119,6,0.85), rgba(251,191,36,0.85))';
+            border = '#fbbf24';
+            title = dateStr + ': ' + score + '% பகுதி சாதனை';
+          }
+          if (entry.note) {
+            title += ' | குறிப்பு: ' + entry.note;
+          }
+        }
+
+        const isToday = i === 0;
+        const todayStyle = isToday ? 'box-shadow: 0 0 10px rgba(56,189,248,0.7); border: 2px solid #38bdf8;' : '';
+
+        html += '<div onclick="showDayDharmaDetail(\'' + dateStr + '\')" title="' + title + '" style="background: ' + bg + '; border: 1px solid ' + border + '; ' + todayStyle + ' border-radius: 8px; padding: 6px 2px; text-align: center; cursor: pointer; transition: transform 0.15s ease;" onmouseover="this.style.transform=\'scale(1.08)\'" onmouseout="this.style.transform=\'scale(1)\'">' +
+          '<div style="font-size: 0.65rem; color: #94a3b8;">' + monthNum + '/' + dayNum + '</div>' +
+          '<div style="font-size: 0.78rem; font-weight: 800; color: #ffffff; margin-top: 2px;">' + (entry ? (entry.score >= 90 ? '✓' : entry.score + '%') : '·') + '</div>' +
+        '</div>';
+      }
+      grid.innerHTML = html;
+    }
+
+    function showDayDharmaDetail(dateStr) {
+      const history = getDharmaHistory();
+      const entry = history[dateStr];
+      const detail = document.getElementById('calendarDayDetail');
+      if (!detail) return;
+      if (!entry) {
+        detail.style.display = 'block';
+        detail.innerHTML = '<span style="color:#94a3b8;">📅 <strong>' + dateStr + '</strong>: இந்த நாளில் சாதனைப் பதிவுகள் எதுவும் சேமிக்கப்படவில்லை. இன்றைய சாதனையைப் பதிவு செய்யுங்கள்!</span>';
+        return;
+      }
+      detail.style.display = 'block';
+      const yajnaList = [];
+      if (entry.yajnas) {
+        if (entry.yajnas.brahma) yajnaList.push('பிரம்ம');
+        if (entry.yajnas.deva) yajnaList.push('தேவ');
+        if (entry.yajnas.pitru) yajnaList.push('பித்ரு');
+        if (entry.yajnas.manushya) yajnaList.push('மனுஷ்ய');
+        if (entry.yajnas.bhuta) yajnaList.push('பூத');
+      }
+      detail.innerHTML = '<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">' +
+        '<div><strong style="color: #38bdf8;">📅 ' + dateStr + '</strong> — தர்ம நிறைவு: <strong style="color: #2dd4bf;">' + (entry.score || 0) + '%</strong></div>' +
+        '<span style="color: #fbbf24; font-size: 0.8rem; font-weight: 700;">🔥 தொடர்: ' + (entry.streak || 1) + ' நாள்</span>' +
+      '</div>' +
+      '<div style="margin-top: 6px; font-size: 0.82rem; color: #cbd5e1;">' +
+        '<strong>ஆற்றிய யக்ஞங்கள்:</strong> ' + (yajnaList.length ? yajnaList.join(', ') + ' யக்ஞங்கள்' : 'எதுவுமில்லை') + ' | ' +
+        '<strong>சாந்தம்:</strong> ' + (entry.anger || 5) + '/5 | ' +
+        '<strong>இல்லற ஒற்றுமை:</strong> ' + (entry.harmony || 5) + '/5' +
+      '</div>' +
+      (entry.note ? '<div style="margin-top: 8px; font-size: 0.84rem; color: #f8fafc; background: rgba(255,255,255,0.06); padding: 8px 12px; border-radius: 6px; border-left: 3px solid #2dd4bf;"><em>" ' + entry.note + ' "</em></div>' : '');
     }
 
     function resetDharmaToday() {
@@ -1749,6 +1870,7 @@
         }
       }
       updateDharmaTracker();
+      render30DayStreakCalendar();
     }
 
     // --- Noble Family Charter Logic ---

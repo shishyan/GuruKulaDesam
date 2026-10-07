@@ -41,8 +41,8 @@ UNIT_VISUAL_MAP = {
     # Grade 3
     (3, 1): {
         "diagram_key": "naalvar",
-        "hero_image": "assets/images/lessons/disciples_under_sacred_tree.jpg",
-        "hero_caption": "சமயக் குரவர் நால்வர் — ஆலமரத்தடியில் குரு சீடருக்கு உபதேசிக்கும் மெய்ஞான மரபு"
+        "hero_image": "assets/images/lessons/grade3_naalvar_saints.jpg",
+        "hero_caption": "சமயக் குரவர் நால்வர் — அப்பர், சம்பந்தர், சுந்தரர், மாணிக்கவாசகர் அருளிய பக்தி ஞான நெறி"
     },
     (3, 2): {
         "diagram_key": "sandhyavandanam",
@@ -51,8 +51,8 @@ UNIT_VISUAL_MAP = {
     },
     (3, 3): {
         "diagram_key": "pancha_bhuta",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "பஞ்ச பூதத் தலங்கள் — நிலம், நீர், தீ, காற்று, வெளி எங்கும் நிறைந்த ஈசன்"
+        "hero_image": "assets/images/lessons/grade3_pancha_bhuta_temples.jpg",
+        "hero_caption": "பஞ்ச பூதத் தலங்கள் — நிலம், நீர், தீ, காற்று, ஆகாயம் எங்கும் அருளும் சிவ பரம்பொருளின் திருக்கோயில்கள்"
     },
     (3, 4): {
         "diagram_key": "konrai_vendhan",
@@ -73,13 +73,13 @@ UNIT_VISUAL_MAP = {
     },
     (4, 2): {
         "diagram_key": "naalvar",
-        "hero_image": "assets/images/lessons/shiva_tripundram.jpg",
-        "hero_caption": "அப்பர் பெருமானின் மாசில் வீணையும் — எதற்கும் அஞ்சாத உழவாரத் தொண்டு"
+        "hero_image": "assets/images/lessons/grade4_appar_service.jpg",
+        "hero_caption": "அப்பர் பெருமானின் உழவாரத் தொண்டு — 'என் கடன் பணி செய்து கிடப்பதே' எனும் தன்னலமற்ற சிவாலயத் தொண்டு"
     },
     (4, 3): {
         "diagram_key": "panchakshara",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "சைவ விரதங்கள் — மனதை ஒருமுகப்படுத்தும் ஐந்தெழுத்து மந்திர தியானம்"
+        "hero_image": "assets/images/lessons/grade4_saiva_vratas.jpg",
+        "hero_caption": "சைவ விரதங்கள் & சிவபூஜை — தூய இல்லறத்தில் வில்வ தளங்களால் சிவலிங்கத்தை வழிபடும் திருக்குடும்பம்"
     },
     (4, 4): {
         "diagram_key": "konrai_vendhan",
@@ -104,8 +104,8 @@ UNIT_VISUAL_MAP = {
     },
     (5, 2): {
         "diagram_key": "naalvar",
-        "hero_image": "assets/images/lessons/disciples_under_sacred_tree.jpg",
-        "hero_caption": "சுந்தரரின் திருத்தொண்டர் தொகை — அடியார்க்கும் அடியேன் எனும் சரணாகதி"
+        "hero_image": "assets/images/lessons/grade5_sundarar_thiruvarur.jpg",
+        "hero_caption": "சுந்தரரின் திருத்தொண்டர் தொகை — திருவாரூர் தேவாசிரியன் மண்டபத்தில் சிவனடியார்களை வணங்கிப் பாடிய அடியார்க்கும் அடியேன் நெறி"
     },
     (5, 3): {
         "diagram_key": "thirukkural_trivarga",
@@ -114,8 +114,8 @@ UNIT_VISUAL_MAP = {
     },
     (5, 4): {
         "diagram_key": "panchakshara",
-        "hero_image": "assets/images/lessons/nataraja_cosmic_dance.jpg",
-        "hero_caption": "போற்றித் திருவகவல் — எங்கும் நிறைந்த பரம்பொருளைப் போற்றிப் பரவுதல்"
+        "hero_image": "assets/images/lessons/grade5_manikkavasagar_thiruvasagam.jpg",
+        "hero_caption": "மாணிக்கவாசகப் பெருமான் — சிதம்பரக் கனகசபையில் ஆனந்தக் கண்ணீருடன் திருவாசகத் தேன் பொழியும் மெய்பக்தி"
     },
     (5, 5): {
         "diagram_key": "karma_wheel",
@@ -135,8 +135,8 @@ UNIT_VISUAL_MAP = {
     },
     (6, 2): {
         "diagram_key": "ashtanga_yoga",
-        "hero_image": "assets/images/lessons/disciples_under_sacred_tree.jpg",
-        "hero_caption": "திருமந்திர குரு-சீடர் உறவு — மாணவருக்கு மெய்ஞானம் நல்கும் குருவருள்"
+        "hero_image": "assets/images/lessons/grade6_thirumoolar_tapas.jpg",
+        "hero_caption": "திருமூல நாயனார் தவநெறி — ஆலமர நிழலில் யோக சமாதியில் 'அன்பே சிவம்' எனும் திருமந்திரம் அருளிய மாமுனிவர்"
     },
     (6, 3): {
         "diagram_key": "pati_pasu_pasam",
@@ -145,8 +145,8 @@ UNIT_VISUAL_MAP = {
     },
     (6, 4): {
         "diagram_key": "pancha_yajna",
-        "hero_image": "assets/images/lessons/harvesting_family_dharma.jpg",
-        "hero_caption": "பஞ்ச மகா யக்ஞங்கள் — உழவு செய்து விளைச்சலைப் பகிர்ந்தளிக்கும் இல்லறக் கடமைகள்"
+        "hero_image": "assets/images/lessons/grade6_pancha_maha_yajna.jpg",
+        "hero_caption": "பஞ்ச மகா யக்ஞங்கள் — தென்புலத்தார், தெய்வம், விருந்து, ஒக்கல், தான் என்ற ஐம்புலக் கடமைகளையும் இல்லறத்தில் ஆற்றுதல்"
     },
     (6, 5): {
         "diagram_key": "thirukkural_trivarga",
@@ -175,8 +175,8 @@ UNIT_VISUAL_MAP = {
     },
     (7, 3): {
         "diagram_key": "nayanmar_lineage",
-        "hero_image": "assets/images/lessons/temple_architecture.jpg",
-        "hero_caption": "பெரியபுராணம் — அடியவர்களின் மெய்ப்பக்தி வரலாற்றுப் பொக்கிஷம்"
+        "hero_image": "assets/images/lessons/grade7_periyapuranam_sekkizhar.jpg",
+        "hero_caption": "சேக்கிழார் பெருமான் பெரியபுராணம் — அனபாய சோழ மன்னரின் அரசவையில் திருத்தொண்டர் புராணத்தை அரங்கேற்றிய காட்சி"
     },
     (7, 4): {
         "diagram_key": "karma_wheel",
@@ -201,8 +201,8 @@ UNIT_VISUAL_MAP = {
     },
     (8, 2): {
         "diagram_key": "agamas_shastras",
-        "hero_image": "assets/images/lessons/sage_sacred_scripture.jpg",
-        "hero_caption": "பதினான்கு மெய்கண்ட சாத்திரங்கள் — சித்தாந்த தத்துவ விளக்க மரபு"
+        "hero_image": "assets/images/lessons/grade8_meykanda_sastras.jpg",
+        "hero_caption": "பதினான்கு மெய்கண்ட சாத்திரங்கள் — மெய்கண்ட தேவர் சிவஞான போதத்தை அருளருந்தி சிவாச்சாரியாருக்கு உபதேசித்த ஞான நெறி"
     },
     (8, 3): {
         "diagram_key": "isai_pann",
@@ -220,8 +220,8 @@ UNIT_VISUAL_MAP = {
     },
     (8, 5): {
         "diagram_key": "vallalar_jyothi",
-        "hero_image": "assets/images/lessons/panchakshara_mandala.jpg",
-        "hero_caption": "வள்ளலார் அருட்பெருஞ்ஜோதி — 7 மாயைத் திரைகளை அகற்றும் ஜோதி தரிசனம்"
+        "hero_image": "assets/images/lessons/grade8_vallalar_jyothi.jpg",
+        "hero_caption": "வள்ளலார் அருட்பெருஞ்ஜோதி — வடலூர் சத்திய ஞான சபையில் 7 மாயைத் திரைகளை நீக்கி ஒளிரும் ஜோதி தரிசனம்"
     },
 
     # Grade 9 (இளைஞர் பருவம் - சான்றாண்மையும் சமூக மாண்பும்)

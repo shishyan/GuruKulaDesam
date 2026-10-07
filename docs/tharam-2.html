@@ -295,7 +295,7 @@
     </div>
 
     <!-- Anchor for scrolling -->
-    <div id="course-content-start"></div>
+    <div id="courseUnits" data-start="course-content-start"></div>
 
 
 
@@ -508,7 +508,7 @@
             </div>
 
             <!-- Sacred Lesson Hero Artwork Card -->
-            <div class="lesson-hero-visual-card" style="margin-bottom: 24px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(56,189,248,0.25); background: rgba(11, 17, 30, 0.7); box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+            <div id="visualDiagramCard" class="lesson-hero-visual-card" style="margin-bottom: 24px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(56,189,248,0.25); background: rgba(11, 17, 30, 0.7); box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
               <div style="position: relative; max-height: 380px; overflow: hidden;">
                 <img src="assets/images/lessons/shiva_tripundram.jpg" alt="சிவ சின்னங்கள் — நெற்றியில் தரிக்கும் தூய திருநீறு (திரிபுண்டரம்) மற்றும் ஆன்மீக ஒளி" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 380px; transition: transform 0.4s ease;" loading="lazy">
                 <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(180deg, transparent 0%, rgba(11,17,30,0.92) 80%); padding: 20px 24px 14px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 8px;">
@@ -713,7 +713,7 @@
                 <div class="phase-sub-title">❓ சுய பரிசோதனை வினாடி-வினா (Self-Check Quiz):</div>
                 <p style="color:var(--text-muted); font-size:0.88rem; margin-bottom:12px;">வினாவை வாசித்து விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்தி சரிபார்க்கவும்.</p>
                 
-            <div class="quiz-card" style="margin-bottom:12px;">
+            <div id="quizSection" class="quiz-card" style="margin-bottom:12px;">
               <details>
                 <summary style="padding:14px 18px; font-size:0.96rem;">
                   <span><strong>வினா 1:</strong> திருநீறு நெற்றியில் அணியப்படும் மூன்று கோடுகளுக்கு என்ன பெயர்?</span>
@@ -2349,7 +2349,7 @@
         </div>
         
         <div class="lesson-unit-panel" id="unit-panel-sheets">
-          <div class="scripture-study-section" style="margin-bottom:24px;">
+          <div id="gradeVirtueBox" class="scripture-study-section" style="margin-bottom:24px;">
             <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
               <span class="wbs-code wbs-code-primary">WBS 2.S</span>
               <span class="source-badge">அங்கீகரிக்கப்பட்ட பாடநூல் படங்கள் • மொத்தம் 64 பக்கங்கள்</span>
@@ -3610,7 +3610,7 @@
   </div>
 
   <!-- Site Footer -->
-      <!-- Dedicated Grade Sadhana & Domestic Dharma Practice Box -->
+    <!-- Dedicated Grade Sadhana & Domestic Dharma Practice Box -->
     <section id="sadhanaBox" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(13, 37, 53, 0.94)); border: 2px solid rgba(45, 212, 191, 0.4); border-radius: 18px; padding: 26px 28px; margin: 36px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
       <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:14px; margin-bottom:16px; border-bottom:1px solid rgba(45,212,191,0.25); padding-bottom:14px;">
         <div>
@@ -3618,10 +3618,10 @@
             🪔 வாழ்வியல் சாதனா &amp; இல்லற தர்மம் • GRADE DHARMA SADHANA
           </span>
           <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:4px 0 6px 0;">
-            அறநெறி வாழ்வியல் சாதனா — சான்றோனாகி குடும்பத்தை வழிநடத்துதல்
+            தரம் 2 இல்லற சாதனா — திருநீறு, தேவாரம் & இல்லப் பணிவிடை
           </h3>
           <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0; max-width:850px;">
-            படிப்பதும் போதிப்பதும் அல்ல — தர்மத்தை வாழ்ந்து காட்டுவதே அதிவேக முக்தி! இந்த தரத்தில் நீங்கள் கற்ற அறநெறிகளை உங்கள் இல்லத்தில் பெற்றோர், உடன்பிறப்புகள் மற்றும் அனைத்து உயிர்களிடமும் அன்போடு பயிற்சி செய்திடுங்கள்.
+            பாலப் பருவத்தில் இல்லத்தில் தெய்வ பக்தியையும், உடன்பிறப்புகளோடு உணவைப் பகிர்ந்துகொள்ளும் அன்பையும், எளிய பணிவிடைகளையும் பயிலுதல்.
           </p>
         </div>
         <div style="display:flex; gap:10px; flex-wrap:wrap;">
@@ -3635,16 +3635,16 @@
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
         <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
-          <strong style="color: #2dd4bf; font-size: 0.9rem; display: block; margin-bottom: 4px;">1. பெற்றோருக்குப் பணிவிடை</strong>
-          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">தாய் தந்தையரை வணங்கி அவர்கள் சொல்லைக் கேட்டு நடத்தல்; காலை/மாலை பெற்றோரின் ஆசி பெறுதல்.</div>
+          <strong style="color: #2dd4bf; font-size: 0.9rem; display: block; margin-bottom: 4px;">1. திருநீறு தரித்தல் & இல்ல விளக்கு</strong>
+          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">காலையில் நீராடி நெற்றியில் திருநீறு தரித்து, இல்லத்து விளக்கேற்றி எளிய தேவாரம்/நமசிவாய மந்திரம் ஓதி வணங்குதல்.</div>
         </div>
         <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
-          <strong style="color: #38bdf8; font-size: 0.9rem; display: block; margin-bottom: 4px;">2. சினமின்மை &amp; இன்சொல்</strong>
-          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">இல்லத்தில் யாருடனும் கோபம் கொள்ளாமல், கனிவான இன்சொற்களையே பேசி நல்லிணக்கம் பேணுதல்.</div>
+          <strong style="color: #38bdf8; font-size: 0.9rem; display: block; margin-bottom: 4px;">2. உணவைப் பகிர்ந்துண்ணல்</strong>
+          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">உடன்பிறப்புகளுடனும் பெற்றோருடனும் அமர்ந்து நன்றி உணர்வோடு பகிர்ந்து உண்ணுதல்; உணவை வீணாக்காதிருத்தல்.</div>
         </div>
         <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
-          <strong style="color: #fbbf24; font-size: 0.9rem; display: block; margin-bottom: 4px;">3. உயிர்களிடத்தில் அன்பு</strong>
-          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">பறவைகளுக்கும் பிராணிகளுக்கும் நீர்/தானியம் வைத்து, தாவரங்களை அன்போடு வளர்த்து வருதல்.</div>
+          <strong style="color: #fbbf24; font-size: 0.9rem; display: block; margin-bottom: 4px;">3. எளிய இல்லப் பணிவிடை</strong>
+          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">தனது விளையாட்டுப் பொருட்களையும் பாடப் புத்தகங்களையும் தானே ஒழுங்குபடுத்தி பெற்றோரின் சுமையைக் குறைத்தல்.</div>
         </div>
       </div>
     </section>

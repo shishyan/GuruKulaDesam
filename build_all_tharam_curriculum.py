@@ -114,7 +114,7 @@ def build_grade_coursebook(g, data):
         </div>
         """
 
-    # If Grade 2, add Sheets tab to sidebar
+    # Add Sheets tab to sidebar
     if g == 2 and grade2_sheets:
         sidebar_groups_html += f"""
         <div class="sidebar-chapter-group" id="side-group-sheets">
@@ -122,6 +122,17 @@ def build_grade_coursebook(g, data):
             <span class="sidebar-chapter-pill">
               <span class="sidebar-num">2.S</span>
               <span>பாடநூல் தாள்கள் ({len(grade2_sheets)})</span>
+            </span>
+          </button>
+        </div>
+        """
+    elif g >= 3:
+        sidebar_groups_html += f"""
+        <div class="sidebar-chapter-group" id="side-group-sheets">
+          <button type="button" class="sidebar-chapter-btn" id="side-btn-sheets" onclick="selectChapter('sheets')">
+            <span class="sidebar-chapter-pill">
+              <span class="sidebar-num">{g}.S</span>
+              <span>பாடநூல் காட்சித் தாள்கள் (6)</span>
             </span>
           </button>
         </div>
@@ -162,6 +173,13 @@ def build_grade_coursebook(g, data):
         <button type="button" class="course-tab-btn" id="tab-btn-sheets" onclick="selectChapter('sheets')">
           <span class="course-tab-num">2.S</span>
           <span>பாடநூல் தாள்கள் (64)</span>
+        </button>
+        """
+    elif g >= 3:
+        top_tabs_html += f"""
+        <button type="button" class="course-tab-btn" id="tab-btn-sheets" onclick="selectChapter('sheets')">
+          <span class="course-tab-num">{g}.S</span>
+          <span>பாடநூல் தாள்கள் (6)</span>
         </button>
         """
 
@@ -547,6 +565,81 @@ def build_grade_coursebook(g, data):
           <div class="lesson-nav-footer">
             <button type="button" class="lesson-nav-btn lesson-nav-prev" onclick="selectChapter(5)">← அத்தியாயம் 5 திரும்புக</button>
             <a href="tharam-3.html" class="lesson-nav-btn lesson-nav-next">தரம் 3 காண்க (Grade 3) →</a>
+          </div>
+        </div>
+        """
+    elif g >= 3:
+        cover_enriched = enrich_unit(g, units[0])
+        cover_img = cover_enriched.get('hero_image', 'assets/images/lessons/scholar_palm_manuscript.jpg')
+        sheet_cards = f"""
+        <div class="sheet-card">
+          <div class="sheet-header">
+            <span><span class="wbs-code">{g}.S.0</span> முகப்பு அட்டை</span>
+            <span style="font-size:0.75rem; color:var(--text-muted);">தரம் {g}</span>
+          </div>
+          <div class="sheet-thumb" onclick="openSheetModal('{cover_img}', 0, 'வாழ்வியல் நெறி {data['grade_tamil']} — பாடநூல் முகப்பு அட்டை', 'தரம் {g}')">
+            <img src="{cover_img}" loading="lazy" alt="தரம் {g} பாடநூல் முகப்பு அட்டை">
+            <div class="sheet-zoom-overlay">🔍</div>
+          </div>
+          <div style="padding:10px 14px 6px; font-size:0.86rem; color:#f8fafc; font-weight:700;">
+            {data['grade_tamil']} — பாடநூல் முகப்பு அட்டை
+          </div>
+          <div class="sheet-actions">
+            <button type="button" class="sheet-btn sheet-btn-view" onclick="openSheetModal('{cover_img}', 0, 'வாழ்வியல் நெறி {data['grade_tamil']} — பாடநூல் முகப்பு அட்டை', 'தரம் {g}')">
+              🔍 பெரிதாக்குக
+            </button>
+            <a href="https://sites.google.com/view/wwwgurukuladesamcom/home/%E0%AE%9A%E0%AE%B5-%E0%AE%A8%E0%AE%B1/%E0%AE%A4%E0%AE%B0%E0%AE%AE-{g}" target="_blank" rel="noopener" class="sheet-btn sheet-btn-direct" title="கூகிள் தளத்தில் காண்க">
+              Google Site ↗
+            </a>
+          </div>
+        </div>
+        """
+        for u in units:
+            u_enriched = enrich_unit(g, u)
+            u_img = u_enriched.get('hero_image', 'assets/images/lessons/scholar_palm_manuscript.jpg')
+            clean_title = u['title'].split('—')[0].strip()
+            sheet_cards += f"""
+            <div class="sheet-card">
+              <div class="sheet-header">
+                <span><span class="wbs-code">{g}.S.{u['num']}</span> பாடம் {u['num']}</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">தரம் {g}</span>
+              </div>
+              <div class="sheet-thumb" onclick="openSheetModal('{u_img}', {u['num']}, '{clean_title}', 'தரம் {g}')">
+                <img src="{u_img}" loading="lazy" alt="தரம் {g} பாடம் {u['num']} - {clean_title}">
+                <div class="sheet-zoom-overlay">🔍</div>
+              </div>
+              <div style="padding:10px 14px 6px; font-size:0.86rem; color:#f8fafc; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="{clean_title}">
+                {u['num']}. {clean_title}
+              </div>
+              <div class="sheet-actions">
+                <button type="button" class="sheet-btn sheet-btn-view" onclick="openSheetModal('{u_img}', {u['num']}, '{clean_title}', 'தரம் {g}')">
+                  🔍 பெரிதாக்குக
+                </button>
+                <button type="button" class="sheet-btn sheet-btn-direct" onclick="selectChapter({u['num']})" title="பாடத்திற்குச் செல்க">
+                  பாடத்திற்கு ↗
+                </button>
+              </div>
+            </div>
+            """
+
+        panels_html += f"""
+        <div class="lesson-unit-panel" id="unit-panel-sheets">
+          <div class="scripture-study-section" style="margin-bottom:24px;">
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+              <span class="wbs-code wbs-code-primary">WBS {g}.S</span>
+              <span class="source-badge">பாடநூல் காட்சித் தாள்கள் • மொத்தம் 6 தாள்கள்</span>
+            </div>
+            <h3 style="color:#f8fafc; font-size:1.4rem; margin-top:8px;">{data['grade_tamil']} — பாடநூல் காட்சித் தாள்கள் (Textbook & Concept Sheets)</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem; margin-top:6px;">
+              முகப்பு அட்டை மற்றும் 5 அத்தியாயங்களின் முக்கியக் கற்பித்தல் காட்சித் தாள்கள். எந்தவொரு தாளின் மீதும் கிளிக் செய்து பெரிய அளவில் வாசிக்கலாம் (Click any sheet to zoom and read in high resolution).
+            </p>
+          </div>
+          <div class="sheets-grid">
+            {sheet_cards}
+          </div>
+          <div class="lesson-nav-footer">
+            <button type="button" class="lesson-nav-btn lesson-nav-prev" onclick="selectChapter(5)">← அத்தியாயம் 5 திரும்புக</button>
+            <a href="{next_link}" class="lesson-nav-btn lesson-nav-next">{next_label}</a>
           </div>
         </div>
         """

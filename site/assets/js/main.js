@@ -1301,7 +1301,22 @@ function scrollToSection(id, optionalTabId) {
   if (optionalTabId && typeof switchCourseTab === 'function') {
     switchCourseTab(optionalTabId);
   }
-  const el = document.getElementById(id) || document.querySelector('.' + id);
+  let el = document.getElementById(id) || document.querySelector('.' + id);
+  if (!el) {
+    const fallbacks = {
+      'courseUnits': ['#course-content-start', '#unit-panel-1', '.sheets-grid', '#sheets-section', '.course-layout', '#curriculumGrid'],
+      'gradeVirtueBox': ['#syllabus-highlights', '.scripture-study-section', '#side-group-virtue', '.virtue-card', '#virtue-mapping', '.virtue-section'],
+      'visualDiagramCard': ['.lesson-hero-visual-card', '.visual-card', '.infographic-card', '.lesson-video-microclip-card', '.poster-container'],
+      'quizSection': ['.interactive-quiz', '.quiz-card', '.quiz-container', '.quiz-panel', '#quizSection'],
+      'sadhanaBox': ['.sadhana-box', '#grihasthaTracker', '#familyCharter']
+    };
+    if (fallbacks[id]) {
+      for (let i = 0; i < fallbacks[id].length; i++) {
+        el = document.querySelector(fallbacks[id][i]);
+        if (el) break;
+      }
+    }
+  }
   if (el) {
     const yOffset = -75;
     const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;

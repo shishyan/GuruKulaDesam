@@ -295,7 +295,7 @@
     </div>
 
     <!-- Anchor for scrolling -->
-    <div id="course-content-start"></div>
+    <div id="courseUnits" data-start="course-content-start"></div>
 
 
 
@@ -456,6 +456,15 @@
           </div>
         </div>
         
+        <div class="sidebar-chapter-group" id="side-group-sheets">
+          <button type="button" class="sidebar-chapter-btn" id="side-btn-sheets" onclick="selectChapter('sheets')">
+            <span class="sidebar-chapter-pill">
+              <span class="sidebar-num">9.S</span>
+              <span>பாடநூல் காட்சித் தாள்கள் (6)</span>
+            </span>
+          </button>
+        </div>
+        
     <div class="sidebar-chapter-group" id="side-group-all">
       <button type="button" class="sidebar-chapter-btn" id="side-btn-all" onclick="selectChapter('all')">
         <span class="sidebar-chapter-pill">
@@ -499,7 +508,7 @@
             </div>
 
             <!-- Sacred Lesson Hero Artwork Card -->
-            <div class="lesson-hero-visual-card" style="margin-bottom: 24px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(56,189,248,0.25); background: rgba(11, 17, 30, 0.7); box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+            <div id="visualDiagramCard" class="lesson-hero-visual-card" style="margin-bottom: 24px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(56,189,248,0.25); background: rgba(11, 17, 30, 0.7); box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
               <div style="position: relative; max-height: 380px; overflow: hidden;">
                 <img src="assets/images/lessons/sage_sacred_scripture.jpg" alt="இருபத்தெட்டு சைவ ஆகமங்கள் — சரியை, கிரியை, யோகம், ஞான பாதங்கள்" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 380px; transition: transform 0.4s ease;" loading="lazy">
                 <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(180deg, transparent 0%, rgba(11,17,30,0.92) 80%); padding: 20px 24px 14px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 8px;">
@@ -739,7 +748,7 @@
                 <div class="phase-sub-title">❓ சுய பரிசோதனை வினாடி-வினா (Self-Check Quiz):</div>
                 <p style="color:var(--text-muted); font-size:0.88rem; margin-bottom:12px;">வினாவை வாசித்து விடையைச் சிந்தியுங்கள்; பின்னர் 'விடையைக் காண்க' என்பதை அழுத்தி சரிபார்க்கவும்.</p>
                 
-            <div class="quiz-card" style="margin-bottom:12px;">
+            <div id="quizSection" class="quiz-card" style="margin-bottom:12px;">
               <details>
                 <summary style="padding:14px 18px; font-size:0.96rem;">
                   <span><strong>வினா 1:</strong> இசைக்கு அடிப்படையாக விளங்கும் வேதம் எது?</span>
@@ -2300,6 +2309,158 @@
           </article>
         </div>
         
+        <div class="lesson-unit-panel" id="unit-panel-sheets">
+          <div id="gradeVirtueBox" class="scripture-study-section" style="margin-bottom:24px;">
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+              <span class="wbs-code wbs-code-primary">WBS 9.S</span>
+              <span class="source-badge">பாடநூல் காட்சித் தாள்கள் • மொத்தம் 6 தாள்கள்</span>
+            </div>
+            <h3 style="color:#f8fafc; font-size:1.4rem; margin-top:8px;">தரம் 9 — பாடநூல் காட்சித் தாள்கள் (Textbook & Concept Sheets)</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem; margin-top:6px;">
+              முகப்பு அட்டை மற்றும் 5 அத்தியாயங்களின் முக்கியக் கற்பித்தல் காட்சித் தாள்கள். எந்தவொரு தாளின் மீதும் கிளிக் செய்து பெரிய அளவில் வாசிக்கலாம் (Click any sheet to zoom and read in high resolution).
+            </p>
+          </div>
+          <div class="sheets-grid">
+            
+        <div class="sheet-card">
+          <div class="sheet-header">
+            <span><span class="wbs-code">9.S.0</span> முகப்பு அட்டை</span>
+            <span style="font-size:0.75rem; color:var(--text-muted);">தரம் 9</span>
+          </div>
+          <div class="sheet-thumb" onclick="openSheetModal('assets/images/lessons/sage_sacred_scripture.jpg', 0, 'வாழ்வியல் நெறி தரம் 9 — பாடநூல் முகப்பு அட்டை', 'தரம் 9')">
+            <img src="assets/images/lessons/sage_sacred_scripture.jpg" loading="lazy" alt="தரம் 9 பாடநூல் முகப்பு அட்டை">
+            <div class="sheet-zoom-overlay">🔍</div>
+          </div>
+          <div style="padding:10px 14px 6px; font-size:0.86rem; color:#f8fafc; font-weight:700;">
+            தரம் 9 — பாடநூல் முகப்பு அட்டை
+          </div>
+          <div class="sheet-actions">
+            <button type="button" class="sheet-btn sheet-btn-view" onclick="openSheetModal('assets/images/lessons/sage_sacred_scripture.jpg', 0, 'வாழ்வியல் நெறி தரம் 9 — பாடநூல் முகப்பு அட்டை', 'தரம் 9')">
+              🔍 பெரிதாக்குக
+            </button>
+            <a href="https://sites.google.com/view/wwwgurukuladesamcom/home/%E0%AE%9A%E0%AE%B5-%E0%AE%A8%E0%AE%B1/%E0%AE%A4%E0%AE%B0%E0%AE%AE-9" target="_blank" rel="noopener" class="sheet-btn sheet-btn-direct" title="கூகிள் தளத்தில் காண்க">
+              Google Site ↗
+            </a>
+          </div>
+        </div>
+        
+            <div class="sheet-card">
+              <div class="sheet-header">
+                <span><span class="wbs-code">9.S.1</span> பாடம் 1</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">தரம் 9</span>
+              </div>
+              <div class="sheet-thumb" onclick="openSheetModal('assets/images/lessons/sage_sacred_scripture.jpg', 1, 'இருபத்தெட்டு சைவ ஆகமங்கள்', 'தரம் 9')">
+                <img src="assets/images/lessons/sage_sacred_scripture.jpg" loading="lazy" alt="தரம் 9 பாடம் 1 - இருபத்தெட்டு சைவ ஆகமங்கள்">
+                <div class="sheet-zoom-overlay">🔍</div>
+              </div>
+              <div style="padding:10px 14px 6px; font-size:0.86rem; color:#f8fafc; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="இருபத்தெட்டு சைவ ஆகமங்கள்">
+                1. இருபத்தெட்டு சைவ ஆகமங்கள்
+              </div>
+              <div class="sheet-actions">
+                <button type="button" class="sheet-btn sheet-btn-view" onclick="openSheetModal('assets/images/lessons/sage_sacred_scripture.jpg', 1, 'இருபத்தெட்டு சைவ ஆகமங்கள்', 'தரம் 9')">
+                  🔍 பெரிதாக்குக
+                </button>
+                <button type="button" class="sheet-btn sheet-btn-direct" onclick="selectChapter(1)" title="பாடத்திற்குச் செல்க">
+                  பாடத்திற்கு ↗
+                </button>
+              </div>
+            </div>
+            
+            <div class="sheet-card">
+              <div class="sheet-header">
+                <span><span class="wbs-code">9.S.2</span> பாடம் 2</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">தரம் 9</span>
+              </div>
+              <div class="sheet-thumb" onclick="openSheetModal('assets/images/lessons/temple_architecture.jpg', 2, 'உடலே ஆலயம்', 'தரம் 9')">
+                <img src="assets/images/lessons/temple_architecture.jpg" loading="lazy" alt="தரம் 9 பாடம் 2 - உடலே ஆலயம்">
+                <div class="sheet-zoom-overlay">🔍</div>
+              </div>
+              <div style="padding:10px 14px 6px; font-size:0.86rem; color:#f8fafc; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="உடலே ஆலயம்">
+                2. உடலே ஆலயம்
+              </div>
+              <div class="sheet-actions">
+                <button type="button" class="sheet-btn sheet-btn-view" onclick="openSheetModal('assets/images/lessons/temple_architecture.jpg', 2, 'உடலே ஆலயம்', 'தரம் 9')">
+                  🔍 பெரிதாக்குக
+                </button>
+                <button type="button" class="sheet-btn sheet-btn-direct" onclick="selectChapter(2)" title="பாடத்திற்குச் செல்க">
+                  பாடத்திற்கு ↗
+                </button>
+              </div>
+            </div>
+            
+            <div class="sheet-card">
+              <div class="sheet-header">
+                <span><span class="wbs-code">9.S.3</span> பாடம் 3</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">தரம் 9</span>
+              </div>
+              <div class="sheet-thumb" onclick="openSheetModal('assets/images/lessons/disciples_under_sacred_tree.jpg', 3, 'பாரதத்தின் ஆறு தத்துவ தரிசனங்கள் (ஷட்தர்சனங்கள்)', 'தரம் 9')">
+                <img src="assets/images/lessons/disciples_under_sacred_tree.jpg" loading="lazy" alt="தரம் 9 பாடம் 3 - பாரதத்தின் ஆறு தத்துவ தரிசனங்கள் (ஷட்தர்சனங்கள்)">
+                <div class="sheet-zoom-overlay">🔍</div>
+              </div>
+              <div style="padding:10px 14px 6px; font-size:0.86rem; color:#f8fafc; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="பாரதத்தின் ஆறு தத்துவ தரிசனங்கள் (ஷட்தர்சனங்கள்)">
+                3. பாரதத்தின் ஆறு தத்துவ தரிசனங்கள் (ஷட்தர்சனங்கள்)
+              </div>
+              <div class="sheet-actions">
+                <button type="button" class="sheet-btn sheet-btn-view" onclick="openSheetModal('assets/images/lessons/disciples_under_sacred_tree.jpg', 3, 'பாரதத்தின் ஆறு தத்துவ தரிசனங்கள் (ஷட்தர்சனங்கள்)', 'தரம் 9')">
+                  🔍 பெரிதாக்குக
+                </button>
+                <button type="button" class="sheet-btn sheet-btn-direct" onclick="selectChapter(3)" title="பாடத்திற்குச் செல்க">
+                  பாடத்திற்கு ↗
+                </button>
+              </div>
+            </div>
+            
+            <div class="sheet-card">
+              <div class="sheet-header">
+                <span><span class="wbs-code">9.S.4</span> பாடம் 4</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">தரம் 9</span>
+              </div>
+              <div class="sheet-thumb" onclick="openSheetModal('assets/images/lessons/mindfulness_vigilance.jpg', 4, 'யம & நியமங்கள்', 'தரம் 9')">
+                <img src="assets/images/lessons/mindfulness_vigilance.jpg" loading="lazy" alt="தரம் 9 பாடம் 4 - யம & நியமங்கள்">
+                <div class="sheet-zoom-overlay">🔍</div>
+              </div>
+              <div style="padding:10px 14px 6px; font-size:0.86rem; color:#f8fafc; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="யம & நியமங்கள்">
+                4. யம & நியமங்கள்
+              </div>
+              <div class="sheet-actions">
+                <button type="button" class="sheet-btn sheet-btn-view" onclick="openSheetModal('assets/images/lessons/mindfulness_vigilance.jpg', 4, 'யம & நியமங்கள்', 'தரம் 9')">
+                  🔍 பெரிதாக்குக
+                </button>
+                <button type="button" class="sheet-btn sheet-btn-direct" onclick="selectChapter(4)" title="பாடத்திற்குச் செல்க">
+                  பாடத்திற்கு ↗
+                </button>
+              </div>
+            </div>
+            
+            <div class="sheet-card">
+              <div class="sheet-header">
+                <span><span class="wbs-code">9.S.5</span> பாடம் 5</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">தரம் 9</span>
+              </div>
+              <div class="sheet-thumb" onclick="openSheetModal('assets/images/lessons/royal_administration_dharma.jpg', 5, 'திருக்குறள் அரசியல்', 'தரம் 9')">
+                <img src="assets/images/lessons/royal_administration_dharma.jpg" loading="lazy" alt="தரம் 9 பாடம் 5 - திருக்குறள் அரசியல்">
+                <div class="sheet-zoom-overlay">🔍</div>
+              </div>
+              <div style="padding:10px 14px 6px; font-size:0.86rem; color:#f8fafc; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="திருக்குறள் அரசியல்">
+                5. திருக்குறள் அரசியல்
+              </div>
+              <div class="sheet-actions">
+                <button type="button" class="sheet-btn sheet-btn-view" onclick="openSheetModal('assets/images/lessons/royal_administration_dharma.jpg', 5, 'திருக்குறள் அரசியல்', 'தரம் 9')">
+                  🔍 பெரிதாக்குக
+                </button>
+                <button type="button" class="sheet-btn sheet-btn-direct" onclick="selectChapter(5)" title="பாடத்திற்குச் செல்க">
+                  பாடத்திற்கு ↗
+                </button>
+              </div>
+            </div>
+            
+          </div>
+          <div class="lesson-nav-footer">
+            <button type="button" class="lesson-nav-btn lesson-nav-prev" onclick="selectChapter(5)">← அத்தியாயம் 5 திரும்புக</button>
+            <a href="tharam-10.html" class="lesson-nav-btn lesson-nav-next">தரம் 10 →</a>
+          </div>
+        </div>
+        
       </div>
 
     </div>
@@ -2326,7 +2487,7 @@
   </div>
 
   <!-- Site Footer -->
-      <!-- Dedicated Grade Sadhana & Domestic Dharma Practice Box -->
+    <!-- Dedicated Grade Sadhana & Domestic Dharma Practice Box -->
     <section id="sadhanaBox" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(13, 37, 53, 0.94)); border: 2px solid rgba(45, 212, 191, 0.4); border-radius: 18px; padding: 26px 28px; margin: 36px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
       <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:14px; margin-bottom:16px; border-bottom:1px solid rgba(45,212,191,0.25); padding-bottom:14px;">
         <div>
@@ -2334,10 +2495,10 @@
             🪔 வாழ்வியல் சாதனா &amp; இல்லற தர்மம் • GRADE DHARMA SADHANA
           </span>
           <h3 style="color:#ffffff; font-size:1.35rem; font-weight:800; margin:4px 0 6px 0;">
-            அறநெறி வாழ்வியல் சாதனா — சான்றோனாகி குடும்பத்தை வழிநடத்துதல்
+            தரம் 9 இல்லற சாதனா — சான்றாண்மை & சினமின்மை
           </h3>
           <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0; max-width:850px;">
-            படிப்பதும் போதிப்பதும் அல்ல — தர்மத்தை வாழ்ந்து காட்டுவதே அதிவேக முக்தி! இந்த தரத்தில் நீங்கள் கற்ற அறநெறிகளை உங்கள் இல்லத்தில் பெற்றோர், உடன்பிறப்புகள் மற்றும் அனைத்து உயிர்களிடமும் அன்போடு பயிற்சி செய்திடுங்கள்.
+            வள்ளுவர் காட்டிய அன்பு, நாண், ஒப்புரவு, கண்ணோட்டம், வாய்மை ஆகிய ஐந்து சான்றாண்மைத் தூண்களை குடும்ப வாழ்வில் நிலைநிறுத்துதல்.
           </p>
         </div>
         <div style="display:flex; gap:10px; flex-wrap:wrap;">
@@ -2351,16 +2512,16 @@
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
         <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
-          <strong style="color: #2dd4bf; font-size: 0.9rem; display: block; margin-bottom: 4px;">1. பெற்றோருக்குப் பணிவிடை</strong>
-          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">தாய் தந்தையரை வணங்கி அவர்கள் சொல்லைக் கேட்டு நடத்தல்; காலை/மாலை பெற்றோரின் ஆசி பெறுதல்.</div>
+          <strong style="color: #2dd4bf; font-size: 0.9rem; display: block; margin-bottom: 4px;">1. சான்றாண்மை ஐங்குணங்கள்</strong>
+          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">அன்பு, நாண், ஒப்புரவு (உதவுதல்), கண்ணோட்டம் (இரக்கம்), வாய்மை ஆகிய ஐந்து குணங்களையும் தன் அன்றாடப் பழக்கமாக்குதல்.</div>
         </div>
         <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
-          <strong style="color: #38bdf8; font-size: 0.9rem; display: block; margin-bottom: 4px;">2. சினமின்மை &amp; இன்சொல்</strong>
-          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">இல்லத்தில் யாருடனும் கோபம் கொள்ளாமல், கனிவான இன்சொற்களையே பேசி நல்லிணக்கம் பேணுதல்.</div>
+          <strong style="color: #38bdf8; font-size: 0.9rem; display: block; margin-bottom: 4px;">2. வெகுளாமை (சினத்தை வெல்லுதல்)</strong>
+          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">குடும்பத்திலோ வெளியிலோ எவரிடமும் ஆத்திரம் கொள்ளாமல், விவேகத்தோடும் பொறுமையோடும் சூழல்களை அமைதியாகக் கையாளுதல்.</div>
         </div>
         <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px;">
-          <strong style="color: #fbbf24; font-size: 0.9rem; display: block; margin-bottom: 4px;">3. உயிர்களிடத்தில் அன்பு</strong>
-          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">பறவைகளுக்கும் பிராணிகளுக்கும் நீர்/தானியம் வைத்து, தாவரங்களை அன்போடு வளர்த்து வருதல்.</div>
+          <strong style="color: #fbbf24; font-size: 0.9rem; display: block; margin-bottom: 4px;">3. எளியோர்க்குத் தன்னலமற்ற உதவி</strong>
+          <div style="color: #94a3b8; font-size: 0.84rem; line-height: 1.5;">தன் சொந்த நலனைத் தாண்டி, சுற்றியுள்ள எளியோருக்கும் உறவினர்களுக்கும் தன்னால் இயன்ற உதவிகளை மனமுவந்து புரிதல்.</div>
         </div>
       </div>
     </section>

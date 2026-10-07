@@ -324,7 +324,7 @@
         <li><strong>உயிர்களிடத்தில் அன்பு:</strong> பறவைகள், வளர்ப்புப் பிராணிகள் மற்றும் செடி கொடிகளுக்கு நீர் ஊற்றுதல்.</li>
       </ul>
     <!-- Sacred Lesson Hero Artwork Card -->
-    <div class="lesson-hero-visual-card" style="margin: 24px 0; border-radius: 16px; overflow: hidden; border: 1px solid rgba(56,189,248,0.25); background: rgba(11, 17, 30, 0.7); box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+    <div id="visualDiagramCard" class="lesson-hero-visual-card" style="margin: 24px 0; border-radius: 16px; overflow: hidden; border: 1px solid rgba(56,189,248,0.25); background: rgba(11, 17, 30, 0.7); box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
       <div style="position: relative; max-height: 380px; overflow: hidden;">
         <img src="assets/images/lessons/children_feeding_creatures.jpg" alt="பாலப் பருவ நற்பண்புகள் — உயிர்களிடத்தில் அன்பு" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 380px;" loading="lazy">
         <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(180deg, transparent 0%, rgba(11,17,30,0.92) 80%); padding: 20px 24px 14px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 8px;">
@@ -363,6 +363,7 @@
     </div>
 
     <!-- 60 Sheets Grid -->
+    <div id="courseUnits" style="scroll-margin-top: 80px;"></div>
     <div id="sheets-section" style="display:flex; justify-content:space-between; align-items:center; margin-top:30px; flex-wrap:wrap; gap:10px;">
         <div style="display:flex; align-items:center; gap:8px;"><span class="wbs-code wbs-code-primary">WBS 1.1</span> <strong style="color:#f8fafc;">60 பாடநூல் தாள்கள் (Textbook Sheets)</strong></div>
       <h2 class="section-divider-title" style="margin:0;">முழுமையான 60 பாடநூல் பக்கங்கள் (All 60 Pages)</h2>
@@ -1608,7 +1609,7 @@
 
   
     <!-- Alphabets to Virtue Mapping Section (Grade 1 Specific) -->
-    <section class="scripture-study-section" style="margin-top: 36px; margin-bottom: 36px; border: 1px solid var(--border-gold-hover); background: rgba(15, 18, 26, 0.95); box-shadow: 0 10px 30px rgba(0,0,0,0.6);">
+    <section id="gradeVirtueBox" class="scripture-study-section" style="margin-top: 36px; margin-bottom: 36px; border: 1px solid var(--border-gold-hover); background: rgba(15, 18, 26, 0.95); box-shadow: 0 10px 30px rgba(0,0,0,0.6);">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 10px;">
         <span class="source-badge" style="background: linear-gradient(135deg, #d4af37, #996515); color: #000; font-weight: 800;">🔤 அகர வரிசை நற்பண்பு நெறிமுறைமை • தரம் 1</span>
         <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 4px 12px; border-radius: 14px; font-size: 0.8rem; font-weight: 700;">
@@ -1714,7 +1715,42 @@
     </section>
     
 
-      <!-- Dedicated Grade Sadhana & Domestic Dharma Practice Box -->
+      <!-- Interactive Self-Quiz Section (Grade 1) -->
+    <section id="quizSection" class="scripture-study-section" style="margin-top: 32px; margin-bottom: 32px; border: 1px solid rgba(56, 189, 248, 0.35); background: rgba(15, 23, 42, 0.95); border-radius: 16px; padding: 24px 26px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid rgba(56,189,248,0.2); padding-bottom:10px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="wbs-code wbs-code-primary">WBS 1.4</span>
+          <span class="source-badge" style="background:linear-gradient(135deg, #38bdf8, #0284c7); color:#000; font-weight:800;">❓ சுய வினாடி-வினா • Self-Check Quiz</span>
+        </div>
+        <span style="color:var(--gold-soft); font-size:0.86rem; font-weight:600;">தரம் 1 — பாலப் பருவ அறிவுச் சோதனை</span>
+      </div>
+      <h3 style="color:#ffffff; font-size:1.25rem; font-weight:700; margin-bottom:14px;">சுய மதிப்பீட்டு வினாக்கள் (3 வினாக்கள்):</h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+        <div class="quiz-card" style="background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px;">
+          <div style="font-weight:700; color:#38bdf8; font-size:0.92rem; margin-bottom:8px;">வினா 1: 'அறம் செய்ய விரும்பு' என்று ஆத்திசூடியில் அருளியவர் யார்?</div>
+          <details style="cursor:pointer; background:rgba(255,255,255,0.04); border-radius:8px; padding:8px 12px;">
+            <summary style="color:#fbbf24; font-size:0.85rem; font-weight:600;">விடையைக் காண்க 👁️</summary>
+            <div style="color:#2dd4bf; font-weight:700; font-size:0.9rem; margin-top:6px;">✓ விடை: ஔவையார். எந்நாளும் நற்செயல்களையே விரும்பிச் செய்தல் பாலப் பருவ அறம்.</div>
+          </details>
+        </div>
+        <div class="quiz-card" style="background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px;">
+          <div style="font-weight:700; color:#38bdf8; font-size:0.92rem; margin-bottom:8px;">வினா 2: பசித்த உயிர்களுக்கும் பறவைகளுக்கும் உணவு தருவது எத்தகைய அறம்?</div>
+          <details style="cursor:pointer; background:rgba(255,255,255,0.04); border-radius:8px; padding:8px 12px;">
+            <summary style="color:#fbbf24; font-size:0.85rem; font-weight:600;">விடையைக் காண்க 👁️</summary>
+            <div style="color:#2dd4bf; font-weight:700; font-size:0.9rem; margin-top:6px;">✓ விடை: ஈகை மற்றும் பூத யக்ஞம் (உயிர்களிடத்தில் அன்பு செலுத்துதல்).</div>
+          </details>
+        </div>
+        <div class="quiz-card" style="background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:16px;">
+          <div style="font-weight:700; color:#38bdf8; font-size:0.92rem; margin-bottom:8px;">வினா 3: பெற்றோர் சொல் கேட்டு இன்சொல் பேசி வாழ்வது எதற்கு வழிவகுக்கும்?</div>
+          <details style="cursor:pointer; background:rgba(255,255,255,0.04); border-radius:8px; padding:8px 12px;">
+            <summary style="color:#fbbf24; font-size:0.85rem; font-weight:600;">விடையைக் காண்க 👁️</summary>
+            <div style="color:#2dd4bf; font-weight:700; font-size:0.9rem; margin-top:6px;">✓ விடை: குடும்ப அமைதி, சான்றாண்மை மற்றும் உன்னத ஆன்ம மேன்மை.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated Grade Sadhana & Domestic Dharma Practice Box -->
     <section id="sadhanaBox" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(13, 37, 53, 0.94)); border: 2px solid rgba(45, 212, 191, 0.4); border-radius: 18px; padding: 26px 28px; margin: 36px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
       <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:14px; margin-bottom:16px; border-bottom:1px solid rgba(45,212,191,0.25); padding-bottom:14px;">
         <div>

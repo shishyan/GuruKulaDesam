@@ -29,6 +29,9 @@ token.json
 client_secrets.json
 
 # Scratch files
+scratch/
+scratch_*.*
+*.scratch.*
 python
 *.txt
 *.csv

@@ -175,10 +175,11 @@ def render_chapter(ch_num: int):
     out_master = cfg["output"]
     
     filter_complex = (
-        "[1:v]colorchannelmixer=aa=0.30[rain];"
-        "[2:v]colorchannelmixer=aa=0.10[smoke];"
-        "[0:v][rain]blend=all_mode='screen'[v1];"
-        "[v1][smoke]blend=all_mode='screen',format=yuv420p[vout]"
+        "[0:v]format=gbrp[base];"
+        "[1:v]format=gbrp[rain];"
+        "[2:v]format=gray,lut='val*0.15',format=gbrp[smoke];"
+        "[base][rain]blend=all_mode=screen:all_opacity=0.20[v1];"
+        "[v1][smoke]blend=all_mode=screen:all_opacity=0.10,format=yuv420p[vout]"
     )
     
     cmd_composite = [
