@@ -275,7 +275,7 @@ function openPlayer(videoId, title) {
 
   if (!iframe) return;
 
-  iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0&playsinline=1`;
+  iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0&playsinline=1`;
   if (titleEl) titleEl.innerText = title;
 
   // Render or update direct YouTube link notice (guarantees playback if embed is restricted)
