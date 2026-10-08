@@ -216,6 +216,225 @@
       margin-top: 20px;
       display: none;
     }
+  
+    /* 7 Ashram Sacred Books Framework Styles */
+    .sb-framework-container {
+      margin: 40px 0;
+      position: relative;
+    }
+    .sb-hero-banner {
+      background: linear-gradient(135deg, rgba(10, 20, 38, 0.98) 0%, rgba(15, 23, 42, 0.96) 50%, rgba(20, 35, 60, 0.98) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      border-radius: 22px;
+      padding: 36px 32px;
+      margin-bottom: 30px;
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+    .sb-hero-banner::before {
+      content: "நன்";
+      position: absolute;
+      right: 20px;
+      top: -30px;
+      font-size: 15rem;
+      color: rgba(212, 175, 55, 0.03);
+      font-family: serif;
+      pointer-events: none;
+      font-weight: 800;
+    }
+    .sb-pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 26px 0;
+    }
+    .sb-pillar-card {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 20px;
+      position: relative;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .sb-pillar-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    .sb-pillar-card.sb-1 { border-top: 4px solid #38bdf8; }
+    .sb-pillar-card.sb-2 { border-top: 4px solid #10b981; }
+    .sb-pillar-card.sb-3 { border-top: 4px solid #facc15; }
+    .sb-pillar-card.sb-4 { border-top: 4px solid #c084fc; }
+    .sb-pillar-card.sb-5 { border-top: 4px solid #fb923c; }
+    .sb-pillar-card.sb-6 { border-top: 4px solid #34d399; }
+    .sb-pillar-card.sb-7 { border-top: 4px solid #ffd700; }
+
+    .sb-pillar-badge {
+      font-family: monospace;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .sb-pillar-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 0 0 4px 0;
+    }
+    .sb-pillar-sub {
+      font-size: 0.82rem;
+      color: var(--gold-soft);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .sb-pillar-root {
+      background: rgba(0,0,0,0.3);
+      border-left: 2px solid var(--gold);
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      color: #cbd5e1;
+      margin-bottom: 10px;
+      border-radius: 0 6px 6px 0;
+    }
+    .sb-pillar-body {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    /* 3 Developmental Phases */
+    .sb-phases-container {
+      margin: 34px 0;
+    }
+    .sb-phase-card {
+      background: rgba(11, 18, 33, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 26px 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+      position: relative;
+    }
+    .sb-phase-card.phase-1 { border-left: 6px solid #38bdf8; }
+    .sb-phase-card.phase-2 { border-left: 6px solid #facc15; }
+    .sb-phase-card.phase-3 { border-left: 6px solid var(--gold-bright); }
+
+    .sb-phase-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+    }
+    .sb-phase-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 4px 0;
+    }
+    .sb-phase-sub {
+      color: #38bdf8;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .sb-phase-goal {
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      color: #fde047;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    .sb-subgrade-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .sb-subgrade-card {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sb-subgrade-card h5 {
+      color: #ffffff;
+      font-size: 0.98rem;
+      font-weight: 700;
+      margin: 0 0 6px 0;
+    }
+    .sb-subgrade-card p {
+      color: #cbd5e1;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Master Progressive Matrix Table */
+    .sb-table-wrapper {
+      overflow-x: auto;
+      background: rgba(8, 14, 26, 0.9);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 16px;
+      margin: 26px 0;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+    }
+    .sb-matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.86rem;
+      min-width: 1200px;
+    }
+    .sb-matrix-table th {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-bright);
+      padding: 12px 14px;
+      font-weight: 700;
+      border-bottom: 2px solid rgba(212, 175, 55, 0.35);
+      white-space: nowrap;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .sb-matrix-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      vertical-align: top;
+      line-height: 1.55;
+    }
+    .sb-matrix-table tr:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .sb-grade-badge {
+      font-weight: 800;
+      color: var(--gold-bright);
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .sb-phase-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 4px;
+      white-space: nowrap;
+    }
+    .sb-phase-pill.p1 { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); }
+    .sb-phase-pill.p2 { background: rgba(234, 179, 8, 0.15); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.35); }
+    .sb-phase-pill.p3 { background: rgba(212, 175, 55, 0.2); color: var(--gold-bright); border: 1px solid var(--gold); }
+
   </style>
 
 </head>
@@ -442,6 +661,7 @@
 
     <!-- IN-PAGE SYLLABUS SECTION NAVIGATION -->
     <div class="inpage-content-nav" aria-label="பாடத்திட்டப் பிரிவு வழிகாட்டல்">
+      <button type="button" class="context-tab-pill" onclick="scrollToId('sevenBooksArchitecture')"><span class="context-tab-pill-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span>7 ஆசிரமப் பாடநூல்கள் (7 Books)</span></button>
       <button type="button" class="context-tab-pill active" onclick="scrollToId('tvaCourseArchitecture')"><span class="context-tab-pill-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span>TVA பாடநெறிக் கட்டமைப்பு</span></button>
       <button type="button" class="context-tab-pill" onclick="scrollToId('patanjaliSyllabus')"><span class="context-tab-pill-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><path d="M4 18c0-3.5 3.5-5 8-5s8 1.5 8 5"/><path d="M6 14l2 4 4-2 4 2 2-4"/></svg></span><span>பதஞ்சலி 7 படிநிலைகள்</span></button>
       <button type="button" class="context-tab-pill" onclick="scrollToId('virtue-mapping')"><span class="context-tab-pill-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></span><span>12 தரப் பாட அட்டவணை</span></button>
@@ -663,6 +883,498 @@
         </div>
       </div>
     </section>
+
+    
+    <!-- ============================================================== -->
+    <!-- 7 ASHRAM SACRED BOOKS PER GRADE ARCHITECTURE (PURANAS, ITIHASAS, UPANISHADS) -->
+    <!-- ============================================================== -->
+    <section class="sb-framework-container scripture-study-section" id="sevenBooksArchitecture">
+      
+      <!-- Attribution Badge -->
+      <div class="tva-attribution-badge" style="border-color: rgba(212, 175, 55, 0.4); background: rgba(212, 175, 55, 0.08);">
+        <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold-bright);"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <span>குருகுல ஆசிரம விழுமியக் கட்டமைப்பு • The 7 Sacred Books per Grade Paradigm</span>
+      </div>
+
+      <!-- HERO BANNER -->
+      <div class="sb-hero-banner">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom:14px;">
+          <div>
+            <h2 style="font-size: 1.85rem; color: #ffffff; font-weight: 800; margin: 0 0 6px 0; display:flex; align-items:center; gap:10px;">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold);"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              7 ஆசிரமப் பாடநூல்கள் — தரவாரிக் கல்வித் திட்டமும் 3 இலக்கியப் பருவங்களும்
+            </h2>
+            <div style="color: #38bdf8; font-size: 1.05rem; font-weight: 700;">
+              நன்னெறி • நல்லறம் • நல்வழி • நற்துணை • நற்சிந்தனை • நற்சொல் • நற்செயல்
+            </div>
+          </div>
+          <span style="background: rgba(212, 175, 55, 0.15); color: var(--gold-bright); border: 1px solid var(--gold); padding: 5px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">
+            12 தரங்கள் &amp; உயர்கல்வி • Holistic Pedagogy
+          </span>
+        </div>
+
+        <div style="font-family:'Mukta Malar', serif; font-size:1.1rem; color:var(--gold-soft); font-style:italic; margin-bottom:14px; border-left:3px solid var(--gold); padding-left:14px;">
+          "நன்னெறி நல்லறம் நல்வழி நற்துணை நற்சிந்தனை நற்சொல் நற்செயல் என்றேழும் நன்மக்கள் பண்பு" — ஆசிரம அறவுரை
+        </div>
+
+        <p style="color: #cbd5e1; line-height: 1.8; font-size: 0.96rem; margin-bottom: 24px;">
+          மாணவர்களின் ஆன்ம மற்றும் ஆளுமை வளர்ச்சிக்கு ஏழு தூண்கள் இன்றியமையாதவை. அவை: <strong>1. நன்னெறி (ஒழுக்க விழுமியம்), 2. நல்லறம் (இல்லற &amp; சமூக தர்மம்), 3. நல்வழி (நேர்மையான செயல்முறை), 4. நற்துணை (ஆன்ம சத்சங்கம் &amp; பற்றுக்கோடு), 5. நற்சிந்தனை (மன அமைதியும் உளவியல் ஆளுமையும்), 6. நற்சொல் (இன்சொல்லும் வாய்மையும்), 7. நற்செயல் (நிஷ்காம கர்மமும் தொண்டும்)</strong>. இவ்வேறுபட்ட 7 நூல்களும் மூன்று இலக்கியப் பருவங்களின் வழியே (Phase 1: புராணங்கள் &rarr; Phase 2: இதிகாசங்கள் &rarr; Phase 3: உபநிடதங்கள்) தரம் 1 முதல் 12 மற்றும் உயர்கல்வி வரை படிப்படியாக ஆழம்பெறுகின்றன:
+        </p>
+
+        <!-- 7 BOOKS PILLARS GRID -->
+        <div class="sb-pillar-grid">
+          
+          <!-- Book 1: நன்னெறி -->
+          <div class="sb-pillar-card sb-1">
+            <span class="sb-pillar-badge" style="background:rgba(56,189,248,0.15); color:#38bdf8; border:1px solid rgba(56,189,248,0.35);">நூல் 01 • BOOK 1</span>
+            <h4 class="sb-pillar-title">நன்னெறி (Good Ethics)</h4>
+            <div class="sb-pillar-sub">Code of Conduct &amp; Character Building</div>
+            <div class="sb-pillar-root"><strong>மூல இலக்கியம்:</strong> சிவப்பிரகாச சுவாமிகள் 'நன்னெறி' (40 உவமை வெண்பாக்கள்), ஆசாரக்கோவை.</div>
+            <div class="sb-pillar-body">
+              பெற்றோர், ஆசிரியர், பெரியோரை வணங்குதல்; பணிவுடைமை; அகந்தை அறுத்தல்; இயற்கையின் உவமைகள் வழியே நற்பண்புகளை உள்ளத்தில் விதைத்தல்.
+            </div>
+          </div>
+
+          <!-- Book 2: நல்லறம் -->
+          <div class="sb-pillar-card sb-2">
+            <span class="sb-pillar-badge" style="background:rgba(16,185,129,0.15); color:#34d399; border:1px solid rgba(16,185,129,0.35);">நூல் 02 • BOOK 2</span>
+            <h4 class="sb-pillar-title">நல்லறம் (Righteous Virtue)</h4>
+            <div class="sb-pillar-sub">Dharma &amp; Family/Social Responsibility</div>
+            <div class="sb-pillar-root"><strong>மூல இலக்கியம்:</strong> திருக்குறள் அறத்துப்பால், நாலடியார், சிலப்பதிகாரம், மணிமேகலை.</div>
+            <div class="sb-pillar-body">
+              இல்லற தர்மம்; பஞ்ச மகா யக்ஞங்கள்; விருந்தோம்பல்; பசிப்பிணி தீர்த்தல்; எளியோர்க்கும் வாயில்லா ஜீவன்களுக்கும் உதவும் பேரருள் நெறி.
+            </div>
+          </div>
+
+          <!-- Book 3: நல்வழி -->
+          <div class="sb-pillar-card sb-3">
+            <span class="sb-pillar-badge" style="background:rgba(234,179,8,0.15); color:#facc15; border:1px solid rgba(234,179,8,0.35);">நூல் 03 • BOOK 3</span>
+            <h4 class="sb-pillar-title">நல்வழி (The Noble Path)</h4>
+            <div class="sb-pillar-sub">Practical Living &amp; Honest Labor</div>
+            <div class="sb-pillar-root"><strong>மூல இலக்கியம்:</strong> ஔவையார் 'நல்வழி' (40 பாடல்கள்), கொன்றைவேந்தன், மூதுரை.</div>
+            <div class="sb-pillar-body">
+              "சாதி இரண்டொழிய வேறில்லை"; உழைத்து உண்ணுதல்; சோதனையிலும் நேர்மை தவறாமை; பேராசையை விடுத்து நிதானமாக முன்னேறும் திடமான வாழ்வியல்.
+            </div>
+          </div>
+
+          <!-- Book 4: நற்துணை -->
+          <div class="sb-pillar-card sb-4">
+            <span class="sb-pillar-badge" style="background:rgba(168,85,247,0.15); color:#c084fc; border:1px solid rgba(168,85,247,0.35);">நூல் 04 • BOOK 4</span>
+            <h4 class="sb-pillar-title">நற்துணை (Sacred Anchor)</h4>
+            <div class="sb-pillar-sub">Spiritual Refuge &amp; Satsang Companion</div>
+            <div class="sb-pillar-root"><strong>மூல இலக்கியம்:</strong> அப்பர் தேவாரம் ("நற்றுணையாவது நமச்சிவாயவே"), குறள் நட்பு &amp; பெரியாரைத் துணைக் கோடல்.</div>
+            <div class="sb-pillar-body">
+              இறை நாமமே முடிவற்ற துணை; நல்வழிகாட்டும் ஆசான் நட்பு; துரோகம் செய்யாத சத் தோழமை; ஆபத்திலும் அச்சத்திலும் உள்ளத்தை நிலைநிறுத்தும் பற்றுக்கோடு.
+            </div>
+          </div>
+
+          <!-- Book 5: நற்சிந்தனை -->
+          <div class="sb-pillar-card sb-5">
+            <span class="sb-pillar-badge" style="background:rgba(249,115,22,0.15); color:#fb923c; border:1px solid rgba(249,115,22,0.35);">நூல் 05 • BOOK 5</span>
+            <h4 class="sb-pillar-title">நற்சிந்தனை (Pure Thought)</h4>
+            <div class="sb-pillar-sub">Mind Mastery &amp; Psychological Resilience</div>
+            <div class="sb-pillar-root"><strong>மூல இலக்கியம்:</strong> சிவயோகசுவாமிகள் 'நற்சிந்தனை', கடோபநிடதம், கீதை ஆத்ம சம்யம யோகம்.</div>
+            <div class="sb-pillar-body">
+              பயம், மனச்சோர்வு (burnout), போட்டி-பொறாமை கடந்து அக சமநிலை எய்துதல்; சாட்சி பாவம்; மனக்குதிரைகளை அறிவெனும் கடிவாளத்தால் ஆளும் விவேகம்.
+            </div>
+          </div>
+
+          <!-- Book 6: நற்சொல் -->
+          <div class="sb-pillar-card sb-6">
+            <span class="sb-pillar-badge" style="background:rgba(52,211,153,0.15); color:#34d399; border:1px solid rgba(52,211,153,0.35);">நூல் 06 • BOOK 6</span>
+            <h4 class="sb-pillar-title">நற்சொல் (Noble Speech)</h4>
+            <div class="sb-pillar-sub">Truthful, Sweet &amp; Non-violent Words</div>
+            <div class="sb-pillar-root"><strong>மூல இலக்கியம்:</strong> திருக்குறள் இனியவை கூறல் &amp; வாய்மை, இனியவை நாற்பது, கீதை 17.15 வாக்-தபஸ்.</div>
+            <div class="sb-pillar-body">
+              சத்தியம், பிரியம், ஹிதம்; மனதை அலைக்கழிக்காத மென்மையான வாக்கு; புறங்கூறாமை; சொற்களால் காயப்படுத்தாமல் அன்பைப் பொழியும் வாக் சித்தி.
+            </div>
+          </div>
+
+          <!-- Book 7: நற்செயல் -->
+          <div class="sb-pillar-card sb-7">
+            <span class="sb-pillar-badge" style="background:rgba(212,175,55,0.2); color:var(--gold-bright); border:1px solid var(--gold);">நூல் 07 • BOOK 7</span>
+            <h4 class="sb-pillar-title">நற்செயல் (Righteous Action)</h4>
+            <div class="sb-pillar-sub">Nishkama Karma &amp; Cosmic Seva</div>
+            <div class="sb-pillar-root"><strong>மூல இலக்கியம்:</strong> பகவத் கீதை 2.47, வள்ளலார் ஜீவகாருண்ய ஒழுக்கம், அப்பர் உழவாரப் பணி.</div>
+            <div class="sb-pillar-body">
+              பலனில் பற்றற்ற ஈஸ்வரார்ப்பண செயல்; உலக நலம் (Lokasamgraha); சமூகத் தொண்டு; மரம் நடுதல் மற்றும் இயற்கை சூழலியல் காப்பு வேள்வி.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- THE 3 DEVELOPMENTAL LITERATURE PHASES                          -->
+      <!-- ============================================================== -->
+      <div class="sb-phases-container">
+        
+        <h3 style="color: #ffffff; font-size: 1.45rem; font-weight: 800; margin-bottom: 18px; display:flex; align-items:center; gap:10px;">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          கல்வியியல் பரிணாமத்தின் 3 இலக்கியப் பருவங்கள் (The 3 Pedagogical Literature Phases)
+        </h3>
+
+        <!-- Phase 1 Card -->
+        <div class="sb-phase-card phase-1">
+          <div class="sb-phase-header">
+            <div>
+              <span class="sb-phase-pill p1">PHASE 1 • PRIMARY SCHOOL (GRADES 1 - 5)</span>
+              <h4 class="sb-phase-title">பருவம் 1: புராணங்கள் — கற்பனை வளமும் உணர்ச்சி அடித்தளமும்</h4>
+              <div class="sb-phase-sub">The Literature Base: The Puranas • Cosmic Imagery &amp; Formative Metaphors</div>
+            </div>
+            <span style="font-size:0.82rem; color:#94a3b8; font-weight:700;">தரம் 1 முதல் 5 வரை</span>
+          </div>
+
+          <div class="sb-phase-goal">
+            <strong>பயிற்சி இலக்கு (The Goal):</strong> படைப்பாற்றல் &amp; உணர்ச்சி அடித்தளம் (Creative &amp; Emotional Foundations). விறைப்பான தர்க்க அறிவு (rigid logic) தொடங்குவதற்கு முன்னரே, பிரம்மாண்டமான பிரபஞ்சக் காட்சிகள், உருவகங்கள் மற்றும் காலச் சுழற்சிகள் வழியே குழந்தைகளின் ஆழ்மனதை (subconscious mind) செதுக்குதல்.
+          </div>
+
+          <div class="sb-subgrade-grid">
+            <div class="sb-subgrade-card">
+              <h5>தரம் 1 &amp; 2: வியப்பும் வடிவங்களும் (Wonder &amp; Forms)</h5>
+              <p>விநாயகர், அனுமன், பால கிருஷ்ணன் மற்றும் இயற்கை உருவகங்கள். வண்ணமயமான கதைகள் மூலம் பயம், துணிவு, பகிர்தல் போன்ற அடிப்படை உணர்ச்சிகளை வழிகாட்டிக் கையாளுதல்.</p>
+            </div>
+            <div class="sb-subgrade-card">
+              <h5>தரம் 3 &amp; 4: சுழற்சிகளும் பிரபஞ்ச நல்லிணக்கமும் (Cycles &amp; Cosmic Harmony)</h5>
+              <p>யுகங்களின் காலச் சுழற்சி மற்றும் பாற்கடல் கடைதல் (சமுத்திர மந்தனம்). ஒளியும் இருளும், குழப்பமும் ஒழுங்கும் பிரபஞ்சத்தில் இயல்பாக மாறி மாறி வரும் சமநிலை ஞானம்.</p>
+            </div>
+            <div class="sb-subgrade-card">
+              <h5>தரம் 5: நோக்கத்தின் வேர் (The Root of Intent)</h5>
+              <p>செயல்களின் உளவியல் விளைவுகள். வரங்கள், சாபங்கள், அகந்தை கொண்ட அசுர சக்திகளின் வீழ்ச்சி வழியே நமது தேர்வுகள் நீண்டகாலக் கட்டமைப்புக் consequences உடையவை என உணர்தல்.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2 Card -->
+        <div class="sb-phase-card phase-2">
+          <div class="sb-phase-header">
+            <div>
+              <span class="sb-phase-pill p2">PHASE 2 • HIGH SCHOOL (GRADES 6 - 12)</span>
+              <h4 class="sb-phase-title">பருவம் 2: இதிகாசங்கள் &amp; கீதை — அறநெறி, சமூகம் &amp; உளவியல் தேர்ச்சி</h4>
+              <div class="sb-phase-sub">The Literature Base: The Itihasas (Ramayana &amp; Mahabharata) &amp; The Bhagavad Gita</div>
+            </div>
+            <span style="font-size:0.82rem; color:#94a3b8; font-weight:700;">தரம் 6 முதல் 12 வரை</span>
+          </div>
+
+          <div class="sb-phase-goal" style="color:#fde047; border-color:rgba(234,179,8,0.35); background:rgba(234,179,8,0.1);">
+            <strong>பயிற்சி இலக்கு (The Goal):</strong> அறநெறி, சமூகம் &amp; உளவியல் தேர்ச்சி (Ethical, Social, and Psychological Mastery). மனித வாழ்வின் சிக்கலான யதார்த்தங்கள், குடும்ப உறவுகள், முரண்பட்ட சட்டங்கள் மற்றும் தனிநபர் நெருக்கடிகளின் மத்தியில் தர்ம விழுமியங்களைச் சோதித்துப் பழகுதல்.
+          </div>
+
+          <div class="sb-subgrade-grid">
+            <div class="sb-subgrade-card">
+              <h5>தரம் 6 - 8: கடமையின் வரைபடம் (The Blueprint of Duty - Ramayana)</h5>
+              <p>தர்மத்தின் கதைப் போக்குகள். தந்தை, மகன், உடன்பிறப்பு, அரசன் பாத்திரங்கள் முதல் வாலி வதம் போன்ற தீவிரமான அறச் சிக்கல்களையும் (gray areas), அசோகவனத்தில் சீதையின் அமைதியான உளவியல் மன உறுதியையும் பகுப்பாய்தல்.</p>
+            </div>
+            <div class="sb-subgrade-card">
+              <h5>தரம் 9 &amp; 10: முரண்பாடுகளின் பொறிமுறை (The Mechanics of Conflict - Mahabharata)</h5>
+              <p>சிக்கலான அற உருவகங்கள். நிறுவனங்களின் வீழ்ச்சி (institutional collapse), பீஷ்மரின் குருட்டு விசுவாசம், துரியோதனனின் நச்சு உரிமை கோரல், நல்லவர்களின் மன உடைவு நிலைகள், விதுர நீதி &amp; யக்ஷ பிரஸ்னம்.</p>
+            </div>
+            <div class="sb-subgrade-card">
+              <h5>தரம் 11 &amp; 12: மனத்தின் ஆளுமை (The Mastery of Mind - The Bhagavad Gita)</h5>
+              <p>போர்க்களத்தில் அர்ஜுனனின் மன உளைச்சல் (burnout &amp; anxiety) தீர்த்தல். உச்சக்கட்ட அழுத்தத்தில் உணர்ச்சிச் சமநிலை காத்தல், ஆத்ம சம்யமம், மற்றும் பலனில் பற்றற்ற நிஷ்காம கர்ம யோகம்.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 3 Card -->
+        <div class="sb-phase-card phase-3">
+          <div class="sb-phase-header">
+            <div>
+              <span class="sb-phase-pill p3">PHASE 3 • HIGHER EDUCATION &amp; LIFELONG LEARNING</span>
+              <h4 class="sb-phase-title">பருவம் 3: உபநிடதங்கள் — முழுமையான அனுபவ மெய்யியல்</h4>
+              <div class="sb-phase-sub">The Literature Base: The Upanishads &amp; Non-Duality (Advaita)</div>
+            </div>
+            <span style="font-size:0.82rem; color:var(--gold-soft); font-weight:700;">உயர் கல்வி &amp; ஆய்வாளர் நிலை</span>
+          </div>
+
+          <div class="sb-phase-goal" style="color:var(--gold-bright); border-color:rgba(212,175,55,0.4); background:rgba(212,175,55,0.12);">
+            <strong>பயிற்சி இலக்கு (The Goal):</strong> முழுமையான அனுபவ மெய்யியல் (Absolute Experiential Philosophy). கதைகள், பாத்திரங்கள், வரலாற்று நிகழ்வுகள் மற்றும் தெய்வ உருவங்களைக் கடந்து, பிரபஞ்ச இருப்பின் (mechanics of existence) மூலப் பொறிமுறையை நேரடியாக எதிர்கொள்ளுதல்.
+          </div>
+
+          <div class="sb-subgrade-grid">
+            <div class="sb-subgrade-card">
+              <h5>இளங்கலை நிலை: யதார்த்தத்தின் தர்க்கம் (The Logic of Reality)</h5>
+              <p>கதை சார்ந்த சிந்தனையிலிருந்து விடுபட்டு நேரடித் தத்துவ விசாரணை (மனனம்). தைத்திரீய உபநிடதத்தின் பஞ்ச கோசங்கள் (அன்னமய, பிராணமய, மனோமய, விஞ்ஞானமய, ஆனந்தமய கோசங்கள்) வழியே மனித இருப்பின் அடுக்குகளைப் பகுப்பாய்தல்.</p>
+            </div>
+            <div class="sb-subgrade-card">
+              <h5>முதுகலை &amp; ஆய்வு நிலை: ஒருமைப்பட்ட ஆன்மா (The Unified Self)</h5>
+              <p>அத்வைத வேதாந்தம். தனிமனித உணர்வுக்கும் (ஆத்மா) பிரபஞ்சக் கட்டமைப்புக்கும் (பிரம்மம்) இடையிலான பரிபூரண ஒருமை. தகவல்களைத் திரட்டுவதைத் தாண்டி <strong>"தத்வமஸி" (Tat Tvam Asi — நீயே அதுவாய் இருக்கிறாய்)</strong> என்ற அக அனுபவ நிலை.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- MASTER 13-GRADE PROGRESSION MATRIX TABLE                       -->
+      <!-- ============================================================== -->
+      <h3 style="color: var(--gold-bright); font-size: 1.45rem; font-weight: 800; margin-top: 36px; margin-bottom: 14px; display:flex; align-items:center; gap:10px;">
+        <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#38bdf8;"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        13 நிலைப் பாடநெறி அட்டவணை — 7 நூல்களின் தரம் வாரியான வளர்ச்சி வரைபடம்
+      </h3>
+
+      <div class="sb-table-wrapper">
+        <table class="sb-matrix-table">
+          <thead>
+            <tr>
+              <th style="min-width:140px;">தரம் &amp; பருவம்</th>
+              <th style="min-width:160px;">இலக்கிய அடித்தளம்</th>
+              <th style="min-width:180px;">1. நன்னெறி</th>
+              <th style="min-width:180px;">2. நல்லறம்</th>
+              <th style="min-width:180px;">3. நல்வழி</th>
+              <th style="min-width:180px;">4. நற்துணை</th>
+              <th style="min-width:180px;">5. நற்சிந்தனை</th>
+              <th style="min-width:180px;">6. நற்சொல்</th>
+              <th style="min-width:180px;">7. நற்செயல்</th>
+              <th style="min-width:180px;">முக்கிய கற்றல் வெளிப்பாடு</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <!-- Grade 1 -->
+            <tr>
+              <td>
+                <a href="tharam-1.html" class="sb-grade-badge">தரம் 1 (Gr 1) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p1">புராணம்: வியப்பு</span>
+              </td>
+              <td><strong>புராணங்கள் (Puranas)</strong><br><span style="font-size:0.75rem; color:#94a3b8;">விநாயகர், அனுமன், பால கிருஷ்ணன்</span></td>
+              <td>பெற்றோர் &amp; ஆசிரியர் மரியாதை; விநாயகர் தந்தை-தாயை வலம் வந்த கதை</td>
+              <td>பசித்தோருக்குப் பகிர்தல்; ஆத்திசூடி 'அறஞ்செய விரும்பு'</td>
+              <td>பொய் கூறாமல் நேர்வழியில் நடத்தல்; 'அன்னையும் பிதாவும் முன்னறி தெய்வம்'</td>
+              <td>"நற்றுணையாவது நமச்சிவாயவே"; அனுமனின் அபயத் துணை</td>
+              <td>மழலை வியப்பும் அச்சமின்மையும்; கிருஷ்ணனின் ஆனந்த லீலைகள்</td>
+              <td>இனியவை கூறல்; "வணக்கம்", "நன்றி" என்ற இன்சொல்</td>
+              <td>செடிகளுக்கு நீர் ஊற்றுதல்; காகத்திற்குப் பிடி சாதம் வைத்தல்</td>
+              <td><span style="color:#38bdf8; font-weight:700;">உயிரிரக்கம் &amp; குழந்தை வணக்க ஆசாரம்</span></td>
+            </tr>
+
+            <!-- Grade 2 -->
+            <tr>
+              <td>
+                <a href="tharam-2.html" class="sb-grade-badge">தரம் 2 (Gr 2) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p1">புராணம்: வடிவங்கள்</span>
+              </td>
+              <td><strong>புராணங்கள் (Puranas)</strong><br><span style="font-size:0.75rem; color:#94a3b8;">சிவ சின்னங்கள், முருகன், இயற்கை</span></td>
+              <td>உடலையும் உடையையும் தூய்மையாக வைத்தல்; நந்தி மரியாதை</td>
+              <td>தோழர்களுடன் பொருட்களைப் பகிர்தல்; 'ஈயல் வேண்டும்'</td>
+              <td>மூதுரை 'நன்றி ஒருவற்குச் செய்தக்கால்'; ஏமாற்றாமை</td>
+              <td>வேல் துணை; சத்சங்க நல்ல தோழமை தேர்வு</td>
+              <td>சூரியன், நதி, மலையில் இறைவனைக் கண்டு வியத்தல்</td>
+              <td>புறங்கூறாமை; தோழர்களைப் பழித்துக் கூறாத தூய மொழி</td>
+              <td>கோயில் வளாகம் காத்தல்; உணவு வீணாக்காமல் உண்ணல்</td>
+              <td><span style="color:#38bdf8; font-weight:700;">இயற்கை வழிபாடு &amp; தூய நற்பழக்கங்கள்</span></td>
+            </tr>
+
+            <!-- Grade 3 -->
+            <tr>
+              <td>
+                <a href="tharam-3.html" class="sb-grade-badge">தரம் 3 (Gr 3) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p1">புராணம்: யுக சுழற்சி</span>
+              </td>
+              <td><strong>புராணங்கள் (Puranas)</strong><br><span style="font-size:0.75rem; color:#94a3b8;">நான்கு யுகங்கள், சமய குரவர் நால்வர்</span></td>
+              <td>பெரியோரின் முன் பணிவு; திருநீற்றின் மகிமை</td>
+              <td>'ஐயமிட்டு உண்'; கண்ணப்ப நாயனாரின் கலப்பற்ற அன்பு</td>
+              <td>ஔவையார் 'சாதி இரண்டொழிய வேறில்லை'; உழைப்பின் பெருமை</td>
+              <td>சம்பந்தரின் பதிகப் பாதுகாப்பு; சத்சங்க பலம்</td>
+              <td>இன்ப-துன்பம் பகல்-இரவு போல சுழன்று வரும் சமநிலை</td>
+              <td>வாக்கு சுத்தம்; வாக்கைக் காப்பாற்றும் வாய்மை</td>
+              <td>மரக்கன்று நடுதல்; நீர்நிலைகளைத் தூய்மையாக வைத்தல்</td>
+              <td><span style="color:#38bdf8; font-weight:700;">காலச் சுழற்சி புரிதல் &amp; பக்தி ஒருமைப்பாடு</span></td>
+            </tr>
+
+            <!-- Grade 4 -->
+            <tr>
+              <td>
+                <a href="tharam-4.html" class="sb-grade-badge">தரம் 4 (Gr 4) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p1">புராணம்: பிரபஞ்ச நல்லிணக்கம்</span>
+              </td>
+              <td><strong>புராணங்கள் (Puranas)</strong><br><span style="font-size:0.75rem; color:#94a3b8;">பாற்கடல் கடைதல், நீலகண்டர், திருமுறை</span></td>
+              <td>சிவநேசம்; பன்னிரு திருமுறைப் பண்ணிசை ஆசாரம்</td>
+              <td>விருந்தோம்பல்; அதிதி உபசரிப்பு; தான தர்மம்</td>
+              <td>நல்வழி 'ஆற்றுப் பெருக்கற்று அடிசுடும் அந்நாளும்'</td>
+              <td>'மாசில் வீணையும் மாலை மதியமும்' பதிகப் பற்றுக்கோடு</td>
+              <td>கசப்பான சூழலிலும் நஞ்சுண்டு உலகைக் காக்கும் தியாகம்</td>
+              <td>இனியவை நாற்பது; பிறர் உள்ளம் நோகாத பேச்சு</td>
+              <td>அப்பர் உழவாரப் பணி; பொது இடங்களைத் தூய்மை செய்தல்</td>
+              <td><span style="color:#38bdf8; font-weight:700;">தியாக உளவியல் &amp; உழவாரத் தொண்டு</span></td>
+            </tr>
+
+            <!-- Grade 5 -->
+            <tr>
+              <td>
+                <a href="tharam-5.html" class="sb-grade-badge">தரம் 5 (Gr 5) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p1">புராணம்: நோக்கத்தின் வேர்</span>
+              </td>
+              <td><strong>புராணங்கள் (Puranas)</strong><br><span style="font-size:0.75rem; color:#94a3b8;">வரங்கள், சாபங்கள், ஆணவ வீழ்ச்சி</span></td>
+              <td>அகந்தை தவிர்த்தல்; அதிகாரம் தர்மத்திற்கே என உணர்தல்</td>
+              <td>செய்ந்நன்றி அறிதல் (குறள் 11); உதவியை மறவாமை</td>
+              <td>நீதிநெறி விளக்கம்; குறுக்குவழி செல்வத்தை வெறுத்தல்</td>
+              <td>பிரகலாதன்-நாரதர் வழிகாட்டல்; தர்ம குருவை நாடுதல்</td>
+              <td>நோக்கத்தின் தூய்மை (Root of Intent); கர்ம விளைவு உணர்தல்</td>
+              <td>சத்திய வாக்குப் பரிபாலனம்; கோபச் சாபங்களை விலக்குதல்</td>
+              <td>சமூகக் குளம், நீர்நிலைகள் அமைக்கும் அறப்பணி</td>
+              <td><span style="color:#38bdf8; font-weight:700;">செயல்-எதிர்செயல் கர்ம நியதி விழிப்புணர்வு</span></td>
+            </tr>
+
+            <!-- Grade 6 -->
+            <tr>
+              <td>
+                <a href="tharam-6.html" class="sb-grade-badge">தரம் 6 (Gr 6) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p2">இராமாயணம்: மகன் கடமை</span>
+              </td>
+              <td><strong>இராமாயணம் (Ramayana)</strong><br><span style="font-size:0.75rem; color:#94a3b8;">அயோத்தியா காண்டம், பித்ரு வாக்கியம்</span></td>
+              <td>தந்தை சொல் காத்தல்; சகோதர ஒற்றுமை &amp; தியாகம்</td>
+              <td>அரச தர்மம்; குகனுடன் குலம் கடந்த சகோதரத்துவம்</td>
+              <td>சிவப்பிரகாசரின் நன்னெறி 40 உவமைகள்; வனவாச உறுதி</td>
+              <td>இராம-குகன் நட்பு ('குகனொடும் ஐவரானோம்')</td>
+              <td>பதவி ஆசை &amp; பொறாமை (கூனி-கைகேயி) மனப் பகுப்பாய்வு</td>
+              <td>நாவடக்கம்; கொடுஞ்சொற்களின் பேராபத்தை அறிதல்</td>
+              <td>அணில் செய்த சேதுபந்தன உதவி; சிறிய பணியையும் அர்ப்பணித்தல்</td>
+              <td><span style="color:#facc15; font-weight:700;">சமூகப் பாத்திரக் கடமை &amp; சகோதரத்துவ தர்மம்</span></td>
+            </tr>
+
+            <!-- Grade 7 -->
+            <tr>
+              <td>
+                <a href="tharam-7.html" class="sb-grade-badge">தரம் 7 (Gr 7) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p2">இராமாயணம்: அற நுட்பம்</span>
+              </td>
+              <td><strong>இராமாயணம் (Ramayana)</strong><br><span style="font-size:0.75rem; color:#94a3b8;">கிஷ்கிந்தா &amp; சுந்தர காண்டம், அனுமன்</span></td>
+              <td>சான்றாண்மை; எளியோர்க்கும் அபயம் தருதல்; பணிவு</td>
+              <td>வாலி வதம் நுண்ணிய அற வாதங்கள்; சுக்ரீவ தர்மம்</td>
+              <td>தனிமையிலும் சோதனையிலும் தர்மக் கோட்டை காத்தல்</td>
+              <td>அனுமன் வழிகாட்டல்; விபீஷண சரணாகதி அடைக்கலம்</td>
+              <td>சீதையின் அசோகவன உளவியல் — பேரச்சத்திலும் அசையாத இருப்பு</td>
+              <td>அனுமனின் தூது மொழி ('கண்டேன் கற்பினுக் கணியை')</td>
+              <td>வானரப் படைகளின் கூட்டுழைப்பு; பொது நன்மைக் கூட்டமைப்பு</td>
+              <td><span style="color:#facc15; font-weight:700;">நெருக்கடி உளவியல் சமநிலை &amp; சாதுரிய வாக்கு</span></td>
+            </tr>
+
+            <!-- Grade 8 -->
+            <tr>
+              <td>
+                <a href="tharam-8.html" class="sb-grade-badge">தரம் 8 (Gr 8) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p2">இராமாயணம்: சதுர் ஆசிரமம்</span>
+              </td>
+              <td><strong>இராமாயணம் &amp; ஆசிரம தர்மம்</strong><br><span style="font-size:0.75rem; color:#94a3b8;">யுத்த காண்டம், பட்டாபிஷேகம், இல்லறம்</span></td>
+              <td>இல்லற மாண்பு; எதிரியிடமும் தர்மம் தவறாமை</td>
+              <td>சதுர் ஆசிரமங்கள் — பிரம்மச்சரியம், கிரகஸ்தம், வானப்பிரஸ்தம், சந்நியாசம்</td>
+              <td>திருக்குறள் இல்வாழ்க்கை; அறன் எனப்பட்டதே இல்வாழ்க்கை</td>
+              <td>விபீஷணனின் தர்ம விசுவாசம் — அதர்ம உடன்பிறப்பை விட தர்மமே முதன்மை</td>
+              <td>வெற்றியில் அகந்தை இன்மை; வீழ்ந்த இராவணனிடம் நீதி கற்றல்</td>
+              <td>போரிலும் சமாதான மொழி; பகைவனையும் மன்னிக்கும் மாண்பு</td>
+              <td>ராமராஜ்ய லட்சியம் — பசியும் நோயுமற்ற தர்ம ஆட்சி சேவை</td>
+              <td><span style="color:#facc15; font-weight:700;">இல்லறத் தலைமைத்துவம் &amp; நீதிநெறி விவேகம்</span></td>
+            </tr>
+
+            <!-- Grade 9 -->
+            <tr>
+              <td>
+                <a href="tharam-9.html" class="sb-grade-badge">தரம் 9 (Gr 9) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p2">மகாபாரதம்: முரண்பாடுகள்</span>
+              </td>
+              <td><strong>மகாபாரதம் (Mahabharata)</strong><br><span style="font-size:0.75rem; color:#94a3b8;">சபா &amp; உத்யோக பர்வங்கள், சூதாட்டம், தூது</span></td>
+              <td>விதுர நீதி — குடும்பம், சபை, அரசில் தர்மத்தின் எல்லை</td>
+              <td>யக்ஷ பிரஸ்னம் — தருமரின் அறவிடைகள்; உலகின் விந்தை</td>
+              <td>சூதாட்டம் &amp; பேராசையின் பேரழிவு; அசைக்க முடியாத நேர்மை</td>
+              <td>கண்ணபிரான் தூது; கர்ணனின் குருட்டு விசுவாச வீழ்ச்சி</td>
+              <td>துரியோதனனின் நச்சு entitlement உளவியல் அழிவு ஆய்வு</td>
+              <td>அநீதி நடக்கும் போது சபையில் மௌனம் சாதிக்கும் பாவம்</td>
+              <td>நீதிக்காக சமரசமின்றி நிற்றல்; தர்ம நிறுவனங்களைக் காத்தல்</td>
+              <td><span style="color:#facc15; font-weight:700;">நிறுவனச் சிதைவு பகுப்பாய்வு &amp; விதுர நீதி</span></td>
+            </tr>
+
+            <!-- Grade 10 -->
+            <tr>
+              <td>
+                <a href="tharam-10.html" class="sb-grade-badge">தரம் 10 (Gr 10) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p2">மகாபாரதம்: உடைவு நிலைகள்</span>
+              </td>
+              <td><strong>மகாபாரதம் &amp; சாந்தி பர்வம்</strong><br><span style="font-size:0.75rem; color:#94a3b8;">பீஷ்மர் அம்புப் படுக்கை உபதேசம், சகஸ்ரநாமம்</span></td>
+              <td>சாந்தி பர்வம் — ராஜதர்மம், ஆபத்தர்மம், மோக்ஷதர்மம்</td>
+              <td>14 மெய்கண்ட சாத்திர அறிமுகம்; வினையின் தொடர்ச்சி</td>
+              <td>சத்தியத்தின் கத்திமுனை — அசுவத்தாமன் சோதனை</td>
+              <td>விஷ்ணு சஹஸ்ரநாமம் — அச்சம் போக்கும் நாம சத்சங்கம்</td>
+              <td>பழிவாங்கும் மிருக உணர்வை மன்னிப்பால் வெல்லுதல்</td>
+              <td>சாந்தி பர்வப் பேருரைகள்; இதயத்திற்கு அமைதி தரும் வாக்கு</td>
+              <td>போருக்குப் பின் நாட்டை மீளக் கட்டியெழுப்புதல்; நிவாரணப் பணி</td>
+              <td><span style="color:#facc15; font-weight:700;">நெருக்கடி அறநெறித் தேர்வு &amp; சாந்தி மாண்பு</span></td>
+            </tr>
+
+            <!-- Grade 11 -->
+            <tr>
+              <td>
+                <a href="tharam-11.html" class="sb-grade-badge">தரம் 11 (Gr 11) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p2">கீதை: மன அழுத்த மேலாண்மை</span>
+              </td>
+              <td><strong>பகவத் கீதை (அத். 1 - 9)</strong><br><span style="font-size:0.75rem; color:#94a3b8;">அர்ஜுன விஷாத யோகம், கர்ம யோகம், ஞானம்</span></td>
+              <td>ஸ்வதர்மம் — தன் இயல்புக்கேற்ற கடமையில் நிற்றல்</td>
+              <td>லோகசங்கிரகம் — உலக இயக்கத்திற்கான கடமைப் பங்களிப்பு</td>
+              <td>ஸ்திதப்பிரக்ஞன் — இன்ப-துன்பம், புகழிகழில் சமநிலை</td>
+              <td>கீதை 9.22 'அனன்யாஸ் சிந்தயந்தோ மாம்' சரணாகதி</td>
+              <td>அர்ஜுனனின் Burnout &amp; Anxiety நரம்பியல் உளவியல் சிகிச்சை</td>
+              <td>வாக்-தபஸ் (கீதை 17.15) — சத்தியம், பிரியம், ஹிதமான சொல்</td>
+              <td>நிஷ்காம கர்மம் (கீதை 2.47) — கடமையைச் செய், பலனில் பற்றின்றி</td>
+              <td><span style="color:#facc15; font-weight:700;">மன உளைச்சல் வெல்லுதல் &amp; ஸ்திதப்பிரக்ஞ நிலை</span></td>
+            </tr>
+
+            <!-- Grade 12 -->
+            <tr>
+              <td>
+                <a href="tharam-12.html" class="sb-grade-badge">தரம் 12 (Gr 12) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p2">கீதை: முக்தி சந்நியாசம்</span>
+              </td>
+              <td><strong>பகவத் கீதை (அத். 10 - 18) &amp; சித்தாந்தம்</strong><br><span style="font-size:0.75rem; color:#94a3b8;">விஸ்வரூப தரிசனம், சிவஞானபோதம், அருட்பா</span></td>
+              <td>குணத்ரய விபாக யோகம் — சத்துவ குணத்தில் நிலைபெறுதல்</td>
+              <td>பஞ்ச கோச சுத்தி; இல்லறத்தில் சந்நியாச மனோபாவம்</td>
+              <td>விஸ்வரூப தரிசனம் — அகிலமே ஈசனின் நடனம் என உணர்தல்</td>
+              <td>கீதை 18.66 'மாமேகம் சரணம் வ்ரஜ' பரிபூரண சரணம்</td>
+              <td>ஆத்ம சம்யம யோகம் — தியானம் &amp; குவாண்டம் ஆன்ம விழிப்புணர்வு</td>
+              <td>பிரம்ம வித்யா உபதேசம் — சத்தியத்தை சாந்தமாக உரைக்கும் வாக்கு</td>
+              <td>யக்ஞ, தான, தபஸ் கர்மங்களை வாழ்வின் வேள்வியாகச் செய்தல்</td>
+              <td><span style="color:var(--gold-bright); font-weight:700;">முழுமையான ஆன்ம ஆளுமை &amp; விவேக தலைமை</span></td>
+            </tr>
+
+            <!-- Higher Studies / Lifelong -->
+            <tr>
+              <td>
+                <a href="higher-studies.html" class="sb-grade-badge">உயர்கல்வி (Fellowship) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <span class="sb-phase-pill p3">உபநிடதம்: தத்வமஸி</span>
+              </td>
+              <td><strong>உபநிடதங்கள் &amp; பிரம்ம சூத்திரம்</strong><br><span style="font-size:0.75rem; color:#94a3b8;">Taittiriya, Mandukya, Chandogya, Advaita</span></td>
+              <td>ரிதம் &amp; சத்யம் (Cosmic Order &amp; Truth) பிரபஞ்ச விசுவ தர்மம்</td>
+              <td>ஈசா வாஸ்ய இதம் சர்வம் — எங்கும் இறைவனைக் காணும் மாண்பு</td>
+              <td>ஸ்ரவணம், மனனம், நிதித்யாசன தத்துவ தியான வழி</td>
+              <td>சாட்சி சைதன்யம் (The Eternal Witness) மாறாத மெய்த்துணை</td>
+              <td>பஞ்ச கோச விவேகம் கடந்து துரிய பிரம்மத்தில் நிலைபெறுதல்</td>
+              <td>பிரணவ ஓங்கார மௌனம் &amp; மகா வாக்கிய அனுபூதி</td>
+              <td>ஜீவன்முக்தி சகஜ கர்மம் — அசைவற்ற பேரமைதியில் லோக சேவை</td>
+              <td><span style="color:var(--gold-bright); font-weight:800;">தத்வமஸி (Tat Tvam Asi) — பிரம்ம அனுபூதி &amp; ஜீவன்முக்தி</span></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Quick Action Jump Links -->
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; background:rgba(0,0,0,0.3); border:1px dashed rgba(212,175,55,0.4); border-radius:12px; padding:14px 18px; margin-top:20px;">
+        <span style="color:#e2e8f0; font-size:0.88rem;">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <strong>7 ஆசிரமப் பாடநூல் லட்சியம்:</strong> "நன்னெறியில் தொடங்கி தத்வமஸி பிரம்ம அனுபூதியில் மலரும் முழுமையான விவேக சான்றோன் உருவாக்கம்."
+        </span>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="kalvi.html" style="color:#38bdf8; font-weight:700; font-size:0.84rem; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+            12 தரப் பாடங்களை வாசிக்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <span style="color:#475569;">•</span>
+          <a href="higher-studies.html" style="color:var(--gold-bright); font-weight:700; font-size:0.84rem; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+            உயர்கல்விப் பட்டயங்கள் <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
 
     <!-- ========================================== -->
     <!-- PATANJALI 7-LEVEL FORMAL CURRICULUM & SELF-REALIZATION PROGRESSION -->
