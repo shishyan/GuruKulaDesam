@@ -118,7 +118,7 @@ def wait_for_assistant_and_approve(page, timeout_sec=40):
 
     return False
 
-def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240):
+def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wait_ready=False):
     """Monitors the project workspace until the video completes, then downloads and extracts the MP4."""
     print(f"[Flow] Monitoring video render (up to {max_wait_sec}s)...")
     start_t = time.time()
@@ -144,7 +144,10 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240):
         # Check for Download batch button on the newest video card
         dl_btn = page.locator("button[aria-label*='Download' i]").last
         if dl_btn.count() > 0 and dl_btn.is_visible() and dl_btn.is_enabled():
-            print(f"[Flow] Video ready! Initiating download (Elapsed: {elapsed}s)...")
+            print(f"[Flow] Video ready! (Elapsed: {elapsed}s)...")
+            if only_wait_ready:
+                return True
+            print(f"[Flow] Initiating download...")
             temp_zip = dest_mp4_path.parent / f"temp_{int(time.time())}.zip"
             
             try:
@@ -194,7 +197,117 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240):
     print("[Flow] Timed out waiting for video render.")
     return False
 
-def generate_track_on_flow(track_id: str):
+def wait_and_extend_video(page, dest_mp4_path: Path, extend_count: int = 2, continuation_prompts: list = None, max_wait_sec=240):
+    """Opens the generated video in the Flow editor, extends it using the Extend option,
+    and downloads the concatenated multi-clip extended video."""
+    print(f"[Flow Extend] Opening video in editor for {extend_count} extensions...")
+    editor_btn = page.locator("button[aria-label='Open video in editor']").last
+    if editor_btn.count() == 0 or not editor_btn.is_visible():
+        print("[Flow Extend Warning] 'Open video in editor' button not found, falling back to direct download.")
+        return False
+
+    editor_btn.click(force=True)
+    try:
+        page.wait_for_url("**/edit/**", timeout=20000)
+    except Exception as e:
+        print(f"[Flow Extend Warning] Did not transition to editor: {e}")
+        return False
+
+    page.wait_for_timeout(4000)
+
+    for ext_step in range(1, extend_count + 1):
+        print(f"[Flow Extend] Performing extension {ext_step}/{extend_count}...")
+        add_clip = page.locator("button[aria-label='Add clip']:visible").first
+        if add_clip.count() == 0:
+            print("[Flow Extend] 'Add clip' button not found, stopping extensions.")
+            break
+
+        add_clip.click()
+        page.wait_for_timeout(1500)
+
+        extend_opt = page.locator("[role='menuitem']:has-text('Extend')").first
+        if extend_opt.count() == 0 or extend_opt.get_attribute("disabled"):
+            print(f"[Flow Extend] Extend menu item disabled or absent (disabled={extend_opt.get_attribute('disabled') if extend_opt.count() else 'None'}).")
+            page.keyboard.press("Escape")
+            break
+
+        extend_opt.click()
+        page.wait_for_timeout(2000)
+
+        # Enter prompt if provided
+        prompt_editor = page.locator("div.ProseMirror:visible").first
+        if prompt_editor.count() > 0 and continuation_prompts and len(continuation_prompts) >= ext_step:
+            ext_prompt = continuation_prompts[ext_step - 1]
+            print(f"[Flow Extend] Entering continuation prompt: {ext_prompt[:100]}...")
+            prompt_editor.click()
+            page.wait_for_timeout(300)
+            page.keyboard.type(ext_prompt, delay=8)
+            page.wait_for_timeout(1000)
+
+        # Start generation
+        gen_btn = page.locator("button[aria-label='Start generation']:visible").first
+        if gen_btn.count() > 0 and gen_btn.is_enabled():
+            gen_btn.click()
+            print(f"[Flow Extend] Extension {ext_step} generation started. Waiting for completion...")
+            wait_for_assistant_and_approve(page, timeout_sec=20)
+
+            # Wait for extension render
+            ext_start_t = time.time()
+            render_done = False
+            while time.time() - ext_start_t < max_wait_sec:
+                page.wait_for_timeout(6000)
+                elapsed = int(time.time() - ext_start_t)
+                dl_media = page.locator("button[aria-label='Download media']:visible").first
+                gen_b = page.locator("button[aria-label='Start generation']:visible").first
+                if elapsed >= 40 and dl_media.count() > 0 and dl_media.is_enabled() and (gen_b.count() == 0 or gen_b.is_enabled()):
+                    print(f"[Flow Extend] Extension {ext_step} complete ({elapsed}s)!")
+                    render_done = True
+                    break
+                print(f"[Flow Extend] Extension {ext_step} rendering... {elapsed}s elapsed")
+
+            if not render_done:
+                print(f"[Flow Extend Warning] Extension {ext_step} timed out.")
+                break
+        else:
+            print("[Flow Extend Warning] Start generation button was not enabled.")
+            break
+
+    # Download extended scene from editor
+    print("[Flow Extend] Downloading extended multi-clip video from editor...")
+    dl_media = page.locator("button[aria-label='Download media']:visible").first
+    if dl_media.count() > 0 and dl_media.is_enabled():
+        temp_zip = dest_mp4_path.parent / f"temp_ext_{int(time.time())}.zip"
+        try:
+            with page.expect_download(timeout=40000) as download_info:
+                dl_media.click()
+            download = download_info.value
+            download.save_as(str(temp_zip))
+
+            # Extract or save
+            with open(temp_zip, "rb") as f:
+                header = f.read(16)
+            if header.startswith(b"PK"):
+                with zipfile.ZipFile(temp_zip, "r") as z:
+                    mp4s = [m for m in z.namelist() if m.endswith(".mp4")]
+                    if mp4s:
+                        extracted = z.extract(mp4s[0], dest_mp4_path.parent)
+                        if dest_mp4_path.exists():
+                            dest_mp4_path.unlink()
+                        shutil.move(extracted, dest_mp4_path)
+            elif b"ftyp" in header:
+                if dest_mp4_path.exists():
+                    dest_mp4_path.unlink()
+                shutil.move(temp_zip, dest_mp4_path)
+            temp_zip.unlink(missing_ok=True)
+            print(f"[Flow Extend SUCCESS] Saved extended video: {dest_mp4_path.name} ({dest_mp4_path.stat().st_size} bytes)")
+            return True
+        except Exception as e:
+            print(f"[Flow Extend Error] Download from editor failed: {e}")
+            temp_zip.unlink(missing_ok=True)
+
+    return False
+
+def generate_track_on_flow(track_id: str, extend: bool = True, extend_steps: int = 2):
     """Automates generating scenes for a track on flow.google.com and builds the master film."""
     from playwright.sync_api import sync_playwright
 
@@ -206,7 +319,7 @@ def generate_track_on_flow(track_id: str):
     bp = parse_blueprint(matches[0])
     print("\n" + "=" * 80)
     print(f"GOOGLE FLOW AUTOMATION: {bp['title']}")
-    print(f"Track ID: {bp['track_id']} | Category: {bp['category']} | Scenes: {len(bp['scenes'])}")
+    print(f"Track ID: {bp['track_id']} | Category: {bp['category']} | Scenes: {len(bp['scenes'])} | Extend: {extend} ({extend_steps} steps)")
     print("=" * 80)
 
     track_dir = FLOW_RENDERS_DIR / bp['track_id']
@@ -276,12 +389,33 @@ def generate_track_on_flow(track_id: str):
                     page.keyboard.type(prompt, delay=8)
                     page.wait_for_timeout(1000)
 
+                    # Determine continuation prompts if extend is enabled
+                    continuation_prompts = []
+                    if extend:
+                        curr_idx = next((i for i, s in enumerate(bp['scenes']) if s['scene_num'] == sc_num), -1)
+                        if curr_idx != -1:
+                            for offset in range(1, extend_steps + 1):
+                                next_idx = curr_idx + offset
+                                if next_idx < len(bp['scenes']):
+                                    next_sc = bp['scenes'][next_idx]
+                                    continuation_prompts.append(f"Continuing seamless sequence: {next_sc['prompt']}")
+
                     gen_btn = page.locator("button[aria-label='Start generation']").first
                     if gen_btn.is_enabled():
                         gen_btn.click()
                         print(f"[Scene {sc_num}] Generation triggered. Waiting for approval...")
                         wait_for_assistant_and_approve(page)
-                        success = wait_and_download_video(page, out_clip)
+
+                        success = False
+                        if extend and continuation_prompts:
+                            print(f"[Scene {sc_num}] Video generating. Waiting for completion to trigger EXTEND...")
+                            ready = wait_and_download_video(page, out_clip, only_wait_ready=True)
+                            if ready:
+                                success = wait_and_extend_video(page, out_clip, extend_count=len(continuation_prompts), continuation_prompts=continuation_prompts)
+
+                        if not success:
+                            success = wait_and_download_video(page, out_clip)
+
                         if not success:
                             print(f"[Flow Warning] Failed to render Scene {sc_num}.")
                     else:
@@ -308,15 +442,18 @@ def generate_track_on_flow(track_id: str):
         return False
 
 VINAYAGAR_TRACK_IDS = [
-    "pYuwzoJkhTE",
+    "AW4cljBWy2w",
     "RVMUEr1MOFo",
+    "pYuwzoJkhTE",
     "T1KiH3G5WPs",
-    "vFbw9hX0wO4",
-    "Yvlg_8JBHL4",
     "zqStqzcFgbM",
+    "mQpQEuXiEZ4",
+    "Yvlg_8JBHL4",
     "IhE1OvdIBKs",
+    "Lki_Y8OSljs",
+    "GydxHEmyDPc",
     "lEHLSYxnpbU",
-    "mQpQEuXiEZ4"
+    "vFbw9hX0wO4"
 ]
 
 def main():
@@ -327,15 +464,18 @@ def main():
     parser.add_argument("--vinayagar", action="store_true", help="Process all pending Vinayagar tracks")
     parser.add_argument("--all", action="store_true", help="Process all pending tracks from the manifest")
     parser.add_argument("--limit", type=int, default=5, help="Maximum number of tracks to process")
+    parser.add_argument("--no-extend", action="store_true", help="Disable extending video in Flow editor")
+    parser.add_argument("--extend-steps", type=int, default=2, help="Number of extensions per base scene")
 
     args = parser.parse_args()
+    do_extend = not args.no_extend
 
     if args.open:
         open_session()
         return
 
     if args.track:
-        generate_track_on_flow(args.track)
+        generate_track_on_flow(args.track, extend=do_extend, extend_steps=args.extend_steps)
         return
 
     if args.vinayagar:
@@ -356,7 +496,7 @@ def main():
             print(f">>> VINAYAGAR SONG [{idx}/{len(pending_vin)}]: Track ID {tid} <<<")
             print(f"=======================================================")
             try:
-                generate_track_on_flow(tid)
+                generate_track_on_flow(tid, extend=do_extend, extend_steps=args.extend_steps)
             except Exception as e:
                 print(f"[Error] Processing failed for track {tid}: {e}")
             time.sleep(3)
@@ -382,7 +522,7 @@ def main():
             if count >= args.limit:
                 break
             track_id = item["track_id"]
-            ok = generate_track_on_flow(track_id)
+            ok = generate_track_on_flow(track_id, extend=do_extend, extend_steps=args.extend_steps)
             if ok:
                 count += 1
                 time.sleep(5)
