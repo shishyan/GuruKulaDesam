@@ -126,10 +126,14 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240):
     while time.time() - start_t < max_wait_sec:
         page.wait_for_timeout(6000)
         elapsed = int(time.time() - start_t)
+
+        if elapsed < 45:
+            print(f"[Flow] Render in progress... {elapsed}s elapsed")
+            continue
         
         # Check for Download batch button on the video card
         dl_btn = page.locator("button[aria-label*='Download' i]").first
-        if dl_btn.count() > 0 and dl_btn.is_visible():
+        if dl_btn.count() > 0 and dl_btn.is_visible() and dl_btn.is_enabled():
             print(f"[Flow] Video ready! Initiating download (Elapsed: {elapsed}s)...")
             temp_zip = dest_mp4_path.parent / f"temp_{int(time.time())}.zip"
             
