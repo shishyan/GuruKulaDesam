@@ -221,20 +221,26 @@ def generate_track_on_flow(track_id: str):
                 page.goto(FLOW_URL)
                 page.wait_for_timeout(5000)
 
-                # Click New project
-                new_proj = page.locator("button:has-text('New project'), [role='button']:has-text('New project')").first
-                if new_proj.count() > 0 and new_proj.is_visible():
-                    print("[Flow] Creating fresh project...")
-                    new_proj.click()
-                    page.wait_for_timeout(6000)
-
                 # Process each scene
                 for sc in scenes_to_render:
                     sc_num = sc['scene_num']
                     out_clip = track_dir / f"scene_{sc_num:02d}.mp4"
+                    if out_clip.exists() and out_clip.stat().st_size > 500_000:
+                        print(f"[Cached] Scene {sc_num} already exists: {out_clip.name}")
+                        continue
+
+                    # Open fresh project for each scene
+                    print(f"\n[Scene {sc_num}] Creating fresh project workspace on Google Flow...")
+                    page.goto(FLOW_URL)
+                    page.wait_for_timeout(4000)
+                    new_proj = page.locator("button:has-text('New project'), [role='button']:has-text('New project')").first
+                    if new_proj.count() > 0 and new_proj.is_visible():
+                        new_proj.click()
+                        page.wait_for_timeout(6000)
+
                     prompt = f"Devotional cinematic 16:9 photorealistic video: {sc['prompt']} Exclusions: {sc.get('exclusions', '')} {bp['continuity'].get('Hard Exclusions', '')}"
 
-                    print(f"\n[Scene {sc_num}] Submitting prompt...")
+                    print(f"[Scene {sc_num}] Submitting prompt...")
                     print(f"Prompt: {prompt[:140]}...")
 
                     editor = page.locator("div.ProseMirror").first
@@ -274,11 +280,24 @@ def generate_track_on_flow(track_id: str):
         print(f"[Assembly Error] No scenes available for {bp['track_id']}.")
         return False
 
+VINAYAGAR_TRACK_IDS = [
+    "lEHLSYxnpbU",
+    "mQpQEuXiEZ4",
+    "pYuwzoJkhTE",
+    "RVMUEr1MOFo",
+    "T1KiH3G5WPs",
+    "vFbw9hX0wO4",
+    "Yvlg_8JBHL4",
+    "zqStqzcFgbM",
+    "IhE1OvdIBKs"
+]
+
 def main():
     parser = argparse.ArgumentParser(description="Google Flow Browser Automation Bridge")
     parser.add_argument("--open", action="store_true", help="Open Chrome to inspect flow.google.com")
     parser.add_argument("--track", type=str, help="Process a specific track by Track ID")
     parser.add_argument("--category", type=str, help="Process a category of tracks")
+    parser.add_argument("--vinayagar", action="store_true", help="Process all pending Vinayagar tracks")
     parser.add_argument("--all", action="store_true", help="Process all pending tracks from the manifest")
     parser.add_argument("--limit", type=int, default=5, help="Maximum number of tracks to process")
 
@@ -290,6 +309,19 @@ def main():
 
     if args.track:
         generate_track_on_flow(args.track)
+        return
+
+    if args.vinayagar:
+        print("=" * 80)
+        print("AUTONOMOUS PIPELINE: GENERATING ALL PENDING VINAYAGAR MASTER FILMS")
+        print("=" * 80)
+        for idx, tid in enumerate(VINAYAGAR_TRACK_IDS, 1):
+            print(f"\n=======================================================")
+            print(f">>> VINAYAGAR SONG [{idx}/{len(VINAYAGAR_TRACK_IDS)}]: Track ID {tid} <<<")
+            print(f"=======================================================")
+            generate_track_on_flow(tid)
+            time.sleep(3)
+        print("\nAll Vinayagar master films processed successfully!")
         return
 
     if args.category or args.all:
