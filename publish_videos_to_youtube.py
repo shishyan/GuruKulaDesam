@@ -18,8 +18,8 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parent
-TOKEN_FILE = ROOT / "token.json"
-CLIENT_SECRETS_FILE = ROOT / "client_secrets.json"
+TOKEN_FILE = ROOT / "data" / "credentials" / "token.json" if (ROOT / "data" / "credentials" / "token.json").exists() else ROOT / "token.json"
+CLIENT_SECRETS_FILE = ROOT / "data" / "credentials" / "client_secrets.json" if (ROOT / "data" / "credentials" / "client_secrets.json").exists() else ROOT / "client_secrets.json"
 METADATA_FILE = ROOT / "production" / "metadata" / "thirukkural_releases_metadata.json"
 PLAYLIST_ID = "PLW7qBZp_Q8Ro"  # திருக்குறள் | Thirukkural — Master Collection
 
