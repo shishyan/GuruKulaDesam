@@ -2483,14 +2483,29 @@ footer.site-footer {
   margin-bottom: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   gap: 28px;
   align-items: start;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .music-feast-card {
     grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+/* Cinema Display Grid (Thirukkural Theater) */
+.cinema-display-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 26px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .cinema-display-grid {
+    grid-template-columns: 1fr !important;
     gap: 20px;
   }
 }
