@@ -9,13 +9,13 @@ let currentChapter = 1;
 let loadedBookData = {};
 
 const BOOKS_METADATA = [
-  { id: 'nanneri', name: 'நன்னெறி', en: 'Nanneri', icon: 'M12 2v3M7 5h10l-1.5 4H8.5L7 5z', color: '#38bdf8' },
-  { id: 'nallaram', name: 'நல்லறம்', en: 'Nallaram', icon: 'M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z', color: '#10b981' },
-  { id: 'nalvazhi', name: 'நல்வழி', en: 'Nalvazhi', icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z', color: '#facc15' },
-  { id: 'narthunai', name: 'நற்துணை', en: 'Narthunai', icon: 'M12 2a9.5 9.5 0 0 0-9.5 9.5c0 7 9.5 12.5 9.5 12.5s9.5-5.5 9.5-12.5A9.5 9.5 0 0 0 12 2z', color: '#c084fc' },
-  { id: 'narchinthanai', name: 'நற்சிந்தனை', en: 'Narchinthanai', icon: 'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', color: '#fb923c' },
-  { id: 'narchol', name: 'நற்சொல்', en: 'Narchol', icon: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z', color: '#34d399' },
-  { id: 'narcheyal', name: 'நற்செயல்', en: 'Narcheyal', icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z', color: '#ffd700' }
+  { id: 'nanneri', name: 'நன்னெறி', en: 'Good Ethics & Conduct', icon: 'M12 2v3M7 5h10l-1.5 4H8.5L7 5z', color: '#38bdf8' },
+  { id: 'nallaram', name: 'நல்லறம்', en: 'Virtue & Householder Dharma', icon: 'M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z', color: '#10b981' },
+  { id: 'nalvazhi', name: 'நல்வழி', en: 'Path of Wisdom & Labor', icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z', color: '#facc15' },
+  { id: 'narthunai', name: 'நற்துணை', en: 'Rituals, Yagnas & Temple', icon: 'M12 2a9.5 9.5 0 0 0-9.5 9.5c0 7 9.5 12.5 9.5 12.5s9.5-5.5 9.5-12.5A9.5 9.5 0 0 0 12 2z', color: '#c084fc' },
+  { id: 'narchinthanai', name: 'நற்சிந்தனை', en: 'Buddha Teachings & Mind', icon: 'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', color: '#fb923c' },
+  { id: 'narchol', name: 'நற்சொல்', en: 'Thiru Manthiram & Mantras', icon: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z', color: '#34d399' },
+  { id: 'narcheyal', name: 'நற்செயல்', en: '3 Ds: Duty, Discipline, Dignity', icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z', color: '#ffd700' }
 ];
 
 async function initBookReader() {
