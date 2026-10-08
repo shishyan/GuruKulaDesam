@@ -70,11 +70,11 @@ header.site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(3, 10, 22, 0.62);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border-gold);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none !important;
 }
 
 .header-container {
@@ -597,9 +597,11 @@ main.main-content {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  background: #10141f;
+  background: transparent !important;
   border-bottom: 1px solid var(--border-subtle);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 .modal-title {
@@ -2377,7 +2379,7 @@ footer.site-footer {
 
 .sheet-header {
   padding: 10px 14px;
-  background: rgba(12, 15, 21, 0.95);
+  background: transparent !important;
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
   justify-content: space-between;
@@ -2385,6 +2387,7 @@ footer.site-footer {
   font-size: 0.85rem;
   font-weight: 700;
   color: #f8fafc;
+  box-shadow: none !important;
 }
 
 .sheet-thumb {
@@ -2675,9 +2678,10 @@ footer.site-footer {
   flex-wrap: wrap;
   margin-bottom: 20px;
   padding: 12px 20px;
-  background: rgba(212, 175, 55, 0.08);
+  background: transparent !important;
   border: 1px solid var(--border-gold);
   border-radius: 12px;
+  box-shadow: none !important;
 }
 
 .course-meta-badge {
@@ -2781,9 +2785,9 @@ footer.site-footer {
 
 .lesson-main-title {
   font-size: 1.75rem;
-  background: linear-gradient(135deg, #38bdf8 0%, #60a5fa 45%, #34d399 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: transparent !important;
+  color: #38bdf8;
+  -webkit-text-fill-color: initial;
   font-weight: 800;
   line-height: 1.35;
   letter-spacing: -0.01em;
@@ -2924,11 +2928,12 @@ footer.site-footer {
 
 .diagram-header {
   padding: 14px 20px;
-  background: rgba(255, 255, 255, 0.04);
+  background: transparent !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   gap: 12px;
+  box-shadow: none !important;
 }
 
 .diagram-tag {
@@ -3615,9 +3620,10 @@ body.primary-menu-open .left-strip-bar {
   padding: 0 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   flex-shrink: 0;
-  background: rgba(14, 20, 36, 0.45);
+  background: transparent !important;
   overflow: hidden;
   position: relative;
+  box-shadow: none !important;
 }
 
 .left-strip-bar:not(.expanded):not(.open) .strip-header {
@@ -4281,8 +4287,9 @@ body.primary-menu-open .strip-backdrop {
   align-items: center;
   justify-content: space-between;
   padding: 12px 18px;
-  background: #131724;
+  background: transparent !important;
   border-bottom: 1px solid var(--border-gold);
+  box-shadow: none !important;
 }
 
 .user-modal-tabs {
@@ -5550,11 +5557,11 @@ header.site-header {
   position: sticky !important;
   top: 0 !important;
   z-index: 1100;
-  background: rgba(3, 10, 22, 0.62) !important;
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(56, 189, 248, 0.20) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.40) !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
   width: 100%;
 }
 
@@ -5758,7 +5765,8 @@ main.main-content svg { max-width: 100%; height: auto; }
   align-items: center;
   gap: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(0, 0, 0, 0.25);
+  background: transparent !important;
+  box-shadow: none !important;
 }
 .universal-search-input {
   flex: 1;
@@ -6229,12 +6237,14 @@ main.main-content svg { max-width: 100%; height: auto; }
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 10px 18px;
-  margin-bottom: 24px;
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  font-size: 0.86rem;
+  padding: 8px 0;
+  margin-bottom: 20px;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  font-size: 0.88rem;
   color: #94a3b8;
 }
 
@@ -6348,14 +6358,14 @@ main.main-content svg { max-width: 100%; height: auto; }
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
-  padding: 20px 24px;
-  background: linear-gradient(135deg, rgba(6, 17, 34, 0.50) 0%, rgba(13, 27, 46, 0.42) 100%);
-  border: 1px solid var(--border-gold);
-  border-radius: 16px;
+  padding: 14px 0 20px 0;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0;
   margin-bottom: 22px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.40);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 .dashboard-title-group h1 {
@@ -6996,7 +7006,6 @@ main.main-content svg { max-width: 100%; height: auto; }
 .ashram-pedagogy-card,
 .ashram-hero-container,
 .filter-bar,
-.page-breadcrumb,
 .quick-action-btn,
 .term-section,
 .grade-portal-card,
@@ -7059,3 +7068,106 @@ main.main-content svg { max-width: 100%; height: auto; }
 }
 
 
+
+
+/* ========================================================================== */
+/* UNIVERSAL ZERO BACKGROUND ENFORCEMENT: TOP BARS, HEADERS & TITLES          */
+/* (Zero background anywhere: completely floating over sacred banyan tree)    */
+/* ========================================================================== */
+
+/* Top Bars & Breadcrumbs */
+.context-top-bar,
+header.site-header,
+.site-header,
+.top-bar,
+.site-topbar,
+.app-topbar,
+.page-breadcrumb,
+.breadcrumb-container,
+.dashboard-breadcrumb-bar,
+.drilldown-breadcrumb-bar,
+.context-breadcrumbs {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* All Headers Everywhere */
+header,
+header.site-header,
+.site-header,
+.header-container,
+.context-bar-container,
+.context-bar-left,
+.header-right-tools,
+.page-header,
+.section-header,
+.hero-header,
+.dashboard-header,
+.dashboard-header-bar,
+.dash-header,
+.drilldown-header,
+.drilldown-header-bar,
+.ashram-pedagogy-header,
+.collegiate-visual-header,
+.diagram-header,
+.strip-header,
+.drawer-header,
+.modal-header,
+.sheet-header,
+.sheet-modal-header,
+.user-modal-header,
+.universal-search-header,
+.course-header,
+.course-header-meta,
+.card-header,
+.panel-header,
+[class*="-header"],
+[class*="header-"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* All Titles & Headings Everywhere */
+h1, h2, h3, h4, h5, h6,
+.title,
+.page-title,
+.section-title,
+.section-divider-title,
+.hero-title,
+.dashboard-title,
+.dash-title,
+.dash-subtitle,
+.card-title,
+.unit-title,
+.lesson-title,
+.lesson-main-title,
+.lesson-sub-title,
+.drilldown-title,
+.badge-title,
+.topic-title,
+.kural-title,
+.chapter-title,
+.workflow-tab-title,
+.yagna-item-title,
+.objectives-title,
+.modal-title,
+.program-title,
+[class*="-title"],
+[class*="title-"],
+[class*="-heading"],
+[class*="heading-"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
