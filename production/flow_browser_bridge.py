@@ -141,8 +141,11 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
             print(f"[Flow] Render in progress... {elapsed}s elapsed")
             continue
         
-        # Check for Download batch button on the newest video card
-        dl_btn = page.locator("button[aria-label*='Download' i]").last
+        # Check for Download batch button or Download media
+        dl_btn = page.locator("button[aria-label='Download batch'], button:has-text('Download batch')").first
+        if dl_btn.count() == 0 or not dl_btn.is_visible():
+            dl_btn = page.locator("button[aria-label*='Download' i]").first
+
         if dl_btn.count() > 0 and dl_btn.is_visible() and dl_btn.is_enabled():
             print(f"[Flow] Video ready! (Elapsed: {elapsed}s)...")
             if only_wait_ready:
@@ -151,8 +154,21 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
             temp_zip = dest_mp4_path.parent / f"temp_{int(time.time())}.zip"
             
             try:
-                with page.expect_download(timeout=30000) as download_info:
+                has_popup = dl_btn.get_attribute("aria-haspopup") == "menu"
+                if has_popup:
                     dl_btn.click()
+                    page.wait_for_timeout(800)
+                    btn_720 = page.locator("button:has-text('720p'), [role='menuitem']:has-text('720p'), button:has-text('Original size')").first
+                    if btn_720.count() > 0 and btn_720.is_visible():
+                        with page.expect_download(timeout=30000) as download_info:
+                            btn_720.click()
+                    else:
+                        with page.expect_download(timeout=30000) as download_info:
+                            dl_btn.click()
+                else:
+                    with page.expect_download(timeout=30000) as download_info:
+                        dl_btn.click()
+
                 download = download_info.value
                 download.save_as(str(temp_zip))
                 

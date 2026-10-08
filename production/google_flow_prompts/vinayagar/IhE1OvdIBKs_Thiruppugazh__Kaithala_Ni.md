@@ -86,3 +86,4 @@ Create a single continuous 16:9 cinematic tracking shot at 24 fps. In the lush, 
 **Prompt:**  
 Create a single continuous 16:9 cinematic ritual climax at 24 fps. Inside the dark, fragrant granite Garbhagriha, the chief Tamil priest in silk veshti waves a towering 108-wick brass Arati deepam in smooth, sacred circles before the radiant face of Lord Maha Ganapathi. Leaping golden camphor flames illuminate Ganesha's benevolent eyes, curved trunk, and gleaming ivory tusk. Devotees with folded hands bow in absolute surrender to the elephant-faced Lord who removes all obstacles and bestows infinite grace.
 *Exclusions:* No modern cameras, no digital noise, no text, no modern artifacts.
+
