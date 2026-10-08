@@ -155,6 +155,48 @@ CHAPTER_REGISTRY = {
         "output": RENDERS_DIR / "adhikaram_46_sitrinanjeraamai_cinematic.mp4",
         "atmosphere": "rain", # rain taking the nature of the soil it touches
     },
+    60: {
+        "title": "Ookkamudaimai (ஊக்கமுடைமை)",
+        "audio_id": "XN5ENUbmSOE",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "60-ookkamudaimai",
+        "output": RENDERS_DIR / "adhikaram_60_ookkamudaimai_cinematic.mp4",
+        "atmosphere": "drizzle", # noble mountain breeze & auspicious drizzle
+    },
+    62: {
+        "title": "Aalvinaiyudaimai (ஆள்வினையுடைமை)",
+        "audio_id": "zj4_pEqa_cs",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "62-aalvinaiyudaimai",
+        "output": RENDERS_DIR / "adhikaram_62_aalvinaiyudaimai_cinematic.mp4",
+        "atmosphere": "drizzle", # Kaveri delta waterworks & fruitful toil
+    },
+    65: {
+        "title": "Solvanmai (சொல்வன்மை)",
+        "audio_id": "rOowxP53oWA",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "65-solvanmai",
+        "output": RENDERS_DIR / "adhikaram_65_solvanmai_cinematic.mp4",
+        "atmosphere": "drizzle", # gentle courtyard dawn mist & nectar of speech
+    },
+    66: {
+        "title": "Vinaithooymai (வினைத்தூய்மை)",
+        "audio_id": "D95woYqPoPI",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "66-vinaithooymai",
+        "output": RENDERS_DIR / "adhikaram_66_vinaithooymai_cinematic.mp4",
+        "atmosphere": "drizzle", # pure sanctifying rain of spotless dharma
+    },
+    67: {
+        "title": "Vinaithitpam (வினைத்திட்பம்)",
+        "audio_id": "0WurYH-hkNM",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "67-vinaithitpam",
+        "output": RENDERS_DIR / "adhikaram_67_vinaithitpam_cinematic.mp4",
+        "atmosphere": "rain", # steadfast fortress weathering monsoon storms
+    },
+    74: {
+        "title": "Naadu (நாடு)",
+        "audio_id": "gjo0AfKBzsU",
+        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "74-naadu",
+        "output": RENDERS_DIR / "adhikaram_74_naadu_cinematic.mp4",
+        "atmosphere": "drizzle", # celestial showers nourishing emerald fields
+    },
 }
 
 CAMERA_MOVES = [
@@ -210,7 +252,12 @@ NEGATIVE_WORDS = [
     'harsh_abuse', 'abusive',
     'slaughterhouse', 'butcher_blade',
     'broken_plow', 'cold_ashes', 'neglected_hearth', 'careless_householder_leaving',
-    'abandoned_hearth', 'flickering_lamp_neglected'
+    'abandoned_hearth', 'flickering_lamp_neglected',
+    'idle_like_wooden_statue', 'disheartened_worker', 'dropping_tools_neglect',
+    'fatalist_beggar', 'coward_with_sword', 'dark_goddess_mudevi', 'abandoned_overgrown_field',
+    'foul_tongued_slanderer', 'empty_braggart_babbling', 'tongue_tied_charlatan', 'harsh_words_striking', 'fool_speaking_uninvited',
+    'shunning_deeds', 'forbidden_deeds', 'ill_gotten', 'unbaked_clay_pot', 'thief_haunted', 'deceitful_fortune', 'boycotting_corrupt',
+    'hesitation_midway', 'drought_ravaged_famine'
 ]
 
 POSITIVE_OVERRIDE = [
@@ -219,7 +266,10 @@ POSITIVE_OVERRIDE = [
     'never_decays', 'undaunted', 'courage', 'refuses', 'refusing',
     'banishing_corrupt', 'burning_midnight', 'refusing_to_speak_cruel',
     'swallowing_his_own_anger', 'humble_householder_absorbing',
-    'king_punishing_corrupt', 'striking_down'
+    'king_punishing_corrupt', 'striking_down',
+    'refusing_corrupt', 'refusing_unrighteous', 'returning_lost_gold',
+    'rejecting_secret_bribe', 'protecting_injured_dove', 'blessing_son_for_his_honesty',
+    'destroying_flawed_bronze', 'resigning_office_over_unjust', 'unflinching'
 ]
 
 def is_negative_scene(filename: str) -> bool:

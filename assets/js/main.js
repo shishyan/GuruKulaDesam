@@ -886,32 +886,70 @@ function resetUserSettings() {
 // PRIMARY 6-GROUP MENU DRAWER & SIDEBAR CONTROLS
 // --------------------------------------------------------------------------
 function togglePrimaryMenu() {
+function expandLeftStrip() {
   const strip = document.getElementById('leftStripBar');
   const backdrop = document.getElementById('stripBackdrop');
   if (!strip) return;
   const isOpen = strip.classList.toggle('open');
   document.body.classList.toggle('primary-menu-open', isOpen);
   if (backdrop) backdrop.classList.toggle('active', isOpen);
+  strip.classList.add('open', 'expanded');
+  document.body.classList.add('primary-menu-open');
+  if (backdrop && window.innerWidth <= 768) {
+    backdrop.classList.add('active');
+  }
+  const toggleIcon = strip.querySelector('.strip-toggle-icon');
+  if (toggleIcon) {
+    toggleIcon.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+  }
+  try {
+    localStorage.setItem('GURUKULA_STRIP_EXPANDED', 'true');
+  } catch (e) {}
 }
 
 function openPrimaryMenu() {
+function collapseLeftStrip() {
   const strip = document.getElementById('leftStripBar');
   const backdrop = document.getElementById('stripBackdrop');
   if (!strip) return;
   strip.classList.add('open');
   document.body.classList.add('primary-menu-open');
   if (backdrop) backdrop.classList.add('active');
+  strip.classList.remove('open', 'expanded', 'mobile-open');
+  document.body.classList.remove('primary-menu-open');
+  if (backdrop) backdrop.classList.remove('active');
+  const toggleIcon = strip.querySelector('.strip-toggle-icon');
+  if (toggleIcon) {
+    toggleIcon.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+  }
+  try {
+    localStorage.setItem('GURUKULA_STRIP_EXPANDED', 'false');
+  } catch (e) {}
 }
 
 function closePrimaryMenu() {
+function togglePrimaryMenu() {
   const strip = document.getElementById('leftStripBar');
   const backdrop = document.getElementById('stripBackdrop');
   if (strip) {
     strip.classList.remove('open');
     strip.classList.remove('mobile-open');
+  if (!strip) return;
+  if (strip.classList.contains('open') || strip.classList.contains('expanded')) {
+    collapseLeftStrip();
+  } else {
+    expandLeftStrip();
   }
   document.body.classList.remove('primary-menu-open');
   if (backdrop) backdrop.classList.remove('active');
+}
+
+function openPrimaryMenu() {
+  expandLeftStrip();
+}
+
+function closePrimaryMenu() {
+  collapseLeftStrip();
 }
 
 function toggleLeftStrip() {
@@ -920,6 +958,7 @@ function toggleLeftStrip() {
 
 function closeMobileStrip() {
   closePrimaryMenu();
+  collapseLeftStrip();
 }
 
 function openUserSettingsModal(tab) {
@@ -1577,15 +1616,23 @@ function filterByText(keyword) {
 
 function renderContextTabsIntoHeader() {
   const headerContainer = document.querySelector('.header-container');
+function renderTopBreadcrumbBar() {
+  const headerContainer = document.querySelector('.context-bar-container') || document.querySelector('.header-container');
   if (!headerContainer) return;
 
   // 1. Remove or hide the old duplicate main-nav
+  // 1. Remove or hide obsolete duplicate main-nav or fixed hamburger button
   const oldNav = document.getElementById('mainNav');
   if (oldNav) {
     oldNav.style.display = 'none';
   }
+  if (oldNav) oldNav.style.display = 'none';
 
   // 2. Remove any previous context-tabs-nav or right tools
+  const oldHamburger = headerContainer.querySelector('.primary-hamburger-btn');
+  if (oldHamburger && oldHamburger.parentNode) oldHamburger.parentNode.removeChild(oldHamburger);
+
+  // 2. Remove any previous context-tabs-nav (no in-page section jumper pills!)
   const existingTabs = document.getElementById('contextTabsNav');
   if (existingTabs && existingTabs.parentNode) existingTabs.parentNode.removeChild(existingTabs);
   const existingTools = document.querySelector('.header-right-tools');
@@ -1597,6 +1644,9 @@ function renderContextTabsIntoHeader() {
   tabsNav.id = 'contextTabsNav';
   tabsNav.className = 'context-tabs-nav';
   tabsNav.setAttribute('aria-label', 'Context Specific Tabs');
+  // 3. Resolve page context and links
+  const ctx = resolvePageContext();
+  const filename = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
 
   const hamburgerBtnHtml = `
     <button type="button" class="primary-hamburger-btn" onclick="togglePrimaryMenu()" title="முதன்மை பட்டி (6 பிரிவுகள்)" aria-label="முதன்மை பட்டி">
@@ -1605,6 +1655,20 @@ function renderContextTabsIntoHeader() {
       <span class="hb-label">முதன்மை பட்டி</span>
     </button>
   `;
+  let rootLink = 'index.html';
+  if (ctx.root === 'வாழ்வியல்' || ctx.root === 'கல்வி' || ctx.root === 'பாடத்திட்டம்' || ctx.root === 'வகுப்புகள்') {
+    rootLink = 'kalvi.html';
+  } else if (ctx.root === 'சைவ நெறி' || ctx.root === 'வழிபாட்டு நெறி') {
+    rootLink = 'saiva-neri.html';
+  } else if (ctx.root === 'தமிழ்மறை') {
+    rootLink = 'thirukkural.html';
+  } else if (ctx.root === 'சன்மார்க்கம்') {
+    rootLink = 'sanmargam.html';
+  } else if (ctx.root === 'இசை' || ctx.root === 'காணொளி') {
+    rootLink = 'irai-isai-virundhu.html';
+  } else if (ctx.root === 'காஞ்சி மகா பெரியவா') {
+    rootLink = 'about.html';
+  }
 
   tabsNav.innerHTML = hamburgerBtnHtml + tabs.map((t, idx) => {
     if (t.href) {
@@ -1612,6 +1676,23 @@ function renderContextTabsIntoHeader() {
         <a href="${t.href}" class="context-tab-pill ${t.active ? 'active' : ''}" id="${t.id}">
           <span class="context-tab-pill-icon">${t.icon}</span>
           <span>${t.label}</span>
+  // 4. Ensure .context-bar-left exists and populate breadcrumbs as the top bar
+  let barLeft = headerContainer.querySelector('.context-bar-left');
+  if (!barLeft) {
+    barLeft = document.createElement('div');
+    barLeft.className = 'context-bar-left';
+    headerContainer.insertBefore(barLeft, headerContainer.firstChild);
+  }
+
+  if (filename === 'index.html' || filename === '') {
+    barLeft.innerHTML = `
+      <button type="button" class="mobile-hamburger-btn" onclick="togglePrimaryMenu()" title="பட்டி திறக்க" aria-label="முதன்மை பட்டி">
+        <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="context-breadcrumbs" id="contextBreadcrumbs" aria-label="தள வழிகாட்டல்">
+        <a href="index.html" class="crumb-link crumb-home" title="முகப்பு">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span class="crumb-text">முகப்பு</span>
         </a>
       `;
     } else {
@@ -1623,6 +1704,27 @@ function renderContextTabsIntoHeader() {
       `;
     }
   }).join('');
+        <span class="crumb-sep">/</span>
+        <span class="crumb-current" id="topBarCurrentCrumb">டாஷ்போர்டு</span>
+      </nav>
+    `;
+  } else {
+    barLeft.innerHTML = `
+      <button type="button" class="mobile-hamburger-btn" onclick="togglePrimaryMenu()" title="பட்டி திறக்க" aria-label="முதன்மை பட்டி">
+        <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="context-breadcrumbs" id="contextBreadcrumbs" aria-label="தள வழிகாட்டல்">
+        <a href="index.html" class="crumb-link crumb-home" title="முகப்பு">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span class="crumb-text">முகப்பு</span>
+        </a>
+        <span class="crumb-sep">/</span>
+        <a href="${rootLink}" class="crumb-link">${ctx.root}</a>
+        <span class="crumb-sep">/</span>
+        <span class="crumb-current" id="topBarCurrentCrumb">${ctx.title}</span>
+      </nav>
+    `;
+  }
 
   // 4. Build Right Tools Dock
   const rightTools = document.createElement('div');
@@ -1633,6 +1735,34 @@ function renderContextTabsIntoHeader() {
       <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
       <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
     </div>
+  // 5. Ensure .header-right-tools exists
+  let rightTools = headerContainer.querySelector('.header-right-tools');
+  if (!rightTools) {
+    rightTools = document.createElement('div');
+    rightTools.className = 'header-right-tools';
+    rightTools.innerHTML = `
+      <div class="context-search-wrapper">
+        <span class="context-search-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+        <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
+        <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="context-tool-group">
+        <button type="button" class="context-tool-btn font-dec-btn" onclick="adjustFontSize(-0.06)" title="எழுத்தளவைக் குறைக்க (A-)">A⁻</button>
+        <span class="font-scale-indicator" id="fontScaleIndicator" title="தற்போதைய எழுத்தளவு">100%</span>
+        <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க (A+)">A⁺</button>
+      </div>
+      <button type="button" class="context-tool-btn ambient-drone-btn" id="ambientDroneBtn" onclick="toggleAmbientDrone()" title="நாத தியான ஒலி (Ambient Tanpura Drone)"><span class="drone-icon" id="ambientDroneIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c-.8 2-1.5 3.5-1.5 5a1.5 1.5 0 0 0 3 0c0-1.5-.7-3-1.5-5z" fill="currentColor"/><path d="M5 13c0 4 3 6 7 6s7-2 7-6H5z"/><path d="M10 19v2h4v-2"/></svg></span></button>
+      <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள் மாற்று">
+        <span class="theme-icon" id="themeQuickIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+      </button>
+      <button type="button" class="context-profile-pill" onclick="openUserSettingsModal('profile')" title="பயனர் சுயவிவரம் &amp; அமைப்புகள்">
+        <span class="pill-avatar" id="pillAvatarIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <span class="pill-name" id="pillUserName">சாதகர்</span>
+      </button>
+    `;
+    headerContainer.appendChild(rightTools);
+  }
+}
 
     <div class="context-tool-group">
       <button type="button" class="context-tool-btn font-dec-btn" onclick="adjustFontSize(-0.06)" title="எழுத்தளவைக் குறைக்க (A-)">A⁻</button>
@@ -1653,6 +1783,8 @@ function renderContextTabsIntoHeader() {
 
   headerContainer.appendChild(tabsNav);
   headerContainer.appendChild(rightTools);
+function renderContextTabsIntoHeader() {
+  renderTopBreadcrumbBar();
 }
 
 function handleTabClick(btn, actionStr) {
@@ -1668,17 +1800,25 @@ function handleTabClick(btn, actionStr) {
     fn();
   } catch (e) {
     console.error('Error executing tab action:', e);
+    console.error('Error executing action:', e);
   }
 }
 
 
 function mountAppShell() {
   if (document.getElementById('leftStripBar')) return;
+  // 1. Render Top Breadcrumb Bar
+  renderTopBreadcrumbBar();
 
   const currentPath = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
   const ctx = resolvePageContext();
+  // 2. Ensure body has has-left-strip class
+  document.body.classList.add('has-left-strip');
 
   renderContextTabsIntoHeader();
+  // 3. Remove obsolete contextSensitiveBar if present
+  const oldSensitiveBar = document.getElementById('contextSensitiveBar');
+  if (oldSensitiveBar && oldSensitiveBar.parentNode) oldSensitiveBar.parentNode.removeChild(oldSensitiveBar);
 
   // 1. Mobile Backdrop
   const backdrop = document.createElement('div');
@@ -1686,12 +1826,29 @@ function mountAppShell() {
   backdrop.className = 'strip-backdrop';
   backdrop.onclick = closeMobileStrip;
   document.body.appendChild(backdrop);
+  let strip = document.getElementById('leftStripBar');
+  if (!strip) {
+    // Backdrop
+    let backdrop = document.getElementById('stripBackdrop');
+    if (!backdrop) {
+      backdrop = document.createElement('div');
+      backdrop.id = 'stripBackdrop';
+      backdrop.className = 'strip-backdrop';
+      backdrop.onclick = collapseLeftStrip;
+      document.body.appendChild(backdrop);
+    }
 
   // 2. Left Strip Bar
   const strip = document.createElement('aside');
   strip.id = 'leftStripBar';
   strip.className = 'left-strip-bar';
   strip.setAttribute('aria-label', 'Quick Portals');
+    // Left Strip Bar
+    const currentPath = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    strip = document.createElement('aside');
+    strip.id = 'leftStripBar';
+    strip.className = 'left-strip-bar';
+    strip.setAttribute('aria-label', 'முதன்மை பட்டி');
 
   const navItems = [
     { href: 'index.html', icon: GKD_ICONS.home, label: 'முகப்பு' },
@@ -1708,6 +1865,21 @@ function mountAppShell() {
     { href: 'syllabus.html', icon: GKD_ICONS.book, label: 'பாடத்திட்டம்' },
     { href: 'about.html', icon: GKD_ICONS.temple, label: 'பெரியவா' }
   ];
+    const navItems = [
+      { href: 'index.html', icon: GKD_ICONS.home, label: 'முகப்பு' },
+      { href: 'kalvi.html', icon: GKD_ICONS.leaf, label: 'வாழ்வியல் நெறி' },
+      { href: 'virtues.html', icon: GKD_ICONS.virtues, label: 'நற்பண்புகள்' },
+      { href: 'saiva-neri.html', icon: GKD_ICONS.om, label: 'சைவ நெறி' },
+      { href: 'irai-isai-virundhu.html', icon: GKD_ICONS.music, label: 'இறை இசை' },
+      { href: 'thirukkural.html', icon: GKD_ICONS.scroll, label: 'திருக்குறள்' },
+      { href: 'sanmargam.html', icon: GKD_ICONS.flame, label: 'சன்மார்க்கம்' },
+      { href: 'murugan.html', icon: GKD_ICONS.vel, label: 'முருகன்' },
+      { href: 'sakthi.html', icon: GKD_ICONS.lotus, label: 'சக்தி நெறி' },
+      { href: 'vinayagar.html', icon: GKD_ICONS.ganesha, label: 'விநாயகர்' },
+      { href: 'vaishnava.html', icon: GKD_ICONS.chakra, label: 'வைணவம்' },
+      { href: 'syllabus.html', icon: GKD_ICONS.book, label: 'பாடத்திட்டம்' },
+      { href: 'about.html', icon: GKD_ICONS.temple, label: 'பெரியவா' }
+    ];
 
   strip.innerHTML = `
     <div class="strip-header">
@@ -1725,6 +1897,11 @@ function mountAppShell() {
         <a href="${item.href}" class="strip-item ${currentPath === item.href ? 'active' : ''}" data-tooltip="${item.label}">
           <span class="strip-item-icon">${item.icon}</span>
           <span class="strip-item-label">${item.label}</span>
+    strip.innerHTML = `
+      <div class="strip-header">
+        <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
+          <span class="strip-emblem">ॐ</span>
+          <span class="strip-brand-text">குரு குல தேசம்</span>
         </a>
       `).join('')}
     </nav>
@@ -1764,6 +1941,8 @@ function mountAppShell() {
       <div class="context-left">
         <button type="button" class="context-strip-trigger" onclick="toggleLeftStrip()" title="பக்கப்பட்டி திறக்க/மூட">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="togglePrimaryMenu()" title="பட்டி மாற்று">
+          <span class="strip-toggle-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
         </button>
         <button type="button" class="context-back-btn" onclick="if(window.history.length > 1){ window.history.back(); } else { window.location.href='index.html'; }" title="பின்னே செல்ல (Go Back)">
           <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
@@ -1782,6 +1961,14 @@ function mountAppShell() {
           <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
           <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
         </div>
+      <nav class="strip-nav-list" id="stripNavList">
+        ${navItems.map(item => `
+          <a href="${item.href}" class="strip-item ${currentPath === item.href ? 'active' : ''}" data-tooltip="${item.label}">
+            <span class="strip-item-icon">${item.icon}</span>
+            <span class="strip-item-label">${item.label}</span>
+          </a>
+        `).join('')}
+      </nav>
 
         <div class="context-tool-group">
           <button type="button" class="context-tool-btn font-dec-btn" onclick="adjustFontSize(-0.06)" title="எழுத்தளவைக் குறைக்க (A-)"><span style="font-size:0.9em; font-weight:700">A</span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:0.7em; height:0.7em; vertical-align:0.35em"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
@@ -1795,16 +1982,28 @@ function mountAppShell() {
         </button>
         <a href="help.html" class="context-tool-btn" title="உதவி &amp; வழிகாட்டல் (Help &amp; Support)">
           <span class="theme-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+      <div class="strip-footer-dock">
+        <a href="help.html" class="strip-dock-btn" data-tooltip="உதவி மையம்" title="உதவி &amp; வழிகாட்டல்">
+          <span class="strip-item-icon">${GKD_ICONS.question}</span>
+          <span class="strip-dock-label">உதவி மையம்</span>
         </a>
 
         <button type="button" class="context-profile-pill" onclick="openUserSettingsModal('profile')" title="பயனர் சுயவிவரம் &amp; அமைப்புகள்">
           <span class="pill-avatar" id="pillAvatarIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
           <span class="pill-name" id="pillUserName">சாதகர்</span>
           <span class="pill-badge" id="pillUserTier">தரம் 1-4</span>
+        <button type="button" class="strip-dock-btn" data-tooltip="அமைப்புகள்" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
+          <span class="strip-item-icon">${GKD_ICONS.settings}</span>
+          <span class="strip-dock-label">அமைப்புகள்</span>
+        </button>
+        <button type="button" class="strip-dock-btn profile-dock-btn" data-tooltip="சுயவிவரம்" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
+          <span class="strip-dock-avatar" id="stripAvatarIcon">${GKD_ICONS.user}</span>
+          <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
         </button>
       </div>
     </div>
   `;
+    `;
 
   // Attach inside header for unified sticky behavior
   const header = document.querySelector('header.site-header');
@@ -1812,7 +2011,15 @@ function mountAppShell() {
     header.appendChild(contextBar);
   } else {
     document.body.prepend(contextBar);
+    document.body.prepend(strip);
   }
+
+  // Restore strip expanded state on desktop if previously saved
+  if (window.innerWidth >= 992 && localStorage.getItem('GURUKULA_STRIP_EXPANDED') === 'true') {
+    expandLeftStrip();
+  }
+
+  highlightActiveSidebarGroup();
 
   // 4. User Profile & Settings Modal
   const modal = document.createElement('div');
@@ -2066,7 +2273,30 @@ if (document.readyState === 'loading') {
 }
 
 // Accordion support and Drawer auto-close on selection
+// Accordion support, click-to-expand collapsed strip, and Drawer auto-close
 document.addEventListener('click', (e) => {
+  const strip = document.getElementById('leftStripBar');
+  const clickedInStrip = strip && strip.contains(e.target);
+
+  if (clickedInStrip) {
+    const isCollapsed = !strip.classList.contains('open') && !strip.classList.contains('expanded');
+    
+    // When strip is in collapsed icon state, clicking ANY item in it expands the strip!
+    if (isCollapsed) {
+      if (!e.target.closest('#stripToggleBtn')) {
+        expandLeftStrip();
+        
+        // If they clicked an item with a sub-menu, also open that group
+        const group = e.target.closest('.strip-group');
+        if (group) {
+          e.preventDefault();
+          group.classList.add('open');
+          return;
+        }
+      }
+    }
+  }
+
   // 1. If clicked on a group header that has sub-items, TOGGLE THE ACCORDION!
   const subToggle = e.target.closest('.strip-item.strip-has-sub');
   if (subToggle) {
@@ -2095,15 +2325,19 @@ document.addEventListener('click', (e) => {
   }
 
   // 2. If clicked on an actual destination leaf link inside the drawer, close drawer
+  // 2. If clicked on an actual destination leaf link inside the drawer on mobile, close drawer
   const leafLink = e.target.closest('#leftStripBar .strip-sub-item, #leftStripBar .strip-item:not(.strip-has-sub)');
   if (leafLink) {
     closePrimaryMenu();
+  if (leafLink && window.innerWidth <= 768) {
+    collapseLeftStrip();
     return;
   }
 
   // 3. If clicked on backdrop, close drawer
   if (e.target.id === 'stripBackdrop') {
     closePrimaryMenu();
+    collapseLeftStrip();
     return;
   }
 });
@@ -2922,6 +3156,13 @@ function setDashboardWorkflow(workflowId) {
 
   // Update Breadcrumb
   const crumbEl = document.getElementById('dashCurrentCrumb');
+  const shortTitles = {
+    'curriculum': '12 வாழ்வியல் நிலைகள்',
+    'thirukkural': 'திருக்குறள் சினிமா அரங்கம்',
+    'hymns': 'திருமுறைகள் & சந்நிதிகள்',
+    'dinacharya': 'தினசரி ஆசிரம சாதனா'
+  };
+
   if (crumbEl) {
     const titles = {
       'curriculum': 'தடம் 1: குருகுலக் கல்வி நிலைகள் (Grades 1-12)',
@@ -2930,6 +3171,12 @@ function setDashboardWorkflow(workflowId) {
       'dinacharya': 'தடம் 4: தினசரி ஆசிரம சாதனா & காலச்சக்கரம்'
     };
     crumbEl.textContent = titles[workflowId] || workflowId;
+  }
+
+  // Update Top Bar Breadcrumb
+  const topBarCrumb = document.getElementById('topBarCurrentCrumb');
+  if (topBarCrumb) {
+    topBarCrumb.textContent = shortTitles[workflowId] || 'டாஷ்போர்டு';
   }
 
   // Save to localStorage

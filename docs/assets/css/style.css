@@ -3543,15 +3543,17 @@ body.font-mukta {
 /* -------------------------------------------------------------------------- */
 /* LEFT STRIP BAR (SIDEBAR DOCK)                                              */
 /* -------------------------------------------------------------------------- */
+/* PRIMARY SHELL LEFT STRIP BAR (COLLAPSED ICONS BY DEFAULT, EXPANDS ON CLICK)*/
 /* -------------------------------------------------------------------------- */
-/* PRIMARY 6-GROUP MENU DRAWER (COLLAPSED BY DEFAULT INTO TOP-LEFT HAMBURGER)  */
-/* -------------------------------------------------------------------------- */
-body {
-  padding-left: 0 !important;
+body.has-left-strip {
+  padding-left: 68px !important;
   transition: padding-left 0.25s ease;
 }
-body.strip-expanded {
-  padding-left: 0 !important;
+
+@media (max-width: 768px) {
+  body.has-left-strip {
+    padding-left: 0 !important;
+  }
 }
 
 .left-strip-bar {
@@ -3559,26 +3561,41 @@ body.strip-expanded {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 290px !important;
-  max-width: 85vw;
+  width: 68px;
   background: rgba(10, 15, 26, 0.98) !important;
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border-right: 1px solid rgba(56, 189, 248, 0.3) !important;
+  border-right: 1px solid rgba(56, 189, 248, 0.25) !important;
   z-index: 1200;
   display: flex;
   flex-direction: column;
-  transform: translateX(-100%); /* Collapsed completely into top-left hamburger */
-  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease;
-  box-shadow: none;
+  transform: translateX(0); /* Visible on screen as collapsed icon strip! */
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 2px 0 16px rgba(0, 0, 0, 0.5);
   user-select: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
+/* Expanded state on click */
+.left-strip-bar.expanded,
 .left-strip-bar.open,
-.left-strip-bar.mobile-open,
 body.primary-menu-open .left-strip-bar {
-  transform: translateX(0) !important;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.85), 0 0 25px rgba(56, 189, 248, 0.2) !important;
+  width: 290px !important;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.85), 0 0 25px rgba(56, 189, 248, 0.25) !important;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .left-strip-bar {
+    transform: translateX(-100%);
+    width: 290px !important;
+  }
+  .left-strip-bar.open,
+  .left-strip-bar.expanded,
+  body.primary-menu-open .left-strip-bar {
+    transform: translateX(0) !important;
+  }
 }
 
 .strip-header {
@@ -3586,10 +3603,84 @@ body.primary-menu-open .left-strip-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   flex-shrink: 0;
   background: rgba(14, 20, 36, 0.8);
+  overflow: hidden;
+  position: relative;
+}
+
+.left-strip-bar:not(.expanded):not(.open) .strip-header {
+  padding: 0 8px;
+  justify-content: center;
+}
+
+.left-strip-bar:not(.expanded):not(.open) .strip-brand-link {
+  display: none !important;
+}
+
+.left-strip-bar:not(.expanded):not(.open) .strip-brand-text,
+.left-strip-bar:not(.expanded):not(.open) .strip-brand-link div,
+.left-strip-bar:not(.expanded):not(.open) .strip-item-label,
+.left-strip-bar:not(.expanded):not(.open) .strip-sub-indicator,
+.left-strip-bar:not(.expanded):not(.open) .strip-sub-menu,
+.left-strip-bar:not(.expanded):not(.open) .strip-dock-label,
+.left-strip-bar:not(.expanded):not(.open) .strip-grades-mini-grid {
+  display: none !important;
+}
+
+.left-strip-bar:not(.expanded):not(.open) .strip-item {
+  justify-content: center;
+  padding: 12px 0;
+  width: 48px;
+  margin: 0 auto;
+}
+
+.left-strip-bar:not(.expanded):not(.open) .strip-dock-btn {
+  justify-content: center;
+  padding: 10px 0;
+  width: 48px;
+  margin: 0 auto;
+}
+
+.left-strip-bar:not(.expanded):not(.open) .strip-item-icon {
+  margin: 0 auto;
+}
+
+.left-strip-bar:not(.expanded):not(.open) .strip-toggle-btn {
+  margin: 0 auto;
+  width: 42px;
+  height: 42px;
+}
+
+.left-strip-bar:not(.expanded):not(.open) .strip-item[data-tooltip]::after,
+.left-strip-bar:not(.expanded):not(.open) .strip-dock-btn[data-tooltip]::after,
+.left-strip-bar:not(.expanded):not(.open) .strip-toggle-btn[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(15, 23, 42, 0.96);
+  color: #f8fafc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  z-index: 1300;
+}
+
+.left-strip-bar:not(.expanded):not(.open) .strip-item[data-tooltip]:hover::after,
+.left-strip-bar:not(.expanded):not(.open) .strip-dock-btn[data-tooltip]:hover::after,
+.left-strip-bar:not(.expanded):not(.open) .strip-toggle-btn[data-tooltip]:hover::after {
+  opacity: 1;
 }
 
 .strip-brand-link {
@@ -3597,6 +3688,7 @@ body.primary-menu-open .left-strip-bar {
   align-items: center;
   gap: 12px;
   text-decoration: none;
+  min-width: 0;
 }
 
 .strip-emblem {
@@ -3612,16 +3704,14 @@ body.primary-menu-open .left-strip-bar {
   font-weight: 700;
   color: #f8fafc;
   white-space: nowrap;
-  opacity: 1 !important;
-  pointer-events: auto !important;
 }
 
 .strip-toggle-btn {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #cbd5e1;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -5471,45 +5561,131 @@ header.site-header {
 }
 
 /* -------------------------------------------------------------------------- */
-/* TOP BAR: NO BACKGROUND + ALWAYS-VISIBLE HAMBURGER + LAYOUT FIXES           */
+/* CONTEXT TOP BAR: BREADCRUMBS BAR (TOP BAR OF THE SHELL)                     */
 /* -------------------------------------------------------------------------- */
 .context-top-bar,
 header.site-header {
-  position: relative !important;
-  background: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1100;
+  background: rgba(10, 16, 28, 0.94) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45) !important;
+  width: 100%;
 }
+
 .context-bar-container,
 .header-container {
-  padding: 10px 18px 6px 104px !important;
-  flex-wrap: wrap;
-  min-height: 52px;
+  padding: 8px 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  min-height: 54px;
 }
-.primary-hamburger-btn {
-  position: fixed !important;
-  top: 10px;
-  left: 14px;
-  z-index: 1150;
-  padding: 8px 12px;
-}
-.primary-hamburger-btn .hb-label { display: none; }
-.context-tabs-nav {
-  flex: 1 1 320px;
+
+.context-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   min-width: 0;
-  justify-content: flex-start !important;
+  flex: 1;
 }
+
+/* Mobile Hamburger Button (Only visible on screens <= 768px) */
+.mobile-hamburger-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 8px;
+  color: #38bdf8;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+.mobile-hamburger-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: #38bdf8;
+}
+
+@media (max-width: 768px) {
+  .mobile-hamburger-btn {
+    display: inline-flex !important;
+  }
+}
+
+/* Context Breadcrumbs as the Top Bar Navigation */
+.context-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #94a3b8;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.context-breadcrumbs .crumb-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  flex-shrink: 0;
+}
+.context-breadcrumbs .crumb-link:hover {
+  color: #38bdf8;
+}
+.context-breadcrumbs .crumb-home svg {
+  width: 17px;
+  height: 17px;
+  color: #38bdf8;
+}
+.context-breadcrumbs .crumb-sep {
+  color: rgba(148, 163, 184, 0.45);
+  font-size: 0.85rem;
+  user-select: none;
+  flex-shrink: 0;
+}
+.context-breadcrumbs .crumb-current {
+  color: #38bdf8;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
 .header-right-tools {
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
+
+@media (max-width: 768px) {
+  .context-bar-container,
+  .header-container {
+    padding: 8px 14px !important;
+  }
+  .context-search-wrapper {
+    display: none;
+  }
+}
+
 .course-sidebar,
 .dedicated-sub-sidebar {
-  top: 16px !important;
-  max-height: calc(100vh - 32px) !important;
+  top: 70px !important;
+  max-height: calc(100vh - 90px) !important;
 }
 .course-main-column,
 .course-layout-container,
@@ -5521,11 +5697,6 @@ main.main-content {
 main.main-content img,
 main.main-content video,
 main.main-content svg { max-width: 100%; height: auto; }
-@media (max-width: 991px) {
-  .context-bar-container,
-  .header-container { padding-left: 84px !important; }
-  .context-search-wrapper { display: none; }
-}
 
 /* -------------------------------------------------------------------------- */
 /* AMBIENT TANPURA DRONE & UNIVERSAL SITE-WIDE SEARCH MODAL                    */
