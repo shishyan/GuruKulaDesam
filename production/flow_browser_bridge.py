@@ -5,13 +5,15 @@ Automates generating Veo video clips directly on flow.google.com using your
 8,686 Google Flow account credits, and automatically triggers master film assembly.
 
 Features:
-- Launches Chrome using your persistent profile so you stay signed in.
+- Launches native Chrome with your persistent profile (bypassing bot detection).
+- Connects via Playwright CDP.
 - Feeds Scene 1, Scene 2, and Scene 3 prompts from production/google_flow_prompts/.
-- Downloads the rendered clips directly to production/google_flow_renders/<TRACK_ID>/.
+- Auto-approves credit deductions ("Always approve").
+- Downloads and extracts generated MP4 video scenes to production/google_flow_renders/<TRACK_ID>/.
 - Calls google_flow_engine.py to assemble master films with sacred framing and audio sync.
 
 Usage:
-  # Launch browser to sign in or inspect flow.google.com:
+  # Launch Chrome to inspect flow.google.com:
   python production/flow_browser_bridge.py --open
 
   # Generate for a specific track:
@@ -19,13 +21,19 @@ Usage:
 
   # Generate for all tracks in a category:
   python production/flow_browser_bridge.py --category vinayagar
+
+  # Generate for all tracks in the pending manifest:
+  python production/flow_browser_bridge.py --all --limit 10
 """
 
 import os
 import sys
 import time
 import json
+import zipfile
+import shutil
 import argparse
+import subprocess
 from pathlib import Path
 
 if hasattr(sys.stdout, 'reconfigure'):
@@ -39,69 +47,150 @@ from google_flow_engine import parse_blueprint, ensure_audio, build_master_film,
 FLOW_URL = "https://flow.google.com"
 CHROME_PROFILE_DIR = ROOT / "production" / "browser_profile"
 CHROME_PROFILE_DIR.mkdir(parents=True, exist_ok=True)
+CHROME_EXE = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+CDP_PORT = 9222
 
-def get_browser_context(playwright, headless=False):
-    """Launches or connects to Chrome with a persistent user data profile."""
-    # Attempt to connect to an already running remote debugging Chrome instance
-    try:
-        browser = playwright.chromium.connect_over_cdp("http://localhost:9222")
-        print("[Browser Bridge] Attached to existing Chrome on port 9222.")
-        return browser.contexts[0]
-    except Exception:
-        pass
+def kill_browser_profile_processes():
+    """Kills any running Chrome processes using the browser_profile directory."""
+    ps_cmd = "Get-Process chrome -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*browser_profile*' } | Stop-Process -Force"
+    subprocess.run(["powershell", "-Command", ps_cmd], capture_output=True)
+    time.sleep(1)
 
-    # Launch Chrome with persistent profile
-    print(f"[Browser Bridge] Launching Chrome (Persistent Profile: {CHROME_PROFILE_DIR.name})...")
-    context = playwright.chromium.launch_persistent_context(
-        user_data_dir=str(CHROME_PROFILE_DIR),
-        channel="chrome",
-        headless=headless,
-        viewport={"width": 1440, "height": 900},
-        args=[
-            "--disable-blink-features=AutomationControlled",
-            "--no-first-run",
-            "--no-default-browser-check",
-        ]
-    )
-    return context
+def launch_native_chrome():
+    """Launches native Chrome with remote debugging and persistent user data."""
+    kill_browser_profile_processes()
+    cmd = [
+        CHROME_EXE,
+        f"--user-data-dir={CHROME_PROFILE_DIR}",
+        f"--remote-debugging-port={CDP_PORT}",
+        "--no-first-run",
+        "--no-default-browser-check",
+        FLOW_URL
+    ]
+    proc = subprocess.Popen(cmd)
+    time.sleep(5)
+    return proc
 
-def open_session(headless=False):
-    """Opens flow.google.com for the user to sign in or check credit balance."""
-    from playwright.sync_api import sync_playwright
-
+def open_session():
+    """Opens flow.google.com for the user to inspect or sign in."""
     print("=" * 80)
     print("OPENING GOOGLE FLOW (flow.google.com)")
     print("=" * 80)
-    print("Please log in with your Google account that has the 8,686 credits.")
-    print("Once logged in, your session is saved in production/browser_profile/.\n")
+    print("Launching native Chrome with your Ultra profile...\n")
+    proc = launch_native_chrome()
+    print("Chrome is open at flow.google.com. Press Ctrl+C when finished.")
+    try:
+        while True:
+            time.sleep(2)
+    except KeyboardInterrupt:
+        print("\nClosing Chrome session...")
+    finally:
+        kill_browser_profile_processes()
 
-    with sync_playwright() as p:
-        context = get_browser_context(p, headless=headless)
-        page = context.new_page() if not context.pages else context.pages[0]
-        page.goto(FLOW_URL)
+def wait_for_assistant_and_approve(page, timeout_sec=40):
+    """Waits for assistant response and clicks 'Always approve' or 'Approve' if prompted."""
+    print("[Flow] Waiting for assistant response / approval options...")
+    start_t = time.time()
+    while time.time() - start_t < timeout_sec:
+        page.wait_for_timeout(2000)
         
-        print("\nBrowser is open at flow.google.com.")
-        print("Keep this window open or log in, then press Ctrl+C or enter when done.")
-        try:
-            while True:
-                time.sleep(2)
-        except KeyboardInterrupt:
-            print("\nSession saved. Closing browser...")
-        finally:
-            context.close()
+        # Check Always approve
+        always_btn = page.locator("text='Always approve'").all()
+        if always_btn:
+            print("[Flow] Clicking 'Always approve'...")
+            always_btn[-1].click()
+            page.wait_for_timeout(3000)
+            return True
+            
+        # Check regular Approve
+        approve_btn = page.locator("button:has-text('Approve'), [role='button']:has-text('Approve')").all()
+        if approve_btn:
+            print("[Flow] Clicking 'Approve'...")
+            approve_btn[-1].click()
+            page.wait_for_timeout(3000)
+            return True
+            
+        # Check if generation already started (Stop button active)
+        stop_btn = page.locator("button[aria-label='Stop'], button:has-text('stop')")
+        if stop_btn.count() > 0 and stop_btn.is_visible():
+            # Still generating/replying
+            continue
 
-def generate_track_on_flow(track_id: str, headless=False):
-    """Automates generating scenes for a track on flow.google.com."""
+    return False
+
+def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240):
+    """Monitors the project workspace until the video completes, then downloads and extracts the MP4."""
+    print(f"[Flow] Monitoring video render (up to {max_wait_sec}s)...")
+    start_t = time.time()
+    
+    while time.time() - start_t < max_wait_sec:
+        page.wait_for_timeout(6000)
+        elapsed = int(time.time() - start_t)
+        
+        # Check for Download batch button on the video card
+        dl_btn = page.locator("button[aria-label*='Download' i]").first
+        if dl_btn.count() > 0 and dl_btn.is_visible():
+            print(f"[Flow] Video ready! Initiating download (Elapsed: {elapsed}s)...")
+            temp_zip = dest_mp4_path.parent / f"temp_{int(time.time())}.zip"
+            
+            try:
+                with page.expect_download(timeout=30000) as download_info:
+                    dl_btn.click()
+                download = download_info.value
+                download.save_as(str(temp_zip))
+                
+                # Check if it's a zip or direct mp4
+                with open(temp_zip, "rb") as f:
+                    header = f.read(16)
+                    
+                extracted_success = False
+                if header.startswith(b"PK"):
+                    with zipfile.ZipFile(temp_zip, "r") as z:
+                        mp4_files = [m for m in z.namelist() if m.endswith(".mp4")]
+                        if mp4_files:
+                            extracted_path = z.extract(mp4_files[0], dest_mp4_path.parent)
+                    if dest_mp4_path.exists():
+                        dest_mp4_path.unlink()
+                    shutil.move(extracted_path, dest_mp4_path)
+                    print(f"[Flow] SUCCESS: Extracted {dest_mp4_path.name} ({dest_mp4_path.stat().st_size} bytes)")
+                    extracted_success = True
+                elif b"ftyp" in header:
+                    if dest_mp4_path.exists():
+                        dest_mp4_path.unlink()
+                    shutil.move(temp_zip, dest_mp4_path)
+                    print(f"[Flow] SUCCESS: Saved direct MP4 {dest_mp4_path.name} ({dest_mp4_path.stat().st_size} bytes)")
+                    extracted_success = True
+                
+                try:
+                    temp_zip.unlink(missing_ok=True)
+                except Exception:
+                    pass
+
+                if extracted_success:
+                    return True
+            except Exception as e:
+                print(f"[Flow] Download error: {e}")
+                try:
+                    temp_zip.unlink(missing_ok=True)
+                except Exception:
+                    pass
+
+        print(f"[Flow] Waiting for render... {elapsed}s elapsed")
+
+    print("[Flow] Timed out waiting for video render.")
+    return False
+
+def generate_track_on_flow(track_id: str):
+    """Automates generating scenes for a track on flow.google.com and builds the master film."""
     from playwright.sync_api import sync_playwright
 
-    # Find blueprint
     matches = list(PROMPTS_DIR.glob(f"*/{track_id}*.md"))
     if not matches:
         print(f"Error: No blueprint found for track {track_id}")
-        return
+        return False
 
     bp = parse_blueprint(matches[0])
-    print("=" * 80)
+    print("\n" + "=" * 80)
     print(f"GOOGLE FLOW AUTOMATION: {bp['title']}")
     print(f"Track ID: {bp['track_id']} | Category: {bp['category']} | Scenes: {len(bp['scenes'])}")
     print("=" * 80)
@@ -109,72 +198,123 @@ def generate_track_on_flow(track_id: str, headless=False):
     track_dir = FLOW_RENDERS_DIR / bp['track_id']
     track_dir.mkdir(parents=True, exist_ok=True)
 
-    with sync_playwright() as p:
-        context = get_browser_context(p, headless=headless)
-        page = context.new_page() if not context.pages else context.pages[0]
-        page.goto(FLOW_URL)
-        page.wait_for_load_state("networkidle")
+    # Check which scenes are already rendered
+    scenes_to_render = []
+    for sc in bp['scenes']:
+        sc_num = sc['scene_num']
+        out_clip = track_dir / f"scene_{sc_num:02d}.mp4"
+        if out_clip.exists() and out_clip.stat().st_size > 500_000:
+            print(f"[Cached] Scene {sc_num} already exists: {out_clip.name} ({out_clip.stat().st_size} bytes)")
+        else:
+            scenes_to_render.append(sc)
 
-        print(f"[Flow] Page title: {page.title()}")
-        print("[Flow] Navigating to studio project / prompt interface...")
+    if not scenes_to_render:
+        print("[All Scenes Cached] Proceeding directly to master film assembly!")
+    else:
+        # Launch Chrome and automate
+        proc = launch_native_chrome()
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.connect_over_cdp(f"http://localhost:{CDP_PORT}")
+                context = browser.contexts[0]
+                page = context.pages[0] if context.pages else context.new_page()
+                page.goto(FLOW_URL)
+                page.wait_for_timeout(5000)
 
-        # Each scene generation
-        scene_clips = []
-        for sc in bp['scenes']:
-            sc_num = sc['scene_num']
-            out_clip = track_dir / f"scene_{sc_num:02d}.mp4"
-            if out_clip.exists() and out_clip.stat().st_size > 500_000:
-                print(f"[Cached] Scene {sc_num} already exists: {out_clip.name}")
-                scene_clips.append(out_clip)
-                continue
+                # Click New project
+                new_proj = page.locator("button:has-text('New project'), [role='button']:has-text('New project')").first
+                if new_proj.count() > 0 and new_proj.is_visible():
+                    print("[Flow] Creating fresh project...")
+                    new_proj.click()
+                    page.wait_for_timeout(6000)
 
-            full_prompt = f"{sc['prompt']} Exclusions: {sc.get('exclusions', '')} {bp['continuity'].get('Hard Exclusions', '')}"
-            print(f"\n[Scene {sc_num}] Submitting prompt to Google Flow...")
-            print(f"Prompt: {full_prompt[:120]}...")
+                # Process each scene
+                for sc in scenes_to_render:
+                    sc_num = sc['scene_num']
+                    out_clip = track_dir / f"scene_{sc_num:02d}.mp4"
+                    prompt = f"Devotional cinematic 16:9 photorealistic video: {sc['prompt']} Exclusions: {sc.get('exclusions', '')} {bp['continuity'].get('Hard Exclusions', '')}"
 
-            # Look for prompt input box on flow.google.com
-            # Google Flow typically uses a textarea, contenteditable div, or input[type='text']
-            prompt_input = page.locator("textarea, [contenteditable='true'], input[placeholder*='prompt' i], input[placeholder*='Describe' i]").first
-            if prompt_input.count() > 0:
-                prompt_input.fill(full_prompt)
-                time.sleep(1)
-                
-                # Click Generate button
-                gen_button = page.locator("button:has-text('Generate'), button:has-text('Create'), button[aria-label*='Generate' i]").first
-                if gen_button.count() > 0:
-                    gen_button.click()
-                    print(f"[Scene {sc_num}] Generation initiated! Waiting for video render...")
-                    
-                    # Monitor for video element or download button
-                    # Wait for video generation to complete
-                    page.wait_for_timeout(60000)
-            else:
-                print("[Flow UI Notice] Prompt input box selector needs direct inspection. Please use --open to log in.")
+                    print(f"\n[Scene {sc_num}] Submitting prompt...")
+                    print(f"Prompt: {prompt[:140]}...")
 
-        context.close()
+                    editor = page.locator("div.ProseMirror").first
+                    if editor.count() == 0:
+                        print("[Flow Error] ProseMirror editor not found.")
+                        break
+
+                    editor.click()
+                    page.wait_for_timeout(500)
+                    page.keyboard.type(prompt, delay=8)
+                    page.wait_for_timeout(1000)
+
+                    gen_btn = page.locator("button[aria-label='Start generation']").first
+                    if gen_btn.is_enabled():
+                        gen_btn.click()
+                        print(f"[Scene {sc_num}] Generation triggered. Waiting for approval...")
+                        wait_for_assistant_and_approve(page)
+                        success = wait_and_download_video(page, out_clip)
+                        if not success:
+                            print(f"[Flow Warning] Failed to render Scene {sc_num}.")
+                    else:
+                        print(f"[Flow Error] Start generation button was not enabled.")
+
+                browser.close()
+        finally:
+            kill_browser_profile_processes()
 
     # Master film assembly
     existing_clips = sorted(track_dir.glob("scene_*.mp4"))
     if existing_clips:
+        print(f"\n[Assembly] Found {len(existing_clips)} scenes for {bp['track_id']}.")
         audio_path = ensure_audio(bp['track_id'])
         out_film = RENDERS_DIR / f"{bp['category'].lower()}_{bp['track_id']}_master.mp4"
         build_master_film(bp, existing_clips, audio_path, out_film)
+        return True
+    else:
+        print(f"[Assembly Error] No scenes available for {bp['track_id']}.")
+        return False
 
 def main():
-    parser = argparse.ArgumentParser(description="Google Flow (flow.google.com) Browser Automation Bridge")
-    parser.add_argument("--open", action="store_true", help="Open Chrome to log in to flow.google.com and verify credits")
-    parser.add_argument("--track", type=str, help="Process a specific track by Track ID on flow.google.com")
-    parser.add_argument("--category", type=str, help="Process a category of tracks on flow.google.com")
-    parser.add_argument("--headless", action="store_true", help="Run browser in headless mode")
+    parser = argparse.ArgumentParser(description="Google Flow Browser Automation Bridge")
+    parser.add_argument("--open", action="store_true", help="Open Chrome to inspect flow.google.com")
+    parser.add_argument("--track", type=str, help="Process a specific track by Track ID")
+    parser.add_argument("--category", type=str, help="Process a category of tracks")
+    parser.add_argument("--all", action="store_true", help="Process all pending tracks from the manifest")
+    parser.add_argument("--limit", type=int, default=5, help="Maximum number of tracks to process")
 
     args = parser.parse_args()
 
     if args.open:
-        open_session(headless=args.headless)
+        open_session()
         return
 
     if args.track:
-        generate_track_on_flow(args.track, headless=args.headless)
+        generate_track_on_flow(args.track)
+        return
+
+    if args.category or args.all:
+        manifest_file = ROOT / "production" / "pending_google_flow_manifest.json"
+        if not manifest_file.exists():
+            print("Error: Manifest file not found.")
+            return
+
+        with open(manifest_file, "r", encoding="utf-8") as f:
+            manifest = json.load(f)
+
+        pending = manifest.get("pending_tracks", [])
+        if args.category:
+            pending = [t for t in pending if t.get("category", "").lower() == args.category.lower()]
+
+        print(f"Total matching pending tracks: {len(pending)}. Processing up to {args.limit}...")
+        count = 0
+        for item in pending:
+            if count >= args.limit:
+                break
+            track_id = item["track_id"]
+            ok = generate_track_on_flow(track_id)
+            if ok:
+                count += 1
+                time.sleep(5)
         return
 
     parser.print_help()
