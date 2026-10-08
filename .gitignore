@@ -53,3 +53,6 @@ renders/
 production/*.mp4
 production/temp*/
 source/youtube/
+production/visuals/thirukkural/*-old*/
+production/visuals/thirukkural/*-bak*/
+

@@ -45,14 +45,9 @@ def test_headless_pages():
         file_path = os.path.normpath(os.path.join(docs_dir, page))
         file_url = f"file:///{file_path.replace(os.sep, '/')}"
         
-        import tempfile
-        temp_dir = os.path.join(tempfile.gettempdir(), f"gkd_chrome_{os.getpid()}")
         cmd = [
             chrome,
             '--headless=new',
-            '--disable-gpu',
-            '--no-sandbox',
-            f'--user-data-dir={temp_dir}',
             '--dump-dom',
             '--enable-logging=stderr',
             '--v=1',

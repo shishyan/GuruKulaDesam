@@ -25,44 +25,18 @@ FFMPEG = "C:/ffmpeg/bin/ffmpeg.exe"
 FFPROBE = "C:/ffmpeg/bin/ffprobe.exe"
 RENDERS_DIR = ROOT / "renders" / "releases"
 
+from build_any_chapter_cinematic import CHAPTER_REGISTRY
+
 CHAPTERS = {
-    26: {
-        "title": "Pulaal Unnaamai (26)",
-        "audio_id": "h2q-ADrbBc4",
-        "video": RENDERS_DIR / "adhikaram_26_pulaal_unnaamai_cinematic.mp4",
-        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "26-pulaal-unnaamai",
-    },
-    27: {
-        "title": "Thavam (27)",
-        "audio_id": "IEk-wwY3rC8",
-        "video": RENDERS_DIR / "adhikaram_27_thavam_cinematic.mp4",
-        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "27-thavam",
-    },
-    52: {
-        "title": "Therinthu Vinaiyaadal (52)",
-        "audio_id": "5uRYFxhT32k",
-        "video": RENDERS_DIR / "adhikaram_52_therinthu_vinaiyaadal_cinematic.mp4",
-        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "52-therinthu-vinaiyaadal",
-    },
-    54: {
-        "title": "Pochchaavaamai (54)",
-        "audio_id": "O0hASl4BS2c",
-        "video": RENDERS_DIR / "adhikaram_54_pochchaavaamai_cinematic.mp4",
-        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "54-pochchaavaamai",
-    },
-    57: {
-        "title": "Veruvantha Seyyaamai (57)",
-        "audio_id": "hjcH8zbEleE",
-        "video": RENDERS_DIR / "adhikaram_57_veruvantha_seyyaamai_cinematic.mp4",
-        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "57-veruvantha-seyyaamai",
-    },
-    61: {
-        "title": "Madiyinmai (61)",
-        "audio_id": "GfGlO3RQuik",
-        "video": RENDERS_DIR / "adhikaram_61_madiyinmai_cinematic.mp4",
-        "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "61-madiyinmai",
-    },
+    ch: {
+        "title": f"{cfg['title']} ({ch})",
+        "audio_id": cfg["audio_id"],
+        "video": cfg["output"],
+        "visual_dir": cfg["visual_dir"],
+    }
+    for ch, cfg in CHAPTER_REGISTRY.items()
 }
+
 
 def probe_file(file_path):
     cmd = [

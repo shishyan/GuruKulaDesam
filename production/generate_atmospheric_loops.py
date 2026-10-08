@@ -43,17 +43,19 @@ def generate_drizzle_loop():
     print(f"Generating {out_path.name}...")
     rng = random.Random(101)
     
-    # 500 fine, delicate droplets with slow, steady drift
+    # 850 fine, glistening droplets with gentle drift
     drops = []
-    for _ in range(500):
+    for _ in range(850):
         x = rng.uniform(-40, W + 40)
-        cycles = rng.randint(2, 6) # slower than rain
-        speed = cycles * (H + 30) / DURATION_SEC
-        length = rng.uniform(4, 10)
-        opacity = rng.uniform(0.15, 0.45)
+        cycles = rng.randint(4, 9) # natural gentle drizzle speed
+        speed = cycles * (H + 40) / DURATION_SEC
+        length = rng.uniform(8, 18)
+        opacity = rng.uniform(0.35, 0.80)
+        width = 1 if rng.random() < 0.75 else 2
         initial_y = rng.uniform(0, H)
-        slant = rng.uniform(-0.8, -0.2)
-        drops.append((x, initial_y, speed, length, opacity, slant))
+        slant = rng.uniform(-1.2, -0.4)
+        drops.append((x, initial_y, speed, length, opacity, width, slant))
+
 
     proc = create_video_pipe(out_path)
     try:
@@ -62,11 +64,11 @@ def generate_drizzle_loop():
             img = Image.new("L", (W, H), 0)
             draw = ImageDraw.Draw(img)
             
-            for x, initial_y, speed, length, opacity, slant in drops:
-                cur_y = (initial_y + speed * t) % (H + 30) - 15
-                cur_x = x + slant * (cur_y / H * 15)
+            for x, initial_y, speed, length, opacity, width, slant in drops:
+                cur_y = (initial_y + speed * t) % (H + 40) - 20
+                cur_x = x + slant * (cur_y / H * 20)
                 val = int(255 * opacity)
-                draw.line([(cur_x, cur_y), (cur_x + slant, cur_y + length)], fill=val, width=1)
+                draw.line([(cur_x, cur_y), (cur_x + slant * 1.5, cur_y + length)], fill=val, width=width)
                 
             blurred = img.filter(ImageFilter.GaussianBlur(0.3))
             arr = np.asarray(blurred, dtype=np.uint8)

@@ -41,7 +41,7 @@ CHAPTER_REGISTRY = {
         "audio_id": "IEk-wwY3rC8",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "27-thavam",
         "output": RENDERS_DIR / "adhikaram_27_thavam_cinematic.mp4",
-        "atmosphere": "snow", # sacred Himalayan / mountain stillness
+        "atmosphere": "drizzle", # sacred mountain mist / drizzle
     },
     52: {
         "title": "Therinthu Vinaiyaadal (தெரிந்து வினையாடல்)",
@@ -62,7 +62,7 @@ CHAPTER_REGISTRY = {
         "audio_id": "hjcH8zbEleE",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "57-veruvantha-seyyaamai",
         "output": RENDERS_DIR / "adhikaram_57_veruvantha_seyyaamai_cinematic.mp4",
-        "atmosphere": "flowers", # floating jasmine/lotus petals over righteous celebration
+        "atmosphere": "drizzle", # gentle morning mist & drizzle over righteous assembly
     },
     61: {
         "title": "Madiyinmai (மடியின்மை)",
@@ -76,7 +76,7 @@ CHAPTER_REGISTRY = {
         "audio_id": "v_dsHTOvKP8",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "05-ilvaazhkkai",
         "output": RENDERS_DIR / "adhikaram_05_ilvaazhkkai_cinematic.mp4",
-        "atmosphere": "flowers", # sacred floral garland / domestic serenity
+        "atmosphere": "drizzle", # gentle compassionate morning mist/drizzle
     },
     8: {
         "title": "Anbudaimai (அன்புடைமை)",
@@ -118,7 +118,7 @@ CHAPTER_REGISTRY = {
         "audio_id": "mCwNR1Bytj4",
         "visual_dir": ROOT / "production" / "visuals" / "thirukkural" / "39-iraimaatchi",
         "output": RENDERS_DIR / "adhikaram_39_iraimaatchi_cinematic.mp4",
-        "atmosphere": "flowers", # ceremonial royal courtyard & coronation blossoms
+        "atmosphere": "drizzle", # ceremonial royal courtyard mist
     },
     40: {
         "title": "Kalvi (கல்வி)",
@@ -200,6 +200,38 @@ def build_shot_filter(move: str, n_frames: int) -> str:
     
     return f"scale=2880:1620:force_original_aspect_ratio=increase,crop=2880:1620,{zp},scale=1280:720:flags=lanczos,setsar=1,format=yuv420p"
 
+NEGATIVE_WORDS = [
+    'tyrant', 'despot', 'cruel', 'oppress', 'evil_reign',
+    'wrathful', 'unchecked_passions', 'pride_wrath_lust',
+    'sloth', 'indolen', 'slothful',
+    'overgrown_granite', 'callous_tyrant', 'deserted_tyrant',
+    'corrupt_companion', 'vile_friend', 'base_embracing',
+    'brash_fool', 'glutton_feasting',
+    'harsh_abuse', 'abusive',
+    'slaughterhouse', 'butcher_blade',
+    'broken_plow', 'cold_ashes', 'neglected_hearth', 'careless_householder_leaving',
+    'abandoned_hearth', 'flickering_lamp_neglected'
+]
+
+POSITIVE_OVERRIDE = [
+    'embracing_former', 'forgiving', 'conqueror', 'absorbing', 'restoring',
+    'pardoning', 'staying_his_wrath', 'unscathed', 'avert_decay',
+    'never_decays', 'undaunted', 'courage', 'refuses', 'refusing',
+    'banishing_corrupt', 'burning_midnight', 'refusing_to_speak_cruel',
+    'swallowing_his_own_anger', 'humble_householder_absorbing',
+    'king_punishing_corrupt', 'striking_down'
+]
+
+def is_negative_scene(filename: str) -> bool:
+    low = filename.lower()
+    for p in POSITIVE_OVERRIDE:
+        if p in low:
+            return False
+    for n in NEGATIVE_WORDS:
+        if n in low:
+            return True
+    return False
+
 def render_chapter(ch_num: int):
     if ch_num not in CHAPTER_REGISTRY:
         raise ValueError(f"Unknown chapter {ch_num}")
@@ -215,9 +247,21 @@ def render_chapter(ch_num: int):
     shot_dur = dur / n_shots
     n_frames = max(24, int(round(shot_dur * 24)))
     
+    # Atmospheric configuration: drizzle / rain
+    atmo_type = cfg.get("atmosphere", "drizzle")
+    atmo_configs = {
+        "rain": {"file": ROOT / "production" / "rain_composite_loop.mp4", "opacity": 0.28},
+        "drizzle": {"file": ROOT / "production" / "drizzle_composite_loop.mp4", "opacity": 0.32},
+        "snow": {"file": ROOT / "production" / "snow_composite_loop.mp4", "opacity": 0.20},
+    }
+    atmo = atmo_configs.get(atmo_type, atmo_configs["drizzle"])
+    atmo_file = atmo["file"]
+    atmo_opacity = atmo["opacity"]
+
     print("=" * 70, flush=True)
     print(f"BUILDING CHAPTER {ch_num}: {cfg['title']}", flush=True)
     print(f"Total Duration: {dur:.2f}s | Unique Artworks: {n_shots} | Pacing: {shot_dur:.2f}s/shot", flush=True)
+    print(f"Atmospheric Mood: {atmo_type.upper()} ({atmo_file.name}, opacity={atmo_opacity}) [Scene-Aware]", flush=True)
     print("=" * 70, flush=True)
     
     temp_dir = ROOT / "renders" / f"temp_ch{ch_num}_cinematic"
@@ -231,21 +275,44 @@ def render_chapter(ch_num: int):
         
         # Re-render if shot doesn't exist, is corrupt, or if source image is newer
         if out_shot.exists() and out_shot.stat().st_size > 10000:
-            if out_shot.stat().st_mtime >= img.stat().st_mtime:
+            if out_shot.stat().st_mtime >= img.stat().st_mtime and out_shot.stat().st_mtime >= atmo_file.stat().st_mtime:
                 continue
             
-        vf = build_shot_filter(move, n_frames)
-        cmd = [
-            FFMPEG, "-y", "-loop", "1", "-i", str(img),
-            "-vf", vf,
-            "-t", f"{shot_dur:.4f}",
-            "-r", "24",
-            "-c:v", "libx264", "-preset", "fast", "-crf", "18",
-            "-pix_fmt", "yuv420p",
-            str(out_shot)
-        ]
+        is_neg = is_negative_scene(img.name)
+        vf_base = build_shot_filter(move, n_frames)
+
+        if not is_neg:
+            # Positive character/scene: blessed with divine rain/drizzle
+            fc = f"[0:v]{vf_base}[b];[1:v]format=gbrp[a];[b]format=gbrp[bg];[bg][a]blend=all_mode=screen:all_opacity={atmo_opacity},format=yuv420p[v]"
+            cmd = [
+                FFMPEG, "-y",
+                "-loop", "1", "-i", str(img),
+                "-stream_loop", "-1", "-i", str(atmo_file),
+                "-filter_complex", fc,
+                "-map", "[v]",
+                "-t", f"{shot_dur:.4f}",
+                "-r", "24",
+                "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+                "-pix_fmt", "yuv420p",
+                str(out_shot)
+            ]
+            tag = "🌧️ [+DRIZZLE]"
+        else:
+            # Negative character/scene (evil reign, tyrant, wrath, sloth): NO RAIN
+            cmd = [
+                FFMPEG, "-y",
+                "-loop", "1", "-i", str(img),
+                "-vf", vf_base,
+                "-t", f"{shot_dur:.4f}",
+                "-r", "24",
+                "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+                "-pix_fmt", "yuv420p",
+                str(out_shot)
+            ]
+            tag = "🚫 [NO RAIN]"
+
         subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
-        print(f"  [Shot {i+1:02d}/{n_shots:02d}] {move:<14} -> {img.name} ({shot_dur:.2f}s)", flush=True)
+        print(f"  [Shot {i+1:02d}/{n_shots:02d}] {move:<14} -> {img.name} ({shot_dur:.2f}s) {tag}", flush=True)
     
     concat_list = temp_dir / "concat_list.txt"
     with open(concat_list, "w", encoding="utf-8") as f:
@@ -261,48 +328,59 @@ def render_chapter(ch_num: int):
     ]
     subprocess.run(cmd_concat, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
     
-    # Select atmospheric layer based on chapter mood (default: rain)
-    atmo_type = cfg.get("atmosphere", "rain")
-    atmo_configs = {
-        "rain": {"file": ROOT / "production" / "rain_composite_loop.mp4", "opacity": 0.20},
-        "drizzle": {"file": ROOT / "production" / "drizzle_composite_loop.mp4", "opacity": 0.22},
-        "snow": {"file": ROOT / "production" / "snow_composite_loop.mp4", "opacity": 0.18},
-        "flowers": {"file": ROOT / "production" / "flowers_composite_loop.mp4", "opacity": 0.24},
-    }
-    atmo = atmo_configs.get(atmo_type, atmo_configs["rain"])
-    atmo_file = atmo["file"]
-    atmo_opacity = atmo["opacity"]
-    
     smoke = ROOT / "production" / "smoke_composite_loop.mp4"
     audio_path = ROOT / "source" / "youtube" / f"{cfg['audio_id']}.m4a"
     out_master = cfg["output"]
     
-    print(f"Atmospheric mood layer: {atmo_type.upper()} ({atmo_file.name}, opacity={atmo_opacity}) + DHOOPAM SMOKE", flush=True)
+    foreground_overlay = ROOT / "production" / "sacred_lamp_dhoopa_overlay_1280x720.png"
+    has_foreground = foreground_overlay.exists()
     
-    filter_complex = (
-        "[0:v]format=gbrp[base];"
-        f"[1:v]format=gbrp[atmo];"
-        "[2:v]format=gray,lut='val*0.15',format=gbrp[smoke];"
-        f"[base][atmo]blend=all_mode=screen:all_opacity={atmo_opacity}[v1];"
-        "[v1][smoke]blend=all_mode=screen:all_opacity=0.10,format=yuv420p[vout]"
-    )
+    print(f"Compositing final film: DHOOPAM SMOKE + SACRED CORNER LAMPS -> {out_master.name}...", flush=True)
     
-    cmd_composite = [
-        FFMPEG, "-y",
-        "-i", str(concat_video),
-        "-stream_loop", "-1", "-i", str(atmo_file),
-        "-stream_loop", "-1", "-i", str(smoke),
-        "-i", str(audio_path),
-        "-filter_complex", filter_complex,
-        "-map", "[vout]",
-        "-map", "3:a",
-        "-c:v", "libx264", "-preset", "medium", "-crf", "18",
-        "-c:a", "aac", "-b:a", "256k", "-ar", "48000",
-        "-t", f"{dur:.4f}",
-        "-movflags", "+faststart",
-        str(out_master)
-    ]
-    print(f"Compositing final film: {out_master.name}...", flush=True)
+    if has_foreground:
+        filter_complex = (
+            "[0:v]format=rgba[base];"
+            "[1:v]format=gray,lut='val*0.12',format=rgba[smoke];"
+            "[base][smoke]blend=all_mode=screen:all_opacity=0.10,format=rgba[v2];"
+            "[2:v]format=rgba[fg];"
+            "[v2][fg]overlay=0:0:format=auto,format=yuv420p[vout]"
+        )
+        cmd_composite = [
+            FFMPEG, "-y",
+            "-i", str(concat_video),
+            "-stream_loop", "-1", "-i", str(smoke),
+            "-i", str(foreground_overlay),
+            "-i", str(audio_path),
+            "-filter_complex", filter_complex,
+            "-map", "[vout]",
+            "-map", "3:a",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "18",
+            "-c:a", "aac", "-b:a", "256k", "-ar", "48000",
+            "-t", f"{dur:.4f}",
+            "-movflags", "+faststart",
+            str(out_master)
+        ]
+    else:
+        filter_complex = (
+            "[0:v]format=rgba[base];"
+            "[1:v]format=gray,lut='val*0.15',format=rgba[smoke];"
+            "[base][smoke]blend=all_mode=screen:all_opacity=0.10,format=yuv420p[vout]"
+        )
+        cmd_composite = [
+            FFMPEG, "-y",
+            "-i", str(concat_video),
+            "-stream_loop", "-1", "-i", str(smoke),
+            "-i", str(audio_path),
+            "-filter_complex", filter_complex,
+            "-map", "[vout]",
+            "-map", "2:a",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "18",
+            "-c:a", "aac", "-b:a", "256k", "-ar", "48000",
+            "-t", f"{dur:.4f}",
+            "-movflags", "+faststart",
+            str(out_master)
+        ]
+
     subprocess.run(cmd_composite, check=True)
     print(f"Chapter {ch_num} film master successfully rendered: {out_master}", flush=True)
 

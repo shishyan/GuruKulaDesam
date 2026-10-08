@@ -34,7 +34,7 @@ CHAPTER_SPECS = [
         "sub": "Domestic Virtue & Grihastha Dharma • Master Film",
         "folder": "05-ilvaazhkkai",
         "video": "renders/releases/adhikaram_05_ilvaazhkkai_cinematic.mp4",
-        "atmo": "Flowers 🌸",
+        "atmo": "Drizzle 🌧️",
         "tab_label": "Ilvaazhkkai • 42 Scenes (6.1s pan) ✔"
     },
     {
@@ -114,7 +114,7 @@ CHAPTER_SPECS = [
         "sub": "The Greatness of the Sovereign • Master Film",
         "folder": "39-iraimaatchi",
         "video": "renders/releases/adhikaram_39_iraimaatchi_cinematic.mp4",
-        "atmo": "Flowers 🌸",
+        "atmo": "Drizzle 🌧️",
         "tab_label": "Iraimaatchi • 37 Scenes (6.2s pan) ✔"
     },
     {
@@ -194,7 +194,7 @@ CHAPTER_SPECS = [
         "sub": "Benevolent Governance & Gentle Majesty • Master Film",
         "folder": "57-veruvantha-seyyaamai",
         "video": "renders/releases/adhikaram_57_veruvantha_seyyaamai_cinematic.mp4",
-        "atmo": "Flowers 🌸",
+        "atmo": "Drizzle 🌧️",
         "tab_label": "Veruvantha • 50 Scenes (6.8s pan) ✔"
     },
     {
@@ -308,6 +308,12 @@ if cd_start != -1:
 
 with open(REVIEW_HTML_PATH, "w", encoding="utf-8") as f:
     f.write(html)
+
+docs_review = ROOT / "docs" / "review_quality.html"
+if docs_review.parent.exists():
+    import shutil
+    shutil.copyfile(REVIEW_HTML_PATH, docs_review)
+    print(f"✅ docs/review_quality.html updated!")
 
 print(f"✅ review_quality.html synchronized with all {len(CHAPTER_SPECS)} master chapters!")
 

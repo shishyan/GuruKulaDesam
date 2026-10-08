@@ -21,6 +21,10 @@ DEST_DIR = ROOT / "production" / "visuals" / "thirukkural" / "27-thavam"
 DEST_DIR.mkdir(parents=True, exist_ok=True)
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
+if not API_KEY and (ROOT / ".env").exists():
+    for line in (ROOT / ".env").read_text(encoding="utf-8").splitlines():
+        if line.startswith("GEMINI_API_KEY="):
+            API_KEY = line.split("=", 1)[1].strip().strip('"').strip("'")
 client = genai.Client(api_key=API_KEY)
 
 BASE_PROMPT = (

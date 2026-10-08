@@ -21,6 +21,10 @@ DEST_DIR = ROOT / "production" / "visuals" / "thirukkural" / "26-pulaal-unnaamai
 DEST_DIR.mkdir(parents=True, exist_ok=True)
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
+if not API_KEY and (ROOT / ".env").exists():
+    for line in (ROOT / ".env").read_text(encoding="utf-8").splitlines():
+        if line.startswith("GEMINI_API_KEY="):
+            API_KEY = line.split("=", 1)[1].strip().strip('"').strip("'")
 client = genai.Client(api_key=API_KEY)
 
 FILES = sorted([f for f in os.listdir(DEST_DIR) if f.endswith('.jpg')])

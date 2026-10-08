@@ -2760,3 +2760,428 @@ function filterVirtues(tier, btn) {
 function filterTier(tier, btn) {
   filterVirtues(tier, btn);
 }
+
+/* ========================================================================== */
+/* FEATURE 12: GKD INTERACTIVE DASHBOARD & WORKFLOW DRILL-DOWN CONTROLLER     */
+/* ========================================================================== */
+
+const GKD_GRADE_DETAILS = {
+  1: {
+    num: 1,
+    title: "தரம் 1 — அறநெறி & ஆத்திசூடி",
+    engTitle: "Grade 1 — Early Moral Foundation & Aathichoodi",
+    age: "6-7 ஆண்டுகள்",
+    ashrama: "பாலப் பருவம் (Early Childhood)",
+    scripture: "ஔவையார் ஆத்திசூடி & கொன்றைவேந்தன்",
+    competencies: ["அகிம்சை", "உண்மை பேசுதல்", "பெரியாரைப் பேணுதல்", "இயற்கை அன்பு"],
+    desc: "அகர முதல எழுத்தறிவும், நற்பண்புகளும் தொடங்கும் அடிப்படைத் தளம். எளிய பாடல்கள் மற்றும் கதைகள் வழி நற்குண விதைப்பு.",
+    url: "tharam-1.html"
+  },
+  2: {
+    num: 2,
+    title: "தரம் 2 — ஐந்திணையும் இயற்கை வழிபாடும்",
+    engTitle: "Grade 2 — Compassion for Nature & Classical Landscapes",
+    age: "7-8 ஆண்டுகள்",
+    ashrama: "பாலப் பருவம் (Early Childhood)",
+    scripture: "சங்க இலக்கிய ஐந்திணை & திருக்குறள் அறம்",
+    competencies: ["மரங்களை நேசித்தல்", "மிருக கருணை", "ஆலய மரியாதை", "நீர்நிலைகள் பாதுகாப்பு"],
+    desc: "குறிஞ்சி, முல்லை, மருதம், நெய்தல், பாலை நிலங்களின் தர்மமும், உயிர்களிடத்தில் அருள் செலுத்தும் இல்லறத் தொடக்கமும்.",
+    url: "tharam-2.html"
+  },
+  3: {
+    num: 3,
+    title: "தரம் 3 — நால்வர் பெருமக்கள் தேவாரம்",
+    engTitle: "Grade 3 — Four Nayanmar Saints & Devotional Music",
+    age: "8-9 ஆண்டுகள்",
+    ashrama: "வளரும் பருவம் (Growth & Wonder)",
+    scripture: "அப்பர், சம்பந்தர், சுந்தரர், மாணிக்கவாசகர் தேவாரம்",
+    competencies: ["தேவார இன்னிசை", "ஆலயத் தொண்டு", "உழவாரப்பணி", "பக்தி நெறி"],
+    desc: "தமிழ் மறையான பன்னிரு திருமுறைகளின் தித்திக்கும் பதிகங்களை நாவாரப் பாடி மன அமைதியும் பக்தியும் பெறும் கானப் பயிற்சி.",
+    url: "tharam-3.html"
+  },
+  4: {
+    num: 4,
+    title: "தரம் 4 — பொறையுடைமையும் சினமறுத்தலும்",
+    engTitle: "Grade 4 — Forbearance, Truth & Conquering Wrath",
+    age: "9-10 ஆண்டுகள்",
+    ashrama: "வளரும் பருவம் (Growth & Wonder)",
+    scripture: "திருக்குறள் (அறத்துப்பால் - துறவறவியல்)",
+    competencies: ["பொறுமை", "சினமறுத்தல்", "இன்சொல்", "நல்லிணக்க நட்பு"],
+    desc: "அகக் கோபத்தை வென்று பொறுமையோடு பிறரை மன்னிக்கும் உயர் குணப் பயிற்சி. நாலடியார் மற்றும் அறநெறிச்சார உசாவுதல்.",
+    url: "tharam-4.html"
+  },
+  5: {
+    num: 5,
+    title: "தரம் 5 — ஊக்கமுடைமையும் சோழர் கலை அறிவியலும்",
+    engTitle: "Grade 5 — Industry, Energy & Temple Sanctum Science",
+    age: "10-11 ஆண்டுகள்",
+    ashrama: "இடைப்பருவம் (Formative Intellect)",
+    scripture: "பஞ்ச பூதத் தத்துவம் & சோழர் ஸ்தபதி நெறி",
+    competencies: ["விடாமுயற்சி", "கட்டிடக்கலை அறிவியல்", "பஞ்ச பூத ஞானம்", "சுறுசுறுப்பு"],
+    desc: "சோழர் கால பிரம்மாண்டக் கற்றளிகள், ஆகம சாஸ்திரம், மற்றும் சோம்பலின்றி செயலாற்றும் ஊக்கமுடைமைப் பயிற்சி.",
+    url: "tharam-5.html"
+  },
+  6: {
+    num: 6,
+    title: "தரம் 6 — ஆள்வினையுடைமையும் தபோவனமும்",
+    engTitle: "Grade 6 — Relentless Effort & Pancha Maha Yagnas",
+    age: "11-12 ஆண்டுகள்",
+    ashrama: "இடைப்பருவம் (Formative Intellect)",
+    scripture: "திருவாசகம் (யாத்திரைப் பத்து) & குறள்",
+    competencies: ["பஞ்ச மகா வேள்வி", "தபோவன சாதனை", "சுய ஒழுக்கம்", "குடும்ப மரியாதை"],
+    desc: "அனுதினமும் குடும்பத்தில் ஆற்றவேண்டிய 5 மகா வேள்விகள் (பிரம்ம, தேவ, பித்ரு, மனுஷ்ய, பூத யக்ஞங்கள்) செயல்முறை பயிற்சி.",
+    url: "tharam-6.html"
+  },
+  7: {
+    num: 7,
+    title: "தரம் 7 — தவ நெறியும் திருமந்திர யோகமும்",
+    engTitle: "Grade 7 — Inner Mastery, Yogic Science & Meditation",
+    age: "12-13 ஆண்டுகள்",
+    ashrama: "முதிர் பருவம் (Adolescent Nobility)",
+    scripture: "திருமூலர் திருமந்திரம் (அஷ்டாங்க யோகம்)",
+    competencies: ["பிராணாயாமம்", "ஆசனம்", "நாடி சுத்தி", "உணவு மிதவாதம்"],
+    desc: "உடம்பினை முன்னம் இழுக்கென்று எண்ணிப் பின்னர் உடம்பினுள்ளே உத்தமனைக் கண்ட திருமூலரின் யோக சாத்திர ஞானம்.",
+    url: "tharam-7.html"
+  },
+  8: {
+    num: 8,
+    title: "தரம் 8 — நான்கு ஆசிரமங்களும் வாழ்வியல் நெறியும்",
+    engTitle: "Grade 8 — Four Ashramas of Life & Grihastha Foundation",
+    age: "13-14 ஆண்டுகள்",
+    ashrama: "முதிர் பருவம் (Adolescent Nobility)",
+    scripture: "வர்ணாசிரம தர்மம் & திருக்குறள் இல்லறவியல்",
+    competencies: ["பிரம்மச்சரிய மாண்பு", "இல்லற நோக்கு", "வாழ்க்கைத் துணை நெறி", "சமூகக் கடமை"],
+    desc: "பிரம்மச்சரியம், கிரகஸ்தம், வானப்பிரஸ்தம், சந்நியாசம் ஆகிய 4 நிலைகளில் இல்லறமே தலையாய தர்மம் என்பதை உணரும் தத்துவத் தெளிவு.",
+    url: "tharam-8.html"
+  },
+  9: {
+    num: 9,
+    title: "தரம் 9 — சைவ சித்தாந்தமும் தருக்க சாத்திரமும்",
+    engTitle: "Grade 9 — Saiva Siddhanta Dialectics & 28 Agamas",
+    age: "14-15 ஆண்டுகள்",
+    ashrama: "உயர் கல்வி நிலை (Philosophical Inquirer)",
+    scripture: "28 சைவ ஆகமங்கள் & மெய்கண்ட சாத்திரங்கள்",
+    competencies: ["பதி-பசு-பாசம்", "தருக்கம் & விவாதம்", "அளவையியல்", "மெய்ப்பொருள் காண்டல்"],
+    desc: "அறிவியல் பூர்வமான சைவ சித்தாந்த தத்துவம், பிரமாணங்கள், மற்றும் இந்திய தத்துவங்களின் (ஷட்தரிசனங்கள்) ஆழ்ந்த ஒப்பாய்வு.",
+    url: "tharam-9.html"
+  },
+  10: {
+    num: 10,
+    title: "தரம் 10 — தெரிந்து வினையாடலும் தலைமைத்துவமும்",
+    engTitle: "Grade 10 — Deliberation in Action & Citizen Leadership",
+    age: "15-16 ஆண்டுகள்",
+    ashrama: "உயர் கல்வி நிலை (Leadership Disciple)",
+    scripture: "திருக்குறள் பொருட்பால் (அரசியல் & அமைச்சு)",
+    competencies: ["தெரிந்து செயல்வகை", "காலமறிதல்", "இடனறிதல்", "சூழ்ச்சித் திறன்"],
+    desc: "சமூகத்திலும் தொழிலிலும் தர்ம வழியில் வெற்றிகரமாகத் தலைமை தாங்கி வழிநடத்தும் பொருட்பால் அரசமைச்சியல் தெளிவு.",
+    url: "tharam-10.html"
+  },
+  11: {
+    num: 11,
+    title: "தரம் 11 — மெய்யுணர்தலும் செங்கோன்மையும்",
+    engTitle: "Grade 11 — Truth Realization, Governance & Family Nobility",
+    age: "16-17 ஆண்டுகள்",
+    ashrama: "தலைமைப் பருவம் (Senior Statesman)",
+    scripture: "திருக்குறள் மெய்யுணர்தல் & நீதிசாஸ்திரம்",
+    competencies: ["செங்கோன்மை", "கொடுங்கோன்மை மறுப்பு", "மெய்யுணர்வு", "குடும்ப ஆட்சி"],
+    desc: "அநீதிக்குத் தலைவணங்காத செங்கோல் ஆட்சி, இல்லறத்தில் குடும்பத் தலைவனாக நின்று உலகிற்கு நல்வழி காட்டும் சான்றாண்மை.",
+    url: "tharam-11.html"
+  },
+  12: {
+    num: 12,
+    title: "தரம் 12 — அரசாளும் மாண்பும் ஜீவன்முக்திப் பேறும்",
+    engTitle: "Grade 12 — Sovereignty, Grihastha Nirvana & Mukti",
+    age: "17-18 ஆண்டுகள்",
+    ashrama: "நிறைவுப் பருவம் (Jivanmukti & Samskara)",
+    scripture: "திருக்குறள் இறைமாட்சி & சிவஞான போதம்",
+    competencies: ["இறைமாட்சி", "கொல்லாமை", "ஜீவன்முக்தி", "சான்றோன் நிறைவு"],
+    desc: "குருகுலக் கல்வியின் உச்சம்: சான்றோனாகி குடும்பத்தை வழிநடத்தி உலகியல் பந்தங்களை அறுத்தெறிந்து வாழ்விலேயே முக்தி பெறுதல்.",
+    url: "tharam-12.html"
+  }
+};
+
+// 1. Switch Dashboard Workflow
+function setDashboardWorkflow(workflowId) {
+  // Update Tab Buttons
+  document.querySelectorAll('.workflow-tab-btn').forEach(btn => {
+    if (btn.getAttribute('data-workflow') === workflowId) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // Update Panels
+  document.querySelectorAll('.dashboard-workflow-panel').forEach(panel => {
+    if (panel.id === 'panel-' + workflowId) {
+      panel.style.display = 'block';
+    } else {
+      panel.style.display = 'none';
+    }
+  });
+
+  // Update Breadcrumb
+  const crumbEl = document.getElementById('dashCurrentCrumb');
+  if (crumbEl) {
+    const titles = {
+      'curriculum': 'தடம் 1: குருகுலக் கல்வி நிலைகள் (Grades 1-12)',
+      'thirukkural': 'தடம் 2: திருக்குறள் சினிமா அரங்கம் (133 அதிகாரங்கள்)',
+      'hymns': 'தடம் 3: திருமுறைகள் & சந்நிதிகள் (604 சுவடிகள்)',
+      'dinacharya': 'தடம் 4: தினசரி ஆசிரம சாதனா & காலச்சக்கரம்'
+    };
+    crumbEl.textContent = titles[workflowId] || workflowId;
+  }
+
+  // Save to localStorage
+  try {
+    localStorage.setItem('gkd_last_dashboard_workflow', workflowId);
+  } catch (e) {}
+}
+
+// 2. Select Grade in Curriculum Drilldown
+function selectGradeDrilldown(gradeNum) {
+  const g = GKD_GRADE_DETAILS[gradeNum];
+  if (!g) return;
+
+  // Update Grade Pills
+  document.querySelectorAll('.grade-pill-item').forEach(pill => {
+    if (parseInt(pill.getAttribute('data-grade'), 10) === gradeNum) {
+      pill.classList.add('active');
+    } else {
+      pill.classList.remove('active');
+    }
+  });
+
+  // Render Grade Preview Box
+  const previewBox = document.getElementById('gradeDrilldownPreview');
+  if (previewBox) {
+    const badgesHtml = g.competencies.map(c => `<span class="drilldown-tag" style="background:rgba(45,212,191,0.12); color:#2dd4bf; border:1px solid rgba(45,212,191,0.3);">${c}</span>`).join(' ');
+    
+    previewBox.innerHTML = `
+      <div style="background: linear-gradient(135deg, rgba(10,23,40,0.95), rgba(6,17,30,0.95)); border: 1px solid var(--border-gold); border-radius: 14px; padding: 22px; box-shadow: 0 8px 25px rgba(0,0,0,0.45);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+              <span class="source-badge" style="background: rgba(56,189,248,0.15); color: #38bdf8; border-color: rgba(56,189,248,0.35);">
+                ${g.ashrama} • ${g.age}
+              </span>
+              <span style="font-size: 0.8rem; color: #94a3b8;">பாட நிலை #${g.num}</span>
+            </div>
+            <h3 style="color: #ffffff; font-size: 1.35rem; font-weight: 800; margin-bottom: 4px;">${g.title}</h3>
+            <div style="color: #7dd3fc; font-size: 0.88rem; font-weight: 600;">${g.engTitle}</div>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="${g.url}" class="sheet-btn sheet-btn-view" style="font-weight: 700; padding: 10px 18px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+              வகுப்பிற்குள் நுழைக <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="syllabus.html" class="sheet-btn" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2); color: #cbd5e1; font-weight: 600; padding: 10px 16px; text-decoration: none; border-radius: 8px;">
+              பாடத்திட்டம்
+            </a>
+          </div>
+        </div>
+
+        <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; margin-bottom: 14px;">${g.desc}</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 14px; background: rgba(0,0,0,0.25); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+          <div>
+            <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">முதன்மை சுவடி / மூலம்:</div>
+            <div style="font-size: 0.88rem; color: #f8fafc; font-weight: 600; margin-top: 2px;">${g.scripture}</div>
+          </div>
+          <div>
+            <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">முக்கிய ஆளுமைகள் &amp; நற்பண்புகள்:</div>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px;">${badgesHtml}</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+}
+
+// 3. Filter Grade Tiers in Curriculum
+function filterGradeTier(tier) {
+  document.querySelectorAll('.tier-pill-btn').forEach(btn => {
+    if (btn.getAttribute('data-tier') === tier) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  const rangeMap = {
+    'all': [1, 12],
+    'foundation': [1, 4],
+    'middle': [5, 8],
+    'senior': [9, 12]
+  };
+
+  const range = rangeMap[tier] || [1, 12];
+  document.querySelectorAll('.grade-pill-item').forEach(pill => {
+    const num = parseInt(pill.getAttribute('data-grade'), 10);
+    if (num >= range[0] && num <= range[1]) {
+      pill.style.display = 'flex';
+    } else {
+      pill.style.display = 'none';
+    }
+  });
+
+  // Select the first visible grade
+  selectGradeDrilldown(range[0]);
+}
+
+// 4. Filter Thirukkural Chapters in Dashboard
+function filterDashboardKuralPal(pal) {
+  document.querySelectorAll('.kural-pal-pill').forEach(btn => {
+    if (btn.getAttribute('data-pal') === pal) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  document.querySelectorAll('.kural-drilldown-card').forEach(card => {
+    const cardPal = card.getAttribute('data-pal');
+    if (pal === 'all' || cardPal === pal) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// 5. Filter Sacred Hymns by Tradition in Dashboard
+function filterDashboardHymns(tradition) {
+  document.querySelectorAll('.hymn-tradition-pill').forEach(btn => {
+    if (btn.getAttribute('data-tradition') === tradition) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  document.querySelectorAll('.hymn-drilldown-card').forEach(card => {
+    const cardTrad = card.getAttribute('data-tradition');
+    if (tradition === 'all' || cardTrad === tradition) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// 6. Interactive Daily Sadhana / Yagna Checklist
+function toggleYagnaCheck(index) {
+  let state = [false, false, false, false, false];
+  try {
+    const saved = localStorage.getItem('gkd_daily_yagna_state');
+    if (saved) state = JSON.parse(saved);
+  } catch (e) {}
+
+  state[index] = !state[index];
+  try {
+    localStorage.setItem('gkd_daily_yagna_state', JSON.stringify(state));
+  } catch (e) {}
+
+  renderYagnaChecklistUI(state);
+}
+
+function renderYagnaChecklistUI(state) {
+  let doneCount = 0;
+  state.forEach((isDone, idx) => {
+    const item = document.getElementById('yagnaItem-' + idx);
+    const box = document.getElementById('yagnaBox-' + idx);
+    if (item && box) {
+      if (isDone) {
+        item.classList.add('done');
+        box.innerHTML = '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="20 6 9 17 4 12"/></svg>';
+        doneCount++;
+      } else {
+        item.classList.remove('done');
+        box.innerHTML = '';
+      }
+    }
+  });
+
+  // Update progress
+  const pct = Math.round((doneCount / 5) * 100);
+  const fillEl = document.getElementById('yagnaProgressFill');
+  const countEl = document.getElementById('yagnaDoneCount');
+  if (fillEl) fillEl.style.width = pct + '%';
+  if (countEl) countEl.textContent = `${doneCount}/5 (${pct}%)`;
+
+  const kpiYagna = document.getElementById('kpiSadhanaPct');
+  if (kpiYagna) kpiYagna.textContent = pct + '%';
+}
+
+function resetDailyYagnas() {
+  const emptyState = [false, false, false, false, false];
+  try {
+    localStorage.setItem('gkd_daily_yagna_state', JSON.stringify(emptyState));
+  } catch (e) {}
+  renderYagnaChecklistUI(emptyState);
+}
+
+// 7. Auto-detect Active Yamam of the Day
+function detectActiveYamam() {
+  const now = new Date();
+  const h = now.getHours();
+  const m = now.getMinutes();
+  const timeVal = h * 60 + m;
+
+  let activeIdx = 0; // default Ushath (4:30 to 7:00)
+  if (timeVal >= 270 && timeVal < 420) {
+    activeIdx = 0; // Ushath 4:30 AM to 7:00 AM
+  } else if (timeVal >= 420 && timeVal < 720) {
+    activeIdx = 1; // Vidhya 7:00 AM to 12:00 PM
+  } else if (timeVal >= 720 && timeVal < 1050) {
+    activeIdx = 2; // Seva 12:00 PM to 5:30 PM
+  } else {
+    activeIdx = 3; // Sandhya / Sayahnam 5:30 PM to 8:30 PM+
+  }
+
+  // Highlight active Yamam card
+  for (let i = 0; i < 4; i++) {
+    const card = document.getElementById('yamaInteractive-' + i);
+    if (card) {
+      if (i === activeIdx) {
+        card.classList.add('active-yamam');
+      } else {
+        card.classList.remove('active-yamam');
+      }
+    }
+  }
+
+  const kpiYamam = document.getElementById('kpiActiveYamam');
+  if (kpiYamam) {
+    const names = ['உஷத் காலம்', 'வித்யா காலம்', 'சேவா காலம்', 'சந்தியா காலம்'];
+    kpiYamam.textContent = names[activeIdx] || 'உஷத் காலம்';
+  }
+}
+
+// Initialize on DOM Ready
+document.addEventListener('DOMContentLoaded', () => {
+  // Detect last saved workflow or default to curriculum
+  let lastWorkflow = 'curriculum';
+  try {
+    const saved = localStorage.getItem('gkd_last_dashboard_workflow');
+    if (saved && document.getElementById('panel-' + saved)) {
+      lastWorkflow = saved;
+    }
+  } catch (e) {}
+
+  if (document.querySelector('.gkd-dashboard-shell')) {
+    setDashboardWorkflow(lastWorkflow);
+    selectGradeDrilldown(1);
+
+    // Init yagnas
+    let yState = [false, false, false, false, false];
+    try {
+      const s = localStorage.getItem('gkd_daily_yagna_state');
+      if (s) yState = JSON.parse(s);
+    } catch (e) {}
+    renderYagnaChecklistUI(yState);
+
+    // Detect Yamam
+    detectActiveYamam();
+  }
+});
+
