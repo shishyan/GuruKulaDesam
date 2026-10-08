@@ -578,18 +578,18 @@ def generate_chapter(grade, book_id, chap_num, topic):
         life_app = f"அன்றாட 3 'D' வாழ்வியல் சாதனா: இன்று நாள் முழுவதும் '{topic}' என்ற விழுமியத்தை உங்கள் செயலில் வெளிப்படுத்துங்கள்; சுயமாக உழைத்து, நேரக் கட்டுப்பாட்டைக் கடைப்பிடித்து, இன்முகத்துடன் கடமையாற்றுங்கள்."
         exercise = f"சிந்தனை வினா & பயிற்சி: 1. '{topic}' என்ற கடமை/கட்டுப்பாடு/கண்ணியப் பண்பை இன்று நீங்கள் எவ்வாறு செயல்படுத்தினீர்கள்? 2. விளையாட்டிலோ குடும்பத்திலோ சுய உழைப்பால் கிடைத்த பெருமை தரும் தருணம் எது?"
 
-# Verified Image Pools from assets/images/
+# Verified Image Pools from assets/images/ (100% Authentic Indian / Tamil / Vedic Heritage)
 HERO_POOL = [
     "assets/images/gurukula-banyan-tree-bg.jpg",
-    "assets/images/western-ghats-bg.jpg",
-    "assets/images/western-ghats-peak.jpg",
     "assets/images/lessons/disciples_under_sacred_tree.jpg",
     "assets/images/lessons/gurukulam_sacred_refuge.jpg",
-    "assets/images/lessons/western_ghats_hermitage.jpg",
-    "assets/images/lessons/wildlife_stream_harmony.jpg",
     "assets/images/lessons/sacred_peacock_grove.jpg",
-    "assets/images/lessons/agrarian_abundance.jpg",
-    "assets/images/lessons/hill_fortress_vigilance.jpg"
+    "assets/images/lessons/temple_architecture.jpg",
+    "assets/images/lessons/chola_anicut_engineers.jpg",
+    "assets/images/lessons/royal_administration_dharma.jpg",
+    "assets/images/lessons/grade10_temple_chariot_festival.jpg",
+    "assets/images/lessons/grade3_pancha_bhuta_temples.jpg",
+    "assets/images/lessons/stories/grade6_rajaraja_chola_temple_dedication.jpg"
 ]
 
 VERSE_POOL = [
@@ -602,7 +602,7 @@ VERSE_POOL = [
     "assets/images/lessons/panchakshara_mandala.jpg",
     "assets/images/lessons/shiva_tripundram.jpg",
     "assets/images/lessons/temple_bell_morning.jpg",
-    "assets/images/lessons/noble_feast_ahimsa.jpg"
+    "assets/images/lessons/dharma_cow_calf.jpg"
 ]
 
 EXPO_POOL = [
@@ -613,7 +613,7 @@ EXPO_POOL = [
     "assets/images/lessons/grade12_jivanmukti_36tattvas.jpg",
     "assets/images/lessons/grade8_meykanda_sastras.jpg",
     "assets/images/lessons/grade8_chatur_ashrama.jpg",
-    "assets/images/lessons/mindfulness_vigilance.jpg",
+    "assets/images/lessons/grade9_saiva_agamas.jpg",
     "assets/images/lessons/temple_architecture.jpg",
     "assets/images/lessons/siddha_herbal_wisdom.jpg"
 ]
@@ -628,7 +628,8 @@ STORY_START_POOL = [
     "assets/images/lessons/stories/grade11_shravana_kumara_devotion.jpg",
     "assets/images/lessons/stories/grade4_nandanar_nandi_miracle.jpg",
     "assets/images/lessons/stories/grade9_siruthondar_divine_guest.jpg",
-    "assets/images/lessons/stories/grade9_sambandar_madurai_debate.jpg"
+    "assets/images/lessons/stories/grade9_sambandar_madurai_debate.jpg",
+    "assets/images/lessons/stories/grade7_sekkizhar_periyapuranam_recital.jpg"
 ]
 
 STORY_CLIMAX_POOL = [
@@ -647,15 +648,25 @@ STORY_CLIMAX_POOL = [
 LIFE_APP_POOL = [
     "assets/images/lessons/dharma/dharma_01_morning_parent_reverence.jpg",
     "assets/images/lessons/dharma/dharma_02_kolam_courtyard_sanctity.jpg",
+    "assets/images/lessons/dharma/dharma_02_rice_flour_kolam_creatures.jpg",
     "assets/images/lessons/dharma/dharma_03_bird_water_pot_summer.jpg",
+    "assets/images/lessons/dharma/dharma_03_pancha_maha_yajna_offering.jpg",
     "assets/images/lessons/dharma/dharma_04_feeding_hungry_guest.jpg",
+    "assets/images/lessons/dharma/dharma_04_garland_making_puja.jpg",
     "assets/images/lessons/dharma/dharma_05_annadhanam_guest_feeding.jpg",
+    "assets/images/lessons/dharma/dharma_05_sandhyavandanam_riverbank.jpg",
     "assets/images/lessons/dharma/dharma_06_cow_calf_gopuja.jpg",
+    "assets/images/lessons/dharma/dharma_06_cow_veneration_kamadhenu.jpg",
     "assets/images/lessons/dharma/dharma_07_family_evening_thevaram.jpg",
+    "assets/images/lessons/dharma/dharma_07_joint_family_evening_thevaram.jpg",
     "assets/images/lessons/dharma/dharma_08_elder_care_veneration.jpg",
+    "assets/images/lessons/dharma/dharma_08_satvik_food_preparation.jpg",
     "assets/images/lessons/dharma/dharma_09_community_canal_maintenance.jpg",
+    "assets/images/lessons/dharma/dharma_09_guru_dakshina_reverence.jpg",
+    "assets/images/lessons/dharma/dharma_10_elderly_parent_loving_care.jpg",
     "assets/images/lessons/dharma/dharma_10_truthful_merchant_dharma.jpg",
     "assets/images/lessons/dharma/dharma_11_ahimsa_protecting_creatures.jpg",
+    "assets/images/lessons/dharma/dharma_12_mutual_respect_spouses.jpg",
     "assets/images/lessons/dharma/dharma_13_temple_service_uzhavaram.jpg",
     "assets/images/lessons/dharma/dharma_14_charity_annadhanam_festival.jpg",
     "assets/images/lessons/dharma/dharma_15_planting_shade_trees.jpg",
@@ -671,13 +682,13 @@ LIFE_APP_POOL = [
 
 MEDITATION_POOL = [
     "assets/images/lessons/thavam_tapas_meditation.jpg",
-    "assets/images/lessons/mountain_cave_tapas.jpg",
     "assets/images/lessons/universal_anjali_prayer.jpg",
     "assets/images/lessons/grade11_nachiketas_yama.jpg",
     "assets/images/lessons/grade12_thayumanavar_universal.jpg",
     "assets/images/lessons/grade8_vallalar_jyothi.jpg",
     "assets/images/lessons/sage_universal_compassion.jpg",
-    "assets/images/lessons/wise_counsel_nobility.jpg"
+    "assets/images/lessons/wise_counsel_nobility.jpg",
+    "assets/images/lessons/grade12_grihastha_nirvana.jpg"
 ]
 
 def generate_chapter_images(grade, book_id, chap_num, topic):
@@ -696,9 +707,9 @@ def generate_chapter_images(grade, book_id, chap_num, topic):
             "index": 1,
             "type": "hero",
             "typeTitle": "முகப்பு ஓவியம் (Theme Hero Visual)",
-            "caption": f"{topic} — அத்தியாய முகப்புக் காட்சி: தர்ம விழுமியத்தின் ஆன்மீக உருவகம்.",
+            "caption": f"{topic} — அத்தியாய முகப்புக் காட்சி: பாரம்பரிய இந்தியத் தர்ம விழுமியத்தின் ஆன்மீக உருவகம்.",
             "url": hero_url,
-            "prompt": f"Masterpiece digital painting depicting {topic}. Ethereal atmospheric lighting, tranquil temple forest / gurukula ashram ambiance, classical Indian art style, highly detailed 8k."
+            "prompt": f"Masterpiece authentic traditional Indian painting depicting {topic}. Classical Tamil & Vedic heritage, ancient South Indian temple / gurukula ashram ambiance, Chola / Pallava architecture, sacred lighting, detailed cultural attire, 8k."
         },
         {
             "index": 2,
@@ -706,7 +717,7 @@ def generate_chapter_images(grade, book_id, chap_num, topic):
             "typeTitle": "செய்யுள் காட்சி (Sacred Verse Art)",
             "caption": f"{topic} செய்யுள் பின்னணி: மூலப் பாடல் உதித்த ஞானக் களம்.",
             "url": verse_url,
-            "prompt": f"Ancient Indian sage / poet writing sacred palm leaf manuscripts under banyan tree, serene morning mist, sacred temple tower background, warm candlelight glow, traditional attire."
+            "prompt": f"Ancient Indian sage / poet writing sacred palm leaf manuscripts under sacred banyan tree, serene morning mist, Dravidian temple gopuram background, warm oil lamp glow, traditional veshti, sacred ash (vibhuti)."
         },
         {
             "index": 3,
@@ -714,7 +725,7 @@ def generate_chapter_images(grade, book_id, chap_num, topic):
             "typeTitle": "தத்துவ விளக்கம் (Philosophical Infographic)",
             "caption": f"{topic} தத்துவ விளக்கம்: மன அமைதி மற்றும் வாழ்வியல் ஒழுக்கத்தின் வரைபடம்.",
             "url": expo_url,
-            "prompt": f"Conceptual Vedic / Buddhist philosophical visual diagram illustrating {topic}. Harmonious geometric lotus mandala, serene energy channels, cosmic balance of mind and senses, glowing golden light."
+            "prompt": f"Ancient Indian philosophical mandala diagram illustrating {topic}. Classical Ajanta / Sarnath / Vedic sacred geometry, traditional lotus motifs, spiritual energy channels, cosmic balance, glowing divine radiance."
         },
         {
             "index": 4,
@@ -722,7 +733,7 @@ def generate_chapter_images(grade, book_id, chap_num, topic):
             "typeTitle": "கதைத் தொடக்கம் (Narrative Origin)",
             "caption": f"{topic} வரலாற்றுத் தொடக்கம்: சூழலும் தொடக்க அற அறைகூவலும்.",
             "url": story1_url,
-            "prompt": f"Historical narrative scene showing the beginning of the story of {topic}. Classical Tamil / Vedic palace or village setting, expressive characters, vibrant dramatic cinematic lighting."
+            "prompt": f"Historical narrative scene from classical Tamil & Indian heritage depicting the origin of {topic}. Ancient Indian temple town or gurukulam courtyard, traditional Indian attire, expressive figures, warm cinematic lighting."
         },
         {
             "index": 5,
@@ -730,7 +741,7 @@ def generate_chapter_images(grade, book_id, chap_num, topic):
             "typeTitle": "கதை உச்சக்கட்டம் (Climax & Moral Victory)",
             "caption": f"{topic} அறத்தின் வெற்றி: மெய்ஞ்ஞான தரிசனம் மற்றும் நற்பெயரின் மலர்ச்சி.",
             "url": story2_url,
-            "prompt": f"Climactic spiritual moment of moral triumph and divine darshan for {topic}. Radiant transcendental illumination, sacred symbols, peaceful resolution, emotionally moving composition."
+            "prompt": f"Climactic spiritual moment of moral triumph from Indian Itihasas/Puranas for {topic}. Radiant divine illumination, sacred Indian iconography, lotus blossoms, peaceful resolution, classical Indian fresco aesthetic."
         },
         {
             "index": 6,
@@ -738,7 +749,7 @@ def generate_chapter_images(grade, book_id, chap_num, topic):
             "typeTitle": "வாழ்வியல் சாதனா (3 Ds in Action)",
             "caption": f"{topic} அன்றாட வாழ்வில் 3 Ds: கடமை, கட்டுப்பாடு மற்றும் கண்ணியச் சாதனா.",
             "url": life_url,
-            "prompt": f"Inspiring contemporary and traditional scene of disciplined students and householders actively practicing Duty, Discipline, and Dignity related to {topic}. Clean environment, joyful cooperative spirit."
+            "prompt": f"Authentic traditional Indian scene of disciplined householders and students actively practicing Duty, Discipline, and Dignity (3 Ds) related to {topic}. Indian village courtyard or agraharam, kolam, sacred cows, respectful cultural conduct."
         },
         {
             "index": 7,
@@ -746,7 +757,7 @@ def generate_chapter_images(grade, book_id, chap_num, topic):
             "typeTitle": "தியான & சிந்தனைக் காட்சி (Contemplative Vision)",
             "caption": f"{topic} தியான & சிந்தனைக் காட்சி: அமைதியான உள்ளுணர்வுப் பார்வை.",
             "url": med_url,
-            "prompt": f"Serene meditative contemplation scene in deep mountain hermitage or quiet temple sanctum. Single oil lamp burning steadily, calm focused expression, pure inner stillness, transcendent peace."
+            "prompt": f"Serene Indian yogic meditation scene in ancient stone mandapam or quiet temple sanctum. Sacred oil lamp (kuthuvilakku) burning steadily, calm seated dhyana posture, sacred rudraksha and vibhuti, pure inner stillness."
         }
     ]
 

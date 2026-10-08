@@ -287,12 +287,22 @@ def wait_and_extend_video(page, dest_mp4_path: Path, extend_count: int = 2, cont
 
     # Download extended scene from editor
     print("[Flow Extend] Downloading extended multi-clip video from editor...")
-    dl_media = page.locator("button[aria-label='Download media']:visible").first
+    dl_media = page.locator("button[aria-label='Download media']:visible, button[aria-label*='Download' i]:visible").first
     if dl_media.count() > 0 and dl_media.is_enabled():
         temp_zip = dest_mp4_path.parent / f"temp_ext_{int(time.time())}.zip"
         try:
-            with page.expect_download(timeout=40000) as download_info:
-                dl_media.click()
+            dl_media.click()
+            page.wait_for_timeout(1000)
+            
+            # Flow Scene Editor opens a menu with 720p / 1080p options
+            btn_720 = page.locator("button:has-text('720p'), [role='menuitem']:has-text('720p'), button:has-text('Original size')").first
+            if btn_720.count() > 0 and btn_720.is_visible():
+                print("[Flow Extend] Clicking '720p Original size' download option...")
+                with page.expect_download(timeout=40000) as download_info:
+                    btn_720.click()
+            else:
+                with page.expect_download(timeout=40000) as download_info:
+                    dl_media.click()
             download = download_info.value
             download.save_as(str(temp_zip))
 
@@ -313,10 +323,20 @@ def wait_and_extend_video(page, dest_mp4_path: Path, extend_count: int = 2, cont
                 shutil.move(temp_zip, dest_mp4_path)
             temp_zip.unlink(missing_ok=True)
             print(f"[Flow Extend SUCCESS] Saved extended video: {dest_mp4_path.name} ({dest_mp4_path.stat().st_size} bytes)")
+            
+            # Return from editor
+            if "/edit/" in page.url:
+                page.go_back()
+                page.wait_for_timeout(2000)
             return True
         except Exception as e:
             print(f"[Flow Extend Error] Download from editor failed: {e}")
             temp_zip.unlink(missing_ok=True)
+
+    # Return from editor if stuck
+    if "/edit/" in page.url:
+        page.go_back()
+        page.wait_for_timeout(2000)
 
     return False
 
@@ -427,6 +447,10 @@ def generate_track_on_flow(track_id: str, extend: bool = True, extend_steps: int
                                 success = wait_and_extend_video(page, out_clip, extend_count=len(continuation_prompts), continuation_prompts=continuation_prompts)
 
                         if not success:
+                            if "/edit/" in page.url:
+                                print("[Flow] Navigating back from editor to project workspace...")
+                                page.go_back()
+                                page.wait_for_timeout(3000)
                             success = wait_and_download_video(page, out_clip)
 
                         if not success:
