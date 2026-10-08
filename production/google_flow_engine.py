@@ -123,15 +123,21 @@ def ensure_audio(track_id: str) -> Path:
         "-o", str(SOURCE_AUDIO_DIR / "%(id)s.%(ext)s"),
         f"https://www.youtube.com/watch?v={track_id}"
     ]
-    res = subprocess.run(cmd, capture_output=True, text=True)
-    if res.returncode != 0:
-        print(f"[Audio Warning] yt-dlp failed: {res.stderr}", flush=True)
-        # Search for any existing file
-        existing = list(SOURCE_AUDIO_DIR.glob(f"{track_id}.*"))
+    for attempt in range(1, 4):
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        if audio_path.exists() and audio_path.stat().st_size > 100_000:
+            return audio_path
+        existing = [f for f in SOURCE_AUDIO_DIR.glob(f"{track_id}.*") if f.stat().st_size > 100_000]
         if existing:
             return existing[0]
-        raise RuntimeError(f"Could not resolve audio for track {track_id}")
-    return audio_path
+        print(f"[Audio Retry {attempt}/3] Retrying after delay...", flush=True)
+        time.sleep(3)
+
+    print(f"[Audio Warning] yt-dlp failed after 3 attempts: {res.stderr}", flush=True)
+    existing = list(SOURCE_AUDIO_DIR.glob(f"{track_id}.*"))
+    if existing:
+        return existing[0]
+    raise RuntimeError(f"Could not resolve audio for track {track_id}")
 
 def get_media_duration(file_path: Path) -> float:
     cmd = [

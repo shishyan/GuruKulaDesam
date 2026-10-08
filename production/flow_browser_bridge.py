@@ -232,11 +232,17 @@ def generate_track_on_flow(track_id: str):
                     # Open fresh project for each scene
                     print(f"\n[Scene {sc_num}] Creating fresh project workspace on Google Flow...")
                     page.goto(FLOW_URL)
-                    page.wait_for_timeout(4000)
-                    new_proj = page.locator("button:has-text('New project'), [role='button']:has-text('New project')").first
-                    if new_proj.count() > 0 and new_proj.is_visible():
+                    try:
+                        page.wait_for_selector("button:has-text('New project'), [role='button']:has-text('New project')", timeout=25000)
+                        new_proj = page.locator("button:has-text('New project'), [role='button']:has-text('New project')").first
                         new_proj.click()
-                        page.wait_for_timeout(6000)
+                    except Exception as e:
+                        print(f"[Flow Warning] Could not click New project: {e}")
+
+                    try:
+                        page.wait_for_selector("div.ProseMirror", timeout=25000)
+                    except Exception:
+                        pass
 
                     prompt = f"Devotional cinematic 16:9 photorealistic video: {sc['prompt']} Exclusions: {sc.get('exclusions', '')} {bp['continuity'].get('Hard Exclusions', '')}"
 
@@ -272,24 +278,28 @@ def generate_track_on_flow(track_id: str):
     existing_clips = sorted(track_dir.glob("scene_*.mp4"))
     if existing_clips:
         print(f"\n[Assembly] Found {len(existing_clips)} scenes for {bp['track_id']}.")
-        audio_path = ensure_audio(bp['track_id'])
-        out_film = RENDERS_DIR / f"{bp['category'].lower()}_{bp['track_id']}_master.mp4"
-        build_master_film(bp, existing_clips, audio_path, out_film)
-        return True
+        try:
+            audio_path = ensure_audio(bp['track_id'])
+            out_film = RENDERS_DIR / f"{bp['category'].lower()}_{bp['track_id']}_master.mp4"
+            build_master_film(bp, existing_clips, audio_path, out_film)
+            return True
+        except Exception as e:
+            print(f"[Assembly Error] Failed to assemble master film: {e}")
+            return False
     else:
         print(f"[Assembly Error] No scenes available for {bp['track_id']}.")
         return False
 
 VINAYAGAR_TRACK_IDS = [
-    "lEHLSYxnpbU",
-    "mQpQEuXiEZ4",
     "pYuwzoJkhTE",
     "RVMUEr1MOFo",
     "T1KiH3G5WPs",
     "vFbw9hX0wO4",
     "Yvlg_8JBHL4",
     "zqStqzcFgbM",
-    "IhE1OvdIBKs"
+    "IhE1OvdIBKs",
+    "lEHLSYxnpbU",
+    "mQpQEuXiEZ4"
 ]
 
 def main():
@@ -315,11 +325,23 @@ def main():
         print("=" * 80)
         print("AUTONOMOUS PIPELINE: GENERATING ALL PENDING VINAYAGAR MASTER FILMS")
         print("=" * 80)
-        for idx, tid in enumerate(VINAYAGAR_TRACK_IDS, 1):
+        
+        # Check which ones are already completed
+        releases = list(RENDERS_DIR.glob("*master.mp4"))
+        existing_tids = {r.stem.split('_')[-2] for r in releases if len(r.stem.split('_')[-2]) == 11}
+        existing_tids.update({r.stem.split('_')[2] for r in releases if len(r.stem.split('_')) > 2 and len(r.stem.split('_')[2]) == 11})
+        
+        pending_vin = [t for t in VINAYAGAR_TRACK_IDS if t not in existing_tids]
+        print(f"Total Vinayagar tracks remaining: {len(pending_vin)} of {len(VINAYAGAR_TRACK_IDS)}")
+
+        for idx, tid in enumerate(pending_vin, 1):
             print(f"\n=======================================================")
-            print(f">>> VINAYAGAR SONG [{idx}/{len(VINAYAGAR_TRACK_IDS)}]: Track ID {tid} <<<")
+            print(f">>> VINAYAGAR SONG [{idx}/{len(pending_vin)}]: Track ID {tid} <<<")
             print(f"=======================================================")
-            generate_track_on_flow(tid)
+            try:
+                generate_track_on_flow(tid)
+            except Exception as e:
+                print(f"[Error] Processing failed for track {tid}: {e}")
             time.sleep(3)
         print("\nAll Vinayagar master films processed successfully!")
         return
