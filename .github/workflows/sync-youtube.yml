@@ -1,0 +1,46 @@
+name: Near-Live YouTube Sync
+
+on:
+  schedule:
+    # Runs every 3 hours
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install yt-dlp
+        run: |
+          python -m pip install --upgrade pip
+          pip install yt-dlp
+
+      - name: Run YouTube Near-Live Sync
+        run: |
+          python tools/youtube/sync_live_youtube_to_site.py
+
+      - name: Commit and Push if Changes Detected
+        run: |
+          git config --global user.name "Guru Kula Desam Bot"
+          git config --global user.email "bot@gurukuladesam.org"
+          if [ -n "$(git status --porcelain docs/ site/ assets/ master_all_598_songs_catalog.json)" ]; then
+            git add docs/ site/ assets/ master_all_598_songs_catalog.json
+            git commit -m "chore(youtube): automated sync of newly published YouTube videos [skip ci]"
+            git push origin main
+          else
+            echo "No new YouTube videos detected. Repository is already in sync."
+          fi
+
