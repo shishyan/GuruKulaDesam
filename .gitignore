@@ -56,6 +56,7 @@ production/google_flow_renders/
 production/preview_*.jpg
 source/youtube/
 production/visuals/thirukkural/*-old*/
-production/visuals/thirukkural/*-bak*/
+production/browser_profile/
+
 
 
