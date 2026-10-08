@@ -198,6 +198,16 @@ CHAPTER_SPECS = [
         "tab_label": "Veruvantha • 50 Scenes (6.8s pan) ✔"
     },
     {
+        "ch": 60,
+        "name_ta": "ஊக்கமுடைமை",
+        "name_en": "Ookkamudaimai",
+        "sub": "Energy, Zeal & Unyielding Determination • Master Film",
+        "folder": "60-ookkamudaimai",
+        "video": "renders/releases/adhikaram_60_ookkamudaimai_cinematic.mp4",
+        "atmo": "Drizzle 🌧️",
+        "tab_label": "Ookkamudaimai • 51 Scenes (6.0s pan) ✔"
+    },
+    {
         "ch": 61,
         "name_ta": "மடியின்மை",
         "name_en": "Madiyinmai",
@@ -206,6 +216,56 @@ CHAPTER_SPECS = [
         "video": "renders/releases/adhikaram_61_madiyinmai_cinematic.mp4",
         "atmo": "Rain 🌧️",
         "tab_label": "Madiyinmai • 40 Scenes (6.2s pan) ✔"
+    },
+    {
+        "ch": 62,
+        "name_ta": "ஆள்வினையுடைமை",
+        "name_en": "Aalvinaiyudaimai",
+        "sub": "Industrious Enterprise & Defeating Fate • Master Film",
+        "folder": "62-aalvinaiyudaimai",
+        "video": "renders/releases/adhikaram_62_aalvinaiyudaimai_cinematic.mp4",
+        "atmo": "Drizzle 🌧️",
+        "tab_label": "Aalvinaiyudaimai • 48 Scenes (6.0s pan) ✔"
+    },
+    {
+        "ch": 65,
+        "name_ta": "சொல்வன்மை",
+        "name_en": "Solvanmai",
+        "sub": "The Power of Eloquence & Persuasive Speech • Master Film",
+        "folder": "65-solvanmai",
+        "video": "renders/releases/adhikaram_65_solvanmai_cinematic.mp4",
+        "atmo": "Drizzle 🌧️",
+        "tab_label": "Solvanmai • 56 Scenes (6.0s pan) ✔"
+    },
+    {
+        "ch": 66,
+        "name_ta": "வினைத்தூய்மை",
+        "name_en": "Vinaithooymai",
+        "sub": "Purity of Action & Moral Integrity • Master Film",
+        "folder": "66-vinaithooymai",
+        "video": "renders/releases/adhikaram_66_vinaithooymai_cinematic.mp4",
+        "atmo": "Drizzle 🌧️",
+        "tab_label": "Vinaithooymai • 45 Scenes (6.0s pan) ✔"
+    },
+    {
+        "ch": 67,
+        "name_ta": "வினைத்திட்பம்",
+        "name_en": "Vinaithitpam",
+        "sub": "Resolute Action & Unshakable Will • Master Film",
+        "folder": "67-vinaithitpam",
+        "video": "renders/releases/adhikaram_67_vinaithitpam_cinematic.mp4",
+        "atmo": "Rain 🌧️",
+        "tab_label": "Vinaithitpam • 50 Scenes (6.0s pan) ✔"
+    },
+    {
+        "ch": 74,
+        "name_ta": "நாடு",
+        "name_en": "Naadu",
+        "sub": "The Prosperous Realm & Ideal Country • Master Film",
+        "folder": "74-naadu",
+        "video": "renders/releases/adhikaram_74_naadu_cinematic.mp4",
+        "atmo": "Drizzle 🌧️",
+        "tab_label": "Naadu • 36 Scenes (5.9s pan) ✔"
     },
 ]
 

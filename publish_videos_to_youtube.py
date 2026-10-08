@@ -68,13 +68,13 @@ THUMBNAIL_FILES = {
     52: ROOT / "production" / "visuals" / "thirukkural" / "52-therinthu-vinaiyaadal" / "01-n01_king_weighs_good_and_evil.jpg",
     54: ROOT / "production" / "visuals" / "thirukkural" / "54-pochchaavaamai" / "01-n01_unwavering_flame_in_temple_sanctum.jpg",
     57: ROOT / "production" / "visuals" / "thirukkural" / "57-veruvantha-seyyaamai" / "01-n01_king_patient_hearing.jpg",
-    60: ROOT / "production" / "visuals" / "thirukkural" / "60-ookkamudaimai" / "01-n01_flame_of_determination_in_warrior_eyes.jpg",
+    60: ROOT / "production" / "visuals" / "thirukkural" / "60-ookkamudaimai" / "01-n01_unwavering_inner_fire_brahmachari.jpg",
     61: ROOT / "production" / "visuals" / "thirukkural" / "61-madiyinmai" / "03-n03_bright_flame_ignited_ancestral_hall.jpg",
-    62: ROOT / "production" / "visuals" / "thirukkural" / "62-aalvinaiyudaimai" / "01-n01_mason_carving_steps_up_mountain_cliff.jpg",
-    65: ROOT / "production" / "visuals" / "thirukkural" / "65-solvanmai" / "01-n01_orator_standing_before_grand_royal_council.jpg",
-    66: ROOT / "production" / "visuals" / "thirukkural" / "66-vinaithooymai" / "01-n01_spotless_white_lotus_in_crystal_stream.jpg",
-    67: ROOT / "production" / "visuals" / "thirukkural" / "67-vinaithitpam" / "01-n01_warrior_clenched_fist_over_iron_hilt.jpg",
-    74: ROOT / "production" / "visuals" / "thirukkural" / "74-naadu" / "01-n01_boundless_golden_paddy_fields_swaying_in_breeze.jpg",
+    62: ROOT / "production" / "visuals" / "thirukkural" / "62-aalvinaiyudaimai" / "01-n01_kallanai_grand_anicut_stone_dam_construction.jpg",
+    65: ROOT / "production" / "visuals" / "thirukkural" / "65-solvanmai" / "01-n01_venerable_minister_addressing_royal_assembly.jpg",
+    66: ROOT / "production" / "visuals" / "thirukkural" / "66-vinaithooymai" / "01-n01_purity_of_action_bringing_all_blessings.jpg",
+    67: ROOT / "production" / "visuals" / "thirukkural" / "67-vinaithitpam" / "01-n01_unshakable_firmness_of_mind_rishi.jpg",
+    74: ROOT / "production" / "visuals" / "thirukkural" / "74-naadu" / "01-n01_bountiful_golden_harvest_kaveri_delta.jpg",
 }
 
 def get_authenticated_service():
@@ -143,6 +143,14 @@ def upload_video(youtube, item, privacy_status="public", dry_run=False):
     
     if not video_path or not video_path.exists():
         raise FileNotFoundError(f"Video file not found for Chapter {ch}: {video_path}")
+    if not thumb_path or not thumb_path.exists():
+        vdir = ROOT / "production" / "visuals" / "thirukkural"
+        for d in vdir.iterdir():
+            if d.is_dir() and (d.name.startswith(f"{ch:02d}-") or d.name.startswith(f"{ch}-")):
+                imgs = sorted(list(d.glob("*.jpg")) + list(d.glob("*.png")))
+                if imgs:
+                    thumb_path = imgs[0]
+                    break
     if not thumb_path or not thumb_path.exists():
         raise FileNotFoundError(f"Thumbnail not found for Chapter {ch}: {thumb_path}")
         
