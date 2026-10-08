@@ -126,17 +126,24 @@ tools/
 └── maintenance/                # Shell updaters, sidebars, and QA scripts
 ```
 
-### Standard Operating Procedure for Updates
+---
 
-When making any change:
-```bash
-# 1. Edit the target files in docs/ (or root)
-# 2. Run Tri-Folder Sync to propagate changes identically
-python tools/sync/sync_trifolder.py --source docs
+## 📺 YouTube Data API v3 Automation & Scripture Standardization
 
-# 3. Run Automated Integrity Audit
-python tools/sync/validate_integrity.py
+Guru Kula Desam features a full-lifecycle YouTube automation pipeline to synchronize channel releases with canonical scripture naming standards:
+1. **OAuth 2.0 Flow**: Token auto-refresh authenticated against channel `@guru-kula-desam` via `update_youtube_channel_titles.py`.
+2. **Quota Management**: 10,000 daily quota units budget; idempotent zero-cost title skips; daily reset at 07:00 UTC / 12:30 PM IST.
+3. **Scripture-First Canonical Format**:
+   - `திருக்குறள்: அதிகாரம் ... | Thirukkural: ... [Film]`
+   - `தேவாரம்: ... | Thevaram: ... [Film]`
+   - `திருவாசகம்: ... | Thiruvasagam: ... [Film]`
+   - `திருவருட்பா: ... | Thiruvarutpa: ... [Film]`
+   - All titles strictly $\le 95$ characters with recursive prefix sanitization.
+4. **Data Synchronization**: Synchronized across `master_all_598_songs_catalog.*`, `assets/data/catalog.json`, and `assets/data/catalog.js` with 100% SHA-256 hash parity across root, `site/`, and `docs/`.
 
-# 4. Verify clean git status
-git status
-```
+---
+
+## 🤖 Definitive Guide for AI Agents
+
+For complete, in-depth architectural details, OAuth integration code, quota economics, classification tables, and step-by-step runbooks, see **[AI_AGENT_INTEGRATION_MANUAL.md](AI_AGENT_INTEGRATION_MANUAL.md)**.
+

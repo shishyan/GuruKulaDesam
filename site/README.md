@@ -92,4 +92,6 @@ python tools/sync/sync_trifolder.py --dry-run
 
 ## 🤖 Guide for AI Agents
 
-For guidelines on coding style, tri-folder mirroring rules, SVG iconography, and video standards, see [ARCHITECTURE.md](ARCHITECTURE.md).
+- **Architectural Principles & Front-End Guidelines**: See [ARCHITECTURE.md](ARCHITECTURE.md).
+- **YouTube Automation, Quota Management & Scripture Invariants**: See [AI_AGENT_INTEGRATION_MANUAL.md](AI_AGENT_INTEGRATION_MANUAL.md).
+
