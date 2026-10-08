@@ -472,8 +472,9 @@ main.main-content {
   width: 100%;
   max-width: 100% !important;
   margin: 0 !important;
-  padding: 20px 28px 60px 28px;
+  padding: 24px 36px 80px 36px;
   box-sizing: border-box;
+  zoom: 1.2;
 }
 
 /* Page Hero */
@@ -5570,21 +5571,24 @@ header.site-header {
 .header-container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 8px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  padding: 14px 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 28px !important;
+  min-height: 64px;
 }
 
 .context-bar-container,
 .header-container {
-  padding: 8px 24px !important;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 14px 36px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  gap: 16px !important;
-  min-height: 54px;
+  gap: 28px !important;
+  min-height: 64px;
 }
 
 .context-bar-left {
@@ -5675,9 +5679,16 @@ header.site-header {
 
 @media (max-width: 768px) {
   .context-bar-container,
-  .header-container {
-    padding: 8px 14px !important;
-  }
+.header-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 14px 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 28px !important;
+  min-height: 64px;
+}
   .context-search-wrapper {
     display: none;
   }
@@ -7546,4 +7557,79 @@ h1, h2, h3, h4, h5, h6,
 .workflow-tab-btn[data-workflow="dinacharya"].active .workflow-tab-icon {
   background: #0ea5e9 !important;
   color: #040d1a !important;
+}
+
+
+/* ========================================================================== */
+/* CONTENT AREA ZOOM & IN-PAGE SECTION NAVIGATION                             */
+/* ========================================================================== */
+@media (max-width: 768px) {
+  main.main-content {
+    padding: 16px 18px 60px 18px;
+    zoom: 1.15;
+  }
+}
+
+/* In-Page Content Navigation (Section & Category Filters moved down into Content Area) */
+.inpage-content-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 14px 20px;
+  margin: 20px 0 28px 0;
+  background: var(--bg-card);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: 14px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.inpage-content-nav .context-tab-pill,
+.inpage-content-nav button,
+.inpage-content-nav a {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.inpage-content-nav .context-tab-pill:hover,
+.inpage-content-nav button:hover,
+.inpage-content-nav a:hover {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: var(--teal-bright);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.inpage-content-nav .context-tab-pill.active,
+.inpage-content-nav button.active,
+.inpage-content-nav a.active {
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.25) 0%, rgba(14, 165, 233, 0.25) 100%);
+  border-color: var(--teal-bright);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 0 12px rgba(45, 212, 191, 0.35);
+}
+
+.inpage-content-nav .context-tab-pill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inpage-content-nav .context-tab-pill-icon svg {
+  width: 18px;
+  height: 18px;
 }

@@ -1610,9 +1610,24 @@ function renderTopBreadcrumbBar() {
   const oldHamburger = headerContainer.querySelector('.primary-hamburger-btn');
   if (oldHamburger && oldHamburger.parentNode) oldHamburger.parentNode.removeChild(oldHamburger);
 
-  // 2. Remove any previous context-tabs-nav (no in-page section jumper pills!)
-  const existingTabs = document.getElementById('contextTabsNav');
-  if (existingTabs && existingTabs.parentNode) existingTabs.parentNode.removeChild(existingTabs);
+  // 2. If any in-page navigation tabs are inside headerContainer, move them down into main-content!
+  const existingTabs = headerContainer.querySelector('#contextTabsNav');
+  if (existingTabs) {
+    existingTabs.classList.remove('context-tabs-nav');
+    existingTabs.classList.add('inpage-content-nav');
+    const main = document.querySelector('main.main-content');
+    if (main && !main.contains(existingTabs)) {
+      const insertTarget = main.querySelector('.controls-panel, .page-visual-showcase, .hero-banner') || main.firstChild;
+      if (insertTarget && insertTarget.parentNode === main) {
+        main.insertBefore(existingTabs, insertTarget);
+      } else {
+        main.prepend(existingTabs);
+      }
+    } else if (!main) {
+      existingTabs.parentNode.removeChild(existingTabs);
+    }
+  }
+
   const existingTools = document.querySelector('.header-right-tools');
   if (existingTools && existingTools.parentNode) existingTools.parentNode.removeChild(existingTools);
 
@@ -1661,6 +1676,10 @@ function renderTopBreadcrumbBar() {
     barLeft.innerHTML = `
       <button type="button" class="mobile-hamburger-btn" onclick="togglePrimaryMenu()" title="பட்டி திறக்க" aria-label="முதன்மை பட்டி">
         <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <button type="button" class="breadcrumb-back-btn" onclick="if(window.history.length > 1){ window.history.back(); } else { window.location.href='${rootLink}'; }" title="பின்னே செல்ல (Go Back)">
+        <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>பின்னே</span>
       </button>
       <nav class="context-breadcrumbs" id="contextBreadcrumbs" aria-label="தள வழிகாட்டல்">
         <a href="index.html" class="crumb-link crumb-home" title="முகப்பு">
