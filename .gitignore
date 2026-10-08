@@ -52,7 +52,10 @@ print_*.py
 renders/
 production/*.mp4
 production/temp*/
+production/google_flow_renders/
+production/preview_*.jpg
 source/youtube/
 production/visuals/thirukkural/*-old*/
 production/visuals/thirukkural/*-bak*/
+
 
