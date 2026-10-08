@@ -1739,19 +1739,19 @@ function mountAppShell() {
   strip.setAttribute('aria-label', 'முதன்மை பட்டி');
 
   const navItems = [
-    { href: 'index.html', icon: GKD_ICONS.home, label: 'முகப்பு' },
-    { href: 'kalvi.html', icon: GKD_ICONS.leaf, label: 'வாழ்வியல் நெறி' },
-    { href: 'virtues.html', icon: GKD_ICONS.virtues, label: 'நற்பண்புகள்' },
-    { href: 'saiva-neri.html', icon: GKD_ICONS.om, label: 'சைவ நெறி' },
-    { href: 'irai-isai-virundhu.html', icon: GKD_ICONS.music, label: 'இறை இசை' },
-    { href: 'thirukkural.html', icon: GKD_ICONS.scroll, label: 'திருக்குறள்' },
-    { href: 'sanmargam.html', icon: GKD_ICONS.flame, label: 'சன்மார்க்கம்' },
-    { href: 'murugan.html', icon: GKD_ICONS.vel, label: 'முருகன்' },
-    { href: 'sakthi.html', icon: GKD_ICONS.lotus, label: 'சக்தி நெறி' },
-    { href: 'vinayagar.html', icon: GKD_ICONS.ganesha, label: 'விநாயகர்' },
-    { href: 'vaishnava.html', icon: GKD_ICONS.chakra, label: 'வைணவம்' },
-    { href: 'syllabus.html', icon: GKD_ICONS.book, label: 'பாடத்திட்டம்' },
-    { href: 'about.html', icon: GKD_ICONS.temple, label: 'பெரியவா' }
+    { href: 'index.html', icon: GKD_ICONS.home, label: 'முகப்பு', color: 'gold', id: 'home' },
+    { href: 'kalvi.html', icon: GKD_ICONS.leaf, label: 'வாழ்வியல் நெறி', color: 'emerald', id: 'kalvi' },
+    { href: 'virtues.html', icon: GKD_ICONS.virtues, label: 'நற்பண்புகள்', color: 'purple', id: 'virtues' },
+    { href: 'saiva-neri.html', icon: GKD_ICONS.om, label: 'சைவ நெறி', color: 'orange', id: 'saiva' },
+    { href: 'irai-isai-virundhu.html', icon: GKD_ICONS.music, label: 'இறை இசை', color: 'sky', id: 'music' },
+    { href: 'thirukkural.html', icon: GKD_ICONS.scroll, label: 'திருக்குறள்', color: 'amber', id: 'kural' },
+    { href: 'sanmargam.html', icon: GKD_ICONS.flame, label: 'சன்மார்க்கம்', color: 'sun', id: 'sanmargam' },
+    { href: 'murugan.html', icon: GKD_ICONS.vel, label: 'முருகன்', color: 'crimson', id: 'murugan' },
+    { href: 'sakthi.html', icon: GKD_ICONS.lotus, label: 'சக்தி நெறி', color: 'rose', id: 'sakthi' },
+    { href: 'vinayagar.html', icon: GKD_ICONS.ganesha, label: 'விநாயகர்', color: 'coral', id: 'vinayagar' },
+    { href: 'vaishnava.html', icon: GKD_ICONS.chakra, label: 'வைணவம்', color: 'blue', id: 'vaishnava' },
+    { href: 'syllabus.html', icon: GKD_ICONS.book, label: 'பாடத்திட்டம்', color: 'teal', id: 'syllabus' },
+    { href: 'about.html', icon: GKD_ICONS.temple, label: 'பெரியவா', color: 'saffron', id: 'about' }
   ];
 
   strip.innerHTML = `
@@ -1767,24 +1767,24 @@ function mountAppShell() {
 
     <nav class="strip-nav-list" id="stripNavList">
       ${navItems.map(item => `
-        <a href="${item.href}" class="strip-item ${currentPath === item.href ? 'active' : ''}" data-tooltip="${item.label}">
-          <span class="strip-item-icon">${item.icon}</span>
+        <a href="${item.href}" class="strip-item item-${item.color} ${currentPath === item.href ? 'active' : ''}" data-nav-id="${item.id}" data-tooltip="${item.label}">
+          <span class="strip-item-icon badge-${item.color}">${item.icon}</span>
           <span class="strip-item-label">${item.label}</span>
         </a>
       `).join('')}
     </nav>
 
     <div class="strip-footer-dock">
-      <a href="help.html" class="strip-dock-btn" data-tooltip="உதவி மையம்" title="உதவி &amp; வழிகாட்டல்">
-        <span class="strip-item-icon">${GKD_ICONS.question}</span>
+      <a href="help.html" class="strip-dock-btn dock-help" data-tooltip="உதவி மையம்" title="உதவி &amp; வழிகாட்டல்">
+        <span class="strip-item-icon badge-sky">${GKD_ICONS.question}</span>
         <span class="strip-dock-label">உதவி மையம்</span>
       </a>
-      <button type="button" class="strip-dock-btn" data-tooltip="அமைப்புகள்" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
-        <span class="strip-item-icon">${GKD_ICONS.settings}</span>
+      <button type="button" class="strip-dock-btn dock-settings" data-tooltip="அமைப்புகள்" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
+        <span class="strip-item-icon badge-purple">${GKD_ICONS.settings}</span>
         <span class="strip-dock-label">அமைப்புகள்</span>
       </button>
-      <button type="button" class="strip-dock-btn profile-dock-btn" data-tooltip="சுயவிவரம்" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
-        <span class="strip-dock-avatar" id="stripAvatarIcon">${GKD_ICONS.user}</span>
+      <button type="button" class="strip-dock-btn profile-dock-btn dock-profile" data-tooltip="சுயவிவரம்" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
+        <span class="strip-dock-avatar badge-emerald" id="stripAvatarIcon">${GKD_ICONS.user}</span>
         <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
       </button>
     </div>

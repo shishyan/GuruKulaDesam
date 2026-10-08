@@ -3647,15 +3647,15 @@ body.primary-menu-open .left-strip-bar {
 
 .left-strip-bar:not(.expanded):not(.open) .strip-item {
   justify-content: center;
-  padding: 12px 0;
-  width: 48px;
+  padding: 5px 0;
+  width: 44px;
   margin: 0 auto;
 }
 
 .left-strip-bar:not(.expanded):not(.open) .strip-dock-btn {
   justify-content: center;
-  padding: 10px 0;
-  width: 48px;
+  padding: 5px 0;
+  width: 44px;
   margin: 0 auto;
 }
 
@@ -3764,41 +3764,42 @@ body.primary-menu-open .left-strip-bar {
 .strip-item {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 11px 14px;
+  gap: 12px;
+  padding: 7px 10px;
   border-radius: 12px;
   color: #cbd5e1;
   text-decoration: none;
   font-size: 0.92rem;
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: all 0.22s ease;
   white-space: nowrap;
   position: relative;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.02);
   border: 1px solid transparent;
 }
 
-.strip-item:hover {
-  background: rgba(56, 189, 248, 0.12);
-  border-color: rgba(56, 189, 248, 0.3);
-  color: #38bdf8;
-  transform: translateX(4px);
-}
-
-.strip-item.active {
-  background: linear-gradient(90deg, rgba(2, 132, 199, 0.28), rgba(16, 185, 129, 0.12));
-  color: #38bdf8;
-  border-color: rgba(56, 189, 248, 0.4);
-  border-left: 3px solid #38bdf8;
-}
-
 .strip-item-icon {
-  font-size: 1.25rem;
-  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
+  flex-shrink: 0;
+  transition: all 0.22s ease;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.strip-item-icon svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.22s ease;
+}
+
+.strip-item:hover .strip-item-icon svg {
+  transform: scale(1.15);
 }
 
 .strip-item-label {
@@ -7170,4 +7171,379 @@ h1, h2, h3, h4, h5, h6,
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
+}
+
+
+/* ========================================================================== */
+/* COLORFUL NAVIGATION BADGES & DIFFERENTIATED MENU ITEMS                    */
+/* ========================================================================== */
+
+/* 1. Gold / Sun (Home / Mukappu) */
+.badge-gold {
+  background: rgba(245, 158, 11, 0.18) !important;
+  border: 1px solid rgba(245, 158, 11, 0.45) !important;
+  color: #fbbf24 !important;
+}
+.item-gold:hover, .item-gold.active {
+  background: rgba(245, 158, 11, 0.10) !important;
+  border-color: rgba(245, 158, 11, 0.35) !important;
+  color: #fbbf24 !important;
+}
+.item-gold.active {
+  border-left: 3px solid #fbbf24 !important;
+}
+.item-gold.active .badge-gold,
+.item-gold:hover .badge-gold {
+  box-shadow: 0 0 14px rgba(251, 191, 36, 0.55) !important;
+  background: rgba(245, 158, 11, 0.32) !important;
+}
+
+/* 2. Emerald Green (Kalvi / Dharma) */
+.badge-emerald {
+  background: rgba(16, 185, 129, 0.18) !important;
+  border: 1px solid rgba(16, 185, 129, 0.45) !important;
+  color: #34d399 !important;
+}
+.item-emerald:hover, .item-emerald.active {
+  background: rgba(16, 185, 129, 0.10) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+  color: #34d399 !important;
+}
+.item-emerald.active {
+  border-left: 3px solid #34d399 !important;
+}
+.item-emerald.active .badge-emerald,
+.item-emerald:hover .badge-emerald {
+  box-shadow: 0 0 14px rgba(52, 211, 153, 0.55) !important;
+  background: rgba(16, 185, 129, 0.32) !important;
+}
+
+/* 3. Amethyst Purple (Virtues / Narpannbugal) */
+.badge-purple {
+  background: rgba(168, 85, 247, 0.18) !important;
+  border: 1px solid rgba(168, 85, 247, 0.45) !important;
+  color: #c084fc !important;
+}
+.item-purple:hover, .item-purple.active {
+  background: rgba(168, 85, 247, 0.10) !important;
+  border-color: rgba(168, 85, 247, 0.35) !important;
+  color: #c084fc !important;
+}
+.item-purple.active {
+  border-left: 3px solid #c084fc !important;
+}
+.item-purple.active .badge-purple,
+.item-purple:hover .badge-purple {
+  box-shadow: 0 0 14px rgba(192, 132, 252, 0.55) !important;
+  background: rgba(168, 85, 247, 0.32) !important;
+}
+
+/* 4. Sacred Saffron / Rudraksha Orange (Saiva Neri) */
+.badge-orange {
+  background: rgba(249, 115, 22, 0.18) !important;
+  border: 1px solid rgba(249, 115, 22, 0.45) !important;
+  color: #fb923c !important;
+}
+.item-orange:hover, .item-orange.active {
+  background: rgba(249, 115, 22, 0.10) !important;
+  border-color: rgba(249, 115, 22, 0.35) !important;
+  color: #fb923c !important;
+}
+.item-orange.active {
+  border-left: 3px solid #fb923c !important;
+}
+.item-orange.active .badge-orange,
+.item-orange:hover .badge-orange {
+  box-shadow: 0 0 14px rgba(251, 146, 60, 0.55) !important;
+  background: rgba(249, 115, 22, 0.32) !important;
+}
+
+/* 5. Electric Sky Blue / Cyan (Irai Isai Virundhu) */
+.badge-sky {
+  background: rgba(14, 165, 233, 0.18) !important;
+  border: 1px solid rgba(14, 165, 233, 0.45) !important;
+  color: #38bdf8 !important;
+}
+.item-sky:hover, .item-sky.active {
+  background: rgba(14, 165, 233, 0.10) !important;
+  border-color: rgba(14, 165, 233, 0.35) !important;
+  color: #38bdf8 !important;
+}
+.item-sky.active {
+  border-left: 3px solid #38bdf8 !important;
+}
+.item-sky.active .badge-sky,
+.item-sky:hover .badge-sky {
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.55) !important;
+  background: rgba(14, 165, 233, 0.32) !important;
+}
+
+/* 6. Palm-Leaf Antique Amber (Thirukkural) */
+.badge-amber {
+  background: rgba(234, 179, 8, 0.18) !important;
+  border: 1px solid rgba(234, 179, 8, 0.45) !important;
+  color: #facc15 !important;
+}
+.item-amber:hover, .item-amber.active {
+  background: rgba(234, 179, 8, 0.10) !important;
+  border-color: rgba(234, 179, 8, 0.35) !important;
+  color: #facc15 !important;
+}
+.item-amber.active {
+  border-left: 3px solid #facc15 !important;
+}
+.item-amber.active .badge-amber,
+.item-amber:hover .badge-amber {
+  box-shadow: 0 0 14px rgba(250, 204, 21, 0.55) !important;
+  background: rgba(234, 179, 8, 0.32) !important;
+}
+
+/* 7. Arutperunjothi Radiant Sun Flame (Sanmargam) */
+.badge-sun {
+  background: rgba(254, 240, 138, 0.20) !important;
+  border: 1px solid rgba(253, 224, 71, 0.55) !important;
+  color: #fef08a !important;
+  filter: drop-shadow(0 0 6px rgba(253, 224, 71, 0.5));
+}
+.item-sun:hover, .item-sun.active {
+  background: rgba(254, 240, 138, 0.10) !important;
+  border-color: rgba(253, 224, 71, 0.45) !important;
+  color: #fef08a !important;
+}
+.item-sun.active {
+  border-left: 3px solid #fde047 !important;
+}
+.item-sun.active .badge-sun,
+.item-sun:hover .badge-sun {
+  box-shadow: 0 0 16px rgba(254, 240, 138, 0.7) !important;
+  background: rgba(254, 240, 138, 0.35) !important;
+}
+
+/* 8. Ruby Vel Crimson (Murugan) */
+.badge-crimson {
+  background: rgba(239, 68, 68, 0.18) !important;
+  border: 1px solid rgba(239, 68, 68, 0.45) !important;
+  color: #f87171 !important;
+}
+.item-crimson:hover, .item-crimson.active {
+  background: rgba(239, 68, 68, 0.10) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+  color: #f87171 !important;
+}
+.item-crimson.active {
+  border-left: 3px solid #f87171 !important;
+}
+.item-crimson.active .badge-crimson,
+.item-crimson:hover .badge-crimson {
+  box-shadow: 0 0 14px rgba(248, 113, 113, 0.55) !important;
+  background: rgba(239, 68, 68, 0.32) !important;
+}
+
+/* 9. Lotus Rose Pink (Sakthi Neri) */
+.badge-rose {
+  background: rgba(236, 72, 153, 0.18) !important;
+  border: 1px solid rgba(236, 72, 153, 0.45) !important;
+  color: #f472b6 !important;
+}
+.item-rose:hover, .item-rose.active {
+  background: rgba(236, 72, 153, 0.10) !important;
+  border-color: rgba(236, 72, 153, 0.35) !important;
+  color: #f472b6 !important;
+}
+.item-rose.active {
+  border-left: 3px solid #f472b6 !important;
+}
+.item-rose.active .badge-rose,
+.item-rose:hover .badge-rose {
+  box-shadow: 0 0 14px rgba(244, 114, 182, 0.55) !important;
+  background: rgba(236, 72, 153, 0.32) !important;
+}
+
+/* 10. Coral Ochre (Vinayagar) */
+.badge-coral {
+  background: rgba(249, 115, 22, 0.18) !important;
+  border: 1px solid rgba(251, 146, 60, 0.45) !important;
+  color: #fb923c !important;
+}
+.item-coral:hover, .item-coral.active {
+  background: rgba(249, 115, 22, 0.10) !important;
+  border-color: rgba(251, 146, 60, 0.35) !important;
+  color: #fb923c !important;
+}
+.item-coral.active {
+  border-left: 3px solid #fb923c !important;
+}
+.item-coral.active .badge-coral,
+.item-coral:hover .badge-coral {
+  box-shadow: 0 0 14px rgba(251, 146, 60, 0.55) !important;
+  background: rgba(249, 115, 22, 0.32) !important;
+}
+
+/* 11. Sudarshana Azure Blue (Vaishnava) */
+.badge-blue {
+  background: rgba(59, 130, 246, 0.18) !important;
+  border: 1px solid rgba(59, 130, 246, 0.45) !important;
+  color: #60a5fa !important;
+}
+.item-blue:hover, .item-blue.active {
+  background: rgba(59, 130, 246, 0.10) !important;
+  border-color: rgba(59, 130, 246, 0.35) !important;
+  color: #60a5fa !important;
+}
+.item-blue.active {
+  border-left: 3px solid #60a5fa !important;
+}
+.item-blue.active .badge-blue,
+.item-blue:hover .badge-blue {
+  box-shadow: 0 0 14px rgba(96, 165, 250, 0.55) !important;
+  background: rgba(59, 130, 246, 0.32) !important;
+}
+
+/* 12. Turquoise Teal (Syllabus) */
+.badge-teal {
+  background: rgba(20, 184, 166, 0.18) !important;
+  border: 1px solid rgba(20, 184, 166, 0.45) !important;
+  color: #2dd4bf !important;
+}
+.item-teal:hover, .item-teal.active {
+  background: rgba(20, 184, 166, 0.10) !important;
+  border-color: rgba(20, 184, 166, 0.35) !important;
+  color: #2dd4bf !important;
+}
+.item-teal.active {
+  border-left: 3px solid #2dd4bf !important;
+}
+.item-teal.active .badge-teal,
+.item-teal:hover .badge-teal {
+  box-shadow: 0 0 14px rgba(45, 212, 191, 0.55) !important;
+  background: rgba(20, 184, 166, 0.32) !important;
+}
+
+/* 13. Sage Saffron Sandal (Periyava / About) */
+.badge-saffron {
+  background: rgba(217, 119, 6, 0.20) !important;
+  border: 1px solid rgba(217, 119, 6, 0.45) !important;
+  color: #fde047 !important;
+}
+.item-saffron:hover, .item-saffron.active {
+  background: rgba(217, 119, 6, 0.10) !important;
+  border-color: rgba(217, 119, 6, 0.35) !important;
+  color: #fde047 !important;
+}
+.item-saffron.active {
+  border-left: 3px solid #fde047 !important;
+}
+.item-saffron.active .badge-saffron,
+.item-saffron:hover .badge-saffron {
+  box-shadow: 0 0 14px rgba(253, 224, 71, 0.55) !important;
+  background: rgba(217, 119, 6, 0.32) !important;
+}
+
+/* Dock Button Badges */
+.dock-help:hover .badge-sky {
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.5) !important;
+}
+.dock-settings:hover .badge-purple {
+  box-shadow: 0 0 12px rgba(192, 132, 252, 0.5) !important;
+}
+.dock-profile:hover .badge-emerald {
+  box-shadow: 0 0 12px rgba(52, 211, 153, 0.5) !important;
+}
+
+/* Top Bar Tool Colorful Icons */
+.context-search-icon {
+  color: #38bdf8 !important;
+}
+.context-tool-btn.font-dec-btn,
+.context-tool-btn.font-inc-btn {
+  color: #2dd4bf !important;
+}
+.ambient-drone-btn {
+  color: #c084fc !important;
+}
+.ambient-drone-btn:hover {
+  background: rgba(168, 85, 247, 0.2) !important;
+  border-color: #a855f7 !important;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.4) !important;
+}
+.theme-quick-btn {
+  color: #fbbf24 !important;
+}
+.theme-quick-btn:hover {
+  background: rgba(245, 158, 11, 0.2) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.4) !important;
+}
+.context-profile-pill .pill-avatar {
+  background: rgba(16, 185, 129, 0.22) !important;
+  border: 1px solid rgba(16, 185, 129, 0.45) !important;
+  color: #34d399 !important;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.35) !important;
+}
+.crumb-home svg {
+  color: #fbbf24 !important;
+}
+.breadcrumb-back-btn svg {
+  color: #f59e0b !important;
+}
+
+/* Dashboard Segmented Workflow Colorful Tabs */
+.workflow-tab-btn[data-workflow="curriculum"] .workflow-tab-icon {
+  background: rgba(16, 185, 129, 0.16) !important;
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  color: #34d399 !important;
+}
+.workflow-tab-btn[data-workflow="curriculum"].active {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.22) 0%, rgba(5, 150, 105, 0.12) 100%) !important;
+  border-color: #10b981 !important;
+  box-shadow: 0 4px 18px rgba(16, 185, 129, 0.35) !important;
+}
+.workflow-tab-btn[data-workflow="curriculum"].active .workflow-tab-icon {
+  background: #10b981 !important;
+  color: #040d1a !important;
+}
+
+.workflow-tab-btn[data-workflow="thirukkural"] .workflow-tab-icon {
+  background: rgba(245, 158, 11, 0.16) !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  color: #fbbf24 !important;
+}
+.workflow-tab-btn[data-workflow="thirukkural"].active {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.22) 0%, rgba(217, 119, 6, 0.12) 100%) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.35) !important;
+}
+.workflow-tab-btn[data-workflow="thirukkural"].active .workflow-tab-icon {
+  background: #f59e0b !important;
+  color: #040d1a !important;
+}
+
+.workflow-tab-btn[data-workflow="hymns"] .workflow-tab-icon {
+  background: rgba(168, 85, 247, 0.16) !important;
+  border: 1px solid rgba(168, 85, 247, 0.4) !important;
+  color: #c084fc !important;
+}
+.workflow-tab-btn[data-workflow="hymns"].active {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.22) 0%, rgba(126, 34, 206, 0.12) 100%) !important;
+  border-color: #a855f7 !important;
+  box-shadow: 0 4px 18px rgba(168, 85, 247, 0.35) !important;
+}
+.workflow-tab-btn[data-workflow="hymns"].active .workflow-tab-icon {
+  background: #a855f7 !important;
+  color: #040d1a !important;
+}
+
+.workflow-tab-btn[data-workflow="dinacharya"] .workflow-tab-icon {
+  background: rgba(14, 165, 233, 0.16) !important;
+  border: 1px solid rgba(14, 165, 233, 0.4) !important;
+  color: #38bdf8 !important;
+}
+.workflow-tab-btn[data-workflow="dinacharya"].active {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.22) 0%, rgba(2, 132, 199, 0.12) 100%) !important;
+  border-color: #0ea5e9 !important;
+  box-shadow: 0 4px 18px rgba(14, 165, 233, 0.35) !important;
+}
+.workflow-tab-btn[data-workflow="dinacharya"].active .workflow-tab-icon {
+  background: #0ea5e9 !important;
+  color: #040d1a !important;
 }
