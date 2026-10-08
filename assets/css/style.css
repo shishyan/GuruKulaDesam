@@ -7068,14 +7068,95 @@ main.main-content svg { max-width: 100%; height: auto; }
   border-color: var(--teal-bright) !important;
 }
 
-/* Translucent Section Enclosures */
+/* ========================================================================== */
+/* UNIVERSAL VISUAL WRAPPER FLATTENING & ANTI-NESTING ARCHITECTURE            */
+/* (Eliminates redundant "wrappers of wrappers" & box-in-a-box containment)   */
+/* ========================================================================== */
+
+/* 1. Outer Container Shells & Section Wrappers - Completely Transparent & Borderless */
+.drilldown-container,
+.gkd-dashboard-shell,
 .section-wrapper,
 .curriculum-overview-shell,
 .grade-detail-shell,
 .lesson-container,
 .kural-reader-shell,
-.syllabus-overview-shell {
+.syllabus-overview-shell,
+.course-layout-container,
+.course-main-column,
+.lesson-unit-panel,
+.drilldown-card-stage,
+.canonical-grid-wrapper,
+.cinema-theater-shell,
+.pat-pedagogy-matrix,
+.pat-matrix-grid,
+.pat-assessment-box,
+.timetable-section,
+.classes-container,
+.admission-section,
+.illaraviyal-lounge,
+.higher-studies-container,
+.school-portal-container,
+.app-layout {
   background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* 2. Hide Duplicate In-Page Breadcrumb Wrappers (Top bar handles critical navigation) */
+.dashboard-breadcrumb-bar,
+.page-breadcrumb-inline,
+main > .page-breadcrumb,
+.inpage-breadcrumb-row {
+  display: none !important;
+}
+
+/* 3. Hero & Banner Enclosures - Ultra-translucent & border-flattened */
+.hero-banner,
+.school-hero,
+.help-hero-banner,
+.grade-lms-tracker-banner,
+.google-site-banner,
+#gradeJumpBar {
+  background: rgba(10, 16, 28, 0.35) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(56, 189, 248, 0.15) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 4. Flatten Inner Sub-Boxes inside Cards (Remove opaque box-inside-a-box layering) */
+.story-card-clean,
+.story-visual-card,
+.lesson-video-microclip-card,
+.feast-lyrics-box,
+.feast-meaning,
+.modal-box-body,
+.pat-q-item {
+  background: rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+}
+
+/* 5. Ensure Leaf Cards Stay Luminous & Elegant directly on the Banyan Wallpaper */
+.kpi-card,
+.drilldown-action-card,
+.music-feast-card,
+.canonical-card,
+.lesson-card,
+.overview-card,
+.scripture-study-section,
+.cinema-display-grid > div:last-child {
+  background: rgba(10, 18, 32, 0.55) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(56, 189, 248, 0.22) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45) !important;
 }
 
 .filter-bar {
