@@ -143,55 +143,71 @@ def get_media_duration(file_path: Path) -> float:
     res = subprocess.run(cmd, capture_output=True, text=True)
     return float(res.stdout.strip())
 
-def generate_veo_clip(client, prompt: str, out_path: Path, model: str = "veo-3.1-fast-generate-preview", duration: int = 6) -> Path:
-    """Invokes Google Flow (Veo 3.1) video generation, polls operation, and downloads MP4."""
+def generate_veo_clip(client, prompt: str, out_path: Path, model: str = "veo-3.1-fast-generate-preview", duration: int = 6, max_retries: int = 5) -> Path:
+    """Invokes Google Flow (Veo 3.1) video generation, polls operation, and downloads MP4 with high-demand retry handling."""
     from google.genai import types
 
     if out_path.exists() and out_path.stat().st_size > 500_000:
         print(f"  [Cached] Scene clip already exists: {out_path.name} ({out_path.stat().st_size / 1024 / 1024:.2f} MB)", flush=True)
         return out_path
 
-    print(f"  [Veo 3.1] Submitting generation to model '{model}' ({duration}s)...", flush=True)
-    print(f"  [Prompt] {prompt[:120]}...", flush=True)
+    for attempt in range(1, max_retries + 1):
+        try:
+            print(f"  [Veo 3.1] Submitting generation to model '{model}' ({duration}s, attempt {attempt}/{max_retries})...", flush=True)
+            print(f"  [Prompt] {prompt[:120]}...", flush=True)
 
-    op = client.models.generate_videos(
-        model=model,
-        source=types.GenerateVideosSource(prompt=prompt),
-        config=types.GenerateVideosConfig(
-            aspect_ratio="16:9",
-            duration_seconds=duration,
-        )
-    )
+            op = client.models.generate_videos(
+                model=model,
+                source=types.GenerateVideosSource(prompt=prompt),
+                config=types.GenerateVideosConfig(
+                    aspect_ratio="16:9",
+                    duration_seconds=duration,
+                )
+            )
 
-    op_name = op.name
-    print(f"  [Operation] {op_name} launched. Polling status...", flush=True)
+            op_name = op.name
+            print(f"  [Operation] {op_name} launched. Polling status...", flush=True)
 
-    poll_interval = 8
-    max_wait = 600
-    elapsed = 0
+            poll_interval = 8
+            max_wait = 600
+            elapsed = 0
 
-    while elapsed < max_wait:
-        time.sleep(poll_interval)
-        elapsed += poll_interval
-        # Poll using operation object
-        status_op = client.operations.get(operation=op)
-        if status_op.done:
-            if status_op.error:
-                raise RuntimeError(f"Veo generation failed: {status_op.error}")
-            
-            if not status_op.response or not status_op.response.generated_videos:
-                raise RuntimeError("Veo generation completed without video in response.")
-            
-            video_obj = status_op.response.generated_videos[0].video
-            print(f"  [Complete in {elapsed}s] Downloading video artifact...", flush=True)
-            out_path.parent.mkdir(parents=True, exist_ok=True)
-            client.files.download(file=video_obj, destination=str(out_path))
-            print(f"  [Downloaded] Saved to {out_path} ({out_path.stat().st_size / 1024 / 1024:.2f} MB)", flush=True)
-            return out_path
+            while elapsed < max_wait:
+                time.sleep(poll_interval)
+                elapsed += poll_interval
+                status_op = client.operations.get(operation=op)
+                if status_op.done:
+                    if status_op.error:
+                        err_msg = str(status_op.error)
+                        if "high demand" in err_msg.lower() or "'code': 14" in err_msg or "temporarily unavailable" in err_msg.lower():
+                            backoff = attempt * 30
+                            print(f"  [Veo High Demand Detected] {err_msg} -> Backing off {backoff}s before retry...", flush=True)
+                            time.sleep(backoff)
+                            break # breaks poll loop to trigger outer attempt retry
+                        raise RuntimeError(f"Veo generation failed: {status_op.error}")
+                    
+                    if not status_op.response or not status_op.response.generated_videos:
+                        raise RuntimeError("Veo generation completed without video in response.")
+                    
+                    video_obj = status_op.response.generated_videos[0].video
+                    print(f"  [Complete in {elapsed}s] Downloading video artifact...", flush=True)
+                    out_path.parent.mkdir(parents=True, exist_ok=True)
+                    client.files.download(file=video_obj, destination=str(out_path))
+                    print(f"  [Downloaded] Saved to {out_path} ({out_path.stat().st_size / 1024 / 1024:.2f} MB)", flush=True)
+                    return out_path
 
-        print(f"  [Polling] Waiting for Veo... ({elapsed}s elapsed)", flush=True)
+                print(f"  [Polling] Waiting for Veo... ({elapsed}s elapsed)", flush=True)
 
-    raise TimeoutError(f"Veo generation timed out after {max_wait}s.")
+        except Exception as e:
+            err_str = str(e)
+            if "high demand" in err_str.lower() or "'code': 14" in err_str or "temporarily unavailable" in err_str.lower():
+                backoff = attempt * 30
+                print(f"  [High Demand Error] Backing off {backoff}s before retry (Attempt {attempt}/{max_retries})...", flush=True)
+                time.sleep(backoff)
+                continue
+            raise e
+
+    raise TimeoutError(f"Veo generation failed after {max_retries} attempts due to persistent high demand.")
 
 def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Path, output_path: Path) -> Path:
     """Assembles scene clips to match audio duration, overlays sacred kuthuvilakku/dhoopam frame and subtle drizzle."""
