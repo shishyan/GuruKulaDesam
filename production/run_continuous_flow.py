@@ -77,6 +77,12 @@ def main():
             print(f"[{i}/{len(sorted_tracks)}] SUCCESS: {out_film.name}\n")
             completed += 1
         except Exception as e:
+            err_str = str(e)
+            if "RESOURCE_EXHAUSTED" in err_str or "429" in err_str:
+                print(f"\n[QUOTA REACHED] Veo video generation quota limit reached at track {tid}: {title}")
+                print("Halting production queue cleanly. All completed clips and master films are safely preserved.")
+                print("Resume batch production at any time by re-running: python production/run_continuous_flow.py\n")
+                break
             print(f"[{i}/{len(sorted_tracks)}] ERROR generating {tid}: {e}\n")
             time.sleep(5)
 
