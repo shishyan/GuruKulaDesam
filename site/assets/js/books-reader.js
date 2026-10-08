@@ -166,6 +166,55 @@ function renderCurrentChapterContent() {
   const prevNum = (currentChapter > 1) ? currentChapter - 1 : null;
   const nextNum = (currentChapter < totalChapters) ? currentChapter + 1 : null;
 
+  const images = chap.images || [];
+  window.currentChapterImages = images;
+  window.currentActiveImageIdx = 0;
+
+  // Build Carousel HTML
+  let carouselHtml = '';
+  if (images.length > 0) {
+    const img0 = images[0];
+    let thumbsHtml = '';
+    images.forEach((img, idx) => {
+      thumbsHtml += `
+        <button type="button" class="carousel-thumb-btn ${idx === 0 ? 'active' : ''}" id="chapThumb_${idx}" onclick="switchChapterImage(${idx})" title="${img.typeTitle}: ${img.caption}">
+          <span class="thumb-num-badge">${idx + 1}</span>
+          <img src="${img.url}" alt="${img.caption}" loading="lazy">
+        </button>
+      `;
+    });
+
+    carouselHtml = `
+      <div class="chapter-visuals-panel">
+        <div class="carousel-top-bar">
+          <div class="carousel-heading">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            7 அத்தியாயக் காட்சிகள் (Chapter Visual Gallery)
+          </div>
+          <span class="carousel-counter-pill" id="carouselCounterBadge">காட்சி 1 / ${images.length} • ${img0.typeTitle}</span>
+        </div>
+
+        <div class="carousel-stage" id="carouselStage">
+          <button type="button" class="carousel-nav-btn carousel-prev-btn" onclick="prevChapterImage()" aria-label="முந்தைய காட்சி">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          </button>
+          <img id="carouselMainImg" src="${img0.url}" alt="${img0.caption}">
+          <button type="button" class="carousel-nav-btn carousel-next-btn" onclick="nextChapterImage()" aria-label="அடுத்த காட்சி">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <div class="carousel-overlay-caption" id="carouselCaptionBox">
+            <span class="carousel-caption-tag" id="carouselCaptionTag">${img0.typeTitle}</span>
+            <div class="carousel-caption-text" id="carouselCaptionText">${img0.caption}</div>
+          </div>
+        </div>
+
+        <div class="carousel-thumbs-row">
+          ${thumbsHtml}
+        </div>
+      </div>
+    `;
+  }
+
   container.innerHTML = `
     <article class="reading-chapter-card">
       <div class="chap-read-header">
@@ -179,6 +228,9 @@ function renderCurrentChapterContent() {
         </button>
       </div>
 
+      <!-- 7 Chapter Visuals Carousel Gallery -->
+      ${carouselHtml}
+
       <!-- Sacred Verse Block -->
       <div class="verse-callout-clean" style="background: rgba(0,0,0,0.35); border-left: 4px solid var(--gold); padding: 16px 20px; border-radius: 0 12px 12px 0; margin-bottom: 22px;">
         <div style="font-size:0.8rem; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px;">மூலப் பாடல் / சூத்திரம் (Sacred Verse):</div>
@@ -186,6 +238,15 @@ function renderCurrentChapterContent() {
         <div class="verse-meaning-clean" style="color:#cbd5e1; font-size:0.92rem; margin-top:10px; line-height:1.6;">
           <strong style="color:var(--gold-soft);">பொருள் விளக்கம்:</strong> ${chap.verseMeaning}
         </div>
+        ${images[1] ? `
+          <div class="inline-art-card">
+            <img src="${images[1].url}" alt="${images[1].caption}" loading="lazy">
+            <div class="inline-art-caption">
+              <span>${images[1].caption}</span>
+              <span class="inline-art-badge">காட்சி 2 • செய்யுள் களம்</span>
+            </div>
+          </div>
+        ` : ''}
       </div>
 
       <!-- Philosophical Exposition -->
@@ -194,9 +255,18 @@ function renderCurrentChapterContent() {
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           விரிவுரை &amp; தத்துவ உரை (Philosophical Exposition)
         </h4>
-        <div style="color:#e2e8f0; font-size:0.96rem; line-height:1.8; margin-bottom:18px;">
+        <div style="color:#e2e8f0; font-size:0.96rem; line-height:1.8; margin-bottom:12px;">
           ${chap.exposition}
         </div>
+        ${images[2] ? `
+          <div class="inline-art-card">
+            <img src="${images[2].url}" alt="${images[2].caption}" loading="lazy">
+            <div class="inline-art-caption">
+              <span>${images[2].caption}</span>
+              <span class="inline-art-badge">காட்சி 3 • தத்துவ உரை</span>
+            </div>
+          </div>
+        ` : ''}
       </div>
 
       <!-- Puranic / Itihasic Narrative Story -->
@@ -205,20 +275,47 @@ function renderCurrentChapterContent() {
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
           மெய்ஞ்ஞானக் கதை / அற உருவகம் (Narrative Illustration)
         </h4>
-        <div style="color:#cbd5e1; font-size:0.93rem; line-height:1.8;">
+        ${images[3] ? `
+          <div class="inline-art-card">
+            <img src="${images[3].url}" alt="${images[3].caption}" loading="lazy">
+            <div class="inline-art-caption">
+              <span>${images[3].caption}</span>
+              <span class="inline-art-badge">காட்சி 4 • கதைக் களம்</span>
+            </div>
+          </div>
+        ` : ''}
+        <div style="color:#cbd5e1; font-size:0.93rem; line-height:1.8; margin:12px 0;">
           ${chap.story}
         </div>
+        ${images[4] ? `
+          <div class="inline-art-card">
+            <img src="${images[4].url}" alt="${images[4].caption}" loading="lazy">
+            <div class="inline-art-caption">
+              <span>${images[4].caption}</span>
+              <span class="inline-art-badge">காட்சி 5 • அறத்தின் வெற்றி</span>
+            </div>
+          </div>
+        ` : ''}
       </div>
 
       <!-- Life Application & Householder Dharma -->
       <div class="reading-section-block" style="background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.3); border-radius:12px; padding:18px 20px; margin-bottom:20px;">
         <h4 style="color:#34d399; font-size:1.05rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px;">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg>
-          இல்லற &amp; அன்றாட வாழ்வியல் நடைமுறை (Practical Application)
+          இல்லற &amp; அன்றாட வாழ்வியல் நடைமுறை (Practical Application: 3 Ds)
         </h4>
         <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7;">
           ${chap.lifeApplication}
         </div>
+        ${images[5] ? `
+          <div class="inline-art-card">
+            <img src="${images[5].url}" alt="${images[5].caption}" loading="lazy">
+            <div class="inline-art-caption">
+              <span>${images[5].caption}</span>
+              <span class="inline-art-badge">காட்சி 6 • வாழ்வியல் சாதனா</span>
+            </div>
+          </div>
+        ` : ''}
       </div>
 
       <!-- Sadhana Exercise & Contemplative Question -->
@@ -230,6 +327,15 @@ function renderCurrentChapterContent() {
         <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7;">
           ${chap.exercise}
         </div>
+        ${images[6] ? `
+          <div class="inline-art-card">
+            <img src="${images[6].url}" alt="${images[6].caption}" loading="lazy">
+            <div class="inline-art-caption">
+              <span>${images[6].caption}</span>
+              <span class="inline-art-badge">காட்சி 7 • தியான &amp; சிந்தனைக் காட்சி</span>
+            </div>
+          </div>
+        ` : ''}
       </div>
 
       <!-- Navigation Footer (Prev / Next Chapter) -->
@@ -241,6 +347,56 @@ function renderCurrentChapterContent() {
     </article>
   `;
 }
+
+// Carousel Interactive Controls
+window.switchChapterImage = function(idx) {
+  const images = window.currentChapterImages || [];
+  if (!images || idx < 0 || idx >= images.length) return;
+  window.currentActiveImageIdx = idx;
+
+  const img = images[idx];
+  const mainImg = document.getElementById('carouselMainImg');
+  const badge = document.getElementById('carouselCounterBadge');
+  const tag = document.getElementById('carouselCaptionTag');
+  const text = document.getElementById('carouselCaptionText');
+
+  if (mainImg) {
+    mainImg.style.opacity = '0.4';
+    setTimeout(() => {
+      mainImg.src = img.url;
+      mainImg.alt = img.caption;
+      mainImg.style.opacity = '1';
+    }, 150);
+  }
+  if (badge) badge.innerText = `காட்சி ${idx + 1} / ${images.length} • ${img.typeTitle}`;
+  if (tag) tag.innerText = img.typeTitle;
+  if (text) text.innerText = img.caption;
+
+  // Update active thumbnail
+  document.querySelectorAll('.carousel-thumb-btn').forEach((btn, bIdx) => {
+    if (bIdx === idx) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+};
+
+window.nextChapterImage = function() {
+  const images = window.currentChapterImages || [];
+  if (!images || images.length === 0) return;
+  let nextIdx = (window.currentActiveImageIdx || 0) + 1;
+  if (nextIdx >= images.length) nextIdx = 0;
+  window.switchChapterImage(nextIdx);
+};
+
+window.prevChapterImage = function() {
+  const images = window.currentChapterImages || [];
+  if (!images || images.length === 0) return;
+  let prevIdx = (window.currentActiveImageIdx || 0) - 1;
+  if (prevIdx < 0) prevIdx = images.length - 1;
+  window.switchChapterImage(prevIdx);
+};
 
 function renderFallbackBook() {
   const container = document.getElementById('activeChapterReadingArea');

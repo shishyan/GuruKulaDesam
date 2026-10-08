@@ -578,6 +578,260 @@ def generate_chapter(grade, book_id, chap_num, topic):
         life_app = f"அன்றாட 3 'D' வாழ்வியல் சாதனா: இன்று நாள் முழுவதும் '{topic}' என்ற விழுமியத்தை உங்கள் செயலில் வெளிப்படுத்துங்கள்; சுயமாக உழைத்து, நேரக் கட்டுப்பாட்டைக் கடைப்பிடித்து, இன்முகத்துடன் கடமையாற்றுங்கள்."
         exercise = f"சிந்தனை வினா & பயிற்சி: 1. '{topic}' என்ற கடமை/கட்டுப்பாடு/கண்ணியப் பண்பை இன்று நீங்கள் எவ்வாறு செயல்படுத்தினீர்கள்? 2. விளையாட்டிலோ குடும்பத்திலோ சுய உழைப்பால் கிடைத்த பெருமை தரும் தருணம் எது?"
 
+# Verified Image Pools from assets/images/
+HERO_POOL = [
+    "assets/images/gurukula-banyan-tree-bg.jpg",
+    "assets/images/western-ghats-bg.jpg",
+    "assets/images/western-ghats-peak.jpg",
+    "assets/images/lessons/disciples_under_sacred_tree.jpg",
+    "assets/images/lessons/gurukulam_sacred_refuge.jpg",
+    "assets/images/lessons/western_ghats_hermitage.jpg",
+    "assets/images/lessons/wildlife_stream_harmony.jpg",
+    "assets/images/lessons/sacred_peacock_grove.jpg",
+    "assets/images/lessons/agrarian_abundance.jpg",
+    "assets/images/lessons/hill_fortress_vigilance.jpg"
+]
+
+VERSE_POOL = [
+    "assets/images/lessons/scholar_palm_manuscript.jpg",
+    "assets/images/lessons/thirukkural_valluvar.jpg",
+    "assets/images/lessons/sage_sacred_scripture.jpg",
+    "assets/images/lessons/grade6_thirumoolar_tapas.jpg",
+    "assets/images/lessons/grade5_manikkavasagar_thiruvasagam.jpg",
+    "assets/images/lessons/grade7_periyapuranam_sekkizhar.jpg",
+    "assets/images/lessons/panchakshara_mandala.jpg",
+    "assets/images/lessons/shiva_tripundram.jpg",
+    "assets/images/lessons/temple_bell_morning.jpg",
+    "assets/images/lessons/noble_feast_ahimsa.jpg"
+]
+
+EXPO_POOL = [
+    "assets/images/lessons/grade11_pancha_koshas.jpg",
+    "assets/images/lessons/grade10_pati_pasu_pasam.jpg",
+    "assets/images/lessons/grade9_body_is_temple.jpg",
+    "assets/images/lessons/grade9_shaddarshanas_dialogue.jpg",
+    "assets/images/lessons/grade12_jivanmukti_36tattvas.jpg",
+    "assets/images/lessons/grade8_meykanda_sastras.jpg",
+    "assets/images/lessons/grade8_chatur_ashrama.jpg",
+    "assets/images/lessons/mindfulness_vigilance.jpg",
+    "assets/images/lessons/temple_architecture.jpg",
+    "assets/images/lessons/siddha_herbal_wisdom.jpg"
+]
+
+STORY_START_POOL = [
+    "assets/images/lessons/stories/grade3_sambandar_divine_milk.jpg",
+    "assets/images/lessons/stories/grade3_avvaiyar_athiyaman_amla.jpg",
+    "assets/images/lessons/stories/grade5_sundarar_wedding_interruption.jpg",
+    "assets/images/lessons/stories/grade6_thirumoolar_cattle_compassion.jpg",
+    "assets/images/lessons/stories/grade7_kannappa_nayanar_supreme_love.jpg",
+    "assets/images/lessons/stories/grade10_manikkavasagar_horses_miracle.jpg",
+    "assets/images/lessons/stories/grade11_shravana_kumara_devotion.jpg",
+    "assets/images/lessons/stories/grade4_nandanar_nandi_miracle.jpg",
+    "assets/images/lessons/stories/grade9_siruthondar_divine_guest.jpg",
+    "assets/images/lessons/stories/grade9_sambandar_madurai_debate.jpg"
+]
+
+STORY_CLIMAX_POOL = [
+    "assets/images/lessons/stories/grade4_appar_lime_kiln.jpg",
+    "assets/images/lessons/stories/grade5_markandeya_yama_victory.jpg",
+    "assets/images/lessons/stories/grade6_rajaraja_chola_temple_dedication.jpg",
+    "assets/images/lessons/stories/grade8_karaikkal_ammaiyar_kailash.jpg",
+    "assets/images/lessons/stories/grade8_pattinathar_renunciation.jpg",
+    "assets/images/lessons/stories/grade10_arunagirinathar_murugan_grace.jpg",
+    "assets/images/lessons/stories/grade11_harischandra_truth_triumph.jpg",
+    "assets/images/lessons/stories/grade12_nachiketas_return_enlightened.jpg",
+    "assets/images/lessons/stories/grade12_vallalar_light_dissolution.jpg",
+    "assets/images/lessons/nataraja_cosmic_dance.jpg"
+]
+
+LIFE_APP_POOL = [
+    "assets/images/lessons/dharma/dharma_01_morning_parent_reverence.jpg",
+    "assets/images/lessons/dharma/dharma_02_kolam_courtyard_sanctity.jpg",
+    "assets/images/lessons/dharma/dharma_03_bird_water_pot_summer.jpg",
+    "assets/images/lessons/dharma/dharma_04_feeding_hungry_guest.jpg",
+    "assets/images/lessons/dharma/dharma_05_annadhanam_guest_feeding.jpg",
+    "assets/images/lessons/dharma/dharma_06_cow_calf_gopuja.jpg",
+    "assets/images/lessons/dharma/dharma_07_family_evening_thevaram.jpg",
+    "assets/images/lessons/dharma/dharma_08_elder_care_veneration.jpg",
+    "assets/images/lessons/dharma/dharma_09_community_canal_maintenance.jpg",
+    "assets/images/lessons/dharma/dharma_10_truthful_merchant_dharma.jpg",
+    "assets/images/lessons/dharma/dharma_11_ahimsa_protecting_creatures.jpg",
+    "assets/images/lessons/dharma/dharma_13_temple_service_uzhavaram.jpg",
+    "assets/images/lessons/dharma/dharma_14_charity_annadhanam_festival.jpg",
+    "assets/images/lessons/dharma/dharma_15_planting_shade_trees.jpg",
+    "assets/images/lessons/dharma/dharma_16_water_charity_thanneer_panthal.jpg",
+    "assets/images/lessons/dharma/dharma_17_learning_scriptures_olai_chuvadi.jpg",
+    "assets/images/lessons/dharma/dharma_18_forgiveness_resolving_dispute.jpg",
+    "assets/images/lessons/dharma/dharma_19_frugal_noble_living.jpg",
+    "assets/images/lessons/dharma/dharma_20_peaceful_fulfillment_old_age.jpg",
+    "assets/images/lessons/industrious_diligent_artisan.jpg",
+    "assets/images/lessons/harvesting_family_dharma.jpg",
+    "assets/images/lessons/children_feeding_creatures.jpg"
+]
+
+MEDITATION_POOL = [
+    "assets/images/lessons/thavam_tapas_meditation.jpg",
+    "assets/images/lessons/mountain_cave_tapas.jpg",
+    "assets/images/lessons/universal_anjali_prayer.jpg",
+    "assets/images/lessons/grade11_nachiketas_yama.jpg",
+    "assets/images/lessons/grade12_thayumanavar_universal.jpg",
+    "assets/images/lessons/grade8_vallalar_jyothi.jpg",
+    "assets/images/lessons/sage_universal_compassion.jpg",
+    "assets/images/lessons/wise_counsel_nobility.jpg"
+]
+
+def generate_chapter_images(grade, book_id, chap_num, topic):
+    offset = (grade * 19 + chap_num * 7 + len(topic) * 3) % 100
+
+    hero_url = HERO_POOL[offset % len(HERO_POOL)]
+    verse_url = VERSE_POOL[(offset + 1) % len(VERSE_POOL)]
+    expo_url = EXPO_POOL[(offset + 2) % len(EXPO_POOL)]
+    story1_url = STORY_START_POOL[(offset + 3) % len(STORY_START_POOL)]
+    story2_url = STORY_CLIMAX_POOL[(offset + 4) % len(STORY_CLIMAX_POOL)]
+    life_url = LIFE_APP_POOL[(offset + 5) % len(LIFE_APP_POOL)]
+    med_url = MEDITATION_POOL[(offset + 6) % len(MEDITATION_POOL)]
+
+    return [
+        {
+            "index": 1,
+            "type": "hero",
+            "typeTitle": "முகப்பு ஓவியம் (Theme Hero Visual)",
+            "caption": f"{topic} — அத்தியாய முகப்புக் காட்சி: தர்ம விழுமியத்தின் ஆன்மீக உருவகம்.",
+            "url": hero_url,
+            "prompt": f"Masterpiece digital painting depicting {topic}. Ethereal atmospheric lighting, tranquil temple forest / gurukula ashram ambiance, classical Indian art style, highly detailed 8k."
+        },
+        {
+            "index": 2,
+            "type": "verse",
+            "typeTitle": "செய்யுள் காட்சி (Sacred Verse Art)",
+            "caption": f"{topic} செய்யுள் பின்னணி: மூலப் பாடல் உதித்த ஞானக் களம்.",
+            "url": verse_url,
+            "prompt": f"Ancient Indian sage / poet writing sacred palm leaf manuscripts under banyan tree, serene morning mist, sacred temple tower background, warm candlelight glow, traditional attire."
+        },
+        {
+            "index": 3,
+            "type": "exposition",
+            "typeTitle": "தத்துவ விளக்கம் (Philosophical Infographic)",
+            "caption": f"{topic} தத்துவ விளக்கம்: மன அமைதி மற்றும் வாழ்வியல் ஒழுக்கத்தின் வரைபடம்.",
+            "url": expo_url,
+            "prompt": f"Conceptual Vedic / Buddhist philosophical visual diagram illustrating {topic}. Harmonious geometric lotus mandala, serene energy channels, cosmic balance of mind and senses, glowing golden light."
+        },
+        {
+            "index": 4,
+            "type": "story_start",
+            "typeTitle": "கதைத் தொடக்கம் (Narrative Origin)",
+            "caption": f"{topic} வரலாற்றுத் தொடக்கம்: சூழலும் தொடக்க அற அறைகூவலும்.",
+            "url": story1_url,
+            "prompt": f"Historical narrative scene showing the beginning of the story of {topic}. Classical Tamil / Vedic palace or village setting, expressive characters, vibrant dramatic cinematic lighting."
+        },
+        {
+            "index": 5,
+            "type": "story_climax",
+            "typeTitle": "கதை உச்சக்கட்டம் (Climax & Moral Victory)",
+            "caption": f"{topic} அறத்தின் வெற்றி: மெய்ஞ்ஞான தரிசனம் மற்றும் நற்பெயரின் மலர்ச்சி.",
+            "url": story2_url,
+            "prompt": f"Climactic spiritual moment of moral triumph and divine darshan for {topic}. Radiant transcendental illumination, sacred symbols, peaceful resolution, emotionally moving composition."
+        },
+        {
+            "index": 6,
+            "type": "life_application",
+            "typeTitle": "வாழ்வியல் சாதனா (3 Ds in Action)",
+            "caption": f"{topic} அன்றாட வாழ்வில் 3 Ds: கடமை, கட்டுப்பாடு மற்றும் கண்ணியச் சாதனா.",
+            "url": life_url,
+            "prompt": f"Inspiring contemporary and traditional scene of disciplined students and householders actively practicing Duty, Discipline, and Dignity related to {topic}. Clean environment, joyful cooperative spirit."
+        },
+        {
+            "index": 7,
+            "type": "meditation",
+            "typeTitle": "தியான & சிந்தனைக் காட்சி (Contemplative Vision)",
+            "caption": f"{topic} தியான & சிந்தனைக் காட்சி: அமைதியான உள்ளுணர்வுப் பார்வை.",
+            "url": med_url,
+            "prompt": f"Serene meditative contemplation scene in deep mountain hermitage or quiet temple sanctum. Single oil lamp burning steadily, calm focused expression, pure inner stillness, transcendent peace."
+        }
+    ]
+
+def generate_chapter(grade, book_id, chap_num, topic):
+    book_info_map = {b[0]: b for b in BOOKS_INFO}
+    b_id, b_title, b_en, b_tag, b_src = book_info_map[book_id]
+    phase_title, lit_base, psych_goal = PHASE_MAPPING[grade]
+
+    # Check if specific verse exists
+    if topic in VERSES:
+        v_text, v_mean = VERSES[topic]
+    else:
+        v_text = f"தர்மமே வெல்லும், வாய்மையே வெல்லும் — {topic} விழுமியம்.\n— மரபுச் செய்யுள்"
+        v_mean = f"{topic} என்ற தர்ம நெறியைக் கடைப்பிடிப்பவர்கள் வாழ்வில் என்றும் மேன்மையும் மன அமைதியும் பெறுவார்கள்."
+
+    # Pedagogical Exposition
+    if book_id == "narchinthanai":
+        expo = (
+            f"தரம் {grade} மாணவர்களுக்கான நற்சிந்தனை நூலின் {chap_num}-ஆம் அத்தியாயம். "
+            f"கௌதம புத்தரின் மேலான போதனைகளும் தம்மபதமும் நமக்குப் புகட்டும் உன்னதப் பாடம்: '{topic}'. "
+            f"மனமே நமது வாழ்வின் திசையைத் தீர்மானிக்கிறது. ஆசையினாலும் கோபத்தினாலும் எழும் அலைபாயும் மனதை விபாசனா விழிப்புணர்வாலும் "
+            f"மைத்திரி (Loving-kindness) பாவனையாலும் அமைதிப்படுத்த வேண்டும். நடுநிலை மார்க்கம் (Middle Path) வழியே எதையும் விருப்பு-வெறுப்பின்றி "
+            f"சாட்சியாகப் பார்க்கும் பக்குவமே அனைத்துத் துக்கங்களிலிருந்தும் விடுதலை அளிக்கும்."
+        )
+        story = (
+            f"புத்தரின் மெய்ஞ்ஞான வரலாற்று நிகழ்வு: ஒருமுறை பகவன் புத்தர் தன் சீடர்களுடன் மரத்தடியில் அமர்ந்திருந்தபோது, "
+            f"இத்தத்துவமான '{topic}' குறித்து நடைமுறை விளக்கம் அளித்தார். உள்ளத்தில் எழும் கசப்புணர்வுகள் பிறரைத் தாக்குவதற்கு முன் "
+            f"நம்மையே எவ்வாறு சுட்டெரிக்கின்றன என்பதையும், சாந்தமும் விழிப்புணர்வும் எவ்வாறு எதிரியையும் நண்பனாக்குகின்றன என்பதையும் "
+            f"புத்தரின் எளிய கருணை மொழி சீடர்களின் இதயங்களைத் தொட்டது. அன்றிலிருந்து சீடர்கள் மன அமைதியின் ரகசியத்தை உணர்ந்து வாழ்ந்தனர்."
+        )
+        life_app = f"அன்றாட விபாசனா & மைத்திரி சாதனா: தினமும் காலையில் 5 நிமிடங்கள் கண்களை மூடி அமர்ந்து மூச்சை மட்டும் கவனித்தல்; '{topic}' எண்ணத்தை மனதில் நிறுத்தி அனைத்து உயிர்களும் இன்புற்று வாழ்க என வாழ்த்துதல்."
+        exercise = f"சிந்தனை வினா & பயிற்சி: 1. உங்கள் மனதில் கோபமோ பதற்றமோ எழும்போது '{topic}' தத்துவம் எவ்வாறு அமைதி தரும்? 2. புத்தர் காட்டிய வழியில் இன்று நீங்கள் செய்த ஒரு கருணைச் செயல் யாது?"
+
+    elif book_id == "narchol":
+        expo = (
+            f"தரம் {grade} மாணவர்களுக்கான நற்சொல் நூலின் {chap_num}-ஆம் அத்தியாயம். "
+            f"திருமூலரின் திருமந்திரமும், புனிதம் வாய்ந்த மூல மந்திரங்களும் நமக்குப் புகட்டும் நாத விஞ்ஞானம்: '{topic}'. "
+            f"சொல் என்பது வெறும் காற்று அல்ல; அது மூளையையும் இதயத்தையும் செதுக்கும் சக்திவாய்ந்த அதிர்வு அலை. "
+            f"பகவத் கீதை 17.15-ல் பகவான் கிருஷ்ணர் கூறிய வாக்-தபஸ் (நாவுக்கான தவம்) நெறிப்படி, சத்தியமாகவும், பிறருக்கு இதமாகவும், "
+            f"நன்மை பயப்பதாகவும் மட்டுமே பேச வேண்டும். திருமந்திரப் பாடல்களும் மந்திர ஜபமும் நம் நாடிகளைச் சுத்திகரித்து வாக்கு சித்தியை அருளுகின்றன."
+        )
+        story = (
+            f"திருமந்திர நாத வரலாறு: திருமூல நாயனார் சாத்தனூர் ஆநிரைகளைக் காத்த வரலாறும், மூவாயிரம் ஆண்டுகள் தவமிருந்து ஆண்டுக்கு ஒரு செய்யுளாக "
+            f"திருமந்திரத்தை வடித்த உன்னதமும் நினைவுகூரத்தக்கது. '{topic}' என்ற மந்திர ஒலியின் ஆற்றலை உணர்ந்த அருளாளர்கள், "
+            f"சொல்லின் சக்தியால் நோய்களையும் துன்பங்களையும் நீக்கினர். 'யான் பெற்ற இன்பம் பெறுக இவ்வையகம்' என்ற திருமூலரின் திருவாக்கு "
+            f"சொற்களை எவ்வாறு உலக நன்மைக்காக மட்டுமே பயன்படுத்த வேண்டும் என்பதற்கு காலத்தை வென்ற வழிகாட்டியாகும்."
+        )
+        life_app = f"அன்றாட வாக்கு சாதனா & மந்திர ஜபம்: தினமும் காலையில் நீராடிவிட்டு '{topic}' சார்ந்த மூல மந்திரத்தை அல்லது திருமந்திரப் பாடலை 11 முறை தெளிவான உச்சரிப்புடன் ஜபித்தல்; நாள் முழுவதும் பயனற்ற வீண் பேச்சுகளையும் புறங்கூறுதலையும் தவிர்த்தல்."
+        exercise = f"சிந்தனை வினா & பயிற்சி: 1. '{topic}' என்ற மந்திரத்தின் அதிர்வு உங்கள் மனதிற்குள் எத்தகைய அமைதியை உருவாக்குகிறது? 2. இன்று நீங்கள் பேசிய சொற்களில் பிறர் மனம் மகிழ்ந்த ஒரு நிகழ்வை எழுதுக."
+
+    elif book_id == "narthunai":
+        expo = (
+            f"தரம் {grade} மாணவர்களுக்கான நற்துணை நூலின் {chap_num}-ஆம் அத்தியாயம். "
+            f"இறை நாமத் துணையோடு, திருக்கோயில் வழிபாடு, பஞ்ச மகா யக்ஞங்கள் மற்றும் நித்திய பூஜைகள் நமக்கு அருளும் ஆன்ம பலம்: '{topic}'. "
+            f"வாழ்க்கையில் புயல் போன்ற சோதனைகள் வரும்போது, மனித உதவிகள் கைவிட்டாலும் இறைவனின் திருவருளும் நாம் செய்த அறவேள்விகளும் "
+            f"அணையாத கலங்கரை விளக்கமாக நின்று நம்மைக் காக்கும். திருநாவுக்கரசர் பெருமான் 'நற்றுணையாவது நமச்சிவாயவே' என்று கல்லையே மிதக்க வைத்தது போல, "
+            f"ஆகம வழிபாடும் தினசரி பூசைகளும் இல்லறத்தையும் உள்ளத்தையும் தெய்வத் தன்மையுள்ள புனிதக் கோயிலாக மாற்றுகின்றன."
+        )
+        story = (
+            f"பக்தி மற்றும் வேள்வி மரபு வரலாறு: அப்பர் சுவாமிகள் சமண மன்னனால் சுண்ணாம்புக் காளவாயில் தள்ளப்பட்டபோதும், நஞ்சு ஊட்டப்பட்டபோதும், "
+            f"மதயானை ஏவப்பட்டபோதும், கடலில் தள்ளப்பட்டபோதும் அஞ்சாமல் நின்றதற்குக் காரணம் அவரிடம் இருந்த '{topic}' என்னும் இறைத் துணையே ஆகும். "
+            f"அதேபோல சோழ மன்னர்களும் நாயன்மார்களும் திருக்கோயில்களை வெறும் கட்டடங்களாகக் கட்டாமல், சமுதாயத்தின் பசிப்பிணி தீர்க்கும், கலைகளை வளர்க்கும், "
+            f"பஞ்ச மகா யக்ஞங்களை நடத்தும் மாபெரும் தர்ம மையங்களாக உருவாக்கினர் என்பதை இச்சரித்திரம் விளக்குகிறது."
+        )
+        life_app = f"அன்றாட இல்லற & ஆலய வழிபாட்டு சாதனா: வீட்டில் விளக்கேற்றி எளிய முறையில் '{topic}' சார்ந்த வழிபாட்டைச் செய்தல்; திருக்கோயிலுக்குச் செல்லும்போது அமைதியோடும் மரியாதையோடும் வலம் வந்து இறைவனைத் தொழுதல்."
+        exercise = f"சிந்தனை வினா & பயிற்சி: 1. திருக்கோயில் அல்லது நித்திய பூஜையில் ஈடுபடும்போது உங்களுக்கு ஏற்படும் மன அமைதி எத்தகையது? 2. '{topic}' வழியில் பிற உயிர்களுக்கோ ஏழைகளுக்கோ நீங்கள் செய்த ஓர் உதவி யாது?"
+
+    elif book_id == "narcheyal":
+        expo = (
+            f"தரம் {grade} மாணவர்களுக்கான நற்செயல் நூலின் {chap_num}-ஆம் அத்தியாயம். "
+            f"கடமை (Duty), கட்டுப்பாடு (Discipline), கண்ணியம் (Dignity) ஆகிய 3 'D' விழுமியங்களை செயலில் காட்டும் வாழ்வியல் சாதனா: '{topic}'. "
+            f"கற்ற கல்வியானது பேச்சில் மட்டும் இருந்தால் பயனில்லை; அது அன்றாடச் செயலில் வெளிப்பட வேண்டும். "
+            f"மழலைப் பருவத்தில் மகிழ்ச்சியாக விளையாடுவதே தலையாய கடமை; பள்ளிக்கு ஒழுங்காக வருவதும் நேரத்தோடு உறங்குவதும் கட்டுப்பாடு; "
+            f"யாசித்துக் கெஞ்சாமல், தோழர்களை மதித்து தலைநிமிர்ந்து வாழ்வதே கண்ணியம். வளர்ந்த பிறகு, குடும்பத்தை தாங்கும் கடமையும், "
+            f"நேர்மையான உழைப்பால் செல்வத்தை ஈட்டும் (Nyaya Artha) கண்ணியமும் ஒரு முழுமையான தலைவனை உருவாக்குகிறது."
+        )
+        story = (
+            f"வாழ்வியல் அறநெறி வரலாறு: கடமை தவறாத அரசன் அரிச்சந்திரனும், கொடுத்த வாக்கை உயிரினும் மேலாகக் காத்த ஸ்ரீராமரும், "
+            f"தன் தட்டையும் துணியையும் தானே துவைத்து உழைப்பின் மாண்பைக் காட்டிய அண்ணல் காந்தியடிகளும் '{topic}' தத்துவத்திற்கு வாழும் உதாரணங்கள். "
+            f"அதேபோல விவேகானந்தர் கூறியது போல, 'இளைஞனே! முதலில் உன் கடமையைச் செய்; எதற்கும் அஞ்சாத கட்டுப்பாடு கொள்; தலைநிமிர்ந்த கண்ணியத்தோடு வாழ்!' "
+            f"என்ற முழக்கத்தின்படி வாழ்ந்த சான்றோர்கள் வரலாற்றில் அழியாத நற்பெயர் பெற்றனர்."
+        )
+        life_app = f"அன்றாட 3 'D' வாழ்வியல் சாதனா: இன்று நாள் முழுவதும் '{topic}' என்ற விழுமியத்தை உங்கள் செயலில் வெளிப்படுத்துங்கள்; சுயமாக உழைத்து, நேரக் கட்டுப்பாட்டைக் கடைப்பிடித்து, இன்முகத்துடன் கடமையாற்றுங்கள்."
+        exercise = f"சிந்தனை வினா & பயிற்சி: 1. '{topic}' என்ற கடமை/கட்டுப்பாடு/கண்ணியப் பண்பை இன்று நீங்கள் எவ்வாறு செயல்படுத்தினீர்கள்? 2. விளையாட்டிலோ குடும்பத்திலோ சுய உழைப்பால் கிடைத்த பெருமை தரும் தருணம் எது?"
+
     else:
         # Nanneri, Nallaram, Nalvazhi
         expo = (
@@ -593,6 +847,9 @@ def generate_chapter(grade, book_id, chap_num, topic):
         life_app = f"அன்றாட இல்லற & மாணவ வாழ்வியல் சாதனா: தினமும் காலையிலும் மாலையிலும் '{topic}' சார்ந்த நற்பண்பை நடைமுறையில் கடைப்பிடித்தல்; குடும்பத்தாரிடமும் ஆசிரியரிடமும் இன்முகத்துடன் பழகி நல்வாழ்வை நிலைநிறுத்துதல்."
         exercise = f"சிந்தனை வினா & பயிற்சி: 1. உங்கள் வாழ்வில் '{topic}' என்ற நற்பண்பை எப்போது கடைப்பிடித்தீர்கள்? 2. இக்கதையில் வரும் நாயகரின் முடிவிலிருந்து நீங்கள் கற்றுக்கொண்ட வாழ்வியல் பாடம் யாது?"
 
+    # Generate 7 dedicated images for this chapter (approx 50 images per book)
+    chapter_images = generate_chapter_images(grade, book_id, chap_num, topic)
+
     return {
         "chapterNumber": chap_num,
         "title": f"{topic}",
@@ -601,7 +858,8 @@ def generate_chapter(grade, book_id, chap_num, topic):
         "exposition": expo,
         "story": story,
         "lifeApplication": life_app,
-        "exercise": exercise
+        "exercise": exercise,
+        "images": chapter_images
     }
 
 print("Beginning generation of all 12 Grade Sacred Books (588 chapters)...")

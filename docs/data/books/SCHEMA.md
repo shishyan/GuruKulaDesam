@@ -29,5 +29,20 @@ Each book MUST contain at least 7 complete chapters with:
 - `verseMeaning`: Word/line meaning in Tamil
 - `exposition`: Detailed philosophical teaching (2-3 paragraphs in Tamil)
 - `story`: Engaging narrative illustrating the principle (Puranic / Itihasic / real-life)
-- `lifeApplication`: Specific actionable householder / student daily dharma practice
+- `lifeApplication`: Specific actionable householder / student daily dharma practice (3 Ds: Duty, Discipline, Dignity)
 - `exercise`: Contemplative question or practical task
+- `images`: Array of 7 curated visual scenes (7 chapters × 7 images = 49 images per book, ~50 images overall; 4,116 images total across Grades 1–12):
+  1. `hero` (முகப்பு ஓவியம்): Theme Hero Visual setting the spiritual/dharmic atmosphere.
+  2. `verse` (செய்யுள் காட்சி): Sacred Verse Illustration depicting the sage/poet or scriptural setting.
+  3. `exposition` (தத்துவ விளக்கம்): Philosophical Infographic / Conceptual Art visualizing the mental model.
+  4. `story_start` (கதைத் தொடக்கம்): Narrative Scene 1 showing historical origin, characters, and ethical context.
+  5. `story_climax` (கதை உச்சக்கட்டம்): Narrative Scene 2 depicting the moral victory, transformation, and divine darshan.
+  6. `life_application` (வாழ்வியல் சாதனா): 3 Ds in Action (Duty, Discipline, Dignity) practical living scene.
+  7. `meditation` (தியான & சிந்தனைக் காட்சி): Contemplative vision inspiring inner silence and meditation.
+  Each image entry contains:
+  - `index`: 1 to 7
+  - `type`: string identifier
+  - `typeTitle`: Tamil type badge
+  - `caption`: Contextual Tamil caption
+  - `url`: Path to verified image asset
+  - `prompt`: Detailed generative AI art prompt for visual synthesis
