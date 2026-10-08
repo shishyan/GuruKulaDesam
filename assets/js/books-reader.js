@@ -195,14 +195,14 @@ function renderCurrentChapterContent() {
         </div>
 
         <div class="carousel-stage" id="carouselStage">
-          <button type="button" class="carousel-nav-btn carousel-prev-btn" onclick="prevChapterImage()" aria-label="முந்தைய காட்சி">
+          <button type="button" class="carousel-nav-btn carousel-prev-btn" onclick="event.stopPropagation(); prevChapterImage()" aria-label="முந்தைய காட்சி">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
           </button>
-          <img id="carouselMainImg" src="${img0.url}" alt="${img0.caption}">
-          <button type="button" class="carousel-nav-btn carousel-next-btn" onclick="nextChapterImage()" aria-label="அடுத்த காட்சி">
+          <img id="carouselMainImg" src="${img0.url}" alt="${img0.caption}" onclick="openArtLightboxByIndex(window.currentActiveImageIdx || 0)" title="பெரிதாகக் காண கிளிக் செய்க">
+          <button type="button" class="carousel-nav-btn carousel-next-btn" onclick="event.stopPropagation(); nextChapterImage()" aria-label="அடுத்த காட்சி">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </button>
-          <div class="carousel-overlay-caption" id="carouselCaptionBox">
+          <div class="carousel-overlay-caption" id="carouselCaptionBox" onclick="openArtLightboxByIndex(window.currentActiveImageIdx || 0)">
             <span class="carousel-caption-tag" id="carouselCaptionTag">${img0.typeTitle}</span>
             <div class="carousel-caption-text" id="carouselCaptionText">${img0.caption}</div>
           </div>
@@ -239,7 +239,10 @@ function renderCurrentChapterContent() {
           <strong style="color:var(--gold-soft);">பொருள் விளக்கம்:</strong> ${chap.verseMeaning}
         </div>
         ${images[1] ? `
-          <div class="inline-art-card">
+          <div class="inline-art-card" onclick="openArtLightboxByIndex(1)" title="பெரிதாகக் காண கிளிக் செய்க">
+            <div class="art-zoom-hint">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
+            </div>
             <img src="${images[1].url}" alt="${images[1].caption}" loading="lazy">
             <div class="inline-art-caption">
               <span>${images[1].caption}</span>
@@ -259,7 +262,10 @@ function renderCurrentChapterContent() {
           ${chap.exposition}
         </div>
         ${images[2] ? `
-          <div class="inline-art-card">
+          <div class="inline-art-card" onclick="openArtLightboxByIndex(2)" title="பெரிதாகக் காண கிளிக் செய்க">
+            <div class="art-zoom-hint">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
+            </div>
             <img src="${images[2].url}" alt="${images[2].caption}" loading="lazy">
             <div class="inline-art-caption">
               <span>${images[2].caption}</span>
@@ -276,7 +282,10 @@ function renderCurrentChapterContent() {
           மெய்ஞ்ஞானக் கதை / அற உருவகம் (Narrative Illustration)
         </h4>
         ${images[3] ? `
-          <div class="inline-art-card">
+          <div class="inline-art-card" onclick="openArtLightboxByIndex(3)" title="பெரிதாகக் காண கிளிக் செய்க">
+            <div class="art-zoom-hint">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
+            </div>
             <img src="${images[3].url}" alt="${images[3].caption}" loading="lazy">
             <div class="inline-art-caption">
               <span>${images[3].caption}</span>
@@ -288,7 +297,10 @@ function renderCurrentChapterContent() {
           ${chap.story}
         </div>
         ${images[4] ? `
-          <div class="inline-art-card">
+          <div class="inline-art-card" onclick="openArtLightboxByIndex(4)" title="பெரிதாகக் காண கிளிக் செய்க">
+            <div class="art-zoom-hint">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
+            </div>
             <img src="${images[4].url}" alt="${images[4].caption}" loading="lazy">
             <div class="inline-art-caption">
               <span>${images[4].caption}</span>
@@ -308,7 +320,10 @@ function renderCurrentChapterContent() {
           ${chap.lifeApplication}
         </div>
         ${images[5] ? `
-          <div class="inline-art-card">
+          <div class="inline-art-card" onclick="openArtLightboxByIndex(5)" title="பெரிதாகக் காண கிளிக் செய்க">
+            <div class="art-zoom-hint">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
+            </div>
             <img src="${images[5].url}" alt="${images[5].caption}" loading="lazy">
             <div class="inline-art-caption">
               <span>${images[5].caption}</span>
@@ -328,7 +343,10 @@ function renderCurrentChapterContent() {
           ${chap.exercise}
         </div>
         ${images[6] ? `
-          <div class="inline-art-card">
+          <div class="inline-art-card" onclick="openArtLightboxByIndex(6)" title="பெரிதாகக் காண கிளிக் செய்க">
+            <div class="art-zoom-hint">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
+            </div>
             <img src="${images[6].url}" alt="${images[6].caption}" loading="lazy">
             <div class="inline-art-caption">
               <span>${images[6].caption}</span>
@@ -428,6 +446,87 @@ function readAloudChapter() {
     alert('உங்கள் உலாவியில் குரல்வழி வாசிப்பு வசதி இல்லை.');
   }
 }
+
+// High-Resolution Artwork Lightbox Modal Controls
+window.currentLightboxIdx = 0;
+
+window.openArtLightboxByIndex = function(idx) {
+  const images = window.currentChapterImages || [];
+  if (!images || images.length === 0) return;
+  if (idx < 0) idx = 0;
+  if (idx >= images.length) idx = images.length - 1;
+  window.currentLightboxIdx = idx;
+
+  const modal = document.getElementById('artLightboxModal');
+  const imgEl = document.getElementById('artLightboxImg');
+  const counterEl = document.getElementById('artLightboxCounter');
+  const typeEl = document.getElementById('artLightboxType');
+  const captionEl = document.getElementById('artLightboxCaption');
+  const promptEl = document.getElementById('artLightboxPrompt');
+  const dlBtn = document.getElementById('artLightboxDownloadBtn');
+
+  if (!modal || !imgEl) return;
+
+  const cur = images[idx];
+  imgEl.src = cur.url;
+  imgEl.alt = cur.caption;
+  imgEl.classList.remove('zoomed');
+
+  if (counterEl) counterEl.innerText = `காட்சி ${idx + 1} / ${images.length}`;
+  if (typeEl) typeEl.innerText = cur.typeTitle || 'மரபு ஓவியக் காட்சி';
+  if (captionEl) captionEl.innerText = cur.caption;
+  if (promptEl) promptEl.innerText = cur.prompt || 'பாரம்பரிய இந்திய மரபு ஓவியக் கலை பாணி';
+  if (dlBtn) {
+    dlBtn.href = cur.url;
+    dlBtn.setAttribute('download', cur.url.split('/').pop());
+  }
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeArtLightbox = function() {
+  const modal = document.getElementById('artLightboxModal');
+  if (modal) modal.classList.remove('active');
+  const imgEl = document.getElementById('artLightboxImg');
+  if (imgEl) imgEl.classList.remove('zoomed');
+  document.body.style.overflow = '';
+};
+
+window.nextArtLightboxImage = function() {
+  const images = window.currentChapterImages || [];
+  if (!images || images.length === 0) return;
+  let next = window.currentLightboxIdx + 1;
+  if (next >= images.length) next = 0;
+  window.openArtLightboxByIndex(next);
+};
+
+window.prevArtLightboxImage = function() {
+  const images = window.currentChapterImages || [];
+  if (!images || images.length === 0) return;
+  let prev = window.currentLightboxIdx - 1;
+  if (prev < 0) prev = images.length - 1;
+  window.openArtLightboxByIndex(prev);
+};
+
+window.toggleArtZoom = function() {
+  const imgEl = document.getElementById('artLightboxImg');
+  if (imgEl) imgEl.classList.toggle('zoomed');
+};
+
+// Keyboard navigation for Lightbox
+document.addEventListener('keydown', (e) => {
+  const modal = document.getElementById('artLightboxModal');
+  if (!modal || !modal.classList.contains('active')) return;
+
+  if (e.key === 'Escape') {
+    window.closeArtLightbox();
+  } else if (e.key === 'ArrowRight') {
+    window.nextArtLightboxImage();
+  } else if (e.key === 'ArrowLeft') {
+    window.prevArtLightboxImage();
+  }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('activeChapterReadingArea')) {
