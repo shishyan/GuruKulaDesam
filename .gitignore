@@ -25,7 +25,8 @@ Thumbs.db
 .idea/
 # Credentials & Tokens
 .env
-/data/
+/data/*
+!/data/books/
 *client_secret*.json
 token.json
 client_secrets.json

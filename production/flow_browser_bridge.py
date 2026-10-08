@@ -201,8 +201,21 @@ def wait_and_extend_video(page, dest_mp4_path: Path, extend_count: int = 2, cont
     """Opens the generated video in the Flow editor, extends it using the Extend option,
     and downloads the concatenated multi-clip extended video."""
     print(f"[Flow Extend] Opening video in editor for {extend_count} extensions...")
-    editor_btn = page.locator("button[aria-label='Open video in editor']").last
-    if editor_btn.count() == 0 or not editor_btn.is_visible():
+    
+    # Hover over newest video card to reveal overlay action buttons
+    cards = page.locator("div[class*='card'], div[class*='tile'], div[class*='video'], div[class*='artifact']").all()
+    if cards:
+        try:
+            cards[-1].hover()
+            page.wait_for_timeout(600)
+        except Exception:
+            pass
+
+    editor_btn = page.locator("button:has-text('play_circle'), [aria-label*='Open video in editor' i]").last
+    if editor_btn.count() == 0:
+        editor_btn = page.locator("button[aria-label*='editor' i]").last
+
+    if editor_btn.count() == 0:
         print("[Flow Extend Warning] 'Open video in editor' button not found, falling back to direct download.")
         return False
 

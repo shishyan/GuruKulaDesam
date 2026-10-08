@@ -58,6 +58,11 @@ def sync_folders(repo_root, source_name='docs'):
                 items_to_copy.append(('file', entry))
         elif entry == 'assets':
             items_to_copy.append(('dir', 'assets'))
+        elif entry == 'data':
+            # Only sync data/books to keep mirrors clean and lightweight
+            src_books = os.path.join(src_path, 'books')
+            if os.path.exists(src_books):
+                items_to_copy.append(('dir', os.path.join('data', 'books')))
             
     total_synced = 0
     total_bytes = 0
