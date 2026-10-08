@@ -127,12 +127,22 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240):
         page.wait_for_timeout(6000)
         elapsed = int(time.time() - start_t)
 
+        # Check for transient error or retry button
+        try_again = page.locator("button:has-text('Try again')").first
+        if try_again.count() > 0 and try_again.is_visible():
+            print("[Flow] Transient error encountered. Clicking 'Try again'...")
+            try_again.click()
+            page.wait_for_timeout(3000)
+            wait_for_assistant_and_approve(page)
+            start_t = time.time()
+            continue
+
         if elapsed < 45:
             print(f"[Flow] Render in progress... {elapsed}s elapsed")
             continue
         
-        # Check for Download batch button on the video card
-        dl_btn = page.locator("button[aria-label*='Download' i]").first
+        # Check for Download batch button on the newest video card
+        dl_btn = page.locator("button[aria-label*='Download' i]").last
         if dl_btn.count() > 0 and dl_btn.is_visible() and dl_btn.is_enabled():
             print(f"[Flow] Video ready! Initiating download (Elapsed: {elapsed}s)...")
             temp_zip = dest_mp4_path.parent / f"temp_{int(time.time())}.zip"
@@ -236,10 +246,13 @@ def generate_track_on_flow(track_id: str):
                     # Open fresh project for each scene
                     print(f"\n[Scene {sc_num}] Creating fresh project workspace on Google Flow...")
                     page.goto(FLOW_URL)
+                    page.wait_for_timeout(3000)
                     try:
                         page.wait_for_selector("button:has-text('New project'), [role='button']:has-text('New project')", timeout=25000)
                         new_proj = page.locator("button:has-text('New project'), [role='button']:has-text('New project')").first
                         new_proj.click()
+                        page.wait_for_url("**/project/**", timeout=25000)
+                        page.wait_for_timeout(3000)
                     except Exception as e:
                         print(f"[Flow Warning] Could not click New project: {e}")
 
