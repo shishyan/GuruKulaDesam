@@ -54,7 +54,7 @@ def sync_folders(repo_root, source_name='docs'):
     for entry in os.listdir(src_dir):
         src_path = os.path.join(src_dir, entry)
         if os.path.isfile(src_path):
-            if entry.endswith('.html') or entry in ['manifest.json', 'sw.js', 'CNAME']:
+            if (entry.endswith('.html') and not entry.startswith('scraped_')) or entry in ['manifest.json', 'sw.js', 'CNAME']:
                 items_to_copy.append(('file', entry))
         elif entry == 'assets':
             items_to_copy.append(('dir', 'assets'))

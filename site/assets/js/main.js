@@ -883,6 +883,7 @@ function resetUserSettings() {
 }
 
 // --------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 // PRIMARY 6-GROUP MENU DRAWER & SIDEBAR CONTROLS
 // --------------------------------------------------------------------------
 function expandLeftStrip() {
@@ -942,7 +943,7 @@ function toggleLeftStrip() {
 }
 
 function closeMobileStrip() {
-  collapseLeftStrip();
+  closePrimaryMenu();
 }
 
 function openUserSettingsModal(tab) {
@@ -1612,6 +1613,8 @@ function renderTopBreadcrumbBar() {
   // 2. Remove any previous context-tabs-nav (no in-page section jumper pills!)
   const existingTabs = document.getElementById('contextTabsNav');
   if (existingTabs && existingTabs.parentNode) existingTabs.parentNode.removeChild(existingTabs);
+  const existingTools = document.querySelector('.header-right-tools');
+  if (existingTools && existingTools.parentNode) existingTools.parentNode.removeChild(existingTools);
 
   // 3. Resolve page context and links
   const ctx = resolvePageContext();
@@ -1705,16 +1708,9 @@ function renderContextTabsIntoHeader() {
   renderTopBreadcrumbBar();
 }
 
-function handleTabClick(btn, actionStr) {
-  try {
-    const fn = new Function(actionStr);
-    fn();
-  } catch (e) {
-    console.error('Error executing action:', e);
-  }
-}
-
 function mountAppShell() {
+  if (document.getElementById('leftStripBar')) return;
+
   // 1. Render Top Breadcrumb Bar
   renderTopBreadcrumbBar();
 
@@ -1725,79 +1721,76 @@ function mountAppShell() {
   const oldSensitiveBar = document.getElementById('contextSensitiveBar');
   if (oldSensitiveBar && oldSensitiveBar.parentNode) oldSensitiveBar.parentNode.removeChild(oldSensitiveBar);
 
-  let strip = document.getElementById('leftStripBar');
-  if (!strip) {
-    // Backdrop
-    let backdrop = document.getElementById('stripBackdrop');
-    if (!backdrop) {
-      backdrop = document.createElement('div');
-      backdrop.id = 'stripBackdrop';
-      backdrop.className = 'strip-backdrop';
-      backdrop.onclick = collapseLeftStrip;
-      document.body.appendChild(backdrop);
-    }
-
-    // Left Strip Bar
-    const currentPath = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
-    strip = document.createElement('aside');
-    strip.id = 'leftStripBar';
-    strip.className = 'left-strip-bar';
-    strip.setAttribute('aria-label', 'முதன்மை பட்டி');
-
-    const navItems = [
-      { href: 'index.html', icon: GKD_ICONS.home, label: 'முகப்பு' },
-      { href: 'kalvi.html', icon: GKD_ICONS.leaf, label: 'வாழ்வியல் நெறி' },
-      { href: 'virtues.html', icon: GKD_ICONS.virtues, label: 'நற்பண்புகள்' },
-      { href: 'saiva-neri.html', icon: GKD_ICONS.om, label: 'சைவ நெறி' },
-      { href: 'irai-isai-virundhu.html', icon: GKD_ICONS.music, label: 'இறை இசை' },
-      { href: 'thirukkural.html', icon: GKD_ICONS.scroll, label: 'திருக்குறள்' },
-      { href: 'sanmargam.html', icon: GKD_ICONS.flame, label: 'சன்மார்க்கம்' },
-      { href: 'murugan.html', icon: GKD_ICONS.vel, label: 'முருகன்' },
-      { href: 'sakthi.html', icon: GKD_ICONS.lotus, label: 'சக்தி நெறி' },
-      { href: 'vinayagar.html', icon: GKD_ICONS.ganesha, label: 'விநாயகர்' },
-      { href: 'vaishnava.html', icon: GKD_ICONS.chakra, label: 'வைணவம்' },
-      { href: 'syllabus.html', icon: GKD_ICONS.book, label: 'பாடத்திட்டம்' },
-      { href: 'about.html', icon: GKD_ICONS.temple, label: 'பெரியவா' }
-    ];
-
-    strip.innerHTML = `
-      <div class="strip-header">
-        <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
-          <span class="strip-emblem">ॐ</span>
-          <span class="strip-brand-text">குரு குல தேசம்</span>
-        </a>
-        <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="togglePrimaryMenu()" title="பட்டி மாற்று">
-          <span class="strip-toggle-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
-        </button>
-      </div>
-
-      <nav class="strip-nav-list" id="stripNavList">
-        ${navItems.map(item => `
-          <a href="${item.href}" class="strip-item ${currentPath === item.href ? 'active' : ''}" data-tooltip="${item.label}">
-            <span class="strip-item-icon">${item.icon}</span>
-            <span class="strip-item-label">${item.label}</span>
-          </a>
-        `).join('')}
-      </nav>
-
-      <div class="strip-footer-dock">
-        <a href="help.html" class="strip-dock-btn" data-tooltip="உதவி மையம்" title="உதவி &amp; வழிகாட்டல்">
-          <span class="strip-item-icon">${GKD_ICONS.question}</span>
-          <span class="strip-dock-label">உதவி மையம்</span>
-        </a>
-        <button type="button" class="strip-dock-btn" data-tooltip="அமைப்புகள்" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
-          <span class="strip-item-icon">${GKD_ICONS.settings}</span>
-          <span class="strip-dock-label">அமைப்புகள்</span>
-        </button>
-        <button type="button" class="strip-dock-btn profile-dock-btn" data-tooltip="சுயவிவரம்" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
-          <span class="strip-dock-avatar" id="stripAvatarIcon">${GKD_ICONS.user}</span>
-          <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
-        </button>
-      </div>
-    `;
-
-    document.body.prepend(strip);
+  // 4. Backdrop
+  let backdrop = document.getElementById('stripBackdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.id = 'stripBackdrop';
+    backdrop.className = 'strip-backdrop';
+    backdrop.onclick = collapseLeftStrip;
+    document.body.appendChild(backdrop);
   }
+
+  // 5. Left Strip Bar
+  const currentPath = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const strip = document.createElement('aside');
+  strip.id = 'leftStripBar';
+  strip.className = 'left-strip-bar';
+  strip.setAttribute('aria-label', 'முதன்மை பட்டி');
+
+  const navItems = [
+    { href: 'index.html', icon: GKD_ICONS.home, label: 'முகப்பு' },
+    { href: 'kalvi.html', icon: GKD_ICONS.leaf, label: 'வாழ்வியல் நெறி' },
+    { href: 'virtues.html', icon: GKD_ICONS.virtues, label: 'நற்பண்புகள்' },
+    { href: 'saiva-neri.html', icon: GKD_ICONS.om, label: 'சைவ நெறி' },
+    { href: 'irai-isai-virundhu.html', icon: GKD_ICONS.music, label: 'இறை இசை' },
+    { href: 'thirukkural.html', icon: GKD_ICONS.scroll, label: 'திருக்குறள்' },
+    { href: 'sanmargam.html', icon: GKD_ICONS.flame, label: 'சன்மார்க்கம்' },
+    { href: 'murugan.html', icon: GKD_ICONS.vel, label: 'முருகன்' },
+    { href: 'sakthi.html', icon: GKD_ICONS.lotus, label: 'சக்தி நெறி' },
+    { href: 'vinayagar.html', icon: GKD_ICONS.ganesha, label: 'விநாயகர்' },
+    { href: 'vaishnava.html', icon: GKD_ICONS.chakra, label: 'வைணவம்' },
+    { href: 'syllabus.html', icon: GKD_ICONS.book, label: 'பாடத்திட்டம்' },
+    { href: 'about.html', icon: GKD_ICONS.temple, label: 'பெரியவா' }
+  ];
+
+  strip.innerHTML = `
+    <div class="strip-header">
+      <a href="index.html" class="strip-brand-link" title="குரு குல தேசம்">
+        <span class="strip-emblem">ॐ</span>
+        <span class="strip-brand-text">குரு குல தேசம்</span>
+      </a>
+      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="togglePrimaryMenu()" title="பட்டி மாற்று">
+        <span class="strip-toggle-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+      </button>
+    </div>
+
+    <nav class="strip-nav-list" id="stripNavList">
+      ${navItems.map(item => `
+        <a href="${item.href}" class="strip-item ${currentPath === item.href ? 'active' : ''}" data-tooltip="${item.label}">
+          <span class="strip-item-icon">${item.icon}</span>
+          <span class="strip-item-label">${item.label}</span>
+        </a>
+      `).join('')}
+    </nav>
+
+    <div class="strip-footer-dock">
+      <a href="help.html" class="strip-dock-btn" data-tooltip="உதவி மையம்" title="உதவி &amp; வழிகாட்டல்">
+        <span class="strip-item-icon">${GKD_ICONS.question}</span>
+        <span class="strip-dock-label">உதவி மையம்</span>
+      </a>
+      <button type="button" class="strip-dock-btn" data-tooltip="அமைப்புகள்" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்">
+        <span class="strip-item-icon">${GKD_ICONS.settings}</span>
+        <span class="strip-dock-label">அமைப்புகள்</span>
+      </button>
+      <button type="button" class="strip-dock-btn profile-dock-btn" data-tooltip="சுயவிவரம்" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்">
+        <span class="strip-dock-avatar" id="stripAvatarIcon">${GKD_ICONS.user}</span>
+        <span class="strip-dock-label" id="stripUserName">சுயவிவரம்</span>
+      </button>
+    </div>
+  `;
+
+  document.body.prepend(strip);
 
   // Restore strip expanded state on desktop if previously saved
   if (window.innerWidth >= 992 && localStorage.getItem('GURUKULA_STRIP_EXPANDED') === 'true') {
@@ -2057,6 +2050,7 @@ if (document.readyState === 'loading') {
   hydrateModernIcons();
 }
 
+// Accordion support and Drawer auto-close on selection
 // Accordion support, click-to-expand collapsed strip, and Drawer auto-close
 document.addEventListener('click', (e) => {
   const strip = document.getElementById('leftStripBar');
@@ -2093,9 +2087,17 @@ document.addEventListener('click', (e) => {
       document.querySelectorAll('.strip-group').forEach(g => {
         if (g !== group) {
           g.classList.remove('open');
+          const ind = g.querySelector('.strip-sub-indicator');
+          // Handled via CSS transform rotate
+          // ind.innerText = '▾';
         }
       });
       group.classList.toggle('open', !wasOpen);
+      const indicator = subToggle.querySelector('.strip-sub-indicator');
+      if (indicator) {
+        // Handled via CSS transform rotate
+        // indicator.innerText = !wasOpen ? '▴' : '▾';
+      }
     }
     return;
   }

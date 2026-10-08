@@ -70,7 +70,7 @@ def test_js_syntax(repo_root):
     has_errors = False
     for jsf in js_files:
         try:
-            res = subprocess.run(['node', '-c', jsf], capture_output=True, text=True, check=True)
+            res = subprocess.run(['node', '-c', jsf], capture_output=True, text=True, encoding='utf-8', errors='replace', check=True)
             print(f"    [PASS] {os.path.basename(jsf)} syntax valid.")
         except subprocess.CalledProcessError as e:
             print(f"    [FAIL] {os.path.basename(jsf)} syntax error:\n{e.stderr}")
