@@ -20,7 +20,7 @@ import argparse
 import time
 
 if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
 
 UPDATES_FILE = os.path.join(os.path.dirname(__file__), "all_channel_title_updates.json")
 MASTER_FILE = os.path.join(os.path.dirname(__file__), "master_all_598_songs_catalog.json")
@@ -247,7 +247,7 @@ def run_live(updates):
 def main():
     parser = argparse.ArgumentParser(description="Sync standardized titles to YouTube channel @guru-kula-desam")
     parser.add_argument("--live", action="store_true", help="Execute live updates using YouTube Data API")
-    parser.add_argument("--dry-run", action="store_true", default=True, help="Simulate updates without calling API (default)")
+    parser.add_argument("--dry-run", action="store_true", help="Simulate updates without calling API (default)")
     parser.add_argument("--all", action="store_true", help="Process all 323 changed tracks (including DistroKid audio tracks)")
     parser.add_argument("--master", action="store_true", help="Verify all 598 catalog tracks across entire library")
     args = parser.parse_args()

@@ -1,4 +1,4 @@
-// Complete Curated Web Catalog (598 Compositions Across 8 Sacred Genres)
+// Complete Curated Web Catalog (604 Compositions Across 8 Sacred Genres)
 window.GKD_SITE_CATALOG = {
   "thirukkural": [
     {
@@ -3712,7 +3712,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "4QpJHz2SAbU",
-      "title": "திருவாசகம்: கள்ளப் பிழையும் (போற்றித் திருஅகவல்) | Thiruvasagam: Kalla Pizhaiyum [Film]",
+      "title": "திருவாசகம்: போற்றித் திருஅகவல் | Thiruvasagam: Potrith Thiruagaval [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -3801,7 +3801,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "tTQIGe4LJK4",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: சிவநேச வெண்பா | Shiva Devotional: Sivanesa Venba [Film]",
+      "title": "சிவ பக்திப் பாடல்: சிவநேச வெண்பா | Shiva Devotional: Sivanesa Venba [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -3846,7 +3846,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "jZFTlpJwn6A",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: தியாக வண்ணப் பதிகம் | Thiyaga Vanna Pathigam [Film]",
+      "title": "சிவ பக்திப் பாடல்: தியாக வண்ணப் பதிகம் | Shiva Devotional: Thiyaga Vanna Pathigam [Film]",
       "type": "film",
       "playlists": [
         "Lord Shiva Songs"
@@ -3965,7 +3965,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "mPypwIgdo-E",
-      "title": "திருவாசகம்: திருப்புலம்பல் | Thiruvasagam: Thiruppulambal [Film]",
+      "title": "திருவாசகம்: திருப்புலம்பல் II | Thiruvasagam: Thiruppulambal II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -3980,7 +3980,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "BbDNJdLDy-4",
-      "title": "திருவாசகம்: திருப்புலம்பல் | Thiruvasagam: Thiruppulambal [Film]",
+      "title": "திருவாசகம்: திருப்புலம்பல் II | Thiruvasagam: Thiruppulambal II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -4055,7 +4055,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "orWUAxhBOsg",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: திருமுல்லைவாயில் | Shiva Devotional: Thirumullaivayil [Film]",
+      "title": "தேவாரம்: திருமுல்லைவாயில் பதிகம் | Thevaram: Thirumullaivayil Pathigam [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -4070,7 +4070,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "peEwj9A2blw",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: திருவசிய மந்திரம் 2026 | Thiruvasiyam Mantra [Film]",
+      "title": "சிவ பக்திப் பாடல்: திருவசிய மந்திரம் II | Shiva Devotional: Thiruvasiyam Mantra II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -4144,7 +4144,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "fJIeiPyejxU",
-      "title": "சிவ பக்திப் பாடல்: திருவருட்பா: ஆறாம் திருமுறை - பரசிவ வணக்கம் | Thiruvarutpa: Hymn [Film]",
+      "title": "திருவருட்பா: பரசிவ வணக்கம் | Thiruvarutpa: Parasiva Vanakkam [Film]",
       "type": "film",
       "playlists": [
         "Lord Shiva Songs"
@@ -4201,7 +4201,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "wGtcobqR01Q",
-      "title": "சிவ பக்திப் பாடல்: திருவருட்பா: திருவருள் வழக்க விளக்கம் | Thiruvarutpa: Thiruvarul Vazh [Film]",
+      "title": "திருவருட்பா: திருவருள் வழக்க விளக்கம் | Thiruvarutpa: Thiruvarul Vazhakka Vilakkam [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -4231,7 +4231,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "2mdEV1acg-U",
-      "title": "திருவாசகம்: குழைத்த பத்து | Thiruvasagam: Kuzhaitha Pathu [Film]",
+      "title": "திருவாசகம்: குழைத்த பத்து II | Thiruvasagam: Kuzhaitha Pathu II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -4450,7 +4450,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "Yk9JZ7WTk-k",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: நமச்சிவாய ஸங்கீர்த்தனம் | Namasivaya Sankeerthanam [Film]",
+      "title": "நாம சங்கீர்த்தனம்: நமச்சிவாய சங்கீர்த்தனம் | Namasivaya Sankeerthanam [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -4760,7 +4760,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "I70WNnsVXtY",
-      "title": "திருவாசகம்: கள்ளப் பிழையும் (போற்றித் திருஅகவல்) | Thiruvasagam: Kalla Pizhaiyum [Film]",
+      "title": "திருவாசகம்: போற்றித் திருஅகவல் | Thiruvasagam: Potrith Thiruagaval [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -4774,7 +4774,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "nSQKZ2htJ-o",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: Maasil Veenaiyum | Shiva Devotional: Maasil Veenaiyum [Film]",
+      "title": "தேவாரம்: Maasil Veenaiyum | Thevaram: Maasil Veenaiyum [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -4816,7 +4816,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "iKIsoxTz5-k",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: Poovar Senni Mannan (Thiruvasagam) | Yaththirai Patht [Audio]",
+      "title": "திருவாசகம்: Poovar Senni Mannan (Thiruvasagam) | Thiruvasagam: Yaththirai Paththu [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -4858,7 +4858,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "l-JJXW1QKdg",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: Thillai Vazh Anthanar Tham | Thillai Vazh Anthanar Tha [Film]",
+      "title": "திருவாசகம்: Thillai Vazh Anthanar Tham | Thiruvasagam: Thillai Vazh Anthanar Tham [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -4928,7 +4928,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "nsWHXJGDYA8",
-      "title": "திருவாசகம்: அன்னைப்பத்து | Thiruvasagam: Annaippathu [Film]",
+      "title": "திருவாசகம்: அன்னைப்பத்து II | Thiruvasagam: Annaippathu II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5068,7 +5068,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "yrmF7nfwnsQ",
-      "title": "சிவ பக்திப் பாடல்: தேவாரம்: கோளறு திருப்பதிகம் | Thevaram: Kolaru Pathigam [Film]",
+      "title": "தேவாரம்: கோளறு திருப்பதிகம் II | Thevaram: Kolaru Pathigam II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5082,7 +5082,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "u41L3XgIgGc",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: சிவ புராணம் 2026 | Puranam (Thiruvasagam) [Audio]",
+      "title": "திருவாசகம்: சிவ புராணம் | Thiruvasagam: Puranam (Thiruvasagam) [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5096,7 +5096,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "bZmif21zNtw",
-      "title": "சிவ பக்திப் பாடல்: திருவருட்பா: சிவநேச வெண்பா (திருவருட்பா) | Thiruvarutpa: Sivanesa Ven [Film]",
+      "title": "சிவ பக்திப் பாடல்: சிவநேச வெண்பா | Shiva Devotional: Sivanesa Venba [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5110,7 +5110,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "75W77Q-_Oe8",
-      "title": "திருவாசகம்: சென்னிப்பத்து | Thiruvasagam: Sennippathu [Film]",
+      "title": "திருவாசகம்: சென்னிப்பத்து II | Thiruvasagam: Sennippathu II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5208,7 +5208,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "qQqwD3gjenE",
-      "title": "திருவாசகம்: திருப்புலம்பல் | Thiruvasagam: Thiruppulambal [Film]",
+      "title": "திருவாசகம்: திருப்புலம்பல் II | Thiruvasagam: Thiruppulambal II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5306,7 +5306,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "lAWfE9YSJME",
-      "title": "சிவ பக்திப் பாடல்: திருவருட்பா: பரசிவ வணக்கம் | Thiruvarutpa: Parasiva Vanakkam [Audio]",
+      "title": "திருவருட்பா: பரசிவ வணக்கம் | Thiruvarutpa: Parasiva Vanakkam [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5446,7 +5446,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "DCJ2qoMSIBA",
-      "title": "சிவ பக்திப் பாடல்: திருவருட்பா: தியாக வண்ணப் பதிகம் | Thiruvarutpa: Thiyaga Vanna Pathi [Audio]",
+      "title": "சிவ பக்திப் பாடல்: தியாக வண்ணப் பதிகம் | Shiva Devotional: Thiyaga Vanna Pathigam [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5460,7 +5460,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "hDoLscfeg5Q",
-      "title": "சிவ பக்திப் பாடல்: திருவருட்பா: திருவருள் வழக்க விளக்கம் | Thiruvarutpa: Thiruvarul Vaz [Audio]",
+      "title": "திருவருட்பா: திருவருள் வழக்க விளக்கம் | Thiruvarutpa: Thiruvarul Vazhakka Vilakkam [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5474,7 +5474,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "uMK4LISQFE4",
-      "title": "சிவ பக்திப் பாடல்: திருவருட்பா: திருமுல்லைவாயில் II | Thiruvarutpa: Thirumullaivayil II [Audio]",
+      "title": "தேவாரம்: திருமுல்லைவாயில் பதிகம் II | Thevaram: Thirumullaivayil Pathigam II [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5488,7 +5488,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "73GrCFM_v6Q",
-      "title": "சிவ பக்திப் பாடல்: திருவருட்பா: திருமுல்லைவாயில் I | Thiruvarutpa: Thirumullaivayil I [Audio]",
+      "title": "தேவாரம்: திருமுல்லைவாயில் பதிகம் I | Thevaram: Thirumullaivayil Pathigam I [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5502,7 +5502,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "EOkuHFSfv8c",
-      "title": "சிவ பக்திப் பாடல்: திருவருட்பா: நமச்சிவாய ஸங்கீர்த்தனம் | Thiruvarutpa: Namasivaya Sank [Audio]",
+      "title": "நாம சங்கீர்த்தனம்: நமச்சிவாய சங்கீர்த்தனம் | Namasivaya Sankeerthanam [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5544,7 +5544,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "vZyHNMkm8xU",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: திருவாசகம் - தென் நாடுடைய சிவனே போற்றி (Female) | [Audio]",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5572,7 +5572,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "fdB9R7QeXo0",
-      "title": "திருவாசகம்: குழைத்த பத்து | Thiruvasagam: Kuzhaitha Pathu [Audio]",
+      "title": "திருவாசகம்: குழைத்த பத்து II | Thiruvasagam: Kuzhaitha Pathu II [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5586,7 +5586,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "e9fTnxiiLnc",
-      "title": "திருவாசகம்: திருவார்த்தை | Thiruvasagam: Thiruvaarthai [Film]",
+      "title": "திருவாசகம்: திருவார்த்தை II | Thiruvasagam: Thiruvaarthai II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5600,7 +5600,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "xc1iNs05Bkw",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: திருவெண்பா | Shiva Devotional: hiphop [Film]",
+      "title": "திருவாசகம்: திருவெண்பா | Thiruvasagam: Thiruvenba [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5614,7 +5614,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "o5PVED0ZcfU",
-      "title": "சிவ பக்திப் பாடல்: பக்திப் பாடல்: திருவெண்பா 2026 (திருவாசகம்) | Thiruvenba HipHop [Film]",
+      "title": "திருவாசகம்: திருவெண்பா II | Thiruvasagam: Thiruvenba II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5642,7 +5642,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "zFb2PGEPrr4",
-      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) (Original) | Thiruvothur Pathigam (Origi [Film]",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) | Thevaram: Thiruvothur Pathigam [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5670,7 +5670,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "qqpvlkv0mSY",
-      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) | Thevaram: Thiruvothur Pathigam [Audio]",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II | Thevaram: Thiruvothur Pathigam II [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5684,7 +5684,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "YycgNlQl6Go",
-      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) | Thevaram: Thiruvothur Pathigam [Audio]",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) I | Thevaram: Thiruvothur Pathigam I [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5768,7 +5768,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "j1tzixa2raU",
-      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Film]",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி II | Thiruvasagam: Thennadudaiya Sivaney Potri II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -5782,7 +5782,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "QFCD-U3sT4M",
-      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Film]",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி II | Thiruvasagam: Thennadudaiya Sivaney Potri II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6012,7 +6012,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "1hoVaPwWMes",
-      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் | Kandha Sashti Kavasam: Kandha Sashti Kavasam [Film]",
+      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் II | Kandha Sashti Kavasam: Kandha Sashti Kavasam II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6027,7 +6027,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "eEYBleNgRGU",
-      "title": "கந்தர் அலங்காரம்: நாள் என் செய்யும் | Kandhar Alangaram: Naal En Seyyum [Film]",
+      "title": "கந்தர் அலங்காரம்: நாள் என் செய்யும் II | Kandhar Alangaram: Naal En Seyyum II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6042,7 +6042,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "hKkmbQ9TIaU",
-      "title": "முருகன் துதி: திருப்புகழ்: கைத்தல நிறைகனி | Thiruppugazh: Kaiththala Niraigani Thiruppug [Film]",
+      "title": "திருப்புகழ்: கைத்தல நிறைகனி | Thiruppugazh: Kaithala Niraigani [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6102,7 +6102,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "meXI3QsNHhE",
-      "title": "முருகன் துதி: திருப்புகழ்: திருப்புகழ் 566 இரத்னகிரி I | Thiruppugazh: Rathinagiri Thiru [Film]",
+      "title": "திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி) I | Thiruppugazh: Rathinagiri Thiruppugazh I [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6117,7 +6117,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "FTAB7OBVPPY",
-      "title": "முருகன் துதி: திருப்புகழ்: திருப்புகழ் 566 இரத்னகிரி II | Thiruppugazh: Rathinagiri Thir [Film]",
+      "title": "திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி) II | Thiruppugazh: Rathinagiri Thiruppugazh II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6132,7 +6132,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "Nvx3ObuSndM",
-      "title": "முருகன் துதி: திருப்புகழ்: திருப்புகழ் 712 சீர் உலாவிய | Thiruppugazh: Seer Ulaaviya [Film]",
+      "title": "திருப்புகழ்: திருப்புகழ் 712 (திருப்போரூர்) | Thiruppugazh: Thirupporur Thiruppugazh [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6147,7 +6147,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "l3E27q5r-nk",
-      "title": "முருகன் துதி: திருவருட்பா: திருப்புகழ் விலாசம் | Thiruvarutpa: Thiruppugazh Vilasam [Film]",
+      "title": "திருப்புகழ்: திருப்புகழ் விலாசம் | Thiruppugazh: Thiruppugazh Vilasam [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6162,7 +6162,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "nuSx1NgiCuo",
-      "title": "முருகன் துதி: திருப்புகழ்: நாத விந்துகள் | Thiruppugazh: Naatha Vindhugal Pazhani Thirup [Film]",
+      "title": "திருப்புகழ்: நாத விந்துகள் (பழனி) | Thiruppugazh: Naatha Vindhugal [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6237,7 +6237,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "SN7FIkL-o1k",
-      "title": "முருகன் துதி: திருப்புகழ்: முத்தைத் தரு | Thiruppugazh: Muthai Tharu Thiruppugazh [Film]",
+      "title": "திருப்புகழ்: முத்தைத் தரு | Thiruppugazh: Muthai Tharu Thiruppugazh [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6252,7 +6252,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "-L3VXkM2MTY",
-      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6282,7 +6282,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "QRSRyYEacMs",
-      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் (Symphony) | Uruvaai Aruvaai (Symphony) [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6326,7 +6326,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "IhE1OvdIBKs",
-      "title": "முருகன் துதி: திருப்புகழ்: கைத்தல நிறைகனி (திருப்புகழ்) | Thiruppugazh: Kaiththala Nirai [Film]",
+      "title": "திருப்புகழ்: கைத்தல நிறைகனி | Thiruppugazh: Kaithala Niraigani [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6368,7 +6368,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "C9Ea0-FfMNs",
-      "title": "முருகன் துதி: திருப்புகழ்: நாத விந்துகள் (பழனி திருப்புகழ்) | Thiruppugazh: Naatha Vindh [Film]",
+      "title": "திருப்புகழ்: நாத விந்துகள் (பழனி) | Thiruppugazh: Naatha Vindhugal [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6410,7 +6410,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "GydxHEmyDPc",
-      "title": "விநாயகர் துதி: கண நாதா ஓம் (Original) | Vinayagar Thuthi: Gana Natha Om (Original) [Film]",
+      "title": "விநாயகர் துதி: கண நாதா ஓம் | Vinayagar Devotional: Gana Natha Om [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6424,7 +6424,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "vFbw9hX0wO4",
-      "title": "விநாயகர் துதி: கண நாதா ஓம் (Symphony) | Vinayagar Thuthi: Gana Natha Om (Symphony) [Film]",
+      "title": "விநாயகர் துதி: கண நாதா ஓம் (Symphony) | Vinayagar Devotional: Gana Natha Om (Symphony) [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6438,7 +6438,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "CFEYF0X6fLU",
-      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் | Kandha Sashti Kavasam: Kandha Sashti Kavasam [Film]",
+      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் II | Kandha Sashti Kavasam: Kandha Sashti Kavasam II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6452,7 +6452,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "ZZKjQ1SD_mQ",
-      "title": "கந்தர் அலங்காரம்: நாள் என் செய்யும் | Kandhar Alangaram: Naal En Seyyum [Film]",
+      "title": "கந்தர் அலங்காரம்: நாள் என் செய்யும் II | Kandhar Alangaram: Naal En Seyyum II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6466,7 +6466,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "PVcmqZuROSU",
-      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6480,7 +6480,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "x355fpndpTI",
-      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6494,7 +6494,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "S4ogw4EfpDY",
-      "title": "முருகன் துதி: திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி I) | Thiruppugazh: Thiruppugazh 56 [Film]",
+      "title": "திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி) I | Thiruppugazh: Rathinagiri Thiruppugazh I [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6508,7 +6508,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "bOxyDZgsI2c",
-      "title": "முருகன் துதி: திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி II) | Thiruppugazh 566 Rathnagiri [Film]",
+      "title": "திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி) II | Thiruppugazh: Rathinagiri Thiruppugazh II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6522,7 +6522,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "YxP_uh3dM18",
-      "title": "முருகன் துதி: திருப்புகழ்: திருப்புகழ் 712 - சீர் உலாவிய (திருப்போரூர் I) | Seer Ulaavi [Audio]",
+      "title": "திருப்புகழ்: திருப்புகழ் 712 (திருப்போரூர்) I | Thirupporur Thiruppugazh I [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6536,7 +6536,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "iPFEtwdcIxc",
-      "title": "முருகன் துதி: திருப்புகழ்: திருப்புகழ் 712 - சீர் உலாவிய (திருப்போரூர் II) | Seer Ulaav [Audio]",
+      "title": "திருப்புகழ்: திருப்புகழ் 712 (திருப்போரூர்) II | Thirupporur Thiruppugazh II [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6550,7 +6550,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "XelTS98bLec",
-      "title": "முருகன் துதி: திருவருட்பா: திருப்புகழ் விலாசம் | Thiruvarutpa: Thiruppugazh Vilasam [Audio]",
+      "title": "திருப்புகழ்: திருப்புகழ் விலாசம் | Thiruppugazh: Thiruppugazh Vilasam [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6564,7 +6564,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "qRqkS1Kf8lA",
-      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் (Original) | Uruvaai Aruvaai (Original) [Film]",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6592,7 +6592,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "On2xoZqBsss",
-      "title": "முருகன் துதி: திருப்புகழ்: முத்தைத் தரு (திருப்புகழ்) | Thiruppugazh: Muthai Tharu [Film]",
+      "title": "திருப்புகழ்: முத்தைத் தரு (திருப்புகழ்) | Thiruppugazh: Muthai Tharu [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6606,7 +6606,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "3oJ2OPG-WCs",
-      "title": "முருகன் துதி: திருப்புகழ்: முத்தைத் தரு 2026 (திருப்புகழ்) | Thiruppugazh: Muthai Tharu [Film]",
+      "title": "திருப்புகழ்: முத்தைத் தரு (திருப்புகழ்) | Thiruppugazh: Muthai Tharu [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6620,7 +6620,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "qr5jAhLRLUE",
-      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6634,7 +6634,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "8jLZHiozGxw",
-      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் (Original) | Uruvaai Aruvaai (Original) [Film]",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6662,7 +6662,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "LL77sdbmUNE",
-      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Audio]",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -6784,7 +6784,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "NeauJSGB2W8",
-      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் | Krishna Thuthi: Krishna Mantra [Film]",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் | Krishna Devotional: Krishna Mantra [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6799,7 +6799,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "xjem5fTKx90",
-      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் I | Krishna Thuthi: Krishna Mantra I [Film]",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் I | Krishna Devotional: Krishna Mantra I [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6814,7 +6814,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "S_FoILDLhls",
-      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் I | Krishna Thuthi: Krishna Mantra I [Film]",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் II | Krishna Devotional: Krishna Mantra II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -6829,7 +6829,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "40ML9b--tg4",
-      "title": "விஷ்ணு துதி: பக்திப் பாடல்: சிவ புராணம் 2026 (II) | Vishnu Devotional: Sivapuranam II [Film]",
+      "title": "திருவாசகம்: சிவ புராணம் (II) | Thiruvasagam: Sivapuranam II [Film]",
       "type": "film",
       "playlists": [
         "Lord Shiva Songs",
@@ -6934,7 +6934,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "QXqjB9UnD7E",
-      "title": "விஷ்ணு துதி: திருப்பாவை: திருவெண்பா (Remix) | Thiruppavai: Thiruvenba [Remix]",
+      "title": "திருவாசகம்: திருவெண்பா (Remix) | Thiruvasagam: Thiruvenba (Remix) [Remix]",
       "type": "film",
       "playlists": [
         "Lord Shiva Songs",
@@ -6949,7 +6949,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "yEZFeX0no9o",
-      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) I | Thevaram: Thiruvothur Pathigam I [Film]",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II | Thevaram: Thiruvothur Pathigam II [Film]",
       "type": "film",
       "playlists": [
         "Lord Shiva Songs",
@@ -6964,7 +6964,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "klSi7r6YhCU",
-      "title": "விஷ்ணு துதி: திருப்பாவை: தென் நாடுடைய சிவனே போற்றி! (Female) | Thiruppavai: Hymn [Film]",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Film]",
       "type": "film",
       "playlists": [
         "Lord Shiva Songs",
@@ -6979,7 +6979,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "qdaQ-ffeBso",
-      "title": "விஷ்ணு துதி: திருப்பாவை: நமச்சிவாய வாழ்க! (Children) | Thiruppavai: Namasivaya Vaazhga [Film]",
+      "title": "திருவாசகம்: சிவபுராணம் | Thiruvasagam: Sivapuranam [Film]",
       "type": "film",
       "playlists": [
         "Lord Shiva Songs",
@@ -6994,7 +6994,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "WIDyQVQY2X8",
-      "title": "மகாவிஷ்ணு துதி: நமோ நாராயணம் (தசாவதாரம்) | Maha Vishnu: Namo Narayanam [Film]",
+      "title": "விஷ்ணு துதி: நமோ நாராயணம் (தசாவதாரம்) | Vishnu Devotional: Namo Narayanam [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7009,7 +7009,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "4vZEVROZIx8",
-      "title": "மகாவிஷ்ணு துதி: நமோ நாராயணம் (தசாவதாரம்) | Maha Vishnu: Namo Narayanam [Film]",
+      "title": "விஷ்ணு துதி: நமோ நாராயணம் (தசாவதாரம்) | Vishnu Devotional: Namo Narayanam [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7024,7 +7024,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "s42Po5EpzyI",
-      "title": "மகாவிஷ்ணு துதி: நமோ நாராயணம் (தசாவதாரம்) | Maha Vishnu: Namo Narayanam [Film]",
+      "title": "விஷ்ணு துதி: நமோ நாராயணம் (தசாவதாரம்) | Vishnu Devotional: Namo Narayanam [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7039,7 +7039,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "b-FcuF06jHI",
-      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு | Periyazhvar Thirumozhi: Kannan Thalattu [Film]",
+      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II | Periyazhvar Thirumozhi: Kannan Thalattu II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7054,7 +7054,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "LBcuDwnrypQ",
-      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு | Periyazhvar Thirumozhi: Kannan Thalattu [Film]",
+      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II | Periyazhvar Thirumozhi: Kannan Thalattu II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7114,7 +7114,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "diblSOvZENA",
-      "title": "விஷ்ணு துதி: திருப்பாவை: விஷ்ணும் ஜிஷ்ணும் | Thiruppavai: Vishnum Jishnum [Film]",
+      "title": "திருப்பாவை: விஷ்ணும் ஜிஷ்ணும் | Thiruppavai: Vishnum Jishnum [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7160,7 +7160,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "hXpQuPvEzSk",
-      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா | Maha Mantra: Hare Krishna Hare Rama [Film]",
+      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா I | Maha Mantra: Hare Krishna Hare Rama I [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7175,7 +7175,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "9Qhwgy74BXI",
-      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா | Maha Mantra: Hare Krishna Hare Rama [Film]",
+      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா II | Maha Mantra: Hare Krishna Hare Rama II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7232,7 +7232,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "2YzLM0yoBlg",
-      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் | Krishna Thuthi: Krishna Mantra [Film]",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் | Krishna Devotional: Krishna Mantra [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -7246,7 +7246,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "izHLRwITs_Q",
-      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் I | Krishna Thuthi: Krishna Mantra I [Film]",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் I | Krishna Devotional: Krishna Mantra I [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -7260,7 +7260,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "JkivipMHrzc",
-      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் II | Krishna Thuthi: Krishna Mantra II [Film]",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் II | Krishna Devotional: Krishna Mantra II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -7274,7 +7274,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "dUYaclHH6Tk",
-      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு I | Periyazhvar Thirumozhi: Kannan Thalattu I [Audio]",
+      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II | Periyazhvar Thirumozhi: Kannan Thalattu II [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -7330,7 +7330,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "468ErjVLRCs",
-      "title": "விஷ்ணு துதி: திருப்பாவை: விஷ்ணும் ஜிஷ்ணும் | Thiruppavai: Vishnum Jishnum [Film]",
+      "title": "திருப்பாவை: விஷ்ணும் ஜிஷ்ணும் | Thiruppavai: Vishnum Jishnum [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -7405,7 +7405,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "Lki_Y8OSljs",
-      "title": "விநாயகர் துதி: கண நாதா ஓம் (Symphony) | Vinayagar Thuthi: Gana Natha Om (Symphony) [Film]",
+      "title": "விநாயகர் துதி: கண நாதா ஓம் (Symphony) | Vinayagar Devotional: Gana Natha Om (Symphony) [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7420,7 +7420,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "lEHLSYxnpbU",
-      "title": "விநாயகர் துதி: கண நாதா ஓம் | Vinayagar Thuthi: Gana Natha Om [Film]",
+      "title": "விநாயகர் துதி: கண நாதா ஓம் | Vinayagar Devotional: Gana Natha Om [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7495,7 +7495,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "Yvlg_8JBHL4",
-      "title": "கந்த புராணம்: திகட சக்கர சண்முகத்தோன் (காப்பு) | Kandha Puranam: Thigada Sakkara [Film]",
+      "title": "கந்த புராணம்: திகட சக்கர சண்முகத்தோன் (காப்பு) II | Kandha Puranam: Thigada Sakkara II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -7600,7 +7600,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "rYUfISYky0g",
-      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி | Saraswathi Stotram: 108 Saraswathi Potri [Film]",
+      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி II | Saraswathi Stotram: 108 Saraswathi Potri II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7690,7 +7690,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "7iWQUBmq3aU",
-      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "title": "திருவருட்பா: வடிவுடை மாணிக்கமாலை | Thiruvarutpa: Vadivudai Manikkamalai [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7775,7 +7775,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "d4-qZaYo-4g",
-      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி | Saraswathi Stotram: 108 Saraswathi Potri [Film]",
+      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி II | Saraswathi Stotram: 108 Saraswathi Potri II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -7803,7 +7803,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "fzoZWnsJReg",
-      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் II | Dhanam Tharum Kalvi Tharum II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -7831,7 +7831,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "jZI2pTITtBY",
-      "title": "அம்மன் துதி: திருவருட்பா: வடிவுடை மாணிக்கமாலை | Thiruvarutpa: Vadivudai Manikkamalai [Film]",
+      "title": "திருவருட்பா: வடிவுடை மாணிக்கமாலை | Thiruvarutpa: Vadivudai Manikkamalai [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -7859,7 +7859,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "r55zzDkNtF4",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அன்பே சரணம் அருளே சரணம் | Thiruvarutpa: Anbe Saranam Arule S [Film]",
+      "title": "திருவருட்பா: அன்பே சரணம் அருளே சரணம் | Thiruvarutpa: Anbe Saranam Arule Saranam [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -7994,7 +7994,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "HXLltX2BPig",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அருள் நாம விளக்கம் | Thiruvarutpa: Arul Nama Vilakkam [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8009,7 +8009,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "BXLeRFa6NHA",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அவலத் தழுங்கல் 2026 | Thiruvarutpa: Avalath Thazhungal [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8024,7 +8024,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "uGdn0wzpH6c",
-      "title": "பக்திப் பாடல்: திருவருட்பா: ஆஞ்சநேயர் துதி | Devotional: Thiruvarutpa: Anjaneyar Thuthi [Film]",
+      "title": "ஆஞ்சநேயர் துதி: ஆஞ்சநேயர் துதி | Anjaneyar Devotional: Anjaneyar Thuthi [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8069,7 +8069,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "tMnJYH0SR9c",
-      "title": "பக்திப் பாடல்: திருவருட்பா: இந்திய தேசிய கீதம் 2026 | Thiruvarutpa: Indian National Anth [Film]",
+      "title": "தேசிய கீதம்: ஜன கண மன II | National Anthem: Jana Gana Mana II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8084,7 +8084,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "dwYw5_W4g4A",
-      "title": "பக்திப் பாடல்: திருவருட்பா: உலகமெலாந் தனிநிறைந்த! | Thiruvarutpa: Ulagamelan Thaninirain [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8099,7 +8099,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "v_Q_vKG_nHo",
-      "title": "பக்திப் பாடல்: திருவருட்பா: உள்ளம் ஒரு கோவில் (II) 2026 | Thiruvarutpa: Ullam Oru Kovil [Film]",
+      "title": "திருவருட்பா: உள்ளம் ஒரு கோவில் II | Thiruvarutpa: Ullam Oru Kovil II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8114,7 +8114,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "i6XFZE1q9uo",
-      "title": "பக்திப் பாடல்: திருவருட்பா: உள்ளம் ஒரு கோவில் 2026 | Thiruvarutpa: Ullam Oru Kovil [Film]",
+      "title": "திருவருட்பா: உள்ளம் ஒரு கோவில் II | Thiruvarutpa: Ullam Oru Kovil II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8129,7 +8129,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "JhdXurT4ohI",
-      "title": "பக்திப் பாடல்: திருவருட்பா: ஏகமாய் அந்தமாய் | Thiruvarutpa: Ekamaai Anthamaai [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8156,7 +8156,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "4-FJ8eh7Als",
-      "title": "பக்திப் பாடல்: திருவருட்பா: குரு பகவான் துதி 2026 | Thiruvarutpa: Guru Bhagavan Thuthi [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8171,7 +8171,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "fRoTy3NdaLo",
-      "title": "பக்திப் பாடல்: திருவருட்பா: கொன்றை வேந்தன் | Devotional: Thiruvarutpa: Konrai Vendhan [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8186,7 +8186,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "huastC0A3-8",
-      "title": "பக்திப் பாடல்: திருவருட்பா: கோயிலாகநல் - பழமொழிமேல் 2026 | Thiruvarutpa: Koiyilakanal [Film]",
+      "title": "திருவருட்பா: கோயிலாகநல் (பழமொழிமேல்) II | Thiruvarutpa: Koiyilakanal II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8201,7 +8201,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "JGslKeAreOE",
-      "title": "பக்திப் பாடல்: திருவருட்பா: சம்சாரம் என்பது வீணை (REMIX) 2026 | Thiruvarutpa: Samsaram E [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8216,7 +8216,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "Q57FSOLDMU0",
-      "title": "பக்திப் பாடல்: திருவருட்பா: சொற்பெரு மெய்ஞ்ஞான | Thiruvarutpa: Sorpperu Meygnana [Film]",
+      "title": "திருவருட்பா: சொற்பெரு மெய்ஞ்ஞான | Thiruvarutpa: Sorpperu Meygnana [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8231,7 +8231,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "UPODVJixLyM",
-      "title": "பக்திப் பாடல்: திருவருட்பா: ஞானத் திருவடி 2026 | Thiruvarutpa: Gnanath Thiruvadi [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8288,7 +8288,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "i8h-2dDFnhI",
-      "title": "பக்திப் பாடல்: திருவருட்பா: தாமரை மலரே! | Devotional: Thiruvarutpa: Thamarai Malare [Film]",
+      "title": "திருவருட்பா: தாமரை மலரே | Thiruvarutpa: Thamarai Malare [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8303,7 +8303,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "eK--J196v_c",
-      "title": "பக்திப் பாடல்: திருவருட்பா: தாயின் மணிக்கொடி பாரீர்! | Thiruvarutpa: Thayin Manikkodi Pa [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8318,7 +8318,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "mIC0hJwu8F0",
-      "title": "பக்திப் பாடல்: திருவருட்பா: திரு சனி பகவான் துதி 2026 | Thiruvarutpa: Sani Bhagavan Thut [Film]",
+      "title": "நவக்கிரக துதி: ஸ்ரீ சனி பகவான் துதி II | Navagraha Stotram: Sani Bhagavan Thuthi II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8333,7 +8333,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "MtV5wS61MsM",
-      "title": "பக்திப் பாடல்: திருவருட்பா: திரு சனி பகவான் பதிகம் 2026 | Thiruvarutpa: Sani Bhagavan Pa [Film]",
+      "title": "நவக்கிரக துதி: ஸ்ரீ சனி பகவான் துதி II | Navagraha Stotram: Sani Bhagavan Thuthi II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8393,7 +8393,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "NjHDFS3cftg",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அருள்விடை வேட்கை | Thiruvarutpa: Arulvidai Vetkai [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8408,7 +8408,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "lg5W3VaLQNQ",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அறிவரும் பெருமை | Devotional: Thiruvarutpa: Arivarum Perumai [Film]",
+      "title": "திருவருட்பா: அறிவரும் பெருமை | Thiruvarutpa: Arivarum Perumai [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8423,7 +8423,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "-7ppYdnUdVk",
-      "title": "பக்திப் பாடல்: திருவருட்பா: ஆறாம் திருமுறை | Devotional: Thiruvarutpa: Aaram Thirumurai [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8438,7 +8438,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "hfv9Ys99fZU",
-      "title": "பக்திப் பாடல்: திருவருட்பா: இங்கித மாலை 2026 | Devotional: Thiruvarutpa: Ingitha Maalai [Film]",
+      "title": "திருவருட்பா: இங்கித மாலை II | Thiruvarutpa: Ingitha Maalai II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8453,7 +8453,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "s7idxr-uVfQ",
-      "title": "பக்திப் பாடல்: திருவருட்பா: திருவருண் முறையீடு | Thiruvarutpa: Thiruvarun Muraiyidu [Film]",
+      "title": "திருவருட்பா: திருவருண் முறையீடு | Thiruvarutpa: Thiruvarun Muraiyidu [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8468,7 +8468,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "g3tE-_-cZgQ",
-      "title": "பக்திப் பாடல்: திருவருட்பா: நெஞ்சொடு நேர்தல் | Devotional: Thiruvarutpa: Nenjodu Nerthal [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8483,7 +8483,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "M2YC8urOH0M",
-      "title": "பக்திப் பாடல்: திருவருட்பா: முத்தி உபாயம் | Devotional: Thiruvarutpa: Muthi Upayam [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8558,7 +8558,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "mVQJIrLtnCk",
-      "title": "பக்திப் பாடல்: திருவருட்பா: விழியிலே மலர்ந்தது (REMIX) 2026 | Thiruvarutpa: Vizhiyile Ma [Film]",
+      "title": "திருவருட்பா: விழியிலே மலர்ந்தது II | Thiruvarutpa: Vizhiyile Malarnthathu II [Film]",
       "type": "film",
       "playlists": [
         "Discography",
@@ -8573,7 +8573,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "7NECOtuTZ_Y",
-      "title": "பக்திப் பாடல்: திருவருட்பா: ஆஞ்சநேயர் துதி | Devotional: Thiruvarutpa: Anjaneyar Thuthi [Film]",
+      "title": "ஆஞ்சநேயர் துதி: ஆஞ்சநேயர் துதி | Anjaneyar Devotional: Anjaneyar Thuthi [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8628,7 +8628,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "CvDDeKLC4mw",
-      "title": "பக்திப் பாடல்: திருவருட்பா: தாயின் மணிக்கொடி பாரீர் | Thiruvarutpa: Thayin Manikkodi Paa [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8670,7 +8670,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "lw2nEZfR7Kc",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அன்பே சரணம் அருளே சரணம் | Thiruvarutpa: Anbe Saranam Arule S [Film]",
+      "title": "திருவருட்பா: அன்பே சரணம் அருளே சரணம் | Thiruvarutpa: Anbe Saranam Arule Saranam [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8796,7 +8796,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "ZsxGP1jIZ-s",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அருள் நாம விளக்கம் | Thiruvarutpa: Arul Nama Vilakkam [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8810,7 +8810,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "X-EB6CFVz1E",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அவலத் தழுங்கல் 2026 | Thiruvarutpa: Avalath Thazhungal [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8824,7 +8824,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "Bq6eGijG9T4",
-      "title": "பக்திப் பாடல்: திருவருட்பா: இந்திய தேசிய கீதம் 2026 | Thiruvarutpa: Indian National Anth [Film]",
+      "title": "தேசிய கீதம்: ஜன கண மன II | National Anthem: Jana Gana Mana II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8838,7 +8838,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "QTxWZpg6F98",
-      "title": "பக்திப் பாடல்: திருவருட்பா: உலகமெலாந் தனிநிறைந்த | Thiruvarutpa: Ulagamelan Thaniniraind [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8852,7 +8852,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "x8x7cnUdTE4",
-      "title": "பக்திப் பாடல்: திருவருட்பா: உள்ளம் ஒரு கோவில் (II) 2026 | Thiruvarutpa: Ullam Oru Kovil [Film]",
+      "title": "திருவருட்பா: உள்ளம் ஒரு கோவில் II | Thiruvarutpa: Ullam Oru Kovil II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8866,7 +8866,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "zuDJOeLjtcQ",
-      "title": "பக்திப் பாடல்: திருவருட்பா: உள்ளம் ஒரு கோவில் 2026 | Thiruvarutpa: Ullam Oru Kovil [Film]",
+      "title": "திருவருட்பா: உள்ளம் ஒரு கோவில் II | Thiruvarutpa: Ullam Oru Kovil II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8880,7 +8880,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "-Gd2dy_L98c",
-      "title": "பக்திப் பாடல்: திருவருட்பா: ஏகமாய் அந்தமாய் (மதுவின் மடல்) | Thiruvarutpa: Ekamaai Antha [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8894,7 +8894,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "0gK0asNO-RM",
-      "title": "பக்திப் பாடல்: திருவருட்பா: குரு பகவான் துதி 2026 | Thiruvarutpa: Guru Bhagavan Thuthi [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8908,7 +8908,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "MDK8Oq7p1j8",
-      "title": "பக்திப் பாடல்: திருவருட்பா: கொன்றை வேந்தன் | Devotional: Thiruvarutpa: Konrai Vendhan [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8922,7 +8922,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "G4Tk8Z1tKRg",
-      "title": "பக்திப் பாடல்: திருவருட்பா: கோயிலாகநல் - பழமொழிமேல் 2026 | Thiruvarutpa: Koiyilakanal [Film]",
+      "title": "திருவருட்பா: கோயிலாகநல் (பழமொழிமேல்) II | Thiruvarutpa: Koiyilakanal II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8936,7 +8936,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "28Xnfhctf0I",
-      "title": "பக்திப் பாடல்: திருவருட்பா: சம்சாரம் என்பது வீணை (REMIX) 2026 | Thiruvarutpa: Samsaram [Remix]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Remix]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8950,7 +8950,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "tAlN-7BPL7k",
-      "title": "பக்திப் பாடல்: திருவருட்பா: சொற்பெரு மெய்ஞ்ஞான | Thiruvarutpa: Sorpperu Meygnana [Film]",
+      "title": "திருவருட்பா: சொற்பெரு மெய்ஞ்ஞான | Thiruvarutpa: Sorpperu Meygnana [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8964,7 +8964,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "6p5A87HdAAI",
-      "title": "பக்திப் பாடல்: திருவருட்பா: ஞானத் திருவடி 2026 | Thiruvarutpa: Gnanath Thiruvadi [Film]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8978,7 +8978,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "yMrpyhLlDc8",
-      "title": "பக்திப் பாடல்: திருவருட்பா: தாமரை மலரே | Devotional: Thiruvarutpa: Thamarai Malare [Film]",
+      "title": "திருவருட்பா: தாமரை மலரே | Thiruvarutpa: Thamarai Malare [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -8992,7 +8992,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "DYAKkr0e5jU",
-      "title": "பக்திப் பாடல்: திருவருட்பா: திரு சனி பகவான் துதி 2026 | Thiruvarutpa: Sani Bhagavan Thut [Film]",
+      "title": "நவக்கிரக துதி: ஸ்ரீ சனி பகவான் துதி II | Navagraha Stotram: Sani Bhagavan Thuthi II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9006,7 +9006,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "WMtIb1EHwGw",
-      "title": "பக்திப் பாடல்: திருவருட்பா: திரு சனி பகவான் பதிகம் 2026 | Thiruvarutpa: Sani Bhagavan Pa [Film]",
+      "title": "நவக்கிரக துதி: ஸ்ரீ சனி பகவான் துதி II | Navagraha Stotram: Sani Bhagavan Thuthi II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9020,7 +9020,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "1wD_X2LHCmw",
-      "title": "பக்திப் பாடல்: திருவருட்பா: திருவசிய மந்திரம் 2026 | Thiruvarutpa: Thiruvasiyam Mantra [Film]",
+      "title": "சிவ பக்திப் பாடல்: திருவசிய மந்திரம் II | Shiva Devotional: Thiruvasiyam Mantra II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9034,7 +9034,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "4qnq1zW63hI",
-      "title": "பக்திப் பாடல்: திருவருட்பா: பதி விளக்கம் | Devotional: Thiruvarutpa: Pathi Vilakkam [Audio]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9048,7 +9048,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "kkDJM6dKTxs",
-      "title": "பக்திப் பாடல்: திருவருட்பா: இங்கித மாலை 2026 | Devotional: Thiruvarutpa: Ingitha Maalai [Film]",
+      "title": "திருவருட்பா: இங்கித மாலை II | Thiruvarutpa: Ingitha Maalai II [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9062,7 +9062,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "7TlWCD9pa_0",
-      "title": "பக்திப் பாடல்: திருவருட்பா: முத்தி உபாயம் | Devotional: Thiruvarutpa: Muthi Upayam [Audio]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9118,7 +9118,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "VyUqD3ZO3BU",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அறிவரும் பெருமை | Thiruvarutpa: Arivarum Perumai [Audio]",
+      "title": "திருவருட்பா: அறிவரும் பெருமை | Thiruvarutpa: Arivarum Perumai [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9132,7 +9132,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "cVbT38ujUTQ",
-      "title": "பக்திப் பாடல்: திருவருட்பா: அருள்விடை வேட்கை | Thiruvarutpa: Arulvidai Vetkai [Audio]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9146,7 +9146,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "8KQc368hCmg",
-      "title": "பக்திப் பாடல்: திருவருட்பா: நெஞ்சொடு நேர்தல் | Thiruvarutpa: Nenjodu Nerthal [Audio]",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9160,7 +9160,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "5gzJXgmt7AY",
-      "title": "பக்திப் பாடல்: திருவருட்பா: திருவருண் முறையீடு | Thiruvarutpa: Thiruvarun Muraiyidu [Audio]",
+      "title": "திருவருட்பா: திருவருண் முறையீடு | Thiruvarutpa: Thiruvarun Muraiyidu [Audio]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9174,7 +9174,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "r2ulXHQihY0",
-      "title": "பக்திப் பாடல்: திருவருட்பா: நெஞ்சறிவுறுத்தல் - ஒன்றாய்ப் பலவாய் | Thiruvarutpa: Nenjari [Film]",
+      "title": "திருவருட்பா: நெஞ்சறிவுறுத்தல் (ஒன்றாய்ப் பலவாய்) | Thiruvarutpa: Nenjarivuruthal [Film]",
       "type": "audio",
       "playlists": [
         "Discography",
@@ -9188,7 +9188,7 @@ window.GKD_SITE_CATALOG = {
     },
     {
       "id": "Iky5L-131A4",
-      "title": "பக்திப் பாடல்: திருவருட்பா: விழியிலே மலர்ந்தது (REMIX) 2026 | Thiruvarutpa: Vizhiyile M [Remix]",
+      "title": "திருவருட்பா: விழியிலே மலர்ந்தது II | Thiruvarutpa: Vizhiyile Malarnthathu II [Remix]",
       "type": "audio",
       "playlists": [
         "Discography",
