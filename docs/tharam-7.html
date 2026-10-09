@@ -49,7 +49,7 @@
 </head>
 <body class="has-left-strip">
 
-            <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL - CURRICULUM ACADEMY SANCTUARY) -->
+              <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL - CURRICULUM ACADEMY SANCTUARY) -->
   <aside class="left-strip-bar" id="leftStripBar" aria-label="குருகுல முதன்மை பட்டி">
     <div class="strip-header">
       <a href="index.html" class="strip-brand-link" title="குரு குல ஆசிரமம்">
@@ -176,6 +176,21 @@
         </a>
       </div>
 
+      <!-- 9. நிர்வாகப் பிரிவு (Administration: Admissions, Parents, Teachers) -->
+      <div class="strip-group" data-group="admin">
+        <a href="admissions.html" class="strip-item strip-has-sub" data-tooltip="நிர்வாகப் பிரிவு (Administration)">
+          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <span class="strip-item-label">நிர்வாகப் பிரிவு (Admin)</span>
+          <span class="strip-sub-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header" style="color: #94a3b8;">ஆசிரம நிர்வாகம் • Administration</div>
+          <a href="admissions.html" class="strip-sub-item"><span class="strip-sub-icon">📋</span><span>சேர்க்கை மையம் (Admissions In Prep)</span></a>
+          <a href="school.html#parentGuide" class="strip-sub-item"><span class="strip-sub-icon">👨‍👩‍👧</span><span>பெற்றோர் வழிகாட்டி (Parent Guide)</span></a>
+          <a href="syllabus.html#teacherPedagogySection" class="strip-sub-item"><span class="strip-sub-icon">📖</span><span>ஆசிரியர் கற்பித்தல் நெறி (Teacher Pedagogy)</span></a>
+        </div>
+      </div>
+
     </nav>
 
     <div class="strip-footer-dock">
@@ -260,14 +275,15 @@
         </div>
       </div>
 
-      <!-- QUICK GRADE SWITCHER STRIP -->
-      <div class="grade-switch-strip">
-        <a href="tharam-6.html" style="color:#38bdf8; text-decoration:none; font-weight:700;"><svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> தரம் 6 (Grade 6)</a>
-        <div style="display:flex; align-items:center; gap:8px;">
-          <a href="school.html" class="sheet-btn" style="font-size:0.8rem; padding:6px 12px; text-decoration:none;">இணையப் பள்ளி போர்டல்</a>
-          <a href="books.html?grade=7" class="sheet-btn sheet-btn-view" style="font-size:0.8rem; padding:6px 12px; text-decoration:none;">முழு மின்னூல் அரங்கம் &rarr;</a>
+      <!-- GRADE FOCUSED SHELF HEADER -->
+      <div class="grade-focus-bar" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin: 10px 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+        <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:700;">
+          📖 தரம் 7 — 7 ஆசிரமப் பாடநூல்கள் மட்டுமே (Exclusive Grade 7 Curriculum)
         </div>
-        <a href="tharam-8.html" style="color:#34d399; text-decoration:none; font-weight:700;">தரம் 8 (Grade 8) <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <a href="school.html" class="sheet-btn" style="font-size:0.8rem; padding:6px 14px; text-decoration:none;">🏛️ வித்யா குடீரம் பள்ளி அரங்கம்</a>
+          <a href="books.html?grade=7" class="sheet-btn sheet-btn-view" style="font-size:0.8rem; padding:6px 14px; text-decoration:none;">முழு மின்னூல் அரங்கம் &rarr;</a>
+        </div>
       </div>
 
       <!-- THE 7 SACRED BOOKS SHELF (SINGLE TOP-LEVEL CONTAINER FOR THE GRADE) -->
@@ -315,21 +331,12 @@
 
       </div>
 
-      <!-- Quick 12 Grades Jump Footer Grid -->
-      <div style="margin-top:35px; padding:16px 0; background:transparent !important; border:none !important;">
-        <div style="color:#ffffff; font-weight:700; font-size:0.92rem; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center;">
-          <span>12 தரப் பாடநூல்கள் விரைவுத் தேர்வு (Jump to Grade 1–12):</span>
-          <a href="kalvi.html" style="color:#38bdf8; text-decoration:none; font-size:0.82rem;">12 வாழ்வியல் நிலைகள் வழிகாட்டி &rarr;</a>
-        </div>
-        <div class="strip-grades-mini-grid" style="grid-template-columns: repeat(12, 1fr); gap:6px;">
-          <a href="tharam-1.html" class="strip-grade-mini-pill ">1</a> <a href="tharam-2.html" class="strip-grade-mini-pill ">2</a> <a href="tharam-3.html" class="strip-grade-mini-pill ">3</a> <a href="tharam-4.html" class="strip-grade-mini-pill ">4</a> <a href="tharam-5.html" class="strip-grade-mini-pill ">5</a> <a href="tharam-6.html" class="strip-grade-mini-pill ">6</a> <a href="tharam-7.html" class="strip-grade-mini-pill active">7</a> <a href="tharam-8.html" class="strip-grade-mini-pill ">8</a> <a href="tharam-9.html" class="strip-grade-mini-pill ">9</a> <a href="tharam-10.html" class="strip-grade-mini-pill ">10</a> <a href="tharam-11.html" class="strip-grade-mini-pill ">11</a> <a href="tharam-12.html" class="strip-grade-mini-pill ">12</a>
-        </div>
-      </div>
+      
 
     </div>
   </main>
 
-          <footer class="site-footer" id="siteFooter">
+            <footer class="site-footer" id="siteFooter">
     <div class="footer-container">
       <div class="footer-col">
         <h4>குரு குல ஆசிரமம் (Guru Kula Ashram)</h4>
@@ -361,6 +368,14 @@
           <li><a href="books.html?book=narchinthanai">5. நற்சிந்தனை (Narchinthanai — விஞ்ஞானம் &amp; தத்துவம்)</a></li>
           <li><a href="books.html?book=narchol">6. நற்சொல் (Narchol — இன்சொல் &amp; கவிதை)</a></li>
           <li><a href="books.html?book=narcheyal">7. நற்செயல் (Narcheyal — இல்லற தர்மம் &amp; 3 Ds)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>நிர்வாகப் பிரிவு (Administration)</h4>
+        <ul class="footer-links">
+          <li><a href="admissions.html">📋 மாணவர் சேர்க்கை மையம் (In Prep)</a></li>
+          <li><a href="school.html#parentGuide">👨‍👩‍👧 பெற்றோர் வழிகாட்டி (Parent Guide)</a></li>
+          <li><a href="syllabus.html#teacherPedagogySection">📖 ஆசிரியர் கற்பித்தல் நெறி (Teacher Pedagogy)</a></li>
         </ul>
       </div>
     </div>

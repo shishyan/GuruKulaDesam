@@ -131,6 +131,21 @@ PURE_CURRICULUM_STRIP_BAR = """  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL - CUR
         </a>
       </div>
 
+      <!-- 9. நிர்வாகப் பிரிவு (Administration: Admissions, Parents, Teachers) -->
+      <div class="strip-group" data-group="admin">
+        <a href="admissions.html" class="strip-item strip-has-sub" data-tooltip="நிர்வாகப் பிரிவு (Administration)">
+          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <span class="strip-item-label">நிர்வாகப் பிரிவு (Admin)</span>
+          <span class="strip-sub-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header" style="color: #94a3b8;">ஆசிரம நிர்வாகம் • Administration</div>
+          <a href="admissions.html" class="strip-sub-item"><span class="strip-sub-icon">📋</span><span>சேர்க்கை மையம் (Admissions In Prep)</span></a>
+          <a href="school.html#parentGuide" class="strip-sub-item"><span class="strip-sub-icon">👨‍👩‍👧</span><span>பெற்றோர் வழிகாட்டி (Parent Guide)</span></a>
+          <a href="syllabus.html#teacherPedagogySection" class="strip-sub-item"><span class="strip-sub-icon">📖</span><span>ஆசிரியர் கற்பித்தல் நெறி (Teacher Pedagogy)</span></a>
+        </div>
+      </div>
+
     </nav>
 
     <div class="strip-footer-dock">

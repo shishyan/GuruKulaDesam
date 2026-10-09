@@ -18,12 +18,13 @@ def run_tests():
         page.on('console', on_console)
 
         print("--- Testing tharam-1.html ---")
-        page.goto('http://localhost:8000/tharam-1.html', wait_until='networkidle')
+        page.goto('http://localhost:8000/tharam-1.html', wait_until='domcontentloaded')
         
         # Verify page title loaded
         print(f"Loaded tharam-1.html successfully. Title length: {len(page.title())}")
 
         # Check 7 book shelf buttons
+        page.wait_for_selector('#booksShelfTabs .shelf-book-btn', timeout=10000)
         shelf_btns = page.locator('#booksShelfTabs .shelf-book-btn')
         shelf_count = shelf_btns.count()
         print(f"Found {shelf_count} shelf book buttons.")
@@ -97,7 +98,7 @@ def run_tests():
 
         # 4. Student School Dashboard & Certificate Verification in school.html
         print("--- Testing Student Persona in school.html ---")
-        page.goto('http://localhost:8000/school.html', wait_until='networkidle')
+        page.goto('http://localhost:8000/school.html', wait_until='domcontentloaded')
         
         # Check student name customization
         page.fill('#studentNameInput', 'கவியரசன் மாணவர்')
@@ -125,7 +126,7 @@ def run_tests():
 
         # Test kalvi.html
         print("--- Testing kalvi.html ---")
-        page.goto('http://localhost:8000/kalvi.html', wait_until='networkidle')
+        page.goto('http://localhost:8000/kalvi.html', wait_until='domcontentloaded')
         stages = page.locator('.stage-row-card')
         print(f"kalvi.html stages count: {stages.count()}")
         assert stages.count() == 5, f"Expected 5 stages in kalvi.html (4 school + 1 higher studies), got {stages.count()}"
@@ -136,7 +137,7 @@ def run_tests():
 
         # Test higher-studies.html
         print("--- Testing higher-studies.html ---")
-        page.goto('http://localhost:8000/higher-studies.html', wait_until='networkidle')
+        page.goto('http://localhost:8000/higher-studies.html', wait_until='domcontentloaded')
         degree_btns = page.locator('.degree-filter-btn')
         print(f"higher-studies.html filter buttons count: {degree_btns.count()}")
         assert degree_btns.count() >= 5, f"Expected at least 5 degree buttons, got {degree_btns.count()}"
@@ -160,23 +161,27 @@ def run_tests():
         assert page.locator('#tierPG').is_visible(), "PG tier should be visible under all"
         print("Degree filtering (UG, PG, All) verified successfully!")
 
-        # Test admissions.html and admissions hidden across site
-        print("--- Testing Admissions Hidden & Zero-BS-Pitch Sanctuary Policy ---")
-        # 1. Verify admissions is hidden from left strip navigation
-        assert page.locator('.strip-nav-list a[href="admissions.html"]').count() == 0, "Admissions link must be hidden from left-strip nav"
+        # Test admissions and administration section policy
+        print("--- Testing Administration Section & Zero-BS-Pitch Sanctuary Policy ---")
+        # 1. Verify admissions is located strictly under the dedicated Administration section
+        admin_group = page.locator('.strip-group[data-group="admin"]')
+        assert admin_group.count() > 0, "Dedicated administration section must exist in left-strip nav"
+        assert admin_group.locator('a[href="admissions.html"]').count() >= 1, "Admissions must be under Administration section"
         
-        # 2. Verify admissions is hidden from grade switch strip in tharam-1.html
-        page.goto('http://localhost:8000/tharam-1.html', wait_until='networkidle')
-        assert page.locator('.grade-switch-strip a[href^="admissions.html"]').count() == 0, "Admissions button must be hidden from grade switch strip"
+        # 2. Verify Grade 1 is completely isolated (no cross-grade links in main content)
+        page.goto('http://localhost:8000/tharam-1.html', wait_until='domcontentloaded')
+        assert page.locator('.grade-focus-bar').count() > 0, "Grade focus bar must be present"
+        assert page.locator('.main-content a[href*="tharam-2"]').count() == 0, "No cross-grade link to tharam-2 in tharam-1 main"
+        assert page.locator('.main-content a[href*="tharam-3"]').count() == 0, "No cross-grade link to tharam-3 in tharam-1 main"
 
         # 3. Verify zero commercial sales pitch on home page (index.html)
-        page.goto('http://localhost:8000/index.html', wait_until='networkidle')
+        page.goto('http://localhost:8000/index.html', wait_until='domcontentloaded')
         assert page.locator('text=PARENT ADMISSIONS NOTICE').count() == 0, "Commercial admissions sales box must be removed from index.html"
         assert page.locator('.hero-actions a[href="admissions.html"]').count() == 0, "No admissions button in hero banner"
         print("index.html is free of commercial sales pitch!")
 
         # 4. Verify admissions.html itself displays elevated 'Opening Soon' notification
-        page.goto('http://localhost:8000/admissions.html', wait_until='networkidle')
+        page.goto('http://localhost:8000/admissions.html', wait_until='domcontentloaded')
         notice = page.locator('#admissionFormSection')
         assert notice.is_visible(), "Admissions Opening Soon notice should be visible"
         assert "தயாரிப்பு நிலையில் உள்ளது" in notice.text_content(), "Notice should state admissions are in preparation"
@@ -185,14 +190,15 @@ def run_tests():
 
         # Test books.html
         print("--- Testing books.html ---")
-        page.goto('http://localhost:8000/books.html', wait_until='networkidle')
+        page.goto('http://localhost:8000/books.html', wait_until='domcontentloaded')
+        page.wait_for_selector('#booksShelfTabs .shelf-book-btn', timeout=10000)
         b_shelf = page.locator('#booksShelfTabs .shelf-book-btn')
         print(f"books.html shelf count: {b_shelf.count()}")
         assert b_shelf.count() == 7, f"Expected 7 books in books.html, got {b_shelf.count()}"
 
         # TEACHER / ACHARYA PERSONA TEST: Pedagogical Guide, 40-Week Calendar & Assessment Rubric
         print("--- Testing Teacher Persona: Pedagogical Guide & 40-Week Calendar in syllabus.html ---")
-        page.goto('http://localhost:8000/syllabus.html', wait_until='networkidle')
+        page.goto('http://localhost:8000/syllabus.html', wait_until='domcontentloaded')
         teacher_section = page.locator('#teacherPedagogySection')
         assert teacher_section.is_visible(), "Teacher Pedagogy Section should be visible in syllabus.html"
         
@@ -214,12 +220,12 @@ def run_tests():
 
         # Verify Teacher Moola Nool Reference Library
         print("--- Testing Teacher Persona: Moola Nool Direct Reference ---")
-        page.goto('http://localhost:8000/moola-nool.html', wait_until='networkidle')
+        page.goto('http://localhost:8000/moola-nool.html', wait_until='domcontentloaded')
         assert page.locator('#moolaSearchInput').is_visible(), "Moola Nool search input should be visible for teachers"
         print("Teacher Moola Nool reference library verified successfully!")
 
-        # Filter console errors (ignore youtube / external 3rd party tracker errors)
-        app_errors = [e for e in console_errors if 'youtube' not in e.lower() and 'doubleclick' not in e.lower() and 'google' not in e.lower()]
+        # Filter console errors (ignore youtube / external 3rd party tracker errors / browser feature policy)
+        app_errors = [e for e in console_errors if 'youtube' not in e.lower() and 'doubleclick' not in e.lower() and 'google' not in e.lower() and 'compute-pressure' not in e.lower()]
         print(f"Total internal application console errors: {len(app_errors)}")
         if app_errors:
             for err in app_errors:

@@ -36,6 +36,14 @@ PURE_CURRICULUM_FOOTER = """  <footer class="site-footer" id="siteFooter">
           <li><a href="books.html?book=narcheyal">7. நற்செயல் (Narcheyal — இல்லற தர்மம் &amp; 3 Ds)</a></li>
         </ul>
       </div>
+      <div class="footer-col">
+        <h4>நிர்வாகப் பிரிவு (Administration)</h4>
+        <ul class="footer-links">
+          <li><a href="admissions.html">📋 மாணவர் சேர்க்கை மையம் (In Prep)</a></li>
+          <li><a href="school.html#parentGuide">👨‍👩‍👧 பெற்றோர் வழிகாட்டி (Parent Guide)</a></li>
+          <li><a href="syllabus.html#teacherPedagogySection">📖 ஆசிரியர் கற்பித்தல் நெறி (Teacher Pedagogy)</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
       &copy; 2026 குரு குல ஆசிரமம் (Guru Kula Ashram) | வேத-நவீன பள்ளிப் பாடத்திட்டம் &amp; 7 ஆசிரமப் பாடநூல்கள் | அனைத்து உரிமைகளும் இறைப்பணிக்கே சமர்ப்பணம்.

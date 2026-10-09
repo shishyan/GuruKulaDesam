@@ -38,18 +38,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 16px 0 10px;
+  margin: 14px 0 16px;
   justify-content: flex-start;
-  background: transparent !important;
-  border: none !important;
 }
 
 .book-grade-btn {
-  background: transparent !important;
-  border: none !important;
+  background: rgba(15, 23, 42, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
   color: #cbd5e1;
-  padding: 8px 14px;
-  border-radius: 8px;
+  padding: 6px 14px;
+  border-radius: 8px !important;
   font-size: 0.88rem;
   font-weight: 700;
   cursor: pointer;
@@ -59,33 +57,47 @@
 }
 
 .book-grade-btn:hover, .book-grade-btn.active {
-  color: var(--gold-bright);
+  background: rgba(212, 175, 55, 0.25) !important;
+  border-color: var(--gold-bright, #ffd700) !important;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.35);
   text-shadow: 0 0 12px rgba(212, 175, 55, 0.6), 0 2px 5px rgba(0,0,0,0.95);
 }
 
-/* Shelf of 7 Books - Clean Borderless Floating Navigation */
+/* Shelf of 7 Books - Clean Elegant Sacred Ashram Shelf */
 .books-shelf-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
   margin: 14px 0 22px;
-  background: transparent !important;
-  border: none !important;
 }
 
 .shelf-book-btn {
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 10px 8px;
+  background: rgba(15, 23, 42, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 12px !important;
+  padding: 12px 10px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.22s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: none !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
   position: relative;
+}
+
+.shelf-book-btn:hover {
+  background: rgba(30, 41, 59, 0.88) !important;
+  border-color: var(--book-accent, var(--gold)) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6) !important;
+}
+
+.shelf-book-btn.active {
+  background: rgba(30, 41, 59, 0.95) !important;
+  border-color: var(--book-accent, var(--gold)) !important;
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.35), 0 6px 16px rgba(0,0,0,0.7) !important;
 }
 
 .shelf-book-btn::after {
@@ -94,7 +106,8 @@
   bottom: 0;
   left: 20%;
   right: 20%;
-  height: 2px;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
   background: transparent;
   transition: all 0.2s ease;
 }
@@ -109,10 +122,10 @@
 .shelf-book-num {
   font-size: 0.72rem;
   font-family: monospace;
-  color: #94a3b8;
+  color: var(--book-accent, #94a3b8);
   text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 2px;
+  font-weight: 800;
+  margin-bottom: 3px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.95);
 }
 

@@ -9,13 +9,13 @@ let currentChapter = 1;
 let loadedBookData = {};
 
 const BOOKS_METADATA = [
-  { id: 'nanneri', name: 'நன்னெறி', en: 'Good Ethics & Conduct', icon: 'M12 2v3M7 5h10l-1.5 4H8.5L7 5z', color: '#38bdf8' },
-  { id: 'nallaram', name: 'நல்லறம்', en: 'Virtue & Householder Dharma', icon: 'M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z', color: '#10b981' },
-  { id: 'nalvazhi', name: 'நல்வழி', en: 'Path of Wisdom & Labor', icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z', color: '#facc15' },
-  { id: 'narthunai', name: 'நற்துணை', en: 'Rituals, Yagnas & Temple', icon: 'M12 2a9.5 9.5 0 0 0-9.5 9.5c0 7 9.5 12.5 9.5 12.5s9.5-5.5 9.5-12.5A9.5 9.5 0 0 0 12 2z', color: '#c084fc' },
-  { id: 'narchinthanai', name: 'நற்சிந்தனை', en: 'Buddha Teachings & Mind', icon: 'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', color: '#fb923c' },
-  { id: 'narchol', name: 'நற்சொல்', en: 'Thiru Manthiram & Mantras', icon: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z', color: '#34d399' },
-  { id: 'narcheyal', name: 'நற்செயல்', en: '3 Ds: Duty, Discipline, Dignity', icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z', color: '#ffd700' }
+  { id: 'nanneri', name: 'நன்னெறி', en: 'ஒழுக்கமும் பணிவும்', icon: 'M12 2v3M7 5h10l-1.5 4H8.5L7 5z', color: '#38bdf8' },
+  { id: 'nallaram', name: 'நல்லறம்', en: 'ஈகையும் இல்லற தர்மமும்', icon: 'M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z', color: '#10b981' },
+  { id: 'nalvazhi', name: 'நல்வழி', en: 'வாய்மையும் நேர்மை வழியும்', icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z', color: '#facc15' },
+  { id: 'narthunai', name: 'நற்துணை', en: 'இறைத்துதியும் சரணாகதியும்', icon: 'M12 2a9.5 9.5 0 0 0-9.5 9.5c0 7 9.5 12.5 9.5 12.5s9.5-5.5 9.5-12.5A9.5 9.5 0 0 0 12 2z', color: '#c084fc' },
+  { id: 'narchinthanai', name: 'நற்சிந்தனை', en: 'மெய்யறிவும் தத்துவமும்', icon: 'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', color: '#fb923c' },
+  { id: 'narchol', name: 'நற்சொல்', en: 'இன்சொல்லும் நாவடக்கமும்', icon: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z', color: '#34d399' },
+  { id: 'narcheyal', name: 'நற்செயல்', en: 'கடமையும் இல்லற வாழ்வியலும்', icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z', color: '#ffd700' }
 ];
 
 async function initBookReader() {
@@ -40,6 +40,15 @@ async function initBookReader() {
 function renderGradePills() {
   const container = document.getElementById('gradeSelectorPills');
   if (!container) return;
+  // If on a specific grade page, isolate completely and do NOT render other grade pills
+  if (typeof window.DEFAULT_GRADE === 'number') {
+    container.style.display = 'none';
+    const parentHeading = container.previousElementSibling;
+    if (parentHeading && parentHeading.innerText.includes('வகுப்பைத் தேர்வு செய்க')) {
+      parentHeading.style.display = 'none';
+    }
+    return;
+  }
   let html = '';
   for (let g = 1; g <= 12; g++) {
     const activeClass = (g === currentGrade) ? 'active' : '';
@@ -465,7 +474,7 @@ window.toggleBookChapterCompletion = function(grade, bookKey, chapterNum) {
         window.playTempleBell();
       }
       if (typeof window.showToast === 'function') {
-        window.showToast(`தரம் ${grade} • அத்தியாயம் ${chapterNum} நிறைவுற்றது! (+50 வேத ஞான XP)`);
+        window.showToast(`தரம் ${grade} • அத்தியாயம் ${chapterNum} வாசித்து உணரப்பட்டது.`);
       }
     } else {
       localStorage.removeItem(key);
@@ -479,10 +488,10 @@ window.toggleBookChapterCompletion = function(grade, bookKey, chapterNum) {
     if (btn) {
       if (newState) {
         btn.classList.add('completed');
-        btn.innerHTML = `<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span>பாடம் நிறைவுற்றது (Completed • +50 XP)</span>`;
+        btn.innerHTML = `<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span>பாடம் வாசித்து உணரப்பட்டது (Contemplated)</span>`;
       } else {
         btn.classList.remove('completed');
-        btn.innerHTML = `<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg> <span>நான் படித்துவிட்டேன் (Mark as Completed • +50 XP)</span>`;
+        btn.innerHTML = `<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg> <span>நான் இப்பாடத்தை முழுமையாக வாசித்து உணர்ந்தேன்</span>`;
       }
     }
   } catch (err) {
@@ -540,7 +549,7 @@ function getChapterQuizData(grade, bookKey, chap) {
   return {
     q: question,
     options: [
-      { text: optCorrect, correct: true, exp: 'சரியான விடை! இப்பாடத்தின் மெய்யறிவுச் சாரம் இதுவே. (+10 போனஸ் XP)' },
+      { text: optCorrect, correct: true, exp: 'சரியான விடை! இப்பாடத்தின் மெய்யறிவுச் சாரம் இதுவே.' },
       { text: optWrong1, correct: false, exp: 'தவறான விடை! மீண்டும் ஒருமுறை மூலப்பாடலை வாசித்து சிந்தியுங்கள்.' },
       { text: optWrong2, correct: false, exp: 'தவறான விடை! இப்பாடம் போதிக்கும் தர்ம நெறியை மீண்டும் அறியவும்.' }
     ]
@@ -625,40 +634,36 @@ function renderStudentChapterDeck(grade, bookKey, chap) {
       <div class="student-deck-header">
         <div class="student-deck-title">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <span>மாணவர் கற்றல் நிறைவு &amp; சுய மதிப்பீடு (Student Mastery)</span>
+          <span>அத்தியாய நிறைவு &amp; தர்ம சிந்தனை (Chapter Contemplation &amp; Reflection)</span>
         </div>
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
           <button type="button" class="sheet-btn" onclick="printLessonHandout()" title="இப்பாடத்தை அச்சிடுக" style="font-size:0.82rem; padding:6px 14px;">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-            <span>பாட அச்சுத்தாள் (Print)</span>
+            <span>பாட அச்சுத்தாள் (Print Handout)</span>
           </button>
-          <a href="school.html" class="sheet-btn sheet-btn-view" style="font-size:0.82rem; padding:6px 14px; text-decoration:none;">
-            <span>பள்ளி போர்டல் &amp; சான்றிதழ் &rarr;</span>
-          </a>
         </div>
       </div>
 
-      <!-- Mark as Read / Completed CTA Button -->
+      <!-- Mark as Read / Completed Button -->
       <div style="margin: 14px 0 18px; display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
         <button type="button" id="chapterLmsBtn" class="chapter-lms-btn ${isDone ? 'completed' : ''}" onclick="toggleBookChapterCompletion(${grade}, '${bookKey}', ${chap.chapterNumber})">
           ${isDone ? `
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>பாடம் நிறைவுற்றது (Completed • +50 XP)</span>
+            <span>பாடம் வாசித்து உணரப்பட்டது (Contemplated)</span>
           ` : `
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
-            <span>நான் படித்துவிட்டேன் (Mark as Completed • +50 XP)</span>
+            <span>நான் இப்பாடத்தை முழுமையாக வாசித்து உணர்ந்தேன்</span>
           `}
         </button>
         <span style="font-size:0.84rem; color:#94a3b8; text-shadow:0 1px 3px #000;">
-          நிறைவு செய்தவுடன் குருகுல இணையப் பள்ளி முன்னேற்றத்தில் +50 வேத XP கணக்கிடப்படும்.
+          அத்தியாயத்தை முழுமையாக வாசித்து உள்ளத்தில் நிறுத்திய பின் இக்குறிப்பை உறுதிசெய்க.
         </span>
       </div>
 
-      <!-- Quick Knowledge Self-Check Quiz -->
+      <!-- Contemplative Self-Check -->
       <div class="chapter-quiz-wrap">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-          <span style="font-size:0.8rem; font-weight:700; color:#38bdf8; text-transform:uppercase; letter-spacing:0.5px;">சுய அறிவாற்றல் சோதனை (Quick Knowledge Check):</span>
-          <span style="font-size:0.75rem; color:var(--gold-soft); font-weight:600;">+10 போனஸ் XP</span>
+          <span style="font-size:0.82rem; font-weight:700; color:#38bdf8; text-transform:uppercase; letter-spacing:0.5px;">அறச்சிந்தனைத் தெளிவு (Contemplative Self-Inquiry):</span>
         </div>
         <div class="chapter-quiz-q">${quiz.q}</div>
         <div class="chapter-quiz-opts">
@@ -671,7 +676,7 @@ function renderStudentChapterDeck(grade, bookKey, chap) {
       <div class="chapter-note-box">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
           <label style="font-size:0.85rem; font-weight:700; color:#cbd5e1; text-shadow:0 1px 3px #000;">
-            📝 எனது தர்ம சங்கற்பக் குறிப்பு (My Takeaway / Reflection Note):
+            📝 மாணவரின் தர்ம சங்கற்பக் குறிப்பு (Student's Sacred Reflection &amp; Daily Resolve):
           </label>
           <span id="chapterNoteSavedBadge" style="display:none; font-size:0.78rem; color:#34d399; font-weight:700;">✓ சேமிக்கப்பட்டது</span>
         </div>
