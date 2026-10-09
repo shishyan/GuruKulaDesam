@@ -3,110 +3,368 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>குரு குல ஆசிரமம் — பள்ளிப் பாடத்திட்டம் &amp; 7 ஆசிரமப் பாடநூல்கள் | Guru Kula Ashram</title>
-  <meta name="description" content="குரு குல ஆசிரமம் வேத-நவீன பள்ளிப் பாடத்திட்டம். தரம் 1 முதல் தரம் 12 மற்றும் முதுகலை ஆய்வு. 7 ஆசிரமப் பாடநூல்கள், 49 அத்தியாயங்கள், மெய்ஞ்ஞானக் கதைகள் &amp; பாட இசைக் காணொளிகள்.">
+  <title>குரு குல ஆசிரமம் | Guru Kula Ashram</title>
+  <meta name="description" content="குரு குல ஆசிரமம் — வித்யா குடீரம் இணையப் பள்ளி. தரம் 1 முதல் தரம் 12 மற்றும் உயர்கல்வி வித்யாபீடம். 7 ஆசிரமப் பாடநூல்கள் &amp; 3 Ds வாழ்வியல் நெறி.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="manifest" href="manifest.json">
   <style>
-    /* Pure Zero-Wrapper & Zero-Border Architecture for Index */
-    .curriculum-hero-banner {
-      background: transparent !important;
-      border: none !important;
-      box-shadow: none !important;
-      padding: 30px 0 20px 0 !important;
+    /* Card-Driven Focused Architecture for Index */
+    .home-hero-card {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.75) 100%) !important;
+      border: 1px solid rgba(212, 175, 55, 0.25) !important;
+      border-radius: 20px !important;
+      padding: 36px 28px !important;
       text-align: center;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
+      backdrop-filter: blur(10px);
+      margin-bottom: 28px !important;
     }
-    .curriculum-hero-banner h1 {
-      font-size: 2.3rem;
-      font-weight: 800;
+    .home-hero-emblem-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--gold-bright, #ffd700);
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 5px 16px;
+      border-radius: 20px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .home-hero-title {
+      font-size: 2.4rem;
+      font-weight: 900;
       color: #ffffff;
       margin: 8px 0;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.98), 0 4px 18px rgba(0,0,0,0.92) !important;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.9);
+      letter-spacing: -0.01em;
     }
-    .curriculum-hero-banner h2 {
+    .home-hero-subtitle {
       font-size: 1.15rem;
       color: #2dd4bf;
       font-weight: 600;
-      margin-bottom: 12px;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.95), 0 2px 10px rgba(0,0,0,0.9) !important;
+      margin-bottom: 14px;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.8);
     }
-    .curriculum-hero-banner p {
-      max-width: 860px;
-      margin: 0 auto 20px auto;
+    .home-hero-desc {
+      max-width: 820px;
+      margin: 0 auto 24px auto;
       color: #cbd5e1;
-      font-size: 0.98rem;
+      font-size: 1rem;
       line-height: 1.7;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.95), 0 2px 8px rgba(0,0,0,0.9) !important;
     }
-
-    .curriculum-stages-section,
-    .curriculum-books-section,
-    .curriculum-anatomy-section {
-      background: transparent !important;
-      border: none !important;
-      box-shadow: none !important;
-      padding: 24px 0 !important;
-      margin-bottom: 24px !important;
+    .home-hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
-
-    .curriculum-stage-block {
-      background: transparent !important;
-      border: none !important;
-      box-shadow: none !important;
-      padding: 16px 0;
-      margin-bottom: 24px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-    }
-
-    .grade-pill-btn {
+    .hero-action-btn {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 8px 18px;
-      border-radius: 10px;
-      background: rgba(15, 23, 42, 0.6) !important;
-      color: #ffffff !important;
-      text-decoration: none;
+      gap: 8px;
+      padding: 10px 22px;
+      border-radius: 12px;
       font-weight: 700;
-      font-size: 0.92rem;
-      transition: all 0.2s ease;
-      text-shadow: 0 1px 4px #000 !important;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
     }
-    .grade-pill-btn:hover {
-      background: rgba(45, 212, 191, 0.25) !important;
-      color: #2dd4bf !important;
+    .hero-action-btn.primary {
+      background: linear-gradient(135deg, #d97706, #b45309);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4);
+    }
+    .hero-action-btn.primary:hover {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(217, 119, 6, 0.6);
+    }
+    .hero-action-btn.secondary {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+    }
+    .hero-action-btn.secondary:hover {
+      background: rgba(56, 189, 248, 0.25);
+      transform: translateY(-2px);
+    }
+    .hero-action-btn.tertiary {
+      background: rgba(45, 212, 191, 0.15);
+      color: #2dd4bf;
+      border: 1px solid rgba(45, 212, 191, 0.4);
+    }
+    .hero-action-btn.tertiary:hover {
+      background: rgba(45, 212, 191, 0.25);
       transform: translateY(-2px);
     }
 
-    .curriculum-7books-grid {
+    /* 50/50 Visual Highlight Cards */
+    .home-visual-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 20px;
-      margin-top: 18px;
+      margin-bottom: 32px;
+    }
+    .home-visual-card {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .home-visual-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(212, 175, 55, 0.4);
+    }
+    .home-visual-media {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+    }
+    .home-visual-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .home-visual-card:hover .home-visual-media img {
+      transform: scale(1.04);
+    }
+    .home-visual-tag {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(0, 0, 0, 0.75);
+      color: var(--gold-bright, #ffd700);
+      padding: 4px 12px;
+      border-radius: 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+    }
+    .home-visual-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .home-visual-body h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 0 0 8px 0;
+    }
+    .home-visual-body p {
+      color: #94a3b8;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin: 0 0 16px 0;
+    }
+    .home-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #2dd4bf;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: gap 0.2s ease;
+    }
+    .home-card-link:hover {
+      gap: 10px;
+      color: #5eead4;
     }
 
-    .curriculum-book-card {
-      background: transparent !important;
-      border: none !important;
-      box-shadow: none !important;
-      padding: 14px 4px;
+    /* Section Title Strip */
+    .section-title-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+    }
+    .section-pill {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-bright, #ffd700);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .section-main-title {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 0;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    }
+    .section-sub-text {
+      color: #94a3b8;
+      font-size: 0.88rem;
+    }
+
+    /* 5 Stage Cards Grid */
+    .home-stages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .stage-card {
+      background: rgba(15, 23, 42, 0.75);
+      border-radius: 16px;
+      padding: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .stage-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+    }
+    .stage-card.stage-primary { border-left: 4px solid #38bdf8; }
+    .stage-card.stage-middle { border-left: 4px solid #34d399; }
+    .stage-card.stage-secondary { border-left: 4px solid #facc15; }
+    .stage-card.stage-senior { border-left: 4px solid #fb923c; }
+    .stage-card.stage-collegiate { border-left: 4px solid #c084fc; }
+
+    .stage-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .stage-card-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .stage-primary .stage-card-badge { color: #38bdf8; }
+    .stage-middle .stage-card-badge { color: #34d399; }
+    .stage-secondary .stage-card-badge { color: #facc15; }
+    .stage-senior .stage-card-badge { color: #fb923c; }
+    .stage-collegiate .stage-card-badge { color: #c084fc; }
+
+    .stage-card-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 4px 0 2px 0;
+    }
+    .stage-card-age {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      font-weight: 500;
+    }
+    .stage-card-icon {
+      font-size: 1.8rem;
+    }
+    .stage-card-desc {
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      line-height: 1.55;
+      margin: 0 0 18px 0;
+    }
+    .stage-grades-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .stage-grade-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 14px;
+      border-radius: 8px;
+      background: rgba(30, 41, 59, 0.8);
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 700;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease;
+    }
+    .stage-grade-btn:hover {
+      background: rgba(45, 212, 191, 0.2);
+      border-color: #2dd4bf;
+      color: #2dd4bf;
+      transform: translateY(-2px);
     }
 
-    .anatomy-steps-grid {
+    /* Core Portals 3 Cards Grid */
+    .home-portals-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      margin-top: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
     }
-
-    .anatomy-step-card {
-      background: transparent !important;
-      border: none !important;
-      box-shadow: none !important;
-      padding: 12px 4px;
+    .portal-card {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+    }
+    .portal-card:hover {
+      border-color: rgba(212, 175, 55, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+    }
+    .portal-icon {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .portal-card h4 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 0 0 8px 0;
+    }
+    .portal-card p {
+      color: #94a3b8;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin: 0 0 18px 0;
+    }
+    .portal-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--gold-bright, #ffd700);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: gap 0.2s ease;
+    }
+    .portal-btn:hover {
+      gap: 10px;
+      color: #ffffff;
     }
   </style>
 </head>
@@ -283,7 +541,7 @@
             <span class="crumb-text">முகப்பு</span>
           </a>
           <span class="crumb-sep">/</span>
-          <span class="crumb-current">பள்ளிப் பாடத்திட்டம் &amp; 7 ஆசிரம நூல்கள்</span>
+          <span class="crumb-current">குரு குல ஆசிரமம்</span>
         </nav>
       </div>
       <div class="header-right-tools">
@@ -309,348 +567,209 @@
     </div>
   </header>
 
-  <main class="main-content" style="max-width: 1240px; margin: 0 auto; padding: 20px 20px 80px 20px;">
+    <main class="main-content" style="max-width: 1240px; margin: 0 auto; padding: 20px 20px 80px 20px;">
 
-    <!-- HERO BANNER (PURE ZERO-WRAPPER) -->
-    <div class="curriculum-hero-banner" id="curriculumOverview">
-      <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #f59e0b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; text-shadow: 0 1px 4px #000;">
-        <svg class="gkd-icon gkd-om-icon" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 10.5c-.3-.7-.2-1.5.3-2.1.8-.9 2.2-.9 3 .1.4.5.5 1.2.2 1.8-.4.7-1.1 1.2-1.7 1.7.9.3 1.7.9 2 1.7.4 1.1 0 2.4-1 3.1-1.2.9-2.9.7-3.9-.4-.4-.5-.6-1.1-.6-1.7h1.4c0 .4.2.8.5 1 .6.5 1.5.4 2-.1.4-.4.5-1 .2-1.5-.4-.7-1.2-1-2-1v-1.2c.6 0 1.2-.2 1.5-.7.3-.4.3-.9 0-1.3-.4-.5-1.1-.6-1.6-.2-.3.2-.5.6-.5 1H8.2zm6.3-2.5c.8 0 1.5.5 1.8 1.2l-1.2.5c-.2-.4-.5-.6-.8-.6-.6 0-1 .4-1 1s.4 1 1 1c.5 0 .9-.3 1.1-.7l1.1.6c-.4.8-1.2 1.3-2.2 1.3-1.4 0-2.4-1-2.4-2.4 0-1.3 1-2.4 2.4-2.4zm1.5-1.5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z"/></svg>
-        குரு குல ஆசிரமம் • பள்ளிப் பாடத்திட்டம்
+    <!-- 1. FOCUSED HERO CARD (CLEAN & NON-CLUTTERED) -->
+    <div class="home-hero-card" id="curriculumOverview">
+      <div class="home-hero-emblem-pill">
+        <span style="font-size: 1.1rem;">ॐ</span>
+        <span>குரு குல ஆசிரமம் • வித்யா குடீரம்</span>
       </div>
-      <h1>பள்ளிப் பாடத்திட்டம் — தரம் 1 முதல் 12 &amp; உயர்கல்வி (BA, MA, PhD)</h1>
-      <h2>School Curriculum: 5 Stages • 12 Grades + Collegiate Higher Studies • 7 Sacred Books • 49 Chapters</h2>
-      <p>
-        பள்ளிப் பாடத்திட்டமே குரு குல ஆசிரமத்தின் அனைத்து கலைகளையும் விழுமியங்களையும் உள்ளடக்கிய ஒற்றைப் பெருங்கலன். பாலப் பருவம் முதல் மேல்நிலை வரை 12 வகுப்புகளிலும், தொடர்ந்து இளங்கலை (B.A./B.Sc.), முதுகலை (M.A./Acharya), முனைவர் ஆய்வு (Ph.D.) வரை அனைத்து நிலைகளிலும் 7 ஆசிரமப் பாடநூல்கள், விரிவுரைகள், மெய்ஞ்ஞானக் கதைகள், மற்றும் 706 பாடல்கள், திருக்குறள், திருமுறைக் காணொளிகள் அனைத்தும் அதிகாரங்களுக்குள்ளேயே முழுமையாகக் கட்டமைக்கப்பட்டுள்ளன.
+      <h1 class="home-hero-title">குரு குல ஆசிரமம்</h1>
+      <div class="home-hero-subtitle">Guru Kula Ashram — Modern Gurukulam Online Education</div>
+      <p class="home-hero-desc">
+        பாரம்பரியக் குருகுல விழுமியங்களும் நவீனக் கல்வியும் இணையும் ஆன்ம வித்யாபீடம். மழலைப் பருவம் முதல் உயர்கல்வி வரை, 7 ஆசிரமப் பாடநூல்கள் மற்றும் 3 Ds (கடமை, கட்டுப்பாடு, கண்ணியம்) நெறிமுறை வழியிலான ஒருங்கிணைந்த முழுமைப் பயில்வு.
       </p>
-      <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin: 16px 0 20px;">
-        <a href="#curriculumStages" class="grade-pill-btn" style="background: rgba(212, 175, 55, 0.15) !important; color: var(--gold-bright) !important; border: 1px solid rgba(212, 175, 55, 0.4) !important;">
-          📜 5 குருகுலப் பருவங்கள் காண்க &rarr;
+      <div class="home-hero-actions">
+        <a href="#stagesSection" class="hero-action-btn primary">
+          <span>🎓</span>
+          <span>வகுப்புகள் (Grades 1–12)</span>
         </a>
-        <a href="books.html" class="grade-pill-btn" style="background: rgba(56, 189, 248, 0.15) !important; color: #38bdf8 !important; border: 1px solid rgba(56, 189, 248, 0.4) !important;">
-          📚 7 ஆசிரமப் பாடநூல்கள் அலமாரி &rarr;
+        <a href="books.html" class="hero-action-btn secondary">
+          <span>📚</span>
+          <span>7 ஆசிரமப் பாடநூல்கள்</span>
         </a>
-        <a href="school.html" class="grade-pill-btn" style="background: rgba(45, 212, 191, 0.15) !important; color: #2dd4bf !important; border: 1px solid rgba(45, 212, 191, 0.4) !important;">
-          🏛️ வித்யா குடீரம் பள்ளி போர்டல் &rarr;
+        <a href="school.html" class="hero-action-btn tertiary">
+          <span>🏛️</span>
+          <span>வித்யா குடீரம் பள்ளி அரங்கம்</span>
         </a>
       </div>
-      
     </div>
 
-    <!-- 50/50 SACRED VISUAL HERITAGE & DETAILED EXPOSITION SECTION -->
-    <section class="visual-heritage-split-section" aria-label="ஆலமர வித்யாபீடமும் குரு-சீடர் 7 ஆசிரமப் பாடநூல்களும்">
-      <div style="border-bottom: 2px solid rgba(212, 175, 55, 0.35); padding-bottom: 10px; margin-bottom: 8px;">
-        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: var(--gold-bright, #ffd700); border: 1px solid rgba(212,175,55,0.4); padding: 3px 12px; border-radius: 12px; font-size: 0.76rem; font-weight: 800; text-transform: uppercase; margin-bottom: 6px;">குருகுல அடித்தளம் • GURUKULA TAPOVANAM</span>
-        <h2 style="color: #ffffff; font-size: 1.5rem; font-weight: 800; margin: 0; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">ஆலமர வித்யாபீடமும் குரு-சீடர் 7 ஆசிரமப் பாடநூல்களும்</h2>
-      </div>
-      <!-- 50/50 Split Feature: குருகுல ஆலமர வித்யாபீடம் -->
-      <article class="visual-split-card">
-        <div class="visual-split-media">
+    <!-- 2. SACRED VISUAL HERITAGE (2 IMAGES SPLIT CARDS) -->
+    <div class="home-visual-strip" aria-label="குருகுலக் களம்">
+      <article class="home-visual-card">
+        <div class="home-visual-media">
           <img src="assets/images/gurukula-banyan-tree-bg.jpg" alt="குருகுல ஆலமர வித்யாபீடம்" loading="lazy">
-          <div class="visual-split-badge">தபோவனக் களம் • TAPOVANAM SANCTUARY</div>
+          <span class="home-visual-tag">தபோவனக் களம்</span>
         </div>
-        <div class="visual-split-content">
-          <div class="visual-split-tag">✦ இயற்கை வித்யாபீடம்</div>
-          <h3 class="visual-split-title">குருகுல ஆலமர வித்யாபீடம்</h3>
-          <div class="visual-split-sub">12 வகுப்புகள் & உயர்கல்வி பட்டப் படிப்புகளுக்கான ஆன்ம ஆய்வுத் தபோவனம்</div>
-          <p class="visual-split-desc">குரு குல தேசத்தின் இணையப் பள்ளி வளாகம் இயற்கையின் அமைதியான மடியில் ஆலமர நிழலில் விரிகிறது. வணிக அழுத்தங்கள், போட்டி மனப்பான்மைகள் மற்றும் போலி பகட்டுகளுக்கு அப்பால், மாணவர்களின் ஆன்ம ஒளி சுடர்விட்டுப் பிரகாசிக்கக்கூடிய தூய ஆசிரமக் கல்விச் சூழல் இதுவாகும். 5 குருகுலப் பருவங்களும் இப்பெரு வித்யாபீடத்திலேயே தொடங்குகின்றன.</p>
-          <ul class="visual-split-points">
-            <li class="visual-split-point">பாலப் பருவம் (1-4) முதல் உயர்கல்வி (BA, MA, PhD) வரையிலான முழுமையான கல்விப் பாதை.</li>
-            <li class="visual-split-point">உடற்கட்டு, மன அமைதி, புத்தி கூர்மை மற்றும் ஆன்ம விழிப்புணர்வு தரும் ஒருங்கிணைந்த கல்வி.</li>
-            <li class="visual-split-point">உலகெங்கிலும் உள்ள தமிழ்க் குடும்பங்கள் தங்கள் இல்லத்திலிருந்தே கற்கக்கூடிய திறந்த இணையக் கூடம்.</li>
-          </ul>
+        <div class="home-visual-body">
+          <div>
+            <h3>குருகுல ஆலமர வித்யாபீடம்</h3>
+            <p>இயற்கையின் மடியில் அமைதியான சூழலில் அமைந்த இணையத் தபோவனம். வணிகப் பகட்டுகளின்றி பண்பாட்டுக் கல்வி கற்கும் ஆசிரம வித்யாபீடம்.</p>
+          </div>
+          <a href="school.html" class="home-card-link">பள்ளிப் போர்டல் காண &rarr;</a>
         </div>
       </article>
-      <!-- 50/50 Split Feature: குரு சீடர் பாரம்பரியம் & 7 ஆசிரமப் பாடநூல்கள் -->
-      <article class="visual-split-card reverse">
-        <div class="visual-split-media">
+
+      <article class="home-visual-card">
+        <div class="home-visual-media">
           <img src="assets/images/lessons/disciples_under_sacred_tree.jpg" alt="குரு சீடர் பாரம்பரியம் & 7 ஆசிரமப் பாடநூல்கள்" loading="lazy">
-          <div class="visual-split-badge">சாத்திரப் பெட்டகம் • 7 ASHRAM BOOKS</div>
+          <span class="home-visual-tag">சாத்திரப் பெட்டகம்</span>
         </div>
-        <div class="visual-split-content">
-          <div class="visual-split-tag">✦ பாடநூல் கட்டமைப்பு</div>
-          <h3 class="visual-split-title">குரு சீடர் பாரம்பரியம் & 7 ஆசிரமப் பாடநூல்கள்</h3>
-          <div class="visual-split-sub">நன்னெறி முதல் நற்செயல் வரை — 49 அதிகாரங்களில் செறிவூட்டப்பட்ட மெய்ஞ்ஞானம்</div>
-          <p class="visual-split-desc">ஒவ்வொரு வகுப்பிலும் 7 ஆசிரமப் பாடநூல்கள் (நன்னெறி, நல்லறம், நல்வழி, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செயல்) கற்பிக்கப்படுகின்றன. 700-க்கும் மேற்பட்ட ஆசிரமப் பாடல்கள், திருக்குறள் அதிகாரங்கள், நால்வர் திருமுறைகள், மற்றும் நவீன STEM அறிவியல் ஆராய்ச்சிகள் அனைத்தும் இந்த ஏழு நூல்களுக்குள்ளேயே செறிவாகப் பிணைக்கப்பட்டுள்ளன.</p>
-          <ul class="visual-split-points">
-            <li class="visual-split-point">அறம், பக்தி, வீரம், அறிவியல் சிந்தனை மற்றும் சமுதாயத் தொண்டு ஆகிய முழு ஆளுமைப் பயிற்சி.</li>
-            <li class="visual-split-point">வகுப்பு வாரியாகப் பிரிக்கப்பட்ட ஊடாடும் வினாடி வினாக்கள் மற்றும் அத்தியாயத் தேர்ச்சி பதிவேடு.</li>
-            <li class="visual-split-point">மாணவர்கள் தங்களது கற்றல் முன்னேற்றத்தைக் கண்காணித்துச் சான்றிதழ்களைப் பெறலாம்.</li>
-          </ul>
+        <div class="home-visual-body">
+          <div>
+            <h3>குரு சீடர் பாரம்பரியமும் 7 நூல்களும்</h3>
+            <p>நன்னெறி முதல் நற்செயல் வரை — விழுமியங்கள், திருமுறைப் பாடல்கள், மற்றும் 3 Ds வாழ்வியல் சாதனா நெறிமுறைகள் அடங்கிய பாடநூல்கள்.</p>
+          </div>
+          <a href="books.html" class="home-card-link">நூல்கள் அரங்கம் செல்ல &rarr;</a>
         </div>
       </article>
-    </section>
+    </div>
 
-
-
-    <!-- 1. THE 5 GURUKULA STAGES & 12 GRADES + HIGHER STUDIES SELECTOR -->
-    <section class="curriculum-stages-section" id="curriculumStages">
-      <div style="border-bottom: 2px solid rgba(45, 212, 191, 0.4); padding-bottom: 12px; margin-bottom: 24px;">
-        <h2 style="color: #ffffff; font-size: 1.65rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 6px rgba(0,0,0,0.95);">
-          ஐந்து குருகுலப் பருவங்கள்: 12 வகுப்புகள் &amp; உயர்கல்வி வித்யாபீடம் (Select Your Stage &amp; Grade)
-        </h2>
-        <p style="color: #94a3b8; font-size: 0.92rem; margin: 0; text-shadow: 0 1px 4px #000;">
-          உங்கள் வகுப்பு அல்லது பட்டப் படிப்பைத் தேர்வுசெய்து அதிலுள்ள 7 ஆசிரமப் பாடநூல்களையும் அத்தியாயங்களையும் வாசியுங்கள்.
-        </p>
+    <!-- 3. THE 5 GURUKULA STAGES (FOCUSED CARD-DRIVEN SELECTOR) -->
+    <section class="home-stages-section" id="stagesSection" aria-label="ஐந்து குருகுலப் பருவங்கள்">
+      <div class="section-title-strip">
+        <div>
+          <span class="section-pill">கல்விப் பருவங்கள்</span>
+          <h2 class="section-main-title">ஐந்து குருகுலப் பருவங்கள் (Educational Stages)</h2>
+        </div>
+        <span class="section-sub-text">உங்கள் வகுப்பைத் தேர்வு செய்து நேரடியாகக் கற்கத் தொடங்குங்கள்</span>
       </div>
 
-      <!-- STAGE 1: PRIMARY ACADEMY -->
-      <div class="curriculum-stage-block">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-          <h3 style="color: #38bdf8; font-size: 1.3rem; font-weight: 800; margin: 0; text-shadow: 0 2px 5px #000;">
-            1. பாலப் பருவம் (Primary Academy: Grades 1 - 4 • அற அடித்தளம் &amp; புராணங்கள்)
-          </h3>
-          <span style="color: #94a3b8; font-size: 0.84rem; text-shadow: 0 1px 4px #000;">வயது 6 - 9</span>
-        </div>
-        <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; margin: 0 0 12px 0; text-shadow: 0 1px 4px #000;">
-          அன்பு, ஈகை, இன்சொல், தாய் தந்தையர் போற்றுதல், அஹிம்சை, விநாயகர் அகவல், முருகன் அருள், ஆத்திசூடி &amp; அப்பர் பணி.
-        </p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <a href="tharam-1.html" class="grade-pill-btn"><span style="color: #38bdf8; font-weight: 800;">தரம் 1</span> • 7 நூல்கள் &rarr;</a>
-          <a href="tharam-2.html" class="grade-pill-btn"><span style="color: #38bdf8; font-weight: 800;">தரம் 2</span> • 7 நூல்கள் &rarr;</a>
-          <a href="tharam-3.html" class="grade-pill-btn"><span style="color: #38bdf8; font-weight: 800;">தரம் 3</span> • 7 நூல்கள் &rarr;</a>
-          <a href="tharam-4.html" class="grade-pill-btn"><span style="color: #38bdf8; font-weight: 800;">தரம் 4</span> • 7 நூல்கள் &rarr;</a>
-        </div>
-      </div>
+      <div class="home-stages-grid">
 
-      <!-- STAGE 2: MIDDLE ACADEMY -->
-      <div class="curriculum-stage-block">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-          <h3 style="color: #34d399; font-size: 1.3rem; font-weight: 800; margin: 0; text-shadow: 0 2px 5px #000;">
-            2. இளம் பருவம் (Middle Academy: Grades 5 - 8 • திருமுறைகள் &amp; பண்பாடு)
-          </h3>
-          <span style="color: #94a3b8; font-size: 0.84rem; text-shadow: 0 1px 4px #000;">வயது 10 - 13</span>
-        </div>
-        <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; margin: 0 0 12px 0; text-shadow: 0 1px 4px #000;">
-          நன்றி மறவாமை, 63 நாயன்மார்கள் பக்தி, பெரியபுராண தியாகங்கள், நான்கு வேதங்கள், ஆழ்வார்கள் பக்தி &amp; 12 மாத விழாக்கள்.
-        </p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <a href="tharam-5.html" class="grade-pill-btn"><span style="color: #34d399; font-weight: 800;">தரம் 5</span> • 7 நூல்கள் &rarr;</a>
-          <a href="tharam-6.html" class="grade-pill-btn"><span style="color: #34d399; font-weight: 800;">தரம் 6</span> • 7 நூல்கள் &rarr;</a>
-          <a href="tharam-7.html" class="grade-pill-btn"><span style="color: #34d399; font-weight: 800;">தரம் 7</span> • 7 நூல்கள் &rarr;</a>
-          <a href="tharam-8.html" class="grade-pill-btn"><span style="color: #34d399; font-weight: 800;">தரம் 8</span> • 7 நூல்கள் &rarr;</a>
-        </div>
-      </div>
-
-      <!-- STAGE 3: SECONDARY ACADEMY -->
-      <div class="curriculum-stage-block">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-          <h3 style="color: #facc15; font-size: 1.3rem; font-weight: 800; margin: 0; text-shadow: 0 2px 5px #000;">
-            3. உயர்நிலைப் பருவம் (Secondary Academy: Grades 9 - 10 • அறநெறி &amp; ஆகமங்கள்)
-          </h3>
-          <span style="color: #94a3b8; font-size: 0.84rem; text-shadow: 0 1px 4px #000;">வயது 14 - 15</span>
-        </div>
-        <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; margin: 0 0 12px 0; text-shadow: 0 1px 4px #000;">
-          புலனடக்கம், 1330 திருக்குறள் ஆய்வு, 28 சைவ ஆகமங்கள், உடலே ஆலயம் திருமந்திர உடலியல் &amp; வள்ளலார் திருவருட்பா.
-        </p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <a href="tharam-9.html" class="grade-pill-btn"><span style="color: #facc15; font-weight: 800;">தரம் 9</span> • 7 நூல்கள் &rarr;</a>
-          <a href="tharam-10.html" class="grade-pill-btn"><span style="color: #facc15; font-weight: 800;">தரம் 10</span> • 7 நூல்கள் &rarr;</a>
-        </div>
-      </div>
-
-      <!-- STAGE 4: SENIOR SECONDARY -->
-      <div class="curriculum-stage-block">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-          <h3 style="color: #fb923c; font-size: 1.3rem; font-weight: 800; margin: 0; text-shadow: 0 2px 5px #000;">
-            4. மேல்நிலைப் பருவம் (Senior Secondary: Grades 11 - 12 • கீதை &amp; பள்ளி இறுதி)
-          </h3>
-          <span style="color: #94a3b8; font-size: 0.84rem; text-shadow: 0 1px 4px #000;">வயது 16 - 17</span>
-        </div>
-        <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; margin: 0 0 12px 0; text-shadow: 0 1px 4px #000;">
-          பகவத் கீதை 1-18 அதிகாரங்கள் (கர்ம &amp; பக்தி யோகம்), தைத்திரீய பஞ்ச கோசங்கள், ஸ்திதப்பிரக்ஞ லட்சணம், சுய ஆய்வு மற்றும் பள்ளி இறுதித் தகுதி.
-        </p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <a href="tharam-11.html" class="grade-pill-btn"><span style="color: #fb923c; font-weight: 800;">தரம் 11</span> • 7 நூல்கள் &rarr;</a>
-          <a href="tharam-12.html" class="grade-pill-btn"><span style="color: #fb923c; font-weight: 800;">தரம் 12</span> • 7 நூல்கள் &rarr;</a>
-        </div>
-      </div>
-
-      <!-- STAGE 5: HIGHER STUDIES & RESEARCH ACADEMY (BA, MA, PhD) -->
-      <div class="curriculum-stage-block" style="border-bottom: none !important;">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-          <h3 style="color: #ffd700; font-size: 1.3rem; font-weight: 800; margin: 0; text-shadow: 0 2px 5px #000;">
-            5. உயர்கல்வி வித்யாபீடம் (Collegiate &amp; Research Academy: BA, MA, Ph.D. • வயது 18+)
-          </h3>
-          <span style="color: #facc15; font-size: 0.84rem; font-weight: 700; text-shadow: 0 1px 4px #000;">வயது 18+ • பட்டப் படிப்புகள் &amp; முனைவர் ஆய்வு</span>
-        </div>
-        <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; margin: 0 0 12px 0; text-shadow: 0 1px 4px #000;">
-          தத்துவ போதம், விவேகசூடாமணி, பிரஸ்தானத்திரயம், சைவ சித்தாந்த மாபாடியம், வள்ளலார் மெய்ஞ்ஞானம், காஞ்சி மகா பெரியவா தெய்வத்தின் குரல் மற்றும் குவாண்டம்-நடராஜ வித்யாபீட ஆராய்ச்சி.
-        </p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <a href="higher-studies.html#tierUG" class="grade-pill-btn" style="border: 1px solid rgba(255, 215, 0, 0.4) !important; background: rgba(255, 215, 0, 0.1) !important;"><span style="color: #ffd700; font-weight: 800;">🎓 B.A. / B.Sc.</span> • இளங்கலை (3 Yrs) &rarr;</a>
-          <a href="higher-studies.html#tierPG" class="grade-pill-btn" style="border: 1px solid rgba(251, 146, 60, 0.4) !important; background: rgba(251, 146, 60, 0.1) !important;"><span style="color: #fb923c; font-weight: 800;">📜 M.A. / ஆச்சார்யா</span> • முதுகலை (2 Yrs) &rarr;</a>
-          <a href="higher-studies.html#tierPhD" class="grade-pill-btn" style="border: 1px solid rgba(168, 85, 247, 0.4) !important; background: rgba(168, 85, 247, 0.1) !important;"><span style="color: #c084fc; font-weight: 800;">⚛️ Ph.D.</span> • முனைவர் ஆய்வு (Doctoral) &rarr;</a>
-          <a href="higher-studies.html" class="grade-pill-btn" style="background: rgba(45, 212, 191, 0.2) !important; color: #5eead4 !important; font-weight: 700;">🏛️ வித்யாபீடம் அரங்கம் &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 2. THE 7 SACRED ASHRAM BOOKS MATRIX -->
-    <section class="curriculum-books-section" id="curriculum7Books">
-      <div style="border-bottom: 2px solid rgba(56, 189, 248, 0.4); padding-bottom: 12px; margin-bottom: 24px;">
-        <h2 style="color: #ffffff; font-size: 1.65rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 6px rgba(0,0,0,0.95);">
-          ஒவ்வொரு வகுப்பிலும் 7 ஆசிரமப் பாடநூல்கள் (The 7 Books of Every Grade)
-        </h2>
-        <p style="color: #94a3b8; font-size: 0.92rem; margin: 0; text-shadow: 0 1px 4px #000;">
-          குருகுல தேசத்தின் அனைத்துக் கலைகளும் இந்த 7 நூல்களின் அதிகாரங்களாகவே அமைக்கப்பட்டுள்ளன.
-        </p>
-      </div>
-
-      <div class="curriculum-7books-grid">
-
-        <!-- 1. நன்னெறி -->
-        <div class="curriculum-book-card">
+        <!-- Stage 1: Primary (1 - 4) -->
+        <div class="stage-card stage-primary">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span style="font-size: 1.8rem;">📜</span>
-              <span style="color: #38bdf8; font-size: 0.76rem; font-weight: 700; text-transform: uppercase;">நூல் 1</span>
+            <div class="stage-card-header">
+              <div class="stage-card-title-box">
+                <span class="stage-card-badge">1. பாலப் பருவம்</span>
+                <h3 class="stage-card-title">தொடக்கக் கல்வி (Grades 1 – 4)</h3>
+                <span class="stage-card-age">வயது 6 – 9 • 1–2 நூல்கள்</span>
+              </div>
+              <span class="stage-card-icon">🌱</span>
             </div>
-            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 5px #000;">1. நன்னெறி</h3>
-            <div style="font-size: 0.8rem; color: #2dd4bf; font-weight: 600; margin-bottom: 8px;">Right Conduct &amp; Moral Foundations</div>
-            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6; text-shadow: 0 1px 4px #000;">பெற்றோர் வழிபாடு, ஆசிரிய மரியாதை, வாய்மை மற்றும் சிவநேச ஒழுக்கத்தின் அடித்தளம்.</p>
+            <p class="stage-card-desc">விளையாடிப் பயிலல், பகிர்தல், நற்பண்புகள், உண்மை பேசுதல் &amp; 3 Ds (கடமை, கட்டுப்பாடு, கண்ணியம்) நெறிமுறை.</p>
           </div>
-          <a href="books.html?book=nanneri" class="grade-pill-btn" style="border: 1px solid rgba(56, 189, 248, 0.4) !important;">நன்னெறி நூலைத் திறக்க &rarr;</a>
+          <div class="stage-grades-row">
+            <a href="tharam-1.html" class="stage-grade-btn" title="தரம் 1 • நற்செயல் (1 நூல்)">தரம் 1</a>
+            <a href="tharam-2.html" class="stage-grade-btn" title="தரம் 2 • நற்செயல் (1 நூல்)">தரம் 2</a>
+            <a href="tharam-3.html" class="stage-grade-btn" title="தரம் 3 • நற்செயல், நற்பண்பு (2 நூல்கள்)">தரம் 3</a>
+            <a href="tharam-4.html" class="stage-grade-btn" title="தரம் 4 • நற்செயல், நற்பண்பு (2 நூல்கள்)">தரம் 4</a>
+          </div>
         </div>
 
-        <!-- 2. நல்லறம் -->
-        <div class="curriculum-book-card">
+        <!-- Stage 2: Middle (5 - 8) -->
+        <div class="stage-card stage-middle">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span style="font-size: 1.8rem;">🌿</span>
-              <span style="color: #34d399; font-size: 0.76rem; font-weight: 700; text-transform: uppercase;">நூல் 2</span>
+            <div class="stage-card-header">
+              <div class="stage-card-title-box">
+                <span class="stage-card-badge">2. இளம் பருவம்</span>
+                <h3 class="stage-card-title">நடுநிலைப் பள்ளி (Grades 5 – 8)</h3>
+                <span class="stage-card-age">வயது 10 – 13 • 5 நூல்கள்</span>
+              </div>
+              <span class="stage-card-icon">🌿</span>
             </div>
-            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 5px #000;">2. நல்லறம்</h3>
-            <div style="font-size: 0.8rem; color: #34d399; font-weight: 600; margin-bottom: 8px;">Good Deeds, Compassion &amp; Ahimsa</div>
-            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6; text-shadow: 0 1px 4px #000;">உயிர்களிடத்தில் அன்பு, ஜீவகாருண்யம், தாவர உணவு நெறி, விருந்தோம்பல் &amp; சமூகத் தொண்டு.</p>
+            <p class="stage-card-desc">ஒழுக்கம், நல்லறம், நற்பண்பு, திருமுறை பக்தி, இறை சரணாகதி &amp; இல்லற சாதனா நெறிமுறைகள்.</p>
           </div>
-          <a href="books.html?book=nallaram" class="grade-pill-btn" style="border: 1px solid rgba(52, 211, 153, 0.4) !important;">நல்லறம் நூலைத் திறக்க &rarr;</a>
+          <div class="stage-grades-row">
+            <a href="tharam-5.html" class="stage-grade-btn" title="தரம் 5 • 5 நூல்கள்">தரம் 5</a>
+            <a href="tharam-6.html" class="stage-grade-btn" title="தரம் 6 • 5 நூல்கள்">தரம் 6</a>
+            <a href="tharam-7.html" class="stage-grade-btn" title="தரம் 7 • 5 நூல்கள்">தரம் 7</a>
+            <a href="tharam-8.html" class="stage-grade-btn" title="தரம் 8 • 5 நூல்கள்">தரம் 8</a>
+          </div>
         </div>
 
-        <!-- 3. நற்பண்பு -->
-        <div class="curriculum-book-card">
+        <!-- Stage 3: Secondary (9 - 10) -->
+        <div class="stage-card stage-secondary">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span style="font-size: 1.8rem;">⭐</span>
-              <span style="color: #facc15; font-size: 0.76rem; font-weight: 700; text-transform: uppercase;">நூல் 3</span>
+            <div class="stage-card-header">
+              <div class="stage-card-title-box">
+                <span class="stage-card-badge">3. உயர்நிலைப் பருவம்</span>
+                <h3 class="stage-card-title">உயர்நிலைப் பள்ளி (Grades 9 – 10)</h3>
+                <span class="stage-card-age">வயது 14 – 15 • 6 நூல்கள்</span>
+              </div>
+              <span class="stage-card-icon">🛡️</span>
             </div>
-            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 5px #000;">3. நற்பண்பு</h3>
-            <div style="font-size: 0.8rem; color: #facc15; font-weight: 600; margin-bottom: 8px;">The Right Path, Verses &amp; Truth</div>
-            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6; text-shadow: 0 1px 4px #000;">ஆத்திசூடி, கொன்றைவேந்தன், மூதுரை, நல்வழி மற்றும் நீதிநெறி விளக்கச் செய்யுட்கள் ஆய்வு.</p>
+            <p class="stage-card-desc">திருக்குறள் அறநெறி, வாய்மை, நாவடக்கம், இன்சொல், பஞ்ச மகா யாகங்கள் &amp; சமூகத் தொண்டு.</p>
           </div>
-          <a href="books.html?book=nalvazhi" class="grade-pill-btn" style="border: 1px solid rgba(250, 204, 21, 0.4) !important;">நல்வழி நூலைத் திறக்க &rarr;</a>
+          <div class="stage-grades-row">
+            <a href="tharam-9.html" class="stage-grade-btn" title="தரம் 9 • 6 நூல்கள்">தரம் 9</a>
+            <a href="tharam-10.html" class="stage-grade-btn" title="தரம் 10 • 6 நூல்கள்">தரம் 10</a>
+          </div>
         </div>
 
-        <!-- 4. நற்துணை -->
-        <div class="curriculum-book-card">
+        <!-- Stage 4: Senior Secondary (11 - 12) -->
+        <div class="stage-card stage-senior">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span style="font-size: 1.8rem;">🪔</span>
-              <span style="color: #fb923c; font-size: 0.76rem; font-weight: 700; text-transform: uppercase;">நூல் 4</span>
+            <div class="stage-card-header">
+              <div class="stage-card-title-box">
+                <span class="stage-card-badge">4. மேல்நிலைப் பருவம்</span>
+                <h3 class="stage-card-title">மேல்நிலைப் பள்ளி (Grades 11 – 12)</h3>
+                <span class="stage-card-age">வயது 16 – 17 • 6 நூல்கள்</span>
+              </div>
+              <span class="stage-card-icon">🏹</span>
             </div>
-            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 5px #000;">4. நற்துணை</h3>
-            <div style="font-size: 0.8rem; color: #fb923c; font-weight: 600; margin-bottom: 8px;">Divine Refuge &amp; Sacred Deity Hymns</div>
-            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6; text-shadow: 0 1px 4px #000;">விநாயகர், முருகன், சிவபெருமான், சக்தி, விஷ்ணு போற்றிகள், திருமுறைப் பண்ணிசை &amp; சரணாகதி.</p>
+            <p class="stage-card-desc">பகவத் கீதை யோக நெறி, தைத்திரீய உபநிடதம், தர்ம சிந்தனை &amp; பள்ளி இறுதித் தகுதி.</p>
           </div>
-          <a href="books.html?book=narthunai" class="grade-pill-btn" style="border: 1px solid rgba(251, 146, 60, 0.4) !important;">நற்துணை நூலைத் திறக்க &rarr;</a>
+          <div class="stage-grades-row">
+            <a href="tharam-11.html" class="stage-grade-btn" title="தரம் 11 • 6 நூல்கள்">தரம் 11</a>
+            <a href="tharam-12.html" class="stage-grade-btn" title="தரம் 12 • 6 நூல்கள்">தரம் 12</a>
+          </div>
         </div>
 
-        <!-- 5. நற்சிந்தனை -->
-        <div class="curriculum-book-card">
+        <!-- Stage 5: Higher Studies (BA, MA, PhD) -->
+        <div class="stage-card stage-collegiate">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span style="font-size: 1.8rem;">⚛️</span>
-              <span style="color: #a855f7; font-size: 0.76rem; font-weight: 700; text-transform: uppercase;">நூல் 5</span>
+            <div class="stage-card-header">
+              <div class="stage-card-title-box">
+                <span class="stage-card-badge">5. உயர்கல்வி வித்யாபீடம்</span>
+                <h3 class="stage-card-title">பட்டப் படிப்புகள் &amp; ஆய்வு</h3>
+                <span class="stage-card-age">வயது 18+ • அனைத்து 7 நூல்கள்</span>
+              </div>
+              <span class="stage-card-icon">⚛️</span>
             </div>
-            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 5px #000;">5. நற்சிந்தனை</h3>
-            <div style="font-size: 0.8rem; color: #a855f7; font-weight: 600; margin-bottom: 8px;">Noble Thoughts, STEM &amp; Philosophy</div>
-            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6; text-shadow: 0 1px 4px #000;">பிரபஞ்ச இயற்பியல், நடராஜ தத்துவம், உடலே ஆலயம், யோகக் கலை &amp; வேதாந்த சிந்தனை.</p>
+            <p class="stage-card-desc">வேத-நவீன அறிவியல் சங்கமம், குவாண்டம் இயற்பியல், வேதாந்தம் &amp; முனைவர் பட்ட ஆய்வு.</p>
           </div>
-          <a href="books.html?book=narchinthanai" class="grade-pill-btn" style="border: 1px solid rgba(168, 85, 247, 0.4) !important;">நற்சிந்தனை நூலைத் திறக்க &rarr;</a>
-        </div>
-
-        <!-- 6. நற்சொல் -->
-        <div class="curriculum-book-card">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span style="font-size: 1.8rem;">🌸</span>
-              <span style="color: #ec4899; font-size: 0.76rem; font-weight: 700; text-transform: uppercase;">நூல் 6</span>
-            </div>
-            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 5px #000;">6. நற்சொல்</h3>
-            <div style="font-size: 0.8rem; color: #ec4899; font-weight: 600; margin-bottom: 8px;">Sweet Speech, Iniya Sol &amp; Etiquette</div>
-            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6; text-shadow: 0 1px 4px #000;">இனியவை கூறல், புறங்கூறாமை, வாய்மை, நயத்தக்க நாகரிகம் &amp; நல்லிணக்க உரையாடல்.</p>
+          <div class="stage-grades-row">
+            <a href="higher-studies.html#tierUG" class="stage-grade-btn" title="இளங்கலை (3 Yrs)">B.A. / B.Sc.</a>
+            <a href="higher-studies.html#tierPG" class="stage-grade-btn" title="முதுகலை (2 Yrs)">M.A. முதுகலை</a>
+            <a href="higher-studies.html#tierPhD" class="stage-grade-btn" title="முனைவர் ஆய்வு">Ph.D. ஆய்வு</a>
           </div>
-          <a href="books.html?book=narchol" class="grade-pill-btn" style="border: 1px solid rgba(236, 72, 153, 0.4) !important;">நற்சொல் நூலைத் திறக்க &rarr;</a>
-        </div>
-
-        <!-- 7. நற்செயல் -->
-        <div class="curriculum-book-card">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span style="font-size: 1.8rem;">☀️</span>
-              <span style="color: #10b981; font-size: 0.76rem; font-weight: 700; text-transform: uppercase;">நூல் 7</span>
-            </div>
-            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 5px #000;">7. நற்செயல்</h3>
-            <div style="font-size: 0.8rem; color: #10b981; font-weight: 600; margin-bottom: 8px;">Practical Dharma &amp; Daily Sadhana</div>
-            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6; text-shadow: 0 1px 4px #000;">பஞ்ச மகா யக்ஞம், மரம் நடுதல், கோயில் உழவாரப் பணி, தாய்நாடு போற்றுதல் &amp; இல்லற சாதனை.</p>
-          </div>
-          <a href="books.html?book=narcheyal" class="grade-pill-btn" style="border: 1px solid rgba(16, 185, 129, 0.4) !important;">நற்செயல் நூலைத் திறக்க &rarr;</a>
         </div>
 
       </div>
     </section>
 
-    <!-- 3. LESSON ANATOMY: THE 7 SUB-CHAPTERS IN EVERY LESSON -->
-    <section class="curriculum-anatomy-section" id="curriculumAnatomy">
-      <div style="border-bottom: 2px solid rgba(250, 204, 21, 0.4); padding-bottom: 12px; margin-bottom: 24px;">
-        <h2 style="color: #ffffff; font-size: 1.65rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 6px rgba(0,0,0,0.95);">
-          ஒவ்வொரு பாடத்தின் 7 உட்பிரிவுகள் (The 7 Sub-Chapters of Every Lesson)
-        </h2>
-        <p style="color: #94a3b8; font-size: 0.92rem; margin: 0; text-shadow: 0 1px 4px #000;">
-          அனைத்து 49 அத்தியாயங்களும் இந்த 7 உட்பிரிவுகளுடன் துல்லியமாக வாசிக்கப்படுகின்றன.
-        </p>
-      </div>
-
-      <div class="anatomy-steps-grid">
-        <div class="anatomy-step-card">
-          <div style="font-size: 1.6rem; margin-bottom: 4px;">🎨</div>
-          <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 700; margin: 0 0 4px 0;">1. காட்சி அரங்கம் (Visual Gallery)</h4>
-          <p style="color: #cbd5e1; font-size: 0.86rem; line-height: 1.5; margin: 0;">7 புனித மரபு ஓவியக் காட்சிகள் மற்றும் கலை வடிவமைப்பு விளக்கம்.</p>
+    <!-- 4. CORE ASHRAM PILLARS (3 FOCUSED ACTION CARDS) -->
+    <section class="home-portals-section" aria-label="ஆசிரமத் தளங்கள்">
+      <div class="home-portals-grid">
+        <div class="portal-card">
+          <div>
+            <span class="portal-icon">🏛️</span>
+            <h4>வித்யா குடீரம் பள்ளி அரங்கம்</h4>
+            <p>12 வார கால அட்டவணை, அத்தியாய வாசிப்பு, வினாடி-வினா, சாதனா புள்ளிகள் &amp; பருவப் பட்டயச் சான்றிதழ்.</p>
+          </div>
+          <a href="school.html" class="portal-btn">வகுப்பறைக்குச் செல்க &rarr;</a>
         </div>
 
-        <div class="anatomy-step-card">
-          <div style="font-size: 1.6rem; margin-bottom: 4px;">📜</div>
-          <h4 style="color: #facc15; font-size: 1.05rem; font-weight: 700; margin: 0 0 4px 0;">2. மூலப் பாடல் &amp; பதவுரை</h4>
-          <p style="color: #cbd5e1; font-size: 0.86rem; line-height: 1.5; margin: 0;">கொன்றைவேந்தன், ஆத்திசூடி, குறள் அல்லது திருமுறை மூலச் செய்யுள் &amp; சொல்-பொருள்.</p>
+        <div class="portal-card">
+          <div>
+            <span class="portal-icon">📚</span>
+            <h4>7 ஆசிரமப் பாடநூல்கள் அலமாரி</h4>
+            <p>நன்னெறி, நல்லறம், நற்பண்பு, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செயல் — விழுமியக் கல்விப் பெட்டகம்.</p>
+          </div>
+          <a href="books.html" class="portal-btn">நூலகம் காண்க &rarr;</a>
         </div>
 
-        <div class="anatomy-step-card">
-          <div style="font-size: 1.6rem; margin-bottom: 4px;">📖</div>
-          <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 700; margin: 0 0 4px 0;">3. விரிவுரை &amp; தத்துவ உரை</h4>
-          <p style="color: #cbd5e1; font-size: 0.86rem; line-height: 1.5; margin: 0;">மாணவர் மனப்பக்குவத்திற்கேற்ப தத்துவ விழுமியங்களின் ஆழமான விளக்கம்.</p>
-        </div>
-
-        <div class="anatomy-step-card">
-          <div style="font-size: 1.6rem; margin-bottom: 4px;">🪔</div>
-          <h4 style="color: #fb923c; font-size: 1.05rem; font-weight: 700; margin: 0 0 4px 0;">4. மெய்ஞ்ஞானக் கதை / வரலாறு</h4>
-          <p style="color: #cbd5e1; font-size: 0.86rem; line-height: 1.5; margin: 0;">இத்தத்துவத்தை விளக்கும் முழுமையான புராண, இதிகாச, நாயன்மார் அற வரலாறு.</p>
-        </div>
-
-        <div class="anatomy-step-card">
-          <div style="font-size: 1.6rem; margin-bottom: 4px;">🌿</div>
-          <h4 style="color: #34d399; font-size: 1.05rem; font-weight: 700; margin: 0 0 4px 0;">5. இல்லற நடைமுறை (3 Ds)</h4>
-          <p style="color: #cbd5e1; font-size: 0.86rem; line-height: 1.5; margin: 0;">கடமை (Duty), கட்டுப்பாடு (Discipline), கண்ணியம் (Dignity) அன்றாடச் சாதனா.</p>
-        </div>
-
-        <div class="anatomy-step-card">
-          <div style="font-size: 1.6rem; margin-bottom: 4px;">🎵</div>
-          <h4 style="color: #e879f9; font-size: 1.05rem; font-weight: 700; margin: 0 0 4px 0;">6. பாட இசை &amp; காணொளிக் களம்</h4>
-          <p style="color: #cbd5e1; font-size: 0.86rem; line-height: 1.5; margin: 0;">பாடலுக்குரிய YouTube குறும்படம், பண் இசை, முழு பாடல் வரிகள் &amp; பதவுரை.</p>
-        </div>
-
-        <div class="anatomy-step-card">
-          <div style="font-size: 1.6rem; margin-bottom: 4px;">☀️</div>
-          <h4 style="color: #f59e0b; font-size: 1.05rem; font-weight: 700; margin: 0 0 4px 0;">7. சாதனா வினாக்கள்</h4>
-          <p style="color: #cbd5e1; font-size: 0.86rem; line-height: 1.5; margin: 0;">சிந்தனை வினாக்கள், சுய மதிப்பீடு &amp; குடும்பச் செயல் திட்டம்.</p>
+        <div class="portal-card">
+          <div>
+            <span class="portal-icon">🌿</span>
+            <h4>3 Ds தர்ம வாழ்வியல் சாதனா</h4>
+            <p>கடமை (Duty), கட்டுப்பாடு (Discipline), கண்ணியம் (Dignity) — அன்றாட வாழ்வில் தர்ம நெறிமுறைகள்.</p>
+          </div>
+          <a href="grihastha.html" class="portal-btn">வாழ்வியல் நெறி &rarr;</a>
         </div>
       </div>
     </section>
