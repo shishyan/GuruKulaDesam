@@ -4,7 +4,7 @@
   "tracks": [
     {
       "track_id": "-L3VXkM2MTY",
-      "title": "முருகர் வார வழிபாடு 2026 | Murugar Vaara Vazhipadu Cinematic Film",
+      "title": "\u0bae\u0bc1\u0bb0\u0bc1\u0b95\u0bb0\u0bcd \u0bb5\u0bbe\u0bb0 \u0bb5\u0bb4\u0bbf\u0baa\u0bbe\u0b9f\u0bc1 2026 | Murugar Vaara Vazhipadu Cinematic Film",
       "duration_sec": 406.53,
       "duration_min": 6.78,
       "blueprint": "production\\google_flow_prompts\\murugan\\-L3VXkM2MTY_Kandhar_Anuboothi__Uruvaa.md",
@@ -12,7 +12,7 @@
     },
     {
       "track_id": "-unILRjNLHQ",
-      "title": "ஸ்ரீ சுப்ரமண்யர் திருவிருத்தம் | Sree Subramanyar Thiruviruththam [Film]",
+      "title": "\u0bb8\u0bcd\u0bb0\u0bc0 \u0b9a\u0bc1\u0baa\u0bcd\u0bb0\u0bae\u0ba3\u0bcd\u0baf\u0bb0\u0bcd \u0ba4\u0bbf\u0bb0\u0bc1\u0bb5\u0bbf\u0bb0\u0bc1\u0ba4\u0bcd\u0ba4\u0bae\u0bcd | Sree Subramanyar Thiruviruththam [Film]",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\-unILRjNLHQ_Thiruvarutpa__Siva_Subram.md",
@@ -20,15 +20,16 @@
     },
     {
       "track_id": "3oJ2OPG-WCs",
-      "title": "முத்தைத் தரு 2026 (திருப்புகழ்) | Muthai Tharu [Cinematic Thiruppugazh Film]",
+      "title": "\u0bae\u0bc1\u0ba4\u0bcd\u0ba4\u0bc8\u0ba4\u0bcd \u0ba4\u0bb0\u0bc1 2026 (\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd) | Muthai Tharu [Cinematic Thiruppugazh Film]",
       "duration_sec": 205.4,
       "duration_min": 3.42,
       "blueprint": "production\\google_flow_prompts\\murugan\\3oJ2OPG-WCs_track.md",
-      "published": false
+      "published": true,
+      "youtube_id": "6L6DDOwDuy8"
     },
     {
       "track_id": "5RTBMEIozEg",
-      "title": "நாள் என் செய்யும் | Naal En Seyyum Cinematic Devotional Film",
+      "title": "\u0ba8\u0bbe\u0bb3\u0bcd \u0b8e\u0ba9\u0bcd \u0b9a\u0bc6\u0baf\u0bcd\u0baf\u0bc1\u0bae\u0bcd | Naal En Seyyum Cinematic Devotional Film",
       "duration_sec": 353.83,
       "duration_min": 5.9,
       "blueprint": "production\\google_flow_prompts\\murugan\\5RTBMEIozEg_Kandhar_Alangaram__Naal_E.md",
@@ -36,7 +37,7 @@
     },
     {
       "track_id": "8jLZHiozGxw",
-      "title": "ஸ்கந்த மந்திரம் | Original [Cinematic Devotional Film]",
+      "title": "\u0bb8\u0bcd\u0b95\u0ba8\u0bcd\u0ba4 \u0bae\u0ba8\u0bcd\u0ba4\u0bbf\u0bb0\u0bae\u0bcd | Original [Cinematic Devotional Film]",
       "duration_sec": 309.02,
       "duration_min": 5.15,
       "blueprint": "production\\google_flow_prompts\\murugan\\8jLZHiozGxw_Kandhar_Anuboothi__Uruvaa.md",
@@ -44,7 +45,7 @@
     },
     {
       "track_id": "B6yVe6HM8Ok",
-      "title": "ஆறுமுகம் ஆறுமுகம் | Arumugam Arumugam Cinematic Devotional Film",
+      "title": "\u0b86\u0bb1\u0bc1\u0bae\u0bc1\u0b95\u0bae\u0bcd \u0b86\u0bb1\u0bc1\u0bae\u0bc1\u0b95\u0bae\u0bcd | Arumugam Arumugam Cinematic Devotional Film",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\B6yVe6HM8Ok_Thiruppugazh__Arumugam_Ar.md",
@@ -52,7 +53,7 @@
     },
     {
       "track_id": "bOxyDZgsI2c",
-      "title": "திருப்புகழ் 566 (இரத்னகிரி II) | திருப்புகழ் 566 (இரத்னகிரி II) [Cinematic Murugan Film]",
+      "title": "\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd 566 (\u0b87\u0bb0\u0ba4\u0bcd\u0ba9\u0b95\u0bbf\u0bb0\u0bbf II) | \u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd 566 (\u0b87\u0bb0\u0ba4\u0bcd\u0ba9\u0b95\u0bbf\u0bb0\u0bbf II) [Cinematic Murugan Film]",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\bOxyDZgsI2c_Thiruppugazh__Rathinagiri.md",
@@ -60,7 +61,7 @@
     },
     {
       "track_id": "C9Ea0-FfMNs",
-      "title": "நாத விந்துகள் (பழனி திருப்புகழ்) | Naatha Vindhugal [Murugan Film]",
+      "title": "\u0ba8\u0bbe\u0ba4 \u0bb5\u0bbf\u0ba8\u0bcd\u0ba4\u0bc1\u0b95\u0bb3\u0bcd (\u0baa\u0bb4\u0ba9\u0bbf \u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd) | Naatha Vindhugal [Murugan Film]",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\C9Ea0-FfMNs_track.md",
@@ -68,7 +69,7 @@
     },
     {
       "track_id": "cEIEecb51Fc",
-      "title": "மகரம் அளறு இடை | Remix [Cinematic Devotional Film]",
+      "title": "\u0bae\u0b95\u0bb0\u0bae\u0bcd \u0b85\u0bb3\u0bb1\u0bc1 \u0b87\u0b9f\u0bc8 | Remix [Cinematic Devotional Film]",
       "duration_sec": 229.23,
       "duration_min": 3.82,
       "blueprint": "production\\google_flow_prompts\\murugan\\cEIEecb51Fc_Kandhar_Anuboothi__Uruvaa.md",
@@ -76,7 +77,7 @@
     },
     {
       "track_id": "DsbMysGdqv8",
-      "title": "உருவாய் அருவாய் | Uruvaai Aruvaai Kandhar Anubhudhi Cinematic Devotional Film",
+      "title": "\u0b89\u0bb0\u0bc1\u0bb5\u0bbe\u0baf\u0bcd \u0b85\u0bb0\u0bc1\u0bb5\u0bbe\u0baf\u0bcd | Uruvaai Aruvaai Kandhar Anubhudhi Cinematic Devotional Film",
       "duration_sec": 193.03,
       "duration_min": 3.22,
       "blueprint": "production\\google_flow_prompts\\murugan\\DsbMysGdqv8_Kandhar_Anuboothi__Uruvaa.md",
@@ -84,7 +85,7 @@
     },
     {
       "track_id": "eEYBleNgRGU",
-      "title": "கந்தர் அலங்காரம் 2026 | Kandhar Alangaram Cinematic Devotional Film",
+      "title": "\u0b95\u0ba8\u0bcd\u0ba4\u0bb0\u0bcd \u0b85\u0bb2\u0b99\u0bcd\u0b95\u0bbe\u0bb0\u0bae\u0bcd 2026 | Kandhar Alangaram Cinematic Devotional Film",
       "duration_sec": 303.35,
       "duration_min": 5.06,
       "blueprint": "production\\google_flow_prompts\\murugan\\eEYBleNgRGU_Kandhar_Alangaram__Naal_E.md",
@@ -92,7 +93,7 @@
     },
     {
       "track_id": "FTAB7OBVPPY",
-      "title": "திருப்புகழ் 566 இரத்னகிரி II | Rathinagiri Thiruppugazh Cinematic Film",
+      "title": "\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd 566 \u0b87\u0bb0\u0ba4\u0bcd\u0ba9\u0b95\u0bbf\u0bb0\u0bbf II | Rathinagiri Thiruppugazh Cinematic Film",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\FTAB7OBVPPY_Thiruppugazh__Rathinagiri.md",
@@ -100,7 +101,7 @@
     },
     {
       "track_id": "hKkmbQ9TIaU",
-      "title": "கைத்தல நிறைகனி | Kaiththala Niraigani Cinematic Thiruppugazh Film",
+      "title": "\u0b95\u0bc8\u0ba4\u0bcd\u0ba4\u0bb2 \u0ba8\u0bbf\u0bb1\u0bc8\u0b95\u0ba9\u0bbf | Kaiththala Niraigani Cinematic Thiruppugazh Film",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\hKkmbQ9TIaU_Thiruppugazh__Kaithala_Ni.md",
@@ -108,7 +109,7 @@
     },
     {
       "track_id": "iJ-3SHR2MKw",
-      "title": "ஸ்கந்த மந்திரம் (Original) | Skanda Mantram Cinematic Film",
+      "title": "\u0bb8\u0bcd\u0b95\u0ba8\u0bcd\u0ba4 \u0bae\u0ba8\u0bcd\u0ba4\u0bbf\u0bb0\u0bae\u0bcd (Original) | Skanda Mantram Cinematic Film",
       "duration_sec": 309.08,
       "duration_min": 5.15,
       "blueprint": "production\\google_flow_prompts\\murugan\\iJ-3SHR2MKw_Kandhar_Anuboothi__Uruvaa.md",
@@ -116,7 +117,7 @@
     },
     {
       "track_id": "iPFEtwdcIxc",
-      "title": "திருப்புகழ் 712 - சீர் உலாவிய (திருப்போரூர் II) | Seer Ulaaviya II",
+      "title": "\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd 712 - \u0b9a\u0bc0\u0bb0\u0bcd \u0b89\u0bb2\u0bbe\u0bb5\u0bbf\u0baf (\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bcb\u0bb0\u0bc2\u0bb0\u0bcd II) | Seer Ulaaviya II",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\iPFEtwdcIxc_Thirupporur_Thiruppugazh.md",
@@ -124,7 +125,7 @@
     },
     {
       "track_id": "jpCBad1MjgI",
-      "title": "ஆறுமுகம் ஆறுமுகம் | Arumugam Arumugam [Cinematic Murugan Film]",
+      "title": "\u0b86\u0bb1\u0bc1\u0bae\u0bc1\u0b95\u0bae\u0bcd \u0b86\u0bb1\u0bc1\u0bae\u0bc1\u0b95\u0bae\u0bcd | Arumugam Arumugam [Cinematic Murugan Film]",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\jpCBad1MjgI_track.md",
@@ -132,7 +133,7 @@
     },
     {
       "track_id": "l3E27q5r-nk",
-      "title": "திருவருட்பா - திருப்புகழ் விலாசம் | Thiruppugazh Vilasam | Full Song Film",
+      "title": "\u0ba4\u0bbf\u0bb0\u0bc1\u0bb5\u0bb0\u0bc1\u0b9f\u0bcd\u0baa\u0bbe - \u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd \u0bb5\u0bbf\u0bb2\u0bbe\u0b9a\u0bae\u0bcd | Thiruppugazh Vilasam | Full Song Film",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\l3E27q5r-nk_Thiruppugazh__Thiruppugaz.md",
@@ -140,7 +141,7 @@
     },
     {
       "track_id": "meXI3QsNHhE",
-      "title": "திருப்புகழ் 566 இரத்னகிரி I | Rathinagiri Thiruppugazh Cinematic Film",
+      "title": "\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd 566 \u0b87\u0bb0\u0ba4\u0bcd\u0ba9\u0b95\u0bbf\u0bb0\u0bbf I | Rathinagiri Thiruppugazh Cinematic Film",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\meXI3QsNHhE_Thiruppugazh__Rathinagiri.md",
@@ -148,7 +149,7 @@
     },
     {
       "track_id": "MTvDDAQCFmk",
-      "title": "நாள் என் செய்யும் | Time and Faith Cinematic Film",
+      "title": "\u0ba8\u0bbe\u0bb3\u0bcd \u0b8e\u0ba9\u0bcd \u0b9a\u0bc6\u0baf\u0bcd\u0baf\u0bc1\u0bae\u0bcd | Time and Faith Cinematic Film",
       "duration_sec": 353.83,
       "duration_min": 5.9,
       "blueprint": "production\\google_flow_prompts\\murugan\\MTvDDAQCFmk_Kandhar_Alangaram__Naal_E.md",
@@ -156,7 +157,7 @@
     },
     {
       "track_id": "N8MOVChJwPQ",
-      "title": "ஸ்கந்த மந்திரம் | Symphony [Cinematic Devotional Film]",
+      "title": "\u0bb8\u0bcd\u0b95\u0ba8\u0bcd\u0ba4 \u0bae\u0ba8\u0bcd\u0ba4\u0bbf\u0bb0\u0bae\u0bcd | Symphony [Cinematic Devotional Film]",
       "duration_sec": 243.61,
       "duration_min": 4.06,
       "blueprint": "production\\google_flow_prompts\\murugan\\N8MOVChJwPQ_Uruvaai_Aruvaai__Symphony.md",
@@ -164,7 +165,7 @@
     },
     {
       "track_id": "nuSx1NgiCuo",
-      "title": "நாத விந்துகள் | Naatha Vindhugal Pazhani Thiruppugazh Cinematic Devotional Film",
+      "title": "\u0ba8\u0bbe\u0ba4 \u0bb5\u0bbf\u0ba8\u0bcd\u0ba4\u0bc1\u0b95\u0bb3\u0bcd | Naatha Vindhugal Pazhani Thiruppugazh Cinematic Devotional Film",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\nuSx1NgiCuo_Thiruppugazh__Naatha_Vind.md",
@@ -172,7 +173,7 @@
     },
     {
       "track_id": "Nvx3ObuSndM",
-      "title": "திருப்புகழ் 712 சீர் உலாவிய | Seer Ulaaviya Cinematic Devotional Film",
+      "title": "\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd 712 \u0b9a\u0bc0\u0bb0\u0bcd \u0b89\u0bb2\u0bbe\u0bb5\u0bbf\u0baf | Seer Ulaaviya Cinematic Devotional Film",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\Nvx3ObuSndM_Thiruppugazh__Thirupporur.md",
@@ -180,7 +181,7 @@
     },
     {
       "track_id": "On2xoZqBsss",
-      "title": "முத்தைத் தரு (திருப்புகழ்) | Muthai Tharu [Cinematic Thiruppugazh Film]",
+      "title": "\u0bae\u0bc1\u0ba4\u0bcd\u0ba4\u0bc8\u0ba4\u0bcd \u0ba4\u0bb0\u0bc1 (\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd) | Muthai Tharu [Cinematic Thiruppugazh Film]",
       "duration_sec": 229.92,
       "duration_min": 3.83,
       "blueprint": "production\\google_flow_prompts\\murugan\\On2xoZqBsss_track.md",
@@ -188,7 +189,7 @@
     },
     {
       "track_id": "pYh67ltckLQ",
-      "title": "நாள் என் செய்யும் | Naal En Seyyum [Cinematic Murugan Film]",
+      "title": "\u0ba8\u0bbe\u0bb3\u0bcd \u0b8e\u0ba9\u0bcd \u0b9a\u0bc6\u0baf\u0bcd\u0baf\u0bc1\u0bae\u0bcd | Naal En Seyyum [Cinematic Murugan Film]",
       "duration_sec": 353.78,
       "duration_min": 5.9,
       "blueprint": "production\\google_flow_prompts\\murugan\\pYh67ltckLQ_Kandhar_Alangaram__Naal_E.md",
@@ -196,7 +197,7 @@
     },
     {
       "track_id": "qr5jAhLRLUE",
-      "title": "முருகர் வார வழிபாடு 2026 | முருகர் வார வழிபாடு 2026 [Cinematic Murugan Film]",
+      "title": "\u0bae\u0bc1\u0bb0\u0bc1\u0b95\u0bb0\u0bcd \u0bb5\u0bbe\u0bb0 \u0bb5\u0bb4\u0bbf\u0baa\u0bbe\u0b9f\u0bc1 2026 | \u0bae\u0bc1\u0bb0\u0bc1\u0b95\u0bb0\u0bcd \u0bb5\u0bbe\u0bb0 \u0bb5\u0bb4\u0bbf\u0baa\u0bbe\u0b9f\u0bc1 2026 [Cinematic Murugan Film]",
       "duration_sec": 406.47,
       "duration_min": 6.77,
       "blueprint": "production\\google_flow_prompts\\murugan\\qr5jAhLRLUE_Kandhar_Anuboothi__Uruvaa.md",
@@ -204,7 +205,7 @@
     },
     {
       "track_id": "qRqkS1Kf8lA",
-      "title": "மகரம் அளறு இடை | Original [Cinematic Devotional Film]",
+      "title": "\u0bae\u0b95\u0bb0\u0bae\u0bcd \u0b85\u0bb3\u0bb1\u0bc1 \u0b87\u0b9f\u0bc8 | Original [Cinematic Devotional Film]",
       "duration_sec": 234.32,
       "duration_min": 3.91,
       "blueprint": "production\\google_flow_prompts\\murugan\\qRqkS1Kf8lA_Kandhar_Anuboothi__Uruvaa.md",
@@ -212,7 +213,7 @@
     },
     {
       "track_id": "QRSRyYEacMs",
-      "title": "ஸ்கந்த மந்திரம் (Symphony) | Skanda Mantram Cinematic Film",
+      "title": "\u0bb8\u0bcd\u0b95\u0ba8\u0bcd\u0ba4 \u0bae\u0ba8\u0bcd\u0ba4\u0bbf\u0bb0\u0bae\u0bcd (Symphony) | Skanda Mantram Cinematic Film",
       "duration_sec": 243.69,
       "duration_min": 4.06,
       "blueprint": "production\\google_flow_prompts\\murugan\\QRSRyYEacMs_Uruvaai_Aruvaai__Symphony.md",
@@ -220,7 +221,7 @@
     },
     {
       "track_id": "S4ogw4EfpDY",
-      "title": "திருப்புகழ் 566 (இரத்னகிரி I) | திருப்புகழ் 566 (இரத்னகிரி I) [Cinematic Murugan Film]",
+      "title": "\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd 566 (\u0b87\u0bb0\u0ba4\u0bcd\u0ba9\u0b95\u0bbf\u0bb0\u0bbf I) | \u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bb4\u0bcd 566 (\u0b87\u0bb0\u0ba4\u0bcd\u0ba9\u0b95\u0bbf\u0bb0\u0bbf I) [Cinematic Murugan Film]",
       "duration_sec": 0.0,
       "duration_min": 0.0,
       "blueprint": "production\\google_flow_prompts\\murugan\\S4ogw4EfpDY_Thiruppugazh__Rathinagiri.md",
@@ -228,7 +229,7 @@
     },
     {
       "track_id": "SN7FIkL-o1k",
-      "title": "முத்தைத் தரு | Muthai Tharu Cinematic Thiruppugazh Film",
+      "title": "\u0bae\u0bc1\u0ba4\u0bcd\u0ba4\u0bc8\u0ba4\u0bcd \u0ba4\u0bb0\u0bc1 | Muthai Tharu Cinematic Thiruppugazh Film",
       "duration_sec": 229.97,
       "duration_min": 3.83,
       "blueprint": "production\\google_flow_prompts\\murugan\\SN7FIkL-o1k_Thiruppugazh__Muthai_Thar.md",
@@ -236,7 +237,7 @@
     },
     {
       "track_id": "VMqFjcQtebw",
-      "title": "மகரம் அளறு இடை (Remix) | Magaram Alaru Idai Cinematic Film",
+      "title": "\u0bae\u0b95\u0bb0\u0bae\u0bcd \u0b85\u0bb3\u0bb1\u0bc1 \u0b87\u0b9f\u0bc8 (Remix) | Magaram Alaru Idai Cinematic Film",
       "duration_sec": 229.32,
       "duration_min": 3.82,
       "blueprint": "production\\google_flow_prompts\\murugan\\VMqFjcQtebw_Kandhar_Anuboothi__Uruvaa.md",
@@ -244,7 +245,7 @@
     },
     {
       "track_id": "x355fpndpTI",
-      "title": "கௌமாரம் ஸ்துதி 2026 | கௌமாரம் ஸ்துதி 2026 [Cinematic Murugan Film]",
+      "title": "\u0b95\u0bcc\u0bae\u0bbe\u0bb0\u0bae\u0bcd \u0bb8\u0bcd\u0ba4\u0bc1\u0ba4\u0bbf 2026 | \u0b95\u0bcc\u0bae\u0bbe\u0bb0\u0bae\u0bcd \u0bb8\u0bcd\u0ba4\u0bc1\u0ba4\u0bbf 2026 [Cinematic Murugan Film]",
       "duration_sec": 227.72,
       "duration_min": 3.8,
       "blueprint": "production\\google_flow_prompts\\murugan\\x355fpndpTI_Kandhar_Anuboothi__Uruvaa.md",
@@ -252,7 +253,7 @@
     },
     {
       "track_id": "XErAOEtZdAU",
-      "title": "மகரம் அளறு இடை (Original) | Magaram Alaru Idai Cinematic Film",
+      "title": "\u0bae\u0b95\u0bb0\u0bae\u0bcd \u0b85\u0bb3\u0bb1\u0bc1 \u0b87\u0b9f\u0bc8 (Original) | Magaram Alaru Idai Cinematic Film",
       "duration_sec": 234.38,
       "duration_min": 3.91,
       "blueprint": "production\\google_flow_prompts\\murugan\\XErAOEtZdAU_Kandhar_Anuboothi__Uruvaa.md",
@@ -260,7 +261,7 @@
     },
     {
       "track_id": "XqDL5bZgW9c",
-      "title": "உருவாய் அருவாய் (கந்தர் அனுபூதி) | Uruvaai Aruvaai [Murugan Film]",
+      "title": "\u0b89\u0bb0\u0bc1\u0bb5\u0bbe\u0baf\u0bcd \u0b85\u0bb0\u0bc1\u0bb5\u0bbe\u0baf\u0bcd (\u0b95\u0ba8\u0bcd\u0ba4\u0bb0\u0bcd \u0b85\u0ba9\u0bc1\u0baa\u0bc2\u0ba4\u0bbf) | Uruvaai Aruvaai [Murugan Film]",
       "duration_sec": 192.96,
       "duration_min": 3.22,
       "blueprint": "production\\google_flow_prompts\\murugan\\XqDL5bZgW9c_track.md",

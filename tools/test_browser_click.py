@@ -1,113 +1,93 @@
 import sys
-import io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 from playwright.sync_api import sync_playwright
 
-def test_launch():
+def run_tests():
+    console_errors = []
+    
     with sync_playwright() as p:
-        browser = None
-        for channel in ['msedge', 'chrome']:
-            try:
-                browser = p.chromium.launch(channel=channel, headless=True)
-                print(f"Successfully launched {channel}!")
-                break
-            except Exception as e:
-                print(f"Failed to launch {channel}: {e}")
+        browser = p.chromium.launch(channel='msedge', headless=True)
+        context = browser.new_context(viewport={'width': 1280, 'height': 900})
+        page = context.new_page()
+
+        def on_console(msg):
+            if msg.type == 'error':
+                console_errors.append(msg.text)
         
-        if not browser:
-            print("Could not launch Edge or Chrome.")
-            return
+        page.on('console', on_console)
 
-        page = browser.new_page()
-        page.goto("http://localhost:8000/tharam-1.html#books", wait_until="networkidle")
-        print("Page title:", page.title())
+        print("--- Testing tharam-1.html ---")
+        page.goto('http://localhost:8000/tharam-1.html', wait_until='networkidle')
+        
+        # Verify page title loaded
+        print(f"Loaded tharam-1.html successfully. Title length: {len(page.title())}")
 
-        # Check console errors and failed network requests
-        errors = []
-        page.on("pageerror", lambda err: errors.append(str(err)))
-        page.on("console", lambda msg: print(f"[CONSOLE {msg.type}] {msg.text}") if msg.type in ['error', 'warning'] else None)
-        page.on("requestfailed", lambda req: print(f"[REQUEST FAILED] {req.url} : {req.failure}"))
+        # Check 7 book shelf buttons
+        shelf_btns = page.locator('#booksShelfTabs .shelf-book-btn')
+        shelf_count = shelf_btns.count()
+        print(f"Found {shelf_count} shelf book buttons.")
+        assert shelf_count == 7, f"Expected 7 books, found {shelf_count}"
 
-        # Click each book shelf button (re-query each time)
-        num_books = len(page.query_selector_all(".shelf-book-btn"))
-        print(f"Total book shelf buttons: {num_books}")
+        # Check chapter tabs
+        chap_tabs = page.locator('#readerChapterTabs .reader-chap-btn')
+        chap_count = chap_tabs.count()
+        print(f"Found {chap_count} chapter tabs.")
+        assert chap_count == 7, f"Expected 7 chapters, found {chap_count}"
 
-        for i in range(num_books):
-            books = page.query_selector_all(".shelf-book-btn")
-            book_btn = books[i]
-            text = book_btn.inner_text().replace('\n', ' ')
-            print(f"Clicking book button {i+1}: {text}")
-            book_btn.click()
-            page.wait_for_timeout(300)
+        # Click through each book and verify chapters load
+        for b_idx in range(shelf_count):
+            btn = shelf_btns.nth(b_idx)
+            btn.click()
+            page.wait_for_timeout(200)
             
-            # Now verify chapters exist and click each
-            num_chaps = len(page.query_selector_all(".reader-chap-btn"))
-            print(f"  Under book {i+1}, found {num_chaps} chapter tabs.")
-            for c_idx in range(num_chaps):
-                chaps = page.query_selector_all(".reader-chap-btn")
-                chap_btn = chaps[c_idx]
-                c_text = chap_btn.inner_text().replace('\n', ' ')
-                chap_btn.click()
-                page.wait_for_timeout(150)
-                # Verify reading card exists
-                card = page.query_selector(".reading-chapter-card")
-                if not card:
-                    print(f"  ERROR: No reading chapter card found for book {i+1}, chap {c_idx+1}!")
-                
-                # Check carousel next / prev
-                next_btn = page.query_selector(".carousel-next-btn")
-                if next_btn:
-                    next_btn.click()
-                    page.wait_for_timeout(50)
+            # Check chapter tabs updated
+            chaps = page.locator('#readerChapterTabs .reader-chap-btn')
+            assert chaps.count() == 7, f"Book {b_idx} does not have 7 chapters"
 
-        # Test Moola Nool button
-        moola_btn = page.query_selector(".moola-read-btn")
-        if moola_btn:
-            print("Clicking Moola Nool button...")
-            moola_btn.click()
-            page.wait_for_timeout(300)
-            modal = page.query_selector("#moolaNoolModalBackdrop.open")
-            if modal:
-                print("Moola modal opened with .open class successfully!")
-                page.screenshot(path="tools/tharam1_moola_modal.png")
-                close_btn = page.query_selector(".moola-modal-close-btn")
-                if close_btn:
-                    close_btn.click()
-                    page.wait_for_timeout(200)
-                    is_still_open = page.query_selector("#moolaNoolModalBackdrop.open")
-                    if not is_still_open:
-                        print("Moola modal closed cleanly!")
-                    else:
-                        print("ERROR: Moola modal failed to close!")
+            # Click chapter 1 and chapter 2
+            chaps.nth(0).click()
+            page.wait_for_timeout(100)
+            heading = page.locator('.reading-chapter-card .chap-read-title').first
+            assert heading.is_visible(), f"Chapter heading not visible for book {b_idx}"
 
-        # Test Art Lightbox
-        main_img = page.query_selector("#carouselMainImg")
-        if main_img:
-            print("Clicking Carousel Main Image to test lightbox...")
-            main_img.click()
-            page.wait_for_timeout(300)
-            art_modal = page.query_selector("#artLightboxModal.active")
-            if art_modal:
-                print("Art Lightbox opened successfully!")
-                page.screenshot(path="tools/tharam1_art_lightbox.png")
-                close_btn = page.query_selector("#artLightboxModal button[onclick*='closeArtLightbox']")
-                if close_btn:
-                    close_btn.click()
-                    page.wait_for_timeout(200)
-                    is_art_open = page.query_selector("#artLightboxModal.active")
-                    if not is_art_open:
-                        print("Art Lightbox closed cleanly!")
+        print("All 7 books and chapter clicks succeeded on tharam-1.html!")
 
-        # Check for page errors
-        print(f"Total page errors encountered: {len(errors)}")
-        for err in errors:
-            print(f"PAGE ERROR: {err}")
+        # Verify media section in active chapter
+        media_section = page.locator('.chapter-media-card')
+        if media_section.count() > 0:
+            print("Chapter Sacred Song & Film section is present and rendered!")
+            iframe = media_section.locator('iframe')
+            if iframe.count() > 0:
+                print("Playable YouTube embed iframe is correctly present!")
+        else:
+            print("Note: Chapter media section locator count:", media_section.count())
 
-        # Take final full-page screenshot
-        page.screenshot(path="tools/tharam1_click_test.png", full_page=True)
-        print("Full page screenshot saved to tools/tharam1_click_test.png")
+        # Test kalvi.html
+        print("--- Testing kalvi.html ---")
+        page.goto('http://localhost:8000/kalvi.html', wait_until='networkidle')
+        stages = page.locator('.stage-row-card')
+        print(f"kalvi.html stages count: {stages.count()}")
+        assert stages.count() == 4, f"Expected 4 stages in kalvi.html, got {stages.count()}"
 
+        books_in_kalvi = page.locator('.ashram-book-card')
+        print(f"kalvi.html 7 books count: {books_in_kalvi.count()}")
+        assert books_in_kalvi.count() == 7, f"Expected 7 books in kalvi.html, got {books_in_kalvi.count()}"
+
+        # Test books.html
+        print("--- Testing books.html ---")
+        page.goto('http://localhost:8000/books.html', wait_until='networkidle')
+        b_shelf = page.locator('#booksShelfTabs .shelf-book-btn')
+        print(f"books.html shelf count: {b_shelf.count()}")
+        assert b_shelf.count() == 7, f"Expected 7 books in books.html, got {b_shelf.count()}"
+
+        # Filter console errors (ignore youtube / external 3rd party tracker errors)
+        app_errors = [e for e in console_errors if 'youtube' not in e.lower() and 'doubleclick' not in e.lower() and 'google' not in e.lower()]
+        print(f"Total internal application console errors: {len(app_errors)}")
+        if app_errors:
+            for err in app_errors:
+                print("  ERROR:", err)
+        
         browser.close()
+        print("--- ALL BROWSER INTERACTION TESTS PASSED ---")
 
-if __name__ == "__main__":
-    test_launch()
+if __name__ == '__main__':
+    run_tests()

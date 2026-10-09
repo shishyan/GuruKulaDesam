@@ -2,7 +2,7 @@
   "category": "MURUGAN",
   "playlist_id": "PLcpX3K7ZFYjM",
   "playlist_name": "Lord Murugar Songs",
-  "total_tracks": 15,
+  "total_tracks": 17,
   "completed_releases": 15,
   "releases": [
     {
@@ -228,6 +228,20 @@
       "status": "PUBLISHED",
       "youtube_id": "2xCDL6uPfbk",
       "published_at": "2026-10-09T12:36:04+0530"
+    },
+    {
+      "track_id": "3oJ2OPG-WCs",
+      "hymn": "Thiruppugazh: Muthai Tharu",
+      "saint": "Arunagirinathar",
+      "master_film": "renders/releases/murugan_3oJ2OPG-WCs_master.mp4",
+      "file_size_bytes": 245657966,
+      "file_size_mb": 234.28,
+      "duration_sec": 205.4,
+      "scenes_count": 8,
+      "resolution": "1920x1080 24fps",
+      "status": "PUBLISHED",
+      "youtube_id": "6L6DDOwDuy8",
+      "published_at": "2026-10-09T13:24:08+0530"
     }
   ]
 }

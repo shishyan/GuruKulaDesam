@@ -1,588 +1,693 @@
-/* Gurukula Desam - 7 Sacred Ashram Books & Grade Reader Styles */
-.books-library-container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 10px 0 60px;
-    }
-    .library-hero-banner {
-      background: linear-gradient(135deg, rgba(8, 14, 26, 0.98) 0%, rgba(15, 23, 42, 0.96) 50%, rgba(20, 35, 60, 0.98) 100%);
-      border: 1px solid rgba(212, 175, 55, 0.4);
-      border-radius: 20px;
-      padding: 32px 30px;
-      margin-bottom: 26px;
-      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.65), 0 0 30px rgba(212, 175, 55, 0.1);
-      position: relative;
-      overflow: hidden;
-    }
-    .library-hero-banner::after {
-      content: "நூல்";
-      position: absolute;
-      right: 25px;
-      top: -30px;
-      font-size: 14rem;
-      color: rgba(212, 175, 55, 0.03);
-      font-family: serif;
-      pointer-events: none;
-      font-weight: 800;
-    }
-    .grade-selector-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 20px 0 10px;
-      justify-content: flex-start;
-    }
-    .book-grade-btn {
-      background: rgba(15, 23, 42, 0.85);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      color: #cbd5e1;
-      padding: 8px 16px;
-      border-radius: 12px;
-      font-size: 0.88rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-    .book-grade-btn:hover, .book-grade-btn.active {
-      background: rgba(212, 175, 55, 0.2);
-      border-color: var(--gold);
-      color: var(--gold-bright);
-      box-shadow: 0 0 14px rgba(212, 175, 55, 0.25);
-      transform: translateY(-2px);
-    }
+/* Gurukula Desam - 7 Sacred Ashram Books & Grade Reader Styles (Zero-Wrapper & Zero-Border Architecture) */
 
-    /* Shelf of 7 Books */
-    .books-shelf-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 10px;
-      margin: 22px 0 28px;
-    }
-    .shelf-book-btn {
-      background: rgba(11, 18, 33, 0.9);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-top: 4px solid var(--book-accent, #38bdf8);
-      border-radius: 12px;
-      padding: 14px 12px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .shelf-book-btn:hover, .shelf-book-btn.active {
-      background: rgba(15, 23, 42, 0.98);
-      border-color: var(--book-accent, var(--gold));
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(212, 175, 55, 0.15);
-      transform: translateY(-3px);
-    }
-    .shelf-book-num {
-      font-size: 0.72rem;
-      font-family: monospace;
-      color: #94a3b8;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .shelf-book-title {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: #ffffff;
-      margin-bottom: 2px;
-    }
-    .shelf-book-btn.active .shelf-book-title {
-      color: var(--gold-bright);
-    }
-    .shelf-book-en {
-      font-size: 0.75rem;
-      color: #94a3b8;
-    }
+.books-library-container,
+.grade-curriculum-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 0 60px;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
 
-    /* Book Reader Workspace */
-    .book-reader-workspace {
-      background: rgba(11, 18, 33, 0.85);
-      border: 1px solid rgba(212, 175, 55, 0.35);
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 0 16px 45px rgba(0,0,0,0.6);
-      backdrop-filter: blur(14px);
-    }
-    .reader-top-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 16px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding-bottom: 18px;
-      margin-bottom: 22px;
-    }
-    .reader-book-heading {
-      font-size: 1.85rem;
-      font-weight: 800;
-      color: #ffffff;
-      margin: 4px 0 2px 0;
-    }
-    .reader-book-subheading {
-      color: var(--gold-soft);
-      font-size: 0.96rem;
-      font-weight: 600;
-    }
-    .reader-chapter-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-      background: rgba(0, 0, 0, 0.3);
-      padding: 8px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-    }
-    .reader-chap-btn {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: #cbd5e1;
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-size: 0.84rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .reader-chap-btn:hover, .reader-chap-btn.active {
-      background: rgba(56, 189, 248, 0.15);
-      border-color: #38bdf8;
-      color: #ffffff;
-      box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
-    }
-    .chap-badge {
-      font-family: monospace;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--gold-bright);
-    }
-    .reading-chapter-card {
-      background: rgba(15, 23, 42, 0.7);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 28px;
-    }
-    .chap-read-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-    .chap-num-tag {
-      font-family: monospace;
-      font-size: 0.8rem;
-      background: rgba(212, 175, 55, 0.15);
-      color: var(--gold-bright);
-      border: 1px solid rgba(212, 175, 55, 0.35);
-      padding: 3px 10px;
-      border-radius: 6px;
-      font-weight: 700;
-    }
-    .chap-read-title {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #ffffff;
-      margin: 8px 0 0 0;
-    }
-    .reading-section-block {
-      margin-bottom: 20px;
-    }
+.library-hero-banner,
+.grade-hero-banner {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 16px 0 20px !important;
+  margin-bottom: 20px !important;
+  box-shadow: none !important;
+  position: relative;
+}
 
-    /* Chapter Visuals Gallery & Carousel (7 Images) */
-    .chapter-visuals-panel {
-      background: rgba(11, 18, 33, 0.95);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      border-radius: 14px;
-      padding: 16px;
-      margin: 18px 0 24px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-    }
-    .carousel-top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding-bottom: 10px;
-    }
-    .carousel-heading {
-      font-size: 0.92rem;
-      font-weight: 700;
-      color: var(--gold-bright);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .carousel-counter-pill {
-      font-size: 0.75rem;
-      background: rgba(56, 189, 248, 0.15);
-      color: #38bdf8;
-      border: 1px solid rgba(56, 189, 248, 0.3);
-      padding: 2px 8px;
-      border-radius: 6px;
-      font-family: monospace;
-      font-weight: 700;
-    }
-    .carousel-stage {
-      position: relative;
-      border-radius: 10px;
-      overflow: hidden;
-      background: #000000;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      margin-bottom: 12px;
-      height: 340px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .carousel-stage img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: opacity 0.3s ease;
-    }
-    .carousel-overlay-caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);
-      padding: 16px 20px 14px;
-      color: #ffffff;
-    }
-    .carousel-caption-tag {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--gold);
-      letter-spacing: 0.5px;
-      display: block;
-      margin-bottom: 4px;
-    }
-    .carousel-caption-text {
-      font-size: 0.88rem;
-      line-height: 1.5;
-      color: #e2e8f0;
-    }
-    .carousel-nav-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.65);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #ffffff;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      z-index: 10;
-    }
-    .carousel-nav-btn:hover {
-      background: var(--gold);
-      color: #0b1120;
-      border-color: var(--gold);
-      transform: translateY(-50%) scale(1.08);
-    }
-    .carousel-prev-btn { left: 10px; }
-    .carousel-next-btn { right: 10px; }
-    .carousel-thumbs-row {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 6px;
-    }
-    .carousel-thumb-btn {
-      background: rgba(0, 0, 0, 0.4);
-      border: 2px solid transparent;
-      border-radius: 8px;
-      overflow: hidden;
-      cursor: pointer;
-      padding: 0;
-      transition: all 0.2s ease;
-      position: relative;
-      height: 54px;
-    }
-    .carousel-thumb-btn img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      filter: brightness(0.65);
-      transition: filter 0.2s ease;
-    }
-    .carousel-thumb-btn:hover img, .carousel-thumb-btn.active img {
-      filter: brightness(1);
-    }
-    .carousel-thumb-btn.active {
-      border-color: var(--gold);
-      box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
-    }
-    .thumb-num-badge {
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      background: rgba(0,0,0,0.75);
-      color: var(--gold-bright);
-      font-size: 0.65rem;
-      font-weight: 700;
-      padding: 1px 4px;
-      border-radius: 3px;
-      font-family: monospace;
-    }
-    /* Inline art cards */
-    .inline-art-card {
-      margin: 16px 0;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(0, 0, 0, 0.35);
-      cursor: pointer;
-      position: relative;
-      transition: all 0.25s ease;
-    }
-    .inline-art-card:hover {
-      border-color: var(--gold-bright);
-      box-shadow: 0 6px 24px rgba(212, 175, 55, 0.25);
-      transform: translateY(-2px);
-    }
-    .inline-art-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-    .inline-art-card:hover img {
-      transform: scale(1.02);
-    }
-    .inline-art-caption {
-      padding: 8px 14px;
-      font-size: 0.8rem;
-      color: #cbd5e1;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-      background: rgba(15, 23, 42, 0.8);
-    }
-    .inline-art-badge {
-      font-size: 0.72rem;
-      color: var(--gold);
-      font-weight: 700;
-    }
-    .inline-art-card .art-zoom-hint {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: rgba(0, 0, 0, 0.75);
-      backdrop-filter: blur(4px);
-      color: #ffffff;
-      padding: 4px 8px;
-      border-radius: 6px;
-      font-size: 0.72rem;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      opacity: 0;
-      transition: opacity 0.2s ease;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      pointer-events: none;
-    }
-    .inline-art-card:hover .art-zoom-hint {
-      opacity: 1;
-    }
-    .carousel-stage {
-      cursor: pointer;
-    }
+.grade-switch-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px 0 18px 0;
+  padding: 10px 0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
 
-    /* High-Resolution Artwork Lightbox Modal */
-    .art-lightbox-modal {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(4, 9, 20, 0.94);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      z-index: 10000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
-    }
-    .art-lightbox-modal.active {
-      display: flex;
-    }
-    .art-lightbox-box {
-      background: #0b1329;
-      border: 1px solid rgba(212, 175, 55, 0.35);
-      border-radius: 18px;
-      max-width: 980px;
-      width: 100%;
-      max-height: 94vh;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75);
-      animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    @keyframes modalFadeIn {
-      from { opacity: 0; transform: scale(0.96); }
-      to { opacity: 1; transform: scale(1); }
-    }
-    .art-lightbox-header {
-      padding: 14px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(15, 23, 42, 0.95);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .art-lightbox-stage {
-      position: relative;
-      background: #000000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      min-height: 360px;
-      max-height: 60vh;
-      user-select: none;
-    }
-    .art-lightbox-img {
-      max-width: 100%;
-      max-height: 60vh;
-      object-fit: contain;
-      display: block;
-      transition: transform 0.25s ease;
-      cursor: zoom-in;
-    }
-    .art-lightbox-img.zoomed {
-      transform: scale(1.6);
-      cursor: zoom-out;
-    }
-    .art-lightbox-footer {
-      padding: 16px 22px;
-      background: #0d172e;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      overflow-y: auto;
-      max-height: 26vh;
-    }
+.grade-selector-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 10px;
+  justify-content: flex-start;
+  background: transparent !important;
+  border: none !important;
+}
 
-    /* Universal Moola Nool Modal Styling */
-    .moola-modal-backdrop {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 10001;
-      background: rgba(3, 7, 18, 0.88);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
-      animation: moolaFadeIn 0.22s ease-out;
-    }
-    .moola-modal-backdrop.open {
-      display: flex;
-    }
-    @keyframes moolaFadeIn {
-      from { opacity: 0; transform: scale(0.97); }
-      to { opacity: 1; transform: scale(1); }
-    }
-    .moola-modal-card {
-      background: linear-gradient(145deg, #0b1221 0%, #0f172a 100%);
-      border: 1px solid rgba(212, 175, 55, 0.4);
-      border-radius: 18px;
-      max-width: 860px;
-      width: 100%;
-      max-height: 88vh;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(212, 175, 55, 0.12);
-      overflow: hidden;
-    }
-    .moola-modal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 22px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      background: rgba(5, 10, 22, 0.7);
-    }
-    .moola-modal-title {
-      margin: 0;
-      font-size: 1.12rem;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 700;
-    }
-    .moola-modal-close-btn {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #cbd5e1;
-      font-size: 1.5rem;
-      line-height: 1;
-      border-radius: 8px;
-      width: 34px;
-      height: 34px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s;
-    }
-    .moola-modal-close-btn:hover {
-      background: rgba(239, 68, 68, 0.25);
-      border-color: rgba(239, 68, 68, 0.5);
-      color: #fca5a5;
-    }
-    .moola-modal-body {
-      padding: 22px;
-      overflow-y: auto;
-      flex: 1;
-    }
-    .moola-modal-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 22px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      background: rgba(5, 10, 22, 0.7);
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .lesson-speech-btn.speaking {
-      background: rgba(239, 68, 68, 0.25);
-      border-color: rgba(239, 68, 68, 0.5);
-      color: #fca5a5;
-      animation: pulseGlow 1.5s infinite;
-    }
-    @keyframes pulseGlow {
-      0%, 100% { box-shadow: 0 0 5px rgba(239, 68, 68, 0.3); }
-      50% { box-shadow: 0 0 15px rgba(239, 68, 68, 0.6); }
-    }
+.book-grade-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #cbd5e1;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95);
+}
 
+.book-grade-btn:hover, .book-grade-btn.active {
+  color: var(--gold-bright);
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.6), 0 2px 5px rgba(0,0,0,0.95);
+}
+
+/* Shelf of 7 Books - Clean Borderless Floating Navigation */
+.books-shelf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin: 14px 0 22px;
+  background: transparent !important;
+  border: none !important;
+}
+
+.shelf-book-btn {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 10px 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: none !important;
+  position: relative;
+}
+
+.shelf-book-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.shelf-book-btn:hover::after,
+.shelf-book-btn.active::after {
+  background: var(--book-accent, var(--gold));
+  left: 10%;
+  right: 10%;
+}
+
+.shelf-book-num {
+  font-size: 0.72rem;
+  font-family: monospace;
+  color: #94a3b8;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95);
+}
+
+.shelf-book-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #e2e8f0;
+  margin-bottom: 2px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.95), 0 2px 8px rgba(0,0,0,0.9);
+}
+
+.shelf-book-btn.active .shelf-book-title {
+  color: var(--gold-bright);
+  text-shadow: 0 0 15px rgba(212,175,55,0.7), 0 2px 6px rgba(0,0,0,0.95);
+}
+
+.shelf-book-en {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95);
+}
+
+/* Book Reader Workspace (Pure Zero-Wrapper) */
+.book-reader-workspace {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.reader-top-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  border: none !important;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.reader-book-heading {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 4px 0 2px 0;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.98), 0 4px 15px rgba(0,0,0,0.95);
+}
+
+.reader-book-subheading {
+  color: var(--gold-soft);
+  font-size: 0.96rem;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95);
+}
+
+.reader-chapter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+  background: transparent !important;
+  padding: 0;
+  border: none !important;
+}
+
+.reader-chap-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #94a3b8;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.84rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95);
+}
+
+.reader-chap-btn:hover, .reader-chap-btn.active {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.6), 0 1px 4px rgba(0,0,0,0.95);
+}
+
+.reader-chap-btn.active .chap-badge {
+  color: #38bdf8;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.8);
+}
+
+.chap-badge {
+  font-family: monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold-bright);
+}
+
+.reading-chapter-card {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.chap-read-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chap-num-tag {
+  font-family: monospace;
+  font-size: 0.8rem;
+  background: transparent !important;
+  color: var(--gold-bright);
+  border: none !important;
+  padding: 0;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95);
+}
+
+.chap-read-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 6px 0 0 0;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.98), 0 4px 16px rgba(0,0,0,0.95);
+}
+
+.reading-section-block {
+  margin-bottom: 24px;
+  background: transparent !important;
+  border: none !important;
+  padding: 4px 0 !important;
+  box-shadow: none !important;
+}
+
+.reading-section-block h4 {
+  text-shadow: 0 1px 4px rgba(0,0,0,0.98), 0 2px 10px rgba(0,0,0,0.92);
+}
+
+.reading-section-block div,
+.reading-section-block p {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.98), 0 2px 8px rgba(0,0,0,0.9);
+}
+
+/* Chapter Visuals Gallery & Carousel */
+.chapter-visuals-panel {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 4px 0 16px 0 !important;
+  margin: 14px 0 22px;
+  box-shadow: none !important;
+}
+
+.carousel-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  border: none !important;
+  padding-bottom: 4px;
+}
+
+.carousel-heading {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--gold-bright);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.95);
+}
+
+.carousel-counter-pill {
+  font-size: 0.75rem;
+  background: transparent !important;
+  color: #38bdf8;
+  border: none !important;
+  padding: 0;
+  font-family: monospace;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95);
+}
+
+.carousel-stage {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: transparent !important;
+  border: none !important;
+  margin-bottom: 12px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.92), 0 4px 15px rgba(0, 0, 0, 0.95) !important;
+  cursor: pointer;
+}
+
+.carousel-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+  border: none !important;
+}
+
+.carousel-overlay-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 65%, transparent 100%);
+  padding: 16px 20px 14px;
+  color: #ffffff;
+}
+
+.carousel-caption-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95);
+}
+
+.carousel-caption-text {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.98);
+}
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  border: none !important;
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.carousel-nav-btn:hover {
+  background: var(--gold);
+  color: #0b1120;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.carousel-prev-btn { left: 10px; }
+.carousel-next-btn { right: 10px; }
+
+.carousel-thumbs-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.carousel-thumb-btn {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+  position: relative;
+  height: 54px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.carousel-thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6);
+  transition: filter 0.2s ease;
+  border: none !important;
+}
+
+.carousel-thumb-btn:hover img, .carousel-thumb-btn.active img {
+  filter: brightness(1);
+}
+
+.carousel-thumb-btn.active {
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.7);
+}
+
+.thumb-num-badge {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: rgba(0,0,0,0.85);
+  color: var(--gold-bright);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+/* Chapter Media Player (பாட இசை & காணொளிக் களம்) - Integrated Curriculum Audio/Video */
+.chapter-media-card {
+  margin: 22px 0;
+  padding: 4px 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.chapter-media-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.chapter-media-title {
+  color: var(--gold-bright);
+  font-size: 1.05rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.98);
+}
+
+.chapter-media-player-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.92), 0 4px 14px rgba(0,0,0,0.95);
+  margin-bottom: 12px;
+  background: #000000;
+}
+
+.chapter-media-player-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none !important;
+}
+
+.chapter-media-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.chapter-media-lyrics-drawer {
+  margin-top: 12px;
+  padding: 14px 0;
+  line-height: 1.8;
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.98);
+  white-space: pre-line;
+}
+
+/* Lightbox & Moola Modals */
+.art-lightbox-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(4, 9, 20, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.art-lightbox-modal.active {
+  display: flex;
+}
+
+.art-lightbox-box {
+  background: #0b1329;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 18px;
+  max-width: 980px;
+  width: 100%;
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
+  animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.art-lightbox-header {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.art-lightbox-stage {
+  position: relative;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 360px;
+  max-height: 60vh;
+  user-select: none;
+}
+
+.art-lightbox-img {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+.art-lightbox-img.zoomed {
+  transform: scale(1.6);
+  cursor: zoom-out;
+}
+
+.art-lightbox-footer {
+  padding: 16px 22px;
+  background: #0d172e;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  overflow-y: auto;
+  max-height: 26vh;
+}
+
+/* Universal Moola Nool Modal Styling */
+.moola-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10001;
+  background: rgba(3, 7, 18, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: moolaFadeIn 0.22s ease-out;
+}
+
+.moola-modal-backdrop.open {
+  display: flex;
+}
+
+.moola-modal-card {
+  background: #0b1221;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 18px;
+  max-width: 860px;
+  width: 100%;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.moola-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(5, 10, 22, 0.9);
+}
+
+.moola-modal-title {
+  margin: 0;
+  font-size: 1.12rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.moola-modal-close-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+  font-size: 1.5rem;
+  line-height: 1;
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.moola-modal-close-btn:hover {
+  background: rgba(239, 68, 68, 0.25);
+  border-color: rgba(239, 68, 68, 0.5);
+  color: #fca5a5;
+}
+
+.moola-modal-body {
+  padding: 22px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.moola-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(5, 10, 22, 0.9);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lesson-speech-btn.speaking {
+  background: rgba(239, 68, 68, 0.25);
+  border-color: rgba(239, 68, 68, 0.5);
+  color: #fca5a5;
+  animation: pulseGlow 1.5s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 5px rgba(239, 68, 68, 0.3); }
+  50% { box-shadow: 0 0 15px rgba(239, 68, 68, 0.6); }
+}

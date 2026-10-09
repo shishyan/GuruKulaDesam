@@ -234,162 +234,188 @@ function renderCurrentChapterContent() {
       <!-- 7 Chapter Visuals Carousel Gallery -->
       ${carouselHtml}
 
-      <!-- Sacred Verse Block -->
-      <div class="verse-callout-clean" style="background: rgba(0,0,0,0.35); border-left: 4px solid var(--gold); padding: 16px 20px; border-radius: 0 12px 12px 0; margin-bottom: 22px;">
-        <div style="font-size:0.8rem; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px;">மூலப் பாடல் / சூத்திரம் (Sacred Verse):</div>
-        <div class="verse-text-sacred" style="font-size:1.18rem; font-weight:700; color:#ffffff; line-height:1.6; font-family:'Mukta Malar', serif;">${chap.verse}</div>
-        <div class="verse-meaning-clean" style="color:#cbd5e1; font-size:0.92rem; margin-top:10px; line-height:1.6;">
+      <!-- Sacred Verse Block (Zero-Wrapper & Deep Shadow) -->
+      <div class="verse-callout-clean" style="padding: 10px 0 16px 0; margin-bottom: 22px;">
+        <div style="font-size:0.8rem; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px; text-shadow:0 1px 3px rgba(0,0,0,0.95);">மூலப் பாடல் / சூத்திரம் (Sacred Verse):</div>
+        <div class="verse-text-sacred" style="font-size:1.22rem; font-weight:700; color:#ffffff; line-height:1.6; font-family:'Mukta Malar', serif; text-shadow:0 2px 8px rgba(0,0,0,0.98);">${chap.verse}</div>
+        <div class="verse-meaning-clean" style="color:#cbd5e1; font-size:0.95rem; margin-top:10px; line-height:1.6; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
           <strong style="color:var(--gold-soft);">பொருள் விளக்கம்:</strong> ${chap.verseMeaning}
         </div>
-        <div class="moola-reader-actions-row" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:14px; padding-top:10px; border-top:1px dashed rgba(212,175,55,0.25);">
-          <button type="button" class="moola-read-btn" onclick="openChapterMoolaModal('${currentBook}', ${chap.chapterNumber}, ${currentGrade})">
+        <div class="moola-reader-actions-row" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:14px; padding-top:10px;">
+          <button type="button" class="sheet-btn" onclick="openChapterMoolaModal('${currentBook}', ${chap.chapterNumber}, ${currentGrade})" style="font-size:0.82rem; padding:6px 12px; cursor:pointer;">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் &amp; பதவுரை காண்க
           </button>
-          <a href="moola-nool.html" class="moola-canon-link" target="_blank" title="முழு மூல நூலகத்தில் திறக்க">
+          <a href="moola-nool.html" class="moola-canon-link" target="_blank" title="முழு மூல நூலகத்தில் திறக்க" style="color:#38bdf8; text-decoration:none; font-size:0.82rem;">
             மூல நூல் நூலகம் &rarr;
           </a>
         </div>
       </div>
 
-      <!-- Philosophical Exposition -->
+      <!-- Philosophical Exposition (Zero-Wrapper) -->
       <div class="reading-section-block">
-        <h4 style="color:#38bdf8; font-size:1.05rem; font-weight:700; margin:0 0 10px 0; display:flex; align-items:center; gap:8px;">
+        <h4 style="color:#38bdf8; font-size:1.1rem; font-weight:700; margin:0 0 10px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           விரிவுரை &amp; தத்துவ உரை (Philosophical Exposition)
         </h4>
-        <div style="color:#e2e8f0; font-size:0.96rem; line-height:1.8; margin-bottom:12px;">
+        <div style="color:#e2e8f0; font-size:0.96rem; line-height:1.8; margin-bottom:12px; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
           ${chap.exposition}
         </div>
       </div>
 
-      <!-- Puranic / Itihasic Narrative Story -->
-      <div class="reading-section-block story-block" style="background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; margin-bottom:20px;">
-        <h4 style="color:var(--gold-bright); font-size:1.05rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px;">
+      <!-- Puranic / Itihasic Narrative Story (Zero-Wrapper) -->
+      <div class="reading-section-block story-block" style="padding:10px 0; margin-bottom:20px;">
+        <h4 style="color:var(--gold-bright); font-size:1.1rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
           மெய்ஞ்ஞானக் கதை / அற உருவகம் (Narrative Illustration)
         </h4>
-        <div style="color:#cbd5e1; font-size:0.93rem; line-height:1.8; margin:12px 0;">
+        <div style="color:#cbd5e1; font-size:0.95rem; line-height:1.8; margin:12px 0; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
           ${chap.story}
         </div>
       </div>
 
-      <!-- Life Application & Householder Dharma -->
-      <div class="reading-section-block" style="background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.3); border-radius:12px; padding:18px 20px; margin-bottom:20px;">
-        <h4 style="color:#34d399; font-size:1.05rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px;">
+      <!-- Life Application & Householder Dharma (Zero-Wrapper) -->
+      <div class="reading-section-block" style="padding:10px 0; margin-bottom:20px;">
+        <h4 style="color:#34d399; font-size:1.1rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg>
           இல்லற &amp; அன்றாட வாழ்வியல் நடைமுறை (Practical Application: 3 Ds)
         </h4>
-        <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7;">
+        <div style="color:#e2e8f0; font-size:0.94rem; line-height:1.7; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
           ${chap.lifeApplication}
         </div>
       </div>
 
-      <!-- Sadhana Exercise & Contemplative Question -->
-      <div class="reading-section-block" style="background:rgba(234,179,8,0.08); border:1px solid rgba(234,179,8,0.3); border-radius:12px; padding:18px 20px; margin-bottom:26px;">
-        <h4 style="color:#facc15; font-size:1.05rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px;">
+      <!-- Sadhana Exercise & Contemplative Question (Zero-Wrapper) -->
+      <div class="reading-section-block" style="padding:10px 0; margin-bottom:24px;">
+        <h4 style="color:#facc15; font-size:1.1rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
           சாதனா பயிற்சி &amp; சிந்தனை வினாக்கள் (Sadhana Exercise)
         </h4>
-        <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7;">
+        <div style="color:#e2e8f0; font-size:0.94rem; line-height:1.7; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
           ${chap.exercise}
         </div>
       </div>
 
-      <!-- Curricular Scripture & Media Vault Integration -->
-      ${(() => {
-        let box = '';
-        if (currentBook === 'nallaram') {
-          box = `
-            <div class="curriculum-source-pill-box" style="background:rgba(16,185,129,0.12); border:1px solid rgba(16,185,129,0.35); border-radius:12px; padding:14px 18px; margin:20px 0; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <span style="font-size:1.4rem;">📜</span>
-                <div>
-                  <strong style="color:#34d399; font-size:0.92rem; display:block;">பாட மூலக் களஞ்சியம்: திருக்குறள் ஆய்வு மையம்</strong>
-                  <span style="color:#cbd5e1; font-size:0.82rem;">1330 குறள்கள், இல்லறவியல் மற்றும் திரைப்படக் காட்சிகள்</span>
-                </div>
-              </div>
-              <a href="thirukkural.html" class="sheet-btn" style="font-size:0.82rem; padding:6px 14px; text-decoration:none;">திருக்குறள் காண்க &rarr;</a>
-            </div>
-          `;
-        } else if (currentBook === 'narthunai') {
-          let link = 'saiva-neri.html';
-          let title = 'சைவ நெறி & 172 திருப்பதிகங்கள்';
-          if (currentGrade <= 3) {
-            link = 'vinayagar.html'; title = 'விநாயகர் அகவல் & வழிபாடு';
-          } else if (currentGrade <= 7) {
-            link = 'murugan.html'; title = 'முருகன் திருப்புகழ் & கந்த சஷ்டி';
-          }
-          box = `
-            <div class="curriculum-source-pill-box" style="background:rgba(192,132,252,0.12); border:1px solid rgba(192,132,252,0.35); border-radius:12px; padding:14px 18px; margin:20px 0; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <span style="font-size:1.4rem;">🕉️</span>
-                <div>
-                  <strong style="color:#c084fc; font-size:0.92rem; display:block;">பாட மூலக் களஞ்சியம்: ${title}</strong>
-                  <span style="color:#cbd5e1; font-size:0.82rem;">தேவாரம், பதிகங்கள் மற்றும் ஆலய வழிபாட்டு நெறிமுறைகள்</span>
-                </div>
-              </div>
-              <a href="${link}" class="sheet-btn" style="font-size:0.82rem; padding:6px 14px; text-decoration:none;">வழிபாட்டுக் களம் &rarr;</a>
-            </div>
-          `;
-        } else if (currentBook === 'narchinthanai') {
-          let link = (currentGrade >= 11) ? 'about.html' : 'sanmargam.html';
-          let title = (currentGrade >= 11) ? 'காஞ்சி மகா பெரியவா அருளுரைகள் (தெய்வத்தின் குரல்)' : 'வள்ளலார் சுத்த சன்மார்க்கம் (திருவருட்பா)';
-          box = `
-            <div class="curriculum-source-pill-box" style="background:rgba(251,146,60,0.12); border:1px solid rgba(251,146,60,0.35); border-radius:12px; padding:14px 18px; margin:20px 0; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <span style="font-size:1.4rem;">✨</span>
-                <div>
-                  <strong style="color:#fb923c; font-size:0.92rem; display:block;">பாட மூலக் களஞ்சியம்: ${title}</strong>
-                  <span style="color:#cbd5e1; font-size:0.82rem;">மெய்யியல் சிந்தனை மற்றும் ஆன்மநேய ஒருமைப்பாடு</span>
-                </div>
-              </div>
-              <a href="${link}" class="sheet-btn" style="font-size:0.82rem; padding:6px 14px; text-decoration:none;">மெய்யியல் களம் &rarr;</a>
-            </div>
-          `;
-        } else if (currentBook === 'narchol') {
-          let link = (currentGrade >= 6) ? 'panpaadu.html' : 'irai-isai-virundhu.html';
-          let title = (currentGrade >= 6) ? 'தமிழர் பண்பாடும் 12 மாதத் திருவிழாக்களும்' : 'இறை இசை விருந்து — 5 அமிர்த பண்ணிசைப் பாடல்கள்';
-          box = `
-            <div class="curriculum-source-pill-box" style="background:rgba(52,211,153,0.12); border:1px solid rgba(52,211,153,0.35); border-radius:12px; padding:14px 18px; margin:20px 0; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <span style="font-size:1.4rem;">🎶</span>
-                <div>
-                  <strong style="color:#34d399; font-size:0.92rem; display:block;">பாட மூலக் களஞ்சியம்: ${title}</strong>
-                  <span style="color:#cbd5e1; font-size:0.82rem;">திருமந்திர நாத யோகம் மற்றும் பண்ணிசைப் பாடல்கள்</span>
-                </div>
-              </div>
-              <a href="${link}" class="sheet-btn" style="font-size:0.82rem; padding:6px 14px; text-decoration:none;">இசைக்களஞ்சியம் &rarr;</a>
-            </div>
-          `;
-        } else if (currentBook === 'narcheyal') {
-          box = `
-            <div class="curriculum-source-pill-box" style="background:rgba(250,204,21,0.12); border:1px solid rgba(250,204,21,0.35); border-radius:12px; padding:14px 18px; margin:20px 0; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <span style="font-size:1.4rem;">🌿</span>
-                <div>
-                  <strong style="color:#facc15; font-size:0.92rem; display:block;">பாட மூலக் களஞ்சியம்: இல்லற தர்மம் &amp; சித்தர் வாழ்வியல்</strong>
-                  <span style="color:#cbd5e1; font-size:0.82rem;">பஞ்ச மகா யக்ஞ டிராக்கர், குடும்ப சாசனம் &amp; 18 சித்தர் மூலிகைகள்</span>
-                </div>
-              </div>
-              <div style="display:flex; gap:8px;">
-                <a href="grihastha.html" class="sheet-btn" style="font-size:0.82rem; padding:6px 12px; text-decoration:none;">இல்லறம்</a>
-                <a href="siddha.html" class="sheet-btn" style="font-size:0.82rem; padding:6px 12px; text-decoration:none;">சித்தர் நெறி</a>
-              </div>
-            </div>
-          `;
-        }
-        return box;
-      })()}
+      <!-- Curricular Integrated Media Player (பாட இசை & காணொளிக் களம்) -->
+      ${renderCurriculumMediaSection(currentGrade, currentBook, chap.chapterNumber)}
 
       <!-- Navigation Footer (Prev / Next Chapter) -->
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:1px solid rgba(255,255,255,0.08); padding-top:16px;">
-        ${prevNum ? `<button type="button" class="sheet-btn" onclick="switchChapter(${prevNum})"><svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> முந்தைய அத்தியாயம் (${prevNum})</button>` : '<div></div>'}
-        <span style="color:#94a3b8; font-size:0.85rem;">அத்தியாயம் ${chap.chapterNumber} / ${totalChapters}</span>
-        ${nextNum ? `<button type="button" class="sheet-btn sheet-btn-view" onclick="switchChapter(${nextNum})">அடுத்த அத்தியாயம் (${nextNum}) <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>` : `<a href="tharam-${currentGrade}.html" class="sheet-btn sheet-btn-view">வகுப்புப் பாடங்களுக்குத் திரும்புக <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>`}
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:20px; padding-top:16px;">
+        ${prevNum ? `<button type="button" class="sheet-btn" onclick="switchChapter(${prevNum})" style="cursor:pointer;"><svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> முந்தைய அத்தியாயம் (${prevNum})</button>` : '<div></div>'}
+        <span style="color:#94a3b8; font-size:0.85rem; text-shadow:0 1px 3px rgba(0,0,0,0.95);">அத்தியாயம் ${chap.chapterNumber} / ${totalChapters}</span>
+        ${nextNum ? `<button type="button" class="sheet-btn sheet-btn-view" onclick="switchChapter(${nextNum})" style="cursor:pointer;">அடுத்த அத்தியாயம் (${nextNum}) <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>` : `<a href="tharam-${currentGrade}.html" class="sheet-btn sheet-btn-view">வகுப்புப் பாடங்களுக்குத் திரும்புக <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>`}
       </div>
     </article>
   `;
 }
+
+// Curricular Media Integrator (பாட இசை & காணொளிக் களம்)
+function getCurriculumMediaForChapter(grade, bookKey, chapterNum) {
+  const cat = window.GURUKULA_CATALOG;
+  if (!cat) return null;
+
+  if (bookKey === 'nallaram' || bookKey === 'nalvazhi') {
+    if (cat.thirukkural && cat.thirukkural.length > 0) {
+      const idx = (grade * 7 + chapterNum * 3) % cat.thirukkural.length;
+      return cat.thirukkural[idx];
+    }
+  }
+
+  if (bookKey === 'narthunai') {
+    if (grade <= 3) {
+      if (chapterNum === 1 && cat.vinayagar && cat.vinayagar.length > 0) return cat.vinayagar[0];
+      if (chapterNum === 2 && cat.murugan && cat.murugan.length > 0) return cat.murugan[0];
+      if (chapterNum === 3 && cat.shiva && cat.shiva.length > 0) return cat.shiva[0];
+      if (chapterNum === 4 && cat.amman && cat.amman.length > 0) return cat.amman[0];
+      if (chapterNum === 5 && cat.vishnu_krishna && cat.vishnu_krishna.length > 0) return cat.vishnu_krishna[0];
+      if (chapterNum === 6 && cat.murugan && cat.murugan.length > 1) return cat.murugan[1];
+      if (chapterNum === 7 && cat.shiva && cat.shiva.length > 1) return cat.shiva[1];
+    } else if (grade <= 8) {
+      if (chapterNum % 4 === 1 && cat.shiva) return cat.shiva[(grade * 5 + chapterNum) % cat.shiva.length];
+      if (chapterNum % 4 === 2 && cat.murugan) return cat.murugan[(grade * 3 + chapterNum) % cat.murugan.length];
+      if (chapterNum % 4 === 3 && cat.amman) return cat.amman[(grade * 2 + chapterNum) % cat.amman.length];
+      if (chapterNum % 4 === 0 && cat.vishnu_krishna) return cat.vishnu_krishna[(grade * 2 + chapterNum) % cat.vishnu_krishna.length];
+    } else {
+      if (cat.shiva) return cat.shiva[(grade * 7 + chapterNum) % cat.shiva.length];
+    }
+  }
+
+  if (bookKey === 'narchinthanai') {
+    if (cat.vallalar_cultural && cat.vallalar_cultural.length > 0) {
+      const idx = (grade * 4 + chapterNum) % cat.vallalar_cultural.length;
+      return cat.vallalar_cultural[idx];
+    }
+  }
+
+  if (bookKey === 'narchol') {
+    if (cat.shiva && cat.shiva.length > 0) {
+      const idx = (chapterNum * 5) % cat.shiva.length;
+      return cat.shiva[idx];
+    }
+  }
+
+  if (cat.vallalar_cultural && cat.vallalar_cultural.length > 0) {
+    const idx = (grade * 6 + chapterNum) % cat.vallalar_cultural.length;
+    return cat.vallalar_cultural[idx];
+  } else if (cat.thirukkural && cat.thirukkural.length > 0) {
+    const idx = (grade * 3 + chapterNum) % cat.thirukkural.length;
+    return cat.thirukkural[idx];
+  }
+
+  return null;
+}
+
+function renderCurriculumMediaSection(grade, bookKey, chapterNum) {
+  const mediaItem = getCurriculumMediaForChapter(grade, bookKey, chapterNum);
+  if (!mediaItem) return '';
+
+  const cleanTitle = (mediaItem.title || '').replace(/'/g, "\\'");
+  const hasLyrics = Boolean(mediaItem.lyrics);
+  const hasMeaning = Boolean(mediaItem.meaning);
+
+  return `
+    <div class="reading-section-block chapter-media-card">
+      <div class="chapter-media-header">
+        <div class="chapter-media-title">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          <span>பாட இசை &amp; காணொளிக் களம் (Lesson Sacred Song &amp; Film)</span>
+        </div>
+        <span class="chap-badge" style="font-size:0.75rem;">பாட ஆதாரக் களஞ்சியம்</span>
+      </div>
+      <div style="color:#ffffff; font-weight:700; font-size:1.05rem; margin-bottom:6px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
+        ${mediaItem.title}
+      </div>
+      <div style="color:#94a3b8; font-size:0.85rem; margin-bottom:12px; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
+        ஆசிரியர்: ${mediaItem.author || 'குருகுல மரபு'} • மூலம்: ${mediaItem.source || 'ஆசிரம வெளியீடு'}
+      </div>
+      <div class="chapter-media-player-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/${mediaItem.id}?rel=0" title="${mediaItem.title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="chapter-media-info">
+        ${(hasLyrics || hasMeaning) ? `
+          <button type="button" class="sheet-btn" onclick="toggleChapterLyrics('${mediaItem.id}')" style="font-size:0.82rem; padding:6px 14px; cursor:pointer;">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/><line x1="8" y1="7" x2="14" y2="7"/></svg>
+            <span>வரிகள் &amp; பொருள் காண்க</span>
+          </button>
+        ` : ''}
+        ${(typeof window.openPlayer === 'function') ? `
+          <button type="button" class="sheet-btn sheet-btn-view" onclick="openPlayer('${mediaItem.id}', '${cleanTitle}')" style="font-size:0.82rem; padding:6px 14px; cursor:pointer;">
+            <span>சினிமா தியேட்டர் முழுத்திரை &rarr;</span>
+          </button>
+        ` : ''}
+      </div>
+      <div class="chapter-media-lyrics-drawer" id="chapLyrics_${mediaItem.id}" style="display:none;">
+        ${hasLyrics ? `<div style="margin-bottom:12px;"><strong style="color:var(--gold-soft); display:block; margin-bottom:4px;">பாடல் வரிகள்:</strong><div style="line-height:1.7;">${mediaItem.lyrics}</div></div>` : ''}
+        ${hasMeaning ? `<div><strong style="color:#38bdf8; display:block; margin-bottom:4px;">உரை விளக்கம்:</strong><div style="line-height:1.7;">${mediaItem.meaning}</div></div>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+window.toggleChapterLyrics = function(id) {
+  const el = document.getElementById('chapLyrics_' + id);
+  if (!el) return;
+  el.style.display = (el.style.display === 'none' || !el.style.display) ? 'block' : 'none';
+};
 
 // Carousel Interactive Controls
 window.switchChapterImage = function(idx) {

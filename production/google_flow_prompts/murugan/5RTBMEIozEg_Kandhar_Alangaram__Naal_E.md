@@ -73,3 +73,23 @@ Create a single continuous 16:9 cinematic close-up shot at 24 fps. A thick, lush
 **Prompt:**  
 Create a single continuous 16:9 cinematic sweeping crane shot at 24 fps over the hilltop temple at glorious dawn. The golden Vel stands victorious above the sanctum roof against a brilliant amber-gold sky. Flocks of white doves and green parrots soar across the valley as temple bells chime in celebration of absolute spiritual victory.  
 *Exclusions:* No modern structures, no digital artifacts, no text.
+
+### Scene 11 (01:40 - 01:50): The Divine Peacock (Mayil Vahanam) of Cosmic Wisdom
+**Prompt:**  
+Create a single continuous 16:9 cinematic medium tracking shot at 24 fps beside the sacred temple sanctum steps. A majestic divine peacock (Mayil) with iridescent emerald and sapphire plumage fans its resplendent tail feathers in the golden morning light, standing loyally beside the sanctum entrance as fragrant temple jasmine petals fall gently around it.  
+*Exclusions:* No modern fences, no cages, no text.
+
+### Scene 12 (01:50 - 02:00): Surrender of Devotees at the Lotus Feet (Prapatti)
+**Prompt:**  
+Create a single continuous 16:9 cinematic slow pan at 24 fps across the ancient granite temple corridor. Devotees in traditional white cotton dhotis with sacred Tripundra Vibhuti and Rudraksha beads kneel in deep prayer and prostration (Sashtanga Namaskaram) before the glowing sanctum, their faces reflecting deep peace, complete fearlessness, and divine surrender.  
+*Exclusions:* No modern clothes, no phones, no text.
+
+### Scene 13 (02:00 - 02:10): The Maha Deepam & Camphor Aarati Epiphany
+**Prompt:**  
+Create a single continuous 16:9 cinematic intimate push-in at 24 fps toward the innermost sanctum. A venerable Tamil Vedic priest lifts a multi-tiered bronze Maha Deepam lamp, its bright golden flames casting glowing amber warmth over the diamond-adorned golden Vel and the smiling face of Lord Kumaresan, filling the stone chamber with dancing holy light and fragrant camphor smoke.  
+*Exclusions:* No electric light bulbs, no plastic, no text.
+
+### Scene 14 (02:10 - 02:20): The Eternal Hill of Thiruthani at Sunset
+**Prompt:**  
+Create a single continuous 16:9 cinematic wide vista shot at 24 fps of the holy hill of Tiruttani at golden twilight. Ancient granite temple towers (Gopurams) catch the last rays of amber sunlight, thousands of small clay oil lamps (Agal Vilakku) flicker along the stone steps, and the cosmic sky glows with ethereal violet and gold, symbolizing eternal peace and liberation.  
+*Exclusions:* No modern power lines, no concrete buildings, no text.

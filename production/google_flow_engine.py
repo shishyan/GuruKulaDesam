@@ -312,8 +312,8 @@ def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Pat
     filter_complex = []
     curr_v = "[0:v]"
     
-    # Scale base video to 1280x720 24fps
-    filter_complex.append(f"{curr_v}scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,fps=24,setsar=1,format=rgba[v_base]")
+    # Scale base video to 1920x1080 24fps with high-quality lanczos upscaling
+    filter_complex.append(f"{curr_v}scale=1920:1080:flags=lanczos:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,fps=24,setsar=1,format=rgba[v_base]")
     curr_v = "[v_base]"
 
     input_idx = 2
@@ -321,8 +321,8 @@ def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Pat
         inputs.extend(["-stream_loop", "-1", "-i", str(DRIZZLE_LOOP)])
         drizzle_idx = input_idx
         input_idx += 1
-        # Screen blend drizzle layer over base video
-        filter_complex.append(f"[{drizzle_idx}:v]scale=1280:720,fps=24,setsar=1,format=rgba[drizzle_rgba]")
+        # Screen blend drizzle layer over base video at 1080p
+        filter_complex.append(f"[{drizzle_idx}:v]scale=1920:1080:flags=lanczos,fps=24,setsar=1,format=rgba[drizzle_rgba]")
         filter_complex.append(f"{curr_v}format=gbrp[v_gbrp];[drizzle_rgba]format=gbrp[d_gbrp];[v_gbrp][d_gbrp]blend=all_mode=screen:all_opacity=0.25,format=rgba[v_drizzled]")
         curr_v = "[v_drizzled]"
 
@@ -330,7 +330,7 @@ def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Pat
         inputs.extend(["-loop", "1", "-i", str(OVERLAY_FILE)])
         overlay_idx = input_idx
         input_idx += 1
-        filter_complex.append(f"[{overlay_idx}:v]format=rgba[fg_overlay]")
+        filter_complex.append(f"[{overlay_idx}:v]scale=1920:1080:flags=lanczos,format=rgba[fg_overlay]")
         filter_complex.append(f"{curr_v}[fg_overlay]overlay=0:0:format=auto,format=yuv420p[v_framed]")
         curr_v = "[v_framed]"
 
