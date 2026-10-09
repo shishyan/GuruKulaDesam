@@ -7590,24 +7590,24 @@ h1, h2, h3, h4, h5, h6,
   background: rgba(239, 68, 68, 0.32) !important;
 }
 
-/* 9. Lotus Rose Pink (Sakthi Neri) */
+/* 9. Lotus Warm Green Teal */
 .badge-rose {
-  background: rgba(236, 72, 153, 0.18) !important;
-  border: 1px solid rgba(236, 72, 153, 0.45) !important;
+  background: rgba(20, 184, 166, 0.18) !important;
+  border: 1px solid rgba(45, 212, 191, 0.45) !important;
   color: #2dd4bf !important;
 }
 .item-rose:hover, .item-rose.active {
-  background: rgba(236, 72, 153, 0.10) !important;
-  border-color: rgba(236, 72, 153, 0.35) !important;
+  background: rgba(20, 184, 166, 0.10) !important;
+  border-color: rgba(45, 212, 191, 0.35) !important;
   color: #2dd4bf !important;
 }
 .item-rose.active {
-  border-left: 3px solid #f472b6 !important;
+  border-left: 3px solid #2dd4bf !important;
 }
 .item-rose.active .badge-rose,
 .item-rose:hover .badge-rose {
-  box-shadow: 0 0 14px rgba(244, 114, 182, 0.55) !important;
-  background: rgba(236, 72, 153, 0.32) !important;
+  box-shadow: 0 0 14px rgba(45, 212, 191, 0.55) !important;
+  background: rgba(20, 184, 166, 0.32) !important;
 }
 
 /* 10. Coral Ochre (Vinayagar) */
