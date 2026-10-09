@@ -8922,34 +8922,50 @@ h1, h2, h3, h4, h5, h6,
 [class*="-stage"],
 [class*="-card"]:not(.card-thumbnail):not(.grade-card-media):not(.sheet-thumb):not(.book-thumb),
 [class*="card-"]:not(.card-thumbnail):not(.grade-card-media):not(.sheet-thumb):not(.book-thumb),
-[class*="-panel"]:not(.dropdown-menu) {
+[class*="-panel"]:not(.dropdown-menu):not(.modal-content):not(.context-search-panel) {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
   border: none !important;
+  border-width: 0 !important;
+  border-style: none !important;
   border-color: transparent !important;
   box-shadow: none !important;
 }
 
-/* 2. Remove all structural borders universally */
-div, section, article, aside, nav, header, footer {
-  border-top-color: transparent !important;
-  border-bottom-color: transparent !important;
-  border-left-color: transparent !important;
-  border-right-color: transparent !important;
+/* 2. Remove all structural borders and container backgrounds universally */
+body :is(div, section, article, aside, nav, header, footer, main, table, thead, tbody, tr, label):not(.modal):not(.modal-content):not(.context-search-panel):not(.quick-actions-menu):not(.left-strip-bar.expanded):not(.left-strip-bar.open):not(.toast):not(.gkd-living-dheepam-corner):not(.gkd-living-dhoopam-corner):not(button):not(.sheet-btn):not(.tag):not(input):not(textarea):not(select):not(.zen-grade-btn):not(.grade-hub-btn):not(.sheet-batch-btn) {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  border-width: 0 !important;
+  border-style: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
 }
 
-/* 3. Ensure deep shadow contrast technique for high visibility */
+/* Universal border scrub on layout elements */
+div:not(.modal-content):not(.context-search-panel):not(.quick-actions-menu):not(.form-control):not(input):not(textarea):not(select),
+section, article, aside, nav, header, footer,
+main, table, thead, tbody, tr, th, td, label {
+  border: none !important;
+  border-width: 0 !important;
+  border-style: none !important;
+  border-color: transparent !important;
+}
+
+/* 3. Deep multi-layer shadow contrast technique for high visibility directly against background */
 h1, h2, h3, h4, h5, h6,
 .title, [class*="-title"], [class*="title-"],
 .name, [class*="-name"], [class*="name-"],
 .heading, [class*="-heading"], [class*="heading-"],
-strong, b {
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.98), 0 4px 16px rgba(0, 0, 0, 0.90) !important;
+strong, b, th {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.98), 0 4px 15px rgba(0, 0, 0, 0.95), 0 0 25px rgba(0, 0, 0, 0.85) !important;
 }
 
-p, span, li, label, .desc, [class*="-desc"], [class*="desc-"] {
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 2px 8px rgba(0, 0, 0, 0.85);
+p, span, li, label, td, .desc, [class*="-desc"], [class*="desc-"], .verse-quote {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.98), 0 2px 10px rgba(0, 0, 0, 0.90) !important;
 }
 
 /* 4. Sculpted 3D visual media float with deep multi-layered shadows */
@@ -8962,7 +8978,7 @@ img, iframe, video,
 .strip-item-icon {
   border: none !important;
   border-radius: 14px !important;
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.90), 0 4px 14px rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.92), 0 4px 14px rgba(0, 0, 0, 0.95) !important;
 }
 
 /* 5. Clean borderless interactive controls */
@@ -8970,3 +8986,4 @@ button, .btn, [class*="-btn"], [class*="btn-"],
 .pill, [class*="-pill"], [class*="pill-"] {
   border: none !important;
 }
+

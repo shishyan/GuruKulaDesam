@@ -8,23 +8,23 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="manifest" href="manifest.json">
   <style>
-    /* Grihastha Tracker & Family Charter Styles */
+    /* Grihastha Tracker & Family Charter Styles (Zero-Wrapper & Zero-Border Architecture) */
     .dharma-hub-card {
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(24, 34, 53, 0.94));
-      border: 1.5px solid rgba(45, 212, 191, 0.35);
-      border-radius: 18px;
-      padding: 28px;
-      margin-bottom: 32px;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.55);
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 10px 0 28px 0 !important;
+      margin-bottom: 28px !important;
+      box-shadow: none !important;
     }
     .dharma-hub-card:hover {
-      border-color: rgba(45, 212, 191, 0.55);
+      border: none !important;
     }
     .yajna-checkbox-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 12px;
-      padding: 14px 18px;
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 10px 4px !important;
       display: flex;
       align-items: flex-start;
       gap: 14px;
@@ -32,13 +32,13 @@
       transition: all 0.25s ease;
     }
     .yajna-checkbox-card:hover {
-      background: rgba(45, 212, 191, 0.06);
-      border-color: rgba(45, 212, 191, 0.35);
+      background: transparent !important;
+      border: none !important;
       transform: translateY(-1px);
     }
     .yajna-checkbox-card.completed {
-      background: rgba(45, 212, 191, 0.12);
-      border-color: rgba(45, 212, 191, 0.5);
+      background: transparent !important;
+      border: none !important;
     }
     .yajna-checkbox-card input[type="checkbox"] {
       width: 22px;
@@ -48,12 +48,12 @@
       margin-top: 3px;
     }
     .charter-preview-frame {
-      background: linear-gradient(135deg, #090e1a 0%, #0d1527 50%, #090e1a 100%);
-      border: 6px double #d4af37;
-      border-radius: 16px;
-      padding: 38px 32px;
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 24px 0 !important;
       position: relative;
-      box-shadow: 0 15px 45px rgba(0,0,0,0.65);
+      box-shadow: none !important;
       color: #f1f5f9;
       overflow: hidden;
     }
@@ -321,7 +321,7 @@
       <div class="sacred-tag"><svg class="gkd-icon gkd-om-icon" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;margin-right:6px;vertical-align:middle;"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 10.5c-.3-.7-.2-1.5.3-2.1.8-.9 2.2-.9 3 .1.4.5.5 1.2.2 1.8-.4.7-1.1 1.2-1.7 1.7.9.3 1.7.9 2 1.7.4 1.1 0 2.4-1 3.1-1.2.9-2.9.7-3.9-.4-.4-.5-.6-1.1-.6-1.7h1.4c0 .4.2.8.5 1 .6.5 1.5.4 2-.1.4-.4.5-1 .2-1.5-.4-.7-1.2-1-2-1v-1.2c.6 0 1.2-.2 1.5-.7.3-.4.3-.9 0-1.3-.4-.5-1.1-.6-1.6-.2-.3.2-.5.6-.5 1H8.2zm6.3-2.5c.8 0 1.5.5 1.8 1.2l-1.2.5c-.2-.4-.5-.6-.8-.6-.6 0-1 .4-1 1s.4 1 1 1c.5 0 .9-.3 1.1-.7l1.1.6c-.4.8-1.2 1.3-2.2 1.3-1.4 0-2.4-1-2.4-2.4 0-1.3 1-2.4 2.4-2.4zm1.5-1.5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z"/></svg> வாழ்வியல் நெறி &amp; உன்னத இல்லற தர்மம் • தரம் 1 முதல் 12 வரை</div>
       <h1>வாழ்வியல் நெறி — சான்றாண்மை &amp; இல்லற தர்மம்</h1>
       <h2>Living the Dharma: Becoming Noble &amp; Leading an Enlightened Family Life (Grades 1 to 12)</h2>
-      <div style="display:inline-flex; align-items:center; gap:8px; margin: 10px 0 14px; background: rgba(45, 212, 191, 0.12); border: 1px solid rgba(45, 212, 191, 0.4); padding: 6px 18px; border-radius: 20px; font-size: 0.86rem; color: #5eead4; font-weight: 700; flex-wrap: wrap; justify-content: center;">
+      <div style="display:inline-flex; align-items:center; gap:8px; margin: 10px 0 14px; font-size: 0.86rem; color: #5eead4; font-weight: 700; flex-wrap: wrap; justify-content: center; text-shadow: 0 1px 4px #000;">
         <span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg> தொல் குருகுல ஆசிரம போதனை மரபு:</span>
         <span style="color:#ffffff;">ஸ்ரவணம் (கேட்டல்)</span> <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg> <span style="color:#38bdf8;">மனனம் (சிந்தித்தல்)</span> <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg> <span style="color:#fcd34d;">நிதித்யாசனம் (வாழ்ந்து காட்டல்)</span>
       </div>
@@ -356,9 +356,9 @@
     <div id="kalviGradeFocusStage" class="zen-grade-stage-shell" style="margin-bottom: 30px;">
       
       <!-- Focus Header & Controls Bar -->
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; border-bottom: 1px solid rgba(212, 175, 55, 0.25); padding-bottom: 14px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; padding-bottom: 14px;">
         <div>
-          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(212,175,55,0.15); color: var(--gold-bright); border: 1px solid rgba(212,175,55,0.35); padding: 4px 12px; border-radius: 12px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase;">
+          <div style="display: inline-flex; align-items: center; gap: 6px; color: var(--gold-bright); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; text-shadow: 0 1px 4px #000;">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> ஒற்றை வகுப்புப் பார்வை அரங்கம் • ONE GRADE AT A TIME
           </div>
           <h2 style="color: #ffffff; font-size: 1.55rem; font-weight: 800; margin: 6px 0 2px 0;">
@@ -368,7 +368,7 @@
         </div>
 
         <div style="display: flex; align-items: center; gap: 10px;">
-          <button type="button" class="zen-nav-btn" onclick="prevKalviZenGrade()" title="முந்தைய வகுப்பு (←)" style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(212, 175, 55, 0.4); color: var(--gold-bright); width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;">
+          <button type="button" class="zen-nav-btn" onclick="prevKalviZenGrade()" title="முந்தைய வகுப்பு (←)" style="background: rgba(0, 0, 0, 0.4); border: none; color: var(--gold-bright); width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.5);">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
           </button>
           
@@ -377,7 +377,7 @@
             <span style="font-size: 0.72rem; color: #64748b;">(← / → விசைப்பலகை)</span>
           </div>
 
-          <button type="button" class="zen-nav-btn" onclick="nextKalviZenGrade()" title="அடுத்த வகுப்பு (→)" style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(212, 175, 55, 0.4); color: var(--gold-bright); width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;">
+          <button type="button" class="zen-nav-btn" onclick="nextKalviZenGrade()" title="அடுத்த வகுப்பு (→)" style="background: rgba(0, 0, 0, 0.4); border: none; color: var(--gold-bright); width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.5);">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </button>
         </div>
@@ -410,8 +410,8 @@
         <div>
           <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 8px;">
             <span class="zen-badge" id="kalviZenBadge">தரம் 1 • பாலப் பருவம்</span>
-            <span style="background: rgba(45, 212, 191, 0.12); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.3); padding: 3px 10px; border-radius: 8px; font-size: 0.78rem; font-weight: 700;" id="kalviZenMeta">பருவம்: 6-7 ஆண்டுகள் • பாலப் பருவம்</span>
-            <span style="background: rgba(212, 175, 55, 0.12); color: var(--gold-bright); border: 1px solid rgba(212, 175, 55, 0.3); padding: 3px 10px; border-radius: 8px; font-size: 0.78rem; font-weight: 700;" id="kalviZenScripture">வேதம் &amp; ஆத்திசூடி</span>
+            <span style="color: #2dd4bf; font-size: 0.8rem; font-weight: 700; text-shadow: 0 1px 4px #000;" id="kalviZenMeta">பருவம்: 6-7 ஆண்டுகள் • பாலப் பருவம்</span>
+            <span style="color: var(--gold-bright); font-size: 0.8rem; font-weight: 700; text-shadow: 0 1px 4px #000;" id="kalviZenScripture">வேதம் &amp; ஆத்திசூடி</span>
           </div>
 
           <h3 id="kalviZenTitle" style="color: #ffffff; font-size: 1.55rem; font-weight: 800; margin: 4px 0 6px 0; line-height: 1.3;">
@@ -429,10 +429,10 @@
           <div style="margin-bottom: 20px;">
             <div style="font-size: 0.8rem; color: #94a3b8; font-weight: 700; margin-bottom: 8px;">வாழ்வியல் ஆளுமைகள் (Key Competencies):</div>
             <div id="kalviZenCompetencies" style="display: flex; flex-wrap: wrap; gap: 8px;">
-              <span style="background: rgba(45, 212, 191, 0.12); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.3); padding: 4px 10px; border-radius: 8px; font-size: 0.8rem; font-weight: 600;">அஹிம்சை</span>
-              <span style="background: rgba(45, 212, 191, 0.12); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.3); padding: 4px 10px; border-radius: 8px; font-size: 0.8rem; font-weight: 600;">உயிர்களிடத்தில் அன்பு</span>
-              <span style="background: rgba(45, 212, 191, 0.12); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.3); padding: 4px 10px; border-radius: 8px; font-size: 0.8rem; font-weight: 600;">பெற்றோர் வழிபாடு</span>
-              <span style="background: rgba(45, 212, 191, 0.12); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.3); padding: 4px 10px; border-radius: 8px; font-size: 0.8rem; font-weight: 600;">ஆசாரக் கல்வி</span>
+              <span style="color: #2dd4bf; font-size: 0.82rem; font-weight: 600; text-shadow: 0 1px 4px #000;">அஹிம்சை</span>
+              <span style="color: #2dd4bf; font-size: 0.82rem; font-weight: 600; text-shadow: 0 1px 4px #000;">உயிர்களிடத்தில் அன்பு</span>
+              <span style="color: #2dd4bf; font-size: 0.82rem; font-weight: 600; text-shadow: 0 1px 4px #000;">பெற்றோர் வழிபாடு</span>
+              <span style="color: #2dd4bf; font-size: 0.82rem; font-weight: 600; text-shadow: 0 1px 4px #000;">ஆசாரக் கல்வி</span>
             </div>
           </div>
 
@@ -442,7 +442,7 @@
               <span>தரம் 1 பாடநூல் &amp; கையேட்டைத் திறக்க</span>
               <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
-            <a href="books.html" style="background: rgba(14, 165, 233, 0.15); color: #38bdf8; border: 1px solid rgba(14, 165, 233, 0.35); font-weight: 700; font-size: 0.88rem; padding: 10px 18px; border-radius: 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+            <a href="books.html" style="background: rgba(14, 165, 233, 0.2); color: #38bdf8; border: none; font-weight: 700; font-size: 0.88rem; padding: 10px 18px; border-radius: 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
               <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 7 ஆசிரம நூல்கள் வாசிக்க
             </a>
           </div>
@@ -814,7 +814,7 @@
 
 
     <!-- Complete Master Alphabets to Virtue Hub -->
-    <section class="scripture-study-section" id="virtue-mapping" style="margin-top: 40px; margin-bottom: 40px; border: 1px solid var(--border-gold-hover); background: rgba(14, 17, 24, 0.95); padding: 32px 28px; border-radius: 18px; box-shadow: 0 15px 40px rgba(0,0,0,0.6);">
+    <section class="scripture-study-section" id="virtue-mapping" style="margin-top: 40px; margin-bottom: 40px; background: transparent; border: none; padding: 10px 0; box-shadow: none;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
         <span class="source-badge" style="background: var(--gold-gradient); color: #000; font-weight: 800; font-size: 0.85rem;">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 3 4.5 4.5 7 1.5 2.5 1.5 5.5 0 8s-4 4-6.5 4c-3 0-5.5-2.5-5.5-6 0-3.5 2-6 4-8.5.5 1.5 1.5 2.5 2.5 2.5.5-2 .5-4.5 1-7z"/></svg> 4 வாழ்வியல் பருவங்கள் — அகர வரிசை முதல் தர்ம முக்தி வரை <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 3 4.5 4.5 7 1.5 2.5 1.5 5.5 0 8s-4 4-6.5 4c-3 0-5.5-2.5-5.5-6 0-3.5 2-6 4-8.5.5 1.5 1.5 2.5 2.5 2.5.5-2 .5-4.5 1-7z"/></svg>
@@ -833,7 +833,7 @@
 
       <!-- 4 Developmental Stages Progression Architecture Cards -->
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 28px;">
-        <div style="background: rgba(42, 157, 143, 0.08); border: 1px solid rgba(42, 157, 143, 0.35); border-radius: 14px; padding: 18px;">
+        <div style="background: transparent; border: none; padding: 10px 4px;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
             <span style="font-size: 1.3rem;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg></span>
             <h4 style="color: #2dd4bf; margin: 0; font-size: 1.02rem;">பருவம் 1: பாலப் பருவம் (Grades 1-4)</h4>
@@ -844,7 +844,7 @@
           </p>
         </div>
 
-        <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 14px; padding: 18px;">
+        <div style="background: transparent; border: none; padding: 10px 4px;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
             <span style="font-size: 1.3rem;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg></span>
             <h4 style="color: #38bdf8; margin: 0; font-size: 1.02rem;">பருவம் 2: மாணவர் பருவம் (Grades 5-8)</h4>
@@ -855,7 +855,7 @@
           </p>
         </div>
 
-        <div style="background: rgba(233, 196, 106, 0.08); border: 1px solid rgba(233, 196, 106, 0.35); border-radius: 14px; padding: 18px;">
+        <div style="background: transparent; border: none; padding: 10px 4px;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
             <span style="font-size: 1.3rem;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-8"/><path d="M12 14c-4 0-7-3-7-6a7 7 0 0 1 14 0c0 3-3 6-7 6z"/></svg></span>
             <h4 style="color: #fbbf24; margin: 0; font-size: 1.02rem;">பருவம் 3: இளைஞர் பருவம் (Grades 9-10)</h4>
@@ -866,7 +866,7 @@
           </p>
         </div>
 
-        <div style="background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.4); border-radius: 14px; padding: 18px;">
+        <div style="background: transparent; border: none; padding: 10px 4px;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
             <span style="font-size: 1.3rem;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20v2H2z"/><path d="M3 18l2-11 5 5 4-7 4 7 5-5 2 11H3z"/></svg></span>
             <h4 style="color: var(--gold-bright); margin: 0; font-size: 1.02rem;">பருவம் 4: உயர் வாழ்வியல் (Grades 11-12+)</h4>
@@ -879,10 +879,10 @@
       </div>
 
       <!-- Master Matrix Table -->
-      <div style="overflow-x: auto; background: rgba(0,0,0,0.3); border-radius: 12px; border: 1px solid var(--border-gold);">
+      <div style="overflow-x: auto; background: transparent; border: none;">
         <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.88rem;">
           <thead>
-            <tr style="background: rgba(212,175,55,0.12); border-bottom: 2px solid var(--border-gold);">
+            <tr style="background: rgba(212,175,55,0.12); ">
               <th style="padding: 12px 14px; color: var(--gold-bright); font-weight: 700;">வகுப்பு / தரம்</th>
               <th style="padding: 12px 14px; color: var(--gold-bright); font-weight: 700;">எழுத்துகள்</th>
               <th style="padding: 12px 14px; color: var(--gold-bright); font-weight: 700;">முதிர்ச்சி நிலை</th>
@@ -893,7 +893,7 @@
           </thead>
           <tbody>
             
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-1.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 1 (Gr 1) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -901,7 +901,7 @@
             அ ஆ இ ஈ
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #2a9d8f; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 1: அறிதல் (Learn)
             </span>
           </td>
@@ -912,13 +912,13 @@
             "அறஞ்செய விரும்பு"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-1.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-1.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-2.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 2 (Gr 2) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -926,7 +926,7 @@
             உ ஊ எ ஏ
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #2a9d8f; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 1: அறிதல் (Learn)
             </span>
           </td>
@@ -937,13 +937,13 @@
             "உடையது விளம்பேல்"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-2.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-2.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-3.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 3 (Gr 3) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -951,7 +951,7 @@
             ஐ ஒ ஓ ஔ ஃ
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #2a9d8f; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 1: அறிதல் (Learn)
             </span>
           </td>
@@ -962,13 +962,13 @@
             "ஐயமிட்டு உண்"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-3.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-3.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-4.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 4 (Gr 4) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -976,7 +976,7 @@
             க ங
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #2a9d8f22; color: #2a9d8f; border: 1px solid #2a9d8f55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #2a9d8f; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 1: தொடங்குதல் (Initiate)
             </span>
           </td>
@@ -987,13 +987,13 @@
             "கண்டொன்று சொல்லேல்"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-4.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-4.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-5.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 5 (Gr 5) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -1001,7 +1001,7 @@
             ச ஞ
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #e9c46a22; color: #e9c46a; border: 1px solid #e9c46a55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #e9c46a; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 2: பின்பற்றுதல் (Follow)
             </span>
           </td>
@@ -1012,13 +1012,13 @@
             "செய்யாமல் செய்த உதவிக்கு வையகமும் வானகமும் ஆற்றல் அரிது"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-5.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-5.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-6.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 6 (Gr 6) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -1026,7 +1026,7 @@
             த
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #e9c46a22; color: #e9c46a; border: 1px solid #e9c46a55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #e9c46a; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 2: பின்பற்றுதல் (Follow)
             </span>
           </td>
@@ -1037,13 +1037,13 @@
             "ஒருமையுள் ஆமைபோல் ஐந்துஅடக்கல் ஆற்றின் எழுமையும் ஏமாப் புடைத்து"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-6.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-6.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-7.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 7 (Gr 7) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -1051,7 +1051,7 @@
             ந
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #e9c46a22; color: #e9c46a; border: 1px solid #e9c46a55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #e9c46a; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 2: பின்பற்றுதல் (Follow)
             </span>
           </td>
@@ -1062,13 +1062,13 @@
             "சமன்செய்து சீர்தூக்கும் கோல்போல் அமைந்தொருபால் கோடாமை சான்றோர்க் கணி"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-7.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-7.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-8.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 8 (Gr 8) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -1076,7 +1076,7 @@
             ப
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #e9c46a22; color: #e9c46a; border: 1px solid #e9c46a55; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #e9c46a; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 2: உறுதிப்பாடு (Sustain)
             </span>
           </td>
@@ -1087,13 +1087,13 @@
             "அகழ்வாரைத் தாங்கும் நிலம்போலத் தம்மை இகழ்வார்ப் பொறுத்தல் தலை"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-8.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-8.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-9.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 9 (Gr 9) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -1101,7 +1101,7 @@
             ம
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #e76f5122; color: #e76f51; border: 1px solid #e76f5155; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #e76f51; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 3: நிலைநிறுத்துதல் (Maintain)
             </span>
           </td>
@@ -1112,13 +1112,13 @@
             "மனத்துக்கண் மாசிலன் ஆதல் அனைத்தறன் ஆகுல நீர பிற"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-9.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-9.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-10.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 10 (Gr 10) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -1126,7 +1126,7 @@
             ய வ
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #e76f5122; color: #e76f51; border: 1px solid #e76f5155; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #e76f51; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 3: நிலைநிறுத்துதல் (Maintain)
             </span>
           </td>
@@ -1137,13 +1137,13 @@
             "யாதும் ஊரே யாவரும் கேளிர் தீதும் நன்றும் பிறர்தர வாரா"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-10.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-10.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-11.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 11 (Gr 11) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -1151,7 +1151,7 @@
             ழ ள
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #e76f5122; color: #e76f51; border: 1px solid #e76f5155; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #e76f51; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 3: நிலைநிறுத்துதல் (Maintain)
             </span>
           </td>
@@ -1162,13 +1162,13 @@
             "ஒழுக்கம் விழுப்பம் தரலான் ஒழுக்கம் உயிரினும் ஓம்பப் படும்"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-11.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-11.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
         </tr>
         
-        <tr style="border-bottom: 1px solid rgba(212,175,55,0.15);">
+        <tr style="">
           <td style="padding: 12px 14px; font-weight: 700; color: var(--gold-bright); white-space: nowrap;">
             <a href="tharam-12.html" style="color: var(--gold-bright); text-decoration: none;">தரம் 12 (Gr 12) <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </td>
@@ -1176,7 +1176,7 @@
             ற ன
           </td>
           <td style="padding: 12px 14px;">
-            <span style="background: #e76f5122; color: #e76f51; border: 1px solid #e76f5155; padding: 2px 8px; border-radius: 10px; font-size: 0.74rem; font-weight: 700; display: inline-block; white-space: nowrap;">
+            <span style="color: #e76f51; font-size: 0.76rem; font-weight: 700; display: inline-block; white-space: nowrap; text-shadow: 0 1px 4px #000;">
               நிலை 3: ஞான முழுமை (Mastery)
             </span>
           </td>
@@ -1187,7 +1187,7 @@
             "அறத்தாறு இதுவென வேண்டா சிவிகை பொறுத்தானோடு ஊர்ந்தான் இடை"
           </td>
           <td style="padding: 12px 14px; text-align: center; white-space: nowrap;">
-            <a href="tharam-12.html" class="tag" style="padding: 4px 10px; border-radius: 12px; background: rgba(212,175,55,0.1); border: 1px solid var(--border-gold); text-decoration: none; font-size: 0.78rem;">
+            <a href="tharam-12.html" class="tag" style="padding: 4px 6px; background: transparent; border: none; text-decoration: none; font-size: 0.8rem; color: var(--gold-bright);">
               பயிற்சி காண்க <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </td>
@@ -1202,7 +1202,7 @@
     <div id="visualCinemaSpotlight" style="background: linear-gradient(135deg, rgba(17, 24, 39, 0.95), rgba(30, 41, 59, 0.92)); border: 1.5px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 24px; margin-bottom: 28px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
         <div>
-          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(56,189,248,0.15); color: #38bdf8; border: 1px solid rgba(56,189,248,0.35); padding: 3px 12px; border-radius: 12px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase;">
+          <div style="display: inline-flex; align-items: center; gap: 6px; color: #38bdf8; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; text-shadow: 0 1px 4px #000;">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg> காட்சி &amp; காணொளி வழி அதிவேகக் கற்றல் (Visual &amp; Video Mastery)
           </div>
           <h3 style="color: #fff; font-size: 1.3rem; font-weight: 800; margin: 8px 0 4px 0;">வாழ்வியல் நெறி சிறப்புக் குறும்படங்கள் (Micro-Films)</h3>
@@ -1215,10 +1215,10 @@
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
         <!-- Card 1 -->
-        <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+        <div style="background: transparent; border: none; overflow: hidden; display: flex; flex-direction: column;">
           <div style="position: relative; height: 160px; overflow: hidden;">
             <img src="assets/images/lessons/dharma/dharma_05_annadhanam_guest_feeding.jpg" alt="புலால் உண்ணாமை &amp; அஹிம்சை" style="width: 100%; height: 100%; object-fit: cover;">
-            <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #4ade80; border: 1px solid rgba(74,222,128,0.4); font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 8px;">தரம் 1-4 • பருவம் 1</span>
+            <span style="position: absolute; top: 10px; left: 10px; color: #4ade80; text-shadow: 0 1px 4px #000; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 8px;">தரம் 1-4 • பருவம் 1</span>
             <span style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px;">42s Clip</span>
           </div>
           <div style="padding: 14px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
@@ -1234,10 +1234,10 @@
         </div>
 
         <!-- Card 2 -->
-        <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+        <div style="background: transparent; border: none; overflow: hidden; display: flex; flex-direction: column;">
           <div style="position: relative; height: 160px; overflow: hidden;">
             <img src="assets/images/lessons/industrious_diligent_artisan.jpg" alt="மடியின்மை &amp; முயற்சி" style="width: 100%; height: 100%; object-fit: cover;">
-            <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #fbbf24; border: 1px solid rgba(251,191,36,0.4); font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 8px;">தரம் 5-8 • பருவம் 2</span>
+            <span style="position: absolute; top: 10px; left: 10px; color: #fbbf24; text-shadow: 0 1px 4px #000; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 8px;">தரம் 5-8 • பருவம் 2</span>
             <span style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px;">38s Clip</span>
           </div>
           <div style="padding: 14px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
@@ -1253,10 +1253,10 @@
         </div>
 
         <!-- Card 3 -->
-        <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+        <div style="background: transparent; border: none; overflow: hidden; display: flex; flex-direction: column;">
           <div style="position: relative; height: 160px; overflow: hidden;">
             <img src="assets/images/lessons/grade9_body_is_temple.jpg" alt="பொச்சாவாமை &amp; விழிப்புணர்வு" style="width: 100%; height: 100%; object-fit: cover;">
-            <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #38bdf8; border: 1px solid rgba(56,189,248,0.4); font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 8px;">தரம் 9-10 • பருவம் 3</span>
+            <span style="position: absolute; top: 10px; left: 10px; color: #38bdf8; text-shadow: 0 1px 4px #000; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 8px;">தரம் 9-10 • பருவம் 3</span>
             <span style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px;">40s Clip</span>
           </div>
           <div style="padding: 14px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
@@ -1272,10 +1272,10 @@
         </div>
 
         <!-- Card 4 -->
-        <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+        <div style="background: transparent; border: none; overflow: hidden; display: flex; flex-direction: column;">
           <div style="position: relative; height: 160px; overflow: hidden;">
             <img src="assets/images/lessons/harvesting_family_dharma.jpg" alt="உன்னத இல்லறம் வழி முக்தி" style="width: 100%; height: 100%; object-fit: cover;">
-            <span style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #c084fc; border: 1px solid rgba(192,132,252,0.4); font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 8px;">தரம் 11-12 • பருவம் 4</span>
+            <span style="position: absolute; top: 10px; left: 10px; color: #c084fc; text-shadow: 0 1px 4px #000; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 8px;">தரம் 11-12 • பருவம் 4</span>
             <span style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px;">Full Film</span>
           </div>
           <div style="padding: 14px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
@@ -1299,7 +1299,7 @@
     <section id="grihasthaSanctuary" style="margin-top: 50px; margin-bottom: 40px;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; border-bottom: 2px solid rgba(45, 212, 191, 0.3); padding-bottom: 14px;">
         <div>
-          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(45,212,191,0.15); color: #2dd4bf; border: 1px solid rgba(45,212,191,0.35); padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">
+          <div style="display: inline-flex; align-items: center; gap: 6px; color: #2dd4bf; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; text-shadow: 0 1px 4px #000;">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg> இல்லற தர்ம சாதனா மையம் • GRIHASTHA DHARMA SANCTUARY
           </div>
           <h2 style="color: #ffffff; font-size: 1.6rem; font-weight: 800; margin: 8px 0 4px 0;">
@@ -1350,7 +1350,7 @@
     <div id="grihasthaTracker" class="dharma-hub-card">
       <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
         <div>
-          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(45,212,191,0.15); color: #2dd4bf; border: 1px solid rgba(45,212,191,0.35); padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">
+          <div style="display: inline-flex; align-items: center; gap: 6px; color: #2dd4bf; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; text-shadow: 0 1px 4px #000;">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg> இல்லற தர்ம சாதனா மையம் • DAILY GRIHASTHA HABIT TRACKER
           </div>
           <h2 style="color: #ffffff; font-size: 1.5rem; font-weight: 800; margin: 8px 0 6px 0;">
@@ -1363,15 +1363,15 @@
 
         <!-- Metric Counter Badges -->
         <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
-          <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(45,212,191,0.4); border-radius: 12px; padding: 10px 18px; text-align: center; min-width: 110px;">
+          <div style="background: transparent; border: none; padding: 6px 12px; text-align: center; min-width: 100px;">
             <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">இன்றைய தர்ம நிறைவு</div>
             <div id="dharmaScoreDisplay" style="font-size: 1.6rem; font-weight: 800; color: #2dd4bf;">0%</div>
           </div>
-          <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(251,191,36,0.4); border-radius: 12px; padding: 10px 18px; text-align: center; min-width: 110px;">
+          <div style="background: transparent; border: none; padding: 6px 12px; text-align: center; min-width: 100px;">
             <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">தொடர் சாதனை</div>
             <div id="dharmaStreakDisplay" style="font-size: 1.6rem; font-weight: 800; color: #fbbf24;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 3 4.5 4.5 7 1.5 2.5 1.5 5.5 0 8s-4 4-6.5 4c-3 0-5.5-2.5-5.5-6 0-3.5 2-6 4-8.5.5 1.5 1.5 2.5 2.5 2.5.5-2 .5-4.5 1-7z"/></svg> 1 நாள்</div>
           </div>
-          <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(192,132,252,0.4); border-radius: 12px; padding: 10px 18px; text-align: center; min-width: 140px;">
+          <div style="background: transparent; border: none; padding: 6px 12px; text-align: center; min-width: 100px;">
             <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">இல்லறப் பட்டயம்</div>
             <div id="dharmaBadgeDisplay" style="font-size: 0.95rem; font-weight: 700; color: #c084fc; margin-top: 4px;">தர்ம சாதகர்</div>
           </div>
@@ -1450,7 +1450,7 @@
           <h3 style="color: #fbbf24; font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
             <span><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg></span><span>சான்றாண்மை இல்லறப் பண்புகள் (Domestic Virtues Assessment)</span>
           </h3>
-          <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 18px; margin-bottom: 16px;">
+          <div style="background: transparent; border: none; padding: 6px 0; margin-bottom: 16px;">
             
             <!-- Virtue 1: Non-anger -->
             <div style="margin-bottom: 18px;">
@@ -1516,7 +1516,7 @@
       </div>
 
       <!-- 30-Day Visual Sadhana Streak Calendar -->
-      <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(45,212,191,0.2);">
+      <div style="margin-top: 24px; padding-top: 20px; ">
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
           <div style="display: flex; align-items: center; gap: 8px;">
             <span style="font-size: 1.1rem;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
@@ -1532,16 +1532,16 @@
         <div id="dharmaCalendarGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(32px, 1fr)); gap: 8px; margin-bottom: 10px;">
           <!-- Dynamically populated 30 days -->
         </div>
-        <div id="calendarDayDetail" style="background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 14px; font-size: 0.82rem; color: #cbd5e1; display: none;">
+        <div id="calendarDayDetail" style="background: transparent; border: none; padding: 10px 0; font-size: 0.82rem; color: #cbd5e1; display: none;">
           <!-- Dynamic details on click -->
         </div>
       </div>
     </div>
 
     <!-- TVA Dharmic Living Ethics & Asarakkovai Gateway Card -->
-    <div style="background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(45, 212, 191, 0.35); border-radius: 16px; padding: 20px 24px; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.35); backdrop-filter: blur(12px);">
+    <div style="background: transparent; border: none; padding: 16px 0; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: none;">
       <div style="display: flex; align-items: center; gap: 16px;">
-        <div style="width: 52px; height: 52px; border-radius: 12px; background: rgba(45, 212, 191, 0.15); border: 1px solid rgba(45, 212, 191, 0.4); display: flex; align-items: center; justify-content: center; color: #2dd4bf; flex-shrink: 0;">
+        <div style="width: 52px; height: 52px; border: none; display: flex; align-items: center; justify-content: center; color: #2dd4bf; flex-shrink: 0; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.8));">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px;"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </div>
         <div>
@@ -1568,7 +1568,7 @@
     <div id="familyCharter" class="dharma-hub-card">
       <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 14px; margin-bottom: 22px;">
         <div>
-          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(212,175,55,0.15); color: #d4af37; border: 1px solid rgba(212,175,55,0.35); padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">
+          <div style="display: inline-flex; align-items: center; gap: 6px; color: #d4af37; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; text-shadow: 0 1px 4px #000;">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/><line x1="8" y1="7" x2="14" y2="7"/><line x1="8" y1="11" x2="12" y2="11"/></svg> தலைமுறை சான்றாண்மைச் சாசனம் • NOBLE LIVING CHARTER
           </div>
           <h2 style="color: #ffffff; font-size: 1.5rem; font-weight: 800; margin: 8px 0 6px 0;">
@@ -1585,7 +1585,7 @@
       </div>
 
       <!-- Charter Customization Input Form -->
-      <div class="no-print" style="background: rgba(0,0,0,0.3); border: 1px solid rgba(212,175,55,0.25); border-radius: 12px; padding: 18px; margin-bottom: 24px;">
+      <div class="no-print" style="background: transparent; border: none; padding: 8px 0; margin-bottom: 24px;">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px;">
           <div>
             <label for="charterHomeName" style="color: #fbbf24; font-size: 0.84rem; font-weight: 700; display: block; margin-bottom: 4px;">
@@ -1675,35 +1675,35 @@
           </div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
             
-            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+            <div class="charter-vow-card" style="background: transparent; border: none; padding: 10px 0;">
               <strong style="color: #2dd4bf; font-size: 0.9rem; display: block; margin-bottom: 3px;">1. வாய்மையும் இன்சொல்லும்</strong>
               <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
                 எங்கள் இல்லத்தினுள் எப்போதும் பொய்மையும் கடுஞ்சொற்களும் புகாது; அனைவரிடமும் இன்முகத்தோடு கூடிய உண்மையும் கனிவுமே எங்கள் சொல்லாக இருக்கும்.
               </div>
             </div>
 
-            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+            <div class="charter-vow-card" style="background: transparent; border: none; padding: 10px 0;">
               <strong style="color: #38bdf8; font-size: 0.9rem; display: block; margin-bottom: 3px;">2. விருந்தோம்பலும் பசிப்பிணி போக்கலும்</strong>
               <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
                 எங்கள் இல்லம் நாடி வருவோருக்கு இனிய உணவும் அடைக்கலமும் வழங்குவோம். பசித்தவருக்கு உணவளித்து மகிழ்வதே எங்கள் இல்லத்தின் தலையாய செல்வம்.
               </div>
             </div>
 
-            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+            <div class="charter-vow-card" style="background: transparent; border: none; padding: 10px 0;">
               <strong style="color: #fbbf24; font-size: 0.9rem; display: block; margin-bottom: 3px;">3. சினமின்மையும் பரஸ்பர மன்னிப்பும்</strong>
               <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
                 கோபம் என்னும் கொடுந்தீயை எங்கள் உள்ளத்திலும் இல்லத்திலும் எரிய விடமாட்டோம். ஒருவருக்கொருவர் விட்டுக் கொடுத்து அமைதிப் பூங்காவாய் வாழ்வோம்.
               </div>
             </div>
 
-            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+            <div class="charter-vow-card" style="background: transparent; border: none; padding: 10px 0;">
               <strong style="color: #c084fc; font-size: 0.9rem; display: block; margin-bottom: 3px;">4. பெற்றோர் போற்றுதலும் சால்பும்</strong>
               <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
                 பெற்றோருக்கும் முதியோருக்கும் வாழ்நாள் முழுவதும் பக்தியோடு பணிவிடை ஆற்றுவோம். சான்றாண்மை நற்பண்புகளால் எங்கள் குலப் பெருமையை உலகிற்கு உயர்த்துவோம்.
               </div>
             </div>
 
-            <div class="charter-vow-card" style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 14px;">
+            <div class="charter-vow-card" style="background: transparent; border: none; padding: 10px 0;">
               <strong style="color: #2dd4bf; font-size: 0.9rem; display: block; margin-bottom: 3px;">5. இல்லறத்தின் வழியே நிர்வாணம்</strong>
               <div style="color: #e2e8f0; font-size: 0.82rem; line-height: 1.45;">
                 சுயநலமற்ற தியாக அன்பால் குடும்பக் கடமைகளை ஈஸ்வர அர்ப்பணமாய் ஆற்றி, இல்லறத்தின் வழியே மிகவேகமாக ஆன்ம முக்தியையும் பேரின்பத்தையும் அடைவோம்!
@@ -1714,7 +1714,7 @@
         </div>
 
         <!-- Sacred Thirukkural Inscription -->
-        <div class="charter-verse-box" style="position: relative; z-index: 2; background: rgba(0,0,0,0.4); border-left: 4px solid #d4af37; border-radius: 8px; padding: 14px 18px; margin-bottom: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+        <div class="charter-verse-box" style="position: relative; z-index: 2; background: transparent; border: none; padding: 10px 0; margin-bottom: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
           <div>
             <div style="color: #d4af37; font-size: 0.82rem; font-weight: 700; text-transform: uppercase;">திருக்குறள் 49 (அதிகாரம் 5: இல்வாழ்க்கை)</div>
             <div style="color: #ffffff; font-size: 0.94rem; font-weight: 700; margin-top: 3px; font-style: italic;">
@@ -1732,15 +1732,15 @@
         <!-- Signature Block -->
         <div style="position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; border-top: 1px dashed rgba(212,175,55,0.4); padding-top: 18px;">
           <div style="text-align: center; min-width: 170px;">
-            <div style="height: 35px; border-bottom: 1px solid rgba(255,255,255,0.3); margin-bottom: 6px;"></div>
+            <div style="height: 35px;  margin-bottom: 6px;"></div>
             <div style="font-size: 0.82rem; color: #cbd5e1; font-weight: 600;">இல்லத்தலைவர் / தலைவி கையொப்பம்</div>
           </div>
           <div style="text-align: center; min-width: 170px;">
-            <div style="height: 35px; border-bottom: 1px solid rgba(255,255,255,0.3); margin-bottom: 6px;"></div>
+            <div style="height: 35px;  margin-bottom: 6px;"></div>
             <div style="font-size: 0.82rem; color: #cbd5e1; font-weight: 600;">புதல்வர்கள் கையொப்பம்</div>
           </div>
           <div style="text-align: center; min-width: 150px;">
-            <div id="charterDateDisplay" style="height: 35px; display: flex; align-items: flex-end; justify-content: center; font-size: 0.9rem; color: #fbbf24; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.3); margin-bottom: 6px;"></div>
+            <div id="charterDateDisplay" style="height: 35px; display: flex; align-items: flex-end; justify-content: center; font-size: 0.9rem; color: #fbbf24; font-weight: 700;  margin-bottom: 6px;"></div>
             <div style="font-size: 0.82rem; color: #cbd5e1; font-weight: 600;">சாசனப் பிரகடன நாள்</div>
           </div>
         </div>
@@ -1755,11 +1755,11 @@
     <!-- ============================================================== -->
     <!-- 3. 18 SIDDHARS TRADITION & SIDDHA HERBAL WELLNESS              -->
     <!-- ============================================================== -->
-    <section id="siddhaLifestyle" style="margin-top: 50px; margin-bottom: 40px; background: rgba(11, 18, 33, 0.85); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 18px; padding: 28px 24px; box-shadow: 0 12px 35px rgba(0,0,0,0.5); backdrop-filter: blur(12px);">
+    <section id="siddhaLifestyle" style="margin-top: 50px; margin-bottom: 40px; background: transparent; border: none; padding: 10px 0; box-shadow: none;">
       
       <!-- Section Header -->
       <div style="margin-bottom: 24px;">
-        <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">
+        <div style="display: inline-flex; align-items: center; gap: 6px; color: #34d399; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; text-shadow: 0 1px 4px #000;">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> தமிழ் இணையக் கல்விக்கழக (TVA) ஆய்வு நெறி • தத்துவ &amp; இயற்கை மருத்துவக் களஞ்சியம்
         </div>
         <h2 style="color: #ffffff; font-size: 1.65rem; font-weight: 800; margin: 10px 0 6px 0;">
@@ -1781,7 +1781,7 @@
         </h3>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
           
-          <div style="background: rgba(14, 23, 42, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
+          <div style="background: transparent; border: none; padding: 10px 4px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
               <strong style="color: #38bdf8; font-size: 1.05rem;">வாதம் (Vaatham)</strong>
               <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 2px 8px; border-radius: 6px; font-size: 0.75rem; font-weight: 700;">காற்று + ஆகாயம்</span>
@@ -1794,7 +1794,7 @@
             </div>
           </div>
 
-          <div style="background: rgba(14, 23, 42, 0.7); border: 1px solid rgba(251, 191, 36, 0.3); border-radius: 12px; padding: 18px;">
+          <div style="background: transparent; border: none; padding: 10px 4px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
               <strong style="color: #fbbf24; font-size: 1.05rem;">பித்தம் (Pitham)</strong>
               <span style="background: rgba(251, 191, 36, 0.15); color: #fbbf24; padding: 2px 8px; border-radius: 6px; font-size: 0.75rem; font-weight: 700;">அக்னி (தீ)</span>
@@ -1807,7 +1807,7 @@
             </div>
           </div>
 
-          <div style="background: rgba(14, 23, 42, 0.7); border: 1px solid rgba(45, 212, 191, 0.3); border-radius: 12px; padding: 18px;">
+          <div style="background: transparent; border: none; padding: 10px 4px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
               <strong style="color: #2dd4bf; font-size: 1.05rem;">கபம் / சிலேத்துமம் (Kabam)</strong>
               <span style="background: rgba(45, 212, 191, 0.15); color: #2dd4bf; padding: 2px 8px; border-radius: 6px; font-size: 0.75rem; font-weight: 700;">நீர் + நிலம்</span>
@@ -1830,56 +1830,56 @@
         </h3>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px;">
           
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 10px; padding: 14px;">
+          <div style="background: transparent; border: none; padding: 8px 4px;">
             <div style="color: #34d399; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">1. வல்லாரை (Brahmi)</div>
             <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
               சரஸ்வதி மூலிகை; மூளை நரம்புகளைப் பலப்படுத்தி அபார நினைவாற்றலையும், மன ஒருமைப்பாட்டையும், நரம்புத் தளர்ச்சி நீக்கத்தையும் தரும்.
             </div>
           </div>
 
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 10px; padding: 14px;">
+          <div style="background: transparent; border: none; padding: 8px 4px;">
             <div style="color: #34d399; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">2. தூதுவளை (Singhavalli)</div>
             <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
               நுரையீரல் சளியை அகற்றி, இசைப் பயிற்சிக்கும் மந்திர உச்சாடனத்திற்கும் ஏற்ற கம்பீரக் குரல் வளத்தையும் பிராணாயாம மூச்சுத் திறனையும் பெருக்கும்.
             </div>
           </div>
 
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 10px; padding: 14px;">
+          <div style="background: transparent; border: none; padding: 8px 4px;">
             <div style="color: #34d399; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">3. முசுமுசுக்கை (Mukia)</div>
             <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
               சுவாச நாளங்களைத் தூய்மை செய்து, ஆஸ்துமா, மூக்கடைப்பு, ஒவ்வாமை மற்றும் தும்மல்களைக் குணப்படுத்தும் தலைசிறந்த சுவாச அருமருந்து.
             </div>
           </div>
 
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 10px; padding: 14px;">
+          <div style="background: transparent; border: none; padding: 8px 4px;">
             <div style="color: #34d399; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">4. திரிகடுகம் (சுக்கு, மிளகு, திப்பிலி)</div>
             <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
               பதினெண்கீழ்க்கணக்கு நீதி நூலுக்கும் பெயரான மூலிகை; செரிமான அக்னியைத் தூண்டி நச்சுக்கழிவுகளை (ஆமம்) வெளியேற்றும் த்ரிதோஷ அருமருந்து.
             </div>
           </div>
 
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 10px; padding: 14px;">
+          <div style="background: transparent; border: none; padding: 8px 4px;">
             <div style="color: #34d399; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">5. கடுக்காய் (Haritaki)</div>
             <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
               "தாயினும் மேலானது கடுக்காய்" — நஞ்சு நீக்கி, குடலை மலடின்றி சுத்திகரித்து நீண்ட ஆயுளையும் காயகற்ப பலத்தையும் வழங்கும் உன்னத கனி.
             </div>
           </div>
 
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 10px; padding: 14px;">
+          <div style="background: transparent; border: none; padding: 8px 4px;">
             <div style="color: #34d399; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">6. நிலவேம்பு (King of Bitters)</div>
             <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
               வைரஸ் காய்ச்சல்கள், டெங்கு, சிக்குன்குனியா போன்ற விஷக் காய்ச்சல்களை வேரறுத்து, ரத்தத்தில் வெள்ளை அணுக்களைப் பெருக்கும் கசப்பு வேந்தன்.
             </div>
           </div>
 
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 10px; padding: 14px;">
+          <div style="background: transparent; border: none; padding: 8px 4px;">
             <div style="color: #34d399; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">7. துளசி (Holy Basil)</div>
             <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
               பிராணவாயுவை உடலுக்கு வாரி வழங்கி, மன அழுத்தத்தைக் குறைத்து, ஆரா (Aura) ஆற்றலைத் தூய்மையாக்கும் பக்தி-மருத்துவ தெய்வீகத் தழை.
             </div>
           </div>
 
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 10px; padding: 14px;">
+          <div style="background: transparent; border: none; padding: 8px 4px;">
             <div style="color: #34d399; font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">8. கீழாநெல்லி (Stonebreaker)</div>
             <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
               கல்லீரலைப் பாதுகாத்து மஞ்சள் காமாலையை அறவே நீக்கும்; உடலின் அதிகப்படியான உஷ்ணத்தைத் தணித்து கண்களுக்குக் குளிர்ச்சி தரும்.
@@ -1898,7 +1898,7 @@
         <div class="tva-scholarly-table-wrapper" style="overflow-x: auto;">
           <table class="tva-scholarly-table" style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
             <thead>
-              <tr style="background: rgba(15, 23, 42, 0.9); color: var(--gold-bright); border-bottom: 2px solid rgba(212, 175, 55, 0.4);">
+              <tr style="background: transparent; color: var(--gold-bright);">
                 <th style="padding: 10px 14px; text-align: left;">எண்</th>
                 <th style="padding: 10px 14px; text-align: left;">சித்தர் திருநாமம்</th>
                 <th style="padding: 10px 14px; text-align: left;">முக்கிய அருள் படைப்புகள் &amp; மருத்துவ-யோகப் பங்களிப்பு</th>
@@ -1906,103 +1906,103 @@
               </tr>
             </thead>
             <tbody>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">1</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ அகத்தியர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">சித்த மருத்துவத்தின் முதல் குரு; தமிழ் இலக்கணம், அகத்தியர் நாடி சாஸ்திரம், வர்ம கலை.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">திருவனந்தபுரம் / அகத்தியர்கூடம்</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">2</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ திருமூலர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">அஷ்டாங்க யோகம், திருமந்திரம் (3,000 பாடல்கள்), காயகற்ப உடல் அழியாமைத் தத்துவம்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">சிதம்பரம் நடராஜர் ஆலயம்</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">3</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ போகர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">ரசவாதம், போகர் 7000, பழனி நவபாஷாண முருகப் பெருமான் திருவுருவம் வடித்தல்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">பழனி மலை முருகன் சந்நிதி</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">4</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ கோரக்கர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">கோரக்கர் சந்திர ரேகை, காயசித்தி மூலிகைகள், சித்த மருந்தியல் சூத்திரங்கள்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">பொய்கையூர் / வடலூர்</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">5</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ கொங்கணர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">கொங்கணர் வாக்கியம், வாசி யோகம், குண்டலினி அக்னி எழுப்பும் தத்துவம்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">திருப்பதி ஏழுமலையான் சந்நிதி</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">6</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ சிவவாக்கியர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">"நட்டகல்லும் பேசுமோ நாதன் உள் இருக்கையில்", புரட்சிகர அத்வைத ஞானப் பாடல்கள்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">கும்பகோணம்</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">7</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ இடைக்காடர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">இடைக்காடர் ஞான சூத்திரம், விண்வெளி பஞ்சபூத கிரக சஞ்சார சாஸ்திரம்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">திருவண்ணாமலை</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">8</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ சட்டைமுனி</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">சட்டைமுனி வாத காவியம், 1200 ஞான சூத்திரம், நவரத்தின வேதியியல்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">ஸ்ரீரங்கம் ரங்கநாதர் சந்நிதி</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">9</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ பாம்பாட்டிச் சித்தர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">பாம்பாட்டி சித்தர் பாடல்கள் ("ஆடுபாம்பே"), குண்டலினி சக்தியை பாம்பாக உருவகித்து எழுப்புதல்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">மருதமலை முருகன் சந்நிதி (கோவை)</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">10</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ குதம்பைச் சித்தர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">குதம்பைப் பாடல்கள், அகக்கண் விழிப்பு, மன அடக்கம், புறவேடங்களை மறுத்தல்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">மாயவரம் (மயிலாடுதுறை)</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">11</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ அழுகணிச் சித்தர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">அழுகணி சித்தர் பாடல்கள், பக்தி வைராக்கியம், இறைவனிடம் சரணாகதிக் கண்ணீர் சமர்ப்பணம்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">நாகப்பட்டினம்</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">12</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ கருவூரார்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">தஞ்சைப் பெரிய கோயில் பெருவுடையார் லிங்கப் பிரதிஷ்டை, கருவூரார் பூஜாவிதிகள்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">கரூர் / தஞ்சாவூர் பெரிய கோயில்</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">13</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ காலாங்கி நாதர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">போகரின் குருநாதர், சீன-தமிழக சித்த தத்துவங்களை இணைத்த ஞான குரு.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">காஞ்சிபுரம்</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">14</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ புலிப்பாணி</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">புலிப்பாணி ஜால சூத்திரம், மூலிகைப் பிரயோகங்கள், போகரின் முதன்மை சீடர்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">பழனி அடிவாரம்</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">15</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ தன்வந்திரி</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">மருத்துவக் கடவுள், மூலிகை தைலங்கள், விஷ முறிவு முறைகள், நாடி பரீட்சை.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">வைத்தீஸ்வரன் கோயில்</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">16</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ தேரையர்</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">தேரையர் சேகரிப்பு, பத்திய ஒழுக்க விதிகள், தலைநோய் அறுவை சிகிச்சை சூட்சுமங்கள்.</td>
                 <td style="padding: 10px 14px; color: #38bdf8;">தோரணமலை (தென்காசி)</td>
               </tr>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <tr >
                 <td style="padding: 10px 14px; color: var(--gold);">17</td>
                 <td style="padding: 10px 14px; font-weight: 700; color: #fff;">ஸ்ரீ உரோமரிஷி</td>
                 <td style="padding: 10px 14px; color: #cbd5e1;">உரோமரிஷி சூத்திரம் 500, கல்ப முறை, வானியல் ஞானம்.</td>
@@ -2020,7 +2020,7 @@
       </div>
 
       <!-- Part D: 8 Mystic Perfections (அட்டமா சித்திகள்) -->
-      <div style="background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 12px; padding: 18px 20px;">
+      <div style="background: transparent; border: none; padding: 12px 0;">
         <h4 style="color: var(--gold-bright); font-size: 1.05rem; font-weight: 800; margin: 0 0 10px 0; display: flex; align-items: center; gap: 8px;">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 3 4.5 4.5 7 1.5 2.5 1.5 5.5 0 8s-4 4-6.5 4c-3 0-5.5-2.5-5.5-6 0-3.5 2-6 4-8.5.5 1.5 1.5 2.5 2.5 2.5.5-2 .5-4.5 1-7z"/></svg> யோக சாதனையால் விளையும் அட்டமா சித்திகள் (8 Mystic Accomplishments)
         </h4>
@@ -2041,10 +2041,10 @@
         <!-- ============================================================== -->
     <!-- RELATED VIDYAPEETHS & ADVANCED STUDY PORTALS                   -->
     <!-- ============================================================== -->
-    <section id="relatedPortals" style="margin-top: 50px; margin-bottom: 40px; background: rgba(11, 18, 33, 0.85); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 18px; padding: 28px 24px; box-shadow: 0 12px 35px rgba(0,0,0,0.5);">
+    <section id="relatedPortals" style="margin-top: 50px; margin-bottom: 40px; background: transparent; border: none; padding: 10px 0; box-shadow: none;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 22px;">
         <div>
-          <div style="display: inline-flex; align-items: center; gap: 6px; background: rgba(212,175,55,0.15); color: var(--gold-bright); border: 1px solid rgba(212,175,55,0.35); padding: 3px 12px; border-radius: 12px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase;">
+          <div style="display: inline-flex; align-items: center; gap: 6px; color: var(--gold-bright); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; text-shadow: 0 1px 4px #000;">
             <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg> இணைப்புக் கல்வித் தளங்கள் • RELATED LEARNING PORTALS
           </div>
           <h3 style="color: #ffffff; font-size: 1.4rem; font-weight: 800; margin: 6px 0 2px 0;">
@@ -2060,11 +2060,11 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
         
         <!-- Portal Card 1: Online School -->
-        <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="background: transparent; border: none; padding: 12px 4px; display: flex; flex-direction: column; justify-content: space-between;">
           <div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
               <span style="font-size: 1.8rem;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></span>
-              <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 6px;">Academy</span>
+              <span style="color: #38bdf8; font-size: 0.74rem; font-weight: 700; text-shadow: 0 1px 4px #000;">Academy</span>
             </div>
             <h4 style="color: #ffffff; font-size: 1.1rem; font-weight: 800; margin-bottom: 6px;">குருகுல இணையப் பள்ளி</h4>
             <p style="color: #cbd5e1; font-size: 0.85rem; line-height: 1.5; margin: 0;">21-ஆம் நூற்றாண்டு நவீன மாணவர் தளம்: அறிவியல்-வேத சங்கமம், போமோடோரோ அரங்கம் &amp; உடனடிச் சான்றிதழ்.</p>
@@ -2075,11 +2075,11 @@
         </div>
 
         <!-- Portal Card 2: Higher Studies -->
-        <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="background: transparent; border: none; padding: 12px 4px; display: flex; flex-direction: column; justify-content: space-between;">
           <div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
               <span style="font-size: 1.8rem;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></span>
-              <span style="background: rgba(212, 175, 55, 0.15); color: var(--gold-bright); border: 1px solid rgba(212, 175, 55, 0.3); font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 6px;">Post-Grade 12</span>
+              <span style="color: var(--gold-bright); font-size: 0.74rem; font-weight: 700; text-shadow: 0 1px 4px #000;">Post-Grade 12</span>
             </div>
             <h4 style="color: #ffffff; font-size: 1.1rem; font-weight: 800; margin-bottom: 6px;">வேதாந்த வித்யாபீடம்</h4>
             <p style="color: #cbd5e1; font-size: 0.85rem; line-height: 1.5; margin: 0;">உயர்கல்வித் தளம்: பிரஸ்தானத்ரயம் (உபநிடதம், கீதை, பிரம்ம சூத்திரம்), மெய்கண்ட சாத்திரங்கள் &amp; தர்க்கவியல்.</p>
@@ -2090,11 +2090,11 @@
         </div>
 
         <!-- Portal Card 3: Full Syllabus -->
-        <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="background: transparent; border: none; padding: 12px 4px; display: flex; flex-direction: column; justify-content: space-between;">
           <div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
               <span style="font-size: 1.8rem;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/><line x1="8" y1="7" x2="14" y2="7"/><line x1="8" y1="11" x2="12" y2="11"/></svg></span>
-              <span style="background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 6px;">Full WBS</span>
+              <span style="color: #34d399; font-size: 0.74rem; font-weight: 700; text-shadow: 0 1px 4px #000;">Full WBS</span>
             </div>
             <h4 style="color: #ffffff; font-size: 1.1rem; font-weight: 800; margin-bottom: 6px;">விரிவான பாடத்திட்டம்</h4>
             <p style="color: #cbd5e1; font-size: 0.85rem; line-height: 1.5; margin: 0;">தொடக்க நிலை, இடைநிலை, உயர்நிலை மாணவர்களுக்கான முழுமையான WBS முறைசார் சைவ சித்தாந்தப் பாடத்திட்டம்.</p>
@@ -2105,11 +2105,11 @@
         </div>
 
         <!-- Portal Card 4: Patanjali Self-Assessment -->
-        <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(168, 85, 247, 0.35); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="background: transparent; border: none; padding: 12px 4px; display: flex; flex-direction: column; justify-content: space-between;">
           <div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
               <span style="font-size: 1.8rem;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><path d="M4 18c0-3.5 3.5-5 8-5s8 1.5 8 5"/><path d="M6 14l2 4 4-2 4 2 2-4"/></svg></span>
-              <span style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 6px;">Self-Audit</span>
+              <span style="color: #c084fc; font-size: 0.74rem; font-weight: 700; text-shadow: 0 1px 4px #000;">Self-Audit</span>
             </div>
             <h4 style="color: #ffffff; font-size: 1.1rem; font-weight: 800; margin-bottom: 6px;">பதஞ்சலி 7-படிநிலை மதிப்பீடு</h4>
             <p style="color: #cbd5e1; font-size: 0.85rem; line-height: 1.5; margin: 0;">சுபேச்சை முதல் துரியகா வரை 7 ஆன்ம விழிப்புணர்வு நிலைகளை உடனுக்குடன் கணக்கிடும் நவீன சுய-மதிப்பீட்டுக் கருவி.</p>
@@ -2330,9 +2330,9 @@
         }
 
         const isToday = i === 0;
-        const todayStyle = isToday ? 'box-shadow: 0 0 10px rgba(56,189,248,0.7); border: 2px solid #38bdf8;' : '';
+        const todayStyle = isToday ? 'box-shadow: 0 0 12px rgba(56,189,248,0.9);' : '';
 
-        html += '<div onclick="showDayDharmaDetail(\'' + dateStr + '\')" title="' + title + '" style="background: ' + bg + '; border: 1px solid ' + border + '; ' + todayStyle + ' border-radius: 8px; padding: 6px 2px; text-align: center; cursor: pointer; transition: transform 0.15s ease;" onmouseover="this.style.transform=\'scale(1.08)\'" onmouseout="this.style.transform=\'scale(1)\'">' +
+        html += '<div onclick="showDayDharmaDetail(\'' + dateStr + '\')" title="' + title + '" style="background: ' + bg + '; border: none; ' + todayStyle + ' border-radius: 8px; padding: 6px 2px; text-align: center; cursor: pointer; transition: transform 0.15s ease;" onmouseover="this.style.transform=\'scale(1.08)\'" onmouseout="this.style.transform=\'scale(1)\'">' +
           '<div style="font-size: 0.65rem; color: #94a3b8;">' + monthNum + '/' + dayNum + '</div>' +
           '<div style="font-size: 0.78rem; font-weight: 800; color: #ffffff; margin-top: 2px;">' + (entry ? (entry.score >= 90 ? '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' : entry.score + '%') : '·') + '</div>' +
         '</div>';
