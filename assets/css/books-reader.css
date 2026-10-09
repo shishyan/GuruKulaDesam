@@ -897,6 +897,657 @@
 }
 
 /* ========================================================================== */
+/* GURUKULA ONLINE CLASSROOM & 3-MONTH TRIMESTER SUITE STYLES                */
+/* ========================================================================== */
+
+.classroom-shell {
+  margin: 10px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Classroom Header Banner */
+.classroom-header-card {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.92) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.classroom-header-card::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.classroom-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.classroom-title-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+.classroom-sub-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: #38bdf8;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.classroom-main-title {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.classroom-term-desc {
+  color: var(--gold-soft);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.classroom-badges-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.classroom-chip {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.classroom-chip-gold {
+  background: rgba(212, 175, 55, 0.18);
+  border-color: rgba(212, 175, 55, 0.45);
+  color: var(--gold-bright);
+}
+
+.classroom-chip-btn {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.classroom-chip-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--gold);
+}
+
+/* Classroom Progress Bar & Stats */
+.classroom-progress-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+@media (max-width: 640px) {
+  .classroom-progress-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.classroom-progress-track {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.classroom-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #38bdf8 50%, var(--gold-bright) 100%);
+  border-radius: 6px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.classroom-progress-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.classroom-xp-badge-lg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25) 0%, rgba(184, 134, 11, 0.15) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  color: var(--gold-bright);
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* Classroom 4 Mode Navigation Tabs */
+.classroom-nav-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 16px;
+  scrollbar-width: thin;
+}
+
+.classroom-tab-btn {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.classroom-tab-btn:hover {
+  background: rgba(30, 41, 59, 0.8);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.classroom-tab-btn.active {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--gold-bright);
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.3);
+}
+
+.classroom-tab-badge {
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 0.74rem;
+  padding: 2px 7px;
+  border-radius: 6px;
+  color: var(--gold);
+}
+
+/* Panels */
+.classroom-panel {
+  display: none;
+  animation: fadeInPanel 0.25s ease forwards;
+}
+
+.classroom-panel.active {
+  display: block;
+}
+
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 12-Week Trimester Roadmap Styles */
+.trimester-roadmap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trimester-month-card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.trimester-month-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 16px;
+}
+
+.trimester-month-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trimester-checkpoint-badge {
+  background: rgba(16, 185, 129, 0.18);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #34d399;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.trimester-weeks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.trimester-week-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+
+.trimester-week-card:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+  background: rgba(30, 41, 59, 0.85);
+}
+
+.trimester-week-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.trimester-week-title {
+  color: #38bdf8;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.trimester-week-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.trimester-week-status.completed {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.2);
+}
+
+.week-lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.week-lesson-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.15s ease;
+}
+
+.week-lesson-row:hover {
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.week-lesson-row.is-done {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.week-lesson-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.week-lesson-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+  color: transparent;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.week-lesson-check.checked {
+  background: #10b981;
+  border-color: #10b981;
+  color: #ffffff;
+}
+
+.week-lesson-text {
+  font-size: 0.83rem;
+  color: #cbd5e1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.week-lesson-row.is-done .week-lesson-text {
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+.week-lesson-open-btn {
+  font-size: 0.75rem;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 4px;
+  padding: 3px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.week-lesson-open-btn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* Student Progress & Mastery Tracker Grid */
+.mastery-overview-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.mastery-metric-card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.mastery-metric-num {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--gold-bright);
+  margin-bottom: 4px;
+}
+
+.mastery-metric-label {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.mastery-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.mastery-book-card {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.mastery-book-card.fully-completed {
+  border-color: rgba(212, 175, 55, 0.6);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.8) 100%);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.mastery-book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mastery-book-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.mastery-dots-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.mastery-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.mastery-dot.done {
+  background: #10b981;
+  border-color: #34d399;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+}
+
+.mastery-badge-box {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.mastery-badge-box.unlocked {
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: var(--gold-bright);
+}
+
+/* Diploma / Graduation Certificate */
+.diploma-outer-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.diploma-certificate-shell {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 10px solid #b8860b;
+  outline: 3px solid #ffd700;
+  outline-offset: -7px;
+  border-radius: 12px;
+  padding: 36px 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8), inset 0 0 50px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.diploma-top-emblem {
+  font-size: 2.2rem;
+  color: var(--gold-bright);
+  margin-bottom: 8px;
+}
+
+.diploma-inst-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.diploma-inst-sub {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.diploma-cert-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 16px 0 10px 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  font-family: 'Mukta Malar', serif;
+}
+
+.diploma-citation-intro {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.diploma-student-name-box {
+  display: inline-block;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--gold-bright);
+  border-bottom: 2px dashed rgba(212, 175, 55, 0.6);
+  padding: 4px 24px;
+  margin: 8px 0 18px 0;
+  font-family: 'Mukta Malar', serif;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.diploma-citation-body {
+  font-size: 0.96rem;
+  line-height: 1.8;
+  color: #e2e8f0;
+  max-width: 720px;
+  margin: 0 auto 24px auto;
+}
+
+.diploma-seal-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.diploma-sign-col {
+  text-align: center;
+}
+
+.diploma-sign-line {
+  width: 140px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 8px auto 4px auto;
+}
+
+.diploma-sign-label {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.diploma-seal-stamp {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px double var(--gold-bright);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: rgba(212, 175, 55, 0.08);
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+/* ========================================================================== */
 /* TEACHER & STUDENT CLEAN PRINT STYLES (@media print)                        */
 /* ========================================================================== */
 @media print {
@@ -905,9 +1556,55 @@
   .context-top-bar,
   .mobile-hamburger-btn,
   .grade-switch-strip,
+  .classroom-header-card,
+  .classroom-nav-tabs,
   .books-shelf-grid,
   .reader-chapter-tabs,
   .subchapter-nav-strip,
+  .chapter-visuals-panel .carousel-top-bar,
+  .chapter-visuals-panel .carousel-thumbs-row,
+  .carousel-nav-btn,
+  .lesson-speech-btn,
+  .moola-reader-actions-row,
+  .chapter-media-card,
+  .student-chapter-deck .chapter-quiz-wrap,
+  .student-chapter-deck .chapter-note-box,
+  .student-chapter-deck button,
+  .site-footer,
+  .art-lightbox-modal,
+  .strip-grades-mini-grid {
+    display: none !important;
+  }
+
+  body.printing-diploma * {
+    visibility: hidden;
+  }
+  body.printing-diploma .diploma-certificate-shell,
+  body.printing-diploma .diploma-certificate-shell * {
+    visibility: visible;
+  }
+  body.printing-diploma .diploma-certificate-shell {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: 8pt solid #b8860b !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    box-shadow: none !important;
+    page-break-after: avoid;
+  }
+  body.printing-diploma .diploma-certificate-shell .diploma-inst-name,
+  body.printing-diploma .diploma-certificate-shell .diploma-cert-title,
+  body.printing-diploma .diploma-certificate-shell .diploma-student-name-box {
+    color: #78350f !important;
+    text-shadow: none !important;
+  }
+  body.printing-diploma .diploma-certificate-shell .diploma-citation-body,
+  body.printing-diploma .diploma-certificate-shell .diploma-inst-sub {
+    color: #1f2937 !important;
+  }
   .chapter-visuals-panel .carousel-top-bar,
   .chapter-visuals-panel .carousel-thumbs-row,
   .carousel-nav-btn,
