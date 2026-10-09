@@ -1,3 +1,73 @@
+// Live Server Rapid Reload Guard (prevents infinite refresh loops from background file writers)
+(function () {
+  try {
+    const RELOAD_KEY = 'gkd_last_reload_ts';
+    const RELOAD_COUNT_KEY = 'gkd_rapid_reload_count';
+    const now = Date.now();
+    const lastReload = parseInt(sessionStorage.getItem(RELOAD_KEY) || '0', 10);
+    let rapidCount = parseInt(sessionStorage.getItem(RELOAD_COUNT_KEY) || '0', 10);
+
+    if (now - lastReload < 6000) {
+      rapidCount++;
+    } else {
+      rapidCount = 0;
+    }
+    sessionStorage.setItem(RELOAD_KEY, now.toString());
+    sessionStorage.setItem(RELOAD_COUNT_KEY, rapidCount.toString());
+
+    // If page has reloaded 2+ times rapidly within 6 seconds, suppress WebSocket reload signals
+    if (rapidCount >= 2) {
+      console.warn('⚠️ [GKD Guard] Rapid reload loop detected from live-server or file watchers. Freezing WebSocket auto-reload.');
+      const OriginalWebSocket = window.WebSocket;
+      if (OriginalWebSocket) {
+        window.WebSocket = function (url, protocols) {
+          const ws = new OriginalWebSocket(url, protocols);
+          const origAddEventListener = ws.addEventListener.bind(ws);
+
+          ws.addEventListener = function (type, listener, options) {
+            if (type === 'message') {
+              const wrapped = function (event) {
+                if (event && event.data === 'reload') {
+                  const rCount = parseInt(sessionStorage.getItem(RELOAD_COUNT_KEY) || '0', 10);
+                  if (rCount >= 2) {
+                    console.warn('🛑 [GKD Guard] Suppressed Live Server reload signal to break infinite loop.');
+                    return;
+                  }
+                }
+                listener.call(this, event);
+              };
+              return origAddEventListener(type, wrapped, options);
+            }
+            return origAddEventListener(type, listener, options);
+          };
+
+          let userOnMessage = null;
+          Object.defineProperty(ws, 'onmessage', {
+            get() { return userOnMessage; },
+            set(fn) {
+              userOnMessage = fn;
+              origAddEventListener('message', function (event) {
+                if (event && event.data === 'reload') {
+                  const rCount = parseInt(sessionStorage.getItem(RELOAD_COUNT_KEY) || '0', 10);
+                  if (rCount >= 2) {
+                    console.warn('🛑 [GKD Guard] Suppressed Live Server onmessage reload signal.');
+                    return;
+                  }
+                }
+                if (typeof fn === 'function') fn.call(ws, event);
+              });
+            }
+          });
+
+          return ws;
+        };
+      }
+    }
+  } catch (e) {
+    // sessionStorage might be restricted in some browser contexts
+  }
+})();
+
 // Modern Professional SVG Icon System
 const GKD_ICONS = {
   home: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>',
