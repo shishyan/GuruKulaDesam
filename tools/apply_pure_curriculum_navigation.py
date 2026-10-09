@@ -1,4 +1,6 @@
-import os, re, glob
+import os, re, glob, sys
+
+sys.stdout.reconfigure(encoding='utf-8')
 
 ROOT = r"c:\GitHub\Gurukuladesam"
 
@@ -24,14 +26,6 @@ PURE_CURRICULUM_STRIP_BAR = """  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL - CUR
         <a href="index.html" class="strip-item" data-tooltip="பாடத்திட்ட முகப்பு">
           <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></span>
           <span class="strip-item-label">பாடத்திட்ட முகப்பு</span>
-        </a>
-      </div>
-
-      <!-- சேர்க்கை அரங்கம் (Admissions Desk) -->
-      <div class="strip-group" data-group="admissions">
-        <a href="admissions.html" class="strip-item" data-tooltip="மாணவர் சேர்க்கை (Admissions)">
-          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg></span>
-          <span class="strip-item-label">மாணவர் சேர்க்கை (Admissions)</span>
         </a>
       </div>
 

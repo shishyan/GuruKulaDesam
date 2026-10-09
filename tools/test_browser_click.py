@@ -160,32 +160,28 @@ def run_tests():
         assert page.locator('#tierPG').is_visible(), "PG tier should be visible under all"
         print("Degree filtering (UG, PG, All) verified successfully!")
 
-        # Test admissions.html as a parent
-        print("--- Testing admissions.html (Parent Journey) ---")
+        # Test admissions.html and admissions hidden across site
+        print("--- Testing Admissions Hidden & Zero-BS-Pitch Sanctuary Policy ---")
+        # 1. Verify admissions is hidden from left strip navigation
+        assert page.locator('.strip-nav-list a[href="admissions.html"]').count() == 0, "Admissions link must be hidden from left-strip nav"
+        
+        # 2. Verify admissions is hidden from grade switch strip in tharam-1.html
+        page.goto('http://localhost:8000/tharam-1.html', wait_until='networkidle')
+        assert page.locator('.grade-switch-strip a[href^="admissions.html"]').count() == 0, "Admissions button must be hidden from grade switch strip"
+
+        # 3. Verify zero commercial sales pitch on home page (index.html)
+        page.goto('http://localhost:8000/index.html', wait_until='networkidle')
+        assert page.locator('text=PARENT ADMISSIONS NOTICE').count() == 0, "Commercial admissions sales box must be removed from index.html"
+        assert page.locator('.hero-actions a[href="admissions.html"]').count() == 0, "No admissions button in hero banner"
+        print("index.html is free of commercial sales pitch!")
+
+        # 4. Verify admissions.html itself displays elevated 'Opening Soon' notification
         page.goto('http://localhost:8000/admissions.html', wait_until='networkidle')
-        assert page.locator('#admissionForm').is_visible(), "Admission form should be visible"
-        
-        # Fill form as parent
-        page.fill('#studentName', 'செந்தமிழ் செல்வன்')
-        page.fill('#studentDob', '2020-04-14')
-        page.fill('#studentAge', '6')
-        page.select_option('#studentGender', 'ஆண் (Male)')
-        page.select_option('#appliedGrade', 'Grade 1')
-        page.fill('#parentName', 'சுந்தரமூர்த்தி')
-        page.fill('#parentPhone', '+91 9876543210')
-        page.fill('#parentCity', 'கோயம்புத்தூர்')
-        
-        # Submit form
-        page.locator('.submit-admission-btn').click()
-        page.wait_for_timeout(300)
-        
-        card = page.locator('#admissionSuccessCard')
-        assert card.is_visible(), "Admission success card should be visible after submit"
-        roll = page.locator('#cardRollNo').text_content()
-        print(f"Generated Student Admission ID: {roll}")
-        assert 'GKD-2026-ADM-' in roll, f"Expected roll starting with GKD-2026-ADM-, got {roll}"
-        assert page.locator('#cardStudentName').text_content() == 'செந்தமிழ் செல்வன்'
-        print("Parent admission flow and card generation verified successfully!")
+        notice = page.locator('#admissionFormSection')
+        assert notice.is_visible(), "Admissions Opening Soon notice should be visible"
+        assert "தயாரிப்பு நிலையில் உள்ளது" in notice.text_content(), "Notice should state admissions are in preparation"
+        assert page.locator('#admissionForm').count() == 0, "Live application submit form should be disabled/hidden"
+        print("admissions.html dignified 'Opening Soon' sanctuary notice verified successfully!")
 
         # Test books.html
         print("--- Testing books.html ---")
