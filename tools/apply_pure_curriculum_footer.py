@@ -6,20 +6,20 @@ PURE_CURRICULUM_FOOTER = """  <footer class="site-footer" id="siteFooter">
     <div class="footer-container">
       <div class="footer-col">
         <h4>குரு குல ஆசிரமம் (Guru Kula Ashram)</h4>
-        <p>அனைத்து மெய்ஞ்ஞானக் கருத்துக்கள், திருமுறைகள், திருக்குறள், இறை இசை மற்றும் வாழ்வியல் தர்மங்கள் அனைத்தும் 12 தரப் பள்ளிப் பாடத்திட்டத்தின் 7 ஆசிரமப் பாடநூல்களுக்குள் ஒருங்கிணைக்கப்பட்டுள்ளன.</p>
+        <p>அனைத்து மெய்ஞ்ஞானக் கருத்துக்கள், திருமுறைகள், திருக்குறள், இறை இசை மற்றும் வாழ்வியல் தர்மங்கள் அனைத்தும் பள்ளிப் பாடத்திட்டம் (தரம் 1-12) மற்றும் உயர்கல்வி வித்யாபீடத்தின் (B.A., M.A., Ph.D.) 7 ஆசிரமப் பாடநூல்களுக்குள் ஒருங்கிணைக்கப்பட்டுள்ளன.</p>
         <p style="margin-top: 10px; color: var(--gold); font-weight: 600;">தரம் &rarr; 7 நூல்கள் &rarr; 49 அத்தியாயங்கள் &rarr; உட்பிரிவுகள் &rarr; விரிவான பாடங்கள்</p>
         <div style="margin-top: 14px; font-size: 0.84rem; color: #94a3b8; line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 12px;">
           <strong>மைய வளாகம்:</strong> 32, SSS Jaya Enclave, Kovaipudur, Coimbatore, 641042, Tamil Nadu, India.
         </div>
       </div>
       <div class="footer-col">
-        <h4>பள்ளிப் பருவங்கள் &amp; 12 தரங்கள்</h4>
+        <h4>பள்ளிப் பருவங்கள் &amp; உயர்கல்வி</h4>
         <ul class="footer-links">
           <li><a href="tharam-1.html">1. பாலப் பருவம் (தரம் 1–4) • அற அடித்தளம்</a></li>
           <li><a href="tharam-5.html">2. இளம் பருவம் (தரம் 5–8) • பண்பாடு &amp; நெறி</a></li>
           <li><a href="tharam-9.html">3. உயர்நிலைப் பருவம் (தரம் 9–10) • சித்தாந்தம் &amp; தர்மம்</a></li>
-          <li><a href="tharam-11.html">4. மேல்நிலைப் பருவம் (தரம் 11–12) • வேதாந்தம்</a></li>
-          <li><a href="higher-studies.html">5. உயர்கல்வி &amp; முதுகலை ஆய்வு (Higher Studies)</a></li>
+          <li><a href="tharam-11.html">4. மேல்நிலைப் பருவம் (தரம் 11–12) • கீதை &amp; பள்ளி இறுதி</a></li>
+          <li><a href="higher-studies.html">5. உயர்கல்வி வித்யாபீடம் (B.A. இளங்கலை • M.A. முதுகலை • Ph.D. ஆய்வு)</a></li>
           <li><a href="school.html">வித்யா குடீரம் — இணையப் பள்ளி அரங்கம்</a></li>
           <li><a href="syllabus.html">பாடத்திட்ட வரைபடம் (Curriculum Matrix)</a></li>
         </ul>

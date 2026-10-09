@@ -192,9 +192,20 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
             print(f"[Flow] Render in progress... {elapsed}s elapsed")
             continue
         
-        # Check if video is ready via editor button or download button
-        editor_btn = page.locator("button:has-text('play_circle'), [aria-label*='Open video in editor' i]").first
-        if editor_btn.count() > 0 and editor_btn.is_visible():
+        # Hover over newest video card to reveal overlay action buttons
+        cards = page.locator("div[class*='card'], div[class*='tile'], div[class*='video'], div[class*='artifact']").all()
+        if cards:
+            try:
+                cards[-1].hover()
+                page.wait_for_timeout(500)
+            except Exception:
+                pass
+
+        editor_btn = page.locator("button:has-text('play_circle'), [aria-label*='Open video in editor' i]").last
+        if editor_btn.count() == 0:
+            editor_btn = page.locator("button[aria-label*='editor' i]").last
+
+        if editor_btn.count() > 0 and (editor_btn.is_visible() or elapsed >= 35):
             print(f"[Flow] Video ready on canvas! (Elapsed: {elapsed}s)...")
             if only_wait_ready:
                 return True
@@ -202,8 +213,9 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
                 page.keyboard.press("Escape")
                 page.wait_for_timeout(400)
                 editor_btn.click(force=True)
+                page.wait_for_url("**/edit/**", timeout=20000)
                 page.wait_for_timeout(3000)
-                dl_media = page.locator("button[aria-label='Download media']:visible, button[aria-label*='Download' i]:visible").first
+                dl_media = page.locator("button[aria-label='Download media']:visible").first
                 if dl_media.count() > 0 and dl_media.is_enabled():
                     click_time = time.time()
                     page.keyboard.press("Escape")
@@ -215,22 +227,6 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
                             return True
             except Exception as e:
                 print(f"[Flow] Editor download click error: {e}")
-
-        # Fallback card download
-        dl_btn = page.locator("button[aria-label='Download media']:visible, [aria-label*='Download' i]:visible").first
-        if dl_btn.count() > 0 and dl_btn.is_visible() and dl_btn.is_enabled():
-            print(f"[Flow] Video download button ready! (Elapsed: {elapsed}s)...")
-            click_time = time.time()
-            try:
-                dl_btn.click(force=True)
-            except Exception as e:
-                print(f"[Flow] Click download error: {e}")
-
-            for _ in range(8):
-                page.wait_for_timeout(1000)
-                if check_recent_downloads(dest_mp4_path, click_time):
-                    return True
-
 
         print(f"[Flow] Waiting for render... {elapsed}s elapsed")
 
@@ -474,6 +470,12 @@ def generate_track_on_flow(track_id: str, extend: bool = True, extend_steps: int
                             ready = wait_and_download_video(page, out_clip, only_wait_ready=True)
                             if ready:
                                 success = wait_and_extend_video(page, out_clip, extend_count=len(continuation_prompts), continuation_prompts=continuation_prompts)
+                        else:
+                            # Fast-anchor mode: download pristine base clip directly via editor
+                            print(f"[Scene {sc_num}] Fast-Anchor: Waiting for base clip completion...")
+                            ready = wait_and_download_video(page, out_clip, only_wait_ready=True)
+                            if ready:
+                                success = wait_and_extend_video(page, out_clip, extend_count=0)
 
                         if not success:
                             if "/edit/" in page.url:

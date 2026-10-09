@@ -66,11 +66,37 @@ def run_tests():
         page.goto('http://localhost:8000/kalvi.html', wait_until='networkidle')
         stages = page.locator('.stage-row-card')
         print(f"kalvi.html stages count: {stages.count()}")
-        assert stages.count() == 4, f"Expected 4 stages in kalvi.html, got {stages.count()}"
+        assert stages.count() == 5, f"Expected 5 stages in kalvi.html (4 school + 1 higher studies), got {stages.count()}"
 
         books_in_kalvi = page.locator('.ashram-book-card')
         print(f"kalvi.html 7 books count: {books_in_kalvi.count()}")
         assert books_in_kalvi.count() == 7, f"Expected 7 books in kalvi.html, got {books_in_kalvi.count()}"
+
+        # Test higher-studies.html
+        print("--- Testing higher-studies.html ---")
+        page.goto('http://localhost:8000/higher-studies.html', wait_until='networkidle')
+        degree_btns = page.locator('.degree-filter-btn')
+        print(f"higher-studies.html filter buttons count: {degree_btns.count()}")
+        assert degree_btns.count() >= 5, f"Expected at least 5 degree buttons, got {degree_btns.count()}"
+
+        # Test UG filter click
+        page.locator('.degree-filter-btn[data-filter="ug"]').click()
+        page.wait_for_timeout(100)
+        assert page.locator('#tierUG').is_visible(), "UG tier should be visible"
+        assert not page.locator('#tierPG').is_visible(), "PG tier should be hidden under UG filter"
+
+        # Test PG filter click
+        page.locator('.degree-filter-btn[data-filter="pg"]').click()
+        page.wait_for_timeout(100)
+        assert page.locator('#tierPG').is_visible(), "PG tier should be visible"
+        assert not page.locator('#tierUG').is_visible(), "UG tier should be hidden under PG filter"
+
+        # Test All filter click
+        page.locator('.degree-filter-btn[data-filter="all"]').click()
+        page.wait_for_timeout(100)
+        assert page.locator('#tierUG').is_visible(), "UG tier should be visible under all"
+        assert page.locator('#tierPG').is_visible(), "PG tier should be visible under all"
+        print("Degree filtering (UG, PG, All) verified successfully!")
 
         # Test books.html
         print("--- Testing books.html ---")
