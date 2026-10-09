@@ -1688,4 +1688,15 @@
   }
 }
 
+/* Author's Original Textbook Sheets Gallery */
+.author-sheets-container {
+  padding: 8px 0 24px;
+}
+.author-sheets-container .sheets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
 

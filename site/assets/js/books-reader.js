@@ -8,15 +8,27 @@ let currentBook = 'nanneri';
 let currentChapter = 1;
 let loadedBookData = {};
 
-const BOOKS_METADATA = [
-  { id: 'nanneri', name: 'நன்னெறி', en: 'ஒழுக்கமும் பணிவும்', icon: 'M12 2v3M7 5h10l-1.5 4H8.5L7 5z', color: '#38bdf8' },
-  { id: 'nallaram', name: 'நல்லறம்', en: 'ஈகையும் இல்லற தர்மமும்', icon: 'M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z', color: '#10b981' },
-  { id: 'nalvazhi', name: 'நல்வழி', en: 'வாய்மையும் நேர்மை வழியும்', icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z', color: '#facc15' },
-  { id: 'narthunai', name: 'நற்துணை', en: 'இறைத்துதியும் சரணாகதியும்', icon: 'M12 2a9.5 9.5 0 0 0-9.5 9.5c0 7 9.5 12.5 9.5 12.5s9.5-5.5 9.5-12.5A9.5 9.5 0 0 0 12 2z', color: '#c084fc' },
-  { id: 'narchinthanai', name: 'நற்சிந்தனை', en: 'மெய்யறிவும் தத்துவமும்', icon: 'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', color: '#fb923c' },
-  { id: 'narchol', name: 'நற்சொல்', en: 'இன்சொல்லும் நாவடக்கமும்', icon: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z', color: '#34d399' },
-  { id: 'narcheyal', name: 'நற்செயல்', en: 'கடமையும் இல்லற வாழ்வியலும்', icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z', color: '#ffd700' }
+const PRIMARY_BOOKS_METADATA = [
+  { id: 'narcheyal', name: 'நற்செயல்', en: 'விளையாடிப் பயிலல் & 3 Ds', icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z', color: '#ffd700', desc: 'விளையாட்டும் பகிர்தலும், உள்ளதைக் கொண்டு மகிழ்தல், கடமை-கட்டுப்பாடு-கண்ணியம்' },
+  { id: 'nalvazhi', name: 'நல்வழி', en: 'வாய்மையும் நற்பண்பும்', icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z', color: '#facc15', desc: 'பெரியோர் பணிவு, வாய்மை, நாவடக்கம், இன்சொல் & நேர்மை வழி' },
+  { id: 'narthunai', name: 'நற்துணை', en: 'இறைத் துதியும் அச்சமின்மையும்', icon: 'M12 2a9.5 9.5 0 0 0-9.5 9.5c0 7 9.5 12.5 9.5 12.5s9.5-5.5 9.5-12.5A9.5 9.5 0 0 0 12 2z', color: '#c084fc', desc: 'விநாயகர், முருகன், சிவபெருமான் எளிய துதிகள், அச்சமின்மை & இயற்கை நேயம்' }
 ];
+
+const SECONDARY_BOOKS_METADATA = [
+  { id: 'nanneri', name: 'நன்னெறி', en: 'ஒழுக்கமும் பணிவும்', icon: 'M12 2v3M7 5h10l-1.5 4H8.5L7 5z', color: '#38bdf8', desc: 'பணிவு, பெரியோர் மரியாதை மற்றும் தூய நடத்தை' },
+  { id: 'nallaram', name: 'நல்லறம்', en: 'ஈகையும் இல்லற தர்மமும்', icon: 'M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z', color: '#10b981', desc: 'ஈகை, விருந்தோம்பல், ஜீவகாருண்யம் மற்றும் சமுதாயத் தொண்டு' },
+  { id: 'nalvazhi', name: 'நல்வழி', en: 'வாய்மையும் நேர்மை வழியும்', icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z', color: '#facc15', desc: 'வாய்மை, கடின உழைப்பு மற்றும் சோதனைகளிலும் தர்மத்தைக் கைவிடாமை' },
+  { id: 'narthunai', name: 'நற்துணை', en: 'இறைத்துதியும் சரணாகதியும்', icon: 'M12 2a9.5 9.5 0 0 0-9.5 9.5c0 7 9.5 12.5 9.5 12.5s9.5-5.5 9.5-12.5A9.5 9.5 0 0 0 12 2z', color: '#c084fc', desc: 'இறைத் திருவருள், திருமுறைகள், பக்தி மற்றும் சரணாகதி' },
+  { id: 'narchinthanai', name: 'நற்சிந்தனை', en: 'மெய்யறிவும் தத்துவமும்', icon: 'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', color: '#fb923c', desc: 'விஞ்ஞான-மெய்ஞ்ஞான சங்கமம், பிரபஞ்ச விதிகள் மற்றும் தத்துவ ஆய்வு' },
+  { id: 'narchol', name: 'நற்சொல்', en: 'இன்சொல்லும் நாவடக்கமும்', icon: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z', color: '#34d399', desc: 'இன்சொல் பேசுதல், நாவடக்கம் மற்றும் மந்திர ஒலி அதிர்வுகள்' },
+  { id: 'narcheyal', name: 'நற்செயல்', en: 'கடமையும் இல்லற வாழ்வியலும்', icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z', color: '#ffd700', desc: '3 Ds (Duty, Discipline, Dignity), இல்லறக் கடமைகள் & பஞ்ச யாகங்கள்' }
+];
+
+function getBooksMetadataForGrade(grade) {
+  return (grade <= 5) ? PRIMARY_BOOKS_METADATA : SECONDARY_BOOKS_METADATA;
+}
+
+const BOOKS_METADATA = SECONDARY_BOOKS_METADATA;
 
 async function initBookReader() {
   // Parse URL query params
@@ -29,7 +41,10 @@ async function initBookReader() {
     currentGrade = window.DEFAULT_GRADE;
   }
   if (gradeParam >= 1 && gradeParam <= 12) currentGrade = gradeParam;
-  if (bookParam && BOOKS_METADATA.some(b => b.id === bookParam)) currentBook = bookParam;
+
+  const activeMeta = getBooksMetadataForGrade(currentGrade);
+  currentBook = activeMeta[0].id;
+  if (bookParam && activeMeta.some(b => b.id === bookParam)) currentBook = bookParam;
   if (chapterParam >= 1 && chapterParam <= 7) currentChapter = chapterParam;
 
   renderGradePills();
@@ -62,7 +77,8 @@ function renderBookShelfTabs() {
   const container = document.getElementById('booksShelfTabs');
   if (!container) return;
   let html = '';
-  BOOKS_METADATA.forEach((book, idx) => {
+  const activeMeta = getBooksMetadataForGrade(currentGrade);
+  activeMeta.forEach((book, idx) => {
     const activeClass = (book.id === currentBook) ? 'active' : '';
     let done = 0;
     for (let c = 1; c <= 7; c++) {
@@ -763,7 +779,8 @@ window.prevChapterImage = function() {
 function renderFallbackBook() {
   const container = document.getElementById('activeChapterReadingArea');
   if (!container) return;
-  const meta = BOOKS_METADATA.find(b => b.id === currentBook) || BOOKS_METADATA[0];
+  const activeMeta = getBooksMetadataForGrade(currentGrade);
+  const meta = activeMeta.find(b => b.id === currentBook) || activeMeta[0];
 
   container.innerHTML = `
     <article class="reading-chapter-card" style="text-align:center; padding:40px 20px;">
@@ -925,7 +942,142 @@ document.addEventListener('keydown', (e) => {
 // 3-MONTH / 12-WEEK TRIMESTER CLASSROOM ENGINE & PROGRESS TRACKING
 // ==========================================================================
 
-const TRIMESTER_SCHEDULE = [
+const PRIMARY_TRIMESTER_SCHEDULE = [
+  {
+    month: 1,
+    title: 'மாதம் 1: விளையாடிப் பயிலல் & 3 Ds கடமை (Play, Share & 3 Ds Action)',
+    desc: 'நற்செயல் • 7 அத்தியாயங்கள் • விளையாட்டு வழிக் கற்றல், பகிர்தல், உள்ளதைக் கொண்டு மகிழ்தல், கடமை-கட்டுப்பாடு-கண்ணியம்',
+    checkpoint: '🎯 மாதம் 1 பால சாதனா ஆய்வு (Month 1 Milestone Checkpoint)',
+    weeks: [
+      {
+        weekNum: 1,
+        title: 'வாரம் 1: விளையாட்டும் மழலை மகிழ்ச்சியும்',
+        theme: 'நற்செயல் அத் 1-2 • விளையாடுதல் & உணவை வீணாக்காமல் உண்ணும் கடமை',
+        lessons: [
+          { book: 'narcheyal', chap: 1 },
+          { book: 'narcheyal', chap: 2 }
+        ]
+      },
+      {
+        weekNum: 2,
+        title: 'வாரம் 2: விடியற்காலை எழும் கட்டுப்பாடு',
+        theme: 'நற்செயல் அத் 3-4 • சூரிய உதயத்தில் எழுதல் & பள்ளிக்கு ஒழுங்காகச் செல்லுதல்',
+        lessons: [
+          { book: 'narcheyal', chap: 3 },
+          { book: 'narcheyal', chap: 4 }
+        ]
+      },
+      {
+        weekNum: 3,
+        title: 'வாரம் 3: தூய்மையும் தோழர் கண்ணியமும்',
+        theme: 'நற்செயல் அத் 5-6 • காலணிகளை அடுக்குதல் & தோழர்களிடம் கண்ணியமாக விளையாடுதல்',
+        lessons: [
+          { book: 'narcheyal', chap: 5 },
+          { book: 'narcheyal', chap: 6 }
+        ]
+      },
+      {
+        weekNum: 4,
+        title: 'வாரம் 4: புன்னகைக் கண்ணியமும் நிறைவும்',
+        theme: 'நற்செயல் அத் 7 • அழுது அடம்பிடிக்காத புன்னகைக் கண்ணியம்',
+        milestone: 'மாதம் 1 நற்செயல் தேர்ச்சி ஆய்வு (7 அத்தியாயங்கள்)',
+        lessons: [
+          { book: 'narcheyal', chap: 7 }
+        ]
+      }
+    ]
+  },
+  {
+    month: 2,
+    title: 'மாதம் 2: பெரியோர் பணிவும் நல்வழியும் (Reverence, Truth & Right Path)',
+    desc: 'நல்வழி • 7 அத்தியாயங்கள் • பெரியோர் வணக்கம், உண்மை பேசுதல், நற்பழக்கம் & அடக்கம்',
+    checkpoint: '🎯 மாதம் 2 பால நல்வழி ஆய்வு (Month 2 Milestone Checkpoint)',
+    weeks: [
+      {
+        weekNum: 5,
+        title: 'வாரம் 5: நல்வழியும் சுறுசுறுப்பும்',
+        theme: 'நல்வழி அத் 1-2 • நல்வழியில் நடத்தல் & சோம்பல் தவிர்த்தல்',
+        lessons: [
+          { book: 'nalvazhi', chap: 1 },
+          { book: 'nalvazhi', chap: 2 }
+        ]
+      },
+      {
+        weekNum: 6,
+        title: 'வாரம் 6: அறிவும் நல்ல தோழமையும்',
+        theme: 'நல்வழி அத் 3-4 • அறிவின் மேன்மை & நல்ல நண்பர்கள் சேர்க்கை',
+        lessons: [
+          { book: 'nalvazhi', chap: 3 },
+          { book: 'nalvazhi', chap: 4 }
+        ]
+      },
+      {
+        weekNum: 7,
+        title: 'வாரம் 7: பணிவும் முயற்சியும்',
+        theme: 'நல்வழி அத் 5-6 • அடக்கம் உடைமை & முயற்சியே செல்வம்',
+        lessons: [
+          { book: 'nalvazhi', chap: 5 },
+          { book: 'nalvazhi', chap: 6 }
+        ]
+      },
+      {
+        weekNum: 8,
+        title: 'வாரம் 8: நற்பெயர் காத்தல் & நேர்மை',
+        theme: 'நல்வழி அத் 7 • நற்பெயர் காத்தல் & நல்வழிப் பயில்வு நிறைவு',
+        milestone: 'மாதம் 2 நல்வழித் தேர்ச்சி ஆய்வு (14 அத்தியாயங்கள்)',
+        lessons: [
+          { book: 'nalvazhi', chap: 7 }
+        ]
+      }
+    ]
+  },
+  {
+    month: 3,
+    title: 'மாதம் 3: இறைத் துதியும் அச்சமின்மையும் (Devotion, Nature Love & Fearlessness)',
+    desc: 'நற்துணை • 7 அத்தியாயங்கள் • விநாயகர், முருகன், சிவபெருமான் எளிய துதிகள், இயற்கை நேயம் & சரணாகதி',
+    checkpoint: '🎓 தொடக்கப் பள்ளிப் பருவ நிறைவு & பட்டயம் (Primary Graduation)',
+    weeks: [
+      {
+        weekNum: 9,
+        title: 'வாரம் 9: விநாயகரும் முருகனும்',
+        theme: 'நற்துணை அத் 1-2 • விநாயகர் துணை & முருகன் வேல் துணை',
+        lessons: [
+          { book: 'narthunai', chap: 1 },
+          { book: 'narthunai', chap: 2 }
+        ]
+      },
+      {
+        weekNum: 10,
+        title: 'வாரம் 10: சிவபெருமானும் அம்பிகையும்',
+        theme: 'நற்துணை அத் 3-4 • சிவபெருமான் திருவருள் & அம்பிகை அருள்',
+        lessons: [
+          { book: 'narthunai', chap: 3 },
+          { book: 'narthunai', chap: 4 }
+        ]
+      },
+      {
+        weekNum: 11,
+        title: 'வாரம் 11: காக்கும் பெருமாளும் ஆஞ்சநேயரும்',
+        theme: 'நற்துணை அத் 5-6 • பெருமாள் காக்கும் கரங்கள் & ஆஞ்சநேயர் பக்தி',
+        lessons: [
+          { book: 'narthunai', chap: 5 },
+          { book: 'narthunai', chap: 6 }
+        ]
+      },
+      {
+        weekNum: 12,
+        title: 'வாரம் 12: சரணாகதி ரகசியம் & பருவ நிறைவு',
+        theme: 'நற்துணை அத் 7 • அச்சமின்மை, இறை சரணாகதி & தொடக்கப் பள்ளி 3 நூல்கள் முழுப் பருவ நிறைவு',
+        milestone: '🎓 தொடக்கப் பள்ளிப் பருவ நிறைவுப் பட்டயம் (Primary Term Diploma - 21 அத்தியாயங்கள்)',
+        lessons: [
+          { book: 'narthunai', chap: 7 }
+        ]
+      }
+    ]
+  }
+];
+
+const SECONDARY_TRIMESTER_SCHEDULE = [
   {
     month: 1,
     title: 'மாதம் 1: அற அடித்தளமும் தர்ம ஒழுக்கமும் (Moral Foundation & Right Conduct)',
@@ -1088,6 +1240,41 @@ const TRIMESTER_SCHEDULE = [
   }
 ];
 
+const TRIMESTER_SCHEDULE = SECONDARY_TRIMESTER_SCHEDULE;
+
+function getScheduleForGrade(grade) {
+  return (grade <= 5) ? PRIMARY_TRIMESTER_SCHEDULE : SECONDARY_TRIMESTER_SCHEDULE;
+}
+
+function getOriginalSheetsForGrade(grade) {
+  if (grade === 1) {
+    const sheets = [];
+    for (let i = 1; i <= 60; i++) {
+      const pad = String(i).padStart(2, '0');
+      sheets.push({
+        num: i,
+        file: `assets/images/saiva-neri/grade1/p${pad}.jpg`,
+        title: `பக்கம் ${i} (Page ${i})`
+      });
+    }
+    return sheets;
+  } else if (grade === 2) {
+    const sheets = [];
+    for (let i = 1; i <= 64; i++) {
+      const pad = String(i).padStart(2, '0');
+      let ext = 'jpg';
+      if (i === 1 || i === 64) ext = 'png';
+      sheets.push({
+        num: i,
+        file: `assets/images/saiva-neri/grade2/p${pad}.${ext}`,
+        title: `பக்கம் ${i} (Page ${i})`
+      });
+    }
+    return sheets;
+  }
+  return [];
+}
+
 function isBookChapterQuizPassed(grade, bookKey, chapterNum) {
   try {
     return localStorage.getItem(`gkd_quiz_${grade}_${bookKey}_${chapterNum}`) === 'true';
@@ -1097,12 +1284,13 @@ function isBookChapterQuizPassed(grade, bookKey, chapterNum) {
 }
 
 function getGradeProgressMetrics(grade) {
+  const activeBooks = getBooksMetadataForGrade(grade);
   let completedCount = 0;
   let quizCount = 0;
   let notesCount = 0;
   let bookMetrics = {};
 
-  BOOKS_METADATA.forEach(book => {
+  activeBooks.forEach(book => {
     let bookDone = 0;
     for (let c = 1; c <= 7; c++) {
       if (isBookChapterCompleted(grade, book.id, c)) {
@@ -1119,18 +1307,25 @@ function getGradeProgressMetrics(grade) {
     bookMetrics[book.id] = bookDone;
   });
 
-  const totalChapters = 49;
-  const percentage = Math.round((completedCount / totalChapters) * 100);
+  const totalChapters = activeBooks.length * 7;
+  const percentage = totalChapters > 0 ? Math.round((completedCount / totalChapters) * 100) : 0;
   const totalXp = (completedCount * 50) + (quizCount * 100) + (notesCount * 25);
 
-  let levelTitle = 'ஆரம்ப சாதகன் (Seeker)';
-  if (totalXp >= 6000) levelTitle = 'ஆசிரம வித்வான் (Ashram Master)';
-  else if (totalXp >= 3500) levelTitle = 'குருகுல நற்பண்பாளர் (Gurukula Scholar)';
-  else if (totalXp >= 1500) levelTitle = 'தர்ம வித்யார்த்தி (Dharmic Student)';
-  else if (totalXp >= 500) levelTitle = 'வித்யா சாதகன் (Vedic Seeker)';
+  let levelTitle = 'பால சாதகன் (Young Seeker)';
+  if (grade <= 5) {
+    if (totalXp >= 2500) levelTitle = 'பால வித்வான் (Primary Master)';
+    else if (totalXp >= 1500) levelTitle = 'பால நற்பண்பாளர் (Junior Scholar)';
+    else if (totalXp >= 700) levelTitle = 'தர்ம பாலன் (Dharmic Child)';
+    else if (totalXp >= 200) levelTitle = 'விளையாட்டு சாதகன் (Play & Learn Seeker)';
+  } else {
+    if (totalXp >= 6000) levelTitle = 'ஆசிரம வித்வான் (Ashram Master)';
+    else if (totalXp >= 3500) levelTitle = 'குருகுல நற்பண்பாளர் (Gurukula Scholar)';
+    else if (totalXp >= 1500) levelTitle = 'தர்ம வித்யார்த்தி (Dharmic Student)';
+    else if (totalXp >= 500) levelTitle = 'வித்யா சாதகன் (Vedic Seeker)';
+  }
 
   let unlockedBadges = 0;
-  BOOKS_METADATA.forEach(b => {
+  activeBooks.forEach(b => {
     if (bookMetrics[b.id] === 7) unlockedBadges++;
   });
 
@@ -1143,7 +1338,8 @@ function getGradeProgressMetrics(grade) {
     totalXp,
     levelTitle,
     bookMetrics,
-    unlockedBadges
+    unlockedBadges,
+    totalBadges: activeBooks.length
   };
 }
 
@@ -1180,7 +1376,7 @@ function initClassroomApp(grade) {
 
       // Collect shelf siblings up to workspace
       const prevHeading = shelf.previousElementSibling;
-      if (prevHeading && prevHeading !== booksAnchor && prevHeading.querySelector && (prevHeading.querySelector('h3') || prevHeading.innerText.includes('7 ஆசிரம'))) {
+      if (prevHeading && prevHeading !== booksAnchor && prevHeading.querySelector && (prevHeading.querySelector('h3') || prevHeading.innerText.includes('ஆசிரம'))) {
         classworkPanel.appendChild(prevHeading);
       }
       classworkPanel.appendChild(shelf);
@@ -1194,6 +1390,20 @@ function initClassroomApp(grade) {
   const studentName = localStorage.getItem('gkd_student_name') || 'மாணவர்';
   const metrics = getGradeProgressMetrics(grade);
   const classCode = `GKD-G${grade < 10 ? '0' + grade : grade}`;
+  const isPrimary = (grade <= 5);
+  const hasOriginalSheets = (grade === 1 || grade === 2);
+
+  const mainTitle = isPrimary
+    ? `தரம் ${grade} — தொடக்கப் பள்ளி 3 மாதப் பருவம் (Primary 12-Week Academy)`
+    : `தரம் ${grade} — 3 மாத காலப் பருவம் (12-Week Trimester Academy)`;
+
+  const termDesc = isPrimary
+    ? `பாலப் பருவம் • 3 முதன்மை ஆசிரமப் பாடநூல்கள் (நற்செயல், நல்வழி, நற்துணை) • 21 அத்தியாயங்கள் • விளையாடிப் பயிலல் &amp; 3 Ds நெறிமுறை`
+    : `பருவம் 1 • 7 ஆசிரமப் பாடநூல்கள் • 49 அத்தியாயங்கள் • தினசரி சாதனா &amp; 3 Ds நெறிமுறை`;
+
+  const classworkTabTitle = isPrimary
+    ? `பாடப் பணிகள் (Classwork &amp; 3 Books)`
+    : `பாடப் பணிகள் (Classwork &amp; 7 Books)`;
 
   mount.innerHTML = `
     <!-- 1. Classroom Header Card -->
@@ -1204,8 +1414,8 @@ function initClassroomApp(grade) {
             <span>🌿</span>
             <span>வித்யா குடீரம் இணைய வகுப்பறை • Gurukula Digital Classroom</span>
           </div>
-          <h2 class="classroom-main-title">தரம் ${grade} — 3 மாத காலப் பருவம் (12-Week Trimester Academy)</h2>
-          <p class="classroom-term-desc">பருவம் 1 • 7 ஆசிரமப் பாடநூல்கள் • 49 அத்தியாயங்கள் • தினசரி சாதனா &amp; 3 Ds நெறிமுறை</p>
+          <h2 class="classroom-main-title">${mainTitle}</h2>
+          <p class="classroom-term-desc">${termDesc}</p>
         </div>
         <div class="classroom-badges-strip">
           <div class="classroom-chip classroom-chip-gold" title="வகுப்புக் குறியீடு">
@@ -1222,7 +1432,7 @@ function initClassroomApp(grade) {
       <div class="classroom-progress-row">
         <div>
           <div class="classroom-progress-label">
-            <span id="classroomProgressLabel">${metrics.completedCount} / 49 அத்தியாயங்கள் நிறைவு (${metrics.percentage}%)</span>
+            <span id="classroomProgressLabel">${metrics.completedCount} / ${metrics.totalChapters} அத்தியாயங்கள் நிறைவு (${metrics.percentage}%)</span>
             <span style="color:var(--gold-soft); font-size:0.8rem;">${metrics.levelTitle}</span>
           </div>
           <div class="classroom-progress-track">
@@ -1236,12 +1446,19 @@ function initClassroomApp(grade) {
       </div>
     </div>
 
-    <!-- 2. Classroom 4 Mode Navigation Tabs -->
+    <!-- 2. Classroom Mode Navigation Tabs -->
     <nav class="classroom-nav-tabs" aria-label="வகுப்பறை பிரிவுகள்">
       <button type="button" class="classroom-tab-btn ${activeClassroomTab === 'classwork' ? 'active' : ''}" id="btnTabClasswork" onclick="switchClassroomTab('classwork')">
         <span>📑</span>
-        <span>பாடப் பணிகள் (Classwork &amp; 7 Books)</span>
+        <span>${classworkTabTitle}</span>
       </button>
+      ${hasOriginalSheets ? `
+      <button type="button" class="classroom-tab-btn ${activeClassroomTab === 'authorSheets' ? 'active' : ''}" id="btnTabAuthorSheets" onclick="switchClassroomTab('authorSheets')">
+        <span>📖</span>
+        <span>ஆசிரியர் மூலப் பாடநூல் (Author's Original Sheets)</span>
+        <span class="classroom-tab-badge">${grade === 1 ? '60 ஏடுகள்' : '64 ஏடுகள்'}</span>
+      </button>
+      ` : ''}
       <button type="button" class="classroom-tab-btn ${activeClassroomTab === 'schedule' ? 'active' : ''}" id="btnTabSchedule" onclick="switchClassroomTab('schedule')">
         <span>📅</span>
         <span>3 மாத கால அட்டவணை (12-Week Roadmap)</span>
@@ -1250,7 +1467,7 @@ function initClassroomApp(grade) {
       <button type="button" class="classroom-tab-btn ${activeClassroomTab === 'mastery' ? 'active' : ''}" id="btnTabMastery" onclick="switchClassroomTab('mastery')">
         <span>📊</span>
         <span>மாணவர் முன்னேற்றப் பலகை (Mastery Tracker)</span>
-        <span class="classroom-tab-badge">${metrics.unlockedBadges}/7 பதக்கங்கள்</span>
+        <span class="classroom-tab-badge">${metrics.unlockedBadges}/${metrics.totalBadges} பதக்கங்கள்</span>
       </button>
       <button type="button" class="classroom-tab-btn ${activeClassroomTab === 'diploma' ? 'active' : ''}" id="btnTabDiploma" onclick="switchClassroomTab('diploma')">
         <span>🎓</span>
@@ -1258,7 +1475,13 @@ function initClassroomApp(grade) {
       </button>
     </nav>
 
-    <!-- 3. Panels for Tabs 2, 3, 4 -->
+    <!-- 3. Panels for Modes -->
+    ${hasOriginalSheets ? `
+    <div id="classroomTabAuthorSheets" class="classroom-panel ${activeClassroomTab === 'authorSheets' ? 'active' : ''}">
+      ${renderAuthorSheetsPanelHtml(grade)}
+    </div>
+    ` : ''}
+
     <div id="classroomTabSchedule" class="classroom-panel ${activeClassroomTab === 'schedule' ? 'active' : ''}">
       ${renderSchedulePanelHtml(grade)}
     </div>
@@ -1283,6 +1506,11 @@ function switchClassroomTab(tabKey) {
   if (tabKey === 'classwork') {
     const btn = document.getElementById('btnTabClasswork');
     if (btn) btn.classList.add('active');
+  } else if (tabKey === 'authorSheets') {
+    const btn = document.getElementById('btnTabAuthorSheets');
+    if (btn) btn.classList.add('active');
+    const p = document.getElementById('classroomTabAuthorSheets');
+    if (p) p.innerHTML = renderAuthorSheetsPanelHtml(currentGrade);
   } else if (tabKey === 'schedule') {
     const btn = document.getElementById('btnTabSchedule');
     if (btn) btn.classList.add('active');
@@ -1305,11 +1533,13 @@ function switchClassroomTab(tabKey) {
 
 function applyClassroomTabVisibility(tabKey) {
   const pClasswork = document.getElementById('classroomTabClasswork');
+  const pAuthorSheets = document.getElementById('classroomTabAuthorSheets');
   const pSchedule = document.getElementById('classroomTabSchedule');
   const pMastery = document.getElementById('classroomTabMastery');
   const pDiploma = document.getElementById('classroomTabDiploma');
 
   if (pClasswork) pClasswork.style.display = (tabKey === 'classwork') ? 'block' : 'none';
+  if (pAuthorSheets) pAuthorSheets.style.display = (tabKey === 'authorSheets') ? 'block' : 'none';
   if (pSchedule) pSchedule.style.display = (tabKey === 'schedule') ? 'block' : 'none';
   if (pMastery) pMastery.style.display = (tabKey === 'mastery') ? 'block' : 'none';
   if (pDiploma) pDiploma.style.display = (tabKey === 'diploma') ? 'block' : 'none';
@@ -1323,7 +1553,7 @@ function updateClassroomStats() {
   if (fill) fill.style.width = `${metrics.percentage}%`;
 
   const label = document.getElementById('classroomProgressLabel');
-  if (label) label.innerText = `${metrics.completedCount} / 49 அத்தியாயங்கள் நிறைவு (${metrics.percentage}%)`;
+  if (label) label.innerText = `${metrics.completedCount} / ${metrics.totalChapters} அத்தியாயங்கள் நிறைவு (${metrics.percentage}%)`;
 
   const xpBadge = document.getElementById('classroomHeaderXpBadge');
   if (xpBadge) xpBadge.innerHTML = `<span>✨</span> <span>${metrics.totalXp.toLocaleString()} தர்ம XP</span>`;
@@ -1331,7 +1561,7 @@ function updateClassroomStats() {
   // Update shelf tabs badges
   renderBookShelfTabs();
 
-  // If schedule, mastery, or diploma panel is active, refresh them
+  // If schedule, mastery, diploma, or author sheets panel is active, refresh
   if (activeClassroomTab === 'schedule') {
     const p = document.getElementById('classroomTabSchedule');
     if (p) p.innerHTML = renderSchedulePanelHtml(currentGrade);
@@ -1341,10 +1571,218 @@ function updateClassroomStats() {
   } else if (activeClassroomTab === 'diploma') {
     const p = document.getElementById('classroomTabDiploma');
     if (p) p.innerHTML = renderDiplomaPanelHtml(currentGrade);
+  } else if (activeClassroomTab === 'authorSheets') {
+    const p = document.getElementById('classroomTabAuthorSheets');
+    if (p) p.innerHTML = renderAuthorSheetsPanelHtml(currentGrade);
   }
 }
 
+// Author's Original Textbook Sheets Gallery & Modal
+function renderAuthorSheetsPanelHtml(grade) {
+  const sheets = getOriginalSheetsForGrade(grade);
+  if (sheets.length === 0) {
+    return `<div style="text-align:center; padding:30px; color:#94a3b8;">இவ்வகுப்பிற்கு மூலப் பாடநூல் ஏடுகள் கிடைக்கவில்லை.</div>`;
+  }
+
+  let html = `
+    <div class="author-sheets-container">
+      <div style="background:linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(15, 23, 42, 0.9)); border:1px solid rgba(212, 175, 55, 0.35); border-radius:12px; padding:18px 22px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;">
+        <div style="max-width:750px;">
+          <div style="color:var(--gold-bright); font-size:1.15rem; font-weight:800; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+            <span>📖</span>
+            <span>ஆசிரியர் மூலப் பாடநூல் ஏடுகள் (Author's Original Google Sites Textbook Sheets)</span>
+            <span class="classroom-tab-badge" style="background:var(--gold); color:#000; font-weight:800;">மொத்தம் ${sheets.length} பக்கங்கள்</span>
+          </div>
+          <p style="color:#cbd5e1; font-size:0.9rem; line-height:1.6; margin:0;">
+            குரு குல ஆசிரமத்தின் ஆசிரியர் கைப்பட அமைத்த தொடக்கப் பள்ளி மூலப் பாடநூலின் அசல் சித்திரப் பக்கங்கள். மழலையர் விளையாடிப் பயிலவும், தமிழ் எழுத்துக்கள் மற்றும் எளிய சைவ நெறி வழிபாட்டுப் பாடல்களை வண்ணப் படங்களுடன் வாசிக்கவும் உருவான மூல ஏடுகள்.
+          </p>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <button type="button" class="sheet-btn sheet-btn-view" onclick="openAuthorSheetModal(${grade}, 1)" style="font-size:0.88rem; padding:8px 18px;">
+            <span>🔍 பக்கம் 1 முதல் வாசிக்கத் தொடங்குக</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Page Search / Filter -->
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+        <div style="color:#94a3b8; font-size:0.86rem;">
+          ஏதேனும் ஒரு பக்கத்தைச் சொடுக்கி முழுத் திரையில் பெரிதாக்கிக் காணலாம்:
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <label for="authorSheetJump" style="color:#cbd5e1; font-size:0.82rem; font-weight:600;">பக்கத்திற்குச் செல்க:</label>
+          <select id="authorSheetJump" class="context-search-input" style="width:auto; padding:4px 10px; font-size:0.84rem;" onchange="openAuthorSheetModal(${grade}, parseInt(this.value))">
+            ${sheets.map(s => `<option value="${s.num}">பக்கம் ${s.num}</option>`).join('')}
+          </select>
+        </div>
+      </div>
+
+      <!-- 60 / 64 Sheets Grid -->
+      <div class="sheets-grid" style="margin-top:10px;">
+  `;
+
+  sheets.forEach(s => {
+    html += `
+      <div class="sheet-card">
+        <div class="sheet-header">
+          <span>${s.title}</span>
+          <span style="font-size:0.75rem; color:var(--gold);">தரம் ${grade}</span>
+        </div>
+        <div class="sheet-thumb" onclick="openAuthorSheetModal(${grade}, ${s.num})" title="${s.title} பெரிதாக்குக">
+          <img src="${s.file}" alt="${s.title}" loading="lazy">
+          <div class="sheet-zoom-overlay">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+        </div>
+        <div class="sheet-actions">
+          <button type="button" class="sheet-btn sheet-btn-view" onclick="openAuthorSheetModal(${grade}, ${s.num})">
+            <span>பெரிதாக்குக</span>
+          </button>
+          <a href="${s.file}" target="_blank" rel="noopener noreferrer" class="sheet-btn sheet-btn-direct" title="நேரடி இணைப்பு">
+            <span>மூலம் ↗</span>
+          </a>
+        </div>
+      </div>
+    `;
+  });
+
+  html += `
+      </div>
+    </div>
+  `;
+  return html;
+}
+
+window.currentAuthorSheetGrade = 1;
+window.currentAuthorSheetNum = 1;
+
+window.openAuthorSheetModal = function(grade, sheetNum) {
+  const sheets = getOriginalSheetsForGrade(grade);
+  if (!sheets || sheets.length === 0) return;
+  if (sheetNum < 1) sheetNum = 1;
+  if (sheetNum > sheets.length) sheetNum = sheets.length;
+
+  window.currentAuthorSheetGrade = grade;
+  window.currentAuthorSheetNum = sheetNum;
+
+  let modal = document.getElementById('authorSheetLightboxModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'authorSheetLightboxModal';
+    modal.className = 'art-lightbox-modal';
+    modal.innerHTML = `
+      <div class="art-lightbox-backdrop" onclick="closeAuthorSheetModal()"></div>
+      <div class="art-lightbox-content" style="max-width: 900px; max-height: 92vh; display:flex; flex-direction:column;">
+        <div class="art-lightbox-header">
+          <div class="art-lightbox-title-wrap">
+            <span class="chap-badge" id="authorSheetGradeBadge">தரம் 1 மூல ஏடு</span>
+            <strong id="authorSheetPageTitle" style="color:var(--gold-bright); font-size:1.05rem;">பக்கம் 1</strong>
+          </div>
+          <div class="art-lightbox-actions">
+            <span id="authorSheetCounter" style="color:#94a3b8; font-size:0.85rem; margin-right:8px;">1 / 60</span>
+            <a id="authorSheetDlBtn" href="#" download class="art-lightbox-btn" title="ஏட்டைப் பதிவிறக்குக">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+            <button type="button" class="art-lightbox-btn" onclick="toggleAuthorSheetZoom()" title="பெரிதாக்குக / சுருக்குக">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+            <button type="button" class="art-lightbox-btn art-lightbox-close" onclick="closeAuthorSheetModal()" title="மூடுக">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="art-lightbox-viewport" style="flex:1; overflow:auto; text-align:center; padding:10px;">
+          <img id="authorSheetImg" src="" alt="" style="max-height:74vh; width:auto; border-radius:8px; box-shadow:0 8px 30px rgba(0,0,0,0.8); cursor:zoom-in;" onclick="toggleAuthorSheetZoom()">
+        </div>
+
+        <div class="art-lightbox-footer" style="padding:10px 16px; display:flex; justify-content:space-between; align-items:center; background:rgba(0,0,0,0.6);">
+          <button type="button" class="sheet-btn" onclick="prevAuthorSheet()" style="cursor:pointer;" title="முந்தைய பக்கம்">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> <span>முந்தைய பக்கம்</span>
+          </button>
+          <span style="color:#cbd5e1; font-size:0.85rem;" id="authorSheetFooterNote">ஆசிரியர் மூலப் பாடநூல் அசல் ஏடு</span>
+          <button type="button" class="sheet-btn sheet-btn-view" onclick="nextAuthorSheet()" style="cursor:pointer;" title="அடுத்த பக்கம்">
+            <span>அடுத்த பக்கம்</span> <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  }
+
+  const cur = sheets[sheetNum - 1];
+  const imgEl = document.getElementById('authorSheetImg');
+  const titleEl = document.getElementById('authorSheetPageTitle');
+  const badgeEl = document.getElementById('authorSheetGradeBadge');
+  const counterEl = document.getElementById('authorSheetCounter');
+  const dlBtn = document.getElementById('authorSheetDlBtn');
+
+  if (imgEl) {
+    imgEl.src = cur.file;
+    imgEl.alt = cur.title;
+    imgEl.classList.remove('zoomed');
+    imgEl.style.maxHeight = '74vh';
+  }
+  if (titleEl) titleEl.innerText = cur.title;
+  if (badgeEl) badgeEl.innerText = `தரம் ${grade} மூல ஏடு`;
+  if (counterEl) counterEl.innerText = `${sheetNum} / ${sheets.length}`;
+  if (dlBtn) {
+    dlBtn.href = cur.file;
+    dlBtn.setAttribute('download', cur.file.split('/').pop());
+  }
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeAuthorSheetModal = function() {
+  const modal = document.getElementById('authorSheetLightboxModal');
+  if (modal) modal.classList.remove('active');
+  document.body.style.overflow = '';
+};
+
+window.nextAuthorSheet = function() {
+  const sheets = getOriginalSheetsForGrade(window.currentAuthorSheetGrade || 1);
+  if (!sheets || sheets.length === 0) return;
+  let next = (window.currentAuthorSheetNum || 1) + 1;
+  if (next > sheets.length) next = 1;
+  window.openAuthorSheetModal(window.currentAuthorSheetGrade, next);
+};
+
+window.prevAuthorSheet = function() {
+  const sheets = getOriginalSheetsForGrade(window.currentAuthorSheetGrade || 1);
+  if (!sheets || sheets.length === 0) return;
+  let prev = (window.currentAuthorSheetNum || 1) - 1;
+  if (prev < 1) prev = sheets.length;
+  window.openAuthorSheetModal(window.currentAuthorSheetGrade, prev);
+};
+
+window.toggleAuthorSheetZoom = function() {
+  const imgEl = document.getElementById('authorSheetImg');
+  if (imgEl) {
+    imgEl.classList.toggle('zoomed');
+    imgEl.style.cursor = imgEl.classList.contains('zoomed') ? 'zoom-out' : 'zoom-in';
+    imgEl.style.maxHeight = imgEl.classList.contains('zoomed') ? 'none' : '74vh';
+  }
+};
+
+document.addEventListener('keydown', (e) => {
+  const modal = document.getElementById('authorSheetLightboxModal');
+  if (!modal || !modal.classList.contains('active')) return;
+
+  if (e.key === 'Escape') {
+    window.closeAuthorSheetModal();
+  } else if (e.key === 'ArrowRight') {
+    window.nextAuthorSheet();
+  } else if (e.key === 'ArrowLeft') {
+    window.prevAuthorSheet();
+  }
+});
+
 function renderSchedulePanelHtml(grade) {
+  const schedule = getScheduleForGrade(grade);
+  const activeMeta = getBooksMetadataForGrade(grade);
+
   let html = `
     <div class="trimester-roadmap-container">
       <div style="background:rgba(56, 189, 248, 0.1); border:1px solid rgba(56, 189, 248, 0.25); border-radius:10px; padding:12px 16px; color:#cbd5e1; font-size:0.88rem; line-height:1.6;">
@@ -1352,7 +1790,7 @@ function renderSchedulePanelHtml(grade) {
       </div>
   `;
 
-  TRIMESTER_SCHEDULE.forEach(m => {
+  schedule.forEach(m => {
     let monthDone = 0;
     let monthTotal = 0;
 
@@ -1405,7 +1843,7 @@ function renderSchedulePanelHtml(grade) {
 
       w.lessons.forEach(l => {
         const isDone = isBookChapterCompleted(grade, l.book, l.chap);
-        const bMeta = BOOKS_METADATA.find(b => b.id === l.book) || { name: l.book, color: '#38bdf8' };
+        const bMeta = activeMeta.find(b => b.id === l.book) || { name: l.book, color: '#38bdf8' };
         
         let chapTitle = `அத்தியாயம் ${l.chap}`;
         if (loadedBookData?.books?.[l.book]?.chapters) {
@@ -1449,13 +1887,15 @@ function renderSchedulePanelHtml(grade) {
 
 function renderMasteryPanelHtml(grade) {
   const metrics = getGradeProgressMetrics(grade);
+  const activeBooks = getBooksMetadataForGrade(grade);
+  const isPrimary = (grade <= 5);
 
   let html = `
     <div>
       <!-- Mastery Metrics Strip -->
       <div class="mastery-overview-strip">
         <div class="mastery-metric-card">
-          <div class="mastery-metric-num">49</div>
+          <div class="mastery-metric-num">${metrics.totalChapters}</div>
           <div class="mastery-metric-label">பருவப் பாடங்கள் (Total Chapters)</div>
         </div>
         <div class="mastery-metric-card">
@@ -1467,21 +1907,23 @@ function renderMasteryPanelHtml(grade) {
           <div class="mastery-metric-label">தர்ம சாதனா புள்ளிகள் (Vedic XP)</div>
         </div>
         <div class="mastery-metric-card">
-          <div class="mastery-metric-num" style="color:var(--gold-bright);">${metrics.unlockedBadges} / 7</div>
+          <div class="mastery-metric-num" style="color:var(--gold-bright);">${metrics.unlockedBadges} / ${metrics.totalBadges}</div>
           <div class="mastery-metric-label">நிறைவுப் பதக்கங்கள் (Ashram Badges)</div>
         </div>
       </div>
 
-      <!-- 7 Books Mastery Cards Grid -->
+      <!-- Books Mastery Cards Grid -->
       <div style="margin: 20px 0 12px; display:flex; justify-content:space-between; align-items:center;">
-        <h3 style="color:#ffffff; font-size:1.15rem; font-weight:800; margin:0;">7 ஆசிரம நூல்களின் தேர்ச்சி நிலை (7 Sacred Books Mastery)</h3>
+        <h3 style="color:#ffffff; font-size:1.15rem; font-weight:800; margin:0;">
+          ${isPrimary ? '3 முதன்மை ஆசிரம நூல்களின் தேர்ச்சி நிலை (Primary 3 Books Mastery)' : '7 ஆசிரம நூல்களின் தேர்ச்சி நிலை (7 Sacred Books Mastery)'}
+        </h3>
         <span style="font-size:0.8rem; color:#94a3b8;">ஒவ்வொரு நூலிலும் 7 அத்தியாயங்கள்</span>
       </div>
 
       <div class="mastery-books-grid">
   `;
 
-  BOOKS_METADATA.forEach((book, idx) => {
+  activeBooks.forEach((book, idx) => {
     const done = metrics.bookMetrics[book.id] || 0;
     const isMastered = (done === 7);
     const pct = Math.round((done / 7) * 100);
@@ -1492,15 +1934,26 @@ function renderMasteryPanelHtml(grade) {
       dotsHtml += `<span class="mastery-dot ${cDone ? 'done' : ''}" title="அத்தியாயம் ${c}: ${cDone ? 'நிறைவு பெற்றது' : 'படிக்க வேண்டியுள்ளது'}"></span>`;
     }
 
-    const badgeNames = [
-      '🏅 நன்னெறி சுடர் (Conduct Pillar)',
-      '🛡️ நல்லறச் செம்மல் (Dharma Champion)',
-      '⚖️ நல்வழி வித்தகர் (Truth Bearer)',
-      '🪔 நற்துணை யோகி (Divine Refuge)',
-      '⚛️ நற்சிந்தனை ஞானி (Wisdom Seeker)',
-      '🌸 நற்சொல் வள்ளல் (Sweet Word Master)',
-      '☀️ நற்செயல் கர்மயோகி (Action Yogin)'
-    ];
+    let badgeName = '';
+    if (isPrimary) {
+      const primaryBadges = {
+        'narcheyal': '☀️ நற்செயல் கர்மவீரர் (Action Champion & 3 Ds)',
+        'nalvazhi': '⭐ நல்வழி நேர்மையாளர் (Truth Bearer)',
+        'narthunai': '🪔 நற்துணை மெய்ஞ்ஞானி (Divine Refuge)'
+      };
+      badgeName = primaryBadges[book.id] || `${book.name} தேர்ச்சிப் பதக்கம்`;
+    } else {
+      const secondaryBadges = [
+        '🏅 நன்னெறி சுடர் (Conduct Pillar)',
+        '🛡️ நல்லறச் செம்மல் (Dharma Champion)',
+        '⚖️ நல்வழி வித்தகர் (Truth Bearer)',
+        '🪔 நற்துணை யோகி (Divine Refuge)',
+        '⚛️ நற்சிந்தனை ஞானி (Wisdom Seeker)',
+        '🌸 நற்சொல் வள்ளல் (Sweet Word Master)',
+        '☀️ நற்செயல் கர்மயோகி (Action Yogin)'
+      ];
+      badgeName = secondaryBadges[idx] || `${book.name} தேர்ச்சிப் பதக்கம்`;
+    }
 
     html += `
       <div class="mastery-book-card ${isMastered ? 'fully-completed' : ''}" style="--book-accent:${book.color};">
@@ -1532,7 +1985,7 @@ function renderMasteryPanelHtml(grade) {
 
         <div class="mastery-badge-box ${isMastered ? 'unlocked' : ''}">
           <span>${isMastered ? '🏆' : '🔒'}</span>
-          <span>${isMastered ? badgeNames[idx] : `${badgeNames[idx]} (இன்னும் ${7 - done} பாடம்)`}</span>
+          <span>${isMastered ? badgeName : `${badgeName} (இன்னும் ${7 - done} பாடம்)`}</span>
         </div>
       </div>
     `;
@@ -1553,7 +2006,7 @@ function renderMasteryPanelHtml(grade) {
   `;
 
   let notesCountFound = 0;
-  BOOKS_METADATA.forEach(b => {
+  activeBooks.forEach(b => {
     for (let c = 1; c <= 7; c++) {
       const note = localStorage.getItem(`gkd_note_${grade}_${b.id}_${c}`);
       if (note && note.trim().length > 0) {
@@ -1592,6 +2045,13 @@ function renderDiplomaPanelHtml(grade) {
   const metrics = getGradeProgressMetrics(grade);
   const studentName = localStorage.getItem('gkd_student_name') || 'மாணவர்';
   const todayStr = new Date().toLocaleDateString('ta-IN', { year: 'numeric', month: 'long', day: 'numeric' });
+  const isPrimary = (grade <= 5);
+
+  const diplomaBody = isPrimary ? `
+    இம்மாணவர் குரு குல தேசத்தின் <strong>தரம் ${grade}</strong> வித்யா குடீரம் தொடக்கப் பள்ளிப் பாடத்திட்டத்தில் உள்ள <strong>3 முதன்மை ஆசிரமப் பாடநூல்கள்</strong> (நற்செயல், நல்வழி, நற்துணை ஆகிய 21 அத்தியாயங்கள் — விளையாடிப் பயிலல், பகிர்தல், பெரியோர் பணிவு, இறைத் துதி, தத்துவ விரிவுரைகள் மற்றும் தினசரி சாதனா பயிற்சிகள்) அடங்கிய 3 மாத காலப் பருவப் பாடத்திட்டத்தை முறைப்படி பயின்று, தர்ம நெறிகளையும் <strong>3 Ds (Duty, Discipline, Dignity)</strong> வாழ்வியல் நெறிமுறைகளையும் செவ்வனே உணர்ந்து <strong>${metrics.totalXp.toLocaleString()} தர்ம XP</strong> புள்ளிகளுடன் நிறைவு செய்துள்ளார் என ஆசிரம பீடத்தால் சான்றளிக்கப்படுகிறது.
+  ` : `
+    இம்மாணவர் குரு குல தேசத்தின் <strong>தரம் ${grade}</strong> வித்யா குடீரம் பள்ளிப் பாடத்திட்டத்தில் உள்ள <strong>7 ஆசிரமப் பாடநூல்கள்</strong> (நன்னெறி, நல்லறம், நல்வழி, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செயல் ஆகிய 49 அத்தியாயங்கள், மூலப் பாடல்கள், தத்துவ விரிவுரைகள் மற்றும் தினசரி சாதனா பயிற்சிகள்) அடங்கிய 3 மாத காலப் பருவப் பாடத்திட்டத்தை முறைப்படி பயின்று, தர்ம நெறிகளையும் <strong>3 Ds (Duty, Discipline, Dignity)</strong> வாழ்வியல் நெறிமுறைகளையும் செவ்வனே உணர்ந்து <strong>${metrics.totalXp.toLocaleString()} தர்ம XP</strong> புள்ளிகளுடன் நிறைவு செய்துள்ளார் என ஆசிரம பீடத்தால் சான்றளிக்கப்படுகிறது.
+  `;
 
   return `
     <div class="diploma-outer-wrap">
@@ -1613,15 +2073,15 @@ function renderDiplomaPanelHtml(grade) {
         <div class="diploma-inst-name">குரு குல ஆசிரமம் • வித்யா குடீரம் பள்ளி</div>
         <div class="diploma-inst-sub">Guru Kula Desam — Modern Gurukulam Online Vedic Academy</div>
 
-        <h1 class="diploma-cert-title">பருவ நிறைவுப் பட்டயச் சான்றிதழ்</h1>
-        <div class="diploma-citation-intro">Diploma of Dharmic &amp; Curricular Completion</div>
+        <h1 class="diploma-cert-title">${isPrimary ? 'தொடக்கப் பள்ளிப் பருவ நிறைவுப் பட்டயச் சான்றிதழ்' : 'பருவ நிறைவுப் பட்டயச் சான்றிதழ்'}</h1>
+        <div class="diploma-citation-intro">${isPrimary ? 'Primary Diploma of Dharmic & Curricular Completion' : 'Diploma of Dharmic & Curricular Completion'}</div>
 
         <div>இப்பட்டயம் பெருமதிப்பிற்குரிய மாணவர்</div>
         <div class="diploma-student-name-box" id="diplomaStudentNameText">${studentName}</div>
         <div>அவர்களுக்கு நல்லாசியுடன் வழங்கப்படுகிறது.</div>
 
         <div class="diploma-citation-body">
-          இம்மாணவர் குரு குல தேசத்தின் <strong>தரம் ${grade}</strong> வித்யா குடீரம் பள்ளிப் பாடத்திட்டத்தில் உள்ள <strong>7 ஆசிரமப் பாடநூல்கள்</strong> (நன்னெறி, நல்லறம், நல்வழி, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செயல் ஆகிய 49 அத்தியாயங்கள், மூலப் பாடல்கள், தத்துவ விரிவுரைகள் மற்றும் தினசரி சாதனா பயிற்சிகள்) அடங்கிய 3 மாத காலப் பருவப் பாடத்திட்டத்தை முறைப்படி பயின்று, தர்ம நெறிகளையும் <strong>3 Ds (Duty, Discipline, Dignity)</strong> வாழ்வியல் நெறிமுறைகளையும் செவ்வனே உணர்ந்து <strong>${metrics.totalXp.toLocaleString()} தர்ம XP</strong> புள்ளிகளுடன் நிறைவு செய்துள்ளார் என ஆசிரம பீடத்தால் சான்றளிக்கப்படுகிறது.
+          ${diplomaBody}
         </div>
 
         <div class="diploma-seal-row">
@@ -1699,3 +2159,4 @@ document.addEventListener('DOMContentLoaded', () => {
     initBookReader();
   }
 });
+
