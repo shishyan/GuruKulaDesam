@@ -3790,3 +3790,406 @@ function toggleDrizzleEffect() {
     });
   });
 })();
+
+/* ==========================================================================
+   ASHRAM CONTEXTUAL DRAWER & POPUP MODAL ENGINE
+   Retains context from trigger button; zero scroll disruption
+   ========================================================================== */
+
+const ASHRAM_STAGE_DATA = {
+  primary: {
+    badge: '1. பாலப் பருவம் • தொடக்கக் கல்வி (Grades 1 – 4)',
+    title: 'பாலப் பருவம் — ஆரம்ப & வளர்ச்சி நிலை',
+    subtitle: 'வயது 6 – 9 • 1–2 நூல்கள் • விளையாடிப் பயிலல் & 3 Ds அறநெறி',
+    overview: 'தொடக்கக் கல்வியின் நோக்கம் குழந்தைகளைச் சுமையின்றி மகிழ்ச்சியுடன் கற்க வைப்பதாகும். தரம் 1 & 2 வகுப்புகளுக்கு "நற்செயல்" என்ற ஒரே ஒரு நூல் மட்டுமே — அதில் 60/64 பக்க அசல் சித்திரப் பாடப்புத்தகம் வடிவில் பாலர் பயில்வு அமைக்கப்பட்டுள்ளது. தரம் 3 & 4 வகுப்புகளுக்கு "நற்செயல்" மற்றும் "நற்பண்பு" (பண்பும் ஒழுக்கமும்) ஆகிய 2 நூல்கள் மட்டுமே. விளையாடிப் பயிலல், பகிர்ந்து உண்ணல், எளிய ஒழுக்க நெறிமுறைகள் 3 Ds (கடமை, கட்டுப்பாடு, கண்ணியம்) வழியில் புகட்டப்படுகின்றன.',
+    books: [
+      { name: 'நற்செயல் (Narcheyal)', desc: 'தரம் 1 & 2 (1 நூல் மட்டுமே): எளிய நற்செயல்கள், பெரியோரை வணங்குதல், இயற்கை நேயம், 60/64 பக்க அசல் சித்திரப் பாடநூல்', meta: '7 அத்தியாயங்கள்' },
+      { name: 'நற்பண்பு (Narpanbu)', desc: 'தரம் 3 & 4 (கூடுதல் 2-வது நூல்): வாய்மை, பணிவு, பொறுமை, பகிர்தல் மற்றும் நல்ல பழக்கவழக்கங்கள்', meta: '7 அத்தியாயங்கள்' }
+    ],
+    grades: [
+      { title: 'தரம் 1', sub: 'நற்செயல் (1 நூல்)', url: 'tharam-1.html' },
+      { title: 'தரம் 2', sub: 'நற்செயல் (1 நூல்)', url: 'tharam-2.html' },
+      { title: 'தரம் 3', sub: 'நற்செயல் & நற்பண்பு (2 நூல்கள்)', url: 'tharam-3.html' },
+      { title: 'தரம் 4', sub: 'நற்செயல் & நற்பண்பு (2 நூல்கள்)', url: 'tharam-4.html' }
+    ],
+    flagshipUrl: 'tharam-1.html',
+    flagshipLabel: 'தரம் 1 வகுப்பறைக்குச் செல்க ➔'
+  },
+  middle: {
+    badge: '2. இளம் பருவம் • நடுநிலைப் பள்ளி (Grades 5 – 8)',
+    title: 'இளம் பருவம் — பண்பாடு & சமூக நெறி',
+    subtitle: 'வயது 10 – 13 • 5 நூல்கள் • 35 அத்தியாயங்கள் • பக்தி, பண்பு & இல்லற சாதனா',
+    overview: 'இளம் பருவ மாணவர்களுக்கு உள்ளொழுக்கமும் சமூகப் பொறுப்பும் கற்பிக்கப்படுகிறது. நற்சிந்தனை மற்றும் நற்சொல் தவிர்த்து மற்ற 5 நூல்கள் பாடத்திட்டமாக அமைகின்றன. திருமுறை பக்திப் பாடல்கள், பெரியபுராண நாயன்மார்களின் தியாக வரலாறு, அன்றாட பஞ்ச மகா யாகங்கள் மற்றும் ஜீவகாருண்ய ஒழுக்கம் ஆகியவை 3 Ds நெறிமுறைகளுடன் கற்பிக்கப்படுகின்றன.',
+    books: [
+      { name: '1. நன்னெறி (Nanneri)', desc: 'ஆசிரிய பக்தி, பெற்றோர் மரியாதை, மனக்கட்டுப்பாடு', meta: '7 அத்தியாயங்கள்' },
+      { name: '2. நல்லறம் (Nallaram)', desc: 'இல்லற நெறி, பிறருதவி, ஜீவகாருண்யம்', meta: '7 அத்தியாயங்கள்' },
+      { name: '3. நற்பண்பு (Narpanbu)', desc: 'வாய்மை, சகிப்புத்தன்மை, நேர்மை, இன்முகம்', meta: '7 அத்தியாயங்கள்' },
+      { name: '4. நற்துணை (Narthunai)', desc: 'தேவாரத் திருமுறை, அபயம், சரணாகதி', meta: '7 அத்தியாயங்கள்' },
+      { name: '5. நற்செயல் (Narcheyal)', desc: 'தினசரி சாதனா, வழிபாட்டு நெறி, சமூகத் தொண்டு', meta: '7 அத்தியாயங்கள்' }
+    ],
+    grades: [
+      { title: 'தரம் 5', sub: '5 நூல்கள் (35 அத்.)', url: 'tharam-5.html' },
+      { title: 'தரம் 6', sub: '5 நூல்கள் (35 அத்.)', url: 'tharam-6.html' },
+      { title: 'தரம் 7', sub: '5 நூல்கள் (35 அத்.)', url: 'tharam-7.html' },
+      { title: 'தரம் 8', sub: '5 நூல்கள் (35 அத்.)', url: 'tharam-8.html' }
+    ],
+    flagshipUrl: 'tharam-5.html',
+    flagshipLabel: 'தரம் 5 வகுப்பறைக்குச் செல்க ➔'
+  },
+  secondary: {
+    badge: '3. உயர்நிலைப் பருவம் • உயர்நிலைப் பள்ளி (Grades 9 – 10)',
+    title: 'உயர்நிலைப் பருவம் — அறநெறி, வாய்மை & சமூகம்',
+    subtitle: 'வயது 14 – 15 • 6 நூல்கள் • 42 அத்தியாயங்கள் • இன்சொல், வள்ளலார் & சைவ சித்தாந்தம்',
+    overview: 'உயர்நிலைப் பள்ளியில் மாணவர்களின் சொல்வன்மையும் அறவுணர்வும் செழுமை பெறுகின்றன. இங்கு நற்சொல் (இனியவை கூறல், வாய்மை, நாவடக்கம்) சேர்க்கப்பட்டு மொத்தம் 6 நூல்கள் பயிற்றுவிக்கப்படுகின்றன. வள்ளலாரின் ஜீவகாருண்ய ஒழுக்கம், சைவ சித்தாந்த அடிப்படைகள் மற்றும் சமுதாய அறப்பணிகள் முன்னிறுத்தப்படுகின்றன.',
+    books: [
+      { name: '1. நன்னெறி (Nanneri)', desc: 'ஆத்ம சுத்தி, மன ஒருமைப்பாடு, உறுதி', meta: '7 அத்தியாயங்கள்' },
+      { name: '2. நல்லறம் (Nallaram)', desc: 'சமூக சமத்துவம், பொதுநலம், அறக்கொடை', meta: '7 அத்தியாயங்கள்' },
+      { name: '3. நற்பண்பு (Narpanbu)', desc: 'வீரம், விவேகம், தர்ம உறுதி', meta: '7 அத்தியாயங்கள்' },
+      { name: '4. நற்துணை (Narthunai)', desc: 'திருவாசகம், திருப்புகழ் தத்துவப் பயில்வு', meta: '7 அத்தியாயங்கள்' },
+      { name: '5. நற்சொல் (Narchol)', desc: 'இனியவை நாற்பது, திருக்குறள் இன்சொல், வாக்குச் சுத்தி', meta: '7 அத்தியாயங்கள்' },
+      { name: '6. நற்செயல் (Narcheyal)', desc: 'பஞ்ச மகா யாகங்கள், சுற்றுச்சூழல் தர்மம்', meta: '7 அத்தியாயங்கள்' }
+    ],
+    grades: [
+      { title: 'தரம் 9', sub: '6 நூல்கள் (42 அத்.)', url: 'tharam-9.html' },
+      { title: 'தரம் 10', sub: '6 நூல்கள் (42 அத்.)', url: 'tharam-10.html' }
+    ],
+    flagshipUrl: 'tharam-9.html',
+    flagshipLabel: 'தரம் 9 வகுப்பறைக்குச் செல்க ➔'
+  },
+  senior: {
+    badge: '4. மேல்நிலைப் பருவம் • மேல்நிலைப் பள்ளி (Grades 11 – 12)',
+    title: 'மேல்நிலைப் பருவம் — தர்ம யோகம் & பள்ளி இறுதி',
+    subtitle: 'வயது 16 – 17 • 6 நூல்கள் • பகவத் கீதை யோகம் & தைத்திரீய உபநிடதம்',
+    overview: 'பள்ளிப் படிப்பின் இறுதி கட்டத்தில் மாணவர்களுக்கு விவேகமும் தர்மயோகமும் ஊட்டப்படுகின்றன. பகவத் கீதையின் கர்ம யோகம், பக்தி யோகம், ஞான யோகம் மற்றும் தைத்திரீய உபநிடத சீக்ஷாவல்லி (சத்யம் வத, தர்மம் சர) ஆகிய உயர்ந்த அறக்கட்டளைகள் பயிற்றுவிக்கப்படுகின்றன. பள்ளிப் பட்டயச் சான்றிதழுடன் உயர்கல்விக்கான தார்மீகத் தயாரிப்பு நிறைவடைகிறது.',
+    books: [
+      { name: '1. நன்னெறி (Nanneri)', desc: 'வேதாந்த நன்னெறி, சத்துவ குணம், ஆத்ம ஞானம்', meta: '7 அத்தியாயங்கள்' },
+      { name: '2. நல்லறம் (Nallaram)', desc: 'உலகளாவிய சகோதரத்துவம், சுயநலமின்மை', meta: '7 அத்தியாயங்கள்' },
+      { name: '3. நற்பண்பு (Narpanbu)', desc: 'உபநிடத ஒழுக்கம்: சத்யம் வத, தர்மம் சர', meta: '7 அத்தியாயங்கள்' },
+      { name: '4. நற்துணை (Narthunai)', desc: 'பகவத் கீதை சரணாகதி & திருவருட்பா', meta: '7 அத்தியாயங்கள்' },
+      { name: '5. நற்சொல் (Narchol)', desc: 'மெய்யுரை, பிரம்ம வாக்கியங்கள், தூய மொழி', meta: '7 அத்தியாயங்கள்' },
+      { name: '6. நற்செயல் (Narcheyal)', desc: 'யோக சாதனா, தியானம், நிஷ்காம கர்மம்', meta: '7 அத்தியாயங்கள்' }
+    ],
+    grades: [
+      { title: 'தரம் 11', sub: '6 நூல்கள் (42 அத்.)', url: 'tharam-11.html' },
+      { title: 'தரம் 12', sub: '6 நூல்கள் (பள்ளி இறுதி)', url: 'tharam-12.html' }
+    ],
+    flagshipUrl: 'tharam-11.html',
+    flagshipLabel: 'தரம் 11 வகுப்பறைக்குச் செல்க ➔'
+  },
+  collegiate: {
+    badge: '5. உயர்கல்வி வித்யாபீடம் • பட்டப் படிப்புகள் & ஆய்வு',
+    title: 'உயர்கல்வி வித்யாபீடம் — வேத-நவீன அறிவியல் சங்கமம்',
+    subtitle: 'வயது 18+ • அனைத்து 7 நூல்கள் • 49 அத்தியாயங்கள் • குவாண்டம் இயற்பியல் & வேதாந்தம்',
+    overview: 'உயர்கல்வி வித்யாபீடத்தில் அனைத்து 7 ஆசிரம நூல்களும் முழுமையாக ஆராயப்படுகின்றன (நற்சிந்தனை உட்பட). வேதாந்த-குவாண்டம் இயற்பியல் சங்கமம், பிரபஞ்சப் பெருவெடிப்பு, உணர்வு நிலை (Consciousness), காஞ்சி மகா பெரியவா அருளுரைகள் மற்றும் மெய்ப்பொருள் ஆய்வு ஆகியவை உயர்மட்டப் பாடங்களாகத் திகழ்கின்றன.',
+    books: [
+      { name: '1. நன்னெறி (Nanneri)', desc: 'பிரம்மசூத்திரம், ஆதிசங்கரர் வேதாந்த நன்னெறி', meta: 'உயர்கல்விப் பாடநூல்' },
+      { name: '2. நல்லறம் (Nallaram)', desc: 'தர்ம சாஸ்திர ஒப்பீடு, உலக நெறிமுறைகள்', meta: 'உயர்கல்விப் பாடநூல்' },
+      { name: '3. நற்பண்பு (Narpanbu)', desc: 'மெய்ப்பொருள் உணர்தல் & மெய்யியல் நெறி', meta: 'உயர்கல்விப் பாடநூல்' },
+      { name: '4. நற்துணை (Narthunai)', desc: 'உபநிடத மகா வாக்கியங்கள் & அத்வைத சாரம்', meta: 'உயர்கல்விப் பாடநூல்' },
+      { name: '5. நற்சிந்தனை (Narchinthanai)', desc: 'குவாண்டம் மெக்கானிக்ஸ், நனவு நிலை & பிரபஞ்ச இயல்', meta: 'உயர்கல்விப் பாடநூல்' },
+      { name: '6. நற்சொல் (Narchol)', desc: 'வேத மந்திர விஞ்ஞாநம் & ஒலி அதிர்வுகள்', meta: 'உயர்கல்விப் பாடநூல்' },
+      { name: '7. நற்செயல் (Narcheyal)', desc: 'ராஜ யோகம், குண்டலினி சாதனா & பரிபூரண நிஷ்டை', meta: 'உயர்கல்விப் பாடநூல்' }
+    ],
+    grades: [
+      { title: 'B.A. / B.Sc.', sub: 'இளங்கலை (3 ஆண்டுகள்)', url: 'higher-studies.html#tierUG' },
+      { title: 'M.A. / M.Sc.', sub: 'முதுகலை (2 ஆண்டுகள்)', url: 'higher-studies.html#tierPG' },
+      { title: 'Ph.D. ஆய்வு', sub: 'முனைவர் பட்ட ஆய்வு', url: 'higher-studies.html#tierPhD' }
+    ],
+    flagshipUrl: 'higher-studies.html',
+    flagshipLabel: 'உயர்கல்வி வித்யாபீடம் காண்க ➔'
+  }
+};
+
+const ASHRAM_VISUAL_DATA = {
+  tapovanam: {
+    badge: 'ஆசிரமக் களம் • தபோவனம்',
+    title: 'குருகுல ஆலமர வித்யாபீடம்',
+    subtitle: 'இயற்கை மடியில் மரத்தடி கல்வி • அமைதியான தபோவனச் சூழல்',
+    overview: 'பழங்கால குருகுலங்கள் அடர்ந்த காடுகளிலும், ஆலமரத்தடி நிழலிலும் இயங்கின. அங்கு மாணவர்கள் இயற்கை சூழலில், வணிகப் பகட்டுகளின்றி குருவின் அருளுடன் கல்வி கற்றனர். அதே விழுமியங்களை நவீன இணையத் தளத்தில் பிரதிபலிக்கும் வகையில் குரு குல ஆசிரமம் வடிவமைக்கப்பட்டுள்ளது.',
+    highlights: [
+      'மழை, காற்று, மரங்களின் ஓசை இணைந்த அமைதியான கற்றல் களம்',
+      'அலைபேசி அல்லது மடிக்கணினியில் அமர்ந்து கற்கும் ஆசிரம வித்யாபீடம்',
+      'வணிக விளம்பரங்களோ இடையூறுகளோ அற்ற தூய கல்விப் பெட்டகம்'
+    ],
+    actionUrl: 'school.html',
+    actionLabel: 'பள்ளிப் போர்டல் காண ➔'
+  },
+  tradition: {
+    badge: 'சாத்திரப் பெட்டகம் • குரு சீடர் மரபு',
+    title: 'குரு சீடர் பாரம்பரியமும் 7 பாடநூல்களும்',
+    subtitle: 'நன்னெறி முதல் நற்செயல் வரை • 49 அத்தியாய முழுமைப் பயில்வு',
+    overview: 'குரு சீடர் பாரம்பரியம் என்பது வெறும் புத்தகப் படிப்பல்ல; அது குருவின் நெறிமுறைகளைத் தன் வாழ்க்கையில் உணர்ந்து வாழ்வது. நன்னெறி, நல்லறம், நற்பண்பு, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செயல் என்ற 7 நூல்களும் மாணவனை ஒரு முழு மனிதனாக உருவாக்கும் 3 Ds நெறிகளை ஊட்டுகின்றன.',
+    highlights: [
+      'மழலை முதல் உயர்கல்வி வரை படிப்படியாக விரிவடையும் நூல்கள்',
+      'அறம், பக்தி, விஞ்ஞானம், தொண்டு இணைந்த ஒருங்கிணைந்த பாடத்திட்டம்',
+      'திருமுறைகள், திருக்குறள், கீதை, வள்ளலார் நெறிகளின் கலவை'
+    ],
+    actionUrl: 'books.html',
+    actionLabel: '7 நூல்கள் அரங்கம் செல்ல ➔'
+  }
+};
+
+const ASHRAM_PILLAR_DATA = {
+  school: {
+    badge: 'பள்ளி அரங்கம் • வித்யா குடீரம்',
+    title: 'வித்யா குடீரம் இணையப் பள்ளி அரங்கம்',
+    subtitle: '12 வாரக் கால அட்டவணை • வினாடி-வினா • சாதனா மதிப்பெண்கள்',
+    overview: 'ஒவ்வொரு வகுப்பிற்கும் பிரத்யேக 12 வாரக் கால அட்டவணை, வாராந்திர அத்தியாய வாசிப்பு, சுயமதிப்பீட்டு வினாடி-வினா மற்றும் சாதனா புள்ளிகளுடன் கூடிய முழுமையான வகுப்பறை அனுபவம். கூகிள் கிளாஸ்ரூமை விட எளிமையான, கவனச் சிதறலற்ற ஆன்மீகப் பள்ளி அமைப்பு.',
+    highlights: [
+      'வாராந்திரப் பாடத் திட்டம் (12 Weeks Curriculum Roadmap)',
+      'அத்தியாய முடிவில் சுயமதிப்பீட்டு வினாடி-வினா (Quizzes)',
+      'பாடக் குறிப்புகள் சேமிப்பு மற்றும் சாதனா முன்னேற்ற கண்காணிப்பு'
+    ],
+    actionUrl: 'school.html',
+    actionLabel: 'வகுப்பறைக்குச் செல்க ➔'
+  },
+  books: {
+    badge: 'பாடநூல்கள் பெட்டகம்',
+    title: '7 ஆசிரமப் பாடநூல்கள் அலமாரி',
+    subtitle: 'நன்னெறி, நல்லறம், நற்பண்பு, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செயல்',
+    overview: 'அறநெறி, ஜீவகாருண்யம், உண்மை பேசுதல், இறை பக்தி, அறிவியல் சிந்தனை, இனிய மொழி, சமூக நற்செயல் என்ற 7 தூண்களின் கீழ் வகுக்கப்பட்ட 7 புனித பாடநூல்கள். அனைத்துப் பள்ளிப் பாடங்களும் இந்த 7 கொள்கலன்களுக்குள்ளேயே வகைப்படுத்தப்பட்டுள்ளன.',
+    highlights: [
+      'ஒவ்வொரு நூலிலும் 7 அத்தியாயங்கள் (மொத்தம் 49 அத்தியாயங்கள்)',
+      'பருவ வாரியாக எளிமைப்படுத்தப்பட்ட நூல்களின் எண்ணிக்கை (1, 2, 5, 6, 7)',
+      'முழுமையான உரை, விளக்கம், மேற்கோள்கள் மற்றும் தியானப் பயிற்சி'
+    ],
+    actionUrl: 'books.html',
+    actionLabel: 'நூலகம் காண்க ➔'
+  },
+  sadhana: {
+    badge: 'வாழ்வியல் தர்மம் • சாதனா',
+    title: '3 Ds தர்ம வாழ்வியல் சாதனா நெறி',
+    subtitle: 'கடமை (Duty) • கட்டுப்பாடு (Discipline) • கண்ணியம் (Dignity)',
+    overview: 'படித்த கல்வியை அன்றாட வாழ்வில் கடைப்பிடிப்பதே சாதனாவாகும். இல்லற தர்மம், பெற்றோர் வழிபாடு, பஞ்ச மகா யாகங்கள், அமைதியான சிந்தனை, நேர்மையான உழைப்பு ஆகியவற்றைக் கற்பிக்கும் வாழ்வியல் நெறிமுறைகள்.',
+    highlights: [
+      'கடமை (Duty): பெற்றோர், ஆசிரியர், சமுதாயத்திற்கான கடமைகளை உணர்தல்',
+      'கட்டுப்பாடு (Discipline): நேரம் தவறாமை, உள்ளொழுக்கம், புலனடக்கம்',
+      'கண்ணியம் (Dignity): பிற உயிர்களிடத்தில் அன்பு, நாவடக்கம், நேர்மை'
+    ],
+    actionUrl: 'grihastha.html',
+    actionLabel: 'வாழ்வியல் நெறி காண்க ➔'
+  }
+};
+
+let ashramLastFocusedElement = null;
+
+function ensureAshramDrawerDOMElements() {
+  if (!document.getElementById('ashramDrawerBackdrop')) {
+    const backdrop = document.createElement('div');
+    backdrop.id = 'ashramDrawerBackdrop';
+    backdrop.className = 'ashram-drawer-backdrop';
+    backdrop.setAttribute('aria-hidden', 'true');
+    backdrop.addEventListener('click', closeAshramDrawer);
+    document.body.appendChild(backdrop);
+  }
+
+  if (!document.getElementById('ashramDrawerShell')) {
+    const shell = document.createElement('div');
+    shell.id = 'ashramDrawerShell';
+    shell.className = 'ashram-drawer-shell';
+    shell.setAttribute('role', 'dialog');
+    shell.setAttribute('aria-modal', 'true');
+    shell.setAttribute('aria-label', 'ஆசிரம விவரப் பேழை');
+    document.body.appendChild(shell);
+  }
+}
+
+function openAshramDrawer(config) {
+  ensureAshramDrawerDOMElements();
+  ashramLastFocusedElement = document.activeElement;
+
+  const shell = document.getElementById('ashramDrawerShell');
+  const backdrop = document.getElementById('ashramDrawerBackdrop');
+  if (!shell || !backdrop) return;
+
+  const badgeHtml = config.badge ? `<span class="ashram-drawer-badge">${config.badge}</span>` : '';
+  const subtitleHtml = config.subtitle ? `<div class="ashram-drawer-subtitle">${config.subtitle}</div>` : '';
+  
+  let footerHtml = '';
+  if (config.primaryAction) {
+    footerHtml += `<a href="${config.primaryAction.url}" class="ashram-drawer-btn primary">${config.primaryAction.label}</a>`;
+  }
+  footerHtml += `<button type="button" class="ashram-drawer-btn secondary" onclick="closeAshramDrawer()">மூடுக (Close)</button>`;
+
+  shell.innerHTML = `
+    <div class="ashram-drawer-header">
+      <div class="ashram-drawer-header-content">
+        ${badgeHtml}
+        <h2 class="ashram-drawer-title">${config.title || 'விவரங்கள்'}</h2>
+        ${subtitleHtml}
+      </div>
+      <button type="button" class="ashram-drawer-close-btn" onclick="closeAshramDrawer()" aria-label="மூடுக">✕</button>
+    </div>
+    <div class="ashram-drawer-body">
+      ${config.bodyHtml || ''}
+    </div>
+    <div class="ashram-drawer-footer">
+      ${footerHtml}
+    </div>
+  `;
+
+  document.body.classList.add('drawer-open');
+  backdrop.classList.add('active');
+  shell.classList.add('active');
+
+  const closeBtn = shell.querySelector('.ashram-drawer-close-btn');
+  if (closeBtn) closeBtn.focus();
+}
+
+function closeAshramDrawer() {
+  const shell = document.getElementById('ashramDrawerShell');
+  const backdrop = document.getElementById('ashramDrawerBackdrop');
+
+  if (shell) shell.classList.remove('active');
+  if (backdrop) backdrop.classList.remove('active');
+  document.body.classList.remove('drawer-open');
+
+  if (ashramLastFocusedElement && typeof ashramLastFocusedElement.focus === 'function') {
+    ashramLastFocusedElement.focus();
+  }
+}
+
+function openStageDrawer(stageKey) {
+  const data = ASHRAM_STAGE_DATA[stageKey];
+  if (!data) return;
+
+  let booksHtml = '';
+  if (data.books && data.books.length) {
+    booksHtml = `
+      <div class="ashram-drawer-card">
+        <h4 class="ashram-drawer-card-title">📖 இப்பருவத்தின் பாடநூல்கள் (${data.books.length} Books)</h4>
+        <div class="ashram-drawer-books-list">
+          ${data.books.map(b => `
+            <div class="ashram-drawer-book-row">
+              <div>
+                <span class="ashram-drawer-book-name">${b.name}</span>
+                <p style="font-size:0.82rem; color:#94a3b8; margin:3px 0 0 0;">${b.desc}</p>
+              </div>
+              <span class="ashram-drawer-book-meta">${b.meta}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  let gradesHtml = '';
+  if (data.grades && data.grades.length) {
+    gradesHtml = `
+      <div class="ashram-drawer-card">
+        <h4 class="ashram-drawer-card-title">🎓 வகுப்புத் தேர்வுகள் (Direct Launch)</h4>
+        <div class="ashram-drawer-grades-grid">
+          ${data.grades.map(g => `
+            <a href="${g.url}" class="ashram-drawer-grade-link">
+              <span class="ashram-drawer-grade-name">${g.title}</span>
+              <span class="ashram-drawer-grade-sub">${g.sub}</span>
+            </a>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  const bodyHtml = `
+    <div class="ashram-drawer-card">
+      <h4 class="ashram-drawer-card-title">🌿 பருவத்தின் சிறப்பம்சம் &amp; நோக்கம்</h4>
+      <p class="ashram-drawer-text">${data.overview}</p>
+    </div>
+    ${booksHtml}
+    ${gradesHtml}
+  `;
+
+  openAshramDrawer({
+    title: data.title,
+    badge: data.badge,
+    subtitle: data.subtitle,
+    bodyHtml: bodyHtml,
+    primaryAction: {
+      url: data.flagshipUrl,
+      label: data.flagshipLabel
+    }
+  });
+}
+
+function openVisualDrawer(visualKey) {
+  const data = ASHRAM_VISUAL_DATA[visualKey];
+  if (!data) return;
+
+  const highlightsHtml = data.highlights ? `
+    <div class="ashram-drawer-card">
+      <h4 class="ashram-drawer-card-title">✨ முக்கியத் தூண்கள்</h4>
+      <ul style="padding-left:18px; margin:0; color:#cbd5e1; font-size:0.9rem; line-height:1.7;">
+        ${data.highlights.map(h => `<li>${h}</li>`).join('')}
+      </ul>
+    </div>
+  ` : '';
+
+  const bodyHtml = `
+    <div class="ashram-drawer-card">
+      <h4 class="ashram-drawer-card-title">🏛️ பின்னணி &amp; விழுமியங்கள்</h4>
+      <p class="ashram-drawer-text">${data.overview}</p>
+    </div>
+    ${highlightsHtml}
+  `;
+
+  openAshramDrawer({
+    title: data.title,
+    badge: data.badge,
+    subtitle: data.subtitle,
+    bodyHtml: bodyHtml,
+    primaryAction: {
+      url: data.actionUrl,
+      label: data.actionLabel
+    }
+  });
+}
+
+function openPillarDrawer(pillarKey) {
+  const data = ASHRAM_PILLAR_DATA[pillarKey];
+  if (!data) return;
+
+  const highlightsHtml = data.highlights ? `
+    <div class="ashram-drawer-card">
+      <h4 class="ashram-drawer-card-title">✨ சிறப்பம்சங்கள்</h4>
+      <ul style="padding-left:18px; margin:0; color:#cbd5e1; font-size:0.9rem; line-height:1.7;">
+        ${data.highlights.map(h => `<li>${h}</li>`).join('')}
+      </ul>
+    </div>
+  ` : '';
+
+  const bodyHtml = `
+    <div class="ashram-drawer-card">
+      <h4 class="ashram-drawer-card-title">🌿 தத்துவ வழிகாட்டல்</h4>
+      <p class="ashram-drawer-text">${data.overview}</p>
+    </div>
+    ${highlightsHtml}
+  `;
+
+  openAshramDrawer({
+    title: data.title,
+    badge: data.badge,
+    subtitle: data.subtitle,
+    bodyHtml: bodyHtml,
+    primaryAction: {
+      url: data.actionUrl,
+      label: data.actionLabel
+    }
+  });
+}
+
+// Global escape key handler for drawer
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    const shell = document.getElementById('ashramDrawerShell');
+    if (shell && shell.classList.contains('active')) {
+      closeAshramDrawer();
+    }
+  }
+});
+
+// Expose globals
+window.openAshramDrawer = openAshramDrawer;
+window.closeAshramDrawer = closeAshramDrawer;
+window.openStageDrawer = openStageDrawer;
+window.openVisualDrawer = openVisualDrawer;
+window.openPillarDrawer = openPillarDrawer;

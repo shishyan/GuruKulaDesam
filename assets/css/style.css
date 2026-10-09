@@ -9256,3 +9256,388 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .course-sidebar-mobile-toggle { bottom: calc(68px + env(safe-area-inset-bottom, 0px)) !important; }
   body { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
 }
+
+/* ==========================================================================
+   ASHRAM CONTEXTUAL DRAWER & POPUP MODAL SYSTEM
+   Retains user scroll context without disorientation
+   ========================================================================== */
+
+/* Prevent background scroll when drawer or modal is active */
+body.drawer-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+/* Backdrop */
+.ashram-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 16, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+}
+
+.ashram-drawer-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Side Drawer Shell (Desktop default: right slide-in) */
+.ashram-drawer-shell {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(560px, 94vw);
+  height: 100vh;
+  height: 100dvh;
+  background: linear-gradient(180deg, rgba(8, 20, 38, 0.98) 0%, rgba(5, 14, 28, 0.99) 100%);
+  border-left: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: -15px 0 50px rgba(0, 0, 0, 0.85), 0 0 35px rgba(20, 184, 166, 0.15);
+  z-index: 2200;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.36s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.ashram-drawer-shell.active {
+  transform: translateX(0);
+}
+
+/* Mobile: Bottom-sheet slide-up */
+@media (max-width: 640px) {
+  .ashram-drawer-shell {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 88vh;
+    height: 88dvh;
+    border-left: none;
+    border-top: 1px solid rgba(56, 189, 248, 0.35);
+    border-radius: 20px 20px 0 0;
+    transform: translateY(100%);
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.9);
+  }
+  .ashram-drawer-shell.active {
+    transform: translateY(0);
+  }
+}
+
+/* Drawer Header */
+.ashram-drawer-header {
+  padding: 20px 24px 16px 24px;
+  background: rgba(10, 24, 46, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ashram-drawer-header-content {
+  flex-grow: 1;
+}
+
+.ashram-drawer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.ashram-drawer-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.ashram-drawer-subtitle {
+  font-size: 0.86rem;
+  color: #94a3b8;
+  line-height: 1.45;
+}
+
+.ashram-drawer-close-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #cbd5e1;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.ashram-drawer-close-btn:hover {
+  background: rgba(239, 68, 68, 0.25);
+  border-color: #ef4444 !important;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+/* Drawer Body */
+.ashram-drawer-body {
+  padding: 24px;
+  overflow-y: auto;
+  flex-grow: 1;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.ashram-drawer-body::-webkit-scrollbar {
+  width: 6px;
+}
+.ashram-drawer-body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+.ashram-drawer-body::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.3);
+  border-radius: 4px;
+}
+
+/* Drawer Content Blocks */
+.ashram-drawer-card {
+  background: rgba(15, 30, 56, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.ashram-drawer-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #2dd4bf;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ashram-drawer-text {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+/* Books List inside Drawer */
+.ashram-drawer-books-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ashram-drawer-book-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: rgba(2, 8, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.ashram-drawer-book-row:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  background: rgba(14, 165, 233, 0.1);
+  transform: translateX(4px);
+}
+
+.ashram-drawer-book-name {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ashram-drawer-book-meta {
+  font-size: 0.78rem;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Grade Launch Pills inside Drawer */
+.ashram-drawer-grades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.ashram-drawer-grade-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.ashram-drawer-grade-link:hover {
+  background: rgba(20, 184, 166, 0.25);
+  border-color: #2dd4bf;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(20, 184, 166, 0.25);
+}
+
+.ashram-drawer-grade-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.ashram-drawer-grade-sub {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 3px;
+}
+
+/* Drawer Sticky Footer */
+.ashram-drawer-footer {
+  padding: 16px 24px;
+  background: rgba(10, 24, 46, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.ashram-drawer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ashram-drawer-btn.primary {
+  background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+  color: #ffffff;
+  border: 1px solid rgba(45, 212, 191, 0.4) !important;
+  flex-grow: 1;
+}
+
+.ashram-drawer-btn.primary:hover {
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
+  box-shadow: 0 0 16px rgba(45, 212, 191, 0.4);
+}
+
+.ashram-drawer-btn.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.ashram-drawer-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+/* Stage card trigger button styling */
+.stage-details-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3) !important;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 12px;
+  width: fit-content;
+}
+
+.stage-details-btn:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8 !important;
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+/* Centered Popup Modal Box */
+.ashram-modal-shell {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 2200;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s ease, visibility 0.28s;
+  pointer-events: none;
+}
+
+.ashram-modal-shell.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.ashram-modal-box {
+  background: linear-gradient(180deg, rgba(12, 28, 54, 0.98) 0%, rgba(6, 16, 32, 0.99) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 18px;
+  max-width: 620px;
+  width: 100%;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 35px rgba(20, 184, 166, 0.2);
+  overflow: hidden;
+  transform: scale(0.95);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ashram-modal-shell.active .ashram-modal-box {
+  transform: scale(1);
+}
+

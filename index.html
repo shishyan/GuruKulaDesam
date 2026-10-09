@@ -608,7 +608,10 @@
             <h3>குருகுல ஆலமர வித்யாபீடம்</h3>
             <p>இயற்கையின் மடியில் அமைதியான சூழலில் அமைந்த இணையத் தபோவனம். வணிகப் பகட்டுகளின்றி பண்பாட்டுக் கல்வி கற்கும் ஆசிரம வித்யாபீடம்.</p>
           </div>
-          <a href="school.html" class="home-card-link">பள்ளிப் போர்டல் காண &rarr;</a>
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 10px;">
+            <button type="button" class="stage-details-btn" onclick="openVisualDrawer('tapovanam')">விவரங்கள் &rarr;</button>
+            <a href="school.html" class="home-card-link">பள்ளிப் போர்டல் காண &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -622,7 +625,10 @@
             <h3>குரு சீடர் பாரம்பரியமும் 7 நூல்களும்</h3>
             <p>நன்னெறி முதல் நற்செயல் வரை — விழுமியங்கள், திருமுறைப் பாடல்கள், மற்றும் 3 Ds வாழ்வியல் சாதனா நெறிமுறைகள் அடங்கிய பாடநூல்கள்.</p>
           </div>
-          <a href="books.html" class="home-card-link">நூல்கள் அரங்கம் செல்ல &rarr;</a>
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 10px;">
+            <button type="button" class="stage-details-btn" onclick="openVisualDrawer('tradition')">விவரங்கள் &rarr;</button>
+            <a href="books.html" class="home-card-link">நூல்கள் அரங்கம் செல்ல &rarr;</a>
+          </div>
         </div>
       </article>
     </div>
@@ -651,8 +657,9 @@
               <span class="stage-card-icon">🌱</span>
             </div>
             <p class="stage-card-desc">விளையாடிப் பயிலல், பகிர்தல், நற்பண்புகள், உண்மை பேசுதல் &amp; 3 Ds (கடமை, கட்டுப்பாடு, கண்ணியம்) நெறிமுறை.</p>
+            <button type="button" class="stage-details-btn" onclick="openStageDrawer('primary')" aria-label="1. பாலப் பருவம் விவரங்கள்">விவரங்கள் &rarr;</button>
           </div>
-          <div class="stage-grades-row">
+          <div class="stage-grades-row" style="margin-top: 16px;">
             <a href="tharam-1.html" class="stage-grade-btn" title="தரம் 1 • நற்செயல் (1 நூல்)">தரம் 1</a>
             <a href="tharam-2.html" class="stage-grade-btn" title="தரம் 2 • நற்செயல் (1 நூல்)">தரம் 2</a>
             <a href="tharam-3.html" class="stage-grade-btn" title="தரம் 3 • நற்செயல், நற்பண்பு (2 நூல்கள்)">தரம் 3</a>
@@ -672,8 +679,9 @@
               <span class="stage-card-icon">🌿</span>
             </div>
             <p class="stage-card-desc">ஒழுக்கம், நல்லறம், நற்பண்பு, திருமுறை பக்தி, இறை சரணாகதி &amp; இல்லற சாதனா நெறிமுறைகள்.</p>
+            <button type="button" class="stage-details-btn" onclick="openStageDrawer('middle')" aria-label="2. இளம் பருவம் விவரங்கள்">விவரங்கள் &rarr;</button>
           </div>
-          <div class="stage-grades-row">
+          <div class="stage-grades-row" style="margin-top: 16px;">
             <a href="tharam-5.html" class="stage-grade-btn" title="தரம் 5 • 5 நூல்கள்">தரம் 5</a>
             <a href="tharam-6.html" class="stage-grade-btn" title="தரம் 6 • 5 நூல்கள்">தரம் 6</a>
             <a href="tharam-7.html" class="stage-grade-btn" title="தரம் 7 • 5 நூல்கள்">தரம் 7</a>
@@ -693,8 +701,9 @@
               <span class="stage-card-icon">🛡️</span>
             </div>
             <p class="stage-card-desc">திருக்குறள் அறநெறி, வாய்மை, நாவடக்கம், இன்சொல், பஞ்ச மகா யாகங்கள் &amp; சமூகத் தொண்டு.</p>
+            <button type="button" class="stage-details-btn" onclick="openStageDrawer('secondary')" aria-label="3. உயர்நிலைப் பருவம் விவரங்கள்">விவரங்கள் &rarr;</button>
           </div>
-          <div class="stage-grades-row">
+          <div class="stage-grades-row" style="margin-top: 16px;">
             <a href="tharam-9.html" class="stage-grade-btn" title="தரம் 9 • 6 நூல்கள்">தரம் 9</a>
             <a href="tharam-10.html" class="stage-grade-btn" title="தரம் 10 • 6 நூல்கள்">தரம் 10</a>
           </div>
@@ -712,8 +721,9 @@
               <span class="stage-card-icon">🏹</span>
             </div>
             <p class="stage-card-desc">பகவத் கீதை யோக நெறி, தைத்திரீய உபநிடதம், தர்ம சிந்தனை &amp; பள்ளி இறுதித் தகுதி.</p>
+            <button type="button" class="stage-details-btn" onclick="openStageDrawer('senior')" aria-label="4. மேல்நிலைப் பருவம் விவரங்கள்">விவரங்கள் &rarr;</button>
           </div>
-          <div class="stage-grades-row">
+          <div class="stage-grades-row" style="margin-top: 16px;">
             <a href="tharam-11.html" class="stage-grade-btn" title="தரம் 11 • 6 நூல்கள்">தரம் 11</a>
             <a href="tharam-12.html" class="stage-grade-btn" title="தரம் 12 • 6 நூல்கள்">தரம் 12</a>
           </div>
@@ -731,8 +741,9 @@
               <span class="stage-card-icon">⚛️</span>
             </div>
             <p class="stage-card-desc">வேத-நவீன அறிவியல் சங்கமம், குவாண்டம் இயற்பியல், வேதாந்தம் &amp; முனைவர் பட்ட ஆய்வு.</p>
+            <button type="button" class="stage-details-btn" onclick="openStageDrawer('collegiate')" aria-label="5. உயர்கல்வி வித்யாபீடம் விவரங்கள்">விவரங்கள் &rarr;</button>
           </div>
-          <div class="stage-grades-row">
+          <div class="stage-grades-row" style="margin-top: 16px;">
             <a href="higher-studies.html#tierUG" class="stage-grade-btn" title="இளங்கலை (3 Yrs)">B.A. / B.Sc.</a>
             <a href="higher-studies.html#tierPG" class="stage-grade-btn" title="முதுகலை (2 Yrs)">M.A. முதுகலை</a>
             <a href="higher-studies.html#tierPhD" class="stage-grade-btn" title="முனைவர் ஆய்வு">Ph.D. ஆய்வு</a>
@@ -751,7 +762,10 @@
             <h4>வித்யா குடீரம் பள்ளி அரங்கம்</h4>
             <p>12 வார கால அட்டவணை, அத்தியாய வாசிப்பு, வினாடி-வினா, சாதனா புள்ளிகள் &amp; பருவப் பட்டயச் சான்றிதழ்.</p>
           </div>
-          <a href="school.html" class="portal-btn">வகுப்பறைக்குச் செல்க &rarr;</a>
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px;">
+            <button type="button" class="stage-details-btn" onclick="openPillarDrawer('school')">விவரங்கள் &rarr;</button>
+            <a href="school.html" class="portal-btn">வகுப்பறை &rarr;</a>
+          </div>
         </div>
 
         <div class="portal-card">
@@ -760,7 +774,10 @@
             <h4>7 ஆசிரமப் பாடநூல்கள் அலமாரி</h4>
             <p>நன்னெறி, நல்லறம், நற்பண்பு, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செயல் — விழுமியக் கல்விப் பெட்டகம்.</p>
           </div>
-          <a href="books.html" class="portal-btn">நூலகம் காண்க &rarr;</a>
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px;">
+            <button type="button" class="stage-details-btn" onclick="openPillarDrawer('books')">விவரங்கள் &rarr;</button>
+            <a href="books.html" class="portal-btn">நூலகம் &rarr;</a>
+          </div>
         </div>
 
         <div class="portal-card">
@@ -769,10 +786,14 @@
             <h4>3 Ds தர்ம வாழ்வியல் சாதனா</h4>
             <p>கடமை (Duty), கட்டுப்பாடு (Discipline), கண்ணியம் (Dignity) — அன்றாட வாழ்வில் தர்ம நெறிமுறைகள்.</p>
           </div>
-          <a href="grihastha.html" class="portal-btn">வாழ்வியல் நெறி &rarr;</a>
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px;">
+            <button type="button" class="stage-details-btn" onclick="openPillarDrawer('sadhana')">விவரங்கள் &rarr;</button>
+            <a href="grihastha.html" class="portal-btn">வாழ்வியல் &rarr;</a>
+          </div>
         </div>
       </div>
     </section>
+
 
   </main>
 
