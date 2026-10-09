@@ -98,6 +98,33 @@ def run_tests():
         assert page.locator('#tierPG').is_visible(), "PG tier should be visible under all"
         print("Degree filtering (UG, PG, All) verified successfully!")
 
+        # Test admissions.html as a parent
+        print("--- Testing admissions.html (Parent Journey) ---")
+        page.goto('http://localhost:8000/admissions.html', wait_until='networkidle')
+        assert page.locator('#admissionForm').is_visible(), "Admission form should be visible"
+        
+        # Fill form as parent
+        page.fill('#studentName', 'செந்தமிழ் செல்வன்')
+        page.fill('#studentDob', '2020-04-14')
+        page.fill('#studentAge', '6')
+        page.select_option('#studentGender', 'ஆண் (Male)')
+        page.select_option('#appliedGrade', 'Grade 1')
+        page.fill('#parentName', 'சுந்தரமூர்த்தி')
+        page.fill('#parentPhone', '+91 9876543210')
+        page.fill('#parentCity', 'கோயம்புத்தூர்')
+        
+        # Submit form
+        page.locator('.submit-admission-btn').click()
+        page.wait_for_timeout(300)
+        
+        card = page.locator('#admissionSuccessCard')
+        assert card.is_visible(), "Admission success card should be visible after submit"
+        roll = page.locator('#cardRollNo').text_content()
+        print(f"Generated Student Admission ID: {roll}")
+        assert 'GKD-2026-ADM-' in roll, f"Expected roll starting with GKD-2026-ADM-, got {roll}"
+        assert page.locator('#cardStudentName').text_content() == 'செந்தமிழ் செல்வன்'
+        print("Parent admission flow and card generation verified successfully!")
+
         # Test books.html
         print("--- Testing books.html ---")
         page.goto('http://localhost:8000/books.html', wait_until='networkidle')

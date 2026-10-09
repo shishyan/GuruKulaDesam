@@ -27,6 +27,14 @@ PURE_CURRICULUM_STRIP_BAR = """  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL - CUR
         </a>
       </div>
 
+      <!-- சேர்க்கை அரங்கம் (Admissions Desk) -->
+      <div class="strip-group" data-group="admissions">
+        <a href="admissions.html" class="strip-item" data-tooltip="மாணவர் சேர்க்கை (Admissions)">
+          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg></span>
+          <span class="strip-item-label">மாணவர் சேர்க்கை (Admissions)</span>
+        </a>
+      </div>
+
       <!-- 2. பருவம் 1: பாலப் பருவம் (Primary: Grades 1 - 4) -->
       <div class="strip-group" data-group="stage1">
         <a href="tharam-1.html" class="strip-item strip-has-sub" data-tooltip="1. பாலப் பருவம் (1-4)">
@@ -119,7 +127,14 @@ PURE_CURRICULUM_STRIP_BAR = """  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL - CUR
           <a href="books.html?book=narchinthanai" class="strip-sub-item"><span class="strip-sub-icon">⚛️</span><span>5. நற்சிந்தனை (Narchinthanai)</span></a>
           <a href="books.html?book=narchol" class="strip-sub-item"><span class="strip-sub-icon">🌸</span><span>6. நற்சொல் (Narchol)</span></a>
           <a href="books.html?book=narcheyal" class="strip-sub-item"><span class="strip-sub-icon">☀️</span><span>7. நற்செயல் (Narcheyal)</span></a>
-        </div>
+      </div>
+
+      <!-- 8. வித்யா குடீரம் பள்ளி போர்டல் (Vidya Kudiram Online School) -->
+      <div class="strip-group" data-group="school">
+        <a href="school.html" class="strip-item" data-tooltip="வித்யா குடீரம் பள்ளி போர்டல்">
+          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></span>
+          <span class="strip-item-label">வித்யா குடீரம் பள்ளி போர்டல்</span>
+        </a>
       </div>
 
     </nav>

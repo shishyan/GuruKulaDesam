@@ -15,6 +15,7 @@ PURE_CURRICULUM_FOOTER = """  <footer class="site-footer" id="siteFooter">
       <div class="footer-col">
         <h4>பள்ளிப் பருவங்கள் &amp; உயர்கல்வி</h4>
         <ul class="footer-links">
+          <li><a href="admissions.html">🎒 மாணவர் சேர்க்கை (Online Admissions)</a></li>
           <li><a href="tharam-1.html">1. பாலப் பருவம் (தரம் 1–4) • அற அடித்தளம்</a></li>
           <li><a href="tharam-5.html">2. இளம் பருவம் (தரம் 5–8) • பண்பாடு &amp; நெறி</a></li>
           <li><a href="tharam-9.html">3. உயர்நிலைப் பருவம் (தரம் 9–10) • சித்தாந்தம் &amp; தர்மம்</a></li>
