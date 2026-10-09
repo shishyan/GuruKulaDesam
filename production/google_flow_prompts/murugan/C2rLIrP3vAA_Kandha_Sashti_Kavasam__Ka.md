@@ -1,70 +1,70 @@
-# Google Flow Cinematic Video Plan — Kandha Sashti Kavasam: Muzhu Kavasam II
-**English Title:** Kandha Sashti Kavasam: Muzhu Kavasam II  
+# Google Flow Cinematic Video Plan — Kandha Sashti Kavasam II (Thiruthani Shanta Swaroopam)
+**English Title:** Kandha Sashti Kavasam II Full Cinematic Film  
 **Track ID:** `C2rLIrP3vAA`  
 **Category:** MURUGAN  
-**Scripture:** கந்த சஷ்டி கவசம் (பால தேவராய சுவாமிகள் அருளியது)  
+**Scripture:** கந்த சஷ்டி கவசம் (பால தேவராய சுவாமிகள் அருளியது) — திருத்தணி சாந்த தத்துவம்  
 **Soundtrack:** Original master release from Guru Kula Desam (`C2rLIrP3vAA.m4a`).  
-**Visual Grammar:** Photorealistic 16:9, 24 fps, authentic South Indian Dravidian Vedic temple aesthetic, 8k resolution, cinematic lighting, zero text overlays.
+**Visual Grammar:** Photorealistic 16:9, 24 fps, authentic South Indian Dravidian temple aesthetic, 8k resolution, cinematic lighting, zero text overlays.
 
 ---
 
 ## Locked Continuity Bible
-- **Atmosphere:** Sacred seashore temple breezes, ocean spray against ancient granite ghats, ringing bronze temple bells, fragrant sandal paste, burning camphor flames, sacred Vibhuti aroma.
-- **Architecture:** Ancient Dravidian seaside temple of Tiruchendur, monolithic granite pillars, stone sanctum steps, carved Yali corridors, towering ocean-facing Rajagopuram.
-- **Iconography:** Lord Muruga (Shanmukha) with six divine benevolent faces, twelve shoulders holding sacred attributes, victorious golden Vel, iridescent peacock mount (Mayil), rooster banner (Seval Kodi), Goddess Valli and Goddess Deivayanai.
-- **Lighting:** Brilliant sunrise amber over turquoise ocean waves, deep warm bronze oil lamp glow in sanctum, radiant camphor flame reflections.
-- **Hard Exclusions:** No text, no subtitles, no watermarks, no modern clothing, no western faces, no cartoon elements, no plastic.
+- **Atmosphere:** Cool mountain dawn breeze of Thiruthani, calm spiritual tranquility after the cosmic war of Surasamharam, soothing aroma of mountain jasmines and green tulsi, soft temple chimes, gentle flute melodies.
+- **Architecture:** Sacred hilltop temple of Thiruthani (Thanigai Malai), 365 granite steps representing the days of the solar year, carved stone mandapams with polished granite pillars, serene temple tank (Saravana Poigai).
+- **Iconography:** Lord Muruga in Shanta Swaroopam (the peaceful, tranquil form), holding the divine Vel resting gently against his shoulder, radiating peace and soothing forgiveness; Goddess Valli draped in rich emerald silk beside Him.
+- **Lighting:** Soft pearl-pink and gold dawn hues breaking over the misty hills, warm gentle ghee lamp glow reflecting off polished granite walls, serene amber evening light.
+- **Hard Exclusions:** No text, no subtitles, no watermarks, no modern clothing, no western faces, no plastic, no violent battle imagery.
 
 ---
 
-## 10-Second Continuous Scene Prompts for Google Flow (100 Seconds Total Footage)
+## 10-Second Continuous Scene Prompts for Google Flow
 
-### Scene 1 (00:00 - 00:10): Dawn at the Seaside Shore Temple (Tiruchendur)
+### Scene 1 (00:00 - 00:10): Dawn Over the Misty Hill of Thiruthani
 **Prompt:**  
-Create a single continuous 16:9 cinematic sweeping crane shot at 24 fps. Golden sunrise over the ancient seaside Dravidian shore temple of Tiruchendur. Turquoise waves crash softly against ancient monolithic dark granite sea walls. Morning golden light bathes the towering carved granite Rajagopuram as sea birds glide peacefully through the fresh morning breeze. 8k resolution, timeless spiritual awe.  
-*Exclusions:* No modern boats, no electrical wires, no text.
+Create a single continuous 16:9 cinematic sweeping crane shot at 24 fps. Soft morning dawn breaks over the sacred, misty hills of Thiruthani. The 365 carved stone steps wind gracefully up the green hillside toward the majestic temple gopuram, surrounded by whispering neem trees and wild mountain flora, illuminated in serene pearl-pink morning light.  
+*Exclusions:* No electric wires, no vehicles, no text.
 
-### Scene 2 (00:10 - 00:20): The Milk Pot Devotees (Paal Kudam)
+### Scene 2 (00:10 - 00:20): Devotees Chanting Thiruppugazh at Sunrise
 **Prompt:**  
-Create a single continuous 16:9 cinematic tracking shot at 24 fps along ancient stone temple steps. Reverent Tamil devotees adorned with holy white Tripundra Vibhuti carry polished brass Paal Kudam (milk pots) adorned with fresh yellow marigold garlands and sacred mango leaves on their heads. Golden morning sunbeams illuminate their serene, devotion-filled faces as they walk bare-footed toward the sanctum.  
-*Exclusions:* No modern footwear, no plastic bottles, no text.
+Create a single continuous 16:9 cinematic tracking shot at 24 fps across the open stone mandapam. Devout Tamil elders and young seekers, clad in clean white cotton veshtis with holy white Tripundra Vibhuti markings, sing the sacred verses of Thiruppugazh with closed eyes and serene, blissful expressions, gentle morning sunbeams illuminating their faces.  
+*Exclusions:* No printed songbooks, no spectacles, no microphones, no text.
 
-### Scene 3 (00:20 - 00:30): Sacred Abhishekam of Lord Shanmukha
+### Scene 3 (00:20 - 00:30): The Tranquil Saravana Poigai Temple Pool
 **Prompt:**  
-Create a single continuous 16:9 cinematic slow push-in at 24 fps inside the dark granite inner sanctum. Warm bronze Kuthuvilakku lamps cast golden flickers on the sacred vigraha of Lord Shanmukha. Sacred pure white milk and fragrant rose water are poured over the divine bronze form, cascading down the six compassionate faces and twelve shoulders in gleaming ripples.  
-*Exclusions:* No electricity, no artificial blue light, no text.
+Create a single continuous 16:9 cinematic gliding shot at 24 fps just inches above the mirror-like water surface of the sacred Saravana Poigai lake. Blue and white water lilies bloom peacefully, reflecting the ancient carved stone bathing steps and the silhouette of the temple Rajagopuram in tranquil dawn ripples.  
+*Exclusions:* No plastic debris, no modern walls, no text.
 
-### Scene 4 (00:30 - 00:40): The Divine Armor — The Invincible Golden Vel
+### Scene 4 (00:30 - 00:40): Shanta Swaroopa Darshan of Thanigai Muruga
 **Prompt:**  
-Create a single continuous 16:9 cinematic macro pan at 24 fps. Close-up of the radiant golden Vel (sacred spear of wisdom and protection), standing tall in the sanctum, adorned with fresh garlands of red viruchi flowers and fragrant green marukozhundhu. The blade gleams with a soft inner spiritual radiance, symbolizing the divine armor that protects the devotee's soul.  
-*Exclusions:* No cartoon glow, no digital glitch, no text.
+Create a single continuous 16:9 cinematic slow push-in at 24 fps inside the granite sanctum. Lord Muruga appears in his supreme peaceful Shanta form, holding the upright golden Vel of wisdom with a gentle, reassuring smile that dissolves all earthly anxieties. A magnificent garland of fragrant white jasmine flowers drapes across his chest in the warm golden glow of ghee lamps.  
+*Exclusions:* No angry or fierce expressions, no CGI neon glows, no text.
 
-### Scene 5 (00:40 - 00:50): Sacred Kavadi Dance of Surrender
+### Scene 5 (00:40 - 00:50): Goddess Valli Beside the Victorious Lord
 **Prompt:**  
-Create a single continuous 16:9 cinematic medium tracking shot at 24 fps in the stone-pillared temple courtyard. A devotee in traditional saffron garments carries a magnificent wooden Mayil Kavadi crowned with shimmering peacock feathers and small brass bells. He sways in deep, joyful devotional rhythm to the beat of sacred Thavil drums, eyes closed in ecstasy.  
-*Exclusions:* No modern spectators, no smartphones, no text.
+Create a single continuous 16:9 cinematic rotational pan at 24 fps. Goddess Valli, depicted as the noble hunter princess, stands gracefully beside Lord Muruga, clad in forest-green and gold Kanchipuram silk, holding a fragrant lotus flower in her right hand with eyes radiating devotion and spiritual oneness.  
+*Exclusions:* No modern synthetic fabrics, no western features, no text.
 
-### Scene 6 (00:50 - 01:00): The Six Compassionate Faces (Arumugam)
+### Scene 6 (00:50 - 01:00): Barefoot Pilgrims with Silver Kavadis
 **Prompt:**  
-Create a single continuous 16:9 cinematic slow rotational camera move at 24 fps. The divine six faces of Lord Muruga adorned with jewel-encrusted golden crowns and emerald necklaces, revealed in the warm golden illumination of ghee oil lamps. Each face radiates serene grace, wisdom, and infinite love, dissolving all fear from the heart of the seeker.  
-*Exclusions:* No artificial CGI look, no distorted features, no text.
+Create a single continuous 16:9 cinematic low-angle shot at 24 fps along the hill path. Devotees carry polished silver Kavadis adorned with shimmering blue peacock plumes and tiny ringing brass bells, walking barefoot on the sacred stone steps with calm, meditative steps under the morning shade of flowering banyan trees.  
+*Exclusions:* No modern footwear, no sunglasses, no text.
 
-### Scene 7 (01:00 - 01:10): The Piercing of Darkness (Surasamharam Revelation)
+### Scene 7 (01:00 - 01:10): Holy Sandalwood & Rosewater Anointing
 **Prompt:**  
-Create a single continuous 16:9 cinematic epic visual sequence at 24 fps. Over a dramatic, misty sea under a golden dawn sky, the sacred golden Vel arcs gracefully forward like a beam of celestial dawn light, piercing through rolling dark clouds of ignorance and illusion, revealing a calm, radiant sky of pure spiritual clarity.  
-*Exclusions:* No gory imagery, no blood, no western fantasy armor, no text.
+Create a single continuous 16:9 cinematic macro camera move at 24 fps. Cool, aromatic yellow sandalwood paste blended with natural rosewater is anointed across the divine stone vigraha of Muruga, soothing the deity after the Surasamharam, while pure water droplets fall like liquid diamonds into the granite drainage spout.  
+*Exclusions:* No artificial colorings, no modern metal taps, no text.
 
-### Scene 8 (01:10 - 01:20): The Peacock Mount & Rooster Banner (Mayil & Seval)
+### Scene 8 (01:10 - 01:20): Sacred Cow Grazing Near the Temple Garden
 **Prompt:**  
-Create a single continuous 16:9 cinematic wide shot at 24 fps on the ocean-facing stone temple terrace. A magnificent wild peacock with fully fanned iridescent sapphire and emerald plumage stands proudly beside an ancient brass staff fluttering a silken crimson flag bearing the noble rooster emblem (Seval Kodi), catching the golden sunrise wind against the sparkling ocean.  
-*Exclusions:* No jitter, no unnatural animal movement, no text.
+Create a single continuous 16:9 cinematic peaceful wide shot at 24 fps in the temple garden. A gentle, white hump-backed Gomata cow adorned with vermilion tilak on her forehead grazes peacefully on lush green grass beneath a blooming parijatha tree, while wild green parrots flutter between temple stone sculptures.  
+*Exclusions:* No barbed wire, no concrete fences, no text.
 
-### Scene 9 (01:20 - 01:30): The Sacred Feet with Jingling Anklets (Silambu & Sathangai)
+### Scene 9 (01:20 - 01:30): The Victorious Rooster Banner (Seval Kodi) at Sunset
 **Prompt:**  
-Create a single continuous 16:9 cinematic low-angle slow slider shot at 24 fps. The lotus feet of the deity resting upon a carved granite lotus pedestal, adorned with intricate golden silambu anklets and tiny jingling bells (sathangai). Devotees place fragrant white parijatha blossoms and fresh bilva leaves upon the stone pedestal in silent, tearful gratitude.  
-*Exclusions:* No text, no modern flooring, no fast motion.
+Create a single continuous 16:9 cinematic slow tilt-up at 24 fps along the tall gilded temple flag mast (Dhwajasthambham). The consecrated silk banner bearing the emblem of the brave rooster (Seval Kodi) waves gracefully in the evening hill breeze against an amber-violet sunset sky, symbolizing the triumphant awakening of wisdom.  
+*Exclusions:* No modern antennas, no power cables, no text.
 
-### Scene 10 (01:30 - 01:40): Grand Karpura Harathi & Divine Darshan
+### Scene 10 (01:30 - 01:40): Maha Shanta Harathi — Ocean of Peace
 **Prompt:**  
-Create a single continuous 16:9 cinematic wide crane shot at 24 fps inside the grand pillared Mahamandapam. A multi-tiered bronze camphor lamp (Karpura Harathi) is reverently waved before Lord Muruga, flanked by Goddess Valli and Goddess Deivayanai adorned in crimson silks and jasmine garlands. Flocks of sweet-smelling dhoopam smoke rise through glowing amber sunbeams while flower petals fall. Supreme spiritual fulfillment.  
-*Exclusions:* No text, no modern equipment, no plastic.
+Create a single continuous 16:9 cinematic grand wide shot at 24 fps. The priest performs a serene, slow-paced deeparadhanai with a single large camphor flame and an Aduku Deepam. The warm amber light illuminates the calm eyes of Thanigai Muruga as white jasmine petals shower down, enveloping the sanctum in profound spiritual stillness.  
+*Exclusions:* No flash photography, no digital distortion, no text.

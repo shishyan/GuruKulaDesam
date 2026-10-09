@@ -118,7 +118,28 @@ function initPage(itemsData) {
   } else {
     window.pageItems = [];
   }
-  renderCards();
+
+  // Support direct URL parameters: ?q=..., ?v=..., ?id=...
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const qParam = urlParams.get('q');
+    const vParam = urlParams.get('v') || urlParams.get('id');
+    if (qParam) {
+      currentSearch = qParam;
+      const searchInputs = document.querySelectorAll('.search-box input, .context-search-input');
+      searchInputs.forEach(inp => inp.value = qParam);
+    }
+    renderCards();
+    if (vParam) {
+      const match = window.pageItems.find(x => x.id === vParam) ||
+                    (window.GURUKULA_ITEMS_BY_ID && window.GURUKULA_ITEMS_BY_ID[vParam]);
+      if (match) {
+        setTimeout(() => openPlayer(vParam, match.title), 250);
+      }
+    }
+  } catch (err) {
+    renderCards();
+  }
 }
 
 function getFilteredItems() {
@@ -193,8 +214,11 @@ function renderCards() {
         ` : ''}
 
         <div class="card-footer">
-          <span class="tag">${it.type === 'film' ? `${GKD_ICONS.cinema} முழுப் படம் (Film)` : `${GKD_ICONS.music} இசை வெளியீடு (Audio)`}</span>
-          <a href="https://www.youtube.com/watch?v=${it.id}" target="_blank" rel="noopener noreferrer" class="card-yt-link" onclick="event.stopPropagation()">YouTube ${GKD_ICONS.external}</a>
+          <span class="tag">${it.type === 'film' ? `${GKD_ICONS.cinema} படம்` : `${GKD_ICONS.music} இசை`}</span>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <a href="?v=${it.id}" class="card-detail-btn" onclick="event.stopPropagation(); openPlayer('${it.id}', '${safeTitle.replace(/'/g, "\\'")}'); return false;" title="பாடல் விவரம் & உரை (View Details)">விவரம் &rarr;</a>
+            <a href="https://www.youtube.com/watch?v=${it.id}" target="_blank" rel="noopener noreferrer" class="card-yt-link" onclick="event.stopPropagation()">YouTube ${GKD_ICONS.external}</a>
+          </div>
         </div>
 
         ${hasDetails ? `
@@ -277,6 +301,12 @@ function openPlayer(videoId, title) {
 
   iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0&playsinline=1`;
   if (titleEl) titleEl.innerText = title;
+
+  try {
+    const url = new URL(window.location);
+    url.searchParams.set('v', videoId);
+    window.history.replaceState({}, '', url);
+  } catch (e) {}
 
   // Render or update direct YouTube link notice (guarantees playback if embed is restricted)
   let directNotice = document.getElementById('modalDirectYtNotice');
@@ -527,6 +557,12 @@ function closePlayer() {
     iframe.src = '';
     modal.classList.remove('active');
     document.body.style.overflow = '';
+    try {
+      const url = new URL(window.location);
+      url.searchParams.delete('v');
+      url.searchParams.delete('id');
+      window.history.replaceState({}, '', url);
+    } catch (e) {}
   }
 }
 

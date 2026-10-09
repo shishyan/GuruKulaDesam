@@ -274,7 +274,7 @@ def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Pat
         else:
             print(f"[Assembly] Cycle {cycle}: REVERSED pass at {int(speed*100)}% speed ({one_pass_dur:.1f}s)...", flush=True)
             if reversed_clips is None:
-                reversed_clips = [create_processed_clip(c, temp_dir, speed=speed, reverse=True) for c in scene_clips]
+                reversed_clips = [create_processed_clip(c, temp_dir, speed=speed, reverse=True) for c in reversed(scene_clips)]
             playlist.extend(reversed_clips)
         current_dur += one_pass_dur
         cycle += 1

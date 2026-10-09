@@ -17,10 +17,10 @@ DOCS_DIR = ROOT / "docs"
 
 # All core active HTML pages to mirror
 HTML_FILES = [
-    "about.html", "classes.html", "google-site.html", "help.html", "higher-studies.html",
-    "index.html", "irai-isai-virundhu.html", "kalvi.html", "murugan.html",
-    "review_quality.html", "saiva-neri.html", "sakthi.html", "sanmargam.html",
-    "school.html", "syllabus.html", "thirukkural.html", "vaishnava.html",
+    "about.html", "classes.html", "google-site.html", "grihastha.html", "help.html", "higher-studies.html",
+    "index.html", "irai-isai-virundhu.html", "kalvi.html", "moola-nool.html", "murugan.html",
+    "panpaadu.html", "review_quality.html", "saiva-neri.html", "sakthi.html", "sanmargam.html",
+    "school.html", "siddha.html", "syllabus.html", "thirukkural.html", "vaishnava.html",
     "vinayagar.html", "virtues.html", "youtube.html",
     "embed_amman.html", "embed_murugan.html", "embed_saiva_neri.html",
     "embed_shiva.html", "embed_thirukkural.html", "embed_vallalar_cultural.html",
