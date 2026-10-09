@@ -3,14 +3,14 @@
 
 :root {
   --bg-dark: #020610;
-  --bg-surface: rgba(8, 20, 36, 0.78);
-  --bg-card: rgba(9, 22, 40, 0.76);
-  --bg-card-hover: rgba(13, 31, 56, 0.90);
-  --bg-glass: rgba(7, 19, 36, 0.76);
-  --bg-glass-strong: rgba(6, 17, 34, 0.90);
-  --border-subtle: rgba(56, 189, 248, 0.20);
-  --border-gold: rgba(45, 212, 191, 0.35);
-  --border-gold-hover: rgba(56, 189, 248, 0.70);
+  --bg-surface: transparent;
+  --bg-card: transparent;
+  --bg-card-hover: rgba(0, 0, 0, 0.35);
+  --bg-glass: transparent;
+  --bg-glass-strong: transparent;
+  --border-subtle: transparent;
+  --border-gold: transparent;
+  --border-gold-hover: transparent;
   --teal: #14b8a6;
   --teal-bright: #2dd4bf;
   --teal-glow: rgba(20, 184, 166, 0.35);
@@ -28,11 +28,12 @@
   --gold-soft: #a7f3d0;
   --amber: #06b6d4;
   --text-main: #f8fafc;
-  --text-muted: #94a3b8;
+  --text-muted: #cbd5e1;
   --badge-film: #e63946;
   --badge-audio: #0d9488;
-  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.55), 0 0 18px rgba(20, 184, 166, 0.10);
+  --shadow-card: 0 14px 40px rgba(0, 0, 0, 0.80), 0 4px 14px rgba(0, 0, 0, 0.90);
   --shadow-gold: 0 0 25px rgba(45, 212, 191, 0.35);
+  --text-shadow-deep: 0 2px 8px rgba(0, 0, 0, 0.95), 0 4px 16px rgba(0, 0, 0, 0.85);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -7323,11 +7324,11 @@ main > .page-breadcrumb,
 
 
 /* ========================================================================== */
-/* UNIVERSAL ZERO BACKGROUND ENFORCEMENT: TOP BARS, HEADERS & TITLES          */
-/* (Zero background anywhere: completely floating over sacred banyan tree)    */
+/* UNIVERSAL ZERO BACKGROUND WRAPPERS & ZERO BORDER ENFORCEMENT               */
+/* (Eliminates all boxy background wrappers and borders; deep shadow clarity)  */
 /* ========================================================================== */
 
-/* Top Bars & Breadcrumbs */
+/* 1. All Top Bars, Headers, Breadcrumbs & Footers */
 .context-top-bar,
 header.site-header,
 .site-header,
@@ -7338,19 +7339,8 @@ header.site-header,
 .breadcrumb-container,
 .dashboard-breadcrumb-bar,
 .drilldown-breadcrumb-bar,
-.context-breadcrumbs {
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-}
-
-/* All Headers Everywhere */
+.context-breadcrumbs,
 header,
-header.site-header,
-.site-header,
 .header-container,
 .context-bar-container,
 .context-bar-left,
@@ -7377,6 +7367,9 @@ header.site-header,
 .course-header-meta,
 .card-header,
 .panel-header,
+.footer,
+footer,
+.site-footer,
 [class*="-header"],
 [class*="header-"] {
   background: transparent !important;
@@ -7384,10 +7377,123 @@ header.site-header,
   background-image: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
+  border: none !important;
+  border-color: transparent !important;
   box-shadow: none !important;
 }
 
-/* All Titles & Headings Everywhere */
+/* 2. All Cards, Sidebars, Strip Bar, Panels & Content Wrappers */
+.left-strip-bar,
+.course-sidebar,
+.dedicated-sub-nav,
+.mobile-course-drawer,
+.grade-card,
+.sheet-card,
+.video-card,
+.book-card,
+.philosophy-card,
+.unit-card,
+.card,
+.grade-focus-hub-bar,
+.sheets-batch-bar,
+.zen-grade-stage-shell,
+.zen-focus-card,
+.zen-sanctuary-shell,
+.filter-bar,
+.controls-panel,
+.drawer,
+.drawer-section,
+.card-lyrics-drawer,
+.sidebar-chapter-group,
+.sidebar-subsections,
+.charter-vow-card,
+.charter-pillar-card,
+.ashram-pedagogy-card,
+.interactive-quiz-card,
+.tracker-hub-card,
+.cinema-theatre,
+.cinema-stage,
+.cinema-room,
+.content-card,
+.feature-card,
+.info-card,
+.item-card,
+.syllabus-card,
+.panpaadu-card,
+.virtue-card,
+.course-main-column,
+.course-layout-container,
+[class*="-wrapper"],
+[class*="wrapper-"],
+[class*="-panel"]:not(.dropdown-menu),
+.panel {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 3. Floating Left Strip Expanded View (Soft Veil Backdrop with Zero Border) */
+.left-strip-bar.expanded,
+.left-strip-bar.open,
+body.primary-menu-open .left-strip-bar {
+  background: rgba(2, 8, 16, 0.88) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: none !important;
+  border-right: none !important;
+  box-shadow: 16px 0 50px rgba(0, 0, 0, 0.90) !important;
+}
+
+/* 4. Active Elements: Interactive floating pills with zero borders and glowing shadows */
+.sidebar-chapter-group.active {
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+}
+
+.strip-item,
+.strip-dock-btn,
+.sidebar-chapter-btn,
+.grade-hub-btn,
+.sheet-batch-btn,
+.cinema-tab-btn,
+.filter-btn,
+.tab-btn,
+.sidebar-grade-pill {
+  border: none !important;
+}
+
+.grade-hub-btn.active,
+.sheet-batch-btn.active,
+.cinema-tab-btn.active,
+.filter-btn.active,
+.tab-btn.active,
+.sidebar-grade-pill.active {
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.85), rgba(5, 150, 105, 0.85)) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 8px 24px rgba(13, 148, 136, 0.45), 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* 5. Deep Shadow Technique for Supreme Visibility & 3D Depth */
+/* All Media & Image Thumbnails */
+.card-thumbnail,
+.grade-card-media,
+.sheet-thumb,
+.book-thumb,
+.zen-stage-media,
+.cinema-video-screen,
+.strip-item-icon {
+  border: none !important;
+  border-radius: 14px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85), 0 4px 14px rgba(0, 0, 0, 0.95) !important;
+}
+
+/* All Titles & Headings: High-Contrast Deep Text Shadows */
 h1, h2, h3, h4, h5, h6,
 .title,
 .page-title,
@@ -7402,6 +7508,11 @@ h1, h2, h3, h4, h5, h6,
 .lesson-title,
 .lesson-main-title,
 .lesson-sub-title,
+.sheet-title,
+.grade-name,
+.grade-hero-tagline,
+.sidebar-title,
+.sidebar-chapter-btn,
 .drilldown-title,
 .badge-title,
 .topic-title,
@@ -7421,7 +7532,16 @@ h1, h2, h3, h4, h5, h6,
   background-image: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
+  border: none !important;
   box-shadow: none !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 4px 18px rgba(0, 0, 0, 0.85) !important;
+}
+
+/* Paragraphs, descriptions & labels deep contrast shadow */
+p, .desc, [class*="-desc"], [class*="desc-"],
+.meta, [class*="-meta"], [class*="meta-"],
+.strip-item-label, .strip-sub-item, .sidebar-sub-link {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 2px 10px rgba(0, 0, 0, 0.80) !important;
 }
 
 
