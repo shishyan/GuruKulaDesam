@@ -731,3 +731,251 @@
   font-size: 0.95rem;
 }
 
+/* ========================================================================== */
+/* STUDENT CHAPTER MASTERY & PROGRESS DECK (ZERO-WRAPPER & CRISP SHADOWS)    */
+/* ========================================================================== */
+.student-chapter-deck {
+  margin: 32px 0 20px 0;
+  padding: 22px 0 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent !important;
+}
+
+.student-deck-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.student-deck-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.98), 0 2px 10px rgba(0,0,0,0.9);
+}
+
+.chapter-lms-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95);
+  background: rgba(56, 189, 248, 0.14) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.45) !important;
+}
+
+.chapter-lms-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.3);
+  background: rgba(56, 189, 248, 0.22) !important;
+}
+
+.chapter-lms-btn.completed {
+  background: rgba(16, 185, 129, 0.22) !important;
+  color: #34d399 !important;
+  border: 1px solid #10b981 !important;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
+}
+
+/* Quick Interactive Quiz */
+.chapter-quiz-wrap {
+  margin: 18px 0;
+  padding: 16px 0;
+  border-top: 1px dashed rgba(255, 255, 255, 0.08);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.chapter-quiz-q {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #fcd34d;
+  margin-bottom: 12px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.98);
+}
+
+.chapter-quiz-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chapter-quiz-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  text-shadow: 0 1px 3px #000;
+}
+
+.chapter-quiz-opt:hover {
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  background: rgba(56, 189, 248, 0.12) !important;
+  transform: translateX(4px);
+}
+
+.chapter-quiz-opt.opt-correct {
+  background: rgba(16, 185, 129, 0.25) !important;
+  border-color: #10b981 !important;
+  color: #6ee7b7 !important;
+  font-weight: 700;
+}
+
+.chapter-quiz-opt.opt-wrong {
+  background: rgba(239, 68, 68, 0.2) !important;
+  border-color: #ef4444 !important;
+  color: #fca5a5 !important;
+}
+
+.chapter-quiz-feedback {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: none;
+}
+
+/* Personal Sadhana Reflection Note */
+.chapter-note-box {
+  margin: 16px 0;
+}
+
+.chapter-note-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  resize: vertical;
+  min-height: 60px;
+  transition: border-color 0.2s ease;
+}
+
+.chapter-note-textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgba(15, 23, 42, 0.9);
+}
+
+/* ========================================================================== */
+/* TEACHER & STUDENT CLEAN PRINT STYLES (@media print)                        */
+/* ========================================================================== */
+@media print {
+  .left-strip-bar,
+  .strip-backdrop,
+  .context-top-bar,
+  .mobile-hamburger-btn,
+  .grade-switch-strip,
+  .books-shelf-grid,
+  .reader-chapter-tabs,
+  .subchapter-nav-strip,
+  .chapter-visuals-panel .carousel-top-bar,
+  .chapter-visuals-panel .carousel-thumbs-row,
+  .carousel-nav-btn,
+  .lesson-speech-btn,
+  .moola-reader-actions-row,
+  .chapter-media-card,
+  .student-chapter-deck .chapter-quiz-wrap,
+  .student-chapter-deck .chapter-note-box,
+  .student-chapter-deck button,
+  .site-footer,
+  .art-lightbox-modal,
+  .strip-grades-mini-grid {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+  }
+
+  body.has-left-strip {
+    padding-left: 0 !important;
+  }
+
+  .page-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 10mm 15mm !important;
+  }
+
+  .reading-chapter-card {
+    page-break-inside: auto;
+  }
+
+  .chap-read-title {
+    color: #0f172a !important;
+    font-size: 18pt !important;
+    text-shadow: none !important;
+    border-bottom: 2pt solid #b8860b !important;
+    padding-bottom: 4pt !important;
+    margin-bottom: 12pt !important;
+  }
+
+  .verse-callout-clean {
+    border-left: 3pt solid #b8860b !important;
+    padding-left: 10pt !important;
+    margin: 10pt 0 !important;
+    background: #fafaf9 !important;
+  }
+
+  .verse-text-sacred {
+    color: #78350f !important;
+    font-size: 13pt !important;
+    text-shadow: none !important;
+  }
+
+  .verse-meaning-clean {
+    color: #374151 !important;
+    text-shadow: none !important;
+  }
+
+  .reading-section-block h4 {
+    color: #1e3a8a !important;
+    font-size: 13pt !important;
+    text-shadow: none !important;
+    margin-top: 12pt !important;
+  }
+
+  .reading-section-block div,
+  .reading-section-block p {
+    color: #1f2937 !important;
+    text-shadow: none !important;
+  }
+
+  .student-chapter-deck {
+    border-top: 1pt solid #cbd5e1 !important;
+    margin-top: 16pt !important;
+    page-break-inside: avoid;
+  }
+}
+
+

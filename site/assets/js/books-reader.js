@@ -240,6 +240,7 @@ function renderCurrentChapterContent() {
         <a href="#subchap-life" class="subchap-pill-btn"><span class="subchap-icon">🌿</span><span>5. இல்லற நடைமுறை</span></a>
         <a href="#subchap-exercise" class="subchap-pill-btn"><span class="subchap-icon">☀️</span><span>6. சாதனா பயிற்சி</span></a>
         <a href="#subchap-media" class="subchap-pill-btn"><span class="subchap-icon">🎵</span><span>7. பாட இசை &amp; படம்</span></a>
+        <a href="#subchap-mastery" class="subchap-pill-btn"><span class="subchap-icon">🏆</span><span>8. நிறைவு &amp; தேர்வு</span></a>
       </nav>
 
       <!-- 1. Chapter Visuals Carousel Gallery -->
@@ -311,6 +312,11 @@ function renderCurrentChapterContent() {
       <!-- 7. Curricular Integrated Media Player (பாட இசை & காணொளிக் களம்) -->
       <div id="subchap-media" style="scroll-margin-top: 90px;">
         ${renderCurriculumMediaSection(currentGrade, currentBook, chap.chapterNumber)}
+      </div>
+
+      <!-- 8. Student Chapter Mastery, LMS Completion & Self-Check Deck -->
+      <div id="subchap-mastery" style="scroll-margin-top: 90px;">
+        ${renderStudentChapterDeck(currentGrade, currentBook, chap)}
       </div>
 
       <!-- Navigation Footer (Prev / Next Chapter) -->
@@ -431,6 +437,249 @@ window.toggleChapterLyrics = function(id) {
   if (!el) return;
   el.style.display = (el.style.display === 'none' || !el.style.display) ? 'block' : 'none';
 };
+
+// ==========================================================================
+// STUDENT CHAPTER MASTERY, LMS COMPLETION & INTERACTIVE SELF-CHECK ENGINE
+// ==========================================================================
+
+function isBookChapterCompleted(grade, bookKey, chapterNum) {
+  try {
+    return localStorage.getItem(`gkd_completed_${grade}_${bookKey}_${chapterNum}`) === 'true' ||
+           localStorage.getItem(`gkd_completed_${grade}_${chapterNum}`) === 'true';
+  } catch (e) {
+    return false;
+  }
+}
+
+window.toggleBookChapterCompletion = function(grade, bookKey, chapterNum) {
+  try {
+    const key = `gkd_completed_${grade}_${bookKey}_${chapterNum}`;
+    const legacyKey = `gkd_completed_${grade}_${chapterNum}`;
+    const isDone = isBookChapterCompleted(grade, bookKey, chapterNum);
+    const newState = !isDone;
+
+    if (newState) {
+      localStorage.setItem(key, 'true');
+      localStorage.setItem(legacyKey, 'true');
+      if (typeof window.playTempleBell === 'function') {
+        window.playTempleBell();
+      }
+      if (typeof window.showToast === 'function') {
+        window.showToast(`தரம் ${grade} • அத்தியாயம் ${chapterNum} நிறைவுற்றது! (+50 வேத ஞான XP)`);
+      }
+    } else {
+      localStorage.removeItem(key);
+      localStorage.removeItem(legacyKey);
+      if (typeof window.showToast === 'function') {
+        window.showToast('பாடப் பதிவு மீட்டமைக்கப்பட்டது.');
+      }
+    }
+
+    const btn = document.getElementById('chapterLmsBtn');
+    if (btn) {
+      if (newState) {
+        btn.classList.add('completed');
+        btn.innerHTML = `<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span>பாடம் நிறைவுற்றது (Completed • +50 XP)</span>`;
+      } else {
+        btn.classList.remove('completed');
+        btn.innerHTML = `<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg> <span>நான் படித்துவிட்டேன் (Mark as Completed • +50 XP)</span>`;
+      }
+    }
+  } catch (err) {
+    console.error('Error toggling chapter completion:', err);
+  }
+};
+
+function getChapterQuizData(grade, bookKey, chap) {
+  const title = chap.title || 'இப்பாடம்';
+  const verseMeaning = chap.verseMeaning || '';
+
+  let question = `இப்பாடத்தின் (${title}) முக்கிய தத்துவக் கருத்து அல்லது வாழ்வியல் ஒழுக்கம் யாது?`;
+  let optCorrect = `${verseMeaning.slice(0, 70)}... வழிநடக்கும் மெய்யொழுக்கம்.`;
+  if (optCorrect.length < 25) optCorrect = 'பெரியோரை மதித்து, கடமையை செவ்வனே ஆற்றி நற்பெயர் பெறுதல்.';
+  let optWrong1 = 'சக மனிதர்களைப் பொருட்படுத்தாமல் சுயநலத்துடன் செயல்படுதல்.';
+  let optWrong2 = 'தவறுகளை மறைத்து வாய்மையற்ற வழிகளில் செல்வது.';
+
+  if (bookKey === 'nanneri') {
+    question = `நன்னெறி அத்தியாயம் '${title}' நமக்கு உணர்த்தும் முதன்மை அறம் எது?`;
+    optCorrect = 'பணிவு, பெரியோர் மரியாதை மற்றும் தூய உள்ளத்தோடு அறம் செய்தல்.';
+    optWrong1 = 'பிறர் குறைகளைத் தேடிப் பேசுதல் மற்றும் ஆணவம் கொள்ளுதல்.';
+    optWrong2 = 'தன் நலனை மட்டுமே பெரிதாக எண்ணி வாழ்வது.';
+  } else if (bookKey === 'nallaram') {
+    question = `நல்லறம் அத்தியாயம் '${title}' வலியுறுத்தும் இல்லற நெறிமுறை என்ன?`;
+    optCorrect = 'ஜீவகாருண்யம், விருந்தோம்பல் மற்றும் ஏழைகளுக்குப் பகிர்ந்தளித்தல்.';
+    optWrong1 = 'ஈகைக் குணம் இன்றிப் பொருளை மட்டுமே சேர்த்து வைத்தல்.';
+    optWrong2 = 'குடும்பப் பொறுப்புகளைத் துறந்து சோம்பலில் இருத்தல்.';
+  } else if (bookKey === 'nalvazhi') {
+    question = `நல்வழி அத்தியாயம் '${title}' காட்டும் நேரிய பாதை யாது?`;
+    optCorrect = 'வாய்மை, கடின உழைப்பு மற்றும் சோதனைகளிலும் தர்மத்தைக் கைவிடாமை.';
+    optWrong1 = 'பொய் கூறி குறுக்கு வழியில் தற்காலிக வெற்றி தேடுதல்.';
+    optWrong2 = 'விதியை மட்டுமே நம்பி முயற்சியைக் கைவிடுதல்.';
+  } else if (bookKey === 'narthunai') {
+    question = `நற்துணை அத்தியாயம் '${title}' வழங்கும் ஆன்மீகத் துணிவு எது?`;
+    optCorrect = 'இறைத் திருவருளைச் சரணடைந்து பயமின்றி தர்மத்தை நிலைநாட்டுதல்.';
+    optWrong1 = 'கடவுள் நம்பிக்கையின்றி மன அழுத்தத்திற்கு ஆளாதல்.';
+    optWrong2 = 'சடங்குகளை மட்டுமே செய்து உள்ளத்தில் தூய்மையற்றிருத்தல்.';
+  } else if (bookKey === 'narchinthanai') {
+    question = `நற்சிந்தனை அத்தியாயம் '${title}' எழுப்பும் மெய்யறிவுத் தூண்டல் என்ன?`;
+    optCorrect = 'மனதை ஒருமுகப்படுத்தி, பிரபஞ்ச உண்மைகளையும் அறிவியல் சங்கமத்தையும் ஆய்ந்தறிதல்.';
+    optWrong1 = 'ஆராயாமல் குருட்டுத்தனமாக எல்லாவற்றையும் நம்புதல்.';
+    optWrong2 = 'எதிர்மறை எண்ணங்களை மனதில் வளர்த்து அமைதியிழத்தல்.';
+  } else if (bookKey === 'narchol') {
+    question = `நற்சொல் அத்தியாயம் '${title}' கற்பிக்கும் வாக்கின் வலிமை யாது?`;
+    optCorrect = 'இனிய சொல் பேசுதல், புண்படுத்தாமை மற்றும் மந்திர ஒலி அதிர்வுகளின் மேன்மை.';
+    optWrong1 = 'கடுஞ்சொற்கள் பேசி மற்றவர் மனதை நோகடித்தல்.';
+    optWrong2 = 'பயனற்ற வீண் பேச்சுகளில் காலத்தை வீணடித்தல்.';
+  } else if (bookKey === 'narcheyal') {
+    question = `நற்செயல் அத்தியாயம் '${title}' போதிக்கும் 3 Ds செயல்முறை என்ன?`;
+    optCorrect = 'கடமை (Duty), கட்டுப்பாடு (Discipline), கண்ணியம் (Dignity) உடன் சேவை செய்தல்.';
+    optWrong1 = 'விதிமுறைகளை மீறி தன்னிச்சையாகச் செயல்படுவது.';
+    optWrong2 = 'செயலில் முனைப்பின்றி ஒத்திப்போடும் மனப்பான்மை.';
+  }
+
+  return {
+    q: question,
+    options: [
+      { text: optCorrect, correct: true, exp: 'சரியான விடை! இப்பாடத்தின் மெய்யறிவுச் சாரம் இதுவே. (+10 போனஸ் XP)' },
+      { text: optWrong1, correct: false, exp: 'தவறான விடை! மீண்டும் ஒருமுறை மூலப்பாடலை வாசித்து சிந்தியுங்கள்.' },
+      { text: optWrong2, correct: false, exp: 'தவறான விடை! இப்பாடம் போதிக்கும் தர்ம நெறியை மீண்டும் அறியவும்.' }
+    ]
+  };
+}
+
+window.checkChapterQuizAnswer = function(btn, isCorrect, exp) {
+  const parent = btn.closest('.chapter-quiz-wrap');
+  if (!parent) return;
+  const fb = parent.querySelector('.chapter-quiz-feedback');
+  const allBtns = parent.querySelectorAll('.chapter-quiz-opt');
+
+  allBtns.forEach(b => {
+    b.disabled = true;
+    b.style.pointerEvents = 'none';
+  });
+
+  if (isCorrect) {
+    btn.classList.add('opt-correct');
+    if (fb) {
+      fb.style.display = 'block';
+      fb.style.background = 'rgba(16, 185, 129, 0.2)';
+      fb.style.color = '#6ee7b7';
+      fb.style.border = '1px solid #10b981';
+      fb.innerHTML = `✨ <strong>அற்புதம்!</strong> ${exp}`;
+    }
+    if (typeof window.playTempleBell === 'function') {
+      window.playTempleBell();
+    }
+  } else {
+    btn.classList.add('opt-wrong');
+    if (fb) {
+      fb.style.display = 'block';
+      fb.style.background = 'rgba(239, 68, 68, 0.2)';
+      fb.style.color = '#fca5a5';
+      fb.style.border = '1px solid #ef4444';
+      fb.innerHTML = `⚠️ ${exp}`;
+    }
+    setTimeout(() => {
+      allBtns.forEach(b => {
+        b.disabled = false;
+        b.style.pointerEvents = 'auto';
+        b.classList.remove('opt-wrong');
+      });
+    }, 2000);
+  }
+};
+
+window.saveStudentChapterNote = function(grade, bookKey, chapterNum, text) {
+  try {
+    const key = `gkd_note_${grade}_${bookKey}_${chapterNum}`;
+    localStorage.setItem(key, text);
+    const ind = document.getElementById('chapterNoteSavedBadge');
+    if (ind) {
+      ind.style.display = 'inline-block';
+      setTimeout(() => { ind.style.display = 'none'; }, 2000);
+    }
+  } catch (e) {
+    console.warn('Note save error:', e);
+  }
+};
+
+window.printLessonHandout = function() {
+  window.print();
+};
+
+function renderStudentChapterDeck(grade, bookKey, chap) {
+  const isDone = isBookChapterCompleted(grade, bookKey, chap.chapterNumber);
+  const quiz = getChapterQuizData(grade, bookKey, chap);
+  const noteKey = `gkd_note_${grade}_${bookKey}_${chap.chapterNumber}`;
+  const savedNote = localStorage.getItem(noteKey) || '';
+
+  const optsHtml = quiz.options.map((opt, idx) => `
+    <button type="button" class="chapter-quiz-opt" onclick="checkChapterQuizAnswer(this, ${opt.correct}, '${opt.exp.replace(/'/g, "\\'")}')">
+      <span style="font-weight:700; color:var(--gold);">${String.fromCharCode(65 + idx)}.</span>
+      <span>${opt.text}</span>
+    </button>
+  `).join('');
+
+  return `
+    <div class="student-chapter-deck" id="studentMasteryDeck">
+      <div class="student-deck-header">
+        <div class="student-deck-title">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>மாணவர் கற்றல் நிறைவு &amp; சுய மதிப்பீடு (Student Mastery)</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <button type="button" class="sheet-btn" onclick="printLessonHandout()" title="இப்பாடத்தை அச்சிடுக" style="font-size:0.82rem; padding:6px 14px;">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            <span>பாட அச்சுத்தாள் (Print)</span>
+          </button>
+          <a href="school.html" class="sheet-btn sheet-btn-view" style="font-size:0.82rem; padding:6px 14px; text-decoration:none;">
+            <span>பள்ளி போர்டல் &amp; சான்றிதழ் &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mark as Read / Completed CTA Button -->
+      <div style="margin: 14px 0 18px; display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+        <button type="button" id="chapterLmsBtn" class="chapter-lms-btn ${isDone ? 'completed' : ''}" onclick="toggleBookChapterCompletion(${grade}, '${bookKey}', ${chap.chapterNumber})">
+          ${isDone ? `
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>பாடம் நிறைவுற்றது (Completed • +50 XP)</span>
+          ` : `
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            <span>நான் படித்துவிட்டேன் (Mark as Completed • +50 XP)</span>
+          `}
+        </button>
+        <span style="font-size:0.84rem; color:#94a3b8; text-shadow:0 1px 3px #000;">
+          நிறைவு செய்தவுடன் குருகுல இணையப் பள்ளி முன்னேற்றத்தில் +50 வேத XP கணக்கிடப்படும்.
+        </span>
+      </div>
+
+      <!-- Quick Knowledge Self-Check Quiz -->
+      <div class="chapter-quiz-wrap">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <span style="font-size:0.8rem; font-weight:700; color:#38bdf8; text-transform:uppercase; letter-spacing:0.5px;">சுய அறிவாற்றல் சோதனை (Quick Knowledge Check):</span>
+          <span style="font-size:0.75rem; color:var(--gold-soft); font-weight:600;">+10 போனஸ் XP</span>
+        </div>
+        <div class="chapter-quiz-q">${quiz.q}</div>
+        <div class="chapter-quiz-opts">
+          ${optsHtml}
+        </div>
+        <div class="chapter-quiz-feedback"></div>
+      </div>
+
+      <!-- Student Sadhana Reflection Notes -->
+      <div class="chapter-note-box">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+          <label style="font-size:0.85rem; font-weight:700; color:#cbd5e1; text-shadow:0 1px 3px #000;">
+            📝 எனது தர்ம சங்கற்பக் குறிப்பு (My Takeaway / Reflection Note):
+          </label>
+          <span id="chapterNoteSavedBadge" style="display:none; font-size:0.78rem; color:#34d399; font-weight:700;">✓ சேமிக்கப்பட்டது</span>
+        </div>
+        <textarea class="chapter-note-textarea" placeholder="இப்பாடத்தின் மூலம் நான் மேற்கொண்ட உறுதிமொழி அல்லது குறிப்பு..." oninput="saveStudentChapterNote(${grade}, '${bookKey}', ${chap.chapterNumber}, this.value)">${savedNote}</textarea>
+      </div>
+    </div>
+  `;
+}
 
 // Carousel Interactive Controls
 window.switchChapterImage = function(idx) {

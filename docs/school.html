@@ -823,18 +823,26 @@
           <div>
             <label style="font-size:0.8rem; color:#94a3b8; display:block; margin-bottom:4px;">சான்றிதழ் தரம்:</label>
             <select id="certGradeSelect" onchange="updateCertificatePreview()" style="background:#0b111e; border:1px solid var(--gold); color:#ffffff; padding:6px 12px; border-radius:6px; font-family:inherit;">
-              <option value="தரம் 1">தரம் 1 — தொடக்க நிலை</option>
-              <option value="தரம் 2">தரம் 2 — சிவ சின்னங்கள்</option>
-              <option value="தரம் 3">தரம் 3 — பஞ்சபூத வழிபாடு</option>
-              <option value="தரம் 4">தரம் 4 — பன்னிரு திருமுறைகள்</option>
-              <option value="தரம் 5">தரம் 5 — நாயன்மார்களின் தியாகம்</option>
-              <option value="தரம் 6">தரம் 6 — நான்கு வேதங்கள்</option>
-              <option value="தரம் 7">தரம் 7 — உபநிடத மகா வாக்கியங்கள்</option>
-              <option value="தரம் 8">தரம் 8 — பகவத் கீதை &amp; வள்ளலார்</option>
-              <option value="தரம் 9">தரம் 9 — சைவ ஆகமங்கள்</option>
-              <option value="தரம் 10">தரம் 10 — பதி பசு பாசம் (O/L)</option>
-              <option value="தரம் 11">தரம் 11 — கடோபநிடதம் (A/L)</option>
-              <option value="தரம் 12">தரம் 12 — ஜீவன் முக்தி &amp; நடராஜர்</option>
+              <optgroup label="பாடசாலைப் பருவங்கள் (School Grades 1–12)">
+                <option value="தரம் 1 — பாலப் பருவம்">தரம் 1 — பாலப் பருவம் (Grade 1)</option>
+                <option value="தரம் 2 — பாலப் பருவம்">தரம் 2 — பாலப் பருவம் (Grade 2)</option>
+                <option value="தரம் 3 — பாலப் பருவம்">தரம் 3 — பாலப் பருவம் (Grade 3)</option>
+                <option value="தரம் 4 — பாலப் பருவம்">தரம் 4 — பாலப் பருவம் (Grade 4)</option>
+                <option value="தரம் 5 — இளம் பருவம்">தரம் 5 — இளம் பருவம் (Grade 5)</option>
+                <option value="தரம் 6 — இளம் பருவம்">தரம் 6 — இளம் பருவம் (Grade 6)</option>
+                <option value="தரம் 7 — இளம் பருவம்">தரம் 7 — இளம் பருவம் (Grade 7)</option>
+                <option value="தரம் 8 — இளம் பருவம்">தரம் 8 — இளம் பருவம் (Grade 8)</option>
+                <option value="தரம் 9 — உயர்நிலைப் பருவம்">தரம் 9 — உயர்நிலைப் பருவம் (Grade 9)</option>
+                <option value="தரம் 10 — உயர்நிலைப் பருவம்">தரம் 10 — உயர்நிலைப் பருவம் (Grade 10 O/L)</option>
+                <option value="தரம் 11 — மேல்நிலைப் பருவம்">தரம் 11 — மேல்நிலைப் பருவம் (Grade 11)</option>
+                <option value="தரம் 12 — மேல்நிலைப் பருவம்">தரம் 12 — மேல்நிலைப் பருவம் (Grade 12 A/L)</option>
+              </optgroup>
+              <optgroup label="உயர்கல்வி வித்யாபீடப் பட்டங்கள் (Collegiate & Research)">
+                <option value="இளங்கலை (B.A. சனாதன தர்மம் &amp; அறிவியல்)">இளங்கலை • B.A. / B.Sc. (3 ஆண்டுகள்)</option>
+                <option value="முதுகலை (M.A. ஆச்சார்ய மெய்யியல்)">முதுகலை • M.A. Acharya (2 ஆண்டுகள்)</option>
+                <option value="முனைவர் ஆய்வு (Ph.D. மெய்ஞ்ஞான ஆய்வுப் பட்டம்)">முனைவர் ஆய்வு • Ph.D. Doctoral Fellowship</option>
+                <option value="ஆசிரம தர்ம பட்டயம் (Ashram Dharma Fellowship)">ஆசிரம தர்ம பட்டயம் (Ashram Dharma Fellowship)</option>
+              </optgroup>
             </select>
           </div>
         </div>
@@ -1128,18 +1136,28 @@
     }
 
     function calculateOverallSchoolProgress() {
-      var totalUnits = 60; // 5 units * 11 grades + 5 in grade 1
-      var completedCount = 0;
+      var completedKeys = new Set();
       
-      for (var g = 1; g <= 12; g++) {
-        for (var u = 1; u <= 6; u++) {
-          if (localStorage.getItem('gkd_completed_' + g + '_' + u) === 'true') {
-            completedCount++;
+      // Inspect all localStorage keys for completed lessons across books and legacy grades
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf('gkd_completed_') === 0 && localStorage.getItem(k) === 'true') {
+          var trimmed = k.replace('gkd_completed_', '');
+          var parts = trimmed.split('_');
+          if (parts.length >= 2) {
+            var grade = parts[0];
+            var chap = parts[parts.length - 1];
+            completedKeys.add(grade + '_' + chap);
+          } else {
+            completedKeys.add(k);
           }
         }
       }
 
-      var pct = Math.round((completedCount / totalUnits) * 100);
+      var completedCount = completedKeys.size;
+      var totalUnits = 84; // 7 Books * 12 Grades core milestones
+
+      var pct = Math.min(100, Math.round((completedCount / totalUnits) * 100));
       var countEl = document.getElementById('completedLessonsCount');
       var xpEl = document.getElementById('totalVedicXP');
       var barEl = document.getElementById('overallProgressBar');
@@ -1391,8 +1409,21 @@
     function updateCertificatePreview() {
       var grade = document.getElementById('certGradeSelect').value;
       var bodyEl = document.getElementById('certBodyDisplay');
-      if (bodyEl) {
-        bodyEl.innerHTML = 'மேற்குறிப்பிட்ட மாணவர் குரு குல தேசத்தின் அதிநவீன சனாதன வேத தர்மக் கல்வி நெறிமுறைகளின் கீழ் <strong>' + grade + '</strong> பாடத்திட்டம், நவீன அறிவியல் ஒப்பீடுகள், தினசரி தர்ம சாதனை மற்றும் வினாடி-வினாத் தேர்வுகளை முழுமையாக நிறைவு செய்து இப்பேறுபெற்ற சான்றிதழைப் பெறுகிறார் எனச் சான்றளிக்கப்படுகிறது.';
+      var titleTamil = document.querySelector('.certificate-title-tamil');
+      var titleEn = document.querySelector('.certificate-title-en');
+
+      if (grade.includes('இளங்கலை') || grade.includes('முதுகலை') || grade.includes('முனைவர்') || grade.includes('பட்டயம்')) {
+        if (titleTamil) titleTamil.textContent = 'குரு குல வித்யாபீடம் — உயர்கல்வி மன்றம்';
+        if (titleEn) titleEn.textContent = 'GURU KULA DESAM COLLEGIATE & HIGHER STUDIES';
+        if (bodyEl) {
+          bodyEl.innerHTML = 'மேற்குறிப்பிட்ட மாணவர் குரு குல தேசத்தின் உயர்கல்வி வித்யாபீடத்தின் கீழ் <strong>' + grade + '</strong> பாடப்பிரிவு ஆய்வுக் கல்வி நெறிமுறைகள், வேதாந்த தத்துவ ஒப்பாய்வு, சாஸ்திர விவாதங்கள் மற்றும் சமர்ப்பிக்கப்பட்ட ஆய்வுரைகளை உயர் தகுதியுடன் நிறைவு செய்து இப்பேறுபெற்ற பட்டயச் சான்றிதழைப் பெறுகிறார் எனச் சான்றளிக்கப்படுகிறது.';
+        }
+      } else {
+        if (titleTamil) titleTamil.textContent = 'குரு குல தேசம் — இணையப் பள்ளி';
+        if (titleEn) titleEn.textContent = 'GURU KULA DESAM VEDIC-MODERN ACADEMY';
+        if (bodyEl) {
+          bodyEl.innerHTML = 'மேற்குறிப்பிட்ட மாணவர் குரு குல தேசத்தின் அதிநவீன சனாதன வேத தர்மக் கல்வி நெறிமுறைகளின் கீழ் <strong>' + grade + '</strong> பாடத்திட்டம், 7 ஆசிரமப் பாடநூல்கள், நவீன அறிவியல் ஒப்பீடுகள், தினசரி தர்ம சாதனை மற்றும் வினாடி-வினாத் தேர்வுகளை முழுமையாக நிறைவு செய்து இப்பேறுபெற்ற சான்றிதழைப் பெறுகிறார் எனச் சான்றளிக்கப்படுகிறது.';
+        }
       }
     }
 

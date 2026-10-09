@@ -1,4 +1,6 @@
 import sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 from playwright.sync_api import sync_playwright
 
 def run_tests():
@@ -60,6 +62,66 @@ def run_tests():
                 print("Playable YouTube embed iframe is correctly present!")
         else:
             print("Note: Chapter media section locator count:", media_section.count())
+
+        # STUDENT PERSONA TEST: Chapter Completion, Quick Quiz & Reflection Notes
+        print("--- Testing Student Persona: Chapter Mastery Deck & LMS Progress ---")
+        mastery_deck = page.locator('#studentMasteryDeck')
+        assert mastery_deck.is_visible(), "Student Mastery Deck should be visible in chapter"
+        
+        # 1. Mark as completed
+        lms_btn = page.locator('#chapterLmsBtn')
+        assert lms_btn.is_visible(), "Chapter LMS completion button should be visible"
+        print("Initial LMS button text:", lms_btn.text_content().strip())
+        lms_btn.click()
+        page.wait_for_timeout(200)
+        assert 'completed' in lms_btn.get_attribute('class'), "Button should have 'completed' class after click"
+        print("Chapter marked as completed successfully!")
+
+        # 2. Interactive Quick Knowledge Check (Quiz)
+        quiz_opt = page.locator('.chapter-quiz-opt').first
+        assert quiz_opt.is_visible(), "Quiz options should be visible"
+        quiz_opt.click()
+        page.wait_for_timeout(200)
+        feedback = page.locator('.chapter-quiz-feedback')
+        assert feedback.is_visible(), "Quiz feedback should be visible after answering"
+        print("Quiz answered and interactive feedback verified!")
+
+        # 3. Reflection Notes entry
+        notes_textarea = page.locator('.chapter-note-textarea')
+        assert notes_textarea.is_visible(), "Student reflection notes textarea should be visible"
+        notes_textarea.fill("இன்று முதல் தினமும் காலையில் பெற்றோருக்கு வணக்கம் செய்வேன்.")
+        page.wait_for_timeout(100)
+        saved_badge = page.locator('#chapterNoteSavedBadge')
+        assert saved_badge.is_visible(), "Saved note indicator should be visible"
+        print("Student reflection note saved locally!")
+
+        # 4. Student School Dashboard & Certificate Verification in school.html
+        print("--- Testing Student Persona in school.html ---")
+        page.goto('http://localhost:8000/school.html', wait_until='networkidle')
+        
+        # Check student name customization
+        page.fill('#studentNameInput', 'கவியரசன் மாணவர்')
+        page.wait_for_timeout(100)
+        assert page.locator('#certStudentNameDisplay').text_content().strip() == 'கவியரசன் மாணவர்'
+        print("Student name dynamically synced to Certificate!")
+
+        # Check LMS progress bar and completed count
+        completed_val = page.locator('#completedLessonsCount').text_content().strip()
+        print(f"School Dashboard completed count: {completed_val}")
+        assert int(completed_val) >= 1, "Completed lessons count should be at least 1 after marking chapter completed"
+        
+        xp_val = page.locator('#totalVedicXP').text_content().strip()
+        print(f"School Dashboard Vedic XP: {xp_val}")
+        assert int(xp_val) >= 50, "Vedic XP should be at least 50"
+
+        # Check Certificate Grade Switch to Collegiate degree
+        page.select_option('#certGradeSelect', 'இளங்கலை (B.A. சனாதன தர்மம் & அறிவியல்)')
+        page.wait_for_timeout(100)
+        cert_tamil_title = page.locator('.certificate-title-tamil').text_content().strip()
+        print("Collegiate Certificate title:", cert_tamil_title)
+        assert 'வித்யாபீடம்' in cert_tamil_title, "Collegiate certificate title should reflect higher studies"
+        assert 'இளங்கலை' in page.locator('#certBodyDisplay').text_content()
+        print("Student Certificate graduation tier switch verified successfully!")
 
         # Test kalvi.html
         print("--- Testing kalvi.html ---")
@@ -131,6 +193,34 @@ def run_tests():
         b_shelf = page.locator('#booksShelfTabs .shelf-book-btn')
         print(f"books.html shelf count: {b_shelf.count()}")
         assert b_shelf.count() == 7, f"Expected 7 books in books.html, got {b_shelf.count()}"
+
+        # TEACHER / ACHARYA PERSONA TEST: Pedagogical Guide, 40-Week Calendar & Assessment Rubric
+        print("--- Testing Teacher Persona: Pedagogical Guide & 40-Week Calendar in syllabus.html ---")
+        page.goto('http://localhost:8000/syllabus.html', wait_until='networkidle')
+        teacher_section = page.locator('#teacherPedagogySection')
+        assert teacher_section.is_visible(), "Teacher Pedagogy Section should be visible in syllabus.html"
+        
+        # Verify 5-Step Gurukula Classroom steps
+        steps = teacher_section.locator('div[style*="border-radius: 12px"]')
+        print(f"Found {steps.count()} classroom flow steps in Teacher Guide")
+        assert steps.count() >= 5, f"Expected 5 classroom flow steps, got {steps.count()}"
+
+        # Verify 40-Week 3-Term Academic Calendar
+        term_cards = teacher_section.locator('div[style*="border-radius: 14px"]')
+        print(f"Found {term_cards.count()} term calendar cards")
+        assert term_cards.count() >= 3, f"Expected 3 term calendar cards, got {term_cards.count()}"
+
+        # Verify Assessment Rubric Table (4 holistic pillars)
+        rubric_rows = teacher_section.locator('tbody tr')
+        print(f"Found {rubric_rows.count()} rubric evaluation rows")
+        assert rubric_rows.count() >= 4, f"Expected 4 rubric pillars, got {rubric_rows.count()}"
+        print("Teacher Pedagogical Handbook, 40-Week Calendar & Rubric verified successfully!")
+
+        # Verify Teacher Moola Nool Reference Library
+        print("--- Testing Teacher Persona: Moola Nool Direct Reference ---")
+        page.goto('http://localhost:8000/moola-nool.html', wait_until='networkidle')
+        assert page.locator('#moolaSearchInput').is_visible(), "Moola Nool search input should be visible for teachers"
+        print("Teacher Moola Nool reference library verified successfully!")
 
         # Filter console errors (ignore youtube / external 3rd party tracker errors)
         app_errors = [e for e in console_errors if 'youtube' not in e.lower() and 'doubleclick' not in e.lower() and 'google' not in e.lower()]
