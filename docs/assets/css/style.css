@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --bg-dark: #030812;
-  --bg-surface: rgba(7, 21, 38, 0.55);
-  --bg-card: rgba(8, 20, 38, 0.48);
-  --bg-card-hover: rgba(12, 28, 52, 0.65);
-  --bg-glass: rgba(6, 17, 34, 0.45);
-  --bg-glass-strong: rgba(6, 17, 34, 0.70);
-  --border-subtle: rgba(56, 189, 248, 0.16);
-  --border-gold: rgba(45, 212, 191, 0.32);
-  --border-gold-hover: rgba(56, 189, 248, 0.65);
+  --bg-dark: #020610;
+  --bg-surface: rgba(8, 20, 36, 0.78);
+  --bg-card: rgba(9, 22, 40, 0.76);
+  --bg-card-hover: rgba(13, 31, 56, 0.90);
+  --bg-glass: rgba(7, 19, 36, 0.76);
+  --bg-glass-strong: rgba(6, 17, 34, 0.90);
+  --border-subtle: rgba(56, 189, 248, 0.20);
+  --border-gold: rgba(45, 212, 191, 0.35);
+  --border-gold-hover: rgba(56, 189, 248, 0.70);
   --teal: #14b8a6;
   --teal-bright: #2dd4bf;
   --teal-glow: rgba(20, 184, 166, 0.35);
@@ -31,7 +31,7 @@
   --text-muted: #94a3b8;
   --badge-film: #e63946;
   --badge-audio: #0d9488;
-  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 18px rgba(20, 184, 166, 0.08);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.55), 0 0 18px rgba(20, 184, 166, 0.10);
   --shadow-gold: 0 0 25px rgba(45, 212, 191, 0.35);
 }
 
@@ -39,13 +39,13 @@
 
 body {
   font-family: 'Outfit', 'Mukta Malar', sans-serif;
-  background-color: #030812;
+  background-color: #020610;
   background-image: 
-    linear-gradient(180deg, rgba(3, 8, 18, 0.68) 0%, rgba(3, 8, 18, 0.30) 120px, rgba(3, 8, 18, 0.20) 45%, rgba(3, 8, 18, 0.62) 100%),
-    radial-gradient(ellipse 90% 55% at 15% 10%, rgba(20, 184, 166, 0.28) 0%, transparent 62%),
-    radial-gradient(ellipse 80% 60% at 85% 16%, rgba(139, 92, 246, 0.26) 0%, transparent 62%),
-    radial-gradient(ellipse 85% 50% at 50% 50%, rgba(14, 165, 233, 0.18) 0%, transparent 65%),
-    radial-gradient(ellipse 75% 55% at 10% 85%, rgba(16, 185, 129, 0.22) 0%, transparent 62%),
+    linear-gradient(180deg, rgba(2, 6, 15, 0.88) 0%, rgba(3, 8, 20, 0.62) 140px, rgba(3, 8, 20, 0.52) 45%, rgba(2, 6, 15, 0.90) 100%),
+    radial-gradient(ellipse 90% 55% at 15% 10%, rgba(20, 184, 166, 0.22) 0%, transparent 62%),
+    radial-gradient(ellipse 80% 60% at 85% 16%, rgba(139, 92, 246, 0.20) 0%, transparent 62%),
+    radial-gradient(ellipse 85% 50% at 50% 50%, rgba(14, 165, 233, 0.14) 0%, transparent 65%),
+    radial-gradient(ellipse 75% 55% at 10% 85%, rgba(16, 185, 129, 0.18) 0%, transparent 62%),
     url('../images/gurukula-banyan-tree-bg.jpg');
   background-size: cover;
   background-position: center top;
@@ -8418,4 +8418,311 @@ h1, h2, h3, h4, h5, h6,
   border-color: #38bdf8;
   color: #38bdf8;
   font-weight: 700;
+}
+
+/* ============================================================== */
+/* ATMOSPHERIC SACRED SANCTUM: LIVING DHEEPA, DHOOPA & DRIZZLE     */
+/* ============================================================== */
+
+/* Mild Falling Drizzle Canvas */
+.gkd-drizzle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.85;
+}
+
+/* Corner Sanctuary Containers */
+.gkd-corner-sanctuary {
+  position: fixed;
+  bottom: 16px;
+  z-index: 92;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.25s ease;
+  outline: none;
+}
+
+.gkd-corner-sanctuary:focus-visible {
+  outline: 2px solid var(--gold, #d4af37);
+  border-radius: 12px;
+}
+
+.gkd-corner-sanctuary:hover {
+  transform: translateY(-4px) scale(1.08);
+  filter: drop-shadow(0 0 16px rgba(245, 158, 11, 0.5));
+}
+
+.gkd-corner-dheepam {
+  left: 18px;
+}
+
+.gkd-corner-dhoopam {
+  right: 18px;
+}
+
+.gkd-dheepam-svg,
+.gkd-dhoopam-svg {
+  width: 52px;
+  height: 52px;
+  overflow: visible;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+}
+
+.gkd-corner-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--gold-bright, #ffd700);
+  background: rgba(3, 8, 18, 0.88);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-top: 2px;
+  white-space: nowrap;
+  opacity: 0.85;
+  transition: opacity 0.2s, background 0.2s, border-color 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.gkd-corner-sanctuary:hover .gkd-corner-label {
+  opacity: 1;
+  background: rgba(15, 23, 42, 0.95);
+  border-color: var(--gold, #d4af37);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.4);
+}
+
+/* Living Flame Animations (Dheepam) */
+.gkd-flame-outer {
+  transform-origin: 32px 34px;
+  animation: gkdFlameFlicker 1.8s infinite ease-in-out alternate;
+}
+
+.gkd-flame-inner {
+  transform-origin: 32px 34px;
+  animation: gkdFlameInnerFlicker 1.2s infinite ease-in-out alternate;
+}
+
+.gkd-flame-halo {
+  transform-origin: 32px 22px;
+  animation: gkdHaloBreathe 2.4s infinite ease-in-out alternate;
+}
+
+@keyframes gkdFlameFlicker {
+  0% { transform: scale(1, 1) rotate(0deg); }
+  25% { transform: scale(0.97, 1.05) rotate(-2deg); }
+  50% { transform: scale(1.04, 0.96) rotate(1.8deg); }
+  75% { transform: scale(0.95, 1.03) rotate(-1deg); }
+  100% { transform: scale(1.02, 0.98) rotate(1.2deg); }
+}
+
+@keyframes gkdFlameInnerFlicker {
+  0% { transform: scale(1, 1) rotate(0deg); opacity: 0.95; }
+  50% { transform: scale(1.08, 0.94) rotate(-1.5deg); opacity: 1; }
+  100% { transform: scale(0.92, 1.06) rotate(1deg); opacity: 0.9; }
+}
+
+@keyframes gkdHaloBreathe {
+  0% { transform: scale(0.95); opacity: 0.50; }
+  50% { transform: scale(1.15); opacity: 0.85; }
+  100% { transform: scale(0.98); opacity: 0.55; }
+}
+
+/* Living Smoke Wisps (Dhoopam) */
+.gkd-dhoopam-smoke-stage {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 80px;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.gkd-smoke-wisp {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(241, 245, 249, 0.45) 0%, rgba(203, 213, 225, 0.25) 50%, rgba(148, 163, 184, 0) 75%);
+  filter: blur(4px);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.gkd-smoke-wisp.wisp-1 { animation: gkdSmokeRise1 3.2s infinite ease-out; }
+.gkd-smoke-wisp.wisp-2 { animation: gkdSmokeRise2 3.6s infinite ease-out 0.9s; }
+.gkd-smoke-wisp.wisp-3 { animation: gkdSmokeRise3 4.0s infinite ease-out 1.8s; }
+.gkd-smoke-wisp.wisp-4 { animation: gkdSmokeRise1 3.5s infinite ease-out 2.5s; }
+
+@keyframes gkdSmokeRise1 {
+  0% { transform: translate(-50%, 0) scale(0.6); opacity: 0; }
+  20% { opacity: 0.65; }
+  50% { transform: translate(calc(-50% - 10px), -38px) scale(1.4); opacity: 0.40; }
+  80% { transform: translate(calc(-50% + 14px), -68px) scale(2.2); opacity: 0.18; }
+  100% { transform: translate(calc(-50% - 4px), -92px) scale(3.0); opacity: 0; }
+}
+
+@keyframes gkdSmokeRise2 {
+  0% { transform: translate(-50%, 0) scale(0.5); opacity: 0; }
+  25% { opacity: 0.70; }
+  55% { transform: translate(calc(-50% + 12px), -42px) scale(1.6); opacity: 0.38; }
+  85% { transform: translate(calc(-50% - 12px), -74px) scale(2.5); opacity: 0.14; }
+  100% { transform: translate(calc(-50% + 6px), -98px) scale(3.2); opacity: 0; }
+}
+
+@keyframes gkdSmokeRise3 {
+  0% { transform: translate(-50%, 0) scale(0.7); opacity: 0; }
+  20% { opacity: 0.60; }
+  50% { transform: translate(calc(-50% - 6px), -34px) scale(1.3); opacity: 0.35; }
+  75% { transform: translate(calc(-50% + 8px), -62px) scale(2.0); opacity: 0.16; }
+  100% { transform: translate(calc(-50% - 10px), -88px) scale(2.8); opacity: 0; }
+}
+
+/* Ember Glow in Dhoopam */
+.gkd-dhoopam-embers {
+  animation: gkdEmberPulse 2.8s infinite ease-in-out alternate;
+}
+
+.gkd-ember-spark.spark-1 {
+  animation: gkdSparkBlink 1.4s infinite ease-in-out alternate;
+}
+
+.gkd-ember-spark.spark-2 {
+  animation: gkdSparkBlink 1.9s infinite ease-in-out alternate 0.5s;
+}
+
+@keyframes gkdEmberPulse {
+  0% { opacity: 0.75; filter: drop-shadow(0 0 2px #f97316); }
+  50% { opacity: 1; filter: drop-shadow(0 0 7px #ffedd5) drop-shadow(0 0 12px #f97316); }
+  100% { opacity: 0.70; filter: drop-shadow(0 0 3px #ea580c); }
+}
+
+@keyframes gkdSparkBlink {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* Bless & Fragrance Interaction Pulses */
+.gkd-corner-sanctuary.blessed {
+  animation: gkdBlessPulse 1.2s ease-out;
+}
+
+.gkd-corner-sanctuary.fragrant {
+  animation: gkdFragrantPulse 1.2s ease-out;
+}
+
+@keyframes gkdBlessPulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(245, 158, 11, 0.4)); }
+  40% { transform: scale(1.18); filter: drop-shadow(0 0 28px rgba(251, 191, 36, 0.9)) drop-shadow(0 0 45px rgba(245, 158, 11, 0.6)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.3)); }
+}
+
+@keyframes gkdFragrantPulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(234, 88, 12, 0.4)); }
+  40% { transform: scale(1.18); filter: drop-shadow(0 0 28px rgba(251, 146, 60, 0.9)) drop-shadow(0 0 45px rgba(234, 88, 12, 0.6)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(234, 88, 12, 0.3)); }
+}
+
+/* Atmosphere Controls Pill */
+.gkd-atmosphere-controls {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 91;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(8, 20, 36, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 5px 14px;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+  opacity: 0.65;
+  transition: opacity 0.25s, transform 0.25s, border-color 0.25s;
+}
+
+.gkd-atmosphere-controls:hover {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-2px);
+  border-color: #38bdf8;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(56, 189, 248, 0.25);
+}
+
+.gkd-atmo-btn {
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.gkd-atmo-btn:hover {
+  color: #ffffff;
+  background: rgba(56, 189, 248, 0.15);
+}
+
+.gkd-atmo-btn.active {
+  color: #38bdf8;
+}
+
+/* Mobile & Touch Adjustments */
+@media (max-width: 640px) {
+  .gkd-corner-sanctuary {
+    bottom: 8px;
+  }
+  .gkd-corner-dheepam {
+    left: 8px;
+  }
+  .gkd-corner-dhoopam {
+    right: 8px;
+  }
+  .gkd-dheepam-svg,
+  .gkd-dhoopam-svg {
+    width: 38px;
+    height: 38px;
+  }
+  .gkd-corner-label {
+    display: none;
+  }
+  .gkd-atmosphere-controls {
+    display: none;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .gkd-flame-outer,
+  .gkd-flame-inner,
+  .gkd-flame-halo,
+  .gkd-smoke-wisp,
+  .gkd-dhoopam-embers,
+  .gkd-ember-spark {
+    animation: none !important;
+  }
+  .gkd-drizzle-canvas {
+    display: none !important;
+  }
 }

@@ -1985,6 +1985,7 @@ function mountAppShell() {
   ensurePageBreadcrumb();
   highlightActiveSidebarGroup();
   restoreLMSProgress();
+  initSpiritualAtmosphere();
 }
 
 /**
@@ -3418,5 +3419,286 @@ window.addEventListener('keydown', function(e) {
     }
   }
 });
+
+/* ============================================================== */
+/* ATMOSPHERIC SACRED SANCTUM: LIVING DHEEPA, DHOOPA & DRIZZLE     */
+/* ============================================================== */
+
+let gkdDrizzleActive = true;
+let gkdDrizzleAnimId = null;
+
+function initSpiritualAtmosphere() {
+  if (typeof document === 'undefined' || !document.body) return;
+  if (document.getElementById('gkdAtmosphereContainer')) return;
+
+  const container = document.createElement('div');
+  container.id = 'gkdAtmosphereContainer';
+  container.className = 'gkd-atmosphere-container';
+  container.setAttribute('aria-hidden', 'true');
+  container.innerHTML = `
+    <!-- Mild Falling Drizzle Canvas -->
+    <canvas id="gkdDrizzleCanvas" class="gkd-drizzle-canvas"></canvas>
+
+    <!-- Living Dheepa (Bottom-Left Corner) -->
+    <div class="gkd-corner-sanctuary gkd-corner-dheepam" id="gkdCornerDheepam" title="மங்கல அகல் தீபம் — நல்வாழ்வின் பேரொளி (Click to invoke light &amp; chime)" role="button" tabindex="0" aria-label="மங்கல தீபம்">
+      <svg class="gkd-dheepam-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="22" r="18" fill="url(#gkdDheepamHaloGlow)" class="gkd-flame-halo" />
+        <path class="gkd-flame-outer" d="M32 6 C28 14 22 22 25 29 C27 34 37 34 39 29 C42 22 36 14 32 6 Z" fill="url(#gkdDheepamFlameOuterGrad)" />
+        <path class="gkd-flame-inner" d="M32 12 C30 17 26 23 28 28 C29.5 31 34.5 31 36 28 C38 23 34 17 32 12 Z" fill="url(#gkdDheepamFlameInnerGrad)" />
+        <line x1="32" y1="28" x2="32" y2="34" stroke="#451a03" stroke-width="2" stroke-linecap="round" />
+        <ellipse cx="32" cy="38" rx="22" ry="7" fill="url(#gkdDheepamBrassGradRim)" />
+        <path d="M10 38 C10 46 20 54 32 54 C44 54 54 46 54 38 Z" fill="url(#gkdDheepamBrassGradBody)" />
+        <path d="M22 53 L20 59 L44 59 L42 53 Z" fill="url(#gkdDheepamBrassGradStand)" />
+        <ellipse cx="32" cy="40" rx="16" ry="3" stroke="#fef08a" stroke-width="0.8" opacity="0.6" />
+        <defs>
+          <radialGradient id="gkdDheepamHaloGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8" />
+            <stop offset="60%" stop-color="#f59e0b" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#d97706" stop-opacity="0" />
+          </radialGradient>
+          <linearGradient id="gkdDheepamFlameOuterGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#fef08a" />
+            <stop offset="45%" stop-color="#f59e0b" />
+            <stop offset="85%" stop-color="#dc2626" />
+            <stop offset="100%" stop-color="#991b1b" />
+          </linearGradient>
+          <linearGradient id="gkdDheepamFlameInnerGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffffff" />
+            <stop offset="60%" stop-color="#fef08a" />
+            <stop offset="100%" stop-color="#f59e0b" />
+          </linearGradient>
+          <linearGradient id="gkdDheepamBrassGradRim" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#d97706" />
+            <stop offset="50%" stop-color="#fde68a" />
+            <stop offset="100%" stop-color="#b45309" />
+          </linearGradient>
+          <linearGradient id="gkdDheepamBrassGradBody" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f59e0b" />
+            <stop offset="60%" stop-color="#b45309" />
+            <stop offset="100%" stop-color="#78350f" />
+          </linearGradient>
+          <linearGradient id="gkdDheepamBrassGradStand" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#78350f" />
+            <stop offset="50%" stop-color="#fde68a" />
+            <stop offset="100%" stop-color="#78350f" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="gkd-corner-label">மங்கல தீபம்</span>
+    </div>
+
+    <!-- Living Dhoopa (Bottom-Right Corner) -->
+    <div class="gkd-corner-sanctuary gkd-corner-dhoopam" id="gkdCornerDhoopam" title="சுகந்த சாம்பிராணித் தூபம் — மன அமைதி &amp; தெய்வீக நறுமணம் (Click to invoke peace &amp; fragrance)" role="button" tabindex="0" aria-label="சுகந்த தூபம்">
+      <div class="gkd-dhoopam-smoke-stage">
+        <span class="gkd-smoke-wisp wisp-1"></span>
+        <span class="gkd-smoke-wisp wisp-2"></span>
+        <span class="gkd-smoke-wisp wisp-3"></span>
+        <span class="gkd-smoke-wisp wisp-4"></span>
+      </div>
+      <svg class="gkd-dhoopam-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="32" cy="30" rx="14" ry="5" fill="url(#gkdDhoopamEmberGrad)" class="gkd-dhoopam-embers" />
+        <circle cx="28" cy="29" r="2.2" fill="#ffedd5" class="gkd-ember-spark spark-1" />
+        <circle cx="35" cy="31" r="1.8" fill="#fef08a" class="gkd-ember-spark spark-2" />
+        <path d="M18 30 C18 20 25 15 32 15 C39 15 46 20 46 30 Z" fill="url(#gkdDhoopamBrassGradLid)" opacity="0.88" />
+        <circle cx="32" cy="20" r="1.5" fill="#18181b" />
+        <circle cx="27" cy="24" r="1.3" fill="#18181b" />
+        <circle cx="37" cy="24" r="1.3" fill="#18181b" />
+        <circle cx="32" cy="26" r="1.5" fill="#f97316" />
+        <ellipse cx="32" cy="30" rx="19" ry="6" stroke="url(#gkdDhoopamBrassGradRim)" stroke-width="2.5" fill="none" />
+        <path d="M13 30 C13 42 22 47 32 47 C42 47 51 42 51 30 Z" fill="url(#gkdDhoopamBrassGradBody)" />
+        <path d="M14 34 C8 36 6 42 8 46 C10 49 14 47 16 43" stroke="url(#gkdDhoopamBrassGradRim)" stroke-width="2.8" stroke-linecap="round" fill="none" />
+        <path d="M26 47 L23 57 L27 57 L29 47 Z" fill="url(#gkdDhoopamBrassGradStand)" />
+        <path d="M38 47 L35 47 L37 57 L41 57 Z" fill="url(#gkdDhoopamBrassGradStand)" />
+        <path d="M30 47 L31 58 L33 58 L34 47 Z" fill="url(#gkdDhoopamBrassGradStand)" />
+        <defs>
+          <radialGradient id="gkdDhoopamEmberGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffedd5" />
+            <stop offset="35%" stop-color="#f97316" />
+            <stop offset="75%" stop-color="#dc2626" />
+            <stop offset="100%" stop-color="#450a0a" />
+          </radialGradient>
+          <linearGradient id="gkdDhoopamBrassGradLid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#fde68a" />
+            <stop offset="60%" stop-color="#b45309" />
+            <stop offset="100%" stop-color="#78350f" />
+          </linearGradient>
+          <linearGradient id="gkdDhoopamBrassGradRim" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#b45309" />
+            <stop offset="50%" stop-color="#fef08a" />
+            <stop offset="100%" stop-color="#92400e" />
+          </linearGradient>
+          <linearGradient id="gkdDhoopamBrassGradBody" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d97706" />
+            <stop offset="70%" stop-color="#78350f" />
+            <stop offset="100%" stop-color="#451a03" />
+          </linearGradient>
+          <linearGradient id="gkdDhoopamBrassGradStand" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#92400e" />
+            <stop offset="100%" stop-color="#451a03" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="gkd-corner-label">சுகந்த தூபம்</span>
+    </div>
+
+    <!-- Atmosphere Controls Pill -->
+    <div class="gkd-atmosphere-controls" id="gkdAtmoControls">
+      <button type="button" class="gkd-atmo-btn active" id="gkdDrizzleToggleBtn" onclick="toggleDrizzleEffect()" title="தூறல் கட்டுப்பாடு (Toggle Drizzle)">
+        <span>🌧️</span> <span id="gkdDrizzleBtnLabel">தூறல்</span>
+      </button>
+      <span style="opacity: 0.35;">|</span>
+      <button type="button" class="gkd-atmo-btn" onclick="playTempleBell(); showToast('🔔 <strong>கோவில் மணி நாதம்:</strong> ஓம் நமச்சிவாய — மங்கலம் பெருகுக!', 3000);" title="ஆலய மணி நாதம் ஒலிக்க">
+        <span>🔔</span> <span>மணி நாதம்</span>
+      </button>
+    </div>
+  `;
+
+  document.body.appendChild(container);
+
+  // Setup interactions
+  const dheepam = document.getElementById('gkdCornerDheepam');
+  if (dheepam) {
+    const handleDheepam = () => {
+      playTempleBell();
+      dheepam.classList.add('blessed');
+      setTimeout(() => dheepam.classList.remove('blessed'), 1200);
+      showToast('🪔 <strong>மங்கல அகல் தீபம்:</strong> குருவருள் பேரொளி எங்கும் பரவுக — அக இருள் நீங்கி நல்வொளி பெருகுக!', 3500);
+    };
+    dheepam.addEventListener('click', handleDheepam);
+    dheepam.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') handleDheepam(); });
+  }
+
+  const dhoopam = document.getElementById('gkdCornerDhoopam');
+  if (dhoopam) {
+    const handleDhoopam = () => {
+      playTempleBell();
+      dhoopam.classList.add('fragrant');
+      setTimeout(() => dhoopam.classList.remove('fragrant'), 1200);
+      showToast('🌿 <strong>சுகந்த சாம்பிராணித் தூபம்:</strong> தூய நறுமணம் பரவுக — இல்லமும் உள்ளமும் தூய்மையும் அமைதியும் பெறுக!', 3500);
+    };
+    dhoopam.addEventListener('click', handleDhoopam);
+    dhoopam.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') handleDhoopam(); });
+  }
+
+  // Start Canvas Drizzle
+  startDrizzleEngine();
+}
+
+function startDrizzleEngine() {
+  const canvas = document.getElementById('gkdDrizzleCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  // Respect reduced motion
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    gkdDrizzleActive = false;
+    canvas.style.display = 'none';
+    const btn = document.getElementById('gkdDrizzleToggleBtn');
+    if (btn) btn.classList.remove('active');
+    return;
+  }
+
+  // Check saved preference
+  const savedDrizzle = localStorage.getItem('gkd_drizzle_enabled');
+  if (savedDrizzle === 'false') {
+    gkdDrizzleActive = false;
+    canvas.style.display = 'none';
+    const btn = document.getElementById('gkdDrizzleToggleBtn');
+    if (btn) btn.classList.remove('active');
+    return;
+  }
+
+  let width = (canvas.width = window.innerWidth);
+  let height = (canvas.height = window.innerHeight);
+
+  window.addEventListener('resize', () => {
+    if (!canvas) return;
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+  }, { passive: true });
+
+  const dropCount = width < 768 ? 32 : 65;
+  const drops = [];
+
+  for (let i = 0; i < dropCount; i++) {
+    drops.push({
+      x: Math.random() * (width + 100) - 50,
+      y: Math.random() * height,
+      len: Math.random() * 12 + 10,
+      speed: Math.random() * 3.5 + 4.5,
+      slant: 0.12 + Math.random() * 0.08,
+      opacity: Math.random() * 0.18 + 0.08,
+      isGolden: Math.random() < 0.22,
+      thickness: Math.random() * 0.6 + 0.8
+    });
+  }
+
+  function renderDrizzle() {
+    if (!gkdDrizzleActive) return;
+    ctx.clearRect(0, 0, width, height);
+
+    for (let i = 0; i < drops.length; i++) {
+      const d = drops[i];
+
+      ctx.beginPath();
+      ctx.moveTo(d.x, d.y);
+      ctx.lineTo(d.x + d.len * d.slant, d.y + d.len);
+
+      if (d.isGolden) {
+        ctx.strokeStyle = 'rgba(253, 224, 71, ' + (d.opacity * 1.4) + ')';
+      } else {
+        ctx.strokeStyle = 'rgba(186, 230, 253, ' + d.opacity + ')';
+      }
+
+      ctx.lineWidth = d.thickness;
+      ctx.lineCap = 'round';
+      ctx.stroke();
+
+      d.y += d.speed;
+      d.x += d.speed * d.slant;
+
+      if (d.y > height) {
+        d.y = -d.len - 10;
+        d.x = Math.random() * (width + 100) - 50;
+      }
+      if (d.x > width + 50) {
+        d.x = -20;
+      }
+    }
+
+    gkdDrizzleAnimId = requestAnimationFrame(renderDrizzle);
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      if (gkdDrizzleAnimId) cancelAnimationFrame(gkdDrizzleAnimId);
+    } else if (gkdDrizzleActive) {
+      gkdDrizzleAnimId = requestAnimationFrame(renderDrizzle);
+    }
+  });
+
+  gkdDrizzleAnimId = requestAnimationFrame(renderDrizzle);
+}
+
+function toggleDrizzleEffect() {
+  gkdDrizzleActive = !gkdDrizzleActive;
+  localStorage.setItem('gkd_drizzle_enabled', gkdDrizzleActive ? 'true' : 'false');
+  const canvas = document.getElementById('gkdDrizzleCanvas');
+  const btn = document.getElementById('gkdDrizzleToggleBtn');
+  if (canvas) {
+    canvas.style.display = gkdDrizzleActive ? 'block' : 'none';
+  }
+  if (btn) {
+    btn.classList.toggle('active', gkdDrizzleActive);
+  }
+  if (gkdDrizzleActive) {
+    startDrizzleEngine();
+    showToast('🌧️ <strong>மங்கலத் தூறல்:</strong> இயங்குகிறது (Drizzle Active)', 2200);
+  } else {
+    if (gkdDrizzleAnimId) cancelAnimationFrame(gkdDrizzleAnimId);
+    showToast('🌧️ <strong>மங்கலத் தூறல்:</strong> நிறுத்தப்பட்டது (Drizzle Paused)', 2200);
+  }
+}
 
 
