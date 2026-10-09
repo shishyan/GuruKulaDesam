@@ -1,0 +1,1 @@
+{"id": "0DoegY9d0ZM", "ok": false, "err": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned \"The comment thread could not be created due to insufficient permissions. The request might not be properly authorized.\". Details: \"[{'message': 'The comment thread could not be cre"}

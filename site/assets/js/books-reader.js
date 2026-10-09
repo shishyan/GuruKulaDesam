@@ -231,11 +231,24 @@ function renderCurrentChapterContent() {
         </button>
       </div>
 
-      <!-- 7 Chapter Visuals Carousel Gallery -->
-      ${carouselHtml}
+      <!-- 7 Sub-Chapters Interactive Jump Bar (பாட உட்பிரிவுகள்) -->
+      <nav class="subchapter-nav-strip" aria-label="அத்தியாய உட்பிரிவுகள்">
+        ${images.length > 0 ? `<a href="#subchap-visuals" class="subchap-pill-btn"><span class="subchap-icon">🎨</span><span>1. காட்சிகள்</span></a>` : ''}
+        <a href="#subchap-verse" class="subchap-pill-btn"><span class="subchap-icon">📜</span><span>2. மூலப் பாடல்</span></a>
+        <a href="#subchap-exposition" class="subchap-pill-btn"><span class="subchap-icon">📖</span><span>3. விரிவுரை</span></a>
+        <a href="#subchap-story" class="subchap-pill-btn"><span class="subchap-icon">🪔</span><span>4. மெய்ஞ்ஞானக் கதை</span></a>
+        <a href="#subchap-life" class="subchap-pill-btn"><span class="subchap-icon">🌿</span><span>5. இல்லற நடைமுறை</span></a>
+        <a href="#subchap-exercise" class="subchap-pill-btn"><span class="subchap-icon">☀️</span><span>6. சாதனா பயிற்சி</span></a>
+        <a href="#subchap-media" class="subchap-pill-btn"><span class="subchap-icon">🎵</span><span>7. பாட இசை &amp; படம்</span></a>
+      </nav>
 
-      <!-- Sacred Verse Block (Zero-Wrapper & Deep Shadow) -->
-      <div class="verse-callout-clean" style="padding: 10px 0 16px 0; margin-bottom: 22px;">
+      <!-- 1. Chapter Visuals Carousel Gallery -->
+      <div id="subchap-visuals" style="scroll-margin-top: 90px;">
+        ${carouselHtml}
+      </div>
+
+      <!-- 2. Sacred Verse Block (Zero-Wrapper & Deep Shadow) -->
+      <div id="subchap-verse" class="verse-callout-clean" style="scroll-margin-top: 90px; padding: 10px 0 16px 0; margin-bottom: 22px;">
         <div style="font-size:0.8rem; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px; text-shadow:0 1px 3px rgba(0,0,0,0.95);">மூலப் பாடல் / சூத்திரம் (Sacred Verse):</div>
         <div class="verse-text-sacred" style="font-size:1.22rem; font-weight:700; color:#ffffff; line-height:1.6; font-family:'Mukta Malar', serif; text-shadow:0 2px 8px rgba(0,0,0,0.98);">${chap.verse}</div>
         <div class="verse-meaning-clean" style="color:#cbd5e1; font-size:0.95rem; margin-top:10px; line-height:1.6; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
@@ -251,8 +264,8 @@ function renderCurrentChapterContent() {
         </div>
       </div>
 
-      <!-- Philosophical Exposition (Zero-Wrapper) -->
-      <div class="reading-section-block">
+      <!-- 3. Philosophical Exposition (Zero-Wrapper) -->
+      <div id="subchap-exposition" class="reading-section-block" style="scroll-margin-top: 90px;">
         <h4 style="color:#38bdf8; font-size:1.1rem; font-weight:700; margin:0 0 10px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           விரிவுரை &amp; தத்துவ உரை (Philosophical Exposition)
@@ -262,8 +275,8 @@ function renderCurrentChapterContent() {
         </div>
       </div>
 
-      <!-- Puranic / Itihasic Narrative Story (Zero-Wrapper) -->
-      <div class="reading-section-block story-block" style="padding:10px 0; margin-bottom:20px;">
+      <!-- 4. Puranic / Itihasic Narrative Story (Zero-Wrapper) -->
+      <div id="subchap-story" class="reading-section-block story-block" style="scroll-margin-top: 90px; padding:10px 0; margin-bottom:20px;">
         <h4 style="color:var(--gold-bright); font-size:1.1rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
           மெய்ஞ்ஞானக் கதை / அற உருவகம் (Narrative Illustration)
@@ -273,8 +286,8 @@ function renderCurrentChapterContent() {
         </div>
       </div>
 
-      <!-- Life Application & Householder Dharma (Zero-Wrapper) -->
-      <div class="reading-section-block" style="padding:10px 0; margin-bottom:20px;">
+      <!-- 5. Life Application & Householder Dharma (Zero-Wrapper) -->
+      <div id="subchap-life" class="reading-section-block" style="scroll-margin-top: 90px; padding:10px 0; margin-bottom:20px;">
         <h4 style="color:#34d399; font-size:1.1rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg>
           இல்லற &amp; அன்றாட வாழ்வியல் நடைமுறை (Practical Application: 3 Ds)
@@ -284,8 +297,8 @@ function renderCurrentChapterContent() {
         </div>
       </div>
 
-      <!-- Sadhana Exercise & Contemplative Question (Zero-Wrapper) -->
-      <div class="reading-section-block" style="padding:10px 0; margin-bottom:24px;">
+      <!-- 6. Sadhana Exercise & Contemplative Question (Zero-Wrapper) -->
+      <div id="subchap-exercise" class="reading-section-block" style="scroll-margin-top: 90px; padding:10px 0; margin-bottom:24px;">
         <h4 style="color:#facc15; font-size:1.1rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
           சாதனா பயிற்சி &amp; சிந்தனை வினாக்கள் (Sadhana Exercise)
@@ -295,8 +308,10 @@ function renderCurrentChapterContent() {
         </div>
       </div>
 
-      <!-- Curricular Integrated Media Player (பாட இசை & காணொளிக் களம்) -->
-      ${renderCurriculumMediaSection(currentGrade, currentBook, chap.chapterNumber)}
+      <!-- 7. Curricular Integrated Media Player (பாட இசை & காணொளிக் களம்) -->
+      <div id="subchap-media" style="scroll-margin-top: 90px;">
+        ${renderCurriculumMediaSection(currentGrade, currentBook, chap.chapterNumber)}
+      </div>
 
       <!-- Navigation Footer (Prev / Next Chapter) -->
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:20px; padding-top:16px;">

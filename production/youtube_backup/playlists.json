@@ -2,13 +2,13 @@
  "playlists": [
   {
    "kind": "youtube#playlist",
-   "etag": "yqeGzeEXdqSI7BZ6YsvVJlaektc",
+   "etag": "i-UxP3xEY69iJRNovTOW5ImFNQM",
    "id": "PLW7qBZp_Q8Ro",
    "snippet": {
     "publishedAt": "2026-09-16T12:03:29.839995963Z",
     "channelId": "UCPqB1A_WzpLJec6q69BOO3Q",
     "title": "திருக்குறள் | Thirukkural — Master Collection",
-    "description": "",
+    "description": "திருக்குறள் அதிகாரம் வாரியாக இசையோடு — ஒவ்வொரு காணொளியிலும் அதிகாரத்தின் பத்துக் குறள்களும் வரிகளோடு.\nThirukkural set to music, chapter by chapter, with the verses in each description.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com",
     "thumbnails": {
      "default": {
       "url": "https://i.ytimg.com/vi/kA_mQ4bRB2E/default.jpg",
@@ -39,7 +39,7 @@
     "channelTitle": "குரு குல தேசம் (Guru Kula Desam)",
     "localized": {
      "title": "திருக்குறள் | Thirukkural — Master Collection",
-     "description": ""
+     "description": "திருக்குறள் அதிகாரம் வாரியாக இசையோடு — ஒவ்வொரு காணொளியிலும் அதிகாரத்தின் பத்துக் குறள்களும் வரிகளோடு.\nThirukkural set to music, chapter by chapter, with the verses in each description.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com"
     }
    },
    "status": {
@@ -51,13 +51,13 @@
   },
   {
    "kind": "youtube#playlist",
-   "etag": "14dpYGKefFKjOf-38mZE7RUCZiI",
+   "etag": "ViRHw-PDjytY5A1W7wp5Z9506HQ",
    "id": "PLHmbyO4GR_2k",
    "snippet": {
     "publishedAt": "2026-09-05T11:52:02.455513762Z",
     "channelId": "UCPqB1A_WzpLJec6q69BOO3Q",
     "title": "Lord Krishnar Songs",
-    "description": "",
+    "description": "கிருஷ்ண பகவானைப் போற்றும் பாடல்கள், பஜனைகள்.\nDevotional songs and bhajans for Lord Krishna.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com",
     "thumbnails": {
      "default": {
       "url": "https://i.ytimg.com/vi/2YzLM0yoBlg/default.jpg",
@@ -88,7 +88,7 @@
     "channelTitle": "குரு குல தேசம் (Guru Kula Desam)",
     "localized": {
      "title": "Lord Krishnar Songs",
-     "description": ""
+     "description": "கிருஷ்ண பகவானைப் போற்றும் பாடல்கள், பஜனைகள்.\nDevotional songs and bhajans for Lord Krishna.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com"
     }
    },
    "status": {
@@ -100,13 +100,13 @@
   },
   {
    "kind": "youtube#playlist",
-   "etag": "5BIN6X3W2WilGEFZxDqOI9PzXBg",
+   "etag": "bgBs7f6Bwhs9KhDMCqtbWgoVfmU",
    "id": "PLY1-K1NUPDWg",
    "snippet": {
     "publishedAt": "2026-09-05T11:51:19.3428634Z",
     "channelId": "UCPqB1A_WzpLJec6q69BOO3Q",
     "title": "Lord Vishnu Songs",
-    "description": "",
+    "description": "திருமாலைப் போற்றும் பாடல்கள் — திருப்பாவை உள்ளிட்டவை.\nDevotional songs for Lord Vishnu, including Thiruppavai.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com",
     "thumbnails": {
      "default": {
       "url": "https://i.ytimg.com/vi/468ErjVLRCs/default.jpg",
@@ -137,7 +137,7 @@
     "channelTitle": "குரு குல தேசம் (Guru Kula Desam)",
     "localized": {
      "title": "Lord Vishnu Songs",
-     "description": ""
+     "description": "திருமாலைப் போற்றும் பாடல்கள் — திருப்பாவை உள்ளிட்டவை.\nDevotional songs for Lord Vishnu, including Thiruppavai.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com"
     }
    },
    "status": {
@@ -149,13 +149,13 @@
   },
   {
    "kind": "youtube#playlist",
-   "etag": "CLYntXJRnlPmvDK817bocmsH__M",
+   "etag": "tv6J-mIq6UVGYzmbR3fHOclly3k",
    "id": "PLC84A3gANh-s",
    "snippet": {
     "publishedAt": "2026-09-05T11:50:40.521957067Z",
     "channelId": "UCPqB1A_WzpLJec6q69BOO3Q",
     "title": "Lord Vinayagar Songs",
-    "description": "",
+    "description": "விநாயகப் பெருமானைப் போற்றும் பாடல்கள் — மகா கணேச பஞ்சரத்னம், ஔவையார் விநாயகர் துதி உள்ளிட்டவை.\nSongs for Lord Vinayagar, including Maha Ganesha Pancharatnam and Avvaiyar's invocation.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com",
     "thumbnails": {
      "default": {
       "url": "https://i.ytimg.com/vi/zqStqzcFgbM/default.jpg",
@@ -186,7 +186,7 @@
     "channelTitle": "குரு குல தேசம் (Guru Kula Desam)",
     "localized": {
      "title": "Lord Vinayagar Songs",
-     "description": ""
+     "description": "விநாயகப் பெருமானைப் போற்றும் பாடல்கள் — மகா கணேச பஞ்சரத்னம், ஔவையார் விநாயகர் துதி உள்ளிட்டவை.\nSongs for Lord Vinayagar, including Maha Ganesha Pancharatnam and Avvaiyar's invocation.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com"
     }
    },
    "status": {
@@ -198,13 +198,13 @@
   },
   {
    "kind": "youtube#playlist",
-   "etag": "SlLwSJktajHRLIC11DvL9JMK9mc",
+   "etag": "mvazlv-5RBfnkfgKnR3mAo22auY",
    "id": "PLcpX3K7ZFYjM",
    "snippet": {
     "publishedAt": "2026-08-28T06:52:39.394448153Z",
     "channelId": "UCPqB1A_WzpLJec6q69BOO3Q",
     "title": "Lord Murugar Songs",
-    "description": "",
+    "description": "முருகப் பெருமானைப் போற்றும் பாடல்கள் — திருப்புகழ், கந்தர் அலங்காரம், கந்த சஷ்டி கவசம் உள்ளிட்டவை.\nSongs for Lord Murugan, including Thiruppugazh, Kandar Alankaram and Kandha Sashti Kavasam.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com",
     "thumbnails": {
      "default": {
       "url": "https://i.ytimg.com/vi/W2peLbC20sA/default.jpg",
@@ -235,25 +235,25 @@
     "channelTitle": "குரு குல தேசம் (Guru Kula Desam)",
     "localized": {
      "title": "Lord Murugar Songs",
-     "description": ""
+     "description": "முருகப் பெருமானைப் போற்றும் பாடல்கள் — திருப்புகழ், கந்தர் அலங்காரம், கந்த சஷ்டி கவசம் உள்ளிட்டவை.\nSongs for Lord Murugan, including Thiruppugazh, Kandar Alankaram and Kandha Sashti Kavasam.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com"
     }
    },
    "status": {
     "privacyStatus": "public"
    },
    "contentDetails": {
-    "itemCount": 46
+    "itemCount": 47
    }
   },
   {
    "kind": "youtube#playlist",
-   "etag": "YDmCZNrg8GMom1AU0IDMkb1nFYU",
+   "etag": "9otUgHrSPFeNz8uhVsPoj_GTjiI",
    "id": "PLI7Waf6Z6I48",
    "snippet": {
     "publishedAt": "2026-07-28T22:41:23.207096Z",
     "channelId": "UCPqB1A_WzpLJec6q69BOO3Q",
     "title": "Other Songs",
-    "description": "Curated from Guru Kula Desam releases.",
+    "description": "குரு குல தேசத்தின் பிற பக்திப் பாடல்களும் பண்பாட்டுப் பாடல்களும்.\nOther devotional and cultural songs from Guru Kula Desam.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com",
     "thumbnails": {
      "default": {
       "url": "https://i.ytimg.com/vi/OnzFNGriZ24/default.jpg",
@@ -284,7 +284,7 @@
     "channelTitle": "குரு குல தேசம் (Guru Kula Desam)",
     "localized": {
      "title": "Other Songs",
-     "description": "Curated from Guru Kula Desam releases."
+     "description": "குரு குல தேசத்தின் பிற பக்திப் பாடல்களும் பண்பாட்டுப் பாடல்களும்.\nOther devotional and cultural songs from Guru Kula Desam.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com"
     }
    },
    "status": {
@@ -296,13 +296,13 @@
   },
   {
    "kind": "youtube#playlist",
-   "etag": "uAIHGBIYPRj-lQj-FncLPuz5oO8",
+   "etag": "z6LFpem1waXfTkh9qgavwDvrcyo",
    "id": "PLKng43jJe18o",
    "snippet": {
     "publishedAt": "2026-07-12T09:03:53.420942Z",
     "channelId": "UCPqB1A_WzpLJec6q69BOO3Q",
     "title": "Goddess Amman Songs",
-    "description": "Curated from Guru Kula Desam releases.",
+    "description": "அம்மனைப் போற்றும் பாடல்கள் — அபிராமி அந்தாதி, சரஸ்வதி போற்றி உள்ளிட்டவை.\nSongs for the Divine Mother, including Abirami Anthadhi and Saraswathi Pottri.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com",
     "thumbnails": {
      "default": {
       "url": "https://i.ytimg.com/vi/IT_-ioBG69g/default.jpg",
@@ -333,7 +333,7 @@
     "channelTitle": "குரு குல தேசம் (Guru Kula Desam)",
     "localized": {
      "title": "Goddess Amman Songs",
-     "description": "Curated from Guru Kula Desam releases."
+     "description": "அம்மனைப் போற்றும் பாடல்கள் — அபிராமி அந்தாதி, சரஸ்வதி போற்றி உள்ளிட்டவை.\nSongs for the Divine Mother, including Abirami Anthadhi and Saraswathi Pottri.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com"
     }
    },
    "status": {
@@ -345,13 +345,13 @@
   },
   {
    "kind": "youtube#playlist",
-   "etag": "73xhGG7nV08dyl7BH0XrI9hzDzA",
+   "etag": "Ay3USMchm9Ptv5OxC3cTF0Ukt34",
    "id": "PLeqSbdtlRtmc",
    "snippet": {
     "publishedAt": "2026-07-12T09:03:40.022139Z",
     "channelId": "UCPqB1A_WzpLJec6q69BOO3Q",
     "title": "Lord Shiva Songs",
-    "description": "Curated from Guru Kula Desam releases.",
+    "description": "சிவபெருமானைப் போற்றும் பாடல்கள் — தேவாரம், திருவாசகம், திருவெம்பாவை, திருவருட்பா உள்ளிட்ட பாடல்கள்.\nSongs for Lord Shiva, including Thevaram, Thiruvasagam, Thiruvempavai and Thiruvarutpa.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com",
     "thumbnails": {
      "default": {
       "url": "https://i.ytimg.com/vi/8BPlAB-ZHHk/default.jpg",
@@ -382,7 +382,7 @@
     "channelTitle": "குரு குல தேசம் (Guru Kula Desam)",
     "localized": {
      "title": "Lord Shiva Songs",
-     "description": "Curated from Guru Kula Desam releases."
+     "description": "சிவபெருமானைப் போற்றும் பாடல்கள் — தேவாரம், திருவாசகம், திருவெம்பாவை, திருவருட்பா உள்ளிட்ட பாடல்கள்.\nSongs for Lord Shiva, including Thevaram, Thiruvasagam, Thiruvempavai and Thiruvarutpa.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com"
     }
    },
    "status": {
@@ -394,13 +394,13 @@
   },
   {
    "kind": "youtube#playlist",
-   "etag": "uTfDVcJz21e9IlWxFJl4SYWlCb4",
+   "etag": "aiqBnHxvDlQZ3o53J60FHjFP27k",
    "id": "PLAjtBRKl_IlI",
    "snippet": {
     "publishedAt": "2026-07-12T08:47:00.241813Z",
     "channelId": "UCPqB1A_WzpLJec6q69BOO3Q",
     "title": "Discography",
-    "description": "All public uploads from @guru-kula-desam.",
+    "description": "குரு குல தேசத்தின் அனைத்துப் பாடல்களும் ஒரே இடத்தில்.\nThe complete Guru Kula Desam song collection.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com",
     "thumbnails": {
      "default": {
       "url": "https://i.ytimg.com/vi/XwlGJp3gqCc/default.jpg",
@@ -431,7 +431,7 @@
     "channelTitle": "குரு குல தேசம் (Guru Kula Desam)",
     "localized": {
      "title": "Discography",
-     "description": "All public uploads from @guru-kula-desam."
+     "description": "குரு குல தேசத்தின் அனைத்துப் பாடல்களும் ஒரே இடத்தில்.\nThe complete Guru Kula Desam song collection.\n\n— குரு குல தேசம் | Guru Kula Desam\nhttps://gurukuladesam.com"
     }
    },
    "status": {
@@ -769,7 +769,8 @@
    "0PvXn4gqlFM",
    "C2rLIrP3vAA",
    "MTvDDAQCFmk",
-   "2xCDL6uPfbk"
+   "2xCDL6uPfbk",
+   "6L6DDOwDuy8"
   ],
   "PLI7Waf6Z6I48": [
    "OnzFNGriZ24",

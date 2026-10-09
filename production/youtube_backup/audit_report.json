@@ -1,68 +1,77 @@
 {
- "videos": 369,
- "with_lyrics": 83,
- "with_meaning": 6,
- "lyrics_and_meaning": 2,
+ "videos": 370,
+ "with_lyrics": 201,
+ "with_meaning": 122,
+ "lyrics_and_meaning": 120,
  "lyrics_no_meaning": 81,
- "no_lyrics": 286,
- "empty_desc": 4,
+ "no_lyrics": 169,
+ "empty_desc": 3,
  "playlists": [
   {
    "id": "PLW7qBZp_Q8Ro",
    "title": "திருக்குறள் | Thirukkural — Master Collection",
    "videos": 209,
-   "desc_len": 0
+   "desc_len": 246
   },
   {
    "id": "PLHmbyO4GR_2k",
    "title": "Lord Krishnar Songs",
    "videos": 20,
-   "desc_len": 0
+   "desc_len": 153
   },
   {
    "id": "PLY1-K1NUPDWg",
    "title": "Lord Vishnu Songs",
    "videos": 31,
-   "desc_len": 0
+   "desc_len": 172
   },
   {
    "id": "PLC84A3gANh-s",
    "title": "Lord Vinayagar Songs",
    "videos": 12,
-   "desc_len": 0
+   "desc_len": 245
   },
   {
    "id": "PLcpX3K7ZFYjM",
    "title": "Lord Murugar Songs",
-   "videos": 46,
-   "desc_len": 0
+   "videos": 47,
+   "desc_len": 252
   },
   {
    "id": "PLI7Waf6Z6I48",
    "title": "Other Songs",
    "videos": 104,
-   "desc_len": 38
+   "desc_len": 185
   },
   {
    "id": "PLKng43jJe18o",
    "title": "Goddess Amman Songs",
    "videos": 22,
-   "desc_len": 38
+   "desc_len": 213
   },
   {
    "id": "PLeqSbdtlRtmc",
    "title": "Lord Shiva Songs",
    "videos": 180,
-   "desc_len": 38
+   "desc_len": 249
   },
   {
    "id": "PLAjtBRKl_IlI",
    "title": "Discography",
    "videos": 520,
-   "desc_len": 41
+   "desc_len": 161
   }
  ],
  "rows": [
+  {
+   "id": "6L6DDOwDuy8",
+   "title": "முத்தைத் தரு 2026 (திருப்புகழ்) | Muthai Tharu [Cinematic Thiruppugazh Film]",
+   "len": 3536,
+   "tamil_lines": 30,
+   "lyrics": true,
+   "meaning": true,
+   "private": false
+  },
   {
    "id": "2xCDL6uPfbk",
    "title": "கந்த சஷ்டி கவசம் | Kandha Sashti Kavasam Full Cinematic Film",
@@ -505,9 +514,9 @@
    "private": false
   },
   {
-   "id": "MXK8vB3_fBE",
-   "title": "அதிகாரம் 25 - அருளுடைமை | Aruludaimai - Universal Grace & Compassion to All Beings | Guru Kula Desam",
-   "len": 2703,
+   "id": "G6NSHWKhQcY",
+   "title": "அதிகாரம் 16 - பொறையுடைமை | Poraiyudaimai - Forbearance & Supreme Forgiveness | Guru Kula Desam",
+   "len": 2694,
    "tamil_lines": 18,
    "lyrics": true,
    "meaning": false,
@@ -849,9 +858,9 @@
   {
    "id": "wGtcobqR01Q",
    "title": "திருவருட்பா: திருவருள் வழக்க விளக்கம் | Thiruvarutpa: Thiruvarul Vazhakka Vilakkam [Film]",
-   "len": 380,
-   "tamil_lines": 1,
-   "lyrics": false,
+   "len": 816,
+   "tamil_lines": 9,
+   "lyrics": true,
    "meaning": true,
    "private": false
   },
@@ -876,28 +885,28 @@
   {
    "id": "toekDfqrzdI",
    "title": "தேவாரம்: திருநீற்றுப் பதிகம் (மந்திரமாவது நீறு) | Thevaram: Thiruneetru Pathigam [Film]",
-   "len": 410,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 835,
+   "tamil_lines": 9,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "ZAjf5Ewzu_c",
    "title": "தேவாரம்: மாசில் வீணையும் | Thevaram: Maasil Veenaiyum [Film]",
-   "len": 406,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1144,
+   "tamil_lines": 17,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "40ML9b--tg4",
    "title": "திருவாசகம்: சிவ புராணம் (II) | Thiruvasagam: Sivapuranam II [Film]",
-   "len": 398,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 847,
+   "tamil_lines": 10,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -921,10 +930,10 @@
   {
    "id": "qdaQ-ffeBso",
    "title": "திருவாசகம்: சிவபுராணம் | Thiruvasagam: Sivapuranam [Film]",
-   "len": 380,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1592,
+   "tamil_lines": 25,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -955,10 +964,10 @@
    "private": false
   },
   {
-   "id": "klSi7r6YhCU",
-   "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Film]",
-   "len": 369,
-   "tamil_lines": 1,
+   "id": "poRjt6i3SrU",
+   "title": "திருவாசகம்: நடராஜர் பத்து | Thiruvasagam: Natarajar Pathu [Film]",
+   "len": 228,
+   "tamil_lines": 0,
    "lyrics": false,
    "meaning": false,
    "private": false
@@ -984,10 +993,10 @@
   {
    "id": "r16aFXrl-Ig",
    "title": "தேவாரம்: பிடியதன் உருவுமை (விநாயகர் துதி) | Thevaram: Pidiyathan Uruvumai [Film]",
-   "len": 223,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 665,
+   "tamil_lines": 8,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -1083,190 +1092,190 @@
   {
    "id": "91RgQ8AygF4",
    "title": "திருக்குறள்: அதிகாரம் 84 - பேதைமை | Thirukkural: Pethaimai [Film]",
-   "len": 236,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1081,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "D95woYqPoPI",
    "title": "திருக்குறள்: அதிகாரம் 66 - வினைத்தூய்மை (Remix) | Thirukkural: Vinai Thooymai [Remix]",
-   "len": 319,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1170,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "0WurYH-hkNM",
    "title": "திருக்குறள்: அதிகாரம் 67 - வினைத்திட்பம் (Remix) | Thirukkural: Vinai Thitpam [Remix]",
-   "len": 319,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1200,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "rOowxP53oWA",
    "title": "திருக்குறள்: அதிகாரம் 65 - சொல்வன்மை (Remix) | Thirukkural: Solvanmai [Remix]",
-   "len": 311,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1196,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "3yB_oTqh6Jk",
    "title": "திருக்குறள்: அதிகாரம் 68 - வினைசெயல்வகை (Female) | Thirukkural: Vinai Seyalvagai Female [Film]",
-   "len": 323,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1221,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "QXWB2raWKXE",
    "title": "திருக்குறள்: அதிகாரம் 63 - இடுக்கண் அழியாமை (Remix) | Thirukkural: Idukkan Azhiyamai [Remix]",
-   "len": 326,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1185,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "79u01V3wbZc",
    "title": "திருக்குறள்: அதிகாரம் 78 - படைச்செருக்கு | Thirukkural: Padaicherukku [Film]",
-   "len": 358,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1223,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "cR_u-JuGJAU",
    "title": "திருக்குறள்: அதிகாரம் 76 - பொருள் செயல்வகை | Thirukkural: Porul Seyalvagai [Film]",
-   "len": 393,
-   "tamil_lines": 1,
-   "lyrics": false,
+   "len": 1283,
+   "tamil_lines": 34,
+   "lyrics": true,
    "meaning": true,
    "private": false
   },
   {
    "id": "x3CyxNH5bpQ",
    "title": "திருக்குறள்: அதிகாரம் 69 - தூது (Remix) | Thirukkural: Thoothu [Remix]",
-   "len": 304,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1188,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "sAgX9WX86Rw",
    "title": "திருக்குறள்: அதிகாரம் 80 - நட்பாராய்தல் | Thirukkural: Natpaaraaythal [Film]",
-   "len": 376,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1246,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "8uX2yl_EnMI",
    "title": "திருக்குறள்: அதிகாரம் 83 - கூடா நட்பு | Thirukkural: Kooda Natpu [Film]",
-   "len": 354,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1205,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "4zff_qi_G1E",
    "title": "திருக்குறள்: அதிகாரம் 82 - தீ நட்பு | Thirukkural: Thee Natpu [Film]",
-   "len": 336,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1184,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "778r-nAUX9Q",
    "title": "திருக்குறள்: அதிகாரம் 81 - பழைமை | Thirukkural: Pazhaimai [Film]",
-   "len": 345,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1216,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "2Qs07DTJvvM",
    "title": "திருக்குறள்: அதிகாரம் 71 - குறிப்பறிதல் (Remix) | Thirukkural: Kuripparithal [Remix]",
-   "len": 318,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1195,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "jdvz-yoK5eI",
    "title": "திருக்குறள்: அதிகாரம் 79 - நட்பு | Thirukkural: Natpu [Film]",
-   "len": 321,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1179,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "dthZW-Wo8IU",
    "title": "திருக்குறள்: அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Female) | Mannarai Sernthozhuthal [Film]",
-   "len": 339,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1200,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "gjo0AfKBzsU",
    "title": "திருக்குறள்: அதிகாரம் 74 - நாடு (Remix) | Thirukkural: Naadu [Remix]",
-   "len": 302,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1176,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "dVYI3ZgpDC8",
    "title": "திருக்குறள்: அதிகாரம் 49 - காலமறிதல் (Remix) | Thirukkural: Kaalamarithal [Remix]",
-   "len": 315,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1150,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "6MaQYObW8OQ",
    "title": "திருக்குறள்: அதிகாரம் 35 - துறவு (Female) | Thirukkural: Thuravu Female [Film]",
-   "len": 307,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1175,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "wyDIU74Rs7Y",
    "title": "திருக்குறள்: அதிகாரம் 73 - அவையஞ்சாமை (Female) | Thirukkural: Avai Anjaamai Female [Film]",
-   "len": 319,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1179,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "wPT_1jgn2Ys",
    "title": "திருக்குறள்: அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam Symphony [Film]",
-   "len": 326,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1216,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -1281,10 +1290,10 @@
   {
    "id": "wylRNpaJNmY",
    "title": "திருக்குறள்: அதிகாரம் 46 - சிற்றினம் சேராமை (Remix) | Thirukkural: Sittrinam Seramai [Remix]",
-   "len": 325,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1207,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -1299,91 +1308,91 @@
   {
    "id": "VVkl8bORJXg",
    "title": "திருக்குறள்: அதிகாரம் 44 - குற்றங்கடிதல் (Remix) | Thirukkural: Kuttrangadithal [Remix]",
-   "len": 321,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1175,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "djYooU1LmGk",
    "title": "திருக்குறள்: அதிகாரம் 30 - வாய்மை (Remix) | Thirukkural: Vaaymai [Remix]",
-   "len": 306,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1157,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "vbMywONB5Wc",
    "title": "திருக்குறள்: அதிகாரம் 42 - கேள்வி (Remix) | Thirukkural: Kelvi Selvam [Remix]",
-   "len": 320,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1182,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "HRN77i6Kio8",
    "title": "திருக்குறள்: அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Remix) | Periyarai Thunaikodal [Remix]",
-   "len": 335,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1179,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "xVyPWHTMXHw",
    "title": "திருக்குறள்: அதிகாரம் 43 - அறிவுடைமை (Remix) | Thirukkural: Arivudaimai [Remix]",
-   "len": 313,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1146,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "KLsXZa28uyE",
    "title": "திருக்குறள்: அதிகாரம் 48 - வலியறிதல் (Remix) | Thirukkural: Valiyarithal [Remix]",
-   "len": 314,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1166,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "oEQ3sx6ujQc",
    "title": "திருக்குறள்: அதிகாரம் 50 - இடனறிதல் (Remix) | Thirukkural: Idanarithal [Remix]",
-   "len": 312,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1179,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "JvonvWQHKQY",
    "title": "திருக்குறள்: அதிகாரம் 64 - அமைச்சு (Remix) | Thirukkural: Amaichu [Remix]",
-   "len": 307,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1197,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "tzAYLpH3TkI",
    "title": "திருக்குறள்: அதிகாரம் 29 - கள்ளாமை (Symphony) | Thirukkural: Kallaamai Symphony [Film]",
-   "len": 315,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1180,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "irx33IVWrPY",
    "title": "திருக்குறள்: அதிகாரம் 75 - அரண் (Symphony) | Thirukkural: Aran Symphony [Film]",
-   "len": 307,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1174,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -1405,15 +1414,6 @@
    "private": false
   },
   {
-   "id": "PO4U3nRv6o0",
-   "title": "திருவருட்பா: திருவருள் வேட்கை | Thiruvarutpa: Thiruvarul Vetkai [Film]",
-   "len": 278,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
-   "private": false
-  },
-  {
    "id": "lD6far4EmHY",
    "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II | Thevaram: Thiruvothur Pathigam II [Film]",
    "len": 404,
@@ -1425,7 +1425,16 @@
   {
    "id": "TQtjI3EepPQ",
    "title": "திருக்குறள்: அதிகாரம் 59 - ஒற்றாடல் | Thirukkural: Ottraadal [Film]",
-   "len": 266,
+   "len": 1147,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
+   "private": false
+  },
+  {
+   "id": "fJIeiPyejxU",
+   "title": "திருவருட்பா: பரசிவ வணக்கம் | Thiruvarutpa: Parasiva Vanakkam [Film]",
+   "len": 318,
    "tamil_lines": 1,
    "lyrics": false,
    "meaning": false,
@@ -1434,46 +1443,46 @@
   {
    "id": "mCwNR1Bytj4",
    "title": "திருக்குறள்: அதிகாரம் 39 - இறைமாட்சி | Thirukkural: Irai Maatchi [Film]",
-   "len": 271,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1150,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "8AEEcskF-Jo",
    "title": "திருக்குறள்: அதிகாரம் 35 - துறவு | Thirukkural: Thuravu [Film]",
-   "len": 261,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1129,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "nR7R0TWyZHk",
    "title": "அதிகாரம் 69 - தூது | Thoothu | Full Song Film",
-   "len": 260,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1144,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "bH23l5vVgL8",
    "title": "திருக்குறள்: அதிகாரம் 51 - தெரிந்து தெளிதல் | Thirukkural: Therinthu Thelithal [Film]",
-   "len": 284,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1134,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "BfgGC7DsHMI",
    "title": "திருக்குறள்: அதிகாரம் 47 - தெரிந்து செயல்வகை | Thirukkural: Therinthu Seyalvagai [Film]",
-   "len": 286,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1139,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -1488,226 +1497,226 @@
   {
    "id": "xcUlgFsrepU",
    "title": "திருக்குறள்: அதிகாரம் 31 - வெகுளாமை | Thirukkural: Vegulaamai [Film]",
-   "len": 267,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1146,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "9NIv50lV4-M",
    "title": "திருக்குறள்: அதிகாரம் 36 - மெய்யுணர்தல் | Thirukkural: Meyyunarithal [Film]",
-   "len": 274,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1171,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "JreH0hqB2po",
    "title": "திருக்குறள்: அதிகாரம் 34 - நிலையாமை | Thirukkural: Nilaiyaamai [Film]",
-   "len": 268,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1130,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "L6DWSjPqoH0",
    "title": "திருக்குறள்: அதிகாரம் 33 - கொல்லாமை | Thirukkural: Kollaamai [Film]",
-   "len": 266,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1155,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "Gnu-TzZfe7A",
    "title": "திருக்குறள்: அதிகாரம் 41 - கல்லாமை | Thirukkural: Kallaamai Learning [Film]",
-   "len": 274,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1132,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "HezzLu_n6qE",
    "title": "திருக்குறள்: அதிகாரம் 37 - அவாவறுத்தல் | Thirukkural: Avaa Aruththal [Film]",
-   "len": 275,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1112,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "dD_cXqU_XVQ",
    "title": "திருக்குறள்: அதிகாரம் 38 - ஊழ் | Thirukkural: Oozh Vinai [Film]",
-   "len": 267,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1102,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "Nb1nAcrGNeU",
    "title": "திருக்குறள்: அதிகாரம் 53 - சுற்றந்தழால் | Thirukkural: Suttranthazhaal [Film]",
-   "len": 276,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1152,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "q6Rg5CUbOD0",
    "title": "திருக்குறள்: அதிகாரம் 65 - சொல்வன்மை | Thirukkural: Solvanmai [Film]",
-   "len": 267,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1152,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "lCBVB2Yj_7U",
    "title": "திருக்குறள்: அதிகாரம் 55 - செங்கோன்மை | Thirukkural: Sengonmai [Film]",
-   "len": 268,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1130,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "2U45AXlx7DA",
    "title": "திருக்குறள்: அதிகாரம் 46 - சிற்றினம் சேராமை | Thirukkural: Sitrinam Seraamai [Film]",
-   "len": 282,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1164,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "wzdoeFDq0iQ",
    "title": "திருக்குறள்: அதிகாரம் 56 - கொடுங்கோன்மை | Thirukkural: Kodungonmai [Film]",
-   "len": 272,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1146,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "9kHN9Dzrv7o",
    "title": "திருக்குறள்: அதிகாரம் 42 - கேள்வி | Thirukkural: Kelvi Selvam [Film]",
-   "len": 277,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1139,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "B60TIM5LLvY",
    "title": "திருக்குறள்: அதிகாரம் 44 - குற்றங்கடிதல் | Thirukkural: Kuttrankadithal [Film]",
-   "len": 277,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1131,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "dBIUA3fKBJ0",
    "title": "திருக்குறள்: அதிகாரம் 71 - குறிப்பறிதல் | Thirukkural: Kuripparithal [Film]",
-   "len": 274,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1151,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "DIDV-3cHhag",
    "title": "திருக்குறள்: அதிகாரம் 49 - காலமறிதல் | Thirukkural: Kaalamarithal [Film]",
-   "len": 271,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1106,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "mv7AezrLzoU",
    "title": "திருக்குறள்: அதிகாரம் 58 - கண்ணோட்டம் | Thirukkural: Kannottam [Film]",
-   "len": 268,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1136,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "9EAskIS2xuc",
    "title": "திருக்குறள்: அதிகாரம் 29 - கள்ளாமை | Thirukkural: Kallaamai [Film]",
-   "len": 265,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1130,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "XN5ENUbmSOE",
    "title": "திருக்குறள்: அதிகாரம் 60 - ஊக்கமுடைமை | Thirukkural: Ookkamudaimai [Film]",
-   "len": 272,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1118,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "daM5VkysZqg",
    "title": "திருக்குறள்: அதிகாரம் 63 - இடுக்கண் அழியாமை | Thirukkural: Idukkan Azhiyaamai [Film]",
-   "len": 283,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1142,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "817Wxel4F5s",
    "title": "திருக்குறள்: அதிகாரம் 50 - இடனறிதல் | Thirukkural: Idanarithal [Film]",
-   "len": 268,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1135,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "_Q2t-TcmDT4",
    "title": "திருக்குறள்: அதிகாரம் 43 - அறிவுடைமை | Thirukkural: Arivudaimai [Film]",
-   "len": 269,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1102,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "zj4_pEqa_cs",
    "title": "திருக்குறள்: அதிகாரம் 62 - ஆள்வினையுடைமை | Thirukkural: Aalvinaiyudaimai [Film]",
-   "len": 278,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1147,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "CEh2a8KUIKU",
    "title": "திருக்குறள்: அதிகாரம் 72 - அவையறிதல் | Thirukkural: Avaiyarithal [Film]",
-   "len": 270,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1171,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "W4LQ0TT2cRA",
    "title": "திருக்குறள்: அதிகாரம் 73 - அவையஞ்சாமை | Thirukkural: Avai Anjaamai [Film]",
-   "len": 270,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1130,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -1722,19 +1731,19 @@
   {
    "id": "VENn3ip3XPA",
    "title": "திருக்குறள்: அதிகாரம் 64 - அமைச்சு | Thirukkural: Amaichu [Film]",
-   "len": 255,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1145,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "hCHBPd8BH8A",
    "title": "திருக்குறள்: அதிகாரம் 6 - வாழ்க்கைத் துணைநலம் | Thirukkural: Vaazkkai Thunai [Film]",
-   "len": 277,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1166,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -1749,10 +1758,10 @@
   {
    "id": "02C8glMmetw",
    "title": "திருக்குறள்: அதிகாரம் 1 - கடவுள் வாழ்த்து | Thirukkural: Agara Muthala [Film]",
-   "len": 282,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1126,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -1812,28 +1821,28 @@
   {
    "id": "0fD-z3s_g2A",
    "title": "திருக்குறள்: அதிகாரம் 25 - அருளுடைமை | Thirukkural: Aruludaimai [Film]",
-   "len": 500,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1416,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "C05GEfkJZaY",
    "title": "திருக்குறள்: அதிகாரம் 5 - இல்வாழ்க்கை | Thirukkural: Ilvazhkkai [Film]",
-   "len": 490,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1410,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "SWAjAbur-TQ",
    "title": "திருக்குறள்: அதிகாரம் 1 - கடவுள் வாழ்த்து | Thirukkural: Kadavul Vazhthu [Film]",
-   "len": 483,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1327,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -1956,10 +1965,10 @@
   {
    "id": "IuZ6Qe-aiYI",
    "title": "திருவாசகம்: அச்சோப் பதிகம் | Thiruvasagam: Achcho Pathigam [Film]",
-   "len": 382,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 822,
+   "tamil_lines": 8,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2442,19 +2451,19 @@
   {
    "id": "C2rLIrP3vAA",
    "title": "கந்த சஷ்டி கவசம் II | Kandha Sashti Kavasam II Full Cinematic Film",
-   "len": 359,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1245,
+   "tamil_lines": 20,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "0PvXn4gqlFM",
    "title": "கந்த சஷ்டி கவசம் | Kandha Sashti Kavasam Full Cinematic Film",
-   "len": 352,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1238,
+   "tamil_lines": 20,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2586,10 +2595,10 @@
   {
    "id": "Nvx3ObuSndM",
    "title": "திருப்புகழ் 712 சீர் உலாவிய | Seer Ulaaviya Cinematic Devotional Film",
-   "len": 350,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1312,
+   "tamil_lines": 20,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2649,10 +2658,10 @@
   {
    "id": "DsbMysGdqv8",
    "title": "கந்தர் அனுபூதி - உருவாய் அருவாய் உளதாய் இலதாய் (அருணகிரிநாதர்) | Uruvaai Aruvaai Cinematic Film",
-   "len": 396,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 897,
+   "tamil_lines": 8,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2667,19 +2676,19 @@
   {
    "id": "hKkmbQ9TIaU",
    "title": "திருப்புகழ் - கைத்தல நிறைகனி (அருணகிரிநாதர் விநாயகர் துதி) | Kaiththala Niraigani Cinematic Film",
-   "len": 580,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1373,
+   "tamil_lines": 21,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "nuSx1NgiCuo",
    "title": "திருப்புகழ் - நாத விந்துகள் பழனி (அருணகிரிநாதர்) | Naatha Vindhugal Pazhani Cinematic Film",
-   "len": 403,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1538,
+   "tamil_lines": 28,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2694,28 +2703,28 @@
   {
    "id": "kFmUrNPXsso",
    "title": "தமிழ்த்தாய் வாழ்த்து - நீராரும் கடலுடுத்த (மனோன்மணீயம் சுந்தரனார் II) | Cinematic Film",
-   "len": 497,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1220,
+   "tamil_lines": 14,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "fRNAsDZr3QA",
    "title": "அதிகாரம் 32 - இன்னா செய்யாமை (இன்னா செய்தாரை) | Kindness Story Cinematic Film",
-   "len": 461,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1353,
+   "tamil_lines": 33,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "MTvDDAQCFmk",
    "title": "கந்தர் அலங்காரம் - நாள் என் செய்யும் (அருணகிரிநாதர்) | Naal En Seyyum Cinematic Film",
-   "len": 534,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1146,
+   "tamil_lines": 8,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2766,28 +2775,28 @@
   {
    "id": "KI7uUFiJO1E",
    "title": "அதிகாரம் 16 - பொறையுடைமை | Patience Story Cinematic Film",
-   "len": 438,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1326,
+   "tamil_lines": 33,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "31xVgvxoiUA",
    "title": "திருப்பாவை 3 - ஓங்கி உலகளந்த உத்தமன் (ஆண்டாள்) | Ongi Ulagalandha Cinematic Film",
-   "len": 522,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1199,
+   "tamil_lines": 13,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "3t5U9ABVeOc",
    "title": "தேவாரம் - மாசில் வீணையும் (அப்பர் பெருமான் III) | River Music Cinematic Film",
-   "len": 449,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1187,
+   "tamil_lines": 16,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2811,10 +2820,10 @@
   {
    "id": "SN7FIkL-o1k",
    "title": "திருப்புகழ் - முத்தைத் தரு பத்தித் திருநகை (அருணகிரிநாதர்) | Muthai Tharu Cinematic Film",
-   "len": 362,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1536,
+   "tamil_lines": 29,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2838,10 +2847,10 @@
   {
    "id": "lpOcAVJIax0",
    "title": "அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 2) | Compassion Journey Cinematic Film",
-   "len": 298,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1199,
+   "tamil_lines": 33,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2883,19 +2892,19 @@
   {
    "id": "0SUn5igNEE0",
    "title": "தேவாரம் - துஞ்சலும் துஞ்சல் இல்லாத போழ்தினும் (திருஞானசம்பந்தர்) | Tunjalum Tunjal Cinematic Film",
-   "len": 391,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 890,
+   "tamil_lines": 9,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "KFtS403RfbY",
    "title": "அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 1) | Nenjari Vuruthal Part 1 Cinematic Film",
-   "len": 417,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1318,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2910,28 +2919,28 @@
   {
    "id": "R8OyFbqJJEw",
    "title": "அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 2) | Nenjari Vuruthal Part 2 Cinematic Film",
-   "len": 400,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1301,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "7npbkuQwjEE",
    "title": "அதிகாரம் 32 - இன்னா செய்யாமை (இன்னா செய்தாரை) | Inna Seidharai Cinematic Thirukkural Film",
-   "len": 378,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1270,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "5RTBMEIozEg",
    "title": "கந்தர் அலங்காரம் - நாள் என் செய்யும் (அருணகிரிநாதர் II) | Naal En Seyyum Cinematic Film",
-   "len": 381,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 993,
+   "tamil_lines": 9,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -2982,55 +2991,55 @@
   {
    "id": "KQpDmHooEh8",
    "title": "தேவாரம் - மாசில் வீணையும் மாலை மதியமும் (அப்பர் பெருமான்) | Maasil Veenaiyum Cinematic Film",
-   "len": 346,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1084,
+   "tamil_lines": 17,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "R82hz_s2YGQ",
    "title": "அதிகாரம் 16 - பொறையுடைமை | Porai Udaimai Cinematic Thirukkural Film",
-   "len": 343,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1231,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "isCeNcUwBTw",
    "title": "தமிழ்த்தாய் வாழ்த்து - நீராரும் கடலுடுத்த (மனோன்மணீயம் சுந்தரனார் III) | Cinematic Film",
-   "len": 302,
-   "tamil_lines": 2,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1025,
+   "tamil_lines": 16,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "QH-xL37NmGM",
    "title": "திருப்பாவை - 1 (மார்கழித் திங்கள்) | Thiruppavai 1 Cinematic Devotional Film",
-   "len": 358,
-   "tamil_lines": 2,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1026,
+   "tamil_lines": 14,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "KZxknhbVIk0",
    "title": "அதிகாரம் 40 - கல்வி | Kalvi Cinematic Thirukkural Film",
-   "len": 348,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1197,
+   "tamil_lines": 34,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "f1jxgAbXcdE",
    "title": "அதிகாரம் 2 - வான் சிறப்பு | Vaan Sirappu Cinematic Thirukkural Film",
-   "len": 454,
-   "tamil_lines": 2,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1350,
+   "tamil_lines": 35,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -3045,37 +3054,37 @@
   {
    "id": "jO2i4bcZ2ts",
    "title": "அதிகாரம் 8 - அன்புடைமை | Anbudaimai Cinematic Thirukkural Film",
-   "len": 316,
-   "tamil_lines": 2,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1189,
+   "tamil_lines": 35,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "hm7_qUlTUiU",
    "title": "திருப்பாவை 2 - வையத்து வாழ்வீர்காள் | ஆண்டாள் அருளிய திருப்பாவை",
-   "len": 189,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 849,
+   "tamil_lines": 13,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "ssOkftpUcLE",
    "title": "சிவ சுப்ரமணியர் திருவிருத்தம் (வள்ளலார்) | Siva Subramaniyar Thiruvirutham Cinematic Film",
-   "len": 193,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 594,
+   "tamil_lines": 9,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "qUsv2Gyk3d4",
    "title": "திருநீற்றுப் பதிகம் | Thiruneetru Pathigam Cinematic Devotional Film",
-   "len": 185,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1011,
+   "tamil_lines": 17,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -3099,19 +3108,19 @@
   {
    "id": "sHSkPTQRtH8",
    "title": "கந்தபுராணம் வாழ்த்துப் பாடல் - வான்முகில் வழாது பெய்க (கச்சியப்ப சிவாச்சாரியார்) | Vaan Mugil Film",
-   "len": 185,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 692,
+   "tamil_lines": 10,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "Yu4RBKpAodM",
    "title": "தனந்தரும் கல்வி தரும் | அபிராமி அந்தாதி 69 | Dhanam Tharum Kalvi Tharum Cinematic Film",
-   "len": 201,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 713,
+   "tamil_lines": 9,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -3135,10 +3144,10 @@
   {
    "id": "h39OlLt4N9A",
    "title": "சிவபுராணம் | Sivapuranam [Devotional Story Film]",
-   "len": 0,
-   "tamil_lines": 0,
-   "lyrics": false,
-   "meaning": false,
+   "len": 1210,
+   "tamil_lines": 24,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -3162,10 +3171,10 @@
   {
    "id": "RVMUEr1MOFo",
    "title": "பாலும் தெளிதேனும் | ஔவையார் நல்வழி விநாயகர் துதி (Full Video)",
-   "len": 32,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 428,
+   "tamil_lines": 8,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -3180,37 +3189,28 @@
   {
    "id": "AW4cljBWy2w",
    "title": "பாலும் தெளிதேனும் | ஔவையார் நல்வழி விநாயகர் துதி",
-   "len": 32,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 428,
+   "tamil_lines": 8,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "KOroiTQUE0g",
    "title": "வான் முகில் வழாது பெய்க | கந்தபுராணம் வாழ்த்துப் பாடல்",
-   "len": 32,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 505,
+   "tamil_lines": 9,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "0k9CZLNA2TY",
    "title": "தனந்தரும் கல்விதரும் | அபிராமி அந்தாதி 69 (அபிராமி பட்டர்)",
-   "len": 32,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
-   "private": false
-  },
-  {
-   "id": "qWSwrdJMbSg",
-   "title": "இராம கிருஷ்ண துதி | Rama Krishna Thuthi Devotional Film",
-   "len": 32,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 510,
+   "tamil_lines": 8,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -3225,28 +3225,28 @@
   {
    "id": "AW4cljBWy2w",
    "title": "பாலும் தெளிதேனும் | ஔவையார் நல்வழி விநாயகர் துதி",
-   "len": 32,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 428,
+   "tamil_lines": 8,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "KOroiTQUE0g",
    "title": "வான் முகில் வழாது பெய்க | கந்தபுராணம் வாழ்த்துப் பாடல்",
-   "len": 32,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 505,
+   "tamil_lines": 9,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
    "id": "0k9CZLNA2TY",
    "title": "தனந்தரும் கல்விதரும் | அபிராமி அந்தாதி 69 (அபிராமி பட்டர்)",
-   "len": 32,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 510,
+   "tamil_lines": 8,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {
@@ -3261,6 +3261,15 @@
   {
    "id": "Lzkbhp_ehA8",
    "title": "திருப்பாவை 2 - வையத்து வாழ்வீர்காள் (ஆண்டாள்)",
+   "len": 658,
+   "tamil_lines": 12,
+   "lyrics": true,
+   "meaning": true,
+   "private": false
+  },
+  {
+   "id": "W2peLbC20sA",
+   "title": "சிவ சுப்ரமணியர் திருவிருத்தம் | வள்ளலார் திருவருட்பா",
    "len": 32,
    "tamil_lines": 1,
    "lyrics": false,
@@ -3270,10 +3279,10 @@
   {
    "id": "RDcw0Bol-cE",
    "title": "திருப்பாவை 1 - மார்கழித் திங்கள் (ஆண்டாள்)",
-   "len": 32,
-   "tamil_lines": 1,
-   "lyrics": false,
-   "meaning": false,
+   "len": 666,
+   "tamil_lines": 12,
+   "lyrics": true,
+   "meaning": true,
    "private": false
   },
   {

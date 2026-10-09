@@ -691,3 +691,43 @@
   0%, 100% { box-shadow: 0 0 5px rgba(239, 68, 68, 0.3); }
   50% { box-shadow: 0 0 15px rgba(239, 68, 68, 0.6); }
 }
+
+/* Sub-Chapter Jump Bar (7 Canonical Lesson Sub-Chapters) */
+.subchapter-nav-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 0 16px 0;
+  margin-bottom: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.subchap-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.65) !important;
+  color: #cbd5e1 !important;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.2s ease;
+  text-shadow: 0 1px 3px #000 !important;
+}
+
+.subchap-pill-btn:hover {
+  background: rgba(45, 212, 191, 0.22) !important;
+  color: #2dd4bf !important;
+  border-color: rgba(45, 212, 191, 0.45) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+.subchap-pill-btn .subchap-icon {
+  font-size: 0.95rem;
+}
+

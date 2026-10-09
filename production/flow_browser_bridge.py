@@ -198,35 +198,35 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
             print(f"[Flow] Video ready on canvas! (Elapsed: {elapsed}s)...")
             if only_wait_ready:
                 return True
-
-        dl_btn = page.locator("button[aria-label='Download batch'], button:has-text('Download batch')").first
-        if dl_btn.count() == 0 or not dl_btn.is_visible():
-            dl_btn = page.locator("button[aria-label*='Download' i]").first
-
-        if dl_btn.count() > 0 and dl_btn.is_visible() and dl_btn.is_enabled():
-            print(f"[Flow] Video ready! (Elapsed: {elapsed}s)...")
-            if only_wait_ready:
-                return True
-            print(f"[Flow] Initiating download...")
-            click_time = time.time()
-            
             try:
-                has_popup = dl_btn.get_attribute("aria-haspopup") == "menu"
-                if has_popup:
-                    dl_btn.click()
-                    page.wait_for_timeout(800)
-                    btn_720 = page.locator("button:has-text('720p'), [role='menuitem']:has-text('720p'), button:has-text('Original size')").first
-                    if btn_720.count() > 0 and btn_720.is_visible():
-                        btn_720.click()
-                    else:
-                        dl_btn.click()
-                else:
-                    dl_btn.click()
+                page.keyboard.press("Escape")
+                page.wait_for_timeout(400)
+                editor_btn.click(force=True)
+                page.wait_for_timeout(3000)
+                dl_media = page.locator("button[aria-label='Download media']:visible, button[aria-label*='Download' i]:visible").first
+                if dl_media.count() > 0 and dl_media.is_enabled():
+                    click_time = time.time()
+                    page.keyboard.press("Escape")
+                    page.wait_for_timeout(200)
+                    dl_media.click(force=True)
+                    for _ in range(14):
+                        page.wait_for_timeout(1000)
+                        if check_recent_downloads(dest_mp4_path, click_time):
+                            return True
+            except Exception as e:
+                print(f"[Flow] Editor download click error: {e}")
+
+        # Fallback card download
+        dl_btn = page.locator("button[aria-label='Download media']:visible, [aria-label*='Download' i]:visible").first
+        if dl_btn.count() > 0 and dl_btn.is_visible() and dl_btn.is_enabled():
+            print(f"[Flow] Video download button ready! (Elapsed: {elapsed}s)...")
+            click_time = time.time()
+            try:
+                dl_btn.click(force=True)
             except Exception as e:
                 print(f"[Flow] Click download error: {e}")
 
-            # Wait and check if downloaded to Downloads folder
-            for _ in range(6):
+            for _ in range(8):
                 page.wait_for_timeout(1000)
                 if check_recent_downloads(dest_mp4_path, click_time):
                     return True
