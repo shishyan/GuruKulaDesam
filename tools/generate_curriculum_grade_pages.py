@@ -1,0 +1,526 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Curriculum-Driven Grade Page Generator for Guru Kula Desam (Grades 1 to 12)
+Enforces the 7 Sacred Books as the single top-level container for all grades.
+Eliminates random loose image sheets and disconnected content dumps.
+Limits cognitive load to max 2-3 standard A4 pages per active book chapter view.
+"""
+
+import os
+
+ROOT_DIR = r"c:\GitHub\Gurukuladesam"
+
+GRADE_INFO = {
+    1: {
+        "wbs": "WBS G01",
+        "stage": "பாலப் பருவம் (1-4)",
+        "phase": "Phase 1: தொடக்கப் பள்ளி (வியப்பும் வடிவங்களும்)",
+        "literature": "புராணங்கள் — விநாயகர், அனுமன், பால கிருஷ்ணன், புத்தர்",
+        "goal": "மழலை விளையாட்டு, அச்சமின்மை, துணிவு, எளிய பகிர்வு & பெற்றோர் வணக்கம்",
+        "quote": "அன்னையும் பிதாவும் முன்னறி தெய்வம் — கொன்றைவேந்தன்"
+    },
+    2: {
+        "wbs": "WBS G02",
+        "stage": "பாலப் பருவம் (1-4)",
+        "phase": "Phase 1: தொடக்கப் பள்ளி (வடிவங்களும் தூய்மையும்)",
+        "literature": "புராணங்கள் & ஆத்திசூடி — சிவ சின்னங்கள், முருகன், இயற்கை",
+        "goal": "உடல் தூய்மை, உணவு வீணாக்காமை, அகந்தை இன்மை & தோழர்களுடன் பகிர்தல்",
+        "quote": "ஈயல் வேண்டும்; உடலினை உறுதி செய் — ஆத்திசூடி"
+    },
+    3: {
+        "wbs": "WBS G03",
+        "stage": "பாலப் பருவம் (1-4)",
+        "phase": "Phase 1: தொடக்கப் பள்ளி (காலச் சுழற்சி & யுகங்கள்)",
+        "literature": "புராணங்கள் & மூதுரை — திருஞானசம்பந்தர், ஔவையார் பனுவல்கள்",
+        "goal": "காலச் சுழற்சி புரிதல், கொடுத்த வாக்கைக் காப்பாற்றுதல், கூட்டுழைப்பு & மரம் நடுதல்",
+        "quote": "சாதி இரண்டொழிய வேறில்லை — ஔவையார்"
+    },
+    4: {
+        "wbs": "WBS G04",
+        "stage": "பாலப் பருவம் (1-4)",
+        "phase": "Phase 1: தொடக்கப் பள்ளி (பிரபஞ்ச நல்லிணக்கம்)",
+        "literature": "புராணங்கள் & திருமுறை — அப்பர் பெருமான், நீலகண்டர் தியாகம்",
+        "goal": "விருந்தோம்பல், வறுமையிலும் நேர்மை, அப்பர் உழவாரப் பணி & தூய்மை",
+        "quote": "மாசில் வீணையும் மாலை மதியமும் — திருநாவுக்கரசர் தேவாரம்"
+    },
+    5: {
+        "wbs": "WBS G05",
+        "stage": "இளம் பருவம் (5-8)",
+        "phase": "Phase 1: தொடக்கப் பள்ளி நிறைவு (நோக்கத்தின் வேர் / Root of Intent)",
+        "literature": "புராண இதிகாசத் தத்துவம் — பிரகலாதன், விதுர நீதி, நாரதர் உபதேசம்",
+        "goal": "நோக்கத்தின் வேர், ஆணவத்தின் வீழ்ச்சி, செய்ந்நன்றி அறிதல் & நீர்நிலைகள் பாதுகாப்பு",
+        "quote": "செய்ந்நன்றி அறிதல் உயிரினும் மேலானது — திருக்குறள் 108"
+    },
+    6: {
+        "wbs": "WBS G06",
+        "stage": "இளம் பருவம் (5-8)",
+        "phase": "Phase 2: இளம் பருவம் (இராமாயணம்: கடமையின் வரைபடம்)",
+        "literature": "கம்பராமாயணம் & நன்னெறி 40 — ராமனின் அடக்கம், குகன் சகோதரத்துவம்",
+        "goal": "பித்ரு வாக்கிய பரிபாலனம், குலம் கடந்த அன்பு, நாவடக்கம் & அணில் சேதுபந்தன உதவி",
+        "quote": "குகனொடும் ஐவரானோம் முன்பு பின் குன்று சூழ்வான் மகனொடும் அறுவரானோம் — கம்பராமாயணம்"
+    },
+    7: {
+        "wbs": "WBS G07",
+        "stage": "இளம் பருவம் (5-8)",
+        "phase": "Phase 2: இளம் பருவம் (இராமாயணம்: அற நுட்பமும் உளவியல் உறுதியும்)",
+        "literature": "கம்பராமாயணம் & நீதிநெறி விளக்கம் — வாலி வதம் அற வாதம், அனுமன் தூது",
+        "goal": "சூழ்நிலை தர்மம், அசோகவனத்தில் சீதையின் உளவியல் சமநிலை, விபீஷண சரணாகதி",
+        "quote": "கண்டேன் கற்பினுக் கணியை கண்களால் — கம்பராமாயணம்"
+    },
+    8: {
+        "wbs": "WBS G08",
+        "stage": "இளம் பருவம் (5-8)",
+        "phase": "Phase 2: இளம் பருவம் (இராமாயணம்: சதுர் ஆசிரமமும் இல்லறத் தலைமையும்)",
+        "literature": "இராமாயணம் & திருக்குறள் இல்வாழ்க்கை — சதுர் ஆசிரமங்கள், விபீஷண தர்மம்",
+        "goal": "சதுர் ஆசிரமக் கடமைகள், இல்லற மாண்பு, வெற்றியில் அகந்தை இன்மை & ராமராஜ்ய லட்சியம்",
+        "quote": "அறனெனப் பட்டதே இல்வாழ்க்கை அஃதும் பிறன்பழிப்ப தில்லாயின் நன்று — திருக்குறள் 49"
+    },
+    9: {
+        "wbs": "WBS G09",
+        "stage": "உயர்நிலைப் பருவம் (9-10)",
+        "phase": "Phase 2: உயர்நிலைப் பள்ளி (மகாபாரதம்: முரண்பாடுகளின் பொறிமுறை)",
+        "literature": "மகாபாரதம் & விதுர நீதி — யக்ஷ பிரஸ்னம், பேராசையின் பேரழிவு, கண்ணன் தூது",
+        "goal": "நச்சு entitlement பகுப்பாய்வு, அநீதியில் மௌனம் சாதிக்கும் பாவம், நீதிக்காக நிற்றல்",
+        "quote": "தயையே பரம தர்மம்; விதுர நீதி வாழ்க — மகாபாரத விதுர நீதி"
+    },
+    10: {
+        "wbs": "WBS G10",
+        "stage": "உயர்நிலைப் பருவம் (9-10)",
+        "phase": "Phase 2: உயர்நிலைப் பள்ளி (மகாபாரதம்: உடைவு நிலைகளும் சாந்தி பர்வமும்)",
+        "literature": "மகாபாரத சாந்தி பர்வம் & 14 மெய்கண்ட சாத்திரங்கள் — பீஷ்மர் ராஜதர்மம்",
+        "goal": "விஷ்ணு சஹஸ்ரநாமம், பழிவாங்கும் உணர்வை மன்னிப்பால் வெல்லுதல், தேச புனர்வாழ்வு & O/L தேர்ச்சி",
+        "quote": "அறத்தின் வழியே இன்பமும் பொருளும் முக்தியும் விளைகின்றன — சாந்தி பர்வம்"
+    },
+    11: {
+        "wbs": "WBS G11",
+        "stage": "மேல்நிலை & உயர்கல்வி",
+        "phase": "Phase 3: மேல்நிலைப் பள்ளி (பகவத் கீதை 1–9: மன அழுத்த மேலாண்மை)",
+        "literature": "பகவத் கீதை 1–9 & சிவஞானபோதம் — அர்ஜுன விஷாத யோகம், ஸ்வதர்மம், ஸ்திதப்பிரக்ஞன்",
+        "goal": "கடுமையான Burnout & Anxiety மேலாண்மை, நிஷ்காம கர்மம் (2.47), வாக்-தபஸ் (17.15), A/L தத்துவம்",
+        "quote": "கர்மண்யேवाधिकारஸ்தே மா பலேஷு கதாசன — பகவத் கீதை 2.47"
+    },
+    12: {
+        "wbs": "WBS G12",
+        "stage": "மேல்நிலை & உயர்கல்வி",
+        "phase": "Phase 3: மேல்நிலைப் பள்ளி (பகவத் கீதை 10–18, சித்தாந்தம் & திருவருட்பா)",
+        "literature": "பகவத் கீதை 10–18, வள்ளலார் திருவருட்பா & காஞ்சி மகா பெரியவா சனாதன உரை",
+        "goal": "குணத்ரய விபாக யோகம், வள்ளலார் ஜீவகாருண்யம், விஸ்வரூப தரிசனம், லோகசங்கிரகம் & Jivanmukti",
+        "quote": "வாடிய பயிரைக் கண்டபோதெல்லாம் வாடினேன் — வள்ளலார் திருவருட்பா"
+    }
+}
+
+LEFT_STRIP_BAR = '''  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL - CURRICULUM ACADEMY SANCTUARY) -->
+  <aside class="left-strip-bar" id="leftStripBar" aria-label="குருகுல முதன்மை பட்டி">
+    <div class="strip-header">
+      <a href="index.html" class="strip-brand-link" title="குரு குல ஆசிரமம்">
+        <span class="strip-emblem"><svg class="gkd-icon gkd-om-icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 10.5c-.3-.7-.2-1.5.3-2.1.8-.9 2.2-.9 3 .1.4.5.5 1.2.2 1.8-.4.7-1.1 1.2-1.7 1.7.9.3 1.7.9 2 1.7.4 1.1 0 2.4-1 3.1-1.2.9-2.9.7-3.9-.4-.4-.5-.6-1.1-.6-1.7h1.4c0 .4.2.8.5 1 .6.5 1.5.4 2-.1.4-.4.5-1 .2-1.5-.4-.7-1.2-1-2-1v-1.2c.6 0 1.2-.2 1.5-.7.3-.4.3-.9 0-1.3-.4-.5-1.1-.6-1.6-.2-.3.2-.5.6-.5 1H8.2zm6.3-2.5c.8 0 1.5.5 1.8 1.2l-1.2.5c-.2-.4-.5-.6-.8-.6-.6 0-1 .4-1 1s.4 1 1 1c.5 0 .9-.3 1.1-.7l1.1.6c-.4.8-1.2 1.3-2.2 1.3-1.4 0-2.4-1-2.4-2.4 0-1.3 1-2.4 2.4-2.4zm1.5-1.5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z"/></svg></span>
+        <div style="display: flex; flex-direction: column;">
+          <span class="strip-brand-text">குரு குல ஆசிரமம்</span>
+          <span style="font-size: 0.68rem; color: #2dd4bf; letter-spacing: 0.05em; font-weight: 600;">வேத-நவீன வித்யாபீடம்</span>
+        </div>
+      </a>
+      <button type="button" class="strip-toggle-btn" id="stripToggleBtn" onclick="togglePrimaryMenu()" data-tooltip="பட்டி விரிவாக்குக / சுருக்குக" title="முதன்மை பட்டி" aria-label="பட்டி மாற்று">
+        <span class="strip-toggle-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+      </button>
+    </div>
+
+    <nav class="strip-nav-list" id="stripNavList">
+
+      <!-- 1. ஆசிரம முகப்பு (Ashram Sanctuary Home) -->
+      <div class="strip-group" data-group="home">
+        <a href="index.html" class="strip-item" data-tooltip="ஆசிரம முகப்பு">
+          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></span>
+          <span class="strip-item-label">ஆசிரம முகப்பு (Sanctuary)</span>
+        </a>
+      </div>
+
+      <!-- 2. வித்யா குடீரம் & பாடத்திட்டம் (Academy Portal & Core Curriculum) -->
+      <div class="strip-group" data-group="curriculum">
+        <a href="school.html" class="strip-item strip-has-sub" data-tooltip="வித்யா குடீரம்">
+          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></span>
+          <span class="strip-item-label">இணையப் பள்ளி &amp; பாடத்திட்டம்</span>
+          <span class="strip-sub-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">பள்ளி &amp; பாடத்திட்ட மையம்</div>
+          <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></span><span>வித்யா குடீரம் (இணையப் பள்ளி)</span></a>
+          <a href="syllabus.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span><span>பாடத்திட்டம் &amp; வரைபடம் (Syllabus)</span></a>
+          <a href="books.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span>7 ஆசிரமப் பாடநூல்கள் அரங்கம்</span></a>
+          <a href="classes.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span>வகுப்புகள் &amp; நேர அட்டவணை</span></a>
+          <a href="virtues.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L3 12.5V21h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg></span><span>அகர வரிசை நற்பண்புகள்</span></a>
+        </div>
+      </div>
+
+      <!-- 3. நான்கு குருகுலப் பருவங்கள் (The 4 Classical Gurukula Stages - Grades 1 to 12 & Collegiate) -->
+      <div class="strip-group active open" data-group="stages">
+        <a href="kalvi.html" class="strip-item strip-has-sub active" data-tooltip="4 குருகுலப் பருவங்கள்">
+          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg></span>
+          <span class="strip-item-label">4 குருகுலப் பருவங்கள் (1-12)</span>
+          <span class="strip-sub-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </a>
+        <div class="strip-sub-menu">
+          <!-- STAGE 1: PRIMARY ACADEMY -->
+          <div class="strip-sub-header" style="color: #38bdf8;">1. பாலப் பருவம் (Grades 1 - 4 • அற அடித்தளம்)</div>
+          <div class="strip-grades-mini-grid" style="margin-bottom: 6px;">
+            <a href="tharam-1.html" class="strip-grade-mini-pill" title="தரம் 1">1</a>
+            <a href="tharam-2.html" class="strip-grade-mini-pill" title="தரம் 2">2</a>
+            <a href="tharam-3.html" class="strip-grade-mini-pill" title="தரம் 3">3</a>
+            <a href="tharam-4.html" class="strip-grade-mini-pill" title="தரம் 4">4</a>
+          </div>
+          <a href="vinayagar.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c-4 0-7 3.5-7 7.5 0 2.5 1.2 4.7 3 6l1 4.5h6l1-4.5c1.8-1.3 3-3.5 3-6C19 6.5 16 3 12 3z"/><path d="M12 9v5a1.5 1.5 0 0 1-3 0"/><circle cx="9" cy="8" r="1" fill="currentColor"/><circle cx="15" cy="8" r="1" fill="currentColor"/></svg></span><span>விநாயகர் (தொடக்கப் பள்ளி நெறி)</span></a>
+          <a href="murugan.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V9"/><path d="M12 2C9.5 5 7 8 7 11c0 3 2 4.5 5 5 3-.5 5-2 5-5 0-3-2.5-6-5-9z"/><line x1="9" y1="22" x2="15" y2="22"/></svg></span><span>முருகன் (ஒழுக்கம் &amp; தமிழ் நெறி)</span></a>
+
+          <!-- STAGE 2: MIDDLE ACADEMY -->
+          <div class="strip-sub-header" style="color: #2dd4bf; margin-top: 8px;">2. இளம் பருவம் (Grades 5 - 8 • பண்பாடு &amp; சமூகம்)</div>
+          <div class="strip-grades-mini-grid" style="margin-bottom: 6px;">
+            <a href="tharam-5.html" class="strip-grade-mini-pill" title="தரம் 5">5</a>
+            <a href="tharam-6.html" class="strip-grade-mini-pill" title="தரம் 6">6</a>
+            <a href="tharam-7.html" class="strip-grade-mini-pill" title="தரம் 7">7</a>
+            <a href="tharam-8.html" class="strip-grade-mini-pill" title="தரம் 8">8</a>
+          </div>
+          <a href="panpaadu.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><span>தமிழர் பண்பாடு &amp; 12 மாத விழாக்கள்</span></a>
+          <a href="vaishnava.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="3" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="3" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="21" y2="12"/></svg></span><span>வைணவ பக்தி &amp; பிரபந்தம்</span></a>
+          <a href="sakthi.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4c-1.5 3-2 6-2 9 1 0 2-1 2-2 0 1 1 2 2 2 0-3-.5-6-2-9z"/><path d="M7 10c0 3 1.5 5 3 6-2 0-4-1.5-4.5-4 .5-.7 1-1.3 1.5-2z"/><path d="M17 10c0 3-1.5 5-3 6 2 0 4-1.5 4.5-4-.5-.7-1-1.3-1.5-2z"/></svg></span><span>அம்பிகை சக்தி நெறி &amp; தாய்மை</span></a>
+
+          <!-- STAGE 3: SECONDARY ACADEMY -->
+          <div class="strip-sub-header" style="color: #facc15; margin-top: 8px;">3. உயர்நிலைப் பருவம் (Grades 9 - 10 • அறநெறி &amp; தத்துவம்)</div>
+          <div class="strip-grades-mini-grid" style="margin-bottom: 6px;">
+            <a href="tharam-9.html" class="strip-grade-mini-pill" title="தரம் 9">9</a>
+            <a href="tharam-10.html" class="strip-grade-mini-pill" title="தரம் 10">10</a>
+          </div>
+          <a href="thirukkural.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/><line x1="8" y1="7" x2="14" y2="7"/></svg></span><span>திருக்குறள் (1330 அறநெறி ஆய்வு)</span></a>
+          <a href="saiva-neri.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M12 6c-3.5 0-6 2.5-6 6v3h2v-3c0-2.5 1.8-4 4-4s4 1.5 4 4v3h2v-3c0-3.5-2.5-6-6-6z"/><polygon points="12 2 10.5 5 13.5 5 12 2" fill="currentColor"/></svg></span><span>சைவ சித்தாந்தம் &amp; 172 பதிகங்கள்</span></a>
+          <a href="sanmargam.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c1 3 3 4.5 4.5 7 1.5 2.5 1.5 5.5 0 8s-4 4-6.5 4c-3 0-5.5-2.5-5.5-6 0-3.5 2-6 4-8.5.5 1.5 1.5 2.5 2.5 2.5.5-2 .5-4.5 1-7z"/></svg></span><span>வள்ளலார் திருவருட்பா &amp; சன்மார்க்கம்</span></a>
+
+          <!-- STAGE 4: SENIOR & COLLEGIATE ACADEMY -->
+          <div class="strip-sub-header" style="color: #fb923c; margin-top: 8px;">4. மேல்நிலை &amp; உயர்கல்வி (Grades 11 - 12 &amp; கல்லூரி ஆய்வு)</div>
+          <div class="strip-grades-mini-grid" style="margin-bottom: 6px;">
+            <a href="tharam-11.html" class="strip-grade-mini-pill" title="தரம் 11">11</a>
+            <a href="tharam-12.html" class="strip-grade-mini-pill" title="தரம் 12">12</a>
+          </div>
+          <a href="higher-studies.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(90 12 12)"/></svg></span><span>வேத-நவீன உயர்கல்வி (STEM &amp; வேதாந்தம்)</span></a>
+          <a href="about.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v3"/><path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6"/><path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.83L7 15"/></svg></span><span>மகா பெரியவா அருளுரைகள் (Collegiate)</span></a>
+        </div>
+      </div>
+
+      <!-- 4. வாழ்வியல் சாதனா & இல்லற தர்மம் (Applied Living & Daily Sadhana) -->
+      <div class="strip-group" data-group="living">
+        <a href="grihastha.html" class="strip-item strip-has-sub" data-tooltip="வாழ்வியல் சாதனா">
+          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-.8 2-1.5 3.5-1.5 5a1.5 1.5 0 0 0 3 0c0-1.5-.7-3-1.5-5z" fill="currentColor"/><path d="M5 13c0 4 3 6 7 6s7-2 7-6H5z"/><path d="M10 19v2h4v-2"/></svg></span>
+          <span class="strip-item-label">தினசரி சாதனா &amp; இல்லறம்</span>
+          <span class="strip-sub-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">இல்லற நெறி &amp; நலம்</div>
+          <a href="grihastha.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span><span>இல்லற தர்மம் &amp; குடும்ப சாசனம்</span></a>
+          <a href="siddha.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg></span><span>பதினெண் சித்தர் வாழ்வியல் &amp; மூலிகை</span></a>
+          <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></span><span>வாழ்வியல் மையம் (12 நிலைகள் வழிகாட்டி)</span></a>
+        </div>
+      </div>
+
+      <!-- 5. பாட ஆதாரக் களஞ்சியம் (Curriculum Media & Source Archives) -->
+      <div class="strip-group" data-group="archives">
+        <a href="irai-isai-virundhu.html" class="strip-item strip-has-sub" data-tooltip="பாட ஆதாரங்கள்">
+          <span class="strip-item-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+          <span class="strip-item-label">பாட ஆதாரக் களஞ்சியம்</span>
+          <span class="strip-sub-indicator"><svg class="gkd-icon gkd-sub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </a>
+        <div class="strip-sub-menu">
+          <div class="strip-sub-header">இசை, மூல நூல் &amp; காணொளி</div>
+          <a href="books.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span>7 ஆசிரமப் பாடநூல்கள் அரங்கம்</span></a>
+          <a href="moola-nool.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span><span>மூல நூல் களஞ்சியம் (சுவடிகள்)</span></a>
+          <a href="irai-isai-virundhu.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span><span>இறை இசை விருந்து (600+)</span></a>
+          <a href="youtube.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor"/></svg></span><span>பாடக் காணொளிகள் களஞ்சியம்</span></a>
+          <a href="sannidhis.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></span><span>8 ஆசிரம சந்நிதிகள் காட்சியகம்</span></a>
+          <a href="help.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span><span>வித்யாபீட உதவி &amp; வழிகாட்டி</span></a>
+          <a href="google-site.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span><span>கூகிள் தளம் நேரடி இணைப்பு</span></a>
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="strip-footer-dock">
+      <button type="button" class="strip-dock-btn" onclick="openUserSettingsModal('preferences')" title="அமைப்புகள்" data-tooltip="அமைப்புகள்">
+        <span class="strip-dock-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+        <span class="strip-dock-label">அமைப்புகள்</span>
+      </button>
+      <button type="button" class="strip-dock-btn profile-dock-btn" onclick="openUserSettingsModal('profile')" title="சுயவிவரம்" data-tooltip="சுயவிவரம்">
+        <span class="strip-dock-avatar" id="stripAvatarIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <span class="strip-dock-label" id="stripUserName">சாதகர்</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="strip-backdrop" id="stripBackdrop" onclick="closePrimaryMenu()"></div>'''
+
+def generate_grade_html(g):
+    info = GRADE_INFO[g]
+    prev_g = g - 1 if g > 1 else None
+    next_g = g + 1 if g < 12 else None
+
+    prev_link_html = f'<a href="tharam-{prev_g}.html" style="color:#38bdf8; text-decoration:none; font-weight:700;"><svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> தரம் {prev_g} (Grade {prev_g})</a>' if prev_g else '<div></div>'
+    next_link_html = f'<a href="tharam-{next_g}.html" style="color:#34d399; text-decoration:none; font-weight:700;">தரம் {next_g} (Grade {next_g}) <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>' if next_g else '<div></div>'
+
+    html = f'''<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>தரம் {g} — 7 ஆசிரமப் பாடநூல்கள் (Grade {g} - 7 Books Curriculum) | Guru Kula Desam</title>
+  <meta name="description" content="குரு குல தேசம் தரம் {g} முழுமையான பள்ளிப் பாடத்திட்டம். 7 ஆசிரமப் பாடநூல்கள்: நன்னெறி, நல்லறம், நல்வழி, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செயல்.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/books-reader.css">
+  <style>
+    /* Focused Grade Curriculum Container - Max 2-3 A4 Standard Pages Cognitive Containment */
+    .grade-curriculum-container {{
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 10px 0 60px;
+    }}
+    .grade-hero-banner {{
+      background: linear-gradient(135deg, rgba(8, 14, 26, 0.98) 0%, rgba(15, 23, 42, 0.96) 50%, rgba(20, 35, 60, 0.98) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 20px;
+      padding: 28px 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.65), 0 0 30px rgba(212, 175, 55, 0.08);
+      position: relative;
+      overflow: hidden;
+    }}
+    .grade-hero-banner::after {{
+      content: "{g}";
+      position: absolute;
+      right: 20px;
+      top: -35px;
+      font-size: 15rem;
+      color: rgba(212, 175, 55, 0.04);
+      font-family: serif;
+      pointer-events: none;
+      font-weight: 800;
+    }}
+    .grade-switch-strip {{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 14px 0 22px 0;
+      padding: 12px 20px;
+      background: rgba(14, 22, 38, 0.7);
+      backdrop-filter: blur(12px);
+      border-radius: 14px;
+      border: 1px solid rgba(56, 189, 248, 0.22);
+    }}
+  </style>
+</head>
+<body class="has-left-strip">
+
+{LEFT_STRIP_BAR}
+
+  <!-- CONTEXT-SENSITIVE TOP BAR -->
+  <header class="context-top-bar" id="contextTopBar">
+    <div class="context-bar-container">
+      <div class="context-bar-left">
+        <button type="button" class="mobile-hamburger-btn" onclick="togglePrimaryMenu()" title="பட்டி திறக்க" aria-label="முதன்மை பட்டி">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <button type="button" class="breadcrumb-back-btn" onclick="if(window.history.length > 1){{ window.history.back(); }} else {{ window.location.href='school.html'; }}" title="பின்னே செல்ல">
+          <svg class="gkd-icon gkd-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <span>பின்னே</span>
+        </button>
+        <nav class="context-breadcrumbs" id="contextBreadcrumbs" aria-label="தள வழிகாட்டல்">
+          <a href="index.html" class="crumb-link crumb-home" title="முகப்பு">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span class="crumb-text">முகப்பு</span>
+          </a>
+          <span class="crumb-sep">/</span>
+          <a href="school.html" class="crumb-link">{info['stage']}</a>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current" id="topBarCurrentCrumb">தரம் {g} — 7 ஆசிரமப் பாடநூல்கள்</span>
+        </nav>
+      </div>
+      <div class="header-right-tools">
+        <div class="context-search-wrapper">
+          <span class="context-search-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+          <input type="text" id="contextQuickSearch" class="context-search-input" placeholder="தேடுக... [/]" oninput="handleContextSearch(this.value)" autocomplete="off">
+          <button type="button" class="context-search-clear" id="contextSearchClear" onclick="clearContextSearch()" style="display: none;"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+        </div>
+        <div class="context-tool-group">
+          <button type="button" class="context-tool-btn font-dec-btn" onclick="adjustFontSize(-0.06)" title="எழுத்தளவைக் குறைக்க"><span style="font-size:0.9em; font-weight:700">A-</span></button>
+          <button type="button" class="context-tool-btn font-inc-btn" onclick="adjustFontSize(0.06)" title="எழுத்தளவை அதிகரிக்க"><span style="font-size:0.9em; font-weight:700">A+</span></button>
+        </div>
+        <button type="button" class="context-tool-btn theme-quick-btn" onclick="cycleTheme()" title="வண்ணக் கருப்பொருள்">
+          <span class="theme-icon" id="themeQuickIcon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="grade-curriculum-container">
+
+      <!-- GRADE HERO BANNER -->
+      <div class="grade-hero-banner">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;">
+          <div style="flex:1; min-width:280px;">
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:10px;">
+              <span class="wbs-code" style="font-size:0.78rem;">{info['wbs']}</span>
+              <span style="background:rgba(56, 189, 248, 0.18); color:#38bdf8; border:1px solid rgba(56, 189, 248, 0.35); font-size:0.75rem; font-weight:700; padding:2px 8px; border-radius:6px;">{info['stage']}</span>
+              <span style="background:rgba(212, 175, 55, 0.2); color:var(--gold-bright); font-size:0.75rem; font-weight:700; padding:2px 8px; border-radius:6px;">{info['phase']}</span>
+            </div>
+            <h1 style="color:#ffffff; font-size:2.2rem; font-weight:800; margin:0 0 6px 0;">
+              தரம் {g} — 7 ஆசிரமப் பாடநூல்கள்
+            </h1>
+            <p style="color:var(--gold-soft); font-size:1.02rem; font-weight:600; margin:0 0 10px 0;">
+              "{info['quote']}"
+            </p>
+            <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; max-width:850px; margin:0 0 6px 0;">
+              <strong>இலக்கிய அடித்தளம்:</strong> {info['literature']}<br>
+              <strong>கற்பித்தல் நோக்கம்:</strong> {info['goal']}
+            </p>
+          </div>
+          <div style="flex-shrink:0; max-width:220px; width:100%; border-radius:14px; overflow:hidden; border:1.5px solid rgba(212,175,55,0.35); box-shadow:0 8px 24px rgba(0,0,0,0.5);">
+            <img src="assets/images/gurukula-banyan-tree-bg.jpg" alt="குருகுல தபோவனம்" style="width:100%; height:110px; object-fit:cover; display:block;" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK GRADE SWITCHER STRIP -->
+      <div class="grade-switch-strip">
+        {prev_link_html}
+        <div style="display:flex; align-items:center; gap:8px;">
+          <a href="school.html" class="sheet-btn" style="font-size:0.8rem; padding:6px 12px; text-decoration:none;">இணையப் பள்ளி போர்டல்</a>
+          <a href="books.html?grade={g}" class="sheet-btn sheet-btn-view" style="font-size:0.8rem; padding:6px 12px; text-decoration:none;">முழு மின்னூல் அரங்கம் &rarr;</a>
+        </div>
+        {next_link_html}
+      </div>
+
+      <!-- THE 7 SACRED BOOKS SHELF (SINGLE TOP-LEVEL CONTAINER FOR THE GRADE) -->
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
+        <h3 style="color:#ffffff; font-size:1.15rem; font-weight:800; margin:0;">
+          7 ஆசிரமப் பாடநூல்கள் (The 7 Sacred Books)
+        </h3>
+        <span style="color:#94a3b8; font-size:0.82rem;">நூலைத் தேர்வு செய்து அதிலுள்ள 7 அத்தியாயங்களை வாசிக்கலாம்</span>
+      </div>
+
+      <div class="books-shelf-grid" id="booksShelfTabs">
+        <!-- Rendered by books-reader.js -->
+      </div>
+
+      <!-- BOOK READER WORKSPACE (STRICT COGNITIVE LOAD CONTAINMENT: MAX 2-3 A4 PAGES) -->
+      <div class="book-reader-workspace" id="bookReaderWorkspace">
+        
+        <div class="reader-top-meta">
+          <div>
+            <span class="pat-level-code-pill" id="readerBookBadge">தரம் {g} • {info['stage']}</span>
+            <h2 class="reader-book-heading" id="readerBookTitle">நன்னெறி</h2>
+            <div class="reader-book-subheading" id="readerBookSubtitle">பணிவு, பெரியோர் மரியாதை மற்றும் தூய நடத்தை</div>
+            <div style="font-size:0.82rem; color:#94a3b8; margin-top:4px;" id="readerLiteratureBase">இலக்கிய அடித்தளம்: {info['literature']}</div>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+            <a href="syllabus.html#sevenBooksArchitecture" class="sheet-btn" style="font-size:0.82rem; padding:8px 14px; text-decoration:none;">
+              பாடத்திட்ட அட்டவணை <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- CHAPTER SELECTOR TABS -->
+        <div style="color:var(--gold-soft); font-size:0.82rem; font-weight:700; margin-bottom:8px;">அத்தியாயத்தைத் தேர்வு செய்க (Select Chapter):</div>
+        <div class="reader-chapter-tabs" id="readerChapterTabs">
+          <!-- Rendered by books-reader.js -->
+        </div>
+
+        <!-- ACTIVE CHAPTER READING AREA -->
+        <div id="activeChapterReadingArea">
+          <div style="text-align:center; padding:40px; color:var(--gold);">
+            பாடநூல் அத்தியாயங்கள் ஏற்றப்படுகின்றன...
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick 12 Grades Jump Footer Grid -->
+      <div style="margin-top:35px; padding:20px; background:rgba(11,18,33,0.85); border:1px solid rgba(255,255,255,0.08); border-radius:16px;">
+        <div style="color:#ffffff; font-weight:700; font-size:0.92rem; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center;">
+          <span>12 தரப் பாடநூல்கள் விரைவுத் தேர்வு (Jump to Grade 1–12):</span>
+          <a href="kalvi.html" style="color:#38bdf8; text-decoration:none; font-size:0.82rem;">12 வாழ்வியல் நிலைகள் வழிகாட்டி &rarr;</a>
+        </div>
+        <div class="strip-grades-mini-grid" style="grid-template-columns: repeat(12, 1fr); gap:6px;">
+          {' '.join([f'<a href="tharam-{i}.html" class="strip-grade-mini-pill {"active" if i == g else ""}">{i}</a>' for i in range(1, 13)])}
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p>&copy; குரு குல தேசம் (Guru Kula Desam) — சனாதன வேத வாழ்வியல் தர்மம் &amp; 7 ஆசிரமப் பாடநூல்கள்.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- High-Resolution Artwork Lightbox Modal -->
+  <div class="art-lightbox-modal" id="artLightboxModal" onclick="if(event.target === this) closeArtLightbox()" role="dialog" aria-modal="true" aria-label="மரபு ஓவியக் காட்சி">
+    <div class="art-lightbox-box">
+      <div class="art-lightbox-header">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span class="carousel-counter-pill" id="artLightboxCounter">காட்சி 1 / 7</span>
+          <span class="chap-badge" id="artLightboxType" style="font-size:0.85rem; color:var(--gold-bright);">முகப்பு ஓவியம்</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button type="button" class="sheet-btn" onclick="toggleArtZoom()" title="பெரிதாக்க" style="padding:5px 10px; font-size:0.8rem;">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
+          </button>
+          <a id="artLightboxDownloadBtn" href="" download target="_blank" class="sheet-btn" title="பதிவிறக்குக" style="padding:5px 10px; font-size:0.8rem; text-decoration:none;">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> பதிவிறக்கு
+          </a>
+          <button type="button" class="sheet-btn" onclick="closeArtLightbox()" title="மூடுக" style="padding:5px 10px; font-size:0.8rem; background:rgba(239,68,68,0.2); border-color:rgba(239,68,68,0.4); color:#fca5a5;">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> மூடுக
+          </button>
+        </div>
+      </div>
+      <div class="art-lightbox-stage" id="artLightboxStage">
+        <button type="button" class="carousel-nav-btn carousel-prev-btn" onclick="prevArtLightboxImage()" title="முந்தைய காட்சி" style="width:42px;height:42px;">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <img id="artLightboxImg" src="" alt="" class="art-lightbox-img" onclick="toggleArtZoom()">
+        <button type="button" class="carousel-nav-btn carousel-next-btn" onclick="nextArtLightboxImage()" title="அடுத்த காட்சி" style="width:42px;height:42px;">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+      <div class="art-lightbox-footer">
+        <div id="artLightboxCaption" style="color:#ffffff; font-size:0.95rem; font-weight:700; line-height:1.6; margin-bottom:8px;"></div>
+        <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:10px 14px; font-size:0.8rem; color:#94a3b8; line-height:1.6;">
+          <strong style="color:var(--gold-soft); display:block; margin-bottom:3px;">🎨 கலை வடிவமைப்பு மரபுக் குறிப்பு (Classical Heritage Art Context):</strong>
+          <span id="artLightboxPrompt" style="font-style:italic;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.DEFAULT_GRADE = {g};
+  </script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/moola-nool-data.js"></script>
+  <script src="assets/js/books-reader.js"></script>
+</body>
+</html>
+'''
+    return html
+
+def main():
+    print("=== Generating Clean Curriculum-Driven Grade Pages (tharam-1 to tharam-12) ===")
+    for g in range(1, 13):
+        file_path = os.path.join(ROOT_DIR, f"tharam-{g}.html")
+        content = generate_grade_html(g)
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"Generated clean curriculum container: tharam-{g}.html ({len(content)} bytes)")
+    print("All 12 grade pages successfully restructured into 7 Sacred Books containers!")
+
+if __name__ == "__main__":
+    main()

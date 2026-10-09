@@ -9069,3 +9069,16 @@ html body .course-main-column .grade-7books-box.grade-7books-box.grade-7books-bo
 .grade-7books-box a[href*="book="] {text-underline-offset:3px;}
 .grade-7books-box a[href*="book="]:hover {color:#fff !important;}
 .grade-hub-btn .hub-label {overflow-wrap:anywhere;}
+
+/* ===== UX FIX: touch targets (no backgrounds/borders added) ===== */
+@media (pointer: coarse) {
+  button, .sheet-btn, .grade-hub-btn, nav a, .sidebar-chapter-btn, select, summary { min-height: 40px; }
+  .grade-hub-btn .hub-count { font-size: .75rem; }
+}
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #fde68a; outline-offset: 2px; }
+
+/* ===== UX FIX: mobile bottom toolbar (z1500) was covering the fixed sidebar toggle -> lift toggle, pad page ===== */
+@media (max-width: 900px) {
+  .course-sidebar-mobile-toggle { bottom: calc(68px + env(safe-area-inset-bottom, 0px)) !important; }
+  body { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
+}
