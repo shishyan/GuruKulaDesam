@@ -8342,12 +8342,11 @@ h1, h2, h3, h4, h5, h6,
 /* ========================================================================== */
 
 .zen-grade-stage-shell {
-  background: linear-gradient(145deg, rgba(8, 20, 36, 0.96), rgba(4, 13, 26, 0.96));
-  border: 1px solid rgba(212, 175, 55, 0.35);
-  border-radius: 20px;
-  padding: 26px;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 10px 0;
   margin-bottom: 24px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
 }
 
 .zen-grade-pills-bar {
@@ -8363,29 +8362,30 @@ h1, h2, h3, h4, h5, h6,
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #94a3b8;
+  background: rgba(0, 0, 0, 0.45) !important;
+  border: none !important;
+  color: #cbd5e1;
   padding: 6px 14px;
   border-radius: 9999px;
   font-size: 0.84rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .zen-grade-btn:hover {
-  background: rgba(212, 175, 55, 0.15);
-  border-color: var(--gold-bright, #f59e0b);
+  background: rgba(20, 184, 166, 0.25) !important;
   color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .zen-grade-btn.active {
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(245, 158, 11, 0.25));
-  border-color: var(--gold-bright, #f59e0b);
-  color: var(--gold-bright, #f59e0b);
+  background: linear-gradient(135deg, #0d9488, #059669) !important;
+  color: #ffffff !important;
+  border: none !important;
   font-weight: 700;
-  box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.45) !important;
 }
 
 .zen-grade-focus-card {
@@ -8393,20 +8393,20 @@ h1, h2, h3, h4, h5, h6,
   grid-template-columns: 320px 1fr;
   gap: 28px;
   align-items: center;
-  background: rgba(4, 13, 26, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  padding: 24px;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 10px 0;
   animation: zenFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .zen-grade-visual {
   position: relative;
-  border-radius: 12px;
+  border-radius: 16px !important;
   overflow: hidden;
   aspect-ratio: 16/11;
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: none !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.88), 0 4px 14px rgba(0, 0, 0, 0.95) !important;
 }
 
 .zen-grade-visual img {
@@ -8420,81 +8420,91 @@ h1, h2, h3, h4, h5, h6,
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px dashed rgba(212, 175, 55, 0.35);
+  background: rgba(0, 0, 0, 0.45) !important;
+  border: none !important;
   color: #cbd5e1;
   padding: 8px 18px;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
   margin: 10px auto 24px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .zen-toggle-grid-btn:hover {
-  background: rgba(212, 175, 55, 0.12);
-  border-color: var(--gold-bright, #f59e0b);
+  background: rgba(20, 184, 166, 0.25) !important;
   color: #ffffff;
 }
 
 @media (max-width: 860px) {
   .zen-grade-focus-card {
     grid-template-columns: 1fr;
-    padding: 16px;
+    padding: 0;
   }
 }
 
-
-
-
 /* CSS for Grade Focus Hub & Cognitive Load Reduction */
 .grade-focus-hub-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 18px 0 24px 0;
-  padding: 10px;
-  background: rgba(15, 23, 42, 0.85);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  position: sticky;
-  top: 70px;
-  z-index: 100;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) !important;
+  gap: 10px !important;
+  margin: 15px 0 28px 0 !important;
+  padding: 10px 14px !important;
+  background: rgba(14, 22, 38, 0.88) !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+  position: relative !important;
+  top: auto !important;
+  z-index: 10 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 900px) {
+  .grade-focus-hub-bar {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .grade-focus-hub-bar {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
 
 .grade-hub-btn {
   flex: 1 1 auto;
-  min-width: 140px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 0 !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   color: #cbd5e1;
-  padding: 8px 12px;
-  border-radius: 10px;
+  padding: 10px 8px !important;
+  border-radius: 12px;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px !important;
   transition: all 0.22s ease;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
 .grade-hub-btn:hover {
-  background: rgba(212, 175, 55, 0.12);
-  border-color: rgba(212, 175, 55, 0.4);
+  background: rgba(20, 184, 166, 0.22) !important;
   color: #fff;
   transform: translateY(-2px);
 }
 
 .grade-hub-btn.active {
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25) 0%, rgba(20, 35, 60, 0.8) 100%);
-  border-color: var(--gold, #d4af37);
-  color: var(--gold-bright, #ffd700);
-  box-shadow: 0 0 16px rgba(212, 175, 55, 0.25);
+  background: linear-gradient(135deg, #0d9488, #059669) !important;
+  border: 1px solid #2dd4bf !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.45) !important;
   font-weight: 700;
 }
 
@@ -8511,15 +8521,15 @@ h1, h2, h3, h4, h5, h6,
 .grade-hub-btn .hub-count {
   font-size: 0.7rem;
   color: #94a3b8;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   padding: 1px 6px;
   border-radius: 8px;
   margin-top: 2px;
 }
 
 .grade-hub-btn.active .hub-count {
-  color: var(--gold-soft, #f6e05e);
-  background: rgba(212, 175, 55, 0.2);
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .grade-hub-btn.show-all-btn {
@@ -8534,34 +8544,36 @@ h1, h2, h3, h4, h5, h6,
   align-items: center;
   gap: 8px;
   margin-bottom: 20px;
-  padding: 10px 14px;
-  background: rgba(10, 16, 32, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  padding: 6px 0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .sheet-batch-btn {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #94a3b8;
+  background: rgba(0, 0, 0, 0.45) !important;
+  border: none !important;
+  color: #cbd5e1;
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sheet-batch-btn:hover {
+  background: rgba(20, 184, 166, 0.22) !important;
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .sheet-batch-btn.active {
-  background: rgba(56, 189, 248, 0.18);
-  border-color: #38bdf8;
-  color: #38bdf8;
+  background: linear-gradient(135deg, #0d9488, #059669) !important;
+  border: none !important;
+  color: #ffffff !important;
   font-weight: 700;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.45) !important;
 }
 
 /* ============================================================== */
@@ -8869,4 +8881,92 @@ h1, h2, h3, h4, h5, h6,
   .gkd-drizzle-canvas {
     display: none !important;
   }
+}
+
+/* ============================================================== */
+/* SUPREME ZERO BACKGROUND WRAPPER & NO BORDER ENFORCEMENT         */
+/* ============================================================== */
+
+/* 1. Strip all wrapper backgrounds and borders across all containers */
+.main-content,
+.main-container,
+.content-wrapper,
+.course-layout-container,
+.course-main-column,
+.course-sidebar,
+.left-strip-bar:not(.expanded):not(.open),
+.zen-grade-stage-shell,
+.zen-grade-focus-card,
+.grade-card,
+.sheet-card,
+.video-card,
+.book-card,
+.philosophy-card,
+.dharma-hub-card,
+.charter-preview-frame,
+.charter-vow-card,
+.charter-pillar-card,
+.yajna-item-card,
+.hero-banner,
+.filter-bar,
+.sheets-batch-bar,
+.grade-focus-hub-bar,
+.sidebar-chapter-group,
+.sidebar-subsections,
+.card-lyrics-drawer,
+.drawer,
+.drawer-section,
+[class*="-wrapper"],
+[class*="wrapper-"],
+[class*="-shell"],
+[class*="-stage"],
+[class*="-card"]:not(.card-thumbnail):not(.grade-card-media):not(.sheet-thumb):not(.book-thumb),
+[class*="card-"]:not(.card-thumbnail):not(.grade-card-media):not(.sheet-thumb):not(.book-thumb),
+[class*="-panel"]:not(.dropdown-menu) {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 2. Remove all structural borders universally */
+div, section, article, aside, nav, header, footer {
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+}
+
+/* 3. Ensure deep shadow contrast technique for high visibility */
+h1, h2, h3, h4, h5, h6,
+.title, [class*="-title"], [class*="title-"],
+.name, [class*="-name"], [class*="name-"],
+.heading, [class*="-heading"], [class*="heading-"],
+strong, b {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.98), 0 4px 16px rgba(0, 0, 0, 0.90) !important;
+}
+
+p, span, li, label, .desc, [class*="-desc"], [class*="desc-"] {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 2px 8px rgba(0, 0, 0, 0.85);
+}
+
+/* 4. Sculpted 3D visual media float with deep multi-layered shadows */
+img, iframe, video,
+.card-thumbnail,
+.grade-card-media,
+.sheet-thumb,
+.book-thumb,
+.zen-grade-visual,
+.strip-item-icon {
+  border: none !important;
+  border-radius: 14px !important;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.90), 0 4px 14px rgba(0, 0, 0, 0.95) !important;
+}
+
+/* 5. Clean borderless interactive controls */
+button, .btn, [class*="-btn"], [class*="btn-"],
+.pill, [class*="-pill"], [class*="pill-"] {
+  border: none !important;
 }
