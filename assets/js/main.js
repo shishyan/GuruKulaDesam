@@ -729,18 +729,18 @@ function applyUserPreferences() {
     if (strip) strip.style.display = 'flex';
     if (oldNav) oldNav.style.display = 'flex';
     if (contextTabsNav) contextTabsNav.style.display = 'flex';
-    if (window.innerWidth >= 992) {
+    if (window.innerWidth >= 769) {
       const isExp = strip && strip.classList.contains('expanded');
-      document.body.style.paddingLeft = isExp ? '230px' : '68px';
+      document.body.style.paddingLeft = isExp ? '290px' : '68px';
     }
   } else {
     // 'sidebar' (DEFAULT): Left sidebar dock + clean context-sensitive top tabs
     if (strip) strip.style.display = 'flex';
     if (oldNav) oldNav.style.display = 'none';
     if (contextTabsNav) contextTabsNav.style.display = 'flex';
-    if (window.innerWidth >= 992) {
+    if (window.innerWidth >= 769) {
       const isExp = strip && strip.classList.contains('expanded');
-      document.body.style.paddingLeft = isExp ? '230px' : '68px';
+      document.body.style.paddingLeft = isExp ? '290px' : '68px';
     }
   }
 
@@ -1812,7 +1812,7 @@ function mountAppShell() {
   document.body.prepend(strip);
 
   // Restore strip expanded state on desktop if previously saved
-  if (window.innerWidth >= 992 && localStorage.getItem('GURUKULA_STRIP_EXPANDED') === 'true') {
+  if (window.innerWidth >= 769 && localStorage.getItem('GURUKULA_STRIP_EXPANDED') === 'true') {
     expandLeftStrip();
   }
 
