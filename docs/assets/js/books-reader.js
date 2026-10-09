@@ -238,6 +238,14 @@ function renderCurrentChapterContent() {
         <div class="verse-meaning-clean" style="color:#cbd5e1; font-size:0.92rem; margin-top:10px; line-height:1.6;">
           <strong style="color:var(--gold-soft);">பொருள் விளக்கம்:</strong> ${chap.verseMeaning}
         </div>
+        <div class="moola-reader-actions-row" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:14px; padding-top:10px; border-top:1px dashed rgba(212,175,55,0.25);">
+          <button type="button" class="moola-read-btn" onclick="openChapterMoolaModal('${currentBook}', ${chap.chapterNumber}, ${currentGrade})">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் &amp; பதவுரை காண்க
+          </button>
+          <a href="moola-nool.html" class="moola-canon-link" target="_blank" title="முழு மூல நூலகத்தில் திறக்க">
+            மூல நூல் நூலகம் &rarr;
+          </a>
+        </div>
         ${images[1] ? `
           <div class="inline-art-card" onclick="openArtLightboxByIndex(1)" title="பெரிதாகக் காண கிளிக் செய்க">
             <div class="art-zoom-hint">

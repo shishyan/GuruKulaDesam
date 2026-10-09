@@ -188,639 +188,262 @@
 
   <main class="main-content">
 
-    <!-- GKD INTERACTIVE DASHBOARD & DRILL-DOWN ENGINE -->
-    <div class="gkd-dashboard-shell">
+    <!-- ZEN SANCTUARY FOCUS ARCHITECTURE — ONE CONTENT AT A TIME -->
+    <div class="zen-sanctuary-shell">
 
-      <!-- 1. DASHBOARD HEADER BAR -->
-      <div class="dashboard-header-bar">
-        <div class="dashboard-title-group">
-          <h1>
-            <svg class="gkd-icon gkd-om-icon" viewBox="0 0 24 24" fill="currentColor" style="width:28px;height:28px;color:var(--gold-bright);"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 10.5c-.3-.7-.2-1.5.3-2.1.8-.9 2.2-.9 3 .1.4.5.5 1.2.2 1.8-.4.7-1.1 1.2-1.7 1.7.9.3 1.7.9 2 1.7.4 1.1 0 2.4-1 3.1-1.2.9-2.9.7-3.9-.4-.4-.5-.6-1.1-.6-1.7h1.4c0 .4.2.8.5 1 .6.5 1.5.4 2-.1.4-.4.5-1 .2-1.5-.4-.7-1.2-1-2-1v-1.2c.6 0 1.2-.2 1.5-.7.3-.4.3-.9 0-1.3-.4-.5-1.1-.6-1.6-.2-.3.2-.5.6-.5 1H8.2zm6.3-2.5c.8 0 1.5.5 1.8 1.2l-1.2.5c-.2-.4-.5-.6-.8-.6-.6 0-1 .4-1 1s.4 1 1 1c.5 0 .9-.3 1.1-.7l1.1.6c-.4.8-1.2 1.3-2.2 1.3-1.4 0-2.4-1-2.4-2.4 0-1.3 1-2.4 2.4-2.4zm1.5-1.5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z"/></svg>
-            குரு குல தேசம் • செயல்வழி வித்யாபீடம்
-          </h1>
-          <p>தர்ம வாழ்க்கை, திருக்குறள் நெறி, பன்னிரு திருமுறைகள் மற்றும் ஆசிரம தினசரி சாதனா வழிகாட்டி முனையம்</p>
+      <!-- Minimalist Ashram Sanctuary Header -->
+      <div class="zen-header">
+        <div class="zen-tagline-badge">
+          <span class="zen-om-dot">ॐ</span>
+          <span>குரு குல ஆசிரமம் • தொல் வித்யாபீடம்</span>
         </div>
-        <div class="dashboard-header-actions">
-          <a href="kalvi.html" class="sheet-btn sheet-btn-view" style="font-weight: 700; text-decoration: none;">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> பாடத்திட்டம்
-          </a>
-          <a href="thirukkural.html" class="sheet-btn" style="background: rgba(45,212,191,0.15); border: 1px solid rgba(45,212,191,0.4); color: #2dd4bf; font-weight: 700; text-decoration: none; border-radius: 8px;">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/></svg> திருக்குறள்
-          </a>
-          <a href="youtube.html" class="sheet-btn" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); color: #f8fafc; font-weight: 700; text-decoration: none; border-radius: 8px;">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> 604 சுவடிகள்
-          </a>
-        </div>
+        <h1 class="zen-main-title">அமைதியான கற்றல் • ஒரு நேரத்தில் ஒரு நெறி</h1>
+        <p class="zen-sub-title">மனதை ஒருமுகப்படுத்தி ஆசிரம தர்மம், திருக்குறள், திருமுறைகள் மற்றும் தினசரி சாதனாவை அமைதியாக உள்வாங்குங்கள்.</p>
       </div>
 
-      <!-- 2. TOP KPI METRIC CARDS BAR -->
-      <div class="dashboard-kpi-grid">
-        <div class="kpi-card" onclick="setDashboardWorkflow('curriculum')">
-          <div class="kpi-icon-pill" style="color: #38bdf8; background: rgba(56,189,248,0.12); border-color: rgba(56,189,248,0.3);">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          </div>
-          <div class="kpi-card-data">
-            <span class="kpi-value">12</span>
-            <span class="kpi-label">கல்வி நிலைகள்</span>
-            <span class="kpi-subtext">Grade 1 to 12 • 4 நிலைகள்</span>
-          </div>
-        </div>
-
-        <div class="kpi-card" onclick="setDashboardWorkflow('thirukkural')">
-          <div class="kpi-icon-pill" style="color: #2dd4bf; background: rgba(45,212,191,0.12); border-color: rgba(45,212,191,0.3);">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/></svg>
-          </div>
-          <div class="kpi-card-data">
-            <span class="kpi-value">1,330</span>
-            <span class="kpi-label">அமுதத் திருக்குறள்</span>
-            <span class="kpi-subtext">133 அதிகாரங்கள் • 3 பால்கள்</span>
-          </div>
-        </div>
-
-        <div class="kpi-card" onclick="setDashboardWorkflow('hymns')">
-          <div class="kpi-icon-pill" style="color: #c084fc; background: rgba(192,132,252,0.12); border-color: rgba(192,132,252,0.3);">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-          </div>
-          <div class="kpi-card-data">
-            <span class="kpi-value">604</span>
-            <span class="kpi-label">புனிதச் சுவடிகள்</span>
-            <span class="kpi-subtext">திருமுறை • திருப்புகழ் • பிரபந்தம்</span>
-          </div>
-        </div>
-
-        <div class="kpi-card" onclick="location.href='sannidhis.html'">
-          <div class="kpi-icon-pill" style="color: #f59e0b; background: rgba(245,158,11,0.12); border-color: rgba(245,158,11,0.3);">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M12 6c-3.5 0-6 2.5-6 6v3h2v-3c0-2.5 1.8-4 4-4s4 1.5 4 4v3h2v-3c0-3.5-2.5-6-6-6z"/><polygon points="12 2 10.5 5 13.5 5 12 2" fill="currentColor"/></svg>
-          </div>
-          <div class="kpi-card-data">
-            <span class="kpi-value">8</span>
-            <span class="kpi-label">ஆசிரம சந்நிதிகள்</span>
-            <span class="kpi-subtext">சிவன், முருகன், அரங்கர், வள்ளலார்</span>
-          </div>
-        </div>
-
-        <div class="kpi-card" onclick="location.href='panpaadu.html'">
-          <div class="kpi-icon-pill" style="color: #ec4899; background: rgba(236,72,153,0.12); border-color: rgba(236,72,153,0.3);">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-          </div>
-          <div class="kpi-card-data">
-            <span class="kpi-value">12</span>
-            <span class="kpi-label">பண்பாடு &amp; விழாக்கள்</span>
-            <span class="kpi-subtext">12 மாதத் திருவிழாக்கள் &amp; விழுமியம்</span>
-          </div>
-        </div>
-
-        <div class="kpi-card" onclick="setDashboardWorkflow('dinacharya')">
-          <div class="kpi-icon-pill" style="color: #10b981; background: rgba(16,185,129,0.12); border-color: rgba(16,185,129,0.3);">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div class="kpi-card-data">
-            <span class="kpi-value" id="kpiSadhanaPct">0%</span>
-            <span class="kpi-label">இன்றைய சாதனா</span>
-            <span class="kpi-subtext" id="kpiActiveYamam">உஷத் காலம்</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. PRIMARY WORKFLOW SEGMENTED NAVIGATOR -->
-      <div class="dashboard-workflow-nav">
-        <button type="button" class="workflow-tab-btn active" data-workflow="curriculum" onclick="setDashboardWorkflow('curriculum')">
-          <div class="workflow-tab-icon">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          </div>
-          <div class="workflow-tab-text">
-            <span class="workflow-tab-title">1. தர்ம வித்யாபீடம்</span>
-            <span class="workflow-tab-desc">12 கல்வி நிலைகள் (Grades 1-12)</span>
-          </div>
+      <!-- Focused 5-Step Stepper -->
+      <div class="zen-stepper-bar" role="tablist" aria-label="வித்யா படிநிலைகள்">
+        <button type="button" class="zen-step-item active" onclick="goToZenSlide(0)" data-step="0" role="tab" aria-selected="true">
+          <span class="step-num">1</span>
+          <span class="step-text">வாழ்வியல் கல்வி</span>
         </button>
-
-        <button type="button" class="workflow-tab-btn" data-workflow="thirukkural" onclick="setDashboardWorkflow('thirukkural')">
-          <div class="workflow-tab-icon">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/></svg>
-          </div>
-          <div class="workflow-tab-text">
-            <span class="workflow-tab-title">2. திருக்குறள் அரங்கம்</span>
-            <span class="workflow-tab-desc">133 அதிகாரங்கள் &amp; திரைப்படங்கள்</span>
-          </div>
+        <button type="button" class="zen-step-item" onclick="goToZenSlide(1)" data-step="1" role="tab" aria-selected="false">
+          <span class="step-num">2</span>
+          <span class="step-text">திருக்குறள் நெறி</span>
         </button>
-
-        <button type="button" class="workflow-tab-btn" data-workflow="hymns" onclick="setDashboardWorkflow('hymns')">
-          <div class="workflow-tab-icon">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-          </div>
-          <div class="workflow-tab-text">
-            <span class="workflow-tab-title">3. திருமுறைகள் &amp; சந்நிதிகள்</span>
-            <span class="workflow-tab-desc">604 புனிதப் பதிகங்கள் &amp; நாதம்</span>
-          </div>
+        <button type="button" class="zen-step-item" onclick="goToZenSlide(2)" data-step="2" role="tab" aria-selected="false">
+          <span class="step-num">3</span>
+          <span class="step-text">திருமுறைகள் &amp; நாதம்</span>
         </button>
-
-        <button type="button" class="workflow-tab-btn" data-workflow="dinacharya" onclick="setDashboardWorkflow('dinacharya')">
-          <div class="workflow-tab-icon">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div class="workflow-tab-text">
-            <span class="workflow-tab-title">4. ஆசிரம சாதனா</span>
-            <span class="workflow-tab-desc">நாற்பொழுது காலச்சக்கரம் &amp; யக்ஞம்</span>
-          </div>
+        <button type="button" class="zen-step-item" onclick="goToZenSlide(3)" data-step="3" role="tab" aria-selected="false">
+          <span class="step-num">4</span>
+          <span class="step-text">தினசரி சாதனா</span>
+        </button>
+        <button type="button" class="zen-step-item" onclick="goToZenSlide(4)" data-step="4" role="tab" aria-selected="false">
+          <span class="step-num">5</span>
+          <span class="step-text">உயர் சமாவர்த்தனம்</span>
         </button>
       </div>
 
-      <!-- 4. DRILL-DOWN CONTAINER & BREADCRUMBS -->
-      <div class="drilldown-container">
-        
-        <div class="dashboard-breadcrumb-bar">
-          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:var(--teal-bright);"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
-          <span class="breadcrumb-crumb" onclick="setDashboardWorkflow('curriculum')">முகப்பு</span>
-          <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-crumb active" id="dashCurrentCrumb">தடம் 1: குருகுலக் கல்வி நிலைகள் (Grades 1-12)</span>
-        </div>
+      <!-- Focused Stage Viewport (Shows Exactly ONE Content Card at a Time) -->
+      <div class="zen-stage-container">
+        <button type="button" class="zen-nav-arrow zen-arrow-prev" onclick="prevZenSlide()" aria-label="முந்தைய படிநிலை" title="முந்தைய சிந்தனை (Left Arrow)">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
 
-        <!-- PANEL 1: CURRICULUM DRILLDOWN -->
-        <div class="dashboard-workflow-panel" id="panel-curriculum">
-          <div class="drilldown-filter-row">
-            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-              <span style="font-size:0.88rem; font-weight:700; color:#ffffff;">பிரிவு:</span>
-              <div class="filter-pills-cluster">
-                <button type="button" class="drilldown-pill-btn tier-pill-btn active" data-tier="all" onclick="filterGradeTier('all')">அனைத்து நிலைகள் (1-12)</button>
-                <button type="button" class="drilldown-pill-btn tier-pill-btn" data-tier="foundation" onclick="filterGradeTier('foundation')">தொடக்க நிலை (1-4)</button>
-                <button type="button" class="drilldown-pill-btn tier-pill-btn" data-tier="middle" onclick="filterGradeTier('middle')">இடைநிலை (5-8)</button>
-                <button type="button" class="drilldown-pill-btn tier-pill-btn" data-tier="senior" onclick="filterGradeTier('senior')">உயர்நிலை (9-12)</button>
+        <div class="zen-cards-viewport">
+
+          <!-- SLIDE 0: LIVING EDUCATION (12 GRADES) -->
+          <article class="zen-content-card active" id="zenSlide-0">
+            <div class="zen-card-visual" onclick="location.href='kalvi.html'">
+              <img src="assets/images/lessons/disciples_under_sacred_tree.jpg" alt="குருகுலக் கல்வி" loading="lazy">
+            </div>
+            <div class="zen-card-content">
+              <span class="zen-card-tag">படிநிலை 1 • ஆசிரமக் கல்வி</span>
+              <h2 class="zen-card-title">குருகுல வாழ்வியல் கல்வி: 12 படிநிலைகள்</h2>
+              <div class="zen-card-quote">
+                &ldquo;ஏட்டுச் சுரைக்காய் அன்றி, உடலோம்பல், தாய்மொழி, கணிதம், அறிவியல், அறநெறி மற்றும் இல்லற தர்மத்தில் வாழ்ந்து காட்டும் கல்வி மரபு.&rdquo;
+              </div>
+              <p class="zen-card-desc">
+                பாலப் பருவம் முதல் முதிய பருவம் வரை ஒவ்வொரு நிலையிலும் மனிதன் பின்பற்ற வேண்டிய தர்ம நெறிகளையும், நவீன அறிவியல் ஆற்றலையும் ஒருங்கே பயிற்றுவிக்கும் ஆலமரத்தடி கல்வி நெறிமுறை.
+              </p>
+              <div class="zen-card-pills">
+                <span class="zen-card-pill">1-4: பாலப் பருவம் &amp; நற்பண்புகள்</span>
+                <span class="zen-card-pill">5-8: ஒழுக்கம் &amp; சாத்திரம்</span>
+                <span class="zen-card-pill">9-12: தத்துவ ஆய்வு</span>
+              </div>
+              <div class="zen-card-actions">
+                <a href="kalvi.html" class="zen-primary-btn">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  வாழ்வியல் மையம் காண்க &rarr;
+                </a>
+                <a href="school.html" class="zen-secondary-btn">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+                  இணையப் பள்ளி போர்டல்
+                </a>
               </div>
             </div>
-            <a href="syllabus.html" class="sheet-btn sheet-btn-view" style="font-size:0.84rem; padding:6px 14px; text-decoration:none;">முழுப் பாடத்திட்டம் &rarr;</a>
-          </div>
+          </article>
 
-          <div class="grade-selector-strip">
-            <div class="grade-pill-item active" data-grade="1" onclick="selectGradeDrilldown(1)"><span class="grade-pill-num">1</span><span class="grade-pill-sub">தரம் 1</span></div>
-            <div class="grade-pill-item" data-grade="2" onclick="selectGradeDrilldown(2)"><span class="grade-pill-num">2</span><span class="grade-pill-sub">தரம் 2</span></div>
-            <div class="grade-pill-item" data-grade="3" onclick="selectGradeDrilldown(3)"><span class="grade-pill-num">3</span><span class="grade-pill-sub">தரம் 3</span></div>
-            <div class="grade-pill-item" data-grade="4" onclick="selectGradeDrilldown(4)"><span class="grade-pill-num">4</span><span class="grade-pill-sub">தரம் 4</span></div>
-            <div class="grade-pill-item" data-grade="5" onclick="selectGradeDrilldown(5)"><span class="grade-pill-num">5</span><span class="grade-pill-sub">தரம் 5</span></div>
-            <div class="grade-pill-item" data-grade="6" onclick="selectGradeDrilldown(6)"><span class="grade-pill-num">6</span><span class="grade-pill-sub">தரம் 6</span></div>
-            <div class="grade-pill-item" data-grade="7" onclick="selectGradeDrilldown(7)"><span class="grade-pill-num">7</span><span class="grade-pill-sub">தரம் 7</span></div>
-            <div class="grade-pill-item" data-grade="8" onclick="selectGradeDrilldown(8)"><span class="grade-pill-num">8</span><span class="grade-pill-sub">தரம் 8</span></div>
-            <div class="grade-pill-item" data-grade="9" onclick="selectGradeDrilldown(9)"><span class="grade-pill-num">9</span><span class="grade-pill-sub">தரம் 9</span></div>
-            <div class="grade-pill-item" data-grade="10" onclick="selectGradeDrilldown(10)"><span class="grade-pill-num">10</span><span class="grade-pill-sub">தரம் 10</span></div>
-            <div class="grade-pill-item" data-grade="11" onclick="selectGradeDrilldown(11)"><span class="grade-pill-num">11</span><span class="grade-pill-sub">தரம் 11</span></div>
-            <div class="grade-pill-item" data-grade="12" onclick="selectGradeDrilldown(12)"><span class="grade-pill-num">12</span><span class="grade-pill-sub">தரம் 12</span></div>
-          </div>
-
-          <!-- DYNAMIC GRADE DETAILS PREVIEW CONTAINER -->
-          <div id="gradeDrilldownPreview"></div>
-        </div>
-
-        <!-- PANEL 2: THIRUKKURAL CINEMA HUB DRILLDOWN -->
-        <div class="dashboard-workflow-panel" id="panel-thirukkural" style="display:none;">
-          <div class="drilldown-filter-row">
-            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-              <span style="font-size:0.88rem; font-weight:700; color:#ffffff;">பால்:</span>
-              <div class="filter-pills-cluster">
-                <button type="button" class="drilldown-pill-btn kural-pal-pill active" data-pal="all" onclick="filterDashboardKuralPal('all')">அனைத்தும் (133)</button>
-                <button type="button" class="drilldown-pill-btn kural-pal-pill" data-pal="aram" onclick="filterDashboardKuralPal('aram')">அறத்துப்பால் (38)</button>
-                <button type="button" class="drilldown-pill-btn kural-pal-pill" data-pal="porul" onclick="filterDashboardKuralPal('porul')">பொருட்பால் (70)</button>
-                <button type="button" class="drilldown-pill-btn kural-pal-pill" data-pal="inbam" onclick="filterDashboardKuralPal('inbam')">காமத்துப்பால் (25)</button>
+          <!-- SLIDE 1: THIRUKKURAL -->
+          <article class="zen-content-card" id="zenSlide-1">
+            <div class="zen-card-visual" onclick="openPlayer('02C8glMmetw', 'கடவுள் வாழ்த்து - அதிகாரம் 1 | திருக்குறள்')">
+              <img src="https://i.ytimg.com/vi/02C8glMmetw/hqdefault.jpg" alt="கடவுள் வாழ்த்து - திருக்குறள்" loading="lazy">
+              <div class="zen-visual-play-badge">
+                <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               </div>
             </div>
-            <a href="thirukkural.html" class="sheet-btn sheet-btn-view" style="font-size:0.84rem; padding:6px 14px; text-decoration:none;">133 அதிகார அட்டவணை &rarr;</a>
-          </div>
-
-          <div class="drilldown-cards-grid">
-            <div class="drilldown-action-card kural-drilldown-card" data-pal="aram">
-              <div class="drilldown-card-thumb" onclick="openPlayer('02C8glMmetw', 'கடவுள் வாழ்த்து - அதிகாரம் 1 | திருக்குறள்')">
-                <img src="https://i.ytimg.com/vi/02C8glMmetw/hqdefault.jpg" alt="கடவுள் வாழ்த்து" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge">அறத்துப்பால் • அதி 1</div>
+            <div class="zen-card-content">
+              <span class="zen-card-tag">படிநிலை 2 • உலகப் பொதுமறை</span>
+              <h2 class="zen-card-title">அமுதத் திருக்குறள்: கடவுள் வாழ்த்து</h2>
+              <div class="zen-card-quote">
+                &ldquo;அகர முதல எழுத்தெல்லாம் ஆதி<br>பகவன் முதற்றே உலகு.&rdquo; (குறள் 1)
               </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>10 குறள்கள்</span><span>பாயிரவியல்</span></div>
-                <div class="drilldown-card-title">கடவுள் வாழ்த்து (Praise of God)</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">ஆதி பகவன்</span>
-                  <span class="drilldown-tag">மெய்யுணர்வு</span>
-                  <span class="drilldown-tag">குறள் திரைப்படம்</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">அதிகாரம் 1</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('02C8glMmetw', 'கடவுள் வாழ்த்து - அதிகாரம் 1 | திருக்குறள்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> திரையிடுக
-                  </button>
-                </div>
+              <p class="zen-card-desc">
+                எழுத்துக்களுக்கெல்லாம் 'அ'கரம் தொடக்கமாக இருப்பது போல, உலகிலுள்ள எல்லா உயிர்களுக்கும் ஆதி பகவனாகிய இறைவனே முழுமுதற் தொடக்கம். 133 அதிகாரங்களின் தத்துவப் பொக்கிஷம்.
+              </p>
+              <div class="zen-card-pills">
+                <span class="zen-card-pill">அறத்துப்பால் • 38 அதிகாரங்கள்</span>
+                <span class="zen-card-pill">பொருட்பால் • 70 அதிகாரங்கள்</span>
+                <span class="zen-card-pill">காமத்துப்பால் • 25 அதிகாரங்கள்</span>
               </div>
-            </div>
-
-            <div class="drilldown-action-card kural-drilldown-card" data-pal="aram">
-              <div class="drilldown-card-thumb" onclick="openPlayer('f1jxgAbXcdE', 'வான் சிறப்பு - அதிகாரம் 2 | திருக்குறள்')">
-                <img src="https://i.ytimg.com/vi/f1jxgAbXcdE/hqdefault.jpg" alt="வான் சிறப்பு" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge">அறத்துப்பால் • அதி 2</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>10 குறள்கள்</span><span>பாயிரவியல்</span></div>
-                <div class="drilldown-card-title">வான் சிறப்பு (The Blessing of Rain)</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">மழை வளம்</span>
-                  <span class="drilldown-tag">உயிர்க்கொடை</span>
-                  <span class="drilldown-tag">துப்பார்க்குத் துப்பாய</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">அதிகாரம் 2</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('f1jxgAbXcdE', 'வான் சிறப்பு - அதிகாரம் 2 | திருக்குறள்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> திரையிடுக
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="drilldown-action-card kural-drilldown-card" data-pal="aram">
-              <div class="drilldown-card-thumb" onclick="openPlayer('C05GEfkJZaY', 'இல்வாழ்க்கை - அதிகாரம் 5 | திருக்குறள்')">
-                <img src="https://i.ytimg.com/vi/C05GEfkJZaY/hqdefault.jpg" alt="இல்வாழ்க்கை" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge">அறத்துப்பால் • அதி 5</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>10 குறள்கள்</span><span>இல்லறவியல்</span></div>
-                <div class="drilldown-card-title">இல்வாழ்க்கை (Domestic Life &amp; Grihastha)</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">தர்ம வாழ்வு</span>
-                  <span class="drilldown-tag">இல்லற நிப்பந்தனை</span>
-                  <span class="drilldown-tag">சான்றோன் நெறி</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">அதிகாரம் 5</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('C05GEfkJZaY', 'இல்வாழ்க்கை - அதிகாரம் 5 | திருக்குறள்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> திரையிடுக
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="drilldown-action-card kural-drilldown-card" data-pal="porul">
-              <div class="drilldown-card-thumb" onclick="openPlayer('KZxknhbVIk0', 'கல்வி - அதிகாரம் 40 | திருக்குறள்')">
-                <img src="https://i.ytimg.com/vi/KZxknhbVIk0/hqdefault.jpg" alt="கல்வி" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge" style="border-color: rgba(56,189,248,0.4);">பொருட்பால் • அதி 40</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>10 குறள்கள்</span><span>அரசியல்</span></div>
-                <div class="drilldown-card-title">கல்வி (Learning &amp; Vidhya)</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">கற்க கசடற</span>
-                  <span class="drilldown-tag">எண்ணும் எழுத்தும்</span>
-                  <span class="drilldown-tag">ஞானக் கண்</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">அதிகாரம் 40</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('KZxknhbVIk0', 'கல்வி - அதிகாரம் 40 | திருக்குறள்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> திரையிடுக
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="drilldown-action-card kural-drilldown-card" data-pal="porul">
-              <div class="drilldown-card-thumb" onclick="openPlayer('XN5ENUbmSOE', 'ஊக்கமுடைமை - அதிகாரம் 60 | திருக்குறள்')">
-                <img src="https://i.ytimg.com/vi/XN5ENUbmSOE/hqdefault.jpg" alt="ஊக்கமுடைமை" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge" style="border-color: rgba(56,189,248,0.4);">பொருட்பால் • அதி 60</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>10 குறள்கள்</span><span>அங்கவியல்</span></div>
-                <div class="drilldown-card-title">ஊக்கமுடைமை (Energy &amp; Perseverance)</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">மனத்திண்மை</span>
-                  <span class="drilldown-tag">விடாமுயற்சி</span>
-                  <span class="drilldown-tag">வெள்ளத்தனைய</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">அதிகாரம் 60</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('XN5ENUbmSOE', 'ஊக்கமுடைமை - அதிகாரம் 60 | திருக்குறள்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> திரையிடுக
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="drilldown-action-card kural-drilldown-card" data-pal="inbam">
-              <div class="drilldown-card-thumb" onclick="openPlayer('7wJJCQrYo04', 'அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் | திருக்குறள்')">
-                <img src="https://i.ytimg.com/vi/7wJJCQrYo04/hqdefault.jpg" alt="நெஞ்சறிவுறுத்தல்" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge" style="border-color: rgba(236,72,153,0.4);">காமத்துப்பால் • அதி 125</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>10 குறள்கள்</span><span>களவியல்</span></div>
-                <div class="drilldown-card-title">நெஞ்சறிவுறுத்தல் (Remonstrance with Heart)</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">அன்பின் மாண்பு</span>
-                  <span class="drilldown-tag">இல்லறப் பேரின்பம்</span>
-                  <span class="drilldown-tag">குறள் திரைப்படம்</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">அதிகாரம் 125</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('7wJJCQrYo04', 'அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் | திருக்குறள்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> திரையிடுக
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PANEL 3: SACRED HYMNS & SANCTORUMS DRILLDOWN -->
-        <div class="dashboard-workflow-panel" id="panel-hymns" style="display:none;">
-          <div class="drilldown-filter-row">
-            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-              <span style="font-size:0.88rem; font-weight:700; color:#ffffff;">மரபு:</span>
-              <div class="filter-pills-cluster">
-                <button type="button" class="drilldown-pill-btn hymn-tradition-pill active" data-tradition="all" onclick="filterDashboardHymns('all')">அனைத்தும் (604)</button>
-                <button type="button" class="drilldown-pill-btn hymn-tradition-pill" data-tradition="shiva" onclick="filterDashboardHymns('shiva')">சிவ நெறி (பன்னிரு திருமுறை)</button>
-                <button type="button" class="drilldown-pill-btn hymn-tradition-pill" data-tradition="murugan" onclick="filterDashboardHymns('murugan')">முருகன் (திருப்புகழ்)</button>
-                <button type="button" class="drilldown-pill-btn hymn-tradition-pill" data-tradition="vallalar" onclick="filterDashboardHymns('vallalar')">வள்ளலார் (திருவருட்பா)</button>
-                <button type="button" class="drilldown-pill-btn hymn-tradition-pill" data-tradition="vishnu" onclick="filterDashboardHymns('vishnu')">வைணவம் (பிரபந்தம்)</button>
-                <button type="button" class="drilldown-pill-btn hymn-tradition-pill" data-tradition="amman" onclick="filterDashboardHymns('amman')">அம்பாள் (அபிராமி)</button>
-              </div>
-            </div>
-            <a href="youtube.html" class="sheet-btn sheet-btn-view" style="font-size:0.84rem; padding:6px 14px; text-decoration:none;">604 சுவடிகள் தேடுதல் &rarr;</a>
-          </div>
-
-          <div class="drilldown-cards-grid">
-            <div class="drilldown-action-card hymn-drilldown-card" data-tradition="shiva">
-              <div class="drilldown-card-thumb" onclick="openPlayer('0SUn5igNEE0', 'தேவாரம்: நமச்சிவாயப் பதிகம் - திருஞானசம்பந்தர்')">
-                <img src="https://i.ytimg.com/vi/0SUn5igNEE0/hqdefault.jpg" alt="துஞ்சலும் துஞ்சல்" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge" style="border-color: rgba(168,85,247,0.4);">முதலாம் திருமுறை • சம்பந்தர்</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>தேவாரம்</span><span>திருவையாறு தலம்</span></div>
-                <div class="drilldown-card-title">துஞ்சலும் துஞ்சல் இல்லாத போழ்தினும் (நமச்சிவாயப் பதிகம்)</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">நமச்சிவாய</span>
-                  <span class="drilldown-tag">திருநெறிப் பதிகம்</span>
-                  <span class="drilldown-tag">ஞானப்பால்</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">திருமுறை 1</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('0SUn5igNEE0', 'தேவாரம்: நமச்சிவாயப் பதிகம் - திருஞானசம்பந்தர்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> கேளுங்கள்
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="drilldown-action-card hymn-drilldown-card" data-tradition="shiva">
-              <div class="drilldown-card-thumb" onclick="openPlayer('40ML9b--tg4', 'திருவாசகம்: சிவபுராணம் - நமச்சிவாய வாஅழ்க')">
-                <img src="https://i.ytimg.com/vi/40ML9b--tg4/hqdefault.jpg" alt="சிவபுராணம்" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge" style="border-color: rgba(168,85,247,0.4);">எட்டாம் திருமுறை • மாணிக்கவாசகர்</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>திருவாசகம்</span><span>சிவபுராணம்</span></div>
-                <div class="drilldown-card-title">நமச்சிவாய வாஅழ்க நாதன்தாள் வாழ்க</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">திருவாசக உருகல்</span>
-                  <span class="drilldown-tag">பிறவி அறுத்தல்</span>
-                  <span class="drilldown-tag">ஈசன் திருவடி</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">திருமுறை 8</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('40ML9b--tg4', 'திருவாசகம்: சிவபுராணம் - நமச்சிவாய வாஅழ்க')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> கேளுங்கள்
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="drilldown-action-card hymn-drilldown-card" data-tradition="murugan">
-              <div class="drilldown-card-thumb" onclick="openPlayer('3oJ2OPG-WCs', 'திருப்புகழ்: முத்தைத்தரு பத்தித் திருநகை')">
-                <img src="https://i.ytimg.com/vi/3oJ2OPG-WCs/hqdefault.jpg" alt="முத்தைத்தரு பத்தி" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge" style="border-color: rgba(245,158,11,0.4);">திருப்புகழ் • அருணகிரிநாதர்</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>கௌமாரம்</span><span>சந்தப் பனுவல்</span></div>
-                <div class="drilldown-card-title">முத்தைத்தரு பத்தித் திருநகை அத்திக்கிறை</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">தாள லயம்</span>
-                  <span class="drilldown-tag">முருகப் பரம்பொருள்</span>
-                  <span class="drilldown-tag">அருணகிரி திருப்புகழ்</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">திருப்புகழ்</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('3oJ2OPG-WCs', 'திருப்புகழ்: முத்தைத்தரு பத்தித் திருநகை')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> கேளுங்கள்
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="drilldown-action-card hymn-drilldown-card" data-tradition="vallalar">
-              <div class="drilldown-card-thumb" onclick="openPlayer('-CsF4lE2UfA', 'வள்ளலார் திருவருட்பா: அருட்பெருஞ்ஜோதி அகவல்')">
-                <img src="https://i.ytimg.com/vi/-CsF4lE2UfA/hqdefault.jpg" alt="அருட்பெருஞ்ஜோதி அகவல்" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge" style="border-color: rgba(45,212,191,0.4);">திருவருட்பா • வடலூர் வள்ளலார்</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>சுத்த சன்மார்க்கம்</span><span>வடலூர் தலம்</span></div>
-                <div class="drilldown-card-title">அருட்பெருஞ்ஜோதி தனிப்பெருங்கருணை அகவல்</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">ஜீவகாருண்யம்</span>
-                  <span class="drilldown-tag">ஜோதி வழிபாடு</span>
-                  <span class="drilldown-tag">மரணமில்லாப் பெருவாழ்வு</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">திருவருட்பா</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('-CsF4lE2UfA', 'வள்ளலார் திருவருட்பா: அருட்பெருஞ்ஜோதி அகவல்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> கேளுங்கள்
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="drilldown-action-card hymn-drilldown-card" data-tradition="vishnu">
-              <div class="drilldown-card-thumb" onclick="openPlayer('QH-xL37NmGM', 'திருப்பாவை: மார்கழித் திங்கள் - ஆண்டாள்')">
-                <img src="https://i.ytimg.com/vi/QH-xL37NmGM/hqdefault.jpg" alt="மார்கழித் திங்கள்" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge" style="border-color: rgba(59,130,246,0.4);">நாலாயிர திவ்யப் பிரபந்தம் • ஆண்டாள்</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>திவ்யப் பிரபந்தம்</span><span>வைணவ நெறி</span></div>
-                <div class="drilldown-card-title">மார்கழித் திங்கள் மதிநிறைந்த நன்னாளால் (திருப்பாவை)</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">மார்கழி நோன்பு</span>
-                  <span class="drilldown-tag">கண்ணன் திருவடி</span>
-                  <span class="drilldown-tag">ஆண்டாள் பாசுரம்</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">திருப்பாவை 1</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('QH-xL37NmGM', 'திருப்பாவை: மார்கழித் திங்கள் - ஆண்டாள்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> கேளுங்கள்
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="drilldown-action-card hymn-drilldown-card" data-tradition="amman">
-              <div class="drilldown-card-thumb" onclick="openPlayer('0k9CZLNA2TY', 'அபிராமி அந்தாதி: தனம் தரும் கல்வி தரும்')">
-                <img src="https://i.ytimg.com/vi/0k9CZLNA2TY/hqdefault.jpg" alt="அபிராமி அந்தாதி" loading="lazy">
-                <div class="drilldown-play-overlay"><svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                <div class="drilldown-badge" style="border-color: rgba(236,72,153,0.4);">அபிராமி அந்தாதி • அபிராமி பட்டர்</div>
-              </div>
-              <div class="drilldown-card-body">
-                <div class="drilldown-card-meta"><span>சாக்த நெறி</span><span>திருக்கடையூர்</span></div>
-                <div class="drilldown-card-title">தனம் தரும் கல்வி தரும் ஒருநாளும் தளர்வு அறியா</div>
-                <div class="drilldown-card-tags">
-                  <span class="drilldown-tag">அம்பாள் அருள்</span>
-                  <span class="drilldown-tag">சகல சவுபாக்கியம்</span>
-                  <span class="drilldown-tag">அந்தாதி மாலை</span>
-                </div>
-                <div class="drilldown-card-footer">
-                  <span style="font-size:0.75rem; color:#94a3b8;">அபிராமி அந்தாதி</span>
-                  <button type="button" class="card-play-btn" onclick="openPlayer('0k9CZLNA2TY', 'அபிராமி அந்தாதி: தனம் தரும் கல்வி தரும்')">
-                    <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> கேளுங்கள்
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PANEL 4: DINACHARYA & PANCHA YAGNA DRILLDOWN -->
-        <div class="dashboard-workflow-panel" id="panel-dinacharya" style="display:none;">
-          <div class="sadhana-dashboard-grid">
-            <!-- Left: 4 Yamams -->
-            <div>
-              <h3 style="color:#ffffff; font-size:1.15rem; font-weight:700; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
-                <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                ஆசிரம நாற்பொழுது கால அட்டவணை (4 Yamams)
-              </h3>
-              
-              <div class="yama-card-interactive" id="yamaInteractive-0" onclick="playAshramBellAudio(1)">
-                <div>
-                  <div style="font-size:0.75rem; color:var(--teal-bright); font-weight:700; text-transform:uppercase;">காலை 04:30 - 07:00 • பிரம்ம முகூர்த்தம்</div>
-                  <div style="font-size:1.02rem; font-weight:700; color:#ffffff; margin:3px 0;">1. உஷத் காலம் — தியானம் &amp; திருமுறை</div>
-                  <p style="font-size:0.84rem; color:#94a3b8; margin:0; line-height:1.4;">உடலோம்பல், ஓங்கார உச்சாடனம், காயத்ரி ஜபம், திருமுறை பாராயணம்.</p>
-                </div>
-                <button type="button" class="card-play-btn" style="flex-shrink:0;">
-                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg> மணி ஒலி
+              <div class="zen-card-actions">
+                <button type="button" class="zen-primary-btn" onclick="openPlayer('02C8glMmetw', 'கடவுள் வாழ்த்து - அதிகாரம் 1 | திருக்குறள்')">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  குறள் திரைப்படம் திரையிடுக
                 </button>
-              </div>
-
-              <div class="yama-card-interactive" id="yamaInteractive-1" onclick="playAshramBellAudio(2)">
-                <div>
-                  <div style="font-size:0.75rem; color:var(--blue-cyan); font-weight:700; text-transform:uppercase;">காலை 07:00 - மதியம் 12:00 • வித்யாபீடம்</div>
-                  <div style="font-size:1.02rem; font-weight:700; color:#ffffff; margin:3px 0;">2. வித்யா காலம் — தர்மக் கல்வி &amp; சாத்திரம்</div>
-                  <p style="font-size:0.84rem; color:#94a3b8; margin:0; line-height:1.4;">சாத்திர ஆய்வு, கணிதம், அறிவியல், திருக்குறள் சுவடிகள் பயிற்சி.</p>
-                </div>
-                <button type="button" class="card-play-btn" style="flex-shrink:0;">
-                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg> மணி ஒலி
-                </button>
-              </div>
-
-              <div class="yama-card-interactive" id="yamaInteractive-2" onclick="playAshramBellAudio(3)">
-                <div>
-                  <div style="font-size:0.75rem; color:#f59e0b; font-weight:700; text-transform:uppercase;">மதியம் 12:00 - மாலை 05:30 • அன்னதானம் &amp; கர்ம யோகம்</div>
-                  <div style="font-size:1.02rem; font-weight:700; color:#ffffff; margin:3px 0;">3. சேவா காலம் — அன்னதானம் &amp; இல்லறக் கடமை</div>
-                  <p style="font-size:0.84rem; color:#94a3b8; margin:0; line-height:1.4;">காயகல்ப சாத்விக போஜனம், பசு சம்ரக்ஷணம், விருந்தோம்பல் சேவை.</p>
-                </div>
-                <button type="button" class="card-play-btn" style="flex-shrink:0;">
-                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg> மணி ஒலி
-                </button>
-              </div>
-
-              <div class="yama-card-interactive" id="yamaInteractive-3" onclick="playAshramBellAudio(4)">
-                <div>
-                  <div style="font-size:0.75rem; color:#c084fc; font-weight:700; text-transform:uppercase;">மாலை 05:30 - இரவு 08:30+ • தீபாராதனை &amp; நிஷ்டை</div>
-                  <div style="font-size:1.02rem; font-weight:700; color:#ffffff; margin:3px 0;">4. சந்தியா காலம் — சாயரக்ஷை &amp; திருவிளக்கு</div>
-                  <p style="font-size:0.84rem; color:#94a3b8; margin:0; line-height:1.4;">குடும்பத்துடன் விளக்கேற்றி திருவாசகம் பாடுதல், சான்றோர் சத்சங்கம்.</p>
-                </div>
-                <button type="button" class="card-play-btn" style="flex-shrink:0;">
-                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg> மணி ஒலி
-                </button>
+                <a href="thirukkural.html" class="zen-secondary-btn">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/></svg>
+                  133 அதிகார அட்டவணை
+                </a>
               </div>
             </div>
+          </article>
 
-            <!-- Right: Pancha Mahayajna Interactive Checklist -->
-            <div>
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-                <h3 style="color:#ffffff; font-size:1.15rem; font-weight:700; margin:0; display:flex; align-items:center; gap:8px;">
-                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-                  பஞ்ச மகாயக்ஞ தினசரி சாதனா
-                </h3>
-                <button type="button" onclick="resetDailyYagnas()" style="background:none; border:none; color:#94a3b8; font-size:0.8rem; cursor:pointer; text-decoration:underline;">மீட்டமைக்க</button>
-              </div>
-
-              <div class="sadhana-progress-bar-wrap">
-                <div class="sadhana-progress-fill" id="yagnaProgressFill"></div>
-              </div>
-              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:#94a3b8; margin-top:-6px; margin-bottom:14px;">
-                <span>தினசரி 5 கடமைகள்</span>
-                <span id="yagnaDoneCount" style="color:var(--teal-bright); font-weight:700;">0/5 (0%)</span>
-              </div>
-
-              <div id="yagnaItem-0" class="yagna-checklist-item" onclick="toggleYagnaCheck(0)">
-                <div class="yagna-check-box" id="yagnaBox-0"></div>
-                <div class="yagna-item-text">
-                  <div class="yagna-item-title">1. பிரம்ம யக்ஞம் (வேதம் &amp; ஆசான் வழிபாடு)</div>
-                  <div class="yagna-item-desc">திருமுறை பாராயணம், திருக்குறள் ஓதுதல், நல்லறிவை வளர்த்தல்</div>
-                </div>
-              </div>
-
-              <div id="yagnaItem-1" class="yagna-checklist-item" onclick="toggleYagnaCheck(1)">
-                <div class="yagna-check-box" id="yagnaBox-1"></div>
-                <div class="yagna-item-text">
-                  <div class="yagna-item-title">2. தேவ யக்ஞம் (இறை வழிபாடு &amp; தூப தீபம்)</div>
-                  <div class="yagna-item-desc">திருவிளக்கேற்றி தூய நறுமணம் கொண்டு இறைவனை வணங்குதல்</div>
-                </div>
-              </div>
-
-              <div id="yagnaItem-2" class="yagna-checklist-item" onclick="toggleYagnaCheck(2)">
-                <div class="yagna-check-box" id="yagnaBox-2"></div>
-                <div class="yagna-item-text">
-                  <div class="yagna-item-title">3. பித்ரு யக்ஞம் (முன்னோர் &amp; பெற்றோர் பணிவு)</div>
-                  <div class="yagna-item-desc">பெற்றோரை வணங்குதல், முதியோரை ஆதரித்தல், நன்றியுணர்ச்சி</div>
-                </div>
-              </div>
-
-              <div id="yagnaItem-3" class="yagna-checklist-item" onclick="toggleYagnaCheck(3)">
-                <div class="yagna-check-box" id="yagnaBox-3"></div>
-                <div class="yagna-item-text">
-                  <div class="yagna-item-title">4. மனுஷ்ய யக்ஞம் (அதிதி உபசரிப்பு &amp; அன்னதானம்)</div>
-                  <div class="yagna-item-desc">பசித்தோருக்கு உணவிடுதல், இல்லற விருந்தோம்பல், உதவி செய்தல்</div>
-                </div>
-              </div>
-
-              <div id="yagnaItem-4" class="yagna-checklist-item" onclick="toggleYagnaCheck(4)">
-                <div class="yagna-check-box" id="yagnaBox-4"></div>
-                <div class="yagna-item-text">
-                  <div class="yagna-item-title">5. பூத யக்ஞம் (பறவை, பசு, எறும்பு, ஜீவகாருண்யம்)</div>
-                  <div class="yagna-item-desc">காக்கை, சிட்டுக்குருவிக்கு தானியம், எறும்புக்கு மாக்கோலம், பசு சம்ரக்ஷணம்</div>
-                </div>
+          <!-- SLIDE 2: SACRED HYMNS -->
+          <article class="zen-content-card" id="zenSlide-2">
+            <div class="zen-card-visual" onclick="openPlayer('0SUn5igNEE0', 'தேவாரம்: நமச்சிவாயப் பதிகம் - திருஞானசம்பந்தர்')">
+              <img src="https://i.ytimg.com/vi/0SUn5igNEE0/hqdefault.jpg" alt="நமச்சிவாயப் பதிகம்" loading="lazy">
+              <div class="zen-visual-play-badge">
+                <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               </div>
             </div>
-          </div>
+            <div class="zen-card-content">
+              <span class="zen-card-tag">படிநிலை 3 • இறையருள் &amp; நாதம்</span>
+              <h2 class="zen-card-title">பன்னிரு திருமுறைகள்: நமச்சிவாயப் பதிகம்</h2>
+              <div class="zen-card-quote">
+                &ldquo;துஞ்சலும் துஞ்சல் இல்லாத போழ்தினும்<br>நெஞ்சகம் நைந்து நினைமின் நாள்தோறும்...&rdquo;
+              </div>
+              <p class="zen-card-desc">
+                திருஞானசம்பந்தரின் அமுதப் பதிகம். தூங்கும் போதும் விழிப்பு நிலையிலும் மனமுருகி ஈசனை நினைப்பவர்களுக்கு எந்தத் தீங்கும் அணுகாது நற்கதி அருளும் மந்திரப் பதிகம்.
+              </p>
+              <div class="zen-card-pills">
+                <span class="zen-card-pill">தேவாரம் &amp; திருவாசகம்</span>
+                <span class="zen-card-pill">திருப்புகழ் &amp; திவ்யப் பிரபந்தம்</span>
+                <span class="zen-card-pill">604 புனிதப் பதிகங்கள்</span>
+              </div>
+              <div class="zen-card-actions">
+                <button type="button" class="zen-primary-btn" onclick="openPlayer('0SUn5igNEE0', 'தேவாரம்: நமச்சிவாயப் பதிகம் - திருஞானசம்பந்தர்')">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  பதிகம் கேளுங்கள்
+                </button>
+                <a href="saiva-neri.html" class="zen-secondary-btn">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9.5"/><path d="M11.5 7.5c-1.8 0-2.8 1.2-2.8 2.5 0 1.8 2.5 2.2 2.5 4"/></svg>
+                  சைவ சந்நிதி
+                </a>
+                <a href="irai-isai-virundhu.html" class="zen-secondary-btn">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                  இறை இசை விருந்து
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SLIDE 3: DAILY PRACTICE (PANCHA YAGNA) -->
+          <article class="zen-content-card" id="zenSlide-3">
+            <div class="zen-card-visual" onclick="location.href='classes.html'">
+              <img src="assets/images/lessons/children_feeding_creatures.jpg" alt="பஞ்ச மகாயக்ஞம்" loading="lazy">
+            </div>
+            <div class="zen-card-content">
+              <span class="zen-card-tag">படிநிலை 4 • இல்லற தினசரி ஒழுக்கம்</span>
+              <h2 class="zen-card-title">பஞ்ச மகாயக்ஞம்: தினசரி 5 கடமைகள்</h2>
+              <div class="zen-card-quote">
+                &ldquo;பிரம்ம, தேவ, பித்ரு, மனுஷ்ய, பூத யக்ஞங்களே இல்லறத்தானை முக்தி நிலைக்கு உயர்த்தும் அதிஉன்னத தினசரி சாதனா.&rdquo;
+              </div>
+              <p class="zen-card-desc">
+                ஆசிரம தினசரி ஒழுங்குமுறை: நல்லறிவை வளர்த்தல் (பிரம்மம்), தூப தீப வழிபாடு (தேவம்), முன்னோர்-பெற்றோர் பணிவு (பித்ரு), பசித்தோர்க்கு உணவிடல் (மனுஷ்யம்), மற்றும் பறவை, பசு, எறும்புகளுக்கு உணவளிக்கும் ஜீவகாருண்யம் (பூதம்).
+              </p>
+              <div class="zen-card-pills">
+                <span class="zen-card-pill">பிரம்ம யக்ஞம் (கல்வி)</span>
+                <span class="zen-card-pill">மனுஷ்ய யக்ஞம் (அன்னதானம்)</span>
+                <span class="zen-card-pill">பூத யக்ஞம் (ஜீவகாருண்யம்)</span>
+              </div>
+              <div class="zen-card-actions">
+                <a href="classes.html" class="zen-primary-btn">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  தினசரி சாதனா அட்டவணை &rarr;
+                </a>
+                <a href="panpaadu.html" class="zen-secondary-btn">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  தமிழர் பண்பாடு &amp; விழாக்கள்
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SLIDE 4: HIGHER STUDIES & SAMAVARTHANAM -->
+          <article class="zen-content-card" id="zenSlide-4">
+            <div class="zen-card-visual" onclick="location.href='higher-studies.html'">
+              <img src="assets/images/lessons/grade12_grihastha_nirvana.jpg" alt="இல்லற நிர்வாணம்" loading="lazy">
+            </div>
+            <div class="zen-card-content">
+              <span class="zen-card-tag">படிநிலை 5 • சமாவர்த்தனம் &amp; முழுமை</span>
+              <h2 class="zen-card-title">உயர்கல்வி &amp; இல்லறப் பெருவாழ்வு</h2>
+              <div class="zen-card-quote">
+                &ldquo;12 கல்வி நிலைகளையும் நிறைவு செய்து உலகிற்குத் திரும்பி, அறநெறியில் உன்னத குடும்பத்தை வழிநடத்துதலே ஆசிரமத்தின் பேரிலக்கு.&rdquo;
+              </div>
+              <p class="zen-card-desc">
+                சாத்திர ஆய்வு, வேத-நவீன அறிவியல் இணைப்பு, தத்துவ விவேகம் மற்றும் இல்லற நிர்வாணம். சமூகத்தில் ஒரு சான்றோனாக, பண்பட்ட குடும்பத் தலைவனாக நின்று உலகிற்கு நல்வழிகாட்டும் வாழ்வியல் சமாவர்த்தனம்.
+              </p>
+              <div class="zen-card-pills">
+                <span class="zen-card-pill">சாத்திர சிந்தனை</span>
+                <span class="zen-card-pill">வேத-நவீன உயர்கல்வி</span>
+                <span class="zen-card-pill">இல்லற முக்தி</span>
+              </div>
+              <div class="zen-card-actions">
+                <a href="higher-studies.html" class="zen-primary-btn">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/></svg>
+                  உயர்கல்வி விபரம் &rarr;
+                </a>
+                <a href="syllabus.html" class="zen-secondary-btn">
+                  <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                  முழுப் பாடத்திட்டம்
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
 
+        <button type="button" class="zen-nav-arrow zen-arrow-next" onclick="nextZenSlide()" aria-label="அடுத்த படிநிலை" title="அடுத்த சிந்தனை (Right Arrow)">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
       </div>
 
-      <!-- 5. ASHRAM GRADUATION & BENEDICTION CALLOUT -->
-      <div style="background: linear-gradient(135deg, rgba(8, 20, 36, 0.95), rgba(4, 13, 26, 0.95)); border: 1px solid rgba(45, 212, 191, 0.25); border-radius: 14px; padding: 20px 24px; margin-top: 26px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
-        <div style="display:flex; align-items:center; gap:16px; max-width: 700px;">
-          <img src="assets/images/lessons/stories/grade12_nachiketas_return_enlightened.jpg" alt="சமாவர்த்தனம் முத்திரை" style="width:48px;height:48px;border-radius:10px;border:1px solid var(--border-gold);" loading="lazy">
-          <div>
-            <h4 style="color:#ffffff; font-size:1.1rem; font-weight:800; margin:0 0 4px; display:flex; align-items:center; gap:8px;">
-              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-              ஆசிரம சமாவர்த்தனம் &amp; பட்டப் படிப்புகள் (Higher Studies)
-            </h4>
-            <p style="color:#cbd5e1; font-size:0.88rem; margin:0; line-height:1.5;">
-              12 நிலைகளையும் நிறைவு செய்து உலகிற்குத் திரும்பி உன்னத குடும்பத்தை வழிநடத்துதலே முக்திக்கு அதிவேகப் பாதை.
-            </p>
-          </div>
+      <!-- Slide counter & keyboard guide -->
+      <div class="zen-stage-footer">
+        <div class="zen-counter-indicator">
+          படிநிலை <span id="zenCurrentIndex">1</span> / <span>5</span>
         </div>
-        <div style="display:flex; gap:10px;">
-          <a href="higher-studies.html" class="sheet-btn sheet-btn-view" style="font-weight:700; padding:9px 18px; text-decoration:none; font-size:0.88rem;">
-            தீட்சை &amp; சான்றிதழ் &rarr;
-          </a>
+        <div class="zen-keyboard-hint">
+          விசைப்பலகை: <kbd>&larr;</kbd> முந்தையது &bull; <kbd>&rarr;</kbd> அடுத்தது
         </div>
       </div>
+
+      <!-- Clean Direct Gateways (Single Line, Discreet) -->
+      <nav class="zen-quick-gateways" aria-label="விரைவு வழிகாட்டல்">
+        <a href="kalvi.html" class="zen-gate-pill">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/></svg>
+          <span>12 கல்வி நிலைகள்</span>
+        </a>
+        <a href="thirukkural.html" class="zen-gate-pill">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-7"/><path d="M19 18a3 3 0 0 0 0-6H6a2 2 0 0 0 0 4h12"/></svg>
+          <span>திருக்குறள் (1330)</span>
+        </a>
+        <a href="saiva-neri.html" class="zen-gate-pill">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9.5"/><path d="M11.5 7.5c-1.8 0-2.8 1.2-2.8 2.5 0 1.8 2.5 2.2 2.5 4"/></svg>
+          <span>சைவ நெறி &amp; தேவாரம்</span>
+        </a>
+        <a href="irai-isai-virundhu.html" class="zen-gate-pill">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          <span>இறை இசை (600+)</span>
+        </a>
+        <a href="higher-studies.html" class="zen-gate-pill">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/></svg>
+          <span>உயர்கல்வி &amp; சமாவர்த்தனம்</span>
+        </a>
+      </nav>
+
     </div>
 
   </main>

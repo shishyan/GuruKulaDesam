@@ -42,3 +42,4 @@ for page in pages:
         print(f"Added moola-nool.html to {page}")
     else:
         print(f"Could not find target in {page}")
+

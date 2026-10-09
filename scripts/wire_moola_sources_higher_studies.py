@@ -351,3 +351,4 @@ with open(HTML_PATH, 'w', encoding='utf-8') as f:
     f.write(content)
 
 print(f"Successfully updated {HTML_PATH}")
+

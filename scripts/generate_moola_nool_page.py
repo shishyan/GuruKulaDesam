@@ -851,3 +851,4 @@ with open(OUTPUT_PAGE, 'w', encoding='utf-8') as f:
     f.write(HTML_CONTENT)
 
 print(f"Successfully created {OUTPUT_PAGE}")
+

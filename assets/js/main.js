@@ -3223,5 +3223,76 @@ document.addEventListener('DOMContentLoaded', () => {
     // Detect Yamam
     detectActiveYamam();
   }
+
+  if (document.querySelector('.zen-sanctuary-shell')) {
+    goToZenSlide(0);
+  }
 });
+
+// ==========================================================================
+// ZEN SANCTUARY FOCUS CONTROLLER — ONE CONTENT AT A TIME
+// ==========================================================================
+let currentZenIndex = 0;
+const totalZenSlides = 5;
+
+function goToZenSlide(index) {
+  if (index < 0) index = totalZenSlides - 1;
+  if (index >= totalZenSlides) index = 0;
+  currentZenIndex = index;
+
+  for (let i = 0; i < totalZenSlides; i++) {
+    const card = document.getElementById('zenSlide-' + i);
+    if (card) {
+      if (i === currentZenIndex) {
+        card.classList.add('active');
+      } else {
+        card.classList.remove('active');
+      }
+    }
+  }
+
+  document.querySelectorAll('.zen-step-item').forEach((btn, idx) => {
+    if (idx === currentZenIndex) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  const counterEl = document.getElementById('zenCurrentIndex');
+  if (counterEl) {
+    counterEl.textContent = (currentZenIndex + 1);
+  }
+
+  const topBarCrumb = document.getElementById('topBarCurrentCrumb');
+  const zenTitles = [
+    'வாழ்வியல் கல்வி (12 நிலைகள்)',
+    'அமுதத் திருக்குறள் நெறி',
+    'திருமுறைகள் & இறை நாதம்',
+    'தினசரி ஆசிரம சாதனா',
+    'உயர்கல்வி & சமாவர்த்தனம்'
+  ];
+  if (topBarCrumb) {
+    topBarCrumb.textContent = zenTitles[currentZenIndex] || 'முகப்பு';
+  }
+}
+
+function nextZenSlide() {
+  goToZenSlide(currentZenIndex + 1);
+}
+
+function prevZenSlide() {
+  goToZenSlide(currentZenIndex - 1);
+}
+
+window.addEventListener('keydown', function(e) {
+  if (document.querySelector('.zen-sanctuary-shell')) {
+    if (e.key === 'ArrowRight') {
+      nextZenSlide();
+    } else if (e.key === 'ArrowLeft') {
+      prevZenSlide();
+    }
+  }
+});
+
 
