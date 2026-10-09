@@ -1,33 +1,75 @@
-# Google Flow Cinematic Video Plan — கந்தர் அலங்காரம்: நாள் என் செய்யும்
+# Google Flow Cinematic Video Plan — Kandhar Alangaram: Naal En Seyyum
 **English Title:** Kandhar Alangaram: Naal En Seyyum  
 **Track ID:** `MTvDDAQCFmk`  
 **Category:** MURUGAN  
+**Scripture:** கந்தர் அலங்காரம் (அருணகிரிநாதர் அருளியது)  
+**Verse 38:**
+> "நாள் என் செய்யும்? வினைதான் என் செய்யும்? எனை நாடி வந்த  
+> கோள் என் செய்யும்? கொடுங் கூற்று என் செய்யும்? குமரேசர் இரு  
+> தாளும், சிலம்பும், சதங்கையும், தண்டையும், சண்முகமும்,  
+> தோளும், கடம்பும், எனக்கு முன்னே வந்து தோன்றிடினே!"  
 **Soundtrack:** Original master release from Guru Kula Desam (`MTvDDAQCFmk.m4a`).  
-**Visual Grammar:** Photorealistic 16:9, 24 fps, authentic South Indian spiritual temple aesthetic, 8k resolution.
+**Visual Grammar:** Photorealistic 16:9, 24 fps, authentic South Indian Dravidian Vedic temple aesthetic, 8k resolution, cinematic lighting, zero text overlays.
 
 ---
 
 ## Locked Continuity Bible
-- **Atmosphere:** Sacred hilltop breezes, morning mist over flowering kadamba and marukozhundhu groves, bronze kuthuvilakku glow, fragrant sandal and rose water mist.
-- **Architecture:** Ancient Tamil Sangam hill-shrine, monolithic granite steps, carved peacock motifs, sanctum threshold.
-- **Lighting:** Golden sunrise amber light breaking through emerald mountain foliage, soft glowing dawn.
-- **Hard Exclusions:** No text, no subtitles, no watermarks, no modern vehicles, no electric wiring, no plastic.
+- **Atmosphere:** Majestic spiritual invincibility, fearlessness over death and fate, fragrant blooming Kadamba blossoms, resonating brass temple bells, rising Sambrani dhoopam smoke.
+- **Architecture:** Ancient South Indian Dravidian stone temple sanctum, monolithic granite pillars, Navagraha mandapam, carved lotus pedestals.
+- **Iconography:** Lord Kumaresan (Shanmukha) with six divine faces, twelve mighty shoulders, sacred golden Vel, divine lotus feet adorned with golden Silambu, Sathangai, and Thandai anklets, fragrant Kadamba garland.
+- **Lighting:** Radiant amber dawn sunlight dispelling shadows, shimmering ghee lamp flames, golden celestial halos.
+- **Hard Exclusions:** No text, no subtitles, no watermarks, no modern clothing, no western faces, no cartoon elements, no plastic.
 
 ---
 
-## 10-Second Continuous Scene Prompts for Google Flow
+## 10-Second Continuous Scene Prompts for Google Flow (100 Seconds Total Footage)
 
-### Scene 1 (00:00 - 00:01): Sacred Hilltop & Golden Spear
+### Scene 1 (00:00 - 00:10): "நாள் என் செய்யும்" — Beyond Fate and Astrological Days
 **Prompt:**  
-Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. On a tranquil sacred hilltop in ancient Tamil Nadu at sunrise, slow dolly move toward an ancient granite shrine where a gleaming bronze Vel (sacred spear of wisdom) stands enshrined, adorned with fresh garlands of red viruchi flowers and fragrant green marukozhundhu. Soft morning mountain breeze, glowing oil lamps, 8k resolution.
-*Exclusions:* No modern items, no digital zoom, no text.
+Create a single continuous 16:9 cinematic crane tilt-down at 24 fps from an ancient stone observatory terrace. An authentic Tamil Vedic sage with Tripundra Vibhuti and white cotton veshti observes celestial constellations in the dawn sky. As morning golden light breaks across ancient temple spires, all planetary alignments dissolve into the supreme dawn brilliance of Murugan.  
+*Exclusions:* No modern telescopes, no digital graphics, no text.
 
-### Scene 2 (00:01 - 00:02): Sacred Peacock & Temple Steps
+### Scene 2 (00:10 - 00:20): "வினைதான் என் செய்யும்" — Karmas Dissolving in Sacred Fire
 **Prompt:**  
-Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Slow lateral slider shot across ancient carved granite temple steps overlooking mist-shrouded green valleys. A majestic wild peacock with iridescent emerald-blue plumage rests calmly on a stone balustrade in morning sunbeams. Fragrant dhoopam incense curls softly into the mountain breeze.
-*Exclusions:* No cartoon effects, no morphing feathers, no text.
+Create a single continuous 16:9 cinematic slow push-in at 24 fps toward a consecrated square granite Vedic Homa altar. Fragrant sandalwood sticks, ghee, and inscribed palm leaves burn steadily in sacred golden flames, dissolving into fine white holy ash (Vibhuti), visually symbolizing the destruction of ancient accumulated karmas.  
+*Exclusions:* No black smoke, no artificial VFX flames, no text.
 
-### Scene 3 (00:02 - 00:03): Hilltop Gopuram & Distant Ocean
+### Scene 3 (00:20 - 00:30): "கோள் என் செய்யும்" — The Transcendence Over Planetary Powers
 **Prompt:**  
-Create a single continuous 16:9 cinematic crane rise at 24 fps. Panoramic view of an ancient seaside Dravidian temple gopuram illuminated by radiant dawn sunlight against the sparkling blue ocean waters of Thiruchendur. Flocks of white sea birds soar past in peaceful morning air. Sublime spiritual majesty.
-*Exclusions:* No rapid motion, no modern ships, no text.
+Create a single continuous 16:9 cinematic tracking shot at 24 fps along an ancient carved stone Navagraha mandapam. The nine stone planetary deities stand in silent contemplation while a beam of pure celestial golden light from the sanctum's golden Vel illuminates the dark corridor, effortlessly outshining all astrological fears.  
+*Exclusions:* No neon glow, no modern ceiling fixtures, no text.
+
+### Scene 4 (00:30 - 00:40): "கொடுங் கூற்று என் செய்யும்" — Fearlessness Before the Shadows of Death
+**Prompt:**  
+Create a single continuous 16:9 cinematic medium shot at 24 fps. Saint Arunagirinathar stands completely unmoved and serene with hands folded in Anjali Mudra on a stone mountain ledge. Ominous dark storm clouds in the distance part effortlessly before him as a radiant golden sunrise breaks through, embodying total victory over mortal fear.  
+*Exclusions:* No gory figures, no cartoon monsters, no text.
+
+### Scene 5 (00:40 - 00:50): "குமரேசர் இரு தாளும்" — The Two Protective Lotus Feet
+**Prompt:**  
+Create a single continuous 16:9 cinematic low-angle macro shot at 24 fps. The divine bronze lotus feet of Lord Kumaresan resting upon a carved stone lotus pedestal in the sanctum. A Vedic priest reverently pours holy sandal paste and sprinkles fresh red lotus petals and green bilva leaves upon the feet, glowing warmly in oil lamplight.  
+*Exclusions:* No synthetic flowers, no electricity, no text.
+
+### Scene 6 (00:50 - 01:00): "சிலம்பும் சதங்கையும் தண்டையும்" — The Jingling Sacred Anklets
+**Prompt:**  
+Create a single continuous 16:9 cinematic slow pan at 24 fps across the divine ankles of the deity. Beautifully crafted ancient South Indian gold and silver Silambu anklets and rows of tiny jingling Sathangai bells catch the dancing light of bronze deepams, symbolizing the joyful sound that banishes evil spirits and sorrow.  
+*Exclusions:* No modern jewelry, no strobe lighting, no text.
+
+### Scene 7 (01:00 - 01:10): "சண்முகமும்" — The Vision of the Six Faces
+**Prompt:**  
+Create a single continuous 16:9 cinematic medium rotational shot at 24 fps. The six divine faces of Lord Shanmukha illuminated by multi-wick bronze lamps. Each face wears a majestic jewel-set crown, with calm compassionate eyes radiating divine reassurance, wisdom, and unconditional grace across the darkened sanctum.  
+*Exclusions:* No distorted CGI faces, no cartoon eyes, no text.
+
+### Scene 8 (01:10 - 01:20): "தோளும்" — The Twelve Invincible Shoulders
+**Prompt:**  
+Create a single continuous 16:9 cinematic medium wide shot at 24 fps. The twelve mighty shoulders of Lord Muruga adorned with fragrant sandalwood paste and shimmering gold armor, holding the sacred Vel, bow, and lotus. The divine form radiates supreme protective power and spiritual sovereignty.  
+*Exclusions:* No western armor, no swords, no text.
+
+### Scene 9 (01:20 - 01:30): "கடம்பும் எனக்கு முன்னே வந்து தோன்றிடினே" — The Fragrant Kadamba Garland
+**Prompt:**  
+Create a single continuous 16:9 cinematic close-up shot at 24 fps. A thick, lush garland of golden ball-shaped Kadamba blossoms, red viruchi flowers, and fragrant green marukozhundhu draped across the chest of Lord Muruga. In the soft temple breeze, the garland sways gently as incense smoke rises around it.  
+*Exclusions:* No wilted flowers, no plastic, no text.
+
+### Scene 10 (01:30 - 01:40): Triumphant Spiritual Liberation & Golden Dawn
+**Prompt:**  
+Create a single continuous 16:9 cinematic sweeping crane shot at 24 fps over the hilltop temple at glorious dawn. The golden Vel stands victorious above the sanctum roof against a brilliant amber-gold sky. Flocks of white doves and green parrots soar across the valley as temple bells chime in celebration of absolute spiritual victory.  
+*Exclusions:* No modern structures, no digital artifacts, no text.

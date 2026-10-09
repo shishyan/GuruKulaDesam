@@ -215,33 +215,89 @@ def generate_veo_clip(client, prompt: str, out_path: Path, model: str = "veo-3.1
 
     raise TimeoutError(f"Veo generation failed after {max_retries} attempts due to persistent high demand.")
 
+def create_reversed_clip(clip_path: Path, temp_dir: Path) -> Path:
+    """Creates a reversed-playback version of a video clip for the second pass."""
+    rev_path = temp_dir / f"{clip_path.stem}_rev.mp4"
+    if rev_path.exists() and rev_path.stat().st_size > 100_000:
+        return rev_path
+    cmd = [
+        str(FFMPEG), "-y",
+        "-i", str(clip_path),
+        "-vf", "reverse",
+        "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-an",
+        str(rev_path)
+    ]
+    subprocess.run(cmd, check=True, capture_output=True)
+    return rev_path
+
+def create_slowmo_clip(clip_path: Path, temp_dir: Path, speed: float = 0.5) -> Path:
+    """Creates a 0.5x smooth cinematic slow-motion version of a video clip."""
+    out_path = temp_dir / f"{clip_path.stem}_slow.mp4"
+    if out_path.exists() and out_path.stat().st_size > 100_000:
+        return out_path
+    pts_factor = 1.0 / speed
+    cmd = [
+        str(FFMPEG), "-y",
+        "-i", str(clip_path),
+        "-vf", f"setpts={pts_factor:.2f}*PTS,fps=24",
+        "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-an",
+        str(out_path)
+    ]
+    subprocess.run(cmd, check=True, capture_output=True)
+    return out_path
+
 def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Path, output_path: Path) -> Path:
-    """Assembles scene clips to match audio duration, overlays sacred kuthuvilakku/dhoopam frame and subtle drizzle."""
+    """Assembles scene clips to match audio duration.
+    Uses 0.5x cinematic slow-motion for long tracks (> 300s) and alternates Forward/Reversed playback cycles."""
     audio_dur = get_media_duration(audio_path)
     print(f"\n[Assembly] Audio Duration: {audio_dur:.2f}s | Available Veo Clips: {len(scene_clips)}", flush=True)
-    
-    # Calculate how many repetitions or sequences of clips we need
-    clip_durs = [get_media_duration(c) for c in scene_clips]
-    total_scenes_dur = sum(clip_durs)
-    print(f"[Assembly] 1 Pass Duration: {total_scenes_dur:.2f}s", flush=True)
     
     # Create temp concat list
     temp_dir = ROOT / "renders" / f"temp_flow_{track_info['track_id']}"
     temp_dir.mkdir(parents=True, exist_ok=True)
     concat_file = temp_dir / "concat_list.txt"
     
-    # Repeat the scene sequence until it exceeds audio_dur + 5s
-    needed_passes = max(1, int(audio_dur / total_scenes_dur) + 1)
+    use_slowmo = audio_dur > 300.0
+    if use_slowmo:
+        print("[Assembly] Long chant detected (> 300s): Converting clips to 0.5x cinematic slow-motion...", flush=True)
+        active_clips = [create_slowmo_clip(c, temp_dir, speed=0.5) for c in scene_clips]
+    else:
+        active_clips = scene_clips
+
+    base_durs = [get_media_duration(c) for c in active_clips]
+    one_pass_dur = sum(base_durs)
+    print(f"[Assembly] 1 Pass Duration (SlowMo={use_slowmo}): {one_pass_dur:.2f}s", flush=True)
+
+    # Alternate Forward and Reversed cycles
+    playlist = []
+    current_dur = 0.0
+    cycle = 1
+    reversed_clips = None
+    
+    while current_dur < audio_dur:
+        if cycle % 2 == 1:
+            print(f"[Assembly] Cycle {cycle}: Adding Forward pass ({one_pass_dur:.1f}s)...", flush=True)
+            playlist.extend(active_clips)
+        else:
+            print(f"[Assembly] Cycle {cycle}: Adding REVERSED direction pass ({one_pass_dur:.1f}s)...", flush=True)
+            if reversed_clips is None:
+                reversed_clips = [create_reversed_clip(c, temp_dir) for c in active_clips]
+            playlist.extend(reversed_clips)
+        current_dur += one_pass_dur
+        cycle += 1
+        # Safety break
+        if cycle > 10:
+            break
+
     with open(concat_file, "w", encoding="utf-8") as f:
-        for _ in range(needed_passes):
-            for clip in scene_clips:
-                clip_str = str(clip.resolve()).replace("\\", "/")
-                f.write(f"file '{clip_str}'\n")
+        for clip in playlist:
+            clip_str = str(clip.resolve()).replace("\\", "/")
+            f.write(f"file '{clip_str}'\n")
 
     looped_video = temp_dir / "looped_video.mp4"
-    print(f"[Assembly] Concatenating {needed_passes} passes of scene clips...", flush=True)
+    print(f"[Assembly] Concatenating timeline (Total scenes queued: {len(playlist)} across {cycle-1} alternating cycles)...", flush=True)
     cmd_concat = [
-        FFMPEG, "-y",
+        str(FFMPEG), "-y",
         "-f", "concat", "-safe", "0",
         "-i", str(concat_file),
         "-c", "copy",

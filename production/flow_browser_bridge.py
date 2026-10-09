@@ -87,7 +87,53 @@ def open_session():
     finally:
         kill_browser_profile_processes()
 
-def wait_for_assistant_and_approve(page, timeout_sec=40):
+def check_recent_downloads(dest_mp4_path: Path, since_timestamp: float) -> bool:
+    """Checks the user Downloads folder for any zip/mp4 created after since_timestamp."""
+    downloads_dir = Path.home() / "Downloads"
+    candidates = []
+    for f in downloads_dir.glob("download*.zip"):
+        try:
+            if f.stat().st_mtime >= since_timestamp - 3:
+                candidates.append(f)
+        except Exception:
+            pass
+    for f in downloads_dir.glob("*.mp4"):
+        try:
+            if f.stat().st_mtime >= since_timestamp - 3:
+                candidates.append(f)
+        except Exception:
+            pass
+    
+    if not candidates:
+        return False
+        
+    candidates.sort(key=lambda x: x.stat().st_mtime, reverse=True)
+    newest = candidates[0]
+    if newest.suffix == ".zip":
+        try:
+            with zipfile.ZipFile(newest, "r") as z:
+                mp4_files = [m for m in z.namelist() if m.endswith(".mp4")]
+                if mp4_files:
+                    extracted_path = z.extract(mp4_files[0], dest_mp4_path.parent)
+                    if dest_mp4_path.exists():
+                        dest_mp4_path.unlink()
+                    shutil.move(extracted_path, dest_mp4_path)
+                    print(f"[Flow] SUCCESS: Extracted {dest_mp4_path.name} from Downloads ({dest_mp4_path.stat().st_size} bytes)")
+                    return True
+        except Exception as e:
+            print(f"[Flow] Error extracting from Downloads: {e}")
+    elif newest.suffix == ".mp4":
+        try:
+            if dest_mp4_path.exists():
+                dest_mp4_path.unlink()
+            shutil.copy2(newest, dest_mp4_path)
+            print(f"[Flow] SUCCESS: Copied direct MP4 {dest_mp4_path.name} from Downloads ({dest_mp4_path.stat().st_size} bytes)")
+            return True
+        except Exception as e:
+            print(f"[Flow] Error copying from Downloads: {e}")
+    return False
+
+def wait_for_assistant_and_approve(page, timeout_sec=60):
     """Waits for assistant response and clicks 'Always approve' or 'Approve' if prompted."""
     print("[Flow] Waiting for assistant response / approval options...")
     start_t = time.time()
@@ -116,6 +162,11 @@ def wait_for_assistant_and_approve(page, timeout_sec=40):
             # Still generating/replying
             continue
 
+        # If download button already visible, generation already finished
+        dl_btn = page.locator("button[aria-label*='Download' i]").first
+        if dl_btn.count() > 0 and dl_btn.is_visible():
+            return True
+
     return False
 
 def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wait_ready=False):
@@ -124,7 +175,7 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
     start_t = time.time()
     
     while time.time() - start_t < max_wait_sec:
-        page.wait_for_timeout(6000)
+        page.wait_for_timeout(5000)
         elapsed = int(time.time() - start_t)
 
         # Check for transient error or retry button
@@ -137,7 +188,7 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
             start_t = time.time()
             continue
 
-        if elapsed < 45:
+        if elapsed < 35:
             print(f"[Flow] Render in progress... {elapsed}s elapsed")
             continue
         
@@ -151,7 +202,7 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
             if only_wait_ready:
                 return True
             print(f"[Flow] Initiating download...")
-            temp_zip = dest_mp4_path.parent / f"temp_{int(time.time())}.zip"
+            click_time = time.time()
             
             try:
                 has_popup = dl_btn.get_attribute("aria-haspopup") == "menu"
@@ -160,53 +211,20 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
                     page.wait_for_timeout(800)
                     btn_720 = page.locator("button:has-text('720p'), [role='menuitem']:has-text('720p'), button:has-text('Original size')").first
                     if btn_720.count() > 0 and btn_720.is_visible():
-                        with page.expect_download(timeout=30000) as download_info:
-                            btn_720.click()
+                        btn_720.click()
                     else:
-                        with page.expect_download(timeout=30000) as download_info:
-                            dl_btn.click()
-                else:
-                    with page.expect_download(timeout=30000) as download_info:
                         dl_btn.click()
-
-                download = download_info.value
-                download.save_as(str(temp_zip))
-                
-                # Check if it's a zip or direct mp4
-                with open(temp_zip, "rb") as f:
-                    header = f.read(16)
-                    
-                extracted_success = False
-                if header.startswith(b"PK"):
-                    with zipfile.ZipFile(temp_zip, "r") as z:
-                        mp4_files = [m for m in z.namelist() if m.endswith(".mp4")]
-                        if mp4_files:
-                            extracted_path = z.extract(mp4_files[0], dest_mp4_path.parent)
-                    if dest_mp4_path.exists():
-                        dest_mp4_path.unlink()
-                    shutil.move(extracted_path, dest_mp4_path)
-                    print(f"[Flow] SUCCESS: Extracted {dest_mp4_path.name} ({dest_mp4_path.stat().st_size} bytes)")
-                    extracted_success = True
-                elif b"ftyp" in header:
-                    if dest_mp4_path.exists():
-                        dest_mp4_path.unlink()
-                    shutil.move(temp_zip, dest_mp4_path)
-                    print(f"[Flow] SUCCESS: Saved direct MP4 {dest_mp4_path.name} ({dest_mp4_path.stat().st_size} bytes)")
-                    extracted_success = True
-                
-                try:
-                    temp_zip.unlink(missing_ok=True)
-                except Exception:
-                    pass
-
-                if extracted_success:
-                    return True
+                else:
+                    dl_btn.click()
             except Exception as e:
-                print(f"[Flow] Download error: {e}")
-                try:
-                    temp_zip.unlink(missing_ok=True)
-                except Exception:
-                    pass
+                print(f"[Flow] Click download error: {e}")
+
+            # Wait and check if downloaded to Downloads folder
+            for _ in range(6):
+                page.wait_for_timeout(1000)
+                if check_recent_downloads(dest_mp4_path, click_time):
+                    return True
+
 
         print(f"[Flow] Waiting for render... {elapsed}s elapsed")
 
@@ -244,9 +262,17 @@ def wait_and_extend_video(page, dest_mp4_path: Path, extend_count: int = 2, cont
 
     page.wait_for_timeout(4000)
 
+    # Debug: log all visible buttons and save screenshot in Flow editor
+    try:
+        visible_btns = [b.get_attribute('aria-label') or b.inner_text().strip() for b in page.locator('button, [role="button"]').all() if b.is_visible()]
+        print(f"[Flow Editor Buttons]: {visible_btns}")
+        page.screenshot(path="flow_editor_debug.png")
+    except Exception as e:
+        print(f"[Flow Editor Debug Error]: {e}")
+
     for ext_step in range(1, extend_count + 1):
         print(f"[Flow Extend] Performing extension {ext_step}/{extend_count}...")
-        add_clip = page.locator("button[aria-label='Add clip']:visible").first
+        add_clip = page.locator("button[aria-label='Add clip']:visible, button[aria-label*='Add' i]:visible, button:has-text('Add clip'), button:has-text('Add'), button:has([class*='add'])").first
         if add_clip.count() == 0:
             print("[Flow Extend] 'Add clip' button not found, stopping extensions.")
             break
@@ -305,7 +331,7 @@ def wait_and_extend_video(page, dest_mp4_path: Path, extend_count: int = 2, cont
     print("[Flow Extend] Downloading extended multi-clip video from editor...")
     dl_media = page.locator("button[aria-label='Download media']:visible, button[aria-label*='Download' i]:visible").first
     if dl_media.count() > 0 and dl_media.is_enabled():
-        temp_zip = dest_mp4_path.parent / f"temp_ext_{int(time.time())}.zip"
+        click_time = time.time()
         try:
             dl_media.click()
             page.wait_for_timeout(1000)
@@ -314,40 +340,21 @@ def wait_and_extend_video(page, dest_mp4_path: Path, extend_count: int = 2, cont
             btn_720 = page.locator("button:has-text('720p'), [role='menuitem']:has-text('720p'), button:has-text('Original size')").first
             if btn_720.count() > 0 and btn_720.is_visible():
                 print("[Flow Extend] Clicking '720p Original size' download option...")
-                with page.expect_download(timeout=40000) as download_info:
-                    btn_720.click()
+                btn_720.click()
             else:
-                with page.expect_download(timeout=40000) as download_info:
-                    dl_media.click()
-            download = download_info.value
-            download.save_as(str(temp_zip))
-
-            # Extract or save
-            with open(temp_zip, "rb") as f:
-                header = f.read(16)
-            if header.startswith(b"PK"):
-                with zipfile.ZipFile(temp_zip, "r") as z:
-                    mp4s = [m for m in z.namelist() if m.endswith(".mp4")]
-                    if mp4s:
-                        extracted = z.extract(mp4s[0], dest_mp4_path.parent)
-                        if dest_mp4_path.exists():
-                            dest_mp4_path.unlink()
-                        shutil.move(extracted, dest_mp4_path)
-            elif b"ftyp" in header:
-                if dest_mp4_path.exists():
-                    dest_mp4_path.unlink()
-                shutil.move(temp_zip, dest_mp4_path)
-            temp_zip.unlink(missing_ok=True)
-            print(f"[Flow Extend SUCCESS] Saved extended video: {dest_mp4_path.name} ({dest_mp4_path.stat().st_size} bytes)")
-            
-            # Return from editor
-            if "/edit/" in page.url:
-                page.go_back()
-                page.wait_for_timeout(2000)
-            return True
+                dl_media.click()
         except Exception as e:
-            print(f"[Flow Extend Error] Download from editor failed: {e}")
-            temp_zip.unlink(missing_ok=True)
+            print(f"[Flow Extend] Click download error: {e}")
+
+        # Wait and check if downloaded to Downloads folder
+        for _ in range(8):
+            page.wait_for_timeout(1000)
+            if check_recent_downloads(dest_mp4_path, click_time):
+                print(f"[Flow Extend SUCCESS] Saved extended video: {dest_mp4_path.name} ({dest_mp4_path.stat().st_size} bytes)")
+                if "/edit/" in page.url:
+                    page.go_back()
+                    page.wait_for_timeout(2000)
+                return True
 
     # Return from editor if stuck
     if "/edit/" in page.url:

@@ -3227,6 +3227,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.zen-sanctuary-shell')) {
     goToZenSlide(0);
   }
+
+  if (document.getElementById('kalviGradeFocusStage')) {
+    selectKalviZenGrade(1);
+  }
 });
 
 // ==========================================================================
@@ -3285,12 +3289,132 @@ function prevZenSlide() {
   goToZenSlide(currentZenIndex - 1);
 }
 
+// ==========================================================================
+// KALVI ZEN FOCUS CONTROLLER — ONE GRADE AT A TIME
+// ==========================================================================
+const GKD_GRADE_IMAGES = {
+  1: "assets/images/lessons/children_feeding_creatures.jpg",
+  2: "assets/images/lessons/shiva_tripundram.jpg",
+  3: "assets/images/lessons/grade3_naalvar_saints.jpg",
+  4: "assets/images/lessons/grade4_appar_service.jpg",
+  5: "assets/images/lessons/grade5_sundarar_thiruvarur.jpg",
+  6: "assets/images/lessons/grade6_pancha_maha_yajna.jpg",
+  7: "assets/images/lessons/grade7_periyapuranam_sekkizhar.jpg",
+  8: "assets/images/lessons/grade8_chatur_ashrama.jpg",
+  9: "assets/images/lessons/grade9_saiva_agamas.jpg",
+  10: "assets/images/lessons/grade10_pati_pasu_pasam.jpg",
+  11: "assets/images/lessons/grade11_nachiketas_yama.jpg",
+  12: "assets/images/lessons/grade12_grihastha_nirvana.jpg"
+};
+
+let currentKalviZenGrade = 1;
+
+function selectKalviZenGrade(gradeNum) {
+  if (gradeNum < 1) gradeNum = 12;
+  if (gradeNum > 12) gradeNum = 1;
+  currentKalviZenGrade = gradeNum;
+
+  const data = GKD_GRADE_DETAILS[gradeNum];
+  if (!data) return;
+
+  // Update stepper buttons
+  document.querySelectorAll('.zen-grade-btn').forEach(btn => {
+    const g = parseInt(btn.getAttribute('data-grade'), 10);
+    if (g === gradeNum) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // Update counter
+  const counter = document.getElementById('kalviZenCounter');
+  if (counter) counter.textContent = `வகுப்பு ${gradeNum} / 12`;
+
+  // Update image
+  const img = document.getElementById('kalviZenImg');
+  if (img) {
+    img.src = GKD_GRADE_IMAGES[gradeNum] || 'assets/images/lessons/children_feeding_creatures.jpg';
+    img.alt = data.title;
+  }
+
+  // Update badge
+  const badge = document.getElementById('kalviZenBadge');
+  if (badge) badge.textContent = `தரம் ${gradeNum} • ${data.ashrama}`;
+
+  // Update titles
+  const title = document.getElementById('kalviZenTitle');
+  if (title) title.textContent = data.title;
+
+  const engTitle = document.getElementById('kalviZenEngTitle');
+  if (engTitle) engTitle.textContent = data.engTitle;
+
+  // Update meta
+  const meta = document.getElementById('kalviZenMeta');
+  if (meta) meta.textContent = `பருவம்: ${data.age} • ${data.ashrama}`;
+
+  const scripture = document.getElementById('kalviZenScripture');
+  if (scripture) scripture.textContent = data.scripture;
+
+  // Update desc
+  const desc = document.getElementById('kalviZenDesc');
+  if (desc) desc.textContent = data.desc;
+
+  // Update competencies
+  const compContainer = document.getElementById('kalviZenCompetencies');
+  if (compContainer && Array.isArray(data.competencies)) {
+    compContainer.innerHTML = data.competencies.map(c => 
+      `<span style="background: rgba(45, 212, 191, 0.12); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.3); padding: 4px 10px; border-radius: 8px; font-size: 0.8rem; font-weight: 600;">${c}</span>`
+    ).join('');
+  }
+
+  // Update CTA link
+  const link = document.getElementById('kalviZenLink');
+  if (link) {
+    link.href = data.url;
+    link.textContent = `தரம் ${gradeNum} பாடநூல் & கையேட்டைத் திறக்க →`;
+  }
+}
+
+function nextKalviZenGrade() {
+  selectKalviZenGrade(currentKalviZenGrade + 1);
+}
+
+function prevKalviZenGrade() {
+  selectKalviZenGrade(currentKalviZenGrade - 1);
+}
+
+function toggleKalviFullGrid() {
+  const grid = document.getElementById('kalviFullGradesGrid');
+  const btn = document.getElementById('kalviGridToggleBtn');
+  if (!grid) return;
+  const isHidden = window.getComputedStyle(grid).display === 'none';
+  if (isHidden) {
+    grid.style.display = 'grid';
+    if (btn) {
+      btn.innerHTML = `<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> <span>முழுப் பட்டியலை மறைத்து ஒற்றை வகுப்புக் காட்சியைக் காண்க (Focus Mode)</span>`;
+    }
+    grid.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    grid.style.display = 'none';
+    if (btn) {
+      btn.innerHTML = `<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg> <span>அனைத்து 12 வகுப்புகளையும் ஒரே பார்வையில் காண்க (Show Full Grid)</span>`;
+    }
+  }
+}
+
 window.addEventListener('keydown', function(e) {
   if (document.querySelector('.zen-sanctuary-shell')) {
     if (e.key === 'ArrowRight') {
       nextZenSlide();
     } else if (e.key === 'ArrowLeft') {
       prevZenSlide();
+    }
+  } else if (document.getElementById('kalviGradeFocusStage')) {
+    if (e.key === 'ArrowRight') {
+      nextKalviZenGrade();
+    } else if (e.key === 'ArrowLeft') {
+      prevKalviZenGrade();
     }
   }
 });
