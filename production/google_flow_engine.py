@@ -215,31 +215,26 @@ def generate_veo_clip(client, prompt: str, out_path: Path, model: str = "veo-3.1
 
     raise TimeoutError(f"Veo generation failed after {max_retries} attempts due to persistent high demand.")
 
-def create_reversed_clip(clip_path: Path, temp_dir: Path) -> Path:
-    """Creates a reversed-playback version of a video clip for the second pass."""
-    rev_path = temp_dir / f"{clip_path.stem}_rev.mp4"
-    if rev_path.exists() and rev_path.stat().st_size > 100_000:
-        return rev_path
-    cmd = [
-        str(FFMPEG), "-y",
-        "-i", str(clip_path),
-        "-vf", "reverse",
-        "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-an",
-        str(rev_path)
-    ]
-    subprocess.run(cmd, check=True, capture_output=True)
-    return rev_path
-
-def create_slowmo_clip(clip_path: Path, temp_dir: Path, speed: float = 0.5) -> Path:
-    """Creates a 0.5x smooth cinematic slow-motion version of a video clip."""
-    out_path = temp_dir / f"{clip_path.stem}_slow.mp4"
+def create_processed_clip(clip_path: Path, temp_dir: Path, speed: float = 0.75, reverse: bool = False) -> Path:
+    """Creates a retimed (e.g. 75% speed) and optionally reversed version of a video clip."""
+    tag = f"speed_{int(speed * 100)}"
+    if reverse:
+        tag += "_rev"
+    out_path = temp_dir / f"{clip_path.stem}_{tag}.mp4"
     if out_path.exists() and out_path.stat().st_size > 100_000:
         return out_path
+    
     pts_factor = 1.0 / speed
+    filters = []
+    if reverse:
+        filters.append("reverse")
+    filters.append(f"setpts={pts_factor:.4f}*PTS")
+    filters.append("fps=24")
+    
     cmd = [
         str(FFMPEG), "-y",
         "-i", str(clip_path),
-        "-vf", f"setpts={pts_factor:.2f}*PTS,fps=24",
+        "-vf", ",".join(filters),
         "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-an",
         str(out_path)
     ]
@@ -248,7 +243,7 @@ def create_slowmo_clip(clip_path: Path, temp_dir: Path, speed: float = 0.5) -> P
 
 def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Path, output_path: Path) -> Path:
     """Assembles scene clips to match audio duration.
-    Uses 0.5x cinematic slow-motion for long tracks (> 300s) and alternates Forward/Reversed playback cycles."""
+    All scenes run at 75% speed (0.75x) for cinematic majestic tempo, alternating Forward/Reversed cycles."""
     audio_dur = get_media_duration(audio_path)
     print(f"\n[Assembly] Audio Duration: {audio_dur:.2f}s | Available Veo Clips: {len(scene_clips)}", flush=True)
     
@@ -257,36 +252,34 @@ def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Pat
     temp_dir.mkdir(parents=True, exist_ok=True)
     concat_file = temp_dir / "concat_list.txt"
     
-    use_slowmo = audio_dur > 300.0
-    if use_slowmo:
-        print("[Assembly] Long chant detected (> 300s): Converting clips to 0.5x cinematic slow-motion...", flush=True)
-        active_clips = [create_slowmo_clip(c, temp_dir, speed=0.5) for c in scene_clips]
-    else:
-        active_clips = scene_clips
+    # User directive: make scenes move at 75% speed for all songs
+    speed = 0.75
+    print(f"[Assembly] Processing scenes at {int(speed*100)}% speed for cinematic devotional flow...", flush=True)
+    forward_clips = [create_processed_clip(c, temp_dir, speed=speed, reverse=False) for c in scene_clips]
+    reversed_clips = None
 
-    base_durs = [get_media_duration(c) for c in active_clips]
+    base_durs = [get_media_duration(c) for c in forward_clips]
     one_pass_dur = sum(base_durs)
-    print(f"[Assembly] 1 Pass Duration (SlowMo={use_slowmo}): {one_pass_dur:.2f}s", flush=True)
+    print(f"[Assembly] 1 Pass Duration ({int(speed*100)}% speed): {one_pass_dur:.2f}s", flush=True)
 
     # Alternate Forward and Reversed cycles
     playlist = []
     current_dur = 0.0
     cycle = 1
-    reversed_clips = None
     
     while current_dur < audio_dur:
         if cycle % 2 == 1:
-            print(f"[Assembly] Cycle {cycle}: Adding Forward pass ({one_pass_dur:.1f}s)...", flush=True)
-            playlist.extend(active_clips)
+            print(f"[Assembly] Cycle {cycle}: Forward pass at {int(speed*100)}% speed ({one_pass_dur:.1f}s)...", flush=True)
+            playlist.extend(forward_clips)
         else:
-            print(f"[Assembly] Cycle {cycle}: Adding REVERSED direction pass ({one_pass_dur:.1f}s)...", flush=True)
+            print(f"[Assembly] Cycle {cycle}: REVERSED pass at {int(speed*100)}% speed ({one_pass_dur:.1f}s)...", flush=True)
             if reversed_clips is None:
-                reversed_clips = [create_reversed_clip(c, temp_dir) for c in active_clips]
+                reversed_clips = [create_processed_clip(c, temp_dir, speed=speed, reverse=True) for c in scene_clips]
             playlist.extend(reversed_clips)
         current_dur += one_pass_dur
         cycle += 1
         # Safety break
-        if cycle > 10:
+        if cycle > 30:
             break
 
     with open(concat_file, "w", encoding="utf-8") as f:

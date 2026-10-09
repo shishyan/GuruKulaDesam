@@ -192,7 +192,13 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
             print(f"[Flow] Render in progress... {elapsed}s elapsed")
             continue
         
-        # Check for Download batch button or Download media
+        # Check if video is ready via editor button or download button
+        editor_btn = page.locator("button:has-text('play_circle'), [aria-label*='Open video in editor' i]").first
+        if editor_btn.count() > 0 and editor_btn.is_visible():
+            print(f"[Flow] Video ready on canvas! (Elapsed: {elapsed}s)...")
+            if only_wait_ready:
+                return True
+
         dl_btn = page.locator("button[aria-label='Download batch'], button:has-text('Download batch')").first
         if dl_btn.count() == 0 or not dl_btn.is_visible():
             dl_btn = page.locator("button[aria-label*='Download' i]").first
