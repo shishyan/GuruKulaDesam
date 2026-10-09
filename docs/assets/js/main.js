@@ -1670,7 +1670,7 @@ function renderTopBreadcrumbBar() {
     existingTabs.classList.add('inpage-content-nav');
     const main = document.querySelector('main.main-content');
     if (main && !main.contains(existingTabs)) {
-      const insertTarget = main.querySelector('.controls-panel, .page-visual-showcase, .hero-banner') || main.firstChild;
+      const insertTarget = main.querySelector('.controls-panel, .page-visual-showcase, .visual-heritage-split-section, .hero-banner') || main.firstChild;
       if (insertTarget && insertTarget.parentNode === main) {
         main.insertBefore(existingTabs, insertTarget);
       } else {

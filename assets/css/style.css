@@ -6513,6 +6513,180 @@ main.main-content svg { max-width: 100%; height: auto; }
 }
 
 /* ========================================================================== */
+/* 50/50 SACRED VISUAL HERITAGE SPLIT ARCHITECTURE                            */
+/* (Image occupies 50% width with rich narrative content surrounding it)       */
+/* ========================================================================== */
+
+.visual-heritage-split-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 32px 0 40px 0;
+  width: 100%;
+}
+
+.visual-split-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.94), rgba(24, 34, 53, 0.92));
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 20px;
+  padding: 24px 28px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.visual-split-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold, #d4af37);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.65), 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.visual-split-card.reverse .visual-split-media {
+  order: 2;
+}
+
+.visual-split-card.reverse .visual-split-content {
+  order: 1;
+}
+
+.visual-split-media {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  height: 100%;
+  min-height: 280px;
+  max-height: 380px;
+}
+
+.visual-split-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  max-height: 380px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.visual-split-card:hover .visual-split-media img {
+  transform: scale(1.025);
+}
+
+.visual-split-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+  color: var(--gold-bright, #ffd700);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.visual-split-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 6px 2px;
+}
+
+.visual-split-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #38bdf8;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.visual-split-title {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.32;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.visual-split-sub {
+  color: var(--gold-bright, #ffd700);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.visual-split-desc {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.visual-split-points {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.visual-split-point {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding-left: 20px;
+  position: relative;
+}
+
+.visual-split-point::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--gold-bright, #ffd700);
+  font-size: 0.75rem;
+  top: 1px;
+}
+
+@media (max-width: 900px) {
+  .visual-split-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 18px 20px;
+  }
+  .visual-split-card.reverse .visual-split-media {
+    order: 1;
+  }
+  .visual-split-card.reverse .visual-split-content {
+    order: 2;
+  }
+  .visual-split-media {
+    min-height: 220px;
+    max-height: 280px;
+  }
+  .visual-split-media img {
+    min-height: 220px;
+    max-height: 280px;
+  }
+}
+
+
+/* ========================================================================== */
 /* GKD DASHBOARD & WORKFLOW DRILL-DOWN ARCHITECTURE                           */
 /* ========================================================================== */
 
