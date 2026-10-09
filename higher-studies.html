@@ -270,6 +270,144 @@
         display: block !important;
       }
     }
+  
+    /* Moola Nool Direct Scripture Reader Modal & Buttons */
+    .moola-actions-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed rgba(212, 175, 55, 0.2);
+    }
+    .moola-read-btn {
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      color: var(--gold-bright, #ffd700);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .moola-read-btn:hover {
+      background: rgba(212, 175, 55, 0.28);
+      border-color: var(--gold, #d4af37);
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+      color: #fff;
+    }
+    .moola-canon-link {
+      font-size: 0.78rem;
+      color: #94a3b8;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.2s;
+    }
+    .moola-canon-link:hover {
+      color: var(--gold-bright, #ffd700);
+      text-decoration: underline;
+    }
+    /* Modal Backdrop & Dialog */
+    .moola-modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.82);
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .moola-modal-backdrop.open {
+      display: flex;
+    }
+    .moola-modal-card {
+      background: linear-gradient(135deg, #0d1527 0%, #0a1020 100%);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 30px rgba(212, 175, 55, 0.15);
+      border-radius: 18px;
+      max-width: 820px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      animation: moolaFadeIn 0.25s ease-out;
+    }
+    @keyframes moolaFadeIn {
+      from { opacity: 0; transform: scale(0.96) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .moola-modal-header {
+      padding: 18px 24px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.95);
+      border-radius: 18px 18px 0 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .moola-modal-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .moola-modal-close-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #cbd5e1;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .moola-modal-close-btn:hover {
+      background: rgba(239, 68, 68, 0.25);
+      border-color: #ef4444;
+      color: #fff;
+    }
+    .moola-modal-body {
+      padding: 24px;
+      color: #cbd5e1;
+      font-size: 0.94rem;
+      line-height: 1.7;
+    }
+    .moola-modal-footer {
+      padding: 14px 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(10, 16, 32, 0.9);
+      border-radius: 0 0 18px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
   </style>
 </head>
 <body class="has-left-strip">
@@ -685,28 +823,28 @@
             <div class="module-code-pill">SEM 1-2 • GRI-101</div>
             <div class="module-title">திருக்குறள் இல்லறவியலும் சான்றாண்மை உருவாக்கமும்</div>
             <div class="module-desc">இல்வாழ்க்கை, வாழ்க்கைத்துணை நலம், புதல்வர்களைப் பெறுதல், அன்புடைமை, விருந்தோம்பல், இனியவை கூறல், செய்ந்நன்றி அறிதல், நடுவுநிலைமை. ஒரு சாதாரண மனிதன் உயர்ந்த 'சான்றோனாக' உருமாறும் வாழ்வியல் விஞ்ஞானம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: திருக்குறள் அறத்துப்பால் (இல்வாழ்க்கை அதிகாரம் 5 முதல் 24 வரை)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: திருக்குறள் அறத்துப்பால் (இல்வாழ்க்கை அதிகாரம் 5 முதல் 24 வரை)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('thirukkural-arathuppal', 'illara-iyal')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=thirukkural-arathuppal&amp;sec=illara-iyal" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box teal">
             <div class="module-code-pill">SEM 2-3 • GRI-102</div>
             <div class="module-title">பஞ்ச மகா யக்ஞங்களும் அன்றாட தர்ம வாழ்வியலும்</div>
             <div class="module-desc">இல்லறத்தான் ஆற்ற வேண்டிய 5 பெரும் வேள்விகள்: 1. பிரம்ம யக்ஞம் (வேத/நூல் ஓதுதல்), 2. தேவ யக்ஞம் (இறை வழிபாடு), 3. பித்ரு யக்ஞம் (பெற்றோர்/முன்னோர் வழிபாடு), 4. மனுஷ்ய யக்ஞம் (விருந்தோம்பல் &amp; ஏழை எளியோருக்கு அன்னதானம்), 5. பூத யக்ஞம் (விலங்கு, பறவை, மரங்களுக்குப் பணிவிடை).</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: தைத்திரீய ஆரண்யகம் &amp; மகா பெரியவா 'தெய்வத்தின் குரல்'</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: தைத்திரீய ஆரண்யகம் &amp; மகா பெரியவா 'தெய்வத்தின் குரல்'<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('principal-upanishads', 'taittiriya-upanishad')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=principal-upanishads&amp;sec=taittiriya-upanishad" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box purple">
             <div class="module-code-pill">SEM 4-5 • GRI-201</div>
             <div class="module-title">குடும்பத்தில் ஈகோ கரைப்பும் தியாகப் பண்பும்</div>
             <div class="module-desc">மனைவி/கணவன், குழந்தைகள், பெற்றோர் ஆகியோரிடம் முரண்பாடுகளை எதிர்கொள்ளும் போது 'நான்' என்ற ஆணவத்தை அழிக்கும் உளவியல் சாதனை. சகிப்புத்தன்மை, மன்னிப்பு, சுயநலமின்மை மூலம் உள்ளத்தில் விளையும் அதிஉயர் மன அமைதி (சித்த சுத்தி).</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: விவேகசூடாமணி மனவடக்க சுலோகங்கள் &amp; கீதை அத். 3 (கர்ம யோகம்)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: விவேகசூடாமணி மனவடக்க சுலோகங்கள் &amp; கீதை அத். 3 (கர்ம யோகம்)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('bhagavad-gita', 'gita-ch3')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=bhagavad-gita&amp;sec=gita-ch3" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box gold">
             <div class="module-code-pill">SEM 5-6 • GRI-301</div>
             <div class="module-title">நன்மக்களை உருவாக்குதலும் தலைமுறைப் பண்பாடும்</div>
             <div class="module-desc">'ஈன்ற பொழுதின் பெரிதுவக்கும் தன்மகனைச் சான்றோன் எனக்கேட்ட தாய்'. அடுத்த தலைமுறைக்கு அறம், பக்தி, வீரம், ஒழுக்கம், தாய்மொழி மற்றும் தர்ம நெறிகளைப் பயிற்றுவித்து சமூகத்தின் ஒளிவிளக்காக குடும்பத்தை நிறுவும் தலைமைத்துவம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: விதுர நீதி, ஆத்திசூடி, கொன்றை வேந்தன் &amp; மகாபாரத சாந்தி பர்வம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: விதுர நீதி, ஆத்திசூடி, கொன்றை வேந்தன் &amp; மகாபாரத சாந்தி பர்வம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('thirukkural-arathuppal', 'illara-iyal')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=thirukkural-arathuppal&amp;sec=illara-iyal" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
         </div>
 
@@ -743,28 +881,28 @@
             <div class="module-code-pill">SEM 1-2 • VED-101</div>
             <div class="module-title">தத்வ போதமும் சரீர த்ரய விவேகமும்</div>
             <div class="module-desc">அதிகாரி லக்ஷணம் (விவேகம், வைராக்கியம், சம-தமாதி ஷட்க சம்பத்து, முமுக்ஷுத்துவம்). ஸ்தூல, சூக்ஷ்ம, காரண சரீரப் பகுப்பாய்வு; ஜாக்கிரத், ஸ்வப்ன, சுஷுப்தி அவஸ்தா த்ரய விவேகம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஆதிசங்கரரின் தத்வ போதம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஆதிசங்கரரின் தத்வ போதம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('vivekachudamani', 'sadhana-chatushtaya')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=vivekachudamani&amp;sec=sadhana-chatushtaya" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box teal">
             <div class="module-code-pill">SEM 2-3 • VED-102</div>
             <div class="module-title">பகவத் கீதை ஆரம்ப இயல் (கர்ம &amp; சாங்கிய யோகம்)</div>
             <div class="module-desc">அர்ஜுன விஷாத யோகம், சாங்கிய யோகத்தின் ஆன்ம நித்தியத்துவ ஆய்வு (அத். 2), கர்ம யோகத்தின் உளவியல் நுணுக்கங்கள் (அத். 3), ஸ்திதப்பிரக்ஞன் மனோநிலை மற்றும் நிஷ்காம கர்ம நெறி.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பகவத் கீதை சாங்கர பாஷ்யம் (அத். 1-6)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பகவத் கீதை சாங்கர பாஷ்யம் (அத். 1-6)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('bhagavad-gita', 'gita-ch2')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=bhagavad-gita&amp;sec=gita-ch2" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box purple">
             <div class="module-code-pill">SEM 4-5 • VED-201</div>
             <div class="module-title">விவேகசூடாமணி மூல சாத்திர ஆய்வு</div>
             <div class="module-desc">மாயையின் இரு பெரும் சக்திகளான விக்ஷேப மற்றும் ஆவரண சக்திகள். பஞ்ச கோசங்களை உரித்து ஆன்மாவைத் தரிசிக்கும் 'நேதி நேதி' முறை; ஆத்ம-அனாத்ம விவேகத்தின் 580 சுலோக ஆய்வு.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஸ்ரீ ஆதிசங்கரரின் விவேகசூடாமணி</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஸ்ரீ ஆதிசங்கரரின் விவேகசூடாமணி<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('vivekachudamani', 'sadhana-chatushtaya')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=vivekachudamani&amp;sec=sadhana-chatushtaya" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box gold">
             <div class="module-code-pill">SEM 5-6 • VED-301</div>
             <div class="module-title">பாரத அளவையியலும் தர்க்க சங்கிரஹமும்</div>
             <div class="module-desc">அன்னம்பட்டரின் தர்க்க சங்கிரஹம். பிரத்யக்ஷம் (காட்சி), அனுமானம் (வியாப்தி, ஹேது), உபமானம் (ஒப்பீடு), சப்தம் (வேத பிரமாணம்). தத்துவ விவாதங்களின் நெறிமுறைகள்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: அன்னம்பட்டர் அருளிய தர்க்க சங்கிரஹம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: அன்னம்பட்டர் அருளிய தர்க்க சங்கிரஹம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('tarka-sangraha', 'padartha-pramana')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=tarka-sangraha&amp;sec=padartha-pramana" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
         </div>
 
@@ -801,28 +939,28 @@
             <div class="module-code-pill">SEM 1-2 • SHV-101</div>
             <div class="module-title">பதி-பசு-பாச முப்பொருள் உண்மை அறிமுகம்</div>
             <div class="module-desc">இறைவன் (பதி), ஆன்மா (பசு), உலகத் தளைகள் (பாசம் — ஆணவம், கன்மம், மாயை மும்மலங்கள்). ஆன்மாவின் மூல இயல்பான 'சார்ந்ததன் வண்ணமாதல்' மற்றும் மலபரிபாகக் கோட்பாடுகள்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: உண்மை விளக்கம் &amp; திருக்களிற்றுப்படியார்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: உண்மை விளக்கம் &amp; திருக்களிற்றுப்படியார்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('sivajnana-bodham', 'payan-iyal')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=sivajnana-bodham&amp;sec=payan-iyal" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box teal">
             <div class="module-code-pill">SEM 2-3 • SHV-102</div>
             <div class="module-title">பன்னிரு திருமுறை இலக்கியமும் சமயக்குரவர் வரலாறும்</div>
             <div class="module-desc">சம்பந்தர், அப்பர், சுந்தரர் தேவாரப் பதிகங்களின் இலக்கிய-இசைச் சிறப்பு. மாணிக்கவாசகரின் திருவாசக உருக்கம். திருமூலரின் திருமந்திர உடற்கூற்றியல் மற்றும் பக்தி இயக்க வரலாறு.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பன்னிரு திருமுறைகள் &amp; பெரியபுராணம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பன்னிரு திருமுறைகள் &amp; பெரியபுராணம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('thiruvarutpa', 'jivakarunya-ozhukkam')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=thiruvarutpa&amp;sec=jivakarunya-ozhukkam" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box purple">
             <div class="module-code-pill">SEM 4-5 • SHV-201</div>
             <div class="module-title">சிவஞானபோதம் 12 சூத்திர மூல ஆய்வு</div>
             <div class="module-desc">மெய்கண்ட தேவநாயனாரின் 12 சூத்திரங்கள்: பிரமாண இயல் (1-3), இலக்கண இயல் (4-6), சாதன இயல் (7-9), பயனியல் (10-12). ஆன்மா சிவத்துடன் அத்துவிதமாய் இரண்டறக் கலக்கும் முக்தி நிலை.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: மெய்கண்டாரின் சிவஞானபோதம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: மெய்கண்டாரின் சிவஞானபோதம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('sivajnana-bodham', 'pramana-iyal')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=sivajnana-bodham&amp;sec=pramana-iyal" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box gold">
             <div class="module-code-pill">SEM 5-6 • SHV-301</div>
             <div class="module-title">28 சிவ ஆகம கிரியைகளும் ஆலயம்-மனிதன் உருவகமும்</div>
             <div class="module-desc">காமிகம், காரணம் முதலான 28 சிவ ஆகமங்கள். சரியை, கிரியை, யோகம், ஞானம் ஆகிய நான்கு பாதங்கள். 'உடம்பே ஆலயம், வாயே கோபுரவாசல்' என்ற தத்துவத்தின் சிற்ப-கட்டிடக்கலைப் பிரயோகம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சிவ ஆகம சாரம் &amp; திருமந்திரம் 7-ஆம் தந்திரம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சிவ ஆகம சாரம் &amp; திருமந்திரம் 7-ஆம் தந்திரம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('tirumandiram-yoga', 'ashtanga-yoga-tamil')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=tirumandiram-yoga&amp;sec=ashtanga-yoga-tamil" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
         </div>
 
@@ -859,28 +997,28 @@
             <div class="module-code-pill">SEM 1-2 • COG-101</div>
             <div class="module-title">அந்தக்கரணம் — மனத்தின் 4 அடுக்குகள் &amp; அறிவாற்றல்</div>
             <div class="module-desc">மனஸ் (சங்கல்ப-விகல்பம்), புத்தி (தீர்மானம்), சித்தம் (நினைவுக் களஞ்சியம்), அகங்காரம் (சுய அடையாளம்). நவீன Cognitive Science ஆய்வுகளுடன் ஒப்பாய்வு.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சங்கரரின் உபதேச சஹஸ்ரி &amp; நரம்பியல் ஆய்வுக் கட்டுரைகள்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சங்கரரின் உபதேச சஹஸ்ரி &amp; நரம்பியல் ஆய்வுக் கட்டுரைகள்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('vivekachudamani', 'sadhana-chatushtaya')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=vivekachudamani&amp;sec=sadhana-chatushtaya" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box teal">
             <div class="module-code-pill">SEM 2-3 • COG-102</div>
             <div class="module-title">பதஞ்சலி யோக சூத்திர உளவியலும் நரம்பியல் நெகிழ்வுத்தன்மையும்</div>
             <div class="module-desc">சித்தம் விருத்தி நிரோதம்; அபியாசம், வைராக்கியம்; சமாதி பாதம், சாதன பாதம். தியானத்தின் போது மூளையின் அலைகள் (Alpha, Theta, Gamma) மற்றும் Neuroplasticity மாற்றங்கள்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பதஞ்சலி யோக சூத்திரம் &amp; வ்யாச பாஷ்யம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பதஞ்சலி யோக சூத்திரம் &amp; வ்யாச பாஷ்யம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('patanjali-yoga-sutras', 'samadhi-pada')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=patanjali-yoga-sutras&amp;sec=samadhi-pada" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box purple">
             <div class="module-code-pill">SEM 4-5 • COG-201</div>
             <div class="module-title">பஞ்ச கோசங்கள் &amp; நவீன மனநல சிகிச்சை முறைகள்</div>
             <div class="module-desc">அன்னமய, பிராணமய, மனோமய, விஞ்ஞானமய, ஆனந்தமய கோசங்கள். மன அழுத்தம், பதற்றம், எக்ஸைட்டி குறைபாடுகளுக்கு CBT (Cognitive Behavioral Therapy) மற்றும் பிராணாயாமப் பயிற்சிகள்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: தைத்திரீய உபநிடதம் (பிருகு வல்லி)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: தைத்திரீய உபநிடதம் (பிருகு வல்லி)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('principal-upanishads', 'taittiriya-upanishad')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=principal-upanishads&amp;sec=taittiriya-upanishad" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box gold">
             <div class="module-code-pill">SEM 5-6 • COG-301</div>
             <div class="module-title">குவாண்டம் இயற்பியலும் அத்வைத அண்டவியலும்</div>
             <div class="module-desc">ஷ்ரோடிங்கரின் 'Mind and Matter', ஹைசன்பர்க்கின் நிச்சயமற்ற தத்துவம் (Uncertainty Principle), நீல்ஸ் போரின் பூரகக் கொள்கை மற்றும் உபநிடத 'ஏகம் ஏவ அத்விதீயம்' ஒப்புமை.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> ஆய்வுக் குறிப்பு: Fritjof Capra, Erwin Schrödinger &amp; விவேகானந்தரின் சொற்பொழிவுகள்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> ஆய்வுக் குறிப்பு: Fritjof Capra, Erwin Schrödinger &amp; விவேகானந்தரின் சொற்பொழிவுகள்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('principal-upanishads', 'mandukya-upanishad')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=principal-upanishads&amp;sec=mandukya-upanishad" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
         </div>
 
@@ -918,28 +1056,28 @@
             <div class="module-code-pill">SEM 1-2 • YOG-101</div>
             <div class="module-title">பதஞ்சலி அஷ்டாங்க யோக மூல ஆய்வு &amp; நன்னெறி அடித்தளம்</div>
             <div class="module-desc">இயமம் (அகிம்சை, சத்யம், அஸ்தேயம், பிரம்மச்சர்யம், அபரிக்கிரகம்), நியமம் (சௌசம், சந்தோஷம், தபஸ், ஸ்வாத்யாயம், ஈஸ்வரபிரணிதானம்), ஆசன சாஸ்திரம், பிராணாயாமத்தின் 4 வகைகள், பிரத்யாகாரப் புலனடக்கம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பதஞ்சலி யோக சூத்திரம் — சாதன பாதம் (சுலோகங்கள் 28-55)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பதஞ்சலி யோக சூத்திரம் — சாதன பாதம் (சுலோகங்கள் 28-55)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('patanjali-yoga-sutras', 'sadhana-pada')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=patanjali-yoga-sutras&amp;sec=sadhana-pada" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box teal">
             <div class="module-code-pill">SEM 2-3 • YOG-102</div>
             <div class="module-title">தியான விஞ்ஞானம், தாரணை, சவிகல்ப-நிர்விகல்ப சமாதி</div>
             <div class="module-desc">சம்யமம் (தாரணை, தியானம், சமாதி ஆகிய மூன்றின் ஒருங்கிணைப்பு). சவிதர்க்க, நிர்விகற்ப, சவிசார, நிர்விசார, சானந்த, சாஸ்மித மற்றும் அசம்பிரக்ஞாத சமாதி நிலைகள்; நவீன நரம்பியல் மூளை அலை ஆய்வுகள்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பதஞ்சலி யோக சூத்திரம் — விபூதி பாதம் &amp; சமாதி பாதம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பதஞ்சலி யோக சூத்திரம் — விபூதி பாதம் &amp; சமாதி பாதம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('patanjali-yoga-sutras', 'samadhi-pada')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=patanjali-yoga-sutras&amp;sec=samadhi-pada" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box purple">
             <div class="module-code-pill">SEM 4-5 • YOG-201</div>
             <div class="module-title">வைராக்கிய தத்துவம், துறவு (சந்நியாசம்) &amp; தியாக ஒப்பாய்வு</div>
             <div class="module-desc">துறவின் இருவகை: புறத் துறவு (பஹிரங்க சந்நியாசம்) vs அகத் துறவு (அந்தரங்க சந்நியாசம் / தியாகம்). கடோபநிடத நசிகேதஸ் காட்டிய 'ச்ரேயஸ் vs பிரேயஸ்' விவேகம்; விவேகசூடாமணியின் வைராக்கிய லக்ஷணம்; குடும்பத்தில் பற்றின்றி வாழும் கலை.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: விவேகசூடாமணி, கடோபநிடதம் &amp; பகவத் கீதை அத். 5 (சந்நியாச யோகம்)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: விவேகசூடாமணி, கடோபநிடதம் &amp; பகவத் கீதை அத். 5 (சந்நியாச யோகம்)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('vivekachudamani', 'sadhana-chatushtaya')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=vivekachudamani&amp;sec=sadhana-chatushtaya" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box gold">
             <div class="module-code-pill">SEM 5-6 • YOG-301</div>
             <div class="module-title">கைவல்ய பாதம், சித்த விருத்தி நிரோதம் &amp; ஜீவன்முக்தி</div>
             <div class="module-desc">குணங்களின் செயல்பாடு முடிவுக்கு வருதல்; புருஷனின் தன்நிலை அறிதல் (கைவல்யம்). சித்தத்தின் 5 நிலைகள் (க்ஷிப்தம், மூடம், விக்ஷிப்தம், ஏகாக்ரம், நிருத்தம்) கடந்து, உலகியலில் ஜீவன்முக்தனாக தர்ம வழியில் செயலாற்றுதல்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பதஞ்சலி கைவல்ய பாதம் &amp; வ்யாச பாஷ்யம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பதஞ்சலி கைவல்ய பாதம் &amp; வ்யாச பாஷ்யம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('patanjali-yoga-sutras', 'kaivalya-pada')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=patanjali-yoga-sutras&amp;sec=kaivalya-pada" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
         </div>
 
@@ -1004,28 +1142,28 @@
             <div class="module-code-pill">SEM 1 • GRI-501</div>
             <div class="module-title">பெரியபுராணத்தில் 63 நாயன்மார்களின் இல்லற முக்தி நெறி</div>
             <div class="module-desc">சேக்கிழார் காட்டும் நாயன்மார்களில் பெரும்பான்மையோர் இல்லறத்தாரே. நள்ளிரவில் மழையில் நனைந்து விதைத்த நெல்லை அரிந்து வந்து சிவனடியாருக்கு அமுதளித்த இளையான்குடி மாறனார்; இல்லறக் கடமையையே தவமாகச் செய்த அடியார்கள் பெற்ற முக்திப் பேறு.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: திருத்தொண்டர் புராணம் (சேக்கிழாரின் பெரியபுராணம்)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: திருத்தொண்டர் புராணம் (சேக்கிழாரின் பெரியபுராணம்)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('thiruvarutpa', 'jivakarunya-ozhukkam')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=thiruvarutpa&amp;sec=jivakarunya-ozhukkam" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box teal">
             <div class="module-code-pill">SEM 2 • GRI-502</div>
             <div class="module-title">காஞ்சி மகா பெரியவாவின் இல்லற தர்ம நெறிமுறைகள்</div>
             <div class="module-desc">'தெய்வத்தின் குரல்' நூலில் அருளப்பட்ட கிருஹஸ்த ஆசிரமத்தின் மேன்மை: தர்ம சம்பாதனை (நேர்மையான பொருள் ஈட்டுதல்), கைப்பிடி அரிசி திட்டம் (பிடி அரிசி திட்டம்), அதிதி போஜனம், சதாசிவ பிரமேந்திரர் மற்றும் வசிஷ்டர்-அருந்ததி இல்லற யோகம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஜகத்குரு ஸ்ரீ சந்திரசேகரேந்திர சரஸ்வதி சுவாமிகளின் 'தெய்வத்தின் குரல்' (பாகம் 1-7)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஜகத்குரு ஸ்ரீ சந்திரசேகரேந்திர சரஸ்வதி சுவாமிகளின் 'தெய்வத்தின் குரல்' (பாகம் 1-7)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('principal-upanishads', 'taittiriya-upanishad')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=principal-upanishads&amp;sec=taittiriya-upanishad" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box purple">
             <div class="module-code-pill">SEM 3 • GRI-503</div>
             <div class="module-title">சகஜ சமாதி — அன்றாடக் கடமைகளில் நிலைத்த ஆன்ம விடுதலை</div>
             <div class="module-desc">கண்களை மூடி அமர்வது மட்டும் சமாதியல்ல; குடும்ப வேலைகளைச் செய்யும் போதும், குழந்தைகளைப் பேணும் போதும், தொழிலில் ஈடுபடும் போதும் மனதை ஈசனிடம் நிலைநிறுத்தும் 'சகஜ சமாதி' தத்துவம். ராமகிருஷ்ண பரமஹம்சரின் 'தாமரை இலைத் தண்ணீர்' இல்லற உவமை.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: அஷ்டாவக்ர கீதை &amp; ஸ்ரீ ராமகிருஷ்ணரின் அமுதமொழிகள்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: அஷ்டாவக்ர கீதை &amp; ஸ்ரீ ராமகிருஷ்ணரின் அமுதமொழிகள்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('vivekachudamani', 'sadhana-chatushtaya')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=vivekachudamani&amp;sec=sadhana-chatushtaya" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box gold">
             <div class="module-code-pill">SEM 4 • GRI-504</div>
             <div class="module-title">குடும்ப அமைதியும் தலைமுறை நற்பண்புப் பரிமாற்றமும்</div>
             <div class="module-desc">நவீன காலத்தில் கணவன்-மனைவி இடையே எழும் மனக்கசப்புகள், விவாகரத்துக்கள் மற்றும் மன அழுத்தங்களை வேதாந்த தியாகக் கண்ணோட்டத்தில் தீர்க்கும் உளவியல் ஆற்றுப்படுத்துதல் (Dharmic Family Counseling).</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> ஆய்வுக் குறிப்பு: பாரத குடும்ப மரபியல் &amp; இந்திய உளவியல் ஆய்வுக் கட்டுரைகள்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> ஆய்வுக் குறிப்பு: பாரத குடும்ப மரபியல் &amp; இந்திய உளவியல் ஆய்வுக் கட்டுரைகள்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('thirukkural-arathuppal', 'illara-iyal')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=thirukkural-arathuppal&amp;sec=illara-iyal" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
         </div>
 
@@ -1062,28 +1200,28 @@
             <div class="module-code-pill">SEM 1 • PRA-501</div>
             <div class="module-title">பிரம்ம சூத்திரம் — சதுஸ்-சூத்ரி &amp; அத்யாச பாஷ்யம்</div>
             <div class="module-desc">முதல் 4 சூத்திரங்கள்: 1. அதாதோ பிரம்மஜிக்ஞாஸா, 2. ஜன்மாத்யஸ்ய யதஃ, 3. சாஸ்திரயோனித்வாத், 4. தத்து சமன்வயாதாத். மாயையில் கயிற்றைப் பாம்பாக அறிவது போன்ற மனிதனின் விபரீத உணர்வை விளக்கும் அத்யாச பாஷ்யம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பாதராயண பிரம்ம சூத்திர சாங்கர பாஷ்யம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பாதராயண பிரம்ம சூத்திர சாங்கர பாஷ்யம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('principal-upanishads', 'mandukya-upanishad')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=principal-upanishads&amp;sec=mandukya-upanishad" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box teal">
             <div class="module-code-pill">SEM 2 • PRA-502</div>
             <div class="module-title">மாண்டூக்ய காரிகையும் கௌடபாதரின் அஜாத வாதமும்</div>
             <div class="module-desc">கௌடபாத காரிகையின் 4 பிரகரணங்கள்: ஆகம, வைதத்ய, அத்வைத, அலாதசாந்தி பிரகரணங்கள். துரிய நிலை; எப்பொருளும் உண்மையில் பிறக்கவே இல்லை என்ற பரம அத்வைத 'அஜாத வாதம்'.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: கௌடபாத காரிகை &amp; சாங்கர பாஷ்யம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: கௌடபாத காரிகை &amp; சாங்கர பாஷ்யம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('principal-upanishads', 'mandukya-upanishad')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=principal-upanishads&amp;sec=mandukya-upanishad" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box purple">
             <div class="module-code-pill">SEM 3 • PRA-503</div>
             <div class="module-title">சாந்தோக்யம் &amp; பிருஹதாரண்யக மகா வாக்கிய ஆய்வு</div>
             <div class="module-desc">சாந்தோக்ய உபநிடதத்தின் 'தத்வமஸி' (நீயே அதுவாய் இருக்கிறாய்) உபதேசம்; பிருஹதாரண்யக உபநிடதத்தின் யாக்ஞவல்கியர்-மைத்ரேயி உரையாடல்; 'நேதி நேதி' (இதுவல்ல, இதுவல்ல) தூய ஆன்ம தரிசனம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சாந்தோக்ய &amp; பிருஹதாரண்யக உபநிடத பாஷ்யங்கள்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சாந்தோக்ய &amp; பிருஹதாரண்யக உபநிடத பாஷ்யங்கள்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('principal-upanishads', 'taittiriya-upanishad')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=principal-upanishads&amp;sec=taittiriya-upanishad" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box gold">
             <div class="module-code-pill">SEM 4 • PRA-504</div>
             <div class="module-title">பகவத் கீதை 18 அத்தியாய முழுமையான பாஷ்ய இயல்</div>
             <div class="module-desc">விஸ்வரூப தரிசனம் (அத். 11), க்ஷேத்ர-க்ஷேத்ரக்ஞ விபாக யோகம் (அத். 13), குணத்ரய விபாகம் (அத். 14), புருஷோத்தம யோகம் (அத். 15), மோக்ஷ சந்யாச யோகம் (அத். 18). ஜீவன்முக்தி அனுபவம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஸ்ரீமத் பகவத் கீதை சாங்கர பாஷ்யம் முழுமை</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஸ்ரீமத் பகவத் கீதை சாங்கர பாஷ்யம் முழுமை<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('bhagavad-gita', 'gita-ch2')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=bhagavad-gita&amp;sec=gita-ch2" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
         </div>
 
@@ -1120,28 +1258,28 @@
             <div class="module-code-pill">SEM 1 • MSH-501</div>
             <div class="module-title">திராவிட மகாபாஷ்யம் (சிவஞான மாபாடியம்)</div>
             <div class="module-desc">மெய்கண்டாரின் சிவஞானபோதத்திற்கு மாதவச் சிவஞான முனிவர் அருளிய தலைசிறந்த விரிவுரை. சங்கர, ராமானுஜ, மத்வ உரைகளுடன் ஒப்பிடும் தமிழ் தத்துவத்தின் மணிமகுட ஆய்வு.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: மாதவச் சிவஞான யோகிகளின் திராவிட மகாபாஷ்யம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: மாதவச் சிவஞான யோகிகளின் திராவிட மகாபாஷ்யம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('sivajnana-bodham', 'pramana-iyal')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=sivajnana-bodham&amp;sec=pramana-iyal" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box teal">
             <div class="module-code-pill">SEM 2 • MSH-502</div>
             <div class="module-title">சிவஞான சித்தியார் பரபக்க-சுபக்க ஒப்பாய்வு</div>
             <div class="module-desc">அருணந்தி சிவாச்சாரியாரின் சித்தியார். உலகாயதம், சௌத்திராந்திக, யோகாசார, மாத்யமிக பௌத்தம், நிகண்டவாதம், மாயாவாதம், பாஞ்சராத்திரம் ஆகிய 14 புறச்சமயங்களை மறுக்கும் பரபக்க வாதக் கலை.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சிவஞான சித்தியார் (அருணந்தி தேவநாயனார்)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சிவஞான சித்தியார் (அருணந்தி தேவநாயனார்)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('sivajnana-bodham', 'sadhana-iyal')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=sivajnana-bodham&amp;sec=sadhana-iyal" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box purple">
             <div class="module-code-pill">SEM 3 • MSH-503</div>
             <div class="module-title">14 மெய்கண்ட சாத்திரங்களின் தத்துவத் தொகுப்பு</div>
             <div class="module-desc">திருவுந்தியார், திருக்களிற்றுப்படியார், சிவப்பிரகாசம், திருவருட்பயன், வினாவெண்பா, போற்றிப்பஃறொடை, கொடிக்கவி, நெஞ்சுவிடுதூது, உண்மைநெறிவிளக்கம், சங்கற்பநிராகரணம் ஆகிய சாத்திரங்களின் ஒப்பாய்வு.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சந்தான குரவர்கள் அருளிய பதினான்கு மெய்கண்ட சாத்திரங்கள்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: சந்தான குரவர்கள் அருளிய பதினான்கு மெய்கண்ட சாத்திரங்கள்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('sivajnana-bodham', 'payan-iyal')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=sivajnana-bodham&amp;sec=payan-iyal" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box gold">
             <div class="module-code-pill">SEM 4 • MSH-504</div>
             <div class="module-title">சைவ சித்தாந்தமும் காஷ்மீர பிரத்யபிஜ்ஞா தத்துவமும்</div>
             <div class="module-desc">அபினவகுப்தரின் காஷ்மீர சைவம் (Spanda, Pratyabhijna) மற்றும் தென்னகத்துச் சைவ சித்தாந்தம் (Meykandar) இடையேயான ஆழமான ஒற்றுமைகள், வேற்றுமைகள் மற்றும் சிவானந்த அனுபவப் பகுப்பாய்வு.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஈஸ்வர பிரத்யபிஜ்ஞா விமர்சினி &amp; சிவப்பிரகாசம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: ஈஸ்வர பிரத்யபிஜ்ஞா விமர்சினி &amp; சிவப்பிரகாசம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('sivajnana-bodham', 'pramana-iyal')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=sivajnana-bodham&amp;sec=pramana-iyal" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
         </div>
 
@@ -1179,28 +1317,28 @@
             <div class="module-code-pill">SEM 1 • YOG-501</div>
             <div class="module-title">வ்யாச பாஷ்யமும் யோக சூத்திர உரையாசிரியர் மரபும்</div>
             <div class="module-desc">சாங்கிய தத்துவத்தின் 25 தத்துவங்களுக்கும் யோகத்தின் ஈஸ்வர தத்துவத்திற்கும் இடையிலான தொடர்பு; வாசஸ்பதி மிஸ்ரர், விஞ்ஞானபிக்ஷு மற்றும் போஜராஜரின் தத்துவ விவாதங்கள்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பாதஞ்சல யோக தர்சனம் — வ்யாச பாஷ்யம் &amp; தத்துவ வைசாரதி</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: பாதஞ்சல யோக தர்சனம் — வ்யாச பாஷ்யம் &amp; தத்துவ வைசாரதி<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('patanjali-yoga-sutras', 'samadhi-pada')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=patanjali-yoga-sutras&amp;sec=samadhi-pada" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box teal">
             <div class="module-code-pill">SEM 2 • YOG-502</div>
             <div class="module-title">உபநிடத தியானங்களும் பிரணவ உபாசனையும்</div>
             <div class="module-desc">மாண்டூக்ய காரிகை, சாந்தோக்ய உத்தீத வித்யா, மற்றும் பிரகலாத-நாரத தியான உரையாடல்கள்; நாத யோகம், ஓங்கார உச்சரிப்பின் நரம்பியல் ஒத்திசைவு மற்றும் துரிய நிலை தியான ஆய்வு.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: மாண்டூக்ய உபநிடதம் &amp; கவுடபாத காரிகை</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: மாண்டூக்ய உபநிடதம் &amp; கவுடபாத காரிகை<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('principal-upanishads', 'mandukya-upanishad')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=principal-upanishads&amp;sec=mandukya-upanishad" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box purple">
             <div class="module-code-pill">SEM 3 • YOG-503</div>
             <div class="module-title">சந்நியாச உபநிடதங்களும் துறவுக் கோட்பாடுகளின் வரலாறும்</div>
             <div class="module-desc">ஜாபால உபநிடதம், பரமஹம்ச உபநிடதம், ஆருணேய உபநிடதம். வித்வத் சந்நியாசம் (ஞானத்திற்குப் பின் துறவு) vs விவிதிஷா சந்நியாசம் (ஞானம் பெற வேண்டித் துறவு); சங்கரரின் சந்நியாச இயல் vs இராமானுஜரின் பிரபத்தி மார்க்கம்.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: இருபது சந்நியாச உபநிடதங்கள் &amp; கீதா பாஷ்யம்</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: இருபது சந்நியாச உபநிடதங்கள் &amp; கீதா பாஷ்யம்<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('sannyasa-upanishads', 'paramahamsa-upanishad')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=sannyasa-upanishads&amp;sec=paramahamsa-upanishad" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
 
           <div class="program-module-box gold">
             <div class="module-code-pill">SEM 4 • YOG-504</div>
             <div class="module-title">திருமந்திர யோக தந்திரமும் சித்தர் சமாதி நிலைகளும்</div>
             <div class="module-desc">திருமூலரின் திருமந்திரம் மூன்றாம் தந்திரம் (அஷ்டாங்க யோகம், கேசரி முத்திரை, பரியங்க யோகம்), குண்டலினி விழிப்புணர்வு, நவசக்கரங்கள், மற்றும் 18 சித்தர்களின் சாகாக் கலை காயகற்ப ஆய்வு.</div>
-            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: திருமந்திரம் (மூன்றாம் தந்திரம் — யோகப் பகுதி)</div>
+            <div class="module-sources"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> மூல நூல்: திருமந்திரம் (மூன்றாம் தந்திரம் — யோகப் பகுதி)<div class="moola-actions-row">  <button type="button" class="moola-read-btn" onclick="openMoolaNoolModal('tirumandiram-yoga', 'ashtanga-yoga-tamil')">    <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் வாசிக்க  </button>  <a href="moola-nool.html?text=tirumandiram-yoga&amp;sec=ashtanga-yoga-tamil" class="moola-canon-link" title="முழு மூல நூலகத்தில் திறக்க">    நூலகத்தில் முழுமை &rarr;  </a></div></div>
           </div>
         </div>
 
@@ -1928,5 +2066,117 @@
     });
   </script>
   <script src="assets/js/main.js"></script>
+
+  <!-- MOOLA NOOL MODAL VIEWER -->
+  <div class="moola-modal-backdrop" id="moolaNoolModalBackdrop" onclick="if(event.target===this) closeMoolaNoolModal()">
+    <div class="moola-modal-card" role="dialog" aria-modal="true" aria-labelledby="moolaModalTitle">
+      <div class="moola-modal-header">
+        <h3 class="moola-modal-title" id="moolaModalTitle">
+          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px; color:var(--gold-bright);"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span id="moolaModalTitleText">மூல நூல் வாசகம்</span>
+        </h3>
+        <button type="button" class="moola-modal-close-btn" onclick="closeMoolaNoolModal()" aria-label="Close">&times;</button>
+      </div>
+      <div class="moola-modal-body" id="moolaModalBody">
+        <!-- Injected dynamically -->
+      </div>
+      <div class="moola-modal-footer">
+        <span style="font-size:0.85rem; color:#94a3b8;" id="moolaModalAcademicTag">குருகுல வேதாந்த வித்யாபீடம் சான்றாதாரப் பாடப்பகுதி</span>
+        <a href="moola-nool.html" id="moolaModalFullLink" class="moola-read-btn" style="text-decoration:none;">
+          முழு நூலகத்தில் திறக்க &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/moola-nool-data.js"></script>
+  <script>
+    function openMoolaNoolModal(scriptureId, sectionId) {
+      var sc = window.getMoolaScripture(scriptureId);
+      if (!sc) {
+        window.location.href = 'moola-nool.html?text=' + encodeURIComponent(scriptureId);
+        return;
+      }
+
+      document.getElementById('moolaModalTitleText').textContent = sc.title.split('(')[0].trim();
+      var tagEl = document.getElementById('moolaModalAcademicTag');
+      if (tagEl) tagEl.textContent = sc.title + ' • ' + sc.academicLevel;
+
+      var fullLink = document.getElementById('moolaModalFullLink');
+      if (fullLink) {
+        fullLink.href = 'moola-nool.html?text=' + encodeURIComponent(scriptureId) + (sectionId ? '&sec=' + encodeURIComponent(sectionId) : '');
+      }
+
+      var bodyEl = document.getElementById('moolaModalBody');
+      var html = '';
+
+      html += '<div style="margin-bottom:18px; padding-bottom:14px; border-bottom:1px solid rgba(212,175,55,0.2);">';
+      html += '  <p style="color:#f1f5f9; font-size:0.95rem; line-height:1.6; margin:0 0 10px 0;">' + sc.summary + '</p>';
+      html += '  <div style="font-size:0.82rem; color:#cbd5e1;"><strong>பாஷ்ய மரபு:</strong> ' + sc.commentaryTradition + ' | <strong>ஆசிரியர்:</strong> ' + sc.author + '</div>';
+      html += '</div>';
+
+      var targetSections = sc.sections;
+      if (sectionId) {
+        var filtered = sc.sections.filter(function(s) { return s.id === sectionId; });
+        if (filtered.length > 0) targetSections = filtered;
+      }
+
+      targetSections.forEach(function(sec) {
+        html += '<h4 style="color:var(--gold-bright); font-size:1.15rem; margin:16px 0 12px; border-left:3px solid var(--gold); padding-left:10px;">' + sec.title + '</h4>';
+        sec.verses.forEach(function(v) {
+          html += '<div style="background:rgba(5, 10, 22, 0.7); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:16px; margin-bottom:14px;">';
+          html += '  <div style="display:flex; justify-content:space-between; margin-bottom:8px;">';
+          html += '    <span style="background:rgba(212,175,55,0.2); color:var(--gold-bright); font-size:0.8rem; font-weight:700; padding:2px 8px; border-radius:10px;">' + v.num + '</span>';
+          html += '  </div>';
+
+          if (v.rootSanskrit) {
+            html += '  <div style="color:#ffffff; font-family:serif; font-size:1.08rem; font-weight:600; line-height:1.6; margin-bottom:8px; white-space:pre-line;">' + v.rootSanskrit + '</div>';
+          }
+          if (v.rootTamilTranslit) {
+            html += '  <div style="color:#f3f4f6; font-size:0.98rem; font-weight:500; line-height:1.6; margin-bottom:12px; white-space:pre-line;">' + v.rootTamilTranslit + '</div>';
+          }
+
+          if (v.padavurai && v.padavurai.length > 0) {
+            html += '  <div style="background:rgba(0,0,0,0.3); border-radius:8px; padding:10px; margin-bottom:10px;">';
+            html += '    <div style="font-size:0.8rem; font-weight:700; color:var(--gold-soft); margin-bottom:6px;">📖 சொல்-பொருள் பதவுரை (Word-by-word Padavurai):</div>';
+            html += '    <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">';
+            v.padavurai.forEach(function(p) {
+              html += '      <tr><td style="color:var(--gold-bright); font-weight:600; padding:4px 8px; vertical-align:top; width:35%;">' + p.word + '</td><td style="color:#cbd5e1; padding:4px 8px;">' + p.meaning + '</td></tr>';
+            });
+            html += '    </table>';
+            html += '  </div>';
+          }
+
+          if (v.bhavartha) {
+            html += '  <div style="background:rgba(16,185,129,0.08); border-left:3px solid #10b981; padding:8px 12px; border-radius:0 6px 6px 0; margin-bottom:8px;">';
+            html += '    <strong style="color:#34d399; font-size:0.82rem;">பொழிப்புரை: </strong><span style="color:#f1f5f9; font-size:0.92rem;">' + v.bhavartha + '</span>';
+            html += '  </div>';
+          }
+
+          if (v.notes) {
+            html += '  <div style="font-size:0.82rem; color:#93c5fd; background:rgba(56,189,248,0.06); padding:6px 10px; border-radius:6px;"><strong>பாஷ்யக் குறிப்பு:</strong> ' + v.notes + '</div>';
+          }
+
+          html += '</div>';
+        });
+      });
+
+      bodyEl.innerHTML = html;
+      var backdrop = document.getElementById('moolaNoolModalBackdrop');
+      if (backdrop) backdrop.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMoolaNoolModal() {
+      var backdrop = document.getElementById('moolaNoolModalBackdrop');
+      if (backdrop) backdrop.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeMoolaNoolModal();
+    });
+  </script>
+
 </body>
 </html>
