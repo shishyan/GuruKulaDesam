@@ -41,7 +41,9 @@
         <div class="strip-sub-menu">
           <div class="strip-sub-header">வாழ்வியல் &amp; இல்லற தர்மம்</div>
           <a href="kalvi.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M7 5h10l-1.5 4H8.5L7 5z"/><path d="M5 9h14l-1.5 5H6.5L5 9z"/><path d="M3 14h18v7H3v-7z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></span><span>வாழ்வியல் மையம் (12 நிலைகள்)</span></a>
-          <a href="school.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></span><span>இணையப் பள்ளி போர்டல்</span></a>
+                    <a href="grihastha.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-.8 2-1.5 3.5-1.5 5a1.5 1.5 0 0 0 3 0c0-1.5-.7-3-1.5-5z" fill="currentColor"/><path d="M5 13c0 4 3 6 7 6s7-2 7-6H5z"/><path d="M10 19v2h4v-2"/></svg></span><span>இல்லற தர்மம் &amp; சாசனம்</span></a>
+          <a href="siddha.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg></span><span>பதினெண் சித்தர் வாழ்வியல்</span></a>
+<a href="school.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></span><span>இணையப் பள்ளி போர்டல்</span></a>
           <a href="higher-studies.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(90 12 12)"/></svg></span><span>வேத-நவீன உயர்கல்வி</span></a>
           <a href="virtues.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L3 12.5V21h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg></span><span>அகர வரிசை நற்பண்புகள்</span></a>
           <a href="syllabus.html" class="strip-sub-item"><span class="strip-sub-icon"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span><span>முழு பாடத்திட்டம்</span></a>
@@ -238,7 +240,15 @@
         <!-- Sidebar Navigation List -->
         <nav class="sidebar-nav" aria-label="Course Sections">
           
-        <div class="sidebar-chapter-group active" id="side-group-1">
+        <div class="sidebar-chapter-group active" id="side-group-books">
+          <button type="button" class="sidebar-chapter-btn active" id="side-btn-books" onclick="selectChapter('books')">
+            <span class="sidebar-chapter-pill">
+              <span class="sidebar-num">📖</span>
+              <span>7 ஆசிரம நூல்கள்</span>
+            </span>
+          </button>
+        </div>
+<div class="sidebar-chapter-group active" id="side-group-1">
           <button type="button" class="sidebar-chapter-btn active" id="side-btn-1" onclick="selectChapter(1)">
             <span class="sidebar-chapter-pill">
               <span class="sidebar-num">9.1</span>
@@ -414,60 +424,46 @@
           </button>
         </div>
         
-    <div class="sidebar-chapter-group" id="side-group-all">
-      <button type="button" class="sidebar-chapter-btn" id="side-btn-all" onclick="selectChapter('all')">
-        <span class="sidebar-chapter-pill">
-          <span class="sidebar-num"><svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
-          <span>முழு பாடநூல் பார்வை</span>
-        </span>
-      </button>
     </div>
-    
-        </nav>
-
-        <!-- Quick Grade Switcher in Sidebar -->
-        <div class="sidebar-other-grades">
-          <div class="sidebar-other-grades-title">அனைத்து 12 தரங்கள் (Jump to Grade):</div>
-          <div class="sidebar-grades-grid">
-            <a href="tharam-1.html" class="sidebar-grade-pill ">1</a><a href="tharam-2.html" class="sidebar-grade-pill ">2</a><a href="tharam-3.html" class="sidebar-grade-pill ">3</a><a href="tharam-4.html" class="sidebar-grade-pill ">4</a><a href="tharam-5.html" class="sidebar-grade-pill ">5</a><a href="tharam-6.html" class="sidebar-grade-pill ">6</a><a href="tharam-7.html" class="sidebar-grade-pill ">7</a><a href="tharam-8.html" class="sidebar-grade-pill ">8</a><a href="tharam-9.html" class="sidebar-grade-pill active">9</a><a href="tharam-10.html" class="sidebar-grade-pill ">10</a><a href="tharam-11.html" class="sidebar-grade-pill ">11</a><a href="tharam-12.html" class="sidebar-grade-pill ">12</a>
-          </div>
-        </div>
       </aside>
 
       <!-- Main Course Column -->
       <div class="course-main-column">
 
         
-    <!-- COGNITIVE LOAD REDUCTION: GRADE FOCUS STUDY HUB -->
-    <nav class="grade-focus-hub-bar" aria-label="கற்றல் பிரிவுகள்">
-      <button type="button" class="grade-hub-btn active" onclick="switchGradeStudyMode('books')" id="hubBtn_books" title="7 ஆசிரமப் பாடநூல்கள் வாசிக்க">
+    <!-- COGNITIVE LOAD REDUCTION: CHAPTER & BOOK FOCUS HUB (Max 2-3 A4 pages per view) -->
+    <nav class="grade-focus-hub-bar" aria-label="அத்தியாயப் பிரிவுகள்">
+      <button type="button" class="grade-hub-btn active" onclick="selectChapter('books')" id="hubBtn_books" title="7 ஆசிரமப் பாடநூல்கள்">
         <span class="hub-icon">📖</span>
-        <span class="hub-label">7 ஆசிரமப் பாடநூல்கள்</span>
-        <span class="hub-count">7 நூல்கள்</span>
+        <span class="hub-label">7 நூல்கள்</span>
       </button>
-      <button type="button" class="grade-hub-btn" onclick="switchGradeStudyMode('sheets')" id="hubBtn_sheets" title="பாடநூல் தாள்களைப் பகுதி வாரியாகக் காண்க">
+      <button type="button" class="grade-hub-btn" onclick="selectChapter(1)" id="hubBtn_1" title="அத்தியாயம் 1">
+        <span class="hub-icon">1</span>
+        <span class="hub-label">அத்தியாயம் 1</span>
+      </button>
+      <button type="button" class="grade-hub-btn" onclick="selectChapter(2)" id="hubBtn_2" title="அத்தியாயம் 2">
+        <span class="hub-icon">2</span>
+        <span class="hub-label">அத்தியாயம் 2</span>
+      </button>
+      <button type="button" class="grade-hub-btn" onclick="selectChapter(3)" id="hubBtn_3" title="அத்தியாயம் 3">
+        <span class="hub-icon">3</span>
+        <span class="hub-label">அத்தியாயம் 3</span>
+      </button>
+      <button type="button" class="grade-hub-btn" onclick="selectChapter(4)" id="hubBtn_4" title="அத்தியாயம் 4">
+        <span class="hub-icon">4</span>
+        <span class="hub-label">அத்தியாயம் 4</span>
+      </button>
+      <button type="button" class="grade-hub-btn" onclick="selectChapter(5)" id="hubBtn_5" title="அத்தியாயம் 5">
+        <span class="hub-icon">5</span>
+        <span class="hub-label">அத்தியாயம் 5</span>
+      </button>
+      <button type="button" class="grade-hub-btn" onclick="selectChapter(6)" id="hubBtn_6" title="அத்தியாயம் 6">
+        <span class="hub-icon">6</span>
+        <span class="hub-label">அத்தியாயம் 6</span>
+      </button>
+      <button type="button" class="grade-hub-btn" onclick="selectChapter('sheets')" id="hubBtn_sheets" title="பாடநூல் தாள்கள்">
         <span class="hub-icon">📑</span>
         <span class="hub-label">பாடநூல் தாள்கள்</span>
-        <span class="hub-count">60 தாள்கள்</span>
-      </button>
-      <button type="button" class="grade-hub-btn" onclick="switchGradeStudyMode('highlights')" id="hubBtn_highlights" title="பாடத்திட்ட உள்ளடக்கக் குறிப்புகள்">
-        <span class="hub-icon">🏛️</span>
-        <span class="hub-label">பாடத்திட்டம் &amp; குறிப்புகள்</span>
-        <span class="hub-count">பாடநெறி</span>
-      </button>
-      <button type="button" class="grade-hub-btn" onclick="switchGradeStudyMode('panpaadu')" id="hubBtn_panpaadu" title="தமிழர் பண்பாடும் சிறுவர் விழாக்களும்">
-        <span class="hub-icon">🪔</span>
-        <span class="hub-label">பண்பாடு &amp; விழாக்கள்</span>
-        <span class="hub-count">வாழ்வியல்</span>
-      </button>
-      <button type="button" class="grade-hub-btn" onclick="switchGradeStudyMode('virtues')" id="hubBtn_virtues" title="நற்பண்புகள், வினாடி-வினா &amp; தினசரி சாதனா">
-        <span class="hub-icon">🌸</span>
-        <span class="hub-label">நற்பண்புகள் &amp; பயிற்சி</span>
-        <span class="hub-count">தேர்வு &amp; சாதனா</span>
-      </button>
-      <button type="button" class="grade-hub-btn show-all-btn" onclick="switchGradeStudyMode('all')" id="hubBtn_all" title="அனைத்து பிரிவுகளையும் ஒரே பக்கத்தில் காண்க">
-        <span class="hub-icon">📜</span>
-        <span class="hub-label">முழுப் பார்வை</span>
       </button>
     </nav>
 
@@ -2611,14 +2607,12 @@
             </p>
           </div>
           
-    <!-- SHEETS BATCH PAGINATION (Reduces scrolling fatigue & cognitive overload) -->
-    <div class="sheets-batch-bar" id="sheetsBatchBar">
-      <span style="font-size:0.82rem; font-weight:700; color:var(--gold-soft); margin-right:4px;">பகுதி தேர்வு:</span>
-      <button type="button" class="sheet-batch-btn active" id="batchBtn_1" onclick="filterSheetBatch(1)">பகுதி 1 (1–15)</button>
-      <button type="button" class="sheet-batch-btn" id="batchBtn_2" onclick="filterSheetBatch(2)">பகுதி 2 (16–30)</button>
-      <button type="button" class="sheet-batch-btn" id="batchBtn_3" onclick="filterSheetBatch(3)">பகுதி 3 (31–45)</button>
-      <button type="button" class="sheet-batch-btn" id="batchBtn_4" onclick="filterSheetBatch(4)">பகுதி 4 (46–60)</button>
-      <button type="button" class="sheet-batch-btn" id="batchBtn_all" onclick="filterSheetBatch('all')">அனைத்து 60 தாள்களும்</button>
+    <!-- PAGINATION BAR: 6 Sheets Per View (Strict Cognitive Load Limit: Max 1 A4 Page) -->
+    <div class="sheets-pagination-bar" id="sheetsPaginationBar" style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:8px; margin:16px 0 24px; padding:12px 16px; background:rgba(15,23,42,0.8); border:1px solid rgba(56,189,248,0.25); border-radius:12px;">
+      <button type="button" class="sheet-page-btn" id="sheetPrevBtn" onclick="changeSheetPage(-1)" style="padding:6px 14px; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); color:#38bdf8; border-radius:8px; font-weight:700; cursor:pointer;">◀ முந்தைய</button>
+      <div id="sheetPageNumbers" style="display:flex; gap:6px; flex-wrap:wrap; align-items:center;"></div>
+      <button type="button" class="sheet-page-btn" id="sheetNextBtn" onclick="changeSheetPage(1)" style="padding:6px 14px; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); color:#38bdf8; border-radius:8px; font-weight:700; cursor:pointer;">அடுத்தது ▶</button>
+      <span id="sheetPageIndicator" style="color:var(--gold-soft); font-size:0.85rem; font-weight:700; margin-left:8px;"></span>
     </div>
 
     <div class="sheets-grid">
@@ -2825,208 +2819,153 @@
   <script src="assets/data/catalog.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
+    // =========================================================================
+    // COGNITIVE LOAD REDUCTION ENGINE (Focused Chapter Panels & 6-Sheet Pagination)
+    // =========================================================================
+    var currentSheetPage = 1;
+    var sheetsPerPage = 6;
+
     function selectChapter(unitNum) {
-      const panels = document.querySelectorAll('.lesson-unit-panel');
-      panels.forEach(p => p.classList.remove('active'));
-      
-      const tabs = document.querySelectorAll('.course-tab-btn');
-      tabs.forEach(t => t.classList.remove('active'));
+      // 1. Hub buttons active state
+      var hubBtns = document.querySelectorAll('.grade-hub-btn');
+      hubBtns.forEach(function(b) {
+        if (b.id === 'hubBtn_' + unitNum) b.classList.add('active');
+        else b.classList.remove('active');
+      });
 
-      const sideGroups = document.querySelectorAll('.sidebar-chapter-group');
-      sideGroups.forEach(g => g.classList.remove('active'));
+      var booksSec = document.querySelector('.grade-7books-box');
+      var panels = document.querySelectorAll('.lesson-unit-panel');
+      panels.forEach(function(p) { p.classList.remove('active'); });
 
-      const sideBtns = document.querySelectorAll('.sidebar-chapter-btn');
-      sideBtns.forEach(b => b.classList.remove('active'));
-      
-      if (unitNum === 'all') {
-        panels.forEach(p => p.classList.add('active'));
-        const allBtn = document.getElementById('tab-btn-all');
-        if (allBtn) allBtn.classList.add('active');
-        const sideAll = document.getElementById('side-group-all');
-        if (sideAll) sideAll.classList.add('active');
+      var sideGroups = document.querySelectorAll('.sidebar-chapter-group');
+      sideGroups.forEach(function(g) { g.classList.remove('active'); });
+
+      var sideBtns = document.querySelectorAll('.sidebar-chapter-btn');
+      sideBtns.forEach(function(b) { b.classList.remove('active'); });
+
+      if (unitNum === 'books') {
+        if (booksSec) booksSec.style.display = 'block';
+        var sideBooks = document.getElementById('side-group-books');
+        if (sideBooks) sideBooks.classList.add('active');
       } else if (unitNum === 'sheets') {
-        const sheetsPanel = document.getElementById('unit-panel-sheets');
-        const sheetsTab = document.getElementById('tab-btn-sheets');
-        const sideSheets = document.getElementById('side-group-sheets');
+        if (booksSec) booksSec.style.display = 'none';
+        var sheetsPanel = document.getElementById('unit-panel-sheets');
+        var sideSheets = document.getElementById('side-group-sheets');
         if (sheetsPanel) sheetsPanel.classList.add('active');
-        if (sheetsTab) sheetsTab.classList.add('active');
         if (sideSheets) sideSheets.classList.add('active');
+        renderSheetPagination();
       } else {
-        const targetPanel = document.getElementById('unit-panel-' + unitNum);
-        const targetTab = document.getElementById('tab-btn-' + unitNum);
-        const sideGroup = document.getElementById('side-group-' + unitNum);
-        const sideBtn = document.getElementById('side-btn-' + unitNum);
+        if (booksSec) booksSec.style.display = 'none';
+        var targetPanel = document.getElementById('unit-panel-' + unitNum);
+        var sideGroup = document.getElementById('side-group-' + unitNum);
+        var sideBtn = document.getElementById('side-btn-' + unitNum);
         if (targetPanel) targetPanel.classList.add('active');
-        if (targetTab) targetTab.classList.add('active');
         if (sideGroup) sideGroup.classList.add('active');
         if (sideBtn) sideBtn.classList.add('active');
       }
-      
+
       closeCourseSidebar();
-      const targetStart = document.getElementById('course-content-start');
-      if (targetStart) {
-        targetStart.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Scroll to content top
+      var hubBar = document.querySelector('.grade-focus-hub-bar');
+      if (hubBar && window.scrollY > hubBar.offsetTop) {
+        hubBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      if (history.replaceState) {
+        history.replaceState(null, null, window.location.pathname + window.location.search + '#' + unitNum);
       }
     }
 
     function goToSection(unitNum, sectionId) {
       selectChapter(unitNum);
       closeCourseSidebar();
-      setTimeout(() => {
-        const el = document.getElementById(sectionId);
+      setTimeout(function() {
+        var el = document.getElementById(sectionId);
         if (el) {
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-      }, 50);
+      }, 60);
     }
 
-    function toggleCourseSidebar() {
-      const sidebar = document.getElementById('courseSidebar');
-      const overlay = document.getElementById('courseSidebarOverlay');
-      if (sidebar && overlay) {
-        const isOpen = sidebar.classList.contains('open');
-        if (isOpen) {
-          sidebar.classList.remove('open');
-          overlay.classList.remove('active');
-          document.body.style.overflow = '';
-        } else {
-          sidebar.classList.add('open');
-          overlay.classList.add('active');
-          document.body.style.overflow = 'hidden';
-        }
-      }
-    }
+    function renderSheetPagination() {
+      var cards = document.querySelectorAll('#unit-panel-sheets .sheets-grid .sheet-card, .sheets-grid .sheet-card');
+      var totalSheets = cards.length;
+      if (!totalSheets) return;
+      var totalPages = Math.ceil(totalSheets / sheetsPerPage);
+      if (currentSheetPage > totalPages) currentSheetPage = totalPages;
+      if (currentSheetPage < 1) currentSheetPage = 1;
 
-    function closeCourseSidebar() {
-      const sidebar = document.getElementById('courseSidebar');
-      const overlay = document.getElementById('courseSidebarOverlay');
-      if (sidebar && overlay) {
-        sidebar.classList.remove('open');
-        overlay.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-    }
-  </script>
-<script src="assets/js/moola-nool-data.js"></script>
-
-  <script>
-    // =========================================================================
-    // COGNITIVE LOAD REDUCTION ENGINE (Grade Focus Hub & Batching)
-    // =========================================================================
-    function switchGradeStudyMode(mode) {
-      var hubBtns = document.querySelectorAll('.grade-hub-btn');
-      hubBtns.forEach(function(b) {
-        if (b.id === 'hubBtn_' + mode) b.classList.add('active');
-        else b.classList.remove('active');
-      });
-
-      var booksSec = document.querySelector('.grade-7books-box');
-      var highlightsSec = document.getElementById('syllabus-highlights');
-      var panpaaduSec = document.getElementById('gradePanpaaduSection');
-      var sheetsHeading = document.getElementById('sheets-section');
-      var sheetsBatch = document.getElementById('sheetsBatchBar');
-      var sheetsGrid = document.querySelector('.sheets-grid');
-      var sheetsIntro = document.getElementById('sheetsIntroText');
-      var virtueBox = document.getElementById('gradeVirtueBox');
-      var quizSec = document.getElementById('quizSection');
-      var sadhanaBox = document.getElementById('sadhanaBox') || document.querySelector('[id^="lms-box"]');
-
-      var allSecs = [booksSec, highlightsSec, panpaaduSec, sheetsHeading, sheetsBatch, sheetsGrid, sheetsIntro, virtueBox, quizSec, sadhanaBox];
-
-      if (mode === 'all') {
-        allSecs.forEach(function(el) { if (el) el.style.display = ''; });
-        if (sheetsHeading) sheetsHeading.style.display = 'flex';
-        filterSheetBatch('all');
-      } else {
-        // Hide all first
-        allSecs.forEach(function(el) { if (el) el.style.display = 'none'; });
-
-        // Show only selected mode components
-        if (mode === 'books') {
-          if (booksSec) booksSec.style.display = 'block';
-        } else if (mode === 'sheets') {
-          if (sheetsHeading) sheetsHeading.style.display = 'flex';
-          if (sheetsBatch) sheetsBatch.style.display = 'flex';
-          if (sheetsGrid) sheetsGrid.style.display = 'grid';
-          if (sheetsIntro) sheetsIntro.style.display = 'block';
-          filterSheetBatch(1);
-        } else if (mode === 'highlights') {
-          if (highlightsSec) highlightsSec.style.display = 'block';
-        } else if (mode === 'panpaadu') {
-          if (panpaaduSec) panpaaduSec.style.display = 'block';
-        } else if (mode === 'virtues') {
-          if (virtueBox) virtueBox.style.display = 'block';
-          if (quizSec) quizSec.style.display = 'block';
-          if (sadhanaBox) sadhanaBox.style.display = 'block';
-        }
-      }
-
-      // Smooth scroll to study area if user clicked
-      var hubBar = document.querySelector('.grade-focus-hub-bar');
-      if (hubBar && window.scrollY > hubBar.offsetTop) {
-        hubBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-
-      // Update URL hash without jumping
-      if (history.replaceState) {
-        var newHash = (mode === 'all') ? '' : '#' + mode;
-        history.replaceState(null, null, window.location.pathname + window.location.search + newHash);
-      }
-    }
-
-    function filterSheetBatch(batch) {
-      var batchBtns = document.querySelectorAll('.sheet-batch-btn');
-      batchBtns.forEach(function(b) {
-        if ((batch === 'all' && b.id === 'batchBtn_all') || b.id === 'batchBtn_' + batch) {
-          b.classList.add('active');
-        } else {
-          b.classList.remove('active');
-        }
-      });
-
-      var cards = document.querySelectorAll('.sheets-grid .sheet-card');
       cards.forEach(function(card, idx) {
-        var sheetNum = idx + 1;
-        if (batch === 'all') {
+        var start = (currentSheetPage - 1) * sheetsPerPage;
+        var end = start + sheetsPerPage;
+        if (idx >= start && idx < end) {
           card.style.display = '';
         } else {
-          var start = (batch - 1) * 15 + 1;
-          var end = batch * 15;
-          if (sheetNum >= start && sheetNum <= end) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
+          card.style.display = 'none';
         }
       });
+
+      var startNum = (currentSheetPage - 1) * sheetsPerPage + 1;
+      var endNum = Math.min(currentSheetPage * sheetsPerPage, totalSheets);
+      var ind = document.getElementById('sheetPageIndicator');
+      if (ind) ind.innerText = 'பக்கம் ' + currentSheetPage + ' / ' + totalPages + ' (தாள்கள் ' + startNum + '–' + endNum + ')';
+
+      var prevBtn = document.getElementById('sheetPrevBtn');
+      if (prevBtn) prevBtn.disabled = (currentSheetPage === 1);
+      var nextBtn = document.getElementById('sheetNextBtn');
+      if (nextBtn) nextBtn.disabled = (currentSheetPage === totalPages);
+
+      var pContainer = document.getElementById('sheetPageNumbers');
+      if (pContainer) {
+        pContainer.innerHTML = '';
+        for (var p = 1; p <= totalPages; p++) {
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.innerText = p;
+          btn.className = 'sheet-batch-btn' + (p === currentSheetPage ? ' active' : '');
+          btn.style.padding = '4px 10px';
+          btn.style.minWidth = '32px';
+          btn.onclick = (function(pageNo) {
+            return function() { goToSheetPage(pageNo); };
+          })(p);
+          pContainer.appendChild(btn);
+        }
+      }
+    }
+
+    function changeSheetPage(delta) {
+      currentSheetPage += delta;
+      renderSheetPagination();
+      var anchor = document.getElementById('unit-panel-sheets') || document.querySelector('.sheets-grid');
+      if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function goToSheetPage(p) {
+      currentSheetPage = p;
+      renderSheetPagination();
+      var anchor = document.getElementById('unit-panel-sheets') || document.querySelector('.sheets-grid');
+      if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     // Auto-initialize mode from URL hash or default to 'books'
     document.addEventListener('DOMContentLoaded', function() {
       var hash = window.location.hash.replace('#', '');
-      var validModes = ['books', 'sheets', 'highlights', 'panpaadu', 'virtues', 'all'];
-      if (validModes.indexOf(hash) !== -1) {
-        switchGradeStudyMode(hash);
+      var validUnits = ['books', '1', '2', '3', '4', '5', '6', 'sheets'];
+      if (validUnits.indexOf(hash) !== -1) {
+        selectChapter(hash);
       } else {
-        switchGradeStudyMode('books');
+        selectChapter('books');
       }
 
-      // Hook sidebar navigation links to focus mode switch
+      // Sidebar books link hook
+      var sideBooks = document.getElementById('side-group-books');
+      if (sideBooks) {
+        sideBooks.querySelector('button, a').onclick = function(e) { e.preventDefault(); selectChapter('books'); };
+      }
       var sideSheets = document.getElementById('side-group-sheets');
       if (sideSheets) {
-        sideSheets.querySelector('a').onclick = function(e) { e.preventDefault(); switchGradeStudyMode('sheets'); };
-      }
-      var sideHighlights = document.getElementById('side-group-highlights');
-      if (sideHighlights) {
-        sideHighlights.querySelector('a').onclick = function(e) { e.preventDefault(); switchGradeStudyMode('highlights'); };
-      }
-      var sidePanpaadu = document.getElementById('side-group-panpaadu');
-      if (sidePanpaadu) {
-        sidePanpaadu.querySelector('a').onclick = function(e) { e.preventDefault(); switchGradeStudyMode('panpaadu'); };
-      }
-      var sideVirtue = document.getElementById('side-group-virtue');
-      if (sideVirtue) {
-        sideVirtue.querySelector('a').onclick = function(e) { e.preventDefault(); switchGradeStudyMode('virtues'); };
+        sideSheets.querySelector('button, a').onclick = function(e) { e.preventDefault(); selectChapter('sheets'); };
       }
     });
   </script>
