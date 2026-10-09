@@ -225,7 +225,7 @@ function renderCurrentChapterContent() {
           <span class="chap-num-tag">அத்தியாயம் ${chap.chapterNumber} / ${totalChapters}</span>
           <h2 class="chap-read-title">${chap.title}</h2>
         </div>
-        <button type="button" class="lesson-speech-btn" onclick="readAloudChapter()" title="குரல்வழிக் கேட்க">
+        <button type="button" class="lesson-speech-btn" id="lessonSpeechBtn" onclick="readAloudChapter()" title="குரல்வழிக் கேட்க">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
           <span>அத்தியாயம் கேட்க</span>
         </button>
@@ -249,18 +249,6 @@ function renderCurrentChapterContent() {
             மூல நூல் நூலகம் &rarr;
           </a>
         </div>
-        ${images[1] ? `
-          <div class="inline-art-card" onclick="openArtLightboxByIndex(1)" title="பெரிதாகக் காண கிளிக் செய்க">
-            <div class="art-zoom-hint">
-              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
-            </div>
-            <img src="${images[1].url}" alt="${images[1].caption}" loading="lazy">
-            <div class="inline-art-caption">
-              <span>${images[1].caption}</span>
-              <span class="inline-art-badge">காட்சி 2 • செய்யுள் களம்</span>
-            </div>
-          </div>
-        ` : ''}
       </div>
 
       <!-- Philosophical Exposition -->
@@ -272,18 +260,6 @@ function renderCurrentChapterContent() {
         <div style="color:#e2e8f0; font-size:0.96rem; line-height:1.8; margin-bottom:12px;">
           ${chap.exposition}
         </div>
-        ${images[2] ? `
-          <div class="inline-art-card" onclick="openArtLightboxByIndex(2)" title="பெரிதாகக் காண கிளிக் செய்க">
-            <div class="art-zoom-hint">
-              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
-            </div>
-            <img src="${images[2].url}" alt="${images[2].caption}" loading="lazy">
-            <div class="inline-art-caption">
-              <span>${images[2].caption}</span>
-              <span class="inline-art-badge">காட்சி 3 • தத்துவ உரை</span>
-            </div>
-          </div>
-        ` : ''}
       </div>
 
       <!-- Puranic / Itihasic Narrative Story -->
@@ -292,33 +268,9 @@ function renderCurrentChapterContent() {
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
           மெய்ஞ்ஞானக் கதை / அற உருவகம் (Narrative Illustration)
         </h4>
-        ${images[3] ? `
-          <div class="inline-art-card" onclick="openArtLightboxByIndex(3)" title="பெரிதாகக் காண கிளிக் செய்க">
-            <div class="art-zoom-hint">
-              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
-            </div>
-            <img src="${images[3].url}" alt="${images[3].caption}" loading="lazy">
-            <div class="inline-art-caption">
-              <span>${images[3].caption}</span>
-              <span class="inline-art-badge">காட்சி 4 • கதைக் களம்</span>
-            </div>
-          </div>
-        ` : ''}
         <div style="color:#cbd5e1; font-size:0.93rem; line-height:1.8; margin:12px 0;">
           ${chap.story}
         </div>
-        ${images[4] ? `
-          <div class="inline-art-card" onclick="openArtLightboxByIndex(4)" title="பெரிதாகக் காண கிளிக் செய்க">
-            <div class="art-zoom-hint">
-              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
-            </div>
-            <img src="${images[4].url}" alt="${images[4].caption}" loading="lazy">
-            <div class="inline-art-caption">
-              <span>${images[4].caption}</span>
-              <span class="inline-art-badge">காட்சி 5 • அறத்தின் வெற்றி</span>
-            </div>
-          </div>
-        ` : ''}
       </div>
 
       <!-- Life Application & Householder Dharma -->
@@ -330,18 +282,6 @@ function renderCurrentChapterContent() {
         <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7;">
           ${chap.lifeApplication}
         </div>
-        ${images[5] ? `
-          <div class="inline-art-card" onclick="openArtLightboxByIndex(5)" title="பெரிதாகக் காண கிளிக் செய்க">
-            <div class="art-zoom-hint">
-              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
-            </div>
-            <img src="${images[5].url}" alt="${images[5].caption}" loading="lazy">
-            <div class="inline-art-caption">
-              <span>${images[5].caption}</span>
-              <span class="inline-art-badge">காட்சி 6 • வாழ்வியல் சாதனா</span>
-            </div>
-          </div>
-        ` : ''}
       </div>
 
       <!-- Sadhana Exercise & Contemplative Question -->
@@ -353,18 +293,6 @@ function renderCurrentChapterContent() {
         <div style="color:#e2e8f0; font-size:0.92rem; line-height:1.7;">
           ${chap.exercise}
         </div>
-        ${images[6] ? `
-          <div class="inline-art-card" onclick="openArtLightboxByIndex(6)" title="பெரிதாகக் காண கிளிக் செய்க">
-            <div class="art-zoom-hint">
-              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg> பெரிதாக்கு
-            </div>
-            <img src="${images[6].url}" alt="${images[6].caption}" loading="lazy">
-            <div class="inline-art-caption">
-              <span>${images[6].caption}</span>
-              <span class="inline-art-badge">காட்சி 7 • தியான &amp; சிந்தனைக் காட்சி</span>
-            </div>
-          </div>
-        ` : ''}
       </div>
 
       <!-- Curricular Scripture & Media Vault Integration -->
@@ -530,18 +458,67 @@ function renderFallbackBook() {
 }
 
 function readAloudChapter() {
+  const btn = document.getElementById('lessonSpeechBtn');
+  if (!('speechSynthesis' in window)) {
+    alert('உங்கள் உலாவியில் குரல்வழி வாசிப்பு வசதி இல்லை.');
+    return;
+  }
+
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    if (btn) {
+      btn.classList.remove('speaking');
+      btn.innerHTML = `
+        <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        <span>அத்தியாயம் கேட்க</span>
+      `;
+    }
+    return;
+  }
+
+  window.speechSynthesis.cancel();
   const container = document.getElementById('activeChapterReadingArea');
   if (!container) return;
-  const text = container.innerText;
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'ta-IN';
-    utterance.rate = 0.95;
-    window.speechSynthesis.speak(utterance);
-  } else {
-    alert('உங்கள் உலாவியில் குரல்வழி வாசிப்பு வசதி இல்லை.');
+
+  // Clean text extraction without button labels or navigation text
+  const textBlocks = Array.from(container.querySelectorAll('.chap-read-title, .verse-text-sacred, .verse-meaning-clean, .reading-section-block'))
+    .map(el => el.innerText.trim())
+    .filter(t => t.length > 0);
+
+  const textToRead = textBlocks.join('\n\n');
+  const utterance = new SpeechSynthesisUtterance(textToRead);
+  utterance.lang = 'ta-IN';
+  utterance.rate = 0.95;
+
+  utterance.onend = () => {
+    if (btn) {
+      btn.classList.remove('speaking');
+      btn.innerHTML = `
+        <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        <span>அத்தியாயம் கேட்க</span>
+      `;
+    }
+  };
+
+  utterance.onerror = () => {
+    if (btn) {
+      btn.classList.remove('speaking');
+      btn.innerHTML = `
+        <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        <span>அத்தியாயம் கேட்க</span>
+      `;
+    }
+  };
+
+  if (btn) {
+    btn.classList.add('speaking');
+    btn.innerHTML = `
+      <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+      <span>வாசிப்பை நிறுத்துக</span>
+    `;
   }
+
+  window.speechSynthesis.speak(utterance);
 }
 
 // High-Resolution Artwork Lightbox Modal Controls
