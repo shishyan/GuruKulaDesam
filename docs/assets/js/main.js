@@ -1421,10 +1421,10 @@ function getContextTabsForPage() {
   if (filename === 'school.html') {
     return [
       { id: 'tab-portal', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>', label: 'மாணவர் போர்டல்', action: "scrollToSection('portalDashboard')", active: true },
-      { id: 'tab-fusion', icon: GKD_ICONS.science, label: 'அறிவியல்-வேத சங்கமம்', action: "scrollToSection('stemFusionSection')" },
       { id: 'tab-hall', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>', label: 'தியான & படிப்பு அரங்கம்', action: "scrollToSection('focusStudyHall')" },
       { id: 'tab-cert', icon: GKD_ICONS.scroll, label: 'பட்டயச் சான்றிதழ்', action: "scrollToSection('certificateSection')" },
       { id: 'tab-cards', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>', label: 'நினைவாற்றல் அட்டைகள்', action: "scrollToSection('flashcardsSection')" },
+      { id: 'tab-parent', icon: GKD_ICONS.om, label: 'பெற்றோர் வழிகாட்டி', action: "scrollToSection('parentGuide')" },
       { id: 'tab-roadmap', icon: '<svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>', label: '12 தரப் பாடநெறி', action: "scrollToSection('roadmapSection')" },
       { id: 'tab-tracker', icon: GKD_ICONS.check, label: 'தினசரி தர்ம டிராக்கர்', href: 'kalvi.html#grihasthaTracker' },
       { id: 'tab-charter', icon: GKD_ICONS.scroll, label: 'குடும்ப சாசனம்', href: 'kalvi.html#familyCharter' }
@@ -1438,6 +1438,7 @@ function getContextTabsForPage() {
       { id: 'tab-hs-ug', icon: GKD_ICONS.scroll, label: 'இளநிலை: பிரஸ்தானத்ரயம்', action: "scrollToSection('tierUG')" },
       { id: 'tab-hs-pg', icon: GKD_ICONS.trishul, label: 'முதுநிலை: மெய்கண்ட சாத்திரங்கள்', action: "scrollToSection('tierPG')" },
       { id: 'tab-hs-phd', icon: GKD_ICONS.crown, label: 'கலாநிதி ஆய்வுப் பீடம்', action: "scrollToSection('tierPhD')" },
+      { id: 'tab-hs-fusion', icon: GKD_ICONS.science, label: '8 தூண்கள் ஆய்வு', action: "scrollToSection('stemFusionSection')" },
       { id: 'tab-hs-glossary', icon: GKD_ICONS.book, label: 'வேதாந்தக் கலைச்சொற்கள்', action: "scrollToSection('glossarySection')" },
       { id: 'tab-hs-cert', icon: GKD_ICONS.scroll, label: 'ஆய்வுப் பட்டயம்', action: "scrollToSection('fellowshipSection')" },
       { id: 'tab-hs-school', icon: GKD_ICONS.school, label: 'இணையப் பள்ளி', href: 'school.html' },
