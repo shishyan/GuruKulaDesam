@@ -247,89 +247,36 @@
   </header>
 
   <main class="main-content">
-    <div class="grade-curriculum-container">
+    <div class="grade-curriculum-container" style="padding-top: 6px;">
 
-      <!-- GRADE HERO BANNER -->
-      <div class="grade-hero-banner">
-        <div style="display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;">
-          <div style="flex:1; min-width:280px;">
-            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:10px;">
-              <span class="wbs-code" style="font-size:0.78rem;">WBS G09</span>
-              <span style="background:rgba(56, 189, 248, 0.18); color:#38bdf8;  font-size:0.75rem; font-weight:700; padding:2px 8px; border-radius:6px;">உயர்நிலைப் பருவம் (9-10)</span>
-              <span style="background:rgba(212, 175, 55, 0.2); color:var(--gold-bright); font-size:0.75rem; font-weight:700; padding:2px 8px; border-radius:6px;">Phase 2: உயர்நிலைப் பள்ளி (மகாபாரதம்: முரண்பாடுகளின் பொறிமுறை)</span>
-            </div>
-            <h1 style="color:#ffffff; font-size:2.2rem; font-weight:800; margin:0 0 6px 0;">
-              தரம் 9 — 7 ஆசிரமப் பாடநூல்கள்
-            </h1>
-            <p style="color:var(--gold-soft); font-size:1.02rem; font-weight:600; margin:0 0 10px 0;">
-              "தயையே பரம தர்மம்; விதுர நீதி வாழ்க — மகாபாரத விதுர நீதி"
-            </p>
-            <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; max-width:850px; margin:0 0 6px 0;">
-              <strong>இலக்கிய அடித்தளம்:</strong> மகாபாரதம் & விதுர நீதி — யக்ஷ பிரஸ்னம், பேராசையின் பேரழிவு, கண்ணன் தூது<br>
-              <strong>கற்பித்தல் நோக்கம்:</strong> நச்சு entitlement பகுப்பாய்வு, அநீதியில் மௌனம் சாதிக்கும் பாவம், நீதிக்காக நிற்றல்
-            </p>
-          </div>
-          <div style="flex-shrink:0; max-width:220px; width:100%; border-radius:14px; overflow:hidden; border:none !important; box-shadow:0 8px 24px rgba(0,0,0,0.5);">
-            <img src="assets/images/gurukula-banyan-tree-bg.jpg" alt="குருகுல தபோவனம்" style="width:100%; height:110px; object-fit:cover; display:block;" loading="lazy">
-          </div>
+      <!-- ZEN MINIMALIST GRADE HEADER -->
+      <div class="zen-grade-bar">
+        <div class="zen-grade-info">
+          <span class="zen-grade-pill">தரம் 9</span>
+          <span class="zen-book-pill" id="zenBookPill">நன்னெறி</span>
+          <span class="zen-phase-tag">உயர்நிலைப் பருவம் (9–10) • 6 நூல்கள்</span>
+        </div>
+        <div class="zen-grade-actions">
+          <a href="school.html" class="zen-info-btn" style="text-decoration:none;" title="பள்ளி அரங்கம்">🏛️ வித்யா குடீரம்</a>
+          <button type="button" class="zen-info-btn" onclick="openContextDrawer('stage3', 'தரம் 9 பாடத்திட்ட வழிகாட்டல்')" title="பாடத்திட்ட வழிகாட்டல்">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px; height:14px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span>பாட விபரம்</span>
+          </button>
         </div>
       </div>
 
-      <!-- GRADE FOCUSED SHELF HEADER -->
-      <div class="grade-focus-bar" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin: 10px 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.08);">
-        <div style="color:var(--gold-soft); font-size:0.9rem; font-weight:700;">
-          📖 தரம் 9 — 6 ஆசிரமப் பாடநூல்கள் (High School 6 Books: நன்னெறி, நல்லறம், நற்பண்பு, நற்துணை, நற்சொல், நற்செயல் • 42 அத்தியாயங்கள்)
-        </div>
-        <div style="display:flex; align-items:center; gap:8px;">
-          <a href="school.html" class="sheet-btn" style="font-size:0.8rem; padding:6px 14px; text-decoration:none;">🏛️ வித்யா குடீரம் பள்ளி அரங்கம்</a>
-          <a href="books.html?grade=9" class="sheet-btn sheet-btn-view" style="font-size:0.8rem; padding:6px 14px; text-decoration:none;">முழு மின்னூல் அரங்கம் &rarr;</a>
+      <!-- BOOK SELECTOR PILLS (Rendered dynamically if grade has > 1 book) -->
+      <div id="booksShelfTabs"></div>
+
+      <!-- CHAPTER SELECTOR TRACK (Rendered by books-reader.js: [1] [2] [3]...) -->
+      <div class="reader-chapter-tabs" id="readerChapterTabs"></div>
+
+      <!-- ACTIVE CHAPTER READING WORKSPACE (Starts immediately with Section 1) -->
+      <div id="activeChapterReadingArea">
+        <div style="text-align:center; padding:30px; color:var(--gold);">
+          பாடநூல் அத்தியாயங்கள் ஏற்றப்படுகின்றன...
         </div>
       </div>
-
-      <!-- THE 7 SACRED BOOKS SHELF (SINGLE TOP-LEVEL CONTAINER FOR THE GRADE) -->
-      <div id="books" style="scroll-margin-top: 80px;"></div>
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
-        <h3 style="color:#ffffff; font-size:1.15rem; font-weight:800; margin:0;">6 ஆசிரமப் பாடநூல்கள் (High School 6 Books)</h3>
-        <span style="color:#94a3b8; font-size:0.82rem;">அறநெறி, நல்லறம், நற்பண்பு, நற்துணை, இனிய சொல், நற்செயல் • 6 நூல்கள் • 42 அத்தியாயங்கள்</span>
-      </div>
-
-      <div class="books-shelf-grid" id="booksShelfTabs">
-        <!-- Rendered by books-reader.js -->
-      </div>
-
-      <!-- BOOK READER WORKSPACE (STRICT COGNITIVE LOAD CONTAINMENT: MAX 2-3 A4 PAGES) -->
-      <div class="book-reader-workspace" id="bookReaderWorkspace">
-        
-        <div class="reader-top-meta">
-          <div>
-            <span class="pat-level-code-pill" id="readerBookBadge">தரம் 9 • உயர்நிலைப் பருவம் (9–10) • 6 நூல்கள்</span>
-            <h2 class="reader-book-heading" id="readerBookTitle">நன்னெறி</h2>
-            <div class="reader-book-subheading" id="readerBookSubtitle">பணிவு, பெரியோர் மரியாதை மற்றும் தூய நடத்தை</div>
-            <div style="font-size:0.82rem; color:#94a3b8; margin-top:4px;" id="readerLiteratureBase">இலக்கிய அடித்தளம்: மகாபாரதம் & விதுர நீதி — யக்ஷ பிரஸ்னம், பேராசையின் பேரழிவு, கண்ணன் தூது</div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
-            <a href="syllabus.html#sevenBooksArchitecture" class="sheet-btn" style="font-size:0.82rem; padding:8px 14px; text-decoration:none;">
-              பாடத்திட்ட அட்டவணை <svg class="gkd-icon gkd-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- CHAPTER SELECTOR TABS -->
-        <div style="color:var(--gold-soft); font-size:0.82rem; font-weight:700; margin-bottom:8px;">அத்தியாயத்தைத் தேர்வு செய்க (Select Chapter):</div>
-        <div class="reader-chapter-tabs" id="readerChapterTabs">
-          <!-- Rendered by books-reader.js -->
-        </div>
-
-        <!-- ACTIVE CHAPTER READING AREA -->
-        <div id="activeChapterReadingArea">
-          <div style="text-align:center; padding:40px; color:var(--gold);">
-            பாடநூல் அத்தியாயங்கள் ஏற்றப்படுகின்றன...
-          </div>
-        </div>
-
-      </div>
-
-      
 
     </div>
   </main>

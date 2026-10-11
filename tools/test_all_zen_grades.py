@@ -11,10 +11,10 @@ async def verify_zen():
         b = await p.chromium.launch(executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe', headless=True)
         page = await b.new_page(viewport={'width': 1280, 'height': 850})
         
-        grades_to_test = [1, 2, 3, 4, 5, 6, 7, 8]
+        grades_to_test = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
         for g in grades_to_test:
             url = f'http://127.0.0.1:8080/tharam-{g}.html'
-            print(f"\n[Testing Grade {g}] {url}...")
+            print(f"\n[Testing Grade {g}] {url}...", flush=True)
             await page.goto(url, wait_until='networkidle')
             await page.wait_for_timeout(1500)
             
@@ -39,16 +39,16 @@ async def verify_zen():
             assert sec1 is not None, f"Grade {g}: Section 1 missing in chapter!"
             box = await sec1.bounding_box()
             assert box is not None, f"Grade {g}: Bounding box for Section 1 is None!"
-            print(f"  ✓ Grade {g} Section 1 top coordinate: {box['y']:.1f}px (Target: < 450px for immediate above-the-fold display)")
+            print(f"  ✓ Grade {g} Section 1 top coordinate: {box['y']:.1f}px (Target: < 450px for immediate above-the-fold display)", flush=True)
             assert box['y'] < 500, f"Grade {g} Section 1 is too far down ({box['y']}px)!"
             
             # Snapshot representative grades
-            if g in [1, 3, 5, 8]:
+            if g in [1, 5, 9, 11]:
                 snap_path = f'renders/tharam_{g}_zen_above_fold.png'
                 await page.screenshot(path=snap_path, full_page=False)
-                print(f"  📸 Captured screenshot: {snap_path}")
+                print(f"  📸 Captured screenshot: {snap_path}", flush=True)
 
-        print("\n✅ ALL PRIMARY & MIDDLE GRADES (1-8) VERIFIED: Distraction-free Zen Above-The-Fold!")
+        print("\n✅ ALL 12 GURUKULA GRADES (1-12) VERIFIED: Distraction-free Zen Above-The-Fold!", flush=True)
         await b.close()
 
 if __name__ == '__main__':
