@@ -13,7 +13,7 @@ import argparse
 from pathlib import Path
 
 if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_FILE = ROOT / "production" / "murugan_published_manifest.json"
@@ -76,7 +76,8 @@ def main():
         
         print(f"\n[{i}/{len(releases)}] {rel['hymn']} ({tid})")
         print(f"  Title: {title}")
-        print(f"  Film:  {film_path.name} ({rel['file_size_mb']:.2f} MB, {rel['duration_sec']}s)")
+        size_str = f"{rel['file_size_mb']:.2f} MB" if rel.get('file_size_mb') is not None else "Unknown size"
+        print(f"  Film:  {film_path.name} ({size_str}, {rel['duration_sec']}s)")
 
         if rel.get("status") == "PUBLISHED" and rel.get("youtube_id"):
             print(f"  Already published: https://youtu.be/{rel['youtube_id']} - Skipping.")

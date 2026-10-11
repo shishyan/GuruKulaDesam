@@ -140,21 +140,40 @@ def wait_for_assistant_and_approve(page, timeout_sec=60):
     while time.time() - start_t < timeout_sec:
         page.wait_for_timeout(2000)
         
+        # Check for insufficient credits message
+        try:
+            body_txt = page.locator("body").inner_text(timeout=1000).lower()
+            if any(w in body_txt for w in ["not enough credits", "insufficient credits", "0 credits left", "out of credits", "quota exceeded"]):
+                print("[Flow ALERT] Out of credits detected on page!")
+                return False
+        except Exception:
+            pass
+
         # Check Always approve
-        always_btn = page.locator("text='Always approve'").all()
+        always_btn = page.get_by_text("Always approve").all()
+        if not always_btn:
+            always_btn = page.locator("text='Always approve'").all()
         if always_btn:
             print("[Flow] Clicking 'Always approve'...")
-            always_btn[-1].click()
-            page.wait_for_timeout(3000)
-            return True
+            try:
+                always_btn[-1].click(timeout=3000)
+                page.wait_for_timeout(3000)
+                return True
+            except Exception:
+                pass
             
         # Check regular Approve
-        approve_btn = page.locator("button:has-text('Approve'), [role='button']:has-text('Approve')").all()
+        approve_btn = page.get_by_text("Approve", exact=True).all()
+        if not approve_btn:
+            approve_btn = page.locator("button:has-text('Approve'), [role='button']:has-text('Approve')").all()
         if approve_btn:
             print("[Flow] Clicking 'Approve'...")
-            approve_btn[-1].click()
-            page.wait_for_timeout(3000)
-            return True
+            try:
+                approve_btn[-1].click(timeout=3000)
+                page.wait_for_timeout(3000)
+                return True
+            except Exception:
+                pass
             
         # Check if generation already started (Stop button active)
         stop_btn = page.locator("button[aria-label='Stop'], button:has-text('stop')")
@@ -167,6 +186,95 @@ def wait_for_assistant_and_approve(page, timeout_sec=60):
         if dl_btn.count() > 0 and dl_btn.is_visible():
             return True
 
+    return False
+
+def dismiss_overlays_and_modals(page):
+    """Dismisses any Google Flow onboarding, policy, or announcement modals."""
+    for _ in range(3):
+        handled = False
+        dialogs = page.locator("[role='dialog'], mat-dialog-container, .cdk-overlay-pane").all()
+        for dlg in dialogs:
+            for word in ["Agree", "Accept", "Next", "Continue", "Got it", "Dismiss", "Close"]:
+                btn = dlg.locator(f"button:has-text('{word}'), [role='button']:has-text('{word}')")
+                if btn.count() > 0 and btn.first.is_visible():
+                    try:
+                        print(f"[Flow] Dismissing modal with '{word}'...")
+                        btn.first.click(force=True)
+                        page.wait_for_timeout(1000)
+                        handled = True
+                        break
+                    except Exception:
+                        pass
+        if not handled:
+            break
+
+def download_from_editor(page, dest_mp4_path: Path, max_wait_sec=180) -> bool:
+    """Clicks Download media inside the Flow scene editor and selects the resolution."""
+    print("[Flow Editor] Monitoring render and triggering download from editor...")
+
+    # Ensure CDP allows automated downloads to Downloads folder
+    try:
+        cdp = page.context.new_cdp_session(page)
+        cdp.send("Page.setDownloadBehavior", {
+            "behavior": "allow",
+            "downloadPath": str(Path.home() / "Downloads")
+        })
+    except Exception:
+        pass
+
+    start_poll = time.time()
+    while time.time() - start_poll < max_wait_sec:
+        # Check if rendering progress badge (% indicator) is still present
+        try:
+            pct_loc = page.locator("text=/\\b\\d{1,2}%\\b/").first
+            if pct_loc.count() > 0 and pct_loc.is_visible():
+                p_text = pct_loc.inner_text().strip()
+                print(f"[Flow Editor] Render in progress: {p_text} ({int(time.time() - start_poll)}s elapsed)...")
+                page.wait_for_timeout(4000)
+                continue
+        except Exception:
+            pass
+
+        dl_media = page.locator("button[aria-label='Download media']:visible, [role='button'][aria-label='Download media']:visible, button[aria-label*='Download' i]:visible").first
+        if dl_media.count() > 0 and dl_media.is_enabled():
+            print(f"[Flow Editor] Video rendered and ready! Download button active after {int(time.time() - start_poll)}s.")
+            click_time = time.time()
+            try:
+                page.keyboard.press("Escape")
+                page.wait_for_timeout(300)
+                dl_media.click(force=True)
+                page.wait_for_timeout(1000)
+                
+                # Wait up to 4s for resolution menu to appear
+                res_opt = page.locator("button:has-text('1080p'), [role='menuitem']:has-text('1080p'), button:has-text('720p'), [role='menuitem']:has-text('720p'), button:has-text('Original size'), [role='menuitem']:has-text('Original size')").first
+                for _ in range(4):
+                    if res_opt.count() > 0 and res_opt.is_visible():
+                        break
+                    page.wait_for_timeout(1000)
+
+                if res_opt.count() > 0 and res_opt.is_visible():
+                    print(f"[Flow Editor] Selected download resolution: {res_opt.inner_text().strip()}")
+                    res_opt.click(force=True)
+                else:
+                    print("[Flow Editor] Resolution menu not detected, verifying direct download...")
+            except Exception as e:
+                print(f"[Flow Editor] Download click exception: {e}")
+
+            for _ in range(30):
+                page.wait_for_timeout(1000)
+                if check_recent_downloads(dest_mp4_path, click_time):
+                    print(f"[Flow Editor SUCCESS] Downloaded {dest_mp4_path.name} ({dest_mp4_path.stat().st_size} bytes)")
+                    if "/edit/" in page.url:
+                        back_btn = page.locator("button[aria-label*='Back' i]:visible, [role='button'][aria-label*='Back' i]:visible").first
+                        if back_btn.count() > 0:
+                            back_btn.click(force=True)
+                        else:
+                            page.go_back()
+                        page.wait_for_timeout(2000)
+                    return True
+        page.wait_for_timeout(3000)
+
+    print("[Flow Editor] Timed out waiting for video in editor.")
     return False
 
 def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wait_ready=False):
@@ -187,6 +295,11 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
             wait_for_assistant_and_approve(page)
             start_t = time.time()
             continue
+
+        if "/edit/" in page.url:
+            if only_wait_ready:
+                return True
+            return download_from_editor(page, dest_mp4_path)
 
         if elapsed < 35:
             print(f"[Flow] Render in progress... {elapsed}s elapsed")
@@ -215,18 +328,10 @@ def wait_and_download_video(page, dest_mp4_path: Path, max_wait_sec=240, only_wa
                 editor_btn.click(force=True)
                 page.wait_for_url("**/edit/**", timeout=20000)
                 page.wait_for_timeout(3000)
-                dl_media = page.locator("button[aria-label='Download media']:visible").first
-                if dl_media.count() > 0 and dl_media.is_enabled():
-                    click_time = time.time()
-                    page.keyboard.press("Escape")
-                    page.wait_for_timeout(200)
-                    dl_media.click(force=True)
-                    for _ in range(14):
-                        page.wait_for_timeout(1000)
-                        if check_recent_downloads(dest_mp4_path, click_time):
-                            return True
+                if download_from_editor(page, dest_mp4_path):
+                    return True
             except Exception as e:
-                print(f"[Flow] Editor download click error: {e}")
+                print(f"[Flow] Editor transition/download error: {e}")
 
         print(f"[Flow] Waiting for render... {elapsed}s elapsed")
 
@@ -243,7 +348,7 @@ def wait_and_extend_video(page, dest_mp4_path: Path, extend_count: int = 2, cont
     if cards:
         try:
             cards[-1].hover()
-            page.wait_for_timeout(600)
+            page.wait_for_timeout(500)
         except Exception:
             pass
 
@@ -271,6 +376,9 @@ def wait_and_extend_video(page, dest_mp4_path: Path, extend_count: int = 2, cont
         page.screenshot(path="flow_editor_debug.png")
     except Exception as e:
         print(f"[Flow Editor Debug Error]: {e}")
+
+    if extend_count == 0:
+        return download_from_editor(page, dest_mp4_path)
 
     for ext_step in range(1, extend_count + 1):
         print(f"[Flow Extend] Performing extension {ext_step}/{extend_count}...")
@@ -383,9 +491,12 @@ def generate_track_on_flow(track_id: str, extend: bool = True, extend_steps: int
     track_dir = FLOW_RENDERS_DIR / bp['track_id']
     track_dir.mkdir(parents=True, exist_ok=True)
 
+    # Fast-Anchor standard: 3 pristine base scenes per track
+    target_scenes = bp['scenes'][:3]
+
     # Check which scenes are already rendered
     scenes_to_render = []
-    for sc in bp['scenes']:
+    for sc in target_scenes:
         sc_num = sc['scene_num']
         out_clip = track_dir / f"scene_{sc_num:02d}.mp4"
         if out_clip.exists() and out_clip.stat().st_size > 500_000:
@@ -418,10 +529,15 @@ def generate_track_on_flow(track_id: str, extend: bool = True, extend_steps: int
                     print(f"\n[Scene {sc_num}] Creating fresh project workspace on Google Flow...")
                     page.goto(FLOW_URL)
                     page.wait_for_timeout(3000)
+                    dismiss_overlays_and_modals(page)
                     try:
                         page.wait_for_selector("button:has-text('New project'), [role='button']:has-text('New project')", timeout=25000)
                         new_proj = page.locator("button:has-text('New project'), [role='button']:has-text('New project')").first
-                        new_proj.click()
+                        try:
+                            new_proj.click(timeout=5000)
+                        except Exception:
+                            dismiss_overlays_and_modals(page)
+                            new_proj.click(force=True)
                         page.wait_for_url("**/project/**", timeout=25000)
                         page.wait_for_timeout(3000)
                     except Exception as e:
@@ -580,20 +696,35 @@ def main():
         with open(manifest_file, "r", encoding="utf-8") as f:
             manifest = json.load(f)
 
-        pending = manifest.get("pending_tracks", [])
+        pending = manifest.get("pending_tracks") or manifest.get("ready_to_generate", [])
         if args.category:
             pending = [t for t in pending if t.get("category", "").lower() == args.category.lower()]
 
-        print(f"Total matching pending tracks: {len(pending)}. Processing up to {args.limit}...")
-        count = 0
+        # Filter out tracks that already have master releases
+        existing_masters = {f.stem.split("_")[-2] for f in RENDERS_DIR.glob("*_master.mp4") if len(f.stem.split("_")[-2]) == 11}
+        existing_masters.update({f.stem.split("_")[1] for f in RENDERS_DIR.glob("*_master.mp4") if len(f.stem.split("_")) > 1 and len(f.stem.split("_")[1]) == 11})
+
+        valid_pending = []
         for item in pending:
+            tid = item.get("track_id") or item.get("video_id")
+            if tid and tid not in existing_masters:
+                valid_pending.append(item)
+
+        print(f"Total matching pending tracks: {len(valid_pending)} (of {len(pending)}). Processing up to {args.limit}...")
+        count = 0
+        for item in valid_pending:
             if count >= args.limit:
                 break
-            track_id = item["track_id"]
-            ok = generate_track_on_flow(track_id, extend=do_extend, extend_steps=args.extend_steps)
-            if ok:
-                count += 1
-                time.sleep(5)
+            track_id = item.get("track_id") or item.get("video_id")
+            print(f"\n>>> PROCESSING TRACK [{count+1}/{min(args.limit, len(valid_pending))}]: {track_id} ({item.get('title', '')}) <<<")
+            try:
+                ok = generate_track_on_flow(track_id, extend=do_extend, extend_steps=args.extend_steps)
+                if ok:
+                    count += 1
+                    time.sleep(5)
+            except Exception as e:
+                print(f"[Error] Processing track {track_id} failed: {e}")
+                time.sleep(3)
         return
 
     parser.print_help()

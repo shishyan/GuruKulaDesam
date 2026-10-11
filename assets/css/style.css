@@ -9196,20 +9196,20 @@ main, table, thead, tbody, tr, th, td, label {
   border-color: transparent !important;
 }
 
-/* 3. Deep multi-layer shadow contrast technique for high visibility directly against background */
+/* 3. Modern crisp typography with zero dark shadow clutter */
 h1, h2, h3, h4, h5, h6,
 .title, [class*="-title"], [class*="title-"],
 .name, [class*="-name"], [class*="name-"],
 .heading, [class*="-heading"], [class*="heading-"],
 strong, b, th {
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.98), 0 4px 15px rgba(0, 0, 0, 0.95), 0 0 25px rgba(0, 0, 0, 0.85) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35) !important;
 }
 
 p, span, li, label, td, .desc, [class*="-desc"], [class*="desc-"], .verse-quote {
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.98), 0 2px 10px rgba(0, 0, 0, 0.90) !important;
+  text-shadow: none !important;
 }
 
-/* 4. Sculpted 3D visual media float with deep multi-layered shadows */
+/* 4. Sculpted 3D visual media float with clean modern depth */
 img, iframe, video,
 .card-thumbnail,
 .grade-card-media,
@@ -9219,7 +9219,7 @@ img, iframe, video,
 .strip-item-icon {
   border: none !important;
   border-radius: 14px !important;
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.92), 0 4px 14px rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45) !important;
 }
 
 /* 5. Clean borderless interactive controls */

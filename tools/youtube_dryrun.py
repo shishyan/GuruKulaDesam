@@ -6,6 +6,7 @@ Rules honoured: keep existing blurb, append lyrics + meaning, no '<' or '>' (You
 5000-BYTE limit (Tamil = 3 bytes/char) -> flag/truncate with a pointer.
 """
 import json, pathlib, sys, re
+sys.stdout.reconfigure(encoding='utf-8')
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 B = ROOT / 'production' / 'youtube_backup'

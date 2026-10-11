@@ -39,6 +39,8 @@ SOURCE_AUDIO_DIR = ROOT / "source" / "youtube"
 SOURCE_AUDIO_DIR.mkdir(parents=True, exist_ok=True)
 OVERLAY_FILE = ROOT / "production" / "sacred_lamp_dhoopa_overlay_1280x720.png"
 DRIZZLE_LOOP = ROOT / "production" / "drizzle_composite_loop.mp4"
+LYRICS_DB_FILE = ROOT / "production" / "metadata" / "all_songs_lyrics_and_meanings.json"
+LYRICS_OVERRIDE_FILE = ROOT / "production" / "youtube_lyrics_overrides.json"
 
 def get_gemini_api_key() -> str:
     key = os.environ.get("GEMINI_API_KEY")
@@ -117,23 +119,35 @@ def ensure_audio(track_id: str) -> Path:
         return audio_path
 
     print(f"[Audio] Fetching master audio for track {track_id} via yt-dlp...", flush=True)
-    cmd = [
+    cmd_base = [
         sys.executable, "-m", "yt_dlp",
+        "--js-runtimes", "node",
+        "--extractor-args", "youtube:player_client=android",
         "-x", "--audio-format", "m4a",
         "-o", str(SOURCE_AUDIO_DIR / "%(id)s.%(ext)s"),
-        f"https://www.youtube.com/watch?v={track_id}"
     ]
-    for attempt in range(1, 4):
-        res = subprocess.run(cmd, capture_output=True, text=True)
+
+    # Attempt 1 & 2: Direct public download (fast and avoids HTTP 403 from expired cookies)
+    for attempt in range(1, 3):
+        res = subprocess.run(cmd_base + [f"https://www.youtube.com/watch?v={track_id}"], capture_output=True, text=True)
         if audio_path.exists() and audio_path.stat().st_size > 100_000:
             return audio_path
         existing = [f for f in SOURCE_AUDIO_DIR.glob(f"{track_id}.*") if f.stat().st_size > 100_000]
         if existing:
             return existing[0]
-        print(f"[Audio Retry {attempt}/3] Retrying after delay...", flush=True)
-        time.sleep(3)
+        time.sleep(2)
 
-    print(f"[Audio Warning] yt-dlp failed after 3 attempts: {res.stderr}", flush=True)
+    # Attempt 3: Try with cookies if available (for private/unlisted/age-gated tracks)
+    if cookies_path.exists():
+        print(f"[Audio] Retrying with cookies for track {track_id}...", flush=True)
+        res = subprocess.run(cmd_base + ["--cookies", str(cookies_path), f"https://www.youtube.com/watch?v={track_id}"], capture_output=True, text=True)
+        if audio_path.exists() and audio_path.stat().st_size > 100_000:
+            return audio_path
+        existing = [f for f in SOURCE_AUDIO_DIR.glob(f"{track_id}.*") if f.stat().st_size > 100_000]
+        if existing:
+            return existing[0]
+
+    print(f"[Audio Warning] yt-dlp failed after all attempts: {res.stderr}", flush=True)
     existing = list(SOURCE_AUDIO_DIR.glob(f"{track_id}.*"))
     if existing:
         return existing[0]
@@ -144,7 +158,7 @@ def get_media_duration(file_path: Path) -> float:
         FFPROBE, "-v", "error",
         "-show_entries", "format=duration",
         "-of", "default=noprint_wrappers=1:nokey=1",
-        str(file_path)
+        str(Path(file_path).resolve())
     ]
     res = subprocess.run(cmd, capture_output=True, text=True)
     return float(res.stdout.strip())
@@ -241,6 +255,104 @@ def create_processed_clip(clip_path: Path, temp_dir: Path, speed: float = 0.75, 
     subprocess.run(cmd, check=True, capture_output=True)
     return out_path
 
+def get_track_lyrics(track_id: str) -> str:
+    """Retrieves authentic Tamil lyrics for a track from metadata or overrides."""
+    if LYRICS_OVERRIDE_FILE.exists():
+        try:
+            with open(LYRICS_OVERRIDE_FILE, "r", encoding="utf-8") as f:
+                overrides = json.load(f)
+            if track_id in overrides:
+                entry = overrides[track_id]
+                if entry.get("lyrics"):
+                    return entry["lyrics"].strip()
+                if entry.get("ref") and "_works" in overrides and entry["ref"] in overrides["_works"]:
+                    return overrides["_works"][entry["ref"]].get("lyrics", "").strip()
+        except Exception:
+            pass
+
+    if LYRICS_DB_FILE.exists():
+        try:
+            with open(LYRICS_DB_FILE, "r", encoding="utf-8") as f:
+                db = json.load(f)
+            if track_id in db and db[track_id].get("tamil_lyrics"):
+                return db[track_id]["tamil_lyrics"].strip()
+        except Exception:
+            pass
+    return ""
+
+def generate_lower_third_lyrics_filter(track_id: str, audio_dur: float, temp_dir: Path, curr_v: str) -> tuple[str, list[str]]:
+    """Generates timed drawtext filters to burn Tamil lyrics cleanly into the lower third."""
+    lyrics_raw = get_track_lyrics(track_id)
+    if not lyrics_raw:
+        print(f"[Lyrics Lower-Third] No lyrics found for track {track_id}, proceeding without lyrics overlay.", flush=True)
+        return curr_v, []
+
+    # Clean and parse lyrics into couplets (2 lines per card)
+    raw_lines = [line.strip() for line in lyrics_raw.splitlines()]
+    clean_lines = []
+    for line in raw_lines:
+        if not line:
+            continue
+        # Skip pure section headers if enclosed in brackets or common markers
+        if re.match(r"^\[.*\]$|^பல்லவி:?|^சரணம்:?|^அனுபல்லவி:?|^குறள்\s*\d+:?", line, re.IGNORECASE):
+            continue
+        clean_lines.append(line)
+
+    if not clean_lines:
+        return curr_v, []
+
+    # Group into cards of 2 lines for ideal reading tempo
+    cards = []
+    for i in range(0, len(clean_lines), 2):
+        cards.append("\n".join(clean_lines[i:i+2]))
+
+    # Timing distribution across audio duration
+    intro_offset = 4.0
+    outro_offset = max(4.0, audio_dur - 4.0)
+    active_dur = outro_offset - intro_offset
+    if active_dur <= 0:
+        return curr_v, []
+
+    # Calculate target duration per card (aim for ~6.0 - 9.0s per couplet)
+    k = len(cards)
+    ideal_card_dur = 7.5
+    num_cycles = max(1, int(round(active_dur / (k * ideal_card_dur))))
+    repeated_cards = cards * num_cycles
+    card_dur = active_dur / len(repeated_cards)
+
+    lyrics_dir = temp_dir / "lyrics_cards"
+    lyrics_dir.mkdir(parents=True, exist_ok=True)
+
+    filters = []
+    font_path = "C\\:/Windows/Fonts/NirmalaB.ttf"
+
+    for idx, card_text in enumerate(repeated_cards):
+        t_start = intro_offset + (idx * card_dur)
+        t_end = t_start + card_dur - 0.35  # Clean breath between cards
+        if t_end > audio_dur - 2.0:
+            t_end = audio_dur - 2.0
+        if t_start >= t_end:
+            continue
+
+        txt_file = lyrics_dir / f"card_{idx:03d}.txt"
+        txt_file.write_text(card_text, encoding="utf-8")
+        txt_path_posix = txt_file.as_posix().replace(":", "\\:")
+
+        out_label = f"v_lyric_{idx}"
+        filter_elem = (
+            f"{curr_v}drawtext=fontfile='{font_path}':"
+            f"textfile='{txt_path_posix}':"
+            f"fontcolor=white:fontsize=24:x=(w-text_w)/2:y=h-text_h-35:"
+            f"text_shaping=1:borderw=2:bordercolor=black:"
+            f"box=1:boxcolor=black@0.5:boxborderw=10:line_spacing=2:"
+            f"enable='between(t,{t_start:.2f},{t_end:.2f})'[{out_label}]"
+        )
+        filters.append(filter_elem)
+        curr_v = f"[{out_label}]"
+
+    print(f"[Lyrics Lower-Third] Prepared {len(filters)} timed lyric cards across {audio_dur:.1f}s for track {track_id}.", flush=True)
+    return curr_v, filters
+
 def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Path, output_path: Path) -> Path:
     """Assembles scene clips to match audio duration.
     All scenes run at 75% speed (0.75x) for cinematic majestic tempo, alternating Forward/Reversed cycles."""
@@ -312,27 +424,30 @@ def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Pat
     filter_complex = []
     curr_v = "[0:v]"
     
-    # Scale base video to 1920x1080 24fps with high-quality lanczos upscaling
-    filter_complex.append(f"{curr_v}scale=1920:1080:flags=lanczos:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,fps=24,setsar=1,format=rgba[v_base]")
+    # Scale base video to 1280x720 24fps (User directive: fast 720p HD standard)
+    filter_complex.append(f"{curr_v}scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,fps=24,setsar=1,format=rgba[v_base]")
     curr_v = "[v_base]"
 
     input_idx = 2
     if has_drizzle:
-        inputs.extend(["-stream_loop", "-1", "-i", str(DRIZZLE_LOOP)])
+        loop_count = max(1, int(audio_dur / 10.0) + 3)
+        inputs.extend(["-stream_loop", str(loop_count), "-i", str(DRIZZLE_LOOP)])
         drizzle_idx = input_idx
         input_idx += 1
-        # Screen blend drizzle layer over base video at 1080p
-        filter_complex.append(f"[{drizzle_idx}:v]scale=1920:1080:flags=lanczos,fps=24,setsar=1,format=rgba[drizzle_rgba]")
+        # Screen blend drizzle layer over base video at 720p
+        filter_complex.append(f"[{drizzle_idx}:v]scale=1280:720,fps=24,setsar=1,format=rgba[drizzle_rgba]")
         filter_complex.append(f"{curr_v}format=gbrp[v_gbrp];[drizzle_rgba]format=gbrp[d_gbrp];[v_gbrp][d_gbrp]blend=all_mode=screen:all_opacity=0.25,format=rgba[v_drizzled]")
         curr_v = "[v_drizzled]"
 
     if has_overlay:
-        inputs.extend(["-loop", "1", "-i", str(OVERLAY_FILE)])
+        inputs.extend(["-loop", "1", "-t", f"{audio_dur + 2.0:.2f}", "-i", str(OVERLAY_FILE)])
         overlay_idx = input_idx
         input_idx += 1
-        filter_complex.append(f"[{overlay_idx}:v]scale=1920:1080:flags=lanczos,format=rgba[fg_overlay]")
-        filter_complex.append(f"{curr_v}[fg_overlay]overlay=0:0:format=auto,format=yuv420p[v_framed]")
+        filter_complex.append(f"[{overlay_idx}:v]scale=1280:720,format=rgba[fg_overlay]")
+        filter_complex.append(f"{curr_v}[fg_overlay]overlay=0:0:shortest=1:format=auto,format=yuv420p[v_framed]")
         curr_v = "[v_framed]"
+
+    # Clean cinematic visual presentation (no hardcoded burned lyrics; synchronized SRT captions to be uploaded separately)
 
     # Audio fade out over last 2 seconds
     fade_start = max(0.0, audio_dur - 2.0)
@@ -340,25 +455,37 @@ def build_master_film(track_info: dict, scene_clips: list[Path], audio_path: Pat
 
     cmd_master = [
         FFMPEG, "-y",
+        "-nostdin",
+        "-loglevel", "error",
         *inputs,
         "-filter_complex", ";".join(filter_complex),
         "-map", curr_v,
         "-map", "[a_out]",
         "-t", f"{audio_dur:.2f}",
         "-c:v", "libx264",
-        "-preset", "slow",
-        "-crf", "18",
+        "-preset", "veryfast",
+        "-crf", "20",
         "-pix_fmt", "yuv420p",
         "-c:a", "aac",
-        "-b:a", "256k",
+        "-b:a", "192k",
         "-ar", "48000",
+        "-max_muxing_queue_size", "4096",
         "-movflags", "+faststart",
         str(output_path)
     ]
 
-    res = subprocess.run(cmd_master, capture_output=True, text=True)
+    stderr_log = temp_dir / "ffmpeg_master_assembly.log"
+    with open(stderr_log, "w", encoding="utf-8") as err_f:
+        res = subprocess.run(
+            cmd_master,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=err_f,
+            timeout=max(1800, int(audio_dur * 8))
+        )
     if res.returncode != 0:
-        raise RuntimeError(f"FFmpeg master assembly failed:\n{res.stderr}")
+        err_msg = stderr_log.read_text(encoding="utf-8", errors="replace") if stderr_log.exists() else "Unknown error"
+        raise RuntimeError(f"FFmpeg master assembly failed:\n{err_msg}")
 
     print(f"\n[Master Film Complete] Output: {output_path} ({output_path.stat().st_size / 1024 / 1024:.2f} MB)", flush=True)
     return output_path

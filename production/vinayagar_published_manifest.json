@@ -16,7 +16,9 @@
       "duration_sec": 202.54,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "7YJesR7OYZI",
+      "published_at": "2026-10-09T21:47:34+0530"
     },
     {
       "track_id": "RVMUEr1MOFo",
@@ -28,7 +30,9 @@
       "duration_sec": 202.58,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "TE5TagJU8H4",
+      "published_at": "2026-10-09T21:48:24+0530"
     },
     {
       "track_id": "IhE1OvdIBKs",
@@ -40,7 +44,9 @@
       "duration_sec": 293.58,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "dd3x2HfeE0I",
+      "published_at": "2026-10-09T21:49:59+0530"
     },
     {
       "track_id": "pYuwzoJkhTE",
@@ -52,7 +58,9 @@
       "duration_sec": 277.96,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "bDF1Gz0sgpU",
+      "published_at": "2026-10-09T21:52:18+0530"
     },
     {
       "track_id": "T1KiH3G5WPs",
@@ -64,7 +72,9 @@
       "duration_sec": 253.17,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "XNKA3jyrIPw",
+      "published_at": "2026-10-09T21:54:29+0530"
     },
     {
       "track_id": "zqStqzcFgbM",
@@ -72,11 +82,13 @@
       "saint": "Adi Shankara",
       "master_film": "renders/releases/vinayagar_zqStqzcFgbM_master.mp4",
       "file_size_bytes": 221143899,
-      "file_size_mb": 210.90,
+      "file_size_mb": 210.9,
       "duration_sec": 277.88,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "i_8dDkGrCCw",
+      "published_at": "2026-10-09T21:57:13+0530"
     },
     {
       "track_id": "mQpQEuXiEZ4",
@@ -88,7 +100,9 @@
       "duration_sec": 274.92,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "yWjQTGWOhJ8",
+      "published_at": "2026-10-09T21:58:28+0530"
     },
     {
       "track_id": "Yvlg_8JBHL4",
@@ -100,7 +114,9 @@
       "duration_sec": 274.92,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "6COgWr5-PAg",
+      "published_at": "2026-10-09T21:59:03+0530"
     },
     {
       "track_id": "Lki_Y8OSljs",
@@ -112,7 +128,9 @@
       "duration_sec": 227.62,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "ljsORaldcqE",
+      "published_at": "2026-10-09T22:00:12+0530"
     },
     {
       "track_id": "GydxHEmyDPc",
@@ -121,10 +139,12 @@
       "master_film": "renders/releases/vinayagar_GydxHEmyDPc_master.mp4",
       "file_size_bytes": 198162234,
       "file_size_mb": 188.98,
-      "duration_sec": 228.00,
+      "duration_sec": 228.0,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "uqQlyCQjz-A",
+      "published_at": "2026-10-09T22:01:14+0530"
     },
     {
       "track_id": "lEHLSYxnpbU",
@@ -136,7 +156,9 @@
       "duration_sec": 228.04,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "apbc0Yl5BlM",
+      "published_at": "2026-10-09T22:03:38+0530"
     },
     {
       "track_id": "vFbw9hX0wO4",
@@ -148,8 +170,9 @@
       "duration_sec": 227.58,
       "scenes_count": 10,
       "resolution": "1280x720 24fps",
-      "status": "READY_TO_UPLOAD"
+      "status": "PUBLISHED",
+      "youtube_id": "oXgHurYg0Oo",
+      "published_at": "2026-10-09T22:04:36+0530"
     }
   ]
 }
-
