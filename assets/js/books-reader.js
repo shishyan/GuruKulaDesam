@@ -18,6 +18,21 @@ const ALL_BOOKS_CATALOG = {
   narchinthanai: { id: 'narchinthanai', name: 'நற்சிந்தனை', en: 'மெய்யறிவும் தத்துவமும்', icon: 'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', color: '#fb923c', desc: 'விஞ்ஞான-மெய்ஞ்ஞான சங்கமம், குவாண்டம் இயற்பியல், வேதாந்தம் & தத்துவ ஆய்வு' }
 };
 
+const GRADE_ICONS = {
+  1: '🌱',
+  2: '🌿',
+  3: '⭐',
+  4: '🌊',
+  5: '🪔',
+  6: '🏹',
+  7: '⚡',
+  8: '🏛️',
+  9: '⚖️',
+  10: '📜',
+  11: '☸️',
+  12: '🪷'
+};
+
 function getBooksMetadataForGrade(grade) {
   if (grade === 1 || grade === 2) {
     return [ALL_BOOKS_CATALOG.narcheyal];
@@ -78,6 +93,8 @@ async function initBookReader() {
   }
   if (gradeParam >= 1 && gradeParam <= 12) currentGrade = gradeParam;
 
+  syncGradeTheme(currentGrade);
+
   const activeMeta = getBooksMetadataForGrade(currentGrade);
   currentBook = activeMeta[0].id;
   if (bookParam && activeMeta.some(b => b.id === bookParam)) currentBook = bookParam;
@@ -87,6 +104,16 @@ async function initBookReader() {
   renderBookShelfTabs();
   await loadGradeBookData(currentGrade);
   initClassroomApp(currentGrade);
+}
+
+function syncGradeTheme(grade) {
+  if (document.body) {
+    document.body.setAttribute('data-grade', grade);
+  }
+  const gradePills = document.querySelectorAll('.zen-grade-pill');
+  gradePills.forEach(p => {
+    p.innerHTML = `${GRADE_ICONS[grade] || '📖'} தரம் ${grade}`;
+  });
 }
 
 function renderGradePills() {
@@ -107,6 +134,17 @@ function renderGradePills() {
     html += `<button type="button" class="book-grade-btn ${activeClass}" onclick="switchGrade(${g})">தரம் ${g}</button>`;
   }
   container.innerHTML = html;
+}
+
+async function switchGrade(grade) {
+  currentGrade = grade;
+  currentChapter = 1;
+  syncGradeTheme(grade);
+  renderGradePills();
+  updateUrlParams();
+  await loadGradeBookData(grade);
+  initClassroomApp(grade);
+  updateClassroomStats();
 }
 
 function renderBookShelfTabs() {
@@ -148,16 +186,6 @@ async function loadGradeBookData(grade) {
     console.warn(`Could not load data/books/grade_${grade}.json:`, err);
     renderFallbackBook();
   }
-}
-
-async function switchGrade(grade) {
-  currentGrade = grade;
-  currentChapter = 1;
-  renderGradePills();
-  updateUrlParams();
-  await loadGradeBookData(grade);
-  initClassroomApp(grade);
-  updateClassroomStats();
 }
 
 function switchBook(bookId) {

@@ -15,8 +15,8 @@ async def verify_zen():
         for g in grades_to_test:
             url = f'http://127.0.0.1:8080/tharam-{g}.html'
             print(f"\n[Testing Grade {g}] {url}...", flush=True)
-            await page.goto(url, wait_until='networkidle')
-            await page.wait_for_timeout(1500)
+            await page.goto(url, wait_until='domcontentloaded')
+            await page.wait_for_timeout(1000)
             
             # 1. Verify Zen Grade Bar exists & is visible
             zen_bar = await page.query_selector('.zen-grade-bar')

@@ -9196,20 +9196,20 @@ main, table, thead, tbody, tr, th, td, label {
   border-color: transparent !important;
 }
 
-/* 3. Deep multi-layer shadow contrast technique for high visibility directly against background */
+/* 3. Modern crisp typography with zero dark shadow clutter */
 h1, h2, h3, h4, h5, h6,
 .title, [class*="-title"], [class*="title-"],
 .name, [class*="-name"], [class*="name-"],
 .heading, [class*="-heading"], [class*="heading-"],
 strong, b, th {
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.98), 0 4px 15px rgba(0, 0, 0, 0.95), 0 0 25px rgba(0, 0, 0, 0.85) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35) !important;
 }
 
 p, span, li, label, td, .desc, [class*="-desc"], [class*="desc-"], .verse-quote {
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.98), 0 2px 10px rgba(0, 0, 0, 0.90) !important;
+  text-shadow: none !important;
 }
 
-/* 4. Sculpted 3D visual media float with deep multi-layered shadows */
+/* 4. Sculpted 3D visual media float with clean modern depth */
 img, iframe, video,
 .card-thumbnail,
 .grade-card-media,
@@ -9219,7 +9219,7 @@ img, iframe, video,
 .strip-item-icon {
   border: none !important;
   border-radius: 14px !important;
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.92), 0 4px 14px rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45) !important;
 }
 
 /* 5. Clean borderless interactive controls */
@@ -9649,23 +9649,26 @@ body.drawer-open {
 .primary-section-split {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.15fr);
-  gap: 30px;
+  gap: 32px;
   align-items: center;
-  background: linear-gradient(135deg, rgba(12, 25, 48, 0.72) 0%, rgba(6, 16, 32, 0.85) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 22px;
-  padding: 26px;
+  padding: 28px;
   margin-bottom: 30px;
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12);
   position: relative;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .primary-section-split:hover {
-  border-color: rgba(56, 189, 248, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6), 0 0 20px rgba(56, 189, 248, 0.12);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 /* Color-themed left borders for primary preschool sections */
@@ -9700,13 +9703,16 @@ body.drawer-open {
 
 .split-visual-card {
   position: relative;
-  border-radius: 16px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.75);
-  background: rgba(4, 10, 22, 0.85);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .split-visual-img-wrap {
@@ -9786,7 +9792,9 @@ body.drawer-open {
 /* Visual Caption */
 .split-visual-caption {
   padding: 12px 16px;
-  background: rgba(8, 20, 38, 0.95);
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   font-size: 0.85rem;
   color: #cbd5e1;
   line-height: 1.5;
@@ -9829,14 +9837,14 @@ body.drawer-open {
   align-items: center;
   gap: 10px;
   line-height: 1.35;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  text-shadow: none;
 }
 
 .split-text-content {
-  color: #e2e8f0;
-  font-size: 0.98rem;
-  line-height: 1.8;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  color: #f1f5f9;
+  font-size: 1.02rem;
+  line-height: 1.85;
+  text-shadow: none;
 }
 
 .split-text-content p {
@@ -9965,7 +9973,7 @@ body.drawer-open {
 }
 
 /* ==========================================================================
-   ZEN MINIMALIST LEARNING SANCTUARY (Zero-Clutter Focused Learning)
+   ZEN MINIMALIST LEARNING SANCTUARY (Milky Glassmorphism & Modern Techniques)
    ========================================================================== */
 .zen-grade-bar {
   display: flex;
@@ -9974,29 +9982,38 @@ body.drawer-open {
   flex-wrap: wrap;
   gap: 12px;
   padding: 10px 18px;
-  background: rgba(10, 18, 32, 0.78);
-  border: 1px solid rgba(251, 191, 36, 0.22);
-  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 16px;
   margin-bottom: 12px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .zen-grade-info {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .zen-grade-pill {
-  background: rgba(250, 204, 21, 0.18);
-  color: #facc15;
-  border: 1px solid rgba(250, 204, 21, 0.45);
-  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--grade-pill-bg, rgba(250, 204, 21, 0.18));
+  color: var(--grade-pill-color, #facc15);
+  border: 1px solid var(--grade-pill-border, rgba(250, 204, 21, 0.45));
+  font-size: 0.82rem;
   font-weight: 800;
-  padding: 3px 10px;
-  border-radius: 8px;
+  padding: 4px 12px;
+  border-radius: 10px;
   letter-spacing: 0.02em;
+  box-shadow: 0 0 16px var(--grade-glow, rgba(250, 204, 21, 0.2));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .zen-book-pill {
@@ -10008,11 +10025,13 @@ body.drawer-open {
 
 .zen-phase-tag {
   font-size: 0.78rem;
-  color: #94a3b8;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 2px 8px;
-  border-radius: 6px;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 3px 10px;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .zen-grade-actions {
@@ -10025,21 +10044,27 @@ body.drawer-open {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(56, 189, 248, 0.12);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  color: #38bdf8;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  color: #f1f5f9;
   font-size: 0.78rem;
   font-weight: 700;
   padding: 5px 12px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .zen-info-btn:hover {
-  background: rgba(56, 189, 248, 0.22);
+  background: rgba(255, 255, 255, 0.18);
   color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.35);
   transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 /* Zen Book Shelf Tabs (Horizontal Pills) */
@@ -10057,26 +10082,29 @@ body.drawer-open {
   gap: 8px;
   padding: 6px 14px;
   border-radius: 10px;
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
   color: #cbd5e1;
   font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: all 0.2s ease;
 }
 
 .zen-book-tab:hover {
-  background: rgba(30, 41, 59, 0.9);
+  background: rgba(255, 255, 255, 0.14);
   color: #ffffff;
-  border-color: rgba(251, 191, 36, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .zen-book-tab.active {
-  background: linear-gradient(135deg, rgba(217, 119, 6, 0.35) 0%, rgba(180, 83, 9, 0.5) 100%);
-  border-color: #f59e0b;
-  color: #fde047;
-  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.25);
+  background: linear-gradient(135deg, var(--grade-active-bg1, rgba(217, 119, 6, 0.35)) 0%, var(--grade-active-bg2, rgba(180, 83, 9, 0.5)) 100%);
+  border-color: var(--grade-active-border, #f59e0b);
+  color: #ffffff;
+  box-shadow: 0 4px 14px var(--grade-glow, rgba(217, 119, 6, 0.3));
 }
 
 /* Zen Chapter Track */
@@ -10096,30 +10124,33 @@ body.drawer-open {
   gap: 6px;
   min-width: 36px;
   height: 34px;
-  padding: 0 10px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  color: #cbd5e1;
+  padding: 0 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
+  color: #e2e8f0;
   font-size: 0.82rem;
   font-weight: 700;
   cursor: pointer;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: all 0.18s ease;
   white-space: nowrap;
 }
 
 .zen-chap-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
-  border-color: rgba(251, 191, 36, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-1px);
 }
 
 .zen-chap-btn.active {
-  background: linear-gradient(135deg, #d97706, #b45309);
+  background: linear-gradient(135deg, var(--grade-theme-primary, #d97706), var(--grade-theme-secondary, #b45309));
   color: #ffffff;
-  border-color: #f59e0b;
-  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.35);
+  border-color: var(--grade-pill-border, #f59e0b);
+  box-shadow: 0 4px 14px var(--grade-glow, rgba(217, 119, 6, 0.35));
 }
 
 .zen-chap-btn .chap-num-circle {
@@ -10136,7 +10167,7 @@ body.drawer-open {
 
 .zen-chap-btn.active .chap-num-circle {
   background: #ffffff;
-  color: #92400e;
+  color: #0f172a;
 }
 
 /* Zen Reading Chapter Header */
@@ -10161,11 +10192,11 @@ body.drawer-open {
 .zen-chap-number {
   font-size: 0.82rem;
   font-weight: 800;
-  color: var(--gold-bright, #ffd700);
-  background: rgba(251, 191, 36, 0.12);
+  color: var(--grade-pill-color, #ffd700);
+  background: rgba(255, 255, 255, 0.08);
   padding: 3px 8px;
   border-radius: 6px;
-  border: 1px solid rgba(251, 191, 36, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .zen-chap-heading {
@@ -10187,14 +10218,182 @@ body.drawer-open {
 .zen-jump-pill {
   font-size: 0.76rem;
   font-weight: 700;
-  color: #94a3b8;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 3px 9px;
   border-radius: 6px;
   text-decoration: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   transition: all 0.15s ease;
 }
+
+.zen-jump-pill:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   12 GURUKULA GRADES - DISTINCT COLOR IDENTITY, SHADES & ICONS
+   ========================================================================== */
+/* Grade 1: 🌱 Sun Amber & Rose Coral (மழலையின் மகிழ்ச்சி & விளையாட்டு) */
+[data-grade="1"], .grade-theme-1 {
+  --grade-theme-primary: #f59e0b;
+  --grade-theme-secondary: #f43f5e;
+  --grade-pill-bg: linear-gradient(135deg, rgba(245, 158, 11, 0.25) 0%, rgba(244, 63, 94, 0.20) 100%);
+  --grade-pill-color: #fef08a;
+  --grade-pill-border: rgba(245, 158, 11, 0.6);
+  --grade-glow: rgba(245, 158, 11, 0.35);
+  --grade-active-bg1: rgba(245, 158, 11, 0.35);
+  --grade-active-bg2: rgba(244, 63, 94, 0.45);
+  --grade-active-border: #f59e0b;
+}
+
+/* Grade 2: 🌿 Emerald Meadow & Mint (இயற்கை, பகிர்ந்து உண்ணல் & அன்பு) */
+[data-grade="2"], .grade-theme-2 {
+  --grade-theme-primary: #059669;
+  --grade-theme-secondary: #10b981;
+  --grade-pill-bg: linear-gradient(135deg, rgba(5, 150, 105, 0.25) 0%, rgba(16, 185, 129, 0.20) 100%);
+  --grade-pill-color: #a7f3d0;
+  --grade-pill-border: rgba(16, 185, 129, 0.6);
+  --grade-glow: rgba(16, 185, 129, 0.35);
+  --grade-active-bg1: rgba(5, 150, 105, 0.35);
+  --grade-active-bg2: rgba(16, 185, 129, 0.45);
+  --grade-active-border: #10b981;
+}
+
+/* Grade 3: ⭐ Cyan Turquoise & Sky Blue (தூய்மை, நற்பண்பு & வினா அறிதல்) */
+[data-grade="3"], .grade-theme-3 {
+  --grade-theme-primary: #0891b2;
+  --grade-theme-secondary: #06b6d4;
+  --grade-pill-bg: linear-gradient(135deg, rgba(8, 145, 178, 0.25) 0%, rgba(6, 182, 212, 0.20) 100%);
+  --grade-pill-color: #a5f3fc;
+  --grade-pill-border: rgba(6, 182, 212, 0.6);
+  --grade-glow: rgba(6, 182, 212, 0.35);
+  --grade-active-bg1: rgba(8, 145, 178, 0.35);
+  --grade-active-bg2: rgba(6, 182, 212, 0.45);
+  --grade-active-border: #06b6d4;
+}
+
+/* Grade 4: 🌊 Royal Sapphire & Azure (ஒழுக்கம் & உண்மைத் துணிவு) */
+[data-grade="4"], .grade-theme-4 {
+  --grade-theme-primary: #2563eb;
+  --grade-theme-secondary: #3b82f6;
+  --grade-pill-bg: linear-gradient(135deg, rgba(37, 99, 235, 0.25) 0%, rgba(59, 130, 246, 0.20) 100%);
+  --grade-pill-color: #bfdbfe;
+  --grade-pill-border: rgba(59, 130, 246, 0.6);
+  --grade-glow: rgba(59, 130, 246, 0.35);
+  --grade-active-bg1: rgba(37, 99, 235, 0.35);
+  --grade-active-bg2: rgba(59, 130, 246, 0.45);
+  --grade-active-border: #3b82f6;
+}
+
+/* Grade 5: 🪔 Radiant Saffron & Gold (செய்ந்நன்றி & நோக்கத்தின் வேர்) */
+[data-grade="5"], .grade-theme-5 {
+  --grade-theme-primary: #d97706;
+  --grade-theme-secondary: #eab308;
+  --grade-pill-bg: linear-gradient(135deg, rgba(217, 119, 6, 0.25) 0%, rgba(234, 179, 8, 0.20) 100%);
+  --grade-pill-color: #fef08a;
+  --grade-pill-border: rgba(234, 179, 8, 0.6);
+  --grade-glow: rgba(234, 179, 8, 0.35);
+  --grade-active-bg1: rgba(217, 119, 6, 0.35);
+  --grade-active-bg2: rgba(234, 179, 8, 0.45);
+  --grade-active-border: #eab308;
+}
+
+/* Grade 6: 🏹 Forest Jade & Teal (கம்பராமாயணம் — அடக்கம் & சகோதரத்துவம்) */
+[data-grade="6"], .grade-theme-6 {
+  --grade-theme-primary: #0d9488;
+  --grade-theme-secondary: #14b8a6;
+  --grade-pill-bg: linear-gradient(135deg, rgba(13, 148, 136, 0.25) 0%, rgba(20, 184, 166, 0.20) 100%);
+  --grade-pill-color: #99f6e4;
+  --grade-pill-border: rgba(20, 184, 166, 0.6);
+  --grade-glow: rgba(20, 184, 166, 0.35);
+  --grade-active-bg1: rgba(13, 148, 136, 0.35);
+  --grade-active-bg2: rgba(20, 184, 166, 0.45);
+  --grade-active-border: #14b8a6;
+}
+
+/* Grade 7: ⚡ Amethyst Violet & Purple (உளவியல் உறுதி & தூது மாண்பு) */
+[data-grade="7"], .grade-theme-7 {
+  --grade-theme-primary: #7c3aed;
+  --grade-theme-secondary: #8b5cf6;
+  --grade-pill-bg: linear-gradient(135deg, rgba(124, 58, 237, 0.25) 0%, rgba(139, 92, 246, 0.20) 100%);
+  --grade-pill-color: #ddd6fe;
+  --grade-pill-border: rgba(139, 92, 246, 0.6);
+  --grade-glow: rgba(139, 92, 246, 0.35);
+  --grade-active-bg1: rgba(124, 58, 237, 0.35);
+  --grade-active-bg2: rgba(139, 92, 246, 0.45);
+  --grade-active-border: #8b5cf6;
+}
+
+/* Grade 8: 🏛️ Terracotta Copper & Amber (இல்லறத் தலைமை & சதுர் ஆசிரமம்) */
+[data-grade="8"], .grade-theme-8 {
+  --grade-theme-primary: #c2410c;
+  --grade-theme-secondary: #ea580c;
+  --grade-pill-bg: linear-gradient(135deg, rgba(194, 65, 12, 0.25) 0%, rgba(234, 88, 12, 0.20) 100%);
+  --grade-pill-color: #fed7aa;
+  --grade-pill-border: rgba(234, 88, 12, 0.6);
+  --grade-glow: rgba(234, 88, 12, 0.35);
+  --grade-active-bg1: rgba(194, 65, 12, 0.35);
+  --grade-active-bg2: rgba(234, 88, 12, 0.45);
+  --grade-active-border: #ea580c;
+}
+
+/* Grade 9: ⚖️ Ruby Crimson & Coral (விதுர நீதி & நீதிக்காக நிற்றல்) */
+[data-grade="9"], .grade-theme-9 {
+  --grade-theme-primary: #be123c;
+  --grade-theme-secondary: #e11d48;
+  --grade-pill-bg: linear-gradient(135deg, rgba(190, 18, 60, 0.25) 0%, rgba(225, 29, 72, 0.20) 100%);
+  --grade-pill-color: #fecdd3;
+  --grade-pill-border: rgba(225, 29, 72, 0.6);
+  --grade-glow: rgba(225, 29, 72, 0.35);
+  --grade-active-bg1: rgba(190, 18, 60, 0.35);
+  --grade-active-bg2: rgba(225, 29, 72, 0.45);
+  --grade-active-border: #e11d48;
+}
+
+/* Grade 10: 📜 Imperial Gold & Bronze (மகாபாரத சாந்தி பர்வம் — பீஷ்மர் ராஜதர்மம்) */
+[data-grade="10"], .grade-theme-10 {
+  --grade-theme-primary: #ca8a04;
+  --grade-theme-secondary: #eab308;
+  --grade-pill-bg: linear-gradient(135deg, rgba(202, 138, 4, 0.25) 0%, rgba(234, 179, 8, 0.20) 100%);
+  --grade-pill-color: #fef9c3;
+  --grade-pill-border: rgba(234, 179, 8, 0.6);
+  --grade-glow: rgba(234, 179, 8, 0.35);
+  --grade-active-bg1: rgba(202, 138, 4, 0.35);
+  --grade-active-bg2: rgba(234, 179, 8, 0.45);
+  --grade-active-border: #eab308;
+}
+
+/* Grade 11: ☸️ Cosmic Indigo & Ultramarine (பகவத் கீதை 1-9 — அர்ஜுன விஷாத யோகம் & நிஷ்காம கர்மம்) */
+[data-grade="11"], .grade-theme-11 {
+  --grade-theme-primary: #4f46e5;
+  --grade-theme-secondary: #6366f1;
+  --grade-pill-bg: linear-gradient(135deg, rgba(79, 70, 229, 0.25) 0%, rgba(99, 102, 241, 0.20) 100%);
+  --grade-pill-color: #e0e7ff;
+  --grade-pill-border: rgba(99, 102, 241, 0.6);
+  --grade-glow: rgba(99, 102, 241, 0.35);
+  --grade-active-bg1: rgba(79, 70, 229, 0.35);
+  --grade-active-bg2: rgba(99, 102, 241, 0.45);
+  --grade-active-border: #6366f1;
+}
+
+/* Grade 12: 🪷 Divine Magenta & Lotus (வள்ளலார் திருவருட்பா & காஞ்சி மகா பெரியவா சனாதன உரை) */
+[data-grade="12"], .grade-theme-12 {
+  --grade-theme-primary: #c026d3;
+  --grade-theme-secondary: #d946ef;
+  --grade-pill-bg: linear-gradient(135deg, rgba(192, 38, 211, 0.25) 0%, rgba(217, 70, 239, 0.20) 100%);
+  --grade-pill-color: #fae8ff;
+  --grade-pill-border: rgba(217, 70, 239, 0.6);
+  --grade-glow: rgba(217, 70, 239, 0.35);
+  --grade-active-bg1: rgba(192, 38, 211, 0.35);
+  --grade-active-bg2: rgba(217, 70, 239, 0.45);
+  --grade-active-border: #d946ef;
+}
+
 
 .zen-jump-pill:hover {
   background: rgba(56, 189, 248, 0.15);
