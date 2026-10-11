@@ -161,6 +161,7 @@ if __name__ == "__main__":
         
     # 2. Locate audio
     audio_candidates = [
+        repo / "production" / "audio" / f"{track_id}.m4a",
         repo / "source" / "youtube" / f"{track_id}.m4a",
         repo / "Gurukuladesam-audit" / "production" / "thirukkural-backlog-15" / "source" / f"{track_id}.m4a",
         repo / "Gurukuladesam-audit" / "production" / "thirukkural-batch-06" / "source" / f"{track_id}.m4a"
