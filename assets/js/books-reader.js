@@ -112,25 +112,24 @@ function renderGradePills() {
 function renderBookShelfTabs() {
   const container = document.getElementById('booksShelfTabs');
   if (!container) return;
-  let html = '';
   const activeMeta = getBooksMetadataForGrade(currentGrade);
+  if (activeMeta.length <= 1) {
+    container.innerHTML = '';
+    container.style.display = 'none';
+    return;
+  }
+  container.style.display = 'flex';
+  let html = '<div class="zen-book-shelf-row">';
   activeMeta.forEach((book, idx) => {
     const activeClass = (book.id === currentBook) ? 'active' : '';
-    let done = 0;
-    for (let c = 1; c <= 7; c++) {
-      if (isBookChapterCompleted(currentGrade, book.id, c)) done++;
-    }
-    const badgeText = done === 7 ? '✓ 7/7 நிறைவு' : `${done}/7 பாடம்`;
-    const isFull = done === 7 ? 'color:#10b981;' : 'color:#94a3b8;';
     html += `
-      <button type="button" class="shelf-book-btn ${activeClass}" onclick="switchBook('${book.id}')" style="--book-accent:${book.color};">
-        <span class="shelf-book-num">நூல் ${idx + 1}</span>
-        <span class="shelf-book-title">${book.name}</span>
-        <span class="shelf-book-en">${book.en}</span>
-        <span class="shelf-book-prog-badge" style="font-size:0.75rem; font-weight:700; margin-top:6px; ${isFull}">${badgeText}</span>
+      <button type="button" class="zen-book-tab ${activeClass}" onclick="switchBook('${book.id}')">
+        <span>📖</span>
+        <span>${book.name}</span>
       </button>
     `;
   });
+  html += '</div>';
   container.innerHTML = html;
 }
 
@@ -193,27 +192,30 @@ function renderCurrentBook() {
   const subEl = document.getElementById('readerBookSubtitle');
   const badgeEl = document.getElementById('readerBookBadge');
   const litEl = document.getElementById('readerLiteratureBase');
+  const zenPill = document.getElementById('zenBookPill');
 
+  if (zenPill) zenPill.innerText = book.title;
   if (titleEl) titleEl.innerText = book.title;
   if (subEl) subEl.innerText = book.tagline || book.englishTitle;
   if (badgeEl) badgeEl.innerText = `தரம் ${currentGrade} • ${loadedBookData.phase || ''}`;
   if (litEl) litEl.innerText = `இலக்கிய அடித்தளம்: ${loadedBookData.literatureBase || ''} • மூலம்: ${book.source || ''}`;
 
-  // Render Chapter Tabs (1 to 7)
+  // Render Chapter Tabs (1 to 7) as Zen Chapter Track
   const tabsContainer = document.getElementById('readerChapterTabs');
   if (tabsContainer && book.chapters) {
     let tabsHtml = '';
     book.chapters.forEach((chap, idx) => {
       const num = chap.chapterNumber || (idx + 1);
-      const activeClass = (num === currentChapter) ? 'active' : '';
+      const isActive = (num === currentChapter);
+      const activeClass = isActive ? 'active' : '';
       tabsHtml += `
-        <button type="button" class="reader-chap-btn ${activeClass}" onclick="switchChapter(${num})">
-          <span class="chap-badge">அத் ${num}</span>
-          <span class="chap-btn-title">${chap.title}</span>
+        <button type="button" class="zen-chap-btn ${activeClass}" onclick="switchChapter(${num})" title="அத்தியாயம் ${num}: ${chap.title}">
+          <span class="chap-num-circle">${num}</span>
+          ${isActive ? `<span class="zen-chap-title">${chap.title}</span>` : ''}
         </button>
       `;
     });
-    tabsContainer.innerHTML = tabsHtml;
+    tabsContainer.innerHTML = `<div class="zen-chapter-track">${tabsHtml}</div>`;
   }
 
   renderCurrentChapterContent();
@@ -361,9 +363,9 @@ function renderCurrentChapterContent() {
   if (!container || !chap) return;
 
   // Highlight active tab
-  document.querySelectorAll('.reader-chap-btn').forEach(btn => {
+  document.querySelectorAll('.zen-chap-btn, .reader-chap-btn').forEach(btn => {
     const text = btn.innerText;
-    if (text.includes(`அத் ${chap.chapterNumber}`)) {
+    if (text.includes(`${chap.chapterNumber}`) || text.includes(`அத் ${chap.chapterNumber}`)) {
       btn.classList.add('active');
     } else {
       btn.classList.remove('active');
@@ -391,56 +393,13 @@ function renderCurrentChapterContent() {
   const idxLife = imgLife ? images.indexOf(imgLife) : 5;
   const idxExercise = imgExercise ? images.indexOf(imgExercise) : 6;
 
-  // Build Quick Visual Strip HTML (Compact Scene Navigation)
-  let visualStripHtml = '';
-  if (images.length > 0) {
-    const sectionJumpTargets = [
-      '#subchap-visuals',
-      '#subchap-verse',
-      '#subchap-exposition',
-      '#subchap-story',
-      '#subchap-story',
-      '#subchap-life',
-      '#subchap-exercise'
-    ];
-
-    let stripItemsHtml = '';
-    images.forEach((img, idx) => {
-      const jumpTarget = sectionJumpTargets[idx] || '#subchap-verse';
-      const shortTitle = img.typeTitle ? img.typeTitle.split('(')[0].trim() : `காட்சி ${idx + 1}`;
-      stripItemsHtml += `
-        <div class="primary-strip-thumb-btn" onclick="openArtLightboxByIndex(${idx})" title="காட்சி ${idx + 1}: ${img.caption} (கிளிக் செய்து பெரிதாக்குக)">
-          <img src="${img.url}" alt="${img.caption}" loading="lazy">
-          <div class="primary-strip-thumb-label">${shortTitle}</div>
-          <a href="${jumpTarget}" onclick="event.stopPropagation();" style="font-size:0.68rem; color:#38bdf8; text-decoration:none; padding:2px 4px; display:block; text-align:center; background:rgba(15,23,42,0.9); width:100%; border-top:1px solid rgba(255,255,255,0.06);">
-            பகுதிக்குச் செல் &darr;
-          </a>
-        </div>
-      `;
-    });
-
-    visualStripHtml = `
-      <div id="subchap-visuals" class="primary-chapter-strip-wrapper" style="scroll-margin-top: 90px;">
-        <div class="primary-strip-heading">
-          <div style="display:flex; align-items:center; gap:8px;">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px; height:16px;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span>அத்தியாயக் காட்சிகள் (${images.length} காட்சிகள் • 50/50 படக் கருத்து அரங்கம்)</span>
-          </div>
-          <span style="font-size:0.78rem; color:#94a3b8; font-weight:600;">படத்தைக் கிளிக் செய்து முழுத் திரையில் காண்க</span>
-        </div>
-        <div class="primary-strip-grid">
-          ${stripItemsHtml}
-        </div>
-      </div>
-    `;
-  }
-
   container.innerHTML = `
-    <article class="reading-chapter-card">
-      <div class="chap-read-header">
-        <div>
-          <span class="chap-num-tag">அத்தியாயம் ${chap.chapterNumber} / ${totalChapters}</span>
-          <h2 class="chap-read-title">${chap.title}</h2>
+    <article class="reading-chapter-card" style="padding: 4px 0 24px; background: transparent; border: none; box-shadow: none;">
+      <!-- Zen Minimalist Chapter Header -->
+      <div class="zen-chapter-header">
+        <div class="zen-chapter-title-group">
+          <span class="zen-chap-number">அத்தியாயம் ${chap.chapterNumber} / ${totalChapters}</span>
+          <h2 class="zen-chap-heading">${chap.title}</h2>
         </div>
         <button type="button" class="lesson-speech-btn" id="lessonSpeechBtn" onclick="readAloudChapter()" title="குரல்வழிக் கேட்க">
           <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
@@ -448,23 +407,19 @@ function renderCurrentChapterContent() {
         </button>
       </div>
 
-      <!-- Sub-Chapters Interactive Jump Bar (பாட உட்பிரிவுகள்) -->
-      <nav class="subchapter-nav-strip" aria-label="அத்தியாய உட்பிரிவுகள்">
-        ${images.length > 0 ? `<a href="#subchap-visuals" class="subchap-pill-btn"><span class="subchap-icon">🎨</span><span>காட்சிகள்</span></a>` : ''}
-        <a href="#subchap-verse" class="subchap-pill-btn"><span class="subchap-icon">📜</span><span>1. பாடல்</span></a>
-        <a href="#subchap-exposition" class="subchap-pill-btn"><span class="subchap-icon">📖</span><span>2. விரிவுரை</span></a>
-        <a href="#subchap-story" class="subchap-pill-btn"><span class="subchap-icon">🪔</span><span>3. கதை</span></a>
-        <a href="#subchap-life" class="subchap-pill-btn"><span class="subchap-icon">🌿</span><span>4. 3 Ds நடைமுறை</span></a>
-        <a href="#subchap-exercise" class="subchap-pill-btn"><span class="subchap-icon">☀️</span><span>5. சாதனா பயிற்சி</span></a>
-        <a href="#subchap-media" class="subchap-pill-btn"><span class="subchap-icon">🎵</span><span>6. பாட இசை</span></a>
-        <a href="#subchap-mastery" class="subchap-pill-btn"><span class="subchap-icon">🏆</span><span>7. தர்மத் தேர்வு</span></a>
+      <!-- Compact Zen Section Jump Strip -->
+      <nav class="zen-jump-strip" aria-label="அத்தியாய உட்பிரிவுகள்">
+        <a href="#subchap-verse" class="zen-jump-pill">📜 1. பாடல்</a>
+        <a href="#subchap-exposition" class="zen-jump-pill">📖 2. விரிவுரை</a>
+        <a href="#subchap-story" class="zen-jump-pill">🪔 3. கதை</a>
+        <a href="#subchap-life" class="zen-jump-pill">🌿 4. 3 Ds நடைமுறை</a>
+        <a href="#subchap-exercise" class="zen-jump-pill">☀️ 5. சாதனா பயிற்சி</a>
+        <a href="#subchap-media" class="zen-jump-pill">🎵 6. பாட இசை</a>
+        <a href="#subchap-mastery" class="zen-jump-pill">🏆 7. தர்மத் தேர்வு</a>
       </nav>
 
-      <!-- Chapter Visual Strip (Compact Jump Bar) -->
-      ${visualStripHtml}
-
       <!-- 1. Sacred Verse Block: 50/50 Responsive Split (Image Left, Verse Right) -->
-      <div id="subchap-verse" class="primary-section-split split-verse" style="scroll-margin-top: 90px;">
+      <div id="subchap-verse" class="primary-section-split split-verse" style="scroll-margin-top: 70px;">
         ${renderSplitVisualCol(imgVerse, 'badge-gold', '📜 செய்யுள் காட்சி', idxVerse)}
         <div class="split-text-col">
           <span class="split-section-pill" style="background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.35);">
@@ -1555,46 +1510,8 @@ function getGradeProgressMetrics(grade) {
 let activeClassroomTab = 'classwork';
 
 function initClassroomApp(grade) {
-  const shelf = document.getElementById('booksShelfTabs');
-  const workspace = document.getElementById('bookReaderWorkspace');
-  if (!shelf && !workspace) return;
-
-  let mount = document.getElementById('gurukulaClassroomApp');
-  if (!mount) {
-    mount = document.createElement('section');
-    mount.id = 'gurukulaClassroomApp';
-    mount.className = 'classroom-shell';
-
-    // Wrap classwork elements in panel
-    let classworkPanel = document.getElementById('classroomTabClasswork');
-    if (!classworkPanel) {
-      classworkPanel = document.createElement('div');
-      classworkPanel.id = 'classroomTabClasswork';
-      classworkPanel.className = 'classroom-panel active';
-
-      const booksAnchor = document.getElementById('books');
-      const targetParent = (booksAnchor ? booksAnchor.parentNode : shelf.parentNode);
-
-      // Move shelf heading and elements
-      if (booksAnchor) {
-        targetParent.insertBefore(classworkPanel, booksAnchor);
-        classworkPanel.appendChild(booksAnchor);
-      } else {
-        targetParent.insertBefore(classworkPanel, shelf);
-      }
-
-      // Collect shelf siblings up to workspace
-      const prevHeading = shelf.previousElementSibling;
-      if (prevHeading && prevHeading !== booksAnchor && prevHeading.querySelector && (prevHeading.querySelector('h3') || prevHeading.innerText.includes('ஆசிரம'))) {
-        classworkPanel.appendChild(prevHeading);
-      }
-      classworkPanel.appendChild(shelf);
-      if (workspace) classworkPanel.appendChild(workspace);
-
-      // Insert mount right before classwork panel
-      targetParent.insertBefore(mount, classworkPanel);
-    }
-  }
+  const mount = document.getElementById('gurukulaClassroomApp');
+  if (!mount) return; // Zen Architecture: Do not inject heavy LMS clutter into focused reading pages
 
   const studentName = localStorage.getItem('gkd_student_name') || 'மாணவர்';
   const metrics = getGradeProgressMetrics(grade);
