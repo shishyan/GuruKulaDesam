@@ -135,3 +135,45 @@ def assemble_master_film(track_id: str, scene_clips: list[Path], audio_path: Pat
     subprocess.run(cmd_master, check=True)
     print(f"✅ RELEASE MASTER READY: {output_path} ({output_path.stat().st_size / 1024 / 1024:.2f} MB)")
     return output_path
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Assemble Master Film from 7 Consecrated Google Flow Scenes")
+    parser.add_argument("--track", required=True, help="Track ID, e.g. --4jzoezBW8")
+    parser.add_argument("--repo-root", default="/content/GuruKulaDesam", help="Root directory of GuruKulaDesam repo")
+    args = parser.parse_args()
+
+    repo = Path(args.repo_root)
+    track_id = args.track
+    
+    # 1. Locate scenes
+    scene_dir = repo / "production" / "google_flow_renders" / track_id
+    if not scene_dir.exists():
+        raise FileNotFoundError(f"Scenes directory not found: {scene_dir}")
+        
+    scene_clips = sorted([p for p in scene_dir.glob("scene_*.mp4") if p.stat().st_size > 100_000])
+    if len(scene_clips) < 7:
+        raise ValueError(f"Strict Guard: Found only {len(scene_clips)} valid scene clips in {scene_dir}. Minimum 7 required!")
+        
+    print(f"Found {len(scene_clips)} consecrated scenes:")
+    for sc in scene_clips:
+        print(f"  - {sc.name} ({sc.stat().st_size:,} bytes)")
+        
+    # 2. Locate audio
+    audio_candidates = [
+        repo / "source" / "youtube" / f"{track_id}.m4a",
+        repo / "Gurukuladesam-audit" / "production" / "thirukkural-backlog-15" / "source" / f"{track_id}.m4a",
+        repo / "Gurukuladesam-audit" / "production" / "thirukkural-batch-06" / "source" / f"{track_id}.m4a"
+    ]
+    audio_path = next((p for p in audio_candidates if p.exists()), None)
+    if not audio_path:
+        raise FileNotFoundError(f"Audio file for track {track_id} not found in repo!")
+    print(f"Found audio track: {audio_path}")
+    
+    # 3. Output release master
+    out_dir = repo / "renders" / "releases"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_file = out_dir / f"thirukkural_{track_id}_master.mp4"
+    
+    assemble_master_film(track_id, scene_clips, audio_path, out_file)
+
