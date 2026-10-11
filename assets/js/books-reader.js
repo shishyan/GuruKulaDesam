@@ -219,6 +219,139 @@ function renderCurrentBook() {
   renderCurrentChapterContent();
 }
 
+// Preschool & Primary 50/50 Concept Illustration Helpers
+function renderSplitVisualCol(img, badgeClass, badgeLabel, imgIdx) {
+  if (!img) return '';
+  const idx = (typeof imgIdx === 'number' && imgIdx >= 0) ? imgIdx : (window.currentChapterImages ? window.currentChapterImages.indexOf(img) : 0);
+  const safeIdx = idx >= 0 ? idx : 0;
+  const caption = img.caption || '';
+  const title = img.typeTitle || badgeLabel || 'பாடக் காட்சி';
+
+  return `
+    <div class="split-visual-col">
+      <div class="split-visual-card">
+        <div class="split-visual-img-wrap" onclick="openArtLightboxByIndex(${safeIdx})" title="பெரிதாகக் காண கிளிக் செய்க">
+          <span class="split-visual-badge ${badgeClass}">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            ${title}
+          </span>
+          <img src="${img.url}" alt="${caption}" loading="lazy">
+          <span class="split-visual-zoom-hint">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px; height:12px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            பெரிதாக்கு
+          </span>
+        </div>
+        ${caption ? `<div class="split-visual-caption"><strong>${title}:</strong> ${caption}</div>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+function formatParagraphs(text) {
+  if (!text) return '';
+  const paras = text.split(/\n\n+/).map(p => p.trim()).filter(Boolean);
+  if (paras.length === 0) return `<p>${text}</p>`;
+  return paras.map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+}
+
+function formatLifeApplication3Ds(text) {
+  if (!text) return '';
+  const lines = text.split(/\n+/).map(l => l.trim()).filter(Boolean);
+  let duty = '';
+  let discipline = '';
+  let dignity = '';
+  const otherLines = [];
+
+  lines.forEach(line => {
+    if (/கடமை|duty/i.test(line)) {
+      duty = line.replace(/^\d+[\.\)]\s*/, '').replace(/^(கடமை|Duty)\s*[:\-—]\s*/i, '');
+    } else if (/கட்டுப்பாடு|discipline/i.test(line)) {
+      discipline = line.replace(/^\d+[\.\)]\s*/, '').replace(/^(கட்டுப்பாடு|Discipline)\s*[:\-—]\s*/i, '');
+    } else if (/கண்ணியம்|dignity/i.test(line)) {
+      dignity = line.replace(/^\d+[\.\)]\s*/, '').replace(/^(கண்ணியம்|Dignity)\s*[:\-—]\s*/i, '');
+    } else {
+      otherLines.push(line);
+    }
+  });
+
+  if (duty || discipline || dignity) {
+    let out = '';
+    if (otherLines.length > 0) {
+      out += `<div style="margin-bottom:12px; color:#e2e8f0; line-height:1.7;">${otherLines.join('<br>')}</div>`;
+    }
+    out += `
+      <div class="primary-3d-cards-row">
+        ${duty ? `
+          <div class="primary-3d-item primary-3d-duty">
+            <span class="primary-3d-tag">🛡️ கடமை (Duty)</span>
+            <div class="primary-3d-desc">${duty}</div>
+          </div>
+        ` : ''}
+        ${discipline ? `
+          <div class="primary-3d-item primary-3d-discipline">
+            <span class="primary-3d-tag">⚖️ கட்டுப்பாடு (Discipline)</span>
+            <div class="primary-3d-desc">${discipline}</div>
+          </div>
+        ` : ''}
+        ${dignity ? `
+          <div class="primary-3d-item primary-3d-dignity">
+            <span class="primary-3d-tag">👑 கண்ணியம் (Dignity)</span>
+            <div class="primary-3d-desc">${dignity}</div>
+          </div>
+        ` : ''}
+      </div>
+    `;
+    return out;
+  }
+
+  return formatParagraphs(text);
+}
+
+function formatExerciseList(text) {
+  if (!text) return '';
+  const lines = text.split(/\n+/).map(l => l.trim()).filter(Boolean);
+  const items = [];
+  const otherLines = [];
+
+  lines.forEach(line => {
+    const match = line.match(/^(\d+)[\.\)]\s*(.*)$/);
+    if (match) {
+      items.push({ num: match[1], content: match[2] });
+    } else {
+      otherLines.push(line);
+    }
+  });
+
+  if (items.length > 0) {
+    let out = '';
+    if (otherLines.length > 0) {
+      out += `<div style="margin-bottom:12px; color:#e2e8f0; line-height:1.7;">${otherLines.join('<br>')}</div>`;
+    }
+    out += `<div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">`;
+    items.forEach(item => {
+      const isProject = /செயல் திட்டம்|திட்டம்|activity|project/i.test(item.content);
+      const icon = isProject ? '✨' : '❓';
+      const badgeText = isProject ? 'செயல் திட்டம் (Activity)' : `வினா ${item.num} (Question)`;
+      const borderCol = isProject ? 'rgba(234, 179, 8, 0.4)' : 'rgba(192, 132, 252, 0.3)';
+      const bgCol = isProject ? 'rgba(234, 179, 8, 0.12)' : 'rgba(192, 132, 252, 0.08)';
+      const tagCol = isProject ? '#facc15' : '#d8b4fe';
+
+      out += `
+        <div style="background:${bgCol}; border:1px solid ${borderCol}; border-radius:12px; padding:10px 14px; display:flex; align-items:flex-start; gap:12px;">
+          <span style="font-size:0.78rem; font-weight:800; background:rgba(0,0,0,0.4); color:${tagCol}; border:1px solid ${borderCol}; padding:3px 8px; border-radius:6px; white-space:nowrap;">
+            ${icon} ${badgeText}
+          </span>
+          <div style="font-size:0.92rem; color:#f1f5f9; line-height:1.6;">${item.content}</div>
+        </div>
+      `;
+    });
+    out += `</div>`;
+    return out;
+  }
+
+  return formatParagraphs(text);
+}
+
 function renderCurrentChapterContent() {
   const book = loadedBookData?.books?.[currentBook];
   if (!book || !book.chapters) return;
@@ -245,46 +378,58 @@ function renderCurrentChapterContent() {
   window.currentChapterImages = images;
   window.currentActiveImageIdx = 0;
 
-  // Build Carousel HTML
-  let carouselHtml = '';
+  // Dedicated concept images for each section
+  const imgVerse = images.find(i => i.type === 'verse') || images[1] || images[0] || null;
+  const imgExposition = images.find(i => i.type === 'exposition') || images[2] || images[0] || null;
+  const imgStory = images.find(i => i.type === 'story_start' || i.type === 'story_climax') || images[3] || images[4] || images[0] || null;
+  const imgLife = images.find(i => i.type === 'life_application') || images[5] || images[0] || null;
+  const imgExercise = images.find(i => i.type === 'meditation' || i.type === 'exercise') || images[6] || images[0] || null;
+
+  const idxVerse = imgVerse ? images.indexOf(imgVerse) : 1;
+  const idxExposition = imgExposition ? images.indexOf(imgExposition) : 2;
+  const idxStory = imgStory ? images.indexOf(imgStory) : 3;
+  const idxLife = imgLife ? images.indexOf(imgLife) : 5;
+  const idxExercise = imgExercise ? images.indexOf(imgExercise) : 6;
+
+  // Build Quick Visual Strip HTML (Compact Scene Navigation)
+  let visualStripHtml = '';
   if (images.length > 0) {
-    const img0 = images[0];
-    let thumbsHtml = '';
+    const sectionJumpTargets = [
+      '#subchap-visuals',
+      '#subchap-verse',
+      '#subchap-exposition',
+      '#subchap-story',
+      '#subchap-story',
+      '#subchap-life',
+      '#subchap-exercise'
+    ];
+
+    let stripItemsHtml = '';
     images.forEach((img, idx) => {
-      thumbsHtml += `
-        <button type="button" class="carousel-thumb-btn ${idx === 0 ? 'active' : ''}" id="chapThumb_${idx}" onclick="switchChapterImage(${idx})" title="${img.typeTitle}: ${img.caption}">
-          <span class="thumb-num-badge">${idx + 1}</span>
+      const jumpTarget = sectionJumpTargets[idx] || '#subchap-verse';
+      const shortTitle = img.typeTitle ? img.typeTitle.split('(')[0].trim() : `காட்சி ${idx + 1}`;
+      stripItemsHtml += `
+        <div class="primary-strip-thumb-btn" onclick="openArtLightboxByIndex(${idx})" title="காட்சி ${idx + 1}: ${img.caption} (கிளிக் செய்து பெரிதாக்குக)">
           <img src="${img.url}" alt="${img.caption}" loading="lazy">
-        </button>
+          <div class="primary-strip-thumb-label">${shortTitle}</div>
+          <a href="${jumpTarget}" onclick="event.stopPropagation();" style="font-size:0.68rem; color:#38bdf8; text-decoration:none; padding:2px 4px; display:block; text-align:center; background:rgba(15,23,42,0.9); width:100%; border-top:1px solid rgba(255,255,255,0.06);">
+            பகுதிக்குச் செல் &darr;
+          </a>
+        </div>
       `;
     });
 
-    carouselHtml = `
-      <div class="chapter-visuals-panel">
-        <div class="carousel-top-bar">
-          <div class="carousel-heading">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            7 அத்தியாயக் காட்சிகள் (Chapter Visual Gallery)
+    visualStripHtml = `
+      <div id="subchap-visuals" class="primary-chapter-strip-wrapper" style="scroll-margin-top: 90px;">
+        <div class="primary-strip-heading">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px; height:16px;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>அத்தியாயக் காட்சிகள் (${images.length} காட்சிகள் • 50/50 படக் கருத்து அரங்கம்)</span>
           </div>
-          <span class="carousel-counter-pill" id="carouselCounterBadge">காட்சி 1 / ${images.length} • ${img0.typeTitle}</span>
+          <span style="font-size:0.78rem; color:#94a3b8; font-weight:600;">படத்தைக் கிளிக் செய்து முழுத் திரையில் காண்க</span>
         </div>
-
-        <div class="carousel-stage" id="carouselStage">
-          <button type="button" class="carousel-nav-btn carousel-prev-btn" onclick="event.stopPropagation(); prevChapterImage()" aria-label="முந்தைய காட்சி">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-          </button>
-          <img id="carouselMainImg" src="${img0.url}" alt="${img0.caption}" onclick="openArtLightboxByIndex(window.currentActiveImageIdx || 0)" title="பெரிதாகக் காண கிளிக் செய்க">
-          <button type="button" class="carousel-nav-btn carousel-next-btn" onclick="event.stopPropagation(); nextChapterImage()" aria-label="அடுத்த காட்சி">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </button>
-          <div class="carousel-overlay-caption" id="carouselCaptionBox" onclick="openArtLightboxByIndex(window.currentActiveImageIdx || 0)">
-            <span class="carousel-caption-tag" id="carouselCaptionTag">${img0.typeTitle}</span>
-            <div class="carousel-caption-text" id="carouselCaptionText">${img0.caption}</div>
-          </div>
-        </div>
-
-        <div class="carousel-thumbs-row">
-          ${thumbsHtml}
+        <div class="primary-strip-grid">
+          ${stripItemsHtml}
         </div>
       </div>
     `;
@@ -303,90 +448,118 @@ function renderCurrentChapterContent() {
         </button>
       </div>
 
-      <!-- 7 Sub-Chapters Interactive Jump Bar (பாட உட்பிரிவுகள்) -->
+      <!-- Sub-Chapters Interactive Jump Bar (பாட உட்பிரிவுகள்) -->
       <nav class="subchapter-nav-strip" aria-label="அத்தியாய உட்பிரிவுகள்">
-        ${images.length > 0 ? `<a href="#subchap-visuals" class="subchap-pill-btn"><span class="subchap-icon">🎨</span><span>1. காட்சிகள்</span></a>` : ''}
-        <a href="#subchap-verse" class="subchap-pill-btn"><span class="subchap-icon">📜</span><span>2. மூலப் பாடல்</span></a>
-        <a href="#subchap-exposition" class="subchap-pill-btn"><span class="subchap-icon">📖</span><span>3. விரிவுரை</span></a>
-        <a href="#subchap-story" class="subchap-pill-btn"><span class="subchap-icon">🪔</span><span>4. மெய்ஞ்ஞானக் கதை</span></a>
-        <a href="#subchap-life" class="subchap-pill-btn"><span class="subchap-icon">🌿</span><span>5. இல்லற நடைமுறை</span></a>
-        <a href="#subchap-exercise" class="subchap-pill-btn"><span class="subchap-icon">☀️</span><span>6. சாதனா பயிற்சி</span></a>
-        <a href="#subchap-media" class="subchap-pill-btn"><span class="subchap-icon">🎵</span><span>7. பாட இசை &amp; படம்</span></a>
-        <a href="#subchap-mastery" class="subchap-pill-btn"><span class="subchap-icon">🏆</span><span>8. நிறைவு &amp; தேர்வு</span></a>
+        ${images.length > 0 ? `<a href="#subchap-visuals" class="subchap-pill-btn"><span class="subchap-icon">🎨</span><span>காட்சிகள்</span></a>` : ''}
+        <a href="#subchap-verse" class="subchap-pill-btn"><span class="subchap-icon">📜</span><span>1. பாடல்</span></a>
+        <a href="#subchap-exposition" class="subchap-pill-btn"><span class="subchap-icon">📖</span><span>2. விரிவுரை</span></a>
+        <a href="#subchap-story" class="subchap-pill-btn"><span class="subchap-icon">🪔</span><span>3. கதை</span></a>
+        <a href="#subchap-life" class="subchap-pill-btn"><span class="subchap-icon">🌿</span><span>4. 3 Ds நடைமுறை</span></a>
+        <a href="#subchap-exercise" class="subchap-pill-btn"><span class="subchap-icon">☀️</span><span>5. சாதனா பயிற்சி</span></a>
+        <a href="#subchap-media" class="subchap-pill-btn"><span class="subchap-icon">🎵</span><span>6. பாட இசை</span></a>
+        <a href="#subchap-mastery" class="subchap-pill-btn"><span class="subchap-icon">🏆</span><span>7. தர்மத் தேர்வு</span></a>
       </nav>
 
-      <!-- 1. Chapter Visuals Carousel Gallery -->
-      <div id="subchap-visuals" style="scroll-margin-top: 90px;">
-        ${carouselHtml}
-      </div>
+      <!-- Chapter Visual Strip (Compact Jump Bar) -->
+      ${visualStripHtml}
 
-      <!-- 2. Sacred Verse Block (Zero-Wrapper & Deep Shadow) -->
-      <div id="subchap-verse" class="verse-callout-clean" style="scroll-margin-top: 90px; padding: 10px 0 16px 0; margin-bottom: 22px;">
-        <div style="font-size:0.8rem; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px; text-shadow:0 1px 3px rgba(0,0,0,0.95);">மூலப் பாடல் / சூத்திரம் (Sacred Verse):</div>
-        <div class="verse-text-sacred" style="font-size:1.22rem; font-weight:700; color:#ffffff; line-height:1.6; font-family:'Mukta Malar', serif; text-shadow:0 2px 8px rgba(0,0,0,0.98);">${chap.verse}</div>
-        <div class="verse-meaning-clean" style="color:#cbd5e1; font-size:0.95rem; margin-top:10px; line-height:1.6; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
-          <strong style="color:var(--gold-soft);">பொருள் விளக்கம்:</strong> ${chap.verseMeaning}
-        </div>
-        <div class="moola-reader-actions-row" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:14px; padding-top:10px;">
-          <button type="button" class="sheet-btn" onclick="openChapterMoolaModal('${currentBook}', ${chap.chapterNumber}, ${currentGrade})" style="font-size:0.82rem; padding:6px 12px; cursor:pointer;">
-            <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் &amp; பதவுரை காண்க
-          </button>
-          <a href="moola-nool.html" class="moola-canon-link" target="_blank" title="முழு மூல நூலகத்தில் திறக்க" style="color:#38bdf8; text-decoration:none; font-size:0.82rem;">
-            மூல நூல் நூலகம் &rarr;
-          </a>
-        </div>
-      </div>
-
-      <!-- 3. Philosophical Exposition (Zero-Wrapper) -->
-      <div id="subchap-exposition" class="reading-section-block" style="scroll-margin-top: 90px;">
-        <h4 style="color:#38bdf8; font-size:1.1rem; font-weight:700; margin:0 0 10px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
-          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          விரிவுரை &amp; தத்துவ உரை (Philosophical Exposition)
-        </h4>
-        <div style="color:#e2e8f0; font-size:0.96rem; line-height:1.8; margin-bottom:12px; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
-          ${chap.exposition}
+      <!-- 1. Sacred Verse Block: 50/50 Responsive Split (Image Left, Verse Right) -->
+      <div id="subchap-verse" class="primary-section-split split-verse" style="scroll-margin-top: 90px;">
+        ${renderSplitVisualCol(imgVerse, 'badge-gold', '📜 செய்யுள் காட்சி', idxVerse)}
+        <div class="split-text-col">
+          <span class="split-section-pill" style="background: rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid rgba(250, 204, 21, 0.35);">
+            📜 பிரிவு 1 • மூலப் பாடல் &amp; எளிய பொருள்
+          </span>
+          <h3 class="split-section-title" style="color: #fde047;">
+            ${chap.title} — திருவாக்கு
+          </h3>
+          <div class="verse-text-sacred" style="font-size:1.24rem; font-weight:700; color:#ffffff; line-height:1.65; font-family:'Mukta Malar', serif; text-shadow:0 2px 8px rgba(0,0,0,0.98); background:rgba(0,0,0,0.35); padding:14px 18px; border-radius:12px; border-left:4px solid #facc15; margin-bottom:12px;">
+            ${chap.verse}
+          </div>
+          <div class="split-text-content">
+            <strong style="color:var(--gold-soft);">பொருள் விளக்கம்:</strong> ${chap.verseMeaning}
+          </div>
+          <div class="moola-reader-actions-row" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:14px; padding-top:10px;">
+            <button type="button" class="sheet-btn" onclick="openChapterMoolaModal('${currentBook}', ${chap.chapterNumber}, ${currentGrade})" style="font-size:0.82rem; padding:6px 12px; cursor:pointer;">
+              <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px; height:13px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 📖 மூல நூல் &amp; பதவுரை
+            </button>
+            <a href="moola-nool.html" class="moola-canon-link" target="_blank" title="முழு மூல நூலகத்தில் திறக்க" style="color:#38bdf8; text-decoration:none; font-size:0.82rem;">
+              மூல நூல் நூலகம் &rarr;
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- 4. Puranic / Itihasic Narrative Story (Zero-Wrapper) -->
-      <div id="subchap-story" class="reading-section-block story-block" style="scroll-margin-top: 90px; padding:10px 0; margin-bottom:20px;">
-        <h4 style="color:var(--gold-bright); font-size:1.1rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
-          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-          மெய்ஞ்ஞானக் கதை / அற உருவகம் (Narrative Illustration)
-        </h4>
-        <div style="color:#cbd5e1; font-size:0.95rem; line-height:1.8; margin:12px 0; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
-          ${chap.story}
+      <!-- 2. Philosophical Exposition: 50/50 Responsive Split (Text Left, Image Right - Alternating) -->
+      <div id="subchap-exposition" class="primary-section-split split-exposition split-reverse" style="scroll-margin-top: 90px;">
+        ${renderSplitVisualCol(imgExposition, 'badge-blue', '📖 தத்துவ விளக்கம்', idxExposition)}
+        <div class="split-text-col">
+          <span class="split-section-pill" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35);">
+            📖 பிரிவு 2 • விரிவுரை &amp; வாழ்வியல் விளக்கம்
+          </span>
+          <h3 class="split-section-title" style="color: #7dd3fc;">
+            ${chap.title} — கருத்துப் பேழை
+          </h3>
+          <div class="split-text-content">
+            ${formatParagraphs(chap.exposition)}
+          </div>
         </div>
       </div>
 
-      <!-- 5. Life Application & Householder Dharma (Zero-Wrapper) -->
-      <div id="subchap-life" class="reading-section-block" style="scroll-margin-top: 90px; padding:10px 0; margin-bottom:20px;">
-        <h4 style="color:#34d399; font-size:1.1rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
-          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13a8.9 8.9 0 0 1 8.2-8.9 7 7 0 0 1 7.8 7.8A8.9 8.9 0 0 1 11 20z"/><path d="M12.5 4.5c.5 4.5-1 7.5-5 9.5"/></svg>
-          இல்லற &amp; அன்றாட வாழ்வியல் நடைமுறை (Practical Application: 3 Ds)
-        </h4>
-        <div style="color:#e2e8f0; font-size:0.94rem; line-height:1.7; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
-          ${chap.lifeApplication}
+      <!-- 3. Puranic / Narrative Story: 50/50 Responsive Split (Image Left, Story Text Right) -->
+      <div id="subchap-story" class="primary-section-split split-story" style="scroll-margin-top: 90px;">
+        ${renderSplitVisualCol(imgStory, 'badge-amber', '🪔 கதை அரங்கம்', idxStory)}
+        <div class="split-text-col">
+          <span class="split-section-pill" style="background: rgba(251, 146, 60, 0.15); color: #fb923c; border: 1px solid rgba(251, 146, 60, 0.35);">
+            🪔 பிரிவு 3 • மெய்ஞ்ஞானக் கதை &amp; அற விளக்கம்
+          </span>
+          <h3 class="split-section-title" style="color: #fdba74;">
+            கதை வழி தர்மம் உணர்தல்
+          </h3>
+          <div class="split-text-content">
+            ${formatParagraphs(chap.story)}
+          </div>
         </div>
       </div>
 
-      <!-- 6. Sadhana Exercise & Contemplative Question (Zero-Wrapper) -->
-      <div id="subchap-exercise" class="reading-section-block" style="scroll-margin-top: 90px; padding:10px 0; margin-bottom:24px;">
-        <h4 style="color:#facc15; font-size:1.1rem; font-weight:700; margin:0 0 8px 0; display:flex; align-items:center; gap:8px; text-shadow:0 1px 4px rgba(0,0,0,0.98);">
-          <svg class="gkd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-          சாதனா பயிற்சி &amp; சிந்தனை வினாக்கள் (Sadhana Exercise)
-        </h4>
-        <div style="color:#e2e8f0; font-size:0.94rem; line-height:1.7; text-shadow:0 1px 3px rgba(0,0,0,0.95);">
-          ${chap.exercise}
+      <!-- 4. Life Application & 3 Ds: 50/50 Responsive Split (3 Ds Cards Left, Image Right - Alternating) -->
+      <div id="subchap-life" class="primary-section-split split-life split-reverse" style="scroll-margin-top: 90px;">
+        ${renderSplitVisualCol(imgLife, 'badge-green', '🌿 3 Ds நடைமுறை', idxLife)}
+        <div class="split-text-col">
+          <span class="split-section-pill" style="background: rgba(52, 211, 153, 0.15); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.35);">
+            🌿 பிரிவு 4 • இல்லற &amp; அன்றாட வாழ்வியல் நடைமுறை (3 Ds)
+          </span>
+          <h3 class="split-section-title" style="color: #6ee7b7;">
+            வாழ்வில் கடைப்பிடிக்கும் தர்மம்
+          </h3>
+          <div class="split-text-content">
+            ${formatLifeApplication3Ds(chap.lifeApplication)}
+          </div>
         </div>
       </div>
 
-      <!-- 7. Curricular Integrated Media Player (பாட இசை & காணொளிக் களம்) -->
+      <!-- 5. Sadhana Exercise: 50/50 Responsive Split (Image Left, Activity Prompts Right) -->
+      <div id="subchap-exercise" class="primary-section-split split-exercise" style="scroll-margin-top: 90px;">
+        ${renderSplitVisualCol(imgExercise, 'badge-purple', '☀️ சாதனா பயிற்சி', idxExercise)}
+        <div class="split-text-col">
+          <span class="split-section-pill" style="background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.35);">
+            ☀️ பிரிவு 5 • மாணவர் சாதனா &amp; சிந்தனை வினாக்கள்
+          </span>
+          <h3 class="split-section-title" style="color: #e9d5ff;">
+            பாலர் தர்மச் செயல்பாடு
+          </h3>
+          <div class="split-text-content">
+            ${formatExerciseList(chap.exercise)}
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Curricular Integrated Media Player (பாட இசை & காணொளிக் களம்) -->
       <div id="subchap-media" style="scroll-margin-top: 90px;">
         ${renderCurriculumMediaSection(currentGrade, currentBook, chap.chapterNumber)}
       </div>
 
-      <!-- 8. Student Chapter Mastery, LMS Completion & Self-Check Deck -->
+      <!-- 7. Student Chapter Mastery, LMS Completion & Self-Check Deck -->
       <div id="subchap-mastery" style="scroll-margin-top: 90px;">
         ${renderStudentChapterDeck(currentGrade, currentBook, chap)}
       </div>
