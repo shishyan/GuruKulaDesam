@@ -292,8 +292,10 @@ def process_downloads(limit: int = None):
 
         # Check deduplication guard
         if audio.name in skip_files:
-            match_info = skip_files[audio.name]
-            # print(f"[{idx}/{len(audio_files)}] [SKIP - ALREADY ON YOUTUBE]: {audio.name} == [{match_info['matched_youtube_id']}] {match_info['matched_youtube_title']}", flush=True)
+            continue
+
+        # Skip non-final / WIP / intro scratch versions
+        if any(w in audio.name.lower() for w in ["intro", "draft", "test", "rough", "wip"]):
             continue
 
         stem = audio.stem

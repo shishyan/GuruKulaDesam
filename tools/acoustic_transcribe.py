@@ -26,9 +26,9 @@ def transcribe_audio_acoustically(wav_path, out_json_path):
         wav_path,
         language="ta",
         temperature=(0.0,),
-        compression_ratio_threshold=None,
-        logprob_threshold=None,
-        no_speech_threshold=None,
+        compression_ratio_threshold=2.4,
+        logprob_threshold=-1.0,
+        no_speech_threshold=0.6,
         condition_on_previous_text=False,
         fp16=False,
         verbose=False

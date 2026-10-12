@@ -1,16 +1,20 @@
-import asyncio
-from playwright.async_api import async_playwright
+import sys
+from playwright.sync_api import sync_playwright
 
-async def main():
-    async with async_playwright() as p:
-        browser = await p.chromium.connect_over_cdp('http://127.0.0.1:9222')
-        print(f"Connected! Contexts: {len(browser.contexts)}")
-        contexts = browser.contexts
-        if contexts:
-            pages = contexts[0].pages
-            print(f"Pages: {len(pages)}")
-            for page in pages:
-                print(f" - {page.url} ({await page.title()})")
+def test():
+    print("Testing Playwright connect_over_cdp to port 9225...")
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.connect_over_cdp("http://localhost:9225", timeout=10000)
+            print("Connected! Contexts:", len(browser.contexts))
+            for ctx in browser.contexts:
+                print("Pages in context:", len(ctx.pages))
+                for page in ctx.pages:
+                    print("  Page:", page.title(), "| URL:", page.url)
+            browser.close()
+            print("Successfully closed CDP connection.")
+    except Exception as e:
+        print("Playwright CDP connect error:", e)
 
-asyncio.run(main())
-
+if __name__ == "__main__":
+    test()
