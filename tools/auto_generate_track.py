@@ -143,6 +143,12 @@ def generate_scenes_for_track(track_id: str):
                 except Exception as e:
                     print("Video mode check:", e)
 
+                # Count existing download buttons BEFORE submission
+                initial_dl_count = flow_page.evaluate("""() => {
+                    return Array.from(document.querySelectorAll('button, [role="button"]'))
+                        .filter(b => (b.innerText || '').toLowerCase().includes('download') || (b.getAttribute('aria-label') || '').toLowerCase().includes('download')).length;
+                }""")
+
                 # 2. Click generate / submit
                 submit_btn = flow_page.locator("button[aria-label*='Start generation' i], button.generate-icon-button, button:has-text('arrow_forward')").last
                 clicked = False
@@ -157,10 +163,8 @@ def generate_scenes_for_track(track_id: str):
                     editor.focus()
                     flow_page.keyboard.press("Enter")
 
-                flow_page.wait_for_timeout(4000)
-
                 # 3. Wait for render to finish or detect failure
-                print(f"Waiting for Scene {scene_num} to start and complete render...")
+                print(f"Waiting for Scene {scene_num} to start and complete render (initial download buttons: {initial_dl_count})...")
                 render_started = False
                 generation_failed = False
                 for i in range(45):
@@ -171,11 +175,16 @@ def generate_scenes_for_track(track_id: str):
                         continue
                     
                     has_stop = "Stop" in body_text
-                    # Check for progress percentage (e.g. 15%, 45%, 93%)
                     import re
                     has_pct = bool(re.search(r'\b\d{1,2}%\b', body_text))
 
-                    if has_stop or has_pct:
+                    # Also query live download buttons count
+                    cur_dl_count = flow_page.evaluate("""() => {
+                        return Array.from(document.querySelectorAll('button, [role="button"]'))
+                            .filter(b => (b.innerText || '').toLowerCase().includes('download') || (b.getAttribute('aria-label') || '').toLowerCase().includes('download')).length;
+                    }""")
+
+                    if has_stop or has_pct or cur_dl_count > initial_dl_count:
                         render_started = True
 
                     # Check for server-side generation failure
@@ -184,9 +193,10 @@ def generate_scenes_for_track(track_id: str):
                         generation_failed = True
                         break
 
-                    if render_started and not has_stop and not has_pct:
-                        print(f"✨ Scene {scene_num} render completed in ~{i*3}s! Waiting 8s to settle new card...")
-                        flow_page.wait_for_timeout(8000)
+                    # If download button count increased or render settled
+                    if (cur_dl_count > initial_dl_count or (render_started and not has_stop and not has_pct)) and i >= 2:
+                        print(f"✨ Scene {scene_num} render completed in ~{i*3}s (download buttons: {cur_dl_count})! Waiting 5s to settle new card...")
+                        flow_page.wait_for_timeout(5000)
                         break
 
                 if generation_failed or not render_started:
