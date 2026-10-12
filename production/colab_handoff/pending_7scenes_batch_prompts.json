@@ -439,7 +439,7 @@
         },
         {
           "scene_num": 3,
-          "prompt": "Create a single continuous 16:9 cinematic intimate shot at 24 fps. Saint Ramalinga Vallalar, draped in a pure unstitched white cotton shawl, stands before the sanctum with hands joined in heartfelt prayer. His eyes radiate profound universal compassion and devotion as tears of grace glisten softly in the lamp light. *Exclusions:* No modern glasses, no printed paper, no text.",
+          "prompt": "Create a single continuous 16:9 cinematic intimate shot at 24 fps. An enlightened Tamil sage in a pure unstitched white cotton shawl stands before the sanctum with hands joined in heartfelt prayer. His eyes radiate profound universal compassion and devotion as tears of grace glisten softly in the lamp light. *Exclusions:* No modern glasses, no printed paper, no text.",
           "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern glasses, no printed paper, no text."
         },
         {
@@ -449,8 +449,8 @@
         },
         {
           "scene_num": 5,
-          "prompt": "Create a single continuous 16:9 cinematic slow-motion shot at 24 fps inside the sanctum. Pure white cow's milk and golden honey are poured over the bronze vigraha of Lord Muruga, flowing smoothly over the divine shoulders and lotus feet in the warm glow of oil wicks. *Exclusions:* No synthetic vessels, no modern clothing, no text.",
-          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No synthetic vessels, no modern clothing, no text."
+          "prompt": "Create a single continuous 16:9 cinematic silent visual shot at 24 fps inside the ancient granite sanctum. Golden honey and milk abhishekam gently offered over the consecrated bronze vigraha of Lord Muruga, glowing in the warm ambient light of traditional brass oil lamps. *Exclusions:* No synthetic vessels, no modern clothing, no text, no audio.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No synthetic vessels, no modern clothing, no text, no audio."
         },
         {
           "scene_num": 6,
@@ -543,8 +543,8 @@
         },
         {
           "scene_num": 7,
-          "prompt": "Slow cinematic crane rise looking out from the temple mandapam. Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. In warm predawn indigo and amber temple light, show an ancient South Indian granite sanctum entrance. Slow forward dolly move past carved stone pillars toward an ancient Shiva Lingam gently illuminated by flickering bronze oil lamps. Fresh Bilva leaves and white parijatha blossoms rest upon the polished black stone pedestal. A brass dhoopam burner sits on a stone ledge, curling gentle translucent grey incense smoke into the dawn air. Sacred silence, natural lighting, 8k resolution. *Exclusions:* No text, no modern items, no digital zoom, no camera shake.. panoramic view of Kaveri river ghats and coconut palm groves under soft dawn skies.",
-          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no modern items, no digital zoom, no camera shake."
+          "prompt": "Create a single continuous 16:9 cinematic silent visual shot at 24 fps from the temple mandapam. Panoramic slow crane rise overlooking the tranquil Kaveri river ghats and sacred coconut palm groves under soft dawn skies. Distant Dravidian temple gopuram illuminated in morning mist. *Exclusions:* No text, no modern items, no digital zoom, no camera shake, no audio.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no modern items, no digital zoom, no camera shake, no audio."
         }
       ]
     },
