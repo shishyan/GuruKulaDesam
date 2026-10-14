@@ -1,0 +1,174 @@
+{
+  "status": "complete",
+  "title": "அறிவுடைமை 1N",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "53573d3e-529d-4e6d-97f9-3e85e2fdb137",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/53573d3e-529d-4e6d-97f9-3e85e2fdb137.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_53573d3e-529d-4e6d-97f9-3e85e2fdb137.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_53573d3e-529d-4e6d-97f9-3e85e2fdb137.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Devotional post-genre, tape echo trails, measured processional pulse, weathered male tenor in devotional recitation, frame drum with sparse low drone and resonant hand percussion, close vocal presence opening into stone-like reverb",
+    "prompt": "[Chorus]\nஅறிவுடையார் ஆவது அறிவார் (அறிவிலார்)\nஅghது அறிகல்லாதவர்\nஅறிவுடையார் எல்லாம் உடையார் (அறிவிலார்)\nஎன்னுடைய ரேனுமிலர்\n\n[Verse]\nஎப்பொருள் யார்யார்வாய்க் கேட்பினும் (அப்பொருள்)\nமெய்ப்பொருள் காண்பது அறிவு\nஎப்பொருள் யார்யார்வாய்க் கேட்பினும் (அப்பொருள்)\nமெய்ப்பொருள் காண்பது அறிவு\n\nஅஞ்சுவது அஞ்சாமை பேதைமை (அஞ்சுவது)\nஅஞ்சல் அறிவார் தொழில்\nஅஞ்சுவது அஞ்சாமை பேதைமை (அஞ்சுவது)\nஅஞ்சல் அறிவார் தொழில்\n\n[Chorus]\nஅறிவுடையார் ஆவது அறிவார் (அறிவிலார்)\nஅghது அறிகல்லாதவர்\nஅறிவுடையார் எல்லாம் உடையார் (அறிவிலார்)\nஎன்னுடைய ரேனுமிலர்\n\n[Verse 2]\nஅறிவு அற்றம் காக்கும் கருவி (செறுவார்க்கும்)\nஉள்அழிக்க லாகா அரண்\nஎண்பொருளவாகச் செலச்சொல்லித் தான் (பிறர்வாய்)\nநுண்பொருள் காண்பது அறிவு\nஎவ்வது உறைவது உலகம் (உலகத்தோடு)\nஅவ்வது உறைவது அறிவு\n\n[Chorus]\nஅறிவுடையார் ஆவது அறிவார் (அறிவிலார்)\nஅghது அறிகல்லாதவர்\nஅறிவுடையார் எல்லாம் உடையார் (அறிவிலார்)\nஎன்னுடைய ரேனுமிலர்\n\n[Verse 3]\nஉலகம் தழீஇயது ஒட்பம் (மலர்தலும்)\nகூம்பலும் இல்லது அறிவு\nஎதிரதாக் காக்கும் அறிவினார்க்கு (இல்லை)\nஅதிர வருவதோர் நோய்\nசென்ற இடத்தால் செலவிடா (தீதொரீஇ)\nநன்றின்பால் உய்ப்பது அறிவு\n\n[Chorus]\nஅறிவுடையார் ஆவது அறிவார் (அறிவிலார்)\nஅghது அறிகல்லாதவர்\nஅறிவுடையார் எல்லாம் உடையார் (அறிவிலார்)\nஎன்னுடைய ரேனுமிலர்",
+    "type": "gen",
+    "duration": 292.4,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "airbrush",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-18T06:59:48.837Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "post-genre, devotional, processional",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

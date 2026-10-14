@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "திருக்குறள் வாய்மை 1H Golden 2026",
+  "play_count": 0,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "eb934202-b782-4470-bc01-1875f84f63a9",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/eb934202-b782-4470-bc01-1875f84f63a9.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/eb934202-b782-4470-bc01-1875f84f63a9.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_eb934202-b782-4470-bc01-1875f84f63a9.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_eb934202-b782-4470-bc01-1875f84f63a9.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "European Folk, Folk, mixed village chorus with earthy unison refrain, call-and-response phrasing and open communal delivery, roomy village courtyard reverb with natural group reflections",
+    "negative_tags": "",
+    "prompt": "[Verse 1]\nவாய்மை எனப்படுவது யாதெனின் (யாதொன்றும்)\nதீமை இலாத சொலல்\nவாய்மை எனப்படுவது யாதெனின் (யாதொன்றும்)\nதீமை இலாத சொலல்\nபொய்யாமை பொய்யாமை ஆற்றின் (அறம்பிற)\nசெய்யாமை செய்யாமை நன்று\nபொய்யாமை அன்ன புகழில்லை (எய்யாமை)\nஎை)\nஎலல்்லலா அா அறறமமுமும் த் தரருமும்\n\n[Chorus]\nதன்நெஞ்சு அறிவது பொய்யற்க (பொய்த்தபின்)\nதன்நெஞ்சே தன்னை சுடும்\nதன்நெஞ்சு அறிவது பொய்யற்க (பொய்த்தபின்)\nதன்நெஞ்சே தன்னை சுடும்\n\n[Verse 2]\nபொய்மையும் வாய்மை இடத்த (புரைதீர்ந்த)\nநன்மை பயக்கும் எனின்\nஉள்ளத்தால் பொய்யாது ஒழுகின் (உலகத்தார்)\nஉள்ளத்துள் எல்லாம் உளன்\nமனத்தொடு வாய்மை மொழியின் (தவத்தொடு)\nதானம் செய்வாரின் தலை\n\n[Chorus]\nபொய்யாமை பொய்யாமை ஆற்றின் (அறம்பிற)\nசெய்யாமை செய்யாமை நன்று\nபொய்யாமை அன்ன புகழில்லை (எய்யாமை)\nஎல்லா அறமும் தரும்\n\n[Verse 3]\nபுறந்தூய்மை நீரான் அமையும் (அகந்தூய்மை)\nவாய்மையால் காணப் படும்\nஎல்லா விளக்கும் விளக்கல்ல (சான்றோர்க்கு)\nபொய்யா விளக்கே விளக்கு\nயாமெய்யாக் கண்டவற்றுள் இல்லை (எனைத்தொன்றும்)\nவாய்மையின் நல்ல பிற\n\n[Chorus]\nதன்நெஞ்சு அறிவது பொய்யற்க (பொய்த்தபின்)\nதன்நெஞ்சே தன்னை சுடும்\nதன்நெஞ்சு அறிவது பொய்யற்க (பொய்த்தபின்)\nதன்நெஞ்சே தன்னை சுடும்",
+    "type": "studio_export",
+    "duration": 253.9106875,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "27c4eb4a-f2cf-4d85-be2d-2556a7d80c2d",
+    "studio_project_version_id": "976b7a7e-f28d-48dd-be92-3313e281bbf0",
+    "studio_project_start_beats": -1.0008333098468662,
+    "studio_project_end_beats": 553.3707951534703,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-13T20:09:43.940Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

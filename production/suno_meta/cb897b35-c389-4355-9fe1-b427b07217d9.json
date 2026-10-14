@@ -1,0 +1,175 @@
+{
+  "status": "complete",
+  "title": "குடிசெயல்வகை 1D Golden",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "cb897b35-c389-4355-9fe1-b427b07217d9",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/cb897b35-c389-4355-9fe1-b427b07217d9.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_cb897b35-c389-4355-9fe1-b427b07217d9.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_cb897b35-c389-4355-9fe1-b427b07217d9.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Classical Oratorio with Synth Sitar Fusion, male vocals in a firm, resonant register with broad choral phrasing; slow, weighty pulse; deep cinematic drum impacts, resonant synth layers, and melodic sitar lines; spacious orchestral mix with long drum decay.",
+    "prompt": "[Chorus]\nநல்லாண்மை என்பது ஒருவற்கு (தான்பிறந்த)\nஇல்லாண்மை ஆக்கிக் கொளல்\nநல்லாண்மை என்பது ஒருவற்கு (தான்பிறந்த)\nஇல்லாண்மை ஆக்கிக் கொளல்\n\n[Verse 1]\nஆள்வினையும் ஆன்ற அறிவும் (எனஇரண்டின்)\nநீள்வினையால் நீளும் குடி\nஆள்வினையும் ஆன்ற அறிவும் (எனஇரண்டின்)\nநீள்வினையால் நீளும் குடி\n\nகருமம் செயஒருவன் கைதூவேன் (என்னும்)\nபெருமையின் பீடுடையது இல்\nகருமம் செயஒருவன் கைதூவேன் (என்னும்)\nபெருமையின் பீடுடையது இல்\n\n[Chorus]\nநல்லாண்மை என்பது ஒருவற்கு (தான்பிறந்த)\nஇல்லாண்மை ஆக்கிக் கொளல்\nநல்லாண்மை என்பது ஒருவற்கு (தான்பிறந்த)\nஇல்லாண்மை ஆக்கிக் கொளல்\n\n[Verse 2]\nசூழாமல் தானே முடிவெய்தும் (தம்குடியைத்)\nதாழாது உஞற்று பவர்க்கு\nகுற்றம் இலனாய்க் குடிசெய்து (வாழ்வானைச்)\nசுற்றமாச் சுற்றும் உலகு\n\nகுடிசெய்வல் என்னும் ஒருவற்குத் (தெய்வம்)\nமடிதற்றுத் தான்முந் துறும்\nகுடிசெய்வல் என்னும் ஒருவற்குத் (தெய்வம்)\nமடிதற்றுத் தான்முந் துறும்\n\n[Chorus]\nநல்லாண்மை என்பது ஒருவற்கு (தான்பிறந்த)\nஇல்லாண்மை ஆக்கிக் கொளல்\nநல்லாண்மை என்பது ஒருவற்கு (தான்பிறந்த)\nஇல்லாண்மை ஆக்கிக் கொளல்\n\n[Verse 3]\nஇடும்பைக்கே கொள்கலம் கொல்லோ (குடும்பத்தைக்)\nகுற்ற மறைப்பான் உடம்பு\nஇடுக்கண்கால் கொன்றிட வீழும் (அடுத்தூன்றும்)\nநல்லாள் இலாத குடி\n\nஅமரகத்து வன்கண்ணர் போலத் (தமரகத்தும்)\nஆற்றுவார் மேற்றே பொறை\nகுடிசெய்வார்க் கில்லை பருவம் (மடிசெய்து)\nமானங் கருதக் கெடும்\n\n[Chorus]\nநல்லாண்மை என்பது ஒருவற்கு (தான்பிறந்த)\nஇல்லாண்மை ஆக்கிக் கொளல்\nநல்லாண்மை என்பது ஒருவற்கு (தான்பிறந்த)\nஇல்லாண்மை ஆக்கிக் கொளல்",
+    "type": "gen",
+    "duration": 449.76,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "airbrush",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-03T10:33:55.479Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Classical Oratorio, Synth Sitar Fusion, Cinematic",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

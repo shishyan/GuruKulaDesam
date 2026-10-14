@@ -1,0 +1,200 @@
+{
+  "status": "complete",
+  "title": "கொடுங்கோன்மை 1E Golden",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "60a04cc8-fe51-468e-b33c-9c6459ef76d4",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/60a04cc8-fe51-468e-b33c-9c6459ef76d4.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_60a04cc8-fe51-468e-b33c-9c6459ef76d4.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_60a04cc8-fe51-468e-b33c-9c6459ef76d4.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Bad Kingdom",
+    "prompt": "[Chorus]\nமுறைகோடி மன்னவன் செய்யின் (உறைகோடி)\nஒல்லாது வானம் பெயல்\nமுறைகோடி மன்னவன் செய்யின் (உறைகோடி)\nஒல்லாது வானம் பெயல்\n\n[Verse 1]\nமன்னர்க்கு மன்னுதல் செங்கோன்மை (அghதின்றேல்)\nமன்னாவாம் மன்னர்க் கொளி\nமன்னர்க்கு மன்னுதல் செங்கோன்மை (அghதின்றேல்)\nமன்னாவாம் மன்னர்க் கொளி\n\nஇன்மையின் இன்னாது உடைமை (முறைசெய்யா)\nமன்னவன் கோற்கீழ்ப் படின்\nஇன்மையின் இன்னாது உடைமை (முறைசெய்யா)\nமன்னவன் கோற்கீழ்ப் படின்\n\n[Chorus]\nமுறைகோடி மன்னவன் செய்யின் (உறைகோடி)\nஒல்லாது வானம் பெயல்\nமுறைகோடி மன்னவன் செய்யின் (உறைகோடி)\nஒல்லாது வானம் பெயல்\n\n[Bridge]\nஆபயன் குன்றும் அறுதொழிலோர் (நூல்மறப்பர்)\nகாவலன் காவான் எனின்\nஆபயன் குன்றும் அறுதொழிலோர் (நூல்மறப்பர்)\nகாவலன் காவான் எனின்\n\nதுளியின்மை ஞாலத்திற்கு எற்றற்றே (வேந்தன்)\nஅளியின்மை வாழும் உயிர்க்கு\nதுளியின்மை ஞாலத்திற்கு எற்றற்றே (வேந்தன்)\nஅளியின்மை வாழும் உயிர்க்கு\n\nஅல்லற்பட்டு ஆற்றாது அழுதகண் (நீரன்றே)\nசெல்வத்தைத் தேய்க்கும் பட\n\n[Chorus]\nமுறைகோடி மன்னவன் செய்யின் (உறைகோடி)\nஒல்லாது வானம் பெயல்\nமுறைகோடி மன்னவன் செய்யின் (உறைகோடி)\nஒல்லாது வானம் பெயல்\n\n[Verse 2]\nகூழுங் குடியும் ஒருங்கிழக்கும் (கோல்கோடிச்)\nசூழாது செய்யும் அரசு\nவேலொடு நின்றான் இடுவென் (றதுபோலும்)\nகோலொடு நின்றான் இரவு\nகொலைமேற்கொண் டாரிற் கொடிதே (அலைமேற்கொண்டு)\nஅல்லவை செய்தொழுகும் வேந்து\nநாடொறும் நாடி முறைசெய்யா (மன்னவன்)\nநாடொறும் நாடு கெடும்\n\n[Chorus]\nமுறைகோடி மன்னவன் செய்யின் (உறைகோடி)\nஒல்லாது வானம் பெயல்\nமுறைகோடி மன்னவன் செய்யின் (உறைகோடி)\nஒல்லாது வானம் பெயல்",
+    "history": [
+      {
+        "source_is_webview": false,
+        "infill": false,
+        "id": "00000000-0000-0000-0000-000000000000",
+        "source": "web",
+        "type": "gen",
+        "continue_at": 227.24
+      }
+    ],
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "continue_at": 227.24,
+    "type": "gen",
+    "duration": 240.72,
+    "refund_credits": false,
+    "stream": true,
+    "infill": false,
+    "make_instrumental": false,
+    "control_sliders": {
+      "weirdness_constraint": 0.55,
+      "aug_creativity": 1
+    },
+    "task": "extend",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "EXTEND 1",
+        "icon_key": "part",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "black_and_white_photograph",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-20T19:29:50.930Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

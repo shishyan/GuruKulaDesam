@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guru Kula Desam Channel Synchronizer - Internal Dashboard</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #1e1e24; color: #e4e4e7; margin: 0; padding: 30px; }
+    .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; padding-bottom: 20px; }
+    .title { font-size: 24px; font-weight: bold; color: #f59e0b; display: flex; align-items: center; gap: 10px; }
+    .badge-live { background: #10b981; color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 12px; font-weight: 600; }
+    .meta-card { background: #27272a; border: 1px solid #3f3f46; border-radius: 8px; padding: 20px; margin: 24px 0; display: flex; gap: 30px; }
+    .meta-item { display: flex; flex-direction: column; }
+    .meta-label { font-size: 12px; color: #a1a1aa; text-transform: uppercase; letter-spacing: 0.5px; }
+    .meta-value { font-size: 18px; font-weight: 600; color: #fafafa; margin-top: 4px; }
+    .table-container { background: #27272a; border: 1px solid #3f3f46; border-radius: 8px; overflow: hidden; margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; }
+    th { background: #18181b; padding: 14px 18px; color: #a1a1aa; font-weight: 600; border-bottom: 1px solid #3f3f46; }
+    td { padding: 14px 18px; border-bottom: 1px solid #333; }
+    tr:last-child td { border-bottom: none; }
+    .status-ok { color: #34d399; font-weight: 600; }
+    .code { font-family: monospace; background: #18181b; padding: 2px 6px; border-radius: 4px; color: #38bdf8; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">
+      <span>⚙️</span>
+      <span>Guru Kula Desam Channel Synchronizer v2.4</span>
+    </div>
+    <div>
+      <span class="badge-live">● OAuth 2.0 Authenticated</span>
+    </div>
+  </div>
+
+  <div class="meta-card">
+    <div class="meta-item">
+      <span class="meta-label">Connected Channel</span>
+      <span class="meta-value">குரு குல தேசம் (Guru Kula Desam)</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Channel ID</span>
+      <span class="meta-value code">UCPqB1A_WzpLJec6q69BOO3Q</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Catalog Total</span>
+      <span class="meta-value">604 Unique Works</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Active API Methods</span>
+      <span class="meta-value code">captions.insert, videos.update</span>
+    </div>
+  </div>
+
+  <h3>Live Video Synchronization Status & Subtitle Injection</h3>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Video ID</th>
+          <th>Title & Scripture Work</th>
+          <th>Description Sync</th>
+          <th>SRT Caption Upload</th>
+          <th>Default Tag</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="code">4s48KQnjSyQ</td>
+          <td>முத்தைத் தரு (திருப்புகழ்) | Muthai Tharu</td>
+          <td class="status-ok">✓ Canonical Arunagirinathar Verses</td>
+          <td class="status-ok">✓ AUieDaaWx2b...</td>
+          <td class="code">yt:cc=on</td>
+          <td class="status-ok">SYNCED</td>
+        </tr>
+        <tr>
+          <td class="code">nnlH4ydFRQw</td>
+          <td>திருவாசகம்: பிரார்த்தனைப் பத்து | Thiruvasagam</td>
+          <td class="status-ok">✓ Manikkavasagar Scripture & Meaning</td>
+          <td class="status-ok">✓ AUieDaaJd4n...</td>
+          <td class="code">yt:cc=on</td>
+          <td class="status-ok">SYNCED</td>
+        </tr>
+        <tr>
+          <td class="code">IHMZsM7LJf8</td>
+          <td>திருக்குறள்: அதிகாரம் 74 - நாடு | Naadu</td>
+          <td class="status-ok">✓ Thiruvalluvar Couplets & Explanations</td>
+          <td class="status-ok">✓ AUieDabx1ZX...</td>
+          <td class="code">yt:cc=on</td>
+          <td class="status-ok">SYNCED</td>
+        </tr>
+        <tr>
+          <td class="code">ZAjf5Ewzu_c</td>
+          <td>தேவாரம்: மாசில் வீணையும் | Thevaram</td>
+          <td class="status-ok">✓ Appar Swamigal Hymn & Meaning</td>
+          <td class="status-ok">✓ AUieDaa2jVS...</td>
+          <td class="code">yt:cc=on</td>
+          <td class="status-ok">SYNCED</td>
+        </tr>
+        <tr>
+          <td class="code">6MaQYObW8OQ</td>
+          <td>திருக்குறள்: அதிகாரம் 35 - துறவு | Thuravu</td>
+          <td class="status-ok">✓ Complete Couplets & Moral Exposition</td>
+          <td class="status-ok">✓ AUieDabs3AY...</td>
+          <td class="code">yt:cc=on</td>
+          <td class="status-ok">SYNCED</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "title": "புதல்வரைப் பெறுதல் 1A",
+  "play_count": 1,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "427250f6-ce61-4323-9414-9e9c0aa7e113",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/427250f6-ce61-4323-9414-9e9c0aa7e113.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_427250f6-ce61-4323-9414-9e9c0aa7e113.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_427250f6-ce61-4323-9414-9e9c0aa7e113.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Orchestral ballad, slow measured pulse, plaintive oboe over slow brass chords and restrained fear drums, breathy male alto kept close and subdued, dark brass-room reverb with low-mix depth.",
+    "prompt": "[Chorus]\nஎழுபிறப்பும் தீயவை தீண்டா  (பழிபிறங்காப்)\nபண்புடை மக்கட் பெறின்\nஎழுபிறப்பும் தீயவை தீண்டா  (பழிபிறங்காப்)\nபண்புடை மக்கட் பெறின்\n\n[Verse 1]\nஈன்ற பொழுதின் பெரிதுவக்கும்  (தன்மகனைச்)\nசான்றோன் எனக்கேட்ட தாய்\nஈன்ற பொழுதின் பெரிதுவக்கும்  (தன்மகனைச்)\nசான்றோன் எனக்கேட்ட தாய்\n\nபெறுமவற்றுள் யாமறிவது இல்லை  (அறிவறிந்த)\nமக்கட்பேறு அல்ல பிற\nதம்பொருள் என்பதம் மக்கள்  (அவர்பொருள்)\nதம்தம் வினையான் வரும்\n\n[Chorus]\nஎழுபிறப்பும் தீயவை தீண்டா  (பழிபிறங்காப்)\nபண்புடை மக்கட் பெறின்\nஎழுபிறப்பும் தீயவை தீண்டா  (பழிபிறங்காப்)\nபண்புடை மக்கட் பெறின்\n\n[Verse 2]\nமக்கள்மெய் தீண்டல் உடற்கின்பம்  (மற்றுஅவர்)\nசொற்கேட்டல் இன்பம் செவிக்கு\nஅமிழ்தினும் ஆற்ற இனிதேதம்  (மக்கள்)\nசிறுகை அளாவிய கூழ்\n\nகுழல்இனிது யாழ்இனிது என்பதம்  (மக்கள்)\nமழலைச்சொல் கேளா தவர்\nதந்தை மகற்காற்று நன்றி  (அவையத்து)\nமுந்தி இருப்பச் செயல்\n\nதம்மின்தம் மக்கள் அறிவுடைமை  (மாநிலத்து)\nமன்னுயிர்க் கெல்லாம் இனிது\nமகன்தந்தைக்கு ஆற்றும் உதவி  (இவன்தந்தை)\nஎன்நோற்றான் கொல்எனும் சொல்\n\n[Chorus]\nஎழுபிறப்பும் தீயவை தீண்டா  (பழிபிறங்காப்)\nபண்புடை மக்கட் பெறின்\nஎழுபிறப்பும் தீயவை தீண்டா  (பழிபிறங்காப்)\nபண்புடை மக்கட் பெறின்",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 298.0,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "black_and_white_photograph",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-07T07:55:32.967Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "orchestral ballad",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

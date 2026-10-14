@@ -1,0 +1,174 @@
+{
+  "status": "complete",
+  "title": "சண்முக மந்திரம் 1I",
+  "play_count": 3,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "11dabf8c-0e3c-46b4-8265-5be5d307d4cb",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/11dabf8c-0e3c-46b4-8265-5be5d307d4cb.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_11dabf8c-0e3c-46b4-8265-5be5d307d4cb.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_11dabf8c-0e3c-46b4-8265-5be5d307d4cb.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Carnatic Traditional Orchestra, mridangam-led percussion with veena, violin, bamboo flute, and tanpura drone, stately devotional tempo with measured rhythmic cadences, resonant male classical lead with disciplined Sanskrit and Tamil diction, layered chorus responses, natural concert-hall reverberation",
+    "prompt": "[Chorus]\nஅருவமும் உருவமாகி, அநாதியாய்ப் (பலவாய் ஒன்றாய்,)\n  பிரமமாய் நின்றசோதிப் (பிழம்பதோர் மேனியாகி,)\n    கருணை கூர் முகங்களாறும், (கரங்கள் பன்னிரண்டுங் கொண்டே,)\n      ஒருதிரு முருகன் வந்து, ஆங்கு, (உதித்தனன் உலகமுய்ய!)\n\n[Verse]\nஓம் நமோ பகவதே (சுப்ரமண்யாய)!\nஷண்முகாய (மஹாத்மனே)\nஸர்வ துஷ்ட க்ரஹ (நிக்ரஹாய)\nஸர்வ வ்யாதி (நிவாரணாய)\nஸர்வ துக்க (விநாஸாய)\n\nஸர்வ பாப (ப்ரணாஸநாய)\nஸர்வ சத்ரு ஸம்ஹார (காரணாய)\nகுஹாய மஹாபல (பராக்ரமாய)\nஓம் சரவண பவாய நமஹ!\n\n[Chorus]\nஅருவமும் உருவமாகி, அநாதியாய்ப் (பலவாய் ஒன்றாய்,)\n  பிரமமாய் நின்றசோதிப் (பிழம்பதோர் மேனியாகி,)\n    கருணை கூர் முகங்களாறும், (கரங்கள் பன்னிரண்டுங் கொண்டே,)\n      ஒருதிரு முருகன் வந்து, ஆங்கு, (உதித்தனன் உலகமுய்ய!)\n\n[Verse]\nஸர்வ பய (ப்ரசமனாய )\nஸர்வத்ர (விஜயப்ரதாய)\nத்ரைலோக்ய (ரக்ஷகாய )\nஸர்வ அபீஷ்ட (ப்ரதாய)\n\nவீராய சூராய மக்தாய  (மஹா பலாய)\nபக்தாய பக்த பரி  (பாலனாயா)\nதனாய தனேஸ்வராய\nஓம் ஸர்வா பீஷ்டம்  (ப்ரயச்ச ஸ்வாஹா!)\nஓம் சுப்ரமண்ய  (தேவதாய நமஹ!)\n\n[Chorus]\nஅருவமும் உருவமாகி, அநாதியாய்ப் (பலவாய் ஒன்றாய்,)\n  பிரமமாய் நின்றசோதிப் (பிழம்பதோர் மேனியாகி,)\n    கருணை கூர் முகங்களாறும், (கரங்கள் பன்னிரண்டுங் கொண்டே,)\n      ஒருதிரு முருகன் வந்து, ஆங்கு, (உதித்தனன் உலகமுய்ய!)\n\n[Verse]\nராஜராஜஸகோத் (பூதம்)\nராஜீவாயத (லோசனம்)\nரதீசகோடி (ஸெளந்தர்யம்)\nதேஹிமே விபுலாம் (ச்ரியம்)\n\nஞான சக்திதர (ஸ்கந்தா)\nவள்ளிகல்யாண (சுந்தரா)\nதேவசேனா மண (காந்த)\nகார்த்திகேயா (நமோ ஸ்துதே)\nஓம் சுப்ரமணியாய (நமஹ)\n\n[Chorus]\nஅருவமும் உருவமாகி, அநாதியாய்ப் (பலவாய் ஒன்றாய்,)\n  பிரமமாய் நின்றசோதிப் (பிழம்பதோர் மேனியாகி,)\n    கருணை கூர் முகங்களாறும், (கரங்கள் பன்னிரண்டுங் கொண்டே,)\n      ஒருதிரு முருகன் வந்து, ஆங்கு, (உதித்தனன் உலகமுய்ய!)\n\n[Verse]\nஓம் முருகா குரு முருகா  (திரு முருகா )\nஅருள் முருகா ஆனந்த (முருகா)\nசிவசக்தி பாலகனே (ஷண்முகனே)\nசடாக்ஷரனே செந்தில் (வேலவனே )\nஎன் வாக்கிலும் நாவிலும் (நின்று காக்க!)\n\nஓம் ஐம் ஹ்ரீம் வேல் காக்க சுவாஹா\nஓம் செளம் சரவணபவ!\nஸ்ரீம் க்ரீம் க்லீம் க்லெளம் செளம் நமஹ\nஓம் தத்புருஷாய வித்மஹே\nமஹாஸேனாய தீமஹி\nதன்னோ ஷண்முக ப்ரசோதயாத்!\n\n[Chorus]\nஸ்ரீ ஸுகந்த குந்தளாம்பிகா (ஸமேத )\nஸ்ரீ ரத்னகிரீஸ்வர (ப்ரியபுத்ராய)\nஸ்ரீ ஸுப்ரமண்யாய (நமோ நமஹ!)\nஸ்ரீ ஸுப்ரமண்யாய (நமோ நமஹ!)",
+    "type": "gen",
+    "duration": 288.4,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "film_strip",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-16T18:44:02.636Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Carnatic Traditional, Classical, Devotional",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

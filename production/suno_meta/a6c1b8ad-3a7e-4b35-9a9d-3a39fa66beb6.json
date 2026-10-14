@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "திருவருட்பா - இரண்டாம் திருமுறை - திருப்புகழ் விலாசம் 2026",
+  "play_count": 8,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "a6c1b8ad-3a7e-4b35-9a9d-3a39fa66beb6",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/a6c1b8ad-3a7e-4b35-9a9d-3a39fa66beb6.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/a6c1b8ad-3a7e-4b35-9a9d-3a39fa66beb6.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_a6c1b8ad-3a7e-4b35-9a9d-3a39fa66beb6.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_a6c1b8ad-3a7e-4b35-9a9d-3a39fa66beb6.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "Indian Classical, World Fusion, Ambient, World Music",
+    "negative_tags": "",
+    "prompt": "[Verse]\nஅம்ப[Intro]\nஅலமத்ப்தலுளத்து்ளநின்்றநு ின்று (ஆ(ஆடல்வலட்லல் வல்லாானனே)\nே)\nதுமத்புமை வ்பனை வ்னனியஞ்னியஞ் (சட் (சைமுடடிைமயுடவி யனவனே)\n\n[Verse]\nஅம்பலத்துள்நின்று  (ஆடல் வல்லானே)\nதும்பை வன்னியஞ் (சடைமுடி யவனே)\nசெம்பொன்னே செழும் (பவளமா மலையே)\nதிகழும் ஒற்றியூர் (சிவ பெருமானே)\nதூயனே அருட்பரஞ் (சோதியே எங்கள்)\nதும்பை வன்னியஞ் (சடைமுடி யவனே)\nசெம்பொன்னே செழும் (பவளமா மலையே)\nதிகழும் ஒற்றியூர்ச் (சிவ பெருமானே)\n\n[Chorus]\nஅம்பலத்துள்நின்று  (ஆடல் வல்லானே)\nதும்பை வன்னியஞ் (சடைமுடி யவனே)\nசெம்பொன்னே செழும் (பவளமா மலையே)\nதிகழும் ஒற்றியூர்ச் (சிவ பெருமானே)\n\n[Verse]\nதுங்க வெண்பொடி (அணிந்துநின்கோயில்)\nதொழும்பு செய்துநின் (துணைப்பதமேத்தி)\nசெங்கண் மாலயன் (தேடியுங்காணா)\nசெல்வ நின்னருள் (சேர்குவதென்றோ)\nஎங்கள் உள்ளுவந் (தூறியஅமுதே)\nஇன்பமே இமை (யான்மகட்கரசே)\nதிங்கள் தங்கிய (சடையுடைமருந்தே)\nதிகழும் ஒற்றியூர்ச் (சிவ பெருமானே)\n\n[Chorus]\nஅம்பலத்துள்நின்று (ஆடல் வல்லானதுமே)\nத்பும்பை வன்னியஞ் (சடைமுடி யவனே)\nசெம்பொன்னே செழும் (பவளமா மலையே)\nதிகழும் ஒற்றியூர்ச் (சிவ பெருமான[Verse]",
+    "type": "studio_export",
+    "duration": 241.09839583333334,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "56d842ef-c647-43e2-a9bc-00c09dac9437",
+    "studio_project_version_id": "99057931-1237-4d32-976a-1f96ebb736ca",
+    "studio_project_start_beats": -0.31929489045025566,
+    "studio_project_end_beats": 481.87749009150224,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-07-29T07:40:04.247Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

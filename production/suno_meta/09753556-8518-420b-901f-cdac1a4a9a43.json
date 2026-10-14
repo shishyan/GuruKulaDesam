@@ -1,0 +1,190 @@
+{
+  "status": "complete",
+  "title": "நடுவு நிலைமை 1A",
+  "play_count": 3,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "09753556-8518-420b-901f-cdac1a4a9a43",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/09753556-8518-420b-901f-cdac1a4a9a43.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/09753556-8518-420b-901f-cdac1a4a9a43.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_09753556-8518-420b-901f-cdac1a4a9a43.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_09753556-8518-420b-901f-cdac1a4a9a43.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Orchestral devotional ballad, male baritone, restrained and resonant, widening into layered harmonies; production grows from near-silence to a full, spacious climax; piano, low strings, swelling violins, and measured timpani; slow, stately pulse.",
+    "prompt": "[Chorus]\nசமன்செய்து சீர்தூக்குங் கோல்போல்  (அமைந்தொருபால்)\nகோடாமை சான்றோர்க் கணி\nசமன்செய்து சீர்தூக்குங் கோல்போல்  (அமைந்தொருபால்)\nகோடாமை சான்றோர்க் கணி\n\n[Verse 1]\nநன்றே தரினும் நடுவிகந்தாம்  (ஆக்கத்தை)\nஅன்றே யொழிய விடல்\nநன்றே தரினும் நடுவிகந்தாம்  (ஆக்கத்தை)\nஅன்றே யொழிய விடல்\n\nகேடும் பெருக்கமும் இல்லல்ல  (நெஞ்சத்துக்)\nகோடாமை சான்றோர்க் கணி\nகேடும் பெருக்கமும் இல்லல்ல  (நெஞ்சத்துக்)\nகோடாமை சான்றோர்க் கணி\n\n[Chorus]\nசமன்செய்து சீர்தூக்குங் கோல்போல்  (அமைந்தொருபால்)\nகோடாமை சான்றோர்க் கணி\nசமன்செய்து சீர்தூக்குங் கோல்போல்  (அமைந்தொருபால்)\nகோடாமை சான்றோர்க் கணி\n\n[Verse 2]\nதக்கார் தகவிலர் என்பது  (அவரவர்)\nஎச்சத்தாற் காணப்ப படும்\nதகுதி எனவொன்று நன்றே  (பகுதியால்)\nபாற்பட்டு ஒழுகப் பெறின்\n\nகெடுவாக வையாது உலகம்  (நடுவாக)\nநன்றிக்கண் தங்கியான் தாழ்வு\nகெடுவல்யான் என்பது அறிகதன்  (நெஞ்சம்)\nநடுவொரீஇ அல்ல செயின்\n\n[Chorus]\nசமன்செய்து சீர்தூக்குங் கோல்போல்  (அமைந்தொருபால்)\nகோடாமை சான்றோர்க் கணி\nசமன்செய்து சீர்தூக்குங் கோல்போல்  (அமைந்தொருபால்)\nகோடாமை சான்றோர்க் கணி\n\n[Bridge]\nசொற்கோட்டம் இல்லது செப்பம்  (ஒருதலையா)\nஉட்கோட்டம் இன்மை பெறின்\nசெப்பம் உடையவன் ஆக்கஞ்  (சிதைவின்றி)\nஎச்சத்திற் கேமாப்பு உடைத்து\n\nவாணிகம் செய்வார்க்கு வாணிகம்  (பேணிப்)\nபிறவும் தமபோல் செயின்\n\n[Chorus]\nசமன்செய்து சீர்தூக்குங் கோல்போல்  (அமைந்தொருபால்)\nகோடாமை சான்றோர்க் கணி\nசமன்செய்து சீர்தூக்குங் கோல்போல்  (அமைந்தொருபால்)\nகோடாமை சான்றோர்க் கணி",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 313.0,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 0
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "camcorder",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-07T19:02:34.936Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "orchestral, devotional, ballad",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

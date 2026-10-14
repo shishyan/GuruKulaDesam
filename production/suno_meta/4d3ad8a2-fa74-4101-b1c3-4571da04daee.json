@@ -1,0 +1,188 @@
+{
+  "status": "complete",
+  "title": "அமைச்சு 1C Golden",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "4d3ad8a2-fa74-4101-b1c3-4571da04daee",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/4d3ad8a2-fa74-4101-b1c3-4571da04daee.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_4d3ad8a2-fa74-4101-b1c3-4571da04daee.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_4d3ad8a2-fa74-4101-b1c3-4571da04daee.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "dark drums",
+    "prompt": "[Chorus]\nகருவியும் காலமும் செய்கையும் (செய்யும்)\nஅருவினையும் மாண்டது அமைச்சு\nகருவியும் காலமும் செய்கையும் (செய்யும்)\nஅருவினையும் மாண்டது அமைச்சு\n\n[Verse 1]\nதெரிதலும் தேர்ந்து செயலும் (ஒருதலையாச்)\nசொல்லலும் வல்லது அமைச்சு\nதெரிதலும் தேர்ந்து செயலும் (ஒருதலையாச்)\nசொல்லலும் வல்லது அமைச்சு\n\nபிரித்தலும் பேணிக் கொளலும் (பிரிந்தார்ப்)\nபொருத்தலும் வல்ல தமைச்சு\nபிரித்தலும் பேணிக் கொளலும் (பிரிந்தார்ப்)\nபொருத்தலும் வல்ல தமைச்சு\n\n[Chorus]\nகருவியும் காலமும் செய்கையும் (செய்யும்)\nஅருவினையும் மாண்டது அமைச்சு\nகருவியும் காலமும் செய்கையும் (செய்யும்)\nஅருவினையும் மாண்டது அமைச்சு\n\n[Verse 2]\nஅறனறிந்து ஆன்றமைந்த சொல்லான் (எஞ்ஞான்றுந்)\nதிறனறிந்தான் தேர்ச்சித் துணை\nஅறனறிந்து ஆன்றமைந்த சொல்லான் (எஞ்ஞான்றுந்)\nதிறனறிந்தான் தேர்ச்சித் துணை\n\nவன்கண் குடிகாத்தல் கற்றறிதல் (ஆள்வினையோடு)\nஐந்துடன் மாண்டது அமைச்சு\nஅரிகொன்று அறியான் எனினும் (உறுதி)\nஉழையிருந்தான் கூறல் கடன்\n\n[Chorus]\nகருவியும் காலமும் செய்கையும் (செய்யும்)\nஅருவினையும் மாண்டது அமைச்சு\nகருவியும் காலமும் செய்கையும் (செய்யும்)\nஅருவினையும் மாண்டது அமைச்சு\n\n[Bridge]\nமதிநுட்பம் நூலோடு உடையார்க்கு (அதிநுட்பம்)\nயாவுள முன்நிற் பவை\nசெயற்கை அறிந்தக் கடைத்தும் (உலகத்து)\nஇயற்கை அறிந்து செயல்\n\nபழுதெண்ணும் மந்திரியின் பக்கத் (துள்செவ்வோர்)\nஎழுபது கோடி உறும்\nமுறைப்படச் சூழ்ந்தும் முடிவிலவே (செய்வர்)\nதிறப்பாடு இலாஅ தவர்\n\n[Chorus]\nகருவியும் காலமும் செய்கையும் (செய்யும்)\nஅருவினையும் மாண்டது அமைச்சு\nகருவியும் காலமும் செய்கையும் (செய்யும்)\nஅருவினையும் மாண்டது அமைச்சு",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 322.76,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 0
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "airbrush",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-22T10:28:11.333Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

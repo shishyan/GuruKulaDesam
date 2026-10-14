@@ -1,0 +1,188 @@
+{
+  "status": "complete",
+  "title": "கல்வி 1A",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "358e627f-e6d8-4a6f-a8e3-24e8131ae267",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/358e627f-e6d8-4a6f-a8e3-24e8131ae267.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_358e627f-e6d8-4a6f-a8e3-24e8131ae267.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_358e627f-e6d8-4a6f-a8e3-24e8131ae267.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "An a cappella folk song sung in Tamil by a solo male vocalist with a passionate delivery, with sitar instruments; emotional.",
+    "prompt": "[Verse 1]\nகண்ணுடையர் என்பவர் கற்றோர் (முகத்து இரண்டு)\nபுண்ணுடையர் கல்லாதவர்\nகண்ணுடையர் என்பவர் கற்றோர் (முகத்து இரண்டு)\nபுண்ணுடையர் கல்லாதவர்\n\nஎண்ணென்ப ஏனை எழுத்தென்ப (இவ்விரண்டும்)\nகண்ணென்ப வாழும் உயிர்க்கு\nதொட்டனைத்து ஊறும் மணற்கேணி (மாந்தர்க்கு)\nகற்றனைத்து ஊறும் அறிவு\n\n[Chorus]\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக\n\n[Verse 2]\nஉடையார்முன் இல்லார்போல் ஏக்கற்றும் (கற்றார்)\nகடையரே கல்லாதவர்\nஉவப்பத் தலைக்கூடி உள்ளப் (பிரிதல்)\nஅனைத்தே புலவர் தொழில்\n\nயாதானும் நாடாமால் ஊராமால் (என் ஒருவன்)\nசாந்துணையும் கல்லாத வாறு\nஒருமைக்கண் தான்கற்ற கல்வி (ஒருவற்கு)\nஎழுமையும் ஏமாப்பு உடைத்து\n\nதாம் இன்புறுவது உலகு இன்புறக் (கண்டு)\nகாமுறுவர் கற்றறிந்தார்\nகேடில் விழுச்செல்வம் கல்வி (ஒருவற்கு)\nமாடல்ல மற்றையவை\n\n[Chorus]\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 208.8,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "black_and_white_photograph",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-12T16:25:49.161Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "folk, a cappella",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "திருக்குறள் கேள்வி (Remix)",
+  "play_count": 0,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "f7c2ff11-dc76-4998-88da-a44e11c0cc5d",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/f7c2ff11-dc76-4998-88da-a44e11c0cc5d.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/f7c2ff11-dc76-4998-88da-a44e11c0cc5d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_f7c2ff11-dc76-4998-88da-a44e11c0cc5d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_f7c2ff11-dc76-4998-88da-a44e11c0cc5d.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "South Indian classical, devotional",
+    "negative_tags": "",
+    "prompt": "[Verse 1]\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\nசெவிக்குணவு இல்லாத போழ்து (சிறிது)\nவயிற்றுக்கும் ஈயப் படும்\nசெவிக்குணவு இல்லாத போழ்து (சிறிது)\nவயிற்றுக்கும் ஈயப் படும்\n\n[Chorus]\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\n\n[Verse 2]\nசெவியின் சுவையுணரா வாயுணர்வின் (மாக்கள்)\nஅவியினும் வாழினும் என்\nசெவியுணவின் கேள்வி உடையார் (அவியுணவின்)\nஆன்றாரோடு ஒப்பர் நிலத்து\nபிழைத்துணர்ந்தும் பேதைமை சொல்லார் (இழைத்துணர்ந்து)\nஈண்டிய கேள்வி யவர்\nஎனைத்தானும் நல்லவை கேட்க (அனைத்தானும்)\nஆன்ற பெருமை தரும்\n\n[Chorus]\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\n\n[Verse 3]\nஇழுக்கல் உடையுழி ஊற்றுக்கோல் அற்றே (ஒழுக்கம்)\nஉடையார் வாய்ச் சொல்\nகற்றிலன் ஆயினும் கேட்க (அஃதொருவற்கு)\nஒற்கத்தின் ஊற்றாந் துணை\nகேட்பினும் கேளாத் தகையவே (கேள்வியால்)\nதோட்கப் படாத செவி\nநுணங்கிய கேள்வியர் அல்லார் (வணங்கிய)\nவாயினர் ஆதல் அரிது\n\n[Chorus]\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை",
+    "type": "studio_export",
+    "duration": 252.44560416666667,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "74bf2a63-a24d-4ff2-906a-289cc4a68f80",
+    "studio_project_version_id": "153f0286-4198-4035-a918-fb3681e3887c",
+    "studio_project_start_beats": 0.0,
+    "studio_project_end_beats": 610.0768579624341,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-17T09:36:59.573Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

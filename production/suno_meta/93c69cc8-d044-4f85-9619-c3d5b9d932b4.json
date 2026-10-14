@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "title": "புலவி 1E",
+  "play_count": 1,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "93c69cc8-d044-4f85-9619-c3d5b9d932b4",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/93c69cc8-d044-4f85-9619-c3d5b9d932b4.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_93c69cc8-d044-4f85-9619-c3d5b9d932b4.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_93c69cc8-d044-4f85-9619-c3d5b9d932b4.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "classical oratorio",
+    "prompt": "[Chorus]\nநீரும் நிழலது இனிதே  (புலவியும்)\nவீழுநர் கண்ணே இனிது\nநீரும் நிழலது இனிதே  (புலவியும்)\nவீழுநர் கண்ணே இனிது\n\n[Verse 1]\nதுனியும் புலவியும் இல்லாயின்  (காமம்)\nகனியும் கருக்காயும் அற்று\nதுனியும் புலவியும் இல்லாயின்  (காமம்)\nகனியும் கருக்காயும் அற்று\n\nஊடல் உணங்க விடுவாரோடு  (என்நெஞ்சம்)\nகூடுவேம் என்பது அவா\nஊடல் உணங்க விடுவாரோடு  (என்நெஞ்சம்)\nகூடுவேம் என்பது அவா\n\n[Chorus]\nநீரும் நிழலது இனிதே  (புலவியும்)\nவீழுநர் கண்ணே இனிது\nநீரும் நிழலது இனிதே  (புலவியும்)\nவீழுநர் கண்ணே இனிது\n\n[Verse 2]\nஅலந்தாரை அல்லல்நோய் செய்தற்றால்  (தம்மைப்)\nபுலந்தாரைப் புல்லா விடல்\nஅலந்தாரை அல்லல்நோய் செய்தற்றால்  (தம்மைப்)\nபுலந்தாரைப் புல்லா விடல்\n\nநலத்தகை நல்லவர்க்கு ஏஎர்  (புலத்தகை)\nபூஅன்ன கண்ணார் அகத்து\nபுல்லாதிரா அப்புலத்தை  (அவர்உறும்)\nஅல்லல் நோய் காண்கம் சிறிது\n\n[Chorus]\nநீரும் நிழலது இனிதே  (புலவியும்)\nவீழுநர் கண்ணே இனிது\nநீரும் நிழலது இனிதே  (புலவியும்)\nவீழுநர் கண்ணே இனிது\n\n[Verse 3]\nஊடலின் உண்டாங்கோர் துன்பம்  (புணர்வது)\nநீடுவ தன்றுகொல் என்று\nஉப்பு அமைந்தற்றால் புலவி  (அதுசிறிது)\nமிக்கற்றால் நீள விடல்\n\nநோதல் எவன்மற்று நொந்தாரென்று  (அக்தறியும்)\nகாதலர் இல்லா வழி\nஊடி யவரை உணராமை  (வாடிய)\nவள்ளி முதலரிந்து அற்று\n\n[Chorus]\nநீரும் நிழலது இனிதே  (புலவியும்)\nவீழுநர் கண்ணே இனிது\nநீரும் நிழலது இனிதே  (புலவியும்)\nவீழுநர் கண்ணே இனிது",
+    "type": "gen",
+    "duration": 194.92,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 0
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "scribbles",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-06T17:03:54.686Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

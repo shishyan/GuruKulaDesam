@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "title": "பண்புடைமை 1L Golden Pop",
+  "play_count": 4,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "4a83f171-7b97-4077-9cc6-6e865613690d",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/4a83f171-7b97-4077-9cc6-6e865613690d.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/4a83f171-7b97-4077-9cc6-6e865613690d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_4a83f171-7b97-4077-9cc6-6e865613690d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_4a83f171-7b97-4077-9cc6-6e865613690d.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "1980s pop with sitar, lilting mid-tempo pulse, smooth close-miked male tenor, sitar phrases and breathy bamboo flute over bright keys and steady pop drums, chorused synth layers in a polished stereo mix.",
+    "prompt": "[Chorus]\nபண்புடையார்ப் பட்டுண்டு உலகம் (அதுஇன்றேல்)\nமண்புக்கு மாய்வது மன்\nஅன்புடைமை ஆன்ற குடிப்பிறத்தல் (இவ்விரண்டும்)\nபண்புடைமை என்னும் வழக்கு\n\n[Verse 1]\nநகையுள்ளும் இன்னா திகழ்ச்சி (பகையுள்ளும்)\nபண்புள பாடறிவார் மாட்டு\nஎண்பதத்தால் எய்தல் எளிது என்ப (யார்மாட்டும்)\nபண்புடைமை என்னும் வழக்கு\n\nநயனொடு நன்றி புரிந்த (பயனுடையார்)\nபண்பு பாராட்டும் உலகு\nநண்பாற்றார் ஆகி நயமில (செய்வார்க்கும்)\nபண்பாற்றார் ஆதல் கடை\n\n[Chorus]\nபண்புடையார்ப் பட்டுண்டு உலகம் (அதுஇன்றேல்)\nமண்புக்கு மாய்வது மன்\nஅன்புடைமை ஆன்ற குடிப்பிறத்தல் (இவ்விரண்டும்)\nபண்புடைமை என்னும் வழக்கு\n\n[Verse 2]\nஅரம்போலும் கூர்மையர் ஏனும் (மரம்போல்வர்)\nமக்கட்பண்பு இல்லாதவர்\nநகல்வல்லர் அல்லார்க்கு மாயிரு (ஞாலம்)\nபகலும்பாற் பட்டன்று இருள்\n\nஉறுப்பொத்தல் மக்களொப்பு அன்றால் (வெறுத்தக்க)\nபண்பொத்தல் ஒப்பதாம் ஒப்பு\nபண்பிலான் பெற்ற பெருஞ்செல்வம் (நன்பால்)\nகலந்தீமையால் திரிந் தற்று\n\n[Chorus]\nபண்புடையார்ப் பட்டுண்டு உலகம் (அதுஇன்றேல்)\nமண்புக்கு மாய்வது மன்\nஅன்புடைமை ஆன்ற குடிப்பிறத்தல் (இவ்விரண்டும்)\nபண்புடைமை என்னும் வழக்கு",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 243.2,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "8587d5c2-5357-4cc9-b706-642d2212eda9",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "film_strip",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-30T19:01:24.000Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "1980s pop, fusion",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

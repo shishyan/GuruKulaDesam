@@ -1,0 +1,197 @@
+{
+  "status": "complete",
+  "title": "கொல்லாமை  1H",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "ad0b07d1-2430-4724-8282-e756e22a18d3",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/ad0b07d1-2430-4724-8282-e756e22a18d3.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_ad0b07d1-2430-4724-8282-e756e22a18d3.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_ad0b07d1-2430-4724-8282-e756e22a18d3.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "European folk orchestra, close-miked string sections with warm ensemble detail, brisk dance pulse, male vocal with clear devotional phrasing and restrained choral doubling, French horn section, Celtic fiddle, bowed string ostinatos, wooden percussion, and balanced acoustic orchestral mix",
+    "prompt": "[Chorus]\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\n\n[Verse 1]\nநன்றாகும் ஆக்கம் பெரிதெனினும் (சான்றோர்க்கு)\nகொன்றாகும் ஆக்கங் கடை\nநிலைஅஞ்சி நீத்தாருள் எல்லாம் (கொலைஅஞ்சி)\nகொல்லாமை சூழ்வான் தலை\n\nநன்றாகும் ஆக்கம் பெரிதெனினும் (சான்றோர்க்கு)\nகொன்றாகும் ஆக்கங் கடை\nநிலைஅஞ்சி நீத்தாருள் எல்லாம் (கொலைஅஞ்சி)\nகொல்லாமை சூழ்வான் தலை\n\n[Chorus]\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\n\n[Verse 2]\nகொல்லாமை மேற்கொண்டு ஒழுகுவான் (வாழ்நாள்மேல்)\nசெல்லாது உயிருண்ணுங் கூற்று\nகொல்லாமை மேற்கொண்டு ஒழுகுவான் (வாழ்நாள்மேல்)\nசெல்லாது உயிருண்ணுங் கூற்று\n\nநல்லாறு எனப்படுவது யாதெனின் (யாதொன்றும்)\nகொல்லாமை சூழும் நெறி\nஒன்றாக நல்லது கொல்லாமை (மற்றதன்)\nபின்சாரப் பொய்யாமை நன்று\n\n[Chorus]\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\n\n[Verse 3]\nதன்னுயிர் நீப்பினும் செய்யற்க (தான்பிறிது)\nஇன்னுயிர் நீக்கும் வினை\nஅறவினை யாதெனின் கொல்லாமை (கோறல்)\nபிறவினை எல்லாந் தரும்\n\nகொலைவினையர் ஆகிய மாக்கள் (புலைவினையர்)\nபுன்மை தெரிவார் அகத்து\nஉயிர்உடம்பின் நீக்கியார் என்ப (செயிர்உடம்பின்)\nசெல்லாத்தீ வாழ்க்கை யவர்\n\n[Chorus]\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை",
+    "type": "gen",
+    "duration": 287.6,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "audio_weight": 0.47,
+      "aug_creativity": 2
+    },
+    "mashup_clip_ids": [
+      "00000000-0000-0000-0000-000000000000",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "task": "mashup_condition",
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "MASHUP",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "black_and_white_photograph",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-14T17:58:34.757Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "folk, orchestral, Celtic",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      },
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

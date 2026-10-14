@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "title": "குரு வணக்கம் 2b  (Cover)",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "fb8ccf68-03b5-43ff-945d-c6022bdd78e4",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/fb8ccf68-03b5-43ff-945d-c6022bdd78e4.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_fb8ccf68-03b5-43ff-945d-c6022bdd78e4.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_fb8ccf68-03b5-43ff-945d-c6022bdd78e4.jpeg",
+  "major_model_version": "v5",
+  "model_name": "chirp-crow",
+  "metadata": {
+    "tags": "USE FLUTE WOODWINDS AND ORCHESTRAL STINGS SYMPHONY DRUMS WITH DEEP BACKGROUND BUT SLOW RHYTHM...\n\nThis is a male vocal a cappella piece in Tamil, featuring a single male vocalist. The vocal performance is characterized by a clear, resonant baritone voice. The song is performed at a slow tempo, creating a meditative and devotional atmosphere. The melody is simple and repetitive, emphasizing the lyrical content. There are no instrumental accompaniments or percussion. The production is dry, with no noticeable effects like reverb or delay, highlighting the natural acoustics of the vocal performance. The dynamic range is consistent throughout, maintaining a steady, reverent tone. The song structure is strophic, with each verse following a similar melodic and rhythmic pattern. The key appears to be in a minor mode, contributing to the solemn and respectful mood.",
+    "prompt": "[Verse 1]\nகுருவே வணக்கம்\nஉயர் குருவே வணக்கம்\nதிருவே வணக்கம்\nஉயர் திருவே வணக்கம்\nமுழு முதல் வணக்கும்\nஇதுவே முதல் வணக்கம்\nதவ புதல்வனுக்கும்\nஇதுதான் தமிழ் வணக்கம்\nஅந்த இறைவனுக்கும்\nஇதுவே இறை வணக்கம்\nஅந்த இறைவனுக்கும்\nஇதுவே இறை வணக்கம்\nகுரு வணக்கம்\nஇதுதான் உயர் வணக்கம்\nகுரு வணக்கம்\nஇதுவே நிறை வணக்கம்\nகுரு வணக்கம்\nஇதுதான் உயர் வணக்கம்\nகுரு வணக்கம்\nஇதுவே நிறை வணக்கம்\n\n[Verse 2]\nஅன்பே உயிரான எம் அன்னைக்கும் வணக்கம்\nஅறிவே உருவான எம் தந்தைக்கும் வணக்கம்\nஅன்பின் உருவான கணபதிக்கும் வணக்கம்\nஅறமே உருவான தேவருக்கும் வணக்கம்\nஅறத்தின் குருவான மூவருக்கும் வணக்கம்\nகுருவிற்கும் குருவான கந்தருக்கும் வணக்கம்\nஅருளின் உயிரான சிவ சக்திக்கும் வணக்கம்\nஅருளே உருவான பரசிவனுக்கும் வணக்கம்\nகுரு வணக்கம்\nஇதுதான் உயர் வணக்கம்\nகுரு வணக்கம்\nஇதுவே நிறை வணக்கம்\nமுழு முதல் வணக்கும்\nஇதுவே முதல் வணக்கம்\nதவ புதல்வனுக்கும்\nஇதுதான் தமிழ் வணக்கம்\nகுருவே வணக்கம்\n\n[Verse 3]\nதூய மனம் ஈன்ற முன் வினைக்கும்\nமுன் வினை ஈன்ற நற்செயலுக்கும்\nநற்செயல் தூண்டிய இச்சைக்கும்\nகூறுகிறேன் பல நூறு நன்றி\nகூறுகிறேன் பல நூறு நன்றி\n\nநல் இச்சை விக்கும் இறைவனுக்கும்\nசீர் உயர்வளித்த உழைப்பிற்கும்\nநீடு உழைத்திட்ட தேகத்திற்கும்\nசொல்கிறேன் பல்லாயிரம் நன்றி\nசொல்கிறேன் பல்லாயிரம் நன்றி\n\nதேக வித்திட்ட நல் உறவுக்கும்\nஉயிர் உறவுகளின் நல் மனதிற்கும்\nஉலக மாந்தர் யாவருக்கும்\nஉலக மாந்தர் யாவருக்கும்\nகூறுகிறேன் பல லட்சம் நன்றி\nகூறுகிறேன் பல லட்சம் நன்றி\n\nஎமது பயிரான எம் சந்ததிக்கும்\nஎன் உயிரான எம் மனைவிக்கும\nஉலக உயிர்கள் அனைத்திற்கும்\nபகல்கின்றேன் பல கோடி நன்றி\nஉலக உயிர்கள் அனைத்திற்கும்\nபகல்கின்றேன் பல கோடி நன்றி\n\nமனமே நன்றி! நல் குணமே நன்றி\nஉலகே நன்றி! உயர் உலகே நன்றி\nகுருவே நன்றி! இறை குருவே நன்றி\nகுருவே நன்றி! தமிழ் குருவே நன்றி\nஇறைவா நன்றி! நல் இறைவா நன்றி\nஇறைவா நன்றி! நல் இறைவி நன்றி\n\nகுருவே வணக்கம்! உயர் குருவே வணக்கம்\nமூவா தமிழில், இது முத்தமிழ் வணக்கம்\nஅழியா தமிழில், இது அருந்தமிழ் வணக்கம்\nகுருவே வணக்கம்! உயர் குருவே..  வணக்கம்....ம்ம்ம்ம்ம்   \n\n",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 356.88,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "audio_weight": 1.0,
+      "style_weight": 1.0,
+      "weirdness_constraint": 0.0
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V5",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      },
+      "songrow": {
+        "display_name": "V5",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2025-10-24T06:41:32.439Z",
+  "is_public": false,
+  "persona": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "name": "Shishyan v4",
+    "image_s3_id": "https://cdn2.suno.ai/image_fb8ccf68-03b5-43ff-945d-c6022bdd78e4.jpeg",
+    "root_clip_id": "00000000-0000-0000-0000-000000000000",
+    "user_handle": "shishyan",
+    "user_display_name": "Shishyan (Guru Kula Desam)",
+    "user_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+    "user_is_verified": false,
+    "is_owned": false,
+    "is_public": false,
+    "is_trashed": false,
+    "is_hidden": false,
+    "is_voice_persona": false,
+    "persona_type": "vox"
+  },
+  "is_persona_root": true,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "a cappella, devotional, Tamil classical",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

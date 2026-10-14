@@ -1,0 +1,128 @@
+{
+  "status": "complete",
+  "title": "83.7s Recording (Oct 8 @ 11:20 PM)",
+  "play_count": 1,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "f41932b6-2f24-4ca5-b48f-7480f517425c",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/f41932b6-2f24-4ca5-b48f-7480f517425c.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_f41932b6-2f24-4ca5-b48f-7480f517425c.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_f41932b6-2f24-4ca5-b48f-7480f517425c.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "A world song sung in Tamil by a solo male vocalist, with no instruments; traditional.",
+    "prompt": "[Verse]\nSollega sollega\nPayanuda ye sol\nArka sollega\nPayanira sol\nSollega sollega\nPayanuda ye sol\nArka sollega\nPayanira sol\n\nNayanila sollinum sollega\nsandroal payanila sollaamai nannree\nNayanila sollinum sollega\nsandroal payanila sollaamai nannree\n\nPayanila pallaar mun sollal\nnayanila nathaarkan seithalin theer\nPayanila pallaar mun sollal\nnayanila nathaarkan seithalin theer",
+    "type": "upload",
+    "duration": 83.29997916666666,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "UPLOAD",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-08T17:50:47.773Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "world, traditional, male vocals, a cappella",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

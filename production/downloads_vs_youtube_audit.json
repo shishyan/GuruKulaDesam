@@ -1,0 +1,3027 @@
+{
+  "summary": {
+    "total_downloads_files": 297,
+    "exact_matches_count": 112,
+    "same_chapter_diff_cut_count": 30,
+    "completely_novel_count": 155
+  },
+  "exact_matches_must_skip": [
+    {
+      "file_name": "அமைச்சு 1H Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அமைச்சு 1H Golden Pop.wav",
+      "file_duration_sec": 306.71,
+      "matched_youtube_id": "JvonvWQHKQY",
+      "matched_youtube_title": "அதிகாரம் 64 - அமைச்சு (Remix) | Amaichu Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 307.0,
+      "matched_keywords": [
+        "அமைச்சு"
+      ],
+      "duration_diff_sec": 0.29,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அமைச்சு 1L Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அமைச்சு 1L Golden 2026.wav",
+      "file_duration_sec": 307.5,
+      "matched_youtube_id": "JvonvWQHKQY",
+      "matched_youtube_title": "அதிகாரம் 64 - அமைச்சு (Remix) | Amaichu Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 307.0,
+      "matched_keywords": [
+        "அமைச்சு"
+      ],
+      "duration_diff_sec": 0.5,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அரண் 2B Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அரண் 2B Golden.wav",
+      "file_duration_sec": 273.24,
+      "matched_youtube_id": "6r6TpY-sgbw",
+      "matched_youtube_title": "அதிகாரம் 75 - அரண் | Aran | Full Song Film",
+      "matched_youtube_duration": 274.0,
+      "matched_keywords": [
+        "அரண்"
+      ],
+      "duration_diff_sec": 0.76,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அரண் 2H Golden (Symphony).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அரண் 2H Golden (Symphony).wav",
+      "file_duration_sec": 225.42,
+      "matched_youtube_id": "irx33IVWrPY",
+      "matched_youtube_title": "அதிகாரம் 75 - அரண் (Symphony) | Aran Symphony Cinematic Thirukkural Film",
+      "matched_youtube_duration": 226.0,
+      "matched_keywords": [
+        "அரண்"
+      ],
+      "duration_diff_sec": 0.58,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அருளுடைமை 1S Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அருளுடைமை 1S Golden.wav",
+      "file_duration_sec": 231.56,
+      "matched_youtube_id": "0fD-z3s_g2A",
+      "matched_youtube_title": "அதிகாரம் 25 - அருளுடைமை | Aruludaimai Cinematic Thirukkural Film",
+      "matched_youtube_duration": 232.0,
+      "matched_keywords": [
+        "அருளுடைமை"
+      ],
+      "duration_diff_sec": 0.44,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அறிவுடைமை 1R Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அறிவுடைமை 1R Golden.wav",
+      "file_duration_sec": 301.76,
+      "matched_youtube_id": "xVyPWHTMXHw",
+      "matched_youtube_title": "அதிகாரம் 43 - அறிவுடைமை (Remix) | Arivudaimai Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 302.0,
+      "matched_keywords": [
+        "அறிவுடைமை"
+      ],
+      "duration_diff_sec": 0.24,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அறிவுடைமை 2E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அறிவுடைமை 2E Golden.wav",
+      "file_duration_sec": 301.96,
+      "matched_youtube_id": "xVyPWHTMXHw",
+      "matched_youtube_title": "அதிகாரம் 43 - அறிவுடைமை (Remix) | Arivudaimai Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 302.0,
+      "matched_keywords": [
+        "அறிவுடைமை"
+      ],
+      "duration_diff_sec": 0.04,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அறிவுடைமை 2F Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அறிவுடைமை 2F Golden.wav",
+      "file_duration_sec": 309.0,
+      "matched_youtube_id": "bUepGv6PJQA",
+      "matched_youtube_title": "அதிகாரம் 43 - அறிவுடைமை (Pop) | Arivudaimai [Full Song Film]",
+      "matched_youtube_duration": 309.0,
+      "matched_keywords": [
+        "அறிவுடைமை"
+      ],
+      "duration_diff_sec": 0.0,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அவாவறுத்தல் 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அவாவறுத்தல் 2026.wav",
+      "file_duration_sec": 231.74,
+      "matched_youtube_id": "HezzLu_n6qE",
+      "matched_youtube_title": "அதிகாரம் 37 - அவாவறுத்தல் | Avaa Aruththal | Full Song Film",
+      "matched_youtube_duration": 232.0,
+      "matched_keywords": [
+        "அவாவறுத்தல்"
+      ],
+      "duration_diff_sec": 0.26,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அவையஞ்சாமை 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அவையஞ்சாமை 1E Golden.wav",
+      "file_duration_sec": 227.8,
+      "matched_youtube_id": "wyDIU74Rs7Y",
+      "matched_youtube_title": "அதிகாரம் 73 - அவையஞ்சாமை (Female) | Avai Anjaamai Female Cinematic Thirukkural Film",
+      "matched_youtube_duration": 228.0,
+      "matched_keywords": [
+        "அவையஞ்சாமை"
+      ],
+      "duration_diff_sec": 0.2,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அவையஞ்சாமை 1F Golden Symphony.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அவையஞ்சாமை 1F Golden Symphony.wav",
+      "file_duration_sec": 221.04,
+      "matched_youtube_id": "t9Ke0-KMTyM",
+      "matched_youtube_title": "அதிகாரம் 73 - அவையஞ்சாமை (Symphony) | Avai Anjaamai [Symphony]",
+      "matched_youtube_duration": 222.0,
+      "matched_keywords": [
+        "அவையஞ்சாமை"
+      ],
+      "duration_diff_sec": 0.96,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அவையஞ்சாமை 1F Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அவையஞ்சாமை 1F Golden.wav",
+      "file_duration_sec": 238.36,
+      "matched_youtube_id": "W4LQ0TT2cRA",
+      "matched_youtube_title": "அதிகாரம் 73 - அவையஞ்சாமை | Avai Anjaamai | Full Song Film",
+      "matched_youtube_duration": 239.0,
+      "matched_keywords": [
+        "அவையஞ்சாமை"
+      ],
+      "duration_diff_sec": 0.64,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அவையறிதல் 1C Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அவையறிதல் 1C Golden.wav",
+      "file_duration_sec": 316.0,
+      "matched_youtube_id": "HxxLl5p1t0A",
+      "matched_youtube_title": "அதிகாரம் 72 - அவையறிதல் (Sad) | Avaiyarithal [Full Song Film]",
+      "matched_youtube_duration": 316.0,
+      "matched_keywords": [
+        "அவையறிதல்"
+      ],
+      "duration_diff_sec": 0.0,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "அவையறிதல் 1D Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அவையறிதல் 1D Golden.wav",
+      "file_duration_sec": 229.6,
+      "matched_youtube_id": "CEh2a8KUIKU",
+      "matched_youtube_title": "அதிகாரம் 72 - அவையறிதல் | Avaiyarithal | Full Song Film",
+      "matched_youtube_duration": 230.0,
+      "matched_keywords": [
+        "அவையறிதல்"
+      ],
+      "duration_diff_sec": 0.4,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "ஆள்வினையுடைமை 1R Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\ஆள்வினையுடைமை 1R Golden 2026.wav",
+      "file_duration_sec": 288.78,
+      "matched_youtube_id": "zj4_pEqa_cs",
+      "matched_youtube_title": "அதிகாரம் 62 - ஆள்வினையுடைமை | Aalvinaiyudaimai | Full Song Film",
+      "matched_youtube_duration": 289.0,
+      "matched_keywords": [
+        "ஆள்வினையுடைமை"
+      ],
+      "duration_diff_sec": 0.22,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "ஆள்வினையுடைமை 2E Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\ஆள்வினையுடைமை 2E Golden Pop.wav",
+      "file_duration_sec": 302.36,
+      "matched_youtube_id": "37qaN4sG53k",
+      "matched_youtube_title": "அதிகாரம் 62 - ஆள்வினையுடைமை (Remix) | Aalvinaiyudaimai [Remix Audio]",
+      "matched_youtube_duration": 303.0,
+      "matched_keywords": [
+        "ஆள்வினையுடைமை"
+      ],
+      "duration_diff_sec": 0.64,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "இடனறிதல் 1T Golden Middle.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இடனறிதல் 1T Golden Middle.wav",
+      "file_duration_sec": 270.28,
+      "matched_youtube_id": "817Wxel4F5s",
+      "matched_youtube_title": "அதிகாரம் 50 - இடனறிதல் | Idanarithal | Full Song Film",
+      "matched_youtube_duration": 271.0,
+      "matched_keywords": [
+        "இடனறிதல்"
+      ],
+      "duration_diff_sec": 0.72,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "இடனறிதல் 1X Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இடனறிதல் 1X Golden Pop.wav",
+      "file_duration_sec": 277.1,
+      "matched_youtube_id": "oEQ3sx6ujQc",
+      "matched_youtube_title": "அதிகாரம் 50 - இடனறிதல் (Remix) | Idanarithal Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 278.0,
+      "matched_keywords": [
+        "இடனறிதல்"
+      ],
+      "duration_diff_sec": 0.9,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "இறைமாட்சி 1M Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இறைமாட்சி 1M Golden 2026.wav",
+      "file_duration_sec": 227.63,
+      "matched_youtube_id": "mCwNR1Bytj4",
+      "matched_youtube_title": "அதிகாரம் 39 - இறைமாட்சி | Irai Maatchi | Full Song Film",
+      "matched_youtube_duration": 228.0,
+      "matched_keywords": [
+        "இறைமாட்சி"
+      ],
+      "duration_diff_sec": 0.37,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "ஊக்கமுடைமை 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\ஊக்கமுடைமை 1E Golden.wav",
+      "file_duration_sec": 307.2,
+      "matched_youtube_id": "XN5ENUbmSOE",
+      "matched_youtube_title": "அதிகாரம் 60 - ஊக்கமுடைமை | Ookkamudaimai | Full Song Film",
+      "matched_youtube_duration": 308.0,
+      "matched_keywords": [
+        "ஊக்கமுடைமை"
+      ],
+      "duration_diff_sec": 0.8,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "ஊக்கமுடைமை 1J Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\ஊக்கமுடைமை 1J Golden.wav",
+      "file_duration_sec": 324.76,
+      "matched_youtube_id": "FXMVQIidbJU",
+      "matched_youtube_title": "அதிகாரம் 60 - ஊக்கமுடைமை (Remix) | Ookkamudaimai [Remix Audio]",
+      "matched_youtube_duration": 325.0,
+      "matched_keywords": [
+        "ஊக்கமுடைமை"
+      ],
+      "duration_diff_sec": 0.24,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "ஊழ் 1F Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\ஊழ் 1F Golden.wav",
+      "file_duration_sec": 234.04,
+      "matched_youtube_id": "dD_cXqU_XVQ",
+      "matched_youtube_title": "அதிகாரம் 38 - ஊழ் (ஊழ் வினை) | Oozh Vinai | Full Song Film",
+      "matched_youtube_duration": 235.0,
+      "matched_keywords": [
+        "ஊழ்"
+      ],
+      "duration_diff_sec": 0.96,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "ஒற்றாடல் 1N Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\ஒற்றாடல் 1N Golden 2026.wav",
+      "file_duration_sec": 320.38,
+      "matched_youtube_id": "TQtjI3EepPQ",
+      "matched_youtube_title": "அதிகாரம் 59 - ஒற்றாடல் | Ottraadal | Full Song Film",
+      "matched_youtube_duration": 321.0,
+      "matched_keywords": [
+        "ஒற்றாடல்"
+      ],
+      "duration_diff_sec": 0.62,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "ஒற்றாடல் 1P Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\ஒற்றாடல் 1P Golden Pop.wav",
+      "file_duration_sec": 339.68,
+      "matched_youtube_id": "tj_5hsasdyU",
+      "matched_youtube_title": "அதிகாரம் 59 - ஒற்றாடல் (Remix) | Ottraadal [Remix Audio]",
+      "matched_youtube_duration": 340.0,
+      "matched_keywords": [
+        "ஒற்றாடல்"
+      ],
+      "duration_diff_sec": 0.32,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கடவுளைக் கடலுள் எழு 2026 (1).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கடவுளைக் கடலுள் எழு 2026 (1).wav",
+      "file_duration_sec": 594.79,
+      "matched_youtube_id": "TcsCIh8hvko",
+      "matched_youtube_title": "கடவுளைக் கடலுள் எழு! | Kadavulai Kadalul Ezhu Cinematic Devotional Film",
+      "matched_youtube_duration": 595.0,
+      "matched_keywords": [
+        "கடலுள்",
+        "கடவுளைக்",
+        "எழு"
+      ],
+      "duration_diff_sec": 0.21,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கடவுளைக் கடலுள் எழு 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கடவுளைக் கடலுள் எழு 2026.wav",
+      "file_duration_sec": 594.79,
+      "matched_youtube_id": "TcsCIh8hvko",
+      "matched_youtube_title": "கடவுளைக் கடலுள் எழு! | Kadavulai Kadalul Ezhu Cinematic Devotional Film",
+      "matched_youtube_duration": 595.0,
+      "matched_keywords": [
+        "கடலுள்",
+        "கடவுளைக்",
+        "எழு"
+      ],
+      "duration_diff_sec": 0.21,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கடவுள் வாழ்த்து 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கடவுள் வாழ்த்து 2026.wav",
+      "file_duration_sec": 328.27,
+      "matched_youtube_id": "SWAjAbur-TQ",
+      "matched_youtube_title": "அதிகாரம் 1 - கடவுள் வாழ்த்து | Kadavul Vazhthu Cinematic Thirukkural Film",
+      "matched_youtube_duration": 329.0,
+      "matched_keywords": [
+        "கடவுள்",
+        "வாழ்த்து"
+      ],
+      "duration_diff_sec": 0.73,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கண்ணோட்டம் 1F Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கண்ணோட்டம் 1F Golden.wav",
+      "file_duration_sec": 314.8,
+      "matched_youtube_id": "mv7AezrLzoU",
+      "matched_youtube_title": "அதிகாரம் 58 - கண்ணோட்டம் | Kannottam | Full Song Film",
+      "matched_youtube_duration": 315.0,
+      "matched_keywords": [
+        "கண்ணோட்டம்"
+      ],
+      "duration_diff_sec": 0.2,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கண்ணோட்டம் 1O Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கண்ணோட்டம் 1O Golden.wav",
+      "file_duration_sec": 314.68,
+      "matched_youtube_id": "mv7AezrLzoU",
+      "matched_youtube_title": "அதிகாரம் 58 - கண்ணோட்டம் | Kannottam | Full Song Film",
+      "matched_youtube_duration": 315.0,
+      "matched_keywords": [
+        "கண்ணோட்டம்"
+      ],
+      "duration_diff_sec": 0.32,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கண்ணோட்டம் 1R Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கண்ணோட்டம் 1R Golden Pop.wav",
+      "file_duration_sec": 312.96,
+      "matched_youtube_id": "mv7AezrLzoU",
+      "matched_youtube_title": "அதிகாரம் 58 - கண்ணோட்டம் | Kannottam | Full Song Film",
+      "matched_youtube_duration": 315.0,
+      "matched_keywords": [
+        "கண்ணோட்டம்"
+      ],
+      "duration_diff_sec": 2.04,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கல்லாமை Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கல்லாமை Golden 2026.wav",
+      "file_duration_sec": 395.78,
+      "matched_youtube_id": "Gnu-TzZfe7A",
+      "matched_youtube_title": "அதிகாரம் 41 - கல்லாமை | Kallaamai Learning | Full Song Film",
+      "matched_youtube_duration": 396.0,
+      "matched_keywords": [
+        "கல்லாமை"
+      ],
+      "duration_diff_sec": 0.22,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கள்ளாமை 1G Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கள்ளாமை 1G Golden.wav",
+      "file_duration_sec": 240.72,
+      "matched_youtube_id": "9EAskIS2xuc",
+      "matched_youtube_title": "அதிகாரம் 29 - கள்ளாமை | Kallaamai | Full Song Film",
+      "matched_youtube_duration": 241.0,
+      "matched_keywords": [
+        "கள்ளாமை"
+      ],
+      "duration_diff_sec": 0.28,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கள்ளாமை 1I Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கள்ளாமை 1I Golden.wav",
+      "file_duration_sec": 298.68,
+      "matched_youtube_id": "tzAYLpH3TkI",
+      "matched_youtube_title": "அதிகாரம் 29 - கள்ளாமை (Symphony) | Kallaamai Symphony Cinematic Thirukkural Film",
+      "matched_youtube_duration": 299.0,
+      "matched_keywords": [
+        "கள்ளாமை"
+      ],
+      "duration_diff_sec": 0.32,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "காலமறிதல் 1G Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\காலமறிதல் 1G Golden 2026.wav",
+      "file_duration_sec": 261.35,
+      "matched_youtube_id": "DIDV-3cHhag",
+      "matched_youtube_title": "அதிகாரம் 49 - காலமறிதல் | Kaalamarithal | Full Song Film",
+      "matched_youtube_duration": 262.0,
+      "matched_keywords": [
+        "காலமறிதல்"
+      ],
+      "duration_diff_sec": 0.65,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "காலமறிதல் 1M Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\காலமறிதல் 1M Golden Pop.wav",
+      "file_duration_sec": 236.82,
+      "matched_youtube_id": "dVYI3ZgpDC8",
+      "matched_youtube_title": "அதிகாரம் 49 - காலமறிதல் (Remix) | Kaalamarithal Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 237.0,
+      "matched_keywords": [
+        "காலமறிதல்"
+      ],
+      "duration_diff_sec": 0.18,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "காலமறிதல் 1M Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\காலமறிதல் 1M Golden.wav",
+      "file_duration_sec": 236.44,
+      "matched_youtube_id": "dVYI3ZgpDC8",
+      "matched_youtube_title": "அதிகாரம் 49 - காலமறிதல் (Remix) | Kaalamarithal Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 237.0,
+      "matched_keywords": [
+        "காலமறிதல்"
+      ],
+      "duration_diff_sec": 0.56,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "குறிப்பறிதல் 1J Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குறிப்பறிதல் 1J Golden 2026.wav",
+      "file_duration_sec": 274.14,
+      "matched_youtube_id": "dBIUA3fKBJ0",
+      "matched_youtube_title": "அதிகாரம் 71 - குறிப்பறிதல் | Kuripparithal | Full Song Film",
+      "matched_youtube_duration": 275.0,
+      "matched_keywords": [
+        "குறிப்பறிதல்"
+      ],
+      "duration_diff_sec": 0.86,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "குறிப்பறிதல் 1J Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குறிப்பறிதல் 1J Golden.wav",
+      "file_duration_sec": 284.92,
+      "matched_youtube_id": "2Qs07DTJvvM",
+      "matched_youtube_title": "அதிகாரம் 71 - குறிப்பறிதல் (Remix) | Kuripparithal Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 288.0,
+      "matched_keywords": [
+        "குறிப்பறிதல்"
+      ],
+      "duration_diff_sec": 3.08,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "குறிப்பறிதல் 1M Golden Symphony.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குறிப்பறிதல் 1M Golden Symphony.wav",
+      "file_duration_sec": 292.0,
+      "matched_youtube_id": "2Qs07DTJvvM",
+      "matched_youtube_title": "அதிகாரம் 71 - குறிப்பறிதல் (Remix) | Kuripparithal Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 288.0,
+      "matched_keywords": [
+        "குறிப்பறிதல்"
+      ],
+      "duration_diff_sec": 4.0,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "குறிப்பறிதல் 1N Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குறிப்பறிதல் 1N Golden Pop.wav",
+      "file_duration_sec": 287.2,
+      "matched_youtube_id": "2Qs07DTJvvM",
+      "matched_youtube_title": "அதிகாரம் 71 - குறிப்பறிதல் (Remix) | Kuripparithal Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 288.0,
+      "matched_keywords": [
+        "குறிப்பறிதல்"
+      ],
+      "duration_diff_sec": 0.8,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கூடா ஒழுக்கம் 1L Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கூடா ஒழுக்கம் 1L Golden.wav",
+      "file_duration_sec": 282.0,
+      "matched_youtube_id": "wPT_1jgn2Ys",
+      "matched_youtube_title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam Symphony Cinematic Thirukkural Film",
+      "matched_youtube_duration": 283.0,
+      "matched_keywords": [
+        "ஒழுக்கம்",
+        "கூடா"
+      ],
+      "duration_diff_sec": 1.0,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கூடா ஒழுக்கம் 1O Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கூடா ஒழுக்கம் 1O Golden.wav",
+      "file_duration_sec": 262.8,
+      "matched_youtube_id": "8uX2yl_EnMI",
+      "matched_youtube_title": "அதிகாரம் 83 - கூடா நட்பு | Kooda Natpu | Full Song Film",
+      "matched_youtube_duration": 261.0,
+      "matched_keywords": [
+        "கூடா"
+      ],
+      "duration_diff_sec": 1.8,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கூடா நட்பு 1L Golden 2026 (1).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கூடா நட்பு 1L Golden 2026 (1).wav",
+      "file_duration_sec": 260.34,
+      "matched_youtube_id": "8uX2yl_EnMI",
+      "matched_youtube_title": "அதிகாரம் 83 - கூடா நட்பு | Kooda Natpu | Full Song Film",
+      "matched_youtube_duration": 261.0,
+      "matched_keywords": [
+        "நட்பு",
+        "கூடா"
+      ],
+      "duration_diff_sec": 0.66,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கேள்வி 1O Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கேள்வி 1O Golden 2026.wav",
+      "file_duration_sec": 248.78,
+      "matched_youtube_id": "9kHN9Dzrv7o",
+      "matched_youtube_title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) | Kelvi Selvam | Full Song Film",
+      "matched_youtube_duration": 249.0,
+      "matched_keywords": [
+        "கேள்வி"
+      ],
+      "duration_diff_sec": 0.22,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கொடுங்கோன்மை 1C Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கொடுங்கோன்மை 1C Golden.wav",
+      "file_duration_sec": 275.16,
+      "matched_youtube_id": "wzdoeFDq0iQ",
+      "matched_youtube_title": "அதிகாரம் 56 - கொடுங்கோன்மை | Kodungonmai | Full Song Film",
+      "matched_youtube_duration": 276.0,
+      "matched_keywords": [
+        "கொடுங்கோன்மை"
+      ],
+      "duration_diff_sec": 0.84,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கொடுங்கோன்மை 1G GOlden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கொடுங்கோன்மை 1G GOlden Pop.wav",
+      "file_duration_sec": 304.32,
+      "matched_youtube_id": "01g0sJdaL2I",
+      "matched_youtube_title": "அதிகாரம் 56 - கொடுங்கோன்மை (Remix) | Kodungonmai [Remix Audio]",
+      "matched_youtube_duration": 305.0,
+      "matched_keywords": [
+        "கொடுங்கோன்மை"
+      ],
+      "duration_diff_sec": 0.68,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கொல்லாமை  2A Golden (Remastered).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கொல்லாமை  2A Golden (Remastered).wav",
+      "file_duration_sec": 277.44,
+      "matched_youtube_id": "L6DWSjPqoH0",
+      "matched_youtube_title": "அதிகாரம் 33 - கொல்லாமை | Kollaamai | Full Song Film",
+      "matched_youtube_duration": 278.0,
+      "matched_keywords": [
+        "கொல்லாமை"
+      ],
+      "duration_diff_sec": 0.56,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கொல்லாமை  2A Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கொல்லாமை  2A Golden.wav",
+      "file_duration_sec": 277.44,
+      "matched_youtube_id": "L6DWSjPqoH0",
+      "matched_youtube_title": "அதிகாரம் 33 - கொல்லாமை | Kollaamai | Full Song Film",
+      "matched_youtube_duration": 278.0,
+      "matched_keywords": [
+        "கொல்லாமை"
+      ],
+      "duration_diff_sec": 0.56,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "கௌமாரம் ஸ்துதி 1J Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கௌமாரம் ஸ்துதி 1J Golden.wav",
+      "file_duration_sec": 227.72,
+      "matched_youtube_id": "yPfkP_EjTyc",
+      "matched_youtube_title": "கௌமாரம் ஸ்துதி | Koumaram Stuthi Cinematic Devotional Film",
+      "matched_youtube_duration": 228.0,
+      "matched_keywords": [
+        "கௌமாரம்",
+        "ஸ்துதி"
+      ],
+      "duration_diff_sec": 0.28,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "சண்முக மந்திரம் 1F Golden (Sympohny).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சண்முக மந்திரம் 1F Golden (Sympohny).wav",
+      "file_duration_sec": 243.61,
+      "matched_youtube_id": "QRSRyYEacMs",
+      "matched_youtube_title": "ஸ்கந்த மந்திரம் (Symphony) | Skanda Mantram Cinematic Film",
+      "matched_youtube_duration": 244.0,
+      "matched_keywords": [
+        "மந்திரம்"
+      ],
+      "duration_diff_sec": 0.39,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "சண்முக மந்திரம் Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சண்முக மந்திரம் Golden 2026.wav",
+      "file_duration_sec": 309.02,
+      "matched_youtube_id": "iJ-3SHR2MKw",
+      "matched_youtube_title": "ஸ்கந்த மந்திரம் (Original) | Skanda Mantram Cinematic Film",
+      "matched_youtube_duration": 310.0,
+      "matched_keywords": [
+        "மந்திரம்"
+      ],
+      "duration_diff_sec": 0.98,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "சிற்றினம் சேராமை 1F Pop 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சிற்றினம் சேராமை 1F Pop 2026.wav",
+      "file_duration_sec": 330.92,
+      "matched_youtube_id": "wylRNpaJNmY",
+      "matched_youtube_title": "அதிகாரம் 46 - சிற்றினம் சேராமை (Remix) | Sittrinam Seramai Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 331.0,
+      "matched_keywords": [
+        "சேராமை",
+        "சிற்றினம்"
+      ],
+      "duration_diff_sec": 0.08,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "சிற்றினம் சேராமை 1H Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சிற்றினம் சேராமை 1H Golden.wav",
+      "file_duration_sec": 353.44,
+      "matched_youtube_id": "2U45AXlx7DA",
+      "matched_youtube_title": "அதிகாரம் 46 - சிற்றினம் சேராமை | Sitrinam Seraamai | Full Song Film",
+      "matched_youtube_duration": 354.0,
+      "matched_keywords": [
+        "சேராமை",
+        "சிற்றினம்"
+      ],
+      "duration_diff_sec": 0.56,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "சுற்றந்தழால் 1N Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சுற்றந்தழால் 1N Golden.wav",
+      "file_duration_sec": 413.05,
+      "matched_youtube_id": "Nb1nAcrGNeU",
+      "matched_youtube_title": "அதிகாரம் 53 - சுற்றந்தழால் | Suttranthazhaal | Full Song Film",
+      "matched_youtube_duration": 414.0,
+      "matched_keywords": [
+        "சுற்றந்தழால்"
+      ],
+      "duration_diff_sec": 0.95,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "சுற்றந்தழால் 1Y Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சுற்றந்தழால் 1Y Golden Pop.wav",
+      "file_duration_sec": 393.3,
+      "matched_youtube_id": "9-SvikTz2FU",
+      "matched_youtube_title": "அதிகாரம் 53 - சுற்றந்தழால் (Remix) | Suttranthazhaal [Remix Audio]",
+      "matched_youtube_duration": 394.0,
+      "matched_keywords": [
+        "சுற்றந்தழால்"
+      ],
+      "duration_diff_sec": 0.7,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "செங்கோன்மை 1M Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\செங்கோன்மை 1M Golden.wav",
+      "file_duration_sec": 296.92,
+      "matched_youtube_id": "lCBVB2Yj_7U",
+      "matched_youtube_title": "அதிகாரம் 55 - செங்கோன்மை | Sengonmai | Full Song Film",
+      "matched_youtube_duration": 297.0,
+      "matched_keywords": [
+        "செங்கோன்மை"
+      ],
+      "duration_diff_sec": 0.08,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "செங்கோன்மை 1P Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\செங்கோன்மை 1P Golden.wav",
+      "file_duration_sec": 288.44,
+      "matched_youtube_id": "5coBrJy6a5M",
+      "matched_youtube_title": "அதிகாரம் 55 - செங்கோன்மை (Remix) | Sengonmai [Remix Audio]",
+      "matched_youtube_duration": 289.0,
+      "matched_keywords": [
+        "செங்கோன்மை"
+      ],
+      "duration_diff_sec": 0.56,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "சொல்வன்மை 1R Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சொல்வன்மை 1R Golden.wav",
+      "file_duration_sec": 338.76,
+      "matched_youtube_id": "rOowxP53oWA",
+      "matched_youtube_title": "அதிகாரம் 65 - சொல்வன்மை (Remix) | Solvanmai Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 336.0,
+      "matched_keywords": [
+        "சொல்வன்மை"
+      ],
+      "duration_diff_sec": 2.76,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "சொல்வன்மை 1X Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சொல்வன்மை 1X Golden Pop.wav",
+      "file_duration_sec": 335.72,
+      "matched_youtube_id": "rOowxP53oWA",
+      "matched_youtube_title": "அதிகாரம் 65 - சொல்வன்மை (Remix) | Solvanmai Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 336.0,
+      "matched_keywords": [
+        "சொல்வன்மை"
+      ],
+      "duration_diff_sec": 0.28,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருக்குறள் - கடவுள் வாழ்த்து!  Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - கடவுள் வாழ்த்து!  Golden.wav",
+      "file_duration_sec": 240.18,
+      "matched_youtube_id": "02C8glMmetw",
+      "matched_youtube_title": "அதிகாரம் 1 - கடவுள் வாழ்த்து (அகர முதல) | Agara Muthala | Full Song Film",
+      "matched_youtube_duration": 239.0,
+      "matched_keywords": [
+        "கடவுள்",
+        "வாழ்த்து"
+      ],
+      "duration_diff_sec": 1.18,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருக்குறள் - வாழ்க்கைத் துணைநலம் 1C Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - வாழ்க்கைத் துணைநலம் 1C Golden.wav",
+      "file_duration_sec": 303.04,
+      "matched_youtube_id": "hCHBPd8BH8A",
+      "matched_youtube_title": "அதிகாரம் 6 - வாழ்க்கைத் துணைநலம் | Vaazkkai Thunai | Full Song Film",
+      "matched_youtube_duration": 303.0,
+      "matched_keywords": [
+        "வாழ்க்கைத்",
+        "துணைநலம்"
+      ],
+      "duration_diff_sec": 0.04,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருக்குறள் - வெகுளாமை 2026 (1).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - வெகுளாமை 2026 (1).wav",
+      "file_duration_sec": 324.78,
+      "matched_youtube_id": "xcUlgFsrepU",
+      "matched_youtube_title": "அதிகாரம் 31 - வெகுளாமை | Vegulaamai | Full Song Film",
+      "matched_youtube_duration": 325.0,
+      "matched_keywords": [
+        "வெகுளாமை"
+      ],
+      "duration_diff_sec": 0.22,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருக்குறள் - வெகுளாமை 2026 (2).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - வெகுளாமை 2026 (2).wav",
+      "file_duration_sec": 324.78,
+      "matched_youtube_id": "xcUlgFsrepU",
+      "matched_youtube_title": "அதிகாரம் 31 - வெகுளாமை | Vegulaamai | Full Song Film",
+      "matched_youtube_duration": 325.0,
+      "matched_keywords": [
+        "வெகுளாமை"
+      ],
+      "duration_diff_sec": 0.22,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருக்குறள் - வெகுளாமை 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - வெகுளாமை 2026.wav",
+      "file_duration_sec": 324.5,
+      "matched_youtube_id": "xcUlgFsrepU",
+      "matched_youtube_title": "அதிகாரம் 31 - வெகுளாமை | Vegulaamai | Full Song Film",
+      "matched_youtube_duration": 325.0,
+      "matched_keywords": [
+        "வெகுளாமை"
+      ],
+      "duration_diff_sec": 0.5,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருக்குறள் கல்வி 1E5 Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் கல்வி 1E5 Golden 2026.wav",
+      "file_duration_sec": 363.26,
+      "matched_youtube_id": "KZxknhbVIk0",
+      "matched_youtube_title": "அதிகாரம் 40 - கல்வி | Kalvi Cinematic Thirukkural Film",
+      "matched_youtube_duration": 364.0,
+      "matched_keywords": [
+        "கல்வி"
+      ],
+      "duration_diff_sec": 0.74,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருக்குறள் கேள்வி (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் கேள்வி (Remix).wav",
+      "file_duration_sec": 252.45,
+      "matched_youtube_id": "vbMywONB5Wc",
+      "matched_youtube_title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) (Remix) | Kelvi Selvam Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 253.0,
+      "matched_keywords": [
+        "கேள்வி"
+      ],
+      "duration_diff_sec": 0.55,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருக்குறள் தவம் 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் தவம் 2026.wav",
+      "file_duration_sec": 276.94,
+      "matched_youtube_id": "IEk-wwY3rC8",
+      "matched_youtube_title": "அதிகாரம் 27 - தவம் | Thavam [Full Song Film]",
+      "matched_youtube_duration": 277.0,
+      "matched_keywords": [
+        "தவம்"
+      ],
+      "duration_diff_sec": 0.06,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருக்குறள் வாய்மை 1H Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் வாய்மை 1H Golden 2026.wav",
+      "file_duration_sec": 253.91,
+      "matched_youtube_id": "BoOWFaOGczE",
+      "matched_youtube_title": "அதிகாரம் 30 - வாய்மை (Original) | Vaaymai [Original Audio]",
+      "matched_youtube_duration": 254.0,
+      "matched_keywords": [
+        "வாய்மை"
+      ],
+      "duration_diff_sec": 0.09,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருப்புகழ் கணநாதா 1N Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருப்புகழ் கணநாதா 1N Golden.wav",
+      "file_duration_sec": 227.96,
+      "matched_youtube_id": "On2xoZqBsss",
+      "matched_youtube_title": "முத்தைத் தரு (திருப்புகழ்) | Muthai Tharu [Cinematic Thiruppugazh Film]",
+      "matched_youtube_duration": 230.0,
+      "matched_keywords": [
+        "திருப்புகழ்"
+      ],
+      "duration_diff_sec": 2.04,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "திருப்புகழ் கணநாதா 1O (Remastered).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருப்புகழ் கணநாதா 1O (Remastered).wav",
+      "file_duration_sec": 227.56,
+      "matched_youtube_id": "On2xoZqBsss",
+      "matched_youtube_title": "முத்தைத் தரு (திருப்புகழ்) | Muthai Tharu [Cinematic Thiruppugazh Film]",
+      "matched_youtube_duration": 230.0,
+      "matched_keywords": [
+        "திருப்புகழ்"
+      ],
+      "duration_diff_sec": 2.44,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "தீ நட்பு 1M Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தீ நட்பு 1M Golden 2026.wav",
+      "file_duration_sec": 282.0,
+      "matched_youtube_id": "4zff_qi_G1E",
+      "matched_youtube_title": "அதிகாரம் 82 - தீ நட்பு | Thee Natpu | Full Song Film",
+      "matched_youtube_duration": 283.0,
+      "matched_keywords": [
+        "நட்பு"
+      ],
+      "duration_diff_sec": 1.0,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "துறவு 1L Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\துறவு 1L Golden.wav",
+      "file_duration_sec": 251.6,
+      "matched_youtube_id": "rq7PXPBI7SA",
+      "matched_youtube_title": "அதிகாரம் 35 - துறவு (Symphony) | Thuravu [Symphony]",
+      "matched_youtube_duration": 252.0,
+      "matched_keywords": [
+        "துறவு"
+      ],
+      "duration_diff_sec": 0.4,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "துறவு 1M Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\துறவு 1M Golden.wav",
+      "file_duration_sec": 282.36,
+      "matched_youtube_id": "6MaQYObW8OQ",
+      "matched_youtube_title": "அதிகாரம் 35 - துறவு (Female) | Thuravu Female Cinematic Thirukkural Film",
+      "matched_youtube_duration": 283.0,
+      "matched_keywords": [
+        "துறவு"
+      ],
+      "duration_diff_sec": 0.64,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "துறவு 1O Golden (Male).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\துறவு 1O Golden (Male).wav",
+      "file_duration_sec": 266.76,
+      "matched_youtube_id": "8AEEcskF-Jo",
+      "matched_youtube_title": "அதிகாரம் 35 - துறவு | Thuravu | Full Song Film",
+      "matched_youtube_duration": 267.0,
+      "matched_keywords": [
+        "துறவு"
+      ],
+      "duration_diff_sec": 0.24,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "துறவு 1O Golden Rock.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\துறவு 1O Golden Rock.wav",
+      "file_duration_sec": 238.4,
+      "matched_youtube_id": "LjiR9PIRl8o",
+      "matched_youtube_title": "அதிகாரம் 35 - துறவு (Rock) | Thuravu [Full Song Film]",
+      "matched_youtube_duration": 239.0,
+      "matched_keywords": [
+        "துறவு"
+      ],
+      "duration_diff_sec": 0.6,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "தூது 1K Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தூது 1K Golden.wav",
+      "file_duration_sec": 250.88,
+      "matched_youtube_id": "x3CyxNH5bpQ",
+      "matched_youtube_title": "அதிகாரம் 69 - தூது (Remix) | Thoothu Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 251.0,
+      "matched_keywords": [
+        "தூது"
+      ],
+      "duration_diff_sec": 0.12,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "தூது 1O Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தூது 1O Golden.wav",
+      "file_duration_sec": 242.72,
+      "matched_youtube_id": "nR7R0TWyZHk",
+      "matched_youtube_title": "அதிகாரம் 69 - தூது | Thoothu | Full Song Film",
+      "matched_youtube_duration": 243.0,
+      "matched_keywords": [
+        "தூது"
+      ],
+      "duration_diff_sec": 0.28,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "தெரிந்து தெளிதல் 2K Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்து தெளிதல் 2K Golden.wav",
+      "file_duration_sec": 349.36,
+      "matched_youtube_id": "BfgGC7DsHMI",
+      "matched_youtube_title": "அதிகாரம் 47 - தெரிந்து செயல்வகை | Therinthu Seyalvagai | Full Song Film",
+      "matched_youtube_duration": 348.0,
+      "matched_keywords": [
+        "தெரிந்து"
+      ],
+      "duration_diff_sec": 1.36,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "தெரிந்து தெளிதல் 2N Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்து தெளிதல் 2N Golden.wav",
+      "file_duration_sec": 397.88,
+      "matched_youtube_id": "bH23l5vVgL8",
+      "matched_youtube_title": "அதிகாரம் 51 - தெரிந்து தெளிதல் | Therinthu Thelithal | Full Song Film",
+      "matched_youtube_duration": 398.0,
+      "matched_keywords": [
+        "தெளிதல்",
+        "தெரிந்து"
+      ],
+      "duration_diff_sec": 0.12,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "தெரிந்து வினையாடல் 1G Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்து வினையாடல் 1G Golden.wav",
+      "file_duration_sec": 401.0,
+      "matched_youtube_id": "bH23l5vVgL8",
+      "matched_youtube_title": "அதிகாரம் 51 - தெரிந்து தெளிதல் | Therinthu Thelithal | Full Song Film",
+      "matched_youtube_duration": 398.0,
+      "matched_keywords": [
+        "தெரிந்து"
+      ],
+      "duration_diff_sec": 3.0,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "தெரிந்து வினையாடல் 1I Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்து வினையாடல் 1I Golden.wav",
+      "file_duration_sec": 382.16,
+      "matched_youtube_id": "5uRYFxhT32k",
+      "matched_youtube_title": "அதிகாரம் 52 - தெரிந்து வினையாடல் (Original) | Therinthu Vinaiyaadal [Original Audio]",
+      "matched_youtube_duration": 383.0,
+      "matched_keywords": [
+        "வினையாடல்",
+        "தெரிந்து"
+      ],
+      "duration_diff_sec": 0.84,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "நட்பாராய்தல் 1F Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நட்பாராய்தல் 1F Golden 2026.wav",
+      "file_duration_sec": 287.42,
+      "matched_youtube_id": "sAgX9WX86Rw",
+      "matched_youtube_title": "அதிகாரம் 80 - நட்பாராய்தல் | Natpaaraaythal | Full Song Film",
+      "matched_youtube_duration": 288.0,
+      "matched_keywords": [
+        "நட்பாராய்தல்"
+      ],
+      "duration_diff_sec": 0.58,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "நட்பு 1B Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நட்பு 1B Golden.wav",
+      "file_duration_sec": 268.08,
+      "matched_youtube_id": "jdvz-yoK5eI",
+      "matched_youtube_title": "அதிகாரம் 79 - நட்பு | Natpu | Full Song Film",
+      "matched_youtube_duration": 270.0,
+      "matched_keywords": [
+        "நட்பு"
+      ],
+      "duration_diff_sec": 1.92,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "நட்பு 1C Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நட்பு 1C Golden Pop.wav",
+      "file_duration_sec": 264.88,
+      "matched_youtube_id": "8uX2yl_EnMI",
+      "matched_youtube_title": "அதிகாரம் 83 - கூடா நட்பு | Kooda Natpu | Full Song Film",
+      "matched_youtube_duration": 261.0,
+      "matched_keywords": [
+        "நட்பு"
+      ],
+      "duration_diff_sec": 3.88,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "நட்பு 1D Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நட்பு 1D Golden.wav",
+      "file_duration_sec": 269.56,
+      "matched_youtube_id": "jdvz-yoK5eI",
+      "matched_youtube_title": "அதிகாரம் 79 - நட்பு | Natpu | Full Song Film",
+      "matched_youtube_duration": 270.0,
+      "matched_keywords": [
+        "நட்பு"
+      ],
+      "duration_diff_sec": 0.44,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "நாடு 1F Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நாடு 1F Golden 2026.wav",
+      "file_duration_sec": 218.46,
+      "matched_youtube_id": "nf8EO1GdKlY",
+      "matched_youtube_title": "அதிகாரம் 74 - நாடு (Original) | Naadu [Original Audio]",
+      "matched_youtube_duration": 219.0,
+      "matched_keywords": [
+        "நாடு"
+      ],
+      "duration_diff_sec": 0.54,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "நாடு 1G Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நாடு 1G Golden Pop.wav",
+      "file_duration_sec": 213.6,
+      "matched_youtube_id": "gjo0AfKBzsU",
+      "matched_youtube_title": "அதிகாரம் 74 - நாடு (Remix) | Naadu Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 214.0,
+      "matched_keywords": [
+        "நாடு"
+      ],
+      "duration_diff_sec": 0.4,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "நிலையாமை 1Q Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நிலையாமை 1Q Golden.wav",
+      "file_duration_sec": 251.08,
+      "matched_youtube_id": "JreH0hqB2po",
+      "matched_youtube_title": "அதிகாரம் 34 - நிலையாமை | Nilaiyaamai | Full Song Film",
+      "matched_youtube_duration": 252.0,
+      "matched_keywords": [
+        "நிலையாமை"
+      ],
+      "duration_diff_sec": 0.92,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "படைச்செருக்கு 1K Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\படைச்செருக்கு 1K Golden.wav",
+      "file_duration_sec": 228.2,
+      "matched_youtube_id": "79u01V3wbZc",
+      "matched_youtube_title": "அதிகாரம் 78 - படைச்செருக்கு | Padaicherukku | Full Song Film",
+      "matched_youtube_duration": 229.0,
+      "matched_keywords": [
+        "படைச்செருக்கு"
+      ],
+      "duration_diff_sec": 0.8,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "பழைமை 1F Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பழைமை 1F Golden.wav",
+      "file_duration_sec": 308.16,
+      "matched_youtube_id": "778r-nAUX9Q",
+      "matched_youtube_title": "அதிகாரம் 81 - பழைமை | Pazhaimai | Full Song Film",
+      "matched_youtube_duration": 309.0,
+      "matched_keywords": [
+        "பழைமை"
+      ],
+      "duration_diff_sec": 0.84,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "புலால் உண்ணாமை 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புலால் உண்ணாமை 2026.wav",
+      "file_duration_sec": 279.27,
+      "matched_youtube_id": "h2q-ADrbBc4",
+      "matched_youtube_title": "அதிகாரம் 26 - புலால் உண்ணாமை | Pulaal Unnaamai [Full Song Film]",
+      "matched_youtube_duration": 280.0,
+      "matched_keywords": [
+        "உண்ணாமை",
+        "புலால்"
+      ],
+      "duration_diff_sec": 0.73,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "பெரியாரைத் துணைக்கோடல் 1N Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பெரியாரைத் துணைக்கோடல் 1N Golden 2026.wav",
+      "file_duration_sec": 273.27,
+      "matched_youtube_id": "aTFvlXMPBSE",
+      "matched_youtube_title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Original) | Periyarai Thunaikodal [Original Audio]",
+      "matched_youtube_duration": 274.0,
+      "matched_keywords": [
+        "பெரியாரைத்",
+        "துணைக்கோடல்"
+      ],
+      "duration_diff_sec": 0.73,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "பெரியாரைத் துணைக்கோடல் 1O Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பெரியாரைத் துணைக்கோடல் 1O Golden Pop.wav",
+      "file_duration_sec": 262.78,
+      "matched_youtube_id": "HRN77i6Kio8",
+      "matched_youtube_title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Remix) | Periyarai Thunaikodal",
+      "matched_youtube_duration": 263.0,
+      "matched_keywords": [
+        "பெரியாரைத்",
+        "துணைக்கோடல்"
+      ],
+      "duration_diff_sec": 0.22,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "பேதைமை 1C Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பேதைமை 1C Golden 2026.wav",
+      "file_duration_sec": 332.0,
+      "matched_youtube_id": "91RgQ8AygF4",
+      "matched_youtube_title": "அதிகாரம் 84 - பேதைமை | Pethaimai | Full Song Film",
+      "matched_youtube_duration": 333.0,
+      "matched_keywords": [
+        "பேதைமை"
+      ],
+      "duration_diff_sec": 1.0,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "பொச்சாவாமை 1H Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பொச்சாவாமை 1H Golden.wav",
+      "file_duration_sec": 319.32,
+      "matched_youtube_id": "O0hASl4BS2c",
+      "matched_youtube_title": "அதிகாரம் 54 - பொச்சாவாமை (Original) | Pochavaamai [Original Audio]",
+      "matched_youtube_duration": 320.0,
+      "matched_keywords": [
+        "பொச்சாவாமை"
+      ],
+      "duration_diff_sec": 0.68,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "பொச்சாவாமை 1O Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பொச்சாவாமை 1O Golden Pop.wav",
+      "file_duration_sec": 286.18,
+      "matched_youtube_id": "DhHGetUJlAI",
+      "matched_youtube_title": "அதிகாரம் 54 - பொச்சாவாமை (Remix) | Pochavaamai [Remix Audio]",
+      "matched_youtube_duration": 287.0,
+      "matched_keywords": [
+        "பொச்சாவாமை"
+      ],
+      "duration_diff_sec": 0.82,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "மடியின்மை 1H Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மடியின்மை 1H Golden.wav",
+      "file_duration_sec": 249.0,
+      "matched_youtube_id": "GfGlO3RQuik",
+      "matched_youtube_title": "அதிகாரம் 61 - மடியின்மை (Original) | Madiyinmai [Original Audio]",
+      "matched_youtube_duration": 249.0,
+      "matched_keywords": [
+        "மடியின்மை"
+      ],
+      "duration_diff_sec": 0.0,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "மடியின்மை 1J Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மடியின்மை 1J Golden Pop.wav",
+      "file_duration_sec": 263.28,
+      "matched_youtube_id": "Fh3HfGUObmg",
+      "matched_youtube_title": "அதிகாரம் 61 - மடியின்மை (Remix) | Madiyinmai [Remix Audio]",
+      "matched_youtube_duration": 264.0,
+      "matched_keywords": [
+        "மடியின்மை"
+      ],
+      "duration_diff_sec": 0.72,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "மன்னரைச் சேர்ந்தொழுதல் 1O Golden Female.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மன்னரைச் சேர்ந்தொழுதல் 1O Golden Female.wav",
+      "file_duration_sec": 281.05,
+      "matched_youtube_id": "dthZW-Wo8IU",
+      "matched_youtube_title": "அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Female) | Mannarai Sernthozhuthal",
+      "matched_youtube_duration": 282.0,
+      "matched_keywords": [
+        "மன்னரைச்",
+        "சேர்ந்தொழுதல்"
+      ],
+      "duration_diff_sec": 0.95,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "மன்னரைச் சேர்ந்தொழுதல் 1O Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மன்னரைச் சேர்ந்தொழுதல் 1O Golden.wav",
+      "file_duration_sec": 265.5,
+      "matched_youtube_id": "u9NeXaCHu-A",
+      "matched_youtube_title": "அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Original) | Mannarai Sernthozhuthal [Original Audio]",
+      "matched_youtube_duration": 266.0,
+      "matched_keywords": [
+        "மன்னரைச்",
+        "சேர்ந்தொழுதல்"
+      ],
+      "duration_diff_sec": 0.5,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "மன்னரைச் சேர்ந்தொழுதல் 1O.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மன்னரைச் சேர்ந்தொழுதல் 1O.wav",
+      "file_duration_sec": 268.01,
+      "matched_youtube_id": "u9NeXaCHu-A",
+      "matched_youtube_title": "அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Original) | Mannarai Sernthozhuthal [Original Audio]",
+      "matched_youtube_duration": 266.0,
+      "matched_keywords": [
+        "மன்னரைச்",
+        "சேர்ந்தொழுதல்"
+      ],
+      "duration_diff_sec": 2.01,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "முருகர் வார வழிபாடு  Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\முருகர் வார வழிபாடு  Golden.wav",
+      "file_duration_sec": 406.47,
+      "matched_youtube_id": "-L3VXkM2MTY",
+      "matched_youtube_title": "முருகர் வார வழிபாடு 2026 | Murugar Vaara Vazhipadu Cinematic Film",
+      "matched_youtube_duration": 407.0,
+      "matched_keywords": [
+        "வழிபாடு",
+        "முருகர்",
+        "வார"
+      ],
+      "duration_diff_sec": 0.53,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "மெய்யுணர்தல்  2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மெய்யுணர்தல்  2026.wav",
+      "file_duration_sec": 207.4,
+      "matched_youtube_id": "9NIv50lV4-M",
+      "matched_youtube_title": "அதிகாரம் 36 - மெய்யுணர்தல் | Meyyunarithal | Full Song Film",
+      "matched_youtube_duration": 208.0,
+      "matched_keywords": [
+        "மெய்யுணர்தல்"
+      ],
+      "duration_diff_sec": 0.6,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "வலியறிதல் 1V Golden (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வலியறிதல் 1V Golden (Remix).wav",
+      "file_duration_sec": 346.76,
+      "matched_youtube_id": "KLsXZa28uyE",
+      "matched_youtube_title": "அதிகாரம் 48 - வலியறிதல் (Remix) | Valiyarithal Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 347.0,
+      "matched_keywords": [
+        "வலியறிதல்"
+      ],
+      "duration_diff_sec": 0.24,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "வலியறிதல் 1Y Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வலியறிதல் 1Y Golden 2026.wav",
+      "file_duration_sec": 308.35,
+      "matched_youtube_id": "Js6Vepbegr8",
+      "matched_youtube_title": "அதிகாரம் 48 - வலியறிதல் (Original) | Valiyarithal [Original Audio]",
+      "matched_youtube_duration": 309.0,
+      "matched_keywords": [
+        "வலியறிதல்"
+      ],
+      "duration_diff_sec": 0.65,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "வாய்மை 1F Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வாய்மை 1F Golden.wav",
+      "file_duration_sec": 236.72,
+      "matched_youtube_id": "djYooU1LmGk",
+      "matched_youtube_title": "அதிகாரம் 30 - வாய்மை (Remix) | Vaaymai Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 237.0,
+      "matched_keywords": [
+        "வாய்மை"
+      ],
+      "duration_diff_sec": 0.28,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "வாய்மை 1H Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வாய்மை 1H Golden.wav",
+      "file_duration_sec": 239.96,
+      "matched_youtube_id": "djYooU1LmGk",
+      "matched_youtube_title": "அதிகாரம் 30 - வாய்மை (Remix) | Vaaymai Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 237.0,
+      "matched_keywords": [
+        "வாய்மை"
+      ],
+      "duration_diff_sec": 2.96,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "வினைத்திட்பம் 1L Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வினைத்திட்பம் 1L Golden.wav",
+      "file_duration_sec": 299.84,
+      "matched_youtube_id": "0WurYH-hkNM",
+      "matched_youtube_title": "அதிகாரம் 67 - வினைத்திட்பம் (Remix) | Vinai Thitpam Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 300.0,
+      "matched_keywords": [
+        "வினைத்திட்பம்"
+      ],
+      "duration_diff_sec": 0.16,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "வினைத்திட்பம் 1R Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வினைத்திட்பம் 1R Golden 2026.wav",
+      "file_duration_sec": 355.45,
+      "matched_youtube_id": "--4jzoezBW8",
+      "matched_youtube_title": "அதிகாரம் 67 - வினைத்திட்பம் (Original) | Vinai Thitpam [Original Audio]",
+      "matched_youtube_duration": 356.0,
+      "matched_keywords": [
+        "வினைத்திட்பம்"
+      ],
+      "duration_diff_sec": 0.55,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "வினைத்தூய்மை 1M Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வினைத்தூய்மை 1M Golden.wav",
+      "file_duration_sec": 308.0,
+      "matched_youtube_id": "8wZGK0nGTEo",
+      "matched_youtube_title": "அதிகாரம் 66 - வினைத்தூய்மை (Slow) | Vinai Thooymai [Full Song Film]",
+      "matched_youtube_duration": 308.0,
+      "matched_keywords": [
+        "வினைத்தூய்மை"
+      ],
+      "duration_diff_sec": 0.0,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "வினைத்தூய்மை 1P Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வினைத்தூய்மை 1P Golden Pop.wav",
+      "file_duration_sec": 271.16,
+      "matched_youtube_id": "D95woYqPoPI",
+      "matched_youtube_title": "அதிகாரம் 66 - வினைத்தூய்மை (Remix) | Vinai Thooymai Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 272.0,
+      "matched_keywords": [
+        "வினைத்தூய்மை"
+      ],
+      "duration_diff_sec": 0.84,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    },
+    {
+      "file_name": "வினைத்தூய்மை 1T Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வினைத்தூய்மை 1T Golden.wav",
+      "file_duration_sec": 272.4,
+      "matched_youtube_id": "D95woYqPoPI",
+      "matched_youtube_title": "அதிகாரம் 66 - வினைத்தூய்மை (Remix) | Vinai Thooymai Remix Cinematic Thirukkural Film",
+      "matched_youtube_duration": 272.0,
+      "matched_keywords": [
+        "வினைத்தூய்மை"
+      ],
+      "duration_diff_sec": 0.4,
+      "action": "SKIP_DO_NOT_DUPLICATE"
+    }
+  ],
+  "same_chapter_diff_cut": [
+    {
+      "file_name": "குறிப்பறிதல் 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குறிப்பறிதல் 1E Golden.wav",
+      "file_duration_sec": 317.52,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "2Qs07DTJvvM",
+          "title": "அதிகாரம் 71 - குறிப்பறிதல் (Remix) | Kuripparithal Remix Cinematic Thirukkural Film",
+          "duration_sec": 288.0
+        },
+        {
+          "youtube_id": "dBIUA3fKBJ0",
+          "title": "அதிகாரம் 71 - குறிப்பறிதல் | Kuripparithal | Full Song Film",
+          "duration_sec": 275.0
+        },
+        {
+          "youtube_id": "6hfla_PRW40",
+          "title": "அதிகாரம் 71 - குறிப்பறிதல் (Original) | Kuripparithal [Original Audio]",
+          "duration_sec": 275.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "குறிப்பறிதல் 1F Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குறிப்பறிதல் 1F Golden Pop.wav",
+      "file_duration_sec": 329.12,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "2Qs07DTJvvM",
+          "title": "அதிகாரம் 71 - குறிப்பறிதல் (Remix) | Kuripparithal Remix Cinematic Thirukkural Film",
+          "duration_sec": 288.0
+        },
+        {
+          "youtube_id": "dBIUA3fKBJ0",
+          "title": "அதிகாரம் 71 - குறிப்பறிதல் | Kuripparithal | Full Song Film",
+          "duration_sec": 275.0
+        },
+        {
+          "youtube_id": "6hfla_PRW40",
+          "title": "அதிகாரம் 71 - குறிப்பறிதல் (Original) | Kuripparithal [Original Audio]",
+          "duration_sec": 275.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "கூடா நட்பு 1G Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கூடா நட்பு 1G Golden Pop.wav",
+      "file_duration_sec": 234.8,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "wPT_1jgn2Ys",
+          "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam Symphony Cinematic Thirukkural Film",
+          "duration_sec": 283.0
+        },
+        {
+          "youtube_id": "jdvz-yoK5eI",
+          "title": "அதிகாரம் 79 - நட்பு | Natpu | Full Song Film",
+          "duration_sec": 270.0
+        },
+        {
+          "youtube_id": "4zff_qi_G1E",
+          "title": "அதிகாரம் 82 - தீ நட்பு | Thee Natpu | Full Song Film",
+          "duration_sec": 283.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "கூடா நட்பு 1L Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கூடா நட்பு 1L Golden 2026.wav",
+      "file_duration_sec": 238.76,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "wPT_1jgn2Ys",
+          "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam Symphony Cinematic Thirukkural Film",
+          "duration_sec": 283.0
+        },
+        {
+          "youtube_id": "jdvz-yoK5eI",
+          "title": "அதிகாரம் 79 - நட்பு | Natpu | Full Song Film",
+          "duration_sec": 270.0
+        },
+        {
+          "youtube_id": "4zff_qi_G1E",
+          "title": "அதிகாரம் 82 - தீ நட்பு | Thee Natpu | Full Song Film",
+          "duration_sec": 283.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "கொல்லாமை  2D Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கொல்லாமை  2D Golden.wav",
+      "file_duration_sec": 314.53,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "L6DWSjPqoH0",
+          "title": "அதிகாரம் 33 - கொல்லாமை | Kollaamai | Full Song Film",
+          "duration_sec": 278.0
+        },
+        {
+          "youtube_id": "rBeSH7tNEzA",
+          "title": "அதிகாரம் 33 - கொல்லாமை | Kollaamai [Full Song Film]",
+          "duration_sec": 278.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "சொல்வன்மை 1Z Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சொல்வன்மை 1Z Golden.wav",
+      "file_duration_sec": 318.2,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "rOowxP53oWA",
+          "title": "அதிகாரம் 65 - சொல்வன்மை (Remix) | Solvanmai Remix Cinematic Thirukkural Film",
+          "duration_sec": 336.0
+        },
+        {
+          "youtube_id": "q6Rg5CUbOD0",
+          "title": "அதிகாரம் 65 - சொல்வன்மை | Solvanmai | Full Song Film",
+          "duration_sec": 339.0
+        },
+        {
+          "youtube_id": "NIvQ6yD1wnY",
+          "title": "அதிகாரம் 65 - சொல்வன்மை (Original) | Solvanmai [Original Audio]",
+          "duration_sec": 339.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - அன்புடைமை  2B.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - அன்புடைமை  2B.wav",
+      "file_duration_sec": 206.17,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "jO2i4bcZ2ts",
+          "title": "அதிகாரம் 8 - அன்புடைமை | Anbudaimai Cinematic Thirukkural Film",
+          "duration_sec": 215.0
+        },
+        {
+          "youtube_id": "lneosghJWgs",
+          "title": "அதிகாரம் 8 - அன்புடைமை | Anbudaimai [Full Song Film]",
+          "duration_sec": 215.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - இல்வாழ்க்கை 1D Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - இல்வாழ்க்கை 1D Golden.wav",
+      "file_duration_sec": 272.8,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "C05GEfkJZaY",
+          "title": "அதிகாரம் 5 - இல்வாழ்க்கை | Ilvazhkkai Cinematic Thirukkural Film",
+          "duration_sec": 258.0
+        },
+        {
+          "youtube_id": "v_dsHTOvKP8",
+          "title": "அதிகாரம் 5 - இல்வாழ்க்கை | Ilvaazhkkai [Full Song Film]",
+          "duration_sec": 258.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - இல்வாழ்க்கை L.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - இல்வாழ்க்கை L.wav",
+      "file_duration_sec": 303.8,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "C05GEfkJZaY",
+          "title": "அதிகாரம் 5 - இல்வாழ்க்கை | Ilvazhkkai Cinematic Thirukkural Film",
+          "duration_sec": 258.0
+        },
+        {
+          "youtube_id": "v_dsHTOvKP8",
+          "title": "அதிகாரம் 5 - இல்வாழ்க்கை | Ilvaazhkkai [Full Song Film]",
+          "duration_sec": 258.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - ஒழுக்கம் உடைமை C.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - ஒழுக்கம் உடைமை C.wav",
+      "file_duration_sec": 307.69,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "wPT_1jgn2Ys",
+          "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam Symphony Cinematic Thirukkural Film",
+          "duration_sec": 283.0
+        },
+        {
+          "youtube_id": "mvOSVEFhvDc",
+          "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Original) | Kooda Ozhukkam [Original Audio]",
+          "duration_sec": 263.0
+        },
+        {
+          "youtube_id": "NxZf0eRutEY",
+          "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam [Symphony]",
+          "duration_sec": 282.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - கடவுள் வாழ்த்து 2A (Children).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - கடவுள் வாழ்த்து 2A (Children).wav",
+      "file_duration_sec": 287.46,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "02C8glMmetw",
+          "title": "அதிகாரம் 1 - கடவுள் வாழ்த்து (அகர முதல) | Agara Muthala | Full Song Film",
+          "duration_sec": 239.0
+        },
+        {
+          "youtube_id": "SWAjAbur-TQ",
+          "title": "அதிகாரம் 1 - கடவுள் வாழ்த்து | Kadavul Vazhthu Cinematic Thirukkural Film",
+          "duration_sec": 329.0
+        },
+        {
+          "youtube_id": "QXhT9uoA7_w",
+          "title": "அதிகாரம் 1 - கடவுள் வாழ்த்து | Kadavul Vazhthu [Full Song Film]",
+          "duration_sec": 239.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - கூடா ஒழுக்கம் 2A Golden (1).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - கூடா ஒழுக்கம் 2A Golden (1).wav",
+      "file_duration_sec": 311.07,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "wPT_1jgn2Ys",
+          "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam Symphony Cinematic Thirukkural Film",
+          "duration_sec": 283.0
+        },
+        {
+          "youtube_id": "8uX2yl_EnMI",
+          "title": "அதிகாரம் 83 - கூடா நட்பு | Kooda Natpu | Full Song Film",
+          "duration_sec": 261.0
+        },
+        {
+          "youtube_id": "mvOSVEFhvDc",
+          "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Original) | Kooda Ozhukkam [Original Audio]",
+          "duration_sec": 263.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - கூடா ஒழுக்கம் 2A Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - கூடா ஒழுக்கம் 2A Golden.wav",
+      "file_duration_sec": 312.6,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "wPT_1jgn2Ys",
+          "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam Symphony Cinematic Thirukkural Film",
+          "duration_sec": 283.0
+        },
+        {
+          "youtube_id": "8uX2yl_EnMI",
+          "title": "அதிகாரம் 83 - கூடா நட்பு | Kooda Natpu | Full Song Film",
+          "duration_sec": 261.0
+        },
+        {
+          "youtube_id": "mvOSVEFhvDc",
+          "title": "அதிகாரம் 28 - கூடா ஒழுக்கம் (Original) | Kooda Ozhukkam [Original Audio]",
+          "duration_sec": 263.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - நீத்தார் பெருமை 1C Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - நீத்தார் பெருமை 1C Golden.wav",
+      "file_duration_sec": 266.72,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "lg5W3VaLQNQ",
+          "title": "திருவருட்பா - அறிவரும் பெருமை | Arivarum Perumai | Full Song Film",
+          "duration_sec": 411.0
+        },
+        {
+          "youtube_id": "VyUqD3ZO3BU",
+          "title": "திருவருட்பா - அறிவரும் பெருமை | Arivarum Perumai [Full Song]",
+          "duration_sec": 411.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - பொறையுடைமை 1D Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - பொறையுடைமை 1D Golden.wav",
+      "file_duration_sec": 305.89,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "aSQrSHA4YtU",
+          "title": "அதிகாரம் 16 - பொறையுடைமை | Poraiyudaimai [Full Song Film]",
+          "duration_sec": 382.0
+        },
+        {
+          "youtube_id": "KI7uUFiJO1E",
+          "title": "அதிகாரம் 16 - பொறையுடைமை | Patience Story Cinematic Film",
+          "duration_sec": 382.0
+        },
+        {
+          "youtube_id": "R82hz_s2YGQ",
+          "title": "அதிகாரம் 16 - பொறையுடைமை | Porai Udaimai Cinematic Thirukkural Film",
+          "duration_sec": 382.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - வான் சிறப்பு  1C Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - வான் சிறப்பு  1C Golden.wav",
+      "file_duration_sec": 299.69,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "f1jxgAbXcdE",
+          "title": "அதிகாரம் 2 - வான் சிறப்பு | Vaan Sirappu Cinematic Thirukkural Film",
+          "duration_sec": 313.0
+        },
+        {
+          "youtube_id": "tX4JtRSOuxE",
+          "title": "அதிகாரம் 2 - வான் சிறப்பு | Vaan Sirappu [Full Song Film]",
+          "duration_sec": 313.0
+        },
+        {
+          "youtube_id": "sHSkPTQRtH8",
+          "title": "வான் முகில் வழாது பெய்க | Vaan Mugil Cinematic Devotional Film",
+          "duration_sec": 119.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "திருக்குறள் - வான் சிறப்பு!  A.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - வான் சிறப்பு!  A.wav",
+      "file_duration_sec": 317.66,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "f1jxgAbXcdE",
+          "title": "அதிகாரம் 2 - வான் சிறப்பு | Vaan Sirappu Cinematic Thirukkural Film",
+          "duration_sec": 313.0
+        },
+        {
+          "youtube_id": "tX4JtRSOuxE",
+          "title": "அதிகாரம் 2 - வான் சிறப்பு | Vaan Sirappu [Full Song Film]",
+          "duration_sec": 313.0
+        },
+        {
+          "youtube_id": "sHSkPTQRtH8",
+          "title": "வான் முகில் வழாது பெய்க | Vaan Mugil Cinematic Devotional Film",
+          "duration_sec": 119.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "தீ நட்பு 1N Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தீ நட்பு 1N Golden Pop.wav",
+      "file_duration_sec": 274.8,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "jdvz-yoK5eI",
+          "title": "அதிகாரம் 79 - நட்பு | Natpu | Full Song Film",
+          "duration_sec": 270.0
+        },
+        {
+          "youtube_id": "4zff_qi_G1E",
+          "title": "அதிகாரம் 82 - தீ நட்பு | Thee Natpu | Full Song Film",
+          "duration_sec": 283.0
+        },
+        {
+          "youtube_id": "8uX2yl_EnMI",
+          "title": "அதிகாரம் 83 - கூடா நட்பு | Kooda Natpu | Full Song Film",
+          "duration_sec": 261.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "தெரிந்து தெளிதல் 2P.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்து தெளிதல் 2P.wav",
+      "file_duration_sec": 314.0,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "BfgGC7DsHMI",
+          "title": "அதிகாரம் 47 - தெரிந்து செயல்வகை | Therinthu Seyalvagai | Full Song Film",
+          "duration_sec": 348.0
+        },
+        {
+          "youtube_id": "bH23l5vVgL8",
+          "title": "அதிகாரம் 51 - தெரிந்து தெளிதல் | Therinthu Thelithal | Full Song Film",
+          "duration_sec": 398.0
+        },
+        {
+          "youtube_id": "mpgnALSm7wk",
+          "title": "அதிகாரம் 47 - தெரிந்து செயல்வகை (Female) | Therinthu Seyalvagai [Full Song Film]",
+          "duration_sec": 228.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "தோலுடையார் - திருவருட்பா - திருவருள் வழக்க விளக்கம் 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தோலுடையார் - திருவருட்பா - திருவருள் வழக்க விளக்கம் 2026.wav",
+      "file_duration_sec": 798.23,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "FGeahfpAbiw",
+          "title": "திருவருட்பா - அன்பு மாலை - 2026 (I) | Cinematic Devotional Film",
+          "duration_sec": 562.0
+        },
+        {
+          "youtube_id": "KjQZFlnCluU",
+          "title": "திருவருட்பா - ஆறாம் திருமுறை - சிவ பதி விளக்கம் | Full Song Film",
+          "duration_sec": 286.0
+        },
+        {
+          "youtube_id": "fJIeiPyejxU",
+          "title": "திருவருட்பா - ஆறாம் திருமுறை - பரசிவ வணக்கம் | Full Song Film",
+          "duration_sec": 228.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "நட்பாராய்தல் 1G Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நட்பாராய்தல் 1G Golden Pop.wav",
+      "file_duration_sec": 281.12,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "sAgX9WX86Rw",
+          "title": "அதிகாரம் 80 - நட்பாராய்தல் | Natpaaraaythal | Full Song Film",
+          "duration_sec": 288.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "நன்றியில் செல்வம் 1D Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நன்றியில் செல்வம் 1D Golden.wav",
+      "file_duration_sec": 339.57,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "vbMywONB5Wc",
+          "title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) (Remix) | Kelvi Selvam Remix Cinematic Thirukkural Film",
+          "duration_sec": 253.0
+        },
+        {
+          "youtube_id": "9kHN9Dzrv7o",
+          "title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) | Kelvi Selvam | Full Song Film",
+          "duration_sec": 249.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "நன்றியில் செல்வம் 1G Golden (Symphony).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நன்றியில் செல்வம் 1G Golden (Symphony).wav",
+      "file_duration_sec": 333.02,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "vbMywONB5Wc",
+          "title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) (Remix) | Kelvi Selvam Remix Cinematic Thirukkural Film",
+          "duration_sec": 253.0
+        },
+        {
+          "youtube_id": "9kHN9Dzrv7o",
+          "title": "அதிகாரம் 42 - கேள்வி (கேள்விச் செல்வம்) | Kelvi Selvam | Full Song Film",
+          "duration_sec": 249.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "நாடு 1H Golden Female.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நாடு 1H Golden Female.wav",
+      "file_duration_sec": 202.32,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "gjo0AfKBzsU",
+          "title": "அதிகாரம் 74 - நாடு (Remix) | Naadu Remix Cinematic Thirukkural Film",
+          "duration_sec": 214.0
+        },
+        {
+          "youtube_id": "nf8EO1GdKlY",
+          "title": "அதிகாரம் 74 - நாடு (Original) | Naadu [Original Audio]",
+          "duration_sec": 219.0
+        },
+        {
+          "youtube_id": "RAUafMVpT5k",
+          "title": "அதிகாரம் 74 - நாடு (Remix) | Naadu [Remix Audio]",
+          "duration_sec": 214.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "படைச்செருக்கு 1L Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\படைச்செருக்கு 1L Golden Pop.wav",
+      "file_duration_sec": 298.8,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "79u01V3wbZc",
+          "title": "அதிகாரம் 78 - படைச்செருக்கு | Padaicherukku | Full Song Film",
+          "duration_sec": 229.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "பழைமை 1H Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பழைமை 1H Golden Pop.wav",
+      "file_duration_sec": 290.94,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "778r-nAUX9Q",
+          "title": "அதிகாரம் 81 - பழைமை | Pazhaimai | Full Song Film",
+          "duration_sec": 309.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "பெரியாரைத் துணைக்கோடல் 1O Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பெரியாரைத் துணைக்கோடல் 1O Golden.wav",
+      "file_duration_sec": 267.96,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "HRN77i6Kio8",
+          "title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Remix) | Periyarai Thunaikodal",
+          "duration_sec": 263.0
+        },
+        {
+          "youtube_id": "aTFvlXMPBSE",
+          "title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Original) | Periyarai Thunaikodal [Original Audio]",
+          "duration_sec": 274.0
+        },
+        {
+          "youtube_id": "2Pun6K7h984",
+          "title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Remix) | Periyarai Thunaikodal [Remix Audio]",
+          "duration_sec": 263.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "பெருமை 1I Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பெருமை 1I Golden 2026.wav",
+      "file_duration_sec": 315.85,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "lg5W3VaLQNQ",
+          "title": "திருவருட்பா - அறிவரும் பெருமை | Arivarum Perumai | Full Song Film",
+          "duration_sec": 411.0
+        },
+        {
+          "youtube_id": "VyUqD3ZO3BU",
+          "title": "திருவருட்பா - அறிவரும் பெருமை | Arivarum Perumai [Full Song]",
+          "duration_sec": 411.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "பெருமை 1N Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பெருமை 1N Golden Pop.wav",
+      "file_duration_sec": 347.59,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "lg5W3VaLQNQ",
+          "title": "திருவருட்பா - அறிவரும் பெருமை | Arivarum Perumai | Full Song Film",
+          "duration_sec": 411.0
+        },
+        {
+          "youtube_id": "VyUqD3ZO3BU",
+          "title": "திருவருட்பா - அறிவரும் பெருமை | Arivarum Perumai [Full Song]",
+          "duration_sec": 411.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    },
+    {
+      "file_name": "பேதைமை 1E Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பேதைமை 1E Golden Pop.wav",
+      "file_duration_sec": 297.8,
+      "candidate_youtube_matches": [
+        {
+          "youtube_id": "91RgQ8AygF4",
+          "title": "அதிகாரம் 84 - பேதைமை | Pethaimai | Full Song Film",
+          "duration_sec": 333.0
+        }
+      ],
+      "action": "REVIEW_OR_ALTERNATE_VERSION"
+    }
+  ],
+  "completely_novel_safe_to_produce": [
+    {
+      "file_name": "Kadavul Vazththu Clilp.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\Kadavul Vazththu Clilp.wav",
+      "file_duration_sec": 163.04,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "அலரறிவுறுத்தல் (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அலரறிவுறுத்தல் (Original).wav",
+      "file_duration_sec": 333.4,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "அலரறிவுறுத்தல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அலரறிவுறுத்தல் (Remix).wav",
+      "file_duration_sec": 345.62,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "அவர்வயின்விதும்பல் (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அவர்வயின்விதும்பல் (Original).wav",
+      "file_duration_sec": 303.18,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "அவர்வயின்விதும்பல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\அவர்வயின்விதும்பல் (Remix).wav",
+      "file_duration_sec": 331.29,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "இகல் Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இகல் Golden 2026.wav",
+      "file_duration_sec": 325.54,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "இகல் Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இகல் Golden Pop.wav",
+      "file_duration_sec": 308.38,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "இடுக்கணழியாமை 1O Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இடுக்கணழியாமை 1O Golden.wav",
+      "file_duration_sec": 292.92,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "இடுக்கணழியாமை 1S Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இடுக்கணழியாமை 1S Golden Pop.wav",
+      "file_duration_sec": 329.6,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "இரவச்சம் 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இரவச்சம் 1E Golden.wav",
+      "file_duration_sec": 323.44,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "இரவச்சம் 1I.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இரவச்சம் 1I.wav",
+      "file_duration_sec": 238.92,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "இரவு 1D Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இரவு 1D Golden Pop.wav",
+      "file_duration_sec": 244.96,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "இரவு 1F Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இரவு 1F Golden.wav",
+      "file_duration_sec": 267.96,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "இரவு 1I Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\இரவு 1I Golden.wav",
+      "file_duration_sec": 258.2,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "உட்பகை Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\உட்பகை Golden 2026.wav",
+      "file_duration_sec": 320.77,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "உட்பகை Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\உட்பகை Golden Pop.wav",
+      "file_duration_sec": 334.5,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "உறுப்புநலனழிதல் (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\உறுப்புநலனழிதல் (Original).wav",
+      "file_duration_sec": 329.45,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "உறுப்புநலனழிதல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\உறுப்புநலனழிதல் (Remix).wav",
+      "file_duration_sec": 335.24,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "உழவு 1H Golden Symphony.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\உழவு 1H Golden Symphony.wav",
+      "file_duration_sec": 343.76,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "உழவு 1L Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\உழவு 1L Golden 2026.wav",
+      "file_duration_sec": 376.07,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "உழவு 1L Golden Symphony 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\உழவு 1L Golden Symphony 2026.wav",
+      "file_duration_sec": 384.61,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "உழவு 1L Golden Symphony.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\உழவு 1L Golden Symphony.wav",
+      "file_duration_sec": 343.76,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "உழவு 1L.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\உழவு 1L.wav",
+      "file_duration_sec": 337.88,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "ஊடலுவகை 1B Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\ஊடலுவகை 1B Golden Pop.wav",
+      "file_duration_sec": 161.12,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "ஊடலுவகை 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\ஊடலுவகை 1E Golden.wav",
+      "file_duration_sec": 177.6,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "கண்விதுப்பழிதல் (II).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கண்விதுப்பழிதல் (II).wav",
+      "file_duration_sec": 310.9,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "கண்விதுப்பழிதல் (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கண்விதுப்பழிதல் (Original).wav",
+      "file_duration_sec": 321.49,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "கண்விதுப்பழிதல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கண்விதுப்பழிதல் (Remix).wav",
+      "file_duration_sec": 324.91,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "கனவுநிலையுரைத்தல் (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கனவுநிலையுரைத்தல் (Original).wav",
+      "file_duration_sec": 321.75,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "கனவுநிலையுரைத்தல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கனவுநிலையுரைத்தல் (Remix).wav",
+      "file_duration_sec": 216.74,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "கயமை 1B Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கயமை 1B Golden.wav",
+      "file_duration_sec": 273.4,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "கயமை 1E Golden (Female).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கயமை 1E Golden (Female).wav",
+      "file_duration_sec": 296.8,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "கள்ளுண்ணாமை 1D Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கள்ளுண்ணாமை 1D Golden.wav",
+      "file_duration_sec": 361.85,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "கள்ளுண்ணாமை 1E Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\கள்ளுண்ணாமை 1E Golden Pop.wav",
+      "file_duration_sec": 330.87,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "காதற்சிறப்புரைத்தல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\காதற்சிறப்புரைத்தல் (Remix).wav",
+      "file_duration_sec": 217.61,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "காதற்சிறப்புரைத்தல் (Symphony).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\காதற்சிறப்புரைத்தல் (Symphony).wav",
+      "file_duration_sec": 269.77,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "காதற்சிறப்புரைத்தல் Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\காதற்சிறப்புரைத்தல் Golden 2026.wav",
+      "file_duration_sec": 323.45,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "குடிசெயல்வகை 1F GOod Intro.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குடிசெயல்வகை 1F GOod Intro.wav",
+      "file_duration_sec": 308.24,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "குடிசெயல்வகை 1G Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குடிசெயல்வகை 1G Golden.wav",
+      "file_duration_sec": 362.96,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "குடிமை  1G Golden (Female).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குடிமை  1G Golden (Female).wav",
+      "file_duration_sec": 312.29,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "குடிமை  1G Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குடிமை  1G Golden.wav",
+      "file_duration_sec": 327.83,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "குன்றம் எறிந்தாய் 1H Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குன்றம் எறிந்தாய் 1H Golden 2026.wav",
+      "file_duration_sec": 401.69,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "குறிப்பறிவுறுத்தல் 1R Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குறிப்பறிவுறுத்தல் 1R Golden Pop.wav",
+      "file_duration_sec": 346.4,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "குறிப்பறிவுறுத்தல் 1U Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குறிப்பறிவுறுத்தல் 1U Golden.wav",
+      "file_duration_sec": 344.09,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "குற்றம் கடிதல் 1Q Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குற்றம் கடிதல் 1Q Golden.wav",
+      "file_duration_sec": 233.56,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "குற்றம் கடிதல் 1T Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\குற்றம் கடிதல் 1T Golden.wav",
+      "file_duration_sec": 221.2,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "சான்றாண்மை 1Q Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சான்றாண்மை 1Q Golden 2026.wav",
+      "file_duration_sec": 269.91,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "சான்றாண்மை 1Q Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சான்றாண்மை 1Q Golden.wav",
+      "file_duration_sec": 276.6,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "சூது 1B Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சூது 1B Golden Pop.wav",
+      "file_duration_sec": 297.13,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "சூது 1B Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சூது 1B Golden.wav",
+      "file_duration_sec": 149.86,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "சூழ்ச்சி 1I Golden Female.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சூழ்ச்சி 1I Golden Female.wav",
+      "file_duration_sec": 322.4,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "சூழ்ச்சி 1L Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\சூழ்ச்சி 1L Golden 2026.wav",
+      "file_duration_sec": 279.99,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தகையணங்குறுத்தல் 1A  Golden Symphony.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தகையணங்குறுத்தல் 1A  Golden Symphony.wav",
+      "file_duration_sec": 263.2,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தகையணங்குறுத்தல் 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தகையணங்குறுத்தல் 1E Golden.wav",
+      "file_duration_sec": 294.0,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தனிப்படர்மிகுதி (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தனிப்படர்மிகுதி (Original).wav",
+      "file_duration_sec": 329.13,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தனிப்படர்மிகுதி (Symphony).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தனிப்படர்மிகுதி (Symphony).wav",
+      "file_duration_sec": 312.73,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - அடக்கமுடைமை 1E Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - அடக்கமுடைமை 1E Golden 2026.wav",
+      "file_duration_sec": 313.32,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - அடக்கமுடைமை C.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - அடக்கமுடைமை C.wav",
+      "file_duration_sec": 379.74,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - அறன் வலியுறுத்தல் B.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - அறன் வலியுறுத்தல் B.wav",
+      "file_duration_sec": 274.56,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - அறன்வலியுறுத்தல் 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - அறன்வலியுறுத்தல் 1E Golden.wav",
+      "file_duration_sec": 293.56,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - அழுக்காறாமை 1I Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - அழுக்காறாமை 1I Golden.wav",
+      "file_duration_sec": 302.4,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - அழுக்காறாமை B.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - அழுக்காறாமை B.wav",
+      "file_duration_sec": 297.46,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - இனியவை கூறல் D.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - இனியவை கூறல் D.wav",
+      "file_duration_sec": 289.31,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - இனியவைகூறல் 1J Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - இனியவைகூறல் 1J Golden.wav",
+      "file_duration_sec": 278.76,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - ஈகை F (Cover).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - ஈகை F (Cover).wav",
+      "file_duration_sec": 400.05,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - ஒப்புரவறிதல் 1A Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - ஒப்புரவறிதல் 1A Golden Pop.wav",
+      "file_duration_sec": 238.8,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - ஒப்புரவறிதல் 1C Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - ஒப்புரவறிதல் 1C Golden 2026.wav",
+      "file_duration_sec": 299.72,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - ஒழுக்கமுடைமை 1A Golden (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - ஒழுக்கமுடைமை 1A Golden (Original).wav",
+      "file_duration_sec": 286.8,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - ஒழுக்கமுடைமை 1D Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - ஒழுக்கமுடைமை 1D Golden 2026.wav",
+      "file_duration_sec": 261.89,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - செய்நன்றி அறிதல் E.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - செய்நன்றி அறிதல் E.wav",
+      "file_duration_sec": 359.82,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - செய்ந்நன்றி அறிதல் 1B Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - செய்ந்நன்றி அறிதல் 1B Golden.wav",
+      "file_duration_sec": 291.6,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - தீவினையச்சம் 1E Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - தீவினையச்சம் 1E Golden Pop.wav",
+      "file_duration_sec": 210.44,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - நடுவு நிலைமை 1A Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - நடுவு நிலைமை 1A Golden.wav",
+      "file_duration_sec": 257.91,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - நடுவு நிலைமை 4.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - நடுவு நிலைமை 4.wav",
+      "file_duration_sec": 343.51,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - பயனில சொல்லாமை 1E Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - பயனில சொல்லாமை 1E Golden Pop.wav",
+      "file_duration_sec": 209.96,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - பயனில சொல்லாமை 1G Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - பயனில சொல்லாமை 1G Golden 2026.wav",
+      "file_duration_sec": 253.72,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - பிறனில் விழையாமை 1D Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - பிறனில் விழையாமை 1D Golden.wav",
+      "file_duration_sec": 264.14,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - புகழ் B.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - புகழ் B.wav",
+      "file_duration_sec": 329.85,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - புதல்வரைப் பெறுதல் 1C Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - புதல்வரைப் பெறுதல் 1C Golden.wav",
+      "file_duration_sec": 264.68,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - புதல்வரைப் பெறுதல் 3G.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - புதல்வரைப் பெறுதல் 3G.wav",
+      "file_duration_sec": 237.18,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - புறங்கூறாமை 1G Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - புறங்கூறாமை 1G Golden.wav",
+      "file_duration_sec": 288.36,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - புறங்கூறாமை 1H Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - புறங்கூறாமை 1H Golden Pop.wav",
+      "file_duration_sec": 288.44,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - பொறை உடைமை L.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - பொறை உடைமை L.wav",
+      "file_duration_sec": 271.75,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - வாழ்க்கைத்துணை 1C.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - வாழ்க்கைத்துணை 1C.wav",
+      "file_duration_sec": 311.87,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - விருந்தோம்பல் 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - விருந்தோம்பல் 1E Golden.wav",
+      "file_duration_sec": 201.61,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - விருந்தோம்பல் 2A.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - விருந்தோம்பல் 2A.wav",
+      "file_duration_sec": 299.7,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "திருக்குறள் - வெஃகாமை 1B Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\திருக்குறள் - வெஃகாமை 1B Golden.wav",
+      "file_duration_sec": 272.4,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தெரிந்துசெயல்வகை 1G (Female).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்துசெயல்வகை 1G (Female).wav",
+      "file_duration_sec": 227.42,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தெரிந்துசெயல்வகை 1G Golden (Female).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்துசெயல்வகை 1G Golden (Female).wav",
+      "file_duration_sec": 227.42,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தெரிந்துசெயல்வகை 1G.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்துசெயல்வகை 1G.wav",
+      "file_duration_sec": 324.84,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தெரிந்துசெயல்வகை 1M Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்துசெயல்வகை 1M Golden 2026.wav",
+      "file_duration_sec": 347.58,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தெரிந்துசெயல்வகை 1M Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தெரிந்துசெயல்வகை 1M Golden.wav",
+      "file_duration_sec": 331.96,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "தொடி நோக்கி Voice .wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\தொடி நோக்கி Voice .wav",
+      "file_duration_sec": 9.52,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நலம்புனைந்துரைத்தல் 1D Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நலம்புனைந்துரைத்தல் 1D Golden.wav",
+      "file_duration_sec": 286.28,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நலம்புனைந்துரைத்தல் 1E Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நலம்புனைந்துரைத்தல் 1E Golden Pop.wav",
+      "file_duration_sec": 291.92,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நல்குரவு 1I Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நல்குரவு 1I Golden 2026.wav",
+      "file_duration_sec": 302.92,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நல்குரவு 1J Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நல்குரவு 1J Golden.wav",
+      "file_duration_sec": 333.92,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நல்குரவு 1K Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நல்குரவு 1K Golden Pop.wav",
+      "file_duration_sec": 287.28,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நாணுடைமை 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நாணுடைமை 1E Golden.wav",
+      "file_duration_sec": 336.04,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நாணுடைமை 1M Golden (Symphony).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நாணுடைமை 1M Golden (Symphony).wav",
+      "file_duration_sec": 322.6,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நாணுத்துறவுரைத்தல் 1C Golden Symphony.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நாணுத்துறவுரைத்தல் 1C Golden Symphony.wav",
+      "file_duration_sec": 213.2,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நாணுத்துறவுரைத்தல் 1D Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நாணுத்துறவுரைத்தல் 1D Golden Pop.wav",
+      "file_duration_sec": 234.8,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நினைந்தவர்புலம்பல் (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நினைந்தவர்புலம்பல் (Original).wav",
+      "file_duration_sec": 350.25,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நினைந்தவர்புலம்பல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நினைந்தவர்புலம்பல் (Remix).wav",
+      "file_duration_sec": 274.6,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நிறையழிதல் (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நிறையழிதல் (Original).wav",
+      "file_duration_sec": 286.39,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நிறையழிதல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நிறையழிதல் (Remix).wav",
+      "file_duration_sec": 292.04,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நெஞ்சொடுகிளத்தல் (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நெஞ்சொடுகிளத்தல் (Original).wav",
+      "file_duration_sec": 359.15,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நெஞ்சொடுகிளத்தல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நெஞ்சொடுகிளத்தல் (Remix).wav",
+      "file_duration_sec": 359.72,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நெஞ்சொடுபுலத்தல் 1A Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நெஞ்சொடுபுலத்தல் 1A Golden.wav",
+      "file_duration_sec": 267.72,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "நெஞ்சொடுபுலத்தல் 1B Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\நெஞ்சொடுபுலத்தல் 1B Golden Pop.wav",
+      "file_duration_sec": 301.56,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பகைத்திறந்தெரிதல் Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பகைத்திறந்தெரிதல் Golden 2026.wav",
+      "file_duration_sec": 312.62,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பகைத்திறந்தெரிதல் Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பகைத்திறந்தெரிதல் Golden Pop.wav",
+      "file_duration_sec": 338.88,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பகைமாட்சி Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பகைமாட்சி Golden 2026.wav",
+      "file_duration_sec": 326.94,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பகைமாட்சி Symphony 2.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பகைமாட்சி Symphony 2.wav",
+      "file_duration_sec": 302.23,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பகைமாட்சி Symphony.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பகைமாட்சி Symphony.wav",
+      "file_duration_sec": 332.65,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பசப்புறுபருவரல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பசப்புறுபருவரல் (Remix).wav",
+      "file_duration_sec": 328.72,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பசப்புறுபருவரல் Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பசப்புறுபருவரல் Golden.wav",
+      "file_duration_sec": 340.45,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "படர்மெலிந்திரங்கல் Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\படர்மெலிந்திரங்கல் Golden 2026.wav",
+      "file_duration_sec": 349.96,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "படர்மெலிந்திரங்கல் Remix.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\படர்மெலிந்திரங்கல் Remix.wav",
+      "file_duration_sec": 274.0,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "படைமாட்சி 1K Golden Sad.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\படைமாட்சி 1K Golden Sad.wav",
+      "file_duration_sec": 283.2,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "படைமாட்சி 1L Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\படைமாட்சி 1L Golden 2026.wav",
+      "file_duration_sec": 283.87,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பண்புடைமை 1H Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பண்புடைமை 1H Golden.wav",
+      "file_duration_sec": 323.48,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பண்புடைமை 1L Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பண்புடைமை 1L Golden Pop.wav",
+      "file_duration_sec": 243.83,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பிரிவாற்றாமை (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பிரிவாற்றாமை (Remix).wav",
+      "file_duration_sec": 316.55,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பிரிவாற்றாமை Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பிரிவாற்றாமை Golden 2026.wav",
+      "file_duration_sec": 281.95,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புணர்ச்சிமகிழ்தல் 1G Golden Pop (1).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புணர்ச்சிமகிழ்தல் 1G Golden Pop (1).wav",
+      "file_duration_sec": 197.04,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புணர்ச்சிமகிழ்தல் 1G Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புணர்ச்சிமகிழ்தல் 1G Golden Pop.wav",
+      "file_duration_sec": 197.04,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புணர்ச்சிமகிழ்தல் 1H Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புணர்ச்சிமகிழ்தல் 1H Golden.wav",
+      "file_duration_sec": 147.2,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புணர்ச்சிவிதும்பல் 1 A Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புணர்ச்சிவிதும்பல் 1 A Golden 2026.wav",
+      "file_duration_sec": 232.24,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புணர்ச்சிவிதும்பல் 1 A Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புணர்ச்சிவிதும்பல் 1 A Golden.wav",
+      "file_duration_sec": 222.8,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புணர்ச்சிவிதும்பல் 1 B Golden Rock.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புணர்ச்சிவிதும்பல் 1 B Golden Rock.wav",
+      "file_duration_sec": 240.21,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புலவி 1I Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புலவி 1I Golden 2026.wav",
+      "file_duration_sec": 288.4,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புலவி 1J Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புலவி 1J Golden Pop.wav",
+      "file_duration_sec": 289.2,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புலவி நுணுக்கம் 1E Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புலவி நுணுக்கம் 1E Golden Pop.wav",
+      "file_duration_sec": 149.2,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புலவி நுணுக்கம் 1F Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புலவி நுணுக்கம் 1F Golden 2026.wav",
+      "file_duration_sec": 179.56,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புல்லறிவாண்மை 1U Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புல்லறிவாண்மை 1U Golden 2026.wav",
+      "file_duration_sec": 331.29,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "புல்லறிவாண்மை 1U Golden Pop 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\புல்லறிவாண்மை 1U Golden Pop 2026.wav",
+      "file_duration_sec": 349.57,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பெண்வழிச்சேறல் 1I Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பெண்வழிச்சேறல் 1I Golden Pop.wav",
+      "file_duration_sec": 299.93,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பெண்வழிச்சேறல் 1L Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பெண்வழிச்சேறல் 1L Golden 2026.wav",
+      "file_duration_sec": 279.9,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பெரியாரைப் பிழையாமை 1E Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பெரியாரைப் பிழையாமை 1E Golden.wav",
+      "file_duration_sec": 293.9,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பெரியாரைப் பிழையாமை 1G Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பெரியாரைப் பிழையாமை 1G Golden Pop.wav",
+      "file_duration_sec": 304.5,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பொருள்செயல்வகை 1O Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பொருள்செயல்வகை 1O Golden 2026.wav",
+      "file_duration_sec": 300.37,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பொருள்செயல்வகை 1R Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பொருள்செயல்வகை 1R Golden Pop.wav",
+      "file_duration_sec": 262.04,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பொழுதுகண்டிரங்கல் (Original).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பொழுதுகண்டிரங்கல் (Original).wav",
+      "file_duration_sec": 300.95,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "பொழுதுகண்டிரங்கல் (Remix).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\பொழுதுகண்டிரங்கல் (Remix).wav",
+      "file_duration_sec": 274.94,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "மருந்து 1I Golden (Female).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மருந்து 1I Golden (Female).wav",
+      "file_duration_sec": 324.42,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "மருந்து 1I Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மருந்து 1I Golden.wav",
+      "file_duration_sec": 301.06,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "மானம் 1H Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மானம் 1H Golden Pop.wav",
+      "file_duration_sec": 354.48,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "மானம் 1H Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\மானம் 1H Golden.wav",
+      "file_duration_sec": 380.48,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "வரைவின்மகளிர் 1G Golden Pop.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வரைவின்மகளிர் 1G Golden Pop.wav",
+      "file_duration_sec": 330.14,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "வரைவின்மகளிர் 1G Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வரைவின்மகளிர் 1G Golden.wav",
+      "file_duration_sec": 304.44,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "வெருவந்தசெய்யாமை 1G Golden.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வெருவந்தசெய்யாமை 1G Golden.wav",
+      "file_duration_sec": 327.8,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "வெருவந்தசெய்யாமை 1I Golden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வெருவந்தசெய்யாமை 1I Golden 2026.wav",
+      "file_duration_sec": 341.49,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "வெருவந்தசெய்யாமை 1I Golden Pop (Remastered).wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வெருவந்தசெய்யாமை 1I Golden Pop (Remastered).wav",
+      "file_duration_sec": 342.2,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    },
+    {
+      "file_name": "வெருவந்தசெய்யாமை GOlden 2026.wav",
+      "file_path": "C:\\Users\\Shishyan\\Downloads\\வெருவந்தசெய்யாமை GOlden 2026.wav",
+      "file_duration_sec": 333.64,
+      "action": "SAFE_TO_PRODUCE_NOVEL"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "status": "complete",
+  "title": "படைமாட்சி 1M Golden",
+  "play_count": 1,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "29b9ecdf-64fb-494e-b735-dea6738d431d",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/29b9ecdf-64fb-494e-b735-dea6738d431d.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/29b9ecdf-64fb-494e-b735-dea6738d431d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_e5b5d0c3-d388-4589-866d-01224aaaaade.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_e5b5d0c3-d388-4589-866d-01224aaaaade.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "",
+    "prompt": "[Chorus]\nகூற்றுடன்று மேல்வரினும் (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\nகூற்றுடன்று மேல்வரினும்  (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\n\n[Verse 1]\nஅழிவின்றி அறைபோகாதாகி (வழிவந்த)\nவன்கண் அதுவே படை\nஅழிவின்றி அறைபோகாதாகி (வழிவந்த)\nவன்கண் அதுவே படை\n\nஅடல்தகையும் ஆற்றலும் இல்லெனினும் (தானை)\nபடைத்தகையால் பாடு பெறும்\nஅடல்தகையும் ஆற்றலும் இல்லெனினும் (தானை)\nபடைத்தகையால் பாடு பெறும்\n\n[Chorus]\nகூற்றுடன்று மேல்வரினும் (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\nகூற்றுடன்று மேல்வரினும்  (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\n\n[Verse 1]\nஉறுப்பமைந்து ஊறஞ்சா வெல்படை (வேந்தன்)\nவெறுக்கையுள் எல்லாம் தலை\nசிறுமையும் செல்லாத் துனியும் (வறுமையும்)\nஇல்லாயின் வெல்லும் படை\n\nஉலைவிடத்து ஊறஞ்சா வன்கண் (தொலைவிடத்துத்)\nதொல்படைக் கல்லால் அரிது\nமறமானம் மாண்ட வழிச்செலவு (தேற்றம்)\nஎனநான்கே ஏமம் படைக்கு\n\n[Chorus]\nகூற்றுடன்று மேல்வரினும் (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\nகூற்றுடன்று மேல்வரினும்  (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\n\n[Bridge]\nஒலித்தக்கால் என்னாம் உவரி (எலிப்பகை)\nநாகம் உயிர்ப்பக் கெடும்\nநிலைமக்கள் சால உடைத்தெனினும் (தானை)\nதலைமக்கள் இல்வழி இல்\n\nதார்தாங்கிச் செல்வது தானை (தலைவந்த)\nபோர்தாங்கும் தன்மை அறிந்து\nதார்தாங்கிச் செல்வது தானை (தலைவந்த)\nபோர்தாங்கும் தன்மை அறிந்து\n\n[Chorus]\nகூற்றுடன்று மேல்வரினும் (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\nகூற்றுடன்று மேல்வரினும்  (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\n\nை\n\n[Bridge]\nஒலித்தக்கால் என்னாம் உவரி (எலிப்பகை)\nநாகம் உயிர்ப்பக் கெடும்\nநிலைமக்கள் சால உடைத்தெனினும் (தானை)\nதலைமக்கள் இல்வழி இல்\nதார்தாங்கிச் செல்வது தானை (தலைவந்த)\nபோர்தாங்கும் தன்மை அறிந்து\nதார்தாங்கிச் செல்வது தானை (தலைவந்த)\nபோர்தாங்கும் தன்மை அறிந்து\n\n[Chorus]\nகூற்றுடன்று மேல்வரினும் (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\nகூற்றுடன்று மேல்வரினும்  (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை",
+    "concat_history": [
+      {
+        "source_is_webview": false,
+        "infill": false,
+        "id": "00000000-0000-0000-0000-000000000000",
+        "source": "web",
+        "type": "gen",
+        "continue_at": 193.72
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000000"
+      }
+    ],
+    "type": "concat",
+    "duration": 266.4,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": true,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "FULL SONG",
+        "icon_key": "full_song",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-26T21:01:16.297Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

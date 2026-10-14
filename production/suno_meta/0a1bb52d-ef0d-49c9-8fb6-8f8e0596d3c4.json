@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "title": "சூது 1A Golden",
+  "play_count": 16,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "0a1bb52d-ef0d-49c9-8fb6-8f8e0596d3c4",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/0a1bb52d-ef0d-49c9-8fb6-8f8e0596d3c4.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/0a1bb52d-ef0d-49c9-8fb6-8f8e0596d3c4.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_0a1bb52d-ef0d-49c9-8fb6-8f8e0596d3c4.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_0a1bb52d-ef0d-49c9-8fb6-8f8e0596d3c4.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Classical world devotional music, measured unhurried phrasing, low male devotional baritone with calm sustained notes, close-miked piano resonance, restrained hand percussion in a gentle pulse, intimate and spacious mix.",
+    "prompt": "[Chorus]\nசிறுமை பலசெய்து சீரழிக்கும் (சூதின்)\nவறுமை தருவதொன்று இல்\nசிறுமை பலசெய்து சீரழிக்கும் (சூதின்)\nவறுமை தருவதொன்று இல்\n\n[Verse 1]\nஒன்றெய்தி நூறிழக்கும் சூதர்க்கும் (உண்டாங்கொல்)\nநன்றெய்தி வாழ்வதோர் ஆறு\nஒன்றெய்தி நூறிழக்கும் சூதர்க்கும் (உண்டாங்கொல்)\nநன்றெய்தி வாழ்வதோர் ஆறு\n\nவேண்டற்க வென்றிடினும் சூதினை (வென்றதூஉம்)\nதூண்டிற்பொன் மீன்விழுங்கி அற்று\nவேண்டற்க வென்றிடினும் சூதினை (வென்றதூஉம்)\nதூண்டிற்பொன் மீன்விழுங்கி அற்று\n\n[Chorus]\nசிறுமை பலசெய்து சீரழிக்கும் (சூதின்)\nவறுமை தருவதொன்று இல்\nசிறுமை பலசெய்து சீரழிக்கும் (சூதின்)\nவறுமை தருவதொன்று இல்\n\n[Verse 2]\nகவறும் கழகமும் கையும் (தருக்கி)\nஇவறியார் இல்லாகி யார்\nகவறும் கழகமும் கையும் (தருக்கி)\nஇவறியார் இல்லாகி யார்\n\nஅகடாரார் அல்லல் உழப்பர்சூது (என்னும்)\nமுகடியான் மூடப்பட் டார்\nபழகிய செல்வமும் பண்பும் (கெடுக்கும்)\nகழகத்துக் காலை புகின்\n\n[Chorus]\nசிறுமை பலசெய்து சீரழிக்கும் (சூதின்)\nவறுமை தருவதொன்று இல்\nசிறுமை பலசெய்து சீரழிக்கும் (சூதின்)\nவறுமை தருவதொன்று இல்\n\n[Verse 3]\nஉருளாயம் ஓவாது கூறின் (பொருளாயம்)\nபோஒய்ப் புறமே படும்\nஉடைசெல்வம் ஊண்ஒளி கல்விஎன்று (ஐந்தும்)\nஅடையாவாம் ஆயங் கொளின்\n\nபொருள்கெடுத்துப் பொய்மேற் கொளீஇ (அருள்கெடுத்து)\nஅல்லல் உழப்பிக்கும் சூது\nஇழத்தொறூஉம் காதலிக்கும் சூதேபோல் (துன்பம்)\nஉழத்தொறூஉம் காதற்று உயிர்\n\n[Chorus]\nசிறுமை பலசெய்து சீரழிக்கும் (சூதின்)\nவறுமை தருவதொன்று இல்\nசிறுமை பலசெய்து சீரழிக்கும் (சூதின்)\nவறுமை தருவதொன்று இல்",
+    "type": "gen",
+    "duration": 294.44,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "camcorder",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-30T05:39:31.507Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

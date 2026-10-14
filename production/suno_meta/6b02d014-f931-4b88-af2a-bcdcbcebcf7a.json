@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "title": "Recording (2)",
+  "play_count": 0,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "6b02d014-f931-4b88-af2a-bcdcbcebcf7a",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/6b02d014-f931-4b88-af2a-bcdcbcebcf7a.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_6b02d014-f931-4b88-af2a-bcdcbcebcf7a.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_6b02d014-f931-4b88-af2a-bcdcbcebcf7a.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "An a cappella folk song sung in Tamil by a solo male vocalist with an emotional delivery, with no instruments; devotional.",
+    "prompt": "[Verse 1]\nபொருளல்லவரை பொருளகச் செய்யும்\nபொருள் அல்லது இல்லை பொருள்\nபொருள் அல்லவரை பொருளகச் செய்யும்\nபொருள் அல்லது\nஇல்லை பொருள்\n\n[Verse 2]\nபொருள் என்னும் பொய்யா விளக்கம்\nஇருளறுக்கும்\nஎண்ணியதே எய்த்துச் சென்று\nபொருள் என்னும் பொய்யா விளக்கம்\nஇருளறுக்கும்\nஎண்ணியதே எய்த்துச் சென்று\n\n[Verse 3]\nஅறன்ஈனும் இன்பமும் ஈனும்\nதிறன் அறிந்து தீது இன்றி\nவந்த பொருள்\nஅறன்ஈனும் இன்பமும் ஈனும்\nதிறன் அறிந்து\nதீது இன்று\nவந்த பொருள்\n\n[Verse 4]\nஉருபொருளும் உல்குபொருளும் தன்ஒன்னார்\nதெறுபொருளும் வேந்தன் பொருள்\nஉருபொருளும் உல்குபொருளும் தன்ஒன்னார்\nதெறுபொருளும்\nவேந்தன் பொருள்\n\n[Verse 5]\nஅருளோடும் அன்போடும் வாராப் பொருள்ஆக்கம்\nபுல்லார் புரள விடல்\n\n[Verse 6]\nஇல்லாரை எல்லாரும் எள்ளுவர் செல்வரை\nஎல்லாரும் செய்வர் சிறப்பு\n\n[Verse 7]\nஅருள்என்னும் அன்பின் குழவி பொருள்என்னும்\nசெல்வச் செவிலியால் உண்டு\nகுன்றேறி யானைப்போர் கண்டற்றால் தன் கைதொன்று\nஉண்டாகச் செய்வான் வினை\n\n[Verse 8]\nசெய்க பொருளைச் செறுநர் செருக்கு அறுக்கும்\nஎஃகு அதனை\nகூரியதில்\nஒன்பொருள் காழ்ப்ப இயற்றியார்க்கு என் பொருள்\nஏனை இரண்டும் ஒருங்கு\n\n[Verse 9]\nஅறன் ஈனும்",
+    "type": "upload",
+    "duration": 234.32533333333333,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "UPLOAD",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-26T10:22:33.659Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "folk, devotional, male vocals, a cappella",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

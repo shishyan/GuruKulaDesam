@@ -1,0 +1,163 @@
+{
+  "status": "complete",
+  "title": "புணர்ச்சிமகிழ்தல் 1F Symphony",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "43ee183b-abf1-4fb2-bb26-62c0f21ce78d",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/43ee183b-abf1-4fb2-bb26-62c0f21ce78d.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/43ee183b-abf1-4fb2-bb26-62c0f21ce78d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_43ee183b-abf1-4fb2-bb26-62c0f21ce78d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_43ee183b-abf1-4fb2-bb26-62c0f21ce78d.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Classical Oratorio with continuo harpsichord and layered choral sections, male vocal in a resonant classical register with formal declamatory phrasing, measured stately pulse, clear orchestral balance and rich choral depth.",
+    "prompt": "[Chorus]\nஊடல் உணர்தல் புணர்தல் (இவைகாமம்)\nகூடியார் பெற்ற பயன்\nஊடல் உணர்தல் புணர்தல் (இவைகாமம்)\nகூடியார் பெற்ற பயன்\n\n[Verse 1]\nபிணிக்கு மருந்து பிற மன் (அணியிழை)\nதன்நோய்க்குத் தானே மருந்து\nபிணிக்கு மருந்து பிற மன் (அணியிழை)\nதன்நோய்க்குத் தானே மருந்து\n\nதாம்வீழ்வார் மென்றோள் துயிலின் (இனிதுகொல்)\nதாமரைக் கண்ணான் உலகு\nதாம்வீழ்வார் மென்றோள் துயிலின் (இனிதுகொல்)\nதாமரைக் கண்ணான் உலகு\n\n[Chorus]\nஊடல் உணர்தல் புணர்தல் (இவைகாமம்)\nகூடியார் பெற்ற பயன்\nஊடல் உணர்தல் புணர்தல் (இவைகாமம்)\nகூடியார் பெற்ற பயன்\n\n[Verse 2]\nநீங்கின் தெறூஉம் குறுகுங்கால் (தண்ணென்னும்)\nதீயாண்டுப் பெற்றாள் இவள்\nவேட்ட பொழுதின் அவையவை (போலுமே)\nதோட்டார் கதுப்பினாள் தோள்\n\nஅறிதோறு அறியாமை கண்டற்றால் (காமம்)\nசெறிதோறும் சேயிழை மாட்டு\nஉறுதோறு உயிர்தளிர்ப்பத் தீண்டலால் (பேதைக்கு)\nஅமிழ்தின் இயன்றன தோள்\n\n[Chorus]\nஊடல் உணர்தல் புணர்தல் (இவைகாமம்)\nகூடியார் பெற்ற பயன்\nஊடல் உணர்தல் புணர்தல் (இவைகாமம்)\nகூடியார் பெற்ற பயன்\n\n[Verse 3]\nகண்டுகேட்டு உண்டுயிர்த்து உற்றறியும் (ஐம்புலனும்)\nஒண்தொடி கண்ணே உள\nவீழும் இருவர்க்கு இனிதே (வளியிடை)\nபோழப் படாஅ முயக்கு\n\nதம்மில் இருந்து தமதுபாத்து (உண்டற்றால்)\nஅம் மாஅரி வை முயக்கு\nதம்மில் இருந்து தமதுபாத்து (உண்டற்றால்)\nஅம் மாஅரி வை முயக்கு\n\n[Chorus]\nஊடல் உணர்தல் புணர்தல் (இவைகாமம்)\nகூடியார் பெற்ற பயன்\nஊடல் உணர்தல் புணர்தல் (இவைகாமம்)\nகூடியார் பெற்ற பயன்",
+    "type": "gen",
+    "duration": 157.84,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "renaissance",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-04T14:14:01.938Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Classical, Oratorio",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

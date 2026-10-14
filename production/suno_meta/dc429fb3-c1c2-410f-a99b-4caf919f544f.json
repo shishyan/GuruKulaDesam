@@ -1,0 +1,176 @@
+{
+  "status": "complete",
+  "title": "பெரியாரைத் துணைக்கோடல் 1I Golden",
+  "play_count": 3,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "dc429fb3-c1c2-410f-a99b-4caf919f544f",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/dc429fb3-c1c2-410f-a99b-4caf919f544f.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_dc429fb3-c1c2-410f-a99b-4caf919f544f.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_dc429fb3-c1c2-410f-a99b-4caf919f544f.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "classical Carnatic traditional orchestra, temple-hall reverb with disciplined orchestral dynamics, mridangam-led percussion with veena and violin, layered brass and woodwind textures, resonant male classical projection with responsorial chorus, measured adi tala procession",
+    "prompt": "[Chorus]\nஅரியவற்றுள் எல்லாம் அரிதே (பெரியாரை)\nபேணித் தமராக் கொளல்\nஅரியவற்றுள் எல்லாம் அரிதே (பெரியாரை)\nபேணித் தமராக் கொளல்\n\n[Verse 1]\nஅறனறிந்து மூத்த அறிவுடையார் (கேண்மை)\nதிறனறிந்து தேர்ந்து கொளல்\nஅறனறிந்து மூத்த அறிவுடையார் (கேண்மை)\nதிறனறிந்து தேர்ந்து கொளல்\n\nமுதலிலார்க்கு ஊதியம் இல்லை (மதலையாம்)\nசார்பிலார்க்கு இல்லை நிலை\nமுதலிலார்க்கு ஊதியம் இல்லை (மதலையாம்)\nசார்பிலார்க்கு இல்லை நிலை\n\n[Chorus]\nஅரியவற்றுள் எல்லாம் அரிதே (பெரியாரை)\nபேணித் தமராக் கொளல்\nஅரியவற்றுள் எல்லாம் அரிதே (பெரியாரை)\nபேணித் தமராக் கொளல்\n\n[Verse 2]\nசூழ்வார் கண்ணாக ஒழுகலான் (மன்னவன்)\nசூழ்வாரைச் சூழ்ந்து கொளல்\nஇடிக்கும் துணையாரை ஆள்வரை (யாரே)\nகெடுக்கும் தகைமை அவர்\nஇடிப்பாரை இல்லாத ஏமரா (மன்னன்)\nகெடுப்பார் இலானும் கெடும்\nதம்மின் பெரியார் தமரா (ஒழுகுதல்)\nவன்மையுள் எல்லாம் தலை\n\n[Chorus]\nஅரியவற்றுள் எல்லாம் அரிதே (பெரியாரை)\nபேணித் தமராக் கொளல்\nஅரியவற்றுள் எல்லாம் அரிதே (பெரியாரை)\nபேணித் தமராக் கொளல்\n\n[Verse 3]\nதக்கார் இனத்தனாய் தானொழுக (வல்லானை)\nசெற்றார் செயக்கிடந்தது இல்\nஉற்றநோய் நீக்கி உறாஅமை (முற்காக்கும்)\nபெற்றியார் பேணிக் கொளல்\nபல்லார் பகைகொளலின் பத்தடுத்த (தீமைத்தே)\nநல்லார் தொடர்கை விடல்\n\n[Chorus]\nஅரியவற்றுள் எல்லாம் அரிதே (பெரியாரை)\nபேணித் தமராக் கொளல்\nஅரியவற்றுள் எல்லாம் அரிதே (பெரியாரை)\nபேணித் தமராக் கொளல்",
+    "type": "gen",
+    "duration": 224.8,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.54,
+      "aug_creativity": 1
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "film_strip",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-18T19:40:38.432Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "classical, Carnatic",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

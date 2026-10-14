@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "திரு சனி பகவான் துதி  2026",
+  "play_count": 1,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "da698fe9-2991-446f-9c3c-7dd63387c4e1",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/da698fe9-2991-446f-9c3c-7dd63387c4e1.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/da698fe9-2991-446f-9c3c-7dd63387c4e1.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_da698fe9-2991-446f-9c3c-7dd63387c4e1.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_da698fe9-2991-446f-9c3c-7dd63387c4e1.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "Carnatic, devotional, a cappella",
+    "negative_tags": "",
+    "prompt": "[Verse]\nசங்கடந்தீர்க்கும் சனி பகவானே\nமங்கலம் பொங்க மனம் வைத்தருள்வாய்\nசச்சரவின்றி சனீஸ்வரத் தேவே!\nஇச்சகம் வாழ இன்னருள் தாதா!\n\n[Verse]\nசங்கடந்தீர்க்கும் சனி பகவானே\nமங்கலம் பொங்க மனம் வைத்தருள்வாய்\nசச்சரவின்றி சனீஸ்வரத் தேவே!\nஇச்சகம் வாழ இன்னருள் தாதா!\nமா\nமுனிவர்கள் தேவர்கள் ஏழு மூர்த்திகள் முதலினோர்கள்\nமனிதர்கள் வாழ்வும் உன்றன் மகிமையது அல்லால் உண்டோ?\nகனிவுல தெய்வம் நீயே கதிர்சேயே காகம் ஏறும்\nசனியனே உனைத் துதிப்பேன் தமியனேற்கு அருள்செய்வாயே!\n\n[Chorus]\nபாகமார்த்தபைங் கண்வெள்ளேற்ற (அண்ணல் பரமேட்டி)\nஆகமார்த்த தோலுடையன் கோவண (ஆடையின்மேல்)\nபோகமார்த்த பூண்முலையாள் தன் (ஓடும் பொன்னகலம்)\nநாகமார்த்த நம்பெருமான் மேயது (நள்ளாறே)\nகோயிலும் கொண்டானும் (அந்தணன்)\nஆவொடு மாமறை யோர்களை (ஆன்நெய்யால்)\nவெந்தழல் ஓம்பிய வேதியர் பாவனை (வேந்தன் பால் வெந்திறல்)\nஞாயிறு திங்கள் செவ்வாய் (புதன் வியாழன் வெள்ளி)\nசனிகந்தருவன் இராவுக்கேதுவோடு (அவை தாம்)\nமிகவே வந்திடு நாள்கள் (அவாயவை நல்ல நல்ல)\nஅவை நல்ல நல்ல (அடியார் அவர்க்கு மிகவே)\n\n[Chorus]\nபாகமார்த்தபைங் கண்வெள்ளேற்ற (அண்ணல் பரமேட்டி)\nஆகமார்த்த தோலுடையன் கோவண (ஆடையின்மேல்)\nபோகமார்த்த பூண்முலையாள் தன் (ஓடும் பொன்னகலம்)\nநாகமார்த்த நம்பெருமான் மேயது (நள்ளாறே)",
+    "type": "studio_export",
+    "duration": 259.4794375,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "865dc0ff-6359-4242-ba29-d6f28fc86d87",
+    "studio_project_version_id": "595172c3-917d-4eab-a153-6cf312b673d2",
+    "studio_project_start_beats": 14.999929139856272,
+    "studio_project_end_beats": 322.0505726570019,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-07-30T06:15:12.253Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

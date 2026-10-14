@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": " திருவருட்பா - இரண்டாம் திருமுறை - நெஞ்சொடு நேர்தல் ",
+  "play_count": 0,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "b564f8ee-8594-48bd-b817-58c21bf0262b",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/b564f8ee-8594-48bd-b817-58c21bf0262b.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_b564f8ee-8594-48bd-b817-58c21bf0262b.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_b564f8ee-8594-48bd-b817-58c21bf0262b.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "Indian Classical, World Fusion, Ambient",
+    "negative_tags": "",
+    "prompt": "[Intro]\nநம்பு நெஞ்பு நெஞ்சம்சமே (நனே (நன்மை எய்மை எ்தயுமால்துமால்)\nஅம்)\nஅம்புயன்புயன் புகழ் புகழ் (அண் (அண்ணல் ஒ்ற்ணல் ஒறிறயூர்)\n\n்றியூர[Verse]\nநம்)\n\n[Verse]\nநம்பு நெஞ்சமே (நன்மை எய்துமால்)\nஅம்புயன் புகழ் (அண்ணல் ஒற்றியூர்)\nபம்பு சீர்ப்படம் (பக்கன் ஒன்னலார்)\nதம்புரஞ் சுடும் (தம்பிரானையே)\nே)\nஓஓடும் நெஞ்சமே (ஒன்று கேட்டிநீ)\nநீடும் ஒற்றியூர் (நிமலன் மூவர்கள்)\nபாடும் எம்படம் (பக்க நாதன்தாள்)\nநாடு நாடிவிடில் (நாடு நம்மதே)\n\n[Chorus]\nந[Chorus]ம்பு நெஞ்சமே (நன்மை எய்துமால்)\nஅம்புயன் புகழ் (அண்ணல் ஒற்றியூர்ப்)\nபம்பு சீர்ப்படம் (பக்கன் ஒன்னலார்)\nதம்புரஞ் சுடும் (தம்பிரானையே)\n\n[Verse]\nதம்பலம்பெறும் (தையலார்கணால்)\nஅம்பலத்தினில் (அமுதை ஒற்றியூர்)\nவெம்பலந்தரும் (வெய்ய நெஞ்சமே)\nசெம்பலத்தைநீ (சிந்தை செய்வையே)\nசெய்யும் வண்ணம்நீ (தேறி நெஞ்சமே)\nஉய்யும் வண்ணமாம் (ஒற்றியூர்க்குள[Verse]\nமே)\nமெய்யுமேல் வணை அந்ணம்த் (மகனாணிக்க வெற்பருள் (வெ்)\nபெய்யும் வய்ய ண்ணதமே (பூதுவெறருதல் வேண்்)\nஓலை காட்டுமுன் (ஒற்றியூரில்வாழ்)\nபாலை சேர்படம் (பக்க நாதர்தம்)\nகாலை நாடிநற் (கதியின் நிற்பையே)\nநிற்பதென்றுநீ (நீல நெஞ்சமே)\nஅற்ப மாதர்தம் (அவலம் நீங்கியே)\nசிற்பரன்திருத் (தில்லை அம்பலப்)\nபொற்பன் ஒற்றியில் (புகுந்து போற்றியே)\n\n[Chorus]\nநம்பு நெஞ்சமே (நன்மை எய்துமால்)\nஅம்புயன் புகழ் (அண்ணல் ஒற்றியூர்ப்)\nபம்பு சீர்ப்படம் (பக்கன் ஒன்னலார்)\nதம்புரஞ் சுடும் (தம்பிரானைய[Verse]\nமேலை அந்தகன் (வெய்ய தூதுவர்)\nஓலை காட்டுமுன் (ஒற்றியூரில்வாழ்)\nபாலை சேர்படம் (பக்க நாதர்தம்)\nகாலை நாடிநற் (கதியின் நிற்பையே)\nநிற்பதென்றுநீ (நீல நெஞ்சமே)\nஅற்ப மாதர்தம் (அவலம் நீங்கியே)\nசிற்பரன்திருத் (தில்லை அம்பலப்)\nபொற்பன் ஒற்றியில் (புகுந்து போற்றியே)\n\n[Chorus]\nநம்பு நெஞ்சமே (நன்மை எய்துமால்)\nஅம்புயன் புகழ் (அண்ணல் ஒற்றியூர்ப்)\nபம்பு சீர்ப்படம் (பக்கன் ஒன்னலார்)\nதம்புரஞ் சுடும் (தம்பிரானையே)\n\n[Verse]\nபோற்றி ஒற்றியூர்ப் (புண்ணியன்திரு)\nநீற்றினான்தனை (நினைந்து நிற்பையேல்)\nதோற்றரும்பரஞ் (சோதி நல்லருள்)\nஊற்றெழும்கடல் (ஒக்க நெஞ்சமே)\nபக்க நாதனைப் (பணிந்து வாழ்த்தினால்)\nஒக்க நெஞ்சமே (ஒற்றியூர்ப் படம்)\nமிக்க காமத்தின் (வெம்மையால் வரும்)\nதுக்கமியாவையும் (தூர ஓடுமே)\nதம்புரஞ் சுடும் (தம்பிரானையே)",
+    "type": "studio_export",
+    "duration": 478.6627916666667,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "78d2a3be-871f-41de-b6d9-3b077875eaa1",
+    "studio_project_version_id": "88515479-4083-4756-84e3-a67bccf10c4a",
+    "studio_project_start_beats": 23.820269015127,
+    "studio_project_end_beats": 685.9704471388429,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-07-28T19:48:36.695Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

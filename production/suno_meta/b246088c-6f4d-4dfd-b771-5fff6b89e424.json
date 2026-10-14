@@ -1,0 +1,154 @@
+{
+  "status": "complete",
+  "title": "திகட சக்கர 2026 Golden",
+  "play_count": 8,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "b246088c-6f4d-4dfd-b771-5fff6b89e424",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/b246088c-6f4d-4dfd-b771-5fff6b89e424.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/b246088c-6f4d-4dfd-b771-5fff6b89e424.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_b246088c-6f4d-4dfd-b771-5fff6b89e424.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_b246088c-6f4d-4dfd-b771-5fff6b89e424.jpeg",
+  "major_model_version": "v5.5",
+  "model_name": "chirp-fenix",
+  "metadata": {
+    "tags": "European Orchestra, Sitar, South Indian Classical Instruments",
+    "prompt": "[Verse]\nதிகட சக்கரச் செம்முக மைந்துளான்\nசகட சக்கரத் தாமரை நாயகன்\nஅகட சக்கர விண்மணி யாவுறை\nவிகட சக்கரன் மெய்ப்பதம் போற்றுவாம்\n\nஉச்சியின் மகுட மின்ன வொளிர்தர நுதலி னோடை\n     வச்சிர மருப்பி னொற்றை மணிகொள் கிம்புரி வயங்க\nமெய்ச்செவிக் கவரி தூங்க வேழமா முகங்கொண் டுற்ற\nகச்சியின் விகட சக்ர கணபதிக் கன்பு செய்வாம்\n\n[Chorus]\nமூவிரு முகங்கள் போற்றி \nமுகம்பொழி கருணை போற்றி\nஏவருந் துதிக்க நின்ற விராறுதோள் போற்றி \nகாஞ்சி மாவடி வைகுஞ் செவ்வேள் மலரடி போற்றி யன்னான்  சேவலு மயிலும் போற்றி \nதிருக்கைவேல் போற்றி போற்றி. .\n\n[Verse]\nஇந்திர ராகிப் பார்மே லின்பமுற் றினிது மேவி\nசிந்தையி னினைந்த முற்றிச் சிவகதி யதனிற் \nசேர்வர் அந்தமி லவுணர் தங்க ளடல்கெட முனிந்த செவ்வேற் கந்தவேள் புராணந் தன்னைக் காதலித் தோது வோரே\n\nவான்முகில் வழாது பெய்க மலிவளஞ் சுரக்க மன்னன்\nகோன்முறை யரசு செய்க குறைவிலா துயிர்கள் வாழ்க நான்மறை யறங்க ளோங்க நற்றவம் வேள்வி மல்க \nமேன்மைகொள் சைவ நீதி விளங்குக வுலக மெல்லாம். \n\n\n[Chorus]\nமூவிரு முகங்கள் போற்றி முகம்பொழி கருணை போற்றி\n     ஏவருந் துதிக்க நின்ற விராறுதோள் போற்றி காஞ்சி\n          மாவடி வைகுஞ் செவ்வேள் மலரடி போற்றி யன்னான்\n               சேவலு மயிலும் போற்றி திருக்கைவேல் போற்றி போற்றி. .\n",
+    "type": "gen",
+    "duration": 274.88,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V5.5",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      },
+      "songrow": {
+        "display_name": "V5.5",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-06-05T17:44:59.408Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

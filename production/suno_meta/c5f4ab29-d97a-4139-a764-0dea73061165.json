@@ -1,0 +1,190 @@
+{
+  "status": "complete",
+  "title": "செய்ந்நன்றி அறிதல் 1B Golden",
+  "play_count": 1,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "c5f4ab29-d97a-4139-a764-0dea73061165",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/c5f4ab29-d97a-4139-a764-0dea73061165.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/c5f4ab29-d97a-4139-a764-0dea73061165.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_c5f4ab29-d97a-4139-a764-0dea73061165.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_c5f4ab29-d97a-4139-a764-0dea73061165.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Orchestral devotional ballad, male baritone, restrained and resonant, widening into layered harmonies; production grows from near-silence to a full, spacious climax; piano, low strings, swelling violins, and measured timpani; slow, stately pulse.",
+    "prompt": "[Chorus]\nசெய்யாமல் செய்த உதவிக்கு  (வையகமும்)\nவானகமும் ஆற்றல் அரிது\nசெய்யாமல் செய்த உதவிக்கு  (வையகமும்)\nவானகமும் ஆற்றல் அரிது\n\n[Verse 1]\nநன்றி மறப்பது நன்றன்று  (நன்றல்லது)\nஅன்றே மறப்பது நன்று\nநன்றி மறப்பது நன்றன்று  (நன்றல்லது)\nஅன்றே மறப்பது நன்று\n\nகாலத்தினாற் செய்த நன்றி  (சிறிதெனினும்)\nஞாலத்தின் மாணப் பெரிது\nகாலத்தினாற் செய்த நன்றி  (சிறிதெனினும்)\nஞாலத்தின் மாணப் பெரிது\n\n[Chorus]\nசெய்யாமல் செய்த உதவிக்கு  (வையகமும்)\nவானகமும் ஆற்றல் அரிது\nசெய்யாமல் செய்த உதவிக்கு  (வையகமும்)\nவானகமும் ஆற்றல் அரிது\n\n[Verse 2]\nமறவற்க மாசற்றார் கேண்மை  (துறவற்க)\nதுன்பத்துள் துப்பாயார் நட்பு\nஎழுமை எழுபிறப்பும் உள்ளுவர்  (தங்கண்)\nவிழுமந் துடைத்தவர் நட்பு\n\nதினைத்துணை நன்றி செயினும்  (பனைத்துணையாக்)\nகொள்வர் பயன்தெரி வார்\nபயன்தூக்கார் செய்த உதவி  (நயன்தூக்கின்)\nநன்மை கடலின் பெரிது\n\n[Chorus]\nசெய்யாமல் செய்த உதவிக்கு  (வையகமும்)\nவானகமும் ஆற்றல் அரிது\nசெய்யாமல் செய்த உதவிக்கு  (வையகமும்)\nவானகமும் ஆற்றல் அரிது\n\n[Bridge]\nகொன்றன்ன இன்னா செயினும்  (அவர்செய்த)\nஒன்றுநன்று உள்ளக் கெடும்\nஎந்நன்றி கொன்றார்க்கும் உய்வுண்டாம்  (உய்வில்லை)\nசெய்ந்நன்றி கொன்ற மகற்கு\nஉதவி வரைத்தன்று உதவி  (உதவி)\nசெயப்பட்டார் சால்பின் வரைத்து\n\n[Chorus]\nசெய்யாமல் செய்த உதவிக்கு  (வையகமும்)\nவானகமும் ஆற்றல் அரிது\nசெய்யாமல் செய்த உதவிக்கு  (வையகமும்)\nவானகமும் ஆற்றல் அரிது",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 291.6,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "black_and_white_photograph",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-07T18:39:40.831Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "orchestral, devotional, ballad",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

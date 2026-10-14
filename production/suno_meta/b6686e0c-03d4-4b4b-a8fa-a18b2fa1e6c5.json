@@ -1,0 +1,188 @@
+{
+  "status": "complete",
+  "title": "மெய்யுணர்தல் ",
+  "play_count": 2,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "b6686e0c-03d4-4b4b-a8fa-a18b2fa1e6c5",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/b6686e0c-03d4-4b4b-a8fa-a18b2fa1e6c5.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_b6686e0c-03d4-4b4b-a8fa-a18b2fa1e6c5.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_b6686e0c-03d4-4b4b-a8fa-a18b2fa1e6c5.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "பக்தி, subtle natural room ambience, solo male vocal with devotional delivery, unaccompanied voice, slow meditative tempo feel, clear chorus-and-verse phrasing, intimate and reverent production",
+    "prompt": "[Chorus]\nஎப்பொருள் எத்தன்மைத் தாயினும் (அப்பொருள்)\nமெய்ப்பொருள் காண்பது அறிவு\nபிறப்பென்னும் பேதைமை நீங்கச் (சிறப்பென்னும்)\nசெம்பொருள் காண்பது அறிவு\n\n[Verse 1]\nபொருளல்ல வற்றைப் பொருளென்று (உணரும்)\nமருளானாம் மாணாப் பிறப்பு\nஇருள்நீங்கி இன்பம் பயக்கும் (மருள்நீங்கி)\nமாசறு காட்சி யவர்க்கு\n\n[Verse 2]\nஐயத்தின் நீங்கித் தெளிந்தார்க்கு (வையத்தின்)\nவானம் நணிய துடைத்து\nஐயுணர்வு எய்தியக் கண்ணும் (பயமின்றே)\nமெய்யுணர்வு இல்லா தவர்க்கு\n\n[Chorus]\nஎப்பொருள் எத்தன்மைத் தாயினும் (அப்பொருள்)\nமெய்ப்பொருள் காண்பது அறிவு\nபிறப்பென்னும் பேதைமை நீங்கச் (சிறப்பென்னும்)\nசெம்பொருள் காண்பது அறிவு\n\n[Verse 4]\nகற்றீண்டு மெய்ப்பொருள் கண்டார் (தலைப்படுவர்)\nமற்றீண்டு வாரா நெறி\nஓர்த்துள்ளம் உள்ளது உணரின் (ஒருதலையா)\nபேர்த்துள்ள வேண்டா பிறப்பு\n\nசார்புணர்ந்து சார்பு கெடஒழுகின் (மற்றழித்து)\nசார்தரா சார்தரு நோய்\nகாமம் வெகுளி மயக்கம் (இவைமூன்றன்)\nநாமம் கெடக்கெடும் நோய்",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 124.8,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "scribbles",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-11T11:24:36.135Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "devotional",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

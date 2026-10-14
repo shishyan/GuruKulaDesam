@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "title": "ஸுப்ரஹ்மண்ய பஞ்சரத்நம்",
+  "play_count": 1,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "74aac397-8f52-4d9b-bdc7-cf03aa82055d",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/74aac397-8f52-4d9b-bdc7-cf03aa82055d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_74aac397-8f52-4d9b-bdc7-cf03aa82055d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_74aac397-8f52-4d9b-bdc7-cf03aa82055d.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Devotional classical music, unhurried mid-tempo, one veena carrying the entire melodic arrangement with sustained plucked phrases and subtle ornamentation, serene female alto in a clear devotional delivery, restrained room ambience and warm analog saturation",
+    "prompt": "ஷடா³நநம் சந்த³நலேபிதாங்க³ம்\nமஹோரஸம் தி³வ்யமயூரவாஹநம் ।\nருத்³ரஸ்யஸூநும் ஸுரளோகநாத²ம்\nப்³ரஹ்மண்யதே³வம் ஶரணம் ப்ரபத்³யே ॥ 1 ॥\n\nஜாஜ்வல்யமாநம் ஸுரப்³ருந்த³வந்த்³யம்\nகுமாரதா⁴ராதட மந்தி³ரஸ்த²ம் ।\nகந்த³ர்பரூபம் கமநீயகா³த்ரம்\nப்³ரஹ்மண்யதே³வம் ஶரணம் ப்ரபத்³யே ॥ 2 ॥\n\nத்³விஷட்³பு⁴ஜம் த்³வாத³ஶதி³வ்யநேத்ரம்\nத்ரயீதநும் ஶூலமஸீ த³தா⁴நம் ।\nஶேஷாவதாரம் கமநீயரூபம்\nப்³ரஹ்மண்யதே³வம் ஶரணம் ப்ரபத்³யே ॥ 3 ॥\n\nஸுராரிகோ⁴ராஹவஶோப⁴மாநம்\nஸுரோத்தமம் ஶக்தித⁴ரம் குமாரம் ।\nஸுதா⁴ர ஶக்த்யாயுத⁴ ஶோபி⁴ஹஸ்தம்\nப்³ரஹ்மண்யதே³வம் ஶரணம் ப்ரபத்³யே ॥ 4 ॥\n\nஇஷ்டார்த²ஸித்³தி⁴ப்ரத³மீஶபுத்ரம்\nஇஷ்டாந்நத³ம் பூ⁴ஸுரகாமதே⁴நும் ।\nக³ங்கோ³த்³ப⁴வம் ஸர்வஜநாநுகூலம்\nப்³ரஹ்மண்யதே³வம் ஶரணம் ப்ரபத்³யே ॥ 5 ॥\n\nய꞉ ஶ்லோகபஞ்சகமித³ம் பட²தீஹ ப⁴க்த்யா\nப்³ரஹ்மண்யதே³வ விநிவேஶித மாநஸ꞉ ஸன் ।\nப்ராப்நோதி போ⁴க³மகி²லம் பு⁴வி யத்³யதி³ஷ்டம்\nஅந்தே ஸ க³ச்ச²தி முதா³ கு³ஹஸாம்யமேவ ॥ 6 ॥\n\nஇதி ஶ்ரீ ஸுப்³ரஹ்மண்ய பஞ்சரத்நம்",
+    "type": "gen",
+    "duration": 182.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 0,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "minimal_album_art",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-17T10:04:34.941Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "classical, devotional",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

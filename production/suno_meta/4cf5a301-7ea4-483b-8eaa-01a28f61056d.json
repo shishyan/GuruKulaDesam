@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "முருகர் வார வழிபாடு  Golden",
+  "play_count": 0,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "4cf5a301-7ea4-483b-8eaa-01a28f61056d",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/4cf5a301-7ea4-483b-8eaa-01a28f61056d.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/4cf5a301-7ea4-483b-8eaa-01a28f61056d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_4cf5a301-7ea4-483b-8eaa-01a28f61056d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_4cf5a301-7ea4-483b-8eaa-01a28f61056d.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "hymn, devotional, acoustic",
+    "negative_tags": "",
+    "prompt": "[Chorus]\nஉருவாய் அருவாய் (உளதாய் இலதாய்)\nமருவாய் மலராய் (மணியாய் ஒலியாய்)\nகருவாய் உயிராய் (கதியாய் விதியாய்)\nகுருவாய் வருவாய் (அருள்வாய் குகனே)\n\n[Verse]\nசெங்கதிரோன் வழிபாடும் (செகமகிழும் சீரலைவாய்)\nதங்குமிறை ஆறுமுக (சாமி எனைத்தாங்கு தினம்)\nஅங்கமதில் நோயணுகா (வண்ணம் அருள் suரந்து)\nசெங்கமலக் கழல்தந்து (ஞாயிறன்று காப்பாயே!)\nதிங்களணி சடையானும் (தேவர்களும் போற்றிசெய்யும்)\nதுங்கவடி வேல்கொண்ட (தோகைமயில் வாகனனே)\nமங்களமும் மன்மகிழும் (மாண்புகழும் தந்து எனைத்)\n திங்கட்கிழமை (திருவருளால் காப்பாயே!)\n\n[Chorus]\nஉருவாய் அருவாய் (உளதாய் இலதாய்)\nமருவாய் மலராய் (மணியாய் ஒலியாய்)\nகருவாய் உயிராய் (கதியாய் விதியாய்)\nகுருவாய் வருவாய் (அருள்வாய் குகனே)\nசிங்கார வேலா சிவசுப்ரமண்யனே(அவ்வினைகள்)\nயாவும் அகற்றிஅருள் தருவாய் (செவ்வாய்க்கிழமை)\nவந்தருள்வாய் சேயோனே (போற்றி!)\nமதவாரண முகத்தோன் பின்வந்த (கந்தா சிவயோக)\nபதவாழ்வு அருள்வாய் பரனே (அரனார் பாலகனே)\nஉதவாக்கரையாம் அடியேற்கு (உண்மைப் பொருளை உரைத்திட)\nபுதவாரமதில் வந்தருள்வாய் (பொருவில் திருவேரக போற்றி!)\n\n[Chorus]\nஉருவாய் அருவாய் (உளதாய் இலதாய்)\nமருவாய் மலராய் (மணியாய் ஒலியாய்)\nகருவாய் உயிராய் (கதியாய் விதியாய்)\nகுருவாய் வருவாய் (அருள்வாய் குகனே)\n\n[Verse]\nமயானம் உறையும் இறையான (மகேசன் பெற்ற ் இறையான (மகேசன் பெற்ற குகேசன் என)\nதியானப் பொருளாம் திருமுருகா (தேவே மாவேதிய போற்றி!)\nதயாளசீலா தணிகை முதல்தவர் (வாழ் குன்றுதொறும் வாழ்வாய்)\nவியாழக்கிழமை வந்தருள்வாய் (வேலா கோலாகலா போற்றி!)\nஅள்ளி வழங்கும் ஆறுமுகத் தரசே (விரைசேர் கடம்பணிந்த)\nவள்ளிக் கணவா வடிவேலா (வரதச் சரதப் பெருவாழ்வே)\nவெள்ளிமலை நேர்வியன் ஞான (மேவு பழமுதிர் சோலையனே)\nவெள்ளிக்கிழமை வந்தருள்வாய் (வேதப் பொருளே போற்றி!)\nமந்தன் சனியின் மயக்கமெல்லாம் (தீர்த்து எனை)\nசொந்தமாய் ஆட்கொண்ட (சுப்ரமண்யப் பேரரசே)\nசிந்தை மகிழச் சனிக்கிழமை (வந்தருள்வாய்)\nகந்தா கதிர்வேலா (கார்வண்ணன் மருகா போற்றி!)\n\n[Chorus]\nஉருவாய் அருவாய் (உளதாய் இலதாய்)\nமருவாய் மலராய் (மணியாய் ஒலியாய்)\nகருவாய் உயிராய் (கதியாய் விதியாய்)\nகுருவாய் வருவாய் (அருள்வாய் குகனே)",
+    "type": "studio_export",
+    "duration": 406.46577083333335,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "1b798a64-9691-433c-a1a7-d79f4133dc2a",
+    "studio_project_version_id": "ceb473c7-aeed-42fb-b613-ee1e21fd6f9f",
+    "studio_project_start_beats": 13.540176996206903,
+    "studio_project_end_beats": 900.9904160154862,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-16T17:45:35.678Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

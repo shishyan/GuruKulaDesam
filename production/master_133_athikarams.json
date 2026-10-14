@@ -1,0 +1,800 @@
+{
+  "1": {
+    "number": 1,
+    "name": "கடவுள் வாழ்த்து",
+    "translit": "",
+    "translation": ""
+  },
+  "2": {
+    "number": 2,
+    "name": "வான் சிறப்பு",
+    "translit": "",
+    "translation": ""
+  },
+  "3": {
+    "number": 3,
+    "name": "நீத்தார் பெருமை",
+    "translit": "",
+    "translation": ""
+  },
+  "4": {
+    "number": 4,
+    "name": "அறன் வலியுறுத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "5": {
+    "number": 5,
+    "name": "இல்வாழ்க்கை",
+    "translit": "",
+    "translation": ""
+  },
+  "6": {
+    "number": 6,
+    "name": "வாழ்க்கைத் துணைநலம்",
+    "translit": "",
+    "translation": ""
+  },
+  "7": {
+    "number": 7,
+    "name": "புதல்வரைப் பெறுதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "8": {
+    "number": 8,
+    "name": "அன்புடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "9": {
+    "number": 9,
+    "name": "விருந்தோம்பல்",
+    "translit": "",
+    "translation": ""
+  },
+  "10": {
+    "number": 10,
+    "name": "இனியவை கூறல்",
+    "translit": "",
+    "translation": ""
+  },
+  "11": {
+    "number": 11,
+    "name": "செய்ந்நன்றி அறிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "12": {
+    "number": 12,
+    "name": "நடுவுநிலைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "13": {
+    "number": 13,
+    "name": "அடக்கமுடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "14": {
+    "number": 14,
+    "name": "ஒழுக்கமுடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "15": {
+    "number": 15,
+    "name": "பிறனில் விழையாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "16": {
+    "number": 16,
+    "name": "பொறையுடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "17": {
+    "number": 17,
+    "name": "அழுக்காறாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "18": {
+    "number": 18,
+    "name": "வெஃகாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "19": {
+    "number": 19,
+    "name": "புறங்கூறாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "20": {
+    "number": 20,
+    "name": "பயனில சொல்லாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "21": {
+    "number": 21,
+    "name": "தீவினையச்சம்",
+    "translit": "",
+    "translation": ""
+  },
+  "22": {
+    "number": 22,
+    "name": "ஒப்புரவறிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "23": {
+    "number": 23,
+    "name": "ஈகை",
+    "translit": "",
+    "translation": ""
+  },
+  "24": {
+    "number": 24,
+    "name": "புகழ்",
+    "translit": "",
+    "translation": ""
+  },
+  "25": {
+    "number": 25,
+    "name": "அருளுடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "26": {
+    "number": 26,
+    "name": "புலால் உண்ணாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "27": {
+    "number": 27,
+    "name": "தவம்",
+    "translit": "",
+    "translation": ""
+  },
+  "28": {
+    "number": 28,
+    "name": "கூடா ஒழுக்கம்",
+    "translit": "",
+    "translation": ""
+  },
+  "29": {
+    "number": 29,
+    "name": "கள்ளாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "30": {
+    "number": 30,
+    "name": "வாய்மை",
+    "translit": "",
+    "translation": ""
+  },
+  "31": {
+    "number": 31,
+    "name": "வெகுளாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "32": {
+    "number": 32,
+    "name": "இன்னா செய்யாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "33": {
+    "number": 33,
+    "name": "கொல்லாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "34": {
+    "number": 34,
+    "name": "நிலையாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "35": {
+    "number": 35,
+    "name": "துறவு",
+    "translit": "",
+    "translation": ""
+  },
+  "36": {
+    "number": 36,
+    "name": "மெய்யுணர்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "37": {
+    "number": 37,
+    "name": "அவாவறுத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "38": {
+    "number": 38,
+    "name": "ஊழ்",
+    "translit": "",
+    "translation": ""
+  },
+  "39": {
+    "number": 39,
+    "name": "இறைமாட்சி",
+    "translit": "",
+    "translation": ""
+  },
+  "40": {
+    "number": 40,
+    "name": "கல்வி",
+    "translit": "",
+    "translation": ""
+  },
+  "41": {
+    "number": 41,
+    "name": "கல்லாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "42": {
+    "number": 42,
+    "name": "கேள்வி",
+    "translit": "",
+    "translation": ""
+  },
+  "43": {
+    "number": 43,
+    "name": "அறிவுடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "44": {
+    "number": 44,
+    "name": "குற்றங்கடிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "45": {
+    "number": 45,
+    "name": "பெரியாரைத் துணைக்கோடல்",
+    "translit": "",
+    "translation": ""
+  },
+  "46": {
+    "number": 46,
+    "name": "சிற்றினம் சேராமை",
+    "translit": "",
+    "translation": ""
+  },
+  "47": {
+    "number": 47,
+    "name": "தெரிந்து செயல்வகை",
+    "translit": "",
+    "translation": ""
+  },
+  "48": {
+    "number": 48,
+    "name": "வலியறிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "49": {
+    "number": 49,
+    "name": "காலமறிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "50": {
+    "number": 50,
+    "name": "இடனறிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "51": {
+    "number": 51,
+    "name": "தெரிந்து தெளிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "52": {
+    "number": 52,
+    "name": "தெரிந்து வினையாடல்",
+    "translit": "",
+    "translation": ""
+  },
+  "53": {
+    "number": 53,
+    "name": "சுற்றந்தழால்",
+    "translit": "",
+    "translation": ""
+  },
+  "54": {
+    "number": 54,
+    "name": "பொச்சாவாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "55": {
+    "number": 55,
+    "name": "செங்கோன்மை",
+    "translit": "",
+    "translation": ""
+  },
+  "56": {
+    "number": 56,
+    "name": "கொடுங்கோன்மை",
+    "translit": "",
+    "translation": ""
+  },
+  "57": {
+    "number": 57,
+    "name": "வெருவந்த செய்யாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "58": {
+    "number": 58,
+    "name": "கண்ணோட்டம்",
+    "translit": "",
+    "translation": ""
+  },
+  "59": {
+    "number": 59,
+    "name": "ஒற்றாடல்",
+    "translit": "",
+    "translation": ""
+  },
+  "60": {
+    "number": 60,
+    "name": "ஊக்கமுடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "61": {
+    "number": 61,
+    "name": "மடியின்மை",
+    "translit": "",
+    "translation": ""
+  },
+  "62": {
+    "number": 62,
+    "name": "ஆள்வினையுடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "63": {
+    "number": 63,
+    "name": "இடுக்கண் அழியாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "64": {
+    "number": 64,
+    "name": "அமைச்சு",
+    "translit": "",
+    "translation": ""
+  },
+  "65": {
+    "number": 65,
+    "name": "சொல்வன்மை",
+    "translit": "",
+    "translation": ""
+  },
+  "66": {
+    "number": 66,
+    "name": "வினைத்தூய்மை",
+    "translit": "",
+    "translation": ""
+  },
+  "67": {
+    "number": 67,
+    "name": "வினைத்திட்பம்",
+    "translit": "",
+    "translation": ""
+  },
+  "68": {
+    "number": 68,
+    "name": "வினைசெயல்வகை",
+    "translit": "",
+    "translation": ""
+  },
+  "69": {
+    "number": 69,
+    "name": "தூது",
+    "translit": "",
+    "translation": ""
+  },
+  "70": {
+    "number": 70,
+    "name": "மன்னரைச் சேர்ந்தொழுதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "71": {
+    "number": 71,
+    "name": "குறிப்பறிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "72": {
+    "number": 72,
+    "name": "அவையறிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "73": {
+    "number": 73,
+    "name": "அவையஞ்சாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "74": {
+    "number": 74,
+    "name": "நாடு",
+    "translit": "",
+    "translation": ""
+  },
+  "75": {
+    "number": 75,
+    "name": "அரண்",
+    "translit": "",
+    "translation": ""
+  },
+  "76": {
+    "number": 76,
+    "name": "பொருள் செயல்வகை",
+    "translit": "",
+    "translation": ""
+  },
+  "77": {
+    "number": 77,
+    "name": "படைமாட்சி",
+    "translit": "",
+    "translation": ""
+  },
+  "78": {
+    "number": 78,
+    "name": "படைச்செருக்கு",
+    "translit": "",
+    "translation": ""
+  },
+  "79": {
+    "number": 79,
+    "name": "நட்பு",
+    "translit": "",
+    "translation": ""
+  },
+  "80": {
+    "number": 80,
+    "name": "நட்பாராய்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "81": {
+    "number": 81,
+    "name": "பழைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "82": {
+    "number": 82,
+    "name": "தீ நட்பு",
+    "translit": "",
+    "translation": ""
+  },
+  "83": {
+    "number": 83,
+    "name": "கூடா நட்பு",
+    "translit": "",
+    "translation": ""
+  },
+  "84": {
+    "number": 84,
+    "name": "பேதைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "85": {
+    "number": 85,
+    "name": "புல்லறிவாண்மை",
+    "translit": "",
+    "translation": ""
+  },
+  "86": {
+    "number": 86,
+    "name": "இகல்",
+    "translit": "",
+    "translation": ""
+  },
+  "87": {
+    "number": 87,
+    "name": "பகைமாட்சி",
+    "translit": "",
+    "translation": ""
+  },
+  "88": {
+    "number": 88,
+    "name": "பகைத்திறந்தெரிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "89": {
+    "number": 89,
+    "name": "உட்பகை",
+    "translit": "",
+    "translation": ""
+  },
+  "90": {
+    "number": 90,
+    "name": "பெரியாரைப் பிழையாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "91": {
+    "number": 91,
+    "name": "பெண்வழிச் சேறல்",
+    "translit": "",
+    "translation": ""
+  },
+  "92": {
+    "number": 92,
+    "name": "வரைவின் மகளிர்",
+    "translit": "",
+    "translation": ""
+  },
+  "93": {
+    "number": 93,
+    "name": "கள்ளுண்ணாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "94": {
+    "number": 94,
+    "name": "சூது",
+    "translit": "",
+    "translation": ""
+  },
+  "95": {
+    "number": 95,
+    "name": "மருந்து",
+    "translit": "",
+    "translation": ""
+  },
+  "96": {
+    "number": 96,
+    "name": "குடிமை",
+    "translit": "",
+    "translation": ""
+  },
+  "97": {
+    "number": 97,
+    "name": "மானம்",
+    "translit": "",
+    "translation": ""
+  },
+  "98": {
+    "number": 98,
+    "name": "பெருமை",
+    "translit": "",
+    "translation": ""
+  },
+  "99": {
+    "number": 99,
+    "name": "சான்றாண்மை",
+    "translit": "",
+    "translation": ""
+  },
+  "100": {
+    "number": 100,
+    "name": "பண்புடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "101": {
+    "number": 101,
+    "name": "நன்றியில் செல்வம்",
+    "translit": "",
+    "translation": ""
+  },
+  "102": {
+    "number": 102,
+    "name": "நாணுடைமை",
+    "translit": "",
+    "translation": ""
+  },
+  "103": {
+    "number": 103,
+    "name": "குடிசெயல்வகை",
+    "translit": "",
+    "translation": ""
+  },
+  "104": {
+    "number": 104,
+    "name": "உழவு",
+    "translit": "",
+    "translation": ""
+  },
+  "105": {
+    "number": 105,
+    "name": "நல்குரவு",
+    "translit": "",
+    "translation": ""
+  },
+  "106": {
+    "number": 106,
+    "name": "இரவு",
+    "translit": "",
+    "translation": ""
+  },
+  "107": {
+    "number": 107,
+    "name": "இரவச்சம்",
+    "translit": "",
+    "translation": ""
+  },
+  "108": {
+    "number": 108,
+    "name": "கயமை",
+    "translit": "",
+    "translation": ""
+  },
+  "109": {
+    "number": 109,
+    "name": "தகையணங்குறுத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "110": {
+    "number": 110,
+    "name": "குறிப்பறிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "111": {
+    "number": 111,
+    "name": "புணர்ச்சி மகிழ்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "112": {
+    "number": 112,
+    "name": "நலம் புனைந்துரைத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "113": {
+    "number": 113,
+    "name": "காதற்சிறப்புரைத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "114": {
+    "number": 114,
+    "name": "நாணுத்துறவுரைத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "115": {
+    "number": 115,
+    "name": "அலரறிவுறுத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "116": {
+    "number": 116,
+    "name": "பிரிவாற்றாமை",
+    "translit": "",
+    "translation": ""
+  },
+  "117": {
+    "number": 117,
+    "name": "படர்மெலிந்திரங்கல்",
+    "translit": "",
+    "translation": ""
+  },
+  "118": {
+    "number": 118,
+    "name": "கண்விதுப்பழிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "119": {
+    "number": 119,
+    "name": "பசப்புறு பருவரல்",
+    "translit": "",
+    "translation": ""
+  },
+  "120": {
+    "number": 120,
+    "name": "தனிப்படர் மிகுதி",
+    "translit": "",
+    "translation": ""
+  },
+  "121": {
+    "number": 121,
+    "name": "நினைந்தவர் புலம்பல்",
+    "translit": "",
+    "translation": ""
+  },
+  "122": {
+    "number": 122,
+    "name": "கனவுநிலை உரைத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "123": {
+    "number": 123,
+    "name": "பொழுதுகண்டு இரங்கல்",
+    "translit": "",
+    "translation": ""
+  },
+  "124": {
+    "number": 124,
+    "name": "உறுப்புநலன் அழிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "125": {
+    "number": 125,
+    "name": "நெஞ்சறிவுறுத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "126": {
+    "number": 126,
+    "name": "நிறையழிதல்",
+    "translit": "",
+    "translation": ""
+  },
+  "127": {
+    "number": 127,
+    "name": "அவர்வயின் விதும்பல்",
+    "translit": "",
+    "translation": ""
+  },
+  "128": {
+    "number": 128,
+    "name": "குறிப்பறிவுறுத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "129": {
+    "number": 129,
+    "name": "புணர்ச்சி விதும்பல்",
+    "translit": "",
+    "translation": ""
+  },
+  "130": {
+    "number": 130,
+    "name": "நெஞ்சொடு புலத்தல்",
+    "translit": "",
+    "translation": ""
+  },
+  "131": {
+    "number": 131,
+    "name": "புலவி",
+    "translit": "",
+    "translation": ""
+  },
+  "132": {
+    "number": 132,
+    "name": "புலவி நுணுக்கம்",
+    "translit": "",
+    "translation": ""
+  },
+  "133": {
+    "number": 133,
+    "name": "ஊடலுவகை",
+    "translit": "",
+    "translation": ""
+  }
+}

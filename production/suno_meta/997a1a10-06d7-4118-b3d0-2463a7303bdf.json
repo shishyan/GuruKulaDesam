@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "title": "கூறாமை நோக்கிக் குறிப்பறிவான்",
+  "play_count": 1,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "997a1a10-06d7-4118-b3d0-2463a7303bdf",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/997a1a10-06d7-4118-b3d0-2463a7303bdf.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_997a1a10-06d7-4118-b3d0-2463a7303bdf.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_997a1a10-06d7-4118-b3d0-2463a7303bdf.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "South Indian production with analog tape saturation, androgynous alto vocals in restrained Tamil phrases, layered temple drums and mridangam carrying a slow, steady pulse, spacious warm mix with subtle room ambience",
+    "prompt": "[Chorus]\nகூறாமை நோக்கிக் குறிப்பறிவான் (எஞ்ஞான்றும்)\nமாறாநீர் வையக் கணி\nகூறாமை நோக்கிக் குறிப்பறிவான் (எஞ்ஞான்றும்)\nமாறாநீர் வையக் கணி\n\n[Verse 1]\nஐயப் படாஅது அகத்தது (உணர்வானைத்)\nதெய்வத்தோ டொப்பக் கொளல்\nஐயப் படாஅது அகத்தது (உணர்வானைத்)\nதெய்வத்தோ டொப்பக் கொளல்\n\nகுறிப்பிற் குறிப்புணர் வாரை (உறுப்பினுள்)\nயாது கொடுத்தும் கொளல்\nகுறித்தது கூறாமைக் கொள்வாரோ (டேனை)\nஉறுப்போ ரனையரால் வேறு\n\n[Chorus]\nகூறாமை நோக்கிக் குறிப்பறிவான் (எஞ்ஞான்றும்)\nமாறாநீர் வையக் கணி\nகூறாமை நோக்கிக் குறிப்பறிவான் (எஞ்ஞான்றும்)\nமாறாநீர் வையக் கணி\n\n[Verse 3]\nகுறிப்பிற் குறிப்புணரா வாயின் (உறுப்பினுள்)\nஎன்ன பயத்தவோ கண்\nஅடுத்தது காட்டும் பளிங்குபோல் (நெஞ்சம்)\nகடுத்தது காட்டும் முகம்\n\nமுகத்தின் முதுக்குறைந்தது உண்டோ (உவப்பினும்)\nகாயினும் தான்முந் துறும்\nமுகம்நோக்கி நிற்க அமையும் (அகம்நோக்கி)\nஉற்ற துணர்வார்ப் பெறின்\n\nபகைமையும் கேண்மையும் கண்ணுரைக்கும் (கண்ணின்)\nவகைமை உணர்வார்ப் பெறின்\nநுண்ணியம் என்பார் அளக்குங்கோல் (காணுங்கால்)\nகண்ணல்லது இல்லை பிற\n\n[Chorus]\nகூறாமை நோக்கிக் குறிப்பறிவான் (எஞ்ஞான்றும்)\nமாறாநீர் வையக் கணி\nகூறாமை நோக்கிக் குறிப்பறிவான் (எஞ்ஞான்றும்)\nமாறாநீர் வையக் கணி",
+    "type": "gen",
+    "duration": 197.56,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "airbrush",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-23T18:19:46.162Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "South Indian, devotional, acoustic",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

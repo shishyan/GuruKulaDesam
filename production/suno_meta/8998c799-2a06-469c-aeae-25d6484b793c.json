@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "title": "Recording (13)",
+  "play_count": 1,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "8998c799-2a06-469c-aeae-25d6484b793c",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/8998c799-2a06-469c-aeae-25d6484b793c.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_8998c799-2a06-469c-aeae-25d6484b793c.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_8998c799-2a06-469c-aeae-25d6484b793c.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "A devotional a cappella song sung in Tamil by a solo male vocalist, with no instruments; devotional.",
+    "prompt": "[Verse 1]\nஉன்னாமை வேண்டும்\nபுளால் பிரிதொன்றென்\nபுன்னது உணர்வார்\nபெறின்\nஉன்னாமை வேண்டும்\nபுளால் பிரிதொன்றென்\nபுன்னது உணர்வார்\nபெறின்\n\n[Verse 2]\nஅருளல்லது யாதெனில்\nகொல்லாமை கோறல்\nபொருளல்லது அவ்வோந்தினல்\nபொருளாட்சி போற்றாதார்க்கு இல்லை\nஅருளாட்சி ஆங்கு இல்லை\nஊண் தின்பவர்க்கு\n\n[Verse 3]\nஉன்னாமை வேண்டும்\nபுளால் பிரிதொன்றென்\nபுன்னது உணர்வார்\nபெறின்\nஉன்னாமை உள்ளது\nஉயிர் நிலை ஊனுண்ண\nஅண்ணாத்தல் செய்யாது அலற\n\n[Verse 4]\nபடை கொண்டான் நெஞ்சம் போல்\nநன்று ஊக்காது\nஒன்றன் உடல்\nசுவை உண்டார் மனம்\nதன் ஊன் பெருக்கற்கு\nதான் பிரிது ஊன் உண்பான்\nஎங்கனம் ஆளும் அருள்\n\n[Verse 5]\nதினர் பொருட்டால்\nகொல்லாது உலகு எனின்\nயாரும் விலை பொருட்டால்\nஊண் தருவாரில்\nசெயிரின் தலைப் பிரிந்த\nகாட்சியார் உண்ணார்\nஉயிரின் தலைப் பிரிந்த ஊண்\n\n[Verse 6]\nஅவி சொரிந்து ஆயிரம்\nவேட்டலின் ஒன்றன்\nஉயிர் செகுத்து உண்ணமை\nநன்று\nகொல்லான் புலாலை\nமறுத்தாரைக் கைகூப்பி\nஎல்லா உயிரும் தொழும்",
+    "type": "upload",
+    "duration": 197.056,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "UPLOAD",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-13T05:02:28.135Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "devotional, devotional, male vocals, a cappella",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

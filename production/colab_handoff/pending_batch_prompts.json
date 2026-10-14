@@ -5,6 +5,7 @@
       "track_id": "--4jzoezBW8",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 67 - வினைத்திட்பம் (Original)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -27,6 +28,7 @@
       "track_id": "-7ppYdnUdVk",
       "category": "vallalar_cultural",
       "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -49,6 +51,7 @@
       "track_id": "-9bZmHzYO2g",
       "category": "vallalar_cultural",
       "title": "திருவருட்பா: அபராத விண்ணப்பம் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -71,6 +74,7 @@
       "track_id": "-CsF4lE2UfA",
       "category": "vallalar_cultural",
       "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -93,6 +97,7 @@
       "track_id": "-Gd2dy_L98c",
       "category": "vallalar_cultural",
       "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -115,6 +120,7 @@
       "track_id": "-L3VXkM2MTY",
       "category": "murugan",
       "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II",
+      "total_scenes": 10,
       "scenes": [
         {
           "scene_num": 1,
@@ -130,6 +136,41 @@
           "scene_num": 3,
           "prompt": "Create a single continuous 16:9 cinematic macro shot at 24 fps. An ancient carved brass puja thali overflowing with sacred Kadamba flowers, vibrant red ixora, and fragrant green marukozhundhu. The gentle hands of an authentic Tamil Vedic priest adorned with Tripundra Vibhuti and Rudraksha beads reverently shower fresh blossoms at the lotus feet of the bronze vigraha of Lord Muruga. Floating flower petals, glowing oil wicks. *Exclusions:* No cartoon effects, no modern clothing, no text.",
           "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No cartoon effects, no modern clothing, no text."
+        },
+        {
+          "scene_num": 4,
+          "prompt": "Create a single continuous 16:9 cinematic medium close-up shot at 24 fps. The jewel-encrusted Navaratna golden crown and ruby chest ornament of Lord Murugan glistening under the warm, dancing sacred flames of a multi-tiered camphor Harathi lamp. Golden reflections ripple across the divine serene visage and deep compassionate eyes of the deity in the sanctum. Sublime spiritual intimacy. *Exclusions:* No digital artifacts, no strobe lighting, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No digital artifacts, no strobe lighting, no text."
+        },
+        {
+          "scene_num": 5,
+          "prompt": "Create a single continuous 16:9 cinematic wide tracking shot at 24 fps. A majestic wild peacock with iridescent sapphire-blue and emerald plumage rests peacefully on a carved granite balustrade overlooking a breathtaking lush green Tamil mountain valley at golden morning. Flocks of green parrots soar across the amber sky as golden sunbeams illuminate ancient temple towers in the background. *Exclusions:* No rapid camera shake, no modern structures, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No rapid camera shake, no modern structures, no text."
+        },
+        {
+          "scene_num": 6,
+          "prompt": "Create a single continuous 16:9 cinematic slow upward crane shot at 24 fps along the ancient thousand-step monolithic stone staircase of a sacred hill temple. Tamil devotees in traditional unstitched saffron veshtis carry ornate wooden Kavadis adorned with peacock feathers and brass bells. Their faces reflect deep devotional surrender and inner peace as they ascend toward the summit sanctum. *Exclusions:* No modern footwear, no sunglasses, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern footwear, no sunglasses, no text."
+        },
+        {
+          "scene_num": 7,
+          "prompt": "Create a single continuous 16:9 cinematic medium shot at 24 fps beneath the sacred spreading canopy of an ancient Kadamba tree on the hill of Swamimalai. The youthful Lord Murugan as Swaminatha Guru, clad in silk pitambara with hand held in Jnana Mudra, whispers the sacred Pranava Mantra 'OM' into the ear of Lord Shiva who listens in profound reverence. Divine warm golden aura, celestial stillness, timeless spiritual majesty. *Exclusions:* No western clothing, no text, no modern artifacts.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No western clothing, no text, no modern artifacts."
+        },
+        {
+          "scene_num": 8,
+          "prompt": "Create a single continuous 16:9 cinematic intimate shot at 24 fps. In a quiet, stone-pillared temple mandapam bathed in soft amber candlelight, Saint Arunagirinathar sits in Padmasana with hands folded in Anjali Mudra. Tears of supreme devotion and bliss glisten on his cheeks, his forehead marked with holy white Vibhuti, as he looks upon the glowing sanctum of Lord Murugan with total spiritual absorption. *Exclusions:* No modern glasses, no text, no artificial lighting.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern glasses, no text, no artificial lighting."
+        },
+        {
+          "scene_num": 9,
+          "prompt": "Create a single continuous 16:9 cinematic slow tilt shot at 24 fps. Saint Arunagirinathar sits in deep breathless Samadhi meditation on the temple summit as dusk transitions into a serene, starry night sky. The divine Vel stands beside him, glowing with a soft, steady golden luminescence. The cosmic expanse of stars mirrors the non-dual silence (Mouna Anubhuti) of the liberated soul. *Exclusions:* No sudden motions, no satellites, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No sudden motions, no satellites, no text."
+        },
+        {
+          "scene_num": 10,
+          "prompt": "Create a single continuous 16:9 cinematic sweeping crane shot at 24 fps. The magnificent golden Vel stands victorious atop the granite hill shrine, illuminated by the radiant rays of the rising morning sun. Silken red and gold flags bearing the sacred rooster emblem (Seval Kodi) flutter gracefully in the mountain wind as a celestial shower of fragrant jasmine petals falls through the golden light. Supreme spiritual victory. *Exclusions:* No modern items, no digital glitch, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern items, no digital glitch, no text."
         }
       ]
     },
@@ -137,6 +178,7 @@
       "track_id": "-ZkM45zylxs",
       "category": "vallalar_cultural",
       "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -159,6 +201,7 @@
       "track_id": "-bqKXZW8vFk",
       "category": "shiva",
       "title": "திருவருட்பா: அருளியல் வினாவல்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -181,6 +224,7 @@
       "track_id": "-cmB2_XZqs0",
       "category": "vallalar_cultural",
       "title": "திருவருட்பா: அபராத விண்ணப்பம் I",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -203,6 +247,7 @@
       "track_id": "-tod_ZpZMnQ",
       "category": "shiva",
       "title": "தேவாரம்: கடவுளைக் கடலுள் எழு (திருக்குறுந்தொகை)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -225,6 +270,7 @@
       "track_id": "-unILRjNLHQ",
       "category": "murugan",
       "title": "திருவருட்பா: சிவ சுப்ரமணியர் திருவிருத்தம்",
+      "total_scenes": 10,
       "scenes": [
         {
           "scene_num": 1,
@@ -240,6 +286,41 @@
           "scene_num": 3,
           "prompt": "Create a single continuous 16:9 cinematic intimate shot at 24 fps. Saint Ramalinga Vallalar, draped in a pure unstitched white cotton shawl, stands before the sanctum with hands joined in heartfelt prayer. His eyes radiate profound universal compassion and devotion as tears of grace glisten softly in the lamp light. *Exclusions:* No modern glasses, no printed paper, no text.",
           "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern glasses, no printed paper, no text."
+        },
+        {
+          "scene_num": 4,
+          "prompt": "Create a single continuous 16:9 cinematic macro pan at 24 fps along the gleaming golden Vel enshrined in the sanctum. Encircled with fresh garlands of white jasmine and red viruchi flowers, the blade shines with a steady, sacred inner luminescence symbolizing divine grace. *Exclusions:* No cartoon glow, no digital distortion, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No cartoon glow, no digital distortion, no text."
+        },
+        {
+          "scene_num": 5,
+          "prompt": "Create a single continuous 16:9 cinematic slow-motion shot at 24 fps inside the sanctum. Pure white cow's milk and golden honey are poured over the bronze vigraha of Lord Muruga, flowing smoothly over the divine shoulders and lotus feet in the warm glow of oil wicks. *Exclusions:* No synthetic vessels, no modern clothing, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No synthetic vessels, no modern clothing, no text."
+        },
+        {
+          "scene_num": 6,
+          "prompt": "Create a single continuous 16:9 cinematic medium tracking shot at 24 fps in the lush temple ashram garden. A majestic wild peacock with iridescent sapphire-blue and emerald plumage rests near a carved stone well surrounded by blooming champaka trees in golden morning sunlight. *Exclusions:* No artificial animal animations, no plastic, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No artificial animal animations, no plastic, no text."
+        },
+        {
+          "scene_num": 7,
+          "prompt": "Create a single continuous 16:9 cinematic slow pan at 24 fps across the granite temple corridor. Tamil devotees dressed in traditional white cotton garments sit in reverence, their faces bathed in warm oil lamp glow as they sing the compassionate verses of Thiruvarutpa with folded hands. *Exclusions:* No modern apparel, no smartphones, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern apparel, no smartphones, no text."
+        },
+        {
+          "scene_num": 8,
+          "prompt": "Create a single continuous 16:9 cinematic medium close-up at 24 fps. An authentic multi-tiered bronze Kuthuvilakku lamp whose central flame burns with a pure, steady, luminous golden brilliance, symbolizing the eternal flame of divine grace celebrated by Saint Vallalar. *Exclusions:* No electric flicker, no CGI distortions, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No electric flicker, no CGI distortions, no text."
+        },
+        {
+          "scene_num": 9,
+          "prompt": "Create a single continuous 16:9 cinematic slow-motion crane tilt-down at 24 fps. Fresh, fragrant white jasmine and red rose petals shower down upon the stone lotus pedestal of the deity as Vedic priests chant hymns of benediction amidst rising Sambrani dhoopam smoke. *Exclusions:* No plastic confetti, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No plastic confetti, no text."
+        },
+        {
+          "scene_num": 10,
+          "prompt": "Create a single continuous 16:9 cinematic wide slow zoom-in at 24 fps. A heavy bronze Harathi plate with blazing white camphor flames is waved before Lord Siva Subramaniyar. Golden light fills the majestic pillared mandapam as temple bells ring in sublime, eternal spiritual peace. *Exclusions:* No text, no modern equipment, no digital glitch.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no modern equipment, no digital glitch."
         }
       ]
     },
@@ -247,6 +328,7 @@
       "track_id": "-yEq62Bu_d8",
       "category": "shiva",
       "title": "திருவாசகம்: வேண்டுமே இத்தனையும் (திருவெம்பாவை) I",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -269,6 +351,7 @@
       "track_id": "-yxeA6nvNZk",
       "category": "shiva",
       "title": "சிவ நாமாவளி: ஈஸ்வர நாமவளி சரணம் I",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -291,6 +374,7 @@
       "track_id": "-zVzQ1XnY8Q",
       "category": "shiva",
       "title": "பெரியபுராணம்: தில்லை வாழ் அந்தணர் சருக்கம்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -313,6 +397,7 @@
       "track_id": "00BGSFBWdlA",
       "category": "vallalar_cultural",
       "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -335,6 +420,7 @@
       "track_id": "01g0sJdaL2I",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 56 - கொடுங்கோன்மை (Remix)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -357,6 +443,7 @@
       "track_id": "02C8glMmetw",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 1 - கடவுள் வாழ்த்து",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -379,6 +466,7 @@
       "track_id": "06ZOKy7SSvw",
       "category": "shiva",
       "title": "திருவருட்பா: திருச்சாதனத் தெய்வத் திறம்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -401,6 +489,7 @@
       "track_id": "0DoegY9d0ZM",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 50 - இடனறிதல் (Remix)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -423,6 +512,7 @@
       "track_id": "0PvXn4gqlFM",
       "category": "murugan",
       "title": "கந்த சஷ்டி கவசம்: முழு கவசம்",
+      "total_scenes": 20,
       "scenes": [
         {
           "scene_num": 1,
@@ -438,6 +528,91 @@
           "scene_num": 3,
           "prompt": "Create a single continuous 16:9 cinematic slow push-in at 24 fps inside the dark granite inner sanctum. Warm bronze Kuthuvilakku lamps cast golden flickers on the sacred vigraha of Lord Shanmukha. Sacred pure white milk and fragrant rose water are poured over the divine bronze form, cascading down the six compassionate faces and twelve shoulders in gleaming ripples. *Exclusions:* No electricity, no artificial blue light, no text.",
           "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No electricity, no artificial blue light, no text."
+        },
+        {
+          "scene_num": 4,
+          "prompt": "Create a single continuous 16:9 cinematic macro pan at 24 fps. Close-up of the radiant golden Vel (sacred spear of wisdom and protection), standing tall in the sanctum, adorned with fresh garlands of red viruchi flowers and fragrant green marukozhundhu. The blade gleams with a soft inner spiritual radiance, symbolizing the divine armor that protects the devotee's soul. *Exclusions:* No cartoon glow, no digital glitch, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No cartoon glow, no digital glitch, no text."
+        },
+        {
+          "scene_num": 5,
+          "prompt": "Create a single continuous 16:9 cinematic medium tracking shot at 24 fps in the stone-pillared temple courtyard. A devotee in traditional saffron garments carries a magnificent wooden Mayil Kavadi crowned with shimmering peacock feathers and small brass bells. He sways in deep, joyful devotional rhythm to the beat of sacred Thavil drums, eyes closed in ecstasy. *Exclusions:* No modern spectators, no smartphones, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern spectators, no smartphones, no text."
+        },
+        {
+          "scene_num": 6,
+          "prompt": "Create a single continuous 16:9 cinematic slow rotational camera move at 24 fps. The divine six faces of Lord Muruga adorned with jewel-encrusted golden crowns and emerald necklaces, revealed in the warm golden illumination of ghee oil lamps. Each face radiates serene grace, wisdom, and infinite love, dissolving all fear from the heart of the seeker. *Exclusions:* No artificial CGI look, no distorted features, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No artificial CGI look, no distorted features, no text."
+        },
+        {
+          "scene_num": 7,
+          "prompt": "Create a single continuous 16:9 cinematic epic visual sequence at 24 fps. Over a dramatic, misty sea under a golden dawn sky, the sacred golden Vel arcs gracefully forward like a beam of celestial dawn light, piercing through rolling dark clouds of ignorance and illusion, revealing a calm, radiant sky of pure spiritual clarity. *Exclusions:* No gory imagery, no blood, no western fantasy armor, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No gory imagery, no blood, no western fantasy armor, no text."
+        },
+        {
+          "scene_num": 8,
+          "prompt": "Create a single continuous 16:9 cinematic wide shot at 24 fps on the ocean-facing stone temple terrace. A magnificent wild peacock with fully fanned iridescent sapphire and emerald plumage stands proudly beside an ancient brass staff fluttering a silken crimson flag bearing the noble rooster emblem (Seval Kodi), catching the golden sunrise wind against the sparkling ocean. *Exclusions:* No jitter, no unnatural animal movement, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No jitter, no unnatural animal movement, no text."
+        },
+        {
+          "scene_num": 9,
+          "prompt": "Create a single continuous 16:9 cinematic low-angle slow slider shot at 24 fps. The lotus feet of the deity resting upon a carved granite lotus pedestal, adorned with intricate golden silambu anklets and tiny jingling bells (sathangai). Devotees place fragrant white parijatha blossoms and fresh bilva leaves upon the stone pedestal in silent, tearful gratitude. *Exclusions:* No text, no modern flooring, no fast motion.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no modern flooring, no fast motion."
+        },
+        {
+          "scene_num": 10,
+          "prompt": "Create a single continuous 16:9 cinematic wide crane shot at 24 fps inside the grand pillared Mahamandapam. A multi-tiered bronze camphor lamp (Karpura Harathi) is reverently waved before Lord Muruga, flanked by Goddess Valli and Goddess Deivayanai adorned in crimson silks and jasmine garlands. Flocks of sweet-smelling dhoopam smoke rise through glowing amber sunbeams while flower petals fall. Supreme spiritual fulfillment. *Exclusions:* No text, no modern equipment, no plastic.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no modern equipment, no plastic."
+        },
+        {
+          "scene_num": 11,
+          "prompt": "Create a single continuous 16:9 cinematic medium tracking shot at 24 fps. In an ancient stone mandapam bathed in early morning golden light, reverent Tamil devotees receive sacred fragrant white Vibhuti from a venerable temple priest. Devotees apply the holy three horizontal Tripundra lines across their foreheads and arms with deep devotion, eyes closed in silent surrender to Lord Muruga's grace. *Exclusions:* No modern clothing, no plastic, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern clothing, no plastic, no text."
+        },
+        {
+          "scene_num": 12,
+          "prompt": "Create a single continuous 16:9 cinematic sweeping panoramic drone shot at 24 fps. Ancient misty mountain slopes of Valli Malai at dawn, lush with sacred green groves and purple kurinji blossoms. Wild peacocks glide majestically between weathered granite boulders and ancient stone steps leading to an ancient rock-cut cave sanctum. *Exclusions:* No modern buildings, no communication towers, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern buildings, no communication towers, no text."
+        },
+        {
+          "scene_num": 13,
+          "prompt": "Create a single continuous 16:9 cinematic low-angle tracking shot at 24 fps. A monumental carved wooden temple chariot (Thiru Ther) draped in rich crimson and saffron silks moves slowly through an ancient stone temple street at sunset. Hundreds of barefoot devotees adorned with Vibhuti pull the massive coir ropes with joyful devotion. *Exclusions:* No modern vehicles, no asphalt road, no electrical cables, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern vehicles, no asphalt road, no electrical cables, no text."
+        },
+        {
+          "scene_num": 14,
+          "prompt": "Create a single continuous 16:9 cinematic macro slow slider shot at 24 fps. Fragrant golden sandalwood paste (chandanam) is gently anointed across the divine chest and shoulders of the granite vigraha of Lord Muruga. Deep red viruchi petals and green marukozhundhu leaves adhere to the cooling paste under the warm glow of bronze oil wicks. *Exclusions:* No synthetic chemicals, no artificial neon lighting, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No synthetic chemicals, no artificial neon lighting, no text."
+        },
+        {
+          "scene_num": 15,
+          "prompt": "Create a single continuous 16:9 cinematic push-in shot at 24 fps. An ancient polished bronze bowl overflowing with traditional sacred Panchamirtham (mountain honey, crushed hill bananas, dates, and cardamom ghee) is presented before the deity. Glistening golden honey drips slowly from a carved bronze spoon into an offering chalice. *Exclusions:* No modern kitchenware, no plastic containers, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern kitchenware, no plastic containers, no text."
+        },
+        {
+          "scene_num": 16,
+          "prompt": "Create a single continuous 16:9 cinematic gliding shot at 24 fps across the calm, reflective waters of a sacred Dravidian temple lotus tank at twilight. Hundreds of floating terracotta oil lamps (Deepams) drift gently across the water between blooming pink lotuses, reflecting the towering stone Rajagopuram against an amber sky. *Exclusions:* No plastic trash, no modern electric lights, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No plastic trash, no modern electric lights, no text."
+        },
+        {
+          "scene_num": 17,
+          "prompt": "Create a single continuous 16:9 cinematic close-up shot at 24 fps. Magnificent iridescent sapphire and emerald peacock feather fans (Mayil Visiri) wave softly in rhythmic motion behind the golden crown of Lord Muruga. The jewel-toned feathers shimmer gently in the warm flickering light of multi-tiered ghee lamps. *Exclusions:* No unnatural glitter effects, no digital noise, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No unnatural glitter effects, no digital noise, no text."
+        },
+        {
+          "scene_num": 18,
+          "prompt": "Create a single continuous 16:9 cinematic tracking shot at 24 fps along an ancient carved temple pillared corridor. Traditional Tamil temple musicians in pure white cotton veshtis and Tripundra markings play the sacred double-reed Nadaswaram and barrel-shaped Thavil drums with joyful reverence, divine sound waves vibrating through ancient stone pillars. *Exclusions:* No modern instruments, no microphones, no wires, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern instruments, no microphones, no wires, no text."
+        },
+        {
+          "scene_num": 19,
+          "prompt": "Create a single continuous 16:9 cinematic macro camera move at 24 fps. An ancient inscribed copper plate and palm-leaf manuscript bearing the holy verses of Kandha Sashti Kavasam in classical Tamil script rests upon a carved silver lotus stand. Fresh tulsi sprigs and red hibiscus flowers lie beside the scripture in warm oil lamp illumination. *Exclusions:* No printed modern paper, no digital screens, no text overlays.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No printed modern paper, no digital screens, no text overlays."
+        },
+        {
+          "scene_num": 20,
+          "prompt": "Create a single continuous 16:9 cinematic grand wide shot at 24 fps inside the innermost granite sanctum. The priest lifts a grand, multi-tiered brass peacock lamp (Aduku Deepam) with dozens of glowing flames in circular sacred motion before Lord Muruga. Billows of fragrant sambrani incense smoke swirl through golden light as a shower of jasmine and rose petals falls silently. *Exclusions:* No modern items, no flash photography, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern items, no flash photography, no text."
         }
       ]
     },
@@ -445,6 +620,7 @@
       "track_id": "0SUn5igNEE0",
       "category": "shiva",
       "title": "தேவாரம்: நமச்சிவாயப் பதிகம் (துஞ்சலும் துஞ்சல்)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -467,6 +643,7 @@
       "track_id": "0TB3drCSvNc",
       "category": "shiva",
       "title": "திருவருட்பா: திருவருள் வேட்கை I",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -489,6 +666,7 @@
       "track_id": "0W1FqHOYwDc",
       "category": "vishnu_krishna",
       "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -511,6 +689,7 @@
       "track_id": "0WurYH-hkNM",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 67 - வினைத்திட்பம் (Remix)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -533,6 +712,7 @@
       "track_id": "0bz1myKXoJQ",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 43 - அறிவுடைமை (Remix)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -555,6 +735,7 @@
       "track_id": "0fD-z3s_g2A",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 25 - அருளுடைமை",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -577,6 +758,7 @@
       "track_id": "0gK0asNO-RM",
       "category": "vallalar_cultural",
       "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -599,6 +781,7 @@
       "track_id": "0k9CZLNA2TY",
       "category": "amman",
       "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -621,6 +804,7 @@
       "track_id": "0tXyQEAHVNQ",
       "category": "shiva",
       "title": "தேவாரம்: தில்லைத் திருப்பதிகம் (அன்னம் பாலிக்கும்)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -643,6 +827,7 @@
       "track_id": "1W9SHSo-2Vk",
       "category": "vallalar_cultural",
       "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -665,6 +850,7 @@
       "track_id": "1hoVaPwWMes",
       "category": "murugan",
       "title": "கந்த சஷ்டி கவசம்: முழு கவசம் II",
+      "total_scenes": 10,
       "scenes": [
         {
           "scene_num": 1,
@@ -680,6 +866,41 @@
           "scene_num": 3,
           "prompt": "Create a single continuous 16:9 cinematic slow push-in at 24 fps into the dark granite sanctum. The sacred, ancient Navapashanam vigraha of Lord Dandayudhapani is revealed in the warm golden light of tall bronze Kuthuvilakku lamps. The ascetic child Muruga holds his divine staff (Jnana Danda) with an expression of profound serenity and detachment, eyes shining with boundless grace. *Exclusions:* No artificial CGI, no neon glows, no text.",
           "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No artificial CGI, no neon glows, no text."
+        },
+        {
+          "scene_num": 4,
+          "prompt": "Create a single continuous 16:9 cinematic macro camera move at 24 fps. Pure white cow's milk from a polished bronze conch vessel cascades smoothly over the sacred dark stone shoulders and chest of Lord Dandayudhapani. Fine droplets glisten like pearls in the flickering golden lamp flame, flowing into the carved stone lotus pedestal below. *Exclusions:* No digital glitch, no modern stainless steel, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No digital glitch, no modern stainless steel, no text."
+        },
+        {
+          "scene_num": 5,
+          "prompt": "Create a single continuous 16:9 cinematic close-up shot at 24 fps. An ancient carved bronze bowl filled with sacred, glossy Palani Panchamirtham — prepared with wild hill honey, ripe bananas, clarified cow's ghee, dates, and fragrant green cardamom seeds. Fresh bilva leaves and red viruchi flowers are placed reverently alongside the offering by a temple priest. *Exclusions:* No plastic containers, no modern cutlery, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No plastic containers, no modern cutlery, no text."
+        },
+        {
+          "scene_num": 6,
+          "prompt": "Create a single continuous 16:9 cinematic tracking shot at 24 fps along the carved granite outer ramparts of Palani hilltop. A magnificent royal peacock stands perched on the weathered stone wall, its iridescent sapphire neck and long emerald-green tail feathers shimmering in the warm amber rays of the setting sun overlooking the fertile green valley. *Exclusions:* No modern buildings in background, no wires, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern buildings in background, no wires, no text."
+        },
+        {
+          "scene_num": 7,
+          "prompt": "Create a single continuous 16:9 cinematic slow glide at 24 fps into the subterranean stone cave shrine of Siddhar Bogar beneath the hill temple. A solitary bronze oil lamp illuminates the tranquil, ancient stone lingam and the alchemical yantra inscribed on copper plates, fragrant sambrani incense smoke drifting slowly through cool bedrock air. *Exclusions:* No electric wires, no modern glass cases, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No electric wires, no modern glass cases, no text."
+        },
+        {
+          "scene_num": 8,
+          "prompt": "Create a single continuous 16:9 cinematic medium shot at 24 fps in the open-air temple mandapam. A humble Tamil father and his young son, having offered their hair in sacred surrender, sit on the cool stone floor with heads anointed in cool, fragrant yellow sandalwood paste and sacred red kumkum, their faces beaming with peace and spiritual purification. *Exclusions:* No modern clothing, no plastic chairs, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern clothing, no plastic chairs, no text."
+        },
+        {
+          "scene_num": 9,
+          "prompt": "Create a single continuous 16:9 cinematic panning shot at 24 fps through the illuminated temple corridor at twilight. The magnificent golden chariot (Thanga Ratham) carrying the radiant utsava murti of Lord Muruga glides gracefully, pulled by hundreds of barefoot devotees. Dozens of glowing oil wicks and golden temple bells reflect warm brilliance off the carved gold surface. *Exclusions:* No modern motor vehicles, no electric LED cords, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern motor vehicles, no electric LED cords, no text."
+        },
+        {
+          "scene_num": 10,
+          "prompt": "Create a single continuous 16:9 cinematic grand wide shot at 24 fps inside the sanctum. The priest waves a massive multi-tiered brass Karpura Harathi lamp before Lord Dandayudhapani. Golden camphor flames leap upward, illuminating the peaceful ascetic deity, as a shower of fragrant white parijatha blossoms and pink rose petals rains down in slow motion. *Exclusions:* No modern items, no flash photography, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern items, no flash photography, no text."
         }
       ]
     },
@@ -687,6 +908,7 @@
       "track_id": "1wD_X2LHCmw",
       "category": "vallalar_cultural",
       "title": "சிவ பக்திப் பாடல்: திருவசிய மந்திரம் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -709,6 +931,7 @@
       "track_id": "255aVCj3t0w",
       "category": "shiva",
       "title": "திருவருட்பா: திருச்சாதனத் தெய்வத் திறம்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -731,6 +954,7 @@
       "track_id": "28Xnfhctf0I",
       "category": "vallalar_cultural",
       "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -753,6 +977,7 @@
       "track_id": "2Gbhx6SwH-M",
       "category": "shiva",
       "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -775,6 +1000,7 @@
       "track_id": "2Pun6K7h984",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Remix)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -797,6 +1023,7 @@
       "track_id": "2QOF2ycA4RQ",
       "category": "shiva",
       "title": "சிவ நாமாவளி: ஆதி யோகீஸ்வரர் சரணம்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -819,6 +1046,7 @@
       "track_id": "2Qs07DTJvvM",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 71 - குறிப்பறிதல் (Remix)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -841,6 +1069,7 @@
       "track_id": "2U45AXlx7DA",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 46 - சிற்றினம் சேராமை",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -863,6 +1092,7 @@
       "track_id": "2YzLM0yoBlg",
       "category": "vishnu_krishna",
       "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -885,6 +1115,7 @@
       "track_id": "2_TfLljo1qg",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 44 - குற்றங்கடிதல் (Original)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -907,6 +1138,7 @@
       "track_id": "2_rwWlC09I0",
       "category": "shiva",
       "title": "சிவ ஸ்தோத்திரம்: ஸ்மரணாதருணாசலம்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -929,6 +1161,7 @@
       "track_id": "2c3bdbcn4BI",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 54 - பொச்சாவாமை",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -951,6 +1184,7 @@
       "track_id": "2mdEV1acg-U",
       "category": "shiva",
       "title": "திருவாசகம்: குழைத்த பத்து II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -973,6 +1207,7 @@
       "track_id": "2tL-bKjkL18",
       "category": "vishnu_krishna",
       "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -995,6 +1230,7 @@
       "track_id": "2vQYuvePk9U",
       "category": "shiva",
       "title": "பன்னிரு திருமுறை: திருவையாறு சாரம்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1017,6 +1253,7 @@
       "track_id": "2vuuHMEhs20",
       "category": "shiva",
       "title": "திருவாசகம்: போற்றித் திருஅகவல்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1039,6 +1276,7 @@
       "track_id": "31xVgvxoiUA",
       "category": "vishnu_krishna",
       "title": "திருப்பாவை: பாசுரம் 3 - ஓங்கி உலகளந்த",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1061,6 +1299,7 @@
       "track_id": "34D_HpbRxfo",
       "category": "shiva",
       "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1083,6 +1322,7 @@
       "track_id": "37qaN4sG53k",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 62 - ஆள்வினையுடைமை (Remix)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1105,6 +1345,7 @@
       "track_id": "3CICxCn-4A0",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 42 - கேள்வி (Original)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1127,6 +1368,7 @@
       "track_id": "3MOpXVMpA9s",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 57 - வெருவந்த செய்யாமை",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1149,6 +1391,7 @@
       "track_id": "3oJ2OPG-WCs",
       "category": "murugan",
       "title": "திருப்புகழ்: முத்தைத் தரு (திருப்புகழ்)",
+      "total_scenes": 10,
       "scenes": [
         {
           "scene_num": 1,
@@ -1164,6 +1407,41 @@
           "scene_num": 3,
           "prompt": "Create a single continuous 16:9 cinematic medium tracking shot at 24 fps. Beneath an ancient flowering Kadamba tree, the youthful Swaminatha Swami raises his hand in the sacred Chin Mudra, whispering the sacred primordial 'OM' to Lord Shiva who sits with closed eyes in profound contemplation and reverence. A soft, warm golden halo envelops both divine beings. *Exclusions:* No modern artifacts, no speech bubbles, no text.",
           "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern artifacts, no speech bubbles, no text."
+        },
+        {
+          "scene_num": 4,
+          "prompt": "Create a single continuous 16:9 cinematic sweeping shot at 24 fps across a rugged mountain peak. The radiant golden Vel streaks across the sky like a comet of pure golden light, piercing the shadowy mist and illuminating the dark granite mountain crags with brilliant amber sunrise clarity, symbolizing the shattering of the ego. *Exclusions:* No fire explosions, no sci-fi lasers, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No fire explosions, no sci-fi lasers, no text."
+        },
+        {
+          "scene_num": 5,
+          "prompt": "Create a single continuous 16:9 cinematic slow-motion downward crane shot at 24 fps. Thousands of fresh, fragrant flower petals—red lotus petals, yellow champaka, and white jasmine—shower down gently through sunlit air inside the stone courtyard of the temple. The petals blanket the ancient carved stone floor around a bronze lotus pedestal. *Exclusions:* No plastic confetti, no modern spectators, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No plastic confetti, no modern spectators, no text."
+        },
+        {
+          "scene_num": 6,
+          "prompt": "Create a single continuous 16:9 cinematic tracking shot at 24 fps along a grand stone-pillared temple corridor. The processional bronze murtis of Lord Muruga flanked by Goddess Valli and Goddess Deivayanai, glittering in silk garments and emerald jewels, are borne aloft on an ornate silver palanquin adorned with hanging jasmine garlands. Oil torches glow along the granite pillars. *Exclusions:* No electric wires, no smartphones, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No electric wires, no smartphones, no text."
+        },
+        {
+          "scene_num": 7,
+          "prompt": "Create a single continuous 16:9 cinematic intimate shot at 24 fps. Saint Arunagirinathar, draped in unstitched saffron cotton with three horizontal white Vibhuti marks and Rudraksha beads, plays miniature bronze hand cymbals (Jallari) in rapid, joyous rhythm before the temple sanctum. Tears of bliss stream from his eyes as he sings with an open, transcendent heart. *Exclusions:* No modern glasses, no printed books, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern glasses, no printed books, no text."
+        },
+        {
+          "scene_num": 8,
+          "prompt": "Create a single continuous 16:9 cinematic medium shot at 24 fps on the temple flagstaff terrace. A majestic peacock with an enormous, gleaming emerald and sapphire tail feathers fans its plumage fully, moving in slow, rhythmic, graceful steps in time with the resonant beats of sacred temple drums heard in the distance. Morning sun highlights every iridescent feather eye. *Exclusions:* No morphing feathers, no cartoon physics, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No morphing feathers, no cartoon physics, no text."
+        },
+        {
+          "scene_num": 9,
+          "prompt": "Create a single continuous 16:9 cinematic slow pan at 24 fps across a gathered assembly of barefoot Tamil devotees inside the temple mandapam. Clad in simple traditional cotton dhotis and sarees, their hands are raised in Anjali Mudra, their faces illuminated by rows of warm brass oil lamps as they chant in collective spiritual harmony. *Exclusions:* No modern apparel, no synthetic fabrics, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern apparel, no synthetic fabrics, no text."
+        },
+        {
+          "scene_num": 10,
+          "prompt": "Create a single continuous 16:9 cinematic slow zoom-in at 24 fps toward the sanctum. A majestic multi-tiered brass lamp bearing blazing white camphor flames is circled before the golden Vel and the deity. Clouds of fragrant dhoopam incense rise toward the carved granite ceiling as golden temple bells chime. Sublime, eternal divine presence. *Exclusions:* No text, no digital distortion, no modern elements.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no digital distortion, no modern elements."
         }
       ]
     },
@@ -1171,6 +1449,7 @@
       "track_id": "3t5U9ABVeOc",
       "category": "shiva",
       "title": "தேவாரம்: மாசில் வீணையும்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1193,6 +1472,7 @@
       "track_id": "3yB_oTqh6Jk",
       "category": "thirukkural",
       "title": "திருக்குறள்: அதிகாரம் 68 - வினைசெயல்வகை (Female)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1215,6 +1495,7 @@
       "track_id": "3youy-33GtY",
       "category": "vallalar_cultural",
       "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1237,6 +1518,7 @@
       "track_id": "4-FJ8eh7Als",
       "category": "vallalar_cultural",
       "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1259,6 +1541,7 @@
       "track_id": "40ML9b--tg4",
       "category": "shiva",
       "title": "திருவாசகம்: சிவ புராணம் (II)",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1281,6 +1564,7 @@
       "track_id": "468ErjVLRCs",
       "category": "vishnu_krishna",
       "title": "திருப்பாவை: விஷ்ணும் ஜிஷ்ணும்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,
@@ -1303,6 +1587,7 @@
       "track_id": "4QpJHz2SAbU",
       "category": "shiva",
       "title": "திருவாசகம்: போற்றித் திருஅகவல்",
+      "total_scenes": 3,
       "scenes": [
         {
           "scene_num": 1,

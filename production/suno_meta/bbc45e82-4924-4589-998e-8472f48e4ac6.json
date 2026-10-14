@@ -1,0 +1,175 @@
+{
+  "status": "complete",
+  "title": "கேள்வி 1O Golden",
+  "play_count": 5,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "bbc45e82-4924-4589-998e-8472f48e4ac6",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/bbc45e82-4924-4589-998e-8472f48e4ac6.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_bbc45e82-4924-4589-998e-8472f48e4ac6.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_bbc45e82-4924-4589-998e-8472f48e4ac6.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Guitar orchestra fusion, measured verse-and-chorus pulse, tape saturation, piercing nathaswaram opener, female Tamil vocal with clear classical phrasing, layered guitar orchestra, bright mandolin tremolo, resonant sitar phrases, nathaswaram accents, warm analog mix",
+    "prompt": "[Verse 1]\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\n\nசெவிக்குணவு இல்லாத போழ்து (சிறிது)\nவயிற்றுக்கும் ஈயப் படும்\nசெவிக்குணவு இல்லாத போழ்து (சிறிது)\nவயிற்றுக்கும் ஈயப் படும்\n\n[Chorus]\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\n\n[Verse 2]\nசெவியின் சுவையுணரா வாயுணர்வின் (மாக்கள்)\nஅவியினும் வாழினும் என்\nசெவியுணவின் கேள்வி உடையார் (அவியுணவின்)\nஆன்றாரோடு ஒப்பர் நிலத்து\nபிழைத்துணர்ந்தும் பேதைமை சொல்லார் (இழைத்துணர்ந்து)\nஈண்டிய கேள்வி யவர்\nஎனைத்தானும் நல்லவை கேட்க (அனைத்தானும்)\nஆன்ற பெருமை தரும்\n\n[Chorus]\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\n\n[Verse 3]\nஇழுக்கல் உடையுழி ஊற்றுக்கோல் அற்றே (ஒழுக்கம்)\nஉடையார் வாய்ச் சொல்\nகற்றிலன் ஆயினும் கேட்க (அஃதொருவற்கு)\nஒற்கத்தின் ஊற்றாந் துணை\nகேட்பினும் கேளாத் தகையவே (கேள்வியால்)\nதோட்கப் படாத செவி\nநுணங்கிய கேள்வியர் அல்லார் (வணங்கிய)\nவாயினர் ஆதல் அரிது\n\n[Chorus]\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை\nசெல்வத்துள் செல்வம் செவிச்செல்வம் (அச்செல்வம்)\nசெல்வத்துள் எல்லாந் தலை",
+    "type": "gen",
+    "duration": 242.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "camcorder",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-17T09:04:09.405Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "fusion, classical, guitar orchestra",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

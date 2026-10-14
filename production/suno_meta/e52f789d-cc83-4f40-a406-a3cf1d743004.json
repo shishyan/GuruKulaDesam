@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "மெய்யுணர்தல்  2026",
+  "play_count": 1,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "e52f789d-cc83-4f40-a406-a3cf1d743004",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/e52f789d-cc83-4f40-a406-a3cf1d743004.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/e52f789d-cc83-4f40-a406-a3cf1d743004.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_e52f789d-cc83-4f40-a406-a3cf1d743004.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_e52f789d-cc83-4f40-a406-a3cf1d743004.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "ambient, devotional",
+    "negative_tags": "",
+    "prompt": "[Chorus]\nஎப்பொருள் எத்தன்மையது ஆயினும் (அப்பொருள்)\nமெய்ப்பொருள் காண்பது அறிவு\nபிறப்பென்னும் பேதைமை நீங்கச் (சிறப்பென்னும்)\nசெம்பொருள் காண்பது அறிவு\n\n[Verse 1]\nஐயத்தின் நீங்கித் தெளிந்தார்க்கு (வையத்தின்)\nவானம் நணியது உடைத்து\nஐயுணர்வு எய்தியக் கண்ணும் (பயமின்றே)\nமெய்யுணர்வு இல்லாத அவர்க்கு\nபொருளல்ல வற்றைப் பொருளென்று (உணரும்)\nமருளானாம் மாணாப் பிறப்பு\nஇருள்நீங்கி இன்பம் பயக்கும் (மருள்நீங்கி)\nமாசறு காட்சி யவர்க்கு\n\n[Chorus]\nஎப்பொருள் எத்தன்மையது ஆயினும் (அப்பொருள்)\nமெய்ப்பொருள் காண்பது அறிவு\nபிறப்பென்னும் பேதைமை நீங்கச் (சிறப்பென்னும்)\nசெம்பொருள் காண்பது அறிவு\n\n[Verse 2]\nகற்றீண்டு மெய்ப்பொருள் கண்டார் (தலைப்படுவர்)\nமற்றீண்டு வாரா நெறி\nஓர்த்துள்ளம் உள்ளது உணரின் (ஒருதலையா)\nபேர்த்துள்ள வேண்டா பிறப்பு\nசார்புணர்ந்து சார்பு கெடஒழுகின் (மற்றழித்து)\nசார்தரா சார்தரு நோய்\nகாமம் வெகுளி மயக்கம் (இவைமூன்றன்)\nநாமம் கெடக்கெடும் நோய்\nு\n\n[Chorus]\nஎப்பொருள் எத்தன்மையது ஆயினும் (அப்பொருள்)\nமெய்ப்பொருள் காண்பது அறிவு\nபிறப்பென்னும் பேதைமை நீங்கச் (சிறப்பென்னும்)\nசெம்பொருள் காண்பது அறிவ",
+    "type": "studio_export",
+    "duration": 207.39645833333333,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "4ad24bfd-a64a-4034-b62b-064bc54426cc",
+    "studio_project_version_id": "76f082e9-0cca-49a8-a694-85283c8433bd",
+    "studio_project_start_beats": -1.0118180958683936,
+    "studio_project_end_beats": 476.0,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-11T13:30:09.513Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

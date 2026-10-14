@@ -1,0 +1,163 @@
+{
+  "status": "complete",
+  "title": "குற்றம் கடிதல் 1M Golden",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "4994325b-7c8c-4381-8282-d555542dc829",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/4994325b-7c8c-4381-8282-d555542dc829.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_4994325b-7c8c-4381-8282-d555542dc829.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_4994325b-7c8c-4381-8282-d555542dc829.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Folk, free rubato ballad, wooden plate reverb, male vocal with resonant unison phrasing and restrained ornamentation, concertina sustaining drones and plaintive chord turns, frame drum entering as sparse hand-struck pulses beneath the vocal lines",
+    "prompt": "[Chorus]\nவருமுன்னர் காவாதான் வாழ்க்கை (எரிமுன்னர்)\nவைத்தூறு போலக் (கெடும்)\nவருமுன்னர் காவாதான் வாழ்க்கை (எரிமுன்னர்)\nவைத்தூறு போலக் (கெடும்)\n\n[Verse 1]\nதன்குற்றம் நீக்கிப் பிறர்குற்றம் (காண்கிற் பின் )\nஎன்குற்றம் ஆகும் (இறைக்கு)\nதன்குற்றம் நீக்கிப்  பிறர்குற்றம் (காண்கிற் பின் )\nஎன்குற்றம் ஆகும் (இறைக்கு)\n\nசெயற்பால செய்யாது இவறியான் (செல்வம்)\nஉயற்பாலது அன்றிக் (கெடும்)\nசெயற்பால செய்யாது இவறியான் (செல்வம்)\nஉயற்பாலது அன்றிக் (கெடும்)\n\n[Chorus] \nவருமுன்னர் காவாதான் வாழ்க்கை (எரிமுன்னர்)\nவைத்தூறு போலக் (கெடும்)\nவருமுன்னர் காவாதான் வாழ்க்கை (எரிமுன்னர்)\nவைத்தூறு போலக் (கெடும்)\n\n[Verse 2]\nசெருக்கும் சினமும் சிறுமையும் (இல்லார்)\nபெருக்கம் பெருமித (நீர்த்து)\nஇவறலும் மாண்பிறந்த மானமும் (மாணா)\nஉவகையும் ஏதம் (இறைக்கு)\n\nகுற்றமே காக்க பொருளாக (குற்றமே)\nஅற்றம் தரூஉம் (பகை)\nதினைத்துணையாம் குற்றம் வரினும் (பனைத்துணையாக)\nகொள்வர் பழி (நாணுவார்)\n\n[Chorus]\nவருமுன்னர் காவாதான் வாழ்க்கை (எரிமுன்னர்)\nவைத்தூறு போலக் (கெடும்)\nவருமுன்னர் காவாதான் வாழ்க்கை (எரிமுன்னர்)\nவைத்தூறு போலக் (கெடும்)\n\n[Verse 3]\nவியவற்க எஞ்ஞான்றும் தன்னை (நயவற்க)\nநன்றி பயவா (வினை)\nபற்றுள்ளம் என்னும் இவறன்மை (எற்றுள்ளும்)\nஎண்ணப்படுவது ஒன்று (அன்று)\nகாதல காதல் அறியாமை (உய்க்கிற்பின்)\nஏதில ஏதிலார் (நூல்)\n\n[Chorus]\nவருமுன்னர் காவாதான் வாழ்க்கை (எரிமுன்னர்)\nவைத்தூறு போலக் (கெடும்)\nவருமுன்னர் காவாதான் வாழ்க்கை (எரிமுன்னர்)\nவைத்தூறு போலக் (கெடும்)",
+    "type": "gen",
+    "duration": 212.8,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.54,
+      "aug_creativity": 2
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "airbrush",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-18T18:41:39.718Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Folk, ballad",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

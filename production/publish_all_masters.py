@@ -167,6 +167,16 @@ def is_track_safe_to_publish(track, registry, metadata_db):
     if not film_path.exists() or film_path.stat().st_size < 1000000:
         return False, f"FILE GUARD: Master film missing or invalid ({film_rel})"
 
+    # 5. Scene Count Guard (Strict User Directive: NEVER PUBLISH VIDEOS WITH <= 3 SCENES)
+    scenes_count = track.get("scenes_count", 0)
+    clip_dir = ROOT / "production" / "google_flow_renders" / tid
+    if clip_dir.exists():
+        flow_clips = len(list(clip_dir.glob("*.mp4")))
+        if flow_clips > 0 and flow_clips <= 3 and (scenes_count == 0 or scenes_count <= 3):
+            return False, f"SCENE COUNT GUARD: Video has only {flow_clips} scenes (Must have > 3 scenes to publish)"
+    if scenes_count > 0 and scenes_count <= 3:
+        return False, f"SCENE COUNT GUARD: Manifest reports only {scenes_count} scenes (Must have > 3 scenes to publish)"
+
     return True, "SAFE"
 
 def publish_track(yt, track, metadata_db):
@@ -240,6 +250,25 @@ def publish_track(yt, track, metadata_db):
     # Immediately lock into persistent registry
     record_published_video(tid, new_video_id, meta_title, cat)
 
+    # Privatize legacy image-based video if replacing an older version
+    if tid != new_video_id and len(tid) == 11 and tid in metadata_db:
+        try:
+            print(f"  [REPLACEMENT] Setting legacy image-based video {tid} to PRIVATE...")
+            leg_meta = metadata_db.get(tid, {})
+            yt.videos().update(
+                part="status",
+                body={
+                    "id": tid,
+                    "status": {
+                        "privacyStatus": "private",
+                        "selfDeclaredMadeForKids": False
+                    }
+                }
+            ).execute()
+            print(f"  [PRIVATIZED SUCCESS] Legacy video https://youtu.be/{tid} is now PRIVATE.")
+        except Exception as priv_err:
+            print(f"  [PRIVATIZE NOTE] Could not set legacy video {tid} to private: {priv_err}")
+
     # Add to Deity Playlist
     playlist_id = PLAYLIST_MAP.get(cat)
     if playlist_id:
@@ -258,8 +287,12 @@ def publish_track(yt, track, metadata_db):
             print(f"  [PLAYLIST NOTE] Could not insert to playlist {playlist_id}: {pe}")
 
     # Attach synchronized Tamil SRT captions if available
-    srt_path = ROOT / "subtitles" / f"{tid}.srt"
-    if srt_path.exists() and srt_path.stat().st_size > 50:
+    srt_candidates = [
+        ROOT / "production" / "subtitles" / f"{tid}.srt",
+        ROOT / "subtitles" / f"{tid}.srt"
+    ]
+    srt_path = next((p for p in srt_candidates if p.exists() and p.stat().st_size > 50), None)
+    if srt_path:
         try:
             print(f"  Uploading aligned SRT caption track ({srt_path.name}) to YouTube video {new_video_id}...")
             cap_media = MediaFileUpload(str(srt_path), mimetype="application/x-subrip", resumable=True)

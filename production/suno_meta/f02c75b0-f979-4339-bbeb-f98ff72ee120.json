@@ -1,0 +1,186 @@
+{
+  "status": "complete",
+  "title": "படைச்செருக்கு 1K Golden",
+  "play_count": 5,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "f02c75b0-f979-4339-bbeb-f98ff72ee120",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/f02c75b0-f979-4339-bbeb-f98ff72ee120.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/f02c75b0-f979-4339-bbeb-f98ff72ee120.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_7de54e43-3e1c-4238-a863-714824962223.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_7de54e43-3e1c-4238-a863-714824962223.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "brass, dark room, restrained",
+    "prompt": "[Chorus]\nபேர் ஆண்மை என்பதறுகண் ஒன்று (உற்றக்கால்)\nஊராண்மை மற்றதன் எgkகு\nபேர் ஆண்மை என்பதறுகண் ஒன்று (உற்றக்கால்)\nஊராண்மை மற்றதன் எgkகு\n\n[Verse 1]\nஎன்னை முன்நில்லன் (மின்தெவ்விர் பலர் )\nஎன்னை முன்நின்று கல்நின்றவர்\nஎன்னை முன்நில்லன் (மின்தெவ்விர் பலர் )\nஎன்னை முன்நின்று கல்நின்றவர்\n\nபுரந்தார்கண் நீர்மல்கச் சாகிற் (பின்தாக்காடு)\nஇரந்துகோள் தகுதியுடைத்து\nவிழுப்புண் படாதநாள் எல்லாம் (வழுக்கினுள்)\nவைக்கும்தன் நாளை எடுத்து\n\n[Chorus]\nபேர் ஆண்மை என்பதறுகண் ஒன்று (உற்றக்கால்)\nஊராண்மை மற்றதன் எgkகு\nபேர் ஆண்மை என்பதறுகண் ஒன்று (உற்றக்கால்)\nஊராண்மை மற்றதன் எgkகு\n\n[Verse 3]\nகான முயல் எய்த அம்பினில் (யானை)\nபிழைத்த வேல் ஏந்தல் இனிது\nகைவேல் களிற்றொடு போக்கி (வருபவன்)\nமெய்வேல் பறியா நகும்\n\nசுழலும் இசைவேண்டி வேண்டா (உயிரார்)\nகழல்யாப்புக் காரிகை நீர்த்து\nவிழித்தகண் வேல்கொண் டெறிய (அழித்திமைப்பின்)\nஒட்டன்றோ வன்க ணவர்க்கே\n\n[Bridge]\nஉறின்உயிர் அஞ்சா மறவர் (இறைவன்)\nசெறினும் சீர்குன்றல் இலர்\nஇழைத்தது இகவாமைச் சாவாரை (யாரே)\nபிழைத்தது ஒறுக்கிற் பவர்\n\n[Chorus]\nபேர் ஆண்மை என்பதறுகண் ஒன்று (உற்றக்கால்)\nஊராண்மை மற்றதன் எgkகு\nபேர் ஆண்மை என்பதறுகண் ஒன்று (உற்றக்கால்)\nஊராண்மை மற்றதன் எgkகு\n\n[Verse 3]\nகான முயல் எய்த அம்பினில் (யானை)\nபிழைத்த வேல் ஏந்தல் இனிது\nகைவேல் களிற்றொடு போக்கி (வருபவன்)\nமெய்வேல் பறியா நகும்\n\nசுழலும் இசைவேண்டி வேண்டா (உயிரார்)\nகழல்யாப்புக் காரிகை நீர்த்து\nவிழித்தகண் வேல்கொண் டெறிய (அழித்திமைப்பின்)\nஒட்டன்றோ வன்க ணவர்க்கே\n\n[Bridge]\nஉறின்உயிர் அஞ்சா மறவர் (இறைவன்)\nசெறினும் சீர்குன்றல் இலர்\nஇழைத்தது இகவாமைச் சாவாரை (யாரே)\nபிழைத்தது ஒறுக்கிற் பவர்\n\n[Chorus]\nபேர் ஆண்மை என்பதறுகண் ஒன்று (உற்றக்கால்)\nஊராண்மை மற்றதன் எgkகு\nபேர் ஆண்மை என்பதறுகண் ஒன்று (உற்றக்கால்)\nஊராண்மை மற்றதன் எgkகு",
+    "concat_history": [
+      {
+        "source_is_webview": false,
+        "infill": false,
+        "id": "00000000-0000-0000-0000-000000000000",
+        "source": "web",
+        "type": "gen",
+        "continue_at": 156.0
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000000"
+      }
+    ],
+    "type": "concat",
+    "duration": 228.2,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": true,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "FULL SONG",
+        "icon_key": "full_song",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-27T06:45:33.665Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "title": "இகல் 1E Good Pop",
+  "play_count": 4,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "e0875a16-a37f-41b1-a693-9f5c3a6b6776",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/e0875a16-a37f-41b1-a693-9f5c3a6b6776.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/e0875a16-a37f-41b1-a693-9f5c3a6b6776.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_e0875a16-a37f-41b1-a693-9f5c3a6b6776.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_e0875a16-a37f-41b1-a693-9f5c3a6b6776.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "1980s pop with a male lead vocal, doubled in the chorus; polished studio production with digital reverb tails; Yamaha DX7 electric piano carrying bright chord motifs over steady synth bass and crisp electronic drums; buoyant mid-tempo groove.",
+    "prompt": "[Chorus]\nஇகல் என்ப எல்லா உயிர்க்கும் (பகல் என்னும்)\nபண்பின்மை பாரிக்கும் நோய்\nஇகல் என்ப எல்லா உயிர்க்கும் (பகல் என்னும்)\nபண்பின்மை பாரிக்கும் நோய்\n\n[Verse 1]\nஇன்பத்துள் இன்பம் பயக்கும் (இகல் என்னும்)\nதுன்பத்துள் துன்பங் கெடின்\nஇன்பத்துள் இன்பம் பயக்கும் (இகல் என்னும்)\nதுன்பத்துள் துன்பங் கெடின்\n\nஇகலானாம் இன்னாத எல்லாம் (நகலானாம்)\nநன்னயம் என்னும் செருக்கு\nஇகலானாம் இன்னாத எல்லாம் (நகலானாம்)\nநன்னயம் என்னும் செருக்கு\n\n[Chorus]\nஇகல் என்ப எல்லா உயிர்க்கும் (பகல் என்னும்)\nபண்பின்மை பாரிக்கும் நோய்\nஇகல் என்ப எல்லா உயிர்க்கும் (பகல் என்னும்)\nபண்பின்மை பாரிக்கும் நோய்\n\n[Verse 2]\nபகல்கருதிப் பற்றா செயினும் (இகல்கருதி)\nஇன்னாசெய் யாமை தலை\nபகல்கருதிப் பற்றா செயினும் (இகல்கருதி)\nஇன்னாசெய் யாமை தலை\n\nஇகல் எதிர் சாய்ந்தொழுக வல்லாரை (யாரே)\nமிகல் ஊக்கும் தன்மை யவர்\nஇகல் என்னும் எவ்வநோய் நீக்கின் (தவலில்லா)\nதாவில் விளக்கம் தரும்\n\n[Chorus]\nஇகல் என்ப எல்லா உயிர்க்கும் (பகல் என்னும்)\nபண்பின்மை பாரிக்கும் நோய்\nஇகல் என்ப எல்லா உயிர்க்கும் (பகல் என்னும்)\nபண்பின்மை பாரிக்கும் நோய்\n\n[Verse 3]\nஇகலின் மிகலினிது என்பவன் (வாழ்க்கை)\nதவலும் கெடலும் நணித்து\nமிகல்மேவல் மெய்ப்பொருள் காணார் (இகல்மேவல்)\nஇன்னா அறிவி னவர்\n\nஇகலிற்கு எதிர்சாய்தல் ஆக்கம் (அதனை)\nமிக்லூக்கின் ஊக்குமாம் கேடு\nஇகல்காணான் ஆக்கம் வருங்கால் (அதனை)\nமிகல்காணும் கேடு தரற்கு\n\n[Chorus]\nஇகல் என்ப எல்லா உயிர்க்கும் (பகல் என்னும்)\nபண்பின்மை பாரிக்கும் நோய்\nஇகல் என்ப எல்லா உயிர்க்கும் (பகல் என்னும்)\nபண்பின்மை பாரிக்கும் நோய்",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 292.8,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "airbrush",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-29T03:35:27.191Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "1980s pop, synth-pop",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

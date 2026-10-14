@@ -1,0 +1,160 @@
+{
+  "status": "complete",
+  "title": "தெரிந்து தெளிதல் 1D",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "ad228df6-bb2f-49d3-af53-6e5cb95f44df",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/ad228df6-bb2f-49d3-af53-6e5cb95f44df.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_ad228df6-bb2f-49d3-af53-6e5cb95f44df.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_ad228df6-bb2f-49d3-af53-6e5cb95f44df.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Minimalist post-genre vocal music, breathless close-mic ensemble voices darting through wide empty space, sparse plucked strings and sub pulses, frantic irregular hand percussion, rapid unmetered surges, dry intimate mix with sharp echoes",
+    "prompt": "[Chorus]\nகுணம்நாடிக் குற்றமும் நாடி (அவற்றுள்)\nமிகைநாடி மிக்க கொளல்\nகுணம்நாடிக் குற்றமும் நாடி (அவற்றுள்)\nமிகைநாடி மிக்க கொளல்\n\n[Verse 1]\nஅரியகற்று ஆசற்றார் கண்ணும் (தெரியுங்கால்)\nஇன்மை அரிதே வெளிறு\nஅரியகற்று ஆசற்றார் கண்ணும் (தெரியுங்கால்)\nஇன்மை அரிதே வெளிறு\n\nஅறம்பொருள் இன்பம் உயிரச்சம் (நான்கின்)\nதிறந்தெரிந்து தேறப் படும்\nஅறம்பொருள் இன்பம் உயிரச்சம் (நான்கின்)\nதிறந்தெரிந்து தேறப் படும்\n\n[Chorus]\nகுணம்நாடிக் குற்றமும் நாடி (அவற்றுள்)\nமிகைநாடி மிக்க கொளல்\nகுணம்நாடிக் குற்றமும் நாடி (அவற்றுள்)\nமிகைநாடி மிக்க கொளல்\n\n[Bridge]\nபெருமைக்கும் ஏனைச் சிறுமைக்கும் (தத்தம்)\nகருமமே கட்டளைக் கல்\nபெருமைக்கும் ஏனைச் சிறுமைக்கும் (தத்தம்)\nகருமமே கட்டளைக் கல்\n\nகுடிப்பிறந்து குற்றத்தின் நீங்கி (வடுப்பரியும்)\nநாணுடையான் சுட்டே தெளிவு\nதேறற்க யாரையும் தேராது (தேர்ந்தபின்)\nதேறுக தேறும் பொருள்\n\n[Chorus]\nகுணம்நாடிக் குற்றமும் நாடி (அவற்றுள்)\nமிகைநாடி மிக்க கொளல்\nகுணம்நாடிக் குற்றமும் நாடி (அவற்றுள்)\nமிகைநாடி மிக்க கொளல்\n\n[Verse 2]\nஅற்றாரைத் தேறுதல் ஓம்புக (மற்றவர்)\nபற்றிலர் நாணார் பழி\nகாதன்மை கந்தா அறிவறியார்த் (தேறுதல்)\nபேதைமை எல்லாந் தரும்\n\nதேரான் பிறனைத் தெளிந்தான் (வழிமுறை)\nதீரா இடும்பை தரும்\nதேரான் தெளிவும் தெளிந்தான்கண் (ஐயுறவும்)\nதீரா இடும்பை தரும்\n\n[Chorus]\nகுணம்நாடிக் குற்றமும் நாடி (அவற்றுள்)\nமிகைநாடி மிக்க கொளல்\nகுணம்நாடிக் குற்றமும் நாடி (அவற்றுள்)\nமிகைநாடி மிக்க கொளல்",
+    "type": "gen",
+    "duration": 153.56,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "minimal_album_art",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-20T04:37:07.779Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

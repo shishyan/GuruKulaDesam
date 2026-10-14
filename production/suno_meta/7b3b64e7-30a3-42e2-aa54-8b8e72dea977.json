@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "திருக்குறள் கல்வி 1E5 Golden 2026",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "7b3b64e7-30a3-42e2-aa54-8b8e72dea977",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/7b3b64e7-30a3-42e2-aa54-8b8e72dea977.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/7b3b64e7-30a3-42e2-aa54-8b8e72dea977.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_7b3b64e7-30a3-42e2-aa54-8b8e72dea977.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_7b3b64e7-30a3-42e2-aa54-8b8e72dea977.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "European Symphony Orchestra",
+    "negative_tags": "",
+    "prompt": "[Verse 1]\nகண்ணுடையர் என்பவர் கற்றோர் (முகத்து இரண்டு)\nபுண்ணுடையர் கல்லாதவர்\nகண்ணுடையர் என்பவர் கற்றோர் (முகத்து இரண்டு)\nபுண்ணுடையர் கல்லாதவர்\nத்\nதொட்டனைத்து ஊறும் மணற்கேணி (மாந்தர்க்கு)\nகற்றனைத்து ஊறும் அறிவு\nதொட்டனைத்து ஊறும் மணற்கேணி (மாந்தர்க்கு)\nகற்றனைத்து ஊறும் அறிவு\n\n[Chorus]\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக\n\n[Verse 2]\nஎண்ணென்ப ஏனை எழுத்தென்ப (இவ்விரண்டும்)\nகண்ணென்ப வாழும் உயிர்க்கு\nஉடையார்முன் இல்லார்போல் ஏக்கற்றும் (கற்றார்)\nகடையரே கல்லாதவர்\nஉவப்பத் தலைக்கூடி உள்ளப் (பிரிதல்)\nஅனைத்தே புலவர் தொழில்\nயாதானும் நாடாமால் ஊராமால் (என் ஒருவன்)\nசாந்துணையும் கல்லாத வாறு\n\n[Chorus]\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக\n\n[Verse 3]\nஒருமைக்கண் தான்கற்ற கல்வி (ஒருவற்3)\nஎழுமையும் ஏமாப்பு உடைத்து\nதாம் இன்புறுவது உலகு இன்புறக் (கண்டு)\nகாமுறுவர் கற்றறிந்தார்\nகேடில் விழுச்செல்வம் கல்வி (ஒருவற்கு)\nமாடல்ல மற்றையவை\nகேடில் விழுச்செல்வம் கல்வி (ஒருவற்கு)\nமாடல்ல மற்றையவை\n\n[Chorus]\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக\nகற்க கசடறக் கற்பவை (கற்றபின்)\nநிற்க அதற்குத் தக",
+    "type": "studio_export",
+    "duration": 363.26458333333335,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "3095b770-878f-400c-bccf-60a9d21fc74e",
+    "studio_project_version_id": "382fad3c-a66d-4683-8955-9ba0813b11e0",
+    "studio_project_start_beats": -0.023254912600286812,
+    "studio_project_end_beats": 405.6221788419987,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-12T19:36:49.091Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

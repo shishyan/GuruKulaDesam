@@ -1,0 +1,517 @@
+{
+  "responseContext": {
+    "serviceTrackingParams": [
+      {
+        "service": "GFEEDBACK",
+        "params": [
+          {
+            "key": "browse_id",
+            "value": "MPREb_zOXoDZxwePN"
+          },
+          {
+            "key": "browse_id_prefix",
+            "value": ""
+          },
+          {
+            "key": "has_unlimited_entitlement",
+            "value": "False"
+          },
+          {
+            "key": "logged_in",
+            "value": "0"
+          },
+          {
+            "key": "e",
+            "value": "23804281,24004644,24077241,24108447,24290153,51063643,51098299,51115184,51178320,51178331,51178340,51178357,51183910,51222973,51227037,51256074,51257946,51313109,51340662,51349914,51366423,51367487,51372971,51389629,51425034,51441710,51490331,51505436,51509946,51530495,51530538,51534669,51549695,51565115,51583821,51588875,51589585,51593027,51607676,51622844,51628154,51628206,51638934,51646764,51646771,51648336,51663860,51665353,51672162,51672213,51675271,51678603,51681662,51683502,51684148,51684153,51690391,51693403,51704025,51737134,51750310,51752068,51755949,51760849,51765033,51773952,51774279,51776922,51777588,51778339,51779436,51784229,51785793,51795483,51798928,51803127,51820847,51842422,51849937,51868228,51869564,51874028,51875250,51875295,51884627,51887250,51887260,51887423,51887438,51891101,51895405,51901434,51902662,51902977,51906770,51910736,51920399,51922834,51928387,51941004,51943911,51945056,51953168,51953630,51955472,51962117,51966342,51972519,51977609,51980559,51981844,51981875,51982288,51982291,51982294,51982297,51982300,51983366,51984718,51989085,51992967,51998440,52001055,52001116,52001176,52001198,52001205,52002806,52005694,52010784,52010791,52012523,52013762,52016057,52016136,52016272,52017300,52023647,52025914,52038830,52038835,52040391,52042675,52046518,52056767,52059654,52063678,52065017,52066751,52073039,52074572,52079165,52079166,52090748,52093098,52097747,52100942,52104007,52107081,52108890,52110517,52112858,52112905,52112912,52113838,52126797,52130289,52132168,52132681,52132686,52132693,52132702,52133397,52133398,52144730,52149916,52150183,52151351,52152522,52152927,52154460,52155027,52155329,52157884,52157891,52159993,52164941,52166153,52166741,52167779,52168100,52170429,52173716,52179914,52180306,52182655,52182931,52184231,52185613,52189362,52189711,52193929,52194648,52195321,52196741,52199487,52203124,52203135,52206032,52208451,52211481,52212108,52212462,52213573,52214851,52216553,52218112,52219399,52221246,52221312,52222433,52224663,52225511,52225513,52226598,52227284,52227813,52227840,52227847,52228935,52229303,52229410,52231145,52232653,52233680,52235128,52235282,52235328,52236632,52237210,52238391,52238975,52239497,52244158,52244409,52244676,52245111,52245123,52245172,52246150,52247206,52247387,52248738,52248798,52248847,52249108,52250513,52251276,52253867,52253873,52255012,52256254,52257102,52261254,52262922,52262931,52263381,52264119,52265465,52267239,52268056,52270832,52270896,52271065,52272501,52274264,52283770,52284511,52285176,52286343,52287545,52287836,100670348"
+          }
+        ]
+      },
+      {
+        "service": "CSI",
+        "params": [
+          {
+            "key": "c",
+            "value": "WEB_CREATOR"
+          },
+          {
+            "key": "cver",
+            "value": "1.20261005.04.01"
+          },
+          {
+            "key": "yt_li",
+            "value": "0"
+          },
+          {
+            "key": "GetBrowseAlbumDetailPage_rid",
+            "value": "0x53d7dd8f56c398f8"
+          }
+        ]
+      },
+      {
+        "service": "GUIDED_HELP",
+        "params": [
+          {
+            "key": "logged_in",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "service": "ECATCHER",
+        "params": [
+          {
+            "key": "client.version",
+            "value": "1.20261005"
+          },
+          {
+            "key": "client.name",
+            "value": "WEB_CREATOR"
+          }
+        ]
+      }
+    ],
+    "responseId": "IhMIsICe6uWvlwMVJJxsCR0o4TAy",
+    "webResponseContextExtensionData": {
+      "hasDecorated": true
+    }
+  },
+  "contents": {
+    "singleColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "trackingParams": "CAUQ8JMBGCoiEwiwgJ7q5a-XAxUknGwJHSjhMDI="
+          }
+        }
+      ]
+    }
+  },
+  "trackingParams": "CAAQhGciEwiwgJ7q5a-XAxUknGwJHSjhMDLKAQT_46UK",
+  "frameworkUpdates": {
+    "entityBatchUpdate": {
+      "mutations": [
+        {
+          "entityKey": "Eg1iX3pPWG9EWnh3ZVBOIBMoAQ%3D%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicAlbumReleaseUserDetail": {
+              "id": "Eg1iX3pPWG9EWnh3ZVBOIBMoAQ%3D%3D",
+              "inLibrary": false,
+              "albumRelease": "Eg1iX3pPWG9EWnh3ZVBOIBEoAQ%3D%3D"
+            }
+          }
+        },
+        {
+          "entityKey": "EhhVQzVMRlFfTk1ORG45Vm11WnA5YmxlNGcgFCgB",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicArtist": {
+              "id": "EhhVQzVMRlFfTk1ORG45Vm11WnA5YmxlNGcgFCgB",
+              "name": "Guru Kula Desam",
+              "thumbnailDetails": {
+                "thumbnails": [
+                  {
+                    "url": "https://yt3.googleusercontent.com/rl9cTZTc86csnRkcv9r67qJ_jkTZqAq3bewQ8FMb2nor0ZxetpUAOdccSagJaskOxDNBUASdosc=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/rl9cTZTc86csnRkcv9r67qJ_jkTZqAq3bewQ8FMb2nor0ZxetpUAOdccSagJaskOxDNBUASdosc=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/rl9cTZTc86csnRkcv9r67qJ_jkTZqAq3bewQ8FMb2nor0ZxetpUAOdccSagJaskOxDNBUASdosc=w180-h180-l90-rj",
+                    "width": 180,
+                    "height": 180
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/rl9cTZTc86csnRkcv9r67qJ_jkTZqAq3bewQ8FMb2nor0ZxetpUAOdccSagJaskOxDNBUASdosc=w302-h302-l90-rj",
+                    "width": 302,
+                    "height": 302
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/rl9cTZTc86csnRkcv9r67qJ_jkTZqAq3bewQ8FMb2nor0ZxetpUAOdccSagJaskOxDNBUASdosc=w544-h544-l90-rj",
+                    "width": 544,
+                    "height": 544
+                  }
+                ]
+              },
+              "externalChannelId": "UC5LFQ_NMNDn9VmuZp9ble4g"
+            }
+          }
+        },
+        {
+          "entityKey": "Ehd5UXdSMk1IdmlGSXx5UXdSMk1IdmlGSSAeKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicTrackUserDetail": {
+              "id": "Ehd5UXdSMk1IdmlGSXx5UXdSMk1IdmlGSSAeKAE%3D",
+              "parentTrack": "Ehd5UXdSMk1IdmlGSXx5UXdSMk1IdmlGSSAcKAE%3D",
+              "inLibrary": false,
+              "likeState": "MUSIC_ENTITY_LIKE_STATE_NEUTRAL"
+            }
+          }
+        },
+        {
+          "entityKey": "Egt5UXdSMk1IdmlGSSBkKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicShare": {
+              "id": "Egt5UXdSMk1IdmlGSSBkKAE%3D",
+              "serializedShareEntity": "Cgt5UXdSMk1IdmlGSQ%3D%3D"
+            }
+          }
+        },
+        {
+          "entityKey": "Egt5UXdSMk1IdmlGSSB5KAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicLibraryEdit": {
+              "id": "Egt5UXdSMk1IdmlGSSB5KAE%3D",
+              "addToLibraryFeedbackToken": "AB9zfpLspcgsz_ktbLigXbOZt-BusnYOjYrh0wI3T3EFYC6SJDNw0mrWfvWRtT3nIlHbL8CKNYzXXV2Nltnb6Jbi_8Hp49G-dw",
+              "removeFromLibraryFeedbackToken": "AB9zfpKLi9N-ZI9F4fNny8inaufWfI43SDvhmFGx9QajanVzZDIzvHMgZ7tBGX9mNx4Oq1neYKxYoh5lH3RCmFR2gL11i-h5BQ"
+            }
+          }
+        },
+        {
+          "entityKey": "Ehd5UXdSMk1IdmlGSXx5UXdSMk1IdmlGSSAcKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicTrack": {
+              "id": "Ehd5UXdSMk1IdmlGSXx5UXdSMk1IdmlGSSAcKAE%3D",
+              "title": "இரவு",
+              "thumbnailDetails": {
+                "thumbnails": [
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w180-h180-l90-rj",
+                    "width": 180,
+                    "height": 180
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w302-h302-l90-rj",
+                    "width": 302,
+                    "height": 302
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w544-h544-l90-rj",
+                    "width": 544,
+                    "height": 544
+                  }
+                ]
+              },
+              "artistNames": "Guru Kula Desam",
+              "videoId": "yQwR2MHviFI",
+              "audioModeVersion": "Ehd5UXdSMk1IdmlGSXx5UXdSMk1IdmlGSSAcKAE%3D",
+              "userDetails": "Ehd5UXdSMk1IdmlGSXx5UXdSMk1IdmlGSSAeKAE%3D",
+              "albumRelease": "Eg1iX3pPWG9EWnh3ZVBOIBEoAQ%3D%3D",
+              "albumTrackIndex": "1",
+              "lengthMs": "268000",
+              "contentRating": {
+                "explicitType": "MUSIC_ENTITY_EXPLICIT_TYPE_NOT_EXPLICIT"
+              },
+              "share": "Egt5UXdSMk1IdmlGSSBkKAE%3D",
+              "libraryEdit": "Egt5UXdSMk1IdmlGSSB5KAE%3D",
+              "radioAutomixPlaylistId": "RDAMVMyQwR2MHviFI",
+              "downloadMetadata": "Ehd5UXdSMk1IdmlGSXx5UXdSMk1IdmlGSSDqASgB",
+              "musicVideoType": "MUSIC_VIDEO_TYPE_ATV",
+              "albumTitle": "திருக்குறள் - இரவு 2026",
+              "playbackPosition": "Egt5UXdSMk1IdmlGSSBMKAE%3D",
+              "loggingDirectives": {
+                "trackingParams": "CAQQodUCIhMIsICe6uWvlwMVJJxsCR0o4TAymgEEEMLYAg=="
+              }
+            }
+          }
+        },
+        {
+          "entityKey": "EhdWU19OMWFMQmJDa3xWU19OMWFMQmJDayAeKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicTrackUserDetail": {
+              "id": "EhdWU19OMWFMQmJDa3xWU19OMWFMQmJDayAeKAE%3D",
+              "parentTrack": "EhdWU19OMWFMQmJDa3xWU19OMWFMQmJDayAcKAE%3D",
+              "inLibrary": false,
+              "likeState": "MUSIC_ENTITY_LIKE_STATE_NEUTRAL"
+            }
+          }
+        },
+        {
+          "entityKey": "EgtWU19OMWFMQmJDayBkKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicShare": {
+              "id": "EgtWU19OMWFMQmJDayBkKAE%3D",
+              "serializedShareEntity": "CgtWU19OMWFMQmJDaw%3D%3D"
+            }
+          }
+        },
+        {
+          "entityKey": "EgtWU19OMWFMQmJDayB5KAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicLibraryEdit": {
+              "id": "EgtWU19OMWFMQmJDayB5KAE%3D",
+              "addToLibraryFeedbackToken": "AB9zfpJugKhMMIUH0w8B_a6FxKpGoOLb6MPqzD2FXiBj243tNyFFByPd2Qck9shAn9yOx362ryiOojFVhNVN8jW03rrtml49ng",
+              "removeFromLibraryFeedbackToken": "AB9zfpKy47DzFF7lTYuZFB_svnLtsEujToxI79TO_DEsHZtQkTh7W6jAau8oZbgucCr3C1tdsPo_LgqP433fiDYs25U_0ZxRBA"
+            }
+          }
+        },
+        {
+          "entityKey": "EhdWU19OMWFMQmJDa3xWU19OMWFMQmJDayAcKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicTrack": {
+              "id": "EhdWU19OMWFMQmJDa3xWU19OMWFMQmJDayAcKAE%3D",
+              "title": "இரவு (Remix)",
+              "thumbnailDetails": {
+                "thumbnails": [
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w180-h180-l90-rj",
+                    "width": 180,
+                    "height": 180
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w302-h302-l90-rj",
+                    "width": 302,
+                    "height": 302
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w544-h544-l90-rj",
+                    "width": 544,
+                    "height": 544
+                  }
+                ]
+              },
+              "artistNames": "Guru Kula Desam",
+              "videoId": "VS_N1aLBbCk",
+              "audioModeVersion": "EhdWU19OMWFMQmJDa3xWU19OMWFMQmJDayAcKAE%3D",
+              "userDetails": "EhdWU19OMWFMQmJDa3xWU19OMWFMQmJDayAeKAE%3D",
+              "albumRelease": "Eg1iX3pPWG9EWnh3ZVBOIBEoAQ%3D%3D",
+              "albumTrackIndex": "2",
+              "lengthMs": "245000",
+              "contentRating": {
+                "explicitType": "MUSIC_ENTITY_EXPLICIT_TYPE_NOT_EXPLICIT"
+              },
+              "share": "EgtWU19OMWFMQmJDayBkKAE%3D",
+              "libraryEdit": "EgtWU19OMWFMQmJDayB5KAE%3D",
+              "radioAutomixPlaylistId": "RDAMVMVS_N1aLBbCk",
+              "downloadMetadata": "EhdWU19OMWFMQmJDa3xWU19OMWFMQmJDayDqASgB",
+              "musicVideoType": "MUSIC_VIDEO_TYPE_ATV",
+              "albumTitle": "திருக்குறள் - இரவு 2026",
+              "playbackPosition": "EgtWU19OMWFMQmJDayBMKAE%3D",
+              "loggingDirectives": {
+                "trackingParams": "CAMQodUCIhMIsICe6uWvlwMVJJxsCR0o4TAymgEEEMLYAg=="
+              }
+            }
+          }
+        },
+        {
+          "entityKey": "EhdtLUNMQkVESUV6NHxtLUNMQkVESUV6NCAeKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicTrackUserDetail": {
+              "id": "EhdtLUNMQkVESUV6NHxtLUNMQkVESUV6NCAeKAE%3D",
+              "parentTrack": "EhdtLUNMQkVESUV6NHxtLUNMQkVESUV6NCAcKAE%3D",
+              "inLibrary": false,
+              "likeState": "MUSIC_ENTITY_LIKE_STATE_NEUTRAL"
+            }
+          }
+        },
+        {
+          "entityKey": "EgttLUNMQkVESUV6NCBkKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicShare": {
+              "id": "EgttLUNMQkVESUV6NCBkKAE%3D",
+              "serializedShareEntity": "CgttLUNMQkVESUV6NA%3D%3D"
+            }
+          }
+        },
+        {
+          "entityKey": "EgttLUNMQkVESUV6NCB5KAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicLibraryEdit": {
+              "id": "EgttLUNMQkVESUV6NCB5KAE%3D",
+              "addToLibraryFeedbackToken": "AB9zfpKdZpTiDZpLrC8PaltnhuhYjFUQ-IxczyS5056O7Uo8b2BZeeOVXmJ7MWwouGKOJNrWmbRKMl53DS8oUViWoRybrH-ulA",
+              "removeFromLibraryFeedbackToken": "AB9zfpJb-SlEe0nbEjDwLeQ8eIIErL5jE89Ldgp89o5Ak4iXrfC2RwFN8BHkdcxZRMXWbdNGxWzBIfxdFVCQTCqi4wnpv5kgYA"
+            }
+          }
+        },
+        {
+          "entityKey": "EhdtLUNMQkVESUV6NHxtLUNMQkVESUV6NCAcKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicTrack": {
+              "id": "EhdtLUNMQkVESUV6NHxtLUNMQkVESUV6NCAcKAE%3D",
+              "title": "இரவு (II)",
+              "thumbnailDetails": {
+                "thumbnails": [
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w180-h180-l90-rj",
+                    "width": 180,
+                    "height": 180
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w302-h302-l90-rj",
+                    "width": 302,
+                    "height": 302
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w544-h544-l90-rj",
+                    "width": 544,
+                    "height": 544
+                  }
+                ]
+              },
+              "artistNames": "Guru Kula Desam",
+              "videoId": "m-CLBEDIEz4",
+              "audioModeVersion": "EhdtLUNMQkVESUV6NHxtLUNMQkVESUV6NCAcKAE%3D",
+              "userDetails": "EhdtLUNMQkVESUV6NHxtLUNMQkVESUV6NCAeKAE%3D",
+              "albumRelease": "Eg1iX3pPWG9EWnh3ZVBOIBEoAQ%3D%3D",
+              "albumTrackIndex": "3",
+              "lengthMs": "259000",
+              "contentRating": {
+                "explicitType": "MUSIC_ENTITY_EXPLICIT_TYPE_NOT_EXPLICIT"
+              },
+              "share": "EgttLUNMQkVESUV6NCBkKAE%3D",
+              "libraryEdit": "EgttLUNMQkVESUV6NCB5KAE%3D",
+              "radioAutomixPlaylistId": "RDAMVMm-CLBEDIEz4",
+              "downloadMetadata": "EhdtLUNMQkVESUV6NHxtLUNMQkVESUV6NCDqASgB",
+              "musicVideoType": "MUSIC_VIDEO_TYPE_ATV",
+              "albumTitle": "திருக்குறள் - இரவு 2026",
+              "playbackPosition": "EgttLUNMQkVESUV6NCBMKAE%3D",
+              "loggingDirectives": {
+                "trackingParams": "CAIQodUCIhMIsICe6uWvlwMVJJxsCR0o4TAymgEEEMLYAg=="
+              }
+            }
+          }
+        },
+        {
+          "entityKey": "Eg1iX3pPWG9EWnh3ZVBOIBIoAQ%3D%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicAlbumReleaseDetail": {
+              "id": "Eg1iX3pPWG9EWnh3ZVBOIBIoAQ%3D%3D",
+              "description": "",
+              "tracks": [
+                "Ehd5UXdSMk1IdmlGSXx5UXdSMk1IdmlGSSAcKAE%3D",
+                "EhdWU19OMWFMQmJDa3xWU19OMWFMQmJDayAcKAE%3D",
+                "EhdtLUNMQkVESUV6NHxtLUNMQkVESUV6NCAcKAE%3D"
+              ]
+            }
+          }
+        },
+        {
+          "entityKey": "EilPTEFLNXV5X21MWW9xNFUxUW9OSUlBWVhwNUlNLUNicVpJTGgzX1BUTSBkKAE%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicShare": {
+              "id": "EilPTEFLNXV5X21MWW9xNFUxUW9OSUlBWVhwNUlNLUNicVpJTGgzX1BUTSBkKAE%3D",
+              "serializedShareEntity": "EilPTEFLNXV5X21MWW9xNFUxUW9OSUlBWVhwNUlNLUNicVpJTGgzX1BUTQ%3D%3D"
+            }
+          }
+        },
+        {
+          "entityKey": "Eg1iX3pPWG9EWnh3ZVBOIBEoAQ%3D%3D",
+          "type": "ENTITY_MUTATION_TYPE_REPLACE",
+          "payload": {
+            "musicAlbumRelease": {
+              "id": "Eg1iX3pPWG9EWnh3ZVBOIBEoAQ%3D%3D",
+              "title": "திருக்குறள் - இரவு 2026",
+              "thumbnailDetails": {
+                "thumbnails": [
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w180-h180-l90-rj",
+                    "width": 180,
+                    "height": 180
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w302-h302-l90-rj",
+                    "width": 302,
+                    "height": 302
+                  },
+                  {
+                    "url": "https://yt3.googleusercontent.com/doLVuGlpdhCQv5MrE7CcPdSxU3EwZA59ihLzmLy1udmQHIugAShdXnENvTcmIt0qGlCUPd-FboMTZoM=w544-h544-l90-rj",
+                    "width": 544,
+                    "height": 544
+                  }
+                ]
+              },
+              "primaryArtists": [
+                "EhhVQzVMRlFfTk1ORG45Vm11WnA5YmxlNGcgFCgB"
+              ],
+              "details": "Eg1iX3pPWG9EWnh3ZVBOIBIoAQ%3D%3D",
+              "audioPlaylistId": "OLAK5uy_mCB5fTJl-NSRIQ2xdfImda3Ao_E2HBmug",
+              "userDetails": "Eg1iX3pPWG9EWnh3ZVBOIBMoAQ%3D%3D",
+              "trackCount": "3",
+              "artistDisplayName": "Guru Kula Desam",
+              "durationMs": "772000",
+              "releaseDate": {
+                "year": 2026,
+                "month": 10,
+                "day": 3
+              },
+              "contentRating": {
+                "explicitType": "MUSIC_ENTITY_EXPLICIT_TYPE_NOT_EXPLICIT"
+              },
+              "likeTargetPlaylistId": "OLAK5uy_mCB5fTJl-NSRIQ2xdfImda3Ao_E2HBmug",
+              "releaseType": "MUSIC_RELEASE_TYPE_SINGLE",
+              "radioPlaylistMixPlaylistId": "RDAMPLOLAK5uy_mLYoq4U1QoNIIAYXp5IM-CbqZILh3_PTM",
+              "radioAutomixPlaylistId": "RDAMPLOLAK5uy_mLYoq4U1QoNIIAYXp5IM-CbqZILh3_PTM",
+              "share": "EilPTEFLNXV5X21MWW9xNFUxUW9OSUlBWVhwNUlNLUNicVpJTGgzX1BUTSBkKAE%3D",
+              "musicLibraryStatusEntity": "Eg1iX3pPWG9EWnh3ZVBOIL4CKAE%3D",
+              "loggingDirectives": {
+                "trackingParams": "CAEQnNUCIhMIsICe6uWvlwMVJJxsCR0o4TAy"
+              }
+            }
+          }
+        }
+      ],
+      "timestamp": {
+        "seconds": "1791647172",
+        "nanos": 558963602
+      }
+    }
+  }
+}

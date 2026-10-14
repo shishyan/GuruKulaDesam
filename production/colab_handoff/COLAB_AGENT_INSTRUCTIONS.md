@@ -123,3 +123,30 @@ The local engine:
 5. Multiplexes the clean audio soundtrack.
 6. Writes final release to `renders/releases/<category>_<TRACK_ID>_master.mp4`.
 7. Enqueues for YouTube publishing across 8 rotating OAuth projects (80,000 daily quota pool).
+
+---
+
+## 6. STRICT ENFORCEMENT: ZERO 3-SCENE VIDEOS PUBLISHED
+
+A hard coded guard has been locked in `production/publish_all_masters.py` (`SCENE COUNT GUARD`):
+- Any video rendered with **<= 3 scenes is strictly BLOCKED from publishing**.
+- All 19 legacy 3-scene catalog videos on YouTube have already been retired to `unlisted`.
+- Every new video must have **at least 7 distinct scenes** to pass the publisher validation guard.
+
+---
+
+## 7. Autonomous Multi-Project YouTube Publisher Daemon
+
+The Colab / automation agent can run the publisher daemon directly:
+
+```bash
+# Launch multi-project publisher daemon:
+python -X utf8 production/publish_all_masters.py
+```
+
+### Key Daemon Capabilities:
+* **8-Project OAuth Quota Pool (80,000 units/day)**: Managed by `tools/quota_rotator.py`, rotating between `token_299653451385.json`, `token_866752763261.json`, etc.
+* **YouTube 24-Hour Velocity Standby**: When YouTube channel limits are reached (HTTP 400 upload limit), the daemon automatically enters a 30-minute rolling countdown and resumes publishing without human intervention.
+* **Strict Deduplication Guard**: Permanently skips the 112 tracks identified in `production/downloads_vs_youtube_audit.json` and any entry recorded in `production/youtube_published_registry.json`.
+* **Zero Burned Lyrics**: Only releases marked `clean_cinematic=True` with external metadata descriptions are published.
+

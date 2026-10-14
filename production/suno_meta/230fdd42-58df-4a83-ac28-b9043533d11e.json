@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "title": "ஸுப்ரஹ்மண்ய புஜங்க ப்ரயாத ஸ்தோத்ரம்",
+  "play_count": 1,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "230fdd42-58df-4a83-ac28-b9043533d11e",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/230fdd42-58df-4a83-ac28-b9043533d11e.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_230fdd42-58df-4a83-ac28-b9043533d11e.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_230fdd42-58df-4a83-ac28-b9043533d11e.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Temple bells, veena arpeggios, mridangam, tanpura drone, and layered strings; resonant male baritone with gentle devotional chanting and doubled refrains; warm analog saturation, spacious temple reverb, dense orchestral layering; laid-back rolling bhujanga-prayata pulse",
+    "prompt": "ப⁴ஜே(அ)ஹம் குமாரம் ப⁴வாநீகுமாரம்\nக³ளோல்லாஸிஹாரம் நமத்ஸத்³விஹாரம் ।\nரிபுஸ்தோமபாரம் ந்ருஸிம்ஹாவதாரம்\nஸதா³நிர்விகாரம் கு³ஹம் நிர்விசாரம் ॥ 1 ॥\n\nநமாமீஶபுத்ரம் ஜபாஶோணகா³த்ரம்\nஸுராராதிஶத்ரும் ரவீந்த்³வக்³நிநேத்ரம் ।\nமஹாப³ர்ஹிபத்ரம் ஶிவாஸ்யாப்³ஜமித்ரம்\nப்ரபா⁴ஸ்வத்களத்ரம் புராணம் பவித்ரம் ॥ 2 ॥\n\nஅநேகார்ககோடி-ப்ரபா⁴வஜ்ஜ்வலம் தம்\nமநோஹாரி மாணிக்ய பூ⁴ஷோஜ்ஜ்வலம் தம் ।\nஶ்ரிதாநாமபீ⁴ஷ்டம் நிஶாந்தம் நிதாந்தம்\nப⁴ஜே ஷண்முக²ம் தம் ஶரச்சந்த்³ரகாந்தம் ॥ 3 ॥\n\nக்ருபாவாரி கல்லோலபா⁴ஸ்வத்கடாக்ஷம்\nவிராஜந்மநோஹாரி ஶோணாம்பு³ஜாக்ஷம் ।\nப்ரயோக³ப்ரதா³நப்ரவாஹைகத³க்ஷம்\nப⁴ஜே காந்திகாந்தம் பரஸ்தோமரக்ஷம் ॥ 4 ॥\n\nஸுகஸ்தூரிஸிந்தூ³ரபா⁴ஸ்வல்லலாடம்\nத³யாபூர்ணசித்தம் மஹாதே³வபுத்ரம் ।\nரவீந்தூ³ள்லஸத்³ரத்நராஜத்கிரீடம்\nப⁴ஜே க்ரீடி³தாகாஶ க³ங்கா³த்³ரிகூடம் ॥ 5 ॥\n\nஸுகுந்த³ப்ரஸூநாவளீஶோபி⁴தாங்க³ம்\nஶரத்பூர்ணசந்த்³ரப்ரபா⁴காந்திகாந்தம் ।\nஶிரீஷப்ரஸூநாபி⁴ராமம் ப⁴வந்தம்\nப⁴ஜே தே³வஸேநாபதிம் வல்லப⁴ம் தம் ॥ 6 ॥\n\nஸுலாவண்யஸத்ஸூர்யகோடிப்ரதீகம்\nப்ரபு⁴ம் தாரகாரிம் த்³விஷட்³பா³ஹுமீஶம் ।\nநிஜாங்கப்ரபா⁴தி³வ்யமாநாபதீ³ஶம்\nப⁴ஜே பார்வதீப்ராணபுத்ரம் ஸுகேஶம் ॥ 7 ॥\n\nஅஜம் ஸர்வலோகப்ரியம் லோகநாத²ம்\nகு³ஹம் ஶூரபத்³மாதி³த³ம்போ⁴லிதா⁴ரம் ।\nஸுசாரும் ஸுநாஸாபுடம் ஸச்சரித்ரம்\nப⁴ஜே கார்திகேயம் ஸதா³ பா³ஹுலேயம் ॥ 8 ॥\n\nஶராரண்யஸம்பூ⁴தமிந்த்³ராதி³வந்த்³யம்\nத்³விஷட்³பா³ஹுஸங்க்²யாயுத⁴ஶ்ரேணிரம்யம் ।\nமருத்ஸாரதி²ம் குக்குடேஶம் ஸுகேதும்\nப⁴ஜே யோகி³ஹ்ருத்பத்³மமத்⁴யாதி⁴வாஸம் ॥ 9 ॥\n\nவிரிஞ்சீந்த்³ரவல்லீஶ தே³வேஶமுக்²யம்\nப்ரஶஸ்தாமரஸ்தோமஸம்ஸ்தூயமாநம் ।\nதி³ஶ த்வம் த³யாளோ ஶ்ரியம் நிஶ்சலாம் மே\nவிநா த்வாம் க³தி꞉ கா ப்ரபோ⁴ மே ப்ரஸீத³ ॥ 10 ॥\n\nபதா³ம்போ⁴ஜஸேவா ஸமாயாதப்³ருந்தா³-\nரகஶ்ரேணிகோடீரபா⁴ஸ்வல்லலாடம் ।\nகளத்ரோல்லஸத்பார்ஶ்வயுக்³மம் வரேண்யம்\nப⁴ஜே தே³வமாத்³யந்தஹீநப்ரபா⁴வம் ॥ 11 ॥\n\nப⁴வாம்போ⁴தி⁴மத்⁴யே தரங்கே³ பதந்தம்\nப்ரபோ⁴ மாம் ஸதா³ பூர்ணத்³ருஷ்ட்யா ஸமீக்ஷ்ய ।\nப⁴வத்³ப⁴க்திநாவோத்³த⁴ர த்வம் த³யாளோ\nஸுக³த்யந்தரம் நாஸ்தி தே³வ ப்ரஸீத³ ॥ 12 ॥\n\nக³ளே ரத்நபூ⁴ஷம் தநௌ மஞ்ஜுவேஷம்\nகரே ஜ்ஞாநஶக்திம் த³ரஸ்மேரமாஸ்யே ।\nகடிந்யஸ்தபாணிம் ஶிகி²ஸ்த²ம் குமாரம்\nப⁴ஜே(அ)ஹம் கு³ஹாத³ந்யதே³வம் ந மந்யே ॥ 13 ॥\n\nத³யாஹீநசித்தம் பரத்³ரோஹபாத்ரம்\nஸதா³ பாபஶீலம் கு³ரோர்ப⁴க்திஹீநம் ।\nஅநந்யாவளம்ப³ம் ப⁴வந்நேத்ரபாத்ரம்\nக்ருபாஶீல மாம் போ⁴ பவித்ரம் குரு த்வம் ॥ 14 ॥\n\nமஹாஸேந கா³ங்கே³ய வல்லீஸஹாய\nப்ரபோ⁴ தாரகாரே ஷடா³ஸ்யாமரேஶ ।\nஸதா³ பாயஸாந்நப்ரதா³தர்கு³ஹேதி\nஸ்மரிஷ்யாமி ப⁴க்த்யா ஸதா³ஹம் விபோ⁴ த்வாம் ॥ 15 ॥\n\nப்ரதாபஸ்ய பா³ஹோ நமத்³வீரபா³ஹோ\nப்ரபோ⁴ கார்திகேயேஷ்டகாமப்ரதே³தி ।\nயதா³ யே பட²ந்தே ப⁴வந்தம் ததே³வம்\nப்ரஸந்நஸ்து தேஷாம் ப³ஹுஶ்ரீம் த³தா³ஸி ॥ 16 ॥\n\nஅபாராதிதா³ரித்³ர்யவாராஶிமத்⁴யே\nப்⁴ரமந்தம் ஜநக்³ராஹபூர்ணே நிதாந்தம் ।\nமஹாஸேந மாமுத்³த⁴ர த்வம் கடாக்ஷா-\nவலோகேந கிஞ்சித்ப்ரஸீத³ ப்ரஸீத³ ॥ 17 ॥\n\nஸ்தி²ராம் தே³ஹி ப⁴க்திம் ப⁴வத்பாத³பத்³மே\nஶ்ரியம் நிஶ்சலாம் தே³ஹி மஹ்யம் குமார ।\nகு³ஹம் சந்த்³ரதாரம் ஸுவம்ஶாபி⁴வ்ருத்³தி⁴ம்\nகுரு த்வம் ப்ரபோ⁴ மே மந꞉ கல்பஸால꞉ ॥ 18 ॥\n\nநமஸ்தே நமஸ்தே மஹாஶக்திபாணே\nநமஸ்தே நமஸ்தே லஸத்³வஜ்ரபாணே ।\nநமஸ்தே நமஸ்தே கடிந்யஸ்தபாணே\nநமஸ்தே நமஸ்தே ஸதா³பீ⁴ஷ்டபாணே ॥ 19 ॥\n\nநமஸ்தே நமஸ்தே மஹாஶக்திதா⁴ரின்\nநமஸ்தே ஸுராணாம் மஹாஸௌக்²யதா³யின் ।\nநமஸ்தே ஸதா³ குக்குடேஶாக்²யக த்வம்\nஸமஸ்தாபராத⁴ம் விபோ⁴ மே க்ஷமஸ்வ ॥ 20 ॥\n\nகுமாராத்பரம் கர்மயோக³ம் ந ஜாநே\nகுமாராத்பரம் கர்மஶீலம் ந ஜாநே ।\nய ஏகோ முநீநாம் ஹ்ருத³ப்³ஜாதி⁴வாஸ꞉\nஶிவாங்கம் ஸமாருஹ்ய ஸத்பீட²கல்பம் ॥ 21 ॥\n\nவிரிஞ்சாய மந்த்ரோபதே³ஶம் சகார\nப்ரமோதே³ந ஸோ(அ)யம் தநோது ஶ்ரியம் மே ।\nயமாஹு꞉ பரம் வேத³ ஶூரேஷு முக்²யம்\nஸதா³ யஸ்ய ஶக்த்யா ஜக³த்பீ⁴தபீ⁴தா ॥ 22 ॥\n\nயமாஶ்ரித்ய தே³வா꞉ ஸ்தி²ரம் ஸ்வர்க³பாலா꞉\nஸதோ³ங்காரரூபம் சிதா³நந்த³மீடே³ ।\nகு³ஹஸ்தோத்ரமேதத் க்ருதம் தாரகாரே\nபு⁴ஜங்க³ப்ரயாதேந ஹ்ருத்³யேந காந்தம் ॥ 23 ॥\n\nஜநா யே பட²ந்தே மஹாப⁴க்தியுக்தா꞉\nப்ரமோதே³ந ஸாயம் ப்ரபா⁴தே விஶேஷ꞉ ।\nந ஜந்மர்க்ஷயோகே³ யதா³ தே ருதா³ந்தா\nமநோவாஞ்சி²தான் ஸர்வகாமான் லப⁴ந்தே ॥ 23 ॥\n\nஇதி ஶ்ரீ ஸுப்³ரஹ்மண்ய பு⁴ஜங்க³ ப்ரயாத ஸ்தோத்ரம் ।",
+    "type": "gen",
+    "duration": 282.4,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 0,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "minimal_album_art",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-17T10:05:51.484Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "devotional, classical, orchestral",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

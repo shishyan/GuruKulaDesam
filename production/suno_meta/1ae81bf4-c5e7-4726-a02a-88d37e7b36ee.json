@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "title": "வரைவின்மகளிர் 1C",
+  "play_count": 1,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "1ae81bf4-c5e7-4726-a02a-88d37e7b36ee",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/1ae81bf4-c5e7-4726-a02a-88d37e7b36ee.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_1ae81bf4-c5e7-4726-a02a-88d37e7b36ee.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_1ae81bf4-c5e7-4726-a02a-88d37e7b36ee.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Devotional Tamil classical arrangement with softened tape compression, measured unhurried pulse, piano carrying rounded chords and a restrained melody beneath deep brass swells, restrained hand percussion, male vocal in a clear, grounded register with deliberate phrasing.",
+    "prompt": "[Chorus]\nநிறைநெஞ்சம் இல்லவர் தோய்வார் (பிறநெஞ்சிற்)\nபேணிப் புணர்பவர் தோள்\nநிறைநெஞ்சம் இல்லவர் தோய்வார் (பிறநெஞ்சிற்)\nபேணிப் புணர்பவர் தோள்\n\n[Verse 1]\nபயன்தூக்கிப் பண்புரைக்கும் பண்பின் (மகளிர்)\nநயன்தூக்கி நள்ளா விடல்\nபயன்தூக்கிப் பண்புரைக்கும் பண்பின் (மகளிர்)\nநயன்தூக்கி நள்ளா விடல்\n\nபொருட்பொருளார் புன்னலந் தோயார் (அருட்பொருள்)\nஆயும் அறிவி னவர்\nபொருட்பொருளார் புன்னலந் தோயார் (அருட்பொருள்)\nஆயும் அறிவி னவர்\n\n[Chorus]\nநிறைநெஞ்சம் இல்லவர் தோய்வார் (பிறநெஞ்சிற்)\nபேணிப் புணர்பவர் தோள்\nநிறைநெஞ்சம் இல்லவர் தோய்வார் (பிறநெஞ்சிற்)\nபேணிப் புணர்பவர் தோள்\n\n[Verse 2]\nஅன்பின் விழையார் பொருள்விழையும் (ஆய்தொடியார்)\nஇன்சொல் இழுக்குத் தரும்\nவரைவிலா மாணிழையார் மென்தோள் (புரையிலாப்)\nபூரியர்கள் ஆழும் அளறு\n\nஇருமனப் பெண்டிரும் கள்ளும் (கவறும்)\nதிருநீக்கப் பட்டார் தொடர்பு\nஆயும் அறிவினர் அல்லார்க்கு (அணங்கென்ப)\nமாய மகளிர் முயக்கு\n\n[Chorus]\nநிறைநெஞ்சம் இல்லவர் தோய்வார் (பிறநெஞ்சிற்)\nபேணிப் புணர்பவர் தோள்\nநிறைநெஞ்சம் இல்லவர் தோய்வார் (பிறநெஞ்சிற்)\nபேணிப் புணர்பவர் தோள்\n\n[Verse 3]\nபொதுநலத்தார் புன்னலம் தோயார் (மதிநலத்தின்)\nமாண்ட அறிவி னவர்\nபொருட்பெண்டிர் பொய்ம்மை முயக்கம் (இருட்டறையில்)\nஏதில் பிணந்தழீஇ அற்று\n\nதந்நலம் பாரிப்பார் தோயார் (தகைசெருக்கிப்)\nபுன்னலம் பாரிப்பார் தோள்\nதந்நலம் பாரிப்பார் தோயார் (தகைசெருக்கிப்)\nபுன்னலம் பாரிப்பார் தோள்\n\n[Chorus]\nநிறைநெஞ்சம் இல்லவர் தோய்வார் (பிறநெஞ்சிற்)\nபேணிப் புணர்பவர் தோள்\nநிறைநெஞ்சம் இல்லவர் தோய்வார் (பிறநெஞ்சிற்)\nபேணிப் புணர்பவர் தோள்",
+    "type": "gen",
+    "duration": 302.76,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "minimal_album_art",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-29T21:16:05.364Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "classical, devotional",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

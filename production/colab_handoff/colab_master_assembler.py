@@ -12,15 +12,19 @@ import json
 import subprocess
 from pathlib import Path
 
-# Paths inside Colab
-BASE_DIR = Path("/content")
+import sys
+if sys.platform == "win32":
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+
+# Paths
+BASE_DIR = Path(".")
 CLIPS_DIR = BASE_DIR / "generated_clips"
-RELEASES_DIR = BASE_DIR / "releases"
+RELEASES_DIR = BASE_DIR / "renders" / "releases"
 RELEASES_DIR.mkdir(parents=True, exist_ok=True)
 TEMP_DIR = BASE_DIR / "temp_assembly"
 TEMP_DIR.mkdir(parents=True, exist_ok=True)
-
-DRIVE_DIR = Path("/content/drive/MyDrive/GuruKulaDesam_Releases")
 
 def get_media_duration(file_path: Path) -> float:
     cmd = [

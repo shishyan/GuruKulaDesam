@@ -1,0 +1,159 @@
+{
+  "status": "complete",
+  "title": "அபராதத்து ஆற்றாமை D",
+  "play_count": 3,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "7e5b7e0f-90d3-4ee0-8299-1a2656dfd2e5",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/7e5b7e0f-90d3-4ee0-8299-1a2656dfd2e5.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_7e5b7e0f-90d3-4ee0-8299-1a2656dfd2e5.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_7e5b7e0f-90d3-4ee0-8299-1a2656dfd2e5.jpeg",
+  "major_model_version": "v5.5",
+  "model_name": "chirp-fenix",
+  "metadata": {
+    "tags": "Piano Symphony Orchestra, Violin Performance, Indian Devotional Loss, Feeling of Separation, Mridangam, Trumphets, Drums, Feeling of Longing, Ghaita, Mukhavina, Taepyeongso, Hichiriki, Pungi, Zurna, Suona, Mizmar, Shawm, Bombarde",
+    "prompt": "[Intro]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\n\n[Verse]\nதூங்கினேன் சோம்பற்கு உறைவிடமானேன்\n(தோகையர் மயக்கிடையழுந்தி)\nஏங்கினேன் அவமே இருந்தனன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Verse]\nதுச்சிலை விரும்பித் துயர்கொளும் கொடியேன்\n(துட்டனேன் தூய்மையொன்றில்லா)\nஎச்சிலை அனையேன் பாவியேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\nபச்சிலை இடுவார் பக்கமே மருவும்\n(பரமனே எம்பசுபதியே)\nஅச்சிலை விரும்பும் அவருளத்தமுதே\n(ஐயனே ஒற்றியூர் அரைசே)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Verse]\nவாங்கி மேருவினை வளைத்திடும் பவள\n(மாமணிக் குன்றமே மருந்தே)\nஓங்கிவானளவும் பொழில்செறி ஒற்றியூர்\n(வரும் என்னுடை உயிரே)\n\nகரப்பவர்க்கெல்லாம் முற்படும்கொடிய\n(கடையனேன் விடையமே உடையேன்)\nஇரப்பவர்க்கணுவும் ஈந்திலேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Verse]\nதிரப்படும் கருணைச் செல்வமே சிவமே\n(தெய்வமே தெய்வநாயகமே)\nஉரப்படும் அன்பர் உள்ளொளி விளக்கே\n(ஒற்றியூர் வாழும்என் உவப்பே)\n\nஇல்லையென்பதனுக்கு அஞ்சிடேன் நாய்க்கும்\n(இணையிலேன் இழிவினேன் துயர்க்கோர்)\nஎல்லைமற்றறியேன் ஒதியனேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Verse]\nமண்ணிலே மயங்கும் மனத்தினை மீட்டுன்\n(மலரடி வழுத்திடச் சிறிதும்)\nஎண்ணிலேன் கொடிய ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\nவிண்ணிலே விளங்கும் ஒளியினுள் ஒளியே\n(விடையில்வந்தருள் விழிவிருந்தே)\nகண்ணிலே விளங்கும் அரும்பெறல் மணியே\n(காட்சியே ஒற்றியங்கரும்பே)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Verse]\nகல்லைவில்லாக்கும் கருணை வாரிதியே\n(கண்ணுதலுடைய செங்கனியே)\nதில்லைவாழ் அரசே தெய்வமா மணியே\n(திருவொற்றியூர் வரும்தேவே)\n\nமுட்டியே மடவார் முலைத்தலை உழக்கும்\n(மூடனேன் முழுப்புலை முறியேன்)\nஎட்டியே அனையேன் பாவியேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Verse]\nஒட்டியே அன்பர் உளத்தெழும் களிப்பே\n(ஒளிக்குளாம் சோதியே கரும்பின்)\nகட்டியே தேனே சடையுடைக்கனியே\n(காலமும் கடந்தவர் கருத்தே)\n\nகருதென அடியார் காட்டியும் தேறாக்\n(கன்மனக் குரங்கனேன் உதவா)\nஎருதென நின்றேன் பாவியேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Verse]\nமருதிடை நின்ற மாணிக்க மணியே\n(வன்பவம் தீர்த்திடும் மருந்தே)\nஒருதிறம் உடையோர் உள்ளத்துள் ஒளியே\n(ஒற்றியூர் மேவும்என் உறவே)\n\nகொய்துமா மலரிட்டருச்சனை புரிவோர்\n(கோலநெஞ்சொளிர் குணக்குன்றே)\nஉய்திறம் உடையோர் பரவுநல் ஒற்றியூர்\n(அகத்தமர்ந்தருள் ஒன்றே)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Verse]\nதெவ்வண மடவார் சீக்குழி விழுந்தேன்\n(தீயனேன் பேயனேன் சிறியேன்)\nஎவ்வணம் உய்வேன் என்செய்வேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\nஎவ்வணப் பொருப்பே என்னிரு கண்ணே\n(இடையிடர்ப்பசிய செம்பொன்னே)\nசெவ்வண மணியே திகழ்குணக் கடலே\n(திருவொற்றியூர்ச் செழுந்தேனே)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\n[Verse]\nவாதமே புரிவேன் கொடும்புலி அனையேன்\n(வஞ்சக மனத்தினேன் பொல்லா)\nஏதமே உடையேன் என்செய்வேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)\n\nபோதமே ஐந்தாம் பூதமே ஒழியாப்\n(புனிதமே புதுமணப் பூவே)\nபாதமே சரணம் சரணம்என் தன்னைப்\n(பாதுகாத்தளிப்பதுன் பரமே)\n\n[Chorus]\nவைதிலேன் வணங்காது இகழ்பவர் தம்மை\n(வஞ்சனேன் நின்னடியவர்பால்)\nஎய்திலேன் பேயேன் ஏழையேன் என்னை\n(என்செய்தால் தீருமோ அறியேன்)",
+    "type": "gen",
+    "duration": 479.4,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.6,
+      "weirdness_constraint": 0.6
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V5.5",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      },
+      "songrow": {
+        "display_name": "V5.5",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-07-21T20:17:02.617Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Indian Devotional, World Music, Orchestral",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

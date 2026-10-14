@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "title": "நெஞ்சொடுகிளத்தல் 1B Golden",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "d15df782-3dce-4aa0-bf05-9592c34dabb8",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/d15df782-3dce-4aa0-bf05-9592c34dabb8.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/d15df782-3dce-4aa0-bf05-9592c34dabb8.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_d15df782-3dce-4aa0-bf05-9592c34dabb8.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_d15df782-3dce-4aa0-bf05-9592c34dabb8.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Female vocal, unhurried lilting pulse, warm analog tape saturation, bamboo flutes in flowing melodic phrases over resonant sitar plucks.",
+    "prompt": "[Chorus]\nநினைத்தொன்று சொல்லாயோ நெஞ்சே  (எனைத்தொன்றும்)\nஎவ்வநோய் தீர்க்கும் மருந்து\nநினைத்தொன்று சொல்லாயோ நெஞ்சே  (எனைத்தொன்றும்)\nஎவ்வநோய் தீர்க்கும் மருந்து\n\n[Verse 1]\nசெற்றார் எனக்கை விடல்உண்டோ  (நெஞ்சேயாம்)\nஉற்றால் உறாஅதவர்\nசெற்றார் எனக்கை விடல்உண்டோ  (நெஞ்சேயாம்)\nஉற்றால் உறாஅதவர்\n\nகலந்துணர்த்தும் காதலர்க் கண்டாற்  (புலந்துணராய்)\nபொய்க்காய்வு காய்திஎன் நெஞ்சு\nகாமம் விடுஒன்றோ நாண்விடு  (நன்னெஞ்சே)\nயானோ பொறேன்இவ் விரண்டு\n\n[Chorus]\nநினைத்தொன்று சொல்லாயோ நெஞ்சே  (எனைத்தொன்றும்)\nஎவ்வநோய் தீர்க்கும் மருந்து\nநினைத்தொன்று சொல்லாயோ நெஞ்சே  (எனைத்தொன்றும்)\nஎவ்வநோய் தீர்க்கும் மருந்து\n\n[Verse 2]\nகாதல் அவரிலர் ஆகநீ  (நோவது)\nபேதைமை வாழியென் நெஞ்சு\nகாதல் அவரிலர் ஆகநீ  (நோவது)\nபேதைமை வாழியென் நெஞ்சு\n\nஇருந்துள்ளி என்பரிதல் நெஞ்சே  (பரிந்துள்ளல்)\nபைதல்நோய் செய்தார்கண் இல்\nகண்ணும் கொளச்சேறி நெஞ்சே  (இவையென்னைத்)\nதின்னும் அவர்க்காணல் உற்று\n\n[Chorus]\nநினைத்தொன்று சொல்லாயோ நெஞ்சே  (எனைத்தொன்றும்)\nஎவ்வநோய் தீர்க்கும் மருந்து\nநினைத்தொன்று சொல்லாயோ நெஞ்சே  (எனைத்தொன்றும்)\nஎவ்வநோய் தீர்க்கும் மருந்து\n\n[Verse 3]\nபரிந்தவர் நல்காரென்று ஏங்கிப்  (பிரிந்தவர்)\nபின்செல்வாய் பேதைஎன் நெஞ்சு\nபரிந்தவர் நல்காரென்று ஏங்கிப்  (பிரிந்தவர்)\nபின்செல்வாய் பேதைஎன் நெஞ்சு\n\nஉள்ளத்தார் காத லவரால்  (உள்ளிநீ)\nயாருழைச் சேறியென் நெஞ்சு\nதுன்னாத் துறந்தாரை நெஞ்சத்து  (உடையேமா)\nஇன்னும் இழத்தும் கவின்\n\n[Chorus]\nநினைத்தொன்று சொல்லாயோ நெஞ்சே  (எனைத்தொன்றும்)\nஎவ்வநோய் தீர்க்கும் மருந்து\nநினைத்தொன்று சொல்லாயோ நெஞ்சே  (எனைத்தொன்றும்)\nஎவ்வநோய் தீர்க்கும் மருந்து",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 358.56,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "minimal_album_art",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-06T09:00:07.442Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "world music, fusion",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

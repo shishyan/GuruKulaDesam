@@ -1,0 +1,128 @@
+{
+  "status": "complete",
+  "title": "248.3s Recording (Sep 21 @ 6:54 PM)",
+  "play_count": 2,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "e4be4ebb-ff34-498d-b796-8b2bf0abebb9",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/e4be4ebb-ff34-498d-b796-8b2bf0abebb9.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_e4be4ebb-ff34-498d-b796-8b2bf0abebb9.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_e4be4ebb-ff34-498d-b796-8b2bf0abebb9.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "A devotional song sung in Tamil by a solo male vocalist with a devotional delivery, with no instruments.",
+    "prompt": "[Verse]\nஒற்று ஒற்று தந்த பொருளையும் மற்றும் ஓர் ஒற்றினால் ஒற்றிக்கொல்\nஒற்று ஒற்று தந்த பொருளையும் மற்றும் ஓர் ஒற்றினால் ஒற்றிக்கொல்\n\n[Verse]\nஒற்றும் முறை சான்ற நூலும் இவை இரண்டும் தெற்றெண்க மன்னவன் கண்\nஒற்றும் முறை சான்ற நூலும் இவை இரண்டும் தெற்றெண்க மன்னவன் கண்\n\n[Verse]\nஒற்றினான் ஒற்றுப்பொருள் தெரியா மன்னவன் கொற்றம் கொலக்கிடந்தது இல்\nஒற்றினான் ஒற்றுப்பொருள் தெரியா மன்னவன் கொற்றம் கொலக்கிடந்தது இல்\n\n[Chorus]\nஒற்று ஒற்றி தந்த பொருளையும் மற்றும் ஓர் ஒற்றினால் ஒற்றிக்கொல்\nஒற்று ஒற்றி தந்த பொருளையும் மற்றும் ஓர் ஒற்றினால் ஒற்றிக்கொல்\n\n[Verse]\nஎல்லார்க்கும் எல்லாம் நிகழ்வவை யாம்நெறி வள்றிகள் வேந்தன் தொழில்\n\n[Verse]\nதுறந்தார் வடிவத்த ராகி இறந்தாராய்ந்து என்செய்நினும் சோர்விலது ஒற்று\nவினை செய்வார்தம் குற்றம் வேண்டாதோர் எந்நாங்கு அனைவரையும் ஆராய்வது ஒற்று\n\n[Verse]\nஒற்று ஏற்று உணராமை ஆளுகை உடன்மூவர் சொற்று ஒக்க தேரப்படும்\n\n[Verse]\nகடா உருவோடு கண் அஞ்சாது யாண்டும் காவை வல்லதே ஒற்று\n\n[Verse]\nசிறப்பறியாத ஒற்றின் கண் செயற்க்கை செயல் புறப்படுத்தானாகும் வரை\nமறைந்தவை கேட்க ஒற்றி அறிந்தவை ஐயப்பாடு இல்லதே ஒற்று\nமறைந்தவை கேட்க ஒற்றாகி அறிந்தவை ஐயப்பாடு இல்லதே ஒற்று",
+    "type": "upload",
+    "duration": 247.87997916666666,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "UPLOAD",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-21T13:25:03.624Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "devotional, devotional, male vocals, a cappella",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

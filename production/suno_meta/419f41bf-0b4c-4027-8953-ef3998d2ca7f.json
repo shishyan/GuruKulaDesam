@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "தெரிந்துசெயல்வகை 1M Golden 2026",
+  "play_count": 0,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "419f41bf-0b4c-4027-8953-ef3998d2ca7f",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/419f41bf-0b4c-4027-8953-ef3998d2ca7f.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/419f41bf-0b4c-4027-8953-ef3998d2ca7f.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_419f41bf-0b4c-4027-8953-ef3998d2ca7f.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_419f41bf-0b4c-4027-8953-ef3998d2ca7f.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "Carnatic Pop, electronic",
+    "negative_tags": "",
+    "prompt": "[Chorus]\nதெரிந்த இனத்தொடு தேர்ந்தெண்ணி (செய்வார்க்கு)\nஅரும்பொருள் யாதொன்றும் இல\nதெரிந்த இனத்தொடு தேர்ந்தெண்ணி (செய்வார்க்கு)\nஅரும்பொருள் யாதொன்றும் இல\n\n[Verse 1]\nநன்றாற்றல் உள்ளும் தவறுண்டு (அவரவர்)\nபண்பறிந்து ஆற்றாக் கடை\nநன்றாற்றல் உள்ளும் தவறுண்டு (அவரவர்)\nபண்பறிந்து ஆற்றாக் கடை\nஎள்ளாத எண்ணிச் செயல்வேண்டும் (தம்மோடு)\nகொள்ளாத கொள்ளாது உலகு\nஎள்ளாத எண்ணிச் செயல்வேண்டும் (தம்மோடு)\nகொள்ளாத கொள்ளாது உலக[Chorus]\nது\n\n[Chorus]\nதெெரரிநிந்த இனத்தொடு தேர்ந்தெண்ணி (செய்வார்க்கு)\nஅரும்பொருள் யாதொன்றும் இல\nதெரிந்த இனத்தொடு தேர்ந்தெண்ணி (செய்வார்க்கு)\nஅரும்பொருள் யாதொன்றும் இல\n\n[Verse 2]\nஎண்ணித் துணிக கருமம் (துணிந்தபின்)\nஎண்ணுவம் என்பது இழுக்கு\nஎண்ணித் துணிக கருமம் (துணிந்தபின்)\nஎண்ணுவம் என்பது இழுக்கு\nசெய்தக்க அல்ல செயக்கெடும் (செய்தக்க)\nசெய்யாமை யானும் கெடும்\nசெய்தக்க அல்ல செயக்கெடும் (செய்தக்க)\nசெய்யாமை யானும் கெடும்\n\n[Chorus]\nதெரிந்த இனத்தொடு தேர்ந்தெண்ணி (செய்வார்க்கு)\nஅரும்பொருள் யாதொன்றும் இல\nதெரிந்த இனத்தொடு தேர்ந்தெண்ணி (செய்வார்க்கு)\nஅரும்பொருள் யாதொன்றும் இல\n\n[Verse 3]\nஅழிவதூஉம் ஆவதூஉம் ஆகி (வழிபயக்கும்)\nஊதியமும் சூழ்ந்து செயல்\nஆக்கம் கருதி முதலிழக்கும் (செய்வினை)\nஊக்கார் அறிவுடை யார்\nஆற்றின் வருந்தா வருத்தம் (பலர்நின்று)\nபோற்றினும் பொத்துப் படும்\nவகையறச் சூழாது எழுதல் (பகைவரை)\nபாத்திப் படுப்பதோர் ஆறு\n\n[Chorus]\nதெரிந்த இனத்தொடு தேர்ந்தெண்ணி (செய்வார்க்கு)\nஅரும்பொருள் யாதொன்றும் இல\nதெரிந்த இனத்தொடு தேர்ந்தெண்ணி (செய்வார்க்கு)\nஅரும்பொருள் யாதொன்றும் இல",
+    "type": "studio_export",
+    "duration": 347.5822708333333,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "bc13dd6b-bf2c-483e-b9b3-adb3513bbc65",
+    "studio_project_version_id": "8226c700-6944-4bb9-910e-2105779efb66",
+    "studio_project_start_beats": 58.56592904306205,
+    "studio_project_end_beats": 788.4886563879762,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-19T08:34:24.682Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

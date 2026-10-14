@@ -1,0 +1,190 @@
+{
+  "status": "complete",
+  "title": "படர்மெலிந்திரங்கல் 1B Golden",
+  "play_count": 4,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "f5ab3b96-98b5-407e-b5c1-820561019a14",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/f5ab3b96-98b5-407e-b5c1-820561019a14.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_f5ab3b96-98b5-407e-b5c1-820561019a14.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_f5ab3b96-98b5-407e-b5c1-820561019a14.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Oratoria, measured processional pulse, wide orchestral hall reverb with clear vocal presence, female bass-baritone declamation shaped into verses and chorus, veena melodic lead over sweeping orchestral support.",
+    "prompt": "[Chorus]\nகாமக் கடும்புனல் நீந்திக் (கரைகாணேன்)\nயாமத்தும் யானே உளேன்\nகாமக் கடும்புனல் நீந்திக் (கரைகாணேன்)\nயாமத்தும் யானே உளேன்\n\n[Verse 1]\nகாமக்கடல் மன்னும் உண்டே (அதுநீந்தும்)\nஏமப்புணை மன்னும் இல்\nகாமக்கடல் மன்னும் உண்டே (அதுநீந்தும்)\nஏமப்புணை மன்னும் இல்\n\nகரத்தலும் ஆற்றேன் இந்நோயை (நோய் செய்தார்க்கு)\nஉரைத்தலும் நாணுத் தரும்\nகரத்தலும் ஆற்றேன் இந்நோயை (நோய் செய்தார்க்கு)\nஉரைத்தலும் நாணுத் தரும்\n\n[Chorus]\nகாமக் கடும்புனல் நீந்திக் (கரைகாணேன்)\nயாமத்தும் யானே உளேன்\nகாமக் கடும்புனல் நீந்திக் (கரைகாணேன்)\nயாமத்தும் யானே உளேன்\n\n[Verse 2]\nமன்னுயிர் எல்லாம் துயிற்றி (அளித்திரா)\nஎன்னல்லது இல்லை துணை\nமன்னுயிர் எல்லாம் துயிற்றி (அளித்திரா)\nஎன்னல்லது இல்லை துணை\n\nகாமமும் நாணும் உயிர்காவாத் (தூங்கும்என்)\nநோனா உடம்பின் அகத்து\nஇன்பம் கடல்மற்றுக் காமம் (அக்தடுங்கால்)\nதுன்பம் அதனிற் பெரிது\n\n[Chorus]\nகாமக் கடும்புனல் நீந்திக் (கரைகாணேன்)\nயாமத்தும் யானே உளேன்\nகாமக் கடும்புனல் நீந்திக் (கரைகாணேன்)\nயாமத்தும் யானே உளேன்\n\n[Verse 3]\nகொடியார் கொடுமையின் தாம்கொடிய (இந்நாள்)\nநெடிய கழியும் இரா\nதுப்பின் எவனாவர் மன்கொல் (துயர்வரவு)\nநட்பினுள் ஆற்று பவர்\n\nமறைப்பேன் மன்யான் இக்தோநோயை (இறைப்பவர்க்கு)\nஊற்றுநீர் போல மிகும்\nஉள்ளம்போன்று உள்வழிச் செல்கிற்பின் (வெள்ளநீர்)\nநீந்தல மன்னோஎன் கண்\n\n[Chorus]\nகாமக் கடும்புனல் நீந்திக் (கரைகாணேன்)\nயாமத்தும் யானே உளேன்\nகாமக் கடும்புனல் நீந்திக் (கரைகாணேன்)\nயாமத்தும் யானே உளேன்",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 353.72,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "film_strip",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-04T19:13:34.507Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Oratoria, classical, devotional",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

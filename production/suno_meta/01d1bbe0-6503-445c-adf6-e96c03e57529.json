@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "திருவருட்பா - திருமுல்லைவாயில் திருவிண்ணப்பம் (II)",
+  "play_count": 1,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "01d1bbe0-6503-445c-adf6-e96c03e57529",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/01d1bbe0-6503-445c-adf6-e96c03e57529.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/01d1bbe0-6503-445c-adf6-e96c03e57529.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_01d1bbe0-6503-445c-adf6-e96c03e57529.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_01d1bbe0-6503-445c-adf6-e96c03e57529.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "Sitar, Zurna, Suona, Mizmar, Shawm, Bombarde, Shehnai, Bamboo Flutes",
+    "negative_tags": "",
+    "prompt": "ருந்தே சற[Verse]\nதாயின் மேவிய (தற்பரமே முல்லை)\nவாயின் மேவிய (மாமணியே உன்தன்)\nகோயின் மேவிநின் (கோமலர்த் தாள்தொழா)\nதேயின் மேவியே (இருந்தனன் என்னையே)\n\n[Chorus]\nதேசுலாவிய (சீர் முல்லை வாயில்வாழ்)\nமாசிலாமணியே (மருந்தே சற்றும்)\nகூசிடாமல் நின் (கோயில் வந்துன்புகழ்)\nபேசிடாத பிழை (பொறுத்தாள்வையே)\n\n[Verse]\nமலைவிலா முல்லை (வாயிலில் மேவிய)\nவிலையிலா மணியே (விளக்கே சற்றும்)\nகுலைவிலாதவர் கூடும் (நின் கோயிலில்)\nதலைநிலாவத் தவம் (என்கொல் செய்ததே)\nவளங்கொளும் முல்லை (வாயிலில் மேவிய)\nகுளங்கொளும் கண்குரு (மணியே உனை)\nஉளம்கொளும் படிஉன் (தூயதிருக் கோயில் இங்)\nகளங்கொள் நெஞ்சினன் (கண்டதும் கண்டதே)\n\n[Chorus]\nதேசுலாவிய (சீர் முல்லை வாயில்வாழ்)\nமாசிலாமணியே (மருந்தே சற்றும்)\nகூசிடாமல் நின் (கோயில் வந்துன்புகழ்)\nபேசிடாத பிழை (பொறுத்தாள்வையே)\n\n[Verse]\nசீர்சிறக்கும் திரு (முல்லை வாயிலில்)\nஏர்சிறக்கும் இயன் (மணியே கொன்றைத்)\nதார்சிறக்கும் சடைக் (கனியே உன்தன்)\nஊர்சிறக்க உறுவ (தெவ் வண்ணமே)\nசேல்கொள் பொய்கைத் (திரு முல்லை வாயிலில்)\nபால்கொள் வண்ணப் (பரஞ் சுடர் ஏ விடை)\nமேல்கொள் சங்கரனே (விமலா உன்தன்)\nகால்கொள் அன்பர் (கலங்குதல் நன்றதோ)\n\n[Chorus]\nதேசுலாவிய (சீர் முல்லை வாயில்வாழ்)\nமாசிலாமணியே (மருந்தே சற்றும்)\nகூசிடாமல் நின் (கோயில் வந்துன்புகழ்)\nபேசிடாத பிழை (பொறுத்தாள்வையே)\n\n[Verse]\nவண்ணமா முல்லை (வாயிலின் மேவிய)\nஅண்ணலே அமுதே (அரைசே நுதல்)\nகண்ணனே உனைக் (காணவந் தோர்க்கெலாம்)\nநண்ணருந் துயர் (நல்குதல் நன்றதோ)\nமண்ணின் ஓங்கிவளர் (முல்லை வாயில்வாழ்)\nகண்ணுன் மாமணியே (கரும்பே உனை)\nஎண்ணும் அன்பர்இழி (வடைந்தால் அது)\nபண்ணும் நின்னருள் (பாரிடை வாழ்கவே)\n\n[Chorus]\nதேசுலாவிய (சீர் முல்லை வாயில்வாழ்)\nமாசிலாமணியே (மருந்தே சற்றும்)\nகூசிடாமல் நின் (கோயில் வந்துன்புகழ்)\nபேசிடாத பிழை (பொறுத்தாள்வையே)\n\n[Verse]\nதீதிலாத திரு (முல்லை வாயில்வாழ்)\nகோதிலாத குணப் (பெரும் குன்றமே)\nவாதிலா துனை (வாழ்த்தவந் தோர்தமை)\nஏதிலார் என்றிருப்பதும் (என்கொலோ)\nதில்லை வாய்ந்த (செழுங்கனியே திரு)\nமுல்லை வாயில் (முதல்சிவ மூர்த்தியே)\nதொல்லை யேன்உன் (தூய்திருக் கோயிலின்)\nஎல்லை சேரஇன்று (எத்தவம் செய்ததே)\n\n[Chorus]\nதேசுலாவிய (சீர் முல்லை வாயில்வாழ்)\nமாசிலாமணியே (மருந்தே சற்றும்)\nகூசிடாமல் நின் (கோயில் வந்துன்புகழ்)\nபேசிடாத பிழை (பொறுத்தாள்வையே)",
+    "type": "studio_export",
+    "duration": 260.484,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "549626ce-0c4a-4570-9e24-01fe12366827",
+    "studio_project_version_id": "68919514-a8ca-444f-b0aa-7ccf91fa110c",
+    "studio_project_start_beats": 60.03488572407246,
+    "studio_project_end_beats": 416.0296656404977,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-07-22T20:12:54.612Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "status": "complete",
+  "title": "கொல்லாமை  2A Golden (Remastered)",
+  "play_count": 5,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "90c3ebac-9646-4068-b446-348a59ac40a0",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/90c3ebac-9646-4068-b446-348a59ac40a0.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_90c3ebac-9646-4068-b446-348a59ac40a0.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_90c3ebac-9646-4068-b446-348a59ac40a0.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-halibut",
+  "metadata": {
+    "tags": "World, devotional",
+    "prompt": "[Chorus]\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\n\n[Verse 1]\nநிலைஅஞ்சி நீத்தாருள் எல்லாம் (கொலைஅஞ்சி)\nகொல்லாமை சூழ்வான் தலை\nஅறவினை யாதெனின் கொல்லாமை (கோறல்)\nபிறவினை எல்லாந் தரும்\nகொல்லாமை மேற்கொண்டு ஒழுகுவான் (வாழ்நாள்மேல்)\nசெல்லாது உயிருண்ணுங் கூற்று\nஒன்றாக நல்லது கொல்லாமை (மற்றதன்)\nபின்சாரப் பொய்யாமை நன்று\n\n[Chorus]\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\n\n[Verse 2]\nதன்னுயிர் நீப்பினும் செய்யற்க (தான்பிறிது)\nஇன்னுயிர் நீக்கும் வினை\nநல்லாறு எனப்படுவது யாதெனின் (யாதொன்றும்)\nகொல்லாமை சூழும் நெறி\nநன்றாகும் ஆக்கம் பெரிதெனினும் (சான்றோர்க்கு)\nகொன்றாகும் ஆக்கங் கடை\nகொலைவினையர் ஆகிய மாக்கள் (புலைவினையர்)\nபுன்மை தெரிவார் அகத்து\nஉயிர்உடம்பின் நீக்கியார் என்ப (செயிர்உடம்பின்)\nசெல்லாத்தீ வாழ்க்கை யவர்\n\n[Chorus]\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை\nபகுத்துண்டு பல்லுயிர் ஓம்புதல் (நூலோர்)\nதொகுத்தவற்றுள் எல்லாந் தலை",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "upsample",
+    "duration": 277.44,
+    "refund_credits": false,
+    "stream": false,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "upsample_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "upsample",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "variation_category": "normal",
+    "style_profile": "clarity",
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-14T20:12:27.381Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

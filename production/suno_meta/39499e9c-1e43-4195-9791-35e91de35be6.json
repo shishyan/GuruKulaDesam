@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "திருவருட்பா - அபராதத்து ஆற்றாமை 2026",
+  "play_count": 0,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "39499e9c-1e43-4195-9791-35e91de35be6",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/39499e9c-1e43-4195-9791-35e91de35be6.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/39499e9c-1e43-4195-9791-35e91de35be6.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_39499e9c-1e43-4195-9791-35e91de35be6.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_39499e9c-1e43-4195-9791-35e91de35be6.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "Indian Devotional, Ghaita, Mukhavina",
+    "negative_tags": "",
+    "prompt": "[Intro]\n[Solo violin melody with reverb, acoustic guitar strumming, synth pads]\n\n[Verse 1]\n[Male vocals enter]\nவைதிலேன் வணங்காது [Violin counter-melody]\nஇகழ்பவர் தம்மை\nவஞ்சனேன் நின்னடியவர் பால்\nஎய்திலேன் பேயேன் [Bass and light percussion enter]\nஏழையேன் என்னை\nஎன் செய்தாய் திரு ஐயாரே\n\n[Chorus]\n[Full drum kit enters, driving rhythm]\nஉச்சிலை விரும்பித்\nதுயர்க்கொடும் கொடியே\nதுப்பனேன் தூய்மையொன்றில்லா\nஎச்சிலை அனையேன்\nபாவியேன் என்னை\nஎன் செய்தாய் திரு ஐயாரே\n\n[Verse 2]\n[Acoustic guitar and violin continue]\nஅச்சிலையிடுவார்\nபக்கமே மருவும்\nபரமனே எம்பசுபதியே\nஅச்சிலை விரும்பு\nமவர்தம் முதே\nஅையனே ஒற்றியூரரசே\n\n[Chorus]\n[Full band arrangement, layered vocal harmonies]\nவைதிலேன் வணங்காது\nஇகழ்பவர் தம்மை\nவஞ்சனேன் நின்னடியவர் பால்\nஎய்திலேன் பேயேன்\nஏழையேன் என்னை\nஎன் செய்தாய் திரு ஐயாரே\n\n[Bridge]\n[Violin solo with rhythmic acoustic guitar]\nவாங்கி மேருவினை\nவளைத்திடும் பவளா\nமாமணிக் குன்றமே மருந்தே\nஓங்கி வந்தலமும்\nபொழில் செறி ஒற்றியூர்\nவரும் என்னுடை உயிரே\n\n[Outro]\n[Male vocals with emotional intensity]\nகற்பவர்க்கெல்லாம்\nமுற்படும் கொடியே\nகடையனேன் விடையமே உடையாய்\nஇறப்பவர் கழுவும்\nஈந்திலேன் என்னை\nவைதிலேன் வணங்காது\nஇகழ்பவர் தம்மை\nவஞ்சனேன் நின்னடியவர் பால்\nஎய்திலேன் பேயேன்\nஏழையேன் என்னை\nஎன் செய்தாய் திரு ஐயாரே\n[Violin fades out with sustained synth pad]",
+    "type": "studio_export",
+    "duration": 288.30635416666667,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "2abdb403-14c4-43a3-972c-27dd7da6f708",
+    "studio_project_version_id": "f673dcc3-f46a-451f-a163-af52c955c44b",
+    "studio_project_start_beats": 30.006858593856816,
+    "studio_project_end_beats": 400.0,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-07-22T16:53:41.993Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

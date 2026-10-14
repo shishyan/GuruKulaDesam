@@ -1,0 +1,173 @@
+{
+  "status": "complete",
+  "title": "வினைத்திட்பம் 1I",
+  "play_count": 1,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "d69f635a-979a-44fc-8f2a-31c421db1497",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/d69f635a-979a-44fc-8f2a-31c421db1497.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_d69f635a-979a-44fc-8f2a-31c421db1497.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_d69f635a-979a-44fc-8f2a-31c421db1497.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "South Indian Symphony",
+    "prompt": "[Chorus]\nசொல்லுதல் யார்க்கும் எளிய (அரியவாம்)\nசொல்லிய வண்ணம் செயல்\nசொல்லுதல் யார்க்கும் எளிய (அரியவாம்)\nசொல்லிய வண்ணம் செயல்\n\n[Verse 1]\nஎண்ணிய எண்ணியாங்கு எய்துவர் (எண்ணியார்)\nதிண்ணியர் ஆகப் பெறின்\nஎண்ணிய எண்ணியாங்கு எய்துவர் (எண்ணியார்)\nதிண்ணியர் ஆகப் பெறின்\n\nகலங்காது கண்ட வினைக்கண் (துளங்காது)\nதூக்கங் கடிந்து செயல்\nகலங்காது கண்ட வினைக்கண் (துளங்காது)\nதூக்கங் கடிந்து செயல்\n\n[Chorus]\nசொல்லுதல் யார்க்கும் எளிய (அரியவாம்)\nசொல்லிய வண்ணம் செயல்\nசொல்லுதல் யார்க்கும் எளிய (அரியவாம்)\nசொல்லிய வண்ணம் செயல்\n\n[Verse 2]\nஊறொரால் உற்றபின் ஒல்காமை (இவ்விரண்டின்)\nஆறென்பர் ஆய்ந்தவர் கோள்\nகடைக்கொட்கச் செய்தக்க தாண்மை (இடைக்கொட்கின்)\nஎற்றா விழுமந் தரும்\n\nவீறெய்தி மாண்டார் வினைத்திட்பம் (வேந்தன்கண்)\nஊறெய்தி உள்ளப் படும்\nஉருவுகண்டு எள்ளாமை வேண்டும் (உருள்பெருந்தேர்க்கு)\nஅச்சாணி அன்னார் உடைத்து\n\n[Chorus]\nசொல்லுதல் யார்க்கும் எளிய (அரியவாம்)\nசொல்லிய வண்ணம் செயல்\nசொல்லுதல் யார்க்கும் எளிய (அரியவாம்)\nசொல்லிய வண்ணம் செயல்\n\n[Bridge]\nவினைத்திட்பம் என்பது ஒருவன் (மனத்திட்பம்)\nமற்றைய எல்லாம் பிற\nஎனைத்திட்பம் எய்தியக் கண்ணும் (வினைத்திட்பம்)\nவேண்டாரை வேண்டாது உலகு\nதுன்பம் உறவரினும் செய்க (துணிவாற்றி)\nஇன்பம் பயக்கும் வினை\nதுன்பம் உறவரினும் செய்க (துணிவாற்றி)\nஇன்பம் பயக்கும் வினை\n\n[Chorus]\nசொல்லுதல் யார்க்கும் எளிய (அரியவாம்)\nசொல்லிய வண்ணம் செயல்\nசொல்லுதல் யார்க்கும் எளிய (அரியவாம்)\nசொல்லிய வண்ணம் செயல்",
+    "type": "gen",
+    "duration": 291.72,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 0
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "polaroid",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-22T18:02:19.423Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

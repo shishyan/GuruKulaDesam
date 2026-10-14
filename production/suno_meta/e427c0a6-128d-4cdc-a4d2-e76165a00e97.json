@@ -1,0 +1,175 @@
+{
+  "status": "complete",
+  "title": "காலமறிதல் 1G Golden",
+  "play_count": 3,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "e427c0a6-128d-4cdc-a4d2-e76165a00e97",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/e427c0a6-128d-4cdc-a4d2-e76165a00e97.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_e427c0a6-128d-4cdc-a4d2-e76165a00e97.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_e427c0a6-128d-4cdc-a4d2-e76165a00e97.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Carnatic oratorio, majestic male lead with formal choral responses, slow ceremonial pulse, resonant Thavil with forceful rolling strokes and piercing double-reed woodwind, sustained drone resonance, long-held vocal and instrumental tones, broad temple-like reverb, loud layered ensemble mix",
+    "prompt": "[Chorus]\nஅருவினை என்ப உளவோ (கருவியான்)\nகாலம் அறிந்து செயின்\nஅருவினை என்ப உளவோ (கருவியான்)\nகாலம் அறிந்து செயின்\n\n[Verse 1]\nஞாலம் கருதினும் கைகூடும் (காலம்)\nகருதி இடத்தால் செயின்\nஞாலம் கருதினும் கைகூடும் (காலம்)\nகருதி இடத்தால் செயின்\n\nகாலம் கருதி இருப்பர் (கலங்காது)\nஞாலம் கருது பவர்\nகாலம் கருதி இருப்பர் (கலங்காது)\nஞாலம் கருது பவர்\n\n[Chorus]\nஅருவினை என்ப உளவோ (கருவியான்)\nகாலம் அறிந்து செயின்\nஅருவினை என்ப உளவோ (கருவியான்)\nகாலம் அறிந்து செயின்\n\n[Bridge]\nபொள்ளென ஆங்கே புறம்வேரார் (காலம்பார்த்து)\nஉள்வேர்ப்பர் ஒள்ளி யவர்\nசெறுநரைக் காணின் சுமக்க (இறுவரை)\nகாணின் கிழக்காம் தலை\n\nஎய்தற்கு அரியது இயைந்தக்கால் (அந்நிலையே)\nசெய்தற்கு அரிய செயல்\nஎய்தற்கு அரியது இயைந்தக்கால் (அந்நிலையே)\nசெய்தற்கு அரிய செயல்\n\n[Chorus]\nஅருவினை என்ப உளவோ (கருவியான்)\nகாலம் அறிந்து செயின்\nஅருவினை என்ப உளவோ (கருவியான்)\nகாலம் அறிந்து செயின்\n\n[Verse 2]\nஊக்கம் உடையான் ஒடுக்கம் (பொருதகர்)\nதாக்கற்குப் பேரும் தகைத்து\nகொக்கொக்க கூம்பும் பருவத்து (மற்றதன்)\nகுத்தொக்க சீர்த்த இடத்து\n\nபகல்வெல்லும் கூகையைக் காக்கை (இகல்வெல்லும்)\nவேந்தர்க்கு வேண்டும் பொழுது\nபருவத்தோடு ஒட்ட ஒழுகல் (திருவினை)\nதீராமை ஆர்க்கும் கயிறு\n\n[Chorus]\nஅருவினை என்ப உளவோ (கருவியான்)\nகாலம் அறிந்து செயின்\nஅருவினை என்ப உளவோ (கருவியான்)\nகாலம் அறிந்து செயின்",
+    "type": "gen",
+    "duration": 241.6,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "scribbles",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-19T17:45:31.012Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Carnatic, oratorio",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

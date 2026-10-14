@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "title": "அவையறிதல் 1C Golden",
+  "play_count": 8,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "d7de5cf7-27ae-4c72-b221-a0a5657f700e",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/d7de5cf7-27ae-4c72-b221-a0a5657f700e.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/d7de5cf7-27ae-4c72-b221-a0a5657f700e.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_d7de5cf7-27ae-4c72-b221-a0a5657f700e.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_d7de5cf7-27ae-4c72-b221-a0a5657f700e.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "South Indian Orchestra Symphony, dark low-frequency percussion mix, measured ceremonial pulse, mridangam rhythmic patterns with deep drums and orchestral strings, female Carnatic soprano with gamaka and resonant sustained phrases",
+    "prompt": "[Chorus]\nஅவையறிந்து ஆராய்ந்து சொல்லுக (சொல்லின்)\nதொகையறிந்த தூய்மை யவர்\nஅவையறிந்து ஆராய்ந்து சொல்லுக (சொல்லின்)\nதொகையறிந்த தூய்மை யவர்\n\n[Verse 1]\nஇடைதெரிந்து நன்குணர்ந்து சொல்லுக (சொல்லின்)\nநடைதெரிந்த நன்மை யவர்\nஇடைதெரிந்து நன்குணர்ந்து சொல்லுக (சொல்லின்)\nநடைதெரிந்த நன்மை யவர்\n\nஅவையறியார் சொல்லல்மேற் கொள்பவர் (சொல்லின்)\nவகையறியார் வல்லதூஉம் இல்\nஅவையறியார் சொல்லல்மேற் கொள்பவர் (சொல்லின்)\nவகையறியார் வல்லதூஉம் இல்\n\nஉணர்வது உடையார்முன் சொல்லல் (வளர்வதன்)\nபாத்தியுள் நீர்சொரிந் தற்று\nஉணர்வது உடையார்முன் சொல்லல் (வளர்வதன்)\nபாத்தியுள் நீர்சொரிந் தற்று\n\n[Chorus]\nஅவையறிந்து ஆராய்ந்து சொல்லுக (சொல்லின்)\nதொகையறிந்த தூய்மை யவர்\nஅவையறிந்து ஆராய்ந்து சொல்லுக (சொல்லின்)\nதொகையறிந்த தூய்மை யவர்\n\n[Verse 2]\nஒளியார்முன் ஒள்ளிய ராதல் (வெளியார்முன்)\nவான்சுதை வண்ணம் கொளல்\nநன்றென்ற வற்றுள்ளும் நன்றே (முதுவருள்)\nமுந்து கிளவாச் செறிவு\n\nஆற்றின் நிலைதளர்ந் தற்றே (வியன்புலம்)\nஏற்றுணர்வார் முன்னர் இழுக்கு\nகற்றறிந்தார் கல்வி விளங்கும் (கசடறச்)\nசொல்தெரிதல் வல்லார் அகத்து\n\nபுல்லவையுள் பொச்சாந்தும் சொல்லற்க (நல்லவையுள்)\nநன்குசெலச் சொல்லு வார்\nஅங்கணத்துள் உக்க அமிழ்தற்றால் (தங்கணத்தார்)\nஅல்லார்முன் கோட்டி கொளல்\n\n[Chorus]\nஅவையறிந்து ஆராய்ந்து சொல்லுக (சொல்லின்)\nதொகையறிந்த தூய்மை யவர்\nஅவையறிந்து ஆராய்ந்து சொல்லுக (சொல்லின்)\nதொகையறிந்த தூய்மை யவர்",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 316.0,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "black_and_white_photograph",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-24T04:26:15.836Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "South Indian Orchestra, Carnatic, Symphony",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

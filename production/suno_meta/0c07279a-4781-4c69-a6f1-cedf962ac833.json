@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "title": "Recording (3)",
+  "play_count": 0,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "0c07279a-4781-4c69-a6f1-cedf962ac833",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/0c07279a-4781-4c69-a6f1-cedf962ac833.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_0c07279a-4781-4c69-a6f1-cedf962ac833.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_0c07279a-4781-4c69-a6f1-cedf962ac833.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "An a cappella classical song sung in Tamil by a solo male vocalist with an emotional delivery, with no instruments; devotional.",
+    "prompt": "[Verse 1]\nஅஹாவின்மையெல்லாம் உயிருக்கும்\nஎந்நாளும் தவாப் பிறப்பு ஈனும் வித்து\nஇன்பம் இடையறாது ஈண்டும்\nஅவா என்னும் துன்பத்துள்\nதுன்பம் கெடும்\n\n[Chorus]\nதூய்மை என்பது அவா வின்மை\nமற்றது வாய்மை வேண்டவரும்\nஅஞ்சுவது ஓரும் அறனே ஒருவனை\nவஞ்சுப்பது ஓரூர் அவா\n\n[Verse 2]\nவேண்டுங்கால் வேண்டும் பிறவாமை\nமற்றது வேண்டாமை வேண்டவரும்\nவேண்டாமை அன்ன விடுக செல்வம்\nஈண்டில்லை ஆண்டப்பத்தில்\n\n[Chorus]\nஅவா வினையற்ற அருப்பின் தவா வினை\nதான் வேண்டும் ஆற்றான் வரும்\nஅவா இல்லார்க்கு இல்லாகும் துன்பம்\nஅத்தொன்றே தவாது மேன்மேல் வரும்\n\n[Verse 3]\nஅற்றவர் என்பார் அவாற்றார்\nமற்றையார் அற்றாகற் றதில\nஆராய இயற்கை அவா நீப்பின்\nஅந்நிலையே பேரா இயற்கை தரும்",
+    "type": "upload",
+    "duration": 137.04533333333333,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "UPLOAD",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-11T13:45:26.747Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "classical, devotional, male vocals, a cappella",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

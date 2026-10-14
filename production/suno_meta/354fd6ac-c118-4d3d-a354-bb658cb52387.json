@@ -1,0 +1,187 @@
+{
+  "status": "complete",
+  "title": "சான்றாண்மை 1G",
+  "play_count": 2,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "354fd6ac-c118-4d3d-a354-bb658cb52387",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/354fd6ac-c118-4d3d-a354-bb658cb52387.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_354fd6ac-c118-4d3d-a354-bb658cb52387.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_354fd6ac-c118-4d3d-a354-bb658cb52387.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "South Indian classical, close-miked sitar strings with intimate resonance, restrained hand percussion and a measured, unhurried pulse; male voice in a steady, composed register with clear, devotional phrasing.",
+    "prompt": "[Chorus]\nகுணநலம் சான்றோர் நலனே (பிறநலம்)\nஎந்நலத்து உள்ளதூஉம் அன்று\nகுணநலம் சான்றோர் நலனே (பிறநலம்)\nஎந்நலத்து உள்ளதூஉம் அன்று\n\n[Verse 1]\nஇன்னா செய்தார்க்கும் இனியவே (செய்யாக்கால்)\nஎன்ன பயத்ததோ சால்பு\nசால்பிற்குக் கட்டளை யாதெனின் (தோல்வி)\nதுலையல்லார் கண்ணும் கொளல்\n\nசான்றவர் சான்றாண்மை குன்றின் (இருநிலந்தான்)\nதாங்காது மன்னோ பொறை\nசான்றவர் சான்றாண்மை குன்றின் (இருநிலந்தான்)\nதாங்காது மன்னோ பொறை\n\n[Chorus]\nகுணநலம் சான்றோர் நலனே (பிறநலம்)\nஎந்நலத்து உள்ளதூஉம் அன்று\nகுணநலம் சான்றோர் நலனே (பிறநலம்)\nஎந்நலத்து உள்ளதூஉம் அன்று\n\n[Verse 2]\nகொல்லா நலத்தது நோன்மை (பிறர்தீமை)\nசொல்லா நலத்தது சால்பு\nகடன்என்ப நல்லவை எல்லாம் (கடன்அறிந்து)\nசான்றாண்மை மேற்கொள் பவர்க்கு\n\nஆற்றுவார் ஆற்றல் பணிதல் (அதுசான்றோர்)\nமாற்றாரை மாற்றும் படை\nஇன்மை ஒருவற்கு இளிவன்று (சால்பென்னும்)\nதிண்மைஉண் டாகப் பெறின்\n\nஅன்புநாண் ஒப்புரவு கண்ணோட்டம் (வாய்மையொடு)\nஐந்துசால் ஊன்றிய தூண்\nஊழி பெயரினும் தாம்பெயரார் (சான்றாண்மைக்கு)\nஆழி எனப்படு வார்\n\n[Chorus]\nகுணநலம் சான்றோர் நலனே (பிறநலம்)\nஎந்நலத்து உள்ளதூஉம் அன்று\nகுணநலம் சான்றோர் நலனே (பிறநலம்)\nஎந்நலத்து உள்ளதூஉம் அன்று",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 279.64,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "polaroid",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-30T11:15:44.457Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

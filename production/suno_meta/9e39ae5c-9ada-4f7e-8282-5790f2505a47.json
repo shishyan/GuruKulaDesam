@@ -1,0 +1,174 @@
+{
+  "status": "complete",
+  "title": "பெண்வழிச்சேறல் 1M",
+  "play_count": 1,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "9e39ae5c-9ada-4f7e-8282-5790f2505a47",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/9e39ae5c-9ada-4f7e-8282-5790f2505a47.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_9e39ae5c-9ada-4f7e-8282-5790f2505a47.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_9e39ae5c-9ada-4f7e-8282-5790f2505a47.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Classic Hindi film romance, lush restrained strings with flute, sitar, gentle piano, brushed drums and tabla; elegant melodic prelude and interludes, memorable singable theme, warm harmonic modulations, unhurried peaceful sway; vintage acoustic character with clean modern fidelity; velvet male lead vocal with subtle doubling.",
+    "prompt": "[Chorus]\nமனைவிழைவார் மாண்பயன் எய்தார் (வினைவிழையார்)\nவேண்டாப் பொருளும் அது\nபெண்ணேவல் செய்தொழுகும் ஆண்மையின் (நாணுடை)\nபெண்ணே பெருமை உடைத்து\n\n[Verse 1]\nமனைவிழைவார் மாண்பயன் எய்தார் (வினைவிழையார்)\nவேண்டாப் பொருளும் அது\nபெண்ணேவல் செய்தொழுகும் ஆண்மையின் (நாணுடை)\nபெண்ணே பெருமை உடைத்து\n\nபேணாது பெண்விழைவான் ஆக்கம் (பெரியதோர்)\nநாணாக நாணுத் தரும்\nபேணாது பெண்விழைவான் ஆக்கம் (பெரியதோர்)\nநாணாக நாணுத் தரும்\n\nஇல்லாள்கண் தாழ்ந்த இயல்பின்மை (எஞ்ஞான்றும்)\nநல்லாருள் நாணுத் தரும்\nஇல்லாளை அஞ்சுவான் அஞ்சுமற்று  (எஞ்ஞான்றும்)\nநல்லார்க்கு நல்ல செயல்\n\n[Chorus]\nமனைவிழைவார் மாண்பயன் எய்தார் (வினைவிழையார்)\nவேண்டாப் பொருளும் அது\nபெண்ணேவல் செய்தொழுகும் ஆண்மையின் (நாணுடை)\nபெண்ணே பெருமை உடைத்து\n\n[Verse 2]\nஅறவினையும் ஆன்ற பொருளும் (பிறவினையும்)\nபெண்ஏவல் செய்வார்கண் இல்\nஇமையாரின் வாழினும் பாடிலரே (இல்லாள்)\nஅமையார்தோள் அஞ்சு பவர்\n\nஎண்சேர்ந்த நெஞ்சத் திடனுடையார்க்கு (எஞ்ஞான்றும்)\nபெண்சேர்ந்தாம் பேதைமை இல்\nநட்டார் குறைமுடியார் நன்றாற்றார் (நன்னுதலாள்)\nபெட்டாங்கு ஒழுகு பவர்\nமனையாளை அஞ்சும் மறுமை  (யிலாளன்)\nவினையாண்மை வீறெய்தல் இன்று\n\n[Chorus]\nமனைவிழைவார் மாண்பயன் எய்தார் (வினைவிழையார்)\nவேண்டாப் பொருளும் அது\nபெண்ணேவல் செய்தொழுகும் ஆண்மையின் (நாணுடை)\nபெண்ணே பெருமை உடைத்து",
+    "type": "gen",
+    "duration": 313.0,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "scribbles",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-29T20:04:54.585Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Hindi film, classical, acoustic",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

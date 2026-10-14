@@ -1,0 +1,132 @@
+{
+  "total_tracks": 3,
+  "target_scenes_per_track": 7,
+  "tracks": [
+    {
+      "track_id": "--4jzoezBW8",
+      "category": "thirukkural",
+      "title": "திருக்குறள்: அதிகாரம் 67 - வினைத்திட்பம் (Original)",
+      "scenes": [
+        {
+          "scene_num": 1,
+          "prompt": "Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. Wide aerial glide over majestic Western Ghats mountain ridges in ancient Tamil Nadu at predawn. Layered misty green peaks, morning clouds drifting gently across forested valleys, pristine mountain stream flowing through weathered granite boulders. 8k resolution, calm spiritual grandeur. *Exclusions:* No modern items, no roads, no buildings, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern items, no roads, no buildings, no text."
+        },
+        {
+          "scene_num": 2,
+          "prompt": "Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Ground-level slow dolly forward along an ancient carved granite courtyard surrounded by lush tropical trees and blooming parijatha flowers. Bronze oil lamps glow on stone ledges with natural flickering flames. An elder in traditional veshti sits in noble reflection with palm-leaf manuscripts. *Exclusions:* No morphing limbs, no text, no modern artifacts.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No morphing limbs, no text, no modern artifacts."
+        },
+        {
+          "scene_num": 3,
+          "prompt": "Create a single continuous 16:9 cinematic slow crane rise at 24 fps. Looking across a serene temple lotus tank reflecting the rising sun and distant Dravidian temple gopuram in soft mist. Profound inner peace, ethical clarity, timeless wisdom. *Exclusions:* No rapid motion, no modern artifacts, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No rapid motion, no modern artifacts, no text."
+        },
+        {
+          "scene_num": 4,
+          "prompt": "Wide low-angle dolly along ancient temple granite flagstones. Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. Wide aerial glide over majestic Western Ghats mountain ridges in ancient Tamil Nadu at predawn. Layered misty green peaks, morning clouds drifting gently across forested valleys, pristine mountain stream flowing through weathered granite boulders. 8k resolution, calm spiritual grandeur. *Exclusions:* No modern items, no roads, no buildings, no text.. illuminated by evening deepam oil lamps with sacred golden warmth.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern items, no roads, no buildings, no text."
+        },
+        {
+          "scene_num": 5,
+          "prompt": "Majestic telephoto tracking shot through sacred lotus pond. Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Ground-level slow dolly forward along an ancient carved granite courtyard surrounded by lush tropical trees and blooming parijatha flowers. Bronze oil lamps glow on stone ledges with natural flickering flames. An elder in traditional veshti sits in noble reflection with palm-leaf manuscripts. *Exclusions:* No morphing limbs, no text, no modern artifacts.. reflecting the towering Dravidian temple gopuram in gentle morning breeze.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No morphing limbs, no text, no modern artifacts."
+        },
+        {
+          "scene_num": 6,
+          "prompt": "Close atmospheric pan over bronze Kuthuvilakku oil lamps. Create a single continuous 16:9 cinematic slow crane rise at 24 fps. Looking across a serene temple lotus tank reflecting the rising sun and distant Dravidian temple gopuram in soft mist. Profound inner peace, ethical clarity, timeless wisdom. *Exclusions:* No rapid motion, no modern artifacts, no text.. sacred dhoopam sambrani incense smoke drifting softly against carved temple pillars.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No rapid motion, no modern artifacts, no text."
+        },
+        {
+          "scene_num": 7,
+          "prompt": "Slow cinematic crane rise looking out from the temple mandapam. Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. Wide aerial glide over majestic Western Ghats mountain ridges in ancient Tamil Nadu at predawn. Layered misty green peaks, morning clouds drifting gently across forested valleys, pristine mountain stream flowing through weathered granite boulders. 8k resolution, calm spiritual grandeur. *Exclusions:* No modern items, no roads, no buildings, no text.. panoramic view of Kaveri river ghats and coconut palm groves under soft dawn skies.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern items, no roads, no buildings, no text."
+        }
+      ]
+    },
+    {
+      "track_id": "-7ppYdnUdVk",
+      "category": "vallalar_cultural",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர்",
+      "scenes": [
+        {
+          "scene_num": 1,
+          "prompt": "Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. In a quiet, serene white marble and granite meditation hall at dawn, slow dolly forward toward a pure, steady golden flame glowing within an ancient bronze deepam. White lotus blossoms float peacefully in shallow brass vessels on the stone floor. Divine stillness and universal peace, 8k resolution. *Exclusions:* No text, no modern fixtures, no camera shake.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no modern fixtures, no camera shake."
+        },
+        {
+          "scene_num": 2,
+          "prompt": "Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Panoramic ground-level tracking shot across ancient emerald-green Tamil paddy fields bordered by majestic coconut palms and water lilies. Gentle calves and white cows graze peacefully in morning dew as farmers in simple cotton veshtis tend irrigation channels. Epitome of Jeeva Karunyam and rural harmony. *Exclusions:* No modern tractors, no plastic, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern tractors, no plastic, no text."
+        },
+        {
+          "scene_num": 3,
+          "prompt": "Create a single continuous 16:9 cinematic gentle crane rise at 24 fps. An ancient Tamil ashram hermitage surrounded by flowering jasmine gardens, banyan trees, and tranquil water tanks bathed in radiant morning sunlight. Complete spiritual clarity and grace. *Exclusions:* No rapid motion, no modern artifacts, no text.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No rapid motion, no modern artifacts, no text."
+        },
+        {
+          "scene_num": 4,
+          "prompt": "Wide low-angle dolly along ancient temple granite flagstones. Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. In a quiet, serene white marble and granite meditation hall at dawn, slow dolly forward toward a pure, steady golden flame glowing within an ancient bronze deepam. White lotus blossoms float peacefully in shallow brass vessels on the stone floor. Divine stillness and universal peace, 8k resolution. *Exclusions:* No text, no modern fixtures, no camera shake.. illuminated by evening deepam oil lamps with sacred golden warmth.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no modern fixtures, no camera shake."
+        },
+        {
+          "scene_num": 5,
+          "prompt": "Majestic telephoto tracking shot through sacred lotus pond. Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Panoramic ground-level tracking shot across ancient emerald-green Tamil paddy fields bordered by majestic coconut palms and water lilies. Gentle calves and white cows graze peacefully in morning dew as farmers in simple cotton veshtis tend irrigation channels. Epitome of Jeeva Karunyam and rural harmony. *Exclusions:* No modern tractors, no plastic, no text.. reflecting the towering Dravidian temple gopuram in gentle morning breeze.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No modern tractors, no plastic, no text."
+        },
+        {
+          "scene_num": 6,
+          "prompt": "Close atmospheric pan over bronze Kuthuvilakku oil lamps. Create a single continuous 16:9 cinematic gentle crane rise at 24 fps. An ancient Tamil ashram hermitage surrounded by flowering jasmine gardens, banyan trees, and tranquil water tanks bathed in radiant morning sunlight. Complete spiritual clarity and grace. *Exclusions:* No rapid motion, no modern artifacts, no text.. sacred dhoopam sambrani incense smoke drifting softly against carved temple pillars.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No rapid motion, no modern artifacts, no text."
+        },
+        {
+          "scene_num": 7,
+          "prompt": "Slow cinematic crane rise looking out from the temple mandapam. Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. In a quiet, serene white marble and granite meditation hall at dawn, slow dolly forward toward a pure, steady golden flame glowing within an ancient bronze deepam. White lotus blossoms float peacefully in shallow brass vessels on the stone floor. Divine stillness and universal peace, 8k resolution. *Exclusions:* No text, no modern fixtures, no camera shake.. panoramic view of Kaveri river ghats and coconut palm groves under soft dawn skies.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no modern fixtures, no camera shake."
+        }
+      ]
+    },
+    {
+      "track_id": "-9bZmHzYO2g",
+      "category": "vallalar_cultural",
+      "title": "திருவருட்பா: அபராத விண்ணப்பம் II",
+      "scenes": [
+        {
+          "scene_num": 1,
+          "prompt": "Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. In warm predawn indigo and amber temple light, show an ancient South Indian granite temple entrance. Slow forward dolly move through weathered stone pillars toward a sanctum glowing with bronze oil lamps. A brass dhoopam burner sits on a stone ledge, curling gentle translucent grey smoke toward the dawn air. Stone flagstones show subtle reflections of oil lamps. Restrained sacred reverence, natural lighting, 8k resolution. *Exclusions:* No text, no watermark, no digital zoom, no camera shake, no modern items.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no watermark, no digital zoom, no camera shake, no modern items."
+        },
+        {
+          "scene_num": 2,
+          "prompt": "Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Slow lateral slider move across an authentic granite shrine. Delicate garlands of fresh fragrant flowers (jasmine and red hibiscus) rest on brass ritual vessels. Natural warm flickering shadows from oil lamps dance along the carved stone reliefs. Faint incense smoke drifts gracefully across the beam of morning light. *Exclusions:* No morphing objects, no floating flowers, no cartoon style, no text, no modern artifacts.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No morphing objects, no floating flowers, no cartoon style, no text, no modern artifacts."
+        },
+        {
+          "scene_num": 3,
+          "prompt": "Create a single continuous 16:9 cinematic drone glide or gentle crane rise at 24 fps. Reveal the sacred gopuram tower silhouetted against the rising morning sun and distant Western Ghats mountain ridges. Soft mist drifts through the temple courtyard trees. Calm, profound spiritual tranquility. *Exclusions:* No rapid motion, no lens flare artifact, no text, no logos.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No rapid motion, no lens flare artifact, no text, no logos."
+        },
+        {
+          "scene_num": 4,
+          "prompt": "Wide low-angle dolly along ancient temple granite flagstones. Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. In warm predawn indigo and amber temple light, show an ancient South Indian granite temple entrance. Slow forward dolly move through weathered stone pillars toward a sanctum glowing with bronze oil lamps. A brass dhoopam burner sits on a stone ledge, curling gentle translucent grey smoke toward the dawn air. Stone flagstones show subtle reflections of oil lamps. Restrained sacred reverence, natural lighting, 8k resolution. *Exclusions:* No text, no watermark, no digital zoom, no camera shake, no modern items.. illuminated by evening deepam oil lamps with sacred golden warmth.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no watermark, no digital zoom, no camera shake, no modern items."
+        },
+        {
+          "scene_num": 5,
+          "prompt": "Majestic telephoto tracking shot through sacred lotus pond. Create a single continuous 16:9 cinematic live-action video shot at 24 fps. Slow lateral slider move across an authentic granite shrine. Delicate garlands of fresh fragrant flowers (jasmine and red hibiscus) rest on brass ritual vessels. Natural warm flickering shadows from oil lamps dance along the carved stone reliefs. Faint incense smoke drifts gracefully across the beam of morning light. *Exclusions:* No morphing objects, no floating flowers, no cartoon style, no text, no modern artifacts.. reflecting the towering Dravidian temple gopuram in gentle morning breeze.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No morphing objects, no floating flowers, no cartoon style, no text, no modern artifacts."
+        },
+        {
+          "scene_num": 6,
+          "prompt": "Close atmospheric pan over bronze Kuthuvilakku oil lamps. Create a single continuous 16:9 cinematic drone glide or gentle crane rise at 24 fps. Reveal the sacred gopuram tower silhouetted against the rising morning sun and distant Western Ghats mountain ridges. Soft mist drifts through the temple courtyard trees. Calm, profound spiritual tranquility. *Exclusions:* No rapid motion, no lens flare artifact, no text, no logos.. sacred dhoopam sambrani incense smoke drifting softly against carved temple pillars.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No rapid motion, no lens flare artifact, no text, no logos."
+        },
+        {
+          "scene_num": 7,
+          "prompt": "Slow cinematic crane rise looking out from the temple mandapam. Create a single continuous 16:9 cinematic photorealistic video shot at 24 fps. In warm predawn indigo and amber temple light, show an ancient South Indian granite temple entrance. Slow forward dolly move through weathered stone pillars toward a sanctum glowing with bronze oil lamps. A brass dhoopam burner sits on a stone ledge, curling gentle translucent grey smoke toward the dawn air. Stone flagstones show subtle reflections of oil lamps. Restrained sacred reverence, natural lighting, 8k resolution. *Exclusions:* No text, no watermark, no digital zoom, no camera shake, no modern items.. panoramic view of Kaveri river ghats and coconut palm groves under soft dawn skies.",
+          "negative_prompt": "No text, no subtitles, no watermarks, no modern clothing, no western clothes, no shoes, no plastic, no anime, * No text, no watermark, no digital zoom, no camera shake, no modern items."
+        }
+      ]
+    }
+  ]
+}

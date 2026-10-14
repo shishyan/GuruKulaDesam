@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "புலால் உண்ணாமை 2026",
+  "play_count": 0,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "d4bb8d5b-4b70-4078-8c77-d0039865701c",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/d4bb8d5b-4b70-4078-8c77-d0039865701c.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/d4bb8d5b-4b70-4078-8c77-d0039865701c.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_d4bb8d5b-4b70-4078-8c77-d0039865701c.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_d4bb8d5b-4b70-4078-8c77-d0039865701c.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "Carnatic, devotional, chamber music",
+    "negative_tags": "",
+    "prompt": "[Verse 1]\nஉண்ணாமை வேண்டும் புலாஅல் (பிறிதொன்றன்)\nபுண்ணது உணர்வார் பெறின்\nஉண்ணாமை வேண்டும் புலாஅல் (பிறிதொன்றன்)\nபுண்ணது உணர்வார் பெறின்\nஅருள் அல்லது யாதெனில் கொல்லாமை (கோறல்)\nபொருள் அல்லது அவ்வூன் தினல்\nபொருளாட்சி போற்றாதார்க்கு இல்லை (அருளாட்சி)\nஆங்கு இல்லை ஊன் தின்பவர்க்கு\n\n[Chorus]\nஉண்ணாமை வேண்டும் புலாஅல் (பிறிதொன்றன்)\nபுண்ணது உணர்வார் பெறின்\nஉண்ணாமை உள்ளது உயிர்நிலை (ஊன் உண்ண)\nஅண்ணாத்தல்த் சலெய்் சயெய்யாதாது அளறு அளு\n\n[Verse 2]\nபடைகறொண்டார் நெஞ்சமு.\n\n[Verse 2]\nபடைகொண்டார் நெஞ்சம்போல் நன்று ஊக்காது (ஒன்றன்)\nஉடல் சுவை உண்டார் மனம்\nதன் ஊன் பெருக்கற்குத் தான்பிறிது (ஊன் உண்பான்)\nஎங்ஙனம் ஆளும் அருள்\nதினற்பொருட்டால் கொல்லாது உலகு எனின் (யாரும்)\nவிலைப்பொருட்டால் ஊன் தருவார் இல்\n\n[Chorus]\nஉண்ணாமை வேண்டும் புலாஅல் (பிறிதொன்றன்)\nபுண்ணது உணர்வார் பெறின்\nஉண்ணாமை உள்ளது உயிர்நிலை (ஊன் உண்ண)\nஅண்ணாத்தல் செய்யாது அளறு\n\n[Verse 3]\nசெயிரின் தலைப்பிரிந்த காட்சியார் (உண்ணார்)\nஉயிரின் தலைப்பிரிந்த ஊன்\nஅவி சொரிந்து ஆயிரம் வேட்டலின் (ஒன்றன்)\nஉயிர் செகுத்து உண்ணாமை நன்று\nகொல்லான் புலாலை மறுத்தானை (கைகூப்பி)\nஎல்லா உயிரும் தொழும்\n\n[Chorus]\nஉண்ணாமை வேண்டும் புலாஅல் (பிறிதொன்றன்)\nபுண்ணது உணர்வார் பெறின்\nஉண்ணாமை உள்ளது உயிர்நிலை (ஊன் உண்ண)\nஅண்ணாத்தல் செய்யாது அளறு",
+    "type": "studio_export",
+    "duration": 279.2716041666667,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "da236f1e-8836-44c4-9091-74eccc3b04d6",
+    "studio_project_version_id": "ef9d7baa-40ac-4a7d-ad6f-15d55e9a62d0",
+    "studio_project_start_beats": 5.4421549814005346,
+    "studio_project_end_beats": 568.6398685398841,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-13T10:28:13.261Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

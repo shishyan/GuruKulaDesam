@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "title": "Recording (7)",
+  "play_count": 0,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "7ad1d7b0-690c-4fd1-bea1-fabbd5d0b425",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/7ad1d7b0-690c-4fd1-bea1-fabbd5d0b425.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_7ad1d7b0-690c-4fd1-bea1-fabbd5d0b425.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_7ad1d7b0-690c-4fd1-bea1-fabbd5d0b425.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "A folk a cappella song sung in Tamil by a solo male vocalist with an emotional delivery and no instruments; passionate.",
+    "prompt": "[Verse]\nஇறை விராபுந்தியே வைகினா\nபழவிரங்கா பன்னுடை மக்கள் பேறு\nஇன்று பொழுதும் பெரிதுவக்கும் தன்மகனை\nசான்றோர் எனக்கேட்ட தாய்\n\n[Verse]\nஇன்று பொழுதும் பெரிதுவக்கும் தன்மகனை\nசான்றோர் எனக் கேட்ட தாய்\nபெரும் அவற்றுள் யாம் அறிவது இல்லை அறிவு அறிந்த மக்கள் பேரு அல்ல பிற\nநம்பொருள் என்பதும் மக்கள் அவர் பொருள் தம்தம் வினையான் வருவாரும்\n\n[Outro]",
+    "type": "upload",
+    "duration": 66.70933333333333,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "UPLOAD",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-07T07:54:56.004Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "folk, emotional, male vocals, a cappella",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

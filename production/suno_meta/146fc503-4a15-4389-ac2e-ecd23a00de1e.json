@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "வலியறிதல் 1V Golden (Remix)",
+  "play_count": 0,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "146fc503-4a15-4389-ac2e-ecd23a00de1e",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/146fc503-4a15-4389-ac2e-ecd23a00de1e.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/146fc503-4a15-4389-ac2e-ecd23a00de1e.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_146fc503-4a15-4389-ac2e-ecd23a00de1e.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_146fc503-4a15-4389-ac2e-ecd23a00de1e.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "devotional, traditional Tamil, Tamil classical, temple music, folk",
+    "negative_tags": "",
+    "prompt": "[Chorus]\nவினைவலியும் தன்வலியும் (மாற்றான் வலியும்)\nதுணைவலியும் தூக்கிச் செயல்\nவினைவலியும் தன்வலியும்  (மாற்றான் வலியும்)\nதுணைவலியும் தூக்கிச் செயல்\n\n[Verse 1]\nஉடைத்தம் வலியறியார் (ஊக்கத்தின் ஊக்கி)\nஇடைக்கண் முரிந்தார் பலர்\nஉடைத்தம் வலியறியார் (ஊக்கத்தின் ஊக்கி)\nஇடைக்கண் முரிந்தார் பலர்\nஅளவறிந்து வாழாதான் வாழ்க்கை (உளபோல)\nஇல்லாகித் தோன்றாக் கெடும்\nஅளவறிந்து வாழாதான் வாழ்க்கை (உளபோல)\nஇல்லாகித் தோன்றாக் கெடும்\nவினைவலியும் தன்வலியும்  (மாற்றான் வலியும்)\nதுணைவலியும் தூக்கிச் செயல்\n\n[Bridge]\nஅமைந்தாங்கு ஒழுகான் அளவறியான் (தன்னை)\nவியந்தான் விரைந்து கெடும்\nஆற்றின் அளவறிந்து ஈக (அதுபொருள்)\nபோற்றி வழங்கு நெறி\nஒல்வது அறிவது அறிந்த (தன்கண்தங்கி)\nசெல்வார்க்குச் செல்லாதது இல்\nஒல்வது அறிவது அறிந்த (தன்கண்தங்கி)\nசெல்வார்க்குச் செல்லாதது இல்\n\n[Chorus]\nவினைவலியும் தன்வலியும் (மாற்றான் வலியும்)\nதுணைவலியும் தூக்கிச் செயல்\nவினைவலியும் தன்வலியும்  (மாற்றான் வலியும்)\nதுணைவலியும் தூக்கிச் செயல்்\nவியந்தான் விரைந்து கெடும்\nஆற்றின் அளவறிந்து ஈக (அதுபொருள்)\nபோற்றி வழங்கு நெறி\nஒல்வது அறிவது அறிந்த (தன்கண்தங்கி)\nசெல்வார்க்குச் செல்லாதது இல்\nஒல்வது அறிவது அறிந்த (தன்கண்தங்கி)\nசெல்வார்க்குச் செல்லாதது இல்\n\n[Chorus]\nவினைவலியும் தன்வலியும் (மாற்றான் வலியும்)\nதுணைவலியும் தூக்கிச் செயல்\nவினைவலியும் தன்வலியும்  (மாற்றான் வலியும்)\nதுணைவலியும் தூக்கிச் செயல்\n\n[Verse 3]\nஆகாறு அளவிட்டிது ஆயினும் (கேடில்லை)\nபோகாறு அகலாக் கடை\nஉளவரை தூக்காத ஒப்புரவு (ஆண்மை)\nவளவரை வல்லைக் கெடும்\nபீலிபெய் சாகாடும் அச்சிறும் (அப்பண்டம்)\nசால மிகுத்துப் பெயின்\nநுனிக்கொம்பர் ஏறினார் அஃதிறந்து (ஊக்கின்)\nஉயிர்க்கிறுதி ஆகி விடும்\n\n[Chorus]\nவினைவலியும் தன்வலியும் (மாற்றான் வலியும்)\nதுணைவலியும் தூக்கிச் செயல்\nவினைவலியும் தன்வலியும்  (மாற்றான் வலியும்)\nதுணைவலியும் தூக்கிச் செயல்",
+    "type": "studio_export",
+    "duration": 346.76060416666667,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "cc54ec5d-bb08-4b6b-ba1c-1cffe48589b0",
+    "studio_project_version_id": "fe289db2-cccd-4efe-8253-4d04aca7e65c",
+    "studio_project_start_beats": -1.446553278323147,
+    "studio_project_end_beats": 784.5441433105758,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-19T15:13:38.855Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

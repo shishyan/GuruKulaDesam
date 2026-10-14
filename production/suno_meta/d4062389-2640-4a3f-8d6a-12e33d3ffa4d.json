@@ -1,0 +1,197 @@
+{
+  "status": "complete",
+  "title": "முருகர் மந்திரம் 1K Golden",
+  "play_count": 6,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "d4062389-2640-4a3f-8d6a-12e33d3ffa4d",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/d4062389-2640-4a3f-8d6a-12e33d3ffa4d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_d4062389-2640-4a3f-8d6a-12e33d3ffa4d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_d4062389-2640-4a3f-8d6a-12e33d3ffa4d.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Devotional guitar hymn, close-miked guitar strings, unhurried flowing tempo with gentle verse-to-chorus lift, fingerpicked acoustic guitar and softly strummed layered guitars, breathy female alto close-mic with intimate sustained phrasing and subtle doubled chorus vocals",
+    "prompt": "[Chorus]\nஉருவாய் அருவாய் (உளதாய் இலதாய்)\nமருவாய் மலராய் (மணியாய் ஒலியாய்)\nகருவாய் உயிராய் (கதியாய் விதியாய்)\nகுருவாய் வருவாய் (அருள்வாய் குகனே)\n\n[Verse]\nசெங்கதிரோன் வழிபாடும் (செகமகிழும் சீரலைவாய்)\nதங்குமிறை ஆறுமுக (சாமி எனைத்தாங்கு தினம்)\nஅங்கமதில் நோயணுகா (வண்ணம் அருள் suரந்து)\nசெங்கமலக் கழல்தந்து (ஞாயிறன்று காப்பாயே!)\n\nதிங்களணி சடையானும் (தேவர்களும் போற்றிசெய்யும்)\nதுங்கவடி வேல்கொண்ட (தோகைமயில் வாகனனே)\nமங்களமும் மன்மகிழும் (மாண்புகழும் தந்து எனைத்)\n திங்கட்கிழமை (திருவருளால் காப்பாயே!)\n\n[Chorus]\nஉருவாய் அருவாய் (உளதாய் இலதாய்)\nமருவாய் மலராய் (மணியாய் ஒலியாய்)\nகருவாய் உயிராய் (கதியாய் விதியாய்)\nகுருவாய் வருவாய் (அருள்வாய் குகனே)\n\n[Verse]\nசெவ்வாயின் தோஷமெல்லாம் (தீர்த்து அருள்வாய்)\nசிங்கார வேலா சிவசுப்ரமண்யனே(அவ்வினைகள்)\nயாவும் அகற்றிஅருள் தருவாய் (செவ்வாய்க்கிழமை)\nவந்தருள்வாய் சேயோனே (போற்றி!)\n\nமதவாரண முகத்தோன் பின்வந்த (கந்தா சிவயோக)\nபதவாழ்வு அருள்வாய் பரனே (அரனார் பாலகனே)\nஉதவாக்கரையாம் அடியேற்கு (உண்மைப் பொருளை உரைத்திட)\nபுதவாரமதில் வந்தருள்வாய் (பொருவில் திருவேரக போற்றி!)\n\n[Chorus]\nஉருவாய் அருவாய் (உளதாய் இலதாய்)\nமருவாய் மலராய் (மணியாய் ஒலியாய்)\nகருவாய் உயிராய் (கதியாய் விதியாய்)\nகுருவாய் வருவாய் (அருள்வாய் குகனே)\n\n[Verse]\nமயானம் உறையும் இறையான (மகேசன் பெற்ற குகேசன் என)\nதியானப் பொருளாம் திருமுருகா (தேவே மாவேதிய போற்றி!)\nதயாளசீலா தணிகை முதல்தவர் (வாழ் குன்றுதொறும் வாழ்வாய்)\nவியாழக்கிழமை வந்தருள்வாய் (வேலா கோலாகலா போற்றி!)\n\nஅள்ளி வழங்கும் ஆறுமுகத் தரசே (விரைசேர் கடம்பணிந்த)\nவள்ளிக் கணவா வடிவேலா (வரதச் சரதப் பெருவாழ்வே)\nவெள்ளிமலை நேர்வியன் ஞான (மேவு பழமுதிர் சோலையனே)\nவெள்ளிக்கிழமை வந்தருள்வாய் (வேதப் பொருளே போற்றி!)\n\nமந்தன் சனியின் மயக்கமெல்லாம் (தீர்த்து எனை)\nசொந்தமாய் ஆட்கொண்ட (சுப்ரமண்யப் பேரரசே)\nசிந்தை மகிழச் சனிக்கிழமை (வந்தருள்வாய்)\nகந்தா கதிர்வேலா (கார்வண்ணன் மருகா போற்றி!)\n\n[Chorus]\nஉருவாய் அருவாய் (உளதாய் இலதாய்)\nமருவாய் மலராய் (மணியாய் ஒலியாய்)\nகருவாய் உயிராய் (கதியாய் விதியாய்)\nகுருவாய் வருவாய் (அருள்வாய் குகனே)",
+    "type": "gen",
+    "duration": 349.56,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "mashup_clip_ids": [
+      "00000000-0000-0000-0000-000000000000",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "task": "mashup_condition",
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "MASHUP",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "film_strip",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-16T16:00:54.770Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "hymn, devotional, acoustic",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      },
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

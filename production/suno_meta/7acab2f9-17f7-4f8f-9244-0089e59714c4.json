@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "title": "ஒழுக்கமுடைமை 1D",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "7acab2f9-17f7-4f8f-9244-0089e59714c4",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/7acab2f9-17f7-4f8f-9244-0089e59714c4.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_7acab2f9-17f7-4f8f-9244-0089e59714c4.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_7acab2f9-17f7-4f8f-9244-0089e59714c4.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Indian sitar-led ballad with melodic rap and sampled-snare grooves; measured devotional half-time pulse, sampled sitar phrases over restrained bass and crisp snare loops, female soprano with devotional melisma and close layered chorus vocals, warm tape saturation and spacious, intimate mix.",
+    "prompt": "[Chorus]\nநன்றிக்கு வித்தாகும் நல்லொழுக்கம்  (தீயொழுக்கம்)\nஎன்றும் இடும்பை தரும்\nநன்றிக்கு வித்தாகும் நல்லொழுக்கம்  (தீயொழுக்கம்)\nஎன்றும் இடும்பை தரும்\n\n[Verse 1]\nஒழுக்கம் விழுப்பந் தரலான்  (ஒழுக்கம்)\nஉயிரினும் ஓம்பப் படும்\nஒழுக்கம் விழுப்பந் தரலான்  (ஒழுக்கம்)\nஉயிரினும் ஓம்பப் படும்\n\nஒழுக்கத்தின் எய்துவர் மேன்மை  (இழுக்கத்தின்)\nஎய்துவர் எய்தாப் பழி\nஒழுக்கத்தின் எய்துவர் மேன்மை  (இழுக்கத்தின்)\nஎய்துவர் எய்தாப் பழி\n\n[Chorus]\nநன்றிக்கு வித்தாகும் நல்லொழுக்கம்  (தீயொழுக்கம்)\nஎன்றும் இடும்பை தரும்\nநன்றிக்கு வித்தாகும் நல்லொழுக்கம்  (தீயொழுக்கம்)\nஎன்றும் இடும்பை தரும்\n\n[Verse 2]\nஒழுக்கத்தின் ஒல்கார் உரவோர்  (இழுக்கத்தின்)\nஏதம் படுபாக் கறிந்து\nஅழுக்கா றுடையான்கண் ஆக்கம்போன்று  (இல்லை)\nஒழுக்கம் இலான்கண் உயர்வு\n\nபரிந்தோம்பிக் காக்க ஒழுக்கம்  (தெரிந்தோம்பித்)\nதேரினும் அக்தே துணை\nமறப்பினும் ஓத்துக் கொளலாகும்  (பார்ப்பான்)\nபிறப்பொழுக்கங் குன்றக் கெடும்\n\n[Chorus]\nநன்றிக்கு வித்தாகும் நல்லொழுக்கம்  (தீயொழுக்கம்)\nஎன்றும் இடும்பை தரும்\nநன்றிக்கு வித்தாகும் நல்லொழுக்கம்  (தீயொழுக்கம்)\nஎன்றும் இடும்பை தரும்\n\n[Bridge]\nஒழுக்க முடையவர்க்கு ஒல்லாவே  (தீய)\nவழுக்கியும் வாயாற் சொலல்\nஉலகத்தோடு ஒட்ட ஒழுகல்  (பலகற்றும்)\nகல்லார் அறிவிலாதார்\nஒழுக்கம் உடைமை குடிமை  (இழுக்கம்)\nஇழிந்த பிறப்பாய் விடும்\n\n[Chorus]\nநன்றிக்கு வித்தாகும் நல்லொழுக்கம்  (தீயொழுக்கம்)\nஎன்றும் இடும்பை தரும்\nநன்றிக்கு வித்தாகும் நல்லொழுக்கம்  (தீயொழுக்கம்)\nஎன்றும் இடும்பை தரும்",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 269.12,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 3
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "minimal_album_art",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-08T05:19:44.603Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "ballad, rap, devotional",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

@@ -1,0 +1,3636 @@
+{
+  "summary": {
+    "total": 604,
+    "ok": 604,
+    "mismatches": 0,
+    "missing": 0
+  },
+  "mismatches": [],
+  "missing": [],
+  "ok": [
+    {
+      "track_id": "--4jzoezBW8",
+      "title": "திருக்குறள்: அதிகாரம் 67 - வினைத்திட்பம் (Original) | Thirukkural: Vinai Thitpam [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-7ppYdnUdVk",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-9bZmHzYO2g",
+      "title": "திருவருட்பா: அபராத விண்ணப்பம் II | Thiruvarutpa: Aparadha Vinnappam II [Audio]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-CsF4lE2UfA",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-Gd2dy_L98c",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-L3VXkM2MTY",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Film]",
+      "deity": "murugan",
+      "source": "override_ref:skandamantram"
+    },
+    {
+      "track_id": "-ZkM45zylxs",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-bqKXZW8vFk",
+      "title": "திருவருட்பா: அருளியல் வினாவல் | Thiruvarutpa: Aruliyal Vinaaval [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-cmB2_XZqs0",
+      "title": "திருவருட்பா: அபராத விண்ணப்பம் I | Thiruvarutpa: Aparadha Vinnappam I [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-tod_ZpZMnQ",
+      "title": "தேவாரம்: கடவுளைக் கடலுள் எழு (திருக்குறுந்தொகை) | Thevaram: Kadavulai Kadalul Ezhu [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-unILRjNLHQ",
+      "title": "திருவருட்பா: சிவ சுப்ரமணியர் திருவிருத்தம் | Thiruvarutpa: Siva Subramaniyar [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-yEq62Bu_d8",
+      "title": "திருவாசகம்: வேண்டுமே இத்தனையும் (திருவெம்பாவை) I | Thiruvasagam: Vendumey Iththanaiyum [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thiruvempavai"
+    },
+    {
+      "track_id": "-yxeA6nvNZk",
+      "title": "சிவ நாமாவளி: ஈஸ்வர நாமவளி சரணம் I | Shiva Namavali: Eswara Namavali I [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "-zVzQ1XnY8Q",
+      "title": "பெரியபுராணம்: தில்லை வாழ் அந்தணர் சருக்கம் | Periyapuranam: Thillai Vazh Anthanar [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "00BGSFBWdlA",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "01g0sJdaL2I",
+      "title": "திருக்குறள்: அதிகாரம் 56 - கொடுங்கோன்மை (Remix) | Thirukkural: Kodungonmai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "02C8glMmetw",
+      "title": "திருக்குறள்: அதிகாரம் 1 - கடவுள் வாழ்த்து | Thirukkural: Agara Muthala [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "06ZOKy7SSvw",
+      "title": "திருவருட்பா: திருச்சாதனத் தெய்வத் திறம் | Thiruvarutpa: Thiruchathanath Thiram [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "0DoegY9d0ZM",
+      "title": "திருக்குறள்: அதிகாரம் 50 - இடனறிதல் (Remix) | Thirukkural: Idanarithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "0PvXn4gqlFM",
+      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் | Kandha Sashti Kavasam: Kandha Sashti Kavasam [Film]",
+      "deity": "murugan",
+      "source": "override_ref:kavasam_open"
+    },
+    {
+      "track_id": "0SUn5igNEE0",
+      "title": "தேவாரம்: நமச்சிவாயப் பதிகம் (துஞ்சலும் துஞ்சல்) | Thevaram: Tunjalum Tunjal [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thunjalum"
+    },
+    {
+      "track_id": "0TB3drCSvNc",
+      "title": "திருவருட்பா: திருவருள் வேட்கை I | Thiruvarutpa: Thiruvarul Vetkai I [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "0W1FqHOYwDc",
+      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II | Periyazhvar Thirumozhi: Kannan Thalattu II [Audio]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "0WurYH-hkNM",
+      "title": "திருக்குறள்: அதிகாரம் 67 - வினைத்திட்பம் (Remix) | Thirukkural: Vinai Thitpam [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "0bz1myKXoJQ",
+      "title": "திருக்குறள்: அதிகாரம் 43 - அறிவுடைமை (Remix) | Thirukkural: Arivudaimai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "0fD-z3s_g2A",
+      "title": "திருக்குறள்: அதிகாரம் 25 - அருளுடைமை | Thirukkural: Aruludaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "0gK0asNO-RM",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "0k9CZLNA2TY",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "override_ref:abirami69"
+    },
+    {
+      "track_id": "0tXyQEAHVNQ",
+      "title": "தேவாரம்: தில்லைத் திருப்பதிகம் (அன்னம் பாலிக்கும்) | Thevaram: Annam Paalikkum Thillai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "1W9SHSo-2Vk",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "1hoVaPwWMes",
+      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் II | Kandha Sashti Kavasam: Kandha Sashti Kavasam II [Film]",
+      "deity": "murugan",
+      "source": "override_ref:kandhasashti"
+    },
+    {
+      "track_id": "1wD_X2LHCmw",
+      "title": "சிவ பக்திப் பாடல்: திருவசிய மந்திரம் II | Shiva Devotional: Thiruvasiyam Mantra II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "255aVCj3t0w",
+      "title": "திருவருட்பா: திருச்சாதனத் தெய்வத் திறம் | Thiruvarutpa: Thiruchathanath Thiram [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "28Xnfhctf0I",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Remix]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2Gbhx6SwH-M",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) | Thevaram: Thiruvothur Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2Pun6K7h984",
+      "title": "திருக்குறள்: அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Remix) | Periyarai Thunaikodal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2QOF2ycA4RQ",
+      "title": "சிவ நாமாவளி: ஆதி யோகீஸ்வரர் சரணம் | Shiva Namavali: Aadhi Yogeeswarar [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2Qs07DTJvvM",
+      "title": "திருக்குறள்: அதிகாரம் 71 - குறிப்பறிதல் (Remix) | Thirukkural: Kuripparithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2U45AXlx7DA",
+      "title": "திருக்குறள்: அதிகாரம் 46 - சிற்றினம் சேராமை | Thirukkural: Sitrinam Seraamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2YzLM0yoBlg",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் | Krishna Devotional: Krishna Mantra [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2_TfLljo1qg",
+      "title": "திருக்குறள்: அதிகாரம் 44 - குற்றங்கடிதல் (Original) | Thirukkural: Kuttrangadithal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2_rwWlC09I0",
+      "title": "சிவ ஸ்தோத்திரம்: ஸ்மரணாதருணாசலம் | Shiva Stotram: Smaranad Arunachalam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2mdEV1acg-U",
+      "title": "திருவாசகம்: குழைத்த பத்து II | Thiruvasagam: Kuzhaitha Pathu II [Film]",
+      "deity": "shiva",
+      "source": "override_ref:kuzhaithapathu"
+    },
+    {
+      "track_id": "2tL-bKjkL18",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "override_ref:abirami1"
+    },
+    {
+      "track_id": "2vQYuvePk9U",
+      "title": "பன்னிரு திருமுறை: திருவையாறு சாரம் | Panniru Thirumurai: Thiruvaiyaaru Saaram [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "2vuuHMEhs20",
+      "title": "திருவாசகம்: போற்றித் திருஅகவல் | Thiruvasagam: Potrith Thiruagaval [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "31xVgvxoiUA",
+      "title": "திருப்பாவை: பாசுரம் 3 - ஓங்கி உலகளந்த | Thiruppavai: Ongi Ulagalantha [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:thiruppavai3"
+    },
+    {
+      "track_id": "34D_HpbRxfo",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II | Thevaram: Thiruvothur Pathigam II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "37qaN4sG53k",
+      "title": "திருக்குறள்: அதிகாரம் 62 - ஆள்வினையுடைமை (Remix) | Thirukkural: Aalvinaiyudaimai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "3CICxCn-4A0",
+      "title": "திருக்குறள்: அதிகாரம் 42 - கேள்வி (Original) | Thirukkural: Kelvi Selvam [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "3FoioD6p6Mk",
+      "title": "அதிகாரம் 40 - கல்வி | Kalvi Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "3oJ2OPG-WCs",
+      "title": "திருப்புகழ்: முத்தைத் தரு (திருப்புகழ்) | Thiruppugazh: Muthai Tharu [Film]",
+      "deity": "murugan",
+      "source": "override_ref:muthaitharu"
+    },
+    {
+      "track_id": "3t5U9ABVeOc",
+      "title": "தேவாரம்: மாசில் வீணையும் | Thevaram: Maasil Veenaiyum [Film]",
+      "deity": "shiva",
+      "source": "override_ref:maasil"
+    },
+    {
+      "track_id": "3yB_oTqh6Jk",
+      "title": "திருக்குறள்: அதிகாரம் 68 - வினைசெயல்வகை (Female) | Thirukkural: Vinai Seyalvagai Female [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "3youy-33GtY",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "4-FJ8eh7Als",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "40ML9b--tg4",
+      "title": "திருவாசகம்: சிவ புராணம் (II) | Thiruvasagam: Sivapuranam II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "468ErjVLRCs",
+      "title": "திருப்பாவை: விஷ்ணும் ஜிஷ்ணும் | Thiruppavai: Vishnum Jishnum [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "4QpJHz2SAbU",
+      "title": "திருவாசகம்: போற்றித் திருஅகவல் | Thiruvasagam: Potrith Thiruagaval [Film]",
+      "deity": "shiva",
+      "source": "override_ref:potrithiruagaval"
+    },
+    {
+      "track_id": "4RUk7FPJ3TU",
+      "title": "திருவாசகம்: குழைத்த பத்து II | Thiruvasagam: Kuzhaitha Pathu II [Film]",
+      "deity": "shiva",
+      "source": "override_ref:kuzhaithapathu"
+    },
+    {
+      "track_id": "4UGFfmEpphI",
+      "title": "திருவருட்பா: அபராத விண்ணப்பம் I | Thiruvarutpa: Aparadha Vinnappam I [Audio]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "4qnq1zW63hI",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Audio]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "4sJwwtZHUvI",
+      "title": "திருவாசகம்: திருப்புலம்பல் | Thiruvasagam: Thiruppulambal [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thirupulambal"
+    },
+    {
+      "track_id": "4vZEVROZIx8",
+      "title": "விஷ்ணு துதி: நமோ நாராயணம் (தசாவதாரம்) | Vishnu Devotional: Namo Narayanam [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:namonarayana"
+    },
+    {
+      "track_id": "4zG1CdYiVxs",
+      "title": "திருவருட்பா: அன்பு மாலை II | Thiruvarutpa: Anbu Maalai II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "4zff_qi_G1E",
+      "title": "திருக்குறள்: அதிகாரம் 82 - தீ நட்பு | Thirukkural: Thee Natpu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "5-z9v-1INWg",
+      "title": "திருக்குறள்: அதிகாரம் 46 - சிற்றினம் சேராமை (Original) | Thirukkural: Sittrinam Seramai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "57X8XwJaB0U",
+      "title": "பெரியபுராணம்: உலகெலாம் உணர்ந்து ஓதற்கு அரியவன் | Periyapuranam: Ulagelam Unarnthu [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "5GHCLSRXtn4",
+      "title": "தேவாரம்: கரைந்து கைதொழுவாரையும் | Thevaram: Karainthu Kaithozhuvar [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "5RTBMEIozEg",
+      "title": "கந்தர் அலங்காரம்: நாள் என் செய்யும் | Kandhar Alangaram: Naal En Seyyum [Film]",
+      "deity": "shiva",
+      "source": "override_ref:alankaram38"
+    },
+    {
+      "track_id": "5coBrJy6a5M",
+      "title": "திருக்குறள்: அதிகாரம் 55 - செங்கோன்மை (Remix) | Thirukkural: Sengonmai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "5gO0xpY_Y3E",
+      "title": "இசைத் தியானம்: இன்டர்ஸ்டெல்லார் (Interstellar) I | Interstellar Meditation I [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "5gzJXgmt7AY",
+      "title": "திருவருட்பா: திருவருண் முறையீடு | Thiruvarutpa: Thiruvarun Muraiyidu [Audio]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "5uRYFxhT32k",
+      "title": "திருக்குறள்: அதிகாரம் 52 - தெரிந்து வினையாடல் (Original) | Therinthu Vinaiyaadal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "5vieI9fE5Y8",
+      "title": "திருவருட்பா: புண்ணிய விளக்கம் | Thiruvarutpa: Punniya Vilakkam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "60rrBjJfAS4",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "override_ref:abirami69"
+    },
+    {
+      "track_id": "6MaQYObW8OQ",
+      "title": "திருக்குறள்: அதிகாரம் 35 - துறவு (Female) | Thirukkural: Thuravu Female [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "6_qh4-WoWNM",
+      "title": "திருவருட்பா: அபராதத்து ஆற்றாமை | Thiruvarutpa: Abaraathathu Aatraamai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "6cE4xUOmSzU",
+      "title": "திருவாசகம்: சிவபுராணம் | Thiruvasagam: Sivapuranam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "6hfla_PRW40",
+      "title": "திருக்குறள்: அதிகாரம் 71 - குறிப்பறிதல் (Original) | Thirukkural: Kuripparithal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "6ofQ9hrD1RQ",
+      "title": "திருக்குறள்: அதிகாரம் 6 - வாழ்க்கைத் துணைநலம் | Thirukkural: Vaazkkai Thunai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "6p5A87HdAAI",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "6r6TpY-sgbw",
+      "title": "திருக்குறள்: அதிகாரம் 75 - அரண் | Thirukkural: Aran [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "73GrCFM_v6Q",
+      "title": "தேவாரம்: திருமுல்லைவாயில் பதிகம் I | Thevaram: Thirumullaivayil Pathigam I [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "75W77Q-_Oe8",
+      "title": "திருவாசகம்: சென்னிப்பத்து II | Thiruvasagam: Sennippathu II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "778r-nAUX9Q",
+      "title": "திருக்குறள்: அதிகாரம் 81 - பழைமை | Thirukkural: Pazhaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "79u01V3wbZc",
+      "title": "திருக்குறள்: அதிகாரம் 78 - படைச்செருக்கு | Thirukkural: Padaicherukku [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "7NECOtuTZ_Y",
+      "title": "ஆஞ்சநேயர் துதி: ஆஞ்சநேயர் துதி | Anjaneyar Devotional: Anjaneyar Thuthi [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "7TlWCD9pa_0",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Audio]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "7WnikKPxo-k",
+      "title": "திருவாசகம்: ஆனந்த மாலை | Thiruvasagam: Anandha Maalai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "7iWQUBmq3aU",
+      "title": "திருவருட்பா: வடிவுடை மாணிக்கமாலை | Thiruvarutpa: Vadivudai Manikkamalai [Film]",
+      "deity": "amman",
+      "source": "override_ref:vadivudai"
+    },
+    {
+      "track_id": "7npbkuQwjEE",
+      "title": "திருக்குறள்: அதிகாரம் 32 - இன்னா செய்யாமை | Thirukkural: Inna Seidharai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "7wJJCQrYo04",
+      "title": "திருக்குறள்: அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 2) | Nenjari Vuruthal II [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "817Wxel4F5s",
+      "title": "திருக்குறள்: அதிகாரம் 50 - இடனறிதல் | Thirukkural: Idanarithal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "89Q2g8AllcE",
+      "title": "திருவாசகம்: நடராஜர் பத்து | Thiruvasagam: Natarajar Pathu [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8AEEcskF-Jo",
+      "title": "திருக்குறள்: அதிகாரம் 35 - துறவு | Thirukkural: Thuravu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8BPlAB-ZHHk",
+      "title": "தேவாரம்: கடவுளைக் கடலுள் எழு (திருக்குறுந்தொகை) | Thevaram: Kadavulai Kadalul Ezhu [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8HUmRJKyxTc",
+      "title": "தேவாரம்: அவிநாசிப் பதிகம் | Thevaram: Avinasi Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8IAiHMylZJc",
+      "title": "திருவருட்பா: ஆடலமுதப் பத்து | Thiruvarutpa: Aadalamudha Pathu [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8KQc368hCmg",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Audio]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8YLA_CoDfP8",
+      "title": "திருவாசகம்: போற்றித் திருஅகவல் II | Thiruvasagam: Potrith Thiruagaval II [Film]",
+      "deity": "shiva",
+      "source": "override_ref:potrithiruagaval"
+    },
+    {
+      "track_id": "8b2B047SSTo",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II | Thevaram: Thiruvothur Pathigam II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8jLZHiozGxw",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8mzfe5h9JoY",
+      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் II | Kandha Sashti Kavasam: Kandha Sashti Kavasam II [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8uX2yl_EnMI",
+      "title": "திருக்குறள்: அதிகாரம் 83 - கூடா நட்பு | Thirukkural: Kooda Natpu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "8wZGK0nGTEo",
+      "title": "திருக்குறள்: அதிகாரம் 66 - வினைத்தூய்மை | Thirukkural: Vinai Thooymai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "9-SvikTz2FU",
+      "title": "திருக்குறள்: அதிகாரம் 53 - சுற்றந்தழால் (Remix) | Thirukkural: Suttranthazhaal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "91RgQ8AygF4",
+      "title": "திருக்குறள்: அதிகாரம் 84 - பேதைமை | Thirukkural: Pethaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "94drEh5bkH0",
+      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி | Saraswathi Stotram: 108 Saraswathi Potri [Film]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "9EAskIS2xuc",
+      "title": "திருக்குறள்: அதிகாரம் 29 - கள்ளாமை | Thirukkural: Kallaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "9NIv50lV4-M",
+      "title": "திருக்குறள்: அதிகாரம் 36 - மெய்யுணர்தல் | Thirukkural: Meyyunarithal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "9PUF7elNSOU",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "9Qhwgy74BXI",
+      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா II | Maha Mantra: Hare Krishna Hare Rama II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "9YAr421Ft00",
+      "title": "திருக்குறள்: அதிகாரம் 41 - கல்லாமை | Thirukkural: Kallaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "9kHN9Dzrv7o",
+      "title": "திருக்குறள்: அதிகாரம் 42 - கேள்வி | Thirukkural: Kelvi Selvam [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "9mOpq9daQVs",
+      "title": "திருக்குறள்: அதிகாரம் 72 - அவையறிதல் (Original) | Thirukkural: Avaiyarithal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "A2CB3LpJ0Qk",
+      "title": "தேவாரம்: கரைந்து கைதொழுவாரையும் | Thevaram: Karainthu Kaithozhuvar [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "A86cP9ae6Vs",
+      "title": "திருக்குறள்: அதிகாரம் 36 - மெய்யுணர்தல் | Thirukkural: Meyyunarithal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "AD6LgqNksFQ",
+      "title": "அதிகாரம் 30 - வாய்மை | Vaaimai Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "AW4cljBWy2w",
+      "title": "விநாயகர் நான்மணிமாலை: பாலும் தெளிதேனும் | Vinayagar Nanmanimalai: Paalum Thelithenum [Film]",
+      "deity": "vinayagar",
+      "source": "override_ref:palum_thelithenum"
+    },
+    {
+      "track_id": "AuEZhvVmA90",
+      "title": "தேவாரம்: பிடியதன் உருவுமை (விநாயகர் துதி) | Thevaram: Pidiyathan Uruvumai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "B60TIM5LLvY",
+      "title": "திருக்குறள்: அதிகாரம் 44 - குற்றங்கடிதல் | Thirukkural: Kuttrankadithal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "B6yVe6HM8Ok",
+      "title": "திருப்புகழ்: ஆறுமுகம் ஆறுமுகம் | Thiruppugazh: Arumugam Arumugam [Film]",
+      "deity": "murugan",
+      "source": "override_ref:arumugam"
+    },
+    {
+      "track_id": "B9N2j7r2KkI",
+      "title": "திருக்குறள்: அதிகாரம் 63 - இடுக்கண் அழியாமை (Original) | Idukkan Azhiyaamai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "BXLeRFa6NHA",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "BbDNJdLDy-4",
+      "title": "திருவாசகம்: திருப்புலம்பல் II | Thiruvasagam: Thiruppulambal II [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thirupulambal"
+    },
+    {
+      "track_id": "BfgGC7DsHMI",
+      "title": "திருக்குறள்: அதிகாரம் 47 - தெரிந்து செயல்வகை | Thirukkural: Therinthu Seyalvagai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "BoOWFaOGczE",
+      "title": "திருக்குறள்: அதிகாரம் 30 - வாய்மை (Original) | Thirukkural: Vaaymai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Bq6eGijG9T4",
+      "title": "தேசிய கீதம்: ஜன கண மன II | National Anthem: Jana Gana Mana II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "BxQ4c9VPwAo",
+      "title": "திருவருட்பா: அபராத விண்ணப்பம் II | Thiruvarutpa: Aparadha Vinnappam II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "C05GEfkJZaY",
+      "title": "திருக்குறள்: அதிகாரம் 5 - இல்வாழ்க்கை | Thirukkural: Ilvazhkkai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "C2rLIrP3vAA",
+      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் II | Kandha Sashti Kavasam: Kandha Sashti Kavasam II [Film]",
+      "deity": "murugan",
+      "source": "override_ref:kavasam_open"
+    },
+    {
+      "track_id": "C7PTFCAFIRI",
+      "title": "திருக்குறள்: அதிகாரம் 37 - அவாவறுத்தல் | Thirukkural: Avaa Aruththal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "C9Ea0-FfMNs",
+      "title": "திருப்புகழ்: நாத விந்துகள் (பழனி) | Thiruppugazh: Naatha Vindhugal [Film]",
+      "deity": "murugan",
+      "source": "override_ref:naathavindhu"
+    },
+    {
+      "track_id": "CEh2a8KUIKU",
+      "title": "திருக்குறள்: அதிகாரம் 72 - அவையறிதல் | Thirukkural: Avaiyarithal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "CFEYF0X6fLU",
+      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் II | Kandha Sashti Kavasam: Kandha Sashti Kavasam II [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "CHWHsVF0V70",
+      "title": "திருமந்திரம்: முதலாம் தந்திரம் | Thirumanthiram: Mudhal Thanthiram [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "CS92JrOQkbc",
+      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி | Saraswathi Stotram: 108 Saraswathi Potri [Film]",
+      "deity": "amman",
+      "source": "override_ref:saraswathi108"
+    },
+    {
+      "track_id": "CSqgMX4LhJI",
+      "title": "திருவாசகம்: பிரார்த்தனைப் பத்து II | Thiruvasagam: Prarthanai Pathu II [Film]",
+      "deity": "shiva",
+      "source": "override_ref:prarthanaipathu"
+    },
+    {
+      "track_id": "CV1j4ieFw5w",
+      "title": "தேவாரம்: அவிநாசிப் பதிகம் | Thevaram: Avinasi Pathigam [Film]",
+      "deity": "shiva",
+      "source": "override_ref:avinasi"
+    },
+    {
+      "track_id": "CikMJKSLIRw",
+      "title": "திருக்குறள்: அதிகாரம் 60 - ஊக்கமுடைமை (Remix) | Thirukkural: Ookkamudaimai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "CjUD2TU3oAY",
+      "title": "திருவாசகம்: குறி கலந்த இசை I | Thiruvasagam: Kuri Kalandha Isai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Csc5uzl184s",
+      "title": "ஆதிசங்கரர்: வேதஸார சிவ ஸ்தோத்ரம் | Adi Shankara: Vedasaara Shiva Stotram [Film]",
+      "deity": "shiva",
+      "source": "override_ref:vedasara"
+    },
+    {
+      "track_id": "CvDDeKLC4mw",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "D95woYqPoPI",
+      "title": "திருக்குறள்: அதிகாரம் 66 - வினைத்தூய்மை (Remix) | Thirukkural: Vinai Thooymai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "DCJ2qoMSIBA",
+      "title": "சிவ பக்திப் பாடல்: தியாக வண்ணப் பதிகம் | Shiva Devotional: Thiyaga Vanna Pathigam [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "DI2ZW8jS_6o",
+      "title": "திருவாசகம்: திருவார்த்தை II | Thiruvasagam: Thiruvaarthai II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "DIDV-3cHhag",
+      "title": "திருக்குறள்: அதிகாரம் 49 - காலமறிதல் | Thirukkural: Kaalamarithal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "DYAKkr0e5jU",
+      "title": "நவக்கிரக துதி: ஸ்ரீ சனி பகவான் துதி II | Navagraha Stotram: Sani Bhagavan Thuthi II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "DhHGetUJlAI",
+      "title": "திருக்குறள்: அதிகாரம் 54 - பொச்சாவாமை (Remix) | Thirukkural: Pochavaamai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "DsbMysGdqv8",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "deity": "murugan",
+      "source": "override_ref:anubhuti51"
+    },
+    {
+      "track_id": "DvFAVsnMOE4",
+      "title": "சிவ ஸ்தோத்திரம்: ஸ்மரணாதருணாசலம் | Shiva Stotram: Smaranad Arunachalam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "E7yfNOiwJmM",
+      "title": "திருக்குறள்: அதிகாரம் 58 - கண்ணோட்டம் (Symphony) | Thirukkural: Kannottam [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "EChaj0wXk_0",
+      "title": "திருக்குறள்: அதிகாரம் 25 - அருளுடைமை | Thirukkural: Aruludaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "EE9qX_vQdlQ",
+      "title": "திருவாசகம்: திருஏசறவு II | Thiruvasagam: Thiruesaravu II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "EOkuHFSfv8c",
+      "title": "நாம சங்கீர்த்தனம்: நமச்சிவாய சங்கீர்த்தனம் | Namasivaya Sankeerthanam [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "ETELjf0OTi4",
+      "title": "தமிழ்த்தாய் வாழ்த்து: நீராரும் கடலுடுத்த | Tamil Thai Vazhthu: Neeraarum Kadaludutha [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "EXl0IUQXfoU",
+      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா I | Maha Mantra: Hare Krishna Hare Rama I [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "F-aVgFOdKFo",
+      "title": "திருக்குறள்: அதிகாரம் 52 - தெரிந்து வினையாடல் (Remix) | Therinthu Vinaiyaadal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "FFXImcs5Ehw",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "deity": "murugan",
+      "source": "override_ref:skandamantram"
+    },
+    {
+      "track_id": "FGFVertqRUU",
+      "title": "திருக்குறள்: அதிகாரம் 64 - அமைச்சு (Remix) | Thirukkural: Amaichu [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "FGeahfpAbiw",
+      "title": "திருவருட்பா: அன்பு மாலை II | Thiruvarutpa: Anbu Maalai II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "FI0wKDmanmE",
+      "title": "திருவருட்பா: திருவடிப் புகழ்ச்சி | Thiruvarutpa: Thiruvadi Pugazhchi [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "FS5fUOxZySE",
+      "title": "திருக்குறள்: அதிகாரம் 48 - வலியறிதல் (Remix) | Thirukkural: Valiyarithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "FTAB7OBVPPY",
+      "title": "திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி) II | Thiruppugazh: Rathinagiri Thiruppugazh II [Film]",
+      "deity": "murugan",
+      "source": "override_ref:seerulaaviya"
+    },
+    {
+      "track_id": "FXMVQIidbJU",
+      "title": "திருக்குறள்: அதிகாரம் 60 - ஊக்கமுடைமை (Remix) | Thirukkural: Ookkamudaimai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Fh3HfGUObmg",
+      "title": "திருக்குறள்: அதிகாரம் 61 - மடியின்மை (Remix) | Thirukkural: Madiyinmai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "FkQqysk6vmE",
+      "title": "திருக்குறள்: அதிகாரம் 43 - அறிவுடைமை (Original) | Thirukkural: Arivudaimai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "FrZmyvY3sEc",
+      "title": "திருக்குறள்: அதிகாரம் 73 - அவையஞ்சாமை (Original) | Thirukkural: Avai Anjaamai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "G4Tk8Z1tKRg",
+      "title": "திருவருட்பா: கோயிலாகநல் (பழமொழிமேல்) II | Thiruvarutpa: Koiyilakanal II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "G6NSHWKhQcY",
+      "title": "அதிகாரம் 16 - பொறையுடைமை | Poraiyudaimai Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "GCea1CAcjl8",
+      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II | Periyazhvar Thirumozhi: Kannan Thalattu II [Audio]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "GJJW8gIHJ0E",
+      "title": "சிவ நாமாவளி: ஆதி யோகீஸ்வரர் சரணம் | Shiva Namavali: Aadhi Yogeeswarar [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "GN181JJ1lXU",
+      "title": "திருக்குறள்: அதிகாரம் 71 - குறிப்பறிதல் (Remix) | Thirukkural: Kuripparithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "GYH3tnKYidU",
+      "title": "திருமந்திரம்: முதலாம் தந்திரம் | Thirumanthiram: Mudhal Thanthiram [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "GfGlO3RQuik",
+      "title": "திருக்குறள்: அதிகாரம் 61 - மடியின்மை (Original) | Thirukkural: Madiyinmai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "GlJrQMMTRhI",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Gnu-TzZfe7A",
+      "title": "திருக்குறள்: அதிகாரம் 41 - கல்லாமை | Thirukkural: Kallaamai Learning [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "GydxHEmyDPc",
+      "title": "விநாயகர் துதி: கண நாதா ஓம் | Vinayagar Devotional: Gana Natha Om [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "HD3EgOlDLJ0",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "HPP3IG7DWRc",
+      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா | Maha Mantra: Hare Krishna Hare Rama [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "HRN77i6Kio8",
+      "title": "திருக்குறள்: அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Remix) | Periyarai Thunaikodal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "HU-f-FpjmTQ",
+      "title": "கந்த புராணம்: வான் முகில் வழாது பெய்க | Kandha Puranam: Vaan Mugil Vazhadhu Peyga [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "HXLltX2BPig",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "HezzLu_n6qE",
+      "title": "திருக்குறள்: அதிகாரம் 37 - அவாவறுத்தல் | Thirukkural: Avaa Aruththal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Hf0WqgoV0Ng",
+      "title": "திருக்குறள்: அதிகாரம் 26 - புலால் உண்ணாமை | Thirukkural: Pulaal Unnaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "HxxLl5p1t0A",
+      "title": "திருக்குறள்: அதிகாரம் 72 - அவையறிதல் (Sad) | Thirukkural: Avaiyarithal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "I-ZLmvGIiz4",
+      "title": "திருவருட்பா: சிவ பதி விளக்கம் | Thiruvarutpa: Siva Pathi Vilakkam [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "I70WNnsVXtY",
+      "title": "திருவாசகம்: போற்றித் திருஅகவல் | Thiruvasagam: Potrith Thiruagaval [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "IEk-wwY3rC8",
+      "title": "திருக்குறள்: அதிகாரம் 27 - தவம் | Thirukkural: Thavam [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "IHMZsM7LJf8",
+      "title": "திருக்குறள்: அதிகாரம் 74 - நாடு (Remix) | Thirukkural: Naadu [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "IT_-ioBG69g",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "IfBw074qjAY",
+      "title": "திருக்குறள்: அதிகாரம் 54 - பொச்சாவாமை | Thirukkural: Pochchaavaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "IhE1OvdIBKs",
+      "title": "திருப்புகழ்: கைத்தல நிறைகனி | Thiruppugazh: Kaithala Niraigani [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "IiZoud1sP2o",
+      "title": "திருக்குறள்: அதிகாரம் 75 - அரண் (Original) | Thirukkural: Aran [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Iky5L-131A4",
+      "title": "திருவருட்பா: விழியிலே மலர்ந்தது II | Thiruvarutpa: Vizhiyile Malarnthathu II [Remix]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "IuZ6Qe-aiYI",
+      "title": "திருவாசகம்: அச்சோப் பதிகம் | Thiruvasagam: Achcho Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "J-mAIpyxy4A",
+      "title": "திருக்குறள்: அதிகாரம் 67 - வினைத்திட்பம் (Remix) | Thirukkural: Vinai Thitpam [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "J2-tBRFihEQ",
+      "title": "பன்னிரு திருமுறை: திருப்பல்லாண்டு (சேந்தனார்) | Panniru Thirumurai: Thiru Pallaandu [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thirupallaandu"
+    },
+    {
+      "track_id": "J7sfVqWuxyU",
+      "title": "பன்னிரு திருமுறை: திருவையாறு சாரம் | Panniru Thirumurai: Thiruvaiyaaru Saaram [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "JDqbpISJjIA",
+      "title": "திருக்குறள்: அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 1) | Thirukkural: Nenjari Vuruthal I [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "JGslKeAreOE",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "JhdXurT4ohI",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "JkivipMHrzc",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் II | Krishna Devotional: Krishna Mantra II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "JreH0hqB2po",
+      "title": "திருக்குறள்: அதிகாரம் 34 - நிலையாமை | Thirukkural: Nilaiyaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Js6Vepbegr8",
+      "title": "திருக்குறள்: அதிகாரம் 48 - வலியறிதல் (Original) | Thirukkural: Valiyarithal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "JvonvWQHKQY",
+      "title": "திருக்குறள்: அதிகாரம் 64 - அமைச்சு (Remix) | Thirukkural: Amaichu [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "JzGTK1V3dkM",
+      "title": "தேவாரம்: திருநீற்றுப் பதிகம் (மந்திரமாவது நீறு) | Thevaram: Thiruneetru Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "K0N0k3mNh_w",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "K35B1jST2xw",
+      "title": "திருக்குறள்: அதிகாரம் 71 - குறிப்பறிதல் (Symphony) | Thirukkural: Kuripparithal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "K6mhIh64XE8",
+      "title": "திருக்குறள்: அதிகாரம் 39 - இறைமாட்சி | Thirukkural: Irai Maatchi [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "KFtS403RfbY",
+      "title": "திருக்குறள்: அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 1) | Nenjari Vuruthal Part 1 [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "KI7uUFiJO1E",
+      "title": "திருக்குறள்: அதிகாரம் 16 - பொறையுடைமை | Thirukkural: Patience Story [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "KLsXZa28uyE",
+      "title": "திருக்குறள்: அதிகாரம் 48 - வலியறிதல் (Remix) | Thirukkural: Valiyarithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "KOroiTQUE0g",
+      "title": "கந்த புராணம்: வான் முகில் வழாது பெய்க | Kandha Puranam: Vaan Mugil Vazhadhu Peyga [Film]",
+      "deity": "vallalar_cultural",
+      "source": "override_ref:vanmugil"
+    },
+    {
+      "track_id": "KQpDmHooEh8",
+      "title": "தேவாரம்: மாசில் வீணையும் | Thevaram: Maasil Veenaiyum [Film]",
+      "deity": "shiva",
+      "source": "override_ref:maasil"
+    },
+    {
+      "track_id": "KZxknhbVIk0",
+      "title": "திருக்குறள்: அதிகாரம் 40 - கல்வி | Thirukkural: Kalvi [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "KhopzUh8oTg",
+      "title": "திருமந்திரம்: முதலாம் தந்திரம் II | Thirumanthiram: Mudhal Thanthiram II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "KjQZFlnCluU",
+      "title": "திருவருட்பா: சிவ பதி விளக்கம் | Thiruvarutpa: Siva Pathi Vilakkam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "KvU4v5v2X98",
+      "title": "சிவ நாமாவளி: ஈஸ்வர நாமவளி சரணம் II | Shiva Namavali: Eswara Namavali II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "L-FvFZeT_cQ",
+      "title": "திருக்குறள்: அதிகாரம் 50 - இடனறிதல் (Original) | Thirukkural: Idanarithal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "L6DWSjPqoH0",
+      "title": "திருக்குறள்: அதிகாரம் 33 - கொல்லாமை | Thirukkural: Kollaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "LBcuDwnrypQ",
+      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II | Periyazhvar Thirumozhi: Kannan Thalattu II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "LL77sdbmUNE",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Audio]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "LjiR9PIRl8o",
+      "title": "திருக்குறள்: அதிகாரம் 35 - துறவு | Thirukkural: Thuravu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Lki_Y8OSljs",
+      "title": "விநாயகர் துதி: கண நாதா ஓம் (Symphony) | Vinayagar Devotional: Gana Natha Om (Symphony) [Film]",
+      "deity": "vinayagar",
+      "source": "override_ref:gananatha"
+    },
+    {
+      "track_id": "Lzkbhp_ehA8",
+      "title": "திருப்பாவை: பாசுரம் 2 - வையத்து வாழ்வீர் II | Thiruppavai: Vaiyathu Vazhveer II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:thiruppavai2"
+    },
+    {
+      "track_id": "M2YC8urOH0M",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "M4KRTTyoD_A",
+      "title": "திருவாசகம்: அச்சோப் பதிகம் | Thiruvasagam: Achcho Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "MDK8Oq7p1j8",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "MTvDDAQCFmk",
+      "title": "கந்தர் அலங்காரம்: நாள் என் செய்யும் | Kandhar Alangaram: Naal En Seyyum [Film]",
+      "deity": "murugan",
+      "source": "override_ref:alankaram38"
+    },
+    {
+      "track_id": "MXK8vB3_fBE",
+      "title": "அதிகாரம் 25 - அருளுடைமை | Aruludaimai Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "MlaG3Z3_Kck",
+      "title": "திருவருட்பா: காட்சிப் பெருமிதம் | Thiruvarutpa: Kaatchi Perumitham [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "MtV5wS61MsM",
+      "title": "நவக்கிரக துதி: ஸ்ரீ சனி பகவான் துதி II | Navagraha Stotram: Sani Bhagavan Thuthi II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "MvwT6dnGE0U",
+      "title": "திருக்குறள்: அதிகாரம் 68 - வினைசெயல்வகை (Female) | Thirukkural: Vinai Seyalvagai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "N8MOVChJwPQ",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் (Symphony) | Uruvaai Aruvaai (Symphony) [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "NIvQ6yD1wnY",
+      "title": "திருக்குறள்: அதிகாரம் 65 - சொல்வன்மை (Original) | Thirukkural: Solvanmai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "NK2PqzKz3aI",
+      "title": "பன்னிரு திருமுறை: திருப்பல்லாண்டு (சேந்தனார்) | Panniru Thirumurai: Thiru Pallaandu [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thirupallaandu"
+    },
+    {
+      "track_id": "Nb1nAcrGNeU",
+      "title": "திருக்குறள்: அதிகாரம் 53 - சுற்றந்தழால் | Thirukkural: Suttranthazhaal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "NeauJSGB2W8",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் | Krishna Devotional: Krishna Mantra [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "NjHDFS3cftg",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Nvx3ObuSndM",
+      "title": "திருப்புகழ்: திருப்புகழ் 712 (திருப்போரூர்) | Thiruppugazh: Thirupporur Thiruppugazh [Film]",
+      "deity": "murugan",
+      "source": "override_ref:seerulaaviya"
+    },
+    {
+      "track_id": "NxZf0eRutEY",
+      "title": "திருக்குறள்: அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Thirukkural: Kooda Ozhukkam [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "O0hASl4BS2c",
+      "title": "திருக்குறள்: அதிகாரம் 54 - பொச்சாவாமை (Original) | Thirukkural: Pochavaamai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "O7n8bL9XOn4",
+      "title": "ராம பஜனை: ரகுபதி ராகவ ராஜா ராம் | Rama Bhajan: Raghupati Raghava [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:raghupati"
+    },
+    {
+      "track_id": "OXgMCvchSt8",
+      "title": "திருக்குறள்: அதிகாரம் 62 - ஆள்வினையுடைமை (Remix) | Thirukkural: Aalvinaiyudaimai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "On2xoZqBsss",
+      "title": "திருப்புகழ்: முத்தைத் தரு (திருப்புகழ்) | Thiruppugazh: Muthai Tharu [Film]",
+      "deity": "murugan",
+      "source": "override_ref:muthaitharu"
+    },
+    {
+      "track_id": "OnzFNGriZ24",
+      "title": "தமிழ்த்தாய் வாழ்த்து: நீராரும் கடலுடுத்த | Tamil Thai Vazhthu: Neeraarum Kadaludutha [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "OqRZLEMvx8s",
+      "title": "திருக்குறள்: அதிகாரம் 47 - தெரிந்து செயல்வகை (Original) | Therinthu Seyalvagai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "OzejLLvDq5s",
+      "title": "திருக்குறள்: அதிகாரம் 44 - குற்றங்கடிதல் (Remix) | Thirukkural: Kuttrangadithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "P-gtNBy8sRE",
+      "title": "தேவாரம்: திருநீற்றுப் பதிகம் (மந்திரமாவது நீறு) | Thevaram: Thiruneetru Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "PLBuPRdKMHE",
+      "title": "திருவருட்பா: அபராத விண்ணப்பம் II | Thiruvarutpa: Aparadha Vinnappam II [Audio]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "PO4U3nRv6o0",
+      "title": "திருவருட்பா: திருவருள் வேட்கை | Thiruvarutpa: Thiruvarul Vetkai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "PVcmqZuROSU",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "PXQW4sYo4nY",
+      "title": "திருவருட்பா: திருவடிச் சரண்புகல் | Thiruvarutpa: Thiruvadi Saranpugal [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "PmziMZrMHfE",
+      "title": "திருக்குறள்: அதிகாரம் 57 - வெருவந்த செய்யாமை (Remix) | Veruvandha Seyyaamai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Q2xax9mIhZw",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Audio]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Q57FSOLDMU0",
+      "title": "திருவருட்பா: சொற்பெரு மெய்ஞ்ஞான | Thiruvarutpa: Sorpperu Meygnana [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Q5G2h9GuGQs",
+      "title": "ராம பஜனை: ரகுபதி ராகவ ராஜா ராம் | Rama Bhajan: Raghupati Raghava [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:raghupati"
+    },
+    {
+      "track_id": "QAv04nxeH4c",
+      "title": "திருக்குறள்: அதிகாரம் 35 - துறவு (Female) | Thirukkural: Thuravu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "QFCD-U3sT4M",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி II | Thiruvasagam: Thennadudaiya Sivaney Potri II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "QH-xL37NmGM",
+      "title": "திருப்பாவை: பாசுரம் 1 - மார்கழித் திங்கள் | Thiruppavai: Margazhi Thingal [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:thiruppavai1"
+    },
+    {
+      "track_id": "QRSRyYEacMs",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் (Symphony) | Uruvaai Aruvaai (Symphony) [Film]",
+      "deity": "murugan",
+      "source": "override_ref:skandamantram"
+    },
+    {
+      "track_id": "QRdpedglKkU",
+      "title": "திருவாசகம்: திருப்படை ஆட்சி | Thiruvasagam: Thiruppadai Aatchi [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "QTxWZpg6F98",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "QXWB2raWKXE",
+      "title": "திருக்குறள்: அதிகாரம் 63 - இடுக்கண் அழியாமை (Remix) | Thirukkural: Idukkan Azhiyamai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "QXhT9uoA7_w",
+      "title": "திருக்குறள்: அதிகாரம் 1 - கடவுள் வாழ்த்து | Thirukkural: Kadavul Vazhthu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "QXqjB9UnD7E",
+      "title": "திருவாசகம்: திருவெண்பா (Remix) | Thiruvasagam: Thiruvenba (Remix) [Remix]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "R-5gWfRNMts",
+      "title": "திருக்குறள்: அதிகாரம் 30 - வாய்மை (Remix) | Thirukkural: Vaaymai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "R82hz_s2YGQ",
+      "title": "திருக்குறள்: அதிகாரம் 16 - பொறையுடைமை | Thirukkural: Porai Udaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "R8OyFbqJJEw",
+      "title": "திருக்குறள்: அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 2) | Nenjari Vuruthal Part 2 [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "RAUafMVpT5k",
+      "title": "திருக்குறள்: அதிகாரம் 74 - நாடு (Remix) | Thirukkural: Naadu [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "RDcw0Bol-cE",
+      "title": "திருப்பாவை: பாசுரம் 1 - மார்கழித் திங்கள் | Thiruppavai: Margazhi Thingal [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:thiruppavai1"
+    },
+    {
+      "track_id": "RVMUEr1MOFo",
+      "title": "விநாயகர் நான்மணிமாலை: பாலும் தெளிதேனும் | Vinayagar Nanmanimalai: Paalum Thelithenum [Film]",
+      "deity": "vinayagar",
+      "source": "override_ref:palum_thelithenum"
+    },
+    {
+      "track_id": "RY7nPGorS94",
+      "title": "திருக்குறள்: அதிகாரம் 69 - தூது (Remix) | Thirukkural: Thoothu [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "RmggfAhGNXU",
+      "title": "திருவாசகம்: திருஏசறவு II | Thiruvasagam: Thiruesaravu II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "RtHz7rTLNHk",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "S4ogw4EfpDY",
+      "title": "திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி) I | Thiruppugazh: Rathinagiri Thiruppugazh I [Film]",
+      "deity": "murugan",
+      "source": "override_ref:rathinagiri566"
+    },
+    {
+      "track_id": "S9WQ-O0tZJI",
+      "title": "திருவாசகம்: திருப்படை ஆட்சி II | Thiruvasagam: Thiruppadai Aatchi II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "SDPLWITWGho",
+      "title": "திருவருட்பா: நற்றுணை விளக்கம் | Thiruvarutpa: Nattrunai Vilakkam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "SI8ItN6nqck",
+      "title": "திருக்குறள்: அதிகாரம் 58 - கண்ணோட்டம் (Original) | Thirukkural: Kannottam [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "SLaW0c4zDuc",
+      "title": "திருவருட்பா: அன்பு மாலை II | Thiruvarutpa: Anbu Maalai II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "SN7FIkL-o1k",
+      "title": "திருப்புகழ்: முத்தைத் தரு | Thiruppugazh: Muthai Tharu Thiruppugazh [Film]",
+      "deity": "murugan",
+      "source": "override_ref:muthaitharu"
+    },
+    {
+      "track_id": "SWAjAbur-TQ",
+      "title": "திருக்குறள்: அதிகாரம் 1 - கடவுள் வாழ்த்து | Thirukkural: Kadavul Vazhthu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "S_FoILDLhls",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் II | Krishna Devotional: Krishna Mantra II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "T1KiH3G5WPs",
+      "title": "ஆதிசங்கரர்: மகா கணேச பஞ்சரத்னம் | Adi Shankara: Maha Ganesha Pancharatnam [Film]",
+      "deity": "vinayagar",
+      "source": "override_ref:pancharatnam"
+    },
+    {
+      "track_id": "TQtjI3EepPQ",
+      "title": "திருக்குறள்: அதிகாரம் 59 - ஒற்றாடல் | Thirukkural: Ottraadal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "TcsCIh8hvko",
+      "title": "தேவாரம்: கடவுளைக் கடலுள் எழு (திருக்குறுந்தொகை) | Thevaram: Kadavulai Kadalul Ezhu [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "TlaBaW3-ckI",
+      "title": "திருவருட்பா: கொடைமடப் புகழ்ச்சி | Thiruvarutpa: Kodaimada Pugazhchi [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "To2l9uyCjMg",
+      "title": "திருப்பாவை: பாசுரம் 3 - ஓங்கி உலகளந்த | Thiruppavai: Ongi Ulagalantha [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "U-u4rAYBUkc",
+      "title": "அதிகாரம் 44 - குற்றங்கடிதல் | Kutrangadithal Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "UIc-dkmHgt4",
+      "title": "திருவாசகம்: அன்னைப்பத்து | Thiruvasagam: Annaippathu [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "UPAYRisyN7Q",
+      "title": "திருக்குறள்: அதிகாரம் 67 - வினைத்திட்பம் (Remix) | Thirukkural: Vinai Thitpam [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "UPODVJixLyM",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "UUytjlINYLw",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "UxsU284RHQY",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் I | Thiruvarutpa: Arutperunjothi Agaval I [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "UyCe3KLqY_8",
+      "title": "திருக்குறள்: அதிகாரம் 46 - சிற்றினம் சேராமை (Remix) | Thirukkural: Sittrinam Seramai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "V7dOPmD9aWg",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் | Thiruvarutpa: Arutperunjothi Agaval [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "VENn3ip3XPA",
+      "title": "திருக்குறள்: அதிகாரம் 64 - அமைச்சு | Thirukkural: Amaichu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "VMn8fiWF-oA",
+      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி | Saraswathi Stotram: 108 Saraswathi Potri [Film]",
+      "deity": "amman",
+      "source": "override_ref:saraswathi108"
+    },
+    {
+      "track_id": "VMqFjcQtebw",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் I | Kandhar Anuboothi: Uruvaai Aruvaai I [Remix]",
+      "deity": "murugan",
+      "source": "override_ref:velvirutham_1"
+    },
+    {
+      "track_id": "VVkl8bORJXg",
+      "title": "திருக்குறள்: அதிகாரம் 44 - குற்றங்கடிதல் (Remix) | Thirukkural: Kuttrangadithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Vj6wcfC3rPk",
+      "title": "திருக்குறள்: அதிகாரம் 58 - கண்ணோட்டம் (Remix) | Thirukkural: Kannottam [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "VyUqD3ZO3BU",
+      "title": "திருவருட்பா: அறிவரும் பெருமை | Thiruvarutpa: Arivarum Perumai [Audio]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "W2peLbC20sA",
+      "title": "திருவருட்பா: சிவ சுப்ரமணியர் திருவிருத்தம் | Thiruvarutpa: Siva Subramaniyar [Film]",
+      "deity": "murugan",
+      "source": "override_ref:sivasubramaniyar"
+    },
+    {
+      "track_id": "W4LQ0TT2cRA",
+      "title": "திருக்குறள்: அதிகாரம் 73 - அவையஞ்சாமை | Thirukkural: Avai Anjaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "WIDyQVQY2X8",
+      "title": "விஷ்ணு துதி: நமோ நாராயணம் (தசாவதாரம்) | Vishnu Devotional: Namo Narayanam [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:namonarayana"
+    },
+    {
+      "track_id": "WKCMHUFbf2Q",
+      "title": "திருக்குறள்: அதிகாரம் 35 - துறவு (Original) | Thirukkural: Thuravu [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "WM8EPZ4KK2s",
+      "title": "திருக்குறள்: அதிகாரம் 31 - வெகுளாமை | Thirukkural: Vegulaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "WMtIb1EHwGw",
+      "title": "நவக்கிரக துதி: ஸ்ரீ சனி பகவான் துதி II | Navagraha Stotram: Sani Bhagavan Thuthi II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Wf1Ehxt_A5s",
+      "title": "ஆலய நாதம்: இந்திய ஹார்மோனிக்கா தியானம் | Aalaya Naatham: Harmonica Meditation [Film]",
+      "deity": "vallalar_cultural",
+      "source": "override_ref:harmonica"
+    },
+    {
+      "track_id": "WhqZ0ttDYYc",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "X-EB6CFVz1E",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் II | Bharathiyar: Thayin Manikkodi Paareer II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "XB7cD-5ye-k",
+      "title": "திருவாசகம்: திருப்படை ஆட்சி | Thiruvasagam: Thiruppadai Aatchi [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "XErAOEtZdAU",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் I | Kandhar Anuboothi: Uruvaai Aruvaai I [Film]",
+      "deity": "murugan",
+      "source": "override_ref:velvirutham_1"
+    },
+    {
+      "track_id": "XN5ENUbmSOE",
+      "title": "திருக்குறள்: அதிகாரம் 60 - ஊக்கமுடைமை | Thirukkural: Ookkamudaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "XQtBJhrXujU",
+      "title": "அதிகாரம் 39 - இறைமாட்சி | Iraimaatchi Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "XRizXIUU57g",
+      "title": "திருக்குறள்: அதிகாரம் 66 - வினைத்தூய்மை (Remix) | Thirukkural: Vinai Thooymai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "XelTS98bLec",
+      "title": "திருப்புகழ்: திருப்புகழ் விலாசம் | Thiruppugazh: Thiruppugazh Vilasam [Audio]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "XlCvnE6y9d0",
+      "title": "திருவாசகம்: போற்றித் திருஅகவல் II | Thiruvasagam: Potrith Thiruagaval II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "XpdQL93uFtM",
+      "title": "திருவருட்பா: புண்ணிய விளக்கம் | Thiruvarutpa: Punniya Vilakkam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "XqDL5bZgW9c",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "XwlGJp3gqCc",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Y0tOS_2Azxs",
+      "title": "திருவாசகம்: சிவபுராணம் II | Thiruvasagam: Sivapuranam II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Y3xujLwXuBs",
+      "title": "திருக்குறள்: அதிகாரம் 32 - இன்னா செய்யாமை | Thirukkural: Inna Seidharai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "YBmfJyQNSCY",
+      "title": "திருக்குறள்: அதிகாரம் 75 - அரண் (Symphony) | Thirukkural: Aran [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "YL6ocN5OMzI",
+      "title": "திருக்குறள்: அதிகாரம் 34 - நிலையாமை | Thirukkural: Nilaiyaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "YORF54ouPz0",
+      "title": "திருவருட்பா: சிவபுண்ணியத் தேற்றம் | Thiruvarutpa: Sivapunniya Thetram [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Yg2b_xJGGEQ",
+      "title": "திருவருட்பா: எழுத்தறியும் பெருமான் மாலை | Thiruvarutpa: Ezhuthariyum Peruman [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Yg_IgGStRvY",
+      "title": "தேவாரம்: கோளறு திருப்பதிகம் II | Thevaram: Kolaru Pathigam II [Film]",
+      "deity": "shiva",
+      "source": "override_ref:kolaru"
+    },
+    {
+      "track_id": "Yk9JZ7WTk-k",
+      "title": "நாம சங்கீர்த்தனம்: நமச்சிவாய சங்கீர்த்தனம் | Namasivaya Sankeerthanam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "YlNGYTlCedk",
+      "title": "பஜனை: இராம கிருஷ்ண துதி | Bhajan: Rama Krishna Thuthi [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "YqHg3hf8T8w",
+      "title": "திருக்குறள்: அதிகாரம் 57 - வெருவந்த செய்யாமை (Original) | Veruvandha Seyyaamai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Yu4RBKpAodM",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "override_ref:abirami69"
+    },
+    {
+      "track_id": "Yvlg_8JBHL4",
+      "title": "கந்த புராணம்: திகட சக்கர சண்முகத்தோன் (காப்பு) II | Kandha Puranam: Thigada Sakkara II [Film]",
+      "deity": "vinayagar",
+      "source": "override_ref:thigada"
+    },
+    {
+      "track_id": "YxP_uh3dM18",
+      "title": "திருப்புகழ்: திருப்புகழ் 712 (திருப்போரூர்) I | Thirupporur Thiruppugazh I [Audio]",
+      "deity": "murugan",
+      "source": "override_ref:seerulaaviya"
+    },
+    {
+      "track_id": "YycgNlQl6Go",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) I | Thevaram: Thiruvothur Pathigam I [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Z7qFXMBjnak",
+      "title": "திருவருட்பா: திருவடிச் சரண்புகல் | Thiruvarutpa: Thiruvadi Saranpugal [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "Z9GnvOMjDjU",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thennadudaiya"
+    },
+    {
+      "track_id": "ZAjf5Ewzu_c",
+      "title": "தேவாரம்: மாசில் வீணையும் | Thevaram: Maasil Veenaiyum [Film]",
+      "deity": "shiva",
+      "source": "override_ref:maasil"
+    },
+    {
+      "track_id": "ZXdIpt_-Pmo",
+      "title": "திருவருட்பா: வாழ்வது தமிழ் ஆகட்டும் | Thiruvarutpa: Vaazvathu Thamiz [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "ZZKjQ1SD_mQ",
+      "title": "கந்தர் அலங்காரம்: நாள் என் செய்யும் II | Kandhar Alangaram: Naal En Seyyum II [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "ZsxGP1jIZ-s",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "_6amHDAc8EI",
+      "title": "ஆதிசங்கரர்: வேதஸார சிவ ஸ்தோத்ரம் | Adi Shankara: Vedasaara Shiva Stotram [Film]",
+      "deity": "shiva",
+      "source": "override_ref:vedasara"
+    },
+    {
+      "track_id": "_Ceq0AzIQ9c",
+      "title": "திருக்குறள்: அதிகாரம் 40 - கல்வி | Thirukkural: Kalvi [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "_DHXM8tymn8",
+      "title": "ராம பஜனை: ரகுபதி ராகவ ராஜா ராம் | Rama Bhajan: Raghupati Raghava [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "_Q2t-TcmDT4",
+      "title": "திருக்குறள்: அதிகாரம் 43 - அறிவுடைமை | Thirukkural: Arivudaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "aBA50x-gDME",
+      "title": "திருக்குறள்: அதிகாரம் 69 - தூது (Original) | Thirukkural: Thoothu [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "aSQrSHA4YtU",
+      "title": "திருக்குறள்: அதிகாரம் 16 - பொறையுடைமை | Thirukkural: Poraiyudaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "aTFvlXMPBSE",
+      "title": "திருக்குறள்: அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் (Original) | Periyarai Thunaikodal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "aq0j2OMVNoU",
+      "title": "திருவாசகம்: சிவபுராணம் | Thiruvasagam: Sivapuranam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "b-FcuF06jHI",
+      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II | Periyazhvar Thirumozhi: Kannan Thalattu II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "bH23l5vVgL8",
+      "title": "திருக்குறள்: அதிகாரம் 51 - தெரிந்து தெளிதல் | Thirukkural: Therinthu Thelithal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "bJLV48oruHs",
+      "title": "திருவாசகம்: சென்னிப்பத்து II | Thiruvasagam: Sennippathu II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "bOxyDZgsI2c",
+      "title": "திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி) II | Thiruppugazh: Rathinagiri Thiruppugazh II [Film]",
+      "deity": "murugan",
+      "source": "override_ref:rathinagiri566"
+    },
+    {
+      "track_id": "bUepGv6PJQA",
+      "title": "திருக்குறள்: அதிகாரம் 43 - அறிவுடைமை (Pop) | Thirukkural: Arivudaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "bZ03UopgYcc",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "override_ref:karumari"
+    },
+    {
+      "track_id": "bZmif21zNtw",
+      "title": "சிவ பக்திப் பாடல்: சிவநேச வெண்பா | Shiva Devotional: Sivanesa Venba [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "cEIEecb51Fc",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் (Remix) | Kandhar Anuboothi: Uruvaai Aruvaai (Remix) [Remix]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "cKyT1Cv7zEA",
+      "title": "தேவாரம்: மாசில் வீணையும் | Thevaram: Maasil Veenaiyum [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "cL-eyIVBjo0",
+      "title": "அதிகாரம் 5 - இல்வாழ்க்கை | Ilvaazhkkai Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "cR_u-JuGJAU",
+      "title": "திருக்குறள்: அதிகாரம் 76 - பொருள் செயல்வகை | Thirukkural: Porul Seyalvagai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "cUt716Zafy0",
+      "title": "திருக்குறள்: அதிகாரம் 49 - காலமறிதல் (Remix) | Thirukkural: Kaalamarithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "cVbT38ujUTQ",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Audio]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "cj6mlDwjJEo",
+      "title": "திருக்குறள்: அதிகாரம் 66 - வினைத்தூய்மை (Original) | Thirukkural: Vinai Thooymai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "cn776n6oKXQ",
+      "title": "திருக்குறள்: அதிகாரம் 59 - ஒற்றாடல் (Original) | Thirukkural: Ottraadal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "coUEhVQH0Uk",
+      "title": "ஆலய நாதம்: இந்திய ஹார்மோனிக்கா தியானம் | Aalaya Naatham: Harmonica Meditation [Film]",
+      "deity": "vallalar_cultural",
+      "source": "override_ref:aalayanaatham"
+    },
+    {
+      "track_id": "d4-qZaYo-4g",
+      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி II | Saraswathi Stotram: 108 Saraswathi Potri II [Film]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "dBIUA3fKBJ0",
+      "title": "திருக்குறள்: அதிகாரம் 71 - குறிப்பறிதல் | Thirukkural: Kuripparithal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "dD_cXqU_XVQ",
+      "title": "திருக்குறள்: அதிகாரம் 38 - ஊழ் | Thirukkural: Oozh Vinai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "dUYaclHH6Tk",
+      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II | Periyazhvar Thirumozhi: Kannan Thalattu II [Audio]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "dUtAhdbuhPE",
+      "title": "அதிகாரம் 31 - வெகுளாமை | Vegulaamai Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "dVYI3ZgpDC8",
+      "title": "திருக்குறள்: அதிகாரம் 49 - காலமறிதல் (Remix) | Thirukkural: Kaalamarithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "daM5VkysZqg",
+      "title": "திருக்குறள்: அதிகாரம் 63 - இடுக்கண் அழியாமை | Thirukkural: Idukkan Azhiyaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "dbdp19C0j3M",
+      "title": "திருவருட்பா: திருவருள் வேட்கை II | Thiruvarutpa: Thiruvarul Vetkai II [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "diUv8fkOqv0",
+      "title": "திருக்குறள்: அதிகாரம் 49 - காலமறிதல் (Original) | Thirukkural: Kaalamarithal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "diblSOvZENA",
+      "title": "திருப்பாவை: விஷ்ணும் ஜிஷ்ணும் | Thiruppavai: Vishnum Jishnum [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "djYooU1LmGk",
+      "title": "திருக்குறள்: அதிகாரம் 30 - வாய்மை (Remix) | Thirukkural: Vaaymai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "do8z9OuxLNo",
+      "title": "திருவாசகம்: திரு உந்தியார் | Thiruvasagam: Thiru Unthiyar [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "dpx7C3wuyio",
+      "title": "திருவாசகம்: பூவார் சென்னி மன்னன் (யாத்திரைப் பத்து) | Thiruvasagam: Poovar Senni Mannan [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "dthZW-Wo8IU",
+      "title": "திருக்குறள்: அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Female) | Mannarai Sernthozhuthal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "dwYw5_W4g4A",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "e9fTnxiiLnc",
+      "title": "திருவாசகம்: திருவார்த்தை II | Thiruvasagam: Thiruvaarthai II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "eEYBleNgRGU",
+      "title": "கந்தர் அலங்காரம்: நாள் என் செய்யும் II | Kandhar Alangaram: Naal En Seyyum II [Film]",
+      "deity": "murugan",
+      "source": "override_ref:alankaram38"
+    },
+    {
+      "track_id": "eK--J196v_c",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "f1jxgAbXcdE",
+      "title": "திருக்குறள்: அதிகாரம் 2 - வான் சிறப்பு | Thirukkural: Vaan Sirappu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fANgtszMDvY",
+      "title": "திருவாசகம்: திருப்படை ஆட்சி | Thiruvasagam: Thiruppadai Aatchi [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fGUDd1DvDcE",
+      "title": "திருவருட்பா: காட்சிப் பெருமிதம் | Thiruvarutpa: Kaatchi Perumitham [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fJIeiPyejxU",
+      "title": "திருவருட்பா: பரசிவ வணக்கம் | Thiruvarutpa: Parasiva Vanakkam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fNaiY4wiadc",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II | Thevaram: Thiruvothur Pathigam II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fQS1tTxBq_E",
+      "title": "அதிகாரம் 45 - பெரியாரைத் துணைக்கோடல் | Periyaaraith Thunaikkodal Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fRNAsDZr3QA",
+      "title": "திருக்குறள்: அதிகாரம் 32 - இன்னா செய்யாமை | Thirukkural: Kindness Story [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fRoTy3NdaLo",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fcWB5HrGeMs",
+      "title": "திருவாசகம்: திரு உந்தியார் | Thiruvasagam: Thiru Unthiyar [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fdB9R7QeXo0",
+      "title": "திருவாசகம்: குழைத்த பத்து II | Thiruvasagam: Kuzhaitha Pathu II [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fg2YbSBo1Sk",
+      "title": "திருவருட்பா: அபராத விண்ணப்பம் II | Thiruvarutpa: Aparadha Vinnappam II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fkgEbW9HdtI",
+      "title": "திருப்பாவை: பாசுரம் 1 - மார்கழித் திங்கள் | Thiruppavai: Margazhi Thingal [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fq0nJxj5aU4",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "fzoZWnsJReg",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் II | Dhanam Tharum Kalvi Tharum II [Film]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "g3tE-_-cZgQ",
+      "title": "பாரதியார்: தாயின் மணிக்கொடி பாரீர் | Bharathiyar: Thayin Manikkodi Paareer [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "g42Pg2sg_gg",
+      "title": "ஆதிசங்கரர்: வேதஸார சிவ ஸ்தோத்ரம் | Adi Shankara: Vedasaara Shiva Stotram [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "g9ddfNl5ov0",
+      "title": "திருக்குறள்: அதிகாரம் 52 - தெரிந்து வினையாடல் | Thirukkural: Therinthu Vinaiyaadal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "gBRvVKE_so8",
+      "title": "திருக்குறள்: அதிகாரம் 68 - வினைசெயல்வகை (Original) | Thirukkural: Vinai Seyalvagai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "gjo0AfKBzsU",
+      "title": "திருக்குறள்: அதிகாரம் 74 - நாடு (Remix) | Thirukkural: Naadu [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "gre-26HFBfA",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "grjVzzo-RWc",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "override_ref:mariamman"
+    },
+    {
+      "track_id": "gwTtvj-h77g",
+      "title": "திருமந்திரம்: முதலாம் தந்திரம் | Thirumanthiram: Mudhal Thanthiram [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "h2q-ADrbBc4",
+      "title": "திருக்குறள்: அதிகாரம் 26 - புலால் உண்ணாமை | Thirukkural: Pulaal Unnaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "h39OlLt4N9A",
+      "title": "திருவாசகம்: சிவபுராணம் | Thiruvasagam: Sivapuranam [Film]",
+      "deity": "shiva",
+      "source": "override_ref:sivapuranam"
+    },
+    {
+      "track_id": "h4Pc0KxvnRo",
+      "title": "திருக்குறள்: அதிகாரம் 29 - கள்ளாமை (Original) | Thirukkural: Kallaamai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "hCHBPd8BH8A",
+      "title": "திருக்குறள்: அதிகாரம் 6 - வாழ்க்கைத் துணைநலம் | Thirukkural: Vaazkkai Thunai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "hDoLscfeg5Q",
+      "title": "திருவருட்பா: திருவருள் வழக்க விளக்கம் | Thiruvarutpa: Thiruvarul Vazhakka Vilakkam [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "hKkmbQ9TIaU",
+      "title": "திருப்புகழ்: கைத்தல நிறைகனி | Thiruppugazh: Kaithala Niraigani [Film]",
+      "deity": "murugan",
+      "source": "override_ref:kaithala"
+    },
+    {
+      "track_id": "hXpQuPvEzSk",
+      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா I | Maha Mantra: Hare Krishna Hare Rama I [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "hfv9Ys99fZU",
+      "title": "திருவருட்பா: இங்கித மாலை II | Thiruvarutpa: Ingitha Maalai II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "hjcH8zbEleE",
+      "title": "திருக்குறள்: அதிகாரம் 57 - வெருவந்த செய்யாமை (Original) | Veruvandha Seyyaamai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "hm7_qUlTUiU",
+      "title": "திருப்பாவை: பாசுரம் 2 - வையத்து வாழ்வீர் II | Thiruppavai: Vaiyathu Vazhveer II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:thiruppavai2"
+    },
+    {
+      "track_id": "hoZZgL3xe9k",
+      "title": "திருவாசகம்: எண்ணப் பதிகம் | Thiruvasagam: Ennap Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "hp1ctMubVmo",
+      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி | Saraswathi Stotram: 108 Saraswathi Potri [Film]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "hrg_nAlW7VQ",
+      "title": "திருக்குறள்: அதிகாரம் 51 - தெரிந்து தெளிதல் (Original) | Therinthu Thelithal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "huastC0A3-8",
+      "title": "திருவருட்பா: கோயிலாகநல் (பழமொழிமேல்) II | Thiruvarutpa: Koiyilakanal II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "i6XFZE1q9uo",
+      "title": "திருவருட்பா: உள்ளம் ஒரு கோவில் II | Thiruvarutpa: Ullam Oru Kovil II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "i8h-2dDFnhI",
+      "title": "திருவருட்பா: தாமரை மலரே | Thiruvarutpa: Thamarai Malare [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "iJ-3SHR2MKw",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "deity": "murugan",
+      "source": "override_ref:skandamantram"
+    },
+    {
+      "track_id": "iKIsoxTz5-k",
+      "title": "திருவாசகம்: Poovar Senni Mannan (Thiruvasagam) | Thiruvasagam: Yaththirai Paththu [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "iPFEtwdcIxc",
+      "title": "திருப்புகழ்: திருப்புகழ் 712 (திருப்போரூர்) II | Thirupporur Thiruppugazh II [Audio]",
+      "deity": "murugan",
+      "source": "override_ref:seerulaaviya"
+    },
+    {
+      "track_id": "iTALOLp7MkQ",
+      "title": "பன்னிரு திருமுறை: திருவையாறு சாரம் | Panniru Thirumurai: Thiruvaiyaaru Saaram [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thiruvaiyaru"
+    },
+    {
+      "track_id": "irx33IVWrPY",
+      "title": "திருக்குறள்: அதிகாரம் 75 - அரண் (Symphony) | Thirukkural: Aran Symphony [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "isCeNcUwBTw",
+      "title": "தமிழ்த்தாய் வாழ்த்து: நீராரும் கடலுடுத்த | Tamil Thai Vazhthu: Neeraarum Kadaludutha [Film]",
+      "deity": "vallalar_cultural",
+      "source": "override_ref:tamilthai"
+    },
+    {
+      "track_id": "ixQGKe_IH80",
+      "title": "திருவாசகம்: திருவெம்பாவை (ஆதியும் அந்தமும்) | Thiruvasagam: Thiruvempavai [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thiruvempavai"
+    },
+    {
+      "track_id": "izHLRwITs_Q",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் I | Krishna Devotional: Krishna Mantra I [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "j1tzixa2raU",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி II | Thiruvasagam: Thennadudaiya Sivaney Potri II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "jBA9wlyNjAE",
+      "title": "திருக்குறள்: அதிகாரம் 64 - அமைச்சு (Original) | Thirukkural: Amaichu [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "jO2i4bcZ2ts",
+      "title": "திருக்குறள்: அதிகாரம் 8 - அன்புடைமை | Thirukkural: Anbudaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "jXOalu0JJoA",
+      "title": "திருக்குறள்: அதிகாரம் 29 - கள்ளாமை (Symphony) | Thirukkural: Kallaamai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "jZFTlpJwn6A",
+      "title": "சிவ பக்திப் பாடல்: தியாக வண்ணப் பதிகம் | Shiva Devotional: Thiyaga Vanna Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "jZI2pTITtBY",
+      "title": "திருவருட்பா: வடிவுடை மாணிக்கமாலை | Thiruvarutpa: Vadivudai Manikkamalai [Film]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "jdvz-yoK5eI",
+      "title": "திருக்குறள்: அதிகாரம் 79 - நட்பு | Thirukkural: Natpu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "jfXxy-Y9zuA",
+      "title": "நாம சங்கீர்த்தனம்: இராம ராம ராம ஹரே | Nama Sankeerthanam: Rama Rama Hare [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "jpCBad1MjgI",
+      "title": "திருப்புகழ்: ஆறுமுகம் ஆறுமுகம் | Thiruppugazh: Arumugam Arumugam [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "jsFIjA8ZOkw",
+      "title": "திருவாசகம்: குழைத்த பத்து II | Thiruvasagam: Kuzhaitha Pathu II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "juuVtFBK3X8",
+      "title": "திருவருட்பா: ஆடலமுதப் பத்து | Thiruvarutpa: Aadalamudha Pathu [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "kA_mQ4bRB2E",
+      "title": "திருக்குறள்: அதிகாரம் 1 - கடவுள் வாழ்த்து | Thirukkural: Kadavul Vazhthu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "kFmUrNPXsso",
+      "title": "தமிழ்த்தாய் வாழ்த்து: நீராரும் கடலுடுத்த | Tamil Thai Vazhthu: Neeraarum Kadaludutha [Film]",
+      "deity": "vallalar_cultural",
+      "source": "override_ref:tamilthai"
+    },
+    {
+      "track_id": "kGhg01-hWos",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "kdZSlrXEfvs",
+      "title": "திருக்குறள்: அதிகாரம் 73 - அவையஞ்சாமை (Female) | Thirukkural: Avai Anjaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "kkDJM6dKTxs",
+      "title": "திருவருட்பா: இங்கித மாலை II | Thiruvarutpa: Ingitha Maalai II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "klSi7r6YhCU",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "kshlDPh2IqE",
+      "title": "திருவருட்பா: அபராதத்து ஆற்றாமை | Thiruvarutpa: Abaraathathu Aatraamai [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "kyiaup-gjMc",
+      "title": "திருவருட்பா: எழுத்தறியும் பெருமான் மாலை | Thiruvarutpa: Ezhuthariyum Peruman [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "l-JJXW1QKdg",
+      "title": "திருவாசகம்: Thillai Vazh Anthanar Tham | Thiruvasagam: Thillai Vazh Anthanar Tham [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "l3E27q5r-nk",
+      "title": "திருப்புகழ்: திருப்புகழ் விலாசம் | Thiruppugazh: Thiruppugazh Vilasam [Film]",
+      "deity": "murugan",
+      "source": "override_ref:thiruppugazh_vilasam"
+    },
+    {
+      "track_id": "lAWfE9YSJME",
+      "title": "திருவருட்பா: பரசிவ வணக்கம் | Thiruvarutpa: Parasiva Vanakkam [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "lCBVB2Yj_7U",
+      "title": "திருக்குறள்: அதிகாரம் 55 - செங்கோன்மை | Thirukkural: Sengonmai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "lD6far4EmHY",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II | Thevaram: Thiruvothur Pathigam II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "lEHLSYxnpbU",
+      "title": "விநாயகர் துதி: கண நாதா ஓம் | Vinayagar Devotional: Gana Natha Om [Film]",
+      "deity": "vinayagar",
+      "source": "override_ref:gananatha"
+    },
+    {
+      "track_id": "lG5AT1rN9Us",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "ldsJ6l90zLs",
+      "title": "திருவாசகம்: ஆனந்த மாலை | Thiruvasagam: Anandha Maalai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "leIJDxweGiM",
+      "title": "பஜனை: இராம கிருஷ்ண துதி | Bhajan: Rama Krishna Thuthi [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:harekrishna"
+    },
+    {
+      "track_id": "lg5W3VaLQNQ",
+      "title": "திருவருட்பா: அறிவரும் பெருமை | Thiruvarutpa: Arivarum Perumai [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "lneosghJWgs",
+      "title": "திருக்குறள்: அதிகாரம் 8 - அன்புடைமை | Thirukkural: Anbudaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "lpOcAVJIax0",
+      "title": "திருக்குறள்: அதிகாரம் 125 - நெஞ்சறிவுறுத்தல் (பகுதி 2) | Thirukkural: Compassion Journey [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "lvlDsTq-skg",
+      "title": "திருக்குறள்: அதிகாரம் 66 - வினைத்தூய்மை | Thirukkural: Vinai Thooymai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "lw2nEZfR7Kc",
+      "title": "திருவருட்பா: அன்பே சரணம் அருளே சரணம் | Thiruvarutpa: Anbe Saranam Arule Saranam [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "mCkB-h75-dE",
+      "title": "திருவாசகம்: குறி கலந்த இசை I | Thiruvasagam: Kuri Kalandha Isai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "mCwNR1Bytj4",
+      "title": "திருக்குறள்: அதிகாரம் 39 - இறைமாட்சி | Thirukkural: Irai Maatchi [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "mIC0hJwu8F0",
+      "title": "நவக்கிரக துதி: ஸ்ரீ சனி பகவான் துதி II | Navagraha Stotram: Sani Bhagavan Thuthi II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "mPypwIgdo-E",
+      "title": "திருவாசகம்: திருப்புலம்பல் II | Thiruvasagam: Thiruppulambal II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "mQpQEuXiEZ4",
+      "title": "கந்த புராணம்: திகட சக்கர சண்முகத்தோன் (காப்பு) | Kandha Puranam: Thigada Sakkara [Film]",
+      "deity": "vinayagar",
+      "source": "override_ref:thigada"
+    },
+    {
+      "track_id": "mVQJIrLtnCk",
+      "title": "திருவருட்பா: விழியிலே மலர்ந்தது II | Thiruvarutpa: Vizhiyile Malarnthathu II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "mb-lljpUJ5g",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thennadudaiya"
+    },
+    {
+      "track_id": "meXI3QsNHhE",
+      "title": "திருப்புகழ்: திருப்புகழ் 566 (இரத்னகிரி) I | Thiruppugazh: Rathinagiri Thiruppugazh I [Film]",
+      "deity": "murugan",
+      "source": "override_ref:seerulaaviya"
+    },
+    {
+      "track_id": "mpgnALSm7wk",
+      "title": "திருக்குறள்: அதிகாரம் 47 - தெரிந்து செயல்வகை (Female) | Therinthu Seyalvagai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "mv7AezrLzoU",
+      "title": "திருக்குறள்: அதிகாரம் 58 - கண்ணோட்டம் | Thirukkural: Kannottam [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "mvOSVEFhvDc",
+      "title": "திருக்குறள்: அதிகாரம் 28 - கூடா ஒழுக்கம் (Original) | Thirukkural: Kooda Ozhukkam [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "nGBmGzsD-kM",
+      "title": "திருவருட்பா: கொடைமடப் புகழ்ச்சி | Thiruvarutpa: Kodaimada Pugazhchi [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "nHj4Q196kU4",
+      "title": "திருக்குறள்: அதிகாரம் 60 - ஊக்கமுடைமை (Original) | Thirukkural: Ookkamudaimai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "nR7R0TWyZHk",
+      "title": "திருக்குறள்: அதிகாரம் 69 - தூது | Thirukkural: Thoothu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "nSQKZ2htJ-o",
+      "title": "தேவாரம்: Maasil Veenaiyum | Thevaram: Maasil Veenaiyum [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "nf8EO1GdKlY",
+      "title": "திருக்குறள்: அதிகாரம் 74 - நாடு (Original) | Thirukkural: Naadu [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "nnlH4ydFRQw",
+      "title": "திருவாசகம்: பிரார்த்தனைப் பத்து II | Thiruvasagam: Prarthanai Pathu II [Film]",
+      "deity": "shiva",
+      "source": "override_ref:prarthanaipathu"
+    },
+    {
+      "track_id": "npc-0cJdpt0",
+      "title": "திருவருட்பா: அன்பு மாலை II | Thiruvarutpa: Anbu Maalai II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "nsWHXJGDYA8",
+      "title": "திருவாசகம்: அன்னைப்பத்து II | Thiruvasagam: Annaippathu II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "nuSx1NgiCuo",
+      "title": "திருப்புகழ்: நாத விந்துகள் (பழனி) | Thiruppugazh: Naatha Vindhugal [Film]",
+      "deity": "murugan",
+      "source": "override_ref:naathavindhu"
+    },
+    {
+      "track_id": "nutm-A24QcM",
+      "title": "தேவாரம்: பிடியதன் உருவுமை (விநாயகர் துதி) | Thevaram: Pidiyathan Uruvumai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "o2cv5Oaii4M",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thennadudaiya"
+    },
+    {
+      "track_id": "o5PVED0ZcfU",
+      "title": "திருவாசகம்: திருவெண்பா II | Thiruvasagam: Thiruvenba II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "oEQ3sx6ujQc",
+      "title": "திருக்குறள்: அதிகாரம் 50 - இடனறிதல் (Remix) | Thirukkural: Idanarithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "oOGRP4cqGP8",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) | Thevaram: Thiruvothur Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "orWUAxhBOsg",
+      "title": "தேவாரம்: திருமுல்லைவாயில் பதிகம் | Thevaram: Thirumullaivayil Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "p1KPCpSX53U",
+      "title": "திருவருட்பா: தோடுடையார் | Thiruvarutpa: Thodudaiyaar [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "pF7fYFU5fKs",
+      "title": "திருவருட்பா: திருவடிப் புகழ்ச்சி | Thiruvarutpa: Thiruvadi Pugazhchi [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "pLVPFb8LJEk",
+      "title": "சிவ நாமாவளி: ஈஸ்வர நாமவளி சரணம் I | Shiva Namavali: Eswara Namavali I [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "pTxTsQzF8Xs",
+      "title": "திருக்குறள்: அதிகாரம் 53 - சுற்றந்தழால் (Original) | Thirukkural: Suttranthazhaal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "pWSY0_0UQwc",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) | Thevaram: Thiruvothur Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "pYh67ltckLQ",
+      "title": "கந்தர் அலங்காரம்: நாள் என் செய்யும் | Kandhar Alangaram: Naal En Seyyum [Film]",
+      "deity": "murugan",
+      "source": "override_ref:alankaram38"
+    },
+    {
+      "track_id": "pYuwzoJkhTE",
+      "title": "ஆதிசங்கரர்: மகா கணேச பஞ்சரத்னம் | Adi Shankara: Maha Ganesha Pancharatnam [Film]",
+      "deity": "vinayagar",
+      "source": "override_ref:pancharatnam"
+    },
+    {
+      "track_id": "peEwj9A2blw",
+      "title": "சிவ பக்திப் பாடல்: திருவசிய மந்திரம் II | Shiva Devotional: Thiruvasiyam Mantra II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "phlMcxN_Cfw",
+      "title": "திருப்பாவை: பாசுரம் 2 - வையத்து வாழ்வீர் II | Thiruppavai: Vaiyathu Vazhveer II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "pkbzO9Clp2w",
+      "title": "திருவருட்பா: சிவபுண்ணியத் தேற்றம் | Thiruvarutpa: Sivapunniya Thetram [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "pmA9He6Fbdo",
+      "title": "திருக்குறள்: அதிகாரம் 27 - தவம் | Thirukkural: Thavam [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "poRjt6i3SrU",
+      "title": "திருவாசகம்: நடராஜர் பத்து | Thiruvasagam: Natarajar Pathu [Film]",
+      "deity": "shiva",
+      "source": "override_ref:natarajarpathu"
+    },
+    {
+      "track_id": "pzW2LiiPSVo",
+      "title": "தேவாரம்: பண்டாய நான்மறை | Thevaram: Pandaaya Naanmarai [Film]",
+      "deity": "shiva",
+      "source": "override_ref:pandaaya"
+    },
+    {
+      "track_id": "q2oGlYiV-qg",
+      "title": "திருக்குறள்: அதிகாரம் 65 - சொல்வன்மை (Remix) | Thirukkural: Solvanmai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "q6Rg5CUbOD0",
+      "title": "திருக்குறள்: அதிகாரம் 65 - சொல்வன்மை | Thirukkural: Solvanmai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "qQqwD3gjenE",
+      "title": "திருவாசகம்: திருப்புலம்பல் II | Thiruvasagam: Thiruppulambal II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "qRZuTdyAghw",
+      "title": "திருவருட்பா: நற்றுணை விளக்கம் II | Thiruvarutpa: Nattrunai Vilakkam II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "qRqkS1Kf8lA",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "qUsv2Gyk3d4",
+      "title": "தேவாரம்: திருநீற்றுப் பதிகம் (மந்திரமாவது நீறு) | Thevaram: Thiruneetru Pathigam [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thiruneetru"
+    },
+    {
+      "track_id": "qW6CZgELq1o",
+      "title": "நாம சங்கீர்த்தனம்: இராம ராம ராம ஹரே | Nama Sankeerthanam: Rama Rama Hare [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "qWSwrdJMbSg",
+      "title": "பஜனை: இராம கிருஷ்ண துதி | Bhajan: Rama Krishna Thuthi [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:harekrishna"
+    },
+    {
+      "track_id": "qYVo1gCko5Q",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் I | Thiruvarutpa: Arutperunjothi Agaval I [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "qdaQ-ffeBso",
+      "title": "திருவாசகம்: சிவபுராணம் | Thiruvasagam: Sivapuranam [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:sivapuranam"
+    },
+    {
+      "track_id": "qjxmrb4fmjA",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) I | Thevaram: Thiruvothur Pathigam I [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "qqpvlkv0mSY",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II | Thevaram: Thiruvothur Pathigam II [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "qr5jAhLRLUE",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "r16aFXrl-Ig",
+      "title": "தேவாரம்: பிடியதன் உருவுமை (விநாயகர் துதி) | Thevaram: Pidiyathan Uruvumai [Film]",
+      "deity": "shiva",
+      "source": "override_ref:pidiyathan"
+    },
+    {
+      "track_id": "r2ulXHQihY0",
+      "title": "திருவருட்பா: நெஞ்சறிவுறுத்தல் (ஒன்றாய்ப் பலவாய்) | Thiruvarutpa: Nenjarivuruthal [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "r3APrd3opOs",
+      "title": "திருவாசகம்: திருவெம்பாவை (ஆதியும் அந்தமும்) | Thiruvasagam: Thiruvempavai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "r55zzDkNtF4",
+      "title": "திருவருட்பா: அன்பே சரணம் அருளே சரணம் | Thiruvarutpa: Anbe Saranam Arule Saranam [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "r75xdfETSbE",
+      "title": "திருக்குறள்: அதிகாரம் 42 - கேள்வி (Remix) | Thirukkural: Kelvi Selvam [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "rBeSH7tNEzA",
+      "title": "திருக்குறள்: அதிகாரம் 33 - கொல்லாமை | Thirukkural: Kollaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "rOowxP53oWA",
+      "title": "திருக்குறள்: அதிகாரம் 65 - சொல்வன்மை (Remix) | Thirukkural: Solvanmai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "rRoJfeRQiaM",
+      "title": "பன்னிரு திருமுறை: திருவையாறு சாரம் | Panniru Thirumurai: Thiruvaiyaaru Saaram [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "rYUfISYky0g",
+      "title": "சரஸ்வதி போற்றி: 108 சரஸ்வதி போற்றி II | Saraswathi Stotram: 108 Saraswathi Potri II [Film]",
+      "deity": "amman",
+      "source": "override_ref:saraswathi108"
+    },
+    {
+      "track_id": "rZvXZu39OHc",
+      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா | Maha Mantra: Hare Krishna Hare Rama [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:harekrishna"
+    },
+    {
+      "track_id": "rq7PXPBI7SA",
+      "title": "திருக்குறள்: அதிகாரம் 35 - துறவு (Symphony) | Thirukkural: Thuravu [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "rr1zamJEIdg",
+      "title": "தேவாரம்: பண்டாய நான்மறை | Thevaram: Pandaaya Naanmarai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "s42Po5EpzyI",
+      "title": "விஷ்ணு துதி: நமோ நாராயணம் (தசாவதாரம்) | Vishnu Devotional: Namo Narayanam [Film]",
+      "deity": "vishnu_krishna",
+      "source": "override_ref:namonarayana"
+    },
+    {
+      "track_id": "s7idxr-uVfQ",
+      "title": "திருவருட்பா: திருவருண் முறையீடு | Thiruvarutpa: Thiruvarun Muraiyidu [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "sAgX9WX86Rw",
+      "title": "திருக்குறள்: அதிகாரம் 80 - நட்பாராய்தல் | Thirukkural: Natpaaraaythal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "sHSkPTQRtH8",
+      "title": "கந்த புராணம்: வான் முகில் வழாது பெய்க | Kandha Puranam: Vaan Mugil Vazhadhu Peyga [Film]",
+      "deity": "vallalar_cultural",
+      "source": "override_ref:vanmugil"
+    },
+    {
+      "track_id": "sScywbUNArA",
+      "title": "திருக்குறள்: அதிகாரம் 55 - செங்கோன்மை (Original) | Thirukkural: Sengonmai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "sTSKhkPNI64",
+      "title": "திருவருட்பா: வாழ்வது தமிழ் ஆகட்டும் | Thiruvarutpa: Vaazvathu Thamiz [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "scUcWDtCge8",
+      "title": "திருக்குறள்: அதிகாரம் 38 - ஊழ் | Thirukkural: Oozh Vinai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "ssOkftpUcLE",
+      "title": "திருவருட்பா: சிவ சுப்ரமணியர் திருவிருத்தம் | Thiruvarutpa: Siva Subramaniyar [Film]",
+      "deity": "murugan",
+      "source": "override_ref:sivasubramaniyar"
+    },
+    {
+      "track_id": "t9Ke0-KMTyM",
+      "title": "திருக்குறள்: அதிகாரம் 73 - அவையஞ்சாமை (Symphony) | Thirukkural: Avai Anjaamai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tAlN-7BPL7k",
+      "title": "திருவருட்பா: சொற்பெரு மெய்ஞ்ஞான | Thiruvarutpa: Sorpperu Meygnana [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tCxe5Q1ogPc",
+      "title": "கந்த சஷ்டி கவசம்: முழு கவசம் | Kandha Sashti Kavasam: Kandha Sashti Kavasam [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tLt9J-X9WOE",
+      "title": "திருக்குறள்: அதிகாரம் 51 - தெரிந்து தெளிதல் (Remix) | Thirukkural: Therinthu Thelithal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tMnJYH0SR9c",
+      "title": "தேசிய கீதம்: ஜன கண மன II | National Anthem: Jana Gana Mana II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tTQIGe4LJK4",
+      "title": "சிவ பக்திப் பாடல்: சிவநேச வெண்பா | Shiva Devotional: Sivanesa Venba [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tW9-r0H5rx8",
+      "title": "திருவாசகம்: திருப்படை ஆட்சி | Thiruvasagam: Thiruppadai Aatchi [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tX4JtRSOuxE",
+      "title": "திருக்குறள்: அதிகாரம் 2 - வான் சிறப்பு | Thirukkural: Vaan Sirappu [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tj_5hsasdyU",
+      "title": "திருக்குறள்: அதிகாரம் 59 - ஒற்றாடல் (Remix) | Thirukkural: Ottraadal [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "toekDfqrzdI",
+      "title": "தேவாரம்: திருநீற்றுப் பதிகம் (மந்திரமாவது நீறு) | Thevaram: Thiruneetru Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tqF2NBWp6_8",
+      "title": "திருக்குறள்: அதிகாரம் 56 - கொடுங்கோன்மை (Original) | Thirukkural: Kodungonmai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tzAYLpH3TkI",
+      "title": "திருக்குறள்: அதிகாரம் 29 - கள்ளாமை (Symphony) | Thirukkural: Kallaamai Symphony [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "tzqg3CvnLmg",
+      "title": "அதிகாரம் 42 - கேள்வி | Kelvi Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "u23cwmejN1k",
+      "title": "அதிகாரம் 46 - சிற்றினஞ்சேராமை | Sitrinanjeraamai Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "u41L3XgIgGc",
+      "title": "திருவாசகம்: சிவ புராணம் | Thiruvasagam: Puranam (Thiruvasagam) [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "u9NeXaCHu-A",
+      "title": "திருக்குறள்: அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Original) | Mannarai Sernthozhuthal [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "uGQ9K1b7Bgw",
+      "title": "அதிகாரம் 8 - அன்புடைமை | Anbudaimai Cinematic Thirukkural Film",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "uGdn0wzpH6c",
+      "title": "ஆஞ்சநேயர் துதி: ஆஞ்சநேயர் துதி | Anjaneyar Devotional: Anjaneyar Thuthi [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "uMK4LISQFE4",
+      "title": "தேவாரம்: திருமுல்லைவாயில் பதிகம் II | Thevaram: Thirumullaivayil Pathigam II [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "uSHc6kdU_mY",
+      "title": "திருவாசகம்: போற்றித் திருஅகவல் | Thiruvasagam: Potrith Thiruagaval [Film]",
+      "deity": "shiva",
+      "source": "override_ref:potrithiruagaval"
+    },
+    {
+      "track_id": "ulW6fg4lkYA",
+      "title": "திருக்குறள்: அதிகாரம் 63 - இடுக்கண் அழியாமை (Remix) | Thirukkural: Idukkan Azhiyaamai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "um09tyT-2p0",
+      "title": "திருக்குறள்: அதிகாரம் 62 - ஆள்வினையுடைமை (Original) | Thirukkural: Aalvinaiyudaimai [Audio]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "umo1jodWzXY",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) | Thevaram: Thiruvothur Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "vFbw9hX0wO4",
+      "title": "விநாயகர் துதி: கண நாதா ஓம் (Symphony) | Vinayagar Devotional: Gana Natha Om (Symphony) [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "vZyHNMkm8xU",
+      "title": "திருவாசகம்: தென்னாடுடைய சிவனே போற்றி | Thiruvasagam: Thennadudaiya Sivaney Potri [Audio]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "v_Q_vKG_nHo",
+      "title": "திருவருட்பா: உள்ளம் ஒரு கோவில் II | Thiruvarutpa: Ullam Oru Kovil II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "v_dsHTOvKP8",
+      "title": "திருக்குறள்: அதிகாரம் 5 - இல்வாழ்க்கை | Thirukkural: Ilvaazhkkai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "vaXLG5kUGVc",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "override_ref:renukambal"
+    },
+    {
+      "track_id": "vbMywONB5Wc",
+      "title": "திருக்குறள்: அதிகாரம் 42 - கேள்வி (Remix) | Thirukkural: Kelvi Selvam [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "vgB45NTmvK8",
+      "title": "திருவாசகம்: திருப்புலம்பல் | Thiruvasagam: Thiruppulambal [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thirupulambal"
+    },
+    {
+      "track_id": "w0lNqTk3QCU",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "wC45ZWg05eo",
+      "title": "திருவாசகம்: வேண்டுமே இத்தனையும் (திருவெம்பாவை) I | Thiruvasagam: Vendumey Iththanaiyum [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "wCyrA4Be7cE",
+      "title": "பெரியாழ்வார் திருமொழி: கண்ணன் தாலாட்டு II | Periyazhvar Thirumozhi: Kannan Thalattu II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "wGtcobqR01Q",
+      "title": "திருவருட்பா: திருவருள் வழக்க விளக்கம் | Thiruvarutpa: Thiruvarul Vazhakka Vilakkam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "wPT_1jgn2Ys",
+      "title": "திருக்குறள்: அதிகாரம் 28 - கூடா ஒழுக்கம் (Symphony) | Kooda Ozhukkam Symphony [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "wXD_lSlfiSQ",
+      "title": "திருவாசகம்: சிவபுராணம் (Symphony) | Thiruvasagam: Sivapuranam (Symphony) [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "wehcVz3BMHo",
+      "title": "அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் | Abhirami Andhadhi: Dhanam Tharum Kalvi Tharum [Film]",
+      "deity": "amman",
+      "source": "override_ref:mariamman"
+    },
+    {
+      "track_id": "wnbjHShXh10",
+      "title": "மகா மந்திரம்: ஹரே கிருஷ்ணா ஹரே ராமா | Maha Mantra: Hare Krishna Hare Rama [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "wyDIU74Rs7Y",
+      "title": "திருக்குறள்: அதிகாரம் 73 - அவையஞ்சாமை (Female) | Thirukkural: Avai Anjaamai Female [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "wylRNpaJNmY",
+      "title": "திருக்குறள்: அதிகாரம் 46 - சிற்றினம் சேராமை (Remix) | Thirukkural: Sittrinam Seramai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "wzdoeFDq0iQ",
+      "title": "திருக்குறள்: அதிகாரம் 56 - கொடுங்கோன்மை | Thirukkural: Kodungonmai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "x355fpndpTI",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II [Film]",
+      "deity": "murugan",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "x3CyxNH5bpQ",
+      "title": "திருக்குறள்: அதிகாரம் 69 - தூது (Remix) | Thirukkural: Thoothu [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "x8x7cnUdTE4",
+      "title": "திருவருட்பா: உள்ளம் ஒரு கோவில் II | Thiruvarutpa: Ullam Oru Kovil II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "xAgvuRIIl6o",
+      "title": "பன்னிரு திருமுறை: திருவையாறு சாரம் | Panniru Thirumurai: Thiruvaiyaaru Saaram [Film]",
+      "deity": "vallalar_cultural",
+      "source": "override_ref:thiruvaiyaru"
+    },
+    {
+      "track_id": "xGO_iRfnkG0",
+      "title": "திருக்குறள்: அதிகாரம் 65 - சொல்வன்மை (Remix) | Thirukkural: Solvanmai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "xGb7ZXDRvVU",
+      "title": "தேவாரம்: நமச்சிவாயப் பதிகம் (துஞ்சலும் துஞ்சல்) | Thevaram: Tunjalum Tunjal [Film]",
+      "deity": "shiva",
+      "source": "override_ref:thunjalum"
+    },
+    {
+      "track_id": "xVyPWHTMXHw",
+      "title": "திருக்குறள்: அதிகாரம் 43 - அறிவுடைமை (Remix) | Thirukkural: Arivudaimai [Remix]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "xXOHhRpIUn4",
+      "title": "பெரியபுராணம்: உலகெலாம் உணர்ந்து ஓதற்கு அரியவன் | Periyapuranam: Ulagelam Unarnthu [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "xc1iNs05Bkw",
+      "title": "திருவாசகம்: திருவெண்பா | Thiruvasagam: Thiruvenba [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "xcUlgFsrepU",
+      "title": "திருக்குறள்: அதிகாரம் 31 - வெகுளாமை | Thirukkural: Vegulaamai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "xjem5fTKx90",
+      "title": "கிருஷ்ண துதி: கிருஷ்ண மந்திரம் I | Krishna Devotional: Krishna Mantra I [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "xqM-FFGFDC4",
+      "title": "பெரியபுராணம்: தில்லை வாழ் அந்தணர் சருக்கம் | Periyapuranam: Thillai Vazh Anthanar [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "xq_sktu9GyU",
+      "title": "திருவருட்பா: அருளியல் வினாவல் II | Thiruvarutpa: Aruliyal Vinaaval II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "y7TMSgzWf8o",
+      "title": "தேவாரம்: தில்லைத் திருப்பதிகம் (அன்னம் பாலிக்கும்) | Thevaram: Annam Paalikkum Thillai [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "yEZFeX0no9o",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) II | Thevaram: Thiruvothur Pathigam II [Film]",
+      "deity": "vishnu_krishna",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "yFdF-MjQbHQ",
+      "title": "திருக்குறள்: அதிகாரம் 61 - மடியின்மை | Thirukkural: Madiyinmai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "yMrpyhLlDc8",
+      "title": "திருவருட்பா: தாமரை மலரே | Thiruvarutpa: Thamarai Malare [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "yPfkP_EjTyc",
+      "title": "கந்தர் அநுபூதி: உருவாய் அருவாய் | Kandhar Anuboothi: Uruvaai Aruvaai [Film]",
+      "deity": "murugan",
+      "source": "override_ref:skandamantram"
+    },
+    {
+      "track_id": "yrmF7nfwnsQ",
+      "title": "தேவாரம்: கோளறு திருப்பதிகம் II | Thevaram: Kolaru Pathigam II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "yy8f939JP4M",
+      "title": "திருவாசகம்: எண்ணப் பதிகம் | Thiruvasagam: Ennap Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "zFb2PGEPrr4",
+      "title": "தேவாரம்: திருவோத்தூர் பதிகம் (பூத்தேர்ந்து ஆயன) | Thevaram: Thiruvothur Pathigam [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "zPQOik79O68",
+      "title": "திருவருட்பா: அருட்பெருஞ்சோதி அகவல் II | Thiruvarutpa: Arutperunjothi Agaval II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "zTHsoP6OIAc",
+      "title": "சிவ நாமாவளி: ஈஸ்வர நாமவளி சரணம் II | Shiva Namavali: Eswara Namavali II [Film]",
+      "deity": "shiva",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "zj4_pEqa_cs",
+      "title": "திருக்குறள்: அதிகாரம் 62 - ஆள்வினையுடைமை | Thirukkural: Aalvinaiyudaimai [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "zq1dxg5R-rY",
+      "title": "திருக்குறள்: அதிகாரம் 70 - மன்னரைச் சேர்ந்தொழுதல் (Female) | Mannarai Sernthozhuthal [Film]",
+      "deity": "thirukkural",
+      "source": "lyrics_db"
+    },
+    {
+      "track_id": "zqStqzcFgbM",
+      "title": "ஆதிசங்கரர்: மகா கணேச பஞ்சரத்னம் | Adi Shankara: Maha Ganesha Pancharatnam [Film]",
+      "deity": "vinayagar",
+      "source": "override_ref:pancharatnam"
+    },
+    {
+      "track_id": "zuDJOeLjtcQ",
+      "title": "திருவருட்பா: உள்ளம் ஒரு கோவில் II | Thiruvarutpa: Ullam Oru Kovil II [Film]",
+      "deity": "vallalar_cultural",
+      "source": "lyrics_db"
+    }
+  ]
+}

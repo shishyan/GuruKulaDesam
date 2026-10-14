@@ -1,0 +1,139 @@
+{
+  "status": "complete",
+  "title": "செல்வநாயகி  அம்மன் பாடல் 1",
+  "play_count": 86,
+  "upvote_count": 2,
+  "allow_comments": false,
+  "is_verified": false,
+  "id": "4cdd938b-3528-473d-b763-48015a4d2041",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/4cdd938b-3528-473d-b763-48015a4d2041.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/4cdd938b-3528-473d-b763-48015a4d2041.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_4cdd938b-3528-473d-b763-48015a4d2041.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_4cdd938b-3528-473d-b763-48015a4d2041.jpeg",
+  "major_model_version": "v4.5-all",
+  "model_name": "chirp-auk",
+  "metadata": {
+    "tags": "Clear native Tamil pronunciation, authentic Kongu Tamil devotional folk singing,Tamil devotional folk, powerful female lead vocals, village Amman festival song, cinematic devotional, traditional Tamil folk, nadaswaram, thavil, parai drums, temple bells, energetic chorus, emotional, divine, majestic, high-quality studio production.",
+    "prompt": "[Intro] (Temple bells, Nadaswaram, Female humming)\nவெண்டுவன் குலம் போற்றும் குலதெய்வமே, வீரமும் வெற்றியும் தரும் பராசக்தியே, ஓலப்பாளையம் உறையும் ஒளி விளக்கே, செல்வநாயகி அம்மா... சரணம்... சரணம்...\n[Verse 1]\nஓலப்பாளையம் வாழும் செல்வநாயகியே, ஓம் சக்தி தாயே அருள் புரிவாயே, வெண்டுவன் குலம் காக்கும் அன்னையே, வெற்றிப் பாதை காட்டும் தெய்வமே.\nகுலம் காக்கும் குலதெய்வம் நீயே, குறை தீர்க்கும் கருணைக் கடலே, அழைத்தவுடன் ஓடி வரும் அம்மா, அருள் மழையாய் பொழியும் தாயம்மா.\n[Chorus]\nசெல்வநாயகி... செல்வநாயகி... ஓலப்பாளையம் அம்மா... எங்கள் குலதெய்வம் அம்மா...\nசெல்வநாயகி... செல்வநாயகி... வெண்டுவன் குலம் காக்கும் வீர சக்தி அம்மா...\n[Verse 2]\nமஞ்சள் குங்குமம் மணம் வீச, மலர்கள் கொண்டு தொழுவோமே, உன் திருநாமம் நாளும் சொல்லி, உன் திருவடி சரணம் சேர்வோமே.\nவேண்டிய வரம் வழங்கும் அம்மா, வெற்றியின் வாசல் திறக்கும் அம்மா, நோய் நொடிகள் நீக்கும் சக்தி, நம்பி வந்தோர் காக்கும் பக்தி.\n[Bridge]\nஓலப்பாளையம் புகழ் பரப்பும் ஒப்பில்லாத அன்னையே, வெண்டுவன் குலம் தலைமுறைகள் வணங்கும் தெய்வம் நீதானே.\nஉன் அருளே எங்கள் வாழ்வு, உன் திருவடி எங்கள் துணை, அம்மா... அம்மா... செல்வநாயகி அம்மா...\n[Final Chorus]\nசெல்வநாயகி... செல்வநாயகி... ஓலப்பாளையம் அம்மா... எங்கள் குலதெய்வம் அம்மா...\nவெண்டுவன் குலம் காக்கும் வீர சக்தி அம்மா... அருள் தரும் தாயம்மா... சரணம்... சரணம்...\n[Outro]\n(Temple bells... Nadaswaram... Chorus)\n\"ஓம் சக்தி... செல்வநாயகி அம்மன் திருவடிகளே சரணம்...\"",
+    "type": "gen",
+    "duration": 326.24,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 0,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V4.5-ALL",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      },
+      "songrow": {
+        "display_name": "V4.5-ALL",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "0cc2f08b-b92d-462b-934b-0bf21a2c9692",
+  "display_name": "mohan_opm4",
+  "handle": "mohan_opm4",
+  "is_handle_updated": false,
+  "avatar_image_url": "https://cdn1.suno.ai/sAura13.jpg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-07-16T06:49:58.335Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Tamil devotional folk, Kongu Tamil folk",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

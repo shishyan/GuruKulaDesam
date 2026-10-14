@@ -1,0 +1,188 @@
+{
+  "status": "complete",
+  "title": "படைமாட்சி 1D",
+  "play_count": 3,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "738038b3-30b3-4cba-bb8d-88f21066b3a3",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/738038b3-30b3-4cba-bb8d-88f21066b3a3.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_738038b3-30b3-4cba-bb8d-88f21066b3a3.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_738038b3-30b3-4cba-bb8d-88f21066b3a3.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Indian war-kingdom brass anthem, slow and steady, conch-shell trumpet calls over deep brass and marching drums, male Tamil lead in a firm resonant register with unified chorus responses, layered drums striking in unison beneath a weighty, spacious mix.",
+    "prompt": "[Chorus]\nகூற்றுடன்று மேல்வரினும் (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\nகூற்றுடன்று மேல்வரினும்  (கூடி எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\n\n[Verse 1]\nசிறுமையும் செல்லாத் துனியும் (வறுமையும்)\nஇல்லாயின் வெல்லும் படை\nசிறுமையும் செல்லாத் துனியும் (வறுமையும்)\nஇல்லாயின் வெல்லும் படை\n\nஅழிவின்றி அறைபோகாதாகி (வழிவந்த)\nவன்கண் அதுவே படை\nஅழிவின்றி அறைபோகாதாகி (வழிவந்த)\nவன்கண் அதுவே படை\n\n[Chorus]\nகூற்றுடன்று மேல்வரினும் கூடி (எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\nகூற்றுடன்று மேல்வரினும் கூடி (எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\n\n[Verse 1]\nஅடல்தகையும் ஆற்றலும் இல்லெனினும் (தானை)\nபடைத்தகையால் பாடு பெறும்\nஉறுப்பமைந்து ஊறஞ்சா வெல்படை (வேந்தன்)\nவெறுக்கையுள் எல்லாம் தலை\n\nஉலைவிடத்து ஊறஞ்சா வன்கண் (தொலைவிடத்துத்)\nதொல்படைக் கல்லால் அரிது\nஒலித்தக்கால் என்னாம் உவரி (எலிப்பகை)\nநாகம் உயிர்ப்பக் கெடும்\n\n[Chorus]\nகூற்றுடன்று மேல்வரினும் கூடி (எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\nகூற்றுடன்று மேல்வரினும் கூடி (எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\n\n[Bridge]\nமறமானம் மாண்ட வழிச்செலவு (தேற்றம்)\nஎனநான்கே ஏமம் படைக்கு\nநிலைமக்கள் சால உடைத்தெனினும் (தானை)\nதலைமக்கள் இல்வழி இல்\n\nதார்தாங்கிச் செல்வது தானை (தலைவந்த)\nபோர்தாங்கும் தன்மை அறிந்து\nதார்தாங்கிச் செல்வது தானை (தலைவந்த)\nபோர்தாங்கும் தன்மை அறிந்து\n\n[Chorus]\nகூற்றுடன்று மேல்வரினும் கூடி (எதிர்நிற்கும்)\nஆற்றல் அதுவே படை\nகூற்றுடன்று மேல்வரினும் கூடி (எதிர்நிற்கும்)\nஆற்றல் அதுவே படை",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 284.8,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "cyanotype",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-26T19:23:26.526Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "anthem, brass, marching",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "status": "complete",
+  "title": "அரண் 1Z",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "20840ce5-d0b4-4728-8bc4-5694e65a5e1d",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/20840ce5-d0b4-4728-8bc4-5694e65a5e1d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_20840ce5-d0b4-4728-8bc4-5694e65a5e1d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_20840ce5-d0b4-4728-8bc4-5694e65a5e1d.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "South Indian Symphony, stately unhurried pulse, warm analog tape saturation, deep flutes in resonant melodic phrases over deep bass, male vocal with a clear, grounded delivery.",
+    "prompt": "[Chorus]\nஎல்லாப் பொருளும் உடைத்தாய் (இடத்துதவும்)\nநல்லாள் உடையது அரண்\nஎல்லாப் பொருளும் உடைத்தாய் (இடத்துதவும்)\nநல்லாள் உடையது அரண்\n\n[Verse 1]\nஆற்றுபவர்க்கும் அரண் பொருள் (அஞ்சித்)\nதற்போற்றுபவர்க்கும் பொருள்\nஆற்றுபவர்க்கும் அரண் பொருள் (அஞ்சித்)\nதற்போற்றுபவர்க்கும் பொருள்\n\nமணிநீரும் மண்ணும் மலையும் (அணிநிழற்)\nகாடும் உடையது அரண்\nமுனைமுகத்து மாற்றலர் சாய (வினைமுகத்து)\nவீறெய்தி மாண்டது அரண்\n\nகொளற்கரிதாய்க் கொண்டகூழ்த் தாகி (அகத்தார்)\nநிலைக்கெளிதாம் நீரது அரண்\nஉயர்வகலம் திண்மை அருமை (இந் நான்கின்)\nஅமைவரண் என்றுரைக்கும் நூல்\n\n[Chorus]\nஎல்லாப் பொருளும் உடைத்தாய் (இடத்துதவும்)\nநல்லாள் உடையது அரண்\nஎல்லாப் பொருளும் உடைத்தாய் (இடத்துதவும்)\nநல்லாள் உடையது அரண்\n\n[Verse 2]\nஎனைமாட்சித் தாகிய கண்ணும் (வினைமாட்சி)\nஇல்லார்கண் இல்லதரண்\nமுற்றியும் முற்றா தெறிந்தும் (அறைப்படுத்தும்)\nபற்றற் கரியது அரண்\n\nசிறுகாப்பிற்  பேரிடத்தது ஆகி (உறுபகை)\nஊக்கம் அழிப்பது அரண்\nமுற்றாற்றி முற்றி யவரையும் (பற்றாற்றிப்)\nபற்றியார் வெல்வது அரண்\n\n[Chorus]\nஎல்லாப் பொருளும் உடைத்தாய் (இடத்துதவும்)\nநல்லாள் உடையது அரண்\nஎல்லாப் பொருளும் உடைத்தாய் (இடத்துதவும்)\nநல்லாள் உடையது அரண்",
+    "type": "gen",
+    "duration": 217.2,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "mashup_clip_ids": [
+      "00000000-0000-0000-0000-000000000000",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "task": "mashup_condition",
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "MASHUP",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "scribbles",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-25T15:31:04.016Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "South Indian Symphony, stately, unhurried",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

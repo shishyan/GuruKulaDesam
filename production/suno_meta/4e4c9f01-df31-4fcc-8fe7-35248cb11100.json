@@ -1,0 +1,142 @@
+{
+  "status": "complete",
+  "title": "Shiv Shiva Shankara",
+  "play_count": 10,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "4e4c9f01-df31-4fcc-8fe7-35248cb11100",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/4e4c9f01-df31-4fcc-8fe7-35248cb11100.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/4e4c9f01-df31-4fcc-8fe7-35248cb11100.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_4e4c9f01-df31-4fcc-8fe7-35248cb11100.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_4e4c9f01-df31-4fcc-8fe7-35248cb11100.jpeg",
+  "major_model_version": "v5.5",
+  "model_name": "chirp-fenix",
+  "metadata": {
+    "tags": "Tandava beat damarukam mridangam naadaswaram ",
+    "prompt": "🎵 శివ శివ శంకర\n\nపల్లవి\n\nశివ శివ శంకర… తాండవ శంకర…\nకైలాస శంకర… నటరాజ స్వరూపా…\nగంగాధర… నీలకంఠ శంకరా…\nవిశ్వ విభుడా… పరమేశ్వరా…\nహర హర మహాదేవ… శంభో శంకరా…\n\n⸻\n\nచరణం – 1\n\nపుణ్యమే నీవయ్యా… పూజలే నీకయ్యా…\nసేవలే మా జీవితం శివ శంభో…\nనీ నామమే జపించినా అమోఘ ధైర్యం…\nనీ రూపమే తలచినా తొలగే భయం…\n\nఓంకార నాదమే నీ శ్వాసయ్యా…\nవేదాల సారమే నీ మాటయ్యా…\nభక్తుల గుండెలో వెలిగే జ్యోతివి…\nభవసాగరానికి దాటించే నావవు…\n\n⸻\n\nచరణం – 2\n\nనీ నామం పిలిస్తే ఆరోగ్యమయ్యా…\nనిన్ను తలిస్తే ఐశ్వర్యమయ్యా…\nనీ కరుణ కురిస్తే సౌభాగ్యమయ్యా…\nనీ ఆశీస్సుంటే విజయమయ్యా…\n\nత్రినేత్రుడా… త్రిలోకనాథుడా…\nత్రిశూలధారుడా… కరుణాసాగరా…\nచంద్రశేఖరా… భోళాశంకరా…\nభక్తులను కాపాడే దయామయుడా…\n\n⸻\n\nచరణం – 3\n\nకైలాసమే నీ దివ్య నివాసం…\nకరుణే నీ శాశ్వత స్వభావం…\nనందీ ముందర నాట్యమాడే…\nనటరాజా… జగదాధారా…\n\nడమరుక నాదం జగమును మేల్కొల్పే…\nతాండవ రూపం కాలాన్ని నడిపించే…\nపంచాక్షరి మంత్రమే ప్రాణమయ్యా…\n“ఓం నమః శివాయ” మోక్ష మార్గమయ్యా…\n\n⸻\n\nచరణం – 4\n\nవీరభద్రా… మహావీరభద్రా…\nనీ వీరత్వానికి వందనం…\nవిభూతి ధరించిన విశ్వేశ్వరా…\nస్వర్ణ కాంతితో వెలిగే ఈశ్వరా…\n\nఅర్ధనారీశ్వరా… అనుగ్రహమూర్తీ…\nఅన్నింటిలోనూ నీవే శక్తి…\nభక్తుల కోరిక తీర్చే దేవా…\nశివ శివ శంకర… శంభో మహాదేవా…\n\n⸻\n\n\n\nశివ శివ శంకర… తాండవ శంకర…\nకైలాస శంకర… నటరాజ స్వరూపా…\nగంగాధర… నీలకంఠ శంకరా…\nహర హర మహాదేవ… శంభో శంకరా…\n\nఓం నమః శివాయ…\nఓం నమః శివాయ…\nహర హర మహాదేవ… శంభో శంకరా",
+    "type": "gen",
+    "duration": 279.2,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "task": "",
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V5.5",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      },
+      "songrow": {
+        "display_name": "V5.5",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "1189b8d3-2a21-4e0f-abee-2dc7f10b6ff9",
+  "display_name": "Pilla bhaskar",
+  "handle": "speedyinstructors8833",
+  "is_handle_updated": false,
+  "avatar_image_url": "https://cdn1.suno.ai/sAura1.jpg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-06-25T15:34:31.712Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

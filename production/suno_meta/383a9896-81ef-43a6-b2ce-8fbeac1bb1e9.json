@@ -1,0 +1,175 @@
+{
+  "status": "complete",
+  "title": "ஆள்வினையுடைமை 1W Golden Intro",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "383a9896-81ef-43a6-b2ce-8fbeac1bb1e9",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/383a9896-81ef-43a6-b2ce-8fbeac1bb1e9.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_383a9896-81ef-43a6-b2ce-8fbeac1bb1e9.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_383a9896-81ef-43a6-b2ce-8fbeac1bb1e9.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Carnatic oratorio with warm ensemble room microphones, tambura drone beneath mridam phrases and restrained veena motifs, male baritone narrator with measured delivery and clear Tamil chorus lines, measured tempo with steady rhythmic pulse, verse-to-bridge transitions and restrained ornamentation",
+    "prompt": "[Chorus]\nதெய்வத்தான் ஆகாது எனினும் (முயற்சிதன்)\nமெய்வருத்தக் கூலி தரும்\nதெய்வத்தான் ஆகாது எனினும் (முயற்சிதன்)\nமெய்வருத்தக் கூலி தரும்\n\n[Verse 1]\nமுயற்சி திருவினை ஆக்கும் (முயற்றின்மை)\nஇன்மை புகுத்தி விடும்\nமுயற்சி திருவினை ஆக்கும் (முயற்றின்மை)\nஇன்மை புகுத்தி விடும்\n\nஇன்பம் விழையான் வினைவிழைவான் (தன்கேளிர்)\nதுன்பம் துடைத்தூன்றும் தூண்\nஇன்பம் விழையான் வினைவிழைவான் (தன்கேளிர்)\nதுன்பம் துடைத்தூன்றும் தூண்\n\n[Chorus]\nதெய்வத்தான் ஆகாது எனினும் (முயற்சிதன்)\nமெய்வருத்தக் கூலி தரும்\nதெய்வத்தான் ஆகாது எனினும் (முயற்சிதன்)\nமெய்வருத்தக் கூலி தரும்\n\n[Verse 2]\nபொறியின்மை யார்க்கும் பழியன்று (அறிவறிந்து)\nஆள்வினை இன்மை பழி\nபொறியின்மை யார்க்கும் பழியன்று (அறிவறிந்து)\nஆள்வினை இன்மை பழி\n\nமடியுளாள் மாமுகடி என்ப (மடியிலான்)\nதாளுளான் தாமரையி னாள்\nமடியுளாள் மாமுகடி என்ப (மடியிலான்)\nதாளுளான் தாமரையி னாள்\n\n[Chorus]\nதெய்வத்தான் ஆகாது எனினும் (முயற்சிதன்)\nமெய்வருத்தக் கூலி தரும்\nதெய்வத்தான் ஆகாது எனினும் (முயற்சிதன்)\nமெய்வருத்தக் கூலி தரும்\n\n[Bridge]\nஅருமை உடைத்தென்று அசாவாமை (வேண்டும்)\nபெருமை முயற்சி தரும்\nதாளாண்மை என்னும் தகைமைக்கண் (தங்கிற்றே)\nவேளாண்மை என்னுஞ் செருக்கு\n\nஊழையும் உப்பக்கம் காண்பர் (உலைவின்றித்)\nதாழாது உஞற்று பவர்\nவினைக்கண் வினைகெடல் ஓம்பல் (வினைக்குறை)\nதீர்ந்தாரின் தீர்ந்தன்று உலகு\n\n[Chorus]\nதெய்வத்தான் ஆகாது எனினும் (முயற்சிதன்)\nமெய்வருத்தக் கூலி தரும்\nதெய்வத்தான் ஆகாது எனினும் (முயற்சிதன்)\nமெய்வருத்தக் கூலி தரும்",
+    "type": "gen",
+    "duration": 211.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": true,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "minimal_album_art",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-21T20:12:00.765Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Carnatic, oratorio",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

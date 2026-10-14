@@ -1,0 +1,191 @@
+{
+  "status": "complete",
+  "title": "வாய்மை 1G Golden",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "bf86d671-7fb8-48cc-94b9-067c95d139fa",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/bf86d671-7fb8-48cc-94b9-067c95d139fa.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_bf86d671-7fb8-48cc-94b9-067c95d139fa.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_bf86d671-7fb8-48cc-94b9-067c95d139fa.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "European Folk, mixed duet vocals with parallel harmonies, fiddle with sustained drone bowing, hand frame drum and acoustic string accompaniment, steady moderate folk pulse, subtle tape saturation with warm rounded edges",
+    "prompt": "[Verse 1]\nவாய்மை எனப்படுவது யாதெனின் (யாதொன்றும்)\nதீமை இலாத சொலல்\nவாய்மை எனப்படுவது யாதெனின் (யாதொன்றும்)\nதீமை இலாத சொலல்\n\nபொய்யாமை பொய்யாமை ஆற்றின் (அறம்பிற)\nசெய்யாமை செய்யாமை நன்று\nபொய்யாமை அன்ன புகழில்லை (எய்யாமை)\nஎல்லா அறமும் தரும்\n\n[Chorus]\nதன்நெஞ்சு அறிவது பொய்யற்க (பொய்த்தபின்)\nதன்நெஞ்சே தன்னை சுடும்\nதன்நெஞ்சு அறிவது பொய்யற்க (பொய்த்தபின்)\nதன்நெஞ்சே தன்னை சுடும்\n\n[Verse 2]\nபொய்மையும் வாய்மை இடத்த (புரைதீர்ந்த)\nநன்மை பயக்கும் எனின்\nஉள்ளத்தால் பொய்யாது ஒழுகின் (உலகத்தார்)\nஉள்ளத்துள் எல்லாம் உளன்\nமனத்தொடு வாய்மை மொழியின் (தவத்தொடு)\nதானம் செய்வாரின் தலை\n\n[Chorus]\nபொய்யாமை பொய்யாமை ஆற்றின் (அறம்பிற)\nசெய்யாமை செய்யாமை நன்று\nபொய்யாமை அன்ன புகழில்லை (எய்யாமை)\nஎல்லா அறமும் தரும்\n\n[Verse 3]\nபுறந்தூய்மை நீரான் அமையும் (அகந்தூய்மை)\nவாய்மையால் காணப் படும்\nஎல்லா விளக்கும் விளக்கல்ல (சான்றோர்க்கு)\nபொய்யா விளக்கே விளக்கு\nயாமெய்யாக் கண்டவற்றுள் இல்லை (எனைத்தொன்றும்)\nவாய்மையின் நல்ல பிற\n\n[Chorus]\nதன்நெஞ்சு அறிவது பொய்யற்க (பொய்த்தபின்)\nதன்நெஞ்சே தன்னை சுடும்\nதன்நெஞ்சு அறிவது பொய்யற்க (பொய்த்தபின்)\nதன்நெஞ்சே தன்னை சுடும்",
+    "type": "gen",
+    "duration": 254.32,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "mashup_clip_ids": [
+      "00000000-0000-0000-0000-000000000000",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "task": "mashup_condition",
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "MASHUP",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "airbrush",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-13T19:45:22.712Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "European Folk",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "title": "உழவு 1C Golden",
+  "play_count": 3,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "66711d88-6282-47eb-bde1-764f2457a33f",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/66711d88-6282-47eb-bde1-764f2457a33f.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_66711d88-6282-47eb-bde1-764f2457a33f.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_66711d88-6282-47eb-bde1-764f2457a33f.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Classical Oratorio with cathedral reverberation, declamatory male operatic bass, slow and immense ceremonial pulse, huge resonant drums beneath breathy bamboo flutes and broad orchestral swells",
+    "prompt": "[Chorus]\nஉழுது உண்டு வாழ்வாரே வாழ்வார் (மற்றெல்லாம்)\nதொழுது உண்டு பின்செல்பவர்\nஉழுது உண்டு வாழ்வாரே வாழ்வார் (மற்றெல்லாம்)\nதொழுது உண்டு பின்செல்பவர்\n\n[Verse 1]\nபலகுடை நீழலும் தங்குடைக்கீழ்க் (காண்பர்)\nஅலகு உடை நீழ லவர்\nபலகுடை நீழலும் தங்குடைக்கீழ்க் (காண்பர்)\nஅலகு உடை நீழ லவர்\n\nஉழுவார் உலகத்தார்க்கு ஆணி (அக்தாற்றாது)\nஎழுவாரை எல்லாம் பொறுத்து\nஉழுவார் உலகத்தார்க்கு ஆணி (அக்தாற்றாது)\nஎழுவாரை எல்லாம் பொறுத்து\n\n[Chorus]\nஉழுது உண்டு வாழ்வாரே வாழ்வார் (மற்றெல்லாம்)\nதொழுது உண்டு பின்செல்பவர்\nஉழுது உண்டு வாழ்வாரே வாழ்வார் (மற்றெல்லாம்)\nதொழுது உண்டு பின்செல்பவர்\n\n[Verse 2]\nஇரவார் இரப்பார்க்கொன்று ஈவர் (கரவாது)\nகைசெய்தூண் மாலை யவர்\nஉழவினார் கைம்மடங்கின் இல்லை (விழைவதூஉம்)\nவிட்டேம்என் பார்க்கும் நிலை\n\nசுழன்றும்ஏர்ப் பின்னது உலகம் (அதனால்)\nஉழந்தும் உழவே தலை\nசுழன்றும்ஏர்ப் பின்னது உலகம் (அதனால்)\nஉழந்தும் உழவே தலை\n\n[Chorus]\nஉழுது உண்டு வாழ்வாரே வாழ்வார் (மற்றெல்லாம்)\nதொழுது உண்டு பின்செல்பவர்\nஉழுது உண்டு வாழ்வாரே வாழ்வார் (மற்றெல்லாம்)\nதொழுது உண்டு பின்செல்பவர்\n\n[Verse 3]\nஏரினும் நன்றால் எருவிடுதல் (கட்டபின்)\nநீரினும் நன்றதன் காப்பு\nதொடிப்புழுதி கக்சா உணக்கின் (பிடித்தெருவும்)\nவேண்டாது சாலப் படும்\n\nசெல்லான் கிழவன் இருப்பின் (நிலம்புலந்து)\nஇல்லாளின் ஊடி விடும்\nஇலமென்று அசைஇ இருப்பாரைக் (காணின்)\nநிலமென்னும் நல்லாள் நகும்\n\n[Chorus]\nஉழுது உண்டு வாழ்வாரே வாழ்வார் (மற்றெல்லாம்)\nதொழுது உண்டு பின்செல்பவர்\nஉழுது உண்டு வாழ்வாரே வாழ்வார் (மற்றெல்லாம்)\nதொழுது உண்டு பின்செல்பவர்",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 352.96,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "scribbles",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-03T11:39:49.968Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Classical, Oratorio",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

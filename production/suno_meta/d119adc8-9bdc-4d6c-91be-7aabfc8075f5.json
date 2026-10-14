@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "title": "கனவுநிலையுரைத்தல் 1A",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "d119adc8-9bdc-4d6c-91be-7aabfc8075f5",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/d119adc8-9bdc-4d6c-91be-7aabfc8075f5.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_d119adc8-9bdc-4d6c-91be-7aabfc8075f5.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_d119adc8-9bdc-4d6c-91be-7aabfc8075f5.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Classical Oratorio, church acoustic reverb, stately measured pulse, natural trumpet woven with orchestral strings and chorus, female classical lead in clear sustained phrases with formal choral responses",
+    "prompt": "[Chorus]\nநனவினால் நல்காதவரைக்  (கனவினால்)\nகாண்டலின் உண்டென் உயிர்\nநனவினால் நல்காதவரைக்  (கனவினால்)\nகாண்டலின் உண்டென் உயிர்\n\n[Verse 1]\nநனவென ஒன்றில்லை ஆயின்  (கனவினால்)\nகாதலர் நீங்கலர் மன்\nநனவென ஒன்றில்லை ஆயின்  (கனவினால்)\nகாதலர் நீங்கலர் மன்\n\nகாதலர் தூதொடு வந்த  (கனவினுக்கு)\nயாதுசெய் வேன்கொல் விருந்து\nகாதலர் தூதொடு வந்த  (கனவினுக்கு)\nயாதுசெய் வேன்கொல் விருந்து\n\n[Chorus]\nநனவினால் நல்காதவரைக்  (கனவினால்)\nகாண்டலின் உண்டென் உயிர்\nநனவினால் நல்காதவரைக்  (கனவினால்)\nகாண்டலின் உண்டென் உயிர்\n\n[Verse 2]\nநனவினால் கண்டதூஉம் ஆங்கே  (கனவுந்தான்)\nகண்ட பொழுதே இனிது\nகனவினான் உண்டாகும் காமம்  (நனவினான்)\nநல்காரை நாடித் தரற்கு\n\nநனவினால் நல்காக் கொடியார்  (கனவனால்)\nஎன்எம்மைப் பீழிப் பது\nகயலுண்கண் யானிரப்பத் துஞ்சிற்  (கலந்தார்க்கு)\nஉயலுண்மை சாற்றுவேன் மன்\n\n[Chorus]\nநனவினால் நல்காதவரைக்  (கனவினால்)\nகாண்டலின் உண்டென் உயிர்\nநனவினால் நல்காதவரைக்  (கனவினால்)\nகாண்டலின் உண்டென் உயிர்\n\n[Verse 3]\nநனவினால் நல்காரை நோவர்  (கனவினால்)\nகாதலர்க் காணாதவர்\nநனவினால் நம்நீத்தார் என்பர்  (கனவினால்)\nகாணார்கொல் இவ்வூரவர்\n\nதுஞ்சுங்கால் தோள்மேலர் ஆகி  (விழிக்குங்கால்)\nநெஞ்சத்தர் ஆவர் விரைந்து\nதுஞ்சுங்கால் தோள்மேலர் ஆகி  (விழிக்குங்கால்)\nநெஞ்சத்தர் ஆவர் விரைந்து\n\n[Chorus]\nநனவினால் நல்காதவரைக்  (கனவினால்)\nகாண்டலின் உண்டென் உயிர்\nநனவினால் நல்காதவரைக்  (கனவினால்)\nகாண்டலின் உண்டென் உயிர்",
+    "type": "gen",
+    "duration": 309.84,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "scribbles",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-05T07:41:03.950Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Classical Oratorio",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

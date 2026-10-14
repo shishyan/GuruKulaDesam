@@ -1,0 +1,190 @@
+{
+  "status": "complete",
+  "title": "செங்கோன்மை 1M Golden",
+  "play_count": 8,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "da2135c0-6dc8-4fa5-ae4c-29793fb0867f",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/da2135c0-6dc8-4fa5-ae4c-29793fb0867f.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/da2135c0-6dc8-4fa5-ae4c-29793fb0867f.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_da2135c0-6dc8-4fa5-ae4c-29793fb0867f.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_da2135c0-6dc8-4fa5-ae4c-29793fb0867f.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "classical; analog string synthesizer carrying regal harmony, chorused keyboard textures widening the arrangement, clear high-register Tamil lead vocal with firm classical phrasing and layered refrain doubles, natural moderate rhythmic pulse, widened studio mix",
+    "prompt": "[Chorus]\nவான் நோக்கி வாழும் உலகெல்லாம் (மன்னவன்)\nகோல் நோக்கி வாழ் வாழும் குடி  \nவான் நோக்கி வாழும் உலகெல்லாம் (மன்னவன்)\nகோல் நோக்கி வாழ் வாழும் குடி\n\n[Verse]\nகுடிதழீஇக் கோலோச்சும் மாநில (மன்னன்)\nஅடிதழீஇ நிற்கும் உலகு\nகுடிதழீஇக் கோலோச்சும் மாநில (மன்னன்)\nஅடிதழீஇ நிற்கும் உலகு\n\nஅந்தணர் நூற்கும் அறத்திற்கும் (ஆதியாய்)\nநின்றது மன்னவன் கோல்\nஅந்தணர் நூற்கும் அறத்திற்கும் (ஆதியாய்)\nநின்றது மன்னவன் கோல்\n\n[Chorus]\nவான் நோக்கி வாழும் உலகெல்லாம் (மன்னவன்)\nகோல் நோக்கி வாழ் வாழும் குடி\nவான் நோக்கி வாழும் உலகெல்லாம் (மன்னவன்)\nகோல் நோக்கி வாழ் வாழும் குடி\n\n[Verse]\nஇறைகாக்கும் வையகம் எல்லாம் (அவனை)\nமுறைகாக்கும் முட்டாச் செயின்\nஇறைகாக்கும் வையகம் எல்லாம் (அவனை)\nமுறைகாக்கும் முட்டாச் செயின்\n\nஓர்ந்து கண்ணோடாது இறைபுரிந்து (யார்மாட்டும்)\nதேர்ந்து செய்வஃதே முறை\nவேலன்று வென்றி தருவது (மன்னவன்)\nகோலதூஉம் கோடாது எனின்\n\n[Chorus]\nவான் நோக்கி வாழும் உலகெல்லாம் (மன்னவன்)\nகோல் நோக்கி வாழ் வாழும் குடி\nவான் நோக்கி வாழும் உலகெல்லாம் (மன்னவன்)\nகோல் நோக்கி வாழ் வாழும் குடி\n\n[Bridge]\nஇயல்புளிக் கோலோச்சும் மன்னவன் (நாட்ட)\nபெயலும் விளையுளும் தொக்கு\nகுடிபுறம் காத்தோம்பிக் குற்றம் (கடிதல்)\nவடுவன்று வேந்தன் தொழில்\n\nஎண்பதத்தான் ஓரா முறைசெய்யா (மன்னவன்)\nதண்பதத்தான் தானே கெடும்\nகொலையிற் கொடியாரை வேந்தொறுத்தல் (பைங்கூழ்)\nகளைகட்டு அதனொடு நேர்\n\n[Chorus]\nவான் நோக்கி வாழும் உலகெல்லாம் (மன்னவன்)\nகோல் நோக்கி வாழ் வாழும் குடி\nவான் நோக்கி வாழும் உலகெல்லாம் (மன்னவன்)\nகோல் நோக்கி வாழ் வாழும் குடி",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 296.92,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "weirdness_constraint": 0.55,
+      "aug_creativity": 1
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "cyanotype",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-20T18:30:22.284Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "classical, analog string synthesizer, Tamil lead vocal",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

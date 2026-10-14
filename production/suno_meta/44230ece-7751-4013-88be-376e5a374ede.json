@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "title": "அவாவறுத்தல் 2026",
+  "play_count": 0,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "44230ece-7751-4013-88be-376e5a374ede",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/44230ece-7751-4013-88be-376e5a374ede.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/44230ece-7751-4013-88be-376e5a374ede.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_44230ece-7751-4013-88be-376e5a374ede.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_44230ece-7751-4013-88be-376e5a374ede.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "ambient, devotional",
+    "negative_tags": "",
+    "prompt": "[Chorus]\nவேண்டுங்கால் வேண்டும் பிறவாமை (மற்றது)\nவேண்டாமை வேண்ட வரும்\nவேண்ண்டுங்கால் வேண்டும் பிறவாமை (மற்றது)\nவேண்டாமை வேண்ட வரும்\nவேண்டாமை அன்ன விழுச்செல்வம் (ஈண்டில்லை)\nஆண்டும் அஃதொப்பது இல்\n\n[Verse 1]\nஅவா என்ப எல்லா உயிர்க்கும் (எஞ்ஞான்றும்)\nதவா அப்பிறப்பு ஈனும் வித்து.\nஅஞ்சுவது ஓரும் அறனே (ஒருவனை)\nவஞ்சிப்பது ஓரும் அவா\nஇன்பம் இடையறாது ஈண்டும் (அவா என்னும்)\nதுன்பத்துள் துன்பம் கெடின்\nதூஉய்மை என்பது அவாவின்மை (மற்றது)\nவாஅய்மை வேண்ட வரும்\n\n[Chorus]\nவேண்டுங்கால் வேண்டும் பிறவாமை (மற்றது)\nவேண்டாமை வேண்ட வரும்\nவேண்டாமை அன்ன விழுச்செல்வம் (ஈண்டில்லை)\nஆண்டும் அஃதொப்பது இல்\n\n[Verse 4]\nஅவாவினை ஆற்ற அறுப்பின் (தவாவினை)\nதான் வேண்டும் ஆற்றான் வரும்\nஅவா இல்லார்க்கு இல்லாகும் துன்பம் (அஃதுண்டேல்)\nதவாஅது மேன்மேல் வரும்\nஅற்றவர் என்பார் அவா அற்றார் (மற்றையார்)\nஅற்றாக அற்றது இலர்\nஆரா இயற்கை அவா நீப்பின் (அந்நிலையே)\nபேரா இயற்கை தரும்\n\n[Chorus]\nவேண்டுங்கால் வேண்டும் பிறவாமை (மற்றது)\nவேண்டாமை வேண்ட வரும்\nவேண்டாமை அன்ன விழுச்செல்வம் (ஈண்டில்லை)\nஆண்டும் அஃதொப்பது இல்",
+    "type": "studio_export",
+    "duration": 231.73677083333334,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "can_remix": true,
+    "is_remix": false,
+    "studio_project_id": "05fca1ba-9d6c-4608-8d90-438a0de6cec6",
+    "studio_project_version_id": "e2e04d04-e0ff-433c-a4df-126e8607763a",
+    "studio_project_start_beats": -1.6982394735003703,
+    "studio_project_end_beats": 500.39808864476106,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "STUDIO",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    }
+  },
+  "caption": "",
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-11T15:56:25.136Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

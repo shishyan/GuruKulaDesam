@@ -1,0 +1,128 @@
+{
+  "status": "complete",
+  "title": "84.1s Recording (Sep 29 @ 2:39 PM)",
+  "play_count": 2,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "3974cdf1-69c2-453d-a09a-2dc2a92d286a",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/3974cdf1-69c2-453d-a09a-2dc2a92d286a.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_3974cdf1-69c2-453d-a09a-2dc2a92d286a.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_3974cdf1-69c2-453d-a09a-2dc2a92d286a.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "An a cappella folk song in Tamil, performed by a solo male vocalist with a mournful delivery and no instruments.",
+    "prompt": "[Verse 1]\nகூடம்பாடு இல்லாத வாழ்க்கை\nகூடங்குருள் பாம்போடு உடனுறைபற்று\n\n[Verse 2]\nகூடம்பாடு இல்லாத வாழ்க்கை\nகூடங்குருள் பாம்போடு உடனுறைபற்று\nநிழல் நீரும் இன்னாத இன்னா\nதமிழ் நீரும் இன்னாவாம் இன்னாசியின்\nநிழல் நீரும் இன்னாத இன்னா\nதமிழ் நீரும் இன்னாவாம் இன்னாசியின்\nவாழ் போல பகைவரை அஞ்சற்க\nஅஞ்சுக கேள்போல் பகைவர் தொடர்",
+    "type": "upload",
+    "duration": 83.65997916666667,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "UPLOAD",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-29T09:10:08.015Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "folk, mournful, male vocals, a cappella",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

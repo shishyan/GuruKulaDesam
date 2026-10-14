@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "title": "தீவினையச்சம் 1D",
+  "play_count": 1,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "02501e95-2246-476c-be45-a791b173aa8c",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/02501e95-2246-476c-be45-a791b173aa8c.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_02501e95-2246-476c-be45-a791b173aa8c.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_02501e95-2246-476c-be45-a791b173aa8c.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "South Indian rap, heavy half-time bounce, male Tamil rap vocal with firm rhythmic delivery, compressed 808 and kick, tapped mridangam phrases and rolling urumi drums.",
+    "prompt": "[Chorus]\nதீவினையார் அஞ்சார் விழுமியார்  (அஞ்சுவர்)\nதீவினை என்னும் செருக்கு\nதீவினையார் அஞ்சார் விழுமியார்  (அஞ்சுவர்)\nதீவினை என்னும் செருக்கு\n\n[Verse 1]\nதீயவை செய்தார் கெடுதல்  (நிழல்தன்னை)\nவீயாது அடிஉறைந் தற்று\nதீயவை செய்தார் கெடுதல்  (நிழல்தன்னை)\nவீயாது அடிஉறைந் தற்று\n\nதீயவை தீய பயத்தலால்  (தீயவை)\nதீயினும் அஞ்சப் படும்\nதீயவை தீய பயத்தலால்  (தீயவை)\nதீயினும் அஞ்சப் படும்\n\n[Chorus]\nதீவினையார் அஞ்சார் விழுமியார்  (அஞ்சுவர்)\nதீவினை என்னும் செருக்கு\nதீவினையார் அஞ்சார் விழுமியார்  (அஞ்சுவர்)\nதீவினை என்னும் செருக்கு\n\n[Verse 2]\nதீப்பால தான்பிறர்கண் செய்யற்க  (நோய்ப்பால்)\nதன்னை அடல்வேண்டாதான்\nதன்னைத்தான் காதல னாயின்  (எனைத்தொன்றும்)\nதுன்னற்க தீவினைப் பால்\n\nஅறிவினுள் எல்லாந் தலையென்ப  (தீய)\nசெறுவார்க்கும் செய்யா விடல்\nமறந்தும் பிறன்கேடு சூழற்க  (சூழின்)\nஅறஞ்சூழும் சூழ்ந்தவன் கேடு\n\n[Chorus]\nதீவினையார் அஞ்சார் விழுமியார்  (அஞ்சுவர்)\nதீவினை என்னும் செருக்கு\nதீவினையார் அஞ்சார் விழுமியார்  (அஞ்சுவர்)\nதீவினை என்னும் செருக்கு\n\n[Bridge]\nஅருங்கேடன் என்பது அறிக  (மருங்கோடி)\nதீவினை செய்யான் எனின்\nஎனைப்பகை யுற்றாரும் உய்வர்  (வினைப்பகை)\nவீயாது பின்சென்று அடும்\nஇலன்என்று தீயவை செய்யற்க  (செய்யின்)\nஇலனாகும் மற்றும் பெயர்த்து\n\n[Chorus]\nதீவினையார் அஞ்சார் விழுமியார்  (அஞ்சுவர்)\nதீவினை என்னும் செருக்கு\nதீவினையார் அஞ்சார் விழுமியார்  (அஞ்சுவர்)\nதீவினை என்னும் செருக்கு",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 171.36,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 2
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "minimal_album_art",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-08T18:53:56.256Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "South Indian rap, half-time bounce",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

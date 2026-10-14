@@ -1,0 +1,175 @@
+{
+  "status": "complete",
+  "title": "பெரியாரைப் பிழையாமை 1E Golden",
+  "play_count": 5,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "eacb994f-8464-4b9c-b8f4-a343e71829ed",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/eacb994f-8464-4b9c-b8f4-a343e71829ed.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/eacb994f-8464-4b9c-b8f4-a343e71829ed.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_eacb994f-8464-4b9c-b8f4-a343e71829ed.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_eacb994f-8464-4b9c-b8f4-a343e71829ed.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Tamil devotional folk with a male mid-range lead, clear and measured with restrained chorus doubling; spring reverb shimmering on the synth sitar, which carries the melody and ornamental bends over a steady hand-drum pulse; unhurried, even verse-chorus flow.",
+    "prompt": "[Chorus]\nஎரியால் சுடப்படினும் உய்வுண்டாம் (உய்யார்)\nபெரியார்ப் பிழைத்தொழுகு வார்\nபெரியாரைப் பேணாது ஒழுகிற் (பெரியாரால்)\nபேரா இடும்பை தரும்\n\n[Verse 1]\nஎரியால் சுடப்படினும் உய்வுண்டாம் (உய்யார்)\nபெரியார்ப் பிழைத்தொழுகு வார்\nபெரியாரைப் பேணாது ஒழுகிற் (பெரியாரால்)\nபேரா இடும்பை தரும்\n\nஆற்றுவார் ஆற்றல் இகழாமை (போற்றுவார்)\nபோற்றலுள் எல்லாம் தலை\nகுன்றன்னார் குன்ற மதிப்பின் (குடியொடு)\nநின்றன்னார் மாய்வர் நிலத்து\n\n[Chorus]\nஎரியால் சுடப்படினும் உய்வுண்டாம் (உய்யார்)\nபெரியார்ப் பிழைத்தொழுகு வார்\nஎரியால் சுடப்படினும் உய்வுண்டாம் (உய்யார்)\nபெரியார்ப் பிழைத்தொழுகு வார்\n\n[Verse 2]\nகூற்றத்தைக் கையால் விளித்தற்றால் (ஆற்றுவார்க்கு)\nஆற்றாதார் இன்னா செயல்\nகெடல்வேண்டின் கேளாது செய்க (அடல்வேண்டின்)\nஆற்று பவர்கண் இழுக்கு\n\nயாண்டுச்சென்று யாண்டும் உளராகார் (வெந்துப்பின்)\nவேந்து செறப்பட் டவர்\nயாண்டுச்சென்று யாண்டும் உளராகார் (வெந்துப்பின்)\nவேந்து செறப்பட் டவர்\n\n[Chorus]\nஎரியால் சுடப்படினும் உய்வுண்டாம் (உய்யார்)\nபெரியார்ப் பிழைத்தொழுகு வார்\nஎரியால் சுடப்படினும் உய்வுண்டாம் (உய்யார்)\nபெரியார்ப் பிழைத்தொழுகு வார்\n\n[Verse 3]\nஏந்திய கொள்கையார் சீறின் (இடைமுரிந்து)\nவேந்தனும் வேந்து கெடும்\nஏந்திய கொள்கையார் சீறின் (இடைமுரிந்து)\nவேந்தனும் வேந்து கெடும்\n\nவகைமாண்ட வாழ்க்கையும் வான்பொருளும் (என்னாம்)\nதகைமாண்ட தக்கார் செறின்\nஇறந்தமைந்த சார்புடையர் ஆயினும் (உய்யார்)\nசிறந்தமைந்த சீரார் செறின்\n\n[Chorus]\nஎரியால் சுடப்படினும் உய்வுண்டாம் (உய்யார்)\nபெரியார்ப் பிழைத்தொழுகு வார்\nஎரியால் சுடப்படினும் உய்வுண்டாம் (உய்யார்)\nபெரியார்ப் பிழைத்தொழுகு வார்",
+    "type": "gen",
+    "duration": 292.84,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": false,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "black_and_white_photograph",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-29T14:00:51.324Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "devotional, folk",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "GuruKulaDesam",
+        "user_handle": "gurukuladesam",
+        "user_avatar_image_url": "https://cdn1.suno.ai/a745578d.webp"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

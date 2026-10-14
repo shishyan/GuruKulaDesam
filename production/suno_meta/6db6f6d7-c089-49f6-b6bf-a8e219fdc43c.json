@@ -1,0 +1,190 @@
+{
+  "status": "complete",
+  "title": "புறங்கூறாமை 1G Golden",
+  "play_count": 4,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "6db6f6d7-c089-49f6-b6bf-a8e219fdc43c",
+  "entity_type": "song_schema",
+  "video_url": "https://cdn1.suno.ai/6db6f6d7-c089-49f6-b6bf-a8e219fdc43c.mp4",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/6db6f6d7-c089-49f6-b6bf-a8e219fdc43c.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_6db6f6d7-c089-49f6-b6bf-a8e219fdc43c.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_6db6f6d7-c089-49f6-b6bf-a8e219fdc43c.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Indian classical orchestral symphony, warm analog tape saturation, measured vilambit tala, female alto vocals with Hindustani ornamentation, resonant Indian sitar phrases and flowing bamboo flutes woven through sweeping symphonic strings, sampled-snare accents, spacious layered mix.",
+    "prompt": "[Chorus]\nஏதிலார் குற்றம்போல் தங்குற்றங்  (காண்கிற்பின்)\nதீதுண்டோ மன்னும் உயிர்க்கு\nஏதிலார் குற்றம்போல் தங்குற்றங்  (காண்கிற்பின்)\nதீதுண்டோ மன்னும் உயிர்க்கு\n\n[Verse 1]\nஅறனழீஇ அல்லவை செய்தலின்  (தீதே)\nபுறனழீஇப் பொய்த்து நகை\nஅறனழீஇ அல்லவை செய்தலின்  (தீதே)\nபுறனழீஇப் பொய்த்து நகை\n\nஅறங்கூறான் அல்ல செயினும்  (ஒருவன்)\nபுறங்கூறான் என்றல் இனிது\nஅறங்கூறான் அல்ல செயினும்  (ஒருவன்)\nபுறங்கூறான் என்றல் இனிது\n\n[Chorus]\nஏதிலார் குற்றம்போல் தங்குற்றங்  (காண்கிற்பின்)\nதீதுண்டோ மன்னும் உயிர்க்கு\nஏதிலார் குற்றம்போல் தங்குற்றங்  (காண்கிற்பின்)\nதீதுண்டோ மன்னும் உயிர்க்கு\n\n[Verse 2]\nதுன்னியார் குற்றமும் தூற்றும்  (மரபினார்)\nஎன்னைகொல் ஏதிலார் மாட்டு\nகண்ணின்று கண்ணறச் சொல்லினும்  (சொல்லற்க)\nமுன்னின்று பின்நோக்காச் சொல்\n\nஅறஞ்சொல்லும் நெஞ்சத்தான் அன்மை  (புறஞ்சொல்லும்)\nபுன்மையாற் காணப் படும்\nபகச்சொல்லிக் கேளிர்ப் பிரிப்பர்  (நகச்சொல்லி)\nநட்பாடல் தேற்றா தவர்\n\n[Chorus]\nஏதிலார் குற்றம்போல் தங்குற்றங்  (காண்கிற்பின்)\nதீதுண்டோ மன்னும் உயிர்க்கு\nஏதிலார் குற்றம்போல் தங்குற்றங்  (காண்கிற்பின்)\nதீதுண்டோ மன்னும் உயிர்க்கு\n\n[Verse 3]\nஅறன்நோக்கி ஆற்றுங்கொல் வையம்  (புறன்நோக்கிப்)\nபுன்சொல் உரைப்பான் பொறை\nபுறங்கூறிப் பொய்த்துயிர் வாழ்தலின்  (சாதல்)\nஅறங்கூறும் ஆக்கந் தரும்\nபிறன்பழி கூறுவான் தன்பழி  (யுள்ளும்)\nதிறன்தெரிந்து கூறப் படும்\n\n[Chorus]\nஏதிலார் குற்றம்போல் தங்குற்றங்  (காண்கிற்பின்)\nதீதுண்டோ மன்னும் உயிர்க்கு\nஏதிலார் குற்றம்போல் தங்குற்றங்  (காண்கிற்பின்)\nதீதுண்டோ மன்னும் உயிர்க்கு",
+    "edited_clip_id": "00000000-0000-0000-0000-000000000000",
+    "type": "gen",
+    "duration": 288.36,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 2
+    },
+    "cover_clip_id": "00000000-0000-0000-0000-000000000000",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "COVER",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ],
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "polaroid",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-08T16:40:24.014Z",
+  "is_public": true,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Indian classical, orchestral symphony",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

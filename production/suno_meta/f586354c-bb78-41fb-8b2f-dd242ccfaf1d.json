@@ -1,0 +1,163 @@
+{
+  "status": "complete",
+  "title": "காதற்சிறப்புரைத்தல் 1B",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "f586354c-bb78-41fb-8b2f-dd242ccfaf1d",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/f586354c-bb78-41fb-8b2f-dd242ccfaf1d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_f586354c-bb78-41fb-8b2f-dd242ccfaf1d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_f586354c-bb78-41fb-8b2f-dd242ccfaf1d.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Classical Oratorio, stately processional pace, resonant male lead with formal sustained phrasing and distinct choral responses, clearly separated choir sections, baroque timpani beneath sweeping orchestral strings and restrained brass.",
+    "prompt": "[Chorus]\nகண் உள்ளார் காத லவராகக்  (கண்ணும்)\nஎழுதேம் கரப்பாக்கு அறிந்து\nகண் உள்ளார் காத லவராகக்  (கண்ணும்)\nஎழுதேம் கரப்பாக்கு அறிந்து\n\n[Verse 1]\nஉடம்பொடு உயிரிடை என்ன  (மற்றன்ன)\nமடந்தையொடு எம்மிடை நட்பு\nஉடம்பொடு உயிரிடை என்ன  (மற்றன்ன)\nமடந்தையொடு எம்மிடை நட்பு\n\nகண்ணுள்ளின் போகார் இமைப்பின்  (பருகுவரா)\nநுண்ணியர்எம் காத லவர்\nகண்ணுள்ளின் போகார் இமைப்பின்  (பருகுவரா)\nநுண்ணியர்எம் காத லவர்\n\n[Chorus]\nகண் உள்ளார் காத லவராகக்  (கண்ணும்)\nஎழுதேம் கரப்பாக்கு அறிந்து\nகண் உள்ளார் காத லவராகக்  (கண்ணும்)\nஎழுதேம் கரப்பாக்கு அறிந்து\n\n[Verse 2]\nஉள்ளுவன் மன்யான் மறப்பின்  (மறப்பறியேன்)\nஒள்ளமர்க் கண்ணாள் குணம்\nஉள்ளுவன் மன்யான் மறப்பின்  (மறப்பறியேன்)\nஒள்ளமர்க் கண்ணாள் குணம்\n\nநெஞ்சத்தார் காத லவராக  (வெய்துண்டல்)\nஅஞ்சுதும் வேபாக்கு அறிந்து\nபாலொடு தேன் கலந்தற்றே  (பணிமொழி)\nவாலெயிறு ஊறிய நீர்\n\n[Chorus]\nகண் உள்ளார் காத லவராகக்  (கண்ணும்)\nஎழுதேம் கரப்பாக்கு அறிந்து\nகண் உள்ளார் காத லவராகக்  (கண்ணும்)\nஎழுதேம் கரப்பாக்கு அறிந்து\n\n[Verse 3]\n\nஇமைப்பின் கரப்பாக்கு அறிவல்  (அனைத்திற்கே)\nஏதிலர் என்னும் இவ்வூர்\nஉவந்துறைவர் உள்ளத்துள் என்றும்  (இகந்துறைவர்)\nஏதிலர் என்னும் இவ்வூர்\n\nகருமணியிற் பாவாய்நீ போதாயாம்  (வீழும்)\nதிருநுதற்கு இல்லை இடம்\nவாழ்தல் உயிர்க்கன்னள் ஆயிழை  (சாதல்)\nஅதற்கன்னள் நீங்கும் இடத்து\n\n[Chorus]\nகண் உள்ளார் காத லவராகக்  (கண்ணும்)\nஎழுதேம் கரப்பாக்கு அறிந்து\nகண் உள்ளார் காத லவராகக்  (கண்ணும்)\nஎழுதேம் கரப்பாக்கு அறிந்து",
+    "type": "gen",
+    "duration": 214.8,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "weirdness_constraint": 0.67,
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6-WILD",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "renaissance",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-04T15:48:14.147Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Classical Oratorio, Baroque",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 1,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

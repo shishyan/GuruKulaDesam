@@ -1,0 +1,903 @@
+{
+  "total_releases": 177,
+  "matched_count": 74,
+  "missing_count": 59,
+  "missing_chapters": [
+    [
+      2,
+      "வான் சிறப்பு"
+    ],
+    [
+      4,
+      "அறன் வலியுறுத்தல்"
+    ],
+    [
+      6,
+      "வாழ்க்கைத் துணைநலம்"
+    ],
+    [
+      7,
+      "புதல்வரைப் பெறுதல்"
+    ],
+    [
+      9,
+      "விருந்தோம்பல்"
+    ],
+    [
+      10,
+      "இனியவை கூறல்"
+    ],
+    [
+      11,
+      "செய்ந்நன்றி அறிதல்"
+    ],
+    [
+      12,
+      "நடுவுநிலைமை"
+    ],
+    [
+      13,
+      "அடக்கமுடைமை"
+    ],
+    [
+      14,
+      "ஒழுக்கமுடைமை"
+    ],
+    [
+      15,
+      "பிறனில் விழையாமை"
+    ],
+    [
+      16,
+      "பொறையுடைமை"
+    ],
+    [
+      17,
+      "அழுக்காறாமை"
+    ],
+    [
+      18,
+      "வெஃகாமை"
+    ],
+    [
+      19,
+      "புறங்கூறாமை"
+    ],
+    [
+      20,
+      "பயனில சொல்லாமை"
+    ],
+    [
+      21,
+      "தீவினையச்சம்"
+    ],
+    [
+      22,
+      "ஒப்புரவறிதல்"
+    ],
+    [
+      23,
+      "ஈகை"
+    ],
+    [
+      24,
+      "புகழ்"
+    ],
+    [
+      32,
+      "இன்னா செய்யாமை"
+    ],
+    [
+      37,
+      "அவாவறுத்தல்"
+    ],
+    [
+      39,
+      "இறைமாட்சி"
+    ],
+    [
+      44,
+      "குற்றங்கடிதல்"
+    ],
+    [
+      71,
+      "குறிப்பறிதல்"
+    ],
+    [
+      73,
+      "அவையஞ்சாமை"
+    ],
+    [
+      76,
+      "பொருள் செயல்வகை"
+    ],
+    [
+      82,
+      "தீ நட்பு"
+    ],
+    [
+      83,
+      "கூடா நட்பு"
+    ],
+    [
+      91,
+      "பெண்வழிச் சேறல்"
+    ],
+    [
+      92,
+      "வரைவின் மகளிர்"
+    ],
+    [
+      98,
+      "பெருமை"
+    ],
+    [
+      99,
+      "சான்றாண்மை"
+    ],
+    [
+      107,
+      "இரவச்சம்"
+    ],
+    [
+      108,
+      "கயமை"
+    ],
+    [
+      109,
+      "தகையணங்குறுத்தல்"
+    ],
+    [
+      111,
+      "புணர்ச்சி மகிழ்தல்"
+    ],
+    [
+      112,
+      "நலம் புனைந்துரைத்தல்"
+    ],
+    [
+      113,
+      "காதற்சிறப்புரைத்தல்"
+    ],
+    [
+      114,
+      "நாணுத்துறவுரைத்தல்"
+    ],
+    [
+      115,
+      "அலரறிவுறுத்தல்"
+    ],
+    [
+      116,
+      "பிரிவாற்றாமை"
+    ],
+    [
+      117,
+      "படர்மெலிந்திரங்கல்"
+    ],
+    [
+      118,
+      "கண்விதுப்பழிதல்"
+    ],
+    [
+      119,
+      "பசப்புறு பருவரல்"
+    ],
+    [
+      120,
+      "தனிப்படர் மிகுதி"
+    ],
+    [
+      121,
+      "நினைந்தவர் புலம்பல்"
+    ],
+    [
+      122,
+      "கனவுநிலை உரைத்தல்"
+    ],
+    [
+      123,
+      "பொழுதுகண்டு இரங்கல்"
+    ],
+    [
+      124,
+      "உறுப்புநலன் அழிதல்"
+    ],
+    [
+      125,
+      "நெஞ்சறிவுறுத்தல்"
+    ],
+    [
+      126,
+      "நிறையழிதல்"
+    ],
+    [
+      127,
+      "அவர்வயின் விதும்பல்"
+    ],
+    [
+      128,
+      "குறிப்பறிவுறுத்தல்"
+    ],
+    [
+      129,
+      "புணர்ச்சி விதும்பல்"
+    ],
+    [
+      130,
+      "நெஞ்சொடு புலத்தல்"
+    ],
+    [
+      131,
+      "புலவி"
+    ],
+    [
+      132,
+      "புலவி நுணுக்கம்"
+    ],
+    [
+      133,
+      "ஊடலுவகை"
+    ]
+  ],
+  "matched_releases": {
+    "106": {
+      "chapter_num": 106,
+      "chapter_name": "இரவு",
+      "release_title": "திருக்குறள் - இரவு 2026",
+      "href": "https://studio.youtube.com/release/b_zOXoDZxwePN/overview",
+      "rowText": "திருக்குறள் - இரவு 2026 | Guru Kula Desam | Oct 3, 2026 | 3 | No"
+    },
+    "101": {
+      "chapter_num": 101,
+      "chapter_name": "நன்றியில் செல்வம்",
+      "release_title": "திருக்குறள் - நன்றியில் செல்வம் 2026",
+      "href": "https://studio.youtube.com/release/b_oXyHO4N1qDh/overview",
+      "rowText": "திருக்குறள் - நன்றியில் செல்வம் 2026 | Guru Kula Desam | Oct 3, 2026 | 2 | Yes"
+    },
+    "105": {
+      "chapter_num": 105,
+      "chapter_name": "நல்குரவு",
+      "release_title": "திருக்குறள் - நல்குரவு 2026",
+      "href": "https://studio.youtube.com/release/b_monwWqfEZWl/overview",
+      "rowText": "திருக்குறள் - நல்குரவு 2026 | Guru Kula Desam | Oct 3, 2026 | 2 | No"
+    },
+    "103": {
+      "chapter_num": 103,
+      "chapter_name": "குடிசெயல்வகை",
+      "release_title": "திருக்குறள் - குடிசெயல்வகை 2026",
+      "href": "https://studio.youtube.com/release/b_MMqWnsgzSUD/overview",
+      "rowText": "திருக்குறள் - குடிசெயல்வகை 2026 | Guru Kula Desam | Oct 3, 2026 | 2 | No"
+    },
+    "104": {
+      "chapter_num": 104,
+      "chapter_name": "உழவு",
+      "release_title": "திருக்குறள் - உழவு 2026",
+      "href": "https://studio.youtube.com/release/b_KNBXJHqXGBz/overview",
+      "rowText": "திருக்குறள் - உழவு 2026 | Guru Kula Desam | Oct 3, 2026 | 2 | No"
+    },
+    "102": {
+      "chapter_num": 102,
+      "chapter_name": "நாணுடைமை",
+      "release_title": "திருக்குறள் - நாணுடைமை 2026",
+      "href": "https://studio.youtube.com/release/b_7HgCzunfBkR/overview",
+      "rowText": "திருக்குறள் - நாணுடைமை 2026 | Guru Kula Desam | Oct 3, 2026 | 2 | No"
+    },
+    "94": {
+      "chapter_num": 94,
+      "chapter_name": "சூது",
+      "release_title": "திருக்குறள் - சூது 2026",
+      "href": "https://studio.youtube.com/release/b_y94K4kSASUd/overview",
+      "rowText": "திருக்குறள் - சூது 2026 | Guru Kula Desam | Sep 30, 2026 | 2 | No"
+    },
+    "95": {
+      "chapter_num": 95,
+      "chapter_name": "மருந்து",
+      "release_title": "திருக்குறள் - மருந்து 2026",
+      "href": "https://studio.youtube.com/release/b_WuHMnps0MjF/overview",
+      "rowText": "திருக்குறள் - மருந்து 2026 | Guru Kula Desam | Sep 30, 2026 | 2 | No"
+    },
+    "3": {
+      "chapter_num": 3,
+      "chapter_name": "நீத்தார் பெருமை",
+      "release_title": "திருக்குறள் - பெருமை 2026",
+      "href": "https://studio.youtube.com/release/b_SnYPt7E3tTZ/overview",
+      "rowText": "திருக்குறள் - பெருமை 2026 | Guru Kula Desam | Sep 30, 2026 | 2 | No"
+    },
+    "100": {
+      "chapter_num": 100,
+      "chapter_name": "பண்புடைமை",
+      "release_title": "திருக்குறள் - பண்புடைமை 2026",
+      "href": "https://studio.youtube.com/release/b_OMYTcHJRvfn/overview",
+      "rowText": "திருக்குறள் - பண்புடைமை 2026 | Guru Kula Desam | Sep 30, 2026 | 2 | No"
+    },
+    "97": {
+      "chapter_num": 97,
+      "chapter_name": "மானம்",
+      "release_title": "திருக்குறள் - மானம் 2026",
+      "href": "https://studio.youtube.com/release/b_J5eOHUlQiy6/overview",
+      "rowText": "திருக்குறள் - மானம் 2026 | Guru Kula Desam | Sep 30, 2026 | 2 | No"
+    },
+    "96": {
+      "chapter_num": 96,
+      "chapter_name": "குடிமை",
+      "release_title": "திருக்குறள் - குடிமை 2026",
+      "href": "https://studio.youtube.com/release/b_2FHxEEGMTnn/overview",
+      "rowText": "திருக்குறள் - குடிமை 2026 | Guru Kula Desam | Sep 30, 2026 | 2 | No"
+    },
+    "89": {
+      "chapter_num": 89,
+      "chapter_name": "உட்பகை",
+      "release_title": "திருக்குறள் - உட்பகை 2026",
+      "href": "https://studio.youtube.com/release/b_okDqvyeubHG/overview",
+      "rowText": "திருக்குறள் - உட்பகை 2026 | Guru Kula Desam | Sep 29, 2026 | 2 | No"
+    },
+    "86": {
+      "chapter_num": 86,
+      "chapter_name": "இகல்",
+      "release_title": "திருக்குறள் - இகல் 2026",
+      "href": "https://studio.youtube.com/release/b_kSRD1qVPEzC/overview",
+      "rowText": "திருக்குறள் - இகல் 2026 | Guru Kula Desam | Sep 29, 2026 | 2 | No"
+    },
+    "93": {
+      "chapter_num": 93,
+      "chapter_name": "கள்ளுண்ணாமை",
+      "release_title": "திருக்குறள் - கள்ளுண்ணாமை 2026",
+      "href": "https://studio.youtube.com/release/b_jbg4CWy2oTE/overview",
+      "rowText": "திருக்குறள் - கள்ளுண்ணாமை 2026 | Guru Kula Desam | Sep 29, 2026 | 2 | No"
+    },
+    "88": {
+      "chapter_num": 88,
+      "chapter_name": "பகைத்திறந்தெரிதல்",
+      "release_title": "திருக்குறள் - பகைத்திறந்தெரிதல் 2026",
+      "href": "https://studio.youtube.com/release/b_ASiq9L83gqe/overview",
+      "rowText": "திருக்குறள் - பகைத்திறந்தெரிதல் 2026 | Guru Kula Desam | Sep 29, 2026 | 2 | No"
+    },
+    "90": {
+      "chapter_num": 90,
+      "chapter_name": "பெரியாரைப் பிழையாமை",
+      "release_title": "திருக்குறள் - பெரியாரைப் பிழையாமை 2026",
+      "href": "https://studio.youtube.com/release/b_6cP1iwZ9zdX/overview",
+      "rowText": "திருக்குறள் - பெரியாரைப் பிழையாமை 2026 | Guru Kula Desam | Sep 29, 2026 | 2 | No"
+    },
+    "87": {
+      "chapter_num": 87,
+      "chapter_name": "பகைமாட்சி",
+      "release_title": "திருக்குறள் - பகைமாட்சி 2026",
+      "href": "https://studio.youtube.com/release/b_3lUxdK0eghJ/overview",
+      "rowText": "திருக்குறள் - பகைமாட்சி 2026 | Guru Kula Desam | Sep 29, 2026 | 2 | No"
+    },
+    "85": {
+      "chapter_num": 85,
+      "chapter_name": "புல்லறிவாண்மை",
+      "release_title": "திருக்குறள் - புல்லறிவாண்மை 2026",
+      "href": "https://studio.youtube.com/release/b_MPPg8zj5lPJ/overview",
+      "rowText": "திருக்குறள் - புல்லறிவாண்மை 2026 | Guru Kula Desam | Sep 28, 2026 | 2 | No"
+    },
+    "84": {
+      "chapter_num": 84,
+      "chapter_name": "பேதைமை",
+      "release_title": "திருக்குறள் - பேதைமை 2026",
+      "href": "https://studio.youtube.com/release/b_HVgunwtc2qE/overview",
+      "rowText": "திருக்குறள் - பேதைமை 2026 | Guru Kula Desam | Sep 28, 2026 | 2 | No"
+    },
+    "78": {
+      "chapter_num": 78,
+      "chapter_name": "படைச்செருக்கு",
+      "release_title": "திருக்குறள் - படைச்செருக்கு 2026",
+      "href": "https://studio.youtube.com/release/b_fZ87BUZUVW9/overview",
+      "rowText": "திருக்குறள் - படைச்செருக்கு 2026 | Guru Kula Desam | Sep 27, 2026 | 2 | No"
+    },
+    "80": {
+      "chapter_num": 80,
+      "chapter_name": "நட்பாராய்தல்",
+      "release_title": "திருக்குறள் - நட்பாராய்தல் 2026",
+      "href": "https://studio.youtube.com/release/b_fYgMUuqLQDM/overview",
+      "rowText": "திருக்குறள் - நட்பாராய்தல் 2026 | Guru Kula Desam | Sep 27, 2026 | 2 | No"
+    },
+    "79": {
+      "chapter_num": 79,
+      "chapter_name": "நட்பு",
+      "release_title": "திருக்குறள் - தீ நட்பு 2026",
+      "href": "https://studio.youtube.com/release/b_BEOnDr5Ny4V/overview",
+      "rowText": "திருக்குறள் - தீ நட்பு 2026 | Guru Kula Desam | Sep 27, 2026 | 2 | No"
+    },
+    "81": {
+      "chapter_num": 81,
+      "chapter_name": "பழைமை",
+      "release_title": "திருக்குறள் - பழைமை 2026",
+      "href": "https://studio.youtube.com/release/b_9GQD0NiqaQ1/overview",
+      "rowText": "திருக்குறள் - பழைமை 2026 | Guru Kula Desam | Sep 27, 2026 | 2 | No"
+    },
+    "77": {
+      "chapter_num": 77,
+      "chapter_name": "படைமாட்சி",
+      "release_title": "திருக்குறள் - படைமாட்சி 2026",
+      "href": "https://studio.youtube.com/release/b_Lu222w0y55o/overview",
+      "rowText": "திருக்குறள் - படைமாட்சி 2026 | Guru Kula Desam | Sep 26, 2026 | 2 | No"
+    },
+    "75": {
+      "chapter_num": 75,
+      "chapter_name": "அரண்",
+      "release_title": "திருக்குறள் - அரண் 2026",
+      "href": "https://studio.youtube.com/release/b_oVYbz8uJbni/overview",
+      "rowText": "திருக்குறள் - அரண் 2026 | Guru Kula Desam | Sep 25, 2026 | 2 | No"
+    },
+    "74": {
+      "chapter_num": 74,
+      "chapter_name": "நாடு",
+      "release_title": "திருக்குறள் - நாடு 2026",
+      "href": "https://studio.youtube.com/release/b_Pv6LlnnyZI2/overview",
+      "rowText": "திருக்குறள் - நாடு 2026 | Guru Kula Desam | Sep 24, 2026 | 2 | No"
+    },
+    "72": {
+      "chapter_num": 72,
+      "chapter_name": "அவையறிதல்",
+      "release_title": "திருக்குறள் - அவையறிதல் 2026",
+      "href": "https://studio.youtube.com/release/b_6LIc8FbN6LH/overview",
+      "rowText": "திருக்குறள் - அவையறிதல் 2026 | Guru Kula Desam | Sep 24, 2026 | 2 | No"
+    },
+    "110": {
+      "chapter_num": 110,
+      "chapter_name": "குறிப்பறிதல்",
+      "release_title": "திருக்குறள் - குறிப்பறிதல் 2026",
+      "href": "https://studio.youtube.com/release/b_xLpgeAy2Dfi/overview",
+      "rowText": "திருக்குறள் - குறிப்பறிதல் 2026 | Guru Kula Desam | Sep 23, 2026 | 3 | No"
+    },
+    "68": {
+      "chapter_num": 68,
+      "chapter_name": "வினைசெயல்வகை",
+      "release_title": "திருக்குறள் - வினைசெயல்வகை 2026",
+      "href": "https://studio.youtube.com/release/b_OW2VuBoucBN/overview",
+      "rowText": "திருக்குறள் - வினைசெயல்வகை 2026 | Guru Kula Desam | Sep 23, 2026 | 2 | No"
+    },
+    "70": {
+      "chapter_num": 70,
+      "chapter_name": "மன்னரைச் சேர்ந்தொழுதல்",
+      "release_title": "திருக்குறள் - மன்னரைச் சேர்ந்தொழுதல் 2026",
+      "href": "https://studio.youtube.com/release/b_LxmIBMaL4B6/overview",
+      "rowText": "திருக்குறள் - மன்னரைச் சேர்ந்தொழுதல் 2026 | Guru Kula Desam | Sep 23, 2026 | 2 | No"
+    },
+    "69": {
+      "chapter_num": 69,
+      "chapter_name": "தூது",
+      "release_title": "திருக்குறள் - தூது 2026",
+      "href": "https://studio.youtube.com/release/b_I2EV6yKYGZA/overview",
+      "rowText": "திருக்குறள் - தூது 2026 | Guru Kula Desam | Sep 23, 2026 | 2 | No"
+    },
+    "66": {
+      "chapter_num": 66,
+      "chapter_name": "வினைத்தூய்மை",
+      "release_title": "திருக்குறள் - வினைத்தூய்மை 2026",
+      "href": "https://studio.youtube.com/release/b_kPrRakRNeDt/overview",
+      "rowText": "திருக்குறள் - வினைத்தூய்மை 2026 | Guru Kula Desam | Sep 22, 2026 | 3 | No"
+    },
+    "67": {
+      "chapter_num": 67,
+      "chapter_name": "வினைத்திட்பம்",
+      "release_title": "திருக்குறள் - வினைத்திட்பம் 2026",
+      "href": "https://studio.youtube.com/release/b_anEZx2UIDSJ/overview",
+      "rowText": "திருக்குறள் - வினைத்திட்பம் 2026 | Guru Kula Desam | Sep 22, 2026 | 2 | No"
+    },
+    "64": {
+      "chapter_num": 64,
+      "chapter_name": "அமைச்சு",
+      "release_title": "திருக்குறள் - அமைச்சு 2026",
+      "href": "https://studio.youtube.com/release/b_RqPaV5wigoy/overview",
+      "rowText": "திருக்குறள் - அமைச்சு 2026 | Guru Kula Desam | Sep 22, 2026 | 2 | No"
+    },
+    "65": {
+      "chapter_num": 65,
+      "chapter_name": "சொல்வன்மை",
+      "release_title": "திருக்குறள் - சொல்வன்மை 2026",
+      "href": "https://studio.youtube.com/release/b_CwQuEybQDsU/overview",
+      "rowText": "திருக்குறள் - சொல்வன்மை 2026 | Guru Kula Desam | Sep 22, 2026 | 2 | No"
+    },
+    "63": {
+      "chapter_num": 63,
+      "chapter_name": "இடுக்கண் அழியாமை",
+      "release_title": "திருக்குறள் - இடுக்கண் அழியாமை 2026",
+      "href": "https://studio.youtube.com/release/b_9E2PRU8hwLy/overview",
+      "rowText": "திருக்குறள் - இடுக்கண் அழியாமை 2026 | Guru Kula Desam | Sep 22, 2026 | 2 | No"
+    },
+    "58": {
+      "chapter_num": 58,
+      "chapter_name": "கண்ணோட்டம்",
+      "release_title": "திருக்குறள் - கண்ணோட்டம் 2026",
+      "href": "https://studio.youtube.com/release/b_osjz2THTz3S/overview",
+      "rowText": "திருக்குறள் - கண்ணோட்டம் 2026 | Guru Kula Desam | Sep 21, 2026 | 3 | No"
+    },
+    "62": {
+      "chapter_num": 62,
+      "chapter_name": "ஆள்வினையுடைமை",
+      "release_title": "திருக்குறள் - ஆள்வினையுடைமை 2026",
+      "href": "https://studio.youtube.com/release/b_iEei5uRidFk/overview",
+      "rowText": "திருக்குறள் - ஆள்வினையுடைமை 2026 | Guru Kula Desam | Sep 21, 2026 | 2 | No"
+    },
+    "57": {
+      "chapter_num": 57,
+      "chapter_name": "வெருவந்த செய்யாமை",
+      "release_title": "திருக்குறள் - வெருவந்த செய்யாமை 2026",
+      "href": "https://studio.youtube.com/release/b_Twe4Q2yisP8/overview",
+      "rowText": "திருக்குறள் - வெருவந்த செய்யாமை 2026 | Guru Kula Desam | Sep 21, 2026 | 2 | No"
+    },
+    "61": {
+      "chapter_num": 61,
+      "chapter_name": "மடியின்மை",
+      "release_title": "திருக்குறள் - மடியின்மை 2026",
+      "href": "https://studio.youtube.com/release/b_G0Xalnj58Rz/overview",
+      "rowText": "திருக்குறள் - மடியின்மை 2026 | Guru Kula Desam | Sep 21, 2026 | 2 | No"
+    },
+    "60": {
+      "chapter_num": 60,
+      "chapter_name": "ஊக்கமுடைமை",
+      "release_title": "திருக்குறள் - ஊக்கமுடைமை 2026",
+      "href": "https://studio.youtube.com/release/b_9JRhECzdGpI/overview",
+      "rowText": "திருக்குறள் - ஊக்கமுடைமை 2026 | Guru Kula Desam | Sep 21, 2026 | 2 | No"
+    },
+    "59": {
+      "chapter_num": 59,
+      "chapter_name": "ஒற்றாடல்",
+      "release_title": "திருக்குறள் - ஒற்றாடல் 2026",
+      "href": "https://studio.youtube.com/release/b_2hFuCpyo6d8/overview",
+      "rowText": "திருக்குறள் - ஒற்றாடல் 2026 | Guru Kula Desam | Sep 21, 2026 | 2 | Yes"
+    },
+    "52": {
+      "chapter_num": 52,
+      "chapter_name": "தெரிந்து வினையாடல்",
+      "release_title": "திருக்குறள் - தெரிந்து வினையாடல் 2026",
+      "href": "https://studio.youtube.com/release/b_zzaV7buw7yJ/overview",
+      "rowText": "திருக்குறள் - தெரிந்து வினையாடல் 2026 | Guru Kula Desam | Sep 20, 2026 | 2 | No"
+    },
+    "54": {
+      "chapter_num": 54,
+      "chapter_name": "பொச்சாவாமை",
+      "release_title": "திருக்குறள் - பொச்சாவாமை 2026",
+      "href": "https://studio.youtube.com/release/b_uqR2fBUwG6V/overview",
+      "rowText": "திருக்குறள் - பொச்சாவாமை 2026 | Guru Kula Desam | Sep 20, 2026 | 2 | No"
+    },
+    "53": {
+      "chapter_num": 53,
+      "chapter_name": "சுற்றந்தழால்",
+      "release_title": "திருக்குறள் - சுற்றந்தழால் 2026",
+      "href": "https://studio.youtube.com/release/b_P0V9HLSp5Nz/overview",
+      "rowText": "திருக்குறள் - சுற்றந்தழால் 2026 | Guru Kula Desam | Sep 20, 2026 | 2 | No"
+    },
+    "56": {
+      "chapter_num": 56,
+      "chapter_name": "கொடுங்கோன்மை",
+      "release_title": "திருக்குறள் - கொடுங்கோன்மை 2026",
+      "href": "https://studio.youtube.com/release/b_OiwLeACc5DJ/overview",
+      "rowText": "திருக்குறள் - கொடுங்கோன்மை 2026 | Guru Kula Desam | Sep 20, 2026 | 2 | No"
+    },
+    "55": {
+      "chapter_num": 55,
+      "chapter_name": "செங்கோன்மை",
+      "release_title": "திருக்குறள் - செங்கோன்மை 2026",
+      "href": "https://studio.youtube.com/release/b_GPfZz5xtcZr/overview",
+      "rowText": "திருக்குறள் - செங்கோன்மை 2026 | Guru Kula Desam | Sep 20, 2026 | 2 | No"
+    },
+    "51": {
+      "chapter_num": 51,
+      "chapter_name": "தெரிந்து தெளிதல்",
+      "release_title": "திருக்குறள் - தெரிந்து தெளிதல் 2026",
+      "href": "https://studio.youtube.com/release/b_EyNBccTt73i/overview",
+      "rowText": "திருக்குறள் - தெரிந்து தெளிதல் 2026 | Guru Kula Desam | Sep 20, 2026 | 2 | No"
+    },
+    "48": {
+      "chapter_num": 48,
+      "chapter_name": "வலியறிதல்",
+      "release_title": "திருக்குறள் - வலியறிதல் 2026",
+      "href": "https://studio.youtube.com/release/b_gMYXGXaIm2m/overview",
+      "rowText": "திருக்குறள் - வலியறிதல் 2026 | Guru Kula Desam | Sep 19, 2026 | 2 | No"
+    },
+    "47": {
+      "chapter_num": 47,
+      "chapter_name": "தெரிந்து செயல்வகை",
+      "release_title": "திருக்குறள் - தெரிந்து செயல்வகை 2026",
+      "href": "https://studio.youtube.com/release/b_Z1Mdp3o9tu2/overview",
+      "rowText": "திருக்குறள் - தெரிந்து செயல்வகை 2026 | Guru Kula Desam | Sep 19, 2026 | 2 | Yes"
+    },
+    "49": {
+      "chapter_num": 49,
+      "chapter_name": "காலமறிதல்",
+      "release_title": "திருக்குறள் - காலமறிதல் 2026",
+      "href": "https://studio.youtube.com/release/b_YHTqFEeTSPv/overview",
+      "rowText": "திருக்குறள் - காலமறிதல் 2026 | Guru Kula Desam | Sep 19, 2026 | 2 | No"
+    },
+    "50": {
+      "chapter_num": 50,
+      "chapter_name": "இடனறிதல்",
+      "release_title": "திருக்குறள் - இடனறிதல் 2026",
+      "href": "https://studio.youtube.com/release/b_EY9A4mgqaKg/overview",
+      "rowText": "திருக்குறள் - இடனறிதல் 2026 | Guru Kula Desam | Sep 19, 2026 | 2 | Yes"
+    },
+    "46": {
+      "chapter_num": 46,
+      "chapter_name": "சிற்றினம் சேராமை",
+      "release_title": "திருக்குறள் - சிற்றினம் சேராமை 2026",
+      "href": "https://studio.youtube.com/release/b_OpxepLQ00VW/overview",
+      "rowText": "திருக்குறள் - சிற்றினம் சேராமை 2026 | Guru Kula Desam | Sep 18, 2026 | 2 | No"
+    },
+    "43": {
+      "chapter_num": 43,
+      "chapter_name": "அறிவுடைமை",
+      "release_title": "திருக்குறள் - அறிவுடைமை 2026",
+      "href": "https://studio.youtube.com/release/b_HCIV63e8lLK/overview",
+      "rowText": "திருக்குறள் - அறிவுடைமை 2026 | Guru Kula Desam | Sep 18, 2026 | 3 | No"
+    },
+    "45": {
+      "chapter_num": 45,
+      "chapter_name": "பெரியாரைத் துணைக்கோடல்",
+      "release_title": "திருக்குறள் - பெரியாரைத் துணைக்கோடல் 2026",
+      "href": "https://studio.youtube.com/release/b_FTC300B9RI8/overview",
+      "rowText": "திருக்குறள் - பெரியாரைத் துணைக்கோடல் 2026 | Guru Kula Desam | Sep 18, 2026 | 2 | No"
+    },
+    "42": {
+      "chapter_num": 42,
+      "chapter_name": "கேள்வி",
+      "release_title": "திருக்குறள் - கேள்வி 2026",
+      "href": "https://studio.youtube.com/release/b_vZtDIdxNDbU/overview",
+      "rowText": "திருக்குறள் - கேள்வி 2026 | Guru Kula Desam | Sep 17, 2026 | 2 | No"
+    },
+    "41": {
+      "chapter_num": 41,
+      "chapter_name": "கல்லாமை",
+      "release_title": "திருக்குறள் - கல்லாமை",
+      "href": "https://studio.youtube.com/release/b_rweOBOsRqdX/overview",
+      "rowText": "திருக்குறள் - கல்லாமை | Guru Kula Desam | Sep 16, 2026 | 1 | No"
+    },
+    "35": {
+      "chapter_num": 35,
+      "chapter_name": "துறவு",
+      "release_title": "திருக்குறள் - துறவு 2026",
+      "href": "https://studio.youtube.com/release/b_kpwHh0M8j46/overview",
+      "rowText": "திருக்குறள் - துறவு 2026 | Guru Kula Desam | Sep 15, 2026 | 4 | Yes"
+    },
+    "34": {
+      "chapter_num": 34,
+      "chapter_name": "நிலையாமை",
+      "release_title": "திருக்குறள் - நிலையாமை 2026",
+      "href": "https://studio.youtube.com/release/b_F8EPU61YxDF/overview",
+      "rowText": "திருக்குறள் - நிலையாமை 2026 | Guru Kula Desam | Sep 15, 2026 | 1 | No"
+    },
+    "33": {
+      "chapter_num": 33,
+      "chapter_name": "கொல்லாமை",
+      "release_title": "திருக்குறள் - கொல்லாமை",
+      "href": "https://studio.youtube.com/release/b_pvInjMcA5Sx/overview",
+      "rowText": "திருக்குறள் - கொல்லாமை | Guru Kula Desam | Sep 14, 2026 | 1 | No"
+    },
+    "31": {
+      "chapter_num": 31,
+      "chapter_name": "வெகுளாமை",
+      "release_title": "திருக்குறள் - வெகுளாமை 2026",
+      "href": "https://studio.youtube.com/release/b_BMgDfiCh6p0/overview",
+      "rowText": "திருக்குறள் - வெகுளாமை 2026 | Guru Kula Desam | Sep 14, 2026 | 1 | No"
+    },
+    "29": {
+      "chapter_num": 29,
+      "chapter_name": "கள்ளாமை",
+      "release_title": "திருக்குறள் - கள்ளாமை",
+      "href": "https://studio.youtube.com/release/b_dLUuG8UBq26/overview",
+      "rowText": "திருக்குறள் - கள்ளாமை | Guru Kula Desam | Sep 13, 2026 | 2 | No"
+    },
+    "27": {
+      "chapter_num": 27,
+      "chapter_name": "தவம்",
+      "release_title": "திருக்குறள் - தவம்",
+      "href": "https://studio.youtube.com/release/b_aLxjhgggtsW/overview",
+      "rowText": "திருக்குறள் - தவம் | Guru Kula Desam | Sep 13, 2026 | 1 | No"
+    },
+    "28": {
+      "chapter_num": 28,
+      "chapter_name": "கூடா ஒழுக்கம்",
+      "release_title": "திருக்குறள் - கூடா ஒழுக்கம்",
+      "href": "https://studio.youtube.com/release/b_IpFTE9Kv7Xn/overview",
+      "rowText": "திருக்குறள் - கூடா ஒழுக்கம் | Guru Kula Desam | Sep 13, 2026 | 2 | No"
+    },
+    "26": {
+      "chapter_num": 26,
+      "chapter_name": "புலால் உண்ணாமை",
+      "release_title": "திருக்குறள் - புலால் உண்ணாமை",
+      "href": "https://studio.youtube.com/release/b_D2bXRFuBvH4/overview",
+      "rowText": "திருக்குறள் - புலால் உண்ணாமை | Guru Kula Desam | Sep 13, 2026 | 1 | No"
+    },
+    "30": {
+      "chapter_num": 30,
+      "chapter_name": "வாய்மை",
+      "release_title": "திருக்குறள் - வாய்மை",
+      "href": "https://studio.youtube.com/release/b_3WlmwF6o5RL/overview",
+      "rowText": "திருக்குறள் - வாய்மை | Guru Kula Desam | Sep 13, 2026 | 2 | No"
+    },
+    "40": {
+      "chapter_num": 40,
+      "chapter_name": "கல்வி",
+      "release_title": "திருக்குறள் - கல்வி",
+      "href": "https://studio.youtube.com/release/b_Dif35NO3T3j/overview",
+      "rowText": "திருக்குறள் - கல்வி | Guru Kula Desam | Sep 12, 2026 | 1 | No"
+    },
+    "1": {
+      "chapter_num": 1,
+      "chapter_name": "கடவுள் வாழ்த்து",
+      "release_title": "திருக்குறள் - கடவுள் வாழ்த்து",
+      "href": "https://studio.youtube.com/release/b_rwvpGNjXWS2/overview",
+      "rowText": "திருக்குறள் - கடவுள் வாழ்த்து | Guru Kula Desam | Sep 11, 2026 | 1 | No"
+    },
+    "36": {
+      "chapter_num": 36,
+      "chapter_name": "மெய்யுணர்தல்",
+      "release_title": "திருக்குறள் - மெய்யுணர்தல்",
+      "href": "https://studio.youtube.com/release/b_pEllL5Zo7B6/overview",
+      "rowText": "திருக்குறள் - மெய்யுணர்தல் | Guru Kula Desam | Sep 11, 2026 | 1 | No"
+    },
+    "38": {
+      "chapter_num": 38,
+      "chapter_name": "ஊழ்",
+      "release_title": "திருக்குறள் - ஊழ் வினை",
+      "href": "https://studio.youtube.com/release/b_hijpn3FWfPc/overview",
+      "rowText": "திருக்குறள் - ஊழ் வினை | Guru Kula Desam | Sep 11, 2026 | 1 | No"
+    },
+    "25": {
+      "chapter_num": 25,
+      "chapter_name": "அருளுடைமை",
+      "release_title": "திருக்குறள் - அருளுடைமை",
+      "href": "https://studio.youtube.com/release/b_HUqByxxm0gX/overview",
+      "rowText": "திருக்குறள் - அருளுடைமை | Guru Kula Desam | Sep 11, 2026 | 1 | No"
+    },
+    "8": {
+      "chapter_num": 8,
+      "chapter_name": "அன்புடைமை",
+      "release_title": "திருக்குறள் அன்புடைமை",
+      "href": "https://studio.youtube.com/release/b_RfEzqAiR3Le/overview",
+      "rowText": "திருக்குறள் அன்புடைமை | Guru Kula Desam | Sep 8, 2026 | 1 | No"
+    },
+    "5": {
+      "chapter_num": 5,
+      "chapter_name": "இல்வாழ்க்கை",
+      "release_title": "திருக்குறள் இல்வாழ்க்கை",
+      "href": "https://studio.youtube.com/release/b_MZLic710SLe/overview",
+      "rowText": "திருக்குறள் இல்வாழ்க்கை | Guru Kula Desam | Sep 8, 2026 | 1 | No"
+    }
+  },
+  "unmatched_kural": [
+    {
+      "title": "திருக்குறள் - வரைவின்மகளிர் 2026",
+      "clean": "வரைவின்மகளிர்",
+      "href": "https://studio.youtube.com/release/b_w7hmDMsqImd/overview",
+      "rowText": "திருக்குறள் - வரைவின்மகளிர் 2026 | Guru Kula Desam | Sep 29, 2026 | 2 | No"
+    },
+    {
+      "title": "திருக்குறள் - பெண்வழிச்சேறல் 2026",
+      "clean": "பெண்வழிச்சேறல்",
+      "href": "https://studio.youtube.com/release/b_j9kvf8navys/overview",
+      "rowText": "திருக்குறள் - பெண்வழிச்சேறல் 2026 | Guru Kula Desam | Sep 29, 2026 | 2 | No"
+    },
+    {
+      "title": "திருக்குறள் - பொருள்செயல்வகை 2026",
+      "clean": "பொருள்செயல்வகை",
+      "href": "https://studio.youtube.com/release/b_3CHgs6go2LH/overview",
+      "rowText": "திருக்குறள் - பொருள்செயல்வகை 2026 | Guru Kula Desam | Sep 26, 2026 | 2 | No"
+    },
+    {
+      "title": "திருக்குறள் - அவை அஞ்சாமை 2026",
+      "clean": "அவை அஞ்சாமை",
+      "href": "https://studio.youtube.com/release/b_vYv8o0v7JBw/overview",
+      "rowText": "திருக்குறள் - அவை அஞ்சாமை 2026 | Guru Kula Desam | Sep 24, 2026 | 3 | No"
+    },
+    {
+      "title": "திருக்குறள் - குற்றம் கடிதல் 2026",
+      "clean": "குற்றம் கடிதல்",
+      "href": "https://studio.youtube.com/release/b_UN3QMVfOiGJ/overview",
+      "rowText": "திருக்குறள் - குற்றம் கடிதல் 2026 | Guru Kula Desam | Sep 18, 2026 | 2 | No"
+    },
+    {
+      "title": "திருக்குறள் - இறை மாட்சி",
+      "clean": "இறை மாட்சி",
+      "href": "https://studio.youtube.com/release/b_AyeXpDWA7Qy/overview",
+      "rowText": "திருக்குறள் - இறை மாட்சி | Guru Kula Desam | Sep 12, 2026 | 1 | No"
+    },
+    {
+      "title": "திருக்குறள் - அவா அறுத்தல்",
+      "clean": "அவா அறுத்தல்",
+      "href": "https://studio.youtube.com/release/b_2Oz812wjpG6/overview",
+      "rowText": "திருக்குறள் - அவா அறுத்தல் | Guru Kula Desam | Sep 11, 2026 | 1 | No"
+    }
+  ],
+  "other_releases": [
+    "முருகர் வார வழிபாடு 2026",
+    "கௌமாரம் ஸ்துதி 2026",
+    "ஸ்கந்த புராண மந்திரம்",
+    "திருப்புகழ் - கண நாதா ஓம்",
+    "அருட்பெருஞ்சோதி அகவல் சாரம்",
+    "கிருஷ்ண மந்திரம்",
+    "வேல் விருத்தம் 2026 (Part 1)",
+    "திருவாசகம் - நடராஜர் பத்து",
+    "நமச்சிவாய வாழ்க! (சிவ புராணம்) 2027",
+    "நமச்சிவாய வாழ்க! (சிவ புராணம்)",
+    "திருப்புகழ் 566 (இரத்னகிரி)",
+    "திருப்புகழ் 712 (திருப்போரூர்)",
+    "திருவோத்தூர் பதிகம் 2027",
+    "திருவருட்பா - ஆறாம் திருமுறை - சிவ பதி விளக்கம்",
+    "திருவருட்பா - ஆறாம் திருமுறை - பதி விளக்கம்",
+    "ஈஸ்வர நாமவளி சரணம்!",
+    "திருவாசகம் - தென் நாடுடைய சிவனே போற்றி! (Female)",
+    "மகா கணேச பஞ்சரத்னம்",
+    "திருவருட்பா - ஆறாம் திருமுறை - பரசிவ வணக்கம்",
+    "திருவருட்பா - நான்காம் திருமுறை - அன்பு மாலை - 2026",
+    "திருவருட்பா - இரண்டாம் திருமுறை - திருவடிச் சரண்புகல்",
+    "பெரியாழ்வார் திருமொழி தாலாட்டு 2026",
+    "திருவருட்பா - இரண்டாம் திருமுறை - தியாக வண்ணப் பதிகம்",
+    "திருவருட்பா - இரண்டாம் திருமுறை - ஆடலமுதப் பத்து",
+    "திருவருட்பா - இரண்டாம் திருமுறை - திருச்சாதனத் தெய்வத் திறம்",
+    "அன்னை ரேணுகாம்பாள் துதி",
+    "திரு சனி பகவான் துதி 2026",
+    "திருவருட்பா - இரண்டாம் திருமுறை - திருப்புகழ் விலாசம் 2026",
+    "திரு சனி பகவான் பதிகம் 2026",
+    "திருவருட்பா - இரண்டாம் திருமுறை - நெஞ்சொடு நேர்தல்",
+    "திருவருட்பா - இரண்டாம் திருமுறை - எழுத்தறியும் பெருமான் மாலை!",
+    "திருவருட்பா - இரண்டாம் திருமுறை - அருள்விடை வேட்கை",
+    "திருவருட்பா - இரண்டாம் திருமுறை - அறிவரும் பெருமை",
+    "திருவசிய மந்திரம் 2026",
+    "திருவருட்பா - திருவருள் வேட்கை",
+    "திருவருட்பா - இரண்டாம் திருமுறை - அபராத விண்ணப்பம் 2026",
+    "create album cover for திருவருட்பா - இரண்டாம் திருமுறை - கொடைமடப் புகழ்ச்சி",
+    "திருவருட்பா - இரண்டாம் திருமுறை - காட்சிப் பெருமிதம்",
+    "திருவருட்பா - இரண்டாம் திருமுறை - அபராதத்து ஆற்றாமை",
+    "திருவருட்பா - அருளியல் வினாவல் 2026",
+    "திருவருட்பா - இரண்டாம் திருமுறை - திருமுல்லைவாயில்",
+    "திருவருட்பா - இரண்டாம் திருமுறை (II)",
+    "முதல் திருமுறை - திருவோத்தூர் பதிகம் (III)",
+    "திருவருட்பா - இரண்டாம் திருமுறை - சிவபுண்ணியத் தேற்றம் 2026",
+    "திருவருட்பா - இரண்டாம் திருமுறை - முத்தி உபாயம் 2026",
+    "திருவருட்பா - இரண்டாம் திருமுறை - திருவருள் வழக்க விளக்கம்",
+    "தமிழ் இறை விருந்து - 2026",
+    "திருவருட்பா - நற்றுணை விளக்கம் 2026",
+    "திருவருட்பா - நமச்சிவாய ஸங்கீர்த்தனம் 2026",
+    "திருவருட்பா - இங்கித மாலை 2026",
+    "திருவருட்பா - இரண்டாம் திருமுறை",
+    "திருவருட்பா - திருவருண் முறையீடு",
+    "திருவருட்பா - வடிவுடை மாணிக்கமாலை !",
+    "திருவருட்பா - முதல் திருமுறை III",
+    "திருவருட்பா - முதல் திருமுறை - II",
+    "குரு பகவான் துதி 2026",
+    "கடவுளைக் கடலுள் எழு!",
+    "அன்னம் பாலிக்கும் தில்லை!",
+    "முதல் தேவாரம் - பகுதி 1",
+    "திருவோத்தூர் பதிகம் 2026 (2)",
+    "திருவாசகம் - குழைத்த பத்து - 2026 (II)",
+    "திருவாசகம் | குழைத்த பத்து | 2026",
+    "முதல் தேவாரம் 2026",
+    "திருஅருட்பா (திருவடிப் புகழ்ச்சி)",
+    "ஞானத் திருவடி 2026",
+    "தமிழ் பெண்ணின் பெருமை (Mixed Album) 2026",
+    "அன்பே சரணம்! அருளே சரணம்!",
+    "Gayathri Mantra (காயத்ரி மந்திரம்) 2026",
+    "108 Saraswathi Potri (108 சரஸ்வதி போற்றி)",
+    "Lakshmi 108 Potri (லக்ஷ்மி 108 போற்றி)",
+    "அருட்பெருஞ்சோதி அகவல்",
+    "Tamil Devotional Songs VI",
+    "தென்னாடுடைய சிவனே போற்றி! 2026",
+    "Hare Rama Hare Krishna! 2026",
+    "Tamil Devotional Songs III",
+    "Tamil Devotional Songs V",
+    "திருமந்திரம் (முதல் தந்திரம்) 2026",
+    "திருமந்திரம் (முதல் தந்திரம்)",
+    "Poovar Senni Mannan (Thiruvasagam) | Yaththirai Paththu",
+    "Tamil Devotional Songs 2",
+    "Thiurvasagam Songs, Pt. 2",
+    "Tamil Devotional Songs 4",
+    "Thiruvasagam 2026 (திருவாசகம்)",
+    "தமிழ் இறைத் துதிகள் (பகுதி 1)",
+    "போற்றி திரு அகவல் 2026 Potri Thiru Agaval (Thiruvasagam)",
+    "கந்தர் சஷ்டி துதி 2026 (Kandhar Shashti Thuthi)",
+    "Siva Puranam 2026 (II) Thiruvasagam",
+    "அம்மன் பாடல்கள் (Tamil Amman Devotional Songs)",
+    "சிவ புராணம் 2026 | Shiva Puranam (Thiruvasagam)",
+    "ArutPerunJothi 2026 (அருட்பெருஞ்சோதி அகவல் 1)",
+    "Kandha Sashti Kavasam II (கந்த சஷ்டி கவசம்)",
+    "Kandha Sashti Kavasam (கந்த சஷ்டி கவசம்)",
+    "Tamil Divine Patriotism (தமிழ் தேசப் பற்று பாடல்கள்)",
+    "Guru Kula Desam (Tamil Devotional I)"
+  ]
+}

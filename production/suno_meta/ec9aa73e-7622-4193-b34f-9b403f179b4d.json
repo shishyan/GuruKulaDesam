@@ -1,0 +1,128 @@
+{
+  "status": "complete",
+  "title": "திருக்குறள் - அதிகாரம் 1 - கடவுள் வாழ்த்து! ",
+  "play_count": 1,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "ec9aa73e-7622-4193-b34f-9b403f179b4d",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/ec9aa73e-7622-4193-b34f-9b403f179b4d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_ec9aa73e-7622-4193-b34f-9b403f179b4d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_ec9aa73e-7622-4193-b34f-9b403f179b4d.jpeg",
+  "major_model_version": "",
+  "model_name": "chirp",
+  "metadata": {
+    "tags": "A fusion of Indian Carnatic classical music and contemporary cinematic pop. The track features a prominent, resonant acoustic guitar playing rhythmic arpeggios and percussive slaps, accompanied by a lush string section providing cinematic swells. The lead male vocal is a rich, expressive tenor utilizing traditional Indian gamakas (melodic oscillations) and intricate melismatic phrasing. The song is set in a moderate tempo with a 4/4 time signature, likely in a major key with modal influences characteristic of South Indian ragas. Production is clean and spacious, with a light reverb on the vocals and a crisp, forward-mixed acoustic guitar. The structure follows a traditional verse-chorus format, building in intensity with the addition of orchestral layers and subtle ambient textures.",
+    "prompt": "[Intro]\n(Aaaah...)\n\n[Verse 1]\nAkara mudhala ezhuthellam\nAkara mudhala ezhuthellam\nAkara mudhala ezhuthellam\nAadhi bhagavan mudhatre ulagu\n\n[Chorus]\nAkara mudhala ezhuthellam\nAkara mudhala ezhuthellam\nAadhi bhagavan mudhatre ulagu\nAadhi bhagavan mudhatre ulagu\n\n[Verse 2]\nKatradhanaal aaya payanenkol\nKatradhanaal aaya payanenkol\nValarivan nartral thozhaar enin\nValarivan nartral thozhaar enin\nKatradhanaal aaya payanenkol\n\n[Chorus]\nMalar misai yeginan maanadi serndhaar\nNilamisai needu vaazhvaar\nMalar misai yeginan maanadi serndhaar\nNilamisai needu vaazhvaar\n\n[Instrumental Bridge]\n\n[Chorus]\nMalar misai yeginan maanadi serndhaar\nNilamisai needu vaazhvaar\nMalar misai yeginan maanadi serndhaar\nNilamisai needu vaazhvaar\n\n[Verse 3]\nPiravi perunkadal neendhuvar neendhaar\nIraivanadi seraadha\nPiravi perunkadal neendhuvar neendhaar\nIraivanadi seraadha\n\n[Outro]\nMalar misai yeginan maanadi serndhaar\nNilamisai needu vaazhvaar\nMalar misai yeginan maanadi serndhaar\nNilamisai needu vaazhvaar\nAkara mudhala ezhuthellam",
+    "type": "upload",
+    "duration": 238.5274375,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "UPLOAD",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "A3A3A3"
+        },
+        "dark": {
+          "text_color": "A3A3A3"
+        }
+      }
+    ]
+  },
+  "is_liked": false,
+  "user_id": "7097190d-c572-4482-9687-685d29c62037",
+  "display_name": "GuruKulaDesam",
+  "handle": "gurukuladesam",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/a745578d.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-01-12T21:35:15.495Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Carnatic fusion, cinematic pop, Indian classical male vocals",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

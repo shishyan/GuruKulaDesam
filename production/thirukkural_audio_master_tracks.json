@@ -1,0 +1,2752 @@
+{
+  "total_chapters": 81,
+  "total_tracks": 155,
+  "chapters": {
+    "1": {
+      "chapter_num": 1,
+      "chapter_name": "கடவுள் வாழ்த்து",
+      "release_title": "திருக்குறள் - கடவுள் வாழ்த்து",
+      "release_id": "b_rwvpGNjXWS2",
+      "browse_id": "MPREb_rwvpGNjXWS2",
+      "tracks": [
+        {
+          "videoId": "SWAjAbur-TQ",
+          "title": "திருக்குறள் - கடவுள் வாழ்த்து",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "3": {
+      "chapter_num": 3,
+      "chapter_name": "நீத்தார் பெருமை",
+      "release_title": "திருக்குறள் - பெருமை 2026",
+      "release_id": "b_SnYPt7E3tTZ",
+      "browse_id": "MPREb_SnYPt7E3tTZ",
+      "tracks": [
+        {
+          "videoId": "QytZMNXP1FM",
+          "title": "பெருமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "-4sBMw-5PZU",
+          "title": "பெருமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "5": {
+      "chapter_num": 5,
+      "chapter_name": "இல்வாழ்க்கை",
+      "release_title": "திருக்குறள் இல்வாழ்க்கை",
+      "release_id": "b_MZLic710SLe",
+      "browse_id": "MPREb_MZLic710SLe",
+      "tracks": [
+        {
+          "videoId": "C05GEfkJZaY",
+          "title": "திருக்குறள் இல்வாழ்க்கை",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "8": {
+      "chapter_num": 8,
+      "chapter_name": "அன்புடைமை",
+      "release_title": "திருக்குறள் அன்புடைமை",
+      "release_id": "b_RfEzqAiR3Le",
+      "browse_id": "MPREb_RfEzqAiR3Le",
+      "tracks": [
+        {
+          "videoId": "jO2i4bcZ2ts",
+          "title": "திருக்குறள் அன்புடைமை",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "25": {
+      "chapter_num": 25,
+      "chapter_name": "அருளுடைமை",
+      "release_title": "திருக்குறள் - அருளுடைமை",
+      "release_id": "b_HUqByxxm0gX",
+      "browse_id": "MPREb_HUqByxxm0gX",
+      "tracks": [
+        {
+          "videoId": "MXK8vB3_fBE",
+          "title": "திருக்குறள் - அருளுடைமை",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "26": {
+      "chapter_num": 26,
+      "chapter_name": "புலால் உண்ணாமை",
+      "release_title": "திருக்குறள் - புலால் உண்ணாமை",
+      "release_id": "b_D2bXRFuBvH4",
+      "browse_id": "MPREb_D2bXRFuBvH4",
+      "tracks": [
+        {
+          "videoId": "h2q-ADrbBc4",
+          "title": "திருக்குறள் - புலால் உண்ணாமை",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "27": {
+      "chapter_num": 27,
+      "chapter_name": "தவம்",
+      "release_title": "திருக்குறள் - தவம்",
+      "release_id": "b_aLxjhgggtsW",
+      "browse_id": "MPREb_aLxjhgggtsW",
+      "tracks": [
+        {
+          "videoId": "sa5f7NcYuRQ",
+          "title": "திருக்குறள் - தவம்",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "28": {
+      "chapter_num": 28,
+      "chapter_name": "கூடா ஒழுக்கம்",
+      "release_title": "திருக்குறள் - கூடா ஒழுக்கம்",
+      "release_id": "b_IpFTE9Kv7Xn",
+      "browse_id": "MPREb_IpFTE9Kv7Xn",
+      "tracks": [
+        {
+          "videoId": "mvOSVEFhvDc",
+          "title": "கூடா ஒழுக்கம்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "wPT_1jgn2Ys",
+          "title": "கூடா ஒழுக்கம் (Symphony)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "29": {
+      "chapter_num": 29,
+      "chapter_name": "கள்ளாமை",
+      "release_title": "திருக்குறள் - கள்ளாமை",
+      "release_id": "b_dLUuG8UBq26",
+      "browse_id": "MPREb_dLUuG8UBq26",
+      "tracks": [
+        {
+          "videoId": "9EAskIS2xuc",
+          "title": "கள்ளாமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "tzAYLpH3TkI",
+          "title": "கள்ளாமை (Symphony)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "30": {
+      "chapter_num": 30,
+      "chapter_name": "வாய்மை",
+      "release_title": "திருக்குறள் - வாய்மை",
+      "release_id": "b_3WlmwF6o5RL",
+      "browse_id": "MPREb_3WlmwF6o5RL",
+      "tracks": [
+        {
+          "videoId": "BoOWFaOGczE",
+          "title": "வாய்மை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "djYooU1LmGk",
+          "title": "வாய்மை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "31": {
+      "chapter_num": 31,
+      "chapter_name": "வெகுளாமை",
+      "release_title": "திருக்குறள் - வெகுளாமை 2026",
+      "release_id": "b_BMgDfiCh6p0",
+      "browse_id": "MPREb_BMgDfiCh6p0",
+      "tracks": [
+        {
+          "videoId": "xcUlgFsrepU",
+          "title": "திருக்குறள் - வெகுளாமை 2026",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "33": {
+      "chapter_num": 33,
+      "chapter_name": "கொல்லாமை",
+      "release_title": "திருக்குறள் - கொல்லாமை",
+      "release_id": "b_pvInjMcA5Sx",
+      "browse_id": "MPREb_pvInjMcA5Sx",
+      "tracks": [
+        {
+          "videoId": "L6DWSjPqoH0",
+          "title": "திருக்குறள் - கொல்லாமை",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "34": {
+      "chapter_num": 34,
+      "chapter_name": "நிலையாமை",
+      "release_title": "திருக்குறள் - நிலையாமை 2026",
+      "release_id": "b_F8EPU61YxDF",
+      "browse_id": "MPREb_F8EPU61YxDF",
+      "tracks": [
+        {
+          "videoId": "JreH0hqB2po",
+          "title": "திருக்குறள் - நிலையாமை 2026",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "35": {
+      "chapter_num": 35,
+      "chapter_name": "துறவு",
+      "release_title": "திருக்குறள் - துறவு 2026",
+      "release_id": "b_kpwHh0M8j46",
+      "browse_id": "MPREb_kpwHh0M8j46",
+      "tracks": [
+        {
+          "videoId": "8AEEcskF-Jo",
+          "title": "துறவு",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "6MaQYObW8OQ",
+          "title": "துறவு (Female)",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "rq7PXPBI7SA",
+          "title": "துறவு (Symphony)",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "LjiR9PIRl8o",
+          "title": "துறவு (Rock)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "36": {
+      "chapter_num": 36,
+      "chapter_name": "மெய்யுணர்தல்",
+      "release_title": "திருக்குறள் - மெய்யுணர்தல்",
+      "release_id": "b_pEllL5Zo7B6",
+      "browse_id": "MPREb_pEllL5Zo7B6",
+      "tracks": [
+        {
+          "videoId": "9NIv50lV4-M",
+          "title": "திருக்குறள் - மெய்யுணர்தல்",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "37": {
+      "chapter_num": 37,
+      "chapter_name": "அவாவறுத்தல்",
+      "release_title": "திருக்குறள் - அவா அறுத்தல்",
+      "release_id": "b_2Oz812wjpG6",
+      "browse_id": "MPREb_2Oz812wjpG6",
+      "tracks": [
+        {
+          "videoId": "HezzLu_n6qE",
+          "title": "திருக்குறள் - அவா அறுத்தல்",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "38": {
+      "chapter_num": 38,
+      "chapter_name": "ஊழ்",
+      "release_title": "திருக்குறள் - ஊழ் வினை",
+      "release_id": "b_hijpn3FWfPc",
+      "browse_id": "MPREb_hijpn3FWfPc",
+      "tracks": [
+        {
+          "videoId": "dD_cXqU_XVQ",
+          "title": "திருக்குறள் - ஊழ் வினை",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "39": {
+      "chapter_num": 39,
+      "chapter_name": "இறைமாட்சி",
+      "release_title": "திருக்குறள் - இறை மாட்சி",
+      "release_id": "b_AyeXpDWA7Qy",
+      "browse_id": "MPREb_AyeXpDWA7Qy",
+      "tracks": [
+        {
+          "videoId": "9nD8x8gbjBg",
+          "title": "திருக்குறள் - இறை மாட்சி",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "40": {
+      "chapter_num": 40,
+      "chapter_name": "கல்வி",
+      "release_title": "திருக்குறள் - கல்வி",
+      "release_id": "b_Dif35NO3T3j",
+      "browse_id": "MPREb_Dif35NO3T3j",
+      "tracks": [
+        {
+          "videoId": "3FoioD6p6Mk",
+          "title": "திருக்குறள் -  கல்வி",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "41": {
+      "chapter_num": 41,
+      "chapter_name": "கல்லாமை",
+      "release_title": "திருக்குறள் - கல்லாமை",
+      "release_id": "b_rweOBOsRqdX",
+      "browse_id": "MPREb_rweOBOsRqdX",
+      "tracks": [
+        {
+          "videoId": "Gnu-TzZfe7A",
+          "title": "திருக்குறள் - கல்லாமை",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "42": {
+      "chapter_num": 42,
+      "chapter_name": "கேள்வி",
+      "release_title": "திருக்குறள் - கேள்வி 2026",
+      "release_id": "b_vZtDIdxNDbU",
+      "browse_id": "MPREb_vZtDIdxNDbU",
+      "tracks": [
+        {
+          "videoId": "9kHN9Dzrv7o",
+          "title": "கேள்விச் செல்வம்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "vbMywONB5Wc",
+          "title": "கேள்விச் செல்வம் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "43": {
+      "chapter_num": 43,
+      "chapter_name": "அறிவுடைமை",
+      "release_title": "திருக்குறள் - அறிவுடைமை 2026",
+      "release_id": "b_HCIV63e8lLK",
+      "browse_id": "MPREb_HCIV63e8lLK",
+      "tracks": [
+        {
+          "videoId": "_Q2t-TcmDT4",
+          "title": "அறிவுடைமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "bUepGv6PJQA",
+          "title": "அறிவுடைமை (Pop)",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "xVyPWHTMXHw",
+          "title": "அறிவுடைமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "44": {
+      "chapter_num": 44,
+      "chapter_name": "குற்றங்கடிதல்",
+      "release_title": "திருக்குறள் - குற்றம் கடிதல் 2026",
+      "release_id": "b_UN3QMVfOiGJ",
+      "browse_id": "MPREb_UN3QMVfOiGJ",
+      "tracks": [
+        {
+          "videoId": "B60TIM5LLvY",
+          "title": "குற்றங்கடிதல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "VVkl8bORJXg",
+          "title": "குற்றங்கடிதல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "45": {
+      "chapter_num": 45,
+      "chapter_name": "பெரியாரைத் துணைக்கோடல்",
+      "release_title": "திருக்குறள் - பெரியாரைத் துணைக்கோடல் 2026",
+      "release_id": "b_FTC300B9RI8",
+      "browse_id": "MPREb_FTC300B9RI8",
+      "tracks": [
+        {
+          "videoId": "aTFvlXMPBSE",
+          "title": "பெரியாரைத் துணைக்கோடல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "aZ830iKkqBs",
+          "title": "பெரியாரைத் துணைக்கோடல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "46": {
+      "chapter_num": 46,
+      "chapter_name": "சிற்றினம் சேராமை",
+      "release_title": "திருக்குறள் - சிற்றினம் சேராமை 2026",
+      "release_id": "b_OpxepLQ00VW",
+      "browse_id": "MPREb_OpxepLQ00VW",
+      "tracks": [
+        {
+          "videoId": "2U45AXlx7DA",
+          "title": "சிற்றினம் சேராமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "wylRNpaJNmY",
+          "title": "சிற்றினம் சேராமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "47": {
+      "chapter_num": 47,
+      "chapter_name": "தெரிந்து செயல்வகை",
+      "release_title": "திருக்குறள் - தெரிந்து செயல்வகை 2026",
+      "release_id": "b_Z1Mdp3o9tu2",
+      "browse_id": "MPREb_Z1Mdp3o9tu2",
+      "tracks": [
+        {
+          "videoId": "BfgGC7DsHMI",
+          "title": "தெரிந்து செயல்வகை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "mpgnALSm7wk",
+          "title": "தெரிந்து செயல்வகை (Female)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "48": {
+      "chapter_num": 48,
+      "chapter_name": "வலியறிதல்",
+      "release_title": "திருக்குறள் - வலியறிதல் 2026",
+      "release_id": "b_gMYXGXaIm2m",
+      "browse_id": "MPREb_gMYXGXaIm2m",
+      "tracks": [
+        {
+          "videoId": "Js6Vepbegr8",
+          "title": "வலியறிதல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "KLsXZa28uyE",
+          "title": "வலியறிதல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "49": {
+      "chapter_num": 49,
+      "chapter_name": "காலமறிதல்",
+      "release_title": "திருக்குறள் - காலமறிதல் 2026",
+      "release_id": "b_YHTqFEeTSPv",
+      "browse_id": "MPREb_YHTqFEeTSPv",
+      "tracks": [
+        {
+          "videoId": "DIDV-3cHhag",
+          "title": "காலமறிதல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "dVYI3ZgpDC8",
+          "title": "காலமறிதல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "50": {
+      "chapter_num": 50,
+      "chapter_name": "இடனறிதல்",
+      "release_title": "திருக்குறள் - இடனறிதல் 2026",
+      "release_id": "b_EY9A4mgqaKg",
+      "browse_id": "MPREb_EY9A4mgqaKg",
+      "tracks": [
+        {
+          "videoId": "817Wxel4F5s",
+          "title": "இடனறிதல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "oEQ3sx6ujQc",
+          "title": "இடனறிதல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "51": {
+      "chapter_num": 51,
+      "chapter_name": "தெரிந்து தெளிதல்",
+      "release_title": "திருக்குறள் - தெரிந்து தெளிதல் 2026",
+      "release_id": "b_EyNBccTt73i",
+      "browse_id": "MPREb_EyNBccTt73i",
+      "tracks": [
+        {
+          "videoId": "bH23l5vVgL8",
+          "title": "தெரிந்து தெளிதல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "tLt9J-X9WOE",
+          "title": "தெரிந்து தெளிதல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "52": {
+      "chapter_num": 52,
+      "chapter_name": "தெரிந்து வினையாடல்",
+      "release_title": "திருக்குறள் - தெரிந்து வினையாடல் 2026",
+      "release_id": "b_zzaV7buw7yJ",
+      "browse_id": "MPREb_zzaV7buw7yJ",
+      "tracks": [
+        {
+          "videoId": "g9ddfNl5ov0",
+          "title": "தெரிந்து வினையாடல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "F-aVgFOdKFo",
+          "title": "தெரிந்து வினையாடல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "53": {
+      "chapter_num": 53,
+      "chapter_name": "சுற்றந்தழால்",
+      "release_title": "திருக்குறள் - சுற்றந்தழால் 2026",
+      "release_id": "b_P0V9HLSp5Nz",
+      "browse_id": "MPREb_P0V9HLSp5Nz",
+      "tracks": [
+        {
+          "videoId": "Nb1nAcrGNeU",
+          "title": "சுற்றந்தழால்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "9-SvikTz2FU",
+          "title": "சுற்றந்தழால் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "54": {
+      "chapter_num": 54,
+      "chapter_name": "பொச்சாவாமை",
+      "release_title": "திருக்குறள் - பொச்சாவாமை 2026",
+      "release_id": "b_uqR2fBUwG6V",
+      "browse_id": "MPREb_uqR2fBUwG6V",
+      "tracks": [
+        {
+          "videoId": "O0hASl4BS2c",
+          "title": "பொச்சாவாமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "DhHGetUJlAI",
+          "title": "பொச்சாவாமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "55": {
+      "chapter_num": 55,
+      "chapter_name": "செங்கோன்மை",
+      "release_title": "திருக்குறள் - செங்கோன்மை 2026",
+      "release_id": "b_GPfZz5xtcZr",
+      "browse_id": "MPREb_GPfZz5xtcZr",
+      "tracks": [
+        {
+          "videoId": "lCBVB2Yj_7U",
+          "title": "செங்கோன்மை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "5coBrJy6a5M",
+          "title": "செங்கோன்மை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "56": {
+      "chapter_num": 56,
+      "chapter_name": "கொடுங்கோன்மை",
+      "release_title": "திருக்குறள் - கொடுங்கோன்மை 2026",
+      "release_id": "b_OiwLeACc5DJ",
+      "browse_id": "MPREb_OiwLeACc5DJ",
+      "tracks": [
+        {
+          "videoId": "wzdoeFDq0iQ",
+          "title": "கொடுங்கோன்மை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "01g0sJdaL2I",
+          "title": "கொடுங்கோன்மை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "57": {
+      "chapter_num": 57,
+      "chapter_name": "வெருவந்த செய்யாமை",
+      "release_title": "திருக்குறள் - வெருவந்த செய்யாமை 2026",
+      "release_id": "b_Twe4Q2yisP8",
+      "browse_id": "MPREb_Twe4Q2yisP8",
+      "tracks": [
+        {
+          "videoId": "hjcH8zbEleE",
+          "title": "வெருவந்த செய்யாமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "PmziMZrMHfE",
+          "title": "வெருவந்த செய்யாமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "58": {
+      "chapter_num": 58,
+      "chapter_name": "கண்ணோட்டம்",
+      "release_title": "திருக்குறள் - கண்ணோட்டம் 2026",
+      "release_id": "b_osjz2THTz3S",
+      "browse_id": "MPREb_osjz2THTz3S",
+      "tracks": [
+        {
+          "videoId": "mv7AezrLzoU",
+          "title": "கண்ணோட்டம்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "E7yfNOiwJmM",
+          "title": "கண்ணோட்டம் (Symphony)",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "Vj6wcfC3rPk",
+          "title": "கண்ணோட்டம் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "59": {
+      "chapter_num": 59,
+      "chapter_name": "ஒற்றாடல்",
+      "release_title": "திருக்குறள் - ஒற்றாடல் 2026",
+      "release_id": "b_2hFuCpyo6d8",
+      "browse_id": "MPREb_2hFuCpyo6d8",
+      "tracks": [
+        {
+          "videoId": "TQtjI3EepPQ",
+          "title": "ஒற்றாடல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "tj_5hsasdyU",
+          "title": "ஒற்றாடல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "60": {
+      "chapter_num": 60,
+      "chapter_name": "ஊக்கமுடைமை",
+      "release_title": "திருக்குறள் - ஊக்கமுடைமை 2026",
+      "release_id": "b_9JRhECzdGpI",
+      "browse_id": "MPREb_9JRhECzdGpI",
+      "tracks": [
+        {
+          "videoId": "XN5ENUbmSOE",
+          "title": "ஊக்கமுடைமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "FXMVQIidbJU",
+          "title": "ஊக்கமுடைமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "61": {
+      "chapter_num": 61,
+      "chapter_name": "மடியின்மை",
+      "release_title": "திருக்குறள் - மடியின்மை 2026",
+      "release_id": "b_G0Xalnj58Rz",
+      "browse_id": "MPREb_G0Xalnj58Rz",
+      "tracks": [
+        {
+          "videoId": "yFdF-MjQbHQ",
+          "title": "மடியின்மை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "Fh3HfGUObmg",
+          "title": "மடியின்மை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "62": {
+      "chapter_num": 62,
+      "chapter_name": "ஆள்வினையுடைமை",
+      "release_title": "திருக்குறள் - ஆள்வினையுடைமை 2026",
+      "release_id": "b_iEei5uRidFk",
+      "browse_id": "MPREb_iEei5uRidFk",
+      "tracks": [
+        {
+          "videoId": "zj4_pEqa_cs",
+          "title": "ஆள்வினையுடைமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "37qaN4sG53k",
+          "title": "ஆள்வினையுடைமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "63": {
+      "chapter_num": 63,
+      "chapter_name": "இடுக்கண் அழியாமை",
+      "release_title": "திருக்குறள் - இடுக்கண் அழியாமை 2026",
+      "release_id": "b_9E2PRU8hwLy",
+      "browse_id": "MPREb_9E2PRU8hwLy",
+      "tracks": [
+        {
+          "videoId": "daM5VkysZqg",
+          "title": "இடுக்கண் அழியாமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "QXWB2raWKXE",
+          "title": "இடுக்கண் அழியாமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "64": {
+      "chapter_num": 64,
+      "chapter_name": "அமைச்சு",
+      "release_title": "திருக்குறள் - அமைச்சு 2026",
+      "release_id": "b_RqPaV5wigoy",
+      "browse_id": "MPREb_RqPaV5wigoy",
+      "tracks": [
+        {
+          "videoId": "VENn3ip3XPA",
+          "title": "அமைச்சு",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "JvonvWQHKQY",
+          "title": "அமைச்சு (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "65": {
+      "chapter_num": 65,
+      "chapter_name": "சொல்வன்மை",
+      "release_title": "திருக்குறள் - சொல்வன்மை 2026",
+      "release_id": "b_CwQuEybQDsU",
+      "browse_id": "MPREb_CwQuEybQDsU",
+      "tracks": [
+        {
+          "videoId": "q6Rg5CUbOD0",
+          "title": "சொல்வன்மை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "rOowxP53oWA",
+          "title": "சொல்வன்மை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "66": {
+      "chapter_num": 66,
+      "chapter_name": "வினைத்தூய்மை",
+      "release_title": "திருக்குறள் - வினைத்தூய்மை 2026",
+      "release_id": "b_kPrRakRNeDt",
+      "browse_id": "MPREb_kPrRakRNeDt",
+      "tracks": [
+        {
+          "videoId": "cj6mlDwjJEo",
+          "title": "வினைத்தூய்மை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "D95woYqPoPI",
+          "title": "வினைத்தூய்மை (Remix)",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "8wZGK0nGTEo",
+          "title": "வினைத்தூய்மை (Slow)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "67": {
+      "chapter_num": 67,
+      "chapter_name": "வினைத்திட்பம்",
+      "release_title": "திருக்குறள் - வினைத்திட்பம் 2026",
+      "release_id": "b_anEZx2UIDSJ",
+      "browse_id": "MPREb_anEZx2UIDSJ",
+      "tracks": [
+        {
+          "videoId": "--4jzoezBW8",
+          "title": "வினைத்திட்பம்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "UPAYRisyN7Q",
+          "title": "வினைத்திட்பம் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "68": {
+      "chapter_num": 68,
+      "chapter_name": "வினைசெயல்வகை",
+      "release_title": "திருக்குறள் - வினைசெயல்வகை 2026",
+      "release_id": "b_OW2VuBoucBN",
+      "browse_id": "MPREb_OW2VuBoucBN",
+      "tracks": [
+        {
+          "videoId": "gBRvVKE_so8",
+          "title": "வினைசெயல்வகை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "3yB_oTqh6Jk",
+          "title": "வினைசெயல்வகை (Female)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "69": {
+      "chapter_num": 69,
+      "chapter_name": "தூது",
+      "release_title": "திருக்குறள் - தூது 2026",
+      "release_id": "b_I2EV6yKYGZA",
+      "browse_id": "MPREb_I2EV6yKYGZA",
+      "tracks": [
+        {
+          "videoId": "nR7R0TWyZHk",
+          "title": "தூது",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "x3CyxNH5bpQ",
+          "title": "தூது (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "70": {
+      "chapter_num": 70,
+      "chapter_name": "மன்னரைச் சேர்ந்தொழுதல்",
+      "release_title": "திருக்குறள் - மன்னரைச் சேர்ந்தொழுதல் 2026",
+      "release_id": "b_LxmIBMaL4B6",
+      "browse_id": "MPREb_LxmIBMaL4B6",
+      "tracks": [
+        {
+          "videoId": "u9NeXaCHu-A",
+          "title": "மன்னரைச் சேர்ந்தொழுதல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "dthZW-Wo8IU",
+          "title": "மன்னரைச் சேர்ந்தொழுதல் (Female)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "72": {
+      "chapter_num": 72,
+      "chapter_name": "அவையறிதல்",
+      "release_title": "திருக்குறள் - அவையறிதல் 2026",
+      "release_id": "b_6LIc8FbN6LH",
+      "browse_id": "MPREb_6LIc8FbN6LH",
+      "tracks": [
+        {
+          "videoId": "CEh2a8KUIKU",
+          "title": "அவையறிதல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "HxxLl5p1t0A",
+          "title": "அவையறிதல் (Sad)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "73": {
+      "chapter_num": 73,
+      "chapter_name": "அவையஞ்சாமை",
+      "release_title": "திருக்குறள் - அவை அஞ்சாமை 2026",
+      "release_id": "b_vYv8o0v7JBw",
+      "browse_id": "MPREb_vYv8o0v7JBw",
+      "tracks": [
+        {
+          "videoId": "W4LQ0TT2cRA",
+          "title": "அவை அஞ்சாமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "t9Ke0-KMTyM",
+          "title": "அவை அஞ்சாமை (Symphony)",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "wyDIU74Rs7Y",
+          "title": "அவை அஞ்சாமை (Female)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "74": {
+      "chapter_num": 74,
+      "chapter_name": "நாடு",
+      "release_title": "திருக்குறள் - நாடு 2026",
+      "release_id": "b_Pv6LlnnyZI2",
+      "browse_id": "MPREb_Pv6LlnnyZI2",
+      "tracks": [
+        {
+          "videoId": "nf8EO1GdKlY",
+          "title": "நாடு",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "gjo0AfKBzsU",
+          "title": "நாடு (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "75": {
+      "chapter_num": 75,
+      "chapter_name": "அரண்",
+      "release_title": "திருக்குறள் - அரண் 2026",
+      "release_id": "b_oVYbz8uJbni",
+      "browse_id": "MPREb_oVYbz8uJbni",
+      "tracks": [
+        {
+          "videoId": "6r6TpY-sgbw",
+          "title": "அரண்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "irx33IVWrPY",
+          "title": "அரண் (Symphony)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "76": {
+      "chapter_num": 76,
+      "chapter_name": "பொருள் செயல்வகை",
+      "release_title": "திருக்குறள் - பொருள்செயல்வகை 2026",
+      "release_id": "b_3CHgs6go2LH",
+      "browse_id": "MPREb_3CHgs6go2LH",
+      "tracks": [
+        {
+          "videoId": "dEx_Zuc5omc",
+          "title": "பொருள்செயல்வகை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "HNzKqpFcSi0",
+          "title": "பொருள்செயல்வகை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "77": {
+      "chapter_num": 77,
+      "chapter_name": "படைமாட்சி",
+      "release_title": "திருக்குறள் - படைமாட்சி 2026",
+      "release_id": "b_Lu222w0y55o",
+      "browse_id": "MPREb_Lu222w0y55o",
+      "tracks": [
+        {
+          "videoId": "YFOv2yc6eI8",
+          "title": "படைமாட்சி",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "WgAeUOaEF4c",
+          "title": "படைமாட்சி (Sad)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "78": {
+      "chapter_num": 78,
+      "chapter_name": "படைச்செருக்கு",
+      "release_title": "திருக்குறள் - படைச்செருக்கு 2026",
+      "release_id": "b_fZ87BUZUVW9",
+      "browse_id": "MPREb_fZ87BUZUVW9",
+      "tracks": [
+        {
+          "videoId": "79u01V3wbZc",
+          "title": "படைச்செருக்கு",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "h9-Ih0yHFYY",
+          "title": "படைச்செருக்கு (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "79": {
+      "chapter_num": 79,
+      "chapter_name": "நட்பு",
+      "release_title": "திருக்குறள் - தீ நட்பு 2026",
+      "release_id": "b_BEOnDr5Ny4V",
+      "browse_id": "MPREb_BEOnDr5Ny4V",
+      "tracks": [
+        {
+          "videoId": "4zff_qi_G1E",
+          "title": "தீ நட்பு",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "43lvzK34Nr4",
+          "title": "தீ நட்பு (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "80": {
+      "chapter_num": 80,
+      "chapter_name": "நட்பாராய்தல்",
+      "release_title": "திருக்குறள் - நட்பாராய்தல் 2026",
+      "release_id": "b_fYgMUuqLQDM",
+      "browse_id": "MPREb_fYgMUuqLQDM",
+      "tracks": [
+        {
+          "videoId": "Wq6XpZ49Huw",
+          "title": "நட்பாராய்தல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "_ucAGC9MZ_4",
+          "title": "நட்பாராய்தல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "81": {
+      "chapter_num": 81,
+      "chapter_name": "பழைமை",
+      "release_title": "திருக்குறள் - பழைமை 2026",
+      "release_id": "b_9GQD0NiqaQ1",
+      "browse_id": "MPREb_9GQD0NiqaQ1",
+      "tracks": [
+        {
+          "videoId": "EgSJqPCUMoo",
+          "title": "பழைமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "rYJ0GrrDNcM",
+          "title": "பழைமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "84": {
+      "chapter_num": 84,
+      "chapter_name": "பேதைமை",
+      "release_title": "திருக்குறள் - பேதைமை 2026",
+      "release_id": "b_HVgunwtc2qE",
+      "browse_id": "MPREb_HVgunwtc2qE",
+      "tracks": [
+        {
+          "videoId": "91RgQ8AygF4",
+          "title": "பேதைமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "4FSNzk1__Hg",
+          "title": "பேதைமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "85": {
+      "chapter_num": 85,
+      "chapter_name": "புல்லறிவாண்மை",
+      "release_title": "திருக்குறள் - புல்லறிவாண்மை 2026",
+      "release_id": "b_MPPg8zj5lPJ",
+      "browse_id": "MPREb_MPPg8zj5lPJ",
+      "tracks": [
+        {
+          "videoId": "gbRoaE5aV-8",
+          "title": "புல்லறிவாண்மை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "AeqthZi1-4g",
+          "title": "புல்லறிவாண்மை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "86": {
+      "chapter_num": 86,
+      "chapter_name": "இகல்",
+      "release_title": "திருக்குறள் - இகல் 2026",
+      "release_id": "b_kSRD1qVPEzC",
+      "browse_id": "MPREb_kSRD1qVPEzC",
+      "tracks": [
+        {
+          "videoId": "UqfAMN1LTZ0",
+          "title": "இகல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "twGhtenbOYE",
+          "title": "இகல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "87": {
+      "chapter_num": 87,
+      "chapter_name": "பகைமாட்சி",
+      "release_title": "திருக்குறள் - பகைமாட்சி 2026",
+      "release_id": "b_3lUxdK0eghJ",
+      "browse_id": "MPREb_3lUxdK0eghJ",
+      "tracks": [
+        {
+          "videoId": "Bx8MirqW1BM",
+          "title": "பகைமாட்சி",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "emHB9Up2p1o",
+          "title": "பகைமாட்சி (Symphony)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "88": {
+      "chapter_num": 88,
+      "chapter_name": "பகைத்திறந்தெரிதல்",
+      "release_title": "திருக்குறள் - பகைத்திறந்தெரிதல் 2026",
+      "release_id": "b_ASiq9L83gqe",
+      "browse_id": "MPREb_ASiq9L83gqe",
+      "tracks": [
+        {
+          "videoId": "HoZnatAKeeg",
+          "title": "பகைத்திறந்தெரிதல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "rSYJSW1bGFo",
+          "title": "பகைத்திறந்தெரிதல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "89": {
+      "chapter_num": 89,
+      "chapter_name": "உட்பகை",
+      "release_title": "திருக்குறள் - உட்பகை 2026",
+      "release_id": "b_okDqvyeubHG",
+      "browse_id": "MPREb_okDqvyeubHG",
+      "tracks": [
+        {
+          "videoId": "vCev92F9Jhk",
+          "title": "உட்பகை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "lJEsQ8sc0ZU",
+          "title": "உட்பகை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "90": {
+      "chapter_num": 90,
+      "chapter_name": "பெரியாரைப் பிழையாமை",
+      "release_title": "திருக்குறள் - பெரியாரைப் பிழையாமை 2026",
+      "release_id": "b_6cP1iwZ9zdX",
+      "browse_id": "MPREb_6cP1iwZ9zdX",
+      "tracks": [
+        {
+          "videoId": "vtDLdFYK4TY",
+          "title": "பெரியாரைப் பிழையாமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "rMZdgwMPdFw",
+          "title": "பெரியாரைப் பிழையாமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "91": {
+      "chapter_num": 91,
+      "chapter_name": "பெண்வழிச் சேறல்",
+      "release_title": "திருக்குறள் - பெண்வழிச்சேறல் 2026",
+      "release_id": "b_j9kvf8navys",
+      "browse_id": "MPREb_j9kvf8navys",
+      "tracks": [
+        {
+          "videoId": "wXm5IUbYVNU",
+          "title": "பெண்வழிச்சேறல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "tu3fdVFUWTo",
+          "title": "பெண்வழிச்சேறல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "92": {
+      "chapter_num": 92,
+      "chapter_name": "வரைவின் மகளிர்",
+      "release_title": "திருக்குறள் - வரைவின்மகளிர் 2026",
+      "release_id": "b_w7hmDMsqImd",
+      "browse_id": "MPREb_w7hmDMsqImd",
+      "tracks": [
+        {
+          "videoId": "nAkum29J5XQ",
+          "title": "வரைவின்மகளிர்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "XRClCG11BKE",
+          "title": "வரைவின்மகளிர் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "93": {
+      "chapter_num": 93,
+      "chapter_name": "கள்ளுண்ணாமை",
+      "release_title": "திருக்குறள் - கள்ளுண்ணாமை 2026",
+      "release_id": "b_jbg4CWy2oTE",
+      "browse_id": "MPREb_jbg4CWy2oTE",
+      "tracks": [
+        {
+          "videoId": "D3kZntkeRrU",
+          "title": "கள்ளுண்ணாமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "J0d49oFMxUA",
+          "title": "கள்ளுண்ணாமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "94": {
+      "chapter_num": 94,
+      "chapter_name": "சூது",
+      "release_title": "திருக்குறள் - சூது 2026",
+      "release_id": "b_y94K4kSASUd",
+      "browse_id": "MPREb_y94K4kSASUd",
+      "tracks": [
+        {
+          "videoId": "VAWHlmnm4J4",
+          "title": "சூது",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "EyouOl88qzA",
+          "title": "சூது (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "95": {
+      "chapter_num": 95,
+      "chapter_name": "மருந்து",
+      "release_title": "திருக்குறள் - மருந்து 2026",
+      "release_id": "b_WuHMnps0MjF",
+      "browse_id": "MPREb_WuHMnps0MjF",
+      "tracks": [
+        {
+          "videoId": "g-URQ7GexlI",
+          "title": "மருந்து",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "aRiRyj60kpM",
+          "title": "மருந்து (Female)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "96": {
+      "chapter_num": 96,
+      "chapter_name": "குடிமை",
+      "release_title": "திருக்குறள் - குடிமை 2026",
+      "release_id": "b_2FHxEEGMTnn",
+      "browse_id": "MPREb_2FHxEEGMTnn",
+      "tracks": [
+        {
+          "videoId": "fIYcXBgmNng",
+          "title": "குடிமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "T3Hc-1qsW5E",
+          "title": "குடிமை (Female)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "97": {
+      "chapter_num": 97,
+      "chapter_name": "மானம்",
+      "release_title": "திருக்குறள் - மானம் 2026",
+      "release_id": "b_J5eOHUlQiy6",
+      "browse_id": "MPREb_J5eOHUlQiy6",
+      "tracks": [
+        {
+          "videoId": "thDP3ubT7XQ",
+          "title": "மானம்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "rve7Q8FVEyo",
+          "title": "மானம் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "100": {
+      "chapter_num": 100,
+      "chapter_name": "பண்புடைமை",
+      "release_title": "திருக்குறள் - பண்புடைமை 2026",
+      "release_id": "b_OMYTcHJRvfn",
+      "browse_id": "MPREb_OMYTcHJRvfn",
+      "tracks": [
+        {
+          "videoId": "yj3I5UM4plo",
+          "title": "பண்புடைமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "1czNGy6djT0",
+          "title": "பண்புடைமை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "101": {
+      "chapter_num": 101,
+      "chapter_name": "நன்றியில் செல்வம்",
+      "release_title": "திருக்குறள் - நன்றியில் செல்வம் 2026",
+      "release_id": "b_oXyHO4N1qDh",
+      "browse_id": "MPREb_oXyHO4N1qDh",
+      "tracks": [
+        {
+          "videoId": "GUhYjBJDvfY",
+          "title": "நன்றியில் செல்வம்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "qoK6IkUKQEY",
+          "title": "நன்றியில் செல்வம் (Symphony)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "102": {
+      "chapter_num": 102,
+      "chapter_name": "நாணுடைமை",
+      "release_title": "திருக்குறள் - நாணுடைமை 2026",
+      "release_id": "b_7HgCzunfBkR",
+      "browse_id": "MPREb_7HgCzunfBkR",
+      "tracks": [
+        {
+          "videoId": "ElkI8v2_PHo",
+          "title": "நாணுடைமை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "-CWj8NajIe8",
+          "title": "நாணுடைமை (Symphony)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "103": {
+      "chapter_num": 103,
+      "chapter_name": "குடிசெயல்வகை",
+      "release_title": "திருக்குறள் - குடிசெயல்வகை 2026",
+      "release_id": "b_MMqWnsgzSUD",
+      "browse_id": "MPREb_MMqWnsgzSUD",
+      "tracks": [
+        {
+          "videoId": "WXdHP8plYls",
+          "title": "குடிசெயல்வகை",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "X0mNqcUOvWc",
+          "title": "குடிசெயல்வகை (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "104": {
+      "chapter_num": 104,
+      "chapter_name": "உழவு",
+      "release_title": "திருக்குறள் - உழவு 2026",
+      "release_id": "b_KNBXJHqXGBz",
+      "browse_id": "MPREb_KNBXJHqXGBz",
+      "tracks": [
+        {
+          "videoId": "1EYP6KC-23c",
+          "title": "உழவு",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "rnpkaBMAR8Y",
+          "title": "உழவு (Symphony)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "105": {
+      "chapter_num": 105,
+      "chapter_name": "நல்குரவு",
+      "release_title": "திருக்குறள் - நல்குரவு 2026",
+      "release_id": "b_monwWqfEZWl",
+      "browse_id": "MPREb_monwWqfEZWl",
+      "tracks": [
+        {
+          "videoId": "DzSIm1WLP9w",
+          "title": "நல்குரவு",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "1C7ymoF5kAI",
+          "title": "நல்குரவு (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "106": {
+      "chapter_num": 106,
+      "chapter_name": "இரவு",
+      "release_title": "திருக்குறள் - இரவு 2026",
+      "release_id": "b_zOXoDZxwePN",
+      "browse_id": "MPREb_zOXoDZxwePN",
+      "tracks": [
+        {
+          "videoId": "yQwR2MHviFI",
+          "title": "இரவு",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "VS_N1aLBbCk",
+          "title": "இரவு (Remix)",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "m-CLBEDIEz4",
+          "title": "இரவு (II)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    },
+    "110": {
+      "chapter_num": 110,
+      "chapter_name": "குறிப்பறிதல்",
+      "release_title": "திருக்குறள் - குறிப்பறிதல் 2026",
+      "release_id": "b_xLpgeAy2Dfi",
+      "browse_id": "MPREb_xLpgeAy2Dfi",
+      "tracks": [
+        {
+          "videoId": "dBIUA3fKBJ0",
+          "title": "குறிப்பறிதல்",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "K35B1jST2xw",
+          "title": "குறிப்பறிதல் (Symphony)",
+          "artist": "Guru Kula Desam"
+        },
+        {
+          "videoId": "2Qs07DTJvvM",
+          "title": "குறிப்பறிதல் (Remix)",
+          "artist": "Guru Kula Desam"
+        }
+      ]
+    }
+  },
+  "sequential_tracklist": [
+    {
+      "chapter_num": 1,
+      "chapter_name": "கடவுள் வாழ்த்து",
+      "track_index_in_chapter": 1,
+      "videoId": "SWAjAbur-TQ",
+      "title": "திருக்குறள் - கடவுள் வாழ்த்து",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 3,
+      "chapter_name": "நீத்தார் பெருமை",
+      "track_index_in_chapter": 1,
+      "videoId": "QytZMNXP1FM",
+      "title": "பெருமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 3,
+      "chapter_name": "நீத்தார் பெருமை",
+      "track_index_in_chapter": 2,
+      "videoId": "-4sBMw-5PZU",
+      "title": "பெருமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 5,
+      "chapter_name": "இல்வாழ்க்கை",
+      "track_index_in_chapter": 1,
+      "videoId": "C05GEfkJZaY",
+      "title": "திருக்குறள் இல்வாழ்க்கை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 8,
+      "chapter_name": "அன்புடைமை",
+      "track_index_in_chapter": 1,
+      "videoId": "jO2i4bcZ2ts",
+      "title": "திருக்குறள் அன்புடைமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 25,
+      "chapter_name": "அருளுடைமை",
+      "track_index_in_chapter": 1,
+      "videoId": "MXK8vB3_fBE",
+      "title": "திருக்குறள் - அருளுடைமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 26,
+      "chapter_name": "புலால் உண்ணாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "h2q-ADrbBc4",
+      "title": "திருக்குறள் - புலால் உண்ணாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 27,
+      "chapter_name": "தவம்",
+      "track_index_in_chapter": 1,
+      "videoId": "sa5f7NcYuRQ",
+      "title": "திருக்குறள் - தவம்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 28,
+      "chapter_name": "கூடா ஒழுக்கம்",
+      "track_index_in_chapter": 1,
+      "videoId": "mvOSVEFhvDc",
+      "title": "கூடா ஒழுக்கம்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 28,
+      "chapter_name": "கூடா ஒழுக்கம்",
+      "track_index_in_chapter": 2,
+      "videoId": "wPT_1jgn2Ys",
+      "title": "கூடா ஒழுக்கம் (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 29,
+      "chapter_name": "கள்ளாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "9EAskIS2xuc",
+      "title": "கள்ளாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 29,
+      "chapter_name": "கள்ளாமை",
+      "track_index_in_chapter": 2,
+      "videoId": "tzAYLpH3TkI",
+      "title": "கள்ளாமை (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 30,
+      "chapter_name": "வாய்மை",
+      "track_index_in_chapter": 1,
+      "videoId": "BoOWFaOGczE",
+      "title": "வாய்மை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 30,
+      "chapter_name": "வாய்மை",
+      "track_index_in_chapter": 2,
+      "videoId": "djYooU1LmGk",
+      "title": "வாய்மை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 31,
+      "chapter_name": "வெகுளாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "xcUlgFsrepU",
+      "title": "திருக்குறள் - வெகுளாமை 2026",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 33,
+      "chapter_name": "கொல்லாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "L6DWSjPqoH0",
+      "title": "திருக்குறள் - கொல்லாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 34,
+      "chapter_name": "நிலையாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "JreH0hqB2po",
+      "title": "திருக்குறள் - நிலையாமை 2026",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 35,
+      "chapter_name": "துறவு",
+      "track_index_in_chapter": 1,
+      "videoId": "8AEEcskF-Jo",
+      "title": "துறவு",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 35,
+      "chapter_name": "துறவு",
+      "track_index_in_chapter": 2,
+      "videoId": "6MaQYObW8OQ",
+      "title": "துறவு (Female)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 35,
+      "chapter_name": "துறவு",
+      "track_index_in_chapter": 3,
+      "videoId": "rq7PXPBI7SA",
+      "title": "துறவு (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 35,
+      "chapter_name": "துறவு",
+      "track_index_in_chapter": 4,
+      "videoId": "LjiR9PIRl8o",
+      "title": "துறவு (Rock)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 36,
+      "chapter_name": "மெய்யுணர்தல்",
+      "track_index_in_chapter": 1,
+      "videoId": "9NIv50lV4-M",
+      "title": "திருக்குறள் - மெய்யுணர்தல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 37,
+      "chapter_name": "அவாவறுத்தல்",
+      "track_index_in_chapter": 1,
+      "videoId": "HezzLu_n6qE",
+      "title": "திருக்குறள் - அவா அறுத்தல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 38,
+      "chapter_name": "ஊழ்",
+      "track_index_in_chapter": 1,
+      "videoId": "dD_cXqU_XVQ",
+      "title": "திருக்குறள் - ஊழ் வினை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 39,
+      "chapter_name": "இறைமாட்சி",
+      "track_index_in_chapter": 1,
+      "videoId": "9nD8x8gbjBg",
+      "title": "திருக்குறள் - இறை மாட்சி",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 40,
+      "chapter_name": "கல்வி",
+      "track_index_in_chapter": 1,
+      "videoId": "3FoioD6p6Mk",
+      "title": "திருக்குறள் -  கல்வி",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 41,
+      "chapter_name": "கல்லாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "Gnu-TzZfe7A",
+      "title": "திருக்குறள் - கல்லாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 42,
+      "chapter_name": "கேள்வி",
+      "track_index_in_chapter": 1,
+      "videoId": "9kHN9Dzrv7o",
+      "title": "கேள்விச் செல்வம்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 42,
+      "chapter_name": "கேள்வி",
+      "track_index_in_chapter": 2,
+      "videoId": "vbMywONB5Wc",
+      "title": "கேள்விச் செல்வம் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 43,
+      "chapter_name": "அறிவுடைமை",
+      "track_index_in_chapter": 1,
+      "videoId": "_Q2t-TcmDT4",
+      "title": "அறிவுடைமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 43,
+      "chapter_name": "அறிவுடைமை",
+      "track_index_in_chapter": 2,
+      "videoId": "bUepGv6PJQA",
+      "title": "அறிவுடைமை (Pop)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 43,
+      "chapter_name": "அறிவுடைமை",
+      "track_index_in_chapter": 3,
+      "videoId": "xVyPWHTMXHw",
+      "title": "அறிவுடைமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 44,
+      "chapter_name": "குற்றங்கடிதல்",
+      "track_index_in_chapter": 1,
+      "videoId": "B60TIM5LLvY",
+      "title": "குற்றங்கடிதல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 44,
+      "chapter_name": "குற்றங்கடிதல்",
+      "track_index_in_chapter": 2,
+      "videoId": "VVkl8bORJXg",
+      "title": "குற்றங்கடிதல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 45,
+      "chapter_name": "பெரியாரைத் துணைக்கோடல்",
+      "track_index_in_chapter": 1,
+      "videoId": "aTFvlXMPBSE",
+      "title": "பெரியாரைத் துணைக்கோடல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 45,
+      "chapter_name": "பெரியாரைத் துணைக்கோடல்",
+      "track_index_in_chapter": 2,
+      "videoId": "aZ830iKkqBs",
+      "title": "பெரியாரைத் துணைக்கோடல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 46,
+      "chapter_name": "சிற்றினம் சேராமை",
+      "track_index_in_chapter": 1,
+      "videoId": "2U45AXlx7DA",
+      "title": "சிற்றினம் சேராமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 46,
+      "chapter_name": "சிற்றினம் சேராமை",
+      "track_index_in_chapter": 2,
+      "videoId": "wylRNpaJNmY",
+      "title": "சிற்றினம் சேராமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 47,
+      "chapter_name": "தெரிந்து செயல்வகை",
+      "track_index_in_chapter": 1,
+      "videoId": "BfgGC7DsHMI",
+      "title": "தெரிந்து செயல்வகை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 47,
+      "chapter_name": "தெரிந்து செயல்வகை",
+      "track_index_in_chapter": 2,
+      "videoId": "mpgnALSm7wk",
+      "title": "தெரிந்து செயல்வகை (Female)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 48,
+      "chapter_name": "வலியறிதல்",
+      "track_index_in_chapter": 1,
+      "videoId": "Js6Vepbegr8",
+      "title": "வலியறிதல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 48,
+      "chapter_name": "வலியறிதல்",
+      "track_index_in_chapter": 2,
+      "videoId": "KLsXZa28uyE",
+      "title": "வலியறிதல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 49,
+      "chapter_name": "காலமறிதல்",
+      "track_index_in_chapter": 1,
+      "videoId": "DIDV-3cHhag",
+      "title": "காலமறிதல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 49,
+      "chapter_name": "காலமறிதல்",
+      "track_index_in_chapter": 2,
+      "videoId": "dVYI3ZgpDC8",
+      "title": "காலமறிதல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 50,
+      "chapter_name": "இடனறிதல்",
+      "track_index_in_chapter": 1,
+      "videoId": "817Wxel4F5s",
+      "title": "இடனறிதல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 50,
+      "chapter_name": "இடனறிதல்",
+      "track_index_in_chapter": 2,
+      "videoId": "oEQ3sx6ujQc",
+      "title": "இடனறிதல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 51,
+      "chapter_name": "தெரிந்து தெளிதல்",
+      "track_index_in_chapter": 1,
+      "videoId": "bH23l5vVgL8",
+      "title": "தெரிந்து தெளிதல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 51,
+      "chapter_name": "தெரிந்து தெளிதல்",
+      "track_index_in_chapter": 2,
+      "videoId": "tLt9J-X9WOE",
+      "title": "தெரிந்து தெளிதல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 52,
+      "chapter_name": "தெரிந்து வினையாடல்",
+      "track_index_in_chapter": 1,
+      "videoId": "g9ddfNl5ov0",
+      "title": "தெரிந்து வினையாடல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 52,
+      "chapter_name": "தெரிந்து வினையாடல்",
+      "track_index_in_chapter": 2,
+      "videoId": "F-aVgFOdKFo",
+      "title": "தெரிந்து வினையாடல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 53,
+      "chapter_name": "சுற்றந்தழால்",
+      "track_index_in_chapter": 1,
+      "videoId": "Nb1nAcrGNeU",
+      "title": "சுற்றந்தழால்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 53,
+      "chapter_name": "சுற்றந்தழால்",
+      "track_index_in_chapter": 2,
+      "videoId": "9-SvikTz2FU",
+      "title": "சுற்றந்தழால் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 54,
+      "chapter_name": "பொச்சாவாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "O0hASl4BS2c",
+      "title": "பொச்சாவாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 54,
+      "chapter_name": "பொச்சாவாமை",
+      "track_index_in_chapter": 2,
+      "videoId": "DhHGetUJlAI",
+      "title": "பொச்சாவாமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 55,
+      "chapter_name": "செங்கோன்மை",
+      "track_index_in_chapter": 1,
+      "videoId": "lCBVB2Yj_7U",
+      "title": "செங்கோன்மை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 55,
+      "chapter_name": "செங்கோன்மை",
+      "track_index_in_chapter": 2,
+      "videoId": "5coBrJy6a5M",
+      "title": "செங்கோன்மை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 56,
+      "chapter_name": "கொடுங்கோன்மை",
+      "track_index_in_chapter": 1,
+      "videoId": "wzdoeFDq0iQ",
+      "title": "கொடுங்கோன்மை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 56,
+      "chapter_name": "கொடுங்கோன்மை",
+      "track_index_in_chapter": 2,
+      "videoId": "01g0sJdaL2I",
+      "title": "கொடுங்கோன்மை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 57,
+      "chapter_name": "வெருவந்த செய்யாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "hjcH8zbEleE",
+      "title": "வெருவந்த செய்யாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 57,
+      "chapter_name": "வெருவந்த செய்யாமை",
+      "track_index_in_chapter": 2,
+      "videoId": "PmziMZrMHfE",
+      "title": "வெருவந்த செய்யாமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 58,
+      "chapter_name": "கண்ணோட்டம்",
+      "track_index_in_chapter": 1,
+      "videoId": "mv7AezrLzoU",
+      "title": "கண்ணோட்டம்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 58,
+      "chapter_name": "கண்ணோட்டம்",
+      "track_index_in_chapter": 2,
+      "videoId": "E7yfNOiwJmM",
+      "title": "கண்ணோட்டம் (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 58,
+      "chapter_name": "கண்ணோட்டம்",
+      "track_index_in_chapter": 3,
+      "videoId": "Vj6wcfC3rPk",
+      "title": "கண்ணோட்டம் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 59,
+      "chapter_name": "ஒற்றாடல்",
+      "track_index_in_chapter": 1,
+      "videoId": "TQtjI3EepPQ",
+      "title": "ஒற்றாடல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 59,
+      "chapter_name": "ஒற்றாடல்",
+      "track_index_in_chapter": 2,
+      "videoId": "tj_5hsasdyU",
+      "title": "ஒற்றாடல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 60,
+      "chapter_name": "ஊக்கமுடைமை",
+      "track_index_in_chapter": 1,
+      "videoId": "XN5ENUbmSOE",
+      "title": "ஊக்கமுடைமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 60,
+      "chapter_name": "ஊக்கமுடைமை",
+      "track_index_in_chapter": 2,
+      "videoId": "FXMVQIidbJU",
+      "title": "ஊக்கமுடைமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 61,
+      "chapter_name": "மடியின்மை",
+      "track_index_in_chapter": 1,
+      "videoId": "yFdF-MjQbHQ",
+      "title": "மடியின்மை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 61,
+      "chapter_name": "மடியின்மை",
+      "track_index_in_chapter": 2,
+      "videoId": "Fh3HfGUObmg",
+      "title": "மடியின்மை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 62,
+      "chapter_name": "ஆள்வினையுடைமை",
+      "track_index_in_chapter": 1,
+      "videoId": "zj4_pEqa_cs",
+      "title": "ஆள்வினையுடைமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 62,
+      "chapter_name": "ஆள்வினையுடைமை",
+      "track_index_in_chapter": 2,
+      "videoId": "37qaN4sG53k",
+      "title": "ஆள்வினையுடைமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 63,
+      "chapter_name": "இடுக்கண் அழியாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "daM5VkysZqg",
+      "title": "இடுக்கண் அழியாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 63,
+      "chapter_name": "இடுக்கண் அழியாமை",
+      "track_index_in_chapter": 2,
+      "videoId": "QXWB2raWKXE",
+      "title": "இடுக்கண் அழியாமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 64,
+      "chapter_name": "அமைச்சு",
+      "track_index_in_chapter": 1,
+      "videoId": "VENn3ip3XPA",
+      "title": "அமைச்சு",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 64,
+      "chapter_name": "அமைச்சு",
+      "track_index_in_chapter": 2,
+      "videoId": "JvonvWQHKQY",
+      "title": "அமைச்சு (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 65,
+      "chapter_name": "சொல்வன்மை",
+      "track_index_in_chapter": 1,
+      "videoId": "q6Rg5CUbOD0",
+      "title": "சொல்வன்மை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 65,
+      "chapter_name": "சொல்வன்மை",
+      "track_index_in_chapter": 2,
+      "videoId": "rOowxP53oWA",
+      "title": "சொல்வன்மை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 66,
+      "chapter_name": "வினைத்தூய்மை",
+      "track_index_in_chapter": 1,
+      "videoId": "cj6mlDwjJEo",
+      "title": "வினைத்தூய்மை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 66,
+      "chapter_name": "வினைத்தூய்மை",
+      "track_index_in_chapter": 2,
+      "videoId": "D95woYqPoPI",
+      "title": "வினைத்தூய்மை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 66,
+      "chapter_name": "வினைத்தூய்மை",
+      "track_index_in_chapter": 3,
+      "videoId": "8wZGK0nGTEo",
+      "title": "வினைத்தூய்மை (Slow)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 67,
+      "chapter_name": "வினைத்திட்பம்",
+      "track_index_in_chapter": 1,
+      "videoId": "--4jzoezBW8",
+      "title": "வினைத்திட்பம்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 67,
+      "chapter_name": "வினைத்திட்பம்",
+      "track_index_in_chapter": 2,
+      "videoId": "UPAYRisyN7Q",
+      "title": "வினைத்திட்பம் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 68,
+      "chapter_name": "வினைசெயல்வகை",
+      "track_index_in_chapter": 1,
+      "videoId": "gBRvVKE_so8",
+      "title": "வினைசெயல்வகை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 68,
+      "chapter_name": "வினைசெயல்வகை",
+      "track_index_in_chapter": 2,
+      "videoId": "3yB_oTqh6Jk",
+      "title": "வினைசெயல்வகை (Female)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 69,
+      "chapter_name": "தூது",
+      "track_index_in_chapter": 1,
+      "videoId": "nR7R0TWyZHk",
+      "title": "தூது",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 69,
+      "chapter_name": "தூது",
+      "track_index_in_chapter": 2,
+      "videoId": "x3CyxNH5bpQ",
+      "title": "தூது (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 70,
+      "chapter_name": "மன்னரைச் சேர்ந்தொழுதல்",
+      "track_index_in_chapter": 1,
+      "videoId": "u9NeXaCHu-A",
+      "title": "மன்னரைச் சேர்ந்தொழுதல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 70,
+      "chapter_name": "மன்னரைச் சேர்ந்தொழுதல்",
+      "track_index_in_chapter": 2,
+      "videoId": "dthZW-Wo8IU",
+      "title": "மன்னரைச் சேர்ந்தொழுதல் (Female)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 72,
+      "chapter_name": "அவையறிதல்",
+      "track_index_in_chapter": 1,
+      "videoId": "CEh2a8KUIKU",
+      "title": "அவையறிதல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 72,
+      "chapter_name": "அவையறிதல்",
+      "track_index_in_chapter": 2,
+      "videoId": "HxxLl5p1t0A",
+      "title": "அவையறிதல் (Sad)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 73,
+      "chapter_name": "அவையஞ்சாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "W4LQ0TT2cRA",
+      "title": "அவை அஞ்சாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 73,
+      "chapter_name": "அவையஞ்சாமை",
+      "track_index_in_chapter": 2,
+      "videoId": "t9Ke0-KMTyM",
+      "title": "அவை அஞ்சாமை (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 73,
+      "chapter_name": "அவையஞ்சாமை",
+      "track_index_in_chapter": 3,
+      "videoId": "wyDIU74Rs7Y",
+      "title": "அவை அஞ்சாமை (Female)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 74,
+      "chapter_name": "நாடு",
+      "track_index_in_chapter": 1,
+      "videoId": "nf8EO1GdKlY",
+      "title": "நாடு",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 74,
+      "chapter_name": "நாடு",
+      "track_index_in_chapter": 2,
+      "videoId": "gjo0AfKBzsU",
+      "title": "நாடு (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 75,
+      "chapter_name": "அரண்",
+      "track_index_in_chapter": 1,
+      "videoId": "6r6TpY-sgbw",
+      "title": "அரண்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 75,
+      "chapter_name": "அரண்",
+      "track_index_in_chapter": 2,
+      "videoId": "irx33IVWrPY",
+      "title": "அரண் (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 76,
+      "chapter_name": "பொருள் செயல்வகை",
+      "track_index_in_chapter": 1,
+      "videoId": "dEx_Zuc5omc",
+      "title": "பொருள்செயல்வகை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 76,
+      "chapter_name": "பொருள் செயல்வகை",
+      "track_index_in_chapter": 2,
+      "videoId": "HNzKqpFcSi0",
+      "title": "பொருள்செயல்வகை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 77,
+      "chapter_name": "படைமாட்சி",
+      "track_index_in_chapter": 1,
+      "videoId": "YFOv2yc6eI8",
+      "title": "படைமாட்சி",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 77,
+      "chapter_name": "படைமாட்சி",
+      "track_index_in_chapter": 2,
+      "videoId": "WgAeUOaEF4c",
+      "title": "படைமாட்சி (Sad)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 78,
+      "chapter_name": "படைச்செருக்கு",
+      "track_index_in_chapter": 1,
+      "videoId": "79u01V3wbZc",
+      "title": "படைச்செருக்கு",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 78,
+      "chapter_name": "படைச்செருக்கு",
+      "track_index_in_chapter": 2,
+      "videoId": "h9-Ih0yHFYY",
+      "title": "படைச்செருக்கு (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 79,
+      "chapter_name": "நட்பு",
+      "track_index_in_chapter": 1,
+      "videoId": "4zff_qi_G1E",
+      "title": "தீ நட்பு",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 79,
+      "chapter_name": "நட்பு",
+      "track_index_in_chapter": 2,
+      "videoId": "43lvzK34Nr4",
+      "title": "தீ நட்பு (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 80,
+      "chapter_name": "நட்பாராய்தல்",
+      "track_index_in_chapter": 1,
+      "videoId": "Wq6XpZ49Huw",
+      "title": "நட்பாராய்தல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 80,
+      "chapter_name": "நட்பாராய்தல்",
+      "track_index_in_chapter": 2,
+      "videoId": "_ucAGC9MZ_4",
+      "title": "நட்பாராய்தல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 81,
+      "chapter_name": "பழைமை",
+      "track_index_in_chapter": 1,
+      "videoId": "EgSJqPCUMoo",
+      "title": "பழைமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 81,
+      "chapter_name": "பழைமை",
+      "track_index_in_chapter": 2,
+      "videoId": "rYJ0GrrDNcM",
+      "title": "பழைமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 84,
+      "chapter_name": "பேதைமை",
+      "track_index_in_chapter": 1,
+      "videoId": "91RgQ8AygF4",
+      "title": "பேதைமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 84,
+      "chapter_name": "பேதைமை",
+      "track_index_in_chapter": 2,
+      "videoId": "4FSNzk1__Hg",
+      "title": "பேதைமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 85,
+      "chapter_name": "புல்லறிவாண்மை",
+      "track_index_in_chapter": 1,
+      "videoId": "gbRoaE5aV-8",
+      "title": "புல்லறிவாண்மை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 85,
+      "chapter_name": "புல்லறிவாண்மை",
+      "track_index_in_chapter": 2,
+      "videoId": "AeqthZi1-4g",
+      "title": "புல்லறிவாண்மை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 86,
+      "chapter_name": "இகல்",
+      "track_index_in_chapter": 1,
+      "videoId": "UqfAMN1LTZ0",
+      "title": "இகல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 86,
+      "chapter_name": "இகல்",
+      "track_index_in_chapter": 2,
+      "videoId": "twGhtenbOYE",
+      "title": "இகல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 87,
+      "chapter_name": "பகைமாட்சி",
+      "track_index_in_chapter": 1,
+      "videoId": "Bx8MirqW1BM",
+      "title": "பகைமாட்சி",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 87,
+      "chapter_name": "பகைமாட்சி",
+      "track_index_in_chapter": 2,
+      "videoId": "emHB9Up2p1o",
+      "title": "பகைமாட்சி (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 88,
+      "chapter_name": "பகைத்திறந்தெரிதல்",
+      "track_index_in_chapter": 1,
+      "videoId": "HoZnatAKeeg",
+      "title": "பகைத்திறந்தெரிதல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 88,
+      "chapter_name": "பகைத்திறந்தெரிதல்",
+      "track_index_in_chapter": 2,
+      "videoId": "rSYJSW1bGFo",
+      "title": "பகைத்திறந்தெரிதல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 89,
+      "chapter_name": "உட்பகை",
+      "track_index_in_chapter": 1,
+      "videoId": "vCev92F9Jhk",
+      "title": "உட்பகை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 89,
+      "chapter_name": "உட்பகை",
+      "track_index_in_chapter": 2,
+      "videoId": "lJEsQ8sc0ZU",
+      "title": "உட்பகை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 90,
+      "chapter_name": "பெரியாரைப் பிழையாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "vtDLdFYK4TY",
+      "title": "பெரியாரைப் பிழையாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 90,
+      "chapter_name": "பெரியாரைப் பிழையாமை",
+      "track_index_in_chapter": 2,
+      "videoId": "rMZdgwMPdFw",
+      "title": "பெரியாரைப் பிழையாமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 91,
+      "chapter_name": "பெண்வழிச் சேறல்",
+      "track_index_in_chapter": 1,
+      "videoId": "wXm5IUbYVNU",
+      "title": "பெண்வழிச்சேறல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 91,
+      "chapter_name": "பெண்வழிச் சேறல்",
+      "track_index_in_chapter": 2,
+      "videoId": "tu3fdVFUWTo",
+      "title": "பெண்வழிச்சேறல் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 92,
+      "chapter_name": "வரைவின் மகளிர்",
+      "track_index_in_chapter": 1,
+      "videoId": "nAkum29J5XQ",
+      "title": "வரைவின்மகளிர்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 92,
+      "chapter_name": "வரைவின் மகளிர்",
+      "track_index_in_chapter": 2,
+      "videoId": "XRClCG11BKE",
+      "title": "வரைவின்மகளிர் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 93,
+      "chapter_name": "கள்ளுண்ணாமை",
+      "track_index_in_chapter": 1,
+      "videoId": "D3kZntkeRrU",
+      "title": "கள்ளுண்ணாமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 93,
+      "chapter_name": "கள்ளுண்ணாமை",
+      "track_index_in_chapter": 2,
+      "videoId": "J0d49oFMxUA",
+      "title": "கள்ளுண்ணாமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 94,
+      "chapter_name": "சூது",
+      "track_index_in_chapter": 1,
+      "videoId": "VAWHlmnm4J4",
+      "title": "சூது",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 94,
+      "chapter_name": "சூது",
+      "track_index_in_chapter": 2,
+      "videoId": "EyouOl88qzA",
+      "title": "சூது (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 95,
+      "chapter_name": "மருந்து",
+      "track_index_in_chapter": 1,
+      "videoId": "g-URQ7GexlI",
+      "title": "மருந்து",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 95,
+      "chapter_name": "மருந்து",
+      "track_index_in_chapter": 2,
+      "videoId": "aRiRyj60kpM",
+      "title": "மருந்து (Female)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 96,
+      "chapter_name": "குடிமை",
+      "track_index_in_chapter": 1,
+      "videoId": "fIYcXBgmNng",
+      "title": "குடிமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 96,
+      "chapter_name": "குடிமை",
+      "track_index_in_chapter": 2,
+      "videoId": "T3Hc-1qsW5E",
+      "title": "குடிமை (Female)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 97,
+      "chapter_name": "மானம்",
+      "track_index_in_chapter": 1,
+      "videoId": "thDP3ubT7XQ",
+      "title": "மானம்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 97,
+      "chapter_name": "மானம்",
+      "track_index_in_chapter": 2,
+      "videoId": "rve7Q8FVEyo",
+      "title": "மானம் (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 100,
+      "chapter_name": "பண்புடைமை",
+      "track_index_in_chapter": 1,
+      "videoId": "yj3I5UM4plo",
+      "title": "பண்புடைமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 100,
+      "chapter_name": "பண்புடைமை",
+      "track_index_in_chapter": 2,
+      "videoId": "1czNGy6djT0",
+      "title": "பண்புடைமை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 101,
+      "chapter_name": "நன்றியில் செல்வம்",
+      "track_index_in_chapter": 1,
+      "videoId": "GUhYjBJDvfY",
+      "title": "நன்றியில் செல்வம்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 101,
+      "chapter_name": "நன்றியில் செல்வம்",
+      "track_index_in_chapter": 2,
+      "videoId": "qoK6IkUKQEY",
+      "title": "நன்றியில் செல்வம் (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 102,
+      "chapter_name": "நாணுடைமை",
+      "track_index_in_chapter": 1,
+      "videoId": "ElkI8v2_PHo",
+      "title": "நாணுடைமை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 102,
+      "chapter_name": "நாணுடைமை",
+      "track_index_in_chapter": 2,
+      "videoId": "-CWj8NajIe8",
+      "title": "நாணுடைமை (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 103,
+      "chapter_name": "குடிசெயல்வகை",
+      "track_index_in_chapter": 1,
+      "videoId": "WXdHP8plYls",
+      "title": "குடிசெயல்வகை",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 103,
+      "chapter_name": "குடிசெயல்வகை",
+      "track_index_in_chapter": 2,
+      "videoId": "X0mNqcUOvWc",
+      "title": "குடிசெயல்வகை (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 104,
+      "chapter_name": "உழவு",
+      "track_index_in_chapter": 1,
+      "videoId": "1EYP6KC-23c",
+      "title": "உழவு",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 104,
+      "chapter_name": "உழவு",
+      "track_index_in_chapter": 2,
+      "videoId": "rnpkaBMAR8Y",
+      "title": "உழவு (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 105,
+      "chapter_name": "நல்குரவு",
+      "track_index_in_chapter": 1,
+      "videoId": "DzSIm1WLP9w",
+      "title": "நல்குரவு",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 105,
+      "chapter_name": "நல்குரவு",
+      "track_index_in_chapter": 2,
+      "videoId": "1C7ymoF5kAI",
+      "title": "நல்குரவு (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 106,
+      "chapter_name": "இரவு",
+      "track_index_in_chapter": 1,
+      "videoId": "yQwR2MHviFI",
+      "title": "இரவு",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 106,
+      "chapter_name": "இரவு",
+      "track_index_in_chapter": 2,
+      "videoId": "VS_N1aLBbCk",
+      "title": "இரவு (Remix)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 106,
+      "chapter_name": "இரவு",
+      "track_index_in_chapter": 3,
+      "videoId": "m-CLBEDIEz4",
+      "title": "இரவு (II)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 110,
+      "chapter_name": "குறிப்பறிதல்",
+      "track_index_in_chapter": 1,
+      "videoId": "dBIUA3fKBJ0",
+      "title": "குறிப்பறிதல்",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 110,
+      "chapter_name": "குறிப்பறிதல்",
+      "track_index_in_chapter": 2,
+      "videoId": "K35B1jST2xw",
+      "title": "குறிப்பறிதல் (Symphony)",
+      "artist": "Guru Kula Desam"
+    },
+    {
+      "chapter_num": 110,
+      "chapter_name": "குறிப்பறிதல்",
+      "track_index_in_chapter": 3,
+      "videoId": "2Qs07DTJvvM",
+      "title": "குறிப்பறிதல் (Remix)",
+      "artist": "Guru Kula Desam"
+    }
+  ]
+}

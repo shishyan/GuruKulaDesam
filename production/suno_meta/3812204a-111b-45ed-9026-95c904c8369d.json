@@ -1,0 +1,175 @@
+{
+  "status": "complete",
+  "title": "பிறனில் விழையாமை 1C",
+  "play_count": 2,
+  "upvote_count": 1,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "3812204a-111b-45ed-9026-95c904c8369d",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/3812204a-111b-45ed-9026-95c904c8369d.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_3812204a-111b-45ed-9026-95c904c8369d.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_3812204a-111b-45ed-9026-95c904c8369d.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Classical Oratorio with church acoustic reverberation, measured recitative flow, SATB choir in stately contrapuntal layers with bassoon grounding the phrases, male soloist in a resonant classical register answered by the choir.",
+    "prompt": "[Chorus]\nபிறன்மனை நோக்காத பேராண்மை  (சான்றோர்க்கு)\nஅறனொன்றோ ஆன்ற வொழுக்கு\nபிறன்மனை நோக்காத பேராண்மை  (சான்றோர்க்கு)\nஅறனொன்றோ ஆன்ற வொழுக்கு\n\n[Verse 1]\nஅறன்கடை நின்றாருள் எல்லாம்  (பிறன்கடை)\nநின்றாரின் பேதையார் இல்\nஅறன்கடை நின்றாருள் எல்லாம்  (பிறன்கடை)\nநின்றாரின் பேதையார் இல்\n\nபிறன்பொருளாள் பெட்டொழுகும் பேதைமை  (ஞாலத்து)\nஅறம்பொருள் கண்டார்கண் இல்\nபிறன்பொருளாள் பெட்டொழுகும் பேதைமை  (ஞாலத்து)\nஅறம்பொருள் கண்டார்கண் இல்\n\n[Chorus]\nபிறன்மனை நோக்காத பேராண்மை  (சான்றோர்க்கு)\nஅறனொன்றோ ஆன்ற வொழுக்கு\nபிறன்மனை நோக்காத பேராண்மை  (சான்றோர்க்கு)\nஅறனொன்றோ ஆன்ற வொழுக்கு\n\n[Verse 2]\nவிளிந்தாரின் வேறல்லர் மன்ற  (தெளிந்தாரில்)\nதீமை புரிந்துஒழுகு வார்\nஎளிதென இல்லிறப்பான் எய்துமெஞ்  (ஞான்றும்)\nவிளியாது நிற்கும் பழி\n\nஅறனியலான் இல்வாழ்வான் என்பான்  (பிறனியலாள்)\nபெண்மை நயவா தவன்\nஅறன்வரையான் அல்ல செயினும்  (பிறன்வரையாள்)\nபெண்மை நயவாமை நன்று\n\n[Chorus]\nபிறன்மனை நோக்காத பேராண்மை  (சான்றோர்க்கு)\nஅறனொன்றோ ஆன்ற வொழுக்கு\nபிறன்மனை நோக்காத பேராண்மை  (சான்றோர்க்கு)\nஅறனொன்றோ ஆன்ற வொழுக்கு\n\n[Bridge]\nஎனைத்துணையர் ஆயினும் என்னாம்  (தினைத்துணையும்)\nதேரான் பிறனில் புகல்\nநலக்குரியார் யாரெனின் நாமநீர்  (வைப்பின்)\nபிறர்க்குரியாள் தோள்தோயா தார்\nபகை பாவம் அச்சம் பழி  (என நான்கும்)\nஇகவாவாம் இல்லிறப்பான் கண்\n\n[Chorus]\nபிறன்மனை நோக்காத பேராண்மை  (சான்றோர்க்கு)\nஅறனொன்றோ ஆன்ற வொழுக்கு\nபிறன்மனை நோக்காத பேராண்மை  (சான்றோர்க்கு)\nஅறனொன்றோ ஆன்ற வொழுக்கு",
+    "type": "gen",
+    "duration": 264.12,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 3
+    },
+    "task": "chop_sample_condition",
+    "can_remix": true,
+    "show_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "film_strip",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "fccbb8d7-7e1c-4844-9dc9-30cc78afa59c",
+  "display_name": "Shishyan (Guru Kula Desam)",
+  "handle": "shishyan",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-10-08T06:30:13.920Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "explicit": false,
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "Classical, Oratorio",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "clip_roots": {
+    "clips": [
+      {
+        "is_public": false,
+        "user_display_name": "Shishyan (Guru Kula Desam)",
+        "user_handle": "shishyan",
+        "user_avatar_image_url": "https://cdn2.suno.ai/3a6f8766-370f-4b82-aa23-f76e11e398de.jpeg"
+      }
+    ],
+    "clip_attribution_type": "remix"
+  }
+}

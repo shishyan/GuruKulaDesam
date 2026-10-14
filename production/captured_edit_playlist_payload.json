@@ -1,0 +1,146 @@
+{
+  "url": "https://www.youtube.com/youtubei/v1/browse/edit_playlist?prettyPrint=false",
+  "data": {
+    "context": {
+      "client": {
+        "hl": "en",
+        "gl": "IN",
+        "remoteHost": "49.206.115.211",
+        "deviceMake": "",
+        "deviceModel": "",
+        "visitorData": "CgtRMzc1ZklNZjFWcyj-mqnWBjIKCgJJThIEGgAgFmLfAgrcAjIyLllUPUxpUC1iRmpUY3J0aVFXcHdjSWhKanFqdkt2aWZVcFV1RTZmQ1FScW40bVcyWXNxOHZDLTZjWWhLSGJRRTdRc1VoeHd6OXlQQ21qZVFPcm9GRmNVMnl3X1k5RlNJZTVxLVByY0ZlbGVzaWN3S0l4WU5KRm80a2EtZTJTMTgzT3l3NmJ6Z2VMZHBRRGM4SWZLODM3V2ZkSGQ4Z3RPNFh6UlhZaTlfc1k3eEwyYlFjdlFUdF9lNWgyUXV4bDZlOHo5XzdOel82UnVTWGR6ZXNpWGY2RUE4NlIzLWlNTDE4YTBDd3Z3MjhVM3J4WnJKcXNjb2Ezb3RXbzRwa1p6X2xfc3dITFlNM3R6TDItcjM1cWtLRlJ0Wm0wNVNkVFY4ZzVVU3VBOXEtdzRadl8tRzNtcHIyTGVITVpoNGVLODhZNU9VbmI5S1FUMEw1SHN3aGRfTTZEeWlEQQ%3D%3D",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36,gzip(gfe)",
+        "clientName": "WEB",
+        "clientVersion": "2.20261009.01.00",
+        "osName": "Windows",
+        "osVersion": "10.0",
+        "originalUrl": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro",
+        "platform": "DESKTOP",
+        "clientFormFactor": "UNKNOWN_FORM_FACTOR",
+        "configInfo": {
+          "appInstallData": "CP6aqdYGEMn2gBMQyvuAExD36NIcEKSOgRMQw5HQHBDBj9AcEOLUrgUQvbauBRCb2dEcEJvl0hwQ263SHBDL0bEFELjkzhwQ2vfOHBCHrM4cEK-KuCIQ5Yq4IhC_2tIcEJ_PgBMQzN-uBRDN0bEFEJ6VgRMQ3rzOHBDw3tEcEIHNzhwQmY2xBRD2q7AFEIKPzxwQvoTRHBD4xIATENPa0hwQ_NrSHBDn69EcEK7e0RwQpKnRHBCu1s8cELiEgRMQ8bTQHBC-irAFEJ7QsAUQ0r3QHBC8pNAcEI7L0hwQpePSHBCMudIcEO670hwQr_jRHBCJsM4cENrH0hwQ_4LSHBCzkM8cENeL0RwQw63SHBDx7tIcEKH40BwQ9vfRHBCWh9EcELeGzxwQn5eBExC77dIcKpwBQ0FNU2NSVnEtWnEtRE1lVUVwVUNuQTc1RlhLTUZMX2tELUVEMGdVTTJ3LTJCTndFa2FEZkNfQ3hFb2RNTXF1c0JKUE1BN2JrQm9VVWdvNEQxb01QeTBxOGt3U3N1d1BaMVFYZExQR25CYnBTNFpJR25KWUV6d0FGQlFRRHBSMy1hYVdtQmZVbnR3STNteHljTk4tRUJycVBCUjBIMAA%3D",
+          "coldConfigData": "CP6aqdYGEL22rgUQ4tSuBRDj-LAFEK-nzhwQs5DPHBCu1s8cEKan0BwQw77QHBCb2dEcEK7e0RwQ54_SHBDwj9IcEN6Z0hwQj57SHBDbrdIcEOy50hwQw77SHBDE0NIcEOLR0hwQ8dbSHBC_2dIcEL_a0hwQ19_SHBDV4NIcEN3i0hwQnOPSHBCb5dIcEPHu0hwQ3fPSHBCqirgiEK-KuCIaMkFLelpVc3c1MXlFMEowcjM0VUdLYnloeUxUQVQxOWsxa3plR3Z5SGFHdVc3Vm5vdzBBIjJBS3paVXN5X21CcjFhRHRoVXl1Mnp3R24ybzNYQ1dEVzNkdHF3RUpaTjlSWVZMemo3USqcAUNBTVNjUTBxdU4yM0FxUVpseC1mVDVtU21oRDdGbzAyX2lPTkdUVDJHUFl0emdLYUJReUxnd2IyRXJncTV5dmFCWllsRlVlWnNiY2ZoYVFGa1p3RjRkc0J6OElBajZjR19kUUdNcy1BQmVTa0J2ZjdCUE1EaU9RRjJJY0RwMC1ZRzdNR3pkNEpoYm9FcjVnR3pZRVAwallGbGRVRQ%3D%3D",
+          "coldHashData": "CP6aqdYGEhQxMDQ5MDM1OTA4Nzc1Mjg4MzQwMRj-mqnWBjIyQUt6WlVzdzUxeUUwSjByMzRVR0tieWh5TFRBVDE5azFremVHdnlIYUd1VzdWbm93MEE6MkFLelpVc3lfbUJyMWFEdGhVeXUyendHbjJvM1hDV0RXM2R0cXdFSlpOOVJZVkx6ajdRQpwBQ0FNU2NRMHF1TjIzQXFRWmx4LWZUNW1TbWhEN0ZvMDJfaU9OR1RUMkdQWXR6Z0thQlF5TGd3YjJFcmdxNXl2YUJaWWxGVWVac2JjZmhhUUZrWndGNGRzQno4SUFqNmNHX2RRR01zLUFCZVNrQnZmN0JQTURpT1FGMkljRHAwLVlHN01HemQ0Smhib0VyNWdHellFUDBqWUZsZFVF",
+          "hotHashData": "CP6aqdYGEhM5MjM4NjUzMjg3NzAzNTY3NDQzGP6aqdYGKJTk_BIopdD9EijIyv4SKK7M_hIokJuAEyjQroATKNiwgBMoy76AEyiZ4oATKPmFgRMojoaBEyiHjIETKJONgRMopI6BEyielYETKJuXgRMogpmBEyjJnIETMjJBS3paVXN3NTF5RTBKMHIzNFVHS2J5aHlMVEFUMTlrMWt6ZUd2eUhhR3VXN1Zub3cwQToyQUt6WlVzeV9tQnIxYUR0aFV5dTJ6d0duMm8zWENXRFczZHRxd0VKWk45UllWTHpqN1FCRENBTVNMZzBWb3RmNkZhN0JCb2VmQnNrbmhRM1JLNk1JRlJfZHo4SU1sWTBPcHZzUHlnVzVrTjhMLTRjZDBpVHgzaFU9"
+        },
+        "screenDensityFloat": 1,
+        "userInterfaceTheme": "USER_INTERFACE_THEME_LIGHT",
+        "timeZone": "Asia/Calcutta",
+        "browserName": "Chrome",
+        "browserVersion": "154.0.0.0",
+        "memoryTotalKbytes": "16000000",
+        "acceptHeader": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "deviceExperimentId": "ChxOelk1TlRBME9ERXhOelV6Tnpnek5USTFNZz09EP6aqdYGGP6aqdYG",
+        "rolloutToken": "CN2HpvnOjP3FaxDmgd_F866XAxi_7__G866XAw%3D%3D",
+        "screenWidthPoints": 1920,
+        "screenHeightPoints": 953,
+        "screenPixelDensity": 1,
+        "utcOffsetMinutes": 330,
+        "applicationState": "ACTIVE",
+        "connectionType": "CONN_CELLULAR_4G",
+        "mainAppWebInfo": {
+          "graftUrl": "https://www.youtube.com/playlist?list=PLW7qBZp_Q8Ro",
+          "pwaInstallabilityStatus": "PWA_INSTALLABILITY_STATUS_CAN_BE_INSTALLED",
+          "webDisplayMode": "WEB_DISPLAY_MODE_BROWSER",
+          "isWebNativeShareAvailable": true
+        }
+      },
+      "user": {
+        "lockedSafetyMode": false
+      },
+      "request": {
+        "useSsl": true,
+        "internalExperimentFlags": [],
+        "consistencyTokenJars": [
+          {
+            "encryptedTokenJarContents": "AJDB8J-gQXcptisYrYokgwOcd620V5GCKxf0FaumCPKVzc-pxYQV5BFi1QOTFslqB2y2_5fnWkEizHAKT2-TrtBrtpDH0dddX4mjtewzCMnpYxj80UYR7M70V-kqXVzxB-jihr75zn_3MtZr4fqOh6kp0X6BJmWiwLz_ve1yG1Y",
+            "expirationSeconds": "600"
+          }
+        ]
+      },
+      "clickTracking": {
+        "clickTrackingParams": "CKsDEMY0GAMiEwiqkLP616-XAxWYbioJHR72GL7KAQTetYlk"
+      },
+      "adSignalsInfo": {
+        "params": [
+          {
+            "key": "dt",
+            "value": "1791643018532"
+          },
+          {
+            "key": "flash",
+            "value": "0"
+          },
+          {
+            "key": "frm",
+            "value": "0"
+          },
+          {
+            "key": "u_tz",
+            "value": "330"
+          },
+          {
+            "key": "u_his",
+            "value": "1"
+          },
+          {
+            "key": "u_h",
+            "value": "1080"
+          },
+          {
+            "key": "u_w",
+            "value": "1920"
+          },
+          {
+            "key": "u_ah",
+            "value": "1040"
+          },
+          {
+            "key": "u_aw",
+            "value": "1920"
+          },
+          {
+            "key": "u_cd",
+            "value": "24"
+          },
+          {
+            "key": "bc",
+            "value": "31"
+          },
+          {
+            "key": "bih",
+            "value": "953"
+          },
+          {
+            "key": "biw",
+            "value": "1905"
+          },
+          {
+            "key": "brdim",
+            "value": "0,0,0,0,1920,0,1920,1040,1920,953"
+          },
+          {
+            "key": "vis",
+            "value": "1"
+          },
+          {
+            "key": "wgl",
+            "value": "true"
+          },
+          {
+            "key": "ca_type",
+            "value": "image"
+          }
+        ]
+      }
+    },
+    "actions": [
+      {
+        "setVideoId": "86216799D0BBA849",
+        "action": "ACTION_MOVE_VIDEO_AFTER"
+      }
+    ],
+    "params": "CAFAAQ%3D%3D",
+    "playlistId": "PLW7qBZp_Q8Ro"
+  }
+}
