@@ -62,3 +62,6 @@ production/flow_*.png
 
 
 
+
+# Rendered release videos (too large for Git LFS quota)
+renders/releases/
