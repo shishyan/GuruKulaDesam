@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          lfs: true
+          lfs: false
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Prepare site directory
