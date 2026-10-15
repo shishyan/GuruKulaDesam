@@ -20,6 +20,7 @@ def main():
     parser.add_argument("--gpu", choices=["none", "nvenc"], default="none", help="Enable NVIDIA GPU NVENC acceleration")
     parser.add_argument("--limit", type=int, default=0, help="Limit number of chapters to process (0 = all 37)")
     parser.add_argument("--start-chapter", type=int, default=1, help="Start from specific chapter number (e.g. 4)")
+    parser.add_argument("--parallel-chapters", type=int, default=4, help="Number of entire chapters to render concurrently (e.g. 4 or 6)")
     args = parser.parse_args()
 
     if not CURATED_FILE.exists():
@@ -34,32 +35,40 @@ def main():
     if args.limit > 0:
         chapters = chapters[:args.limit]
 
-    print(f"Starting Batch Cinematic Render for {len(chapters)} chapters...")
-    print(f"GPU Acceleration: {args.gpu}")
+    print(f"Starting Multi-Chapter Parallel Render for {len(chapters)} chapters...")
+    print(f"Concurrent Chapters: {args.parallel_chapters} | GPU: {args.gpu}")
     print("=" * 60)
+
+    from concurrent.futures import ThreadPoolExecutor
+
+    def process_chapter(item):
+        ch_num = item["chapter"]
+        ch_name = item.get("name_ta", f"Chapter {ch_num}")
+        print(f"▶ [STARTED] Chapter {ch_num}: {ch_name}...", flush=True)
+        cmd = [sys.executable, str(BUILD_SCRIPT), "--chapter", str(ch_num), "--gpu", args.gpu]
+        try:
+            res = subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+            print(f"✔ [COMPLETED] Chapter {ch_num}: {ch_name}!", flush=True)
+            return ch_num, True, ""
+        except subprocess.CalledProcessError as e:
+            print(f"✖ [FAILED] Chapter {ch_num}: {ch_name} (code {e.returncode})", flush=True)
+            return ch_num, False, e.output
 
     completed = 0
     failed = []
 
-    for item in chapters:
-        ch_num = item["chapter"]
-        ch_name = item.get("name_ta", f"Chapter {ch_num}")
-        print(f"\n▶ [{completed + 1}/{len(chapters)}] Processing Chapter {ch_num}: {ch_name}...")
-
-        cmd = [sys.executable, str(BUILD_SCRIPT), "--chapter", str(ch_num), "--gpu", args.gpu]
-        try:
-            res = subprocess.run(cmd, check=True)
-            completed += 1
-            print(f"✔ Finished Chapter {ch_num}")
-        except subprocess.CalledProcessError as e:
-            print(f"✖ Failed Chapter {ch_num}: Exit code {e.returncode}")
-            failed.append((ch_num, ch_name))
+    with ThreadPoolExecutor(max_workers=args.parallel_chapters) as executor:
+        for ch_num, success, err_out in executor.map(process_chapter, chapters):
+            if success:
+                completed += 1
+            else:
+                failed.append((ch_num, err_out[-300:] if err_out else ""))
 
     print("\n" + "=" * 60)
     print(f"BATCH RENDER SUMMARY:")
     print(f"Successfully rendered: {completed}/{len(chapters)}")
     if failed:
-        print(f"Failed chapters: {failed}")
+        print(f"Failed chapters: {[f[0] for f in failed]}")
     print("=" * 60)
 
 if __name__ == "__main__":
