@@ -19,8 +19,8 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
 ROOT = Path(__file__).resolve().parents[1]
-FFMPEG = "C:/ffmpeg/bin/ffmpeg.exe"
-FFPROBE = "C:/ffmpeg/bin/ffprobe.exe"
+FFMPEG = shutil.which("ffmpeg") or "C:/ffmpeg/bin/ffmpeg.exe"
+FFPROBE = shutil.which("ffprobe") or "C:/ffmpeg/bin/ffprobe.exe"
 OVERLAY = ROOT / "production" / "sacred_lamp_dhoopa_overlay_1280x720.png"
 DRIZZLE = ROOT / "production" / "upward_divine_drizzle_loop.mp4"
 FPS = 24
