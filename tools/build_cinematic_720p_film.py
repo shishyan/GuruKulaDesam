@@ -23,6 +23,18 @@ FFMPEG = shutil.which("ffmpeg") or "C:/ffmpeg/bin/ffmpeg.exe"
 FFPROBE = shutil.which("ffprobe") or "C:/ffmpeg/bin/ffprobe.exe"
 OVERLAY = ROOT / "production" / "sacred_lamp_dhoopa_overlay_1280x720.png"
 DRIZZLE = ROOT / "production" / "upward_divine_drizzle_loop.mp4"
+
+# Validate or auto-generate valid PNG overlay if corrupt/missing
+try:
+    if not OVERLAY.exists() or OVERLAY.stat().st_size < 1000 or not OVERLAY.read_bytes().startswith(b'\x89PNG'):
+        from tools.sacred_overlay_data import SACRED_OVERLAY_PNG_B64
+        import base64
+        OVERLAY.parent.mkdir(parents=True, exist_ok=True)
+        OVERLAY.write_bytes(base64.b64decode(SACRED_OVERLAY_PNG_B64))
+        print("Restored valid sacred_lamp_dhoopa_overlay_1280x720.png from embedded asset.")
+except Exception as e:
+    pass
+
 FPS = 24
 SHOT_DURATION = 6.5
 FADE_DURATION = 1.0
