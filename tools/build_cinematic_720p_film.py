@@ -90,11 +90,28 @@ def main():
     enc_opts = ["-preset", "fast", "-cq", "19"] if use_nvenc else ["-preset", "veryfast", "-crf", "17"]
 
     cur = {c["chapter"]: c for c in json.loads((ROOT / "production/curated_37_waiting_adhigarams.json").read_text(encoding="utf-8"))}
-    audio = Path(cur[ch]["file_path"])
+    raw_audio_path = cur[ch]["file_path"]
+    
+    # Cross-platform audio path resolution
+    candidates = [
+        Path(raw_audio_path),
+        Path("/content/audio") / f"audio_ch{ch:03d}.wav",
+        Path("/content/audio") / Path(raw_audio_path).name,
+        ROOT / "production" / "audio_staging" / f"audio_ch{ch:03d}.wav",
+    ]
+    audio = None
+    for cand in candidates:
+        if cand.exists():
+            audio = cand
+            break
+            
+    if audio is None:
+        raise FileNotFoundError(f"Audio file not found for Chapter {ch}. Tried: {[str(c) for c in candidates]}")
+
     adur = dur(audio)
     
     imgs = collect_images_ordered(ch)
-    print(f"Chapter {ch}: {len(imgs)} curated unique images | Audio: {adur:.2f}s | Encoder: {vcodec}")
+    print(f"Chapter {ch}: {len(imgs)} curated unique images | Audio: {adur:.2f}s ({audio.name}) | Encoder: {vcodec}")
 
     tmp = ROOT / "production" / "temp_build" / f"cinematic_720p_ch{ch:03d}"
     shutil.rmtree(tmp, ignore_errors=True)
