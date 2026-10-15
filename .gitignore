@@ -66,3 +66,6 @@ production/flow_*.png
 production/browser_profile_fresh/
 production/temp_extend/
 
+
+# Rendered release videos (too large for Git LFS quota)
+renders/releases/
