@@ -9,9 +9,8 @@ notebook = {
                 "# 🎬 Gurukuladesam Batch Video Render Pipeline (NVIDIA L4 GPU NVENC)\n",
                 "\n",
                 "High-speed parallel batch rendering powered by **NVIDIA Ada Lovelace L4 (24GB VRAM)** with:\n",
-                "- Dedicated **8th Gen NVENC (AV1 / H.264)** hardware video encoding units.\n",
-                "- Multi-stream parallel encoding (< 25s per 4-minute master video).\n",
-                "- 5–7s dynamic image transitions with 1.0s `xfade` (cross-dissolve).\n",
+                "- Dedicated **8th Gen NVENC (H.264 / AV1)** hardware video encoder.\n",
+                "- Dynamic 5–7s transitions with 1.0s `xfade` (cross-dissolve).\n",
                 "- 4-way cinematic pans + 3D parabolic curved arc camera moves.\n",
                 "- 100% upward divine drizzle / vibhuti flakes atmospheric composite.\n"
             ]
@@ -38,6 +37,8 @@ notebook = {
                 "import os\n",
                 "if not os.path.exists('/content/Gurukuladesam'):\n",
                 "    !git clone -b main https://github.com/shishyan/GuruKulaDesam.git /content/Gurukuladesam\n",
+                "else:\n",
+                "    !cd /content/Gurukuladesam && git pull origin main\n",
                 "\n",
                 "%cd /content/Gurukuladesam\n",
                 "!pip install -q Pillow numpy tqdm requests mutagen\n"
@@ -49,9 +50,58 @@ notebook = {
             "metadata": {},
             "outputs": [],
             "source": [
-                "# Step 3: Fast GPU Batch Render with L4 NVENC (Starting from Chapter 4 in parallel)\n",
-                "# Pass --gpu nvenc and --start-chapter 4\n",
-                "!python tools/batch_render_all_cinematic.py --gpu nvenc --start-chapter 4\n"
+                "# Step 3: Fast Audio & Image Sync for Chapter 4\n",
+                "import requests, json, base64\n",
+                "from pathlib import Path\n",
+                "\n",
+                "tunnel_url = 'https://a89df53bc954449f-49-206-115-211.serveousercontent.com'\n",
+                "\n",
+                "# Download and assemble Chapter 4 audio (14 parts)\n",
+                "audio_dest = Path('/content/audio/audio_ch004.wav')\n",
+                "audio_dest.parent.mkdir(parents=True, exist_ok=True)\n",
+                "if not audio_dest.exists() or audio_dest.stat().st_size < 50 * 1024 * 1024:\n",
+                "    print('Downloading audio_ch004 in 14 parts...')\n",
+                "    with open(audio_dest, 'wb') as f:\n",
+                "        for p in range(14):\n",
+                "            part_file = f'audio_ch004_part_{p:02d}.bin'\n",
+                "            r = requests.get(f'{tunnel_url}/{part_file}')\n",
+                "            f.write(r.content)\n",
+                "    print(f'✔ Assembled audio_ch004.wav ({audio_dest.stat().st_size / (1024*1024):.1f} MB)')\n",
+                "\n",
+                "# Download and assemble Chapter 4 images (5 parts)\n",
+                "ch4_img_dir = Path('/content/Gurukuladesam/production/scene_images/ch004')\n",
+                "if not ch4_img_dir.exists() or len(list(ch4_img_dir.glob('*.jpg'))) < 10:\n",
+                "    print('Downloading ch004 image bundle in 5 parts...')\n",
+                "    bundle_bytes = bytearray()\n",
+                "    for p in range(5):\n",
+                "        r = requests.get(f'{tunnel_url}/ch004_part_{p:02d}.bin')\n",
+                "        bundle_bytes.extend(r.content)\n",
+                "    bundle = json.loads(bundle_bytes.decode('utf-8'))\n",
+                "    for rel_path, b64 in bundle.items():\n",
+                "        dest = Path('/content/Gurukuladesam') / rel_path\n",
+                "        dest.parent.mkdir(parents=True, exist_ok=True)\n",
+                "        dest.write_bytes(base64.b64decode(b64))\n",
+                "    print(f'✔ Unpacked {len(bundle)} images for Chapter 4')\n",
+                "\n",
+                "# Download atmospheric loops if needed\n",
+                "for asset in ['upward_divine_drizzle_loop.mp4', 'sacred_lamp_dhoopa_overlay_1280x720.png']:\n",
+                "    dest = Path('/content/Gurukuladesam/production') / asset\n",
+                "    if not dest.exists():\n",
+                "        r = requests.get(f'{tunnel_url}/{asset}')\n",
+                "        dest.write_bytes(r.content)\n",
+                "        print(f'✔ Downloaded {asset}')\n"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "# Step 4: High-Speed NVENC Master Render for Chapter 4\n",
+                "%cd /content/Gurukuladesam\n",
+                "!python tools/build_cinematic_720p_film.py --chapter 4 --gpu nvenc\n",
+                "!ls -lh renders/releases/thirukkural_ch004_cinematic_720p_master.mp4\n"
             ]
         }
     ],
@@ -77,4 +127,4 @@ notebook = {
 with open("colab_batch_render_l4.ipynb", "w", encoding="utf-8") as f:
     json.dump(notebook, f, indent=2)
 
-print("Created colab_batch_render_l4.ipynb successfully with NVIDIA L4 GPU default.")
+print("Regenerated colab_batch_render_l4.ipynb with autonomous Chapter 4 sync and NVENC render.")
