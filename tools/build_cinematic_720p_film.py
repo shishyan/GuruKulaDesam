@@ -56,10 +56,22 @@ def dur(p):
     return float(subprocess.check_output([FFPROBE, "-v", "error", "-show_entries", "format=duration",
                  "-of", "default=nw=1:nk=1", str(p)]).decode().strip())
 
+def is_valid_image(p):
+    try:
+        if not p.is_file() or p.stat().st_size < 1000:
+            return False
+        header = p.read_bytes()[:16]
+        # JPEG (\xff\xd8\xff), PNG (\x89PNG\r\n\x1a\n), WEBP (RIFF...WEBP)
+        if header.startswith(b'\xff\xd8\xff') or header.startswith(b'\x89PNG\r\n\x1a\n') or (header.startswith(b'RIFF') and b'WEBP' in header):
+            return True
+        return False
+    except Exception:
+        return False
+
 def collect_images_ordered(chapter_num):
     ch_dir = ROOT / "production" / "scene_images" / f"ch{chapter_num:03d}"
-    base_imgs = sorted(ch_dir.glob("scene_*.jpg"))
-    extra_imgs = sorted((ch_dir / "extra").glob("*.jpg"))
+    base_imgs = [img for img in sorted(ch_dir.glob("scene_*.*")) if is_valid_image(img)]
+    extra_imgs = [img for img in sorted((ch_dir / "extra").glob("*.*")) if is_valid_image(img)]
 
     closeups = [img for img in extra_imgs if "closeup" in img.name]
     virtues = [img for img in extra_imgs if "virtue" in img.name or "google" in img.name or "imagen" in img.name]
@@ -269,21 +281,18 @@ def main():
 
     # Ensure overlay is verified as a valid PNG before adding to ffmpeg inputs
     overlay_valid = False
-    if OVERLAY.exists():
-        try:
-            b = OVERLAY.read_bytes()
-            if b.startswith(b'\x89PNG\r\n\x1a\n'):
-                overlay_valid = True
-            else:
-                # Corrupt HTML or invalid file -> repair from base64
-                from tools.sacred_overlay_data import SACRED_OVERLAY_PNG_B64
-                import base64
-                OVERLAY.write_bytes(base64.b64decode(SACRED_OVERLAY_PNG_B64))
-                overlay_valid = OVERLAY.read_bytes().startswith(b'\x89PNG\r\n\x1a\n')
-                if overlay_valid:
-                    print("  Re-generated valid sacred_lamp_dhoopa_overlay_1280x720.png.")
-        except Exception:
-            overlay_valid = False
+    try:
+        from tools.sacred_overlay_data import SACRED_OVERLAY_PNG_B64
+        import base64
+        if not OVERLAY.exists() or OVERLAY.stat().st_size < 1000 or not OVERLAY.read_bytes().startswith(b'\x89PNG\r\n\x1a\n'):
+            OVERLAY.parent.mkdir(parents=True, exist_ok=True)
+            OVERLAY.write_bytes(base64.b64decode(SACRED_OVERLAY_PNG_B64))
+            print("  Re-generated valid sacred_lamp_dhoopa_overlay_1280x720.png from embedded asset.")
+        if OVERLAY.exists() and OVERLAY.stat().st_size > 1000 and OVERLAY.read_bytes().startswith(b'\x89PNG\r\n\x1a\n'):
+            overlay_valid = True
+    except Exception as e:
+        print(f"  Warning: Overlay check/recovery failed ({e}), proceeding without overlay.")
+        overlay_valid = False
 
     if overlay_valid:
         ins += ["-loop", "1", "-t", f"{adur:.2f}", "-i", str(OVERLAY)]
