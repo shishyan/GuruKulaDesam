@@ -49,9 +49,9 @@ notebook = {
             "metadata": {},
             "outputs": [],
             "source": [
-                "# Step 3: Fast GPU Batch Render with L4 NVENC\n",
-                "# Pass --gpu nvenc to enable full hardware acceleration\n",
-                "!python tools/batch_render_all_cinematic.py --gpu nvenc\n"
+                "# Step 3: Fast GPU Batch Render with L4 NVENC (Starting from Chapter 4 in parallel)\n",
+                "# Pass --gpu nvenc and --start-chapter 4\n",
+                "!python tools/batch_render_all_cinematic.py --gpu nvenc --start-chapter 4\n"
             ]
         }
     ],

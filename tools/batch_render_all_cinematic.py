@@ -19,6 +19,7 @@ def main():
     parser = argparse.ArgumentParser(description="Batch Render 720p Cinematic Devotional Films")
     parser.add_argument("--gpu", choices=["none", "nvenc"], default="none", help="Enable NVIDIA GPU NVENC acceleration")
     parser.add_argument("--limit", type=int, default=0, help="Limit number of chapters to process (0 = all 37)")
+    parser.add_argument("--start-chapter", type=int, default=1, help="Start from specific chapter number (e.g. 4)")
     args = parser.parse_args()
 
     if not CURATED_FILE.exists():
@@ -28,6 +29,8 @@ def main():
     with open(CURATED_FILE, "r", encoding="utf-8") as f:
         chapters = json.load(f)
 
+    # Filter chapters starting from start_chapter
+    chapters = [c for c in chapters if c["chapter"] >= args.start_chapter]
     if args.limit > 0:
         chapters = chapters[:args.limit]
 
