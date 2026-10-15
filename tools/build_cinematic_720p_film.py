@@ -124,36 +124,31 @@ def main():
     for i in range(needed_shots):
         selected_imgs.append(imgs[i % len(imgs)])
 
-    print(f"Rendering {len(selected_imgs)} cinematic 720p camera moves (Pan L->R, R->L, Zoom In, Zoom Out, 3D Curved Arc Pan)...")
-    clip_files = []
+    print(f"Rendering {len(selected_imgs)} cinematic 720p camera moves concurrently across parallel GPU/CPU threads...")
+    from concurrent.futures import ThreadPoolExecutor
     
-    for i, im in enumerate(selected_imgs):
+    def render_single_clip(item):
+        i, im = item
         out_clip = tmp / f"clip_{i:03d}.mp4"
         move_type = i % 5
         
-        # Native 720p scaling (1536x864 source crop down to 1280x720) for sharp clean grain-free edges
         if move_type == 0:
-            # Cinematic Pan Left-to-Right
-            vf = (f"scale=1536:864:flags=lanczos,"
+            vf = (f"scale=1536:864:flags=bicubic,"
                   f"crop=1280:720:(in_w-out_w)*t/{SHOT_DURATION}:(in_h-out_h)/2,"
                   f"fps={FPS},setsar=1")
         elif move_type == 1:
-            # Cinematic Pan Right-to-Left
-            vf = (f"scale=1536:864:flags=lanczos,"
+            vf = (f"scale=1536:864:flags=bicubic,"
                   f"crop=1280:720:(in_w-out_w)*(1-t/{SHOT_DURATION}):(in_h-out_h)/2,"
                   f"fps={FPS},setsar=1")
         elif move_type == 2:
-            # Slow push-in with gentle upward drift
-            vf = (f"scale=1536:864:flags=lanczos,"
+            vf = (f"scale=1536:864:flags=bicubic,"
                   f"crop=1280:720:(in_w-out_w)/2:(in_h-out_h)*(1-t/{SHOT_DURATION}),"
                   f"fps={FPS},setsar=1")
         elif move_type == 3:
-            # Slow pull-out with gentle center focus
-            vf = (f"scale=1536:864:flags=lanczos,"
+            vf = (f"scale=1536:864:flags=bicubic,"
                   f"crop=1280:720:(in_w-out_w)/2:(in_h-out_h)*t/{SHOT_DURATION},"
                   f"fps={FPS},setsar=1")
         else:
-            # 3D Parabolic Curved Arc Pan (crane/dolly parallax curve)
             total_frames = int(SHOT_DURATION * FPS)
             vf = (f"zoompan=z='1.0+0.12*(0.5-0.5*cos(PI*on/{total_frames}))':"
                   f"x='(iw-iw/zoom)*(0.5+0.4*cos(PI*on/{total_frames}))':"
@@ -167,9 +162,18 @@ def main():
             "-c:v", vcodec, *enc_opts,
             "-pix_fmt", "yuv420p", "-an", str(out_clip)
         ])
-        clip_files.append(out_clip)
-        if (i + 1) % 5 == 0 or (i + 1) == len(selected_imgs):
-            print(f"  Rendered camera moves: {i+1}/{len(selected_imgs)}...", flush=True)
+        return i, out_clip
+
+    # 8-way parallel execution to saturate L4 GPU and 12-core High-RAM host
+    workers = 8 if use_nvenc else 4
+    clip_files = [None] * len(selected_imgs)
+    done_count = 0
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        for idx, path in executor.map(render_single_clip, enumerate(selected_imgs)):
+            clip_files[idx] = path
+            done_count += 1
+            if done_count % 5 == 0 or done_count == len(selected_imgs):
+                print(f"  Parallel clips rendered: {done_count}/{len(selected_imgs)}...", flush=True)
 
     print("Assembling seamless cross-dissolve transitions (xfade 1.0s)...")
     stage_clips = []
