@@ -164,28 +164,27 @@ def main():
         ])
         return i, out_clip
 
-    # 8-way parallel execution to saturate L4 GPU and 12-core High-RAM host
-    workers = 8 if use_nvenc else 4
+    # 24-way parallel execution to fully saturate L4 NVENC engine & host cores
+    workers = 24 if use_nvenc else 4
     clip_files = [None] * len(selected_imgs)
     done_count = 0
     with ThreadPoolExecutor(max_workers=workers) as executor:
         for idx, path in executor.map(render_single_clip, enumerate(selected_imgs)):
             clip_files[idx] = path
             done_count += 1
-            if done_count % 5 == 0 or done_count == len(selected_imgs):
+            if done_count % 10 == 0 or done_count == len(selected_imgs):
                 print(f"  Parallel clips rendered: {done_count}/{len(selected_imgs)}...", flush=True)
 
-    print("Assembling seamless cross-dissolve transitions (xfade 1.0s)...")
-    stage_clips = []
+    print("Assembling seamless cross-dissolve transitions (xfade 1.0s in parallel)...")
     chunk_size = 8
+    chunks = [clip_files[c_idx:c_idx + chunk_size] for c_idx in range(0, len(clip_files), chunk_size)]
     
-    for c_idx in range(0, len(clip_files), chunk_size):
-        chunk = clip_files[c_idx:c_idx + chunk_size]
+    def render_stage_chunk(item):
+        s_idx, chunk = item
         if len(chunk) == 1:
-            stage_clips.append(chunk[0])
-            continue
+            return s_idx, chunk[0]
             
-        stage_out = tmp / f"stage_{c_idx // chunk_size:02d}.mp4"
+        stage_out = tmp / f"stage_{s_idx:02d}.mp4"
         inputs = []
         for cf in chunk:
             inputs.extend(["-i", str(cf)])
@@ -207,8 +206,13 @@ def main():
             "-c:v", vcodec, *enc_opts,
             "-pix_fmt", "yuv420p", str(stage_out)
         ])
-        stage_clips.append(stage_out)
-        print(f"  Completed dissolve chunk {len(stage_clips)}...", flush=True)
+        return s_idx, stage_out
+
+    stage_clips = [None] * len(chunks)
+    with ThreadPoolExecutor(max_workers=min(workers, len(chunks))) as executor:
+        for s_idx, s_path in executor.map(render_stage_chunk, enumerate(chunks)):
+            stage_clips[s_idx] = s_path
+            print(f"  Completed dissolve chunk {s_idx + 1}/{len(chunks)}...", flush=True)
 
     # Join stage clips with xfade
     if len(stage_clips) == 1:
