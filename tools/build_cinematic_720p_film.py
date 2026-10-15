@@ -267,7 +267,25 @@ def main():
     else:
         print(f"  Note: Drizzle omitted for Chapter {ch} (theme mood / setting)")
 
+    # Ensure overlay is verified as a valid PNG before adding to ffmpeg inputs
+    overlay_valid = False
     if OVERLAY.exists():
+        try:
+            b = OVERLAY.read_bytes()
+            if b.startswith(b'\x89PNG\r\n\x1a\n'):
+                overlay_valid = True
+            else:
+                # Corrupt HTML or invalid file -> repair from base64
+                from tools.sacred_overlay_data import SACRED_OVERLAY_PNG_B64
+                import base64
+                OVERLAY.write_bytes(base64.b64decode(SACRED_OVERLAY_PNG_B64))
+                overlay_valid = OVERLAY.read_bytes().startswith(b'\x89PNG\r\n\x1a\n')
+                if overlay_valid:
+                    print("  Re-generated valid sacred_lamp_dhoopa_overlay_1280x720.png.")
+        except Exception:
+            overlay_valid = False
+
+    if overlay_valid:
         ins += ["-loop", "1", "-t", f"{adur:.2f}", "-i", str(OVERLAY)]
         fc.append(f"[{in_idx}:v]scale=1280:720,format=rgba[o]")
         fc.append(f"{cur_v}[o]overlay=0:0:shortest=1:format=auto,format=yuv420p[vf]")
