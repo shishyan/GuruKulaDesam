@@ -44,6 +44,11 @@ def main():
     def process_chapter(item):
         ch_num = item["chapter"]
         ch_name = item.get("name_ta", f"Chapter {ch_num}")
+        out_master = ROOT / "renders" / "releases" / f"thirukkural_ch{ch_num:03d}_cinematic_720p_master.mp4"
+        if out_master.exists() and out_master.stat().st_size > 10 * 1024 * 1024:
+            print(f"⏩ [SKIPPED] Chapter {ch_num}: {ch_name} already rendered ({out_master.stat().st_size / 1e6:.1f} MB)", flush=True)
+            return ch_num, True, ""
+
         print(f"▶ [STARTED] Chapter {ch_num}: {ch_name}...", flush=True)
         cmd = [sys.executable, str(BUILD_SCRIPT), "--chapter", str(ch_num), "--gpu", args.gpu]
         try:
