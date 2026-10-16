@@ -19,6 +19,8 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 FFMPEG = shutil.which("ffmpeg") or "C:/ffmpeg/bin/ffmpeg.exe"
 FFPROBE = shutil.which("ffprobe") or "C:/ffmpeg/bin/ffprobe.exe"
 OVERLAY = ROOT / "production" / "sacred_lamp_dhoopa_overlay_1280x720.png"
@@ -308,7 +310,7 @@ def main():
     out = ROOT / "renders" / "releases" / f"thirukkural_ch{ch:03d}_cinematic_720p_master.mp4"
     out.parent.mkdir(parents=True, exist_ok=True)
 
-    final_enc = ["-c:v", vcodec] + (["-preset", "fast", "-cq", "18"] if use_nvenc else ["-preset", "medium", "-crf", "17"])
+    final_enc = ["-c:v", vcodec] + (["-preset", "fast", "-cq", "18"] if use_nvenc else ["-preset", "veryfast", "-crf", "18"])
     run([
         FFMPEG, "-y", "-loglevel", "error", *ins,
         "-filter_complex", ";".join(fc),
