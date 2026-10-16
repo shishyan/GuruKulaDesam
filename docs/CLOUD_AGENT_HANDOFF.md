@@ -107,3 +107,66 @@ When picking up this pipeline in a cloud environment:
      git commit -m "Add 24 generated scenes for <theme>"
      git push origin main
      ```
+
+---
+
+## 5. Colab MCP Server Configuration & Troubleshooting
+
+### Why the Cloud PC Agent Fails to Start Colab MCP:
+1. **Prerequisites Missing:** `colab-mcp` is an executable python package distributed via `uv` / `uvx`. It requires `uv` to be installed on the system path (`pip install uv`).
+2. **Browser Connection Requirement:** `colab-mcp` is **not** a headless REST client. It is a bridge between the local agent and an **active browser session** running Google Colab. The notebook (`Non-Thirukkural-Videos.ipynb`) must be opened in Chrome on that machine, and the agent must first call `open_colab_browser_connection` to unlock the execution tools (`run_code_cell`, `get_cells`, `update_cell`, etc.).
+3. **Client Capability:** The MCP client must support `notifications/tools/list_changed` (standard in Antigravity / Gemini CLI / Windsurf).
+
+### Working Configuration (`mcp_config.json`):
+Location:
+- Windows: `~/.gemini/config/mcp_config.json` or `.agents/mcp_config.json`
+- Linux / Cloud PC: `~/.gemini/config/mcp_config.json` or `~/.config/antigravity/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "colab-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/googlecolab/colab-mcp",
+        "colab-mcp"
+      ],
+      "timeout": 30000
+    }
+  }
+}
+```
+
+*Note:* If using Windows with a specific Python/uv install:
+```json
+{
+  "mcpServers": {
+    "colab-mcp": {
+      "command": "C:\\Python310\\Scripts\\uvx.exe",
+      "args": [
+        "--from",
+        "git+https://github.com/googlecolab/colab-mcp",
+        "colab-mcp"
+      ]
+    }
+  }
+}
+```
+
+### Step-by-Step Activation Sequence for Cloud PC Agents:
+1. **Install uv:**
+   ```bash
+   pip install uv
+   ```
+2. **Verify CLI runs:**
+   ```bash
+   uvx --from git+https://github.com/googlecolab/colab-mcp colab-mcp
+   ```
+3. **Open Colab in Browser:**
+   Open Chrome and navigate to the notebook URL:
+   `https://colab.research.google.com/drive/1D8TVFR5n9WRrxKNP6kSlODvrlSem0zcB`
+4. **Trigger Initial MCP Handshake:**
+   The agent must first invoke:
+   `open_colab_browser_connection()`
+   Once connected, the notebook tools (`run_code_cell`, `get_cells`, `update_cell`) dynamically register.

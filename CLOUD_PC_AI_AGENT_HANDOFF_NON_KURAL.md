@@ -103,3 +103,35 @@ git add production/scene_images/<theme_name>
 git commit -m "Add 24 generated scenes for <theme_name>"
 git push origin main
 ```
+
+---
+
+## 4. COLAB MCP SERVER SETUP & TROUBLESHOOTING
+
+If the cloud PC agent reports errors starting or finding Colab MCP tools:
+
+### Why It Fails
+1. **`uv` not installed:** `colab-mcp` is launched via `uvx`. Run `pip install uv`.
+2. **Browser session not open:** `colab-mcp` is **not a standalone REST API**. It is a bridge to the Google Chrome tab running Colab. The user or VM must have Google Chrome open with the notebook:  
+   `https://colab.research.google.com/drive/1D8TVFR5n9WRrxKNP6kSlODvrlSem0zcB`
+3. **Connection handshake not called:** Before notebook tools like `run_code_cell` or `get_cells` appear, the agent **must call `open_colab_browser_connection`**. Only then does Colab MCP dynamically register cell execution tools.
+
+### Correct `mcp_config.json` Configuration
+File location: `~/.gemini/config/mcp_config.json` or `.agents/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "colab-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/googlecolab/colab-mcp",
+        "colab-mcp"
+      ],
+      "timeout": 30000
+    }
+  }
+}
+```
+*(On Windows systems where `uvx` is in Python Scripts, replace `"command": "uvx"` with `"C:\\Python310\\Scripts\\uvx.exe"` or the full path).*
