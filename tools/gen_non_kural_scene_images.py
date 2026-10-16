@@ -16,12 +16,26 @@ if hasattr(sys.stdout, "reconfigure"):
 
 ROOT = Path(__file__).resolve().parents[1]
 
-KEY = os.environ.get("GEMINI_API_KEY")
-if not KEY and (ROOT / ".env").exists():
-    for ln in (ROOT / ".env").read_text(encoding="utf-8").splitlines():
-        if ln.startswith("GEMINI_API_KEY="):
-            KEY = ln.split("=", 1)[1].strip().strip('"').strip("'")
-client = genai.Client(api_key=KEY, http_options=types.HttpOptions(timeout=120000))
+_CLIENT = None
+def get_client():
+    global _CLIENT
+    if _CLIENT is not None:
+        return _CLIENT
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key and (ROOT / ".env").exists():
+        for ln in (ROOT / ".env").read_text(encoding="utf-8").splitlines():
+            if ln.startswith("GEMINI_API_KEY="):
+                key = ln.split("=", 1)[1].strip().strip('"').strip("'")
+    if not key:
+        try:
+            from google.colab import userdata
+            key = userdata.get("GEMINI_API_KEY")
+        except Exception:
+            pass
+    if not key:
+        raise ValueError("GEMINI_API_KEY not found. Please set GEMINI_API_KEY environment variable or Colab secret.")
+    _CLIENT = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=120000))
+    return _CLIENT
 
 BASE_STYLE = (
     "A 16:9 cinematic photorealistic devotional photograph, 8k, Tamil Nadu, vivid, warm, and sacred. "
@@ -59,6 +73,7 @@ def render_image(prompt, out_path, style=BASE_STYLE):
     print(f"  🎨 Generating {out_path.name}: {prompt[:80]}...")
     for attempt in range(1, 6):
         try:
+            client = get_client()
             r = client.models.generate_content(
                 model="gemini-2.5-flash-image",
                 contents=style + prompt,
