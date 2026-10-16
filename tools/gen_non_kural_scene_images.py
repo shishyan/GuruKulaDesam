@@ -234,6 +234,8 @@ THIRUPPARAMKUNRAM_PROMPTS = [
     "Humble devotee performing devotional rolling circumambulation (Angapradakshinam) around the cool stone outer corridors of the sanctum.",
     # S22: Bronze Nataraja shrine in rock cave
     "Rare rock-cut representation of Lord Nataraja performing the cosmic dance within the cave pavilion, shadows and highlights dancing in lamplight.",
+    # S23: Devotees singing Thevaram hymns at the outer rock corridor
+    "Group of elder Tamil devotees seated in the breezy rock-cut corridor chanting ancient Thevaram verses with hand cymbals, peaceful amber temple lighting.",
     # S24: Starry night over the illuminated monolithic rock
     "The massive sacred rocky hill of Thirupparamkunram glowing in the night illuminated by temple floodlights under a brilliant star-filled sky."
 ]
@@ -290,11 +292,63 @@ THIRUAVINANKUDI_PROMPTS = [
     "Serene twilight view over the silhouettes of the Western Ghats mountains and green plains from the temple corridor, lone evening star appearing."
 ]
 
+THIRUERAGAM_PROMPTS = [
+    # S01: Swamimalai sacred hillock representing 60 Tamil years
+    "Sweeping golden sunrise view of Swamimalai temple (திருஏரகம் - Fourth Arupadai Veedu) perched atop its sacred artificial hillock with 60 stone steps representing the 60 Tamil years, overlooking the Kaveri river delta.",
+    # S02: Lord Murugan teaching Pranava Mantra OM to Lord Shiva
+    "Sacred divine darshan of child Lord Murugan (Swaminatha Swami) seated as the Supreme Preceptor (Guru) imparting the secret cosmic Pranava Mantra 'OM' into the ear of Lord Shiva who listens reverently with bowed head.",
+    # S03: Sacred Sanctum of Swaminatha Swami
+    "Luminous granite inner sanctum of Lord Swaminatha Swami standing majestic in golden armour, holding the divine Vel, adorned with diamond crown, fragrant bilva and jasmine garlands under flickering brass lamps.",
+    # S04: Sixty sacred granite steps
+    "Devotees climbing barefoot up the steep flight of 60 granite steps, each step inscribed with the name of a Tamil year (Prabhava to Kshaya) lit by brass oil deepams at twilight.",
+    # S05: Sthapathi artisans sculpting traditional bronze icons
+    "Famous Swamimalai master bronze sculptors (Sthapathis) applying the ancient lost-wax casting technique (cire perdue), molten bronze glowing orange as it pours into clay moulds.",
+    # S06: Netra Dhanam ceremony of newly cast bronze icon
+    "Master bronze sculptor gently opening the eyes (Netra Dhanam) of a newly crafted sacred Murugan bronze idol with a golden stylus, surrounded by incense smoke.",
+    # S07: Sacred elephant vehicle (Airavatam) shrine
+    "White divine elephant Airavatam statue standing proudly as the mount before Lord Murugan's sanctum, draped in silk brocade and marigold garlands.",
+    # S08: Kaveri river flowing through Kumbakonam delta
+    "Lush green paddy fields and coconut groves flanking the sacred Kaveri (Cauvery) river near Swamimalai, sparkling under gentle morning rays.",
+    # S09: Priests performing Vibhuti Abhishekam
+    "Cascades of cool sacred white vibhuti (holy ash) cascading over the six-foot stone moolavar idol of Swaminatha Swami, creating an awe-inspiring divine presence.",
+    # S10: Devotee family chanting Pranava Mantra
+    "Devout Tamil family with folded hands chanting 'Om Saravanabhava' and 'Om' in deep meditation inside the quiet hypostyle stone hall.",
+    # S11: Golden kavadi procession
+    "Spectacular procession of devotees carrying ornate brass and gold-plated Kavadis up the 60 sacred steps to the sound of blowing conches and thunderous thavil drums.",
+    # S12: Inner corridor of sixty lingams
+    "Quiet ancient corridor housing shrines to Lord Shiva and Goddess Meenakshi at the base of the hill, soft rays of morning sun illuminating intricate stonework.",
+    # S13: Golden Vel decorated with yellow champaka flowers
+    "Intricate close-up of the divine golden Vel anointed with pure sandalwood paste and decorated with rare fragrant golden Champaka flowers.",
+    # S14: Traditional Nadaswaram recital on temple steps
+    "Eminent traditional musicians playing melodic ragas on the Nadaswaram pipe accompanied by thavil drums on the temple courtyard steps at sunset.",
+    # S15: Golden Vimanam above the sanctum
+    "Pristine golden Vimanam tower directly above the sanctum shining brilliantly against a crystal blue sky, sculpted with miniature gold Murugan avatars.",
+    # S16: Paal Abhishekam with pure cow milk
+    "Streams of pure white fresh cow milk bathing the radiant bronze Utsava Murti, splashing into silver drainage trays adorned with pink rose petals.",
+    # S17: Devotees lighting 60 ghee lamps
+    "Rows of 60 golden brass ghee lamps lit along the stone parapet walls, reflecting across the smooth granite floor in the cool temple breeze.",
+    # S18: Ancient palm leaf library of Agamic treatises
+    "Revered Tamil Agama scholars studying ancient palm-leaf manuscripts containing temple architecture and bronze casting canons (Shilpa Shastras).",
+    # S19: Sunset over the temple tank (Vajra Theertham)
+    "Vajra Theertham temple sacred water tank glowing like liquid copper at dusk, reflecting the illuminated hillock shrine and palm trees.",
+    # S20: Chariot car festival of Swamimalai
+    "Grand wooden temple chariot decorated with rich crimson and saffron silks moving through temple streets surrounded by tens of thousands of joyful pilgrims.",
+    # S21: Devotee receiving golden crown satari blessing
+    "Priest placing the sacred golden Sadari (crown representing the Lord's feet) upon a kneeling pilgrim's head with Vedic mantras.",
+    # S22: Bronze peacock lamp (Mayil Vilakku) glowing
+    "Antique bronze hanging oil lamp shaped like an elegant peacock with oil burning in its deep bowl, casting intricate geometric shadows on carved granite pillars.",
+    # S23: Distributing prasadam of sakkarai pongal
+    "Piping hot aromatic ghee-laden Sakkarai Pongal garnished with roasted cashews and raisins served on fresh green banana leaves to eager devotees.",
+    # S24: Panoramic night view of Swamimalai hillock
+    "Magical night view of Swamimalai hilltop temple illuminated with golden lights, rising like a jewel above the tranquil Tanjore delta landscape under the stars."
+]
+
 THEME_REGISTRY = {
     "kunram_erinthai": KUNRAM_ERINTHAI_PROMPTS,
     "pazhamai": PAZHAMAI_PROMPTS,
     "thirupparamkunram": THIRUPPARAMKUNRAM_PROMPTS,
     "thiruavinankudi": THIRUAVINANKUDI_PROMPTS,
+    "thirueragam": THIRUERAGAM_PROMPTS,
 }
 
 def generate_track_scenes(theme_key, out_dir):
