@@ -11,6 +11,9 @@ Uploads a rendered Thirukkural Master Film to YouTube as PRIVATE draft:
 import os, sys, json, time, argparse
 from pathlib import Path
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN_FILE = ROOT / "data" / "credentials" / "token.json"
 MANIFEST_FILE = ROOT / "production" / "metadata" / "curated_37_youtube_manifest.json"
