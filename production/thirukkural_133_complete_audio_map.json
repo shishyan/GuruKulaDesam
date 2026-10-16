@@ -1,0 +1,800 @@
+[
+  {
+    "chapter": 1,
+    "chapter_name": "கடவுள் வாழ்த்து",
+    "audio_file": "audio_ch001.wav",
+    "size_mb": 63.03
+  },
+  {
+    "chapter": 2,
+    "chapter_name": "வான் சிறப்பு",
+    "audio_file": "audio_ch002.wav",
+    "size_mb": 57.54
+  },
+  {
+    "chapter": 3,
+    "chapter_name": "நீத்தார் பெருமை",
+    "audio_file": "audio_ch003.wav",
+    "size_mb": 51.22
+  },
+  {
+    "chapter": 4,
+    "chapter_name": "அறன் வலியுறுத்தல்",
+    "audio_file": "audio_ch004.wav",
+    "size_mb": 56.38
+  },
+  {
+    "chapter": 5,
+    "chapter_name": "இல்வாழ்க்கை",
+    "audio_file": "audio_ch005.wav",
+    "size_mb": 52.39
+  },
+  {
+    "chapter": 6,
+    "chapter_name": "வாழ்க்கைத் துணைநலம்",
+    "audio_file": "audio_ch006.wav",
+    "size_mb": 58.2
+  },
+  {
+    "chapter": 7,
+    "chapter_name": "புதல்வரைப் பெறுதல்",
+    "audio_file": "audio_ch007.wav",
+    "size_mb": 50.83
+  },
+  {
+    "chapter": 8,
+    "chapter_name": "அன்புடைமை",
+    "audio_file": "audio_ch008.wav",
+    "size_mb": 39.59
+  },
+  {
+    "chapter": 9,
+    "chapter_name": "விருந்தோம்பல்",
+    "audio_file": "audio_ch009.wav",
+    "size_mb": 38.71
+  },
+  {
+    "chapter": 10,
+    "chapter_name": "இனியவை கூறல்",
+    "audio_file": "audio_ch010.wav",
+    "size_mb": 53.54
+  },
+  {
+    "chapter": 11,
+    "chapter_name": "செய்ந்நன்றி அறிதல்",
+    "audio_file": "audio_ch011.wav",
+    "size_mb": 56.0
+  },
+  {
+    "chapter": 12,
+    "chapter_name": "நடுவுநிலைமை",
+    "audio_file": "audio_ch012.wav",
+    "size_mb": 49.52
+  },
+  {
+    "chapter": 13,
+    "chapter_name": "அடக்கமுடைமை",
+    "audio_file": "audio_ch013.wav",
+    "size_mb": 60.16
+  },
+  {
+    "chapter": 14,
+    "chapter_name": "ஒழுக்கமுடைமை",
+    "audio_file": "audio_ch014.wav",
+    "size_mb": 50.28
+  },
+  {
+    "chapter": 15,
+    "chapter_name": "பிறனில் விழையாமை",
+    "audio_file": "audio_ch015.wav",
+    "size_mb": 50.72
+  },
+  {
+    "chapter": 16,
+    "chapter_name": "பொறையுடைமை",
+    "audio_file": "audio_ch016.wav",
+    "size_mb": 58.73
+  },
+  {
+    "chapter": 17,
+    "chapter_name": "அழுக்காறாமை",
+    "audio_file": "audio_ch017.wav",
+    "size_mb": 58.07
+  },
+  {
+    "chapter": 18,
+    "chapter_name": "வெஃகாமை",
+    "audio_file": "audio_ch018.wav",
+    "size_mb": 52.31
+  },
+  {
+    "chapter": 19,
+    "chapter_name": "புறங்கூறாமை",
+    "audio_file": "audio_ch019.wav",
+    "size_mb": 55.39
+  },
+  {
+    "chapter": 20,
+    "chapter_name": "பயனில சொல்லாமை",
+    "audio_file": "audio_ch020.wav",
+    "size_mb": 48.73
+  },
+  {
+    "chapter": 21,
+    "chapter_name": "தீவினையச்சம்",
+    "audio_file": "audio_ch021.wav",
+    "size_mb": 40.42
+  },
+  {
+    "chapter": 22,
+    "chapter_name": "ஒப்புரவறிதல்",
+    "audio_file": "audio_ch022.wav",
+    "size_mb": 57.56
+  },
+  {
+    "chapter": 23,
+    "chapter_name": "ஈகை",
+    "audio_file": "audio_ch023.wav",
+    "size_mb": 76.81
+  },
+  {
+    "chapter": 24,
+    "chapter_name": "புகழ்",
+    "audio_file": "audio_ch024.wav",
+    "size_mb": 63.33
+  },
+  {
+    "chapter": 25,
+    "chapter_name": "அருளுடைமை",
+    "audio_file": "audio_ch025.wav",
+    "size_mb": 44.47
+  },
+  {
+    "chapter": 26,
+    "chapter_name": "புலால் உண்ணாமை",
+    "audio_file": "audio_ch026.wav",
+    "size_mb": 53.62
+  },
+  {
+    "chapter": 27,
+    "chapter_name": "தவம்",
+    "audio_file": "audio_ch027.wav",
+    "size_mb": 53.17
+  },
+  {
+    "chapter": 28,
+    "chapter_name": "கூடா ஒழுக்கம்",
+    "audio_file": "audio_ch028.wav",
+    "size_mb": 54.16
+  },
+  {
+    "chapter": 29,
+    "chapter_name": "கள்ளாமை",
+    "audio_file": "audio_ch029.wav",
+    "size_mb": 46.23
+  },
+  {
+    "chapter": 30,
+    "chapter_name": "வாய்மை",
+    "audio_file": "audio_ch030.wav",
+    "size_mb": 48.75
+  },
+  {
+    "chapter": 31,
+    "chapter_name": "வெகுளாமை",
+    "audio_file": "audio_ch031.wav",
+    "size_mb": 62.36
+  },
+  {
+    "chapter": 32,
+    "chapter_name": "இன்னா செய்யாமை",
+    "audio_file": "audio_ch032.wav",
+    "size_mb": 92.06
+  },
+  {
+    "chapter": 33,
+    "chapter_name": "கொல்லாமை",
+    "audio_file": "audio_ch033.wav",
+    "size_mb": 53.28
+  },
+  {
+    "chapter": 34,
+    "chapter_name": "நிலையாமை",
+    "audio_file": "audio_ch034.wav",
+    "size_mb": 48.21
+  },
+  {
+    "chapter": 35,
+    "chapter_name": "துறவு",
+    "audio_file": "audio_ch035.wav",
+    "size_mb": 48.32
+  },
+  {
+    "chapter": 36,
+    "chapter_name": "மெய்யுணர்தல்",
+    "audio_file": "audio_ch036.wav",
+    "size_mb": 39.82
+  },
+  {
+    "chapter": 37,
+    "chapter_name": "அவாவறுத்தல்",
+    "audio_file": "audio_ch037.wav",
+    "size_mb": 44.49
+  },
+  {
+    "chapter": 38,
+    "chapter_name": "ஊழ்",
+    "audio_file": "audio_ch038.wav",
+    "size_mb": 44.95
+  },
+  {
+    "chapter": 39,
+    "chapter_name": "இறைமாட்சி",
+    "audio_file": "audio_ch039.wav",
+    "size_mb": 43.71
+  },
+  {
+    "chapter": 40,
+    "chapter_name": "கல்வி",
+    "audio_file": "audio_ch040.wav",
+    "size_mb": 69.75
+  },
+  {
+    "chapter": 41,
+    "chapter_name": "கல்லாமை",
+    "audio_file": "audio_ch041.wav",
+    "size_mb": 75.99
+  },
+  {
+    "chapter": 42,
+    "chapter_name": "கேள்வி",
+    "audio_file": "audio_ch042.wav",
+    "size_mb": 47.77
+  },
+  {
+    "chapter": 43,
+    "chapter_name": "அறிவுடைமை",
+    "audio_file": "audio_ch043.wav",
+    "size_mb": 57.95
+  },
+  {
+    "chapter": 44,
+    "chapter_name": "குற்றங்கடிதல்",
+    "audio_file": "audio_ch044.wav",
+    "size_mb": 44.86
+  },
+  {
+    "chapter": 45,
+    "chapter_name": "பெரியாரைத் துணைக்கோடல்",
+    "audio_file": "audio_ch045.wav",
+    "size_mb": 52.47
+  },
+  {
+    "chapter": 46,
+    "chapter_name": "சிற்றினம் சேராமை",
+    "audio_file": "audio_ch046.wav",
+    "size_mb": 63.54
+  },
+  {
+    "chapter": 47,
+    "chapter_name": "தெரிந்து செயல்வகை",
+    "audio_file": "audio_ch047.wav",
+    "size_mb": 66.74
+  },
+  {
+    "chapter": 48,
+    "chapter_name": "வலியறிதல்",
+    "audio_file": "audio_ch048.wav",
+    "size_mb": 66.58
+  },
+  {
+    "chapter": 49,
+    "chapter_name": "காலமறிதல்",
+    "audio_file": "audio_ch049.wav",
+    "size_mb": 50.18
+  },
+  {
+    "chapter": 50,
+    "chapter_name": "இடனறிதல்",
+    "audio_file": "audio_ch050.wav",
+    "size_mb": 51.91
+  },
+  {
+    "chapter": 51,
+    "chapter_name": "தெரிந்து தெளிதல்",
+    "audio_file": "audio_ch051.wav",
+    "size_mb": 76.41
+  },
+  {
+    "chapter": 52,
+    "chapter_name": "தெரிந்து வினையாடல்",
+    "audio_file": "audio_ch052.wav",
+    "size_mb": 77.01
+  },
+  {
+    "chapter": 53,
+    "chapter_name": "சுற்றந்தழால்",
+    "audio_file": "audio_ch053.wav",
+    "size_mb": 79.31
+  },
+  {
+    "chapter": 54,
+    "chapter_name": "பொச்சாவாமை",
+    "audio_file": "audio_ch054.wav",
+    "size_mb": 61.32
+  },
+  {
+    "chapter": 55,
+    "chapter_name": "செங்கோன்மை",
+    "audio_file": "audio_ch055.wav",
+    "size_mb": 57.02
+  },
+  {
+    "chapter": 56,
+    "chapter_name": "கொடுங்கோன்மை",
+    "audio_file": "audio_ch056.wav",
+    "size_mb": 52.83
+  },
+  {
+    "chapter": 57,
+    "chapter_name": "வெருவந்த செய்யாமை",
+    "audio_file": "audio_ch057.wav",
+    "size_mb": 62.95
+  },
+  {
+    "chapter": 58,
+    "chapter_name": "கண்ணோட்டம்",
+    "audio_file": "audio_ch058.wav",
+    "size_mb": 60.46
+  },
+  {
+    "chapter": 59,
+    "chapter_name": "ஒற்றாடல்",
+    "audio_file": "audio_ch059.wav",
+    "size_mb": 61.51
+  },
+  {
+    "chapter": 60,
+    "chapter_name": "ஊக்கமுடைமை",
+    "audio_file": "audio_ch060.wav",
+    "size_mb": 59.0
+  },
+  {
+    "chapter": 61,
+    "chapter_name": "மடியின்மை",
+    "audio_file": "audio_ch061.wav",
+    "size_mb": 47.82
+  },
+  {
+    "chapter": 62,
+    "chapter_name": "ஆள்வினையுடைமை",
+    "audio_file": "audio_ch062.wav",
+    "size_mb": 55.45
+  },
+  {
+    "chapter": 63,
+    "chapter_name": "இடுக்கண் அழியாமை",
+    "audio_file": "audio_ch063.wav",
+    "size_mb": 56.25
+  },
+  {
+    "chapter": 64,
+    "chapter_name": "அமைச்சு",
+    "audio_file": "audio_ch064.wav",
+    "size_mb": 58.89
+  },
+  {
+    "chapter": 65,
+    "chapter_name": "சொல்வன்மை",
+    "audio_file": "audio_ch065.wav",
+    "size_mb": 65.06
+  },
+  {
+    "chapter": 66,
+    "chapter_name": "வினைத்தூய்மை",
+    "audio_file": "audio_ch066.wav",
+    "size_mb": 59.15
+  },
+  {
+    "chapter": 67,
+    "chapter_name": "வினைத்திட்பம்",
+    "audio_file": "audio_ch067.wav",
+    "size_mb": 57.58
+  },
+  {
+    "chapter": 68,
+    "chapter_name": "வினைசெயல்வகை",
+    "audio_file": "audio_ch068.wav",
+    "size_mb": 53.76
+  },
+  {
+    "chapter": 69,
+    "chapter_name": "தூது",
+    "audio_file": "audio_ch069.wav",
+    "size_mb": 48.18
+  },
+  {
+    "chapter": 70,
+    "chapter_name": "மன்னரைச் சேர்ந்தொழுதல்",
+    "audio_file": "audio_ch070.wav",
+    "size_mb": 53.96
+  },
+  {
+    "chapter": 71,
+    "chapter_name": "குறிப்பறிதல்",
+    "audio_file": "audio_ch071.wav",
+    "size_mb": 60.98
+  },
+  {
+    "chapter": 72,
+    "chapter_name": "அவையறிதல்",
+    "audio_file": "audio_ch072.wav",
+    "size_mb": 60.69
+  },
+  {
+    "chapter": 73,
+    "chapter_name": "அவையஞ்சாமை",
+    "audio_file": "audio_ch073.wav",
+    "size_mb": 43.75
+  },
+  {
+    "chapter": 74,
+    "chapter_name": "நாடு",
+    "audio_file": "audio_ch074.wav",
+    "size_mb": 41.94
+  },
+  {
+    "chapter": 75,
+    "chapter_name": "அரண்",
+    "audio_file": "audio_ch075.wav",
+    "size_mb": 52.48
+  },
+  {
+    "chapter": 76,
+    "chapter_name": "பொருள் செயல்வகை",
+    "audio_file": "audio_ch076.wav",
+    "size_mb": 57.67
+  },
+  {
+    "chapter": 77,
+    "chapter_name": "படைமாட்சி",
+    "audio_file": "audio_ch077.wav",
+    "size_mb": 54.5
+  },
+  {
+    "chapter": 78,
+    "chapter_name": "படைச்செருக்கு",
+    "audio_file": "audio_ch078.wav",
+    "size_mb": 43.83
+  },
+  {
+    "chapter": 79,
+    "chapter_name": "நட்பு",
+    "audio_file": "audio_ch079.wav",
+    "size_mb": 45.1
+  },
+  {
+    "chapter": 80,
+    "chapter_name": "நட்பாராய்தல்",
+    "audio_file": "audio_ch080.wav",
+    "size_mb": 55.19
+  },
+  {
+    "chapter": 81,
+    "chapter_name": "பழைமை",
+    "audio_file": "audio_ch081.wav",
+    "size_mb": 61.15
+  },
+  {
+    "chapter": 82,
+    "chapter_name": "தீ நட்பு",
+    "audio_file": "audio_ch082.wav",
+    "size_mb": 54.16
+  },
+  {
+    "chapter": 83,
+    "chapter_name": "கூடா நட்பு",
+    "audio_file": "audio_ch083.wav",
+    "size_mb": 45.1
+  },
+  {
+    "chapter": 84,
+    "chapter_name": "பேதைமை",
+    "audio_file": "audio_ch084.wav",
+    "size_mb": 63.74
+  },
+  {
+    "chapter": 85,
+    "chapter_name": "புல்லறிவாண்மை",
+    "audio_file": "audio_ch085.wav",
+    "size_mb": 63.61
+  },
+  {
+    "chapter": 86,
+    "chapter_name": "இகல்",
+    "audio_file": "audio_ch086.wav",
+    "size_mb": 28.71
+  },
+  {
+    "chapter": 87,
+    "chapter_name": "பகைமாட்சி",
+    "audio_file": "audio_ch087.wav",
+    "size_mb": 86.51
+  },
+  {
+    "chapter": 88,
+    "chapter_name": "பகைத்திறந்தெரிதல்",
+    "audio_file": "audio_ch088.wav",
+    "size_mb": 27.57
+  },
+  {
+    "chapter": 89,
+    "chapter_name": "உட்பகை",
+    "audio_file": "audio_ch089.wav",
+    "size_mb": 28.29
+  },
+  {
+    "chapter": 90,
+    "chapter_name": "பெரியாரைப் பிழையாமை",
+    "audio_file": "audio_ch090.wav",
+    "size_mb": 58.46
+  },
+  {
+    "chapter": 91,
+    "chapter_name": "பெண்வழிச் சேறல்",
+    "audio_file": "audio_ch091.wav",
+    "size_mb": 53.74
+  },
+  {
+    "chapter": 92,
+    "chapter_name": "வரைவின் மகளிர்",
+    "audio_file": "audio_ch092.wav",
+    "size_mb": 63.39
+  },
+  {
+    "chapter": 93,
+    "chapter_name": "கள்ளுண்ணாமை",
+    "audio_file": "audio_ch093.wav",
+    "size_mb": 69.48
+  },
+  {
+    "chapter": 94,
+    "chapter_name": "சூது",
+    "audio_file": "audio_ch094.wav",
+    "size_mb": 57.05
+  },
+  {
+    "chapter": 95,
+    "chapter_name": "மருந்து",
+    "audio_file": "audio_ch095.wav",
+    "size_mb": 62.29
+  },
+  {
+    "chapter": 96,
+    "chapter_name": "குடிமை",
+    "audio_file": "audio_ch096.wav",
+    "size_mb": 62.94
+  },
+  {
+    "chapter": 97,
+    "chapter_name": "மானம்",
+    "audio_file": "audio_ch097.wav",
+    "size_mb": 73.05
+  },
+  {
+    "chapter": 98,
+    "chapter_name": "பெருமை",
+    "audio_file": "audio_ch098.wav",
+    "size_mb": 60.64
+  },
+  {
+    "chapter": 99,
+    "chapter_name": "சான்றாண்மை",
+    "audio_file": "audio_ch099.wav",
+    "size_mb": 51.82
+  },
+  {
+    "chapter": 100,
+    "chapter_name": "பண்புடைமை",
+    "audio_file": "audio_ch100.wav",
+    "size_mb": 62.11
+  },
+  {
+    "chapter": 101,
+    "chapter_name": "நன்றியில் செல்வம்",
+    "audio_file": "audio_ch101.wav",
+    "size_mb": 65.2
+  },
+  {
+    "chapter": 102,
+    "chapter_name": "நாணுடைமை",
+    "audio_file": "audio_ch102.wav",
+    "size_mb": 64.53
+  },
+  {
+    "chapter": 103,
+    "chapter_name": "குடிசெயல்வகை",
+    "audio_file": "audio_ch103.wav",
+    "size_mb": 59.2
+  },
+  {
+    "chapter": 104,
+    "chapter_name": "உழவு",
+    "audio_file": "audio_ch104.wav",
+    "size_mb": 66.02
+  },
+  {
+    "chapter": 105,
+    "chapter_name": "நல்குரவு",
+    "audio_file": "audio_ch105.wav",
+    "size_mb": 58.17
+  },
+  {
+    "chapter": 106,
+    "chapter_name": "இரவு",
+    "audio_file": "audio_ch106.wav",
+    "size_mb": 47.05
+  },
+  {
+    "chapter": 107,
+    "chapter_name": "இரவச்சம்",
+    "audio_file": "audio_ch107.wav",
+    "size_mb": 62.11
+  },
+  {
+    "chapter": 108,
+    "chapter_name": "கயமை",
+    "audio_file": "audio_ch108.wav",
+    "size_mb": 52.51
+  },
+  {
+    "chapter": 109,
+    "chapter_name": "தகையணங்குறுத்தல்",
+    "audio_file": "audio_ch109.wav",
+    "size_mb": 50.55
+  },
+  {
+    "chapter": 110,
+    "chapter_name": "குறிப்பறிதல்",
+    "audio_file": "audio_ch110.wav",
+    "size_mb": 60.98
+  },
+  {
+    "chapter": 111,
+    "chapter_name": "புணர்ச்சி மகிழ்தல்",
+    "audio_file": "audio_ch111.wav",
+    "size_mb": 37.85
+  },
+  {
+    "chapter": 112,
+    "chapter_name": "நலம் புனைந்துரைத்தல்",
+    "audio_file": "audio_ch112.wav",
+    "size_mb": 54.98
+  },
+  {
+    "chapter": 113,
+    "chapter_name": "காதற்சிறப்புரைத்தல்",
+    "audio_file": "audio_ch113.wav",
+    "size_mb": 28.79
+  },
+  {
+    "chapter": 114,
+    "chapter_name": "நாணுத்துறவுரைத்தல்",
+    "audio_file": "audio_ch114.wav",
+    "size_mb": 40.95
+  },
+  {
+    "chapter": 115,
+    "chapter_name": "அலரறிவுறுத்தல்",
+    "audio_file": "audio_ch115.wav",
+    "size_mb": 44.11
+  },
+  {
+    "chapter": 116,
+    "chapter_name": "பிரிவாற்றாமை",
+    "audio_file": "audio_ch116.wav",
+    "size_mb": 41.88
+  },
+  {
+    "chapter": 117,
+    "chapter_name": "படர்மெலிந்திரங்கல்",
+    "audio_file": "audio_ch117.wav",
+    "size_mb": 46.3
+  },
+  {
+    "chapter": 118,
+    "chapter_name": "கண்விதுப்பழிதல்",
+    "audio_file": "audio_ch118.wav",
+    "size_mb": 41.13
+  },
+  {
+    "chapter": 119,
+    "chapter_name": "பசப்புறு பருவரல்",
+    "audio_file": "audio_ch119.wav",
+    "size_mb": 43.49
+  },
+  {
+    "chapter": 120,
+    "chapter_name": "தனிப்படர் மிகுதி",
+    "audio_file": "audio_ch120.wav",
+    "size_mb": 43.54
+  },
+  {
+    "chapter": 121,
+    "chapter_name": "நினைந்தவர் புலம்பல்",
+    "audio_file": "audio_ch121.wav",
+    "size_mb": 46.34
+  },
+  {
+    "chapter": 122,
+    "chapter_name": "கனவுநிலை உரைத்தல்",
+    "audio_file": "audio_ch122.wav",
+    "size_mb": 42.57
+  },
+  {
+    "chapter": 123,
+    "chapter_name": "பொழுதுகண்டு இரங்கல்",
+    "audio_file": "audio_ch123.wav",
+    "size_mb": 39.82
+  },
+  {
+    "chapter": 124,
+    "chapter_name": "உறுப்புநலன் அழிதல்",
+    "audio_file": "audio_ch124.wav",
+    "size_mb": 43.59
+  },
+  {
+    "chapter": 125,
+    "chapter_name": "நெஞ்சறிவுறுத்தல்",
+    "audio_file": "audio_ch125.wav",
+    "size_mb": 47.52
+  },
+  {
+    "chapter": 126,
+    "chapter_name": "நிறையழிதல்",
+    "audio_file": "audio_ch126.wav",
+    "size_mb": 37.89
+  },
+  {
+    "chapter": 127,
+    "chapter_name": "அவர்வயின் விதும்பல்",
+    "audio_file": "audio_ch127.wav",
+    "size_mb": 40.11
+  },
+  {
+    "chapter": 128,
+    "chapter_name": "குறிப்பறிவுறுத்தல்",
+    "audio_file": "audio_ch128.wav",
+    "size_mb": 66.52
+  },
+  {
+    "chapter": 129,
+    "chapter_name": "புணர்ச்சி விதும்பல்",
+    "audio_file": "audio_ch129.wav",
+    "size_mb": 44.59
+  },
+  {
+    "chapter": 130,
+    "chapter_name": "நெஞ்சொடு புலத்தல்",
+    "audio_file": "audio_ch130.wav",
+    "size_mb": 51.42
+  },
+  {
+    "chapter": 131,
+    "chapter_name": "புலவி",
+    "audio_file": "audio_ch131.wav",
+    "size_mb": 55.39
+  },
+  {
+    "chapter": 132,
+    "chapter_name": "புலவி நுணுக்கம்",
+    "audio_file": "audio_ch132.wav",
+    "size_mb": 28.66
+  },
+  {
+    "chapter": 133,
+    "chapter_name": "ஊடலுவகை",
+    "audio_file": "audio_ch133.wav",
+    "size_mb": 30.95
+  }
+]
