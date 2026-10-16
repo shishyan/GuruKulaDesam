@@ -234,16 +234,67 @@ THIRUPPARAMKUNRAM_PROMPTS = [
     "Humble devotee performing devotional rolling circumambulation (Angapradakshinam) around the cool stone outer corridors of the sanctum.",
     # S22: Bronze Nataraja shrine in rock cave
     "Rare rock-cut representation of Lord Nataraja performing the cosmic dance within the cave pavilion, shadows and highlights dancing in lamplight.",
-    # S23: Holy temple elephant showering blessings
-    "Decorated temple elephant with vibhuti marks and brass head ornaments gently tapping a devotee's head in affectionate blessing at the temple entrance.",
     # S24: Starry night over the illuminated monolithic rock
     "The massive sacred rocky hill of Thirupparamkunram glowing in the night illuminated by temple floodlights under a brilliant star-filled sky."
+]
+
+THIRUAVINANKUDI_PROMPTS = [
+
+    # S01: Palani foothills and sacred lake at dawn
+    "Epic panoramic sunrise vista over the sacred foothills of Palani (திருஆவினன்குடி - Third Arupadai Veedu), lush coconut palm groves and morning mist rising over Shanmugha river.",
+    # S02: Divine Child Ascetic Bala Dandayudhapani
+    "Luminous sacred sanctum of young Lord Murugan as Bala Dandayudhapani, ascetic child wearing kaupeenam with shaved head and vibhuti, holding the divine staff (danda) and glowing golden Vel.",
+    # S03: Sacred holy cow Kamadhenu worship
+    "Divine Kamadhenu white sacred cow adorned with floral garlands and golden horn tips, standing gracefully by the lotus pond worshiping the baby Murugan.",
+    # S04: Sage Agastya receiving divine Tamil wisdom
+    "Venerable Sage Agastya with flowing white beard and rudraksha beads receiving sacred wisdom from Lord Murugan under the sacred Kadamba tree, glowing golden halos.",
+    # S05: Devotees offering Kavadi at temple base
+    "Colorful festive crowd of Tamil devotees carrying curved flower-decked Mayil and Theertha Kavadis with peacock feathers at the entrance of Thiruavinankudi temple.",
+    # S06: Sacred Panchamirtham preparation with mountain fruits
+    "Temple priests in traditional silk preparing authentic Palani Panchamirtham with pure mountain hill bananas, palm sugar, honey, cardamom, and pure ghee in massive bronze vessels.",
+    # S07: Golden chariot circumambulation at sunset
+    "Splendid golden chariot (Thanga Ther) radiating warm light carrying the Utsava deity around the temple outer praharam as dusk turns the sky into deep amber.",
+    # S08: Shanmugha river holy bathing ghats
+    "Devotees taking sacred morning dip in the gentle waters of Shanmugha Nadi (river) carrying bronze pots of holy theertham for abhishekam.",
+    # S09: Ancient temple elephant blessing pilgrims
+    "Majestic decorated temple elephant with auspicious gopuram thilagam gently touching a child pilgrim's head with its trunk outside the ancient stone gopuram.",
+    # S10: Sannidhi of Goddess Lakshmi and Bhooma Devi
+    "Sacred shrine inside Thiruavinankudi depicting Goddess Lakshmi and Bhooma Devi who worshiped Lord Murugan here, glowing oil deepams casting warm divine rays.",
+    # S11: Devotee tonsuring head in pure devotion
+    "A humble Tamil devotee sitting on temple courtyard steps offering hair tonsure (Mottai) in fulfillment of prayer, pure white sandalwood paste cooling the head.",
+    # S12: Stone carved pillars of the Nayak mandapam
+    "Magnificent pillared hall carved with life-size statues of Sangam warriors and divine guardians, sunlight filtering through stone eaves creating dramatic beams.",
+    # S13: Golden Vel decorated with fresh red Kanthal flowers
+    "Artistic macro view of the gleaming golden Vel spear adorned with vibrant flame lilies (Kanthal - state flower of Tamil Nadu) and fragrant jasmine buds.",
+    # S14: Traditional musicians playing pipe and drums
+    "Temple musicians playing resonant Thavil drums and long golden Nadaswaram pipes during the noon pooja procession in the mandapam.",
+    # S15: Hilltop temple visible from the foot shrine
+    "Breathtaking view from Thiruavinankudi looking up at the high cliff summit of the Palani hill temple crowned with golden vimanam against vibrant azure sky.",
+    # S16: Paal Kudam milk pot procession at sunrise
+    "Dozens of devoted women in traditional saffron sarees carrying shining brass Paal Kudams topped with neem leaves and coconut in single file toward the sanctum.",
+    # S17: Sage Bogar crafting the Navapashanam idol
+    "Mystic Siddha master Bogar in deep concentration preparing the miraculous nine-herbal medicine amalgam (Navapashanam) statue inside a cave workshop.",
+    # S18: Camphor aarti reflecting on granite floors
+    "Bright blazing camphor flames of the multi-level brass aarti lamp held high by the chief priest, illuminating the holy deity with dramatic reflections.",
+    # S19: Ancient sacred Kadamba tree shrine
+    "Spreading ancient Kadamba tree surrounded by thousands of yellow and red cloth cradles tied by childless couples praying for blessings.",
+    # S20: Devotees singing Thiruppugazh hymns
+    "Group of elder Tamil devotees singing Arunagirinathar's rhythmic Thiruppugazh with small bronze cymbals (Jalar), tears of devotion and joy.",
+    # S21: Night view of the hill illuminated with lamps
+    "The entire Palani mountain stairway and summit glowing with ten thousand golden electric lights and deepams under a velvet night sky.",
+    # S22: Bronze peacock mount facing sanctum
+    "Graceful antique bronze statue of the royal peacock mount with curved neck and delicate plumage standing sentinel before the holy sanctum.",
+    # S23: Distributing holy vibhuti and panchamirtham
+    "Smiling temple priest offering fragrant vibhuti packets and sweet panchamirtham on fresh banana leaves to grateful pilgrims.",
+    # S24: Sunset peace over the Western Ghats from temple
+    "Serene twilight view over the silhouettes of the Western Ghats mountains and green plains from the temple corridor, lone evening star appearing."
 ]
 
 THEME_REGISTRY = {
     "kunram_erinthai": KUNRAM_ERINTHAI_PROMPTS,
     "pazhamai": PAZHAMAI_PROMPTS,
     "thirupparamkunram": THIRUPPARAMKUNRAM_PROMPTS,
+    "thiruavinankudi": THIRUAVINANKUDI_PROMPTS,
 }
 
 def generate_track_scenes(theme_key, out_dir):
@@ -269,4 +320,5 @@ if __name__ == "__main__":
         args.out_dir = str(ROOT / "production" / "scene_images" / args.theme)
 
     generate_track_scenes(args.theme, args.out_dir)
+
 
