@@ -54,6 +54,14 @@ def main():
         try:
             res = subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
             print(f"✔ [COMPLETED] Chapter {ch_num}: {ch_name}!", flush=True)
+            # Auto-upload to YouTube as PRIVATE draft
+            upload_helper = ROOT / "tools" / "upload_private_master_to_youtube.py"
+            if upload_helper.exists() and (ROOT / "data" / "credentials" / "token.json").exists():
+                try:
+                    up_cmd = [sys.executable, str(upload_helper), "--chapter", str(ch_num), "--video-file", str(out_master)]
+                    subprocess.run(up_cmd, check=False)
+                except Exception as up_err:
+                    print(f"  [AUTO-UPLOAD NOTE] Chapter {ch_num}: {up_err}", flush=True)
             return ch_num, True, ""
         except subprocess.CalledProcessError as e:
             print(f"✖ [FAILED] Chapter {ch_num}: {ch_name} (code {e.returncode})", flush=True)
