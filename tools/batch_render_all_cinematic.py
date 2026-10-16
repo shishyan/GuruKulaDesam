@@ -21,13 +21,15 @@ def main():
     parser.add_argument("--limit", type=int, default=0, help="Limit number of chapters to process (0 = all 37)")
     parser.add_argument("--start-chapter", type=int, default=1, help="Start from specific chapter number (e.g. 4)")
     parser.add_argument("--parallel-chapters", type=int, default=4, help="Number of entire chapters to render concurrently (e.g. 4 or 6)")
+    parser.add_argument("--chapters-file", type=str, default=None, help="Custom JSON file with chapters list")
     args = parser.parse_args()
 
-    if not CURATED_FILE.exists():
-        print(f"Error: Curated chapters list not found at {CURATED_FILE}")
+    input_file = Path(args.chapters_file) if args.chapters_file else CURATED_FILE
+    if not input_file.exists():
+        print(f"Error: Chapters list not found at {input_file}")
         sys.exit(1)
 
-    with open(CURATED_FILE, "r", encoding="utf-8") as f:
+    with open(input_file, "r", encoding="utf-8") as f:
         chapters = json.load(f)
 
     # Filter chapters starting from start_chapter
