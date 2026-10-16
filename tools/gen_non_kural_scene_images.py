@@ -343,12 +343,171 @@ THIRUERAGAM_PROMPTS = [
     "Magical night view of Swamimalai hilltop temple illuminated with golden lights, rising like a jewel above the tranquil Tanjore delta landscape under the stars."
 ]
 
+## Track 9: குன்றுதோறாடல் (Thiruthani - Fifth Arupadai Veedu)
+KUNRUTHORADAL_PROMPTS = [
+    # S01: Thiruthani Hill Temple Dawn
+    "Epic panoramic sunrise over Thiruthani Thanikasalam hill, the Fifth Arupadai Veedu of Lord Murugan where His divine wrath cooled into supreme peace, glowing pink dawn skies over granite temple spires.",
+    # S02: Divine Darshan of Lord Thanikachalam
+    "Glorious darshan of Lord Thanikachalam standing in profound peace (Shanthan), adorned in green silk pitambaram with golden Vel resting gracefully across His chest, gentle compassionate smile.",
+    # S03: The 365 Sacred Steps
+    "Devotees climbing the 365 sacred stone steps representing the 365 days of the year, carrying offerings of tender coconuts, milk pots, and fragrant flowers under leafy shade trees.",
+    # S04: Wedding of Lord Murugan and Goddess Valli
+    "Sacred celestial wedding of Lord Murugan and Kuravar tribal maiden Goddess Valli on Thiruthani hill, showered with sacred yellow akshata rice and fragrant red lotus petals by devas.",
+    # S05: Sacred Peacock Resting in Hillside Mandapam
+    "Majestic emerald-blue royal peacock perched gracefully on an ancient stone balustrade overlooking the wide green plains of Thondaimandalam at golden hour.",
+    # S06: Priests performing Sarva Vadya Upacharam
+    "Temple priests in traditional silk dhotis sounding conches, cymbals, and bronze bells before the sanctum sanctorum during dawn Vishwaroopa seva.",
+    # S07: Golden Vel with Sandalwood and Jasmine
+    "Intricate close-up of the divine Vel made of glowing gold, anointed with thick cool Malayagiri sandalwood paste and adorned with a single fragrant red rose garland.",
+    # S08: Nandi Theertham sacred water spring
+    "Sacred Nandi Theertham mountain spring pool on Thiruthani hill, clear holy waters reflecting carved stone elephant reliefs and morning sunlight.",
+    # S09: Pilgrims carrying floral Paal Kudam
+    "Devoted Tamil women dressed in vibrant yellow sarees carrying brass milk pots (Paal Kudam) topped with fresh neem leaves and coconuts in disciplined procession.",
+    # S10: Sannidhi of Goddess Valli
+    "Peaceful separate shrine of Goddess Valli amman adorned in red silk and gold jewellery, lamps glowing warmly on stone floor.",
+    # S11: Sacred Chanting of Thiruppugazh
+    "Group of elder Othuvars seated in pillared mandapam singing Arunagirinathar's Thiruthani Thiruppugazh verses with intense bhakti devotion and cymbals.",
+    # S12: Inner Prakaram with Camphor Aarti
+    "Ancient granite corridor illuminated by massive brass camphor lamps, sacred smoke billowing toward hand-carved temple ceilings.",
+    # S13: Sunrise over Thiruthani Rajagopuram
+    "Magnificent 9-tiered Rajagopuram of Thiruthani bathed in pure golden morning sunbeams, crisp sculpted figurines of Murugan leelas vividly painted.",
+    # S14: Traditional Nadaswaram recital
+    "Temple vidwans seated in silk angavastrams playing the soothing raga Shanmukhapriya on silver-banded Nadaswarams during the morning procession.",
+    # S15: Mountain steps illuminated with oil lamps at dusk
+    "Long stairway of 365 steps lit end-to-end with thousands of clay agal vilakkus forming a glowing serpentine garland up the dark mountain.",
+    # S16: Lord Murugan in elephant vahana
+    "Magnificent Utsava deity of Lord Murugan holding Vel seated atop a majestic gold-plated elephant vahana during temple Brahmotsavam.",
+    # S17: Devotees applying holy Vibhuti
+    "Temple Sivachariyar applying three horizontal stripes of fragrant white sacred ash (Vibhuti) and vermilion kumkum on a young devotee's forehead.",
+    # S18: Carved stone relief of Sage Agastya worship
+    "Ancient bas-relief granite carving depicting Sage Agastya receiving Tamil grammar wisdom from Lord Murugan at the foothills of Thanigai.",
+    # S19: Sacred temple garden (Nandavanam)
+    "Lush sacred temple garden with blooming red hibiscus, fragrant white parijatham flowers, and holy tulasi plants glistening with morning dew.",
+    # S20: Devotees singing in ecstasy
+    "Devotees clapping and chanting 'Thanigai Muruga Vel Muruga' with hands raised in surrender inside the 100-pillar stone mandapam.",
+    # S21: Kumkum and Sandalwood offering on brass plates
+    "Traditional brass thali plate filled with freshly ground green cardamom, vermilion kumkum, yellow turmeric, and jasmine buds.",
+    # S22: Divine blessing with Golden Vel
+    "Temple priest gently touching the sacred golden Vel to the heads of kneeling devotees as the final blessing of peace and fearlessness.",
+    # S23: Temple kitchen preparing holy Prasadam
+    "Temple madapalli chefs stirring aromatic hot Panchamirtham and Laddu in massive traditional brass caldrons over wood fire.",
+    # S24: Twilight serenity over Thiruthani
+    "Breathtaking twilight vista of Thiruthani temple perched on the hill peak, shining like a lighthouse of eternal peace against a deep indigo sky."
+]
+
+## Track 10: பழமுதிர் சோலை (Pazhamudircholai - Sixth Arupadai Veedu)
+PAZHAMUDIRCHOLAI_PROMPTS = [
+    # S01: Alagar Hill Forest Dawn
+    "Epic panoramic sunrise over the dense sacred forest hills of Alagar Malai, the Sixth Arupadai Veedu Pazhamudircholai, misty green canopy and singing birds.",
+    # S02: Sanctum of Murugan with Valli and Deivayanai
+    "Majestic sanctum darshan of Lord Murugan flanked by both consorts Goddess Valli and Goddess Deivayanai in Pazhamudircholai, adorned in pure silk and fragrant garlands.",
+    # S03: Sacred Jupura Spring (Noopura Gangai)
+    "Pristine crystal-clear holy waters of Noopura Gangai natural mountain spring flowing over polished stone ghats, devotees taking sacred bath.",
+    # S04: The Sacred Navel Tree (Nava Maram)
+    "Ancient venerated Jamun tree (Nava Maram) bearing luscious purple fruits, the legendary spot where Lord Murugan tested poet Avvaiyar with ripe and cooked fruits.",
+    # S05: Child Murugan as Shepherd Boy testing Avvaiyar
+    "Divine child Murugan disguised as a playful Tamil shepherd boy sitting on a high tree branch, conversing with the wise elderly poetess Avvaiyar holding her walking staff.",
+    # S06: Wild Peacocks in Temple Forest
+    "Flock of wild iridescent green-and-blue peacocks dancing freely on the mossy stone steps of the forest shrine in cool morning drizzle.",
+    # S07: Morning Abhishekam with Spring Water
+    "Priests pouring sacred Noopura Gangai spring water from carved silver vessels over the black granite deity of Lord Murugan, water splashing over flower petals.",
+    # S08: Devotees walking through Bamboo Groves
+    "Pilgrims clad in green and saffron climbing the tranquil forest path lined with towering bamboo trees and wild orchids toward the hilltop temple.",
+    # S09: Golden Vel amidst Wild Forest Flowers
+    "Close-up of the divine golden Vel surrounded by wild jungle flame lilies (Kanthal), red hibiscus, and fragrant champaka blossoms.",
+    # S10: Priest waving Panchamukha Deepam
+    "Temple priest in white silk dhoti holding a massive five-flame bronze Panchamukha Deepam, illuminating the smiling face of the Lord.",
+    # S11: Sacred Elephant offering lotus garland
+    "Decorated temple elephant gently lifting its trunk to place a fresh pink lotus garland at the entrance of the Pazhamudircholai sanctum.",
+    # S12: Chanting of Avvaiyar Vinayagar Agaval & Murugan Hymns
+    "Group of Tamil children seated on stone floor chanting sweet devotional verses with devotion, morning sunlight streaming between tree branches.",
+    # S13: Fresh Wild Honey and Fruit Offering
+    "Sacred Panchamirtham made from pure forest honey, bananas, dates, and rock candy served in traditional leaf cups.",
+    # S14: Deep forest mist embracing the temple tower
+    "Ethereal view of the colourful temple vimanam piercing through soft white mountain clouds on Alagar hill at sunrise.",
+    # S15: Stone Mandapam with intricate leaf motifs
+    "Ancient Pandya-style open stone mandapam carved with delicate creeper and forest bird motifs, peaceful shadows on granite flagstones.",
+    # S16: Forest streams cascading over rocks
+    "Sparkling cool mountain stream flowing through the sacred grove of Pazhamudircholai, surrounded by aromatic medicinal herbs.",
+    # S17: Devotees singing Thiruppugazh at golden hour
+    "Joyful pilgrims gathered beneath ancient flowering trees singing Arunagirinathar's Pazhamudircholai hymns with small cymbals.",
+    # S18: Traditional brass bell ringing
+    "Heavy bronze temple bell vibrating in the open forest courtyard, sound reverberating through the wooded valley.",
+    # S19: Sunset over the Madurai plains from Alagar hill
+    "Panoramic golden-hour view from Pazhamudircholai looking down at the vast green plains and temple city of Madurai far below.",
+    # S20: Priest applying Chandanam (Sandalwood Paste)
+    "Devotees receiving fragrant Malayagiri sandalwood paste prasadam on their palms, cooling and auspicious.",
+    # S21: Utsava Murti in floral chariot procession
+    "Exquisite bronze deities of Murugan, Valli, and Deivayanai carried on an ornate palanquin covered with thousands of fresh jasmine strings.",
+    # S22: Rows of brass ghee lamps in forest twilight
+    "Hundreds of small brass oil lamps glowing gently against the dark green forest backdrop as night descends upon the mountain shrine.",
+    # S23: Devotees prostrating in humble surrender
+    "Pilgrims performing Sashtanga Namaskaram on the smooth stone temple floor in deep grateful surrender before the sanctum.",
+    # S24: Serene starry night over Pazhamudircholai
+    "Enchanting nighttime view of the Pazhamudircholai sanctuary enveloped in deep emerald forest silence beneath a starry sky."
+]
+
+## Track 11 & 12: திருச்செந்தூர் (Thiruchendur - Second Arupadai Veedu)
+THIRUCHENDUR_PROMPTS = [
+    # S01: Thiruchendur Seashore Dawn & Waves
+    "Epic panoramic dawn vista of Thiruchendur seashore temple (Second Arupadai Veedu), majestic 9-tiered Rajagopuram towering right on the azure Bay of Bengal coast with roaring white waves crashing gently on sandy beach.",
+    # S02: Luminous Sanctum of Lord Senthilandavar
+    "Radiant inner sanctum of Lord Jayanthinathar (Senthilandavar) in Thiruchendur, standing sublime in royal golden kavacham, holding the divine Vel, adorned with diamond crown and emerald chains.",
+    # S03: Sacred Nazhi Kinaru Freshwater Well
+    "The miracle freshwater spring well (Nazhi Kinaru) bubbling with crystal-clear sweet water right on the salty ocean shore, pilgrims taking holy water in brass lotas.",
+    # S04: Cosmic Victory of Soorasamharam
+    "Epic sacred cinematic depiction of Lord Murugan with His brilliant golden Vel conquering the titan Soorapadman, transforming ego into the noble Peacock mount and the sacred Rooster flag of victory.",
+    # S05: Sacred Peacock Facing the Ocean Breeze
+    "Magnificent bronze and living peacock perched atop the seaside parapet wall, colorful tail feathers rustling in the cool ocean wind against the golden morning sun.",
+    # S06: Grand Ocean Procession of Shanmukha
+    "Grand temple festival procession along the sandy seashore, priests carrying the six-faced Lord Shanmukha bronze deity flanked by massive royal white umbrellas (Venchamaram).",
+    # S07: Golden Vel reflecting Sea Waves
+    "Close-up of the consecrated golden Vel of Thiruchendur, gleaming with morning sunlight, sea salt breeze blowing fragrant red hibiscus garlands.",
+    # S08: Devotees taking Holy Dip in Sea (Samudra Snanam)
+    "Thousands of devout pilgrims in yellow and green festive silks taking holy dip in the gentle ocean waves before entering the temple sanctum.",
+    # S09: Shanmukha Vilasam Pillared Mandapam
+    "The grand monolithic 124-pillar Shanmukha Vilasam hall facing the sea, intricate granite pillars carved with heroic avatars of Murugan, cool sea breeze wafting through.",
+    # S10: Priests Performing Sea-Water Abhishekam
+    "Priests pouring 108 conch shells of sacred herbal waters (Sankhabhishekam) over the moolavar deity as temple bells and conches resound.",
+    # S11: Sacred Valli Cave Shrine
+    "Ancient rock-cut seaside cave shrine of Goddess Valli carved deep into the sandstone cliff, flickering oil lamps illuminating mysterious sanctum.",
+    # S12: Thiruchendur Rajagopuram touching the Sky
+    "Spectacular vertical low-angle view of the massive 137-foot 9-tier Thiruchendur Rajagopuram against a vibrant blue sky with sea gulls soaring overhead.",
+    # S13: Devotees Chanting 'Kantharukku Arogara'
+    "Ecstatic sea of pilgrims on temple beach courtyard with raised arms chanting 'Vetrivel Muruganukku Arogara' in unified spiritual fervor.",
+    # S14: Traditional Nadaswaram playing Sea Ragas
+    "Temple musicians in festive attire playing the stirring raga Kalyani on Nadaswaram pipes, sound blending with the natural rhythm of ocean waves.",
+    # S15: Golden Chariot rolling by the Ocean
+    "Magnificent Golden Chariot (Thanga Ratham) gleaming like molten fire, pulled by hundreds of barefoot devotees along the sandy temple perimeter.",
+    # S16: Camphor Aarti illuminating the Lord's 6 Faces
+    "Massive multi-wick camphor lamp illuminating all six smiling benevolent faces of Lord Shanmukha in the inner sanctum, glowing eyes full of grace.",
+    # S17: Devotees receiving Vibhuti in Ilai (Leaf) Prasadam
+    "Priest distributing the famed Thiruchendur Panneer Ilai Vibhuti (holy ash packed in fragrant 12-ribbed rose-apple leaves) to eager pilgrims.",
+    # S18: Ancient Sandstone Carvings of Murugan Leelas
+    "Detailed close-up of ancient seaside temple stone murals depicting the descent of Saravanabhava from the sparks of Lord Shiva's third eye.",
+    # S19: Evening Aarti with Ocean Sunset
+    "Golden-red twilight sunset over the Bay of Bengal, the temple gopurams glowing amber as evening Deeparadhana bells echo across the ocean.",
+    # S20: Brass lamps reflecting on temple wet sand
+    "Devotees lighting rows of earthen ghee lamps along the damp beach sand, golden flames reflecting in the receding surf.",
+    # S21: Priest placing the Golden Vel blessing
+    "Revered Sivachariyar gently anointing a child's forehead with sandalwood paste and touching the child with the sacred Vel.",
+    # S22: Feast of Prasadam in Temple Annadhana Mandapam
+    "Vast temple dining hall where thousands of pilgrims are served hot sambar rice and sweet payasam on fresh plantain leaves with utmost hospitality.",
+    # S23: Temple Flagstaff (Dhwajasthambam) with Rooster Flag
+    "Towering gold-gilded flagstaff rising into the twilight sky with the red silk Seval rooster banner waving triumphantly over the ocean.",
+    # S24: Thiruchendur Temple glowing at Night by the Sea
+    "Breathtaking night panorama of the entire Thiruchendur seaside temple illuminated with golden lights, reflected infinitely in the dark rippling waters of the Indian Ocean."
+]
+
 THEME_REGISTRY = {
     "kunram_erinthai": KUNRAM_ERINTHAI_PROMPTS,
     "pazhamai": PAZHAMAI_PROMPTS,
     "thirupparamkunram": THIRUPPARAMKUNRAM_PROMPTS,
     "thiruavinankudi": THIRUAVINANKUDI_PROMPTS,
     "thirueragam": THIRUERAGAM_PROMPTS,
+    "kunruthoradal": KUNRUTHORADAL_PROMPTS,
+    "pazhamudircholai": PAZHAMUDIRCHOLAI_PROMPTS,
+    "thiruchendur": THIRUCHENDUR_PROMPTS,
 }
 
 def generate_track_scenes(theme_key, out_dir):
