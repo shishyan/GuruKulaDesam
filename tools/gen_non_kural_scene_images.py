@@ -7,8 +7,6 @@ using gemini-2.5-flash-image (or gemini text + flash-image).
 """
 import os, sys, io, json, time, argparse
 from pathlib import Path
-from google import genai
-from google.genai import types
 from PIL import Image
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -34,6 +32,8 @@ def get_client():
             pass
     if not key:
         raise ValueError("GEMINI_API_KEY not found. Please set GEMINI_API_KEY environment variable or Colab secret.")
+    from google import genai
+    from google.genai import types
     _CLIENT = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=120000))
     return _CLIENT
 
@@ -514,6 +514,203 @@ THIRUCHENDUR_PROMPTS = [
     "Breathtaking night panorama of the entire Thiruchendur seaside temple illuminated with golden lights, reflected infinitely in the dark rippling waters of the Indian Ocean."
 ]
 
+
+## Track 13: தோடு உடைய செவியன் (Thodu Udaiya Seviyan - Sirkazhi Shiva & Gnanasambandar)
+THODU_UDAIYA_SEVIYAN_PROMPTS = [
+    "Panoramic golden sunrise over the ancient sacred temple of Sirkazhi (Brahmapureeswarar), massive Chola granite towers reflecting across the holy Brahma Theertham temple tank.",
+    "Darshan of Lord Shiva with the sacred ear ornament (Thodu Udaiya Seviyan) and Goddess Umadevi seated beside Him on the celestial white bull Nandi in radiant dawn clouds.",
+    "Divine vision of three-year-old child saint Tirugnanasambandar standing on the granite steps of Brahma Theertham, looking up at the sky with tear-filled blissful eyes.",
+    "Goddess Parvati descending gracefully in a golden celestial aura, offering a golden cup of divine milk of wisdom (Gnana Paal) to the weeping child Sambandar.",
+    "Little child Sambandar with golden milk trickling from the corner of his lips, pointing his tiny finger toward the sky chanting the sacred first hymn 'Thodu Udaiya Seviyan'.",
+    "Revered temple Sivachariyars with tripundra vibhuti standing in awe around the sacred tank, witnessing the miracle of the child prodigy receiving divine grace.",
+    "Inner sanctum of Brahmapureeswarar temple with polished black granite Shiva Lingam adorned with fragrant bilva leaves, red lotuses, and tall brass kuthuvilakku lamps.",
+    "Intricate bronze Panchamukha Deepam casting warm golden light over the granite reliefs of the twelve sacred names of Sirkazhi.",
+    "Close-up of the divine Thodu (pearl and gold circular ear ornament) adorning Lord Shiva's ear, shimmering with cosmic splendor.",
+    "Child Sambandar holding small golden cymbals (Thalam) gifted by Lord Shiva, singing rhythmically with pure childlike devotion.",
+    "Ancient Chola stone carving of Lord Toniyappar seated inside the sacred boat shrine on the upper tier of the Sirkazhi temple.",
+    "Fragrant dhoopam incense smoke rising in soft blue swirls past massive hand-carved Yali pillars in the temple mandapam.",
+    "Devout Tamil elders and scholars gathering with inscribed palm-leaf manuscripts (olai chuvadi) to record the nectar-like Thevaram verses.",
+    "Revered temple musicians playing the ancient Yazh harp and Panchamukha Vadhyam drums to accompany the Thevaram recitation.",
+    "Devotees carrying the bronze Utsava Murti of Gnanasambandar dressed in silk veshti and pearl necklace in a grand floral palanquin procession.",
+    "Sacred abhishekam of the Shiva Lingam with pure cow milk, tender coconut water, and fragrant sandalwood paste cascading over bilva garlands.",
+    "Pilgrims taking holy water dip in the Brahma Theertham pool under the morning sun, whispering Sambandar's holy verses.",
+    "Temple courtyard paved with ancient granite slabs where white rice-flour kolams and marigold flowers welcome morning devotees.",
+    "Traditional Sivachariyar applying three horizontal stripes of fragrant white vibhuti and red kumkum to a devout pilgrim's forehead.",
+    "Rows of brass hanging lamps (Thoonga Vilakku) glowing gently along the inner prakaram corridors as evening Aarti begins.",
+    "Priest waving the camphor arati flame before the sanctum, illuminating the compassionate golden eyes of Lord Shiva and Mother Uma.",
+    "Massive temple dining hall (Annadhana Koodam) serving hot steaming prasadam on fresh green banana leaves to thousands of pilgrims.",
+    "Golden Kalasam spires of the Sirkazhi Rajagopuram glowing brilliant amber against the fiery orange sunset sky.",
+    "Peaceful night panorama of the Sirkazhi temple complex illuminated with thousands of oil lamps, an eternal haven of Shaivite wisdom."
+]
+
+## Track 14: பத்தரோடு (Patharodu - Nataraja / Chidambaram / Devotees' Surrender)
+PATHARODU_PROMPTS = [
+    "Magnificent sunrise over the golden roof of Chidambaram Kanaka Sabha, sacred morning mists rising above the Shivaganga temple tank.",
+    "Grand darshan of Lord Nataraja in cosmic Ananda Tandava dance, flowing matted locks flying, crescent moon and Ganga resting in His hair, radiant bronze posture.",
+    "Saint Appar (Thirunavukkarasar) with palms folded in ecstatic surrender, eyes brimming with devotion, singing 'Patharodu Pala Oozhi Kandavan'.",
+    "Intricate close-up of Lord Nataraja's lifted left foot (Kunchitha Padam), adorned with golden ankle bells (Silambu), representing ultimate salvation for souls.",
+    "The sacred Chidambaram Rahasyam sanctum adorned with hanging golden bilva leaf garlands, glowing mystically in soft deepam illumination.",
+    "Revered Dikshitar priests with traditional topknots and silk veshtis performing Vedic agamic puja with silver arati lamps before the Kanaka Sabha.",
+    "Devotees and sadhus seated in the thousand-pillar mandapam chanting 'Hara Hara Sankara Jaya Jaya Sankara' in synchronized rhythmic bliss.",
+    "Bas-relief stone carvings of the 108 Natya Sastra Bharatanatyam Karanas along the towering granite passageways of Chidambaram gopuram.",
+    "Streams of fragrant rosewater, honey, and melted ghee bathing the crystal Sphatika Lingam (Chandramouleeswara) during early morning abhishekam.",
+    "Divine Mother Sivakami Amman standing in graceful emerald green silk saree beside the cosmic dancer, radiating motherly grace and compassion.",
+    "Brass floor lamps and hanging oil lamps reflecting brilliantly on the polished red oxide and granite temple flagstones.",
+    "Pilgrims of all ages wearing sacred rudraksha malas and tripundra vibhuti, prostrating flat on the cool temple stones in humble surrender.",
+    "Vast Chidambaram temple courtyard where sacred cows rest peacefully beside ancient carved stone Nandi shrines under flowering temple trees.",
+    "Temple musicians playing melodic ragas on the bronze Mukhavinai and Nadaswaram as the temple elephant offers salutation at the threshold.",
+    "Evening Deeparadhana with multi-tiered brass chariot lamps casting warm golden radiance over the bronze icons of the four supreme Nayanmars.",
+    "Devout women lighting earthen lamps around the sacred peepal tree in the outer prakaram, dusk breeze rustling holy leaves.",
+    "Revered Sivachariyar sprinkling sacred theertham and bilva leaves on the heads of kneeling devotees with Vedic benedictions.",
+    "Temple chariot festival where thousands of unified devotees pull colossal thick coir ropes through the broad temple car streets.",
+    "Fragrant sambrani dhoopam smoke billowing from pierced bronze incense burners, filling the cavernous hypostyle mandapam with heavenly aroma.",
+    "Close-up of the Damaru (cosmic drum) and Agni (eternal flame) held in Lord Nataraja's hands, symbolizing creation and dissolution.",
+    "Devotees sharing hot sweet sakkarai pongal prasadam on dried leaf cups, smiles of contentment and shared fellowship.",
+    "Twilight panorama of the four towering Chidambaram Rajagopurams pointing to the cardinal directions under a purple-and-gold sky.",
+    "Ancient corridors lit by flickering flame torches, shadows dancing across towering stone yalis and dvarapalas guarding the sanctum.",
+    "Breathtaking night view of the Golden Sabha shimmering under starlight, an immortal sanctuary of cosmic rhythm and divine peace."
+]
+
+## Track 15: மைம் மரு (Maim Maru - Sangam Devotional Poetics)
+MAIM_MARU_PROMPTS = [
+    "Panoramic dawn over an ancient Tamil Sangam kingdom landscape, lush emerald paddy fields, coconut groves, and sacred granite hill shrine in the distance.",
+    "Ancient Tamil poet-sage in pure unstitched white cotton dhoti seated on a woven reed mat, writing verse with an iron stylus on dried palmyra leaves.",
+    "Deep midnight sky dense with sparkling constellations over a quiet stone shrine, oil lamp burning steadily on the granite threshold.",
+    "Charming traditional courtyard home with carved teak pillars and terracotta tiled roof, fresh lotus flowers floating in brass uruli vessels.",
+    "Devout Tamil householder family performing early morning Surya Namaskaram and prayer facing the golden rising sun.",
+    "Intricate close-up of a bronze Nataraja lamp casting delicate peacock-feather shadows against an ancient granite temple wall.",
+    "River Kaveri flowing gracefully through rural Thanjavur at sunrise, pilgrims taking holy morning bath and chanting sacred mantras.",
+    "Traditional Tamil mother adorning her young daughter with jasmine flowers (Mullai) and applying fragrant sandalwood paste to her forehead.",
+    "Ancient temple stone mandapam where grey-haired scholars and young students engage in respectful philosophical debate over classical poetry.",
+    "Vast banyan tree with centuries-old hanging prop roots sheltering a humble stone Ganesha shrine anointed with red vermilion and white vibhuti.",
+    "Village craftsmen in an open-air workshop hand-carving ornate stone pillars with chisel and hammer, granite dust floating in sunbeams.",
+    "Devotees carrying brass trays piled high with fragrant champaka flowers, ripe bananas, tender coconuts, and betel leaves toward the sanctum.",
+    "Peaceful sanctum doorway flanked by two monolithic stone Dvarapala guardians holding clubs, glowing warm in brass lamp light.",
+    "Ancient Chola bronze icons of Shiva and Parvati (Kalyanasundara) being dressed in royal silk pitambarams and jewel-encrusted crowns.",
+    "Sunset over a tranquil rural temple tank covered with blooming white water lilies, temple gopuram reflected upside-down in calm water.",
+    "Revered Othuvar singing ancient Tamil Pann melodies with small bronze cymbals, voice echoing melodiously in the hypostyle stone hall.",
+    "Sacred temple fire (Homa kundam) ablaze with pure ghee offerings and dried samithu twigs, Vedic mantras purifying the morning air.",
+    "Tamil women in traditional madisar and silk sarees drawing intricate kolam patterns with white rice flour on the red oxide entrance porch.",
+    "Village children walking hand-in-hand along the bund of a green paddy field toward the village temple as morning bells ring.",
+    "Close-up of a smiling bronze Murugan icon holding the divine Vel, adorned with fresh garlands of yellow marigolds and green tulasi.",
+    "Warm golden twilight inside the temple kitchen where grand feasts of tamarind rice and payasam are cooked in traditional brass cauldrons.",
+    "Night sky illuminated by hundreds of clay oil lamps floating gently on the temple tank during Karthigai Deepam festival.",
+    "Wandering ascetic seated in silent lotus meditation beneath a sacred Vilvam tree, deep peace radiating from his serene expression.",
+    "Sublime nocturnal panorama of the ancient granite temple rising silently above the darkened rural landscape under a canopy of stars."
+]
+
+## Track 16: செய் அருகே (Sei Aruge - Agricultural Temple Landscapes & Hymns)
+SEI_ARUGE_PROMPTS = [
+    "Breathtaking panoramic dawn across lush green river delta paddy fields (Sei), with ancient granite temple gopuram towering peacefully in the backdrop.",
+    "Dewdrops glistening on vibrant green rice stalks in the early morning sunlight, gentle breeze creating rolling waves across the agricultural fields.",
+    "Hardworking Tamil farmers in pristine white waistcloths guiding a pair of noble white humped bullocks through fertile mud, singing field hymns.",
+    "Ancient stone irrigation canal (Vaaykkaal) diverting crystal Kaveri river waters into emerald paddy terraces lined with banana trees.",
+    "Traditional rural temple shrine dedicated to Lord Shiva situated right on the bank of the agricultural field, surrounded by flowering coconut palms.",
+    "Elderly farmer woman with tripundra vibhuti offering the first harvested sheaves of golden paddy (Kadhir) reverently to the temple deity.",
+    "Flock of white cranes (Kokku) taking flight from the shimmering wet paddy fields against a pink-and-golden sunrise sky.",
+    "Village artisan weaving sturdy bamboo grain baskets (Koodai) on the porch of a thatched cottage under the shade of a mango grove.",
+    "Granite threshing floor (Kalam) where golden paddy grains are winnowed into the wind, sunlight catching the sparkling golden husks.",
+    "Village temple festival procession winding its way along the narrow path between two lush green paddy fields with nadaswaram musicians.",
+    "Sacred Nandi bull carved from black granite sitting peacefully facing the temple sanctum, surrounded by freshly harvested green sugarcane.",
+    "Traditional water-wheel and wooden sluice gates engineered with ancient Chola masonry, water gushing smoothly into field channels.",
+    "Village children splashing playfully in the clear stone canal while their mothers wash clothes and brass vessels on granite ghats.",
+    "Ancient village banyan tree spreading its wide canopy over the agricultural expanse, wild birds nesting peacefully in its branches.",
+    "Tamil householders preparing sweet Pongal in a brand-new clay pot decorated with turmeric and ginger plants over an open wood fire in the field.",
+    "Boiling Pongal milk frothing over the rim of the pot with joy as farmers shout 'Pongalo Pongal' in gratitude to the Sun God (Surya).",
+    "Close-up of ripe golden paddy ears bowing gracefully under their own weight, symbolizing humility born of true spiritual maturity.",
+    "Temple priest carrying a bronze bell and camphor arati out to the paddy fields to bless the harvest with sacred mantras.",
+    "Sunset casting warm golden and purple reflections over mirror-like flooded paddy fields stretching all the way to the horizon.",
+    "Farmer family sitting together on the veranda of their tiled courtyard house at dusk, admiring the healthy crops with thankful hearts.",
+    "Night descends over the rural landscape, fireflies blinking like tiny lanterns among the tall rice stalks beside the temple moat.",
+    "Solitary oil lamp burning faithfully in the small roadside Ganesha niche beside the field trail, guiding night-time travelers.",
+    "Cows and calves resting comfortably in clean straw barns, chewing cud peacefully under the warm light of a hanging hurricane lantern.",
+    "Starry night vista of the sleeping agrarian village, ancient temple gopuram standing as the benevolent protector over the peaceful earth."
+]
+
+## Track 17, 18, 19: அங்கமும் வேதமும் (Angamum Vedhamum - Thevaram Sacred Tamil Verses)
+ANGAMUM_VEDHAMUM_PROMPTS = [
+    "Magnificent sunrise over Thiruvaiyaru or Thillai temple, where the four Vedas and six Vedangas merge seamlessly into Tamil Thevaram hymns.",
+    "Revered Shaivite saints (Nayanmars) gathered in the grand hypostyle stone hall of a Chola temple, holding palm-leaf scriptures with reverence.",
+    "Darshan of Lord Shiva as Dakshinamurti seated beneath the cosmic banyan tree, imparting wordless silent wisdom to the four ancient rishis.",
+    "Vedic fire altar (Yajna Shala) with sacred Agni flames leaping high, Sivachariyars chanting Rig, Yajur, Sama, and Atharva hymns in harmony.",
+    "Close-up of ancient palm-leaf manuscripts (Olai Chuvadi) inscribed with sacred Tamil verses, alongside bronze stylus and fragrant sandalwood paste.",
+    "Divine vision of Lord Shiva adorned with the crescent moon, coiled serpents, and glowing third eye, holding the trident and damaru drum.",
+    "Saint Appar kneeling with folded hands, his face radiating boundless humility and unshakable faith as he sweeps the temple stone floor (Uzhavarapani).",
+    "Polished black granite Shiva Lingam in the sanctum sanctorum anointed with pure cow ghee and adorned with garlands of bilva leaves and white nagalinga flowers.",
+    "Ancient stone pillar carved with Vedic symbols and Tamil inscriptions detailing temple endowments and musical hymns.",
+    "Young Brahmachari students seated in neat rows with sacred threads and tripundra vibhuti, reciting sacred mantras by the morning light.",
+    "Procession of temple priests bearing the holy bronze idols of Somaskanda (Shiva, Uma, and baby Murugan) under ceremonial golden parasols.",
+    "Fragrant sambrani and agarbatti incense smoke drifting like morning clouds across the carved ceilings of the ancient pillared corridor.",
+    "Sacred temple pond (Theertham) with stone steps leading down into still waters reflecting the monumental gopuram against dawn clouds.",
+    "Thevaram master Othuvar striking silver cymbals and singing Saint Sambandar's verses with tears of spiritual ecstasy rolling down his cheeks.",
+    "Close-up of a bronze Nataraja statue's compassionate face, serene half-smile witnessing the cosmic play of creation and dissolution.",
+    "Rows of tall brass Kuthuvilakku oil lamps glowing warmly along the sanctum perimeter, flickering flames creating a divine golden ambiance.",
+    "Devotees in traditional white veshtis and rich silk sarees bowing their heads as the chief priest performs Mahadeepaaradhana with flaming lamps.",
+    "Ancient granite mandapam illuminated by natural sunlight streaming through carved lattice stone windows (Jalandhras).",
+    "Pilgrim receiving sacred white Vibhuti ash placed directly onto his forehead by the priest, anointing him with divine purity and peace.",
+    "Sacred temple bull (Nandi) adorned with brass horn-caps and flower garlands, resting serenely at the threshold of the sanctum.",
+    "Evening twilight sky turning brilliant amber and violet over the temple kalasams as temple bells ring out their resonant call to evening prayer.",
+    "Large community dining hall where delicious hot Pongal and Payasam prasadam are served with boundless generosity to all pilgrims.",
+    "Thousands of devotees gathered in the temple courtyard with raised hands, unified in the thunderous chant of 'Om Namah Shivaya'.",
+    "Breathtaking nocturnal panorama of the temple sanctuary illuminated by thousands of clay lamps, an eternal beacon of Vedic and Tamil wisdom."
+]
+
+## Track 20: பாடக மெல்லடி (Paadaga Melladi - Thevaram Hymnal on Divine Feet)
+PAADAGA_MELLADI_PROMPTS = [
+    "Panoramic dawn view of an ancient coastal or riverbank temple in Tamil Nadu, sunbeams piercing through morning mist onto granite towers.",
+    "Close-up darshan of the divine lotus feet of Goddess Parvati (Ambal), adorned with golden anklets (Silambu) and red chemparuthi paste (Marudhani).",
+    "Saint singing with eyes closed in profound contemplation of the Mother's tender feet ('Paadaga Melladi'), hands pressed together in reverence.",
+    "Divine Mother Sivakami Amman or Abhirami standing in majestic grace in the sanctum, adorned with emerald necklace and rich crimson silk saree.",
+    "Intricate stone carving of Goddess Uma holding a blue lotus flower, flanked by celestial maidens carrying golden flywhisks (Chamaras).",
+    "Devotees reverently touching the sanctum doorstep (Ulluruvom) with their foreheads, contemplating the divine presence that sanctifies the ground.",
+    "Priests performing Kumkuma Abhishekam over the bronze Murti of the Goddess, vibrant red vermilion cascading into silver basins.",
+    "Corridor of stone pillars carved with graceful dancing celestial maidens (Apsaras) whose feet keep time to divine celestial ragas.",
+    "Fresh garlands of fragrant pink lotus blossoms and jasmine flowers piled high on silver offering trays inside the inner mandapam.",
+    "Flickering brass deepams reflecting warmly on the sacred bronze mirror (Kannadi Sevai) held before the deity during morning ritual.",
+    "Tamil women in traditional silk sarees seated gracefully on the polished stone floor, singing ancient hymns praising the Divine Mother.",
+    "Golden temple vimanam glowing with radiant morning sunlight, sculpted with auspicious figures of Lakshmi, Saraswati, and Durga.",
+    "Peaceful outer temple courtyard with peacocks and deer roaming gently beneath flowering kadamba trees in early morning cool.",
+    "Close-up of the temple priest's hands waving the five-tiered bronze camphor lamp in graceful circular motions before the Goddess.",
+    "Devotees receiving fragrant green Tulasi leaves and cool sandalwood paste on their palms as auspicious Prasad.",
+    "Ancient temple well with clean stone coping, women drawing fresh sweet water for the deity's sacred bath in gleaming brass pots.",
+    "Sunset painting the sky in shades of deep rose and saffron, matching the auspicious colors of the Goddess's ceremonial silks.",
+    "Young girl in traditional pattu pavadai learning temple dance steps on the carved stone platform, feet moving to rhythm of cymbals.",
+    "Sacred temple tank (Amman Theertham) surrounded by granite steps where floating water lilies open their petals to the evening breeze.",
+    "Evening Aarti ceremony where deep bronze bells and shell conches resound together in an overwhelming symphony of devotion.",
+    "Pilgrim families walking reverently around the inner corridor in silent circumambulation (Pradakshina), hands folded in humility.",
+    "Rows of brass hanging lamps illuminating the ancient Tamil inscription stones detailing centuries of royal endowments to the Goddess.",
+    "Devotees prostrating in total surrender before the Goddess's sanctum, tears of gratitude welling in their eyes.",
+    "Nocturnal panorama of the Goddess's shrine glowing like a diamond in the dark, radiating boundless maternal warmth and protection."
+]
+
+## Track 21 & 22: புண்ணியர் பூதியர் (Punniyar Poothiyar - Sacred Vibhuti & Shiva Hymn)
+PUNNIYAR_POOTHIYAR_PROMPTS = [
+    "Glorious sunrise over the holy hill of Thiruvannamalai (Arunachala) or Madurai, golden morning mists swirling around ancient temple towers.",
+    "Divine darshan of Lord Shiva smeared with sacred white ash (Poothi / Vibhuti) across His chest and forehead, radiant in cosmic serenity.",
+    "Saint Appar chanting 'Punniyar Poothiyar Pootha Mayakkinaar', his face aglow with the realization of the absolute purity of the Lord.",
+    "Close-up of the sacred Vibhuti (holy cow-dung ash) being prepared in pure Agamic tradition with herbal mantras and sacred fire.",
+    "Sivachariyar applying three immaculate white stripes of Vibhuti across the broad chest and forehead of a devout pilgrim with three fingers.",
+    "Polished black granite Shiva Lingam completely covered in fragrant cool white Vibhuti during the grand Bhasma Abhishekam.",
+    "Inner sanctum illuminated by massive flaming torches (Theevatti), casting dramatic golden highlights on the ash-adorned Lord.",
+    "Gathering of revered Shaivite ascetics (Sadhus) clad in simple saffron cloth and rudraksha malas, meditating deeply in the stone mandapam.",
+    "Intricate bronze Panchamukha Deepam held aloft by the priest, five golden flames illuminating the dark granite sanctuary.",
+    "Devotees singing the Thirumurai with intense devotion, eyes glistening with tears as they reflect on the impermanence of worldly life.",
+    "Ancient granite pillars carved with scenes of Lord Shiva granting salvation to humble devotees and forgiving their transgressions.",
+    "Sacred bilva tree in the temple courtyard dropping its trifoliate green leaves onto a small stone Lingam at dawn.",
+    "Temple elephants walking gracefully in the temple procession, foreheads decorated with broad tripundra vibhuti and red tilak.",
+    "Fragrant dhoopam smoke rising like white celestial clouds through the pierced stone roof of the temple hall into the morning light.",
+    "Close-up of a venerable elder's face marked with sacred ash and deep lines of wisdom, peaceful smile of spiritual fulfillment.",
+    "Devout Tamil family distributing packets of pure white Vibhuti wrapped in fragrant dried leaves to fellow pilgrims with folded hands.",
+    "Sacred temple pond reflecting the illuminated gopuram and the flickering oil lamps lined up along the water's edge.",
+    "Young boy kneeling beside his grandfather on the temple floor, learning to hold his hands in anjali mudra before the Lord.",
+    "Sunset over the sacred mountain, skies ablaze with deep crimson and purple as the temple conches announce the Sandhya Aarti.",
+    "Bronze Utsava deities of Lord Chandrasekhara and Goddess Parvati carried on an elaborate silver bull (Rishabha Vahana) procession.",
+    "Vast sea of white-clad devotees seated in the temple courtyard in unified silent meditation under the evening sky.",
+    "Camphor flame glowing intensely in the dark sanctum, casting a golden halo around the Shiva Lingam and the priest's hands.",
+    "Pilgrims taking the final darshan of the day, bowing low to the stone floor in deep surrender and peace.",
+    "Magical nighttime panorama of the temple hill lit with thousands of ghee lamps, glowing like a pillar of cosmic fire under the stars."
+]
+
 THEME_REGISTRY = {
     "kunram_erinthai": KUNRAM_ERINTHAI_PROMPTS,
     "pazhamai": PAZHAMAI_PROMPTS,
@@ -523,6 +720,13 @@ THEME_REGISTRY = {
     "kunruthoradal": KUNRUTHORADAL_PROMPTS,
     "pazhamudircholai": PAZHAMUDIRCHOLAI_PROMPTS,
     "thiruchendur": THIRUCHENDUR_PROMPTS,
+    "thodu_udaiya_seviyan": THODU_UDAIYA_SEVIYAN_PROMPTS,
+    "patharodu": PATHARODU_PROMPTS,
+    "maim_maru": MAIM_MARU_PROMPTS,
+    "sei_aruge": SEI_ARUGE_PROMPTS,
+    "angamum_vedhamum": ANGAMUM_VEDHAMUM_PROMPTS,
+    "paadaga_melladi": PAADAGA_MELLADI_PROMPTS,
+    "punniyar_poothiyar": PUNNIYAR_POOTHIYAR_PROMPTS,
 }
 
 def generate_track_scenes(theme_key, out_dir):

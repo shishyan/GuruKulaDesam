@@ -92,40 +92,69 @@ def build_film(audio_path, image_dir, output_path, title="Cinematic Master Film"
     effective_per_shot = SHOT_DURATION - FADE_DURATION  # 5.5s
     needed_shots = int((adur + 1.0) / effective_per_shot) + 1
 
+    # Reverse technique (pendulum / serpentine sequence):
+    # Traverses scenes 1 -> 24, then reverses 23 -> 2, then forward 1 -> 24...
+    # This prevents abrupt cuts from scene 24 back to scene 1, keeping thematic continuity unbroken.
     selected_imgs = []
-    for i in range(needed_shots):
-        selected_imgs.append(imgs[i % len(imgs)])
+    n_imgs = len(imgs)
+    if n_imgs == 1:
+        selected_imgs = [imgs[0]] * needed_shots
+    else:
+        cycle_len = 2 * (n_imgs - 1)
+        for i in range(needed_shots):
+            rem = i % cycle_len
+            if rem < n_imgs:
+                idx = rem
+            else:
+                idx = cycle_len - rem
+            selected_imgs.append(imgs[idx])
 
-    print(f"Rendering {len(selected_imgs)} cinematic camera moves across parallel threads...")
+    print(f"🎬 Total duration: {adur:.2f}s | Sequence: {len(selected_imgs)} shots via forward-reverse pendulum ordering across {n_imgs} unique scenes")
     from concurrent.futures import ThreadPoolExecutor
 
     def render_single_clip(item):
         i, im = item
         out_clip = tmp / f"clip_{i:03d}.mp4"
-        move_type = i % 5
+        move_type = i % 6
 
         if move_type == 0:
+            # 3D Arc Pan Clockwise (Curved orbital trajectory with subtle depth zoom)
+            total_frames = int(SHOT_DURATION * FPS)
+            vf = (f"zoompan=z='1.05+0.10*sin(PI*on/{total_frames})':"
+                  f"x='(iw-iw/zoom)*(0.5+0.45*cos(PI*on/{total_frames}))':"
+                  f"y='(ih-ih/zoom)*(0.5+0.40*sin(PI*on/{total_frames}))':"
+                  f"d={total_frames}:s=1280x720:fps={FPS},setsar=1")
+        elif move_type == 1:
+            # 3D Arc Pan Counter-Clockwise (Reverse orbital arc pan)
+            total_frames = int(SHOT_DURATION * FPS)
+            vf = (f"zoompan=z='1.05+0.10*sin(PI*on/{total_frames})':"
+                  f"x='(iw-iw/zoom)*(0.5-0.45*cos(PI*on/{total_frames}))':"
+                  f"y='(ih-ih/zoom)*(0.5-0.40*sin(PI*on/{total_frames}))':"
+                  f"d={total_frames}:s=1280x720:fps={FPS},setsar=1")
+        elif move_type == 2:
+            # Dynamic Push-In with subtle horizontal drift (Dolly In)
+            total_frames = int(SHOT_DURATION * FPS)
+            vf = (f"zoompan=z='1.0+0.15*(on/{total_frames})':"
+                  f"x='(iw-iw/zoom)*(0.35+0.30*(on/{total_frames}))':"
+                  f"y='(ih-ih/zoom)*0.5':"
+                  f"d={total_frames}:s=1280x720:fps={FPS},setsar=1")
+        elif move_type == 3:
+            # Dynamic Pull-Out with vertical lift (Crane Out)
+            total_frames = int(SHOT_DURATION * FPS)
+            vf = (f"zoompan=z='1.15-0.15*(on/{total_frames})':"
+                  f"x='(iw-iw/zoom)*0.5':"
+                  f"y='(ih-ih/zoom)*(0.70-0.40*(on/{total_frames}))':"
+                  f"d={total_frames}:s=1280x720:fps={FPS},setsar=1")
+        elif move_type == 4:
+            # Smooth Cinematic Pan Left -> Right
             vf = (f"scale=1536:864:flags=bicubic,"
                   f"crop=1280:720:(in_w-out_w)*t/{SHOT_DURATION}:(in_h-out_h)/2,"
                   f"fps={FPS},setsar=1")
-        elif move_type == 1:
+        else:
+            # Smooth Cinematic Pan Right -> Left
             vf = (f"scale=1536:864:flags=bicubic,"
                   f"crop=1280:720:(in_w-out_w)*(1-t/{SHOT_DURATION}):(in_h-out_h)/2,"
                   f"fps={FPS},setsar=1")
-        elif move_type == 2:
-            vf = (f"scale=1536:864:flags=bicubic,"
-                  f"crop=1280:720:(in_w-out_w)/2:(in_h-out_h)*(1-t/{SHOT_DURATION}),"
-                  f"fps={FPS},setsar=1")
-        elif move_type == 3:
-            vf = (f"scale=1536:864:flags=bicubic,"
-                  f"crop=1280:720:(in_w-out_w)/2:(in_h-out_h)*t/{SHOT_DURATION},"
-                  f"fps={FPS},setsar=1")
-        else:
-            total_frames = int(SHOT_DURATION * FPS)
-            vf = (f"zoompan=z='1.0+0.12*(0.5-0.5*cos(PI*on/{total_frames}))':"
-                  f"x='(iw-iw/zoom)*(0.5+0.4*cos(PI*on/{total_frames}))':"
-                  f"y='(ih-ih/zoom)*(0.5+0.35*sin(PI*on/{total_frames}))':"
-                  f"d={total_frames}:s=1280x720:fps={FPS},setsar=1")
 
         run([
             FFMPEG, "-y", "-loglevel", "error",
