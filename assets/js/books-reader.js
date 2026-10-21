@@ -307,26 +307,35 @@ function formatLifeApplication3Ds(text) {
   if (duty || discipline || dignity) {
     let out = '';
     if (otherLines.length > 0) {
-      out += `<div style="margin-bottom:12px; color:#e2e8f0; line-height:1.7;">${otherLines.join('<br>')}</div>`;
+      out += `<div style="margin-bottom:14px; color:#e2e8f0; font-size:1.15rem; line-height:1.85;">${otherLines.join('<br>')}</div>`;
     }
     out += `
-      <div class="primary-3d-cards-row">
+      <div class="primary-3d-cards-row" style="display:flex; flex-direction:column; gap:14px; margin-top:10px;">
         ${duty ? `
-          <div class="primary-3d-item primary-3d-duty">
-            <span class="primary-3d-tag">🛡️ கடமை (Duty)</span>
-            <div class="primary-3d-desc">${duty}</div>
+          <div class="primary-3d-item primary-3d-duty" style="background:linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(56, 189, 248, 0.04) 100%); border:1px solid rgba(56, 189, 248, 0.4); border-radius:16px; padding:16px 20px;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+              <span class="primary-3d-tag" style="font-size:0.95rem; font-weight:800; background:rgba(0,0,0,0.5); color:#7dd3fc; border:1px solid rgba(56, 189, 248, 0.4); padding:4px 12px; border-radius:8px;">🛡️ கடமை (Duty)</span>
+              <span style="font-size:0.82rem; color:#94a3b8;">அன்றாட தர்மச் செயல்</span>
+            </div>
+            <div class="primary-3d-desc" style="font-size:1.18rem; color:#ffffff; line-height:1.85; font-weight:500;">${duty}</div>
           </div>
         ` : ''}
         ${discipline ? `
-          <div class="primary-3d-item primary-3d-discipline">
-            <span class="primary-3d-tag">⚖️ கட்டுப்பாடு (Discipline)</span>
-            <div class="primary-3d-desc">${discipline}</div>
+          <div class="primary-3d-item primary-3d-discipline" style="background:linear-gradient(135deg, rgba(250, 204, 21, 0.15) 0%, rgba(250, 204, 21, 0.04) 100%); border:1px solid rgba(250, 204, 21, 0.4); border-radius:16px; padding:16px 20px;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+              <span class="primary-3d-tag" style="font-size:0.95rem; font-weight:800; background:rgba(0,0,0,0.5); color:#fde047; border:1px solid rgba(250, 204, 21, 0.4); padding:4px 12px; border-radius:8px;">⚖️ கட்டுப்பாடு (Discipline)</span>
+              <span style="font-size:0.82rem; color:#94a3b8;">மன &amp; செயல் ஒழுக்கம்</span>
+            </div>
+            <div class="primary-3d-desc" style="font-size:1.18rem; color:#ffffff; line-height:1.85; font-weight:500;">${discipline}</div>
           </div>
         ` : ''}
         ${dignity ? `
-          <div class="primary-3d-item primary-3d-dignity">
-            <span class="primary-3d-tag">👑 கண்ணியம் (Dignity)</span>
-            <div class="primary-3d-desc">${dignity}</div>
+          <div class="primary-3d-item primary-3d-dignity" style="background:linear-gradient(135deg, rgba(52, 211, 153, 0.15) 0%, rgba(52, 211, 153, 0.04) 100%); border:1px solid rgba(52, 211, 153, 0.4); border-radius:16px; padding:16px 20px;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+              <span class="primary-3d-tag" style="font-size:0.95rem; font-weight:800; background:rgba(0,0,0,0.5); color:#6ee7b7; border:1px solid rgba(52, 211, 153, 0.4); padding:4px 12px; border-radius:8px;">👑 கண்ணியம் (Dignity)</span>
+              <span style="font-size:0.82rem; color:#94a3b8;">சுயமதிப்பும் மேன்மையும்</span>
+            </div>
+            <div class="primary-3d-desc" style="font-size:1.18rem; color:#ffffff; line-height:1.85; font-weight:500;">${dignity}</div>
           </div>
         ` : ''}
       </div>
@@ -355,23 +364,26 @@ function formatExerciseList(text) {
   if (items.length > 0) {
     let out = '';
     if (otherLines.length > 0) {
-      out += `<div style="margin-bottom:12px; color:#e2e8f0; line-height:1.7;">${otherLines.join('<br>')}</div>`;
+      out += `<div style="margin-bottom:16px; color:#e2e8f0; font-size:1.15rem; line-height:1.85;">${otherLines.join('<br>')}</div>`;
     }
-    out += `<div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">`;
+    out += `<div style="display:flex; flex-direction:column; gap:16px; margin-top:12px;">`;
     items.forEach(item => {
       const isProject = /செயல் திட்டம்|திட்டம்|activity|project/i.test(item.content);
       const icon = isProject ? '✨' : '❓';
-      const badgeText = isProject ? 'செயல் திட்டம் (Activity)' : `வினா ${item.num} (Question)`;
-      const borderCol = isProject ? 'rgba(234, 179, 8, 0.4)' : 'rgba(192, 132, 252, 0.3)';
-      const bgCol = isProject ? 'rgba(234, 179, 8, 0.12)' : 'rgba(192, 132, 252, 0.08)';
-      const tagCol = isProject ? '#facc15' : '#d8b4fe';
+      const badgeText = isProject ? 'செயல் திட்டம் • Practical Activity' : `சிந்தனை வினா ${item.num} • Concept Question`;
+      const borderCol = isProject ? 'rgba(234, 179, 8, 0.45)' : 'rgba(192, 132, 252, 0.4)';
+      const bgCol = isProject ? 'linear-gradient(135deg, rgba(234, 179, 8, 0.16) 0%, rgba(234, 179, 8, 0.05) 100%)' : 'linear-gradient(135deg, rgba(192, 132, 252, 0.14) 0%, rgba(192, 132, 252, 0.04) 100%)';
+      const tagCol = isProject ? '#facc15' : '#e9d5ff';
 
       out += `
-        <div style="background:${bgCol}; border:1px solid ${borderCol}; border-radius:12px; padding:10px 14px; display:flex; align-items:flex-start; gap:12px;">
-          <span style="font-size:0.78rem; font-weight:800; background:rgba(0,0,0,0.4); color:${tagCol}; border:1px solid ${borderCol}; padding:3px 8px; border-radius:6px; white-space:nowrap;">
-            ${icon} ${badgeText}
-          </span>
-          <div style="font-size:0.92rem; color:#f1f5f9; line-height:1.6;">${item.content}</div>
+        <div class="exercise-question-card" style="background:${bgCol}; border:1px solid ${borderCol}; border-radius:16px; padding:18px 22px; display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+            <span class="exercise-question-badge" style="font-size:0.95rem; font-weight:800; background:rgba(0,0,0,0.5); color:${tagCol}; border:1px solid ${borderCol}; padding:5px 14px; border-radius:8px; display:inline-flex; align-items:center; gap:6px;">
+              ${icon} ${badgeText}
+            </span>
+            <span style="font-size:0.85rem; color:#94a3b8; letter-spacing:0.04em;">சுயமதிப்பீடு &amp; விவாதம்</span>
+          </div>
+          <div class="exercise-question-text" style="font-size:1.18rem; color:#ffffff; line-height:1.85; font-weight:500;">${item.content}</div>
         </div>
       `;
     });
