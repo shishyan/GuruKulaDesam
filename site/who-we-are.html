@@ -982,6 +982,216 @@
       background: rgba(126, 34, 206, 0.25);
     }
 
+  
+    /* ============================================================== */
+    /* UNIVERSAL SLIDE-OVER DRAWER & POPUP STYLING                     */
+    /* ============================================================== */
+    .drawer-backdrop-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: 2500;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.28s ease;
+    }
+    .drawer-backdrop-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .lineage-drawer-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(520px, 92vw);
+      background: linear-gradient(180deg, #090e1a 0%, #030712 100%);
+      border-left: 2px solid rgba(192, 132, 252, 0.45);
+      box-shadow: -10px 0 50px rgba(0, 0, 0, 0.9), 0 0 35px rgba(126, 34, 206, 0.35);
+      z-index: 2600;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .lineage-drawer-panel.active {
+      transform: translateX(0);
+    }
+    .drawer-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      background: rgba(30, 27, 75, 0.7);
+      border-bottom: 1.5px solid rgba(192, 132, 252, 0.25);
+    }
+    .drawer-close-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #f1f5f9;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+    }
+    .drawer-close-btn:hover {
+      background: #ef4444;
+      border-color: #f87171;
+      color: #fff;
+    }
+    .drawer-scrollable-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px;
+      scrollbar-width: thin;
+    }
+    .drawer-hero-img-wrap {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 1.5px solid rgba(192, 132, 252, 0.3);
+      max-height: 220px;
+    }
+    .drawer-hero-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .drawer-badge-floating {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(251, 191, 36, 0.6);
+      color: #fef08a;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .drawer-header-content {
+      margin-bottom: 20px;
+    }
+    .drawer-title {
+      font-size: 1.55rem;
+      color: #ffffff;
+      font-weight: 800;
+      margin: 0 0 6px 0;
+    }
+    .drawer-subtitle {
+      font-size: 0.95rem;
+      color: #c084fc;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .drawer-epoch-pill {
+      display: inline-block;
+      background: rgba(168, 85, 247, 0.15);
+      border: 1px solid rgba(192, 132, 252, 0.35);
+      color: #e9d5ff;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .drawer-grid-details {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .drawer-grid-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .d-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #94a3b8;
+      font-weight: 700;
+    }
+    .d-val {
+      font-size: 0.92rem;
+      color: #f8fafc;
+      font-weight: 600;
+    }
+    .drawer-section-block {
+      margin-bottom: 20px;
+    }
+    .d-block-title {
+      font-size: 0.95rem;
+      color: #e2e8f0;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 6px;
+    }
+    .d-saptarshi-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .s-pill {
+      background: rgba(6, 182, 212, 0.15);
+      border: 1px solid rgba(6, 182, 212, 0.35);
+      color: #67e8f9;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .d-summary-p {
+      color: #cbd5e1;
+      font-size: 0.94rem;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* Manu card interactive click styling */
+    .manu-card {
+      cursor: pointer;
+      position: relative;
+      transition: all 0.22s ease;
+    }
+    .manu-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(192, 132, 252, 0.6) !important;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(168, 85, 247, 0.35) !important;
+    }
+    .card-click-hint {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.12);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .manu-card:hover .card-click-hint {
+      color: #fde047;
+    }
+
   </style>
 </head>
 <body class="has-left-strip theme-cosmic">
@@ -1668,7 +1878,7 @@
       if (!container || !window.GKD_GENEALOGY.section_1_cosmic_origin) return;
       const list = window.GKD_GENEALOGY.section_1_cosmic_origin.manasaputras_and_prajapatis;
       container.innerHTML = list.map((p, idx) => `
-        <div class="prajapati-card" onclick="openPrajapatiModal(${idx})">
+        <div class="prajapati-card" onclick="window.openAncestorCardDrawer(p.name, p.name + ' Maharshi', p.origin, p.prominent_descendants, 'Prajapati / Rishi')">
           <div class="prajapati-card-header">
             <span class="prajapati-name">${idx + 1}. ${p.name} Maharshi</span>
             <span class="prajapati-origin-tag">${p.origin}</span>
@@ -1682,7 +1892,8 @@
       `).join('');
     }
 
-    // 2. Render 14 Manus (Level 2)
+    
+    // 2. Render 14 Manus (Level 2) - CLICKABLE WITH DRAWER POPUP & IMAGES
     function renderManus() {
       const container = document.getElementById('manusGrid');
       if (!container || !window.GKD_GENEALOGY.section_2_the_14_manus) return;
@@ -1692,7 +1903,7 @@
         const badgeClass = isCurrent ? 'manu-badge-current' : (m.epoch.includes('Past') ? 'manu-badge-past' : 'manu-badge-future');
         const badgeLabel = isCurrent ? '★ தற்போதைய மனு (Current 7th)' : (m.epoch.includes('Past') ? 'கடந்த மனு (Past)' : 'வருங்கால மனு (Future)');
         return `
-          <div class="manu-card ${isCurrent ? 'current-manu' : ''}">
+          <div class="manu-card ${isCurrent ? 'current-manu' : ''}" id="manu_card_${m.order}" onclick="window.openManuDrawer(${m.order})">
             <span class="manu-badge ${badgeClass}">${m.order}. ${badgeLabel}</span>
             <div class="manu-title">${m.name}</div>
             <div class="manu-details">
@@ -1700,6 +1911,10 @@
               <div><strong>இந்திரன்:</strong> ${m.indra} | <strong>அவதாரம்:</strong> ${m.avatar}</div>
               <div style="margin-top: 4px;"><strong>சப்தரிஷிகள்:</strong> ${m.saptarshis.slice(0, 4).join(', ')}...</div>
               <div style="font-size: 0.78rem; color: #38bdf8; margin-top: 6px; font-family: monospace;">📖 ${m.scriptural_reference}</div>
+            </div>
+            <div class="card-click-hint">
+              <span>🔍 முழு விளக்கம் &amp; ஓவியம் காண கிளிக் செய்க</span>
+              <span>›</span>
             </div>
           </div>
         `;
@@ -1718,7 +1933,7 @@
 
       container.innerHTML = milestoneKings.map(k => `
         <div class="tree-milestone">
-          <div class="milestone-card" onclick="openKingModal('surya', ${k.gen})">
+          <div class="milestone-card" onclick="window.openAncestorCardDrawer(k.name, k.name, k.epithet, k.notes, 'Surya Vamsham (Gen ' + k.gen + ')')">
             <div class="milestone-header">
               <span class="milestone-name">${k.name}</span>
               <span class="milestone-gen-badge">தலைமுறை ${k.gen} (Gen ${k.gen})</span>
@@ -1748,7 +1963,7 @@
       cv.origin_chain.forEach(node => {
         html += `
           <div class="tree-milestone lunar">
-            <div class="milestone-card">
+            <div class="milestone-card" onclick="window.openAncestorCardDrawer(this.querySelector('.milestone-name').textContent, this.querySelector('.milestone-name').textContent, this.querySelector('.milestone-gen-badge').textContent, this.querySelector('.milestone-desc').textContent, 'Chandra Vamsham')" style="cursor: pointer;">
               <div class="milestone-header">
                 <span class="milestone-name">${node.name}</span>
                 <span class="milestone-gen-badge">மூலத் தோற்றம் (Origin)</span>
@@ -1763,7 +1978,7 @@
       puruLine.forEach((p, idx) => {
         html += `
           <div class="tree-milestone lunar">
-            <div class="milestone-card">
+            <div class="milestone-card" onclick="window.openAncestorCardDrawer(this.querySelector('.milestone-name').textContent, this.querySelector('.milestone-name').textContent, this.querySelector('.milestone-gen-badge').textContent, this.querySelector('.milestone-desc').textContent, 'Chandra Vamsham')" style="cursor: pointer;">
               <div class="milestone-header">
                 <span class="milestone-name">${p.name}</span>
                 <span class="milestone-gen-badge">புரு-பாண்டவ கிளை</span>
@@ -2043,6 +2258,109 @@
       }
     });
   </script>
+  <script src="assets/js/manu-drawer.js"></script>
+  <script>
+
+    // Open Universal Ancestor Card Drawer / Modal with Rich Images & Scriptural Excerpts
+    window.openAncestorCardDrawer = function(id, fallbackName, fallbackRole, fallbackDesc, fallbackDynasty, fallbackImg) {
+      let drawer = document.getElementById('lineageUniversalDrawer');
+      if (!drawer) {
+        if (window.openManuDrawer) {
+          window.openManuDrawer(1);
+          drawer = document.getElementById('lineageUniversalDrawer');
+        }
+      }
+
+      // Check if found in flat ancestors map
+      let item = null;
+      if (window.ANCESTORS_FLAT_DATA) {
+        item = window.ANCESTORS_FLAT_DATA.find(x => x.id === id || x.name_en === id || x.name_ta === id);
+      }
+
+      const isTa = (localStorage.getItem('gkd_lang') || 'ta') === 'ta';
+      const drawerBody = document.getElementById('drawerDynamicContent');
+      if (!drawerBody) return;
+
+      const imgMap = {
+        'rama': 'assets/images/lessons/royal_administration_dharma.jpg',
+        'krishna': 'assets/images/lessons/dharma_cow_calf.jpg',
+        'pandava': 'assets/images/lessons/disciples_under_sacred_tree.jpg',
+        'chola': 'assets/images/lessons/chola_anicut_engineers.jpg',
+        'pandya': 'assets/images/lessons/grade5_sundarar_thiruvarur.jpg',
+        'pallava': 'assets/images/lessons/temple_architecture.jpg',
+        'rishi': 'assets/images/lessons/sage_sacred_scripture.jpg',
+        'default': 'assets/images/lessons/scholar_palm_manuscript.jpg'
+      };
+
+      let chosenImg = fallbackImg || imgMap.default;
+      let title = fallbackName || 'முன்னோர் ஆவணம்';
+      let subtitle = fallbackRole || 'சனாதன வம்சாவளி';
+      let epoch = 'வேத & இதிகாச காலம்';
+      let purana = '12 மகாபுராணங்கள் & இதிகாசங்கள்';
+      let desc = fallbackDesc || 'அகண்ட பாரதத்தின் தர்ம சக்கரவர்த்தி.';
+      let dynasty = fallbackDynasty || 'சூரிய / சந்திர வம்சம்';
+
+      if (item) {
+        title = isTa ? item.name_ta : item.name_en;
+        subtitle = isTa ? (item.name_en + ' — ' + item.role_ta) : (item.name_ta + ' — ' + item.role_en);
+        epoch = item.epoch || epoch;
+        purana = item.purana || purana;
+        desc = isTa ? item.desc_ta : item.desc_en;
+        dynasty = item.type;
+      }
+
+      // Smart image selection
+      const lower = (id + ' ' + title + ' ' + subtitle).toLowerCase();
+      if (lower.includes('rama') || lower.includes('raghu') || lower.includes('dasharatha') || lower.includes('ikshvaku')) chosenImg = imgMap.rama;
+      else if (lower.includes('krishna') || lower.includes('yadu') || lower.includes('vasudeva')) chosenImg = imgMap.krishna;
+      else if (lower.includes('arjuna') || lower.includes('pandu') || lower.includes('parikshit') || lower.includes('bharata')) chosenImg = imgMap.pandava;
+      else if (lower.includes('chola') || lower.includes('karikala') || lower.includes('rajaraja') || lower.includes('sibi')) chosenImg = imgMap.chola;
+      else if (lower.includes('pandya') || lower.includes('nedunjeliyan') || lower.includes('pururavas')) chosenImg = imgMap.pandya;
+      else if (lower.includes('pallava') || lower.includes('mamalla') || lower.includes('drona')) chosenImg = imgMap.pallava;
+      else if (lower.includes('rishi') || lower.includes('prajapati') || lower.includes('vashistha') || lower.includes('agastya')) chosenImg = imgMap.rishi;
+
+      drawerBody.innerHTML = `
+        <div class="drawer-hero-img-wrap">
+          <img src="${chosenImg}" alt="${title}" class="drawer-hero-img" onerror="this.src='assets/images/lessons/scholar_palm_manuscript.jpg'">
+          <div class="drawer-badge-floating">
+            ${dynasty.toUpperCase()} • ${isTa ? 'வரலாற்றுப் பதிவு' : 'Historical Record'}
+          </div>
+        </div>
+
+        <div class="drawer-header-content">
+          <h2 class="drawer-title">${title}</h2>
+          <div class="drawer-subtitle">${subtitle}</div>
+          <div class="drawer-epoch-pill">⏳ ${epoch}</div>
+        </div>
+
+        <div class="drawer-grid-details">
+          <div class="drawer-grid-item">
+            <span class="d-label">${isTa ? 'அரச / ஆன்மீக மரபு:' : 'Dynastic Branch:'}</span>
+            <span class="d-val" style="color: #fde047;">👑 ${dynasty}</span>
+          </div>
+          <div class="drawer-grid-item">
+            <span class="d-label">${isTa ? 'புராண & வரலாற்று நூல்கள்:' : 'Scriptural Concordance:'}</span>
+            <span class="d-val" style="color: #c084fc;">📖 ${purana}</span>
+          </div>
+        </div>
+
+        <div class="drawer-section-block">
+          <h4 class="d-block-title">${isTa ? 'வாழ்க்கை வரலாறு & தர்மச் சிறப்பு:' : 'Life, Deeds & Historical Significance:'}</h4>
+          <p class="d-summary-p">${desc}</p>
+        </div>
+
+        <div style="margin-top: 24px; display: flex; gap: 10px;">
+          <button type="button" class="journey-pill-btn" onclick="window.closeUniversalDrawer(); window.location.hash='#lineage_pedigree_section'; if(window.searchLineageNavigator){ window.searchLineageNavigator('${title.split(' ')[0]}'); }">
+            🧭 வம்சாவளி அரங்கில் காணுக (View in Pedigree Navigator) ›
+          </button>
+        </div>
+      `;
+
+      document.getElementById('lineageDrawerOverlay').classList.add('active');
+      drawer.classList.add('active');
+    };
+
+</script>
   <script src="assets/js/main.js"></script>
 
 
