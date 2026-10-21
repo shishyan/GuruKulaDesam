@@ -3224,7 +3224,7 @@ html {
   top: 75px;
   max-height: calc(100vh - 90px);
   overflow-y: auto;
-  background: linear-gradient(180deg, rgba(69, 10, 10, 0.94) 0%, rgba(153, 27, 27, 0.90) 50%, rgba(124, 45, 18, 0.94) 100%) !important;
+  background: linear-gradient(180deg, rgba(46, 16, 101, 0.95) 0%, rgba(88, 28, 135, 0.92) 50%, rgba(59, 7, 100, 0.95) 100%) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1.5px solid rgba(45, 212, 191, 0.35) !important;
@@ -3613,10 +3613,10 @@ body.has-left-strip:has(.left-strip-bar.open) {
   bottom: 0;
   left: 0;
   width: var(--strip-collapsed-width) !important;
-  background: linear-gradient(180deg, #7f1d1d 0%, #dc2626 35%, #ea580c 70%, #c2410c 100%) !important;
+  background: linear-gradient(180deg, #3b0764 0%, #7e22ce 35%, #a855f7 70%, #581c87 100%) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-right: 1.5px solid rgba(251, 146, 60, 0.45) !important;
+  border-right: 1.5px solid rgba(192, 132, 252, 0.55) !important;
   z-index: 1200;
   display: flex;
   flex-direction: column;
@@ -3624,7 +3624,7 @@ body.has-left-strip:has(.left-strip-bar.open) {
   transition: width var(--strip-accordion-speed) var(--strip-accordion-timing),
               box-shadow var(--strip-accordion-speed) ease,
               background var(--strip-accordion-speed) ease;
-  box-shadow: 4px 0 24px rgba(234, 88, 12, 0.35), 2px 0 16px rgba(0, 0, 0, 0.55);
+  box-shadow: 4px 0 24px rgba(168, 85, 247, 0.35), 2px 0 16px rgba(0, 0, 0, 0.55) !important;
   user-select: none;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -3635,9 +3635,9 @@ body.has-left-strip:has(.left-strip-bar.open) {
 .left-strip-bar.open,
 body.primary-menu-open .left-strip-bar {
   width: var(--strip-expanded-width) !important;
-  background: linear-gradient(180deg, #450a0a 0%, #991b1b 30%, #ea580c 70%, #7c2d12 100%) !important;
-  border-right: 1.5px solid rgba(251, 146, 60, 0.60) !important;
-  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.85), 0 0 35px rgba(234, 88, 12, 0.35) !important;
+  background: linear-gradient(180deg, #2e1065 0%, #581c87 30%, #7e22ce 70%, #3b0764 100%) !important;
+  border-right: 1.5px solid rgba(192, 132, 252, 0.70) !important;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.85), 0 0 35px rgba(168, 85, 247, 0.40) !important;
   overflow-y: auto;
 }
 
@@ -4096,7 +4096,7 @@ body.primary-menu-open .strip-dock-label {
   top: 75px;
   max-height: calc(100vh - 90px);
   overflow-y: auto;
-  background: linear-gradient(180deg, rgba(69, 10, 10, 0.94) 0%, rgba(153, 27, 27, 0.90) 50%, rgba(124, 45, 18, 0.94) 100%) !important;
+  background: linear-gradient(180deg, rgba(46, 16, 101, 0.95) 0%, rgba(88, 28, 135, 0.92) 50%, rgba(59, 7, 100, 0.95) 100%) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1.5px solid rgba(45, 212, 191, 0.35) !important;
@@ -10401,17 +10401,17 @@ body.drawer-open {
 
 
 /* ============================================================== */
-/* AUTHORITATIVE WARM RED-ORANGE GRADIENT SHELL STRIP & SIDEBAR   */
+/* AUTHORITATIVE WARM VIOLET GRADIENT SHELL STRIP & SIDEBAR   */
 /* ============================================================== */
 .left-strip-bar,
 .left-strip-bar:not(.expanded):not(.open),
 aside.left-strip-bar,
 nav.left-strip-bar,
 #left-strip-bar {
-  background: linear-gradient(180deg, #7f1d1d 0%, #dc2626 35%, #ea580c 70%, #c2410c 100%) !important;
-  background-color: #ea580c !important;
-  border-right: 1.5px solid rgba(251, 146, 60, 0.55) !important;
-  box-shadow: 4px 0 24px rgba(234, 88, 12, 0.35), 2px 0 16px rgba(0, 0, 0, 0.55) !important;
+  background: linear-gradient(180deg, #3b0764 0%, #7e22ce 35%, #a855f7 70%, #581c87 100%) !important;
+  background-color: #7e22ce !important;
+  border-right: 1.5px solid rgba(192, 132, 252, 0.55) !important;
+  box-shadow: 4px 0 24px rgba(168, 85, 247, 0.35), 2px 0 16px rgba(0, 0, 0, 0.55) !important;
 }
 
 .left-strip-bar.expanded,
@@ -10419,17 +10419,17 @@ nav.left-strip-bar,
 body.primary-menu-open .left-strip-bar,
 aside.left-strip-bar.expanded,
 aside.left-strip-bar.open {
-  background: linear-gradient(180deg, #450a0a 0%, #991b1b 30%, #ea580c 70%, #7c2d12 100%) !important;
-  background-color: #991b1b !important;
-  border-right: 1.5px solid rgba(251, 146, 60, 0.70) !important;
-  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.85), 0 0 35px rgba(234, 88, 12, 0.40) !important;
+  background: linear-gradient(180deg, #2e1065 0%, #581c87 30%, #7e22ce 70%, #3b0764 100%) !important;
+  background-color: #581c87 !important;
+  border-right: 1.5px solid rgba(192, 132, 252, 0.70) !important;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.85), 0 0 35px rgba(168, 85, 247, 0.40) !important;
 }
 
 .course-sidebar,
 .dedicated-sub-sidebar,
 aside.course-sidebar {
-  background: linear-gradient(180deg, rgba(69, 10, 10, 0.94) 0%, rgba(153, 27, 27, 0.90) 50%, rgba(124, 45, 18, 0.94) 100%) !important;
-  background-color: rgba(69, 10, 10, 0.94) !important;
-  border: 1.5px solid rgba(251, 146, 60, 0.45) !important;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65), 0 0 25px rgba(234, 88, 12, 0.25) !important;
+  background: linear-gradient(180deg, rgba(46, 16, 101, 0.95) 0%, rgba(88, 28, 135, 0.92) 50%, rgba(59, 7, 100, 0.95) 100%) !important;
+  background-color: rgba(46, 16, 101, 0.95) !important;
+  border: 1.5px solid rgba(192, 132, 252, 0.50) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65), 0 0 25px rgba(168, 85, 247, 0.30) !important;
 }
