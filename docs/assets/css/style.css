@@ -3224,7 +3224,7 @@ html {
   top: 75px;
   max-height: calc(100vh - 90px);
   overflow-y: auto;
-  background: linear-gradient(180deg, rgba(5, 30, 26, 0.90) 0%, rgba(6, 38, 32, 0.88) 50%, rgba(4, 22, 20, 0.92) 100%) !important;
+  background: linear-gradient(180deg, rgba(69, 10, 10, 0.94) 0%, rgba(153, 27, 27, 0.90) 50%, rgba(124, 45, 18, 0.94) 100%) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1.5px solid rgba(45, 212, 191, 0.35) !important;
@@ -4089,7 +4089,6 @@ body.primary-menu-open .strip-dock-label {
 }
 
 /* Dedicated Sub-menu Sidebar for the Chosen Group */
-.course-sidebar,
 .dedicated-sub-sidebar {
   width: 290px;
   flex-shrink: 0;
@@ -4097,7 +4096,7 @@ body.primary-menu-open .strip-dock-label {
   top: 75px;
   max-height: calc(100vh - 90px);
   overflow-y: auto;
-  background: linear-gradient(180deg, rgba(5, 30, 26, 0.90) 0%, rgba(6, 38, 32, 0.88) 50%, rgba(4, 22, 20, 0.92) 100%) !important;
+  background: linear-gradient(180deg, rgba(69, 10, 10, 0.94) 0%, rgba(153, 27, 27, 0.90) 50%, rgba(124, 45, 18, 0.94) 100%) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1.5px solid rgba(45, 212, 191, 0.35) !important;
@@ -5853,7 +5852,6 @@ header.site-header {
   }
 }
 
-.course-sidebar,
 .dedicated-sub-sidebar {
   top: 70px !important;
   max-height: calc(100vh - 90px) !important;
@@ -9134,8 +9132,6 @@ h1, h2, h3, h4, h5, h6,
 .content-wrapper,
 .course-layout-container,
 .course-main-column,
-.course-sidebar,
-.left-strip-bar:not(.expanded):not(.open),
 .zen-grade-stage-shell,
 .zen-grade-focus-card,
 .grade-card,
@@ -9175,7 +9171,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* 2. Remove all structural borders and container backgrounds universally */
-body :is(div, section, article, aside, nav, header, footer, main, table, thead, tbody, tr, label):not(.modal):not(.modal-content):not(.context-search-panel):not(.quick-actions-menu):not(.left-strip-bar.expanded):not(.left-strip-bar.open):not(.toast):not(.gkd-living-dheepam-corner):not(.gkd-living-dhoopam-corner):not(button):not(.sheet-btn):not(.tag):not(input):not(textarea):not(select):not(.zen-grade-btn):not(.grade-hub-btn):not(.sheet-batch-btn) {
+body :is(div, section, article, aside, nav, header, footer, main, table, thead, tbody, tr, label):not(.modal):not(.modal-content):not(.context-search-panel):not(.quick-actions-menu):not(.left-strip-bar):not(.course-sidebar):not(.dedicated-sub-sidebar):not(.toast):not(.gkd-living-dheepam-corner):not(.gkd-living-dhoopam-corner):not(button):not(.sheet-btn):not(.tag):not(input):not(textarea):not(select):not(.zen-grade-btn):not(.grade-hub-btn):not(.sheet-batch-btn) {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
@@ -10402,3 +10398,38 @@ body.drawer-open {
 }
 
 
+
+
+/* ============================================================== */
+/* AUTHORITATIVE WARM RED-ORANGE GRADIENT SHELL STRIP & SIDEBAR   */
+/* ============================================================== */
+.left-strip-bar,
+.left-strip-bar:not(.expanded):not(.open),
+aside.left-strip-bar,
+nav.left-strip-bar,
+#left-strip-bar {
+  background: linear-gradient(180deg, #7f1d1d 0%, #dc2626 35%, #ea580c 70%, #c2410c 100%) !important;
+  background-color: #ea580c !important;
+  border-right: 1.5px solid rgba(251, 146, 60, 0.55) !important;
+  box-shadow: 4px 0 24px rgba(234, 88, 12, 0.35), 2px 0 16px rgba(0, 0, 0, 0.55) !important;
+}
+
+.left-strip-bar.expanded,
+.left-strip-bar.open,
+body.primary-menu-open .left-strip-bar,
+aside.left-strip-bar.expanded,
+aside.left-strip-bar.open {
+  background: linear-gradient(180deg, #450a0a 0%, #991b1b 30%, #ea580c 70%, #7c2d12 100%) !important;
+  background-color: #991b1b !important;
+  border-right: 1.5px solid rgba(251, 146, 60, 0.70) !important;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.85), 0 0 35px rgba(234, 88, 12, 0.40) !important;
+}
+
+.course-sidebar,
+.dedicated-sub-sidebar,
+aside.course-sidebar {
+  background: linear-gradient(180deg, rgba(69, 10, 10, 0.94) 0%, rgba(153, 27, 27, 0.90) 50%, rgba(124, 45, 18, 0.94) 100%) !important;
+  background-color: rgba(69, 10, 10, 0.94) !important;
+  border: 1.5px solid rgba(251, 146, 60, 0.45) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65), 0 0 25px rgba(234, 88, 12, 0.25) !important;
+}
