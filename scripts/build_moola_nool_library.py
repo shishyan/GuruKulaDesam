@@ -18,6 +18,7 @@ MOOLA_DATA = {
     "updated": "2026-10-09",
     "description": "குருகுல தேசம் மூல நூல் நூலகம் — சனாதன தர்மம் & தமிழ் மரபின் முதன்மை சான்றாதார நூல்கள் (Canonical Root Scriptures with Verse, Padavurai, and Commentary)",
         "categories": [
+                {"id": "puranas-epics", "name": "ஈழத்து மூலப் பதிப்புகள் — புராணங்கள் & இதிகாசங்கள் (Authentic Jaffna Recensions)", "count": 10},
         {"id": "school-ethics", "name": "ஆசிரம அறநூல்கள் (நன்னெறி, நல்வழி, குறள்)", "count": 3},
         {"id": "buddha-teachings", "name": "புத்தர் போதனைகள் & தம்மபதம் (Dhammapada)", "count": 1},
         {"id": "mantra-sound", "name": "திருமந்திரம் & வேத மூல மந்திரங்கள்", "count": 2},
