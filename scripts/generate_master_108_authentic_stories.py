@@ -273,6 +273,12 @@ def generate_story(num, title_ta, title_en):
 def main():
     print("Generating 108 authentic unique children stories...")
     chapters = []
+    # 1 to 5 from MASTER_108
+    for item in MASTER_108:
+        num, t_ta, t_en, syn, p1, p2, p3, p4 = item
+        ch = generate_story(num, t_ta, t_en)
+        chapters.append(ch)
+    # 6 to 108 from TOPICS_FOR_REST
     for item in TOPICS_FOR_REST:
         num, t_ta, t_en = item
         ch = generate_story(num, t_ta, t_en)
