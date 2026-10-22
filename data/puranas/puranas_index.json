@@ -3,267 +3,291 @@
   "catalog": [
     {
       "id": "bhagavata-puranam",
-      "title": "ஸ்ரீமத் பாகவத மகாபுராணம் (Srimad Bhagavatam)",
+      "title": "ஸ்ரீமத் பாகவத மகாபுராணம் (Srimad Bhagavatam) (108 கதைகள்)",
       "category": "வைணவ மகாபுராணம் (Amala Purana)",
       "author": "சுக பிரம்ம ரிஷி & பரீக்ஷித் மகாராஜா",
       "summary": "12 ஸ்கந்தங்கள், 335 அத்தியாயங்கள், 18,000 சுலோகங்களைக் கொண்ட அமல புராணம். பரீக்ஷித்து மன்னனுக்கு 7 நாட்களில் மரண பயத்தை நீக்கி முக்தி அருளிய பாகவத தர்மத்தின் சிகரம்.",
       "icon": "🦚",
       "color": "#8b5cf6",
       "sections_name": "ஸ்கந்தம் (Skandam)",
-      "total_chapters": 12
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "brahma-puranam",
-      "title": "ஸ்ரீ பிரம்ம மகாபுராணம் (Brahma Puranam - ஆதி புராணம்)",
+      "title": "ஸ்ரீ பிரம்ம மகாபுராணம் (Brahma Puranam - ஆதி புராணம்) (108 கதைகள்)",
       "category": "ஆதி மகாபுராணம் (Adi Purana)",
       "author": "பிரம்மா & தக்ஷ பிரஜாபதி",
       "summary": "புராணங்களின் தொடக்க நூல். 245 அத்தியாயங்கள். சூரிய தேவனின் வழிபாட்டு முறை, கொனார்க் சூரிய கோவில் தத்துவம், பூரி ஜெகன்நாதர் மகிமை மற்றும் கௌதமி நதி வரலாறு.",
       "icon": "☀️",
       "color": "#f97316",
       "sections_name": "பாகம் (Bhaga)",
-      "total_chapters": 4
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "brahmanda-puranam",
-      "title": "ஸ்ரீ பிரம்மாண்ட மகாபுராணம் (Brahmanda Puranam)",
+      "title": "ஸ்ரீ பிரம்மாண்ட மகாபுராணம் (Brahmanda Puranam) (108 கதைகள்)",
       "category": "அண்டவியல் மகாபுராணம் (Cosmic Purana)",
       "author": "பிரம்மா & நாரதர்",
       "summary": "பிரபஞ்ச அண்டவியல், லலிதா சஹஸ்ரநாமம், லலிதா திரிசதி, மற்றும் பரசுராமரின் முழு சரிதம் அடங்கிய மாபெரும் ரகசிய சாஸ்திரம்.",
       "icon": "🌌",
       "color": "#a855f7",
       "sections_name": "பாகம் (Bhaga)",
-      "total_chapters": 3
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "brahmavaivarta-puranam",
-      "title": "ஸ்ரீ பிரம்மவைவர்த்த மகாபுராணம் (Brahmavaivarta Puranam)",
+      "title": "ஸ்ரீ பிரம்மவைவர்த்த மகாபுராணம் (Brahmavaivarta Puranam) (108 கதைகள்)",
       "category": "வைணவ மகாபுராணம் (Brahmavaivarta)",
       "author": "வேத வியாசர் & சௌனகர்",
       "summary": "கோலோக ராதா-கிருஷ்ண தத்துவம், விநாயகர் அவதாரம், பிரகிருதி தேவியின் 5 பிரதான அம்சங்கள் (துர்க்கா, லக்ஷ்மி, சரஸ்வதி, சாவித்திரி, ராதா).",
       "icon": "🕊️",
       "color": "#fb7185",
       "sections_name": "காண்டம் (Kanda)",
-      "total_chapters": 4
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "children-purana-stories",
-      "title": "குழந்தைகளுக்கான புராணக் கதைப் பேழை (Children's Puranic Storybook)",
+      "title": "குழந்தைகளுக்கான 108 புராண இதிகாசக் கதைகள் (108 கதைகள்)",
       "category": "பாலர் அறநெறி நூலகம் (Kids Moral Library)",
       "author": "வேத வியாசர் & சனாதன முனிவர் மரபு",
       "summary": "குழந்தைகளுக்கான ஆன்மிக, அறநெறிப் புராண இதிகாசப் பெருங்கதைகள். எளிய நடை, நேரடிப் பக்க வாசிப்பு முறை.",
       "icon": "🌸",
       "color": "#facc15",
       "sections_name": "அத்தியாயம்",
-      "total_chapters": 10
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "garuda-puranam",
-      "title": "ஸ்ரீ கருட மகாபுராணம் (Garuda Puranam)",
+      "title": "ஸ்ரீ கருட மகாபுராணம் (Garuda Puranam) (108 கதைகள்)",
       "category": "வைணவ மகாபுராணம் (Garuda / Vaishnava)",
       "author": "பகவான் விஷ்ணு & கருடாழ்வார்",
       "summary": "கருடாழ்வாருக்கு எம்பெருமான் அருளிய மரணத்திற்குப் பின் ஆன்மாவின் பிரயாணம், கர்ம வினைகள், தர்ம வாழ்வு மற்றும் மோட்ச நெறிமுறைகள்.",
       "icon": "🦅",
       "color": "#eab308",
       "sections_name": "காண்டம் (Kanda)",
-      "total_chapters": 3
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "kandha-puranam",
-      "title": "கந்த புராணம் முழு மூல நூல் (Kandha Puranam - 100% Unabridged Full Text)",
+      "title": "கந்த புராணம் முழு மூல நூல் (Kandha Puranam - 100% Unabridged Full Text) (108 கதைகள்)",
       "category": "குமார மகாபுராணம்",
       "author": "கச்சியப்ப சிவாச்சாரியார்",
       "summary": "முருகப் பெருமானின் அவதாரம், வீரபாகுவின் தூது, சூரசம்ஹாரம் மற்றும் வள்ளி-தெய்வானை திருக்கல்யாணம் அடங்கிய முழுமையான சுவையான சிறார் பெருங்கதைகள்.",
       "icon": "🔥",
       "color": "#ec4899",
       "sections_name": "காண்டம் (Kandam)",
-      "total_chapters": 4
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "kurma-puranam",
-      "title": "ஸ்ரீ கூர்ம மகாபுராணம் (Kurma Puranam)",
+      "title": "ஸ்ரீ கூர்ம மகாபுராணம் (Kurma Puranam) (108 கதைகள்)",
       "category": "வைணவ/சைவ மகாபுராணம் (Kurma Purana)",
       "author": "கூர்ம மூர்த்தி & இந்திரத்யும்ன மகாராஜா",
       "summary": "பாற்கடலில் மந்தர மலையைத் தாங்கிய கூர்ம அவதார பரம்பொருளின் உபதேசம். ஈஸ்வர கீதை மற்றும் வியாச கீதையை உள்ளடக்கிய மெய்யறிவு நூல்.",
       "icon": "🐢",
       "color": "#14b8a6",
       "sections_name": "பாகம் (Vibhaga)",
-      "total_chapters": 3
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "linga-puranam",
-      "title": "ஸ்ரீ லிங்க மகாபுராணம் (Linga Puranam)",
+      "title": "ஸ்ரீ லிங்க மகாபுராணம் (Linga Puranam) (108 கதைகள்)",
       "category": "சைவ மகாபுராணம் (Linga Purana)",
       "author": "வேத வியாசர் & சூதர்",
       "summary": "அருவுருவ சிவலிங்க தத்துவம், 28 யோக அவதாரங்கள், அக்னி லிங்கோத்பவம், பாசுபத தந்திரம், மற்றும் ம்ருத்யுஞ்சய மந்திர மகிமை.",
       "icon": "🛕",
       "color": "#6366f1",
       "sections_name": "பாகம் (Bhaga)",
-      "total_chapters": 3
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "mahabharatam",
-      "title": "வில்லிபாரதம் & வியாச மகாபாரதம் (Mahabharatam)",
+      "title": "வில்லிபாரதம் & வியாச மகாபாரதம் (Mahabharatam) (108 கதைகள்)",
       "category": "இதிகாசம் (Itihasa)",
       "author": "வேத வியாசர் & வில்லிபுத்தூரார்",
       "summary": "18 பர்வங்கள் கொண்ட பாரதப் பெருங்காப்பியம். அறம், பொருள், இன்பம், வீடுபேறு ஆகியவற்றின் விரிவான களஞ்சியம். பகவத் கீதை, விதுர நீதி, யட்ச பிரஸ்னம், சாந்தி பர்வ ராஜதர்மம் உள்ளிட்ட வாழ்வியல் பேரொழுக்கப் பெட்டகம்.",
       "icon": "🏹",
       "color": "#f59e0b",
       "sections_name": "பர்வம் (Parva)",
-      "total_chapters": 18
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "markandeya-puranam",
-      "title": "ஸ்ரீ மார்க்கண்டேய மகாபுராணம் (Markandeya Puranam)",
+      "title": "ஸ்ரீ மார்க்கண்டேய மகாபுராணம் (Markandeya Puranam) (108 கதைகள்)",
       "category": "சாக்த/வைணவ மகாபுராணம் (Markandeya)",
       "author": "மார்க்கண்டேய முனிவர் & பறவைகள் உரையாடல்",
       "summary": "உலகப் பிரசித்தி பெற்ற 'தேவி மகாத்மியம்' (துர்க்கா சப்தசதி), சண்டீ ஹோமம், மற்றும் ஹரிச்சந்திர மகாராஜனின் வாய்மைச் சோதனை சரிதம் அடங்கிய நூல்.",
       "icon": "⚔️",
       "color": "#ef4444",
       "sections_name": "பகுதி (Bhaga)",
-      "total_chapters": 3
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "matsya-puranam",
-      "title": "ஸ்ரீ மத்ஸ்ய புராணம் (Matsya Puranam)",
+      "title": "ஸ்ரீ மத்ஸ்ய புராணம் (Matsya Puranam) (108 கதைகள்)",
       "category": "பழம்பெரும் மகாபுராணம் (Purana of Origins)",
       "author": "மத்ஸ்ய மூர்த்தி & சத்யவிரத மனு",
       "summary": "மீன் வடிவில் தோன்றிய பரம்பொருள் சத்யவிரத மனுவுக்குப் பிரளய காலத்தில் உபதேசித்த அண்டவியல் நூல். 14 மனுக்கள், ராஜநீதி, பிரபஞ்ச சிருஷ்டி, கோவில் சிற்பக் கலை மற்றும் பிரயாகை மகிமை.",
       "icon": "🐟",
       "color": "#0ea5e9",
       "sections_name": "பகுதி (Bhaga)",
-      "total_chapters": 5
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "narada-puranam",
-      "title": "ஸ்ரீ நாரத மகாபுராணம் (Narada Puranam)",
+      "title": "ஸ்ரீ நாரத மகாபுராணம் (Narada Puranam) (108 கதைகள்)",
       "category": "வைணவ மகாபுராணம் (Brihannaradiya)",
       "author": "நாரத மகரிஷி & சனத்குமாரர்",
       "summary": "வேதங்களின் ஆறு அங்கங்கள் (சீக்ஷை, கல்பம், வியாகரணம், நிருக்தம், சந்தஸ், ஜோதிஷம்) மற்றும் 18 புராணங்களின் சுருக்கக் கையேடு.",
       "icon": "🪕",
       "color": "#065f46",
       "sections_name": "பாகம் (Bhaga)",
-      "total_chapters": 3
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "padma-puranam",
-      "title": "ஸ்ரீ பத்ம மகாபுராணம் (Padma Puranam)",
+      "title": "ஸ்ரீ பத்ம மகாபுராணம் (Padma Puranam) (108 கதைகள்)",
       "category": "வைணவ மகாபுராணம் (Padma Purana)",
       "author": "வேத வியாசர் & சூதர்",
       "summary": "தாமரை மலரிலிருந்து தோன்றிய பிரபஞ்சத்தின் விரிவான 55,000 சுலோகப் பெருநூல். சிருஷ்டி, பூமி, சுவர்க்க, பாதாள, உத்தர காண்டங்கள்.",
       "icon": "🌸",
       "color": "#f43f5e",
       "sections_name": "காண்டம் (Kanda)",
-      "total_chapters": 5
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "periyapuranam",
-      "title": "பெரியபுராணம் முழு மூல நூல் (Periya Puranam - 100% Unabridged Full Text)",
+      "title": "பெரியபுராணம் முழு மூல நூல் (Periya Puranam - 100% Unabridged Full Text) (108 கதைகள்)",
       "category": "சைவத் திருமுறை (12-ஆம் திருமுறை)",
       "author": "சேக்கிழார் பெருமான்",
       "summary": "சேக்கிழார் பெருமான் அருளிய 63 நாயன்மார்களின் பக்தி, தியாகம், வீரம் அடங்கிய மெய்சிலிர்க்க வைக்கும் சிறார் பெருங்கதைகள்.",
       "icon": "🔱",
       "color": "#10b981",
       "sections_name": "சரிதம் (Charitam)",
-      "total_chapters": 5
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "ramayanam",
-      "title": "கம்பராமாயணம் முழு மூல நூல் (Kamba Ramayanam - 100% Verbatim Full Text)",
+      "title": "கம்பராமாயணம் முழு மூல நூல் (Kamba Ramayanam - 100% Verbatim Full Text) (108 கதைகள்)",
       "category": "இதிகாசம் (Itihasa)",
       "author": "கவிச்சக்கரவர்த்தி கம்பர்",
       "summary": "வால்மீகி & கம்பர் அருளிய ஸ்ரீ ராம சரிதம் முழுமையாக பால, அயோத்தியா, ஆரணிய, கிட்கிந்தா, சுந்தர, யுத்த காண்டங்கள் அடங்கிய சுவையான சிறார் பெருங்கதைகள்.",
       "icon": "🏹",
       "color": "#38bdf8",
       "sections_name": "காண்டம் (Kandam)",
-      "total_chapters": 6
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "shiva-puranam",
-      "title": "ஸ்ரீ சிவ மகாபுராணம் (Shiva Puranam)",
+      "title": "ஸ்ரீ சிவ மகாபுராணம் (Shiva Puranam) (108 கதைகள்)",
       "category": "சைவ மகாபுராணம் (Shaiva Purana)",
       "author": "வேத வியாசர் & சூத பௌராணிகர்",
       "summary": "7 சம்ஹிதைகள் கொண்ட பரம சிவ தத்துவப் பெருநூல். வித்வேஸ்வர, ருத்ர, சதாருத்ர, கோடிருத்ர, உமா, கைலாச, வாயு சம்ஹிதைகள் வழியே லிங்கோத்பவம், பஞ்சாக்ஷர மகிமை, ஜோதிர்லிங்கங்கள் மற்றும் பாச விமோசனம்.",
       "icon": "🔱",
       "color": "#06b6d4",
       "sections_name": "சம்ஹிதை (Samhita)",
-      "total_chapters": 11
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "skanda-puranam-sanskrit",
-      "title": "ஸ்ரீ கந்த மகாபுராணம் (Skanda Purana - 81,000 சுலோகங்கள்)",
+      "title": "ஸ்ரீ கந்த மகாபுராணம் (Skanda Purana - 81,000 சுலோகங்கள்) (108 கதைகள்)",
       "category": "மகாபுராணம் (Skanda Maha Purana)",
       "author": "வேத வியாசர்",
       "summary": "18 புராணங்களிலேயே மிகப் பிரம்மாண்டமான 81,000 சுலோகங்கள் கொண்ட நூல். காசி காண்டம், கேதார காண்டம், ரேவா காண்டம், சத்யநாராயண விரதக் கதை.",
       "icon": "🦚",
       "color": "#0284c7",
       "sections_name": "காண்டம் (Kanda)",
-      "total_chapters": 4
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "thirumandhiram",
-      "title": "திருமந்திரம் முழு மூல நூல் (Thirumandhiram - 100% Unabridged 3,000 Verses)",
+      "title": "திருமந்திரம் முழு மூல நூல் (Thirumandhiram - 100% Unabridged 3,000 Verses) (108 கதைகள்)",
       "category": "யோக & ஞான சாஸ்திரம் (10-ஆம் திருமுறை)",
       "author": "திருமூல தேவ நாயனார்",
       "summary": "திருமூல நாயனாரின் அற்புத வரலாறு, பசுக்களைக் காத்த கருணை, அன்பே சிவம் மற்றும் யோகக் கலை வாழ்வியல் சிறார் பெருங்கதைகள்.",
       "icon": "🧘",
       "color": "#6366f1",
       "sections_name": "தந்திரம் (Tantiram)",
-      "total_chapters": 4
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "thiruvilaiyadal",
-      "title": "திருவிளையாடற் புராணம் முழு மூல நூல் (Thiruvilaiyadal Puranam - 100% Unabridged 64 Leelas)",
+      "title": "திருவிளையாடற் புராணம் முழு மூல நூல் (Thiruvilaiyadal Puranam - 100% Unabridged 64 Leelas) (108 கதைகள்)",
       "category": "சைவத் தல மகாபுராணம்",
       "author": "பரஞ்சோதி முனிவர்",
       "summary": "மதுரை ஸ்ரீ மீனாட்சி சுந்தரேஸ்வரர் நிகழ்த்திய 64 திருவிளையாடல்களின் முக்கிய லீலைகள் அடங்கிய சுவையான சிறார் பெருங்கதைகள்.",
       "icon": "🦚",
       "color": "#a855f7",
       "sections_name": "லீலை (Leela)",
-      "total_chapters": 5
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "vamana-puranam",
-      "title": "ஸ்ரீ வாமன மகாபுராணம் (Vamana Puranam)",
+      "title": "ஸ்ரீ வாமன மகாபுராணம் (Vamana Puranam) (108 கதைகள்)",
       "category": "வைணவ/சைவ மகாபுராணம் (Vamana)",
       "author": "புலஸ்திய முனிவர் & நாரதர்",
       "summary": "குள்ள அந்தணராகத் தோன்றி மூன்றடி நிலத்தால் மூவுலகையும் அளந்த வாமன மூர்த்தியின் வரலாறு மற்றும் மகாபலி சக்கரவர்த்தியின் தியாக சரிதம்.",
       "icon": "☂️",
       "color": "#84cc16",
       "sections_name": "பகுதி (Bhaga)",
-      "total_chapters": 3
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "varaha-puranam",
-      "title": "ஸ்ரீ வராஹ மகாபுராணம் (Varaha Puranam)",
+      "title": "ஸ்ரீ வராஹ மகாபுராணம் (Varaha Puranam) (108 கதைகள்)",
       "category": "வைணவ மகாபுராணம் (Varaha Purana)",
       "author": "வராஹ மூர்த்தி & பூமிதேவி",
       "summary": "பூமி தேவியை பிரளயப் பெருங்கடலிலிருந்து மீட்ட வராஹ பெருமான் பூமிதேவிக்கு உபதேசித்த பிராயச்சித்தம், விரதங்கள் மற்றும் மோட்ச தர்மம்.",
       "icon": "🐗",
       "color": "#d97706",
       "sections_name": "பாகம் (Bhaga)",
-      "total_chapters": 3
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "vayu-puranam",
-      "title": "ஸ்ரீ வாயு புராணம் (Vayu Puranam)",
+      "title": "ஸ்ரீ வாயு புராணம் (Vayu Puranam) (108 கதைகள்)",
       "category": "சைவ/பிரம்ம புராணம் (Vayu / Shaiva)",
       "author": "வாயு தேவன் & நைமிசாரண்ய முனிவர்கள்",
       "summary": "வாயு பகவானால் விவரிக்கப்பட்ட தொன்மைப் பிரபஞ்ச வரலாற்று நூல். கல்பங்கள், யுக சுழற்சிகள், சூரிய-சந்திர வம்ச ராஜாக்களின் துல்லியமான பரம்பரை மற்றும் கயா திருத்தல மகிமை.",
       "icon": "💨",
       "color": "#64748b",
       "sections_name": "பாகம் (Pada)",
-      "total_chapters": 4
+      "total_chapters": 108,
+      "chaptersCount": 108
     },
     {
       "id": "vishnu-puranam",
-      "title": "ஸ்ரீ விஷ்ணு புராணம் (Vishnu Puranam)",
+      "title": "ஸ்ரீ விஷ்ணு புராணம் (Vishnu Puranam) (108 கதைகள்)",
       "category": "வைணவ மகாபுராணம் (Sattvika Purana)",
       "author": "பராசர முனிவர் & மைத்ரேயர் உரையாடல்",
       "summary": "புராணங்களின் ரத்தினம் என்று அழைக்கப்படும் 6 அம்சங்களைக் கொண்ட நூல். ஆதி சிருஷ்டி, துருவ-பிரகலாத சரிதம், சமுத்திர மந்தனம், சூரிய-சந்திர குல அரச பரம்பரை, ஸ்ரீ கிருஷ்ண லீலைகள் மற்றும் கலியுக தர்மங்கள்.",
       "icon": "🪷",
       "color": "#10b981",
       "sections_name": "அம்சம் (Amsham)",
-      "total_chapters": 6
+      "total_chapters": 108,
+      "chaptersCount": 108
     }
   ]
 }
