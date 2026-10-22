@@ -247,6 +247,20 @@
             <span style="font-size:0.86rem; color:#ffd700; font-weight:700;">பக்கம் ${currentPageNum}</span>
           </div>
 
+          ${chap.images && chap.images.length > 0 ? `
+            <div class="story-illustration" style="margin-bottom:28px; text-align:center;">
+              <div style="position:relative; display:inline-block; max-width:100%; border-radius:16px; overflow:hidden; border:1px solid rgba(212,175,55,0.3); box-shadow:0 12px 30px rgba(0,0,0,0.5);">
+                <img src="${(currentPageNum === 1 || chap.images.length === 1) ? chap.images[0].url : chap.images[1].url}" 
+                     alt="${(currentPageNum === 1 || chap.images.length === 1) ? (chap.images[0].title || 'கதைத் தோற்றம்') : (chap.images[1].title || 'கதைத் தோற்றம்')}" 
+                     style="max-width:100%; max-height:420px; object-fit:cover; display:block; margin:0 auto; filter:brightness(0.96);"
+                     onerror="this.parentElement.style.display='none';">
+                <div style="background:rgba(15,23,42,0.92); padding:10px 18px; color:var(--gold-soft); font-size:0.95rem; font-weight:600; border-top:1px solid rgba(212,175,55,0.2);">
+                  🎨 ${(currentPageNum === 1 || chap.images.length === 1) ? (chap.images[0].caption || chap.images[0].title || '') : (chap.images[1].caption || chap.images[1].title || '')}
+                </div>
+              </div>
+            </div>
+          ` : ''}
+
           <!-- Pure Story Body -->
           <div class="story-body-text" style="font-size:1.3rem; line-height:2.2; color:#f8fafc; font-family:'Mukta Malar', Georgia, serif; letter-spacing:0.015em;">
             ${pageContent}
