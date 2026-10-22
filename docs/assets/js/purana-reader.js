@@ -1,10 +1,10 @@
 /**
  * assets/js/purana-reader.js
- * Multi-Page Storybook Reader Engine
- * - Zero Clutter: Stories only. No verses, no quiz/questions, no boilerplate badges.
- * - Multi-Page Reading Mode: Each chapter is split into page 1 of N, page 2 of N, etc.
- * - Clean Page Turning: Previous Page, Next Page, Chapter Jump.
- * - Big legible fonts and distraction-free reading experience.
+ * Immersive Multi-Page Storybook Reader Engine
+ * - Zero Clutter: Stories only.
+ * - Multi-Page Reading Mode: Page 1 of N, Page 2 of N, etc.
+ * - Clean Page Turning: Previous Page, Next Page, Fast Chapter Selector.
+ * - Solid Opaque High-Contrast Reading Canvas (Zero background bleed-through).
  */
 
 (function() {
@@ -46,24 +46,21 @@
 
     if (!catalog || catalog.length === 0) {
       catalog = [
-        { id: 'children-purana-stories', title: 'குழந்தைகளுக்கான புராணக் கதைகள்', category: 'சிறார் கதைப் பேழை', chaptersCount: 10 },
-        { id: 'mahabharatam', title: 'மகாபாரதக் கதைகள் (Mahabharatam)', category: 'இதிகாசம்', chaptersCount: 18 },
-        { id: 'ramayanam', title: 'ஸ்ரீ ராம சரிதம் (Kamba Ramayanam)', category: 'இதிகாசம்', chaptersCount: 6 },
-        { id: 'kandha-puranam', title: 'கந்த புராணக் கதைகள் (Kandha Puranam)', category: 'சைவ மகாபுராணம்', chaptersCount: 4 },
-        { id: 'bhagavata-puranam', title: 'ஸ்ரீமத் பாகவதக் கதைகள் (Bhagavatam)', category: 'வைணவ மகாபுராணம்', chaptersCount: 12 },
-        { id: 'periyapuranam', title: 'பெரியபுராண நாயன்மார் கதைகள்', category: 'சைவ காப்பியம்', chaptersCount: 5 },
-        { id: 'thiruvilaiyadal', title: 'திருவிளையாடற் கதைகள் (64 Leelas)', category: 'சைவ புராணம்', chaptersCount: 5 },
-        { id: 'shiva-puranam', title: 'சிவ புராணக் கதைகள் (Shiva Puranam)', category: 'சைவ மகாபுராணம்', chaptersCount: 11 },
-        { id: 'vishnu-puranam', title: 'விஷ்ணு புராணக் கதைகள் (Vishnu Puranam)', category: 'வைணவ மகாபுராணம்', chaptersCount: 6 },
-        { id: 'matsya-puranam', title: 'மத்ஸ்ய புராணக் கதைகள் (Matsya Puranam)', category: 'மகாபுராணம்', chaptersCount: 5 },
-        { id: 'garuda-puranam', title: 'கருட புராணக் கதைகள் (Garuda Puranam)', category: 'மகாபுராணம்', chaptersCount: 3 },
-        { id: 'padma-puranam', title: 'பத்ம புராணக் கதைகள் (Padma Puranam)', category: 'மகாபுராணம்', chaptersCount: 5 }
+        { id: 'children-purana-stories', title: 'குழந்தைகளுக்கான 108 புராணக் கதைகள்', category: 'சிறார் கதைப் பேழை', chaptersCount: 108 },
+        { id: 'kandha-puranam', title: 'கந்த புராணக் கதைகள்', category: 'சைவ மகாபுராணம்', chaptersCount: 108 },
+        { id: 'ramayanam', title: 'கம்ப ராமாயணக் கதைகள்', category: 'இதிகாசம்', chaptersCount: 108 },
+        { id: 'mahabharatam', title: 'மகாபாரதக் கதைகள்', category: 'இதிகாசம்', chaptersCount: 108 },
+        { id: 'bhagavata-puranam', title: 'ஸ்ரீமத் பாகவதக் கதைகள்', category: 'வைணவ மகாபுராணம்', chaptersCount: 108 },
+        { id: 'periyapuranam', title: 'பெரியபுராண நாயன்மார் கதைகள்', category: 'சைவ காப்பியம்', chaptersCount: 108 },
+        { id: 'thiruvilaiyadal', title: 'திருவிளையாடற் கதைகள்', category: 'சைவ புராணம்', chaptersCount: 108 },
+        { id: 'shiva-puranam', title: 'சிவ புராணக் கதைகள்', category: 'சைவ மகாபுராணம்', chaptersCount: 108 },
+        { id: 'vishnu-puranam', title: 'விஷ்ணு புராணக் கதைகள்', category: 'வைணவ மகாபுராணம்', chaptersCount: 108 }
       ];
     }
 
     sidebarList.innerHTML = catalog.map(p => {
       const isActive = p.id === currentPuranaId;
-      const count = p.chaptersCount || p.total_chapters || p.chapters || (p.chapters ? p.chapters.length : 1);
+      const count = p.chaptersCount || p.total_chapters || p.chapters || 108;
       return `
         <div class="purana-shelf-item ${isActive ? 'active' : ''}" 
              onclick="window.switchPurana('${p.id}')"
@@ -129,47 +126,31 @@
     if (!tabsCont || !doc.chapters) return;
 
     const total = doc.chapters.length;
-    if (total > 10) {
-      tabsCont.innerHTML = `
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; background:rgba(15,23,42,0.8); border:1px solid rgba(212,175,55,0.3); border-radius:14px; padding:12px 18px;">
-          <div style="display:flex; align-items:center; gap:8px;">
-            <span style="font-weight:700; color:var(--gold-soft); font-size:0.95rem;">கதைத் தேர்வு:</span>
-            <select id="chapterSelectDropdown" onchange="window.switchPuranaChapter(parseInt(this.value, 10))" style="background:#02131e; color:#ffffff; border:1px solid var(--gold); border-radius:8px; padding:8px 12px; font-size:0.95rem; font-weight:700; max-width:400px; outline:none; cursor:pointer;">
-              ${doc.chapters.map(ch => `
-                <option value="${ch.chapterNumber}" ${ch.chapterNumber === currentChapterNum ? 'selected' : ''}>
-                  கதை ${ch.chapterNumber}: ${ch.title.split('(')[0].trim()}
-                </option>
-              `).join('')}
-            </select>
-          </div>
-          <div style="display:flex; gap:8px;">
-            <button type="button" class="sheet-btn" onclick="window.switchPuranaChapter(Math.max(1, currentChapterNum - 1))" style="padding:6px 14px; font-size:0.85rem;">&larr; முந்தைய கதை</button>
-            <span style="color:#ffffff; font-weight:800; padding:6px 10px; font-size:0.95rem;">${currentChapterNum} / ${total}</span>
-            <button type="button" class="sheet-btn sheet-btn-view" onclick="window.switchPuranaChapter(Math.min(${total}, currentChapterNum + 1))" style="padding:6px 14px; font-size:0.85rem;">அடுத்த கதை &rarr;</button>
-          </div>
+    tabsCont.innerHTML = `
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; background:rgba(11,19,38,0.92); border:1px solid rgba(212,175,55,0.3); border-radius:14px; padding:12px 18px; box-shadow:0 8px 24px rgba(0,0,0,0.5);">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-weight:700; color:var(--gold-soft); font-size:0.95rem;">கதைத் தேர்வு:</span>
+          <select id="chapterSelectDropdown" onchange="window.switchPuranaChapter(parseInt(this.value, 10))" style="background:#02131e; color:#ffffff; border:1px solid var(--gold); border-radius:8px; padding:8px 12px; font-size:0.95rem; font-weight:700; max-width:440px; outline:none; cursor:pointer;">
+            ${doc.chapters.map(ch => `
+              <option value="${ch.chapterNumber}" ${ch.chapterNumber === currentChapterNum ? 'selected' : ''}>
+                கதை ${ch.chapterNumber}: ${ch.title.split('(')[0].trim().replace(/^[0-9]+\.\s*/, '')}
+              </option>
+            `).join('')}
+          </select>
         </div>
-      `;
-    } else {
-      tabsCont.innerHTML = `
-        <div style="display:flex; gap:8px; overflow-x:auto; padding:6px 0 12px; scrollbar-width:thin;">
-          ${doc.chapters.map(ch => {
-            const isActive = ch.chapterNumber === currentChapterNum;
-            return `
-              <button type="button" class="purana-tab-btn ${isActive ? 'active' : ''}" onclick="window.switchPuranaChapter(${ch.chapterNumber})" style="white-space:nowrap; padding:8px 16px; border-radius:12px; font-weight:700; font-size:0.88rem; cursor:pointer; background:${isActive ? 'linear-gradient(135deg, var(--gold), #b45309)' : 'rgba(255,255,255,0.06)'}; color:${isActive ? '#02131e' : '#cbd5e1'}; border:1px solid ${isActive ? 'var(--gold-bright)' : 'rgba(255,255,255,0.12)'};">
-                <span>கதை ${ch.chapterNumber}</span>: ${ch.title.split('(')[0].trim().replace(/^[0-9]+\.\s*/, '')}
-              </button>
-            `;
-          }).join('')}
+        <div style="display:flex; gap:8px; align-items:center;">
+          <button type="button" class="sheet-btn" onclick="window.switchPuranaChapter(Math.max(1, currentChapterNum - 1))" style="padding:6px 14px; font-size:0.85rem; cursor:pointer;">&larr; முந்தைய கதை</button>
+          <span style="color:#ffffff; font-weight:800; padding:6px 10px; font-size:0.95rem;">${currentChapterNum} / ${total}</span>
+          <button type="button" class="sheet-btn sheet-btn-view" onclick="window.switchPuranaChapter(Math.min(${total}, currentChapterNum + 1))" style="padding:6px 14px; font-size:0.85rem; cursor:pointer;">அடுத்த கதை &rarr;</button>
         </div>
-      `;
-    }
+      </div>
+    `;
   }
 
   function getChapterPages(chap) {
     if (chap.pages && Array.isArray(chap.pages) && chap.pages.length > 0) {
       return chap.pages;
     }
-    // Fallback: extract paragraphs from exposition and group into pages
     const raw = chap.exposition || '';
     const matches = raw.match(/<p[^>]*>.*?<\/p>/gs);
     if (matches && matches.length > 0) {
@@ -194,7 +175,6 @@
     const pages = getChapterPages(chap);
     const totalPages = pages.length;
 
-    // Validate currentPageNum
     if (currentPageNum < 1) currentPageNum = 1;
     if (currentPageNum > totalPages) currentPageNum = totalPages;
 
@@ -205,7 +185,7 @@
     const hasPrevChapter = currentChapterNum > 1;
     const hasNextChapter = currentChapterNum < totalChapters;
 
-    // Build Page Dots / Indicator
+    // Page Dots Indicator
     const pageDotsHtml = pages.map((_, idx) => {
       const pIdx = idx + 1;
       const isCur = pIdx === currentPageNum;
@@ -213,7 +193,7 @@
         <button type="button" 
                 onclick="window.goToStoryPage(${pIdx})"
                 title="பக்கம் ${pIdx}"
-                style="width:${isCur ? '28px' : '10px'}; height:10px; border-radius:5px; border:none; cursor:pointer; background:${isCur ? 'var(--gold-bright)' : 'rgba(255,255,255,0.25)'}; transition:all 0.2s ease;">
+                style="width:${isCur ? '32px' : '12px'}; height:10px; border-radius:5px; border:none; cursor:pointer; background:${isCur ? 'var(--gold-bright, #ffd700)' : 'rgba(255,255,255,0.25)'}; transition:all 0.2s ease;">
         </button>
       `;
     }).join('');
@@ -222,52 +202,39 @@
       <article class="purana-reading-chapter" style="animation: fadeIn 0.25s ease;">
         
         <!-- Story Book Header Bar -->
-        <div style="background:rgba(15,23,42,0.85); border:1px solid rgba(212,175,55,0.25); border-radius:18px; padding:20px 24px; margin-bottom:20px;">
+        <div style="background:rgba(11,19,38,0.95); border:1px solid rgba(212,175,55,0.3); border-radius:18px; padding:22px 28px; margin-bottom:20px; box-shadow:0 10px 30px rgba(0,0,0,0.6);">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <span style="background:rgba(212,175,55,0.18); color:var(--gold-bright); border:1px solid rgba(212,175,55,0.4); padding:3px 14px; border-radius:14px; font-weight:800; font-size:0.85rem;">
+            <span style="background:rgba(212,175,55,0.18); color:var(--gold-bright); border:1px solid rgba(212,175,55,0.4); padding:4px 14px; border-radius:14px; font-weight:800; font-size:0.88rem;">
               கதை ${chap.chapterNumber} / ${totalChapters}
             </span>
             <div style="display:flex; align-items:center; gap:8px;">
-              <span style="color:var(--gold-bright); font-size:0.95rem; font-weight:800; background:rgba(0,0,0,0.4); padding:4px 12px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
+              <span style="color:var(--gold-bright); font-size:0.95rem; font-weight:800; background:rgba(0,0,0,0.5); padding:4px 14px; border-radius:8px; border:1px solid rgba(212,175,55,0.35);">
                 📖 பக்கம் ${currentPageNum} / ${totalPages}
               </span>
             </div>
           </div>
-          <h2 style="color:#ffffff; font-size:2rem; font-weight:900; line-height:1.3; margin:0;">
+          <h2 style="color:#ffffff; font-size:2.1rem; font-weight:900; line-height:1.3; margin:0 0 6px 0;">
             ${chap.title}
           </h2>
+          ${chap.synopsis ? `<p style="color:#7dd3fc; font-size:1.05rem; line-height:1.6; margin:0; font-weight:500;">${chap.synopsis}</p>` : ''}
         </div>
 
-        <!-- Clean Story Book Page Canvas -->
-        <div class="story-page-canvas" style="background:rgba(10, 16, 28, 0.96); border:1px solid rgba(212,175,55,0.2); border-radius:20px; padding:38px 44px; margin-bottom:26px; box-shadow:0 16px 45px rgba(0,0,0,0.6); position:relative; min-height:360px;">
+        <!-- Solid Opaque Story Book Canvas - No Background Interference -->
+        <div class="story-page-canvas" style="background:#090f1d !important; border:1.5px solid rgba(212,175,55,0.35) !important; border-radius:22px; padding:44px 48px; margin-bottom:26px; box-shadow:0 20px 55px rgba(0,0,0,0.85); position:relative; min-height:420px;">
           
-          <!-- Top Page Corner Ribbon -->
-          <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:12px; margin-bottom:28px;">
-            <span style="font-size:0.88rem; color:#94a3b8; font-style:italic;">${chap.title.split('(')[0].trim()}</span>
-            <span style="font-size:0.86rem; color:#ffd700; font-weight:700;">பக்கம் ${currentPageNum}</span>
+          <!-- Top Page Corner Header -->
+          <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:14px; margin-bottom:30px;">
+            <span style="font-size:0.92rem; color:#94a3b8; font-style:italic;">${chap.title.split('(')[0].trim()}</span>
+            <span style="font-size:0.92rem; color:#ffd700; font-weight:800; letter-spacing:0.05em;">பக்கம் ${currentPageNum} / ${totalPages}</span>
           </div>
 
-          ${chap.images && chap.images.length > 0 ? `
-            <div class="story-illustration" style="margin-bottom:28px; text-align:center;">
-              <div style="position:relative; display:inline-block; max-width:100%; border-radius:16px; overflow:hidden; border:1px solid rgba(212,175,55,0.3); box-shadow:0 12px 30px rgba(0,0,0,0.5);">
-                <img src="${(currentPageNum === 1 || chap.images.length === 1) ? chap.images[0].url : chap.images[1].url}" 
-                     alt="${(currentPageNum === 1 || chap.images.length === 1) ? (chap.images[0].title || 'கதைத் தோற்றம்') : (chap.images[1].title || 'கதைத் தோற்றம்')}" 
-                     style="max-width:100%; max-height:420px; object-fit:cover; display:block; margin:0 auto; filter:brightness(0.96);"
-                     onerror="this.parentElement.style.display='none';">
-                <div style="background:rgba(15,23,42,0.92); padding:10px 18px; color:var(--gold-soft); font-size:0.95rem; font-weight:600; border-top:1px solid rgba(212,175,55,0.2);">
-                  🎨 ${(currentPageNum === 1 || chap.images.length === 1) ? (chap.images[0].caption || chap.images[0].title || '') : (chap.images[1].caption || chap.images[1].title || '')}
-                </div>
-              </div>
-            </div>
-          ` : ''}
-
           <!-- Pure Story Body -->
-          <div class="story-body-text" style="font-size:1.3rem; line-height:2.2; color:#f8fafc; font-family:'Mukta Malar', Georgia, serif; letter-spacing:0.015em;">
+          <div class="story-body-text" style="font-size:1.32rem; line-height:2.25; color:#f8fafc; font-family:'Mukta Malar', Georgia, serif; letter-spacing:0.015em;">
             ${pageContent}
           </div>
 
           <!-- Bottom Story Pagination Dots -->
-          <div style="display:flex; justify-content:center; align-items:center; gap:8px; margin-top:36px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08);">
+          <div style="display:flex; justify-content:center; align-items:center; gap:8px; margin-top:36px; padding-top:22px; border-top:1px solid rgba(255,255,255,0.1);">
             ${pageDotsHtml}
           </div>
 
@@ -278,33 +245,33 @@
           
           <div>
             ${hasPrevPage ? `
-              <button type="button" class="sheet-btn" onclick="window.goToStoryPage(${currentPageNum - 1})" style="cursor:pointer; font-weight:700; padding:12px 24px; font-size:1rem;">
+              <button type="button" class="sheet-btn" onclick="window.goToStoryPage(${currentPageNum - 1})" style="cursor:pointer; font-weight:700; padding:12px 26px; font-size:1rem; border-radius:12px;">
                 &larr; முந்தைய பக்கம் (${currentPageNum - 1})
               </button>
             ` : (hasPrevChapter ? `
-              <button type="button" class="sheet-btn" onclick="window.switchPuranaChapter(${currentChapterNum - 1})" style="cursor:pointer; font-weight:700; padding:12px 20px; font-size:0.92rem; opacity:0.85;">
+              <button type="button" class="sheet-btn" onclick="window.switchPuranaChapter(${currentChapterNum - 1})" style="cursor:pointer; font-weight:700; padding:12px 22px; font-size:0.95rem; border-radius:12px;">
                 &larr; முந்தைய கதை (${currentChapterNum - 1})
               </button>
             ` : '<div></div>')}
           </div>
 
           <div style="text-align:center;">
-            <span style="color:#ffffff; font-weight:800; font-size:1.05rem;">
+            <span style="color:#ffffff; font-weight:800; font-size:1.05rem; background:rgba(15,23,42,0.8); padding:8px 18px; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
               பக்கம் ${currentPageNum} / ${totalPages}
             </span>
           </div>
 
           <div>
             ${hasNextPage ? `
-              <button type="button" class="sheet-btn sheet-btn-view" onclick="window.goToStoryPage(${currentPageNum + 1})" style="cursor:pointer; font-weight:700; padding:12px 28px; font-size:1rem; box-shadow:0 0 15px rgba(212,175,55,0.3);">
+              <button type="button" class="sheet-btn sheet-btn-view" onclick="window.goToStoryPage(${currentPageNum + 1})" style="cursor:pointer; font-weight:700; padding:12px 30px; font-size:1rem; border-radius:12px; box-shadow:0 0 16px rgba(212,175,55,0.35);">
                 அடுத்த பக்கம் (${currentPageNum + 1}) &rarr;
               </button>
             ` : (hasNextChapter ? `
-              <button type="button" class="sheet-btn sheet-btn-view" onclick="window.switchPuranaChapter(${currentChapterNum + 1})" style="cursor:pointer; font-weight:700; padding:12px 24px; font-size:0.95rem;">
+              <button type="button" class="sheet-btn sheet-btn-view" onclick="window.switchPuranaChapter(${currentChapterNum + 1})" style="cursor:pointer; font-weight:700; padding:12px 26px; font-size:0.95rem; border-radius:12px;">
                 அடுத்த கதை (${currentChapterNum + 1}) &rarr;
               </button>
             ` : `
-              <button type="button" class="sheet-btn sheet-btn-view" onclick="window.scrollTo({top:0, behavior:'smooth'})" style="cursor:pointer; font-weight:700; padding:12px 24px;">
+              <button type="button" class="sheet-btn sheet-btn-view" onclick="window.scrollTo({top:0, behavior:'smooth'})" style="cursor:pointer; font-weight:700; padding:12px 24px; border-radius:12px;">
                 கதையின் உச்சிக்குச் செல்க &uarr;
               </button>
             `)}
