@@ -1,7 +1,18 @@
 {
-  "total_puranas": 23,
+  "total_puranas": 24,
   "total_unabridged_chapters": 557,
   "catalog": [
+    {
+      "id": "children-purana-stories",
+      "title": "குழந்தைகளுக்கான புராணக் கதைப் பேழை (Children's Puranic Storybook)",
+      "category": "பாலர் அறநெறி நூலகம் (Kids Moral Library)",
+      "author": "வேத வியாசர் & சனாதன முனிவர் மரபு",
+      "summary": "குழந்தைகள் விரும்பி வாசிக்கும் 10 மாபெரும் புராண-இதிகாசக் கதைகள். பெரிய எழுத்துக்கள், வண்ணப் படங்கள், சிந்தனை வினாக்கள் மற்றும் 3 Ds வாழ்வியல் நீதிகளுடன் கூடிய ...",
+      "icon": "🌸",
+      "color": "#facc15",
+      "sections_name": "அத்தியாயம்",
+      "total_chapters": 10
+    },
     {
       "id": "bhagavata-puranam",
       "title": "ஸ்ரீமத் பாகவத மகாபுராணம் (Srimad Bhagavatam)",

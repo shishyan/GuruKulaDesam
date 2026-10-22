@@ -20,7 +20,7 @@
 
   async function initPuranaReader() {
     const urlParams = new URLSearchParams(window.location.search);
-    const pParam = urlParams.get('purana');
+    const pParam = urlParams.get('purana') || urlParams.get('id');
     const cParam = parseInt(urlParams.get('chapter'), 10);
 
     if (pParam) currentPuranaId = pParam;

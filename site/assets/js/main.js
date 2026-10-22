@@ -2164,9 +2164,14 @@ function ensurePageBreadcrumb() {
 function highlightActiveSidebarGroup() {
   const path = window.location.pathname.toLowerCase();
   const filename = path.split('/').pop() || 'index.html';
+  const urlParams = new URLSearchParams(window.location.search);
+  const textParam = urlParams.get('text');
+  const bookParam = urlParams.get('book');
 
   document.querySelectorAll('#leftStripBar .strip-group').forEach(group => {
-    // 1. Direct link match
+    const groupKey = group.getAttribute('data-group');
+
+    // 1. Direct link match (excluding query param links for root matching)
     const matchingLink = group.querySelector(`a[href="${filename}"]`);
     if (matchingLink) {
       group.classList.add('active', 'open');
@@ -2174,7 +2179,6 @@ function highlightActiveSidebarGroup() {
     }
 
     // 2. Stages group matching
-    const groupKey = group.getAttribute('data-group');
     if (groupKey === 'stages') {
       const stagePages = [
         'tharam-1.html', 'tharam-2.html', 'tharam-3.html', 'tharam-4.html',
@@ -2190,15 +2194,42 @@ function highlightActiveSidebarGroup() {
         if (stagePill) stagePill.classList.add('active');
       }
     }
+
+    // 3. Books Library matching (puranas.html & moola-nool.html)
+    if (groupKey === 'books-library' && (filename === 'puranas.html' || filename === 'moola-nool.html')) {
+      group.classList.add('active', 'open');
+      const idParam = urlParams.get('id') || urlParams.get('purana');
+      if (idParam) {
+        const activeSub = group.querySelector(`a[href*="id=${idParam}"]`) || group.querySelector(`a[href*="purana=${idParam}"]`);
+        if (activeSub) activeSub.classList.add('active');
+      } else if (textParam) {
+        const activeSub = group.querySelector(`a[href*="text=${textParam}"]`);
+        if (activeSub) activeSub.classList.add('active');
+      }
+    }
+
+    // 4. 7 Ashram Books matching (books.html)
+    if (groupKey === 'books' && filename === 'books.html') {
+      group.classList.add('active', 'open');
+      if (bookParam) {
+        const activeSub = group.querySelector(`a[href*="book=${bookParam}"]`);
+        if (activeSub) activeSub.classList.add('active');
+      }
+    }
   });
 }
 
 // Auto mount when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', mountAppShell);
-} else {
+function initAppShellAndHighlight() {
   mountAppShell();
+  highlightActiveSidebarGroup();
   hydrateModernIcons();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAppShellAndHighlight);
+} else {
+  initAppShellAndHighlight();
 }
 
 // Accordion support and Drawer auto-close on selection
