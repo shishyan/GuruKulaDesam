@@ -1,100 +1,172 @@
 /* ==========================================================================
-   PURE STORYBOOK READER DESIGN (E-READER BOOK EXPERIENCE)
-   - Distraction-free, zero cluttered panels, zero dark-forest backdrop
-   - Elegant parchment / warm ivory book pages with authentic typography
-   - Clean top book navigation bar with sliding offcanvas book selector drawer
-   - Centered large reading column like Kindle / Apple Books
+   GURUKULA DESAM — DEDICATED DIGITAL LIBRARY SUBSITE (e-Book Architecture)
+   - Completely standalone, clean, distraction-free reading portal
+   - No body background leaks, pure focus on books & stories
+   - 2 Large high-definition illustrations per story integrated into reading pages
+   - Dedicated library header with book drawer, search, and reading settings
    ========================================================================== */
 
-/* Full Page Container */
-body.purana-reader-body {
-  background: #11141a !important;
-  background-image: radial-gradient(circle at 50% 0%, #1a2233 0%, #0d1117 100%) !important;
+/* Standalone Subsite Body */
+body.library-subsite {
+  margin: 0;
+  padding: 0;
+  background: #0f141f !important;
+  background-image: linear-gradient(180deg, #0b0f17 0%, #111726 100%) !important;
   color: #1e293b;
+  font-family: 'Outfit', 'Mukta Malar', sans-serif;
   min-height: 100vh;
 }
 
-.purana-page-wrap {
-  max-width: 960px !important;
-  margin: 0 auto !important;
-  padding: 24px 20px 80px !important;
+/* Dedicated Subsite Navigation Header */
+.library-subsite-header {
+  background: rgba(11, 17, 30, 0.95);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 14px 28px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
-/* Reader Top Navigation Bar */
-.book-reader-topbar {
+.library-brand-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.library-brand-badge {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(180, 83, 9, 0.2));
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  border-radius: 12px;
+  padding: 8px 14px;
+  color: #ffd700;
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.library-subsite-title {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+}
+
+.library-subsite-subtitle {
+  color: #38bdf8;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Subsite Action Controls */
+.library-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.library-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.library-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-1px);
+}
+
+.library-btn-gold {
+  background: linear-gradient(135deg, #d97706, #b45309) !important;
+  color: #ffffff !important;
+  border: 1px solid #f59e0b !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);
+}
+.library-btn-gold:hover {
+  background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+}
+
+/* Subsite Reading Wrap */
+.library-reading-container {
+  max-width: 980px;
+  margin: 30px auto 80px;
+  padding: 0 20px;
+}
+
+/* TOP CHAPTER SELECT BAR */
+.story-chapter-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 14px;
-  background: rgba(18, 25, 38, 0.95);
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  gap: 12px;
+  background: rgba(18, 25, 40, 0.96);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 16px;
-  padding: 12px 20px;
-  margin-bottom: 24px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  position: sticky;
-  top: 14px;
-  z-index: 100;
-  backdrop-filter: blur(12px);
+  padding: 14px 22px;
+  margin-bottom: 26px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
 }
 
-.book-library-trigger-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(180, 83, 9, 0.2));
-  color: #ffd700;
-  border: 1px solid rgba(212, 175, 55, 0.5);
+.story-select-dropdown {
+  background: #070b14;
+  color: #ffffff;
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
   border-radius: 10px;
-  padding: 8px 16px;
-  font-weight: 700;
-  font-size: 0.92rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.book-library-trigger-btn:hover {
-  background: rgba(212, 175, 55, 0.35);
-  transform: translateY(-1px);
-}
-
-.book-chapter-dropdown {
-  background: #090e17;
-  color: #f8fafc;
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  border-radius: 10px;
-  padding: 8px 14px;
-  font-size: 0.92rem;
+  padding: 9px 16px;
+  font-size: 0.96rem;
   font-weight: 700;
   outline: none;
   cursor: pointer;
-  max-width: 380px;
+  max-width: 480px;
 }
 
-/* THE SACRED PARCHMENT BOOK SPREAD */
+/* THE AUTHENTIC OPEN BOOK SPREAD */
 .authentic-book-spread {
   background: #fdfbf7 !important;
   color: #1a1a1a !important;
-  border-radius: 16px !important;
+  border-radius: 18px !important;
   padding: 56px 64px !important;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55), 0 4px 16px rgba(0,0,0,0.3) !important;
-  border: 1px solid #e7dfd1 !important;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.65), 0 4px 16px rgba(0,0,0,0.4) !important;
+  border: 1px solid #e2d9c8 !important;
   position: relative;
-  min-height: 520px;
-  transition: all 0.2s ease;
+  min-height: 540px;
 }
 
 @media (max-width: 768px) {
   .authentic-book-spread {
-    padding: 32px 24px !important;
+    padding: 32px 22px !important;
   }
 }
 
-/* Book Inner Page Header */
 .book-inner-header {
   border-bottom: 1.5px solid #ded4c1;
   padding-bottom: 16px;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -111,33 +183,56 @@ body.purana-reader-body {
 }
 
 .book-inner-header .book-page-counter {
-  font-size: 0.95rem;
+  font-size: 0.96rem;
   color: #b45309;
   font-weight: 800;
 }
 
-/* Story Title in Book */
 .book-chapter-heading {
-  font-size: 2.2rem !important;
+  font-size: 2.3rem !important;
   font-weight: 900 !important;
   line-height: 1.35 !important;
   color: #1c1917 !important;
   margin: 0 0 14px 0 !important;
   font-family: 'Mukta Malar', Georgia, serif !important;
-  letter-spacing: -0.01em;
 }
 
 .book-chapter-synopsis {
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   line-height: 1.8;
   color: #6c5a3d;
   font-style: italic;
   margin: 0 0 32px 0;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   border-bottom: 1px dashed #e2d9c8;
 }
 
-/* Story Paragraphs - Real Book Typography */
+/* 2 BEAUTIFUL STORY ILLUSTRATIONS */
+.story-illustration-frame {
+  margin: 28px 0 34px 0;
+  text-align: center;
+}
+
+.story-illustration-frame img {
+  width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  border: 1px solid #dcd4c3;
+  display: block;
+}
+
+.story-illustration-caption {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: #786c57;
+  font-weight: 600;
+  font-style: italic;
+  display: inline-block;
+}
+
+/* Story Typography */
 .book-story-content p {
   font-family: 'Mukta Malar', Georgia, serif !important;
   font-size: 1.36rem !important;
@@ -148,7 +243,7 @@ body.purana-reader-body {
   letter-spacing: 0.01em !important;
 }
 
-/* Page Dots in Book */
+/* Page Dots */
 .book-page-dots-track {
   display: flex;
   justify-content: center;
@@ -170,12 +265,12 @@ body.purana-reader-body {
 }
 
 .book-page-dot.active {
-  width: 28px;
+  width: 32px;
   border-radius: 6px;
   background: #b45309;
 }
 
-/* Page Turning Controls */
+/* Page Turn Buttons */
 .book-turn-controls {
   display: flex;
   justify-content: space-between;
@@ -211,14 +306,11 @@ body.purana-reader-body {
   background: linear-gradient(135deg, #f59e0b, #d97706) !important;
 }
 
-/* SLIDING OFFCANVAS DRAWER FOR 24 BOOKS */
+/* SUBSITE 24-BOOK DRAWER */
 .books-drawer-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 10000;
@@ -234,9 +326,8 @@ body.purana-reader-body {
 
 .books-sliding-drawer {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 360px;
+  top: 0; left: 0;
+  width: 380px;
   max-width: 85vw;
   height: 100vh;
   background: #0d131f;
@@ -254,7 +345,7 @@ body.purana-reader-body {
 }
 
 .books-drawer-header {
-  padding: 20px 22px;
+  padding: 20px 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;

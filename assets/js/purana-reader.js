@@ -1,9 +1,10 @@
 /**
  * assets/js/purana-reader.js
- * Immersive Multi-Page Storybook Reader Engine
- * - Parchment Paper Book aesthetic (warm, high-contrast, zero dark blur/bleed).
- * - Multi-page pagination (Page 1 of N).
- * - Offcanvas Sliding Drawer for all 24 Library Books.
+ * Immersive Digital Library Subsite Story Reader
+ * - 2 Beautiful High-Definition Illustrations per Story
+ * - Warm Ivory/Parchment Book Spread
+ * - Page Turning Pagination (Page 1 of N)
+ * - Standalone Subsite Controls
  */
 
 (function() {
@@ -93,7 +94,7 @@
 
     const readingArea = document.getElementById('puranaReadingArea');
     if (readingArea) {
-      readingArea.innerHTML = `<div style="text-align:center; padding:80px 20px; color:var(--gold, #ffd700); font-size:1.2rem;"><span class="spinner"></span> கதை நூல் திறக்கப்படுகிறது...</div>`;
+      readingArea.innerHTML = `<div style="text-align:center; padding:90px 20px; color:var(--gold, #ffd700); font-size:1.25rem; font-weight:700;"><span class="spinner"></span> கதை நூல் திறக்கப்படுகிறது...</div>`;
     }
 
     try {
@@ -101,7 +102,7 @@
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       currentPuranaData = await resp.json();
 
-      // Update badge in topbar
+      // Update badge in subsite header
       const badge = document.getElementById('currentBookBadge');
       if (badge) badge.innerText = currentPuranaData.title.split('(')[0].trim();
 
@@ -111,9 +112,9 @@
       console.error(`Error loading data/puranas/${puranaId}.json:`, e);
       if (readingArea) {
         readingArea.innerHTML = `
-          <div style="background:#fdfbf7; border:1px solid #e7dfd1; border-radius:16px; padding:40px; text-align:center; color:#991b1b; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
-            <h3 style="font-size:1.4rem; margin-bottom:8px;">கதை நூல் திறப்பதில் பிழை</h3>
-            <p style="color:#786c57;">மன்னிக்கவும், இக்கதை நூல் விவரங்களைப் பெறுவதில் சிக்கல் ஏற்பட்டது.</p>
+          <div style="background:#fdfbf7; border:1px solid #e7dfd1; border-radius:18px; padding:44px; text-align:center; color:#991b1b; box-shadow:0 12px 35px rgba(0,0,0,0.6);">
+            <h3 style="font-size:1.45rem; margin-bottom:8px;">கதை நூல் திறப்பதில் பிழை</h3>
+            <p style="color:#786c57; font-size:1.05rem;">மன்னிக்கவும், இக்கதை நூல் விவரங்களைப் பெறுவதில் சிக்கல் ஏற்பட்டது.</p>
           </div>
         `;
       }
@@ -172,6 +173,21 @@
     const hasPrevChapter = currentChapterNum > 1;
     const hasNextChapter = currentChapterNum < totalChapters;
 
+    // Pick 2 images for the story:
+    // Image 1 displays on Page 1; Image 2 displays on Page 2 or later pages
+    const images = chap.images || [];
+    let currentImageHtml = '';
+
+    if (images.length >= 1) {
+      const imgObj = (currentPageNum === 1 || images.length === 1) ? images[0] : (images[1] || images[0]);
+      currentImageHtml = `
+        <div class="story-illustration-frame">
+          <img src="${imgObj.url}" alt="${imgObj.title || 'கதைத் திருக்காட்சி'}" onerror="this.parentElement.style.display='none';">
+          ${imgObj.caption ? `<div class="story-illustration-caption">🎨 ${imgObj.caption}</div>` : ''}
+        </div>
+      `;
+    }
+
     // Page Dots Indicator
     const pageDotsHtml = pages.map((_, idx) => {
       const pIdx = idx + 1;
@@ -188,7 +204,7 @@
     readingArea.innerHTML = `
       <article class="authentic-book-spread" style="animation: fadeIn 0.25s ease;">
         
-        <!-- Header line of the open book -->
+        <!-- Header line of the open book spread -->
         <div class="book-inner-header">
           <div class="book-title-sub">
             📖 ${currentPuranaData.title.split('(')[0].trim()} &bull; கதை ${chap.chapterNumber} / ${totalChapters}
@@ -203,6 +219,9 @@
           ${chap.title}
         </h1>
         ${chap.synopsis ? `<div class="book-chapter-synopsis">${chap.synopsis}</div>` : ''}
+
+        <!-- 1 of the 2 High-Definition Story Illustrations -->
+        ${currentImageHtml}
 
         <!-- Book Text Paragraphs -->
         <div class="book-story-content">
