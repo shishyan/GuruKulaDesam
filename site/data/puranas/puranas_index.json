@@ -1,6 +1,6 @@
 {
   "total_puranas": 23,
-  "total_unabridged_chapters": 853,
+  "total_unabridged_chapters": 557,
   "catalog": [
     {
       "id": "bhagavata-puranam",
@@ -158,14 +158,14 @@
     },
     {
       "id": "ramayanam",
-      "title": "கம்பராமாயணம் முழு மூல நூல் (Kamba Ramayanam - 100% Unabridged Full Text)",
+      "title": "கம்பராமாயணம் முழு மூல நூல் (Kamba Ramayanam - 100% Verbatim Full Text)",
       "category": "இதிகாசம் (Itihasa)",
       "author": "கவிச்சக்கரவர்த்தி கம்பர்",
-      "summary": "10,000-க்கும் மேற்பட்ட மூலப் பாடல்கள் மற்றும் விருத்தங்களைக் கொண்ட முழுமையான கம்பராமாயண மூல நூல் களஞ்சியம். பால, அயோத்தியா, ஆரணிய, கிட்கிந்தா, சுந்தர, யுத்த காண...",
+      "summary": "முழுமையான 54 படலங்கள் மற்றும் 4,010 மூலப் பாடல்களைக் கொண்ட முழு கம்பராமாயண மூல நூல் களஞ்சியம். எந்தவொரு பாடலும் விடுபடாமல் வரிசை எண்களுடன் முழுமையாகத் தொகுக்கப்...",
       "icon": "🏹",
       "color": "#38bdf8",
-      "sections_name": "காண்டம் / படலம்",
-      "total_chapters": 350
+      "sections_name": "படலம்",
+      "total_chapters": 54
     },
     {
       "id": "shiva-puranam",
