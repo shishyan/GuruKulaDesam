@@ -2,7 +2,7 @@
   'use strict';
 
   let puranasCatalog = [];
-  let currentPuranaId = 'mahabharatam';
+  let currentPuranaId = 'children-purana-stories';
   let currentChapterNum = 1;
   let currentPuranaData = null;
 
@@ -20,7 +20,7 @@
         puranasCatalog = await resp.json();
       }
     } catch (e) {
-      console.warn('Could not load puranas-index.json, using fallback catalog');
+      console.warn('Could not load puranas-index.json');
     }
 
     renderPuranaSidebar(puranasCatalog);
@@ -31,38 +31,21 @@
     const sidebarList = document.getElementById('puranaBookList');
     if (!sidebarList) return;
 
-    if (!catalog || catalog.length === 0) {
-      catalog = [
-        { id: 'kandha-puranam', title: 'கந்த புராணம் (Kandha Puranam)', category: 'சைவ மகாபுராணம்', chaptersCount: 129 },
-        { id: 'thiruvilaiyadal', title: 'திருவிளையாடற் புராணம் (64 Leelas)', category: 'சைவ புராணம்', chaptersCount: 123 },
-        { id: 'periyapuranam', title: 'பெரியபுராணம் (Periya Puranam)', category: 'திருமுறை காப்பியம்', chaptersCount: 73 },
-        { id: 'ramayanam', title: 'கம்பராமாயணம் (Kamba Ramayanam)', category: 'இதிகாசம்', chaptersCount: 54 },
-        { id: 'thirumandhiram', title: 'திருமந்திரம் (Tirumandiram)', category: 'சைவ சித்தாந்தம்', chaptersCount: 81 },
-        { id: 'children-purana-stories', title: 'புராணக் கதைகள் (Children Stories)', category: 'சிறார் கதைகள்', chaptersCount: 10 },
-        { id: 'mahabharatam', title: 'மகாபாரதம் (Mahabharatam)', category: 'இதிகாசம்', chaptersCount: 18 },
-        { id: 'bhagavata-puranam', title: 'ஸ்ரீமத் பாகவதம் (Bhagavatam)', category: 'வைணவ மகாபுராணம்', chaptersCount: 12 },
-        { id: 'shiva-puranam', title: 'சிவ புராணம் (Shiva Puranam)', category: 'சைவ மகாபுராணம்', chaptersCount: 11 },
-        { id: 'vishnu-puranam', title: 'விஷ்ணு புராணம் (Vishnu Puranam)', category: 'வைணவ மகாபுராணம்', chaptersCount: 6 },
-        { id: 'matsya-puranam', title: 'மத்ஸ்ய புராணம் (Matsya Puranam)', category: 'மகாபுராணம்', chaptersCount: 5 },
-        { id: 'garuda-puranam', title: 'கருட புராணம் (Garuda Puranam)', category: 'மகாபுராணம்', chaptersCount: 3 },
-        { id: 'markandeya-puranam', title: 'மார்க்கண்டேய புராணம்', category: 'மகாபுராணம்', chaptersCount: 3 },
-        { id: 'padma-puranam', title: 'பத்ம புராணம் (Padma Puranam)', category: 'மகாபுராணம்', chaptersCount: 5 }
-      ];
-    }
+    if (!catalog || catalog.length === 0) return;
 
     sidebarList.innerHTML = catalog.map(p => {
       const isActive = p.id === currentPuranaId;
-      const count = p.chaptersCount || p.total_chapters || p.chapters || 1;
+      const count = p.total_chapters || 1;
       return `
         <div class="purana-shelf-item ${isActive ? 'active' : ''}" 
              onclick="window.switchPurana('${p.id}')"
-             style="cursor:pointer; padding:12px 14px; border-radius:12px; margin-bottom:8px; background:${isActive ? 'linear-gradient(135deg, rgba(212,175,55,0.22), rgba(212,175,55,0.06))' : 'rgba(255,255,255,0.03)'}; border:1px solid ${isActive ? 'var(--gold-bright)' : 'rgba(255,255,255,0.08)'}; transition:all 0.2s ease;">
+             style="cursor:pointer; padding:12px 14px; border-radius:12px; margin-bottom:8px; background:${isActive ? 'linear-gradient(135deg, rgba(212,175,55,0.25), rgba(212,175,55,0.08))' : 'rgba(255,255,255,0.03)'}; border:1px solid ${isActive ? 'var(--gold-bright)' : 'rgba(255,255,255,0.08)'}; transition:all 0.2s ease;">
           <div style="font-weight:700; font-size:0.95rem; color:${isActive ? 'var(--gold-bright)' : '#ffffff'}; margin-bottom:4px;">
-            ${p.title}
+            ${p.icon || '📖'} ${p.title.split('(')[0].trim()}
           </div>
           <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.78rem; color:#94a3b8;">
-            <span>${p.category || 'மூலப் பெருநூல்'}</span>
-            <span style="background:rgba(255,255,255,0.08); padding:2px 8px; border-radius:6px; color:#cbd5e1;">${count} பகுதிகள்</span>
+            <span>${p.category || 'கதைப் புத்தகம்'}</span>
+            <span style="background:rgba(255,255,255,0.08); padding:2px 8px; border-radius:6px; color:#cbd5e1;">${count} கதைகள்</span>
           </div>
         </div>
       `;
@@ -106,7 +89,7 @@
     const authorEl = document.getElementById('puranaDisplayAuthor');
 
     if (titleEl) titleEl.innerText = doc.title;
-    if (authorEl) authorEl.innerText = `அருளியவர்: ${doc.author || 'சனாதன மகரிஷிகள்'}`;
+    if (authorEl) authorEl.innerText = `அருளியவர்: ${doc.author || 'சனாதன முனிவர் மரபு'}`;
   }
 
   function renderChapterTabs(doc) {
@@ -114,23 +97,22 @@
     if (!tabsCont || !doc.chapters) return;
 
     const total = doc.chapters.length;
-    // Clean, unobtrusive dropdown and navigation bar
     tabsCont.innerHTML = `
       <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; background:rgba(15,23,42,0.85); border:1px solid rgba(212,175,55,0.3); border-radius:14px; padding:10px 16px;">
         <div style="display:flex; align-items:center; gap:10px;">
-          <span style="font-weight:700; color:var(--gold-soft); font-size:0.92rem;">அத்தியாயம்:</span>
-          <select id="chapterSelectDropdown" onchange="window.switchPuranaChapter(parseInt(this.value, 10))" style="background:#02131e; color:#ffffff; border:1px solid var(--gold); border-radius:8px; padding:8px 12px; font-size:0.95rem; font-weight:700; max-width:420px; outline:none; cursor:pointer;">
+          <span style="font-weight:700; color:var(--gold-soft); font-size:0.92rem;">கதைத் தேர்வு:</span>
+          <select id="chapterSelectDropdown" onchange="window.switchPuranaChapter(parseInt(this.value, 10))" style="background:#02131e; color:#ffffff; border:1px solid var(--gold); border-radius:8px; padding:8px 12px; font-size:0.95rem; font-weight:700; max-width:440px; outline:none; cursor:pointer;">
             ${doc.chapters.map(ch => `
               <option value="${ch.chapterNumber}" ${ch.chapterNumber === currentChapterNum ? 'selected' : ''}>
-                பகுதி ${ch.chapterNumber}: ${ch.title.split('(')[0].trim()}
+                கதை ${ch.chapterNumber}: ${ch.title.split('(')[0].trim()}
               </option>
             `).join('')}
           </select>
         </div>
         <div style="display:flex; align-items:center; gap:8px;">
-          <button type="button" class="sheet-btn" onclick="window.switchPuranaChapter(Math.max(1, currentChapterNum - 1))" style="padding:6px 14px; font-size:0.85rem; cursor:pointer;">&larr; முந்தையது</button>
+          <button type="button" class="sheet-btn" onclick="window.switchPuranaChapter(Math.max(1, currentChapterNum - 1))" style="padding:6px 14px; font-size:0.85rem; cursor:pointer;">&larr; முந்தைய கதை</button>
           <span style="color:#ffffff; font-weight:800; padding:4px 8px; font-size:0.9rem;">${currentChapterNum} / ${total}</span>
-          <button type="button" class="sheet-btn sheet-btn-view" onclick="window.switchPuranaChapter(Math.min(${total}, currentChapterNum + 1))" style="padding:6px 14px; font-size:0.85rem; cursor:pointer;">அடுத்தது &rarr;</button>
+          <button type="button" class="sheet-btn sheet-btn-view" onclick="window.switchPuranaChapter(Math.min(${total}, currentChapterNum + 1))" style="padding:6px 14px; font-size:0.85rem; cursor:pointer;">அடுத்த கதை &rarr;</button>
         </div>
       </div>
     `;
@@ -147,15 +129,14 @@
     const prevNum = (currentChapterNum > 1) ? currentChapterNum - 1 : null;
     const nextNum = (currentChapterNum < total) ? currentChapterNum + 1 : null;
 
-    // Pure story view: NO 3D life application clutter, NO exam questions clutter, NO boilerplate badges.
     readingArea.innerHTML = `
       <article class="purana-reading-chapter" style="animation: fadeIn 0.3s ease;">
         
         <!-- Story Title Heading -->
-        <div style="background:rgba(15,23,42,0.85); border:1px solid rgba(212,175,55,0.25); border-radius:18px; padding:24px 28px; margin-bottom:24px;">
+        <div style="background:rgba(15,23,42,0.85); border:1px solid rgba(212,175,55,0.25); border-radius:18px; padding:24px 28px; margin-bottom:20px;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
             <span style="background:rgba(212,175,55,0.15); color:var(--gold-bright); border:1px solid rgba(212,175,55,0.4); padding:3px 12px; border-radius:14px; font-weight:800; font-size:0.82rem;">
-              பகுதி ${chap.chapterNumber} / ${total}
+              கதை ${chap.chapterNumber} / ${total}
             </span>
             <span style="font-size:0.85rem; color:#94a3b8;">${currentPuranaData.title.split('(')[0].trim()}</span>
           </div>
@@ -165,8 +146,8 @@
           ${chap.synopsis ? `<p style="color:#7dd3fc; font-size:1.05rem; line-height:1.7; margin:0; font-weight:500;">${chap.synopsis}</p>` : ''}
         </div>
 
-        <!-- Full Clean Story Body -->
-        <div style="background:rgba(10, 16, 28, 0.95); border:1px solid rgba(255,255,255,0.1); border-radius:18px; padding:32px 36px; margin-bottom:32px; box-shadow:0 12px 35px rgba(0,0,0,0.5);">
+        <!-- Full Clean Story Body (Only the story, no verses) -->
+        <div style="background:rgba(10, 16, 28, 0.95); border:1px solid rgba(255,255,255,0.1); border-radius:18px; padding:32px 36px; margin-bottom:28px; box-shadow:0 12px 35px rgba(0,0,0,0.5);">
           <div class="purana-verbatim-text" style="font-size:1.26rem; line-height:2.1; color:#f8fafc; font-family:'Mukta Malar', Georgia, serif; letter-spacing:0.01em;">
             ${chap.exposition}
           </div>
@@ -176,13 +157,13 @@
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:18px 0; border-top:1px solid rgba(255,255,255,0.12);">
           ${prevNum ? `
             <button type="button" class="sheet-btn" onclick="window.switchPuranaChapter(${prevNum})" style="cursor:pointer; font-weight:700; padding:12px 24px; font-size:0.95rem;">
-              &larr; முந்தைய பகுதி (${prevNum})
+              &larr; முந்தைய கதை (${prevNum})
             </button>
           ` : '<div></div>'}
-          <span style="color:#94a3b8; font-size:0.95rem; font-weight:700;">பகுதி ${currentChapterNum} / ${total}</span>
+          <span style="color:#94a3b8; font-size:0.95rem; font-weight:700;">கதை ${currentChapterNum} / ${total}</span>
           ${nextNum ? `
             <button type="button" class="sheet-btn sheet-btn-view" onclick="window.switchPuranaChapter(${nextNum})" style="cursor:pointer; font-weight:700; padding:12px 26px; font-size:0.95rem;">
-              அடுத்த பகுதி (${nextNum}) &rarr;
+              அடுத்த கதை (${nextNum}) &rarr;
             </button>
           ` : `
             <button type="button" class="sheet-btn sheet-btn-view" onclick="window.scrollTo({top:0, behavior:'smooth'})" style="cursor:pointer; font-weight:700; padding:12px 24px;">
@@ -201,7 +182,7 @@
   }
 
   function updateUrl() {
-    const newUrl = `${window.location.pathname}?purana=${currentPuranaId}&chapter=${currentChapterNum}`;
+    const newUrl = `${window.location.pathname}?id=${currentPuranaId}&chapter=${currentChapterNum}`;
     window.history.replaceState({}, '', newUrl);
   }
 
