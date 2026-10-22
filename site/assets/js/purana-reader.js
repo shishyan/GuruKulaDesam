@@ -1,10 +1,9 @@
 /**
  * assets/js/purana-reader.js
  * Immersive Multi-Page Storybook Reader Engine
- * - Zero Clutter: Stories only.
- * - Multi-Page Reading Mode: Page 1 of N, Page 2 of N, etc.
- * - Clean Page Turning: Previous Page, Next Page, Fast Chapter Selector.
- * - Solid Opaque High-Contrast Reading Canvas (Zero background bleed-through).
+ * - Parchment Paper Book aesthetic (warm, high-contrast, zero dark blur/bleed).
+ * - Multi-page pagination (Page 1 of N).
+ * - Offcanvas Sliding Drawer for all 24 Library Books.
  */
 
 (function() {
@@ -36,13 +35,13 @@
       console.warn('Could not load puranas_index.json, using fallback catalog');
     }
 
-    renderPuranaSidebar(puranasCatalog);
+    renderPuranaDrawer(puranasCatalog);
     loadPuranaData(currentPuranaId, currentChapterNum, currentPageNum);
   }
 
-  function renderPuranaSidebar(catalog) {
-    const sidebarList = document.getElementById('puranaBookList');
-    if (!sidebarList) return;
+  function renderPuranaDrawer(catalog) {
+    const drawerList = document.getElementById('puranaBookList');
+    if (!drawerList) return;
 
     if (!catalog || catalog.length === 0) {
       catalog = [
@@ -58,14 +57,14 @@
       ];
     }
 
-    sidebarList.innerHTML = catalog.map(p => {
+    drawerList.innerHTML = catalog.map(p => {
       const isActive = p.id === currentPuranaId;
       const count = p.chaptersCount || p.total_chapters || p.chapters || 108;
       return `
         <div class="purana-shelf-item ${isActive ? 'active' : ''}" 
              onclick="window.switchPurana('${p.id}')"
-             style="cursor:pointer; padding:12px 14px; border-radius:12px; margin-bottom:8px; background:${isActive ? 'linear-gradient(135deg, rgba(212,175,55,0.22), rgba(212,175,55,0.06))' : 'rgba(255,255,255,0.03)'}; border:1px solid ${isActive ? 'var(--gold-bright)' : 'rgba(255,255,255,0.08)'}; transition:all 0.2s ease;">
-          <div style="font-weight:700; font-size:0.95rem; color:${isActive ? 'var(--gold-bright)' : '#ffffff'}; margin-bottom:4px;">
+             style="cursor:pointer; padding:12px 14px; border-radius:12px; margin-bottom:8px; background:${isActive ? 'linear-gradient(135deg, rgba(212,175,55,0.25), rgba(180,83,9,0.2))' : 'rgba(255,255,255,0.04)'}; border:1px solid ${isActive ? 'var(--gold-bright, #ffd700)' : 'rgba(255,255,255,0.08)'}; transition:all 0.2s ease;">
+          <div style="font-weight:700; font-size:0.95rem; color:${isActive ? 'var(--gold-bright, #ffd700)' : '#ffffff'}; margin-bottom:4px;">
             ${p.title}
           </div>
           <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.78rem; color:#94a3b8;">
@@ -83,68 +82,56 @@
     currentPageNum = pageNum;
     updateUrl();
 
-    // Update active item in sidebar
+    // Close offcanvas drawer if open
+    const overlay = document.getElementById('booksDrawerOverlay');
+    if (overlay) overlay.classList.remove('open');
+
+    // Update active item in drawer
     document.querySelectorAll('.purana-shelf-item').forEach(el => {
       el.classList.remove('active');
     });
 
     const readingArea = document.getElementById('puranaReadingArea');
     if (readingArea) {
-      readingArea.innerHTML = `<div style="text-align:center; padding:60px 20px; color:var(--gold);"><span class="spinner"></span> கதைப் புத்தகம் திறக்கப்படுகிறது...</div>`;
+      readingArea.innerHTML = `<div style="text-align:center; padding:80px 20px; color:var(--gold, #ffd700); font-size:1.2rem;"><span class="spinner"></span> கதை நூல் திறக்கப்படுகிறது...</div>`;
     }
 
     try {
       const resp = await fetch(`data/puranas/${puranaId}.json`);
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       currentPuranaData = await resp.json();
-      renderPuranaHeader(currentPuranaData);
-      renderChapterTabs(currentPuranaData);
+
+      // Update badge in topbar
+      const badge = document.getElementById('currentBookBadge');
+      if (badge) badge.innerText = currentPuranaData.title.split('(')[0].trim();
+
+      renderChapterSelect(currentPuranaData);
       renderCurrentPageContent();
     } catch (e) {
       console.error(`Error loading data/puranas/${puranaId}.json:`, e);
       if (readingArea) {
         readingArea.innerHTML = `
-          <div style="background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.4); border-radius:16px; padding:30px; text-align:center;">
-            <h3 style="color:#ef4444; margin-bottom:8px;">கதை நூல் திறப்பதில் பிழை</h3>
-            <p style="color:#cbd5e1;">மன்னிக்கவும், இக்கதை நூல் விவரங்களைப் பெறுவதில் சிக்கல் ஏற்பட்டது.</p>
+          <div style="background:#fdfbf7; border:1px solid #e7dfd1; border-radius:16px; padding:40px; text-align:center; color:#991b1b; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+            <h3 style="font-size:1.4rem; margin-bottom:8px;">கதை நூல் திறப்பதில் பிழை</h3>
+            <p style="color:#786c57;">மன்னிக்கவும், இக்கதை நூல் விவரங்களைப் பெறுவதில் சிக்கல் ஏற்பட்டது.</p>
           </div>
         `;
       }
     }
   }
 
-  function renderPuranaHeader(doc) {
-    const titleEl = document.getElementById('puranaDisplayTitle');
-    const authorEl = document.getElementById('puranaDisplayAuthor');
+  function renderChapterSelect(doc) {
+    const dropdown = document.getElementById('chapterSelectDropdown');
+    if (!dropdown || !doc.chapters) return;
 
-    if (titleEl) titleEl.innerText = doc.title;
-    if (authorEl) authorEl.innerText = doc.summary || 'குழந்தைகளுக்கான அழகிய ஆன்மிகக் கதைப் பெட்டகம்';
-  }
-
-  function renderChapterTabs(doc) {
-    const tabsCont = document.getElementById('puranaChapterTabs');
-    if (!tabsCont || !doc.chapters) return;
-
-    const total = doc.chapters.length;
-    tabsCont.innerHTML = `
-      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; background:rgba(11,19,38,0.92); border:1px solid rgba(212,175,55,0.3); border-radius:14px; padding:12px 18px; box-shadow:0 8px 24px rgba(0,0,0,0.5);">
-        <div style="display:flex; align-items:center; gap:8px;">
-          <span style="font-weight:700; color:var(--gold-soft); font-size:0.95rem;">கதைத் தேர்வு:</span>
-          <select id="chapterSelectDropdown" onchange="window.switchPuranaChapter(parseInt(this.value, 10))" style="background:#02131e; color:#ffffff; border:1px solid var(--gold); border-radius:8px; padding:8px 12px; font-size:0.95rem; font-weight:700; max-width:440px; outline:none; cursor:pointer;">
-            ${doc.chapters.map(ch => `
-              <option value="${ch.chapterNumber}" ${ch.chapterNumber === currentChapterNum ? 'selected' : ''}>
-                கதை ${ch.chapterNumber}: ${ch.title.split('(')[0].trim().replace(/^[0-9]+\.\s*/, '')}
-              </option>
-            `).join('')}
-          </select>
-        </div>
-        <div style="display:flex; gap:8px; align-items:center;">
-          <button type="button" class="sheet-btn" onclick="window.switchPuranaChapter(Math.max(1, currentChapterNum - 1))" style="padding:6px 14px; font-size:0.85rem; cursor:pointer;">&larr; முந்தைய கதை</button>
-          <span style="color:#ffffff; font-weight:800; padding:6px 10px; font-size:0.95rem;">${currentChapterNum} / ${total}</span>
-          <button type="button" class="sheet-btn sheet-btn-view" onclick="window.switchPuranaChapter(Math.min(${total}, currentChapterNum + 1))" style="padding:6px 14px; font-size:0.85rem; cursor:pointer;">அடுத்த கதை &rarr;</button>
-        </div>
-      </div>
-    `;
+    dropdown.innerHTML = doc.chapters.map(ch => {
+      const cleanTitle = ch.title.split('(')[0].trim().replace(/^[0-9]+\.\s*/, '');
+      return `
+        <option value="${ch.chapterNumber}" ${ch.chapterNumber === currentChapterNum ? 'selected' : ''}>
+          கதை ${ch.chapterNumber}: ${cleanTitle}
+        </option>
+      `;
+    }).join('');
   }
 
   function getChapterPages(chap) {
@@ -191,97 +178,81 @@
       const isCur = pIdx === currentPageNum;
       return `
         <button type="button" 
+                class="book-page-dot ${isCur ? 'active' : ''}"
                 onclick="window.goToStoryPage(${pIdx})"
-                title="பக்கம் ${pIdx}"
-                style="width:${isCur ? '32px' : '12px'}; height:10px; border-radius:5px; border:none; cursor:pointer; background:${isCur ? 'var(--gold-bright, #ffd700)' : 'rgba(255,255,255,0.25)'}; transition:all 0.2s ease;">
+                title="பக்கம் ${pIdx}">
         </button>
       `;
     }).join('');
 
     readingArea.innerHTML = `
-      <article class="purana-reading-chapter" style="animation: fadeIn 0.25s ease;">
+      <article class="authentic-book-spread" style="animation: fadeIn 0.25s ease;">
         
-        <!-- Story Book Header Bar -->
-        <div style="background:rgba(11,19,38,0.95); border:1px solid rgba(212,175,55,0.3); border-radius:18px; padding:22px 28px; margin-bottom:20px; box-shadow:0 10px 30px rgba(0,0,0,0.6);">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <span style="background:rgba(212,175,55,0.18); color:var(--gold-bright); border:1px solid rgba(212,175,55,0.4); padding:4px 14px; border-radius:14px; font-weight:800; font-size:0.88rem;">
-              கதை ${chap.chapterNumber} / ${totalChapters}
-            </span>
-            <div style="display:flex; align-items:center; gap:8px;">
-              <span style="color:var(--gold-bright); font-size:0.95rem; font-weight:800; background:rgba(0,0,0,0.5); padding:4px 14px; border-radius:8px; border:1px solid rgba(212,175,55,0.35);">
-                📖 பக்கம் ${currentPageNum} / ${totalPages}
-              </span>
-            </div>
+        <!-- Header line of the open book -->
+        <div class="book-inner-header">
+          <div class="book-title-sub">
+            📖 ${currentPuranaData.title.split('(')[0].trim()} &bull; கதை ${chap.chapterNumber} / ${totalChapters}
           </div>
-          <h2 style="color:#ffffff; font-size:2.1rem; font-weight:900; line-height:1.3; margin:0 0 6px 0;">
-            ${chap.title}
-          </h2>
-          ${chap.synopsis ? `<p style="color:#7dd3fc; font-size:1.05rem; line-height:1.6; margin:0; font-weight:500;">${chap.synopsis}</p>` : ''}
+          <div class="book-page-counter">
+            பக்கம் ${currentPageNum} / ${totalPages}
+          </div>
         </div>
 
-        <!-- Solid Opaque Story Book Canvas - No Background Interference -->
-        <div class="story-page-canvas" style="background:#090f1d !important; border:1.5px solid rgba(212,175,55,0.35) !important; border-radius:22px; padding:44px 48px; margin-bottom:26px; box-shadow:0 20px 55px rgba(0,0,0,0.85); position:relative; min-height:420px;">
-          
-          <!-- Top Page Corner Header -->
-          <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:14px; margin-bottom:30px;">
-            <span style="font-size:0.92rem; color:#94a3b8; font-style:italic;">${chap.title.split('(')[0].trim()}</span>
-            <span style="font-size:0.92rem; color:#ffd700; font-weight:800; letter-spacing:0.05em;">பக்கம் ${currentPageNum} / ${totalPages}</span>
-          </div>
+        <!-- Story Title & Theme -->
+        <h1 class="book-chapter-heading">
+          ${chap.title}
+        </h1>
+        ${chap.synopsis ? `<div class="book-chapter-synopsis">${chap.synopsis}</div>` : ''}
 
-          <!-- Pure Story Body -->
-          <div class="story-body-text" style="font-size:1.32rem; line-height:2.25; color:#f8fafc; font-family:'Mukta Malar', Georgia, serif; letter-spacing:0.015em;">
-            ${pageContent}
-          </div>
-
-          <!-- Bottom Story Pagination Dots -->
-          <div style="display:flex; justify-content:center; align-items:center; gap:8px; margin-top:36px; padding-top:22px; border-top:1px solid rgba(255,255,255,0.1);">
-            ${pageDotsHtml}
-          </div>
-
+        <!-- Book Text Paragraphs -->
+        <div class="book-story-content">
+          ${pageContent}
         </div>
 
-        <!-- Page Turning Controller -->
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:12px 0;">
-          
-          <div>
-            ${hasPrevPage ? `
-              <button type="button" class="sheet-btn" onclick="window.goToStoryPage(${currentPageNum - 1})" style="cursor:pointer; font-weight:700; padding:12px 26px; font-size:1rem; border-radius:12px;">
-                &larr; முந்தைய பக்கம் (${currentPageNum - 1})
-              </button>
-            ` : (hasPrevChapter ? `
-              <button type="button" class="sheet-btn" onclick="window.switchPuranaChapter(${currentChapterNum - 1})" style="cursor:pointer; font-weight:700; padding:12px 22px; font-size:0.95rem; border-radius:12px;">
-                &larr; முந்தைய கதை (${currentChapterNum - 1})
-              </button>
-            ` : '<div></div>')}
-          </div>
-
-          <div style="text-align:center;">
-            <span style="color:#ffffff; font-weight:800; font-size:1.05rem; background:rgba(15,23,42,0.8); padding:8px 18px; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
-              பக்கம் ${currentPageNum} / ${totalPages}
-            </span>
-          </div>
-
-          <div>
-            ${hasNextPage ? `
-              <button type="button" class="sheet-btn sheet-btn-view" onclick="window.goToStoryPage(${currentPageNum + 1})" style="cursor:pointer; font-weight:700; padding:12px 30px; font-size:1rem; border-radius:12px; box-shadow:0 0 16px rgba(212,175,55,0.35);">
-                அடுத்த பக்கம் (${currentPageNum + 1}) &rarr;
-              </button>
-            ` : (hasNextChapter ? `
-              <button type="button" class="sheet-btn sheet-btn-view" onclick="window.switchPuranaChapter(${currentChapterNum + 1})" style="cursor:pointer; font-weight:700; padding:12px 26px; font-size:0.95rem; border-radius:12px;">
-                அடுத்த கதை (${currentChapterNum + 1}) &rarr;
-              </button>
-            ` : `
-              <button type="button" class="sheet-btn sheet-btn-view" onclick="window.scrollTo({top:0, behavior:'smooth'})" style="cursor:pointer; font-weight:700; padding:12px 24px; border-radius:12px;">
-                கதையின் உச்சிக்குச் செல்க &uarr;
-              </button>
-            `)}
-          </div>
-
+        <!-- Bottom Page Indicator Dots -->
+        <div class="book-page-dots-track">
+          ${pageDotsHtml}
         </div>
 
       </article>
+
+      <!-- Clean Book Turning Controller -->
+      <div class="book-turn-controls">
+        <div>
+          ${hasPrevPage ? `
+            <button type="button" class="book-turn-btn" onclick="window.goToStoryPage(${currentPageNum - 1})">
+              &larr; முந்தைய பக்கம் (${currentPageNum - 1})
+            </button>
+          ` : (hasPrevChapter ? `
+            <button type="button" class="book-turn-btn" onclick="window.switchPuranaChapter(${currentChapterNum - 1})">
+              &larr; முந்தைய கதை (${currentChapterNum - 1})
+            </button>
+          ` : '<div></div>')}
+        </div>
+
+        <div style="font-weight:700; color:#cbd5e1; font-size:1.05rem;">
+          பக்கம் ${currentPageNum} / ${totalPages}
+        </div>
+
+        <div>
+          ${hasNextPage ? `
+            <button type="button" class="book-turn-btn book-turn-btn-next" onclick="window.goToStoryPage(${currentPageNum + 1})">
+              அடுத்த பக்கம் (${currentPageNum + 1}) &rarr;
+            </button>
+          ` : (hasNextChapter ? `
+            <button type="button" class="book-turn-btn book-turn-btn-next" onclick="window.switchPuranaChapter(${currentChapterNum + 1})">
+              அடுத்த கதை (${currentChapterNum + 1}) &rarr;
+            </button>
+          ` : `
+            <button type="button" class="book-turn-btn book-turn-btn-next" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+              நூலின் உச்சிக்குச் செல்க &uarr;
+            </button>
+          `)}
+        </div>
+      </div>
     `;
 
+    // Sync dropdown value
     const dropdown = document.getElementById('chapterSelectDropdown');
     if (dropdown) dropdown.value = currentChapterNum;
 
@@ -298,7 +269,7 @@
     const filtered = puranasCatalog.filter(p => {
       return p.title.toLowerCase().includes(q) || (p.category && p.category.toLowerCase().includes(q));
     });
-    renderPuranaSidebar(filtered);
+    renderPuranaDrawer(filtered);
   }
 
   // Global window functions
@@ -317,6 +288,18 @@
     currentPageNum = pageNum;
     updateUrl();
     renderCurrentPageContent();
+  };
+
+  window.prevChapterQuick = function() {
+    if (currentChapterNum > 1) {
+      window.switchPuranaChapter(currentChapterNum - 1);
+    }
+  };
+
+  window.nextChapterQuick = function() {
+    if (currentPuranaData && currentChapterNum < currentPuranaData.chapters.length) {
+      window.switchPuranaChapter(currentChapterNum + 1);
+    }
   };
 
   window.filterPuranaList = function(input) {
