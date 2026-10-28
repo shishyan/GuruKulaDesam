@@ -87,15 +87,14 @@ def _worker_build_short(task_dict: dict) -> dict:
 
 def run_parallel_gpu_factory(days: int = 7, workers: int = 2, auto_upload: bool = False, force: bool = False):
     env = detect_colab_environment()
-    total_shorts = days * 3
+    total_shorts = days * 4
 
     print("=" * 85)
     print("🚀 GURUKULADESAM2 — GOOGLE COLAB / L4 GPU AUTONOMOUS SHORTS FACTORY")
     print("=" * 85)
     print(f"  • Environment : {'Google Colab Cloud' if env['in_colab'] else 'Local Workstation'}")
     print(f"  • Accelerator : {env['gpu_name']} ({env['cpu_cores']} CPU threads)")
-    print(f"  • Batch Target: {total_shorts} Panchangam-Aligned Shorts ({days} Days @ 3/day)")
-    print(f"  • Parent Link : @guru-kula-desam (Full Song & Gurukulam Funnel)")
+    print(f"  • Batch Target: {total_shorts} Panchangam-Aligned Shorts ({days} Days @ 4/day)")
     print("=" * 85)
 
     reg = load_published_registry()

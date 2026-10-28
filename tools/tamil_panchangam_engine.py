@@ -662,17 +662,22 @@ def get_auspicious_alignment_for_datetime(dt_ist: datetime | None = None) -> dic
 
     slot_deities = {
         6: primary_deity,
+        11: secondary_deity or primary_deity,
         12: secondary_deity or primary_deity,
+        16: primary_deity,
         18: primary_deity,
+        20: secondary_deity or primary_deity,
     }
 
     hr = dt_ist.hour
-    if hr < 10:
+    if hr < 9:
         active_deity = slot_deities[6]
-    elif hr < 15:
-        active_deity = slot_deities[12]
+    elif hr < 14:
+        active_deity = slot_deities[11]
+    elif hr < 18:
+        active_deity = slot_deities[16]
     else:
-        active_deity = slot_deities[18]
+        active_deity = slot_deities[20]
 
     tithi_short_ta = p_curr["tithi_name"].split("(")[0].strip()
     onscreen_panchangam_line1 = f"{m_ta} {p_morn['tamil_day']}, {wd_ta} | திதி: {tithi_short_ta} ({tithi_timing_str})"
@@ -728,14 +733,15 @@ def print_7day_panchangam_forecast(start_dt: datetime | None = None):
         date_str = dt.strftime("%Y-%m-%d (%a)")
         ev_str = ", ".join(info["special_events"])
         s6 = info["slot_deities"][6].upper()
-        s12 = info["slot_deities"][12].upper()
-        s18 = info["slot_deities"][18].upper()
+        s11 = info["slot_deities"][11].upper()
+        s16 = info["slot_deities"][16].upper()
+        s20 = info["slot_deities"][20].upper()
         print(
             f"• {date_str} | {info['tamil_month_ta']} {info['tamil_day']:2d} | "
             f"திதி: {info['tithi_short_ta']} ({info['tithi_timing']})\n"
             f"  🌟 நட்சத்திரம்: {info['nakshatra_ta']} ({info['nakshatra_timing']}) | "
             f"நல்ல நேரம்: {info['nalla_neram_am']} | இராகு: {info['rahu_kalam']}\n"
-            f"  🎯 Slots -> 06:00 AM: [{s6}] | 12:00 PM: [{s12}] | 06:00 PM: [{s18}] "
+            f"  🎯 Slots -> 06:00 AM: [{s6}] | 11:00 AM: [{s11}] | 04:00 PM: [{s16}] | 08:00 PM: [{s20}] "
             f"| Forbidden: {info['forbidden_deities'] or 'None'}\n"
             f"  ✨ Occasion: {ev_str} ({info['special_pooja_time']})\n"
         )

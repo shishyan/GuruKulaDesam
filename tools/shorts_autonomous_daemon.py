@@ -56,11 +56,12 @@ from tools.shorts_viral_builder import (
 
 PUBLISHED_REGISTRY_FILE = ROOT / "production" / "shorts_metadata" / "gurukuladesam2_published_registry.json"
 
-# 3 Peak Viral Slots per day in IST (Hour, Minute)
+# 4 Peak Viral Slots per day in IST (Hour, Minute)
 DAILY_IST_SLOTS = [
     (6, 0),   # 06:00 AM IST — Brahma Muhurtham / Morning Worship
-    (12, 0),  # 12:00 PM IST — Midday Temple Ucchikalam
-    (18, 0),  # 06:00 PM IST — Evening Deeparadhana / Pradosham / Sashti Peak
+    (11, 0),  # 11:00 AM IST — Midday Temple Ucchikalam
+    (16, 0),  # 04:00 PM IST — Afternoon / Pre-Pradosham
+    (20, 0),  # 08:00 PM IST — Evening / Ardhajama Pooja
 ]
 
 
@@ -244,8 +245,7 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
     print("=" * 80)
     print(f"🕉️  GURUKULADESAM2 PANCHANGAM-ALIGNED SHORTS PIPELINE ({count} Shorts)")
     print(f"📺 Target Channel : {TARGET_HANDLE} ({TARGET_CHANNEL_ID})")
-    print(f"🏛️  Parent Channel : @guru-kula-desam (Full Credit & Link Funnel Enabled)")
-    print(f"🗓️  Publishing Mode: {'Scheduled 3x/Day (6AM, 12PM, 6PM IST)' if schedule_mode else 'Immediate Public Release'}")
+    print(f"🗓️  Publishing Mode: {'Scheduled 4x/Day (6AM, 11AM, 4PM, 8PM IST)' if schedule_mode else 'Immediate Public Release'}")
     print("=" * 80)
 
     completed = 0
@@ -316,7 +316,7 @@ def print_dashboard():
     print(f"  • Parent Master Channel  : @guru-kula-desam (UCPqB1A_WzpLJec6q69BOO3Q)")
     print(f"  • Today's Panchangam     : {now_panchangam['tamil_month_ta']} {now_panchangam['tamil_day']} | {now_panchangam['weekday_ta']} | {now_panchangam['tithi_name']} | {now_panchangam['nakshatra_ta']}")
     print(f"  • Today's Sacred Occasion: {', '.join(now_panchangam['special_events'])} ({now_panchangam['occasion_badge_ta']})")
-    print(f"  • Today's 3 Slot Deities : 6 AM: [{now_panchangam['slot_deities'][6].upper()}] | 12 PM: [{now_panchangam['slot_deities'][12].upper()}] | 6 PM: [{now_panchangam['slot_deities'][18].upper()}]")
+    print(f"  • Today's 4 Slot Deities : 6 AM: [{now_panchangam['slot_deities'][6].upper()}] | 11 AM: [{now_panchangam['slot_deities'][11].upper()}] | 4 PM: [{now_panchangam['slot_deities'][16].upper()}] | 8 PM: [{now_panchangam['slot_deities'][20].upper()}]")
     print(f"  • Ready Source Catalog   : {len(cands)} Multi-Deity Master Tracks")
     print(f"  • Local Rendered Shorts  : {len(local_mp4s)} vertical 1080x1920 MP4s in renders/shorts_gurukuladesam2/")
     print(f"  • Uploaded / Scheduled   : {len(pub)} Shorts on YouTube")
@@ -334,7 +334,7 @@ if __name__ == "__main__":
     ap.add_argument("--calendar", action="store_true", help="Print 7-day Tamil Panchangam & deity schedule forecast")
     ap.add_argument("--prebuild", type=int, default=0, help="Pre-render N Panchangam-aligned vertical 9:16 Shorts locally")
     ap.add_argument("--publish-now", type=int, default=0, help="Build & immediately publish N Shorts live to @gurukuladesam2")
-    ap.add_argument("--schedule-days", type=int, default=0, help="Build & schedule N days of Shorts (3 per day at 6AM, 12PM, 6PM IST)")
+    ap.add_argument("--schedule-days", type=int, default=0, help="Build & schedule N days of Shorts (4 per day at 6AM, 11AM, 4PM, 8PM IST)")
     ap.add_argument("--deity", type=str, default=None, help="Override deity filter if desired")
     ap.add_argument("--daemon", action="store_true", help="Run continuous 24/7 autonomous daemon")
     args = ap.parse_args()
@@ -346,12 +346,12 @@ if __name__ == "__main__":
     elif args.publish_now > 0:
         run_batch_pipeline(args.publish_now, schedule_mode=False, deity_filter=args.deity)
     elif args.schedule_days > 0:
-        run_batch_pipeline(args.schedule_days * 3, schedule_mode=True, deity_filter=args.deity)
+        run_batch_pipeline(args.schedule_days * 4, schedule_mode=True, deity_filter=args.deity)
     elif args.daemon:
         print(f"🔄 Starting 24/7 Autonomous Panchangam Daemon for {TARGET_HANDLE}...")
         while True:
             try:
-                run_batch_pipeline(3, schedule_mode=True, deity_filter=args.deity)
+                run_batch_pipeline(4, schedule_mode=True, deity_filter=args.deity)
             except Exception as e:
                 print(f"[Daemon Warning] Cycle error: {e}")
             print("⏳ Sleeping 6 hours until next schedule top-up...")

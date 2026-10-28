@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       schedule_days:
-        description: 'Number of days of Shorts (3x/day) to build and schedule'
+        description: 'Number of days of Shorts (4x/day) to build and schedule'
         required: false
         default: '1'
         type: string
