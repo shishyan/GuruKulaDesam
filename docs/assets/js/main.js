@@ -475,6 +475,9 @@ function openPlayer(videoId, title) {
 
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
+  if (typeof pauseDiscographyForModal === 'function') {
+    pauseDiscographyForModal();
+  }
 
   // Scroll modal box to top when opening
   const modalBox = document.getElementById('playerModalBox') || modal.querySelector('.player-modal-box');
@@ -633,6 +636,9 @@ function closePlayer() {
       url.searchParams.delete('id');
       window.history.replaceState({}, '', url);
     } catch (e) {}
+    if (typeof resumeDiscographyAfterModal === 'function') {
+      resumeDiscographyAfterModal();
+    }
   }
 }
 
@@ -749,8 +755,8 @@ const DEFAULT_USER_PREFS = {
   fontStyle: 'mukta',
   fontScale: 1.0,
   navLayout: 'sidebar', // 'sidebar' (default), 'topbar' (classic), 'hybrid' (both)
-  autoplay: false,
-  continuous: false,
+  autoplay: true,
+  continuous: true,
   dailyVirtue: true,
   streakDays: 1,
   lastVisit: new Date().toISOString().split('T')[0],
@@ -3703,14 +3709,32 @@ function initSpiritualAtmosphere() {
       <span class="gkd-corner-label">சுகந்த தூபம்</span>
     </div>
 
-    <!-- Atmosphere Controls Pill -->
+    <!-- Atmosphere Controls & @guru-kula-desam Discography Auto-Player Pill -->
     <div class="gkd-atmosphere-controls" id="gkdAtmoControls">
+      <div class="gkd-disco-controls-group" id="gkdDiscoBar" title="@guru-kula-desam Discography Auto-Player (50% Volume)">
+        <button type="button" class="gkd-atmo-btn gkd-disco-play-btn active" id="gkdDiscoPlayBtn" onclick="toggleGurukulaDiscography()" title="@guru-kula-desam இசை: இயக்கு / நிறுத்து (Play / Pause Discography)">
+          <span id="gkdDiscoPlayIcon">⏸️</span>
+          <span class="gkd-disco-badge">@guru-kula-desam</span>
+        </button>
+        <button type="button" class="gkd-disco-track-btn" id="gkdDiscoTrackBtn" onclick="openCurrentDiscographyVideo()" title="தற்போதைய பாடலை காணொளியாகத் திறக்க (Click to view video &amp; lyrics)">
+          <span class="gkd-disco-eq" id="gkdDiscoEq"><span></span><span></span><span></span></span>
+          <span class="gkd-disco-title" id="gkdDiscoTitle">இறை இசைப் பெட்டகம் (Discography)...</span>
+        </button>
+        <button type="button" class="gkd-atmo-btn gkd-disco-nav-btn" onclick="prevGurukulaDiscographyTrack()" title="முந்தைய பாடல் (Previous Song)">⏮</button>
+        <button type="button" class="gkd-atmo-btn gkd-disco-nav-btn" onclick="nextGurukulaDiscographyTrack()" title="அடுத்த பாடல் (Next Song)">⏭</button>
+        <span class="gkd-disco-vol-wrap" title="ஒலியளவு (Volume: 50% Default)">
+          <span class="gkd-disco-vol-icon" id="gkdDiscoVolIcon" onclick="toggleGurukulaDiscographyMute()">🔉</span>
+          <input type="range" id="gkdDiscoVolSlider" class="gkd-disco-vol-slider" min="0" max="100" value="50" oninput="setGurukulaDiscographyVolume(this.value)" aria-label="Discography Volume">
+          <span class="gkd-disco-vol-label" id="gkdDiscoVolLabel">50%</span>
+        </span>
+      </div>
+      <span class="gkd-atmo-sep" style="opacity: 0.35;">|</span>
       <button type="button" class="gkd-atmo-btn active" id="gkdDrizzleToggleBtn" onclick="toggleDrizzleEffect()" title="தூறல் கட்டுப்பாடு (Toggle Drizzle)">
         <span>🌧️</span> <span id="gkdDrizzleBtnLabel">தூறல்</span>
       </button>
-      <span style="opacity: 0.35;">|</span>
+      <span class="gkd-atmo-sep" style="opacity: 0.35;">|</span>
       <button type="button" class="gkd-atmo-btn" onclick="playTempleBell(); showToast('🔔 <strong>கோவில் மணி நாதம்:</strong> ஓம் நமச்சிவாய — மங்கலம் பெருகுக!', 3000);" title="ஆலய மணி நாதம் ஒலிக்க">
-        <span>🔔</span> <span>மணி நாதம்</span>
+        <span>🔔</span> <span class="gkd-bell-label">மணி நாதம்</span>
       </button>
     </div>
   `;
@@ -3744,6 +3768,9 @@ function initSpiritualAtmosphere() {
 
   // Start Canvas Drizzle
   startDrizzleEngine();
+
+  // Start @guru-kula-desam Discography Auto-Player at 50% volume
+  initGurukulaDiscographyPlayer();
 }
 
 function startDrizzleEngine() {
@@ -4294,3 +4321,532 @@ window.closeAshramDrawer = closeAshramDrawer;
 window.openStageDrawer = openStageDrawer;
 window.openVisualDrawer = openVisualDrawer;
 window.openPillarDrawer = openPillarDrawer;
+
+
+/* ==========================================================================
+   @GURU-KULA-DESAM DISCOGRAPHY AUTO-PLAYER ENGINE (50% DEFAULT VOLUME)
+   Automatically plays the @guru-kula-desam discography across the website
+   at 50% volume with cross-page session continuity and gesture fallback.
+   ========================================================================== */
+
+const GKD_DISCO_DEFAULT_VOLUME = 50;
+const GKD_DISCO_FALLBACK_TRACKS = [
+  { id: 'SWAjAbur-TQ', title: 'திருக்குறள்: அதிகாரம் 1 - கடவுள் வாழ்த்து | Kadavul Vazhthu', category: 'thirukkural' },
+  { id: 'f1jxgAbXcdE', title: 'திருக்குறள்: அதிகாரம் 2 - வான் சிறப்பு | Vaan Sirappu', category: 'thirukkural' },
+  { id: 'G6NSHWKhQcY', title: 'திருக்குறள்: அதிகாரம் 16 - பொறையுடைமை | Porai Udaimai', category: 'thirukkural' },
+  { id: 'MXK8vB3_fBE', title: 'திருக்குறள்: அதிகாரம் 25 - அருளுடைமை | Aruludaimai', category: 'thirukkural' },
+  { id: 'AD6LgqNksFQ', title: 'திருக்குறள்: அதிகாரம் 30 - வாய்மை | Vaaymai', category: 'thirukkural' }
+];
+
+let gkdDiscoPlaylist = [];
+let gkdDiscoCurrentIndex = 0;
+let gkdDiscoYtPlayer = null;
+let gkdDiscoPlayerReady = false;
+let gkdDiscoIsPlaying = false;
+let gkdDiscoWasPlayingBeforeModal = false;
+let gkdDiscoUserPaused = false;
+let gkdDiscoVolume = GKD_DISCO_DEFAULT_VOLUME;
+let gkdDiscoMuted = false;
+let gkdDiscoProgressTimer = null;
+let gkdDiscoUnlockBound = false;
+
+function buildGurukulaDiscographyPlaylist() {
+  if (gkdDiscoPlaylist.length > 0) return gkdDiscoPlaylist;
+
+  const catalog = window.GURUKULA_CATALOG;
+  if (!catalog || typeof catalog !== 'object') {
+    return [];
+  }
+
+  const seenIds = new Set();
+  const discographyItems = [];
+  const otherItems = [];
+
+  // Preferred category order for spiritual ambiance
+  const categories = ['shiva', 'thirukkural', 'murugan', 'vinayagar', 'amman', 'vishnu_krishna', 'vallalar_cultural'];
+  const allCats = categories.concat(Object.keys(catalog).filter(k => !categories.includes(k)));
+
+  allCats.forEach(cat => {
+    const items = catalog[cat];
+    if (!Array.isArray(items)) return;
+    items.forEach(item => {
+      if (!item || !item.id || seenIds.has(item.id)) return;
+      seenIds.add(item.id);
+      const track = {
+        id: item.id,
+        title: item.title || 'குரு குல தேசம் இசை (@guru-kula-desam)',
+        category: item.category || cat,
+        type: item.type || 'audio'
+      };
+      if (Array.isArray(item.playlists) && item.playlists.includes('Discography')) {
+        discographyItems.push(track);
+      } else {
+        otherItems.push(track);
+      }
+    });
+  });
+
+  gkdDiscoPlaylist = discographyItems.length > 0 ? discographyItems : otherItems;
+  return gkdDiscoPlaylist;
+}
+
+function ensureCatalogLoadedForDiscography(callback) {
+  if (window.GURUKULA_CATALOG && Object.keys(window.GURUKULA_CATALOG).length > 0) {
+    callback();
+    return;
+  }
+  const existingScript = document.querySelector('script[src*="catalog.js"]');
+  if (existingScript) {
+    existingScript.addEventListener('load', () => callback(), { once: true });
+    setTimeout(() => callback(), 1200);
+    return;
+  }
+  const script = document.createElement('script');
+  script.src = 'assets/data/catalog.js';
+  script.async = true;
+  script.onload = () => callback();
+  script.onerror = () => callback();
+  document.head.appendChild(script);
+}
+
+function loadGurukulaDiscographyState() {
+  try {
+    const savedIdx = sessionStorage.getItem('gkd_disco_index');
+    if (savedIdx !== null) {
+      const parsed = parseInt(savedIdx, 10);
+      if (!isNaN(parsed) && parsed >= 0) {
+        gkdDiscoCurrentIndex = parsed;
+      }
+    } else if (gkdDiscoPlaylist.length > 0) {
+      gkdDiscoCurrentIndex = 0;
+    }
+
+    // Default volume is strictly 50% unless adjusted in current session
+    const savedVol = sessionStorage.getItem('gkd_disco_volume');
+    if (savedVol !== null) {
+      const v = parseInt(savedVol, 10);
+      gkdDiscoVolume = (!isNaN(v) && v >= 0 && v <= 100) ? v : GKD_DISCO_DEFAULT_VOLUME;
+    } else {
+      gkdDiscoVolume = GKD_DISCO_DEFAULT_VOLUME;
+      sessionStorage.setItem('gkd_disco_volume', String(GKD_DISCO_DEFAULT_VOLUME));
+    }
+
+    const savedPaused = sessionStorage.getItem('gkd_disco_user_paused');
+    gkdDiscoUserPaused = (savedPaused === 'true');
+  } catch (e) {
+    gkdDiscoVolume = GKD_DISCO_DEFAULT_VOLUME;
+  }
+}
+
+function saveGurukulaDiscographyState() {
+  try {
+    sessionStorage.setItem('gkd_disco_index', String(gkdDiscoCurrentIndex));
+    sessionStorage.setItem('gkd_disco_volume', String(gkdDiscoVolume));
+    sessionStorage.setItem('gkd_disco_user_paused', gkdDiscoUserPaused ? 'true' : 'false');
+    if (gkdDiscoYtPlayer && gkdDiscoPlayerReady && typeof gkdDiscoYtPlayer.getCurrentTime === 'function') {
+      const t = Math.floor(gkdDiscoYtPlayer.getCurrentTime() || 0);
+      const curTrack = getCurrentDiscographyTrack();
+      if (curTrack && t > 0) {
+        sessionStorage.setItem('gkd_disco_video_id', curTrack.id);
+        sessionStorage.setItem('gkd_disco_time', String(t));
+      }
+    }
+  } catch (e) {}
+}
+
+function getCurrentDiscographyTrack() {
+  if (!gkdDiscoPlaylist || gkdDiscoPlaylist.length === 0) {
+    gkdDiscoPlaylist = GKD_DISCO_FALLBACK_TRACKS.slice();
+  }
+  if (gkdDiscoCurrentIndex < 0 || gkdDiscoCurrentIndex >= gkdDiscoPlaylist.length) {
+    gkdDiscoCurrentIndex = 0;
+  }
+  return gkdDiscoPlaylist[gkdDiscoCurrentIndex];
+}
+
+function updateGurukulaDiscographyUI() {
+  const track = getCurrentDiscographyTrack();
+  const titleEl = document.getElementById('gkdDiscoTitle');
+  const playBtn = document.getElementById('gkdDiscoPlayBtn');
+  const playIcon = document.getElementById('gkdDiscoPlayIcon');
+  const eqEl = document.getElementById('gkdDiscoEq');
+  const volSlider = document.getElementById('gkdDiscoVolSlider');
+  const volLabel = document.getElementById('gkdDiscoVolLabel');
+  const volIcon = document.getElementById('gkdDiscoVolIcon');
+
+  if (titleEl && track) {
+    const cleanTitle = (track.title || '').replace(/\s*\[(Film|Audio|Remix)\]\s*$/i, '');
+    titleEl.textContent = cleanTitle;
+    titleEl.title = `${cleanTitle} — @guru-kula-desam (${gkdDiscoCurrentIndex + 1}/${gkdDiscoPlaylist.length})`;
+  }
+
+  if (playIcon) {
+    playIcon.textContent = gkdDiscoIsPlaying ? '⏸️' : '▶️';
+  }
+  if (playBtn) {
+    playBtn.classList.toggle('active', gkdDiscoIsPlaying);
+  }
+  if (eqEl) {
+    eqEl.classList.toggle('playing', gkdDiscoIsPlaying);
+  }
+  if (volSlider && document.activeElement !== volSlider) {
+    volSlider.value = String(gkdDiscoMuted ? 0 : gkdDiscoVolume);
+  }
+  if (volLabel) {
+    volLabel.textContent = (gkdDiscoMuted ? 0 : gkdDiscoVolume) + '%';
+  }
+  if (volIcon) {
+    if (gkdDiscoMuted || gkdDiscoVolume === 0) {
+      volIcon.textContent = '🔇';
+    } else if (gkdDiscoVolume <= 55) {
+      volIcon.textContent = '🔉';
+    } else {
+      volIcon.textContent = '🔊';
+    }
+  }
+}
+
+function bindDiscographyAutoplayUnlock() {
+  if (gkdDiscoUnlockBound) return;
+  gkdDiscoUnlockBound = true;
+
+  const unlockHandler = (e) => {
+    if (gkdDiscoUserPaused) return;
+    // Ignore clicks on the play/pause button itself so we don't double-toggle
+    if (e && e.target && e.target.closest && e.target.closest('#gkdDiscoPlayBtn')) return;
+    const modal = document.getElementById('playerModal');
+    if (modal && modal.classList.contains('active')) return;
+
+    if (gkdDiscoYtPlayer && gkdDiscoPlayerReady) {
+      try {
+        gkdDiscoYtPlayer.unMute();
+        gkdDiscoYtPlayer.setVolume(gkdDiscoVolume);
+        const state = typeof gkdDiscoYtPlayer.getPlayerState === 'function' ? gkdDiscoYtPlayer.getPlayerState() : -1;
+        if (state !== 1 && state !== 3) {
+          gkdDiscoYtPlayer.playVideo();
+        }
+      } catch (err) {}
+    }
+  };
+
+  ['click', 'touchstart', 'keydown', 'pointerdown'].forEach(evt => {
+    document.addEventListener(evt, unlockHandler, { passive: true, capture: true });
+  });
+}
+
+function initGurukulaDiscographyPlayer() {
+  if (typeof document === 'undefined' || !document.body) return;
+  if (document.getElementById('gkdDiscoYtHost')) return;
+
+  // Create offscreen host for YouTube IFrame Player API
+  const hostWrap = document.createElement('div');
+  hostWrap.id = 'gkdDiscoYtHost';
+  hostWrap.style.cssText = 'position:fixed;bottom:0;left:0;width:1px;height:1px;opacity:0.01;pointer-events:none;overflow:hidden;z-index:-1;';
+  hostWrap.setAttribute('aria-hidden', 'true');
+  const playerDiv = document.createElement('div');
+  playerDiv.id = 'gkdDiscoYtIframe';
+  hostWrap.appendChild(playerDiv);
+  document.body.appendChild(hostWrap);
+
+  ensureCatalogLoadedForDiscography(() => {
+    buildGurukulaDiscographyPlaylist();
+    loadGurukulaDiscographyState();
+    updateGurukulaDiscographyUI();
+    bindDiscographyAutoplayUnlock();
+    loadYouTubeIframeApiForDiscography();
+  });
+
+  window.addEventListener('beforeunload', saveGurukulaDiscographyState);
+}
+
+function loadYouTubeIframeApiForDiscography() {
+  if (window.YT && window.YT.Player) {
+    createGurukulaDiscographyYtPlayer();
+    return;
+  }
+
+  const prevReady = window.onYouTubeIframeAPIReady;
+  window.onYouTubeIframeAPIReady = function () {
+    if (typeof prevReady === 'function') {
+      try { prevReady(); } catch (e) {}
+    }
+    createGurukulaDiscographyYtPlayer();
+  };
+
+  if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    tag.async = true;
+    document.head.appendChild(tag);
+  }
+}
+
+function createGurukulaDiscographyYtPlayer() {
+  if (gkdDiscoYtPlayer || !window.YT || !window.YT.Player) return;
+
+  const track = getCurrentDiscographyTrack();
+  if (!track) return;
+
+  let startSeconds = 0;
+  try {
+    const savedVid = sessionStorage.getItem('gkd_disco_video_id');
+    const savedTime = parseInt(sessionStorage.getItem('gkd_disco_time') || '0', 10);
+    if (savedVid === track.id && !isNaN(savedTime) && savedTime > 2) {
+      startSeconds = savedTime;
+    }
+  } catch (e) {}
+
+  gkdDiscoYtPlayer = new window.YT.Player('gkdDiscoYtIframe', {
+    height: '1',
+    width: '1',
+    videoId: track.id,
+    playerVars: {
+      autoplay: gkdDiscoUserPaused ? 0 : 1,
+      controls: 0,
+      disablekb: 1,
+      enablejsapi: 1,
+      fs: 0,
+      iv_load_policy: 3,
+      modestbranding: 1,
+      playsinline: 1,
+      rel: 0,
+      start: startSeconds,
+      origin: window.location.origin
+    },
+    events: {
+      onReady: onGurukulaDiscographyPlayerReady,
+      onStateChange: onGurukulaDiscographyPlayerStateChange,
+      onError: onGurukulaDiscographyPlayerError
+    }
+  });
+}
+
+function onGurukulaDiscographyPlayerReady(event) {
+  gkdDiscoPlayerReady = true;
+  try {
+    // Enforce 50% default volume (or session volume)
+    event.target.unMute();
+    event.target.setVolume(gkdDiscoVolume);
+    updateGurukulaDiscographyUI();
+
+    const modal = document.getElementById('playerModal');
+    const isModalOpen = modal && modal.classList.contains('active');
+
+    if (!gkdDiscoUserPaused && !isModalOpen && userPrefs.autoplay !== false) {
+      event.target.playVideo();
+      // Verify playback started; if browser blocked unmuted autoplay, keep ready for first gesture
+      setTimeout(() => {
+        if (!gkdDiscoYtPlayer || gkdDiscoUserPaused) return;
+        try {
+          const st = gkdDiscoYtPlayer.getPlayerState();
+          if (st === 1) {
+            gkdDiscoYtPlayer.unMute();
+            gkdDiscoYtPlayer.setVolume(gkdDiscoVolume);
+            gkdDiscoIsPlaying = true;
+            updateGurukulaDiscographyUI();
+          }
+        } catch (e) {}
+      }, 900);
+    }
+  } catch (err) {
+    console.warn('Discography player ready warning:', err);
+  }
+
+  if (gkdDiscoProgressTimer) clearInterval(gkdDiscoProgressTimer);
+  gkdDiscoProgressTimer = setInterval(() => {
+    if (gkdDiscoIsPlaying) {
+      saveGurukulaDiscographyState();
+    }
+  }, 4000);
+}
+
+function onGurukulaDiscographyPlayerStateChange(event) {
+  if (!window.YT) return;
+  const state = event.data;
+
+  if (state === window.YT.PlayerState.PLAYING) {
+    gkdDiscoIsPlaying = true;
+    try {
+      if (!gkdDiscoMuted) {
+        event.target.unMute();
+        event.target.setVolume(gkdDiscoVolume);
+      }
+    } catch (e) {}
+    updateGurukulaDiscographyUI();
+    saveGurukulaDiscographyState();
+  } else if (state === window.YT.PlayerState.PAUSED) {
+    gkdDiscoIsPlaying = false;
+    updateGurukulaDiscographyUI();
+  } else if (state === window.YT.PlayerState.ENDED) {
+    gkdDiscoIsPlaying = false;
+    nextGurukulaDiscographyTrack(true);
+  }
+}
+
+function onGurukulaDiscographyPlayerError() {
+  // Automatically skip unembeddable or unavailable videos to keep discography continuous
+  setTimeout(() => {
+    nextGurukulaDiscographyTrack(true);
+  }, 600);
+}
+
+function playGurukulaDiscographyTrackAtIndex(index, autoStart = true) {
+  if (!gkdDiscoPlaylist || gkdDiscoPlaylist.length === 0) {
+    buildGurukulaDiscographyPlaylist();
+  }
+  const len = gkdDiscoPlaylist.length;
+  if (len === 0) return;
+
+  gkdDiscoCurrentIndex = ((index % len) + len) % len;
+  const track = gkdDiscoPlaylist[gkdDiscoCurrentIndex];
+  if (!track) return;
+
+  try {
+    sessionStorage.setItem('gkd_disco_index', String(gkdDiscoCurrentIndex));
+    sessionStorage.setItem('gkd_disco_video_id', track.id);
+    sessionStorage.setItem('gkd_disco_time', '0');
+  } catch (e) {}
+
+  updateGurukulaDiscographyUI();
+
+  if (gkdDiscoYtPlayer && gkdDiscoPlayerReady) {
+    try {
+      gkdDiscoYtPlayer.setVolume(gkdDiscoVolume);
+      if (autoStart) {
+        gkdDiscoUserPaused = false;
+        sessionStorage.setItem('gkd_disco_user_paused', 'false');
+        gkdDiscoYtPlayer.loadVideoById({ videoId: track.id, startSeconds: 0 });
+        gkdDiscoYtPlayer.unMute();
+        gkdDiscoYtPlayer.setVolume(gkdDiscoVolume);
+      } else {
+        gkdDiscoYtPlayer.cueVideoById({ videoId: track.id, startSeconds: 0 });
+      }
+    } catch (e) {}
+  }
+}
+
+function toggleGurukulaDiscography() {
+  if (!gkdDiscoYtPlayer || !gkdDiscoPlayerReady) {
+    gkdDiscoUserPaused = false;
+    loadYouTubeIframeApiForDiscography();
+    return;
+  }
+
+  try {
+    const state = gkdDiscoYtPlayer.getPlayerState();
+    if (state === 1 || gkdDiscoIsPlaying) {
+      gkdDiscoUserPaused = true;
+      gkdDiscoIsPlaying = false;
+      gkdDiscoYtPlayer.pauseVideo();
+      saveGurukulaDiscographyState();
+      updateGurukulaDiscographyUI();
+      showToast('⏸️ <strong>@guru-kula-desam இசை:</strong> தற்காலிகமாக நிறுத்தப்பட்டது (Paused)', 2200);
+    } else {
+      gkdDiscoUserPaused = false;
+      gkdDiscoMuted = false;
+      gkdDiscoYtPlayer.unMute();
+      gkdDiscoYtPlayer.setVolume(gkdDiscoVolume);
+      gkdDiscoYtPlayer.playVideo();
+      gkdDiscoIsPlaying = true;
+      saveGurukulaDiscographyState();
+      updateGurukulaDiscographyUI();
+      const track = getCurrentDiscographyTrack();
+      showToast(`🎵 <strong>@guru-kula-desam (${gkdDiscoVolume}% ஒலி):</strong> ${track ? track.title : 'இசை இயங்குகிறது'}`, 2800);
+    }
+  } catch (e) {}
+}
+
+function nextGurukulaDiscographyTrack(fromAutoAdvance = false) {
+  playGurukulaDiscographyTrackAtIndex(gkdDiscoCurrentIndex + 1, true);
+  if (!fromAutoAdvance) {
+    const track = getCurrentDiscographyTrack();
+    if (track) {
+      showToast(`⏭ <strong>அடுத்த பாடல் (${gkdDiscoVolume}%):</strong> ${track.title}`, 2400);
+    }
+  }
+}
+
+function prevGurukulaDiscographyTrack() {
+  playGurukulaDiscographyTrackAtIndex(gkdDiscoCurrentIndex - 1, true);
+  const track = getCurrentDiscographyTrack();
+  if (track) {
+    showToast(`⏮ <strong>முந்தைய பாடல் (${gkdDiscoVolume}%):</strong> ${track.title}`, 2400);
+  }
+}
+
+function setGurukulaDiscographyVolume(val) {
+  const num = Math.max(0, Math.min(100, parseInt(val, 10) || 0));
+  gkdDiscoVolume = num;
+  gkdDiscoMuted = (num === 0);
+  try {
+    sessionStorage.setItem('gkd_disco_volume', String(gkdDiscoVolume));
+  } catch (e) {}
+
+  if (gkdDiscoYtPlayer && gkdDiscoPlayerReady) {
+    try {
+      if (gkdDiscoMuted) {
+        gkdDiscoYtPlayer.mute();
+      } else {
+        gkdDiscoYtPlayer.unMute();
+        gkdDiscoYtPlayer.setVolume(gkdDiscoVolume);
+      }
+    } catch (e) {}
+  }
+  updateGurukulaDiscographyUI();
+}
+
+function toggleGurukulaDiscographyMute() {
+  gkdDiscoMuted = !gkdDiscoMuted;
+  if (gkdDiscoYtPlayer && gkdDiscoPlayerReady) {
+    try {
+      if (gkdDiscoMuted) {
+        gkdDiscoYtPlayer.mute();
+      } else {
+        if (gkdDiscoVolume === 0) gkdDiscoVolume = GKD_DISCO_DEFAULT_VOLUME;
+        gkdDiscoYtPlayer.unMute();
+        gkdDiscoYtPlayer.setVolume(gkdDiscoVolume);
+      }
+    } catch (e) {}
+  }
+  updateGurukulaDiscographyUI();
+}
+
+function openCurrentDiscographyVideo() {
+  const track = getCurrentDiscographyTrack();
+  if (track && typeof openPlayer === 'function') {
+    openPlayer(track.id, track.title);
+  }
+}
+
+function pauseDiscographyForModal() {
+  if (gkdDiscoIsPlaying && gkdDiscoYtPlayer && gkdDiscoPlayerReady) {
+    gkdDiscoWasPlayingBeforeModal = true;
+    try {
+      gkdDiscoYtPlayer.pauseVideo();
+    } catch (e) {}
+    gkdDiscoIsPlaying = false;
+    updateGurukulaDiscographyUI();
+  } else {
+    gkdDiscoWasPlayingBeforeModal = false;
+  }
+}
+
+function resumeDiscographyAfterModal() {
+  if (gkdDiscoWasPlayingBeforeModal && !gkdDiscoUserPaused && gkdDiscoYtPlayer && gkdDiscoPlayerReady) {
+    gkdDiscoWasPlayingBeforeModal = false;
+    try {
+      gkdDiscoYtPlayer.unMute();
+      gkdDiscoYtPlayer.setVolume(gkdDiscoVolume);
+      gkdDiscoYtPlayer.playVideo();
+      gkdDiscoIsPlaying = true;
+      updateGurukulaDiscographyUI();
+    } catch (e) {}
+  }
+}
+
+window.toggleGurukulaDiscography = toggleGurukulaDiscography;
+window.nextGurukulaDiscographyTrack = nextGurukulaDiscographyTrack;
+window.prevGurukulaDiscographyTrack = prevGurukulaDiscographyTrack;
+window.setGurukulaDiscographyVolume = setGurukulaDiscographyVolume;
+window.toggleGurukulaDiscographyMute = toggleGurukulaDiscographyMute;
+window.openCurrentDiscographyVideo = openCurrentDiscographyVideo;
