@@ -38,8 +38,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from tools.authorize_gurukuladesam2 import (
+    CHANNELS_CONFIG,
+    ORIGINAL_CHANNEL_ID,
+    ORIGINAL_HANDLE,
     TARGET_CHANNEL_ID,
     TARGET_HANDLE,
+    get_channel_youtube_service,
     get_gurukuladesam2_youtube_service,
     mark_gkd2_project_exhausted,
 )
@@ -161,25 +165,27 @@ def post_parent_credit_comment(yt, short_video_id: str, comment_text: str):
         print(f"   ℹ️ Note: Comment post skipped (video may be scheduled/private until release): {str(e)[:80]}")
 
 
-def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None) -> str | None:
+def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None, channel_key: str = "@gurukuladesam2") -> str | None:
     video_path = ROOT / meta["video_path"]
     if not video_path.exists():
         raise FileNotFoundError(f"Rendered Short MP4 missing: {video_path}")
 
     for attempt in range(4):
         try:
-            yt, pid = get_gurukuladesam2_youtube_service()
+            yt, pid, cfg = get_channel_youtube_service(channel_key)
+            expected_cid = cfg["channel_id"]
+            expected_hnd = cfg["handle"]
 
-            # Verify authenticated channel is @gurukuladesam2
+            # Verify authenticated channel matches target channel
             ch_res = yt.channels().list(part="id,snippet", mine=True).execute()
             items = ch_res.get("items", [])
-            if not items or items[0]["id"] != TARGET_CHANNEL_ID:
+            if not items or items[0]["id"] != expected_cid:
                 actual_id = items[0]["id"] if items else "None"
                 actual_handle = items[0]["snippet"].get("customUrl") if items else "None"
                 raise RuntimeError(
                     f"Safety Guard Triggered: Active token belongs to {actual_handle} ({actual_id}), "
-                    f"NOT {TARGET_HANDLE} ({TARGET_CHANNEL_ID}). "
-                    f"Please run: python tools/authorize_gurukuladesam2.py --authorize"
+                    f"NOT {expected_hnd} ({expected_cid}). "
+                    f"Please run: python tools/authorize_gurukuladesam2.py --authorize --channel {channel_key}"
                 )
 
             status_body = {
@@ -206,7 +212,7 @@ def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None) -> s
                 "status": status_body,
             }
 
-            print(f"\n🚀 [UPLOADING SHORT -> {TARGET_HANDLE}] {meta['title']}")
+            print(f"\n🚀 [UPLOADING SHORT -> {expected_hnd}] {meta['title']}")
             print(f"   • Mode          : {mode_label}")
             print(f"   • File          : {video_path.name} ({meta.get('file_size_mb', 0):.2f} MB)")
 
@@ -220,17 +226,20 @@ def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None) -> s
                     print(f"   > Upload Progress: {int(status.progress() * 100)}%", flush=True)
 
             vid_id = response.get("id")
-            print(f"✅ [SUCCESS] Short Uploaded! YouTube URL: https://youtube.com/shorts/{vid_id}")
+            print(f"✅ [SUCCESS -> {expected_hnd}] Short Uploaded! YouTube URL: https://youtube.com/shorts/{vid_id}")
             return vid_id
 
         except HttpError as e:
             if "quotaExceeded" in str(e) or "uploadLimitExceeded" in str(e):
-                print(f"⚠️ Project {pid} hit quota/upload limit. Rotating to next project...")
-                mark_gkd2_project_exhausted(pid)
+                print(f"⚠️ Project {pid} hit quota/upload limit for {channel_key}. Rotating to next project...")
+                mark_gkd2_project_exhausted(pid, channel_key=channel_key)
                 continue
             else:
-                print(f"❌ YouTube API HttpError: {e}")
+                print(f"❌ YouTube API HttpError ({channel_key}): {e}")
                 return None
+        except Exception as e:
+            print(f"ℹ️ Skipping upload to {channel_key}: {e}")
+            return None
 
     return None
 
@@ -243,8 +252,8 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
     slots = get_next_schedule_slots(count, reg) if schedule_mode else [datetime.now(IST)] * count
 
     print("=" * 80)
-    print(f"🕉️  GURUKULADESAM2 PANCHANGAM-ALIGNED SHORTS PIPELINE ({count} Shorts)")
-    print(f"📺 Target Channel : {TARGET_HANDLE} ({TARGET_CHANNEL_ID})")
+    print(f"🕉️  GURUKULADESAM DUAL-CHANNEL PANCHANGAM SHORTS PIPELINE ({count} Shorts)")
+    print(f"📺 Target Channels: {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) & {TARGET_HANDLE} ({TARGET_CHANNEL_ID})")
     print(f"🗓️  Publishing Mode: {'Scheduled 4x/Day (6AM, 11AM, 4PM, 8PM IST)' if schedule_mode else 'Immediate Public Release'}")
     print("=" * 80)
 
@@ -256,16 +265,19 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
 
         try:
             meta = build_short_for_track(tid, target_dt=slot_dt)
-            yt_vid_id = upload_short_via_api(meta, publish_at_dt=slot_dt if schedule_mode else None)
+            yt_vid_gkd2 = upload_short_via_api(meta, publish_at_dt=slot_dt if schedule_mode else None, channel_key="@gurukuladesam2")
+            yt_vid_gkd1 = upload_short_via_api(meta, publish_at_dt=slot_dt if schedule_mode else None, channel_key="@gurukuladesam")
+            yt_vid_id = yt_vid_gkd1 or yt_vid_gkd2
             if yt_vid_id:
                 slot_iso = slot_dt.isoformat() if schedule_mode else None
                 published_map[tid] = {
                     "youtube_short_id": yt_vid_id,
+                    "gurukuladesam_id": yt_vid_gkd1,
+                    "gurukuladesam2_id": yt_vid_gkd2,
                     "short_url": f"https://youtube.com/shorts/{yt_vid_id}",
                     "title": meta["title"],
                     "deity": meta["deity"],
                     "panchangam_occasion": panchangam["occasion_badge_ta"],
-                    "parent_video_url": meta["parent_channel"]["parent_video_url"],
                     "uploaded_at": datetime.now(IST).isoformat(),
                     "scheduled_for": slot_iso,
                     "status": "scheduled" if schedule_mode else "public",
@@ -279,7 +291,7 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
             print(f"❌ Pipeline stopped/errored on track {tid}: {e}")
             break
 
-    print(f"\n🏁 Batch Complete: {completed}/{count} Shorts published/scheduled to {TARGET_HANDLE}.")
+    print(f"\n🏁 Batch Complete: {completed}/{count} Shorts published/scheduled across @Gurukuladesam & @gurukuladesam2.")
 
 
 def prebuild_panchangam_queue(count: int, deity_filter: str = None):

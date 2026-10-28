@@ -44,13 +44,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-api-python-client google-auth-oauthlib google-auth-httplib2 Pillow
 
-      - name: Restore @gurukuladesam2 OAuth Token from GitHub Secrets
+      - name: Restore @Gurukuladesam & @gurukuladesam2 OAuth Tokens from GitHub Secrets
         env:
           GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
+          GURUKULADESAM_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN }}
         run: |
-          mkdir -p data/credentials/tokens_gurukuladesam2
-          printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/token_gurukuladesam2.json
-          printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam2/token_440375337189.json
+          mkdir -p data/credentials/tokens_gurukuladesam2 data/credentials/tokens_gurukuladesam
+          if [ -n "$GURUKULADESAM2_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/token_gurukuladesam2.json
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam2/token_440375337189.json
+          fi
+          if [ -n "$GURUKULADESAM_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/token_gurukuladesam.json
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam/token_440375337189.json
+          fi
 
       - name: Cache & Download Production Audio & Authentic Deity Video Scenes
         env:

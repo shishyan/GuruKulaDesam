@@ -30,10 +30,35 @@ GKD2_TOKENS_DIR = ROOT / "data" / "credentials" / "tokens_gurukuladesam2"
 PRIMARY_GKD2_TOKEN = ROOT / "data" / "credentials" / "token_gurukuladesam2.json"
 GKD2_EXHAUSTED_FILE = ROOT / "data" / "credentials" / "quota_exhausted_gurukuladesam2.json"
 
+GKD1_TOKENS_DIR = ROOT / "data" / "credentials" / "tokens_gurukuladesam"
+PRIMARY_GKD1_TOKEN = ROOT / "data" / "credentials" / "token_gurukuladesam.json"
+GKD1_EXHAUSTED_FILE = ROOT / "data" / "credentials" / "quota_exhausted_gurukuladesam.json"
+
 GKD2_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
+GKD1_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_CHANNEL_ID = "UCGUmNzaV_OUFbsNdHJQtaNQ"
 TARGET_HANDLE = "@gurukuladesam2"
+
+ORIGINAL_CHANNEL_ID = "UCz4dzcjahGaIb5dZCv32AmA"
+ORIGINAL_HANDLE = "@Gurukuladesam"
+
+CHANNELS_CONFIG = {
+    "@gurukuladesam2": {
+        "channel_id": TARGET_CHANNEL_ID,
+        "handle": TARGET_HANDLE,
+        "tokens_dir": GKD2_TOKENS_DIR,
+        "primary_token": PRIMARY_GKD2_TOKEN,
+        "exhausted_file": GKD2_EXHAUSTED_FILE,
+    },
+    "@gurukuladesam": {
+        "channel_id": ORIGINAL_CHANNEL_ID,
+        "handle": ORIGINAL_HANDLE,
+        "tokens_dir": GKD1_TOKENS_DIR,
+        "primary_token": PRIMARY_GKD1_TOKEN,
+        "exhausted_file": GKD1_EXHAUSTED_FILE,
+    },
+}
 
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.force-ssl",
@@ -94,8 +119,12 @@ def verify_token_channel(creds) -> tuple[str | None, str | None, str | None]:
     return cid, title, handle
 
 
-def authorize_gurukuladesam2(project_id: str = None, port: int = 8089) -> bool:
+def authorize_gurukuladesam2(project_id: str = None, port: int = 8089, channel_key: str = "@gurukuladesam2") -> bool:
     from google_auth_oauthlib.flow import InstalledAppFlow
+
+    cfg = CHANNELS_CONFIG.get(channel_key.lower(), CHANNELS_CONFIG["@gurukuladesam2"])
+    target_cid = cfg["channel_id"]
+    target_hnd = cfg["handle"]
 
     candidates = get_candidate_secret_files()
     if project_id:
@@ -107,12 +136,12 @@ def authorize_gurukuladesam2(project_id: str = None, port: int = 8089) -> bool:
 
     pid, secret_path = candidates[0]
     print("=" * 75)
-    print(f"🔐 AUTHORIZING YOUTUBE CHANNEL: {TARGET_HANDLE} ({TARGET_CHANNEL_ID})")
+    print(f"🔐 AUTHORIZING YOUTUBE CHANNEL: {target_hnd} ({target_cid})")
     print(f"📁 Using OAuth Project: {pid} ({secret_path.name})")
     print("=" * 75)
     print("\n👉 IMPORTANT: When your browser opens:")
     print("   1. Pick your Google Account.")
-    print(f"   2. When asked to choose a channel/brand account, select 'GuruKulaDesam' ({TARGET_HANDLE}).")
+    print(f"   2. When asked to choose a channel/brand account, select '{target_hnd}' ({target_cid}).")
     print("   3. Click 'Continue' / 'Allow' on all permissions.\n")
 
     flow = InstalledAppFlow.from_client_secrets_file(str(secret_path), SCOPES)
@@ -130,46 +159,47 @@ def authorize_gurukuladesam2(project_id: str = None, port: int = 8089) -> bool:
     print(f"   • ID     : {cid}")
 
     token_json = creds.to_json()
-    project_token_path = GKD2_TOKENS_DIR / f"token_{pid}.json"
+    project_token_path = cfg["tokens_dir"] / f"token_{pid}.json"
     project_token_path.write_text(token_json, encoding="utf-8")
-    PRIMARY_GKD2_TOKEN.write_text(token_json, encoding="utf-8")
+    cfg["primary_token"].write_text(token_json, encoding="utf-8")
 
-    print(f"💾 Saved token to: {PRIMARY_GKD2_TOKEN}")
+    print(f"💾 Saved token to: {cfg['primary_token']}")
     print(f"💾 Saved pool token to: {project_token_path}")
 
-    if cid != TARGET_CHANNEL_ID:
-        print(f"\n⚠️ WARNING: The authorized channel ID is {cid} ({handle}), not {TARGET_CHANNEL_ID} ({TARGET_HANDLE}).")
-        print("   If you accidentally picked @guru-kula-desam, re-run this script and select @gurukuladesam2!")
+    if cid != target_cid:
+        print(f"\n⚠️ WARNING: The authorized channel ID is {cid} ({handle}), not {target_cid} ({target_hnd}).")
+        print(f"   Please re-run and select {target_hnd}!")
         return False
 
-    print(f"\n🎉 SUCCESS! {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) is now authorized for autonomous Shorts publishing!")
+    print(f"\n🎉 SUCCESS! {target_hnd} ({target_cid}) is now authorized for autonomous Shorts publishing!")
     return True
 
 
-def get_gurukuladesam2_youtube_service():
+def get_channel_youtube_service(channel_key: str = "@gurukuladesam2"):
     """
-    Returns an authenticated (youtube_service, project_id) specifically for @gurukuladesam2.
-    Automatically rotates across authorized tokens in tokens_gurukuladesam2/.
+    Returns an authenticated (youtube_service, project_id, channel_config) for either
+    @gurukuladesam2 or @gurukuladesam.
     """
     from google.oauth2.credentials import Credentials
     from google.auth.transport.requests import Request
     from googleapiclient.discovery import build
 
+    cfg = CHANNELS_CONFIG.get(channel_key.lower(), CHANNELS_CONFIG["@gurukuladesam2"])
     exhausted = {}
-    if GKD2_EXHAUSTED_FILE.exists():
+    if cfg["exhausted_file"].exists():
         try:
-            exhausted = json.loads(GKD2_EXHAUSTED_FILE.read_text(encoding="utf-8"))
+            exhausted = json.loads(cfg["exhausted_file"].read_text(encoding="utf-8"))
         except Exception:
             exhausted = {}
 
-    token_files = sorted(GKD2_TOKENS_DIR.glob("token_*.json"))
-    if PRIMARY_GKD2_TOKEN.exists() and PRIMARY_GKD2_TOKEN not in token_files:
-        token_files.insert(0, PRIMARY_GKD2_TOKEN)
+    token_files = sorted(cfg["tokens_dir"].glob("token_*.json"))
+    if cfg["primary_token"].exists() and cfg["primary_token"] not in token_files:
+        token_files.insert(0, cfg["primary_token"])
 
     if not token_files:
         raise RuntimeError(
-            f"No OAuth token found for {TARGET_HANDLE}. "
-            f"Run: python tools/authorize_gurukuladesam2.py --authorize"
+            f"No OAuth token found for {cfg['handle']}. "
+            f"Run: python tools/authorize_gurukuladesam2.py --authorize --channel {channel_key}"
         )
 
     for tf in token_files:
@@ -185,26 +215,32 @@ def get_gurukuladesam2_youtube_service():
                 tf.write_text(creds.to_json(), encoding="utf-8")
 
             yt = build("youtube", "v3", credentials=creds, cache_discovery=False)
-            return yt, pid
+            return yt, pid, cfg
         except Exception as e:
-            print(f"[GKD2 Quota Pool] Token {tf.name} failed ({e}), trying next...")
+            print(f"[{cfg['handle']} Quota Pool] Token {tf.name} failed ({e}), trying next...")
 
-    raise RuntimeError(f"All tokens for {TARGET_HANDLE} are exhausted or invalid.")
+    raise RuntimeError(f"All tokens for {cfg['handle']} are exhausted or invalid.")
 
 
-def mark_gkd2_project_exhausted(pid: str):
+def get_gurukuladesam2_youtube_service():
+    yt, pid, _ = get_channel_youtube_service("@gurukuladesam2")
+    return yt, pid
+
+
+def mark_gkd2_project_exhausted(pid: str, channel_key: str = "@gurukuladesam2"):
+    cfg = CHANNELS_CONFIG.get(channel_key.lower(), CHANNELS_CONFIG["@gurukuladesam2"])
     exhausted = {}
-    if GKD2_EXHAUSTED_FILE.exists():
+    if cfg["exhausted_file"].exists():
         try:
-            exhausted = json.loads(GKD2_EXHAUSTED_FILE.read_text(encoding="utf-8"))
+            exhausted = json.loads(cfg["exhausted_file"].read_text(encoding="utf-8"))
         except Exception:
             pass
     exhausted[pid] = {
         "exhausted_at": time.time(),
         "date_str": time.strftime("%Y-%m-%d %H:%M:%S")
     }
-    GKD2_EXHAUSTED_FILE.write_text(json.dumps(exhausted, indent=2), encoding="utf-8")
-    print(f"  [GKD2 Quota Pool] Project {pid} marked quota-exhausted.")
+    cfg["exhausted_file"].write_text(json.dumps(exhausted, indent=2), encoding="utf-8")
+    print(f"  [{cfg['handle']} Quota Pool] Project {pid} marked quota-exhausted.")
 
 
 def check_status():
@@ -235,14 +271,15 @@ def check_status():
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(description="Authorize and manage OAuth tokens for @gurukuladesam2")
-    ap.add_argument("--authorize", action="store_true", help="Launch browser OAuth login for @gurukuladesam2")
+    ap = argparse.ArgumentParser(description="Authorize and manage OAuth tokens for @gurukuladesam & @gurukuladesam2")
+    ap.add_argument("--authorize", action="store_true", help="Launch browser OAuth login")
+    ap.add_argument("--channel", type=str, default="@gurukuladesam2", help="Channel handle (@gurukuladesam or @gurukuladesam2)")
     ap.add_argument("--project", type=str, default=None, help="Specific Google Cloud Project ID to authorize")
     ap.add_argument("--port", type=int, default=8089, help="Local OAuth callback port")
-    ap.add_argument("--status", action="store_true", help="Check current @gurukuladesam2 token status")
+    ap.add_argument("--status", action="store_true", help="Check current token status")
     args = ap.parse_args()
 
     if args.authorize:
-        authorize_gurukuladesam2(project_id=args.project, port=args.port)
+        authorize_gurukuladesam2(project_id=args.project, port=args.port, channel_key=args.channel)
     else:
         check_status()
