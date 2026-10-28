@@ -291,7 +291,7 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
             print(f"❌ Pipeline stopped/errored on track {tid}: {e}")
             break
 
-    print(f"\n🏁 Batch Complete: {completed}/{count} Shorts published/scheduled across @Gurukuladesam & @gurukuladesam2.")
+    print(f"\n🏁 Batch Complete: {completed}/{count} Shorts published/scheduled across @GuruKulaDesam & @GuruKulaDesam2.")
 
 
 def prebuild_panchangam_queue(count: int, deity_filter: str = None):

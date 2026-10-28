@@ -1,4 +1,4 @@
-name: Autonomous @gurukuladesam2 Panchangam Shorts Publisher
+name: Autonomous @GuruKulaDesam & @GuruKulaDesam2 Panchangam Shorts Publisher
 
 on:
   schedule:
@@ -44,7 +44,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-api-python-client google-auth-oauthlib google-auth-httplib2 Pillow
 
-      - name: Restore @Gurukuladesam & @gurukuladesam2 OAuth Tokens from GitHub Secrets
+      - name: Restore @GuruKulaDesam & @GuruKulaDesam2 OAuth Tokens from GitHub Secrets
         env:
           GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
           GURUKULADESAM_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN }}
@@ -74,7 +74,7 @@ jobs:
         run: |
           python tools/tamil_panchangam_engine.py
 
-      - name: Build & Schedule Panchangam-Aligned Shorts to @gurukuladesam2
+      - name: Build & Schedule Panchangam-Aligned Shorts to @GuruKulaDesam & @GuruKulaDesam2
         run: |
           PUB_NOW="${{ github.event.inputs.publish_now || '0' }}"
           SCHED_DAYS="${{ github.event.inputs.schedule_days || '1' }}"

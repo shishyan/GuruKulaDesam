@@ -38,10 +38,10 @@ GKD2_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 GKD1_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_CHANNEL_ID = "UCGUmNzaV_OUFbsNdHJQtaNQ"
-TARGET_HANDLE = "@gurukuladesam2"
+TARGET_HANDLE = "@GuruKulaDesam2"
 
 ORIGINAL_CHANNEL_ID = "UCz4dzcjahGaIb5dZCv32AmA"
-ORIGINAL_HANDLE = "@Gurukuladesam"
+ORIGINAL_HANDLE = "@GuruKulaDesam"
 
 CHANNELS_CONFIG = {
     "@gurukuladesam2": {
@@ -271,9 +271,9 @@ def check_status():
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(description="Authorize and manage OAuth tokens for @gurukuladesam & @gurukuladesam2")
+    ap = argparse.ArgumentParser(description="Authorize and manage OAuth tokens for @GuruKulaDesam & @GuruKulaDesam2")
     ap.add_argument("--authorize", action="store_true", help="Launch browser OAuth login")
-    ap.add_argument("--channel", type=str, default="@gurukuladesam2", help="Channel handle (@gurukuladesam or @gurukuladesam2)")
+    ap.add_argument("--channel", type=str, default="@GuruKulaDesam2", help="Channel handle (@GuruKulaDesam or @GuruKulaDesam2)")
     ap.add_argument("--project", type=str, default=None, help="Specific Google Cloud Project ID to authorize")
     ap.add_argument("--port", type=int, default=8089, help="Local OAuth callback port")
     ap.add_argument("--status", action="store_true", help="Check current token status")

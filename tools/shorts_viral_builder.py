@@ -396,8 +396,8 @@ def build_vertical_drawtext_filters(
 
     filters = []
 
-    # 1. Top Header Brand Phrase: "Guru Kula Desam" (Y=96, no border, no background box)
-    f_brand = write_card("top_brand", "Guru Kula Desam")
+    # 1. Top Header Brand Phrase: "@GuruKulaDesam" (Y=96, no border, no background box)
+    f_brand = write_card("top_brand", "@GuruKulaDesam")
     filters.append(
         f"drawtext=fontfile='{f_ta_posix}':textfile='{f_brand}':text_shaping=1:"
         f"fontcolor=#FFE040:fontsize=36:x=(w-text_w)/2:y=96"
@@ -563,7 +563,8 @@ def build_viral_short_metadata(
     tag_list = [
         sacred_cat["name_ta"], sacred_cat["key"],
         *[t.lstrip("#") for t in all_hashtags],
-        "Guru Kula Desam", "gurukuladesam", "guru-kula-desam", "Tamil Devotional Songs",
+        "@GuruKulaDesam", "@GuruKulaDesam2", "GuruKulaDesam", "GuruKulaDesam2",
+        "Guru Kula Desam", "Tamil Devotional Songs",
         "Tamil Panchangam Today", "Nalla Neram Today", ta_title[:30], en_title[:30]
     ]
 
