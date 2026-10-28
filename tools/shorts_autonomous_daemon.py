@@ -207,7 +207,6 @@ def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None) -> s
 
             print(f"\n🚀 [UPLOADING SHORT -> {TARGET_HANDLE}] {meta['title']}")
             print(f"   • Mode          : {mode_label}")
-            print(f"   • Parent Funnel : {meta['parent_channel']['parent_video_url']} (@guru-kula-desam)")
             print(f"   • File          : {video_path.name} ({meta.get('file_size_mb', 0):.2f} MB)")
 
             media = MediaFileUpload(str(video_path), mimetype="video/mp4", chunksize=8 * 1024 * 1024, resumable=True)
@@ -221,11 +220,6 @@ def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None) -> s
 
             vid_id = response.get("id")
             print(f"✅ [SUCCESS] Short Uploaded! YouTube URL: https://youtube.com/shorts/{vid_id}")
-
-            # If published immediately as public, post the top comment pointing to @guru-kula-desam
-            if publish_at_dt is None and meta.get("pinned_comment"):
-                post_parent_credit_comment(yt, vid_id, meta["pinned_comment"])
-
             return vid_id
 
         except HttpError as e:

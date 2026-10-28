@@ -295,8 +295,8 @@ def find_audio_peak_window(audio_path: Path, window_sec: float = DEFAULT_SHORT_D
 def build_track_vertical_backdrop(source_video: Path, seek_sec: float, out_png: Path) -> Path:
     """
     Extracts a rich frame from `source_video`, creates a full-bleed 1080x1920 Gaussian-blurred
-    darkened temple aura backdrop, leaves a framed center window (Y=330..1420)
-    for the moving deity video, and draws double temple gold borders + 12 side deepams + Panchangam header box.
+    darkened temple aura backdrop, and leaves a clean, uncluttered vertical frame
+    (with zero text background boxes, zero side clutter).
     """
     raw_frame = out_png.parent / "temp_frame.jpg"
     subprocess.run(
@@ -310,29 +310,9 @@ def build_track_vertical_backdrop(source_video: Path, seek_sec: float, out_png: 
 
     base = Image.open(raw_frame).convert("RGBA")
     bg = base.resize((W, H), Image.Resampling.LANCZOS).filter(ImageFilter.GaussianBlur(radius=28))
-    dark_tint = Image.new("RGBA", (W, H), (8, 6, 18, 185))
-    bg = Image.alpha_composite(bg, dark_tint)
-
-    draw = ImageDraw.Draw(bg)
-    # Top Panchangam & Sacred Category Header Panel (Y=20..326)
-    draw.rectangle([18, 20, W - 19, 326], fill=(14, 10, 28, 210), outline=(218, 165, 32, 180), width=2)
-    # Sacred Double Temple Gold Perimeter Border & Window Dividers
-    draw.rectangle([10, 10, W - 11, H - 11], outline=(218, 165, 32, 220), width=3)
-    draw.rectangle([18, 18, W - 19, H - 19], outline=(255, 215, 0, 140), width=1)
-    draw.line([(18, 326), (W - 19, 326)], fill=(218, 165, 32, 220), width=2)
-    draw.line([(18, 1426), (W - 19, 1426)], fill=(218, 165, 32, 220), width=2)
-
-    # Side Deepam Warm Glow Dots (6 left, 6 right)
-    glow_layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    gdraw = ImageDraw.Draw(glow_layer)
-    for i in range(6):
-        yy = 380 + i * 195
-        for xx in (22, W - 22):
-            gdraw.ellipse([xx - 15, yy - 15, xx + 15, yy + 15], fill=(255, 160, 30, 150))
-            gdraw.ellipse([xx - 6, yy - 9, xx + 6, yy + 5], fill=(255, 240, 180, 235))
-    glow_layer = glow_layer.filter(ImageFilter.GaussianBlur(radius=3.0))
-    final_ov = Image.alpha_composite(bg, glow_layer).convert("RGB")
-    final_ov.save(out_png, "PNG")
+    dark_tint = Image.new("RGBA", (W, H), (8, 6, 18, 165))
+    bg = Image.alpha_composite(bg, dark_tint).convert("RGB")
+    bg.save(out_png, "PNG")
     return out_png
 
 
@@ -383,32 +363,21 @@ def build_vertical_drawtext_filters(
     panchangam_info: dict | None = None,
 ) -> list[str]:
     """
-    Generates FFmpeg `drawtext` filters with `text_shaping=1` (HarfBuzz complex Tamil ligature shaping):
-    - Top Header (Y=34): Sacred Category Title (`[ நன்னெறி ]`, `[ நல்லறம் ]`, `[ நற்பண்பு ]`, `[ நற்துணை ]`, `[ நற்சொல் ]`, `[ நற்செயல் ]`) + Festival Badge
-    - Song Title (Y=88) + English Title (Y=136)
-    - Live Tamil Panchangam Timings Box (Y=180..310):
-      * Line 1: Month, Date, Weekday & Exact Tithi Start–End Timings
-      * Line 2: Exact Nakshatra Start–End Timings & Special Pooja / Nalla Neram / Rahu Kalam
-    - Synchronized Tamil Lyric Cards (Y=1455) + English Spiritual Meaning (Y=1640)
-    - Persistent Parent Channel Footer (`Full Song on @guru-kula-desam | Subscribe @gurukuladesam2`)
+    Strict 15% Header / 75% Content / 10% Footer layout (1080x1920):
+    - Top 15% Header (Y=0..288, 288px):
+      * Line 1 (Y=96): `Guru Kula Desam`
+      * Line 2 (Y=168): One-liner song name (`{sacred_cat['name_ta']} — {short_ta}`)
+    - Middle 75% Content (Y=288..1728, 1440px): Pure unobstructed deity video (full 1080px width, zero borders)
+    - Bottom 10% Footer (Y=1728..1920, 192px): Clean breathing space (no parent channel ads, no clutter)
+    - Zero text background boxes (`box=0`), zero text borders (`borderw=0`), zero graphic frames.
     """
-    hook_cfg = DEITY_HOOKS.get(deity_key, DEITY_HOOKS["murugan"])
     cat_ta = sacred_cat["name_ta"]
-    badge_raw = panchangam_info["occasion_badge_ta"] if panchangam_info else hook_cfg["badge"]
-    # If the slot deity differs from the primary festival deity (e.g., Vinayagar at noon on a Krittika day),
-    # use the slot deity's own sacred badge so the top header always matches the deity on screen!
-    if panchangam_info and panchangam_info.get("primary_deity") != deity_key:
-        badge_raw = f"{panchangam_info['tamil_month_ta']} {panchangam_info['tamil_day']} • {hook_cfg['badge'].split('|')[0].strip()}"
-    clean_badge = re.sub(r"[^\w\s\u0B80-\u0BFF|•—\-:]", "", badge_raw).strip()
-    hook_ta = hook_cfg["hook_ta"]
 
     short_ta = song_title_ta.split("|")[0].strip()
-    if len(short_ta) > 38:
-        short_ta = short_ta[:36] + "..."
+    if len(short_ta) > 36:
+        short_ta = short_ta[:34] + "..."
 
-    short_en = song_title_en.split("|")[-1].replace("[Film]", "").strip()
-    if len(short_en) > 46:
-        short_en = short_en[:44] + "..."
+    one_liner = f"{cat_ta} — {short_ta}"
 
     txt_dir = work_dir / "drawtext_cards"
     txt_dir.mkdir(parents=True, exist_ok=True)
@@ -427,161 +396,19 @@ def build_vertical_drawtext_filters(
 
     filters = []
 
-    # 1. Persistent Top Sacred Category Pillar + Festival Badge (Y=36)
-    f_badge = write_card("top_badge", f"[ {cat_ta}  •  {clean_badge} ]")
+    # 1. Top Header Brand Phrase: "Guru Kula Desam" (Y=96, no border, no background box)
+    f_brand = write_card("top_brand", "Guru Kula Desam")
     filters.append(
-        f"drawtext=fontfile='{f_ta_posix}':textfile='{f_badge}':text_shaping=1:"
-        f"fontcolor=#FFE040:fontsize=27:x=(w-text_w)/2:y=36:"
-        f"borderw=3:bordercolor=#080818:shadowcolor=black@0.85:shadowx=3:shadowy=3"
+        f"drawtext=fontfile='{f_ta_posix}':textfile='{f_brand}':text_shaping=1:"
+        f"fontcolor=#FFE040:fontsize=36:x=(w-text_w)/2:y=96"
     )
 
-    # 2. Persistent Top Tamil Song Title (Y=86)
-    f_title_ta = write_card("top_title_ta", short_ta)
+    # 2. Top Header One-Liner (Song Name, Y=168, no border, no background box)
+    f_oneliner = write_card("top_oneliner", one_liner)
     filters.append(
-        f"drawtext=fontfile='{f_ta_posix}':textfile='{f_title_ta}':text_shaping=1:"
-        f"fontcolor=white:fontsize=33:x=(w-text_w)/2:y=86:"
-        f"borderw=4:bordercolor=#851515:shadowcolor=black@0.9:shadowx=3:shadowy=3"
+        f"drawtext=fontfile='{f_ta_posix}':textfile='{f_oneliner}':text_shaping=1:"
+        f"fontcolor=white:fontsize=30:x=(w-text_w)/2:y=168"
     )
-
-    # 3. Persistent Top English Subtitle (Y=136)
-    if short_en and short_en != short_ta:
-        f_title_en = write_card("top_title_en", short_en)
-        filters.append(
-            f"drawtext=fontfile='{f_ta_posix}':textfile='{f_title_en}':text_shaping=1:"
-            f"fontcolor=#B8E8FF:fontsize=22:x=(w-text_w)/2:y=136:"
-            f"borderw=2:bordercolor=black:shadowcolor=black@0.8:shadowx=2:shadowy=2"
-        )
-
-    # 4. Persistent On-Screen Tamil Panchangam & Exact Timings Ribbon (Y=180..310)
-    if panchangam_info:
-        p_line1 = panchangam_info.get("onscreen_panchangam_line1", "")
-        p_line2 = f"நட்சத்திரம்: {panchangam_info['nakshatra_ta']} ({panchangam_info['nakshatra_timing']})"
-        p_line3 = (
-            f"நல்ல நேரம்: {panchangam_info['nalla_neram_am']} & {panchangam_info['nalla_neram_pm']}  |  "
-            f"இராகு: {panchangam_info['rahu_kalam']}"
-        )
-
-        f_p1 = write_card("panchangam_l1", p_line1)
-        f_p2 = write_card("panchangam_l2", p_line2)
-        f_p3 = write_card("panchangam_l3", p_line3)
-
-        filters.append(
-            f"drawtext=fontfile='{f_ta_posix}':textfile='{f_p1}':text_shaping=1:"
-            f"fontcolor=#90FF90:fontsize=20:x=(w-text_w)/2:y=184:"
-            f"borderw=2:bordercolor=black"
-        )
-        filters.append(
-            f"drawtext=fontfile='{f_ta_posix}':textfile='{f_p2}':text_shaping=1:"
-            f"fontcolor=#FFD870:fontsize=20:x=(w-text_w)/2:y=226:"
-            f"borderw=2:bordercolor=black"
-        )
-        filters.append(
-            f"drawtext=fontfile='{f_ta_posix}':textfile='{f_p3}':text_shaping=1:"
-            f"fontcolor=#80E8FF:fontsize=19:x=(w-text_w)/2:y=268:"
-            f"borderw=2:bordercolor=black"
-        )
-
-    # 5. Opening 2.8s Center Retention Hook Card
-    hook_wrapped = wrap_tamil_couplet(hook_ta, max_words_per_line=3)
-    f_hook = write_card("viral_hook", hook_wrapped)
-    filters.append(
-        f"drawtext=fontfile='{f_ta_posix}':textfile='{f_hook}':text_shaping=1:"
-        f"fontcolor=#FFF040:fontsize=32:x=(w-text_w)/2:y=820:"
-        f"borderw=3:bordercolor=black:box=1:boxcolor=#550808@0.82:boxborderw=16:line_spacing=10:"
-        f"enable='between(t,0.0,2.8)'"
-    )
-
-    # 6. Closing 4.5s Parent Channel Full-Video Call-To-Action Card (@guru-kula-desam)
-    cta_start = max(3.0, clip_dur - 4.5)
-    f_cta = write_card("outro_cta", "முழுப் பாடலையும் காண (Watch Full 1080p Song):\n>> @guru-kula-desam YouTube Channel <<")
-    filters.append(
-        f"drawtext=fontfile='{f_ta_posix}':textfile='{f_cta}':text_shaping=1:"
-        f"fontcolor=#60FFFF:fontsize=30:x=(w-text_w)/2:y=820:"
-        f"borderw=3:bordercolor=#081845:box=1:boxcolor=#061028@0.88:boxborderw=18:line_spacing=10:"
-        f"enable='between(t,{cta_start:.2f},{clip_dur:.2f})'"
-    )
-
-    # 7. Persistent Footer Parent Channel Credit (@guru-kula-desam & @gurukuladesam2)
-    f_credit = write_card("parent_credit", "Full Song on @guru-kula-desam  |  Subscribe @gurukuladesam2")
-    filters.append(
-        f"drawtext=fontfile='{f_ta_posix}':textfile='{f_credit}':text_shaping=1:"
-        f"fontcolor=#70E0FF:fontsize=25:x=(w-text_w)/2:y=1755:"
-        f"borderw=2:bordercolor=black:box=1:boxcolor=black@0.65:boxborderw=10"
-    )
-
-    # 8. Synchronized Tamil Lyric Cards in Lower Safe Zone (Y=1455)
-    window_cues = []
-    for c in lyrics_cues:
-        if c["end"] > clip_start and c["start"] < (clip_start + clip_dur):
-            s = max(0.0, c["start"] - clip_start)
-            e = min(clip_dur, c["end"] - clip_start)
-            if e - s >= 1.0:
-                window_cues.append({"start": s, "end": e, "text": c["text"]})
-
-    refined_cues = []
-    if not window_cues or any((c["end"] - c["start"]) > 12.0 for c in window_cues):
-        all_text = "\n".join(c["text"] for c in (window_cues or lyrics_cues))
-        raw_lines = [
-            l.strip() for l in all_text.splitlines()
-            if l.strip() and not re.match(r"^\[.*\]$|^குறள்\s*\d+", l.strip())
-        ]
-        if not raw_lines:
-            raw_lines = [hook_ta]
-        cards = []
-        for i in range(0, len(raw_lines), 2):
-            cards.append("\n".join(raw_lines[i:i + 2]))
-        card_dur = 5.5
-        t_curr = 0.15
-        idx = 0
-        while t_curr < clip_dur - 0.8:
-            t_next = min(clip_dur - 0.1, t_curr + card_dur)
-            refined_cues.append({
-                "start": t_curr,
-                "end": t_next - 0.15,
-                "text": cards[idx % len(cards)]
-            })
-            t_curr = t_next
-            idx += 1
-    else:
-        refined_cues = window_cues
-
-    border_palette = ["#D81818", "#18A020", "#1060E0", "#C87000"]
-    for idx, c in enumerate(refined_cues):
-        wrapped = wrap_tamil_couplet(c["text"], max_words_per_line=4)
-        f_lyr = write_card(f"lyric_{idx:03d}", wrapped)
-        bcol = border_palette[idx % len(border_palette)]
-        filters.append(
-            f"drawtext=fontfile='{f_ta_posix}':textfile='{f_lyr}':text_shaping=1:"
-            f"fontcolor=white:fontsize=36:x=(w-text_w)/2:y=1455:"
-            f"borderw=4:bordercolor={bcol}:shadowcolor=black@0.9:shadowx=4:shadowy=4:"
-            f"box=1:boxcolor=black@0.48:boxborderw=14:line_spacing=12:"
-            f"enable='between(t,{c['start']:.2f},{c['end']:.2f})'"
-        )
-
-    # 9. English Spiritual Meaning underneath Tamil Lyrics (Y=1640)
-    if english_summary:
-        clean_en = re.sub(r"'[^']*[\u0B80-\u0BFF]+[^']*'", "", english_summary)
-        clean_en = re.sub(r"[\u0B80-\u0BFF]+", "", clean_en)
-        clean_en = re.sub(r"\(\s*/?\s*\)|'\s*/\s*'|\s+from\s*,", ",", clean_en)
-        clean_en = re.sub(r"\s+", " ", clean_en).strip()
-        sentences = [s.strip() for s in re.split(r"[.;!]", clean_en) if len(s.strip()) > 15]
-        if sentences:
-            seg_dur = clip_dur / min(len(sentences), 4)
-            for idx, sent in enumerate(sentences[:4]):
-                if len(sent) > 84:
-                    sent = sent[:82] + "..."
-                words = sent.split()
-                mid = len(words) // 2
-                en_wrapped = " ".join(words[:mid]) + "\n" + " ".join(words[mid:]) if len(words) > 7 else sent
-                f_en_card = write_card(f"eng_{idx:02d}", f"“{en_wrapped}”")
-                s_t = idx * seg_dur + 0.2
-                e_t = (idx + 1) * seg_dur - 0.15
-                filters.append(
-                    f"drawtext=fontfile='{f_ta_posix}':textfile='{f_en_card}':text_shaping=1:"
-                    f"fontcolor=#E0F8FF:fontsize=24:x=(w-text_w)/2:y=1640:"
-                    f"borderw=2:bordercolor=black:line_spacing=8:"
-                    f"enable='between(t,{s_t:.2f},{e_t:.2f})'"
-                )
 
     return filters
 
@@ -700,17 +527,8 @@ def build_viral_short_metadata(
     desc_lines = [
         f"{short_title}",
         f"{sacred_cat['title']} ({sacred_cat['name_en']}): {sacred_cat['desc_ta']}",
-        f"{hook_cfg['hook_en']}",
         "",
         *panchangam_block,
-        "",
-        "═══════════════════════════════════════════════════════════",
-        "🎬 WATCH FULL-LENGTH 1080p SONG & FILM ON OUR MAIN CHANNEL:",
-        "═══════════════════════════════════════════════════════════",
-        f"👉 Full Master Video (@guru-kula-desam): {parent_info['parent_video_url']}",
-        f"👉 Original Song Audio: {parent_info['original_audio_url']}",
-        f"👉 Subscribe to Parent Channel: {parent_info['parent_channel_url']} (@guru-kula-desam)",
-        f"🔔 Subscribe to Shorts Channel: https://www.youtube.com/@gurukuladesam2 (@gurukuladesam2)",
         "",
         "═══════════════════════════════════════════════════════════",
         "📜 பாடல் வரிகள் (SACRED TAMIL LYRICS):",
@@ -723,13 +541,6 @@ def build_viral_short_metadata(
         tamil_meaning[:700] if tamil_meaning else "",
         "",
         english_meaning[:700] if english_meaning else "",
-        "",
-        "═══════════════════════════════════════════════════════════",
-        "🎵 CREDITS — GURU KULA DESAM (@guru-kula-desam & @gurukuladesam2)",
-        "═══════════════════════════════════════════════════════════",
-        "• Parent Channel & Full Discography: குரு குல தேசம் (@guru-kula-desam)",
-        "• Concept, Direction & Vocal Engineering: Nagarajan Balasubramanian",
-        "• Official Online Gurukulam: https://gurukuladesam.com",
         "",
         tags_str,
     ]
@@ -747,12 +558,6 @@ def build_viral_short_metadata(
             f"• 🪔 {panchangam_info['special_pooja_time']}",
             f"• நல்ல நேரம்: {panchangam_info['nalla_neram_am']} | இராகு காலம்: {panchangam_info['rahu_kalam']}",
         ])
-    p_comment_lines.extend([
-        "",
-        "🎬 முழுப் பாடலையும் 1080p தரத்தில் எமது முதன்மைச் சேனலில் (@guru-kula-desam) காணுங்கள்:",
-        f"👉 Full Video & Song: {parent_info['parent_video_url']}",
-        f"👉 Main Channel: {parent_info['parent_channel_url']}",
-    ])
     pinned_comment = "\n".join(p_comment_lines)
 
     tag_list = [
@@ -852,46 +657,36 @@ def build_short_for_track(
     else:
         raise FileNotFoundError(f"Neither authentic deity scenes nor master video found for {track_id}")
 
-    # Step 3: Build HarfBuzz Drawtext Filters & Viral Metadata with 6 Sacred Titles + Panchangam Timings
+    # Step 3: Build HarfBuzz Drawtext Filters & Viral Metadata (15% Header / 75% Content / 10% Footer, No Borders/Backgrounds)
     viral_meta = build_viral_short_metadata(track_id, deity_key, meta_entry, panchangam_info)
-    srt_cues = parse_srt_cues(SUBTITLES_DIR / f"{track_id}.srt")
-    if not srt_cues and meta_entry.get("tamil_lyrics"):
-        srt_cues = [{"start": 0.0, "end": 300.0, "text": meta_entry["tamil_lyrics"]}]
-
     dt_filters = build_vertical_drawtext_filters(
         work_dir=work_dir,
         deity_key=deity_key,
         sacred_cat=sacred_cat,
         song_title_ta=viral_meta["ta_title"],
         song_title_en=viral_meta["en_title"],
-        lyrics_cues=srt_cues,
-        english_summary=meta_entry.get("english_meaning", ""),
+        lyrics_cues=[],
+        english_summary="",
         clip_start=start_sec,
         clip_dur=clip_dur,
         panchangam_info=panchangam_info,
     )
 
-    backdrop_png = work_dir / "vertical_backdrop_1080x1920.png"
-    build_track_vertical_backdrop(raw_source_video, video_seek_start, backdrop_png)
-
-    # Step 4: Fast 1080x1920 @ 24fps Composite (Center window Y=330..1424, height=1094)
+    # Step 4: Fast 1080x1920 @ 24fps Composite (15% Header = 288px, 75% Content = 1440px, 10% Footer = 192px; No Background Image, No Borders)
     fps_short = 24
     inputs = [
-        "-loop", "1", "-t", f"{clip_dur:.2f}", "-i", str(backdrop_png),
         "-ss", f"{video_seek_start:.2f}", "-t", f"{clip_dur:.2f}", "-i", str(raw_source_video),
         "-ss", f"{start_sec:.2f}", "-t", f"{clip_dur:.2f}", "-i", str(audio_path),
     ]
 
     dt_chain = ",".join(dt_filters)
     filter_parts = [
-        f"[0:v]fps={fps_short},format=yuv420p[v_bg]",
-        f"[1:v]fps={fps_short},scale=-2:1094,crop={W - 40}:1094:'(iw-ow)/2+((iw-ow)/2)*sin(2*PI*t/18.0)':0,"
-        f"colorbalance=rs=-0.02:gs=0.01:bs=0.04,format=yuv420p[v_fg]",
-        f"[v_bg][v_fg]overlay=20:330:shortest=1,{dt_chain},format=yuv420p[v_out]",
+        f"[0:v]fps={fps_short},scale=-2:1440,crop={W}:1440:'(iw-ow)/2+((iw-ow)/2)*sin(2*PI*t/18.0)':0,"
+        f"colorbalance=rs=-0.02:gs=0.01:bs=0.04,pad={W}:{H}:0:288:black,{dt_chain},format=yuv420p[v_out]",
     ]
 
     fade_out_st = max(0.5, clip_dur - 0.8)
-    filter_parts.append(f"[2:a]afade=t=in:st=0:d=0.4,afade=t=out:st={fade_out_st:.2f}:d=0.8[a_out]")
+    filter_parts.append(f"[1:a]afade=t=in:st=0:d=0.4,afade=t=out:st={fade_out_st:.2f}:d=0.8[a_out]")
 
     cmd_render = [
         FFMPEG, "-y",
@@ -924,7 +719,6 @@ def build_short_for_track(
 
     print(f"🎉 [SHORT READY] {out_mp4.name} ({size_mb:.2f} MB)")
     print(f"   • Sacred Title : {viral_meta['title']}")
-    print(f"   • Parent Credit: {viral_meta['parent_channel']['parent_video_url']} (@guru-kula-desam)")
     return viral_meta
 
 
