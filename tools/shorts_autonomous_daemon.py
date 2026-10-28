@@ -165,7 +165,7 @@ def post_parent_credit_comment(yt, short_video_id: str, comment_text: str):
         print(f"   ℹ️ Note: Comment post skipped (video may be scheduled/private until release): {str(e)[:80]}")
 
 
-def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None, channel_key: str = "@gurukuladesam2") -> str | None:
+def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None, channel_key: str = "@gurukuladesam") -> str | None:
     video_path = ROOT / meta["video_path"]
     if not video_path.exists():
         raise FileNotFoundError(f"Rendered Short MP4 missing: {video_path}")
@@ -252,8 +252,8 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
     slots = get_next_schedule_slots(count, reg) if schedule_mode else [datetime.now(IST)] * count
 
     print("=" * 80)
-    print(f"🕉️  GURUKULADESAM DUAL-CHANNEL PANCHANGAM SHORTS PIPELINE ({count} Shorts)")
-    print(f"📺 Target Channels: {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) & {TARGET_HANDLE} ({TARGET_CHANNEL_ID})")
+    print(f"🕉️  @GURUKULADESAM PANCHANGAM SHORTS PIPELINE ({count} Shorts)")
+    print(f"📺 Target Channel : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID})")
     print(f"🗓️  Publishing Mode: {'Scheduled 4x/Day (6AM, 11AM, 4PM, 8PM IST)' if schedule_mode else 'Immediate Public Release'}")
     print("=" * 80)
 
@@ -265,15 +265,12 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
 
         try:
             meta = build_short_for_track(tid, target_dt=slot_dt)
-            yt_vid_gkd2 = upload_short_via_api(meta, publish_at_dt=slot_dt if schedule_mode else None, channel_key="@gurukuladesam2")
-            yt_vid_gkd1 = upload_short_via_api(meta, publish_at_dt=slot_dt if schedule_mode else None, channel_key="@gurukuladesam")
-            yt_vid_id = yt_vid_gkd1 or yt_vid_gkd2
+            yt_vid_id = upload_short_via_api(meta, publish_at_dt=slot_dt if schedule_mode else None, channel_key="@gurukuladesam")
             if yt_vid_id:
                 slot_iso = slot_dt.isoformat() if schedule_mode else None
                 published_map[tid] = {
                     "youtube_short_id": yt_vid_id,
-                    "gurukuladesam_id": yt_vid_gkd1,
-                    "gurukuladesam2_id": yt_vid_gkd2,
+                    "gurukuladesam_id": yt_vid_id,
                     "short_url": f"https://youtube.com/shorts/{yt_vid_id}",
                     "title": meta["title"],
                     "deity": meta["deity"],
@@ -291,7 +288,7 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
             print(f"❌ Pipeline stopped/errored on track {tid}: {e}")
             break
 
-    print(f"\n🏁 Batch Complete: {completed}/{count} Shorts published/scheduled across @GuruKulaDesam & @GuruKulaDesam2.")
+    print(f"\n🏁 Batch Complete: {completed}/{count} Shorts published/scheduled to {ORIGINAL_HANDLE}.")
 
 
 def prebuild_panchangam_queue(count: int, deity_filter: str = None):

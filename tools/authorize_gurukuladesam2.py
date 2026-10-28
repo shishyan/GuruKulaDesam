@@ -37,20 +37,13 @@ GKD1_EXHAUSTED_FILE = ROOT / "data" / "credentials" / "quota_exhausted_gurukulad
 GKD2_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 GKD1_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 
-TARGET_CHANNEL_ID = "UCGUmNzaV_OUFbsNdHJQtaNQ"
-TARGET_HANDLE = "@GuruKulaDesam2"
+TARGET_CHANNEL_ID = "UCz4dzcjahGaIb5dZCv32AmA"
+TARGET_HANDLE = "@GuruKulaDesam"
 
 ORIGINAL_CHANNEL_ID = "UCz4dzcjahGaIb5dZCv32AmA"
 ORIGINAL_HANDLE = "@GuruKulaDesam"
 
 CHANNELS_CONFIG = {
-    "@gurukuladesam2": {
-        "channel_id": TARGET_CHANNEL_ID,
-        "handle": TARGET_HANDLE,
-        "tokens_dir": GKD2_TOKENS_DIR,
-        "primary_token": PRIMARY_GKD2_TOKEN,
-        "exhausted_file": GKD2_EXHAUSTED_FILE,
-    },
     "@gurukuladesam": {
         "channel_id": ORIGINAL_CHANNEL_ID,
         "handle": ORIGINAL_HANDLE,
@@ -119,10 +112,10 @@ def verify_token_channel(creds) -> tuple[str | None, str | None, str | None]:
     return cid, title, handle
 
 
-def authorize_gurukuladesam2(project_id: str = None, port: int = 8089, channel_key: str = "@gurukuladesam2") -> bool:
+def authorize_gurukuladesam2(project_id: str = None, port: int = 8089, channel_key: str = "@gurukuladesam") -> bool:
     from google_auth_oauthlib.flow import InstalledAppFlow
 
-    cfg = CHANNELS_CONFIG.get(channel_key.lower(), CHANNELS_CONFIG["@gurukuladesam2"])
+    cfg = CHANNELS_CONFIG.get(channel_key.lower(), CHANNELS_CONFIG["@gurukuladesam"])
     target_cid = cfg["channel_id"]
     target_hnd = cfg["handle"]
 
@@ -175,16 +168,16 @@ def authorize_gurukuladesam2(project_id: str = None, port: int = 8089, channel_k
     return True
 
 
-def get_channel_youtube_service(channel_key: str = "@gurukuladesam2"):
+def get_channel_youtube_service(channel_key: str = "@gurukuladesam"):
     """
-    Returns an authenticated (youtube_service, project_id, channel_config) for either
-    @gurukuladesam2 or @gurukuladesam.
+    Returns an authenticated (youtube_service, project_id, channel_config) for
+    @GuruKulaDesam (UCz4dzcjahGaIb5dZCv32AmA).
     """
     from google.oauth2.credentials import Credentials
     from google.auth.transport.requests import Request
     from googleapiclient.discovery import build
 
-    cfg = CHANNELS_CONFIG.get(channel_key.lower(), CHANNELS_CONFIG["@gurukuladesam2"])
+    cfg = CHANNELS_CONFIG.get(channel_key.lower(), CHANNELS_CONFIG["@gurukuladesam"])
     exhausted = {}
     if cfg["exhausted_file"].exists():
         try:
@@ -223,12 +216,12 @@ def get_channel_youtube_service(channel_key: str = "@gurukuladesam2"):
 
 
 def get_gurukuladesam2_youtube_service():
-    yt, pid, _ = get_channel_youtube_service("@gurukuladesam2")
+    yt, pid, _ = get_channel_youtube_service("@gurukuladesam")
     return yt, pid
 
 
-def mark_gkd2_project_exhausted(pid: str, channel_key: str = "@gurukuladesam2"):
-    cfg = CHANNELS_CONFIG.get(channel_key.lower(), CHANNELS_CONFIG["@gurukuladesam2"])
+def mark_gkd2_project_exhausted(pid: str, channel_key: str = "@gurukuladesam"):
+    cfg = CHANNELS_CONFIG.get(channel_key.lower(), CHANNELS_CONFIG["@gurukuladesam"])
     exhausted = {}
     if cfg["exhausted_file"].exists():
         try:
@@ -247,23 +240,23 @@ def check_status():
     from google.oauth2.credentials import Credentials
 
     print("=" * 75)
-    print(f"📊 CHANNEL STATUS: {TARGET_HANDLE} ({TARGET_CHANNEL_ID})")
+    print(f"📊 CHANNEL STATUS: {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID})")
     print("=" * 75)
 
-    token_files = sorted(GKD2_TOKENS_DIR.glob("token_*.json"))
-    if PRIMARY_GKD2_TOKEN.exists() and PRIMARY_GKD2_TOKEN not in token_files:
-        token_files.insert(0, PRIMARY_GKD2_TOKEN)
+    token_files = sorted(GKD1_TOKENS_DIR.glob("token_*.json"))
+    if PRIMARY_GKD1_TOKEN.exists() and PRIMARY_GKD1_TOKEN not in token_files:
+        token_files.insert(0, PRIMARY_GKD1_TOKEN)
 
     if not token_files:
-        print(f"❌ No dedicated token found for {TARGET_HANDLE} yet.")
-        print("   Run: python tools/authorize_gurukuladesam2.py --authorize")
+        print(f"❌ No dedicated token found for {ORIGINAL_HANDLE} yet.")
+        print("   Run: python tools/authorize_gurukuladesam2.py --authorize --channel @GuruKulaDesam")
         return False
 
     for tf in token_files:
         try:
             creds = Credentials.from_authorized_user_file(str(tf), SCOPES)
             cid, title, handle = verify_token_channel(creds)
-            match_str = "✅ MATCHES @gurukuladesam2" if cid == TARGET_CHANNEL_ID else f"⚠️ MISMATCH ({handle})"
+            match_str = "✅ MATCHES @GuruKulaDesam" if cid == ORIGINAL_CHANNEL_ID else f"⚠️ MISMATCH ({handle})"
             print(f"  • {tf.name}: {title} ({handle} | {cid}) -> {match_str}")
         except Exception as e:
             print(f"  • {tf.name}: ❌ Error ({e})")
@@ -271,9 +264,9 @@ def check_status():
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(description="Authorize and manage OAuth tokens for @GuruKulaDesam & @GuruKulaDesam2")
+    ap = argparse.ArgumentParser(description="Authorize and manage OAuth tokens for @GuruKulaDesam")
     ap.add_argument("--authorize", action="store_true", help="Launch browser OAuth login")
-    ap.add_argument("--channel", type=str, default="@GuruKulaDesam2", help="Channel handle (@GuruKulaDesam or @GuruKulaDesam2)")
+    ap.add_argument("--channel", type=str, default="@GuruKulaDesam", help="Channel handle (@GuruKulaDesam)")
     ap.add_argument("--project", type=str, default=None, help="Specific Google Cloud Project ID to authorize")
     ap.add_argument("--port", type=int, default=8089, help="Local OAuth callback port")
     ap.add_argument("--status", action="store_true", help="Check current token status")

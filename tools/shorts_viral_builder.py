@@ -563,7 +563,7 @@ def build_viral_short_metadata(
     tag_list = [
         sacred_cat["name_ta"], sacred_cat["key"],
         *[t.lstrip("#") for t in all_hashtags],
-        "@GuruKulaDesam", "@GuruKulaDesam2", "GuruKulaDesam", "GuruKulaDesam2",
+        "@GuruKulaDesam", "GuruKulaDesam",
         "Guru Kula Desam", "Tamil Devotional Songs",
         "Tamil Panchangam Today", "Nalla Neram Today", ta_title[:30], en_title[:30]
     ]
