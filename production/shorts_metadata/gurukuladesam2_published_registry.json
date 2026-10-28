@@ -1,0 +1,60 @@
+{
+  "channel_id": "UCGUmNzaV_OUFbsNdHJQtaNQ",
+  "channel_handle": "@gurukuladesam2",
+  "parent_channel_handle": "@guru-kula-desam",
+  "published_shorts": {
+    "-L3VXkM2MTY": {
+      "youtube_short_id": "QWj6z4qXaqU",
+      "short_url": "https://youtube.com/shorts/QWj6z4qXaqU",
+      "title": "📖 நன்னெறி — கந்தர் அநுபூதி: உருவாய் அருவாய் II | Kandhar Anuboothi: Uruvaai Aruvaai II #Shorts",
+      "deity": "murugan",
+      "sacred_category": "📖 நன்னெறி",
+      "panchangam_occasion": "ஐப்பசி கார்த்திகை விரதம் | KRITTIKA MURUGAN",
+      "parent_video_url": "https://www.youtube.com/watch?v=-L3VXkM2MTY",
+      "uploaded_at": "2026-10-28T09:55:50.591687+05:30",
+      "scheduled_for": null,
+      "status": "public"
+    },
+    "AW4cljBWy2w": {
+      "youtube_short_id": "EhoFH_-N4lw",
+      "short_url": "https://youtube.com/shorts/EhoFH_-N4lw",
+      "title": "📖 நற்பண்பு — விநாயகர் நான்மணிமாலை: பாலும் தெளிதேனும் #Shorts",
+      "deity": "vinayagar",
+      "sacred_category": "📖 நற்பண்பு",
+      "panchangam_occasion": "ஐப்பசி கார்த்திகை விரதம் | KRITTIKA MURUGAN",
+      "parent_video_url": "https://www.youtube.com/watch?v=kGVcGIlE8IY",
+      "uploaded_at": "2026-10-28T09:56:07.119604+05:30",
+      "scheduled_for": "2026-10-28T12:00:00+05:30",
+      "status": "scheduled"
+    },
+    "-unILRjNLHQ": {
+      "youtube_short_id": "lGTIGx3YMcY",
+      "short_url": "https://youtube.com/shorts/lGTIGx3YMcY",
+      "title": "📖 நன்னெறி — திருவருட்பா: சிவ சுப்ரமணியர் திருவிருத்தம் #Shorts",
+      "deity": "murugan",
+      "panchangam_occasion": "🐓 ஐப்பசி கார்த்திகை விரதம் | KRITTIKA MURUGAN",
+      "parent_video_url": "https://www.youtube.com/watch?v=VYUqpmVHjdc",
+      "uploaded_at": "2026-10-28T09:21:26.360077+05:30",
+      "scheduled_for": "2026-10-28T18:00:00+05:30",
+      "status": "scheduled",
+      "sacred_category": "📖 நன்னெறி"
+    },
+    "Lki_Y8OSljs": {
+      "youtube_short_id": "L0Wc1paDzOQ",
+      "short_url": "https://youtube.com/shorts/L0Wc1paDzOQ",
+      "title": "📖 நற்துணை — விநாயகர் துதி: கண நாதா ஓம் (Symphony) #Shorts",
+      "deity": "vinayagar",
+      "panchangam_occasion": "🐘 சங்கடஹர சதுர்த்தி வழிபாடு | SANKATAHARA CHATURTHI",
+      "parent_video_url": "https://www.youtube.com/watch?v=YOYCCthqAEo",
+      "uploaded_at": "2026-10-28T09:22:35.701718+05:30",
+      "scheduled_for": "2026-10-29T06:00:00+05:30",
+      "status": "scheduled",
+      "sacred_category": "📖 நற்துணை"
+    }
+  },
+  "scheduled_slots": [
+    "2026-10-28T12:00:00+05:30",
+    "2026-10-28T18:00:00+05:30",
+    "2026-10-29T06:00:00+05:30"
+  ]
+}

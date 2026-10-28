@@ -1,0 +1,93 @@
+name: Autonomous @gurukuladesam2 Panchangam Shorts Publisher
+
+on:
+  schedule:
+    # Runs daily at 00:05 UTC (05:35 AM IST) and 07:05 UTC (12:35 PM IST, right after YouTube quota reset!)
+    - cron: '5 0,7 * * *'
+  workflow_dispatch:
+    inputs:
+      schedule_days:
+        description: 'Number of days of Shorts (3x/day) to build and schedule'
+        required: false
+        default: '1'
+        type: string
+      publish_now:
+        description: 'Number of Shorts to publish immediately as Public (optional)'
+        required: false
+        default: '0'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish_shorts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install FFmpeg (with HarfBuzz/FreeType) & Python Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-noto-core fonts-noto-extra libharfbuzz0b
+          python -m pip install --upgrade pip
+          pip install google-api-python-client google-auth-oauthlib google-auth-httplib2 Pillow
+
+      - name: Restore @gurukuladesam2 OAuth Token from GitHub Secrets
+        env:
+          GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
+        run: |
+          mkdir -p data/credentials/tokens_gurukuladesam2
+          printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/token_gurukuladesam2.json
+          printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam2/token_440375337189.json
+
+      - name: Cache & Download Production Audio & Authentic Deity Video Scenes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p production/audio production/google_flow_renders renders/shorts_gurukuladesam2
+          gh release download v1.0-assets -p "audios_batch1.zip" -p "audios_batch2.zip" -p "authentic_deity_scenes.zip" --clobber
+          unzip -q -o audios_batch1.zip -d .
+          unzip -q -o audios_batch2.zip -d .
+          unzip -q -o authentic_deity_scenes.zip -d .
+          rm -f audios_batch1.zip audios_batch2.zip authentic_deity_scenes.zip
+
+      - name: Display 7-Day Tamil Panchangam & Timings Forecast
+        run: |
+          python tools/tamil_panchangam_engine.py
+
+      - name: Build & Schedule Panchangam-Aligned Shorts to @gurukuladesam2
+        run: |
+          PUB_NOW="${{ github.event.inputs.publish_now || '0' }}"
+          SCHED_DAYS="${{ github.event.inputs.schedule_days || '1' }}"
+          if [ "$PUB_NOW" != "0" ] && [ -n "$PUB_NOW" ]; then
+            python tools/shorts_autonomous_daemon.py --publish-now "$PUB_NOW"
+          fi
+          if [ "$SCHED_DAYS" != "0" ] && [ -n "$SCHED_DAYS" ]; then
+            python tools/shorts_autonomous_daemon.py --schedule-days "$SCHED_DAYS"
+          fi
+
+      - name: Commit & Push Updated Published Shorts Registry
+        run: |
+          git config --global user.name "Guru Kula Desam Autonomous Bot"
+          git config --global user.email "bot@gurukuladesam.org"
+          git add production/shorts_metadata/gurukuladesam2_published_registry.json
+          if [ -n "$(git status --porcelain production/shorts_metadata/gurukuladesam2_published_registry.json)" ]; then
+            git commit -m "chore(shorts): update @gurukuladesam2 published registry [skip ci]"
+            git pull --rebase origin HEAD
+            git push origin HEAD:master
+            git push origin HEAD:main || true
+          else
+            echo "No registry changes to commit."
+          fi
