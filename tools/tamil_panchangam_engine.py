@@ -75,7 +75,15 @@ SACRED_6_CATEGORIES = {
         "name_en": "Narseyal — Auspicious Worship & Action",
         "desc_ta": "விரத நாட்கள் மற்றும் புண்ணிய காலங்களில் செய்யும் நற்செயல்",
     },
+    "narsinthanai": {
+        "key": "narsinthanai",
+        "title": "📖 நற்சிந்தனை",
+        "name_ta": "நற்சிந்தனை",
+        "name_en": "Narsinthanai — Pure Divine Reflection & Meditation",
+        "desc_ta": "தெய்வீகப் பாடல்களைக் கேட்டு உள்ளம் தெளியும் நற்சிந்தனை மற்றும் தியானம்",
+    },
 }
+SACRED_7_CATEGORIES = SACRED_6_CATEGORIES
 
 TAMIL_MONTHS = [
     ("சித்திரை", "Chithirai"),      # 0: Aries (Mesham)
@@ -356,10 +364,13 @@ def classify_sacred_category(deity_key: str, meta_entry: dict, panchangam_info: 
             return SACRED_6_CATEGORIES["narseyal"]
         return SACRED_6_CATEGORIES["nanneri"]
 
+    if any(w in title_text for w in ("சிந்தனை", "தியான", "அறிவு", "மெய்யுணர்", "நினை", "உள்ளம்", "நெஞ்ச", "அருட்பெருஞ்ஜோதி")):
+        return SACRED_6_CATEGORIES["narsinthanai"]
+
     if deity_key == "vallalar" or "திருவருட்பா" in title_text:
         if any(w in title_text for w in ("அருள்", "கருணை", "ஜீவ", "அன்பு", "தயவு")):
             return SACRED_6_CATEGORIES["narpanbu"]
-        return SACRED_6_CATEGORIES["nanneri"]
+        return SACRED_6_CATEGORIES["narsinthanai"]
 
     if any(w in title_text for w in ("அநுபூதி", "அலங்காரம்", "ஞான", "மெய்", "நான்மணிமாலை")):
         return SACRED_6_CATEGORIES["nanneri"] if "அநுபூதி" in title_text else SACRED_6_CATEGORIES["narpanbu"]
