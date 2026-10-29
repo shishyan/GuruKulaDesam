@@ -16,6 +16,11 @@ on:
         required: false
         default: '0'
         type: string
+      channel:
+        description: 'Optional target channel filter (@GuruKulaDesam or @GuruKulaDesam2)'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: write
@@ -74,15 +79,19 @@ jobs:
         run: |
           python tools/tamil_panchangam_engine.py
 
-      - name: Build & Schedule Panchangam-Aligned Shorts to @GuruKulaDesam
+      - name: Build & Schedule Panchangam-Aligned Shorts to @GuruKulaDesam & @GuruKulaDesam2
         run: |
           PUB_NOW="${{ github.event.inputs.publish_now || '0' }}"
           SCHED_DAYS="${{ github.event.inputs.schedule_days || '1' }}"
+          CH_ARG=""
+          if [ -n "${{ github.event.inputs.channel }}" ]; then
+            CH_ARG="--channel ${{ github.event.inputs.channel }}"
+          fi
           if [ "$PUB_NOW" != "0" ] && [ -n "$PUB_NOW" ]; then
-            python tools/shorts_autonomous_daemon.py --publish-now "$PUB_NOW"
+            python tools/shorts_autonomous_daemon.py --publish-now "$PUB_NOW" $CH_ARG
           fi
           if [ "$SCHED_DAYS" != "0" ] && [ -n "$SCHED_DAYS" ]; then
-            python tools/shorts_autonomous_daemon.py --schedule-days "$SCHED_DAYS"
+            python tools/shorts_autonomous_daemon.py --schedule-days "$SCHED_DAYS" $CH_ARG
           fi
 
       - name: Commit & Push Updated Published Shorts Registry

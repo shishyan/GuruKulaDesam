@@ -287,15 +287,20 @@ def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None, chan
     return None
 
 
-def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: str = None):
+def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: str = None, channel_filter: str = None):
     reg = load_published_registry()
     published_map = reg.get("published_shorts", {})
     used_ids = set(published_map.keys())
 
     slots = get_next_schedule_slots(count, reg) if schedule_mode else [datetime.now(IST)] * count
+    all_channels = (("@gurukuladesam", ORIGINAL_HANDLE), ("@gurukuladesam2", TARGET_HANDLE))
+    if channel_filter:
+        active_channels = tuple((k, h) for k, h in all_channels if k == channel_filter.lower() or h.lower() == channel_filter.lower())
+    else:
+        active_channels = all_channels
 
     print("=" * 95)
-    print(f"🕉️  GURUKULADESAM 7-PILLAR ECOSYSTEM — SHORTS PIPELINE ({count} Slots -> {count * 2} Unique Shorts)")
+    print(f"🕉️  GURUKULADESAM 7-PILLAR ECOSYSTEM — SHORTS PIPELINE ({count} Slots -> {count * len(active_channels)} Unique Shorts)")
     print(f"📺 1. குரு குல தேசம் | நெறி தவறாமை     >> {ORIGINAL_HANDLE} (நற்செய்கை — Virtuous Shorts)")
     print(f"📺 2. குரு குல தேசம் | நன்றி மறவாமை    >> {TARGET_HANDLE} (நற்பண்பு — Devotional Shorts)")
     print(f"🏛️  3. குரு குல தேசம் | ஒழுக்கம் பிழையாமை >> @Guru-Kula-Desam (நற்குணம் — Master Video Channel)")
@@ -304,11 +309,14 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
     print("=" * 95)
 
     completed = 0
-    for slot_dt in slots:
+    for slot_idx, slot_dt in enumerate(slots):
         slot_iso = slot_dt.isoformat() if schedule_mode else None
         slot_any_uploaded = False
 
-        for ch_key, ch_hnd in (("@gurukuladesam", ORIGINAL_HANDLE), ("@gurukuladesam2", TARGET_HANDLE)):
+        # In immediate publish mode, vary the synthetic hour (6, 11, 16, 20) so alternating pillars (Thirukkural + Vallalar) are picked!
+        pick_dt = slot_dt if schedule_mode else slot_dt.replace(hour=DAILY_IST_SLOTS[slot_idx % len(DAILY_IST_SLOTS)][0])
+
+        for ch_key, ch_hnd in active_channels:
             # Verify channel token is available BEFORE rendering a 35s Short for this channel
             try:
                 get_channel_youtube_service(ch_key)
@@ -316,7 +324,7 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
                 print(f"ℹ️ Skipping {ch_hnd} for slot {slot_dt.strftime('%Y-%m-%d %I:%M %p IST')} (token not yet authorized locally): {e}")
                 continue
 
-            track_item, panchangam = pick_track_for_slot(slot_dt, used_ids, forced_deity=deity_filter, channel_key=ch_key)
+            track_item, panchangam = pick_track_for_slot(pick_dt, used_ids, forced_deity=deity_filter, channel_key=ch_key)
             tid = track_item["track_id"]
             used_ids.add(tid)
 
@@ -473,6 +481,7 @@ if __name__ == "__main__":
     ap.add_argument("--publish-now", type=int, default=0, help="Build & immediately publish N Shorts live to @gurukuladesam2")
     ap.add_argument("--schedule-days", type=int, default=0, help="Build & schedule N days of Shorts (4 per day at 6AM, 11AM, 4PM, 8PM IST)")
     ap.add_argument("--deity", type=str, default=None, help="Override deity filter if desired")
+    ap.add_argument("--channel", type=str, default=None, help="Target specific channel (@GuruKulaDesam or @GuruKulaDesam2)")
     ap.add_argument("--daemon", action="store_true", help="Run continuous 24/7 autonomous daemon")
     args = ap.parse_args()
 
@@ -481,9 +490,9 @@ if __name__ == "__main__":
     elif args.prebuild > 0:
         prebuild_panchangam_queue(args.prebuild, deity_filter=args.deity)
     elif args.publish_now > 0:
-        run_batch_pipeline(args.publish_now, schedule_mode=False, deity_filter=args.deity)
+        run_batch_pipeline(args.publish_now, schedule_mode=False, deity_filter=args.deity, channel_filter=args.channel)
     elif args.schedule_days > 0:
-        run_batch_pipeline(args.schedule_days * 4, schedule_mode=True, deity_filter=args.deity)
+        run_batch_pipeline(args.schedule_days * 4, schedule_mode=True, deity_filter=args.deity, channel_filter=args.channel)
     elif args.daemon:
         print(f"🔄 Starting 24/7 Autonomous Panchangam Daemon for {TARGET_HANDLE}...")
         while True:
