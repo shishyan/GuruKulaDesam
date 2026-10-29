@@ -1,4 +1,4 @@
-name: Autonomous @GuruKulaDesam Panchangam Shorts Publisher
+name: Autonomous @GuruKulaDesam & @GuruKulaDesam2 Panchangam Shorts Publisher (8 Unique/Day)
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       schedule_days:
-        description: 'Number of days of Shorts (4x/day) to build and schedule'
+        description: 'Number of days of Shorts (8 unique/day: 4 on @GuruKulaDesam + 4 on @GuruKulaDesam2) to schedule'
         required: false
         default: '1'
         type: string
@@ -44,14 +44,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-api-python-client google-auth-oauthlib google-auth-httplib2 Pillow
 
-      - name: Restore @GuruKulaDesam OAuth Token from GitHub Secrets
+      - name: Restore @GuruKulaDesam & @GuruKulaDesam2 OAuth Tokens from GitHub Secrets
         env:
           GURUKULADESAM_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN }}
+          GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
         run: |
-          mkdir -p data/credentials/tokens_gurukuladesam
+          mkdir -p data/credentials/tokens_gurukuladesam data/credentials/tokens_gurukuladesam2
           if [ -n "$GURUKULADESAM_OAUTH_TOKEN" ]; then
             printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/token_gurukuladesam.json
             printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam/token_839236964216.json
+          fi
+          if [ -n "$GURUKULADESAM2_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/token_gurukuladesam2.json
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam2/token_839236964216.json
           fi
 
       - name: Cache & Download Production Audio & Authentic Deity Video Scenes

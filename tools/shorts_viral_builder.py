@@ -361,11 +361,12 @@ def build_vertical_drawtext_filters(
     clip_start: float,
     clip_dur: float,
     panchangam_info: dict | None = None,
+    brand_handle: str = "@GuruKulaDesam",
 ) -> list[str]:
     """
     Strict 15% Header / 75% Content / 10% Footer layout (1080x1920):
     - Top 15% Header (Y=0..288, 288px):
-      * Line 1 (Y=96): `Guru Kula Desam`
+      * Line 1 (Y=96): `@GuruKulaDesam` or `@GuruKulaDesam2`
       * Line 2 (Y=168): One-liner song name (`{sacred_cat['name_ta']} — {short_ta}`)
     - Middle 75% Content (Y=288..1728, 1440px): Pure unobstructed deity video (full 1080px width, zero borders)
     - Bottom 10% Footer (Y=1728..1920, 192px): Clean breathing space (no parent channel ads, no clutter)
@@ -396,8 +397,8 @@ def build_vertical_drawtext_filters(
 
     filters = []
 
-    # 1. Top Header Brand Phrase: "@GuruKulaDesam" (Y=96, no border, no background box)
-    f_brand = write_card("top_brand", "@GuruKulaDesam")
+    # 1. Top Header Brand Phrase: "@GuruKulaDesam" or "@GuruKulaDesam2" (Y=96, no border, no background box)
+    f_brand = write_card("top_brand", brand_handle)
     filters.append(
         f"drawtext=fontfile='{f_ta_posix}':textfile='{f_brand}':text_shaping=1:"
         f"fontcolor=#FFE040:fontsize=36:x=(w-text_w)/2:y=96"
@@ -563,7 +564,7 @@ def build_viral_short_metadata(
     tag_list = [
         sacred_cat["name_ta"], sacred_cat["key"],
         *[t.lstrip("#") for t in all_hashtags],
-        "@GuruKulaDesam", "GuruKulaDesam",
+        "@GuruKulaDesam", "@GuruKulaDesam2", "GuruKulaDesam", "GuruKulaDesam2",
         "Guru Kula Desam", "Tamil Devotional Songs",
         "Tamil Panchangam Today", "Nalla Neram Today", ta_title[:30], en_title[:30]
     ]
@@ -589,6 +590,7 @@ def build_short_for_track(
     target_dt: datetime | None = None,
     duration_sec: float = DEFAULT_SHORT_DURATION,
     force_rebuild: bool = False,
+    brand_handle: str = "@GuruKulaDesam",
 ) -> dict:
     meta_db = json.loads(METADATA_DB.read_text(encoding="utf-8")) if METADATA_DB.exists() else {}
     meta_entry = meta_db.get(track_id, {})
@@ -671,6 +673,7 @@ def build_short_for_track(
         clip_start=start_sec,
         clip_dur=clip_dur,
         panchangam_info=panchangam_info,
+        brand_handle=brand_handle,
     )
 
     # Step 4: Fast 1080x1920 @ 24fps Composite (15% Header = 288px, 75% Content = 1440px, 10% Footer = 192px; No Background Image, No Borders)

@@ -37,8 +37,8 @@ GKD1_EXHAUSTED_FILE = ROOT / "data" / "credentials" / "quota_exhausted_gurukulad
 GKD2_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 GKD1_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 
-TARGET_CHANNEL_ID = "UCz4dzcjahGaIb5dZCv32AmA"
-TARGET_HANDLE = "@GuruKulaDesam"
+TARGET_CHANNEL_ID = "UCGUmNzaV_OUFbsNdHJQtaNQ"
+TARGET_HANDLE = "@GuruKulaDesam2"
 
 ORIGINAL_CHANNEL_ID = "UCz4dzcjahGaIb5dZCv32AmA"
 ORIGINAL_HANDLE = "@GuruKulaDesam"
@@ -51,6 +51,13 @@ CHANNELS_CONFIG = {
         "primary_token": PRIMARY_GKD1_TOKEN,
         "exhausted_file": GKD1_EXHAUSTED_FILE,
     },
+    "@gurukuladesam2": {
+        "channel_id": TARGET_CHANNEL_ID,
+        "handle": TARGET_HANDLE,
+        "tokens_dir": GKD2_TOKENS_DIR,
+        "primary_token": PRIMARY_GKD2_TOKEN,
+        "exhausted_file": GKD2_EXHAUSTED_FILE,
+    },
 }
 
 SCOPES = [
@@ -60,7 +67,7 @@ SCOPES = [
 ]
 
 # Known active OAuth projects first (GuruKulaDesam project 839236964216)
-ACTIVE_PROJECT_IDS = ["839236964216"]
+ACTIVE_PROJECT_IDS = ["839236964216", "440375337189", "472322435541"]
 
 
 def extract_project_id(filename: str) -> str:
@@ -239,27 +246,28 @@ def mark_gkd2_project_exhausted(pid: str, channel_key: str = "@gurukuladesam"):
 def check_status():
     from google.oauth2.credentials import Credentials
 
-    print("=" * 75)
-    print(f"📊 CHANNEL STATUS: {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID})")
-    print("=" * 75)
+    for ch_key, cfg in CHANNELS_CONFIG.items():
+        print("=" * 75)
+        print(f"📊 CHANNEL STATUS: {cfg['handle']} ({cfg['channel_id']})")
+        print("=" * 75)
 
-    token_files = sorted(GKD1_TOKENS_DIR.glob("token_*.json"))
-    if PRIMARY_GKD1_TOKEN.exists() and PRIMARY_GKD1_TOKEN not in token_files:
-        token_files.insert(0, PRIMARY_GKD1_TOKEN)
+        token_files = sorted(cfg["tokens_dir"].glob("token_*.json"))
+        if cfg["primary_token"].exists() and cfg["primary_token"] not in token_files:
+            token_files.insert(0, cfg["primary_token"])
 
-    if not token_files:
-        print(f"❌ No dedicated token found for {ORIGINAL_HANDLE} yet.")
-        print("   Run: python tools/authorize_gurukuladesam2.py --authorize --channel @GuruKulaDesam")
-        return False
+        if not token_files:
+            print(f"❌ No dedicated token found for {cfg['handle']} yet.")
+            print(f"   Run: python tools/authorize_gurukuladesam2.py --authorize --channel {cfg['handle']}")
+            continue
 
-    for tf in token_files:
-        try:
-            creds = Credentials.from_authorized_user_file(str(tf), SCOPES)
-            cid, title, handle = verify_token_channel(creds)
-            match_str = "✅ MATCHES @GuruKulaDesam" if cid == ORIGINAL_CHANNEL_ID else f"⚠️ MISMATCH ({handle})"
-            print(f"  • {tf.name}: {title} ({handle} | {cid}) -> {match_str}")
-        except Exception as e:
-            print(f"  • {tf.name}: ❌ Error ({e})")
+        for tf in token_files:
+            try:
+                creds = Credentials.from_authorized_user_file(str(tf), SCOPES)
+                cid, title, handle = verify_token_channel(creds)
+                match_str = f"✅ MATCHES {cfg['handle']}" if cid == cfg["channel_id"] else f"⚠️ MISMATCH ({handle})"
+                print(f"  • {tf.name}: {title} ({handle} | {cid}) -> {match_str}")
+            except Exception as e:
+                print(f"  • {tf.name}: ❌ Error ({e})")
     return True
 
 

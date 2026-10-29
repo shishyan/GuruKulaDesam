@@ -252,43 +252,55 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
     slots = get_next_schedule_slots(count, reg) if schedule_mode else [datetime.now(IST)] * count
 
     print("=" * 80)
-    print(f"🕉️  @GURUKULADESAM PANCHANGAM SHORTS PIPELINE ({count} Shorts)")
-    print(f"📺 Target Channel : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID})")
-    print(f"🗓️  Publishing Mode: {'Scheduled 4x/Day (6AM, 11AM, 4PM, 8PM IST)' if schedule_mode else 'Immediate Public Release'}")
+    print(f"🕉️  GURUKULADESAM DUAL-CHANNEL UNIQUE SHORTS PIPELINE ({count} Slots -> {count * 2} Unique Shorts)")
+    print(f"📺 Shorts Channel 1: {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) — 4 Unique Shorts/Day")
+    print(f"📺 Shorts Channel 2: {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) — 4 Different Unique Shorts/Day")
+    print(f"🏛️  Long-Form Master: @Guru-Kula-Desam (UCPqB1A_WzpLJec6q69BOO3Q)")
+    print(f"🗓️  Publishing Mode : {'Scheduled 8 Unique Shorts/Day (4 per channel at 6AM, 11AM, 4PM, 8PM IST)' if schedule_mode else 'Immediate Public Release'}")
     print("=" * 80)
 
     completed = 0
     for slot_dt in slots:
-        track_item, panchangam = pick_track_for_slot(slot_dt, used_ids, forced_deity=deity_filter)
-        tid = track_item["track_id"]
-        used_ids.add(tid)
+        slot_iso = slot_dt.isoformat() if schedule_mode else None
+        slot_any_uploaded = False
 
-        try:
-            meta = build_short_for_track(tid, target_dt=slot_dt)
-            yt_vid_id = upload_short_via_api(meta, publish_at_dt=slot_dt if schedule_mode else None, channel_key="@gurukuladesam")
-            if yt_vid_id:
-                slot_iso = slot_dt.isoformat() if schedule_mode else None
-                published_map[tid] = {
-                    "youtube_short_id": yt_vid_id,
-                    "gurukuladesam_id": yt_vid_id,
-                    "short_url": f"https://youtube.com/shorts/{yt_vid_id}",
-                    "title": meta["title"],
-                    "deity": meta["deity"],
-                    "panchangam_occasion": panchangam["occasion_badge_ta"],
-                    "uploaded_at": datetime.now(IST).isoformat(),
-                    "scheduled_for": slot_iso,
-                    "status": "scheduled" if schedule_mode else "public",
-                }
-                if slot_iso:
-                    reg.setdefault("scheduled_slots", []).append(slot_iso)
-                reg["published_shorts"] = published_map
-                save_published_registry(reg)
-                completed += 1
-        except Exception as e:
-            print(f"❌ Pipeline stopped/errored on track {tid}: {e}")
-            break
+        for ch_key, ch_hnd in (("@gurukuladesam", ORIGINAL_HANDLE), ("@gurukuladesam2", TARGET_HANDLE)):
+            track_item, panchangam = pick_track_for_slot(slot_dt, used_ids, forced_deity=deity_filter)
+            tid = track_item["track_id"]
+            used_ids.add(tid)
 
-    print(f"\n🏁 Batch Complete: {completed}/{count} Shorts published/scheduled to {ORIGINAL_HANDLE}.")
+            try:
+                meta = build_short_for_track(tid, target_dt=slot_dt, brand_handle=ch_hnd)
+                yt_vid_id = upload_short_via_api(meta, publish_at_dt=slot_dt if schedule_mode else None, channel_key=ch_key)
+                if yt_vid_id:
+                    published_map[tid] = {
+                        "youtube_short_id": yt_vid_id,
+                        "channel_handle": ch_hnd,
+                        "short_url": f"https://youtube.com/shorts/{yt_vid_id}",
+                        "title": meta["title"],
+                        "deity": meta["deity"],
+                        "panchangam_occasion": panchangam["occasion_badge_ta"],
+                        "uploaded_at": datetime.now(IST).isoformat(),
+                        "scheduled_for": slot_iso,
+                        "status": "scheduled" if schedule_mode else "public",
+                    }
+                    reg["published_shorts"] = published_map
+                    save_published_registry(reg)
+                    completed += 1
+                    slot_any_uploaded = True
+                else:
+                    # Release track_id back to pool if channel token wasn't available/uploaded
+                    used_ids.discard(tid)
+            except Exception as e:
+                print(f"❌ Error on {ch_hnd} track {tid}: {e}")
+                used_ids.discard(tid)
+
+        if slot_iso and slot_any_uploaded:
+            if slot_iso not in reg.setdefault("scheduled_slots", []):
+                reg["scheduled_slots"].append(slot_iso)
+            save_published_registry(reg)
+
+    print(f"\n🏁 Batch Complete: {completed}/{count * 2} Unique Shorts published/scheduled across {ORIGINAL_HANDLE} & {TARGET_HANDLE}.")
 
 
 def prebuild_panchangam_queue(count: int, deity_filter: str = None):
@@ -319,10 +331,11 @@ def print_dashboard():
     now_panchangam = get_auspicious_alignment_for_datetime(datetime.now(IST))
 
     print("=" * 85)
-    print(f"📈 @GURUKULADESAM2 AUTONOMOUS SHORTS ENGINE — STATUS & PANCHANGAM DASHBOARD")
+    print(f"📈 @GURUKULADESAM & @GURUKULADESAM2 AUTONOMOUS SHORTS ENGINE — DASHBOARD (8 SHORTS/DAY)")
     print("=" * 85)
-    print(f"  • Target Shorts Channel  : {TARGET_HANDLE} ({TARGET_CHANNEL_ID})")
-    print(f"  • Parent Master Channel  : @guru-kula-desam (UCPqB1A_WzpLJec6q69BOO3Q)")
+    print(f"  • Shorts Channel 1       : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) — 4 Unique Shorts/Day")
+    print(f"  • Shorts Channel 2       : {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) — 4 Unique Shorts/Day")
+    print(f"  • Master Video Channel   : @Guru-Kula-Desam (UCPqB1A_WzpLJec6q69BOO3Q)")
     print(f"  • Today's Panchangam     : {now_panchangam['tamil_month_ta']} {now_panchangam['tamil_day']} | {now_panchangam['weekday_ta']} | {now_panchangam['tithi_name']} | {now_panchangam['nakshatra_ta']}")
     print(f"  • Today's Sacred Occasion: {', '.join(now_panchangam['special_events'])} ({now_panchangam['occasion_badge_ta']})")
     print(f"  • Today's 4 Slot Deities : 6 AM: [{now_panchangam['slot_deities'][6].upper()}] | 11 AM: [{now_panchangam['slot_deities'][11].upper()}] | 4 PM: [{now_panchangam['slot_deities'][16].upper()}] | 8 PM: [{now_panchangam['slot_deities'][20].upper()}]")
