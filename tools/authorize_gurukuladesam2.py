@@ -123,8 +123,8 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
 ]
 
-# Known active OAuth projects first (GuruKulaDesam project 839236964216)
-ACTIVE_PROJECT_IDS = ["839236964216", "440375337189", "472322435541"]
+# Known active OAuth projects first (3 live verified projects: guru-kula-desam, home-manager-2026, lotusnaga)
+ACTIVE_PROJECT_IDS = ["839236964216", "472322435541", "942198183044"]
 
 
 def extract_project_id(filename: str) -> str:
@@ -215,6 +215,11 @@ def authorize_gurukuladesam2(project_id: str = None, port: int = 8089, channel_k
     print(f"   • Handle : {handle}")
     print(f"   • ID     : {cid}")
 
+    if cid != target_cid:
+        print(f"\n⚠️ WARNING: The authorized channel ID is {cid} ({handle}), not {target_cid} ({target_hnd}).")
+        print(f"   Please re-run and select {target_hnd}!")
+        return False
+
     token_json = creds.to_json()
     project_token_path = cfg["tokens_dir"] / f"token_{pid}.json"
     project_token_path.write_text(token_json, encoding="utf-8")
@@ -222,11 +227,6 @@ def authorize_gurukuladesam2(project_id: str = None, port: int = 8089, channel_k
 
     print(f"💾 Saved token to: {cfg['primary_token']}")
     print(f"💾 Saved pool token to: {project_token_path}")
-
-    if cid != target_cid:
-        print(f"\n⚠️ WARNING: The authorized channel ID is {cid} ({handle}), not {target_cid} ({target_hnd}).")
-        print(f"   Please re-run and select {target_hnd}!")
-        return False
 
     print(f"\n🎉 SUCCESS! {target_hnd} ({target_cid}) is now authorized for autonomous Shorts publishing!")
     return True
@@ -250,8 +250,8 @@ def get_channel_youtube_service(channel_key: str = "@gurukuladesam"):
             exhausted = {}
 
     token_files = sorted(cfg["tokens_dir"].glob("token_*.json"))
-    if cfg["primary_token"].exists() and cfg["primary_token"] not in token_files:
-        token_files.insert(0, cfg["primary_token"])
+    if not token_files and cfg["primary_token"].exists():
+        token_files = [cfg["primary_token"]]
 
     if not token_files:
         raise RuntimeError(
@@ -261,6 +261,13 @@ def get_channel_youtube_service(channel_key: str = "@gurukuladesam"):
 
     for tf in token_files:
         pid = tf.stem.replace("token_", "")
+        try:
+            raw_tok = json.loads(tf.read_text(encoding="utf-8"))
+            cid_prefix = raw_tok.get("client_id", "").split("-")[0]
+            if cid_prefix.isdigit():
+                pid = cid_prefix
+        except Exception:
+            pass
         if pid in exhausted:
             if time.time() - exhausted[pid].get("exhausted_at", 0) < 12 * 3600:
                 continue
