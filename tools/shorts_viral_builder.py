@@ -72,7 +72,7 @@ SHORTS_TEMP_DIR.mkdir(parents=True, exist_ok=True)
 # 9:16 Vertical Master Constants
 W, H = 1080, 1920
 FPS = 24
-DEFAULT_SHORT_DURATION = 45.0
+DEFAULT_SHORT_DURATION = 35.0
 
 # Verified Authentic Deity Visual Pools (100% genuine, non-duplicated deity/temple scenes)
 AUTHENTIC_DEITY_SCENE_FOLDERS = {
@@ -490,10 +490,15 @@ def build_viral_short_metadata(
 
     # Title starts with one of the 6 Sacred Tamil Category Titles mandated by user:
     # 📖 நன்னெறி | 📖 நல்லறம் | 📖 நற்பண்பு | 📖 நற்துணை | 📖 நற்சொல் | 📖 நற்செயல்
+    # Always preserve BOTH Tamil and English transliteration inside the 95-char limit for maximum search & Shorts shelf discovery!
     cat_prefix = sacred_cat["title"]  # e.g., "📖 நற்துணை"
     short_title = f"{cat_prefix} — {ta_title} | {en_title} #Shorts"
     if len(short_title) > 95:
-        short_title = f"{cat_prefix} — {ta_title[:52]} #Shorts"
+        ta_short = ta_title.split(":")[-1].strip() if ":" in ta_title else ta_title
+        en_short = en_title.split(":")[-1].strip() if ":" in en_title else en_title
+        short_title = f"{cat_prefix} — {ta_short[:34]} | {en_short[:30]} #Shorts"
+    if len(short_title) > 95:
+        short_title = f"{cat_prefix} — {ta_title[:36]} | {en_title[:28]} #Shorts"
 
     tamil_lyrics = meta_entry.get("tamil_lyrics", "").strip()
     tamil_meaning = meta_entry.get("tamil_meaning", "").strip()
@@ -736,6 +741,12 @@ def list_candidate_tracks(deity_filter: str = None, prioritize_high_energy: bool
 
     candidates = []
     all_ids = set(meta_db.keys()) | set(manifest_tracks.keys())
+    iconic_keywords = (
+        "கந்த சஷ்டி", "kandha sashti", "ஸ்கந்த மந்திரம்", "skanda", "திருப்புகழ்", "thiruppugazh",
+        "கந்தர் அலங்காரம்", "kandhar alangaram", "கந்தர் அநுபூதி", "தேவாரம்", "thevaram",
+        "திருவாசகம்", "thiruvasagam", "விநாயகர் அகவல்", "அபிராமி அந்தாதி", "abhirami",
+        "திருப்பாவை", "thiruppavai", "திருவருட்பா", "thiruvarutpa",
+    )
     for tid in sorted(all_ids):
         meta_entry = meta_db.get(tid, {})
         m_cat = manifest_tracks.get(tid, {}).get("category", "")
@@ -752,15 +763,17 @@ def list_candidate_tracks(deity_filter: str = None, prioritize_high_energy: bool
 
         if has_audio:
             sacred_cat = classify_sacred_category(deity, meta_entry)
-            # Prioritize tracks that have their own dedicated authentic Flow renders first!
-            priority = 0 if has_authentic_flow else (1 if deity in ("murugan", "shiva", "amman", "vinayagar", "vishnu") else 2)
+            raw_title = meta_entry.get("title", manifest_tracks.get(tid, {}).get("title", tid))
+            is_iconic = any(k in raw_title.lower() for k in iconic_keywords)
+            # Prioritize tracks with dedicated authentic Flow renders AND iconic high-demand hymns first!
+            priority = (0 if has_authentic_flow else 2) + (0 if is_iconic else 1)
             candidates.append({
                 "track_id": tid,
                 "deity": deity,
                 "sacred_category": sacred_cat["title"],
                 "priority": priority,
                 "has_authentic_flow": has_authentic_flow,
-                "title": meta_entry.get("title", manifest_tracks.get(tid, {}).get("title", tid)),
+                "title": raw_title,
             })
 
     candidates.sort(key=lambda x: (x["priority"], x["track_id"]))
