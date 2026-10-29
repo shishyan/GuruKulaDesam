@@ -8,7 +8,7 @@ for @gurukuladesam2 ("$1M Challenge" High-Retention & Liturgically Aligned Engin
 Key Features:
 1. 6 Sacred Tamil Category Titles (Mandated by User):
    - Every Short is categorized and titled with one of the 6 sacred pillars:
-     📖 நன்னெறி | 📖 நல்லறம் | 📖 நற்பண்பு | 📖 நற்துணை | 📖 நற்சொல் | 📖 நற்செயல்
+     📖 நன்னெறி | 📖 நல்லறம் | 📖 நற்பண்பு | 📖 நற்துணை | 📖 நற்சொல் | 📖 நற்செய்கை
 2. Exact Tamil Panchangam & Timings (tools/tamil_panchangam_engine.py):
    - Displays exact Tithi & Nakshatra start/end timings (IST), Nalla Neram, Rahu Kalam,
      Yama Gandam, and special Pooja windows (e.g., Krittika Nakshatra timing, Pradosham 4:30-6:00 PM,
@@ -489,7 +489,7 @@ def build_viral_short_metadata(
     en_title = parts[1] if len(parts) > 1 else ta_title
 
     # Title starts with one of the 6 Sacred Tamil Category Titles mandated by user:
-    # 📖 நன்னெறி | 📖 நல்லறம் | 📖 நற்பண்பு | 📖 நற்துணை | 📖 நற்சொல் | 📖 நற்செயல்
+    # 📖 நன்னெறி | 📖 நல்லறம் | 📖 நற்பண்பு | 📖 நற்துணை | 📖 நற்சொல் | 📖 நற்செய்கை
     # Always preserve BOTH Tamil and English transliteration inside the 95-char limit for maximum search & Shorts shelf discovery!
     cat_prefix = sacred_cat["title"]  # e.g., "📖 நற்துணை"
     short_title = f"{cat_prefix} — {ta_title} | {en_title} #Shorts"

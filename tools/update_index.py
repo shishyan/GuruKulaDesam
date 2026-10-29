@@ -217,7 +217,7 @@ INDEX_HTML = """<!DOCTYPE html>
           <a href="books.html?book=narthunai" class="strip-sub-item"><span class="strip-sub-icon">🪔</span><span>4. நற்துணை (Narthunai)</span></a>
           <a href="books.html?book=narchinthanai" class="strip-sub-item"><span class="strip-sub-icon">⚛️</span><span>5. நற்சிந்தனை (Narchinthanai)</span></a>
           <a href="books.html?book=narchol" class="strip-sub-item"><span class="strip-sub-icon">🌸</span><span>6. நற்சொல் (Narchol)</span></a>
-          <a href="books.html?book=narcheyal" class="strip-sub-item"><span class="strip-sub-icon">☀️</span><span>7. நற்செயல் (Narcheyal)</span></a>
+          <a href="books.html?book=narcheyal" class="strip-sub-item"><span class="strip-sub-icon">☀️</span><span>7. நற்செய்கை (Narcheyal)</span></a>
         </div>
       </div>
 
@@ -476,18 +476,18 @@ INDEX_HTML = """<!DOCTYPE html>
           <a href="books.html?book=narchol" class="grade-pill-btn" style="border: 1px solid rgba(236, 72, 153, 0.4) !important;">நற்சொல் நூலைத் திறக்க &rarr;</a>
         </div>
 
-        <!-- 7. நற்செயல் -->
+        <!-- 7. நற்செய்கை -->
         <div class="curriculum-book-card">
           <div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
               <span style="font-size: 1.8rem;">☀️</span>
               <span style="color: #10b981; font-size: 0.76rem; font-weight: 700; text-transform: uppercase;">நூல் 7</span>
             </div>
-            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 5px #000;">7. நற்செயல்</h3>
+            <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; text-shadow: 0 2px 5px #000;">7. நற்செய்கை</h3>
             <div style="font-size: 0.8rem; color: #10b981; font-weight: 600; margin-bottom: 8px;">Practical Dharma &amp; Daily Sadhana</div>
             <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6; text-shadow: 0 1px 4px #000;">பஞ்ச மகா யக்ஞம், மரம் நடுதல், கோயில் உழவாரப் பணி, தாய்நாடு போற்றுதல் &amp; இல்லற சாதனை.</p>
           </div>
-          <a href="books.html?book=narcheyal" class="grade-pill-btn" style="border: 1px solid rgba(16, 185, 129, 0.4) !important;">நற்செயல் நூலைத் திறக்க &rarr;</a>
+          <a href="books.html?book=narcheyal" class="grade-pill-btn" style="border: 1px solid rgba(16, 185, 129, 0.4) !important;">நற்செய்கை நூலைத் திறக்க &rarr;</a>
         </div>
 
       </div>
@@ -584,7 +584,7 @@ INDEX_HTML = """<!DOCTYPE html>
           <li><a href="books.html?book=narthunai">4. நற்துணை (Narthunai)</a></li>
           <li><a href="books.html?book=narchinthanai">5. நற்சிந்தனை (Narchinthanai)</a></li>
           <li><a href="books.html?book=narchol">6. நற்சொல் (Narchol)</a></li>
-          <li><a href="books.html?book=narcheyal">7. நற்செயல் (Narcheyal)</a></li>
+          <li><a href="books.html?book=narcheyal">7. நற்செய்கை (Narcheyal)</a></li>
           <li><a href="higher-studies.html">முதுகலை வேத-நவீன வித்யாபீடம்</a></li>
         </ul>
       </div>

@@ -20,7 +20,7 @@ Capabilities:
    - 📖 நற்பண்பு (Narpanbu — Noble Character / Divine Grace)
    - 📖 நற்துணை (Narthunai — Supreme Divine Companion / Refuge)
    - 📖 நற்சொல் (Narsol — Sacred Hymn / Divine Mantra)
-   - 📖 நற்செயல் (Narseyal — Auspicious Action / Sacred Observance)
+   - 📖 நற்செய்கை (Narseyal — Auspicious Action / Sacred Observance)
 3. Strict Deity & Festival Alignment:
    - Never posts a mismatched deity on a sacred tithi/festival day (e.g., never Vishnu on Shivaratri/Pradosham,
      never Shiva on Vaikunta Ekadashi).
@@ -69,11 +69,25 @@ SACRED_6_CATEGORIES = {
         "desc_ta": "செவிகுளிர உள்ளம் உருகும் தமிழ் மறை நற்சொல்",
     },
     "narseyal": {
-        "key": "narseyal",
-        "title": "📖 நற்செயல்",
-        "name_ta": "நற்செயல்",
-        "name_en": "Narseyal — Auspicious Worship & Action",
-        "desc_ta": "விரத நாட்கள் மற்றும் புண்ணிய காலங்களில் செய்யும் நற்செயல்",
+        "key": "narseigai",
+        "title": "📖 நற்செய்கை",
+        "name_ta": "நற்செய்கை",
+        "name_en": "Narseigai — Righteous Action & Auspicious Conduct",
+        "desc_ta": "நெறி தவறாமை, விரத நாட்கள் மற்றும் புண்ணிய காலங்களில் செய்யும் நற்செய்கை",
+    },
+    "narseigai": {
+        "key": "narseigai",
+        "title": "📖 நற்செய்கை",
+        "name_ta": "நற்செய்கை",
+        "name_en": "Narseigai — Righteous Action & Auspicious Conduct",
+        "desc_ta": "நெறி தவறாமை, விரத நாட்கள் மற்றும் புண்ணிய காலங்களில் செய்யும் நற்செய்கை",
+    },
+    "narkunam": {
+        "key": "narkunam",
+        "title": "📖 நற்குணம்",
+        "name_ta": "நற்குணம்",
+        "name_en": "Narkunam — Pure Virtue & Flawless Discipline",
+        "desc_ta": "ஒழுக்கம் பிழையாமை மற்றும் ஆத்ம சுத்தியுடன் கூடிய நற்குணம்",
     },
     "narsinthanai": {
         "key": "narsinthanai",
@@ -348,7 +362,7 @@ def classify_sacred_category(deity_key: str, meta_entry: dict, panchangam_info: 
       3. 📖 நற்பண்பு (Narpanbu) — Devotional humility, compassion, grace, surrender, bhakti virtues
       4. 📖 நற்துணை (Narthunai) — Divine protection, Kavasam, removing obstacles (Vinayagar / Murugan Vel / Narasimha)
       5. 📖 நற்சொல் (Narsol) — Sacred Vedic/Tamil hymns, Namavali, Thevaram, Thiruvasagam, Thiruppugazh, Pasurams
-      6. 📖 நற்செயல் (Narseyal) — Auspicious vratham/festival worship (Krittika, Sashti, Pradosham, Chaturthi, Ekadashi)
+      6. 📖 நற்செய்கை (Narseyal) — Auspicious vratham/festival worship (Krittika, Sashti, Pradosham, Chaturthi, Ekadashi)
     """
     title_text = f"{meta_entry.get('title', '')} {meta_entry.get('genre', '')} {meta_entry.get('tamil_meaning', '')}".lower()
 

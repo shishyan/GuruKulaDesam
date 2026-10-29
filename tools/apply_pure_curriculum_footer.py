@@ -33,7 +33,7 @@ PURE_CURRICULUM_FOOTER = """  <footer class="site-footer" id="siteFooter">
           <li><a href="books.html?book=narthunai">4. நற்துணை (Narthunai — இறைத் துதி &amp; சரணாகதி)</a></li>
           <li><a href="books.html?book=narchinthanai">5. நற்சிந்தனை (Narchinthanai — விஞ்ஞானம் &amp; தத்துவம்)</a></li>
           <li><a href="books.html?book=narchol">6. நற்சொல் (Narchol — இன்சொல் &amp; கவிதை)</a></li>
-          <li><a href="books.html?book=narcheyal">7. நற்செயல் (Narcheyal — இல்லற தர்மம் &amp; 3 Ds)</a></li>
+          <li><a href="books.html?book=narcheyal">7. நற்செய்கை (Narcheyal — இல்லற தர்மம் &amp; 3 Ds)</a></li>
         </ul>
       </div>
       <div class="footer-col">

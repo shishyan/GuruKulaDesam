@@ -33,14 +33,14 @@ new_resolve_page_context = '''function resolvePageContext() {
     'tharam-3.html': { root: 'பாலப் பருவம் (1-4)', stage: 'தரம் 3', rootLink: 'school.html', title: 'தரம் 3 — 7 ஆசிரமப் பாடநூல்கள்', desc: 'நல்வழி, ஒழுக்கம் & ஆசாரக் கல்வி' },
     'tharam-4.html': { root: 'பாலப் பருவம் (1-4)', stage: 'தரம் 4', rootLink: 'school.html', title: 'தரம் 4 — 7 ஆசிரமப் பாடநூல்கள்', desc: 'கொன்றை வேந்தன் & இல்லற நன்னெறி' },
     'vinayagar.html': { root: 'பாலப் பருவம் (1-4)', stage: 'ஆரம்பக் கல்வித் தெய்வம்', rootLink: 'vinayagar.html', title: 'விநாயகர் அகவல் & மூல கணபதி', desc: 'தரம் 1–3 நற்துணை & நற்சொல் பாடம்' },
-    'murugan.html': { root: 'பாலப் பருவம் (1-4)', stage: 'ஒழுக்க நெறி', rootLink: 'murugan.html', title: 'தமிழ் தெய்வம் முருகன் & கந்த சஷ்டி', desc: 'தரம் 3–7 நற்துணை & நற்செயல் பாடம்' },
+    'murugan.html': { root: 'பாலப் பருவம் (1-4)', stage: 'ஒழுக்க நெறி', rootLink: 'murugan.html', title: 'தமிழ் தெய்வம் முருகன் & கந்த சஷ்டி', desc: 'தரம் 3–7 நற்துணை & நற்செய்கை பாடம்' },
 
     // Stage 2: இளம் பருவம் (Grades 5 - 8 • திருமுறைகள், பண்பாடு & சமூகம்)
     'tharam-5.html': { root: 'இளம் பருவம் (5-8)', stage: 'தரம் 5', rootLink: 'school.html', title: 'தரம் 5 — 7 ஆசிரமப் பாடநூல்கள்', desc: 'திருமுறைகள் & சுற்றந்தழால் தர்மம்' },
     'tharam-6.html': { root: 'இளம் பருவம் (5-8)', stage: 'தரம் 6', rootLink: 'school.html', title: 'தரம் 6 — 7 ஆசிரமப் பாடநூல்கள்', desc: 'சைவ சித்தாந்த ஆரம்ப நெறி & கடமை உணர்வு' },
     'tharam-7.html': { root: 'இளம் பருவம் (5-8)', stage: 'தரம் 7', rootLink: 'school.html', title: 'தரம் 7 — 7 ஆசிரமப் பாடநூல்கள்', desc: 'திருமுறைகள் & நாயன்மார் தியாக வரலாறு' },
     'tharam-8.html': { root: 'இளம் பருவம் (5-8)', stage: 'தரம் 8', rootLink: 'school.html', title: 'தரம் 8 — 7 ஆசிரமப் பாடநூல்கள்', desc: 'பொறையுடைமை, ஆசிரம தர்மம் & ஆலய தத்துவம்' },
-    'panpaadu.html': { root: 'இளம் பருவம் (5-8)', stage: 'பண்பாட்டு நெறி', rootLink: 'panpaadu.html', title: 'தமிழர் பண்பாடு & 12 மாத விழாக்கள்', desc: 'தரம் 6–8 நற்சொல் & நற்செயல் பாடம்' },
+    'panpaadu.html': { root: 'இளம் பருவம் (5-8)', stage: 'பண்பாட்டு நெறி', rootLink: 'panpaadu.html', title: 'தமிழர் பண்பாடு & 12 மாத விழாக்கள்', desc: 'தரம் 6–8 நற்சொல் & நற்செய்கை பாடம்' },
     'vaishnava.html': { root: 'இளம் பருவம் (5-8)', stage: 'பக்தி இலக்கியம்', rootLink: 'vaishnava.html', title: 'அரங்கன் & கிருஷ்ணர் வைணவம்', desc: 'தரம் 2–5 & 7 நற்துணை பாடம்' },
     'sakthi.html': { root: 'இளம் பருவம் (5-8)', stage: 'சக்தி உபாசனை', rootLink: 'sakthi.html', title: 'அம்பிகை சக்தி நெறி & அபிராமி அந்தாதி', desc: 'தரம் 4–8 நற்துணை பாடம்' },
 

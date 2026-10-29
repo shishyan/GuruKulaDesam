@@ -55,8 +55,15 @@ CHANNELS_CONFIG = {
     "@gurukuladesam": {
         "channel_id": ORIGINAL_CHANNEL_ID,
         "handle": ORIGINAL_HANDLE,
+        "channel_title": "குரு குல தேசம் | நெறி தவறாமை",
+        "category_ta": "நற்செய்கை",
         "pillar": "virtuous",
-        "role_desc": "Virtuous Shorts (Thirukkural, Vallalar Arutperunjothi & Universal Aram)",
+        "role_desc": "குரு குல தேசம் | நெறி தவறாமை >> @GuruKulaDesam (நற்செய்கை — Virtuous Shorts: Thirukkural, Vallalar & Universal Aram)",
+        "channel_description": (
+            "குரு குல தேசம் | நெறி தவறாமை — 📖 நற்செய்கை (Narseigai)\n\n"
+            "திருக்குறள், வள்ளலார் அருட்பெருஞ்ஜோதி மற்றும் அறநெறிச் சிந்தனைகள் அடங்கிய நற்செய்கை Shorts அலைவரிசை.\n"
+            "Sacred Tamil Virtuous Shorts Channel dedicated to Narseigai (நற்செய்கை — Righteous Action, Thirukkural, Vallalar Thiruvarutpa & Universal Dharma)."
+        ),
         "tokens_dir": GKD1_TOKENS_DIR,
         "primary_token": PRIMARY_GKD1_TOKEN,
         "exhausted_file": GKD1_EXHAUSTED_FILE,
@@ -64,17 +71,46 @@ CHANNELS_CONFIG = {
     "@gurukuladesam2": {
         "channel_id": TARGET_CHANNEL_ID,
         "handle": TARGET_HANDLE,
+        "channel_title": "குரு குல தேசம் | நன்றி மறவாமை",
+        "category_ta": "நற்பண்பு",
         "pillar": "devotional",
-        "role_desc": "Devotional Shorts (Murugan, Shiva, Amman, Vinayagar, Vishnu — Panchangam Aligned)",
+        "role_desc": "குரு குல தேசம் | நன்றி மறவாமை >> @GuruKulaDesam2 (நற்பண்பு — Devotional Shorts: Murugan, Shiva, Amman, Vinayagar, Vishnu)",
+        "channel_description": (
+            "குரு குல தேசம் | நன்றி மறவாமை — 📖 நற்பண்பு (Narpanbu)\n\n"
+            "தமிழ் பஞ்சாங்கம், திதி, நட்சத்திரம் மற்றும் நல்ல நேரத்திற்கு ஏற்ப அமைந்த தெய்வீக வழிபாட்டுப் பாடல்கள் (நற்பண்பு Shorts அலைவரிசை).\n"
+            "Sacred Tamil Devotional Shorts Channel dedicated to Narpanbu (நற்பண்பு — Divine Gratitude, Panchangam-Aligned Bhakti Hymns for Murugan, Shiva, Amman, Vinayagar & Perumal)."
+        ),
         "tokens_dir": GKD2_TOKENS_DIR,
         "primary_token": PRIMARY_GKD2_TOKEN,
         "exhausted_file": GKD2_EXHAUSTED_FILE,
     },
+    "@guru-kula-desam": {
+        "channel_id": "UCPqB1A_WzpLJec6q69BOO3Q",
+        "handle": "@Guru-Kula-Desam",
+        "channel_title": "குரு குல தேசம் | ஒழுக்கம் பிழையாமை",
+        "category_ta": "நற்குணம்",
+        "pillar": "master_video",
+        "role_desc": "குரு குல தேசம் | ஒழுக்கம் பிழையாமை >> @Guru-Kula-Desam (நற்குணம் — Master Long-Form Video Channel)",
+        "channel_description": (
+            "குரு குல தேசம் | ஒழுக்கம் பிழையாமை — 📖 நற்குணம் (Narkunam)\n\n"
+            "உலகப் பொதுமறை திருக்குறள், திருமுறைகள், திருப்புகழ், திருவருட்பா மற்றும் தெய்வீகத் தமிழ் இசைப் படைப்புகளின் முதன்மை முழுநீள அலைவரிசை.\n"
+            "Master Sacred Tamil Long-Form Video Channel dedicated to Narkunam (நற்குணம் — Flawless Discipline, Pure Virtue & Eternal Tamil Wisdom)."
+        ),
+        "tokens_dir": ROOT / "data" / "credentials" / "tokens",
+        "primary_token": ROOT / "data" / "credentials" / "token.json",
+        "exhausted_file": ROOT / "data" / "credentials" / "quota_exhausted.json",
+    },
     "@influenzian": {
         "channel_id": INFLUENZIAN_CHANNEL_ID,
         "handle": INFLUENZIAN_HANDLE,
+        "channel_title": "Influenzian | காலமே உயிர்",
+        "category_ta": "நற்சிந்தனை",
         "pillar": "spiritual",
         "role_desc": "Spiritual Shorts (Future — Asking the right questions, doing the right thing at the right time; Time as the ultimate limited credit to be wisely used)",
+        "channel_description": (
+            "Spiritual Shorts — Asking the right questions, doing the right thing at the right time. "
+            "Understanding Time as the ultimate credit that is limited and to be wisely used."
+        ),
         "tokens_dir": INFLUENZIAN_TOKENS_DIR,
         "primary_token": PRIMARY_INFLUENZIAN_TOKEN,
         "exhausted_file": INFLUENZIAN_EXHAUSTED_FILE,

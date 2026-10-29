@@ -120,7 +120,7 @@ PURE_CURRICULUM_STRIP_BAR = """  <!-- LEFT STRIP BAR (PRIMARY GLOBAL SHELL - CUR
           <a href="books.html?book=narthunai" class="strip-sub-item"><span class="strip-sub-icon">🪔</span><span>4. நற்துணை (Narthunai)</span></a>
           <a href="books.html?book=narchinthanai" class="strip-sub-item"><span class="strip-sub-icon">⚛️</span><span>5. நற்சிந்தனை (Narchinthanai)</span></a>
           <a href="books.html?book=narchol" class="strip-sub-item"><span class="strip-sub-icon">🌸</span><span>6. நற்சொல் (Narchol)</span></a>
-          <a href="books.html?book=narcheyal" class="strip-sub-item"><span class="strip-sub-icon">☀️</span><span>7. நற்செயல் (Narcheyal)</span></a>
+          <a href="books.html?book=narcheyal" class="strip-sub-item"><span class="strip-sub-icon">☀️</span><span>7. நற்செய்கை (Narcheyal)</span></a>
       </div>
 
       <!-- 8. வித்யா குடீரம் பள்ளி போர்டல் (Vidya Kudiram Online School) -->

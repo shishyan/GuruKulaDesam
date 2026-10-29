@@ -294,14 +294,14 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
 
     slots = get_next_schedule_slots(count, reg) if schedule_mode else [datetime.now(IST)] * count
 
-    print("=" * 80)
-    print(f"🕉️  GURUKULADESAM DUAL-CHANNEL UNIQUE SHORTS PIPELINE ({count} Slots -> {count * 2} Unique Shorts)")
-    print(f"📺 Virtuous Shorts   : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) — 4 Unique Virtuous Shorts/Day (Thirukkural, Vallalar/Aram)")
-    print(f"📺 Devotional Shorts : {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) — 4 Unique Devotional Shorts/Day (Panchangam Deities)")
-    print(f"⏳ Spiritual Shorts  : {INFLUENZIAN_HANDLE} ({INFLUENZIAN_CHANNEL_ID}) — Future (Right Questions, Right Action, Time as Ultimate Limited Credit)")
-    print(f"🏛️  Long-Form Master  : @Guru-Kula-Desam (UCPqB1A_WzpLJec6q69BOO3Q)")
-    print(f"🗓️  Publishing Mode   : {'Scheduled 8 Unique Shorts/Day (4 per channel at 6AM, 11AM, 4PM, 8PM IST)' if schedule_mode else 'Immediate Public Release'}")
-    print("=" * 80)
+    print("=" * 95)
+    print(f"🕉️  GURUKULADESAM 7-PILLAR ECOSYSTEM — SHORTS PIPELINE ({count} Slots -> {count * 2} Unique Shorts)")
+    print(f"📺 1. குரு குல தேசம் | நெறி தவறாமை     >> {ORIGINAL_HANDLE} (நற்செய்கை — Virtuous Shorts)")
+    print(f"📺 2. குரு குல தேசம் | நன்றி மறவாமை    >> {TARGET_HANDLE} (நற்பண்பு — Devotional Shorts)")
+    print(f"🏛️  3. குரு குல தேசம் | ஒழுக்கம் பிழையாமை >> @Guru-Kula-Desam (நற்குணம் — Master Video Channel)")
+    print(f"⏳ 4. Spiritual Shorts (Future)        >> {INFLUENZIAN_HANDLE} (Right Questions, Right Action, Time as Credit)")
+    print(f"🗓️  Publishing Mode                     : {'Scheduled 8 Unique Shorts/Day (4 per channel at 6AM, 11AM, 4PM, 8PM IST)' if schedule_mode else 'Immediate Public Release'}")
+    print("=" * 95)
 
     completed = 0
     for slot_dt in slots:
@@ -428,10 +428,10 @@ def print_dashboard():
     c2 = ch_stats.get(TARGET_CHANNEL_ID, {})
     ci = ch_stats.get(INFLUENZIAN_CHANNEL_ID, {})
     cm = ch_stats.get("UCPqB1A_WzpLJec6q69BOO3Q", {})
-    print(f"  • Virtuous Shorts Ch 1   : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) [Thirukkural & Vallalar/Aram] — {c1.get('subs', 0)} subs | {c1.get('views', 0):,} views | {c1.get('videos', 0)} videos")
-    print(f"  • Devotional Shorts Ch 2 : {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) [Deity & Bhakti Panchangam] — {c2.get('subs', 0)} subs | {c2.get('views', 0):,} views | {c2.get('videos', 0)} videos")
-    print(f"  • Spiritual Shorts Ch 3  : {INFLUENZIAN_HANDLE} ({INFLUENZIAN_CHANNEL_ID}) [Future: Right Questions, Right Action, Time as Credit] — {ci.get('subs', 0)} subs | {ci.get('views', 0):,} views | {ci.get('videos', 0)} videos")
-    print(f"  • Master Video Channel   : @Guru-Kula-Desam (UCPqB1A_WzpLJec6q69BOO3Q) — {cm.get('subs', 0)} subs | {cm.get('views', 0):,} views | {cm.get('videos', 0)} videos")
+    print(f"  • 1. குரு குல தேசம் | நெறி தவறாமை     >> {ORIGINAL_HANDLE} (நற்செய்கை | Virtuous) — {c1.get('subs', 0)} subs | {c1.get('views', 0):,} views | {c1.get('videos', 0)} videos")
+    print(f"  • 2. குரு குல தேசம் | நன்றி மறவாமை    >> {TARGET_HANDLE} (நற்பண்பு | Devotional) — {c2.get('subs', 0)} subs | {c2.get('views', 0):,} views | {c2.get('videos', 0)} videos")
+    print(f"  • 3. குரு குல தேசம் | ஒழுக்கம் பிழையாமை >> @Guru-Kula-Desam (நற்குணம் | Master Video) — {cm.get('subs', 0)} subs | {cm.get('views', 0):,} views | {cm.get('videos', 0)} videos")
+    print(f"  • 4. Spiritual Shorts (Future)        >> {INFLUENZIAN_HANDLE} (Time as Ultimate Credit) — {ci.get('subs', 0)} subs | {ci.get('views', 0):,} views | {ci.get('videos', 0)} videos")
     print(f"  • Today's Panchangam     : {now_panchangam['tamil_month_ta']} {now_panchangam['tamil_day']} | {now_panchangam['weekday_ta']} | {now_panchangam['tithi_name']} | {now_panchangam['nakshatra_ta']}")
     print(f"  • Today's Sacred Occasion: {', '.join(now_panchangam['special_events'])} ({now_panchangam['occasion_badge_ta']})")
     print(f"  • Today's 4 Slot Deities : 6 AM: [{now_panchangam['slot_deities'][6].upper()}] | 11 AM: [{now_panchangam['slot_deities'][11].upper()}] | 4 PM: [{now_panchangam['slot_deities'][16].upper()}] | 8 PM: [{now_panchangam['slot_deities'][20].upper()}]")

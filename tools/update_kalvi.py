@@ -623,18 +623,18 @@ KALVI_HTML = '''<!DOCTYPE html>
           <a href="books.html?book=narchol" class="stage-grade-btn" style="border: 1px solid rgba(236, 72, 153, 0.4) !important;">நற்சொல் நூலைத் திறக்க &rarr;</a>
         </div>
 
-        <!-- 7. நற்செயல் -->
+        <!-- 7. நற்செய்கை -->
         <div class="ashram-book-card">
           <div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
               <span style="font-size: 1.8rem;">☀️</span>
               <span style="color: #10b981; font-size: 0.76rem; font-weight: 700; text-transform: uppercase;">நூல் 7</span>
             </div>
-            <h3>7. நற்செயல்</h3>
+            <h3>7. நற்செய்கை</h3>
             <div style="font-size: 0.8rem; color: #10b981; font-weight: 600; margin-bottom: 8px;">Practical Dharma &amp; Daily Sadhana</div>
             <p>பஞ்ச மகா யக்ஞம், மரம் நடுதல், கோயில் உழவாரப் பணி, தாய்நாடு போற்றுதல் &amp; உன்னத இல்லற சாதனை.</p>
           </div>
-          <a href="books.html?book=narcheyal" class="stage-grade-btn" style="border: 1px solid rgba(16, 185, 129, 0.4) !important;">நற்செயல் நூலைத் திறக்க &rarr;</a>
+          <a href="books.html?book=narcheyal" class="stage-grade-btn" style="border: 1px solid rgba(16, 185, 129, 0.4) !important;">நற்செய்கை நூலைத் திறக்க &rarr;</a>
         </div>
 
       </div>

@@ -268,7 +268,7 @@ def generate_grade_html(g):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>தரம் {g} — 7 ஆசிரமப் பாடநூல்கள் (Grade {g} - 7 Books Curriculum) | Guru Kula Desam</title>
-  <meta name="description" content="குரு குல தேசம் தரம் {g} முழுமையான பள்ளிப் பாடத்திட்டம். 7 ஆசிரமப் பாடநூல்கள்: நன்னெறி, நல்லறம், நல்வழி, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செயல்.">
+  <meta name="description" content="குரு குல தேசம் தரம் {g} முழுமையான பள்ளிப் பாடத்திட்டம். 7 ஆசிரமப் பாடநூல்கள்: நன்னெறி, நல்லறம், நல்வழி, நற்துணை, நற்சிந்தனை, நற்சொல், நற்செய்கை.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/books-reader.css">
   <style>
