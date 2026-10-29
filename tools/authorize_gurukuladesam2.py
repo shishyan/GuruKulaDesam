@@ -34,8 +34,13 @@ GKD1_TOKENS_DIR = ROOT / "data" / "credentials" / "tokens_gurukuladesam"
 PRIMARY_GKD1_TOKEN = ROOT / "data" / "credentials" / "token_gurukuladesam.json"
 GKD1_EXHAUSTED_FILE = ROOT / "data" / "credentials" / "quota_exhausted_gurukuladesam.json"
 
+INFLUENZIAN_TOKENS_DIR = ROOT / "data" / "credentials" / "tokens_influenzian"
+PRIMARY_INFLUENZIAN_TOKEN = ROOT / "data" / "credentials" / "token_influenzian.json"
+INFLUENZIAN_EXHAUSTED_FILE = ROOT / "data" / "credentials" / "quota_exhausted_influenzian.json"
+
 GKD2_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 GKD1_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
+INFLUENZIAN_TOKENS_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_CHANNEL_ID = "UCGUmNzaV_OUFbsNdHJQtaNQ"
 TARGET_HANDLE = "@GuruKulaDesam2"
@@ -43,10 +48,15 @@ TARGET_HANDLE = "@GuruKulaDesam2"
 ORIGINAL_CHANNEL_ID = "UCz4dzcjahGaIb5dZCv32AmA"
 ORIGINAL_HANDLE = "@GuruKulaDesam"
 
+INFLUENZIAN_CHANNEL_ID = "UCmixCKV4uTv3wIp634IRLXg"
+INFLUENZIAN_HANDLE = "@influenzian"
+
 CHANNELS_CONFIG = {
     "@gurukuladesam": {
         "channel_id": ORIGINAL_CHANNEL_ID,
         "handle": ORIGINAL_HANDLE,
+        "pillar": "virtuous",
+        "role_desc": "Virtuous Shorts (Thirukkural, Vallalar Arutperunjothi & Universal Aram)",
         "tokens_dir": GKD1_TOKENS_DIR,
         "primary_token": PRIMARY_GKD1_TOKEN,
         "exhausted_file": GKD1_EXHAUSTED_FILE,
@@ -54,9 +64,20 @@ CHANNELS_CONFIG = {
     "@gurukuladesam2": {
         "channel_id": TARGET_CHANNEL_ID,
         "handle": TARGET_HANDLE,
+        "pillar": "devotional",
+        "role_desc": "Devotional Shorts (Murugan, Shiva, Amman, Vinayagar, Vishnu — Panchangam Aligned)",
         "tokens_dir": GKD2_TOKENS_DIR,
         "primary_token": PRIMARY_GKD2_TOKEN,
         "exhausted_file": GKD2_EXHAUSTED_FILE,
+    },
+    "@influenzian": {
+        "channel_id": INFLUENZIAN_CHANNEL_ID,
+        "handle": INFLUENZIAN_HANDLE,
+        "pillar": "spiritual",
+        "role_desc": "Spiritual Shorts (Future — Asking the right questions, doing the right thing at the right time; Time as the ultimate limited credit to be wisely used)",
+        "tokens_dir": INFLUENZIAN_TOKENS_DIR,
+        "primary_token": PRIMARY_INFLUENZIAN_TOKEN,
+        "exhausted_file": INFLUENZIAN_EXHAUSTED_FILE,
     },
 }
 

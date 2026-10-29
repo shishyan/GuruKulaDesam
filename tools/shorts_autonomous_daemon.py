@@ -39,6 +39,8 @@ sys.path.insert(0, str(ROOT))
 
 from tools.authorize_gurukuladesam2 import (
     CHANNELS_CONFIG,
+    INFLUENZIAN_CHANNEL_ID,
+    INFLUENZIAN_HANDLE,
     ORIGINAL_CHANNEL_ID,
     ORIGINAL_HANDLE,
     TARGET_CHANNEL_ID,
@@ -110,17 +112,50 @@ def get_next_schedule_slots(count: int, reg: dict) -> list[datetime]:
     return slots
 
 
-def pick_track_for_slot(slot_dt: datetime, used_track_ids: set[str], forced_deity: str | None = None) -> tuple[dict, dict]:
+VIRTUOUS_CATEGORIES = ("thirukkural", "vallalar")
+DEVOTIONAL_CATEGORIES = ("murugan", "shiva", "amman", "vinayagar", "vishnu")
+
+
+def pick_track_for_slot(
+    slot_dt: datetime,
+    used_track_ids: set[str],
+    forced_deity: str | None = None,
+    channel_key: str = "@gurukuladesam2",
+) -> tuple[dict, dict]:
     """
-    Uses the Tamil Panchangam engine to determine the exact mandated deity for `slot_dt`,
-    enforces hard exclusion rules, and selects the next unpublished track for that deity.
+    Distinct Content Pillars per Channel:
+    1. `@GuruKulaDesam` (`channel_key="@gurukuladesam"`):
+       - Strictly **Virtuous Shorts** (`thirukkural`, `vallalar` — Universal Aram, Noble Ethics & Compassion).
+       - Alternates between Thirukkural and Vallalar Thiruvarutpa across the 4 daily slots (6 AM & 4 PM -> Thirukkural; 11 AM & 8 PM -> Vallalar, or fallback to whichever has unpublished tracks).
+    2. `@GuruKulaDesam2` (`channel_key="@gurukuladesam2"`):
+       - Strictly **Devotional Shorts** (`murugan`, `shiva`, `amman`, `vinayagar`, `vishnu`).
+       - Uses the Tamil Panchangam engine to determine the exact mandated deity for `slot_dt` and enforces hard festival exclusion rules.
+    3. `@influenzian` (`channel_key="@influenzian"`):
+       - Reserved for **Spiritual Shorts** (Future — Asking the right questions, doing the right thing at the right time; Time as the ultimate limited credit to be wisely used).
     """
     panchangam = get_auspicious_alignment_for_datetime(slot_dt)
-    target_deity = forced_deity.lower() if forced_deity else panchangam["active_deity"]
-    forbidden = set(panchangam.get("forbidden_deities", []))
 
-    if target_deity in forbidden:
-        target_deity = panchangam["primary_deity"]
+    if channel_key.lower() == "@gurukuladesam" and not forced_deity:
+        # Virtuous Channel: alternate Thirukkural & Vallalar by slot hour
+        preferred_virtuous = ["thirukkural", "vallalar"] if slot_dt.hour in (6, 16) else ["vallalar", "thirukkural"]
+        for v_cat in preferred_virtuous:
+            v_candidates = list_candidate_tracks(deity_filter=v_cat, prioritize_high_energy=False)
+            for c in v_candidates:
+                if c["track_id"] not in used_track_ids:
+                    return c, panchangam
+        # Fallback if all virtuous tracks are exhausted
+        all_v = [c for c in list_candidate_tracks(prioritize_high_energy=False) if c["deity"] in VIRTUOUS_CATEGORIES]
+        if all_v:
+            return all_v[len(used_track_ids) % len(all_v)], panchangam
+
+    # Devotional Channel (@GuruKulaDesam2) — Strictly Deity / Bhakti tracks
+    target_deity = forced_deity.lower() if forced_deity else panchangam["active_deity"]
+    if target_deity in VIRTUOUS_CATEGORIES and not forced_deity:
+        target_deity = panchangam["primary_deity"] if panchangam["primary_deity"] in DEVOTIONAL_CATEGORIES else "murugan"
+    forbidden = set(panchangam.get("forbidden_deities", [])) | set(VIRTUOUS_CATEGORIES)
+
+    if target_deity in forbidden and not forced_deity:
+        target_deity = panchangam["primary_deity"] if panchangam["primary_deity"] not in forbidden else "murugan"
 
     # First try tracks matching target_deity that haven't been published yet
     deity_candidates = list_candidate_tracks(deity_filter=target_deity, prioritize_high_energy=False)
@@ -135,6 +170,14 @@ def pick_track_for_slot(slot_dt: datetime, used_track_ids: set[str], forced_deit
         for c in sec_candidates:
             if c["track_id"] not in used_track_ids:
                 return c, panchangam
+
+    # Try any remaining devotional deity not in forbidden
+    for d_fallback in DEVOTIONAL_CATEGORIES:
+        if d_fallback not in forbidden:
+            d_cands = list_candidate_tracks(deity_filter=d_fallback, prioritize_high_energy=False)
+            for c in d_cands:
+                if c["track_id"] not in used_track_ids:
+                    return c, panchangam
 
     # Fallback: cycle back through target_deity tracks
     if deity_candidates:
@@ -253,10 +296,11 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
 
     print("=" * 80)
     print(f"🕉️  GURUKULADESAM DUAL-CHANNEL UNIQUE SHORTS PIPELINE ({count} Slots -> {count * 2} Unique Shorts)")
-    print(f"📺 Shorts Channel 1: {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) — 4 Unique Shorts/Day")
-    print(f"📺 Shorts Channel 2: {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) — 4 Different Unique Shorts/Day")
-    print(f"🏛️  Long-Form Master: @Guru-Kula-Desam (UCPqB1A_WzpLJec6q69BOO3Q)")
-    print(f"🗓️  Publishing Mode : {'Scheduled 8 Unique Shorts/Day (4 per channel at 6AM, 11AM, 4PM, 8PM IST)' if schedule_mode else 'Immediate Public Release'}")
+    print(f"📺 Virtuous Shorts   : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) — 4 Unique Virtuous Shorts/Day (Thirukkural, Vallalar/Aram)")
+    print(f"📺 Devotional Shorts : {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) — 4 Unique Devotional Shorts/Day (Panchangam Deities)")
+    print(f"⏳ Spiritual Shorts  : {INFLUENZIAN_HANDLE} ({INFLUENZIAN_CHANNEL_ID}) — Future (Right Questions, Right Action, Time as Ultimate Limited Credit)")
+    print(f"🏛️  Long-Form Master  : @Guru-Kula-Desam (UCPqB1A_WzpLJec6q69BOO3Q)")
+    print(f"🗓️  Publishing Mode   : {'Scheduled 8 Unique Shorts/Day (4 per channel at 6AM, 11AM, 4PM, 8PM IST)' if schedule_mode else 'Immediate Public Release'}")
     print("=" * 80)
 
     completed = 0
@@ -272,7 +316,7 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
                 print(f"ℹ️ Skipping {ch_hnd} for slot {slot_dt.strftime('%Y-%m-%d %I:%M %p IST')} (token not yet authorized locally): {e}")
                 continue
 
-            track_item, panchangam = pick_track_for_slot(slot_dt, used_ids, forced_deity=deity_filter)
+            track_item, panchangam = pick_track_for_slot(slot_dt, used_ids, forced_deity=deity_filter, channel_key=ch_key)
             tid = track_item["track_id"]
             used_ids.add(tid)
 
@@ -337,7 +381,7 @@ def fetch_live_youtube_analytics(pub: dict) -> tuple[dict, dict]:
     try:
         res = get_channel_youtube_service("@gurukuladesam")
         yt = res[0] if isinstance(res, tuple) else res
-        ch_ids = [ORIGINAL_CHANNEL_ID, TARGET_CHANNEL_ID, "UCPqB1A_WzpLJec6q69BOO3Q"]
+        ch_ids = [ORIGINAL_CHANNEL_ID, TARGET_CHANNEL_ID, INFLUENZIAN_CHANNEL_ID, "UCPqB1A_WzpLJec6q69BOO3Q"]
         ch_res = yt.channels().list(part="snippet,statistics", id=",".join(ch_ids)).execute()
         for item in ch_res.get("items", []):
             st = item.get("statistics", {})
@@ -382,9 +426,11 @@ def print_dashboard():
     print("=" * 95)
     c1 = ch_stats.get(ORIGINAL_CHANNEL_ID, {})
     c2 = ch_stats.get(TARGET_CHANNEL_ID, {})
+    ci = ch_stats.get(INFLUENZIAN_CHANNEL_ID, {})
     cm = ch_stats.get("UCPqB1A_WzpLJec6q69BOO3Q", {})
-    print(f"  • Shorts Channel 1       : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) — {c1.get('subs', 0)} subs | {c1.get('views', 0):,} views | {c1.get('videos', 0)} videos")
-    print(f"  • Shorts Channel 2       : {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) — {c2.get('subs', 0)} subs | {c2.get('views', 0):,} views | {c2.get('videos', 0)} videos")
+    print(f"  • Virtuous Shorts Ch 1   : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) [Thirukkural & Vallalar/Aram] — {c1.get('subs', 0)} subs | {c1.get('views', 0):,} views | {c1.get('videos', 0)} videos")
+    print(f"  • Devotional Shorts Ch 2 : {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) [Deity & Bhakti Panchangam] — {c2.get('subs', 0)} subs | {c2.get('views', 0):,} views | {c2.get('videos', 0)} videos")
+    print(f"  • Spiritual Shorts Ch 3  : {INFLUENZIAN_HANDLE} ({INFLUENZIAN_CHANNEL_ID}) [Future: Right Questions, Right Action, Time as Credit] — {ci.get('subs', 0)} subs | {ci.get('views', 0):,} views | {ci.get('videos', 0)} videos")
     print(f"  • Master Video Channel   : @Guru-Kula-Desam (UCPqB1A_WzpLJec6q69BOO3Q) — {cm.get('subs', 0)} subs | {cm.get('views', 0):,} views | {cm.get('videos', 0)} videos")
     print(f"  • Today's Panchangam     : {now_panchangam['tamil_month_ta']} {now_panchangam['tamil_day']} | {now_panchangam['weekday_ta']} | {now_panchangam['tithi_name']} | {now_panchangam['nakshatra_ta']}")
     print(f"  • Today's Sacred Occasion: {', '.join(now_panchangam['special_events'])} ({now_panchangam['occasion_badge_ta']})")
