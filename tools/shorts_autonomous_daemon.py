@@ -323,19 +323,62 @@ def prebuild_panchangam_queue(count: int, deity_filter: str = None):
     print(f"\n✅ Pre-built {built}/{count} Panchangam-aligned 9:16 vertical Shorts in {SHORTS_OUT_DIR}")
 
 
+def fetch_live_youtube_analytics(pub: dict) -> tuple[dict, dict]:
+    """Queries live YouTube Data API v3 statistics for all 3 channels and all tracked Shorts."""
+    channel_stats = {}
+    video_stats = {}
+    try:
+        res = get_channel_youtube_service("@gurukuladesam")
+        yt = res[0] if isinstance(res, tuple) else res
+        ch_ids = [ORIGINAL_CHANNEL_ID, TARGET_CHANNEL_ID, "UCPqB1A_WzpLJec6q69BOO3Q"]
+        ch_res = yt.channels().list(part="snippet,statistics", id=",".join(ch_ids)).execute()
+        for item in ch_res.get("items", []):
+            st = item.get("statistics", {})
+            channel_stats[item["id"]] = {
+                "title": item["snippet"].get("title"),
+                "customUrl": item["snippet"].get("customUrl"),
+                "subs": int(st.get("subscriberCount", 0)),
+                "views": int(st.get("viewCount", 0)),
+                "videos": int(st.get("videoCount", 0)),
+            }
+
+        vid_ids = [v["youtube_short_id"] for v in pub.values() if v.get("youtube_short_id")]
+        for i in range(0, len(vid_ids), 50):
+            chunk = vid_ids[i : i + 50]
+            v_res = yt.videos().list(part="snippet,statistics,status,contentDetails", id=",".join(chunk)).execute()
+            for v in v_res.get("items", []):
+                st = v.get("statistics", {})
+                status = v.get("status", {})
+                video_stats[v["id"]] = {
+                    "views": int(st.get("viewCount", 0)),
+                    "likes": int(st.get("likeCount", 0)),
+                    "comments": int(st.get("commentCount", 0)),
+                    "privacyStatus": status.get("privacyStatus", "unknown"),
+                    "publishedAt": v.get("snippet", {}).get("publishedAt"),
+                    "duration": v.get("contentDetails", {}).get("duration"),
+                }
+    except Exception as e:
+        print(f"  ℹ️ Live Analytics Note: {e}")
+    return channel_stats, video_stats
+
+
 def print_dashboard():
     reg = load_published_registry()
     pub = reg.get("published_shorts", {})
     local_mp4s = list(SHORTS_OUT_DIR.glob("short_*.mp4"))
     cands = list_candidate_tracks()
     now_panchangam = get_auspicious_alignment_for_datetime(datetime.now(IST))
+    ch_stats, v_stats = fetch_live_youtube_analytics(pub)
 
-    print("=" * 85)
+    print("=" * 95)
     print(f"📈 @GURUKULADESAM & @GURUKULADESAM2 AUTONOMOUS SHORTS ENGINE — DASHBOARD (8 SHORTS/DAY)")
-    print("=" * 85)
-    print(f"  • Shorts Channel 1       : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) — 4 Unique Shorts/Day")
-    print(f"  • Shorts Channel 2       : {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) — 4 Unique Shorts/Day")
-    print(f"  • Master Video Channel   : @Guru-Kula-Desam (UCPqB1A_WzpLJec6q69BOO3Q)")
+    print("=" * 95)
+    c1 = ch_stats.get(ORIGINAL_CHANNEL_ID, {})
+    c2 = ch_stats.get(TARGET_CHANNEL_ID, {})
+    cm = ch_stats.get("UCPqB1A_WzpLJec6q69BOO3Q", {})
+    print(f"  • Shorts Channel 1       : {ORIGINAL_HANDLE} ({ORIGINAL_CHANNEL_ID}) — {c1.get('subs', 0)} subs | {c1.get('views', 0):,} views | {c1.get('videos', 0)} videos")
+    print(f"  • Shorts Channel 2       : {TARGET_HANDLE} ({TARGET_CHANNEL_ID}) — {c2.get('subs', 0)} subs | {c2.get('views', 0):,} views | {c2.get('videos', 0)} videos")
+    print(f"  • Master Video Channel   : @Guru-Kula-Desam (UCPqB1A_WzpLJec6q69BOO3Q) — {cm.get('subs', 0)} subs | {cm.get('views', 0):,} views | {cm.get('videos', 0)} videos")
     print(f"  • Today's Panchangam     : {now_panchangam['tamil_month_ta']} {now_panchangam['tamil_day']} | {now_panchangam['weekday_ta']} | {now_panchangam['tithi_name']} | {now_panchangam['nakshatra_ta']}")
     print(f"  • Today's Sacred Occasion: {', '.join(now_panchangam['special_events'])} ({now_panchangam['occasion_badge_ta']})")
     print(f"  • Today's 4 Slot Deities : 6 AM: [{now_panchangam['slot_deities'][6].upper()}] | 11 AM: [{now_panchangam['slot_deities'][11].upper()}] | 4 PM: [{now_panchangam['slot_deities'][16].upper()}] | 8 PM: [{now_panchangam['slot_deities'][20].upper()}]")
@@ -343,11 +386,30 @@ def print_dashboard():
     print(f"  • Local Rendered Shorts  : {len(local_mp4s)} vertical 1080x1920 MP4s in renders/shorts_gurukuladesam2/")
     print(f"  • Uploaded / Scheduled   : {len(pub)} Shorts on YouTube")
     if pub:
-        print("\nRecent Releases / Scheduled Queue:")
-        for tid, info in list(pub.items())[-10:]:
+        total_short_views = 0
+        total_short_likes = 0
+        total_short_comments = 0
+        print("\n📊 Live Short-by-Short Performance Analytics:")
+        for tid, info in list(pub.items())[-12:]:
+            yt_id = info.get("youtube_short_id", "")
+            vs = v_stats.get(yt_id, {})
+            views = vs.get("views", 0)
+            likes = vs.get("likes", 0)
+            comments = vs.get("comments", 0)
+            like_rate = (likes / views * 100.0) if views > 0 else 0.0
+            live_status = vs.get("privacyStatus", info.get("status", "unknown")).upper()
+            total_short_views += views
+            total_short_likes += likes
+            total_short_comments += comments
             sched = info.get("scheduled_for") or info.get("uploaded_at")
-            print(f"  - [{info['deity'].upper():<9}] {info['short_url']} | {info['status'].upper()} ({sched}) -> Parent: {info.get('parent_video_url')}")
-    print("=" * 85)
+            print(
+                f"  - [{info['deity'].upper():<9}] {info['short_url']} | {live_status:<7} "
+                f"| 👁️ {views:>5} views | 👍 {likes:>3} likes ({like_rate:>4.1f}%) | 💬 {comments} "
+                f"| Slot: {sched}"
+            )
+        overall_lr = (total_short_likes / total_short_views * 100.0) if total_short_views > 0 else 0.0
+        print(f"\n  🔥 Total Tracked Shorts Views: {total_short_views:,} | Total Likes: {total_short_likes:,} ({overall_lr:.1f}% Like-to-View Ratio) | Comments: {total_short_comments}")
+    print("=" * 95)
 
 
 if __name__ == "__main__":
