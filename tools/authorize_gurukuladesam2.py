@@ -59,8 +59,8 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
 ]
 
-# Known active OAuth projects first
-ACTIVE_PROJECT_IDS = ["440375337189", "472322435541"]
+# Known active OAuth projects first (GuruKulaDesam project 839236964216)
+ACTIVE_PROJECT_IDS = ["839236964216"]
 
 
 def extract_project_id(filename: str) -> str:
