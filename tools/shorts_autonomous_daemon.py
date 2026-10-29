@@ -265,6 +265,13 @@ def run_batch_pipeline(count: int, schedule_mode: bool = False, deity_filter: st
         slot_any_uploaded = False
 
         for ch_key, ch_hnd in (("@gurukuladesam", ORIGINAL_HANDLE), ("@gurukuladesam2", TARGET_HANDLE)):
+            # Verify channel token is available BEFORE rendering a 35s Short for this channel
+            try:
+                get_channel_youtube_service(ch_key)
+            except Exception as e:
+                print(f"ℹ️ Skipping {ch_hnd} for slot {slot_dt.strftime('%Y-%m-%d %I:%M %p IST')} (token not yet authorized locally): {e}")
+                continue
+
             track_item, panchangam = pick_track_for_slot(slot_dt, used_ids, forced_deity=deity_filter)
             tid = track_item["track_id"]
             used_ids.add(tid)

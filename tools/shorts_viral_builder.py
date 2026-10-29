@@ -608,12 +608,13 @@ def build_short_for_track(
     out_meta_file = SHORTS_META_DIR / f"short_{deity_key}_{track_id}.json"
 
     if out_mp4.exists() and out_mp4.stat().st_size > 1_000_000 and out_meta_file.exists() and not force_rebuild:
-        print(f"✅ Short already rendered: {out_mp4.name} ({out_mp4.stat().st_size / 1e6:.2f} MB)")
-        viral_meta = build_viral_short_metadata(track_id, deity_key, meta_entry, panchangam_info)
         old_meta = json.loads(out_meta_file.read_text(encoding="utf-8"))
-        old_meta.update(viral_meta)
-        out_meta_file.write_text(json.dumps(old_meta, indent=2, ensure_ascii=False), encoding="utf-8")
-        return old_meta
+        if old_meta.get("brand_handle") == brand_handle:
+            print(f"✅ Short already rendered for {brand_handle}: {out_mp4.name} ({out_mp4.stat().st_size / 1e6:.2f} MB)")
+            viral_meta = build_viral_short_metadata(track_id, deity_key, meta_entry, panchangam_info)
+            old_meta.update(viral_meta)
+            out_meta_file.write_text(json.dumps(old_meta, indent=2, ensure_ascii=False), encoding="utf-8")
+            return old_meta
 
     audio_path = find_track_audio(track_id)
     master_vid = find_master_video(track_id)
@@ -717,6 +718,7 @@ def build_short_for_track(
 
     size_mb = out_mp4.stat().st_size / (1024 * 1024)
     viral_meta.update({
+        "brand_handle": brand_handle,
         "video_path": str(out_mp4.relative_to(ROOT)),
         "duration_sec": round(clip_dur, 2),
         "peak_start_sec": round(start_sec, 2),
