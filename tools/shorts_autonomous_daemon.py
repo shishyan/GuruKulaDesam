@@ -108,7 +108,7 @@ def sync_registry_from_remote():
 
 
 def push_registry_to_remote():
-    """Commits and pushes ONLY `gurukuladesam2_published_registry.json` and `legacy_republish_queue.json` safely."""
+    """Commits and pushes ONLY `gurukuladesam2_published_registry.json` (and `legacy_republish_queue.json` if present) safely."""
     try:
         tracked = [PUBLISHED_REGISTRY_FILE.relative_to(ROOT).as_posix()]
         q_file = ROOT / "production" / "shorts_metadata" / "legacy_republish_queue.json"
@@ -119,7 +119,7 @@ def push_registry_to_remote():
             return
         subprocess.run(["git", "-C", str(ROOT), "add", *tracked], check=False)
         subprocess.run(
-            ["git", "-C", str(ROOT), "commit", "--only", *tracked, "-m", "chore(shorts): update published registry & Flow republish queue [skip ci]"],
+            ["git", "-C", str(ROOT), "commit", "--only", *tracked, "-m", "chore(shorts): update published registry [skip ci]"],
             capture_output=True,
             check=False,
         )
@@ -132,6 +132,10 @@ def push_registry_to_remote():
 def normalize_song_fingerprint(title: str) -> str:
     t = title.split("—")[-1] if "—" in title else title
     t = t.replace("#Shorts", "").split("|")[0]
+    if ":" in t:
+        rhs = t.split(":", 1)[-1].strip()
+        if len(rhs) >= 4:
+            t = rhs
     t = clean_song_title_part(t).lower()
     return re.sub(r"[\s\-_:.,!?'\"()\[\]]+", "", t)
 
@@ -153,12 +157,15 @@ def fetch_live_channel_state(channel_key: str) -> tuple[set[str], set[str]]:
             for v in v_res.get("items", []):
                 st = v.get("status", {})
                 sn = v.get("snippet", {})
-                title = sn.get("title", "")
-                fp = normalize_song_fingerprint(title)
-                if fp:
-                    fingerprints.add(fp)
                 pub_at = st.get("publishAt")
-                if st.get("privacyStatus") == "private" and pub_at:
+                priv_status = st.get("privacyStatus")
+                # Only count active public or scheduled videos toward song deduplication (ignore discarded private tests)
+                if priv_status == "public" or (priv_status == "private" and pub_at):
+                    title = sn.get("title", "")
+                    fp = normalize_song_fingerprint(title)
+                    if fp:
+                        fingerprints.add(fp)
+                if priv_status == "private" and pub_at:
                     dt_utc = datetime.fromisoformat(pub_at.replace("Z", "+00:00"))
                     dt_ist = dt_utc.astimezone(IST).replace(second=0, microsecond=0)
                     occupied_slots.add(dt_ist.isoformat())
@@ -397,7 +404,9 @@ def run_batch_pipeline(
                 session_used_ids.add(track_item["legacy_track_id"])
 
             try:
-                meta = build_short_for_track(tid, target_dt=slot_dt, brand_handle=ch_hnd, use_flow=use_flow)
+                meta = build_short_for_track(tid, target_dt=slot_dt, brand_handle=ch_hnd, use_flow=False)
+                if meta.get("visual_source_mode") != "original_master_clip":
+                    raise RuntimeError(f"Refusing non-discography visual_source_mode={meta.get('visual_source_mode')} on {tid}")
                 session_fps.add(normalize_song_fingerprint(meta["title"]))
                 if channel_limit_hit:
                     print(f"   💾 Pre-rendered & cached {meta['video_path']} for {ch_hnd} ({slot_dt.strftime('%Y-%m-%d %I:%M %p IST')}).")

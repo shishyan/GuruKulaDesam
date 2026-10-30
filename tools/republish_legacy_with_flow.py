@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 """
 tools/republish_legacy_with_flow.py
-Publishes upgraded native 9:16 Google Flow Shorts across @GuruKulaDesam (4) and @GuruKulaDesam2 (7)
-while keeping all already-published legacy videos untouched (`public` as-is) by default so they can
-be reviewed first and switched to `Private` manually when desired (or via explicit `--mark-old-private`).
+Publishes upgraded 9:16 Chorus-clipped Shorts directly from @guru-kula-desam Master Films
+across @GuruKulaDesam (4) and @GuruKulaDesam2 (7), while keeping all 11 original public Shorts
+untouched (`public` as-is) by default so the creator can review the new Shorts first and switch
+the older ones to `Private` manually when desired.
 """
 
 import sys
@@ -61,7 +62,7 @@ DEFAULT_LEGACY_ITEMS = [
         "channel_handle": "@GuruKulaDesam",
         "song_label": "திருக்குறள்: அதிகாரம் 56 - கொடுங்கோன்மை",
     },
-    # @GuruKulaDesam2 (7 Devotional Shorts — ordered highest views / highest impact first!)
+    # @GuruKulaDesam2 (7 Devotional Shorts)
     {
         "track_id": "2tL-bKjkL18",
         "old_youtube_id": "aMAOsCbGt9Q",
@@ -84,11 +85,12 @@ DEFAULT_LEGACY_ITEMS = [
         "song_label": "விநாயகர் நான்மணிமாலை: பாலும் தெளிதேனும்",
     },
     {
-        "track_id": "-L3VXkM2MTY",
+        "track_id": "DsbMysGdqv8",
+        "legacy_track_id": "-L3VXkM2MTY",
         "old_youtube_id": "QWj6z4qXaqU",
         "channel_key": "@gurukuladesam2",
         "channel_handle": "@GuruKulaDesam2",
-        "song_label": "கந்தர் அநுபூதி: உருவாய் அருவாய் II",
+        "song_label": "கந்தர் அநுபூதி: உருவாய் அருவாய்",
     },
     {
         "track_id": "-unILRjNLHQ",
@@ -123,7 +125,7 @@ def load_queue() -> list[dict]:
     items = []
     for base in DEFAULT_LEGACY_ITEMS:
         it = dict(base)
-        it["status"] = "pending_flow"
+        it["status"] = "pending_discography"
         it["new_youtube_id"] = None
         it["video_path"] = None
         it["meta_path"] = None
@@ -139,11 +141,36 @@ def save_queue(items: list[dict]):
     QUEUE_FILE.write_text(json.dumps(items, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def reset_queue_for_discography(items: list[dict]) -> list[dict]:
+    by_old = {b["old_youtube_id"]: b for b in DEFAULT_LEGACY_ITEMS}
+    updated = []
+    for it in items:
+        base = by_old.get(it["old_youtube_id"], {})
+        new_it = dict(it)
+        if base.get("track_id"):
+            new_it["track_id"] = base["track_id"]
+        if base.get("legacy_track_id"):
+            new_it["legacy_track_id"] = base["legacy_track_id"]
+        if base.get("song_label"):
+            new_it["song_label"] = base["song_label"]
+        if new_it.get("status") == "new_flow_marked_private":
+            new_it["discarded_flow_youtube_id"] = new_it.get("new_youtube_id")
+            new_it["new_youtube_id"] = None
+            new_it["video_path"] = None
+            new_it["meta_path"] = None
+            new_it["status"] = "pending_discography"
+            new_it["old_marked_private"] = False
+            new_it["updated_at"] = datetime.now(IST).isoformat()
+        updated.append(new_it)
+    save_queue(updated)
+    return updated
+
+
 def mark_old_video_private(channel_key: str, old_youtube_id: str) -> bool:
-    """Marks `old_youtube_id` as `private` on `channel_key` after verifying channel ownership."""
+    """Marks `old_youtube_id` as `private` on `channel_key` ONLY when explicitly requested."""
     for attempt in range(3):
         try:
-            yt, pid, cfg = get_channel_youtube_service(channel_key)
+            yt, _, cfg = get_channel_youtube_service(channel_key)
             mine = yt.channels().list(part="id", mine=True).execute().get("items", [])
             if not mine or mine[0]["id"] != cfg["channel_id"]:
                 raise RuntimeError(f"Channel mismatch on {channel_key}")
@@ -168,7 +195,7 @@ def mark_old_video_private(channel_key: str, old_youtube_id: str) -> bool:
                     },
                 },
             ).execute()
-            print(f"  🔒 [MARKED PRIVATE] Old bad-visual Short https://youtube.com/shorts/{old_youtube_id} -> PRIVATE!")
+            print(f"  🔒 [MARKED PRIVATE] Old Short https://youtube.com/shorts/{old_youtube_id} -> PRIVATE!")
             return True
         except Exception as e:
             print(f"  ⚠️ Attempt {attempt + 1} marking {old_youtube_id} private failed: {e}")
@@ -176,46 +203,43 @@ def mark_old_video_private(channel_key: str, old_youtube_id: str) -> bool:
     return False
 
 
-def ensure_all_flow_shorts_built(items: list[dict], scenes_per_short: int = 4):
-    """Generates brand-new native 9:16 Google Flow clips and builds 1080x1920 Shorts for all pending items."""
-    import subprocess
-    from tools.flow_autonomous_generator import CDP_PORT, generate_flow_clips_for_short
-
-    try:
-        for idx, item in enumerate(items, 1):
-            if item["status"] in ("completed", "ready_to_republish"):
-                if item.get("video_path") and (ROOT / item["video_path"]).exists():
+def ensure_all_discography_shorts_built(items: list[dict], force_rebuild: bool = False):
+    """Clips 9:16 Chorus-aligned Shorts strictly from @guru-kula-desam Master Films (use_flow=False)."""
+    for idx, item in enumerate(items, 1):
+        if not force_rebuild and item["status"] in ("completed", "ready_to_republish"):
+            if item.get("video_path") and (ROOT / item["video_path"]).exists() and item.get("meta_path") and (ROOT / item["meta_path"]).exists():
+                m = json.loads((ROOT / item["meta_path"]).read_text(encoding="utf-8"))
+                if m.get("visual_source_mode") == "original_master_clip" and m.get("clip_anchor_mode") == "chorus_v1":
                     continue
 
-            tid = item["track_id"]
-            ch_hnd = item["channel_handle"]
-            print(f"\n[{idx}/{len(items)}] 🎨 Generating New Native 9:16 Flow Video for {tid} ({item['song_label']})...")
-            try:
-                clips = generate_flow_clips_for_short(tid, scene_count=scenes_per_short)
-            except Exception as e:
-                print(f"  ⚠️ Flow generation error for {tid}: {e}")
-                continue
-            if len(clips) < 3:
-                print(f"  ❌ Flow returned only {len(clips)} clips for {tid}; will retry.")
-                continue
+        tid = item["track_id"]
+        ch_hnd = item["channel_handle"]
+        print(f"\n[{idx}/{len(items)}] 🎬 Clipping @guru-kula-desam Master Film (Chorus Start) for {tid} ({item['song_label']})...")
+        meta = build_short_for_track(tid, force_rebuild=True, brand_handle=ch_hnd, use_flow=False)
+        if meta.get("visual_source_mode") != "original_master_clip" or meta.get("clip_anchor_mode") != "chorus_v1":
+            raise RuntimeError(f"Guard failed for {tid}: mode={meta.get('visual_source_mode')} anchor={meta.get('clip_anchor_mode')}")
 
-            meta = build_short_for_track(tid, force_rebuild=True, brand_handle=ch_hnd, use_flow=True)
-            meta_file = SHORTS_META_DIR / f"short_{meta['deity']}_{tid}.json"
-            item["video_path"] = meta["video_path"]
-            item["meta_path"] = str(meta_file.relative_to(ROOT))
+        meta_file = SHORTS_META_DIR / f"short_{meta['deity']}_{tid}.json"
+        item["video_path"] = meta["video_path"]
+        item["meta_path"] = str(meta_file.relative_to(ROOT))
+        item["youtube_film_id"] = meta.get("youtube_film_id")
+        item["chorus_start_sec"] = meta.get("peak_start_sec")
+        item["duration_sec"] = meta.get("duration_sec")
+        if item["status"] != "completed":
             item["status"] = "ready_to_republish"
-            item["updated_at"] = datetime.now(IST).isoformat()
-            save_queue(items)
-            print(f"  ✅ Built Flow Replacement Short: {meta['video_path']} (ready to replace {item['old_youtube_id']})")
-    finally:
-        subprocess.run(["pkill", "-f", f"[r]emote-debugging-port={CDP_PORT}"], check=False)
+        item["updated_at"] = datetime.now(IST).isoformat()
+        save_queue(items)
+        print(
+            f"  ✅ Built Discography Chorus Short: {meta['video_path']} "
+            f"[{meta.get('peak_start_sec')}s -> {round(meta.get('peak_start_sec', 0) + meta.get('duration_sec', 0), 2)}s] "
+            f"(master={meta.get('youtube_film_id')}, replaces {item['old_youtube_id']})"
+        )
 
 
-def publish_ready_replacements(items: list[dict], mark_old_private: bool = False) -> int:
+def publish_ready_replacements(items: list[dict], mark_old_private: bool = False, channel_filter: str = None) -> int:
     """
-    Uploads ready Flow upgrade Shorts as PUBLIC while leaving already-published videos untouched
-    (`public` as-is) by default unless `mark_old_private=True` is explicitly requested.
-    Safe to call from cron (`--upload-only`) without needing a display/browser!
+    Uploads ready @guru-kula-desam Chorus-clipped Shorts as PUBLIC while leaving the 11 original
+    public Shorts untouched (`public` as-is) by default unless `mark_old_private=True`.
     """
     reg = load_published_registry()
     pub_map = reg.get("published_shorts", {})
@@ -223,6 +247,9 @@ def publish_ready_replacements(items: list[dict], mark_old_private: bool = False
     replaced_count = 0
 
     for item in items:
+        if channel_filter and item["channel_key"] != channel_filter.lower():
+            continue
+
         if mark_old_private and item.get("new_youtube_id") and not item.get("old_marked_private"):
             if mark_old_video_private(item["channel_key"], item["old_youtube_id"]):
                 item["old_marked_private"] = True
@@ -244,6 +271,10 @@ def publish_ready_replacements(items: list[dict], mark_old_private: bool = False
             continue
 
         meta = json.loads((ROOT / meta_rel).read_text(encoding="utf-8"))
+        if meta.get("visual_source_mode") != "original_master_clip" or meta.get("clip_anchor_mode") != "chorus_v1":
+            print(f"  ❌ Skipping {item['track_id']}: non-chorus/non-discography build.")
+            continue
+
         yt_vid_id = upload_short_via_api(meta, publish_at_dt=None, channel_key=ch_key)
 
         if yt_vid_id == "CHANNEL_UPLOAD_LIMIT":
@@ -263,8 +294,8 @@ def publish_ready_replacements(items: list[dict], mark_old_private: bool = False
             item["updated_at"] = datetime.now(IST).isoformat()
             save_queue(items)
 
-            tid = item["track_id"]
-            pub_map[f"{tid}__flow_upgrade"] = {
+            tid = item.get("legacy_track_id") or item["track_id"]
+            pub_map[f"{tid}__discography_upgrade"] = {
                 "youtube_short_id": yt_vid_id,
                 "legacy_track_id": tid,
                 "upgraded_from_video_id": item["old_youtube_id"],
@@ -272,8 +303,12 @@ def publish_ready_replacements(items: list[dict], mark_old_private: bool = False
                 "short_url": f"https://youtube.com/shorts/{yt_vid_id}",
                 "title": meta["title"],
                 "deity": meta["deity"],
-                "visual_source_mode": "google_flow_dedicated",
-                "visual_source_file": f"google_flow_renders/{tid}",
+                "visual_source_mode": "original_master_clip",
+                "visual_source_file": meta.get("visual_source_file"),
+                "youtube_film_id": meta.get("youtube_film_id"),
+                "clip_anchor_mode": meta.get("clip_anchor_mode"),
+                "peak_start_sec": meta.get("peak_start_sec"),
+                "duration_sec": meta.get("duration_sec"),
                 "panchangam_occasion": meta.get("panchangam", {}).get("occasion_badge_ta", ""),
                 "uploaded_at": datetime.now(IST).isoformat(),
                 "scheduled_for": None,
@@ -288,41 +323,52 @@ def publish_ready_replacements(items: list[dict], mark_old_private: bool = False
 
 def print_queue_status():
     items = load_queue()
-    print("=" * 95)
-    print("🔄 GOOGLE FLOW 9:16 UPGRADE SHORTS QUEUE (EXISTING VIDEOS KEPT PUBLIC AS-IS)")
-    print("=" * 95)
+    print("=" * 100)
+    print("🔄 @GURU-KULA-DESAM DISCOGRAPHY CHORUS UPGRADE SHORTS QUEUE (ORIGINAL 11 KEPT PUBLIC AS-IS)")
+    print("=" * 100)
     for idx, it in enumerate(items, 1):
         new_str = f"-> NEW: https://youtube.com/shorts/{it['new_youtube_id']}" if it.get("new_youtube_id") else ""
         priv_str = "🔒 OLD=PRIVATE" if it.get("old_marked_private") else "✅ OLD KEPT PUBLIC AS-IS"
+        win_str = f"[{it.get('chorus_start_sec')}s +{it.get('duration_sec')}s]" if it.get("chorus_start_sec") is not None else ""
         print(
-            f"  {idx:2d}. [{it['channel_handle']:<16}] {it['track_id']} | Old={it['old_youtube_id']} | "
-            f"{it['status']:<20} | {priv_str} {new_str}\n      {it['song_label']}"
+            f"  {idx:2d}. [{it['channel_handle']:<16}] {it['track_id']:<12} | Old={it['old_youtube_id']} | "
+            f"{it['status']:<20} | {win_str:<16} | {priv_str} {new_str}\n      {it['song_label']}"
         )
-    print("=" * 95)
+    print("=" * 100)
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Publish upgraded native 9:16 Flow Shorts (keeps old videos public as-is by default)")
-    ap.add_argument("--status", action="store_true", help="Print status of all 11 Flow upgrade Shorts")
-    ap.add_argument("--upload-only", action="store_true", help="Only upload already-built Flow upgrade Shorts")
+    ap = argparse.ArgumentParser(description="Publish Chorus-clipped @guru-kula-desam Shorts (keeps old videos public as-is)")
+    ap.add_argument("--status", action="store_true", help="Print status of all 11 Discography Chorus upgrade Shorts")
+    ap.add_argument("--reset-for-discography", action="store_true", help="Reset discarded Flow queue entries to pending_discography")
+    ap.add_argument("--build-only", action="store_true", help="Build all 11 Discography Chorus Shorts without uploading")
+    ap.add_argument("--force-rebuild", action="store_true", help="Force rebuild all 11 Shorts from @guru-kula-desam Master Films")
+    ap.add_argument("--upload-only", action="store_true", help="Only upload already-built Discography Chorus Shorts")
+    ap.add_argument("--channel", type=str, default=None, help="Filter upload to @gurukuladesam or @gurukuladesam2")
     ap.add_argument("--mark-old-private", action="store_true", help="Explicitly mark old videos private (disabled by default)")
-    ap.add_argument("--sync-git", action="store_true", help="Push updated queue & registry JSONs to remote")
-    ap.add_argument("--scenes", type=int, default=4, help="Number of native 9:16 Flow clips per Short (default: 4)")
+    ap.add_argument("--sync-git", action="store_true", help="Push updated registry JSON to remote")
     args = ap.parse_args()
 
     items = load_queue()
+    if args.reset_for_discography:
+        items = reset_queue_for_discography(items)
+
     if args.status:
         print_queue_status()
         return
 
     if not args.upload_only:
-        ensure_all_flow_shorts_built(items, scenes_per_short=args.scenes)
+        ensure_all_discography_shorts_built(items, force_rebuild=args.force_rebuild)
 
-    replaced = publish_ready_replacements(items, mark_old_private=args.mark_old_private)
+    if args.build_only:
+        print_queue_status()
+        return
+
+    replaced = publish_ready_replacements(items, mark_old_private=args.mark_old_private, channel_filter=args.channel)
     if args.sync_git and replaced > 0:
         from tools.shorts_autonomous_daemon import push_registry_to_remote
         push_registry_to_remote()
-    print(f"\n🏁 Flow Upgrade Pass Summary: {replaced} new Flow Shorts published (existing videos kept PUBLIC as-is).")
+    print(f"\n🏁 Discography Chorus Upgrade Summary: {replaced} new Shorts published (original 11 kept PUBLIC as-is).")
     print_queue_status()
 
 
