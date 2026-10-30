@@ -84,17 +84,6 @@
       "scheduled_for": "2026-10-30T16:00:00+05:30",
       "status": "scheduled"
     },
-    "C9Ea0-FfMNs": {
-      "youtube_short_id": "M8U6BHwq0sQ",
-      "channel_handle": "@GuruKulaDesam2",
-      "short_url": "https://youtube.com/shorts/M8U6BHwq0sQ",
-      "title": "📖 நற்பண்பு — திருப்புகழ்: நாத விந்துகள் (பழனி) | Thiruppugazh: Naatha Vindhugal #Shorts",
-      "deity": "murugan",
-      "panchangam_occasion": "ஐப்பசி 13 • வெள்ளிக்கிழமை • மிருகசீரிடம்",
-      "uploaded_at": "2026-10-29T21:26:55.059809+05:30",
-      "scheduled_for": "2026-10-30T20:00:00+05:30",
-      "status": "scheduled"
-    },
     "--4jzoezBW8": {
       "youtube_short_id": "4VjGP9Bbp7s",
       "channel_handle": "@GuruKulaDesam",
@@ -128,17 +117,6 @@
       "scheduled_for": "2026-10-30T16:00:00+05:30",
       "status": "scheduled"
     },
-    "1W9SHSo-2Vk": {
-      "youtube_short_id": "yXhBYc4uKrg",
-      "channel_handle": "@GuruKulaDesam",
-      "short_url": "https://youtube.com/shorts/yXhBYc4uKrg",
-      "title": "📖 நற்பண்பு — அருட்பெருஞ்சோதி அகவல் II | Arutperunjothi Agaval II #Shorts",
-      "deity": "vallalar",
-      "panchangam_occasion": "ஐப்பசி 13 • வெள்ளிக்கிழமை • மிருகசீரிடம்",
-      "uploaded_at": "2026-10-29T21:43:43.902103+05:30",
-      "scheduled_for": "2026-10-30T20:00:00+05:30",
-      "status": "scheduled"
-    },
     "02C8glMmetw": {
       "youtube_short_id": "FKGB4axuYZk",
       "channel_handle": "@GuruKulaDesam",
@@ -151,13 +129,8 @@
       "status": "public"
     }
   },
-  "scheduled_slots": [
-    "2026-10-28T12:00:00+05:30",
-    "2026-10-28T18:00:00+05:30",
-    "2026-10-29T06:00:00+05:30",
-    "2026-10-30T06:00:00+05:30",
-    "2026-10-30T11:00:00+05:30",
-    "2026-10-30T16:00:00+05:30",
-    "2026-10-30T20:00:00+05:30"
-  ]
+  "scheduled_slots_by_channel": {
+    "@gurukuladesam": [],
+    "@gurukuladesam2": []
+  }
 }

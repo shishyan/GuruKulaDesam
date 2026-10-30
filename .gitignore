@@ -52,6 +52,7 @@ print_*.py
 # Raw video renders and heavy production scratch
 renders/
 production/*.mp4
+production/shorts_metadata/short_*.json
 production/temp*/
 production/google_flow_renders/
 production/preview_*.jpg
