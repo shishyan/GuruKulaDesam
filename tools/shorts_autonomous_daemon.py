@@ -345,23 +345,6 @@ def run_batch_pipeline(
     channel_filter: str = None,
     use_flow: bool = False,
 ):
-    # Priority 0: If any legacy bad-visual Shorts have fresh Flow replacements waiting to republish,
-    # publish them FIRST and immediately mark their old bad videos PRIVATE!
-    channels_reserved_for_republish: set[str] = set()
-    try:
-        from tools.republish_legacy_with_flow import QUEUE_FILE, load_queue, publish_ready_replacements
-        if QUEUE_FILE.exists():
-            q_items = load_queue()
-            if any(it.get("status") != "completed" for it in q_items):
-                print("🔄 Processing pending Flow replacements for legacy bad-visual Shorts first...")
-                publish_ready_replacements(q_items)
-                q_items = load_queue()
-                for it in q_items:
-                    if it.get("status") != "completed" and it.get("channel_key"):
-                        channels_reserved_for_republish.add(it["channel_key"])
-    except Exception as e:
-        print(f"  ℹ️ Legacy Flow republish check note: {e}")
-
     reg = load_published_registry()
     published_map = reg.get("published_shorts", {})
     used_ids = set(published_map.keys())
@@ -397,9 +380,7 @@ def run_batch_pipeline(
         else:
             ch_slots = [datetime.now(IST)] * count
 
-        channel_limit_hit = ch_key in channels_reserved_for_republish
-        if channel_limit_hit:
-            print(f"ℹ️ Reserving {ch_hnd} upload slots strictly for pending Flow legacy replacements until all are live.")
+        channel_limit_hit = False
         session_used_ids = set(used_ids)
         session_fps = set(live_fps)
 

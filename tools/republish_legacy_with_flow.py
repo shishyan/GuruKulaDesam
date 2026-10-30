@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 tools/republish_legacy_with_flow.py
-Republishes all 11 legacy bad-visual Shorts across @GuruKulaDesam (4) and @GuruKulaDesam2 (7)
-with brand-new native 9:16 Google Flow song-specific videos, and ATOMICALLY marks each old
-legacy video as `private` ONLY AFTER its new Flow replacement Short is published live!
+Publishes upgraded native 9:16 Google Flow Shorts across @GuruKulaDesam (4) and @GuruKulaDesam2 (7)
+while keeping all already-published legacy videos untouched (`public` as-is) by default so they can
+be reviewed first and switched to `Private` manually when desired (or via explicit `--mark-old-private`).
 """
 
 import sys
@@ -211,10 +211,10 @@ def ensure_all_flow_shorts_built(items: list[dict], scenes_per_short: int = 4):
         subprocess.run(["pkill", "-f", f"[r]emote-debugging-port={CDP_PORT}"], check=False)
 
 
-def publish_ready_replacements(items: list[dict]) -> int:
+def publish_ready_replacements(items: list[dict], mark_old_private: bool = False) -> int:
     """
-    Uploads ready Flow replacement Shorts as PUBLIC and immediately marks each corresponding
-    old bad-visual video as PRIVATE once the new video is live.
+    Uploads ready Flow upgrade Shorts as PUBLIC while leaving already-published videos untouched
+    (`public` as-is) by default unless `mark_old_private=True` is explicitly requested.
     Safe to call from cron (`--upload-only`) without needing a display/browser!
     """
     reg = load_published_registry()
@@ -223,8 +223,7 @@ def publish_ready_replacements(items: list[dict]) -> int:
     replaced_count = 0
 
     for item in items:
-        # Handle crash-recovery edge case: new_youtube_id already uploaded, old not yet marked private
-        if item.get("new_youtube_id") and not item.get("old_marked_private"):
+        if mark_old_private and item.get("new_youtube_id") and not item.get("old_marked_private"):
             if mark_old_video_private(item["channel_key"], item["old_youtube_id"]):
                 item["old_marked_private"] = True
                 item["status"] = "completed"
@@ -253,20 +252,22 @@ def publish_ready_replacements(items: list[dict]) -> int:
 
         if yt_vid_id:
             item["new_youtube_id"] = yt_vid_id
-            item["updated_at"] = datetime.now(IST).isoformat()
-            save_queue(items)
-
-            # Immediately mark old bad-visual video as PRIVATE now that replacement is PUBLIC!
-            priv_ok = mark_old_video_private(ch_key, item["old_youtube_id"])
-            item["old_marked_private"] = priv_ok
-            item["status"] = "completed" if priv_ok else "uploaded_pending_private"
+            if mark_old_private:
+                priv_ok = mark_old_video_private(ch_key, item["old_youtube_id"])
+                item["old_marked_private"] = priv_ok
+                item["status"] = "completed" if priv_ok else "uploaded_pending_private"
+            else:
+                item["old_marked_private"] = False
+                item["status"] = "completed"
+                print(f"  ✅ Kept existing video https://youtube.com/shorts/{item['old_youtube_id']} PUBLIC as-is (for manual review).")
             item["updated_at"] = datetime.now(IST).isoformat()
             save_queue(items)
 
             tid = item["track_id"]
-            pub_map[tid] = {
+            pub_map[f"{tid}__flow_upgrade"] = {
                 "youtube_short_id": yt_vid_id,
-                "replaced_legacy_video_id": item["old_youtube_id"],
+                "legacy_track_id": tid,
+                "upgraded_from_video_id": item["old_youtube_id"],
                 "channel_handle": item["channel_handle"],
                 "short_url": f"https://youtube.com/shorts/{yt_vid_id}",
                 "title": meta["title"],
@@ -288,11 +289,11 @@ def publish_ready_replacements(items: list[dict]) -> int:
 def print_queue_status():
     items = load_queue()
     print("=" * 95)
-    print("🔄 LEGACY BAD-VIDEO SHORTS -> NEW GOOGLE FLOW 9:16 REPUBLISH & MARK-PRIVATE QUEUE")
+    print("🔄 GOOGLE FLOW 9:16 UPGRADE SHORTS QUEUE (EXISTING VIDEOS KEPT PUBLIC AS-IS)")
     print("=" * 95)
     for idx, it in enumerate(items, 1):
         new_str = f"-> NEW: https://youtube.com/shorts/{it['new_youtube_id']}" if it.get("new_youtube_id") else ""
-        priv_str = "🔒 OLD=PRIVATE" if it.get("old_marked_private") else "⏳ OLD=PUBLIC (until new is live)"
+        priv_str = "🔒 OLD=PRIVATE" if it.get("old_marked_private") else "✅ OLD KEPT PUBLIC AS-IS"
         print(
             f"  {idx:2d}. [{it['channel_handle']:<16}] {it['track_id']} | Old={it['old_youtube_id']} | "
             f"{it['status']:<20} | {priv_str} {new_str}\n      {it['song_label']}"
@@ -301,9 +302,11 @@ def print_queue_status():
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Republish legacy bad-video Shorts with new Flow videos & mark old private")
-    ap.add_argument("--status", action="store_true", help="Print status of all 11 legacy replacements")
-    ap.add_argument("--upload-only", action="store_true", help="Only upload already-built Flow replacements & mark old private")
+    ap = argparse.ArgumentParser(description="Publish upgraded native 9:16 Flow Shorts (keeps old videos public as-is by default)")
+    ap.add_argument("--status", action="store_true", help="Print status of all 11 Flow upgrade Shorts")
+    ap.add_argument("--upload-only", action="store_true", help="Only upload already-built Flow upgrade Shorts")
+    ap.add_argument("--mark-old-private", action="store_true", help="Explicitly mark old videos private (disabled by default)")
+    ap.add_argument("--sync-git", action="store_true", help="Push updated queue & registry JSONs to remote")
     ap.add_argument("--scenes", type=int, default=4, help="Number of native 9:16 Flow clips per Short (default: 4)")
     args = ap.parse_args()
 
@@ -315,8 +318,11 @@ def main():
     if not args.upload_only:
         ensure_all_flow_shorts_built(items, scenes_per_short=args.scenes)
 
-    replaced = publish_ready_replacements(items)
-    print(f"\n🏁 Republish Pass Summary: {replaced} new Flow Shorts published & old bad videos marked PRIVATE.")
+    replaced = publish_ready_replacements(items, mark_old_private=args.mark_old_private)
+    if args.sync_git and replaced > 0:
+        from tools.shorts_autonomous_daemon import push_registry_to_remote
+        push_registry_to_remote()
+    print(f"\n🏁 Flow Upgrade Pass Summary: {replaced} new Flow Shorts published (existing videos kept PUBLIC as-is).")
     print_queue_status()
 
 
