@@ -149,6 +149,28 @@
       "uploaded_at": "2026-10-29T22:44:59.206195+05:30",
       "scheduled_for": null,
       "status": "public"
+    },
+    "0PvXn4gqlFM": {
+      "youtube_short_id": "l_vevVu4bSI",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/l_vevVu4bSI",
+      "title": "📖 நற்சிந்தனை — முழு கவசம் | Kandha Sashti Kavasam #Shorts",
+      "deity": "murugan",
+      "panchangam_occasion": "சஷ்டி விரத வழிபாடு | SASHTI VRATHAM",
+      "uploaded_at": "2026-10-30T11:11:49.737165+05:30",
+      "scheduled_for": "2026-10-31T06:00:00+05:30",
+      "status": "scheduled"
+    },
+    "RVMUEr1MOFo": {
+      "youtube_short_id": "hsAA6tbNTp0",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/hsAA6tbNTp0",
+      "title": "📖 நற்பண்பு — பாலும் தெளிதேனும் | Paalum Thelithenum #Shorts",
+      "deity": "vinayagar",
+      "panchangam_occasion": "சஷ்டி விரத வழிபாடு | SASHTI VRATHAM",
+      "uploaded_at": "2026-10-30T11:12:27.295612+05:30",
+      "scheduled_for": "2026-10-31T11:00:00+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots": [
@@ -158,6 +180,8 @@
     "2026-10-30T06:00:00+05:30",
     "2026-10-30T11:00:00+05:30",
     "2026-10-30T16:00:00+05:30",
-    "2026-10-30T20:00:00+05:30"
+    "2026-10-30T20:00:00+05:30",
+    "2026-10-31T06:00:00+05:30",
+    "2026-10-31T11:00:00+05:30"
   ]
 }
