@@ -152,22 +152,25 @@ def is_strictly_unique_song_clip(mp4_path: Path) -> bool:
         return False
 
 
-def get_track_dedicated_flow_clips(track_id: str) -> list[Path]:
+def get_track_dedicated_flow_clips(track_id: str, require_fresh_flow_short: bool = False) -> list[Path]:
     """
     Returns ONLY Flow video clips created specifically for `track_id` (NEVER from any other song!).
+    When `require_fresh_flow_short=True`, strictly requires newly generated `flow_short_*.mp4` clips.
     """
-    if track_id in ("AW4cljBWy2w", "Lki_Y8OSljs"):
-        return []
     for base in (FLOW_RENDERS_DIR, WIN_FLOW_RENDERS_DIR):
         tdir = base / track_id
         if not tdir.exists():
             continue
-        # Prefer fresh `flow_short_*.mp4` clips verified by `flow_verified.json`
-        verified_clips = sorted(tdir.glob("flow_short_*.mp4"))
+        # 1. Always prefer fresh `flow_short_*.mp4` clips verified by `flow_verified.json`
+        verified_clips = [c for c in sorted(tdir.glob("flow_short_*.mp4")) if c.stat().st_size > 250_000]
         if len(verified_clips) >= 3:
-            return [c for c in verified_clips if c.stat().st_size > 250_000]
-        # Otherwise accept `scene_*.mp4` ONLY if >= 5 scenes are strictly unique to this song
-        own_scenes = [c for c in sorted(tdir.glob("scene_*.mp4")) if is_strictly_unique_song_clip(c)]
+            return verified_clips
+        if require_fresh_flow_short:
+            continue
+        if track_id in ("AW4cljBWy2w", "Lki_Y8OSljs"):
+            continue
+        # 2. Otherwise accept `scene_*.mp4` ONLY if >= 5 scenes are strictly unique to this song
+        own_scenes = [c for c in sorted(tdir.glob("scene_*.mp4")) if c.stat().st_size > 250_000 and is_strictly_unique_song_clip(c)]
         if len(own_scenes) >= 5:
             return own_scenes
     return []
@@ -294,12 +297,15 @@ def resolve_original_master_video(track_id: str, catalog_entry: dict | None = No
 
 
 def detect_deity_category(track_id: str, meta_entry: dict, manifest_cat: str = "") -> str:
-    combined = f"{manifest_cat} {meta_entry.get('genre', '')} {meta_entry.get('title', '')}".lower()
-    if "திருக்குறள்" in combined or "thirukkural" in combined or "அதிகாரம்" in combined or "adhikaram" in combined or "kural" in combined:
+    title_l = f"{meta_entry.get('title', '')}".lower()
+    combined = f"{manifest_cat} {meta_entry.get('genre', '')} {title_l}".lower()
+    if any(k in title_l for k in ("திருக்குறள்", "thirukkural", "அதிகாரம்", "adhikaram")):
         return "thirukkural"
+    if any(k in title_l for k in ("சுப்ரமணிய", "subramani", "திருப்புகழ்", "thiruppugazh", "ஆறுமுகம்", "arumugam", "கந்த", "kandha", "kandar", "முருக", "murug")):
+        return "murugan"
     if any(k in combined for k in ("திருவருட்பா", "thiruvarutpa", "வள்ளலார்", "vallalar", "அருட்பெருஞ்ஜோதி", "அருட்பெருஞ்சோதி", "arutperunjothi", "கொன்றை வேந்தன்", "konrai vendhan")):
         return "vallalar"
-    if any(k in combined for k in ("விநாயக", "vinayag", "கணபதி", "ganapathi", "கண நாதா", "gana natha", "கணேச", "ganesha", "கைத்தல நிறைகனி", "kaiththala", "திகட சக்கர", "thigada", "பிடியதன் உருவுமை", "pidiyathan")):
+    if any(k in combined for k in ("விநாயக", "vinayag", "கணபதி", "ganapathi", "கண நாதா", "gana natha", "கணேச", "ganesha", "கைத்தல நிறைகனி", "kaiththala", "திகட சக்கர", "thigada", "பிடியதன் உருவுமை", "pidiyathan", "நான்மணிமாலை")):
         return "vinayagar"
     if any(k in combined for k in ("அம்மன்", "amman", "அபிராமி", "abhirami", "சக்தி", "sakthi", "சரஸ்வதி", "saraswathi", "லக்ஷ்மி", "lakshmi", "கருமாரி", "karumari", "ரேணுகாம்பாள்", "renukambal", "காயத்ரி", "gayathri")):
         return "amman"
@@ -309,6 +315,8 @@ def detect_deity_category(track_id: str, meta_entry: dict, manifest_cat: str = "
         return "murugan"
     if any(k in combined for k in ("சிவ", "shiva", "siva", "திருவாசகம்", "thiruvasagam", "தேவாரம்", "thevaram", "ஈஸ்வர", "ishwara", "eeswara", "திருமந்திரம்", "thirumanthiram", "பெரியபுராணம்", "periyapuranam", "தில்லை", "thillai", "அருணாசலம்", "arunachalam", "நடராஜ", "nataraj", "கோளறு", "திருநீற்று")):
         return "shiva"
+    if any(k in combined for k in ("திருக்குறள்", "thirukkural", "அதிகாரம்", "adhikaram")):
+        return "thirukkural"
     return "murugan"
 
 
@@ -611,7 +619,7 @@ def build_short_for_track(
             if not meta_entry.get(k) and cat_entry.get(k):
                 meta_entry[k] = cat_entry[k]
 
-    deity_key = cat_entry["deity"] if cat_entry else detect_deity_category(track_id, meta_entry)
+    deity_key = detect_deity_category(track_id, meta_entry, cat_entry.get("deity", "") if cat_entry else "")
     panchangam_info = get_auspicious_alignment_for_datetime(target_dt or datetime.now(IST))
     sacred_cat = classify_sacred_category(deity_key, meta_entry, panchangam_info)
 
@@ -640,6 +648,8 @@ def build_short_for_track(
     shutil.rmtree(work_dir, ignore_errors=True)
     work_dir.mkdir(parents=True, exist_ok=True)
 
+    is_portrait_source = False
+    flow_pts_stretch = 1.0
     visual_source_mode = None
     if master_vid is not None:
         visual_source_mode = "original_master_clip"
@@ -649,10 +659,10 @@ def build_short_for_track(
         video_seek_start = start_sec
         source_desc = f"Original Master Video ({master_vid.name})"
     else:
-        dedicated_clips = get_track_dedicated_flow_clips(track_id)
+        dedicated_clips = get_track_dedicated_flow_clips(track_id, require_fresh_flow_short=use_flow)
         if len(dedicated_clips) < 3 and use_flow:
             from tools.flow_autonomous_generator import generate_flow_clips_for_short
-            dedicated_clips = generate_flow_clips_for_short(track_id, scene_count=5)
+            dedicated_clips = generate_flow_clips_for_short(track_id, scene_count=4)
 
         if len(dedicated_clips) < 3:
             shutil.rmtree(work_dir, ignore_errors=True)
@@ -671,23 +681,57 @@ def build_short_for_track(
         start_sec, clip_dur = find_audio_peak_window(audio_path, window_sec=duration_sec)
         raw_source_video = work_dir / "flow_dedicated_timeline.mp4"
         concat_txt = work_dir / "scenes_concat.txt"
-        selected_scenes = []
-        total_s = 0.0
-        idx = 0
-        while total_s < clip_dur + 4.0:
-            selected_scenes.append(dedicated_clips[idx % len(dedicated_clips)])
-            total_s += 8.0
-            idx += 1
-        with open(concat_txt, "w", encoding="utf-8") as f:
-            for c in selected_scenes:
-                f.write(f"file '{str(c.resolve()).replace(chr(92), '/')}'\n")
-        subprocess.run(
-            [FFMPEG, "-y", "-f", "concat", "-safe", "0", "-i", str(concat_txt), "-c", "copy", str(raw_source_video)],
-            check=True, capture_output=True,
-        )
+
+        # Probe dimensions & total duration of unique Flow clips
+        try:
+            probe_wh = subprocess.check_output(
+                [FFPROBE, "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0:s=x", str(dedicated_clips[0])],
+                text=True,
+            ).strip()
+            sw, sh = [int(x) for x in probe_wh.split("x")[:2]]
+            is_portrait_source = sw < sh
+        except Exception:
+            is_portrait_source = False
+
+        unique_total_dur = sum(get_media_duration(c) for c in dedicated_clips)
+        if unique_total_dur >= clip_dur:
+            selected_scenes = list(dedicated_clips)
+            flow_pts_stretch = 1.0
+        elif unique_total_dur >= clip_dur * 0.65:
+            # Gentle devotional slow-motion (e.g. 28-31.7s -> 35.6s) so ZERO scenes repeat!
+            selected_scenes = list(dedicated_clips)
+            flow_pts_stretch = min(1.50, (clip_dur + 0.6) / max(1.0, unique_total_dur))
+        else:
+            selected_scenes = []
+            total_s = 0.0
+            idx = 0
+            while total_s < clip_dur + 4.0:
+                c = dedicated_clips[idx % len(dedicated_clips)]
+                selected_scenes.append(c)
+                total_s += max(4.0, get_media_duration(c))
+                idx += 1
+
+        target_w, target_h = (720, 1280) if is_portrait_source else (1280, 720)
+        concat_cmd = [FFMPEG, "-nostdin", "-y"]
+        fc_parts = []
+        for idx_c, c in enumerate(selected_scenes):
+            concat_cmd += ["-i", str(c.resolve())]
+            fc_parts.append(
+                f"[{idx_c}:v]scale={target_w}:{target_h}:force_original_aspect_ratio=increase:flags=lanczos,"
+                f"crop={target_w}:{target_h},setsar=1,fps=24,format=yuv420p[cv{idx_c}]"
+            )
+        concat_inputs = "".join(f"[cv{idx_c}]" for idx_c in range(len(selected_scenes)))
+        fc_parts.append(f"{concat_inputs}concat=n={len(selected_scenes)}:v=1:a=0[vcat]")
+        concat_cmd += [
+            "-filter_complex", ";".join(fc_parts),
+            "-map", "[vcat]", "-an",
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "15", "-pix_fmt", "yuv420p",
+            str(raw_source_video),
+        ]
+        subprocess.run(concat_cmd, check=True, capture_output=True)
         video_seek_start = 0.0
         has_burned_bars = False
-        source_desc = f"Song-Dedicated Google Flow Clips ({len(dedicated_clips)} clips for {track_id})"
+        source_desc = f"Song-Dedicated Google Flow {'9:16 ' if is_portrait_source else ''}Clips ({len(dedicated_clips)} clips for {track_id})"
 
     print("=" * 80)
     print(f"🔥 BUILDING 100% SONG-AUTHENTIC 9:16 SHORT: {sacred_cat['title']} | [{deity_key.upper()}] {track_id}")
@@ -717,19 +761,24 @@ def build_short_for_track(
         ]
         audio_map_in = "1:a"
 
-    # Trim outer 7% side margins (removes corner lamps/dhoopam/watermark); if layered Master Film,
-    # also trim top 6% header pill and bottom 16.2% horizontal karaoke subtitles so ZERO text is cut!
-    if has_burned_bars:
-        pre_crop = "crop=iw*0.86:ih*0.778:iw*0.07:ih*0.06"
-    else:
-        pre_crop = "crop=iw*0.86:ih:iw*0.07:0"
-
     dt_chain = ",".join(dt_filters)
-    filter_parts = [
-        f"[0:v]fps={fps_short},{pre_crop},scale=-2:1440,"
-        f"crop={W}:1440:'(iw-ow)/2+min((iw-ow)/2,160)*sin(2*PI*t/22.0)':0,"
-        f"pad={W}:{H}:0:288:black,{dt_chain},format=yuv420p[v_out]",
-    ]
+    pts_filter = f"setpts={flow_pts_stretch:.4f}*PTS," if flow_pts_stretch > 1.01 else ""
+    if is_portrait_source:
+        filter_parts = [
+            f"[0:v]{pts_filter}fps={fps_short},scale={W}:1920:force_original_aspect_ratio=increase:flags=lanczos,"
+            f"crop={W}:1440:(iw-{W})/2:(ih-1440)*0.40,"
+            f"pad={W}:{H}:0:288:black,{dt_chain},format=yuv420p[v_out]",
+        ]
+    else:
+        if has_burned_bars:
+            pre_crop = "crop=iw*0.86:ih*0.778:iw*0.07:ih*0.06"
+        else:
+            pre_crop = "crop=iw*0.86:ih:iw*0.07:0"
+        filter_parts = [
+            f"[0:v]{pts_filter}fps={fps_short},{pre_crop},scale=-2:1440,"
+            f"crop={W}:1440:'(iw-ow)/2+min((iw-ow)/2,160)*sin(2*PI*t/22.0)':0,"
+            f"pad={W}:{H}:0:288:black,{dt_chain},format=yuv420p[v_out]",
+        ]
 
     fade_out_st = max(0.5, clip_dur - 0.8)
     filter_parts.append(f"[{audio_map_in}]afade=t=in:st=0:d=0.35,afade=t=out:st={fade_out_st:.2f}:d=0.8[a_out]")
@@ -796,7 +845,7 @@ def list_candidate_tracks(deity_filter: str = None, prioritize_high_energy: bool
 
     # 1. All verified Original Master Films (primary source!)
     for fid, entry in master_cat.items():
-        deity = entry["deity"]
+        deity = detect_deity_category(fid, {"title": entry.get("title", fid)}, entry.get("deity", ""))
         if deity_filter and deity != deity_filter.lower():
             continue
         # Ensure accessible either locally or via YouTube yt-dlp
