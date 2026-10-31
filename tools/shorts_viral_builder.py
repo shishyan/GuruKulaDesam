@@ -134,7 +134,27 @@ NON_DEVOTIONAL_EXCLUDED_KEYWORDS = (
     "சுதந்திர",
     "வந்தே மாதரம்",
     "பாரதியார் பாடல்",
+    "remix",
 )
+
+# Dedicated playlist on @guru-kula-desam ("The Remix List" -> PLOtFcgNeGYyI) and all Remix video IDs
+# strictly excluded from the Shorts publishing scope:
+EXCLUDED_REMIX_PLAYLIST_ID = "PLOtFcgNeGYyI"
+EXCLUDED_REMIX_VIDEO_IDS = frozenset({
+    "28Xnfhctf0I", "Iky5L-131A4", "cEIEecb51Fc", "R-5gWfRNMts", "0DoegY9d0ZM", "cUt716Zafy0",
+    "FS5fUOxZySE", "2Pun6K7h984", "0bz1myKXoJQ", "UyCe3KLqY_8", "OzejLLvDq5s", "r75xdfETSbE",
+    "RAUafMVpT5k", "GN181JJ1lXU", "RY7nPGorS94", "ulW6fg4lkYA", "q2oGlYiV-qg", "FGFVertqRUU",
+    "J-mAIpyxy4A", "XRizXIUU57g", "tj_5hsasdyU", "Fh3HfGUObmg", "FXMVQIidbJU", "PmziMZrMHfE",
+    "37qaN4sG53k", "Vj6wcfC3rPk", "tLt9J-X9WOE", "5coBrJy6a5M", "9-SvikTz2FU", "DhHGetUJlAI",
+    "F-aVgFOdKFo", "VMqFjcQtebw", "mVQJIrLtnCk", "JGslKeAreOE", "JvonvWQHKQY", "djYooU1LmGk",
+    "oEQ3sx6ujQc", "dVYI3ZgpDC8", "KLsXZa28uyE", "HRN77i6Kio8", "xVyPWHTMXHw", "wylRNpaJNmY",
+    "VVkl8bORJXg", "vbMywONB5Wc", "gjo0AfKBzsU", "2Qs07DTJvvM", "x3CyxNH5bpQ", "QXWB2raWKXE",
+    "rOowxP53oWA", "0WurYH-hkNM", "D95woYqPoPI", "QXqjB9UnD7E", "aZ830iKkqBs", "c5OwVOaYsW0",
+    "fQspUClJyg8", "zzJZkyX1GL4", "MM7sy4TQj6w", "785z3bWr43A", "MmZsN65ejRE", "628xa7-iMgM",
+    "hZl325VJwik", "nnZLI8AY4rs", "2N5_pir8gbM", "VqUGNZ9Uleo", "Wp7MvpC-P8c", "G5fGB22diek",
+    "koPghjI9FPE", "aPNYGn5ntIU", "PU0HJxRNmiw", "wzyyyzSJUV8", "w-wUOqoZyAY", "44mJquYpaRQ",
+    "VGpWJXwhogo",
+})
 
 DEITY_HOOKS = {
     "murugan": {
@@ -1108,7 +1128,7 @@ def list_candidate_tracks(deity_filter: str = None, prioritize_high_energy: bool
 
     for fid, entry in master_cat.items():
         yt_id = entry.get("youtube_film_id")
-        if not yt_id or yt_id in seen_yt_ids:
+        if not yt_id or yt_id in seen_yt_ids or yt_id in EXCLUDED_REMIX_VIDEO_IDS or fid in EXCLUDED_REMIX_VIDEO_IDS:
             continue
 
         raw_title = entry.get("title", fid)
