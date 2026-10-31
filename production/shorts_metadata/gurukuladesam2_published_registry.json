@@ -288,12 +288,72 @@
       "uploaded_at": "2026-10-30T23:53:16.908727+05:30",
       "scheduled_for": "2026-10-31T11:00:00+05:30",
       "status": "scheduled"
+    },
+    "M6_ZiNtpfZc": {
+      "youtube_short_id": "rncetr5QEAo",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/rncetr5QEAo",
+      "title": "📖 நல்லறம் — திருக்குறள்: அதிகாரம் 5 - இல்வாழ்க்கை | Thirukkural: Ilvazhkkai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "M6_ZiNtpfZc_clean.mp4",
+      "legacy_track_id": "C05GEfkJZaY",
+      "panchangam_occasion": "ஐப்பசி 15 • ஞாயிற்றுக்கிழமை • பூசம்",
+      "uploaded_at": "2026-10-31T21:05:11.197508+05:30",
+      "scheduled_for": "2026-11-01T06:00:00+05:30",
+      "status": "scheduled"
+    },
+    "6_qh4-WoWNM": {
+      "youtube_short_id": "Kiyw8DVs0Hs",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/Kiyw8DVs0Hs",
+      "title": "📖 நற்சிந்தனை — திருவருட்பா: அபராதத்து ஆற்றாமை | Thiruvarutpa: Abaraathathu Aatraamai #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "thirukkural_6_qh4-WoWNM_master.mp4",
+      "legacy_track_id": "6_qh4-WoWNM",
+      "panchangam_occasion": "ஐப்பசி 15 • ஞாயிற்றுக்கிழமை • பூசம்",
+      "uploaded_at": "2026-10-31T21:05:18.675357+05:30",
+      "scheduled_for": "2026-11-01T11:00:00+05:30",
+      "status": "scheduled"
+    },
+    "cEF4K6M-8LU": {
+      "youtube_short_id": "sgzxJRyEUP4",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/sgzxJRyEUP4",
+      "title": "📖 நல்லறம் — அதிகாரம் 4 - அறன் வலியுறுத்தல் | Aran Valiyuruthal #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "cEF4K6M-8LU_clean.mp4",
+      "legacy_track_id": null,
+      "panchangam_occasion": "ஐப்பசி 15 • ஞாயிற்றுக்கிழமை • பூசம்",
+      "uploaded_at": "2026-10-31T21:05:26.180625+05:30",
+      "scheduled_for": "2026-11-01T16:00:00+05:30",
+      "status": "scheduled"
+    },
+    "PXQW4sYo4nY": {
+      "youtube_short_id": "LmMsAqLfBkY",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/LmMsAqLfBkY",
+      "title": "📖 நற்சிந்தனை — திருவருட்பா: திருவடிச் சரண்புகல் | Thiruvarutpa: Thiruvadi Saranpugal #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "PXQW4sYo4nY.mp4",
+      "legacy_track_id": "PXQW4sYo4nY",
+      "panchangam_occasion": "ஐப்பசி 15 • ஞாயிற்றுக்கிழமை • பூசம்",
+      "uploaded_at": "2026-10-31T21:05:30.674960+05:30",
+      "scheduled_for": "2026-11-01T20:00:00+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
     "@gurukuladesam": [
       "2026-10-31T06:00:00+05:30",
-      "2026-10-31T11:00:00+05:30"
+      "2026-10-31T11:00:00+05:30",
+      "2026-11-01T06:00:00+05:30",
+      "2026-11-01T11:00:00+05:30",
+      "2026-11-01T16:00:00+05:30",
+      "2026-11-01T20:00:00+05:30"
     ],
     "@gurukuladesam2": []
   },
