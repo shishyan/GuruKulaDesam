@@ -1113,7 +1113,7 @@ def list_candidate_tracks(deity_filter: str = None, prioritize_high_energy: bool
 
         raw_title = entry.get("title", fid)
         title_l = raw_title.lower()
-        if any(ex in title_l for ex in NON_DEVOTIONAL_EXCLUDED_KEYWORDS):
+        if "remix" in title_l or any(ex in title_l for ex in NON_DEVOTIONAL_EXCLUDED_KEYWORDS):
             continue
 
         deity = detect_deity_category(fid, {"title": raw_title}, entry.get("deity", ""))
