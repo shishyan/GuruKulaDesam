@@ -388,25 +388,43 @@ def run_batch_pipeline(
             ch_slots = [datetime.now(IST)] * count
 
         channel_limit_hit = False
-        session_used_ids = set(used_ids)
+        rejected_static = set(reg.get("rejected_static_ids", []))
+        session_used_ids = set(used_ids) | rejected_static
         session_fps = set(live_fps)
 
         for slot_idx, slot_dt in enumerate(ch_slots):
             slot_iso = slot_dt.isoformat() if schedule_mode else None
             pick_dt = slot_dt if schedule_mode else slot_dt.replace(hour=DAILY_IST_SLOTS[slot_idx % len(DAILY_IST_SLOTS)][0])
 
-            track_item, panchangam = pick_track_for_slot(
-                pick_dt, session_used_ids, used_fingerprints=session_fps, forced_deity=deity_filter, channel_key=ch_key
-            )
-            tid = track_item["track_id"]
-            session_used_ids.add(tid)
-            if track_item.get("legacy_track_id"):
-                session_used_ids.add(track_item["legacy_track_id"])
+            meta = None
+            track_item = None
+            panchangam = None
+            tid = None
+            for _try in range(6):
+                track_item, panchangam = pick_track_for_slot(
+                    pick_dt, session_used_ids, used_fingerprints=session_fps, forced_deity=deity_filter, channel_key=ch_key
+                )
+                tid = track_item["track_id"]
+                session_used_ids.add(tid)
+                if track_item.get("legacy_track_id"):
+                    session_used_ids.add(track_item["legacy_track_id"])
+                try:
+                    meta = build_short_for_track(tid, target_dt=slot_dt, brand_handle=ch_hnd, use_flow=False)
+                    if meta.get("visual_source_mode") != "original_master_clip":
+                        raise RuntimeError(f"Refusing non-discography visual_source_mode={meta.get('visual_source_mode')} on {tid}")
+                    break
+                except Exception as build_err:
+                    print(f"⚠️ Skipping candidate {tid} on {ch_hnd}: {build_err}")
+                    if "STATIC VIDEO REJECTED" in str(build_err):
+                        rejected_static.add(tid)
+                        reg["rejected_static_ids"] = sorted(rejected_static)
+                        save_published_registry(reg)
+                    meta = None
+
+            if not meta:
+                continue
 
             try:
-                meta = build_short_for_track(tid, target_dt=slot_dt, brand_handle=ch_hnd, use_flow=False)
-                if meta.get("visual_source_mode") != "original_master_clip":
-                    raise RuntimeError(f"Refusing non-discography visual_source_mode={meta.get('visual_source_mode')} on {tid}")
                 session_fps.add(normalize_song_fingerprint(meta["title"]))
                 if channel_limit_hit:
                     print(f"   💾 Pre-rendered & cached {meta['video_path']} for {ch_hnd} ({slot_dt.strftime('%Y-%m-%d %I:%M %p IST')}).")
