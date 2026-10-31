@@ -959,6 +959,27 @@ def build_short_for_track(
         )
         layout_info = inspect_master_video_layout(master_vid, sample_start=start_sec, has_burned_hint=has_burned_hint)
         if layout_info["is_static"]:
+            # If the initial Chorus window falls on a slow/held intro frame in a long Master Film,
+            # scan across the Master Film timeline for the highest-motion vocal section (>= 4.5).
+            vid_dur = layout_info.get("dur") or get_media_duration(master_vid)
+            best_t = start_sec
+            best_info = layout_info
+            for cand_t in range(25, max(30, int(vid_dur) - int(clip_dur) - 5), 25):
+                cand_info = inspect_master_video_layout(master_vid, sample_start=float(cand_t), has_burned_hint=has_burned_hint)
+                if cand_info["scene_motion"] > best_info["scene_motion"]:
+                    best_t = float(cand_t)
+                    best_info = cand_info
+                    if best_info["scene_motion"] >= 14.0:
+                        break
+            if not best_info["is_static"]:
+                print(
+                    f"  🎬 Shifted Chorus clip window for {track_id} from {start_sec:.1f}s (motion={layout_info['scene_motion']}) "
+                    f"-> {best_t:.1f}s (motion={best_info['scene_motion']}) for vibrant cinematic motion!"
+                )
+                start_sec = best_t
+                layout_info = best_info
+
+        if layout_info["is_static"]:
             shutil.rmtree(work_dir, ignore_errors=True)
             raise RuntimeError(
                 f"STATIC VIDEO REJECTED: '{master_vid.name}' for '{track_id}' has scene_motion={layout_info['scene_motion']} "

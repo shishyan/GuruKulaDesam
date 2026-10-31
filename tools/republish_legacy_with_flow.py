@@ -279,7 +279,23 @@ def publish_ready_replacements(items: list[dict], mark_old_private: bool = False
 
         if yt_vid_id == "CHANNEL_UPLOAD_LIMIT":
             blocked_channels.add(ch_key)
-            continue
+            alt_key = "@gurukuladesam" if ch_key == "@gurukuladesam2" else "@gurukuladesam2"
+            alt_handle = "@GuruKulaDesam" if ch_key == "@gurukuladesam2" else "@GuruKulaDesam2"
+            if alt_key not in blocked_channels:
+                print(f"  🔄 {item['channel_handle']} hit rolling 24h cap; re-branding and uploading {item['track_id']} to {alt_handle}...")
+                meta = build_short_for_track(
+                    item["track_id"], force_rebuild=True, brand_handle=alt_handle, use_flow=False
+                )
+                yt_vid_id = upload_short_via_api(meta, publish_at_dt=None, channel_key=alt_key)
+                if yt_vid_id == "CHANNEL_UPLOAD_LIMIT":
+                    blocked_channels.add(alt_key)
+                    continue
+                elif yt_vid_id:
+                    ch_key = alt_key
+                    item["channel_key"] = alt_key
+                    item["channel_handle"] = alt_handle
+            else:
+                continue
 
         if yt_vid_id:
             item["new_youtube_id"] = yt_vid_id
