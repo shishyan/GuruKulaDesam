@@ -532,6 +532,62 @@
       "uploaded_at": "2026-10-31T21:33:01.108501+05:30",
       "scheduled_for": null,
       "status": "public"
+    },
+    "FHuHKoE7Lto": {
+      "youtube_short_id": "drv-5EJMIW0",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/drv-5EJMIW0",
+      "title": "📖 நன்னெறி — திருக்குறள்: அதிகாரம் 7 - புதல்வரைப் பெறுதல் | Puthalvarai Peruthal #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "FHuHKoE7Lto_clean.mp4",
+      "legacy_track_id": null,
+      "panchangam_occasion": "ஐப்பசி 17 • செவ்வாய்க்கிழமை • மகம்",
+      "uploaded_at": "2026-10-31T23:55:39.925760+05:30",
+      "scheduled_for": "2026-11-03T06:00:00+05:30",
+      "status": "scheduled"
+    },
+    "pkbzO9Clp2w": {
+      "youtube_short_id": "wkVMy0fjuzQ",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/wkVMy0fjuzQ",
+      "title": "📖 நற்சிந்தனை — திருவருட்பா: சிவபுண்ணியத் தேற்றம் | Thiruvarutpa: Sivapunniya Thetram #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "pkbzO9Clp2w.mp4",
+      "legacy_track_id": "pkbzO9Clp2w",
+      "panchangam_occasion": "ஐப்பசி 17 • செவ்வாய்க்கிழமை • மகம்",
+      "uploaded_at": "2026-10-31T23:56:11.949830+05:30",
+      "scheduled_for": "2026-11-03T11:00:00+05:30",
+      "status": "scheduled"
+    },
+    "LV-eIfMIKpo": {
+      "youtube_short_id": "73gk1W1LWcs",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/73gk1W1LWcs",
+      "title": "📖 நற்சொல் — ஸ்மரணாத³ருணாசலம் | ஸ்மரணாத³ருணாசலம் #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "thirukkural_2_rwWlC09I0_master.mp4",
+      "legacy_track_id": "2_rwWlC09I0",
+      "panchangam_occasion": "தேய்பிறை அஷ்டமி வழிபாடு | BHAIRAVA & SHIVA ASHTAMI",
+      "uploaded_at": "2026-10-31T23:58:07.426835+05:30",
+      "scheduled_for": "2026-11-02T06:00:00+05:30",
+      "status": "scheduled"
+    },
+    "60rrBjJfAS4": {
+      "youtube_short_id": "Pbxx5kSPbSY",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/Pbxx5kSPbSY",
+      "title": "📖 நற்பண்பு — தனந்தரும் அபிராமி | Dhanam Tharum Abhirami #Shorts",
+      "deity": "amman",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "60rrBjJfAS4.mp4",
+      "legacy_track_id": "60rrBjJfAS4",
+      "panchangam_occasion": "தேய்பிறை அஷ்டமி வழிபாடு | BHAIRAVA & SHIVA ASHTAMI",
+      "uploaded_at": "2026-10-31T23:58:28.728559+05:30",
+      "scheduled_for": "2026-11-02T11:00:00+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -545,18 +601,25 @@
       "2026-11-02T06:00:00+05:30",
       "2026-11-02T11:00:00+05:30",
       "2026-11-02T16:00:00+05:30",
-      "2026-11-02T20:00:00+05:30"
+      "2026-11-02T20:00:00+05:30",
+      "2026-11-03T06:00:00+05:30",
+      "2026-11-03T11:00:00+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
       "2026-11-01T11:00:00+05:30",
       "2026-11-01T16:00:00+05:30",
-      "2026-11-01T20:00:00+05:30"
+      "2026-11-01T20:00:00+05:30",
+      "2026-11-02T06:00:00+05:30",
+      "2026-11-02T11:00:00+05:30"
     ]
   },
   "rejected_static_ids": [
+    "CS92JrOQkbc",
     "FGeahfpAbiw",
     "TlaBaW3-ckI",
-    "Yg2b_xJGGEQ"
+    "VMn8fiWF-oA",
+    "Yg2b_xJGGEQ",
+    "qRZuTdyAghw"
   ]
 }
