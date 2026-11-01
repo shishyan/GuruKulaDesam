@@ -590,6 +590,62 @@
       "uploaded_at": "2026-11-01T21:07:23.871660+05:30",
       "scheduled_for": "2026-11-03T06:00:00+05:30",
       "status": "scheduled"
+    },
+    "JySm8pmd6EA": {
+      "youtube_short_id": "CsFXzcvgjWI",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/CsFXzcvgjWI",
+      "title": "📖 நற்துணை — அன்னம் பாலிக்கும் தில்லை | Annam Paalikkum Thillai #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "thirukkural_0tXyQEAHVNQ_master.mp4",
+      "legacy_track_id": "0tXyQEAHVNQ",
+      "panchangam_occasion": "தேய்பிறை அஷ்டமி வழிபாடு | BHAIRAVA & SHIVA ASHTAMI",
+      "uploaded_at": "2026-11-01T21:27:20.755151+05:30",
+      "scheduled_for": "2026-11-02T16:00:00+05:30",
+      "status": "scheduled"
+    },
+    "CS92JrOQkbc": {
+      "youtube_short_id": "wi8T3zcgpMA",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/wi8T3zcgpMA",
+      "title": "📖 நற்பண்பு — லக்ஷ்மி 108 போற்றி | Lakshmi 108 Potri #Shorts",
+      "deity": "amman",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "CS92JrOQkbc.mp4",
+      "legacy_track_id": "hp1ctMubVmo",
+      "panchangam_occasion": "தேய்பிறை அஷ்டமி வழிபாடு | BHAIRAVA & SHIVA ASHTAMI",
+      "uploaded_at": "2026-11-01T21:27:26.137600+05:30",
+      "scheduled_for": "2026-11-02T20:00:00+05:30",
+      "status": "scheduled"
+    },
+    "ivxwFBHOyCs": {
+      "youtube_short_id": "qYgZAOlU9t4",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/qYgZAOlU9t4",
+      "title": "📖 நற்சொல் — திருப்புகழ் 566 இரத்னகிரி I | Rathinagiri Thiruppugazh #Shorts",
+      "deity": "murugan",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "murugan_meXI3QsNHhE_master.mp4",
+      "legacy_track_id": "meXI3QsNHhE",
+      "panchangam_occasion": "ஐப்பசி 17 • செவ்வாய்க்கிழமை • மகம்",
+      "uploaded_at": "2026-11-01T21:27:33.202296+05:30",
+      "scheduled_for": "2026-11-03T06:00:00+05:30",
+      "status": "scheduled"
+    },
+    "VMn8fiWF-oA": {
+      "youtube_short_id": "SkpHTJnPD6Y",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/SkpHTJnPD6Y",
+      "title": "📖 நற்பண்பு — 108 சரஸ்வதி போற்றி | Saraswathi 108 Potri #Shorts",
+      "deity": "amman",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "VMn8fiWF-oA.mp4",
+      "legacy_track_id": "94drEh5bkH0",
+      "panchangam_occasion": "ஐப்பசி 17 • செவ்வாய்க்கிழமை • மகம்",
+      "uploaded_at": "2026-11-01T21:27:37.579759+05:30",
+      "scheduled_for": "2026-11-03T11:00:00+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -605,7 +661,11 @@
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
       "2026-11-02T06:00:00+05:30",
-      "2026-11-02T11:00:00+05:30"
+      "2026-11-02T11:00:00+05:30",
+      "2026-11-02T16:00:00+05:30",
+      "2026-11-02T20:00:00+05:30",
+      "2026-11-03T06:00:00+05:30",
+      "2026-11-03T11:00:00+05:30"
     ]
   },
   "rejected_static_ids": [
