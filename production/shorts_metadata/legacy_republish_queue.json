@@ -211,10 +211,10 @@
     "youtube_film_id": "b8fMs6FUKLA",
     "chorus_start_sec": 11.8,
     "duration_sec": 38.0,
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "o_p5LeUu03g",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T00:14:48.191954+05:30"
+    "updated_at": "2026-11-01T21:06:06.860948+05:30"
   },
   {
     "track_id": "e16889YnVgw",
@@ -229,16 +229,16 @@
     "youtube_film_id": "e16889YnVgw",
     "chorus_start_sec": 11.2,
     "duration_sec": 37.5,
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "DU2kdyTi1s8",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T00:15:08.266782+05:30"
+    "updated_at": "2026-11-01T21:06:11.558255+05:30"
   },
   {
     "track_id": "KhopzUh8oTg",
     "legacy_track_id": "gwTtvj-h77g",
-    "channel_key": "@gurukuladesam2",
-    "channel_handle": "@GuruKulaDesam2",
+    "channel_key": "@gurukuladesam",
+    "channel_handle": "@GuruKulaDesam",
     "old_youtube_id": "gwTtvj-h77g",
     "song_label": "திருமந்திரம்: முதலாம் தந்திரம் II",
     "deity": "shiva",
@@ -247,10 +247,10 @@
     "youtube_film_id": "KhopzUh8oTg",
     "chorus_start_sec": 15.5,
     "duration_sec": 38.5,
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "ycIZg4MFwc8",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T00:15:38.132295+05:30"
+    "updated_at": "2026-11-01T21:06:37.128741+05:30"
   },
   {
     "track_id": "dpx7C3wuyio",
@@ -508,8 +508,8 @@
     "channel_key": "@gurukuladesam",
     "channel_handle": "@GuruKulaDesam",
     "song_label": "திருக்குறள்: அதிகாரம் 130 - உறாஅ தவர்க்கண்ட கண்ணும் (நெஞ்சொடு புலத்தல் II)",
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "XusnCl4pb_g",
     "video_path": "renders/shorts_gurukuladesam2/short_thirukkural_e16889YnVgw_part2.mp4",
     "meta_path": "production/shorts_metadata/short_thirukkural_e16889YnVgw_part2.json",
     "youtube_film_id": "e16889YnVgw",
@@ -517,7 +517,7 @@
     "duration_sec": 42.5,
     "scheduled_publish_at_ist": null,
     "old_marked_private": false,
-    "updated_at": "2026-11-01T19:16:12.206796+05:30"
+    "updated_at": "2026-11-01T21:06:42.537583+05:30"
   },
   {
     "track_id": "MXK8vB3_fBE",
@@ -525,8 +525,8 @@
     "channel_key": "@gurukuladesam",
     "channel_handle": "@GuruKulaDesam",
     "song_label": "திருக்குறள்: அதிகாரம் 25 - அருளுடைமை (அருட்செல்வம் செல்வத்துள் செல்வம்)",
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "ukKikIp3mJw",
     "video_path": "renders/shorts_gurukuladesam2/short_thirukkural_MXK8vB3_fBE.mp4",
     "meta_path": "production/shorts_metadata/short_thirukkural_MXK8vB3_fBE.json",
     "youtube_film_id": "MXK8vB3_fBE",
@@ -534,7 +534,7 @@
     "duration_sec": 38.5,
     "scheduled_publish_at_ist": null,
     "old_marked_private": false,
-    "updated_at": "2026-11-01T19:16:26.632473+05:30"
+    "updated_at": "2026-11-01T21:06:47.457164+05:30"
   },
   {
     "track_id": "WNP9D65125E",
@@ -542,8 +542,8 @@
     "channel_key": "@gurukuladesam",
     "channel_handle": "@GuruKulaDesam",
     "song_label": "தமிழ்த் தாய் வாழ்த்து: நீராரும் கடலுடுத்த",
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "REjikWhzU-0",
     "video_path": "renders/shorts_gurukuladesam2/short_vallalar_WNP9D65125E.mp4",
     "meta_path": "production/shorts_metadata/short_vallalar_WNP9D65125E.json",
     "youtube_film_id": "WNP9D65125E",
@@ -551,7 +551,7 @@
     "duration_sec": 41.0,
     "scheduled_publish_at_ist": null,
     "old_marked_private": false,
-    "updated_at": "2026-11-01T19:16:48.747969+05:30"
+    "updated_at": "2026-11-01T21:06:52.696536+05:30"
   },
   {
     "track_id": "4-FJ8eh7Als",
