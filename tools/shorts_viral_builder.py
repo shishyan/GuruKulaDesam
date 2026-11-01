@@ -77,54 +77,115 @@ DEFAULT_SHORT_DURATION = 38.0
 # Keyed by resolved video stem / YouTube Film ID / Track ID -> (start_sec, duration_sec)
 VERIFIED_CHORUS_WINDOWS = {
     # 1. கடவுள் வாழ்த்து (அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு + reprise + instrumental finish)
-    "gvg-um6fU40_clean": (28.0, 40.5),
-    "gvg-um6fU40": (28.0, 40.5),
+    "gvg-um6fU40_clean": (25.0, 40.5),
+    "gvg-um6fU40": (25.0, 40.5),
     "VKWNnHC4tbU": (28.0, 40.5),
-    "02C8glMmetw": (24.5, 38.5),
-    # 2. அதிகாரம் 67 - வினைத்திட்பம் (சொல்லுதல் யார்க்கும் எளிய அரியவாம் சொல்லிய வண்ணம் செயல் + instrumental)
+    "02C8glMmetw": (25.0, 40.5),
+    # 2. அதிகாரம் 2 - வான் சிறப்பு (துப்பார்க்குத் துப்பாய துப்பாக்கித் துப்பார்க்குத் துப்பாய தூஉம் மழை)
+    "Ww7cfR6tO8Q_clean": (24.5, 38.0),
+    "Ww7cfR6tO8Q": (24.5, 38.0),
+    "f1jxgAbXcdE": (24.5, 38.0),
+    # 3. அதிகாரம் 3 - நீத்தார் பெருமை (ஒழுக்கத்து நீத்தார் பெருமை விழுப்பத்து வேண்டும் பனுவல் துணிவு)
+    "LoyBQZKr6QI_clean": (16.0, 38.0),
+    "LoyBQZKr6QI": (16.0, 38.0),
+    # 4. அதிகாரம் 4 - அறன் வலியுறுத்தல் (சிறப்பு ஈனும்! செல்வமும் ஈனும்! அறத்தினை விஞ்சிய ஆக்கம் உளதோ?!)
+    "cEF4K6M-8LU_clean": (25.0, 39.5),
+    "cEF4K6M-8LU": (25.0, 39.5),
+    # 5. அதிகாரம் 5 - இல்வாழ்க்கை (வையத்துள் வாழ்வாங்கு வாழ்பவன்! வானுறையும் தெய்வத்துள் வைக்கப் படும்!)
+    "M6_ZiNtpfZc_clean": (25.0, 39.0),
+    "M6_ZiNtpfZc": (25.0, 39.0),
+    "C05GEfkJZaY": (25.0, 39.0),
+    # 6. அதிகாரம் 6 - வாழ்க்கைத் துணை நலம் (மனைமாட்சி இல்லாள்கண் இல்லாயின் வாழ்க்கை எனைமாட்சித் தாயினும் இல்)
+    "0NMXbOoKvs0_clean": (25.0, 38.0),
+    "0NMXbOoKvs0": (25.0, 38.0),
+    "hCHBPd8BH8A": (25.0, 38.0),
+    # 7. அதிகாரம் 7 - புதல்வரைப் பெறுதல் (எழுபிறப்பும் தீயவைத் தீண்டா! பழிபிறங்காப் பண்புடை மக்கட் பெறின்!)
+    "FHuHKoE7Lto_clean": (15.8, 38.5),
+    "FHuHKoE7Lto": (15.8, 38.5),
+    # 8. அதிகாரம் 8 - அன்புடைமை (அன்பிற்கும் உண்டோ அடைக்குந்தாழ் ஆர்வலர் புன்கணீர் பூசல் தரும்)
+    "618cwjyo1R0_clean": (0.4, 38.5),
+    "618cwjyo1R0": (0.4, 38.5),
+    # 9. அதிகாரம் 67 - வினைத்திட்பம் (சொல்லுதல் யார்க்கும் எளிய அரியவாம் சொல்லிய வண்ணம் செயல் + instrumental)
     "UPAYRisyN7Q": (15.6, 36.8),
     "adhikaram_67_vinaithitpam_cinematic": (15.6, 36.8),
     "--4jzoezBW8": (15.6, 36.8),
-    # 3. திருவருட்பா: அபராத விண்ணப்பம் I (நம்பினேன் நின்றன் திருவடி மலரை... தும்பி மாமுகனை வேலனை ஈன்ற தோன்றலே)
+    # 10. திருவருட்பா: அபராத விண்ணப்பம் I (நம்பினேன் நின்றன் திருவடி மலரை... தும்பி மாமுகனை வேலனை ஈன்ற தோன்றலே)
     "thirukkural_-cmB2_XZqs0_master": (48.2, 35.6),
     "-cmB2_XZqs0": (48.2, 35.6),
-    # 4. அதிகாரம் 56 - கொடுங்கோன்மை (முறைகோடி மன்னவன் செய்யின் உறைகோடி ஒல்லாது வானம் பெயல் + instrumental)
+    # 11. அதிகாரம் 56 - கொடுங்கோன்மை (முறைகோடி மன்னவன் செய்யின் உறைகோடி ஒல்லாது வானம் பெயல் + instrumental)
     "thirukkural_01g0sJdaL2I_master": (13.6, 36.2),
     "wzdoeFDq0iQ": (8.6, 40.8),
     "01g0sJdaL2I": (13.6, 36.2),
-    # 5. அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் (தனந்தரும் கல்விதரும் ஒரு நாளும் தளர்வறியா மனந்தரும்...)
+    # 12. அபிராமி அந்தாதி: தனந்தரும் கல்விதரும் (தனந்தரும் கல்விதரும் ஒரு நாளும் தளர்வறியா மனந்தரும்...)
     "Yu4RBKpAodM": (44.4, 40.4),
     "60rrBjJfAS4": (44.4, 40.4),
     "2tL-bKjkL18": (44.4, 40.4),
-    # 6. விநாயகர் துதி: கண நாதா ஓம் (கணநாதா கணநாதா கங்காதர சுத கணநாதா + மத்தள வயிறனே + instrumental)
+    # 13. விநாயகர் துதி: கண நாதா ஓம் (கணநாதா கணநாதா கங்காதர சுத கணநாதா + மத்தள வயிறனே + instrumental)
     "uqQlyCQjz-A": (20.8, 35.0),
     "2g6p7WKWsxk": (20.8, 35.0),
     "vinayagar_Lki_Y8OSljs_master": (20.8, 35.0),
     "Lki_Y8OSljs": (20.8, 35.0),
-    # 7. பாலும் தெளிதேனும் (பாலும் தெளிதேனும் பாகும் பருப்பும்... சங்கத் தமிழ் மூன்றும் தா!)
+    # 14. பாலும் தெளிதேனும் (பாலும் தெளிதேனும் பாகும் பருப்பும்... சங்கத் தமிழ் மூன்றும் தா!)
     "vinayagar_AW4cljBWy2w_master": (35.7, 37.5),
     "AW4cljBWy2w": (35.7, 37.5),
-    # 8. கந்தர் அனுபூதி: உருவாய் அருவாய் (உருவாய் அருவாய்... குருவாய் வருவாய் அருள்வாய் குகனே! முருகா முருகா!)
+    # 15. கந்தர் அனுபூதி: உருவாய் அருவாய் (உருவாய் அருவாய்... குருவாய் வருவாய் அருள்வாய் குகனே! முருகா முருகா!)
     "DsbMysGdqv8": (37.4, 41.6),
     "zMhemBjkes0": (37.4, 41.6),
-    # 9. திருவருட்பா: சிவ சுப்ரமணியர் திருவிருத்தம் (Opening Chorus stanza -> natural phrase pause)
+    # 16. திருவருட்பா: சிவ சுப்ரமணியர் திருவிருத்தம் (Opening Chorus stanza -> natural phrase pause)
     "ssOkftpUcLE": (32.7, 35.2),
     "-unILRjNLHQ": (32.7, 35.2),
-    # 10. திருப்புகழ்: ஆறுமுகம் ஆறுமுகம் (ஆறுமுகம் ஆறுமுகம்... full Chorus + reprise -> instrumental pause)
+    # 17. திருப்புகழ்: ஆறுமுகம் ஆறுமுகம் (ஆறுமுகம் ஆறுமுகம்... full Chorus + reprise -> instrumental pause)
     "SwUq9aoYdZs": (43.9, 37.9),
     "murugan_B6yVe6HM8Ok_master": (43.9, 37.9),
     "B6yVe6HM8Ok": (43.9, 37.9),
-    # 11. திருப்புகழ்: முத்தைத் தரு (முத்தைத் தரு பத்தித் திருநகை... + instrumental + reprise)
+    # 18. திருப்புகழ்: முத்தைத் தரு (முத்தைத் தரு பத்தித் திருநகை... + instrumental + reprise)
     "6L6DDOwDuy8": (23.2, 40.6),
     "_6QdoqADlT0": (23.8, 40.0),
     "murugan_3oJ2OPG-WCs_master": (23.2, 40.6),
     "3oJ2OPG-WCs": (23.2, 40.6),
-    # Additional verified iconic Master Films
+    # 19. Thiruvarutpa & Devotional Master Films (Wav2Vec2-Tamil CTC + SRT verified Chorus / Opening Verse)
+    "thirukkural_6_qh4-WoWNM_master": (15.0, 38.5),
+    "6_qh4-WoWNM": (15.0, 38.5),
+    "PXQW4sYo4nY": (54.5, 38.0),
+    "npc-0cJdpt0": (15.0, 38.0),
+    "pkbzO9Clp2w": (15.0, 36.5),
+    "fGUDd1DvDcE": (36.0, 41.0),
+    "murugan_meXI3QsNHhE_master": (25.0, 38.5),
+    "ivxwFBHOyCs": (25.0, 38.5),
+    "mG9IzlD9vmI": (25.0, 38.5),
+    "thirukkural_0tXyQEAHVNQ_master": (24.0, 38.5),
+    "JySm8pmd6EA": (24.0, 38.5),
+    "0tXyQEAHVNQ": (24.0, 38.5),
+    "2xCDL6uPfbk": (2.8, 38.5),
+    "thirukkural_2_rwWlC09I0_master": (30.0, 39.5),
+    "LV-eIfMIKpo": (30.0, 39.5),
     "dd3x2HfeE0I": (26.2, 37.8),
     "p1KPCpSX53U": (25.8, 36.8),
     "udRsA-oWxS0": (35.3, 38.2),
-    "zQ05gUqsReQ_clean": (36.4, 38.0),
-    "zQ05gUqsReQ": (36.4, 38.0),
+    "zQ05gUqsReQ_clean": (34.5, 38.5),
+    "zQ05gUqsReQ": (34.5, 38.5),
+    "amman_vaXLG5kUGVc_master": (21.9, 38.5),
+    "vaXLG5kUGVc": (21.9, 38.5),
+    "T4CBo5OOQ1c": (10.4, 40.25),
+    # 20. 15 Queued User-Requested Songs (Wav2Vec2-Tamil CTC + SRT verified Chorus / Opening Verse)
+    "b8fMs6FUKLA": (11.8, 38.0),
+    "e16889YnVgw": (11.2, 37.5),
+    "KhopzUh8oTg": (15.5, 38.5),
+    "dpx7C3wuyio": (40.0, 38.5),
+    "VMn8fiWF-oA": (24.0, 38.0),
+    "CS92JrOQkbc": (28.0, 38.0),
+    "-tod_ZpZMnQ": (31.5, 38.5),
+    "shiva_4QpJHz2SAbU_master": (27.8, 38.0),
+    "4QpJHz2SAbU": (27.8, 38.0),
+    "rRoJfeRQiaM": (3.8, 39.0),
+    "ixQGKe_IH80": (24.5, 38.5),
+    "vallalar_cultural_31xVgvxoiUA_master": (21.0, 38.0),
+    "31xVgvxoiUA": (21.0, 38.0),
+    "v_Q_vKG_nHo": (24.5, 38.0),
+    "CWh0TXSSACQ": (43.8, 38.5),
+    "-zVzQ1XnY8Q": (74.5, 38.5),
+    "ZAjf5Ewzu_c": (30.5, 38.5),
+    "3t5U9ABVeOc": (30.5, 38.5),
 }
 
 NON_DEVOTIONAL_EXCLUDED_KEYWORDS = (
@@ -642,11 +703,11 @@ def find_chorus_window(
                 exact_onset_idx = k
                 break
 
-        if exact_onset_idx <= 25:
+        if exact_onset_idx <= 4:
             start_sec = 0.0
         else:
-            b_lo = max(0, exact_onset_idx - 9)
-            b_hi = max(b_lo + 1, exact_onset_idx - 3)
+            b_lo = max(0, exact_onset_idx - 6)
+            b_hi = max(b_lo + 1, exact_onset_idx - 2)
             breath_idx = b_lo + int(np.argmin(voc_norm[b_lo : b_hi + 1]))
             start_sec = round(breath_idx * 0.1, 2)
 
@@ -959,24 +1020,18 @@ def build_short_for_track(
         )
         layout_info = inspect_master_video_layout(master_vid, sample_start=start_sec, has_burned_hint=has_burned_hint)
         if layout_info["is_static"]:
-            # If the initial Chorus window falls on a slow/held intro frame in a long Master Film,
-            # scan across the Master Film timeline for the highest-motion vocal section (>= 4.5).
+            # If the 4 sampled frames at `start_sec` happen to catch a gentle dissolve/fade,
+            # check motion across the full film ONLY to verify whether the video itself is animated
+            # (NEVER shift `start_sec` away from the Chorus/vocal onset!).
             vid_dur = layout_info.get("dur") or get_media_duration(master_vid)
-            best_t = start_sec
             best_info = layout_info
             for cand_t in range(25, max(30, int(vid_dur) - int(clip_dur) - 5), 25):
                 cand_info = inspect_master_video_layout(master_vid, sample_start=float(cand_t), has_burned_hint=has_burned_hint)
                 if cand_info["scene_motion"] > best_info["scene_motion"]:
-                    best_t = float(cand_t)
                     best_info = cand_info
                     if best_info["scene_motion"] >= 14.0:
                         break
             if not best_info["is_static"]:
-                print(
-                    f"  🎬 Shifted Chorus clip window for {track_id} from {start_sec:.1f}s (motion={layout_info['scene_motion']}) "
-                    f"-> {best_t:.1f}s (motion={best_info['scene_motion']}) for vibrant cinematic motion!"
-                )
-                start_sec = best_t
                 layout_info = best_info
 
         if layout_info["is_static"]:
