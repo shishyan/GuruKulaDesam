@@ -214,8 +214,9 @@ def ensure_all_discography_shorts_built(items: list[dict], force_rebuild: bool =
 
         tid = item["track_id"]
         ch_hnd = item["channel_handle"]
+        sched_dt = datetime.fromisoformat(item["scheduled_publish_at_ist"]) if item.get("scheduled_publish_at_ist") else None
         print(f"\n[{idx}/{len(items)}] 🎬 Clipping @guru-kula-desam Master Film (Chorus Start) for {tid} ({item['song_label']})...")
-        meta = build_short_for_track(tid, force_rebuild=True, brand_handle=ch_hnd, use_flow=False)
+        meta = build_short_for_track(tid, target_dt=sched_dt, force_rebuild=True, brand_handle=ch_hnd, use_flow=False)
         if meta.get("visual_source_mode") != "original_master_clip" or meta.get("clip_anchor_mode") != "chorus_v1":
             raise RuntimeError(f"Guard failed for {tid}: mode={meta.get('visual_source_mode')} anchor={meta.get('clip_anchor_mode')}")
 
@@ -275,7 +276,13 @@ def publish_ready_replacements(items: list[dict], mark_old_private: bool = False
             print(f"  ❌ Skipping {item['track_id']}: non-chorus/non-discography build.")
             continue
 
-        yt_vid_id = upload_short_via_api(meta, publish_at_dt=None, channel_key=ch_key)
+        sched_dt = None
+        if item.get("scheduled_publish_at_ist"):
+            dt_cand = datetime.fromisoformat(item["scheduled_publish_at_ist"])
+            if dt_cand > datetime.now(IST):
+                sched_dt = dt_cand
+
+        yt_vid_id = upload_short_via_api(meta, publish_at_dt=sched_dt, channel_key=ch_key)
 
         if yt_vid_id == "CHANNEL_UPLOAD_LIMIT":
             blocked_channels.add(ch_key)
@@ -284,9 +291,9 @@ def publish_ready_replacements(items: list[dict], mark_old_private: bool = False
             if alt_key not in blocked_channels:
                 print(f"  🔄 {item['channel_handle']} hit rolling 24h cap; re-branding and uploading {item['track_id']} to {alt_handle}...")
                 meta = build_short_for_track(
-                    item["track_id"], force_rebuild=True, brand_handle=alt_handle, use_flow=False
+                    item["track_id"], target_dt=sched_dt, force_rebuild=True, brand_handle=alt_handle, use_flow=False
                 )
-                yt_vid_id = upload_short_via_api(meta, publish_at_dt=None, channel_key=alt_key)
+                yt_vid_id = upload_short_via_api(meta, publish_at_dt=sched_dt, channel_key=alt_key)
                 if yt_vid_id == "CHANNEL_UPLOAD_LIMIT":
                     blocked_channels.add(alt_key)
                     continue

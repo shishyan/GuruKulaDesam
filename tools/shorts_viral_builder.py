@@ -167,6 +167,7 @@ VERIFIED_CHORUS_WINDOWS = {
     "amman_vaXLG5kUGVc_master": (21.9, 38.5),
     "vaXLG5kUGVc": (21.9, 38.5),
     "T4CBo5OOQ1c": (10.4, 40.25),
+    "4RUk7FPJ3TU": (41.8, 49.2),
     # 20. 15 Queued User-Requested Songs (Wav2Vec2-Tamil CTC + SRT verified Chorus / Opening Verse)
     "b8fMs6FUKLA": (11.8, 38.0),
     "e16889YnVgw": (11.2, 37.5),
@@ -186,11 +187,19 @@ VERIFIED_CHORUS_WINDOWS = {
     "-zVzQ1XnY8Q": (74.5, 38.5),
     "ZAjf5Ewzu_c": (30.5, 38.5),
     "3t5U9ABVeOc": (30.5, 38.5),
+    "TUwlsvN7v1w": (20.8, 39.2),
+    "e16889YnVgw_part2": (146.5, 42.5),
+    "adhikaram_25_aruludaimai_cinematic": (12.0, 38.5),
+    "MXK8vB3_fBE": (12.0, 38.5),
+    "WNP9D65125E": (24.0, 41.0),
+    "vallalar_cultural_4-FJ8eh7Als_master": (23.8, 46.2),
+    "4-FJ8eh7Als": (23.8, 46.2),
+    "WhbLmu2bJog_clean": (0.2, 41.8),
+    "WhbLmu2bJog": (0.2, 41.8),
 }
 
 NON_DEVOTIONAL_EXCLUDED_KEYWORDS = (
     "மணிக்கொடி",
-    "தமிழ்த் தாய்",
     "தேசிய கீதம்",
     "சுதந்திர",
     "வந்தே மாதரம்",
@@ -596,7 +605,7 @@ def find_chorus_window(
     if total_dur <= min_dur + 3.0:
         return 0.0, round(min(total_dur, default_dur), 2)
 
-    for key in (media_path.stem, yt_film_id or "", track_id):
+    for key in (track_id, yt_film_id or "", media_path.stem):
         if key and key in VERIFIED_CHORUS_WINDOWS:
             st, dur = VERIFIED_CHORUS_WINDOWS[key]
             if st + dur <= total_dur + 0.5:

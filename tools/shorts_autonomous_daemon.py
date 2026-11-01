@@ -387,6 +387,7 @@ def run_batch_pipeline(
         else:
             ch_slots = [datetime.now(IST)] * count
 
+        # Priority Rule: On Thursdays, prioritize `4-FJ8eh7Als` (குரு பகவான் துதி) on @GuruKulaDesam2 if not yet published!
         channel_limit_hit = False
         rejected_static = set(reg.get("rejected_static_ids", []))
         session_used_ids = set(used_ids) | rejected_static
@@ -400,7 +401,20 @@ def run_batch_pipeline(
             track_item = None
             panchangam = None
             tid = None
+            if ch_key == "@gurukuladesam2" and pick_dt.weekday() == 3 and "4-FJ8eh7Als" not in session_used_ids:
+                panchangam = get_auspicious_alignment_for_datetime(pick_dt)
+                tid = "4-FJ8eh7Als"
+                track_item = {"track_id": "4-FJ8eh7Als", "legacy_track_id": "4-FJ8eh7Als", "deity": "shiva"}
+                session_used_ids.add(tid)
+                try:
+                    meta = build_short_for_track(tid, target_dt=slot_dt, brand_handle=ch_hnd, use_flow=False)
+                except Exception as e:
+                    print(f"⚠️ Thursday Guru Bhagavan build note: {e}")
+                    meta = None
+
             for _try in range(6):
+                if meta is not None:
+                    break
                 track_item, panchangam = pick_track_for_slot(
                     pick_dt, session_used_ids, used_fingerprints=session_fps, forced_deity=deity_filter, channel_key=ch_key
                 )
