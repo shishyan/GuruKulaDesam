@@ -534,13 +534,73 @@
       "uploaded_at": "2026-11-01T21:06:52.697249+05:30",
       "scheduled_for": null,
       "status": "public"
+    },
+    "M6_ZiNtpfZc": {
+      "youtube_short_id": "Dm5GcsAONbg",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/Dm5GcsAONbg",
+      "title": "📖 நல்லறம் — திருக்குறள்: அதிகாரம் 5 - இல்வாழ்க்கை | Thirukkural: Ilvazhkkai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "M6_ZiNtpfZc_clean.mp4",
+      "legacy_track_id": "C05GEfkJZaY",
+      "panchangam_occasion": "தேய்பிறை அஷ்டமி வழிபாடு | BHAIRAVA & SHIVA ASHTAMI",
+      "uploaded_at": "2026-11-01T21:07:04.517450+05:30",
+      "scheduled_for": "2026-11-02T06:00:00+05:30",
+      "status": "scheduled"
+    },
+    "cEF4K6M-8LU": {
+      "youtube_short_id": "1CpPf7_GQ1c",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/1CpPf7_GQ1c",
+      "title": "📖 நல்லறம் — அதிகாரம் 4 - அறன் வலியுறுத்தல் | Aran Valiyuruthal #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "cEF4K6M-8LU_clean.mp4",
+      "legacy_track_id": null,
+      "panchangam_occasion": "தேய்பிறை அஷ்டமி வழிபாடு | BHAIRAVA & SHIVA ASHTAMI",
+      "uploaded_at": "2026-11-01T21:07:11.030730+05:30",
+      "scheduled_for": "2026-11-02T16:00:00+05:30",
+      "status": "scheduled"
+    },
+    "6_qh4-WoWNM": {
+      "youtube_short_id": "WCdcsEpN1FI",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/WCdcsEpN1FI",
+      "title": "📖 நற்சிந்தனை — திருவருட்பா: அபராதத்து ஆற்றாமை | Thiruvarutpa: Abaraathathu Aatraamai #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "thirukkural_6_qh4-WoWNM_master.mp4",
+      "legacy_track_id": "6_qh4-WoWNM",
+      "panchangam_occasion": "தேய்பிறை அஷ்டமி வழிபாடு | BHAIRAVA & SHIVA ASHTAMI",
+      "uploaded_at": "2026-11-01T21:07:17.210447+05:30",
+      "scheduled_for": "2026-11-02T20:00:00+05:30",
+      "status": "scheduled"
+    },
+    "LoyBQZKr6QI": {
+      "youtube_short_id": "DlxMeFwMoKo",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/DlxMeFwMoKo",
+      "title": "📖 நற்பண்பு — திருக்குறள்: அதிகாரம் 3 - நீத்தார் பெருமை | Thirukkural: Neethar Perumai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "LoyBQZKr6QI_clean.mp4",
+      "legacy_track_id": null,
+      "panchangam_occasion": "ஐப்பசி 17 • செவ்வாய்க்கிழமை • மகம்",
+      "uploaded_at": "2026-11-01T21:07:23.871660+05:30",
+      "scheduled_for": "2026-11-03T06:00:00+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
     "@gurukuladesam": [
       "2026-10-31T06:00:00+05:30",
       "2026-10-31T11:00:00+05:30",
-      "2026-11-02T11:00:00+05:30"
+      "2026-11-02T11:00:00+05:30",
+      "2026-11-02T06:00:00+05:30",
+      "2026-11-02T16:00:00+05:30",
+      "2026-11-02T20:00:00+05:30",
+      "2026-11-03T06:00:00+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
