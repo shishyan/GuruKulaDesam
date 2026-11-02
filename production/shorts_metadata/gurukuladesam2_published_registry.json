@@ -760,6 +760,25 @@
       "uploaded_at": "2026-11-01T21:28:04.116728+05:30",
       "scheduled_for": null,
       "status": "public"
+    },
+    "r3APrd3opOs__discography_upgrade": {
+      "youtube_short_id": "ClcZhW7DsYU",
+      "legacy_track_id": "r3APrd3opOs",
+      "upgraded_from_video_id": "r3APrd3opOs",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/ClcZhW7DsYU",
+      "title": "📖 நற்சொல் — ஆதியும் அந்தமும் | Aadhiyum Anthamum #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "ixQGKe_IH80.mp4",
+      "youtube_film_id": "ixQGKe_IH80",
+      "clip_anchor_mode": "chorus_v1",
+      "peak_start_sec": 24.5,
+      "duration_sec": 38.5,
+      "panchangam_occasion": "தேய்பிறை அஷ்டமி வழிபாடு | BHAIRAVA & SHIVA ASHTAMI",
+      "uploaded_at": "2026-11-02T21:06:19.239927+05:30",
+      "scheduled_for": null,
+      "status": "public"
     }
   },
   "scheduled_slots_by_channel": {

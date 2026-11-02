@@ -363,8 +363,8 @@
   {
     "track_id": "ixQGKe_IH80",
     "legacy_track_id": "r3APrd3opOs",
-    "channel_key": "@gurukuladesam2",
-    "channel_handle": "@GuruKulaDesam2",
+    "channel_key": "@gurukuladesam",
+    "channel_handle": "@GuruKulaDesam",
     "old_youtube_id": "r3APrd3opOs",
     "song_label": "ஆதியும் அந்தமும் (திருவெம்பாவை)",
     "deity": "shiva",
@@ -373,10 +373,10 @@
     "youtube_film_id": "ixQGKe_IH80",
     "chorus_start_sec": 24.5,
     "duration_sec": 38.5,
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "ClcZhW7DsYU",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T00:17:24.534185+05:30"
+    "updated_at": "2026-11-02T21:06:19.239233+05:30"
   },
   {
     "track_id": "31xVgvxoiUA",
