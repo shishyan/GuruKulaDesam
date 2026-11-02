@@ -1076,6 +1076,20 @@
       "uploaded_at": "2026-11-02T21:34:25.634260+05:30",
       "scheduled_for": "2026-11-03T16:00:00+05:30",
       "status": "scheduled"
+    },
+    "PO4U3nRv6o0": {
+      "youtube_short_id": "AMj32AAdXZ8",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/AMj32AAdXZ8",
+      "title": "📖 நற்சிந்தனை — திருவருட்பா: திருவருள் வேட்கை | Thiruvarutpa: Thiruvarul Vetkai #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "PO4U3nRv6o0.mp4",
+      "legacy_track_id": "PO4U3nRv6o0",
+      "panchangam_occasion": "தேய்பிறை ஏகாதசி விரதம் | EKADASHI",
+      "uploaded_at": "2026-11-02T23:59:07.885554+05:30",
+      "scheduled_for": "2026-11-05T11:00:00+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -1094,7 +1108,8 @@
       "2026-11-04T11:00:00+05:30",
       "2026-11-04T16:00:00+05:30",
       "2026-11-04T20:00:00+05:30",
-      "2026-11-05T06:00:00+05:30"
+      "2026-11-05T06:00:00+05:30",
+      "2026-11-05T11:00:00+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
