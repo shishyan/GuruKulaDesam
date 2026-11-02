@@ -1006,6 +1006,76 @@
       "uploaded_at": "2026-11-02T21:33:46.937713+05:30",
       "scheduled_for": null,
       "status": "public"
+    },
+    "pkbzO9Clp2w": {
+      "youtube_short_id": "9M8V5oU88JQ",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/9M8V5oU88JQ",
+      "title": "📖 நற்சிந்தனை — திருவருட்பா: சிவபுண்ணியத் தேற்றம் | Thiruvarutpa: Sivapunniya Thetram #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "pkbzO9Clp2w.mp4",
+      "legacy_track_id": "pkbzO9Clp2w",
+      "panchangam_occasion": "ஐப்பசி 18 • புதன்கிழமை • பூரம்",
+      "uploaded_at": "2026-11-02T21:33:59.363520+05:30",
+      "scheduled_for": "2026-11-04T11:00:00+05:30",
+      "status": "scheduled"
+    },
+    "0NMXbOoKvs0": {
+      "youtube_short_id": "tr6im8ZTcKw",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/tr6im8ZTcKw",
+      "title": "📖 நற்பண்பு — திருக்குறள்: அதிகாரம் 6 - வாழ்க்கைத் துணை நலம் | Vaazhkkai Thunainalam #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "0NMXbOoKvs0_clean.mp4",
+      "legacy_track_id": "hCHBPd8BH8A",
+      "panchangam_occasion": "ஐப்பசி 18 • புதன்கிழமை • பூரம்",
+      "uploaded_at": "2026-11-02T21:34:05.675041+05:30",
+      "scheduled_for": "2026-11-04T16:00:00+05:30",
+      "status": "scheduled"
+    },
+    "wGtcobqR01Q": {
+      "youtube_short_id": "I6l7V8i2JDk",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/I6l7V8i2JDk",
+      "title": "📖 நற்சிந்தனை — திருவருள் வழக்க விளக்கம் | Thiruvarul Vazhakka Vilakkam #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "wGtcobqR01Q.mp4",
+      "legacy_track_id": "wGtcobqR01Q",
+      "panchangam_occasion": "ஐப்பசி 18 • புதன்கிழமை • பூரம்",
+      "uploaded_at": "2026-11-02T21:34:09.648473+05:30",
+      "scheduled_for": "2026-11-04T20:00:00+05:30",
+      "status": "scheduled"
+    },
+    "2wt3e1VQo6c": {
+      "youtube_short_id": "kieWw9PU9yo",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/kieWw9PU9yo",
+      "title": "📖 நன்னெறி — அதிகாரம் 132 - புலவி நுணுக்கம் | அதிகாரம் 132 - புலவி #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "2wt3e1VQo6c.mp4",
+      "legacy_track_id": null,
+      "panchangam_occasion": "தேய்பிறை ஏகாதசி விரதம் | EKADASHI",
+      "uploaded_at": "2026-11-02T21:34:16.014751+05:30",
+      "scheduled_for": "2026-11-05T06:00:00+05:30",
+      "status": "scheduled"
+    },
+    "2xCDL6uPfbk": {
+      "youtube_short_id": "PygELQL2UQE",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/PygELQL2UQE",
+      "title": "📖 நற்துணை — கந்த சஷ்டி கவசம் | Kandha Sashti Kavasam #Shorts",
+      "deity": "murugan",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "2xCDL6uPfbk.mp4",
+      "legacy_track_id": null,
+      "panchangam_occasion": "ஐப்பசி 17 • செவ்வாய்க்கிழமை • மகம்",
+      "uploaded_at": "2026-11-02T21:34:25.634260+05:30",
+      "scheduled_for": "2026-11-03T16:00:00+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -1020,7 +1090,11 @@
       "2026-11-03T11:00:00+05:30",
       "2026-11-03T16:00:00+05:30",
       "2026-11-03T20:00:00+05:30",
-      "2026-11-04T06:00:00+05:30"
+      "2026-11-04T06:00:00+05:30",
+      "2026-11-04T11:00:00+05:30",
+      "2026-11-04T16:00:00+05:30",
+      "2026-11-04T20:00:00+05:30",
+      "2026-11-05T06:00:00+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
@@ -1029,7 +1103,8 @@
       "2026-11-02T16:00:00+05:30",
       "2026-11-02T20:00:00+05:30",
       "2026-11-03T06:00:00+05:30",
-      "2026-11-03T11:00:00+05:30"
+      "2026-11-03T11:00:00+05:30",
+      "2026-11-03T16:00:00+05:30"
     ]
   },
   "rejected_static_ids": [
