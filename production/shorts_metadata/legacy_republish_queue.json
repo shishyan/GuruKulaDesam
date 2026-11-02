@@ -391,10 +391,10 @@
     "youtube_film_id": "31xVgvxoiUA",
     "chorus_start_sec": 21.0,
     "duration_sec": 38.0,
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "WuN0dFLX6ZY",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T00:17:41.293363+05:30"
+    "updated_at": "2026-11-02T21:33:07.172441+05:30"
   },
   {
     "track_id": "v_Q_vKG_nHo",
@@ -409,10 +409,10 @@
     "youtube_film_id": "v_Q_vKG_nHo",
     "chorus_start_sec": 24.5,
     "duration_sec": 38.0,
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "BHsD21ctcwc",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T00:17:54.364451+05:30"
+    "updated_at": "2026-11-02T21:33:12.330231+05:30"
   },
   {
     "track_id": "CWh0TXSSACQ",
@@ -427,10 +427,10 @@
     "youtube_film_id": "CWh0TXSSACQ",
     "chorus_start_sec": 43.8,
     "duration_sec": 38.5,
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "MuGM4v3FTIk",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T00:17:54.396851+05:30"
+    "updated_at": "2026-11-02T21:33:17.363902+05:30"
   },
   {
     "track_id": "-zVzQ1XnY8Q",
@@ -445,10 +445,10 @@
     "youtube_film_id": "-zVzQ1XnY8Q",
     "chorus_start_sec": 74.5,
     "duration_sec": 38.5,
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "DDhzaRecCO4",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T00:18:07.283464+05:30"
+    "updated_at": "2026-11-02T21:33:20.691104+05:30"
   },
   {
     "track_id": "ZAjf5Ewzu_c",
@@ -463,10 +463,10 @@
     "youtube_film_id": "ZAjf5Ewzu_c",
     "chorus_start_sec": 30.5,
     "duration_sec": 38.5,
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "vp4D4TeOOA8",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T00:18:22.189053+05:30"
+    "updated_at": "2026-11-02T21:33:24.356161+05:30"
   },
   {
     "track_id": "4RUk7FPJ3TU",
@@ -474,8 +474,8 @@
     "channel_key": "@gurukuladesam2",
     "channel_handle": "@GuruKulaDesam2",
     "song_label": "திருவாசகம்: குழைத்த பத்து II (வேண்டத்தக்க தறிவோய்நீ)",
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "WbDXo5wZPlw",
     "video_path": "renders/shorts_gurukuladesam2/short_shiva_4RUk7FPJ3TU.mp4",
     "meta_path": "production/shorts_metadata/short_shiva_4RUk7FPJ3TU.json",
     "youtube_film_id": "4RUk7FPJ3TU",
@@ -483,7 +483,7 @@
     "duration_sec": 49.2,
     "scheduled_publish_at_ist": null,
     "old_marked_private": false,
-    "updated_at": "2026-11-01T19:15:37.110618+05:30"
+    "updated_at": "2026-11-02T21:33:27.791256+05:30"
   },
   {
     "track_id": "TUwlsvN7v1w",
@@ -491,8 +491,8 @@
     "channel_key": "@gurukuladesam2",
     "channel_handle": "@GuruKulaDesam2",
     "song_label": "கந்தரலங்காரம்: நாள் என் செய்யும் (பாடல் 39)",
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "Dh1q7enXhnA",
     "video_path": "renders/shorts_gurukuladesam2/short_murugan_TUwlsvN7v1w.mp4",
     "meta_path": "production/shorts_metadata/short_murugan_TUwlsvN7v1w.json",
     "youtube_film_id": "TUwlsvN7v1w",
@@ -500,7 +500,7 @@
     "duration_sec": 39.2,
     "scheduled_publish_at_ist": null,
     "old_marked_private": false,
-    "updated_at": "2026-11-01T19:15:55.007193+05:30"
+    "updated_at": "2026-11-02T21:33:34.213522+05:30"
   },
   {
     "track_id": "e16889YnVgw_part2",
@@ -559,8 +559,8 @@
     "channel_key": "@gurukuladesam2",
     "channel_handle": "@GuruKulaDesam2",
     "song_label": "குரு பகவான் துதி: குணமிகு வியாழ குருபகவானே (வியாழக்கிழமை சிறப்பு)",
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "xfVr6w6ccus",
     "video_path": "renders/shorts_gurukuladesam2/short_shiva_4-FJ8eh7Als.mp4",
     "meta_path": "production/shorts_metadata/short_shiva_4-FJ8eh7Als.json",
     "youtube_film_id": "4-FJ8eh7Als",
@@ -568,7 +568,7 @@
     "duration_sec": 46.2,
     "scheduled_publish_at_ist": "2026-11-05T06:00:00+05:30",
     "old_marked_private": false,
-    "updated_at": "2026-11-01T19:17:07.020546+05:30"
+    "updated_at": "2026-11-02T21:33:41.329429+05:30"
   },
   {
     "track_id": "WhbLmu2bJog",
@@ -576,8 +576,8 @@
     "channel_key": "@gurukuladesam2",
     "channel_handle": "@GuruKulaDesam2",
     "song_label": "ஸ்ரீ கோவிந்த நாமாவளி: கோவிந்தா ஹரி கோவிந்தா",
-    "status": "ready_to_republish",
-    "new_youtube_id": null,
+    "status": "completed",
+    "new_youtube_id": "WX6ZNUQMBq4",
     "video_path": "renders/shorts_gurukuladesam2/short_vishnu_WhbLmu2bJog.mp4",
     "meta_path": "production/shorts_metadata/short_vishnu_WhbLmu2bJog.json",
     "youtube_film_id": "WhbLmu2bJog",
@@ -585,6 +585,6 @@
     "duration_sec": 41.8,
     "scheduled_publish_at_ist": null,
     "old_marked_private": false,
-    "updated_at": "2026-11-01T19:17:43.385930+05:30"
+    "updated_at": "2026-11-02T21:33:46.936946+05:30"
   }
 ]
