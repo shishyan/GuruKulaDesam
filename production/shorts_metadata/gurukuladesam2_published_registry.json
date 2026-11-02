@@ -779,6 +779,62 @@
       "uploaded_at": "2026-11-02T21:06:19.239927+05:30",
       "scheduled_for": null,
       "status": "public"
+    },
+    "PXQW4sYo4nY": {
+      "youtube_short_id": "a87Grz3O-SY",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/a87Grz3O-SY",
+      "title": "📖 நற்சிந்தனை — திருவருட்பா: திருவடிச் சரண்புகல் | Thiruvarutpa: Thiruvadi Saranpugal #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "PXQW4sYo4nY.mp4",
+      "legacy_track_id": "PXQW4sYo4nY",
+      "panchangam_occasion": "ஐப்பசி 17 • செவ்வாய்க்கிழமை • மகம்",
+      "uploaded_at": "2026-11-02T21:06:30.335999+05:30",
+      "scheduled_for": "2026-11-03T11:00:00+05:30",
+      "status": "scheduled"
+    },
+    "Ww7cfR6tO8Q": {
+      "youtube_short_id": "l7dMSZXPER8",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/l7dMSZXPER8",
+      "title": "📖 நன்னெறி — திருக்குறள்: அதிகாரம் 2 - வான் சிறப்பு | Thirukkural: Vaan Sirappu #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "Ww7cfR6tO8Q_clean.mp4",
+      "legacy_track_id": "f1jxgAbXcdE",
+      "panchangam_occasion": "ஐப்பசி 17 • செவ்வாய்க்கிழமை • மகம்",
+      "uploaded_at": "2026-11-02T21:06:35.991895+05:30",
+      "scheduled_for": "2026-11-03T16:00:00+05:30",
+      "status": "scheduled"
+    },
+    "npc-0cJdpt0": {
+      "youtube_short_id": "IIa5j3vF5zQ",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/IIa5j3vF5zQ",
+      "title": "📖 நற்பண்பு — திருவருட்பா: அன்பு மாலை II | Thiruvarutpa: Anbu Maalai II #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "npc-0cJdpt0.mp4",
+      "legacy_track_id": "npc-0cJdpt0",
+      "panchangam_occasion": "ஐப்பசி 17 • செவ்வாய்க்கிழமை • மகம்",
+      "uploaded_at": "2026-11-02T21:06:39.867009+05:30",
+      "scheduled_for": "2026-11-03T20:00:00+05:30",
+      "status": "scheduled"
+    },
+    "FHuHKoE7Lto": {
+      "youtube_short_id": "42pkRzaq0ys",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/42pkRzaq0ys",
+      "title": "📖 நற்பண்பு — திருக்குறள்: அதிகாரம் 7 - புதல்வரைப் பெறுதல் | Puthalvarai Peruthal #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "FHuHKoE7Lto_clean.mp4",
+      "legacy_track_id": null,
+      "panchangam_occasion": "ஐப்பசி 18 • புதன்கிழமை • பூரம்",
+      "uploaded_at": "2026-11-02T21:06:46.079863+05:30",
+      "scheduled_for": "2026-11-04T06:00:00+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -789,7 +845,11 @@
       "2026-11-02T06:00:00+05:30",
       "2026-11-02T16:00:00+05:30",
       "2026-11-02T20:00:00+05:30",
-      "2026-11-03T06:00:00+05:30"
+      "2026-11-03T06:00:00+05:30",
+      "2026-11-03T11:00:00+05:30",
+      "2026-11-03T16:00:00+05:30",
+      "2026-11-03T20:00:00+05:30",
+      "2026-11-04T06:00:00+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
