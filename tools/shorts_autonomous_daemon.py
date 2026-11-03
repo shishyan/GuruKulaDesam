@@ -22,6 +22,7 @@ import re
 import sys
 import json
 import time
+import random
 import argparse
 import subprocess
 from datetime import datetime, timedelta, timezone
@@ -175,6 +176,11 @@ def fetch_live_channel_state(channel_key: str) -> tuple[set[str], set[str]]:
 
 
 def get_next_schedule_slots_for_channel(count: int, reg: dict, channel_key: str, live_occupied: set[str]) -> list[datetime]:
+    """
+    Picks divine-randomized schedule timings across auspicious times throughout the day,
+    avoiding rigid clock-watching while respecting authentic reach.
+    Randomizes publication times across day intervals with random minute & hour offsets.
+    """
     now_ist = datetime.now(IST)
     by_ch = reg.get("scheduled_slots_by_channel", {})
     occupied = set(by_ch.get(channel_key, [])) | set(live_occupied)
@@ -183,12 +189,41 @@ def get_next_schedule_slots_for_channel(count: int, reg: dict, channel_key: str,
 
     while len(slots) < count and day_offset < 90:
         target_date = (now_ist + timedelta(days=day_offset)).date()
-        for hr, mn in DAILY_IST_SLOTS:
-            slot_dt = datetime(target_date.year, target_date.month, target_date.day, hr, mn, 0, tzinfo=IST)
+        # 4 natural windows across the day with divine organic jitter:
+        # Window 1: Morning (05:00 - 08:30)
+        # Window 2: Midday (10:30 - 13:30)
+        # Window 3: Twilight / Evening (15:30 - 18:30)
+        # Window 4: Night Pooja (19:30 - 22:00)
+        windows = [
+            (5, 8),
+            (10, 13),
+            (15, 18),
+            (19, 21),
+        ]
+        # Shuffle order or pick divine randomized times within each window
+        for w_start, w_end in windows:
+            rand_hr = random.randint(w_start, w_end)
+            rand_mn = random.choice([3, 7, 12, 17, 23, 28, 34, 41, 47, 52])
+            slot_dt = datetime(target_date.year, target_date.month, target_date.day, rand_hr, rand_mn, 0, tzinfo=IST)
             if slot_dt > now_ist + timedelta(minutes=20):
-                iso_key = slot_dt.isoformat()
-                if iso_key not in occupied:
+                # Ensure at least 90 minutes spacing between any scheduled slots
+                too_close = False
+                for ex_iso in occupied:
+                    try:
+                        ex_dt = datetime.fromisoformat(ex_iso)
+                        if abs((slot_dt - ex_dt).total_seconds()) < 5400:
+                            too_close = True
+                            break
+                    except Exception:
+                        pass
+                for s in slots:
+                    if abs((slot_dt - s).total_seconds()) < 5400:
+                        too_close = True
+                        break
+
+                if not too_close:
                     slots.append(slot_dt)
+                    occupied.add(slot_dt.isoformat())
                     if len(slots) >= count:
                         break
         day_offset += 1
@@ -395,7 +430,7 @@ def run_batch_pipeline(
 
         for slot_idx, slot_dt in enumerate(ch_slots):
             slot_iso = slot_dt.isoformat() if schedule_mode else None
-            pick_dt = slot_dt if schedule_mode else slot_dt.replace(hour=DAILY_IST_SLOTS[slot_idx % len(DAILY_IST_SLOTS)][0])
+            pick_dt = slot_dt
 
             meta = None
             track_item = None
