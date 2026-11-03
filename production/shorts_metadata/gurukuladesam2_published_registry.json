@@ -1090,6 +1090,62 @@
       "uploaded_at": "2026-11-02T23:59:07.885554+05:30",
       "scheduled_for": "2026-11-05T11:00:00+05:30",
       "status": "scheduled"
+    },
+    "rAV3EQ0I8NM": {
+      "youtube_short_id": "JiRtAKTgUzM",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/JiRtAKTgUzM",
+      "title": "📖 நன்னெறி — திருக்குறள்: அதிகாரம் 133 - ஊடலுவகை | திருக்குறள்: அதிகாரம் 133 - ஊடலுவகை #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "rAV3EQ0I8NM.mp4",
+      "legacy_track_id": null,
+      "panchangam_occasion": "தேய்பிறை ஏகாதசி விரதம் | EKADASHI",
+      "uploaded_at": "2026-11-03T21:06:10.572674+05:30",
+      "scheduled_for": "2026-11-05T16:00:00+05:30",
+      "status": "scheduled"
+    },
+    "fJIeiPyejxU": {
+      "youtube_short_id": "ITRSnsHGfgc",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/ITRSnsHGfgc",
+      "title": "📖 நற்சிந்தனை — திருவருட்பா: பரசிவ வணக்கம் | Thiruvarutpa: Parasiva Vanakkam #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "fJIeiPyejxU.mp4",
+      "legacy_track_id": "fJIeiPyejxU",
+      "panchangam_occasion": "தேய்பிறை ஏகாதசி விரதம் | EKADASHI",
+      "uploaded_at": "2026-11-03T21:06:15.003270+05:30",
+      "scheduled_for": "2026-11-05T20:00:00+05:30",
+      "status": "scheduled"
+    },
+    "gtRJa6_qEjI": {
+      "youtube_short_id": "J8oR47Uwi4Y",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/J8oR47Uwi4Y",
+      "title": "📖 நற்பண்பு — அதிகாரம் 10 - இனியவை கூறல் | அதிகாரம் 10 - இனியவை கூறல் #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "gtRJa6_qEjI.mp4",
+      "legacy_track_id": null,
+      "panchangam_occasion": "பிரதோஷ நந்தி வழிபாடு | 04:30-06:00 PM IST",
+      "uploaded_at": "2026-11-03T21:06:20.582124+05:30",
+      "scheduled_for": "2026-11-06T06:00:00+05:30",
+      "status": "scheduled"
+    },
+    "-7ppYdnUdVk": {
+      "youtube_short_id": "vqa8ZXs40QI",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/vqa8ZXs40QI",
+      "title": "📖 நற்பண்பு — திருவருட்பா: ஆறாம் திருமுறை | Thiruvarutpa: Aaram Thirumurai #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "-7ppYdnUdVk.mp4",
+      "legacy_track_id": "-7ppYdnUdVk",
+      "panchangam_occasion": "பிரதோஷ நந்தி வழிபாடு | 04:30-06:00 PM IST",
+      "uploaded_at": "2026-11-03T21:06:24.586891+05:30",
+      "scheduled_for": "2026-11-06T11:00:00+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -1109,7 +1165,11 @@
       "2026-11-04T16:00:00+05:30",
       "2026-11-04T20:00:00+05:30",
       "2026-11-05T06:00:00+05:30",
-      "2026-11-05T11:00:00+05:30"
+      "2026-11-05T11:00:00+05:30",
+      "2026-11-05T16:00:00+05:30",
+      "2026-11-05T20:00:00+05:30",
+      "2026-11-06T06:00:00+05:30",
+      "2026-11-06T11:00:00+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
