@@ -1258,6 +1258,76 @@
       "uploaded_at": "2026-11-03T21:35:40.390595+05:30",
       "scheduled_for": "2026-11-04T20:00:00+05:30",
       "status": "scheduled"
+    },
+    "BxQ4c9VPwAo": {
+      "youtube_short_id": "ZW9H0CzIiDo",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/ZW9H0CzIiDo",
+      "title": "📖 நற்பண்பு — திருவருட்பா: அபராத விண்ணப்பம் II | Thiruvarutpa: Aparadha Vinnappam II #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "BxQ4c9VPwAo.mp4",
+      "legacy_track_id": "BxQ4c9VPwAo",
+      "panchangam_occasion": "ஐப்பசி 18 • புதன்கிழமை • பூரம்",
+      "uploaded_at": "2026-11-03T23:27:06.134016+05:30",
+      "scheduled_for": "2026-11-04T09:49:13+05:30",
+      "status": "scheduled"
+    },
+    "NK2PqzKz3aI": {
+      "youtube_short_id": "XbEEDjGtGiY",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/XbEEDjGtGiY",
+      "title": "📖 நற்சொல் — திருப்பல்லாண்டு | Thiru Pallaandu #Shorts",
+      "deity": "vishnu",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "NK2PqzKz3aI.mp4",
+      "legacy_track_id": "NK2PqzKz3aI",
+      "panchangam_occasion": "ஐப்பசி 18 • புதன்கிழமை • பூரம்",
+      "uploaded_at": "2026-11-03T23:30:25.671711+05:30",
+      "scheduled_for": "2026-11-04T07:08:23+05:30",
+      "status": "scheduled"
+    },
+    "S_FoILDLhls": {
+      "youtube_short_id": "JfP-_KDIc1Q",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/JfP-_KDIc1Q",
+      "title": "📖 நற்சிந்தனை — கிருஷ்ண மந்திரம் II | Krishna Mantra #Shorts",
+      "deity": "vishnu",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "S_FoILDLhls.mp4",
+      "legacy_track_id": "S_FoILDLhls",
+      "panchangam_occasion": "ஐப்பசி 18 • புதன்கிழமை • பூரம்",
+      "uploaded_at": "2026-11-03T23:31:21.144766+05:30",
+      "scheduled_for": "2026-11-04T09:24:08+05:30",
+      "status": "scheduled"
+    },
+    "YlNGYTlCedk": {
+      "youtube_short_id": "PQUT-2Iv3tA",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/PQUT-2Iv3tA",
+      "title": "📖 நற்சிந்தனை — இராம கிருஷ்ண துதி | Rama Krishna Thuthi #Shorts",
+      "deity": "vishnu",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "YlNGYTlCedk.mp4",
+      "legacy_track_id": "YlNGYTlCedk",
+      "panchangam_occasion": "ஐப்பசி 18 • புதன்கிழமை • பூரம்",
+      "uploaded_at": "2026-11-03T23:32:25.374845+05:30",
+      "scheduled_for": "2026-11-04T17:25:37+05:30",
+      "status": "scheduled"
+    },
+    "bZ03UopgYcc": {
+      "youtube_short_id": "OgPw_oKSQOo",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/OgPw_oKSQOo",
+      "title": "📖 நற்பண்பு — தாயே கருமாரி | ஸ்ரீ கருமாரியம்மன் பக்திப் பாடல் #Shorts",
+      "deity": "amman",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "amman_bZ03UopgYcc_master.mp4",
+      "legacy_track_id": "bZ03UopgYcc",
+      "panchangam_occasion": "தேய்பிறை ஏகாதசி விரதம் | EKADASHI",
+      "uploaded_at": "2026-11-03T23:32:31.076315+05:30",
+      "scheduled_for": "2026-11-05T11:07:26+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -1285,7 +1355,8 @@
       "2026-11-06T16:00:00+05:30",
       "2026-11-06T20:00:00+05:30",
       "2026-11-07T06:00:00+05:30",
-      "2026-11-07T11:00:00+05:30"
+      "2026-11-07T11:00:00+05:30",
+      "2026-11-04T09:49:13+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
@@ -1299,7 +1370,11 @@
       "2026-11-04T06:00:00+05:30",
       "2026-11-04T11:00:00+05:30",
       "2026-11-04T16:00:00+05:30",
-      "2026-11-04T20:00:00+05:30"
+      "2026-11-04T20:00:00+05:30",
+      "2026-11-04T07:08:23+05:30",
+      "2026-11-04T09:24:08+05:30",
+      "2026-11-04T17:25:37+05:30",
+      "2026-11-05T11:07:26+05:30"
     ]
   },
   "rejected_static_ids": [
