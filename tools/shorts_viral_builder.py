@@ -835,13 +835,13 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Brand,Noto Sans Tamil,38,&H0040E0FF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,8,24,24,96,1
-Style: SongLine,Noto Sans Tamil,{song_font_size},&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,8,24,24,170,1
-Style: BottomMeaning,Noto Sans Tamil,30,&H00FFFFFF,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,4.0,3.0,2,36,36,180,1
+Style: TitleCard,Noto Sans Tamil,42,&H0040E0FF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,3.0,2.0,8,24,24,80,1
+Style: SongLine,Noto Sans Tamil,{song_font_size},&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,3.0,2.0,8,24,24,155,1
+Style: BottomMeaning,Noto Sans Tamil,28,&H00FFFFFF,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,4.0,3.0,2,36,36,190,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:10:00.00,Brand,,0,0,0,,{brand_handle}
+Dialogue: 0,0:00:00.00,0:10:00.00,TitleCard,,0,0,0,,குரு குல தேசம்
 Dialogue: 0,0:00:00.00,0:10:00.00,SongLine,,0,0,0,,{one_liner}
 """
     if bottom_text:
