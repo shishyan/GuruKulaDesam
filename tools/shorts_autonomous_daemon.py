@@ -175,11 +175,29 @@ def fetch_live_channel_state(channel_key: str) -> tuple[set[str], set[str]]:
     return occupied_slots, fingerprints
 
 
+def parse_time_window(time_str: str, target_date) -> tuple[datetime, datetime] | None:
+    parts = [p.strip() for p in re.split(r"[-–—]", time_str)]
+    if len(parts) != 2:
+        return None
+    def parse_one(s: str) -> datetime:
+        dt = datetime.strptime(s.strip(), "%I:%M %p")
+        return datetime(target_date.year, target_date.month, target_date.day, dt.hour, dt.minute, 0, tzinfo=IST)
+    try:
+        return parse_one(parts[0]), parse_one(parts[1])
+    except Exception:
+        return None
+
+
 def get_next_schedule_slots_for_channel(count: int, reg: dict, channel_key: str, live_occupied: set[str]) -> list[datetime]:
     """
-    Picks divine-randomized schedule timings across auspicious times throughout the day,
-    avoiding rigid clock-watching while respecting authentic reach.
-    Randomizes publication times across day intervals with random minute & hour offsets.
+    Schedules Shorts strictly during authentic Daily Auspicious Muhurtham Timings
+    derived directly from the Tamil Panchangam / Calendar for each specific day:
+      1. Nalla Neram (காலை நல்ல நேரம்)
+      2. Gowri Nalla Neram Morning (காலை கௌரி நல்ல நேரம்)
+      3. Nalla Neram Evening (மாலை நல்ல நேரம்)
+      4. Gowri Nalla Neram Evening (மாலை கௌரி நல்ல நேரம்)
+    These timings change dynamically each day based on astronomical weekday cycles.
+    Within each auspicious window, an organic minute is chosen so publishing is divinely timed.
     """
     now_ist = datetime.now(IST)
     by_ch = reg.get("scheduled_slots_by_channel", {})
@@ -189,35 +207,48 @@ def get_next_schedule_slots_for_channel(count: int, reg: dict, channel_key: str,
 
     while len(slots) < count and day_offset < 90:
         target_date = (now_ist + timedelta(days=day_offset)).date()
-        # 4 natural windows across the day with divine organic jitter:
-        # Window 1: Morning (05:00 - 08:30)
-        # Window 2: Midday (10:30 - 13:30)
-        # Window 3: Twilight / Evening (15:30 - 18:30)
-        # Window 4: Night Pooja (19:30 - 22:00)
-        windows = [
-            (5, 8),
-            (10, 13),
-            (15, 18),
-            (19, 21),
-        ]
-        # Shuffle order or pick divine randomized times within each window
-        for w_start, w_end in windows:
-            rand_hr = random.randint(w_start, w_end)
-            rand_mn = random.choice([3, 7, 12, 17, 23, 28, 34, 41, 47, 52])
-            slot_dt = datetime(target_date.year, target_date.month, target_date.day, rand_hr, rand_mn, 0, tzinfo=IST)
+        midday_dt = datetime(target_date.year, target_date.month, target_date.day, 12, 0, tzinfo=IST)
+        panch_info = get_auspicious_alignment_for_datetime(midday_dt)
+
+        # Retrieve the 4 daily dynamic auspicious muhurtham windows
+        muhurtham_windows = []
+        for key, label in (
+            ("nalla_neram_am", "காலை நல்ல நேரம்"),
+            ("gowri_am", "காலை கௌரி நல்ல நேரம்"),
+            ("nalla_neram_pm", "மாலை நல்ல நேரம்"),
+            ("gowri_pm", "மாலை கௌரி நல்ல நேரம்"),
+        ):
+            raw = panch_info.get(key)
+            if raw:
+                win = parse_time_window(raw, target_date)
+                if win:
+                    muhurtham_windows.append((label, win[0], win[1]))
+
+        # Sort chronologically by start time
+        muhurtham_windows.sort(key=lambda x: x[1])
+
+        for label, st_dt, end_dt in muhurtham_windows:
+            total_seconds = int((end_dt - st_dt).total_seconds())
+            if total_seconds > 180:
+                # Pick an organic minute within the authentic auspicious window (avoiding boundary edges)
+                offset_sec = random.randint(min(180, total_seconds // 4), max(total_seconds - 300, total_seconds // 2))
+                slot_dt = st_dt + timedelta(seconds=offset_sec)
+            else:
+                slot_dt = st_dt
+
             if slot_dt > now_ist + timedelta(minutes=20):
-                # Ensure at least 90 minutes spacing between any scheduled slots
+                # Ensure minimum 60-minute separation
                 too_close = False
                 for ex_iso in occupied:
                     try:
                         ex_dt = datetime.fromisoformat(ex_iso)
-                        if abs((slot_dt - ex_dt).total_seconds()) < 5400:
+                        if abs((slot_dt - ex_dt).total_seconds()) < 3600:
                             too_close = True
                             break
                     except Exception:
                         pass
                 for s in slots:
-                    if abs((slot_dt - s).total_seconds()) < 5400:
+                    if abs((slot_dt - s).total_seconds()) < 3600:
                         too_close = True
                         break
 
@@ -226,6 +257,7 @@ def get_next_schedule_slots_for_channel(count: int, reg: dict, channel_key: str,
                     occupied.add(slot_dt.isoformat())
                     if len(slots) >= count:
                         break
+
         day_offset += 1
 
     return slots
