@@ -1328,6 +1328,20 @@
       "uploaded_at": "2026-11-03T23:32:31.076315+05:30",
       "scheduled_for": "2026-11-05T11:07:26+05:30",
       "status": "scheduled"
+    },
+    "vaXLG5kUGVc": {
+      "youtube_short_id": "Cnr_J8tgXr4",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/Cnr_J8tgXr4",
+      "title": "📖 நற்பண்பு — அன்னை ரேணுகாம்பாள் துதி | Annai Renukambal #Shorts",
+      "deity": "amman",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "amman_vaXLG5kUGVc_master.mp4",
+      "legacy_track_id": "vaXLG5kUGVc",
+      "panchangam_occasion": "தேய்பிறை ஏகாதசி விரதம் | EKADASHI",
+      "uploaded_at": "2026-11-03T23:59:57.893008+05:30",
+      "scheduled_for": "2026-11-05T13:09:11+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -1374,7 +1388,8 @@
       "2026-11-04T07:08:23+05:30",
       "2026-11-04T09:24:08+05:30",
       "2026-11-04T17:25:37+05:30",
-      "2026-11-05T11:07:26+05:30"
+      "2026-11-05T11:07:26+05:30",
+      "2026-11-05T13:09:11+05:30"
     ]
   },
   "rejected_static_ids": [
