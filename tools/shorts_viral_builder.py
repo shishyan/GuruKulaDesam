@@ -68,10 +68,11 @@ SHORTS_META_DIR = ROOT / "production" / "shorts_metadata"
 SHORTS_META_DIR.mkdir(parents=True, exist_ok=True)
 SHORTS_TEMP_DIR = ROOT / "renders" / "temp_shorts_build"
 SHORTS_TEMP_DIR.mkdir(parents=True, exist_ok=True)
+DIYA_48_OVERLAY = ROOT / "production" / "shorts_diyas_48_overlay.png"
 
 W, H = 1080, 1920
 FPS = 24
-DEFAULT_SHORT_DURATION = 38.0
+DEFAULT_SHORT_DURATION = 52.0
 
 # Wav2Vec2-Tamil CTC (20ms phoneme frame) + DSP verified Opening Chorus (Pallavi) windows:
 # Keyed by resolved video stem / YouTube Film ID / Track ID -> (start_sec, duration_sec)
@@ -590,8 +591,8 @@ def find_chorus_window(
     media_path: Path,
     track_id: str = "",
     yt_film_id: str | None = None,
-    min_dur: float = 34.0,
-    max_dur: float = 43.0,
+    min_dur: float = 48.0,
+    max_dur: float = 59.0,
     default_dur: float = DEFAULT_SHORT_DURATION,
 ) -> tuple[float, float]:
     """
@@ -798,6 +799,7 @@ def build_vertical_drawtext_filters(
     sacred_cat: dict,
     song_title_ta: str,
     brand_handle: str = "@GuruKulaDesam",
+    bottom_lyrics_or_meaning: str = "",
 ) -> list[str]:
     """
     Clean vertical 1080x1920 layout using libass (HarfBuzz-ng complex Tamil ligature shaping):
@@ -817,6 +819,13 @@ def build_vertical_drawtext_filters(
     one_liner = f"{cat_ta} — {short_ta}".replace("{", "(").replace("}", ")")
     song_font_size = 28 if len(one_liner) > 48 else 31
 
+    # Extract Tamil meaning or lyrics excerpt for footer display (bottom 10%)
+    bottom_text = ""
+    if bottom_lyrics_or_meaning:
+        clean_bottom = bottom_lyrics_or_meaning.strip().replace("{", "(").replace("}", ")")
+        lines = [l.strip() for l in clean_bottom.splitlines() if l.strip()][:3]
+        bottom_text = r"\N".join(lines)
+
     ass_path = work_dir / "header_overlay.ass"
     ass_content = f"""[Script Info]
 ScriptType: v4.00+
@@ -828,12 +837,16 @@ WrapStyle: 2
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Brand,Noto Sans Tamil,38,&H0040E0FF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,8,24,24,96,1
 Style: SongLine,Noto Sans Tamil,{song_font_size},&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,8,24,24,170,1
+Style: BottomMeaning,Noto Sans Tamil,30,&H00FFFFFF,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,4.0,3.0,2,36,36,180,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:00.00,0:10:00.00,Brand,,0,0,0,,{brand_handle}
 Dialogue: 0,0:00:00.00,0:10:00.00,SongLine,,0,0,0,,{one_liner}
 """
+    if bottom_text:
+        ass_content += f"Dialogue: 0,0:00:00.00,0:10:00.00,BottomMeaning,,0,0,0,,{bottom_text}\n"
+
     ass_path.write_text(ass_content, encoding="utf-8")
     ass_posix = ass_path.as_posix().replace(":", "\\:")
     fonts_dir = (ROOT / "fonts").as_posix().replace(":", "\\:")
@@ -1101,14 +1114,17 @@ def build_short_for_track(
     print("=" * 88)
 
     viral_meta = build_viral_short_metadata(track_id, deity_key, meta_entry, panchangam_info, youtube_film_id=yt_film_id)
+    bottom_txt = meta_entry.get("tamil_meaning") or meta_entry.get("tamil_lyrics") or ""
     dt_filters = build_vertical_drawtext_filters(
         work_dir=work_dir,
         sacred_cat=sacred_cat,
         song_title_ta=viral_meta["ta_title"],
         brand_handle=brand_handle,
+        bottom_lyrics_or_meaning=bottom_txt,
     )
 
     fps_short = 24
+    overlay_input_idx = 1 if visual_source_mode == "original_master_clip" else 2
     if visual_source_mode == "original_master_clip":
         inputs = [
             "-ss", f"{video_seek_start:.2f}", "-t", f"{clip_dur:.2f}", "-i", str(raw_source_video),
@@ -1121,13 +1137,17 @@ def build_short_for_track(
         ]
         audio_map_in = "1:a"
 
+    has_diya_overlay = DIYA_48_OVERLAY.exists()
+    if has_diya_overlay:
+        inputs += ["-loop", "1", "-i", str(DIYA_48_OVERLAY)]
+
     dt_chain = ",".join(dt_filters)
     pts_filter = f"setpts={flow_pts_stretch:.4f}*PTS," if flow_pts_stretch > 1.01 else ""
     if is_portrait_source:
         filter_parts = [
             f"[0:v]{pts_filter}fps={fps_short},scale={W}:1920:force_original_aspect_ratio=increase:flags=lanczos,"
             f"crop={W}:1248:(iw-{W})/2:(ih-1248)*0.40,"
-            f"pad={W}:{H}:0:312:black,{dt_chain},format=yuv420p[v_out]",
+            f"pad={W}:{H}:0:312:black[base_v];[base_v][1:v]overlay=0:0:shortest=1,{dt_chain},format=yuv420p[v_out]",
         ]
     else:
         has_top = layout_info["has_top"]
@@ -1144,7 +1164,7 @@ def build_short_for_track(
             f"scale=-2:1248:flags=lanczos,"
             f"crop={W}:1248:(iw-{W})/2:0,"
             f"eq=saturation=1.08:contrast=1.03:brightness=0.015,"
-            f"pad={W}:{H}:0:312:black,{dt_chain},format=yuv420p[v_out]",
+            f"pad={W}:{H}:0:312:black[base_v];[base_v][1:v]overlay=0:0:shortest=1,{dt_chain},format=yuv420p[v_out]",
         ]
 
     fade_out_st = max(0.5, clip_dur - 0.85)
