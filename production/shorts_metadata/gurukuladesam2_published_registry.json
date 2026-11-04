@@ -1594,6 +1594,34 @@
       "uploaded_at": "2026-11-05T00:08:40.611971+05:30",
       "scheduled_for": "2026-11-07T11:39:07+05:30",
       "status": "scheduled"
+    },
+    "2mdEV1acg-U": {
+      "youtube_short_id": "_Pmo4T33ulM",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/_Pmo4T33ulM",
+      "title": "📖 நற்சொல் — திருவாசகம்: குழைத்த பத்து II | Thiruvasagam: Kuzhaitha Pathu II #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "2mdEV1acg-U.mp4",
+      "legacy_track_id": "2mdEV1acg-U",
+      "panchangam_occasion": "ஐப்பசி மாத சிவராத்திரி | MASA SHIVARATRI",
+      "uploaded_at": "2026-11-05T04:10:38.240247+05:30",
+      "scheduled_for": "2026-11-07T17:12:40+05:30",
+      "status": "scheduled"
+    },
+    "QRdpedglKkU": {
+      "youtube_short_id": "NsiL0Al3NE8",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/NsiL0Al3NE8",
+      "title": "📖 நற்சொல் — திருவாசகம்: திருப்படை ஆட்சி | Thiruvasagam: Thiruppadai Aatchi #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "QRdpedglKkU.mp4",
+      "legacy_track_id": "QRdpedglKkU",
+      "panchangam_occasion": "ஐப்பசி மாத சிவராத்திரி | MASA SHIVARATRI",
+      "uploaded_at": "2026-11-05T04:11:42.367265+05:30",
+      "scheduled_for": "2026-11-07T21:58:59+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -1659,7 +1687,9 @@
       "2026-11-06T16:52:16+05:30",
       "2026-11-06T19:58:40+05:30",
       "2026-11-07T08:29:16+05:30",
-      "2026-11-07T11:39:07+05:30"
+      "2026-11-07T11:39:07+05:30",
+      "2026-11-07T17:12:40+05:30",
+      "2026-11-07T21:58:59+05:30"
     ]
   },
   "rejected_static_ids": [
