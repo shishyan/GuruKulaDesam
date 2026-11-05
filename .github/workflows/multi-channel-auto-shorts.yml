@@ -1,0 +1,117 @@
+name: Multi-Channel Companion Short Auto-Scheduler (All 5 YouTube Channels)
+
+on:
+  schedule:
+    # Runs every 2 hours to detect newly posted full-length videos across all 5 channels
+    - cron: '15 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: 'Target channel (all, karmicgenie, guru-kula-desam, gurukuladesam, gurukuladesam2, influenzian)'
+        required: false
+        default: 'all'
+        type: string
+      max_per_channel:
+        description: 'Max new companion Shorts to create per channel in this run'
+        required: false
+        default: '2'
+        type: string
+      publish_now:
+        description: 'Publish immediately as Public instead of scheduling at next slot (true/false)'
+        required: false
+        default: 'false'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  companion_shorts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FFmpeg, yt-dlp & YouTube API Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          pip install google-api-python-client google-auth-oauthlib google-auth-httplib2 yt-dlp
+
+      - name: Restore OAuth Tokens for All 5 Channels from GitHub Secrets
+        env:
+          KARMICGENIE_OAUTH_TOKEN: ${{ secrets.KARMICGENIE_OAUTH_TOKEN }}
+          KARMICGENIE_OAUTH_TOKEN_2: ${{ secrets.KARMICGENIE_OAUTH_TOKEN_2 }}
+          GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN: ${{ secrets.GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN }}
+          GURUKULADESAM_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN }}
+          GURUKULADESAM_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN_2 }}
+          GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
+          GURUKULADESAM2_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN_2 }}
+          INFLUENZIAN_OAUTH_TOKEN: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN }}
+        run: |
+          mkdir -p data/credentials/tokens data/credentials/tokens_karmicgenie data/credentials/tokens_gurukuladesam data/credentials/tokens_gurukuladesam2 data/credentials/tokens_influenzian
+          if [ -n "$KARMICGENIE_OAUTH_TOKEN" ]; then
+            printf "%s" "$KARMICGENIE_OAUTH_TOKEN" > data/credentials/token_karmicgenie.json
+            printf "%s" "$KARMICGENIE_OAUTH_TOKEN" > data/credentials/tokens_karmicgenie/token_942198183044.json
+          fi
+          if [ -n "$KARMICGENIE_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$KARMICGENIE_OAUTH_TOKEN_2" > data/credentials/tokens_karmicgenie/token_472322435541.json
+          fi
+          if [ -n "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" > data/credentials/token.json
+            printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" > data/credentials/tokens/token_472322435541.json
+          fi
+          if [ -n "$GURUKULADESAM_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/token_gurukuladesam.json
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam/token_839236964216.json
+          fi
+          if [ -n "$GURUKULADESAM_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN_2" > data/credentials/tokens_gurukuladesam/token_472322435541.json
+          fi
+          if [ -n "$GURUKULADESAM2_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/token_gurukuladesam2.json
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam2/token_839236964216.json
+          fi
+          if [ -n "$GURUKULADESAM2_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN_2" > data/credentials/tokens_gurukuladesam2/token_472322435541.json
+          fi
+          if [ -n "$INFLUENZIAN_OAUTH_TOKEN" ]; then
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/token_influenzian.json
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/tokens_influenzian/token_942198183044.json
+          fi
+
+      - name: Detect New Full-Length Videos & Schedule Companion Shorts Across All Channels
+        run: |
+          CH="${{ github.event.inputs.channel || 'all' }}"
+          MAX_PER="${{ github.event.inputs.max_per_channel || '2' }}"
+          PUB_NOW_FLAG=""
+          if [ "${{ github.event.inputs.publish_now }}" = "true" ]; then
+            PUB_NOW_FLAG="--publish-now"
+          fi
+          python tools/auto_short_from_full_video_daemon.py --channel "$CH" --max-per-channel "$MAX_PER" $PUB_NOW_FLAG
+
+      - name: Commit & Push Updated Companion Shorts Registry
+        run: |
+          git config --global user.name "Guru Kula Desam Autonomous Bot"
+          git config --global user.email "bot@gurukuladesam.org"
+          if [ -f production/shorts_metadata/companion_shorts_registry.json ]; then
+            git add production/shorts_metadata/companion_shorts_registry.json
+            if [ -n "$(git status --porcelain production/shorts_metadata/companion_shorts_registry.json)" ]; then
+              git commit -m "chore(shorts): update multi-channel companion shorts registry [skip ci]"
+              git pull --rebase origin HEAD || true
+              git push origin HEAD:master || true
+              git push origin HEAD:main || true
+            else
+              echo "No companion shorts registry changes to commit."
+            fi
+          fi
