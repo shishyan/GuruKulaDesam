@@ -54,13 +54,21 @@ METADATA_DB = ROOT / "production" / "metadata" / "all_songs_lyrics_and_meanings.
 MANIFEST_DB = ROOT / "production" / "autonomous_master_production_manifest.json"
 MASTER_CATALOG_FILE = ROOT / "production" / "shorts_metadata" / "master_film_sources.json"
 
+GDRIVE_GVFS_ASSETS_DIR = Path("/run/user/1000/gvfs/google-drive:host=gmail.com,user=nagaraj957/0AO7hUVqpfVvgUk9PVA/1RFL_SO9T271fzcughvXpR9Mjk_5ZYe1q/1e1DCSAgOxpZjPFcxik49io-5LeS1vSTL")
 FLOW_RENDERS_DIR = ROOT / "production" / "google_flow_renders"
 WIN_FLOW_RENDERS_DIR = WIN_ROOT / "production" / "google_flow_renders"
+GDRIVE_FLOW_RENDERS_DIR = GDRIVE_GVFS_ASSETS_DIR / "1h56SWy0pqeuU2Q_W2ECk_ZCTqe61ynbA"
 RELEASES_DIR = ROOT / "renders" / "releases"
 WIN_RELEASES_DIR = WIN_ROOT / "renders" / "releases"
 MASTER_CACHE_DIR = ROOT / "renders" / "master_cache"
 MASTER_CACHE_DIR.mkdir(parents=True, exist_ok=True)
-AUDIO_DIRS = [ROOT / "production" / "audio", ROOT / "source" / "youtube", WIN_ROOT / "production" / "audio", WIN_ROOT / "source" / "youtube"]
+AUDIO_DIRS = [
+    ROOT / "production" / "audio",
+    ROOT / "source" / "youtube",
+    WIN_ROOT / "production" / "audio",
+    WIN_ROOT / "source" / "youtube",
+    GDRIVE_GVFS_ASSETS_DIR / "1lIhEk3MpG_nB13MFveui1Jq4GH6Q9ryS",
+]
 
 SHORTS_OUT_DIR = ROOT / "renders" / "shorts_gurukuladesam2"
 SHORTS_OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -280,7 +288,7 @@ def _get_clip_hash_counts() -> dict[str, int]:
     if _CLIP_HASH_COUNTS is not None:
         return _CLIP_HASH_COUNTS
     counts = {}
-    for base in (FLOW_RENDERS_DIR, WIN_FLOW_RENDERS_DIR):
+    for base in (FLOW_RENDERS_DIR, WIN_FLOW_RENDERS_DIR, GDRIVE_FLOW_RENDERS_DIR):
         if base.exists():
             for mp4 in base.glob("*/*.mp4"):
                 try:
@@ -307,7 +315,7 @@ def is_strictly_unique_song_clip(mp4_path: Path) -> bool:
 
 
 def get_track_dedicated_flow_clips(track_id: str, require_fresh_flow_short: bool = False) -> list[Path]:
-    for base in (FLOW_RENDERS_DIR, WIN_FLOW_RENDERS_DIR):
+    for base in (FLOW_RENDERS_DIR, WIN_FLOW_RENDERS_DIR, GDRIVE_FLOW_RENDERS_DIR):
         tdir = base / track_id
         if not tdir.exists():
             continue

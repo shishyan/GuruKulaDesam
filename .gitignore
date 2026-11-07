@@ -70,3 +70,26 @@ production/temp_extend/
 
 # Rendered release videos (too large for Git LFS quota)
 renders/releases/
+
+# Google Drive-backed binary assets (indexed in production/gdrive_assets_manifest.json)
+production/audio/
+production/thumbnails/
+production/thumbnail_bases/
+production/thumbnail_stages/
+production/visuals/
+production/batch03/
+production/approved/
+production/audit/
+production/pilots/
+production/compliance/
+reference/published/
+assets/videos/
+docs/assets/videos/
+site/assets/videos/
+extend-source-current.mp4
+tools/temp_test/
+tools/*.png
+production/*.png
+!production/shorts_diyas_48_overlay.png
+production/*.jpg
+

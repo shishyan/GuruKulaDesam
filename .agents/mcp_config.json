@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "google-flow": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@shaig-mahmudov/google-flow-mcp"
+      ]
+    }
+  }
+}
