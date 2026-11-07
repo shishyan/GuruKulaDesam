@@ -1846,6 +1846,62 @@
       "uploaded_at": "2026-11-07T08:12:00.081773+05:30",
       "scheduled_for": "2026-11-09T20:02:02+05:30",
       "status": "scheduled"
+    },
+    "EXl0IUQXfoU": {
+      "youtube_short_id": "4V5xZCAmhrQ",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/4V5xZCAmhrQ",
+      "title": "📖 நற்சிந்தனை — ஹரே கிருஷ்ணா ஹரே ராமா I | Hare Krishna Hare Rama I #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "vallalar_cultural_EXl0IUQXfoU_master.mp4",
+      "legacy_track_id": "EXl0IUQXfoU",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 1) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-07T12:06:12.639468+05:30",
+      "scheduled_for": "2026-11-10T17:19:06+05:30",
+      "status": "scheduled"
+    },
+    "JkivipMHrzc": {
+      "youtube_short_id": "KIEHH_fMW-8",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/KIEHH_fMW-8",
+      "title": "📖 நற்சிந்தனை — கிருஷ்ண மந்திரம் II | Krishna Mantra II #Shorts",
+      "deity": "vallalar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "vallalar_cultural_JkivipMHrzc_master.mp4",
+      "legacy_track_id": "JkivipMHrzc",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 1) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-07T12:07:04.181415+05:30",
+      "scheduled_for": "2026-11-10T20:13:43+05:30",
+      "status": "scheduled"
+    },
+    "XoKGKEtJ2oQ": {
+      "youtube_short_id": "iVhaksWmu6g",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/iVhaksWmu6g",
+      "title": "📖 நற்சொல் — ஸ்கந்த மந்திரம் | Skanda Mantram #Shorts",
+      "deity": "murugan",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "XoKGKEtJ2oQ.mp4",
+      "legacy_track_id": "XoKGKEtJ2oQ",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 1) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-07T12:09:17.729918+05:30",
+      "scheduled_for": "2026-11-10T08:05:41+05:30",
+      "status": "scheduled"
+    },
+    "2g6p7WKWsxk": {
+      "youtube_short_id": "Jt3pIrX9zm4",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/Jt3pIrX9zm4",
+      "title": "📖 நற்துணை — கண நாதா ஓம் | Gana Natha Om #Shorts",
+      "deity": "vinayagar",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "vinayagar_lEHLSYxnpbU_master.mp4",
+      "legacy_track_id": "lEHLSYxnpbU",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 1) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-07T12:09:23.508928+05:30",
+      "scheduled_for": "2026-11-10T10:53:26+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -1892,7 +1948,9 @@
       "2026-11-09T17:12:45+05:30",
       "2026-11-09T19:55:14+05:30",
       "2026-11-10T08:05:39+05:30",
-      "2026-11-10T11:19:49+05:30"
+      "2026-11-10T11:19:49+05:30",
+      "2026-11-10T17:19:06+05:30",
+      "2026-11-10T20:13:43+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
@@ -1929,7 +1987,9 @@
       "2026-11-09T06:20:12+05:30",
       "2026-11-09T09:19:30+05:30",
       "2026-11-09T17:26:15+05:30",
-      "2026-11-09T20:02:02+05:30"
+      "2026-11-09T20:02:02+05:30",
+      "2026-11-10T08:05:41+05:30",
+      "2026-11-10T10:53:26+05:30"
     ]
   },
   "rejected_static_ids": [
