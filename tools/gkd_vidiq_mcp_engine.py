@@ -63,34 +63,54 @@ CHANNELS = {
 
 HIGH_VELOCITY_TAMIL_TAGS = {
     "thirukkural": [
-        "திருக்குறள்", "Thirukkural", "ThirukkuralInTamil", "Thiruvallur",
-        "TamilWisdom", "நன்னெறி", "நல்லறம்", "TamilMotivation", "GuruKulaDesam", "Shorts",
+        "திருக்குறள்", "Thirukkural", "ThirukkuralInTamil", "Thiruvalluvar",
+        "TamilWisdom", "நன்னெறி", "நல்லறம்", "TamilMotivation", "TamilSong",
+        "TamilMotivationalStatus", "WhatsAppStatusTamil", "SongsWithLyrics",
+        "MeditationMusic", "GuruKulaDesam", "Shorts",
     ],
     "vallalar": [
-        "வள்ளலார்", "திருவருட்பா", " அருட்பெருஞ்சோதி", "Vallalar", "Thiruvarutpa",
-        "Arutperunjothi", "Sanmargam", "நற்சிந்தனை", "GuruKulaDesam", "Shorts",
+        "வள்ளலார்", "திருவருட்பா", "அருட்பெருஞ்சோதி", "Vallalar", "Thiruvarutpa",
+        "Arutperunjothi", "Sanmargam", "நற்சிந்தனை", "MeditationMusicTamil",
+        "RelaxingDevotionalMusic", "DevotionalStatusTamil", "SleepMusicTamil",
+        "GuruKulaDesam", "Shorts",
     ],
     "murugan": [
         "முருகன்", "திருப்புகழ்", "கந்தர்அனுபூதி", "கந்தசஷ்டிகவசம்", "Murugan",
-        "Thiruppugazh", "LordMurugan", "Velava", "TamilDevotional", "GuruKulaDesam2", "Shorts",
+        "Thiruppugazh", "LordMurugan", "Velava", "TamilDevotional", "MuruganSongs",
+        "MuruganWhatsAppStatus", "DevotionalStatus", "TamilSongsWithLyrics",
+        "MorningPoojaSongs", "GuruKulaDesam2", "Shorts",
     ],
     "shiva": [
         "சிவபெருமான்", "தேவாரம்", "திருவாசகம்", "திருமந்திரம்", "நமச்சிவாய",
-        "Thiruvasagam", "Thevaram", "LordShiva", "Sivapuranam", "GuruKulaDesam2", "Shorts",
+        "Thiruvasagam", "Thevaram", "LordShiva", "Sivapuranam", "ShivaSongsTamil",
+        "OmNamahShivayaStatus", "ShivaMeditationMusic", "DevotionalStatus",
+        "TamilSongsWithLyrics", "GuruKulaDesam2", "Shorts",
     ],
     "amman": [
         "அபிராமிஅந்தாதி", "லக்ஷ்மிபோற்றி", "சரஸ்வதிபோற்றி", "அம்மன்பாடல்கள்",
-        "AbhiramiAnthadhi", "AmmanSongs", "Mahalakshmi", "Saraswathi", "GuruKulaDesam2", "Shorts",
+        "AbhiramiAnthadhi", "AmmanSongs", "Mahalakshmi", "Saraswathi",
+        "FridayDevotionalStatus", "AmmanWhatsAppStatus", "TamilDevotionalSongs",
+        "MorningBhaktiSongs", "GuruKulaDesam2", "Shorts",
     ],
     "vinayagar": [
         "விநாயகர்", "கணபதி", "விநாயகர்நான்மணிமாலை", "Vinayagar",
-        "Pillaiyar", "GaneshaDevotional", "TamilBhakti", "GuruKulaDesam2", "Shorts",
+        "Pillaiyar", "GaneshaDevotional", "TamilBhakti", "VinayagarSongs",
+        "VinayagarWhatsAppStatus", "MorningDevotionalSongs", "DevotionalStatus",
+        "GuruKulaDesam2", "Shorts",
     ],
     "vishnu": [
         "திருப்பாவை", "ஆண்டாள்", "பெருமாள்", "நாராயணன்", "Thiruppavai",
-        "Andal", "PerumalSongs", "DivyaPrabandham", "GuruKulaDesam2", "Shorts",
+        "Andal", "PerumalSongs", "DivyaPrabandham", "PerumalWhatsAppStatus",
+        "Suprabhatam", "MorningDevotionalMusic", "DevotionalStatus",
+        "GuruKulaDesam2", "Shorts",
     ],
 }
+
+GLOBAL_MEGA_CLUSTER_HOOKS = (
+    "\n\n🎧 GLOBAL SEARCH & MOOD CLUSTERS: Tamil Devotional Song | Fullscreen WhatsApp Status | "
+    "Sing-Along Paarayanam Lyrics | Morning Pooja & Brahma Muhurtham Meditation Music | "
+    "Relaxing Temple Ambience (@guru-kula-desam)"
+)
 
 
 def get_yt_client(channel_key: str = "@gurukuladesam"):
@@ -322,36 +342,32 @@ def gkd_scorecard(title: str, description: str = "", tags: list[str] | None = No
 
 def optimize_queued_shorts() -> dict:
     """
-    Audits all 15+ queued Shorts in `legacy_republish_queue.json` and `production/shorts_metadata/`,
-    enriching their tag banks and descriptions with live YouTube Autocomplete keywords so they
-    score 95+/100 before tonight's automatic upload unlock.
+    Audits all Shorts metadata in `production/shorts_metadata/short_*.json` and `legacy_republish_queue.json`,
+    enriching their tag banks and descriptions with live YouTube Autocomplete keywords and Global Mega-Cluster
+    hooks so they score 95+/100.
     """
-    if not QUEUE_PATH.exists():
-        return {"updated": 0}
-
-    items = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
     updated = []
-    for it in items:
-        if it.get("status") != "ready_to_republish":
+    meta_files = sorted(SHORTS_META_DIR.glob("short_*.json"))
+    for meta_file in meta_files:
+        try:
+            meta = json.loads(meta_file.read_text(encoding="utf-8"))
+        except Exception:
             continue
-        meta_rel = it.get("meta_path")
-        if not meta_rel or not (ROOT / meta_rel).exists():
-            continue
-        meta_file = ROOT / meta_rel
-        meta = json.loads(meta_file.read_text(encoding="utf-8"))
         deity = meta.get("deity", "murugan")
-        song_label = it.get("song_label") or meta.get("title", "")
+        song_label = meta.get("title", "")
+        tid = meta.get("track_id") or meta_file.stem
 
-        # Fetch live autocomplete keywords for this specific song/chapter
         clean_q = re.sub(r"[|#].*$", "", song_label).replace("📖", "").strip()
-        kw_data = gkd_keyword_research(clean_q, deity=deity)
+        if "—" in clean_q:
+            clean_q = clean_q.split("—", 1)[1].strip()
+        kw_data = gkd_keyword_research(clean_q[:45], deity=deity)
         live_kws = [k["keyword"] for k in kw_data["top_live_autocomplete_keywords"][:8]]
         curated = kw_data["recommended_high_velocity_tags"]
 
         existing_tags = meta.get("tags", [])
         merged_tags = []
         total_len = 0
-        for t in existing_tags + curated + live_kws:
+        for t in curated + live_kws + existing_tags:
             t_clean = t.lstrip("#").strip()
             if not t_clean or t_clean in merged_tags:
                 continue
@@ -361,11 +377,15 @@ def optimize_queued_shorts() -> dict:
             total_len += len(t_clean) + 2
 
         meta["tags"] = merged_tags
+        desc_curr = meta.get("description", "")
+        if "GLOBAL SEARCH & MOOD CLUSTERS:" not in desc_curr:
+            desc_curr = desc_curr.rstrip() + GLOBAL_MEGA_CLUSTER_HOOKS
+            meta["description"] = desc_curr
         sc = gkd_scorecard(meta.get("title", ""), meta.get("description", ""), merged_tags)
         meta["vidiq_seo_score"] = sc["seo_score"]
         meta_file.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
         updated.append({
-            "track_id": it["track_id"],
+            "track_id": tid,
             "title": meta.get("title"),
             "seo_score": sc["seo_score"],
             "tags_count": len(merged_tags),

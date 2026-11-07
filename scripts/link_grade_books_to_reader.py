@@ -14,7 +14,7 @@ BOOK_KEYS = [
     ("4. நற்துணை", "narthunai"),
     ("5. நற்சிந்தனை", "narchinthanai"),
     ("6. நற்சொல்", "narchol"),
-    ("7. நற்செயல்", "narcheyal")
+    ("7. நற்செய்கை", "narcheyal")
 ]
 
 for g in range(1, 13):

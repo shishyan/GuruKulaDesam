@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "TubeIQ — Free YouTube SEO, Outlier Finder & Studio Toolkit",
+  "name": "TubeIQ \u2014 Free YouTube SEO, Outlier Finder & Studio Toolkit",
   "short_name": "TubeIQ",
   "version": "1.0.0",
   "description": "100% Free vidIQ, TubeBuddy & 1of10 alternative: Outlier Multiplier & VPH badges, Live Keyword Explorer, Tag Extractor & 100-pt SEO Scorecard.",
@@ -11,7 +11,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "TubeIQ — Free YouTube SEO & Outlier Toolkit",
+    "default_title": "TubeIQ \u2014 Free YouTube SEO & Outlier Toolkit",
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
@@ -27,8 +27,12 @@
         "https://www.youtube.com/*",
         "https://studio.youtube.com/*"
       ],
-      "css": ["styles.css"],
-      "js": ["content.js"],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ],

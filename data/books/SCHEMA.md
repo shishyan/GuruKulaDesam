@@ -9,7 +9,7 @@ Each grade file must be saved as `data/books/grade_{N}.json` (where N is 1 to 12
 4. `narthunai` - நற்துணை (Spiritual Anchor, Temple Visits, Yagnas & Sacred Rituals - Appar Thevaram, Agamas, Pancha Maha Yagnas)
 5. `narchinthanai` - நற்சிந்தனை (All Buddha Teachings, Dhammapada, Mindfulness & Mind Mastery - 4 Noble Truths, Eightfold Path, Vipassana)
 6. `narchol` - நற்சொல் (Thiru Manthiram, Sacred Mantras, Sound Science & Vak-Tapas - Thirumular, AUM, Gayatri, Mahamrityunjaya)
-7. `narcheyal` - நற்செயல் (Duty, Discipline, Dignity - 3 Ds Action-Oriented Living graduated by age: play as duty for <8, coming to school as discipline, family life, earning wealth with dignity)
+7. `narcheyal` - நற்செய்கை (Duty, Discipline, Dignity - 3 Ds Action-Oriented Living graduated by age: play as duty for <8, coming to school as discipline, family life, earning wealth with dignity)
 
 ## Literature Base & Goal per Phase:
 - **Phase 1: Grades 1–5 (The Puranas)**:

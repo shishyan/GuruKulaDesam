@@ -288,7 +288,7 @@ MOOLA_DATA["scriptures"]["bhagavad-gita"] = {
                     "rootTamilTranslit": "யத்யதாசரதி ச்ரேஷ்டஸ்தத்ததேவேதரோ ஜனஃ |\nஸ யத்ப்ரமாணம் குருதே லோகஸ்ததனுவர்ததே || 3.21 ||",
                     "padavurai": [
                         {"word": "ச்ரேஷ்டஃ (sresthah)", "meaning": "சமூகத்தில் உயர்ந்த சான்றோன், தலைவன்"},
-                        {"word": "யத் யத் ஆசரதி (yad yad acarati)", "meaning": "எந்தெந்த உயர்ந்த நற்செயல்களைச் செய்கிறானோ"},
+                        {"word": "யத் யத் ஆசரதி (yad yad acarati)", "meaning": "எந்தெந்த உயர்ந்த நற்செய்கைகளைச் செய்கிறானோ"},
                         {"word": "தத் தத் ஏவ (tad tad eva)", "meaning": "அதனையே"},
                         {"word": "இதரஃ ஜனஃ (itarah janah)", "meaning": "மற்ற சாதாரண மக்களும் பின்பற்றுகின்றனர்"},
                         {"word": "ஸஃ யத் ப்ரமாணம் குருதே (sah yat pramanam kurute)", "meaning": "அவன் எதனை நெறியாக நிலைநாட்டுகிறானோ"},

@@ -124,7 +124,7 @@ SCOPES = [
 ]
 
 # Known active OAuth projects first (3 live verified projects: guru-kula-desam, home-manager-2026, lotusnaga)
-ACTIVE_PROJECT_IDS = ["839236964216", "472322435541", "942198183044"]
+ACTIVE_PROJECT_IDS = ["839236964216", "472322435541", "942198183044", "801831475660"]
 
 
 def extract_project_id(filename: str) -> str:

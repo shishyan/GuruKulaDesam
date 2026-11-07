@@ -387,6 +387,35 @@ def upload_short_via_api(meta: dict, publish_at_dt: datetime | None = None, chan
 
             vid_id = response.get("id")
             print(f"✅ [SUCCESS -> {expected_hnd}] Short Uploaded! YouTube URL: https://youtube.com/shorts/{vid_id}")
+
+            # 2. Auto-post conversion comment (when public immediately) to boost View-to-Subscriber rate
+            if status_body.get("privacyStatus") == "public":
+                try:
+                    parent_vid = meta.get("youtube_film_id") or meta.get("track_id") or ""
+                    parent_link = f"https://www.youtube.com/watch?v={parent_vid}" if parent_vid else "https://www.youtube.com/@guru-kula-desam"
+                    comment_text = (
+                        f"🙏 தினமும் காலை & மாலை நல்ல நேரத்தில் தெய்வீகப் பாடல்கள் மற்றும் திருக்குறள் இசை கேட்க "
+                        f"நமது {expected_hnd} சேனலை Subscribe செய்யுங்கள்!\n"
+                        f"🎬 முழு பாடல் வீடியோ (Full 1080p Song): {parent_link}\n"
+                        f"🔔 Subscribe to {expected_hnd} & @guru-kula-desam for daily auspicious Tamil devotional music & WhatsApp Status!"
+                    )
+                    yt.commentThreads().insert(
+                        part="snippet",
+                        body={
+                            "snippet": {
+                                "videoId": vid_id,
+                                "topLevelComment": {
+                                    "snippet": {
+                                        "textOriginal": comment_text
+                                    }
+                                },
+                            }
+                        },
+                    ).execute()
+                    print(f"   💬 Conversion first-comment posted on https://youtube.com/shorts/{vid_id}")
+                except Exception as ce:
+                    print(f"   ℹ️ First-comment note: {ce}")
+
             return vid_id
 
         except HttpError as e:

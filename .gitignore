@@ -93,3 +93,19 @@ production/*.png
 !production/shorts_diyas_48_overlay.png
 production/*.jpg
 
+
+# ---- Storage policy (2026-11-08): Google Drive is the central repository for all media/build artifacts ----
+# GitHub = code + web only. No Git LFS. Media is indexed in production/gdrive_assets_manifest.json.
+production/nanudaimai_instrumental/
+production/karmicgenie/
+production/thirukkural_missing_19_drafts_360p/
+production/influenzian_viral_shorts/
+production/global_meditation/
+production/google_drive_pull/
+production/reactions/
+production/upanishad_stories/
+/audio_ch*.wav
+*.wav
+*.flac
+# agent skill copies may embed credentials; never commit
+.agents/

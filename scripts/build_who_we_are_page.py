@@ -703,8 +703,8 @@ html_content = '''<!DOCTYPE html>
         </a>
         <div class="strip-sub-menu">
           <div class="strip-sub-header" style="color: #38bdf8;">பாலப் பருவம் • தொடக்கக் கல்வி</div>
-          <a href="tharam-1.html" class="strip-sub-item"><span class="strip-sub-icon">1️⃣</span><span>தரம் 1 (Grade 1) • நற்செயல்</span></a>
-          <a href="tharam-2.html" class="strip-sub-item"><span class="strip-sub-icon">2️⃣</span><span>தரம் 2 (Grade 2) • நற்செயல்</span></a>
+          <a href="tharam-1.html" class="strip-sub-item"><span class="strip-sub-icon">1️⃣</span><span>தரம் 1 (Grade 1) • நற்செய்கை</span></a>
+          <a href="tharam-2.html" class="strip-sub-item"><span class="strip-sub-icon">2️⃣</span><span>தரம் 2 (Grade 2) • நற்செய்கை</span></a>
           <a href="tharam-3.html" class="strip-sub-item"><span class="strip-sub-icon">3️⃣</span><span>தரம் 3 (Grade 3) • நற்பண்பு</span></a>
           <a href="tharam-4.html" class="strip-sub-item"><span class="strip-sub-icon">4️⃣</span><span>தரம் 4 (Grade 4) • நற்பண்பு</span></a>
         </div>

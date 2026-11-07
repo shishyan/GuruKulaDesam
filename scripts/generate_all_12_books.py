@@ -6,7 +6,7 @@ Strictly adheres to:
 1. நற்சிந்தனை: All Buddha Teachings, Dhammapada, 4 Noble Truths, Eightfold Path, Vipassana, Middle Path, Compassion, Non-attachment.
 2. நற்சொல்: Thiru Manthiram (திருமூலர்), All Mantras (AUM, Namashivaya, Gayatri, Mahamrityunjaya, Shanti Mantras), Sound Science, Vak-tapas.
 3. நற்துணை: Devotional rituals, Yagnas (Pancha Maha Yagnas, Homam), Temple visits, Pujas, Abhishekam, Utsavams + Spiritual Anchors (Thevaram, Satsang).
-4. நற்செயல்: Duty, Discipline, Dignity (3 Ds) action-oriented living graduated by age (joyful play as duty for <8, coming to school as discipline, leading a great family life, earning wealth with dignity).
+4. நற்செய்கை: Duty, Discipline, Dignity (3 Ds) action-oriented living graduated by age (joyful play as duty for <8, coming to school as discipline, leading a great family life, earning wealth with dignity).
 5. நன்னெறி, நல்லறம், நல்வழி: Maintained and elevated with rich classical verses.
 """
 
@@ -38,7 +38,7 @@ BOOKS_INFO = [
     ("narthunai", "நற்துணை", "Narthunai - Spiritual Anchor, Temple Visits, Yagnas & Sacred Rituals", "இறை நாமத் துணை, ஆலய வழிபாடு, பஞ்ச மகா யக்ஞங்கள், நித்திய பூஜைகள் & திருவிழாக்கள்", "அப்பர் தேவாரம், திருவாசகம், ஆகம நெறி, பஞ்ச மகா யக்ஞங்கள்"),
     ("narchinthanai", "நற்சிந்தனை", "Narchinthanai - All Buddha Teachings, Dhammapada, Mindfulness & Mind Mastery", "கௌதம புத்தரின் போதனைகள், தம்மபதம், சதுர ஆரிய சத்தியங்கள், அஷ்டாங்க மார்க்கம் & விபாசனா", "கௌதம புத்தர் போதனைகள், தம்மபதம், விபாசனா, சிவயோகசுவாமிகள் நற்சிந்தனை"),
     ("narchol", "நற்சொல்", "Narchol - Thiru Manthiram, Sacred Mantras, Sound Science & Vak-Tapas", "திருமந்திரம், மூல மந்திரங்கள் (ஓம், நமசிவாய, காயத்ரி, மஹாமிருத்யுஞ்ஜய), நாத விந்து தத்துவம் & வாக்-தபஸ்", "திருமூலர் திருமந்திரம், மூல மந்திரங்கள், கீதை 17.15 வாக்-தபஸ்"),
-    ("narcheyal", "நற்செயல்", "Narcheyal - Duty, Discipline, Dignity (3 Ds Action-Oriented Living)", "கடமை (Duty), கட்டுப்பாடு (Discipline), கண்ணியம் (Dignity) — கற்றதைச் செயலில் காட்டும் வாழ்வியல் சாதனா", "பகவத் கீதை 2.47, 3.8, திருக்குறள் ஆள்வினையுடைமை & மானம், வள்ளலார் ஜீவகாருண்யம்")
+    ("narcheyal", "நற்செய்கை", "Narcheyal - Duty, Discipline, Dignity (3 Ds Action-Oriented Living)", "கடமை (Duty), கட்டுப்பாடு (Discipline), கண்ணியம் (Dignity) — கற்றதைச் செயலில் காட்டும் வாழ்வியல் சாதனா", "பகவத் கீதை 2.47, 3.8, திருக்குறள் ஆள்வினையுடைமை & மானம், வள்ளலார் ஜீவகாருண்யம்")
 ]
 
 # Standard Topic Banks for all 12 grades
@@ -636,7 +636,7 @@ def generate_chapter(grade, book_id, chap_num, topic):
 
     elif book_id == "narcheyal":
         expo = (
-            f"தரம் {grade} மாணவர்களுக்கான நற்செயல் நூலின் {chap_num}-ஆம் அத்தியாயம். "
+            f"தரம் {grade} மாணவர்களுக்கான நற்செய்கை நூலின் {chap_num}-ஆம் அத்தியாயம். "
             f"கடமை (Duty), கட்டுப்பாடு (Discipline), கண்ணியம் (Dignity) ஆகிய 3 'D' விழுமியங்களை செயலில் காட்டும் வாழ்வியல் சாதனா: '{topic}'. "
             f"கற்ற கல்வியானது பேச்சில் மட்டும் இருந்தால் பயனில்லை; அது அன்றாடச் செயலில் வெளிப்பட வேண்டும். "
             f"மழலைப் பருவத்தில் மகிழ்ச்சியாக விளையாடுவதே தலையாய கடமை; பள்ளிக்கு ஒழுங்காக வருவதும் நேரத்தோடு உறங்குவதும் கட்டுப்பாடு; "
@@ -901,7 +901,7 @@ def generate_chapter(grade, book_id, chap_num, topic):
 
     elif book_id == "narcheyal":
         expo = (
-            f"தரம் {grade} மாணவர்களுக்கான நற்செயல் நூலின் {chap_num}-ஆம் அத்தியாயம். "
+            f"தரம் {grade} மாணவர்களுக்கான நற்செய்கை நூலின் {chap_num}-ஆம் அத்தியாயம். "
             f"கடமை (Duty), கட்டுப்பாடு (Discipline), கண்ணியம் (Dignity) ஆகிய 3 'D' விழுமியங்களை செயலில் காட்டும் வாழ்வியல் சாதனா: '{topic}'. "
             f"கற்ற கல்வியானது பேச்சில் மட்டும் இருந்தால் பயனில்லை; அது அன்றாடச் செயலில் வெளிப்பட வேண்டும். "
             f"மழலைப் பருவத்தில் மகிழ்ச்சியாக விளையாடுவதே தலையாய கடமை; பள்ளிக்கு ஒழுங்காக வருவதும் நேரத்தோடு உறங்குவதும் கட்டுப்பாடு; "
