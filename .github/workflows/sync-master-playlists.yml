@@ -29,9 +29,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-api-python-client google-auth-oauthlib google-auth-httplib2
 
-      - name: Restore Flagship OAuth Token
+      - name: Restore Flagship & Secondary OAuth Tokens
         env:
           GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN: ${{ secrets.GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN }}
+          GURUKULADESAM_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN }}
+          GURUKULADESAM_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN_2 }}
+          GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
+          GURUKULADESAM2_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN_2 }}
         run: |
           mkdir -p data/credentials
           if [ -n "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" ]; then
@@ -41,6 +45,10 @@ jobs:
       - name: Execute Playlist Sync
         env:
           GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN: ${{ secrets.GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN }}
+          GURUKULADESAM_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN }}
+          GURUKULADESAM_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN_2 }}
+          GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
+          GURUKULADESAM2_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN_2 }}
         run: |
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             python tools/sync_all_to_master_playlists.py --dry-run

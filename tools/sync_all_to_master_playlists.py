@@ -208,37 +208,58 @@ def export_plan_report(plan):
     print(f"✅ Full sync plan exported to: {out_file}")
 
 
-def get_authenticated_service(token_env_var="GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN"):
+def get_all_authenticated_services():
     from google.oauth2.credentials import Credentials
     from google.auth.transport.requests import Request
     from googleapiclient.discovery import build
 
     SCOPES = ["https://www.googleapis.com/auth/youtube.force-ssl"]
 
-    token_json_str = os.environ.get(token_env_var)
+    token_candidates = [
+        os.environ.get("GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN"),
+        os.environ.get("GURUKULADESAM_OAUTH_TOKEN"),
+        os.environ.get("GURUKULADESAM_OAUTH_TOKEN_2"),
+        os.environ.get("GURUKULADESAM2_OAUTH_TOKEN"),
+        os.environ.get("GURUKULADESAM2_OAUTH_TOKEN_2"),
+    ]
+
+    services = []
+    seen = set()
+
+    for tok_str in token_candidates:
+        if not tok_str or tok_str in seen:
+            continue
+        seen.add(tok_str)
+        try:
+            tok_data = json.loads(tok_str)
+            creds = Credentials.from_authorized_user_info(tok_data, SCOPES)
+            if creds.expired and creds.refresh_token:
+                creds.refresh(Request())
+            services.append(build("youtube", "v3", credentials=creds))
+        except Exception:
+            pass
+
     local_token_path = ROOT / "data" / "credentials" / "token.json"
+    if not services and local_token_path.exists():
+        try:
+            creds = Credentials.from_authorized_user_file(str(local_token_path), SCOPES)
+            if creds.expired and creds.refresh_token:
+                creds.refresh(Request())
+            services.append(build("youtube", "v3", credentials=creds))
+        except Exception:
+            pass
 
-    creds = None
-    if token_json_str:
-        token_data = json.loads(token_json_str)
-        creds = Credentials.from_authorized_user_info(token_data, SCOPES)
-    elif local_token_path.exists():
-        creds = Credentials.from_authorized_user_file(str(local_token_path), SCOPES)
-
-    if not creds:
-        raise ValueError(f"No valid credentials found in {token_env_var} or {local_token_path}")
-
-    if creds.expired and creds.refresh_token:
-        creds.refresh(Request())
-
-    return build("youtube", "v3", credentials=creds)
+    return services
 
 
 def execute_live_sync(plan):
-    print("🔑 Authenticating with YouTube Data API...")
-    youtube = get_authenticated_service()
-    print("✅ Authenticated successfully!\n")
+    print("🔑 Authenticating with YouTube Data API quota pool...")
+    clients = get_all_authenticated_services()
+    if not clients:
+        raise ValueError("No authenticated YouTube services available.")
+    print(f"✅ Initialized {len(clients)} authenticated client project(s) in pool!\n")
 
+    client_idx = 0
     total = len(plan)
     success = 0
     errors = 0
@@ -263,21 +284,31 @@ def execute_live_sync(plan):
             }
         }
 
-        try:
-            youtube.playlistItems().insert(part="snippet", body=body).execute()
-            print("DONE ✅")
-            success += 1
-        except Exception as e:
-            err_msg = str(e)
-            if "videoAlreadyInPlaylist" in err_msg:
-                print("ALREADY PRESENT ⏩")
+        inserted = False
+        while client_idx < len(clients) and not inserted:
+            youtube = clients[client_idx]
+            try:
+                youtube.playlistItems().insert(part="snippet", body=body).execute()
+                print("DONE ✅")
                 success += 1
-            elif "quotaExceeded" in err_msg:
-                print(f"\n❌ YouTube Quota Exceeded! Exiting at item {i}.")
-                break
-            else:
-                print(f"FAILED ❌ ({err_msg})")
-                errors += 1
+                inserted = True
+            except Exception as e:
+                err_msg = str(e)
+                if "videoAlreadyInPlaylist" in err_msg:
+                    print("ALREADY PRESENT ⏩")
+                    success += 1
+                    inserted = True
+                elif "quotaExceeded" in err_msg:
+                    print(f"\n⚠️ Client {client_idx + 1}/{len(clients)} hit API quota. Rotating to next project...")
+                    client_idx += 1
+                else:
+                    print(f"FAILED ❌ ({err_msg})")
+                    errors += 1
+                    inserted = True
+
+        if not inserted and client_idx >= len(clients):
+            print(f"\n❌ All {len(clients)} YouTube API projects have exhausted their daily quotas. Stopping at item {i}.")
+            break
 
     print("\n" + "=" * 60)
     print(f"SYNC SUMMARY: {success} succeeded / already present, {errors} errors out of {total} items.")
