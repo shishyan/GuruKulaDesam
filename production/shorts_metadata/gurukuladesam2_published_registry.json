@@ -2126,6 +2126,62 @@
       "uploaded_at": "2026-11-08T21:11:44.672111+05:30",
       "scheduled_for": "2026-11-12T12:55:09+05:30",
       "status": "scheduled"
+    },
+    "FvpGjzaW2TA": {
+      "youtube_short_id": "IdRg-92gTAo",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/IdRg-92gTAo",
+      "title": "📖 நல்லறம் — திருக்குறள்: அதிகாரம் 27 - தவம் | Thavam #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "adhikaram_27_thavam_cinematic.mp4",
+      "legacy_track_id": "IEk-wwY3rC8",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 4) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-08T21:33:45.969122+05:30",
+      "scheduled_for": "2026-11-13T07:03:25+05:30",
+      "status": "scheduled"
+    },
+    "Mata6vtnrjQ": {
+      "youtube_short_id": "NBJhIlPjRRI",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/NBJhIlPjRRI",
+      "title": "📖 நற்செய்கை — திருக்குறள்: அதிகாரம் 61 - மடியின்மை | Madiyinmai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "adhikaram_61_madiyinmai_cinematic.mp4",
+      "legacy_track_id": "GfGlO3RQuik",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 4) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-08T21:34:28.526509+05:30",
+      "scheduled_for": "2026-11-13T09:29:34+05:30",
+      "status": "scheduled"
+    },
+    "yPfkP_EjTyc": {
+      "youtube_short_id": "rWmDDVr-880",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/rWmDDVr-880",
+      "title": "📖 நற்பண்பு — கௌமாரம் ஸ்துதி | Koumaram Stuthi #Shorts",
+      "deity": "murugan",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "yPfkP_EjTyc.mp4",
+      "legacy_track_id": "yPfkP_EjTyc",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 3) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-08T21:36:30.521172+05:30",
+      "scheduled_for": "2026-11-12T17:21:09+05:30",
+      "status": "scheduled"
+    },
+    "ssOkftpUcLE": {
+      "youtube_short_id": "XF72itOLK6U",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/XF72itOLK6U",
+      "title": "📖 நற்சிந்தனை — சிவ சுப்ரமணியர் திருவிருத்தம் | Siva Subramaniyar #Shorts",
+      "deity": "murugan",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "ssOkftpUcLE.mp4",
+      "legacy_track_id": "ssOkftpUcLE",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 3) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-08T21:36:55.729385+05:30",
+      "scheduled_for": "2026-11-12T18:50:31+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -2182,7 +2238,9 @@
       "2026-11-12T10:58:38+05:30",
       "2026-11-12T13:05:12+05:30",
       "2026-11-12T17:32:02+05:30",
-      "2026-11-12T18:50:31+05:30"
+      "2026-11-12T18:50:31+05:30",
+      "2026-11-13T07:03:25+05:30",
+      "2026-11-13T09:29:34+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
@@ -2229,7 +2287,9 @@
       "2026-11-11T17:30:23+05:30",
       "2026-11-11T19:19:23+05:30",
       "2026-11-12T11:20:00+05:30",
-      "2026-11-12T12:55:09+05:30"
+      "2026-11-12T12:55:09+05:30",
+      "2026-11-12T17:21:09+05:30",
+      "2026-11-12T18:50:31+05:30"
     ]
   },
   "rejected_static_ids": [
