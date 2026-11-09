@@ -109,3 +109,13 @@ production/upanishad_stories/
 *.flac
 # agent skill copies may embed credentials; never commit
 .agents/
+
+# Production video scratch directories (storage policy: large binaries in Drive)
+production/tamil_thai_vazhthu/*.mp4
+production/tamil_thai_vazhthu/*.wav
+production/tamil_thai_vazhthu/*.aac
+production/tamil_thai_vazhthu/*.png
+production/tamil_thai_vazhthu/*.jpg
+production/devotional_tamil_mozhi_vazhthu/*.mp4
+production/devotional_tamil_mozhi_vazhthu/*.png
+production/devotional_tamil_mozhi_vazhthu/*.jpg
