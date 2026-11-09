@@ -2182,6 +2182,62 @@
       "uploaded_at": "2026-11-08T21:36:55.729385+05:30",
       "scheduled_for": "2026-11-12T18:50:31+05:30",
       "status": "scheduled"
+    },
+    "n9lAyAdzo60": {
+      "youtube_short_id": "hP9GeduWNvQ",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/hP9GeduWNvQ",
+      "title": "📖 நல்லறம் — திருக்குறள்: அதிகாரம் 26 - புலால் உண்ணாமை | Thirukkural: Pulaal Unnaamai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "adhikaram_26_pulaal_unnaamai_cinematic.mp4",
+      "legacy_track_id": "h2q-ADrbBc4",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 4) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-09T20:05:13.070271+05:30",
+      "scheduled_for": "2026-11-13T17:04:58+05:30",
+      "status": "scheduled"
+    },
+    "oEH4ztdn2Nc": {
+      "youtube_short_id": "RaI8OgXFIlQ",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/RaI8OgXFIlQ",
+      "title": "📖 நற்செய்கை — திருக்குறள்: அதிகாரம் 54 - பொச்சாவாமை | Pochchaavaamai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "adhikaram_54_pochchaavaamai_cinematic.mp4",
+      "legacy_track_id": "O0hASl4BS2c",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 4) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-09T20:05:19.704649+05:30",
+      "scheduled_for": "2026-11-13T20:00:10+05:30",
+      "status": "scheduled"
+    },
+    "91RgQ8AygF4": {
+      "youtube_short_id": "UkJvP0Hxfbo",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/UkJvP0Hxfbo",
+      "title": "📖 நற்பண்பு — திருக்குறள்: அதிகாரம் 84 - பேதைமை | Pethaimai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "91RgQ8AygF4.mp4",
+      "legacy_track_id": "91RgQ8AygF4",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 5) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-09T20:05:24.334528+05:30",
+      "scheduled_for": "2026-11-14T08:26:44+05:30",
+      "status": "scheduled"
+    },
+    "4zff_qi_G1E": {
+      "youtube_short_id": "5Ch5CknlF4g",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/5Ch5CknlF4g",
+      "title": "📖 நற்பண்பு — திருக்குறள்: அதிகாரம் 82 - தீ நட்பு | Thee Natpu #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "4zff_qi_G1E.mp4",
+      "legacy_track_id": "4zff_qi_G1E",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 5) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-09T20:05:30.461434+05:30",
+      "scheduled_for": "2026-11-14T11:01:56+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -2240,7 +2296,11 @@
       "2026-11-12T17:32:02+05:30",
       "2026-11-12T18:50:31+05:30",
       "2026-11-13T07:03:25+05:30",
-      "2026-11-13T09:29:34+05:30"
+      "2026-11-13T09:29:34+05:30",
+      "2026-11-13T17:04:58+05:30",
+      "2026-11-13T20:00:10+05:30",
+      "2026-11-14T08:26:44+05:30",
+      "2026-11-14T11:01:56+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
