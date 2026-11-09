@@ -2434,6 +2434,34 @@
       "uploaded_at": "2026-11-09T21:39:24.491987+05:30",
       "scheduled_for": "2026-11-14T21:40:44+05:30",
       "status": "scheduled"
+    },
+    "lD6far4EmHY": {
+      "youtube_short_id": "0c5vikx_ozY",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/0c5vikx_ozY",
+      "title": "📖 நற்சொல் — திருவோத்தூர் பதிகம் (பூத்தேர்ந்து | Thiruvothur Pathigam II #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "lD6far4EmHY.mp4",
+      "legacy_track_id": "lD6far4EmHY",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 6) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-10T00:01:29.945536+05:30",
+      "scheduled_for": "2026-11-15T07:50:34+05:30",
+      "status": "scheduled"
+    },
+    "3t5U9ABVeOc": {
+      "youtube_short_id": "tsNh_E-cjLE",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/tsNh_E-cjLE",
+      "title": "📖 நற்சொல் — தேவாரம் - மாசில் வீணையும் (அப்பர் பெருமான் III) | River Music #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "3t5U9ABVeOc.mp4",
+      "legacy_track_id": "3t5U9ABVeOc",
+      "panchangam_occasion": "கந்த சஷ்டி விரதம் (நாள் 6) | SKANDA SASHTI",
+      "uploaded_at": "2026-11-10T00:02:05.484110+05:30",
+      "scheduled_for": "2026-11-15T11:34:49+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -2559,7 +2587,9 @@
       "2026-11-14T08:32:31+05:30",
       "2026-11-14T11:09:26+05:30",
       "2026-11-14T17:11:08+05:30",
-      "2026-11-14T21:40:44+05:30"
+      "2026-11-14T21:40:44+05:30",
+      "2026-11-15T07:50:34+05:30",
+      "2026-11-15T11:34:49+05:30"
     ]
   },
   "rejected_static_ids": [
