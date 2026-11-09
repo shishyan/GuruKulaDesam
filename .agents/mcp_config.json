@@ -1,10 +1,9 @@
 {
   "mcpServers": {
-    "google-flow": {
-      "command": "npx",
+    "comfyui-google-flow": {
+      "command": "python3",
       "args": [
-        "-y",
-        "@shaig-mahmudov/google-flow-mcp"
+        "/home/antigravity/ComfyUI/mcp_server/comfyui_flow_mcp.py"
       ]
     }
   }
