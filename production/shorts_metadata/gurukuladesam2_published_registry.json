@@ -2714,6 +2714,34 @@
       "uploaded_at": "2026-11-10T21:38:44.104962+05:30",
       "scheduled_for": "2026-11-17T11:10:16+05:30",
       "status": "scheduled"
+    },
+    "nnlH4ydFRQw": {
+      "youtube_short_id": "ECnuVLqF1x8",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/ECnuVLqF1x8",
+      "title": "📖 நற்சொல் — திருவாசகம்: பிரார்த்தனைப் பத்து II | Thiruvasagam: Prarthanai Pathu II #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "nnlH4ydFRQw.mp4",
+      "legacy_track_id": "nnlH4ydFRQw",
+      "panchangam_occasion": "கார்த்திகை 1 • செவ்வாய்க்கிழமை • அவிட்டம்",
+      "uploaded_at": "2026-11-11T00:01:46.984635+05:30",
+      "scheduled_for": "2026-11-17T17:14:21+05:30",
+      "status": "scheduled"
+    },
+    "pLVPFb8LJEk": {
+      "youtube_short_id": "mcGZ1GqQVOQ",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/mcGZ1GqQVOQ",
+      "title": "📖 நற்சொல் — ஈஸ்வர நாமவளி சரணம்! (I) | Eeswara Naamavali #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "pLVPFb8LJEk_clean.mp4",
+      "legacy_track_id": "pLVPFb8LJEk",
+      "panchangam_occasion": "கார்த்திகை 1 • செவ்வாய்க்கிழமை • அவிட்டம்",
+      "uploaded_at": "2026-11-11T00:03:03.965130+05:30",
+      "scheduled_for": "2026-11-17T19:54:43+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -2859,7 +2887,9 @@
       "2026-11-16T17:27:12+05:30",
       "2026-11-16T19:42:04+05:30",
       "2026-11-17T07:48:04+05:30",
-      "2026-11-17T11:10:16+05:30"
+      "2026-11-17T11:10:16+05:30",
+      "2026-11-17T17:14:21+05:30",
+      "2026-11-17T19:54:43+05:30"
     ]
   },
   "rejected_static_ids": [
