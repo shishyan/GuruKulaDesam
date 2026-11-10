@@ -2462,6 +2462,62 @@
       "uploaded_at": "2026-11-10T00:02:05.484110+05:30",
       "scheduled_for": "2026-11-15T11:34:49+05:30",
       "status": "scheduled"
+    },
+    "CEh2a8KUIKU": {
+      "youtube_short_id": "ZRza1pWX01o",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/ZRza1pWX01o",
+      "title": "📖 நற்பண்பு — திருக்குறள்: அதிகாரம் 72 - அவையறிதல் | Avaiyarithal #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "CEh2a8KUIKU.mp4",
+      "legacy_track_id": "CEh2a8KUIKU",
+      "panchangam_occasion": "திருவோண நட்சத்திர பெருமாள் வழிபாடு | THIRUVONAM",
+      "uploaded_at": "2026-11-10T20:05:10.044943+05:30",
+      "scheduled_for": "2026-11-16T06:30:41+05:30",
+      "status": "scheduled"
+    },
+    "Gnu-TzZfe7A": {
+      "youtube_short_id": "kQ0vvUvFDZ4",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/kQ0vvUvFDZ4",
+      "title": "📖 நன்னெறி — திருக்குறள்: அதிகாரம் 41 - கல்லாமை | Kallaamai Learning #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "Gnu-TzZfe7A.mp4",
+      "legacy_track_id": "Gnu-TzZfe7A",
+      "panchangam_occasion": "திருவோண நட்சத்திர பெருமாள் வழிபாடு | THIRUVONAM",
+      "uploaded_at": "2026-11-10T20:05:14.791861+05:30",
+      "scheduled_for": "2026-11-16T09:28:28+05:30",
+      "status": "scheduled"
+    },
+    "HezzLu_n6qE": {
+      "youtube_short_id": "Jg2vjVVRWOo",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/Jg2vjVVRWOo",
+      "title": "📖 நல்லறம் — திருக்குறள்: அதிகாரம் 37 - அவாவறுத்தல் | Avaa Aruththal #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "HezzLu_n6qE.mp4",
+      "legacy_track_id": "HezzLu_n6qE",
+      "panchangam_occasion": "திருவோண நட்சத்திர பெருமாள் வழிபாடு | THIRUVONAM",
+      "uploaded_at": "2026-11-10T20:05:20.494443+05:30",
+      "scheduled_for": "2026-11-16T17:19:28+05:30",
+      "status": "scheduled"
+    },
+    "JreH0hqB2po": {
+      "youtube_short_id": "mnMA0UhyGn8",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/mnMA0UhyGn8",
+      "title": "📖 நன்னெறி — திருக்குறள்: அதிகாரம் 34 - நிலையாமை | Nilaiyaamai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "JreH0hqB2po.mp4",
+      "legacy_track_id": "JreH0hqB2po",
+      "panchangam_occasion": "திருவோண நட்சத்திர பெருமாள் வழிபாடு | THIRUVONAM",
+      "uploaded_at": "2026-11-10T20:05:25.517288+05:30",
+      "scheduled_for": "2026-11-16T20:22:11+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -2530,7 +2586,11 @@
       "2026-11-15T07:59:57+05:30",
       "2026-11-15T11:16:01+05:30",
       "2026-11-15T13:37:37+05:30",
-      "2026-11-15T15:18:05+05:30"
+      "2026-11-15T15:18:05+05:30",
+      "2026-11-16T06:30:41+05:30",
+      "2026-11-16T09:28:28+05:30",
+      "2026-11-16T17:19:28+05:30",
+      "2026-11-16T20:22:11+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
