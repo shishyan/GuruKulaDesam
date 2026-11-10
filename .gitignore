@@ -119,3 +119,9 @@ production/tamil_thai_vazhthu/*.jpg
 production/devotional_tamil_mozhi_vazhthu/*.mp4
 production/devotional_tamil_mozhi_vazhthu/*.png
 production/devotional_tamil_mozhi_vazhthu/*.jpg
+
+# Thirukkeerthi Agaval heavy audio binary
+production/thirukkeerthi_agaval/*.wav
+production/thirukkeerthi_agaval/*.mp4
+production/thirukkeerthi_agaval/*.png
+production/thirukkeerthi_agaval/*.jpg
