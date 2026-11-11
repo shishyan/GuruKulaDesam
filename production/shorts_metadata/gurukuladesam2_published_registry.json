@@ -1470,17 +1470,17 @@
       "status": "scheduled"
     },
     "grjVzzo-RWc": {
-      "youtube_short_id": "tVAafc9iy4o",
+      "youtube_short_id": "dnj_XxxY9uQ",
       "channel_handle": "@GuruKulaDesam2",
-      "short_url": "https://youtube.com/shorts/tVAafc9iy4o",
+      "short_url": "https://youtube.com/shorts/dnj_XxxY9uQ",
       "title": "📖 நற்பண்பு — சமயபுரத்தாயே (மூல வடிவம்) | ஸ்ரீ சமயபுரம் மாரியம்மன் பக்திப் பாடல் #Shorts",
       "deity": "amman",
       "visual_source_mode": "original_master_clip",
       "visual_source_file": "amman_grjVzzo-RWc_master.mp4",
       "legacy_track_id": "grjVzzo-RWc",
-      "panchangam_occasion": "தேய்பிறை ஏகாதசி விரதம் | EKADASHI",
-      "uploaded_at": "2026-11-04T21:37:27.215181+05:30",
-      "scheduled_for": "2026-11-05T19:07:03+05:30",
+      "panchangam_occasion": "வளர்பிறை ஏகாதசி விரதம் | EKADASHI",
+      "uploaded_at": "2026-11-12T00:06:29.092363+05:30",
+      "scheduled_for": "2026-11-20T10:00:55+05:30",
       "status": "scheduled"
     },
     "-yEq62Bu_d8": {
@@ -2994,6 +2994,20 @@
       "uploaded_at": "2026-11-11T21:46:40.361338+05:30",
       "scheduled_for": "2026-11-19T18:47:56+05:30",
       "status": "scheduled"
+    },
+    "HPP3IG7DWRc": {
+      "youtube_short_id": "dFqyccXlEjk",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/dFqyccXlEjk",
+      "title": "📖 நற்சிந்தனை — ஹரே கிருஷ்ணா ஹரே ராமா | Hare Krishna Hare Rama #Shorts",
+      "deity": "vishnu",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "vallalar_cultural_HPP3IG7DWRc_master.mp4",
+      "legacy_track_id": "HPP3IG7DWRc",
+      "panchangam_occasion": "வளர்பிறை ஏகாதசி விரதம் | EKADASHI",
+      "uploaded_at": "2026-11-12T00:06:21.680001+05:30",
+      "scheduled_for": "2026-11-20T06:52:47+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -3159,7 +3173,9 @@
       "2026-11-19T11:39:56+05:30",
       "2026-11-19T13:08:03+05:30",
       "2026-11-19T17:00:08+05:30",
-      "2026-11-19T18:47:56+05:30"
+      "2026-11-19T18:47:56+05:30",
+      "2026-11-20T06:52:47+05:30",
+      "2026-11-20T10:00:55+05:30"
     ]
   },
   "rejected_static_ids": [
