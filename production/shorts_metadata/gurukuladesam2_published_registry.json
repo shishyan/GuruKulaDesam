@@ -2742,6 +2742,62 @@
       "uploaded_at": "2026-11-11T00:03:03.965130+05:30",
       "scheduled_for": "2026-11-17T19:54:43+05:30",
       "status": "scheduled"
+    },
+    "cR_u-JuGJAU": {
+      "youtube_short_id": "_HtAfsEmmLg",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/_HtAfsEmmLg",
+      "title": "📖 நற்பண்பு — திருக்குறள்: அதிகாரம் 76 - பொருள் செயல்வகை | Porul Seyalvagai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "cR_u-JuGJAU.mp4",
+      "legacy_track_id": "cR_u-JuGJAU",
+      "panchangam_occasion": "கார்த்திகை 2 • புதன்கிழமை • சதயம்",
+      "uploaded_at": "2026-11-11T20:05:09.854240+05:30",
+      "scheduled_for": "2026-11-18T17:18:32+05:30",
+      "status": "scheduled"
+    },
+    "dBIUA3fKBJ0": {
+      "youtube_short_id": "qo0WbHl0v1U",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/qo0WbHl0v1U",
+      "title": "📖 நன்னெறி — திருக்குறள்: அதிகாரம் 71 - குறிப்பறிதல் | Kuripparithal #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "dBIUA3fKBJ0.mp4",
+      "legacy_track_id": "dBIUA3fKBJ0",
+      "panchangam_occasion": "கார்த்திகை 2 • புதன்கிழமை • சதயம்",
+      "uploaded_at": "2026-11-11T20:05:14.960331+05:30",
+      "scheduled_for": "2026-11-18T18:57:33+05:30",
+      "status": "scheduled"
+    },
+    "dD_cXqU_XVQ": {
+      "youtube_short_id": "a9QmXw6F_4w",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/a9QmXw6F_4w",
+      "title": "📖 நற்செய்கை — திருக்குறள்: அதிகாரம் 38 - ஊழ் | Oozh Vinai #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "dD_cXqU_XVQ.mp4",
+      "legacy_track_id": "dD_cXqU_XVQ",
+      "panchangam_occasion": "கார்த்திகை 3 • வியாழக்கிழமை • பூரட்டாதி",
+      "uploaded_at": "2026-11-11T20:05:19.687655+05:30",
+      "scheduled_for": "2026-11-19T11:04:46+05:30",
+      "status": "scheduled"
+    },
+    "dthZW-Wo8IU": {
+      "youtube_short_id": "MmVU98Hb9ro",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/MmVU98Hb9ro",
+      "title": "📖 நற்செய்கை — அதிகாரம் 70 - மன்னரைச் | Mannarai Sernthozhuthal #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "dthZW-Wo8IU.mp4",
+      "legacy_track_id": "dthZW-Wo8IU",
+      "panchangam_occasion": "கார்த்திகை 3 • வியாழக்கிழமை • பூரட்டாதி",
+      "uploaded_at": "2026-11-11T20:05:24.387896+05:30",
+      "scheduled_for": "2026-11-19T12:19:38+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -2820,7 +2876,11 @@
       "2026-11-17T17:31:24+05:30",
       "2026-11-17T19:52:25+05:30",
       "2026-11-18T06:46:26+05:30",
-      "2026-11-18T09:25:21+05:30"
+      "2026-11-18T09:25:21+05:30",
+      "2026-11-18T17:18:32+05:30",
+      "2026-11-18T18:57:33+05:30",
+      "2026-11-19T11:04:46+05:30",
+      "2026-11-19T12:19:38+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
