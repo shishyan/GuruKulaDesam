@@ -3218,6 +3218,34 @@
       "uploaded_at": "2026-11-12T21:37:05.326474+05:30",
       "scheduled_for": "2026-11-22T11:15:10+05:30",
       "status": "scheduled"
+    },
+    "FFXImcs5Ehw": {
+      "youtube_short_id": "fYE280TVWfM",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/fYE280TVWfM",
+      "title": "📖 நற்பண்பு — ஸ்ரீ சிவசண்முக நாம ஸங்கீர்த்தனம் | Siva Shanmuga Nama Sankeerthanam #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "FFXImcs5Ehw.mp4",
+      "legacy_track_id": "FFXImcs5Ehw",
+      "panchangam_occasion": "பிரதோஷ நந்தி வழிபாடு | 04:30-06:00 PM IST",
+      "uploaded_at": "2026-11-12T23:59:56.033992+05:30",
+      "scheduled_for": "2026-11-22T14:04:58+05:30",
+      "status": "scheduled"
+    },
+    "FI0wKDmanmE": {
+      "youtube_short_id": "8aBTkDapHzc",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/8aBTkDapHzc",
+      "title": "📖 நற்சொல் — திருவடிப் புகழ்ச்சி | Thiruvadi Pugazhchi #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "FI0wKDmanmE.mp4",
+      "legacy_track_id": "FI0wKDmanmE",
+      "panchangam_occasion": "பிரதோஷ நந்தி வழிபாடு | 04:30-06:00 PM IST",
+      "uploaded_at": "2026-11-13T00:00:38.206870+05:30",
+      "scheduled_for": "2026-11-22T15:57:34+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -3403,7 +3431,9 @@
       "2026-11-21T17:16:03+05:30",
       "2026-11-21T21:38:23+05:30",
       "2026-11-22T08:18:42+05:30",
-      "2026-11-22T11:15:10+05:30"
+      "2026-11-22T11:15:10+05:30",
+      "2026-11-22T14:04:58+05:30",
+      "2026-11-22T15:57:34+05:30"
     ]
   },
   "rejected_static_ids": [
