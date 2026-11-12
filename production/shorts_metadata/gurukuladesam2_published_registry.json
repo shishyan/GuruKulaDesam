@@ -3008,6 +3008,62 @@
       "uploaded_at": "2026-11-12T00:06:21.680001+05:30",
       "scheduled_for": "2026-11-20T06:52:47+05:30",
       "status": "scheduled"
+    },
+    "sAgX9WX86Rw": {
+      "youtube_short_id": "LlDxFKaObD0",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/LlDxFKaObD0",
+      "title": "📖 நற்செய்கை — திருக்குறள்: அதிகாரம் 80 - நட்பாராய்தல் | Natpaaraaythal #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "sAgX9WX86Rw.mp4",
+      "legacy_track_id": "sAgX9WX86Rw",
+      "panchangam_occasion": "கார்த்திகை 5 • சனிக்கிழமை • ரேவதி",
+      "uploaded_at": "2026-11-12T20:05:10.529899+05:30",
+      "scheduled_for": "2026-11-21T08:17:41+05:30",
+      "status": "scheduled"
+    },
+    "tzAYLpH3TkI": {
+      "youtube_short_id": "b2P-5TUBsV0",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/b2P-5TUBsV0",
+      "title": "📖 நல்லறம் — திருக்குறள்: அதிகாரம் 29 - கள்ளாமை | Kallaamai Symphony #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "tzAYLpH3TkI.mp4",
+      "legacy_track_id": "tzAYLpH3TkI",
+      "panchangam_occasion": "கார்த்திகை 5 • சனிக்கிழமை • ரேவதி",
+      "uploaded_at": "2026-11-12T20:05:15.350696+05:30",
+      "scheduled_for": "2026-11-21T11:24:56+05:30",
+      "status": "scheduled"
+    },
+    "wPT_1jgn2Ys": {
+      "youtube_short_id": "J6qtR1OoJi0",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/J6qtR1OoJi0",
+      "title": "📖 நல்லறம் — திருக்குறள்: அதிகாரம் 28 - கூடா ஒழுக்கம் | Kooda Ozhukkam Symphony #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "wPT_1jgn2Ys.mp4",
+      "legacy_track_id": "wPT_1jgn2Ys",
+      "panchangam_occasion": "கார்த்திகை 5 • சனிக்கிழமை • ரேவதி",
+      "uploaded_at": "2026-11-12T20:05:20.472400+05:30",
+      "scheduled_for": "2026-11-21T17:24:13+05:30",
+      "status": "scheduled"
+    },
+    "wyDIU74Rs7Y": {
+      "youtube_short_id": "S4_8o6XYj9E",
+      "channel_handle": "@GuruKulaDesam",
+      "short_url": "https://youtube.com/shorts/S4_8o6XYj9E",
+      "title": "📖 நன்னெறி — திருக்குறள்: அதிகாரம் 73 - அவையஞ்சாமை | Avai Anjaamai Female #Shorts",
+      "deity": "thirukkural",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "wyDIU74Rs7Y.mp4",
+      "legacy_track_id": "wyDIU74Rs7Y",
+      "panchangam_occasion": "கார்த்திகை 5 • சனிக்கிழமை • ரேவதி",
+      "uploaded_at": "2026-11-12T20:05:25.398216+05:30",
+      "scheduled_for": "2026-11-21T21:39:31+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -3096,7 +3152,11 @@
       "2026-11-20T06:50:21+05:30",
       "2026-11-20T09:29:20+05:30",
       "2026-11-20T17:36:43+05:30",
-      "2026-11-20T19:54:58+05:30"
+      "2026-11-20T19:54:58+05:30",
+      "2026-11-21T08:17:41+05:30",
+      "2026-11-21T11:24:56+05:30",
+      "2026-11-21T17:24:13+05:30",
+      "2026-11-21T21:39:31+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
