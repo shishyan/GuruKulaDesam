@@ -3358,6 +3358,34 @@
       "uploaded_at": "2026-11-13T21:36:49.705890+05:30",
       "scheduled_for": "2026-11-24T19:45:28+05:30",
       "status": "scheduled"
+    },
+    "QRSRyYEacMs": {
+      "youtube_short_id": "2ASzzD_Vb5U",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/2ASzzD_Vb5U",
+      "title": "📖 நற்பண்பு — ஸ்கந்த மந்திரம் | Skanda Mantram #Shorts",
+      "deity": "murugan",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "QRSRyYEacMs.mp4",
+      "legacy_track_id": "QRSRyYEacMs",
+      "panchangam_occasion": "கார்த்திகை 9 • புதன்கிழமை • ரோகிணி",
+      "uploaded_at": "2026-11-14T00:00:04.483908+05:30",
+      "scheduled_for": "2026-11-25T06:22:40+05:30",
+      "status": "scheduled"
+    },
+    "i6XFZE1q9uo": {
+      "youtube_short_id": "Rdo0IG5W3vw",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/Rdo0IG5W3vw",
+      "title": "📖 நற்சிந்தனை — உள்ளம் ஒரு கோவில் (பகுதி 1) | Ullam Oru Kovil #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "i6XFZE1q9uo.mp4",
+      "legacy_track_id": "i6XFZE1q9uo",
+      "panchangam_occasion": "கார்த்திகை 9 • புதன்கிழமை • ரோகிணி",
+      "uploaded_at": "2026-11-14T00:00:50.169488+05:30",
+      "scheduled_for": "2026-11-25T10:01:43+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -3563,7 +3591,9 @@
       "2026-11-24T08:34:17+05:30",
       "2026-11-24T11:16:01+05:30",
       "2026-11-24T16:48:39+05:30",
-      "2026-11-24T19:45:28+05:30"
+      "2026-11-24T19:45:28+05:30",
+      "2026-11-25T06:22:40+05:30",
+      "2026-11-25T10:01:43+05:30"
     ]
   },
   "rejected_static_ids": [
