@@ -1414,17 +1414,17 @@
       "status": "scheduled"
     },
     "XpdQL93uFtM": {
-      "youtube_short_id": "9UBAZiUHGKk",
+      "youtube_short_id": "OU9sn5d5KYE",
       "channel_handle": "@GuruKulaDesam",
-      "short_url": "https://youtube.com/shorts/9UBAZiUHGKk",
+      "short_url": "https://youtube.com/shorts/OU9sn5d5KYE",
       "title": "📖 நற்சிந்தனை — திருவருட்பா: புண்ணிய விளக்கம் | Thiruvarutpa: Punniya Vilakkam #Shorts",
       "deity": "vallalar",
       "visual_source_mode": "original_master_clip",
       "visual_source_file": "XpdQL93uFtM.mp4",
       "legacy_track_id": "XpdQL93uFtM",
-      "panchangam_occasion": "கார்த்திகை கார்த்திகை விரதம் | KRITTIKA MURUGAN",
-      "uploaded_at": "2026-11-13T20:05:22.784886+05:30",
-      "scheduled_for": "2026-11-24T11:34:18+05:30",
+      "panchangam_occasion": "கார்த்திகை 9 • புதன்கிழமை • ரோகிணி",
+      "uploaded_at": "2026-11-13T21:06:23.113987+05:30",
+      "scheduled_for": "2026-11-25T09:25:45+05:30",
       "status": "scheduled"
     },
     "ZXdIpt_-Pmo": {
@@ -3246,6 +3246,62 @@
       "uploaded_at": "2026-11-13T00:00:38.206870+05:30",
       "scheduled_for": "2026-11-22T15:57:34+05:30",
       "status": "scheduled"
+    },
+    "GYH3tnKYidU": {
+      "youtube_short_id": "fW8KY1MuOhQ",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/fW8KY1MuOhQ",
+      "title": "📖 நற்சொல் — திருமந்திரம்: முதலாம் தந்திரம் | Thirumanthiram: Mudhal Thanthiram #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "GYH3tnKYidU.mp4",
+      "legacy_track_id": "GYH3tnKYidU",
+      "panchangam_occasion": "கார்த்திகை 7 • திங்கட்கிழமை • பரணி",
+      "uploaded_at": "2026-11-13T21:06:29.734248+05:30",
+      "scheduled_for": "2026-11-23T06:26:27+05:30",
+      "status": "scheduled"
+    },
+    "HXLltX2BPig": {
+      "youtube_short_id": "LLimhUFgt3w",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/LLimhUFgt3w",
+      "title": "📖 நற்சொல் — அருள் நாம விளக்கம் | Arul Nama Vilakkam #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "HXLltX2BPig.mp4",
+      "legacy_track_id": "HXLltX2BPig",
+      "panchangam_occasion": "கார்த்திகை 7 • திங்கட்கிழமை • பரணி",
+      "uploaded_at": "2026-11-13T21:06:35.716223+05:30",
+      "scheduled_for": "2026-11-23T09:23:06+05:30",
+      "status": "scheduled"
+    },
+    "MtV5wS61MsM": {
+      "youtube_short_id": "TlsfTtSL738",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/TlsfTtSL738",
+      "title": "📖 நற்சொல் — திரு சனி பகவான் பதிகம் | Sani Bhagavan Pathigam #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "MtV5wS61MsM.mp4",
+      "legacy_track_id": "MtV5wS61MsM",
+      "panchangam_occasion": "கார்த்திகை 7 • திங்கட்கிழமை • பரணி",
+      "uploaded_at": "2026-11-13T21:06:40.801121+05:30",
+      "scheduled_for": "2026-11-23T17:05:33+05:30",
+      "status": "scheduled"
+    },
+    "TcsCIh8hvko": {
+      "youtube_short_id": "WWtIbaGuXUA",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/WWtIbaGuXUA",
+      "title": "📖 நற்சொல் — கடவுளைக் கடலுள் எழு! | Kadavulai Kadalul Ezhu #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "TcsCIh8hvko.mp4",
+      "legacy_track_id": "TcsCIh8hvko",
+      "panchangam_occasion": "கார்த்திகை 7 • திங்கட்கிழமை • பரணி",
+      "uploaded_at": "2026-11-13T21:06:45.439835+05:30",
+      "scheduled_for": "2026-11-23T19:50:40+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -3348,7 +3404,11 @@
       "2026-11-23T17:13:56+05:30",
       "2026-11-23T19:40:07+05:30",
       "2026-11-24T08:28:25+05:30",
-      "2026-11-24T11:34:18+05:30"
+      "2026-11-24T11:34:18+05:30",
+      "2026-11-24T17:00:30+05:30",
+      "2026-11-24T20:08:47+05:30",
+      "2026-11-25T06:55:55+05:30",
+      "2026-11-25T09:25:45+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
@@ -3437,7 +3497,11 @@
       "2026-11-22T08:18:42+05:30",
       "2026-11-22T11:15:10+05:30",
       "2026-11-22T14:04:58+05:30",
-      "2026-11-22T15:57:34+05:30"
+      "2026-11-22T15:57:34+05:30",
+      "2026-11-23T06:26:27+05:30",
+      "2026-11-23T09:23:06+05:30",
+      "2026-11-23T17:05:33+05:30",
+      "2026-11-23T19:50:40+05:30"
     ]
   },
   "rejected_static_ids": [
