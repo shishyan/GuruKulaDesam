@@ -1512,17 +1512,17 @@
       "status": "scheduled"
     },
     "g3tE-_-cZgQ": {
-      "youtube_short_id": "jfMBxQ-Y77Y",
+      "youtube_short_id": "xJU9mXa2rSo",
       "channel_handle": "@GuruKulaDesam",
-      "short_url": "https://youtube.com/shorts/jfMBxQ-Y77Y",
+      "short_url": "https://youtube.com/shorts/xJU9mXa2rSo",
       "title": "📖 நற்சிந்தனை — திருவருட்பா: நெஞ்சொடு நேர்தல் | Thiruvarutpa: Nenjodu Nerthal #Shorts",
       "deity": "vallalar",
       "visual_source_mode": "original_master_clip",
       "visual_source_file": "g3tE-_-cZgQ.mp4",
       "legacy_track_id": "g3tE-_-cZgQ",
-      "panchangam_occasion": "ஐப்பசி மாத சிவராத்திரி | MASA SHIVARATRI",
-      "uploaded_at": "2026-11-05T00:00:29.590876+05:30",
-      "scheduled_for": "2026-11-08T08:39:35+05:30",
+      "panchangam_occasion": "கார்த்திகை 9 • புதன்கிழமை • ரோகிணி",
+      "uploaded_at": "2026-11-13T21:33:15.461707+05:30",
+      "scheduled_for": "2026-11-25T19:23:28+05:30",
       "status": "scheduled"
     },
     "hfv9Ys99fZU": {
@@ -3302,6 +3302,62 @@
       "uploaded_at": "2026-11-13T21:06:45.439835+05:30",
       "scheduled_for": "2026-11-23T19:50:40+05:30",
       "status": "scheduled"
+    },
+    "Yg_IgGStRvY": {
+      "youtube_short_id": "vSfTXtRspQ0",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/vSfTXtRspQ0",
+      "title": "📖 நற்சொல் — கோளறு பதிகம் | Kolaru Pathigam #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "Yg_IgGStRvY.mp4",
+      "legacy_track_id": "Yg_IgGStRvY",
+      "panchangam_occasion": "கார்த்திகை கார்த்திகை விரதம் | KRITTIKA MURUGAN",
+      "uploaded_at": "2026-11-13T21:34:17.407360+05:30",
+      "scheduled_for": "2026-11-24T08:34:17+05:30",
+      "status": "scheduled"
+    },
+    "bJLV48oruHs": {
+      "youtube_short_id": "ybdRCvJVkU8",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/ybdRCvJVkU8",
+      "title": "📖 நற்சொல் — சென்னிப்பத்து | Sennippathu #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "bJLV48oruHs.mp4",
+      "legacy_track_id": "bJLV48oruHs",
+      "panchangam_occasion": "கார்த்திகை கார்த்திகை விரதம் | KRITTIKA MURUGAN",
+      "uploaded_at": "2026-11-13T21:35:14.317440+05:30",
+      "scheduled_for": "2026-11-24T11:16:01+05:30",
+      "status": "scheduled"
+    },
+    "do8z9OuxLNo": {
+      "youtube_short_id": "syjuWby2QeQ",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/syjuWby2QeQ",
+      "title": "📖 நற்சொல் — திரு உந்தியார் | Thiru Undhiyar #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "do8z9OuxLNo.mp4",
+      "legacy_track_id": "do8z9OuxLNo",
+      "panchangam_occasion": "கார்த்திகை கார்த்திகை விரதம் | KRITTIKA MURUGAN",
+      "uploaded_at": "2026-11-13T21:36:01.324655+05:30",
+      "scheduled_for": "2026-11-24T16:48:39+05:30",
+      "status": "scheduled"
+    },
+    "g42Pg2sg_gg": {
+      "youtube_short_id": "_AEbwuwn7eM",
+      "channel_handle": "@GuruKulaDesam2",
+      "short_url": "https://youtube.com/shorts/_AEbwuwn7eM",
+      "title": "📖 நற்சொல் — வேதஸார சிவ ஸ்தோத்ரம் (ஸ்ரீ ஆதிசங்கரர் II) | Sacred Landscapes #Shorts",
+      "deity": "shiva",
+      "visual_source_mode": "original_master_clip",
+      "visual_source_file": "g42Pg2sg_gg.mp4",
+      "legacy_track_id": "g42Pg2sg_gg",
+      "panchangam_occasion": "கார்த்திகை கார்த்திகை விரதம் | KRITTIKA MURUGAN",
+      "uploaded_at": "2026-11-13T21:36:49.705890+05:30",
+      "scheduled_for": "2026-11-24T19:45:28+05:30",
+      "status": "scheduled"
     }
   },
   "scheduled_slots_by_channel": {
@@ -3408,7 +3464,9 @@
       "2026-11-24T17:00:30+05:30",
       "2026-11-24T20:08:47+05:30",
       "2026-11-25T06:55:55+05:30",
-      "2026-11-25T09:25:45+05:30"
+      "2026-11-25T09:25:45+05:30",
+      "2026-11-25T17:25:11+05:30",
+      "2026-11-25T19:23:28+05:30"
     ],
     "@gurukuladesam2": [
       "2026-11-01T06:00:00+05:30",
@@ -3501,7 +3559,11 @@
       "2026-11-23T06:26:27+05:30",
       "2026-11-23T09:23:06+05:30",
       "2026-11-23T17:05:33+05:30",
-      "2026-11-23T19:50:40+05:30"
+      "2026-11-23T19:50:40+05:30",
+      "2026-11-24T08:34:17+05:30",
+      "2026-11-24T11:16:01+05:30",
+      "2026-11-24T16:48:39+05:30",
+      "2026-11-24T19:45:28+05:30"
     ]
   },
   "rejected_static_ids": [
