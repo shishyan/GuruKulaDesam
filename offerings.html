@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GuruKulaDesam — Original Wisdom, Audio &amp; Life Guides</title>
+  <meta name="description" content="Original Tamil devotional audio packs, Daily Thirukkural Wisdom App, and practical life guides from GuruKulaDesam." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0e0b16;
+      --surface: #181326;
+      --surface-2: #221b35;
+      --gold: #f4c453;
+      --gold-soft: rgba(244, 196, 83, 0.16);
+      --crimson: #9e2a2b;
+      --text: #f7f4eb;
+      --muted: #b8b0c8;
+      --border: rgba(244, 196, 83, 0.25);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+      background: radial-gradient(circle at top, #1f1635 0%, var(--bg) 60%);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(14, 11, 22, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .nav-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 0.4px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .hero {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 64px 20px 40px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      border: 1px solid var(--border);
+      color: var(--gold);
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 3.1rem);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #fff6d6 0%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 700px;
+      margin: 0 auto 28px;
+    }
+    .grid {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 16px 20px 72px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: linear-gradient(180deg, var(--surface) 0%, #130f1e 100%);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+    .card-tag {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .card h2 {
+      font-size: 1.35rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 22px;
+    }
+    .card ul {
+      list-style: none;
+      margin-bottom: 24px;
+      color: #dcd6e8;
+      font-size: 0.9rem;
+    }
+    .card ul li {
+      padding: 4px 0;
+    }
+    .card ul li::before {
+      content: "✦ ";
+      color: var(--gold);
+    }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      background: linear-gradient(135deg, var(--gold) 0%, #d99b26 100%);
+      color: #161022;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+    .channels {
+      max-width: 1120px;
+      margin: 0 auto 64px;
+      padding: 0 20px;
+    }
+    .channel-box {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+    .channel-box h3 { color: var(--gold); margin-bottom: 10px; }
+    .channel-box p { color: var(--muted); margin-bottom: 18px; font-size: 0.95rem; }
+    .pill-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .pill {
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.88rem;
+      background: rgba(255,255,255,0.03);
+    }
+    .pill:hover { border-color: var(--gold); color: var(--gold); }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 24px 20px;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">குருகுல தேசம் · GuruKulaDesam</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="offerings.html" class="active">Creations &amp; Tools</a>
+        <a href="daily-wisdom.html">Daily Wisdom App</a>
+        <a href="meditation-packs.html">Meditation Audio</a>
+        <a href="life-guides.html">Life Guides</a>
+        <a href="thirukkural.html">Thirukkural</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <span class="badge">Original Creations for Better Daily Living</span>
+    <h1>Ancient Tamil Wisdom &amp; Sacred Sound, Built for Modern Life</h1>
+    <p>No third-party reselling—every tool, audio pack, and life guide here is originally crafted by GuruKulaDesam to bring clarity, peace, and virtue into your daily routine.</p>
+  </section>
+
+  <section class="grid">
+    <article class="card">
+      <div>
+        <div class="card-tag">Interactive Web App · Free</div>
+        <h2>Daily Thirukkural &amp; Panchangam Companion</h2>
+        <p>Start every morning with one timeless Kural, its practical modern-life takeaway, and a built-in 1-minute silent reflection timer.</p>
+        <ul>
+          <li>Tamil verse + clear English meaning</li>
+          <li>Actionable daily reflection prompt</li>
+          <li>1-minute mindfulness breathing timer</li>
+        </ul>
+      </div>
+      <a class="btn" href="daily-wisdom.html">Open Daily Wisdom App &rarr;</a>
+    </article>
+
+    <article class="card">
+      <div>
+        <div class="card-tag">Original Audio Studio</div>
+        <h2>432Hz / 528Hz Meditation &amp; Chant Packs</h2>
+        <p>Ad-free, high-fidelity devotional chants, deep-sleep ambient soundscapes, and focus instrumentals for uninterrupted practice.</p>
+        <ul>
+          <li>Zero mid-roll ads for deep meditation</li>
+          <li>Morning, Focus &amp; Deep Sleep editions</li>
+          <li>Direct MP3/WAV digital downloads</li>
+        </ul>
+      </div>
+      <a class="btn" href="meditation-packs.html">Explore Audio Packs &rarr;</a>
+    </article>
+
+    <article class="card">
+      <div>
+        <div class="card-tag">eBooks &amp; Printables</div>
+        <h2>Tamil Wisdom Life-Guides &amp; Art</h2>
+        <p>Practical handbooks applying Thirukkural, Saiva Neri, and Siddha principles to stress, leadership, family, and daily discipline.</p>
+        <ul>
+          <li>Bilingual Tamil + English study guides</li>
+          <li>Printable Panchangam &amp; virtue cards</li>
+          <li>4K sacred temple &amp; deity wallpapers</li>
+        </ul>
+      </div>
+      <a class="btn" href="life-guides.html">Browse Life Guides &rarr;</a>
+    </article>
+  </section>
+
+  <section class="channels">
+    <div class="channel-box">
+      <h3>Follow Our Official YouTube Channels</h3>
+      <p>Daily Thirukkural, devotional lyrical films, and virtuous Shorts—all linked back to these original resources.</p>
+      <div class="pill-row">
+        <a class="pill" href="https://www.youtube.com/@guru-kula-desam" target="_blank" rel="noopener">@guru-kula-desam (Long-Form)</a>
+        <a class="pill" href="https://www.youtube.com/@GuruKulaDesam" target="_blank" rel="noopener">@GuruKulaDesam (நற்செய்கை Shorts)</a>
+        <a class="pill" href="https://www.youtube.com/@GuruKulaDesam2" target="_blank" rel="noopener">@GuruKulaDesam2 (நற்பண்பு Shorts)</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 GuruKulaDesam · Created to help people live with clarity, peace, and virtue.
+  </footer>
+</body>
+</html>

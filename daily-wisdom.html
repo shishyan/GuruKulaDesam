@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Thirukkural &amp; Reflection App · GuruKulaDesam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0e0b16;
+      --surface: #181326;
+      --gold: #f4c453;
+      --text: #f7f4eb;
+      --muted: #b8b0c8;
+      --border: rgba(244, 196, 83, 0.28);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+      background: radial-gradient(circle at top, #1f1635 0%, var(--bg) 65%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(14, 11, 22, 0.85);
+      backdrop-filter: blur(12px);
+    }
+    .nav-wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand { color: var(--gold); font-weight: 800; text-decoration: none; }
+    .nav-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    main {
+      max-width: 820px;
+      width: 100%;
+      margin: 36px auto;
+      padding: 0 20px;
+      flex: 1;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
+    .meta {
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .kural-ta {
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: clamp(1.25rem, 2.8vw, 1.7rem);
+      font-weight: 700;
+      line-height: 1.65;
+      color: #fff8e1;
+      margin-bottom: 18px;
+    }
+    .kural-en {
+      font-size: 1.05rem;
+      color: #e4dff0;
+      margin-bottom: 18px;
+      padding-left: 14px;
+      border-left: 3px solid var(--gold);
+    }
+    .practice {
+      background: rgba(244, 196, 83, 0.08);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 22px;
+    }
+    .practice strong { color: var(--gold); }
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold) 0%, #d99b26 100%);
+      color: #161022;
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .timer-box {
+      text-align: center;
+    }
+    .timer-display {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--gold);
+      margin: 12px 0;
+      font-variant-numeric: tabular-nums;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap">
+      <a class="brand" href="offerings.html">குருகுல தேசம் · GuruKulaDesam</a>
+      <nav class="nav-links">
+        <a href="offerings.html">Creations &amp; Tools</a>
+        <a href="daily-wisdom.html" class="active">Daily Wisdom App</a>
+        <a href="meditation-packs.html">Meditation Audio</a>
+        <a href="life-guides.html">Life Guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="meta" id="kuralMeta">Daily Thirukkural</div>
+      <div class="kural-ta" id="kuralTa"></div>
+      <div class="kural-en" id="kuralEn"></div>
+      <div class="practice"><strong>Today's Practice:</strong> <span id="kuralPractice"></span></div>
+      <div class="actions">
+        <button class="btn-primary" onclick="nextKural()">Next Wisdom &rarr;</button>
+        <button class="btn-secondary" onclick="copyKural()">Copy Verse</button>
+      </div>
+    </section>
+
+    <section class="card timer-box">
+      <div class="meta">1-Minute Silent Reflection</div>
+      <p style="color: var(--muted); font-size: 0.95rem;">Breathe slowly and reflect on how today's Kural applies to one decision you will make today.</p>
+      <div class="timer-display" id="timerDisplay">01:00</div>
+      <div class="actions" style="justify-content: center;">
+        <button class="btn-primary" onclick="startTimer()">Start 1-Min Reflection</button>
+        <button class="btn-secondary" onclick="resetTimer()">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 GuruKulaDesam · Daily Wisdom Companion</footer>
+
+  <script>
+    const kurals = [
+      {
+        num: 1,
+        chapter: "கடவுள் வாழ்த்து · Praise of God",
+        ta: "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு.",
+        en: "As the letter 'A' is the first of all letters, so is the Eternal Source the beginning of the entire universe.",
+        practice: "Begin your morning with 60 seconds of gratitude before checking your phone."
+      },
+      {
+        num: 34,
+        chapter: "அறன் வலியுறுத்தல் · The Power of Virtue",
+        ta: "மனத்துக்கண் மாசிலன் ஆதல் அனைத்தறன்\nஆகுல நீர பிற.",
+        en: "Purity of mind is the essence of all virtue; everything else is merely outward show.",
+        practice: "Notice one moment of frustration today and respond with a calm, clean intention."
+      },
+      {
+        num: 127,
+        chapter: "அடக்கமுடைமை · Self-Control",
+        ta: "யாகாவார் ஆயினும் நாகாக்க காவாக்கால்\nசோகாப்பர் சொல்லிழுக்குப் பட்டு.",
+        en: "Guard your tongue above all else; unguarded words bring lasting sorrow.",
+        practice: "Pause for two seconds before replying in any heated conversation today."
+      },
+      {
+        num: 391,
+        chapter: "கல்வி · Learning",
+        ta: "கற்க கசடறக் கற்பவை கற்றபின்\nநிற்க அதற்குத் தக.",
+        en: "Learn thoroughly without flaw, and once learned, live in alignment with that wisdom.",
+        practice: "Pick one principle you already know is right and practice it consistently today."
+      },
+      {
+        num: 619,
+        chapter: "ஆள்வினையுடைமை · Effort & Perseverance",
+        ta: "தெய்வத்தான் ஆகா தெனினும் முயற்சிதன்\nமெய்வருத்தக் கூலி தரும்.",
+        en: "Even when fate seems unfavorable, sincere effort always rewards the body's labor.",
+        practice: "Complete one meaningful task you have been postponing—without waiting for perfect conditions."
+      }
+    ];
+
+    const dayIndex = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
+    let idx = dayIndex % kurals.length;
+
+    function renderKural() {
+      const k = kurals[idx];
+      document.getElementById("kuralMeta").textContent = `Kural #${k.num} · ${k.chapter}`;
+      document.getElementById("kuralTa").innerHTML = k.ta.replace(/\n/g, "<br>");
+      document.getElementById("kuralEn").textContent = k.en;
+      document.getElementById("kuralPractice").textContent = k.practice;
+    }
+    function nextKural() { idx = (idx + 1) % kurals.length; renderKural(); }
+    function copyKural() {
+      const k = kurals[idx];
+      navigator.clipboard?.writeText(`Thirukkural #${k.num}\n${k.ta}\n\n${k.en}\n— gurukuladesam.com`);
+    }
+
+    let seconds = 60, interval = null;
+    function updateTimer() {
+      const m = String(Math.floor(seconds / 60)).padStart(2, "0");
+      const s = String(seconds % 60).padStart(2, "0");
+      document.getElementById("timerDisplay").textContent = `${m}:${s}`;
+    }
+    function startTimer() {
+      if (interval) return;
+      interval = setInterval(() => {
+        if (seconds > 0) { seconds--; updateTimer(); }
+        else { clearInterval(interval); interval = null; }
+      }, 1000);
+    }
+    function resetTimer() {
+      clearInterval(interval); interval = null; seconds = 60; updateTimer();
+    }
+    renderKural();
+  </script>
+</body>
+</html>
