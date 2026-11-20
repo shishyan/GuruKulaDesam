@@ -322,8 +322,8 @@ Take a 60-second deep breath and let this 432Hz meditative instrumental and orga
 
 🔔 Subscribe to {cfg['handle']} for daily sacred Tamil devotional & Thirukkural master films!
 
-#Shorts #GuruKulaDesam #TamilDevotional #Thirukkural #MuruganSongs #SacredMusic #TamilShorts"""
-        base_tags = ["shorts", "youtube shorts", "guru kula desam", "tamil devotional", "thirukkural", "murugan songs"]
+#Shorts #GuruKulaDesam #tamilliterature #தமிழ்இலக்கியம் #TamilDevotional #Thirukkural #MuruganSongs #SacredMusic #TamilShorts #tamilwisdom #tamilculture"""
+        base_tags = ["shorts", "youtube shorts", "guru kula desam", "tamilliterature", "Tamil Literature", "தமிழ் இலக்கியம்", "tamil devotional", "thirukkural", "murugan songs", "tamilwisdom", "tamilculture"]
 
     combined_tags = []
     seen = set()
