@@ -90,10 +90,10 @@ jobs:
             printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/tokens_influenzian/token_942198183044.json
           fi
 
-      - name: Detect New Full-Length Videos & Schedule Companion Shorts Across All Channels
+      - name: Detect New Full-Length Videos & Schedule Companion Shorts Across Long-Form Channels
         run: |
-          CH="${{ github.event.inputs.channel || 'all' }}"
-          MAX_PER="${{ github.event.inputs.max_per_channel || '2' }}"
+          CH="${{ github.event.inputs.channel || 'guru-kula-desam,karmicgenie,influenzian' }}"
+          MAX_PER="${{ github.event.inputs.max_per_channel || '1' }}"
           PUB_NOW_FLAG=""
           if [ "${{ github.event.inputs.publish_now }}" = "true" ]; then
             PUB_NOW_FLAG="--publish-now"

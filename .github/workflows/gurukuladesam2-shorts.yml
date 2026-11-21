@@ -1,13 +1,13 @@
-name: Autonomous @GuruKulaDesam & @GuruKulaDesam2 Song-Authentic Shorts Publisher (8 Unique/Day)
+name: Autonomous @GuruKulaDesam & @GuruKulaDesam2 Song-Authentic Shorts Publisher (1/Day per Channel)
 
 on:
   schedule:
-    # Runs daily at 00:05 UTC (05:35 AM IST) and 07:05 UTC (12:35 PM IST, right after YouTube quota reset!)
-    - cron: '5 0,7 * * *'
+    # Runs once daily at 08:15 UTC (01:45 PM IST, right after YouTube midnight PST quota reset)
+    - cron: '15 8 * * *'
   workflow_dispatch:
     inputs:
       schedule_days:
-        description: 'Number of days of Shorts (8 unique/day: 4 on @GuruKulaDesam + 4 on @GuruKulaDesam2) to schedule'
+        description: 'Number of days of Shorts (1/day on @GuruKulaDesam + 1/day on @GuruKulaDesam2) to schedule'
         required: false
         default: '1'
         type: string

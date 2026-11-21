@@ -61,10 +61,7 @@ from tools.shorts_viral_builder import (
 PUBLISHED_REGISTRY_FILE = ROOT / "production" / "shorts_metadata" / "gurukuladesam2_published_registry.json"
 
 DAILY_IST_SLOTS = [
-    (6, 0),   # 06:00 AM IST — Brahma Muhurtham / Morning Worship
-    (11, 0),  # 11:00 AM IST — Midday Temple Ucchikalam
-    (16, 0),  # 04:00 PM IST — Afternoon / Pre-Pradosham
-    (20, 0),  # 08:00 PM IST — Evening / Ardhajama Pooja
+    (6, 0),   # 06:00 AM IST — Daily Morning Worship (1 Short/Day per Channel)
 ]
 
 VIRTUOUS_CATEGORIES = ("thirukkural", "vallalar")
@@ -190,27 +187,37 @@ def parse_time_window(time_str: str, target_date) -> tuple[datetime, datetime] |
 
 def get_next_schedule_slots_for_channel(count: int, reg: dict, channel_key: str, live_occupied: set[str]) -> list[datetime]:
     """
-    Schedules Shorts strictly during authentic Daily Auspicious Muhurtham Timings
-    derived directly from the Tamil Panchangam / Calendar for each specific day:
-      1. Nalla Neram (காலை நல்ல நேரம்)
-      2. Gowri Nalla Neram Morning (காலை கௌரி நல்ல நேரம்)
-      3. Nalla Neram Evening (மாலை நல்ல நேரம்)
-      4. Gowri Nalla Neram Evening (மாலை கௌரி நல்ல நேரம்)
-    These timings change dynamically each day based on astronomical weekday cycles.
-    Within each auspicious window, an organic minute is chosen so publishing is divinely timed.
+    Schedules strictly 1 Short per IST calendar day during the primary Daily Auspicious
+    Muhurtham Timing (காலை நல்ல நேரம் / Nalla Neram, with same-day fallback to remaining
+    auspicious windows if morning Nalla Neram has already passed).
+    Also caps lookahead horizon when count == 1 so repeated runs never stack weeks ahead.
     """
     now_ist = datetime.now(IST)
     by_ch = reg.get("scheduled_slots_by_channel", {})
     occupied = set(by_ch.get(channel_key, [])) | set(live_occupied)
+
+    occupied_dates = set()
+    for ex_iso in occupied:
+        try:
+            ex_dt = datetime.fromisoformat(ex_iso)
+            occupied_dates.add(ex_dt.astimezone(IST).date())
+        except Exception:
+            pass
+
     slots = []
     day_offset = 0
+    max_horizon_days = 2 if count == 1 else min(90, count + 7)
 
-    while len(slots) < count and day_offset < 90:
+    while len(slots) < count and day_offset < max_horizon_days:
         target_date = (now_ist + timedelta(days=day_offset)).date()
+        if target_date in occupied_dates:
+            day_offset += 1
+            continue
+
         midday_dt = datetime(target_date.year, target_date.month, target_date.day, 12, 0, tzinfo=IST)
         panch_info = get_auspicious_alignment_for_datetime(midday_dt)
 
-        # Retrieve the 4 daily dynamic auspicious muhurtham windows
+        # Prefer காலை நல்ல நேரம் first, with fallback windows if today's morning window already passed
         muhurtham_windows = []
         for key, label in (
             ("nalla_neram_am", "காலை நல்ல நேரம்"),
@@ -224,39 +231,21 @@ def get_next_schedule_slots_for_channel(count: int, reg: dict, channel_key: str,
                 if win:
                     muhurtham_windows.append((label, win[0], win[1]))
 
-        # Sort chronologically by start time
         muhurtham_windows.sort(key=lambda x: x[1])
 
         for label, st_dt, end_dt in muhurtham_windows:
             total_seconds = int((end_dt - st_dt).total_seconds())
             if total_seconds > 180:
-                # Pick an organic minute within the authentic auspicious window (avoiding boundary edges)
                 offset_sec = random.randint(min(180, total_seconds // 4), max(total_seconds - 300, total_seconds // 2))
                 slot_dt = st_dt + timedelta(seconds=offset_sec)
             else:
                 slot_dt = st_dt
 
             if slot_dt > now_ist + timedelta(minutes=20):
-                # Ensure minimum 60-minute separation
-                too_close = False
-                for ex_iso in occupied:
-                    try:
-                        ex_dt = datetime.fromisoformat(ex_iso)
-                        if abs((slot_dt - ex_dt).total_seconds()) < 3600:
-                            too_close = True
-                            break
-                    except Exception:
-                        pass
-                for s in slots:
-                    if abs((slot_dt - s).total_seconds()) < 3600:
-                        too_close = True
-                        break
-
-                if not too_close:
-                    slots.append(slot_dt)
-                    occupied.add(slot_dt.isoformat())
-                    if len(slots) >= count:
-                        break
+                slots.append(slot_dt)
+                occupied.add(slot_dt.isoformat())
+                occupied_dates.add(target_date)
+                break  # Strictly 1 Short per IST calendar day
 
         day_offset += 1
 
@@ -284,7 +273,7 @@ def pick_track_for_slot(
         return True
 
     if channel_key.lower() == "@gurukuladesam" and not forced_deity:
-        preferred_virtuous = ["thirukkural", "vallalar"] if slot_dt.hour in (6, 16) else ["vallalar", "thirukkural"]
+        preferred_virtuous = ["thirukkural", "vallalar"] if (slot_dt.toordinal() % 2 == 0) else ["vallalar", "thirukkural"]
         for v_cat in preferred_virtuous:
             v_candidates = list_candidate_tracks(deity_filter=v_cat, prioritize_high_energy=False)
             for c in v_candidates:
@@ -642,7 +631,7 @@ def print_dashboard():
     ch_stats, v_stats = fetch_live_youtube_analytics(pub)
 
     print("=" * 95)
-    print("📈 @GURUKULADESAM & @GURUKULADESAM2 SONG-AUTHENTIC SHORTS ENGINE — DASHBOARD (8 SHORTS/DAY)")
+    print("📈 @GURUKULADESAM & @GURUKULADESAM2 SONG-AUTHENTIC SHORTS ENGINE — DASHBOARD (1 SHORT/DAY/CHANNEL)")
     print("=" * 95)
     c1 = ch_stats.get(ORIGINAL_CHANNEL_ID, {})
     c2 = ch_stats.get(TARGET_CHANNEL_ID, {})
@@ -691,7 +680,7 @@ if __name__ == "__main__":
     ap.add_argument("--calendar", action="store_true", help="Print 7-day Tamil Panchangam & deity schedule forecast")
     ap.add_argument("--prebuild", type=int, default=0, help="Pre-render N Song-Authentic vertical 9:16 Shorts locally")
     ap.add_argument("--publish-now", type=int, default=0, help="Build & immediately publish N Shorts live")
-    ap.add_argument("--schedule-days", type=int, default=0, help="Build & schedule N days of Shorts (4/day/channel)")
+    ap.add_argument("--schedule-days", type=int, default=0, help="Build & schedule N days of Shorts (1/day/channel)")
     ap.add_argument("--deity", type=str, default=None, help="Override deity filter")
     ap.add_argument("--channel", type=str, default=None, help="Target specific channel (@GuruKulaDesam or @GuruKulaDesam2)")
     ap.add_argument("--use-flow", action="store_true", help="Generate dedicated song-specific visuals via Google Flow PRO account")
@@ -711,15 +700,15 @@ if __name__ == "__main__":
         if args.sync_git:
             push_registry_to_remote()
     elif args.schedule_days > 0:
-        run_batch_pipeline(args.schedule_days * 4, schedule_mode=True, deity_filter=args.deity, channel_filter=args.channel, use_flow=args.use_flow)
+        run_batch_pipeline(args.schedule_days, schedule_mode=True, deity_filter=args.deity, channel_filter=args.channel, use_flow=args.use_flow)
         if args.sync_git:
             push_registry_to_remote()
     elif args.daemon:
         while True:
             try:
-                run_batch_pipeline(4, schedule_mode=True, deity_filter=args.deity, use_flow=args.use_flow)
+                run_batch_pipeline(1, schedule_mode=True, deity_filter=args.deity, use_flow=args.use_flow)
             except Exception as e:
                 print(f"[Daemon Warning] Cycle error: {e}")
-            time.sleep(6 * 3600)
+            time.sleep(24 * 3600)
     else:
         print_dashboard()
