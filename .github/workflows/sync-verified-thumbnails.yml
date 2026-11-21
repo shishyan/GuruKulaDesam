@@ -1,0 +1,73 @@
+name: Sync Verified v2 Movie-Poster Thumbnails to YouTube
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_uploads:
+        description: 'Max verified thumbnails to push in this rolling 24h window (~100/day YouTube cap)'
+        required: false
+        default: '100'
+        type: string
+      dry_run:
+        description: 'Dry run only (true/false)'
+        required: false
+        default: 'false'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  sync_thumbnails:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install rclone & YouTube API Dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq rclone
+          python -m pip install --upgrade pip
+          pip install google-api-python-client google-auth-oauthlib google-auth-httplib2
+
+      - name: Restore @guru-kula-desam OAuth Tokens & Optional rclone Config
+        env:
+          GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN: ${{ secrets.GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN }}
+          GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
+        run: |
+          mkdir -p data/credentials/tokens ~/.config/rclone
+          if [ -n "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" > data/credentials/token.json
+            printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" > data/credentials/tokens/token_472322435541.json
+          fi
+          if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
+            printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
+          fi
+
+      - name: Run Verified v2 Movie-Poster Thumbnail Sync
+        run: |
+          DRY_FLAG=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            DRY_FLAG="--dry-run"
+          fi
+          python tools/sync_verified_thumbnails.py --max-uploads "${{ github.event.inputs.max_uploads || '100' }}" $DRY_FLAG
+
+      - name: Commit & Push Updated Queue Manifest
+        run: |
+          git config --global user.name "Guru Kula Desam Autonomous Bot"
+          git config --global user.email "bot@gurukuladesam.org"
+          if [ -f production/verified_v2_upload_queue.json ]; then
+            git add production/verified_v2_upload_queue.json
+            if [ -n "$(git status --porcelain production/verified_v2_upload_queue.json)" ]; then
+              git commit -m "chore(thumbnails): update verified v2 thumbnail upload queue [skip ci]"
+              git pull --rebase origin HEAD || true
+              git push origin HEAD:master || git push origin HEAD:main || true
+            fi
+          fi
