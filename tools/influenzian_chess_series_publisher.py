@@ -59,13 +59,32 @@ def build_chess_description(manifest: dict) -> str:
     bp = manifest.get("blackPlayer", {})
     matchup = f"White: {wp.get('name', 'White')} ({wp.get('rating', '')}) vs Black: {bp.get('name', 'Black')} ({bp.get('rating', '')})"
     sources = "\n".join(f"• {s}" for s in manifest.get("sources", []))
-    tags = " ".join(manifest.get("hashtags", ["#MagnusCarlsen", "#JavokhirSindarov", "#Chess"]))
+
+    default_tags = [
+        "#Magnus",
+        "#MagnusCarlsen",
+        "#Chess",
+        "#Grandmaster",
+        "#ChessBrilliancy",
+        "#ChessTactics",
+        "#Checkmate",
+        "#ChessGame",
+        "#StickmanChess",
+    ]
+    raw_tags = list(manifest.get("hashtags", []))
+    for t in default_tags:
+        if t not in raw_tags:
+            raw_tags.append(t)
+    tags = " ".join(raw_tags)
+
+    series_num = manifest.get("seriesOrder", 1)
+    prefix = manifest.get("descriptionPrefix") or f"Magnus Magic {series_num:03d}"
 
     desc = (
-        f"{manifest.get('youtubeTitle') or manifest.get('title')}\n"
+        f"{prefix} — {manifest.get('youtubeTitle') or manifest.get('title')}\n"
         f"{manifest.get('eventBadge', '')} — {manifest.get('subHeader', '')}\n"
         f"{matchup}\n\n"
-        f"Every chess piece moves in true 3D phase with escalating move-quality sound design and character mind-out banter.\n\n"
+        f"Stickman Chess Fight Night: character mind-out banter, walking on-board critical blows, snare drum-roll sacrifices, and escalating move-quality sound design.\n\n"
         f"Chapters:\n" + "\n".join(chapters) + "\n\n"
         f"Verified Historical Sources:\n{sources}\n\n"
         f"{tags}"
