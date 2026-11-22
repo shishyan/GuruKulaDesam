@@ -174,9 +174,13 @@ def publish_episode(yt, ep_dir: Path, privacy: str) -> str | None:
     while resp is None:
         _, resp = req.next_chunk()
     vid = resp["id"]
-    if thumb_path.exists() and thumb_path.stat().st_size < 2 * 1024 * 1024:
-        yt.thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(thumb_path))).execute()
     print(f"[Published -> YouTube ({privacy})] {manifest['episodeId']} -> https://youtu.be/{vid}")
+    if thumb_path.exists() and thumb_path.stat().st_size < 2 * 1024 * 1024:
+        try:
+            yt.thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(thumb_path))).execute()
+            print(f"[Thumbnail Set] Custom 16:9 poster applied to {vid}")
+        except Exception as thumb_exc:
+            print(f"[Thumbnail Notice] Video {vid} is LIVE, custom thumbnail skipped until YouTube Studio phone verification is enabled: {thumb_exc}")
     return vid
 
 
