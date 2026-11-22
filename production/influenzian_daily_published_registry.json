@@ -6,6 +6,20 @@
       "category": "MIND",
       "privacyStatus": "public",
       "publishedAt": "2026-11-22T04:29:33Z"
+    },
+    "EP02_AI_Verification_Loop_Manual": {
+      "youtubeVideoId": "FpA87_HE2tg",
+      "url": "https://youtu.be/FpA87_HE2tg",
+      "category": "AI_WORKFLOW",
+      "privacyStatus": "public",
+      "publishedAt": "2026-11-22T04:32:02.812696+00:00"
+    },
+    "EP03_MONEY_Silent_Fee_And_Behavior_Gap": {
+      "youtubeVideoId": "KByqaKAWtIE",
+      "url": "https://youtu.be/KByqaKAWtIE",
+      "category": "MONEY",
+      "privacyStatus": "public",
+      "publishedAt": "2026-11-22T04:32:08.203742+00:00"
     }
   }
 }
