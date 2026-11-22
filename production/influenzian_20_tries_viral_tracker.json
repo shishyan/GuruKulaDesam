@@ -15,12 +15,12 @@
       "status": "RETIRED_DARK_SLIDESHOW_PROTOTYPE",
       "youtubeVideoId": "SUPERSEDED_BY_TRY02",
       "driveFolder": "gdrive:Influenzian/Viral_20_Tries/TRY01_4T_AI_Debt_Loop",
-      "thesis": "Initial dark-slate slide prototype — superseded visually by colorful uncluttered Paper-Billions storytelling engine in TRY02."
+      "thesis": "Initial dark-slate slide prototype \u2014 superseded visually by colorful uncluttered Paper-Billions storytelling engine in TRY02."
     },
     {
       "tryNumber": 2,
       "episodeId": "TRY02_Future_Leaders_2026_2050",
-      "title": "How Future Leaders Will Rebuild Everything Year by Year (2026–2050)",
+      "title": "How Future Leaders Will Rebuild Everything Year by Year (2026\u20132050)",
       "durationSec": 526.123,
       "beats": 32,
       "illustrations": 17,
@@ -33,6 +33,28 @@
       "thumbnailLink": "https://drive.google.com/open?id=1m9QiHq19gEuAdqBuGOYt1elHam6d5NkU",
       "openreelLink": "https://drive.google.com/open?id=1DMalvLk52NGfMUliQUmwAlursOaQrQkN",
       "thesis": "Year-by-year 2026->2050 synthesis of unproduced Karmic Genie Show future-leader roadmaps (280-Month Embryo-to-Earth Chronometer, 2027 Zero-Friction Cinema, 2028 Unified AI Mycelium, 2029 Living Supply Reflexes, 2030 Village Maker Era, 2032 Free Utility Gift, 2035 Solar Lungs, 2038 Humus Soil Gold, 2040 Honeycomb Biophilic Cities, 2046 Umbilical Cord Cut, 2050 Three-Generation Garden) rendered in vibrant full-bleed Paper-Billions 2D cartoon storytelling with zero HUD clutter and zero CTA."
+    },
+    {
+      "tryNumber": 3,
+      "episodeId": "TRY03_Future_Leaders_2026_2050_DirectorCut",
+      "title": "How Future Leaders Will Rebuild Everything (2026\u20132050) [Director Cut]",
+      "durationSec": 650.27,
+      "beats": 18,
+      "rapidShots": 55,
+      "shotPacing": "5.5\u20136.5s per cut, zero static slides",
+      "voiceSpeed": "0.90x",
+      "voiceTone": "Deep authoritative baritone (am_onyx)",
+      "actionTypography": "Center screen (52%), 3D kinetic waves with multi-layer gold extrusion",
+      "hookPayoffSec": 5.0,
+      "visualEngine": "Influenzian-PaperStory-16x9 (PaperBillionsBeatStage.tsx v2.0)",
+      "status": "STAGED_READY_FOR_PUBLISH",
+      "youtubeVideoId": "READY_TO_PUBLISH",
+      "driveFolder": "gdrive:Influenzian/Viral_20_Tries/TRY03_Future_Leaders_2026_2050_DirectorCut",
+      "dailyQueueFolder": "gdrive:Influenzian/DailyQueue/MIND/TRY03_Future_Leaders_2026_2050_DirectorCut",
+      "mp4Link": "https://drive.google.com/open?id=1xor0SYhp79jfMCe89KF17PzemOYEcHBY",
+      "thumbnailLink": "https://drive.google.com/open?id=1zUaEQzXGYvGpGN5WyMgnQ7ZBtLcZ4clM",
+      "openreelLink": "https://drive.google.com/open?id=19Ol2UF_ealMNUoff6XvkynYa4oXgTzNP",
+      "thesis": "Direct response to user viral critique: 7-second instant utility meter payoff hook, 55 rapid 6s scene changes across 32 custom Paper-Billions plates without repetition, zero bottom subtitles (center 3D gold action words), 90% speed deep baritone narration, and strict zero CTA."
     }
   ]
 }
