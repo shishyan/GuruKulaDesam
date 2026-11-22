@@ -47,14 +47,16 @@
       "actionTypography": "Center screen (52%), 3D kinetic waves with multi-layer gold extrusion",
       "hookPayoffSec": 5.0,
       "visualEngine": "Influenzian-PaperStory-16x9 (PaperBillionsBeatStage.tsx v2.0)",
-      "status": "STAGED_READY_FOR_PUBLISH",
-      "youtubeVideoId": "READY_TO_PUBLISH",
+      "status": "UPLOADED_UNLISTED_PENDING_MANUAL_THUMBNAIL",
+      "youtubeVideoId": "sxpGTQozGJ4",
       "driveFolder": "gdrive:Influenzian/Viral_20_Tries/TRY03_Future_Leaders_2026_2050_DirectorCut",
       "dailyQueueFolder": "gdrive:Influenzian/DailyQueue/MIND/TRY03_Future_Leaders_2026_2050_DirectorCut",
       "mp4Link": "https://drive.google.com/open?id=1xor0SYhp79jfMCe89KF17PzemOYEcHBY",
       "thumbnailLink": "https://drive.google.com/open?id=1zUaEQzXGYvGpGN5WyMgnQ7ZBtLcZ4clM",
       "openreelLink": "https://drive.google.com/open?id=19Ol2UF_ealMNUoff6XvkynYa4oXgTzNP",
-      "thesis": "Direct response to user viral critique: 7-second instant utility meter payoff hook, 55 rapid 6s scene changes across 32 custom Paper-Billions plates without repetition, zero bottom subtitles (center 3D gold action words), 90% speed deep baritone narration, and strict zero CTA."
+      "thesis": "Direct response to user viral critique: 7-second instant utility meter payoff hook, 55 rapid 6s scene changes across 32 custom Paper-Billions plates without repetition, zero bottom subtitles (center 3D gold action words), 90% speed deep baritone narration, and strict zero CTA.",
+      "youtubeUrl": "https://youtu.be/sxpGTQozGJ4",
+      "note": "Master 1080p MP4 uploaded successfully (Video ID: sxpGTQozGJ4). Channel lacks phone-verified custom thumbnail API permission; thumbnail must be selected/uploaded manually in YouTube Studio."
     }
   ]
 }
