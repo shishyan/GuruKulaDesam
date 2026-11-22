@@ -1,0 +1,21 @@
+{
+  "channelHandle": "@influenzian",
+  "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+  "targetViews": 1000000,
+  "maxTries": 20,
+  "bestViewsSoFar": 0,
+  "goalReached": false,
+  "tries": [
+    {
+      "tryNumber": 1,
+      "episodeId": "TRY01_4T_AI_Debt_Loop",
+      "title": "The $4 Trillion Accounting Loop Hiding Inside the AI Boom",
+      "durationSec": 568.0,
+      "scenes": 30,
+      "status": "QUEUED_FOR_NEXT_CRON_SLOT",
+      "youtubeVideoId": "PENDING_QUOTA_RESET",
+      "driveFolder": "gdrive:Influenzian/DailyQueue/MONEY/TRY01_4T_AI_Debt_Loop",
+      "thesis": "Nov 2026 ECB $4T off-balance-sheet AI commitment report + $530B circular backstop web (sequel to Paper Billions 3.27M & ColdFusion 2.85M wave, >8m mid-roll/Browse length, 6 custom documentary plates, zero CTA)"
+    }
+  ]
+}
