@@ -1,0 +1,25 @@
+{
+  "published": {
+    "Ep01_Carlsen_Ernst_2004_Wijk": {
+      "youtubeVideoId": "nWidG6LRafE",
+      "url": "https://youtu.be/nWidG6LRafE",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-22T17:13:11.644064+00:00"
+    },
+    "Ep02_Carlsen_Kasparov_2004_Reykjavik": {
+      "youtubeVideoId": "dzWgfBN3EMc",
+      "url": "https://youtu.be/dzWgfBN3EMc",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-22T17:13:17.285978+00:00"
+    },
+    "Ep03_Fedorov_Carlsen_2004_Dubai_GM": {
+      "youtubeVideoId": "At9iExwum-M",
+      "url": "https://youtu.be/At9iExwum-M",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-22T17:13:23.150801+00:00"
+    }
+  }
+}

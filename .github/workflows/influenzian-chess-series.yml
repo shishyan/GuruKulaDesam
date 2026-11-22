@@ -1,0 +1,81 @@
+name: Influenzian Carlsen & Sindarov Stickman 3D Chess Series Publisher
+
+on:
+  schedule:
+    # Twice daily after PT midnight quota reset (08:15 UTC & 16:15 UTC) until queue drains
+    - cron: '15 8 * * *'
+    - cron: '15 16 * * *'
+  workflow_dispatch:
+    inputs:
+      max_uploads:
+        description: 'Maximum chess episodes to publish per run'
+        required: false
+        default: '2'
+        type: string
+      privacy:
+        description: 'YouTube privacy status (public or unlisted)'
+        required: false
+        default: 'public'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish_chess_series:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install rclone & YouTube Data API v3 Dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq rclone
+          python -m pip install --upgrade pip
+          pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2
+
+      - name: Restore @influenzian OAuth Token & rclone Config
+        env:
+          INFLUENZIAN_OAUTH_TOKEN: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN }}
+          GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
+        run: |
+          mkdir -p data/credentials/tokens_influenzian ~/.config/rclone
+          if [ -n "$INFLUENZIAN_OAUTH_TOKEN" ]; then
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/token_influenzian.json
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/tokens_influenzian/token_942198183044.json
+          fi
+          if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
+            printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
+          fi
+
+      - name: Drip-Publish Next Chess Episodes onto @influenzian Main Channel
+        run: |
+          MAX_UP="${{ github.event.inputs.max_uploads || '2' }}"
+          PRIV="${{ github.event.inputs.privacy || 'public' }}"
+          python tools/influenzian_chess_series_publisher.py \
+            --drive-remote "gdrive:Influenzian/DailyQueue/CHESS" \
+            --max-uploads "$MAX_UP" \
+            --privacy "$PRIV"
+
+      - name: Commit & Push Updated Chess Published Registry
+        run: |
+          git config --global user.name "Influenzian Autonomous Publisher"
+          git config --global user.email "bot@gurukuladesam.org"
+          if [ -f production/influenzian_chess_published_registry.json ]; then
+            git add production/influenzian_chess_published_registry.json
+            if [ -n "$(git status --porcelain production/influenzian_chess_published_registry.json)" ]; then
+              git commit -m "chore(influenzian): record published Carlsen/Sindarov chess episode [skip ci]"
+              git pull --rebase origin HEAD || true
+              git push origin HEAD:master || git push origin HEAD:main || true
+            fi
+          fi
