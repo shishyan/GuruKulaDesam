@@ -76,8 +76,10 @@ def build_pure_utility_description(manifest: dict) -> str:
         f"Primary Research & Empirical Citations:\n" + "\n".join(citations) + "\n\n"
         f"{CATEGORY_HASHTAGS.get(cat, '#MentalModels #SystemsThinking')}"
     )
+    # Sanitize literal '<' and '>' which YouTube Data API v3 rejects with HTTP 400 invalidDescription
+    desc = desc.replace("->", "→").replace("<=", "≤").replace(">=", "≥").replace("<", "under ").replace(">", "over ")
     assert_zero_cta(desc, manifest["episodeId"])
-    return desc
+    return desc[:4900]
 
 
 def get_youtube_client(cred_dir: Path):
@@ -140,7 +142,7 @@ def publish_episode(yt, ep_dir: Path, privacy: str) -> str | None:
     mp4_path = mp4s[0]
     thumb_path = ep_dir / "thumbnail_16x9.jpg"
 
-    title = manifest["title"][:98]
+    title = manifest["title"].replace("<", "").replace(">", "")[:98]
     assert_zero_cta(title, "title")
     description = build_pure_utility_description(manifest)
 
