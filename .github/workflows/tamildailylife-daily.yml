@@ -1,43 +1,93 @@
-name: TamilDailyLife Daily Panchangam Episode
+name: TamilDailyLife Daily Purana Episode Cloud Publisher
 
 on:
   schedule:
-    # 00:30 UTC = 06:00 AM IST daily
-    - cron: '30 0 * * *'
+    # 00:30 UTC = 06:00 AM IST daily (+ 12:30 UTC evening catch-up slot)
+    - cron: '30 0,12 * * *'
   workflow_dispatch:
     inputs:
       target_date:
-        description: 'Target date (YYYY-MM-DD), leave empty for today'
+        description: 'Optional target date (YYYY-MM-DD); leave empty to publish any due episode <= today IST'
         required: false
         default: ''
+        type: string
+      max_uploads:
+        description: 'Max episodes to publish in this run'
+        required: false
+        default: '2'
+        type: string
+      dry_run:
+        description: 'Dry run only (true/false)'
+        required: false
+        default: 'false'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tamildailylife-daily-publisher
+  cancel-in-progress: false
 
 jobs:
-  build-daily-episode:
+  publish-daily-episode:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies & Tamil fonts
+      - name: Install rclone & YouTube Data API v3 Dependencies
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-noto-core fonts-taml
-          pip install -q edge-tts pillow librosa numpy
+          sudo apt-get install -y -qq rclone
+          python -m pip install --upgrade pip
+          pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2
 
-      - name: Generate daily script, narration & 1080p lyrical-style video
+      - name: Restore @TamilDailyLife OAuth Tokens & rclone Google Drive Config
+        env:
+          TAMILDAILYLIFE_OAUTH_TOKEN: ${{ secrets.TAMILDAILYLIFE_OAUTH_TOKEN }}
+          TAMILDAILYLIFE_OAUTH_TOKEN_2: ${{ secrets.TAMILDAILYLIFE_OAUTH_TOKEN_2 }}
+          GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
         run: |
-          python tools/tamildailylife_daily_builder.py --date "${{ github.event.inputs.target_date }}"
+          mkdir -p data/credentials/tokens_tamildailylife ~/.config/rclone
+          if [ -n "$TAMILDAILYLIFE_OAUTH_TOKEN" ]; then
+            printf "%s" "$TAMILDAILYLIFE_OAUTH_TOKEN" > data/credentials/token_tamildailylife.json
+            printf "%s" "$TAMILDAILYLIFE_OAUTH_TOKEN" > data/credentials/tokens_tamildailylife/token_primary.json
+          fi
+          if [ -n "$TAMILDAILYLIFE_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$TAMILDAILYLIFE_OAUTH_TOKEN_2" > data/credentials/tokens_tamildailylife/token_secondary.json
+          fi
+          if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
+            printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
+          fi
 
-      - name: Upload episode artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: tamildailylife-daily-episode
-          path: |
-            out/tamildailylife_*.md
-            out/tamildailylife_*.mp4
-          retention-days: 7
+      - name: Publish Due @TamilDailyLife 1080p Episodes from Google Drive
+        run: |
+          DATE_ARG=""
+          if [ -n "${{ github.event.inputs.target_date }}" ]; then
+            DATE_ARG="--date ${{ github.event.inputs.target_date }}"
+          fi
+          DRY_ARG=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            DRY_ARG="--dry-run"
+          fi
+          python tools/tamildailylife_cloud_publisher.py --max-uploads "${{ github.event.inputs.max_uploads || '2' }}" $DATE_ARG $DRY_ARG
+
+      - name: Commit & Push Updated Published Registry
+        run: |
+          git config --global user.name "TamilDailyLife Autonomous Publisher"
+          git config --global user.email "bot@gurukuladesam.org"
+          if [ -f production/tamildailylife_published_registry.json ]; then
+            git add production/tamildailylife_published_registry.json
+            if [ -n "$(git status --porcelain production/tamildailylife_published_registry.json)" ]; then
+              git commit -m "chore(tamildailylife): update published episode registry [skip ci]"
+              git pull --rebase origin HEAD || true
+              git push origin HEAD:master || git push origin HEAD:main || true
+            fi
+          fi

@@ -1,0 +1,64 @@
+name: Daily Community Posts Cloud Stager (@Guru-Kula-Desam & @TamilDailyLife)
+
+on:
+  schedule:
+    # 00:00 UTC = 05:30 AM IST daily
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: 'Optional YYYY-MM-DD start date (defaults to today IST)'
+        required: false
+        default: ''
+        type: string
+      days_ahead:
+        description: 'Number of upcoming days to pre-stage on Google Drive'
+        required: false
+        default: '7'
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-community-posts-cloud
+  cancel-in-progress: false
+
+jobs:
+  stage-community-posts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install rclone & Dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq rclone
+          python -m pip install --upgrade pip
+          pip install -q playwright
+
+      - name: Restore rclone Google Drive Config
+        env:
+          GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
+        run: |
+          mkdir -p ~/.config/rclone
+          if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
+            printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
+          fi
+
+      - name: Synthesize & Sync 7-Day Rolling Editorial & 3-Category Community Posts to Google Drive
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          START_ARG=""
+          if [ -n "${{ github.event.inputs.start_date }}" ]; then
+            START_ARG="--start-date ${{ github.event.inputs.start_date }}"
+          fi
+          python tools/stage_daily_community_posts_cloud.py --days-ahead "${{ github.event.inputs.days_ahead || '7' }}" $START_ARG

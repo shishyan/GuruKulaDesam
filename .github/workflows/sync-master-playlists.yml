@@ -1,6 +1,9 @@
 name: Sync All Videos & Shorts to Master Playlists
 
 on:
+  schedule:
+    # Runs every 12 hours in GitHub Actions so newly published videos/Shorts join master playlists automatically when PC is off
+    - cron: '15 */12 * * *'
   workflow_dispatch:
     inputs:
       dry_run:

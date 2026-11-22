@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T20:15:16.057170",
+  "updated_at": "2026-11-22T12:15:11.523506",
   "channel_id": "UCPqB1A_WzpLJec6q69BOO3Q",
   "total_public_videos": 304,
   "live_verified_v2_ids": [
@@ -23,6 +23,7 @@
     "C05GEfkJZaY",
     "C2rLIrP3vAA",
     "CLx3zkvP4K4",
+    "CS92JrOQkbc",
     "CWh0TXSSACQ",
     "Dbr_XRfD-0U",
     "DsbMysGdqv8",
@@ -45,6 +46,7 @@
     "LoyBQZKr6QI",
     "M6_ZiNtpfZc",
     "M8CfkPsplJ8",
+    "Mgz2JYqU9so",
     "Mi_wbWnCBqg",
     "MoVdWbSeT3w",
     "NOsGFGa-fA0",
@@ -89,6 +91,7 @@
     "diblSOvZENA",
     "dnkpSB7_6Wo",
     "do8z9OuxLNo",
+    "eWB8yR7ejYk",
     "f1jxgAbXcdE",
     "fGUDd1DvDcE",
     "fNaiY4wiadc",
@@ -99,6 +102,7 @@
     "g42Pg2sg_gg",
     "grjVzzo-RWc",
     "gvg-um6fU40",
+    "h0cVFJwKd30",
     "h39OlLt4N9A",
     "hUlWKw_f2d8",
     "hm7_qUlTUiU",
@@ -135,22 +139,32 @@
     "uqQlyCQjz-A",
     "vgB45NTmvK8",
     "wzdoeFDq0iQ",
+    "xdTxx316lJY",
     "yPfkP_EjTyc",
     "yy8f939JP4M",
     "zMhemBjkes0",
+    "zPQOik79O68",
     "zQ05gUqsReQ",
     "ztF0g2Tg4s8"
   ],
   "pending_verified_v2_queue": [
     {
-      "id": "CS92JrOQkbc",
-      "views": 170,
-      "title": "லக்ஷ்மி 108 போற்றி | Lakshmi 108 Potri Cinematic Devotional Film"
+      "id": "gKrb6k1ziwk",
+      "views": 65,
+      "title": "உபநிடதம் — இரு பறவைகள்",
+      "priority": 100
     },
     {
-      "id": "zPQOik79O68",
-      "views": 169,
-      "title": "அருட்பெருஞ்சோதி 2026 | Arutperunjothi Cinematic Devotional Film"
+      "id": "eMlsnx5ttBk",
+      "views": 21,
+      "title": "பாரதியார் — மனதில் உறுதி",
+      "priority": 100
+    },
+    {
+      "id": "KNAqzEG7ySc",
+      "views": 17,
+      "title": "வேல் மாறல் — வீரவேல் தாரைவேல்",
+      "priority": 100
     },
     {
       "id": "IHMZsM7LJf8",

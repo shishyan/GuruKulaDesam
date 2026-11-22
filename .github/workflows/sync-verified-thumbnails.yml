@@ -1,10 +1,13 @@
 name: Sync Verified v2 Movie-Poster Thumbnails to YouTube
 
 on:
+  schedule:
+    # Runs every 4 hours in the cloud to drain YouTube's rolling 24h custom-thumbnail window (~100/day per channel) even when PC is off
+    - cron: '15 */4 * * *'
   workflow_dispatch:
     inputs:
       max_uploads:
-        description: 'Max verified thumbnails to push in this rolling 24h window (~100/day YouTube cap)'
+        description: 'Max verified thumbnails to push per channel in this rolling 24h window (~100/day YouTube cap)'
         required: false
         default: '100'
         type: string
@@ -17,10 +20,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: sync-verified-thumbnails
+  cancel-in-progress: false
+
 jobs:
   sync_thumbnails:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -35,23 +42,47 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq rclone
           python -m pip install --upgrade pip
-          pip install google-api-python-client google-auth-oauthlib google-auth-httplib2
+          pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2
 
-      - name: Restore @guru-kula-desam OAuth Tokens & Optional rclone Config
+      - name: Restore Multi-Channel OAuth Tokens & rclone Google Drive Config
         env:
           GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN: ${{ secrets.GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN }}
+          GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2: ${{ secrets.GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2 }}
+          GURUKULADESAM_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN }}
+          GURUKULADESAM_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN_2 }}
+          GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
+          GURUKULADESAM2_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN_2 }}
           GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
         run: |
-          mkdir -p data/credentials/tokens ~/.config/rclone
+          mkdir -p data/credentials/tokens data/credentials/tokens_gurukuladesam data/credentials/tokens_gurukuladesam2 ~/.config/rclone
           if [ -n "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" ]; then
-            printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" > data/credentials/token.json
+            printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" > data/credentials/token_472322435541.json
             printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" > data/credentials/tokens/token_472322435541.json
+          fi
+          if [ -n "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2" > data/credentials/token_gkd_942198183044.json
+            printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2" > data/credentials/tokens/token_942198183044.json
+          fi
+          if [ -n "$GURUKULADESAM_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/token_gurukuladesam_472322435541.json
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam/token_472322435541.json
+          fi
+          if [ -n "$GURUKULADESAM_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN_2" > data/credentials/token_gurukuladesam_942198183044.json
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN_2" > data/credentials/tokens_gurukuladesam/token_942198183044.json
+          fi
+          if [ -n "$GURUKULADESAM2_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/token_942198183044.json
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam2/token_942198183044.json
+          fi
+          if [ -n "$GURUKULADESAM2_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$GURUKULADESAM2_OAUTH_TOKEN_2" > data/credentials/tokens_gurukuladesam2/token_472322435541.json
           fi
           if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
             printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
           fi
 
-      - name: Run Verified v2 Movie-Poster Thumbnail Sync
+      - name: Run Multi-Channel Verified v2 Movie-Poster Thumbnail Sync
         run: |
           DRY_FLAG=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
@@ -59,15 +90,13 @@ jobs:
           fi
           python tools/sync_verified_thumbnails.py --max-uploads "${{ github.event.inputs.max_uploads || '100' }}" $DRY_FLAG
 
-      - name: Commit & Push Updated Queue Manifest
+      - name: Commit & Push Updated Queue Manifests
         run: |
           git config --global user.name "Guru Kula Desam Autonomous Bot"
           git config --global user.email "bot@gurukuladesam.org"
-          if [ -f production/verified_v2_upload_queue.json ]; then
-            git add production/verified_v2_upload_queue.json
-            if [ -n "$(git status --porcelain production/verified_v2_upload_queue.json)" ]; then
-              git commit -m "chore(thumbnails): update verified v2 thumbnail upload queue [skip ci]"
-              git pull --rebase origin HEAD || true
-              git push origin HEAD:master || git push origin HEAD:main || true
-            fi
+          git add production/verified_v2_*.json 2>/dev/null || true
+          if [ -n "$(git status --porcelain production/)" ]; then
+            git commit -m "chore(thumbnails): update verified v2 thumbnail upload queues [skip ci]"
+            git pull --rebase origin HEAD || true
+            git push origin HEAD:master || git push origin HEAD:main || true
           fi
