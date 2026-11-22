@@ -1,0 +1,92 @@
+name: Influenzian Daily 3-Category Autonomous Publisher (Mind · AI · Money)
+
+on:
+  schedule:
+    # Audience 1 (MIND — Deep Thinkers & Students): 06:30 UTC (12:00 PM IST) daily
+    - cron: '30 6 * * *'
+    # Audience 2 (AI_WORKFLOW — Engineers & AI Operators): 13:30 UTC (07:00 PM IST) daily
+    - cron: '30 13 * * *'
+    # Audience 3 (MONEY — Professionals, Families & Investors): 19:30 UTC (01:00 AM IST) daily
+    - cron: '30 19 * * *'
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'Target category (ALL, MIND, AI_WORKFLOW, MONEY)'
+        required: false
+        default: 'ALL'
+        type: string
+      privacy:
+        description: 'YouTube privacy status (public or unlisted)'
+        required: false
+        default: 'public'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish_daily_category:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install rclone & YouTube Data API v3 Dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq rclone ffmpeg
+          python -m pip install --upgrade pip
+          pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2
+
+      - name: Restore @influenzian OAuth Token & rclone Drive Remote
+        env:
+          INFLUENZIAN_OAUTH_TOKEN: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN }}
+          GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
+        run: |
+          mkdir -p data/credentials/tokens_influenzian ~/.config/rclone
+          if [ -n "$INFLUENZIAN_OAUTH_TOKEN" ]; then
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/token_influenzian.json
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/tokens_influenzian/token_942198183044.json
+          fi
+          if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
+            printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
+          fi
+
+      - name: Determine Scheduled Audience Category & Publish Zero-CTA Operating Manual
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            CAT="${{ github.event.inputs.category || 'ALL' }}"
+            PRIV="${{ github.event.inputs.privacy || 'public' }}"
+          else
+            PRIV="public"
+            case "${{ github.event.schedule }}" in
+              "30 6 * * *")  CAT="MIND" ;;
+              "30 13 * * *") CAT="AI_WORKFLOW" ;;
+              "30 19 * * *") CAT="MONEY" ;;
+              *)             CAT="ALL" ;;
+            esac
+          fi
+          echo "Running autonomous @influenzian publisher for category=$CAT (privacy=$PRIV)..."
+          python tools/influenzian_daily_3category_publisher.py --category "$CAT" --privacy "$PRIV"
+
+      - name: Commit & Push Updated Published Registry
+        run: |
+          git config --global user.name "Influenzian Autonomous Publisher"
+          git config --global user.email "bot@gurukuladesam.org"
+          if [ -f production/influenzian_daily_published_registry.json ]; then
+            git add production/influenzian_daily_published_registry.json
+            if [ -n "$(git status --porcelain production/influenzian_daily_published_registry.json)" ]; then
+              git commit -m "chore(influenzian): record daily 3-category published video [skip ci]"
+              git pull --rebase origin HEAD || true
+              git push origin HEAD:master || git push origin HEAD:main || true
+            fi
+          fi
