@@ -12,10 +12,27 @@
       "title": "The $4 Trillion Accounting Loop Hiding Inside the AI Boom",
       "durationSec": 568.0,
       "scenes": 30,
-      "status": "QUEUED_FOR_NEXT_CRON_SLOT",
-      "youtubeVideoId": "PENDING_QUOTA_RESET",
-      "driveFolder": "gdrive:Influenzian/DailyQueue/MONEY/TRY01_4T_AI_Debt_Loop",
-      "thesis": "Nov 2026 ECB $4T off-balance-sheet AI commitment report + $530B circular backstop web (sequel to Paper Billions 3.27M & ColdFusion 2.85M wave, >8m mid-roll/Browse length, 6 custom documentary plates, zero CTA)"
+      "status": "RETIRED_DARK_SLIDESHOW_PROTOTYPE",
+      "youtubeVideoId": "SUPERSEDED_BY_TRY02",
+      "driveFolder": "gdrive:Influenzian/Viral_20_Tries/TRY01_4T_AI_Debt_Loop",
+      "thesis": "Initial dark-slate slide prototype — superseded visually by colorful uncluttered Paper-Billions storytelling engine in TRY02."
+    },
+    {
+      "tryNumber": 2,
+      "episodeId": "TRY02_Future_Leaders_2026_2050",
+      "title": "How Future Leaders Will Rebuild Everything Year by Year (2026–2050)",
+      "durationSec": 526.123,
+      "beats": 32,
+      "illustrations": 17,
+      "visualEngine": "Influenzian-PaperStory-16x9 (PaperBillionsBeatStage.tsx)",
+      "status": "STAGED_FOR_AUTO_PUBLISH_AFTER_QUOTA_RESET",
+      "youtubeVideoId": "PENDING_QUOTA_RESET_1330_IST",
+      "driveFolder": "gdrive:Influenzian/Viral_20_Tries/TRY02_Future_Leaders_2026_2050",
+      "dailyQueueFolder": "gdrive:Influenzian/DailyQueue/MIND/TRY02_Future_Leaders_2026_2050",
+      "mp4Link": "https://drive.google.com/open?id=1AY_sjZaAwLEo8-tB6OYIRIXYZetGhuPX",
+      "thumbnailLink": "https://drive.google.com/open?id=1m9QiHq19gEuAdqBuGOYt1elHam6d5NkU",
+      "openreelLink": "https://drive.google.com/open?id=1DMalvLk52NGfMUliQUmwAlursOaQrQkN",
+      "thesis": "Year-by-year 2026->2050 synthesis of unproduced Karmic Genie Show future-leader roadmaps (280-Month Embryo-to-Earth Chronometer, 2027 Zero-Friction Cinema, 2028 Unified AI Mycelium, 2029 Living Supply Reflexes, 2030 Village Maker Era, 2032 Free Utility Gift, 2035 Solar Lungs, 2038 Humus Soil Gold, 2040 Honeycomb Biophilic Cities, 2046 Umbilical Cord Cut, 2050 Three-Generation Garden) rendered in vibrant full-bleed Paper-Billions 2D cartoon storytelling with zero HUD clutter and zero CTA."
     }
   ]
 }

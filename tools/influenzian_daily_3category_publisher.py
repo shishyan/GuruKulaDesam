@@ -59,23 +59,35 @@ def fmt_mmss(sec: float) -> str:
 def build_pure_utility_description(manifest: dict) -> str:
     chapters = []
     citations = []
-    for sc in manifest.get("scenes", []):
-        ts = fmt_mmss(sc.get("startSec", 0))
-        chapters.append(f"{ts} {sc['chapterTitle']}")
-        cit = sc.get("citation", {})
-        citations.append(
-            f"• [{ts}] {cit.get('sourceName', '')} ({cit.get('year', '')}) — {cit.get('sourceDetail', '')}"
+    if "beats" in manifest:
+        for beat in manifest.get("beats", []):
+            if beat.get("yearStamp"):
+                ts = fmt_mmss(beat.get("startSec", 0))
+                chapters.append(f"{ts} {beat['yearStamp']}")
+        aud = manifest.get("audience", "Future Builders, Families & Visionary Leaders")
+        cat = manifest.get("category", "MIND")
+        desc = (
+            f"{manifest['title']}\n\n"
+            f"Year-by-Year Timeline:\n" + "\n".join(chapters) + "\n\n"
+            f"{CATEGORY_HASHTAGS.get(cat, '#FutureTimeline #2026to2050 #Leadership #Abundance')}"
         )
-
-    cat = manifest.get("category", "MIND")
-    aud = manifest.get("audience", "Practitioners & Decision Makers")
-    desc = (
-        f"{manifest['title']}\n"
-        f"Target Operating Brief · {aud}\n\n"
-        f"Chapters:\n" + "\n".join(chapters) + "\n\n"
-        f"Primary Research & Empirical Citations:\n" + "\n".join(citations) + "\n\n"
-        f"{CATEGORY_HASHTAGS.get(cat, '#MentalModels #SystemsThinking')}"
-    )
+    else:
+        for sc in manifest.get("scenes", []):
+            ts = fmt_mmss(sc.get("startSec", 0))
+            chapters.append(f"{ts} {sc['chapterTitle']}")
+            cit = sc.get("citation", {})
+            citations.append(
+                f"• [{ts}] {cit.get('sourceName', '')} ({cit.get('year', '')}) — {cit.get('sourceDetail', '')}"
+            )
+        cat = manifest.get("category", "MIND")
+        aud = manifest.get("audience", "Practitioners & Decision Makers")
+        desc = (
+            f"{manifest['title']}\n"
+            f"Target Operating Brief · {aud}\n\n"
+            f"Chapters:\n" + "\n".join(chapters) + "\n\n"
+            f"Primary Research & Empirical Citations:\n" + "\n".join(citations) + "\n\n"
+            f"{CATEGORY_HASHTAGS.get(cat, '#MentalModels #SystemsThinking')}"
+        )
     # Sanitize literal '<' and '>' which YouTube Data API v3 rejects with HTTP 400 invalidDescription
     desc = desc.replace("->", "→").replace("<=", "≤").replace(">=", "≥").replace("<", "under ").replace(">", "over ")
     assert_zero_cta(desc, manifest["episodeId"])
@@ -146,18 +158,31 @@ def publish_episode(yt, ep_dir: Path, privacy: str) -> str | None:
     assert_zero_cta(title, "title")
     description = build_pure_utility_description(manifest)
 
+    is_paper_story = "beats" in manifest
+    tags = (
+        [
+            "Future Timeline",
+            "2026 to 2050",
+            "Future Leaders",
+            "Abundance Economics",
+            "Technological Singularity",
+            "Systems Thinking",
+        ]
+        if is_paper_story
+        else [
+            manifest.get("category", "MIND"),
+            "Operating Manual",
+            "Cognitive Science",
+            "Systems Thinking",
+            "Behavioral Finance",
+            "AI Engineering",
+        ]
+    )
     body = {
         "snippet": {
             "title": title,
             "description": description,
-            "tags": [
-                manifest.get("category", "MIND"),
-                "Operating Manual",
-                "Cognitive Science",
-                "Systems Thinking",
-                "Behavioral Finance",
-                "AI Engineering",
-            ],
+            "tags": tags,
             "categoryId": "27",  # Education
         },
         "status": {
