@@ -1,12 +1,19 @@
-name: Influenzian Carlsen & Sindarov Stickman 3D Chess Series Publisher
+name: Influenzian Rating-Climb Zen Chess Series (3 Videos/Day Autonomous Publisher)
 
 on:
+  schedule:
+    # Slot 1 (Morning Chess Lesson — 09:00 AM IST / 03:30 UTC daily)
+    - cron: '30 3 * * *'
+    # Slot 2 (Afternoon Chess Lesson — 03:00 PM IST / 09:30 UTC daily)
+    - cron: '30 9 * * *'
+    # Slot 3 (Evening Chess Lesson — 09:00 PM IST / 15:30 UTC daily)
+    - cron: '30 15 * * *'
   workflow_dispatch:
     inputs:
       max_uploads:
         description: 'Maximum chess episodes to publish per run'
         required: false
-        default: '2'
+        default: '1'
         type: string
       privacy:
         description: 'YouTube privacy status (public or unlisted)'
@@ -54,10 +61,15 @@ jobs:
             printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
           fi
 
-      - name: Drip-Publish Next Chess Episodes onto @influenzian Main Channel
+      - name: Drip-Publish Next Rating-Climb Chess Episode onto @influenzian Main Channel
         run: |
-          MAX_UP="${{ github.event.inputs.max_uploads || '2' }}"
-          PRIV="${{ github.event.inputs.privacy || 'public' }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            MAX_UP="${{ github.event.inputs.max_uploads || '1' }}"
+            PRIV="${{ github.event.inputs.privacy || 'public' }}"
+          else
+            MAX_UP="1"
+            PRIV="public"
+          fi
           python tools/influenzian_chess_series_publisher.py \
             --drive-remote "gdrive:Influenzian/DailyQueue/CHESS" \
             --max-uploads "$MAX_UP" \
@@ -70,8 +82,8 @@ jobs:
           if [ -f production/influenzian_chess_published_registry.json ]; then
             git add production/influenzian_chess_published_registry.json
             if [ -n "$(git status --porcelain production/influenzian_chess_published_registry.json)" ]; then
-              git commit -m "chore(influenzian): record published Carlsen/Sindarov chess episode [skip ci]"
-              git pull --rebase origin HEAD || true
+              git commit -m "chore(influenzian): record published Rating-Climb chess episode [skip ci]"
+              git pull --rebase --autostash origin HEAD || true
               git push origin HEAD:master || git push origin HEAD:main || true
             fi
           fi
