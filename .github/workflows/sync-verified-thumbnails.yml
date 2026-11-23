@@ -42,12 +42,13 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq rclone
           python -m pip install --upgrade pip
-          pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2
+          pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2 Pillow numpy
 
       - name: Restore Multi-Channel OAuth Tokens & rclone Google Drive Config
         env:
           GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN: ${{ secrets.GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN }}
           GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2: ${{ secrets.GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2 }}
+          GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_3: ${{ secrets.GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_3 }}
           GURUKULADESAM_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN }}
           GURUKULADESAM_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN_2 }}
           GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
@@ -62,6 +63,9 @@ jobs:
           if [ -n "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2" ]; then
             printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2" > data/credentials/token_gkd_942198183044.json
             printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_2" > data/credentials/tokens/token_942198183044.json
+          fi
+          if [ -n "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_3" ]; then
+            printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN_3" > data/credentials/token_gkd_839236964216.json
           fi
           if [ -n "$GURUKULADESAM_OAUTH_TOKEN" ]; then
             printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/token_gurukuladesam_472322435541.json
@@ -94,7 +98,7 @@ jobs:
         run: |
           git config --global user.name "Guru Kula Desam Autonomous Bot"
           git config --global user.email "bot@gurukuladesam.org"
-          git add production/verified_v2_*.json 2>/dev/null || true
+          git add -f production/verified_v2_*.json 2>/dev/null || true
           if [ -n "$(git status --porcelain production/)" ]; then
             git commit -m "chore(thumbnails): update verified v2 thumbnail upload queues [skip ci]"
             git pull --rebase origin HEAD || true

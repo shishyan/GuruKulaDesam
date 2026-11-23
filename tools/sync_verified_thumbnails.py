@@ -12,10 +12,15 @@ YouTube's rolling 24h custom-thumbnail cap (~100/day per channel). Runs 100% clo
 in GitHub Actions (`sync-verified-thumbnails.yml`) even when the local Linux PC is powered off.
 """
 import argparse
+import io
 import json
 import subprocess
+import urllib.request
 from datetime import datetime
 from pathlib import Path
+import numpy as np
+from PIL import Image
+from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
@@ -84,6 +89,9 @@ def get_valid_yt_clients(cfg: dict) -> list[tuple[str, object]]:
             if rt in seen_refresh:
                 continue
             creds = Credentials.from_authorized_user_file(str(p))
+            if creds.expired and creds.refresh_token:
+                creds.refresh(Request())
+                p.write_text(creds.to_json(), encoding="utf-8")
             yt = build("youtube", "v3", credentials=creds, cache_discovery=False)
             ch = yt.channels().list(part="id", mine=True).execute().get("items", [])
             if ch and ch[0]["id"] == cfg["channel_id"]:
@@ -113,6 +121,29 @@ def resolve_thumbnail_file(vid: str, cfg: dict, gdrive_base: str) -> Path | None
     return dst if (res.returncode == 0 and dst.exists()) else None
 
 
+def is_already_live_on_yt_cdn(vid: str, jpg_path: Path, threshold: float = 16.0) -> bool:
+    """Zero-quota visual comparison against YouTube's public thumbnail CDN."""
+    yt_bytes = None
+    for res_name in ("maxresdefault.jpg", "sddefault.jpg", "hqdefault.jpg"):
+        try:
+            with urllib.request.urlopen(f"https://i.ytimg.com/vi/{vid}/{res_name}", timeout=6) as resp:
+                yt_bytes = resp.read()
+                if yt_bytes:
+                    break
+        except Exception:
+            continue
+    if not yt_bytes:
+        return False
+    try:
+        with Image.open(jpg_path) as im_l:
+            arr_l = np.asarray(im_l.convert("RGB").resize((64, 36)), dtype=np.float32)
+        with Image.open(io.BytesIO(yt_bytes)) as im_y:
+            arr_y = np.asarray(im_y.convert("RGB").resize((64, 36)), dtype=np.float32)
+        return float(np.mean(np.abs(arr_l - arr_y))) < threshold
+    except Exception:
+        return False
+
+
 def sync_one_channel(cfg: dict, max_uploads: int, gdrive_base: str, dry_run: bool) -> None:
     qfile: Path = cfg["queue_file"]
     if not qfile.exists():
@@ -121,12 +152,13 @@ def sync_one_channel(cfg: dict, max_uploads: int, gdrive_base: str, dry_run: boo
     data = json.loads(qfile.read_text(encoding="utf-8"))
     pending = data.get("pending_verified_v2_queue", [])
     live_ids = set(data.get("live_verified_v2_ids", []))
+    pending = sorted(pending, key=lambda x: (int(x.get("priority", 100)), -int(x.get("views", 0))))
     if not pending:
         print(f"[{cfg['name']}] All {len(live_ids)} verified v2 Movie-Poster thumbnails are already LIVE!")
         return
 
     if dry_run:
-        print(f"[DRY RUN] [{cfg['name']}] {len(pending)} verified posters pending (top 5: {[x['id'] for x in pending[:5]]})")
+        print(f"[DRY RUN] [{cfg['name']}] {len(pending)} verified posters pending (top 5: {[(x['id'], x.get('priority', 100)) for x in pending[:5]]})")
         return
 
     clients = get_valid_yt_clients(cfg)
@@ -136,6 +168,7 @@ def sync_one_channel(cfg: dict, max_uploads: int, gdrive_base: str, dry_run: boo
 
     client_idx = 0
     uploaded = 0
+    skipped_cdn = 0
     still_pending = []
 
     for i, item in enumerate(pending):
@@ -143,10 +176,18 @@ def sync_one_channel(cfg: dict, max_uploads: int, gdrive_base: str, dry_run: boo
             still_pending.extend(pending[i:])
             break
         vid = item["id"]
+        if vid in live_ids:
+            continue
         jpg = resolve_thumbnail_file(vid, cfg, gdrive_base)
         if not jpg:
             print(f"[{cfg['name']}] Could not locate {vid}.jpg locally or on Google Drive; keeping queued.")
             still_pending.append(item)
+            continue
+
+        if is_already_live_on_yt_cdn(vid, jpg):
+            live_ids.add(vid)
+            skipped_cdn += 1
+            print(f"[{cfg['name']}] ALREADY_LIVE_ON_CDN -> {vid} (zero quota used)", flush=True)
             continue
 
         rate_limited = False
@@ -190,7 +231,7 @@ def sync_one_channel(cfg: dict, max_uploads: int, gdrive_base: str, dry_run: boo
     data["live_verified_v2_ids"] = sorted(list(live_ids))
     data["pending_verified_v2_queue"] = still_pending
     qfile.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[{cfg['name']}] Summary: uploaded={uploaded} | live={len(live_ids)} | pending={len(still_pending)}")
+    print(f"[{cfg['name']}] Summary: uploaded={uploaded} | cdn_already_live={skipped_cdn} | live={len(live_ids)} | pending={len(still_pending)}")
 
 
 def main():
