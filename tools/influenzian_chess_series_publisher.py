@@ -84,7 +84,7 @@ def build_chess_description(manifest: dict) -> str:
         f"{prefix} — {manifest.get('youtubeTitle') or manifest.get('title')}\n"
         f"{manifest.get('eventBadge', '')} — {manifest.get('subHeader', '')}\n"
         f"{matchup}\n\n"
-        f"Zen Storyteller Chess: calm handholding narration, colorful 2D pieces on a divided board, a stickman narrator walking critical moves, snare drum-roll sacrifices, and escalating move-quality sound design.\n\n"
+        f"Zen Storyteller Chess: calm handholding narration, colorful 2D pieces on a divided board, a summoned stickman performing critical moves, snare drum-roll sacrifices, and escalating move-quality sound design.\n\n"
         f"Chapters:\n" + "\n".join(chapters) + "\n\n"
         f"Verified Historical Sources:\n{sources}\n\n"
         f"{tags}"
@@ -223,6 +223,7 @@ def main():
     ap.add_argument("--registry", default="production/influenzian_chess_published_registry.json")
     ap.add_argument("--privacy", choices=["public", "unlisted"], default="public")
     ap.add_argument("--max-uploads", type=int, default=6)
+    ap.add_argument("--only-episode", default="", help="Publish only this exact episodeId")
     args = ap.parse_args()
 
     reg_path = Path(args.registry)
@@ -240,6 +241,8 @@ def main():
     for d in ep_dirs:
         mf = json.loads((d / "manifest.json").read_text(encoding="utf-8"))
         ep_id = mf["episodeId"]
+        if args.only_episode and ep_id != args.only_episode:
+            continue
         if ep_id not in registry["published"] and list(d.glob("*_1080p.mp4")):
             pending.append((mf.get("seriesOrder", 99), ep_id, d))
     pending.sort(key=lambda x: x[0])
