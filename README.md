@@ -50,6 +50,7 @@ Gurukuladesam/
 │   ├── curriculum/               # Curriculum builders, WBS enrichers & diagram engines
 │   ├── youtube/                  # YouTube API metadata sync, title tools & cataloging
 │   ├── colab/                    # GPU notebooks & sacred artwork ingestion pipelines
+│   ├── flower_bloom_timelapse/   # Zero-credit backward-i2i + Wan2.1-FLF2V + RIFE 4x time-lapse builders
 │   └── maintenance/              # Site generators, shell patchers & QA auditors
 │
 ├── data/                         # Data Catalogs, Archives & Manifests

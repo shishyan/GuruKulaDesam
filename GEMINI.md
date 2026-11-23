@@ -37,15 +37,17 @@
      - Render a proof still on Colab (`remotion still ...`) and inspect the frame via `read_file` to verify Tamil glyphs before starting full render.
   3. **Lean Code Transfer**: Create a targeted `.tar.gz` omitting `node_modules`, `.git`, `out`, and large raw video stems; upload via `colab upload -s <session-id> <archive.tar.gz> /content/<archive.tar.gz>`, extract, and run `npm ci --prefer-offline`.
   4. **Background Execution & 10x-12x Hardware Concurrency**: Launch Remotion detached with `nohup` using 10x-12x parallel concurrency on Colab L4 (`nohup ./node_modules/.bin/remotion render <CompId> /content/output.mp4 --gl=angle --concurrency=12 > /content/render.log 2>&1 &`).
-  5. **Direct Delivery to Google Drive**: Download master MP4 with `colab download -s <session-id> /content/output.mp4 <local-drive-path>`.
-  6. **Release Instance**: Release immediately upon download: `colab stop -s <session-id>`.
+  5. **Active Kernel Heartbeat (`colab exec --timeout 0`) & Session Isolation**: Always snapshot `colab sessions` before `colab new -s <name>` and **never** touch or stop pre-existing sessions. For long GPU diffusion/video runs (`> 15 min`, such as `Wan2.1-FLF2V`), never leave the Jupyter kernel `idle` behind a bare `nohup` — Colab's idle-kernel reaper reclaims idle kernels after ~20–25 min (`404/401`). Instead, wrap the worker inside a streaming `colab exec -s <name> --timeout 0` loop printing log deltas or a `[heartbeat Xs]` line every 10s until completion so the kernel stays `busy`.
+  6. **Direct Delivery to Google Drive**: Download master MP4 with `colab download -s <session-id> /content/output.mp4 <local-drive-path>`.
+  7. **Release Instance**: Release immediately upon download: `colab stop -s <session-id>`.
 
 ### 1.5 Official YouTube Channel Network
-- **`@guru-kula-desam`** (`UCPqB1A_WzpLJec6q69BOO3Q`): Main long-form Thirukkural & South Indian devotional channel.
+- **`@guru-kula-desam`** (`UCPqB1A_WzpLJec6q69BOO3Q`): Main long-form Thirukkural & South Indian devotional channel (+ daily 5:30 AM IST literary Tamil editorial Community Posts).
 - **`@GuruKulaDesam`**: Primary Shorts channel (நற்செய்கை — Virtuous Shorts, 1 Short/day schedule).
 - **`@GuruKulaDesam2`** (`UCGUmNzaV_OUFbsNdHJQtaNQ`): Secondary Shorts channel (நற்பண்பு — Devotional Temples & Sacred Chants, 1 Short/day schedule).
+- **`@TamilDailyLife` / `@TamilMusicalStories`** (`UCDdEZ6CPCr6tIzWdDY9mzxg`): Daily Purana & Family Wisdom Storytelling channel — 365-day Diwali-to-Diwali calendar (`2026-11-08`..`2027-11-07`), solo `ShishyanPro` (`6fJYxeFW7wEpPJADYKSZ`) @ `80%` speed (`0.80x`) + studio sitar/guitar `Intro`/`Interlude`/`Background`/`Outro` stems, 24-shot photorealistic canonical cast + in-scene Mode-B 3D kinetic Tamil story waves (`TamilDailyLifeDynamic`), and daily 6:00 AM IST 3-category Community Posts.
 - **`@karmicgenie`** (`UCmixCKV4uTv3wIp634IRLXg`): Full-length cinematic wisdom episodes & philosophical theatrical films.
-- **`@influenzian`**: Sports & gaming high-adrenaline Shorts.
+- **`@influenzian`** (`UCcJFqC7z0f-ARNcJadKiKpQ`): Long-form Useful Operating Manuals (**1. Mind/Cognitive Models -> 2. Practical AI Workflows -> 3. Behavioral Money & Career Capital**) built with Dark-Slate Blueprint Remotion + OpenReel Video (`v1.2.0`), plus Sports/Gaming Shorts.
 
 ### 1.6 Devotional Lyrical Video Standard (Modern Google Flow & Mode B Invariants)
 - **Mandatory Use of Asset Folder Lyrics**: Always check the song's asset folder for `*_lyrics.md` or `*.txt` **first** before running Whisper. Use Whisper only for vocal block timestamps, and always map/align the **exact written Tamil lyrics** from the asset file (never raw Whisper transcription text).
@@ -77,11 +79,32 @@
 | **`karmic-genie-show`** | The Karmic Genie Show & Shorts | 7D virtual studio, 75% story / 25% studio composite, @Me ivory bandhgala persona, 2-line news crawl, theme interludes |
 | **`karmic-genie-episode-guide`** | Theatrical Karmic Genie Films | 14-page screenplay format, Bala-Rishi & Bala-Matha personas, Google Flow ULTRA cinematography, L4 render delivery |
 | **`youtube-movie-poster-thumbnail`** | 16:9 v2 `nano-pro` Movie-Poster Thumbnails | 50/50 zoomed-in deity hero + monumental 3D solid-gold Tamil cinema lettering, prompt-hygiene & sandhi rules, mandatory `read_file` visual QA, multi-token + rolling-24h drip uploader |
-| **`google-flow`** | AI Visual Asset Generation | `gflow-headless` CLI (`>= 0.103.1`), `--out-file`, text-to-image (t2i), text-to-video (t2v), character consistency seeds |
+| **`google-flow`** | AI Visual Asset Generation | `gflow-headless` CLI (`>= 0.103.1`), `--out-file <path>.jpg`, sequential profile lock, backward-`i2i` time-lapse keyframe anchoring (`t2i -> i2i`), character consistency seeds |
 | **`agent-desktop`** | Desktop & OS Operation | Accessibility tree navigation, `@ref` snapshot queries, semantic clicks/types, headless GUI execution |
 | **`spotify-episode-build`** | Spotify Video Podcasts | Rec.709 colorspace, 1s GOP keyframe cadence, strict audio-video stream duration parity, GCS multipart uploads |
 | **`sports-clips-video`** | Sports & Gaming Shorts | 4-5s peak-action clip harvesting, horizontal mirror (hflip), Suno instrumental soundtrack replacement |
-| **`meditative-video-guide`** | Global Meditation & Deep Sleep | 432Hz/528Hz ambient mix, binaural audio layer, seamless hour-long visual loop, quota-resilient publisher |
+| **`meditative-video-guide`** | Global Meditation & Deep Sleep | 432Hz/528Hz ambient mix, binaural audio layer, slow-mo nature & zero-credit `Wan2.1-FLF2V` + `RIFE` `4x` botanical time-lapse visuals, quota-resilient publisher |
+| **`flower-bloom-timelapse`** (`tools/flower_bloom_timelapse/`) | Zero-Credit Botanical & Plant-Growth Time-Lapses (`@influenzian` / `@GuruKulaDesam`) | `$0` video-credit backward-`i2i` (`nano-pro` keyframes) + `Comfy-Org/Wan_2.1_ComfyUI_repackaged` (`WanFirstLastFrameToVideo` `fp8_e4m3fn_fast` on Colab L4) + `Practical-RIFE` (`RIFEv4.25` `4x` `--img` mode) + `h264_nvenc` `1080p` `bt709` + Zero-CTA publisher |
+| **`story-telling-guide` (`@TamilDailyLife`)** | Daily Tamil Purana & Wisdom Storytelling (`UCDdEZ6CPCr6tIzWdDY9mzxg`) | 365-day Diwali-to-Diwali scripts (Date/Weekday/Tamil Month/Tithi/Nakshatra only, zero clock/bad-time windows), Solo `ShishyanPro` @ `80%` speed + `Intro`/`Interlude`/`Background`/`Outro` studio WAVs, 24-shot photorealistic canonical cast + in-scene 3D Kinetic Tamil waves (`TamilDailyLifeDynamic` on Colab L4), raw CDP `DOM.setFileInputFiles` YouTube Studio publisher |
+| **`Utility_Explainer_Studio` (`@influenzian`)** | Long-Form Colorful Paper-Billions Storytelling (`Mind -> AI -> Money` & Future Timelines) | Vibrant Uncluttered Paper-Billions 2D Cartoon Engine (`PaperBillionsBeatStage.tsx`, `Influenzian-PaperStory-16x9`) + OpenReel Video (`v1.2.0` `.openreel.json`), Free `kokoro-onnx` TTS + CUDA `faster-whisper` written-token sync, Colab `--gpu t4 --high-mem` (or `l4`), Zero HUD Clutter & Zero CTA |
+
+---
+
+## 4. `@influenzian` Colorful Paper-Billions Storytelling Standard (`/home/shishyan/GitHub/Influenzian/Utility_Explainer_Studio/`)
+
+1. **STRICT ZERO-CTA INVARIANT (NEVER Violate)**:
+   - **NEVER ask viewers to subscribe, like, comment, share, follow, or hit the notification bell** anywhere in spoken narration, on-screen text, titles, or YouTube descriptions. Let pure storytelling & utility earn organic return viewers; automated code assertions (`assert_zero_cta`) enforce this across all manifests and publishers.
+2. **Vibrant, Uncluttered Paper-Billions Visual Engine (`PaperBillionsBeatStage.tsx` / `Influenzian-PaperStory-16x9`)**:
+   - **NEVER render dark grey/black slide decks or permanent top/bottom HUD banners/footnotes.**
+   - **100% Full-Bleed Vibrant Color**: Warm, saturated 2D paper-cut cartoon illustrations (golden ambers, teal skies, coral highlights, lush emerald greens) with tactile push-ins, whip-pans, and soft ambient floating particles.
+   - **Zero Clutter — Transient Stamps Only When Spoken**: Year stamps (`YEAR 2026`, `YEAR 2032`, `YEAR 2050`) and punch callouts (`$0 ELECTRICITY`) appear **only for ~2 seconds at the exact beat moment** and immediately exit, keeping 100% of the canvas clean and focused on the visual story alongside a crisp single-line karaoke caption pill.
+3. **3 Daily Categories -> 3 Distinct Audiences (`influenzian-daily-3category.yml`) + 20-Tries 1M Viral Challenge**:
+   - **Category 1 (`MIND` · 12:00 PM IST / `06:30 UTC`)**: *Audience A — Knowledge Workers, Builders & Strategic Thinkers* (`am_michael` voice).
+   - **Category 2 (`AI_WORKFLOW` · 07:00 PM IST / `13:30 UTC`)**: *Audience B — Engineers, Builders & Technical AI Operators* (`am_adam` voice).
+   - **Category 3 (`MONEY` · 01:00 AM IST / `19:30 UTC`)**: *Audience C — Working Professionals, Families & Long-Term Investors* (`am_fenrir` voice).
+4. **Zero-Cost Cloud Stack, Dual Output & GitHub Actions Autonomy**:
+   - Voice + Sync + Render on **Colab GPU** (`colab new --gpu t4 --high-mem` 8-core when `tdlw1..3` hold L4 slots, or `l4`): `kokoro-onnx` (`v1.0`, `$0/video`) + pre-decoded `16kHz float32` `faster-whisper` + `remotion render Influenzian-PaperStory-16x9 --gl=angle --concurrency=8`.
+   - Every build exports both the `1080p` master `.mp4` AND an **OpenReel Video `v1.2.0` `.openreel.json` multi-track project**, plus a vibrant 16:9 cartoon poster, staged to `gdrive:Influenzian/DailyQueue/<CATEGORY>/` and `gdrive:Influenzian/Viral_20_Tries/`, and published daily by `.github/workflows/influenzian-daily-3category.yml` (`tools/influenzian_daily_3category_publisher.py`).
 
 ---
 
@@ -102,3 +125,24 @@ Treat every long-form devotional, wisdom, or storytelling video as an **epic the
 4. **Multi-Project Quota Rotation & Rolling-24h Channel Rate-Limit Workflow**:
    - Upload via `/home/shishyan/GuruKulaDesam_Local/thumbnails/upload_target_thumbnails.py` (rotates across OAuth tokens on `quotaExceeded` `50 units/set`), and back up `.jpg` + QA sheets to `gdrive:GuruKulaDesam/Assets/Thumbnails/` via `rclone copy`.
    - For bulk backfills exceeding YouTube's per-channel **~100 custom thumbnails / rolling 24h cap (`uploadRateLimitExceeded`, HTTP 429)**, stage verified IDs sorted by views descending into `verified_v2_upload_queue.json` and let `auto_drip_verified_thumbnails.py` (or `.github/workflows/sync-verified-thumbnails.yml`) drain ~100/day automatically.
+
+---
+
+## 5. Zero-Credit Botanical Blooming & Full Plant-Growth Time-Lapse Standard (`tools/flower_bloom_timelapse/`)
+
+Canonical zero-`gflow-video`-credit workflow proven on both a 4-stage Sacred Pink Lotus bloom (`4oio027kKpo`) and a 5-stage Dwarf Golden Sunflower seed-to-bloom growth film (`kzhVTKOo4f8`):
+
+1. **`$0` Video-Credit Backward-`i2i` Keyframe Locking (`gflow-headless image` `nano-pro`)**:
+   - Generate the **final** full-grown / full-bloom frame first via `gflow-headless image t2i --profile nagaraj957 --aspect 16:9 --model nano-pro --out-file stage_0N.jpg` (`gflow-cli` writes `.jpg` natively for `nano-pro`; never pass `-o` which sets text format `id|json|table`; run strictly one sequential process per profile lock; ban `"16:9"`, `"24K"`, and `"completely blank"` from prompts).
+   - Frame the entire compact plant from the dark moist soil mound + flanking optical anchors (e.g., two small mossy stones on left/right edges) up to top woodland headroom, and inspect `stage_0N.jpg` via `read_file` before stepping backward.
+   - Step **backward** sequentially via `gflow-headless image i2i --ref <next_stage>.jpg` down to the newborn sprout or tightly closed bud (`stage_05 -> 04 -> 03 -> 02 -> 01`), keeping the soil mound, stones, stem emergence coordinate, and lighting locked, and pass a mandatory `read_file` Visual QA Gate across all keyframes before provisioning Colab.
+2. **Cloud GPU Diffusion (`Comfy-Org/Wan_2.1_ComfyUI_repackaged` FP8-Fast — `22.96 GB` total)**:
+   - Provision a dedicated Colab L4 session (`colab new -s plant2 --gpu l4`) after snapshotting `colab sessions` (leaving other active sessions untouched) and run the worker inside a live streaming `colab exec --timeout 0` heartbeat loop (`10s` log/heartbeat updates so Colab never idle-reclaims the kernel).
+   - Download the 4 split files via `aria2c -x 16 -s 16`: `wan2.1_flf2v_720p_14B_fp8_e4m3fn.safetensors` (`15.27 GB`), `umt5_xxl_fp8_e4m3fn_scaled.safetensors` (`6.27 GB`), `clip_vision_h.safetensors` (`1.18 GB`), and `wan_2.1_vae.safetensors` (`0.24 GB`).
+   - Run core ComfyUI node `WanFirstLastFrameToVideo` (`832x480`, `length=49` × 4 segments for 5-stage plant growth or `length=65` × 3 segments for 4-stage bloom → `193` stitched frames, `steps=16`, `cfg=5.0`, `sampler_name="uni_pc"`, `scheduler="simple"`, `ModelSamplingSD3 shift=8.0`) using `UNETLoader weight_dtype="fp8_e4m3fn_fast"` on NVIDIA L4 (`CC >= 8.9`, ~455s/segment, with automatic `"fp8_e4m3fn"` fallback).
+3. **`4x` Neural Optical-Flow & `1080p` Mastering (`Practical-RIFE` `RIFEv4.25` + `h264_nvenc` Rec.709)**:
+   - Deduplicate segment boundary frames (`193` continuous PNGs) and run `Practical-RIFE` (`r3gm/RIFE` `RIFEv4.25_0919.zip`) in `--img` PNG mode (guard `import skvideo.io` in `try/except` for `numpy 2.x` compatibility) with `--exp=2` (`193 -> 769` lossless frames = `25.63s` @ `30fps`; automatic FFmpeg `minterpolate` fallback).
+   - Upscale via Lanczos + `cas=0.3` to `1920x1080` `h264_nvenc` High Profile (`bt709`), mux trimmed `48kHz` stereo ambient studio WAV (`audio_dur <= video_dur - 0.05s`, 1.5s fade-in / 2.5s fade-out), verify `ffprobe` + multi-panel QA sheet via `read_file`, immediately `colab stop -s <name>`, sync deliverables to `gdrive:GuruKulaDesam/Samples/`, and publish via `publish_timelapse_youtube.py` (`assert_zero_cta`, channel-ID check, isolated thumbnail `try/except` so a `403` never re-uploads a duplicate video).
+4. **Companion Zero-Credit Modes**:
+   - **Method 2 (Real 4K CC0 Macro + `RIFE` Slow-Mo)**: Harvest studio intervalometer macro blooms from Pexels, Pixabay, and Wikimedia Commons (`Category:Time-lapse videos of flowers`), retime `4x` via `RIFEv4.25`, apply a uniform Rec.709 color LUT, and mix `48kHz` ambient audio (`meditative-video-guide/SKILL.md`).
+   - **Method 3 (Headless Blender 4.x `Geometry Nodes`)**: Procedural `137.508°` Fibonacci phyllotaxis flower driven by `growth ∈ [0, 1]` with subsurface-scattered backlit petals and an orbiting macro camera rendered headlessly (`blender -b -P bloom.py -a`) on Colab L4 Cycles/OptiX.
