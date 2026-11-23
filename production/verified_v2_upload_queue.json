@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T00:49:45.150919",
+  "updated_at": "2026-11-23T17:40:08.562534",
   "channel_id": "UCPqB1A_WzpLJec6q69BOO3Q",
   "total_public_videos": 304,
   "live_verified_v2_ids": [
@@ -238,6 +238,7 @@
     "wylRNpaJNmY",
     "wzdoeFDq0iQ",
     "xdTxx316lJY",
+    "xfLNV2LM8aw",
     "xq_sktu9GyU",
     "yEZFeX0no9o",
     "yPfkP_EjTyc",
@@ -248,6 +249,24 @@
     "ztF0g2Tg4s8"
   ],
   "pending_verified_v2_queue": [
+    {
+      "id": "dTP3GCbhJuo",
+      "views": 999999,
+      "title": "பாதியில் நின்ற ஒற்றைக்கல் அதிசயம்! கழுகுமலை வெட்டுவான் கோயில் | GuruKulaDesam Ep 06",
+      "priority": 1
+    },
+    {
+      "id": "bRZWpFGGNoc",
+      "views": 999999,
+      "title": "வெளியே திரும்பி நிற்கும் நந்தியும் வாள் பட்ட லிங்கமும்! | திருமுல்லைவாயில் | GuruKulaDesam Ep 05",
+      "priority": 1
+    },
+    {
+      "id": "EQzjlNfLnzE",
+      "views": 999999,
+      "title": "திருவாசகம் | தென்னாடுடைய சிவனே போற்றி!",
+      "priority": 1
+    },
     {
       "id": "BfgGC7DsHMI",
       "views": 45,
