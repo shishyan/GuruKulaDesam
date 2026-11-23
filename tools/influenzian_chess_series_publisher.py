@@ -84,7 +84,7 @@ def build_chess_description(manifest: dict) -> str:
         f"{prefix} — {manifest.get('youtubeTitle') or manifest.get('title')}\n"
         f"{manifest.get('eventBadge', '')} — {manifest.get('subHeader', '')}\n"
         f"{matchup}\n\n"
-        f"Stickman Chess Fight Night: character mind-out banter, walking on-board critical blows, snare drum-roll sacrifices, and escalating move-quality sound design.\n\n"
+        f"Zen Storyteller Chess: calm handholding narration, colorful 2D pieces on a divided board, a stickman narrator walking critical moves, snare drum-roll sacrifices, and escalating move-quality sound design.\n\n"
         f"Chapters:\n" + "\n".join(chapters) + "\n\n"
         f"Verified Historical Sources:\n{sources}\n\n"
         f"{tags}"
