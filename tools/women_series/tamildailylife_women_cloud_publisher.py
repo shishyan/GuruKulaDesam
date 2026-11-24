@@ -162,6 +162,34 @@ def main() -> None:
     uploaded = 0
     TMP_DIR.mkdir(parents=True, exist_ok=True)
 
+    # First heal any already-published episode whose custom thumbnail hit quotaExceeded previously
+    if clients and not args.dry_run:
+        for ep_code, pub_info in list(reg["published"].items()):
+            if pub_info.get("thumb_set") is False and pub_info.get("video_id"):
+                vid_h = pub_info["video_id"]
+                p_code = ep_code.split("_")[0]
+                if ep_code in PILOT_GDRIVE_PATHS:
+                    _, r_thumb = PILOT_GDRIVE_PATHS[ep_code]
+                else:
+                    sm = list((DATA_ROOT / PILLAR_FOLDERS[p_code]).glob(f"{ep_code}_*/episode_spec.json"))
+                    if not sm:
+                        continue
+                    sp = json.loads(sm[0].read_text(encoding="utf-8"))
+                    r_thumb = f"gdrive:GuruKulaDesam/Assets/women_3pillars_324/{PILLAR_FOLDERS[p_code]}/{sm[0].parent.name}/{sp['slug']}_Thumbnail.jpg"
+                if rclone_exists(r_thumb):
+                    lt = TMP_DIR / f"heal_{ep_code}.jpg"
+                    subprocess.run(["rclone", "copyto", r_thumb, str(lt)], check=True)
+                    for tok_name, yt in clients:
+                        try:
+                            yt.thumbnails().set(videoId=vid_h, media_body=MediaFileUpload(str(lt), mimetype="image/jpeg")).execute()
+                            pub_info["thumb_set"] = True
+                            save_registry(reg)
+                            print(f"[Heal Thumbnail] Set verified v2 thumbnail on {ep_code} ({vid_h}) via {tok_name}!")
+                            break
+                        except HttpError as e:
+                            print(f"  [Heal warn {ep_code} on {tok_name}]: {e.resp.status}")
+                    lt.unlink(missing_ok=True)
+
     for ep_code in build_interleaved_order():
         if uploaded >= args.max_uploads:
             break
@@ -216,6 +244,7 @@ def main() -> None:
             assert not re.search(pat, f"{title}\n{desc}", re.IGNORECASE), f"CTA violation in {ep_code}"
 
         vid_id = None
+        thumb_ok = False
         for tok_name, yt in clients:
             try:
                 body = {
@@ -239,6 +268,7 @@ def main() -> None:
                 if has_thumb and local_thumb.exists():
                     try:
                         yt.thumbnails().set(videoId=vid_id, media_body=MediaFileUpload(str(local_thumb), mimetype="image/jpeg")).execute()
+                        thumb_ok = True
                         print(f"[{ep_code}] Custom thumbnail SET on {vid_id}")
                     except Exception as te:
                         print(f"[{ep_code}] Thumbnail warn: {te}")
@@ -252,7 +282,7 @@ def main() -> None:
         local_mp4.unlink(missing_ok=True)
         local_thumb.unlink(missing_ok=True)
         if vid_id:
-            reg["published"][ep_code] = {"video_id": vid_id, "url": f"https://youtu.be/{vid_id}", "title": title}
+            reg["published"][ep_code] = {"video_id": vid_id, "url": f"https://youtu.be/{vid_id}", "title": title, "thumb_set": thumb_ok}
             save_registry(reg)
             uploaded += 1
         else:
