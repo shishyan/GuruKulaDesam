@@ -22,7 +22,7 @@ from pathlib import Path
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
+from googleapiclient.errors import HttpError, ResumableUploadError
 from googleapiclient.http import MediaFileUpload
 
 CHANNEL_ID = "UCDdEZ6CPCr6tIzWdDY9mzxg"
@@ -336,7 +336,7 @@ def main():
                 }
                 uploaded += 1
                 break
-            except HttpError as e:
+            except (HttpError, ResumableUploadError) as e:
                 s = str(e)
                 if "quotaExceeded" in s:
                     print(f"[{ds}] Quota reached on {tname}, rotating...")

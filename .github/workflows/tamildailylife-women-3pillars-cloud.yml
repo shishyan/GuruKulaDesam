@@ -2,14 +2,15 @@ name: TamilDailyLife Women's 3-Pillar Series Cloud Publisher (324 Episodes)
 
 on:
   schedule:
-    # Runs at 03:30 UTC (09:00 AM IST) and 15:30 UTC (09:00 PM IST) completely independent of local PC
+    # Runs at 03:30 UTC (09:00 AM IST), 08:00 UTC (01:30 PM IST), and 15:30 UTC (09:00 PM IST) completely independent of local PC
     - cron: '30 3,15 * * *'
+    - cron: '0 8 * * *'
   workflow_dispatch:
     inputs:
       max_uploads:
         description: 'Max pre-rendered Women 3-Pillar episodes to publish in this run'
         required: false
-        default: '1'
+        default: '3'
         type: string
       dry_run:
         description: 'Dry run only (true/false)'
@@ -69,7 +70,7 @@ jobs:
             DRY_FLAG="--dry-run"
           fi
           python tools/women_series/tamildailylife_women_cloud_publisher.py \
-            --max-uploads "${{ github.event.inputs.max_uploads || '1' }}" \
+            --max-uploads "${{ github.event.inputs.max_uploads || '3' }}" \
             $DRY_FLAG
 
       - name: Commit & Push Updated Women's 324 Published Registry

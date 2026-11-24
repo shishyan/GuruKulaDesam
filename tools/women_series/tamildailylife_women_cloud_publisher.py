@@ -26,7 +26,7 @@ from pathlib import Path
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
+from googleapiclient.errors import HttpError, ResumableUploadError
 from googleapiclient.http import MediaFileUpload
 
 sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
@@ -273,9 +273,15 @@ def main() -> None:
                     except Exception as te:
                         print(f"[{ep_code}] Thumbnail warn: {te}")
                 break
-            except HttpError as e:
-                if e.resp.status in (403, 429) and ("quotaExceeded" in str(e) or "uploadLimitExceeded" in str(e)):
-                    print(f"  [{tok_name}] Quota/upload limit hit: {e.resp.status}")
+            except (HttpError, ResumableUploadError) as e:
+                err_str = str(e)
+                if "uploadLimitExceeded" in err_str:
+                    print(f"  [{tok_name}] Channel rolling-24h uploadLimitExceeded (HTTP 400) — channel cap reached; yielding cleanly.")
+                    local_mp4.unlink(missing_ok=True)
+                    local_thumb.unlink(missing_ok=True)
+                    return
+                if "quotaExceeded" in err_str or getattr(getattr(e, "resp", None), "status", 0) in (403, 429):
+                    print(f"  [{tok_name}] API quota/rate limit hit; rotating token...")
                     continue
                 raise
 
