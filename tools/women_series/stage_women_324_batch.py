@@ -280,20 +280,23 @@ def build_visuals_for_codes(ep_codes: list[str]) -> None:
         print(f"  QA Storyboard saved: {q_out} (16/16 unique)")
 
 
-def render_and_stage_codes(ep_codes: list[str]) -> None:
+def render_and_stage_codes(ep_codes: list[str], sid: str = "wom_batch_bg") -> None:
     ls_out = orch.colab_run(["sessions"], timeout_sec=30).stdout
     print(f"[Snapshot colab sessions]:\n{ls_out.strip()}")
-    sid = "wom_batch_bg"
     code_tar = orch.build_lean_studio_tarball()
 
     try:
-        provisioned = False
+        provisioned = f"[{sid}]" in ls_out
+        if provisioned:
+            print(f"Reusing active Colab GPU session: {sid}")
         for prov_args in (
             ["new", "--gpu", "l4", "-s", sid],
             ["new", "--gpu", "a100", "-s", sid],
             ["new", "--gpu", "t4", "--high-mem", "-s", sid],
             ["new", "--gpu", "t4", "-s", sid],
         ):
+            if provisioned:
+                break
             try:
                 print(f"Provisioning Colab GPU via: {' '.join(prov_args)} ...")
                 r = orch.colab_run(prov_args, timeout_sec=180)
@@ -334,18 +337,38 @@ print('BOOT_LAUNCHED', flush=True)
         orch.colab_run(["exec", "-s", sid, "--timeout", "45", "-f", str(boot_sh)], timeout_sec=65)
         chk_b = Path("/tmp/chk_boot_bg.py")
         chk_b.write_text("import pathlib; t = pathlib.Path('/content/boot.log').read_text() if pathlib.Path('/content/boot.log').exists() else ''; print(t[-300:])\n")
-        for _ in range(30):
+        for _ in range(45):
             time.sleep(15)
-            out_b = orch.colab_run(["exec", "-s", sid, "--timeout", "35", "-f", str(chk_b)], timeout_sec=50).stdout
+            try:
+                out_b = orch.colab_run(["exec", "-s", sid, "--timeout", "45", "-f", str(chk_b)], timeout_sec=75).stdout
+            except subprocess.TimeoutExpired:
+                continue
+            if "FATAL_NO_TAMIL_FONT" in out_b:
+                raise RuntimeError(f"Tamil font install failed on {sid}: {out_b}")
             if "BOOT_READY_SENTINEL" in out_b:
                 print(f"[{sid}] Studio + Tamil fonts READY!")
                 break
         else:
             raise RuntimeError(f"Bootstrap timed out on {sid}")
 
+        def _upload_retry(src_p: Path, dst_str: str) -> None:
+            for att in range(3):
+                try:
+                    if orch.colab_run(["upload", "-s", sid, str(src_p), dst_str], timeout_sec=240).returncode == 0:
+                        return
+                except subprocess.TimeoutExpired:
+                    pass
+                time.sleep(5 * (att + 1))
+            raise RuntimeError(f"Failed to upload {src_p} to {dst_str}")
+
         for ec in ep_codes:
             spec, out_dir, remote_dir = load_spec_and_dirs(ec)
             slug = spec["slug"]
+            final_mp4 = out_dir / f"{slug}.mp4"
+            if final_mp4.exists() and final_mp4.stat().st_size > 20_000_000:
+                print(f"[{ec}] Already rendered locally ({final_mp4.stat().st_size // 1_000_000} MB), ensuring staged to Drive...")
+                subprocess.run(["rclone", "copy", str(out_dir), remote_dir, "--transfers", "6"], check=True)
+                continue
             tl = json.loads(Path(f"/tmp/women_324_{ec}/episode_timeline.json").read_text(encoding="utf-8"))
             props = {
                 "titlePillText": tl["titlePillText"],
@@ -368,12 +391,12 @@ print('BOOT_LAUNCHED', flush=True)
                 for i in range(16):
                     tf.add(shot_dir / f"shot_{i+1:02d}.jpg", arcname=f"public/{tl['shotsFolder']}/shot_{i+1:02d}.jpg")
 
-            assert orch.colab_run(["upload", "-s", sid, str(tar_p), f"/content/{ec}_assets.tar.gz"], timeout_sec=240).returncode == 0
+            _upload_retry(tar_p, f"/content/{ec}_assets.tar.gz")
             time.sleep(3)
-            assert orch.colab_run(["upload", "-s", sid, str(props_p), f"/content/props_{ec}.json"], timeout_sec=90).returncode == 0
+            _upload_retry(props_p, f"/content/props_{ec}.json")
             time.sleep(5)
 
-            # Render a proof still on the first episode of the batch per Rule 1.4.2
+            # Render a proof still on the first episode of the batch per Rule 1.4.2 (detached so first Chromium download never hits colab exec timeout)
             if ec == ep_codes[0]:
                 still_py = Path(f"/tmp/still_{ec}_bg.py")
                 still_py.write_text(
@@ -382,15 +405,32 @@ cmd = '''
 set -e
 cd /content/studio
 tar -xzf /content/{ec}_assets.tar.gz
-./node_modules/.bin/remotion still TamilDailyLifeDynamic /content/{ec}_proof.jpg --frame=450 --props=/content/props_{ec}.json --gl=angle --image-format=jpeg
-ls -lh /content/{ec}_proof.jpg
+rm -f /content/{ec}_proof.jpg /content/still_{ec}.log
+nohup bash -lc './node_modules/.bin/remotion still TamilDailyLifeDynamic /content/{ec}_proof.jpg --frame=450 --props=/content/props_{ec}.json --gl=angle --image-format=jpeg && echo STILL_DONE_SENTINEL' </dev/null >/content/still_{ec}.log 2>&1 &
+sleep 2
 '''
 subprocess.run(["bash", "-lc", cmd], check=True)
-print("PROOF_STILL_OK", flush=True)
+print("STILL_LAUNCHED", flush=True)
 """,
                     encoding="utf-8",
                 )
-                orch.colab_run(["exec", "-s", sid, "--timeout", "120", "-f", str(still_py)], timeout_sec=140)
+                orch.colab_run(["exec", "-s", sid, "--timeout", "45", "-f", str(still_py)], timeout_sec=65)
+                chk_s = Path(f"/tmp/chk_still_{ec}_bg.py")
+                chk_s.write_text(
+                    f"import os, pathlib\nt = pathlib.Path('/content/still_{ec}.log').read_text(errors='ignore') if pathlib.Path('/content/still_{ec}.log').exists() else ''\n"
+                    f"if 'STILL_DONE_SENTINEL' in t and os.path.exists('/content/{ec}_proof.jpg'): print('STILL_READY_OK')\n"
+                    f"elif 'Error:' in t: print('STILL_ERR:' + t[-400:])\n"
+                )
+                for _ in range(25):
+                    time.sleep(15)
+                    try:
+                        so = orch.colab_run(["exec", "-s", sid, "--timeout", "45", "-f", str(chk_s)], timeout_sec=65).stdout
+                    except subprocess.TimeoutExpired:
+                        continue
+                    if "STILL_ERR:" in so:
+                        raise RuntimeError(so)
+                    if "STILL_READY_OK" in so:
+                        break
                 orch.colab_run(["download", "-s", sid, f"/content/{ec}_proof.jpg", f"/tmp/women_324_qa/proof_still_{ec}.jpg"], timeout_sec=90)
                 print(f"[{sid}] Proof still downloaded -> /tmp/women_324_qa/proof_still_{ec}.jpg")
 
@@ -410,7 +450,12 @@ print("LAUNCHED_OK", flush=True)
 """,
                 encoding="utf-8",
             )
-            orch.colab_run(["exec", "-s", sid, "--timeout", "60", "-f", str(l_py)], timeout_sec=80)
+            for _ in range(3):
+                try:
+                    orch.colab_run(["exec", "-s", sid, "--timeout", "60", "-f", str(l_py)], timeout_sec=80)
+                    break
+                except subprocess.TimeoutExpired:
+                    time.sleep(5)
             print(f"[{sid}] Rendering {ec} ({slug})...")
 
             poll_py = Path(f"/tmp/poll_{ec}_bg.py")
@@ -443,7 +488,15 @@ if os.path.exists('/content/{ec}_raw.mp4') and os.path.getsize('/content/{ec}_ra
                     break
 
             raw_mp4 = Path(f"/tmp/{ec}_raw.mp4")
-            orch.colab_run(["download", "-s", sid, f"/content/{ec}_raw.mp4", str(raw_mp4)], timeout_sec=360)
+            for dl_att in range(4):
+                try:
+                    dr = orch.colab_run(["download", "-s", sid, f"/content/{ec}_raw.mp4", str(raw_mp4)], timeout_sec=480)
+                    if dr.returncode == 0 and raw_mp4.exists() and raw_mp4.stat().st_size > 2_000_000:
+                        break
+                except subprocess.TimeoutExpired:
+                    pass
+                time.sleep(6 * (dl_att + 1))
+            assert raw_mp4.exists() and raw_mp4.stat().st_size > 2_000_000, f"Download failed for {ec}"
             final_mp4 = out_dir / f"{slug}.mp4"
             wav_path = out_dir / f"{slug}.wav"
             subprocess.run(["ffmpeg", "-nostdin", "-y", "-i", str(raw_mp4), "-i", str(wav_path), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-shortest", "-movflags", "+faststart", str(final_mp4)], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
@@ -464,6 +517,7 @@ def main():
     ap.add_argument("--audio", action="store_true")
     ap.add_argument("--visuals", action="store_true")
     ap.add_argument("--render-and-stage", action="store_true")
+    ap.add_argument("--session", default="wom_batch_bg")
     args = ap.parse_args()
 
     if args.audio:
@@ -472,7 +526,7 @@ def main():
     if args.visuals:
         build_visuals_for_codes(args.ep_codes)
     if args.render_and_stage:
-        render_and_stage_codes(args.ep_codes)
+        render_and_stage_codes(args.ep_codes, sid=args.session)
 
 
 if __name__ == "__main__":

@@ -471,41 +471,12 @@ def _gen_batch_or_single(tasks: list[tuple[str, Path, str]], profile: str) -> No
         dst.parent.mkdir(parents=True, exist_ok=True)
         _gen_single_gflow(prompt, dst, profile, env, prefer_model="nano-pro")
 
-    # 2. Generate 16:9 story shots in batches of 5 via nano-pro (stay-mounted editor = 5x faster!)
+    # 2. Generate 16:9 story shots sequentially via t2i --model nano-pro (skips batch multi-prompt WAF rejections)
     pending_shots = [(p, d) for p, d, _ in shot_tasks if not (d.exists() and d.stat().st_size > 45_000)]
-    active_model = "nano-pro"
-    for i in range(0, len(pending_shots), 5):
-        chunk = pending_shots[i : i + 5]
-        for _, d in chunk:
-            d.parent.mkdir(parents=True, exist_ok=True)
-        bdir = Path(f"/tmp/gflow_wom_{profile}_{i}")
-        shutil.rmtree(bdir, ignore_errors=True)
-        bdir.mkdir(parents=True, exist_ok=True)
-        mfile = bdir / "batch.json"
-        mfile.write_text(
-            json.dumps([{"text": p, "count": 1, "aspect_ratio": "16:9", "model": active_model} for p, _ in chunk], ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
-
-        res = subprocess.run(
-            [
-                "gflow-headless", "image", "batch", str(mfile),
-                "--profile", profile, "--aspect", "16:9", "--model", active_model,
-                "--jitter", "6-12", "--out", str(bdir),
-            ],
-            env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
-        )
-        imgs = sorted([p for p in bdir.glob("*.*") if p.suffix.lower() in (".jpg", ".jpeg", ".png") and p.stat().st_size > 40_000])
-        if res.returncode == 0 and len(imgs) == len(chunk):
-            for (_, dst), src_img in zip(chunk, imgs):
-                im = Image.open(src_img).convert("RGB")
-                im.save(dst, format="JPEG", quality=90, optimize=True)
-            print(f"  [{profile}/{active_model}] Batch of {len(chunk)} shots -> {[d.name for _, d in chunk]}")
-        else:
-            if "quota" in res.stdout.lower() or "limit" in res.stdout.lower():
-                active_model = "nano2"
-            for p_txt, dst in chunk:
-                _gen_single_gflow(p_txt, dst, profile, env, prefer_model=active_model)
+    for p_txt, dst in pending_shots:
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        _gen_single_gflow(p_txt, dst, profile, env, prefer_model="nano-pro")
+        time.sleep(2.5)
 
 
 def build_qa_sheets() -> None:
