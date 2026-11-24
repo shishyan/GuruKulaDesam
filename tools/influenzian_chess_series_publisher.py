@@ -187,6 +187,8 @@ def publish_episode(yt, ep_dir: Path, privacy: str) -> str:
             "description": description,
             "tags": tags,
             "categoryId": "24",  # Entertainment / Storytelling
+            "defaultLanguage": "en",
+            "defaultAudioLanguage": "en",
         },
         "status": {
             "privacyStatus": privacy,
