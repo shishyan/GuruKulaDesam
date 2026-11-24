@@ -490,7 +490,8 @@ def _gen_batch_or_single(tasks: list[tuple[str, Path, str]], profile: str) -> No
         res = subprocess.run(
             [
                 "gflow-headless", "image", "batch", str(mfile),
-                "--profile", profile, "--aspect", "16:9", "--model", active_model, "--out", str(bdir),
+                "--profile", profile, "--aspect", "16:9", "--model", active_model,
+                "--jitter", "6-12", "--out", str(bdir),
             ],
             env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
         )
