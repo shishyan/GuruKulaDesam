@@ -86,21 +86,26 @@ def get_yt_clients() -> list[tuple[str, object]]:
     return clients
 
 
-def build_title_and_description(ds: str, meta_dir: Path, day_dir: Path) -> tuple[str, str]:
+def build_title_and_description(ds: str, meta_dir: Path, day_dir: Path) -> tuple[str, str, list[str]]:
     manifest_file = meta_dir / "manifest.json"
     desc_file = meta_dir / f"desc_{ds}.txt"
+    tags_file = meta_dir / f"tags_{ds}.json"
     story_meta_file = day_dir / "STORY_METADATA.json"
 
     title = ""
     desc = ""
+    tags: list[str] = []
     if manifest_file.exists():
         mf = json.loads(manifest_file.read_text(encoding="utf-8"))
         if ds in mf:
             title = mf[ds].get("title", "")
+            tags = mf[ds].get("tags") or []
     if desc_file.exists():
         desc = desc_file.read_text(encoding="utf-8").strip()
+    if tags_file.exists():
+        tags = json.loads(tags_file.read_text(encoding="utf-8"))
 
-    if (not title or not desc) and story_meta_file.exists():
+    if (not title or not desc or not tags) and story_meta_file.exists():
         sm = json.loads(story_meta_file.read_text(encoding="utf-8"))
         t_ta = sm.get("title_ta", "புராணக் கதை")
         p_ta = sm.get("purana_source", "புராணம்")
@@ -112,15 +117,80 @@ def build_title_and_description(ds: str, meta_dir: Path, day_dir: Path) -> tuple
                 f"{sm.get('story_summary_ta', '')}\n\n"
                 f"{sm.get('moral_and_action_ta', '')}\n\n"
                 f"ஆலய தரிசனம்: {sm.get('temple_where_to_go_ta', '')}\n\n"
-                f"சிவாயநம!\n\n"
-                f"#TamilDailyLife #புராணக்கதைகள் #TamilDevotional #GuruKulaDesam #TamilStories"
+                f"வாழ்க வளமுடன். சிவாயநம!\n\n"
+                f"#TamilDailyLife #TamilVirtues #புராணக்கதைகள் #தமிழ்பஞ்சாங்கம் #ராசிபலன் "
+                f"#மகளிர்வழிகாட்டி #ஆன்மீகக்கதைகள் #TamilDevotional #TamilStories #TamilPanchangam #RasiPalan #GuruKulaDesam"
             )
+    if not tags:
+        tags = [
+            "TamilDailyLife", "TamilVirtues", "தமிழர் பண்பாடு", "வாழ்வியல் நெறி",
+            "புராணக் கதைகள்", "தமிழ் பஞ்சாங்கம்", "இன்றைய ராசி பலன்", "மகளிர் வழிகாட்டி",
+            "ஆன்மீகக் கதைகள்", "சமையல் குறிப்புகள்", "Tamil Purana Stories", "Tamil Panchangam",
+            "Rasi Palan Tamil", "Tamil Devotional", "Tamil Stories", "Guru Kula Desam",
+        ]
 
     safe_title = (title or f"புராண வரலாறு — {ds} | @TamilDailyLife").replace("<", "").replace(">", "").strip()
     if len(safe_title) > 98:
         safe_title = safe_title[:98].rsplit(" | ", 1)[0].strip()[:98]
     safe_desc = (desc or safe_title).replace("<", "").replace(">", "")[:4900]
-    return safe_title, safe_desc
+    return safe_title, safe_desc, tags
+
+
+def sync_channel_and_live_videos_seo(clients: list[tuple[str, object]], reg: dict, meta_dir: Path, dry_run: bool = False) -> int:
+    """
+    Cloud-native SEO healer for @TamilDailyLife (`UCDdEZ6CPCr6tIzWdDY9mzxg`).
+    Ensures every live video in `reg["published"]` has full YouTube Tags (~25 tags / ~430 chars)
+    and full Tamil + English SEO Description + 15 Hashtags via YouTube Data API v3 (`videos.update`),
+    completely independent of the local workstation.
+    """
+    if not clients or dry_run:
+        return 0
+    _, yt = clients[0]
+    pub_map = reg.get("published") or {}
+    if not pub_map:
+        return 0
+
+    vid_to_date = {info["youtubeVideoId"]: ds for ds, info in pub_map.items() if info.get("youtubeVideoId")}
+    vid_ids = list(vid_to_date.keys())
+    healed = 0
+
+    for i in range(0, len(vid_ids), 50):
+        batch = vid_ids[i : i + 50]
+        try:
+            items = yt.videos().list(part="id,snippet", id=",".join(batch)).execute().get("items", [])
+        except Exception as e:
+            print(f"[SEO Audit] videos.list note: {e}")
+            break
+
+        for it in items:
+            vid = it["id"]
+            ds = vid_to_date.get(vid, "")
+            sn = it.get("snippet") or {}
+            cur_tags = sn.get("tags") or []
+            cur_desc = sn.get("description") or ""
+
+            day_tmp = TMP_DIR / ds
+            day_tmp.mkdir(parents=True, exist_ok=True)
+            _, target_desc, target_tags = build_title_and_description(ds, meta_dir, day_tmp)
+
+            needs_tags = len(cur_tags) < 10
+            needs_desc = len(cur_desc) < 600 or "#TamilVirtues" not in cur_desc
+            if not (needs_tags or needs_desc):
+                continue
+
+            sn["description"] = target_desc
+            sn["tags"] = target_tags
+            sn["defaultLanguage"] = "ta"
+            sn["defaultAudioLanguage"] = "ta"
+            try:
+                yt.videos().update(part="snippet", body={"id": vid, "snippet": sn}).execute()
+                healed += 1
+                print(f"[SEO Healed] {ds} ({vid}) -> desc={len(target_desc)} chars, tags={len(target_tags)}")
+            except Exception as ue:
+                print(f"[SEO Update Skip] {ds} ({vid}): {ue}")
+
+    print(f"[SEO Audit Complete] Checked {len(vid_ids)} live videos (updated={healed}).")
+    return healed
 
 
 def main():
@@ -128,6 +198,7 @@ def main():
     ap.add_argument("--date", default="", help="Target YYYY-MM-DD (defaults to draining up to today IST)")
     ap.add_argument("--max-uploads", type=int, default=2, help="Max episodes to upload per cloud run")
     ap.add_argument("--privacy", choices=["public", "unlisted"], default="public")
+    ap.add_argument("--sync-seo", action="store_true", default=True, help="Audit and sync tags/hashtags/SEO on all live videos")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -167,6 +238,10 @@ def main():
 
     if not pending_dates:
         print(f"All @TamilDailyLife episodes up through {cutoff_date} are already published ({len(reg['published'])} live).")
+        if args.sync_seo and not args.dry_run:
+            clients = get_yt_clients()
+            if clients:
+                sync_channel_and_live_videos_seo(clients, reg, meta_dir, dry_run=args.dry_run)
         REGISTRY_PATH.write_text(json.dumps(reg, ensure_ascii=False, indent=2), encoding="utf-8")
         return
 
@@ -218,12 +293,12 @@ def main():
             check=False,
         )
 
-        title, desc = build_title_and_description(ds, meta_dir, day_tmp)
+        title, desc, tags = build_title_and_description(ds, meta_dir, day_tmp)
         body = {
             "snippet": {
                 "title": title,
                 "description": desc,
-                "tags": ["TamilDailyLife", "புராணக்கதைகள்", "TamilDevotional", "GuruKulaDesam", "TamilStories"],
+                "tags": tags,
                 "categoryId": "27",
                 "defaultLanguage": "ta",
                 "defaultAudioLanguage": "ta",
@@ -276,6 +351,9 @@ def main():
         mp4_dst.unlink(missing_ok=True)
         if client_idx >= len(clients):
             break
+
+    if args.sync_seo and clients and not args.dry_run:
+        sync_channel_and_live_videos_seo(clients, reg, meta_dir, dry_run=args.dry_run)
 
     reg["updated_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     REGISTRY_PATH.write_text(json.dumps(reg, ensure_ascii=False, indent=2), encoding="utf-8")

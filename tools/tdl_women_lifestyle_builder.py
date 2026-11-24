@@ -183,6 +183,8 @@ def build_cat3_women_lifestyle_post(date_str: str, tamil_date_header: str | None
         "",
         blessing_ta,
         "வாழ்க வளமுடன். சிவாயநம.",
+        "",
+        "#TamilDailyLife #TamilVirtues #மகளிர்நலம் #சமையல்குறிப்புகள் #இல்லறம் #குடும்பநலம் #இயற்கைஆரோக்கியம் #TamilSamayal #TamilWomen #GuruKulaDesam",
     ]
 
     raw_post = "\n".join(lines).strip()
@@ -263,7 +265,7 @@ def verify_all_54_days(
         assert "சமையலறைக் குறிப்புகள் (சுவையும் நேரச் சேமிப்பும்):" in post_default
         assert "மகளிர் ஆரோக்கியம் & இயற்கை பராமரிப்பு:" in post_default
         assert "குடும்ப நலம், சேமிப்பு & இல்லற மேன்மை:" in post_default
-        assert post_default.endswith("வாழ்க வளமுடன். சிவாயநம."), f"Bad closing sign-off on {ds}"
+        assert "வாழ்க வளமுடன். சிவாயநம." in post_default and post_default.endswith("#GuruKulaDesam"), f"Bad closing sign-off on {ds}"
         assert post_default.count("\n- ") == 7, f"Expected exactly 7 '- ' bullets on {ds}"
         assert len(post_default) < 3200, f"Post too long ({len(post_default)} chars) on {ds}"
 

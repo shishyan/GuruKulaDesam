@@ -1,15 +1,25 @@
-name: Daily Community Posts Cloud Stager (@Guru-Kula-Desam & @TamilDailyLife)
+name: Daily Community Posts & 3-Category Cloud Publisher (@Guru-Kula-Desam & @TamilDailyLife)
 
 on:
   schedule:
-    # 00:00 UTC = 05:30 AM IST daily
-    - cron: '0 0 * * *'
+    # Runs at 00:00 UTC (05:30 AM IST) and every 6 hours to drip queued 3-category posts without local PC
+    - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
       start_date:
-        description: 'Optional YYYY-MM-DD start date (defaults to today IST)'
+        description: 'Optional YYYY-MM-DD start date (defaults to 2026-11-08)'
         required: false
-        default: ''
+        default: '2026-11-08'
+        type: string
+      end_date:
+        description: 'Optional YYYY-MM-DD end date (defaults to 2026-12-31)'
+        required: false
+        default: '2026-12-31'
+        type: string
+      max_posts:
+        description: 'Max 3-category Community Posts to publish in this cloud run'
+        required: false
+        default: '45'
         type: string
       days_ahead:
         description: 'Number of upcoming days to pre-stage on Google Drive'
@@ -18,16 +28,16 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: daily-community-posts-cloud
   cancel-in-progress: false
 
 jobs:
-  stage-community-posts:
+  stage-and-publish-community-posts:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 55
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -37,28 +47,43 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install rclone & Dependencies
+      - name: Install rclone & Playwright Chromium Dependencies
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq rclone
           python -m pip install --upgrade pip
           pip install -q playwright
+          playwright install --with-deps chromium
 
-      - name: Restore rclone Google Drive Config
+      - name: Restore rclone Google Drive Config & Optional Headless YouTube Session
         env:
           GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
+          TAMILDAILYLIFE_YT_STORAGE_STATE_B64: ${{ secrets.TAMILDAILYLIFE_YT_STORAGE_STATE_B64 }}
         run: |
           mkdir -p ~/.config/rclone
           if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
             printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
+          fi
+          if [ -n "$TAMILDAILYLIFE_YT_STORAGE_STATE_B64" ]; then
+            printf "%s" "$TAMILDAILYLIFE_YT_STORAGE_STATE_B64" | base64 -d > /tmp/tdl_storage_state.json
           fi
 
       - name: Synthesize & Sync 7-Day Rolling Editorial & 3-Category Community Posts to Google Drive
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          START_ARG=""
-          if [ -n "${{ github.event.inputs.start_date }}" ]; then
-            START_ARG="--start-date ${{ github.event.inputs.start_date }}"
+          python tools/stage_daily_community_posts_cloud.py --days-ahead "${{ github.event.inputs.days_ahead || '7' }}"
+
+      - name: Run @TamilDailyLife 3-Category Community Post Cloud Publisher & Manifest Sync
+        run: |
+          STORAGE_ARG=""
+          if [ -f /tmp/tdl_storage_state.json ]; then
+            STORAGE_ARG="--storage-state /tmp/tdl_storage_state.json"
           fi
-          python tools/stage_daily_community_posts_cloud.py --days-ahead "${{ github.event.inputs.days_ahead || '7' }}" $START_ARG
+          python tools/publish_tdl_3category_community_posts.py \
+            --cloud-headless \
+            $STORAGE_ARG \
+            --start-date "${{ github.event.inputs.start_date || '2026-11-08' }}" \
+            --end-date "${{ github.event.inputs.end_date || '2026-12-31' }}" \
+            --delay-sec 50.0 \
+            --max-posts "${{ github.event.inputs.max_posts || '45' }}"

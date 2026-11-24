@@ -758,6 +758,8 @@ def build_cat1_panchangam_post(date_str: str, story_meta: dict[str, Any] | None 
         "",
         f"இறையருளும் குலதெய்வ நல்லாசியும் உங்கள் இல்லத்தில் என்றும் அமைதியையும் சுபிட்சத்தையும் நிறைக்கட்டும்.",
         "வாழ்க வளமுடன். சிவாயநம.",
+        "",
+        "#TamilDailyLife #TamilVirtues #தமிழ்பஞ்சாங்கம் #மகளிர்வழிகாட்டி #ஆன்மீகம் #வழிபாடு #புராணக்கதைகள் #TamilPanchangam #TamilDevotional #GuruKulaDesam",
     ]
 
     post = strip_decorative_unicode("\n".join(lines)).strip()
@@ -827,6 +829,8 @@ def build_cat2_raasi_jothidam_post(date_str: str) -> str:
         "",
         f"{wd_ext['weekday_tone_ta']}; நவக்கிரகங்களின் நல்லருளால் உங்கள் குடும்பத்தில் மகிழ்ச்சியும் ஆரோக்கியமும் தழைக்கட்டும்.",
         "வாழ்க வளமுடன். சிவாயநம.",
+        "",
+        "#TamilDailyLife #TamilVirtues #ராசிபலன் #இன்றையராசிபலன் #தமிழ்ஜோதிடம் #வாஸ்து #மகளிர்ஜோதிடம் #RasiPalan #TamilAstrology #GuruKulaDesam",
     ])
 
     post = strip_decorative_unicode("\n".join(lines)).strip()

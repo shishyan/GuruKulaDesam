@@ -1,8 +1,8 @@
-name: TamilDailyLife Daily Purana Episode Cloud Publisher
+name: TamilDailyLife Daily Purana Episode & SEO Cloud Publisher
 
 on:
   schedule:
-    # 00:30 UTC = 06:00 AM IST daily (+ 12:30 UTC evening catch-up slot)
+    # 00:30 UTC = 06:00 AM IST daily (+ 12:30 UTC evening catch-up & SEO heal slot)
     - cron: '30 0,12 * * *'
   workflow_dispatch:
     inputs:
@@ -15,6 +15,11 @@ on:
         description: 'Max episodes to publish in this run'
         required: false
         default: '2'
+        type: string
+      sync_seo:
+        description: 'Audit and heal Tags, Hashtags & SEO Descriptions across all live videos (true/false)'
+        required: false
+        default: 'true'
         type: string
       dry_run:
         description: 'Dry run only (true/false)'
@@ -30,7 +35,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  publish-daily-episode:
+  publish-daily-episode-and-seo:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
@@ -67,17 +72,21 @@ jobs:
             printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
           fi
 
-      - name: Publish Due @TamilDailyLife 1080p Episodes from Google Drive
+      - name: Publish Due @TamilDailyLife 1080p Episodes & Sync Channel/Video SEO from Google Drive
         run: |
           DATE_ARG=""
           if [ -n "${{ github.event.inputs.target_date }}" ]; then
             DATE_ARG="--date ${{ github.event.inputs.target_date }}"
           fi
+          SEO_ARG="--sync-seo"
+          if [ "${{ github.event.inputs.sync_seo }}" = "false" ]; then
+            SEO_ARG=""
+          fi
           DRY_ARG=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             DRY_ARG="--dry-run"
           fi
-          python tools/tamildailylife_cloud_publisher.py --max-uploads "${{ github.event.inputs.max_uploads || '2' }}" $DATE_ARG $DRY_ARG
+          python tools/tamildailylife_cloud_publisher.py --max-uploads "${{ github.event.inputs.max_uploads || '2' }}" $SEO_ARG $DATE_ARG $DRY_ARG
 
       - name: Commit & Push Updated Published Registry
         run: |
@@ -86,7 +95,7 @@ jobs:
           if [ -f production/tamildailylife_published_registry.json ]; then
             git add production/tamildailylife_published_registry.json
             if [ -n "$(git status --porcelain production/tamildailylife_published_registry.json)" ]; then
-              git commit -m "chore(tamildailylife): update published episode registry [skip ci]"
+              git commit -m "chore(tamildailylife): update published episode registry & SEO [skip ci]"
               git pull --rebase origin HEAD || true
               git push origin HEAD:master || git push origin HEAD:main || true
             fi

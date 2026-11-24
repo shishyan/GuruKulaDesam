@@ -40,9 +40,55 @@ POSTS_URL = f"https://www.youtube.com/channel/{CHANNEL_ID}/posts"
 CDP_PORT = 9225
 CDP_URL = f"http://127.0.0.1:{CDP_PORT}"
 
-ASSETS_BASE = Path("/home/shishyan/GoogleDrive_GuruKulaDesam/Assets/tamil-daily-life")
+_LOCAL_DRIVE_ASSETS = Path("/home/shishyan/GoogleDrive_GuruKulaDesam/Assets/tamil-daily-life")
+ASSETS_BASE = _LOCAL_DRIVE_ASSETS if _LOCAL_DRIVE_ASSETS.exists() else Path("/tmp/tdl_cloud_assets/tamil-daily-life")
 ARTWORKS_DIR = ASSETS_BASE / "tdl_community_artworks"
 MASTER_MANIFEST_PATH = ASSETS_BASE / "TDL_3CATEGORY_COMMUNITY_POSTS_MANIFEST.json"
+
+
+def sync_cloud_assets_from_gdrive() -> None:
+    """When running on GitHub Actions (without local workstation mount), hydrate manifest & artworks from Google Drive."""
+    if _LOCAL_DRIVE_ASSETS.exists():
+        return
+    ASSETS_BASE.mkdir(parents=True, exist_ok=True)
+    ARTWORKS_DIR.mkdir(parents=True, exist_ok=True)
+    print("[Cloud Hydrate] Pulling TDL_3CATEGORY_COMMUNITY_POSTS_MANIFEST.json & artworks from Google Drive...", flush=True)
+    subprocess.run(
+        [
+            "rclone", "copyto",
+            "gdrive:GuruKulaDesam/Assets/tamil-daily-life/TDL_3CATEGORY_COMMUNITY_POSTS_MANIFEST.json",
+            str(MASTER_MANIFEST_PATH),
+        ],
+        check=False,
+    )
+    subprocess.run(
+        [
+            "rclone", "copy",
+            "gdrive:GuruKulaDesam/Assets/tamil-daily-life/tdl_community_artworks/",
+            str(ARTWORKS_DIR),
+            "--transfers", "8",
+        ],
+        check=False,
+    )
+    if MASTER_MANIFEST_PATH.exists():
+        try:
+            mf = json.loads(MASTER_MANIFEST_PATH.read_text(encoding="utf-8"))
+            for ds, cats in (mf.get("days") or {}).items():
+                day_pub = {}
+                for ck, info in (cats or {}).items():
+                    if info.get("url"):
+                        day_pub[ck] = {
+                            "url": info["url"],
+                            "image": Path(info.get("image_file") or "").name,
+                            "published_at": info.get("published_at") or "",
+                        }
+                if day_pub:
+                    rp = ASSETS_BASE / ds / "tdl_community_posts" / f"published_{ds}.json"
+                    rp.parent.mkdir(parents=True, exist_ok=True)
+                    if not rp.exists():
+                        rp.write_text(json.dumps(day_pub, ensure_ascii=False, indent=2), encoding="utf-8")
+        except Exception as e:
+            print(f"[Cloud Hydrate] Manifest seed note: {e}", flush=True)
 
 START_DATE = date(2026, 11, 8)
 END_DATE = date(2026, 12, 31)
@@ -114,10 +160,10 @@ LOCAL_ART_CACHE = Path("/tmp/tdl_community_artworks_cache")
 def get_cached_artwork(src: Path) -> Path:
     LOCAL_ART_CACHE.mkdir(parents=True, exist_ok=True)
     dst = LOCAL_ART_CACHE / src.name
-    if not dst.exists() or dst.stat().st_size < 15_000:
+    if (not dst.exists() or dst.stat().st_size < 15_000) and src.exists():
         import shutil
         shutil.copy2(src, dst)
-    return dst
+    return dst if dst.exists() else src
 
 
 def materialize_all_54_days() -> list[dict]:
@@ -135,7 +181,14 @@ def materialize_all_54_days() -> list[dict]:
         f3 = day_post_dir / f"cat3_magalir_illaram_{ds}.txt"
 
         astro_ctx = get_daily_astro_context(ds)
-        if f1.exists() and f2.exists() and f3.exists():
+        if (
+            f1.exists()
+            and f2.exists()
+            and f3.exists()
+            and "#TamilDailyLife" in f1.read_text(encoding="utf-8")
+            and "#TamilDailyLife" in f2.read_text(encoding="utf-8")
+            and "#TamilDailyLife" in f3.read_text(encoding="utf-8")
+        ):
             cat1_txt = f1.read_text(encoding="utf-8")
             cat2_txt = f2.read_text(encoding="utf-8")
             cat3_txt = f3.read_text(encoding="utf-8")
@@ -193,7 +246,7 @@ def restart_and_resync_cdp_browser():
     subprocess.run(["pkill", "-f", "/opt/google/chrome/chrome.*9225"], check=False)
     time.sleep(2.0)
     import flow_autonomous_generator as fg
-    fg.sync_flow_chrome_profile(force=False)
+    fg.sync_flow_chrome_profile(force=True)
     fg.ensure_flow_chrome_running(user_idx=3)
     time.sleep(2.5)
 
@@ -436,11 +489,14 @@ def main():
     ap.add_argument("--start-date", default="2026-11-08")
     ap.add_argument("--end-date", default="2026-12-31")
     ap.add_argument("--generate-only", action="store_true")
+    ap.add_argument("--cloud-headless", action="store_true", help="Run standalone headless Chromium in GitHub Actions")
+    ap.add_argument("--storage-state", default="", help="Optional Playwright storage_state JSON path for cloud headless")
     ap.add_argument("--delay-sec", type=float, default=50.0)
     ap.add_argument("--max-posts", type=int, default=60, help="Max posts to publish per daily run before yielding")
     args = ap.parse_args()
 
     sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
+    sync_cloud_assets_from_gdrive()
     print("Materializing all 54 days x 3 categories (162 posts) on disk...", flush=True)
     records = materialize_all_54_days()
     summary = write_master_manifest(records)
@@ -451,15 +507,44 @@ def main():
     )
 
     if args.generate_only:
+        subprocess.run(
+            [
+                "rclone", "copyto",
+                str(MASTER_MANIFEST_PATH),
+                "gdrive:GuruKulaDesam/Assets/tamil-daily-life/TDL_3CATEGORY_COMMUNITY_POSTS_MANIFEST.json",
+            ],
+            check=False,
+        )
         return
 
-    ensure_cdp_browser()
+    if args.cloud_headless and (not args.storage_state or not Path(args.storage_state).exists()):
+        print(
+            "NOTICE: Running in --cloud-headless mode without TAMILDAILYLIFE_YT_STORAGE_STATE_B64 configured; "
+            "all 162 SEO-hashtagged 3-category posts and manifest are materialized and synced to Google Drive.",
+            flush=True,
+        )
+        subprocess.run(
+            [
+                "rclone", "copyto",
+                str(MASTER_MANIFEST_PATH),
+                "gdrive:GuruKulaDesam/Assets/tamil-daily-life/TDL_3CATEGORY_COMMUNITY_POSTS_MANIFEST.json",
+            ],
+            check=False,
+        )
+        return
+
+    if not args.cloud_headless:
+        ensure_cdp_browser()
     rate_limit_hit = False
     newly_published = 0
 
     with sync_playwright() as p:
-        browser = p.chromium.connect_over_cdp(CDP_URL)
-        ctx = browser.contexts[0]
+        if args.cloud_headless:
+            browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+            ctx = browser.new_context(storage_state=args.storage_state, viewport={"width": 1920, "height": 1080})
+        else:
+            browser = p.chromium.connect_over_cdp(CDP_URL)
+            ctx = browser.contexts[0]
         page = ctx.new_page()
         page.set_default_timeout(25000)
         try:
@@ -491,6 +576,9 @@ def main():
                         except Exception as exc:
                             err = str(exc)
                             print(f"  retry {attempt+1}/5 after exception: {err[:160]}", flush=True)
+                            if args.cloud_headless:
+                                time.sleep(5)
+                                continue
                             try:
                                 page.close()
                             except Exception:
