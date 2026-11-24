@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Batch-publish the 1,008 categorized South Indian Cooking Recipes to @guru-kula-desam
+Batch-publish the 1,008 categorized South Indian Cooking Recipes to @TamilDailyLife
 with 2 `1:1` food photography images per post, tracking progress in published_recipes_batches.json.
 """
 import argparse
@@ -12,6 +12,8 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import publish_daily_gkd_community_post as gkd_pub
+gkd_pub.POSTS_URL = "https://www.youtube.com/channel/UCDdEZ6CPCr6tIzWdDY9mzxg/posts"
 from publish_daily_gkd_community_post import publish_via_cdp
 
 OUT_ROOT = Path.home() / "GoogleDrive_GuruKulaDesam" / "Assets" / "south-indian-recipes-1008"
