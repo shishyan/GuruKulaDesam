@@ -1,19 +1,24 @@
 {
   "channel": "@TamilDailyLife",
   "channel_id": "UCDdEZ6CPCr6tIzWdDY9mzxg",
-  "updated_at_utc": "2026-11-24T07:43:00Z",
+  "updated_at_utc": "2026-11-24T08:07:46Z",
   "published": {
     "P1_001": {
       "video_id": "sqW1ap4oZBY",
       "url": "https://youtu.be/sqW1ap4oZBY",
       "title": "திருக்கருகாவூர் கர்ப்பரட்சாம்பிகை அம்மன் தல வரலாறு & நெய் தீப வழிபாட்டு முறை",
-      "thumb_set": false
+      "thumb_set": true
     },
     "P3_001": {
       "video_id": "NzELSpLqsoo",
       "url": "https://youtu.be/NzELSpLqsoo",
       "title": "ஐந்து முக குத்துவிளக்கு, பஞ்ச தீப எண்ணெய் & வெள்ளிக்கிழமை மகாலட்சுமி பூஜை ரகசியங்கள் | Deepa Shastra",
-      "thumb_set": false
+      "thumb_set": true
+    },
+    "P2_001": {
+      "video_id": "jxIWObmAoaQ",
+      "url": "https://youtu.be/jxIWObmAoaQ",
+      "title": "மகளிர் இடுப்பு & எலும்பு வலிமைக்கான கருப்பு உளுந்தங்களி, எள்ளுருண்டை & பிரண்டை பாட்டி வைத்தியம்"
     }
   }
 }
