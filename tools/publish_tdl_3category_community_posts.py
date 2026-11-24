@@ -565,7 +565,8 @@ def main():
                     url, err = None, None
                     for attempt in range(5):
                         try:
-                            ensure_cdp_browser()
+                            if not args.cloud_headless:
+                                ensure_cdp_browser()
                             url, err = publish_one_post_on_page(page, c["text"], c["image_path"])
                             if url:
                                 break

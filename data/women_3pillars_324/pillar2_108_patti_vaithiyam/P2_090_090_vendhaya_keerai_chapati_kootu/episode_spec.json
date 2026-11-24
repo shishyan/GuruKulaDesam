@@ -1,0 +1,86 @@
+{
+  "ep_code": "P2_090",
+  "pillar_code": "P2",
+  "pillar_title_ta": "108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்",
+  "ep_num_in_pillar": 90,
+  "slug": "p2_090_vendhaya_keerai_chapati_kootu",
+  "title_pill": "பாட்டி வைத்தியம் • வெந்தயக் கீரை நலம்",
+  "yt_title": "இடுப்பு வலி மற்றும் சர்க்கரை கட்டுப்பாட்டிற்கு உதவும் வெந்தயக் கீரை பருப்புக் கூட்டு...",
+  "yt_description": "இடுப்பு வலி மற்றும் சர்க்கரை கட்டுப்பாட்டிற்கு உதவும் வெந்தயக் கீரை பருப்புக் கூட்டு — தமிழர் பண்பாடு (வாழ்வியல் நெறி) | @TamilDailyLife வழங்கும் மகளிர் சிறப்புத் தொடர் (108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்).\n\nஇந்தப் பதிவில்:\n- பெண்களின் இடுப்பு வலி, கருப்பை ஆரோக்கியம் மற்றும் சர்க்கரைக் கட்டுப்பாட்டிற்கு உதவும் வெந்தயக் கீரையின் மருத்துவ குணங்கள்.\n- தாய்ப்பால் சுரப்பு மற்றும் மாதவிடாய் கால உடல் உளைச்சலுக்கு இக்கீரை அளிக்கும் இயற்கை ஊட்டச்சத்து ஆதரவு.\n- கசப்புத் தெரியாமல் பாசிப்பருப்பு, நாட்டுப் பூண்டு மற்றும் தேங்காய்ச் சீரக விழுது சேர்த்துக் கூட்டு சமைக்கும் முறை.\n- வீட்டிலேயே ஏழு நாட்களில் இளங்கீரை வளர்க்கும் முறையும் பகல் உணவில் கீரை உண்ணும் விதிகளும்.\n\n#TamilDailyLife #TamilVirtues #PattiVaithiyam #Anjaraipetti #TamilTraditionalFood #WomenHealthTamil #GuruKulaDesam",
+  "thumb_badge_ta": "பாட்டி வைத்தியம்",
+  "thumb_main_ta": "வெந்தயக் கீரை நலம்",
+  "thumbnail_prompt": "A-grade Tamil traditional wellness cinema movie-poster artwork, widescreen full-bleed seamless composition (pure poster artwork with zero UI buttons or play icons). Right side (right half of the frame): Zoomed-in chest-up commanding scene — Zoomed-in chest-up portrait of a warm smiling Tamil homemaker in burgundy cotton saree holding an earthen pot of golden-green fenugreek moong dal kootu and fresh fenugreek greens in golden rim lighting, pure poster artwork with zero UI buttons or play icons, illuminated by intense warm golden rim-lighting and glowing brass oil lamps. Left side (left half of the frame): Monumental, massive TV-readable Tamil cinema poster typography occupying the left half with grand prominence. Top: Distinct dark midnight-indigo pill badge with glowing gold border displaying பாட்டி வைத்தியம் (no quotation marks). Center/Bottom: Huge, gigantic 3D-extruded solid polished gold Tamil cinema lettering வெந்தயக் கீரை நலம் (written once cleanly) across a rich royal crimson-maroon velvet banner with sharp metallic bevels, deep drop-shadows, and specular glints, perfectly legible on mobile screens. Background: Full-bleed warm South Indian sacred temple or heritage home backdrop with gentle golden mist, zero dead space, no text or numbers in the lower-right corner.",
+  "shot_prompts": [
+    "Fresh tender green fenugreek microgreens in a bamboo basket beside yellow moong dal and peeled garlic cloves",
+    "Smiling Tamil homemaker harvesting fresh green fenugreek sprouts from a terracotta pot on a sunlit kitchen balcony",
+    "Close-up of delicate three-leaved fresh fenugreek greens glistening with morning dew beside whole golden fenugreek seeds",
+    "Yellow split moong dal, whole garlic pods, ripe red tomato, and turmeric powder arranged neatly on brass plates",
+    "Traditional earthen chatti pot simmering golden moong dal and garlic gently over a warm kitchen flame",
+    "Adding two handfuls of freshly chopped emerald fenugreek greens into the open simmering clay pot of moong dal",
+    "Grinding fresh grated coconut and aromatic cumin seeds coarsely on a clean stone mortar for mild kootu base",
+    "Stirring the white coconut-cumin paste and rock salt gently into the vibrant green fenugreek moong dal kootu",
+    "Tempering mustard seeds, split urad dal, red chilli, and asafoetida in golden cow ghee inside a small iron ladle",
+    "Pouring the sizzling aromatic ghee seasoning over the creamy emerald-and-gold fenugreek leaf paruppu kootu",
+    "Homegrown seven-day fenugreek microgreens sprouting densely in clean moist soil inside a shallow clay planter tray",
+    "Serving hot steaming rice with creamy fenugreek moong dal kootu on a fresh green banana leaf at midday",
+    "Tamil grandmother and daughter enjoying a nourishing traditional lunch together in a bright peaceful dining hall",
+    "Close-up of appetizing golden-green fenugreek kootu showing tender leaves, soft moong dal, and whole cooked garlic cloves",
+    "Active healthy middle-aged Tamil woman walking briskly and cheerfully through her sunlit home courtyard garden",
+    "Sacred brass oil lamp glowing warmly beside fenugreek seeds and fresh greens in a traditional Tamil home"
+  ],
+  "sections": [
+    {
+      "id": "s1_intro",
+      "badge": "அறிமுகம்",
+      "is_story": false,
+      "paragraphs": [
+        "சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! பெண்களின் வாழ்வில் பிரசவத்திற்குப் பிறகும் நாற்பது வயதைக் கடந்த பின்பும் ஏற்படும் இடுப்பு வலிக்கு மிகச் சிறந்த உணவாகத் திகழ்வது வெந்தயக் கீரையாகும். இடுப்பு வலி மற்றும் சர்க்கரைக் கட்டுப்பாட்டிற்கு உதவும் வெந்தயக் கீரை பாசிப்பருப்புக் கூட்டு பற்றி இன்று காண்போம்.",
+        "அஞ்சறைப்பெட்டியில் உள்ள வெந்தயத்தை நன்கு அறிந்த நாம், அதிலிருந்து தளிர்க்கும் பசுமையான வெந்தயக் கீரையை அடிக்கடி சமையலில் சேர்க்க மறந்துவிடுகிறோம். இலேசான கசப்பும் தனித்துவமான மணமும் கொண்ட இந்தக் கீரை, பெண்களின் கருப்பை நலத்திற்கும் எலும்பு வலிமைக்கும் இணையற்ற வரப்பிரசாதமாகும்.",
+        "பாசிப்பருப்பு, பூண்டு மற்றும் தேங்காய்ப் பால் சேர்த்துப் பக்குவமாகச் சமைக்கும்போது வெந்தயக் கீரையின் கசப்பு முற்றிலும் மறைந்து அமிர்தமான சுவை கிடைக்கிறது. குடும்பத்தில் உள்ள பெரியவர்களின் சர்க்கரை அளவையும் பெண்களின் ஹார்மோன் சமநிலையையும் காக்கும் இந்தச் சத்தான கூட்டை விரிவாக அறிவோம்."
+      ]
+    },
+    {
+      "id": "s2_part1",
+      "badge": "வெந்தயக் கீரையின் மருத்துவ மகிமை",
+      "is_story": true,
+      "paragraphs": [
+        "சித்த மருத்துவத்தில் மேந்தோன்றி என்றும் வெந்தயக் கீரை என்றும் அழைக்கப்படும் இக்கீரை, உடலின் உள்ளுறுப்புகளில் உள்ள அதிகப்படியான உஷ்ணத்தையும் அழற்சியையும் தணிக்கும் தன்மை கொண்டது. இதில் உள்ள கால்சியம், இரும்புச்சத்து மற்றும் நார்ச்சத்து பெண்களின் இடுப்பு எலும்புகளுக்கும் முதுகுத் தண்டிற்கும் உறுதியைத் தருகின்றன.",
+        "மாதவிடாய் காலங்களில் ஏற்படும் அடிவயிற்று வலி, இடுப்பு உளைச்சல் மற்றும் வெள்ளைப்படுதல் போன்ற தொந்தரவுகளைச் சீராக்க வெந்தயக் கீரை பெரிதும் துணைபுரிகிறது. தாய்ப்பால் கொடுக்கும் இளம் தாய்மார்களுக்குப் பால் சுரப்பை இயற்கையாக அதிகரித்து, பிரசவ கால உடல் சோர்வை விரைவில் நீக்குகிறது.",
+        "மேலும் வெந்தயக் கீரையில் உள்ள கரையும் நார்ச்சத்து, உண்ட உணவில் உள்ள மாவுச்சத்து இரத்தத்தில் கலக்கும் வேகத்தைக் கட்டுப்படுத்திச் சர்க்கரை அளவைச் சமநிலையில் வைக்கிறது. இதனுடன் பாசிப்பருப்பும் மலைப்பூண்டும் சேரும்போது வாய்வுத் தொல்லையின்றி எளிதில் செரிமானமாகும் முழுமையான புரத உணவாக இது மாறுகிறது."
+      ]
+    },
+    {
+      "id": "s3_part2",
+      "badge": "பாரம்பரியப் பருப்புக் கூட்டு செய்முறை",
+      "is_story": true,
+      "paragraphs": [
+        "முதலில் அரை ஆழாக்கு பாசிப்பருப்பை நன்கு கழுவி, அதனுடன் பத்து உரித்த நாட்டுப் பூண்டுப் பற்கள், ஒரு நறுக்கிய தக்காளி மற்றும் கால் தேக்கரண்டி மஞ்சள் தூள் சேர்த்து மண் சட்டியில் வேகவைக்கவும். பருப்பு குழையாமல் முக்கால் பதம் வெந்து மசியும் நிலையில் இருக்கும்போது, ஆய்ந்து நறுக்கிய இரண்டு கைப்பிடி இளமையான வெந்தயக் கீரையைச் சேர்க்கவும்.",
+        "கீரையைச் சேர்த்தவுடன் பாத்திரத்தை மூடாமல் திறந்து வைத்து ஐந்து நிமிடங்கள் வேகவிட்டால், கீரையின் பசுமை நிறமும் சத்துக்களும் மாறாமலும் கசப்பு ஏறாமலும் இருக்கும். கீரை வெந்ததும் தேவையான அளவு கல்லுப்பும், இரண்டு தேக்கரண்டி துருவிய தேங்காயுடன் அரை தேக்கரண்டி சீரகம் சேர்த்து அரைத்த விழுதையும் ஊற்றி ஒரு கொதி விடவும்.",
+        "மற்றொரு சிறிய கரண்டியில் ஒரு தேக்கரண்டி நெய் அல்லது நல்லெண்ணெய் ஊற்றிச் சூடானதும் கடுகு, உளுத்தம்பருப்பு, ஒரு கிள்ளிய காய்ந்த மிளகாய் மற்றும் பெருங்காயம் தாளித்துக் கூட்டில் கொட்டவும். அடுப்பை அணைத்ததும் நறுமணம் கமழும் சுவையான வெந்தயக் கீரை பாசிப்பருப்புக் கூட்டு பரிமாறுவதற்குத் தயாராகிவிடும்."
+      ]
+    },
+    {
+      "id": "s4_practice",
+      "badge": "சமைக்கும் மற்றும் உண்ணும் முறைகள்",
+      "is_story": false,
+      "paragraphs": [
+        "வெந்தயக் கீரையைக் கடையில் வாங்குவதை விட, வீட்டிலேயே சிறிய தொட்டியிலோ அல்லது ஈரத் துணியிலோ வெந்தயத்தைத் தூவி ஏழு நாட்களில் முளைக்க வைத்துப் பறிப்பது மிகச் சிறந்தது. முற்றிய கீரையை விட மூன்று இலைகள் கொண்ட இளந்தளிர்க் கீரையில் கசப்பு குறைவாகவும் உயிர்ச்சத்துக்கள் பன்மடங்கு அதிகமாகவும் இருக்கும்.",
+        "எல்லாக் கீரைகளையும் போலவே வெந்தயக் கீரைக் கூட்டையும் பகல் நேர மதிய உணவில் சூடான சாதத்தோடு பிசைந்து உண்பதே செரிமானத்திற்கு உகந்தது. இரவு நேரங்களில் கீரை வகைகளை உண்பதைத் தவிர்த்து, வாரம் இருமுறை மதிய உணவில் இதனைத் தவறாமல் சேர்த்துக் கொள்ளலாம்.",
+        "கீரையோடு ஒருபோதும் தயிரை நேரடியாகச் சேர்த்து உண்ணாமல், முதலில் கீரைக் கூட்டுச் சாதத்தை உண்டு முடித்த பிறகே இறுதியாக மோர் சேர்த்துக் கொள்ள வேண்டும். சர்க்கரை அளவு அதிகம் உள்ளவர்கள் தேங்காயின் அளவைக் குறைத்துப் பூண்டையும் சீரகத்தையும் சற்றுக் கூடுதலாகச் சேர்த்துச் சமைத்துப் பயன் பெறலாம்."
+      ]
+    },
+    {
+      "id": "s5_closing",
+      "badge": "நிறைவு வாழ்த்து",
+      "is_story": false,
+      "paragraphs": [
+        "பெண்களின் இடுப்பு எலும்பும் கருப்பையும் வலிமையாக இருந்தால்தான் அவர்கள் முதுமைக் காலம் வரை யாருடைய துணையுமின்றி ஆரோக்கியமாக நடமாட முடியும். விலையே இல்லாமல் வீட்டிலேயே முளைக்க வைத்துச் சமைக்கக்கூடிய வெந்தயக் கீரை இயற்கை நமக்கு அளித்த அருமையான மருத்துவ உணவாகும்.",
+        "குழந்தைகளுக்கும் கசப்புத் தெரியாத வண்ணம் இந்தப் பாசிப்பருப்புக் கூட்டை நெய் மணக்கச் சமைத்துக் கொடுத்துக் கீரை உண்ணும் பழக்கத்தை உருவாக்குங்கள். உங்கள் இல்லத்துப் பெண்கள் அனைவரும் இடுப்பு வலியின்றி உறுதியான தேக நலத்தோடு வாழ இறைவனை வேண்டுகிறோம்.",
+        "பாரம்பரியக் கீரை உணவுகளைப் போற்றி நலமும் வளமும் நிறைந்த வாழ்வைப் பெறுவோம். உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!"
+      ]
+    }
+  ],
+  "status": "SCRIPT_READY",
+  "youtube_video_id": null,
+  "youtube_url": null
+}

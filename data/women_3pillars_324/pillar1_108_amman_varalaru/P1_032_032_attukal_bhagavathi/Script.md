@@ -1,0 +1,62 @@
+# [P1_032] ஆற்றுக்கால் பகவதி அம்மன் வரலாறு & மகளிர் பொங்கல் வழிபாட்டு மகிமை
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `ஆற்றுக்கால் பகவதி`  
+> **Status**: `SCRIPT_READY`
+
+## அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! பெண்களின் சபரிமலை என்று உலகம் முழுவதும் போற்றப்படும் புண்ணியத் தலம் திருவனந்தபுரத்தில் அமைந்துள்ள ஆற்றுக்கால் பகவதி அம்மன் திருக்கோயில் ஆகும். தாய்மையின் கனிவும், தர்மத்தின் உறுதியும் இணைந்த திருத்தலம் இது.
+
+லட்சக்கணக்கான தாய்மார்கள் ஒரே நேரத்தில் மண்பானையில் பொங்கலிட்டு அன்னையை வழிபடும் ஆற்றுக்கால் பொங்கல் திருவிழா, பெண் குலத்தின் ஒற்றுமைக்கும் பக்திப் பெருக்கிற்கும் மிகச்சிறந்த சாட்சியாகத் திகழ்கிறது. அடுப்புப் புகையே வேள்விப் புகையாக மாறும் அதிசய வைபவம் அது.
+
+பார்வதி தேவியின் அம்சமாகவும், கற்புக்கரசி கண்ணகியின் வடிவமாகவும் போற்றப்படும் ஆற்றுக்கால் அம்மன் எவ்வாறு இத்தலத்தில் எழுந்தருளினாள் என்பதையும், இல்லத்தில் பொங்கலிட்டு வழிபடும் முறையையும் இன்று பக்தியுடன் தியானிப்போம்.
+
+## தல வரலாறு
+
+பலகாலத்திற்கு முன்பு கிள்ளி ஆறும் கரமனை ஆறும் இணையும் பசுமையான ஆற்றுக்கால் பகுதியில், முல்லைவீடு என்ற பழமையான குடும்பத்தின் மூத்த பெரியவர் ஒருவர் ஆற்றில் நீராடித் தினமும் இறைவனை வழிபட்டு வந்தார். அவரின் தூய பக்தி அன்னையை ஈர்த்தது.
+
+ஒருநாள் மாலை நேரத்தில், தெய்வீக ஒளி வீசும் அழகிய சிறுமி ஒருத்தி ஆற்றங்கரையில் தோன்றி, தன்னை ஆற்றைக் கடந்து அக்கரையில் விடும்படி அந்தப் பெரியவரிடம் கேட்டாள். அவரும் மிகுந்த பரிவோடு அச்சிறுமியைத் தன் தோளில் சுமந்து கரையைக் கடந்தார்.
+
+தன் இல்லத்திற்கு அழைத்துச் சென்று உணவளிக்கச் சென்றபோது அச்சிறுமி மறைந்து போனாள். அன்றிரவு பெரியவரின் கனவில் தோன்றிய பகவதி அம்மன், தென்னந்தோப்பில் மூன்று கோடுகள் இருக்கும் இடத்தில் தனக்குக் கோயில் எழுப்புமாறு அருளினாள். அவ்வாறே இத்திருக்கோயில் உருவானது.
+
+## பொங்கல் வழிபாட்டு மகிமை
+
+சிலப்பதிகார நாயகியான கண்ணகி மதுரையில் நீதியை நிலைநாட்டிய பிறகு, கொடுங்கல்லூர் செல்லும் வழியில் ஆற்றுக்கால் தலத்தில் தங்கி இளைப்பாறியதாகத் தல புராணம் கூறுகிறது. சிறுமியாக வந்த அன்னை பாடிய தோற்றம் பாட்டு இன்றும் திருவிழாவில் பாடப்படுகிறது.
+
+மாசி மாத பௌர்ணமியும் பூரம் நட்சத்திரமும் இணையும் நன்னாளில் நடைபெறும் பொங்கல் விழாவில், பெண்கள் மட்டுமே பங்கேற்றுப் புது மண்பானையில் பச்சரிசி, வெல்லம், தேங்காய் சேர்த்து அம்மனுக்குப் பொங்கல் படைக்கிறார்கள். இது அன்னையின் சீற்றம் தணிந்து குளிர்விக்கும் வழிபாடாகும்.
+
+மண்ணால் ஆன பானை நம் உடலையும், அரிசி நம் மனதையும், நெருப்பு பக்தித் தவத்தையும், பொங்கி வரும் இனிப்புப் பொங்கல் இறையருள் பெருக்கையும் குறிக்கிறது. இவ்வழிபாட்டால் குடும்பத்தின் துயரங்கள் நீங்கி சுபீட்சம் உண்டாகும் என்பது அசைக்க முடியாத நம்பிக்கை.
+
+## வழிபாட்டு முறை
+
+ஆற்றுக்கால் செல்ல இயலாத தாய்மார்கள், மாசி மாத பௌர்ணமி அல்லது வெள்ளிக்கிழமைகளில் தங்கள் வீட்டுத் தூய்மையான சமையலறையிலேயே புதுப் பாத்திரத்தில் சர்க்கரைப் பொங்கல் சமைத்து ஆற்றுக்கால் பகவதி அம்மனுக்கு நிவேதனம் செய்யலாம்.
+
+பொங்கல் பானைக்கு மஞ்சள் குங்குமம் இட்டு, மாவிலை கட்டி, கிழக்கு நோக்கி நின்று அன்னையை மனதாரப் பிரார்த்தித்த பிறகே அடுப்பைப் பற்ற வைக்க வேண்டும். பால் பொங்கி வரும்போது குலவையிட்டு, குடும்ப நலனுக்காக வேண்டிக்கொள்வது மங்கல மரபாகும்.
+
+படைத்த இனிப்புப் பொங்கலை அக்கம்பக்கத்துக் குழந்தைகளுக்கும் பெண்களுக்கும் பகிர்ந்து அளிப்பதால் அன்னையின் அருள் பன்மடங்கு பெருகும். கன்னிப் பெண்களுக்கு நல்ல வரன் அமையவும், சுமங்கலிகளின் மாங்கல்ய பலம் நீடிக்கவும் இவ்வழிபாடு பேருதவி புரியும்.
+
+## நிறைவு ஆசி
+
+கரமனை ஆற்றங்கரையில் அருளாட்சி புரியும் ஆற்றுக்கால் பகவதி அம்மனின் தாயன்பு உங்கள் இல்லத்தை என்றும் தழைக்கச் செய்யட்டும். பொங்கி வரும் இனிப்புப் பொங்கலைப் போல உங்கள் வாழ்விலும் மகிழ்ச்சியும் வளமும் பொங்கிப் பெருகட்டும்.
+
+பெண்களின் மன உறுதியையும், குடும்பத்தின் தர்மத்தையும் காத்தருளும் அன்னை பகவதி, உங்கள் வேண்டுதல்கள் அனைத்தையும் கனிவோடு நிறைவேற்றி வைப்பாளாக. தாயின் திருவடிகளைப் போற்றி நலமுடன் வாழ்வோம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Majestic Attukal Bhagavathy temple in Thiruvananthapuram adorned with traditional Kerala carvings and festive flower garlands at sunrise.
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Graceful Tamil and Kerala women dressed in kasavu sarees preparing clay pots peacefully along sunlit temple streets.
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of radiant Attukal Bhagavathy Amman golden face decked with ruby crown, jasmine garlands, and glowing oil lamps.
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Elderly white-haired devotee praying knee-deep in gentle flowing waters of Karamana river surrounded by lush coconut palms.
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Luminous divine little girl wearing silk pavadai standing on misty riverbank asking elder devotee to cross the stream.
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Three sacred glowing lines etched naturally in moist earth beneath swaying coconut trees illuminated by golden dawn rays.
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of traditional earthen pot tied with fresh turmeric plant and mango leaves simmering over brick hearth fire.
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. White milk and raw rice bubbling over the rim of a clay pot as women pray with folded hands.
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Priest sprinkling holy theertham water with flower bunch over rows of sweet pongala pots in joyous daylight.
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Folk singers gently reciting sacred Thottam Pattu songs beside a traditional brass lamp in the temple pavilion.
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker tying fresh yellow turmeric root around a clean brass pot in a bright traditional heritage kitchen.
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden jaggery, grated coconut, cardamom, and ghee stirred lovingly into sweet pongal using a wooden ladle.
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Bowl of warm sweet pongal offered on green banana leaf before brass lamp and red hibiscus flowers at home.
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Smiling mother serving warm sweet pongal prasadam on banana leaves to children and neighbors in a sunny courtyard.
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Evening view of Attukal Bhagavathy temple illuminated with golden lights and traditional brass lamps under calm twilight sky.
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of sacred kumkum, jasmine blossoms, and glowing diya wick beside Goddess Bhagavathy lotus feet.

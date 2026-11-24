@@ -1,0 +1,62 @@
+# [P2_040] இரவு உறக்கமும் நோய் எதிர்ப்பும் தரும் விரலி மஞ்சள் மிளகுப் பால்
+> **தொடர்**: 108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்  
+> **Thumbnail Badge**: `பாட்டி வைத்தியம்` | **Main Title**: `மஞ்சள் மிளகுப் பால்`  
+> **Status**: `SCRIPT_READY`
+
+## முன்னுரை & சிறப்பு
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! நாள் முழுவதும் குடும்பத்திற்காக ஓடியாடி உழைக்கும் பெண்களுக்கு இரவில் ஆழ்ந்த உறக்கமும், வலுவான நோய் எதிர்ப்புச் சக்தியும் மிகவும் அவசியம். இதற்கு நம் அஞ்சறைப்பெட்டி தரும் அற்புதக் கொடையே விரலி மஞ்சள் மிளகுப் பால் ஆகும்.
+
+மங்கலத்தின் அடையாளமான மஞ்சளும், காரசாரமான குருமிளகும் இணையும்போது அது வெறும் பானமாக இல்லாமல் ஒரு சஞ்சீவி மருந்தாக மாறுகிறது. நம் பாட்டிமார்கள் பருவநிலை மாறும் காலங்களில் வீட்டில் உள்ள அனைவருக்கும் இதனைத் தவறாமல் காய்ச்சிக் கொடுப்பார்கள்.
+
+உடல் அலுப்பைப் போக்கி, சுவாசப் பாதையைத் தூய்மைப்படுத்தி, நிம்மதியான உறக்கத்தை வரவழைக்கும் இந்தத் தங்கப் பாலின் மருத்துவ இரகசியத்தையும், அதனைச் சரியான முறையில் காய்ச்சும் பக்குவத்தையும் இன்று நாம் விரிவாக அறிந்து கொள்வோம்.
+
+## பாட்டி வைத்திய அறிவியல்
+
+விரலி மஞ்சளில் உள்ள இயற்கையான வேதிப்பொருள் உடலின் உள்ளுறுப்புகளில் ஏற்படும் உள் வீக்கங்களைக் குணப்படுத்தும் ஆற்றல் கொண்டது. ஆனால் மஞ்சளைத் தனியாக உட்கொள்ளும்போது நம் உடல் அதனை முழுமையாக உறிஞ்சிக்கொள்ள முடிவதில்லை என்பது குறிப்பிடத்தக்க அறிவியல் உண்மையாகும்.
+
+இங்குதான் நம் முன்னோர்களின் சித்த மருத்துவ ஞானம் வியக்க வைக்கிறது. புதிதாக இடித்த கருப்பு மிளகை மஞ்சளுடன் சேர்க்கும்போது, மஞ்சளின் மருத்துவக் குணத்தை நம் உடல் உறிஞ்சும் திறன் இருபது மடங்கு அதிகரிக்கிறது. பத்து மிளகு இருந்தால் பகைவன் வீட்டிலும் உண்ணலாம் என்ற பழமொழி இதற்குச் சான்று.
+
+பசும்பாலில் உள்ள நல்ல கொழுப்புச் சத்து மஞ்சள் மற்றும் மிளகின் சத்துக்களைத் திசுக்களின் ஆழம் வரை கொண்டு செல்கிறது. இது பெண்களின் மூட்டு வலியைத் தணித்து, தொண்டைப் புண்ணை ஆற்றி, இரவில் அமைதியான ஆழ்ந்த உறக்கத்தை இயற்கையாகவே தருகிறது.
+
+## பாரம்பரிய செய்முறை
+
+இந்த மருந்துப் பால் தயாரிக்கக் கடைகளில் வாங்கும் சமையல் மஞ்சள் தூளைவிட, நாட்டு மருந்துக் கடைகளில் கிடைக்கும் நன்கு காய்ந்த விரலி மஞ்சளை வாங்கி, வீட்டிலேயே இடித்துச் சலித்து வைத்துக்கொள்வது மிகச்சிறந்த பலனைத் தரும்.
+
+அடி கனமான பாத்திரத்தில் ஒரு குவளை சுத்தமான நாட்டுப் பசும்பாலுடன் கால் குவளை தண்ணீர் சேர்த்து மிதமான தீயில் காய்ச்ச வேண்டும். பால் பொங்கி வரும்போது கால் தேக்கரண்டி விரலி மஞ்சள் பொடியைச் சேர்த்து நன்றாகக் கலக்கிவிட வேண்டும்.
+
+இப்போது நான்கு அல்லது ஐந்து கருப்பு மிளகை உரலில் இட்டு ஒன்றிரண்டாகப் புதிதாகத் தட்டிப் பாலில் சேர்க்க வேண்டும். அதனுடன் தட்டிய ஒரு சிறிய ஏலக்காயும் சேர்த்து மூன்று நிமிடங்கள் சிறு தீயில் கொதிக்கவிட்டு இறக்கி, பனங்கற்கண்டு சேர்த்து ஆற்ற வேண்டும்.
+
+## இல்லறப் பயன்பாட்டு முறை
+
+இரவு உணவு உண்ட பிறகு சுமார் ஒரு மணி நேரம் கழித்து, உறங்கச் செல்வதற்கு முன்பாக இந்த மஞ்சள் மிளகுப் பாலை வெதுவெதுப்பான சூட்டில் பருகுவது மிகவும் சிறந்தது. வெள்ளைச் சர்க்கரைக்குப் பதிலாகப் பனங்கற்கண்டு அல்லது நாட்டுச் சர்க்கரை பயன்படுத்துங்கள்.
+
+மழைக்காலம் மற்றும் பனிக்காலங்களில் சிறுவர்கள் முதல் பெரியவர்கள் வரை அனைவரும் இதனைப் பருகலாம். மிளகை முன்னரே பொடித்து வைப்பதைவிட, பால் காய்ச்சும்போது புதிதாகத் தட்டிப் போடுவதால் அதிலுள்ள நறுமண எண்ணெய்ச் சத்து வீணாகாமல் முழுமையாகக் கிடைக்கும்.
+
+உடல் உஷ்ணம் மிக அதிகமாக உள்ளவர்கள் இதில் ஒரு சிட்டிகை சுத்தமான பசு நெய் சேர்த்துப் பருகினால், மிளகின் காரத்தன்மை சமன்பட்டுத் தொண்டைக்கு இதமான மென்மை கிடைக்கும். பாலை வடிகட்டி நிதானமாகச் சுவைத்துக் குடிக்க வேண்டும்.
+
+## நிறைவு ஆசீர்வாதம்
+
+நம் பாரம்பரிய சமையலறையில் ஒளிந்திருக்கும் இத்தகைய எளிய மருத்துவ முறைகளைப் பின்பற்றி வந்தால், பருவகாலத் தொற்றுகளிலிருந்து நம் குடும்பத்தை மிக எளிதாகப் பாதுகாத்துக் கொள்ளலாம். ஆழ்ந்த உறக்கமே மறுநாளின் உற்சாகத்திற்கு அடிப்படை.
+
+எல்லாம் வல்ல இறைவனின் திருவருளால் உங்கள் இல்லத்தில் உள்ள அனைவருக்கும் நீடித்த ஆயுளும், குறையாத நோய் எதிர்ப்புச் சக்தியும், இனிய உறக்கமும் நிலைத்திருக்க மனதார வாழ்த்துகிறோம். மஞ்சளின் மங்கலம் என்றும் உங்கள் வாழ்வில் நிறையட்டும்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional South Indian woman in soft cotton saree simmering golden turmeric milk in brass saucepan under warm evening lamp light
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close up of dried whole virali turmeric fingers and shiny whole black peppercorns in antique wooden spice box compartments
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Steaming brass tumbler and davara of golden turmeric pepper milk resting beside crystalline palm candy on carved wooden tray
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Dried golden turmeric rhizomes broken open revealing deep saffron orange core beside whole black pepper on banana leaf
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Hands crushing whole black peppercorns freshly inside a small granite stone mortar and pestle in traditional kitchen
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden milk swirling gently in heavy bottomed brass vessel as turmeric and freshly crushed black pepper infuse together
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Woman pounding sun dried virali turmeric roots in a traditional stone mortar and sieving fine golden powder into glass jar
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Fresh farm cow milk coming to a gentle frothy boil inside a traditional tin lined brass milk pot over low flame
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Adding a pinch of bright virali turmeric powder, freshly cracked black pepper, and crushed green cardamom into simmering milk
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Crystals of natural translucent palm sugar dissolving into warm strained golden milk poured back and forth in brass davara
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mother handing a warm brass cup of soothing golden milk to her family in peaceful lamp lit living room before bedtime
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Raindrops outside a traditional wooden window while warm steaming turmeric pepper milk sits invitingly on indoor table
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Small drop of pure golden cow ghee melting delicately onto the surface of warm spiced turmeric milk in brass cup
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Peaceful South Indian bedroom with soft cotton bedding and calm elders resting soundly in serene night ambiance
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Auspicious turmeric roots, kumkum, and glowing brass oil lamp arranged neatly in serene household prayer corner
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm golden glow illuminating an antique wooden anjaraipetti spice box filled with healing Tamil kitchen spices

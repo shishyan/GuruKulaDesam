@@ -1,0 +1,62 @@
+# [P1_068] சென்னை காளிகாம்பாள் அம்மன் வரலாறு & வீரமும் வெற்றியும் தரும் தாய்
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `காளிகாம்பாள் அருள்`  
+> **Status**: `SCRIPT_READY`
+
+## மங்கல முன்னுரை
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! பரபரப்பான நகர வாழ்க்கைக்கு நடுவே நம் மனத்திற்குத் துணிச்சலையும் வாழ்வில் வெற்றியையும் அள்ளித் தரும் அற்புத ஆலயமாகச் சென்னை தம்புச் செட்டித் தெரு ஸ்ரீ காளிகாம்பாள் திருக்கோயில் திகழ்கிறது.
+
+மனத்துள் எழும் அச்சம் என்பதை அடியோடு போக்கி, நேர்மையான அறவழியில் நடக்கும் குடும்பங்களுக்குக் கவசமாக விளங்கும் இந்த அன்னை, காமடேஸ்வரர் சமேத காளிகாம்பாளாகக் கனிந்த திருமுகத்தோடு அருள்பாலிக்கிறாள்.
+
+வீர மன்னர் சத்ரபதி சிவாஜி முதல் மகாகவி சுப்பிரமணிய பாரதியார் வரை போற்றி வணங்கிய சென்னை காளிகாம்பாளின் தொன்மையான வரலாற்றை இன்று நாம் பெருமிதத்தோடு விரிவாகத் தரிசிக்கப் போகிறோம்.
+
+## தல புராண வரலாறு
+
+பண்டைய காலத்தில் சென்னை கடற்கரையை ஒட்டிய அழகிய நெய்தல் நிலப் பகுதியில் கோயில் கொண்டிருந்த இந்த அம்பிகையை, மீனவப் பெருமக்களும் விஸ்வகர்ம சிற்பக் கலைஞர்களும் கண்கண்ட குலதெய்வமாகப் போற்றி வழிபட்டு வந்தார்கள்.
+
+பிற்காலத்தில் கடற்கரைப் பகுதியில் வணிகக் கோட்டை கட்டப்பட்டபோது, ஊர் பக்தர்கள் மிகுந்த ஆகம விதிப்படி அன்னையைத் தற்போதுள்ள தம்புச் செட்டித் தெரு திருத்தலத்திற்கு எழுந்தருளச் செய்து கம்பீரமான ஆலயம் எழுப்பினார்கள்.
+
+காளி என்ற திருநாமம் இருந்தாலும் சிறிதும் உக்கிரம் இல்லாமல், புனிதமான அர்த்தமேரு ஸ்ரீசக்கரத்தின் மேல் பத்மாசனத்தில் அமர்ந்து சாந்த சொரூபினியாகக் காளிகாம்பாள் மேற்குத் திசை நோக்கி அருள்புரிகிறாள்.
+
+## வீரமும் கவிதையும் போற்றிய தாய்
+
+வீரத்தின் திருவுருவமான மராட்டிய மன்னர் சத்ரபதி சிவாஜி தென்னகப் பயணம் மேற்கொண்டபோது, இரகசியமாக இத்தலத்திற்கு நேரில் வந்து காளிகாம்பாளை வழிபட்டுத் தர்மப் போர் வெற்றிக்கான ஆசியைப் பெற்றார் என்பது வரலாற்றுச் சிறப்பாகும்.
+
+அதேபோல் நாட்டு மக்களிடையே விடுதலைக் கனலைத் தன் பாட்டுத் திறத்தால் மூட்டிய மகாகவி சுப்பிரமணிய பாரதியார், சென்னையில் வாழ்ந்த காலத்தில் தினமும் இவ்வாலயத்திற்கு வந்து காளிகாம்பாளின் சந்நிதியில் மெய்மறந்து நின்று பாடினார்.
+
+யாதுமாகி நின்றாய் காளி எங்கும் நீ நிறைந்தாய் என்ற காலத்தால் அழியாத பாடல் வரிகள், இந்தத் தாயின் கருணை பொங்கும் விழிகளைத் தரிசித்தபோதே பாரதியாரின் உள்ளத்தில் அருவியாய் ஊற்றெடுத்தன.
+
+## இல்லற வழிபாட்டு முறை
+
+முக்கியத் தேர்வு எழுதும் பிள்ளைகள், புதிய தொழில் தொடங்கும் முயற்சியில் உள்ளவர்கள் மற்றும் மனத் தயக்கம் கொண்ட பெண்கள் காளிகாம்பாளை நினைத்து வழிபட்டால் தன்னம்பிக்கை பன்மடங்கு உயரும்.
+
+செவ்வாய் மற்றும் வெள்ளிக்கிழமைகளில் நமது இல்லத்துப் பூஜை அறையில் செம்பருத்தி அல்லது செவ்வரளி மலர்களால் அம்மன் திருப்படத்தை அலங்கரித்து, மணக்கும் பசு நெய் தீபம் ஏற்றி வழிபடலாம்.
+
+இனிப்பான பால் பாயசம் அல்லது கல்கண்டு நைவேத்தியம் படைத்து, மகாகவி பாரதியாரின் காளி தோத்திரப் பாடல்களைக் குடும்பத்தோடு இனிய குரலில் பாடினால் இல்லத்தில் சோர்வு நீங்கிப் புது உற்சாகம் பிறக்கும்.
+
+## மங்கல நிறைவுரை
+
+தாய்மையின் குளிர்ந்த மென்மையும் துர்க்கையின் நிகரற்ற வீரமும் இணைந்த காளிகாம்பாளின் அருள் நமக்குத் துணையிருந்தால், வாழ்வின் எந்தச் சவாலையும் புன்னகையோடு எதிர்கொண்டு வெற்றி வாகை சூடலாம்.
+
+ஸ்ரீ காமடேஸ்வரர் உடனுறை காளிகாம்பாளின் பரிபூரண திருவருளால் உங்கள் இல்லத்துப் பெண்களுக்கும் பிள்ளைகளுக்கும் சிறந்த கல்வியும், நேர்மையும், உயர்ந்த வெற்றியும் கிட்டட்டும் என்று மனதார வாழ்த்துகிறோம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Zoomed chest up view of serene Goddess Kalikambal in red silk saree with lotus flowers and solid gold crown, radiant compassionate smile, widescreen glow
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Grand colourful raja gopuram of Chennai Kalikambal Kamateswarar temple rising majestically in morning sunlight, traditional Tamil architecture, widescreen establishing shot
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ancient Coromandel coastline at dawn with wooden fishing boats and distant historic coastal shrine bathed in golden sea breeze light, widescreen view
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Artistic sacred Sri Chakra Meru yantra in polished brass glowing softly beneath lotus pedestal inside carved granite sanctum, widescreen detail shot
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Four armed peaceful idol of Goddess Kalikambal seated gracefully in padmasana holding red lotus buds, Pasha, and Ankusha in warm lamp light
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Historical depiction of noble Maratha king Chhatrapati Shivaji bowing with joined hands before glowing Amman sanctum in traditional royal attire, widescreen shot
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mahakavi Subramania Bharathiyar in white turban and coat standing inspired with devotional fervour inside pillared South Indian temple hall, widescreen cinematic scene
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ornate silver chariot of Kalikambal temple gleaming under warm festival lamps inside carved mandapam, fragrant jasmine garlands draped neatly, widescreen view
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devotees offering garlands of red hibiscus and fragrant malligai flowers at brass threshold of Amman shrine, serene atmosphere, widescreen shot
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close view of temple priest waving glowing five tiered brass camphor aarti before sanctum, golden sparks of light, widescreen devotional shot
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional Tamil home study and pooja corner where mother lights brass lamp while young daughter holds textbooks with calm confidence, widescreen shot
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Fresh red hibiscus flowers, rock sugar kalkandu in silver bowl, and glowing ghee lamp arranged on clean banana leaf at home altar
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker singing devotional Bharathiyar hymns from Tamil songbook before framed Kalikambal portrait, warm morning window light, widescreen view
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close shot of sacred vermilion kumkum tilak applied gently on forehead of smiling young Tamil girl by her mother, widescreen affectionate moment
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sunlit South Indian household filled with warmth as family elders bless children before important day, brass lamp glowing in background, widescreen shot
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Peaceful close view of blooming red lotus beside golden feet of Goddess Kalikambal in soft camphor illumination, widescreen closing shot

@@ -1,0 +1,62 @@
+# [P1_069] பழனி ஊர்க்கோயில் பெரியநாயகி அம்மன் வரலாறு & முருகனுக்கு வேல் தந்த தாய்
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `பெரியநாயகி அம்மன்`  
+> **Status**: `SCRIPT_READY`
+
+## மங்கல முன்னுரை
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! ஒவ்வொரு குழந்தையின் உயர்ந்த வெற்றிக்குப் பின்னாலும் ஒரு தாயின் தன்னலமற்ற தியாகமும் ஆசியும் மறைந்திருக்கும் என்ற பேருண்மையை உணர்த்தும் திருத்தலமே பழனி ஊர்க்கோயில் ஸ்ரீ பெரியநாயகி அம்மன் ஆலயம் ஆகும்.
+
+பழனி மலை தண்டாயுதபாணி சுவாமியைத் தரிசிக்கச் செல்லும் பக்தர்கள் அனைவரும், ஊரின் நடுவே வீற்றிருக்கும் அவருடைய அன்புத் தாயான பெரியநாயகி அம்மனையும் முதலில் வணங்கும்போதுதான் வழிபாடு முழுமை பெறுகிறது.
+
+சூரசம்ஹாரப் போருக்குப் புறப்பட்ட தன் அன்பு மகன் முருகப்பெருமானுக்கு, வெற்றியைத் தரும் சக்தி வேலைப் பரிசளித்த இந்த அன்னையின் புராண வரலாற்றை இன்று நாம் பக்தியோடு விரிவாகக் காண்போம்.
+
+## தல புராண வரலாறு
+
+பண்டைய சேர மன்னர்களாலும் பாண்டிய மன்னர்களாலும் போற்றித் திருப்பணி செய்யப்பட்ட பழனி ஊர்க்கோயிலில், ஸ்ரீ கைலாசநாதர் உடனுறை பெரியநாயகி அம்மன் கிழக்குத் திசை நோக்கித் தனிப்பெரும் கருணையோடு எழுந்தருளியுள்ளாள்.
+
+சூரபத்மனின் கொடுமையிலிருந்து தேவர்களைக் காக்க முருகப்பெருமான் தேவர் சேனைத் தலைவராகப் புறப்பட்டபோது, அன்னை பார்வதி தன் தவ வலிமை அனைத்தையும் ஒன்றாகத் திரட்டி ஒளிவீசும் சக்தி வேலை உருவாக்கினாள்.
+
+அந்த இணையற்ற ஞான சக்தி வேலை முருகப்பெருமானின் திருக்கரங்களில் அன்போடு வழங்கி, மகனே தர்மம் வெல்லட்டும் என்று உச்சி முகர்ந்து ஆசீர்வதித்த புண்ணிய பூமியே இந்தப் பெரியநாயகி அம்மன் திருத்தலமாகும்.
+
+## தைப்பூசத் தாய்மை மகிமை
+
+இக்கோயிலில் தந்தை கைலாசநாதர், அன்னை பெரியநாயகி அம்மன் மற்றும் மகன் முத்துக்குமாரசுவாமி ஆகிய மூவரும் புனிதமான சோமாஸ்கந்தத் தத்துவத்தை விளக்கும் வண்ணம் தனித்தனி சந்நிதிகளில் வரிசையாகக் காட்சி தருவது கண்கொள்ளாக் காட்சியாகும்.
+
+தைப்பூசத் திருவிழாவின் போது பழனி மலையோடு இணைந்து இந்த ஊர்க்கோயிலிலும் கொடியேற்றம் நடைபெற்று, முத்துக்குமாரசுவாமி வள்ளி தெய்வானையோடு திருத்தேரில் வீதி உலா வரும் வைபவம் வெகு சிறப்பாகக் கொண்டாடப்படுகிறது.
+
+தாய் சொல்லை ஒருபோதும் தட்டாத பிள்ளையாக முருகன் திகழ்வதால், பெரியநாயகி அம்மனிடம் நாம் வைக்கும் விண்ணப்பங்களை முருகப்பெருமான் உடனே நிறைவேற்றி வைப்பார் என்பது பக்தர்களின் அசைக்க முடியாத நம்பிக்கையாகும்.
+
+## இல்லற வழிபாட்டு முறை
+
+நம் வீட்டுப் பிள்ளைகளின் கல்வி வளர்ச்சி, நன்னடத்தை மற்றும் உயர்ந்த வேலைவாய்ப்பிற்காகப் பிரார்த்திக்கும் தாய்மார்கள், செவ்வாய் அல்லது வெள்ளிக்கிழமைகளில் பெரியநாயகி அம்மனையும் முருகனையும் இணைத்து வழிபட வேண்டும்.
+
+வீட்டுப் பூஜை அறையில் நெய் விளக்கேற்றி, அம்மனுக்கு வாசனை மல்லிகை மலரும் முருகப்பெருமானுக்குச் செவ்வரளி மலரும் சூட்டி, பாலும் தேனும் கலந்த பஞ்சாமிருதம் அல்லது இனிப்புப் பழங்களைப் படைக்கலாம்.
+
+வெற்றித் திருவேலை வழங்கிய பெரியநாயகித் தாயே, எங்கள் பிள்ளைகளுக்கும் சிறந்த அறிவுக் கூர்மையையும் நேர்மையான பாதையில் செல்லும் மன வலிமையையும் தந்தருள்வாய் என்று உருக்கமாகப் பிரார்த்தனை செய்யலாம்.
+
+## மங்கல நிறைவுரை
+
+பெற்ற தாயின் ஆசீர்வாதமே உலகின் மிகப்பெரிய பாதுகாப்புக் கவசம் என்பதை உலகுக்கு உணர்த்தும் பெரியநாயகி அம்மன், நம் குடும்ப உறவுகளுக்குள் ஆழ்ந்த அன்பையும் ஒற்றுமையும் வளர்த்தருள்கிறாள்.
+
+பழனிப் பதியாளும் பெரியநாயகித் தாயின் திருவருளாலும் கந்தவேளின் கருணையாலும் உங்கள் இல்லத்தில் சிறந்த அறிவும் ஆற்றலும் மங்கலச் செல்வங்களும் எந்நாளும் பெருகிட மனதார வாழ்த்துகிறோம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Zoomed chest up view of Goddess Periyanayaki Amman bestowing radiant solid gold Sakthi Vel with maternal grace, emerald silk saree, widescreen glow
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Historic stone gopuram of Palani Town Periyanayaki Amman temple with scenic Palani hill shrine visible in golden morning distance, widescreen establishing shot
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Intricately carved Nayak era granite pillars inside grand mandapam of Periyanayaki Amman temple bathed in warm slanted sunlight, widescreen architectural view
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Divine Purana scene of Goddess Parvati presenting luminous golden Sakthi Vel to young warrior Lord Murugan amidst celestial glow, widescreen devotional art
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Graceful sanctum view of Goddess Periyanayaki Amman in green silk saree adorned with jasmine garlands and golden jewels, flickering oil lamps, widescreen shot
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred Somaskanda shrine arrangement with brass lamps illuminating Kailasanathar, Periyanayaki Amman, and Muthukumaraswamy sanctum entrances in serene temple corridor
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Grand Thaipoosam festival silver chariot carrying Muthukumaraswamy with Valli and Deivanai decked in colourful flower garlands through Palani temple street, widescreen view
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Shining brass Sakthi Vel anointed with sandalwood paste, kumkum, and fragrant rose petals standing beside sanctum lamp, widescreen close detail shot
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devoted Tamil mothers with children praying together with folded hands inside peaceful stone mandapam of Palani town temple, widescreen shot
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Temple priest offering sacred vibhuti and fragrant jasmine prasadam on banana leaf beside glowing brass kuthu vilakku, warm lighting, widescreen view
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional Tamil home pooja room featuring framed portraits of Goddess Amman and Lord Murugan with small brass Vel and lit ghee lamps
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Fresh white jasmine garlands, red oleander flowers, and ripe bananas with honey fruit prasadam arranged neatly on brass plate at home altar
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Affectionate Tamil mother applying sacred vibhuti on her son forehead before school while brass lamp glows softly in pooja room background
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close shot of glowing five wicked brass oil lamp illuminating miniature golden Vel on sandalwood stand in serene home shrine, widescreen view
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Peaceful South Indian family gathered in sunlit courtyard home sharing sweet fruit prasadam with joyful expressions of harmony, widescreen shot
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden sunset rays silhouetting Palani hill and Periyanayaki Amman temple tower under tranquil amber sky, widescreen devotional closing shot

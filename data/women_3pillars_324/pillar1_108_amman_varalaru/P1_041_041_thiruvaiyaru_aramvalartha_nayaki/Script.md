@@ -1,0 +1,62 @@
+# [P1_041] திருவையாறு அறம்வளர்த்த நாயகி வரலாறு & இரு நாழி நெல் அதிசயம்
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `அறம்வளர்த்த நாயகி`  
+> **Status**: `SCRIPT_READY`
+
+## திருத்தல அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! காவிரி தாய் ஐந்து கிளைகளாகப் பிரிந்து பாயும் சோழ வளநாட்டின் நடுநாயகமாகத் திகழும் திருவையாறு திருத்தலத்தில், தர்மத்தின் தலைவியாக அன்னை அறம்வளர்த்த நாயகி எழுந்தருளி அருள்பாலிக்கிறாள்.
+
+ஒரு குடும்பம் தழைக்க வேண்டுமானால் அங்கே விருந்தோம்பலும் தர்ம சிந்தனையும் சிறக்க வேண்டும். இல்லத்தரசிகளின் கையால் பரிமாறப்படும் அன்னம் வற்றாத அட்சய பாத்திரமாக மாற அருள்புரியும் தாய் இவளே.
+
+ஐயாறப்பர் எனப்படும் பஞ்சநதீஸ்வரப் பெருமானின் தர்மபத்தினியாக நின்று, இல்லத்தில் வறுமை நீங்கி தானிய வளமும் செல்வச் செழிப்பும் பெருகச் செய்யும் கருணைத் தெய்வமாக இத்தலத்து அம்பிகை போற்றப்படுகிறாள்.
+
+## இரு நாழி நெல் அதிசயம்
+
+உலக உயிர்கள் உய்யக் காஞ்சிபுரத்தில் காமாட்சியாகத் தவம் புரிந்த அம்பிகை, திருவையாற்றிலும் முப்பத்தி இரண்டு வகையான அறங்களையும் வளர்க்க ஈசனிடம் அனுமதி வேண்டினாள் என்று தல புராணம் விவரிக்கிறது.
+
+அப்போது ஐயாறப்பர் புன்னகை பூத்து, உலகம் முழுவதற்கும் தர்மம் செய்ய வெறும் இரு நாழி நெல்லை மட்டுமே அம்பிகையின் திருக்கரங்களில் வழங்கி, இதை வைத்து அறம் வளர்ப்பாயாக என்று திருவாய் மலர்ந்தார்.
+
+அன்னை அறம்வளர்த்த நாயகி தன் கருணைத் திறத்தால் அந்த இரு நாழி நெல்லைக் கொண்டே, பசித்து வந்த உயிர்களுக்கெல்லாம் அன்னமிட்டு முப்பத்தி இரண்டு தர்மங்களையும் குறைவின்றி நடத்திய அதிசயம் நிகழ்ந்தது.
+
+## பஞ்ச நதிகளும் அப்பர் தரிசனமும்
+
+காவிரி, கொள்ளிடம், குடமுருட்டி, வெண்ணாறு, வெட்டாறு ஆகிய ஐந்து புண்ணிய நதிகளும் பாய்வதால் திருவையாறு என்ற அழகிய தமிழ்ப் பெயர் இத்தலத்திற்கு அமைந்தது. வில்வ மரம் இத்தலத்தின் புனித விருட்சமாகும்.
+
+திருநாவுக்கரசு சுவாமிகள் கயிலாய தரிசனம் காண விழைந்தபோது, ஈசன் அவரைத் திருவையாற்றுக் குளத்தில் மூழ்கி எழச் செய்து, அங்கே அசையும் உயிர்களெல்லாம் சிவசக்தி வடிவமாகக் காட்சியளித்த ஒப்பற்ற தலம் இதுவாகும்.
+
+மாதர் பிறைக் கண்ணியானை மலையான் மகளொடும் பாடி என்று அப்பர் பெருமான் போற்றிய இத்தலத்தில், தைப்பூசம் மற்றும் சித்திரைத் திருவிழாக்களில் ஐந்து ஊர்ப் பெருமான்களும் எழுந்தருளும் சப்தஸ்தான விழா மிகவும் புகழ்பெற்றது.
+
+## இல்லத்து வழிபாட்டு முறை
+
+நமது இல்லத்தில் அன்னபூரணி மற்றும் அறம்வளர்த்த நாயகியின் அருள் நிலைக்க, வெள்ளிக்கிழமை தோறும் சமையலறையைத் தூய்மைப்படுத்தி, அரிசிப் பானையில் மஞ்சள் குங்குமம் இட்டு நிறை நாழி நெல் வைத்து வணங்கலாம்.
+
+தயிர் அன்னம் அல்லது பால் பொங்கல் சமைத்து அம்பிகைக்குப் படைத்த பின்னர், காகத்திற்கும் பறவைகளுக்கும் உணவிட்டு, பசித்தோருக்கு ஒரு கைப்பிடி அன்னமாவது பகிர்ந்து உண்ணும் பழக்கத்தை இல்லத்தில் வளர்க்க வேண்டும்.
+
+இவ்வாறு இரு நாழி நெல் தத்துவத்தை உணர்ந்து இல்லத்தரசிகள் அன்போடு விருந்தோம்பல் செய்தால், அந்த வீட்டில் என்றென்றும் தானியக் குறைவோ பணப் பற்றாக்குறையோ ஏற்படாது என்பது சத்தியமான உண்மையாகும்.
+
+## மங்கள ஆசீர்வாதம்
+
+இரு நாழி நெல்லைக் கொண்டு அகிலத்திற்கே அன்னமிட்ட திருவையாற்று அறம்வளர்த்த நாயகி, உங்கள் சமையலறையிலும் பூஜை அறையிலும் நிறைந்து நின்று வற்றாத சுபிட்சத்தை அருள்வாள்.
+
+ஐயாறப்பர் மற்றும் அன்னை அறம்வளர்த்த நாயகியின் பரிபூரண நல்லாசியால் உங்கள் இல்லத்தில் தன தானிய சம்பத்துகளும், தர்ம சிந்தனையும், ஆரோக்கியமும், மகிழ்ச்சியும் தலைமுறை தோறும் தழைத்தோங்க மனதாரப் பிரார்த்திக்கிறோம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Lush green paddy fields beside the flowing Kaveri river with Thiruvaiyaru Aiyarappar temple gopurams glowing in golden morning sun.
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Standing sanctum idol of Goddess Aramvalartha Nayaki in parrot green silk saree and solid gold ornaments radiating maternal abundance.
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional Tamil joint family sharing a warm meal on banana leaves in an ancestral courtyard home with brass lamps.
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Divine puranic scene of Lord Shiva smilingly placing two brass measures of golden paddy grains into Goddess Parvati hands.
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Goddess Aramvalartha Nayaki graciously distributing steaming food from an inexhaustible golden vessel to sages, women, and children in temple mandapam.
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Overflowing brass marakkal measure of golden paddy grains surrounded by blooming lotus flowers, turmeric roots, and glowing oil lamps.
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Aerial view of fertile Kaveri delta waterways branching gracefully across emerald groves around ancient Chola temple towers.
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Saint Appar emerging with tears of bliss from the sacred temple tank beholding pairs of swans and elephants in divine light.
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Grand Sapthasthanam festival palanquin decorated with fragrant jasmine and marigold garlands carried along Thiruvaiyaru temple street.
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker in a traditional heritage kitchen decorating a brass rice storage pot with sandalwood paste and red kumkum.
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional brass measure filled to the brim with raw paddy grains and a jaggery piece placed before home shrine.
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Freshly cooked creamy milk pongal in a bronze uruli garnished with roasted cashews offered beside a glowing ghee lamp.
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Kind Tamil grandmother placing cooked rice on a stone ledge for birds in a sunlit courtyard garden.
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden harvest paddy sheaves swaying gently in the warm breeze near Kaveri river ghats at sunset.
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Evening camphor aarti illuminating the carved stone pillars of Dharmasamvardhini shrine at Thiruvaiyaru temple.
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm closeup of Goddess Aramvalartha Nayaki benevolent eyes and solid gold crown glowing softly amidst sacred incense mist.

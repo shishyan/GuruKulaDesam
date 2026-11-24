@@ -11,13 +11,13 @@ import sys
 import time
 from pathlib import Path
 
-sys.path.insert(0, "/home/shishyan/GitHub/Shishyan/GuruKulaDesam/tools")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from publish_daily_gkd_community_post import publish_via_cdp
 
-OUT_ROOT = Path("/home/shishyan/GoogleDrive_GuruKulaDesam/Assets/thirukkural-1330-categorized")
+OUT_ROOT = Path.home() / "GoogleDrive_GuruKulaDesam" / "Assets" / "thirukkural-1330-categorized"
 INDEX_JSON = OUT_ROOT / "THIRUKKURAL_1330_INDEX.json"
 RECEIPTS_JSON = OUT_ROOT / "published_batches.json"
-LEGACY_POSTS_ROOT = Path("/home/shishyan/GoogleDrive_GuruKulaDesam/Assets/thirukkural-133-posts")
+LEGACY_POSTS_ROOT = Path.home() / "GoogleDrive_GuruKulaDesam" / "Assets" / "thirukkural-133-posts"
 
 
 def ensure_two_images(entry: dict) -> list[Path]:

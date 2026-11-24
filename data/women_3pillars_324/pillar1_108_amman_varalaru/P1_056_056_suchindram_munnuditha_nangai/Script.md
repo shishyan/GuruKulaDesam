@@ -1,0 +1,62 @@
+# [P1_056] சுசீந்திரம் முன்னுதித்த நங்கை வரலாறு & அனுசூயா தேவியின் கற்பு நெறி
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `முன்னுதித்த நங்கை`  
+> **Status**: `SCRIPT_READY`
+
+## மங்கல அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! குமரி மண்ணின் புண்ணியத் தலமான சுசீந்திரத்தில் அருளாட்சி புரியும் முன்னுதித்த நங்கை அம்மனின் தெய்வீக வரலாற்றையும், கற்பின் அரசியான அனுசூயா தேவியின் தவப் பெருமையையும் இன்று நாம் தரிசிக்கப் போகிறோம்.
+
+மும்மூர்த்திகளும் ஒருங்கே இணைந்த தாணுமாலயப் பெருமான் எழுந்தருளும் முன்னரே, ஆதிசக்தியாகத் தோன்றி அருளியதால் இத்தாய்க்கு முன்னுதித்த நங்கை என்ற திருநாமம் அமைந்தது. குடும்பப் பெண்களின் மன உறுதியையும் மாங்கல்ய பலத்தையும் காக்கும் ஒப்பற்ற அன்னையாக இவள் விளங்குகிறாள்.
+
+கணவன் மனைவி ஒற்றுமையையும் இல்லறத் தூய்மையையும் போற்றும் நம் தமிழ் மரபில், சுசீந்திரம் திருத்தலம் பெண்களுக்குப் பெரும் ஆன்மிகக் கவசமாகத் திகழ்கிறது. அன்னையின் கருணை வெள்ளத்தில் நனைந்து நம் இல்லங்களில் அமைதியும் மங்கலமும் பெருகப் பிரார்த்திப்போம்.
+
+## தல வரலாறு
+
+பழங்காலத்தில் ஞானக் கடலான அத்திரி முனிவரும், அவரது பதிவிரதை மனைவியான அனுசூயா தேவியும் சுசீந்திரத்தில் அமைந்திருந்த ஞானாரண்யம் என்ற வனத்தில் கடும் தவம் இயற்றி வந்தனர். அவர்களது இல்லற தர்மம் மூவுலகங்களையும் வியப்பில் ஆழ்த்தியது.
+
+அச்சமயம் விண்ணுலகை ஆண்ட இந்திரன் தன் சாபம் நீங்கித் தூய்மை பெற்ற தலம் என்பதால், இப்பகுதி சுசீந்திரம் என்ற புண்ணியப் பெயரைப் பெற்றது. பழையாறு நதிக்கரையில் அமைந்த இத்தலத்தில் வேத முழக்கங்களும் வேள்விப் புகையும் எப்போதும் நிறைந்திருந்தன.
+
+ஒருமுறை இப்பூமியில் கடும் வறட்சி நிலவியபோது, அனுசூயா தேவி தன் கற்பின் வலிமையால் வானிலிருந்து நீரை வரவழைத்து உயிர்களைக் காத்தாள். அப்பெருமாட்டியின் தூய பக்தியை உலகறியச் செய்யப் பிரம்மா, விஷ்ணு, சிவன் ஆகிய மும்மூர்த்திகளும் திருவுளம் கொண்டனர்.
+
+## அனுசூயா மகிமை
+
+மும்மூர்த்திகளும் முதிய அந்தணர் வடிவம் தாங்கி அத்திரி முனிவரின் ஆசிரமத்திற்கு வந்து பசி தீர்க்க உணவளிக்குமாறு வேண்டினர். விருந்தோம்பல் தர்மத்தை உயிராகப் போற்றிய அனுசூயா தேவி, அவர்களை இன்முகத்துடன் வரவேற்று உணவிடத் தயாரானாள்.
+
+வந்தவர்கள் வைத்த கடும் நிபந்தனையைக் கண்டு சற்றும் கலங்காத அனுசூயா தேவி, தன் கணவரின் பாத தீர்த்தத்தைத் தெளித்து, மும்மூர்த்திகளையும் பச்சிளம் குழந்தைகளாக மாற்றித் தாய்ப்பால் ஊட்டித் தொட்டிலில் இட்டுத் தாலாட்டினாள்.
+
+அப்போது மும்மூர்த்திகளுக்கு முன்னதாகவே ஆதிபராசக்தி ஜோதி வடிவாய் அங்கே முன்னுதித்த நங்கையாகத் தோன்றி அனுசூயாவின் கற்பு நெறியை வாழ்த்தினாள். பின்னர் முப்பெரும் தேவியரின் வேண்டுகோளை ஏற்று, மும்மூர்த்திகளும் தாணுமாலயனாகக் கொன்றை மரத்தடியில் சுயம்புவாய் எழுந்தருளினர்.
+
+## வழிபாட்டு முறை
+
+சுசீந்திரம் கோவிலுக்குச் செல்லும் பெண்கள் முதலில் முன்னுதித்த நங்கை சன்னதியில் நெய் தீபம் ஏற்றி வணங்குவது தொன்றுதொட்டு வரும் மரபாகும். இல்லத்தில் வழிபடும் தாய்மார்கள் வெள்ளிக்கிழமைகளில் தூய மனதுடன் குத்துவிளக்கேற்றி அன்னையைத் தியானிக்கலாம்.
+
+மஞ்சள், குங்குமம், செவ்வரளி மலர்கள் மற்றும் கொன்றை மலர்களால் அன்னையை அர்ச்சித்து, பசும்பாலில் காய்ச்சிய சர்க்கரைப் பொங்கலை நைவேத்தியமாகப் படைப்பது சிறப்பாகும். கணவரின் நலனுக்காகவும், குடும்ப ஒற்றுமைக்காகவும் மனமுருக வேண்டிக் கொள்ளலாம்.
+
+விருந்தினரை இன்முகத்துடன் உபசரிப்பதும், பெரியோர்களை மதித்து நடப்பதுமே அனுசூயா தேவி நமக்குக் கற்றுத் தரும் உயர்ந்த விரத நெறியாகும். இத்தகைய தூய இல்லறப் பண்புகளைக் கடைப்பிடிக்கும் வீடுகளில் முன்னுதித்த நங்கையின் அருள் எப்போதும் நிலைத்திருக்கும்.
+
+## மங்கல வாழ்த்து
+
+மும்மூர்த்திகளுக்கும் முதலாய் உதித்த சுசீந்திரம் முன்னுதித்த நங்கைத் தாய், உங்கள் அனைவரின் இல்லங்களிலும் நீங்காத மங்கலத்தையும் மன அமைதியையும் நிறைத்து அருளட்டும். அனுசூயா தேவியின் தவ வலிமை நம் பெண்மணிகளுக்குத் துணை நிற்கட்டும்.
+
+கணவன் மனைவி இடையே அன்பும் புரிதலும் தழைத்து, குழந்தைகள் நல்வழியில் சிறந்து விளங்க அன்னையின் பொற்பாதங்களைப் பணிவோம். தர்மமும் கற்பு நெறியும் தழைக்கும் இல்லத்தில் சகல ஐஸ்வர்யங்களும் தானாகவே வந்து சேரும்.
+
+அன்னையின் திருவருளால் உங்கள் குடும்பத்தில் நோயற்ற வாழ்வும் குறைவற்ற செல்வமும் என்றும் நிலைத்திருக்க மனமார வாழ்த்துகிறோம். உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Photorealistic widescreen shot of Suchindram Thanumalayan temple white gopuram gleaming at sunrise beside calm Pazhayaru river waters
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Zoomed view of serene South Indian goddess Munnuditha Nangai shrine glowing with brass oil lamps and jasmine garlands
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Dignified Tamil women in traditional silk sarees lighting brass lamps with folded hands inside stone pillared temple hall
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ancient lush forest hermitage of Sage Atri and Anasuya Devi surrounded by sacred konrai trees and morning mist
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred Pazhayaru river flowing gently past carved granite temple steps with lotus blooms floating on clear water
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Anusuya Devi praying devoutly with sacred water pot as gentle rain falls over parched green woodland hermitage
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Three radiant elderly Vedic brahmins arriving peacefully at a serene thatched hermitage courtyard under warm golden sunlight
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Three divine infants sleeping peacefully inside a carved wooden cradle adorned with fragrant flower garlands inside ashram
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Radiant primeval goddess Munnuditha Nangai manifesting in warm golden light before sacred konrai tree sanctum in Suchindram
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred stone Shiva Lingam of Thanumalayan adorned with bilva leaves sandal paste and glowing camphor flame
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker lighting five wicked brass kuthuvilakku lamp with pure ghee in clean traditional home pooja room
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Brass plate arranged with turmeric kumkum red oleander flowers and steaming sweet milk pongal in silver bowl
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm South Indian family welcoming elders respectfully with water and flowers inside sunlit traditional courtyard home
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close view of flickering golden oil lamp flame reflecting on polished brass vessels and fresh jasmine flowers
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Panoramic sunlit view of Suchindram temple tank teppakulam reflecting majestic carved tower and clear morning sky
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Peaceful close shot of goddess lotus feet adorned with turmeric kumkum and golden marigold petals in sanctum

@@ -1,0 +1,86 @@
+{
+  "ep_code": "P3_021",
+  "pillar_code": "P3",
+  "pillar_title_ta": "108 பூஜை அறை & தீப சாஸ்திர ரகசியங்கள்",
+  "ep_num_in_pillar": 21,
+  "slug": "p3_021_tulasi_madam_worship_rules",
+  "title_pill": "பூஜை வழிகாட்டி • துளசி மாட வழிபாடு",
+  "yt_title": "வீட்டில் துளசி மாடம் வளர்க்கும் திசை, நீரூற்றும் முறை & பறிக்கக் கூடாத நாட்கள் | @TamilDailyLife",
+  "yt_description": "வீட்டில் துளசி மாடம் வளர்க்கும் திசை, நீரூற்றும் முறை & பறிக்கக் கூடாத நாட்கள் — தமிழர் பண்பாடு (வாழ்வியல் நெறி) | @TamilDailyLife வழங்கும் மகளிர் சிறப்புத் தொடர் (108 பூஜை அறை & தீப சாஸ்திர ரகசியங்கள்).\n\nஇந்தப் பதிவில்:\n- மகாலட்சுமி அம்சமாகவும் சிறந்த சித்த மூலிகையாகவும் போற்றப்படும் துளசி மாடத்தின் புராண மற்றும் அறிவியல் சிறப்பு\n- வீட்டின் கிழக்கு, வடக்கு அல்லது வடகிழக்குத் திசையில் இராம மற்றும் கிருஷ்ண துளசி வளர்க்கும் ஆகம முறைமை\n- மாலை நேரத்திற்குப் பிறகும் ஞாயிறு, துவாதசி, அமாவாசை மற்றும் பௌர்ணமி நாட்களிலும் துளசி பறிக்கக் கூடாத விதிமுறை\n- காலையில் நீரூற்றி வலம் வருவதும் மாலையில் துளசி மாடத்தில் அகல் விளக்கு ஏற்றி வழிபடுவதும் தரும் நன்மைகள்\n\n#TamilDailyLife #TamilVirtues #DeepaShastram #PoojaRoomTipsTamil #MangalaIllaram #TamilDevotional #GuruKulaDesam",
+  "thumb_badge_ta": "பூஜை வழிகாட்டி",
+  "thumb_main_ta": "துளசி மாட வழிபாடு",
+  "thumbnail_prompt": "A-grade Tamil devotional theatrical cinema movie-poster artwork, widescreen full-bleed seamless composition (pure poster artwork with zero UI buttons or play icons). Right side (right half of the frame): Zoomed-in chest-up commanding scene — Devoted Tamil woman in auspicious yellow and crimson silk saree from chest up lighting clay ghee lamp beside lush green sacred Tulsi madam adorned with turmeric and garlands, warm golden sunset lighting., illuminated by intense warm golden rim-lighting and glowing brass oil lamps. Left side (left half of the frame): Monumental, massive TV-readable Tamil cinema poster typography occupying the left half with grand prominence. Top: Distinct dark midnight-indigo pill badge with glowing gold border displaying பூஜை வழிகாட்டி (no quotation marks). Center/Bottom: Huge, gigantic 3D-extruded solid polished gold Tamil cinema lettering துளசி மாட வழிபாடு (written once cleanly) across a rich royal crimson-maroon velvet banner with sharp metallic bevels, deep drop-shadows, and specular glints, perfectly legible on mobile screens. Background: Full-bleed warm South Indian sacred temple or heritage home backdrop with gentle golden mist, zero dead space, no text or numbers in the lower-right corner.",
+  "shot_prompts": [
+    "Traditional brick and lime-plastered Tulsi madam shrine thriving with lush green tulsi in sunlit courtyard, widescreen",
+    "South Indian woman in silk saree pouring water from copper pot gently onto flourishing tulsi plant, widescreen",
+    "Close-up of vibrant green Rama and Krishna tulsi leaves glistening with morning dew drops in sunlight, widescreen",
+    "Ornate temple painting depicting sacred tulabharam scale balanced by single green tulsi leaf and devotion, widescreen",
+    "Lush sacred tulsi plant growing in carved stone planter beside traditional pillared Tamil courtyard veranda, widescreen",
+    "Warm morning sunbeams filtering through fragrant green tulsi blossoms releasing fresh herbal mist in garden, widescreen",
+    "Elevated terracotta Tulsi madam placed cleanly in sunlit northeast corner of traditional South Indian home, widescreen",
+    "Healthy green Rama tulsi and purple-stemmed Krishna tulsi thriving side by side in painted clay planter, widescreen",
+    "Calm twilight view of untouched sacred tulsi plant resting peacefully beside glowing brass lamp at dusk, widescreen",
+    "Graceful woman circumambulating decorated Tulsi madam slowly with folded hands in crisp morning sunlight, widescreen",
+    "Fingers gently picking tender tulsi sprig respectfully without fingernails during peaceful morning garden prayer, widescreen",
+    "Glowing clay agal oil lamp placed safely in niche of turmeric-anointed Tulsi madam at evening twilight, widescreen",
+    "Festive Tulsi Vivah decoration with gooseberry branch, yellow silk cloth, and marigold garland on planter, widescreen",
+    "Bright east-facing apartment balcony featuring flourishing green tulsi in earthen pot with small brass lamp, widescreen",
+    "Mother giving fresh washed green tulsi leaf lovingly to smiling child in sunny traditional home garden, widescreen",
+    "Warm cinematic wide shot of serene South Indian courtyard glowing with evening Tulsi madam lamp, widescreen"
+  ],
+  "sections": [
+    {
+      "id": "s1_intro",
+      "badge": "துளசி மாட அறிமுகம்",
+      "is_story": false,
+      "paragraphs": [
+        "சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! நம் பாரம்பரிய வீடுகளின் முற்றத்திலும் வாசலிலும் தெய்வீகப் பசுமையோடு வீற்றிருக்கும் துளசி மாடம் இல்லத்தின் உயிர்நாடியாகப் போற்றப்படுகிறது. துளசிச் செடி இருக்கும் இடம் பிருந்தாவனத்திற்குச் சமமான புனிதத் தலமாகவே நம் புராணங்களில் சிறப்பிக்கப்பட்டுள்ளது.",
+        "மகாலட்சுமித் தாயாரின் திருவுருவமாகவும், ஸ்ரீமந் நாராயணனின் மார்பில் நீங்காது உறையும் மாலையாகவும் துளசி தேவி வணங்கப்படுகிறாள். ஆன்மீகப் புனிதத்தோடு மட்டுமின்றி, காற்றைத் தூய்மைப்படுத்தும் ஒப்பற்ற சித்த மருத்துவ மூலிகையாகவும் துளசி திகழ்கிறது.",
+        "வீட்டில் துளசி மாடம் அமைக்க வேண்டிய சரியான திசை, நீரூற்றி வலம் வரும் முறை மற்றும் இலைகளைப் பறிக்கக் கூடாத நாட்கள் குறித்து இப்போது காண்போம். அன்போடு நாம் வளர்க்கும் ஒரு துளசிச் செடி முழுக் குடும்பத்திற்கும் ஆரோக்கியக் கவசமாக விளங்கும்."
+      ]
+    },
+    {
+      "id": "s2_part1",
+      "badge": "பிருந்தா தேவி தத்துவம்",
+      "is_story": true,
+      "paragraphs": [
+        "பத்ம புராணத்தின்படி, பிருந்தா தேவியின் தூய பக்தியை மெச்சிய திருமால், துளசித் தளம் இன்றித் தமக்குச் செய்யப்படும் எந்த நிவேதனமும் முழுமையடையாது என்று வரமளித்தார். ஒரு துளித் துளசி இலையின் எடைக்குப் பொன்னும் மணியும் கூட ஈடாகாது என்பதை ஸ்ரீ கிருஷ்ணரின் துலாபார லீலை உணர்த்துகிறது.",
+        "ருக்மிணிப் பிராட்டியார் வைத்த ஒற்றைத் துளசி தளமும் தூய அன்பும் கண்ணபிரானின் தராசைச் சமன் செய்த அற்புத வரலாறு பக்தியின் பெருமையைப் பேசுகிறது. நமது முன்னோர்கள் துளசி மாடத்தைச் சுற்றி வலம் வருவதால் சகல புண்ணியத் தலங்களையும் தரிசித்த பலன் கிடைப்பதாகக் கூறினர்.",
+        "அறிவியல் ரீதியாகத் துளசிச் செடி பகலிலும் இரவிலும் தூய காற்றையும் ஓசோன் சக்தியையும் வெளியிட்டுச் சுற்றுப்புறக் கிருமிகளை அழிக்கிறது. சளி, இருமல் மற்றும் சுவாசக் கோளாறுகளைத் தடுக்கும் இயற்கை வைத்தியராக இல்லந்தோறும் துளசி திகழ்கிறது."
+      ]
+    },
+    {
+      "id": "s3_part2",
+      "badge": "திசையும் பறிக்காத நாட்களும்",
+      "is_story": true,
+      "paragraphs": [
+        "வீட்டில் துளசி மாடத்தை நல்ல சூரிய ஒளி படும் கிழக்கு, வடக்கு அல்லது வடகிழக்குத் திசையில் அமைப்பதே ஆகம முறைப்படி மிகவும் சிறந்தது. தரையை விடச் சற்று உயரமான மேடையிலோ அல்லது தூய்மையான மண்தொட்டியிலோ துளசியை வளர்க்க வேண்டும்.",
+        "வெண் துளசி என்னும் இராம துளசியும், கரும் பச்சை நிறக் கிருஷ்ண துளசியும் இணைந்து வளர்வது இல்லத்திற்கு இரட்டிப்பு நன்மையைத் தரும். துளசிச் செடியை எப்போதும் ஈரப்பதத்தோடு வாடாமல் பசுமையாகப் பராமரிப்பது இல்லத்தின் மங்கலத்தைக் காக்கும்.",
+        "மாலை சூரிய அஸ்தமனத்திற்குப் பிறகும், ஞாயிற்றுக்கிழமை, துவாதசி திதி, அமாவாசை மற்றும் பௌர்ணமி நாட்களிலும் துளசி இலைகளைப் பறிக்கக் கூடாது. அந்நாட்களில் பூஜைக்குத் தேவைப்பட்டால் முதல் நாளே பறித்து வைத்த இலைகளையோ அல்லது தானாக உதிர்ந்த இலைகளையோ பயன்படுத்தலாம்."
+      ]
+    },
+    {
+      "id": "s4_practice",
+      "badge": "நாள்தோறும் வழிபடும் முறை",
+      "is_story": false,
+      "paragraphs": [
+        "தினமும் காலையில் நீராடியதும் சிறிய செப்புச் சொம்பில் தூய நீர் எடுத்துத் துளசிச் செடியின் வேர்ப் பகுதியில் மென்மையாக ஊற்றுங்கள். துளசி மாடத்திற்கு மஞ்சள், குங்குமம் இட்டு, குறைந்தது மூன்று முறை மெதுவாகப் பிரதட்சிணம் செய்து வணங்குவது மன அமைதி தரும்.",
+        "பூஜைக்காகத் துளசி பறிக்கும்போது நகத்தால் கிள்ளாமல், தாயே பூஜைக்கு உன் தளங்களைப் பெறுகிறேன் என்று மனதால் வேண்டி விரல்களால் காம்போடு பறியுங்கள். மாலை வேளையில் துளசி மாடத்தின் முன்பாக நெய் அல்லது நல்லெண்ணெய் அகல் விளக்கு ஏற்றி வைப்பது மிகவும் விசேஷமானது.",
+        "கார்த்திகை மாத சுக்ல பட்ச துவாதசி அன்று துளசி மாடத்திற்கு நெல்லிக் கிளையுடன் சேர்த்துத் துளசி விவாஹ பூஜை செய்வது குடும்ப ஒற்றுமையைப் பெருக்கும். அடுக்குமாடிக் குடியிருப்புகளில் வசிப்பவர்களும் கிழக்குப் பால்கனியில் அழகிய மண்தொட்டியில் துளசி வளர்த்து வழிபடலாம்."
+      ]
+    },
+    {
+      "id": "s5_closing",
+      "badge": "பசுமை மங்கல வாழ்த்துரை",
+      "is_story": false,
+      "paragraphs": [
+        "அதிகாலையில் துளசி மாடத்தை வலம் வந்து அந்த மூலிகைக் காற்றைச் சுவாசிக்கும் தாய்மார்களின் உடல் நலமும் மன நலமும் சிறப்பாக அமையும். குழந்தைகளுக்கும் தினமும் காலையில் இரண்டு சுத்தமான துளசி இலைகளை மென்று உண்ணக் கொடுப்பது நோய் எதிர்ப்புச் சக்தியை வளர்க்கும்.",
+        "இயற்கையைத் தெய்வமாகப் போற்றி வணங்கும் நமது உயரிய பண்பாடு மண்ணையும் மனித குலத்தையும் ஒருசேர வாழ வைக்கிறது. இல்லந்தோறும் பசுமையான துளசி மாடம் அமைத்து இறையருளையும் ஆரோக்கியத்தையும் நிறைவாகப் பெறுவோம்.",
+        "பிருந்தாவனத் துளசித் தாயாரின் அருளும் திருமாலின் கடாட்சமும் உங்கள் குடும்பத்தை என்றென்றும் நலமுடன் காக்கட்டும்! உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!"
+      ]
+    }
+  ],
+  "status": "SCRIPT_READY",
+  "youtube_video_id": null,
+  "youtube_url": null
+}

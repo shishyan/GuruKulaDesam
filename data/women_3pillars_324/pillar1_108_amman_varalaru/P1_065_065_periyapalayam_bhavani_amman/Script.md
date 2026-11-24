@@ -1,0 +1,62 @@
+# [P1_065] பெரியபாளையம் பவானி அம்மன் தல வரலாறு & ஆரணி நதிக்கரை மகிமை
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `பவானி அம்மன் அருள்`  
+> **Status**: `SCRIPT_READY`
+
+## மங்கல முன்னுரை
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! நம் குடும்பத்தைக் கண்ணெனக் காத்து நல்வாழ்வு அருளும் சக்தித் தலங்களில் திருவள்ளூர் மாவட்டம் பெரியபாளையம் ஸ்ரீ பவானி அம்மன் திருக்கோயில் மிகவும் தொன்மையான திருத்தலமாகத் திகழ்கிறது.
+
+புண்ணிய நதியாம் ஆரணி ஆற்றங்கரையில் சுயம்புவாக எழுந்தருளியுள்ள இந்தக் கருணைத் தாய், தன்னை நம்பி வரும் பெண்களின் மனத்துயரங்களை நீக்கித் தீர்க்க சுமங்கலி வரமும் நோய் நொடியற்ற வாழ்வும் வழங்குகிறாள்.
+
+ஆடி மாத வழிபாட்டிற்கும் தனித்துவமான நேர்த்திக்கடன் சிறப்புகளுக்கும் பெயர்பெற்ற பெரியபாளையத்து அம்மனின் புராண வரலாற்றையும் வேப்பிலை ஆடை வழிபாட்டு மகிமையையும் இன்று நாம் பக்தியோடு விரிவாக அறிந்து கொள்வோம்.
+
+## தல புராண வரலாறு
+
+துவாபர யுகத்தில் கம்சனின் கொடிய சிறையில் வாடிய தேவகி மற்றும் வசுதேவருக்கு எட்டாவது குழந்தையாகக் கண்ணபிரான் அவதரித்தபோது, கோகுலத்தில் நந்தகோபரின் இல்லத்தில் யசோதையின் மகளாக யோகமாயா தேவி திருவவதாரம் செய்தாள்.
+
+மதுரா சிறைக்கு மாற்றப்பட்ட அந்தப் பச்சிளம் பெண் குழந்தையைக் கம்சன் கற்பாறையில் மோதச் சென்ற கணத்தில், குழந்தை அவனது கரங்களிலிருந்து விண்ணில் எழும்பி எட்டுத் திருக்கரங்களுடன் ஜோதி சொரூபமாகக் காட்சி தந்தாள்.
+
+உன்னை அழிப்பவன் கோகுலத்தில் நலமுடன் வளர்கிறான் என்று கம்சனை எச்சரித்துவிட்டு, அந்த ஆதிசக்தி பூவுலக மக்களைக் காப்பதற்காக ஆரணி நதிக்கரையில் அமைதியான சுயம்பு வடிவமாக எழுந்தருளிய புண்ணியத் தலமே பெரியபாளையம் ஆகும்.
+
+## வேப்பிலை மகிமை
+
+முற்காலத்தில் வன்னிய மரங்களும் வேப்ப மரங்களும் அடர்ந்த பசுமையான வனமாக இருந்த இப்பகுதியில், வளையல் வியாபாரி ஒருவர் இளைப்பாறியபோது புற்றிலிருந்து வெளிப்பட்ட அம்மனின் ஒப்பற்ற அருட்சக்தியை உலகறியச் செய்தார்.
+
+சங்கு, சக்கரம், கத்தி, கேடயம், வில், அம்பு, கபாலம் மற்றும் அமுத கலசம் ஏந்திய திருக்கோலத்தில் காட்சி தரும் பவானி அம்மன், தீராத வெப்ப நோய்களையும் அம்மை உபாதைகளையும் உடனே தணித்தருள்கிறாள்.
+
+ஆடி மாத ஞாயிற்றுக்கிழமைகளில் பல்லாயிரக்கணக்கான தாய்மார்கள் கோயில் வளாகத்தில் குடும்பத்தோடு கூடிப் புது மண்பானையில் பொங்கலிட்டு, அம்மனின் கருணை மழையில் நனைந்து தங்கள் வம்ச நலனுக்காக மனம் உருகிப் பிரார்த்தனை செய்கிறார்கள்.
+
+## இல்லற வழிபாட்டு முறை
+
+தீராத உடல் நலிவு நீங்கவும் வேண்டுதல் பலிக்கவும் பிரார்த்திக்கும் பக்தர்கள், சுத்தமான வேப்பிலைகளைத் தொடுத்து ஆடையாக அணிந்து கோயிலை வலம் வரும் தனிச்சிறப்பான நேர்த்திக்கடன் இத்தலத்தில் தொன்றுதொட்டு நடைபெறுகிறது.
+
+நாம் நமது இல்லத்தில் வெள்ளிக்கிழமை அல்லது ஞாயிற்றுக்கிழமைகளில் பூஜை அறையைத் தூய்மை செய்து, சிறிய தாம்பாளத்தில் மஞ்சள் குங்குமத்தோடு பசுமையான வேப்பிலைக் கொத்து வைத்து மணக்கும் நெய் தீபம் ஏற்றலாம்.
+
+இனிப்பான சர்க்கரைப் பொங்கல் அல்லது வெல்லப் பானகம் நைவேத்தியம் படைத்து, பெரியபாளையத்து பவானித் தாயே எம் இல்லத்து மழலைகளையும் பெரியவர்களையும் எந்நாளும் நலமுடன் காத்தருள்வாய் என்று மனதார வேண்டி வணங்கலாம்.
+
+## மங்கல நிறைவுரை
+
+தாய்மையின் அளவற்ற பரிவும் வீரத்தின் தெய்வீகத் தேஜஸும் ஒருங்கே கொண்ட பவானி அம்மனின் திருவடிகளைப் பற்றிக்கொண்டால், நம் இல்லத்தில் அச்சம் அகன்று எப்போதும் நேர்மறை ஆற்றலும் நிம்மதியும் நிறைந்திருக்கும்.
+
+ஆரணி நதிக்கரை அரசியாம் பவானித் தாயின் திருவருளால் உங்கள் இல்லத்தில் சகல சௌபாக்கியங்களும், நீண்ட ஆயுளும், குறையாத தன தான்ய செழிப்பும் மென்மேலும் பெருகட்டும் என்று வாழ்த்துகிறோம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Zoomed chest up view of Goddess Bhavani Amman in crimson silk saree with solid gold crown and neem leaves, widescreen temple sanctum glow
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred Arani river flowing gently beside ancient South Indian Dravidian temple gopuram at golden sunrise, serene devotional atmosphere, widescreen cinematic shot
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Dignified Tamil women lighting brass oil lamps in courtyard of Periyapalayam temple, warm morning sunlight filtering through neem trees, widescreen shot
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mythological Purana scene of radiant eight armed Goddess Yogamaya rising into starry night sky with divine golden aura, widescreen devotional painting style
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Self manifested sacred swayambhu stone shrine adorned with turmeric paste, vermilion kumkum, and fresh jasmine garlands inside stone sanctum, widescreen close shot
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ancient grove of lush green neem trees along tranquil riverbank with soft mist and brass trident standing beside sacred anthill, widescreen view
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close view of Goddess Bhavani Amman holding conch, discus, and golden nectar pot, illuminated by flickering camphor flame in dark stone garbhagriha
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional clay pots boiling overflowing sweet pongal over wood fires outside South Indian Amman temple during Aadi festival, joyful Tamil families gathered
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Fresh green neem leaf garlands and yellow turmeric threads arranged neatly on brass ritual plate inside heritage temple corridor, widescreen cinematic detail
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devotees walking barefoot around sunlit South Indian temple prakaram holding fresh neem branches with peaceful expressions of gratitude and faith, widescreen shot
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Clean traditional Tamil home pooja room with brass kuthu vilakku lamp burning brightly beside fresh neem twigs, turmeric, and kumkum on banana leaf
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker in handloom cotton saree offering warm sweet jaggery pongal in brass bowl before framed Amman portrait, serene morning light
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close shot of joined hands in prayer holding yellow flowers and neem leaves before glowing five faced brass oil lamp, widescreen devotional mood
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden evening rays illuminating temple vimana tower of Periyapalayam Bhavani Amman shrine with white doves flying across peaceful sky, widescreen view
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Happy multi generational Tamil family receiving sacred kumkum prasadam together inside sunlit traditional courtyard home, warm affectionate smiles, widescreen shot
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close shot of blooming red hibiscus flower resting at golden lotus feet of Amman idol beside glowing brass lamp, widescreen serene finish

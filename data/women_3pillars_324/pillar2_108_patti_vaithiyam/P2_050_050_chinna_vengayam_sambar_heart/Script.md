@@ -1,0 +1,62 @@
+# [P2_050] இரத்த ஓட்டத்தைச் சீராக்கும் சின்ன வெங்காயம் வதக்கிய நல்லெண்ணெய்க் குழம்பு
+> **தொடர்**: 108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்  
+> **Thumbnail Badge**: `பாட்டி வைத்தியம்` | **Main Title**: `சின்ன வெங்காயம்`  
+> **Status**: `SCRIPT_READY`
+
+## முகவுரை
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! நமது பாரம்பரியத் தமிழ்ச் சமையலில் சாம்பார், புளிக்குழம்பு, வத்தக்குழம்பு என எது வைத்தாலும் அதன் சுவைக்கு உயிர்நாடியாக இருப்பது சின்ன வெங்காயம் ஆகும். உரிப்பதற்குச் சற்று நேரம் எடுத்தாலும், சின்ன வெங்காயம் தரும் ஆரோக்கிய நன்மைகளுக்கு இணையே இல்லை.
+
+இன்றைய அவசர சமையலில் பலரும் வேலை எளிதாக முடிய வேண்டும் என்பதற்காகப் பெரிய பல்லாரி வெங்காயத்தையே எல்லா உணவுகளுக்கும் பயன்படுத்துகிறார்கள். ஆனால் சித்த மருத்துவமும் பாட்டி வைத்தியமும் சின்ன வெங்காயத்தையே தினசரி உணவில் முதன்மையாகப் பரிந்துரைக்கின்றன.
+
+மரசெக்கு நல்லெண்ணெயில் சின்ன வெங்காயத்தைப் பொன்னிறமாக வதக்கி வைக்கும் வெங்காயக் குழம்பு, இரத்த ஓட்டத்தைச் சீராக்கி இதயத்தைக் காக்கும் அருமருந்தாகும். அதன் அறிவியல் நுட்பத்தையும் பாரம்பரியச் செய்முறையையும் இப்போது விரிவாகப் பார்ப்போம்.
+
+## சின்ன வெங்காய மகிமை
+
+பெரிய வெங்காயத்தை விடச் சின்ன வெங்காயத்தில் கந்தகச் சத்தும், குவெர்செடின் எனப்படும் நோய் எதிர்ப்புச் சத்தும் பல மடங்கு அதிகமாக நிறைந்துள்ளன. இவை இரத்தக் குழாய்களில் படியும் கெட்ட கொழுப்பைக் கரைத்து, உடல் முழுவதும் சீரான இரத்த ஓட்டத்தை உறுதி செய்கின்றன.
+
+பெண்களுக்கு ஏற்படும் இரத்தச் சோகை, உடல் சோர்வு மற்றும் மாதவிடாய் கால பலவீனங்களைப் போக்க சின்ன வெங்காயத்தில் உள்ள இரும்புச்சத்தும் போலிக் சத்தும் துணைபுரிகின்றன. மேலும் இது உடலின் உட்புற வெப்பத்தைத் தணித்து மூல நோய் வராமல் தடுக்கிறது.
+
+சின்ன வெங்காயத்தைச் சுத்தமான நல்லெண்ணெயுடன் சேர்த்துச் சமைக்கும்போது, அதிலுள்ள உயிர்ச்சத்துக்கள் உடலால் எளிதில் உறிஞ்சப்படுகின்றன. சளி, இருமல் மற்றும் தொண்டைக் கரகரப்பு உள்ள காலங்களில் இந்தக் குழம்பு மார்புச் சளியை இளக்கி வெளியேற்றும் வல்லமை கொண்டது.
+
+## குழம்பு செய்முறை
+
+இந்த ஆரோக்கியக் குழம்பு செய்ய இருநூறு கிராம் தோல் உரித்த முழுச் சின்ன வெங்காயம் மற்றும் பத்துப் பல் பூண்டு எடுத்துக் கொள்ளுங்கள். எலுமிச்சை அளவு பழைய புளியை வெதுவெதுப்பான நீரில் ஊறவைத்துக் கெட்டியாகக் கரைத்து வடிகட்டி வைத்துக் கொள்ள வேண்டும்.
+
+அகலமான மண் சட்டியில் மூன்று மேசைக்கரண்டி மரசெக்கு நல்லெண்ணெய் ஊற்றி, கடுகு, உளுத்தம்பருப்பு, கால் தேக்கரண்டி வெந்தயம் மற்றும் கறிவேப்பிலை தாளியுங்கள். பின்னர் முழுச் சின்ன வெங்காயத்தையும் பூண்டையும் சேர்த்து மிதமான தீயில் கண்ணாடிப் பதம் வரும் வரை பொறுமையாக வதக்குங்கள்.
+
+வெங்காயம் நன்கு சுருங்கி மணம் வரும்போது கால் தேக்கரண்டி மஞ்சள் தூள், இரண்டு தேக்கரண்டி குழம்பு மிளகாய்த்தூள் சேர்த்து எண்ணெயில் பிரட்டுங்கள். தொடர்ந்து புளிக்கரைசல் மற்றும் கல்லுப்பு சேர்த்துக் கொதிக்கவிட்டு, இறுதியில் சிறிய துண்டு வெல்லம் சேர்த்து எண்ணெய் பிரிந்ததும் இறக்குங்கள்.
+
+## பரிமாறும் பக்குவம்
+
+சின்ன வெங்காயத்தை உரிப்பதற்கு முன்பு பத்து நிமிடங்கள் தண்ணீரில் ஊறவைத்து உரித்தால், கண்களில் எரிச்சல் இன்றித் தோல் மிக எளிதாக உரியும். சிறிய அளவிலான வெங்காயங்களை நறுக்காமல் முழுதாகவே குழம்பில் போட்டு வதக்குவதுதான் இதன் தனிச்சிறப்பாகும்.
+
+மண் சட்டியில் வைத்த இந்த நல்லெண்ணெய்க் குழம்பு மறுநாள் வரை கெடாமல், ஊற ஊற மேலும் அபார சுவையுடன் இருக்கும். சூடான ஆவி பறக்கும் சாதத்தில் இந்தக் குழம்பை ஊற்றி, சுட்ட அப்பளம் அல்லது கீரைக் கூட்டுடன் பரிமாறுவது முழுமையான உணவாகும்.
+
+வாரத்திற்கு இரண்டு முறையாவது பெரிய வெங்காயத்தைத் தவிர்த்துச் சின்ன வெங்காயக் குழம்பைச் சமைத்து குடும்பத்தினருக்குப் பரிமாறுங்கள். வளரும் குழந்தைகளுக்கும் முதியவர்களுக்கும் இது நோய் எதிர்ப்புச் சக்தியை இயற்கையாகவே உயர்த்திப் பாதுகாக்கும்.
+
+## நிறைவு ஆசிர்வாதம்
+
+நமது மண்ணில் விளையும் பாரம்பரியக் காய்கறிகளும், மரசெக்கு எண்ணெய்களும் நமது உடல் வாகிற்கு ஏற்றவாறு இறைவனால் படைக்கப்பட்டவை. பொறுமையுடன் சமைக்கப்படும் ஒவ்வொரு உணவும் குடும்பத்தின் ஆயுளை நீட்டிக்கும் அமுதமாக மாறுகிறது.
+
+உங்கள் இல்லத்தில் உள்ள அனைவருக்கும் சீரான இரத்த ஓட்டமும், இதய நலனும், வற்றாத மகிழ்ச்சியும் நிலைத்திருக்க இறைவன் அருள்புரியட்டும். நமது பாரம்பரியச் சுவையும் ஆரோக்கியமும் உங்கள் சமையலறையில் என்றென்றும் நிறையட்டும்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Woven bamboo basket brimming with glossy crimson-purple sambar shallots beside brass oil bottle in sunlit Tamil kitchen
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Side-by-side comparison of vibrant cluster sambar shallots next to traditional clay cooking chatti on rustic counter
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Steaming earthen pot of rich glossy sambar shallot gingelly oil kuzhambu garnished with fresh green curry leaves
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of freshly peeled shiny pink-purple sambar shallots and whole garlic cloves resting on green banana leaf
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Pouring golden cold-pressed marachekku gingelly oil from brass spout vessel into seasoned earthen clay pot
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional spice plates holding fenugreek seeds, mustard, turmeric powder, home-ground kuzhambu chilli powder, and palm jaggery
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Soaking whole crimson sambar shallots in bowl of clear water so skins peel effortlessly without eye irritation
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker peeling sambar shallots peacefully on sunlit veranda while placing whole bulbs onto brass plate
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tempering mustard seeds, fenugreek, and fresh curry leaves crackling in warm gingelly oil inside clay chatti
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sauteing whole purple shallots and garlic cloves slowly in golden sesame oil until translucent and caramelised
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Pouring thick dark tamarind extract and rock salt into spiced sautéed shallots simmering gently over stove flame
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Rich terracotta-red shallot kuzhambu bubbling softly as glossy gingelly oil separates cleanly around clay pot edges
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ladling hot aromatic chinna vengaya kuzhambu over fluffy white steamed rice on fresh banana leaf with greens kootu
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Covered earthen pot of shallot kuzhambu resting on woven ring stand preserving rich flavour in clean kitchen
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Smiling Tamil mother serving wholesome traditional lunch to family members seated comfortably on woven mats
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm closing shot of lit brass oil lamp glowing serenely beside basket of fresh shallots and curry leaves

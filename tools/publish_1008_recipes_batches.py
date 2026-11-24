@@ -11,10 +11,10 @@ import sys
 import time
 from pathlib import Path
 
-sys.path.insert(0, "/home/shishyan/GitHub/Shishyan/GuruKulaDesam/tools")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from publish_daily_gkd_community_post import publish_via_cdp
 
-OUT_ROOT = Path("/home/shishyan/GoogleDrive_GuruKulaDesam/Assets/south-indian-recipes-1008")
+OUT_ROOT = Path.home() / "GoogleDrive_GuruKulaDesam" / "Assets" / "south-indian-recipes-1008"
 INDEX_JSON = OUT_ROOT / "RECIPES_1008_INDEX.json"
 RECEIPTS_JSON = OUT_ROOT / "published_recipes_batches.json"
 

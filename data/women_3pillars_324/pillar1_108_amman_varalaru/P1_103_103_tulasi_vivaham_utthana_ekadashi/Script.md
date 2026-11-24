@@ -1,0 +1,62 @@
+# [P1_103] துளசி கல்யாண வரலாறு & கார்த்திகை சுக்ல துவாதசி பிருந்தா தேவி மகிமை
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `விரத மகிமை` | **Main Title**: `துளசி கல்யாணம்`  
+> **Status**: `SCRIPT_READY`
+
+## துளசி கல்யாணம் அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! ஒவ்வொரு தமிழ் இல்லத்தின் முற்றத்திலும் துளசி மாடம் அமைத்து வணங்குவது நம் குலமாதர்களின் தொன்மையான புண்ணிய மரபாகும். கார்த்திகை மாத வளர்பிறை துவாதசித் திதியில் நடைபெறும் துளசி கல்யாண வைபவம் இல்லற மங்கலம் தரும் தெய்வீகத் திருவிழாவாகும்.
+
+துளசிச் செடியை வெறும் மூலிகையாக மட்டுமன்றி, மகாலட்சுமியின் வடிவமான பிருந்தா தேவியாகவே நம் புராணங்கள் போற்றி வணங்குகின்றன. மழைக்கால சாதுர்மாஸ்ய யோக நித்திரையிலிருந்து மகாவிஷ்ணு விழித்தெழும் உத்தான துவாதசி நாளே இத்திருமணத் திருநாளாகக் கொண்டாடப்படுகிறது.
+
+துளசியோடு நெல்லிக் கிளையையும் இணைத்துத் தாமோதரப் பெருமாளுக்கு மணம் முடிக்கும் இவ்வழிபாடு, தடைப்பட்ட சுபகாரியங்களை இனிதே நடத்தி வைக்கும். பிருந்தா தேவியின் பதிபக்தி வரலாற்றையும் இல்லத்துப் பூஜை முறையையும் இப்போது அன்போடு அறிந்து கொள்வோம்.
+
+## பிருந்தா தேவியின் பதிபக்தி வரலாறு
+
+பத்ம புராண வரலாற்றின்படி, காலநேமியின் மகளான பிருந்தை சிறு வயது முதலே நாராயண பக்தியிலும் கற்பு நெறியிலும் சிறந்து விளங்கினாள். கடற்கரையில் தோன்றிய வலிமை மிக்க ஜலந்தரன் என்பவனை அவள் மணந்து, தன் தூய பதிவிரதா தர்மத்தால் கணவனுக்குக் கவசமாகத் திகழ்ந்தாள்.
+
+பிருந்தையின் கற்பு வலிமையால் யாராலும் வெல்ல முடியாத நிலை பெற்ற ஜலந்தரன், ஆணவம் கொண்டு தேவர்களையும் முனிவர்களையும் துன்புறுத்தினான். தர்மத்தைக் காக்க வேண்டித் தேவர்கள் முறையிட்டபோது, உலக நன்மைக்காகப் பிருந்தையின் விரதக் கவசம் நீங்கும் சூழல் உருவானது.
+
+உண்மை அறிந்த பிருந்தா தேவி மனம் நொந்து மகாவிஷ்ணுவை நோக்கிக் கல்லாகும்படி உரைத்துத் தன் உயிரைத் தியாகம் செய்தாள். அவளது இணையற்ற கற்புத் தூய்மையைப் போற்றிய திருமால், கண்டகி நதிக்கரையில் சாளக்கிராமக் கல்லாகத் தாமே வடிவெடுத்து அவளுக்கு உயர்ந்த வரமளித்தார்.
+
+## துளசியும் சாளக்கிராமத் திருமணமும்
+
+பிருந்தா தேவியின் திருமேனிச் சாம்பலிலிருந்து நறுமணம் வீசும் புனிதத் துளசிச் செடி பூமியில் தழைத்து ஓங்கி வளர்ந்தது. துளசி தளமின்றி எந்தவொரு நைவேத்தியத்தையும் தாம் ஏற்பதில்லை என்று மகாவிஷ்ணு அன்று உலகிற்குச் சத்திய வாக்கு அளித்தார்.
+
+ஆஷாட ஏகாதசி முதல் நான்கு மாதங்கள் யோக நித்திரையில் இருக்கும் பெருமாள், கார்த்திகை சுக்ல ஏகாதசியில் விழித்தெழுகிறார். அதற்கு மறுநாளான சுக்ல துவாதசியில் சாளக்கிராம மூர்த்திக்கும் பிருந்தா தேவியான துளசிக்கும் திருமண வைபவம் கோலாகலமாக நடைபெறுகிறது.
+
+இத்திருமணத்தில் மகாலட்சுமியின் அம்சமான நெல்லி மரக் கிளையையும் துளசித் தொட்டியில் ஊன்றி ஒன்றாகப் பூஜிப்பது தொன்றுதொட்டு வரும் வழக்கமாகும். துளசியும் நெல்லியும் இணையும் இடத்தில் ஸ்ரீமந் நாராயணன் நித்திய வாசம் செய்து சகல சௌபாக்கியங்களையும் வாரி வழங்குகிறார்.
+
+## இல்லத்து துளசி கல்யாண பூஜை முறை
+
+கார்த்திகை சுக்ல துவாதசி மாலையில் துளசி மாடத்தைச் சுத்தம் செய்து, செம்மண் மற்றும் பச்சரிசி மாவால் அழகிய தாமரைக் கோலமிட வேண்டும். துளசிச் செடியின் அருகே சிறிய நெல்லிக் கிளையை நட்டு, மஞ்சள் கயிறு, வளையல் மற்றும் சிவப்புப் பட்டு வஸ்திரம் சாற்றி அலங்கரிக்கலாம்.
+
+கிருஷ்ணர் விக்கிரகம் அல்லது சாளக்கிராம மூர்த்தியைத் துளசிச் செடியின் அருகில் எழுந்தருளச் செய்து, மஞ்சள் அட்சதை தூவி மாங்கல்ய மந்திரங்களைச் சொல்லி வழிபட வேண்டும். துளசி மாடத்தைச் சுற்றிலும் அகல் விளக்குகள் ஏற்றி வைத்து, நெல்லிக்கனி, அவல், வெல்லம் மற்றும் சர்க்கரைப் பொங்கல் படைக்கலாம்.
+
+பெண்கள் துளசி மாடத்தை நான்கு அல்லது ஒன்பது முறை வலம் வந்து, கோவிந்த நாமாவளிகளைப் பாடி கற்பூர ஆரத்தி எடுக்க வேண்டும். பூஜைக்குப் பின் சுமங்கலிப் பெண்களுக்கு வெற்றிலை பாக்கு, மஞ்சள், குங்குமம் மற்றும் வளையல்கள் வழங்கி ஆசி பெறுவது மிகுந்த புண்ணியம் தரும்.
+
+## மங்கல குடும்ப ஆசியுரை
+
+துளசி கல்யாண விரதத்தைச் சிரத்தையோடு செய்யும் இல்லங்களில் திருமணத் தடைகள் நீங்கி விரைவில் கெட்டிமேள ஓசை ஒலிக்கும். கணவன் மனைவி இடையே பரஸ்பர மரியாதையும் மாறாத அன்பும் நிலைத்து, தீர்க்க சுமங்கலி வரம் கிட்டும்.
+
+துளசியின் தெய்வீக நறுமணம் வீட்டின் காற்றைத் தூய்மைப்படுத்துவது போல, பிருந்தா தேவியின் அருள் உங்கள் குடும்பத்தின் கவலைகளை அகற்றட்டும். தாமோதரப் பெருமாளின் திருவருளால் தன தான்யச் செழிப்பும் நன்மக்களின் மேன்மையும் என்றென்றும் தழைத்தோங்கட்டும்.
+
+பிருந்தா சமேத ஸ்ரீமந் நாராயணப் பெருமானை மனமார வணங்கி உங்கள் அனைவரையும் வாழ்த்துகிறோம். உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Widescreen traditional Tamil courtyard at dusk with sacred Tulasi madam decorated in flowers and glowing clay lamps
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devout homemaker tying auspicious yellow turmeric thread and red silk cloth around lush green Tulasi plant
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Fresh green gooseberry branch with round amla fruits placed lovingly beside blooming holy basil stem
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Pious princess Vrinda Devi praying peacefully before Lord Narayana idol inside ancient palace shrine
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mighty warrior Jalandhara standing triumphant while protected by radiant golden aura of Vrinda devotion
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred Gandaki riverbanks glistening with smooth dark Salagrama stones under misty Himalayan morning sun
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Lush fragrant Tulasi sapling sprouting miraculously with soft golden divine light around its leaves
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Lord Mahavishnu awakening peacefully upon cosmic serpent Adisesha surrounded by celestial lotus blossoms
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred Salagrama stone and golden Krishna idol seated beside bridal-adorned Tulasi shrine during wedding ritual
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Intricate red-earth kavi border and white rice-flour lotus kolam drawn neatly around courtyard Tulasi pedestal
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Silver plate holding flattened rice aval, palm jaggery, fresh gooseberries, betel leaves, and glass bangles
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Group of Tamil women in silk sarees circumambulating lamp-lit Tulasi madam singing devotional hymns
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Elderly sumangali grandmother blessing younger bride with turmeric, kumkum, and red glass bangles
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm golden ghee diyas illuminating courtyard pillars on auspicious Karthigai Shukla Dwadashi evening
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Joyful family offering camphor arati together before garlanded Tulasi and Krishna shrine
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of dew-kissed sacred Tulasi manjari blossoms beside shining brass deepam flame

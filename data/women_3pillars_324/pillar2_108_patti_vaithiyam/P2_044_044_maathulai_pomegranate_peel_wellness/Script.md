@@ -1,0 +1,62 @@
+# [P2_044] பெண்கள் நலன் காக்கும் நாட்டு மாதுளம் பழம் மற்றும் மாதுளைத் தோல் கஷாயம்
+> **தொடர்**: 108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்  
+> **Thumbnail Badge**: `பாட்டி வைத்தியம்` | **Main Title**: `மாதுளை மருத்துவம்`  
+> **Status**: `SCRIPT_READY`
+
+## முன்னுரை & சிறப்பு
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! பெண்களின் வாழ்வில் பூப்பெய்தல் முதல் தாய்மை மற்றும் முதுமை வரை இரத்தச் சோகையைத் தடுத்துக் கருப்பையைப் பலப்படுத்தும் தெய்வீகப் பழம் நாட்டு மாதுளம் பழம் ஆகும். இதன் ஒவ்வொரு பகுதியும் பெண்களுக்குச் சிறந்த மருந்தாகத் திகழ்கிறது.
+
+மாதுளம் முத்துக்களை மட்டும் உண்டுவிட்டு, அதன் உள்ளே இருக்கும் மெல்லிய வெண்ணிற ஆடையையும் வெளிப்புறத் தோலையும் நாம் பெரும்பாலும் தூக்கி எறிந்து விடுகிறோம். ஆனால் நம் பாட்டிமார்கள் மாதுளையின் தோலையும் ஆடையையும் பொன் போலப் பாதுகாத்து மருத்துவத்திற்குப் பயன்படுத்தினார்கள்.
+
+பெண்களின் மாதாந்திர சுழற்சி நலனைக் காத்து, உடலுக்குப் புதிய இரத்தத்தையும் தெம்பையும் ஊட்டும் நாட்டு மாதுளம் பழம் மற்றும் மாதுளைத் தோல் கஷாயத்தின் முழுமையான இரகசியங்களை இன்று நாம் அறிந்து கொள்வோம்.
+
+## பாட்டி வைத்திய அறிவியல்
+
+இனிப்பும் இலேசான துவர்ப்பும் கலந்த நாட்டு மாதுளம் பழம் சித்த மருத்துவத்தில் பெண்களின் உற்ற தோழனாகப் போற்றப்படுகிறது. துவர்ப்புச் சுவையே இரத்தத்தைப் பெருக்குவதற்கும், தளர்ந்த தசைகளை இறுக்கி வலுப்படுத்துவதற்கும் அடிப்படை ஆதாரமாகும்.
+
+மாதுளை முத்துக்களைச் சூழ்ந்துள்ள மெல்லிய வெண்ணிறச் சவ்வுப் பகுதியும், அதன் தடித்த வெளிப்புறத் தோலும் மிக உயர்ந்த துவர்ப்புச் சத்து கொண்டவை. இவை பெண்களுக்கு ஏற்படும் அதிகப்படியான உதிரப்போக்கைச் சமன்படுத்தி, அடிவயிற்றுக்கு நல்ல வலிமையைத் தருகின்றன.
+
+மேலும் வயிற்றுப் போக்கு, சீதபேதி மற்றும் குடல் புண்களை ஆற்றுவதிலும் மாதுளைத் தோல் கஷாயம் நிகரற்ற முறையில் செயல்படுகிறது. நாட்டு மாதுளையைத் தொடர்ந்து உண்டு வரப் பெண்களின் முகம் செந்தாமரை போலப் பிரகாசிக்கும்.
+
+## பாரம்பரிய செய்முறை
+
+விதைகள் சற்றுக் கடினமாகவும் இளஞ்சிவப்பு நிறத்திலும் இருக்கும் நாட்டு மாதுளம் பழத்தைத் தேர்ந்தெடுத்து வாங்க வேண்டும். பழத்தை நறுக்கி முத்துக்களை எடுக்கும்போது, அதனுடன் ஒட்டியிருக்கும் மெல்லிய வெண்ணிற ஆடையையும் சேர்த்தே எடுத்து மென்று உண்பது மிகவும் நல்லது.
+
+மாதுளைத் தோலைச் சேமித்து வைக்க, பழத்தின் மேல் தோலைச் சிறிய துண்டுகளாக நறுக்கி, சுத்தமான துணியின் மீது பரப்பி நல்ல வெயிலில் நான்கு முதல் ஐந்து நாட்கள் மொறுமொறுப்பாகக் காயவைக்க வேண்டும். ஈரம் சிறிதும் இல்லாமல் காய்ந்த தோலைப் பொடித்துக் கண்ணாடிப் பாத்திரத்தில் வைத்துக்கொள்ளலாம்.
+
+கஷாயம் தயாரிப்பதற்கு, ஒரு குவளை தண்ணீரில் அரை தேக்கரண்டி மாதுளைத் தோல் பொடி அல்லது இரண்டு துண்டு உலர்ந்த தோலைப் போட்டு, சிறிது சீரகம் சேர்த்து அரை குவளையாக வற்றக் காய்ச்ச வேண்டும். இதனை வடிகட்டிப் பனங்கற்கண்டு அல்லது மோர் கலந்து கொள்ளலாம்.
+
+## இல்லறப் பயன்பாட்டு முறை
+
+வளரும் பெண் குழந்தைகளுக்கும் தாய்மார்களுக்கும் காலை பதினோரு மணி அளவில் ஒரு கிண்ணம் நாட்டு மாதுளை முத்துக்களை அப்படியே மென்று உண்ணக் கொடுங்கள். பழச்சாறாக அடித்து வடிகட்டுவதைவிட விதைகளுடன் மென்று உண்பதே முழு நார்ச்சத்தையும் தரும்.
+
+மாதவிடாய் காலங்களில் அதிக உடல் சோர்வோ அல்லது அதிகப் போக்கோ இருந்தால், மாதுளைத் தோல் கஷாயத்தைக் காலை வேளையில் வெதுவெதுப்பாக மூன்று நாட்கள் பருகி வர உடல் சமநிலை பெறும். வயிற்றுப் போக்கு ஏற்பட்டால் இதனை மோருடன் கலந்து பருகலாம்.
+
+மாதுளைத் தோல் மிகுந்த துவர்ப்பு உடையது என்பதால் மலச்சிக்கல் உள்ளவர்கள் கஷாயத்தைத் தவிர்த்துவிட்டு, நன்கு கனிந்த மாதுளம் பழ முத்துக்களை மட்டும் தாராளமாகச் சாப்பிடலாம். பூச்சி மருந்து இல்லாத நாட்டுப் பழங்களை நன்றாகக் கழுவிய பின்னரே தோலைக் காயவைக்க வேண்டும்.
+
+## நிறைவு ஆசீர்வாதம்
+
+ஒரு பழத்தின் முத்து முதல் தோல் வரை எதனையும் வீணாக்காமல் மருந்தாக மாற்றிய நம் தமிழ் மூதாட்டிகளின் அறிவு நமக்குக் கிடைத்த பெரும் பொக்கிஷமாகும். நாட்டுப் பழங்களைப் போற்றி நம் வீட்டுப் பெண்களின் ஆரோக்கியத்தைக் காப்போம்.
+
+அன்னை பராசக்தியின் அருளால் அனைத்து தாய்மார்களும் சகோதரிகளும் நல்ல இரத்த வளத்துடனும், உடல் உறுதியுடனும், மாறாத முகப் பொலிவுடனும் நீடூழி வாழ மனதாரப் பிரார்த்திக்கிறோம். நலமே சூழட்டும்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Radiant South Indian mother and teenage daughter smiling warmly holding a brass basket of fresh native pomegranates in courtyard
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Cut open native country pomegranate showing pale ruby pink arils nestled inside thin white inner pith membrane on banana leaf
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sun dried pomegranate rind pieces and fine reddish brown herbal powder stored neatly in glass jar beside brass spoon
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close up of glistening ruby pomegranate seeds in a small silver bowl radiating freshness and natural vitality in morning light
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Detailed view of whole native pomegranates with rustic leathery skin beside freshly peeled astringent rinds on wooden board
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm amber pomegranate peel decoction strained into a small brass cup alongside cumin seeds and palm candy crystals
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Hands carefully separating fresh pomegranate arils along with delicate white inner membrane into a clean brass bowl
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Cut pomegranate rinds spread evenly on clean white cotton cloth drying crisply under bright golden courtyard sunshine
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Grinding crisp sun dried pomegranate peels into fine smooth medicinal powder using a traditional dry spice mortar
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Simmering dried pomegranate peel pieces and cumin seeds gently in water inside a small brass vessel over low flame
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mother serving a bowl of fresh country pomegranate arils to her daughter studying in sunlit traditional home veranda
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mixing warm pomegranate rind decoction gently with fresh churned buttermilk in a small earthen cup on kitchen counter
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Washing fresh native pomegranates thoroughly in clean water with a pinch of turmeric inside a wide brass basin
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Lush green pomegranate tree with red blossoms and ripening fruits growing in sunny South Indian backyard garden
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Healthy joyful women of three generations sitting together happily in warm traditional South Indian ancestral home
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Glowing brass oil lamp beside red hibiscus flowers and pomegranate fruit offering in peaceful household shrine

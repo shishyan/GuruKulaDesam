@@ -1,0 +1,62 @@
+# [P2_059] புரதமும் துத்தநாகமும் நிறைந்த பலாக்கொட்டை மசியல் & சாம்பார் ரகசியம்
+> **தொடர்**: 108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்  
+> **Thumbnail Badge**: `பாட்டி வைத்தியம்` | **Main Title**: `பலாக்கொட்டை சத்து`  
+> **Status**: `SCRIPT_READY`
+
+## பலாக்கொட்டையின் ஊட்டச்சத்து மகிமை
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! தமிழ் மண்ணின் முக்கனிகளில் ஒன்றான இனிய பலாப்பழத்தைச் சுவைத்த பின் நாம் சாதாரணமாக ஒதுக்கிவிடும் பலாக்கொட்டைக்குள் ஒளிந்திருக்கும் இணையற்ற ஊட்டச்சத்து ரகசியங்களை இன்று விரிவாகக் காண்போம்.
+
+நம் பாட்டிமார்கள் கோடைக்காலத்தில் கிடைக்கும் பலாக்கொட்டைகளை ஒருபோதும் குப்பையில் வீசாமல், வெயிலில் பக்குவமாக உலர்த்தி ஆற்று மணலில் சேமித்து வைத்து மழைக்காலத்திற்கான சத்தான மசியலாகவும் சாம்பாராகவும் சமைத்து வந்தார்கள்.
+
+தாவரப் புரதமும் துத்தநாகச் சத்தும் இரும்புச் சத்தும் ஒருங்கே நிறைந்த இந்தப் பலாக்கொட்டை, நம் வீட்டுப் பெண்களின் அடர்த்தியான கூந்தல் வளர்ச்சிக்கும் நோய் எதிர்ப்புச் சக்திக்கும் மிகச்சிறந்த இயற்கை உணவாகும்.
+
+## சித்த மருத்துவமும் செரிமான விதியும்
+
+பலாக்கொட்டையில் இயற்கையாக உள்ள துத்தநாகம் மற்றும் மக்னீசியம் சத்துக்கள் உடல் தசைகளுக்கு உறுதியையும் தோலுக்குப் பளபளப்பையும் தருவதோடு, வளரும் குழந்தைகளின் உடல் எடையை ஆரோக்கியமாகக் கூட்டப் பெரிதும் உதவுகின்றன.
+
+ஆனால் பலாக்கொட்டை இயல்பிலேயே சற்று வாயுத் தன்மை கொண்டது என்பதால், அதை அப்படியே பச்சையாக நீரில் வேகவைக்காமல் இளவெயிலில் காயவைத்து மண்சட்டியில் வறுத்துச் சமைப்பதே நம் தமிழ் மருத்துவ மரபாகும்.
+
+அதனுடன் தோல் சீவிய இஞ்சி, பூண்டு, நல்பெருங்காயம் மற்றும் சீரகம் ஆகிய வாயு நீக்கும் அஞ்சறைப்பெட்டிப் பொருட்களைச் சேர்த்துச் சமைக்கும்போது, வயிற்று உப்புசம் சிறிதுமின்றி முழுப் புரதமும் உடலில் எளிதாகச் சேர்கிறது.
+
+## மசியல் மற்றும் சாம்பார் செய்முறை
+
+முதலில் பலாக்கொட்டைகளை இரண்டு அல்லது மூன்று நாட்கள் இளவெயிலில் நன்கு உலர்த்தி, மேலே உள்ள வெள்ளைத் தோலை உரித்துவிட்டு, வெறும் வாணலியில் பொன்னிறப் புள்ளிகள் வரும் வரை மிதமான தீயில் வறுத்துக் கொள்ளுங்கள்.
+
+பின்னர் அதன் மெல்லிய செந்நிறத் தோலை இலேசாகச் சுரண்டி நீக்கித் துண்டுகளாக நறுக்கி, மஞ்சள் தூளும் பெருங்காயமும் சேர்த்துக் குழைய வேகவைத்து மர மத்தால் மசித்தால் அடிப்படை மசியல் தயாராகிவிடும்.
+
+வாணலியில் செக்கு நல்லெண்ணெய் விட்டு கடுகு, உளுத்தம்பருப்பு, கறிவேப்பிலை, தட்டிய இஞ்சி பூண்டு, சின்ன வெங்காயம் வதக்கி, மசித்த பலாக்கொட்டையோடு மிளகு சீரகப் பொடி தூவிப் பிரட்டினால் அருமையான பலாக்கொட்டை மசியல் தயார்.
+
+## சாம்பார் மணமும் பரிமாறும் முறையும்
+
+மணக்கும் சாம்பார் வைக்கும்போது துவரம்பருப்புடன் வேகவைத்த பலாக்கொட்டை மற்றும் இளம் முருங்கைக்காய் சேர்த்து, புளிக்கரைசலும் வீட்டுச் சாம்பார் பொடியும் இட்டுக் கொதிக்க வைத்தால் இணையற்ற சுவையும் பாரம்பரிய மணமும் வீடெங்கும் நிறைந்திருக்கும்.
+
+நண்பகல் உணவு வேளையில் ஆவி பறக்கும் சூடான சாதம், முருங்கைக்காய் பலாக்கொட்டை சாம்பார், பலாக்கொட்டை மசியல் மற்றும் ஒரு தேக்கரண்டி பசு நெய் சேர்த்து உண்பது உடலுக்கு நீண்ட நேரத் தெம்பை அளிக்கும்.
+
+செரிமானம் மிகச் சீராக நடப்பதற்காக இரவு நேரத்தில் பலாக்கொட்டை உணவுகளைத் தவிர்த்து, பகல் பொழுதில் அளவோடு குடும்பத்தினர் அனைவரும் ஒன்றாக அமர்ந்து மகிழ்ச்சியாகச் சுவைப்பதே சிறந்த ஆரோக்கிய வழியாகும்.
+
+## மங்கல நிறைவு வாழ்த்து
+
+பருவகாலத்தில் இயற்கை அன்னை நமக்கு இலவசமாகத் தரும் இத்தகைய சத்து மிகுந்த விதை உணவுகளை அலட்சியம் செய்யாமல் பயன்படுத்தினால், அதிகச் செலவின்றி உயர்ந்த புரதச் சத்தை நம் குடும்பத்திற்கு அளிக்கலாம்.
+
+சிக்கனமும் மருத்துவச் சத்தும் நிறைந்த நம் முன்னோர்களின் உன்னத சமையல் கலையைப் போற்றிப் பாதுகாத்து, நம் இல்லத்தில் உடல் உறுதியும் உற்சாகமும் எப்போதும் நிலைத்திருக்கச் செய்வோம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ripe golden jackfruit bulbs alongside glossy brown jackfruit seeds in woven bamboo basket in sunlit South Indian courtyard
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Jackfruit seeds drying neatly on clean cotton cloth under warm morning sunlight in traditional tiled-roof village home
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Elderly Tamil grandmother peeling outer white husks from sun-dried jackfruit seeds with loving care on brass plate
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Dry roasting peeled jackfruit seeds in seasoned iron kadai over gentle flame until golden brown spots appear
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Crushed fresh ginger, peeled garlic cloves, aromatic asafoetida lump, black pepper, and cumin seeds arranged on dark stone slab
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Halved roasted jackfruit seeds simmering in clay pot with turmeric powder and pinch of asafoetida until soft and tender
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Coarsely mashing tender boiled jackfruit seeds with wooden mathu inside warm earthen vessel, rich creamy texture
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sizzling mustard seeds, urad dal, curry leaves, crushed ginger, garlic, and shallots in golden gingelly oil in iron pan
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tossing mashed jackfruit seeds with aromatic ginger garlic tempering and freshly ground pepper cumin powder in clay chatti
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional clay pot of bubbling drumstick and jackfruit seed sambar garnished with fresh green coriander leaves
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ladling thick fragrant palakottai murungakkai sambar over steaming white rice on vibrant green banana leaf at midday
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close up of golden jackfruit seed masiyal served beside sambar rice with drop of melted cow ghee on banana leaf
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Happy Tamil family enjoying wholesome seasonal midday meal together on floor mats in airy heritage dining hall
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Storing extra sun-dried jackfruit seeds cleanly in earthen jar inside cool traditional pantry for rainy season cooking
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mother and grandmother sharing traditional culinary wisdom happily in warm sunlit kitchen with brass vessels
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Glowing brass oil lamp beside wooden spice box and earthen cooking vessels in peaceful Tamil home prayer nook

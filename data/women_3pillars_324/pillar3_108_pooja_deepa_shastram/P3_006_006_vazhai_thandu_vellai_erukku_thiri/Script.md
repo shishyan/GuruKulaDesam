@@ -1,0 +1,62 @@
+# [P3_006] வாழைத் தண்டுத் திரி, வெள்ளெருக்குத் திரி & மஞ்சள் துணித் திரியின் வழிபாட்டுப் பலன்கள்
+> **தொடர்**: 108 பூஜை அறை & தீப சாஸ்திர ரகசியங்கள்  
+> **Thumbnail Badge**: `தீப சாஸ்திரம்` | **Main Title**: `புனித திரி வகைகள்`  
+> **Status**: `SCRIPT_READY`
+
+## அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! நம் இல்லத் தீப வழிபாட்டில் விளக்கில் ஊற்றும் நெய்யும் எண்ணெயும் எவ்வளவு முக்கியமோ, அதே அளவு நாம் தேர்ந்தெடுத்து இடும் திரியின் தன்மையும் மிக உயர்ந்த பலன்களைத் தருகிறது.
+
+அன்றாடம் ஏற்றும் பருத்திப் பஞ்சுத் திரியோடு, நம் முன்னோர்கள் குறிப்பிட்ட குடும்ப நலன்களுக்காக வாழைத் தண்டுத் திரி, வெள்ளெருக்குத் திரி மற்றும் மஞ்சள் துணித் திரி ஆகியவற்றைப் பயன்படுத்தி வந்தார்கள்.
+
+ஒவ்வொரு புனிதத் தாவர நாரும் தனித்துவமான தெய்வீக அதிர்வலையைத் தன்னகத்தே கொண்டிருப்பதால், எந்தத் தெய்வத்திற்கு எந்தத் திரி உகந்தது என்பதையும் அதன் வழிபாட்டு முறையையும் விரிவாக அறிந்துகொள்வோம்.
+
+## வாழை வெள்ளெருக்கு
+
+தன் கன்றை ஈன்று வாழையடி வாழையாகக் குலம் தழைக்கச் செய்யும் வாழைத் தண்டின் நாரிலிருந்து தயாரிக்கப்படும் திரி, நம் குலதெய்வ வழிபாட்டிற்கும் செந்தில் ஆண்டவன் முருகப்பெருமான் வழிபாட்டிற்கும் மிகச் சிறந்ததாகும்.
+
+இந்த வாழைத் தண்டுத் திரியில் பசு நெய் தீபம் ஏற்றி மனமுருக வழிபடும்போது, மழலைச் செல்வம் வேண்டுவோருக்கு நல்லருள் கிட்டுவதுடன் குடும்ப உறவுகளில் நிலவும் சிறு மனக்கசப்புகள் நீங்கி ஒற்றுமை பிறக்கிறது.
+
+அதேபோல் சூரியனின் ஒளியாற்றல் நிரம்பிய வெள்ளெருக்கு மரத்தின் பட்டையிலிருந்து எடுக்கப்படும் வெள்ளெருக்குத் திரி, முழுமுதற் கடவுளான விநாயகருக்கும் சிவபெருமானுக்கும் உகந்ததாகக் குழந்தைகளின் கல்வி அறிவையும் காரிய வெற்றியையும் மேம்படுத்துகிறது.
+
+## மஞ்சள் திரி
+
+சாயம் கலக்காத சுத்தமான வெள்ளைப் பருத்தித் துணியைக் கஸ்தூரி மஞ்சள் அல்லது விரலி மஞ்சள் கரைத்த நீரில் நனைத்து, சுத்தமான நிழலில் உலர்த்திக் கையால் திரிப்பது மஞ்சள் துணித் திரி எனப்படும்.
+
+மங்களத்தின் வடிவமான இந்த மஞ்சள் துணித் திரி, ஆதிபராசக்தி, மாரியம்மன், காமாட்சி அம்மன் ஆகிய பெண் தெய்வங்களின் வழிபாட்டிற்கும், சுமங்கலித் தாய்மார்களின் மாங்கல்ய பலத்திற்கும் நோய் எதிர்ப்புச் சக்திக்கும் பேரருள் தருவதாகும்.
+
+இவ்வாறு மூலிகை மற்றும் இயற்கைத் தாவர நார்களால் உருவாக்கப்பட்ட திரிகள் விளக்கில் எரியும்போது எழும் மிக மென்மையான நறுமணம், பூஜை அறையின் காற்றையும் நம் சிந்தனையையும் ஒருசேரத் தூய்மையாக்குகிறது.
+
+## வழிபாட்டு முறை
+
+இந்தச் சிறப்புத் தாவர நார்த் திரிகள் பருத்திப் பஞ்சை விடச் சற்றுக் கடினமான அமைப்பைக் கொண்டிருப்பதால், விளக்கு ஏற்றுவதற்குப் பத்து நிமிடங்கள் முன்பே எண்ணெயில் அல்லது நெய்யில் நன்கு ஊறவைக்க வேண்டும்.
+
+விநாயகருக்குச் சதுர்த்தித் திதியில் வெள்ளெருக்குத் திரியும், செவ்வாய்க்கிழமை மற்றும் கிருத்திகையில் முருகனுக்கு வாழைத் தண்டுத் திரியும், வெள்ளிக்கிழமையில் அம்பிகைக்கு மஞ்சள் துணித் திரியும் ஏற்றி வழிபடுவது சிறந்த குடும்ப நடைமுறையாகும்.
+
+எந்தத் திரியைப் பயன்படுத்தினாலும் விளக்கைச் சுத்தமாகத் துடைத்து மஞ்சள் குங்குமம் இட்டு ஏற்ற வேண்டும், வழிபாடு முடிந்த பின் ஒருபோதும் வாயால் ஊதாமல் மலர் கொண்டு சாந்தமாகக் குளிரவைக்க வேண்டும்.
+
+## மங்கள வாழ்த்து
+
+நம் தமிழ் மண்ணில் விளையும் மூலிகைத் தாவரங்களையே இறைவனுக்கு ஞான ஒளியாக அர்ப்பணிக்கும் இந்த நுட்பமான தீப சாஸ்திரம், இயற்கையோடு இணைந்த நம் தெய்வீக வாழ்வியலுக்குச் சிறந்த சான்றாகும்.
+
+விநாயகப் பெருமான், வடிவேல் முருகன் மற்றும் அம்பிகையின் திருவருளால் உங்கள் இல்லத்தில் பூரண ஆரோக்கியமும், நன்மக்கட்பேறும், மங்களமும் எப்போதும் நிறைந்திட இறைவனை வேண்டுகிறோம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Three traditional sacred wicks banana fiber white madar fiber and turmeric cotton arranged on brass tray
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Peaceful South Indian home pooja room with Vinayagar Murugan and Amman idols lit by brass lamps
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Dignified Tamil grandmother preparing natural plant fiber wicks neatly on clean woven mat
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close up of fibrous banana stem fibers drawn gently and twisted into smooth sacred lamp wicks
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden brass Vel and Murugan shrine illuminated by warm flame from banana stem fiber wick
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred white madar plant flowers and bark fiber wicks beside bronze Lord Ganesha idol
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Bright ghee flame burning steadily on white madar wick before flower adorned Shiva Lingam and Ganesha
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Hands dipping pure white cotton cloth strips into fragrant golden turmeric water in brass bowl
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Turmeric dyed yellow cotton wicks drying neatly in soft shade beside fresh neem and jasmine flowers
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Glowing Kamakshi Amman brass lamp lit with yellow turmeric cloth wick on Friday evening
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Fingers pre soaking natural plant fiber wicks carefully in sesame oil inside clean brass agal lamps
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil woman applying sandalwood paste and kumkum dots to polished brass lamps on wooden altar
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Family offering hibiscus and jasmine flowers before Ganesha Murugan and Amman shrines at dusk
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Gently cooling down lamp wick using a fresh flower stem respectfully according to tradition
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm golden glow of three sacred lamps illuminating serene Tamil household prayer room
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close up of radiant brass Ganesha and Amman idols reflecting peaceful golden deepam flames

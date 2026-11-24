@@ -1,0 +1,62 @@
+# [P1_064] குன்றக்குடி தேனாட்சி அம்மன் & பிள்ளையார்பட்டி வாடாமலர் மங்கை வரலாறு
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `தேனாட்சி அம்மன்`  
+> **Status**: `SCRIPT_READY`
+
+## மங்கல அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! செட்டிநாட்டுத் திருத்தலங்களின் மகுடமாக விளங்கும் குன்றக்குடி தேனாட்சி அம்மன் மற்றும் பிள்ளையார்பட்டி வாடாமலர் மங்கைத் தாயின் இனிமையான அருள் வரலாற்றை, இத்தொகுப்பின் மங்கல நிறைவாக இன்று நாம் தரிசிக்கப் போகிறோம்.
+
+குன்றக்குடியில் சண்முகநாதப் பெருமானின் அருகே தேனினும் இனிய அருளை வழங்கும் தேனாட்சி அம்மனும், அருகிலுள்ள பிள்ளையார்பட்டியில் கற்பக விநாயகர் திருக்கோவிலில் வாடாத மலர் போல வாழ்வைச் செழிக்கச் செய்யும் வாடாமலர் மங்கையும் அருள்பாலிக்கின்றனர்.
+
+அன்னையும், ஆனைமுகனும், ஆறுமுகனும் ஒருங்கே அருள்புரியும் இவ்விரு புண்ணியத் தலங்களையும் தரிசிப்பது, தாய்மார்களின் வாழ்வில் தடைகளைத் தகர்த்துத் தேன் போன்ற இனிமையையும் வளத்தையும் சேர்க்கும்.
+
+## குன்றக்குடி தேனாட்சி அம்மன் வரலாறு
+
+மயில் வடிவத்திலேயே அமைந்த குன்றக்குடி மலை மீது சண்முகநாதப் பெருமான் வள்ளி தெய்வானையுடன் வீற்றிருக்க, மலையடிவாரத்தில் உள்ள தேனாற்று நதிக்கரையில் தென் ஆட்சி நாயகியாகத் தேனாட்சி அம்மன் தனிப்பெரும் காவல் தெய்வமாக எழுந்தருளியுள்ளாள்.
+
+பாண்டிய மன்னர்களும் மருது பாண்டிய சகோதரர்களும் போருக்குச் செல்லும் முன்பாகத் தேனாட்சி அம்மனை வணங்கி ஆசி பெற்ற வரலாற்றுப் பெருமை இத்தலத்திற்கு உண்டு. நகரத்தார் பெருமக்களின் உயிர்நாடியான பிரார்த்தனைத் தலமாகவும் இது விளங்குகிறது.
+
+தன்னைச் சரணடையும் பக்தர்களின் வாழ்வில் உள்ள கசப்புகளை மாற்றி, தேனைப் போல இனிமையான நல்வாழ்வையும் வீரத்தையும் வழங்குவதால் தேனாட்சி அம்மன் என்ற திருநாமம் மக்களின் நாவில் எப்போதும் ஒலிக்கிறது.
+
+## பிள்ளையார்பட்டி வாடாமலர் மங்கை மகிமை
+
+குன்றக்குடிக்கு மிக அருகே அமைந்துள்ள பிள்ளையார்பட்டி குடைவரைக் கோவிலில், ஆயிரத்து அறுநூறு ஆண்டுகள் பழமையான கற்பக விநாயகர் வடக்கு நோக்கி வீற்றிருந்து கேட்ட வரங்களைக் கற்பக விருட்சம் போல வாரி வழங்குகிறார்.
+
+இத்திருத்தலத்தில் திருவீசர் எனப்படும் சிவபெருமானோடு இணைந்து, வாடாமலர் மங்கை என்ற சிவகாமி அம்மன் தனிச் சன்னதியில் கிழக்கு நோக்கி அருள்பாலிக்கிறாள். என்றும் வாடாத முகமலர்ச்சியையும் மாங்கல்ய பாக்கியத்தையும் அருளும் தாய் இவள்.
+
+பெண்களின் திருமணத் தடை நீங்கவும், புத்திர பாக்கியம் கிட்டவும் வாடாமலர் மங்கைக்குப் பட்டுச் சேலை சாற்றியும், கற்பக விநாயகருக்குக் கொழுக்கட்டை படைத்தும் வழிபடுவது தலைமுறை தலைமுறையாகத் தொடரும் புனித மரபாகும்.
+
+## வழிபாட்டு முறை
+
+குடும்பத்தில் கணவன் மனைவி அன்பு தேன் போல இனிக்கவும், பிள்ளைகள் கல்வியில் சிறந்து விளங்கவும் தாய்மார்கள் வெள்ளிக்கிழமை மற்றும் சதுர்த்தித் திருநாட்களில் இத்தெய்வங்களை நினைத்து இல்லத்தில் நெய் தீபம் ஏற்றலாம்.
+
+பூஜையில் தூய மலைத்தேன், பால், வாடாமல்லி மற்றும் செந்தாமரை மலர்களைப் படைத்து, தேங்காய் பூரணம் வைத்த மோதகம் அல்லது திணைப் பாயசம் நிவேதனம் செய்து வழிபடுவது மிகச் சிறந்த பலனை நல்கும்.
+
+முதலில் கற்பக விநாயகரை வணங்கித் தடைகளை நீக்கிக் கொண்டு, பின்னர் வாடாமலர் மங்கை மற்றும் தேனாட்சி அம்மனைப் போற்றி வணங்கினால், எடுத்த நற்காரியங்கள் அனைத்தும் வெற்றிகரமாக நிறைவேறும்.
+
+## மங்கல வாழ்த்து
+
+குன்றக்குடி தேனாட்சி அம்மனின் இனிமையான காவலும், பிள்ளையார்பட்டி வாடாமலர் மங்கை மற்றும் கற்பக விநாயகரின் கற்பக அருளும் உங்கள் இல்லங்களில் எந்நாளும் நிறைந்து வழியட்டும்.
+
+வாடாத மலரைப் போல உங்கள் முகத்தில் புன்னகையும், உள்ளத்தில் நிம்மதியும், குடும்பத்தில் ஒற்றுமையும் செல்வச் செழிப்பும் என்றும் குறையாமல் தழைத்தோங்க இறைவனின் திருவடிகளைப் பணிகிறோம்.
+
+சண்முகநாதர் மற்றும் அம்பிகையின் அருளால் உங்கள் வாழ்வு தேனென இனிக்க மனமார வாழ்த்துகிறோம். உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Scenic widescreen shot of Kundrakudi peacock shaped hill temple rising above lush green palms at golden sunrise
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Graceful sanctum of Goddess Thenatchi Amman at Kundrakudi foothills glowing with brass lamps and flower garlands
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Historic rock cut Pillayarpatti temple entrance and calm stone teppakulam pond reflecting morning blue sky
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Majestic peacock perched atop sunlit granite boulder near Kundrakudi temple steps with distant green fields
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Historic carved granite pillars of Pandya era shrine illuminated by warm flickering oil lamps
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Pure golden forest honey in brass cup beside red hibiscus and jasmine flowers on silver tray
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ancient rock cut sanctum of Pillayarpatti Karpaga Vinayagar adorned with sandal paste and golden crown
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Radiant shrine of Goddess Vadamar Mangai draped in emerald silk saree with fresh blooming lotus garlands
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil women offering folded silk saree turmeric kumkum and flower garlands respectfully inside stone pillared hall
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Steaming white rice modakam kozhukattai dumplings and sweet millet payasam arranged neatly on green banana leaf
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil mother and children lighting brass kuthuvilakku lamp together in peaceful home pooja room
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Fresh purple globe amaranth vadamalli flowers and pink lotus blooms arranged beside brass bell and incense
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Happy South Indian family praying together with peaceful smiles inside sunlit granite temple corridor
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden evening lamps glowing warmly along steps of Kundrakudi hill shrine under clear twilight sky
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Serene reflection of Pillayarpatti temple gopuram shimmering in rippling sacred tank waters at dusk
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close devotional view of Amman lotus feet decked with fresh unwithering flowers turmeric and red kumkum

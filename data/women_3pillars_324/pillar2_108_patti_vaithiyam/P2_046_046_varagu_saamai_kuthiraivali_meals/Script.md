@@ -1,0 +1,62 @@
+# [P2_046] வரகு, சாமை, குதிரைவாலி சிறுதானியப் பொங்கல் மற்றும் தயிர் சாதம்
+> **தொடர்**: 108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்  
+> **Thumbnail Badge**: `பாட்டி வைத்தியம்` | **Main Title**: `சிறுதானிய உணவு`  
+> **Status**: `SCRIPT_READY`
+
+## முன்னுரை & சிறப்பு
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! நம் பழந்தமிழர் நிலங்களில் விளைந்த வரகு, சாமை மற்றும் குதிரைவாலி ஆகிய சிறுதானியங்கள் வெறும் உணவு அல்ல, அவை நம் முன்னோர்களின் உடல் உறுதியைக் காத்த உயிர்நாடிகள் ஆகும். இவற்றைச் சரியான பக்குவத்தில் சமைப்பதே ஆரோக்கியத்தின் இரகசியம்.
+
+பலரும் சிறுதானியங்களைச் சமைத்தால் வயிறு மந்தமாகிறது அல்லது உடல் சூடாகிறது என்று தயங்குகிறார்கள். அரிசியைப் போல உடனடியாகக் கழுவிக் குக்கரில் வைப்பதால் ஏற்படும் சிக்கல் இது. சிறுதானியங்களை ஊறவைத்துச் சமைக்கும் பாரம்பரிய விதியை அறிந்தால் அவை பஞ்சு போல மென்மையாகும்.
+
+நார்ச்சத்து முழுமையாக இளகி, நுண்ணூட்டச் சத்துக்கள் உடலில் சேரும் வகையில் ஆறு மணி நேரம் ஊறவைத்துச் சமைக்கும் சிறுதானிய வெண்பொங்கல் மற்றும் குளிர்ச்சியான தயிர் சாதம் பற்றி இன்று விரிவாக அறிவோம்.
+
+## பாட்டி வைத்திய அறிவியல்
+
+வரகு, சாமை மற்றும் குதிரைவாலி ஆகியவற்றில் வெள்ளை அரிசியைவிடப் பல மடங்கு அதிகமான நார்ச்சத்து, இரும்புச்சத்து, சுண்ணாம்புச்சத்து மற்றும் உயிர்ச்சத்துக்கள் நிறைந்துள்ளன. இவை மெதுவாகச் செரிமானம் ஆகி நீண்ட நேரத்திற்குப் பசியைக் கட்டுப்படுத்துகின்றன.
+
+சிறுதானியங்களின் வெளிப்புற அடுக்கில் இயற்கையான தடுப்பான்கள் இருக்கும். இவற்றை மண்பானை நீரில் குறைந்தது ஆறு மணி நேரம் ஊறவைக்கும்போது, அந்தக் கடினமான நார்ச்சத்து மென்மையடைந்து தானியத்தில் உள்ள இரும்பு மற்றும் சுண்ணாம்புச் சத்துக்கள் முழுமையாக விடுவிக்கப்படுகின்றன.
+
+இவ்வாறு ஊறவைத்துச் சமைக்கும் சிறுதானிய உணவு குடலுக்கு எவ்வித உஷ்ணமும் அளிக்காமல் எளிதில் செரிமானம் ஆகிறது. பெண்களின் இடுப்பு எலும்பு வலிமைக்கும், இரத்த விருத்திக்கும், உடல் எடைச் சமநிலைக்கும் இவை பெரிதும் உதவுகின்றன.
+
+## பாரம்பரிய செய்முறை
+
+காலை உணவிற்கு முதல் நாள் இரவே அல்லது மதிய உணவிற்குக் காலை விடியற்காலையிலேயே ஒரு ஆழாக்கு சாமை அல்லது வரகு அரிசியை இருமுறை கழுவி, மண் சட்டியில் மூன்று பங்கு சுத்தமான நீர் ஊற்றி ஆறு மணி நேரம் ஊறவைக்க வேண்டும். ஊறிய நீரிலேயே சத்துக்கள் இருப்பதால் அதனைக் கீழே ஊற்றாமல் அப்படியே சமையலுக்குப் பயன்படுத்த வேண்டும்.
+
+சிறுதானிய வெண்பொங்கல் செய்ய, ஊறிய வரகு அல்லது சாமையுடன் வறுத்த பாசிப்பருப்பு கால் பங்கு சேர்த்துக் குழைய வேகவைக்க வேண்டும். வாணலியில் பசு நெய் விட்டு முழு மிளகு, சீரகம், தட்டிய இஞ்சி, முந்திரி மற்றும் கறிவேப்பிலை தாளித்துப் பொங்கலில் கொட்டிக் கிளறினால் நறுமணம் கமழும் பொங்கல் தயார்.
+
+தயிர் சாதம் செய்ய, நன்கு ஊறி வெந்த குதிரைவாலிச் சாதத்தை ஆறவைத்து, சிறிது காய்ச்சி ஆறிய பாலும் புளிப்பில்லாத பசுந்தயிரும் சேர்த்துக் குழைக்க வேண்டும். அதில் கடுகு, உளுத்தம்பருப்பு, இஞ்சி, பெருங்காயம், கறிவேப்பிலை தாளித்து, மாதுளை முத்துக்கள் தூவினால் குளிர்ச்சியான தயிர் சாதம் தயாராகிவிடும்.
+
+## இல்லறப் பயன்பாட்டு முறை
+
+ஒரே நாளில் எல்லாச் சிறுதானியங்களையும் ஒன்றாகக் கலந்து சமைக்கக் கூடாது. ஒரு வாரம் வரகு, அடுத்த வாரம் சாமை, அதற்கடுத்த வாரம் குதிரைவாலி என ஒவ்வொன்றாகத் தனித்தனியே சமைத்து உண்பதே சித்த மருத்துவம் கூறும் சரியான முறையாகும்.
+
+காலை உணவாக மிளகு சீரகம் மணக்கும் சாமை வெண்பொங்கலுடன் கத்திரிக்காய் கொத்சு அல்லது தேங்காய்ச் சட்னி பரிமாறலாம். மதிய நேர வெயிலுக்குக் குதிரைவாலி தயிர் சாதம் உடலுக்கு மிகுந்த குளிர்ச்சியையும் நிறைவையும் தரும்.
+
+சிறுதானிய உணவு உண்ணும் நாட்களில் போதுமான அளவு மண்பானை நீர் மற்றும் நீர்மோர் பருகுவது நார்ச்சத்து சீராகச் செயல்பட உதவும். ஆறு மணி நேர ஊறவைத்தல் என்ற ஒரே ஒரு எளிய பழக்கம் உங்கள் சிறுதானியச் சமையலை அமிர்தமாக மாற்றிவிடும்.
+
+## நிறைவு ஆசீர்வாதம்
+
+நம் மண்ணின் பாரம்பரிய சிறுதானியங்களை மீண்டும் நம் வீட்டு அடுப்பங்கரைக்கு அழைத்து வருவது நம் உடல் நலத்திற்கும் நம் விவசாயிகளின் வாழ்வுக்கும் நாம் செய்யும் பெரும் தொண்டாகும். தாய்மார்களின் கரங்களால் ஆரோக்கியம் மலரட்டும்.
+
+இறைவனின் திருவருளால் உங்கள் இல்லங்களில் என்றும் தானியச் செல்வமும், வற்றாத உடல் உறுதியும், குடும்ப ஒற்றுமையும் செழித்தோங்க மனதார வாழ்த்துகிறோம். பாரம்பரிய உணவுகளே நம் தலைமுறையின் கவசம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Smiling South Indian homemaker soaking unpolished heritage millets in a red clay pot inside warm sunlit traditional kitchen
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Three small brass bowls holding golden kodo millet varagu, little millet samai, and barnyard millet kuthiraivali grains on mat
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Steaming ghee millet ven pongal and creamy millet curd rice topped with ruby pomegranate seeds served on banana leaf
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close up of tiny golden samai and varagu millet grains alongside roasted yellow moong dal and black peppercorns
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Clay pot filled with clean water soaking unpolished millets peacefully under woven bamboo lid on wooden kitchen counter
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Healthy Tamil woman preparing wholesome millet meal effortlessly in airy heritage kitchen lined with brass and clay vessels
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Hands gently rinsing little millet grains once in a brass vessel and pouring clean soaking water into terracotta pot
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tempering whole black pepper, cumin seeds, ginger, cashews, and curry leaves in pure golden ghee over warm flame
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Folding fragrant ghee tempering into soft creamy cooked samai moong dal ven pongal inside a heavy brass pot
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mixing soft cooked barnyard millet with fresh white curd, tempered mustard, curry leaves, and ruby pomegranate arils
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Three distinct labeled ceramic jars storing varagu, samai, and kuthiraivali separately on tidy wooden kitchen shelf
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Serving hot millet ven pongal with coconut chutney and tangy brinjal gotsu on fresh green banana leaf for breakfast
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mother packing wholesome cooling millet curd rice into a traditional stainless steel tiffin carrier in morning kitchen
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden sunlit millet stalks swaying gently in fertile Tamil Nadu countryside farmland under clear blue sky
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Joyful family enjoying warm traditional millet pongal together sitting on floor mats in peaceful ancestral home
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Glowing brass lamp beside brass measure overflowing with auspicious grains and flowers in serene prayer room

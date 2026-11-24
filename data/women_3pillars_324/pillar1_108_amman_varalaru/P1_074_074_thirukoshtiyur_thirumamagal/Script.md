@@ -1,0 +1,62 @@
+# [P1_074] திருக்கோஷ்டியூர் திருமாமகள் தாயார் வரலாறு & எட்டெழுத்து மந்திரக் கருணை
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `திருமாமகள் தாயார்`  
+> **Status**: `SCRIPT_READY`
+
+## அறிமுகம் & தாயார் திருவருள்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! சிவகங்கை மாவட்டத்தில் அமைந்துள்ள திருக்கோஷ்டியூர் திவ்யதேசத்தில் அருள்பாலிக்கும் திருமாமகள் தாயாரின் எல்லையில்லா தாய்மைக் கருணையையும், எட்டெழுத்து மந்திரத்தின் உயர்ந்த மகிமையையும் இன்று நாம் மனதாரத் தியானிக்கப் போகிறோம்.
+
+குடும்பத்தின் அமைதிக்கும் செல்வச் செழிப்பிற்கும் ஆதாரமாக விளங்கும் பெண்களுக்கு, இறைவனின் திருநாமமும் தாயாரின் திருவருளும் எத்துணைப் பெரிய மனவலிமையையும் பாதுகாப்பையும் தருகின்றன என்பதை இத்திருக்கோயிலின் வரலாறு நமக்கு மிக அழகாக எடுத்துரைக்கின்றது.
+
+சௌமிய நாராயணப் பெருமாளோடு இணைந்து திருமாமகள் நாச்சியார் வீற்றிருக்கும் இத்தலம், சாதி மத வேறுபாடின்றி ஆண் பெண் அனைவருக்கும் முக்தி நெறியை வழங்கிய பெருமைக்குரிய புண்ணிய பூமியாகத் திகழ்கின்றது.
+
+## தல புராணம் & தேவர்கள் ஆலோசனை
+
+முற்காலத்தில் இரணியகசிபுவின் கொடுமைகளைத் தாங்க முடியாத தேவர்களும் முனிவர்களும், கதம்ப மகரிஷியின் தவச்சாலையில் உலக உயிர்களைக் காப்பதற்காக ஒன்று கூடி ஆலோசனை நடத்திய திருத்தலமே திருக்கோஷ்டியூர் என்று புராண வரலாறு போற்றுகின்றது.
+
+கோஷ்டி என்றால் திருக்கூட்டம் என்று பொருள், தேவர்கள் அனைவரும் கூடித் திருமாலிடம் சரணடைந்ததால் இத்தலம் திருக்கோஷ்டியூர் எனப் பெயர் பெற்றது, இங்கு அஷ்டாங்க விமானத்தின் கீழ் பெருமாள் நின்ற, அமர்ந்த, கிடந்த ஆகிய மூன்று திருக்கோலங்களில் அருள்கிறார்.
+
+தாமரை மலரில் சாந்தமே வடிவாய் வீற்றிருக்கும் திருமாமகள் தாயார், தன்னை நாடி வரும் அடியார்களின் வறுமையையும் மனக்கவலையையும் நீக்கி, இல்லறத்தில் மங்கலமும் நிம்மதியும் நிலைத்திடத் தாயுள்ளத்தோடு வரம் அருள்கிறாள்.
+
+## ராமானுஜரின் எட்டெழுத்துக் கருணை
+
+திருக்கோஷ்டியூர் நம்பிகளிடம் எட்டெழுத்து மந்திரத்தின் ஆழ்ந்த உட்பொருளைக் கற்பதற்காக, ஸ்ரீராமானுஜர் திருவரங்கத்திலிருந்து பதினெட்டு முறை கடும் வெயிலிலும் நடந்தே வந்து பணிவுடன் காத்திருந்து உபதேசம் பெற்ற வரலாறு நம் நெஞ்சை நெகிழச் செய்கின்றது.
+
+யாருக்கும் வெளியிடக் கூடாது என்ற நிபந்தனையோடு பெற்ற ஓம் நமோ நாராயணாய எனும் திருமந்திரத்தை, ஆலய மதில் கோபுரத்தின் மேலே ஏறி நின்று தாய்மார்கள் உட்பட அனைத்து மக்களுக்கும் ராமானுஜர் உரக்க உபதேசித்தார்.
+
+குருவின் கட்டளையை மீறியதால் தனக்கு நரகம் கிடைத்தாலும் பரவாயில்லை, உலக மக்கள் அனைவரும் வைகுண்டப் பேறு பெற வேண்டும் என்ற ராமானுஜரின் பரந்த உள்ளத்தைக் கண்டு நம்பிகள் அவரை எம்பெருமானார் என்று ஆரத்தழுவிப் போற்றினார்.
+
+## இல்லற வழிபாடு & அகல் விளக்கு முறை
+
+திருக்கோஷ்டியூரில் வேண்டிய பிரார்த்தனை நிறைவேறியதும் நெய் அகல் விளக்கு ஏற்றி வைத்து மற்றவர்களுக்கு வழங்கும் மரபு மிகவும் சிறப்புடையது, அதனை நம் இல்லத்துப் பூஜையறையிலும் வெள்ளிக்கிழமைகளில் தூய மனதோடு நாம் கடைப்பிடிக்கலாம்.
+
+மஞ்சள் குங்குமம் இட்ட புதிய மண் அகலில் தூய பசு நெய் ஊற்றிப் பஞ்சுத் திரியிட்டு விளக்கேற்றி, திருமாமகள் தாயாரையும் சௌமிய நாராயணப் பெருமாளையும் நினைத்து எட்டெழுத்து மந்திரத்தை இருபத்தி ஏழு முறை செபிக்கலாம்.
+
+காய்ச்சிய பசும்பாலில் சிறிது ஏலக்காயும் பனங்கற்கண்டும் சேர்த்து நைவேத்தியம் படைத்து இல்லத்தார் அனைவருக்கும் அன்போடு வழங்கினால், வீட்டில் மன ஒற்றுமையும் கல்விச் செல்வமும் மங்கல ஒளியும் நாள்தோறும் பெருகும்.
+
+## நிறைவு ஆசி & மங்கல வாழ்த்து
+
+எல்லா உயிர்களிடத்தும் சமமான அன்பு செலுத்துவதே உண்மையான பக்தி என்ற உயர்ந்த தத்துவத்தை நமக்கு உணர்த்தும் திருக்கோஷ்டியூர் திருமாமகள் தாயாரின் திருவடிகளை நம் குடும்பத்தோடு பணிந்து வணங்குவோம்.
+
+அன்னையின் கருணைப் பார்வையால் உங்கள் இல்லங்களில் நோய் நொடிகள் நீங்கி, நன்மக்கட்பேறும் மாங்கல்ய பலமும் நிறைந்த தனதானியச் செல்வமும் என்றென்றும் குறைவின்றித் தழைத்தோங்கட்டும்.
+
+திருக்கோஷ்டியூர் எம்பெருமானும் திருமாமகள் நாச்சியாரும் உங்கள் இல்லத்தை நாள்தோறும் காத்தருள்வார்களாக! உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Widescreen cinematic view of ancient Thirukoshtiyur Sowmya Narayana Perumal temple ashtanga vimanam glowing in warm golden sunrise light
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Dignified South Indian women in silk sarees walking peacefully with brass lamp plates through carved stone temple pillared hall
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred shrine of Goddess Thirumamagal Thayar seated gracefully on blooming pink lotus adorned with jasmine garlands and gold jewelry
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Puranic celestial gathering of luminous sages and devas in serene prayer before Lord Vishnu in radiant golden temple sanctum
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Magnificent three tiered ashtanga vimanam tower of Thirukoshtiyur temple reflecting softly in tranquil temple tank waters at dawn
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close view of Goddess Mahalakshmi blessing devotees with compassionate smile surrounded by glowing brass oil lamps and lotus petals
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Young Saint Ramanuja walking barefoot with humble devotion along dusty ancient Tamil temple pathway carrying wooden ascetic staff
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Saint Ramanuja receiving sacred mantra initiation humbly at the feet of elderly acharya Thirukoshtiyur Nambi inside stone mandapam
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Saint Ramanuja standing atop tall sculpted temple gopuram proclaiming sacred Ashtakshara mantra to joyful crowd of women and families below
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Acharya Thirukoshtiyur Nambi embracing Saint Ramanuja with tears of joy on temple courtyard steps in warm morning sunlight
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional Tamil homemaker decorating small clay agal lamp with turmeric and kumkum dots on clean wooden pooja altar
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close shot of pure cow ghee being poured into earthen lamp and lit with steady golden flame before Lakshmi portrait
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Serene mother and daughter chanting softly with tulsi beads beside glowing brass kuththu vilakku in peaceful home shrine
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Steaming silver cup of cardamom milk sweetened with palm rock candy offered with fresh lotus flowers on banana leaf
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm golden light filling peaceful Tamil family home courtyard as grandmother blesses young woman with sacred kumkum
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Radiant golden darshan of Thirumamagal Thayar and Sowmya Narayana Perumal bathed in camphor flame light with falling flower petals

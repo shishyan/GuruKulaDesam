@@ -1,0 +1,62 @@
+# [P1_101] சித்ரா பௌர்ணமி வரலாறு & சித்திரகுப்தன், அம்பிகை வழிபாட்டு மகிமை
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `விரத மகிமை` | **Main Title**: `சித்ரா பௌர்ணமி`  
+> **Status**: `SCRIPT_READY`
+
+## சித்ரா பௌர்ணமி அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! தமிழ் வருடத்தின் முதல் மாதமான சித்திரையில், சித்திரை நட்சத்திரமும் முழு நிலவும் இணையும் புண்ணியத் திருநாளே சித்ரா பௌர்ணமி ஆகும். இப்புனித நன்னாள் ஒவ்வொரு குடும்பத்தின் தர்மக் கணக்கையும் உயர்த்தும் தெய்வீக வாய்ப்பாகும்.
+
+சூரிய பகவான் மேஷ ராசியில் உச்சம் பெற்றிருக்கும் இக்காலத்தில், சந்திரனும் முழு ஒளியோடு குளிர்ந்த கதிர்களைப் பொழிகிறான். இந்த இரண்டு ஒளிக்கதிர்களும் இணையும் நாளில் அம்பிகையை வழிபடுவது நம் இல்லத்தில் மன அமைதியையும் நல்வாழ்வையும் தழைக்கச் செய்கிறது.
+
+நம் முன்னோர்கள் காலம்காலமாக இந்நாளில் ஆற்றங்கரைகளிலும் கோவில்களிலும் நிலாச்சோறு பகிர்ந்து உண்ணும் மரபைப் போற்றி வந்தார்கள். தர்ம சிந்தனையோடு அன்னதானம் செய்யும் பெண்களின் குடும்பத்தை அம்பிகையும் சித்திரகுப்தப் பெருமானும் என்றென்றும் காத்தருள்கிறார்கள்.
+
+## சித்திரகுப்தர் தோற்ற வரலாறு
+
+புராண வரலாற்றின்படி, கயிலாய மலையில் பார்வதி தேவி ஒரு பொன்னிறப் பலகையில் அழகிய ஆண் ஓவியம் ஒன்றை வரைந்தாள். அம்பிகையின் அருட்பார்வையும் சிவபெருமானின் திருவருளும் இணைந்ததால் அந்தச் சித்திரத்திலிருந்து ஒளிமயமான இளைஞர் ஒருவர் உயிர் பெற்று எழுந்தார்.
+
+சித்திரத்திலிருந்து தோன்றியதால் அவருக்குச் சித்திரகுப்தர் என்ற திருப்பெயரைச் சூட்டி, உயிர்களின் புண்ணிய பாவக் கணக்குகளை எழுதும் பொறுப்பை இறைவன் வழங்கினார். பிரம்மதேவரின் தவத்திற்கும் எமதர்மராஜனின் வேண்டுகோளுக்கும் இணங்கி அவர் தர்மத்தின் சாட்சியாகப் பொறுப்பேற்றார்.
+
+காஞ்சிபுரத்தில் வீற்றிருக்கும் சித்திரகுப்தப் பெருமான், நீலாவதி மற்றும் கர்ணிகாம்பாள் தேவியருடன் திருமணம் புரிந்து அருள்பாலிக்கிறார். அம்பிகையின் திருக்கரத்தால் உருவானவர் என்பதால், தாயின் கருணை உள்ளத்தோடு அடியார்களின் நல்ல செயல்களைப் பன்மடங்காகப் பதிவு செய்கிறார்.
+
+## இந்திரன் பாப விமோசன மகிமை
+
+தேவேந்திரன் ஒருமுறை குரு பிரகஸ்பதியின் அறிவுரையை மறந்து ஆணவம் கொண்டதால் பெரும் பழியையும் ஒளியிழப்பையும் சந்தித்தான். குருவின் வழிகாட்டுதலின்படி பூலோகத்தில் மதுரைக் கடம்பவனத்திற்கு வந்து, பொற்றாமரைக் குளக்கரையில் சுயம்பு லிங்கத்தையும் மீனாட்சி அம்மனையும் கண்டான்.
+
+சித்திரை மாதப் பௌர்ணமி நன்னாளில் பொன்னிறத் தாமரை மலர்களால் மீனாட்சி சுந்தரேஸ்வரரை இந்திரன் மனமுருகி அர்ச்சித்து வழிபட்டான். அம்பிகையின் கருணையால் அவனது தோஷங்கள் அனைத்தும் நீங்கி, இழந்த தேவலோகப் பெருமையையும் மனத் தெளிவையும் மீண்டும் பெற்றான்.
+
+அன்று முதல் சித்ரா பௌர்ணமியில் அம்பிகையையும் சித்திரகுப்தரையும் வணங்குவோர் அறியாமல் செய்த பிழைகள் நீங்கப் பெறுவர் என்பது ஐதீகம். குறிப்பாகப் பசுவின் பால் மற்றும் உப்பில்லாத நைவேத்தியம் படைப்பது நமது கர்ம வினைகளை மென்மையாகக் கரைக்கும் வல்லமை கொண்டது.
+
+## இல்லத்து வழிபாட்டு முறை
+
+சித்ரா பௌர்ணமி அன்று அதிகாலையில் நீராடி, வாசலில் மாக்கோலமிட்டுப் பூஜை அறையை மஞ்சள் நீர் தெளித்துத் தூய்மைப்படுத்த வேண்டும். காமாட்சி விளக்கேற்றி வைத்து, அதன் முன்பாக ஒரு தூய நோட்டுப் புத்தகத்தையும் எழுதுகோலையும் மஞ்சள் குங்குமம் இட்டு வைக்கலாம்.
+
+பசும்பால் தவிர்த்து எருமைப்பால் பயன்படுத்தாமல், உப்பு சேர்க்காத தயிர் சாதம், மாங்காய் பச்சடி, பானகம் மற்றும் நீர்மோர் ஆகியவற்றை நைவேத்தியமாகப் படைக்க வேண்டும். சித்திரகுப்தருக்கு உப்பில்லாத பண்டங்களை நிவேதனம் செய்து விரதம் இருப்பது ஆயுள் மற்றும் ஆரோக்கியத்தைக் கூட்டும்.
+
+மாலையில் முழு நிலவு உதித்ததும் மொட்டை மாடியிலோ முற்றத்திலோ நிலவொளியில் அம்பிகையைத் தியானித்துத் தீபாராதனை காட்ட வேண்டும். ஏழை எளியவர்களுக்குத் தண்ணீர்ப் பந்தல் அமைத்து நீர்மோரும் அன்னமும் வழங்குவது ஏழு தலைமுறைக்குப் புண்ணியம் சேர்க்கும்.
+
+## மங்கல ஆசியுரை
+
+சித்ரா பௌர்ணமி விரதத்தைக் கடைப்பிடிக்கும் தாய்மார்களின் இல்லங்களில் கல்விச் செல்வமும் நன்மக்கட்பேறும் தடையின்றிப் பெருகும். குழந்தைகளின் ஞாபக சக்தியும் நன்னடத்தையும் உயர்ந்து, வாழ்வில் நேர்மையான பாதையில் அவர்கள் சிறந்து விளங்குவார்கள்.
+
+அம்பிகையின் குளிர்ந்த நிலவொளி நம் அகத்திலுள்ள கோபத்தையும் கவலையையும் தணித்து, கணவன் மனைவி ஒற்றுமையைப் பலப்படுத்தட்டும். நம் கரங்களால் செய்யும் ஒவ்வொரு சிறு தர்மமும் சித்திரகுப்தரின் ஏட்டில் நல்வரமாகப் பதிவாகட்டும்.
+
+இல்லந்தோறும் மங்கல ஓசையும் ஆரோக்கியமும் நிறைந்திட அன்னை பராசக்தியை மனமாரப் பிரார்த்திக்கிறோம். உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Widescreen South Indian temple gopuram glowing beneath a luminous Chithirai full moon over calm lotus pond waters
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Graceful Tamil woman lighting brass Kamakshi lamp inside traditional courtyard home bathed in silver moonlight
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm family gathering sharing traditional mango rice on banana leaves in an open moonlit courtyard
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Goddess Parvati in emerald silk painting a radiant figure on a golden wooden tablet in Mount Kailash
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Divine emergence of young Chitragupta holding palm-leaf manuscript and golden stylus before Shiva and Parvati
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ancient Kanchipuram Chitragupta temple sanctum adorned with fragrant jasmine garlands and glowing brass oil lamps
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Celestial king Indra walking humbly through ancient Kadamba forest toward Madurai golden lotus tank
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden lotus blossoms placed gently upon sacred Shiva Lingam beside Goddess Meenakshi sanctum lamps
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Serene silver full moon reflecting clearly in temple pushkarani steps lined with flickering clay diyas
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker drawing intricate rice-flour kolam at dawn threshold decorated with fresh mango leaf toranam
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred pooja altar with notebook, brass stylus, turmeric kumkum, and glowing oil lamp before Amman portrait
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional clay pots of saltless curd rice, raw mango pachadi, jaggery panakam, and spiced buttermilk on banana leaf
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Compassionate Tamil women offering cool buttermilk in clay cups to travelers under a shaded street pandal
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Young children studying peacefully near household shrine blessed by warm golden lamp light
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Smiling Tamil couple offering evening arati toward bright full moon from ancestral terrace
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of Goddess Amman idol crowned in solid gold jewelry surrounded by blooming white jasmine garlands

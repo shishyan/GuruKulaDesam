@@ -1,0 +1,86 @@
+{
+  "ep_code": "P2_006",
+  "pillar_code": "P2",
+  "pillar_title_ta": "108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்",
+  "ep_num_in_pillar": 6,
+  "slug": "p2_006_karuveppilai_podi_kuzhambu",
+  "title_pill": "பாட்டி வைத்தியம் • கறிவேப்பிலை மகிமை",
+  "yt_title": "கருமையான கூந்தலும் கண் ஒளியும் தரும் கறிவேப்பிலை நல்லெண்ணெய்க் குழம்பு & பொடி | @TamilDailyLife",
+  "yt_description": "கருமையான கூந்தலும் கண் ஒளியும் தரும் கறிவேப்பிலை நல்லெண்ணெய்க் குழம்பு & பொடி — தமிழர் பண்பாடு (வாழ்வியல் நெறி) | @TamilDailyLife வழங்கும் மகளிர் சிறப்புத் தொடர் (108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்).\n\nஇந்தப் பதிவில்:\n- இளநரை தடுத்துக் கருமையான கூந்தலும் தெளிவான கண் ஒளியும் தரும் கறிவேப்பிலையின் இரும்புச்சத்து மகிமைகள்\n- வெயிலில் உலர்த்தாமல் நிழலில் உலர்த்தி மிளகு உளுத்தம் பருப்புடன் வறுத்து அரைக்கும் மணக்கும் கறிவேப்பிலைப் பொடி செய்முறை\n- செக்கு நல்லெண்ணெய், சின்ன வெங்காயம் மற்றும் புளி சேர்த்து மண் சட்டியில் வைக்கும் கறிவேப்பிலைக் குழம்பு பக்குவம்\n- கறிவேப்பிலையை ஒதுக்காமல் முதல் கவள சாதத்தில் நெய் அல்லது நல்லெண்ணெயுடன் கலந்து உண்ணும் ஆரோக்கியப் பழக்கம்\n\n#TamilDailyLife #TamilVirtues #PattiVaithiyam #Anjaraipetti #TamilTraditionalFood #WomenHealthTamil #GuruKulaDesam",
+  "thumb_badge_ta": "பாட்டி வைத்தியம்",
+  "thumb_main_ta": "கறிவேப்பிலை மகிமை",
+  "thumbnail_prompt": "A-grade Tamil traditional wellness cinema movie-poster artwork, widescreen full-bleed seamless composition (pure poster artwork with zero UI buttons or play icons). Right side (right half of the frame): Zoomed-in chest-up commanding scene — Zoomed-in chest-up graceful Tamil homemaker with thick lustrous black braided hair adorned with jasmine, holding a clay pot of rich green karuveppilai kuzhambu, warm golden rim lighting, illuminated by intense warm golden rim-lighting and glowing brass oil lamps. Left side (left half of the frame): Monumental, massive TV-readable Tamil cinema poster typography occupying the left half with grand prominence. Top: Distinct dark midnight-indigo pill badge with glowing gold border displaying பாட்டி வைத்தியம் (no quotation marks). Center/Bottom: Huge, gigantic 3D-extruded solid polished gold Tamil cinema lettering கறிவேப்பிலை மகிமை (written once cleanly) across a rich royal crimson-maroon velvet banner with sharp metallic bevels, deep drop-shadows, and specular glints, perfectly legible on mobile screens. Background: Full-bleed warm South Indian sacred temple or heritage home backdrop with gentle golden mist, zero dead space, no text or numbers in the lower-right corner.",
+  "shot_prompts": [
+    "Freshly plucked aromatic dark green country curry leaf sprigs glistening with water droplets in a woven bamboo basket",
+    "Beautiful Tamil woman with thick long braided black hair and bright eyes smiling warmly in sunlit traditional courtyard",
+    "Traditional wooden spice box anjarai petti beside cold pressed gingelly oil bottle and fresh green curry leaves",
+    "Close up of vibrant green curry leaves rich in iron alongside black peppercorns, cumin, and roasted lentils on stone slab",
+    "Grandmother gently oiling her granddaughter long dark hair while fresh curry leaves dry in shade on cotton cloth nearby",
+    "Pouring golden cold pressed sesame oil from brass vessel into seasoned clay pot in heritage South Indian kitchen",
+    "Dry roasting fresh shade-dried green curry leaves, urad dal, red chillies, and black pepper in cast iron skillet",
+    "Grinding roasted aromatic curry leaves and spices into vibrant dark green coarse podi using traditional stone mortar pestle",
+    "Sauteing peeled small shallots and whole garlic cloves in generous gingelly oil inside an earthen clay cooking pot",
+    "Simmering thick dark green karuveppilai tamarind kuzhambu in clay pot with glossy sesame oil separating cleanly on top",
+    "Mixing hot steaming rice with vibrant green curry leaf podi and a spoonful of golden ghee on banana leaf",
+    "Fresh washed curry leaves spread neatly on clean white cotton cloth drying indoors under cool shade, natural light",
+    "Spoon lifting rich glossy green curry leaf kuzhambu from earthen pot onto fluffy hot rice with roasted papad beside",
+    "Smiling young boy happily eating rice mixed with green curry leaf podi fed lovingly by his mother at lunch",
+    "Warm traditional Tamil family enjoying flavorful heritage lunch together on floor mats in bright peaceful home",
+    "Glowing brass lamp beside fresh curry leaf garland and turmeric kumkum tray in serene South Indian prayer room"
+  ],
+  "sections": [
+    {
+      "id": "s1_intro",
+      "badge": "மணக்கும் கறிவேப்பிலை",
+      "is_story": false,
+      "paragraphs": [
+        "சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! நமது சமையலில் வாசனைக்காகத் தாளித்துவிட்டு, சாப்பிடும்போது தட்டின் ஓரத்தில் முதலில் ஒதுக்கி வைக்கப்படும் இலையாகக் கறிவேப்பிலை மாறிவிட்டது. ஆனால், நம் பாட்டிமார்கள் கறிவேப்பிலையை அஞ்சறைப்பெட்டியின் பச்சை வைரம் என்றே போற்றினார்கள்!",
+        "இளம் வயதிலேயே நரை முடி, முடி உதிர்தல், கண் பார்வை மங்குதல் மற்றும் இரத்தச் சோகை ஆகியவை இன்று பல பெண்களுக்கும் பெருங்கவலையாக உள்ளன. விலை உயர்ந்த தைலங்களைத் தேடுவதை விட, கறிவேப்பிலையை உணவாக உள்ளுக்குள் எடுப்பதே நிரந்தரத் தீர்வைத் தரும்.",
+        "கறிவேப்பிலையை ஒருபோதும் ஒதுக்க முடியாதபடி, நாவிற்கு ருசியாகச் சமைத்துக் கொடுக்கும் நல்லெண்ணெய்க் குழம்பும் கறிவேப்பிலைப் பொடியும் நம் பாரம்பரியச் சமையலின் உச்சமாகும். கருமையான கூந்தலையும் தெளிவான கண் ஒளியையும் தரும் இந்த அற்புத முறைகளை இன்று காண்போம்!"
+      ]
+    },
+    {
+      "id": "s2_part1",
+      "badge": "கூந்தல் மற்றும் கண் நலம்",
+      "is_story": true,
+      "paragraphs": [
+        "கறிவேப்பிலையில் இரும்புச்சத்து, இலைச்சத்து எனப்படும் உயிர்ச்சத்து, சுண்ணாம்புச்சத்து மற்றும் கண் நலன் காக்கும் சத்துக்கள் செறிந்துள்ளன. இவை மயிர்க்கால்களுக்குத் தேவையான இரத்த ஓட்டத்தைப் பெருக்கி, முடியின் கருமை நிறத்தைக் காத்து இளநரையைத் தடுக்கின்றன.",
+        "இன்று அலைபேசி மற்றும் கணினித் திரைகளைத் தொடர்ந்து பார்ப்பதால் ஏற்படும் கண் எரிச்சலையும் பார்வைச் சோர்வையும் கறிவேப்பிலை இயற்கையாகவே குணப்படுத்துகிறது. காலையில் வெறும் வயிற்றிலோ அல்லது உணவோடு சேர்ந்தோ கறிவேப்பிலை உண்ணும்போது பித்தம் தணிந்து கண்கள் குளிர்ச்சி அடைகின்றன.",
+        "நல்லெண்ணெயும் மிளகும் புளியும் கறிவேப்பிலையோடு சேரும்போது, பசியின்மை மற்றும் அஜீரணக் கோளாறுகள் நீங்கி வயிறு சுத்தமாகிறது. குறிப்பாகப் பிரசவித்த தாய்மார்களுக்கும் வளரும் பெண்களுக்கும் உடல் வலிமை தரும் சிறந்த பத்திய உணவாகக் கறிவேப்பிலைக் குழம்பு அமைகிறது."
+      ]
+    },
+    {
+      "id": "s3_part2",
+      "badge": "குழம்பு மற்றும் பொடி",
+      "is_story": true,
+      "paragraphs": [
+        "கறிவேப்பிலைப் பொடி செய்ய, நிழலில் உலர்த்திய இரண்டு கைப்பிடி நாட்டுக் கறிவேப்பிலையை இருப்புச் சட்டியில் மொறுமொறுப்பாக வறுத்துக் கொள்ளுங்கள். துளி நல்லெண்ணெயில் உளுத்தம் பருப்பு, கடலைப் பருப்பு, வரமிளகாய், மிளகு, சீரகம், பெருங்காயம் வறுத்து, கறிவேப்பிலையோடு கல் உப்பு சேர்த்துக் கொரகொரப்பாக அரைத்தெடுங்கள்!",
+        "கறிவேப்பிலை நல்லெண்ணெய்க் குழம்பு வைக்க, ஒரு கைப்பிடி புதிய கறிவேப்பிலையுடன் ஒரு தேக்கரண்டி மிளகு, சீரகம், வறுத்த உளுத்தம் பருப்பு சேர்த்து விழுதாக அரைத்துக் கொள்ளுங்கள். மண் சட்டியில் நான்கு மேசைக்கரண்டி செக்கு நல்லெண்ணெய் ஊற்றிக் கடுகு, வெந்தயம் தாளித்து இருபது சின்ன வெங்காயமும் பத்துப் பூண்டுப் பற்களும் வதக்குங்கள்.",
+        "வெங்காயம் வதங்கியதும் அரைத்த கறிவேப்பிலை விழுதைச் சேர்த்துப் பச்சை வாசனை போகச் சுருள வதக்கி, எலுமிச்சை அளவு புளிக்கரைசல், மஞ்சள் தூள், கல் உப்பு ஊற்றுங்கள். குழம்பு நன்கு கொதித்து எண்ணெய் பிரிந்து மேலே மிதக்கும்போது சிறிது வெல்லம் சேர்த்து இறக்கினால் தேவாமிர்த சுவை மணக்கும்!"
+      ]
+    },
+    {
+      "id": "s4_practice",
+      "badge": "பயன்படுத்தும் முறை",
+      "is_story": false,
+      "paragraphs": [
+        "சூடான வெள்ளைச் சாதத்தில் முதல் கவளமாக ஒரு தேக்கரண்டி கறிவேப்பிலைப் பொடியும் உருக்கிய பசு நெய்யும் அல்லது செக்கு நல்லெண்ணெயும் கலந்து உண்ணும் பழக்கத்தை ஏற்படுத்திக் கொள்ளுங்கள். இது செரிமானச் சுரப்பிகளைத் தூண்டி, உண்ணும் உணவின் சத்துக்களை முழுமையாக உடலில் சேர்க்கும்.",
+        "கறிவேப்பிலையை ஒருபோதும் வெயிலில் காய வைக்கக் கூடாது, வெயிலில் உலர்த்தினால் அதன் பச்சை நிறமும் மருத்துவ எண்ணெய்ச் சத்தும் ஆவியாகிவிடும். எப்போதும் சுத்தமான பருத்தித் துணியில் நிழலில் மட்டுமே உலர்த்திப் பொடி செய்வது பாட்டிமார்களின் முக்கிய விதியாகும்.",
+        "மண் சட்டியில் வைத்த கறிவேப்பிலை நல்லெண்ணெய்க் குழம்பு மூன்று நாட்கள் வரை கெடாமல் இருக்கும், மறுநாள் சுண்ட வைத்து உண்ணும்போது சுவை இன்னும் கூடும். குழந்தைகளின் தட்டில் கறிவேப்பிலையை ஒதுக்க விடாமல், குழம்பாகவும் பொடியாகவும் கொடுத்துப் பழக்குங்கள்."
+      ]
+    },
+    {
+      "id": "s5_closing",
+      "badge": "நிறைவு ஆசிர்வாதம்",
+      "is_story": false,
+      "paragraphs": [
+        "எளிய கறிவேப்பிலை இலையில் இத்தனை மருத்துவ அற்புதங்களை ஒளித்து வைத்திருக்கும் இயற்கையின் கருணையே தனி அழகு. நம் அஞ்சறைப்பெட்டிப் பொருட்களோடு கறிவேப்பிலையும் இணையும்போது, சமையலறையே நம் குடும்பத்தின் ஆரோக்கிய ஆலயமாக மாறுகிறது.",
+        "தாய்மார்கள் தங்கள் கூந்தல் நலனையும் கண் ஒளியையும் காத்துக் கொள்வதோடு, குடும்பத்தினருக்கும் இந்தப் பாரம்பரிய ருசியை அன்போடு பரிமாறுங்கள். சிறு இலைதானே என்று அலட்சியம் செய்யாமல் அதன் முழுப் பயனையும் தினமும் பெறுவோம்.",
+        "திருவருளும் குருவருளும் கூடி உங்கள் இல்லங்களில் நலமும் வளமும் மங்கலமும் என்றென்றும் நிலைத்திருக்க வாழ்த்துகிறோம். உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!"
+      ]
+    }
+  ],
+  "status": "SCRIPT_READY",
+  "youtube_video_id": null,
+  "youtube_url": null
+}

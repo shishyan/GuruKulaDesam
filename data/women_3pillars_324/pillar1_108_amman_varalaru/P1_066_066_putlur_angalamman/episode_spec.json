@@ -1,0 +1,86 @@
+{
+  "ep_code": "P1_066",
+  "pillar_code": "P1",
+  "pillar_title_ta": "108 அம்மன் தல வரலாறு & விரத மகிமை",
+  "ep_num_in_pillar": 66,
+  "slug": "p1_066_putlur_angalamman",
+  "title_pill": "அம்மன் வரலாறு • புட்லூர் அங்காளம்மன்",
+  "yt_title": "புட்லூர் அங்காளபரமேஸ்வரி அம்மன் வரலாறு & தாய்மை அருளும் புற்றுத் தாய் | @TamilDailyLife",
+  "yt_description": "புட்லூர் அங்காளபரமேஸ்வரி அம்மன் வரலாறு & தாய்மை அருளும் புற்றுத் தாய் — தமிழர் பண்பாடு (வாழ்வியல் நெறி) | @TamilDailyLife வழங்கும் மகளிர் சிறப்புத் தொடர் (108 அம்மன் தல வரலாறு & விரத மகிமை).\n\nஇந்தப் பதிவில்:\n- பூங்காவனம் என்ற புட்லூரில் புற்று வடிவமாய் எழுந்தருளிய அங்காளபரமேஸ்வரி அம்மனின் தல வரலாறு\n- நிறைமாத கர்ப்பிணித் தாயைப் போலப் படுத்த கோலத்தில் அருள்பாலித்து மழலை வரம் தரும் அதிசயம்\n- மகப்பேறு மற்றும் சுகப்பிரசவம் அருளும் எலுமிச்சை மாலை மற்றும் வண்ண வளையல் மாலை பிரார்த்தனை\n- இல்லத்தில் நெய் தீபம் ஏற்றி வளையல் படைத்துச் சுமங்கலிப் பெண்களுக்கு வழங்கும் மங்கல வழிபாட்டு முறை\n\n#TamilDailyLife #TamilVirtues #AmmanVaralaru #SthalaPuranam #Vratham #TamilDevotional #GuruKulaDesam",
+  "thumb_badge_ta": "அம்மன் வரலாறு",
+  "thumb_main_ta": "புட்லூர் அங்காளம்மன்",
+  "thumbnail_prompt": "A-grade Tamil devotional theatrical cinema movie-poster artwork, widescreen full-bleed seamless composition (pure poster artwork with zero UI buttons or play icons). Right side (right half of the frame): Zoomed-in chest-up commanding scene — Zoomed in chest up portrait of maternal Goddess Angalaparameswari wearing auspicious yellow silk, vibrant lemon garland, colorful glass bangles, solid gold crown, warm sanctum lamp rim lighting, widescreen poster style, illuminated by intense warm golden rim-lighting and glowing brass oil lamps. Left side (left half of the frame): Monumental, massive TV-readable Tamil cinema poster typography occupying the left half with grand prominence. Top: Distinct dark midnight-indigo pill badge with glowing gold border displaying அம்மன் வரலாறு (no quotation marks). Center/Bottom: Huge, gigantic 3D-extruded solid polished gold Tamil cinema lettering புட்லூர் அங்காளம்மன் (written once cleanly) across a rich royal crimson-maroon velvet banner with sharp metallic bevels, deep drop-shadows, and specular glints, perfectly legible on mobile screens. Background: Full-bleed warm South Indian sacred temple or heritage home backdrop with gentle golden mist, zero dead space, no text or numbers in the lower-right corner.",
+  "shot_prompts": [
+    "Zoomed chest up view of compassionate Goddess Angalaparameswari adorned with bright yellow lemon garland and glass bangles, solid gold crown, widescreen glow",
+    "Peaceful rural South Indian temple gopuram of Putlur surrounded by green paddy fields at dawn, soft golden mist, widescreen cinematic establishing shot",
+    "Devoted Tamil women carrying woven bamboo baskets with red hibiscus, glass bangles, and yellow lemons toward ancient Amman temple entrance, widescreen view",
+    "Ancient Tamil farmer standing reverently with folded hands beside sacred earthen anthill in sunlit green grove, divine golden light beaming down, widescreen shot",
+    "Sacred earthen Valmika shrine decorated with fragrant jasmine garlands, turmeric kumkum, and glowing brass oil lamps inside traditional stone sanctum, widescreen view",
+    "Golden rays of sunlight streaming through carved stone pillars of historic Tamil Nadu village temple onto brass bell and trident, widescreen shot",
+    "Close artistic view of sacred horizontal earthen shrine draped in bright yellow silk saree and fresh marigold garlands inside peaceful temple garbhagriha",
+    "Colorful red and green glass bangle garlands hanging beside bright yellow lemon garlands in South Indian Amman temple hall, widescreen detail shot",
+    "Expectant Tamil mother in silk saree praying peacefully with closed eyes before glowing brass kuthu vilakku lamp in temple mandapam, widescreen shot",
+    "Temple priest offering sacred turmeric packet and blessed glass bangles on silver plate over flickering camphor flame, warm devotional lighting, widescreen view",
+    "Traditional Tamil home pooja altar with turmeric Ganesha on mango leaf, two ghee lamps burning brightly, and colorful glass bangles on brass tray",
+    "Close view of fresh yellow lemons strung neatly with jasmine flowers on cotton thread beside kumkum box in sunlit pooja room, widescreen shot",
+    "Graceful Tamil homemaker gifting red and green glass bangles with betel leaves and turmeric to another smiling woman inside heritage courtyard home",
+    "Warm glow of brass oil lamp reflecting off golden Amman portrait framed with fresh kanakambaram and jasmine flowers at home, widescreen shot",
+    "Joyful Tamil mother cradling newborn baby wrapped in soft cotton cloth while grandmother applies sacred vibhuti gently, sunlit traditional home, widescreen view",
+    "Serene close shot of sacred trident adorned with lemon and hibiscus beside glowing ghee lamp in tranquil sanctum, widescreen devotional closing shot"
+  ],
+  "sections": [
+    {
+      "id": "s1_intro",
+      "badge": "மங்கல முன்னுரை",
+      "is_story": false,
+      "paragraphs": [
+        "சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! திருமணமான ஒவ்வொரு பெண்ணின் மனதிலும் தாய்மை என்னும் இனிய வரம் மிக உயர்ந்த கனவாகவும், வம்சம் தழைக்கச் செய்யும் தெய்வீக ஆசீர்வாதமாகவும் போற்றப்படுகிறது.",
+        "மழலைச் செல்வத்திற்காகப் பல காலம் ஏங்கும் தாய்மார்களின் கண்ணீரைத் துடைத்து, கருவறைக் குழந்தையைக் கண்ணெனக் காத்தருளும் அற்புதத் திருத்தலம்தான் திருவள்ளூர் அருகே அமைந்துள்ள புட்லூர் ஸ்ரீ அங்காளபரமேஸ்வரி ஆலயம் ஆகும்.",
+        "புனிதமான புற்று மண்ணையே தன் திருமேனியாகக் கொண்டு, நிறைமாத கர்ப்பிணித் தாயைப் போலப் படுத்த கோலத்தில் அருள்பாலிக்கும் புட்லூர் அம்மனின் வரலாற்றை இன்று நாம் மெய்சிலிர்க்கத் தரிசிக்கப் போகிறோம்."
+      ]
+    },
+    {
+      "id": "s2_part1",
+      "badge": "தல புராண வரலாறு",
+      "is_story": true,
+      "paragraphs": [
+        "முற்காலத்தில் பூங்காவனம் என்ற பெயரில் பசுமையான மலர்ச் சோலையாகத் திகழ்ந்த இவ்வூரில், வறுமை நிலையிலும் ஆழ்ந்த இறைபக்தியோடு வாழ்ந்த எளிய விவசாயத் தம்பதியரின் நிலத்தை உழும்போது ஓர் அதிசயம் நிகழ்ந்தது.",
+        "விவசாயியின் ஏர்க்கலப்பை நிலத்தில் இருந்த பெரிய புற்றின் மீது பட்டவுடன் அதிலிருந்து செந்நிறக் குருதி வெளிப்படவே, ஊர் மக்கள் பதறிப்போய் அங்கே கூடி இறைவியின் அருளை வேண்டி மனம் உருகித் தொழுதார்கள்.",
+        "அப்போது அசரீரியாக ஒலித்த அம்பிகை, தான் அங்காளபரமேஸ்வரியாகப் புற்று வடிவத்திலேயே இங்கே தங்கி உலகத்துப் பெண்களின் தாய்மைக் குறைகளைத் தீர்க்கப் போவதாகக் கூறவே, அவ்வூர் புட்லூர் என்று பெயர் பெற்றது."
+      ]
+    },
+    {
+      "id": "s3_part2",
+      "badge": "தாய்மை அருளும் மகிமை",
+      "is_story": true,
+      "paragraphs": [
+        "கருவறையில் அம்மன் சாதாரணச் சிலை வடிவமாக இல்லாமல், வானம் பார்த்த வண்ணம் நிறைமாத கர்ப்பிணிப் பெண் நிம்மதியாகப் படுத்திருப்பது போன்ற இயற்கையான புற்று வடிவத்தில் பக்தர்களுக்குச் சேவை சாதிக்கிறாள்.",
+        "அன்னையின் திருவாய்ப் பகுதி சற்றே திறந்த நிலையில் இருப்பதால், தாய்மார்கள் கண்ணீரோடு சமர்ப்பிக்கும் பிரார்த்தனைகளை அவள் நேரடியாகவே ஏற்றுக்கொண்டு உடனுக்குடன் நல்ல வரம் தருவதாக ஐதீகம் நிலவுகிறது.",
+        "குழந்தை பாக்கியம் வேண்டுவோரும் நல்ல முறையில் சுகப்பிரசவம் அமைய விரும்புவோரும், எலுமிச்சை மாலையும் வண்ண வளையல் மாலையும் சாற்றி அம்மனின் மடியில் மஞ்சள் குங்குமம் பிரசாதமாகப் பெற்றுச் செல்கிறார்கள்."
+      ]
+    },
+    {
+      "id": "s4_practice",
+      "badge": "இல்லற வழிபாட்டு முறை",
+      "is_story": false,
+      "paragraphs": [
+        "புட்லூர் திருத்தலத்திற்கு நேரில் சென்று வழிபட நினைப்போர் செவ்வாய், வெள்ளி மற்றும் அமாவாசை நாட்களில் அம்மனுக்கு ஒன்பது அல்லது பதினோரு எலுமிச்சைப் பழ மாலை அணிவித்துப் பிரார்த்தனை செய்யலாம்.",
+        "இல்லத்தில் இருந்தபடியே வழிபடும் சகோதரிகள், பூஜை அறையில் சுத்தமான மரப் பலகையில் மஞ்சள் பிள்ளையார் பிடித்து வைத்து, இரண்டு நெய் தீபங்கள் ஏற்றி வண்ணக் கண்ணாடி வளையல்களைப் பக்தியோடு படைக்கலாம்.",
+        "பூஜை இனிதே நிறைவடைந்ததும் அந்த மங்கல வளையல்களைத் தாங்களும் அணிந்துகொண்டு சுமங்கலிப் பெண்களுக்கும் அன்போடு பகிர்ந்தளித்தால், புட்லூர் தாயின் பரிபூரண கருணை நம் இல்லம் தேடி வந்தடையும்."
+      ]
+    },
+    {
+      "id": "s5_closing",
+      "badge": "மங்கல நிறைவுரை",
+      "is_story": false,
+      "paragraphs": [
+        "தன் திருவயிற்றில் அகில உலகத்தையே தாங்கும் ஜகன்மாதாவான புட்லூர் அங்காளபரமேஸ்வரி, தன்னைச் சரணடையும் பெண்களுக்குத் தாய்க்குத் தாயாக நின்று மனத் தைரியத்தையும் இனிய மழலை வரத்தையும் அருள்கிறாள்.",
+        "அந்தப் புற்றுத் தாயின் அளவற்ற கருணையினால் உங்கள் இல்லங்களில் மழலைச் சிரிப்பொலியும், சுமங்கலி பாக்கியமும், நிறைவான உடல் ஆரோக்கியமும் என்றென்றும் நிலைத்திருக்க மனதாரப் பிரார்த்திக்கிறோம்.",
+        "உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!"
+      ]
+    }
+  ],
+  "status": "SCRIPT_READY",
+  "youtube_video_id": null,
+  "youtube_url": null
+}

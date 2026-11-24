@@ -1,0 +1,62 @@
+# [P1_034] சிருங்கேரி சாரதாம்பாள் வரலாறு & தாய்மையைப் போற்றிய சங்கரர்
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `சிருங்கேரி சாரதா`  
+> **Status**: `SCRIPT_READY`
+
+## அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! தாய்மைக்கு மிஞ்சிய தர்மம் உலகில் வேறெதுவும் இல்லை என்ற உயர்ந்த உண்மையை உலகுக்கு உணர்த்திய புண்ணிய பூமி சிருங்கேரி ஆகும். துங்கா நதிக்கரையில் அமைதியே வடிவாய் வீற்றிருக்கும் சாரதாம்பாளின் வரலாறு உள்ளத்தை உருக்கும் தன்மை கொண்டது.
+
+ஆதிசங்கர பகவத் பாதர் பாரத தேசத்தின் நான்கு திசைகளிலும் நிறுவிய பீடங்களில், முதன்மையான தென்னக ஞான பீடமாகத் திகழ்வது இந்த சிருங்கேரி சாரதா பீடமே ஆகும். இங்குக் கல்வியும் கருணையும் ஒன்றாகக் கலந்திருக்கின்றன.
+
+பகைமை மறந்து உயிர்கள் தாய்மையைப் போற்றிய அதிசயமும், சந்தன மரச் சிலை பொன்மயமாக மாறிய வரலாறும் நிறைந்த சிருங்கேரி சாரதாம்பாளின் மகிமையை இன்று பக்தியுடன் சிந்திப்போம்.
+
+## தல வரலாறு
+
+விபண்டக முனிவரின் புதல்வரான ரிஷ்யசிருங்க மகரிஷி தவம் இயற்றிய புண்ணியத் தலம் என்பதால் இவ்வூருக்கு சிருங்கேரி என்ற பெயர் உண்டானது. ஆதிசங்கரர் தன் சீடர்களுடன் தர்மப் பிரச்சாரம் செய்தபடி துங்கா நதிக்கரையை வந்தடைந்தார்.
+
+அப்போது நடுப்பகல் வெயில் சுட்டெரித்துக் கொண்டிருந்தது. நதிக்கரைப் பாறையில் நிறைமாதச் சினைத் தவளை ஒன்று பிரசவ வேதனையால் துடித்துக் கொண்டிருந்தது. அதன் இயற்கைப் பகைவனான நாகப் பாம்பு ஒன்று, அத்தவளையை விழுங்காமல் தன் படத்தை விரித்துக் குடைபோல வெயிலுக்கு நிழல் தந்து காத்தது.
+
+இயற்கைப் பகை கொண்ட பாம்பும் தவளையும் தாய்மையின் புனிதத்திற்காக அன்போடு இணைந்திருக்கும் அக்காட்சியைக் கண்டு ஆதிசங்கரர் மெய்சிலிர்த்தார். இத்தலத்தின் தெய்வீக அதிர்வை உணர்ந்து, இங்கு ஞான பீடத்தை நிறுவத் திருவுள்ளம் கொண்டார்.
+
+## சாரதா பீட மகிமை
+
+மண்டன மிஸ்ரருக்கும் ஆதிசங்கரருக்கும் நடைபெற்ற சாஸ்திர விவாதத்தில் நடுவராக இருந்த உபய பாரதி அம்மையார், சாக்ஷாத் சரஸ்வதி தேவியின் அம்சமாவார். சங்கரரின் வேண்டுகோளின்படி அன்னையின் அருட்சக்தி சிருங்கேரியில் எழுந்தருளி சாரதாம்பாளாக அருள்பாலிக்கத் தொடங்கியது.
+
+ஆதிசங்கரர் ஸ்ரீ சக்கரம் பொறிக்கப்பட்ட பாறையின் மீது, சந்தன மரத்தால் ஆன சாரதாம்பாள் திருமேனியை முதலில் பிரதிஷ்டை செய்தார். நின்ற கோலத்தில் மாட்டப்படும் சரஸ்வதியை விட, இத்தலத்தில் அன்னை ஞான சிம்மாசனத்தில் அமர்ந்த கோலத்தில் அமைதியே வடிவாய் அருள்கிறாள்.
+
+பிற்காலத்தில் வித்யாரண்ய முனிவர் அந்தச் சந்தனச் சிலைக்குப் பதிலாகத் தங்கத்தாலான சாரதாம்பாள் விக்ரகத்தைப் பிரதிஷ்டை செய்தார். கரங்களில் ஜபமாலை, அமுத கலசம், சுவடி மற்றும் சின்முத்திரை தாங்கி அன்னை ஆன்ம ஞானத்தை வழங்குகிறாள்.
+
+## வழிபாட்டு முறை
+
+வியாழன், வெள்ளி மற்றும் பௌர்ணமி நாட்களில் இல்லத்துப் பூஜை அறையில் வெண்ணிற மலர்கள் சூட்டி சிருங்கேரி சாரதாம்பாளை வழிபடலாம். தேன், பால் அல்லது கற்கண்டு கலந்த பசும்பால் நிவேதனம் செய்வது மிகுந்த சிறப்பைத் தரும்.
+
+கருவுற்றிருக்கும் தாய்மார்கள் சுகப்பிரசவம் அடையவும், பிறக்கும் குழந்தை நல்லறிவுடன் வளரவும் சிருங்கேரி தாயாரைத் தியானிப்பது அருமையான பலன் அளிக்கும். குழந்தைகளின் பாடப் புத்தகங்களைப் பூஜையில் வைத்து வணங்கி எடுக்கும் பழக்கத்தை உருவாக்குங்கள்.
+
+நமஸ்தே சாரதா தேவி காஷ்மீர புரவாயினி, த்வாம் அஹம் பிரார்த்தயே நித்யம் வித்யாதானம் ச தேஹி மே என்ற எளிய துதியைத் தினமும் கூறி வணங்கினால், கற்ற கல்வி தக்க சமயத்தில் கைகொடுக்கும். குடும்பத்தில் சண்டை சச்சரவுகள் நீங்கி சாந்தம் நிலவும்.
+
+## நிறைவு ஆசி
+
+துங்கா நதிக்கரையில் ஞான அரசியாக வீற்றிருக்கும் சிருங்கேரி சாரதாம்பாளின் குளிர்ந்த அருட்பார்வை உங்கள் இல்லத்தை என்றும் காத்தருளட்டும். பகைமையை மாற்றி அன்பை விதைத்த இத்தலத்தின் சாந்தம் உங்கள் குடும்பத்தில் நிறையட்டும்.
+
+தாய்மையின் மேன்மையைப் போற்றும் அன்னை சாரதா தேவி, உங்கள் குழந்தைகளுக்கு உயர்ந்த ஞானத்தையும், இல்லத்திற்கு நிம்மதியையும் நல்வாழ்வையும் தந்தருள்வாளாக. அன்னையின் திருவடிகளைப் பணிந்து போற்றுவோம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Serene Tunga river flowing gently past ancient stone steps and temple gopuram of Sringeri amidst green hills.
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of seated solid gold idol of Goddess Sringeri Sharadamba wearing white silk saree and lotus garlands.
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Adi Shankaracharya walking peacefully with saffron-robed disciples along sunny banks of Tunga river in ancient South India.
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred stone sculpture on Tunga riverbank depicting a cobra spreading its hood to shade a resting frog.
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Adi Shankaracharya gazing with deep compassion and reverence at the peaceful riverbank miracle under warm afternoon sunlight.
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Dignified scholar woman Ubhaya Bharati seated gracefully amidst palm-leaf manuscripts and glowing oil lamps during Vedic discourse.
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred Sri Chakra etched precisely on dark temple stone adorned with vermilion kumkum, turmeric, and white jasmine.
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of Goddess Sharadamba holding crystal japamala, sacred palm-leaf manuscript, and nectar pot in chinmudra posture.
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Schools of sacred temple fish swimming peacefully near stone ghat steps of Tunga river in morning light.
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Pregnant Tamil woman praying calmly with folded hands before a glowing brass lamp and Goddess Sharadamba picture.
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Silver tumbler of warm milk with rock sugar and honey offered beside white lotus flowers on wooden altar.
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mother and young son reading sacred Tamil texts together beside a lit kuthuvilakku in a peaceful home.
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Wooden chariot and stone pillars of Vidyashankara temple in Sringeri bathed in golden afternoon sunlight.
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Rows of earthen oil lamps glowing along Sringeri temple corridor during serene Navaratri evening worship.
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Wide twilight reflection of Sringeri Sharada temple lights shimmering gently across calm dark waters of Tunga river.
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of white lotus blossoms, sandalwood paste, and glowing lamp flame at Goddess Sharadamba lotus feet.

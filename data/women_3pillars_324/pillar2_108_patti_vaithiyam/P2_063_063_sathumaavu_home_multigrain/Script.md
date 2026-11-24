@@ -1,0 +1,62 @@
+# [P2_063] வீட்டிலேயே சுத்தமாகத் தயாரிக்கும் இருபத்தி ஒரு பொருள் சத்துமாவுக் கஞ்சி
+> **தொடர்**: 108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்  
+> **Thumbnail Badge**: `பாட்டி வைத்தியம்` | **Main Title**: `வீட்டுச் சத்துமாவு`  
+> **Status**: `SCRIPT_READY`
+
+## வீட்டுச் சத்துமாவுக் கஞ்சியின் மேன்மை
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! கடைகளில் விற்கும் செயற்கைச் சுவையூட்டிகள் கலந்த பானங்களைத் தவிர்த்து, நம் வீட்டிலேயே சுத்தமாகத் தயாரிக்கும் இருபத்தி ஒரு பொருள் சத்துமாவுக் கஞ்சியின் பாரம்பரியச் செய்முறையை இன்று விரிவாகக் காண்போம்.
+
+வளரும் குழந்தைகள், பள்ளி செல்லும் மாணவர்கள், ஓய்வின்றி உழைக்கும் தாய்மார்கள் மற்றும் முதியவர்கள் எனக் குடும்பத்தின் அனைத்துத் தலைமுறையினருக்கும் காலை நேர உடனடி பலம் தரும் அமிர்தம் இந்த வீட்டுச் சத்துமாவாகும்.
+
+பாரம்பரியச் சிறுதானியங்கள், பயறு வகைகள், பருப்புகள் மற்றும் வாசனை மூலிகைகள் என இருபத்தி ஒரு இயற்கைப் பொருட்களை முறைப்படி முளைகட்டித் தனித்தனியே வறுத்து அரைப்பதே இதன் ஒப்பற்ற தனிச்சிறப்பாகும்.
+
+## இருபத்தி ஒரு பொருட்களின் ஊட்டச்சத்து வளம்
+
+முளைகட்டிய கேழ்வரகு, கம்பு, சிவப்புச் சோளம், தினை, சாமை, வரகு, குதிரைவாலி, சம்பா கோதுமை, கைக்குத்தல் சிவப்பரிசி மற்றும் பார்லி ஆகிய பத்துத் தானியங்கள் எலும்பு வலிமையையும் நீடித்த ஆற்றலையும் வழங்குகின்றன.
+
+முளைகட்டிய பச்சைப்பயறு, கருப்புக் கொண்டைக்கடலை, கொள்ளு, தட்டைப்பயறு, வறுத்த முழு உளுந்து மற்றும் பொட்டுக்கடலை ஆகிய ஆறு புரதப் பொருட்கள் தசை வளர்ச்சிக்கும் பெண்களின் இடுப்பு உறுதிக்கும் வலுவான அடித்தளமிடுகின்றன.
+
+பாதாம் பருப்பு, முந்திரி, நிலக்கடலை ஆகிய மூன்று சத்துப் பருப்புகளோடு வாசனை ஏலக்காய் மற்றும் தோல் சீவிய சுக்கு ஆகிய இரண்டும் இணையும்போது, இருபத்தி ஒரு பொருட்களும் எளிதில் செரிமானமாகும் முழுமையான உணவாகின்றன.
+
+## வறுத்து அரைக்கும் பாரம்பரியப் பக்குவம்
+
+கேழ்வரகு, கம்பு மற்றும் பச்சைப்பயறு போன்றவற்றை நீரில் கழுவிப் பருத்தித் துணியில் கட்டி முளைகட்டிய பின், நிழலில் நன்கு உலர்த்தி எடுத்தால் அவற்றின் உயிர்ச்சத்துக்களும் இரும்புச் சத்தும் பல மடங்கு பெருகுகின்றன.
+
+ஒவ்வொரு தானியத்திற்கும் அளவும் அடர்த்தியும் மாறுபடும் என்பதால், எல்லாவற்றையும் ஒன்றாகக் கொட்டி வறுக்காமல் கனமான இரும்பு வாணலியில் மிதமான தீயில் தனித்தனியே நறுமணம் வரும் வரை பக்குவமாக வறுக்க வேண்டும்.
+
+வறுத்த இருபத்தி ஒரு பொருட்களையும் அகலமான தாம்பாளத்தில் கொட்டி முழுமையாக ஆறவைத்த பிறகே, சுத்தமான மாவு மில்லில் கொடுத்து நைசாக அரைத்துச் சலித்துக் கண்ணாடி அல்லது எவர்சில்வர் டப்பாவில் பத்திரமாகச் சேமிக்கவும்.
+
+## கஞ்சி காய்ச்சும் முறையும் பரிமாறுதலும்
+
+கஞ்சி காய்ச்சும்போது இரண்டு மேசைக்கரண்டி சத்துமாவை முதலில் குளிர்ந்த நீரில் கட்டிகள் சிறிதுமின்றி நன்கு கரைத்துவிட்டு, பின் அடுப்பில் வைத்துக் கைவிடாமல் ஐந்து நிமிடங்கள் பச்சை வாசனை போகக் கூழாகக் காய்ச்ச வேண்டும்.
+
+இனிப்புச் சுவை விரும்புவோர் காய்ச்சிய சூடான கஞ்சியுடன் பொடித்த பனங்கற்கண்டு அல்லது நாட்டுச் சர்க்கரையும் சிறிது காய்ச்சிய பசும்பாலும் சேர்த்துக் காலையில் பள்ளி செல்லும் குழந்தைகளுக்கு அன்போடு கொடுக்கலாம்.
+
+சர்க்கரை அளவைக் கட்டுக்குள் வைக்க விரும்பும் பெரியவர்களும் தாய்மார்களும் இனிப்பு சேர்க்காமல், சிறிது இந்துப்பும் கடைந்த மோரும் சின்ன வெங்காயமும் கலந்து உப்புக் கஞ்சியாகப் பருகுவது உடலுக்கு மிகவும் சிறந்தது.
+
+## மங்கல நிறைவு வாழ்த்து
+
+மாதம் ஒரு முறை இல்லத்துத் தாய்மார்கள் சற்று நேரம் ஒதுக்கி இந்த இருபத்தி ஒரு பொருள் சத்துமாவைத் தயாரித்து வைத்துக் கொண்டால், குடும்பத்தின் ஆரோக்கியத்திற்கு அதைவிடப் பெரிய பாதுகாப்பு வேறில்லை.
+
+கலப்படமில்லாத நம் பாரம்பரியச் சிறுதானிய உணவுகளை அன்றாடம் போற்றி உண்டு, இயற்கையான நோய் எதிர்ப்புச் சக்தியும் நீண்ட ஆயுளும் நிறைந்த வளமான நல்வாழ்வைப் பெறுவோம்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Twenty one traditional millets, pulses, nuts, cardamom, and dry ginger arranged in small brass bowls on wooden table
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sprouted finger millet ragi and green gram moong tied in damp cotton cloth revealing fresh tiny white sprouts
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Spreading sprouted millets and washed samba wheat evenly on clean cotton mats to dry in airy shaded courtyard
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close up of plump almonds, cashews, peanuts, green cardamom pods, and peeled dry ginger sukku on bamboo tray
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil grandmother carefully dry roasting ragi grains individually in heavy cast iron kadai over steady low flame
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Roasting green gram, roasted chana, and fragrant samba wheat separately to perfection without burning any single grain
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Spreading all twenty one roasted grains, pulses, nuts, and spices together on wide brass thambalam tray to cool
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Finely milled golden-brown aromatic homemade sathumaavu flour sifted cleanly through traditional mesh sieve into steel container
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Whisking two spoonfuls of homemade sathumaavu powder smoothly in cool water inside brass vessel without any lumps
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Simmering smooth velvety sathumaavu kanji porridge over gentle stove flame while stirring continuously with wooden ladle
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Adding crushed palm jaggery and splash of warm boiled cow milk into steaming bowl of wholesome sathumaavu kanji
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Preparing savory buttermilk sathumaavu drink mixed with churned mor and pinch of rock salt in earthen tumbler
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Happy school children drinking warm nourishing homemade sathumaavu kanji before school in bright sunlit Tamil home
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mother sealing freshly prepared batch of twenty one ingredient health mix in clean glass jar on pantry shelf
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Three generations of Tamil women smiling proudly around traditional kitchen counter filled with wholesome native millets
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Glowing brass kamakshi lamp beside bowl of native millets and traditional spice box in serene morning light

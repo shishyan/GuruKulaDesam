@@ -1,0 +1,62 @@
+# [P1_054] தென்காசி உலகம்மன் வரலாறு & தென்கயிலாய ராஜகோபுர மகிமை
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `தென்காசி உலகம்மன்`  
+> **Status**: `SCRIPT_READY`
+
+## தென்காசி தென்கயிலாயத் தலம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! பெரியோர்களின் சிரமத்தை நீக்க இறைவனே கனவில் வந்து கட்டச்சொன்ன திருக்கோவில் என்றால் எவ்வளவு கருணை நிறைந்த தலமாக இருக்கும்! தென்கயிலாயம் எனப் போற்றப்படும் தென்காசி உலகம்மனின் கம்பீர வரலாற்றை இன்று தரிசிப்போம்.
+
+பொதிகை மலைத் தென்றலும் குற்றால அருவிகளின் குளிர்ச்சியும் தவழும் தென்காசி நகரின் நடுவே, காசி விஸ்வநாதர் உலகம்மன் திருக்கோவில் வானளாவிய ராஜகோபுரத்தோடு கம்பீரமாகக் காட்சியளிக்கிறது. வடக்கே உள்ள காசிக்கு நிகரான புண்ணிய பலனைத் தென்னகத்திலேயே வழங்கும் திருத்தலம் இதுவாகும்.
+
+சண்பக மரத்தைத் தல விருட்சமாகக் கொண்டு எழுந்தருளியுள்ள காசி விஸ்வநாதப் பெருமானோடு, புன்னகை தவழும் திருமுகத்துடன் உலகம்மன் அன்னை தென்னாட்டு இல்லங்களுக்கெல்லாம் தாயாக வீற்றிருந்து அருள்பாலிக்கிறாள்.
+
+## பராக்கிரம பாண்டியன் கனவு
+
+முற்காலத்தில் தென்னாட்டு சிவபக்தர்கள் வடக்கே உள்ள காசி விஸ்வநாதரைத் தரிசிக்கப் பல மாதங்கள் நடந்தே செல்ல வேண்டியிருந்தது. வயதான பெரியோர்களும் தாய்மார்களும் வழியிலேயே படும் துயரத்தைக் கண்டு அரிகேசரி பராக்கிரம பாண்டிய மன்னன் மனம் வருந்தினான்.
+
+மன்னனின் கருணை உள்ளத்தை மெச்சிய சிவபெருமான் அவன் கனவில் தோன்றி, எறும்புகள் சாரைசாரையாக ஊர்ந்து செல்லும் இடத்தில் சுயம்பு இலிங்கம் இருப்பதாகவும், அங்கேயே தென்காசி திருக்கோவிலை எழுப்புமாறும் திருவாய் மலர்ந்தருளினார். அவ்வண்ணமே மன்னன் அழகிய கற்கோவிலையும் பிரம்மாண்ட ராஜகோபுரத்தையும் எழுப்பினான்.
+
+எந்த மன்னர்கள் காலத்திலும் கோவில் முன் பணியும் அடக்கத்திற்குச் சான்றாக, என் கோபுரத்தின் முன் யாராவது வணங்கினால் அப்புண்ணியம் கோவிலைப் பேணிக்காப்பவர்களுக்கே சேரட்டும் என்று மன்னன் பாடிய கல்வெட்டுப் பாடல் தமிழ் மன்னர்களின் பணிவுக்கு இன்றும் சான்றாக நிற்கிறது.
+
+## புன்னகை உலகம்மன் மகிமை
+
+தென்காசி உலகம்மன் சந்நிதியில் நுழைந்தாலே தாயின் மடியில் அமர்ந்தது போன்ற ஆழமான நிம்மதி நம் உள்ளத்தில் பிறக்கிறது. நின்ற திருக்கோலத்தில் வலது திருக்கரத்தில் மலர் ஏந்தியும், இடது திருக்கரத்தை இடையருகே ஒயிலாக வைத்தும் அன்னை எழிலோடு காட்சியளிக்கிறாள்.
+
+குழந்தையைக் கண்டதும் தாயின் முகத்தில் மலரும் இயல்பான புன்னகையோடு உலகம்மன் காட்சியளிப்பதால், எத்தகைய மன பாரத்தோடு சென்றாலும் அன்னையின் திருமுகத்தைக் கண்ட நொடியில் கவலைகள் கரைந்து விடுகின்றன. சுமங்கலிப் பெண்களும் தாய்மார்களும் போற்றும் குலதெய்வம் போன்றவள் இத்தாய்.
+
+கோவிலின் முகப்பு மண்டபங்களில் செதுக்கப்பட்டுள்ள வீரபத்திரர், ஊர்த்துவ தாண்டவர், காளி மற்றும் ரதி மன்மதன் சிற்பங்கள் பாண்டியர் கால சிற்பக் கலையின் சிகரமாக விளங்குகின்றன. காசிக்குச் செல்ல இயலாத முதியோர்களுக்கு இத்தரிசனமே பரிபூரண நிறைவைத் தருகிறது.
+
+## இல்லத்தில் வழிபடும் முறை
+
+வெள்ளிக்கிழமை மற்றும் திங்கட்கிழமைகளில் காலையில் இல்லத்துப் பூஜையறையில் நெய் தீபம் ஏற்றி, தென்காசி காசி விஸ்வநாதரையும் புன்னகை தவழும் உலகம்மனையும் மனதார வணங்குங்கள். சண்பக மலர், மல்லிகை அல்லது வில்வ தளங்களால் இறைவனைப் போற்றுவது சிறந்தது.
+
+பால் பாயசம் அல்லது கற்கண்டு சாதம் நைவேத்தியம் படைத்து, தமிழ் அருளாளர்கள் பாடிய உலகம்மன் அந்தாதி அல்லது சிவபுராண வரிகளை அமைதியாகப் பாராயணம் செய்யுங்கள். இல்லத்தில் உள்ள முதியோர்களை அன்போடு கவனித்து அவர்களின் ஆசியைப் பெறுவதே இத்தலத்து இறைவனுக்குச் செய்யும் சிறந்த பூஜையாகும்.
+
+தென்காசி திருத்தலத்திற்குக் குடும்பத்தோடு செல்லும்போது, காசி தீர்த்தத்திற்கு இணையான புனித நீரைத் தலையில் தெளித்துக்கொண்டு, ராஜகோபுர வாசலில் வீசும் மூலிகைக் காற்றைச் சுவாசித்தபடி உலகம்மனைக் கண்குளிரத் தரிசித்து வாருங்கள்.
+
+## மங்கள ஆசிர்வாதம்
+
+தென்காசி உலகம்மனின் மாறாத புன்னகையும் தாயன்புப் பார்வையும் உங்கள் இல்லத்தை எப்போதும் சூழ்ந்து, குடும்பத்தினர் அனைவருக்கும் மனநிறைவையும் உயர்ந்த நற்பெயரையும் அருளட்டும். பெரியோர்களின் நல்லாசி உங்கள் வம்சத்தைத் தழைக்கச் செய்யட்டும்.
+
+பக்தர்களைத் தேடித் தென்னகம் வந்த காசி விஸ்வநாதப் பெருமானின் கருணையால், உங்கள் நல்விருப்பங்கள் யாவும் தடையின்றி நிறைவேறி இல்லத்தில் அமைதியும் வளமும் நிலைபெற வாழ்த்துகிறோம். இறையருள் என்றும் துணை நிற்கட்டும்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Widescreen view of monumental Tenkasi Kashi Vishwanathar Rajagopuram rising against lush green Western Ghats and morning clouds
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Compassionate Tamil homemaker lighting brass oil lamp beside elderly parents in serene traditional pooja room
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Fragrant golden shenbagam flowers blooming beside ancient stone mandapams of Tenkasi temple courtyard
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devout Pandya king Parakrama Pandya praying humbly in royal chamber receiving divine vision of Lord Shiva
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred trail of ants leading to self-manifested Shiva Lingam amidst glowing forest clearing in Tenkasi lore
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ancient Tamil stone inscription carved on granite temple wall beside tall sculpted Pandya pillars
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Majestic standing idol of Goddess Ulagamman with warm motherly smile holding lotus blossom in crimson-gold silk saree
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Intricate life-size Pandya stone sculptures of divine dancers and deities in sunlit Tenkasi mandapam hall
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Elderly Tamil grandparents bowing with peaceful joy and gratitude before Tenkasi Kashi Vishwanathar sanctum
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil women devotees offering jasmine garlands and praying peacefully inside lamp-lit Ulagamman corridor
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Home altar adorned with fragrant shenbagam and jasmine flowers and glowing cow ghee lamp on Friday morning
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional silver bowl of warm milk payasam and rock candy rice offered on green banana leaf
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Respectful Tamil couple touching feet of smiling elderly parents for blessings in warm ancestral home
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Pilgrims entering beneath towering sculpted stone gateway of Tenkasi Rajagopuram bathed in golden light
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Glorious sanctum darshan of smiling Goddess Ulagamman illuminated by multi-tiered brass camphor aarti
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Multi-generational South Indian family smiling peacefully together in sunlit courtyard blessed with harmony

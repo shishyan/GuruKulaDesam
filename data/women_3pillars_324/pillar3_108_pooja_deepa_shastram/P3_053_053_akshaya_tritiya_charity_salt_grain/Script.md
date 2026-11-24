@@ -1,0 +1,62 @@
+# [P3_053] அட்சய திருதியை அன்று தங்கத்தை விட உயர்ந்த அன்னதானம், கல் உப்பு & தானிய வழிபாடு
+> **தொடர்**: 108 பூஜை அறை & தீப சாஸ்திர ரகசியங்கள்  
+> **Thumbnail Badge**: `மங்கல இல்லறம்` | **Main Title**: `அட்சய திருதியை`  
+> **Status**: `SCRIPT_READY`
+
+## அட்சய திருதியை அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! சித்திரை மாத வளர்பிறையில் வரும் மூன்றாம் திதியான அட்சய திருதியை என்றாலே, பலரும் நகைக் கடைகளில் தங்கம் வாங்குவது மட்டுமே வழிபாடு என்று இன்று நினைத்துக்கொண்டிருக்கிறார்கள்.
+
+ஆனால் அட்சயம் என்ற சொல்லுக்கு அள்ள அள்ளக் குறையாதது என்பதுதான் உண்மையான பொருளே தவிர, வெறும் ஆபரணங்களை வாங்கிச் சேர்ப்பது மட்டுமே நமது முன்னோர்கள் காட்டிய தர்ம நெறி அல்ல என்பதை நாம் உணர வேண்டும்.
+
+பசித்த உயிர்களுக்கு அன்னமிடுவதும், தாகம் தீர்க்க நீர்மோர் வழங்குவதும், மகாலட்சுமி உறையும் கல் உப்பு மற்றும் தானியங்களை இல்லத்தில் போற்றுவதுமே தங்கத்தை விடப் பன்மடங்கு உயர்ந்த புண்ணியத்தைத் தரும் அட்சய வழிபாடாகும்.
+
+## அட்சய பாத்திரப் புராண வரலாறு
+
+மகாபாரதத்தில் பஞ்சபாண்டவர்கள் வனவாசம் சென்றபோது, தங்களைத் தேடி வரும் முனிவர்களுக்கும் விருந்தினர்களுக்கும் உணவளிக்க முடியவில்லையே என்று திரௌபதி தேவி சூரிய பகவானை நோக்கி மனமுருகப் பிரார்த்தனை செய்தாள்.
+
+அப்போது சூரிய பகவான் திரௌபதிக்கு அள்ள அள்ள உணவு குறையாத அட்சய பாத்திரத்தை வரமாக வழங்கிய புனிதத் திருநாளே இந்த அட்சய திருதியை என்று புராண நூல்கள் மிகத் தெளிவாகக் குறிப்பிடுகின்றன.
+
+அதேபோல குசேலர் கொடுத்த ஒரு பிடி அவலை ஏற்றுக் கண்ணபிரான் வற்றாத செல்வத்தை அருளியதும், அன்னை அன்னபூரணி ஈசனுக்கு அன்னமிட்டு உலகின் பசியைப் போக்கியதும் இதே நன்னாளில்தான் நிகழ்ந்தன.
+
+## கல் உப்பு தானிய லட்சுமி தத்துவம்
+
+பாற்கடலில் தோன்றிய மகாலட்சுமியின் அம்சமாகக் கடலில் விளையும் கல் உப்பு கருதப்படுவதால், அட்சய திருதியை அன்று சுத்தமான கல் உப்பு வாங்கி மண்பாண்டம் அல்லது பீங்கான் ஜாடியில் நிரப்புவது மிகச் சிறந்த ஐதீகமாகும்.
+
+அத்துடன் மங்களத்தின் வடிவமான விரலி மஞ்சள், பச்சரிசி, துவரம்பருப்பு, பாசிப்பருப்பு மற்றும் கோதுமை போன்ற சமையலறைத் தானியங்களை வாங்கி அன்னபூரணியை வணங்கிச் சேமிப்பது இல்லத்தில் என்றும் உணவுப் பஞ்சம் வராமல் காக்கும்.
+
+நாம் வாங்கி வைக்கும் பொருளை விட, அன்றைய தினம் பிறருக்கு மனமுவந்து கொடுக்கும் தான தர்மங்களே அட்சயமாகப் பல்கிப் பெருகி நமது தலைமுறைகளைக் காக்கும் கவசமாக மாறுகின்றன என்பதே சாஸ்திர ரகசியம்.
+
+## இல்லத்து தான தர்ம முறைகள்
+
+அட்சய திருதியை காலையில் பூஜை அறையைத் தூய்மைப்படுத்தி, குலதெய்வம் மற்றும் மகாலட்சுமி படத்திற்குத் தாமரை மலர் சாத்தி, ஒரு சிறிய கிண்ணத்தில் கல் உப்பு, மஞ்சள் மற்றும் பச்சரிசி வைத்து நெய்தீபம் ஏற்ற வேண்டும்.
+
+பால் பாயசம் அல்லது தயிர் சாதம் நைவேத்தியம் செய்து வழிபட்ட பின்னர், சித்திரை வெயிலில் உழைக்கும் எளிய மக்களுக்கும் வழிப்போக்கர்களுக்கும் குளிர்ந்த நீர்மோர், பானகம் மற்றும் தயிர் சாதம் வழங்குவது மகத்தான பலனைத் தரும்.
+
+பசு மாட்டிற்கு அகத்திக்கீரையும் வாழைப்பழமும் அளிப்பதும், ஏழை மாணவர்களுக்கு நோட்டுப் புத்தகங்கள் வாங்கித் தருவதும், வீட்டில் உள்ள பெரியவர்களிடம் ஆசி பெறுவதும் இல்லத்தில் நிலையான தன தான்ய சௌபாக்கியத்தை நிலைநிறுத்தும்.
+
+## அன்னபூரணி அருள் ஆசிர்வாதம்
+
+கொடுப்பதனால் குறைவதில்லை, மாறாகக் கருணையோடு பகிர்ந்து உண்ணும்போதே செல்வமும் மகிழ்ச்சியும் பல மடங்காகப் பெருகும் என்ற வாழ்வியல் பேருண்மையை நமக்கு நினைவூட்டும் திருநாளே அட்சய திருதியையாகும்.
+
+அன்னை அன்னபூரணியின் அருளாலும் திருமகளின் கடைக்கண் பார்வையாலும் உங்கள் சமையலறை பாத்திரங்கள் எப்போதும் தானியங்களால் நிரம்பி வழியவும், உங்கள் கைகள் என்றும் பிறருக்கு வழங்கும் வள்ளல் தன்மையோடு திகழவும் பிரார்த்திக்கிறோம்.
+
+வற்றாத நலன்களும் மனநிறைவும் உங்கள் குடும்பத்தில் என்றென்றும் நிலைத்திருக்கட்டும்! உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ceramic jar overflowing with natural crystal rock salt, turmeric roots, and raw paddy grains before Lakshmi lamp
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Dignified Tamil woman serving cool spiced buttermilk from clay pot to grateful elderly passerby on sunny day
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Goddess Annapoorani brass idol holding golden ladle and rice vessel beside glowing kuthuvilakku in pooja room
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Puranic scene of Draupadi praying with folded hands as radiant Sun God blesses copper Akshaya Patra vessel
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Humble Sudama offering small cloth bundle of white beaten rice aval to smiling Lord Krishna in palace
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Goddess Annapoorani graciously serving sacred food from golden bowl to Lord Shiva in temple sanctum light
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of white sea salt crystals, yellow turmeric fingers, and green moong dal in traditional brass bowls
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Heritage Tamil kitchen shelf neatly stocked with clay salt jar and brass canisters of wholesome grains
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Leaf-cup donas filled with creamy curd rice garnished with pomegranate seeds, curry leaves, and ginger bits
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Homemaker placing pink lotus flowers before Goddess Mahalakshmi portrait and lighting twin ghee lamps at dawn
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Brass pot of jaggery-lemon panakam and clay pitcher of spiced buttermilk kept ready on wooden table
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil family happily distributing packed curd-rice meals and drinking water to street workers in summer sunlight
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Woman gently feeding fresh bananas and green leaves to calm white temple cow in sunlit courtyard
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Elderly grandmother blessing young homemaker with sacred akshatai rice grains beside glowing household shrine
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warm golden light illuminating overflowing grain measure padi, rock salt bowl, and blooming lotus in pooja room
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Serene close-up of Goddess Lakshmi and Annapoorani idols surrounded by jasmine garlands and steady lamp flames

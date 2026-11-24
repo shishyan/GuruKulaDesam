@@ -1,0 +1,62 @@
+# [P1_051] திருவிடைமருதூர் பெருநலமாமுலையம்மை வரலாறு & மூகாம்பிகை சந்நிதி
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `திருவிடைமருதூர் தாய்`  
+> **Status**: `SCRIPT_READY`
+
+## திருவிடைமருதூர் மகாலிங்கத் தலம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! நம் மனதின் இருளை அகற்றி, உள்ளத்தில் தூய பக்தி ஒளியை ஏற்றி வைக்கும் திருத்தலங்கள் தமிழகத்தின் அரும்பெரும் பொக்கிஷங்கள்! மத்தியார்ஜுனம் எனப் போற்றப்படும் திருவிடைமருதூர் பெருநலமாமுலையம்மை மற்றும் மூகாம்பிகை அம்மனின் அருள் வரலாற்றை இன்று தரிசிப்போம்.
+
+கும்பகோணம் அருகே காவிரிக்கரையில் அமைந்துள்ள திருவிடைமருதூர், இந்தியாவின் மூன்று முக்கிய மருத மரத் தலங்களுள் நடுநாயகமான மகாலிங்கத் தலமாக விளங்குகிறது. மருத மரத்தைத் தல விருட்சமாகக் கொண்டு மகாலிங்கப் பெருமான் சுயம்பு மூர்த்தியாக இங்கு அருள்பாலிக்கிறார்.
+
+இத்தலத்து அம்பிகை பிருகத் சுந்தர குஜாம்பிகை என்றும், தூய தமிழில் நன்மையும் அருளும் சுரக்கும் பெருநலமாமுலையம்மை என்றும் போற்றப்படுகிறாள். தாயின் கருணைப் பாலால் உலக உயிர்களின் பசியையும் துயரத்தையும் ஆற்றும் பேரன்புக் கடல் இவள்.
+
+## மூகாம்பிகை சந்நிதிச் சிறப்பு
+
+திருவிடைமருதூர் திருக்கோவிலின் தனிப்பெரும் சிறப்பாக, தமிழகத்திலேயே மிக அபூர்வமான சோழர் காலத்து மூகாம்பிகை அம்மன் தனிச்சந்நிதி அம்பாள் பிரகாரத்தில் அமைந்துள்ளது. கர்நாடக மாநிலம் கொல்லூர் மூகாம்பிகைக்கு இணையான பழமையும் சக்தியும் வாய்ந்த சந்நிதி இதுவாகும்.
+
+தாமரைப் பீடத்தில் பத்மாசனமிட்டு அமர்ந்த திருக்கோலத்தில், சங்கு சக்கரம் மற்றும் அபய வரத கரங்களோடு சாந்தமும் தேஜஸும் நிறைந்து மூகாம்பிகை அன்னை அருள்பாலிக்கிறாள். அகத்திய முனிவர் முதலான ரிஷிகள் இத்தலத்து அன்னையையும் மகாலிங்கரையும் தவம் செய்து வழிபட்டுள்ளனர்.
+
+கல்வி, இசை, வாக்கு வன்மை மற்றும் மனத்தெளிவு அருளும் மூகாம்பிகையையும், குடும்ப நலம் காக்கும் பெருநலமாமுலையம்மையையும் ஒரே திருக்கோவிலில் தரிசிப்பது பெரும் புண்ணியமாகும். இரு தேவியரின் அருளும் இணைந்து பக்தர்களுக்குப் பரிபூரண ஞானத்தையும் செல்வத்தையும் வழங்குகின்றன.
+
+## பாவை விளக்கும் திருவருளும்
+
+இத்தலத்தில் அரச வம்சத்து இளவரசி அமித்ரவல்லி தன் கைகளில் தீபம் ஏந்தி நிற்கும் அழகிய வெண்கலப் பாவை விளக்குச் சிற்பம் பக்திக்கு எடுத்துக்காட்டாகத் திகழ்கிறது. அணையாத் தீபமாக இறைவன் திருமுன் தொண்டு செய்யும் அர்ப்பணிப்பு உணர்வை இப்பாவை விளக்கு இன்றும் பறைசாற்றுகிறது.
+
+மேலும் பாண்டிய மன்னன் வரகுண பாண்டியனைப் பற்றியிருந்த பிரம்மஹத்தி தோஷத்தை மகாலிங்கப் பெருமானும் அம்பிகையும் நீக்கியருளிய வரலாறும் இத்தலத்திற்கு உண்டு. அறியாமல் செய்த பிழைகளால் ஏற்படும் மன உறுத்தல்களையும் பயத்தையும் போக்கும் கருணைத் தலம் இது.
+
+பட்டினத்தடிகள் இல்லறப் பற்றை விடுத்துத் துறவு பூண்டு ஞானம் பெற்றதும், அவருடைய சீடர் பத்திரகிரியார் முக்தி அடைந்ததும் இத்திருவிடைமருதூர் தலத்தில்தான். இம்மை நலமும் மறுமை அமைதியும் ஒருங்கே அருளும் பெருமை இத்தலத்து அன்னைக்கு உண்டு.
+
+## இல்லத்தில் வழிபடும் முறை
+
+பௌர்ணமி மற்றும் வெள்ளிக்கிழமைகளில் மாலையில் இல்லத்துப் பூஜையறையில் இரு அகல் தீபங்கள் அல்லது பாவை விளக்கு ஏற்றி, திருவிடைமருதூர் பெருநலமாமுலையம்மையையும் மூகாம்பிகை அம்மனையும் மனதார வணங்குங்கள். சுத்தமான பசு நெய் தீபம் ஏற்றுவது கூடுதல் சிறப்பு தரும்.
+
+காய்ச்சிய பசும்பாலில் ஏலக்காய் மற்றும் பனங்கற்கண்டு சேர்த்து நைவேத்தியம் படைத்து, செந்தாமரை அல்லது மல்லிகை மலர்களால் அர்ச்சனை செய்யுங்கள். அபிராமி அந்தாதி அல்லது மூகாம்பிகா அஷ்டகம் பாடி வழிபடுவது வாக்கு சுத்தியையும் மன அமைதியையும் வளர்க்கும்.
+
+திருவிடைமருதூர் கோவிலுக்குச் செல்லும்போது புகழ்பெற்ற பாவை விளக்கில் நெய் சேர்த்து வழிபட்டு, மகாலிங்கர் சந்நிதியின் கிழக்கு வாயில் வழியே நுழைந்து அம்பிகையைத் தரிசிப்பது மரபாகும். இல்லத்திலும் தினமும் மாலையில் விளக்கேற்றி அன்னையைப் போற்றுங்கள்.
+
+## மங்கள ஆசிர்வாதம்
+
+திருவிடைமருதூர் பெருநலமாமுலையம்மை மற்றும் மூகாம்பிகை அம்மனின் இரட்டைக் கருணையால் உங்கள் இல்லத்தில் அறிவொளியும் தனதான்யச் செல்வமும் எப்போதும் குறையாமல் பொங்கி வழியட்டும். பாவை விளக்கின் சுடர்போல் உங்கள் குடும்பப் புகழ் சுடர்விட்டுப் பிரகாசிக்கட்டும்.
+
+மகாலிங்கப் பெருமானின் அருளால் மனக் குழப்பங்களும் வீண் அச்சங்களும் அறவே நீங்கி, தாய்மார்கள் அனைவரும் அமைதியும் பெருமிதமும் நிறைந்த நல்வாழ்வு வாழ மனதார வாழ்த்துகிறோம். அருளொளி என்றும் வழிகாட்டட்டும்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Widescreen view of majestic Thiruvidaimarudur Mahalingeswarar temple gopurams and ancient marudham tree bathed in golden sunlight
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devoted Tamil homemaker lighting ornate traditional bronze pavai vilakku oil lamp in serene pooja room
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred self-manifested Mahalingam shrine surrounded by ancient Chola granite pillars and glowing brass lamps
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Radiant standing idol of Goddess Perunalamamulaiyammai in green and gold silk saree blessing devotees in sanctum
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Rare Chola-era seated lotus idol of Goddess Mookambika holding conch and discus amidst glowing oil lamps
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sage Agastya and Vedic rishis meditating peacefully under sacred marudham tree beside Cauvery river bank
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close view of historic bronze Pavai Vilakku princess statue holding eternal glowing ghee flame in temple corridor
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. King Varaguna Pandya bowing in relief and gratitude before bright sanctum threshold of Thiruvidaimarudur temple
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Saint Pattinathar sitting in serene spiritual contemplation beside ancient stone mandapam at Thiruvidaimarudur
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close shot of brass pavai lamp glowing steadily beside fresh red lotus flowers and sandalwood paste
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil mother and daughter lighting twin ghee lamps on full moon evening before Amman altar at home
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Silver cup of warm cardamom-spiced milk with palm rock candy offered on banana leaf with jasmine garlands
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devotees pouring pure ghee into sacred temple lamp inside lamp-lit granite prakaram of Thiruvidaimarudur
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Calm Tamil woman chanting sacred Tamil hymns with peaceful expression in warm golden lamp light
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Glorious sanctum darshan of Perunalamamulaiyammai and Mookambika illuminated by camphor aarti and rose petals
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Peaceful prosperous South Indian family standing together in sunlit courtyard adorned with traditional kolams

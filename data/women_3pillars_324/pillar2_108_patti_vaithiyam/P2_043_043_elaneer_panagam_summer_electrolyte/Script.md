@@ -1,0 +1,62 @@
+# [P2_043] கோடை வெப்பத்தைத் தணிக்கும் பானகம், நீர்மோர் & இளநீர் வழுக்கை மருத்துவம்
+> **தொடர்**: 108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்  
+> **Thumbnail Badge**: `பாட்டி வைத்தியம்` | **Main Title**: `பானகம் நீர்மோர்`  
+> **Status**: `SCRIPT_READY`
+
+## முன்னுரை & சிறப்பு
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! சித்திரை, வைகாசி கோடைக் காலங்களில் சுட்டெரிக்கும் வெயிலால் ஏற்படும் நாவறட்சி, நீர்ச்சத்துக் குறைபாடு மற்றும் உடல் சோர்வை விரட்ட நம் தமிழ் மரபில் மூன்று அமிர்த பானங்கள் உள்ளன. அவையே பானகம், நீர்மோர் மற்றும் இளநீர் வழுக்கை ஆகும்.
+
+செயற்கைக் குளிர்பானங்கள் எதுவும் இல்லாத காலத்திலேயே, உடலின் தாது உப்புக்களை உடனடியாக மீட்டெடுக்கும் உயரிய பானங்களை நம் பாட்டிமார்கள் கோவில்களிலும் வீடுகளிலும் தயாரித்து வழங்கினார்கள். ஸ்ரீராம நவமி திருநாளில் வழங்கப்படும் பானகம் இதற்குச் சிறந்த எடுத்துக்காட்டு.
+
+வெயில் காலத்தில் குழந்தைகள் முதல் பெரியவர்கள் வரை அனைவரையும் வெப்பத் தாக்குதலிலிருந்து காக்கும் இந்த மூன்று பாரம்பரிய பானங்களின் மருத்துவச் சிறப்பையும், அவற்றைத் தயாரிக்கும் முறைகளையும் இன்று விரிவாக அறிவோம்.
+
+## பாட்டி வைத்திய அறிவியல்
+
+பானகத்தில் சேர்க்கப்படும் வெல்லம் இரும்புச்சத்தையும் உடனடி ஆற்றலையும் தருகிறது. அதிலுள்ள சுக்கு மற்றும் ஏலக்காய் வெயிலால் மந்தமாகும் செரிமானத் தீயைத் தூண்டி, எலுமிச்சைச் சாறு உடலுக்குத் தேவையான உயிர்ச்சத்தை வழங்குகிறது. இது ஓர் இயற்கையான உயிர்க்காக்கும் கரைசலாகும்.
+
+பசும் தயிரைக் கடைந்து வெண்ணெய் நீக்கி, நிறைய தண்ணீர் சேர்த்துத் தயாரிக்கும் நீர்மோர் குடலுக்குள் இருக்கும் நன்மை செய்யும் நுண்ணுயிரிகளை வளர்க்கிறது. கறிவேப்பிலையும் பெருங்காயமும் சேர்ந்த நீர்மோர் வெயிலால் ஏற்படும் நீர்க்கடுப்பை நொடியில் குணப்படுத்துகிறது.
+
+செவ்விளநீரும் அதன் உள்ளே இருக்கும் மென்மையான வழுக்கையும் தாய்ப்பாலுக்கு இணையான தூய்மை கொண்டவை. இளநீர் வழுக்கையில் உள்ள நல்ல கொழுப்பும் தாது உப்புக்களும் வயிற்றுப் புண்ணை ஆற்றி, உடலின் உள் வெப்பத்தை முற்றிலும் தணித்துப் புத்துணர்ச்சி அளிக்கின்றன.
+
+## பாரம்பரிய செய்முறை
+
+பாரம்பரிய பானகம் செய்ய, மண்பானை நீரில் பொடித்த அச்சு வெல்லம் அல்லது நாட்டு வெல்லத்தைக் கரைத்து வடிகட்டிக் கொள்ள வேண்டும். அதில் கால் தேக்கரண்டி சுக்குப் பொடி, சிட்டிகை ஏலக்காய்த் தூள், இரண்டு தட்டிய மிளகு, எலுமிச்சைச் சாறு மற்றும் நான்கு துளசி இலைகள் சேர்த்தால் தெய்வீக பானகம் தயார்.
+
+மணக்கும் நீர்மோர் தயாரிக்க, ஒரு பங்கு கெட்டித் தயிருடன் நான்கு பங்கு மண்பானை நீர் சேர்த்து மத்தால் நன்றாகக் கடைய வேண்டும். அதில் நசுக்கிய இஞ்சி, பொடியாக நறுக்கிய கறிவேப்பிலை, கொத்தமல்லித் தழை, பெருங்காயத் தூள் மற்றும் கல் உப்பு சேர்த்துக் கலக்கினால் அருமையான நீர்மோர் தயாராகிவிடும்.
+
+இளநீரைத் தேர்ந்தெடுக்கும்போது உள்ளே மெல்லிய ஆடை போன்ற வழுக்கை இருக்கும் இளநீராகப் பார்த்து வெட்ட வேண்டும். முதலில் இளநீரைப் பருகிவிட்டு, பின்னர் அந்த மென்மையான வழுக்கையை வழித்தெடுத்துச் சிறிது ஏலக்காய்த் தூள் தூவி அப்படியே உண்ணலாம்.
+
+## இல்லறப் பயன்பாட்டு முறை
+
+கோடைக் காலத்தில் வெயிலில் சென்று வீடு திரும்பிய உடன் குளிர்சாதனப் பெட்டியில் வைத்த சில் தண்ணீரைக் குடிப்பதைத் தவிர்த்து, மண்பானையில் வைத்த நீர்மோர் அல்லது பானகத்தை ஒரு குவளை பருகுவது தொண்டைக்கும் உடலுக்கும் மிகவும் பாதுகாப்பானது.
+
+இளநீரைக் காலைப் பொழுதில் வெறும் வயிற்றிலோ அல்லது நண்பகல் வேளையிலோ பருகுவது மிகச்சிறந்த பலனைத் தரும். மாலை ஆறு மணிக்குப் பிறகு இளநீர் மற்றும் நீர்மோர் பருகுவதைத் தவிர்ப்பது சளி பிடிக்காமல் தடுக்கும்.
+
+கோடை விடுமுறையில் வீட்டில் விளையாடும் குழந்தைகளுக்கு ஒரு பெரிய மண் கலயத்தில் நீர்மோர் அல்லது பானகம் தயாரித்து மூடி வைத்துவிட்டால், தாகம் எடுக்கும்போதெல்லாம் அவர்கள் ஆரோக்கியமாகப் பருகி மகிழ்வார்கள். விருந்தினர்களுக்கும் இதனைக் கொடுத்து உபசரிக்கலாம்.
+
+## நிறைவு ஆசீர்வாதம்
+
+பருவ காலத்திற்கு ஏற்ப உணவு முறைகளை மாற்றி அமைத்த நம் முன்னோர்களின் வாழ்வியல் ஞானம் போற்றுதலுக்கு உரியது. இயற்கையான இந்தக் கோடைப் பானங்களைப் பருகி நம் குடும்பத்தை வெப்பத்திலிருந்து காப்போம்.
+
+இறைவனின் குளிர்ந்த கருணைப் பார்வை உங்கள் குடும்பத்தின் மீது என்றும் நிலைத்திருந்து, உடல் நலமும் உள்ளக் குளிர்ச்சியும் பெருகிட மனதார வாழ்த்துகிறோம். விருந்தோம்பல் பண்பு நம் இல்லங்களில் தழைக்கட்டும்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Smiling South Indian homemaker serving cool traditional buttermilk and panagam from terracotta clay pots on sunlit veranda
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Three refreshing summer treasures arranged together, jaggery panagam in brass cup, spiced buttermilk in clay glass, and tender coconut
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Festive brass pot of traditional Rama Navami panagam garnished with fresh green tulsi leaves beside glowing temple lamp
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden jaggery blocks, dried ginger piece, green cardamom pods, and fresh yellow lemon halves on rustic wooden table
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Wooden churning rod mathu spinning inside a terracotta pot whipping fresh white curd into frothy cool buttermilk
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Freshly cut green tender coconut revealing translucent sweet water and soft white creamy jelly malai inside
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Straining dissolved jaggery water into a cool red clay pot and adding dry ginger powder, cardamom, and lemon juice
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Garnishing frothy earthen pot buttermilk with finely chopped green curry leaves, coriander, crushed ginger, and crystal salt
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Scooping soft white tender coconut flesh cleanly onto a fresh green banana leaf with a traditional spoon
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Cool red clay water pot wrapped in damp cotton cloth resting on sand base in shaded airy kitchen corner
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Woman drinking fresh tender coconut water peacefully under the cool shade of courtyard trees on bright sunny morning
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Grandmother pouring spiced buttermilk from terracotta pitcher into small clay tumblers for happy children on summer afternoon
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Hospitable Tamil lady offering cool panagam on a brass tray to arriving guests at traditional wooden doorway
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close up of condensation droplets on porous terracotta pot holding fragrant curry leaf buttermilk beside fresh lemons
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Peaceful family relaxing comfortably in airy traditional courtyard home enjoying natural summer drinks together
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Auspicious brass lamp glowing serenely beside fresh flowers and fruits offered in peaceful household prayer room

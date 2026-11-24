@@ -1,0 +1,62 @@
+# [P1_106] வைகுண்ட ஏகாதசி விரத வரலாறு & மோகினி ஏகாதசி தேவி தோற்றம்
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `விரத மகிமை` | **Main Title**: `ஏகாதசி விரத மகிமை`  
+> **Status**: `SCRIPT_READY`
+
+## வைகுண்ட ஏகாதசி அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! ஒரு வருடத்தில் வரும் இருபத்தி நான்கு ஏகாதசிகளிலும் சிகரமாகப் போற்றப்படுவது மார்கழி மாத வளர்பிறையில் வரும் வைகுண்ட ஏகாதசி ஆகும். முக்கோடி ஏகாதசி என்று அழைக்கப்படும் இப்புனித நாள், ஆன்மாவிற்கு உயர்ந்த அமைதியையும் முக்திப் பேற்றையும் அருளும் நன்னாளாகும்.
+
+மார்கழி மாதக் குளிரில் ஸ்ரீரங்கம் உள்ளிட்ட திவ்ய தேசங்களில் சொர்க்கவாசல் எனப்படும் பரமபத வாசல் திறக்கப்படும் காட்சி மெய்சிலிர்க்க வைக்கும். நம் மனதிலுள்ள அறியாமை என்னும் இருளை விலக்கி, இறைவனின் கருணை வாசலைத் திறப்பதே இவ்விரதத்தின் உண்மையான நோக்கமாகும்.
+
+மகாவிஷ்ணுவின் திருமேனியிலிருந்து தோன்றிய ஏகாதசி தேவியின் வீர வரலாறு, பெண்களின் ஆன்மீக ஆற்றலை உலகிற்குப் பறைசாற்றுகிறது. அந்தப் புராண வரலாற்றையும், இல்லத்தில் மன அமைதியோடு விரதம் இருக்கும் முறையையும் இப்போது விரிவாகக் காண்போம்.
+
+## ஏகாதசி தேவி தோன்றிய புராணம்
+
+பத்ம புராண வரலாற்றின்படி, கிருத யுகத்தில் சந்திராவதி நகரத்தை ஆண்ட முரன் என்ற கொடிய அசுரன் தேவர்களைத் துரத்தித் துன்புறுத்தினான். தேவர்களைக் காப்பதற்காக மகாவிஷ்ணு முரசுரனோடு நெடுங்காலம் போரிட்டு, பத்ரிகாசிரமத்திலுள்ள சிம்ஹாவதி குகையில் சற்று யோக நித்திரை கொண்டார்.
+
+அச்சமயத்தில் குகைக்குள் நுழைந்த முரசுரன், உறங்கிக் கொண்டிருந்த திருமாலைத் தாக்கத் தனது ஆயுதத்தை ஓங்கினான். உடனே பெருமாளின் திருமேனியிலிருந்து பேரொளி மிக்க கன்னிகை ஒருத்தி திவ்ய ஆயுதங்களுடன் தோன்றி, ஒரு கணத்தில் முரசுரனை வதம் செய்தாள்.
+
+கண் விழித்த நாராயணன் அந்தத் தெய்வீக சக்தியைப் பாராட்டி, பதினோராவது திதியில் தோன்றியதால் ஏகாதசி தேவி என்று திருப்பெயர் சூட்டினார். உன்னை விரதமிருந்து வழிபடும் பக்தர்களுக்கு யாம் வைகுண்டப் பதவியும் சகல நலன்களும் அருள்வோம் என்று திருமால் வரமளித்தார்.
+
+## பரமபத வாசல் தத்துவ மகிமை
+
+புராணக் கதையிலுள்ள முரசுரன் என்பது மனித மனதிலுள்ள சோம்பல், பொறாமை மற்றும் தாமச குணங்களின் அடையாளமாகும். ஏகாதசி அன்று உணவைக் குறைத்து இந்திரியங்களை அடக்கும்போது, நமக்குள்ளே இருக்கும் ஏகாதசி சக்தி விழித்தெழுந்து தீய குணங்களை வெல்கிறது.
+
+வைகுண்ட ஏகாதசி அதிகாலையில் ஆலயத்தின் வடக்கு வாசலான பரமபத வாசல் வழியாக நம்பெருமாள் எழுந்தருளிப் பக்தர்களுக்கு அருள்பாலிக்கிறார். மனித உடலிலுள்ள ஒன்பது வாசல்களையும் கடந்து, உச்சந்தலையான பிரம்மரந்திரம் வழியே இறை உணர்வை அடைவதே சொர்க்கவாசல் தத்துவமாகும்.
+
+சந்திரனின் ஈர்ப்பு விசை மாறுபடும் ஏகாதசி நாளில் வயிற்றிற்கு ஓய்வு கொடுப்பது செரிமான மண்டலத்தைத் தூய்மைப்படுத்துவதாகச் சித்த மருத்துவமும் கூறுகிறது. உடலும் உள்ளமும் இலேசாகும்போது, நாராயண நாம ஜபம் நம் ஆழ்மனதில் அமைதியையும் ஞான ஒளியையும் நிரப்புகிறது.
+
+## இல்லத்து ஏகாதசி விரத முறை
+
+ஏகாதசிக்கு முதல் நாளான தசமி இரவிலேயே எளிய உணவு உட்கொண்டு, ஏகாதசி அதிகாலை பிரம்ம முகூர்த்தத்தில் நீராடித் துளசி தீர்த்தம் பருக வேண்டும். பூஜை அறையில் மகாலட்சுமி சமேத நாராயணர் படத்திற்குத் துளசி மற்றும் செந்தாமரை மலர்கள் சூட்டி நெய் விளக்கேற்றலாம்.
+
+முழு உபவாசம் இருக்க இயலாத தாய்மார்களும் முதியவர்களும் அரிசி உணவைத் தவிர்த்துப் பால், பழங்கள், துளசி நீர் மற்றும் அவல் எடுத்துக் கொள்ளலாம். நாள் முழுவதும் வீண் பேச்சுகளையும் கோபத்தையும் தவிர்த்து, விஷ்ணு சகஸ்ரநாமம் மற்றும் நாலாயிர திவ்யப் பிரபந்தப் பாசுரங்களைக் கேட்கலாம்.
+
+இரவில் கண் விழிப்பவர்கள் இறை நாமப் பாடல்களிலும் புராண வாசிப்பிலும் அமைதியாக ஈடுபட்டு மனதை ஒருமுகப்படுத்த வேண்டும். மறுநாள் துவாதசி காலையில் நெல்லிக்காய், அகத்திக்கீரை மற்றும் சுண்டைக்காய் சேர்த்த பச்சரிசி உணவைப் பெருமாளுக்குப் படைத்து, ஏழைகளுக்கு அன்னமளித்துப் பாரணை முடிக்க வேண்டும்.
+
+## வைகுண்ட நாதன் ஆசியுரை
+
+வைகுண்ட ஏகாதசி விரதம் இருக்கும் குடும்பங்களில் முன்னோர்களின் ஆசியும், மகாலட்சுமியின் நிலையான அருளும் பரிபூரணமாகக் கிடைக்கும். மன அழுத்தங்களும் அச்சங்களும் விலகி, இல்லத்திலுள்ள அனைவருக்கும் நேர்மறையான சிந்தனையும் ஆரோக்கியமும் உண்டாகும்.
+
+ஏகாதசி தேவியின் தெய்வீக ஆற்றல் நம் இல்லத்துப் பெண்களுக்கு மன உறுதியையும், எத்தகைய சவாலையும் கடக்கும் துணிவையும் வழங்கட்டும். அரங்கநாதப் பெருமாளின் குளிர்ந்த திருப்பார்வை உங்கள் பிள்ளைகளின் எதிர்காலத்தை ஒளிமயமாக வழிநடத்தட்டும்.
+
+சங்கு சக்கரதாரியான ஸ்ரீமந் நாராயணனின் திருவடிகளைப் போற்றி வணங்கி அன்போடு வாழ்த்துகிறோம். உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Widescreen Srirangam Ranganathaswamy temple Rajagopuram glowing majestically in misty Margazhi pre-dawn light
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ornate golden Paramapada Vasal temple gateway opening slowly amid fragrant incense and flower petals
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Serene Tamil woman praying beside glowing brass lamp with sacred Tulasi tirtha in copper cup
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Lord Mahavishnu resting peacefully inside Himalayan Simhavati cave surrounded by soft celestial blue light
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Radiant warrior goddess Ekadashi Devi emerging in golden armor with shining discus from Vishnu aura
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Triumphant Ekadashi Devi standing blessed before awakened Lord Narayana amid showering heavenly lotus petals
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Procession of emerald-decked Namperumal carried on golden palanquin through sacred northern temple portal
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devotees chanting Vishnu Sahasranamam peacefully inside pillared stone mandapam lit by oil lamps
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Home altar of Lakshmi Narayana adorned with pink lotus blossoms and fresh green Tulasi garlands
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Simple sattvic Ekadashi tray of fresh bananas, pomegranate, warm milk, and soaked aval on silver plate
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Grandmother reading Tamil Divya Prabandham palm-style book softly to grandchildren by evening lamp light
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Morning Dwadashi kitchen preparation of fresh gooseberry pachadi, agathi greens, and sundakkai curry in clay pots
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional Dwadashi parana meal served respectfully on green banana leaf after offering to Perumal
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker offering warm meal packet kindly to elderly devotee outside temple street
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Peaceful sunrise illuminating sacred Cauvery river steps beside ancient Vaishnava temple walls
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of reclining Lord Ranganatha crowned in solid gold jewelry with lotus-eyed gentle smile

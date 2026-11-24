@@ -1,0 +1,62 @@
+# [P1_037] விஜயவாடா கனகதுர்க்கை அம்மன் வரலாறு & இந்திரகீலாத்ரி தவம்
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `கனகதுர்க்கை அம்மன்`  
+> **Status**: `SCRIPT_READY`
+
+## அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! பொன் போன்று ஒளிரும் திருமேனியோடு, கிருஷ்ணா நதிக்கரையில் இந்திரகீலாத்ரி மலையின் மீது எழுந்தருளியுள்ள விஜயவாடா கனகதுர்க்கை அம்மன், பக்தர்களுக்கு வெற்றியையும் செல்வ வளத்தையும் ஒருசேர வழங்கும் கருணைத் தாய் ஆவாள்.
+
+தூய பக்தி கொண்ட ஒரு அடியவரின் வேண்டுதலுக்காக, அம்மனே அவர் இதயமாகிய மலையின் மீது நிரந்தரமாகக் குடியேறிய உருக்கமான வரலாறு கொண்ட திருத்தலம் இது. விஜயவாடா என்ற பெயரே வெற்றியின் இருப்பிடம் என்பதைக் குறிக்கிறது.
+
+கீலன் என்னும் யக்ஷனின் தவமும், அர்ஜுனன் சிவபெருமானிடம் பாசுபதாஸ்திரம் பெற்ற பெருமையும் இணைந்த கனகதுர்க்கை அம்மனின் தல வரலாற்றையும், இல்லத்தில் தாயாரை வழிபடும் முறையையும் இன்று பக்தியுடன் சிந்திப்போம்.
+
+## தல வரலாறு
+
+புராண காலத்தில் கீலன் என்னும் யக்ஷன் அன்னை ஆதிபராசக்தியின் மீது எல்லையற்ற பக்தி கொண்டு, கிருஷ்ணா நதிக்கரையில் கடும் தவம் இயற்றினான். அவனது மாசற்ற பக்தியில் மகிழ்ந்த அம்பிகை நேரில் தோன்றி என்ன வரம் வேண்டும் என்று கேட்டாள். அதற்குக் கீலன் பொன்னையோ பொருளையோ கேட்காமல், தாயே நீ எப்போதும் என் இதயத்திலேயே வாசம் செய்ய வேண்டும் என்ற உயர்ந்த வரத்தைக் கேட்டான்.
+
+அதைக் கேட்டு உள்ளம் நெகிழ்ந்த அன்னை, நீ இவ்விடத்தில் ஒரு மலையாக உருவெடுத்து நில், அசுரர்களை அழித்த பின் உன் மீது நான் நிரந்தரமாக வீற்றிருப்பேன் என்று அருளினாள். அவ்வாறே கீலன் மலையாக மாறி அன்னையைத் தாங்கி நின்றான். தேவேந்திரனும் தேவர்களும் தினமும் இம்மலைக்கு வந்து வழிபட்டதால் இந்திரகீலாத்ரி என்ற திருப்பெயர் பெற்றது.
+
+துர்கமாசுரன் முதலான கொடியவர்களை அழித்து உலகைக் காத்த அன்னை, கோடி சூர்யப் பிரகாசத்தோடு பொன் நிறத்தில் சுயம்புவாகக் கீல மலையின் மீது எழுந்தருளினாள். கனகம் என்றால் பொன் என்பதால் கனகதுர்க்கை என்று பக்தர்களால் போற்றப்படுகிறாள்.
+
+## அர்ஜுனன் பெற்ற அருள்
+
+மகாபாரத காலத்தில் பஞ்ச பாண்டவர்களில் ஒருவனான அர்ஜுனன், தர்மப் போரில் வெற்றி பெறுவதற்காக இந்திரகீலாத்ரி மலையின் உச்சியில் அமர்ந்து சிவபெருமானையும் துர்க்கை அம்மனையும் நோக்கிக் கடும் தவம் புரிந்தான். இத்தலத்தின் தவ ஆற்றல் அவனுக்குப் பெரும் பலம் சேர்த்தது.
+
+வேடுவன் கோலத்தில் வந்த சிவபெருமானும் பார்வதி தேவியும் அர்ஜுனனின் வீரத்தையும் பக்தியையும் சோதித்து, அவனுக்கு வலிமை மிக்க பாசுபதாஸ்திரத்தை வழங்கி ஆசீர்வதித்தனர். அர்ஜுனனுக்கு விஜயன் என்ற பெயர் நிலைத்ததால் இவ்வூர் விஜயவாடா என்று பெயர் பெற்றது.
+
+ஆதிசங்கரர் இத்தலத்திற்கு எழுந்தருளி ஸ்ரீ சக்கரத்தைப் பிரதிஷ்டை செய்து வைதீக வழிபாட்டு முறையை வகுத்துக் கொடுத்தார். நவராத்திரியின் போது மூல நட்சத்திர நாளில் சரஸ்வதி அலங்காரத்திலும், கிருஷ்ணா நதியில் நடைபெறும் தெப்போற்சவத்திலும் அன்னை கண்கொள்ளாக் காட்சியாக அருள்கிறாள்.
+
+## வழிபாட்டு முறை
+
+வெள்ளிக்கிழமை, செவ்வாய்க்கிழமை மற்றும் நவராத்திரி நாட்களில் இல்லத்தில் நெய்தீபம் ஏற்றி கனகதுர்க்கை அம்மனை வழிபடுவது மிகச் சிறந்தது. மஞ்சள் நிறச் சாமந்தி அல்லது செவ்வரளி மலர்களால் அன்னையின் திருப்படத்தை அலங்கரிக்கலாம்.
+
+கதம்ப சாதம், புளியோதரை அல்லது வெல்லப் பாயசம் சமைத்து அம்மனுக்கு நிவேதனம் செய்து வழிபடுவது மரபு. ஓம் ஸ்ரீ கனகதுர்க்காயை நமஹ என்ற திருநாமத்தை இருபத்தி ஒன்று முறை கூறி வணங்கி வர, எடுத்த நன்முயற்சிகளில் தடையற்ற வெற்றி கிட்டும்.
+
+தொழில் முன்னேற்றம், தேர்வு வெற்றி மற்றும் குடும்பத்தில் பொன் பொருள் சேர்க்கை உண்டாக வெள்ளிக்கிழமை மாலை வேளையில் ஐந்து முகக் குத்துவிளக்கு ஏற்றி வழிபடுங்கள். கீலனைப் போலத் தூய அன்போடு அழைத்தால் அன்னை நம் உள்ளத்திலும் வந்து அமர்வாள்.
+
+## நிறைவு ஆசி
+
+கிருஷ்ணா நதிக்கரையில் இந்திரகீலாத்ரி மலையின் மீது பொன்மயமாக ஜொலிக்கும் விஜயவாடா கனகதுர்க்கை அம்மனின் திருவருள் உங்கள் இல்லத்தை நிரப்பட்டும். தாயின் கருணையால் உங்கள் நன்முயற்சிகள் அனைத்தும் மாபெரும் வெற்றியைப் பெறட்டும்.
+
+இல்லத்தில் பொன்னும் பொருளும், மனதில் தளராத ஊக்கமும், குடும்பத்தில் அமைதியும் நிலைத்திருக்க அன்னை கனகதுர்க்கையின் திருவடிகளைப் பணிவோம். தாயின் அருள் ஒளி என்றும் நம்மை வழிநடத்தட்டும்.
+
+உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden vimana of Kanaka Durga temple gleaming atop green Indrakeeladri hill beside wide flowing Krishna river at sunrise.
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of radiant golden-faced Swayambhu Goddess Kanaka Durga adorned with solid gold nose ring and marigold garlands.
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devoted Yaksha Keela meditating with folded hands on lush riverbank of Krishna under soft golden morning rays.
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Divine golden light blessing Yaksha Keela as serene green Indrakeeladri hill rises majestically beside sparkling river waters.
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Self-manifested golden form of Goddess Kanaka Durga shining brightly atop rocky shrine surrounded by brass oil lamps.
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Warrior prince Arjuna meditating steadfastly atop rocky Indrakeeladri hillock surrounded by ancient trees and morning mist.
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Divine Shiva and Parvati in forest attire blessing humble Arjuna with radiant celestial grace on hill summit.
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Adi Shankaracharya consecrating a gleaming copper Sri Chakra amidst fragrant lotus petals inside ancient stone sanctum.
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Illuminated ceremonial swan boat carrying Goddess Kanaka Durga across shimmering Krishna river waters during evening Teppotsavam festival.
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker lighting five-faced brass kuthuvilakku before Goddess Kanaka Durga portrait adorned with yellow marigold garlands.
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Traditional banana leaf offering of tamarind puliyodharai rice and warm jaggery payasam beside brass bell and lamp.
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of auspicious turmeric roots, vermilion kumkum, and yellow chrysanthemum blossoms arranged on silver pooja plate.
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mother and children praying together peacefully in warm lamp-lit pooja room for success in noble endeavors.
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Devotees climbing stone steps of Indrakeeladri hill carrying yellow turmeric cloth and flowers in calm morning light.
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Wide twilight panorama of Vijayawada Krishna river reflecting golden lights of Kanaka Durga hilltop temple.
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close-up of golden lotus petals, glowing ghee diya, and kumkum at the sacred feet of Kanaka Durga.

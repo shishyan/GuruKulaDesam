@@ -1,0 +1,62 @@
+# [P1_061] ஈரோடு பெரிய மாரியம்மன் தல வரலாறு & கம்பம் நடும் மங்கல மரபு
+> **தொடர்**: 108 அம்மன் தல வரலாறு & விரத மகிமை  
+> **Thumbnail Badge**: `அம்மன் வரலாறு` | **Main Title**: `பெரிய மாரியம்மன்`  
+> **Status**: `SCRIPT_READY`
+
+## மங்கல அறிமுகம்
+
+சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! மஞ்சள் மாநகரமாம் ஈரோடு மண்ணின் கண்கண்ட தெய்வமாக விளங்கும் பெரிய மாரியம்மன் தாயின் அருள் வரலாற்றையும், பல்லாயிரக்கணக்கான பெண்கள் மஞ்சள் நீர் ஊற்றி வழிபடும் கம்பம் நடும் மங்கல மரபையும் இன்று தரிசிக்கப் போகிறோம்.
+
+கொங்கு நாட்டின் வேளாண் செழிப்பிற்கும் மஞ்சள் விளைச்சலுக்கும் ஆதார சக்தியாகப் போற்றப்படும் ஈரோடு பெரிய மாரியம்மன், தன்னை நம்பி வரும் மக்களின் வாழ்வில் வறுமையையும் பிணியையும் நீக்கி வளம் சேர்க்கும் தாயாக வீற்றிருக்கிறாள்.
+
+பெரிய மாரியம்மன், சின்ன மாரியம்மன், காரைவாய்க்கால் மாரியம்மன் என மூன்று சகோதரிகளும் ஈரோடு மாநகரை முக்கோண வடிவில் சூழ்ந்து நின்று காத்தருளும் திருக்கோலம் பக்தர்களுக்குப் பெரும் ஆறுதலையும் பாதுகாப்பையும் அளிக்கிறது.
+
+## தல வரலாறு
+
+கொங்குச் சோழர்கள் மற்றும் நாயக்க மன்னர்கள் காலத்திலிருந்தே ஈரோடு கோட்டைப் பகுதியின் காவல் தெய்வமாகப் பெரிய மாரியம்மன் வழிபடப்பட்டு வருகிறாள். காவிரிக் கால்வாய்களின் நீர்வளத்தால் செழித்த இப்பகுதி மக்களின் குலவிளக்காக அன்னை திகழ்கிறாள்.
+
+கருவறையில் அன்னை வடக்கு திசை நோக்கி அமர்ந்து, கருணை ததும்பும் திருமுகத்தோடு காட்சி தருகிறாள். கோவிலின் தலவிருட்சமாக விளங்கும் தல வேம்பு மரம் தெய்வீக மருத்துவ குணம் நிறைந்ததாகப் பக்தர்களால் போற்றப்படுகிறது.
+
+மூன்று சகோதரி அம்மன்களும் இணைந்து அருள்பாலிக்கும் இத்தலத்தில், எத்தகைய கடும் வெப்பக் காலத்திலும் மக்களின் உள்ளங்களைக் குளிரச் செய்து, பருவமழை தவறாமல் பொழிய வைக்கும் வரப்பிரசாதியாகப் பெரிய மாரியம்மன் விளங்குகிறாள்.
+
+## கம்பம் நடும் மங்கல மரபு
+
+பங்குனி மாதத்தில் நடைபெறும் ஈரோடு பெரிய மாரியம்மன் குண்டம் மற்றும் கம்பம் திருவிழா உலகப் புகழ்பெற்றதாகும். மூன்று கிளைகள் கொண்ட புனித மரக்கம்பம் நடப்பட்டு, அது அம்மனின் கணவரான சிவபெருமானின் வடிவமாகப் போற்றப்படுகிறது.
+
+விழா நடைபெறும் பதினைந்து நாட்களும், அதிகாலை முதலே பல்லாயிரக்கணக்கான தாய்மார்களும் சகோதரிகளும் தூய குடங்களில் மஞ்சள் கலந்த புனித நீரையும் வேப்பிலையையும் சுமந்து வரிசையில் நின்று அக்கம்பத்திற்கு ஊற்றி மகிழ்கின்றனர்.
+
+மஞ்சள் என்பது மங்கலத்தின் சின்னமாகவும் கிருமிநாசினியாகவும் திகழ்கிறது. ஊரெங்கும் மஞ்சள் மணம் கமழப் பெண்கள் ஊற்றும் அப்புனித நீர், பூமியின் வெப்பத்தைத் தணித்து மழையையும் குடும்ப நலனையும் ஈர்த்துத் தருகிறது. விழாவின் நிறைவில் கம்பம் காவிரி நதியில் குளிர வைக்கப்படுகிறது.
+
+## வழிபாட்டு முறை
+
+பெண்களின் மாங்கல்ய பலம் பெருகவும், விவசாயம் மற்றும் வியாபாரம் செழிக்கவும் வெள்ளிக்கிழமைகளில் மாரியம்மனுக்குப் பசுமஞ்சள் கிழங்குகளால் மாலை தொடுத்து அல்லது மஞ்சள் காப்பு சாற்றி வழிபடுவது மிக உயர்ந்த பலனைத் தரும்.
+
+இல்லத்தில் வழிபடும் தாய்மார்கள், சிறிய செம்பு அல்லது பித்தளைக் கலசத்தில் சுத்தமான நீர் நிரப்பி, சிறிது மஞ்சள் பொடி, பச்சைக் கற்பூரம், வேப்பிலை சேர்த்துப் பூஜை அறையில் வைத்து நெய் தீபம் ஏற்றி வழிபடலாம்.
+
+பூஜை முடிந்த பின்னர் அப்புனித மஞ்சள் தீர்த்தத்தை வீடு முழுவதும் தெளித்து, பானகம் மற்றும் சுண்டல் நிவேதனம் செய்து குடும்பத்தினருக்கு வழங்கினால், இல்லத்தில் மங்கல அதிர்வுகளும் நோய் எதிர்ப்புச் சக்தியும் பெருகும்.
+
+## மங்கல வாழ்த்து
+
+ஈரோடு மாநகரைக் காத்தருளும் பெரிய மாரியம்மன் மற்றும் சகோதரித் தெய்வங்களின் அருளால், உங்கள் இல்லங்களில் மஞ்சள் குங்கும மங்கலமும், பசுமையான வளமும் எந்நாளும் குறைவின்றி நிலைத்திருக்கட்டும்.
+
+வான்மழை பொழிந்து பூமி குளிர்வது போல, உங்கள் மனதில் உள்ள கவலைகள் யாவும் தணிந்து, குடும்பத்தில் அமைதியும் ஆனந்தமும் தழைத்தோங்க அன்னையின் பொற்பாதங்களை வணங்குகிறோம்.
+
+பெரிய மாரியம்மனின் தாய்க்கருணை உங்கள் குடும்பத்தை எப்போதும் நல்வழியில் நடத்திச் செல்ல வாழ்த்துகிறோம். உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!
+
+## 16 Widescreen Visual Storyboard Prompts (`nano-pro`, $0 Video Spend)
+1. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Widescreen sunrise view of Erode Periya Mariamman temple colorful tower amidst bustling traditional turmeric town
+2. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Compassionate sanctum of Erode Periya Mariamman adorned in bright yellow silk saree jasmine and neem garlands
+3. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Golden heaps of fresh harvested Erode turmeric roots drying neatly in sunlit Kongu agricultural courtyard
+4. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Three ornate temple brass kalasams glowing together representing the three sister Mariamman shrines of Erode
+5. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Ancient sacred neem tree inside temple courtyard tied with yellow turmeric threads and brass bells
+6. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Lush green irrigated paddy and turmeric fields beside flowing Kaveri canal waters under clear sky
+7. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Sacred three pronged wooden ceremonial kambam pillar decorated with neem leaves and turmeric paste in courtyard
+8. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Long graceful line of Tamil women in colorful sarees carrying brass pots of yellow turmeric water
+9. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close shot of golden turmeric water and green neem leaves poured devoutly over sacred ceremonial kambam
+10. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Festive procession carrying flower decked sacred kambam toward flowing Kaveri river waters at sunset
+11. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Tamil homemaker preparing brass kalasam with pure water turmeric powder green camphor and neem leaves
+12. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Garland of fresh golden turmeric rhizomes and red kumkum placed beside glowing brass oil lamp
+13. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Bowl of savory chickpea sundal and jaggery ginger panagam served on fresh banana leaf at home
+14. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Mother sprinkling fragrant yellow turmeric holy water gently in sunlit traditional courtyard home
+15. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Illuminated Erode Mariamman temple corridor glowing with hundreds of oil lamps in peaceful evening twilight
+16. Photorealistic widescreen South Indian sacred cinema & heritage realism, ARRI Alexa 65mm lens, natural skin and temple stone textures, warm golden sunlight and glowing brass oil lamps, single unified cohesive camera frame with no split-screen and no collage dividers, subjects composed cleanly with rich atmospheric depth, pure artwork with zero text, zero letters, zero numbers, zero watermarks, and zero UI icons. Close devotional shot of Mariamman feet adorned with rich golden turmeric paste kumkum and jasmine flowers

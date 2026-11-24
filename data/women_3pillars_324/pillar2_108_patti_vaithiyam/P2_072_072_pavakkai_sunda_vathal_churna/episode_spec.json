@@ -1,0 +1,86 @@
+{
+  "ep_code": "P2_072",
+  "pillar_code": "P2",
+  "pillar_title_ta": "108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்",
+  "ep_num_in_pillar": 72,
+  "slug": "p2_072_pavakkai_sunda_vathal_churna",
+  "title_pill": "பாட்டி வைத்தியம் • வீட்டு வற்றல் முறை",
+  "yt_title": "பருவகால நோய் தடுக்கும் சுண்டை, மணத்தக்காளி, கொத்தவரங்காய் வீட்டு வற்றல் தயாரிப்பு...",
+  "yt_description": "பருவகால நோய் தடுக்கும் சுண்டை, மணத்தக்காளி, கொத்தவரங்காய் வீட்டு வற்றல் தயாரிப்பு — தமிழர் பண்பாடு (வாழ்வியல் நெறி) | @TamilDailyLife வழங்கும் மகளிர் சிறப்புத் தொடர் (108 அஞ்சறைப்பெட்டி & பாட்டி வைத்தியம்).\n\nஇந்தப் பதிவில்:\n- குடல் புழுக்களை நீக்கும் சுண்டைக்காய் மற்றும் வாய்ப்புண், வயிற்றுப் புண்களை ஆற்றும் மணத்தக்காளி வற்றலின் மருத்துவப் பயன்கள்.\n- புளித்த பசும் மோர், மஞ்சள் மற்றும் கல் உப்பில் காய்கறிகளை இரவு ஊறவைத்துப் பக்குவப்படுத்தும் முறை.\n- தூய வெள்ளைப் பருத்தித் துணியில் தூசி படாமல் சுகாதாரமாக வெயிலில் காயவைத்துச் சேமிக்கும் வழிமுறை.\n- அதிக எண்ணெயில் பொரிக்காமல் பசு நெய் அல்லது நல்லெண்ணெயில் வறுத்து வத்தக்குழம்பாகப் பரிமாறும் ஆரோக்கிய இரகசியம்.\n\n#TamilDailyLife #TamilVirtues #PattiVaithiyam #Anjaraipetti #TamilTraditionalFood #WomenHealthTamil #GuruKulaDesam",
+  "thumb_badge_ta": "பாட்டி வைத்தியம்",
+  "thumb_main_ta": "வீட்டு வற்றல் முறை",
+  "thumbnail_prompt": "A-grade Tamil traditional wellness cinema movie-poster artwork, widescreen full-bleed seamless composition (pure poster artwork with zero UI buttons or play icons). Right side (right half of the frame): Zoomed-in chest-up commanding scene — Zoomed-in chest-up cheerful Tamil grandmother in traditional brick-red cotton saree holding a woven bamboo muram of crisp sun-dried berries and fresh green sundakkai, warm golden rim-lighting, widescreen., illuminated by intense warm golden rim-lighting and glowing brass oil lamps. Left side (left half of the frame): Monumental, massive TV-readable Tamil cinema poster typography occupying the left half with grand prominence. Top: Distinct dark midnight-indigo pill badge with glowing gold border displaying பாட்டி வைத்தியம் (no quotation marks). Center/Bottom: Huge, gigantic 3D-extruded solid polished gold Tamil cinema lettering வீட்டு வற்றல் முறை (written once cleanly) across a rich royal crimson-maroon velvet banner with sharp metallic bevels, deep drop-shadows, and specular glints, perfectly legible on mobile screens. Background: Full-bleed warm South Indian sacred temple or heritage home backdrop with gentle golden mist, zero dead space, no text or numbers in the lower-right corner.",
+  "shot_prompts": [
+    "Bright South Indian terrace with clean white cotton cloths drying green turkey berries and cluster beans under warm sun",
+    "Smiling Tamil grandmother inspecting crisp sun dried homemade vathal in woven winnowing muram in sunlit courtyard",
+    "Traditional clay pot filled with tangy vatha kuzhambu garnished with roasted sundakkai and manathakkali vathal",
+    "Fresh green turkey berries black nightshade berries and tender cluster beans arranged in brass baskets",
+    "Earthen pot of thick sour buttermilk beside rock salt crystals and golden turmeric powder in kitchen",
+    "Wholesome traditional meal on banana leaf featuring steamed rice ghee roasted vathal and garlic kuzhambu",
+    "Gently cracking fresh washed green turkey berries with smooth granite stone pestle on wooden board",
+    "Soaking fresh green vegetables in spiced sour buttermilk with rock salt inside wide ceramic jar overnight",
+    "Spreading buttermilk soaked berries and cluster beans evenly over clean white cotton cloth in bright morning sunlight",
+    "Covering sun drying homemade vathal hygienically with sheer white muslin netting on clean courtyard cot",
+    "Crisp dark brown sun dried sundakkai manathakkali and kothavarangai vathal stored in airtight glass jars",
+    "Roasting homemade sundakkai and manathakkali vathal lightly in golden cow ghee inside cast iron pan",
+    "Simmering shallots garlic and roasted vathal in rich tamarind sesame oil gravy inside seasoned clay pot",
+    "Mother mixing warm steamed rice with crushed ghee roasted manathakkali vathal for young child at home",
+    "Rows of sun dried traditional pantry treasures neatly organized in sunlit South Indian heritage kitchen",
+    "Warm brass lamp glowing peacefully in traditional home courtyard celebrating seasonal wisdom and family health"
+  ],
+  "sections": [
+    {
+      "id": "s1_intro",
+      "badge": "முன்னுரை",
+      "is_story": false,
+      "paragraphs": [
+        "சிவாயநம! அன்பான தாய்மார்களே, சகோதரிகளே! சித்திரை மற்றும் வைகாசி மாதக் கோடை வெயிலைப் பயனுள்ளதாக்கி மழைக்காலத்திற்கும் குளிர்காலத்திற்கும் தேவையான ஆரோக்கிய உணவுகளைச் சேமித்து வைப்பது நம் தமிழ் இல்லத்தரசிகளின் பெருமைமிகு மரபாகும்.",
+        "பருவகால மாற்றங்களின்போது ஏற்படும் வயிற்றுப் பூச்சிகள், வாய் மற்றும் குடல் புண்கள், பசியின்மை மற்றும் சளித் தொற்று நோய்களிலிருந்து குடும்பத்தைக் காக்க நம் சமையலறையே சிறந்த அரணாகத் திகழ்கிறது.",
+        "பசுமையான சுண்டைக்காய், மணத்தக்காளி மற்றும் கொத்தவரங்காய் ஆகியவற்றைப் புளித்த மோரில் ஊறவைத்து வெயிலில் காயவைத்து எடுக்கும் வீட்டு வற்றல்கள், ஆண்டு முழுவதும் பயன்தரும் மருத்துவப் பொக்கிஷங்களாகும்."
+      ]
+    },
+    {
+      "id": "s2_part1",
+      "badge": "மருத்துவ குணங்கள்",
+      "is_story": true,
+      "paragraphs": [
+        "மலைச் சுண்டைக்காய் வற்றல் குழந்தைகளின் குடலில் தங்கியிருக்கும் நுண்புழுக்களை வெளியேற்றி, நெஞ்சுச் சளி மற்றும் ஆஸ்துமா தொந்தரவுகளைக் குறைத்துச் செரிமான சக்தியை வலுப்படுத்தும் சிறந்த காயகல்ப உணவாகும்.",
+        "மணத்தக்காளி வற்றல் வாய்ப்புண், தொண்டைப்புண் மற்றும் ஆறாத வயிற்றுப் புண்களை மென்மையாக ஆற்றுவதோடு, கல்லீரலுக்கு வலிமை சேர்த்து உடலின் உட்புற அழற்சியைத் தணிக்கும் அற்புதத் தன்மை கொண்டது.",
+        "நாட்டுக் கொத்தவரங்காய் வற்றலில் உள்ள மிகுந்த நார்ச்சத்தும் சுண்ணாம்புச்சத்தும் இரத்தச் சர்க்கரை அளவைக் கட்டுக்குள் வைக்கவும் பெண்களின் எலும்பு ஆரோக்கியத்தைப் பேணவும் பெரிதும் துணைபுரிகின்றன."
+      ]
+    },
+    {
+      "id": "s3_part2",
+      "badge": "செய்முறை இரகசியம்",
+      "is_story": true,
+      "paragraphs": [
+        "பசுமையான சுண்டைக்காயை நன்கு கழுவிக் காம்பு நீக்கி அம்மிக்குழவியால் இலேசாகத் தட்டிக் கொள்ளவும், கொத்தவரங்காயை நறுக்கி ஆவியில் இரண்டு நிமிடங்கள் இலேசாக வேகவைத்து எடுத்துக் கொள்ளவும்.",
+        "அகலமான மண்பானை அல்லது பீங்கான் பாத்திரத்தில் நல்ல புளித்த பசும் மோருடன் தேவையான அளவு கல் உப்பு மற்றும் சிறிது மஞ்சள் தூள் சேர்த்து இந்தக் காய்கறிகளையும் முற்றிய மணத்தக்காளிப் பழங்களையும் தனித்தனியாக இரவு முழுவதும் ஊறவைக்கவும்.",
+        "மறுநாள் காலையில் காய்களை மட்டும் வடித்துத் தூய வெள்ளைப் பருத்தித் துணியில் பரப்பி வெயிலில் காயவைத்து, மாலையில் மீண்டும் அதே மோரில் போட்டு மோர் முற்றிலும் வற்றும் வரை ஐந்து நாட்கள் சலசலவெனக் காயவைத்து எடுக்கவும்."
+      ]
+    },
+    {
+      "id": "s4_practice",
+      "badge": "பயன்படுத்தும் முறை",
+      "is_story": false,
+      "paragraphs": [
+        "மொட்டை மாடியில் வெயிலில் காயவைக்கும்போது தூசியோ பறவைகளோ அண்டாதவாறு மெல்லிய வெள்ளைத் துணியை மேலே போர்த்திச் சுகாதாரமாக உலர்த்துவது, வற்றல் ஓராண்டு வரை பூஞ்சை பிடிக்காமல் இருக்க உதவும்.",
+        "மழைக்காலங்களில் ஒரு தேக்கரண்டி பசு நெய் அல்லது நல்லெண்ணெயில் இந்த வற்றல்களை மிதமாக வறுத்து மணமிக்க வத்தக்குழம்பாகவோ அல்லது சூடான சாதத்தில் பொடித்துப் பிசைந்தோ அன்போடு பரிமாறலாம்.",
+        "வாணலி நிறைய எண்ணெய் ஊற்றிப் பொரிப்பதை விடச் சிறிது நெய்யில் வறுத்துச் சின்ன வெங்காயம், பூண்டு மற்றும் நல்லெண்ணெய் சேர்த்த குழம்பில் இட்டுச் சமைப்பதே முழுமையான மருத்துவப் பலனைத் தரும்."
+      ]
+    },
+    {
+      "id": "s5_closing",
+      "badge": "நிறைவு ஆசி",
+      "is_story": false,
+      "paragraphs": [
+        "கடைகளில் வாங்கும் அதிக உப்பும் செயற்கைப் பொருட்களும் கலந்த வற்றல்களைத் தவிர்த்து, நம் கைப்படச் சுத்தமான பசும் மோரில் ஊறவைத்துச் செய்யும் வீட்டு வற்றல்களே குடும்பத்திற்கு மிகவும் பாதுகாப்பானவை.",
+        "சூரிய ஒளியின் ஆற்றலும் மோரின் நன்மையும் இணைந்த இந்தப் பாரம்பரிய வற்றல் வகைகள் உங்கள் இல்லத்தில் பருவகால நோய்கள் அணுகாமல் என்றும் காத்தருளட்டும்.",
+        "உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி! நல்லதே நினைப்போம், நல்லதே நடக்கும்! சிவாயநம!"
+      ]
+    }
+  ],
+  "status": "SCRIPT_READY",
+  "youtube_video_id": null,
+  "youtube_url": null
+}
