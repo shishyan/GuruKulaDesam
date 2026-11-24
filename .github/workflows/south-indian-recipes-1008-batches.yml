@@ -2,14 +2,14 @@ name: South Indian 1008 Recipes Batch Publisher (@TamilDailyLife)
 
 on:
   schedule:
-    # Every 6 hours
-    - cron: '0 */6 * * *'
+    # Every 4 hours
+    - cron: '0 */4 * * *'
   workflow_dispatch:
     inputs:
       batch_size:
         description: 'Number of recipe posts per batch'
         required: false
-        default: '5'
+        default: '10'
         type: string
 
 permissions:
@@ -63,11 +63,11 @@ jobs:
             rclone copy /home/runner/GoogleDrive_GuruKulaDesam/Assets/south-indian-recipes-1008 gdrive:GuruKulaDesam/Assets/south-indian-recipes-1008 --transfers 8
           fi
 
-      - name: Publish Next Batch of 5 South Indian Recipes
+      - name: Publish Next Batch of 10 South Indian Recipes
         env:
           YT_STORAGE_STATE_JSON: ${{ secrets.YT_STORAGE_STATE_JSON }}
         run: |
-          python tools/publish_1008_recipes_batches.py --batch-size "${{ github.event.inputs.batch_size || '5' }}"
+          python tools/publish_1008_recipes_batches.py --batch-size "${{ github.event.inputs.batch_size || '10' }}"
 
       - name: Sync Updated Receipts Back to Google Drive
         if: always()
