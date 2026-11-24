@@ -70,6 +70,11 @@ def build_chess_description(manifest: dict) -> str:
         "#Checkmate",
         "#ChessGame",
         "#StickmanChess",
+        "#viral",
+        "#viralvideo",
+        "#viralshorts",
+        "#viralvideos",
+        "#viralchess",
     ]
     raw_tags = list(manifest.get("hashtags", []))
     for t in default_tags:
@@ -175,11 +180,17 @@ def publish_episode(yt, ep_dir: Path, privacy: str) -> str:
     tags = [
         "Magnus Carlsen",
         "Javokhir Sindarov",
+        "Gukesh D",
         "Chess",
         "Stickman Animation",
         "Chess Brilliancy",
         "Grandmaster",
         "Influenzian",
+        "viral",
+        "viralvideo",
+        "viralshorts",
+        "viralvideos",
+        "viralchess",
     ]
     body = {
         "snippet": {
