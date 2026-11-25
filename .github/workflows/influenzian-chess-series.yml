@@ -13,9 +13,9 @@ on:
   workflow_dispatch:
     inputs:
       max_uploads:
-        description: 'Maximum chess episodes to upload/schedule per run (default 6)'
+        description: 'Maximum chess episodes to upload/schedule per run (default 12 across 2 OAuth projects)'
         required: false
-        default: '6'
+        default: '12'
         type: string
       privacy:
         description: 'Release mode: scheduled (YouTube native publishAt), public, or unlisted'
@@ -74,10 +74,10 @@ jobs:
       - name: Upload & Native-Schedule Priority Chess Episodes (Sindarov & Gukesh First -> Magnus)
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            MAX_UP="${{ github.event.inputs.max_uploads || '6' }}"
+            MAX_UP="${{ github.event.inputs.max_uploads || '12' }}"
             PRIV="${{ github.event.inputs.privacy || 'scheduled' }}"
           else
-            MAX_UP="6"
+            MAX_UP="12"
             PRIV="scheduled"
           fi
           python tools/influenzian_chess_series_publisher.py \

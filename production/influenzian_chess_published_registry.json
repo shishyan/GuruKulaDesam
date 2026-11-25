@@ -41,6 +41,53 @@
       "privacyStatus": "public",
       "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
       "publishedAt": "2026-11-25T00:03:56.177737+00:00"
+    },
+    "Ep25_WCh2026_Game1_Sindarov_Gukesh": {
+      "youtubeVideoId": "cAiofgwgihs",
+      "url": "https://youtu.be/cAiofgwgihs",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-25T17:19:31.727920+00:00"
+    },
+    "Ep31_WCh2026_Game2_Gukesh_Sindarov": {
+      "youtubeVideoId": "qZsT56qB7M0",
+      "url": "https://youtu.be/qZsT56qB7M0",
+      "privacyStatus": "scheduled",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-25T17:19:37.133409+00:00",
+      "scheduledPublishAt": "2026-11-26T03:00:00Z"
+    },
+    "Ep26_Sindarov_Gukesh_2026_TataSteel_QueenSac": {
+      "youtubeVideoId": "sZLtAc-OF68",
+      "url": "https://youtu.be/sZLtAc-OF68",
+      "privacyStatus": "scheduled",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-25T17:19:42.541354+00:00",
+      "scheduledPublishAt": "2026-11-26T08:00:00Z"
+    },
+    "Ep27_Sindarov_Gukesh_2022_Sharjah_H2H": {
+      "youtubeVideoId": "ciRh_sFM6II",
+      "url": "https://youtu.be/ciRh_sFM6II",
+      "privacyStatus": "scheduled",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-25T17:19:47.952496+00:00",
+      "scheduledPublishAt": "2026-11-26T12:30:00Z"
+    },
+    "Ep18_Gukesh_Ding_2024_WCh_Crown": {
+      "youtubeVideoId": "38Yjp4d4hIo",
+      "url": "https://youtu.be/38Yjp4d4hIo",
+      "privacyStatus": "scheduled",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-25T17:19:53.882847+00:00",
+      "scheduledPublishAt": "2026-11-26T16:00:00Z"
+    },
+    "Ep28_WeiYi_Sindarov_2025_WorldCup_Crown": {
+      "youtubeVideoId": "dMdQUH9pOzE",
+      "url": "https://youtu.be/dMdQUH9pOzE",
+      "privacyStatus": "scheduled",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-25T17:19:59.574247+00:00",
+      "scheduledPublishAt": "2026-11-27T03:00:00Z"
     }
   },
   "archived_v1_unlisted": {
