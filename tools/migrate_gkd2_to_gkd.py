@@ -17,16 +17,54 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
-from tools.authorize_gurukuladesam2 import get_channel_youtube_service
 
 SOURCE_CHANNEL_ID = "UCGUmNzaV_OUFbsNdHJQtaNQ"
 SOURCE_SHORTS_URL = f"https://www.youtube.com/channel/{SOURCE_CHANNEL_ID}/shorts"
 STATE_FILE = ROOT / "production" / "shorts_metadata" / "gkd2_to_gkd_migration_state.json"
+
+
+def load_target_youtube_clients() -> list[tuple[str, object]]:
+    """Load all valid @GuruKulaDesam OAuth tokens using their own embedded scopes (avoids invalid_scope)."""
+    cred_dir = ROOT / "data" / "credentials"
+    tok_files: list[Path] = []
+    seen_paths: set[Path] = set()
+    for p in sorted((cred_dir / "tokens_gurukuladesam").glob("token_*.json")):
+        if p.resolve() not in seen_paths:
+            seen_paths.add(p.resolve())
+            tok_files.append(p)
+    primary = cred_dir / "token_gurukuladesam.json"
+    if primary.exists() and primary.resolve() not in seen_paths:
+        tok_files.append(primary)
+
+    clients: list[tuple[str, object]] = []
+    seen_refresh: set[str] = set()
+    for tf in tok_files:
+        try:
+            raw = json.loads(tf.read_text(encoding="utf-8"))
+            rt = raw.get("refresh_token") or ""
+            if rt and rt in seen_refresh:
+                continue
+            creds = Credentials.from_authorized_user_file(str(tf))
+            if not creds.valid and creds.refresh_token:
+                creds.refresh(Request())
+                tf.write_text(creds.to_json(), encoding="utf-8")
+            yt = build("youtube", "v3", credentials=creds, cache_discovery=False)
+            if rt:
+                seen_refresh.add(rt)
+            clients.append((tf.name, yt))
+            print(f"[Auth] Loaded token {tf.name} OK", flush=True)
+        except Exception as e:
+            print(f"[Auth] Token {tf.name} failed: {e}", flush=True)
+    if not clients:
+        raise RuntimeError("No valid @GuruKulaDesam OAuth tokens available.")
+    return clients
 
 
 def load_state() -> dict:
@@ -163,10 +201,11 @@ def main() -> None:
         print("MIGRATION COMPLETE: All videos from @GuruKulaDesam2 have been migrated to @GuruKulaDesam! Safe to delete @GuruKulaDesam2.", flush=True)
         return
 
-    yt, cid, handle = get_channel_youtube_service("@gurukuladesam")
-    print(f"Target authenticated: {handle} ({cid})", flush=True)
+    clients = load_target_youtube_clients()
+    client_idx = 0
+    tok_name, yt = clients[client_idx]
     existing_titles = fetch_target_existing_titles(yt)
-    print(f"Existing videos on {handle}: {len(existing_titles)}", flush=True)
+    print(f"Existing videos on @GuruKulaDesam (via {tok_name}): {len(existing_titles)}", flush=True)
 
     uploaded_count = 0
     for item in pending:
@@ -184,27 +223,45 @@ def main() -> None:
         with tempfile.TemporaryDirectory(prefix="gkd2_mig_") as td:
             try:
                 mp4_path, info = download_video_and_meta(vid, Path(td))
-                new_id = upload_to_target(yt, mp4_path, info, title)
-                state["migrated"][vid] = {
-                    "target_id": new_id,
-                    "target_url": f"https://www.youtube.com/shorts/{new_id}",
-                    "title": info.get("title") or title,
-                    "migrated_at": datetime.now(timezone.utc).isoformat(),
-                }
-                existing_titles.add((info.get("title") or title).strip().lower())
-                save_state(state)
-                uploaded_count += 1
-                print(f"  OK -> https://www.youtube.com/shorts/{new_id} ({len(state['migrated'])}/{len(source_videos)})", flush=True)
-                if uploaded_count < args.batch_size:
-                    time.sleep(args.delay_sec)
-            except HttpError as e:
-                err_str = str(e)
-                if "quotaExceeded" in err_str or "uploadLimitExceeded" in err_str:
-                    print(f"  [QUOTA/LIMIT HIT] Stopping batch cleanly for next scheduled window: {err_str[:220]}", flush=True)
-                    break
-                print(f"  [ERROR] Failed on {vid}: {err_str[:250]}", flush=True)
             except Exception as e:
-                print(f"  [ERROR] Failed on {vid}: {e}", flush=True)
+                print(f"  [ERROR] Download failed on {vid}: {e}", flush=True)
+                continue
+
+            quota_exhausted_all = False
+            while True:
+                try:
+                    new_id = upload_to_target(yt, mp4_path, info, title)
+                    state["migrated"][vid] = {
+                        "target_id": new_id,
+                        "target_url": f"https://www.youtube.com/shorts/{new_id}",
+                        "title": info.get("title") or title,
+                        "migrated_at": datetime.now(timezone.utc).isoformat(),
+                    }
+                    existing_titles.add((info.get("title") or title).strip().lower())
+                    save_state(state)
+                    uploaded_count += 1
+                    print(f"  OK ({tok_name}) -> https://www.youtube.com/shorts/{new_id} ({len(state['migrated'])}/{len(source_videos)})", flush=True)
+                    if uploaded_count < args.batch_size:
+                        time.sleep(args.delay_sec)
+                    break
+                except HttpError as e:
+                    err_str = str(e)
+                    if "quotaExceeded" in err_str or "uploadLimitExceeded" in err_str:
+                        client_idx += 1
+                        if client_idx < len(clients):
+                            tok_name, yt = clients[client_idx]
+                            print(f"  [QUOTA ROTATE] Switching to next token: {tok_name}", flush=True)
+                            continue
+                        print(f"  [ALL TOKENS QUOTA HIT] Stopping batch cleanly for next scheduled window: {err_str[:220]}", flush=True)
+                        quota_exhausted_all = True
+                        break
+                    print(f"  [ERROR] Upload failed on {vid}: {err_str[:250]}", flush=True)
+                    break
+                except Exception as e:
+                    print(f"  [ERROR] Upload failed on {vid}: {e}", flush=True)
+                    break
+            if quota_exhausted_all:
+                break
 
     remaining = len([
         v for v in source_videos
