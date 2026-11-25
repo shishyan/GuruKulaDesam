@@ -16,9 +16,12 @@ completely independent of the local Linux workstation:
 """
 import argparse
 import datetime
+import io
 import json
 import subprocess
+import urllib.request
 from pathlib import Path
+from PIL import Image
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
@@ -136,12 +139,39 @@ def build_title_and_description(ds: str, meta_dir: Path, day_dir: Path) -> tuple
     return safe_title, safe_desc, tags
 
 
+def _cdn_matches_local_thumb(vid: str, local_jpg: Path, threshold: float = 18.0) -> bool:
+    """Zero-quota pixel check against i.ytimg.com (64x36 RGB mean_abs_diff) to skip already-live thumbnails."""
+    if not local_jpg.exists() or local_jpg.stat().st_size < 10_000:
+        return True
+    try:
+        req = urllib.request.Request(
+            f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg",
+            headers={"User-Agent": "Mozilla/5.0", "Cache-Control": "no-cache"},
+        )
+        with urllib.request.urlopen(req, timeout=10) as r:
+            cdn_bytes = r.read()
+        im_cdn = Image.open(io.BytesIO(cdn_bytes)).convert("RGB")
+        # Crop letterbox bars from 4:3 hqdefault (480x360 -> 480x270 center)
+        cw, ch = im_cdn.size
+        target_h = int(round(cw * 9 / 16))
+        if ch > target_h + 4:
+            top = (ch - target_h) // 2
+            im_cdn = im_cdn.crop((0, top, cw, top + target_h))
+        im_cdn_s = im_cdn.resize((64, 36), Image.Resampling.BILINEAR)
+        im_loc_s = Image.open(local_jpg).convert("RGB").resize((64, 36), Image.Resampling.BILINEAR)
+        p1 = list(im_cdn_s.getdata())
+        p2 = list(im_loc_s.getdata())
+        mad = sum(abs(a[0] - b[0]) + abs(a[1] - b[1]) + abs(a[2] - b[2]) for a, b in zip(p1, p2)) / (len(p1) * 3.0)
+        return mad < threshold
+    except Exception:
+        return False
+
+
 def sync_channel_and_live_videos_seo(clients: list[tuple[str, object]], reg: dict, meta_dir: Path, dry_run: bool = False) -> int:
     """
-    Cloud-native SEO healer for @TamilDailyLife (`UCDdEZ6CPCr6tIzWdDY9mzxg`).
-    Ensures every live video in `reg["published"]` has full YouTube Tags (~25 tags / ~430 chars)
-    and full Tamil + English SEO Description + 15 Hashtags via YouTube Data API v3 (`videos.update`),
-    completely independent of the local workstation.
+    Cloud-native SEO & Custom Thumbnail healer for @TamilDailyLife (`UCDdEZ6CPCr6tIzWdDY9mzxg`).
+    Ensures every live video in `reg["published"]` has full YouTube Tags (~25 tags / ~430 chars),
+    full Tamil + English SEO Description + 15 Hashtags, and its verified v2 Movie-Poster thumbnail.
     """
     if not clients or dry_run:
         return 0
@@ -150,9 +180,37 @@ def sync_channel_and_live_videos_seo(clients: list[tuple[str, object]], reg: dic
     if not pub_map:
         return 0
 
+    thumbs_dir = TMP_DIR / "verified_thumbs"
+    thumbs_dir.mkdir(parents=True, exist_ok=True)
+    subprocess.run(
+        ["rclone", "copy", "gdrive:GuruKulaDesam/Assets/Thumbnails/@TamilDailyLife/", str(thumbs_dir)],
+        check=False,
+    )
+
     vid_to_date = {info["youtubeVideoId"]: ds for ds, info in pub_map.items() if info.get("youtubeVideoId")}
     vid_ids = list(vid_to_date.keys())
     healed = 0
+    thumbs_healed = 0
+
+    for ds, info in sorted(pub_map.items()):
+        vid = info.get("youtubeVideoId", "")
+        t_jpg = thumbs_dir / f"{ds}.jpg"
+        if vid and t_jpg.exists() and t_jpg.stat().st_size < 2 * 1024 * 1024 and not info.get("thumbnailVerified"):
+            if _cdn_matches_local_thumb(vid, t_jpg):
+                info["thumbnailVerified"] = True
+                continue
+            for tname, yt_c in clients:
+                try:
+                    yt_c.thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(t_jpg), mimetype="image/jpeg")).execute()
+                    info["thumbnailVerified"] = True
+                    thumbs_healed += 1
+                    print(f"[Thumb Healed] {ds} ({vid}) <- {t_jpg.name} via {tname}")
+                    break
+                except Exception as te:
+                    if "quotaExceeded" in str(te):
+                        continue
+                    print(f"[Thumb Skip] {ds} ({vid}): {te}")
+                    break
 
     for i in range(0, len(vid_ids), 50):
         batch = vid_ids[i : i + 50]
@@ -196,7 +254,7 @@ def sync_channel_and_live_videos_seo(clients: list[tuple[str, object]], reg: dic
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default="", help="Target YYYY-MM-DD (defaults to draining up to today IST)")
-    ap.add_argument("--max-uploads", type=int, default=2, help="Max episodes to upload per cloud run")
+    ap.add_argument("--max-uploads", type=int, default=1, help="Max episodes to upload per cloud run")
     ap.add_argument("--privacy", choices=["public", "unlisted"], default="public")
     ap.add_argument("--sync-seo", action="store_true", default=True, help="Audit and sync tags/hashtags/SEO on all live videos")
     ap.add_argument("--dry-run", action="store_true")

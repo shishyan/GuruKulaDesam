@@ -2,8 +2,8 @@ name: TamilDailyLife Daily Purana Episode & SEO Cloud Publisher
 
 on:
   schedule:
-    # 00:30 UTC = 06:00 AM IST daily (+ 12:30 UTC evening catch-up & SEO heal slot)
-    - cron: '30 0,12 * * *'
+    # 00:30 UTC = 06:00 AM IST daily (strictly 1 episode/day slow drip)
+    - cron: '30 0 * * *'
   workflow_dispatch:
     inputs:
       target_date:
@@ -14,7 +14,7 @@ on:
       max_uploads:
         description: 'Max episodes to publish in this run'
         required: false
-        default: '2'
+        default: '1'
         type: string
       sync_seo:
         description: 'Audit and heal Tags, Hashtags & SEO Descriptions across all live videos (true/false)'
@@ -52,7 +52,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq rclone
           python -m pip install --upgrade pip
-          pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2
+          pip install -q pillow google-api-python-client google-auth-oauthlib google-auth-httplib2
 
       - name: Restore @TamilDailyLife OAuth Tokens & rclone Google Drive Config
         env:
@@ -86,7 +86,7 @@ jobs:
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             DRY_ARG="--dry-run"
           fi
-          python tools/tamildailylife_cloud_publisher.py --max-uploads "${{ github.event.inputs.max_uploads || '2' }}" $SEO_ARG $DATE_ARG $DRY_ARG
+          python tools/tamildailylife_cloud_publisher.py --max-uploads "${{ github.event.inputs.max_uploads || '1' }}" $SEO_ARG $DATE_ARG $DRY_ARG
 
       - name: Commit & Push Updated Published Registry
         run: |
