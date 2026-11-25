@@ -66,6 +66,7 @@ jobs:
       - name: Publish Next Batch of 10 South Indian Recipes
         env:
           YT_STORAGE_STATE_JSON: ${{ secrets.YT_STORAGE_STATE_JSON }}
+          TAMILDAILYLIFE_YT_STORAGE_STATE_B64: ${{ secrets.TAMILDAILYLIFE_YT_STORAGE_STATE_B64 }}
         run: |
           python tools/publish_1008_recipes_batches.py --batch-size "${{ github.event.inputs.batch_size || '10' }}"
 
