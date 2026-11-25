@@ -261,9 +261,25 @@ def main():
     args = ap.parse_args()
 
     ist_now = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=5, minutes=30)
-    cutoff_date = args.date if args.date else ist_now.strftime("%Y-%m-%d")
+    ist_today = ist_now.strftime("%Y-%m-%d")
+    cutoff_date = args.date if args.date else ist_today
 
     reg = load_registry()
+    # Enforce strictly <= max_uploads per IST calendar day across 00:30 UTC & 08:30 UTC (post-PT-reset) runs
+    uploaded_today_ist = 0
+    for _info in (reg.get("published") or {}).values():
+        ts_raw = _info.get("publishedAt") or ""
+        if ts_raw:
+            try:
+                dt_pub_ist = datetime.datetime.fromisoformat(ts_raw.replace("Z", "+00:00")) + datetime.timedelta(hours=5, minutes=30)
+                if dt_pub_ist.strftime("%Y-%m-%d") == ist_today:
+                    uploaded_today_ist += 1
+            except Exception:
+                pass
+    if not args.date and args.max_uploads > 0:
+        args.max_uploads = max(0, args.max_uploads - uploaded_today_ist)
+        if args.max_uploads == 0:
+            print(f"[Daily Cap] Already published {uploaded_today_ist} episode(s) on {ist_today} IST — running SEO/Thumbnail heal only.")
     REGISTRY_PATH.parent.mkdir(parents=True, exist_ok=True)
     TMP_DIR.mkdir(parents=True, exist_ok=True)
     meta_dir = TMP_DIR / "tdl_publish_meta"
