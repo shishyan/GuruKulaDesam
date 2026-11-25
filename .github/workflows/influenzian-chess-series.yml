@@ -6,8 +6,9 @@ on:
     # Uploads up to 6 episodes in priority order (Sindarov & Gukesh WCh -> Magnus -> Pragg)
     # and schedules them into YouTube's native release slots (08:30, 13:30, 18:00, 21:30 IST).
     - cron: '12 8 * * *'
-    # Catch-up / Newly-Rendered World Championship Game Syncs:
+    # Catch-up / Rolling-24h Cap Unlock & World Championship Syncs:
     - cron: '30 14 * * *'
+    - cron: '15 18 * * *'
     - cron: '30 20 * * *'
     - cron: '30 2 * * *'
   workflow_dispatch:
@@ -21,6 +22,11 @@ on:
         description: 'Release mode: public, scheduled, or unlisted'
         required: false
         default: 'public'
+        type: string
+      dry_run:
+        description: 'Dry run (verify cloud Drive + OAuth readiness without uploading)'
+        required: false
+        default: 'false'
         type: string
 
 permissions:
@@ -81,9 +87,13 @@ jobs:
 
       - name: Upload & Native-Schedule Priority Chess Episodes (Sindarov & Gukesh First -> Magnus)
         run: |
+          EXTRA_ARGS=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             MAX_UP="${{ github.event.inputs.max_uploads || '25' }}"
             PRIV="${{ github.event.inputs.privacy || 'public' }}"
+            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+              EXTRA_ARGS="--dry-run"
+            fi
           else
             MAX_UP="25"
             PRIV="public"
@@ -91,7 +101,8 @@ jobs:
           python tools/influenzian_chess_series_publisher.py \
             --drive-remote "gdrive:Influenzian/DailyQueue/CHESS" \
             --max-uploads "$MAX_UP" \
-            --privacy "$PRIV"
+            --privacy "$PRIV" \
+            $EXTRA_ARGS
 
       - name: Commit & Push Updated Chess Published Registry
         run: |

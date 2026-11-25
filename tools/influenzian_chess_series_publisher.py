@@ -455,7 +455,30 @@ def main():
         print(f"  {idx+1:02d}. [prio={prio:02d} #{s_ord:02d}] {ep_id} -> {when_lbl}")
 
     if args.dry_run:
+        clients = get_youtube_clients(Path(args.cred_dir))
+        print(f"[Dry-Run Verified] Active @influenzian OAuth clients ready={len(clients)}; pending Drive episodes={len(pending)}.")
         return
+
+    # Zero-quota rolling-24h cap guard: skip burning 1600-unit videos().insert calls if 0 slots rolled off since last cap hit
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    cap_hit_s = registry.get("lastChannelCapHitAt")
+    cap_count = int(registry.get("lastChannelCapCount24h", 0))
+    if cap_hit_s and cap_count > 0:
+        try:
+            cap_dt = datetime.datetime.fromisoformat(cap_hit_s.replace("Z", "+00:00"))
+            if 0 <= (now_utc - cap_dt).total_seconds() < 24 * 3600:
+                in_24h = 0
+                for info in registry.get("published", {}).values():
+                    ps = info.get("publishedAt")
+                    if ps:
+                        pdt = datetime.datetime.fromisoformat(ps.replace("Z", "+00:00"))
+                        if 0 <= (now_utc - pdt).total_seconds() < 24 * 3600 + 300:
+                            in_24h += 1
+                if in_24h >= cap_count:
+                    print(f"[Rolling-24h Cap Active] {in_24h}/{cap_count} uploads still within 24h window; preserving OAuth quota until next slot rolls off.")
+                    return
+        except Exception:
+            pass
 
     clients = get_youtube_clients(Path(args.cred_dir))
     if not clients:
@@ -498,6 +521,20 @@ def main():
                 ):
                     print(f"[Quota/Rate Notice on {tname}] {msg[:220]}")
                     if "exceeded the number of videos" in msg:
+                        now_cap = datetime.datetime.now(datetime.timezone.utc)
+                        cnt_24h = 0
+                        for info in registry.get("published", {}).values():
+                            ps = info.get("publishedAt")
+                            if ps:
+                                try:
+                                    pdt = datetime.datetime.fromisoformat(ps.replace("Z", "+00:00"))
+                                    if 0 <= (now_cap - pdt).total_seconds() < 24 * 3600 + 300:
+                                        cnt_24h += 1
+                                except Exception:
+                                    pass
+                        registry["lastChannelCapHitAt"] = now_cap.isoformat()
+                        registry["lastChannelCapCount24h"] = max(cnt_24h, 1)
+                        reg_path.write_text(json.dumps(registry, indent=2), encoding="utf-8")
                         print("[Channel Daily Cap Reached] Remaining episodes will auto-schedule on the next cycle.")
                         client_idx = len(clients)
                         break
