@@ -1,0 +1,71 @@
+name: Migrate @GuruKulaDesam2 Shorts to @GuruKulaDesam (Batched)
+
+on:
+  schedule:
+    # Twice daily: 08:30 UTC (2:00 PM IST) and 14:30 UTC (8:00 PM IST)
+    - cron: '30 8,14 * * *'
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'Number of videos to migrate in this batch'
+        required: false
+        default: '5'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: migrate-gkd2-to-gkd
+  cancel-in-progress: false
+
+jobs:
+  migrate-batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FFmpeg, yt-dlp & Google API Client
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install --upgrade pip
+          pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2 yt-dlp
+
+      - name: Restore @GuruKulaDesam OAuth Tokens from GitHub Secrets
+        env:
+          GURUKULADESAM_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN }}
+          GURUKULADESAM_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN_2 }}
+        run: |
+          mkdir -p data/credentials/tokens_gurukuladesam
+          if [ -n "$GURUKULADESAM_OAUTH_TOKEN" ]; then
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/token_gurukuladesam.json
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN" > data/credentials/tokens_gurukuladesam/token_839236964216.json
+          fi
+          if [ -n "$GURUKULADESAM_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$GURUKULADESAM_OAUTH_TOKEN_2" > data/credentials/tokens_gurukuladesam/token_472322435541.json
+          fi
+
+      - name: Migrate Next Batch (@GuruKulaDesam2 -> @GuruKulaDesam)
+        run: |
+          python tools/migrate_gkd2_to_gkd.py --batch-size "${{ github.event.inputs.batch_size || '5' }}"
+
+      - name: Commit & Push Updated Migration State
+        if: always()
+        run: |
+          git config --global user.name "Guru Kula Desam Autonomous Bot"
+          git config --global user.email "bot@gurukuladesam.org"
+          git add production/shorts_metadata/gkd2_to_gkd_migration_state.json
+          if [ -n "$(git status --porcelain production/shorts_metadata/gkd2_to_gkd_migration_state.json)" ]; then
+            git commit -m "chore(migration): update @GuruKulaDesam2 -> @GuruKulaDesam progress [skip ci]"
+            git pull --rebase origin master || true
+            git push origin master
+          fi
