@@ -74,7 +74,7 @@
 
 ### 1.8 Mandatory Tamil Voiceover (`eleven_v4` @ `84%`) & 4-Stem Studio Music Invariant
 - **Mandatory `eleven_v4` Model**: All Tamil ElevenLabs voiceovers (`ShishyanTM` `4Ti6ecav4G1JU5JkCUn5` or fallback `GuruKulaDesam` `Mu63hpI1uigjGMdYVTDr`) **MUST** use `"model_id": "eleven_v4"` at `speed: 0.84` (`84%`). Never use `eleven_multilingual_v2` or any older model.
-- **Mandatory 4-Stem Studio Music (`Intro.wav`, `Interlude.wav`, `Background.wav`, `Outro.wav`)**: Every Tamil storytelling, *தல வரலாறு*, and Suddha Bhakti episode **MUST** include all 4 studio music stems (`Intro.wav` at start, `Interlude.wav` between acts, `Background.wav` ducked at `-26 dB` behind speech, and `Outro.wav` at the end) with crisp presence EQ on the vocal track. Never ship dry solo voice without music stems.
+- **Mandatory 4-Stem Studio Music & Interlude Cadence (`Intro.wav`, `Interlude.wav`, `Background.wav`, `Outro.wav`)**: Every Tamil storytelling, *தல வரலாறு*, and Suddha Bhakti episode **MUST** include all 4 studio music stems from `/home/shishyan/GoogleDrive_GuruKulaDesam/Assets/tamil-daily-life/` (`Intro.wav` at start, `Interlude.wav` inserted every ~60–90s at natural section/act pauses so there is never a long unbroken narration, `Background.wav` ducked at `-26 dB` behind speech, and `Outro.wav` at the end) with crisp presence EQ on the vocal track. Never ship dry solo voice or unbroken narration without interludes.
 
 ---
 
