@@ -45,8 +45,8 @@
 - **`@guru-kula-desam`** (`UCPqB1A_WzpLJec6q69BOO3Q`): Main long-form Thirukkural & South Indian devotional channel (+ daily 5:30 AM IST literary Tamil editorial Community Posts).
 - **`@GuruKulaDesam`**: Primary Shorts channel (நற்செய்கை — Virtuous Shorts, 1 Short/day schedule).
 - **`@GuruKulaDesam2`** (`UCGUmNzaV_OUFbsNdHJQtaNQ`): Secondary Shorts channel (நற்பண்பு — Devotional Temples & Sacred Chants, 1 Short/day schedule).
-- **`@TamilDailyLife` / `@TamilMusicalStories`** (`UCDdEZ6CPCr6tIzWdDY9mzxg`): Daily Purana & Family Wisdom Storytelling channel — 365-day Diwali-to-Diwali calendar (`2026-11-08`..`2027-11-07`), solo `ShishyanPro` (`6fJYxeFW7wEpPJADYKSZ`) @ `80%` speed (`0.80x`) + studio sitar/guitar `Intro`/`Interlude`/`Background`/`Outro` stems, 24-shot photorealistic canonical cast + in-scene Mode-B 3D kinetic Tamil story waves (`TamilDailyLifeDynamic`), and daily 6:00 AM IST 3-category Community Posts.
-- **`@karmicgenie`** (`UCmixCKV4uTv3wIp634IRLXg`): Full-length cinematic wisdom episodes & philosophical theatrical films.
+- **`@TamilDailyLife` / `@TamilMusicalStories`** (`UCDdEZ6CPCr6tIzWdDY9mzxg`): Daily Purana & Family Wisdom Storytelling channel — 365-day Diwali-to-Diwali calendar (`2026-11-08`..`2027-11-07`), solo `ShishyanTM` (`4Ti6ecav4G1JU5JkCUn5`) @ `84%` speed (`0.84x`) + studio sitar/guitar `Intro`/`Interlude`/`Background`/`Outro` stems, 24-shot photorealistic canonical cast + in-scene Mode-B 3D kinetic Tamil story waves (`TamilDailyLifeDynamic`), and daily 6:00 AM IST 3-category Community Posts.
+- **`@karmicgenie`** (`UCmixCKV4uTv3wIp634IRLXg`): Full-length cinematic wisdom episodes, philosophical theatrical films, and the **26-Film Singularity Chronicles (`2022–2100`, including Annual Episodes `2027–2050`)** organized across canonical playlist buckets (`PLL9vX_C3dLxc` Singularity Chronicles, `PLTadq3TncTFE` Dharma & Life Wisdom, `PLB4tSmh3p9M8` Wisdom Shorts).
 - **`@influenzian`** (`UCcJFqC7z0f-ARNcJadKiKpQ`): Long-form Useful Operating Manuals (**1. Mind/Cognitive Models -> 2. Practical AI Workflows -> 3. Behavioral Money & Career Capital**) built with Dark-Slate Blueprint Remotion + OpenReel Video (`v1.2.0`), plus Sports/Gaming Shorts.
 
 ### 1.6 Devotional Lyrical Video Standard (Modern Google Flow & Mode B Invariants)
@@ -80,8 +80,8 @@
 | **`lyrical-video-guide`** | Devotional Lyrical Master Films | 3-stage CTC alignment, 3D Kinetic Waves, 4-edge RTA gold spectrum, native video background looping, Colab L4 GPU |
 | **`gurukuladesam-video-build`** | Thirukkural Chapter Master Videos | Visual layering v6.0/v6.1, WhisperX + Wav2Vec2 forced alignment, 5-project YouTube API quota rotation pool |
 | **`gurukuladesam-shorts-publisher`** | Dedicated Vertical Shorts | 15/75/10 vertical layout, 0s vocal lead (no instrumental delay), 1 Short/day per channel, multi-token upload |
-| **`karmic-genie-show`** | The Karmic Genie Show & Shorts | 7D virtual studio, 75% story / 25% studio composite, @Me ivory bandhgala persona, 2-line news crawl, theme interludes |
-| **`karmic-genie-episode-guide`** | Theatrical Karmic Genie Films | 14-page screenplay format, Bala-Rishi & Bala-Matha personas, Google Flow ULTRA cinematography, L4 render delivery |
+| **`karmic-genie-show`** | The Karmic Genie Show, Singularity Chronicles & Shorts | 7D virtual studio (`pip75`), `ShishyanEN` + *தல வரலாறு* movie stems, Business/Industrial Singularity Chronicles (`2022–2100` -> `PLL9vX_C3dLxc`), `PLTadq3TncTFE` & `PLB4tSmh3p9M8` playlist buckets, Zero-CTA SEO |
+| **`karmic-genie-episode-guide`** | Theatrical Karmic Genie & Annual Singularity Films | 14-page screenplay & annual causal-bottleneck architecture (`2027–2050`), `Bala-Rishi` & `Bala-Matha` personas, Colab L4 render & Google Drive delivery (`gdrive:KarmicGenie/`) |
 | **`youtube-movie-poster-thumbnail`** | 16:9 v2 `nano-pro` Movie-Poster Thumbnails | 50/50 zoomed-in deity hero + monumental 3D solid-gold Tamil cinema lettering, prompt-hygiene & sandhi rules, mandatory `read_file` visual QA, multi-token + rolling-24h drip uploader |
 | **`google-flow`** | AI Visual Asset Generation | `gflow-headless` CLI (`>= 0.103.1`), `--out-file <path>.jpg`, sequential profile lock, backward-`i2i` time-lapse keyframe anchoring (`t2i -> i2i`), character consistency seeds |
 | **`agent-desktop`** | Desktop & OS Operation | Accessibility tree navigation, `@ref` snapshot queries, semantic clicks/types, headless GUI execution |
@@ -89,7 +89,7 @@
 | **`sports-clips-video`** | Sports & Gaming Shorts | 4-5s peak-action clip harvesting, horizontal mirror (hflip), Suno instrumental soundtrack replacement |
 | **`meditative-video-guide`** | Global Meditation & Deep Sleep | 432Hz/528Hz ambient mix, binaural audio layer, slow-mo nature & zero-credit `Wan2.1-FLF2V` + `RIFE` `4x` botanical time-lapse visuals, quota-resilient publisher |
 | **`flower-bloom-timelapse`** (`tools/flower_bloom_timelapse/`) | Zero-Credit Botanical & Plant-Growth Time-Lapses (`@influenzian` / `@GuruKulaDesam`) | `$0` video-credit backward-`i2i` (`nano-pro` keyframes) + `Comfy-Org/Wan_2.1_ComfyUI_repackaged` (`WanFirstLastFrameToVideo` `fp8_e4m3fn_fast` on Colab L4) + `Practical-RIFE` (`RIFEv4.25` `4x` `--img` mode) + `h264_nvenc` `1080p` `bt709` + Zero-CTA publisher |
-| **`story-telling-guide` (`@TamilDailyLife`)** | Daily Tamil Purana & Wisdom Storytelling (`UCDdEZ6CPCr6tIzWdDY9mzxg`) | 365-day Diwali-to-Diwali scripts (Date/Weekday/Tamil Month/Tithi/Nakshatra only, zero clock/bad-time windows), Solo `ShishyanPro` @ `80%` speed + `Intro`/`Interlude`/`Background`/`Outro` studio WAVs, 24-shot photorealistic canonical cast + in-scene 3D Kinetic Tamil waves (`TamilDailyLifeDynamic` on Colab L4), raw CDP `DOM.setFileInputFiles` YouTube Studio publisher |
+| **`story-telling-guide` (`@TamilDailyLife`)** | Daily Tamil Purana & Wisdom Storytelling (`UCDdEZ6CPCr6tIzWdDY9mzxg`) | 365-day Diwali-to-Diwali scripts (Date/Weekday/Tamil Month/Tithi/Nakshatra only, zero clock/bad-time windows), Solo `ShishyanTM` @ `84%` speed + `Intro`/`Interlude`/`Background`/`Outro` studio WAVs, 24-shot photorealistic canonical cast + in-scene 3D Kinetic Tamil waves (`TamilDailyLifeDynamic` on Colab L4), raw CDP `DOM.setFileInputFiles` YouTube Studio publisher |
 | **`Utility_Explainer_Studio` (`@influenzian`)** | Long-Form Colorful Paper-Billions Storytelling (`Mind -> AI -> Money` & Future Timelines) | Vibrant Uncluttered Paper-Billions 2D Cartoon Engine (`PaperBillionsBeatStage.tsx`, `Influenzian-PaperStory-16x9`) + OpenReel Video (`v1.2.0` `.openreel.json`), Free `kokoro-onnx` TTS + CUDA `faster-whisper` written-token sync, Colab `--gpu t4 --high-mem` (or `l4`), Zero HUD Clutter & Zero CTA |
 
 ---
@@ -150,3 +150,70 @@ Canonical zero-`gflow-video`-credit workflow proven on both a 4-stage Sacred Pin
 4. **Companion Zero-Credit Modes**:
    - **Method 2 (Real 4K CC0 Macro + `RIFE` Slow-Mo)**: Harvest studio intervalometer macro blooms from Pexels, Pixabay, and Wikimedia Commons (`Category:Time-lapse videos of flowers`), retime `4x` via `RIFEv4.25`, apply a uniform Rec.709 color LUT, and mix `48kHz` ambient audio (`meditative-video-guide/SKILL.md`).
    - **Method 3 (Headless Blender 4.x `Geometry Nodes`)**: Procedural `137.508°` Fibonacci phyllotaxis flower driven by `growth ∈ [0, 1]` with subsurface-scattered backlit petals and an orbiting macro camera rendered headlessly (`blender -b -P bloom.py -a`) on Colab L4 Cycles/OptiX.
+
+---
+
+## 6. `@guru-kula-desam` South Indian Temple History Series (V4 Yoga-Stickman Standard)
+
+Canonical production rules for all South Indian Temple & Heritage episodes (`Ep 07+`) on `@guru-kula-desam` (`UCPqB1A_WzpLJec6q69BOO3Q`):
+
+1. **Real Temple Photographs First (`real_photo_beat_ids` in `build_temple_v4_package.py`)**:
+   - Harvest verified high-resolution Wikimedia Commons / Wikipedia photographs of the actual temple first for the opening introduction (`INTRO_00` backed by `B01`, plus `B01..B04`) and key architectural beats (`B17`, `B18`), cropped cleanly to `1920x1080` (`frame_real_photo_to_16x9`).
+   - Reserve `gflow-headless` `nano2` stills strictly for historical/puranic dramatization scenes, record CC/artist attributions in `work_stickman_v4/real_photo_credits.json`, and cite them in the YouTube description (`0` video credits spent).
+2. **Mandatory Place-Prefixed Title & Description-Only Series Branding (`publish_gkd_temple_episode.py`)**:
+   - Every title MUST start with the actual Tamil temple place name followed by ` | ` (e.g. `திருவெள்ளறை | 1200 ஆண்டு பழமையான ஸ்வஸ்திக் கிணறு & புண்டரீகாட்சப் பெருமாள் வரலாறு!`) so viewers clearly recognize temple history (not a devotional song).
+   - Keep `GuruKulaDesam`, `குருகுலதேசம்`, and episode numbers (`Ep 07`, `அத்தியாயம் 07`) strictly out of the title and inside `description` (`assert_temple_title_format()`).
+3. **Mandatory YouTube End Screen with 2 Relevant Videos & Zero Subscribe CTA (`set_gkd_endscreen_cdp.py`)**:
+   - Every published episode MUST attach **2 specific non-overlapping `@guru-kula-desam` Video cards** (never a Subscribe button, enforcing strict Zero-CTA) in the final 20 seconds via `set_gkd_endscreen_cdp.py` using cloned Chrome `Profile 2` (`--headless=new` + UA override + `@Guru-Kula-Desam` brand switch on `youtube.com`), reload-verified and screenshotted to `work_stickman_v4/endscreen_verified.png` (`read_file` QA gate).
+4. **V4 Audio/Visual Architecture & Zero-CTA Narration**:
+   - **Narration Hygiene & Dual-Account ElevenLabs Failover (spoken-text rule)**: Never let the narrator read symbols. Convert dashes (`—`, `–`, `-`), colons, semicolons and brackets in `spoken_tamil` into pauses (commas) before TTS and captions (`sanitize_spoken()` in `build_temple_v4_package.py`). Voice for Tamil voiceovers is ElevenLabs `ShishyanTM` (`4Ti6ecav4G1JU5JkCUn5`) at `84%` speed (`0.84x`), with automatic quota failover to the secondary ElevenLabs account (`ELEVENLABS_FALLBACK_API_KEY` in git-ignored `.env`) using the `GuruKulaDesam` voice (`Mu63hpI1uigjGMdYVTDr`) at the same `84%` speed + crisp presence EQ.
+   - **Vocal Clarity & Lead-Over-Interlude Loudness Rule**: Apply crisp presence EQ (`highpass=85Hz`, `-2.2dB @ 240Hz`, `+2.5dB @ 2.8kHz`, `+3.8dB @ 4.2kHz`, `+2.8dB @ 7.2kHz` air shelf) + vocal compression (`3:1`) + active-speech RMS leveling (`~ -15.5 dBFS` in mix) to `ShishyanTM @ 84%` (`read_spoken_beat_crisp_44k`), while keeping `Intro.wav` (`0.36`, `~ -22 dB`), `Interlude.wav` (`0.44`, `~ -26 dB`), `Background.wav` (`0.052`), and `Outro.wav` (`0.55`) comfortably **6–10 dB quieter than spoken voice** so music cues never overpower the narrator.
+   - Audio timeline (`delta < 0.02s`): `Intro.wav` (`11.500s`) + ElevenLabs `ShishyanTM` (`4Ti6ecav4G1JU5JkCUn5`, `eleven_v4`, `rubberband tempo=0.84`) + `5× Interlude.wav` (`9.700s`) + `Background.wav` (`0.052` ducked under interludes) + closing Tamil gratitude (`B24` `"உங்கள் பொன்னான நேரத்திற்கு மனமார்ந்த நன்றி... சிவாய நம!"`) + full `Outro.wav` (`108.400s`).
+   - Visual overlays rendered on Colab GPU (`render_temple_v4_colab.py`): bottom-left oval-headed Yoga Stickman (`8` poses), top-right Google Flow `@Me` circle badge, top-center 50%-transparent white notch pill (`<temple_name_ta>`), centered borderless captions, subtle upward rain, 4-edge golden RTA waves (`spectrum_30fps.bin`), and bottom-right `GuruKulaDesam.png` watermark.
+
+
+---
+
+## 7. `@karmicgenie` English `ShishyanEN` Colorful Animated Episode & Crisp Vocal Standard (`Utility_Explainer_Studio`)
+
+Canonical standard for all English colorful 2D storybook animated episodes of **The Karmic Genie Show** (`@karmicgenie` / `UCmixCKV4uTv3wIp634IRLXg`):
+
+1. **Mandatory Ultra-Crisp Studio Condenser Vocal Chain (`ShishyanEN` = `Nk3ySQLp8D2ib5z5sqpT` STRICTLY on `eleven_v4`)**:
+   - **STRICT `ShishyanEN`-ONLY LOCK**: Never switch or fall back to any other ElevenLabs voice (`GuruKulaDesam`, etc.). If `ShishyanEN` quota runs low, stop and alert the user rather than changing voices.
+   - **ZERO Low-Mid Drone Beds**: Never mix a `110–220 Hz` sine pad/drone under `ShishyanEN`—low-mid boosts add chest warmth/mud and soften consonant articulation.
+   - Synthesize via `/v1/text-to-speech/Nk3ySQLp8D2ib5z5sqpT/with-timestamps?output_format=mp3_44100_192` (`stability=0.55`, `similarity_boost=0.86`, `style=0.04`, `use_speaker_boost=True`, caching every `BXX.mp3` + `BXX_align.json` on disk).
+   - Process spoken voice through the **Ultra-Crisp Studio Condenser EQ + Fast-Attack 3.5:1 Vocal Compressor** (`scripts/synthesize_shishyan_en_episode.py`):
+     ```text
+     highpass=f=105:poles=2,
+     equalizer=f=220:t=q:w=1.2:g=-4.5,
+     equalizer=f=400:t=q:w=1.4:g=-2.0,
+     equalizer=f=3200:t=q:w=1.1:g=3.8,
+     equalizer=f=5200:t=q:w=1.0:g=5.0,
+     treble=g=4.5:f=8000,
+     acompressor=threshold=-20dB:ratio=3.5:attack=4:release=65:makeup=3.4,
+     alimiter=limit=0.95
+     ```
+   - **Guru-Kula-Desam தல வரலாறு Movie Soundscape (`cinemaMovieMode: True`)**: Use `/home/shishyan/GoogleDrive_GuruKulaDesam/Assets/tamil-daily-life/{Intro,Interlude,Background,Outro}.wav` so episodes feel like a theatrical movie rather than nonstop wall-to-wall narration:
+     - `Intro.wav` (`10.5s` opening flourish before speech begins),
+     - `Interlude.wav` (`7.8s` unspoken musical act bridges between major acts),
+     - `Background.wav` (seamlessly looped via `acrossfade=d=2.5` with a `-5 dB` vocal-clarity pocket carved at `2.4 kHz` & `4.5 kHz`, ducked to `0.068` under speech and `0.008` during interludes),
+     - `Outro.wav` (`atrim=90.0:103.5` pure instrumental sitar/guitar closing resolution, `13.5s`).
+2. **Domain-Matched Imagery, Fixed Single-Region Subtitles (`anchorYPercent: 84`), & Zero-Border Sideways Overlays (`src/KarmicGenieCreatorStage.tsx`)**:
+   - **Domain-Matched Visual Realism**: Business, AI, economic, and Technological Singularity episodes MUST use **photorealistic Business & World Industrial Revolution IMAX cinematography** (executive boardrooms, semiconductor fabs, automated container ports, robotic gigafactories, sovereign solar megastructures, precision AgTech — never fairy/nursery cartoons!).
+   - **Fixed Single-Region Cinema Subtitles (`top: 84%`)**: Subtitles MUST stay anchored in the exact same lower-center cinema region (`anchorYPercent = 84`, non-overlapping phrase windows) throughout the entire film—never jumping between center/top/bottom!
+   - **GLOBAL ZERO-BORDER & SIDEWAYS ~50%-TRANSPARENT OVERLAY RULE**: Never draw solid borders (`border: none`, zero stroke rings), and dock supplementary metaphor cards compactly to the upper-left margin (`left: 42px`, `scale(0.76)`, `rgba(10, 14, 26, 0.48)`) so the central visual scene stays 100% open.
+   - Generate seamless full-bleed single-scene 16:9 illustrations via `gflow-headless image t2i --project 6903a151-2a18-4f0d-91b0-53303301d460 --aspect 16:9 --model nano-pro` (rejecting any split-panel divider seams or decorative borders during `read_file` contact-sheet QA).
+   - Render on Google Colab GPU (`colab`) with Mode-B 3D gold/ivory kinetic phrases, borderless speech-reactive official `@karmicgenie` circular channel emblem (`assets/logo/official_karmic_genie_channel_logo.png`), and 40%-transparent bottom golden RTA bars.
+3. **OAuth & Headless Chrome CDP Publishing, Canonical Playlist Buckets & Mandatory SEO Standard (`scripts/publish_kg_2pct.py`, `scripts/publish_karmicgenie_cdp.py`, `scripts/karmicgenie_seo.py` & `scripts/sync_karmicgenie_playlists_and_seo.py`)**:
+   - Primary YouTube Data API v3 OAuth token: `/home/shishyan/GitHub/Shishyan/GuruKulaDesam/data/credentials/token_karmicgenie.json` (verified against `UCmixCKV4uTv3wIp634IRLXg`). When OAuth upload quota is capped or tokens expire, fall back to headless Chrome CDP (`http://127.0.0.1:9225`) targeting `https://studio.youtube.com/channel/UCmixCKV4uTv3wIp634IRLXg?authuser=0` using raw `DOM.setFileInputFiles` for zero-overhead `>100 MB` master MP4 attachment + verified `< 2 MB` `16:9` poster thumbnail, clicking **`Publish anyway`** if YouTube Studio's content-checks modal appears.
+   - **Canonical `@karmicgenie` YouTube Playlist & Category Buckets** (auto-synced every 12h in GitHub Actions via `.github/workflows/sync-master-playlists.yml` -> `tools/sync_all_to_master_playlists.py`, and deterministically ordered via `scripts/sync_karmicgenie_playlists_and_seo.py`):
+     - **`PLL9vX_C3dLxc` (`The Singularity Chronicles (2022–2100) — World Industrial Revolution & Future Timeline`, `categoryId="28"` Science & Technology)**: Complete chronological series (`World Industrial Revolution 2022–2050` `R3Uj4cLeyW4`, `Technological Singularity 2026–2100` `Su7OdsAoqHs`, all 24 Annual Episodes **`Year 2027` -> `Year 2050`**, plus companion specials `5WY5cCYrO-k` & `t6kTW4S97KE`; consolidated on Drive under `gdrive:KarmicGenie/Singularity_Chronicles_2022_2100/`).
+     - **`PLTadq3TncTFE` (`The Karmic Genie Show — Purpose, Dharma & Timeless Life Wisdom`, `categoryId="27"` Education)**: All full-length Dharma, conscience, creator calling, and 7D wisdom episodes.
+     - **`PLB4tSmh3p9M8` (`Karmic Genie Shorts — 60-Second Dharma, Purpose & Life Wisdom`, `categoryId="27"` Education)**: All `<= 75s` philosophical & Vedic wisdom Shorts.
+     - **ASMR & Meditation Buckets**: `PLR3b7ZaAl3tk` (`ASMR Meditation & Focus` + Zero-Credit Botanical Time-Lapses), `PLWS2fI-SQXv0` (`Rain, Forest & Waterfall`), `PLQFflb-RUYC4` (`Ocean Waves`), `PLfj9WvMqgHiQ` (`432Hz Night Sky`), and `PLAj2jnmSYOus` (`60-Second Sleep & ASMR Shorts`).
+   - **Mandatory `@karmicgenie` SEO, Tags, Chapters & Hashtags Standard (`scripts/karmicgenie_seo.py`)**:
+     - **Strict Zero-CTA (`assert_zero_cta`) & Pioneer Gratitude**: Zero `"subscribe"`, `"bell"`, `"smash that like"`, or `"leave a comment"` anywhere in titles, descriptions, tags, or channel About profile; honor industrial pioneers without villainizing any company, leader, or worker.
+     - **Above-the-Fold 2-Line Search Hook**: Every description opens with a natural, high-intent 2-sentence philosophical & search-keyword hook summarizing the core viewer question or prior-year industrial bottleneck.
+     - **Playlist Cross-Links, Prev/Next Navigation + `00:00` Key Chapters**: Automatically embed the canonical Playlist URL (`PLL9vX_C3dLxc` / `PLTadq3TncTFE`), Prev/Next chronological episode links, and `>= 4` timestamped `00:00` YouTube Chapters computed directly from `manifest.json` Act breaks.
+     - **Targeted & Viral Hashtags (`<= 12–13` per video, strictly `< 15` YouTube hard limit)**: Combine series/year/topic hashtags (`#Singularity #Year20XX #FutureTimeline #IndustrialRevolution #FutureOfBusiness #VedicWisdom`) with `#TheKarmicGenieShow #KarmicGenie #viral #trending`.
+     - **20–27 High-Intent Studio `Tags` (`440–485 / 500` chars)**: Populate topic-extracted keywords first (exact technological breakthroughs, year predictions, Vedic/dharma anchors) followed by brand & viral discovery tags (`apply_tags_in_studio_page` / `yt.videos().update`).

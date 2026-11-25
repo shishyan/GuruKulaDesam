@@ -46,6 +46,41 @@ PLAYLIST_MAPPING = {
 
 DISCOGRAPHY_ID = "PLAjtBRKl_IlI"
 
+KARMICGENIE_PLAYLIST_BUCKETS = {
+    "singularity": {
+        "id": "PLL9vX_C3dLxc",
+        "title": "The Singularity Chronicles (2022–2100) — World Industrial Revolution & Future Timeline",
+    },
+    "dharma_full": {
+        "id": "PLTadq3TncTFE",
+        "title": "The Karmic Genie Show — Purpose, Dharma & Timeless Life Wisdom",
+    },
+    "dharma_shorts": {
+        "id": "PLB4tSmh3p9M8",
+        "title": "Karmic Genie Shorts — 60-Second Dharma, Purpose & Life Wisdom",
+    },
+    "asmr_shorts": {
+        "id": "PLAj2jnmSYOus",
+        "title": "60-Second Sleep & ASMR Shorts",
+    },
+    "asmr_focus": {
+        "id": "PLR3b7ZaAl3tk",
+        "title": "ASMR Meditation & Focus — Zen Flute, Piano & Mountains",
+    },
+    "asmr_rain": {
+        "id": "PLWS2fI-SQXv0",
+        "title": "Deep Sleep & ASMR — Rain, Forest & Waterfall Soundscapes",
+    },
+    "asmr_ocean": {
+        "id": "PLQFflb-RUYC4",
+        "title": "Deep Sleep & ASMR — Ocean Waves, Coast & Sunset",
+    },
+    "asmr_night": {
+        "id": "PLfj9WvMqgHiQ",
+        "title": "432Hz Deep Sleep — Night Sky, Fjord & Cosmic Calm",
+    },
+}
+
 def load_data():
     playlists_backup_file = ROOT / "production" / "youtube_backup" / "playlists.json"
     catalog_file = ROOT / "assets" / "data" / "catalog.json"
@@ -315,6 +350,141 @@ def execute_live_sync(plan):
     print("=" * 60)
 
 
+def sync_karmicgenie_buckets(live: bool = False):
+    """Automatically routes all public @karmicgenie videos & Shorts into their canonical playlist buckets."""
+    import re
+    from google.oauth2.credentials import Credentials
+    from google.auth.transport.requests import Request
+    from googleapiclient.discovery import build
+
+    SCOPES = ["https://www.googleapis.com/auth/youtube.force-ssl"]
+    yt = None
+    for raw_tok in [
+        os.environ.get("KARMICGENIE_OAUTH_TOKEN"),
+        os.environ.get("KARMICGENIE_OAUTH_TOKEN_2"),
+    ]:
+        if not raw_tok:
+            continue
+        try:
+            creds = Credentials.from_authorized_user_info(json.loads(raw_tok), SCOPES)
+            if creds.expired and creds.refresh_token:
+                creds.refresh(Request())
+            cand = build("youtube", "v3", credentials=creds)
+            ch = cand.channels().list(part="id,contentDetails", mine=True).execute().get("items", [])
+            if ch and ch[0]["id"] == "UCmixCKV4uTv3wIp634IRLXg":
+                yt = cand
+                break
+        except Exception:
+            pass
+
+    local_kg = ROOT / "data" / "credentials" / "token_karmicgenie.json"
+    if yt is None and local_kg.exists():
+        try:
+            creds = Credentials.from_authorized_user_file(str(local_kg), SCOPES)
+            if creds.expired and creds.refresh_token:
+                creds.refresh(Request())
+                local_kg.write_text(creds.to_json(), encoding="utf-8")
+            cand = build("youtube", "v3", credentials=creds)
+            ch = cand.channels().list(part="id,contentDetails", mine=True).execute().get("items", [])
+            if ch and ch[0]["id"] == "UCmixCKV4uTv3wIp634IRLXg":
+                yt = cand
+        except Exception:
+            pass
+
+    if yt is None:
+        print("\nℹ️ Skipping @karmicgenie playlist sync (no KARMICGENIE_OAUTH_TOKEN available).")
+        return
+
+    try:
+        ch_info = yt.channels().list(part="contentDetails", mine=True).execute()["items"][0]
+        uploads_pl = ch_info["contentDetails"]["relatedPlaylists"]["uploads"]
+    except Exception as exc:
+        if "quotaExceeded" in str(exc):
+            print("\n⚠️ [@karmicgenie] Daily API quota reached; will resume on next 12h cycle.")
+            return
+        raise
+
+    existing_by_pl = {}
+    for bkey, bmeta in KARMICGENIE_PLAYLIST_BUCKETS.items():
+        pid = bmeta["id"]
+        vset = set()
+        tok = None
+        while True:
+            r = yt.playlistItems().list(part="contentDetails", playlistId=pid, maxResults=50, pageToken=tok).execute()
+            for it in r.get("items", []):
+                vset.add(it["contentDetails"]["videoId"])
+            tok = r.get("nextPageToken")
+            if not tok:
+                break
+        existing_by_pl[pid] = vset
+
+    all_vids = []
+    tok = None
+    while True:
+        r = yt.playlistItems().list(part="contentDetails", playlistId=uploads_pl, maxResults=50, pageToken=tok).execute()
+        all_vids.extend([it["contentDetails"]["videoId"] for it in r.get("items", [])])
+        tok = r.get("nextPageToken")
+        if not tok:
+            break
+
+    def parse_dur_sec(iso_s: str) -> int:
+        m = re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", iso_s or "")
+        if not m:
+            return 0
+        h, mi, se = [int(x or 0) for x in m.groups()]
+        return h * 3600 + mi * 60 + se
+
+    kg_plan = []
+    for i in range(0, len(all_vids), 50):
+        vr = yt.videos().list(part="snippet,status,contentDetails", id=",".join(all_vids[i : i + 50])).execute()
+        for v in vr.get("items", []):
+            if v["status"].get("privacyStatus") != "public":
+                continue
+            vid = v["id"]
+            title = v["snippet"]["title"]
+            t_low = title.lower()
+            if "திரு" in title and ("திருமுறை" in title or "திருவருட்பா" in title):
+                continue
+            dur_s = parse_dur_sec(v["contentDetails"].get("duration", ""))
+            is_short = 0 < dur_s <= 75
+
+            if any(k in t_low for k in ["asmr", "432hz", "deep sleep", "time-lapse", "timelapse"]):
+                if is_short:
+                    bkey = "asmr_shorts"
+                elif any(vid in existing_by_pl[KARMICGENIE_PLAYLIST_BUCKETS[k]["id"]] for k in ("asmr_focus", "asmr_rain", "asmr_ocean", "asmr_night")):
+                    continue
+                elif any(k in t_low for k in ["rain", "forest", "waterfall", "river", "stream"]):
+                    bkey = "asmr_rain"
+                elif any(k in t_low for k in ["ocean", "wave", "coast", "tide", "shore", "sunset"]):
+                    bkey = "asmr_ocean"
+                elif any(k in t_low for k in ["night", "fjord", "aurora", "cosmic", "starry"]):
+                    bkey = "asmr_night"
+                else:
+                    bkey = "asmr_focus"
+            elif any(k in t_low for k in ["year 20", "singularity", "industrial revolution", "2026 to 2050", "2022 to 2050", "future is coming"]):
+                bkey = "singularity"
+            elif is_short:
+                bkey = "dharma_shorts"
+            else:
+                bkey = "dharma_full"
+
+            pid = KARMICGENIE_PLAYLIST_BUCKETS[bkey]["id"]
+            if vid not in existing_by_pl[pid]:
+                kg_plan.append((vid, pid, KARMICGENIE_PLAYLIST_BUCKETS[bkey]["title"], title))
+
+    print(f"\n[@karmicgenie Bucket Audit] {len(kg_plan)} new public video(s) to route across 5 master buckets.")
+    if live and kg_plan:
+        for vid, pid, ptitle, vtitle in kg_plan:
+            try:
+                yt.playlistItems().insert(
+                    part="snippet",
+                    body={"snippet": {"playlistId": pid, "resourceId": {"kind": "youtube#video", "videoId": vid}}},
+                ).execute()
+                print(f"  ✅ [@karmicgenie] Added {vid} ('{vtitle[:42]}') -> {ptitle}")
+            except Exception as e:
+                print(f"  ⚠️ [@karmicgenie] Could not add {vid} -> {pid}: {e}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Sync videos & shorts to master playlists")
     parser.add_argument("--dry-run", action="store_true", help="Print summary of playlist additions without modifying YouTube")
@@ -353,6 +523,8 @@ def main():
         execute_live_sync(plan)
     else:
         print("\nRun with '--live' (or trigger the GitHub Actions workflow) to apply these updates live to YouTube.")
+
+    sync_karmicgenie_buckets(live=args.live)
 
 
 if __name__ == "__main__":

@@ -39,10 +39,15 @@ jobs:
           GURUKULADESAM_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN_2 }}
           GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
           GURUKULADESAM2_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN_2 }}
+          KARMICGENIE_OAUTH_TOKEN: ${{ secrets.KARMICGENIE_OAUTH_TOKEN }}
+          KARMICGENIE_OAUTH_TOKEN_2: ${{ secrets.KARMICGENIE_OAUTH_TOKEN_2 }}
         run: |
           mkdir -p data/credentials
           if [ -n "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" ]; then
             printf "%s" "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" > data/credentials/token.json
+          fi
+          if [ -n "$KARMICGENIE_OAUTH_TOKEN" ]; then
+            printf "%s" "$KARMICGENIE_OAUTH_TOKEN" > data/credentials/token_karmicgenie.json
           fi
 
       - name: Execute Playlist Sync
@@ -52,6 +57,8 @@ jobs:
           GURUKULADESAM_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM_OAUTH_TOKEN_2 }}
           GURUKULADESAM2_OAUTH_TOKEN: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN }}
           GURUKULADESAM2_OAUTH_TOKEN_2: ${{ secrets.GURUKULADESAM2_OAUTH_TOKEN_2 }}
+          KARMICGENIE_OAUTH_TOKEN: ${{ secrets.KARMICGENIE_OAUTH_TOKEN }}
+          KARMICGENIE_OAUTH_TOKEN_2: ${{ secrets.KARMICGENIE_OAUTH_TOKEN_2 }}
         run: |
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             python tools/sync_all_to_master_playlists.py --dry-run
