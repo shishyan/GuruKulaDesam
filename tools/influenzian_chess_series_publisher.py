@@ -40,22 +40,23 @@ DAILY_SLOTS_IST = [
 #   Wave 2 (21..26): Resume Magnus Carlsen series (Ep07..Ep12)
 #   Wave 3 (31..34): Praggnanandhaa series (Ep20..Ep23)
 PRIORITY_ORDER_MAP = {
-    # Wave 1A: 2026 World Championship Geneva & Direct Sindarov-Gukesh Rivalry + Qualification
+    # Wave 1A: Live 2026 World Championship Geneva (Games 1 & 2) + Direct Sindarov-Gukesh Rivalry & Qualification
     "Ep25_WCh2026_Game1_Sindarov_Gukesh": 1,
-    "Ep26_Sindarov_Gukesh_2026_TataSteel_QueenSac": 2,
-    "Ep27_Sindarov_Gukesh_2022_Sharjah_H2H": 3,
-    "Ep18_Gukesh_Ding_2024_WCh_Crown": 4,
-    "Ep28_WeiYi_Sindarov_2025_WorldCup_Crown": 5,
-    "Ep29_Sindarov_Caruana_2026_Candidates": 6,
-    "Ep30_Nakamura_Sindarov_2026_Candidates": 7,
+    "Ep31_WCh2026_Game2_Gukesh_Sindarov": 2,
+    "Ep26_Sindarov_Gukesh_2026_TataSteel_QueenSac": 3,
+    "Ep27_Sindarov_Gukesh_2022_Sharjah_H2H": 4,
+    "Ep18_Gukesh_Ding_2024_WCh_Crown": 5,
+    "Ep28_WeiYi_Sindarov_2025_WorldCup_Crown": 6,
+    "Ep29_Sindarov_Caruana_2026_Candidates": 7,
+    "Ep30_Nakamura_Sindarov_2026_Candidates": 8,
     # Wave 1B: Gukesh & Sindarov Signature Super-GM Climbs
-    "Ep19_Gukesh_Carlsen_2025_Norway": 8,
-    "Ep13_Sindarov_Firouzja_2021_WorldCup": 9,
-    "Ep14_Carlsen_Sindarov_2024_Summit": 10,
-    "Ep15_Gukesh_Abdusattorov_2022_Biel": 11,
-    "Ep16_Gukesh_Firouzja_2023_Norway": 12,
-    "Ep17_Gukesh_Maghsoodloo_2024_Olympiad": 13,
-    "Ep24_Pragg_Gukesh_2025_Sinquefield": 14,
+    "Ep19_Gukesh_Carlsen_2025_Norway": 9,
+    "Ep13_Sindarov_Firouzja_2021_WorldCup": 10,
+    "Ep14_Carlsen_Sindarov_2024_Summit": 11,
+    "Ep15_Gukesh_Abdusattorov_2022_Biel": 12,
+    "Ep16_Gukesh_Firouzja_2023_Norway": 13,
+    "Ep17_Gukesh_Maghsoodloo_2024_Olympiad": 14,
+    "Ep24_Pragg_Gukesh_2025_Sinquefield": 15,
     # Wave 2: Resume Magnus Carlsen Rating-Climb Series
     "Ep07_Carlsen_Kramnik_2009_London": 21,
     "Ep08_Carlsen_Topalov_2010_Nanjing": 22,
