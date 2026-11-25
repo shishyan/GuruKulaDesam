@@ -13,14 +13,14 @@ on:
   workflow_dispatch:
     inputs:
       max_uploads:
-        description: 'Maximum chess episodes to upload/schedule per run (default 12 across 2 OAuth projects)'
+        description: 'Maximum chess episodes to upload per run (default 25 across 4 OAuth projects)'
         required: false
-        default: '12'
+        default: '25'
         type: string
       privacy:
-        description: 'Release mode: scheduled (YouTube native publishAt), public, or unlisted'
+        description: 'Release mode: public, scheduled, or unlisted'
         required: false
-        default: 'scheduled'
+        default: 'public'
         type: string
 
 permissions:
@@ -57,6 +57,8 @@ jobs:
         env:
           INFLUENZIAN_OAUTH_TOKEN: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN }}
           INFLUENZIAN_OAUTH_TOKEN_2: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN_2 }}
+          INFLUENZIAN_OAUTH_TOKEN_3: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN_3 }}
+          INFLUENZIAN_OAUTH_TOKEN_4: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN_4 }}
           GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
         run: |
           mkdir -p data/credentials/tokens_influenzian ~/.config/rclone
@@ -65,7 +67,13 @@ jobs:
             printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/tokens_influenzian/token_942198183044.json
           fi
           if [ -n "$INFLUENZIAN_OAUTH_TOKEN_2" ]; then
-            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN_2" > data/credentials/tokens_influenzian/token_secondary.json
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN_2" > data/credentials/tokens_influenzian/token_839236964216.json
+          fi
+          if [ -n "$INFLUENZIAN_OAUTH_TOKEN_3" ]; then
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN_3" > data/credentials/tokens_influenzian/token_623794382117.json
+          fi
+          if [ -n "$INFLUENZIAN_OAUTH_TOKEN_4" ]; then
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN_4" > data/credentials/tokens_influenzian/token_801831475660.json
           fi
           if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
             printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
@@ -74,11 +82,11 @@ jobs:
       - name: Upload & Native-Schedule Priority Chess Episodes (Sindarov & Gukesh First -> Magnus)
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            MAX_UP="${{ github.event.inputs.max_uploads || '12' }}"
-            PRIV="${{ github.event.inputs.privacy || 'scheduled' }}"
+            MAX_UP="${{ github.event.inputs.max_uploads || '25' }}"
+            PRIV="${{ github.event.inputs.privacy || 'public' }}"
           else
-            MAX_UP="12"
-            PRIV="scheduled"
+            MAX_UP="25"
+            PRIV="public"
           fi
           python tools/influenzian_chess_series_publisher.py \
             --drive-remote "gdrive:Influenzian/DailyQueue/CHESS" \
