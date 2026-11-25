@@ -52,7 +52,7 @@ jobs:
       - name: Sync 1008 Recipes & Receipts from Google Drive
         run: |
           mkdir -p /home/runner/GoogleDrive_GuruKulaDesam/Assets/south-indian-recipes-1008
-          rclone copy gdrive:GuruKulaDesam/Assets/south-indian-recipes-1008 /home/runner/GoogleDrive_GuruKulaDesam/Assets/south-indian-recipes-1008 --transfers 8
+          rclone copy gdrive:GuruKulaDesam/Assets/south-indian-recipes-1008 /home/runner/GoogleDrive_GuruKulaDesam/Assets/south-indian-recipes-1008 --transfers 8 || true
 
       - name: Generate 1008 Recipes if Index Missing
         env:
