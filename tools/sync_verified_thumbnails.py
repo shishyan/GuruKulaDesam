@@ -40,11 +40,9 @@ CHANNELS = [
         "gdrive_subdir": "",
         "token_candidates": [
             CREDS_DIR / "token_472322435541.json",
-            CREDS_DIR / "token_gkd_942198183044.json",
             CREDS_DIR / "token_gkd_839236964216.json",
             CREDS_DIR / "token.json",
             CREDS_DIR / "tokens" / "token_472322435541.json",
-            CREDS_DIR / "tokens" / "token_942198183044.json",
         ],
     },
     {
@@ -55,10 +53,8 @@ CHANNELS = [
         "gdrive_subdir": "@GuruKulaDesam_v2",
         "token_candidates": [
             CREDS_DIR / "token_gurukuladesam_472322435541.json",
-            CREDS_DIR / "token_gurukuladesam_942198183044.json",
             CREDS_DIR / "token_gurukuladesam.json",
             CREDS_DIR / "tokens_gurukuladesam" / "token_472322435541.json",
-            CREDS_DIR / "tokens_gurukuladesam" / "token_942198183044.json",
         ],
     },
     {
@@ -68,9 +64,8 @@ CHANNELS = [
         "local_cache": LOCAL_THUMB_BASE / "@GuruKulaDesam2_v2",
         "gdrive_subdir": "@GuruKulaDesam2_v2",
         "token_candidates": [
-            CREDS_DIR / "token_942198183044.json",
             CREDS_DIR / "token_gurukuladesam2.json",
-            CREDS_DIR / "tokens_gurukuladesam2" / "token_942198183044.json",
+            CREDS_DIR / "tokens_gurukuladesam2" / "token_839236964216.json",
             CREDS_DIR / "tokens_gurukuladesam2" / "token_472322435541.json",
         ],
     },

@@ -55,7 +55,6 @@ CHANNEL_CONFIGS = {
         "handle": "@karmicgenie",
         "channel_id": "UCmixCKV4uTv3wIp634IRLXg",
         "token_paths": [
-            CREDENTIALS_DIR / "tokens_karmicgenie" / "token_942198183044.json",
             CREDENTIALS_DIR / "tokens_karmicgenie" / "token_472322435541.json",
             CREDENTIALS_DIR / "token_karmicgenie.json",
         ],

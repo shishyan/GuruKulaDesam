@@ -1,33 +1,39 @@
-name: Influenzian Rating-Climb Zen Chess Series (3 Videos/Day Autonomous Publisher)
+name: Influenzian World Championship & Rating-Climb Chess Scheduler
 
 on:
   schedule:
-    # Slot 1 (Morning Chess Lesson — 09:00 AM IST / 03:30 UTC daily)
-    - cron: '30 3 * * *'
-    # Slot 2 (Afternoon Chess Lesson — 03:00 PM IST / 09:30 UTC daily)
-    - cron: '30 9 * * *'
-    # Slot 3 (Evening Chess Lesson — 09:00 PM IST / 15:30 UTC daily)
-    - cron: '30 15 * * *'
+    # Primary Daily Quota-Reset Batch Scheduler (08:12 UTC / 01:42 PM IST — 12m after YouTube 10,000-unit reset)
+    # Uploads up to 6 episodes in priority order (Sindarov & Gukesh WCh -> Magnus -> Pragg)
+    # and schedules them into YouTube's native release slots (08:30, 13:30, 18:00, 21:30 IST).
+    - cron: '12 8 * * *'
+    # Catch-up / Newly-Rendered World Championship Game Syncs:
+    - cron: '30 14 * * *'
+    - cron: '30 20 * * *'
+    - cron: '30 2 * * *'
   workflow_dispatch:
     inputs:
       max_uploads:
-        description: 'Maximum chess episodes to publish per run'
+        description: 'Maximum chess episodes to upload/schedule per run (default 6)'
         required: false
-        default: '1'
+        default: '6'
         type: string
       privacy:
-        description: 'YouTube privacy status (public or unlisted)'
+        description: 'Release mode: scheduled (YouTube native publishAt), public, or unlisted'
         required: false
-        default: 'public'
+        default: 'scheduled'
         type: string
 
 permissions:
   contents: write
 
+concurrency:
+  group: influenzian-chess-scheduler
+  cancel-in-progress: false
+
 jobs:
   publish_chess_series:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 40
 
     steps:
       - name: Checkout Repository
@@ -47,9 +53,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2
 
-      - name: Restore @influenzian OAuth Token & rclone Config
+      - name: Restore @influenzian OAuth Tokens & rclone Config
         env:
           INFLUENZIAN_OAUTH_TOKEN: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN }}
+          INFLUENZIAN_OAUTH_TOKEN_2: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN_2 }}
           GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
         run: |
           mkdir -p data/credentials/tokens_influenzian ~/.config/rclone
@@ -57,18 +64,21 @@ jobs:
             printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/token_influenzian.json
             printf "%s" "$INFLUENZIAN_OAUTH_TOKEN" > data/credentials/tokens_influenzian/token_942198183044.json
           fi
+          if [ -n "$INFLUENZIAN_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$INFLUENZIAN_OAUTH_TOKEN_2" > data/credentials/tokens_influenzian/token_secondary.json
+          fi
           if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
             printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
           fi
 
-      - name: Drip-Publish Next Rating-Climb Chess Episode onto @influenzian Main Channel
+      - name: Upload & Native-Schedule Priority Chess Episodes (Sindarov & Gukesh First -> Magnus)
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            MAX_UP="${{ github.event.inputs.max_uploads || '1' }}"
-            PRIV="${{ github.event.inputs.privacy || 'public' }}"
+            MAX_UP="${{ github.event.inputs.max_uploads || '6' }}"
+            PRIV="${{ github.event.inputs.privacy || 'scheduled' }}"
           else
-            MAX_UP="1"
-            PRIV="public"
+            MAX_UP="6"
+            PRIV="scheduled"
           fi
           python tools/influenzian_chess_series_publisher.py \
             --drive-remote "gdrive:Influenzian/DailyQueue/CHESS" \
@@ -82,7 +92,7 @@ jobs:
           if [ -f production/influenzian_chess_published_registry.json ]; then
             git add production/influenzian_chess_published_registry.json
             if [ -n "$(git status --porcelain production/influenzian_chess_published_registry.json)" ]; then
-              git commit -m "chore(influenzian): record published Rating-Climb chess episode [skip ci]"
+              git commit -m "chore(influenzian): record scheduled/published chess episodes [skip ci]"
               git pull --rebase --autostash origin HEAD || true
               git push origin HEAD:master || git push origin HEAD:main || true
             fi

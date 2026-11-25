@@ -60,11 +60,8 @@ jobs:
           INFLUENZIAN_OAUTH_TOKEN: ${{ secrets.INFLUENZIAN_OAUTH_TOKEN }}
         run: |
           mkdir -p data/credentials/tokens data/credentials/tokens_karmicgenie data/credentials/tokens_gurukuladesam data/credentials/tokens_gurukuladesam2 data/credentials/tokens_influenzian
-          if [ -n "$KARMICGENIE_OAUTH_TOKEN" ]; then
-            printf "%s" "$KARMICGENIE_OAUTH_TOKEN" > data/credentials/token_karmicgenie.json
-            printf "%s" "$KARMICGENIE_OAUTH_TOKEN" > data/credentials/tokens_karmicgenie/token_942198183044.json
-          fi
           if [ -n "$KARMICGENIE_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$KARMICGENIE_OAUTH_TOKEN_2" > data/credentials/token_karmicgenie.json
             printf "%s" "$KARMICGENIE_OAUTH_TOKEN_2" > data/credentials/tokens_karmicgenie/token_472322435541.json
           fi
           if [ -n "$GURU_KULA_DESAM_FLAGSHIP_OAUTH_TOKEN" ]; then
@@ -92,7 +89,7 @@ jobs:
 
       - name: Detect New Full-Length Videos & Schedule Companion Shorts Across Long-Form Channels
         run: |
-          CH="${{ github.event.inputs.channel || 'guru-kula-desam,karmicgenie,influenzian' }}"
+          CH="${{ github.event.inputs.channel || 'guru-kula-desam,karmicgenie' }}"
           MAX_PER="${{ github.event.inputs.max_per_channel || '1' }}"
           PUB_NOW_FLAG=""
           if [ "${{ github.event.inputs.publish_now }}" = "true" ]; then

@@ -1,13 +1,11 @@
 name: Influenzian Daily 3-Category Autonomous Publisher (Mind · AI · Money)
 
 on:
-  schedule:
-    # Audience 1 (MIND — Deep Thinkers & Students): 06:30 UTC (12:00 PM IST) daily
-    - cron: '30 6 * * *'
-    # Audience 2 (AI_WORKFLOW — Engineers & AI Operators): 13:30 UTC (07:00 PM IST) daily
-    - cron: '30 13 * * *'
-    # Audience 3 (MONEY — Professionals, Families & Investors): 19:30 UTC (01:00 AM IST) daily
-    - cron: '30 19 * * *'
+  # Paused temporarily while @influenzian focuses 100% on the Chess Series & 2026 World Championship
+  # schedule:
+  #   - cron: '30 6 * * *'
+  #   - cron: '30 13 * * *'
+  #   - cron: '30 19 * * *'
   workflow_dispatch:
     inputs:
       category:
