@@ -3,15 +3,18 @@
   "published": {
     "2026-11-08": {
       "youtubeVideoId": "2C1bAaGDJKE",
-      "url": "https://youtu.be/2C1bAaGDJKE"
+      "url": "https://youtu.be/2C1bAaGDJKE",
+      "thumbnailVerified": true
     },
     "2026-11-09": {
       "youtubeVideoId": "pJUUK0lXylg",
-      "url": "https://youtu.be/pJUUK0lXylg"
+      "url": "https://youtu.be/pJUUK0lXylg",
+      "thumbnailVerified": true
     },
     "2026-11-10": {
       "youtubeVideoId": "AXShW9izVt8",
-      "url": "https://youtu.be/AXShW9izVt8"
+      "url": "https://youtu.be/AXShW9izVt8",
+      "thumbnailVerified": true
     },
     "2026-11-11": {
       "youtubeVideoId": "djOaBcVurRk",
@@ -19,35 +22,43 @@
     },
     "2026-11-13": {
       "youtubeVideoId": "it2EEgkjHfQ",
-      "url": "https://youtu.be/it2EEgkjHfQ"
+      "url": "https://youtu.be/it2EEgkjHfQ",
+      "thumbnailVerified": true
     },
     "2026-11-14": {
       "youtubeVideoId": "Ia7D4RJ94KM",
-      "url": "https://youtu.be/Ia7D4RJ94KM"
+      "url": "https://youtu.be/Ia7D4RJ94KM",
+      "thumbnailVerified": true
     },
     "2026-11-15": {
       "youtubeVideoId": "A9SDGW7fb6c",
-      "url": "https://youtu.be/A9SDGW7fb6c"
+      "url": "https://youtu.be/A9SDGW7fb6c",
+      "thumbnailVerified": true
     },
     "2026-11-16": {
       "youtubeVideoId": "ENnzXg9vuxg",
-      "url": "https://youtu.be/ENnzXg9vuxg"
+      "url": "https://youtu.be/ENnzXg9vuxg",
+      "thumbnailVerified": true
     },
     "2026-11-17": {
       "youtubeVideoId": "Izedww_NgWc",
-      "url": "https://youtu.be/Izedww_NgWc"
+      "url": "https://youtu.be/Izedww_NgWc",
+      "thumbnailVerified": true
     },
     "2026-11-18": {
       "youtubeVideoId": "O2kJx_Wqw-o",
-      "url": "https://youtu.be/O2kJx_Wqw-o"
+      "url": "https://youtu.be/O2kJx_Wqw-o",
+      "thumbnailVerified": true
     },
     "2026-11-19": {
       "youtubeVideoId": "iYcqEcECAZ4",
-      "url": "https://youtu.be/iYcqEcECAZ4"
+      "url": "https://youtu.be/iYcqEcECAZ4",
+      "thumbnailVerified": true
     },
     "2026-11-20": {
       "youtubeVideoId": "49Td9yK78Po",
-      "url": "https://youtu.be/49Td9yK78Po"
+      "url": "https://youtu.be/49Td9yK78Po",
+      "thumbnailVerified": true
     },
     "2026-11-12": {
       "youtubeVideoId": "VnLeEarUyps",
@@ -60,7 +71,13 @@
       "url": "https://youtu.be/bO_x3gLkSFE",
       "title": "நடராஜர் – ஆனந்தத் தாண்டவம் | சிதம்பர மகாத்மியம் | 21 நவம்பர் 2026 | @TamilDailyLife",
       "publishedAt": "2026-11-25T09:03:45.072563+00:00"
+    },
+    "2026-11-22": {
+      "youtubeVideoId": "9ISWALA-kpQ",
+      "url": "https://youtu.be/9ISWALA-kpQ",
+      "title": "திருநீலகண்டர் — ஞாயிறு பிரதோஷம் & சிவபுராணக் கதை | நவம்பர் 22 | @TamilDailyLife",
+      "publishedAt": "2026-11-26T08:48:50.363966+00:00"
     }
   },
-  "updated_at": "2026-11-25T09:03:45.147055+00:00"
+  "updated_at": "2026-11-26T08:49:00.278244+00:00"
 }
