@@ -1,7 +1,7 @@
 {
   "channel": "@TamilDailyLife",
   "channel_id": "UCDdEZ6CPCr6tIzWdDY9mzxg",
-  "updated_at_utc": "2026-11-24T08:07:46Z",
+  "updated_at_utc": "2026-11-26T23:57:58Z",
   "published": {
     "P1_001": {
       "video_id": "sqW1ap4oZBY",
@@ -20,6 +20,24 @@
       "url": "https://youtu.be/jxIWObmAoaQ",
       "title": "மகளிர் இடுப்பு & எலும்பு வலிமைக்கான கருப்பு உளுந்தங்களி, எள்ளுருண்டை & பிரண்டை பாட்டி வைத்தியம்",
       "thumb_set": true
+    },
+    "P1_002": {
+      "video_id": "nOCwXSM3L2k",
+      "url": "https://youtu.be/nOCwXSM3L2k",
+      "title": "மதுரை மீனாட்சி அம்மன் தல வரலாறு & பச்சைப் பட்டு திருக்கல்யாண மகிமை | @TamilDailyLife",
+      "thumb_set": false
+    },
+    "P2_002": {
+      "video_id": "UyqgHyfVpt8",
+      "url": "https://youtu.be/UyqgHyfVpt8",
+      "title": "பெண்கள் உடல் சூடு & இடுப்பு வலி தணிக்கும் பாரம்பரிய வெந்தயக் களி செய்முறை | @TamilDailyLife",
+      "thumb_set": false
+    },
+    "P3_002": {
+      "video_id": "knq-rotW08s",
+      "url": "https://youtu.be/knq-rotW08s",
+      "title": "காமாட்சி அம்மன் விளக்கு ஏற்றும் வரலாறும் இல்லத்தில் கடைப்பிடிக்க வேண்டிய விதிகளும்...",
+      "thumb_set": false
     }
   }
 }
