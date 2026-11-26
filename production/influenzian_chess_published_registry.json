@@ -111,6 +111,76 @@
       "privacyStatus": "public",
       "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
       "publishedAt": "2026-11-25T17:58:40.174161+00:00"
+    },
+    "Ep14_Carlsen_Sindarov_2024_Summit": {
+      "youtubeVideoId": "PhOiHas9LHk",
+      "url": "https://youtu.be/PhOiHas9LHk",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:05.285321+00:00"
+    },
+    "Ep15_Gukesh_Abdusattorov_2022_Biel": {
+      "youtubeVideoId": "OGFOn00QGdY",
+      "url": "https://youtu.be/OGFOn00QGdY",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:10.708378+00:00"
+    },
+    "Ep16_Gukesh_Firouzja_2023_Norway": {
+      "youtubeVideoId": "5QRhICeYk4I",
+      "url": "https://youtu.be/5QRhICeYk4I",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:15.496221+00:00"
+    },
+    "Ep17_Gukesh_Maghsoodloo_2024_Olympiad": {
+      "youtubeVideoId": "anja0tJLGXY",
+      "url": "https://youtu.be/anja0tJLGXY",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:20.624790+00:00"
+    },
+    "Ep24_Pragg_Gukesh_2025_Sinquefield": {
+      "youtubeVideoId": "hKs81uzlDfM",
+      "url": "https://youtu.be/hKs81uzlDfM",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:25.581685+00:00"
+    },
+    "Ep07_Carlsen_Kramnik_2009_London": {
+      "youtubeVideoId": "aRvfKOFnWS0",
+      "url": "https://youtu.be/aRvfKOFnWS0",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:32.564641+00:00"
+    },
+    "Ep08_Carlsen_Topalov_2010_Nanjing": {
+      "youtubeVideoId": "fsL1OoX1B9k",
+      "url": "https://youtu.be/fsL1OoX1B9k",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:37.767089+00:00"
+    },
+    "Ep09_Carlsen_Aronian_2012_London": {
+      "youtubeVideoId": "l4TD1FPQupo",
+      "url": "https://youtu.be/l4TD1FPQupo",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:44.379337+00:00"
+    },
+    "Ep10_Carlsen_Nakamura_2013_TataSteel": {
+      "youtubeVideoId": "tPm8FW6xD0g",
+      "url": "https://youtu.be/tPm8FW6xD0g",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:50.980376+00:00"
+    },
+    "Ep11_Anand_Carlsen_2013_Chennai_WCh": {
+      "youtubeVideoId": "6HD8DL25stI",
+      "url": "https://youtu.be/6HD8DL25stI",
+      "privacyStatus": "public",
+      "channelId": "UCcJFqC7z0f-ARNcJadKiKpQ",
+      "publishedAt": "2026-11-26T18:24:56.981292+00:00"
     }
   },
   "archived_v1_unlisted": {
@@ -136,6 +206,6 @@
       "publishedAt": "2026-11-22T17:13:23.150801+00:00"
     }
   },
-  "lastChannelCapHitAt": "2026-11-26T01:46:58.371135+00:00",
+  "lastChannelCapHitAt": "2026-11-26T18:25:00.584400+00:00",
   "lastChannelCapCount24h": 10
 }
