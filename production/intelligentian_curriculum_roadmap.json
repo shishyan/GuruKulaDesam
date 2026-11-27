@@ -1,0 +1,1057 @@
+{
+  "channel": "@intelligentian",
+  "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
+  "trackKey": "TRACK_LEARNING",
+  "curriculumTitle": "The @intelligentian 30-Episode Progressive AI Mastery Curriculum (EP06–EP35: L1 Basics to L4 Frontier)",
+  "totalLearningCurriculumEpisodes": 30,
+  "immediateAuthoredBatchCount": 5,
+  "futureScheduledQueueCount": 25,
+  "companiesCovered": [
+    "OPENAI",
+    "ANTHROPIC",
+    "GOOGLE",
+    "NVIDIA",
+    "MICROSOFT",
+    "META",
+    "XAI"
+  ],
+  "complexityTiers": [
+    "L1_BASICS",
+    "L2_APPLIED",
+    "L3_SYSTEMS",
+    "L4_FRONTIER"
+  ],
+  "distributionAcross30Episodes": {
+    "byCompany": {
+      "ANTHROPIC": 5,
+      "GOOGLE": 4,
+      "META": 5,
+      "MICROSOFT": 4,
+      "NVIDIA": 4,
+      "OPENAI": 5,
+      "XAI": 3
+    },
+    "byComplexityTier": {
+      "L1_BASICS": 7,
+      "L2_APPLIED": 8,
+      "L3_SYSTEMS": 8,
+      "L4_FRONTIER": 7
+    }
+  },
+  "immediateEpisodesEP06toEP10": [
+    {
+      "episodeNumber": 6,
+      "episodeId": "EP06_LEARN_L1_OPENAI_LLM_BASICS",
+      "companyCategory": "OPENAI",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "audienceBadge": "ABSOLUTE BEGINNERS",
+      "title": "AI Explained in 2 Minutes: How GPT & Large Language Models Actually Think (Zero Math)",
+      "status": "AUTHORED_IMMEDIATE_BATCH",
+      "manifestPath": "episodes/intelligentian/EP06_LEARN_L1_OPENAI_LLM_BASICS/manifest.json"
+    },
+    {
+      "episodeNumber": 7,
+      "episodeId": "EP07_LEARN_L1_MICROSOFT_PROMPT_CONTEXT",
+      "companyCategory": "MICROSOFT",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "audienceBadge": "DAILY PROFESSIONALS",
+      "title": "Stop Writing Weak Prompts: From Prompt Engineering to Context Engineering (2026 Guide)",
+      "status": "AUTHORED_IMMEDIATE_BATCH",
+      "manifestPath": "episodes/intelligentian/EP07_LEARN_L1_MICROSOFT_PROMPT_CONTEXT/manifest.json"
+    },
+    {
+      "episodeNumber": 8,
+      "episodeId": "EP08_LEARN_L2_ANTHROPIC_MCP_AGENTS",
+      "companyCategory": "ANTHROPIC",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "How Autonomous AI Agents Work: Tool Use, MCP Servers & Computer-Use Loops Explained",
+      "status": "AUTHORED_IMMEDIATE_BATCH",
+      "manifestPath": "episodes/intelligentian/EP08_LEARN_L2_ANTHROPIC_MCP_AGENTS/manifest.json"
+    },
+    {
+      "episodeNumber": 9,
+      "episodeId": "EP09_LEARN_L3_META_LOCAL_RAG_FINETUNE",
+      "companyCategory": "META",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "RAG vs Fine-Tuning vs Long Context: Architecting Private Open-Source Llama Systems",
+      "status": "AUTHORED_IMMEDIATE_BATCH",
+      "manifestPath": "episodes/intelligentian/EP09_LEARN_L3_META_LOCAL_RAG_FINETUNE/manifest.json"
+    },
+    {
+      "episodeNumber": 10,
+      "episodeId": "EP10_LEARN_L4_NVIDIA_TRANSFORMERS_CUDA",
+      "companyCategory": "NVIDIA",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Inside Self-Attention, KV-Cache & FlashAttention: Why Nvidia GPUs Dominate Frontier AI",
+      "status": "AUTHORED_IMMEDIATE_BATCH",
+      "manifestPath": "episodes/intelligentian/EP10_LEARN_L4_NVIDIA_TRANSFORMERS_CUDA/manifest.json"
+    }
+  ],
+  "futureQueueEP11toEP35": [
+    {
+      "episodeNumber": 11,
+      "episodeId": "EP11_LEARN_L1_GOOGLE_MULTIMODAL_TOKENS",
+      "companyCategory": "GOOGLE",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "ABSOLUTE BEGINNERS",
+      "title": "How Native Multimodal AI Sees Images, Audio & Video in One Shared Brain (Gemini Explained)",
+      "hookPayoff7Sec": "Gemini does not bolt a separate camera app onto a text chatbot—it chops pixels, waveforms, and words into one shared stream of visual and audio tokens.",
+      "coreMentalModels": [
+        "Image Patch Tokenization (ViT Patches as Visual Words)",
+        "Native Early-Fusion Multimodality vs. Stitched OCR Pipelines",
+        "Cross-Modal Attention Across Video Frames & Audio Timestamps"
+      ],
+      "thumbnailText": "HOW AI SEES",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 12,
+      "episodeId": "EP12_LEARN_L1_XAI_REALTIME_SEARCH_GROUNDING",
+      "companyCategory": "XAI",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "FOR EVERYONE",
+      "title": "Training Cutoff vs Live Search Grounding: How Grok & Real-Time AI Verify Breaking Facts",
+      "hookPayoff7Sec": "Frozen model weights stop learning the day pre-training ends; real-time AI bridges that gap by rewriting your question into live search queries before answering.",
+      "coreMentalModels": [
+        "Parametric Frozen Memory vs. Live Search Grounding",
+        "Query Decomposition & Source Triangulation",
+        "Spotting Confident Outdated Cutoff Traps"
+      ],
+      "thumbnailText": "LIVE AI SEARCH",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 13,
+      "episodeId": "EP13_LEARN_L1_ANTHROPIC_THINKING_MODELS",
+      "companyCategory": "ANTHROPIC",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "DAILY PROFESSIONALS",
+      "title": "Fast Chat Models vs Extended Thinking Models: When to Use Instant Replies vs Deep Reasoning",
+      "hookPayoff7Sec": "Standard chat models blurt out the first plausible sentence; extended thinking models spend hidden scratchpad tokens testing and discarding wrong paths first.",
+      "coreMentalModels": [
+        "System-1 Instant Generation vs. System-2 Scratchpad Reasoning",
+        "When Reasoning Tokens Help (Math, Code, Strategy) vs. Hurt (Simple Rewrites)",
+        "Latency-Cost-Accuracy Routing for Daily Work"
+      ],
+      "thumbnailText": "THINKING AI",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 14,
+      "episodeId": "EP14_LEARN_L1_META_OPEN_VS_CLOSED_WEIGHTS",
+      "companyCategory": "META",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "FOR EVERYONE",
+      "title": "Open-Weight AI vs Closed Frontier APIs: Why Meta Llama Changed the Global AI Power Balance",
+      "hookPayoff7Sec": "Closed AI rents intelligence by the token behind a cloud wall; open-weight AI hands you the actual neural brain file to run on your own laptop or server.",
+      "coreMentalModels": [
+        "What Model Weights Actually Are (Billions of Tuned Numbers)",
+        "Open-Weight Licenses vs. Full Open-Source Training Data",
+        "Cloud API Convenience vs. Local Privacy & Zero Lock-In"
+      ],
+      "thumbnailText": "OPEN VS CLOSED",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 15,
+      "episodeId": "EP15_LEARN_L1_NVIDIA_CPU_VS_GPU_PARALLELISM",
+      "companyCategory": "NVIDIA",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "ABSOLUTE BEGINNERS",
+      "title": "CPU vs GPU Explained Visually: Why Gaming Chips Accidentally Sparked the AI Revolution",
+      "hookPayoff7Sec": "A CPU is four Formula-One race cars built for sequential errands; an Nvidia GPU is ten thousand synchronized cargo drones moving giant number grids at once.",
+      "coreMentalModels": [
+        "Serial Branching CPUs vs. Massively Parallel SIMT GPUs",
+        "Why Neural Networks Are 99% Matrix Multiplication",
+        "From 3D Polygon Shading to Transformer Tensor Cores"
+      ],
+      "thumbnailText": "CPU VS GPU",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 16,
+      "episodeId": "EP16_LEARN_L2_OPENAI_STRUCTURED_JSON_OUTPUTS",
+      "companyCategory": "OPENAI",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "100% Reliable Structured Outputs: Constrained Decoding & JSON Schemas for Production Apps",
+      "hookPayoff7Sec": "Asking an LLM nicely for valid JSON breaks in production; constrained decoding masks invalid grammar tokens at the math layer so broken syntax becomes impossible.",
+      "coreMentalModels": [
+        "Prompted JSON vs. Context-Free Grammar Token Masking",
+        "Designing Strict Pydantic / JSON Schemas with Reasoning Fields",
+        "Handling Refusals, Nullables & Enum Classification Cleanly"
+      ],
+      "thumbnailText": "STRICT AI JSON",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 17,
+      "episodeId": "EP17_LEARN_L2_GOOGLE_LONG_CONTEXT_CACHING",
+      "companyCategory": "GOOGLE",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Context Caching & 2-Million-Token Workflows: Slashing Gemini API Costs by 75%",
+      "hookPayoff7Sec": "Re-sending the same massive codebase or video on every API call burns cash; context caching pins precomputed KV tensors in memory for a fraction of the price.",
+      "coreMentalModels": [
+        "Implicit vs. Explicit Prefix Context Caching Mechanics",
+        "Structuring System Prompts: Static Heavy Prefix First, Dynamic Query Last",
+        "Cost & Time-To-First-Token Math for Repo & Video Analysis"
+      ],
+      "thumbnailText": "CONTEXT CACHE",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 18,
+      "episodeId": "EP18_LEARN_L2_MICROSOFT_MULTI_AGENT_PATTERNS",
+      "companyCategory": "MICROSOFT",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Multi-Agent Orchestration Patterns: Router, Planner-Worker & Critic Loops Without Chaos",
+      "hookPayoff7Sec": "Ten chatting agents in a group room burn tokens in circles; high-grade multi-agent systems use deterministic routers, isolated worker contexts, and strict critic gates.",
+      "coreMentalModels": [
+        "Supervisor-Router vs. Parallel Map-Reduce vs. Generator-Verifier",
+        "Context Isolation: Passing Crisp Artifacts Instead of Bloated Chat Logs",
+        "Stopping Infinite Debate Loops with Deterministic Exit Conditions"
+      ],
+      "thumbnailText": "AGENT SWARMS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 19,
+      "episodeId": "EP19_LEARN_L2_ANTHROPIC_AGENTIC_CODING_TDD",
+      "companyCategory": "ANTHROPIC",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Agentic Software Engineering: CLAUDE.md, Test-Driven Loops & Zero-Slop Codebases",
+      "hookPayoff7Sec": "Vibe-coding without tests creates unmaintainable spaghetti in hours; spec-first agentic TDD forces coding agents to prove every line against failing unit tests.",
+      "coreMentalModels": [
+        "Repository Memory Files (`CLAUDE.md` / `GEMINI.md` Invariants)",
+        "Plan -> Write Failing Test -> Implement -> Lint & Typecheck Loop",
+        "Git Worktree Isolation for Parallel Autonomous Tasks"
+      ],
+      "thumbnailText": "AGENTIC CODING",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 20,
+      "episodeId": "EP20_LEARN_L2_META_QUANTIZATION_LOCAL_LLAMA",
+      "companyCategory": "META",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "FP16 vs INT8 vs 4-Bit GGUF Quantization: Running 70B Llama Models on Consumer Hardware",
+      "hookPayoff7Sec": "Shrinking neural weights from sixteen-bit floats down to calibrated four-bit integers cuts memory demand by seventy-five percent while retaining nearly ninety-nine percent reasoning quality.",
+      "coreMentalModels": [
+        "VRAM Capacity Formula (`Parameters × Bits/8 × 1.2 Overhead`)",
+        "Post-Training Quantization: GGUF, AWQ & Activation-Aware Outliers",
+        "Perplexity vs. Real Coding Accuracy Across Q8, Q5_K_M & IQ4"
+      ],
+      "thumbnailText": "4-BIT AI MATH",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 21,
+      "episodeId": "EP21_LEARN_L2_XAI_EVALS_BENCHMARK_SATURATION",
+      "companyCategory": "XAI",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Why Public AI Leaderboards Lie: Building Private Evals & LLM-as-a-Judge Pipelines",
+      "hookPayoff7Sec": "Public benchmarks leak into training crawls within months; elite AI teams never swap models in production without a private golden evaluation suite of real user failures.",
+      "coreMentalModels": [
+        "Data Contamination & Goodhart's Law on Public Leaderboards",
+        "Deterministic Code Assertions vs. Pairwise LLM-as-a-Judge Rubrics",
+        "Turning Every Production Bug into a Regression Eval Case"
+      ],
+      "thumbnailText": "BUILD AI EVALS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 22,
+      "episodeId": "EP22_LEARN_L2_OPENAI_VOICE_REALTIME_PIPELINES",
+      "companyCategory": "OPENAI",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Sub-300ms Voice AI Architecture: Native Speech-to-Speech WebRTC vs Cascaded STT-LLM-TTS",
+      "hookPayoff7Sec": "Human conversation feels broken above five hundred milliseconds of lag; building natural voice agents means choosing between ultra-low-latency native audio tokens and controllable STT-TTS cascades.",
+      "coreMentalModels": [
+        "Voice Activity Detection (VAD), Barge-In Interruption & Turn-Taking",
+        "Native Speech-to-Speech Emotion Retention vs. Text Transcript Auditability",
+        "WebRTC Streaming vs. WebSockets Under Packet Loss"
+      ],
+      "thumbnailText": "REALTIME VOICE",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 23,
+      "episodeId": "EP23_LEARN_L3_NVIDIA_VLLM_TENSORRT_SERVING",
+      "companyCategory": "NVIDIA",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "High-Throughput LLM Serving: Continuous Batching, PagedAttention & Prefill-Decode Disaggregation",
+      "hookPayoff7Sec": "Naive static batching leaves eighty percent of your GPU idle waiting for the longest answer; continuous iteration-level batching slots new users in on the very next token.",
+      "coreMentalModels": [
+        "Compute-Bound Prefill Phase vs. Memory-Bound Decode Phase",
+        "Continuous Iteration Batching + PagedAttention Virtual Blocks",
+        "Disaggregating Prefill & Decode Across Separate GPU Pools"
+      ],
+      "thumbnailText": "SCALE AI GPUS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 24,
+      "episodeId": "EP24_LEARN_L3_GOOGLE_AGENT_TO_AGENT_ENTERPRISE",
+      "companyCategory": "GOOGLE",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "MCP + Agent-to-Agent (A2A) Protocols: Designing Federated Cross-Company Agent Meshes",
+      "hookPayoff7Sec": "MCP connects one agent to its private tools; Agent-to-Agent protocols let opaque enterprise agents negotiate tasks across company boundaries without exposing internal databases.",
+      "coreMentalModels": [
+        "Vertical Tool Access (MCP) vs. Horizontal Agent Delegation (A2A)",
+        "Agent Capability Cards, OAuth Scopes & Cryptographic Task Receipts",
+        "Asynchronous Long-Running Workflows & Webhook State Machines"
+      ],
+      "thumbnailText": "AGENT PROTOCOLS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 25,
+      "episodeId": "EP25_LEARN_L3_ANTHROPIC_PROMPT_INJECTION_DEFENSE",
+      "companyCategory": "ANTHROPIC",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "Defeating Indirect Prompt Injection: Architecting Zero-Trust Security for Tool-Using Agents",
+      "hookPayoff7Sec": "Because LLMs process instructions and untrusted web text inside the same token stream, a hidden sentence inside an email can hijack an unguarded agent's tools.",
+      "coreMentalModels": [
+        "Direct Jailbreaks vs. Indirect Data-Plane Prompt Injection",
+        "Instruction Hierarchy Training + Dual-LLM Privileged/Quarantined Split",
+        "Deterministic Egress Firewalls Preventing Exfiltration via URLs/Tools"
+      ],
+      "thumbnailText": "SECURE AI AGENTS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 26,
+      "episodeId": "EP26_LEARN_L3_MICROSOFT_GRAPHRAG_KNOWLEDGE_GRAPHS",
+      "companyCategory": "MICROSOFT",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "When Vector RAG Fails: Microsoft GraphRAG, Entity Graphs & Multi-Hop Global Reasoning",
+      "hookPayoff7Sec": "Top-K vector search cannot answer 'What themes connect our last thousand outage reports?'—GraphRAG pre-builds hierarchical entity communities so AI reasons across the whole forest.",
+      "coreMentalModels": [
+        "Why Top-K Chunk Retrieval Fails Global & Multi-Hop Questions",
+        "LLM-Extracted Knowledge Graphs + Leiden Community Summaries",
+        "Balancing Indexing Cost Against Query-Time Global Synthesis"
+      ],
+      "thumbnailText": "GRAPHRAG SYSTEMS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 27,
+      "episodeId": "EP27_LEARN_L3_OPENAI_DPO_RLVR_POST_TRAINING",
+      "companyCategory": "OPENAI",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "SFT vs DPO vs RL with Verifiable Rewards (RLVR): Modern Post-Training Pipelines Explained",
+      "hookPayoff7Sec": "Human thumbs-up graders get fooled by polite sycophancy; Reinforcement Learning with Verifiable Rewards trains reasoning models against deterministic compilers, unit tests, and math proofs.",
+      "coreMentalModels": [
+        "Supervised Imitation (SFT) vs. Direct Preference Optimization (DPO)",
+        "Reward Hacking & Sycophancy in Classic Human-Preference RLHF",
+        "RLVR: Scaling Domain Reasoning with Exact Automated Verifiers"
+      ],
+      "thumbnailText": "RLVR TRAINING",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 28,
+      "episodeId": "EP28_LEARN_L3_META_MODEL_DISTILLATION_ROUTING",
+      "companyCategory": "META",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "Knowledge Distillation & Cascade Model Routers: Frontier Quality at 1/20th the Inference Bill",
+      "hookPayoff7Sec": "Sending ninety percent of routine production traffic to a massive frontier model wastes millions; distilling task traces into an eight-billion-parameter student model slashes latency tenfold.",
+      "coreMentalModels": [
+        "Teacher-Student Synthetic Trace Generation & Logit Distillation",
+        "Confidence-Calibrated Cascade Routers (8B Fast Tier -> Frontier Escalation)",
+        "Continuous Flywheel: Logging Hard Escalations to Retrain the Student"
+      ],
+      "thumbnailText": "DISTILL & ROUTE",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 29,
+      "episodeId": "EP29_LEARN_L3_XAI_MEGA_CLUSTER_NETWORKING",
+      "companyCategory": "XAI",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "Inside 200,000-GPU Superclusters: RoCEv2 Ethernet, Power Grids & Synchronous Checkpointing",
+      "hookPayoff7Sec": "At two hundred thousand GPUs, hardware fails every few hours and one slow network packet stalls the entire cluster—frontier AI becomes power, liquid cooling, and tail-latency physics.",
+      "coreMentalModels": [
+        "3D Parallelism: Tensor, Pipeline & Data Parallel Communication Patterns",
+        "Non-Blocking RDMA Fabrics (InfiniBand vs. RoCEv2 Congestion Control)",
+        "Sub-Minute Asynchronous Checkpointing & Straggler Isolation"
+      ],
+      "thumbnailText": "200K GPU CLUSTERS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 30,
+      "episodeId": "EP30_LEARN_L4_GOOGLE_TPU_SYSTOLIC_ARRAYS",
+      "companyCategory": "GOOGLE",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Google TPUs vs Nvidia GPUs: Systolic Arrays, Optical Circuit Switches & 3D Torus Pods",
+      "hookPayoff7Sec": "While GPUs fetch registers on every instruction, Google's TPU pumps activations rhythmically like a heartbeat across a two-dimensional systolic grid of multiply-accumulate cells.",
+      "coreMentalModels": [
+        "Weight-Stationary 2D Systolic Arrays Eliminating Register File Energy",
+        "3D Torus Interconnects + Reconfigurable MEMS Optical Circuit Switches",
+        "XLA Compiler Static Graph Optimization vs. Dynamic CUDA Eager Execution"
+      ],
+      "thumbnailText": "TPU VS GPU SILICON",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 31,
+      "episodeId": "EP31_LEARN_L4_ANTHROPIC_MECHANISTIC_INTERPRETABILITY",
+      "companyCategory": "ANTHROPIC",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Mechanistic Interpretability & Sparse Autoencoders: Reading Mind Circuits Inside Frontier LLMs",
+      "hookPayoff7Sec": "Individual transformer neurons are polysemantic tangles encoding five unrelated concepts at once; Sparse Autoencoders untangle superposed activations into readable monosemantic features.",
+      "coreMentalModels": [
+        "Superposition Hypothesis: Packing Million Concepts into Thousand Dimensions",
+        "Sparse Autoencoders (SAEs) & Attribution Graphs Tracing Internal Circuits",
+        "Causal Activation Steering: Clamping Features to Prove Model Intent"
+      ],
+      "thumbnailText": "INSIDE AI MINDS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 32,
+      "episodeId": "EP32_LEARN_L4_META_MOE_MLA_ARCHITECTURES",
+      "companyCategory": "META",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Mixture-of-Experts (MoE) & Multi-Head Latent Attention: Trillion-Parameter Intelligence on a Budget",
+      "hookPayoff7Sec": "Dense models fire every single parameter on every word; sparse Mixture-of-Experts activates only tiny specialized sub-networks per token while compressing KV-Cache into low-rank latents.",
+      "coreMentalModels": [
+        "Top-K Router Networks, Expert Load Balancing & Token Dropping Avoidance",
+        "Grouped-Query Attention (GQA) vs. Multi-Head Latent Attention (MLA) Compression",
+        "All-to-All Expert Parallelism Bandwidth Bottlenecks Across Nodes"
+      ],
+      "thumbnailText": "SPARSE MOE MATH",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 33,
+      "episodeId": "EP33_LEARN_L4_NVIDIA_FP4_BLACKWELL_RUBIN",
+      "companyCategory": "NVIDIA",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Microscaling FP4 & Co-Packaged Silicon Photonics: How Nvidia Pushes Past Moore's Law",
+      "hookPayoff7Sec": "Transistor shrinking has slowed to a crawl; Nvidia achieves exponential AI leaps through block-scaled four-bit floating-point math and laser-driven silicon photonics.",
+      "coreMentalModels": [
+        "OCP Microscaling Formats (MXFP4 / NVFP4) with Shared Micro-Block Exponents",
+        "Reticle-Limit Dual-Die CoWoS-L Packaging & Thermal Power Density",
+        "Co-Packaged Optics Replacing Copper SerDes Across Megawatt Racks"
+      ],
+      "thumbnailText": "FP4 & PHOTONICS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 34,
+      "episodeId": "EP34_LEARN_L4_MICROSOFT_SSM_MAMBA_HYBRIDS",
+      "companyCategory": "MICROSOFT",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Beyond Pure Transformers: State-Space Models (Mamba) & Linear-Quadratic Hybrid Architectures",
+      "hookPayoff7Sec": "Pure State-Space Models run in linear time with constant memory yet blur exact needle-in-a-haystack recall; interleaving Mamba layers with periodic full self-attention unlocks the best of both worlds.",
+      "coreMentalModels": [
+        "Selective State-Space Recurrence: Constant-Size State vs. Growing KV-Cache",
+        "Why Fixed-Size Recurrent State Struggles on Exact Associative Copy-Recall",
+        "Jamba / Samba / Zamba Interleaved Hybrid Ratios (7:1 SSM-to-Attention)"
+      ],
+      "thumbnailText": "POST-TRANSFORMER",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 35,
+      "episodeId": "EP35_LEARN_L4_OPENAI_TEST_TIME_COMPUTE_SCALING",
+      "companyCategory": "OPENAI",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "The Two Scaling Laws of Frontier AI: Pre-Training Chinchilla Limits vs Test-Time Search",
+      "hookPayoff7Sec": "Human-written internet text is finite, capping naive pre-training scaling—frontier labs unlocked a second exponential curve by trading inference compute for search, verification, and synthetic RL.",
+      "coreMentalModels": [
+        "Chinchilla Compute-Optimal Pre-Training & The Human Data Wall",
+        "Process Reward Models, Parallel Tree Search & Internal Backtracking",
+        "The Self-Play Synthetic Flywheel: Turning Today's Slow Search into Tomorrow's Fast Weights"
+      ],
+      "thumbnailText": "DUAL SCALING LAWS",
+      "status": "QUEUED_DAILY_DRIP"
+    }
+  ],
+  "episodes": [
+    {
+      "episodeNumber": 11,
+      "episodeId": "EP11_LEARN_L1_GOOGLE_MULTIMODAL_TOKENS",
+      "companyCategory": "GOOGLE",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "ABSOLUTE BEGINNERS",
+      "title": "How Native Multimodal AI Sees Images, Audio & Video in One Shared Brain (Gemini Explained)",
+      "hookPayoff7Sec": "Gemini does not bolt a separate camera app onto a text chatbot—it chops pixels, waveforms, and words into one shared stream of visual and audio tokens.",
+      "coreMentalModels": [
+        "Image Patch Tokenization (ViT Patches as Visual Words)",
+        "Native Early-Fusion Multimodality vs. Stitched OCR Pipelines",
+        "Cross-Modal Attention Across Video Frames & Audio Timestamps"
+      ],
+      "thumbnailText": "HOW AI SEES",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 12,
+      "episodeId": "EP12_LEARN_L1_XAI_REALTIME_SEARCH_GROUNDING",
+      "companyCategory": "XAI",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "FOR EVERYONE",
+      "title": "Training Cutoff vs Live Search Grounding: How Grok & Real-Time AI Verify Breaking Facts",
+      "hookPayoff7Sec": "Frozen model weights stop learning the day pre-training ends; real-time AI bridges that gap by rewriting your question into live search queries before answering.",
+      "coreMentalModels": [
+        "Parametric Frozen Memory vs. Live Search Grounding",
+        "Query Decomposition & Source Triangulation",
+        "Spotting Confident Outdated Cutoff Traps"
+      ],
+      "thumbnailText": "LIVE AI SEARCH",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 13,
+      "episodeId": "EP13_LEARN_L1_ANTHROPIC_THINKING_MODELS",
+      "companyCategory": "ANTHROPIC",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "DAILY PROFESSIONALS",
+      "title": "Fast Chat Models vs Extended Thinking Models: When to Use Instant Replies vs Deep Reasoning",
+      "hookPayoff7Sec": "Standard chat models blurt out the first plausible sentence; extended thinking models spend hidden scratchpad tokens testing and discarding wrong paths first.",
+      "coreMentalModels": [
+        "System-1 Instant Generation vs. System-2 Scratchpad Reasoning",
+        "When Reasoning Tokens Help (Math, Code, Strategy) vs. Hurt (Simple Rewrites)",
+        "Latency-Cost-Accuracy Routing for Daily Work"
+      ],
+      "thumbnailText": "THINKING AI",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 14,
+      "episodeId": "EP14_LEARN_L1_META_OPEN_VS_CLOSED_WEIGHTS",
+      "companyCategory": "META",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "FOR EVERYONE",
+      "title": "Open-Weight AI vs Closed Frontier APIs: Why Meta Llama Changed the Global AI Power Balance",
+      "hookPayoff7Sec": "Closed AI rents intelligence by the token behind a cloud wall; open-weight AI hands you the actual neural brain file to run on your own laptop or server.",
+      "coreMentalModels": [
+        "What Model Weights Actually Are (Billions of Tuned Numbers)",
+        "Open-Weight Licenses vs. Full Open-Source Training Data",
+        "Cloud API Convenience vs. Local Privacy & Zero Lock-In"
+      ],
+      "thumbnailText": "OPEN VS CLOSED",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 15,
+      "episodeId": "EP15_LEARN_L1_NVIDIA_CPU_VS_GPU_PARALLELISM",
+      "companyCategory": "NVIDIA",
+      "contentTrack": "AI MASTERY · LEVEL 1",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L1_BASICS",
+      "voiceTrack": "L1_BASICS",
+      "audienceBadge": "ABSOLUTE BEGINNERS",
+      "title": "CPU vs GPU Explained Visually: Why Gaming Chips Accidentally Sparked the AI Revolution",
+      "hookPayoff7Sec": "A CPU is four Formula-One race cars built for sequential errands; an Nvidia GPU is ten thousand synchronized cargo drones moving giant number grids at once.",
+      "coreMentalModels": [
+        "Serial Branching CPUs vs. Massively Parallel SIMT GPUs",
+        "Why Neural Networks Are 99% Matrix Multiplication",
+        "From 3D Polygon Shading to Transformer Tensor Cores"
+      ],
+      "thumbnailText": "CPU VS GPU",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 16,
+      "episodeId": "EP16_LEARN_L2_OPENAI_STRUCTURED_JSON_OUTPUTS",
+      "companyCategory": "OPENAI",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "100% Reliable Structured Outputs: Constrained Decoding & JSON Schemas for Production Apps",
+      "hookPayoff7Sec": "Asking an LLM nicely for valid JSON breaks in production; constrained decoding masks invalid grammar tokens at the math layer so broken syntax becomes impossible.",
+      "coreMentalModels": [
+        "Prompted JSON vs. Context-Free Grammar Token Masking",
+        "Designing Strict Pydantic / JSON Schemas with Reasoning Fields",
+        "Handling Refusals, Nullables & Enum Classification Cleanly"
+      ],
+      "thumbnailText": "STRICT AI JSON",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 17,
+      "episodeId": "EP17_LEARN_L2_GOOGLE_LONG_CONTEXT_CACHING",
+      "companyCategory": "GOOGLE",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Context Caching & 2-Million-Token Workflows: Slashing Gemini API Costs by 75%",
+      "hookPayoff7Sec": "Re-sending the same massive codebase or video on every API call burns cash; context caching pins precomputed KV tensors in memory for a fraction of the price.",
+      "coreMentalModels": [
+        "Implicit vs. Explicit Prefix Context Caching Mechanics",
+        "Structuring System Prompts: Static Heavy Prefix First, Dynamic Query Last",
+        "Cost & Time-To-First-Token Math for Repo & Video Analysis"
+      ],
+      "thumbnailText": "CONTEXT CACHE",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 18,
+      "episodeId": "EP18_LEARN_L2_MICROSOFT_MULTI_AGENT_PATTERNS",
+      "companyCategory": "MICROSOFT",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Multi-Agent Orchestration Patterns: Router, Planner-Worker & Critic Loops Without Chaos",
+      "hookPayoff7Sec": "Ten chatting agents in a group room burn tokens in circles; high-grade multi-agent systems use deterministic routers, isolated worker contexts, and strict critic gates.",
+      "coreMentalModels": [
+        "Supervisor-Router vs. Parallel Map-Reduce vs. Generator-Verifier",
+        "Context Isolation: Passing Crisp Artifacts Instead of Bloated Chat Logs",
+        "Stopping Infinite Debate Loops with Deterministic Exit Conditions"
+      ],
+      "thumbnailText": "AGENT SWARMS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 19,
+      "episodeId": "EP19_LEARN_L2_ANTHROPIC_AGENTIC_CODING_TDD",
+      "companyCategory": "ANTHROPIC",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Agentic Software Engineering: CLAUDE.md, Test-Driven Loops & Zero-Slop Codebases",
+      "hookPayoff7Sec": "Vibe-coding without tests creates unmaintainable spaghetti in hours; spec-first agentic TDD forces coding agents to prove every line against failing unit tests.",
+      "coreMentalModels": [
+        "Repository Memory Files (`CLAUDE.md` / `GEMINI.md` Invariants)",
+        "Plan -> Write Failing Test -> Implement -> Lint & Typecheck Loop",
+        "Git Worktree Isolation for Parallel Autonomous Tasks"
+      ],
+      "thumbnailText": "AGENTIC CODING",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 20,
+      "episodeId": "EP20_LEARN_L2_META_QUANTIZATION_LOCAL_LLAMA",
+      "companyCategory": "META",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "FP16 vs INT8 vs 4-Bit GGUF Quantization: Running 70B Llama Models on Consumer Hardware",
+      "hookPayoff7Sec": "Shrinking neural weights from sixteen-bit floats down to calibrated four-bit integers cuts memory demand by seventy-five percent while retaining nearly ninety-nine percent reasoning quality.",
+      "coreMentalModels": [
+        "VRAM Capacity Formula (`Parameters × Bits/8 × 1.2 Overhead`)",
+        "Post-Training Quantization: GGUF, AWQ & Activation-Aware Outliers",
+        "Perplexity vs. Real Coding Accuracy Across Q8, Q5_K_M & IQ4"
+      ],
+      "thumbnailText": "4-BIT AI MATH",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 21,
+      "episodeId": "EP21_LEARN_L2_XAI_EVALS_BENCHMARK_SATURATION",
+      "companyCategory": "XAI",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Why Public AI Leaderboards Lie: Building Private Evals & LLM-as-a-Judge Pipelines",
+      "hookPayoff7Sec": "Public benchmarks leak into training crawls within months; elite AI teams never swap models in production without a private golden evaluation suite of real user failures.",
+      "coreMentalModels": [
+        "Data Contamination & Goodhart's Law on Public Leaderboards",
+        "Deterministic Code Assertions vs. Pairwise LLM-as-a-Judge Rubrics",
+        "Turning Every Production Bug into a Regression Eval Case"
+      ],
+      "thumbnailText": "BUILD AI EVALS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 22,
+      "episodeId": "EP22_LEARN_L2_OPENAI_VOICE_REALTIME_PIPELINES",
+      "companyCategory": "OPENAI",
+      "contentTrack": "AI MASTERY · LEVEL 2",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L2_APPLIED",
+      "voiceTrack": "L2_APPLIED",
+      "audienceBadge": "BUILDERS & OPERATORS",
+      "title": "Sub-300ms Voice AI Architecture: Native Speech-to-Speech WebRTC vs Cascaded STT-LLM-TTS",
+      "hookPayoff7Sec": "Human conversation feels broken above five hundred milliseconds of lag; building natural voice agents means choosing between ultra-low-latency native audio tokens and controllable STT-TTS cascades.",
+      "coreMentalModels": [
+        "Voice Activity Detection (VAD), Barge-In Interruption & Turn-Taking",
+        "Native Speech-to-Speech Emotion Retention vs. Text Transcript Auditability",
+        "WebRTC Streaming vs. WebSockets Under Packet Loss"
+      ],
+      "thumbnailText": "REALTIME VOICE",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 23,
+      "episodeId": "EP23_LEARN_L3_NVIDIA_VLLM_TENSORRT_SERVING",
+      "companyCategory": "NVIDIA",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "High-Throughput LLM Serving: Continuous Batching, PagedAttention & Prefill-Decode Disaggregation",
+      "hookPayoff7Sec": "Naive static batching leaves eighty percent of your GPU idle waiting for the longest answer; continuous iteration-level batching slots new users in on the very next token.",
+      "coreMentalModels": [
+        "Compute-Bound Prefill Phase vs. Memory-Bound Decode Phase",
+        "Continuous Iteration Batching + PagedAttention Virtual Blocks",
+        "Disaggregating Prefill & Decode Across Separate GPU Pools"
+      ],
+      "thumbnailText": "SCALE AI GPUS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 24,
+      "episodeId": "EP24_LEARN_L3_GOOGLE_AGENT_TO_AGENT_ENTERPRISE",
+      "companyCategory": "GOOGLE",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "MCP + Agent-to-Agent (A2A) Protocols: Designing Federated Cross-Company Agent Meshes",
+      "hookPayoff7Sec": "MCP connects one agent to its private tools; Agent-to-Agent protocols let opaque enterprise agents negotiate tasks across company boundaries without exposing internal databases.",
+      "coreMentalModels": [
+        "Vertical Tool Access (MCP) vs. Horizontal Agent Delegation (A2A)",
+        "Agent Capability Cards, OAuth Scopes & Cryptographic Task Receipts",
+        "Asynchronous Long-Running Workflows & Webhook State Machines"
+      ],
+      "thumbnailText": "AGENT PROTOCOLS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 25,
+      "episodeId": "EP25_LEARN_L3_ANTHROPIC_PROMPT_INJECTION_DEFENSE",
+      "companyCategory": "ANTHROPIC",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "Defeating Indirect Prompt Injection: Architecting Zero-Trust Security for Tool-Using Agents",
+      "hookPayoff7Sec": "Because LLMs process instructions and untrusted web text inside the same token stream, a hidden sentence inside an email can hijack an unguarded agent's tools.",
+      "coreMentalModels": [
+        "Direct Jailbreaks vs. Indirect Data-Plane Prompt Injection",
+        "Instruction Hierarchy Training + Dual-LLM Privileged/Quarantined Split",
+        "Deterministic Egress Firewalls Preventing Exfiltration via URLs/Tools"
+      ],
+      "thumbnailText": "SECURE AI AGENTS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 26,
+      "episodeId": "EP26_LEARN_L3_MICROSOFT_GRAPHRAG_KNOWLEDGE_GRAPHS",
+      "companyCategory": "MICROSOFT",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "When Vector RAG Fails: Microsoft GraphRAG, Entity Graphs & Multi-Hop Global Reasoning",
+      "hookPayoff7Sec": "Top-K vector search cannot answer 'What themes connect our last thousand outage reports?'—GraphRAG pre-builds hierarchical entity communities so AI reasons across the whole forest.",
+      "coreMentalModels": [
+        "Why Top-K Chunk Retrieval Fails Global & Multi-Hop Questions",
+        "LLM-Extracted Knowledge Graphs + Leiden Community Summaries",
+        "Balancing Indexing Cost Against Query-Time Global Synthesis"
+      ],
+      "thumbnailText": "GRAPHRAG SYSTEMS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 27,
+      "episodeId": "EP27_LEARN_L3_OPENAI_DPO_RLVR_POST_TRAINING",
+      "companyCategory": "OPENAI",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "SFT vs DPO vs RL with Verifiable Rewards (RLVR): Modern Post-Training Pipelines Explained",
+      "hookPayoff7Sec": "Human thumbs-up graders get fooled by polite sycophancy; Reinforcement Learning with Verifiable Rewards trains reasoning models against deterministic compilers, unit tests, and math proofs.",
+      "coreMentalModels": [
+        "Supervised Imitation (SFT) vs. Direct Preference Optimization (DPO)",
+        "Reward Hacking & Sycophancy in Classic Human-Preference RLHF",
+        "RLVR: Scaling Domain Reasoning with Exact Automated Verifiers"
+      ],
+      "thumbnailText": "RLVR TRAINING",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 28,
+      "episodeId": "EP28_LEARN_L3_META_MODEL_DISTILLATION_ROUTING",
+      "companyCategory": "META",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "Knowledge Distillation & Cascade Model Routers: Frontier Quality at 1/20th the Inference Bill",
+      "hookPayoff7Sec": "Sending ninety percent of routine production traffic to a massive frontier model wastes millions; distilling task traces into an eight-billion-parameter student model slashes latency tenfold.",
+      "coreMentalModels": [
+        "Teacher-Student Synthetic Trace Generation & Logit Distillation",
+        "Confidence-Calibrated Cascade Routers (8B Fast Tier -> Frontier Escalation)",
+        "Continuous Flywheel: Logging Hard Escalations to Retrain the Student"
+      ],
+      "thumbnailText": "DISTILL & ROUTE",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 29,
+      "episodeId": "EP29_LEARN_L3_XAI_MEGA_CLUSTER_NETWORKING",
+      "companyCategory": "XAI",
+      "contentTrack": "AI MASTERY · LEVEL 3",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L3_SYSTEMS",
+      "voiceTrack": "L3_SYSTEMS",
+      "audienceBadge": "ENGINEERS & ARCHITECTS",
+      "title": "Inside 200,000-GPU Superclusters: RoCEv2 Ethernet, Power Grids & Synchronous Checkpointing",
+      "hookPayoff7Sec": "At two hundred thousand GPUs, hardware fails every few hours and one slow network packet stalls the entire cluster—frontier AI becomes power, liquid cooling, and tail-latency physics.",
+      "coreMentalModels": [
+        "3D Parallelism: Tensor, Pipeline & Data Parallel Communication Patterns",
+        "Non-Blocking RDMA Fabrics (InfiniBand vs. RoCEv2 Congestion Control)",
+        "Sub-Minute Asynchronous Checkpointing & Straggler Isolation"
+      ],
+      "thumbnailText": "200K GPU CLUSTERS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 30,
+      "episodeId": "EP30_LEARN_L4_GOOGLE_TPU_SYSTOLIC_ARRAYS",
+      "companyCategory": "GOOGLE",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Google TPUs vs Nvidia GPUs: Systolic Arrays, Optical Circuit Switches & 3D Torus Pods",
+      "hookPayoff7Sec": "While GPUs fetch registers on every instruction, Google's TPU pumps activations rhythmically like a heartbeat across a two-dimensional systolic grid of multiply-accumulate cells.",
+      "coreMentalModels": [
+        "Weight-Stationary 2D Systolic Arrays Eliminating Register File Energy",
+        "3D Torus Interconnects + Reconfigurable MEMS Optical Circuit Switches",
+        "XLA Compiler Static Graph Optimization vs. Dynamic CUDA Eager Execution"
+      ],
+      "thumbnailText": "TPU VS GPU SILICON",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 31,
+      "episodeId": "EP31_LEARN_L4_ANTHROPIC_MECHANISTIC_INTERPRETABILITY",
+      "companyCategory": "ANTHROPIC",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Mechanistic Interpretability & Sparse Autoencoders: Reading Mind Circuits Inside Frontier LLMs",
+      "hookPayoff7Sec": "Individual transformer neurons are polysemantic tangles encoding five unrelated concepts at once; Sparse Autoencoders untangle superposed activations into readable monosemantic features.",
+      "coreMentalModels": [
+        "Superposition Hypothesis: Packing Million Concepts into Thousand Dimensions",
+        "Sparse Autoencoders (SAEs) & Attribution Graphs Tracing Internal Circuits",
+        "Causal Activation Steering: Clamping Features to Prove Model Intent"
+      ],
+      "thumbnailText": "INSIDE AI MINDS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 32,
+      "episodeId": "EP32_LEARN_L4_META_MOE_MLA_ARCHITECTURES",
+      "companyCategory": "META",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Mixture-of-Experts (MoE) & Multi-Head Latent Attention: Trillion-Parameter Intelligence on a Budget",
+      "hookPayoff7Sec": "Dense models fire every single parameter on every word; sparse Mixture-of-Experts activates only tiny specialized sub-networks per token while compressing KV-Cache into low-rank latents.",
+      "coreMentalModels": [
+        "Top-K Router Networks, Expert Load Balancing & Token Dropping Avoidance",
+        "Grouped-Query Attention (GQA) vs. Multi-Head Latent Attention (MLA) Compression",
+        "All-to-All Expert Parallelism Bandwidth Bottlenecks Across Nodes"
+      ],
+      "thumbnailText": "SPARSE MOE MATH",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 33,
+      "episodeId": "EP33_LEARN_L4_NVIDIA_FP4_BLACKWELL_RUBIN",
+      "companyCategory": "NVIDIA",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Microscaling FP4 & Co-Packaged Silicon Photonics: How Nvidia Pushes Past Moore's Law",
+      "hookPayoff7Sec": "Transistor shrinking has slowed to a crawl; Nvidia achieves exponential AI leaps through block-scaled four-bit floating-point math and laser-driven silicon photonics.",
+      "coreMentalModels": [
+        "OCP Microscaling Formats (MXFP4 / NVFP4) with Shared Micro-Block Exponents",
+        "Reticle-Limit Dual-Die CoWoS-L Packaging & Thermal Power Density",
+        "Co-Packaged Optics Replacing Copper SerDes Across Megawatt Racks"
+      ],
+      "thumbnailText": "FP4 & PHOTONICS",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 34,
+      "episodeId": "EP34_LEARN_L4_MICROSOFT_SSM_MAMBA_HYBRIDS",
+      "companyCategory": "MICROSOFT",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "Beyond Pure Transformers: State-Space Models (Mamba) & Linear-Quadratic Hybrid Architectures",
+      "hookPayoff7Sec": "Pure State-Space Models run in linear time with constant memory yet blur exact needle-in-a-haystack recall; interleaving Mamba layers with periodic full self-attention unlocks the best of both worlds.",
+      "coreMentalModels": [
+        "Selective State-Space Recurrence: Constant-Size State vs. Growing KV-Cache",
+        "Why Fixed-Size Recurrent State Struggles on Exact Associative Copy-Recall",
+        "Jamba / Samba / Zamba Interleaved Hybrid Ratios (7:1 SSM-to-Attention)"
+      ],
+      "thumbnailText": "POST-TRANSFORMER",
+      "status": "QUEUED_DAILY_DRIP"
+    },
+    {
+      "episodeNumber": 35,
+      "episodeId": "EP35_LEARN_L4_OPENAI_TEST_TIME_COMPUTE_SCALING",
+      "companyCategory": "OPENAI",
+      "contentTrack": "AI MASTERY · LEVEL 4",
+      "trackKey": "TRACK_LEARNING",
+      "complexityLevel": "L4_FRONTIER",
+      "voiceTrack": "L4_FRONTIER",
+      "audienceBadge": "DEEP ARCHITECTS",
+      "title": "The Two Scaling Laws of Frontier AI: Pre-Training Chinchilla Limits vs Test-Time Search",
+      "hookPayoff7Sec": "Human-written internet text is finite, capping naive pre-training scaling—frontier labs unlocked a second exponential curve by trading inference compute for search, verification, and synthetic RL.",
+      "coreMentalModels": [
+        "Chinchilla Compute-Optimal Pre-Training & The Human Data Wall",
+        "Process Reward Models, Parallel Tree Search & Internal Backtracking",
+        "The Self-Play Synthetic Flywheel: Turning Today's Slow Search into Tomorrow's Fast Weights"
+      ],
+      "thumbnailText": "DUAL SCALING LAWS",
+      "status": "QUEUED_DAILY_DRIP"
+    }
+  ]
+}

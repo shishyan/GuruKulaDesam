@@ -147,18 +147,47 @@ jobs:
             --privacy "${{ steps.resolve_slot.outputs.privacy }}" \
             $DRY_FLAG
 
-      - name: "[Slot 2 · 07:00 PM IST] Publish Next Scheduled AI Learning Curriculum Episode (L1 -> L4)"
+      - name: "[Slot 2 · 07:00 PM IST] Build or Pull Next Scheduled Interactive AI Learning Curriculum Episode (L1 -> L4) & Publish"
         if: steps.resolve_slot.outputs.slot == 'curriculum' || steps.resolve_slot.outputs.slot == 'both'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           DRY_FLAG=""
+          COMP_FLAG=""
           if [ "${{ steps.resolve_slot.outputs.dry_run }}" = "true" ]; then
             DRY_FLAG="--dry-run"
           fi
-          python tools/intelligentian_publisher.py \
-            --mode daily-curriculum \
-            --drive-remote "gdrive:Intelligentian/CurriculumQueue" \
-            --privacy "${{ steps.resolve_slot.outputs.privacy }}" \
+          if [ -n "${{ steps.resolve_slot.outputs.company }}" ]; then
+            COMP_FLAG="--company ${{ steps.resolve_slot.outputs.company }}"
+          fi
+
+          python tools/intelligentian_curriculum_generator.py \
+            --out-dir /tmp/intelligentian_daily_curriculum \
+            --drive-queue "gdrive:Intelligentian/CurriculumQueue" \
+            --drive-templates "gdrive:Intelligentian/NewsTemplates" \
+            $COMP_FLAG \
             $DRY_FLAG
+
+          NEEDS_BUILD=$(python -c "import json; print('true' if json.load(open('/tmp/intelligentian_daily_curriculum/latest_episode.json')).get('needsBuild') else 'false')")
+          if [ "$NEEDS_BUILD" = "true" ]; then
+            python tools/intelligentian_daily_news_cloud_builder.py \
+              --news-root /tmp/intelligentian_daily_curriculum \
+              --stage-drive-remote "gdrive:Intelligentian/CurriculumArchive" \
+              --cloud-runner
+
+            CURRIC_DIR=$(python -c "import json; print(json.load(open('/tmp/intelligentian_daily_curriculum/latest_episode.json'))['episodeDir'])")
+            python tools/intelligentian_publisher.py \
+              --mode daily-curriculum \
+              --local-dir "$CURRIC_DIR" \
+              --privacy "${{ steps.resolve_slot.outputs.privacy }}" \
+              $DRY_FLAG
+          else
+            python tools/intelligentian_publisher.py \
+              --mode daily-curriculum \
+              --drive-remote "gdrive:Intelligentian/CurriculumQueue" \
+              --privacy "${{ steps.resolve_slot.outputs.privacy }}" \
+              $DRY_FLAG
+          fi
 
       - name: Opportunistically Backfill Any Pending Custom Thumbnails on @intelligentian
         if: steps.resolve_slot.outputs.dry_run != 'true'
