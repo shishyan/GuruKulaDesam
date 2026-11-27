@@ -18,7 +18,8 @@
     },
     "2026-11-11": {
       "youtubeVideoId": "djOaBcVurRk",
-      "url": "https://youtu.be/djOaBcVurRk"
+      "url": "https://youtu.be/djOaBcVurRk",
+      "thumbnailVerified": true
     },
     "2026-11-13": {
       "youtubeVideoId": "it2EEgkjHfQ",
@@ -64,20 +65,30 @@
       "youtubeVideoId": "VnLeEarUyps",
       "url": "https://youtu.be/VnLeEarUyps",
       "title": "கூர்ம அவதாரம் – பாற்கடல் கடைந்த பொறுமை | விஷ்ணு புராணம் | 12 நவம்பர் 2026 | @TamilDailyLife",
-      "publishedAt": "2026-11-25T09:03:19.838399+00:00"
+      "publishedAt": "2026-11-25T09:03:19.838399+00:00",
+      "thumbnailVerified": true
     },
     "2026-11-21": {
       "youtubeVideoId": "bO_x3gLkSFE",
       "url": "https://youtu.be/bO_x3gLkSFE",
       "title": "நடராஜர் – ஆனந்தத் தாண்டவம் | சிதம்பர மகாத்மியம் | 21 நவம்பர் 2026 | @TamilDailyLife",
-      "publishedAt": "2026-11-25T09:03:45.072563+00:00"
+      "publishedAt": "2026-11-25T09:03:45.072563+00:00",
+      "thumbnailVerified": true
     },
     "2026-11-22": {
       "youtubeVideoId": "9ISWALA-kpQ",
       "url": "https://youtu.be/9ISWALA-kpQ",
       "title": "திருநீலகண்டர் — ஞாயிறு பிரதோஷம் & சிவபுராணக் கதை | நவம்பர் 22 | @TamilDailyLife",
-      "publishedAt": "2026-11-26T08:48:50.363966+00:00"
+      "publishedAt": "2026-11-26T08:48:50.363966+00:00",
+      "thumbnailVerified": true
+    },
+    "2026-11-23": {
+      "youtubeVideoId": "07opfM7paz4",
+      "url": "https://youtu.be/07opfM7paz4",
+      "title": "அக்னி லிங்கம் — திருவண்ணாமலை அருணாசல புராணக் கதை | நவம்பர் 23 | @TamilDailyLife",
+      "publishedAt": "2026-11-27T08:59:16.473723+00:00",
+      "thumbnailVerified": true
     }
   },
-  "updated_at": "2026-11-26T08:49:00.278244+00:00"
+  "updated_at": "2026-11-27T08:59:32.780798+00:00"
 }
