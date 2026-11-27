@@ -1,0 +1,179 @@
+name: Intelligentian Autonomous Daily AI News & Frontier Curriculum Publisher
+
+on:
+  schedule:
+    # Slot 1: 02:30 UTC (08:00 AM IST / 09:30 PM EST) — Real-Time Breaking AI News Harvester + Cloud 1080p Render + Live Publish
+    - cron: '30 2 * * *'
+    # Slot 2: 13:30 UTC (07:00 PM IST / 08:30 AM EST) — Daily AI Learning Curriculum (L1 Basics -> L4 Frontier across 7 AI Companies)
+    - cron: '30 13 * * *'
+  workflow_dispatch:
+    inputs:
+      slot_mode:
+        description: 'Execution slot: news (harvest + build + publish), curriculum (publish next L1->L4 from Drive), or both'
+        required: false
+        default: 'both'
+        type: string
+      company_override:
+        description: 'Optional force company for news slot (OPENAI, ANTHROPIC, GOOGLE, NVIDIA, MICROSOFT, META, XAI)'
+        required: false
+        default: ''
+        type: string
+      privacy:
+        description: 'YouTube privacy status (public or unlisted)'
+        required: false
+        default: 'public'
+        type: string
+      dry_run:
+        description: 'Dry run without uploading to YouTube (true/false)'
+        required: false
+        default: 'false'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intelligentian-daily-autonomous
+  cancel-in-progress: false
+
+jobs:
+  intelligentian_daily_pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Cloud Media, Fonts, rclone & YouTube API Dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq rclone ffmpeg fonts-dejavu-core fonts-liberation fonts-noto-core
+          python -m pip install --upgrade pip
+          pip install -q google-api-python-client google-auth-oauthlib google-auth-httplib2 edge-tts gTTS Pillow
+
+      - name: Restore @intelligentian Multi-Project OAuth Pool & rclone Config
+        env:
+          INTELLIGENTIAN_OAUTH_TOKEN: ${{ secrets.INTELLIGENTIAN_OAUTH_TOKEN }}
+          INTELLIGENTIAN_OAUTH_TOKEN_2: ${{ secrets.INTELLIGENTIAN_OAUTH_TOKEN_2 }}
+          INTELLIGENTIAN_OAUTH_TOKEN_3: ${{ secrets.INTELLIGENTIAN_OAUTH_TOKEN_3 }}
+          INTELLIGENTIAN_OAUTH_TOKEN_4: ${{ secrets.INTELLIGENTIAN_OAUTH_TOKEN_4 }}
+          GURUKULADESAM_RCLONE_CONF: ${{ secrets.GURUKULADESAM_RCLONE_CONF }}
+        run: |
+          mkdir -p data/credentials/tokens_intelligentian ~/.config/rclone
+          if [ -n "$INTELLIGENTIAN_OAUTH_TOKEN" ]; then
+            printf "%s" "$INTELLIGENTIAN_OAUTH_TOKEN" > data/credentials/token_intelligentian.json
+            printf "%s" "$INTELLIGENTIAN_OAUTH_TOKEN" > data/credentials/tokens_intelligentian/token_623794382117.json
+          fi
+          if [ -n "$INTELLIGENTIAN_OAUTH_TOKEN_2" ]; then
+            printf "%s" "$INTELLIGENTIAN_OAUTH_TOKEN_2" > data/credentials/tokens_intelligentian/token_472322435541.json
+          fi
+          if [ -n "$INTELLIGENTIAN_OAUTH_TOKEN_3" ]; then
+            printf "%s" "$INTELLIGENTIAN_OAUTH_TOKEN_3" > data/credentials/tokens_intelligentian/token_839236964216.json
+          fi
+          if [ -n "$INTELLIGENTIAN_OAUTH_TOKEN_4" ]; then
+            printf "%s" "$INTELLIGENTIAN_OAUTH_TOKEN_4" > data/credentials/tokens_intelligentian/token_942198183044.json
+          fi
+          if [ -n "$GURUKULADESAM_RCLONE_CONF" ]; then
+            printf "%s" "$GURUKULADESAM_RCLONE_CONF" > ~/.config/rclone/rclone.conf
+          fi
+
+      - name: Resolve Active Schedule Slot (08:00 AM IST Breaking News vs 07:00 PM IST Curriculum)
+        id: resolve_slot
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SLOT="${{ github.event.inputs.slot_mode || 'both' }}"
+            PRIV="${{ github.event.inputs.privacy || 'public' }}"
+            DRY="${{ github.event.inputs.dry_run || 'false' }}"
+            COMP="${{ github.event.inputs.company_override || '' }}"
+          else
+            PRIV="public"
+            DRY="false"
+            COMP=""
+            case "${{ github.event.schedule }}" in
+              "30 2 * * *")  SLOT="news" ;;
+              "30 13 * * *") SLOT="curriculum" ;;
+              *)             SLOT="news" ;;
+            esac
+          fi
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "privacy=$PRIV" >> "$GITHUB_OUTPUT"
+          echo "dry_run=$DRY" >> "$GITHUB_OUTPUT"
+          echo "company=$COMP" >> "$GITHUB_OUTPUT"
+          echo "Resolved @intelligentian slot=$SLOT privacy=$PRIV dry_run=$DRY company=$COMP"
+
+      - name: Ensure @intelligentian 9 Canonical Playlists Are Synced
+        if: steps.resolve_slot.outputs.dry_run != 'true'
+        run: |
+          python tools/setup_intelligentian_channel.py --skip-branding || true
+
+      - name: "[Slot 1 · 08:00 AM IST] Harvest Real-Time Breaking AI News, Render 1080p Brief & Publish"
+        if: steps.resolve_slot.outputs.slot == 'news' || steps.resolve_slot.outputs.slot == 'both'
+        run: |
+          DRY_FLAG=""
+          COMP_FLAG=""
+          if [ "${{ steps.resolve_slot.outputs.dry_run }}" = "true" ]; then
+            DRY_FLAG="--dry-run"
+          fi
+          if [ -n "${{ steps.resolve_slot.outputs.company }}" ]; then
+            COMP_FLAG="--company ${{ steps.resolve_slot.outputs.company }}"
+          fi
+
+          python tools/intelligentian_live_news_harvester.py \
+            --out-dir /tmp/intelligentian_daily_news \
+            --drive-templates "gdrive:Intelligentian/NewsTemplates" \
+            $COMP_FLAG \
+            $DRY_FLAG
+
+          python tools/intelligentian_daily_news_cloud_builder.py \
+            --news-root /tmp/intelligentian_daily_news \
+            --stage-drive-remote "gdrive:Intelligentian/NewsArchive" \
+            --cloud-runner
+
+          EP_DIR=$(python -c "import json; print(json.load(open('/tmp/intelligentian_daily_news/latest_episode.json'))['episodeDir'])")
+          python tools/intelligentian_publisher.py \
+            --mode immediate-batch \
+            --local-dir "$EP_DIR" \
+            --max-uploads 1 \
+            --privacy "${{ steps.resolve_slot.outputs.privacy }}" \
+            $DRY_FLAG
+
+      - name: "[Slot 2 · 07:00 PM IST] Publish Next Scheduled AI Learning Curriculum Episode (L1 -> L4)"
+        if: steps.resolve_slot.outputs.slot == 'curriculum' || steps.resolve_slot.outputs.slot == 'both'
+        run: |
+          DRY_FLAG=""
+          if [ "${{ steps.resolve_slot.outputs.dry_run }}" = "true" ]; then
+            DRY_FLAG="--dry-run"
+          fi
+          python tools/intelligentian_publisher.py \
+            --mode daily-curriculum \
+            --drive-remote "gdrive:Intelligentian/CurriculumQueue" \
+            --privacy "${{ steps.resolve_slot.outputs.privacy }}" \
+            $DRY_FLAG
+
+      - name: Commit & Push Updated @intelligentian Registries & News History
+        run: |
+          git config --global user.name "Intelligentian Autonomous Publisher"
+          git config --global user.email "bot@gurukuladesam.org"
+          TRACKED_FILES=""
+          for f in \
+            production/intelligentian_playlists.json \
+            production/intelligentian_published_registry.json \
+            production/intelligentian_news_history.json; do
+            if [ -f "$f" ]; then
+              git add "$f"
+              TRACKED_FILES="$TRACKED_FILES $f"
+            fi
+          done
+          if [ -n "$TRACKED_FILES" ] && [ -n "$(git status --porcelain $TRACKED_FILES)" ]; then
+            git commit -m "chore(intelligentian): update daily AI news history & published registry [skip ci]"
+            git pull --rebase --autostash origin HEAD || true
+            git push origin HEAD:master || git push origin HEAD:main || true
+          fi
