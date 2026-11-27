@@ -1,0 +1,61 @@
+{
+  "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
+  "channelHandle": "@intelligentian",
+  "updatedAt": "2026-11-27T09:37:17.698884+00:00",
+  "playlists": {
+    "OPENAI": {
+      "id": "PLZi-YcdyVxc8",
+      "title": "OpenAI · GPT, Agents & Frontier Mastery",
+      "description": "Technical briefings, reasoning model architectures, Responses & Agents SDK workflows, and L1 → L4 mastery across the OpenAI ecosystem.",
+      "url": "https://www.youtube.com/playlist?list=PLZi-YcdyVxc8"
+    },
+    "ANTHROPIC": {
+      "id": "PLYW0ByYXaG5w",
+      "title": "Anthropic · Claude, Safety & Enterprise AI",
+      "description": "Claude frontier model releases, mechanistic interpretability, Model Context Protocol (MCP), computer-use agents, and L1 → L4 engineering guides.",
+      "url": "https://www.youtube.com/playlist?list=PLYW0ByYXaG5w"
+    },
+    "GOOGLE": {
+      "id": "PLYfdnH743VAQ",
+      "title": "Google & DeepMind · Gemini 4, Agents & Science",
+      "description": "Gemini multimodal architectures, TPUs, AlphaFold & scientific discovery, Genie world models, and L1 → L4 technical mastery across Google & DeepMind.",
+      "url": "https://www.youtube.com/playlist?list=PLYfdnH743VAQ"
+    },
+    "NVIDIA": {
+      "id": "PLdNTOKtZPIik",
+      "title": "Nvidia · GPUs, CUDA & AI Infrastructure",
+      "description": "Blackwell & Rubin GPU architectures, NVLink interconnects, CUDA kernels, TensorRT-LLM inference, physical AI robotics, and L1 → L4 infrastructure engineering.",
+      "url": "https://www.youtube.com/playlist?list=PLdNTOKtZPIik"
+    },
+    "MICROSOFT": {
+      "id": "PLdIIETq-n1z8",
+      "title": "Microsoft · Copilot, Azure & Enterprise AI",
+      "description": "Azure AI Foundry, Copilot studio orchestration, Phi small language models, enterprise governance, and L1 → L4 cloud AI systems engineering.",
+      "url": "https://www.youtube.com/playlist?list=PLdIIETq-n1z8"
+    },
+    "META": {
+      "id": "PLLLy0ZgAISYk",
+      "title": "Meta · Llama, Open-Source & Local AI",
+      "description": "Llama open-weights releases, PyTorch internals, quantization, local edge deployment, and L1 → L4 open-source AI engineering.",
+      "url": "https://www.youtube.com/playlist?list=PLLLy0ZgAISYk"
+    },
+    "XAI": {
+      "id": "PLYbSzuoz0MQE",
+      "title": "xAI · Grok, Colossus Superclusters & Real-Time AI",
+      "description": "Grok frontier reasoning models, Colossus 100k+ GPU supercluster networking, real-time search synthesis, and L1 → L4 systems breakdowns.",
+      "url": "https://www.youtube.com/playlist?list=PLYbSzuoz0MQE"
+    },
+    "TRACK_NEWS": {
+      "id": "PLU7_JQHlqYIQ",
+      "title": "Daily AI News Brief · Real-Time Global Updates",
+      "description": "Daily real-time technical briefings covering breaking model launches, benchmark shifts, compute infrastructure, and research papers across all 7 frontier AI labs.",
+      "url": "https://www.youtube.com/playlist?list=PLU7_JQHlqYIQ"
+    },
+    "TRACK_LEARNING": {
+      "id": "PLJXwy-Q2sMy4",
+      "title": "Learn AI From Scratch to Frontier (Complete Curriculum)",
+      "description": "Complete structured L1 (Foundations) → L2 (Applied Workflows) → L3 (Agentic Systems) → L4 (Frontier Architecture) curriculum across OpenAI, Anthropic, Google, Nvidia, Microsoft, Meta, and xAI.",
+      "url": "https://www.youtube.com/playlist?list=PLJXwy-Q2sMy4"
+    }
+  }
+}
