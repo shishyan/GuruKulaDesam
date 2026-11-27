@@ -124,33 +124,34 @@ def infer_company(manifest: dict, ep_id: str) -> str:
 
 
 def infer_track(manifest: dict, ep_id: str, mode: str) -> str:
-    explicit = str(manifest.get("track") or manifest.get("trackPlaylist") or "").upper()
+    explicit = str(manifest.get("track") or manifest.get("trackKey") or manifest.get("trackPlaylist") or "").upper()
     if explicit in ("TRACK_NEWS", "NEWS", "DAILY_NEWS"):
         return "TRACK_NEWS"
     if explicit in ("TRACK_LEARNING", "LEARNING", "CURRICULUM"):
         return "TRACK_LEARNING"
     upper_id = ep_id.upper()
-    if mode == "daily-curriculum" or re.search(r"(^|[_\-])L[1-4]([_\-]|$)", upper_id) or manifest.get("level"):
+    if mode == "daily-curriculum" or re.search(r"(^|[_\-])L[1-4]([_\-]|$)", upper_id) or manifest.get("level") or manifest.get("complexityLevel"):
         return "TRACK_LEARNING"
     if "NEWS" in upper_id or "BRIEF" in upper_id:
         return "TRACK_NEWS"
     return "TRACK_LEARNING" if manifest.get("curriculumLevel") else "TRACK_NEWS"
 
 
-def infer_curriculum_sort_key(manifest: dict, ep_id: str) -> tuple[int, int, int, str]:
+def infer_curriculum_sort_key(manifest: dict, ep_id: str) -> tuple[int, int, int, int, str]:
     """
-    Sorts Learning episodes strictly as L1 -> L2 -> L3 -> L4, and within each level
-    rotates across the 7 AI companies (`OPENAI -> ANTHROPIC -> GOOGLE -> NVIDIA -> MICROSOFT -> META -> XAI`).
+    Prioritizes explicit `priorityOrder` (< 50, such as interactive flagship episodes EP11..EP15 = 11..15)
+    ahead of general `L1 -> L2 -> L3 -> L4` roadmap items, then rotates across the 7 AI companies.
     """
-    lvl_str = str(manifest.get("level") or manifest.get("curriculumLevel") or "").upper()
-    if lvl_str not in LEVEL_ORDER:
-        m = re.search(r"(?:^|[_\-])(L[1-4])(?:[_\-]|$)", ep_id.upper())
-        lvl_str = m.group(1) if m else "L1"
+    prio = int(manifest.get("priorityOrder", 50))
+    prio_bucket = 0 if prio < 50 else 1
+    lvl_raw = str(manifest.get("level") or manifest.get("curriculumLevel") or manifest.get("complexityLevel") or "").upper()
+    m_lvl = re.search(r"(L[1-4])", lvl_raw) or re.search(r"(?:^|[_\-])(L[1-4])(?:[_\-]|$)", ep_id.upper())
+    lvl_str = m_lvl.group(1) if m_lvl else "L1"
     lvl_rank = LEVEL_ORDER.get(lvl_str, 9)
     comp = infer_company(manifest, ep_id)
     comp_rank = COMPANIES_ROTATION.index(comp) if comp in COMPANIES_ROTATION else 99
-    seq_order = int(manifest.get("curriculumOrder", manifest.get("seriesOrder", 999)))
-    return (lvl_rank, comp_rank, seq_order, ep_id)
+    seq_order = prio if prio < 50 else int(manifest.get("curriculumOrder", manifest.get("seriesOrder", 999)))
+    return (prio_bucket, lvl_rank, comp_rank, seq_order, ep_id)
 
 
 def build_intelligentian_description(manifest: dict, ep_id: str, company: str, track: str) -> str:

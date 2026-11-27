@@ -189,9 +189,14 @@ jobs:
               $DRY_FLAG
           fi
 
-      - name: Opportunistically Backfill Any Pending Custom Thumbnails on @intelligentian
+      - name: Opportunistically Drip Any Staged Queue Episodes & Backfill Pending Custom Thumbnails
         if: steps.resolve_slot.outputs.dry_run != 'true'
         run: |
+          python tools/intelligentian_publisher.py \
+            --mode immediate-batch \
+            --drive-remote "gdrive:Intelligentian/Queue" \
+            --max-uploads 2 \
+            --privacy "${{ steps.resolve_slot.outputs.privacy }}" || true
           python tools/apply_intelligentian_thumbnails.py || true
 
       - name: Commit & Push Updated @intelligentian Registries & News History
