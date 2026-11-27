@@ -114,8 +114,10 @@ jobs:
         run: |
           python tools/setup_intelligentian_channel.py --skip-branding || true
 
-      - name: "[Slot 1 · 08:00 AM IST] Harvest Real-Time Breaking AI News, Render 1080p Brief & Publish"
+      - name: "[Slot 1 · 08:00 AM IST] Harvest Real-Time Breaking AI News, Render Interactive Maya & Alex 1080p Show & Publish"
         if: steps.resolve_slot.outputs.slot == 'news' || steps.resolve_slot.outputs.slot == 'both'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           DRY_FLAG=""
           COMP_FLAG=""
@@ -157,6 +159,11 @@ jobs:
             --drive-remote "gdrive:Intelligentian/CurriculumQueue" \
             --privacy "${{ steps.resolve_slot.outputs.privacy }}" \
             $DRY_FLAG
+
+      - name: Opportunistically Backfill Any Pending Custom Thumbnails on @intelligentian
+        if: steps.resolve_slot.outputs.dry_run != 'true'
+        run: |
+          python tools/apply_intelligentian_thumbnails.py || true
 
       - name: Commit & Push Updated @intelligentian Registries & News History
         run: |

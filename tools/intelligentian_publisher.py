@@ -450,7 +450,7 @@ def upload_single_episode(
     company: str,
     track: str,
     privacy: str,
-) -> str:
+) -> tuple[str, bool]:
     from googleapiclient.http import MediaFileUpload
 
     # Validate entire manifest + metadata against Zero-CTA policy before uploading a single byte
@@ -496,6 +496,7 @@ def upload_single_episode(
     print(f"[Published -> @intelligentian ({privacy})] {ep_id} -> https://youtu.be/{vid}")
 
     thumb_path = find_thumbnail(ep_dir, ep_id)
+    thumb_applied = False
     if thumb_path is not None:
         mime = "image/png" if thumb_path.suffix.lower() == ".png" else "image/jpeg"
         try:
@@ -503,13 +504,14 @@ def upload_single_episode(
                 videoId=vid,
                 media_body=MediaFileUpload(str(thumb_path), mimetype=mime),
             ).execute()
+            thumb_applied = True
             print(f"  [Thumbnail Applied] {thumb_path.name} ({thumb_path.stat().st_size // 1024} KB) -> {vid}")
         except Exception as thumb_exc:
             print(f"  [Thumbnail Notice] Video {vid} is LIVE; custom thumbnail skipped: {thumb_exc}")
     else:
         print(f"  [Thumbnail Notice] No <2MB 16:9 thumbnail found in {ep_dir}")
 
-    return vid
+    return vid, thumb_applied
 
 
 def main() -> None:
@@ -615,7 +617,7 @@ def main() -> None:
         while client_idx < len(clients):
             tname, yt = clients[client_idx]
             try:
-                vid = upload_single_episode(yt, ep_id, mf, ep_dir, company, track, args.privacy)
+                vid, thumb_ok = upload_single_episode(yt, ep_id, mf, ep_dir, company, track, args.privacy)
                 company_pl = playlist_map.get(company, "")
                 track_pl = playlist_map.get(track, "")
                 insert_into_playlist_idempotent(clients, client_idx, company_pl, vid, company)
@@ -632,6 +634,7 @@ def main() -> None:
                     "privacyStatus": args.privacy,
                     "channelId": EXPECTED_CHANNEL_ID,
                     "oauthTokenUsed": tname,
+                    "thumbnailApplied": thumb_ok,
                     "publishedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(),
                 }
                 reg_path.write_text(json.dumps(registry, indent=2, ensure_ascii=False), encoding="utf-8")
