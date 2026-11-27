@@ -356,7 +356,7 @@ def apply_channel_branding(
                 lambda yt: yt.watermarks().set(
                     channelId=EXPECTED_CHANNEL_ID,
                     body=wm_body,
-                    media_body=MediaFileUpload(str(watermark_path), mimetype="image/png", resumable=False),
+                    media_body=MediaFileUpload(str(watermark_path), mimetype="image/png", chunksize=1024 * 256, resumable=True),
                 ).execute(),
                 "watermarks.set",
             )
