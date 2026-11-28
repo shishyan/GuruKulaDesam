@@ -195,7 +195,7 @@ jobs:
           python tools/intelligentian_publisher.py \
             --mode immediate-batch \
             --drive-remote "gdrive:Intelligentian/Queue" \
-            --max-uploads 2 \
+            --max-uploads 6 \
             --privacy "${{ steps.resolve_slot.outputs.privacy }}" || true
           python tools/apply_intelligentian_thumbnails.py || true
 
