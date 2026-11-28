@@ -201,6 +201,20 @@
       "oauthTokenUsed": "token_intelligentian.json",
       "thumbnailApplied": false,
       "publishedAt": "2026-11-28T09:46:17.686374+00:00"
+    },
+    "NEWS_20261128_ANTHROPIC_Anthropic_Adds_Skills_Over_MCP_To_Clau": {
+      "youtubeVideoId": "FRyIT_1v6XA",
+      "url": "https://youtu.be/FRyIT_1v6XA",
+      "title": "Anthropic AI Briefing: Anthropic Adds Skills Over MCP To Claude And Claude Code Beta",
+      "company": "ANTHROPIC",
+      "track": "TRACK_NEWS",
+      "companyPlaylistId": "PLYW0ByYXaG5w",
+      "trackPlaylistId": "PLU7_JQHlqYIQ",
+      "privacyStatus": "public",
+      "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
+      "oauthTokenUsed": "token_intelligentian.json",
+      "thumbnailApplied": false,
+      "publishedAt": "2026-11-28T10:50:22.639108+00:00"
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
+  "fingerprints": [
+    "d053fc71d438d25a"
+  ],
+  "urls": [
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxQb0Nyejl6UC03emxVZ21EQmdVbVo5aFBRSHRtMEk2cXZBSkdDOWMyRUZZWm9ZWmU3ampwQ0VzbmFmQnlWWFFwQWZCeU1PdGJDV3RkZU1acEUzU1pKeTZ3cTBnRGVscWU1SW9HdmUtVldzOHYwSlQyZFRXb0RabkNwY1c5aS1yd1U2cVpTdG5yTk9fWlVfaHc?oc=5"
+  ],
+  "stories": [
+    {
+      "episodeId": "NEWS_20261128_ANTHROPIC_Anthropic_Adds_Skills_Over_MCP_To_Clau",
+      "company": "ANTHROPIC",
+      "title": "Anthropic Adds Skills Over MCP To Claude And Claude Code Beta",
+      "publisher": "Dataconomy",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQb0Nyejl6UC03emxVZ21EQmdVbVo5aFBRSHRtMEk2cXZBSkdDOWMyRUZZWm9ZWmU3ampwQ0VzbmFmQnlWWFFwQWZCeU1PdGJDV3RkZU1acEUzU1pKeTZ3cTBnRGVscWU1SW9HdmUtVldzOHYwSlQyZFRXb0RabkNwY1c5aS1yd1U2cVpTdG5yTk9fWlVfaHc?oc=5",
+      "publishedAt": "2026-11-26T13:03:32+00:00",
+      "harvestedAt": "2026-11-28T10:47:42.642341+00:00",
+      "fingerprint": "d053fc71d438d25a"
+    }
+  ]
+}
