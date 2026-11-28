@@ -1,7 +1,7 @@
 {
   "channel": "@TamilDailyLife",
   "channel_id": "UCDdEZ6CPCr6tIzWdDY9mzxg",
-  "updated_at_utc": "2026-11-27T12:55:47Z",
+  "updated_at_utc": "2026-11-28T12:04:50Z",
   "published": {
     "P1_001": {
       "video_id": "sqW1ap4oZBY",
@@ -55,7 +55,7 @@
       "video_id": "Zg4PJF6SCdE",
       "url": "https://youtu.be/Zg4PJF6SCdE",
       "title": "மண் அகல் விளக்கு ஏற்றுவதன் பஞ்சபூதத் தத்துவமும் வாஸ்து நன்மைகளும் | @TamilDailyLife",
-      "thumb_set": false
+      "thumb_set": true
     }
   }
 }
