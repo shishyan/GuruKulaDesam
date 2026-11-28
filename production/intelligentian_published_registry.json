@@ -131,6 +131,76 @@
       "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
       "oauthTokenUsed": "token_intelligentian.json",
       "publishedAt": "2026-11-27T09:39:02.891530+00:00"
+    },
+    "EP11_INTERACTIVE_GOOGLE_GENIE4_WORLDS": {
+      "youtubeVideoId": "TuyuWrQjw10",
+      "url": "https://youtu.be/TuyuWrQjw10",
+      "title": "Genie 4 & AI World Models: How Google's AI Dreams Playable 3D Realities Live",
+      "company": "GOOGLE",
+      "track": "TRACK_LEARNING",
+      "companyPlaylistId": "PLYfdnH743VAQ",
+      "trackPlaylistId": "PLJXwy-Q2sMy4",
+      "privacyStatus": "public",
+      "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
+      "oauthTokenUsed": "token_intelligentian.json",
+      "thumbnailApplied": false,
+      "publishedAt": "2026-11-28T09:45:21.308922+00:00"
+    },
+    "EP12_INTERACTIVE_OPENAI_REASONING_MODELS": {
+      "youtubeVideoId": "uY5FtrEE4xk",
+      "url": "https://youtu.be/uY5FtrEE4xk",
+      "title": "Thinking AI vs Fast AI: How Test-Time Compute & Reasoning Models Solve Hard Problems",
+      "company": "OPENAI",
+      "track": "TRACK_LEARNING",
+      "companyPlaylistId": "PLZi-YcdyVxc8",
+      "trackPlaylistId": "PLJXwy-Q2sMy4",
+      "privacyStatus": "public",
+      "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
+      "oauthTokenUsed": "token_intelligentian.json",
+      "thumbnailApplied": false,
+      "publishedAt": "2026-11-28T09:45:35.603190+00:00"
+    },
+    "EP13_INTERACTIVE_ANTHROPIC_CLAUDE_CODE": {
+      "youtubeVideoId": "SI6Cc2IpRdU",
+      "url": "https://youtu.be/SI6Cc2IpRdU",
+      "title": "Agentic Coding Explained: How Non-Coders & Senior Engineers Ship Full Apps With Claude",
+      "company": "ANTHROPIC",
+      "track": "TRACK_LEARNING",
+      "companyPlaylistId": "PLYW0ByYXaG5w",
+      "trackPlaylistId": "PLJXwy-Q2sMy4",
+      "privacyStatus": "public",
+      "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
+      "oauthTokenUsed": "token_intelligentian.json",
+      "thumbnailApplied": false,
+      "publishedAt": "2026-11-28T09:45:49.075327+00:00"
+    },
+    "EP14_INTERACTIVE_META_LOCAL_AI_LAPTOP": {
+      "youtubeVideoId": "EQmbCAzzuEQ",
+      "url": "https://youtu.be/EQmbCAzzuEQ",
+      "title": "Run Frontier AI Offline on Your Laptop: Quantization, Llama & Zero-Cloud Privacy Explained",
+      "company": "META",
+      "track": "TRACK_LEARNING",
+      "companyPlaylistId": "PLLLy0ZgAISYk",
+      "trackPlaylistId": "PLJXwy-Q2sMy4",
+      "privacyStatus": "public",
+      "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
+      "oauthTokenUsed": "token_intelligentian.json",
+      "thumbnailApplied": false,
+      "publishedAt": "2026-11-28T09:46:02.958517+00:00"
+    },
+    "EP15_INTERACTIVE_XAI_NVIDIA_SUPERCLUSTERS": {
+      "youtubeVideoId": "gVWnMffAP7U",
+      "url": "https://youtu.be/gVWnMffAP7U",
+      "title": "Inside 200,000-GPU AI Superclusters: How xAI, Microsoft & Nvidia Feed Gigawatt Brains",
+      "company": "XAI",
+      "track": "TRACK_LEARNING",
+      "companyPlaylistId": "PLYbSzuoz0MQE",
+      "trackPlaylistId": "PLJXwy-Q2sMy4",
+      "privacyStatus": "public",
+      "channelId": "UCjVbL7GE3cHLOWRYAxZH65A",
+      "oauthTokenUsed": "token_intelligentian.json",
+      "thumbnailApplied": false,
+      "publishedAt": "2026-11-28T09:46:17.686374+00:00"
     }
   }
 }
